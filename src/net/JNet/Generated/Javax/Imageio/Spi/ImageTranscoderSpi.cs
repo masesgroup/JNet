@@ -32,9 +32,9 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageTranscoderSpi.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public ImageTranscoderSpi(string arg0, string arg1)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public ImageTranscoderSpi(Java.Lang.String arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
         }
@@ -57,16 +57,16 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageTranscoderSpi.html#getReaderServiceProviderName()"/> 
         /// </summary>
-        public string ReaderServiceProviderName
+        public Java.Lang.String ReaderServiceProviderName
         {
-            get { return IExecute<string>("getReaderServiceProviderName"); }
+            get { return IExecute<Java.Lang.String>("getReaderServiceProviderName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageTranscoderSpi.html#getWriterServiceProviderName()"/> 
         /// </summary>
-        public string WriterServiceProviderName
+        public Java.Lang.String WriterServiceProviderName
         {
-            get { return IExecute<string>("getWriterServiceProviderName"); }
+            get { return IExecute<Java.Lang.String>("getWriterServiceProviderName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageTranscoderSpi.html#createTranscoderInstance()"/>

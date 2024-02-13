@@ -187,9 +187,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#indexOfTab(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        public int IndexOfTab(string arg0)
+        public int IndexOfTab(Java.Lang.String arg0)
         {
             return IExecute<int>("indexOfTab", arg0);
         }
@@ -260,19 +260,19 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#getTitleAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetTitleAt(int arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTitleAt(int arg0)
         {
-            return IExecute<string>("getTitleAt", arg0);
+            return IExecute<Java.Lang.String>("getTitleAt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#getToolTipTextAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetToolTipTextAt(int arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetToolTipTextAt(int arg0)
         {
-            return IExecute<string>("getToolTipTextAt", arg0);
+            return IExecute<Java.Lang.String>("getToolTipTextAt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#getDisabledIconAt(int)"/>
@@ -303,42 +303,42 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#addTab(java.lang.String,java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
-        public void AddTab(string arg0, Java.Awt.Component arg1)
+        public void AddTab(Java.Lang.String arg0, Java.Awt.Component arg1)
         {
             IExecute("addTab", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#addTab(java.lang.String,javax.swing.Icon,java.awt.Component,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Icon"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg3"><see cref="string"/></param>
-        public void AddTab(string arg0, Javax.Swing.Icon arg1, Java.Awt.Component arg2, string arg3)
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        public void AddTab(Java.Lang.String arg0, Javax.Swing.Icon arg1, Java.Awt.Component arg2, Java.Lang.String arg3)
         {
             IExecute("addTab", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#addTab(java.lang.String,javax.swing.Icon,java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Icon"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Component"/></param>
-        public void AddTab(string arg0, Javax.Swing.Icon arg1, Java.Awt.Component arg2)
+        public void AddTab(Java.Lang.String arg0, Javax.Swing.Icon arg1, Java.Awt.Component arg2)
         {
             IExecute("addTab", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#insertTab(java.lang.String,javax.swing.Icon,java.awt.Component,java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Icon"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg3"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         /// <param name="arg4"><see cref="int"/></param>
-        public void InsertTab(string arg0, Javax.Swing.Icon arg1, Java.Awt.Component arg2, string arg3, int arg4)
+        public void InsertTab(Java.Lang.String arg0, Javax.Swing.Icon arg1, Java.Awt.Component arg2, Java.Lang.String arg3, int arg4)
         {
             IExecute("insertTab", arg0, arg1, arg2, arg3, arg4);
         }
@@ -443,8 +443,8 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#setTitleAt(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public void SetTitleAt(int arg0, string arg1)
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public void SetTitleAt(int arg0, Java.Lang.String arg1)
         {
             IExecute("setTitleAt", arg0, arg1);
         }
@@ -452,8 +452,8 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#setToolTipTextAt(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public void SetToolTipTextAt(int arg0, string arg1)
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public void SetToolTipTextAt(int arg0, Java.Lang.String arg1)
         {
             IExecute("setToolTipTextAt", arg0, arg1);
         }

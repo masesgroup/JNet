@@ -39,7 +39,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#getCatalog()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setCatalog(java.lang.String)"/>
         /// </summary>
-        string Catalog { get; set; }
+        Java.Lang.String Catalog { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#getClientInfo()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setClientInfo(java.util.Properties)"/>
         /// </summary>
@@ -59,7 +59,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#getSchema()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setSchema(java.lang.String)"/>
         /// </summary>
-        string Schema { get; set; }
+        Java.Lang.String Schema { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#getTransactionIsolation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setTransactionIsolation(int)"/>
         /// </summary>
@@ -67,7 +67,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#getTypeMap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setTypeMap(java.util.Map)"/>
         /// </summary>
-        Java.Util.Map<string, Java.Lang.Class> TypeMap { get; set; }
+        Java.Util.Map<Java.Lang.String, Java.Lang.Class> TypeMap { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#getWarnings()"/> 
         /// </summary>
@@ -96,25 +96,25 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#getClientInfo(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        string GetClientInfo(string arg0);
+        Java.Lang.String GetClientInfo(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#nativeSQL(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        string NativeSQL(string arg0);
+        Java.Lang.String NativeSQL(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createArrayOf(java.lang.String,java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="Java.Sql.Array"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.Array CreateArrayOf(string arg0, object[] arg1);
+        Java.Sql.Array CreateArrayOf(Java.Lang.String arg0, object[] arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createBlob()"/>
         /// </summary>
@@ -125,29 +125,29 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareCall(java.lang.String,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="Java.Sql.CallableStatement"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.CallableStatement PrepareCall(string arg0, int arg1, int arg2, int arg3);
+        Java.Sql.CallableStatement PrepareCall(Java.Lang.String arg0, int arg1, int arg2, int arg3);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareCall(java.lang.String,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Sql.CallableStatement"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.CallableStatement PrepareCall(string arg0, int arg1, int arg2);
+        Java.Sql.CallableStatement PrepareCall(Java.Lang.String arg0, int arg1, int arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareCall(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.CallableStatement"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.CallableStatement PrepareCall(string arg0);
+        Java.Sql.CallableStatement PrepareCall(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createClob()"/>
         /// </summary>
@@ -165,53 +165,53 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="Java.Sql.PreparedStatement"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.PreparedStatement PrepareStatement(string arg0, int arg1, int arg2, int arg3);
+        Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0, int arg1, int arg2, int arg3);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Sql.PreparedStatement"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.PreparedStatement PrepareStatement(string arg0, int arg1, int arg2);
+        Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0, int arg1, int arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Sql.PreparedStatement"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.PreparedStatement PrepareStatement(string arg0, int arg1);
+        Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String,int[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Sql.PreparedStatement"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.PreparedStatement PrepareStatement(string arg0, int[] arg1);
+        Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0, int[] arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String,java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.PreparedStatement"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.PreparedStatement PrepareStatement(string arg0, string[] arg1);
+        Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0, Java.Lang.String[] arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.PreparedStatement"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.PreparedStatement PrepareStatement(string arg0);
+        Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setSavepoint()"/>
         /// </summary>
@@ -222,10 +222,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setSavepoint(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Savepoint"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.Savepoint SetSavepoint(string arg0);
+        Java.Sql.Savepoint SetSavepoint(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createSQLXML()"/>
         /// </summary>
@@ -260,11 +260,11 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createStruct(java.lang.String,java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="Java.Sql.Struct"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.Struct CreateStruct(string arg0, object[] arg1);
+        Java.Sql.Struct CreateStruct(Java.Lang.String arg0, object[] arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#abort(java.util.concurrent.Executor)"/>
         /// </summary>
@@ -310,10 +310,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setClientInfo(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLClientInfoException"/>
-        void SetClientInfo(string arg0, string arg1);
+        void SetClientInfo(Java.Lang.String arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setNetworkTimeout(java.util.concurrent.Executor,int)"/>
         /// </summary>
@@ -448,9 +448,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#getCatalog()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setCatalog(java.lang.String)"/>
         /// </summary>
-        public string Catalog
+        public Java.Lang.String Catalog
         {
-            get { return IExecute<string>("getCatalog"); } set { IExecute("setCatalog", value); }
+            get { return IExecute<Java.Lang.String>("getCatalog"); } set { IExecute("setCatalog", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#getClientInfo()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setClientInfo(java.util.Properties)"/>
@@ -483,9 +483,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#getSchema()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setSchema(java.lang.String)"/>
         /// </summary>
-        public string Schema
+        public Java.Lang.String Schema
         {
-            get { return IExecute<string>("getSchema"); } set { IExecute("setSchema", value); }
+            get { return IExecute<Java.Lang.String>("getSchema"); } set { IExecute("setSchema", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#getTransactionIsolation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setTransactionIsolation(int)"/>
@@ -497,9 +497,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#getTypeMap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setTypeMap(java.util.Map)"/>
         /// </summary>
-        public Java.Util.Map<string, Java.Lang.Class> TypeMap
+        public Java.Util.Map<Java.Lang.String, Java.Lang.Class> TypeMap
         {
-            get { return IExecute<Java.Util.Map<string, Java.Lang.Class>>("getTypeMap"); } set { IExecute("setTypeMap", value); }
+            get { return IExecute<Java.Util.Map<Java.Lang.String, Java.Lang.Class>>("getTypeMap"); } set { IExecute("setTypeMap", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#getWarnings()"/> 
@@ -541,31 +541,31 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#getClientInfo(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public string GetClientInfo(string arg0)
+        public Java.Lang.String GetClientInfo(Java.Lang.String arg0)
         {
-            return IExecute<string>("getClientInfo", arg0);
+            return IExecute<Java.Lang.String>("getClientInfo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#nativeSQL(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public string NativeSQL(string arg0)
+        public Java.Lang.String NativeSQL(Java.Lang.String arg0)
         {
-            return IExecute<string>("nativeSQL", arg0);
+            return IExecute<Java.Lang.String>("nativeSQL", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createArrayOf(java.lang.String,java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="Java.Sql.Array"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.Array CreateArrayOf(string arg0, object[] arg1)
+        public Java.Sql.Array CreateArrayOf(Java.Lang.String arg0, object[] arg1)
         {
             return IExecute<Java.Sql.Array>("createArrayOf", arg0, arg1);
         }
@@ -582,35 +582,35 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareCall(java.lang.String,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="Java.Sql.CallableStatement"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.CallableStatement PrepareCall(string arg0, int arg1, int arg2, int arg3)
+        public Java.Sql.CallableStatement PrepareCall(Java.Lang.String arg0, int arg1, int arg2, int arg3)
         {
             return IExecute<Java.Sql.CallableStatement>("prepareCall", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareCall(java.lang.String,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Sql.CallableStatement"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.CallableStatement PrepareCall(string arg0, int arg1, int arg2)
+        public Java.Sql.CallableStatement PrepareCall(Java.Lang.String arg0, int arg1, int arg2)
         {
             return IExecute<Java.Sql.CallableStatement>("prepareCall", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareCall(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.CallableStatement"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.CallableStatement PrepareCall(string arg0)
+        public Java.Sql.CallableStatement PrepareCall(Java.Lang.String arg0)
         {
             return IExecute<Java.Sql.CallableStatement>("prepareCall", arg0);
         }
@@ -637,68 +637,68 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="Java.Sql.PreparedStatement"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.PreparedStatement PrepareStatement(string arg0, int arg1, int arg2, int arg3)
+        public Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0, int arg1, int arg2, int arg3)
         {
             return IExecute<Java.Sql.PreparedStatement>("prepareStatement", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Sql.PreparedStatement"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.PreparedStatement PrepareStatement(string arg0, int arg1, int arg2)
+        public Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0, int arg1, int arg2)
         {
             return IExecute<Java.Sql.PreparedStatement>("prepareStatement", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Sql.PreparedStatement"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.PreparedStatement PrepareStatement(string arg0, int arg1)
+        public Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0, int arg1)
         {
             return IExecute<Java.Sql.PreparedStatement>("prepareStatement", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String,int[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Sql.PreparedStatement"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.PreparedStatement PrepareStatement(string arg0, int[] arg1)
+        public Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0, int[] arg1)
         {
             return IExecute<Java.Sql.PreparedStatement>("prepareStatement", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String,java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.PreparedStatement"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.PreparedStatement PrepareStatement(string arg0, string[] arg1)
+        public Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0, Java.Lang.String[] arg1)
         {
             return IExecute<Java.Sql.PreparedStatement>("prepareStatement", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.PreparedStatement"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.PreparedStatement PrepareStatement(string arg0)
+        public Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0)
         {
             return IExecute<Java.Sql.PreparedStatement>("prepareStatement", arg0);
         }
@@ -715,10 +715,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setSavepoint(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Savepoint"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.Savepoint SetSavepoint(string arg0)
+        public Java.Sql.Savepoint SetSavepoint(Java.Lang.String arg0)
         {
             return IExecute<Java.Sql.Savepoint>("setSavepoint", arg0);
         }
@@ -768,11 +768,11 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createStruct(java.lang.String,java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="Java.Sql.Struct"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.Struct CreateStruct(string arg0, object[] arg1)
+        public Java.Sql.Struct CreateStruct(Java.Lang.String arg0, object[] arg1)
         {
             return IExecute<Java.Sql.Struct>("createStruct", arg0, arg1);
         }
@@ -842,10 +842,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setClientInfo(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLClientInfoException"/>
-        public void SetClientInfo(string arg0, string arg1)
+        public void SetClientInfo(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             IExecute("setClientInfo", arg0, arg1);
         }

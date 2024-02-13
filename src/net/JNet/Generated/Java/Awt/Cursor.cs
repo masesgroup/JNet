@@ -158,11 +158,11 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#getSystemCustomCursor(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Awt.Cursor"/></returns>
         /// <exception cref="Java.Awt.AWTException"/>
         /// <exception cref="Java.Awt.HeadlessException"/>
-        public static Java.Awt.Cursor GetSystemCustomCursor(string arg0)
+        public static Java.Awt.Cursor GetSystemCustomCursor(Java.Lang.String arg0)
         {
             return SExecute<Java.Awt.Cursor>(LocalBridgeClazz, "getSystemCustomCursor", arg0);
         }
@@ -173,9 +173,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#getName()"/> 
         /// </summary>
-        public string Name
+        public Java.Lang.String Name
         {
-            get { return IExecute<string>("getName"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#getType()"/> 

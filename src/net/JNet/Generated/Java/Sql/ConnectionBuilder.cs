@@ -42,9 +42,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ConnectionBuilder.html#password(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.ConnectionBuilder"/></returns>
-        Java.Sql.ConnectionBuilder Password(string arg0);
+        Java.Sql.ConnectionBuilder Password(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ConnectionBuilder.html#shardingKey(java.sql.ShardingKey)"/>
         /// </summary>
@@ -60,9 +60,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ConnectionBuilder.html#user(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.ConnectionBuilder"/></returns>
-        Java.Sql.ConnectionBuilder User(string arg0);
+        Java.Sql.ConnectionBuilder User(Java.Lang.String arg0);
 
         #endregion
 
@@ -107,9 +107,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ConnectionBuilder.html#password(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.ConnectionBuilder"/></returns>
-        public Java.Sql.ConnectionBuilder Password(string arg0)
+        public Java.Sql.ConnectionBuilder Password(Java.Lang.String arg0)
         {
             return IExecute<Java.Sql.ConnectionBuilder>("password", arg0);
         }
@@ -134,9 +134,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ConnectionBuilder.html#user(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.ConnectionBuilder"/></returns>
-        public Java.Sql.ConnectionBuilder User(string arg0)
+        public Java.Sql.ConnectionBuilder User(Java.Lang.String arg0)
         {
             return IExecute<Java.Sql.ConnectionBuilder>("user", arg0);
         }

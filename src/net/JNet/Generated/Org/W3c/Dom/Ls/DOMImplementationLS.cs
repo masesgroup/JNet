@@ -48,10 +48,10 @@ namespace Org.W3c.Dom.Ls
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/DOMImplementationLS.html#createLSParser(short,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Ls.LSParser"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        Org.W3c.Dom.Ls.LSParser CreateLSParser(short arg0, string arg1);
+        Org.W3c.Dom.Ls.LSParser CreateLSParser(short arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/DOMImplementationLS.html#createLSSerializer()"/>
         /// </summary>
@@ -123,10 +123,10 @@ namespace Org.W3c.Dom.Ls
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/DOMImplementationLS.html#createLSParser(short,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Ls.LSParser"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        public Org.W3c.Dom.Ls.LSParser CreateLSParser(short arg0, string arg1)
+        public Org.W3c.Dom.Ls.LSParser CreateLSParser(short arg0, Java.Lang.String arg1)
         {
             return IExecute<Org.W3c.Dom.Ls.LSParser>("createLSParser", arg0, arg1);
         }

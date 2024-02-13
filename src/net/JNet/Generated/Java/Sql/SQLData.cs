@@ -35,14 +35,14 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLData.html#getSQLTypeName()"/> 
         /// </summary>
-        string SQLTypeName { get; }
+        Java.Lang.String SQLTypeName { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLData.html#readSQL(java.sql.SQLInput,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.SQLInput"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void ReadSQL(Java.Sql.SQLInput arg0, string arg1);
+        void ReadSQL(Java.Sql.SQLInput arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLData.html#writeSQL(java.sql.SQLOutput)"/>
         /// </summary>
@@ -83,17 +83,17 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLData.html#getSQLTypeName()"/> 
         /// </summary>
-        public string SQLTypeName
+        public Java.Lang.String SQLTypeName
         {
-            get { return IExecute<string>("getSQLTypeName"); }
+            get { return IExecute<Java.Lang.String>("getSQLTypeName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLData.html#readSQL(java.sql.SQLInput,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.SQLInput"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void ReadSQL(Java.Sql.SQLInput arg0, string arg1)
+        public void ReadSQL(Java.Sql.SQLInput arg0, Java.Lang.String arg1)
         {
             IExecute("readSQL", arg0, arg1);
         }

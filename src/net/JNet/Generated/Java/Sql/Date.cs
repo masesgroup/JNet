@@ -52,9 +52,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Date.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Date"/></returns>
-        public static Java.Sql.Date ValueOf(string arg0)
+        public static Java.Sql.Date ValueOf(Java.Lang.String arg0)
         {
             return SExecute<Java.Sql.Date>(LocalBridgeClazz, "valueOf", arg0);
         }

@@ -75,9 +75,9 @@ namespace Javax.Sound.Sampled
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#%3Cinit%3E(java.lang.Class,java.lang.String,boolean)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-            /// <param name="arg1"><see cref="string"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             /// <param name="arg2"><see cref="bool"/></param>
-            public Info(Java.Lang.Class arg0, string arg1, bool arg2)
+            public Info(Java.Lang.Class arg0, Java.Lang.String arg1, bool arg2)
                 : base(arg0, arg1, arg2)
             {
             }
@@ -136,9 +136,9 @@ namespace Javax.Sound.Sampled
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#getName()"/> 
             /// </summary>
-            public string Name
+            public Java.Lang.String Name
             {
-                get { return IExecute<string>("getName"); }
+                get { return IExecute<Java.Lang.String>("getName"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#isSource()"/>

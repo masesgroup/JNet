@@ -35,7 +35,7 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Type.html#getTypeName()"/> 
         /// </summary>
-        string TypeName { get; }
+        Java.Lang.String TypeName { get; }
 
         #endregion
 
@@ -70,9 +70,9 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Type.html#getTypeName()"/> 
         /// </summary>
-        public string TypeName
+        public Java.Lang.String TypeName
         {
-            get { return IExecute<string>("getTypeName"); }
+            get { return IExecute<Java.Lang.String>("getTypeName"); }
         }
 
         #endregion

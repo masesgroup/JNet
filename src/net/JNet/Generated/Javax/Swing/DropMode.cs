@@ -92,9 +92,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DropMode.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Swing.DropMode"/></returns>
-        public static Javax.Swing.DropMode ValueOf(string arg0)
+        public static Javax.Swing.DropMode ValueOf(Java.Lang.String arg0)
         {
             return SExecute<Javax.Swing.DropMode>(LocalBridgeClazz, "valueOf", arg0);
         }

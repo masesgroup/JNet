@@ -40,16 +40,16 @@ namespace Javax.Net.Ssl
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509TrustManager.html#checkClientTrusted(java.security.cert.X509Certificate[],java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Security.Cert.CertificateException"/>
-        void CheckClientTrusted(Java.Security.Cert.X509Certificate[] arg0, string arg1);
+        void CheckClientTrusted(Java.Security.Cert.X509Certificate[] arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509TrustManager.html#checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Security.Cert.CertificateException"/>
-        void CheckServerTrusted(Java.Security.Cert.X509Certificate[] arg0, string arg1);
+        void CheckServerTrusted(Java.Security.Cert.X509Certificate[] arg0, Java.Lang.String arg1);
 
         #endregion
 
@@ -92,9 +92,9 @@ namespace Javax.Net.Ssl
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509TrustManager.html#checkClientTrusted(java.security.cert.X509Certificate[],java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Security.Cert.CertificateException"/>
-        public void CheckClientTrusted(Java.Security.Cert.X509Certificate[] arg0, string arg1)
+        public void CheckClientTrusted(Java.Security.Cert.X509Certificate[] arg0, Java.Lang.String arg1)
         {
             IExecute("checkClientTrusted", arg0, arg1);
         }
@@ -102,9 +102,9 @@ namespace Javax.Net.Ssl
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509TrustManager.html#checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Security.Cert.CertificateException"/>
-        public void CheckServerTrusted(Java.Security.Cert.X509Certificate[] arg0, string arg1)
+        public void CheckServerTrusted(Java.Security.Cert.X509Certificate[] arg0, Java.Lang.String arg1)
         {
             IExecute("checkServerTrusted", arg0, arg1);
         }

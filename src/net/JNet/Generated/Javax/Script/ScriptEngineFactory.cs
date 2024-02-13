@@ -35,31 +35,31 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getEngineName()"/> 
         /// </summary>
-        string EngineName { get; }
+        Java.Lang.String EngineName { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getEngineVersion()"/> 
         /// </summary>
-        string EngineVersion { get; }
+        Java.Lang.String EngineVersion { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getExtensions()"/> 
         /// </summary>
-        Java.Util.List<string> Extensions { get; }
+        Java.Util.List<Java.Lang.String> Extensions { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getLanguageName()"/> 
         /// </summary>
-        string LanguageName { get; }
+        Java.Lang.String LanguageName { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getLanguageVersion()"/> 
         /// </summary>
-        string LanguageVersion { get; }
+        Java.Lang.String LanguageVersion { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getMimeTypes()"/> 
         /// </summary>
-        Java.Util.List<string> MimeTypes { get; }
+        Java.Util.List<Java.Lang.String> MimeTypes { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getNames()"/> 
         /// </summary>
-        Java.Util.List<string> Names { get; }
+        Java.Util.List<Java.Lang.String> Names { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getScriptEngine()"/> 
         /// </summary>
@@ -67,29 +67,29 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getParameter(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
-        object GetParameter(string arg0);
+        object GetParameter(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getMethodCallSyntax(java.lang.String,java.lang.String,java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        string GetMethodCallSyntax(string arg0, string arg1, params string[] arg2);
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        Java.Lang.String GetMethodCallSyntax(Java.Lang.String arg0, Java.Lang.String arg1, params Java.Lang.String[] arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getOutputStatement(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        string GetOutputStatement(string arg0);
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        Java.Lang.String GetOutputStatement(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getProgram(java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        string GetProgram(params string[] arg0);
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        Java.Lang.String GetProgram(params Java.Lang.String[] arg0);
 
         #endregion
 
@@ -124,51 +124,51 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getEngineName()"/> 
         /// </summary>
-        public string EngineName
+        public Java.Lang.String EngineName
         {
-            get { return IExecute<string>("getEngineName"); }
+            get { return IExecute<Java.Lang.String>("getEngineName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getEngineVersion()"/> 
         /// </summary>
-        public string EngineVersion
+        public Java.Lang.String EngineVersion
         {
-            get { return IExecute<string>("getEngineVersion"); }
+            get { return IExecute<Java.Lang.String>("getEngineVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getExtensions()"/> 
         /// </summary>
-        public Java.Util.List<string> Extensions
+        public Java.Util.List<Java.Lang.String> Extensions
         {
-            get { return IExecute<Java.Util.List<string>>("getExtensions"); }
+            get { return IExecute<Java.Util.List<Java.Lang.String>>("getExtensions"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getLanguageName()"/> 
         /// </summary>
-        public string LanguageName
+        public Java.Lang.String LanguageName
         {
-            get { return IExecute<string>("getLanguageName"); }
+            get { return IExecute<Java.Lang.String>("getLanguageName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getLanguageVersion()"/> 
         /// </summary>
-        public string LanguageVersion
+        public Java.Lang.String LanguageVersion
         {
-            get { return IExecute<string>("getLanguageVersion"); }
+            get { return IExecute<Java.Lang.String>("getLanguageVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getMimeTypes()"/> 
         /// </summary>
-        public Java.Util.List<string> MimeTypes
+        public Java.Util.List<Java.Lang.String> MimeTypes
         {
-            get { return IExecute<Java.Util.List<string>>("getMimeTypes"); }
+            get { return IExecute<Java.Util.List<Java.Lang.String>>("getMimeTypes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getNames()"/> 
         /// </summary>
-        public Java.Util.List<string> Names
+        public Java.Util.List<Java.Lang.String> Names
         {
-            get { return IExecute<Java.Util.List<string>>("getNames"); }
+            get { return IExecute<Java.Util.List<Java.Lang.String>>("getNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getScriptEngine()"/> 
@@ -180,40 +180,40 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getParameter(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
-        public object GetParameter(string arg0)
+        public object GetParameter(Java.Lang.String arg0)
         {
             return IExecute("getParameter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getMethodCallSyntax(java.lang.String,java.lang.String,java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetMethodCallSyntax(string arg0, string arg1, params string[] arg2)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMethodCallSyntax(Java.Lang.String arg0, Java.Lang.String arg1, params Java.Lang.String[] arg2)
         {
-            if (arg2.Length == 0) return IExecute<string>("getMethodCallSyntax", arg0, arg1); else return IExecute<string>("getMethodCallSyntax", arg0, arg1, arg2);
+            if (arg2.Length == 0) return IExecute<Java.Lang.String>("getMethodCallSyntax", arg0, arg1); else return IExecute<Java.Lang.String>("getMethodCallSyntax", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getOutputStatement(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetOutputStatement(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetOutputStatement(Java.Lang.String arg0)
         {
-            return IExecute<string>("getOutputStatement", arg0);
+            return IExecute<Java.Lang.String>("getOutputStatement", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getProgram(java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetProgram(params string[] arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetProgram(params Java.Lang.String[] arg0)
         {
-            if (arg0.Length == 0) return IExecute<string>("getProgram"); else return IExecute<string>("getProgram", arg0);
+            if (arg0.Length == 0) return IExecute<Java.Lang.String>("getProgram"); else return IExecute<Java.Lang.String>("getProgram", arg0);
         }
 
         #endregion

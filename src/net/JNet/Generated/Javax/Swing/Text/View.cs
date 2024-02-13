@@ -322,10 +322,10 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="float"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Shape"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetToolTipText(float arg0, float arg1, Java.Awt.Shape arg2)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetToolTipText(float arg0, float arg1, Java.Awt.Shape arg2)
         {
-            return IExecute<string>("getToolTipText", arg0, arg1, arg2);
+            return IExecute<Java.Lang.String>("getToolTipText", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#breakView(int,int,float,float)"/>

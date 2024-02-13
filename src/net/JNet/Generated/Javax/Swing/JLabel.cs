@@ -32,27 +32,27 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#%3Cinit%3E(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        public JLabel(string arg0, int arg1)
+        public JLabel(Java.Lang.String arg0, int arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#%3Cinit%3E(java.lang.String,javax.swing.Icon,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Icon"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        public JLabel(string arg0, Javax.Swing.Icon arg1, int arg2)
+        public JLabel(Java.Lang.String arg0, Javax.Swing.Icon arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public JLabel(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public JLabel(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -156,9 +156,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#getText()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#setText(java.lang.String)"/>
         /// </summary>
-        public string Text
+        public Java.Lang.String Text
         {
-            get { return IExecute<string>("getText"); } set { IExecute("setText", value); }
+            get { return IExecute<Java.Lang.String>("getText"); } set { IExecute("setText", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#getVerticalAlignment()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#setVerticalAlignment(int)"/>

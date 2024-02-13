@@ -32,50 +32,50 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#%3Cinit%3E(java.lang.String,boolean,boolean,boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
         /// <param name="arg3"><see cref="bool"/></param>
         /// <param name="arg4"><see cref="bool"/></param>
-        public JInternalFrame(string arg0, bool arg1, bool arg2, bool arg3, bool arg4)
+        public JInternalFrame(Java.Lang.String arg0, bool arg1, bool arg2, bool arg3, bool arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#%3Cinit%3E(java.lang.String,boolean,boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
         /// <param name="arg3"><see cref="bool"/></param>
-        public JInternalFrame(string arg0, bool arg1, bool arg2, bool arg3)
+        public JInternalFrame(Java.Lang.String arg0, bool arg1, bool arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#%3Cinit%3E(java.lang.String,boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
-        public JInternalFrame(string arg0, bool arg1, bool arg2)
+        public JInternalFrame(Java.Lang.String arg0, bool arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#%3Cinit%3E(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        public JInternalFrame(string arg0, bool arg1)
+        public JInternalFrame(Java.Lang.String arg0, bool arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public JInternalFrame(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public JInternalFrame(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -102,68 +102,68 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#CONTENT_PANE_PROPERTY"/>
         /// </summary>
-        public static string CONTENT_PANE_PROPERTY { get { if (!_CONTENT_PANE_PROPERTYReady) { _CONTENT_PANE_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "CONTENT_PANE_PROPERTY"); _CONTENT_PANE_PROPERTYReady = true; } return _CONTENT_PANE_PROPERTYContent; } }
-        private static string _CONTENT_PANE_PROPERTYContent = default;
+        public static Java.Lang.String CONTENT_PANE_PROPERTY { get { if (!_CONTENT_PANE_PROPERTYReady) { _CONTENT_PANE_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CONTENT_PANE_PROPERTY"); _CONTENT_PANE_PROPERTYReady = true; } return _CONTENT_PANE_PROPERTYContent; } }
+        private static Java.Lang.String _CONTENT_PANE_PROPERTYContent = default;
         private static bool _CONTENT_PANE_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#FRAME_ICON_PROPERTY"/>
         /// </summary>
-        public static string FRAME_ICON_PROPERTY { get { if (!_FRAME_ICON_PROPERTYReady) { _FRAME_ICON_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "FRAME_ICON_PROPERTY"); _FRAME_ICON_PROPERTYReady = true; } return _FRAME_ICON_PROPERTYContent; } }
-        private static string _FRAME_ICON_PROPERTYContent = default;
+        public static Java.Lang.String FRAME_ICON_PROPERTY { get { if (!_FRAME_ICON_PROPERTYReady) { _FRAME_ICON_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FRAME_ICON_PROPERTY"); _FRAME_ICON_PROPERTYReady = true; } return _FRAME_ICON_PROPERTYContent; } }
+        private static Java.Lang.String _FRAME_ICON_PROPERTYContent = default;
         private static bool _FRAME_ICON_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#GLASS_PANE_PROPERTY"/>
         /// </summary>
-        public static string GLASS_PANE_PROPERTY { get { if (!_GLASS_PANE_PROPERTYReady) { _GLASS_PANE_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "GLASS_PANE_PROPERTY"); _GLASS_PANE_PROPERTYReady = true; } return _GLASS_PANE_PROPERTYContent; } }
-        private static string _GLASS_PANE_PROPERTYContent = default;
+        public static Java.Lang.String GLASS_PANE_PROPERTY { get { if (!_GLASS_PANE_PROPERTYReady) { _GLASS_PANE_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "GLASS_PANE_PROPERTY"); _GLASS_PANE_PROPERTYReady = true; } return _GLASS_PANE_PROPERTYContent; } }
+        private static Java.Lang.String _GLASS_PANE_PROPERTYContent = default;
         private static bool _GLASS_PANE_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#IS_CLOSED_PROPERTY"/>
         /// </summary>
-        public static string IS_CLOSED_PROPERTY { get { if (!_IS_CLOSED_PROPERTYReady) { _IS_CLOSED_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "IS_CLOSED_PROPERTY"); _IS_CLOSED_PROPERTYReady = true; } return _IS_CLOSED_PROPERTYContent; } }
-        private static string _IS_CLOSED_PROPERTYContent = default;
+        public static Java.Lang.String IS_CLOSED_PROPERTY { get { if (!_IS_CLOSED_PROPERTYReady) { _IS_CLOSED_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "IS_CLOSED_PROPERTY"); _IS_CLOSED_PROPERTYReady = true; } return _IS_CLOSED_PROPERTYContent; } }
+        private static Java.Lang.String _IS_CLOSED_PROPERTYContent = default;
         private static bool _IS_CLOSED_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#IS_ICON_PROPERTY"/>
         /// </summary>
-        public static string IS_ICON_PROPERTY { get { if (!_IS_ICON_PROPERTYReady) { _IS_ICON_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "IS_ICON_PROPERTY"); _IS_ICON_PROPERTYReady = true; } return _IS_ICON_PROPERTYContent; } }
-        private static string _IS_ICON_PROPERTYContent = default;
+        public static Java.Lang.String IS_ICON_PROPERTY { get { if (!_IS_ICON_PROPERTYReady) { _IS_ICON_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "IS_ICON_PROPERTY"); _IS_ICON_PROPERTYReady = true; } return _IS_ICON_PROPERTYContent; } }
+        private static Java.Lang.String _IS_ICON_PROPERTYContent = default;
         private static bool _IS_ICON_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#IS_MAXIMUM_PROPERTY"/>
         /// </summary>
-        public static string IS_MAXIMUM_PROPERTY { get { if (!_IS_MAXIMUM_PROPERTYReady) { _IS_MAXIMUM_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "IS_MAXIMUM_PROPERTY"); _IS_MAXIMUM_PROPERTYReady = true; } return _IS_MAXIMUM_PROPERTYContent; } }
-        private static string _IS_MAXIMUM_PROPERTYContent = default;
+        public static Java.Lang.String IS_MAXIMUM_PROPERTY { get { if (!_IS_MAXIMUM_PROPERTYReady) { _IS_MAXIMUM_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "IS_MAXIMUM_PROPERTY"); _IS_MAXIMUM_PROPERTYReady = true; } return _IS_MAXIMUM_PROPERTYContent; } }
+        private static Java.Lang.String _IS_MAXIMUM_PROPERTYContent = default;
         private static bool _IS_MAXIMUM_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#IS_SELECTED_PROPERTY"/>
         /// </summary>
-        public static string IS_SELECTED_PROPERTY { get { if (!_IS_SELECTED_PROPERTYReady) { _IS_SELECTED_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "IS_SELECTED_PROPERTY"); _IS_SELECTED_PROPERTYReady = true; } return _IS_SELECTED_PROPERTYContent; } }
-        private static string _IS_SELECTED_PROPERTYContent = default;
+        public static Java.Lang.String IS_SELECTED_PROPERTY { get { if (!_IS_SELECTED_PROPERTYReady) { _IS_SELECTED_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "IS_SELECTED_PROPERTY"); _IS_SELECTED_PROPERTYReady = true; } return _IS_SELECTED_PROPERTYContent; } }
+        private static Java.Lang.String _IS_SELECTED_PROPERTYContent = default;
         private static bool _IS_SELECTED_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#LAYERED_PANE_PROPERTY"/>
         /// </summary>
-        public static string LAYERED_PANE_PROPERTY { get { if (!_LAYERED_PANE_PROPERTYReady) { _LAYERED_PANE_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "LAYERED_PANE_PROPERTY"); _LAYERED_PANE_PROPERTYReady = true; } return _LAYERED_PANE_PROPERTYContent; } }
-        private static string _LAYERED_PANE_PROPERTYContent = default;
+        public static Java.Lang.String LAYERED_PANE_PROPERTY { get { if (!_LAYERED_PANE_PROPERTYReady) { _LAYERED_PANE_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "LAYERED_PANE_PROPERTY"); _LAYERED_PANE_PROPERTYReady = true; } return _LAYERED_PANE_PROPERTYContent; } }
+        private static Java.Lang.String _LAYERED_PANE_PROPERTYContent = default;
         private static bool _LAYERED_PANE_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#MENU_BAR_PROPERTY"/>
         /// </summary>
-        public static string MENU_BAR_PROPERTY { get { if (!_MENU_BAR_PROPERTYReady) { _MENU_BAR_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "MENU_BAR_PROPERTY"); _MENU_BAR_PROPERTYReady = true; } return _MENU_BAR_PROPERTYContent; } }
-        private static string _MENU_BAR_PROPERTYContent = default;
+        public static Java.Lang.String MENU_BAR_PROPERTY { get { if (!_MENU_BAR_PROPERTYReady) { _MENU_BAR_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MENU_BAR_PROPERTY"); _MENU_BAR_PROPERTYReady = true; } return _MENU_BAR_PROPERTYContent; } }
+        private static Java.Lang.String _MENU_BAR_PROPERTYContent = default;
         private static bool _MENU_BAR_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#ROOT_PANE_PROPERTY"/>
         /// </summary>
-        public static string ROOT_PANE_PROPERTY { get { if (!_ROOT_PANE_PROPERTYReady) { _ROOT_PANE_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "ROOT_PANE_PROPERTY"); _ROOT_PANE_PROPERTYReady = true; } return _ROOT_PANE_PROPERTYContent; } }
-        private static string _ROOT_PANE_PROPERTYContent = default;
+        public static Java.Lang.String ROOT_PANE_PROPERTY { get { if (!_ROOT_PANE_PROPERTYReady) { _ROOT_PANE_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ROOT_PANE_PROPERTY"); _ROOT_PANE_PROPERTYReady = true; } return _ROOT_PANE_PROPERTYContent; } }
+        private static Java.Lang.String _ROOT_PANE_PROPERTYContent = default;
         private static bool _ROOT_PANE_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#TITLE_PROPERTY"/>
         /// </summary>
-        public static string TITLE_PROPERTY { get { if (!_TITLE_PROPERTYReady) { _TITLE_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "TITLE_PROPERTY"); _TITLE_PROPERTYReady = true; } return _TITLE_PROPERTYContent; } }
-        private static string _TITLE_PROPERTYContent = default;
+        public static Java.Lang.String TITLE_PROPERTY { get { if (!_TITLE_PROPERTYReady) { _TITLE_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TITLE_PROPERTY"); _TITLE_PROPERTYReady = true; } return _TITLE_PROPERTYContent; } }
+        private static Java.Lang.String _TITLE_PROPERTYContent = default;
         private static bool _TITLE_PROPERTYReady = false; // this is used because in case of generics 
 
         #endregion
@@ -274,16 +274,16 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#getTitle()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setTitle(java.lang.String)"/>
         /// </summary>
-        public string Title
+        public Java.Lang.String Title
         {
-            get { return IExecute<string>("getTitle"); } set { IExecute("setTitle", value); }
+            get { return IExecute<Java.Lang.String>("getTitle"); } set { IExecute("setTitle", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#getWarningString()"/> 
         /// </summary>
-        public string WarningString
+        public Java.Lang.String WarningString
         {
-            get { return IExecute<string>("getWarningString"); }
+            get { return IExecute<Java.Lang.String>("getWarningString"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#isClosable()"/>

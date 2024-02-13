@@ -59,11 +59,11 @@ namespace Org.W3c.Dom.Ls
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#parseURI(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
-        Org.W3c.Dom.Document ParseURI(string arg0);
+        Org.W3c.Dom.Document ParseURI(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#parseWithContext(org.w3c.dom.ls.LSInput,org.w3c.dom.Node,short)"/>
         /// </summary>
@@ -181,11 +181,11 @@ namespace Org.W3c.Dom.Ls
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#parseURI(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
-        public Org.W3c.Dom.Document ParseURI(string arg0)
+        public Org.W3c.Dom.Document ParseURI(Java.Lang.String arg0)
         {
             return IExecute<Org.W3c.Dom.Document>("parseURI", arg0);
         }

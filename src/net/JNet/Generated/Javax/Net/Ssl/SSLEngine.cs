@@ -48,9 +48,9 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getApplicationProtocol()"/> 
         /// </summary>
-        public string ApplicationProtocol
+        public Java.Lang.String ApplicationProtocol
         {
-            get { return IExecute<string>("getApplicationProtocol"); }
+            get { return IExecute<Java.Lang.String>("getApplicationProtocol"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getDelegatedTask()"/> 
@@ -62,16 +62,16 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getEnabledCipherSuites()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#setEnabledCipherSuites(java.lang.String[])"/>
         /// </summary>
-        public string[] EnabledCipherSuites
+        public Java.Lang.String[] EnabledCipherSuites
         {
-            get { return IExecuteArray<string>("getEnabledCipherSuites"); } set { IExecute("setEnabledCipherSuites", value); }
+            get { return IExecuteArray<Java.Lang.String>("getEnabledCipherSuites"); } set { IExecute("setEnabledCipherSuites", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getEnabledProtocols()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#setEnabledProtocols(java.lang.String[])"/>
         /// </summary>
-        public string[] EnabledProtocols
+        public Java.Lang.String[] EnabledProtocols
         {
-            get { return IExecuteArray<string>("getEnabledProtocols"); } set { IExecute("setEnabledProtocols", value); }
+            get { return IExecuteArray<Java.Lang.String>("getEnabledProtocols"); } set { IExecute("setEnabledProtocols", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getEnableSessionCreation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#setEnableSessionCreation(boolean)"/>
@@ -83,16 +83,16 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getHandshakeApplicationProtocol()"/> 
         /// </summary>
-        public string HandshakeApplicationProtocol
+        public Java.Lang.String HandshakeApplicationProtocol
         {
-            get { return IExecute<string>("getHandshakeApplicationProtocol"); }
+            get { return IExecute<Java.Lang.String>("getHandshakeApplicationProtocol"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getHandshakeApplicationProtocolSelector()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#setHandshakeApplicationProtocolSelector(java.util.function.BiFunction)"/>
         /// </summary>
-        public Java.Util.Function.BiFunction<Javax.Net.Ssl.SSLEngine, Java.Util.List<string>, string> HandshakeApplicationProtocolSelector
+        public Java.Util.Function.BiFunction<Javax.Net.Ssl.SSLEngine, Java.Util.List<Java.Lang.String>, Java.Lang.String> HandshakeApplicationProtocolSelector
         {
-            get { return IExecute<Java.Util.Function.BiFunction<Javax.Net.Ssl.SSLEngine, Java.Util.List<string>, string>>("getHandshakeApplicationProtocolSelector"); } set { IExecute("setHandshakeApplicationProtocolSelector", value); }
+            get { return IExecute<Java.Util.Function.BiFunction<Javax.Net.Ssl.SSLEngine, Java.Util.List<Java.Lang.String>, Java.Lang.String>>("getHandshakeApplicationProtocolSelector"); } set { IExecute("setHandshakeApplicationProtocolSelector", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getHandshakeSession()"/> 
@@ -118,9 +118,9 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getPeerHost()"/> 
         /// </summary>
-        public string PeerHost
+        public Java.Lang.String PeerHost
         {
-            get { return IExecute<string>("getPeerHost"); }
+            get { return IExecute<Java.Lang.String>("getPeerHost"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getPeerPort()"/> 
@@ -146,16 +146,16 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getSupportedCipherSuites()"/> 
         /// </summary>
-        public string[] SupportedCipherSuites
+        public Java.Lang.String[] SupportedCipherSuites
         {
-            get { return IExecuteArray<string>("getSupportedCipherSuites"); }
+            get { return IExecuteArray<Java.Lang.String>("getSupportedCipherSuites"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getSupportedProtocols()"/> 
         /// </summary>
-        public string[] SupportedProtocols
+        public Java.Lang.String[] SupportedProtocols
         {
-            get { return IExecuteArray<string>("getSupportedProtocols"); }
+            get { return IExecuteArray<Java.Lang.String>("getSupportedProtocols"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getUseClientMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#setUseClientMode(boolean)"/>

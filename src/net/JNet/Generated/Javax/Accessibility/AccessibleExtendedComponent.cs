@@ -39,11 +39,11 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedComponent.html#getTitledBorderText()"/> 
         /// </summary>
-        string TitledBorderText { get; }
+        Java.Lang.String TitledBorderText { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedComponent.html#getToolTipText()"/> 
         /// </summary>
-        string ToolTipText { get; }
+        Java.Lang.String ToolTipText { get; }
 
         #endregion
 
@@ -85,16 +85,16 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedComponent.html#getTitledBorderText()"/> 
         /// </summary>
-        public string TitledBorderText
+        public Java.Lang.String TitledBorderText
         {
-            get { return IExecute<string>("getTitledBorderText"); }
+            get { return IExecute<Java.Lang.String>("getTitledBorderText"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedComponent.html#getToolTipText()"/> 
         /// </summary>
-        public string ToolTipText
+        public Java.Lang.String ToolTipText
         {
-            get { return IExecute<string>("getToolTipText"); }
+            get { return IExecute<Java.Lang.String>("getToolTipText"); }
         }
 
         #endregion

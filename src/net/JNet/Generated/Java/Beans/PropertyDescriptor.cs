@@ -32,33 +32,33 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#%3Cinit%3E(java.lang.String,java.lang.Class,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
-        /// <param name="arg3"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Beans.IntrospectionException"/>
-        public PropertyDescriptor(string arg0, Java.Lang.Class arg1, string arg2, string arg3)
+        public PropertyDescriptor(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Lang.String arg2, Java.Lang.String arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#%3Cinit%3E(java.lang.String,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         /// <exception cref="Java.Beans.IntrospectionException"/>
-        public PropertyDescriptor(string arg0, Java.Lang.Class arg1)
+        public PropertyDescriptor(Java.Lang.String arg0, Java.Lang.Class arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#%3Cinit%3E(java.lang.String,java.lang.reflect.Method,java.lang.reflect.Method)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Reflect.Method"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Reflect.Method"/></param>
         /// <exception cref="Java.Beans.IntrospectionException"/>
-        public PropertyDescriptor(string arg0, Java.Lang.Reflect.Method arg1, Java.Lang.Reflect.Method arg2)
+        public PropertyDescriptor(Java.Lang.String arg0, Java.Lang.Reflect.Method arg1, Java.Lang.Reflect.Method arg2)
             : base(arg0, arg1, arg2)
         {
         }

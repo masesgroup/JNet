@@ -32,19 +32,19 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#%3Cinit%3E(java.lang.String,java.lang.Class,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
-        public ObjectStreamField(string arg0, Java.Lang.Class arg1, bool arg2)
+        public ObjectStreamField(Java.Lang.String arg0, Java.Lang.Class arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#%3Cinit%3E(java.lang.String,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        public ObjectStreamField(string arg0, Java.Lang.Class arg1)
+        public ObjectStreamField(Java.Lang.String arg0, Java.Lang.Class arg1)
             : base(arg0, arg1)
         {
         }
@@ -67,9 +67,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#getName()"/> 
         /// </summary>
-        public string Name
+        public Java.Lang.String Name
         {
-            get { return IExecute<string>("getName"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#getOffset()"/> 
@@ -95,9 +95,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#getTypeString()"/> 
         /// </summary>
-        public string TypeString
+        public Java.Lang.String TypeString
         {
-            get { return IExecute<string>("getTypeString"); }
+            get { return IExecute<Java.Lang.String>("getTypeString"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#isPrimitive()"/>

@@ -43,7 +43,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#getExpectedPolicies()"/> 
         /// </summary>
-        Java.Util.Set<string> ExpectedPolicies { get; }
+        Java.Util.Set<Java.Lang.String> ExpectedPolicies { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#getParent()"/> 
         /// </summary>
@@ -55,7 +55,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#getValidPolicy()"/> 
         /// </summary>
-        string ValidPolicy { get; }
+        Java.Lang.String ValidPolicy { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#isCritical()"/>
         /// </summary>
@@ -110,9 +110,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#getExpectedPolicies()"/> 
         /// </summary>
-        public Java.Util.Set<string> ExpectedPolicies
+        public Java.Util.Set<Java.Lang.String> ExpectedPolicies
         {
-            get { return IExecute<Java.Util.Set<string>>("getExpectedPolicies"); }
+            get { return IExecute<Java.Util.Set<Java.Lang.String>>("getExpectedPolicies"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#getParent()"/> 
@@ -131,9 +131,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#getValidPolicy()"/> 
         /// </summary>
-        public string ValidPolicy
+        public Java.Lang.String ValidPolicy
         {
-            get { return IExecute<string>("getValidPolicy"); }
+            get { return IExecute<Java.Lang.String>("getValidPolicy"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#isCritical()"/>

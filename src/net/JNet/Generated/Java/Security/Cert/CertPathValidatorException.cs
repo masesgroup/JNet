@@ -110,9 +110,9 @@ namespace Java.Security.Cert
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Security.Cert.CertPathValidatorException.BasicReason"/></returns>
-            public static Java.Security.Cert.CertPathValidatorException.BasicReason ValueOf(string arg0)
+            public static Java.Security.Cert.CertPathValidatorException.BasicReason ValueOf(Java.Lang.String arg0)
             {
                 return SExecute<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalBridgeClazz, "valueOf", arg0);
             }

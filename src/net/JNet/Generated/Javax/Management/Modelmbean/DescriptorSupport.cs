@@ -42,19 +42,19 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#%3Cinit%3E(java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public DescriptorSupport(params string[] arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public DescriptorSupport(params Java.Lang.String[] arg0)
             : base(arg0)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         /// <exception cref="Javax.Management.Modelmbean.XMLParseException"/>
-        public DescriptorSupport(string arg0)
+        public DescriptorSupport(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -85,16 +85,16 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#getFieldNames()"/> 
         /// </summary>
-        public string[] FieldNames
+        public Java.Lang.String[] FieldNames
         {
-            get { return IExecuteArray<string>("getFieldNames"); }
+            get { return IExecuteArray<Java.Lang.String>("getFieldNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#getFields()"/> 
         /// </summary>
-        public string[] Fields
+        public Java.Lang.String[] Fields
         {
-            get { return IExecuteArray<string>("getFields"); }
+            get { return IExecuteArray<Java.Lang.String>("getFields"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#isValid()"/>
@@ -109,19 +109,19 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#getFieldValue(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
-        public object GetFieldValue(string arg0)
+        public object GetFieldValue(Java.Lang.String arg0)
         {
             return IExecute("getFieldValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#getFieldValues(java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
-        public object[] GetFieldValues(params string[] arg0)
+        public object[] GetFieldValues(params Java.Lang.String[] arg0)
         {
             if (arg0.Length == 0) return IExecuteArray<object>("getFieldValues"); else return IExecuteArray<object>("getFieldValues", arg0);
         }
@@ -129,36 +129,36 @@ namespace Javax.Management.Modelmbean
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#toXMLString()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        public string ToXMLString()
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String ToXMLString()
         {
-            return IExecute<string>("toXMLString");
+            return IExecute<Java.Lang.String>("toXMLString");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#removeField(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public void RemoveField(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void RemoveField(Java.Lang.String arg0)
         {
             IExecute("removeField", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#setField(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
-        public void SetField(string arg0, object arg1)
+        public void SetField(Java.Lang.String arg0, object arg1)
         {
             IExecute("setField", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#setFields(java.lang.String[],java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
-        public void SetFields(string[] arg0, object[] arg1)
+        public void SetFields(Java.Lang.String[] arg0, object[] arg1)
         {
             IExecute("setFields", arg0, arg1);
         }

@@ -65,8 +65,8 @@ namespace Javax.Management.Timer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date,long,long,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="object"/></param>
         /// <param name="arg3"><see cref="Java.Util.Date"/></param>
         /// <param name="arg4"><see cref="long"/></param>
@@ -74,40 +74,40 @@ namespace Javax.Management.Timer
         /// <param name="arg6"><see cref="bool"/></param>
         /// <returns><see cref="Java.Lang.Integer"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        Java.Lang.Integer AddNotification(string arg0, string arg1, object arg2, Java.Util.Date arg3, long arg4, long arg5, bool arg6);
+        Java.Lang.Integer AddNotification(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, Java.Util.Date arg3, long arg4, long arg5, bool arg6);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date,long,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="object"/></param>
         /// <param name="arg3"><see cref="Java.Util.Date"/></param>
         /// <param name="arg4"><see cref="long"/></param>
         /// <param name="arg5"><see cref="long"/></param>
         /// <returns><see cref="Java.Lang.Integer"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        Java.Lang.Integer AddNotification(string arg0, string arg1, object arg2, Java.Util.Date arg3, long arg4, long arg5);
+        Java.Lang.Integer AddNotification(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, Java.Util.Date arg3, long arg4, long arg5);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="object"/></param>
         /// <param name="arg3"><see cref="Java.Util.Date"/></param>
         /// <param name="arg4"><see cref="long"/></param>
         /// <returns><see cref="Java.Lang.Integer"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        Java.Lang.Integer AddNotification(string arg0, string arg1, object arg2, Java.Util.Date arg3, long arg4);
+        Java.Lang.Integer AddNotification(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, Java.Util.Date arg3, long arg4);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="object"/></param>
         /// <param name="arg3"><see cref="Java.Util.Date"/></param>
         /// <returns><see cref="Java.Lang.Integer"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        Java.Lang.Integer AddNotification(string arg0, string arg1, object arg2, Java.Util.Date arg3);
+        Java.Lang.Integer AddNotification(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, Java.Util.Date arg3);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#getNbOccurences(java.lang.Integer)"/>
         /// </summary>
@@ -130,14 +130,14 @@ namespace Javax.Management.Timer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#getNotificationMessage(java.lang.Integer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Integer"/></param>
-        /// <returns><see cref="string"/></returns>
-        string GetNotificationMessage(Java.Lang.Integer arg0);
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        Java.Lang.String GetNotificationMessage(Java.Lang.Integer arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#getNotificationType(java.lang.Integer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Integer"/></param>
-        /// <returns><see cref="string"/></returns>
-        string GetNotificationType(Java.Lang.Integer arg0);
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        Java.Lang.String GetNotificationType(Java.Lang.Integer arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#getDate(java.lang.Integer)"/>
         /// </summary>
@@ -147,9 +147,9 @@ namespace Javax.Management.Timer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#getNotificationIDs(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Vector"/></returns>
-        Java.Util.Vector<Java.Lang.Integer> GetNotificationIDs(string arg0);
+        Java.Util.Vector<Java.Lang.Integer> GetNotificationIDs(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#removeAllNotifications()"/>
         /// </summary>
@@ -163,9 +163,9 @@ namespace Javax.Management.Timer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#removeNotifications(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        void RemoveNotifications(string arg0);
+        void RemoveNotifications(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#start()"/>
         /// </summary>
@@ -256,8 +256,8 @@ namespace Javax.Management.Timer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date,long,long,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="object"/></param>
         /// <param name="arg3"><see cref="Java.Util.Date"/></param>
         /// <param name="arg4"><see cref="long"/></param>
@@ -265,49 +265,49 @@ namespace Javax.Management.Timer
         /// <param name="arg6"><see cref="bool"/></param>
         /// <returns><see cref="Java.Lang.Integer"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        public Java.Lang.Integer AddNotification(string arg0, string arg1, object arg2, Java.Util.Date arg3, long arg4, long arg5, bool arg6)
+        public Java.Lang.Integer AddNotification(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, Java.Util.Date arg3, long arg4, long arg5, bool arg6)
         {
             return IExecute<Java.Lang.Integer>("addNotification", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date,long,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="object"/></param>
         /// <param name="arg3"><see cref="Java.Util.Date"/></param>
         /// <param name="arg4"><see cref="long"/></param>
         /// <param name="arg5"><see cref="long"/></param>
         /// <returns><see cref="Java.Lang.Integer"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        public Java.Lang.Integer AddNotification(string arg0, string arg1, object arg2, Java.Util.Date arg3, long arg4, long arg5)
+        public Java.Lang.Integer AddNotification(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, Java.Util.Date arg3, long arg4, long arg5)
         {
             return IExecute<Java.Lang.Integer>("addNotification", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="object"/></param>
         /// <param name="arg3"><see cref="Java.Util.Date"/></param>
         /// <param name="arg4"><see cref="long"/></param>
         /// <returns><see cref="Java.Lang.Integer"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        public Java.Lang.Integer AddNotification(string arg0, string arg1, object arg2, Java.Util.Date arg3, long arg4)
+        public Java.Lang.Integer AddNotification(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, Java.Util.Date arg3, long arg4)
         {
             return IExecute<Java.Lang.Integer>("addNotification", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="object"/></param>
         /// <param name="arg3"><see cref="Java.Util.Date"/></param>
         /// <returns><see cref="Java.Lang.Integer"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        public Java.Lang.Integer AddNotification(string arg0, string arg1, object arg2, Java.Util.Date arg3)
+        public Java.Lang.Integer AddNotification(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, Java.Util.Date arg3)
         {
             return IExecute<Java.Lang.Integer>("addNotification", arg0, arg1, arg2, arg3);
         }
@@ -342,19 +342,19 @@ namespace Javax.Management.Timer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#getNotificationMessage(java.lang.Integer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Integer"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetNotificationMessage(Java.Lang.Integer arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetNotificationMessage(Java.Lang.Integer arg0)
         {
-            return IExecute<string>("getNotificationMessage", arg0);
+            return IExecute<Java.Lang.String>("getNotificationMessage", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#getNotificationType(java.lang.Integer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Integer"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetNotificationType(Java.Lang.Integer arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetNotificationType(Java.Lang.Integer arg0)
         {
-            return IExecute<string>("getNotificationType", arg0);
+            return IExecute<Java.Lang.String>("getNotificationType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#getDate(java.lang.Integer)"/>
@@ -368,9 +368,9 @@ namespace Javax.Management.Timer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#getNotificationIDs(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Vector"/></returns>
-        public Java.Util.Vector<Java.Lang.Integer> GetNotificationIDs(string arg0)
+        public Java.Util.Vector<Java.Lang.Integer> GetNotificationIDs(Java.Lang.String arg0)
         {
             return IExecute<Java.Util.Vector<Java.Lang.Integer>>("getNotificationIDs", arg0);
         }
@@ -393,9 +393,9 @@ namespace Javax.Management.Timer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#removeNotifications(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        public void RemoveNotifications(string arg0)
+        public void RemoveNotifications(Java.Lang.String arg0)
         {
             IExecute("removeNotifications", arg0);
         }

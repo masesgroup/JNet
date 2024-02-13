@@ -92,9 +92,9 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#getLockName()"/> 
         /// </summary>
-        public string LockName
+        public Java.Lang.String LockName
         {
-            get { return IExecute<string>("getLockName"); }
+            get { return IExecute<Java.Lang.String>("getLockName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#getLockOwnerId()"/> 
@@ -106,9 +106,9 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#getLockOwnerName()"/> 
         /// </summary>
-        public string LockOwnerName
+        public Java.Lang.String LockOwnerName
         {
-            get { return IExecute<string>("getLockOwnerName"); }
+            get { return IExecute<Java.Lang.String>("getLockOwnerName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#getPriority()"/> 
@@ -134,9 +134,9 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#getThreadName()"/> 
         /// </summary>
-        public string ThreadName
+        public Java.Lang.String ThreadName
         {
-            get { return IExecute<string>("getThreadName"); }
+            get { return IExecute<Java.Lang.String>("getThreadName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#getThreadState()"/> 

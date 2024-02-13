@@ -32,8 +32,8 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public ZipEntry(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public ZipEntry(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -80,9 +80,9 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#getComment()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#setComment(java.lang.String)"/>
         /// </summary>
-        public string Comment
+        public Java.Lang.String Comment
         {
-            get { return IExecute<string>("getComment"); } set { IExecute("setComment", value); }
+            get { return IExecute<Java.Lang.String>("getComment"); } set { IExecute("setComment", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#getCompressedSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#setCompressedSize(long)"/>
@@ -136,9 +136,9 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#getName()"/> 
         /// </summary>
-        public string Name
+        public Java.Lang.String Name
         {
-            get { return IExecute<string>("getName"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#getSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#setSize(long)"/>

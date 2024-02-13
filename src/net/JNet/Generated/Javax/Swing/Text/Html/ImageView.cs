@@ -56,9 +56,9 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/ImageView.html#getAltText()"/> 
         /// </summary>
-        public string AltText
+        public Java.Lang.String AltText
         {
-            get { return IExecute<string>("getAltText"); }
+            get { return IExecute<Java.Lang.String>("getAltText"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/ImageView.html#getImage()"/> 

@@ -36,8 +36,8 @@ namespace Java.Net
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ProtocolFamily.html#name()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        string Name();
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        Java.Lang.String Name();
 
         #endregion
 
@@ -73,10 +73,10 @@ namespace Java.Net
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ProtocolFamily.html#name()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        public string Name()
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String Name()
         {
-            return IExecute<string>("name");
+            return IExecute<Java.Lang.String>("name");
         }
 
         #endregion

@@ -70,9 +70,9 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialRef.html#getBaseTypeName()"/> 
         /// </summary>
-        public string BaseTypeName
+        public Java.Lang.String BaseTypeName
         {
-            get { return IExecute<string>("getBaseTypeName"); }
+            get { return IExecute<Java.Lang.String>("getBaseTypeName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialRef.html#getObject()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialRef.html#setObject(java.lang.Object)"/>
@@ -87,7 +87,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        public object GetObject(Java.Util.Map<string, Java.Lang.Class> arg0)
+        public object GetObject(Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg0)
         {
             return IExecute("getObject", arg0);
         }

@@ -35,15 +35,15 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#getPresentationName()"/> 
         /// </summary>
-        string PresentationName { get; }
+        Java.Lang.String PresentationName { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#getRedoPresentationName()"/> 
         /// </summary>
-        string RedoPresentationName { get; }
+        Java.Lang.String RedoPresentationName { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#getUndoPresentationName()"/> 
         /// </summary>
-        string UndoPresentationName { get; }
+        Java.Lang.String UndoPresentationName { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#addEdit(javax.swing.undo.UndoableEdit)"/>
         /// </summary>
@@ -124,23 +124,23 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#getPresentationName()"/> 
         /// </summary>
-        public string PresentationName
+        public Java.Lang.String PresentationName
         {
-            get { return IExecute<string>("getPresentationName"); }
+            get { return IExecute<Java.Lang.String>("getPresentationName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#getRedoPresentationName()"/> 
         /// </summary>
-        public string RedoPresentationName
+        public Java.Lang.String RedoPresentationName
         {
-            get { return IExecute<string>("getRedoPresentationName"); }
+            get { return IExecute<Java.Lang.String>("getRedoPresentationName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#getUndoPresentationName()"/> 
         /// </summary>
-        public string UndoPresentationName
+        public Java.Lang.String UndoPresentationName
         {
-            get { return IExecute<string>("getUndoPresentationName"); }
+            get { return IExecute<Java.Lang.String>("getUndoPresentationName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#addEdit(javax.swing.undo.UndoableEdit)"/>

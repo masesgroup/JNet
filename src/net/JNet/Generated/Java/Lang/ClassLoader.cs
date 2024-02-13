@@ -58,28 +58,28 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#getSystemResourceAsStream(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Io.InputStream"/></returns>
-        public static Java.Io.InputStream GetSystemResourceAsStream(string arg0)
+        public static Java.Io.InputStream GetSystemResourceAsStream(Java.Lang.String arg0)
         {
             return SExecute<Java.Io.InputStream>(LocalBridgeClazz, "getSystemResourceAsStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#getSystemResource(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Net.URL"/></returns>
-        public static Java.Net.URL GetSystemResource(string arg0)
+        public static Java.Net.URL GetSystemResource(Java.Lang.String arg0)
         {
             return SExecute<Java.Net.URL>(LocalBridgeClazz, "getSystemResource", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#getSystemResources(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Util.Enumeration<Java.Net.URL> GetSystemResources(string arg0)
+        public static Java.Util.Enumeration<Java.Net.URL> GetSystemResources(Java.Lang.String arg0)
         {
             return SExecute<Java.Util.Enumeration<Java.Net.URL>>(LocalBridgeClazz, "getSystemResources", arg0);
         }
@@ -97,9 +97,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#getName()"/> 
         /// </summary>
-        public string Name
+        public Java.Lang.String Name
         {
-            get { return IExecute<string>("getName"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#getParent()"/> 
@@ -127,56 +127,56 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#getDefinedPackage(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Package"/></returns>
-        public Java.Lang.Package GetDefinedPackage(string arg0)
+        public Java.Lang.Package GetDefinedPackage(Java.Lang.String arg0)
         {
             return IExecute<Java.Lang.Package>("getDefinedPackage", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#getResourceAsStream(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Io.InputStream"/></returns>
-        public Java.Io.InputStream GetResourceAsStream(string arg0)
+        public Java.Io.InputStream GetResourceAsStream(Java.Lang.String arg0)
         {
             return IExecute<Java.Io.InputStream>("getResourceAsStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#loadClass(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        public Java.Lang.Class LoadClass(string arg0)
+        public Java.Lang.Class LoadClass(Java.Lang.String arg0)
         {
             return IExecute<Java.Lang.Class>("loadClass", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#getResource(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Net.URL"/></returns>
-        public Java.Net.URL GetResource(string arg0)
+        public Java.Net.URL GetResource(Java.Lang.String arg0)
         {
             return IExecute<Java.Net.URL>("getResource", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#getResources(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Util.Enumeration<Java.Net.URL> GetResources(string arg0)
+        public Java.Util.Enumeration<Java.Net.URL> GetResources(Java.Lang.String arg0)
         {
             return IExecute<Java.Util.Enumeration<Java.Net.URL>>("getResources", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#resources(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<Java.Net.URL> Resources(string arg0)
+        public Java.Util.Stream.Stream<Java.Net.URL> Resources(Java.Lang.String arg0)
         {
             return IExecute<Java.Util.Stream.Stream<Java.Net.URL>>("resources", arg0);
         }
@@ -190,9 +190,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#setClassAssertionStatus(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        public void SetClassAssertionStatus(string arg0, bool arg1)
+        public void SetClassAssertionStatus(Java.Lang.String arg0, bool arg1)
         {
             IExecute("setClassAssertionStatus", arg0, arg1);
         }
@@ -207,9 +207,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#setPackageAssertionStatus(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        public void SetPackageAssertionStatus(string arg0, bool arg1)
+        public void SetPackageAssertionStatus(Java.Lang.String arg0, bool arg1)
         {
             IExecute("setPackageAssertionStatus", arg0, arg1);
         }

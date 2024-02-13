@@ -99,14 +99,14 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#PUBLIC_XML_SCHEMA"/>
         /// </summary>
-        public static string PUBLIC_XML_SCHEMA { get { if (!_PUBLIC_XML_SCHEMAReady) { _PUBLIC_XML_SCHEMAContent = SGetField<string>(LocalBridgeClazz, "PUBLIC_XML_SCHEMA"); _PUBLIC_XML_SCHEMAReady = true; } return _PUBLIC_XML_SCHEMAContent; } }
-        private static string _PUBLIC_XML_SCHEMAContent = default;
+        public static Java.Lang.String PUBLIC_XML_SCHEMA { get { if (!_PUBLIC_XML_SCHEMAReady) { _PUBLIC_XML_SCHEMAContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PUBLIC_XML_SCHEMA"); _PUBLIC_XML_SCHEMAReady = true; } return _PUBLIC_XML_SCHEMAContent; } }
+        private static Java.Lang.String _PUBLIC_XML_SCHEMAContent = default;
         private static bool _PUBLIC_XML_SCHEMAReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#SCHEMA_SYSTEM_ID"/>
         /// </summary>
-        public static string SCHEMA_SYSTEM_ID { get { if (!_SCHEMA_SYSTEM_IDReady) { _SCHEMA_SYSTEM_IDContent = SGetField<string>(LocalBridgeClazz, "SCHEMA_SYSTEM_ID"); _SCHEMA_SYSTEM_IDReady = true; } return _SCHEMA_SYSTEM_IDContent; } }
-        private static string _SCHEMA_SYSTEM_IDContent = default;
+        public static Java.Lang.String SCHEMA_SYSTEM_ID { get { if (!_SCHEMA_SYSTEM_IDReady) { _SCHEMA_SYSTEM_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SCHEMA_SYSTEM_ID"); _SCHEMA_SYSTEM_IDReady = true; } return _SCHEMA_SYSTEM_IDContent; } }
+        private static Java.Lang.String _SCHEMA_SYSTEM_IDContent = default;
         private static bool _SCHEMA_SYSTEM_IDReady = false; // this is used because in case of generics 
 
         #endregion

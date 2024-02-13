@@ -35,23 +35,23 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getAlign()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setAlign(java.lang.String)"/>
         /// </summary>
-        string Align { get; set; }
+        Java.Lang.String Align { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getAlt()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setAlt(java.lang.String)"/>
         /// </summary>
-        string Alt { get; set; }
+        Java.Lang.String Alt { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getBorder()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setBorder(java.lang.String)"/>
         /// </summary>
-        string Border { get; set; }
+        Java.Lang.String Border { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getHeight()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setHeight(java.lang.String)"/>
         /// </summary>
-        string Height { get; set; }
+        Java.Lang.String Height { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getHspace()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setHspace(java.lang.String)"/>
         /// </summary>
-        string Hspace { get; set; }
+        Java.Lang.String Hspace { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getIsMap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setIsMap(boolean)"/>
         /// </summary>
@@ -59,31 +59,31 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getLongDesc()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setLongDesc(java.lang.String)"/>
         /// </summary>
-        string LongDesc { get; set; }
+        Java.Lang.String LongDesc { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getLowSrc()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setLowSrc(java.lang.String)"/>
         /// </summary>
-        string LowSrc { get; set; }
+        Java.Lang.String LowSrc { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setName(java.lang.String)"/>
         /// </summary>
-        string Name { get; set; }
+        Java.Lang.String Name { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getSrc()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setSrc(java.lang.String)"/>
         /// </summary>
-        string Src { get; set; }
+        Java.Lang.String Src { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getUseMap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setUseMap(java.lang.String)"/>
         /// </summary>
-        string UseMap { get; set; }
+        Java.Lang.String UseMap { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getVspace()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setVspace(java.lang.String)"/>
         /// </summary>
-        string Vspace { get; set; }
+        Java.Lang.String Vspace { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setWidth(java.lang.String)"/>
         /// </summary>
-        string Width { get; set; }
+        Java.Lang.String Width { get; set; }
 
         #endregion
 
@@ -118,37 +118,37 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getAlign()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setAlign(java.lang.String)"/>
         /// </summary>
-        public string Align
+        public Java.Lang.String Align
         {
-            get { return IExecute<string>("getAlign"); } set { IExecute("setAlign", value); }
+            get { return IExecute<Java.Lang.String>("getAlign"); } set { IExecute("setAlign", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getAlt()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setAlt(java.lang.String)"/>
         /// </summary>
-        public string Alt
+        public Java.Lang.String Alt
         {
-            get { return IExecute<string>("getAlt"); } set { IExecute("setAlt", value); }
+            get { return IExecute<Java.Lang.String>("getAlt"); } set { IExecute("setAlt", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getBorder()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setBorder(java.lang.String)"/>
         /// </summary>
-        public string Border
+        public Java.Lang.String Border
         {
-            get { return IExecute<string>("getBorder"); } set { IExecute("setBorder", value); }
+            get { return IExecute<Java.Lang.String>("getBorder"); } set { IExecute("setBorder", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getHeight()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setHeight(java.lang.String)"/>
         /// </summary>
-        public string Height
+        public Java.Lang.String Height
         {
-            get { return IExecute<string>("getHeight"); } set { IExecute("setHeight", value); }
+            get { return IExecute<Java.Lang.String>("getHeight"); } set { IExecute("setHeight", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getHspace()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setHspace(java.lang.String)"/>
         /// </summary>
-        public string Hspace
+        public Java.Lang.String Hspace
         {
-            get { return IExecute<string>("getHspace"); } set { IExecute("setHspace", value); }
+            get { return IExecute<Java.Lang.String>("getHspace"); } set { IExecute("setHspace", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getIsMap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setIsMap(boolean)"/>
@@ -160,51 +160,51 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getLongDesc()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setLongDesc(java.lang.String)"/>
         /// </summary>
-        public string LongDesc
+        public Java.Lang.String LongDesc
         {
-            get { return IExecute<string>("getLongDesc"); } set { IExecute("setLongDesc", value); }
+            get { return IExecute<Java.Lang.String>("getLongDesc"); } set { IExecute("setLongDesc", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getLowSrc()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setLowSrc(java.lang.String)"/>
         /// </summary>
-        public string LowSrc
+        public Java.Lang.String LowSrc
         {
-            get { return IExecute<string>("getLowSrc"); } set { IExecute("setLowSrc", value); }
+            get { return IExecute<Java.Lang.String>("getLowSrc"); } set { IExecute("setLowSrc", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setName(java.lang.String)"/>
         /// </summary>
-        public string Name
+        public Java.Lang.String Name
         {
-            get { return IExecute<string>("getName"); } set { IExecute("setName", value); }
+            get { return IExecute<Java.Lang.String>("getName"); } set { IExecute("setName", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getSrc()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setSrc(java.lang.String)"/>
         /// </summary>
-        public string Src
+        public Java.Lang.String Src
         {
-            get { return IExecute<string>("getSrc"); } set { IExecute("setSrc", value); }
+            get { return IExecute<Java.Lang.String>("getSrc"); } set { IExecute("setSrc", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getUseMap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setUseMap(java.lang.String)"/>
         /// </summary>
-        public string UseMap
+        public Java.Lang.String UseMap
         {
-            get { return IExecute<string>("getUseMap"); } set { IExecute("setUseMap", value); }
+            get { return IExecute<Java.Lang.String>("getUseMap"); } set { IExecute("setUseMap", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getVspace()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setVspace(java.lang.String)"/>
         /// </summary>
-        public string Vspace
+        public Java.Lang.String Vspace
         {
-            get { return IExecute<string>("getVspace"); } set { IExecute("setVspace", value); }
+            get { return IExecute<Java.Lang.String>("getVspace"); } set { IExecute("setVspace", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setWidth(java.lang.String)"/>
         /// </summary>
-        public string Width
+        public Java.Lang.String Width
         {
-            get { return IExecute<string>("getWidth"); } set { IExecute("setWidth", value); }
+            get { return IExecute<Java.Lang.String>("getWidth"); } set { IExecute("setWidth", value); }
         }
 
         #endregion

@@ -44,19 +44,19 @@ namespace Javax.Annotation.Processing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Completions.html#of(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Annotation.Processing.Completion"/></returns>
-        public static Javax.Annotation.Processing.Completion Of(string arg0, string arg1)
+        public static Javax.Annotation.Processing.Completion Of(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return SExecute<Javax.Annotation.Processing.Completion>(LocalBridgeClazz, "of", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Completions.html#of(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Annotation.Processing.Completion"/></returns>
-        public static Javax.Annotation.Processing.Completion Of(string arg0)
+        public static Javax.Annotation.Processing.Completion Of(Java.Lang.String arg0)
         {
             return SExecute<Javax.Annotation.Processing.Completion>(LocalBridgeClazz, "of", arg0);
         }

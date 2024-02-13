@@ -32,9 +32,9 @@ namespace Javax.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public DocFlavor(string arg0, string arg1)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public DocFlavor(Java.Lang.String arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
         }
@@ -57,8 +57,8 @@ namespace Javax.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.html#hostEncoding"/>
         /// </summary>
-        public static string hostEncoding { get { if (!_hostEncodingReady) { _hostEncodingContent = SGetField<string>(LocalBridgeClazz, "hostEncoding"); _hostEncodingReady = true; } return _hostEncodingContent; } }
-        private static string _hostEncodingContent = default;
+        public static Java.Lang.String hostEncoding { get { if (!_hostEncodingReady) { _hostEncodingContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "hostEncoding"); _hostEncodingReady = true; } return _hostEncodingContent; } }
+        private static Java.Lang.String _hostEncodingContent = default;
         private static bool _hostEncodingReady = false; // this is used because in case of generics 
 
         #endregion
@@ -71,39 +71,39 @@ namespace Javax.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.html#getMediaSubtype()"/> 
         /// </summary>
-        public string MediaSubtype
+        public Java.Lang.String MediaSubtype
         {
-            get { return IExecute<string>("getMediaSubtype"); }
+            get { return IExecute<Java.Lang.String>("getMediaSubtype"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.html#getMediaType()"/> 
         /// </summary>
-        public string MediaType
+        public Java.Lang.String MediaType
         {
-            get { return IExecute<string>("getMediaType"); }
+            get { return IExecute<Java.Lang.String>("getMediaType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.html#getMimeType()"/> 
         /// </summary>
-        public string MimeType
+        public Java.Lang.String MimeType
         {
-            get { return IExecute<string>("getMimeType"); }
+            get { return IExecute<Java.Lang.String>("getMimeType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.html#getRepresentationClassName()"/> 
         /// </summary>
-        public string RepresentationClassName
+        public Java.Lang.String RepresentationClassName
         {
-            get { return IExecute<string>("getRepresentationClassName"); }
+            get { return IExecute<Java.Lang.String>("getRepresentationClassName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.html#getParameter(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetParameter(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetParameter(Java.Lang.String arg0)
         {
-            return IExecute<string>("getParameter", arg0);
+            return IExecute<Java.Lang.String>("getParameter", arg0);
         }
 
         #endregion
@@ -116,8 +116,8 @@ namespace Javax.Print
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
-            public BYTE_ARRAY(string arg0)
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            public BYTE_ARRAY(Java.Lang.String arg0)
                 : base(arg0)
             {
             }
@@ -269,8 +269,8 @@ namespace Javax.Print
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.CHAR_ARRAY.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
-            public CHAR_ARRAY(string arg0)
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            public CHAR_ARRAY(Java.Lang.String arg0)
                 : base(arg0)
             {
             }
@@ -320,8 +320,8 @@ namespace Javax.Print
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
-            public INPUT_STREAM(string arg0)
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            public INPUT_STREAM(Java.Lang.String arg0)
                 : base(arg0)
             {
             }
@@ -473,8 +473,8 @@ namespace Javax.Print
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.READER.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
-            public READER(string arg0)
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            public READER(Java.Lang.String arg0)
                 : base(arg0)
             {
             }
@@ -524,8 +524,8 @@ namespace Javax.Print
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.SERVICE_FORMATTED.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
-            public SERVICE_FORMATTED(string arg0)
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            public SERVICE_FORMATTED(Java.Lang.String arg0)
                 : base(arg0)
             {
             }
@@ -581,8 +581,8 @@ namespace Javax.Print
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.STRING.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
-            public STRING(string arg0)
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            public STRING(Java.Lang.String arg0)
                 : base(arg0)
             {
             }
@@ -632,8 +632,8 @@ namespace Javax.Print
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.URL.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
-            public URL(string arg0)
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            public URL(Java.Lang.String arg0)
                 : base(arg0)
             {
             }

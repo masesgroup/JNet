@@ -46,9 +46,9 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater"/></returns>
-        public static Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater NewUpdater(Java.Lang.Class arg0, Java.Lang.Class arg1, string arg2)
+        public static Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater NewUpdater(Java.Lang.Class arg0, Java.Lang.Class arg1, Java.Lang.String arg2)
         {
             return SExecute<Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater>(LocalBridgeClazz, "newUpdater", arg0, arg1, arg2);
         }
@@ -193,11 +193,11 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <typeparam name="U"></typeparam>
         /// <typeparam name="W"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater"/></returns>
-        public static Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater<U, W> NewUpdater<U, W>(Java.Lang.Class arg0, Java.Lang.Class arg1, string arg2)
+        public static Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater<U, W> NewUpdater<U, W>(Java.Lang.Class arg0, Java.Lang.Class arg1, Java.Lang.String arg2)
         {
             return SExecute<Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater<U, W>>(LocalBridgeClazz, "newUpdater", arg0, arg1, arg2);
         }

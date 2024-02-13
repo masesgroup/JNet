@@ -32,8 +32,8 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/LinkRef.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public LinkRef(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public LinkRef(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -64,9 +64,9 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/LinkRef.html#getLinkName()"/> 
         /// </summary>
-        public string LinkName
+        public Java.Lang.String LinkName
         {
-            get { return IExecute<string>("getLinkName"); }
+            get { return IExecute<Java.Lang.String>("getLinkName"); }
         }
 
         #endregion

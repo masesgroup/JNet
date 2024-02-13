@@ -33,10 +33,10 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#%3Cinit%3E(java.io.File,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Io.FileNotFoundException"/>
         /// <exception cref="Java.Io.UnsupportedEncodingException"/>
-        public PrintStream(Java.Io.File arg0, string arg1)
+        public PrintStream(Java.Io.File arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
         }
@@ -64,9 +64,9 @@ namespace Java.Io
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Io.UnsupportedEncodingException"/>
-        public PrintStream(Java.Io.OutputStream arg0, bool arg1, string arg2)
+        public PrintStream(Java.Io.OutputStream arg0, bool arg1, Java.Lang.String arg2)
             : base(arg0, arg1, arg2)
         {
         }
@@ -100,30 +100,30 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Io.FileNotFoundException"/>
         /// <exception cref="Java.Io.UnsupportedEncodingException"/>
-        public PrintStream(string arg0, string arg1)
+        public PrintStream(Java.Lang.String arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
         /// <exception cref="Java.Io.IOException"/>
-        public PrintStream(string arg0, Java.Nio.Charset.Charset arg1)
+        public PrintStream(Java.Lang.String arg0, Java.Nio.Charset.Charset arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Io.FileNotFoundException"/>
-        public PrintStream(string arg0)
+        public PrintStream(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -163,10 +163,10 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#format(java.lang.String,java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="Java.Io.PrintStream"/></returns>
-        public Java.Io.PrintStream Format(string arg0, params object[] arg1)
+        public Java.Io.PrintStream Format(Java.Lang.String arg0, params object[] arg1)
         {
             if (arg1.Length == 0) return IExecute<Java.Io.PrintStream>("format", arg0); else return IExecute<Java.Io.PrintStream>("format", arg0, arg1);
         }
@@ -174,20 +174,20 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#format(java.util.Locale,java.lang.String,java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="object"/></param>
         /// <returns><see cref="Java.Io.PrintStream"/></returns>
-        public Java.Io.PrintStream Format(Java.Util.Locale arg0, string arg1, params object[] arg2)
+        public Java.Io.PrintStream Format(Java.Util.Locale arg0, Java.Lang.String arg1, params object[] arg2)
         {
             if (arg2.Length == 0) return IExecute<Java.Io.PrintStream>("format", arg0, arg1); else return IExecute<Java.Io.PrintStream>("format", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#printf(java.lang.String,java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="Java.Io.PrintStream"/></returns>
-        public Java.Io.PrintStream Printf(string arg0, params object[] arg1)
+        public Java.Io.PrintStream Printf(Java.Lang.String arg0, params object[] arg1)
         {
             if (arg1.Length == 0) return IExecute<Java.Io.PrintStream>("printf", arg0); else return IExecute<Java.Io.PrintStream>("printf", arg0, arg1);
         }
@@ -195,10 +195,10 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#printf(java.util.Locale,java.lang.String,java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="object"/></param>
         /// <returns><see cref="Java.Io.PrintStream"/></returns>
-        public Java.Io.PrintStream Printf(Java.Util.Locale arg0, string arg1, params object[] arg2)
+        public Java.Io.PrintStream Printf(Java.Util.Locale arg0, Java.Lang.String arg1, params object[] arg2)
         {
             if (arg2.Length == 0) return IExecute<Java.Io.PrintStream>("printf", arg0, arg1); else return IExecute<Java.Io.PrintStream>("printf", arg0, arg1, arg2);
         }
@@ -293,8 +293,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#print(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public void Print(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void Print(Java.Lang.String arg0)
         {
             IExecute("print", arg0);
         }
@@ -372,8 +372,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#println(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public void Println(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void Println(Java.Lang.String arg0)
         {
             IExecute("println", arg0);
         }

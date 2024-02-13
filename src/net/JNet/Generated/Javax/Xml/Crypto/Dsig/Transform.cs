@@ -87,32 +87,32 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#BASE64"/>
         /// </summary>
-        public static string BASE64 { get { if (!_BASE64Ready) { _BASE64Content = SGetField<string>(LocalBridgeClazz, "BASE64"); _BASE64Ready = true; } return _BASE64Content; } }
-        private static string _BASE64Content = default;
+        public static Java.Lang.String BASE64 { get { if (!_BASE64Ready) { _BASE64Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "BASE64"); _BASE64Ready = true; } return _BASE64Content; } }
+        private static Java.Lang.String _BASE64Content = default;
         private static bool _BASE64Ready = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#ENVELOPED"/>
         /// </summary>
-        public static string ENVELOPED { get { if (!_ENVELOPEDReady) { _ENVELOPEDContent = SGetField<string>(LocalBridgeClazz, "ENVELOPED"); _ENVELOPEDReady = true; } return _ENVELOPEDContent; } }
-        private static string _ENVELOPEDContent = default;
+        public static Java.Lang.String ENVELOPED { get { if (!_ENVELOPEDReady) { _ENVELOPEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ENVELOPED"); _ENVELOPEDReady = true; } return _ENVELOPEDContent; } }
+        private static Java.Lang.String _ENVELOPEDContent = default;
         private static bool _ENVELOPEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#XPATH"/>
         /// </summary>
-        public static string XPATH { get { if (!_XPATHReady) { _XPATHContent = SGetField<string>(LocalBridgeClazz, "XPATH"); _XPATHReady = true; } return _XPATHContent; } }
-        private static string _XPATHContent = default;
+        public static Java.Lang.String XPATH { get { if (!_XPATHReady) { _XPATHContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "XPATH"); _XPATHReady = true; } return _XPATHContent; } }
+        private static Java.Lang.String _XPATHContent = default;
         private static bool _XPATHReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#XPATH2"/>
         /// </summary>
-        public static string XPATH2 { get { if (!_XPATH2Ready) { _XPATH2Content = SGetField<string>(LocalBridgeClazz, "XPATH2"); _XPATH2Ready = true; } return _XPATH2Content; } }
-        private static string _XPATH2Content = default;
+        public static Java.Lang.String XPATH2 { get { if (!_XPATH2Ready) { _XPATH2Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "XPATH2"); _XPATH2Ready = true; } return _XPATH2Content; } }
+        private static Java.Lang.String _XPATH2Content = default;
         private static bool _XPATH2Ready = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#XSLT"/>
         /// </summary>
-        public static string XSLT { get { if (!_XSLTReady) { _XSLTContent = SGetField<string>(LocalBridgeClazz, "XSLT"); _XSLTReady = true; } return _XSLTContent; } }
-        private static string _XSLTContent = default;
+        public static Java.Lang.String XSLT { get { if (!_XSLTReady) { _XSLTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "XSLT"); _XSLTReady = true; } return _XSLTContent; } }
+        private static Java.Lang.String _XSLTContent = default;
         private static bool _XSLTReady = false; // this is used because in case of generics 
 
         #endregion

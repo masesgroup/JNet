@@ -32,8 +32,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPopupMenu.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public JPopupMenu(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public JPopupMenu(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -85,9 +85,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPopupMenu.html#getLabel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPopupMenu.html#setLabel(java.lang.String)"/>
         /// </summary>
-        public string Label
+        public Java.Lang.String Label
         {
-            get { return IExecute<string>("getLabel"); } set { IExecute("setLabel", value); }
+            get { return IExecute<Java.Lang.String>("getLabel"); } set { IExecute("setLabel", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPopupMenu.html#getMargin()"/> 
@@ -163,9 +163,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPopupMenu.html#add(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Swing.JMenuItem"/></returns>
-        public Javax.Swing.JMenuItem Add(string arg0)
+        public Javax.Swing.JMenuItem Add(Java.Lang.String arg0)
         {
             return IExecute<Javax.Swing.JMenuItem>("add", arg0);
         }

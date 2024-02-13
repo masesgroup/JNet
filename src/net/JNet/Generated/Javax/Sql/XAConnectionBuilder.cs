@@ -42,9 +42,9 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XAConnectionBuilder.html#password(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Sql.XAConnectionBuilder"/></returns>
-        Javax.Sql.XAConnectionBuilder Password(string arg0);
+        Javax.Sql.XAConnectionBuilder Password(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XAConnectionBuilder.html#shardingKey(java.sql.ShardingKey)"/>
         /// </summary>
@@ -60,9 +60,9 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XAConnectionBuilder.html#user(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Sql.XAConnectionBuilder"/></returns>
-        Javax.Sql.XAConnectionBuilder User(string arg0);
+        Javax.Sql.XAConnectionBuilder User(Java.Lang.String arg0);
 
         #endregion
 
@@ -107,9 +107,9 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XAConnectionBuilder.html#password(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Sql.XAConnectionBuilder"/></returns>
-        public Javax.Sql.XAConnectionBuilder Password(string arg0)
+        public Javax.Sql.XAConnectionBuilder Password(Java.Lang.String arg0)
         {
             return IExecute<Javax.Sql.XAConnectionBuilder>("password", arg0);
         }
@@ -134,9 +134,9 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XAConnectionBuilder.html#user(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Sql.XAConnectionBuilder"/></returns>
-        public Javax.Sql.XAConnectionBuilder User(string arg0)
+        public Javax.Sql.XAConnectionBuilder User(Java.Lang.String arg0)
         {
             return IExecute<Javax.Sql.XAConnectionBuilder>("user", arg0);
         }

@@ -33,8 +33,8 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.Runnable,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public Thread(Java.Lang.Runnable arg0, string arg1)
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public Thread(Java.Lang.Runnable arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
         }
@@ -49,8 +49,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public Thread(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public Thread(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -59,10 +59,10 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="long"/></param>
         /// <param name="arg4"><see cref="bool"/></param>
-        public Thread(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1, string arg2, long arg3, bool arg4)
+        public Thread(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1, Java.Lang.String arg2, long arg3, bool arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
@@ -71,9 +71,9 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="long"/></param>
-        public Thread(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1, string arg2, long arg3)
+        public Thread(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1, Java.Lang.String arg2, long arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
@@ -82,8 +82,8 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
-        public Thread(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1, string arg2)
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        public Thread(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1, Java.Lang.String arg2)
             : base(arg0, arg1, arg2)
         {
         }
@@ -100,8 +100,8 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.ThreadGroup,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public Thread(Java.Lang.ThreadGroup arg0, string arg1)
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public Thread(Java.Lang.ThreadGroup arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
         }
@@ -255,9 +255,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#setName(java.lang.String)"/>
         /// </summary>
-        public string Name
+        public Java.Lang.String Name
         {
-            get { return IExecute<string>("getName"); } set { IExecute("setName", value); }
+            get { return IExecute<Java.Lang.String>("getName"); } set { IExecute("setName", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getPriority()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#setPriority(int)"/>
@@ -430,9 +430,9 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Lang.Thread.State"/></returns>
-            public static Java.Lang.Thread.State ValueOf(string arg0)
+            public static Java.Lang.Thread.State ValueOf(Java.Lang.String arg0)
             {
                 return SExecute<Java.Lang.Thread.State>(LocalBridgeClazz, "valueOf", arg0);
             }

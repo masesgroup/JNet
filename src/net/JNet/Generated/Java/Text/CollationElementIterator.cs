@@ -122,8 +122,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationElementIterator.html#setText(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public void SetText(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetText(Java.Lang.String arg0)
         {
             IExecute("setText", arg0);
         }

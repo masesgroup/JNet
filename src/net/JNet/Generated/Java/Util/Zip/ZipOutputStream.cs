@@ -95,8 +95,8 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipOutputStream.html#setComment(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public void SetComment(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetComment(Java.Lang.String arg0)
         {
             IExecute("setComment", arg0);
         }

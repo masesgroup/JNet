@@ -305,17 +305,17 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#setNString(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void SetNString(int arg0, string arg1);
+        void SetNString(int arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#setNull(int,int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void SetNull(int arg0, int arg1, string arg2);
+        void SetNull(int arg0, int arg1, Java.Lang.String arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#setNull(int,int)"/>
         /// </summary>
@@ -379,9 +379,9 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#setString(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void SetString(int arg0, string arg1);
+        void SetString(int arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#setTime(int,java.sql.Time,java.util.Calendar)"/>
         /// </summary>
@@ -861,9 +861,9 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#setNString(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void SetNString(int arg0, string arg1)
+        public void SetNString(int arg0, Java.Lang.String arg1)
         {
             IExecute("setNString", arg0, arg1);
         }
@@ -872,9 +872,9 @@ namespace Java.Sql
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void SetNull(int arg0, int arg1, string arg2)
+        public void SetNull(int arg0, int arg1, Java.Lang.String arg2)
         {
             IExecute("setNull", arg0, arg1, arg2);
         }
@@ -965,9 +965,9 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#setString(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void SetString(int arg0, string arg1)
+        public void SetString(int arg0, Java.Lang.String arg1)
         {
             IExecute("setString", arg0, arg1);
         }

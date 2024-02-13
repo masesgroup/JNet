@@ -39,7 +39,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/MultipleMaster.html#getDesignAxisNames()"/> 
         /// </summary>
-        string[] DesignAxisNames { get; }
+        Java.Lang.String[] DesignAxisNames { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/MultipleMaster.html#getDesignAxisRanges()"/> 
         /// </summary>
@@ -105,9 +105,9 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/MultipleMaster.html#getDesignAxisNames()"/> 
         /// </summary>
-        public string[] DesignAxisNames
+        public Java.Lang.String[] DesignAxisNames
         {
-            get { return IExecuteArray<string>("getDesignAxisNames"); }
+            get { return IExecuteArray<Java.Lang.String>("getDesignAxisNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/MultipleMaster.html#getDesignAxisRanges()"/> 

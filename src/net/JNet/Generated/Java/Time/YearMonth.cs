@@ -270,10 +270,10 @@ namespace Java.Time
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#format(java.time.format.DateTimeFormatter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Format.DateTimeFormatter"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string Format(Java.Time.Format.DateTimeFormatter arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String Format(Java.Time.Format.DateTimeFormatter arg0)
         {
-            return IExecute<string>("format", arg0);
+            return IExecute<Java.Lang.String>("format", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#atDay(int)"/>

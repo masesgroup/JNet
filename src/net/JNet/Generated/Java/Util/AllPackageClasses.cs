@@ -5237,7 +5237,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html"/>
     /// </summary>
-    public partial class Scanner : Java.Util.Iterator<string>
+    public partial class Scanner : Java.Util.Iterator<Java.Lang.String>
     {
         const string _bridgeClassName = "java.util.Scanner";
         /// <summary>

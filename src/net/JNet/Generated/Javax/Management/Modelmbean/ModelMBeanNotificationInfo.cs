@@ -32,21 +32,21 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanNotificationInfo.html#%3Cinit%3E(java.lang.String[],java.lang.String,java.lang.String,javax.management.Descriptor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="Javax.Management.Descriptor"/></param>
-        public ModelMBeanNotificationInfo(string[] arg0, string arg1, string arg2, Javax.Management.Descriptor arg3)
+        public ModelMBeanNotificationInfo(Java.Lang.String[] arg0, Java.Lang.String arg1, Java.Lang.String arg2, Javax.Management.Descriptor arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanNotificationInfo.html#%3Cinit%3E(java.lang.String[],java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
-        public ModelMBeanNotificationInfo(string[] arg0, string arg1, string arg2)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        public ModelMBeanNotificationInfo(Java.Lang.String[] arg0, Java.Lang.String arg1, Java.Lang.String arg2)
             : base(arg0, arg1, arg2)
         {
         }

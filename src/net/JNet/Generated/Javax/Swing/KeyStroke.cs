@@ -84,9 +84,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/KeyStroke.html#getKeyStroke(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
-        public static Javax.Swing.KeyStroke GetKeyStroke(string arg0)
+        public static Javax.Swing.KeyStroke GetKeyStroke(Java.Lang.String arg0)
         {
             return SExecute<Javax.Swing.KeyStroke>(LocalBridgeClazz, "getKeyStroke", arg0);
         }

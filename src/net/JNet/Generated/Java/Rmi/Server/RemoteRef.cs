@@ -58,14 +58,14 @@ namespace Java.Rmi.Server
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#getRefClass(java.io.ObjectOutput)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.ObjectOutput"/></param>
-        /// <returns><see cref="string"/></returns>
-        string GetRefClass(Java.Io.ObjectOutput arg0);
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        Java.Lang.String GetRefClass(Java.Io.ObjectOutput arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteToString()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        string RemoteToString();
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        Java.Lang.String RemoteToString();
 
         #endregion
 
@@ -92,8 +92,8 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#packagePrefix"/>
         /// </summary>
-        public static string packagePrefix { get { if (!_packagePrefixReady) { _packagePrefixContent = SGetField<string>(LocalBridgeClazz, "packagePrefix"); _packagePrefixReady = true; } return _packagePrefixContent; } }
-        private static string _packagePrefixContent = default;
+        public static Java.Lang.String packagePrefix { get { if (!_packagePrefixReady) { _packagePrefixContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "packagePrefix"); _packagePrefixReady = true; } return _packagePrefixContent; } }
+        private static Java.Lang.String _packagePrefixContent = default;
         private static bool _packagePrefixReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#serialVersionUID"/>
@@ -144,19 +144,19 @@ namespace Java.Rmi.Server
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#getRefClass(java.io.ObjectOutput)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.ObjectOutput"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetRefClass(Java.Io.ObjectOutput arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetRefClass(Java.Io.ObjectOutput arg0)
         {
-            return IExecute<string>("getRefClass", arg0);
+            return IExecute<Java.Lang.String>("getRefClass", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteToString()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        public string RemoteToString()
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String RemoteToString()
         {
-            return IExecute<string>("remoteToString");
+            return IExecute<Java.Lang.String>("remoteToString");
         }
 
         #endregion

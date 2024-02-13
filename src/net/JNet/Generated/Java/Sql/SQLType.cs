@@ -35,11 +35,11 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLType.html#getName()"/> 
         /// </summary>
-        string Name { get; }
+        Java.Lang.String Name { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLType.html#getVendor()"/> 
         /// </summary>
-        string Vendor { get; }
+        Java.Lang.String Vendor { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLType.html#getVendorTypeNumber()"/> 
         /// </summary>
@@ -78,16 +78,16 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLType.html#getName()"/> 
         /// </summary>
-        public string Name
+        public Java.Lang.String Name
         {
-            get { return IExecute<string>("getName"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLType.html#getVendor()"/> 
         /// </summary>
-        public string Vendor
+        public Java.Lang.String Vendor
         {
-            get { return IExecute<string>("getVendor"); }
+            get { return IExecute<Java.Lang.String>("getVendor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLType.html#getVendorTypeNumber()"/> 

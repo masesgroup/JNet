@@ -167,9 +167,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#stringWidth(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        public int StringWidth(string arg0)
+        public int StringWidth(Java.Lang.String arg0)
         {
             return IExecute<int>("stringWidth", arg0);
         }
@@ -188,22 +188,22 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getLineMetrics(java.lang.String,int,int,java.awt.Graphics)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Awt.Graphics"/></param>
         /// <returns><see cref="Java.Awt.FontNs.LineMetrics"/></returns>
-        public Java.Awt.FontNs.LineMetrics GetLineMetrics(string arg0, int arg1, int arg2, Java.Awt.Graphics arg3)
+        public Java.Awt.FontNs.LineMetrics GetLineMetrics(Java.Lang.String arg0, int arg1, int arg2, Java.Awt.Graphics arg3)
         {
             return IExecute<Java.Awt.FontNs.LineMetrics>("getLineMetrics", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getLineMetrics(java.lang.String,java.awt.Graphics)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
         /// <returns><see cref="Java.Awt.FontNs.LineMetrics"/></returns>
-        public Java.Awt.FontNs.LineMetrics GetLineMetrics(string arg0, Java.Awt.Graphics arg1)
+        public Java.Awt.FontNs.LineMetrics GetLineMetrics(Java.Lang.String arg0, Java.Awt.Graphics arg1)
         {
             return IExecute<Java.Awt.FontNs.LineMetrics>("getLineMetrics", arg0, arg1);
         }
@@ -243,22 +243,22 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getStringBounds(java.lang.String,int,int,java.awt.Graphics)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Awt.Graphics"/></param>
         /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
-        public Java.Awt.Geom.Rectangle2D GetStringBounds(string arg0, int arg1, int arg2, Java.Awt.Graphics arg3)
+        public Java.Awt.Geom.Rectangle2D GetStringBounds(Java.Lang.String arg0, int arg1, int arg2, Java.Awt.Graphics arg3)
         {
             return IExecute<Java.Awt.Geom.Rectangle2D>("getStringBounds", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getStringBounds(java.lang.String,java.awt.Graphics)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
         /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
-        public Java.Awt.Geom.Rectangle2D GetStringBounds(string arg0, Java.Awt.Graphics arg1)
+        public Java.Awt.Geom.Rectangle2D GetStringBounds(Java.Lang.String arg0, Java.Awt.Graphics arg1)
         {
             return IExecute<Java.Awt.Geom.Rectangle2D>("getStringBounds", arg0, arg1);
         }

@@ -35,7 +35,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#getSubprotocol()"/> 
         /// </summary>
-        string Subprotocol { get; }
+        Java.Lang.String Subprotocol { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#isInputClosed()"/>
         /// </summary>
@@ -59,9 +59,9 @@ namespace Java.Net.Http
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#sendClose(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket> SendClose(int arg0, string arg1);
+        Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket> SendClose(int arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#sendPing(java.nio.ByteBuffer)"/>
         /// </summary>
@@ -130,9 +130,9 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#getSubprotocol()"/> 
         /// </summary>
-        public string Subprotocol
+        public Java.Lang.String Subprotocol
         {
-            get { return IExecute<string>("getSubprotocol"); }
+            get { return IExecute<Java.Lang.String>("getSubprotocol"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#isInputClosed()"/>
@@ -166,9 +166,9 @@ namespace Java.Net.Http
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#sendClose(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket> SendClose(int arg0, string arg1)
+        public Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket> SendClose(int arg0, Java.Lang.String arg1)
         {
             return IExecute<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket>>("sendClose", arg0, arg1);
         }
@@ -251,20 +251,20 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Builder.html#header(java.lang.String,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
-            /// <param name="arg1"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Net.Http.WebSocket.Builder"/></returns>
-            public Java.Net.Http.WebSocket.Builder Header(string arg0, string arg1)
+            public Java.Net.Http.WebSocket.Builder Header(Java.Lang.String arg0, Java.Lang.String arg1)
             {
                 return IExecute<Java.Net.Http.WebSocket.Builder>("header", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Builder.html#subprotocols(java.lang.String,java.lang.String[])"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
-            /// <param name="arg1"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Net.Http.WebSocket.Builder"/></returns>
-            public Java.Net.Http.WebSocket.Builder Subprotocols(string arg0, params string[] arg1)
+            public Java.Net.Http.WebSocket.Builder Subprotocols(Java.Lang.String arg0, params Java.Lang.String[] arg1)
             {
                 if (arg1.Length == 0) return IExecute<Java.Net.Http.WebSocket.Builder>("subprotocols", arg0); else return IExecute<Java.Net.Http.WebSocket.Builder>("subprotocols", arg0, arg1);
             }
@@ -366,10 +366,10 @@ namespace Java.Net.Http
             /// </summary>
             /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
             /// <param name="arg1"><see cref="int"/></param>
-            /// <param name="arg2"><see cref="string"/></param>
+            /// <param name="arg2"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
             /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-            public Java.Util.Concurrent.CompletionStage<object> OnCloseDefault(Java.Net.Http.WebSocket arg0, int arg1, string arg2)
+            public Java.Util.Concurrent.CompletionStage<object> OnCloseDefault(Java.Net.Http.WebSocket arg0, int arg1, Java.Lang.String arg2)
             {
                 return IExecute<Java.Util.Concurrent.CompletionStage<object>>("onCloseDefault", arg0, arg1, arg2);
             }
@@ -378,12 +378,12 @@ namespace Java.Net.Http
             /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onClose(java.net.http.WebSocket,int,java.lang.String)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnClose"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Java.Net.Http.WebSocket, int, string, Java.Util.Concurrent.CompletionStage<object>> OnOnClose { get; set; } = null;
+            public System.Func<Java.Net.Http.WebSocket, int, Java.Lang.String, Java.Util.Concurrent.CompletionStage<object>> OnOnClose { get; set; } = null;
 
             void OnCloseEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>> data)
             {
                 var methodToExecute = (OnOnClose != null) ? OnOnClose : OnClose;
-                var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<string>(1));
+                var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<Java.Lang.String>(1));
                 data.SetReturnValue(executionResult);
             }
 
@@ -392,10 +392,10 @@ namespace Java.Net.Http
             /// </summary>
             /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
             /// <param name="arg1"><see cref="int"/></param>
-            /// <param name="arg2"><see cref="string"/></param>
+            /// <param name="arg2"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
             /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnCloseDefault"/>; override the method to implement a different behavior</remarks>
-            public virtual Java.Util.Concurrent.CompletionStage<object> OnClose(Java.Net.Http.WebSocket arg0, int arg1, string arg2)
+            public virtual Java.Util.Concurrent.CompletionStage<object> OnClose(Java.Net.Http.WebSocket arg0, int arg1, Java.Lang.String arg2)
             {
                 return OnCloseDefault(arg0, arg1, arg2);
             }

@@ -56,9 +56,9 @@ namespace Java.Security.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EncodedKeySpec.html#getAlgorithm()"/> 
         /// </summary>
-        public string Algorithm
+        public Java.Lang.String Algorithm
         {
-            get { return IExecute<string>("getAlgorithm"); }
+            get { return IExecute<Java.Lang.String>("getAlgorithm"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EncodedKeySpec.html#getEncoded()"/> 
@@ -70,9 +70,9 @@ namespace Java.Security.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EncodedKeySpec.html#getFormat()"/> 
         /// </summary>
-        public string Format
+        public Java.Lang.String Format
         {
-            get { return IExecute<string>("getFormat"); }
+            get { return IExecute<Java.Lang.String>("getFormat"); }
         }
 
         #endregion

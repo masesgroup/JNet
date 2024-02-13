@@ -35,7 +35,7 @@ namespace Javax.Management.Openmbean
         /// <param name="arg0"><see cref="Javax.Management.Openmbean.CompositeType"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <exception cref="Javax.Management.Openmbean.OpenDataException"/>
-        public CompositeDataSupport(Javax.Management.Openmbean.CompositeType arg0, Java.Util.Map<string, object> arg1)
+        public CompositeDataSupport(Javax.Management.Openmbean.CompositeType arg0, Java.Util.Map<Java.Lang.String, object> arg1)
             : base(arg0, arg1)
         {
         }
@@ -73,9 +73,9 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataSupport.html#containsKey(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool ContainsKey(string arg0)
+        public bool ContainsKey(Java.Lang.String arg0)
         {
             return IExecute<bool>("containsKey", arg0);
         }
@@ -91,18 +91,18 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataSupport.html#get(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
-        public object Get(string arg0)
+        public object Get(Java.Lang.String arg0)
         {
             return IExecute("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataSupport.html#getAll(java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
-        public object[] GetAll(string[] arg0)
+        public object[] GetAll(Java.Lang.String[] arg0)
         {
             return IExecuteArray<object>("getAll", new object[] { arg0 });
         }

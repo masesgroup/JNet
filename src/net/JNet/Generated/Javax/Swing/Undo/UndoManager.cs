@@ -59,9 +59,9 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#getUndoOrRedoPresentationName()"/> 
         /// </summary>
-        public string UndoOrRedoPresentationName
+        public Java.Lang.String UndoOrRedoPresentationName
         {
-            get { return IExecute<string>("getUndoOrRedoPresentationName"); }
+            get { return IExecute<Java.Lang.String>("getUndoOrRedoPresentationName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#canUndoOrRedo()"/>

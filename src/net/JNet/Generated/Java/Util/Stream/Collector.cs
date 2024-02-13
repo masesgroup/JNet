@@ -156,9 +156,9 @@ namespace Java.Util.Stream
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.Characteristics.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Util.Stream.Collector.Characteristics"/></returns>
-            public static Java.Util.Stream.Collector.Characteristics ValueOf(string arg0)
+            public static Java.Util.Stream.Collector.Characteristics ValueOf(Java.Lang.String arg0)
             {
                 return SExecute<Java.Util.Stream.Collector.Characteristics>(LocalBridgeClazz, "valueOf", arg0);
             }

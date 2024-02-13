@@ -56,40 +56,40 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/IDN.html#toASCII(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string ToASCII(string arg0, int arg1)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String ToASCII(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<string>(LocalBridgeClazz, "toASCII", arg0, arg1);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toASCII", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/IDN.html#toASCII(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string ToASCII(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String ToASCII(Java.Lang.String arg0)
         {
-            return SExecute<string>(LocalBridgeClazz, "toASCII", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toASCII", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/IDN.html#toUnicode(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string ToUnicode(string arg0, int arg1)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String ToUnicode(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<string>(LocalBridgeClazz, "toUnicode", arg0, arg1);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toUnicode", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/IDN.html#toUnicode(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string ToUnicode(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String ToUnicode(Java.Lang.String arg0)
         {
-            return SExecute<string>(LocalBridgeClazz, "toUnicode", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toUnicode", arg0);
         }
 
         #endregion

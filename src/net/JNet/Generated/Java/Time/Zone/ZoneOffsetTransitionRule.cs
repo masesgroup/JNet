@@ -177,9 +177,9 @@ namespace Java.Time.Zone
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition"/></returns>
-            public static Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition ValueOf(string arg0)
+            public static Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition ValueOf(Java.Lang.String arg0)
             {
                 return SExecute<Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition>(LocalBridgeClazz, "valueOf", arg0);
             }

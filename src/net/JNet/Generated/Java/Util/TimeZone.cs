@@ -64,9 +64,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#getAvailableIDs()"/> 
         /// </summary>
-        public static string[] AvailableIDs
+        public static Java.Lang.String[] AvailableIDs
         {
-            get { return SExecuteArray<string>(LocalBridgeClazz, "getAvailableIDs"); }
+            get { return SExecuteArray<Java.Lang.String>(LocalBridgeClazz, "getAvailableIDs"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#getDefault()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#setDefault(java.util.TimeZone)"/>
@@ -88,17 +88,17 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#getAvailableIDs(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string[] GetAvailableIDs(int arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String[] GetAvailableIDs(int arg0)
         {
-            return SExecuteArray<string>(LocalBridgeClazz, "getAvailableIDs", arg0);
+            return SExecuteArray<Java.Lang.String>(LocalBridgeClazz, "getAvailableIDs", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#getTimeZone(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.TimeZone"/></returns>
-        public static Java.Util.TimeZone GetTimeZone(string arg0)
+        public static Java.Util.TimeZone GetTimeZone(Java.Lang.String arg0)
         {
             return SExecute<Java.Util.TimeZone>(LocalBridgeClazz, "getTimeZone", arg0);
         }
@@ -109,9 +109,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#getDisplayName()"/> 
         /// </summary>
-        public string DisplayName
+        public Java.Lang.String DisplayName
         {
-            get { return IExecute<string>("getDisplayName"); }
+            get { return IExecute<Java.Lang.String>("getDisplayName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#getDSTSavings()"/> 
@@ -123,9 +123,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#getID()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#setID(java.lang.String)"/>
         /// </summary>
-        public string ID
+        public Java.Lang.String ID
         {
-            get { return IExecute<string>("getID"); } set { IExecute("setID", value); }
+            get { return IExecute<Java.Lang.String>("getID"); } set { IExecute("setID", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#getRawOffset()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#setRawOffset(int)"/>
@@ -189,19 +189,19 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetDisplayName(bool arg0, int arg1)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDisplayName(bool arg0, int arg1)
         {
-            return IExecute<string>("getDisplayName", arg0, arg1);
+            return IExecute<Java.Lang.String>("getDisplayName", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#getDisplayName(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetDisplayName(Java.Util.Locale arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDisplayName(Java.Util.Locale arg0)
         {
-            return IExecute<string>("getDisplayName", arg0);
+            return IExecute<Java.Lang.String>("getDisplayName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#getOffset(long)"/>
@@ -218,10 +218,10 @@ namespace Java.Util
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetDisplayName(bool arg0, int arg1, Java.Util.Locale arg2)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDisplayName(bool arg0, int arg1, Java.Util.Locale arg2)
         {
-            return IExecute<string>("getDisplayName", arg0, arg1, arg2);
+            return IExecute<Java.Lang.String>("getDisplayName", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#toZoneId()"/>

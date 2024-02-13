@@ -56,23 +56,23 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#getPresentationName()"/> 
         /// </summary>
-        public string PresentationName
+        public Java.Lang.String PresentationName
         {
-            get { return IExecute<string>("getPresentationName"); }
+            get { return IExecute<Java.Lang.String>("getPresentationName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#getRedoPresentationName()"/> 
         /// </summary>
-        public string RedoPresentationName
+        public Java.Lang.String RedoPresentationName
         {
-            get { return IExecute<string>("getRedoPresentationName"); }
+            get { return IExecute<Java.Lang.String>("getRedoPresentationName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#getUndoPresentationName()"/> 
         /// </summary>
-        public string UndoPresentationName
+        public Java.Lang.String UndoPresentationName
         {
-            get { return IExecute<string>("getUndoPresentationName"); }
+            get { return IExecute<Java.Lang.String>("getUndoPresentationName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#addEdit(javax.swing.undo.UndoableEdit)"/>

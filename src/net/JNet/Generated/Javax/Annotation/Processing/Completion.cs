@@ -35,11 +35,11 @@ namespace Javax.Annotation.Processing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Completion.html#getMessage()"/> 
         /// </summary>
-        string Message { get; }
+        Java.Lang.String Message { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Completion.html#getValue()"/> 
         /// </summary>
-        string Value { get; }
+        Java.Lang.String Value { get; }
 
         #endregion
 
@@ -74,16 +74,16 @@ namespace Javax.Annotation.Processing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Completion.html#getMessage()"/> 
         /// </summary>
-        public string Message
+        public Java.Lang.String Message
         {
-            get { return IExecute<string>("getMessage"); }
+            get { return IExecute<Java.Lang.String>("getMessage"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Completion.html#getValue()"/> 
         /// </summary>
-        public string Value
+        public Java.Lang.String Value
         {
-            get { return IExecute<string>("getValue"); }
+            get { return IExecute<Java.Lang.String>("getValue"); }
         }
 
         #endregion

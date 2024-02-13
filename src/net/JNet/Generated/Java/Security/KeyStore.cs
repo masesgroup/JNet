@@ -44,9 +44,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getDefaultType()"/> 
         /// </summary>
-        public static string DefaultType
+        public static Java.Lang.String DefaultType
         {
-            get { return SExecute<string>(LocalBridgeClazz, "getDefaultType"); }
+            get { return SExecute<Java.Lang.String>(LocalBridgeClazz, "getDefaultType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getInstance(java.io.File,char[])"/>
@@ -79,33 +79,33 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Security.KeyStore"/></returns>
         /// <exception cref="Java.Security.KeyStoreException"/>
         /// <exception cref="Java.Security.NoSuchProviderException"/>
-        public static Java.Security.KeyStore GetInstance(string arg0, string arg1)
+        public static Java.Security.KeyStore GetInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return SExecute<Java.Security.KeyStore>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getInstance(java.lang.String,java.security.Provider)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
         /// <returns><see cref="Java.Security.KeyStore"/></returns>
         /// <exception cref="Java.Security.KeyStoreException"/>
-        public static Java.Security.KeyStore GetInstance(string arg0, Java.Security.Provider arg1)
+        public static Java.Security.KeyStore GetInstance(Java.Lang.String arg0, Java.Security.Provider arg1)
         {
             return SExecute<Java.Security.KeyStore>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getInstance(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Security.KeyStore"/></returns>
         /// <exception cref="Java.Security.KeyStoreException"/>
-        public static Java.Security.KeyStore GetInstance(string arg0)
+        public static Java.Security.KeyStore GetInstance(Java.Lang.String arg0)
         {
             return SExecute<Java.Security.KeyStore>(LocalBridgeClazz, "getInstance", arg0);
         }
@@ -123,48 +123,48 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getType()"/> 
         /// </summary>
-        public string Type
+        public Java.Lang.String Type
         {
-            get { return IExecute<string>("getType"); }
+            get { return IExecute<Java.Lang.String>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#containsAlias(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Security.KeyStoreException"/>
-        public bool ContainsAlias(string arg0)
+        public bool ContainsAlias(Java.Lang.String arg0)
         {
             return IExecute<bool>("containsAlias", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#entryInstanceOf(java.lang.String,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Security.KeyStoreException"/>
-        public bool EntryInstanceOf(string arg0, Java.Lang.Class arg1)
+        public bool EntryInstanceOf(Java.Lang.String arg0, Java.Lang.Class arg1)
         {
             return IExecute<bool>("entryInstanceOf", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#isCertificateEntry(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Security.KeyStoreException"/>
-        public bool IsCertificateEntry(string arg0)
+        public bool IsCertificateEntry(Java.Lang.String arg0)
         {
             return IExecute<bool>("isCertificateEntry", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#isKeyEntry(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Security.KeyStoreException"/>
-        public bool IsKeyEntry(string arg0)
+        public bool IsKeyEntry(Java.Lang.String arg0)
         {
             return IExecute<bool>("isKeyEntry", arg0);
         }
@@ -182,65 +182,65 @@ namespace Java.Security
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getCertificateAlias(java.security.cert.Certificate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Security.KeyStoreException"/>
-        public string GetCertificateAlias(Java.Security.Cert.Certificate arg0)
+        public Java.Lang.String GetCertificateAlias(Java.Security.Cert.Certificate arg0)
         {
-            return IExecute<string>("getCertificateAlias", arg0);
+            return IExecute<Java.Lang.String>("getCertificateAlias", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getCertificate(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Security.Cert.Certificate"/></returns>
         /// <exception cref="Java.Security.KeyStoreException"/>
-        public Java.Security.Cert.Certificate GetCertificate(string arg0)
+        public Java.Security.Cert.Certificate GetCertificate(Java.Lang.String arg0)
         {
             return IExecute<Java.Security.Cert.Certificate>("getCertificate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getCertificateChain(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Security.Cert.Certificate"/></returns>
         /// <exception cref="Java.Security.KeyStoreException"/>
-        public Java.Security.Cert.Certificate[] GetCertificateChain(string arg0)
+        public Java.Security.Cert.Certificate[] GetCertificateChain(Java.Lang.String arg0)
         {
             return IExecuteArray<Java.Security.Cert.Certificate>("getCertificateChain", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getKey(java.lang.String,char[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="char"/></param>
         /// <returns><see cref="Java.Security.Key"/></returns>
         /// <exception cref="Java.Security.KeyStoreException"/>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         /// <exception cref="Java.Security.UnrecoverableKeyException"/>
-        public Java.Security.Key GetKey(string arg0, char[] arg1)
+        public Java.Security.Key GetKey(Java.Lang.String arg0, char[] arg1)
         {
             return IExecute<Java.Security.Key>("getKey", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getEntry(java.lang.String,java.security.KeyStore.ProtectionParameter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.KeyStore.ProtectionParameter"/></param>
         /// <returns><see cref="Java.Security.KeyStore.Entry"/></returns>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         /// <exception cref="Java.Security.UnrecoverableEntryException"/>
         /// <exception cref="Java.Security.KeyStoreException"/>
-        public Java.Security.KeyStore.Entry GetEntry(string arg0, Java.Security.KeyStore.ProtectionParameter arg1)
+        public Java.Security.KeyStore.Entry GetEntry(Java.Lang.String arg0, Java.Security.KeyStore.ProtectionParameter arg1)
         {
             return IExecute<Java.Security.KeyStore.Entry>("getEntry", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getCreationDate(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Date"/></returns>
         /// <exception cref="Java.Security.KeyStoreException"/>
-        public Java.Util.Date GetCreationDate(string arg0)
+        public Java.Util.Date GetCreationDate(Java.Lang.String arg0)
         {
             return IExecute<Java.Util.Date>("getCreationDate", arg0);
         }
@@ -250,16 +250,16 @@ namespace Java.Security
 
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         /// <exception cref="Java.Security.KeyStoreException"/>
-        public Java.Util.Enumeration<string> Aliases()
+        public Java.Util.Enumeration<Java.Lang.String> Aliases()
         {
-            return IExecute<Java.Util.Enumeration<string>>("aliases");
+            return IExecute<Java.Util.Enumeration<Java.Lang.String>>("aliases");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#deleteEntry(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Security.KeyStoreException"/>
-        public void DeleteEntry(string arg0)
+        public void DeleteEntry(Java.Lang.String arg0)
         {
             IExecute("deleteEntry", arg0);
         }
@@ -289,44 +289,44 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#setCertificateEntry(java.lang.String,java.security.cert.Certificate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Cert.Certificate"/></param>
         /// <exception cref="Java.Security.KeyStoreException"/>
-        public void SetCertificateEntry(string arg0, Java.Security.Cert.Certificate arg1)
+        public void SetCertificateEntry(Java.Lang.String arg0, Java.Security.Cert.Certificate arg1)
         {
             IExecute("setCertificateEntry", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#setEntry(java.lang.String,java.security.KeyStore.Entry,java.security.KeyStore.ProtectionParameter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.KeyStore.Entry"/></param>
         /// <param name="arg2"><see cref="Java.Security.KeyStore.ProtectionParameter"/></param>
         /// <exception cref="Java.Security.KeyStoreException"/>
-        public void SetEntry(string arg0, Java.Security.KeyStore.Entry arg1, Java.Security.KeyStore.ProtectionParameter arg2)
+        public void SetEntry(Java.Lang.String arg0, Java.Security.KeyStore.Entry arg1, Java.Security.KeyStore.ProtectionParameter arg2)
         {
             IExecute("setEntry", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#setKeyEntry(java.lang.String,byte[],java.security.cert.Certificate[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
         /// <param name="arg2"><see cref="Java.Security.Cert.Certificate"/></param>
         /// <exception cref="Java.Security.KeyStoreException"/>
-        public void SetKeyEntry(string arg0, byte[] arg1, Java.Security.Cert.Certificate[] arg2)
+        public void SetKeyEntry(Java.Lang.String arg0, byte[] arg1, Java.Security.Cert.Certificate[] arg2)
         {
             IExecute("setKeyEntry", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#setKeyEntry(java.lang.String,java.security.Key,char[],java.security.cert.Certificate[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Key"/></param>
         /// <param name="arg2"><see cref="char"/></param>
         /// <param name="arg3"><see cref="Java.Security.Cert.Certificate"/></param>
         /// <exception cref="Java.Security.KeyStoreException"/>
-        public void SetKeyEntry(string arg0, Java.Security.Key arg1, char[] arg2, Java.Security.Cert.Certificate[] arg3)
+        public void SetKeyEntry(Java.Lang.String arg0, Java.Security.Key arg1, char[] arg2, Java.Security.Cert.Certificate[] arg3)
         {
             IExecute("setKeyEntry", arg0, arg1, arg2, arg3);
         }
@@ -388,23 +388,23 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Builder.html#newInstance(java.lang.String,java.security.Provider,java.io.File,java.security.KeyStore.ProtectionParameter)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
             /// <param name="arg2"><see cref="Java.Io.File"/></param>
             /// <param name="arg3"><see cref="Java.Security.KeyStore.ProtectionParameter"/></param>
             /// <returns><see cref="Java.Security.KeyStore.Builder"/></returns>
-            public static Java.Security.KeyStore.Builder NewInstance(string arg0, Java.Security.Provider arg1, Java.Io.File arg2, Java.Security.KeyStore.ProtectionParameter arg3)
+            public static Java.Security.KeyStore.Builder NewInstance(Java.Lang.String arg0, Java.Security.Provider arg1, Java.Io.File arg2, Java.Security.KeyStore.ProtectionParameter arg3)
             {
                 return SExecute<Java.Security.KeyStore.Builder>(LocalBridgeClazz, "newInstance", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Builder.html#newInstance(java.lang.String,java.security.Provider,java.security.KeyStore.ProtectionParameter)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
             /// <param name="arg2"><see cref="Java.Security.KeyStore.ProtectionParameter"/></param>
             /// <returns><see cref="Java.Security.KeyStore.Builder"/></returns>
-            public static Java.Security.KeyStore.Builder NewInstance(string arg0, Java.Security.Provider arg1, Java.Security.KeyStore.ProtectionParameter arg2)
+            public static Java.Security.KeyStore.Builder NewInstance(Java.Lang.String arg0, Java.Security.Provider arg1, Java.Security.KeyStore.ProtectionParameter arg2)
             {
                 return SExecute<Java.Security.KeyStore.Builder>(LocalBridgeClazz, "newInstance", arg0, arg1, arg2);
             }
@@ -432,10 +432,10 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Builder.html#getProtectionParameter(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Security.KeyStore.ProtectionParameter"/></returns>
             /// <exception cref="Java.Security.KeyStoreException"/>
-            public Java.Security.KeyStore.ProtectionParameter GetProtectionParameter(string arg0)
+            public Java.Security.KeyStore.ProtectionParameter GetProtectionParameter(Java.Lang.String arg0)
             {
                 return IExecute<Java.Security.KeyStore.ProtectionParameter>("getProtectionParameter", arg0);
             }
@@ -550,16 +550,16 @@ namespace Java.Security
                 /// <summary>
                 /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Entry.Attribute.html#getName()"/> 
                 /// </summary>
-                public string Name
+                public Java.Lang.String Name
                 {
-                    get { return IExecute<string>("getName"); }
+                    get { return IExecute<Java.Lang.String>("getName"); }
                 }
                 /// <summary>
                 /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Entry.Attribute.html#getValue()"/> 
                 /// </summary>
-                public string Value
+                public Java.Lang.String Value
                 {
-                    get { return IExecute<string>("getValue"); }
+                    get { return IExecute<Java.Lang.String>("getValue"); }
                 }
 
                 #endregion
@@ -625,9 +625,9 @@ namespace Java.Security
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#%3Cinit%3E(char[],java.lang.String,java.security.spec.AlgorithmParameterSpec)"/>
             /// </summary>
             /// <param name="arg0"><see cref="char"/></param>
-            /// <param name="arg1"><see cref="string"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             /// <param name="arg2"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
-            public PasswordProtection(char[] arg0, string arg1, Java.Security.Spec.AlgorithmParameterSpec arg2)
+            public PasswordProtection(char[] arg0, Java.Lang.String arg1, Java.Security.Spec.AlgorithmParameterSpec arg2)
                 : base(arg0, arg1, arg2)
             {
             }
@@ -669,9 +669,9 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#getProtectionAlgorithm()"/> 
             /// </summary>
-            public string ProtectionAlgorithm
+            public Java.Lang.String ProtectionAlgorithm
             {
-                get { return IExecute<string>("getProtectionAlgorithm"); }
+                get { return IExecute<Java.Lang.String>("getProtectionAlgorithm"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#getProtectionParameters()"/> 

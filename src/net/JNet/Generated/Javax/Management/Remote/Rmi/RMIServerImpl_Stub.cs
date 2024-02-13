@@ -56,9 +56,9 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServerImpl_Stub.html#getVersion()"/> 
         /// </summary>
-        public string Version
+        public Java.Lang.String Version
         {
-            get { return IExecute<string>("getVersion"); }
+            get { return IExecute<Java.Lang.String>("getVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServerImpl_Stub.html#newClient(java.lang.Object)"/>

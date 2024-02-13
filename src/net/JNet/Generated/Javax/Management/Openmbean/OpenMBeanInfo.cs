@@ -39,7 +39,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanInfo.html#getClassName()"/> 
         /// </summary>
-        string ClassName { get; }
+        Java.Lang.String ClassName { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanInfo.html#getConstructors()"/> 
         /// </summary>
@@ -47,7 +47,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanInfo.html#getDescription()"/> 
         /// </summary>
-        string Description { get; }
+        Java.Lang.String Description { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanInfo.html#getNotifications()"/> 
         /// </summary>
@@ -97,9 +97,9 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanInfo.html#getClassName()"/> 
         /// </summary>
-        public string ClassName
+        public Java.Lang.String ClassName
         {
-            get { return IExecute<string>("getClassName"); }
+            get { return IExecute<Java.Lang.String>("getClassName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanInfo.html#getConstructors()"/> 
@@ -111,9 +111,9 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanInfo.html#getDescription()"/> 
         /// </summary>
-        public string Description
+        public Java.Lang.String Description
         {
-            get { return IExecute<string>("getDescription"); }
+            get { return IExecute<Java.Lang.String>("getDescription"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanInfo.html#getNotifications()"/> 

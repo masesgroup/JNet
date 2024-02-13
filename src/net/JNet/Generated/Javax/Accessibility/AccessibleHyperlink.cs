@@ -106,10 +106,10 @@ namespace Javax.Accessibility
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleHyperlink.html#getAccessibleActionDescription(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetAccessibleActionDescription(int arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAccessibleActionDescription(int arg0)
         {
-            return IExecute<string>("getAccessibleActionDescription", arg0);
+            return IExecute<Java.Lang.String>("getAccessibleActionDescription", arg0);
         }
 
         #endregion

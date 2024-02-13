@@ -35,7 +35,7 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#getData()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#setData(java.lang.String)"/>
         /// </summary>
-        string Data { get; set; }
+        Java.Lang.String Data { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#getLength()"/> 
         /// </summary>
@@ -45,15 +45,15 @@ namespace Org.W3c.Dom
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        string SubstringData(int arg0, int arg1);
+        Java.Lang.String SubstringData(int arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#appendData(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        void AppendData(string arg0);
+        void AppendData(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#deleteData(int,int)"/>
         /// </summary>
@@ -65,17 +65,17 @@ namespace Org.W3c.Dom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#insertData(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        void InsertData(int arg0, string arg1);
+        void InsertData(int arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#replaceData(int,int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        void ReplaceData(int arg0, int arg1, string arg2);
+        void ReplaceData(int arg0, int arg1, Java.Lang.String arg2);
 
         #endregion
 
@@ -110,9 +110,9 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#getData()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#setData(java.lang.String)"/>
         /// </summary>
-        public string Data
+        public Java.Lang.String Data
         {
-            get { return IExecute<string>("getData"); } set { IExecute("setData", value); }
+            get { return IExecute<Java.Lang.String>("getData"); } set { IExecute("setData", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#getLength()"/> 
@@ -126,18 +126,18 @@ namespace Org.W3c.Dom
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        public string SubstringData(int arg0, int arg1)
+        public Java.Lang.String SubstringData(int arg0, int arg1)
         {
-            return IExecute<string>("substringData", arg0, arg1);
+            return IExecute<Java.Lang.String>("substringData", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#appendData(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        public void AppendData(string arg0)
+        public void AppendData(Java.Lang.String arg0)
         {
             IExecute("appendData", arg0);
         }
@@ -155,9 +155,9 @@ namespace Org.W3c.Dom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#insertData(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        public void InsertData(int arg0, string arg1)
+        public void InsertData(int arg0, Java.Lang.String arg1)
         {
             IExecute("insertData", arg0, arg1);
         }
@@ -166,9 +166,9 @@ namespace Org.W3c.Dom
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        public void ReplaceData(int arg0, int arg1, string arg2)
+        public void ReplaceData(int arg0, int arg1, Java.Lang.String arg2)
         {
             IExecute("replaceData", arg0, arg1, arg2);
         }

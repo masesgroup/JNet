@@ -40,14 +40,14 @@ namespace Javax.Xml.Datatype
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#DATATYPEFACTORY_IMPLEMENTATION_CLASS"/>
         /// </summary>
-        public static string DATATYPEFACTORY_IMPLEMENTATION_CLASS { get { if (!_DATATYPEFACTORY_IMPLEMENTATION_CLASSReady) { _DATATYPEFACTORY_IMPLEMENTATION_CLASSContent = SGetField<string>(LocalBridgeClazz, "DATATYPEFACTORY_IMPLEMENTATION_CLASS"); _DATATYPEFACTORY_IMPLEMENTATION_CLASSReady = true; } return _DATATYPEFACTORY_IMPLEMENTATION_CLASSContent; } }
-        private static string _DATATYPEFACTORY_IMPLEMENTATION_CLASSContent = default;
+        public static Java.Lang.String DATATYPEFACTORY_IMPLEMENTATION_CLASS { get { if (!_DATATYPEFACTORY_IMPLEMENTATION_CLASSReady) { _DATATYPEFACTORY_IMPLEMENTATION_CLASSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DATATYPEFACTORY_IMPLEMENTATION_CLASS"); _DATATYPEFACTORY_IMPLEMENTATION_CLASSReady = true; } return _DATATYPEFACTORY_IMPLEMENTATION_CLASSContent; } }
+        private static Java.Lang.String _DATATYPEFACTORY_IMPLEMENTATION_CLASSContent = default;
         private static bool _DATATYPEFACTORY_IMPLEMENTATION_CLASSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#DATATYPEFACTORY_PROPERTY"/>
         /// </summary>
-        public static string DATATYPEFACTORY_PROPERTY { get { if (!_DATATYPEFACTORY_PROPERTYReady) { _DATATYPEFACTORY_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "DATATYPEFACTORY_PROPERTY"); _DATATYPEFACTORY_PROPERTYReady = true; } return _DATATYPEFACTORY_PROPERTYContent; } }
-        private static string _DATATYPEFACTORY_PROPERTYContent = default;
+        public static Java.Lang.String DATATYPEFACTORY_PROPERTY { get { if (!_DATATYPEFACTORY_PROPERTYReady) { _DATATYPEFACTORY_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DATATYPEFACTORY_PROPERTY"); _DATATYPEFACTORY_PROPERTYReady = true; } return _DATATYPEFACTORY_PROPERTYContent; } }
+        private static Java.Lang.String _DATATYPEFACTORY_PROPERTYContent = default;
         private static bool _DATATYPEFACTORY_PROPERTYReady = false; // this is used because in case of generics 
 
         #endregion
@@ -75,11 +75,11 @@ namespace Javax.Xml.Datatype
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#newInstance(java.lang.String,java.lang.ClassLoader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
         /// <returns><see cref="Javax.Xml.Datatype.DatatypeFactory"/></returns>
         /// <exception cref="Javax.Xml.Datatype.DatatypeConfigurationException"/>
-        public static Javax.Xml.Datatype.DatatypeFactory NewInstance(string arg0, Java.Lang.ClassLoader arg1)
+        public static Javax.Xml.Datatype.DatatypeFactory NewInstance(Java.Lang.String arg0, Java.Lang.ClassLoader arg1)
         {
             return SExecute<Javax.Xml.Datatype.DatatypeFactory>(LocalBridgeClazz, "newInstance", arg0, arg1);
         }
@@ -105,9 +105,9 @@ namespace Javax.Xml.Datatype
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#newDuration(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Xml.Datatype.Duration"/></returns>
-        public Javax.Xml.Datatype.Duration NewDuration(string arg0)
+        public Javax.Xml.Datatype.Duration NewDuration(Java.Lang.String arg0)
         {
             return IExecute<Javax.Xml.Datatype.Duration>("newDuration", arg0);
         }
@@ -132,9 +132,9 @@ namespace Javax.Xml.Datatype
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#newXMLGregorianCalendar(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Xml.Datatype.XMLGregorianCalendar"/></returns>
-        public Javax.Xml.Datatype.XMLGregorianCalendar NewXMLGregorianCalendar(string arg0)
+        public Javax.Xml.Datatype.XMLGregorianCalendar NewXMLGregorianCalendar(Java.Lang.String arg0)
         {
             return IExecute<Javax.Xml.Datatype.XMLGregorianCalendar>("newXMLGregorianCalendar", arg0);
         }
@@ -207,9 +207,9 @@ namespace Javax.Xml.Datatype
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#newDurationDayTime(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Xml.Datatype.Duration"/></returns>
-        public Javax.Xml.Datatype.Duration NewDurationDayTime(string arg0)
+        public Javax.Xml.Datatype.Duration NewDurationDayTime(Java.Lang.String arg0)
         {
             return IExecute<Javax.Xml.Datatype.Duration>("newDurationDayTime", arg0);
         }
@@ -247,9 +247,9 @@ namespace Javax.Xml.Datatype
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#newDurationYearMonth(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Xml.Datatype.Duration"/></returns>
-        public Javax.Xml.Datatype.Duration NewDurationYearMonth(string arg0)
+        public Javax.Xml.Datatype.Duration NewDurationYearMonth(Java.Lang.String arg0)
         {
             return IExecute<Javax.Xml.Datatype.Duration>("newDurationYearMonth", arg0);
         }

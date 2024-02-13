@@ -32,27 +32,27 @@ namespace Javax.Xml.Namespace
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/namespace/QName.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
-        public QName(string arg0, string arg1, string arg2)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        public QName(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/namespace/QName.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public QName(string arg0, string arg1)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public QName(Java.Lang.String arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/namespace/QName.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public QName(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public QName(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -71,9 +71,9 @@ namespace Javax.Xml.Namespace
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/namespace/QName.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Xml.Namespace.QName"/></returns>
-        public static Javax.Xml.Namespace.QName ValueOf(string arg0)
+        public static Javax.Xml.Namespace.QName ValueOf(Java.Lang.String arg0)
         {
             return SExecute<Javax.Xml.Namespace.QName>(LocalBridgeClazz, "valueOf", arg0);
         }
@@ -84,23 +84,23 @@ namespace Javax.Xml.Namespace
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/namespace/QName.html#getLocalPart()"/> 
         /// </summary>
-        public string LocalPart
+        public Java.Lang.String LocalPart
         {
-            get { return IExecute<string>("getLocalPart"); }
+            get { return IExecute<Java.Lang.String>("getLocalPart"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/namespace/QName.html#getNamespaceURI()"/> 
         /// </summary>
-        public string NamespaceURI
+        public Java.Lang.String NamespaceURI
         {
-            get { return IExecute<string>("getNamespaceURI"); }
+            get { return IExecute<Java.Lang.String>("getNamespaceURI"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/namespace/QName.html#getPrefix()"/> 
         /// </summary>
-        public string Prefix
+        public Java.Lang.String Prefix
         {
-            get { return IExecute<string>("getPrefix"); }
+            get { return IExecute<Java.Lang.String>("getPrefix"); }
         }
 
         #endregion

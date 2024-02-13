@@ -91,19 +91,19 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextPane.html#addStyle(java.lang.String,javax.swing.text.Style)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Text.Style"/></param>
         /// <returns><see cref="Javax.Swing.Text.Style"/></returns>
-        public Javax.Swing.Text.Style AddStyle(string arg0, Javax.Swing.Text.Style arg1)
+        public Javax.Swing.Text.Style AddStyle(Java.Lang.String arg0, Javax.Swing.Text.Style arg1)
         {
             return IExecute<Javax.Swing.Text.Style>("addStyle", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextPane.html#getStyle(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Swing.Text.Style"/></returns>
-        public Javax.Swing.Text.Style GetStyle(string arg0)
+        public Javax.Swing.Text.Style GetStyle(Java.Lang.String arg0)
         {
             return IExecute<Javax.Swing.Text.Style>("getStyle", arg0);
         }
@@ -126,8 +126,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextPane.html#removeStyle(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public void RemoveStyle(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void RemoveStyle(Java.Lang.String arg0)
         {
             IExecute("removeStyle", arg0);
         }

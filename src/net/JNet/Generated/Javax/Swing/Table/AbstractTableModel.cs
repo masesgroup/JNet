@@ -73,9 +73,9 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#findColumn(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        public int FindColumn(string arg0)
+        public int FindColumn(Java.Lang.String arg0)
         {
             return IExecute<int>("findColumn", arg0);
         }
@@ -92,10 +92,10 @@ namespace Javax.Swing.Table
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#getColumnName(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetColumnName(int arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetColumnName(int arg0)
         {
-            return IExecute<string>("getColumnName", arg0);
+            return IExecute<Java.Lang.String>("getColumnName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#addTableModelListener(javax.swing.event.TableModelListener)"/>

@@ -48,24 +48,24 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509ExtendedKeyManager.html#chooseEngineClientAlias(java.lang.String[],java.security.Principal[],javax.net.ssl.SSLEngine)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Principal"/></param>
         /// <param name="arg2"><see cref="Javax.Net.Ssl.SSLEngine"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string ChooseEngineClientAlias(string[] arg0, Java.Security.Principal[] arg1, Javax.Net.Ssl.SSLEngine arg2)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String ChooseEngineClientAlias(Java.Lang.String[] arg0, Java.Security.Principal[] arg1, Javax.Net.Ssl.SSLEngine arg2)
         {
-            return IExecute<string>("chooseEngineClientAlias", arg0, arg1, arg2);
+            return IExecute<Java.Lang.String>("chooseEngineClientAlias", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509ExtendedKeyManager.html#chooseEngineServerAlias(java.lang.String,java.security.Principal[],javax.net.ssl.SSLEngine)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Principal"/></param>
         /// <param name="arg2"><see cref="Javax.Net.Ssl.SSLEngine"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string ChooseEngineServerAlias(string arg0, Java.Security.Principal[] arg1, Javax.Net.Ssl.SSLEngine arg2)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String ChooseEngineServerAlias(Java.Lang.String arg0, Java.Security.Principal[] arg1, Javax.Net.Ssl.SSLEngine arg2)
         {
-            return IExecute<string>("chooseEngineServerAlias", arg0, arg1, arg2);
+            return IExecute<Java.Lang.String>("chooseEngineServerAlias", arg0, arg1, arg2);
         }
 
         #endregion

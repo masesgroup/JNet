@@ -181,9 +181,9 @@ namespace Javax.Lang.Model
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Lang.Model.SourceVersion"/></returns>
-        public static Javax.Lang.Model.SourceVersion ValueOf(string arg0)
+        public static Javax.Lang.Model.SourceVersion ValueOf(Java.Lang.String arg0)
         {
             return SExecute<Javax.Lang.Model.SourceVersion>(LocalBridgeClazz, "valueOf", arg0);
         }

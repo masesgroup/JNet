@@ -32,36 +32,36 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JCheckBox.html#%3Cinit%3E(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        public JCheckBox(string arg0, bool arg1)
+        public JCheckBox(Java.Lang.String arg0, bool arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JCheckBox.html#%3Cinit%3E(java.lang.String,javax.swing.Icon,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Icon"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
-        public JCheckBox(string arg0, Javax.Swing.Icon arg1, bool arg2)
+        public JCheckBox(Java.Lang.String arg0, Javax.Swing.Icon arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JCheckBox.html#%3Cinit%3E(java.lang.String,javax.swing.Icon)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Icon"/></param>
-        public JCheckBox(string arg0, Javax.Swing.Icon arg1)
+        public JCheckBox(Java.Lang.String arg0, Javax.Swing.Icon arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JCheckBox.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public JCheckBox(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public JCheckBox(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -101,8 +101,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JCheckBox.html#BORDER_PAINTED_FLAT_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string BORDER_PAINTED_FLAT_CHANGED_PROPERTY { get { if (!_BORDER_PAINTED_FLAT_CHANGED_PROPERTYReady) { _BORDER_PAINTED_FLAT_CHANGED_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "BORDER_PAINTED_FLAT_CHANGED_PROPERTY"); _BORDER_PAINTED_FLAT_CHANGED_PROPERTYReady = true; } return _BORDER_PAINTED_FLAT_CHANGED_PROPERTYContent; } }
-        private static string _BORDER_PAINTED_FLAT_CHANGED_PROPERTYContent = default;
+        public static Java.Lang.String BORDER_PAINTED_FLAT_CHANGED_PROPERTY { get { if (!_BORDER_PAINTED_FLAT_CHANGED_PROPERTYReady) { _BORDER_PAINTED_FLAT_CHANGED_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "BORDER_PAINTED_FLAT_CHANGED_PROPERTY"); _BORDER_PAINTED_FLAT_CHANGED_PROPERTYReady = true; } return _BORDER_PAINTED_FLAT_CHANGED_PROPERTYContent; } }
+        private static Java.Lang.String _BORDER_PAINTED_FLAT_CHANGED_PROPERTYContent = default;
         private static bool _BORDER_PAINTED_FLAT_CHANGED_PROPERTYReady = false; // this is used because in case of generics 
 
         #endregion

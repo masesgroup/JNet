@@ -83,12 +83,12 @@ namespace Java.Beans
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#instantiate(java.lang.ClassLoader,java.lang.String,java.beans.beancontext.BeanContext)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Java.Beans.Beancontext.BeanContext"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        public static object Instantiate(Java.Lang.ClassLoader arg0, string arg1, Java.Beans.Beancontext.BeanContext arg2)
+        public static object Instantiate(Java.Lang.ClassLoader arg0, Java.Lang.String arg1, Java.Beans.Beancontext.BeanContext arg2)
         {
             return SExecute(LocalBridgeClazz, "instantiate", arg0, arg1, arg2);
         }
@@ -96,11 +96,11 @@ namespace Java.Beans
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#instantiate(java.lang.ClassLoader,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        public static object Instantiate(Java.Lang.ClassLoader arg0, string arg1)
+        public static object Instantiate(Java.Lang.ClassLoader arg0, Java.Lang.String arg1)
         {
             return SExecute(LocalBridgeClazz, "instantiate", arg0, arg1);
         }

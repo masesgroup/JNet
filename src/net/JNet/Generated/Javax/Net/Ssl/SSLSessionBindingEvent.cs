@@ -33,8 +33,8 @@ namespace Javax.Net.Ssl
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingEvent.html#%3Cinit%3E(javax.net.ssl.SSLSession,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLSession"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public SSLSessionBindingEvent(Javax.Net.Ssl.SSLSession arg0, string arg1)
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public SSLSessionBindingEvent(Javax.Net.Ssl.SSLSession arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
         }
@@ -57,9 +57,9 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingEvent.html#getName()"/> 
         /// </summary>
-        public string Name
+        public Java.Lang.String Name
         {
-            get { return IExecute<string>("getName"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingEvent.html#getSession()"/> 

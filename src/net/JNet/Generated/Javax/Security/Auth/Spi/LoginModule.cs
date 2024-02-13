@@ -67,7 +67,7 @@ namespace Javax.Security.Auth.Spi
         /// <param name="arg1"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
         /// <param name="arg2"><see cref="Java.Util.Map"/></param>
         /// <param name="arg3"><see cref="Java.Util.Map"/></param>
-        void Initialize(Javax.Security.Auth.Subject arg0, Javax.Security.Auth.Callback.CallbackHandler arg1, Java.Util.Map<string, object> arg2, Java.Util.Map<string, object> arg3);
+        void Initialize(Javax.Security.Auth.Subject arg0, Javax.Security.Auth.Callback.CallbackHandler arg1, Java.Util.Map<Java.Lang.String, object> arg2, Java.Util.Map<Java.Lang.String, object> arg3);
 
         #endregion
 
@@ -146,7 +146,7 @@ namespace Javax.Security.Auth.Spi
         /// <param name="arg1"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
         /// <param name="arg2"><see cref="Java.Util.Map"/></param>
         /// <param name="arg3"><see cref="Java.Util.Map"/></param>
-        public void Initialize(Javax.Security.Auth.Subject arg0, Javax.Security.Auth.Callback.CallbackHandler arg1, Java.Util.Map<string, object> arg2, Java.Util.Map<string, object> arg3)
+        public void Initialize(Javax.Security.Auth.Subject arg0, Javax.Security.Auth.Callback.CallbackHandler arg1, Java.Util.Map<Java.Lang.String, object> arg2, Java.Util.Map<Java.Lang.String, object> arg3)
         {
             IExecute("initialize", arg0, arg1, arg2, arg3);
         }

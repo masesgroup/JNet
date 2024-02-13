@@ -48,9 +48,9 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationKey.html#getSourceString()"/> 
         /// </summary>
-        public string SourceString
+        public Java.Lang.String SourceString
         {
-            get { return IExecute<string>("getSourceString"); }
+            get { return IExecute<Java.Lang.String>("getSourceString"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationKey.html#toByteArray()"/>

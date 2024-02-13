@@ -43,7 +43,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignedInfo.html#getId()"/> 
         /// </summary>
-        string Id { get; }
+        Java.Lang.String Id { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignedInfo.html#getReferences()"/> 
         /// </summary>
@@ -100,9 +100,9 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignedInfo.html#getId()"/> 
         /// </summary>
-        public string Id
+        public Java.Lang.String Id
         {
-            get { return IExecute<string>("getId"); }
+            get { return IExecute<Java.Lang.String>("getId"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignedInfo.html#getReferences()"/> 

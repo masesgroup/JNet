@@ -37,8 +37,8 @@ namespace Javax.Accessibility
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
-        string GetTextRange(int arg0, int arg1);
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        Java.Lang.String GetTextRange(int arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#cut(int,int)"/>
         /// </summary>
@@ -55,8 +55,8 @@ namespace Javax.Accessibility
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#insertTextAtIndex(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        void InsertTextAtIndex(int arg0, string arg1);
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        void InsertTextAtIndex(int arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#paste(int)"/>
         /// </summary>
@@ -67,8 +67,8 @@ namespace Javax.Accessibility
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
-        void ReplaceText(int arg0, int arg1, string arg2);
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        void ReplaceText(int arg0, int arg1, Java.Lang.String arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#selectText(int,int)"/>
         /// </summary>
@@ -85,8 +85,8 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#setTextContents(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        void SetTextContents(string arg0);
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        void SetTextContents(Java.Lang.String arg0);
 
         #endregion
 
@@ -123,10 +123,10 @@ namespace Javax.Accessibility
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetTextRange(int arg0, int arg1)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTextRange(int arg0, int arg1)
         {
-            return IExecute<string>("getTextRange", arg0, arg1);
+            return IExecute<Java.Lang.String>("getTextRange", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#cut(int,int)"/>
@@ -150,8 +150,8 @@ namespace Javax.Accessibility
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#insertTextAtIndex(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public void InsertTextAtIndex(int arg0, string arg1)
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public void InsertTextAtIndex(int arg0, Java.Lang.String arg1)
         {
             IExecute("insertTextAtIndex", arg0, arg1);
         }
@@ -168,8 +168,8 @@ namespace Javax.Accessibility
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
-        public void ReplaceText(int arg0, int arg1, string arg2)
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        public void ReplaceText(int arg0, int arg1, Java.Lang.String arg2)
         {
             IExecute("replaceText", arg0, arg1, arg2);
         }
@@ -195,8 +195,8 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#setTextContents(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public void SetTextContents(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetTextContents(Java.Lang.String arg0)
         {
             IExecute("setTextContents", arg0);
         }

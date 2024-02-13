@@ -32,19 +32,19 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Label.html#%3Cinit%3E(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Java.Awt.HeadlessException"/>
-        public Label(string arg0, int arg1)
+        public Label(Java.Lang.String arg0, int arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Label.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Awt.HeadlessException"/>
-        public Label(string arg0)
+        public Label(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -96,9 +96,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Label.html#getText()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Label.html#setText(java.lang.String)"/>
         /// </summary>
-        public string Text
+        public Java.Lang.String Text
         {
-            get { return IExecute<string>("getText"); } set { IExecute("setText", value); }
+            get { return IExecute<Java.Lang.String>("getText"); } set { IExecute("setText", value); }
         }
 
         #endregion

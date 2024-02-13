@@ -60,9 +60,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/StandardProtocolFamily.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Net.StandardProtocolFamily"/></returns>
-        public static Java.Net.StandardProtocolFamily ValueOf(string arg0)
+        public static Java.Net.StandardProtocolFamily ValueOf(Java.Lang.String arg0)
         {
             return SExecute<Java.Net.StandardProtocolFamily>(LocalBridgeClazz, "valueOf", arg0);
         }

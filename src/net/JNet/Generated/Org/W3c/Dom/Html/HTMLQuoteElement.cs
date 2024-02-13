@@ -35,7 +35,7 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLQuoteElement.html#getCite()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLQuoteElement.html#setCite(java.lang.String)"/>
         /// </summary>
-        string Cite { get; set; }
+        Java.Lang.String Cite { get; set; }
 
         #endregion
 
@@ -70,9 +70,9 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLQuoteElement.html#getCite()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLQuoteElement.html#setCite(java.lang.String)"/>
         /// </summary>
-        public string Cite
+        public Java.Lang.String Cite
         {
-            get { return IExecute<string>("getCite"); } set { IExecute("setCite", value); }
+            get { return IExecute<Java.Lang.String>("getCite"); } set { IExecute("setCite", value); }
         }
 
         #endregion

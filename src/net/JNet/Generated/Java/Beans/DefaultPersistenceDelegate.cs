@@ -32,8 +32,8 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/DefaultPersistenceDelegate.html#%3Cinit%3E(java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public DefaultPersistenceDelegate(string[] arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public DefaultPersistenceDelegate(Java.Lang.String[] arg0)
             : base(arg0)
         {
         }

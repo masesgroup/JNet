@@ -95,12 +95,12 @@ namespace Javax.Sql.Rowset.Serial
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialClob.html#setString(long,java.lang.String,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        public int SetString(long arg0, string arg1, int arg2, int arg3)
+        public int SetString(long arg0, Java.Lang.String arg1, int arg2, int arg3)
         {
             return IExecute<int>("setString", arg0, arg1, arg2, arg3);
         }
@@ -108,10 +108,10 @@ namespace Javax.Sql.Rowset.Serial
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialClob.html#setString(long,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        public int SetString(long arg0, string arg1)
+        public int SetString(long arg0, Java.Lang.String arg1)
         {
             return IExecute<int>("setString", arg0, arg1);
         }
@@ -153,11 +153,11 @@ namespace Javax.Sql.Rowset.Serial
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        public string GetSubString(long arg0, int arg1)
+        public Java.Lang.String GetSubString(long arg0, int arg1)
         {
-            return IExecute<string>("getSubString", arg0, arg1);
+            return IExecute<Java.Lang.String>("getSubString", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialClob.html#length()"/>
@@ -172,12 +172,12 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialClob.html#position(java.lang.String,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
         /// <exception cref="Java.Sql.SQLException"/>
-        public long Position(string arg0, long arg1)
+        public long Position(Java.Lang.String arg0, long arg1)
         {
             return IExecute<long>("position", arg0, arg1);
         }

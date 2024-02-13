@@ -56,10 +56,10 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#getJavaFileObjects(java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <typeparam name="ReturnExtendsJavax_Tools_JavaFileObject"><see cref="Javax.Tools.JavaFileObject"/></typeparam>
         /// <returns><see cref="Java.Lang.Iterable"/></returns>
-        Java.Lang.Iterable<ReturnExtendsJavax_Tools_JavaFileObject> GetJavaFileObjects<ReturnExtendsJavax_Tools_JavaFileObject>(params string[] arg0) where ReturnExtendsJavax_Tools_JavaFileObject: Javax.Tools.JavaFileObject;
+        Java.Lang.Iterable<ReturnExtendsJavax_Tools_JavaFileObject> GetJavaFileObjects<ReturnExtendsJavax_Tools_JavaFileObject>(params Java.Lang.String[] arg0) where ReturnExtendsJavax_Tools_JavaFileObject: Javax.Tools.JavaFileObject;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#getJavaFileObjectsFromFiles(java.lang.Iterable)"/>
         /// </summary>
@@ -74,7 +74,7 @@ namespace Javax.Tools
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
         /// <typeparam name="ReturnExtendsJavax_Tools_JavaFileObject"><see cref="Javax.Tools.JavaFileObject"/></typeparam>
         /// <returns><see cref="Java.Lang.Iterable"/></returns>
-        Java.Lang.Iterable<ReturnExtendsJavax_Tools_JavaFileObject> GetJavaFileObjectsFromStrings<ReturnExtendsJavax_Tools_JavaFileObject>(Java.Lang.Iterable<string> arg0) where ReturnExtendsJavax_Tools_JavaFileObject: Javax.Tools.JavaFileObject;
+        Java.Lang.Iterable<ReturnExtendsJavax_Tools_JavaFileObject> GetJavaFileObjectsFromStrings<ReturnExtendsJavax_Tools_JavaFileObject>(Java.Lang.Iterable<Java.Lang.String> arg0) where ReturnExtendsJavax_Tools_JavaFileObject: Javax.Tools.JavaFileObject;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#setLocation(javax.tools.JavaFileManager.Location,java.lang.Iterable)"/>
         /// </summary>
@@ -115,11 +115,11 @@ namespace Javax.Tools
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#setLocationForModule(javax.tools.JavaFileManager.Location,java.lang.String,java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="Arg2ExtendsJava_Nio_File_Path"><see cref="Java.Nio.File.Path"/></typeparam>
         /// <exception cref="Java.Io.IOException"/>
-        void SetLocationForModule<Arg2ExtendsJava_Nio_File_Path>(Javax.Tools.JavaFileManager.Location arg0, string arg1, Java.Util.Collection<Arg2ExtendsJava_Nio_File_Path> arg2) where Arg2ExtendsJava_Nio_File_Path: Java.Nio.File.Path;
+        void SetLocationForModule<Arg2ExtendsJava_Nio_File_Path>(Javax.Tools.JavaFileManager.Location arg0, Java.Lang.String arg1, Java.Util.Collection<Arg2ExtendsJava_Nio_File_Path> arg2) where Arg2ExtendsJava_Nio_File_Path: Java.Nio.File.Path;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#setLocationFromPaths(javax.tools.JavaFileManager.Location,java.util.Collection)"/>
         /// </summary>
@@ -197,10 +197,10 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#getJavaFileObjects(java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <typeparam name="ReturnExtendsJavax_Tools_JavaFileObject"><see cref="Javax.Tools.JavaFileObject"/></typeparam>
         /// <returns><see cref="Java.Lang.Iterable"/></returns>
-        public Java.Lang.Iterable<ReturnExtendsJavax_Tools_JavaFileObject> GetJavaFileObjects<ReturnExtendsJavax_Tools_JavaFileObject>(params string[] arg0) where ReturnExtendsJavax_Tools_JavaFileObject: Javax.Tools.JavaFileObject
+        public Java.Lang.Iterable<ReturnExtendsJavax_Tools_JavaFileObject> GetJavaFileObjects<ReturnExtendsJavax_Tools_JavaFileObject>(params Java.Lang.String[] arg0) where ReturnExtendsJavax_Tools_JavaFileObject: Javax.Tools.JavaFileObject
         {
             if (arg0.Length == 0) return IExecute<Java.Lang.Iterable<ReturnExtendsJavax_Tools_JavaFileObject>>("getJavaFileObjects"); else return IExecute<Java.Lang.Iterable<ReturnExtendsJavax_Tools_JavaFileObject>>("getJavaFileObjects", arg0);
         }
@@ -221,7 +221,7 @@ namespace Javax.Tools
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
         /// <typeparam name="ReturnExtendsJavax_Tools_JavaFileObject"><see cref="Javax.Tools.JavaFileObject"/></typeparam>
         /// <returns><see cref="Java.Lang.Iterable"/></returns>
-        public Java.Lang.Iterable<ReturnExtendsJavax_Tools_JavaFileObject> GetJavaFileObjectsFromStrings<ReturnExtendsJavax_Tools_JavaFileObject>(Java.Lang.Iterable<string> arg0) where ReturnExtendsJavax_Tools_JavaFileObject: Javax.Tools.JavaFileObject
+        public Java.Lang.Iterable<ReturnExtendsJavax_Tools_JavaFileObject> GetJavaFileObjectsFromStrings<ReturnExtendsJavax_Tools_JavaFileObject>(Java.Lang.Iterable<Java.Lang.String> arg0) where ReturnExtendsJavax_Tools_JavaFileObject: Javax.Tools.JavaFileObject
         {
             return IExecute<Java.Lang.Iterable<ReturnExtendsJavax_Tools_JavaFileObject>>("getJavaFileObjectsFromStrings", arg0);
         }
@@ -280,11 +280,11 @@ namespace Javax.Tools
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#setLocationForModule(javax.tools.JavaFileManager.Location,java.lang.String,java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="Arg2ExtendsJava_Nio_File_Path"><see cref="Java.Nio.File.Path"/></typeparam>
         /// <exception cref="Java.Io.IOException"/>
-        public void SetLocationForModule<Arg2ExtendsJava_Nio_File_Path>(Javax.Tools.JavaFileManager.Location arg0, string arg1, Java.Util.Collection<Arg2ExtendsJava_Nio_File_Path> arg2) where Arg2ExtendsJava_Nio_File_Path: Java.Nio.File.Path
+        public void SetLocationForModule<Arg2ExtendsJava_Nio_File_Path>(Javax.Tools.JavaFileManager.Location arg0, Java.Lang.String arg1, Java.Util.Collection<Arg2ExtendsJava_Nio_File_Path> arg2) where Arg2ExtendsJava_Nio_File_Path: Java.Nio.File.Path
         {
             IExecute("setLocationForModule", arg0, arg1, arg2);
         }
@@ -334,10 +334,10 @@ namespace Javax.Tools
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.PathFactory.html#getPath(java.lang.String,java.lang.String[])"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
-            /// <param name="arg1"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Nio.File.Path"/></returns>
-            public Java.Nio.File.Path GetPath(string arg0, params string[] arg1)
+            public Java.Nio.File.Path GetPath(Java.Lang.String arg0, params Java.Lang.String[] arg1)
             {
                 if (arg1.Length == 0) return IExecute<Java.Nio.File.Path>("getPath", arg0); else return IExecute<Java.Nio.File.Path>("getPath", arg0, arg1);
             }

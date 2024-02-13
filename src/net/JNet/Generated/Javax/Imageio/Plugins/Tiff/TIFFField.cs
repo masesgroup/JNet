@@ -85,9 +85,9 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getTypeByName(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        public static int GetTypeByName(string arg0)
+        public static int GetTypeByName(Java.Lang.String arg0)
         {
             return SExecute<int>(LocalBridgeClazz, "getTypeByName", arg0);
         }
@@ -105,10 +105,10 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getTypeName(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string GetTypeName(int arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String GetTypeName(int arg0)
         {
-            return SExecute<string>(LocalBridgeClazz, "getTypeName", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getTypeName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#createFromMetadataNode(javax.imageio.plugins.tiff.TIFFTagSet,org.w3c.dom.Node)"/>
@@ -294,19 +294,19 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getAsString(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetAsString(int arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAsString(int arg0)
         {
-            return IExecute<string>("getAsString", arg0);
+            return IExecute<Java.Lang.String>("getAsString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getValueAsString(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetValueAsString(int arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetValueAsString(int arg0)
         {
-            return IExecute<string>("getValueAsString", arg0);
+            return IExecute<Java.Lang.String>("getValueAsString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#clone()"/>

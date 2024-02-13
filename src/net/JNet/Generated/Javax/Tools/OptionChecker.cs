@@ -35,9 +35,9 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/OptionChecker.html#isSupportedOption(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        int IsSupportedOption(string arg0);
+        int IsSupportedOption(Java.Lang.String arg0);
 
         #endregion
 
@@ -72,9 +72,9 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/OptionChecker.html#isSupportedOption(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        public int IsSupportedOption(string arg0)
+        public int IsSupportedOption(Java.Lang.String arg0)
         {
             return IExecute<int>("isSupportedOption", arg0);
         }

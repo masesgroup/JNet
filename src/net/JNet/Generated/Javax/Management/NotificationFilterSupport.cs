@@ -52,9 +52,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilterSupport.html#getEnabledTypes()"/> 
         /// </summary>
-        public Java.Util.Vector<string> EnabledTypes
+        public Java.Util.Vector<Java.Lang.String> EnabledTypes
         {
-            get { return IExecute<Java.Util.Vector<string>>("getEnabledTypes"); }
+            get { return IExecute<Java.Util.Vector<Java.Lang.String>>("getEnabledTypes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilterSupport.html#isNotificationEnabled(javax.management.Notification)"/>
@@ -75,17 +75,17 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilterSupport.html#disableType(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public void DisableType(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void DisableType(Java.Lang.String arg0)
         {
             IExecute("disableType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilterSupport.html#enableType(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        public void EnableType(string arg0)
+        public void EnableType(Java.Lang.String arg0)
         {
             IExecute("enableType", arg0);
         }

@@ -52,7 +52,7 @@ namespace Javax.Sound.Sampled
         /// <param name="arg5"><see cref="float"/></param>
         /// <param name="arg6"><see cref="bool"/></param>
         /// <param name="arg7"><see cref="Java.Util.Map"/></param>
-        public AudioFormat(Javax.Sound.Sampled.AudioFormat.Encoding arg0, float arg1, int arg2, int arg3, int arg4, float arg5, bool arg6, Java.Util.Map<string, object> arg7)
+        public AudioFormat(Javax.Sound.Sampled.AudioFormat.Encoding arg0, float arg1, int arg2, int arg3, int arg4, float arg5, bool arg6, Java.Util.Map<Java.Lang.String, object> arg7)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
         {
         }
@@ -149,9 +149,9 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#getProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
-        public object GetProperty(string arg0)
+        public object GetProperty(Java.Lang.String arg0)
         {
             return IExecute("getProperty", arg0);
         }
@@ -160,9 +160,9 @@ namespace Javax.Sound.Sampled
         /// </summary>
 
         /// <returns><see cref="Java.Util.Map"/></returns>
-        public Java.Util.Map<string, object> Properties()
+        public Java.Util.Map<Java.Lang.String, object> Properties()
         {
-            return IExecute<Java.Util.Map<string, object>>("properties");
+            return IExecute<Java.Util.Map<Java.Lang.String, object>>("properties");
         }
 
         #endregion
@@ -175,8 +175,8 @@ namespace Javax.Sound.Sampled
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
-            public Encoding(string arg0)
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            public Encoding(Java.Lang.String arg0)
                 : base(arg0)
             {
             }

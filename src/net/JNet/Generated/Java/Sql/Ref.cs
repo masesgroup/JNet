@@ -35,7 +35,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Ref.html#getBaseTypeName()"/> 
         /// </summary>
-        string BaseTypeName { get; }
+        Java.Lang.String BaseTypeName { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Ref.html#getObject()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Ref.html#setObject(java.lang.Object)"/>
         /// </summary>
@@ -46,7 +46,7 @@ namespace Java.Sql
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        object GetObject(Java.Util.Map<string, Java.Lang.Class> arg0);
+        object GetObject(Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg0);
 
         #endregion
 
@@ -81,9 +81,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Ref.html#getBaseTypeName()"/> 
         /// </summary>
-        public string BaseTypeName
+        public Java.Lang.String BaseTypeName
         {
-            get { return IExecute<string>("getBaseTypeName"); }
+            get { return IExecute<Java.Lang.String>("getBaseTypeName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Ref.html#getObject()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Ref.html#setObject(java.lang.Object)"/>
@@ -98,7 +98,7 @@ namespace Java.Sql
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public object GetObject(Java.Util.Map<string, Java.Lang.Class> arg0)
+        public object GetObject(Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg0)
         {
             return IExecute("getObject", arg0);
         }

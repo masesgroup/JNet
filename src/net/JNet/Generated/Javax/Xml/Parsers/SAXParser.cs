@@ -80,22 +80,22 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParser.html#getProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
-        public object GetProperty(string arg0)
+        public object GetProperty(Java.Lang.String arg0)
         {
             return IExecute("getProperty", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParser.html#setProperty(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
-        public void SetProperty(string arg0, object arg1)
+        public void SetProperty(Java.Lang.String arg0, object arg1)
         {
             IExecute("setProperty", arg0, arg1);
         }
@@ -124,10 +124,10 @@ namespace Javax.Xml.Parsers
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg1"><see cref="Org.Xml.Sax.Helpers.DefaultHandler"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         /// <exception cref="Java.Io.IOException"/>
-        public void Parse(Java.Io.InputStream arg0, Org.Xml.Sax.Helpers.DefaultHandler arg1, string arg2)
+        public void Parse(Java.Io.InputStream arg0, Org.Xml.Sax.Helpers.DefaultHandler arg1, Java.Lang.String arg2)
         {
             IExecute("parse", arg0, arg1, arg2);
         }
@@ -145,11 +145,11 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParser.html#parse(java.lang.String,org.xml.sax.helpers.DefaultHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Org.Xml.Sax.Helpers.DefaultHandler"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         /// <exception cref="Java.Io.IOException"/>
-        public void Parse(string arg0, Org.Xml.Sax.Helpers.DefaultHandler arg1)
+        public void Parse(Java.Lang.String arg0, Org.Xml.Sax.Helpers.DefaultHandler arg1)
         {
             IExecute("parse", arg0, arg1);
         }

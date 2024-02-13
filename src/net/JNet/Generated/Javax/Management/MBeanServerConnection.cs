@@ -35,11 +35,11 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#getDefaultDomain()"/> 
         /// </summary>
-        string DefaultDomain { get; }
+        Java.Lang.String DefaultDomain { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#getDomains()"/> 
         /// </summary>
-        string[] Domains { get; }
+        Java.Lang.String[] Domains { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#getMBeanCount()"/> 
         /// </summary>
@@ -48,11 +48,11 @@ namespace Javax.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#isInstanceOf(javax.management.ObjectName,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         /// <exception cref="Java.Io.IOException"/>
-        bool IsInstanceOf(Javax.Management.ObjectName arg0, string arg1);
+        bool IsInstanceOf(Javax.Management.ObjectName arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#isRegistered(javax.management.ObjectName)"/>
         /// </summary>
@@ -64,27 +64,27 @@ namespace Javax.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#getAttribute(javax.management.ObjectName,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.AttributeNotFoundException"/>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         /// <exception cref="Javax.Management.ReflectionException"/>
         /// <exception cref="Java.Io.IOException"/>
-        object GetAttribute(Javax.Management.ObjectName arg0, string arg1);
+        object GetAttribute(Javax.Management.ObjectName arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#invoke(javax.management.ObjectName,java.lang.String,java.lang.Object[],java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.ReflectionException"/>
         /// <exception cref="Java.Io.IOException"/>
-        object Invoke(Javax.Management.ObjectName arg0, string arg1, object[] arg2, string[] arg3);
+        object Invoke(Javax.Management.ObjectName arg0, Java.Lang.String arg1, object[] arg2, Java.Lang.String[] arg3);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#queryMBeans(javax.management.ObjectName,javax.management.QueryExp)"/>
         /// </summary>
@@ -105,12 +105,12 @@ namespace Javax.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#getAttributes(javax.management.ObjectName,java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Management.AttributeList"/></returns>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         /// <exception cref="Javax.Management.ReflectionException"/>
         /// <exception cref="Java.Io.IOException"/>
-        Javax.Management.AttributeList GetAttributes(Javax.Management.ObjectName arg0, string[] arg1);
+        Javax.Management.AttributeList GetAttributes(Javax.Management.ObjectName arg0, Java.Lang.String[] arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#setAttributes(javax.management.ObjectName,javax.management.AttributeList)"/>
         /// </summary>
@@ -134,10 +134,10 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#createMBean(java.lang.String,javax.management.ObjectName,java.lang.Object[],java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Management.ObjectInstance"/></returns>
         /// <exception cref="Javax.Management.ReflectionException"/>
         /// <exception cref="Javax.Management.InstanceAlreadyExistsException"/>
@@ -145,15 +145,15 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
         /// <exception cref="Java.Io.IOException"/>
-        Javax.Management.ObjectInstance CreateMBean(string arg0, Javax.Management.ObjectName arg1, object[] arg2, string[] arg3);
+        Javax.Management.ObjectInstance CreateMBean(Java.Lang.String arg0, Javax.Management.ObjectName arg1, object[] arg2, Java.Lang.String[] arg3);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName,java.lang.Object[],java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg2"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg3"><see cref="object"/></param>
-        /// <param name="arg4"><see cref="string"/></param>
+        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Management.ObjectInstance"/></returns>
         /// <exception cref="Javax.Management.ReflectionException"/>
         /// <exception cref="Javax.Management.InstanceAlreadyExistsException"/>
@@ -162,11 +162,11 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         /// <exception cref="Java.Io.IOException"/>
-        Javax.Management.ObjectInstance CreateMBean(string arg0, Javax.Management.ObjectName arg1, Javax.Management.ObjectName arg2, object[] arg3, string[] arg4);
+        Javax.Management.ObjectInstance CreateMBean(Java.Lang.String arg0, Javax.Management.ObjectName arg1, Javax.Management.ObjectName arg2, object[] arg3, Java.Lang.String[] arg4);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg2"><see cref="Javax.Management.ObjectName"/></param>
         /// <returns><see cref="Javax.Management.ObjectInstance"/></returns>
@@ -177,11 +177,11 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         /// <exception cref="Java.Io.IOException"/>
-        Javax.Management.ObjectInstance CreateMBean(string arg0, Javax.Management.ObjectName arg1, Javax.Management.ObjectName arg2);
+        Javax.Management.ObjectInstance CreateMBean(Java.Lang.String arg0, Javax.Management.ObjectName arg1, Javax.Management.ObjectName arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#createMBean(java.lang.String,javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
         /// <returns><see cref="Javax.Management.ObjectInstance"/></returns>
         /// <exception cref="Javax.Management.ReflectionException"/>
@@ -190,7 +190,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
         /// <exception cref="Java.Io.IOException"/>
-        Javax.Management.ObjectInstance CreateMBean(string arg0, Javax.Management.ObjectName arg1);
+        Javax.Management.ObjectInstance CreateMBean(Java.Lang.String arg0, Javax.Management.ObjectName arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#getObjectInstance(javax.management.ObjectName)"/>
         /// </summary>
@@ -313,16 +313,16 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#getDefaultDomain()"/> 
         /// </summary>
-        public string DefaultDomain
+        public Java.Lang.String DefaultDomain
         {
-            get { return IExecute<string>("getDefaultDomain"); }
+            get { return IExecute<Java.Lang.String>("getDefaultDomain"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#getDomains()"/> 
         /// </summary>
-        public string[] Domains
+        public Java.Lang.String[] Domains
         {
-            get { return IExecuteArray<string>("getDomains"); }
+            get { return IExecuteArray<Java.Lang.String>("getDomains"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#getMBeanCount()"/> 
@@ -335,11 +335,11 @@ namespace Javax.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#isInstanceOf(javax.management.ObjectName,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         /// <exception cref="Java.Io.IOException"/>
-        public bool IsInstanceOf(Javax.Management.ObjectName arg0, string arg1)
+        public bool IsInstanceOf(Javax.Management.ObjectName arg0, Java.Lang.String arg1)
         {
             return IExecute<bool>("isInstanceOf", arg0, arg1);
         }
@@ -357,14 +357,14 @@ namespace Javax.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#getAttribute(javax.management.ObjectName,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.AttributeNotFoundException"/>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         /// <exception cref="Javax.Management.ReflectionException"/>
         /// <exception cref="Java.Io.IOException"/>
-        public object GetAttribute(Javax.Management.ObjectName arg0, string arg1)
+        public object GetAttribute(Javax.Management.ObjectName arg0, Java.Lang.String arg1)
         {
             return IExecute("getAttribute", arg0, arg1);
         }
@@ -372,15 +372,15 @@ namespace Javax.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#invoke(javax.management.ObjectName,java.lang.String,java.lang.Object[],java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.ReflectionException"/>
         /// <exception cref="Java.Io.IOException"/>
-        public object Invoke(Javax.Management.ObjectName arg0, string arg1, object[] arg2, string[] arg3)
+        public object Invoke(Javax.Management.ObjectName arg0, Java.Lang.String arg1, object[] arg2, Java.Lang.String[] arg3)
         {
             return IExecute("invoke", arg0, arg1, arg2, arg3);
         }
@@ -410,12 +410,12 @@ namespace Javax.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#getAttributes(javax.management.ObjectName,java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Management.AttributeList"/></returns>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         /// <exception cref="Javax.Management.ReflectionException"/>
         /// <exception cref="Java.Io.IOException"/>
-        public Javax.Management.AttributeList GetAttributes(Javax.Management.ObjectName arg0, string[] arg1)
+        public Javax.Management.AttributeList GetAttributes(Javax.Management.ObjectName arg0, Java.Lang.String[] arg1)
         {
             return IExecute<Javax.Management.AttributeList>("getAttributes", arg0, arg1);
         }
@@ -448,10 +448,10 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#createMBean(java.lang.String,javax.management.ObjectName,java.lang.Object[],java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Management.ObjectInstance"/></returns>
         /// <exception cref="Javax.Management.ReflectionException"/>
         /// <exception cref="Javax.Management.InstanceAlreadyExistsException"/>
@@ -459,18 +459,18 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
         /// <exception cref="Java.Io.IOException"/>
-        public Javax.Management.ObjectInstance CreateMBean(string arg0, Javax.Management.ObjectName arg1, object[] arg2, string[] arg3)
+        public Javax.Management.ObjectInstance CreateMBean(Java.Lang.String arg0, Javax.Management.ObjectName arg1, object[] arg2, Java.Lang.String[] arg3)
         {
             return IExecute<Javax.Management.ObjectInstance>("createMBean", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName,java.lang.Object[],java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg2"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg3"><see cref="object"/></param>
-        /// <param name="arg4"><see cref="string"/></param>
+        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Management.ObjectInstance"/></returns>
         /// <exception cref="Javax.Management.ReflectionException"/>
         /// <exception cref="Javax.Management.InstanceAlreadyExistsException"/>
@@ -479,14 +479,14 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         /// <exception cref="Java.Io.IOException"/>
-        public Javax.Management.ObjectInstance CreateMBean(string arg0, Javax.Management.ObjectName arg1, Javax.Management.ObjectName arg2, object[] arg3, string[] arg4)
+        public Javax.Management.ObjectInstance CreateMBean(Java.Lang.String arg0, Javax.Management.ObjectName arg1, Javax.Management.ObjectName arg2, object[] arg3, Java.Lang.String[] arg4)
         {
             return IExecute<Javax.Management.ObjectInstance>("createMBean", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg2"><see cref="Javax.Management.ObjectName"/></param>
         /// <returns><see cref="Javax.Management.ObjectInstance"/></returns>
@@ -497,14 +497,14 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         /// <exception cref="Java.Io.IOException"/>
-        public Javax.Management.ObjectInstance CreateMBean(string arg0, Javax.Management.ObjectName arg1, Javax.Management.ObjectName arg2)
+        public Javax.Management.ObjectInstance CreateMBean(Java.Lang.String arg0, Javax.Management.ObjectName arg1, Javax.Management.ObjectName arg2)
         {
             return IExecute<Javax.Management.ObjectInstance>("createMBean", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#createMBean(java.lang.String,javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
         /// <returns><see cref="Javax.Management.ObjectInstance"/></returns>
         /// <exception cref="Javax.Management.ReflectionException"/>
@@ -513,7 +513,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
         /// <exception cref="Java.Io.IOException"/>
-        public Javax.Management.ObjectInstance CreateMBean(string arg0, Javax.Management.ObjectName arg1)
+        public Javax.Management.ObjectInstance CreateMBean(Java.Lang.String arg0, Javax.Management.ObjectName arg1)
         {
             return IExecute<Javax.Management.ObjectInstance>("createMBean", arg0, arg1);
         }

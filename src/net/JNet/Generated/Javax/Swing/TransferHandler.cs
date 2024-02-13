@@ -32,8 +32,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public TransferHandler(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public TransferHandler(Java.Lang.String arg0)
             : base(arg0)
         {
         }

@@ -64,10 +64,10 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getByName(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Net.NetworkInterface"/></returns>
         /// <exception cref="Java.Net.SocketException"/>
-        public static Java.Net.NetworkInterface GetByName(string arg0)
+        public static Java.Net.NetworkInterface GetByName(Java.Lang.String arg0)
         {
             return SExecute<Java.Net.NetworkInterface>(LocalBridgeClazz, "getByName", arg0);
         }
@@ -98,9 +98,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getDisplayName()"/> 
         /// </summary>
-        public string DisplayName
+        public Java.Lang.String DisplayName
         {
-            get { return IExecute<string>("getDisplayName"); }
+            get { return IExecute<Java.Lang.String>("getDisplayName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getHardwareAddress()"/> 
@@ -133,9 +133,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getName()"/> 
         /// </summary>
-        public string Name
+        public Java.Lang.String Name
         {
-            get { return IExecute<string>("getName"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getParent()"/> 

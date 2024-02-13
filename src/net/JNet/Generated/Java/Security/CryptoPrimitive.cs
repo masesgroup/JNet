@@ -104,9 +104,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Security.CryptoPrimitive"/></returns>
-        public static Java.Security.CryptoPrimitive ValueOf(string arg0)
+        public static Java.Security.CryptoPrimitive ValueOf(Java.Lang.String arg0)
         {
             return SExecute<Java.Security.CryptoPrimitive>(LocalBridgeClazz, "valueOf", arg0);
         }

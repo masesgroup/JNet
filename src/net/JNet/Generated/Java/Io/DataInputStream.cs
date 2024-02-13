@@ -57,11 +57,11 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#readUTF(java.io.DataInput)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.DataInput"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static string ReadUTF(Java.Io.DataInput arg0)
+        public static Java.Lang.String ReadUTF(Java.Io.DataInput arg0)
         {
-            return SExecute<string>(LocalBridgeClazz, "readUTF", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "readUTF", arg0);
         }
 
         #endregion
@@ -161,11 +161,11 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#readUTF()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public string ReadUTF()
+        public Java.Lang.String ReadUTF()
         {
-            return IExecute<string>("readUTF");
+            return IExecute<Java.Lang.String>("readUTF");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#readLong()"/>

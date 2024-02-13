@@ -62,9 +62,9 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#getSeparator()"/> 
         /// </summary>
-        public string Separator
+        public Java.Lang.String Separator
         {
-            get { return IExecute<string>("getSeparator"); }
+            get { return IExecute<Java.Lang.String>("getSeparator"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#getUserPrincipalLookupService()"/> 
@@ -94,19 +94,19 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#getPath(java.lang.String,java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
-        public Java.Nio.File.Path GetPath(string arg0, params string[] arg1)
+        public Java.Nio.File.Path GetPath(Java.Lang.String arg0, params Java.Lang.String[] arg1)
         {
             if (arg1.Length == 0) return IExecute<Java.Nio.File.Path>("getPath", arg0); else return IExecute<Java.Nio.File.Path>("getPath", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#getPathMatcher(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Nio.File.PathMatcher"/></returns>
-        public Java.Nio.File.PathMatcher GetPathMatcher(string arg0)
+        public Java.Nio.File.PathMatcher GetPathMatcher(Java.Lang.String arg0)
         {
             return IExecute<Java.Nio.File.PathMatcher>("getPathMatcher", arg0);
         }
@@ -134,9 +134,9 @@ namespace Java.Nio.File
         /// </summary>
 
         /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<string> SupportedFileAttributeViews()
+        public Java.Util.Set<Java.Lang.String> SupportedFileAttributeViews()
         {
-            return IExecute<Java.Util.Set<string>>("supportedFileAttributeViews");
+            return IExecute<Java.Util.Set<Java.Lang.String>>("supportedFileAttributeViews");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#close()"/>

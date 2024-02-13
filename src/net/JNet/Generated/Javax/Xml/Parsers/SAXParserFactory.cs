@@ -62,10 +62,10 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#newInstance(java.lang.String,java.lang.ClassLoader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
         /// <returns><see cref="Javax.Xml.Parsers.SAXParserFactory"/></returns>
-        public static Javax.Xml.Parsers.SAXParserFactory NewInstance(string arg0, Java.Lang.ClassLoader arg1)
+        public static Javax.Xml.Parsers.SAXParserFactory NewInstance(Java.Lang.String arg0, Java.Lang.ClassLoader arg1)
         {
             return SExecute<Javax.Xml.Parsers.SAXParserFactory>(LocalBridgeClazz, "newInstance", arg0, arg1);
         }
@@ -83,12 +83,12 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#getFeature(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Javax.Xml.Parsers.ParserConfigurationException"/>
         /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
-        public bool GetFeature(string arg0)
+        public bool GetFeature(Java.Lang.String arg0)
         {
             return IExecute<bool>("getFeature", arg0);
         }
@@ -106,12 +106,12 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#setFeature(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <exception cref="Javax.Xml.Parsers.ParserConfigurationException"/>
         /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
-        public void SetFeature(string arg0, bool arg1)
+        public void SetFeature(Java.Lang.String arg0, bool arg1)
         {
             IExecute("setFeature", arg0, arg1);
         }

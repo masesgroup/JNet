@@ -39,7 +39,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Savepoint.html#getSavepointName()"/> 
         /// </summary>
-        string SavepointName { get; }
+        Java.Lang.String SavepointName { get; }
 
         #endregion
 
@@ -81,9 +81,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Savepoint.html#getSavepointName()"/> 
         /// </summary>
-        public string SavepointName
+        public Java.Lang.String SavepointName
         {
-            get { return IExecute<string>("getSavepointName"); }
+            get { return IExecute<Java.Lang.String>("getSavepointName"); }
         }
 
         #endregion

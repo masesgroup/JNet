@@ -35,19 +35,19 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/TypeInfo.html#getTypeName()"/> 
         /// </summary>
-        string TypeName { get; }
+        Java.Lang.String TypeName { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/TypeInfo.html#getTypeNamespace()"/> 
         /// </summary>
-        string TypeNamespace { get; }
+        Java.Lang.String TypeNamespace { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/TypeInfo.html#isDerivedFrom(java.lang.String,java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        bool IsDerivedFrom(string arg0, string arg1, int arg2);
+        bool IsDerivedFrom(Java.Lang.String arg0, Java.Lang.String arg1, int arg2);
 
         #endregion
 
@@ -106,25 +106,25 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/TypeInfo.html#getTypeName()"/> 
         /// </summary>
-        public string TypeName
+        public Java.Lang.String TypeName
         {
-            get { return IExecute<string>("getTypeName"); }
+            get { return IExecute<Java.Lang.String>("getTypeName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/TypeInfo.html#getTypeNamespace()"/> 
         /// </summary>
-        public string TypeNamespace
+        public Java.Lang.String TypeNamespace
         {
-            get { return IExecute<string>("getTypeNamespace"); }
+            get { return IExecute<Java.Lang.String>("getTypeNamespace"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/TypeInfo.html#isDerivedFrom(java.lang.String,java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool IsDerivedFrom(string arg0, string arg1, int arg2)
+        public bool IsDerivedFrom(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
         {
             return IExecute<bool>("isDerivedFrom", arg0, arg1, arg2);
         }

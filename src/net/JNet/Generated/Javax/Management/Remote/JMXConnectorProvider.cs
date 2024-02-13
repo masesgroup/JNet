@@ -39,7 +39,7 @@ namespace Javax.Management.Remote
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="Javax.Management.Remote.JMXConnector"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        Javax.Management.Remote.JMXConnector NewJMXConnector(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<string, object> arg1);
+        Javax.Management.Remote.JMXConnector NewJMXConnector(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<Java.Lang.String, object> arg1);
 
         #endregion
 
@@ -78,7 +78,7 @@ namespace Javax.Management.Remote
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="Javax.Management.Remote.JMXConnector"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Javax.Management.Remote.JMXConnector NewJMXConnector(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<string, object> arg1)
+        public Javax.Management.Remote.JMXConnector NewJMXConnector(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<Java.Lang.String, object> arg1)
         {
             return IExecute<Javax.Management.Remote.JMXConnector>("newJMXConnector", arg0, arg1);
         }

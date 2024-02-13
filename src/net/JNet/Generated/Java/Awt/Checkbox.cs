@@ -32,41 +32,41 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#%3Cinit%3E(java.lang.String,boolean,java.awt.CheckboxGroup)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <param name="arg2"><see cref="Java.Awt.CheckboxGroup"/></param>
         /// <exception cref="Java.Awt.HeadlessException"/>
-        public Checkbox(string arg0, bool arg1, Java.Awt.CheckboxGroup arg2)
+        public Checkbox(Java.Lang.String arg0, bool arg1, Java.Awt.CheckboxGroup arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#%3Cinit%3E(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <exception cref="Java.Awt.HeadlessException"/>
-        public Checkbox(string arg0, bool arg1)
+        public Checkbox(Java.Lang.String arg0, bool arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#%3Cinit%3E(java.lang.String,java.awt.CheckboxGroup,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Awt.CheckboxGroup"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
         /// <exception cref="Java.Awt.HeadlessException"/>
-        public Checkbox(string arg0, Java.Awt.CheckboxGroup arg1, bool arg2)
+        public Checkbox(Java.Lang.String arg0, Java.Awt.CheckboxGroup arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Awt.HeadlessException"/>
-        public Checkbox(string arg0)
+        public Checkbox(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -111,9 +111,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#getLabel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#setLabel(java.lang.String)"/>
         /// </summary>
-        public string Label
+        public Java.Lang.String Label
         {
-            get { return IExecute<string>("getLabel"); } set { IExecute("setLabel", value); }
+            get { return IExecute<Java.Lang.String>("getLabel"); } set { IExecute("setLabel", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#getSelectedObjects()"/> 

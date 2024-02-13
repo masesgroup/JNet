@@ -47,7 +47,7 @@ namespace Java.Net.Http
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiPredicate"/></param>
         /// <returns><see cref="Java.Net.Http.HttpHeaders"/></returns>
-        public static Java.Net.Http.HttpHeaders Of(Java.Util.Map<string, Java.Util.List<string>> arg0, Java.Util.Function.BiPredicate<string, string> arg1)
+        public static Java.Net.Http.HttpHeaders Of(Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> arg0, Java.Util.Function.BiPredicate<Java.Lang.String, Java.Lang.String> arg1)
         {
             return SExecute<Java.Net.Http.HttpHeaders>(LocalBridgeClazz, "of", arg0, arg1);
         }
@@ -58,36 +58,36 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpHeaders.html#allValues(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
-        public Java.Util.List<string> AllValues(string arg0)
+        public Java.Util.List<Java.Lang.String> AllValues(Java.Lang.String arg0)
         {
-            return IExecute<Java.Util.List<string>>("allValues", arg0);
+            return IExecute<Java.Util.List<Java.Lang.String>>("allValues", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpHeaders.html#map()"/>
         /// </summary>
 
         /// <returns><see cref="Java.Util.Map"/></returns>
-        public Java.Util.Map<string, Java.Util.List<string>> Map()
+        public Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> Map()
         {
-            return IExecute<Java.Util.Map<string, Java.Util.List<string>>>("map");
+            return IExecute<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("map");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpHeaders.html#firstValue(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<string> FirstValue(string arg0)
+        public Java.Util.Optional<Java.Lang.String> FirstValue(Java.Lang.String arg0)
         {
-            return IExecute<Java.Util.Optional<string>>("firstValue", arg0);
+            return IExecute<Java.Util.Optional<Java.Lang.String>>("firstValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpHeaders.html#firstValueAsLong(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.OptionalLong"/></returns>
-        public Java.Util.OptionalLong FirstValueAsLong(string arg0)
+        public Java.Util.OptionalLong FirstValueAsLong(Java.Lang.String arg0)
         {
             return IExecute<Java.Util.OptionalLong>("firstValueAsLong", arg0);
         }

@@ -57,11 +57,11 @@ namespace Javax.Swing.Text.Html.Parser
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Parser.html#parseDTDMarkup()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public string ParseDTDMarkup()
+        public Java.Lang.String ParseDTDMarkup()
         {
-            return IExecute<string>("parseDTDMarkup");
+            return IExecute<Java.Lang.String>("parseDTDMarkup");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Parser.html#parse(java.io.Reader)"/>

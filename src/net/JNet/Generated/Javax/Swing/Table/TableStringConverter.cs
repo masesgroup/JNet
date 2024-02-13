@@ -51,10 +51,10 @@ namespace Javax.Swing.Table
         /// <param name="arg0"><see cref="Javax.Swing.Table.TableModel"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string ToString(Javax.Swing.Table.TableModel arg0, int arg1, int arg2)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String ToString(Javax.Swing.Table.TableModel arg0, int arg1, int arg2)
         {
-            return IExecute<string>("toString", arg0, arg1, arg2);
+            return IExecute<Java.Lang.String>("toString", arg0, arg1, arg2);
         }
 
         #endregion

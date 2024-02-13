@@ -190,8 +190,8 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CardLayout.html#show(java.awt.Container,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public void Show(Java.Awt.Container arg0, string arg1)
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public void Show(Java.Awt.Container arg0, Java.Lang.String arg1)
         {
             IExecute("show", arg0, arg1);
         }

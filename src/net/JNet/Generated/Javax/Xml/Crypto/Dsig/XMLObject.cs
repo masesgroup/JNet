@@ -39,15 +39,15 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLObject.html#getEncoding()"/> 
         /// </summary>
-        string Encoding { get; }
+        Java.Lang.String Encoding { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLObject.html#getId()"/> 
         /// </summary>
-        string Id { get; }
+        Java.Lang.String Id { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLObject.html#getMimeType()"/> 
         /// </summary>
-        string MimeType { get; }
+        Java.Lang.String MimeType { get; }
 
         #endregion
 
@@ -74,8 +74,8 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLObject.html#TYPE"/>
         /// </summary>
-        public static string TYPE { get { if (!_TYPEReady) { _TYPEContent = SGetField<string>(LocalBridgeClazz, "TYPE"); _TYPEReady = true; } return _TYPEContent; } }
-        private static string _TYPEContent = default;
+        public static Java.Lang.String TYPE { get { if (!_TYPEReady) { _TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TYPE"); _TYPEReady = true; } return _TYPEContent; } }
+        private static Java.Lang.String _TYPEContent = default;
         private static bool _TYPEReady = false; // this is used because in case of generics 
 
         #endregion
@@ -95,23 +95,23 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLObject.html#getEncoding()"/> 
         /// </summary>
-        public string Encoding
+        public Java.Lang.String Encoding
         {
-            get { return IExecute<string>("getEncoding"); }
+            get { return IExecute<Java.Lang.String>("getEncoding"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLObject.html#getId()"/> 
         /// </summary>
-        public string Id
+        public Java.Lang.String Id
         {
-            get { return IExecute<string>("getId"); }
+            get { return IExecute<Java.Lang.String>("getId"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLObject.html#getMimeType()"/> 
         /// </summary>
-        public string MimeType
+        public Java.Lang.String MimeType
         {
-            get { return IExecute<string>("getMimeType"); }
+            get { return IExecute<Java.Lang.String>("getMimeType"); }
         }
 
         #endregion

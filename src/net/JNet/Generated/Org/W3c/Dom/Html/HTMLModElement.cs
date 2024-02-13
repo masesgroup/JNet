@@ -35,11 +35,11 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLModElement.html#getCite()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLModElement.html#setCite(java.lang.String)"/>
         /// </summary>
-        string Cite { get; set; }
+        Java.Lang.String Cite { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLModElement.html#getDateTime()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLModElement.html#setDateTime(java.lang.String)"/>
         /// </summary>
-        string DateTime { get; set; }
+        Java.Lang.String DateTime { get; set; }
 
         #endregion
 
@@ -74,16 +74,16 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLModElement.html#getCite()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLModElement.html#setCite(java.lang.String)"/>
         /// </summary>
-        public string Cite
+        public Java.Lang.String Cite
         {
-            get { return IExecute<string>("getCite"); } set { IExecute("setCite", value); }
+            get { return IExecute<Java.Lang.String>("getCite"); } set { IExecute("setCite", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLModElement.html#getDateTime()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLModElement.html#setDateTime(java.lang.String)"/>
         /// </summary>
-        public string DateTime
+        public Java.Lang.String DateTime
         {
-            get { return IExecute<string>("getDateTime"); } set { IExecute("setDateTime", value); }
+            get { return IExecute<Java.Lang.String>("getDateTime"); } set { IExecute("setDateTime", value); }
         }
 
         #endregion

@@ -44,33 +44,33 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SecretKeyFactory.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Crypto.SecretKeyFactory"/></returns>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         /// <exception cref="Java.Security.NoSuchProviderException"/>
-        public static Javax.Crypto.SecretKeyFactory GetInstance(string arg0, string arg1)
+        public static Javax.Crypto.SecretKeyFactory GetInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return SExecute<Javax.Crypto.SecretKeyFactory>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SecretKeyFactory.html#getInstance(java.lang.String,java.security.Provider)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
         /// <returns><see cref="Javax.Crypto.SecretKeyFactory"/></returns>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        public static Javax.Crypto.SecretKeyFactory GetInstance(string arg0, Java.Security.Provider arg1)
+        public static Javax.Crypto.SecretKeyFactory GetInstance(Java.Lang.String arg0, Java.Security.Provider arg1)
         {
             return SExecute<Javax.Crypto.SecretKeyFactory>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SecretKeyFactory.html#getInstance(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Crypto.SecretKeyFactory"/></returns>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        public static Javax.Crypto.SecretKeyFactory GetInstance(string arg0)
+        public static Javax.Crypto.SecretKeyFactory GetInstance(Java.Lang.String arg0)
         {
             return SExecute<Javax.Crypto.SecretKeyFactory>(LocalBridgeClazz, "getInstance", arg0);
         }
@@ -81,9 +81,9 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SecretKeyFactory.html#getAlgorithm()"/> 
         /// </summary>
-        public string Algorithm
+        public Java.Lang.String Algorithm
         {
-            get { return IExecute<string>("getAlgorithm"); }
+            get { return IExecute<Java.Lang.String>("getAlgorithm"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SecretKeyFactory.html#getProvider()"/> 

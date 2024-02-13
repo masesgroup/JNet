@@ -73,9 +73,9 @@ namespace Javax.Swing.Text.Html
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Text.Html.CSS.Attribute"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool AddCSSAttributeFromHTML(Javax.Swing.Text.MutableAttributeSet arg0, Javax.Swing.Text.Html.CSS.Attribute arg1, string arg2)
+        public bool AddCSSAttributeFromHTML(Javax.Swing.Text.MutableAttributeSet arg0, Javax.Swing.Text.Html.CSS.Attribute arg1, Java.Lang.String arg2)
         {
             return IExecute<bool>("addCSSAttributeFromHTML", arg0, arg1, arg2);
         }
@@ -91,27 +91,27 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getPointSize(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="float"/></returns>
-        public float GetPointSize(string arg0)
+        public float GetPointSize(Java.Lang.String arg0)
         {
             return IExecute<float>("getPointSize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#stringToColor(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Awt.Color"/></returns>
-        public Java.Awt.Color StringToColor(string arg0)
+        public Java.Awt.Color StringToColor(Java.Lang.String arg0)
         {
             return IExecute<Java.Awt.Color>("stringToColor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getDeclaration(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
-        public Javax.Swing.Text.AttributeSet GetDeclaration(string arg0)
+        public Javax.Swing.Text.AttributeSet GetDeclaration(Java.Lang.String arg0)
         {
             return IExecute<Javax.Swing.Text.AttributeSet>("getDeclaration", arg0);
         }
@@ -154,9 +154,9 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getRule(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Swing.Text.Style"/></returns>
-        public Javax.Swing.Text.Style GetRule(string arg0)
+        public Javax.Swing.Text.Style GetRule(Java.Lang.String arg0)
         {
             return IExecute<Javax.Swing.Text.Style>("getRule", arg0);
         }
@@ -175,16 +175,16 @@ namespace Javax.Swing.Text.Html
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Text.Html.CSS.Attribute"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
-        public void AddCSSAttribute(Javax.Swing.Text.MutableAttributeSet arg0, Javax.Swing.Text.Html.CSS.Attribute arg1, string arg2)
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        public void AddCSSAttribute(Javax.Swing.Text.MutableAttributeSet arg0, Javax.Swing.Text.Html.CSS.Attribute arg1, Java.Lang.String arg2)
         {
             IExecute("addCSSAttribute", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#addRule(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public void AddRule(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void AddRule(Java.Lang.String arg0)
         {
             IExecute("addRule", arg0);
         }
@@ -233,8 +233,8 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#setBaseFontSize(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public void SetBaseFontSize(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetBaseFontSize(Java.Lang.String arg0)
         {
             IExecute("setBaseFontSize", arg0);
         }

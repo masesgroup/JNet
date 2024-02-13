@@ -108,9 +108,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getIDstring()"/> 
         /// </summary>
-        public string IDstring
+        public Java.Lang.String IDstring
         {
-            get { return IExecute<string>("getIDstring"); }
+            get { return IExecute<Java.Lang.String>("getIDstring"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getType()"/> 
@@ -196,9 +196,9 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.WindowTranslucency.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Awt.GraphicsDevice.WindowTranslucency"/></returns>
-            public static Java.Awt.GraphicsDevice.WindowTranslucency ValueOf(string arg0)
+            public static Java.Awt.GraphicsDevice.WindowTranslucency ValueOf(Java.Lang.String arg0)
             {
                 return SExecute<Java.Awt.GraphicsDevice.WindowTranslucency>(LocalBridgeClazz, "valueOf", arg0);
             }

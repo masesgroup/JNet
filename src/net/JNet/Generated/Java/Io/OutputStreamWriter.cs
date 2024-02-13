@@ -33,9 +33,9 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStreamWriter.html#%3Cinit%3E(java.io.OutputStream,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Io.UnsupportedEncodingException"/>
-        public OutputStreamWriter(Java.Io.OutputStream arg0, string arg1)
+        public OutputStreamWriter(Java.Io.OutputStream arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
         }
@@ -84,9 +84,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStreamWriter.html#getEncoding()"/> 
         /// </summary>
-        public string Encoding
+        public Java.Lang.String Encoding
         {
-            get { return IExecute<string>("getEncoding"); }
+            get { return IExecute<Java.Lang.String>("getEncoding"); }
         }
 
         #endregion

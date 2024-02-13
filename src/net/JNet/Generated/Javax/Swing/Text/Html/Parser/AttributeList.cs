@@ -32,21 +32,21 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#%3Cinit%3E(java.lang.String,int,int,java.lang.String,java.util.Vector,javax.swing.text.html.parser.AttributeList)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         /// <param name="arg4"><see cref="Java.Util.Vector"/></param>
         /// <param name="arg5"><see cref="Javax.Swing.Text.Html.Parser.AttributeList"/></param>
-        public AttributeList(string arg0, int arg1, int arg2, string arg3, Java.Util.Vector<object> arg4, Javax.Swing.Text.Html.Parser.AttributeList arg5)
+        public AttributeList(Java.Lang.String arg0, int arg1, int arg2, Java.Lang.String arg3, Java.Util.Vector<object> arg4, Javax.Swing.Text.Html.Parser.AttributeList arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public AttributeList(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public AttributeList(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -77,11 +77,11 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#name"/>
         /// </summary>
-        public string name { get { return IGetField<string>("name"); } set { ISetField("name", value); } }
+        public Java.Lang.String name { get { return IGetField<Java.Lang.String>("name"); } set { ISetField("name", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#value"/>
         /// </summary>
-        public string value { get { return IGetField<string>("value"); } set { ISetField("value", value); } }
+        public Java.Lang.String value { get { return IGetField<Java.Lang.String>("value"); } set { ISetField("value", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#values"/>
         /// </summary>
@@ -97,9 +97,9 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#name2type(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        public static int Name2type(string arg0)
+        public static int Name2type(Java.Lang.String arg0)
         {
             return SExecute<int>(LocalBridgeClazz, "name2type", arg0);
         }
@@ -107,10 +107,10 @@ namespace Javax.Swing.Text.Html.Parser
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#type2name(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string Type2name(int arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String Type2name(int arg0)
         {
-            return SExecute<string>(LocalBridgeClazz, "type2name", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "type2name", arg0);
         }
 
         #endregion
@@ -126,9 +126,9 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#getName()"/> 
         /// </summary>
-        public string Name
+        public Java.Lang.String Name
         {
-            get { return IExecute<string>("getName"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#getNext()"/> 
@@ -147,9 +147,9 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#getValue()"/> 
         /// </summary>
-        public string Value
+        public Java.Lang.String Value
         {
-            get { return IExecute<string>("getValue"); }
+            get { return IExecute<Java.Lang.String>("getValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#getValues()"/> 

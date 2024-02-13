@@ -1361,91 +1361,91 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#deepToString(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string DeepToString(object[] arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String DeepToString(object[] arg0)
         {
-            return SExecute<string>(LocalBridgeClazz, "deepToString", new object[] { arg0 });
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "deepToString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(boolean[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string ToString(bool[] arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String ToString(bool[] arg0)
         {
-            return SExecute<string>(LocalBridgeClazz, "toString", new object[] { arg0 });
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string ToString(byte[] arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String ToString(byte[] arg0)
         {
-            return SExecute<string>(LocalBridgeClazz, "toString", new object[] { arg0 });
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string ToString(char[] arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String ToString(char[] arg0)
         {
-            return SExecute<string>(LocalBridgeClazz, "toString", new object[] { arg0 });
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(double[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string ToString(double[] arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String ToString(double[] arg0)
         {
-            return SExecute<string>(LocalBridgeClazz, "toString", new object[] { arg0 });
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(float[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string ToString(float[] arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String ToString(float[] arg0)
         {
-            return SExecute<string>(LocalBridgeClazz, "toString", new object[] { arg0 });
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string ToString(int[] arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String ToString(int[] arg0)
         {
-            return SExecute<string>(LocalBridgeClazz, "toString", new object[] { arg0 });
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string ToString(object[] arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String ToString(object[] arg0)
         {
-            return SExecute<string>(LocalBridgeClazz, "toString", new object[] { arg0 });
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(long[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string ToString(long[] arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String ToString(long[] arg0)
         {
-            return SExecute<string>(LocalBridgeClazz, "toString", new object[] { arg0 });
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(short[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string ToString(short[] arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String ToString(short[] arg0)
         {
-            return SExecute<string>(LocalBridgeClazz, "toString", new object[] { arg0 });
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#spliterator(double[],int,int)"/>

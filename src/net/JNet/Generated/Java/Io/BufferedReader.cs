@@ -66,20 +66,20 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/BufferedReader.html#readLine()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public string ReadLine()
+        public Java.Lang.String ReadLine()
         {
-            return IExecute<string>("readLine");
+            return IExecute<Java.Lang.String>("readLine");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/BufferedReader.html#lines()"/>
         /// </summary>
 
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<string> Lines()
+        public Java.Util.Stream.Stream<Java.Lang.String> Lines()
         {
-            return IExecute<Java.Util.Stream.Stream<string>>("lines");
+            return IExecute<Java.Util.Stream.Stream<Java.Lang.String>>("lines");
         }
 
         #endregion

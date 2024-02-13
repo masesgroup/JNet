@@ -62,9 +62,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerFactory.html#createMBeanServer(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Management.MBeanServer"/></returns>
-        public static Javax.Management.MBeanServer CreateMBeanServer(string arg0)
+        public static Javax.Management.MBeanServer CreateMBeanServer(Java.Lang.String arg0)
         {
             return SExecute<Javax.Management.MBeanServer>(LocalBridgeClazz, "createMBeanServer", arg0);
         }
@@ -80,18 +80,18 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerFactory.html#newMBeanServer(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Management.MBeanServer"/></returns>
-        public static Javax.Management.MBeanServer NewMBeanServer(string arg0)
+        public static Javax.Management.MBeanServer NewMBeanServer(Java.Lang.String arg0)
         {
             return SExecute<Javax.Management.MBeanServer>(LocalBridgeClazz, "newMBeanServer", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerFactory.html#findMBeanServer(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.ArrayList"/></returns>
-        public static Java.Util.ArrayList<Javax.Management.MBeanServer> FindMBeanServer(string arg0)
+        public static Java.Util.ArrayList<Javax.Management.MBeanServer> FindMBeanServer(Java.Lang.String arg0)
         {
             return SExecute<Java.Util.ArrayList<Javax.Management.MBeanServer>>(LocalBridgeClazz, "findMBeanServer", arg0);
         }

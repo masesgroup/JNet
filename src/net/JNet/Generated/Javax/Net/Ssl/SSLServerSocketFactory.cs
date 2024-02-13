@@ -48,16 +48,16 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocketFactory.html#getDefaultCipherSuites()"/> 
         /// </summary>
-        public string[] DefaultCipherSuites
+        public Java.Lang.String[] DefaultCipherSuites
         {
-            get { return IExecuteArray<string>("getDefaultCipherSuites"); }
+            get { return IExecuteArray<Java.Lang.String>("getDefaultCipherSuites"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocketFactory.html#getSupportedCipherSuites()"/> 
         /// </summary>
-        public string[] SupportedCipherSuites
+        public Java.Lang.String[] SupportedCipherSuites
         {
-            get { return IExecuteArray<string>("getSupportedCipherSuites"); }
+            get { return IExecuteArray<Java.Lang.String>("getSupportedCipherSuites"); }
         }
 
         #endregion

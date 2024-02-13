@@ -48,8 +48,8 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXResult.html#FEATURE"/>
         /// </summary>
-        public static string FEATURE { get { if (!_FEATUREReady) { _FEATUREContent = SGetField<string>(LocalBridgeClazz, "FEATURE"); _FEATUREReady = true; } return _FEATUREContent; } }
-        private static string _FEATUREContent = default;
+        public static Java.Lang.String FEATURE { get { if (!_FEATUREReady) { _FEATUREContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE"); _FEATUREReady = true; } return _FEATUREContent; } }
+        private static Java.Lang.String _FEATUREContent = default;
         private static bool _FEATUREReady = false; // this is used because in case of generics 
 
         #endregion
@@ -76,9 +76,9 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXResult.html#getSystemId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXResult.html#setSystemId(java.lang.String)"/>
         /// </summary>
-        public string SystemId
+        public Java.Lang.String SystemId
         {
-            get { return IExecute<string>("getSystemId"); } set { IExecute("setSystemId", value); }
+            get { return IExecute<Java.Lang.String>("getSystemId"); } set { IExecute("setSystemId", value); }
         }
 
         #endregion

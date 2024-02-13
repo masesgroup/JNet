@@ -291,9 +291,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.JDBCType"/></returns>
-        public static Java.Sql.JDBCType ValueOf(string arg0)
+        public static Java.Sql.JDBCType ValueOf(Java.Lang.String arg0)
         {
             return SExecute<Java.Sql.JDBCType>(LocalBridgeClazz, "valueOf", arg0);
         }
@@ -313,16 +313,16 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#getName()"/> 
         /// </summary>
-        public string Name
+        public Java.Lang.String Name
         {
-            get { return IExecute<string>("getName"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#getVendor()"/> 
         /// </summary>
-        public string Vendor
+        public Java.Lang.String Vendor
         {
-            get { return IExecute<string>("getVendor"); }
+            get { return IExecute<Java.Lang.String>("getVendor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#getVendorTypeNumber()"/> 

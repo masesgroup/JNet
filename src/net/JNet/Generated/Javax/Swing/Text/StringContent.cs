@@ -71,11 +71,11 @@ namespace Javax.Swing.Text
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
-        public string GetString(int arg0, int arg1)
+        public Java.Lang.String GetString(int arg0, int arg1)
         {
-            return IExecute<string>("getString", arg0, arg1);
+            return IExecute<Java.Lang.String>("getString", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StringContent.html#createPosition(int)"/>
@@ -91,10 +91,10 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StringContent.html#insertString(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Swing.Undo.UndoableEdit"/></returns>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
-        public Javax.Swing.Undo.UndoableEdit InsertString(int arg0, string arg1)
+        public Javax.Swing.Undo.UndoableEdit InsertString(int arg0, Java.Lang.String arg1)
         {
             return IExecute<Javax.Swing.Undo.UndoableEdit>("insertString", arg0, arg1);
         }

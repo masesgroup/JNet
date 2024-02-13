@@ -35,26 +35,26 @@ namespace Javax.Management.Loading
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/ClassLoaderRepository.html#loadClass(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        Java.Lang.Class LoadClass(string arg0);
+        Java.Lang.Class LoadClass(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/ClassLoaderRepository.html#loadClassBefore(java.lang.ClassLoader,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        Java.Lang.Class LoadClassBefore(Java.Lang.ClassLoader arg0, string arg1);
+        Java.Lang.Class LoadClassBefore(Java.Lang.ClassLoader arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/ClassLoaderRepository.html#loadClassWithout(java.lang.ClassLoader,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        Java.Lang.Class LoadClassWithout(Java.Lang.ClassLoader arg0, string arg1);
+        Java.Lang.Class LoadClassWithout(Java.Lang.ClassLoader arg0, Java.Lang.String arg1);
 
         #endregion
 
@@ -89,10 +89,10 @@ namespace Javax.Management.Loading
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/ClassLoaderRepository.html#loadClass(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        public Java.Lang.Class LoadClass(string arg0)
+        public Java.Lang.Class LoadClass(Java.Lang.String arg0)
         {
             return IExecute<Java.Lang.Class>("loadClass", arg0);
         }
@@ -100,10 +100,10 @@ namespace Javax.Management.Loading
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/ClassLoaderRepository.html#loadClassBefore(java.lang.ClassLoader,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        public Java.Lang.Class LoadClassBefore(Java.Lang.ClassLoader arg0, string arg1)
+        public Java.Lang.Class LoadClassBefore(Java.Lang.ClassLoader arg0, Java.Lang.String arg1)
         {
             return IExecute<Java.Lang.Class>("loadClassBefore", arg0, arg1);
         }
@@ -111,10 +111,10 @@ namespace Javax.Management.Loading
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/ClassLoaderRepository.html#loadClassWithout(java.lang.ClassLoader,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        public Java.Lang.Class LoadClassWithout(Java.Lang.ClassLoader arg0, string arg1)
+        public Java.Lang.Class LoadClassWithout(Java.Lang.ClassLoader arg0, Java.Lang.String arg1)
         {
             return IExecute<Java.Lang.Class>("loadClassWithout", arg0, arg1);
         }

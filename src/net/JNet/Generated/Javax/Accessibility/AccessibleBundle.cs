@@ -49,19 +49,19 @@ namespace Javax.Accessibility
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleBundle.html#toDisplayString()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        public string ToDisplayString()
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String ToDisplayString()
         {
-            return IExecute<string>("toDisplayString");
+            return IExecute<Java.Lang.String>("toDisplayString");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleBundle.html#toDisplayString(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string ToDisplayString(Java.Util.Locale arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String ToDisplayString(Java.Util.Locale arg0)
         {
-            return IExecute<string>("toDisplayString", arg0);
+            return IExecute<Java.Lang.String>("toDisplayString", arg0);
         }
 
         #endregion

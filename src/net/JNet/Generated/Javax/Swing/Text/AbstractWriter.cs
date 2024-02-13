@@ -55,9 +55,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractWriter.html#getLineSeparator()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractWriter.html#setLineSeparator(java.lang.String)"/>
         /// </summary>
-        public string LineSeparator
+        public Java.Lang.String LineSeparator
         {
-            get { return IExecute<string>("getLineSeparator"); } set { IExecute("setLineSeparator", value); }
+            get { return IExecute<Java.Lang.String>("getLineSeparator"); } set { IExecute("setLineSeparator", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractWriter.html#getStartOffset()"/> 

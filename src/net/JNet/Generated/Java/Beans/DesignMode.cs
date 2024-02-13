@@ -69,8 +69,8 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/DesignMode.html#PROPERTYNAME"/>
         /// </summary>
-        public static string PROPERTYNAME { get { if (!_PROPERTYNAMEReady) { _PROPERTYNAMEContent = SGetField<string>(LocalBridgeClazz, "PROPERTYNAME"); _PROPERTYNAMEReady = true; } return _PROPERTYNAMEContent; } }
-        private static string _PROPERTYNAMEContent = default;
+        public static Java.Lang.String PROPERTYNAME { get { if (!_PROPERTYNAMEReady) { _PROPERTYNAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PROPERTYNAME"); _PROPERTYNAMEReady = true; } return _PROPERTYNAMEContent; } }
+        private static Java.Lang.String _PROPERTYNAMEContent = default;
         private static bool _PROPERTYNAMEReady = false; // this is used because in case of generics 
 
         #endregion

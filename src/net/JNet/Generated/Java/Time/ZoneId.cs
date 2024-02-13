@@ -50,9 +50,9 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#getAvailableZoneIds()"/> 
         /// </summary>
-        public static Java.Util.Set<string> AvailableZoneIds
+        public static Java.Util.Set<Java.Lang.String> AvailableZoneIds
         {
-            get { return SExecute<Java.Util.Set<string>>(LocalBridgeClazz, "getAvailableZoneIds"); }
+            get { return SExecute<Java.Util.Set<Java.Lang.String>>(LocalBridgeClazz, "getAvailableZoneIds"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#from(java.time.temporal.TemporalAccessor)"/>
@@ -66,29 +66,29 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#of(java.lang.String,java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="Java.Time.ZoneId"/></returns>
-        public static Java.Time.ZoneId Of(string arg0, Java.Util.Map<string, string> arg1)
+        public static Java.Time.ZoneId Of(Java.Lang.String arg0, Java.Util.Map<Java.Lang.String, Java.Lang.String> arg1)
         {
             return SExecute<Java.Time.ZoneId>(LocalBridgeClazz, "of", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#of(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Time.ZoneId"/></returns>
-        public static Java.Time.ZoneId Of(string arg0)
+        public static Java.Time.ZoneId Of(Java.Lang.String arg0)
         {
             return SExecute<Java.Time.ZoneId>(LocalBridgeClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#ofOffset(java.lang.String,java.time.ZoneOffset)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Time.ZoneOffset"/></param>
         /// <returns><see cref="Java.Time.ZoneId"/></returns>
-        public static Java.Time.ZoneId OfOffset(string arg0, Java.Time.ZoneOffset arg1)
+        public static Java.Time.ZoneId OfOffset(Java.Lang.String arg0, Java.Time.ZoneOffset arg1)
         {
             return SExecute<Java.Time.ZoneId>(LocalBridgeClazz, "ofOffset", arg0, arg1);
         }
@@ -108,9 +108,9 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#getId()"/> 
         /// </summary>
-        public string Id
+        public Java.Lang.String Id
         {
-            get { return IExecute<string>("getId"); }
+            get { return IExecute<Java.Lang.String>("getId"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#getRules()"/> 
@@ -124,10 +124,10 @@ namespace Java.Time
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetDisplayName(Java.Time.Format.TextStyle arg0, Java.Util.Locale arg1)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDisplayName(Java.Time.Format.TextStyle arg0, Java.Util.Locale arg1)
         {
-            return IExecute<string>("getDisplayName", arg0, arg1);
+            return IExecute<Java.Lang.String>("getDisplayName", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#normalized()"/>

@@ -35,7 +35,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509IssuerSerial.html#getIssuerName()"/> 
         /// </summary>
-        string IssuerName { get; }
+        Java.Lang.String IssuerName { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509IssuerSerial.html#getSerialNumber()"/> 
         /// </summary>
@@ -74,9 +74,9 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509IssuerSerial.html#getIssuerName()"/> 
         /// </summary>
-        public string IssuerName
+        public Java.Lang.String IssuerName
         {
-            get { return IExecute<string>("getIssuerName"); }
+            get { return IExecute<Java.Lang.String>("getIssuerName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509IssuerSerial.html#getSerialNumber()"/> 

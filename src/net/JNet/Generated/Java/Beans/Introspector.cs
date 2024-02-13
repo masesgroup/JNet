@@ -62,9 +62,9 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#getBeanInfoSearchPath()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#setBeanInfoSearchPath(java.lang.String[])"/>
         /// </summary>
-        public static string[] BeanInfoSearchPath
+        public static Java.Lang.String[] BeanInfoSearchPath
         {
-            get { return SExecuteArray<string>(LocalBridgeClazz, "getBeanInfoSearchPath"); } set { SExecute(LocalBridgeClazz, "setBeanInfoSearchPath", value); }
+            get { return SExecuteArray<Java.Lang.String>(LocalBridgeClazz, "getBeanInfoSearchPath"); } set { SExecute(LocalBridgeClazz, "setBeanInfoSearchPath", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#getBeanInfo(java.lang.Class,int)"/>
@@ -113,11 +113,11 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#decapitalize(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string Decapitalize(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String Decapitalize(Java.Lang.String arg0)
         {
-            return SExecute<string>(LocalBridgeClazz, "decapitalize", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "decapitalize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#flushCaches()"/>

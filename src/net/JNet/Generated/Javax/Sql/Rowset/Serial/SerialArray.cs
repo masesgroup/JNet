@@ -36,7 +36,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
         /// <exception cref="Java.Sql.SQLException"/>
-        public SerialArray(Java.Sql.Array arg0, Java.Util.Map<string, Java.Lang.Class> arg1)
+        public SerialArray(Java.Sql.Array arg0, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg1)
             : base(arg0, arg1)
         {
         }
@@ -95,9 +95,9 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getBaseTypeName()"/> 
         /// </summary>
-        public string BaseTypeName
+        public Java.Lang.String BaseTypeName
         {
-            get { return IExecute<string>("getBaseTypeName"); }
+            get { return IExecute<Java.Lang.String>("getBaseTypeName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getResultSet()"/> 
@@ -112,7 +112,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        public object GetArray(Java.Util.Map<string, Java.Lang.Class> arg0)
+        public object GetArray(Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg0)
         {
             return IExecute("getArray", arg0);
         }
@@ -124,7 +124,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <param name="arg2"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        public object GetArray(long arg0, int arg1, Java.Util.Map<string, Java.Lang.Class> arg2)
+        public object GetArray(long arg0, int arg1, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg2)
         {
             return IExecute("getArray", arg0, arg1, arg2);
         }
@@ -145,7 +145,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="Java.Sql.ResultSet"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        public Java.Sql.ResultSet GetResultSet(Java.Util.Map<string, Java.Lang.Class> arg0)
+        public Java.Sql.ResultSet GetResultSet(Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg0)
         {
             return IExecute<Java.Sql.ResultSet>("getResultSet", arg0);
         }
@@ -157,7 +157,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <param name="arg2"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="Java.Sql.ResultSet"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        public Java.Sql.ResultSet GetResultSet(long arg0, int arg1, Java.Util.Map<string, Java.Lang.Class> arg2)
+        public Java.Sql.ResultSet GetResultSet(long arg0, int arg1, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg2)
         {
             return IExecute<Java.Sql.ResultSet>("getResultSet", arg0, arg1, arg2);
         }

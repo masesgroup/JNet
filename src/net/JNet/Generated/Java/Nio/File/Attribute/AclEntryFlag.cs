@@ -68,9 +68,9 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryFlag.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Nio.File.Attribute.AclEntryFlag"/></returns>
-        public static Java.Nio.File.Attribute.AclEntryFlag ValueOf(string arg0)
+        public static Java.Nio.File.Attribute.AclEntryFlag ValueOf(Java.Lang.String arg0)
         {
             return SExecute<Java.Nio.File.Attribute.AclEntryFlag>(LocalBridgeClazz, "valueOf", arg0);
         }

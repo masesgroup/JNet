@@ -32,19 +32,19 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#%3Cinit%3E(java.lang.String,java.awt.MenuShortcut)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Awt.MenuShortcut"/></param>
         /// <exception cref="Java.Awt.HeadlessException"/>
-        public MenuItem(string arg0, Java.Awt.MenuShortcut arg1)
+        public MenuItem(Java.Lang.String arg0, Java.Awt.MenuShortcut arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Awt.HeadlessException"/>
-        public MenuItem(string arg0)
+        public MenuItem(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -71,9 +71,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#getActionCommand()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#setActionCommand(java.lang.String)"/>
         /// </summary>
-        public string ActionCommand
+        public Java.Lang.String ActionCommand
         {
-            get { return IExecute<string>("getActionCommand"); } set { IExecute("setActionCommand", value); }
+            get { return IExecute<Java.Lang.String>("getActionCommand"); } set { IExecute("setActionCommand", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#getActionListeners()"/> 
@@ -85,9 +85,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#getLabel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#setLabel(java.lang.String)"/>
         /// </summary>
-        public string Label
+        public Java.Lang.String Label
         {
-            get { return IExecute<string>("getLabel"); } set { IExecute("setLabel", value); }
+            get { return IExecute<Java.Lang.String>("getLabel"); } set { IExecute("setLabel", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#getShortcut()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#setShortcut(java.awt.MenuShortcut)"/>
@@ -109,10 +109,10 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#paramString()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        public string ParamString()
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String ParamString()
         {
-            return IExecute<string>("paramString");
+            return IExecute<Java.Lang.String>("paramString");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#addActionListener(java.awt.event.ActionListener)"/>

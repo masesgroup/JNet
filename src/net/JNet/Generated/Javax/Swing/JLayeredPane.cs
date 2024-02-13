@@ -80,8 +80,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#LAYER_PROPERTY"/>
         /// </summary>
-        public static string LAYER_PROPERTY { get { if (!_LAYER_PROPERTYReady) { _LAYER_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "LAYER_PROPERTY"); _LAYER_PROPERTYReady = true; } return _LAYER_PROPERTYContent; } }
-        private static string _LAYER_PROPERTYContent = default;
+        public static Java.Lang.String LAYER_PROPERTY { get { if (!_LAYER_PROPERTYReady) { _LAYER_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "LAYER_PROPERTY"); _LAYER_PROPERTYReady = true; } return _LAYER_PROPERTYContent; } }
+        private static Java.Lang.String _LAYER_PROPERTYContent = default;
         private static bool _LAYER_PROPERTYReady = false; // this is used because in case of generics 
 
         #endregion

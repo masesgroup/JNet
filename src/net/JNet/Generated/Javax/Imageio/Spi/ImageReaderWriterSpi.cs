@@ -32,23 +32,23 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],boolean,java.lang.String,java.lang.String,java.lang.String[],java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
-        /// <param name="arg3"><see cref="string"/></param>
-        /// <param name="arg4"><see cref="string"/></param>
-        /// <param name="arg5"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg5"><see cref="Java.Lang.String"/></param>
         /// <param name="arg6"><see cref="bool"/></param>
-        /// <param name="arg7"><see cref="string"/></param>
-        /// <param name="arg8"><see cref="string"/></param>
-        /// <param name="arg9"><see cref="string"/></param>
-        /// <param name="arg10"><see cref="string"/></param>
+        /// <param name="arg7"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg8"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg9"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg10"><see cref="Java.Lang.String"/></param>
         /// <param name="arg11"><see cref="bool"/></param>
-        /// <param name="arg12"><see cref="string"/></param>
-        /// <param name="arg13"><see cref="string"/></param>
-        /// <param name="arg14"><see cref="string"/></param>
-        /// <param name="arg15"><see cref="string"/></param>
-        public ImageReaderWriterSpi(string arg0, string arg1, string[] arg2, string[] arg3, string[] arg4, string arg5, bool arg6, string arg7, string arg8, string[] arg9, string[] arg10, bool arg11, string arg12, string arg13, string[] arg14, string[] arg15)
+        /// <param name="arg12"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg13"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg14"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg15"><see cref="Java.Lang.String"/></param>
+        public ImageReaderWriterSpi(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String[] arg2, Java.Lang.String[] arg3, Java.Lang.String[] arg4, Java.Lang.String arg5, bool arg6, Java.Lang.String arg7, Java.Lang.String arg8, Java.Lang.String[] arg9, Java.Lang.String[] arg10, bool arg11, Java.Lang.String arg12, Java.Lang.String arg13, Java.Lang.String[] arg14, Java.Lang.String[] arg15)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15)
         {
         }
@@ -71,58 +71,58 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getExtraImageMetadataFormatNames()"/> 
         /// </summary>
-        public string[] ExtraImageMetadataFormatNames
+        public Java.Lang.String[] ExtraImageMetadataFormatNames
         {
-            get { return IExecuteArray<string>("getExtraImageMetadataFormatNames"); }
+            get { return IExecuteArray<Java.Lang.String>("getExtraImageMetadataFormatNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getExtraStreamMetadataFormatNames()"/> 
         /// </summary>
-        public string[] ExtraStreamMetadataFormatNames
+        public Java.Lang.String[] ExtraStreamMetadataFormatNames
         {
-            get { return IExecuteArray<string>("getExtraStreamMetadataFormatNames"); }
+            get { return IExecuteArray<Java.Lang.String>("getExtraStreamMetadataFormatNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getFileSuffixes()"/> 
         /// </summary>
-        public string[] FileSuffixes
+        public Java.Lang.String[] FileSuffixes
         {
-            get { return IExecuteArray<string>("getFileSuffixes"); }
+            get { return IExecuteArray<Java.Lang.String>("getFileSuffixes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getFormatNames()"/> 
         /// </summary>
-        public string[] FormatNames
+        public Java.Lang.String[] FormatNames
         {
-            get { return IExecuteArray<string>("getFormatNames"); }
+            get { return IExecuteArray<Java.Lang.String>("getFormatNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getMIMETypes()"/> 
         /// </summary>
-        public string[] MIMETypes
+        public Java.Lang.String[] MIMETypes
         {
-            get { return IExecuteArray<string>("getMIMETypes"); }
+            get { return IExecuteArray<Java.Lang.String>("getMIMETypes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getNativeImageMetadataFormatName()"/> 
         /// </summary>
-        public string NativeImageMetadataFormatName
+        public Java.Lang.String NativeImageMetadataFormatName
         {
-            get { return IExecute<string>("getNativeImageMetadataFormatName"); }
+            get { return IExecute<Java.Lang.String>("getNativeImageMetadataFormatName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getNativeStreamMetadataFormatName()"/> 
         /// </summary>
-        public string NativeStreamMetadataFormatName
+        public Java.Lang.String NativeStreamMetadataFormatName
         {
-            get { return IExecute<string>("getNativeStreamMetadataFormatName"); }
+            get { return IExecute<Java.Lang.String>("getNativeStreamMetadataFormatName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getPluginClassName()"/> 
         /// </summary>
-        public string PluginClassName
+        public Java.Lang.String PluginClassName
         {
-            get { return IExecute<string>("getPluginClassName"); }
+            get { return IExecute<Java.Lang.String>("getPluginClassName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#isStandardImageMetadataFormatSupported()"/>
@@ -145,18 +145,18 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getImageMetadataFormat(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Imageio.Metadata.IIOMetadataFormat"/></returns>
-        public Javax.Imageio.Metadata.IIOMetadataFormat GetImageMetadataFormat(string arg0)
+        public Javax.Imageio.Metadata.IIOMetadataFormat GetImageMetadataFormat(Java.Lang.String arg0)
         {
             return IExecute<Javax.Imageio.Metadata.IIOMetadataFormat>("getImageMetadataFormat", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getStreamMetadataFormat(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Imageio.Metadata.IIOMetadataFormat"/></returns>
-        public Javax.Imageio.Metadata.IIOMetadataFormat GetStreamMetadataFormat(string arg0)
+        public Javax.Imageio.Metadata.IIOMetadataFormat GetStreamMetadataFormat(Java.Lang.String arg0)
         {
             return IExecute<Javax.Imageio.Metadata.IIOMetadataFormat>("getStreamMetadataFormat", arg0);
         }

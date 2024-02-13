@@ -35,7 +35,7 @@ namespace Javax.Xml.Transform
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Result.html#getSystemId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Result.html#setSystemId(java.lang.String)"/>
         /// </summary>
-        string SystemId { get; set; }
+        Java.Lang.String SystemId { get; set; }
 
         #endregion
 
@@ -62,14 +62,14 @@ namespace Javax.Xml.Transform
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Result.html#PI_DISABLE_OUTPUT_ESCAPING"/>
         /// </summary>
-        public static string PI_DISABLE_OUTPUT_ESCAPING { get { if (!_PI_DISABLE_OUTPUT_ESCAPINGReady) { _PI_DISABLE_OUTPUT_ESCAPINGContent = SGetField<string>(LocalBridgeClazz, "PI_DISABLE_OUTPUT_ESCAPING"); _PI_DISABLE_OUTPUT_ESCAPINGReady = true; } return _PI_DISABLE_OUTPUT_ESCAPINGContent; } }
-        private static string _PI_DISABLE_OUTPUT_ESCAPINGContent = default;
+        public static Java.Lang.String PI_DISABLE_OUTPUT_ESCAPING { get { if (!_PI_DISABLE_OUTPUT_ESCAPINGReady) { _PI_DISABLE_OUTPUT_ESCAPINGContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PI_DISABLE_OUTPUT_ESCAPING"); _PI_DISABLE_OUTPUT_ESCAPINGReady = true; } return _PI_DISABLE_OUTPUT_ESCAPINGContent; } }
+        private static Java.Lang.String _PI_DISABLE_OUTPUT_ESCAPINGContent = default;
         private static bool _PI_DISABLE_OUTPUT_ESCAPINGReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Result.html#PI_ENABLE_OUTPUT_ESCAPING"/>
         /// </summary>
-        public static string PI_ENABLE_OUTPUT_ESCAPING { get { if (!_PI_ENABLE_OUTPUT_ESCAPINGReady) { _PI_ENABLE_OUTPUT_ESCAPINGContent = SGetField<string>(LocalBridgeClazz, "PI_ENABLE_OUTPUT_ESCAPING"); _PI_ENABLE_OUTPUT_ESCAPINGReady = true; } return _PI_ENABLE_OUTPUT_ESCAPINGContent; } }
-        private static string _PI_ENABLE_OUTPUT_ESCAPINGContent = default;
+        public static Java.Lang.String PI_ENABLE_OUTPUT_ESCAPING { get { if (!_PI_ENABLE_OUTPUT_ESCAPINGReady) { _PI_ENABLE_OUTPUT_ESCAPINGContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PI_ENABLE_OUTPUT_ESCAPING"); _PI_ENABLE_OUTPUT_ESCAPINGReady = true; } return _PI_ENABLE_OUTPUT_ESCAPINGContent; } }
+        private static Java.Lang.String _PI_ENABLE_OUTPUT_ESCAPINGContent = default;
         private static bool _PI_ENABLE_OUTPUT_ESCAPINGReady = false; // this is used because in case of generics 
 
         #endregion
@@ -82,9 +82,9 @@ namespace Javax.Xml.Transform
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Result.html#getSystemId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Result.html#setSystemId(java.lang.String)"/>
         /// </summary>
-        public string SystemId
+        public Java.Lang.String SystemId
         {
-            get { return IExecute<string>("getSystemId"); } set { IExecute("setSystemId", value); }
+            get { return IExecute<Java.Lang.String>("getSystemId"); } set { IExecute("setSystemId", value); }
         }
 
         #endregion

@@ -32,21 +32,21 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#%3Cinit%3E(java.lang.String,java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Net.URL"/></param>
         /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
         /// <param name="arg3"><see cref="Java.Net.URLStreamHandlerFactory"/></param>
-        public URLClassLoader(string arg0, Java.Net.URL[] arg1, Java.Lang.ClassLoader arg2, Java.Net.URLStreamHandlerFactory arg3)
+        public URLClassLoader(Java.Lang.String arg0, Java.Net.URL[] arg1, Java.Lang.ClassLoader arg2, Java.Net.URLStreamHandlerFactory arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#%3Cinit%3E(java.lang.String,java.net.URL[],java.lang.ClassLoader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Net.URL"/></param>
         /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
-        public URLClassLoader(string arg0, Java.Net.URL[] arg1, Java.Lang.ClassLoader arg2)
+        public URLClassLoader(Java.Lang.String arg0, Java.Net.URL[] arg1, Java.Lang.ClassLoader arg2)
             : base(arg0, arg1, arg2)
         {
         }
@@ -126,19 +126,19 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#findResource(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Net.URL"/></returns>
-        public Java.Net.URL FindResource(string arg0)
+        public Java.Net.URL FindResource(Java.Lang.String arg0)
         {
             return IExecute<Java.Net.URL>("findResource", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#findResources(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Util.Enumeration<Java.Net.URL> FindResources(string arg0)
+        public Java.Util.Enumeration<Java.Net.URL> FindResources(Java.Lang.String arg0)
         {
             return IExecute<Java.Util.Enumeration<Java.Net.URL>>("findResources", arg0);
         }

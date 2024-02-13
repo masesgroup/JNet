@@ -250,104 +250,104 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifGPSTagSet.html#DEST_DISTANCE_REF_KILOMETERS"/>
         /// </summary>
-        public static string DEST_DISTANCE_REF_KILOMETERS { get { if (!_DEST_DISTANCE_REF_KILOMETERSReady) { _DEST_DISTANCE_REF_KILOMETERSContent = SGetField<string>(LocalBridgeClazz, "DEST_DISTANCE_REF_KILOMETERS"); _DEST_DISTANCE_REF_KILOMETERSReady = true; } return _DEST_DISTANCE_REF_KILOMETERSContent; } }
-        private static string _DEST_DISTANCE_REF_KILOMETERSContent = default;
+        public static Java.Lang.String DEST_DISTANCE_REF_KILOMETERS { get { if (!_DEST_DISTANCE_REF_KILOMETERSReady) { _DEST_DISTANCE_REF_KILOMETERSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DEST_DISTANCE_REF_KILOMETERS"); _DEST_DISTANCE_REF_KILOMETERSReady = true; } return _DEST_DISTANCE_REF_KILOMETERSContent; } }
+        private static Java.Lang.String _DEST_DISTANCE_REF_KILOMETERSContent = default;
         private static bool _DEST_DISTANCE_REF_KILOMETERSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifGPSTagSet.html#DEST_DISTANCE_REF_KNOTS"/>
         /// </summary>
-        public static string DEST_DISTANCE_REF_KNOTS { get { if (!_DEST_DISTANCE_REF_KNOTSReady) { _DEST_DISTANCE_REF_KNOTSContent = SGetField<string>(LocalBridgeClazz, "DEST_DISTANCE_REF_KNOTS"); _DEST_DISTANCE_REF_KNOTSReady = true; } return _DEST_DISTANCE_REF_KNOTSContent; } }
-        private static string _DEST_DISTANCE_REF_KNOTSContent = default;
+        public static Java.Lang.String DEST_DISTANCE_REF_KNOTS { get { if (!_DEST_DISTANCE_REF_KNOTSReady) { _DEST_DISTANCE_REF_KNOTSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DEST_DISTANCE_REF_KNOTS"); _DEST_DISTANCE_REF_KNOTSReady = true; } return _DEST_DISTANCE_REF_KNOTSContent; } }
+        private static Java.Lang.String _DEST_DISTANCE_REF_KNOTSContent = default;
         private static bool _DEST_DISTANCE_REF_KNOTSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifGPSTagSet.html#DEST_DISTANCE_REF_MILES"/>
         /// </summary>
-        public static string DEST_DISTANCE_REF_MILES { get { if (!_DEST_DISTANCE_REF_MILESReady) { _DEST_DISTANCE_REF_MILESContent = SGetField<string>(LocalBridgeClazz, "DEST_DISTANCE_REF_MILES"); _DEST_DISTANCE_REF_MILESReady = true; } return _DEST_DISTANCE_REF_MILESContent; } }
-        private static string _DEST_DISTANCE_REF_MILESContent = default;
+        public static Java.Lang.String DEST_DISTANCE_REF_MILES { get { if (!_DEST_DISTANCE_REF_MILESReady) { _DEST_DISTANCE_REF_MILESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DEST_DISTANCE_REF_MILES"); _DEST_DISTANCE_REF_MILESReady = true; } return _DEST_DISTANCE_REF_MILESContent; } }
+        private static Java.Lang.String _DEST_DISTANCE_REF_MILESContent = default;
         private static bool _DEST_DISTANCE_REF_MILESReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifGPSTagSet.html#DIRECTION_REF_MAGNETIC"/>
         /// </summary>
-        public static string DIRECTION_REF_MAGNETIC { get { if (!_DIRECTION_REF_MAGNETICReady) { _DIRECTION_REF_MAGNETICContent = SGetField<string>(LocalBridgeClazz, "DIRECTION_REF_MAGNETIC"); _DIRECTION_REF_MAGNETICReady = true; } return _DIRECTION_REF_MAGNETICContent; } }
-        private static string _DIRECTION_REF_MAGNETICContent = default;
+        public static Java.Lang.String DIRECTION_REF_MAGNETIC { get { if (!_DIRECTION_REF_MAGNETICReady) { _DIRECTION_REF_MAGNETICContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DIRECTION_REF_MAGNETIC"); _DIRECTION_REF_MAGNETICReady = true; } return _DIRECTION_REF_MAGNETICContent; } }
+        private static Java.Lang.String _DIRECTION_REF_MAGNETICContent = default;
         private static bool _DIRECTION_REF_MAGNETICReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifGPSTagSet.html#DIRECTION_REF_TRUE"/>
         /// </summary>
-        public static string DIRECTION_REF_TRUE { get { if (!_DIRECTION_REF_TRUEReady) { _DIRECTION_REF_TRUEContent = SGetField<string>(LocalBridgeClazz, "DIRECTION_REF_TRUE"); _DIRECTION_REF_TRUEReady = true; } return _DIRECTION_REF_TRUEContent; } }
-        private static string _DIRECTION_REF_TRUEContent = default;
+        public static Java.Lang.String DIRECTION_REF_TRUE { get { if (!_DIRECTION_REF_TRUEReady) { _DIRECTION_REF_TRUEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DIRECTION_REF_TRUE"); _DIRECTION_REF_TRUEReady = true; } return _DIRECTION_REF_TRUEContent; } }
+        private static Java.Lang.String _DIRECTION_REF_TRUEContent = default;
         private static bool _DIRECTION_REF_TRUEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifGPSTagSet.html#GPS_VERSION_2_2"/>
         /// </summary>
-        public static string GPS_VERSION_2_2 { get { if (!_GPS_VERSION_2_2Ready) { _GPS_VERSION_2_2Content = SGetField<string>(LocalBridgeClazz, "GPS_VERSION_2_2"); _GPS_VERSION_2_2Ready = true; } return _GPS_VERSION_2_2Content; } }
-        private static string _GPS_VERSION_2_2Content = default;
+        public static Java.Lang.String GPS_VERSION_2_2 { get { if (!_GPS_VERSION_2_2Ready) { _GPS_VERSION_2_2Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "GPS_VERSION_2_2"); _GPS_VERSION_2_2Ready = true; } return _GPS_VERSION_2_2Content; } }
+        private static Java.Lang.String _GPS_VERSION_2_2Content = default;
         private static bool _GPS_VERSION_2_2Ready = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifGPSTagSet.html#LATITUDE_REF_NORTH"/>
         /// </summary>
-        public static string LATITUDE_REF_NORTH { get { if (!_LATITUDE_REF_NORTHReady) { _LATITUDE_REF_NORTHContent = SGetField<string>(LocalBridgeClazz, "LATITUDE_REF_NORTH"); _LATITUDE_REF_NORTHReady = true; } return _LATITUDE_REF_NORTHContent; } }
-        private static string _LATITUDE_REF_NORTHContent = default;
+        public static Java.Lang.String LATITUDE_REF_NORTH { get { if (!_LATITUDE_REF_NORTHReady) { _LATITUDE_REF_NORTHContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "LATITUDE_REF_NORTH"); _LATITUDE_REF_NORTHReady = true; } return _LATITUDE_REF_NORTHContent; } }
+        private static Java.Lang.String _LATITUDE_REF_NORTHContent = default;
         private static bool _LATITUDE_REF_NORTHReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifGPSTagSet.html#LATITUDE_REF_SOUTH"/>
         /// </summary>
-        public static string LATITUDE_REF_SOUTH { get { if (!_LATITUDE_REF_SOUTHReady) { _LATITUDE_REF_SOUTHContent = SGetField<string>(LocalBridgeClazz, "LATITUDE_REF_SOUTH"); _LATITUDE_REF_SOUTHReady = true; } return _LATITUDE_REF_SOUTHContent; } }
-        private static string _LATITUDE_REF_SOUTHContent = default;
+        public static Java.Lang.String LATITUDE_REF_SOUTH { get { if (!_LATITUDE_REF_SOUTHReady) { _LATITUDE_REF_SOUTHContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "LATITUDE_REF_SOUTH"); _LATITUDE_REF_SOUTHReady = true; } return _LATITUDE_REF_SOUTHContent; } }
+        private static Java.Lang.String _LATITUDE_REF_SOUTHContent = default;
         private static bool _LATITUDE_REF_SOUTHReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifGPSTagSet.html#LONGITUDE_REF_EAST"/>
         /// </summary>
-        public static string LONGITUDE_REF_EAST { get { if (!_LONGITUDE_REF_EASTReady) { _LONGITUDE_REF_EASTContent = SGetField<string>(LocalBridgeClazz, "LONGITUDE_REF_EAST"); _LONGITUDE_REF_EASTReady = true; } return _LONGITUDE_REF_EASTContent; } }
-        private static string _LONGITUDE_REF_EASTContent = default;
+        public static Java.Lang.String LONGITUDE_REF_EAST { get { if (!_LONGITUDE_REF_EASTReady) { _LONGITUDE_REF_EASTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "LONGITUDE_REF_EAST"); _LONGITUDE_REF_EASTReady = true; } return _LONGITUDE_REF_EASTContent; } }
+        private static Java.Lang.String _LONGITUDE_REF_EASTContent = default;
         private static bool _LONGITUDE_REF_EASTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifGPSTagSet.html#LONGITUDE_REF_WEST"/>
         /// </summary>
-        public static string LONGITUDE_REF_WEST { get { if (!_LONGITUDE_REF_WESTReady) { _LONGITUDE_REF_WESTContent = SGetField<string>(LocalBridgeClazz, "LONGITUDE_REF_WEST"); _LONGITUDE_REF_WESTReady = true; } return _LONGITUDE_REF_WESTContent; } }
-        private static string _LONGITUDE_REF_WESTContent = default;
+        public static Java.Lang.String LONGITUDE_REF_WEST { get { if (!_LONGITUDE_REF_WESTReady) { _LONGITUDE_REF_WESTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "LONGITUDE_REF_WEST"); _LONGITUDE_REF_WESTReady = true; } return _LONGITUDE_REF_WESTContent; } }
+        private static Java.Lang.String _LONGITUDE_REF_WESTContent = default;
         private static bool _LONGITUDE_REF_WESTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifGPSTagSet.html#MEASURE_MODE_2D"/>
         /// </summary>
-        public static string MEASURE_MODE_2D { get { if (!_MEASURE_MODE_2DReady) { _MEASURE_MODE_2DContent = SGetField<string>(LocalBridgeClazz, "MEASURE_MODE_2D"); _MEASURE_MODE_2DReady = true; } return _MEASURE_MODE_2DContent; } }
-        private static string _MEASURE_MODE_2DContent = default;
+        public static Java.Lang.String MEASURE_MODE_2D { get { if (!_MEASURE_MODE_2DReady) { _MEASURE_MODE_2DContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MEASURE_MODE_2D"); _MEASURE_MODE_2DReady = true; } return _MEASURE_MODE_2DContent; } }
+        private static Java.Lang.String _MEASURE_MODE_2DContent = default;
         private static bool _MEASURE_MODE_2DReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifGPSTagSet.html#MEASURE_MODE_3D"/>
         /// </summary>
-        public static string MEASURE_MODE_3D { get { if (!_MEASURE_MODE_3DReady) { _MEASURE_MODE_3DContent = SGetField<string>(LocalBridgeClazz, "MEASURE_MODE_3D"); _MEASURE_MODE_3DReady = true; } return _MEASURE_MODE_3DContent; } }
-        private static string _MEASURE_MODE_3DContent = default;
+        public static Java.Lang.String MEASURE_MODE_3D { get { if (!_MEASURE_MODE_3DReady) { _MEASURE_MODE_3DContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MEASURE_MODE_3D"); _MEASURE_MODE_3DReady = true; } return _MEASURE_MODE_3DContent; } }
+        private static Java.Lang.String _MEASURE_MODE_3DContent = default;
         private static bool _MEASURE_MODE_3DReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifGPSTagSet.html#SPEED_REF_KILOMETERS_PER_HOUR"/>
         /// </summary>
-        public static string SPEED_REF_KILOMETERS_PER_HOUR { get { if (!_SPEED_REF_KILOMETERS_PER_HOURReady) { _SPEED_REF_KILOMETERS_PER_HOURContent = SGetField<string>(LocalBridgeClazz, "SPEED_REF_KILOMETERS_PER_HOUR"); _SPEED_REF_KILOMETERS_PER_HOURReady = true; } return _SPEED_REF_KILOMETERS_PER_HOURContent; } }
-        private static string _SPEED_REF_KILOMETERS_PER_HOURContent = default;
+        public static Java.Lang.String SPEED_REF_KILOMETERS_PER_HOUR { get { if (!_SPEED_REF_KILOMETERS_PER_HOURReady) { _SPEED_REF_KILOMETERS_PER_HOURContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SPEED_REF_KILOMETERS_PER_HOUR"); _SPEED_REF_KILOMETERS_PER_HOURReady = true; } return _SPEED_REF_KILOMETERS_PER_HOURContent; } }
+        private static Java.Lang.String _SPEED_REF_KILOMETERS_PER_HOURContent = default;
         private static bool _SPEED_REF_KILOMETERS_PER_HOURReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifGPSTagSet.html#SPEED_REF_KNOTS"/>
         /// </summary>
-        public static string SPEED_REF_KNOTS { get { if (!_SPEED_REF_KNOTSReady) { _SPEED_REF_KNOTSContent = SGetField<string>(LocalBridgeClazz, "SPEED_REF_KNOTS"); _SPEED_REF_KNOTSReady = true; } return _SPEED_REF_KNOTSContent; } }
-        private static string _SPEED_REF_KNOTSContent = default;
+        public static Java.Lang.String SPEED_REF_KNOTS { get { if (!_SPEED_REF_KNOTSReady) { _SPEED_REF_KNOTSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SPEED_REF_KNOTS"); _SPEED_REF_KNOTSReady = true; } return _SPEED_REF_KNOTSContent; } }
+        private static Java.Lang.String _SPEED_REF_KNOTSContent = default;
         private static bool _SPEED_REF_KNOTSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifGPSTagSet.html#SPEED_REF_MILES_PER_HOUR"/>
         /// </summary>
-        public static string SPEED_REF_MILES_PER_HOUR { get { if (!_SPEED_REF_MILES_PER_HOURReady) { _SPEED_REF_MILES_PER_HOURContent = SGetField<string>(LocalBridgeClazz, "SPEED_REF_MILES_PER_HOUR"); _SPEED_REF_MILES_PER_HOURReady = true; } return _SPEED_REF_MILES_PER_HOURContent; } }
-        private static string _SPEED_REF_MILES_PER_HOURContent = default;
+        public static Java.Lang.String SPEED_REF_MILES_PER_HOUR { get { if (!_SPEED_REF_MILES_PER_HOURReady) { _SPEED_REF_MILES_PER_HOURContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SPEED_REF_MILES_PER_HOUR"); _SPEED_REF_MILES_PER_HOURReady = true; } return _SPEED_REF_MILES_PER_HOURContent; } }
+        private static Java.Lang.String _SPEED_REF_MILES_PER_HOURContent = default;
         private static bool _SPEED_REF_MILES_PER_HOURReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifGPSTagSet.html#STATUS_MEASUREMENT_IN_PROGRESS"/>
         /// </summary>
-        public static string STATUS_MEASUREMENT_IN_PROGRESS { get { if (!_STATUS_MEASUREMENT_IN_PROGRESSReady) { _STATUS_MEASUREMENT_IN_PROGRESSContent = SGetField<string>(LocalBridgeClazz, "STATUS_MEASUREMENT_IN_PROGRESS"); _STATUS_MEASUREMENT_IN_PROGRESSReady = true; } return _STATUS_MEASUREMENT_IN_PROGRESSContent; } }
-        private static string _STATUS_MEASUREMENT_IN_PROGRESSContent = default;
+        public static Java.Lang.String STATUS_MEASUREMENT_IN_PROGRESS { get { if (!_STATUS_MEASUREMENT_IN_PROGRESSReady) { _STATUS_MEASUREMENT_IN_PROGRESSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "STATUS_MEASUREMENT_IN_PROGRESS"); _STATUS_MEASUREMENT_IN_PROGRESSReady = true; } return _STATUS_MEASUREMENT_IN_PROGRESSContent; } }
+        private static Java.Lang.String _STATUS_MEASUREMENT_IN_PROGRESSContent = default;
         private static bool _STATUS_MEASUREMENT_IN_PROGRESSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifGPSTagSet.html#STATUS_MEASUREMENT_INTEROPERABILITY"/>
         /// </summary>
-        public static string STATUS_MEASUREMENT_INTEROPERABILITY { get { if (!_STATUS_MEASUREMENT_INTEROPERABILITYReady) { _STATUS_MEASUREMENT_INTEROPERABILITYContent = SGetField<string>(LocalBridgeClazz, "STATUS_MEASUREMENT_INTEROPERABILITY"); _STATUS_MEASUREMENT_INTEROPERABILITYReady = true; } return _STATUS_MEASUREMENT_INTEROPERABILITYContent; } }
-        private static string _STATUS_MEASUREMENT_INTEROPERABILITYContent = default;
+        public static Java.Lang.String STATUS_MEASUREMENT_INTEROPERABILITY { get { if (!_STATUS_MEASUREMENT_INTEROPERABILITYReady) { _STATUS_MEASUREMENT_INTEROPERABILITYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "STATUS_MEASUREMENT_INTEROPERABILITY"); _STATUS_MEASUREMENT_INTEROPERABILITYReady = true; } return _STATUS_MEASUREMENT_INTEROPERABILITYContent; } }
+        private static Java.Lang.String _STATUS_MEASUREMENT_INTEROPERABILITYContent = default;
         private static bool _STATUS_MEASUREMENT_INTEROPERABILITYReady = false; // this is used because in case of generics 
 
         #endregion

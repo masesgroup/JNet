@@ -59,9 +59,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#getSelectedText()"/> 
         /// </summary>
-        public string SelectedText
+        public Java.Lang.String SelectedText
         {
-            get { return IExecute<string>("getSelectedText"); }
+            get { return IExecute<Java.Lang.String>("getSelectedText"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#getSelectionEnd()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#setSelectionEnd(int)"/>
@@ -80,9 +80,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#getText()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#setText(java.lang.String)"/>
         /// </summary>
-        public string Text
+        public Java.Lang.String Text
         {
-            get { return IExecute<string>("getText"); } set { IExecute("setText", value); }
+            get { return IExecute<Java.Lang.String>("getText"); } set { IExecute("setText", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#getTextListeners()"/> 

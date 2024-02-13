@@ -93,10 +93,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#regexFilter(java.lang.String,int[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Javax.Swing.RowFilter"/></returns>
-        public static Javax.Swing.RowFilter RegexFilterMethod(string arg0, params int[] arg1)
+        public static Javax.Swing.RowFilter RegexFilterMethod(Java.Lang.String arg0, params int[] arg1)
         {
             if (arg1.Length == 0) return SExecute<Javax.Swing.RowFilter>(LocalBridgeClazz, "regexFilter", arg0); else return SExecute<Javax.Swing.RowFilter>(LocalBridgeClazz, "regexFilter", arg0, arg1);
         }
@@ -160,9 +160,9 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Javax.Swing.RowFilter.ComparisonType"/></returns>
-            public static Javax.Swing.RowFilter.ComparisonType ValueOf(string arg0)
+            public static Javax.Swing.RowFilter.ComparisonType ValueOf(Java.Lang.String arg0)
             {
                 return SExecute<Javax.Swing.RowFilter.ComparisonType>(LocalBridgeClazz, "valueOf", arg0);
             }
@@ -244,10 +244,10 @@ namespace Javax.Swing
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getStringValue(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
-            /// <returns><see cref="string"/></returns>
-            public string GetStringValue(int arg0)
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetStringValue(int arg0)
             {
-                return IExecute<string>("getStringValue", arg0);
+                return IExecute<Java.Lang.String>("getStringValue", arg0);
             }
 
             #endregion
@@ -318,10 +318,10 @@ namespace Javax.Swing
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getStringValue(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
-            /// <returns><see cref="string"/></returns>
-            public string GetStringValue(int arg0)
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetStringValue(int arg0)
             {
-                return IExecute<string>("getStringValue", arg0);
+                return IExecute<Java.Lang.String>("getStringValue", arg0);
             }
 
             #endregion
@@ -419,10 +419,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#regexFilter(java.lang.String,int[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Javax.Swing.RowFilter"/></returns>
-        public static Javax.Swing.RowFilter<M, I> RegexFilterMethod(string arg0, params int[] arg1)
+        public static Javax.Swing.RowFilter<M, I> RegexFilterMethod(Java.Lang.String arg0, params int[] arg1)
         {
             if (arg1.Length == 0) return SExecute<Javax.Swing.RowFilter<M, I>>(LocalBridgeClazz, "regexFilter", arg0); else return SExecute<Javax.Swing.RowFilter<M, I>>(LocalBridgeClazz, "regexFilter", arg0, arg1);
         }

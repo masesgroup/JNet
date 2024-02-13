@@ -609,18 +609,18 @@ namespace Java.Lang.Invoke
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#valueFromMethodName(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Lang.Invoke.VarHandle.AccessMode"/></returns>
-            public static Java.Lang.Invoke.VarHandle.AccessMode ValueFromMethodName(string arg0)
+            public static Java.Lang.Invoke.VarHandle.AccessMode ValueFromMethodName(Java.Lang.String arg0)
             {
                 return SExecute<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "valueFromMethodName", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Lang.Invoke.VarHandle.AccessMode"/></returns>
-            public static Java.Lang.Invoke.VarHandle.AccessMode ValueOf(string arg0)
+            public static Java.Lang.Invoke.VarHandle.AccessMode ValueOf(Java.Lang.String arg0)
             {
                 return SExecute<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "valueOf", arg0);
             }
@@ -641,10 +641,10 @@ namespace Java.Lang.Invoke
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#methodName()"/>
             /// </summary>
 
-            /// <returns><see cref="string"/></returns>
-            public string MethodName()
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String MethodName()
             {
-                return IExecute<string>("methodName");
+                return IExecute<Java.Lang.String>("methodName");
             }
 
             #endregion

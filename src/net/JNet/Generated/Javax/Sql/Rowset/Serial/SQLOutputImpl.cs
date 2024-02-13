@@ -35,7 +35,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public SQLOutputImpl(Java.Util.Vector<object> arg0, Java.Util.Map<string, object> arg1)
+        public SQLOutputImpl(Java.Util.Vector<object> arg0, Java.Util.Map<Java.Lang.String, object> arg1)
             : base(arg0, arg1)
         {
         }
@@ -202,9 +202,9 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLOutputImpl.html#writeNString(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void WriteNString(string arg0)
+        public void WriteNString(Java.Lang.String arg0)
         {
             IExecute("writeNString", arg0);
         }
@@ -256,9 +256,9 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLOutputImpl.html#writeString(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void WriteString(string arg0)
+        public void WriteString(Java.Lang.String arg0)
         {
             IExecute("writeString", arg0);
         }

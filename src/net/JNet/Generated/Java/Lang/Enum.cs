@@ -53,9 +53,9 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#valueOf(java.lang.Class,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Enum"/></returns>
-        public static Java.Lang.Enum ValueOf(Java.Lang.Class arg0, string arg1)
+        public static Java.Lang.Enum ValueOf(Java.Lang.Class arg0, Java.Lang.String arg1)
         {
             return SExecute<Java.Lang.Enum>(LocalBridgeClazz, "valueOf", arg0, arg1);
         }
@@ -92,10 +92,10 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#name()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        public string Name()
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String Name()
         {
-            return IExecute<string>("name");
+            return IExecute<Java.Lang.String>("name");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#compareTo(java.lang.Object)"/>
@@ -149,10 +149,10 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#valueOf(java.lang.Class,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <typeparam name="T"><see cref="Java.Lang.Enum{T}"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public static T ValueOf<T>(Java.Lang.Class arg0, string arg1) where T: Java.Lang.Enum<T>
+        public static T ValueOf<T>(Java.Lang.Class arg0, Java.Lang.String arg1) where T: Java.Lang.Enum<T>
         {
             return SExecute<T>(LocalBridgeClazz, "valueOf", arg0, arg1);
         }
@@ -189,10 +189,10 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#name()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        public string Name()
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String Name()
         {
-            return IExecute<string>("name");
+            return IExecute<Java.Lang.String>("name");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#compareTo(java.lang.Object)"/>

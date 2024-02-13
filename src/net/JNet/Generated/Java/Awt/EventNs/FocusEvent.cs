@@ -223,9 +223,9 @@ namespace Java.Awt.EventNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Awt.EventNs.FocusEvent.Cause"/></returns>
-            public static Java.Awt.EventNs.FocusEvent.Cause ValueOf(string arg0)
+            public static Java.Awt.EventNs.FocusEvent.Cause ValueOf(Java.Lang.String arg0)
             {
                 return SExecute<Java.Awt.EventNs.FocusEvent.Cause>(LocalBridgeClazz, "valueOf", arg0);
             }

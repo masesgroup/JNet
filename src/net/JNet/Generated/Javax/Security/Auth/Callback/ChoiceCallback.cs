@@ -32,11 +32,11 @@ namespace Javax.Security.Auth.Callback
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ChoiceCallback.html#%3Cinit%3E(java.lang.String,java.lang.String[],int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="bool"/></param>
-        public ChoiceCallback(string arg0, string[] arg1, int arg2, bool arg3)
+        public ChoiceCallback(Java.Lang.String arg0, Java.Lang.String[] arg1, int arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
@@ -67,9 +67,9 @@ namespace Javax.Security.Auth.Callback
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ChoiceCallback.html#getChoices()"/> 
         /// </summary>
-        public string[] Choices
+        public Java.Lang.String[] Choices
         {
-            get { return IExecuteArray<string>("getChoices"); }
+            get { return IExecuteArray<Java.Lang.String>("getChoices"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ChoiceCallback.html#getDefaultChoice()"/> 
@@ -81,9 +81,9 @@ namespace Javax.Security.Auth.Callback
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ChoiceCallback.html#getPrompt()"/> 
         /// </summary>
-        public string Prompt
+        public Java.Lang.String Prompt
         {
-            get { return IExecute<string>("getPrompt"); }
+            get { return IExecute<Java.Lang.String>("getPrompt"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ChoiceCallback.html#getSelectedIndexes()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ChoiceCallback.html#setSelectedIndexes(int[])"/>

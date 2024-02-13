@@ -33,8 +33,8 @@ namespace Javax.Xml.Transform.Dom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/dom/DOMResult.html#%3Cinit%3E(org.w3c.dom.Node,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public DOMResult(Org.W3c.Dom.Node arg0, string arg1)
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public DOMResult(Org.W3c.Dom.Node arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
         }
@@ -43,8 +43,8 @@ namespace Javax.Xml.Transform.Dom
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
         /// <param name="arg1"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
-        public DOMResult(Org.W3c.Dom.Node arg0, Org.W3c.Dom.Node arg1, string arg2)
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        public DOMResult(Org.W3c.Dom.Node arg0, Org.W3c.Dom.Node arg1, Java.Lang.String arg2)
             : base(arg0, arg1, arg2)
         {
         }
@@ -76,8 +76,8 @@ namespace Javax.Xml.Transform.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/dom/DOMResult.html#FEATURE"/>
         /// </summary>
-        public static string FEATURE { get { if (!_FEATUREReady) { _FEATUREContent = SGetField<string>(LocalBridgeClazz, "FEATURE"); _FEATUREReady = true; } return _FEATUREContent; } }
-        private static string _FEATUREContent = default;
+        public static Java.Lang.String FEATURE { get { if (!_FEATUREReady) { _FEATUREContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE"); _FEATUREReady = true; } return _FEATUREContent; } }
+        private static Java.Lang.String _FEATUREContent = default;
         private static bool _FEATUREReady = false; // this is used because in case of generics 
 
         #endregion
@@ -104,9 +104,9 @@ namespace Javax.Xml.Transform.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/dom/DOMResult.html#getSystemId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/dom/DOMResult.html#setSystemId(java.lang.String)"/>
         /// </summary>
-        public string SystemId
+        public Java.Lang.String SystemId
         {
-            get { return IExecute<string>("getSystemId"); } set { IExecute("setSystemId", value); }
+            get { return IExecute<Java.Lang.String>("getSystemId"); } set { IExecute("setSystemId", value); }
         }
 
         #endregion

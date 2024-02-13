@@ -54,23 +54,23 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#getClassName()"/> 
         /// </summary>
-        public string ClassName
+        public Java.Lang.String ClassName
         {
-            get { return IExecute<string>("getClassName"); }
+            get { return IExecute<Java.Lang.String>("getClassName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#getDescription()"/> 
         /// </summary>
-        public string Description
+        public Java.Lang.String Description
         {
-            get { return IExecute<string>("getDescription"); }
+            get { return IExecute<Java.Lang.String>("getDescription"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#getTypeName()"/> 
         /// </summary>
-        public string TypeName
+        public Java.Lang.String TypeName
         {
-            get { return IExecute<string>("getTypeName"); }
+            get { return IExecute<Java.Lang.String>("getTypeName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#isValue(java.lang.Object)"/>
@@ -120,8 +120,8 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#ALLOWED_CLASSNAMES_LIST"/>
         /// </summary>
-        public static Java.Util.List<string> ALLOWED_CLASSNAMES_LIST { get { if (!_ALLOWED_CLASSNAMES_LISTReady) { _ALLOWED_CLASSNAMES_LISTContent = SGetField<Java.Util.List<string>>(LocalBridgeClazz, "ALLOWED_CLASSNAMES_LIST"); _ALLOWED_CLASSNAMES_LISTReady = true; } return _ALLOWED_CLASSNAMES_LISTContent; } }
-        private static Java.Util.List<string> _ALLOWED_CLASSNAMES_LISTContent = default;
+        public static Java.Util.List<Java.Lang.String> ALLOWED_CLASSNAMES_LIST { get { if (!_ALLOWED_CLASSNAMES_LISTReady) { _ALLOWED_CLASSNAMES_LISTContent = SGetField<Java.Util.List<Java.Lang.String>>(LocalBridgeClazz, "ALLOWED_CLASSNAMES_LIST"); _ALLOWED_CLASSNAMES_LISTReady = true; } return _ALLOWED_CLASSNAMES_LISTContent; } }
+        private static Java.Util.List<Java.Lang.String> _ALLOWED_CLASSNAMES_LISTContent = default;
         private static bool _ALLOWED_CLASSNAMES_LISTReady = false; // this is used because in case of generics 
 
         #endregion
@@ -134,23 +134,23 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#getClassName()"/> 
         /// </summary>
-        public string ClassName
+        public Java.Lang.String ClassName
         {
-            get { return IExecute<string>("getClassName"); }
+            get { return IExecute<Java.Lang.String>("getClassName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#getDescription()"/> 
         /// </summary>
-        public string Description
+        public Java.Lang.String Description
         {
-            get { return IExecute<string>("getDescription"); }
+            get { return IExecute<Java.Lang.String>("getDescription"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#getTypeName()"/> 
         /// </summary>
-        public string TypeName
+        public Java.Lang.String TypeName
         {
-            get { return IExecute<string>("getTypeName"); }
+            get { return IExecute<Java.Lang.String>("getTypeName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#isValue(java.lang.Object)"/>

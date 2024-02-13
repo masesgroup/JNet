@@ -39,22 +39,22 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#getNameInNamespace()"/> 
         /// </summary>
-        string NameInNamespace { get; }
+        Java.Lang.String NameInNamespace { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#addToEnvironment(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        object AddToEnvironment(string arg0, object arg1);
+        object AddToEnvironment(Java.Lang.String arg0, object arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#lookup(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        object Lookup(string arg0);
+        object Lookup(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#lookup(javax.naming.Name)"/>
         /// </summary>
@@ -65,10 +65,10 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#lookupLink(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        object LookupLink(string arg0);
+        object LookupLink(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#lookupLink(javax.naming.Name)"/>
         /// </summary>
@@ -79,25 +79,25 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#removeFromEnvironment(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        object RemoveFromEnvironment(string arg0);
+        object RemoveFromEnvironment(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#composeName(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        string ComposeName(string arg0, string arg1);
+        Java.Lang.String ComposeName(Java.Lang.String arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#createSubcontext(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Naming.Context"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        Javax.Naming.Context CreateSubcontext(string arg0);
+        Javax.Naming.Context CreateSubcontext(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#createSubcontext(javax.naming.Name)"/>
         /// </summary>
@@ -116,10 +116,10 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#getNameParser(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Naming.NameParser"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        Javax.Naming.NameParser GetNameParser(string arg0);
+        Javax.Naming.NameParser GetNameParser(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#getNameParser(javax.naming.Name)"/>
         /// </summary>
@@ -130,10 +130,10 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#listBindings(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Naming.NamingEnumeration"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        Javax.Naming.NamingEnumeration<Javax.Naming.Binding> ListBindings(string arg0);
+        Javax.Naming.NamingEnumeration<Javax.Naming.Binding> ListBindings(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#listBindings(javax.naming.Name)"/>
         /// </summary>
@@ -144,10 +144,10 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#list(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Naming.NamingEnumeration"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        Javax.Naming.NamingEnumeration<Javax.Naming.NameClassPair> List(string arg0);
+        Javax.Naming.NamingEnumeration<Javax.Naming.NameClassPair> List(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#list(javax.naming.Name)"/>
         /// </summary>
@@ -158,10 +158,10 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#bind(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <exception cref="Javax.Naming.NamingException"/>
-        void Bind(string arg0, object arg1);
+        void Bind(Java.Lang.String arg0, object arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#bind(javax.naming.Name,java.lang.Object)"/>
         /// </summary>
@@ -178,9 +178,9 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#destroySubcontext(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Javax.Naming.NamingException"/>
-        void DestroySubcontext(string arg0);
+        void DestroySubcontext(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#destroySubcontext(javax.naming.Name)"/>
         /// </summary>
@@ -190,10 +190,10 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#rebind(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <exception cref="Javax.Naming.NamingException"/>
-        void Rebind(string arg0, object arg1);
+        void Rebind(Java.Lang.String arg0, object arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#rebind(javax.naming.Name,java.lang.Object)"/>
         /// </summary>
@@ -204,10 +204,10 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#rename(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Javax.Naming.NamingException"/>
-        void Rename(string arg0, string arg1);
+        void Rename(Java.Lang.String arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#rename(javax.naming.Name,javax.naming.Name)"/>
         /// </summary>
@@ -218,9 +218,9 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#unbind(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Javax.Naming.NamingException"/>
-        void Unbind(string arg0);
+        void Unbind(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#unbind(javax.naming.Name)"/>
         /// </summary>
@@ -253,86 +253,86 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#AUTHORITATIVE"/>
         /// </summary>
-        public static string AUTHORITATIVE { get { if (!_AUTHORITATIVEReady) { _AUTHORITATIVEContent = SGetField<string>(LocalBridgeClazz, "AUTHORITATIVE"); _AUTHORITATIVEReady = true; } return _AUTHORITATIVEContent; } }
-        private static string _AUTHORITATIVEContent = default;
+        public static Java.Lang.String AUTHORITATIVE { get { if (!_AUTHORITATIVEReady) { _AUTHORITATIVEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "AUTHORITATIVE"); _AUTHORITATIVEReady = true; } return _AUTHORITATIVEContent; } }
+        private static Java.Lang.String _AUTHORITATIVEContent = default;
         private static bool _AUTHORITATIVEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#BATCHSIZE"/>
         /// </summary>
-        public static string BATCHSIZE { get { if (!_BATCHSIZEReady) { _BATCHSIZEContent = SGetField<string>(LocalBridgeClazz, "BATCHSIZE"); _BATCHSIZEReady = true; } return _BATCHSIZEContent; } }
-        private static string _BATCHSIZEContent = default;
+        public static Java.Lang.String BATCHSIZE { get { if (!_BATCHSIZEReady) { _BATCHSIZEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "BATCHSIZE"); _BATCHSIZEReady = true; } return _BATCHSIZEContent; } }
+        private static Java.Lang.String _BATCHSIZEContent = default;
         private static bool _BATCHSIZEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#DNS_URL"/>
         /// </summary>
-        public static string DNS_URL { get { if (!_DNS_URLReady) { _DNS_URLContent = SGetField<string>(LocalBridgeClazz, "DNS_URL"); _DNS_URLReady = true; } return _DNS_URLContent; } }
-        private static string _DNS_URLContent = default;
+        public static Java.Lang.String DNS_URL { get { if (!_DNS_URLReady) { _DNS_URLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DNS_URL"); _DNS_URLReady = true; } return _DNS_URLContent; } }
+        private static Java.Lang.String _DNS_URLContent = default;
         private static bool _DNS_URLReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#INITIAL_CONTEXT_FACTORY"/>
         /// </summary>
-        public static string INITIAL_CONTEXT_FACTORY { get { if (!_INITIAL_CONTEXT_FACTORYReady) { _INITIAL_CONTEXT_FACTORYContent = SGetField<string>(LocalBridgeClazz, "INITIAL_CONTEXT_FACTORY"); _INITIAL_CONTEXT_FACTORYReady = true; } return _INITIAL_CONTEXT_FACTORYContent; } }
-        private static string _INITIAL_CONTEXT_FACTORYContent = default;
+        public static Java.Lang.String INITIAL_CONTEXT_FACTORY { get { if (!_INITIAL_CONTEXT_FACTORYReady) { _INITIAL_CONTEXT_FACTORYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "INITIAL_CONTEXT_FACTORY"); _INITIAL_CONTEXT_FACTORYReady = true; } return _INITIAL_CONTEXT_FACTORYContent; } }
+        private static Java.Lang.String _INITIAL_CONTEXT_FACTORYContent = default;
         private static bool _INITIAL_CONTEXT_FACTORYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#LANGUAGE"/>
         /// </summary>
-        public static string LANGUAGE { get { if (!_LANGUAGEReady) { _LANGUAGEContent = SGetField<string>(LocalBridgeClazz, "LANGUAGE"); _LANGUAGEReady = true; } return _LANGUAGEContent; } }
-        private static string _LANGUAGEContent = default;
+        public static Java.Lang.String LANGUAGE { get { if (!_LANGUAGEReady) { _LANGUAGEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "LANGUAGE"); _LANGUAGEReady = true; } return _LANGUAGEContent; } }
+        private static Java.Lang.String _LANGUAGEContent = default;
         private static bool _LANGUAGEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#OBJECT_FACTORIES"/>
         /// </summary>
-        public static string OBJECT_FACTORIES { get { if (!_OBJECT_FACTORIESReady) { _OBJECT_FACTORIESContent = SGetField<string>(LocalBridgeClazz, "OBJECT_FACTORIES"); _OBJECT_FACTORIESReady = true; } return _OBJECT_FACTORIESContent; } }
-        private static string _OBJECT_FACTORIESContent = default;
+        public static Java.Lang.String OBJECT_FACTORIES { get { if (!_OBJECT_FACTORIESReady) { _OBJECT_FACTORIESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "OBJECT_FACTORIES"); _OBJECT_FACTORIESReady = true; } return _OBJECT_FACTORIESContent; } }
+        private static Java.Lang.String _OBJECT_FACTORIESContent = default;
         private static bool _OBJECT_FACTORIESReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#PROVIDER_URL"/>
         /// </summary>
-        public static string PROVIDER_URL { get { if (!_PROVIDER_URLReady) { _PROVIDER_URLContent = SGetField<string>(LocalBridgeClazz, "PROVIDER_URL"); _PROVIDER_URLReady = true; } return _PROVIDER_URLContent; } }
-        private static string _PROVIDER_URLContent = default;
+        public static Java.Lang.String PROVIDER_URL { get { if (!_PROVIDER_URLReady) { _PROVIDER_URLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PROVIDER_URL"); _PROVIDER_URLReady = true; } return _PROVIDER_URLContent; } }
+        private static Java.Lang.String _PROVIDER_URLContent = default;
         private static bool _PROVIDER_URLReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#REFERRAL"/>
         /// </summary>
-        public static string REFERRAL { get { if (!_REFERRALReady) { _REFERRALContent = SGetField<string>(LocalBridgeClazz, "REFERRAL"); _REFERRALReady = true; } return _REFERRALContent; } }
-        private static string _REFERRALContent = default;
+        public static Java.Lang.String REFERRAL { get { if (!_REFERRALReady) { _REFERRALContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "REFERRAL"); _REFERRALReady = true; } return _REFERRALContent; } }
+        private static Java.Lang.String _REFERRALContent = default;
         private static bool _REFERRALReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#SECURITY_AUTHENTICATION"/>
         /// </summary>
-        public static string SECURITY_AUTHENTICATION { get { if (!_SECURITY_AUTHENTICATIONReady) { _SECURITY_AUTHENTICATIONContent = SGetField<string>(LocalBridgeClazz, "SECURITY_AUTHENTICATION"); _SECURITY_AUTHENTICATIONReady = true; } return _SECURITY_AUTHENTICATIONContent; } }
-        private static string _SECURITY_AUTHENTICATIONContent = default;
+        public static Java.Lang.String SECURITY_AUTHENTICATION { get { if (!_SECURITY_AUTHENTICATIONReady) { _SECURITY_AUTHENTICATIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SECURITY_AUTHENTICATION"); _SECURITY_AUTHENTICATIONReady = true; } return _SECURITY_AUTHENTICATIONContent; } }
+        private static Java.Lang.String _SECURITY_AUTHENTICATIONContent = default;
         private static bool _SECURITY_AUTHENTICATIONReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#SECURITY_CREDENTIALS"/>
         /// </summary>
-        public static string SECURITY_CREDENTIALS { get { if (!_SECURITY_CREDENTIALSReady) { _SECURITY_CREDENTIALSContent = SGetField<string>(LocalBridgeClazz, "SECURITY_CREDENTIALS"); _SECURITY_CREDENTIALSReady = true; } return _SECURITY_CREDENTIALSContent; } }
-        private static string _SECURITY_CREDENTIALSContent = default;
+        public static Java.Lang.String SECURITY_CREDENTIALS { get { if (!_SECURITY_CREDENTIALSReady) { _SECURITY_CREDENTIALSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SECURITY_CREDENTIALS"); _SECURITY_CREDENTIALSReady = true; } return _SECURITY_CREDENTIALSContent; } }
+        private static Java.Lang.String _SECURITY_CREDENTIALSContent = default;
         private static bool _SECURITY_CREDENTIALSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#SECURITY_PRINCIPAL"/>
         /// </summary>
-        public static string SECURITY_PRINCIPAL { get { if (!_SECURITY_PRINCIPALReady) { _SECURITY_PRINCIPALContent = SGetField<string>(LocalBridgeClazz, "SECURITY_PRINCIPAL"); _SECURITY_PRINCIPALReady = true; } return _SECURITY_PRINCIPALContent; } }
-        private static string _SECURITY_PRINCIPALContent = default;
+        public static Java.Lang.String SECURITY_PRINCIPAL { get { if (!_SECURITY_PRINCIPALReady) { _SECURITY_PRINCIPALContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SECURITY_PRINCIPAL"); _SECURITY_PRINCIPALReady = true; } return _SECURITY_PRINCIPALContent; } }
+        private static Java.Lang.String _SECURITY_PRINCIPALContent = default;
         private static bool _SECURITY_PRINCIPALReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#SECURITY_PROTOCOL"/>
         /// </summary>
-        public static string SECURITY_PROTOCOL { get { if (!_SECURITY_PROTOCOLReady) { _SECURITY_PROTOCOLContent = SGetField<string>(LocalBridgeClazz, "SECURITY_PROTOCOL"); _SECURITY_PROTOCOLReady = true; } return _SECURITY_PROTOCOLContent; } }
-        private static string _SECURITY_PROTOCOLContent = default;
+        public static Java.Lang.String SECURITY_PROTOCOL { get { if (!_SECURITY_PROTOCOLReady) { _SECURITY_PROTOCOLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SECURITY_PROTOCOL"); _SECURITY_PROTOCOLReady = true; } return _SECURITY_PROTOCOLContent; } }
+        private static Java.Lang.String _SECURITY_PROTOCOLContent = default;
         private static bool _SECURITY_PROTOCOLReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#STATE_FACTORIES"/>
         /// </summary>
-        public static string STATE_FACTORIES { get { if (!_STATE_FACTORIESReady) { _STATE_FACTORIESContent = SGetField<string>(LocalBridgeClazz, "STATE_FACTORIES"); _STATE_FACTORIESReady = true; } return _STATE_FACTORIESContent; } }
-        private static string _STATE_FACTORIESContent = default;
+        public static Java.Lang.String STATE_FACTORIES { get { if (!_STATE_FACTORIESReady) { _STATE_FACTORIESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "STATE_FACTORIES"); _STATE_FACTORIESReady = true; } return _STATE_FACTORIESContent; } }
+        private static Java.Lang.String _STATE_FACTORIESContent = default;
         private static bool _STATE_FACTORIESReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#URL_PKG_PREFIXES"/>
         /// </summary>
-        public static string URL_PKG_PREFIXES { get { if (!_URL_PKG_PREFIXESReady) { _URL_PKG_PREFIXESContent = SGetField<string>(LocalBridgeClazz, "URL_PKG_PREFIXES"); _URL_PKG_PREFIXESReady = true; } return _URL_PKG_PREFIXESContent; } }
-        private static string _URL_PKG_PREFIXESContent = default;
+        public static Java.Lang.String URL_PKG_PREFIXES { get { if (!_URL_PKG_PREFIXESReady) { _URL_PKG_PREFIXESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "URL_PKG_PREFIXES"); _URL_PKG_PREFIXESReady = true; } return _URL_PKG_PREFIXESContent; } }
+        private static Java.Lang.String _URL_PKG_PREFIXESContent = default;
         private static bool _URL_PKG_PREFIXESReady = false; // this is used because in case of generics 
 
         #endregion
@@ -352,28 +352,28 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#getNameInNamespace()"/> 
         /// </summary>
-        public string NameInNamespace
+        public Java.Lang.String NameInNamespace
         {
-            get { return IExecute<string>("getNameInNamespace"); }
+            get { return IExecute<Java.Lang.String>("getNameInNamespace"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#addToEnvironment(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public object AddToEnvironment(string arg0, object arg1)
+        public object AddToEnvironment(Java.Lang.String arg0, object arg1)
         {
             return IExecute("addToEnvironment", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#lookup(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public object Lookup(string arg0)
+        public object Lookup(Java.Lang.String arg0)
         {
             return IExecute("lookup", arg0);
         }
@@ -390,10 +390,10 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#lookupLink(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public object LookupLink(string arg0)
+        public object LookupLink(Java.Lang.String arg0)
         {
             return IExecute("lookupLink", arg0);
         }
@@ -410,31 +410,31 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#removeFromEnvironment(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public object RemoveFromEnvironment(string arg0)
+        public object RemoveFromEnvironment(Java.Lang.String arg0)
         {
             return IExecute("removeFromEnvironment", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#composeName(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public string ComposeName(string arg0, string arg1)
+        public Java.Lang.String ComposeName(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<string>("composeName", arg0, arg1);
+            return IExecute<Java.Lang.String>("composeName", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#createSubcontext(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Naming.Context"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public Javax.Naming.Context CreateSubcontext(string arg0)
+        public Javax.Naming.Context CreateSubcontext(Java.Lang.String arg0)
         {
             return IExecute<Javax.Naming.Context>("createSubcontext", arg0);
         }
@@ -462,10 +462,10 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#getNameParser(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Naming.NameParser"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public Javax.Naming.NameParser GetNameParser(string arg0)
+        public Javax.Naming.NameParser GetNameParser(Java.Lang.String arg0)
         {
             return IExecute<Javax.Naming.NameParser>("getNameParser", arg0);
         }
@@ -482,10 +482,10 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#listBindings(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Naming.NamingEnumeration"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public Javax.Naming.NamingEnumeration<Javax.Naming.Binding> ListBindings(string arg0)
+        public Javax.Naming.NamingEnumeration<Javax.Naming.Binding> ListBindings(Java.Lang.String arg0)
         {
             return IExecute<Javax.Naming.NamingEnumeration<Javax.Naming.Binding>>("listBindings", arg0);
         }
@@ -502,10 +502,10 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#list(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Naming.NamingEnumeration"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public Javax.Naming.NamingEnumeration<Javax.Naming.NameClassPair> List(string arg0)
+        public Javax.Naming.NamingEnumeration<Javax.Naming.NameClassPair> List(Java.Lang.String arg0)
         {
             return IExecute<Javax.Naming.NamingEnumeration<Javax.Naming.NameClassPair>>("list", arg0);
         }
@@ -522,10 +522,10 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#bind(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public void Bind(string arg0, object arg1)
+        public void Bind(Java.Lang.String arg0, object arg1)
         {
             IExecute("bind", arg0, arg1);
         }
@@ -551,9 +551,9 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#destroySubcontext(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public void DestroySubcontext(string arg0)
+        public void DestroySubcontext(Java.Lang.String arg0)
         {
             IExecute("destroySubcontext", arg0);
         }
@@ -569,10 +569,10 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#rebind(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public void Rebind(string arg0, object arg1)
+        public void Rebind(Java.Lang.String arg0, object arg1)
         {
             IExecute("rebind", arg0, arg1);
         }
@@ -589,10 +589,10 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#rename(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public void Rename(string arg0, string arg1)
+        public void Rename(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             IExecute("rename", arg0, arg1);
         }
@@ -609,9 +609,9 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#unbind(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public void Unbind(string arg0)
+        public void Unbind(Java.Lang.String arg0)
         {
             IExecute("unbind", arg0);
         }

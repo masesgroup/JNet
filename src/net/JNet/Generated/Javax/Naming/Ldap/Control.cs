@@ -39,7 +39,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Control.html#getID()"/> 
         /// </summary>
-        string ID { get; }
+        Java.Lang.String ID { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Control.html#isCritical()"/>
         /// </summary>
@@ -99,9 +99,9 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Control.html#getID()"/> 
         /// </summary>
-        public string ID
+        public Java.Lang.String ID
         {
-            get { return IExecute<string>("getID"); }
+            get { return IExecute<Java.Lang.String>("getID"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Control.html#isCritical()"/>

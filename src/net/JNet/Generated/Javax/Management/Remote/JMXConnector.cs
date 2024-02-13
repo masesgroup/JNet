@@ -35,7 +35,7 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#getConnectionId()"/> 
         /// </summary>
-        string ConnectionId { get; }
+        Java.Lang.String ConnectionId { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#getMBeanServerConnection()"/> 
         /// </summary>
@@ -71,7 +71,7 @@ namespace Javax.Management.Remote
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <exception cref="Java.Io.IOException"/>
-        void Connect(Java.Util.Map<string, object> arg0);
+        void Connect(Java.Util.Map<Java.Lang.String, object> arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#removeConnectionNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)"/>
         /// </summary>
@@ -112,8 +112,8 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#CREDENTIALS"/>
         /// </summary>
-        public static string CREDENTIALS { get { if (!_CREDENTIALSReady) { _CREDENTIALSContent = SGetField<string>(LocalBridgeClazz, "CREDENTIALS"); _CREDENTIALSReady = true; } return _CREDENTIALSContent; } }
-        private static string _CREDENTIALSContent = default;
+        public static Java.Lang.String CREDENTIALS { get { if (!_CREDENTIALSReady) { _CREDENTIALSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CREDENTIALS"); _CREDENTIALSReady = true; } return _CREDENTIALSContent; } }
+        private static Java.Lang.String _CREDENTIALSContent = default;
         private static bool _CREDENTIALSReady = false; // this is used because in case of generics 
 
         #endregion
@@ -126,9 +126,9 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#getConnectionId()"/> 
         /// </summary>
-        public string ConnectionId
+        public Java.Lang.String ConnectionId
         {
-            get { return IExecute<string>("getConnectionId"); }
+            get { return IExecute<Java.Lang.String>("getConnectionId"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#getMBeanServerConnection()"/> 
@@ -180,7 +180,7 @@ namespace Javax.Management.Remote
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <exception cref="Java.Io.IOException"/>
-        public void Connect(Java.Util.Map<string, object> arg0)
+        public void Connect(Java.Util.Map<Java.Lang.String, object> arg0)
         {
             IExecute("connect", arg0);
         }

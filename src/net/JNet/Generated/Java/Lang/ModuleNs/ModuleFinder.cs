@@ -35,9 +35,9 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#find(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Optional"/></returns>
-        Java.Util.Optional<Java.Lang.ModuleNs.ModuleReference> Find(string arg0);
+        Java.Util.Optional<Java.Lang.ModuleNs.ModuleReference> Find(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#findAll()"/>
         /// </summary>
@@ -105,9 +105,9 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#find(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<Java.Lang.ModuleNs.ModuleReference> Find(string arg0)
+        public Java.Util.Optional<Java.Lang.ModuleNs.ModuleReference> Find(Java.Lang.String arg0)
         {
             return IExecute<Java.Util.Optional<Java.Lang.ModuleNs.ModuleReference>>("find", arg0);
         }

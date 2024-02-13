@@ -259,9 +259,9 @@ namespace Javax.Lang.Model.Element
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Javax.Lang.Model.Element.ModuleElement.DirectiveKind"/></returns>
-            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind ValueOf(string arg0)
+            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind ValueOf(Java.Lang.String arg0)
             {
                 return SExecute<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>(LocalBridgeClazz, "valueOf", arg0);
             }

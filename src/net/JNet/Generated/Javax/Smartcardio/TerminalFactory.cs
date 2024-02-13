@@ -51,43 +51,43 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#getDefaultType()"/> 
         /// </summary>
-        public static string DefaultType
+        public static Java.Lang.String DefaultType
         {
-            get { return SExecute<string>(LocalBridgeClazz, "getDefaultType"); }
+            get { return SExecute<Java.Lang.String>(LocalBridgeClazz, "getDefaultType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#getInstance(java.lang.String,java.lang.Object,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Smartcardio.TerminalFactory"/></returns>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         /// <exception cref="Java.Security.NoSuchProviderException"/>
-        public static Javax.Smartcardio.TerminalFactory GetInstance(string arg0, object arg1, string arg2)
+        public static Javax.Smartcardio.TerminalFactory GetInstance(Java.Lang.String arg0, object arg1, Java.Lang.String arg2)
         {
             return SExecute<Javax.Smartcardio.TerminalFactory>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#getInstance(java.lang.String,java.lang.Object,java.security.Provider)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Java.Security.Provider"/></param>
         /// <returns><see cref="Javax.Smartcardio.TerminalFactory"/></returns>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        public static Javax.Smartcardio.TerminalFactory GetInstance(string arg0, object arg1, Java.Security.Provider arg2)
+        public static Javax.Smartcardio.TerminalFactory GetInstance(Java.Lang.String arg0, object arg1, Java.Security.Provider arg2)
         {
             return SExecute<Javax.Smartcardio.TerminalFactory>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#getInstance(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="Javax.Smartcardio.TerminalFactory"/></returns>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        public static Javax.Smartcardio.TerminalFactory GetInstance(string arg0, object arg1)
+        public static Javax.Smartcardio.TerminalFactory GetInstance(Java.Lang.String arg0, object arg1)
         {
             return SExecute<Javax.Smartcardio.TerminalFactory>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
@@ -105,9 +105,9 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#getType()"/> 
         /// </summary>
-        public string Type
+        public Java.Lang.String Type
         {
-            get { return IExecute<string>("getType"); }
+            get { return IExecute<Java.Lang.String>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#terminals()"/>

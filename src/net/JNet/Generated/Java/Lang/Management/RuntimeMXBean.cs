@@ -35,27 +35,27 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getBootClassPath()"/> 
         /// </summary>
-        string BootClassPath { get; }
+        Java.Lang.String BootClassPath { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getClassPath()"/> 
         /// </summary>
-        string ClassPath { get; }
+        Java.Lang.String ClassPath { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getInputArguments()"/> 
         /// </summary>
-        Java.Util.List<string> InputArguments { get; }
+        Java.Util.List<Java.Lang.String> InputArguments { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getLibraryPath()"/> 
         /// </summary>
-        string LibraryPath { get; }
+        Java.Lang.String LibraryPath { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getManagementSpecVersion()"/> 
         /// </summary>
-        string ManagementSpecVersion { get; }
+        Java.Lang.String ManagementSpecVersion { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getName()"/> 
         /// </summary>
-        string Name { get; }
+        Java.Lang.String Name { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getPid()"/> 
         /// </summary>
@@ -63,15 +63,15 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getSpecName()"/> 
         /// </summary>
-        string SpecName { get; }
+        Java.Lang.String SpecName { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getSpecVendor()"/> 
         /// </summary>
-        string SpecVendor { get; }
+        Java.Lang.String SpecVendor { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getSpecVersion()"/> 
         /// </summary>
-        string SpecVersion { get; }
+        Java.Lang.String SpecVersion { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getStartTime()"/> 
         /// </summary>
@@ -79,7 +79,7 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getSystemProperties()"/> 
         /// </summary>
-        Java.Util.Map<string, string> SystemProperties { get; }
+        Java.Util.Map<Java.Lang.String, Java.Lang.String> SystemProperties { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getUptime()"/> 
         /// </summary>
@@ -87,15 +87,15 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getVmName()"/> 
         /// </summary>
-        string VmName { get; }
+        Java.Lang.String VmName { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getVmVendor()"/> 
         /// </summary>
-        string VmVendor { get; }
+        Java.Lang.String VmVendor { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getVmVersion()"/> 
         /// </summary>
-        string VmVersion { get; }
+        Java.Lang.String VmVersion { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#isBootClassPathSupported()"/>
         /// </summary>
@@ -136,44 +136,44 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getBootClassPath()"/> 
         /// </summary>
-        public string BootClassPath
+        public Java.Lang.String BootClassPath
         {
-            get { return IExecute<string>("getBootClassPath"); }
+            get { return IExecute<Java.Lang.String>("getBootClassPath"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getClassPath()"/> 
         /// </summary>
-        public string ClassPath
+        public Java.Lang.String ClassPath
         {
-            get { return IExecute<string>("getClassPath"); }
+            get { return IExecute<Java.Lang.String>("getClassPath"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getInputArguments()"/> 
         /// </summary>
-        public Java.Util.List<string> InputArguments
+        public Java.Util.List<Java.Lang.String> InputArguments
         {
-            get { return IExecute<Java.Util.List<string>>("getInputArguments"); }
+            get { return IExecute<Java.Util.List<Java.Lang.String>>("getInputArguments"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getLibraryPath()"/> 
         /// </summary>
-        public string LibraryPath
+        public Java.Lang.String LibraryPath
         {
-            get { return IExecute<string>("getLibraryPath"); }
+            get { return IExecute<Java.Lang.String>("getLibraryPath"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getManagementSpecVersion()"/> 
         /// </summary>
-        public string ManagementSpecVersion
+        public Java.Lang.String ManagementSpecVersion
         {
-            get { return IExecute<string>("getManagementSpecVersion"); }
+            get { return IExecute<Java.Lang.String>("getManagementSpecVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getName()"/> 
         /// </summary>
-        public string Name
+        public Java.Lang.String Name
         {
-            get { return IExecute<string>("getName"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getPid()"/> 
@@ -185,23 +185,23 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getSpecName()"/> 
         /// </summary>
-        public string SpecName
+        public Java.Lang.String SpecName
         {
-            get { return IExecute<string>("getSpecName"); }
+            get { return IExecute<Java.Lang.String>("getSpecName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getSpecVendor()"/> 
         /// </summary>
-        public string SpecVendor
+        public Java.Lang.String SpecVendor
         {
-            get { return IExecute<string>("getSpecVendor"); }
+            get { return IExecute<Java.Lang.String>("getSpecVendor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getSpecVersion()"/> 
         /// </summary>
-        public string SpecVersion
+        public Java.Lang.String SpecVersion
         {
-            get { return IExecute<string>("getSpecVersion"); }
+            get { return IExecute<Java.Lang.String>("getSpecVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getStartTime()"/> 
@@ -213,9 +213,9 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getSystemProperties()"/> 
         /// </summary>
-        public Java.Util.Map<string, string> SystemProperties
+        public Java.Util.Map<Java.Lang.String, Java.Lang.String> SystemProperties
         {
-            get { return IExecute<Java.Util.Map<string, string>>("getSystemProperties"); }
+            get { return IExecute<Java.Util.Map<Java.Lang.String, Java.Lang.String>>("getSystemProperties"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getUptime()"/> 
@@ -227,23 +227,23 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getVmName()"/> 
         /// </summary>
-        public string VmName
+        public Java.Lang.String VmName
         {
-            get { return IExecute<string>("getVmName"); }
+            get { return IExecute<Java.Lang.String>("getVmName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getVmVendor()"/> 
         /// </summary>
-        public string VmVendor
+        public Java.Lang.String VmVendor
         {
-            get { return IExecute<string>("getVmVendor"); }
+            get { return IExecute<Java.Lang.String>("getVmVendor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getVmVersion()"/> 
         /// </summary>
-        public string VmVersion
+        public Java.Lang.String VmVersion
         {
-            get { return IExecute<string>("getVmVersion"); }
+            get { return IExecute<Java.Lang.String>("getVmVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#isBootClassPathSupported()"/>

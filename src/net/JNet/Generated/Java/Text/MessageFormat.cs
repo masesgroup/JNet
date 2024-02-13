@@ -32,17 +32,17 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#%3Cinit%3E(java.lang.String,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
-        public MessageFormat(string arg0, Java.Util.Locale arg1)
+        public MessageFormat(Java.Lang.String arg0, Java.Util.Locale arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public MessageFormat(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public MessageFormat(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -61,12 +61,12 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#format(java.lang.String,java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string Format(string arg0, params object[] arg1)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String Format(Java.Lang.String arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<string>(LocalBridgeClazz, "format", arg0); else return SExecute<string>(LocalBridgeClazz, "format", arg0, arg1);
+            if (arg1.Length == 0) return SExecute<Java.Lang.String>(LocalBridgeClazz, "format", arg0); else return SExecute<Java.Lang.String>(LocalBridgeClazz, "format", arg0, arg1);
         }
 
         #endregion
@@ -107,20 +107,20 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#parse(java.lang.String,java.text.ParsePosition)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Text.ParsePosition"/></param>
         /// <returns><see cref="object"/></returns>
-        public object[] Parse(string arg0, Java.Text.ParsePosition arg1)
+        public object[] Parse(Java.Lang.String arg0, Java.Text.ParsePosition arg1)
         {
             return IExecuteArray<object>("parse", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#parse(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Text.ParseException"/>
-        public object[] Parse(string arg0)
+        public object[] Parse(Java.Lang.String arg0)
         {
             return IExecuteArray<object>("parse", arg0);
         }
@@ -128,16 +128,16 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#toPattern()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        public string ToPattern()
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String ToPattern()
         {
-            return IExecute<string>("toPattern");
+            return IExecute<Java.Lang.String>("toPattern");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#applyPattern(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public void ApplyPattern(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void ApplyPattern(Java.Lang.String arg0)
         {
             IExecute("applyPattern", arg0);
         }

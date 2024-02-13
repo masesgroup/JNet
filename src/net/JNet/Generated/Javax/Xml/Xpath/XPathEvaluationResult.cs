@@ -131,9 +131,9 @@ namespace Javax.Xml.Xpath
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType"/></returns>
-            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType ValueOf(string arg0)
+            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType ValueOf(Java.Lang.String arg0)
             {
                 return SExecute<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalBridgeClazz, "valueOf", arg0);
             }

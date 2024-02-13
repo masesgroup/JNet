@@ -35,7 +35,7 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Attribute.html#getDTDType()"/> 
         /// </summary>
-        string DTDType { get; }
+        Java.Lang.String DTDType { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Attribute.html#getName()"/> 
         /// </summary>
@@ -43,7 +43,7 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Attribute.html#getValue()"/> 
         /// </summary>
-        string Value { get; }
+        Java.Lang.String Value { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Attribute.html#isSpecified()"/>
         /// </summary>
@@ -84,9 +84,9 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Attribute.html#getDTDType()"/> 
         /// </summary>
-        public string DTDType
+        public Java.Lang.String DTDType
         {
-            get { return IExecute<string>("getDTDType"); }
+            get { return IExecute<Java.Lang.String>("getDTDType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Attribute.html#getName()"/> 
@@ -98,9 +98,9 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Attribute.html#getValue()"/> 
         /// </summary>
-        public string Value
+        public Java.Lang.String Value
         {
-            get { return IExecute<string>("getValue"); }
+            get { return IExecute<Java.Lang.String>("getValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Attribute.html#isSpecified()"/>

@@ -123,10 +123,10 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getProperty(java.lang.String,java.awt.image.ImageObserver)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Awt.ImageNs.ImageObserver"/></param>
         /// <returns><see cref="object"/></returns>
-        public object GetProperty(string arg0, Java.Awt.ImageNs.ImageObserver arg1)
+        public object GetProperty(Java.Lang.String arg0, Java.Awt.ImageNs.ImageObserver arg1)
         {
             return IExecute("getProperty", arg0, arg1);
         }

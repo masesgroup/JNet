@@ -333,9 +333,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createTitledBorder(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Swing.Border.TitledBorder"/></returns>
-        public static Javax.Swing.Border.TitledBorder CreateTitledBorder(string arg0)
+        public static Javax.Swing.Border.TitledBorder CreateTitledBorder(Java.Lang.String arg0)
         {
             return SExecute<Javax.Swing.Border.TitledBorder>(LocalBridgeClazz, "createTitledBorder", arg0);
         }
@@ -343,13 +343,13 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createTitledBorder(javax.swing.border.Border,java.lang.String,int,int,java.awt.Font,java.awt.Color)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Java.Awt.Font"/></param>
         /// <param name="arg5"><see cref="Java.Awt.Color"/></param>
         /// <returns><see cref="Javax.Swing.Border.TitledBorder"/></returns>
-        public static Javax.Swing.Border.TitledBorder CreateTitledBorder(Javax.Swing.Border.Border arg0, string arg1, int arg2, int arg3, Java.Awt.Font arg4, Java.Awt.Color arg5)
+        public static Javax.Swing.Border.TitledBorder CreateTitledBorder(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Awt.Font arg4, Java.Awt.Color arg5)
         {
             return SExecute<Javax.Swing.Border.TitledBorder>(LocalBridgeClazz, "createTitledBorder", arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -357,12 +357,12 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createTitledBorder(javax.swing.border.Border,java.lang.String,int,int,java.awt.Font)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Java.Awt.Font"/></param>
         /// <returns><see cref="Javax.Swing.Border.TitledBorder"/></returns>
-        public static Javax.Swing.Border.TitledBorder CreateTitledBorder(Javax.Swing.Border.Border arg0, string arg1, int arg2, int arg3, Java.Awt.Font arg4)
+        public static Javax.Swing.Border.TitledBorder CreateTitledBorder(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Awt.Font arg4)
         {
             return SExecute<Javax.Swing.Border.TitledBorder>(LocalBridgeClazz, "createTitledBorder", arg0, arg1, arg2, arg3, arg4);
         }
@@ -370,11 +370,11 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createTitledBorder(javax.swing.border.Border,java.lang.String,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="Javax.Swing.Border.TitledBorder"/></returns>
-        public static Javax.Swing.Border.TitledBorder CreateTitledBorder(Javax.Swing.Border.Border arg0, string arg1, int arg2, int arg3)
+        public static Javax.Swing.Border.TitledBorder CreateTitledBorder(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3)
         {
             return SExecute<Javax.Swing.Border.TitledBorder>(LocalBridgeClazz, "createTitledBorder", arg0, arg1, arg2, arg3);
         }
@@ -382,9 +382,9 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createTitledBorder(javax.swing.border.Border,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Swing.Border.TitledBorder"/></returns>
-        public static Javax.Swing.Border.TitledBorder CreateTitledBorder(Javax.Swing.Border.Border arg0, string arg1)
+        public static Javax.Swing.Border.TitledBorder CreateTitledBorder(Javax.Swing.Border.Border arg0, Java.Lang.String arg1)
         {
             return SExecute<Javax.Swing.Border.TitledBorder>(LocalBridgeClazz, "createTitledBorder", arg0, arg1);
         }

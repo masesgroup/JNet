@@ -176,18 +176,18 @@ namespace Javax.Swing.Filechooser
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#createFileObject(java.io.File,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Io.File"/></returns>
-        public Java.Io.File CreateFileObject(Java.Io.File arg0, string arg1)
+        public Java.Io.File CreateFileObject(Java.Io.File arg0, Java.Lang.String arg1)
         {
             return IExecute<Java.Io.File>("createFileObject", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#createFileObject(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Io.File"/></returns>
-        public Java.Io.File CreateFileObject(string arg0)
+        public Java.Io.File CreateFileObject(Java.Lang.String arg0)
         {
             return IExecute<Java.Io.File>("createFileObject", arg0);
         }
@@ -195,9 +195,9 @@ namespace Javax.Swing.Filechooser
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getChild(java.io.File,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Io.File"/></returns>
-        public Java.Io.File GetChild(Java.Io.File arg0, string arg1)
+        public Java.Io.File GetChild(Java.Io.File arg0, Java.Lang.String arg1)
         {
             return IExecute<Java.Io.File>("getChild", arg0, arg1);
         }
@@ -243,19 +243,19 @@ namespace Javax.Swing.Filechooser
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getSystemDisplayName(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetSystemDisplayName(Java.Io.File arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSystemDisplayName(Java.Io.File arg0)
         {
-            return IExecute<string>("getSystemDisplayName", arg0);
+            return IExecute<Java.Lang.String>("getSystemDisplayName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getSystemTypeDescription(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetSystemTypeDescription(Java.Io.File arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSystemTypeDescription(Java.Io.File arg0)
         {
-            return IExecute<string>("getSystemTypeDescription", arg0);
+            return IExecute<Java.Lang.String>("getSystemTypeDescription", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getSystemIcon(java.io.File)"/>

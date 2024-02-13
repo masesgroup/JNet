@@ -183,10 +183,10 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatter.html#stringToValue(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="object"/></returns>
             /// <exception cref="Java.Text.ParseException"/>
-            public object StringToValue(string arg0)
+            public object StringToValue(Java.Lang.String arg0)
             {
                 return IExecute("stringToValue", arg0);
             }
@@ -194,11 +194,11 @@ namespace Javax.Swing
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatter.html#valueToString(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see cref="string"/></returns>
+            /// <returns><see cref="Java.Lang.String"/></returns>
             /// <exception cref="Java.Text.ParseException"/>
-            public string ValueToString(object arg0)
+            public Java.Lang.String ValueToString(object arg0)
             {
-                return IExecute<string>("valueToString", arg0);
+                return IExecute<Java.Lang.String>("valueToString", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatter.html#install(javax.swing.JFormattedTextField)"/>

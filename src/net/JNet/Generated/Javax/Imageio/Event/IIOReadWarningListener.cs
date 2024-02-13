@@ -36,8 +36,8 @@ namespace Javax.Imageio.Event
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadWarningListener.html#warningOccurred(javax.imageio.ImageReader,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Imageio.ImageReader"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        void WarningOccurred(Javax.Imageio.ImageReader arg0, string arg1);
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        void WarningOccurred(Javax.Imageio.ImageReader arg0, Java.Lang.String arg1);
 
         #endregion
 
@@ -82,20 +82,20 @@ namespace Javax.Imageio.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadWarningListener.html#warningOccurred(javax.imageio.ImageReader,java.lang.String)"/>
         /// </summary>
         /// <remarks>If <see cref="OnWarningOccurred"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Imageio.ImageReader, string> OnWarningOccurred { get; set; } = null;
+        public System.Action<Javax.Imageio.ImageReader, Java.Lang.String> OnWarningOccurred { get; set; } = null;
 
         void WarningOccurredEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {
             var methodToExecute = (OnWarningOccurred != null) ? OnWarningOccurred : WarningOccurred;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<string>(0));
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Lang.String>(0));
         }
 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadWarningListener.html#warningOccurred(javax.imageio.ImageReader,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Imageio.ImageReader"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public virtual void WarningOccurred(Javax.Imageio.ImageReader arg0, string arg1)
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public virtual void WarningOccurred(Javax.Imageio.ImageReader arg0, Java.Lang.String arg1)
         {
             
         }

@@ -185,21 +185,21 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getUIClass(java.lang.String,java.lang.ClassLoader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
         /// <typeparam name="ReturnExtendsJavax_Swing_Plaf_ComponentUI"><see cref="Javax.Swing.Plaf.ComponentUI"/></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
-        public Java.Lang.Class GetUIClass<ReturnExtendsJavax_Swing_Plaf_ComponentUI>(string arg0, Java.Lang.ClassLoader arg1) where ReturnExtendsJavax_Swing_Plaf_ComponentUI: Javax.Swing.Plaf.ComponentUI
+        public Java.Lang.Class GetUIClass<ReturnExtendsJavax_Swing_Plaf_ComponentUI>(Java.Lang.String arg0, Java.Lang.ClassLoader arg1) where ReturnExtendsJavax_Swing_Plaf_ComponentUI: Javax.Swing.Plaf.ComponentUI
         {
             return IExecute<Java.Lang.Class>("getUIClass", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getUIClass(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <typeparam name="ReturnExtendsJavax_Swing_Plaf_ComponentUI"><see cref="Javax.Swing.Plaf.ComponentUI"/></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
-        public Java.Lang.Class GetUIClass<ReturnExtendsJavax_Swing_Plaf_ComponentUI>(string arg0) where ReturnExtendsJavax_Swing_Plaf_ComponentUI: Javax.Swing.Plaf.ComponentUI
+        public Java.Lang.Class GetUIClass<ReturnExtendsJavax_Swing_Plaf_ComponentUI>(Java.Lang.String arg0) where ReturnExtendsJavax_Swing_Plaf_ComponentUI: Javax.Swing.Plaf.ComponentUI
         {
             return IExecute<Java.Lang.Class>("getUIClass", arg0);
         }
@@ -218,19 +218,19 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetString(object arg0, Java.Util.Locale arg1)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetString(object arg0, Java.Util.Locale arg1)
         {
-            return IExecute<string>("getString", arg0, arg1);
+            return IExecute<Java.Lang.String>("getString", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getString(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetString(object arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetString(object arg0)
         {
-            return IExecute<string>("getString", arg0);
+            return IExecute<Java.Lang.String>("getString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getBorder(java.lang.Object,java.util.Locale)"/>
@@ -290,8 +290,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#addResourceBundle(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public void AddResourceBundle(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void AddResourceBundle(Java.Lang.String arg0)
         {
             IExecute("addResourceBundle", arg0);
         }
@@ -306,8 +306,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#removeResourceBundle(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public void RemoveResourceBundle(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void RemoveResourceBundle(Java.Lang.String arg0)
         {
             IExecute("removeResourceBundle", arg0);
         }
@@ -450,17 +450,17 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.ProxyLazyValue.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
-            /// <param name="arg1"><see cref="string"/></param>
-            public ProxyLazyValue(string arg0, string arg1)
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+            public ProxyLazyValue(Java.Lang.String arg0, Java.Lang.String arg1)
                 : base(arg0, arg1)
             {
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.ProxyLazyValue.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
-            public ProxyLazyValue(string arg0)
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            public ProxyLazyValue(Java.Lang.String arg0)
                 : base(arg0)
             {
             }

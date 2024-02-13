@@ -36,11 +36,11 @@ namespace Org.W3c.Dom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/UserDataHandler.html#handle(short,java.lang.String,java.lang.Object,org.w3c.dom.Node,org.w3c.dom.Node)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="object"/></param>
         /// <param name="arg3"><see cref="Org.W3c.Dom.Node"/></param>
         /// <param name="arg4"><see cref="Org.W3c.Dom.Node"/></param>
-        void Handle(short arg0, string arg1, object arg2, Org.W3c.Dom.Node arg3, Org.W3c.Dom.Node arg4);
+        void Handle(short arg0, Java.Lang.String arg1, object arg2, Org.W3c.Dom.Node arg3, Org.W3c.Dom.Node arg4);
 
         #endregion
 
@@ -106,11 +106,11 @@ namespace Org.W3c.Dom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/UserDataHandler.html#handle(short,java.lang.String,java.lang.Object,org.w3c.dom.Node,org.w3c.dom.Node)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="object"/></param>
         /// <param name="arg3"><see cref="Org.W3c.Dom.Node"/></param>
         /// <param name="arg4"><see cref="Org.W3c.Dom.Node"/></param>
-        public void Handle(short arg0, string arg1, object arg2, Org.W3c.Dom.Node arg3, Org.W3c.Dom.Node arg4)
+        public void Handle(short arg0, Java.Lang.String arg1, object arg2, Org.W3c.Dom.Node arg3, Org.W3c.Dom.Node arg4)
         {
             IExecute("handle", arg0, arg1, arg2, arg3, arg4);
         }

@@ -44,23 +44,23 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLEncoder.html#encode(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Io.UnsupportedEncodingException"/>
-        public static string Encode(string arg0, string arg1)
+        public static Java.Lang.String Encode(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<string>(LocalBridgeClazz, "encode", arg0, arg1);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "encode", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLEncoder.html#encode(java.lang.String,java.nio.charset.Charset)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string Encode(string arg0, Java.Nio.Charset.Charset arg1)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String Encode(Java.Lang.String arg0, Java.Nio.Charset.Charset arg1)
         {
-            return SExecute<string>(LocalBridgeClazz, "encode", arg0, arg1);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "encode", arg0, arg1);
         }
 
         #endregion

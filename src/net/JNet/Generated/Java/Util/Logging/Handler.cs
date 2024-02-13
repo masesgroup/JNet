@@ -48,9 +48,9 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getEncoding()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setEncoding(java.lang.String)"/>
         /// </summary>
-        public string Encoding
+        public Java.Lang.String Encoding
         {
-            get { return IExecute<string>("getEncoding"); } set { IExecute("setEncoding", value); }
+            get { return IExecute<Java.Lang.String>("getEncoding"); } set { IExecute("setEncoding", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getErrorManager()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setErrorManager(java.util.logging.ErrorManager)"/>

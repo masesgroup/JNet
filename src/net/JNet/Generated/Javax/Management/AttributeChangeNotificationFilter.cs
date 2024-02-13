@@ -52,9 +52,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotificationFilter.html#getEnabledAttributes()"/> 
         /// </summary>
-        public Java.Util.Vector<string> EnabledAttributes
+        public Java.Util.Vector<Java.Lang.String> EnabledAttributes
         {
-            get { return IExecute<Java.Util.Vector<string>>("getEnabledAttributes"); }
+            get { return IExecute<Java.Util.Vector<Java.Lang.String>>("getEnabledAttributes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotificationFilter.html#isNotificationEnabled(javax.management.Notification)"/>
@@ -75,17 +75,17 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotificationFilter.html#disableAttribute(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public void DisableAttribute(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void DisableAttribute(Java.Lang.String arg0)
         {
             IExecute("disableAttribute", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotificationFilter.html#enableAttribute(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        public void EnableAttribute(string arg0)
+        public void EnableAttribute(Java.Lang.String arg0)
         {
             IExecute("enableAttribute", arg0);
         }

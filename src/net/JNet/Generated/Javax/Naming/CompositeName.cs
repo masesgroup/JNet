@@ -32,9 +32,9 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CompositeName.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Javax.Naming.InvalidNameException"/>
-        public CompositeName(string arg0)
+        public CompositeName(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -57,9 +57,9 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CompositeName.html#getAll()"/> 
         /// </summary>
-        public Java.Util.Enumeration<string> All
+        public Java.Util.Enumeration<Java.Lang.String> All
         {
-            get { return IExecute<Java.Util.Enumeration<string>>("getAll"); }
+            get { return IExecute<Java.Util.Enumeration<Java.Lang.String>>("getAll"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CompositeName.html#endsWith(javax.naming.Name)"/>
@@ -120,29 +120,29 @@ namespace Javax.Naming
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CompositeName.html#get(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string Get(int arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String Get(int arg0)
         {
-            return IExecute<string>("get", arg0);
+            return IExecute<Java.Lang.String>("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CompositeName.html#add(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Naming.Name"/></returns>
         /// <exception cref="Javax.Naming.InvalidNameException"/>
-        public Javax.Naming.Name Add(int arg0, string arg1)
+        public Javax.Naming.Name Add(int arg0, Java.Lang.String arg1)
         {
             return IExecute<Javax.Naming.Name>("add", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CompositeName.html#add(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Naming.Name"/></returns>
         /// <exception cref="Javax.Naming.InvalidNameException"/>
-        public Javax.Naming.Name Add(string arg0)
+        public Javax.Naming.Name Add(Java.Lang.String arg0)
         {
             return IExecute<Javax.Naming.Name>("add", arg0);
         }

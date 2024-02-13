@@ -68,9 +68,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PseudoColumnUsage.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.PseudoColumnUsage"/></returns>
-        public static Java.Sql.PseudoColumnUsage ValueOf(string arg0)
+        public static Java.Sql.PseudoColumnUsage ValueOf(Java.Lang.String arg0)
         {
             return SExecute<Java.Sql.PseudoColumnUsage>(LocalBridgeClazz, "valueOf", arg0);
         }

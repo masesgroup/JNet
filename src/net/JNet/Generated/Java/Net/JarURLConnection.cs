@@ -62,9 +62,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/JarURLConnection.html#getEntryName()"/> 
         /// </summary>
-        public string EntryName
+        public Java.Lang.String EntryName
         {
-            get { return IExecute<string>("getEntryName"); }
+            get { return IExecute<Java.Lang.String>("getEntryName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/JarURLConnection.html#getJarEntry()"/> 

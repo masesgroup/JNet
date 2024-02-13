@@ -48,9 +48,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRL.html#getType()"/> 
         /// </summary>
-        public string Type
+        public Java.Lang.String Type
         {
-            get { return IExecute<string>("getType"); }
+            get { return IExecute<Java.Lang.String>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRL.html#isRevoked(java.security.cert.Certificate)"/>

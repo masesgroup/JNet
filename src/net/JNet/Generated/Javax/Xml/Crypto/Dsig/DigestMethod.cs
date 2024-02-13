@@ -70,62 +70,62 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#RIPEMD160"/>
         /// </summary>
-        public static string RIPEMD160 { get { if (!_RIPEMD160Ready) { _RIPEMD160Content = SGetField<string>(LocalBridgeClazz, "RIPEMD160"); _RIPEMD160Ready = true; } return _RIPEMD160Content; } }
-        private static string _RIPEMD160Content = default;
+        public static Java.Lang.String RIPEMD160 { get { if (!_RIPEMD160Ready) { _RIPEMD160Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "RIPEMD160"); _RIPEMD160Ready = true; } return _RIPEMD160Content; } }
+        private static Java.Lang.String _RIPEMD160Content = default;
         private static bool _RIPEMD160Ready = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#SHA1"/>
         /// </summary>
-        public static string SHA1 { get { if (!_SHA1Ready) { _SHA1Content = SGetField<string>(LocalBridgeClazz, "SHA1"); _SHA1Ready = true; } return _SHA1Content; } }
-        private static string _SHA1Content = default;
+        public static Java.Lang.String SHA1 { get { if (!_SHA1Ready) { _SHA1Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "SHA1"); _SHA1Ready = true; } return _SHA1Content; } }
+        private static Java.Lang.String _SHA1Content = default;
         private static bool _SHA1Ready = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#SHA224"/>
         /// </summary>
-        public static string SHA224 { get { if (!_SHA224Ready) { _SHA224Content = SGetField<string>(LocalBridgeClazz, "SHA224"); _SHA224Ready = true; } return _SHA224Content; } }
-        private static string _SHA224Content = default;
+        public static Java.Lang.String SHA224 { get { if (!_SHA224Ready) { _SHA224Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "SHA224"); _SHA224Ready = true; } return _SHA224Content; } }
+        private static Java.Lang.String _SHA224Content = default;
         private static bool _SHA224Ready = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#SHA256"/>
         /// </summary>
-        public static string SHA256 { get { if (!_SHA256Ready) { _SHA256Content = SGetField<string>(LocalBridgeClazz, "SHA256"); _SHA256Ready = true; } return _SHA256Content; } }
-        private static string _SHA256Content = default;
+        public static Java.Lang.String SHA256 { get { if (!_SHA256Ready) { _SHA256Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "SHA256"); _SHA256Ready = true; } return _SHA256Content; } }
+        private static Java.Lang.String _SHA256Content = default;
         private static bool _SHA256Ready = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#SHA3_224"/>
         /// </summary>
-        public static string SHA3_224 { get { if (!_SHA3_224Ready) { _SHA3_224Content = SGetField<string>(LocalBridgeClazz, "SHA3_224"); _SHA3_224Ready = true; } return _SHA3_224Content; } }
-        private static string _SHA3_224Content = default;
+        public static Java.Lang.String SHA3_224 { get { if (!_SHA3_224Ready) { _SHA3_224Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "SHA3_224"); _SHA3_224Ready = true; } return _SHA3_224Content; } }
+        private static Java.Lang.String _SHA3_224Content = default;
         private static bool _SHA3_224Ready = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#SHA3_256"/>
         /// </summary>
-        public static string SHA3_256 { get { if (!_SHA3_256Ready) { _SHA3_256Content = SGetField<string>(LocalBridgeClazz, "SHA3_256"); _SHA3_256Ready = true; } return _SHA3_256Content; } }
-        private static string _SHA3_256Content = default;
+        public static Java.Lang.String SHA3_256 { get { if (!_SHA3_256Ready) { _SHA3_256Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "SHA3_256"); _SHA3_256Ready = true; } return _SHA3_256Content; } }
+        private static Java.Lang.String _SHA3_256Content = default;
         private static bool _SHA3_256Ready = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#SHA3_384"/>
         /// </summary>
-        public static string SHA3_384 { get { if (!_SHA3_384Ready) { _SHA3_384Content = SGetField<string>(LocalBridgeClazz, "SHA3_384"); _SHA3_384Ready = true; } return _SHA3_384Content; } }
-        private static string _SHA3_384Content = default;
+        public static Java.Lang.String SHA3_384 { get { if (!_SHA3_384Ready) { _SHA3_384Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "SHA3_384"); _SHA3_384Ready = true; } return _SHA3_384Content; } }
+        private static Java.Lang.String _SHA3_384Content = default;
         private static bool _SHA3_384Ready = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#SHA3_512"/>
         /// </summary>
-        public static string SHA3_512 { get { if (!_SHA3_512Ready) { _SHA3_512Content = SGetField<string>(LocalBridgeClazz, "SHA3_512"); _SHA3_512Ready = true; } return _SHA3_512Content; } }
-        private static string _SHA3_512Content = default;
+        public static Java.Lang.String SHA3_512 { get { if (!_SHA3_512Ready) { _SHA3_512Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "SHA3_512"); _SHA3_512Ready = true; } return _SHA3_512Content; } }
+        private static Java.Lang.String _SHA3_512Content = default;
         private static bool _SHA3_512Ready = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#SHA384"/>
         /// </summary>
-        public static string SHA384 { get { if (!_SHA384Ready) { _SHA384Content = SGetField<string>(LocalBridgeClazz, "SHA384"); _SHA384Ready = true; } return _SHA384Content; } }
-        private static string _SHA384Content = default;
+        public static Java.Lang.String SHA384 { get { if (!_SHA384Ready) { _SHA384Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "SHA384"); _SHA384Ready = true; } return _SHA384Content; } }
+        private static Java.Lang.String _SHA384Content = default;
         private static bool _SHA384Ready = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#SHA512"/>
         /// </summary>
-        public static string SHA512 { get { if (!_SHA512Ready) { _SHA512Content = SGetField<string>(LocalBridgeClazz, "SHA512"); _SHA512Ready = true; } return _SHA512Content; } }
-        private static string _SHA512Content = default;
+        public static Java.Lang.String SHA512 { get { if (!_SHA512Ready) { _SHA512Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "SHA512"); _SHA512Ready = true; } return _SHA512Content; } }
+        private static Java.Lang.String _SHA512Content = default;
         private static bool _SHA512Ready = false; // this is used because in case of generics 
 
         #endregion

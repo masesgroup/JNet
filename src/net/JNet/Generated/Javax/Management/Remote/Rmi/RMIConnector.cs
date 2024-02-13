@@ -34,7 +34,7 @@ namespace Javax.Management.Remote.Rmi
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.Remote.JMXServiceURL"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
-        public RMIConnector(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<string, object> arg1)
+        public RMIConnector(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<Java.Lang.String, object> arg1)
             : base(arg0, arg1)
         {
         }
@@ -43,7 +43,7 @@ namespace Javax.Management.Remote.Rmi
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.Remote.Rmi.RMIServer"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
-        public RMIConnector(Javax.Management.Remote.Rmi.RMIServer arg0, Java.Util.Map<string, object> arg1)
+        public RMIConnector(Javax.Management.Remote.Rmi.RMIServer arg0, Java.Util.Map<Java.Lang.String, object> arg1)
             : base(arg0, arg1)
         {
         }
@@ -85,9 +85,9 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html#getConnectionId()"/> 
         /// </summary>
-        public string ConnectionId
+        public Java.Lang.String ConnectionId
         {
-            get { return IExecute<string>("getConnectionId"); }
+            get { return IExecute<Java.Lang.String>("getConnectionId"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html#getMBeanServerConnection()"/> 
@@ -120,7 +120,7 @@ namespace Javax.Management.Remote.Rmi
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <exception cref="Java.Io.IOException"/>
-        public void Connect(Java.Util.Map<string, object> arg0)
+        public void Connect(Java.Util.Map<Java.Lang.String, object> arg0)
         {
             IExecute("connect", arg0);
         }

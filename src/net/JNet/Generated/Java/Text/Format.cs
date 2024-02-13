@@ -56,10 +56,10 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Format.html#parseObject(java.lang.String,java.text.ParsePosition)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Text.ParsePosition"/></param>
         /// <returns><see cref="object"/></returns>
-        public object ParseObject(string arg0, Java.Text.ParsePosition arg1)
+        public object ParseObject(Java.Lang.String arg0, Java.Text.ParsePosition arg1)
         {
             return IExecute("parseObject", arg0, arg1);
         }
@@ -78,18 +78,18 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Format.html#format(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string FormatMethod(object arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String FormatMethod(object arg0)
         {
-            return IExecute<string>("format", arg0);
+            return IExecute<Java.Lang.String>("format", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Format.html#parseObject(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Text.ParseException"/>
-        public object ParseObject(string arg0)
+        public object ParseObject(Java.Lang.String arg0)
         {
             return IExecute("parseObject", arg0);
         }

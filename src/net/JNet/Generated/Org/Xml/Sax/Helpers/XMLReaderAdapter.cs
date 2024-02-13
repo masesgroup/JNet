@@ -52,21 +52,21 @@ namespace Org.Xml.Sax.Helpers
         {
             AddEventHandler("characters", new System.EventHandler<CLRListenerEventArgs<CLREventData<char[]>>>(CharactersEventHandler));
             AddEventHandler("endDocument", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(EndDocumentEventHandler));
-            AddEventHandler("endElement", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(EndElementEventHandler));
-            AddEventHandler("endPrefixMapping", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(EndPrefixMappingEventHandler));
+            AddEventHandler("endElement", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(EndElementEventHandler));
+            AddEventHandler("endPrefixMapping", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(EndPrefixMappingEventHandler));
             AddEventHandler("ignorableWhitespace", new System.EventHandler<CLRListenerEventArgs<CLREventData<char[]>>>(IgnorableWhitespaceEventHandler));
-            AddEventHandler("parse", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(ParseEventHandler));
+            AddEventHandler("parse", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(ParseEventHandler));
             AddEventHandler("parse1", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.InputSource>>>(Parse1EventHandler));
-            AddEventHandler("processingInstruction", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(ProcessingInstructionEventHandler));
+            AddEventHandler("processingInstruction", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(ProcessingInstructionEventHandler));
             AddEventHandler("setDocumentLocator", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.Locator>>>(SetDocumentLocatorEventHandler));
             AddEventHandler("setDTDHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.DTDHandler>>>(SetDTDHandlerEventHandler));
             AddEventHandler("setEntityResolver", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.EntityResolver>>>(SetEntityResolverEventHandler));
             AddEventHandler("setErrorHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.ErrorHandler>>>(SetErrorHandlerEventHandler));
             AddEventHandler("setLocale", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Locale>>>(SetLocaleEventHandler));
-            AddEventHandler("skippedEntity", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(SkippedEntityEventHandler));
+            AddEventHandler("skippedEntity", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(SkippedEntityEventHandler));
             AddEventHandler("startDocument", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(StartDocumentEventHandler));
-            AddEventHandler("startElement", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(StartElementEventHandler));
-            AddEventHandler("startPrefixMapping", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(StartPrefixMappingEventHandler));
+            AddEventHandler("startElement", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(StartElementEventHandler));
+            AddEventHandler("startPrefixMapping", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(StartPrefixMappingEventHandler));
 
         }
 
@@ -120,22 +120,22 @@ namespace Org.Xml.Sax.Helpers
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#endElement(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <remarks>If <see cref="OnEndElement"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<string, string, string> OnEndElement { get; set; } = null;
+        public System.Action<Java.Lang.String, Java.Lang.String, Java.Lang.String> OnEndElement { get; set; } = null;
 
-        void EndElementEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
+        void EndElementEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
             var methodToExecute = (OnEndElement != null) ? OnEndElement : EndElement;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<string>(0), data.EventData.GetAt<string>(1));
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Lang.String>(0), data.EventData.GetAt<Java.Lang.String>(1));
         }
 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#endElement(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
-        public virtual void EndElement(string arg0, string arg1, string arg2)
+        public virtual void EndElement(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
             
         }
@@ -144,9 +144,9 @@ namespace Org.Xml.Sax.Helpers
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#endPrefixMapping(java.lang.String)"/>
         /// </summary>
         /// <remarks>If <see cref="OnEndPrefixMapping"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<string> OnEndPrefixMapping { get; set; } = null;
+        public System.Action<Java.Lang.String> OnEndPrefixMapping { get; set; } = null;
 
-        void EndPrefixMappingEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
+        void EndPrefixMappingEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
             var methodToExecute = (OnEndPrefixMapping != null) ? OnEndPrefixMapping : EndPrefixMapping;
             methodToExecute.Invoke(data.EventData.TypedEventData);
@@ -155,8 +155,8 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#endPrefixMapping(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public virtual void EndPrefixMapping(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public virtual void EndPrefixMapping(Java.Lang.String arg0)
         {
             
         }
@@ -189,9 +189,9 @@ namespace Org.Xml.Sax.Helpers
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#parse(java.lang.String)"/>
         /// </summary>
         /// <remarks>If <see cref="OnParse"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<string> OnParse { get; set; } = null;
+        public System.Action<Java.Lang.String> OnParse { get; set; } = null;
 
-        void ParseEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
+        void ParseEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
             var methodToExecute = (OnParse != null) ? OnParse : Parse;
             methodToExecute.Invoke(data.EventData.TypedEventData);
@@ -200,10 +200,10 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#parse(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Io.IOException"/>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
-        public virtual void Parse(string arg0)
+        public virtual void Parse(Java.Lang.String arg0)
         {
             
         }
@@ -235,21 +235,21 @@ namespace Org.Xml.Sax.Helpers
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#processingInstruction(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <remarks>If <see cref="OnProcessingInstruction"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<string, string> OnProcessingInstruction { get; set; } = null;
+        public System.Action<Java.Lang.String, Java.Lang.String> OnProcessingInstruction { get; set; } = null;
 
-        void ProcessingInstructionEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
+        void ProcessingInstructionEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
             var methodToExecute = (OnProcessingInstruction != null) ? OnProcessingInstruction : ProcessingInstruction;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<string>(0));
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Lang.String>(0));
         }
 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#processingInstruction(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
-        public virtual void ProcessingInstruction(string arg0, string arg1)
+        public virtual void ProcessingInstruction(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             
         }
@@ -364,9 +364,9 @@ namespace Org.Xml.Sax.Helpers
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#skippedEntity(java.lang.String)"/>
         /// </summary>
         /// <remarks>If <see cref="OnSkippedEntity"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<string> OnSkippedEntity { get; set; } = null;
+        public System.Action<Java.Lang.String> OnSkippedEntity { get; set; } = null;
 
-        void SkippedEntityEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
+        void SkippedEntityEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
             var methodToExecute = (OnSkippedEntity != null) ? OnSkippedEntity : SkippedEntity;
             methodToExecute.Invoke(data.EventData.TypedEventData);
@@ -375,9 +375,9 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#skippedEntity(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
-        public virtual void SkippedEntity(string arg0)
+        public virtual void SkippedEntity(Java.Lang.String arg0)
         {
             
         }
@@ -408,23 +408,23 @@ namespace Org.Xml.Sax.Helpers
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)"/>
         /// </summary>
         /// <remarks>If <see cref="OnStartElement"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<string, string, string, Org.Xml.Sax.Attributes> OnStartElement { get; set; } = null;
+        public System.Action<Java.Lang.String, Java.Lang.String, Java.Lang.String, Org.Xml.Sax.Attributes> OnStartElement { get; set; } = null;
 
-        void StartElementEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
+        void StartElementEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
             var methodToExecute = (OnStartElement != null) ? OnStartElement : StartElement;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<string>(0), data.EventData.GetAt<string>(1), data.EventData.GetAt<Org.Xml.Sax.Attributes>(2));
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Lang.String>(0), data.EventData.GetAt<Java.Lang.String>(1), data.EventData.GetAt<Org.Xml.Sax.Attributes>(2));
         }
 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="Org.Xml.Sax.Attributes"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
-        public virtual void StartElement(string arg0, string arg1, string arg2, Org.Xml.Sax.Attributes arg3)
+        public virtual void StartElement(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Org.Xml.Sax.Attributes arg3)
         {
             
         }
@@ -433,20 +433,20 @@ namespace Org.Xml.Sax.Helpers
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#startPrefixMapping(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <remarks>If <see cref="OnStartPrefixMapping"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<string, string> OnStartPrefixMapping { get; set; } = null;
+        public System.Action<Java.Lang.String, Java.Lang.String> OnStartPrefixMapping { get; set; } = null;
 
-        void StartPrefixMappingEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
+        void StartPrefixMappingEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
             var methodToExecute = (OnStartPrefixMapping != null) ? OnStartPrefixMapping : StartPrefixMapping;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<string>(0));
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Lang.String>(0));
         }
 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#startPrefixMapping(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public virtual void StartPrefixMapping(string arg0, string arg1)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public virtual void StartPrefixMapping(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             
         }

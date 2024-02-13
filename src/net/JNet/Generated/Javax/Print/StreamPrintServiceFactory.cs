@@ -45,9 +45,9 @@ namespace Javax.Print
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintServiceFactory.html#lookupStreamPrintServiceFactories(javax.print.DocFlavor,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Print.DocFlavor"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Print.StreamPrintServiceFactory"/></returns>
-        public static Javax.Print.StreamPrintServiceFactory[] LookupStreamPrintServiceFactories(Javax.Print.DocFlavor arg0, string arg1)
+        public static Javax.Print.StreamPrintServiceFactory[] LookupStreamPrintServiceFactories(Javax.Print.DocFlavor arg0, Java.Lang.String arg1)
         {
             return SExecuteArray<Javax.Print.StreamPrintServiceFactory>(LocalBridgeClazz, "lookupStreamPrintServiceFactories", arg0, arg1);
         }
@@ -58,9 +58,9 @@ namespace Javax.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintServiceFactory.html#getOutputFormat()"/> 
         /// </summary>
-        public string OutputFormat
+        public Java.Lang.String OutputFormat
         {
-            get { return IExecute<string>("getOutputFormat"); }
+            get { return IExecute<Java.Lang.String>("getOutputFormat"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintServiceFactory.html#getSupportedDocFlavors()"/> 

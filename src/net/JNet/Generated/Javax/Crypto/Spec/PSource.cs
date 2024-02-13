@@ -48,9 +48,9 @@ namespace Javax.Crypto.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PSource.html#getAlgorithm()"/> 
         /// </summary>
-        public string Algorithm
+        public Java.Lang.String Algorithm
         {
-            get { return IExecute<string>("getAlgorithm"); }
+            get { return IExecute<Java.Lang.String>("getAlgorithm"); }
         }
 
         #endregion

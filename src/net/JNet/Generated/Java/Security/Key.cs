@@ -35,7 +35,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Key.html#getAlgorithm()"/> 
         /// </summary>
-        string Algorithm { get; }
+        Java.Lang.String Algorithm { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Key.html#getEncoded()"/> 
         /// </summary>
@@ -43,7 +43,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Key.html#getFormat()"/> 
         /// </summary>
-        string Format { get; }
+        Java.Lang.String Format { get; }
 
         #endregion
 
@@ -84,9 +84,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Key.html#getAlgorithm()"/> 
         /// </summary>
-        public string Algorithm
+        public Java.Lang.String Algorithm
         {
-            get { return IExecute<string>("getAlgorithm"); }
+            get { return IExecute<Java.Lang.String>("getAlgorithm"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Key.html#getEncoded()"/> 
@@ -98,9 +98,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Key.html#getFormat()"/> 
         /// </summary>
-        public string Format
+        public Java.Lang.String Format
         {
-            get { return IExecute<string>("getFormat"); }
+            get { return IExecute<Java.Lang.String>("getFormat"); }
         }
 
         #endregion

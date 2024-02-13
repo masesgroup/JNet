@@ -68,8 +68,8 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/StateEditable.html#RCSID"/>
         /// </summary>
-        public static string RCSID { get { if (!_RCSIDReady) { _RCSIDContent = SGetField<string>(LocalBridgeClazz, "RCSID"); _RCSIDReady = true; } return _RCSIDContent; } }
-        private static string _RCSIDContent = default;
+        public static Java.Lang.String RCSID { get { if (!_RCSIDReady) { _RCSIDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "RCSID"); _RCSIDReady = true; } return _RCSIDContent; } }
+        private static Java.Lang.String _RCSIDContent = default;
         private static bool _RCSIDReady = false; // this is used because in case of generics 
 
         #endregion

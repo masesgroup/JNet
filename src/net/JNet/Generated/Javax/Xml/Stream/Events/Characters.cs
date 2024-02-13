@@ -35,7 +35,7 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Characters.html#getData()"/> 
         /// </summary>
-        string Data { get; }
+        Java.Lang.String Data { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Characters.html#isCData()"/>
         /// </summary>
@@ -88,9 +88,9 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Characters.html#getData()"/> 
         /// </summary>
-        public string Data
+        public Java.Lang.String Data
         {
-            get { return IExecute<string>("getData"); }
+            get { return IExecute<Java.Lang.String>("getData"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Characters.html#isCData()"/>

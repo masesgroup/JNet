@@ -62,23 +62,23 @@ namespace Javax.Imageio.Metadata
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getExtraMetadataFormatNames()"/> 
         /// </summary>
-        public string[] ExtraMetadataFormatNames
+        public Java.Lang.String[] ExtraMetadataFormatNames
         {
-            get { return IExecuteArray<string>("getExtraMetadataFormatNames"); }
+            get { return IExecuteArray<Java.Lang.String>("getExtraMetadataFormatNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getMetadataFormatNames()"/> 
         /// </summary>
-        public string[] MetadataFormatNames
+        public Java.Lang.String[] MetadataFormatNames
         {
-            get { return IExecuteArray<string>("getMetadataFormatNames"); }
+            get { return IExecuteArray<Java.Lang.String>("getMetadataFormatNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getNativeMetadataFormatName()"/> 
         /// </summary>
-        public string NativeMetadataFormatName
+        public Java.Lang.String NativeMetadataFormatName
         {
-            get { return IExecute<string>("getNativeMetadataFormatName"); }
+            get { return IExecute<Java.Lang.String>("getNativeMetadataFormatName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#isReadOnly()"/>
@@ -92,19 +92,19 @@ namespace Javax.Imageio.Metadata
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getAsTree(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
-        public Org.W3c.Dom.Node GetAsTree(string arg0)
+        public Org.W3c.Dom.Node GetAsTree(Java.Lang.String arg0)
         {
             return IExecute<Org.W3c.Dom.Node>("getAsTree", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#mergeTree(java.lang.String,org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Org.W3c.Dom.Node"/></param>
         /// <exception cref="Javax.Imageio.Metadata.IIOInvalidTreeException"/>
-        public void MergeTree(string arg0, Org.W3c.Dom.Node arg1)
+        public void MergeTree(Java.Lang.String arg0, Org.W3c.Dom.Node arg1)
         {
             IExecute("mergeTree", arg0, arg1);
         }
@@ -145,19 +145,19 @@ namespace Javax.Imageio.Metadata
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getMetadataFormat(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Imageio.Metadata.IIOMetadataFormat"/></returns>
-        public Javax.Imageio.Metadata.IIOMetadataFormat GetMetadataFormat(string arg0)
+        public Javax.Imageio.Metadata.IIOMetadataFormat GetMetadataFormat(Java.Lang.String arg0)
         {
             return IExecute<Javax.Imageio.Metadata.IIOMetadataFormat>("getMetadataFormat", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#setFromTree(java.lang.String,org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Org.W3c.Dom.Node"/></param>
         /// <exception cref="Javax.Imageio.Metadata.IIOInvalidTreeException"/>
-        public void SetFromTree(string arg0, Org.W3c.Dom.Node arg1)
+        public void SetFromTree(Java.Lang.String arg0, Org.W3c.Dom.Node arg1)
         {
             IExecute("setFromTree", arg0, arg1);
         }

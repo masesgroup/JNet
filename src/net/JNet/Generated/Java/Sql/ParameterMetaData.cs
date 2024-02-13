@@ -82,16 +82,16 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getParameterClassName(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        string GetParameterClassName(int arg0);
+        Java.Lang.String GetParameterClassName(int arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getParameterTypeName(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        string GetParameterTypeName(int arg0);
+        Java.Lang.String GetParameterTypeName(int arg0);
 
         #endregion
 
@@ -236,21 +236,21 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getParameterClassName(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public string GetParameterClassName(int arg0)
+        public Java.Lang.String GetParameterClassName(int arg0)
         {
-            return IExecute<string>("getParameterClassName", arg0);
+            return IExecute<Java.Lang.String>("getParameterClassName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getParameterTypeName(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public string GetParameterTypeName(int arg0)
+        public Java.Lang.String GetParameterTypeName(int arg0)
         {
-            return IExecute<string>("getParameterTypeName", arg0);
+            return IExecute<Java.Lang.String>("getParameterTypeName", arg0);
         }
 
         #endregion

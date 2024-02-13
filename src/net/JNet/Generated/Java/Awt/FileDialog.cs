@@ -33,9 +33,9 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#%3Cinit%3E(java.awt.Dialog,java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dialog"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        public FileDialog(Java.Awt.Dialog arg0, string arg1, int arg2)
+        public FileDialog(Java.Awt.Dialog arg0, Java.Lang.String arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
         }
@@ -43,8 +43,8 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#%3Cinit%3E(java.awt.Dialog,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dialog"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public FileDialog(Java.Awt.Dialog arg0, string arg1)
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public FileDialog(Java.Awt.Dialog arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
         }
@@ -60,9 +60,9 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#%3Cinit%3E(java.awt.Frame,java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        public FileDialog(Java.Awt.Frame arg0, string arg1, int arg2)
+        public FileDialog(Java.Awt.Frame arg0, Java.Lang.String arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
         }
@@ -70,8 +70,8 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#%3Cinit%3E(java.awt.Frame,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public FileDialog(Java.Awt.Frame arg0, string arg1)
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public FileDialog(Java.Awt.Frame arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
         }
@@ -114,16 +114,16 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#getDirectory()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#setDirectory(java.lang.String)"/>
         /// </summary>
-        public string Directory
+        public Java.Lang.String Directory
         {
-            get { return IExecute<string>("getDirectory"); } set { IExecute("setDirectory", value); }
+            get { return IExecute<Java.Lang.String>("getDirectory"); } set { IExecute("setDirectory", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#getFile()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#setFile(java.lang.String)"/>
         /// </summary>
-        public string File
+        public Java.Lang.String File
         {
-            get { return IExecute<string>("getFile"); } set { IExecute("setFile", value); }
+            get { return IExecute<Java.Lang.String>("getFile"); } set { IExecute("setFile", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#getFilenameFilter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#setFilenameFilter(java.io.FilenameFilter)"/>

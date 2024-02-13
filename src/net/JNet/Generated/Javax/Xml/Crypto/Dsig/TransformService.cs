@@ -44,36 +44,36 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#getInstance(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.TransformService"/></returns>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         /// <exception cref="Java.Security.NoSuchProviderException"/>
-        public static Javax.Xml.Crypto.Dsig.TransformService GetInstance(string arg0, string arg1, string arg2)
+        public static Javax.Xml.Crypto.Dsig.TransformService GetInstance(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
             return SExecute<Javax.Xml.Crypto.Dsig.TransformService>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#getInstance(java.lang.String,java.lang.String,java.security.Provider)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Java.Security.Provider"/></param>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.TransformService"/></returns>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        public static Javax.Xml.Crypto.Dsig.TransformService GetInstance(string arg0, string arg1, Java.Security.Provider arg2)
+        public static Javax.Xml.Crypto.Dsig.TransformService GetInstance(Java.Lang.String arg0, Java.Lang.String arg1, Java.Security.Provider arg2)
         {
             return SExecute<Javax.Xml.Crypto.Dsig.TransformService>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.TransformService"/></returns>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        public static Javax.Xml.Crypto.Dsig.TransformService GetInstance(string arg0, string arg1)
+        public static Javax.Xml.Crypto.Dsig.TransformService GetInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return SExecute<Javax.Xml.Crypto.Dsig.TransformService>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
@@ -84,16 +84,16 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#getAlgorithm()"/> 
         /// </summary>
-        public string Algorithm
+        public Java.Lang.String Algorithm
         {
-            get { return IExecute<string>("getAlgorithm"); }
+            get { return IExecute<Java.Lang.String>("getAlgorithm"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#getMechanismType()"/> 
         /// </summary>
-        public string MechanismType
+        public Java.Lang.String MechanismType
         {
-            get { return IExecute<string>("getMechanismType"); }
+            get { return IExecute<Java.Lang.String>("getMechanismType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#getProvider()"/> 

@@ -113,16 +113,16 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readNString()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        string ReadNString();
+        Java.Lang.String ReadNString();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readString()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        string ReadString();
+        Java.Lang.String ReadString();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readBigDecimal()"/>
         /// </summary>
@@ -374,21 +374,21 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readNString()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public string ReadNString()
+        public Java.Lang.String ReadNString()
         {
-            return IExecute<string>("readNString");
+            return IExecute<Java.Lang.String>("readNString");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readString()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public string ReadString()
+        public Java.Lang.String ReadString()
         {
-            return IExecute<string>("readString");
+            return IExecute<Java.Lang.String>("readString");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readBigDecimal()"/>

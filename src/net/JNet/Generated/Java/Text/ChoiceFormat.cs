@@ -33,16 +33,16 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ChoiceFormat.html#%3Cinit%3E(double[],java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public ChoiceFormat(double[] arg0, string[] arg1)
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public ChoiceFormat(double[] arg0, Java.Lang.String[] arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ChoiceFormat.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public ChoiceFormat(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public ChoiceFormat(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -108,16 +108,16 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ChoiceFormat.html#toPattern()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        public string ToPattern()
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String ToPattern()
         {
-            return IExecute<string>("toPattern");
+            return IExecute<Java.Lang.String>("toPattern");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ChoiceFormat.html#applyPattern(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public void ApplyPattern(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void ApplyPattern(Java.Lang.String arg0)
         {
             IExecute("applyPattern", arg0);
         }
@@ -125,8 +125,8 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ChoiceFormat.html#setChoices(double[],java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public void SetChoices(double[] arg0, string[] arg1)
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public void SetChoices(double[] arg0, Java.Lang.String[] arg1)
         {
             IExecute("setChoices", arg0, arg1);
         }

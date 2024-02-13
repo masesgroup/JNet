@@ -58,43 +58,43 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getConnection(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Connection"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public static Java.Sql.Connection GetConnection(string arg0, string arg1, string arg2)
+        public static Java.Sql.Connection GetConnection(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
             return SExecute<Java.Sql.Connection>(LocalBridgeClazz, "getConnection", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getConnection(java.lang.String,java.util.Properties)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Properties"/></param>
         /// <returns><see cref="Java.Sql.Connection"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public static Java.Sql.Connection GetConnection(string arg0, Java.Util.Properties arg1)
+        public static Java.Sql.Connection GetConnection(Java.Lang.String arg0, Java.Util.Properties arg1)
         {
             return SExecute<Java.Sql.Connection>(LocalBridgeClazz, "getConnection", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getConnection(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Connection"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public static Java.Sql.Connection GetConnection(string arg0)
+        public static Java.Sql.Connection GetConnection(Java.Lang.String arg0)
         {
             return SExecute<Java.Sql.Connection>(LocalBridgeClazz, "getConnection", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getDriver(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Driver"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public static Java.Sql.Driver GetDriver(string arg0)
+        public static Java.Sql.Driver GetDriver(Java.Lang.String arg0)
         {
             return SExecute<Java.Sql.Driver>(LocalBridgeClazz, "getDriver", arg0);
         }
@@ -128,8 +128,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#println(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public static void Println(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public static void Println(Java.Lang.String arg0)
         {
             SExecute(LocalBridgeClazz, "println", arg0);
         }

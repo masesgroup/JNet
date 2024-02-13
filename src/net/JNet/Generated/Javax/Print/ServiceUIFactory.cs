@@ -64,26 +64,26 @@ namespace Javax.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#DIALOG_UI"/>
         /// </summary>
-        public static string DIALOG_UI { get { if (!_DIALOG_UIReady) { _DIALOG_UIContent = SGetField<string>(LocalBridgeClazz, "DIALOG_UI"); _DIALOG_UIReady = true; } return _DIALOG_UIContent; } }
-        private static string _DIALOG_UIContent = default;
+        public static Java.Lang.String DIALOG_UI { get { if (!_DIALOG_UIReady) { _DIALOG_UIContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DIALOG_UI"); _DIALOG_UIReady = true; } return _DIALOG_UIContent; } }
+        private static Java.Lang.String _DIALOG_UIContent = default;
         private static bool _DIALOG_UIReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#JCOMPONENT_UI"/>
         /// </summary>
-        public static string JCOMPONENT_UI { get { if (!_JCOMPONENT_UIReady) { _JCOMPONENT_UIContent = SGetField<string>(LocalBridgeClazz, "JCOMPONENT_UI"); _JCOMPONENT_UIReady = true; } return _JCOMPONENT_UIContent; } }
-        private static string _JCOMPONENT_UIContent = default;
+        public static Java.Lang.String JCOMPONENT_UI { get { if (!_JCOMPONENT_UIReady) { _JCOMPONENT_UIContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "JCOMPONENT_UI"); _JCOMPONENT_UIReady = true; } return _JCOMPONENT_UIContent; } }
+        private static Java.Lang.String _JCOMPONENT_UIContent = default;
         private static bool _JCOMPONENT_UIReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#JDIALOG_UI"/>
         /// </summary>
-        public static string JDIALOG_UI { get { if (!_JDIALOG_UIReady) { _JDIALOG_UIContent = SGetField<string>(LocalBridgeClazz, "JDIALOG_UI"); _JDIALOG_UIReady = true; } return _JDIALOG_UIContent; } }
-        private static string _JDIALOG_UIContent = default;
+        public static Java.Lang.String JDIALOG_UI { get { if (!_JDIALOG_UIReady) { _JDIALOG_UIContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "JDIALOG_UI"); _JDIALOG_UIReady = true; } return _JDIALOG_UIContent; } }
+        private static Java.Lang.String _JDIALOG_UIContent = default;
         private static bool _JDIALOG_UIReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#PANEL_UI"/>
         /// </summary>
-        public static string PANEL_UI { get { if (!_PANEL_UIReady) { _PANEL_UIContent = SGetField<string>(LocalBridgeClazz, "PANEL_UI"); _PANEL_UIReady = true; } return _PANEL_UIContent; } }
-        private static string _PANEL_UIContent = default;
+        public static Java.Lang.String PANEL_UI { get { if (!_PANEL_UIReady) { _PANEL_UIContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PANEL_UI"); _PANEL_UIReady = true; } return _PANEL_UIContent; } }
+        private static Java.Lang.String _PANEL_UIContent = default;
         private static bool _PANEL_UIReady = false; // this is used because in case of generics 
 
         #endregion
@@ -97,9 +97,9 @@ namespace Javax.Print
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#getUI(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
-        public object GetUI(int arg0, string arg1)
+        public object GetUI(int arg0, Java.Lang.String arg1)
         {
             return IExecute("getUI", arg0, arg1);
         }
@@ -107,10 +107,10 @@ namespace Javax.Print
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#getUIClassNamesForRole(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string[] GetUIClassNamesForRole(int arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetUIClassNamesForRole(int arg0)
         {
-            return IExecuteArray<string>("getUIClassNamesForRole", arg0);
+            return IExecuteArray<Java.Lang.String>("getUIClassNamesForRole", arg0);
         }
 
         #endregion

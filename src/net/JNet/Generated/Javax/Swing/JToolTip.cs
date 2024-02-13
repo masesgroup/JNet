@@ -59,9 +59,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolTip.html#getTipText()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolTip.html#setTipText(java.lang.String)"/>
         /// </summary>
-        public string TipText
+        public Java.Lang.String TipText
         {
-            get { return IExecute<string>("getTipText"); } set { IExecute("setTipText", value); }
+            get { return IExecute<Java.Lang.String>("getTipText"); } set { IExecute("setTipText", value); }
         }
 
         #endregion

@@ -78,9 +78,9 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.html#getTerminal(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Smartcardio.CardTerminal"/></returns>
-        public Javax.Smartcardio.CardTerminal GetTerminal(string arg0)
+        public Javax.Smartcardio.CardTerminal GetTerminal(Java.Lang.String arg0)
         {
             return IExecute<Javax.Smartcardio.CardTerminal>("getTerminal", arg0);
         }
@@ -146,9 +146,9 @@ namespace Javax.Smartcardio
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Javax.Smartcardio.CardTerminals.State"/></returns>
-            public static Javax.Smartcardio.CardTerminals.State ValueOf(string arg0)
+            public static Javax.Smartcardio.CardTerminals.State ValueOf(Java.Lang.String arg0)
             {
                 return SExecute<Javax.Smartcardio.CardTerminals.State>(LocalBridgeClazz, "valueOf", arg0);
             }

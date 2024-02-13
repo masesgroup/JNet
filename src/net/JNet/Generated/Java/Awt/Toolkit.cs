@@ -51,12 +51,12 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getProperty(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string GetProperty(string arg0, string arg1)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String GetProperty(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<string>(LocalBridgeClazz, "getProperty", arg0, arg1);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getProperty", arg0, arg1);
         }
 
         #endregion
@@ -211,9 +211,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#createImage(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Awt.Image"/></returns>
-        public Java.Awt.Image CreateImage(string arg0)
+        public Java.Awt.Image CreateImage(Java.Lang.String arg0)
         {
             return IExecute<Java.Awt.Image>("createImage", arg0);
         }
@@ -229,9 +229,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getImage(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Awt.Image"/></returns>
-        public Java.Awt.Image GetImage(string arg0)
+        public Java.Awt.Image GetImage(Java.Lang.String arg0)
         {
             return IExecute<Java.Awt.Image>("getImage", arg0);
         }
@@ -248,10 +248,10 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getPrintJob(java.awt.Frame,java.lang.String,java.util.Properties)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Java.Util.Properties"/></param>
         /// <returns><see cref="Java.Awt.PrintJob"/></returns>
-        public Java.Awt.PrintJob GetPrintJob(Java.Awt.Frame arg0, string arg1, Java.Util.Properties arg2)
+        public Java.Awt.PrintJob GetPrintJob(Java.Awt.Frame arg0, Java.Lang.String arg1, Java.Util.Properties arg2)
         {
             return IExecute<Java.Awt.PrintJob>("getPrintJob", arg0, arg1, arg2);
         }
@@ -331,9 +331,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getDesktopProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
-        public object GetDesktopProperty(string arg0)
+        public object GetDesktopProperty(Java.Lang.String arg0)
         {
             return IExecute("getDesktopProperty", arg0);
         }
@@ -342,11 +342,11 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Point"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Awt.Cursor"/></returns>
         /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
         /// <exception cref="Java.Awt.HeadlessException"/>
-        public Java.Awt.Cursor CreateCustomCursor(Java.Awt.Image arg0, Java.Awt.Point arg1, string arg2)
+        public Java.Awt.Cursor CreateCustomCursor(Java.Awt.Image arg0, Java.Awt.Point arg1, Java.Lang.String arg2)
         {
             return IExecute<Java.Awt.Cursor>("createCustomCursor", arg0, arg1, arg2);
         }
@@ -393,20 +393,20 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getPrintJob(java.awt.Frame,java.lang.String,java.awt.JobAttributes,java.awt.PageAttributes)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Java.Awt.JobAttributes"/></param>
         /// <param name="arg3"><see cref="Java.Awt.PageAttributes"/></param>
         /// <returns><see cref="Java.Awt.PrintJob"/></returns>
-        public Java.Awt.PrintJob GetPrintJob(Java.Awt.Frame arg0, string arg1, Java.Awt.JobAttributes arg2, Java.Awt.PageAttributes arg3)
+        public Java.Awt.PrintJob GetPrintJob(Java.Awt.Frame arg0, Java.Lang.String arg1, Java.Awt.JobAttributes arg2, Java.Awt.PageAttributes arg3)
         {
             return IExecute<Java.Awt.PrintJob>("getPrintJob", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getPropertyChangeListeners(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Beans.PropertyChangeListener"/></returns>
-        public Java.Beans.PropertyChangeListener[] GetPropertyChangeListeners(string arg0)
+        public Java.Beans.PropertyChangeListener[] GetPropertyChangeListeners(Java.Lang.String arg0)
         {
             return IExecuteArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners", arg0);
         }
@@ -422,9 +422,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>
-        public void AddPropertyChangeListener(string arg0, Java.Beans.PropertyChangeListener arg1)
+        public void AddPropertyChangeListener(Java.Lang.String arg0, Java.Beans.PropertyChangeListener arg1)
         {
             IExecute("addPropertyChangeListener", arg0, arg1);
         }
@@ -439,9 +439,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#removePropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>
-        public void RemovePropertyChangeListener(string arg0, Java.Beans.PropertyChangeListener arg1)
+        public void RemovePropertyChangeListener(Java.Lang.String arg0, Java.Beans.PropertyChangeListener arg1)
         {
             IExecute("removePropertyChangeListener", arg0, arg1);
         }

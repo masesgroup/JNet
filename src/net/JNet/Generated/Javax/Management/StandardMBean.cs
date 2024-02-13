@@ -104,34 +104,34 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#getAttribute(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Management.AttributeNotFoundException"/>
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.ReflectionException"/>
-        public object GetAttribute(string arg0)
+        public object GetAttribute(Java.Lang.String arg0)
         {
             return IExecute("getAttribute", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#invoke(java.lang.String,java.lang.Object[],java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.ReflectionException"/>
-        public object Invoke(string arg0, object[] arg1, string[] arg2)
+        public object Invoke(Java.Lang.String arg0, object[] arg1, Java.Lang.String[] arg2)
         {
             return IExecute("invoke", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#getAttributes(java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Management.AttributeList"/></returns>
-        public Javax.Management.AttributeList GetAttributes(string[] arg0)
+        public Javax.Management.AttributeList GetAttributes(Java.Lang.String[] arg0)
         {
             return IExecute<Javax.Management.AttributeList>("getAttributes", new object[] { arg0 });
         }

@@ -54,11 +54,11 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetProvider.html#newFactory(java.lang.String,java.lang.ClassLoader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
         /// <returns><see cref="Javax.Sql.Rowset.RowSetFactory"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public static Javax.Sql.Rowset.RowSetFactory NewFactory(string arg0, Java.Lang.ClassLoader arg1)
+        public static Javax.Sql.Rowset.RowSetFactory NewFactory(Java.Lang.String arg0, Java.Lang.ClassLoader arg1)
         {
             return SExecute<Javax.Sql.Rowset.RowSetFactory>(LocalBridgeClazz, "newFactory", arg0, arg1);
         }

@@ -137,11 +137,11 @@ namespace Javax.Xml.Parsers
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#parse(java.io.InputStream,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         /// <exception cref="Java.Io.IOException"/>
-        public Org.W3c.Dom.Document Parse(Java.Io.InputStream arg0, string arg1)
+        public Org.W3c.Dom.Document Parse(Java.Io.InputStream arg0, Java.Lang.String arg1)
         {
             return IExecute<Org.W3c.Dom.Document>("parse", arg0, arg1);
         }
@@ -159,11 +159,11 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#parse(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         /// <exception cref="Java.Io.IOException"/>
-        public Org.W3c.Dom.Document Parse(string arg0)
+        public Org.W3c.Dom.Document Parse(Java.Lang.String arg0)
         {
             return IExecute<Org.W3c.Dom.Document>("parse", arg0);
         }

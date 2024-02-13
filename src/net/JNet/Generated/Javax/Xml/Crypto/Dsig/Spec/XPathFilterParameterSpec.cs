@@ -32,17 +32,17 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathFilterParameterSpec.html#%3Cinit%3E(java.lang.String,java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
-        public XPathFilterParameterSpec(string arg0, Java.Util.Map<string, string> arg1)
+        public XPathFilterParameterSpec(Java.Lang.String arg0, Java.Util.Map<Java.Lang.String, Java.Lang.String> arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathFilterParameterSpec.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public XPathFilterParameterSpec(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public XPathFilterParameterSpec(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -65,16 +65,16 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathFilterParameterSpec.html#getNamespaceMap()"/> 
         /// </summary>
-        public Java.Util.Map<string, string> NamespaceMap
+        public Java.Util.Map<Java.Lang.String, Java.Lang.String> NamespaceMap
         {
-            get { return IExecute<Java.Util.Map<string, string>>("getNamespaceMap"); }
+            get { return IExecute<Java.Util.Map<Java.Lang.String, Java.Lang.String>>("getNamespaceMap"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathFilterParameterSpec.html#getXPath()"/> 
         /// </summary>
-        public string XPath
+        public Java.Lang.String XPath
         {
-            get { return IExecute<string>("getXPath"); }
+            get { return IExecute<Java.Lang.String>("getXPath"); }
         }
 
         #endregion

@@ -32,17 +32,17 @@ namespace Javax.Security.Auth.Callback
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/NameCallback.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public NameCallback(string arg0, string arg1)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public NameCallback(Java.Lang.String arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/NameCallback.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public NameCallback(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public NameCallback(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -73,23 +73,23 @@ namespace Javax.Security.Auth.Callback
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/NameCallback.html#getDefaultName()"/> 
         /// </summary>
-        public string DefaultName
+        public Java.Lang.String DefaultName
         {
-            get { return IExecute<string>("getDefaultName"); }
+            get { return IExecute<Java.Lang.String>("getDefaultName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/NameCallback.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/NameCallback.html#setName(java.lang.String)"/>
         /// </summary>
-        public string Name
+        public Java.Lang.String Name
         {
-            get { return IExecute<string>("getName"); } set { IExecute("setName", value); }
+            get { return IExecute<Java.Lang.String>("getName"); } set { IExecute("setName", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/NameCallback.html#getPrompt()"/> 
         /// </summary>
-        public string Prompt
+        public Java.Lang.String Prompt
         {
-            get { return IExecute<string>("getPrompt"); }
+            get { return IExecute<Java.Lang.String>("getPrompt"); }
         }
 
         #endregion

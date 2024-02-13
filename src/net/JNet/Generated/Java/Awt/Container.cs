@@ -171,10 +171,10 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#add(java.lang.String,java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
         /// <returns><see cref="Java.Awt.Component"/></returns>
-        public Java.Awt.Component Add(string arg0, Java.Awt.Component arg1)
+        public Java.Awt.Component Add(Java.Lang.String arg0, Java.Awt.Component arg1)
         {
             return IExecute<Java.Awt.Component>("add", arg0, arg1);
         }

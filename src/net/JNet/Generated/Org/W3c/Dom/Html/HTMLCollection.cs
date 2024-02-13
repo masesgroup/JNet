@@ -45,9 +45,9 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLCollection.html#namedItem(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
-        Org.W3c.Dom.Node NamedItem(string arg0);
+        Org.W3c.Dom.Node NamedItem(Java.Lang.String arg0);
 
         #endregion
 
@@ -98,9 +98,9 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLCollection.html#namedItem(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
-        public Org.W3c.Dom.Node NamedItem(string arg0)
+        public Org.W3c.Dom.Node NamedItem(Java.Lang.String arg0)
         {
             return IExecute<Org.W3c.Dom.Node>("namedItem", arg0);
         }

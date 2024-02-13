@@ -35,7 +35,7 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TemplatesHandler.html#getSystemId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TemplatesHandler.html#setSystemId(java.lang.String)"/>
         /// </summary>
-        string SystemId { get; set; }
+        Java.Lang.String SystemId { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TemplatesHandler.html#getTemplates()"/> 
         /// </summary>
@@ -74,9 +74,9 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TemplatesHandler.html#getSystemId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TemplatesHandler.html#setSystemId(java.lang.String)"/>
         /// </summary>
-        public string SystemId
+        public Java.Lang.String SystemId
         {
-            get { return IExecute<string>("getSystemId"); } set { IExecute("setSystemId", value); }
+            get { return IExecute<Java.Lang.String>("getSystemId"); } set { IExecute("setSystemId", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TemplatesHandler.html#getTemplates()"/> 

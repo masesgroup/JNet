@@ -52,8 +52,8 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeSelectionModel.html#SELECTION_MODE_PROPERTY"/>
         /// </summary>
-        public static string SELECTION_MODE_PROPERTY { get { if (!_SELECTION_MODE_PROPERTYReady) { _SELECTION_MODE_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "SELECTION_MODE_PROPERTY"); _SELECTION_MODE_PROPERTYReady = true; } return _SELECTION_MODE_PROPERTYContent; } }
-        private static string _SELECTION_MODE_PROPERTYContent = default;
+        public static Java.Lang.String SELECTION_MODE_PROPERTY { get { if (!_SELECTION_MODE_PROPERTYReady) { _SELECTION_MODE_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SELECTION_MODE_PROPERTY"); _SELECTION_MODE_PROPERTYReady = true; } return _SELECTION_MODE_PROPERTYContent; } }
+        private static Java.Lang.String _SELECTION_MODE_PROPERTYContent = default;
         private static bool _SELECTION_MODE_PROPERTYReady = false; // this is used because in case of generics 
 
         #endregion

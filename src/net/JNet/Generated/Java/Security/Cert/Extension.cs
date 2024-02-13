@@ -35,7 +35,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Extension.html#getId()"/> 
         /// </summary>
-        string Id { get; }
+        Java.Lang.String Id { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Extension.html#getValue()"/> 
         /// </summary>
@@ -86,9 +86,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Extension.html#getId()"/> 
         /// </summary>
-        public string Id
+        public Java.Lang.String Id
         {
-            get { return IExecute<string>("getId"); }
+            get { return IExecute<Java.Lang.String>("getId"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Extension.html#getValue()"/> 

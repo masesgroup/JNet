@@ -40,8 +40,8 @@ namespace Javax.Swing.Colorchooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/AbstractColorChooserPanel.html#TRANSPARENCY_ENABLED_PROPERTY"/>
         /// </summary>
-        public static string TRANSPARENCY_ENABLED_PROPERTY { get { if (!_TRANSPARENCY_ENABLED_PROPERTYReady) { _TRANSPARENCY_ENABLED_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "TRANSPARENCY_ENABLED_PROPERTY"); _TRANSPARENCY_ENABLED_PROPERTYReady = true; } return _TRANSPARENCY_ENABLED_PROPERTYContent; } }
-        private static string _TRANSPARENCY_ENABLED_PROPERTYContent = default;
+        public static Java.Lang.String TRANSPARENCY_ENABLED_PROPERTY { get { if (!_TRANSPARENCY_ENABLED_PROPERTYReady) { _TRANSPARENCY_ENABLED_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TRANSPARENCY_ENABLED_PROPERTY"); _TRANSPARENCY_ENABLED_PROPERTYReady = true; } return _TRANSPARENCY_ENABLED_PROPERTYContent; } }
+        private static Java.Lang.String _TRANSPARENCY_ENABLED_PROPERTYContent = default;
         private static bool _TRANSPARENCY_ENABLED_PROPERTYReady = false; // this is used because in case of generics 
 
         #endregion
@@ -68,9 +68,9 @@ namespace Javax.Swing.Colorchooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/AbstractColorChooserPanel.html#getDisplayName()"/> 
         /// </summary>
-        public string DisplayName
+        public Java.Lang.String DisplayName
         {
-            get { return IExecute<string>("getDisplayName"); }
+            get { return IExecute<Java.Lang.String>("getDisplayName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/AbstractColorChooserPanel.html#getLargeDisplayIcon()"/> 

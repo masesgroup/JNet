@@ -32,8 +32,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StringValueExp.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public StringValueExp(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public StringValueExp(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -56,9 +56,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StringValueExp.html#getValue()"/> 
         /// </summary>
-        public string Value
+        public Java.Lang.String Value
         {
-            get { return IExecute<string>("getValue"); }
+            get { return IExecute<Java.Lang.String>("getValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StringValueExp.html#apply(javax.management.ObjectName)"/>

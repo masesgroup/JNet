@@ -39,7 +39,7 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getBaseURI()"/> 
         /// </summary>
-        string BaseURI { get; }
+        Java.Lang.String BaseURI { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getChildNodes()"/> 
         /// </summary>
@@ -55,11 +55,11 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getLocalName()"/> 
         /// </summary>
-        string LocalName { get; }
+        Java.Lang.String LocalName { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getNamespaceURI()"/> 
         /// </summary>
-        string NamespaceURI { get; }
+        Java.Lang.String NamespaceURI { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getNextSibling()"/> 
         /// </summary>
@@ -67,7 +67,7 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getNodeName()"/> 
         /// </summary>
-        string NodeName { get; }
+        Java.Lang.String NodeName { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getNodeType()"/> 
         /// </summary>
@@ -75,7 +75,7 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getNodeValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#setNodeValue(java.lang.String)"/>
         /// </summary>
-        string NodeValue { get; set; }
+        Java.Lang.String NodeValue { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getOwnerDocument()"/> 
         /// </summary>
@@ -87,7 +87,7 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getPrefix()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#setPrefix(java.lang.String)"/>
         /// </summary>
-        string Prefix { get; set; }
+        Java.Lang.String Prefix { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getPreviousSibling()"/> 
         /// </summary>
@@ -95,7 +95,7 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getTextContent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#setTextContent(java.lang.String)"/>
         /// </summary>
-        string TextContent { get; set; }
+        Java.Lang.String TextContent { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#hasAttributes()"/>
         /// </summary>
@@ -111,9 +111,9 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#isDefaultNamespace(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
-        bool IsDefaultNamespace(string arg0);
+        bool IsDefaultNamespace(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#isEqualNode(org.w3c.dom.Node)"/>
         /// </summary>
@@ -129,43 +129,43 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#isSupported(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
-        bool IsSupported(string arg0, string arg1);
+        bool IsSupported(Java.Lang.String arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getFeature(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
-        object GetFeature(string arg0, string arg1);
+        object GetFeature(Java.Lang.String arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getUserData(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
-        object GetUserData(string arg0);
+        object GetUserData(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#setUserData(java.lang.String,java.lang.Object,org.w3c.dom.UserDataHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Org.W3c.Dom.UserDataHandler"/></param>
         /// <returns><see cref="object"/></returns>
-        object SetUserData(string arg0, object arg1, Org.W3c.Dom.UserDataHandler arg2);
+        object SetUserData(Java.Lang.String arg0, object arg1, Org.W3c.Dom.UserDataHandler arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#lookupNamespaceURI(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        string LookupNamespaceURI(string arg0);
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        Java.Lang.String LookupNamespaceURI(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#lookupPrefix(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        string LookupPrefix(string arg0);
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        Java.Lang.String LookupPrefix(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#appendChild(org.w3c.dom.Node)"/>
         /// </summary>
@@ -362,9 +362,9 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getBaseURI()"/> 
         /// </summary>
-        public string BaseURI
+        public Java.Lang.String BaseURI
         {
-            get { return IExecute<string>("getBaseURI"); }
+            get { return IExecute<Java.Lang.String>("getBaseURI"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getChildNodes()"/> 
@@ -390,16 +390,16 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getLocalName()"/> 
         /// </summary>
-        public string LocalName
+        public Java.Lang.String LocalName
         {
-            get { return IExecute<string>("getLocalName"); }
+            get { return IExecute<Java.Lang.String>("getLocalName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getNamespaceURI()"/> 
         /// </summary>
-        public string NamespaceURI
+        public Java.Lang.String NamespaceURI
         {
-            get { return IExecute<string>("getNamespaceURI"); }
+            get { return IExecute<Java.Lang.String>("getNamespaceURI"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getNextSibling()"/> 
@@ -411,9 +411,9 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getNodeName()"/> 
         /// </summary>
-        public string NodeName
+        public Java.Lang.String NodeName
         {
-            get { return IExecute<string>("getNodeName"); }
+            get { return IExecute<Java.Lang.String>("getNodeName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getNodeType()"/> 
@@ -425,9 +425,9 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getNodeValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#setNodeValue(java.lang.String)"/>
         /// </summary>
-        public string NodeValue
+        public Java.Lang.String NodeValue
         {
-            get { return IExecute<string>("getNodeValue"); } set { IExecute("setNodeValue", value); }
+            get { return IExecute<Java.Lang.String>("getNodeValue"); } set { IExecute("setNodeValue", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getOwnerDocument()"/> 
@@ -446,9 +446,9 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getPrefix()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#setPrefix(java.lang.String)"/>
         /// </summary>
-        public string Prefix
+        public Java.Lang.String Prefix
         {
-            get { return IExecute<string>("getPrefix"); } set { IExecute("setPrefix", value); }
+            get { return IExecute<Java.Lang.String>("getPrefix"); } set { IExecute("setPrefix", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getPreviousSibling()"/> 
@@ -460,9 +460,9 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getTextContent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#setTextContent(java.lang.String)"/>
         /// </summary>
-        public string TextContent
+        public Java.Lang.String TextContent
         {
-            get { return IExecute<string>("getTextContent"); } set { IExecute("setTextContent", value); }
+            get { return IExecute<Java.Lang.String>("getTextContent"); } set { IExecute("setTextContent", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#hasAttributes()"/>
@@ -485,9 +485,9 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#isDefaultNamespace(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool IsDefaultNamespace(string arg0)
+        public bool IsDefaultNamespace(Java.Lang.String arg0)
         {
             return IExecute<bool>("isDefaultNamespace", arg0);
         }
@@ -512,60 +512,60 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#isSupported(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool IsSupported(string arg0, string arg1)
+        public bool IsSupported(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecute<bool>("isSupported", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getFeature(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
-        public object GetFeature(string arg0, string arg1)
+        public object GetFeature(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecute("getFeature", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getUserData(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
-        public object GetUserData(string arg0)
+        public object GetUserData(Java.Lang.String arg0)
         {
             return IExecute("getUserData", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#setUserData(java.lang.String,java.lang.Object,org.w3c.dom.UserDataHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Org.W3c.Dom.UserDataHandler"/></param>
         /// <returns><see cref="object"/></returns>
-        public object SetUserData(string arg0, object arg1, Org.W3c.Dom.UserDataHandler arg2)
+        public object SetUserData(Java.Lang.String arg0, object arg1, Org.W3c.Dom.UserDataHandler arg2)
         {
             return IExecute("setUserData", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#lookupNamespaceURI(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string LookupNamespaceURI(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String LookupNamespaceURI(Java.Lang.String arg0)
         {
-            return IExecute<string>("lookupNamespaceURI", arg0);
+            return IExecute<Java.Lang.String>("lookupNamespaceURI", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#lookupPrefix(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string LookupPrefix(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String LookupPrefix(Java.Lang.String arg0)
         {
-            return IExecute<string>("lookupPrefix", arg0);
+            return IExecute<Java.Lang.String>("lookupPrefix", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#appendChild(org.w3c.dom.Node)"/>

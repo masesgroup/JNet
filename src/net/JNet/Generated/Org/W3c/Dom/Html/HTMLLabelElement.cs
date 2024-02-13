@@ -35,7 +35,7 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLabelElement.html#getAccessKey()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLabelElement.html#setAccessKey(java.lang.String)"/>
         /// </summary>
-        string AccessKey { get; set; }
+        Java.Lang.String AccessKey { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLabelElement.html#getForm()"/> 
         /// </summary>
@@ -43,7 +43,7 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLabelElement.html#getHtmlFor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLabelElement.html#setHtmlFor(java.lang.String)"/>
         /// </summary>
-        string HtmlFor { get; set; }
+        Java.Lang.String HtmlFor { get; set; }
 
         #endregion
 
@@ -78,9 +78,9 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLabelElement.html#getAccessKey()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLabelElement.html#setAccessKey(java.lang.String)"/>
         /// </summary>
-        public string AccessKey
+        public Java.Lang.String AccessKey
         {
-            get { return IExecute<string>("getAccessKey"); } set { IExecute("setAccessKey", value); }
+            get { return IExecute<Java.Lang.String>("getAccessKey"); } set { IExecute("setAccessKey", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLabelElement.html#getForm()"/> 
@@ -92,9 +92,9 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLabelElement.html#getHtmlFor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLabelElement.html#setHtmlFor(java.lang.String)"/>
         /// </summary>
-        public string HtmlFor
+        public Java.Lang.String HtmlFor
         {
-            get { return IExecute<string>("getHtmlFor"); } set { IExecute("setHtmlFor", value); }
+            get { return IExecute<Java.Lang.String>("getHtmlFor"); } set { IExecute("setHtmlFor", value); }
         }
 
         #endregion

@@ -42,10 +42,10 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#%3Cinit%3E(java.awt.Dialog,java.lang.String,boolean,java.awt.GraphicsConfiguration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dialog"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
         /// <param name="arg3"><see cref="Java.Awt.GraphicsConfiguration"/></param>
-        public JDialog(Java.Awt.Dialog arg0, string arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
+        public JDialog(Java.Awt.Dialog arg0, Java.Lang.String arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
@@ -53,9 +53,9 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#%3Cinit%3E(java.awt.Dialog,java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dialog"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
-        public JDialog(Java.Awt.Dialog arg0, string arg1, bool arg2)
+        public JDialog(Java.Awt.Dialog arg0, Java.Lang.String arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
         }
@@ -63,8 +63,8 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#%3Cinit%3E(java.awt.Dialog,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dialog"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public JDialog(Java.Awt.Dialog arg0, string arg1)
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public JDialog(Java.Awt.Dialog arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
         }
@@ -89,10 +89,10 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#%3Cinit%3E(java.awt.Frame,java.lang.String,boolean,java.awt.GraphicsConfiguration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
         /// <param name="arg3"><see cref="Java.Awt.GraphicsConfiguration"/></param>
-        public JDialog(Java.Awt.Frame arg0, string arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
+        public JDialog(Java.Awt.Frame arg0, Java.Lang.String arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
@@ -100,9 +100,9 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#%3Cinit%3E(java.awt.Frame,java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
-        public JDialog(Java.Awt.Frame arg0, string arg1, bool arg2)
+        public JDialog(Java.Awt.Frame arg0, Java.Lang.String arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
         }
@@ -110,8 +110,8 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#%3Cinit%3E(java.awt.Frame,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public JDialog(Java.Awt.Frame arg0, string arg1)
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public JDialog(Java.Awt.Frame arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
         }
@@ -136,10 +136,10 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#%3Cinit%3E(java.awt.Window,java.lang.String,java.awt.Dialog.ModalityType,java.awt.GraphicsConfiguration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Dialog.ModalityType"/></param>
         /// <param name="arg3"><see cref="Java.Awt.GraphicsConfiguration"/></param>
-        public JDialog(Java.Awt.Window arg0, string arg1, Java.Awt.Dialog.ModalityType arg2, Java.Awt.GraphicsConfiguration arg3)
+        public JDialog(Java.Awt.Window arg0, Java.Lang.String arg1, Java.Awt.Dialog.ModalityType arg2, Java.Awt.GraphicsConfiguration arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
@@ -147,9 +147,9 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#%3Cinit%3E(java.awt.Window,java.lang.String,java.awt.Dialog.ModalityType)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Dialog.ModalityType"/></param>
-        public JDialog(Java.Awt.Window arg0, string arg1, Java.Awt.Dialog.ModalityType arg2)
+        public JDialog(Java.Awt.Window arg0, Java.Lang.String arg1, Java.Awt.Dialog.ModalityType arg2)
             : base(arg0, arg1, arg2)
         {
         }
@@ -157,8 +157,8 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#%3Cinit%3E(java.awt.Window,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public JDialog(Java.Awt.Window arg0, string arg1)
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public JDialog(Java.Awt.Window arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
         }

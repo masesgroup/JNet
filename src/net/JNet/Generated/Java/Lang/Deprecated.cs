@@ -42,8 +42,8 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Deprecated.html#since()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        string Since();
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        Java.Lang.String Since();
 
         #endregion
 
@@ -88,10 +88,10 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Deprecated.html#since()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        public string Since()
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String Since()
         {
-            return IExecute<string>("since");
+            return IExecute<Java.Lang.String>("since");
         }
 
         #endregion

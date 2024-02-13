@@ -51,7 +51,7 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMLocator.html#getUri()"/> 
         /// </summary>
-        string Uri { get; }
+        Java.Lang.String Uri { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMLocator.html#getUtf16Offset()"/> 
         /// </summary>
@@ -118,9 +118,9 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMLocator.html#getUri()"/> 
         /// </summary>
-        public string Uri
+        public Java.Lang.String Uri
         {
-            get { return IExecute<string>("getUri"); }
+            get { return IExecute<Java.Lang.String>("getUri"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMLocator.html#getUtf16Offset()"/> 

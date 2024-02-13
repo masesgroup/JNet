@@ -279,9 +279,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#getRequestMethod()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#setRequestMethod(java.lang.String)"/>
         /// </summary>
-        public string RequestMethod
+        public Java.Lang.String RequestMethod
         {
-            get { return IExecute<string>("getRequestMethod"); } set { IExecute("setRequestMethod", value); }
+            get { return IExecute<Java.Lang.String>("getRequestMethod"); } set { IExecute("setRequestMethod", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#getResponseCode()"/> 
@@ -293,9 +293,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#getResponseMessage()"/> 
         /// </summary>
-        public string ResponseMessage
+        public Java.Lang.String ResponseMessage
         {
-            get { return IExecute<string>("getResponseMessage"); }
+            get { return IExecute<Java.Lang.String>("getResponseMessage"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#usingProxy()"/>

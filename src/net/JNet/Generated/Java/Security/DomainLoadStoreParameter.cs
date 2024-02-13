@@ -34,7 +34,7 @@ namespace Java.Security
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
-        public DomainLoadStoreParameter(Java.Net.URI arg0, Java.Util.Map<string, Java.Security.KeyStore.ProtectionParameter> arg1)
+        public DomainLoadStoreParameter(Java.Net.URI arg0, Java.Util.Map<Java.Lang.String, Java.Security.KeyStore.ProtectionParameter> arg1)
             : base(arg0, arg1)
         {
         }
@@ -71,9 +71,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DomainLoadStoreParameter.html#getProtectionParams()"/> 
         /// </summary>
-        public Java.Util.Map<string, Java.Security.KeyStore.ProtectionParameter> ProtectionParams
+        public Java.Util.Map<Java.Lang.String, Java.Security.KeyStore.ProtectionParameter> ProtectionParams
         {
-            get { return IExecute<Java.Util.Map<string, Java.Security.KeyStore.ProtectionParameter>>("getProtectionParams"); }
+            get { return IExecute<Java.Util.Map<Java.Lang.String, Java.Security.KeyStore.ProtectionParameter>>("getProtectionParams"); }
         }
 
         #endregion

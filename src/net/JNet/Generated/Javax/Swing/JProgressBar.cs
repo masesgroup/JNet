@@ -133,9 +133,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#getString()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#setString(java.lang.String)"/>
         /// </summary>
-        public string String
+        public Java.Lang.String String
         {
-            get { return IExecute<string>("getString"); } set { IExecute("setString", value); }
+            get { return IExecute<Java.Lang.String>("getString"); } set { IExecute("setString", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#setValue(int)"/>

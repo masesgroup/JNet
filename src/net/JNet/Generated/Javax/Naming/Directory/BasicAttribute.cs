@@ -32,36 +32,36 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#%3Cinit%3E(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        public BasicAttribute(string arg0, bool arg1)
+        public BasicAttribute(Java.Lang.String arg0, bool arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#%3Cinit%3E(java.lang.String,java.lang.Object,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
-        public BasicAttribute(string arg0, object arg1, bool arg2)
+        public BasicAttribute(Java.Lang.String arg0, object arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#%3Cinit%3E(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        public BasicAttribute(string arg0, object arg1)
+        public BasicAttribute(Java.Lang.String arg0, object arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public BasicAttribute(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public BasicAttribute(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -105,9 +105,9 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#getID()"/> 
         /// </summary>
-        public string ID
+        public Java.Lang.String ID
         {
-            get { return IExecute<string>("getID"); }
+            get { return IExecute<Java.Lang.String>("getID"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#add(java.lang.Object)"/>

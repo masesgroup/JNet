@@ -45,10 +45,10 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#requireNonNull(java.lang.Object,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <typeparam name="T"></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public static T RequireNonNull<T>(T arg0, string arg1)
+        public static T RequireNonNull<T>(T arg0, Java.Lang.String arg1)
         {
             return SExecute<T>(LocalBridgeClazz, "requireNonNull", arg0, arg1);
         }
@@ -59,7 +59,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="Java.Util.Function.Supplier"/></param>
         /// <typeparam name="T"></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public static T RequireNonNull<T>(T arg0, Java.Util.Function.Supplier<string> arg1)
+        public static T RequireNonNull<T>(T arg0, Java.Util.Function.Supplier<Java.Lang.String> arg1)
         {
             return SExecute<T>(LocalBridgeClazz, "requireNonNull", arg0, arg1);
         }
@@ -188,20 +188,20 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#toString(java.lang.Object,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string ToString(object arg0, string arg1)
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String ToString(object arg0, Java.Lang.String arg1)
         {
-            return SExecute<string>(LocalBridgeClazz, "toString", arg0, arg1);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#toString(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string ToString(object arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String ToString(object arg0)
         {
-            return SExecute<string>(LocalBridgeClazz, "toString", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", arg0);
         }
 
         #endregion

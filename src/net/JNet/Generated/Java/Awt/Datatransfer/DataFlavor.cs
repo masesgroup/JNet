@@ -33,37 +33,37 @@ namespace Java.Awt.Datatransfer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#%3Cinit%3E(java.lang.Class,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public DataFlavor(Java.Lang.Class arg0, string arg1)
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public DataFlavor(Java.Lang.Class arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.ClassLoader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        public DataFlavor(string arg0, string arg1, Java.Lang.ClassLoader arg2)
+        public DataFlavor(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.ClassLoader arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public DataFlavor(string arg0, string arg1)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public DataFlavor(Java.Lang.String arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        public DataFlavor(string arg0)
+        public DataFlavor(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -104,20 +104,20 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#javaJVMLocalObjectMimeType"/>
         /// </summary>
-        public static string javaJVMLocalObjectMimeType { get { if (!_javaJVMLocalObjectMimeTypeReady) { _javaJVMLocalObjectMimeTypeContent = SGetField<string>(LocalBridgeClazz, "javaJVMLocalObjectMimeType"); _javaJVMLocalObjectMimeTypeReady = true; } return _javaJVMLocalObjectMimeTypeContent; } }
-        private static string _javaJVMLocalObjectMimeTypeContent = default;
+        public static Java.Lang.String javaJVMLocalObjectMimeType { get { if (!_javaJVMLocalObjectMimeTypeReady) { _javaJVMLocalObjectMimeTypeContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "javaJVMLocalObjectMimeType"); _javaJVMLocalObjectMimeTypeReady = true; } return _javaJVMLocalObjectMimeTypeContent; } }
+        private static Java.Lang.String _javaJVMLocalObjectMimeTypeContent = default;
         private static bool _javaJVMLocalObjectMimeTypeReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#javaRemoteObjectMimeType"/>
         /// </summary>
-        public static string javaRemoteObjectMimeType { get { if (!_javaRemoteObjectMimeTypeReady) { _javaRemoteObjectMimeTypeContent = SGetField<string>(LocalBridgeClazz, "javaRemoteObjectMimeType"); _javaRemoteObjectMimeTypeReady = true; } return _javaRemoteObjectMimeTypeContent; } }
-        private static string _javaRemoteObjectMimeTypeContent = default;
+        public static Java.Lang.String javaRemoteObjectMimeType { get { if (!_javaRemoteObjectMimeTypeReady) { _javaRemoteObjectMimeTypeContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "javaRemoteObjectMimeType"); _javaRemoteObjectMimeTypeReady = true; } return _javaRemoteObjectMimeTypeContent; } }
+        private static Java.Lang.String _javaRemoteObjectMimeTypeContent = default;
         private static bool _javaRemoteObjectMimeTypeReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#javaSerializedObjectMimeType"/>
         /// </summary>
-        public static string javaSerializedObjectMimeType { get { if (!_javaSerializedObjectMimeTypeReady) { _javaSerializedObjectMimeTypeContent = SGetField<string>(LocalBridgeClazz, "javaSerializedObjectMimeType"); _javaSerializedObjectMimeTypeReady = true; } return _javaSerializedObjectMimeTypeContent; } }
-        private static string _javaSerializedObjectMimeTypeContent = default;
+        public static Java.Lang.String javaSerializedObjectMimeType { get { if (!_javaSerializedObjectMimeTypeReady) { _javaSerializedObjectMimeTypeContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "javaSerializedObjectMimeType"); _javaSerializedObjectMimeTypeReady = true; } return _javaSerializedObjectMimeTypeContent; } }
+        private static Java.Lang.String _javaSerializedObjectMimeTypeContent = default;
         private static bool _javaSerializedObjectMimeTypeReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#allHtmlFlavor"/>
@@ -165,30 +165,30 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#getDefaultRepresentationClassAsString()"/> 
         /// </summary>
-        public string DefaultRepresentationClassAsString
+        public Java.Lang.String DefaultRepresentationClassAsString
         {
-            get { return IExecute<string>("getDefaultRepresentationClassAsString"); }
+            get { return IExecute<Java.Lang.String>("getDefaultRepresentationClassAsString"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#getHumanPresentableName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#setHumanPresentableName(java.lang.String)"/>
         /// </summary>
-        public string HumanPresentableName
+        public Java.Lang.String HumanPresentableName
         {
-            get { return IExecute<string>("getHumanPresentableName"); } set { IExecute("setHumanPresentableName", value); }
+            get { return IExecute<Java.Lang.String>("getHumanPresentableName"); } set { IExecute("setHumanPresentableName", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#getMimeType()"/> 
         /// </summary>
-        public string MimeType
+        public Java.Lang.String MimeType
         {
-            get { return IExecute<string>("getMimeType"); }
+            get { return IExecute<Java.Lang.String>("getMimeType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#getPrimaryType()"/> 
         /// </summary>
-        public string PrimaryType
+        public Java.Lang.String PrimaryType
         {
-            get { return IExecute<string>("getPrimaryType"); }
+            get { return IExecute<Java.Lang.String>("getPrimaryType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#getRepresentationClass()"/> 
@@ -200,9 +200,9 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#getSubType()"/> 
         /// </summary>
-        public string SubType
+        public Java.Lang.String SubType
         {
-            get { return IExecute<string>("getSubType"); }
+            get { return IExecute<Java.Lang.String>("getSubType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isFlavorJavaFileListType()"/>
@@ -243,9 +243,9 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isMimeTypeEqual(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool IsMimeTypeEqual(string arg0)
+        public bool IsMimeTypeEqual(Java.Lang.String arg0)
         {
             return IExecute<bool>("isMimeTypeEqual", arg0);
         }
@@ -344,11 +344,11 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#getParameter(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetParameter(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetParameter(Java.Lang.String arg0)
         {
-            return IExecute<string>("getParameter", arg0);
+            return IExecute<Java.Lang.String>("getParameter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#readExternal(java.io.ObjectInput)"/>

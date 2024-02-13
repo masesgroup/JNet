@@ -65,9 +65,9 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Manifest.html#getEntries()"/> 
         /// </summary>
-        public Java.Util.Map<string, Java.Util.Jar.Attributes> Entries
+        public Java.Util.Map<Java.Lang.String, Java.Util.Jar.Attributes> Entries
         {
-            get { return IExecute<Java.Util.Map<string, Java.Util.Jar.Attributes>>("getEntries"); }
+            get { return IExecute<Java.Util.Map<Java.Lang.String, Java.Util.Jar.Attributes>>("getEntries"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Manifest.html#getMainAttributes()"/> 
@@ -79,9 +79,9 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Manifest.html#getAttributes(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Jar.Attributes"/></returns>
-        public Java.Util.Jar.Attributes GetAttributes(string arg0)
+        public Java.Util.Jar.Attributes GetAttributes(Java.Lang.String arg0)
         {
             return IExecute<Java.Util.Jar.Attributes>("getAttributes", arg0);
         }

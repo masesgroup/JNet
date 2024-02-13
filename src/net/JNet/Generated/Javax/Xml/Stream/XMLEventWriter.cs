@@ -39,10 +39,10 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html#getPrefix(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
-        string GetPrefix(string arg0);
+        Java.Lang.String GetPrefix(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html#add(javax.xml.stream.events.XMLEvent)"/>
         /// </summary>
@@ -70,16 +70,16 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html#setDefaultNamespace(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
-        void SetDefaultNamespace(string arg0);
+        void SetDefaultNamespace(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html#setPrefix(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
-        void SetPrefix(string arg0, string arg1);
+        void SetPrefix(Java.Lang.String arg0, Java.Lang.String arg1);
 
         #endregion
 
@@ -121,12 +121,12 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html#getPrefix(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
-        public string GetPrefix(string arg0)
+        public Java.Lang.String GetPrefix(Java.Lang.String arg0)
         {
-            return IExecute<string>("getPrefix", arg0);
+            return IExecute<Java.Lang.String>("getPrefix", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html#add(javax.xml.stream.events.XMLEvent)"/>
@@ -167,19 +167,19 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html#setDefaultNamespace(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
-        public void SetDefaultNamespace(string arg0)
+        public void SetDefaultNamespace(Java.Lang.String arg0)
         {
             IExecute("setDefaultNamespace", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html#setPrefix(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
-        public void SetPrefix(string arg0, string arg1)
+        public void SetPrefix(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             IExecute("setPrefix", arg0, arg1);
         }

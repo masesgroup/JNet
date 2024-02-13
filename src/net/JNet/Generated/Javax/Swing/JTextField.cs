@@ -40,17 +40,17 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#%3Cinit%3E(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        public JTextField(string arg0, int arg1)
+        public JTextField(Java.Lang.String arg0, int arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public JTextField(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public JTextField(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -58,9 +58,9 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#%3Cinit%3E(javax.swing.text.Document,java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.Document"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        public JTextField(Javax.Swing.Text.Document arg0, string arg1, int arg2)
+        public JTextField(Javax.Swing.Text.Document arg0, Java.Lang.String arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
         }
@@ -79,8 +79,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#notifyAction"/>
         /// </summary>
-        public static string notifyAction { get { if (!_notifyActionReady) { _notifyActionContent = SGetField<string>(LocalBridgeClazz, "notifyAction"); _notifyActionReady = true; } return _notifyActionContent; } }
-        private static string _notifyActionContent = default;
+        public static Java.Lang.String notifyAction { get { if (!_notifyActionReady) { _notifyActionContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "notifyAction"); _notifyActionReady = true; } return _notifyActionContent; } }
+        private static Java.Lang.String _notifyActionContent = default;
         private static bool _notifyActionReady = false; // this is used because in case of generics 
 
         #endregion
@@ -158,8 +158,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#setActionCommand(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public void SetActionCommand(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetActionCommand(Java.Lang.String arg0)
         {
             IExecute("setActionCommand", arg0);
         }

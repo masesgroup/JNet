@@ -40,14 +40,14 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#NSDECL"/>
         /// </summary>
-        public static string NSDECL { get { if (!_NSDECLReady) { _NSDECLContent = SGetField<string>(LocalBridgeClazz, "NSDECL"); _NSDECLReady = true; } return _NSDECLContent; } }
-        private static string _NSDECLContent = default;
+        public static Java.Lang.String NSDECL { get { if (!_NSDECLReady) { _NSDECLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "NSDECL"); _NSDECLReady = true; } return _NSDECLContent; } }
+        private static Java.Lang.String _NSDECLContent = default;
         private static bool _NSDECLReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#XMLNS"/>
         /// </summary>
-        public static string XMLNS { get { if (!_XMLNSReady) { _XMLNSContent = SGetField<string>(LocalBridgeClazz, "XMLNS"); _XMLNSReady = true; } return _XMLNSContent; } }
-        private static string _XMLNSContent = default;
+        public static Java.Lang.String XMLNS { get { if (!_XMLNSReady) { _XMLNSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "XMLNS"); _XMLNSReady = true; } return _XMLNSContent; } }
+        private static Java.Lang.String _XMLNSContent = default;
         private static bool _XMLNSReady = false; // this is used because in case of generics 
 
         #endregion
@@ -60,24 +60,24 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#getDeclaredPrefixes()"/> 
         /// </summary>
-        public Java.Util.Enumeration<string> DeclaredPrefixes
+        public Java.Util.Enumeration<Java.Lang.String> DeclaredPrefixes
         {
-            get { return IExecute<Java.Util.Enumeration<string>>("getDeclaredPrefixes"); }
+            get { return IExecute<Java.Util.Enumeration<Java.Lang.String>>("getDeclaredPrefixes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#getPrefixes()"/> 
         /// </summary>
-        public Java.Util.Enumeration<string> Prefixes
+        public Java.Util.Enumeration<Java.Lang.String> Prefixes
         {
-            get { return IExecute<Java.Util.Enumeration<string>>("getPrefixes"); }
+            get { return IExecute<Java.Util.Enumeration<Java.Lang.String>>("getPrefixes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#declarePrefix(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool DeclarePrefix(string arg0, string arg1)
+        public bool DeclarePrefix(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecute<bool>("declarePrefix", arg0, arg1);
         }
@@ -93,40 +93,40 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#getPrefix(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetPrefix(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPrefix(Java.Lang.String arg0)
         {
-            return IExecute<string>("getPrefix", arg0);
+            return IExecute<Java.Lang.String>("getPrefix", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#getURI(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetURI(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetURI(Java.Lang.String arg0)
         {
-            return IExecute<string>("getURI", arg0);
+            return IExecute<Java.Lang.String>("getURI", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#processName(java.lang.String,java.lang.String[],boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string[] ProcessName(string arg0, string[] arg1, bool arg2)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] ProcessName(Java.Lang.String arg0, Java.Lang.String[] arg1, bool arg2)
         {
-            return IExecuteArray<string>("processName", arg0, arg1, arg2);
+            return IExecuteArray<Java.Lang.String>("processName", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#getPrefixes(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public Java.Util.Enumeration<string> GetPrefixes(string arg0)
+        public Java.Util.Enumeration<Java.Lang.String> GetPrefixes(Java.Lang.String arg0)
         {
-            return IExecute<Java.Util.Enumeration<string>>("getPrefixes", arg0);
+            return IExecute<Java.Util.Enumeration<Java.Lang.String>>("getPrefixes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#popContext()"/>
