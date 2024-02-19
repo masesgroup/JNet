@@ -94,9 +94,9 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#getCompressionQualityDescriptions()"/> 
         /// </summary>
-        public string[] CompressionQualityDescriptions
+        public Java.Lang.String[] CompressionQualityDescriptions
         {
-            get { return IExecuteArray<string>("getCompressionQualityDescriptions"); }
+            get { return IExecuteArray<Java.Lang.String>("getCompressionQualityDescriptions"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#getCompressionQualityValues()"/> 
@@ -108,16 +108,16 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#getCompressionType()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#setCompressionType(java.lang.String)"/>
         /// </summary>
-        public string CompressionType
+        public Java.Lang.String CompressionType
         {
-            get { return IExecute<string>("getCompressionType"); } set { IExecute("setCompressionType", value); }
+            get { return IExecute<Java.Lang.String>("getCompressionType"); } set { IExecute("setCompressionType", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#getCompressionTypes()"/> 
         /// </summary>
-        public string[] CompressionTypes
+        public Java.Lang.String[] CompressionTypes
         {
-            get { return IExecuteArray<string>("getCompressionTypes"); }
+            get { return IExecuteArray<Java.Lang.String>("getCompressionTypes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#getLocale()"/> 
@@ -129,9 +129,9 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#getLocalizedCompressionTypeName()"/> 
         /// </summary>
-        public string LocalizedCompressionTypeName
+        public Java.Lang.String LocalizedCompressionTypeName
         {
-            get { return IExecute<string>("getLocalizedCompressionTypeName"); }
+            get { return IExecute<Java.Lang.String>("getLocalizedCompressionTypeName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#getPreferredTileSizes()"/> 

@@ -60,8 +60,8 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServer.html#AUTHENTICATOR"/>
         /// </summary>
-        public static string AUTHENTICATOR { get { if (!_AUTHENTICATORReady) { _AUTHENTICATORContent = SGetField<string>(LocalBridgeClazz, "AUTHENTICATOR"); _AUTHENTICATORReady = true; } return _AUTHENTICATORContent; } }
-        private static string _AUTHENTICATORContent = default;
+        public static Java.Lang.String AUTHENTICATOR { get { if (!_AUTHENTICATORReady) { _AUTHENTICATORContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "AUTHENTICATOR"); _AUTHENTICATORReady = true; } return _AUTHENTICATORContent; } }
+        private static Java.Lang.String _AUTHENTICATORContent = default;
         private static bool _AUTHENTICATORReady = false; // this is used because in case of generics 
 
         #endregion
@@ -74,9 +74,9 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServer.html#getConnectionIds()"/> 
         /// </summary>
-        public string[] ConnectionIds
+        public Java.Lang.String[] ConnectionIds
         {
-            get { return IExecuteArray<string>("getConnectionIds"); }
+            get { return IExecuteArray<Java.Lang.String>("getConnectionIds"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServer.html#getMBeanServer()"/> 
@@ -91,7 +91,7 @@ namespace Javax.Management.Remote
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="Javax.Management.Remote.JMXConnector"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Javax.Management.Remote.JMXConnector ToJMXConnector(Java.Util.Map<string, object> arg0)
+        public Javax.Management.Remote.JMXConnector ToJMXConnector(Java.Util.Map<Java.Lang.String, object> arg0)
         {
             return IExecute<Javax.Management.Remote.JMXConnector>("toJMXConnector", arg0);
         }

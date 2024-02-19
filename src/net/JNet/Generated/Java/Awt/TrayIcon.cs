@@ -33,9 +33,9 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#%3Cinit%3E(java.awt.Image,java.lang.String,java.awt.PopupMenu)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Java.Awt.PopupMenu"/></param>
-        public TrayIcon(Java.Awt.Image arg0, string arg1, Java.Awt.PopupMenu arg2)
+        public TrayIcon(Java.Awt.Image arg0, Java.Lang.String arg1, Java.Awt.PopupMenu arg2)
             : base(arg0, arg1, arg2)
         {
         }
@@ -43,8 +43,8 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#%3Cinit%3E(java.awt.Image,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public TrayIcon(Java.Awt.Image arg0, string arg1)
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public TrayIcon(Java.Awt.Image arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
         }
@@ -75,9 +75,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#getActionCommand()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#setActionCommand(java.lang.String)"/>
         /// </summary>
-        public string ActionCommand
+        public Java.Lang.String ActionCommand
         {
-            get { return IExecute<string>("getActionCommand"); } set { IExecute("setActionCommand", value); }
+            get { return IExecute<Java.Lang.String>("getActionCommand"); } set { IExecute("setActionCommand", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#getActionListeners()"/> 
@@ -124,9 +124,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#getToolTip()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#setToolTip(java.lang.String)"/>
         /// </summary>
-        public string ToolTip
+        public Java.Lang.String ToolTip
         {
-            get { return IExecute<string>("getToolTip"); } set { IExecute("setToolTip", value); }
+            get { return IExecute<Java.Lang.String>("getToolTip"); } set { IExecute("setToolTip", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#isImageAutoSize()"/>
@@ -188,10 +188,10 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#displayMessage(java.lang.String,java.lang.String,java.awt.TrayIcon.MessageType)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Java.Awt.TrayIcon.MessageType"/></param>
-        public void DisplayMessage(string arg0, string arg1, Java.Awt.TrayIcon.MessageType arg2)
+        public void DisplayMessage(Java.Lang.String arg0, Java.Lang.String arg1, Java.Awt.TrayIcon.MessageType arg2)
         {
             IExecute("displayMessage", arg0, arg1, arg2);
         }
@@ -250,9 +250,9 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.MessageType.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Awt.TrayIcon.MessageType"/></returns>
-            public static Java.Awt.TrayIcon.MessageType ValueOf(string arg0)
+            public static Java.Awt.TrayIcon.MessageType ValueOf(Java.Lang.String arg0)
             {
                 return SExecute<Java.Awt.TrayIcon.MessageType>(LocalBridgeClazz, "valueOf", arg0);
             }

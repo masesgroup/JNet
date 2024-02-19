@@ -35,15 +35,15 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#getAlign()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#setAlign(java.lang.String)"/>
         /// </summary>
-        string Align { get; set; }
+        Java.Lang.String Align { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#getCh()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#setCh(java.lang.String)"/>
         /// </summary>
-        string Ch { get; set; }
+        Java.Lang.String Ch { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#getChOff()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#setChOff(java.lang.String)"/>
         /// </summary>
-        string ChOff { get; set; }
+        Java.Lang.String ChOff { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#getSpan()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#setSpan(int)"/>
         /// </summary>
@@ -51,11 +51,11 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#getVAlign()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#setVAlign(java.lang.String)"/>
         /// </summary>
-        string VAlign { get; set; }
+        Java.Lang.String VAlign { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#getWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#setWidth(java.lang.String)"/>
         /// </summary>
-        string Width { get; set; }
+        Java.Lang.String Width { get; set; }
 
         #endregion
 
@@ -90,23 +90,23 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#getAlign()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#setAlign(java.lang.String)"/>
         /// </summary>
-        public string Align
+        public Java.Lang.String Align
         {
-            get { return IExecute<string>("getAlign"); } set { IExecute("setAlign", value); }
+            get { return IExecute<Java.Lang.String>("getAlign"); } set { IExecute("setAlign", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#getCh()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#setCh(java.lang.String)"/>
         /// </summary>
-        public string Ch
+        public Java.Lang.String Ch
         {
-            get { return IExecute<string>("getCh"); } set { IExecute("setCh", value); }
+            get { return IExecute<Java.Lang.String>("getCh"); } set { IExecute("setCh", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#getChOff()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#setChOff(java.lang.String)"/>
         /// </summary>
-        public string ChOff
+        public Java.Lang.String ChOff
         {
-            get { return IExecute<string>("getChOff"); } set { IExecute("setChOff", value); }
+            get { return IExecute<Java.Lang.String>("getChOff"); } set { IExecute("setChOff", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#getSpan()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#setSpan(int)"/>
@@ -118,16 +118,16 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#getVAlign()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#setVAlign(java.lang.String)"/>
         /// </summary>
-        public string VAlign
+        public Java.Lang.String VAlign
         {
-            get { return IExecute<string>("getVAlign"); } set { IExecute("setVAlign", value); }
+            get { return IExecute<Java.Lang.String>("getVAlign"); } set { IExecute("setVAlign", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#getWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#setWidth(java.lang.String)"/>
         /// </summary>
-        public string Width
+        public Java.Lang.String Width
         {
-            get { return IExecute<string>("getWidth"); } set { IExecute("setWidth", value); }
+            get { return IExecute<Java.Lang.String>("getWidth"); } set { IExecute("setWidth", value); }
         }
 
         #endregion

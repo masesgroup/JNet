@@ -32,28 +32,28 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#%3Cinit%3E(java.lang.String,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        public StringCharacterIterator(string arg0, int arg1, int arg2, int arg3)
+        public StringCharacterIterator(Java.Lang.String arg0, int arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#%3Cinit%3E(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        public StringCharacterIterator(string arg0, int arg1)
+        public StringCharacterIterator(Java.Lang.String arg0, int arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public StringCharacterIterator(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public StringCharacterIterator(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -151,8 +151,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#setText(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public void SetText(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetText(Java.Lang.String arg0)
         {
             IExecute("setText", arg0);
         }

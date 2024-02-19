@@ -35,7 +35,7 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLHeadElement.html#getProfile()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLHeadElement.html#setProfile(java.lang.String)"/>
         /// </summary>
-        string Profile { get; set; }
+        Java.Lang.String Profile { get; set; }
 
         #endregion
 
@@ -70,9 +70,9 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLHeadElement.html#getProfile()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLHeadElement.html#setProfile(java.lang.String)"/>
         /// </summary>
-        public string Profile
+        public Java.Lang.String Profile
         {
-            get { return IExecute<string>("getProfile"); } set { IExecute("setProfile", value); }
+            get { return IExecute<Java.Lang.String>("getProfile"); } set { IExecute("setProfile", value); }
         }
 
         #endregion

@@ -85,10 +85,10 @@ namespace Java.Nio.Charset
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetDecoder.html#replacement()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        public string Replacement()
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String Replacement()
         {
-            return IExecute<string>("replacement");
+            return IExecute<Java.Lang.String>("replacement");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetDecoder.html#decode(java.nio.ByteBuffer)"/>
@@ -130,9 +130,9 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetDecoder.html#replaceWith(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Nio.Charset.CharsetDecoder"/></returns>
-        public Java.Nio.Charset.CharsetDecoder ReplaceWith(string arg0)
+        public Java.Nio.Charset.CharsetDecoder ReplaceWith(Java.Lang.String arg0)
         {
             return IExecute<Java.Nio.Charset.CharsetDecoder>("replaceWith", arg0);
         }

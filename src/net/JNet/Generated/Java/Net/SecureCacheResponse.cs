@@ -48,9 +48,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SecureCacheResponse.html#getCipherSuite()"/> 
         /// </summary>
-        public string CipherSuite
+        public Java.Lang.String CipherSuite
         {
-            get { return IExecute<string>("getCipherSuite"); }
+            get { return IExecute<Java.Lang.String>("getCipherSuite"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SecureCacheResponse.html#getLocalCertificateChain()"/> 

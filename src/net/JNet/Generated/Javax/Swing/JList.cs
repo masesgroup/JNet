@@ -311,11 +311,11 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getNextMatch(java.lang.String,int,javax.swing.text.Position.Bias)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Javax.Swing.Text.Position.Bias"/></param>
         /// <returns><see cref="int"/></returns>
-        public int GetNextMatch(string arg0, int arg1, Javax.Swing.Text.Position.Bias arg2)
+        public int GetNextMatch(Java.Lang.String arg0, int arg1, Javax.Swing.Text.Position.Bias arg2)
         {
             return IExecute<int>("getNextMatch", arg0, arg1, arg2);
         }
@@ -816,11 +816,11 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getNextMatch(java.lang.String,int,javax.swing.text.Position.Bias)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Javax.Swing.Text.Position.Bias"/></param>
         /// <returns><see cref="int"/></returns>
-        public int GetNextMatch(string arg0, int arg1, Javax.Swing.Text.Position.Bias arg2)
+        public int GetNextMatch(Java.Lang.String arg0, int arg1, Javax.Swing.Text.Position.Bias arg2)
         {
             return IExecute<int>("getNextMatch", arg0, arg1, arg2);
         }

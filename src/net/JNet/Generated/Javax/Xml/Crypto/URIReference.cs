@@ -35,11 +35,11 @@ namespace Javax.Xml.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/URIReference.html#getType()"/> 
         /// </summary>
-        string Type { get; }
+        Java.Lang.String Type { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/URIReference.html#getURI()"/> 
         /// </summary>
-        string URI { get; }
+        Java.Lang.String URI { get; }
 
         #endregion
 
@@ -74,16 +74,16 @@ namespace Javax.Xml.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/URIReference.html#getType()"/> 
         /// </summary>
-        public string Type
+        public Java.Lang.String Type
         {
-            get { return IExecute<string>("getType"); }
+            get { return IExecute<Java.Lang.String>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/URIReference.html#getURI()"/> 
         /// </summary>
-        public string URI
+        public Java.Lang.String URI
         {
-            get { return IExecute<string>("getURI"); }
+            get { return IExecute<Java.Lang.String>("getURI"); }
         }
 
         #endregion

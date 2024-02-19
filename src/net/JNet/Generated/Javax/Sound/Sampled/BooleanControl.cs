@@ -56,10 +56,10 @@ namespace Javax.Sound.Sampled
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/BooleanControl.html#getStateLabel(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetStateLabel(bool arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetStateLabel(bool arg0)
         {
-            return IExecute<string>("getStateLabel", arg0);
+            return IExecute<Java.Lang.String>("getStateLabel", arg0);
         }
 
         #endregion

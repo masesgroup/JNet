@@ -35,9 +35,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/FileNameMap.html#getContentTypeFor(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        string GetContentTypeFor(string arg0);
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        Java.Lang.String GetContentTypeFor(Java.Lang.String arg0);
 
         #endregion
 
@@ -72,11 +72,11 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/FileNameMap.html#getContentTypeFor(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetContentTypeFor(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetContentTypeFor(Java.Lang.String arg0)
         {
-            return IExecute<string>("getContentTypeFor", arg0);
+            return IExecute<Java.Lang.String>("getContentTypeFor", arg0);
         }
 
         #endregion

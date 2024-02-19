@@ -39,7 +39,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotification.html#getReferrals()"/> 
         /// </summary>
-        string[] Referrals { get; }
+        Java.Lang.String[] Referrals { get; }
 
         #endregion
 
@@ -89,9 +89,9 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotification.html#getReferrals()"/> 
         /// </summary>
-        public string[] Referrals
+        public Java.Lang.String[] Referrals
         {
-            get { return IExecuteArray<string>("getReferrals"); }
+            get { return IExecuteArray<Java.Lang.String>("getReferrals"); }
         }
 
         #endregion

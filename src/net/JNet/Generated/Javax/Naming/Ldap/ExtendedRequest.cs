@@ -39,17 +39,17 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ExtendedRequest.html#getID()"/> 
         /// </summary>
-        string ID { get; }
+        Java.Lang.String ID { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ExtendedRequest.html#createExtendedResponse(java.lang.String,byte[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="Javax.Naming.Ldap.ExtendedResponse"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        Javax.Naming.Ldap.ExtendedResponse CreateExtendedResponse(string arg0, byte[] arg1, int arg2, int arg3);
+        Javax.Naming.Ldap.ExtendedResponse CreateExtendedResponse(Java.Lang.String arg0, byte[] arg1, int arg2, int arg3);
 
         #endregion
 
@@ -91,20 +91,20 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ExtendedRequest.html#getID()"/> 
         /// </summary>
-        public string ID
+        public Java.Lang.String ID
         {
-            get { return IExecute<string>("getID"); }
+            get { return IExecute<Java.Lang.String>("getID"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ExtendedRequest.html#createExtendedResponse(java.lang.String,byte[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="Javax.Naming.Ldap.ExtendedResponse"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public Javax.Naming.Ldap.ExtendedResponse CreateExtendedResponse(string arg0, byte[] arg1, int arg2, int arg3)
+        public Javax.Naming.Ldap.ExtendedResponse CreateExtendedResponse(Java.Lang.String arg0, byte[] arg1, int arg2, int arg3)
         {
             return IExecute<Javax.Naming.Ldap.ExtendedResponse>("createExtendedResponse", arg0, arg1, arg2, arg3);
         }

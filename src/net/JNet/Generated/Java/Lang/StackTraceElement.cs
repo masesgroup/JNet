@@ -32,25 +32,25 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        public StackTraceElement(string arg0, string arg1, string arg2, int arg3)
+        public StackTraceElement(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
-        /// <param name="arg3"><see cref="string"/></param>
-        /// <param name="arg4"><see cref="string"/></param>
-        /// <param name="arg5"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg5"><see cref="Java.Lang.String"/></param>
         /// <param name="arg6"><see cref="int"/></param>
-        public StackTraceElement(string arg0, string arg1, string arg2, string arg3, string arg4, string arg5, int arg6)
+        public StackTraceElement(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4, Java.Lang.String arg5, int arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
         }
@@ -73,23 +73,23 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#getClassLoaderName()"/> 
         /// </summary>
-        public string ClassLoaderName
+        public Java.Lang.String ClassLoaderName
         {
-            get { return IExecute<string>("getClassLoaderName"); }
+            get { return IExecute<Java.Lang.String>("getClassLoaderName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#getClassName()"/> 
         /// </summary>
-        public string ClassName
+        public Java.Lang.String ClassName
         {
-            get { return IExecute<string>("getClassName"); }
+            get { return IExecute<Java.Lang.String>("getClassName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#getFileName()"/> 
         /// </summary>
-        public string FileName
+        public Java.Lang.String FileName
         {
-            get { return IExecute<string>("getFileName"); }
+            get { return IExecute<Java.Lang.String>("getFileName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#getLineNumber()"/> 
@@ -101,23 +101,23 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#getMethodName()"/> 
         /// </summary>
-        public string MethodName
+        public Java.Lang.String MethodName
         {
-            get { return IExecute<string>("getMethodName"); }
+            get { return IExecute<Java.Lang.String>("getMethodName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#getModuleName()"/> 
         /// </summary>
-        public string ModuleName
+        public Java.Lang.String ModuleName
         {
-            get { return IExecute<string>("getModuleName"); }
+            get { return IExecute<Java.Lang.String>("getModuleName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#getModuleVersion()"/> 
         /// </summary>
-        public string ModuleVersion
+        public Java.Lang.String ModuleVersion
         {
-            get { return IExecute<string>("getModuleVersion"); }
+            get { return IExecute<Java.Lang.String>("getModuleVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#isNativeMethod()"/>

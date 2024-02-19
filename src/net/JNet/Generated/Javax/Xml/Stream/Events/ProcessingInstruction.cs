@@ -35,11 +35,11 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/ProcessingInstruction.html#getData()"/> 
         /// </summary>
-        string Data { get; }
+        Java.Lang.String Data { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/ProcessingInstruction.html#getTarget()"/> 
         /// </summary>
-        string Target { get; }
+        Java.Lang.String Target { get; }
 
         #endregion
 
@@ -74,16 +74,16 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/ProcessingInstruction.html#getData()"/> 
         /// </summary>
-        public string Data
+        public Java.Lang.String Data
         {
-            get { return IExecute<string>("getData"); }
+            get { return IExecute<Java.Lang.String>("getData"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/ProcessingInstruction.html#getTarget()"/> 
         /// </summary>
-        public string Target
+        public Java.Lang.String Target
         {
-            get { return IExecute<string>("getTarget"); }
+            get { return IExecute<Java.Lang.String>("getTarget"); }
         }
 
         #endregion

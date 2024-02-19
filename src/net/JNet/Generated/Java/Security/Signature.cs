@@ -44,33 +44,33 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Security.Signature"/></returns>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         /// <exception cref="Java.Security.NoSuchProviderException"/>
-        public static Java.Security.Signature GetInstance(string arg0, string arg1)
+        public static Java.Security.Signature GetInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return SExecute<Java.Security.Signature>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#getInstance(java.lang.String,java.security.Provider)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
         /// <returns><see cref="Java.Security.Signature"/></returns>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        public static Java.Security.Signature GetInstance(string arg0, Java.Security.Provider arg1)
+        public static Java.Security.Signature GetInstance(Java.Lang.String arg0, Java.Security.Provider arg1)
         {
             return SExecute<Java.Security.Signature>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#getInstance(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Security.Signature"/></returns>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        public static Java.Security.Signature GetInstance(string arg0)
+        public static Java.Security.Signature GetInstance(Java.Lang.String arg0)
         {
             return SExecute<Java.Security.Signature>(LocalBridgeClazz, "getInstance", arg0);
         }
@@ -81,9 +81,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#getAlgorithm()"/> 
         /// </summary>
-        public string Algorithm
+        public Java.Lang.String Algorithm
         {
-            get { return IExecute<string>("getAlgorithm"); }
+            get { return IExecute<Java.Lang.String>("getAlgorithm"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#getParameters()"/> 

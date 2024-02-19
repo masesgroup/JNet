@@ -35,27 +35,27 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html#getInputEncoding()"/> 
         /// </summary>
-        string InputEncoding { get; }
+        Java.Lang.String InputEncoding { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html#getNotationName()"/> 
         /// </summary>
-        string NotationName { get; }
+        Java.Lang.String NotationName { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html#getPublicId()"/> 
         /// </summary>
-        string PublicId { get; }
+        Java.Lang.String PublicId { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html#getSystemId()"/> 
         /// </summary>
-        string SystemId { get; }
+        Java.Lang.String SystemId { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html#getXmlEncoding()"/> 
         /// </summary>
-        string XmlEncoding { get; }
+        Java.Lang.String XmlEncoding { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html#getXmlVersion()"/> 
         /// </summary>
-        string XmlVersion { get; }
+        Java.Lang.String XmlVersion { get; }
 
         #endregion
 
@@ -90,44 +90,44 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html#getInputEncoding()"/> 
         /// </summary>
-        public string InputEncoding
+        public Java.Lang.String InputEncoding
         {
-            get { return IExecute<string>("getInputEncoding"); }
+            get { return IExecute<Java.Lang.String>("getInputEncoding"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html#getNotationName()"/> 
         /// </summary>
-        public string NotationName
+        public Java.Lang.String NotationName
         {
-            get { return IExecute<string>("getNotationName"); }
+            get { return IExecute<Java.Lang.String>("getNotationName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html#getPublicId()"/> 
         /// </summary>
-        public string PublicId
+        public Java.Lang.String PublicId
         {
-            get { return IExecute<string>("getPublicId"); }
+            get { return IExecute<Java.Lang.String>("getPublicId"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html#getSystemId()"/> 
         /// </summary>
-        public string SystemId
+        public Java.Lang.String SystemId
         {
-            get { return IExecute<string>("getSystemId"); }
+            get { return IExecute<Java.Lang.String>("getSystemId"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html#getXmlEncoding()"/> 
         /// </summary>
-        public string XmlEncoding
+        public Java.Lang.String XmlEncoding
         {
-            get { return IExecute<string>("getXmlEncoding"); }
+            get { return IExecute<Java.Lang.String>("getXmlEncoding"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html#getXmlVersion()"/> 
         /// </summary>
-        public string XmlVersion
+        public Java.Lang.String XmlVersion
         {
-            get { return IExecute<string>("getXmlVersion"); }
+            get { return IExecute<Java.Lang.String>("getXmlVersion"); }
         }
 
         #endregion

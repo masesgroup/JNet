@@ -74,21 +74,21 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ByteArrayOutputStream.html#toString(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Io.UnsupportedEncodingException"/>
-        public string ToString(string arg0)
+        public Java.Lang.String ToString(Java.Lang.String arg0)
         {
-            return IExecute<string>("toString", arg0);
+            return IExecute<Java.Lang.String>("toString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ByteArrayOutputStream.html#toString(java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Charset.Charset"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string ToString(Java.Nio.Charset.Charset arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String ToString(Java.Nio.Charset.Charset arg0)
         {
-            return IExecute<string>("toString", arg0);
+            return IExecute<Java.Lang.String>("toString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ByteArrayOutputStream.html#reset()"/>

@@ -109,9 +109,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#getCorner(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Awt.Component"/></returns>
-        public Java.Awt.Component GetCorner(string arg0)
+        public Java.Awt.Component GetCorner(Java.Lang.String arg0)
         {
             return IExecute<Java.Awt.Component>("getCorner", arg0);
         }
@@ -136,9 +136,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#addLayoutComponent(java.lang.String,java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
-        public void AddLayoutComponent(string arg0, Java.Awt.Component arg1)
+        public void AddLayoutComponent(Java.Lang.String arg0, Java.Awt.Component arg1)
         {
             IExecute("addLayoutComponent", arg0, arg1);
         }

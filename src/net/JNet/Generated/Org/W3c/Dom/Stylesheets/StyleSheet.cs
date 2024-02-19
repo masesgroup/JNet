@@ -39,7 +39,7 @@ namespace Org.W3c.Dom.Stylesheets
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/StyleSheet.html#getHref()"/> 
         /// </summary>
-        string Href { get; }
+        Java.Lang.String Href { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/StyleSheet.html#getMedia()"/> 
         /// </summary>
@@ -55,11 +55,11 @@ namespace Org.W3c.Dom.Stylesheets
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/StyleSheet.html#getTitle()"/> 
         /// </summary>
-        string Title { get; }
+        Java.Lang.String Title { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/StyleSheet.html#getType()"/> 
         /// </summary>
-        string Type { get; }
+        Java.Lang.String Type { get; }
 
         #endregion
 
@@ -101,9 +101,9 @@ namespace Org.W3c.Dom.Stylesheets
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/StyleSheet.html#getHref()"/> 
         /// </summary>
-        public string Href
+        public Java.Lang.String Href
         {
-            get { return IExecute<string>("getHref"); }
+            get { return IExecute<Java.Lang.String>("getHref"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/StyleSheet.html#getMedia()"/> 
@@ -129,16 +129,16 @@ namespace Org.W3c.Dom.Stylesheets
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/StyleSheet.html#getTitle()"/> 
         /// </summary>
-        public string Title
+        public Java.Lang.String Title
         {
-            get { return IExecute<string>("getTitle"); }
+            get { return IExecute<Java.Lang.String>("getTitle"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/StyleSheet.html#getType()"/> 
         /// </summary>
-        public string Type
+        public Java.Lang.String Type
         {
-            get { return IExecute<string>("getType"); }
+            get { return IExecute<Java.Lang.String>("getType"); }
         }
 
         #endregion

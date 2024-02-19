@@ -110,9 +110,9 @@ namespace Java.Lang.Annotation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Annotation.ElementType"/></returns>
-        public static Java.Lang.Annotation.ElementType ValueOf(string arg0)
+        public static Java.Lang.Annotation.ElementType ValueOf(Java.Lang.String arg0)
         {
             return SExecute<Java.Lang.Annotation.ElementType>(LocalBridgeClazz, "valueOf", arg0);
         }

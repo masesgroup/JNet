@@ -51,9 +51,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getCrossPlatformLookAndFeelClassName()"/> 
         /// </summary>
-        public static string CrossPlatformLookAndFeelClassName
+        public static Java.Lang.String CrossPlatformLookAndFeelClassName
         {
-            get { return SExecute<string>(LocalBridgeClazz, "getCrossPlatformLookAndFeelClassName"); }
+            get { return SExecute<Java.Lang.String>(LocalBridgeClazz, "getCrossPlatformLookAndFeelClassName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getDefaults()"/> 
@@ -93,9 +93,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getSystemLookAndFeelClassName()"/> 
         /// </summary>
-        public static string SystemLookAndFeelClassName
+        public static Java.Lang.String SystemLookAndFeelClassName
         {
-            get { return SExecute<string>(LocalBridgeClazz, "getSystemLookAndFeelClassName"); }
+            get { return SExecute<Java.Lang.String>(LocalBridgeClazz, "getSystemLookAndFeelClassName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getBoolean(java.lang.Object,java.util.Locale)"/>
@@ -254,19 +254,19 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string GetString(object arg0, Java.Util.Locale arg1)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String GetString(object arg0, Java.Util.Locale arg1)
         {
-            return SExecute<string>(LocalBridgeClazz, "getString", arg0, arg1);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getString", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getString(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string GetString(object arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String GetString(object arg0)
         {
-            return SExecute<string>(LocalBridgeClazz, "getString", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getBorder(java.lang.Object,java.util.Locale)"/>
@@ -309,10 +309,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#createLookAndFeel(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Swing.LookAndFeel"/></returns>
         /// <exception cref="Javax.Swing.UnsupportedLookAndFeelException"/>
-        public static Javax.Swing.LookAndFeel CreateLookAndFeel(string arg0)
+        public static Javax.Swing.LookAndFeel CreateLookAndFeel(Java.Lang.String arg0)
         {
             return SExecute<Javax.Swing.LookAndFeel>(LocalBridgeClazz, "createLookAndFeel", arg0);
         }
@@ -344,9 +344,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#installLookAndFeel(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public static void InstallLookAndFeel(string arg0, string arg1)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public static void InstallLookAndFeel(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             SExecute(LocalBridgeClazz, "installLookAndFeel", arg0, arg1);
         }
@@ -369,12 +369,12 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#setLookAndFeel(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         /// <exception cref="Java.Lang.InstantiationException"/>
         /// <exception cref="Java.Lang.IllegalAccessException"/>
         /// <exception cref="Javax.Swing.UnsupportedLookAndFeelException"/>
-        public static void SetLookAndFeel(string arg0)
+        public static void SetLookAndFeel(Java.Lang.String arg0)
         {
             SExecute(LocalBridgeClazz, "setLookAndFeel", arg0);
         }
@@ -402,9 +402,9 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.LookAndFeelInfo.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
-            /// <param name="arg1"><see cref="string"/></param>
-            public LookAndFeelInfo(string arg0, string arg1)
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+            public LookAndFeelInfo(Java.Lang.String arg0, Java.Lang.String arg1)
                 : base(arg0, arg1)
             {
             }
@@ -427,16 +427,16 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.LookAndFeelInfo.html#getClassName()"/> 
             /// </summary>
-            public string ClassName
+            public Java.Lang.String ClassName
             {
-                get { return IExecute<string>("getClassName"); }
+                get { return IExecute<Java.Lang.String>("getClassName"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.LookAndFeelInfo.html#getName()"/> 
             /// </summary>
-            public string Name
+            public Java.Lang.String Name
             {
-                get { return IExecute<string>("getName"); }
+                get { return IExecute<Java.Lang.String>("getName"); }
             }
 
             #endregion

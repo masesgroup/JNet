@@ -32,9 +32,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MaskFormatter.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Text.ParseException"/>
-        public MaskFormatter(string arg0)
+        public MaskFormatter(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -57,23 +57,23 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MaskFormatter.html#getInvalidCharacters()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MaskFormatter.html#setInvalidCharacters(java.lang.String)"/>
         /// </summary>
-        public string InvalidCharacters
+        public Java.Lang.String InvalidCharacters
         {
-            get { return IExecute<string>("getInvalidCharacters"); } set { IExecute("setInvalidCharacters", value); }
+            get { return IExecute<Java.Lang.String>("getInvalidCharacters"); } set { IExecute("setInvalidCharacters", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MaskFormatter.html#getMask()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MaskFormatter.html#setMask(java.lang.String)"/>
         /// </summary>
-        public string Mask
+        public Java.Lang.String Mask
         {
-            get { return IExecute<string>("getMask"); } set { IExecute("setMask", value); }
+            get { return IExecute<Java.Lang.String>("getMask"); } set { IExecute("setMask", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MaskFormatter.html#getPlaceholder()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MaskFormatter.html#setPlaceholder(java.lang.String)"/>
         /// </summary>
-        public string Placeholder
+        public Java.Lang.String Placeholder
         {
-            get { return IExecute<string>("getPlaceholder"); } set { IExecute("setPlaceholder", value); }
+            get { return IExecute<Java.Lang.String>("getPlaceholder"); } set { IExecute("setPlaceholder", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MaskFormatter.html#getPlaceholderCharacter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MaskFormatter.html#setPlaceholderCharacter(char)"/>
@@ -85,9 +85,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MaskFormatter.html#getValidCharacters()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MaskFormatter.html#setValidCharacters(java.lang.String)"/>
         /// </summary>
-        public string ValidCharacters
+        public Java.Lang.String ValidCharacters
         {
-            get { return IExecute<string>("getValidCharacters"); } set { IExecute("setValidCharacters", value); }
+            get { return IExecute<Java.Lang.String>("getValidCharacters"); } set { IExecute("setValidCharacters", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MaskFormatter.html#getValueContainsLiteralCharacters()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MaskFormatter.html#setValueContainsLiteralCharacters(boolean)"/>

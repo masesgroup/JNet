@@ -71,9 +71,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#getAvailableFontFamilyNames()"/> 
         /// </summary>
-        public string[] AvailableFontFamilyNames
+        public Java.Lang.String[] AvailableFontFamilyNames
         {
-            get { return IExecuteArray<string>("getAvailableFontFamilyNames"); }
+            get { return IExecuteArray<Java.Lang.String>("getAvailableFontFamilyNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#getCenterPoint()"/> 
@@ -116,10 +116,10 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#getAvailableFontFamilyNames(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string[] GetAvailableFontFamilyNames(Java.Util.Locale arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetAvailableFontFamilyNames(Java.Util.Locale arg0)
         {
-            return IExecuteArray<string>("getAvailableFontFamilyNames", arg0);
+            return IExecuteArray<Java.Lang.String>("getAvailableFontFamilyNames", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#isHeadlessInstance()"/>

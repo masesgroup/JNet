@@ -217,8 +217,8 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#STRING"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType<string> STRING { get { if (!_STRINGReady) { _STRINGContent = SGetField<Javax.Management.Openmbean.SimpleType<string>>(LocalBridgeClazz, "STRING"); _STRINGReady = true; } return _STRINGContent; } }
-        private static Javax.Management.Openmbean.SimpleType<string> _STRINGContent = default;
+        public static Javax.Management.Openmbean.SimpleType<Java.Lang.String> STRING { get { if (!_STRINGReady) { _STRINGContent = SGetField<Javax.Management.Openmbean.SimpleType<Java.Lang.String>>(LocalBridgeClazz, "STRING"); _STRINGReady = true; } return _STRINGContent; } }
+        private static Javax.Management.Openmbean.SimpleType<Java.Lang.String> _STRINGContent = default;
         private static bool _STRINGReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#VOID"/>

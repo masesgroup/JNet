@@ -36,20 +36,20 @@ namespace Javax.Annotation.Processing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html#comments()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        string Comments();
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        Java.Lang.String Comments();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html#date()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        string Date();
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        Java.Lang.String Date();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html#value()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        string[] Value();
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        Java.Lang.String[] Value();
 
         #endregion
 
@@ -85,28 +85,28 @@ namespace Javax.Annotation.Processing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html#comments()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        public string Comments()
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String Comments()
         {
-            return IExecute<string>("comments");
+            return IExecute<Java.Lang.String>("comments");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html#date()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        public string Date()
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String Date()
         {
-            return IExecute<string>("date");
+            return IExecute<Java.Lang.String>("date");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html#value()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        public string[] Value()
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] Value()
         {
-            return IExecuteArray<string>("value");
+            return IExecuteArray<Java.Lang.String>("value");
         }
 
         #endregion

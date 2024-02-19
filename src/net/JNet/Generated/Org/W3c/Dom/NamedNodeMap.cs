@@ -39,17 +39,17 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/NamedNodeMap.html#getNamedItem(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
-        Org.W3c.Dom.Node GetNamedItem(string arg0);
+        Org.W3c.Dom.Node GetNamedItem(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/NamedNodeMap.html#getNamedItemNS(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        Org.W3c.Dom.Node GetNamedItemNS(string arg0, string arg1);
+        Org.W3c.Dom.Node GetNamedItemNS(Java.Lang.String arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/NamedNodeMap.html#item(int)"/>
         /// </summary>
@@ -59,18 +59,18 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/NamedNodeMap.html#removeNamedItem(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        Org.W3c.Dom.Node RemoveNamedItem(string arg0);
+        Org.W3c.Dom.Node RemoveNamedItem(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/NamedNodeMap.html#removeNamedItemNS(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        Org.W3c.Dom.Node RemoveNamedItemNS(string arg0, string arg1);
+        Org.W3c.Dom.Node RemoveNamedItemNS(Java.Lang.String arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/NamedNodeMap.html#setNamedItem(org.w3c.dom.Node)"/>
         /// </summary>
@@ -126,20 +126,20 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/NamedNodeMap.html#getNamedItem(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
-        public Org.W3c.Dom.Node GetNamedItem(string arg0)
+        public Org.W3c.Dom.Node GetNamedItem(Java.Lang.String arg0)
         {
             return IExecute<Org.W3c.Dom.Node>("getNamedItem", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/NamedNodeMap.html#getNamedItemNS(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        public Org.W3c.Dom.Node GetNamedItemNS(string arg0, string arg1)
+        public Org.W3c.Dom.Node GetNamedItemNS(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecute<Org.W3c.Dom.Node>("getNamedItemNS", arg0, arg1);
         }
@@ -155,21 +155,21 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/NamedNodeMap.html#removeNamedItem(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        public Org.W3c.Dom.Node RemoveNamedItem(string arg0)
+        public Org.W3c.Dom.Node RemoveNamedItem(Java.Lang.String arg0)
         {
             return IExecute<Org.W3c.Dom.Node>("removeNamedItem", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/NamedNodeMap.html#removeNamedItemNS(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        public Org.W3c.Dom.Node RemoveNamedItemNS(string arg0, string arg1)
+        public Org.W3c.Dom.Node RemoveNamedItemNS(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecute<Org.W3c.Dom.Node>("removeNamedItemNS", arg0, arg1);
         }

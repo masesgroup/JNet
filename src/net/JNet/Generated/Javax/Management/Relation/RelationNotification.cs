@@ -32,36 +32,36 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#%3Cinit%3E(java.lang.String,java.lang.Object,long,long,java.lang.String,java.lang.String,java.lang.String,javax.management.ObjectName,java.lang.String,java.util.List,java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="long"/></param>
         /// <param name="arg3"><see cref="long"/></param>
-        /// <param name="arg4"><see cref="string"/></param>
-        /// <param name="arg5"><see cref="string"/></param>
-        /// <param name="arg6"><see cref="string"/></param>
+        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg5"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg6"><see cref="Java.Lang.String"/></param>
         /// <param name="arg7"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg8"><see cref="string"/></param>
+        /// <param name="arg8"><see cref="Java.Lang.String"/></param>
         /// <param name="arg9"><see cref="Java.Util.List"/></param>
         /// <param name="arg10"><see cref="Java.Util.List"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        public RelationNotification(string arg0, object arg1, long arg2, long arg3, string arg4, string arg5, string arg6, Javax.Management.ObjectName arg7, string arg8, Java.Util.List<Javax.Management.ObjectName> arg9, Java.Util.List<Javax.Management.ObjectName> arg10)
+        public RelationNotification(Java.Lang.String arg0, object arg1, long arg2, long arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String arg6, Javax.Management.ObjectName arg7, Java.Lang.String arg8, Java.Util.List<Javax.Management.ObjectName> arg9, Java.Util.List<Javax.Management.ObjectName> arg10)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#%3Cinit%3E(java.lang.String,java.lang.Object,long,long,java.lang.String,java.lang.String,java.lang.String,javax.management.ObjectName,java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="long"/></param>
         /// <param name="arg3"><see cref="long"/></param>
-        /// <param name="arg4"><see cref="string"/></param>
-        /// <param name="arg5"><see cref="string"/></param>
-        /// <param name="arg6"><see cref="string"/></param>
+        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg5"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg6"><see cref="Java.Lang.String"/></param>
         /// <param name="arg7"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg8"><see cref="Java.Util.List"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        public RelationNotification(string arg0, object arg1, long arg2, long arg3, string arg4, string arg5, string arg6, Javax.Management.ObjectName arg7, Java.Util.List<Javax.Management.ObjectName> arg8)
+        public RelationNotification(Java.Lang.String arg0, object arg1, long arg2, long arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String arg6, Javax.Management.ObjectName arg7, Java.Util.List<Javax.Management.ObjectName> arg8)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8)
         {
         }
@@ -76,38 +76,38 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_BASIC_CREATION"/>
         /// </summary>
-        public static string RELATION_BASIC_CREATION { get { if (!_RELATION_BASIC_CREATIONReady) { _RELATION_BASIC_CREATIONContent = SGetField<string>(LocalBridgeClazz, "RELATION_BASIC_CREATION"); _RELATION_BASIC_CREATIONReady = true; } return _RELATION_BASIC_CREATIONContent; } }
-        private static string _RELATION_BASIC_CREATIONContent = default;
+        public static Java.Lang.String RELATION_BASIC_CREATION { get { if (!_RELATION_BASIC_CREATIONReady) { _RELATION_BASIC_CREATIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "RELATION_BASIC_CREATION"); _RELATION_BASIC_CREATIONReady = true; } return _RELATION_BASIC_CREATIONContent; } }
+        private static Java.Lang.String _RELATION_BASIC_CREATIONContent = default;
         private static bool _RELATION_BASIC_CREATIONReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_BASIC_REMOVAL"/>
         /// </summary>
-        public static string RELATION_BASIC_REMOVAL { get { if (!_RELATION_BASIC_REMOVALReady) { _RELATION_BASIC_REMOVALContent = SGetField<string>(LocalBridgeClazz, "RELATION_BASIC_REMOVAL"); _RELATION_BASIC_REMOVALReady = true; } return _RELATION_BASIC_REMOVALContent; } }
-        private static string _RELATION_BASIC_REMOVALContent = default;
+        public static Java.Lang.String RELATION_BASIC_REMOVAL { get { if (!_RELATION_BASIC_REMOVALReady) { _RELATION_BASIC_REMOVALContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "RELATION_BASIC_REMOVAL"); _RELATION_BASIC_REMOVALReady = true; } return _RELATION_BASIC_REMOVALContent; } }
+        private static Java.Lang.String _RELATION_BASIC_REMOVALContent = default;
         private static bool _RELATION_BASIC_REMOVALReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_BASIC_UPDATE"/>
         /// </summary>
-        public static string RELATION_BASIC_UPDATE { get { if (!_RELATION_BASIC_UPDATEReady) { _RELATION_BASIC_UPDATEContent = SGetField<string>(LocalBridgeClazz, "RELATION_BASIC_UPDATE"); _RELATION_BASIC_UPDATEReady = true; } return _RELATION_BASIC_UPDATEContent; } }
-        private static string _RELATION_BASIC_UPDATEContent = default;
+        public static Java.Lang.String RELATION_BASIC_UPDATE { get { if (!_RELATION_BASIC_UPDATEReady) { _RELATION_BASIC_UPDATEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "RELATION_BASIC_UPDATE"); _RELATION_BASIC_UPDATEReady = true; } return _RELATION_BASIC_UPDATEContent; } }
+        private static Java.Lang.String _RELATION_BASIC_UPDATEContent = default;
         private static bool _RELATION_BASIC_UPDATEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_MBEAN_CREATION"/>
         /// </summary>
-        public static string RELATION_MBEAN_CREATION { get { if (!_RELATION_MBEAN_CREATIONReady) { _RELATION_MBEAN_CREATIONContent = SGetField<string>(LocalBridgeClazz, "RELATION_MBEAN_CREATION"); _RELATION_MBEAN_CREATIONReady = true; } return _RELATION_MBEAN_CREATIONContent; } }
-        private static string _RELATION_MBEAN_CREATIONContent = default;
+        public static Java.Lang.String RELATION_MBEAN_CREATION { get { if (!_RELATION_MBEAN_CREATIONReady) { _RELATION_MBEAN_CREATIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "RELATION_MBEAN_CREATION"); _RELATION_MBEAN_CREATIONReady = true; } return _RELATION_MBEAN_CREATIONContent; } }
+        private static Java.Lang.String _RELATION_MBEAN_CREATIONContent = default;
         private static bool _RELATION_MBEAN_CREATIONReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_MBEAN_REMOVAL"/>
         /// </summary>
-        public static string RELATION_MBEAN_REMOVAL { get { if (!_RELATION_MBEAN_REMOVALReady) { _RELATION_MBEAN_REMOVALContent = SGetField<string>(LocalBridgeClazz, "RELATION_MBEAN_REMOVAL"); _RELATION_MBEAN_REMOVALReady = true; } return _RELATION_MBEAN_REMOVALContent; } }
-        private static string _RELATION_MBEAN_REMOVALContent = default;
+        public static Java.Lang.String RELATION_MBEAN_REMOVAL { get { if (!_RELATION_MBEAN_REMOVALReady) { _RELATION_MBEAN_REMOVALContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "RELATION_MBEAN_REMOVAL"); _RELATION_MBEAN_REMOVALReady = true; } return _RELATION_MBEAN_REMOVALContent; } }
+        private static Java.Lang.String _RELATION_MBEAN_REMOVALContent = default;
         private static bool _RELATION_MBEAN_REMOVALReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_MBEAN_UPDATE"/>
         /// </summary>
-        public static string RELATION_MBEAN_UPDATE { get { if (!_RELATION_MBEAN_UPDATEReady) { _RELATION_MBEAN_UPDATEContent = SGetField<string>(LocalBridgeClazz, "RELATION_MBEAN_UPDATE"); _RELATION_MBEAN_UPDATEReady = true; } return _RELATION_MBEAN_UPDATEContent; } }
-        private static string _RELATION_MBEAN_UPDATEContent = default;
+        public static Java.Lang.String RELATION_MBEAN_UPDATE { get { if (!_RELATION_MBEAN_UPDATEReady) { _RELATION_MBEAN_UPDATEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "RELATION_MBEAN_UPDATE"); _RELATION_MBEAN_UPDATEReady = true; } return _RELATION_MBEAN_UPDATEContent; } }
+        private static Java.Lang.String _RELATION_MBEAN_UPDATEContent = default;
         private static bool _RELATION_MBEAN_UPDATEReady = false; // this is used because in case of generics 
 
         #endregion
@@ -148,23 +148,23 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#getRelationId()"/> 
         /// </summary>
-        public string RelationId
+        public Java.Lang.String RelationId
         {
-            get { return IExecute<string>("getRelationId"); }
+            get { return IExecute<Java.Lang.String>("getRelationId"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#getRelationTypeName()"/> 
         /// </summary>
-        public string RelationTypeName
+        public Java.Lang.String RelationTypeName
         {
-            get { return IExecute<string>("getRelationTypeName"); }
+            get { return IExecute<Java.Lang.String>("getRelationTypeName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#getRoleName()"/> 
         /// </summary>
-        public string RoleName
+        public Java.Lang.String RoleName
         {
-            get { return IExecute<string>("getRoleName"); }
+            get { return IExecute<Java.Lang.String>("getRoleName"); }
         }
 
         #endregion

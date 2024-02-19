@@ -57,9 +57,9 @@ namespace Java.Nio.File.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#getScheme()"/> 
         /// </summary>
-        public string Scheme
+        public Java.Lang.String Scheme
         {
-            get { return IExecute<string>("getScheme"); }
+            get { return IExecute<Java.Lang.String>("getScheme"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#readAttributes(java.nio.file.Path,java.lang.Class,java.nio.file.LinkOption[])"/>
@@ -158,7 +158,7 @@ namespace Java.Nio.File.Spi
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="Java.Nio.File.FileSystem"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.File.FileSystem NewFileSystem(Java.Net.URI arg0, Java.Util.Map<string, object> arg1)
+        public Java.Nio.File.FileSystem NewFileSystem(Java.Net.URI arg0, Java.Util.Map<Java.Lang.String, object> arg1)
         {
             return IExecute<Java.Nio.File.FileSystem>("newFileSystem", arg0, arg1);
         }
@@ -175,13 +175,13 @@ namespace Java.Nio.File.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#readAttributes(java.nio.file.Path,java.lang.String,java.nio.file.LinkOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Java.Nio.File.LinkOption"/></param>
         /// <returns><see cref="Java.Util.Map"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Util.Map<string, object> ReadAttributes(Java.Nio.File.Path arg0, string arg1, params Java.Nio.File.LinkOption[] arg2)
+        public Java.Util.Map<Java.Lang.String, object> ReadAttributes(Java.Nio.File.Path arg0, Java.Lang.String arg1, params Java.Nio.File.LinkOption[] arg2)
         {
-            if (arg2.Length == 0) return IExecute<Java.Util.Map<string, object>>("readAttributes", arg0, arg1); else return IExecute<Java.Util.Map<string, object>>("readAttributes", arg0, arg1, arg2);
+            if (arg2.Length == 0) return IExecute<Java.Util.Map<Java.Lang.String, object>>("readAttributes", arg0, arg1); else return IExecute<Java.Util.Map<Java.Lang.String, object>>("readAttributes", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#checkAccess(java.nio.file.Path,java.nio.file.AccessMode[])"/>
@@ -238,11 +238,11 @@ namespace Java.Nio.File.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#setAttribute(java.nio.file.Path,java.lang.String,java.lang.Object,java.nio.file.LinkOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="object"/></param>
         /// <param name="arg3"><see cref="Java.Nio.File.LinkOption"/></param>
         /// <exception cref="Java.Io.IOException"/>
-        public void SetAttribute(Java.Nio.File.Path arg0, string arg1, object arg2, params Java.Nio.File.LinkOption[] arg3)
+        public void SetAttribute(Java.Nio.File.Path arg0, Java.Lang.String arg1, object arg2, params Java.Nio.File.LinkOption[] arg3)
         {
             if (arg3.Length == 0) IExecute("setAttribute", arg0, arg1, arg2); else IExecute("setAttribute", arg0, arg1, arg2, arg3);
         }
@@ -312,7 +312,7 @@ namespace Java.Nio.File.Spi
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="Java.Nio.File.FileSystem"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.File.FileSystem NewFileSystem(Java.Nio.File.Path arg0, Java.Util.Map<string, object> arg1)
+        public Java.Nio.File.FileSystem NewFileSystem(Java.Nio.File.Path arg0, Java.Util.Map<Java.Lang.String, object> arg1)
         {
             return IExecute<Java.Nio.File.FileSystem>("newFileSystem", arg0, arg1);
         }

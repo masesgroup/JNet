@@ -37,7 +37,7 @@ namespace Javax.Management.Remote.Rmi
         /// <param name="arg2"><see cref="Java.Rmi.Server.RMIServerSocketFactory"/></param>
         /// <param name="arg3"><see cref="Java.Util.Map"/></param>
         /// <exception cref="Java.Io.IOException"/>
-        public RMIJRMPServerImpl(int arg0, Java.Rmi.Server.RMIClientSocketFactory arg1, Java.Rmi.Server.RMIServerSocketFactory arg2, Java.Util.Map<string, object> arg3)
+        public RMIJRMPServerImpl(int arg0, Java.Rmi.Server.RMIClientSocketFactory arg1, Java.Rmi.Server.RMIServerSocketFactory arg2, Java.Util.Map<Java.Lang.String, object> arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }

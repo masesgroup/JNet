@@ -33,11 +33,11 @@ namespace Java.Beans
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#%3Cinit%3E(java.lang.Class,java.lang.String,java.lang.Class,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg3"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Beans.IntrospectionException"/>
-        public EventSetDescriptor(Java.Lang.Class arg0, string arg1, Java.Lang.Class arg2, string arg3)
+        public EventSetDescriptor(Java.Lang.Class arg0, Java.Lang.String arg1, Java.Lang.Class arg2, Java.Lang.String arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
@@ -45,14 +45,14 @@ namespace Java.Beans
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#%3Cinit%3E(java.lang.Class,java.lang.String,java.lang.Class,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg3"><see cref="string"/></param>
-        /// <param name="arg4"><see cref="string"/></param>
-        /// <param name="arg5"><see cref="string"/></param>
-        /// <param name="arg6"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg5"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg6"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Beans.IntrospectionException"/>
-        public EventSetDescriptor(Java.Lang.Class arg0, string arg1, Java.Lang.Class arg2, string[] arg3, string arg4, string arg5, string arg6)
+        public EventSetDescriptor(Java.Lang.Class arg0, Java.Lang.String arg1, Java.Lang.Class arg2, Java.Lang.String[] arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
         }
@@ -60,53 +60,53 @@ namespace Java.Beans
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#%3Cinit%3E(java.lang.Class,java.lang.String,java.lang.Class,java.lang.String[],java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg3"><see cref="string"/></param>
-        /// <param name="arg4"><see cref="string"/></param>
-        /// <param name="arg5"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg5"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Beans.IntrospectionException"/>
-        public EventSetDescriptor(Java.Lang.Class arg0, string arg1, Java.Lang.Class arg2, string[] arg3, string arg4, string arg5)
+        public EventSetDescriptor(Java.Lang.Class arg0, Java.Lang.String arg1, Java.Lang.Class arg2, Java.Lang.String[] arg3, Java.Lang.String arg4, Java.Lang.String arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#%3Cinit%3E(java.lang.String,java.lang.Class,java.beans.MethodDescriptor[],java.lang.reflect.Method,java.lang.reflect.Method)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg2"><see cref="Java.Beans.MethodDescriptor"/></param>
         /// <param name="arg3"><see cref="Java.Lang.Reflect.Method"/></param>
         /// <param name="arg4"><see cref="Java.Lang.Reflect.Method"/></param>
         /// <exception cref="Java.Beans.IntrospectionException"/>
-        public EventSetDescriptor(string arg0, Java.Lang.Class arg1, Java.Beans.MethodDescriptor[] arg2, Java.Lang.Reflect.Method arg3, Java.Lang.Reflect.Method arg4)
+        public EventSetDescriptor(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Beans.MethodDescriptor[] arg2, Java.Lang.Reflect.Method arg3, Java.Lang.Reflect.Method arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#%3Cinit%3E(java.lang.String,java.lang.Class,java.lang.reflect.Method[],java.lang.reflect.Method,java.lang.reflect.Method,java.lang.reflect.Method)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Reflect.Method"/></param>
         /// <param name="arg3"><see cref="Java.Lang.Reflect.Method"/></param>
         /// <param name="arg4"><see cref="Java.Lang.Reflect.Method"/></param>
         /// <param name="arg5"><see cref="Java.Lang.Reflect.Method"/></param>
         /// <exception cref="Java.Beans.IntrospectionException"/>
-        public EventSetDescriptor(string arg0, Java.Lang.Class arg1, Java.Lang.Reflect.Method[] arg2, Java.Lang.Reflect.Method arg3, Java.Lang.Reflect.Method arg4, Java.Lang.Reflect.Method arg5)
+        public EventSetDescriptor(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Lang.Reflect.Method[] arg2, Java.Lang.Reflect.Method arg3, Java.Lang.Reflect.Method arg4, Java.Lang.Reflect.Method arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#%3Cinit%3E(java.lang.String,java.lang.Class,java.lang.reflect.Method[],java.lang.reflect.Method,java.lang.reflect.Method)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Reflect.Method"/></param>
         /// <param name="arg3"><see cref="Java.Lang.Reflect.Method"/></param>
         /// <param name="arg4"><see cref="Java.Lang.Reflect.Method"/></param>
         /// <exception cref="Java.Beans.IntrospectionException"/>
-        public EventSetDescriptor(string arg0, Java.Lang.Class arg1, Java.Lang.Reflect.Method[] arg2, Java.Lang.Reflect.Method arg3, Java.Lang.Reflect.Method arg4)
+        public EventSetDescriptor(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Lang.Reflect.Method[] arg2, Java.Lang.Reflect.Method arg3, Java.Lang.Reflect.Method arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }

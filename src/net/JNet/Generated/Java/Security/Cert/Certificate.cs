@@ -62,21 +62,21 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Certificate.html#getType()"/> 
         /// </summary>
-        public string Type
+        public Java.Lang.String Type
         {
-            get { return IExecute<string>("getType"); }
+            get { return IExecute<Java.Lang.String>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Certificate.html#verify(java.security.PublicKey,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.PublicKey"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         /// <exception cref="Java.Security.InvalidKeyException"/>
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         /// <exception cref="Java.Security.SignatureException"/>
-        public void Verify(Java.Security.PublicKey arg0, string arg1)
+        public void Verify(Java.Security.PublicKey arg0, Java.Lang.String arg1)
         {
             IExecute("verify", arg0, arg1);
         }

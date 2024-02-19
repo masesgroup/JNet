@@ -43,7 +43,7 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getDocumentURI()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#setDocumentURI(java.lang.String)"/>
         /// </summary>
-        string DocumentURI { get; set; }
+        Java.Lang.String DocumentURI { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getDomConfig()"/> 
         /// </summary>
@@ -55,7 +55,7 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getInputEncoding()"/> 
         /// </summary>
-        string InputEncoding { get; }
+        Java.Lang.String InputEncoding { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getStrictErrorChecking()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#setStrictErrorChecking(boolean)"/>
         /// </summary>
@@ -63,7 +63,7 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getXmlEncoding()"/> 
         /// </summary>
-        string XmlEncoding { get; }
+        Java.Lang.String XmlEncoding { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getXmlStandalone()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#setXmlStandalone(boolean)"/>
         /// </summary>
@@ -71,35 +71,35 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getXmlVersion()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#setXmlVersion(java.lang.String)"/>
         /// </summary>
-        string XmlVersion { get; set; }
+        Java.Lang.String XmlVersion { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createAttribute(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Attr"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        Org.W3c.Dom.Attr CreateAttribute(string arg0);
+        Org.W3c.Dom.Attr CreateAttribute(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createAttributeNS(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Attr"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        Org.W3c.Dom.Attr CreateAttributeNS(string arg0, string arg1);
+        Org.W3c.Dom.Attr CreateAttributeNS(Java.Lang.String arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createCDATASection(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.CDATASection"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        Org.W3c.Dom.CDATASection CreateCDATASection(string arg0);
+        Org.W3c.Dom.CDATASection CreateCDATASection(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createComment(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Comment"/></returns>
-        Org.W3c.Dom.Comment CreateComment(string arg0);
+        Org.W3c.Dom.Comment CreateComment(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createDocumentFragment()"/>
         /// </summary>
@@ -109,31 +109,31 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createElement(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Element"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        Org.W3c.Dom.Element CreateElement(string arg0);
+        Org.W3c.Dom.Element CreateElement(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createElementNS(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Element"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        Org.W3c.Dom.Element CreateElementNS(string arg0, string arg1);
+        Org.W3c.Dom.Element CreateElementNS(Java.Lang.String arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getElementById(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Element"/></returns>
-        Org.W3c.Dom.Element GetElementById(string arg0);
+        Org.W3c.Dom.Element GetElementById(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createEntityReference(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.EntityReference"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        Org.W3c.Dom.EntityReference CreateEntityReference(string arg0);
+        Org.W3c.Dom.EntityReference CreateEntityReference(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#adoptNode(org.w3c.dom.Node)"/>
         /// </summary>
@@ -153,38 +153,38 @@ namespace Org.W3c.Dom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#renameNode(org.w3c.dom.Node,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        Org.W3c.Dom.Node RenameNode(Org.W3c.Dom.Node arg0, string arg1, string arg2);
+        Org.W3c.Dom.Node RenameNode(Org.W3c.Dom.Node arg0, Java.Lang.String arg1, Java.Lang.String arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getElementsByTagName(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.NodeList"/></returns>
-        Org.W3c.Dom.NodeList GetElementsByTagName(string arg0);
+        Org.W3c.Dom.NodeList GetElementsByTagName(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getElementsByTagNameNS(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.NodeList"/></returns>
-        Org.W3c.Dom.NodeList GetElementsByTagNameNS(string arg0, string arg1);
+        Org.W3c.Dom.NodeList GetElementsByTagNameNS(Java.Lang.String arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createProcessingInstruction(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.ProcessingInstruction"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        Org.W3c.Dom.ProcessingInstruction CreateProcessingInstruction(string arg0, string arg1);
+        Org.W3c.Dom.ProcessingInstruction CreateProcessingInstruction(Java.Lang.String arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createTextNode(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Text"/></returns>
-        Org.W3c.Dom.Text CreateTextNode(string arg0);
+        Org.W3c.Dom.Text CreateTextNode(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#normalizeDocument()"/>
         /// </summary>
@@ -237,9 +237,9 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getDocumentURI()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#setDocumentURI(java.lang.String)"/>
         /// </summary>
-        public string DocumentURI
+        public Java.Lang.String DocumentURI
         {
-            get { return IExecute<string>("getDocumentURI"); } set { IExecute("setDocumentURI", value); }
+            get { return IExecute<Java.Lang.String>("getDocumentURI"); } set { IExecute("setDocumentURI", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getDomConfig()"/> 
@@ -258,9 +258,9 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getInputEncoding()"/> 
         /// </summary>
-        public string InputEncoding
+        public Java.Lang.String InputEncoding
         {
-            get { return IExecute<string>("getInputEncoding"); }
+            get { return IExecute<Java.Lang.String>("getInputEncoding"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getStrictErrorChecking()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#setStrictErrorChecking(boolean)"/>
@@ -272,9 +272,9 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getXmlEncoding()"/> 
         /// </summary>
-        public string XmlEncoding
+        public Java.Lang.String XmlEncoding
         {
-            get { return IExecute<string>("getXmlEncoding"); }
+            get { return IExecute<Java.Lang.String>("getXmlEncoding"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getXmlStandalone()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#setXmlStandalone(boolean)"/>
@@ -286,47 +286,47 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getXmlVersion()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#setXmlVersion(java.lang.String)"/>
         /// </summary>
-        public string XmlVersion
+        public Java.Lang.String XmlVersion
         {
-            get { return IExecute<string>("getXmlVersion"); } set { IExecute("setXmlVersion", value); }
+            get { return IExecute<Java.Lang.String>("getXmlVersion"); } set { IExecute("setXmlVersion", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createAttribute(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Attr"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        public Org.W3c.Dom.Attr CreateAttribute(string arg0)
+        public Org.W3c.Dom.Attr CreateAttribute(Java.Lang.String arg0)
         {
             return IExecute<Org.W3c.Dom.Attr>("createAttribute", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createAttributeNS(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Attr"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        public Org.W3c.Dom.Attr CreateAttributeNS(string arg0, string arg1)
+        public Org.W3c.Dom.Attr CreateAttributeNS(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecute<Org.W3c.Dom.Attr>("createAttributeNS", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createCDATASection(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.CDATASection"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        public Org.W3c.Dom.CDATASection CreateCDATASection(string arg0)
+        public Org.W3c.Dom.CDATASection CreateCDATASection(Java.Lang.String arg0)
         {
             return IExecute<Org.W3c.Dom.CDATASection>("createCDATASection", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createComment(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Comment"/></returns>
-        public Org.W3c.Dom.Comment CreateComment(string arg0)
+        public Org.W3c.Dom.Comment CreateComment(Java.Lang.String arg0)
         {
             return IExecute<Org.W3c.Dom.Comment>("createComment", arg0);
         }
@@ -342,40 +342,40 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createElement(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Element"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        public Org.W3c.Dom.Element CreateElement(string arg0)
+        public Org.W3c.Dom.Element CreateElement(Java.Lang.String arg0)
         {
             return IExecute<Org.W3c.Dom.Element>("createElement", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createElementNS(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Element"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        public Org.W3c.Dom.Element CreateElementNS(string arg0, string arg1)
+        public Org.W3c.Dom.Element CreateElementNS(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecute<Org.W3c.Dom.Element>("createElementNS", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getElementById(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Element"/></returns>
-        public Org.W3c.Dom.Element GetElementById(string arg0)
+        public Org.W3c.Dom.Element GetElementById(Java.Lang.String arg0)
         {
             return IExecute<Org.W3c.Dom.Element>("getElementById", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createEntityReference(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.EntityReference"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        public Org.W3c.Dom.EntityReference CreateEntityReference(string arg0)
+        public Org.W3c.Dom.EntityReference CreateEntityReference(Java.Lang.String arg0)
         {
             return IExecute<Org.W3c.Dom.EntityReference>("createEntityReference", arg0);
         }
@@ -404,50 +404,50 @@ namespace Org.W3c.Dom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#renameNode(org.w3c.dom.Node,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        public Org.W3c.Dom.Node RenameNode(Org.W3c.Dom.Node arg0, string arg1, string arg2)
+        public Org.W3c.Dom.Node RenameNode(Org.W3c.Dom.Node arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
             return IExecute<Org.W3c.Dom.Node>("renameNode", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getElementsByTagName(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.NodeList"/></returns>
-        public Org.W3c.Dom.NodeList GetElementsByTagName(string arg0)
+        public Org.W3c.Dom.NodeList GetElementsByTagName(Java.Lang.String arg0)
         {
             return IExecute<Org.W3c.Dom.NodeList>("getElementsByTagName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getElementsByTagNameNS(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.NodeList"/></returns>
-        public Org.W3c.Dom.NodeList GetElementsByTagNameNS(string arg0, string arg1)
+        public Org.W3c.Dom.NodeList GetElementsByTagNameNS(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecute<Org.W3c.Dom.NodeList>("getElementsByTagNameNS", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createProcessingInstruction(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.ProcessingInstruction"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
-        public Org.W3c.Dom.ProcessingInstruction CreateProcessingInstruction(string arg0, string arg1)
+        public Org.W3c.Dom.ProcessingInstruction CreateProcessingInstruction(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecute<Org.W3c.Dom.ProcessingInstruction>("createProcessingInstruction", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createTextNode(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Text"/></returns>
-        public Org.W3c.Dom.Text CreateTextNode(string arg0)
+        public Org.W3c.Dom.Text CreateTextNode(Java.Lang.String arg0)
         {
             return IExecute<Org.W3c.Dom.Text>("createTextNode", arg0);
         }

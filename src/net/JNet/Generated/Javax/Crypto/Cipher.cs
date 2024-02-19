@@ -86,56 +86,56 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getMaxAllowedKeyLength(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        public static int GetMaxAllowedKeyLength(string arg0)
+        public static int GetMaxAllowedKeyLength(Java.Lang.String arg0)
         {
             return SExecute<int>(LocalBridgeClazz, "getMaxAllowedKeyLength", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getMaxAllowedParameterSpec(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></returns>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        public static Java.Security.Spec.AlgorithmParameterSpec GetMaxAllowedParameterSpec(string arg0)
+        public static Java.Security.Spec.AlgorithmParameterSpec GetMaxAllowedParameterSpec(Java.Lang.String arg0)
         {
             return SExecute<Java.Security.Spec.AlgorithmParameterSpec>(LocalBridgeClazz, "getMaxAllowedParameterSpec", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Crypto.Cipher"/></returns>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         /// <exception cref="Javax.Crypto.NoSuchPaddingException"/>
-        public static Javax.Crypto.Cipher GetInstance(string arg0, string arg1)
+        public static Javax.Crypto.Cipher GetInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return SExecute<Javax.Crypto.Cipher>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getInstance(java.lang.String,java.security.Provider)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
         /// <returns><see cref="Javax.Crypto.Cipher"/></returns>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         /// <exception cref="Javax.Crypto.NoSuchPaddingException"/>
-        public static Javax.Crypto.Cipher GetInstance(string arg0, Java.Security.Provider arg1)
+        public static Javax.Crypto.Cipher GetInstance(Java.Lang.String arg0, Java.Security.Provider arg1)
         {
             return SExecute<Javax.Crypto.Cipher>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getInstance(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Crypto.Cipher"/></returns>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         /// <exception cref="Javax.Crypto.NoSuchPaddingException"/>
-        public static Javax.Crypto.Cipher GetInstance(string arg0)
+        public static Javax.Crypto.Cipher GetInstance(Java.Lang.String arg0)
         {
             return SExecute<Javax.Crypto.Cipher>(LocalBridgeClazz, "getInstance", arg0);
         }
@@ -146,9 +146,9 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getAlgorithm()"/> 
         /// </summary>
-        public string Algorithm
+        public Java.Lang.String Algorithm
         {
-            get { return IExecute<string>("getAlgorithm"); }
+            get { return IExecute<Java.Lang.String>("getAlgorithm"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getBlockSize()"/> 
@@ -359,12 +359,12 @@ namespace Javax.Crypto
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#unwrap(byte[],java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Security.Key"/></returns>
         /// <exception cref="Java.Security.InvalidKeyException"/>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        public Java.Security.Key Unwrap(byte[] arg0, string arg1, int arg2)
+        public Java.Security.Key Unwrap(byte[] arg0, Java.Lang.String arg1, int arg2)
         {
             return IExecute<Java.Security.Key>("unwrap", arg0, arg1, arg2);
         }

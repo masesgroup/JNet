@@ -87,11 +87,11 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMISocketFactory.html#createSocket(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Net.Socket"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Net.Socket CreateSocket(string arg0, int arg1)
+        public Java.Net.Socket CreateSocket(Java.Lang.String arg0, int arg1)
         {
             return IExecute<Java.Net.Socket>("createSocket", arg0, arg1);
         }

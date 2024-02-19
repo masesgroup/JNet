@@ -39,7 +39,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getCursorName()"/> 
         /// </summary>
-        string CursorName { get; }
+        Java.Lang.String CursorName { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getFetchDirection()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#setFetchDirection(int)"/>
         /// </summary>
@@ -84,12 +84,12 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getObject(java.lang.String,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="T"></typeparam>
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        T GetObject<T>(string arg0, Java.Lang.Class arg1);
+        T GetObject<T>(Java.Lang.String arg0, Java.Lang.Class arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#absolute(int)"/>
         /// </summary>
@@ -114,10 +114,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBoolean(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        bool GetBoolean(string arg0);
+        bool GetBoolean(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isAfterLast()"/>
         /// </summary>
@@ -219,10 +219,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getByte(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        byte GetByte(string arg0);
+        byte GetByte(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBytes(int)"/>
         /// </summary>
@@ -233,10 +233,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBytes(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        byte[] GetBytes(string arg0);
+        byte[] GetBytes(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getDouble(int)"/>
         /// </summary>
@@ -247,10 +247,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getDouble(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="double"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        double GetDouble(string arg0);
+        double GetDouble(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getFloat(int)"/>
         /// </summary>
@@ -261,17 +261,17 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getFloat(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="float"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        float GetFloat(string arg0);
+        float GetFloat(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#findColumn(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        int FindColumn(string arg0);
+        int FindColumn(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getInt(int)"/>
         /// </summary>
@@ -282,10 +282,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getInt(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        int GetInt(string arg0);
+        int GetInt(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getAsciiStream(int)"/>
         /// </summary>
@@ -296,10 +296,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getAsciiStream(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Io.InputStream"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Io.InputStream GetAsciiStream(string arg0);
+        Java.Io.InputStream GetAsciiStream(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBinaryStream(int)"/>
         /// </summary>
@@ -310,10 +310,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBinaryStream(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Io.InputStream"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Io.InputStream GetBinaryStream(string arg0);
+        Java.Io.InputStream GetBinaryStream(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getCharacterStream(int)"/>
         /// </summary>
@@ -324,10 +324,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getCharacterStream(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Io.Reader"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Io.Reader GetCharacterStream(string arg0);
+        Java.Io.Reader GetCharacterStream(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getNCharacterStream(int)"/>
         /// </summary>
@@ -338,10 +338,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getNCharacterStream(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Io.Reader"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Io.Reader GetNCharacterStream(string arg0);
+        Java.Io.Reader GetNCharacterStream(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getObject(int,java.util.Map)"/>
         /// </summary>
@@ -349,7 +349,7 @@ namespace Java.Sql
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        object GetObject(int arg0, Java.Util.Map<string, Java.Lang.Class> arg1);
+        object GetObject(int arg0, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getObject(int)"/>
         /// </summary>
@@ -360,46 +360,46 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getObject(java.lang.String,java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        object GetObject(string arg0, Java.Util.Map<string, Java.Lang.Class> arg1);
+        object GetObject(Java.Lang.String arg0, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getObject(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        object GetObject(string arg0);
+        object GetObject(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getNString(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        string GetNString(int arg0);
+        Java.Lang.String GetNString(int arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getNString(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        string GetNString(string arg0);
+        Java.Lang.String GetNString(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getString(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        string GetString(int arg0);
+        Java.Lang.String GetString(int arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getString(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        string GetString(string arg0);
+        Java.Lang.String GetString(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBigDecimal(int)"/>
         /// </summary>
@@ -410,10 +410,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBigDecimal(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Math.BigDecimal GetBigDecimal(string arg0);
+        Java.Math.BigDecimal GetBigDecimal(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getURL(int)"/>
         /// </summary>
@@ -424,10 +424,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getURL(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Net.URL"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Net.URL GetURL(string arg0);
+        Java.Net.URL GetURL(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getArray(int)"/>
         /// </summary>
@@ -438,10 +438,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getArray(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Array"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.Array GetArray(string arg0);
+        Java.Sql.Array GetArray(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBlob(int)"/>
         /// </summary>
@@ -452,10 +452,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBlob(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Blob"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.Blob GetBlob(string arg0);
+        Java.Sql.Blob GetBlob(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getClob(int)"/>
         /// </summary>
@@ -466,10 +466,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getClob(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Clob"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.Clob GetClob(string arg0);
+        Java.Sql.Clob GetClob(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getDate(int,java.util.Calendar)"/>
         /// </summary>
@@ -488,18 +488,18 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getDate(java.lang.String,java.util.Calendar)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Calendar"/></param>
         /// <returns><see cref="Java.Sql.Date"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.Date GetDate(string arg0, Java.Util.Calendar arg1);
+        Java.Sql.Date GetDate(Java.Lang.String arg0, Java.Util.Calendar arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getDate(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Date"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.Date GetDate(string arg0);
+        Java.Sql.Date GetDate(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getNClob(int)"/>
         /// </summary>
@@ -510,10 +510,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getNClob(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.NClob"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.NClob GetNClob(string arg0);
+        Java.Sql.NClob GetNClob(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getRef(int)"/>
         /// </summary>
@@ -524,10 +524,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getRef(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Ref"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.Ref GetRef(string arg0);
+        Java.Sql.Ref GetRef(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getRowId(int)"/>
         /// </summary>
@@ -538,10 +538,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getRowId(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.RowId"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.RowId GetRowId(string arg0);
+        Java.Sql.RowId GetRowId(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getSQLXML(int)"/>
         /// </summary>
@@ -552,10 +552,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getSQLXML(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.SQLXML"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.SQLXML GetSQLXML(string arg0);
+        Java.Sql.SQLXML GetSQLXML(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTime(int,java.util.Calendar)"/>
         /// </summary>
@@ -574,18 +574,18 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTime(java.lang.String,java.util.Calendar)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Calendar"/></param>
         /// <returns><see cref="Java.Sql.Time"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.Time GetTime(string arg0, Java.Util.Calendar arg1);
+        Java.Sql.Time GetTime(Java.Lang.String arg0, Java.Util.Calendar arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTime(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Time"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.Time GetTime(string arg0);
+        Java.Sql.Time GetTime(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTimestamp(int,java.util.Calendar)"/>
         /// </summary>
@@ -604,18 +604,18 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTimestamp(java.lang.String,java.util.Calendar)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Calendar"/></param>
         /// <returns><see cref="Java.Sql.Timestamp"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.Timestamp GetTimestamp(string arg0, Java.Util.Calendar arg1);
+        Java.Sql.Timestamp GetTimestamp(Java.Lang.String arg0, Java.Util.Calendar arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTimestamp(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Timestamp"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.Timestamp GetTimestamp(string arg0);
+        Java.Sql.Timestamp GetTimestamp(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getLong(int)"/>
         /// </summary>
@@ -626,10 +626,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getLong(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        long GetLong(string arg0);
+        long GetLong(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getShort(int)"/>
         /// </summary>
@@ -640,10 +640,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getShort(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="short"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        short GetShort(string arg0);
+        short GetShort(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#afterLast()"/>
         /// </summary>
@@ -714,10 +714,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateArray(java.lang.String,java.sql.Array)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Array"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateArray(string arg0, Java.Sql.Array arg1);
+        void UpdateArray(Java.Lang.String arg0, Java.Sql.Array arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateAsciiStream(int,java.io.InputStream,int)"/>
         /// </summary>
@@ -744,26 +744,26 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateAsciiStream(java.lang.String,java.io.InputStream,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateAsciiStream(string arg0, Java.Io.InputStream arg1, int arg2);
+        void UpdateAsciiStream(Java.Lang.String arg0, Java.Io.InputStream arg1, int arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateAsciiStream(java.lang.String,java.io.InputStream,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg2"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateAsciiStream(string arg0, Java.Io.InputStream arg1, long arg2);
+        void UpdateAsciiStream(Java.Lang.String arg0, Java.Io.InputStream arg1, long arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateAsciiStream(java.lang.String,java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateAsciiStream(string arg0, Java.Io.InputStream arg1);
+        void UpdateAsciiStream(Java.Lang.String arg0, Java.Io.InputStream arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBigDecimal(int,java.math.BigDecimal)"/>
         /// </summary>
@@ -774,10 +774,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBigDecimal(java.lang.String,java.math.BigDecimal)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Math.BigDecimal"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateBigDecimal(string arg0, Java.Math.BigDecimal arg1);
+        void UpdateBigDecimal(Java.Lang.String arg0, Java.Math.BigDecimal arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBinaryStream(int,java.io.InputStream,int)"/>
         /// </summary>
@@ -804,26 +804,26 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBinaryStream(java.lang.String,java.io.InputStream,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateBinaryStream(string arg0, Java.Io.InputStream arg1, int arg2);
+        void UpdateBinaryStream(Java.Lang.String arg0, Java.Io.InputStream arg1, int arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBinaryStream(java.lang.String,java.io.InputStream,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg2"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateBinaryStream(string arg0, Java.Io.InputStream arg1, long arg2);
+        void UpdateBinaryStream(Java.Lang.String arg0, Java.Io.InputStream arg1, long arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBinaryStream(java.lang.String,java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateBinaryStream(string arg0, Java.Io.InputStream arg1);
+        void UpdateBinaryStream(Java.Lang.String arg0, Java.Io.InputStream arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBlob(int,java.io.InputStream,long)"/>
         /// </summary>
@@ -849,25 +849,25 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBlob(java.lang.String,java.io.InputStream,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg2"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateBlob(string arg0, Java.Io.InputStream arg1, long arg2);
+        void UpdateBlob(Java.Lang.String arg0, Java.Io.InputStream arg1, long arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBlob(java.lang.String,java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateBlob(string arg0, Java.Io.InputStream arg1);
+        void UpdateBlob(Java.Lang.String arg0, Java.Io.InputStream arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBlob(java.lang.String,java.sql.Blob)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Blob"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateBlob(string arg0, Java.Sql.Blob arg1);
+        void UpdateBlob(Java.Lang.String arg0, Java.Sql.Blob arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBoolean(int,boolean)"/>
         /// </summary>
@@ -878,10 +878,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBoolean(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateBoolean(string arg0, bool arg1);
+        void UpdateBoolean(Java.Lang.String arg0, bool arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateByte(int,byte)"/>
         /// </summary>
@@ -892,10 +892,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateByte(java.lang.String,byte)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateByte(string arg0, byte arg1);
+        void UpdateByte(Java.Lang.String arg0, byte arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBytes(int,byte[])"/>
         /// </summary>
@@ -906,10 +906,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBytes(java.lang.String,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateBytes(string arg0, byte[] arg1);
+        void UpdateBytes(Java.Lang.String arg0, byte[] arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateCharacterStream(int,java.io.Reader,int)"/>
         /// </summary>
@@ -936,26 +936,26 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateCharacterStream(java.lang.String,java.io.Reader,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateCharacterStream(string arg0, Java.Io.Reader arg1, int arg2);
+        void UpdateCharacterStream(Java.Lang.String arg0, Java.Io.Reader arg1, int arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateCharacterStream(java.lang.String,java.io.Reader,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
         /// <param name="arg2"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateCharacterStream(string arg0, Java.Io.Reader arg1, long arg2);
+        void UpdateCharacterStream(Java.Lang.String arg0, Java.Io.Reader arg1, long arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateCharacterStream(java.lang.String,java.io.Reader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateCharacterStream(string arg0, Java.Io.Reader arg1);
+        void UpdateCharacterStream(Java.Lang.String arg0, Java.Io.Reader arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateClob(int,java.io.Reader,long)"/>
         /// </summary>
@@ -981,25 +981,25 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateClob(java.lang.String,java.io.Reader,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
         /// <param name="arg2"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateClob(string arg0, Java.Io.Reader arg1, long arg2);
+        void UpdateClob(Java.Lang.String arg0, Java.Io.Reader arg1, long arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateClob(java.lang.String,java.io.Reader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateClob(string arg0, Java.Io.Reader arg1);
+        void UpdateClob(Java.Lang.String arg0, Java.Io.Reader arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateClob(java.lang.String,java.sql.Clob)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Clob"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateClob(string arg0, Java.Sql.Clob arg1);
+        void UpdateClob(Java.Lang.String arg0, Java.Sql.Clob arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateDate(int,java.sql.Date)"/>
         /// </summary>
@@ -1010,10 +1010,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateDate(java.lang.String,java.sql.Date)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Date"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateDate(string arg0, Java.Sql.Date arg1);
+        void UpdateDate(Java.Lang.String arg0, Java.Sql.Date arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateDouble(int,double)"/>
         /// </summary>
@@ -1024,10 +1024,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateDouble(java.lang.String,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="double"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateDouble(string arg0, double arg1);
+        void UpdateDouble(Java.Lang.String arg0, double arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateFloat(int,float)"/>
         /// </summary>
@@ -1038,10 +1038,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateFloat(java.lang.String,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="float"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateFloat(string arg0, float arg1);
+        void UpdateFloat(Java.Lang.String arg0, float arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateInt(int,int)"/>
         /// </summary>
@@ -1052,10 +1052,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateInt(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateInt(string arg0, int arg1);
+        void UpdateInt(Java.Lang.String arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateLong(int,long)"/>
         /// </summary>
@@ -1066,10 +1066,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateLong(java.lang.String,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateLong(string arg0, long arg1);
+        void UpdateLong(Java.Lang.String arg0, long arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNCharacterStream(int,java.io.Reader,long)"/>
         /// </summary>
@@ -1088,18 +1088,18 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNCharacterStream(java.lang.String,java.io.Reader,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
         /// <param name="arg2"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateNCharacterStream(string arg0, Java.Io.Reader arg1, long arg2);
+        void UpdateNCharacterStream(Java.Lang.String arg0, Java.Io.Reader arg1, long arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNCharacterStream(java.lang.String,java.io.Reader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateNCharacterStream(string arg0, Java.Io.Reader arg1);
+        void UpdateNCharacterStream(Java.Lang.String arg0, Java.Io.Reader arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNClob(int,java.io.Reader,long)"/>
         /// </summary>
@@ -1125,39 +1125,39 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNClob(java.lang.String,java.io.Reader,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
         /// <param name="arg2"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateNClob(string arg0, Java.Io.Reader arg1, long arg2);
+        void UpdateNClob(Java.Lang.String arg0, Java.Io.Reader arg1, long arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNClob(java.lang.String,java.io.Reader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateNClob(string arg0, Java.Io.Reader arg1);
+        void UpdateNClob(Java.Lang.String arg0, Java.Io.Reader arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNClob(java.lang.String,java.sql.NClob)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.NClob"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateNClob(string arg0, Java.Sql.NClob arg1);
+        void UpdateNClob(Java.Lang.String arg0, Java.Sql.NClob arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNString(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateNString(int arg0, string arg1);
+        void UpdateNString(int arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNString(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateNString(string arg0, string arg1);
+        void UpdateNString(Java.Lang.String arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNull(int)"/>
         /// </summary>
@@ -1167,9 +1167,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNull(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateNull(string arg0);
+        void UpdateNull(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(int,java.lang.Object,int)"/>
         /// </summary>
@@ -1188,18 +1188,18 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(java.lang.String,java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateObject(string arg0, object arg1, int arg2);
+        void UpdateObject(Java.Lang.String arg0, object arg1, int arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateObject(string arg0, object arg1);
+        void UpdateObject(Java.Lang.String arg0, object arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateRef(int,java.sql.Ref)"/>
         /// </summary>
@@ -1210,10 +1210,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateRef(java.lang.String,java.sql.Ref)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Ref"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateRef(string arg0, Java.Sql.Ref arg1);
+        void UpdateRef(Java.Lang.String arg0, Java.Sql.Ref arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateRow()"/>
         /// </summary>
@@ -1230,10 +1230,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateRowId(java.lang.String,java.sql.RowId)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.RowId"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateRowId(string arg0, Java.Sql.RowId arg1);
+        void UpdateRowId(Java.Lang.String arg0, Java.Sql.RowId arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateShort(int,short)"/>
         /// </summary>
@@ -1244,10 +1244,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateShort(java.lang.String,short)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="short"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateShort(string arg0, short arg1);
+        void UpdateShort(Java.Lang.String arg0, short arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateSQLXML(int,java.sql.SQLXML)"/>
         /// </summary>
@@ -1258,24 +1258,24 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateSQLXML(java.lang.String,java.sql.SQLXML)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.SQLXML"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateSQLXML(string arg0, Java.Sql.SQLXML arg1);
+        void UpdateSQLXML(Java.Lang.String arg0, Java.Sql.SQLXML arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateString(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateString(int arg0, string arg1);
+        void UpdateString(int arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateString(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateString(string arg0, string arg1);
+        void UpdateString(Java.Lang.String arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateTime(int,java.sql.Time)"/>
         /// </summary>
@@ -1286,10 +1286,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateTime(java.lang.String,java.sql.Time)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Time"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateTime(string arg0, Java.Sql.Time arg1);
+        void UpdateTime(Java.Lang.String arg0, Java.Sql.Time arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateTimestamp(int,java.sql.Timestamp)"/>
         /// </summary>
@@ -1300,10 +1300,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateTimestamp(java.lang.String,java.sql.Timestamp)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Timestamp"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateTimestamp(string arg0, Java.Sql.Timestamp arg1);
+        void UpdateTimestamp(Java.Lang.String arg0, Java.Sql.Timestamp arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(int,java.lang.Object,java.sql.SQLType,int)"/>
         /// </summary>
@@ -1324,20 +1324,20 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(java.lang.String,java.lang.Object,java.sql.SQLType,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Java.Sql.SQLType"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateObject(string arg0, object arg1, Java.Sql.SQLType arg2, int arg3);
+        void UpdateObject(Java.Lang.String arg0, object arg1, Java.Sql.SQLType arg2, int arg3);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(java.lang.String,java.lang.Object,java.sql.SQLType)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Java.Sql.SQLType"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void UpdateObject(string arg0, object arg1, Java.Sql.SQLType arg2);
+        void UpdateObject(Java.Lang.String arg0, object arg1, Java.Sql.SQLType arg2);
 
         #endregion
 
@@ -1447,9 +1447,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getCursorName()"/> 
         /// </summary>
-        public string CursorName
+        public Java.Lang.String CursorName
         {
-            get { return IExecute<string>("getCursorName"); }
+            get { return IExecute<Java.Lang.String>("getCursorName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getFetchDirection()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#setFetchDirection(int)"/>
@@ -1522,12 +1522,12 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getObject(java.lang.String,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="T"></typeparam>
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public T GetObject<T>(string arg0, Java.Lang.Class arg1)
+        public T GetObject<T>(Java.Lang.String arg0, Java.Lang.Class arg1)
         {
             return IExecute<T>("getObject", arg0, arg1);
         }
@@ -1564,10 +1564,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBoolean(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public bool GetBoolean(string arg0)
+        public bool GetBoolean(Java.Lang.String arg0)
         {
             return IExecute<bool>("getBoolean", arg0);
         }
@@ -1714,10 +1714,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getByte(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public byte GetByte(string arg0)
+        public byte GetByte(Java.Lang.String arg0)
         {
             return IExecute<byte>("getByte", arg0);
         }
@@ -1734,10 +1734,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBytes(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public byte[] GetBytes(string arg0)
+        public byte[] GetBytes(Java.Lang.String arg0)
         {
             return IExecuteArray<byte>("getBytes", arg0);
         }
@@ -1754,10 +1754,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getDouble(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="double"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public double GetDouble(string arg0)
+        public double GetDouble(Java.Lang.String arg0)
         {
             return IExecute<double>("getDouble", arg0);
         }
@@ -1774,20 +1774,20 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getFloat(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="float"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public float GetFloat(string arg0)
+        public float GetFloat(Java.Lang.String arg0)
         {
             return IExecute<float>("getFloat", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#findColumn(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public int FindColumn(string arg0)
+        public int FindColumn(Java.Lang.String arg0)
         {
             return IExecute<int>("findColumn", arg0);
         }
@@ -1804,10 +1804,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getInt(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public int GetInt(string arg0)
+        public int GetInt(Java.Lang.String arg0)
         {
             return IExecute<int>("getInt", arg0);
         }
@@ -1824,10 +1824,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getAsciiStream(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Io.InputStream"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Io.InputStream GetAsciiStream(string arg0)
+        public Java.Io.InputStream GetAsciiStream(Java.Lang.String arg0)
         {
             return IExecute<Java.Io.InputStream>("getAsciiStream", arg0);
         }
@@ -1844,10 +1844,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBinaryStream(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Io.InputStream"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Io.InputStream GetBinaryStream(string arg0)
+        public Java.Io.InputStream GetBinaryStream(Java.Lang.String arg0)
         {
             return IExecute<Java.Io.InputStream>("getBinaryStream", arg0);
         }
@@ -1864,10 +1864,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getCharacterStream(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Io.Reader"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Io.Reader GetCharacterStream(string arg0)
+        public Java.Io.Reader GetCharacterStream(Java.Lang.String arg0)
         {
             return IExecute<Java.Io.Reader>("getCharacterStream", arg0);
         }
@@ -1884,10 +1884,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getNCharacterStream(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Io.Reader"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Io.Reader GetNCharacterStream(string arg0)
+        public Java.Io.Reader GetNCharacterStream(Java.Lang.String arg0)
         {
             return IExecute<Java.Io.Reader>("getNCharacterStream", arg0);
         }
@@ -1898,7 +1898,7 @@ namespace Java.Sql
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public object GetObject(int arg0, Java.Util.Map<string, Java.Lang.Class> arg1)
+        public object GetObject(int arg0, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg1)
         {
             return IExecute("getObject", arg0, arg1);
         }
@@ -1915,21 +1915,21 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getObject(java.lang.String,java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public object GetObject(string arg0, Java.Util.Map<string, Java.Lang.Class> arg1)
+        public object GetObject(Java.Lang.String arg0, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg1)
         {
             return IExecute("getObject", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getObject(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public object GetObject(string arg0)
+        public object GetObject(Java.Lang.String arg0)
         {
             return IExecute("getObject", arg0);
         }
@@ -1937,41 +1937,41 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getNString(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public string GetNString(int arg0)
+        public Java.Lang.String GetNString(int arg0)
         {
-            return IExecute<string>("getNString", arg0);
+            return IExecute<Java.Lang.String>("getNString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getNString(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public string GetNString(string arg0)
+        public Java.Lang.String GetNString(Java.Lang.String arg0)
         {
-            return IExecute<string>("getNString", arg0);
+            return IExecute<Java.Lang.String>("getNString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getString(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public string GetString(int arg0)
+        public Java.Lang.String GetString(int arg0)
         {
-            return IExecute<string>("getString", arg0);
+            return IExecute<Java.Lang.String>("getString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getString(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public string GetString(string arg0)
+        public Java.Lang.String GetString(Java.Lang.String arg0)
         {
-            return IExecute<string>("getString", arg0);
+            return IExecute<Java.Lang.String>("getString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBigDecimal(int)"/>
@@ -1986,10 +1986,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBigDecimal(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Math.BigDecimal GetBigDecimal(string arg0)
+        public Java.Math.BigDecimal GetBigDecimal(Java.Lang.String arg0)
         {
             return IExecute<Java.Math.BigDecimal>("getBigDecimal", arg0);
         }
@@ -2006,10 +2006,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getURL(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Net.URL"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Net.URL GetURL(string arg0)
+        public Java.Net.URL GetURL(Java.Lang.String arg0)
         {
             return IExecute<Java.Net.URL>("getURL", arg0);
         }
@@ -2026,10 +2026,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getArray(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Array"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.Array GetArray(string arg0)
+        public Java.Sql.Array GetArray(Java.Lang.String arg0)
         {
             return IExecute<Java.Sql.Array>("getArray", arg0);
         }
@@ -2046,10 +2046,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBlob(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Blob"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.Blob GetBlob(string arg0)
+        public Java.Sql.Blob GetBlob(Java.Lang.String arg0)
         {
             return IExecute<Java.Sql.Blob>("getBlob", arg0);
         }
@@ -2066,10 +2066,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getClob(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Clob"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.Clob GetClob(string arg0)
+        public Java.Sql.Clob GetClob(Java.Lang.String arg0)
         {
             return IExecute<Java.Sql.Clob>("getClob", arg0);
         }
@@ -2097,21 +2097,21 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getDate(java.lang.String,java.util.Calendar)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Calendar"/></param>
         /// <returns><see cref="Java.Sql.Date"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.Date GetDate(string arg0, Java.Util.Calendar arg1)
+        public Java.Sql.Date GetDate(Java.Lang.String arg0, Java.Util.Calendar arg1)
         {
             return IExecute<Java.Sql.Date>("getDate", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getDate(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Date"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.Date GetDate(string arg0)
+        public Java.Sql.Date GetDate(Java.Lang.String arg0)
         {
             return IExecute<Java.Sql.Date>("getDate", arg0);
         }
@@ -2128,10 +2128,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getNClob(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.NClob"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.NClob GetNClob(string arg0)
+        public Java.Sql.NClob GetNClob(Java.Lang.String arg0)
         {
             return IExecute<Java.Sql.NClob>("getNClob", arg0);
         }
@@ -2148,10 +2148,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getRef(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Ref"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.Ref GetRef(string arg0)
+        public Java.Sql.Ref GetRef(Java.Lang.String arg0)
         {
             return IExecute<Java.Sql.Ref>("getRef", arg0);
         }
@@ -2168,10 +2168,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getRowId(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.RowId"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.RowId GetRowId(string arg0)
+        public Java.Sql.RowId GetRowId(Java.Lang.String arg0)
         {
             return IExecute<Java.Sql.RowId>("getRowId", arg0);
         }
@@ -2188,10 +2188,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getSQLXML(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.SQLXML"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.SQLXML GetSQLXML(string arg0)
+        public Java.Sql.SQLXML GetSQLXML(Java.Lang.String arg0)
         {
             return IExecute<Java.Sql.SQLXML>("getSQLXML", arg0);
         }
@@ -2219,21 +2219,21 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTime(java.lang.String,java.util.Calendar)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Calendar"/></param>
         /// <returns><see cref="Java.Sql.Time"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.Time GetTime(string arg0, Java.Util.Calendar arg1)
+        public Java.Sql.Time GetTime(Java.Lang.String arg0, Java.Util.Calendar arg1)
         {
             return IExecute<Java.Sql.Time>("getTime", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTime(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Time"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.Time GetTime(string arg0)
+        public Java.Sql.Time GetTime(Java.Lang.String arg0)
         {
             return IExecute<Java.Sql.Time>("getTime", arg0);
         }
@@ -2261,21 +2261,21 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTimestamp(java.lang.String,java.util.Calendar)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Calendar"/></param>
         /// <returns><see cref="Java.Sql.Timestamp"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.Timestamp GetTimestamp(string arg0, Java.Util.Calendar arg1)
+        public Java.Sql.Timestamp GetTimestamp(Java.Lang.String arg0, Java.Util.Calendar arg1)
         {
             return IExecute<Java.Sql.Timestamp>("getTimestamp", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTimestamp(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Timestamp"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.Timestamp GetTimestamp(string arg0)
+        public Java.Sql.Timestamp GetTimestamp(Java.Lang.String arg0)
         {
             return IExecute<Java.Sql.Timestamp>("getTimestamp", arg0);
         }
@@ -2292,10 +2292,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getLong(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public long GetLong(string arg0)
+        public long GetLong(Java.Lang.String arg0)
         {
             return IExecute<long>("getLong", arg0);
         }
@@ -2312,10 +2312,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getShort(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="short"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public short GetShort(string arg0)
+        public short GetShort(Java.Lang.String arg0)
         {
             return IExecute<short>("getShort", arg0);
         }
@@ -2422,10 +2422,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateArray(java.lang.String,java.sql.Array)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Array"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateArray(string arg0, Java.Sql.Array arg1)
+        public void UpdateArray(Java.Lang.String arg0, Java.Sql.Array arg1)
         {
             IExecute("updateArray", arg0, arg1);
         }
@@ -2464,32 +2464,32 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateAsciiStream(java.lang.String,java.io.InputStream,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateAsciiStream(string arg0, Java.Io.InputStream arg1, int arg2)
+        public void UpdateAsciiStream(Java.Lang.String arg0, Java.Io.InputStream arg1, int arg2)
         {
             IExecute("updateAsciiStream", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateAsciiStream(java.lang.String,java.io.InputStream,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg2"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateAsciiStream(string arg0, Java.Io.InputStream arg1, long arg2)
+        public void UpdateAsciiStream(Java.Lang.String arg0, Java.Io.InputStream arg1, long arg2)
         {
             IExecute("updateAsciiStream", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateAsciiStream(java.lang.String,java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateAsciiStream(string arg0, Java.Io.InputStream arg1)
+        public void UpdateAsciiStream(Java.Lang.String arg0, Java.Io.InputStream arg1)
         {
             IExecute("updateAsciiStream", arg0, arg1);
         }
@@ -2506,10 +2506,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBigDecimal(java.lang.String,java.math.BigDecimal)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Math.BigDecimal"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateBigDecimal(string arg0, Java.Math.BigDecimal arg1)
+        public void UpdateBigDecimal(Java.Lang.String arg0, Java.Math.BigDecimal arg1)
         {
             IExecute("updateBigDecimal", arg0, arg1);
         }
@@ -2548,32 +2548,32 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBinaryStream(java.lang.String,java.io.InputStream,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateBinaryStream(string arg0, Java.Io.InputStream arg1, int arg2)
+        public void UpdateBinaryStream(Java.Lang.String arg0, Java.Io.InputStream arg1, int arg2)
         {
             IExecute("updateBinaryStream", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBinaryStream(java.lang.String,java.io.InputStream,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg2"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateBinaryStream(string arg0, Java.Io.InputStream arg1, long arg2)
+        public void UpdateBinaryStream(Java.Lang.String arg0, Java.Io.InputStream arg1, long arg2)
         {
             IExecute("updateBinaryStream", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBinaryStream(java.lang.String,java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateBinaryStream(string arg0, Java.Io.InputStream arg1)
+        public void UpdateBinaryStream(Java.Lang.String arg0, Java.Io.InputStream arg1)
         {
             IExecute("updateBinaryStream", arg0, arg1);
         }
@@ -2611,31 +2611,31 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBlob(java.lang.String,java.io.InputStream,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg2"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateBlob(string arg0, Java.Io.InputStream arg1, long arg2)
+        public void UpdateBlob(Java.Lang.String arg0, Java.Io.InputStream arg1, long arg2)
         {
             IExecute("updateBlob", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBlob(java.lang.String,java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateBlob(string arg0, Java.Io.InputStream arg1)
+        public void UpdateBlob(Java.Lang.String arg0, Java.Io.InputStream arg1)
         {
             IExecute("updateBlob", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBlob(java.lang.String,java.sql.Blob)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Blob"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateBlob(string arg0, Java.Sql.Blob arg1)
+        public void UpdateBlob(Java.Lang.String arg0, Java.Sql.Blob arg1)
         {
             IExecute("updateBlob", arg0, arg1);
         }
@@ -2652,10 +2652,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBoolean(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateBoolean(string arg0, bool arg1)
+        public void UpdateBoolean(Java.Lang.String arg0, bool arg1)
         {
             IExecute("updateBoolean", arg0, arg1);
         }
@@ -2672,10 +2672,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateByte(java.lang.String,byte)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateByte(string arg0, byte arg1)
+        public void UpdateByte(Java.Lang.String arg0, byte arg1)
         {
             IExecute("updateByte", arg0, arg1);
         }
@@ -2692,10 +2692,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBytes(java.lang.String,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateBytes(string arg0, byte[] arg1)
+        public void UpdateBytes(Java.Lang.String arg0, byte[] arg1)
         {
             IExecute("updateBytes", arg0, arg1);
         }
@@ -2734,32 +2734,32 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateCharacterStream(java.lang.String,java.io.Reader,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateCharacterStream(string arg0, Java.Io.Reader arg1, int arg2)
+        public void UpdateCharacterStream(Java.Lang.String arg0, Java.Io.Reader arg1, int arg2)
         {
             IExecute("updateCharacterStream", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateCharacterStream(java.lang.String,java.io.Reader,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
         /// <param name="arg2"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateCharacterStream(string arg0, Java.Io.Reader arg1, long arg2)
+        public void UpdateCharacterStream(Java.Lang.String arg0, Java.Io.Reader arg1, long arg2)
         {
             IExecute("updateCharacterStream", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateCharacterStream(java.lang.String,java.io.Reader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateCharacterStream(string arg0, Java.Io.Reader arg1)
+        public void UpdateCharacterStream(Java.Lang.String arg0, Java.Io.Reader arg1)
         {
             IExecute("updateCharacterStream", arg0, arg1);
         }
@@ -2797,31 +2797,31 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateClob(java.lang.String,java.io.Reader,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
         /// <param name="arg2"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateClob(string arg0, Java.Io.Reader arg1, long arg2)
+        public void UpdateClob(Java.Lang.String arg0, Java.Io.Reader arg1, long arg2)
         {
             IExecute("updateClob", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateClob(java.lang.String,java.io.Reader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateClob(string arg0, Java.Io.Reader arg1)
+        public void UpdateClob(Java.Lang.String arg0, Java.Io.Reader arg1)
         {
             IExecute("updateClob", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateClob(java.lang.String,java.sql.Clob)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Clob"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateClob(string arg0, Java.Sql.Clob arg1)
+        public void UpdateClob(Java.Lang.String arg0, Java.Sql.Clob arg1)
         {
             IExecute("updateClob", arg0, arg1);
         }
@@ -2838,10 +2838,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateDate(java.lang.String,java.sql.Date)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Date"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateDate(string arg0, Java.Sql.Date arg1)
+        public void UpdateDate(Java.Lang.String arg0, Java.Sql.Date arg1)
         {
             IExecute("updateDate", arg0, arg1);
         }
@@ -2858,10 +2858,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateDouble(java.lang.String,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="double"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateDouble(string arg0, double arg1)
+        public void UpdateDouble(Java.Lang.String arg0, double arg1)
         {
             IExecute("updateDouble", arg0, arg1);
         }
@@ -2878,10 +2878,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateFloat(java.lang.String,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="float"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateFloat(string arg0, float arg1)
+        public void UpdateFloat(Java.Lang.String arg0, float arg1)
         {
             IExecute("updateFloat", arg0, arg1);
         }
@@ -2898,10 +2898,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateInt(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateInt(string arg0, int arg1)
+        public void UpdateInt(Java.Lang.String arg0, int arg1)
         {
             IExecute("updateInt", arg0, arg1);
         }
@@ -2918,10 +2918,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateLong(java.lang.String,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateLong(string arg0, long arg1)
+        public void UpdateLong(Java.Lang.String arg0, long arg1)
         {
             IExecute("updateLong", arg0, arg1);
         }
@@ -2949,21 +2949,21 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNCharacterStream(java.lang.String,java.io.Reader,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
         /// <param name="arg2"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateNCharacterStream(string arg0, Java.Io.Reader arg1, long arg2)
+        public void UpdateNCharacterStream(Java.Lang.String arg0, Java.Io.Reader arg1, long arg2)
         {
             IExecute("updateNCharacterStream", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNCharacterStream(java.lang.String,java.io.Reader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateNCharacterStream(string arg0, Java.Io.Reader arg1)
+        public void UpdateNCharacterStream(Java.Lang.String arg0, Java.Io.Reader arg1)
         {
             IExecute("updateNCharacterStream", arg0, arg1);
         }
@@ -3001,31 +3001,31 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNClob(java.lang.String,java.io.Reader,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
         /// <param name="arg2"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateNClob(string arg0, Java.Io.Reader arg1, long arg2)
+        public void UpdateNClob(Java.Lang.String arg0, Java.Io.Reader arg1, long arg2)
         {
             IExecute("updateNClob", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNClob(java.lang.String,java.io.Reader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateNClob(string arg0, Java.Io.Reader arg1)
+        public void UpdateNClob(Java.Lang.String arg0, Java.Io.Reader arg1)
         {
             IExecute("updateNClob", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNClob(java.lang.String,java.sql.NClob)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.NClob"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateNClob(string arg0, Java.Sql.NClob arg1)
+        public void UpdateNClob(Java.Lang.String arg0, Java.Sql.NClob arg1)
         {
             IExecute("updateNClob", arg0, arg1);
         }
@@ -3033,19 +3033,19 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNString(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateNString(int arg0, string arg1)
+        public void UpdateNString(int arg0, Java.Lang.String arg1)
         {
             IExecute("updateNString", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNString(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateNString(string arg0, string arg1)
+        public void UpdateNString(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             IExecute("updateNString", arg0, arg1);
         }
@@ -3061,9 +3061,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNull(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateNull(string arg0)
+        public void UpdateNull(Java.Lang.String arg0)
         {
             IExecute("updateNull", arg0);
         }
@@ -3091,21 +3091,21 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(java.lang.String,java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateObject(string arg0, object arg1, int arg2)
+        public void UpdateObject(Java.Lang.String arg0, object arg1, int arg2)
         {
             IExecute("updateObject", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateObject(string arg0, object arg1)
+        public void UpdateObject(Java.Lang.String arg0, object arg1)
         {
             IExecute("updateObject", arg0, arg1);
         }
@@ -3122,10 +3122,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateRef(java.lang.String,java.sql.Ref)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Ref"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateRef(string arg0, Java.Sql.Ref arg1)
+        public void UpdateRef(Java.Lang.String arg0, Java.Sql.Ref arg1)
         {
             IExecute("updateRef", arg0, arg1);
         }
@@ -3151,10 +3151,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateRowId(java.lang.String,java.sql.RowId)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.RowId"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateRowId(string arg0, Java.Sql.RowId arg1)
+        public void UpdateRowId(Java.Lang.String arg0, Java.Sql.RowId arg1)
         {
             IExecute("updateRowId", arg0, arg1);
         }
@@ -3171,10 +3171,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateShort(java.lang.String,short)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="short"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateShort(string arg0, short arg1)
+        public void UpdateShort(Java.Lang.String arg0, short arg1)
         {
             IExecute("updateShort", arg0, arg1);
         }
@@ -3191,10 +3191,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateSQLXML(java.lang.String,java.sql.SQLXML)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.SQLXML"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateSQLXML(string arg0, Java.Sql.SQLXML arg1)
+        public void UpdateSQLXML(Java.Lang.String arg0, Java.Sql.SQLXML arg1)
         {
             IExecute("updateSQLXML", arg0, arg1);
         }
@@ -3202,19 +3202,19 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateString(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateString(int arg0, string arg1)
+        public void UpdateString(int arg0, Java.Lang.String arg1)
         {
             IExecute("updateString", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateString(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateString(string arg0, string arg1)
+        public void UpdateString(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             IExecute("updateString", arg0, arg1);
         }
@@ -3231,10 +3231,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateTime(java.lang.String,java.sql.Time)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Time"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateTime(string arg0, Java.Sql.Time arg1)
+        public void UpdateTime(Java.Lang.String arg0, Java.Sql.Time arg1)
         {
             IExecute("updateTime", arg0, arg1);
         }
@@ -3251,10 +3251,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateTimestamp(java.lang.String,java.sql.Timestamp)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Timestamp"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateTimestamp(string arg0, Java.Sql.Timestamp arg1)
+        public void UpdateTimestamp(Java.Lang.String arg0, Java.Sql.Timestamp arg1)
         {
             IExecute("updateTimestamp", arg0, arg1);
         }
@@ -3284,23 +3284,23 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(java.lang.String,java.lang.Object,java.sql.SQLType,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Java.Sql.SQLType"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateObject(string arg0, object arg1, Java.Sql.SQLType arg2, int arg3)
+        public void UpdateObject(Java.Lang.String arg0, object arg1, Java.Sql.SQLType arg2, int arg3)
         {
             IExecute("updateObject", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(java.lang.String,java.lang.Object,java.sql.SQLType)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Java.Sql.SQLType"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateObject(string arg0, object arg1, Java.Sql.SQLType arg2)
+        public void UpdateObject(Java.Lang.String arg0, object arg1, Java.Sql.SQLType arg2)
         {
             IExecute("updateObject", arg0, arg1, arg2);
         }

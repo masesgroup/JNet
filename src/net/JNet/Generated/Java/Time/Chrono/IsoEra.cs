@@ -69,9 +69,9 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoEra.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Time.Chrono.IsoEra"/></returns>
-        public static Java.Time.Chrono.IsoEra ValueOf(string arg0)
+        public static Java.Time.Chrono.IsoEra ValueOf(Java.Lang.String arg0)
         {
             return SExecute<Java.Time.Chrono.IsoEra>(LocalBridgeClazz, "valueOf", arg0);
         }

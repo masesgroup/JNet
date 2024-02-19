@@ -32,8 +32,8 @@ namespace Java.Security.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public MGF1ParameterSpec(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public MGF1ParameterSpec(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -98,9 +98,9 @@ namespace Java.Security.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#getDigestAlgorithm()"/> 
         /// </summary>
-        public string DigestAlgorithm
+        public Java.Lang.String DigestAlgorithm
         {
-            get { return IExecute<string>("getDigestAlgorithm"); }
+            get { return IExecute<Java.Lang.String>("getDigestAlgorithm"); }
         }
 
         #endregion

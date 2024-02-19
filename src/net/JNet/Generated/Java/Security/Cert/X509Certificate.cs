@@ -59,9 +59,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getExtendedKeyUsage()"/> 
         /// </summary>
-        public Java.Util.List<string> ExtendedKeyUsage
+        public Java.Util.List<Java.Lang.String> ExtendedKeyUsage
         {
-            get { return IExecute<Java.Util.List<string>>("getExtendedKeyUsage"); }
+            get { return IExecute<Java.Util.List<Java.Lang.String>>("getExtendedKeyUsage"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getIssuerAlternativeNames()"/> 
@@ -122,16 +122,16 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getSigAlgName()"/> 
         /// </summary>
-        public string SigAlgName
+        public Java.Lang.String SigAlgName
         {
-            get { return IExecute<string>("getSigAlgName"); }
+            get { return IExecute<Java.Lang.String>("getSigAlgName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getSigAlgOID()"/> 
         /// </summary>
-        public string SigAlgOID
+        public Java.Lang.String SigAlgOID
         {
-            get { return IExecute<string>("getSigAlgOID"); }
+            get { return IExecute<Java.Lang.String>("getSigAlgOID"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getSigAlgParams()"/> 

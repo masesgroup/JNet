@@ -1012,14 +1012,14 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#EXIF_VERSION_2_1"/>
         /// </summary>
-        public static string EXIF_VERSION_2_1 { get { if (!_EXIF_VERSION_2_1Ready) { _EXIF_VERSION_2_1Content = SGetField<string>(LocalBridgeClazz, "EXIF_VERSION_2_1"); _EXIF_VERSION_2_1Ready = true; } return _EXIF_VERSION_2_1Content; } }
-        private static string _EXIF_VERSION_2_1Content = default;
+        public static Java.Lang.String EXIF_VERSION_2_1 { get { if (!_EXIF_VERSION_2_1Ready) { _EXIF_VERSION_2_1Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXIF_VERSION_2_1"); _EXIF_VERSION_2_1Ready = true; } return _EXIF_VERSION_2_1Content; } }
+        private static Java.Lang.String _EXIF_VERSION_2_1Content = default;
         private static bool _EXIF_VERSION_2_1Ready = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#EXIF_VERSION_2_2"/>
         /// </summary>
-        public static string EXIF_VERSION_2_2 { get { if (!_EXIF_VERSION_2_2Ready) { _EXIF_VERSION_2_2Content = SGetField<string>(LocalBridgeClazz, "EXIF_VERSION_2_2"); _EXIF_VERSION_2_2Ready = true; } return _EXIF_VERSION_2_2Content; } }
-        private static string _EXIF_VERSION_2_2Content = default;
+        public static Java.Lang.String EXIF_VERSION_2_2 { get { if (!_EXIF_VERSION_2_2Ready) { _EXIF_VERSION_2_2Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXIF_VERSION_2_2"); _EXIF_VERSION_2_2Ready = true; } return _EXIF_VERSION_2_2Content; } }
+        private static Java.Lang.String _EXIF_VERSION_2_2Content = default;
         private static bool _EXIF_VERSION_2_2Ready = false; // this is used because in case of generics 
 
         #endregion

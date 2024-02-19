@@ -35,7 +35,7 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLHtmlElement.html#getVersion()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLHtmlElement.html#setVersion(java.lang.String)"/>
         /// </summary>
-        string Version { get; set; }
+        Java.Lang.String Version { get; set; }
 
         #endregion
 
@@ -70,9 +70,9 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLHtmlElement.html#getVersion()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLHtmlElement.html#setVersion(java.lang.String)"/>
         /// </summary>
-        public string Version
+        public Java.Lang.String Version
         {
-            get { return IExecute<string>("getVersion"); } set { IExecute("setVersion", value); }
+            get { return IExecute<Java.Lang.String>("getVersion"); } set { IExecute("setVersion", value); }
         }
 
         #endregion

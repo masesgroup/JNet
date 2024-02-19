@@ -36,19 +36,19 @@ namespace Java.Security
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmConstraints.html#permits(java.util.Set,java.lang.String,java.security.AlgorithmParameters)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Java.Security.AlgorithmParameters"/></param>
         /// <returns><see cref="bool"/></returns>
-        bool Permits(Java.Util.Set<Java.Security.CryptoPrimitive> arg0, string arg1, Java.Security.AlgorithmParameters arg2);
+        bool Permits(Java.Util.Set<Java.Security.CryptoPrimitive> arg0, Java.Lang.String arg1, Java.Security.AlgorithmParameters arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmConstraints.html#permits(java.util.Set,java.lang.String,java.security.Key,java.security.AlgorithmParameters)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Java.Security.Key"/></param>
         /// <param name="arg3"><see cref="Java.Security.AlgorithmParameters"/></param>
         /// <returns><see cref="bool"/></returns>
-        bool Permits(Java.Util.Set<Java.Security.CryptoPrimitive> arg0, string arg1, Java.Security.Key arg2, Java.Security.AlgorithmParameters arg3);
+        bool Permits(Java.Util.Set<Java.Security.CryptoPrimitive> arg0, Java.Lang.String arg1, Java.Security.Key arg2, Java.Security.AlgorithmParameters arg3);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmConstraints.html#permits(java.util.Set,java.security.Key)"/>
         /// </summary>
@@ -91,10 +91,10 @@ namespace Java.Security
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmConstraints.html#permits(java.util.Set,java.lang.String,java.security.AlgorithmParameters)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Java.Security.AlgorithmParameters"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool Permits(Java.Util.Set<Java.Security.CryptoPrimitive> arg0, string arg1, Java.Security.AlgorithmParameters arg2)
+        public bool Permits(Java.Util.Set<Java.Security.CryptoPrimitive> arg0, Java.Lang.String arg1, Java.Security.AlgorithmParameters arg2)
         {
             return IExecute<bool>("permits", arg0, arg1, arg2);
         }
@@ -102,11 +102,11 @@ namespace Java.Security
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmConstraints.html#permits(java.util.Set,java.lang.String,java.security.Key,java.security.AlgorithmParameters)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Java.Security.Key"/></param>
         /// <param name="arg3"><see cref="Java.Security.AlgorithmParameters"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool Permits(Java.Util.Set<Java.Security.CryptoPrimitive> arg0, string arg1, Java.Security.Key arg2, Java.Security.AlgorithmParameters arg3)
+        public bool Permits(Java.Util.Set<Java.Security.CryptoPrimitive> arg0, Java.Lang.String arg1, Java.Security.Key arg2, Java.Security.AlgorithmParameters arg3)
         {
             return IExecute<bool>("permits", arg0, arg1, arg2, arg3);
         }

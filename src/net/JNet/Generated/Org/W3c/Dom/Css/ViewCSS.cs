@@ -36,9 +36,9 @@ namespace Org.W3c.Dom.Css
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/ViewCSS.html#getComputedStyle(org.w3c.dom.Element,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Element"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Css.CSSStyleDeclaration"/></returns>
-        Org.W3c.Dom.Css.CSSStyleDeclaration GetComputedStyle(Org.W3c.Dom.Element arg0, string arg1);
+        Org.W3c.Dom.Css.CSSStyleDeclaration GetComputedStyle(Org.W3c.Dom.Element arg0, Java.Lang.String arg1);
 
         #endregion
 
@@ -74,9 +74,9 @@ namespace Org.W3c.Dom.Css
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/ViewCSS.html#getComputedStyle(org.w3c.dom.Element,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Element"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Css.CSSStyleDeclaration"/></returns>
-        public Org.W3c.Dom.Css.CSSStyleDeclaration GetComputedStyle(Org.W3c.Dom.Element arg0, string arg1)
+        public Org.W3c.Dom.Css.CSSStyleDeclaration GetComputedStyle(Org.W3c.Dom.Element arg0, Java.Lang.String arg1)
         {
             return IExecute<Org.W3c.Dom.Css.CSSStyleDeclaration>("getComputedStyle", arg0, arg1);
         }

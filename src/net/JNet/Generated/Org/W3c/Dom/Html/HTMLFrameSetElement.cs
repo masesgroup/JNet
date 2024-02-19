@@ -35,11 +35,11 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameSetElement.html#getCols()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameSetElement.html#setCols(java.lang.String)"/>
         /// </summary>
-        string Cols { get; set; }
+        Java.Lang.String Cols { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameSetElement.html#getRows()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameSetElement.html#setRows(java.lang.String)"/>
         /// </summary>
-        string Rows { get; set; }
+        Java.Lang.String Rows { get; set; }
 
         #endregion
 
@@ -74,16 +74,16 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameSetElement.html#getCols()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameSetElement.html#setCols(java.lang.String)"/>
         /// </summary>
-        public string Cols
+        public Java.Lang.String Cols
         {
-            get { return IExecute<string>("getCols"); } set { IExecute("setCols", value); }
+            get { return IExecute<Java.Lang.String>("getCols"); } set { IExecute("setCols", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameSetElement.html#getRows()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameSetElement.html#setRows(java.lang.String)"/>
         /// </summary>
-        public string Rows
+        public Java.Lang.String Rows
         {
-            get { return IExecute<string>("getRows"); } set { IExecute("setRows", value); }
+            get { return IExecute<Java.Lang.String>("getRows"); } set { IExecute("setRows", value); }
         }
 
         #endregion

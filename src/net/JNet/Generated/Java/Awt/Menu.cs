@@ -32,19 +32,19 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Menu.html#%3Cinit%3E(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <exception cref="Java.Awt.HeadlessException"/>
-        public Menu(string arg0, bool arg1)
+        public Menu(Java.Lang.String arg0, bool arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Menu.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Awt.HeadlessException"/>
-        public Menu(string arg0)
+        public Menu(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -105,8 +105,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Menu.html#add(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public void Add(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void Add(Java.Lang.String arg0)
         {
             IExecute("add", arg0);
         }
@@ -129,9 +129,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Menu.html#insert(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        public void Insert(string arg0, int arg1)
+        public void Insert(Java.Lang.String arg0, int arg1)
         {
             IExecute("insert", arg0, arg1);
         }

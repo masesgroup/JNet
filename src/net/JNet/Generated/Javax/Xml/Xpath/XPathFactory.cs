@@ -40,14 +40,14 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#DEFAULT_OBJECT_MODEL_URI"/>
         /// </summary>
-        public static string DEFAULT_OBJECT_MODEL_URI { get { if (!_DEFAULT_OBJECT_MODEL_URIReady) { _DEFAULT_OBJECT_MODEL_URIContent = SGetField<string>(LocalBridgeClazz, "DEFAULT_OBJECT_MODEL_URI"); _DEFAULT_OBJECT_MODEL_URIReady = true; } return _DEFAULT_OBJECT_MODEL_URIContent; } }
-        private static string _DEFAULT_OBJECT_MODEL_URIContent = default;
+        public static Java.Lang.String DEFAULT_OBJECT_MODEL_URI { get { if (!_DEFAULT_OBJECT_MODEL_URIReady) { _DEFAULT_OBJECT_MODEL_URIContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DEFAULT_OBJECT_MODEL_URI"); _DEFAULT_OBJECT_MODEL_URIReady = true; } return _DEFAULT_OBJECT_MODEL_URIContent; } }
+        private static Java.Lang.String _DEFAULT_OBJECT_MODEL_URIContent = default;
         private static bool _DEFAULT_OBJECT_MODEL_URIReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#DEFAULT_PROPERTY_NAME"/>
         /// </summary>
-        public static string DEFAULT_PROPERTY_NAME { get { if (!_DEFAULT_PROPERTY_NAMEReady) { _DEFAULT_PROPERTY_NAMEContent = SGetField<string>(LocalBridgeClazz, "DEFAULT_PROPERTY_NAME"); _DEFAULT_PROPERTY_NAMEReady = true; } return _DEFAULT_PROPERTY_NAMEContent; } }
-        private static string _DEFAULT_PROPERTY_NAMEContent = default;
+        public static Java.Lang.String DEFAULT_PROPERTY_NAME { get { if (!_DEFAULT_PROPERTY_NAMEReady) { _DEFAULT_PROPERTY_NAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DEFAULT_PROPERTY_NAME"); _DEFAULT_PROPERTY_NAMEReady = true; } return _DEFAULT_PROPERTY_NAMEContent; } }
+        private static Java.Lang.String _DEFAULT_PROPERTY_NAMEContent = default;
         private static bool _DEFAULT_PROPERTY_NAMEReady = false; // this is used because in case of generics 
 
         #endregion
@@ -74,22 +74,22 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newInstance(java.lang.String,java.lang.String,java.lang.ClassLoader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
         /// <returns><see cref="Javax.Xml.Xpath.XPathFactory"/></returns>
         /// <exception cref="Javax.Xml.Xpath.XPathFactoryConfigurationException"/>
-        public static Javax.Xml.Xpath.XPathFactory NewInstance(string arg0, string arg1, Java.Lang.ClassLoader arg2)
+        public static Javax.Xml.Xpath.XPathFactory NewInstance(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.ClassLoader arg2)
         {
             return SExecute<Javax.Xml.Xpath.XPathFactory>(LocalBridgeClazz, "newInstance", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newInstance(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Xml.Xpath.XPathFactory"/></returns>
         /// <exception cref="Javax.Xml.Xpath.XPathFactoryConfigurationException"/>
-        public static Javax.Xml.Xpath.XPathFactory NewInstance(string arg0)
+        public static Javax.Xml.Xpath.XPathFactory NewInstance(Java.Lang.String arg0)
         {
             return SExecute<Javax.Xml.Xpath.XPathFactory>(LocalBridgeClazz, "newInstance", arg0);
         }
@@ -100,19 +100,19 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#getFeature(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Javax.Xml.Xpath.XPathFactoryConfigurationException"/>
-        public bool GetFeature(string arg0)
+        public bool GetFeature(Java.Lang.String arg0)
         {
             return IExecute<bool>("getFeature", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#isObjectModelSupported(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool IsObjectModelSupported(string arg0)
+        public bool IsObjectModelSupported(Java.Lang.String arg0)
         {
             return IExecute<bool>("isObjectModelSupported", arg0);
         }
@@ -128,10 +128,10 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#setFeature(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <exception cref="Javax.Xml.Xpath.XPathFactoryConfigurationException"/>
-        public void SetFeature(string arg0, bool arg1)
+        public void SetFeature(Java.Lang.String arg0, bool arg1)
         {
             IExecute("setFeature", arg0, arg1);
         }

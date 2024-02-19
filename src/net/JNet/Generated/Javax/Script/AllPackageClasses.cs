@@ -76,7 +76,7 @@ namespace Javax.Script
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Bindings.html"/>
     /// </summary>
-    public partial class Bindings : Java.Util.Map<string, object>
+    public partial class Bindings : Java.Util.Map<Java.Lang.String, object>
     {
         const string _bridgeClassName = "javax.script.Bindings";
         /// <summary>

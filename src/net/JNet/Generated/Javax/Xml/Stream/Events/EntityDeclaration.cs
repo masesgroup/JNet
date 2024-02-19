@@ -35,27 +35,27 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getBaseURI()"/> 
         /// </summary>
-        string BaseURI { get; }
+        Java.Lang.String BaseURI { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getName()"/> 
         /// </summary>
-        string Name { get; }
+        Java.Lang.String Name { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getNotationName()"/> 
         /// </summary>
-        string NotationName { get; }
+        Java.Lang.String NotationName { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getPublicId()"/> 
         /// </summary>
-        string PublicId { get; }
+        Java.Lang.String PublicId { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getReplacementText()"/> 
         /// </summary>
-        string ReplacementText { get; }
+        Java.Lang.String ReplacementText { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getSystemId()"/> 
         /// </summary>
-        string SystemId { get; }
+        Java.Lang.String SystemId { get; }
 
         #endregion
 
@@ -90,44 +90,44 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getBaseURI()"/> 
         /// </summary>
-        public string BaseURI
+        public Java.Lang.String BaseURI
         {
-            get { return IExecute<string>("getBaseURI"); }
+            get { return IExecute<Java.Lang.String>("getBaseURI"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getName()"/> 
         /// </summary>
-        public string Name
+        public Java.Lang.String Name
         {
-            get { return IExecute<string>("getName"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getNotationName()"/> 
         /// </summary>
-        public string NotationName
+        public Java.Lang.String NotationName
         {
-            get { return IExecute<string>("getNotationName"); }
+            get { return IExecute<Java.Lang.String>("getNotationName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getPublicId()"/> 
         /// </summary>
-        public string PublicId
+        public Java.Lang.String PublicId
         {
-            get { return IExecute<string>("getPublicId"); }
+            get { return IExecute<Java.Lang.String>("getPublicId"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getReplacementText()"/> 
         /// </summary>
-        public string ReplacementText
+        public Java.Lang.String ReplacementText
         {
-            get { return IExecute<string>("getReplacementText"); }
+            get { return IExecute<Java.Lang.String>("getReplacementText"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getSystemId()"/> 
         /// </summary>
-        public string SystemId
+        public Java.Lang.String SystemId
         {
-            get { return IExecute<string>("getSystemId"); }
+            get { return IExecute<Java.Lang.String>("getSystemId"); }
         }
 
         #endregion

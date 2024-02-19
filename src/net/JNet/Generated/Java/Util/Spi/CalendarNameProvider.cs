@@ -48,27 +48,27 @@ namespace Java.Util.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/CalendarNameProvider.html#getDisplayName(java.lang.String,int,int,int,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetDisplayName(string arg0, int arg1, int arg2, int arg3, Java.Util.Locale arg4)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDisplayName(Java.Lang.String arg0, int arg1, int arg2, int arg3, Java.Util.Locale arg4)
         {
-            return IExecute<string>("getDisplayName", arg0, arg1, arg2, arg3, arg4);
+            return IExecute<Java.Lang.String>("getDisplayName", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/CalendarNameProvider.html#getDisplayNames(java.lang.String,int,int,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Util.Map"/></returns>
-        public Java.Util.Map<string, Java.Lang.Integer> GetDisplayNames(string arg0, int arg1, int arg2, Java.Util.Locale arg3)
+        public Java.Util.Map<Java.Lang.String, Java.Lang.Integer> GetDisplayNames(Java.Lang.String arg0, int arg1, int arg2, Java.Util.Locale arg3)
         {
-            return IExecute<Java.Util.Map<string, Java.Lang.Integer>>("getDisplayNames", arg0, arg1, arg2, arg3);
+            return IExecute<Java.Util.Map<Java.Lang.String, Java.Lang.Integer>>("getDisplayNames", arg0, arg1, arg2, arg3);
         }
 
         #endregion

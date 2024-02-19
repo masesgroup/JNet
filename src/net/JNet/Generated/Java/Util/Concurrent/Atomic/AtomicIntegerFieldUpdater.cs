@@ -45,9 +45,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#newUpdater(java.lang.Class,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater"/></returns>
-        public static Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater NewUpdater(Java.Lang.Class arg0, string arg1)
+        public static Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater NewUpdater(Java.Lang.Class arg0, Java.Lang.String arg1)
         {
             return SExecute<Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater>(LocalBridgeClazz, "newUpdater", arg0, arg1);
         }
@@ -247,10 +247,10 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#newUpdater(java.lang.Class,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <typeparam name="U"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater"/></returns>
-        public static Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater<U> NewUpdater<U>(Java.Lang.Class arg0, string arg1)
+        public static Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater<U> NewUpdater<U>(Java.Lang.Class arg0, Java.Lang.String arg1)
         {
             return SExecute<Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater<U>>(LocalBridgeClazz, "newUpdater", arg0, arg1);
         }

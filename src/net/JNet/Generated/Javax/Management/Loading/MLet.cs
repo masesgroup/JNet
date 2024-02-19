@@ -117,17 +117,17 @@ namespace Javax.Management.Loading
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#getLibraryDirectory()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#setLibraryDirectory(java.lang.String)"/>
         /// </summary>
-        public string LibraryDirectory
+        public Java.Lang.String LibraryDirectory
         {
-            get { return IExecute<string>("getLibraryDirectory"); } set { IExecute("setLibraryDirectory", value); }
+            get { return IExecute<Java.Lang.String>("getLibraryDirectory"); } set { IExecute("setLibraryDirectory", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#getMBeansFromURL(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
         /// <exception cref="Javax.Management.ServiceNotFoundException"/>
-        public Java.Util.Set<object> GetMBeansFromURL(string arg0)
+        public Java.Util.Set<object> GetMBeansFromURL(Java.Lang.String arg0)
         {
             return IExecute<Java.Util.Set<object>>("getMBeansFromURL", arg0);
         }
@@ -155,20 +155,20 @@ namespace Javax.Management.Loading
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#loadClass(java.lang.String,javax.management.loading.ClassLoaderRepository)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Javax.Management.Loading.ClassLoaderRepository"/></param>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        public Java.Lang.Class LoadClass(string arg0, Javax.Management.Loading.ClassLoaderRepository arg1)
+        public Java.Lang.Class LoadClass(Java.Lang.String arg0, Javax.Management.Loading.ClassLoaderRepository arg1)
         {
             return IExecute<Java.Lang.Class>("loadClass", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#addURL(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Javax.Management.ServiceNotFoundException"/>
-        public void AddURL(string arg0)
+        public void AddURL(Java.Lang.String arg0)
         {
             IExecute("addURL", arg0);
         }

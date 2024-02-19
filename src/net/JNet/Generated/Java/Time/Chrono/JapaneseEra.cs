@@ -85,9 +85,9 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Time.Chrono.JapaneseEra"/></returns>
-        public static Java.Time.Chrono.JapaneseEra ValueOf(string arg0)
+        public static Java.Time.Chrono.JapaneseEra ValueOf(Java.Lang.String arg0)
         {
             return SExecute<Java.Time.Chrono.JapaneseEra>(LocalBridgeClazz, "valueOf", arg0);
         }
@@ -116,10 +116,10 @@ namespace Java.Time.Chrono
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetDisplayName(Java.Time.Format.TextStyle arg0, Java.Util.Locale arg1)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDisplayName(Java.Time.Format.TextStyle arg0, Java.Util.Locale arg1)
         {
-            return IExecute<string>("getDisplayName", arg0, arg1);
+            return IExecute<Java.Lang.String>("getDisplayName", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#range(java.time.temporal.TemporalField)"/>

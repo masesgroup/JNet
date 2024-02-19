@@ -72,9 +72,9 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#getMinorString()"/> 
         /// </summary>
-        public string MinorString
+        public Java.Lang.String MinorString
         {
-            get { return IExecute<string>("getMinorString"); }
+            get { return IExecute<Java.Lang.String>("getMinorString"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#getPrivacy()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#setPrivacy(boolean)"/>
@@ -134,8 +134,8 @@ namespace Org.Ietf.Jgss
         /// <param name="arg2"><see cref="bool"/></param>
         /// <param name="arg3"><see cref="bool"/></param>
         /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="string"/></param>
-        public void SetSupplementaryStates(bool arg0, bool arg1, bool arg2, bool arg3, int arg4, string arg5)
+        /// <param name="arg5"><see cref="Java.Lang.String"/></param>
+        public void SetSupplementaryStates(bool arg0, bool arg1, bool arg2, bool arg3, int arg4, Java.Lang.String arg5)
         {
             IExecute("setSupplementaryStates", arg0, arg1, arg2, arg3, arg4, arg5);
         }

@@ -44,9 +44,9 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html#getAvailableZoneIds()"/> 
         /// </summary>
-        public static Java.Util.Set<string> AvailableZoneIds
+        public static Java.Util.Set<Java.Lang.String> AvailableZoneIds
         {
-            get { return SExecute<Java.Util.Set<string>>(LocalBridgeClazz, "getAvailableZoneIds"); }
+            get { return SExecute<Java.Util.Set<Java.Lang.String>>(LocalBridgeClazz, "getAvailableZoneIds"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html#refresh()"/>
@@ -60,21 +60,21 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html#getRules(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <returns><see cref="Java.Time.Zone.ZoneRules"/></returns>
-        public static Java.Time.Zone.ZoneRules GetRules(string arg0, bool arg1)
+        public static Java.Time.Zone.ZoneRules GetRules(Java.Lang.String arg0, bool arg1)
         {
             return SExecute<Java.Time.Zone.ZoneRules>(LocalBridgeClazz, "getRules", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html#getVersions(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
-        public static Java.Util.NavigableMap<string, Java.Time.Zone.ZoneRules> GetVersions(string arg0)
+        public static Java.Util.NavigableMap<Java.Lang.String, Java.Time.Zone.ZoneRules> GetVersions(Java.Lang.String arg0)
         {
-            return SExecute<Java.Util.NavigableMap<string, Java.Time.Zone.ZoneRules>>(LocalBridgeClazz, "getVersions", arg0);
+            return SExecute<Java.Util.NavigableMap<Java.Lang.String, Java.Time.Zone.ZoneRules>>(LocalBridgeClazz, "getVersions", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html#registerProvider(java.time.zone.ZoneRulesProvider)"/>

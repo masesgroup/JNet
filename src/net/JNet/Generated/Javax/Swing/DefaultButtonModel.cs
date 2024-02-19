@@ -86,9 +86,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultButtonModel.html#getActionCommand()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultButtonModel.html#setActionCommand(java.lang.String)"/>
         /// </summary>
-        public string ActionCommand
+        public Java.Lang.String ActionCommand
         {
-            get { return IExecute<string>("getActionCommand"); } set { IExecute("setActionCommand", value); }
+            get { return IExecute<Java.Lang.String>("getActionCommand"); } set { IExecute("setActionCommand", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultButtonModel.html#getActionListeners()"/> 

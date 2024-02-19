@@ -40,134 +40,134 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_ACTION_PROPERTY"/>
         /// </summary>
-        public static string ACCESSIBLE_ACTION_PROPERTY { get { if (!_ACCESSIBLE_ACTION_PROPERTYReady) { _ACCESSIBLE_ACTION_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "ACCESSIBLE_ACTION_PROPERTY"); _ACCESSIBLE_ACTION_PROPERTYReady = true; } return _ACCESSIBLE_ACTION_PROPERTYContent; } }
-        private static string _ACCESSIBLE_ACTION_PROPERTYContent = default;
+        public static Java.Lang.String ACCESSIBLE_ACTION_PROPERTY { get { if (!_ACCESSIBLE_ACTION_PROPERTYReady) { _ACCESSIBLE_ACTION_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACCESSIBLE_ACTION_PROPERTY"); _ACCESSIBLE_ACTION_PROPERTYReady = true; } return _ACCESSIBLE_ACTION_PROPERTYContent; } }
+        private static Java.Lang.String _ACCESSIBLE_ACTION_PROPERTYContent = default;
         private static bool _ACCESSIBLE_ACTION_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_ACTIVE_DESCENDANT_PROPERTY"/>
         /// </summary>
-        public static string ACCESSIBLE_ACTIVE_DESCENDANT_PROPERTY { get { if (!_ACCESSIBLE_ACTIVE_DESCENDANT_PROPERTYReady) { _ACCESSIBLE_ACTIVE_DESCENDANT_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "ACCESSIBLE_ACTIVE_DESCENDANT_PROPERTY"); _ACCESSIBLE_ACTIVE_DESCENDANT_PROPERTYReady = true; } return _ACCESSIBLE_ACTIVE_DESCENDANT_PROPERTYContent; } }
-        private static string _ACCESSIBLE_ACTIVE_DESCENDANT_PROPERTYContent = default;
+        public static Java.Lang.String ACCESSIBLE_ACTIVE_DESCENDANT_PROPERTY { get { if (!_ACCESSIBLE_ACTIVE_DESCENDANT_PROPERTYReady) { _ACCESSIBLE_ACTIVE_DESCENDANT_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACCESSIBLE_ACTIVE_DESCENDANT_PROPERTY"); _ACCESSIBLE_ACTIVE_DESCENDANT_PROPERTYReady = true; } return _ACCESSIBLE_ACTIVE_DESCENDANT_PROPERTYContent; } }
+        private static Java.Lang.String _ACCESSIBLE_ACTIVE_DESCENDANT_PROPERTYContent = default;
         private static bool _ACCESSIBLE_ACTIVE_DESCENDANT_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_CARET_PROPERTY"/>
         /// </summary>
-        public static string ACCESSIBLE_CARET_PROPERTY { get { if (!_ACCESSIBLE_CARET_PROPERTYReady) { _ACCESSIBLE_CARET_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "ACCESSIBLE_CARET_PROPERTY"); _ACCESSIBLE_CARET_PROPERTYReady = true; } return _ACCESSIBLE_CARET_PROPERTYContent; } }
-        private static string _ACCESSIBLE_CARET_PROPERTYContent = default;
+        public static Java.Lang.String ACCESSIBLE_CARET_PROPERTY { get { if (!_ACCESSIBLE_CARET_PROPERTYReady) { _ACCESSIBLE_CARET_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACCESSIBLE_CARET_PROPERTY"); _ACCESSIBLE_CARET_PROPERTYReady = true; } return _ACCESSIBLE_CARET_PROPERTYContent; } }
+        private static Java.Lang.String _ACCESSIBLE_CARET_PROPERTYContent = default;
         private static bool _ACCESSIBLE_CARET_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_CHILD_PROPERTY"/>
         /// </summary>
-        public static string ACCESSIBLE_CHILD_PROPERTY { get { if (!_ACCESSIBLE_CHILD_PROPERTYReady) { _ACCESSIBLE_CHILD_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "ACCESSIBLE_CHILD_PROPERTY"); _ACCESSIBLE_CHILD_PROPERTYReady = true; } return _ACCESSIBLE_CHILD_PROPERTYContent; } }
-        private static string _ACCESSIBLE_CHILD_PROPERTYContent = default;
+        public static Java.Lang.String ACCESSIBLE_CHILD_PROPERTY { get { if (!_ACCESSIBLE_CHILD_PROPERTYReady) { _ACCESSIBLE_CHILD_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACCESSIBLE_CHILD_PROPERTY"); _ACCESSIBLE_CHILD_PROPERTYReady = true; } return _ACCESSIBLE_CHILD_PROPERTYContent; } }
+        private static Java.Lang.String _ACCESSIBLE_CHILD_PROPERTYContent = default;
         private static bool _ACCESSIBLE_CHILD_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_COMPONENT_BOUNDS_CHANGED"/>
         /// </summary>
-        public static string ACCESSIBLE_COMPONENT_BOUNDS_CHANGED { get { if (!_ACCESSIBLE_COMPONENT_BOUNDS_CHANGEDReady) { _ACCESSIBLE_COMPONENT_BOUNDS_CHANGEDContent = SGetField<string>(LocalBridgeClazz, "ACCESSIBLE_COMPONENT_BOUNDS_CHANGED"); _ACCESSIBLE_COMPONENT_BOUNDS_CHANGEDReady = true; } return _ACCESSIBLE_COMPONENT_BOUNDS_CHANGEDContent; } }
-        private static string _ACCESSIBLE_COMPONENT_BOUNDS_CHANGEDContent = default;
+        public static Java.Lang.String ACCESSIBLE_COMPONENT_BOUNDS_CHANGED { get { if (!_ACCESSIBLE_COMPONENT_BOUNDS_CHANGEDReady) { _ACCESSIBLE_COMPONENT_BOUNDS_CHANGEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACCESSIBLE_COMPONENT_BOUNDS_CHANGED"); _ACCESSIBLE_COMPONENT_BOUNDS_CHANGEDReady = true; } return _ACCESSIBLE_COMPONENT_BOUNDS_CHANGEDContent; } }
+        private static Java.Lang.String _ACCESSIBLE_COMPONENT_BOUNDS_CHANGEDContent = default;
         private static bool _ACCESSIBLE_COMPONENT_BOUNDS_CHANGEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_DESCRIPTION_PROPERTY"/>
         /// </summary>
-        public static string ACCESSIBLE_DESCRIPTION_PROPERTY { get { if (!_ACCESSIBLE_DESCRIPTION_PROPERTYReady) { _ACCESSIBLE_DESCRIPTION_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "ACCESSIBLE_DESCRIPTION_PROPERTY"); _ACCESSIBLE_DESCRIPTION_PROPERTYReady = true; } return _ACCESSIBLE_DESCRIPTION_PROPERTYContent; } }
-        private static string _ACCESSIBLE_DESCRIPTION_PROPERTYContent = default;
+        public static Java.Lang.String ACCESSIBLE_DESCRIPTION_PROPERTY { get { if (!_ACCESSIBLE_DESCRIPTION_PROPERTYReady) { _ACCESSIBLE_DESCRIPTION_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACCESSIBLE_DESCRIPTION_PROPERTY"); _ACCESSIBLE_DESCRIPTION_PROPERTYReady = true; } return _ACCESSIBLE_DESCRIPTION_PROPERTYContent; } }
+        private static Java.Lang.String _ACCESSIBLE_DESCRIPTION_PROPERTYContent = default;
         private static bool _ACCESSIBLE_DESCRIPTION_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_HYPERTEXT_OFFSET"/>
         /// </summary>
-        public static string ACCESSIBLE_HYPERTEXT_OFFSET { get { if (!_ACCESSIBLE_HYPERTEXT_OFFSETReady) { _ACCESSIBLE_HYPERTEXT_OFFSETContent = SGetField<string>(LocalBridgeClazz, "ACCESSIBLE_HYPERTEXT_OFFSET"); _ACCESSIBLE_HYPERTEXT_OFFSETReady = true; } return _ACCESSIBLE_HYPERTEXT_OFFSETContent; } }
-        private static string _ACCESSIBLE_HYPERTEXT_OFFSETContent = default;
+        public static Java.Lang.String ACCESSIBLE_HYPERTEXT_OFFSET { get { if (!_ACCESSIBLE_HYPERTEXT_OFFSETReady) { _ACCESSIBLE_HYPERTEXT_OFFSETContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACCESSIBLE_HYPERTEXT_OFFSET"); _ACCESSIBLE_HYPERTEXT_OFFSETReady = true; } return _ACCESSIBLE_HYPERTEXT_OFFSETContent; } }
+        private static Java.Lang.String _ACCESSIBLE_HYPERTEXT_OFFSETContent = default;
         private static bool _ACCESSIBLE_HYPERTEXT_OFFSETReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_INVALIDATE_CHILDREN"/>
         /// </summary>
-        public static string ACCESSIBLE_INVALIDATE_CHILDREN { get { if (!_ACCESSIBLE_INVALIDATE_CHILDRENReady) { _ACCESSIBLE_INVALIDATE_CHILDRENContent = SGetField<string>(LocalBridgeClazz, "ACCESSIBLE_INVALIDATE_CHILDREN"); _ACCESSIBLE_INVALIDATE_CHILDRENReady = true; } return _ACCESSIBLE_INVALIDATE_CHILDRENContent; } }
-        private static string _ACCESSIBLE_INVALIDATE_CHILDRENContent = default;
+        public static Java.Lang.String ACCESSIBLE_INVALIDATE_CHILDREN { get { if (!_ACCESSIBLE_INVALIDATE_CHILDRENReady) { _ACCESSIBLE_INVALIDATE_CHILDRENContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACCESSIBLE_INVALIDATE_CHILDREN"); _ACCESSIBLE_INVALIDATE_CHILDRENReady = true; } return _ACCESSIBLE_INVALIDATE_CHILDRENContent; } }
+        private static Java.Lang.String _ACCESSIBLE_INVALIDATE_CHILDRENContent = default;
         private static bool _ACCESSIBLE_INVALIDATE_CHILDRENReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_NAME_PROPERTY"/>
         /// </summary>
-        public static string ACCESSIBLE_NAME_PROPERTY { get { if (!_ACCESSIBLE_NAME_PROPERTYReady) { _ACCESSIBLE_NAME_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "ACCESSIBLE_NAME_PROPERTY"); _ACCESSIBLE_NAME_PROPERTYReady = true; } return _ACCESSIBLE_NAME_PROPERTYContent; } }
-        private static string _ACCESSIBLE_NAME_PROPERTYContent = default;
+        public static Java.Lang.String ACCESSIBLE_NAME_PROPERTY { get { if (!_ACCESSIBLE_NAME_PROPERTYReady) { _ACCESSIBLE_NAME_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACCESSIBLE_NAME_PROPERTY"); _ACCESSIBLE_NAME_PROPERTYReady = true; } return _ACCESSIBLE_NAME_PROPERTYContent; } }
+        private static Java.Lang.String _ACCESSIBLE_NAME_PROPERTYContent = default;
         private static bool _ACCESSIBLE_NAME_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_SELECTION_PROPERTY"/>
         /// </summary>
-        public static string ACCESSIBLE_SELECTION_PROPERTY { get { if (!_ACCESSIBLE_SELECTION_PROPERTYReady) { _ACCESSIBLE_SELECTION_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "ACCESSIBLE_SELECTION_PROPERTY"); _ACCESSIBLE_SELECTION_PROPERTYReady = true; } return _ACCESSIBLE_SELECTION_PROPERTYContent; } }
-        private static string _ACCESSIBLE_SELECTION_PROPERTYContent = default;
+        public static Java.Lang.String ACCESSIBLE_SELECTION_PROPERTY { get { if (!_ACCESSIBLE_SELECTION_PROPERTYReady) { _ACCESSIBLE_SELECTION_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACCESSIBLE_SELECTION_PROPERTY"); _ACCESSIBLE_SELECTION_PROPERTYReady = true; } return _ACCESSIBLE_SELECTION_PROPERTYContent; } }
+        private static Java.Lang.String _ACCESSIBLE_SELECTION_PROPERTYContent = default;
         private static bool _ACCESSIBLE_SELECTION_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_STATE_PROPERTY"/>
         /// </summary>
-        public static string ACCESSIBLE_STATE_PROPERTY { get { if (!_ACCESSIBLE_STATE_PROPERTYReady) { _ACCESSIBLE_STATE_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "ACCESSIBLE_STATE_PROPERTY"); _ACCESSIBLE_STATE_PROPERTYReady = true; } return _ACCESSIBLE_STATE_PROPERTYContent; } }
-        private static string _ACCESSIBLE_STATE_PROPERTYContent = default;
+        public static Java.Lang.String ACCESSIBLE_STATE_PROPERTY { get { if (!_ACCESSIBLE_STATE_PROPERTYReady) { _ACCESSIBLE_STATE_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACCESSIBLE_STATE_PROPERTY"); _ACCESSIBLE_STATE_PROPERTYReady = true; } return _ACCESSIBLE_STATE_PROPERTYContent; } }
+        private static Java.Lang.String _ACCESSIBLE_STATE_PROPERTYContent = default;
         private static bool _ACCESSIBLE_STATE_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_TABLE_CAPTION_CHANGED"/>
         /// </summary>
-        public static string ACCESSIBLE_TABLE_CAPTION_CHANGED { get { if (!_ACCESSIBLE_TABLE_CAPTION_CHANGEDReady) { _ACCESSIBLE_TABLE_CAPTION_CHANGEDContent = SGetField<string>(LocalBridgeClazz, "ACCESSIBLE_TABLE_CAPTION_CHANGED"); _ACCESSIBLE_TABLE_CAPTION_CHANGEDReady = true; } return _ACCESSIBLE_TABLE_CAPTION_CHANGEDContent; } }
-        private static string _ACCESSIBLE_TABLE_CAPTION_CHANGEDContent = default;
+        public static Java.Lang.String ACCESSIBLE_TABLE_CAPTION_CHANGED { get { if (!_ACCESSIBLE_TABLE_CAPTION_CHANGEDReady) { _ACCESSIBLE_TABLE_CAPTION_CHANGEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACCESSIBLE_TABLE_CAPTION_CHANGED"); _ACCESSIBLE_TABLE_CAPTION_CHANGEDReady = true; } return _ACCESSIBLE_TABLE_CAPTION_CHANGEDContent; } }
+        private static Java.Lang.String _ACCESSIBLE_TABLE_CAPTION_CHANGEDContent = default;
         private static bool _ACCESSIBLE_TABLE_CAPTION_CHANGEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_TABLE_COLUMN_DESCRIPTION_CHANGED"/>
         /// </summary>
-        public static string ACCESSIBLE_TABLE_COLUMN_DESCRIPTION_CHANGED { get { if (!_ACCESSIBLE_TABLE_COLUMN_DESCRIPTION_CHANGEDReady) { _ACCESSIBLE_TABLE_COLUMN_DESCRIPTION_CHANGEDContent = SGetField<string>(LocalBridgeClazz, "ACCESSIBLE_TABLE_COLUMN_DESCRIPTION_CHANGED"); _ACCESSIBLE_TABLE_COLUMN_DESCRIPTION_CHANGEDReady = true; } return _ACCESSIBLE_TABLE_COLUMN_DESCRIPTION_CHANGEDContent; } }
-        private static string _ACCESSIBLE_TABLE_COLUMN_DESCRIPTION_CHANGEDContent = default;
+        public static Java.Lang.String ACCESSIBLE_TABLE_COLUMN_DESCRIPTION_CHANGED { get { if (!_ACCESSIBLE_TABLE_COLUMN_DESCRIPTION_CHANGEDReady) { _ACCESSIBLE_TABLE_COLUMN_DESCRIPTION_CHANGEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACCESSIBLE_TABLE_COLUMN_DESCRIPTION_CHANGED"); _ACCESSIBLE_TABLE_COLUMN_DESCRIPTION_CHANGEDReady = true; } return _ACCESSIBLE_TABLE_COLUMN_DESCRIPTION_CHANGEDContent; } }
+        private static Java.Lang.String _ACCESSIBLE_TABLE_COLUMN_DESCRIPTION_CHANGEDContent = default;
         private static bool _ACCESSIBLE_TABLE_COLUMN_DESCRIPTION_CHANGEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_TABLE_COLUMN_HEADER_CHANGED"/>
         /// </summary>
-        public static string ACCESSIBLE_TABLE_COLUMN_HEADER_CHANGED { get { if (!_ACCESSIBLE_TABLE_COLUMN_HEADER_CHANGEDReady) { _ACCESSIBLE_TABLE_COLUMN_HEADER_CHANGEDContent = SGetField<string>(LocalBridgeClazz, "ACCESSIBLE_TABLE_COLUMN_HEADER_CHANGED"); _ACCESSIBLE_TABLE_COLUMN_HEADER_CHANGEDReady = true; } return _ACCESSIBLE_TABLE_COLUMN_HEADER_CHANGEDContent; } }
-        private static string _ACCESSIBLE_TABLE_COLUMN_HEADER_CHANGEDContent = default;
+        public static Java.Lang.String ACCESSIBLE_TABLE_COLUMN_HEADER_CHANGED { get { if (!_ACCESSIBLE_TABLE_COLUMN_HEADER_CHANGEDReady) { _ACCESSIBLE_TABLE_COLUMN_HEADER_CHANGEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACCESSIBLE_TABLE_COLUMN_HEADER_CHANGED"); _ACCESSIBLE_TABLE_COLUMN_HEADER_CHANGEDReady = true; } return _ACCESSIBLE_TABLE_COLUMN_HEADER_CHANGEDContent; } }
+        private static Java.Lang.String _ACCESSIBLE_TABLE_COLUMN_HEADER_CHANGEDContent = default;
         private static bool _ACCESSIBLE_TABLE_COLUMN_HEADER_CHANGEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_TABLE_MODEL_CHANGED"/>
         /// </summary>
-        public static string ACCESSIBLE_TABLE_MODEL_CHANGED { get { if (!_ACCESSIBLE_TABLE_MODEL_CHANGEDReady) { _ACCESSIBLE_TABLE_MODEL_CHANGEDContent = SGetField<string>(LocalBridgeClazz, "ACCESSIBLE_TABLE_MODEL_CHANGED"); _ACCESSIBLE_TABLE_MODEL_CHANGEDReady = true; } return _ACCESSIBLE_TABLE_MODEL_CHANGEDContent; } }
-        private static string _ACCESSIBLE_TABLE_MODEL_CHANGEDContent = default;
+        public static Java.Lang.String ACCESSIBLE_TABLE_MODEL_CHANGED { get { if (!_ACCESSIBLE_TABLE_MODEL_CHANGEDReady) { _ACCESSIBLE_TABLE_MODEL_CHANGEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACCESSIBLE_TABLE_MODEL_CHANGED"); _ACCESSIBLE_TABLE_MODEL_CHANGEDReady = true; } return _ACCESSIBLE_TABLE_MODEL_CHANGEDContent; } }
+        private static Java.Lang.String _ACCESSIBLE_TABLE_MODEL_CHANGEDContent = default;
         private static bool _ACCESSIBLE_TABLE_MODEL_CHANGEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_TABLE_ROW_DESCRIPTION_CHANGED"/>
         /// </summary>
-        public static string ACCESSIBLE_TABLE_ROW_DESCRIPTION_CHANGED { get { if (!_ACCESSIBLE_TABLE_ROW_DESCRIPTION_CHANGEDReady) { _ACCESSIBLE_TABLE_ROW_DESCRIPTION_CHANGEDContent = SGetField<string>(LocalBridgeClazz, "ACCESSIBLE_TABLE_ROW_DESCRIPTION_CHANGED"); _ACCESSIBLE_TABLE_ROW_DESCRIPTION_CHANGEDReady = true; } return _ACCESSIBLE_TABLE_ROW_DESCRIPTION_CHANGEDContent; } }
-        private static string _ACCESSIBLE_TABLE_ROW_DESCRIPTION_CHANGEDContent = default;
+        public static Java.Lang.String ACCESSIBLE_TABLE_ROW_DESCRIPTION_CHANGED { get { if (!_ACCESSIBLE_TABLE_ROW_DESCRIPTION_CHANGEDReady) { _ACCESSIBLE_TABLE_ROW_DESCRIPTION_CHANGEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACCESSIBLE_TABLE_ROW_DESCRIPTION_CHANGED"); _ACCESSIBLE_TABLE_ROW_DESCRIPTION_CHANGEDReady = true; } return _ACCESSIBLE_TABLE_ROW_DESCRIPTION_CHANGEDContent; } }
+        private static Java.Lang.String _ACCESSIBLE_TABLE_ROW_DESCRIPTION_CHANGEDContent = default;
         private static bool _ACCESSIBLE_TABLE_ROW_DESCRIPTION_CHANGEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_TABLE_ROW_HEADER_CHANGED"/>
         /// </summary>
-        public static string ACCESSIBLE_TABLE_ROW_HEADER_CHANGED { get { if (!_ACCESSIBLE_TABLE_ROW_HEADER_CHANGEDReady) { _ACCESSIBLE_TABLE_ROW_HEADER_CHANGEDContent = SGetField<string>(LocalBridgeClazz, "ACCESSIBLE_TABLE_ROW_HEADER_CHANGED"); _ACCESSIBLE_TABLE_ROW_HEADER_CHANGEDReady = true; } return _ACCESSIBLE_TABLE_ROW_HEADER_CHANGEDContent; } }
-        private static string _ACCESSIBLE_TABLE_ROW_HEADER_CHANGEDContent = default;
+        public static Java.Lang.String ACCESSIBLE_TABLE_ROW_HEADER_CHANGED { get { if (!_ACCESSIBLE_TABLE_ROW_HEADER_CHANGEDReady) { _ACCESSIBLE_TABLE_ROW_HEADER_CHANGEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACCESSIBLE_TABLE_ROW_HEADER_CHANGED"); _ACCESSIBLE_TABLE_ROW_HEADER_CHANGEDReady = true; } return _ACCESSIBLE_TABLE_ROW_HEADER_CHANGEDContent; } }
+        private static Java.Lang.String _ACCESSIBLE_TABLE_ROW_HEADER_CHANGEDContent = default;
         private static bool _ACCESSIBLE_TABLE_ROW_HEADER_CHANGEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_TABLE_SUMMARY_CHANGED"/>
         /// </summary>
-        public static string ACCESSIBLE_TABLE_SUMMARY_CHANGED { get { if (!_ACCESSIBLE_TABLE_SUMMARY_CHANGEDReady) { _ACCESSIBLE_TABLE_SUMMARY_CHANGEDContent = SGetField<string>(LocalBridgeClazz, "ACCESSIBLE_TABLE_SUMMARY_CHANGED"); _ACCESSIBLE_TABLE_SUMMARY_CHANGEDReady = true; } return _ACCESSIBLE_TABLE_SUMMARY_CHANGEDContent; } }
-        private static string _ACCESSIBLE_TABLE_SUMMARY_CHANGEDContent = default;
+        public static Java.Lang.String ACCESSIBLE_TABLE_SUMMARY_CHANGED { get { if (!_ACCESSIBLE_TABLE_SUMMARY_CHANGEDReady) { _ACCESSIBLE_TABLE_SUMMARY_CHANGEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACCESSIBLE_TABLE_SUMMARY_CHANGED"); _ACCESSIBLE_TABLE_SUMMARY_CHANGEDReady = true; } return _ACCESSIBLE_TABLE_SUMMARY_CHANGEDContent; } }
+        private static Java.Lang.String _ACCESSIBLE_TABLE_SUMMARY_CHANGEDContent = default;
         private static bool _ACCESSIBLE_TABLE_SUMMARY_CHANGEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_TEXT_ATTRIBUTES_CHANGED"/>
         /// </summary>
-        public static string ACCESSIBLE_TEXT_ATTRIBUTES_CHANGED { get { if (!_ACCESSIBLE_TEXT_ATTRIBUTES_CHANGEDReady) { _ACCESSIBLE_TEXT_ATTRIBUTES_CHANGEDContent = SGetField<string>(LocalBridgeClazz, "ACCESSIBLE_TEXT_ATTRIBUTES_CHANGED"); _ACCESSIBLE_TEXT_ATTRIBUTES_CHANGEDReady = true; } return _ACCESSIBLE_TEXT_ATTRIBUTES_CHANGEDContent; } }
-        private static string _ACCESSIBLE_TEXT_ATTRIBUTES_CHANGEDContent = default;
+        public static Java.Lang.String ACCESSIBLE_TEXT_ATTRIBUTES_CHANGED { get { if (!_ACCESSIBLE_TEXT_ATTRIBUTES_CHANGEDReady) { _ACCESSIBLE_TEXT_ATTRIBUTES_CHANGEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACCESSIBLE_TEXT_ATTRIBUTES_CHANGED"); _ACCESSIBLE_TEXT_ATTRIBUTES_CHANGEDReady = true; } return _ACCESSIBLE_TEXT_ATTRIBUTES_CHANGEDContent; } }
+        private static Java.Lang.String _ACCESSIBLE_TEXT_ATTRIBUTES_CHANGEDContent = default;
         private static bool _ACCESSIBLE_TEXT_ATTRIBUTES_CHANGEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_TEXT_PROPERTY"/>
         /// </summary>
-        public static string ACCESSIBLE_TEXT_PROPERTY { get { if (!_ACCESSIBLE_TEXT_PROPERTYReady) { _ACCESSIBLE_TEXT_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "ACCESSIBLE_TEXT_PROPERTY"); _ACCESSIBLE_TEXT_PROPERTYReady = true; } return _ACCESSIBLE_TEXT_PROPERTYContent; } }
-        private static string _ACCESSIBLE_TEXT_PROPERTYContent = default;
+        public static Java.Lang.String ACCESSIBLE_TEXT_PROPERTY { get { if (!_ACCESSIBLE_TEXT_PROPERTYReady) { _ACCESSIBLE_TEXT_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACCESSIBLE_TEXT_PROPERTY"); _ACCESSIBLE_TEXT_PROPERTYReady = true; } return _ACCESSIBLE_TEXT_PROPERTYContent; } }
+        private static Java.Lang.String _ACCESSIBLE_TEXT_PROPERTYContent = default;
         private static bool _ACCESSIBLE_TEXT_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_VALUE_PROPERTY"/>
         /// </summary>
-        public static string ACCESSIBLE_VALUE_PROPERTY { get { if (!_ACCESSIBLE_VALUE_PROPERTYReady) { _ACCESSIBLE_VALUE_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "ACCESSIBLE_VALUE_PROPERTY"); _ACCESSIBLE_VALUE_PROPERTYReady = true; } return _ACCESSIBLE_VALUE_PROPERTYContent; } }
-        private static string _ACCESSIBLE_VALUE_PROPERTYContent = default;
+        public static Java.Lang.String ACCESSIBLE_VALUE_PROPERTY { get { if (!_ACCESSIBLE_VALUE_PROPERTYReady) { _ACCESSIBLE_VALUE_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACCESSIBLE_VALUE_PROPERTY"); _ACCESSIBLE_VALUE_PROPERTYReady = true; } return _ACCESSIBLE_VALUE_PROPERTYContent; } }
+        private static Java.Lang.String _ACCESSIBLE_VALUE_PROPERTYContent = default;
         private static bool _ACCESSIBLE_VALUE_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_VISIBLE_DATA_PROPERTY"/>
         /// </summary>
-        public static string ACCESSIBLE_VISIBLE_DATA_PROPERTY { get { if (!_ACCESSIBLE_VISIBLE_DATA_PROPERTYReady) { _ACCESSIBLE_VISIBLE_DATA_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "ACCESSIBLE_VISIBLE_DATA_PROPERTY"); _ACCESSIBLE_VISIBLE_DATA_PROPERTYReady = true; } return _ACCESSIBLE_VISIBLE_DATA_PROPERTYContent; } }
-        private static string _ACCESSIBLE_VISIBLE_DATA_PROPERTYContent = default;
+        public static Java.Lang.String ACCESSIBLE_VISIBLE_DATA_PROPERTY { get { if (!_ACCESSIBLE_VISIBLE_DATA_PROPERTYReady) { _ACCESSIBLE_VISIBLE_DATA_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACCESSIBLE_VISIBLE_DATA_PROPERTY"); _ACCESSIBLE_VISIBLE_DATA_PROPERTYReady = true; } return _ACCESSIBLE_VISIBLE_DATA_PROPERTYContent; } }
+        private static Java.Lang.String _ACCESSIBLE_VISIBLE_DATA_PROPERTYContent = default;
         private static bool _ACCESSIBLE_VISIBLE_DATA_PROPERTYReady = false; // this is used because in case of generics 
 
         #endregion
@@ -201,9 +201,9 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#getAccessibleDescription()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#setAccessibleDescription(java.lang.String)"/>
         /// </summary>
-        public string AccessibleDescription
+        public Java.Lang.String AccessibleDescription
         {
-            get { return IExecute<string>("getAccessibleDescription"); } set { IExecute("setAccessibleDescription", value); }
+            get { return IExecute<Java.Lang.String>("getAccessibleDescription"); } set { IExecute("setAccessibleDescription", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#getAccessibleEditableText()"/> 
@@ -229,9 +229,9 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#getAccessibleName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#setAccessibleName(java.lang.String)"/>
         /// </summary>
-        public string AccessibleName
+        public Java.Lang.String AccessibleName
         {
-            get { return IExecute<string>("getAccessibleName"); } set { IExecute("setAccessibleName", value); }
+            get { return IExecute<Java.Lang.String>("getAccessibleName"); } set { IExecute("setAccessibleName", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#getAccessibleParent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#setAccessibleParent(javax.accessibility.Accessible)"/>
@@ -316,10 +316,10 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#firePropertyChange(java.lang.String,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="object"/></param>
-        public void FirePropertyChange(string arg0, object arg1, object arg2)
+        public void FirePropertyChange(Java.Lang.String arg0, object arg1, object arg2)
         {
             IExecute("firePropertyChange", arg0, arg1, arg2);
         }

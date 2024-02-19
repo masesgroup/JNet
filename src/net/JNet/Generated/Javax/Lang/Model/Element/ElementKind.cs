@@ -152,9 +152,9 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Lang.Model.Element.ElementKind"/></returns>
-        public static Javax.Lang.Model.Element.ElementKind ValueOf(string arg0)
+        public static Javax.Lang.Model.Element.ElementKind ValueOf(Java.Lang.String arg0)
         {
             return SExecute<Javax.Lang.Model.Element.ElementKind>(LocalBridgeClazz, "valueOf", arg0);
         }

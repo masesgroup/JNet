@@ -48,11 +48,11 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerBuilder.html#newMBeanServer(java.lang.String,javax.management.MBeanServer,javax.management.MBeanServerDelegate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Javax.Management.MBeanServer"/></param>
         /// <param name="arg2"><see cref="Javax.Management.MBeanServerDelegate"/></param>
         /// <returns><see cref="Javax.Management.MBeanServer"/></returns>
-        public Javax.Management.MBeanServer NewMBeanServer(string arg0, Javax.Management.MBeanServer arg1, Javax.Management.MBeanServerDelegate arg2)
+        public Javax.Management.MBeanServer NewMBeanServer(Java.Lang.String arg0, Javax.Management.MBeanServer arg1, Javax.Management.MBeanServerDelegate arg2)
         {
             return IExecute<Javax.Management.MBeanServer>("newMBeanServer", arg0, arg1, arg2);
         }

@@ -104,17 +104,17 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#%3Cinit%3E(java.lang.String,java.math.MathContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Math.MathContext"/></param>
-        public BigDecimal(string arg0, Java.Math.MathContext arg1)
+        public BigDecimal(Java.Lang.String arg0, Java.Math.MathContext arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public BigDecimal(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public BigDecimal(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -304,19 +304,19 @@ namespace Java.Math
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#toEngineeringString()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        public string ToEngineeringString()
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String ToEngineeringString()
         {
-            return IExecute<string>("toEngineeringString");
+            return IExecute<Java.Lang.String>("toEngineeringString");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#toPlainString()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        public string ToPlainString()
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String ToPlainString()
         {
-            return IExecute<string>("toPlainString");
+            return IExecute<Java.Lang.String>("toPlainString");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#abs()"/>

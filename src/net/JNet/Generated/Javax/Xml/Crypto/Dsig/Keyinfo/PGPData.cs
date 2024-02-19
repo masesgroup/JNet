@@ -70,8 +70,8 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/PGPData.html#TYPE"/>
         /// </summary>
-        public static string TYPE { get { if (!_TYPEReady) { _TYPEContent = SGetField<string>(LocalBridgeClazz, "TYPE"); _TYPEReady = true; } return _TYPEContent; } }
-        private static string _TYPEContent = default;
+        public static Java.Lang.String TYPE { get { if (!_TYPEReady) { _TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TYPE"); _TYPEReady = true; } return _TYPEContent; } }
+        private static Java.Lang.String _TYPEContent = default;
         private static bool _TYPEReady = false; // this is used because in case of generics 
 
         #endregion

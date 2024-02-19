@@ -57,8 +57,8 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#AdditionalComments"/>
         /// </summary>
-        public static string AdditionalComments { get { if (!_AdditionalCommentsReady) { _AdditionalCommentsContent = SGetField<string>(LocalBridgeClazz, "AdditionalComments"); _AdditionalCommentsReady = true; } return _AdditionalCommentsContent; } }
-        private static string _AdditionalCommentsContent = default;
+        public static Java.Lang.String AdditionalComments { get { if (!_AdditionalCommentsReady) { _AdditionalCommentsContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "AdditionalComments"); _AdditionalCommentsReady = true; } return _AdditionalCommentsContent; } }
+        private static Java.Lang.String _AdditionalCommentsContent = default;
         private static bool _AdditionalCommentsReady = false; // this is used because in case of generics 
 
         #endregion
@@ -106,9 +106,9 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getElement(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
-        public Javax.Swing.Text.Element GetElement(string arg0)
+        public Javax.Swing.Text.Element GetElement(Java.Lang.String arg0)
         {
             return IExecute<Javax.Swing.Text.Element>("getElement", arg0);
         }
@@ -157,10 +157,10 @@ namespace Javax.Swing.Text.Html
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#insertAfterEnd(javax.swing.text.Element,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         /// <exception cref="Java.Io.IOException"/>
-        public void InsertAfterEnd(Javax.Swing.Text.Element arg0, string arg1)
+        public void InsertAfterEnd(Javax.Swing.Text.Element arg0, Java.Lang.String arg1)
         {
             IExecute("insertAfterEnd", arg0, arg1);
         }
@@ -168,10 +168,10 @@ namespace Javax.Swing.Text.Html
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#insertAfterStart(javax.swing.text.Element,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         /// <exception cref="Java.Io.IOException"/>
-        public void InsertAfterStart(Javax.Swing.Text.Element arg0, string arg1)
+        public void InsertAfterStart(Javax.Swing.Text.Element arg0, Java.Lang.String arg1)
         {
             IExecute("insertAfterStart", arg0, arg1);
         }
@@ -179,10 +179,10 @@ namespace Javax.Swing.Text.Html
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#insertBeforeEnd(javax.swing.text.Element,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         /// <exception cref="Java.Io.IOException"/>
-        public void InsertBeforeEnd(Javax.Swing.Text.Element arg0, string arg1)
+        public void InsertBeforeEnd(Javax.Swing.Text.Element arg0, Java.Lang.String arg1)
         {
             IExecute("insertBeforeEnd", arg0, arg1);
         }
@@ -190,10 +190,10 @@ namespace Javax.Swing.Text.Html
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#insertBeforeStart(javax.swing.text.Element,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         /// <exception cref="Java.Io.IOException"/>
-        public void InsertBeforeStart(Javax.Swing.Text.Element arg0, string arg1)
+        public void InsertBeforeStart(Javax.Swing.Text.Element arg0, Java.Lang.String arg1)
         {
             IExecute("insertBeforeStart", arg0, arg1);
         }
@@ -209,10 +209,10 @@ namespace Javax.Swing.Text.Html
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#setInnerHTML(javax.swing.text.Element,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         /// <exception cref="Java.Io.IOException"/>
-        public void SetInnerHTML(Javax.Swing.Text.Element arg0, string arg1)
+        public void SetInnerHTML(Javax.Swing.Text.Element arg0, Java.Lang.String arg1)
         {
             IExecute("setInnerHTML", arg0, arg1);
         }
@@ -220,10 +220,10 @@ namespace Javax.Swing.Text.Html
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#setOuterHTML(javax.swing.text.Element,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         /// <exception cref="Java.Io.IOException"/>
-        public void SetOuterHTML(Javax.Swing.Text.Element arg0, string arg1)
+        public void SetOuterHTML(Javax.Swing.Text.Element arg0, Java.Lang.String arg1)
         {
             IExecute("setOuterHTML", arg0, arg1);
         }

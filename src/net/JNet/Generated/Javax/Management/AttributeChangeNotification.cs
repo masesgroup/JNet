@@ -35,12 +35,12 @@ namespace Javax.Management
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="long"/></param>
-        /// <param name="arg3"><see cref="string"/></param>
-        /// <param name="arg4"><see cref="string"/></param>
-        /// <param name="arg5"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg5"><see cref="Java.Lang.String"/></param>
         /// <param name="arg6"><see cref="object"/></param>
         /// <param name="arg7"><see cref="object"/></param>
-        public AttributeChangeNotification(object arg0, long arg1, long arg2, string arg3, string arg4, string arg5, object arg6, object arg7)
+        public AttributeChangeNotification(object arg0, long arg1, long arg2, Java.Lang.String arg3, Java.Lang.String arg4, Java.Lang.String arg5, object arg6, object arg7)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
         {
         }
@@ -55,8 +55,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotification.html#ATTRIBUTE_CHANGE"/>
         /// </summary>
-        public static string ATTRIBUTE_CHANGE { get { if (!_ATTRIBUTE_CHANGEReady) { _ATTRIBUTE_CHANGEContent = SGetField<string>(LocalBridgeClazz, "ATTRIBUTE_CHANGE"); _ATTRIBUTE_CHANGEReady = true; } return _ATTRIBUTE_CHANGEContent; } }
-        private static string _ATTRIBUTE_CHANGEContent = default;
+        public static Java.Lang.String ATTRIBUTE_CHANGE { get { if (!_ATTRIBUTE_CHANGEReady) { _ATTRIBUTE_CHANGEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ATTRIBUTE_CHANGE"); _ATTRIBUTE_CHANGEReady = true; } return _ATTRIBUTE_CHANGEContent; } }
+        private static Java.Lang.String _ATTRIBUTE_CHANGEContent = default;
         private static bool _ATTRIBUTE_CHANGEReady = false; // this is used because in case of generics 
 
         #endregion
@@ -69,16 +69,16 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotification.html#getAttributeName()"/> 
         /// </summary>
-        public string AttributeName
+        public Java.Lang.String AttributeName
         {
-            get { return IExecute<string>("getAttributeName"); }
+            get { return IExecute<Java.Lang.String>("getAttributeName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotification.html#getAttributeType()"/> 
         /// </summary>
-        public string AttributeType
+        public Java.Lang.String AttributeType
         {
-            get { return IExecute<string>("getAttributeType"); }
+            get { return IExecute<Java.Lang.String>("getAttributeType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotification.html#getNewValue()"/> 

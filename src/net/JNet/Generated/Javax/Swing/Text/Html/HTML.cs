@@ -40,8 +40,8 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.html#NULL_ATTRIBUTE_VALUE"/>
         /// </summary>
-        public static string NULL_ATTRIBUTE_VALUE { get { if (!_NULL_ATTRIBUTE_VALUEReady) { _NULL_ATTRIBUTE_VALUEContent = SGetField<string>(LocalBridgeClazz, "NULL_ATTRIBUTE_VALUE"); _NULL_ATTRIBUTE_VALUEReady = true; } return _NULL_ATTRIBUTE_VALUEContent; } }
-        private static string _NULL_ATTRIBUTE_VALUEContent = default;
+        public static Java.Lang.String NULL_ATTRIBUTE_VALUE { get { if (!_NULL_ATTRIBUTE_VALUEReady) { _NULL_ATTRIBUTE_VALUEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "NULL_ATTRIBUTE_VALUE"); _NULL_ATTRIBUTE_VALUEReady = true; } return _NULL_ATTRIBUTE_VALUEContent; } }
+        private static Java.Lang.String _NULL_ATTRIBUTE_VALUEContent = default;
         private static bool _NULL_ATTRIBUTE_VALUEReady = false; // this is used because in case of generics 
 
         #endregion
@@ -75,18 +75,18 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.html#getAttributeKey(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Swing.Text.Html.HTML.Attribute"/></returns>
-        public static Javax.Swing.Text.Html.HTML.Attribute GetAttributeKey(string arg0)
+        public static Javax.Swing.Text.Html.HTML.Attribute GetAttributeKey(Java.Lang.String arg0)
         {
             return SExecute<Javax.Swing.Text.Html.HTML.Attribute>(LocalBridgeClazz, "getAttributeKey", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.html#getTag(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Swing.Text.Html.HTML.Tag"/></returns>
-        public static Javax.Swing.Text.Html.HTML.Tag GetTag(string arg0)
+        public static Javax.Swing.Text.Html.HTML.Tag GetTag(Java.Lang.String arg0)
         {
             return SExecute<Javax.Swing.Text.Html.HTML.Tag>(LocalBridgeClazz, "getTag", arg0);
         }
@@ -1130,8 +1130,8 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.UnknownTag.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
-            public UnknownTag(string arg0)
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            public UnknownTag(Java.Lang.String arg0)
                 : base(arg0)
             {
             }

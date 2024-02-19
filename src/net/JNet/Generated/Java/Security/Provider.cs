@@ -48,16 +48,16 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#getInfo()"/> 
         /// </summary>
-        public string Info
+        public Java.Lang.String Info
         {
-            get { return IExecute<string>("getInfo"); }
+            get { return IExecute<Java.Lang.String>("getInfo"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#getName()"/> 
         /// </summary>
-        public string Name
+        public Java.Lang.String Name
         {
-            get { return IExecute<string>("getName"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#getServices()"/> 
@@ -69,9 +69,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#getVersionStr()"/> 
         /// </summary>
-        public string VersionStr
+        public Java.Lang.String VersionStr
         {
-            get { return IExecute<string>("getVersionStr"); }
+            get { return IExecute<Java.Lang.String>("getVersionStr"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#isConfigured()"/>
@@ -85,19 +85,19 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#configure(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Security.Provider"/></returns>
-        public Java.Security.Provider Configure(string arg0)
+        public Java.Security.Provider Configure(Java.Lang.String arg0)
         {
             return IExecute<Java.Security.Provider>("configure", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#getService(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Security.Provider.Service"/></returns>
-        public Java.Security.Provider.Service GetService(string arg0, string arg1)
+        public Java.Security.Provider.Service GetService(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecute<Java.Security.Provider.Service>("getService", arg0, arg1);
         }
@@ -113,12 +113,12 @@ namespace Java.Security
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.Service.html#%3Cinit%3E(java.security.Provider,java.lang.String,java.lang.String,java.lang.String,java.util.List,java.util.Map)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Security.Provider"/></param>
-            /// <param name="arg1"><see cref="string"/></param>
-            /// <param name="arg2"><see cref="string"/></param>
-            /// <param name="arg3"><see cref="string"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg3"><see cref="Java.Lang.String"/></param>
             /// <param name="arg4"><see cref="Java.Util.List"/></param>
             /// <param name="arg5"><see cref="Java.Util.Map"/></param>
-            public Service(Java.Security.Provider arg0, string arg1, string arg2, string arg3, Java.Util.List<string> arg4, Java.Util.Map<string, string> arg5)
+            public Service(Java.Security.Provider arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Util.List<Java.Lang.String> arg4, Java.Util.Map<Java.Lang.String, Java.Lang.String> arg5)
                 : base(arg0, arg1, arg2, arg3, arg4, arg5)
             {
             }
@@ -141,16 +141,16 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.Service.html#getAlgorithm()"/> 
             /// </summary>
-            public string Algorithm
+            public Java.Lang.String Algorithm
             {
-                get { return IExecute<string>("getAlgorithm"); }
+                get { return IExecute<Java.Lang.String>("getAlgorithm"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.Service.html#getClassName()"/> 
             /// </summary>
-            public string ClassName
+            public Java.Lang.String ClassName
             {
-                get { return IExecute<string>("getClassName"); }
+                get { return IExecute<Java.Lang.String>("getClassName"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.Service.html#getProvider()"/> 
@@ -162,9 +162,9 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.Service.html#getType()"/> 
             /// </summary>
-            public string Type
+            public Java.Lang.String Type
             {
-                get { return IExecute<string>("getType"); }
+                get { return IExecute<Java.Lang.String>("getType"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.Service.html#supportsParameter(java.lang.Object)"/>
@@ -178,11 +178,11 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.Service.html#getAttribute(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
-            /// <returns><see cref="string"/></returns>
-            public string GetAttribute(string arg0)
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetAttribute(Java.Lang.String arg0)
             {
-                return IExecute<string>("getAttribute", arg0);
+                return IExecute<Java.Lang.String>("getAttribute", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.Service.html#newInstance(java.lang.Object)"/>

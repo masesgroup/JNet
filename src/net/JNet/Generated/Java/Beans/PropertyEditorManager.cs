@@ -44,9 +44,9 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorManager.html#getEditorSearchPath()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorManager.html#setEditorSearchPath(java.lang.String[])"/>
         /// </summary>
-        public static string[] EditorSearchPath
+        public static Java.Lang.String[] EditorSearchPath
         {
-            get { return SExecuteArray<string>(LocalBridgeClazz, "getEditorSearchPath"); } set { SExecute(LocalBridgeClazz, "setEditorSearchPath", value); }
+            get { return SExecuteArray<Java.Lang.String>(LocalBridgeClazz, "getEditorSearchPath"); } set { SExecute(LocalBridgeClazz, "setEditorSearchPath", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorManager.html#findEditor(java.lang.Class)"/>

@@ -32,8 +32,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html#%3Cinit%3E(java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public ImmutableDescriptor(params string[] arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public ImmutableDescriptor(params Java.Lang.String[] arg0)
             : base(arg0)
         {
         }
@@ -41,7 +41,7 @@ namespace Javax.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        public ImmutableDescriptor(Java.Util.Map<string, object> arg0)
+        public ImmutableDescriptor(Java.Util.Map<Java.Lang.String, object> arg0)
             : base(arg0)
         {
         }
@@ -79,16 +79,16 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html#getFieldNames()"/> 
         /// </summary>
-        public string[] FieldNames
+        public Java.Lang.String[] FieldNames
         {
-            get { return IExecuteArray<string>("getFieldNames"); }
+            get { return IExecuteArray<Java.Lang.String>("getFieldNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html#getFields()"/> 
         /// </summary>
-        public string[] Fields
+        public Java.Lang.String[] Fields
         {
-            get { return IExecuteArray<string>("getFields"); }
+            get { return IExecuteArray<Java.Lang.String>("getFields"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html#isValid()"/>
@@ -102,46 +102,46 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html#getFieldValue(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
-        public object GetFieldValue(string arg0)
+        public object GetFieldValue(Java.Lang.String arg0)
         {
             return IExecute("getFieldValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html#getFieldValues(java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
-        public object[] GetFieldValues(params string[] arg0)
+        public object[] GetFieldValues(params Java.Lang.String[] arg0)
         {
             if (arg0.Length == 0) return IExecuteArray<object>("getFieldValues"); else return IExecuteArray<object>("getFieldValues", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html#removeField(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public void RemoveField(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void RemoveField(Java.Lang.String arg0)
         {
             IExecute("removeField", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html#setField(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
-        public void SetField(string arg0, object arg1)
+        public void SetField(Java.Lang.String arg0, object arg1)
         {
             IExecute("setField", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html#setFields(java.lang.String[],java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
-        public void SetFields(string[] arg0, object[] arg1)
+        public void SetFields(Java.Lang.String[] arg0, object[] arg1)
         {
             IExecute("setFields", arg0, arg1);
         }

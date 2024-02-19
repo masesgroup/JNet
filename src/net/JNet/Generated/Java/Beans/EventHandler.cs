@@ -33,10 +33,10 @@ namespace Java.Beans
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventHandler.html#%3Cinit%3E(java.lang.Object,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
-        /// <param name="arg3"><see cref="string"/></param>
-        public EventHandler(object arg0, string arg1, string arg2, string arg3)
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        public EventHandler(object arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
@@ -57,12 +57,12 @@ namespace Java.Beans
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
-        /// <param name="arg3"><see cref="string"/></param>
-        /// <param name="arg4"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
         /// <typeparam name="T"></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public static T Create<T>(Java.Lang.Class arg0, object arg1, string arg2, string arg3, string arg4)
+        public static T Create<T>(Java.Lang.Class arg0, object arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         {
             return SExecute<T>(LocalBridgeClazz, "create", arg0, arg1, arg2, arg3, arg4);
         }
@@ -71,11 +71,11 @@ namespace Java.Beans
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
-        /// <param name="arg3"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         /// <typeparam name="T"></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public static T Create<T>(Java.Lang.Class arg0, object arg1, string arg2, string arg3)
+        public static T Create<T>(Java.Lang.Class arg0, object arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
             return SExecute<T>(LocalBridgeClazz, "create", arg0, arg1, arg2, arg3);
         }
@@ -84,10 +84,10 @@ namespace Java.Beans
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <typeparam name="T"></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public static T Create<T>(Java.Lang.Class arg0, object arg1, string arg2)
+        public static T Create<T>(Java.Lang.Class arg0, object arg1, Java.Lang.String arg2)
         {
             return SExecute<T>(LocalBridgeClazz, "create", arg0, arg1, arg2);
         }
@@ -98,23 +98,23 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventHandler.html#getAction()"/> 
         /// </summary>
-        public string Action
+        public Java.Lang.String Action
         {
-            get { return IExecute<string>("getAction"); }
+            get { return IExecute<Java.Lang.String>("getAction"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventHandler.html#getEventPropertyName()"/> 
         /// </summary>
-        public string EventPropertyName
+        public Java.Lang.String EventPropertyName
         {
-            get { return IExecute<string>("getEventPropertyName"); }
+            get { return IExecute<Java.Lang.String>("getEventPropertyName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventHandler.html#getListenerMethodName()"/> 
         /// </summary>
-        public string ListenerMethodName
+        public Java.Lang.String ListenerMethodName
         {
-            get { return IExecute<string>("getListenerMethodName"); }
+            get { return IExecute<Java.Lang.String>("getListenerMethodName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventHandler.html#getTarget()"/> 

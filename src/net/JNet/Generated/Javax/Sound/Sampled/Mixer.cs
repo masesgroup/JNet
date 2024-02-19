@@ -267,30 +267,30 @@ namespace Javax.Sound.Sampled
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.Info.html#getDescription()"/> 
             /// </summary>
-            public string Description
+            public Java.Lang.String Description
             {
-                get { return IExecute<string>("getDescription"); }
+                get { return IExecute<Java.Lang.String>("getDescription"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.Info.html#getName()"/> 
             /// </summary>
-            public string Name
+            public Java.Lang.String Name
             {
-                get { return IExecute<string>("getName"); }
+                get { return IExecute<Java.Lang.String>("getName"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.Info.html#getVendor()"/> 
             /// </summary>
-            public string Vendor
+            public Java.Lang.String Vendor
             {
-                get { return IExecute<string>("getVendor"); }
+                get { return IExecute<Java.Lang.String>("getVendor"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.Info.html#getVersion()"/> 
             /// </summary>
-            public string Version
+            public Java.Lang.String Version
             {
-                get { return IExecute<string>("getVersion"); }
+                get { return IExecute<Java.Lang.String>("getVersion"); }
             }
 
             #endregion

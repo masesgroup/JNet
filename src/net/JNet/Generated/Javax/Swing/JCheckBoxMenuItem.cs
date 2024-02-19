@@ -32,36 +32,36 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JCheckBoxMenuItem.html#%3Cinit%3E(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        public JCheckBoxMenuItem(string arg0, bool arg1)
+        public JCheckBoxMenuItem(Java.Lang.String arg0, bool arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JCheckBoxMenuItem.html#%3Cinit%3E(java.lang.String,javax.swing.Icon,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Icon"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
-        public JCheckBoxMenuItem(string arg0, Javax.Swing.Icon arg1, bool arg2)
+        public JCheckBoxMenuItem(Java.Lang.String arg0, Javax.Swing.Icon arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JCheckBoxMenuItem.html#%3Cinit%3E(java.lang.String,javax.swing.Icon)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Icon"/></param>
-        public JCheckBoxMenuItem(string arg0, Javax.Swing.Icon arg1)
+        public JCheckBoxMenuItem(Java.Lang.String arg0, Javax.Swing.Icon arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JCheckBoxMenuItem.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public JCheckBoxMenuItem(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public JCheckBoxMenuItem(Java.Lang.String arg0)
             : base(arg0)
         {
         }

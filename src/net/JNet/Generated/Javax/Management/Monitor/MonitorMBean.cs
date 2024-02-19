@@ -39,7 +39,7 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#getObservedAttribute()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#setObservedAttribute(java.lang.String)"/>
         /// </summary>
-        string ObservedAttribute { get; set; }
+        Java.Lang.String ObservedAttribute { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#getObservedObjects()"/> 
         /// </summary>
@@ -116,9 +116,9 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#getObservedAttribute()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#setObservedAttribute(java.lang.String)"/>
         /// </summary>
-        public string ObservedAttribute
+        public Java.Lang.String ObservedAttribute
         {
-            get { return IExecute<string>("getObservedAttribute"); } set { IExecute("setObservedAttribute", value); }
+            get { return IExecute<Java.Lang.String>("getObservedAttribute"); } set { IExecute("setObservedAttribute", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#getObservedObjects()"/> 

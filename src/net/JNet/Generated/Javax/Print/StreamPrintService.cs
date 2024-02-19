@@ -48,9 +48,9 @@ namespace Javax.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintService.html#getOutputFormat()"/> 
         /// </summary>
-        public string OutputFormat
+        public Java.Lang.String OutputFormat
         {
-            get { return IExecute<string>("getOutputFormat"); }
+            get { return IExecute<Java.Lang.String>("getOutputFormat"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintService.html#getOutputStream()"/> 

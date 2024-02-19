@@ -32,18 +32,18 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public JEditorPane(string arg0, string arg1)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public JEditorPane(Java.Lang.String arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Io.IOException"/>
-        public JEditorPane(string arg0)
+        public JEditorPane(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -67,14 +67,14 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#HONOR_DISPLAY_PROPERTIES"/>
         /// </summary>
-        public static string HONOR_DISPLAY_PROPERTIES { get { if (!_HONOR_DISPLAY_PROPERTIESReady) { _HONOR_DISPLAY_PROPERTIESContent = SGetField<string>(LocalBridgeClazz, "HONOR_DISPLAY_PROPERTIES"); _HONOR_DISPLAY_PROPERTIESReady = true; } return _HONOR_DISPLAY_PROPERTIESContent; } }
-        private static string _HONOR_DISPLAY_PROPERTIESContent = default;
+        public static Java.Lang.String HONOR_DISPLAY_PROPERTIES { get { if (!_HONOR_DISPLAY_PROPERTIESReady) { _HONOR_DISPLAY_PROPERTIESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "HONOR_DISPLAY_PROPERTIES"); _HONOR_DISPLAY_PROPERTIESReady = true; } return _HONOR_DISPLAY_PROPERTIESContent; } }
+        private static Java.Lang.String _HONOR_DISPLAY_PROPERTIESContent = default;
         private static bool _HONOR_DISPLAY_PROPERTIESReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#W3C_LENGTH_UNITS"/>
         /// </summary>
-        public static string W3C_LENGTH_UNITS { get { if (!_W3C_LENGTH_UNITSReady) { _W3C_LENGTH_UNITSContent = SGetField<string>(LocalBridgeClazz, "W3C_LENGTH_UNITS"); _W3C_LENGTH_UNITSReady = true; } return _W3C_LENGTH_UNITSContent; } }
-        private static string _W3C_LENGTH_UNITSContent = default;
+        public static Java.Lang.String W3C_LENGTH_UNITS { get { if (!_W3C_LENGTH_UNITSReady) { _W3C_LENGTH_UNITSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "W3C_LENGTH_UNITS"); _W3C_LENGTH_UNITSReady = true; } return _W3C_LENGTH_UNITSContent; } }
+        private static Java.Lang.String _W3C_LENGTH_UNITSContent = default;
         private static bool _W3C_LENGTH_UNITSReady = false; // this is used because in case of generics 
 
         #endregion
@@ -83,37 +83,37 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getEditorKitClassNameForContentType(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string GetEditorKitClassNameForContentType(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String GetEditorKitClassNameForContentType(Java.Lang.String arg0)
         {
-            return SExecute<string>(LocalBridgeClazz, "getEditorKitClassNameForContentType", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getEditorKitClassNameForContentType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#createEditorKitForContentType(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Swing.Text.EditorKit"/></returns>
-        public static Javax.Swing.Text.EditorKit CreateEditorKitForContentType(string arg0)
+        public static Javax.Swing.Text.EditorKit CreateEditorKitForContentType(Java.Lang.String arg0)
         {
             return SExecute<Javax.Swing.Text.EditorKit>(LocalBridgeClazz, "createEditorKitForContentType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#registerEditorKitForContentType(java.lang.String,java.lang.String,java.lang.ClassLoader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
-        public static void RegisterEditorKitForContentType(string arg0, string arg1, Java.Lang.ClassLoader arg2)
+        public static void RegisterEditorKitForContentType(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.ClassLoader arg2)
         {
             SExecute(LocalBridgeClazz, "registerEditorKitForContentType", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#registerEditorKitForContentType(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public static void RegisterEditorKitForContentType(string arg0, string arg1)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public static void RegisterEditorKitForContentType(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             SExecute(LocalBridgeClazz, "registerEditorKitForContentType", arg0, arg1);
         }
@@ -124,9 +124,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getContentType()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#setContentType(java.lang.String)"/>
         /// </summary>
-        public string ContentType
+        public Java.Lang.String ContentType
         {
-            get { return IExecute<string>("getContentType"); } set { IExecute("setContentType", value); }
+            get { return IExecute<Java.Lang.String>("getContentType"); } set { IExecute("setContentType", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getEditorKit()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#setEditorKit(javax.swing.text.EditorKit)"/>
@@ -152,9 +152,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getEditorKitForContentType(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Swing.Text.EditorKit"/></returns>
-        public Javax.Swing.Text.EditorKit GetEditorKitForContentType(string arg0)
+        public Javax.Swing.Text.EditorKit GetEditorKitForContentType(Java.Lang.String arg0)
         {
             return IExecute<Javax.Swing.Text.EditorKit>("getEditorKitForContentType", arg0);
         }
@@ -195,26 +195,26 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#scrollToReference(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public void ScrollToReference(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void ScrollToReference(Java.Lang.String arg0)
         {
             IExecute("scrollToReference", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#setEditorKitForContentType(java.lang.String,javax.swing.text.EditorKit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Text.EditorKit"/></param>
-        public void SetEditorKitForContentType(string arg0, Javax.Swing.Text.EditorKit arg1)
+        public void SetEditorKitForContentType(Java.Lang.String arg0, Javax.Swing.Text.EditorKit arg1)
         {
             IExecute("setEditorKitForContentType", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#setPage(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Io.IOException"/>
-        public void SetPage(string arg0)
+        public void SetPage(Java.Lang.String arg0)
         {
             IExecute("setPage", arg0);
         }

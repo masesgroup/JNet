@@ -32,8 +32,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Permission.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public Permission(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public Permission(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -64,16 +64,16 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Permission.html#getActions()"/> 
         /// </summary>
-        public string Actions
+        public Java.Lang.String Actions
         {
-            get { return IExecute<string>("getActions"); }
+            get { return IExecute<Java.Lang.String>("getActions"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Permission.html#getName()"/> 
         /// </summary>
-        public string Name
+        public Java.Lang.String Name
         {
-            get { return IExecute<string>("getName"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Permission.html#implies(java.security.Permission)"/>

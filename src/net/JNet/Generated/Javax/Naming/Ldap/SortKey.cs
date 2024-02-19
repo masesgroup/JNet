@@ -32,18 +32,18 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortKey.html#%3Cinit%3E(java.lang.String,boolean,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
-        public SortKey(string arg0, bool arg1, string arg2)
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        public SortKey(Java.Lang.String arg0, bool arg1, Java.Lang.String arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortKey.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public SortKey(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public SortKey(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -66,16 +66,16 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortKey.html#getAttributeID()"/> 
         /// </summary>
-        public string AttributeID
+        public Java.Lang.String AttributeID
         {
-            get { return IExecute<string>("getAttributeID"); }
+            get { return IExecute<Java.Lang.String>("getAttributeID"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortKey.html#getMatchingRuleID()"/> 
         /// </summary>
-        public string MatchingRuleID
+        public Java.Lang.String MatchingRuleID
         {
-            get { return IExecute<string>("getMatchingRuleID"); }
+            get { return IExecute<Java.Lang.String>("getMatchingRuleID"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortKey.html#isAscending()"/>

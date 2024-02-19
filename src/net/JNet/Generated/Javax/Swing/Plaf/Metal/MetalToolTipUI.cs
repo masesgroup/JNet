@@ -54,9 +54,9 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalToolTipUI.html#getAcceleratorString()"/> 
         /// </summary>
-        public string AcceleratorString
+        public Java.Lang.String AcceleratorString
         {
-            get { return IExecute<string>("getAcceleratorString"); }
+            get { return IExecute<Java.Lang.String>("getAcceleratorString"); }
         }
 
         #endregion

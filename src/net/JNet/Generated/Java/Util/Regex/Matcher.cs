@@ -44,11 +44,11 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#quoteReplacement(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string QuoteReplacement(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String QuoteReplacement(Java.Lang.String arg0)
         {
-            return SExecute<string>(LocalBridgeClazz, "quoteReplacement", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "quoteReplacement", arg0);
         }
 
         #endregion
@@ -147,9 +147,9 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#end(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        public int End(string arg0)
+        public int End(Java.Lang.String arg0)
         {
             return IExecute<int>("end", arg0);
         }
@@ -201,9 +201,9 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#start(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        public int Start(string arg0)
+        public int Start(Java.Lang.String arg0)
         {
             return IExecute<int>("start", arg0);
         }
@@ -211,64 +211,64 @@ namespace Java.Util.Regex
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#group()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        public string Group()
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String Group()
         {
-            return IExecute<string>("group");
+            return IExecute<Java.Lang.String>("group");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#group(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string Group(int arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String Group(int arg0)
         {
-            return IExecute<string>("group", arg0);
+            return IExecute<Java.Lang.String>("group", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#group(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string Group(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String Group(Java.Lang.String arg0)
         {
-            return IExecute<string>("group", arg0);
+            return IExecute<Java.Lang.String>("group", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#replaceAll(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string ReplaceAll(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String ReplaceAll(Java.Lang.String arg0)
         {
-            return IExecute<string>("replaceAll", arg0);
+            return IExecute<Java.Lang.String>("replaceAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#replaceAll(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string ReplaceAll(Java.Util.Function.Function<Java.Util.Regex.MatchResult, string> arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String ReplaceAll(Java.Util.Function.Function<Java.Util.Regex.MatchResult, Java.Lang.String> arg0)
         {
-            return IExecute<string>("replaceAll", arg0);
+            return IExecute<Java.Lang.String>("replaceAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#replaceFirst(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string ReplaceFirst(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String ReplaceFirst(Java.Lang.String arg0)
         {
-            return IExecute<string>("replaceFirst", arg0);
+            return IExecute<Java.Lang.String>("replaceFirst", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#replaceFirst(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string ReplaceFirst(Java.Util.Function.Function<Java.Util.Regex.MatchResult, string> arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String ReplaceFirst(Java.Util.Function.Function<Java.Util.Regex.MatchResult, Java.Lang.String> arg0)
         {
-            return IExecute<string>("replaceFirst", arg0);
+            return IExecute<Java.Lang.String>("replaceFirst", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#appendTail(java.lang.StringBuffer)"/>
@@ -292,9 +292,9 @@ namespace Java.Util.Regex
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#appendReplacement(java.lang.StringBuffer,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.StringBuffer"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Regex.Matcher"/></returns>
-        public Java.Util.Regex.Matcher AppendReplacement(Java.Lang.StringBuffer arg0, string arg1)
+        public Java.Util.Regex.Matcher AppendReplacement(Java.Lang.StringBuffer arg0, Java.Lang.String arg1)
         {
             return IExecute<Java.Util.Regex.Matcher>("appendReplacement", arg0, arg1);
         }
@@ -302,9 +302,9 @@ namespace Java.Util.Regex
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#appendReplacement(java.lang.StringBuilder,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.StringBuilder"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Regex.Matcher"/></returns>
-        public Java.Util.Regex.Matcher AppendReplacement(Java.Lang.StringBuilder arg0, string arg1)
+        public Java.Util.Regex.Matcher AppendReplacement(Java.Lang.StringBuilder arg0, Java.Lang.String arg1)
         {
             return IExecute<Java.Util.Regex.Matcher>("appendReplacement", arg0, arg1);
         }

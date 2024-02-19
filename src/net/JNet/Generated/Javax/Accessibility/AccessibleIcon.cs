@@ -35,7 +35,7 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleIcon.html#getAccessibleIconDescription()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleIcon.html#setAccessibleIconDescription(java.lang.String)"/>
         /// </summary>
-        string AccessibleIconDescription { get; set; }
+        Java.Lang.String AccessibleIconDescription { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleIcon.html#getAccessibleIconHeight()"/> 
         /// </summary>
@@ -78,9 +78,9 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleIcon.html#getAccessibleIconDescription()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleIcon.html#setAccessibleIconDescription(java.lang.String)"/>
         /// </summary>
-        public string AccessibleIconDescription
+        public Java.Lang.String AccessibleIconDescription
         {
-            get { return IExecute<string>("getAccessibleIconDescription"); } set { IExecute("setAccessibleIconDescription", value); }
+            get { return IExecute<Java.Lang.String>("getAccessibleIconDescription"); } set { IExecute("setAccessibleIconDescription", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleIcon.html#getAccessibleIconHeight()"/> 

@@ -35,23 +35,23 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLElement.html#getClassName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLElement.html#setClassName(java.lang.String)"/>
         /// </summary>
-        string ClassName { get; set; }
+        Java.Lang.String ClassName { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLElement.html#getDir()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLElement.html#setDir(java.lang.String)"/>
         /// </summary>
-        string Dir { get; set; }
+        Java.Lang.String Dir { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLElement.html#getId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLElement.html#setId(java.lang.String)"/>
         /// </summary>
-        string Id { get; set; }
+        Java.Lang.String Id { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLElement.html#getLang()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLElement.html#setLang(java.lang.String)"/>
         /// </summary>
-        string Lang { get; set; }
+        Java.Lang.String Lang { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLElement.html#getTitle()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLElement.html#setTitle(java.lang.String)"/>
         /// </summary>
-        string Title { get; set; }
+        Java.Lang.String Title { get; set; }
 
         #endregion
 
@@ -86,37 +86,37 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLElement.html#getClassName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLElement.html#setClassName(java.lang.String)"/>
         /// </summary>
-        public string ClassName
+        public Java.Lang.String ClassName
         {
-            get { return IExecute<string>("getClassName"); } set { IExecute("setClassName", value); }
+            get { return IExecute<Java.Lang.String>("getClassName"); } set { IExecute("setClassName", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLElement.html#getDir()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLElement.html#setDir(java.lang.String)"/>
         /// </summary>
-        public string Dir
+        public Java.Lang.String Dir
         {
-            get { return IExecute<string>("getDir"); } set { IExecute("setDir", value); }
+            get { return IExecute<Java.Lang.String>("getDir"); } set { IExecute("setDir", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLElement.html#getId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLElement.html#setId(java.lang.String)"/>
         /// </summary>
-        public string Id
+        public Java.Lang.String Id
         {
-            get { return IExecute<string>("getId"); } set { IExecute("setId", value); }
+            get { return IExecute<Java.Lang.String>("getId"); } set { IExecute("setId", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLElement.html#getLang()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLElement.html#setLang(java.lang.String)"/>
         /// </summary>
-        public string Lang
+        public Java.Lang.String Lang
         {
-            get { return IExecute<string>("getLang"); } set { IExecute("setLang", value); }
+            get { return IExecute<Java.Lang.String>("getLang"); } set { IExecute("setLang", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLElement.html#getTitle()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLElement.html#setTitle(java.lang.String)"/>
         /// </summary>
-        public string Title
+        public Java.Lang.String Title
         {
-            get { return IExecute<string>("getTitle"); } set { IExecute("setTitle", value); }
+            get { return IExecute<Java.Lang.String>("getTitle"); } set { IExecute("setTitle", value); }
         }
 
         #endregion

@@ -98,10 +98,10 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#parse(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Logging.Level"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        public static Java.Util.Logging.Level Parse(string arg0)
+        public static Java.Util.Logging.Level Parse(Java.Lang.String arg0)
         {
             return SExecute<Java.Util.Logging.Level>(LocalBridgeClazz, "parse", arg0);
         }
@@ -112,23 +112,23 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#getLocalizedName()"/> 
         /// </summary>
-        public string LocalizedName
+        public Java.Lang.String LocalizedName
         {
-            get { return IExecute<string>("getLocalizedName"); }
+            get { return IExecute<Java.Lang.String>("getLocalizedName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#getName()"/> 
         /// </summary>
-        public string Name
+        public Java.Lang.String Name
         {
-            get { return IExecute<string>("getName"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#getResourceBundleName()"/> 
         /// </summary>
-        public string ResourceBundleName
+        public Java.Lang.String ResourceBundleName
         {
-            get { return IExecute<string>("getResourceBundleName"); }
+            get { return IExecute<Java.Lang.String>("getResourceBundleName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#intValue()"/>

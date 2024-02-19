@@ -107,9 +107,9 @@ namespace Java.Awt.DesktopNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Awt.DesktopNs.UserSessionEvent.Reason"/></returns>
-            public static Java.Awt.DesktopNs.UserSessionEvent.Reason ValueOf(string arg0)
+            public static Java.Awt.DesktopNs.UserSessionEvent.Reason ValueOf(Java.Lang.String arg0)
             {
                 return SExecute<Java.Awt.DesktopNs.UserSessionEvent.Reason>(LocalBridgeClazz, "valueOf", arg0);
             }

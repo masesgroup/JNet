@@ -33,8 +33,8 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#%3Cinit%3E(byte[],java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public ImageIcon(byte[] arg0, string arg1)
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public ImageIcon(byte[] arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
         }
@@ -50,8 +50,8 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#%3Cinit%3E(java.awt.Image,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public ImageIcon(Java.Awt.Image arg0, string arg1)
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public ImageIcon(Java.Awt.Image arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
         }
@@ -66,17 +66,17 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public ImageIcon(string arg0, string arg1)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public ImageIcon(Java.Lang.String arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public ImageIcon(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public ImageIcon(Java.Lang.String arg0)
             : base(arg0)
         {
         }
@@ -84,8 +84,8 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#%3Cinit%3E(java.net.URL,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public ImageIcon(Java.Net.URL arg0, string arg1)
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public ImageIcon(Java.Net.URL arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
         }
@@ -135,9 +135,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#getDescription()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#setDescription(java.lang.String)"/>
         /// </summary>
-        public string Description
+        public Java.Lang.String Description
         {
-            get { return IExecute<string>("getDescription"); } set { IExecute("setDescription", value); }
+            get { return IExecute<Java.Lang.String>("getDescription"); } set { IExecute("setDescription", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#getIconHeight()"/> 

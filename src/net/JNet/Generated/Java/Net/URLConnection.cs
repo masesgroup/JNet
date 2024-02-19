@@ -58,30 +58,30 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getDefaultUseCaches(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
-        public static bool GetDefaultUseCaches(string arg0)
+        public static bool GetDefaultUseCaches(Java.Lang.String arg0)
         {
             return SExecute<bool>(LocalBridgeClazz, "getDefaultUseCaches", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#guessContentTypeFromName(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string GuessContentTypeFromName(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String GuessContentTypeFromName(Java.Lang.String arg0)
         {
-            return SExecute<string>(LocalBridgeClazz, "guessContentTypeFromName", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "guessContentTypeFromName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#guessContentTypeFromStream(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static string GuessContentTypeFromStream(Java.Io.InputStream arg0)
+        public static Java.Lang.String GuessContentTypeFromStream(Java.Io.InputStream arg0)
         {
-            return SExecute<string>(LocalBridgeClazz, "guessContentTypeFromStream", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "guessContentTypeFromStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setContentHandlerFactory(java.net.ContentHandlerFactory)"/>
@@ -94,9 +94,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setDefaultUseCaches(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        public static void SetDefaultUseCaches(string arg0, bool arg1)
+        public static void SetDefaultUseCaches(Java.Lang.String arg0, bool arg1)
         {
             SExecute(LocalBridgeClazz, "setDefaultUseCaches", arg0, arg1);
         }
@@ -128,9 +128,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getContentEncoding()"/> 
         /// </summary>
-        public string ContentEncoding
+        public Java.Lang.String ContentEncoding
         {
-            get { return IExecute<string>("getContentEncoding"); }
+            get { return IExecute<Java.Lang.String>("getContentEncoding"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getContentLength()"/> 
@@ -149,9 +149,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getContentType()"/> 
         /// </summary>
-        public string ContentType
+        public Java.Lang.String ContentType
         {
-            get { return IExecute<string>("getContentType"); }
+            get { return IExecute<Java.Lang.String>("getContentType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getDate()"/> 
@@ -191,9 +191,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getHeaderFields()"/> 
         /// </summary>
-        public Java.Util.Map<string, Java.Util.List<string>> HeaderFields
+        public Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> HeaderFields
         {
-            get { return IExecute<Java.Util.Map<string, Java.Util.List<string>>>("getHeaderFields"); }
+            get { return IExecute<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("getHeaderFields"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getIfModifiedSince()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setIfModifiedSince(long)"/>
@@ -240,9 +240,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getRequestProperties()"/> 
         /// </summary>
-        public Java.Util.Map<string, Java.Util.List<string>> RequestProperties
+        public Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> RequestProperties
         {
-            get { return IExecute<Java.Util.Map<string, Java.Util.List<string>>>("getRequestProperties"); }
+            get { return IExecute<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("getRequestProperties"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getURL()"/> 
@@ -270,10 +270,10 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getHeaderFieldInt(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        public int GetHeaderFieldInt(string arg0, int arg1)
+        public int GetHeaderFieldInt(Java.Lang.String arg0, int arg1)
         {
             return IExecute<int>("getHeaderFieldInt", arg0, arg1);
         }
@@ -291,73 +291,73 @@ namespace Java.Net
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getHeaderField(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetHeaderField(int arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetHeaderField(int arg0)
         {
-            return IExecute<string>("getHeaderField", arg0);
+            return IExecute<Java.Lang.String>("getHeaderField", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getHeaderField(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetHeaderField(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetHeaderField(Java.Lang.String arg0)
         {
-            return IExecute<string>("getHeaderField", arg0);
+            return IExecute<Java.Lang.String>("getHeaderField", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getHeaderFieldKey(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetHeaderFieldKey(int arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetHeaderFieldKey(int arg0)
         {
-            return IExecute<string>("getHeaderFieldKey", arg0);
+            return IExecute<Java.Lang.String>("getHeaderFieldKey", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getRequestProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetRequestProperty(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetRequestProperty(Java.Lang.String arg0)
         {
-            return IExecute<string>("getRequestProperty", arg0);
+            return IExecute<Java.Lang.String>("getRequestProperty", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getHeaderFieldDate(java.lang.String,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see cref="long"/></returns>
-        public long GetHeaderFieldDate(string arg0, long arg1)
+        public long GetHeaderFieldDate(Java.Lang.String arg0, long arg1)
         {
             return IExecute<long>("getHeaderFieldDate", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getHeaderFieldLong(java.lang.String,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see cref="long"/></returns>
-        public long GetHeaderFieldLong(string arg0, long arg1)
+        public long GetHeaderFieldLong(Java.Lang.String arg0, long arg1)
         {
             return IExecute<long>("getHeaderFieldLong", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#addRequestProperty(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public void AddRequestProperty(string arg0, string arg1)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public void AddRequestProperty(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             IExecute("addRequestProperty", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setRequestProperty(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public void SetRequestProperty(string arg0, string arg1)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public void SetRequestProperty(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             IExecute("setRequestProperty", arg0, arg1);
         }

@@ -39,7 +39,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ExtendedResponse.html#getID()"/> 
         /// </summary>
-        string ID { get; }
+        Java.Lang.String ID { get; }
 
         #endregion
 
@@ -81,9 +81,9 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ExtendedResponse.html#getID()"/> 
         /// </summary>
-        public string ID
+        public Java.Lang.String ID
         {
-            get { return IExecute<string>("getID"); }
+            get { return IExecute<Java.Lang.String>("getID"); }
         }
 
         #endregion

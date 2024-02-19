@@ -33,7 +33,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/ExcC14NParameterSpec.html#%3Cinit%3E(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        public ExcC14NParameterSpec(Java.Util.List<string> arg0)
+        public ExcC14NParameterSpec(Java.Util.List<Java.Lang.String> arg0)
             : base(arg0)
         {
         }
@@ -48,8 +48,8 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/ExcC14NParameterSpec.html#DEFAULT"/>
         /// </summary>
-        public static string DEFAULT { get { if (!_DEFAULTReady) { _DEFAULTContent = SGetField<string>(LocalBridgeClazz, "DEFAULT"); _DEFAULTReady = true; } return _DEFAULTContent; } }
-        private static string _DEFAULTContent = default;
+        public static Java.Lang.String DEFAULT { get { if (!_DEFAULTReady) { _DEFAULTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DEFAULT"); _DEFAULTReady = true; } return _DEFAULTContent; } }
+        private static Java.Lang.String _DEFAULTContent = default;
         private static bool _DEFAULTReady = false; // this is used because in case of generics 
 
         #endregion
@@ -62,9 +62,9 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/ExcC14NParameterSpec.html#getPrefixList()"/> 
         /// </summary>
-        public Java.Util.List<string> PrefixList
+        public Java.Util.List<Java.Lang.String> PrefixList
         {
-            get { return IExecute<Java.Util.List<string>>("getPrefixList"); }
+            get { return IExecute<Java.Util.List<Java.Lang.String>>("getPrefixList"); }
         }
 
         #endregion

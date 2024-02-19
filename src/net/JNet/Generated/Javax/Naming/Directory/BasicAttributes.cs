@@ -40,19 +40,19 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttributes.html#%3Cinit%3E(java.lang.String,java.lang.Object,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
-        public BasicAttributes(string arg0, object arg1, bool arg2)
+        public BasicAttributes(Java.Lang.String arg0, object arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttributes.html#%3Cinit%3E(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        public BasicAttributes(string arg0, object arg1)
+        public BasicAttributes(Java.Lang.String arg0, object arg1)
             : base(arg0, arg1)
         {
         }
@@ -82,9 +82,9 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttributes.html#getIDs()"/> 
         /// </summary>
-        public Javax.Naming.NamingEnumeration<string> IDs
+        public Javax.Naming.NamingEnumeration<Java.Lang.String> IDs
         {
-            get { return IExecute<Javax.Naming.NamingEnumeration<string>>("getIDs"); }
+            get { return IExecute<Javax.Naming.NamingEnumeration<Java.Lang.String>>("getIDs"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttributes.html#isCaseIgnored()"/>
@@ -107,19 +107,19 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttributes.html#get(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Naming.Directory.Attribute"/></returns>
-        public Javax.Naming.Directory.Attribute Get(string arg0)
+        public Javax.Naming.Directory.Attribute Get(Java.Lang.String arg0)
         {
             return IExecute<Javax.Naming.Directory.Attribute>("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttributes.html#put(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="Javax.Naming.Directory.Attribute"/></returns>
-        public Javax.Naming.Directory.Attribute Put(string arg0, object arg1)
+        public Javax.Naming.Directory.Attribute Put(Java.Lang.String arg0, object arg1)
         {
             return IExecute<Javax.Naming.Directory.Attribute>("put", arg0, arg1);
         }
@@ -135,9 +135,9 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttributes.html#remove(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Naming.Directory.Attribute"/></returns>
-        public Javax.Naming.Directory.Attribute Remove(string arg0)
+        public Javax.Naming.Directory.Attribute Remove(Java.Lang.String arg0)
         {
             return IExecute<Javax.Naming.Directory.Attribute>("remove", arg0);
         }

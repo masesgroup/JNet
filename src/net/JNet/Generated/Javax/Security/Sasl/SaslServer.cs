@@ -35,11 +35,11 @@ namespace Javax.Security.Sasl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#getAuthorizationID()"/> 
         /// </summary>
-        string AuthorizationID { get; }
+        Java.Lang.String AuthorizationID { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#getMechanismName()"/> 
         /// </summary>
-        string MechanismName { get; }
+        Java.Lang.String MechanismName { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#isComplete()"/>
         /// </summary>
@@ -74,9 +74,9 @@ namespace Javax.Security.Sasl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#getNegotiatedProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
-        object GetNegotiatedProperty(string arg0);
+        object GetNegotiatedProperty(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#dispose()"/>
         /// </summary>
@@ -117,16 +117,16 @@ namespace Javax.Security.Sasl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#getAuthorizationID()"/> 
         /// </summary>
-        public string AuthorizationID
+        public Java.Lang.String AuthorizationID
         {
-            get { return IExecute<string>("getAuthorizationID"); }
+            get { return IExecute<Java.Lang.String>("getAuthorizationID"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#getMechanismName()"/> 
         /// </summary>
-        public string MechanismName
+        public Java.Lang.String MechanismName
         {
-            get { return IExecute<string>("getMechanismName"); }
+            get { return IExecute<Java.Lang.String>("getMechanismName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#isComplete()"/>
@@ -174,9 +174,9 @@ namespace Javax.Security.Sasl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#getNegotiatedProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
-        public object GetNegotiatedProperty(string arg0)
+        public object GetNegotiatedProperty(Java.Lang.String arg0)
         {
             return IExecute("getNegotiatedProperty", arg0);
         }

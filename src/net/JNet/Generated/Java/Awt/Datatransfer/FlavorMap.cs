@@ -37,13 +37,13 @@ namespace Java.Awt.Datatransfer
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
         /// <returns><see cref="Java.Util.Map"/></returns>
-        Java.Util.Map<Java.Awt.Datatransfer.DataFlavor, string> GetNativesForFlavors(Java.Awt.Datatransfer.DataFlavor[] arg0);
+        Java.Util.Map<Java.Awt.Datatransfer.DataFlavor, Java.Lang.String> GetNativesForFlavors(Java.Awt.Datatransfer.DataFlavor[] arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/FlavorMap.html#getFlavorsForNatives(java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Map"/></returns>
-        Java.Util.Map<string, Java.Awt.Datatransfer.DataFlavor> GetFlavorsForNatives(string[] arg0);
+        Java.Util.Map<Java.Lang.String, Java.Awt.Datatransfer.DataFlavor> GetFlavorsForNatives(Java.Lang.String[] arg0);
 
         #endregion
 
@@ -80,18 +80,18 @@ namespace Java.Awt.Datatransfer
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
         /// <returns><see cref="Java.Util.Map"/></returns>
-        public Java.Util.Map<Java.Awt.Datatransfer.DataFlavor, string> GetNativesForFlavors(Java.Awt.Datatransfer.DataFlavor[] arg0)
+        public Java.Util.Map<Java.Awt.Datatransfer.DataFlavor, Java.Lang.String> GetNativesForFlavors(Java.Awt.Datatransfer.DataFlavor[] arg0)
         {
-            return IExecute<Java.Util.Map<Java.Awt.Datatransfer.DataFlavor, string>>("getNativesForFlavors", new object[] { arg0 });
+            return IExecute<Java.Util.Map<Java.Awt.Datatransfer.DataFlavor, Java.Lang.String>>("getNativesForFlavors", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/FlavorMap.html#getFlavorsForNatives(java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Map"/></returns>
-        public Java.Util.Map<string, Java.Awt.Datatransfer.DataFlavor> GetFlavorsForNatives(string[] arg0)
+        public Java.Util.Map<Java.Lang.String, Java.Awt.Datatransfer.DataFlavor> GetFlavorsForNatives(Java.Lang.String[] arg0)
         {
-            return IExecute<Java.Util.Map<string, Java.Awt.Datatransfer.DataFlavor>>("getFlavorsForNatives", new object[] { arg0 });
+            return IExecute<Java.Util.Map<Java.Lang.String, Java.Awt.Datatransfer.DataFlavor>>("getFlavorsForNatives", new object[] { arg0 });
         }
 
         #endregion

@@ -44,40 +44,40 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.Locale,java.util.ResourceBundle.Control)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <param name="arg2"><see cref="Java.Util.ResourceBundle.Control"/></param>
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
-        public static Java.Util.ResourceBundle GetBundle(string arg0, Java.Util.Locale arg1, Java.Util.ResourceBundle.Control arg2)
+        public static Java.Util.ResourceBundle GetBundle(Java.Lang.String arg0, Java.Util.Locale arg1, Java.Util.ResourceBundle.Control arg2)
         {
             return SExecute<Java.Util.ResourceBundle>(LocalBridgeClazz, "getBundle", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
-        public static Java.Util.ResourceBundle GetBundle(string arg0, Java.Util.Locale arg1)
+        public static Java.Util.ResourceBundle GetBundle(Java.Lang.String arg0, Java.Util.Locale arg1)
         {
             return SExecute<Java.Util.ResourceBundle>(LocalBridgeClazz, "getBundle", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.ResourceBundle.Control)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.ResourceBundle.Control"/></param>
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
-        public static Java.Util.ResourceBundle GetBundle(string arg0, Java.Util.ResourceBundle.Control arg1)
+        public static Java.Util.ResourceBundle GetBundle(Java.Lang.String arg0, Java.Util.ResourceBundle.Control arg1)
         {
             return SExecute<Java.Util.ResourceBundle>(LocalBridgeClazz, "getBundle", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
-        public static Java.Util.ResourceBundle GetBundle(string arg0)
+        public static Java.Util.ResourceBundle GetBundle(Java.Lang.String arg0)
         {
             return SExecute<Java.Util.ResourceBundle>(LocalBridgeClazz, "getBundle", arg0);
         }
@@ -99,44 +99,44 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String,java.lang.Module)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Module"/></param>
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
-        public static Java.Util.ResourceBundle GetBundle(string arg0, Java.Lang.Module arg1)
+        public static Java.Util.ResourceBundle GetBundle(Java.Lang.String arg0, Java.Lang.Module arg1)
         {
             return SExecute<Java.Util.ResourceBundle>(LocalBridgeClazz, "getBundle", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.Locale,java.lang.ClassLoader,java.util.ResourceBundle.Control)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
         /// <param name="arg3"><see cref="Java.Util.ResourceBundle.Control"/></param>
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
-        public static Java.Util.ResourceBundle GetBundle(string arg0, Java.Util.Locale arg1, Java.Lang.ClassLoader arg2, Java.Util.ResourceBundle.Control arg3)
+        public static Java.Util.ResourceBundle GetBundle(Java.Lang.String arg0, Java.Util.Locale arg1, Java.Lang.ClassLoader arg2, Java.Util.ResourceBundle.Control arg3)
         {
             return SExecute<Java.Util.ResourceBundle>(LocalBridgeClazz, "getBundle", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.Locale,java.lang.ClassLoader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
-        public static Java.Util.ResourceBundle GetBundle(string arg0, Java.Util.Locale arg1, Java.Lang.ClassLoader arg2)
+        public static Java.Util.ResourceBundle GetBundle(Java.Lang.String arg0, Java.Util.Locale arg1, Java.Lang.ClassLoader arg2)
         {
             return SExecute<Java.Util.ResourceBundle>(LocalBridgeClazz, "getBundle", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.Locale,java.lang.Module)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Module"/></param>
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
-        public static Java.Util.ResourceBundle GetBundle(string arg0, Java.Util.Locale arg1, Java.Lang.Module arg2)
+        public static Java.Util.ResourceBundle GetBundle(Java.Lang.String arg0, Java.Util.Locale arg1, Java.Lang.Module arg2)
         {
             return SExecute<Java.Util.ResourceBundle>(LocalBridgeClazz, "getBundle", arg0, arg1, arg2);
         }
@@ -147,16 +147,16 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getBaseBundleName()"/> 
         /// </summary>
-        public string BaseBundleName
+        public Java.Lang.String BaseBundleName
         {
-            get { return IExecute<string>("getBaseBundleName"); }
+            get { return IExecute<Java.Lang.String>("getBaseBundleName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getKeys()"/> 
         /// </summary>
-        public Java.Util.Enumeration<string> Keys
+        public Java.Util.Enumeration<Java.Lang.String> Keys
         {
-            get { return IExecute<Java.Util.Enumeration<string>>("getKeys"); }
+            get { return IExecute<Java.Util.Enumeration<Java.Lang.String>>("getKeys"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getLocale()"/> 
@@ -168,47 +168,47 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#containsKey(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool ContainsKey(string arg0)
+        public bool ContainsKey(Java.Lang.String arg0)
         {
             return IExecute<bool>("containsKey", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getObject(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
-        public object GetObject(string arg0)
+        public object GetObject(Java.Lang.String arg0)
         {
             return IExecute("getObject", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getString(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetString(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetString(Java.Lang.String arg0)
         {
-            return IExecute<string>("getString", arg0);
+            return IExecute<Java.Lang.String>("getString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getStringArray(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string[] GetStringArray(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetStringArray(Java.Lang.String arg0)
         {
-            return IExecuteArray<string>("getStringArray", arg0);
+            return IExecuteArray<Java.Lang.String>("getStringArray", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#keySet()"/>
         /// </summary>
 
         /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<string> KeySet()
+        public Java.Util.Set<Java.Lang.String> KeySet()
         {
-            return IExecute<Java.Util.Set<string>>("keySet");
+            return IExecute<Java.Util.Set<Java.Lang.String>>("keySet");
         }
 
         #endregion
@@ -265,7 +265,7 @@ namespace Java.Util
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.List"/></param>
             /// <returns><see cref="Java.Util.ResourceBundle.Control"/></returns>
-            public static Java.Util.ResourceBundle.Control GetControl(Java.Util.List<string> arg0)
+            public static Java.Util.ResourceBundle.Control GetControl(Java.Util.List<Java.Lang.String> arg0)
             {
                 return SExecute<Java.Util.ResourceBundle.Control>(LocalBridgeClazz, "getControl", arg0);
             }
@@ -274,7 +274,7 @@ namespace Java.Util
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.List"/></param>
             /// <returns><see cref="Java.Util.ResourceBundle.Control"/></returns>
-            public static Java.Util.ResourceBundle.Control GetNoFallbackControl(Java.Util.List<string> arg0)
+            public static Java.Util.ResourceBundle.Control GetNoFallbackControl(Java.Util.List<Java.Lang.String> arg0)
             {
                 return SExecute<Java.Util.ResourceBundle.Control>(LocalBridgeClazz, "getNoFallbackControl", arg0);
             }
@@ -285,89 +285,89 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#needsReload(java.lang.String,java.util.Locale,java.lang.String,java.lang.ClassLoader,java.util.ResourceBundle,long)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
-            /// <param name="arg2"><see cref="string"/></param>
+            /// <param name="arg2"><see cref="Java.Lang.String"/></param>
             /// <param name="arg3"><see cref="Java.Lang.ClassLoader"/></param>
             /// <param name="arg4"><see cref="Java.Util.ResourceBundle"/></param>
             /// <param name="arg5"><see cref="long"/></param>
             /// <returns><see cref="bool"/></returns>
-            public bool NeedsReload(string arg0, Java.Util.Locale arg1, string arg2, Java.Lang.ClassLoader arg3, Java.Util.ResourceBundle arg4, long arg5)
+            public bool NeedsReload(Java.Lang.String arg0, Java.Util.Locale arg1, Java.Lang.String arg2, Java.Lang.ClassLoader arg3, Java.Util.ResourceBundle arg4, long arg5)
             {
                 return IExecute<bool>("needsReload", arg0, arg1, arg2, arg3, arg4, arg5);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#toResourceName(java.lang.String,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
-            /// <param name="arg1"><see cref="string"/></param>
-            /// <returns><see cref="string"/></returns>
-            public string ToResourceName(string arg0, string arg1)
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String ToResourceName(Java.Lang.String arg0, Java.Lang.String arg1)
             {
-                return IExecute<string>("toResourceName", arg0, arg1);
+                return IExecute<Java.Lang.String>("toResourceName", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#toBundleName(java.lang.String,java.util.Locale)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
-            /// <returns><see cref="string"/></returns>
-            public string ToBundleName(string arg0, Java.Util.Locale arg1)
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String ToBundleName(Java.Lang.String arg0, Java.Util.Locale arg1)
             {
-                return IExecute<string>("toBundleName", arg0, arg1);
+                return IExecute<Java.Lang.String>("toBundleName", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#getFormats(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Util.List"/></returns>
-            public Java.Util.List<string> GetFormats(string arg0)
+            public Java.Util.List<Java.Lang.String> GetFormats(Java.Lang.String arg0)
             {
-                return IExecute<Java.Util.List<string>>("getFormats", arg0);
+                return IExecute<Java.Util.List<Java.Lang.String>>("getFormats", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#getCandidateLocales(java.lang.String,java.util.Locale)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
             /// <returns><see cref="Java.Util.List"/></returns>
-            public Java.Util.List<Java.Util.Locale> GetCandidateLocales(string arg0, Java.Util.Locale arg1)
+            public Java.Util.List<Java.Util.Locale> GetCandidateLocales(Java.Lang.String arg0, Java.Util.Locale arg1)
             {
                 return IExecute<Java.Util.List<Java.Util.Locale>>("getCandidateLocales", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#getFallbackLocale(java.lang.String,java.util.Locale)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
             /// <returns><see cref="Java.Util.Locale"/></returns>
-            public Java.Util.Locale GetFallbackLocale(string arg0, Java.Util.Locale arg1)
+            public Java.Util.Locale GetFallbackLocale(Java.Lang.String arg0, Java.Util.Locale arg1)
             {
                 return IExecute<Java.Util.Locale>("getFallbackLocale", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#newBundle(java.lang.String,java.util.Locale,java.lang.String,java.lang.ClassLoader,boolean)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
-            /// <param name="arg2"><see cref="string"/></param>
+            /// <param name="arg2"><see cref="Java.Lang.String"/></param>
             /// <param name="arg3"><see cref="Java.Lang.ClassLoader"/></param>
             /// <param name="arg4"><see cref="bool"/></param>
             /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
             /// <exception cref="Java.Lang.IllegalAccessException"/>
             /// <exception cref="Java.Lang.InstantiationException"/>
             /// <exception cref="Java.Io.IOException"/>
-            public Java.Util.ResourceBundle NewBundle(string arg0, Java.Util.Locale arg1, string arg2, Java.Lang.ClassLoader arg3, bool arg4)
+            public Java.Util.ResourceBundle NewBundle(Java.Lang.String arg0, Java.Util.Locale arg1, Java.Lang.String arg2, Java.Lang.ClassLoader arg3, bool arg4)
             {
                 return IExecute<Java.Util.ResourceBundle>("newBundle", arg0, arg1, arg2, arg3, arg4);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#getTimeToLive(java.lang.String,java.util.Locale)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
             /// <returns><see cref="long"/></returns>
-            public long GetTimeToLive(string arg0, Java.Util.Locale arg1)
+            public long GetTimeToLive(Java.Lang.String arg0, Java.Util.Locale arg1)
             {
                 return IExecute<long>("getTimeToLive", arg0, arg1);
             }

@@ -35,31 +35,31 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getImplementationName()"/> 
         /// </summary>
-        string ImplementationName { get; }
+        Java.Lang.String ImplementationName { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getImplementationVendor()"/> 
         /// </summary>
-        string ImplementationVendor { get; }
+        Java.Lang.String ImplementationVendor { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getImplementationVersion()"/> 
         /// </summary>
-        string ImplementationVersion { get; }
+        Java.Lang.String ImplementationVersion { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getMBeanServerId()"/> 
         /// </summary>
-        string MBeanServerId { get; }
+        Java.Lang.String MBeanServerId { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getSpecificationName()"/> 
         /// </summary>
-        string SpecificationName { get; }
+        Java.Lang.String SpecificationName { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getSpecificationVendor()"/> 
         /// </summary>
-        string SpecificationVendor { get; }
+        Java.Lang.String SpecificationVendor { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getSpecificationVersion()"/> 
         /// </summary>
-        string SpecificationVersion { get; }
+        Java.Lang.String SpecificationVersion { get; }
 
         #endregion
 
@@ -94,51 +94,51 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getImplementationName()"/> 
         /// </summary>
-        public string ImplementationName
+        public Java.Lang.String ImplementationName
         {
-            get { return IExecute<string>("getImplementationName"); }
+            get { return IExecute<Java.Lang.String>("getImplementationName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getImplementationVendor()"/> 
         /// </summary>
-        public string ImplementationVendor
+        public Java.Lang.String ImplementationVendor
         {
-            get { return IExecute<string>("getImplementationVendor"); }
+            get { return IExecute<Java.Lang.String>("getImplementationVendor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getImplementationVersion()"/> 
         /// </summary>
-        public string ImplementationVersion
+        public Java.Lang.String ImplementationVersion
         {
-            get { return IExecute<string>("getImplementationVersion"); }
+            get { return IExecute<Java.Lang.String>("getImplementationVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getMBeanServerId()"/> 
         /// </summary>
-        public string MBeanServerId
+        public Java.Lang.String MBeanServerId
         {
-            get { return IExecute<string>("getMBeanServerId"); }
+            get { return IExecute<Java.Lang.String>("getMBeanServerId"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getSpecificationName()"/> 
         /// </summary>
-        public string SpecificationName
+        public Java.Lang.String SpecificationName
         {
-            get { return IExecute<string>("getSpecificationName"); }
+            get { return IExecute<Java.Lang.String>("getSpecificationName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getSpecificationVendor()"/> 
         /// </summary>
-        public string SpecificationVendor
+        public Java.Lang.String SpecificationVendor
         {
-            get { return IExecute<string>("getSpecificationVendor"); }
+            get { return IExecute<Java.Lang.String>("getSpecificationVendor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getSpecificationVersion()"/> 
         /// </summary>
-        public string SpecificationVersion
+        public Java.Lang.String SpecificationVersion
         {
-            get { return IExecute<string>("getSpecificationVersion"); }
+            get { return IExecute<Java.Lang.String>("getSpecificationVersion"); }
         }
 
         #endregion

@@ -151,10 +151,10 @@ namespace Javax.Xml.Datatype
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#toXMLFormat()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        public string ToXMLFormat()
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String ToXMLFormat()
         {
-            return IExecute<string>("toXMLFormat");
+            return IExecute<Java.Lang.String>("toXMLFormat");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#toGregorianCalendar()"/>

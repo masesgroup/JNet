@@ -48,9 +48,9 @@ namespace Java.Nio.Charset.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/spi/CharsetProvider.html#charsetForName(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Nio.Charset.Charset"/></returns>
-        public Java.Nio.Charset.Charset CharsetForName(string arg0)
+        public Java.Nio.Charset.Charset CharsetForName(Java.Lang.String arg0)
         {
             return IExecute<Java.Nio.Charset.Charset>("charsetForName", arg0);
         }

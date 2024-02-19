@@ -127,10 +127,10 @@ namespace Javax.Swing.Plaf
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetToolTipText2D(Javax.Swing.Text.JTextComponent arg0, Java.Awt.Geom.Point2D arg1)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetToolTipText2D(Javax.Swing.Text.JTextComponent arg0, Java.Awt.Geom.Point2D arg1)
         {
-            return IExecute<string>("getToolTipText2D", arg0, arg1);
+            return IExecute<Java.Lang.String>("getToolTipText2D", arg0, arg1);
         }
 
         #endregion

@@ -232,14 +232,14 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#ComponentElementName"/>
         /// </summary>
-        public static string ComponentElementName { get { if (!_ComponentElementNameReady) { _ComponentElementNameContent = SGetField<string>(LocalBridgeClazz, "ComponentElementName"); _ComponentElementNameReady = true; } return _ComponentElementNameContent; } }
-        private static string _ComponentElementNameContent = default;
+        public static Java.Lang.String ComponentElementName { get { if (!_ComponentElementNameReady) { _ComponentElementNameContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ComponentElementName"); _ComponentElementNameReady = true; } return _ComponentElementNameContent; } }
+        private static Java.Lang.String _ComponentElementNameContent = default;
         private static bool _ComponentElementNameReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#IconElementName"/>
         /// </summary>
-        public static string IconElementName { get { if (!_IconElementNameReady) { _IconElementNameContent = SGetField<string>(LocalBridgeClazz, "IconElementName"); _IconElementNameReady = true; } return _IconElementNameContent; } }
-        private static string _IconElementNameContent = default;
+        public static Java.Lang.String IconElementName { get { if (!_IconElementNameReady) { _IconElementNameContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "IconElementName"); _IconElementNameReady = true; } return _IconElementNameContent; } }
+        private static Java.Lang.String _IconElementNameContent = default;
         private static bool _IconElementNameReady = false; // this is used because in case of generics 
 
         #endregion
@@ -411,10 +411,10 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#getFontFamily(javax.swing.text.AttributeSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string GetFontFamily(Javax.Swing.Text.AttributeSet arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String GetFontFamily(Javax.Swing.Text.AttributeSet arg0)
         {
-            return SExecute<string>(LocalBridgeClazz, "getFontFamily", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getFontFamily", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#getIcon(javax.swing.text.AttributeSet)"/>
@@ -492,8 +492,8 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setFontFamily(javax.swing.text.MutableAttributeSet,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public static void SetFontFamily(Javax.Swing.Text.MutableAttributeSet arg0, string arg1)
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public static void SetFontFamily(Javax.Swing.Text.MutableAttributeSet arg0, Java.Lang.String arg1)
         {
             SExecute(LocalBridgeClazz, "setFontFamily", arg0, arg1);
         }

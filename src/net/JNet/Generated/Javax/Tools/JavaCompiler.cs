@@ -99,7 +99,7 @@ namespace Javax.Tools
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaCompiler.CompilationTask.html#addModules(java.lang.Iterable)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
-            public void AddModules(Java.Lang.Iterable<string> arg0)
+            public void AddModules(Java.Lang.Iterable<Java.Lang.String> arg0)
             {
                 IExecute("addModules", arg0);
             }

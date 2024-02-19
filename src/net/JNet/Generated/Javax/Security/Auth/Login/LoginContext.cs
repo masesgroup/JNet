@@ -32,52 +32,52 @@ namespace Javax.Security.Auth.Login
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginContext.html#%3Cinit%3E(java.lang.String,javax.security.auth.callback.CallbackHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
         /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
-        public LoginContext(string arg0, Javax.Security.Auth.Callback.CallbackHandler arg1)
+        public LoginContext(Java.Lang.String arg0, Javax.Security.Auth.Callback.CallbackHandler arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginContext.html#%3Cinit%3E(java.lang.String,javax.security.auth.Subject,javax.security.auth.callback.CallbackHandler,javax.security.auth.login.Configuration)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Javax.Security.Auth.Subject"/></param>
         /// <param name="arg2"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
         /// <param name="arg3"><see cref="Javax.Security.Auth.Login.Configuration"/></param>
         /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
-        public LoginContext(string arg0, Javax.Security.Auth.Subject arg1, Javax.Security.Auth.Callback.CallbackHandler arg2, Javax.Security.Auth.Login.Configuration arg3)
+        public LoginContext(Java.Lang.String arg0, Javax.Security.Auth.Subject arg1, Javax.Security.Auth.Callback.CallbackHandler arg2, Javax.Security.Auth.Login.Configuration arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginContext.html#%3Cinit%3E(java.lang.String,javax.security.auth.Subject,javax.security.auth.callback.CallbackHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Javax.Security.Auth.Subject"/></param>
         /// <param name="arg2"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
         /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
-        public LoginContext(string arg0, Javax.Security.Auth.Subject arg1, Javax.Security.Auth.Callback.CallbackHandler arg2)
+        public LoginContext(Java.Lang.String arg0, Javax.Security.Auth.Subject arg1, Javax.Security.Auth.Callback.CallbackHandler arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginContext.html#%3Cinit%3E(java.lang.String,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Javax.Security.Auth.Subject"/></param>
         /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
-        public LoginContext(string arg0, Javax.Security.Auth.Subject arg1)
+        public LoginContext(Java.Lang.String arg0, Javax.Security.Auth.Subject arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginContext.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
-        public LoginContext(string arg0)
+        public LoginContext(Java.Lang.String arg0)
             : base(arg0)
         {
         }

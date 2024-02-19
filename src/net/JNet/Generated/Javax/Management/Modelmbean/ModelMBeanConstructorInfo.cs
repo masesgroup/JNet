@@ -32,40 +32,40 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanConstructorInfo.html#%3Cinit%3E(java.lang.String,java.lang.reflect.Constructor,javax.management.Descriptor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Reflect.Constructor"/></param>
         /// <param name="arg2"><see cref="Javax.Management.Descriptor"/></param>
-        public ModelMBeanConstructorInfo(string arg0, Java.Lang.Reflect.Constructor<object> arg1, Javax.Management.Descriptor arg2)
+        public ModelMBeanConstructorInfo(Java.Lang.String arg0, Java.Lang.Reflect.Constructor<object> arg1, Javax.Management.Descriptor arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanConstructorInfo.html#%3Cinit%3E(java.lang.String,java.lang.reflect.Constructor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Reflect.Constructor"/></param>
-        public ModelMBeanConstructorInfo(string arg0, Java.Lang.Reflect.Constructor<object> arg1)
+        public ModelMBeanConstructorInfo(Java.Lang.String arg0, Java.Lang.Reflect.Constructor<object> arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanConstructorInfo.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.MBeanParameterInfo[],javax.management.Descriptor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Javax.Management.MBeanParameterInfo"/></param>
         /// <param name="arg3"><see cref="Javax.Management.Descriptor"/></param>
-        public ModelMBeanConstructorInfo(string arg0, string arg1, Javax.Management.MBeanParameterInfo[] arg2, Javax.Management.Descriptor arg3)
+        public ModelMBeanConstructorInfo(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanParameterInfo[] arg2, Javax.Management.Descriptor arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanConstructorInfo.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.MBeanParameterInfo[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Javax.Management.MBeanParameterInfo"/></param>
-        public ModelMBeanConstructorInfo(string arg0, string arg1, Javax.Management.MBeanParameterInfo[] arg2)
+        public ModelMBeanConstructorInfo(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanParameterInfo[] arg2)
             : base(arg0, arg1, arg2)
         {
         }

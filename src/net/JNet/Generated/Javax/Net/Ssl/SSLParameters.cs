@@ -32,17 +32,17 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#%3Cinit%3E(java.lang.String[],java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public SSLParameters(string[] arg0, string[] arg1)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public SSLParameters(Java.Lang.String[] arg0, Java.Lang.String[] arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#%3Cinit%3E(java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public SSLParameters(string[] arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public SSLParameters(Java.Lang.String[] arg0)
             : base(arg0)
         {
         }
@@ -72,16 +72,16 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#getApplicationProtocols()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#setApplicationProtocols(java.lang.String[])"/>
         /// </summary>
-        public string[] ApplicationProtocols
+        public Java.Lang.String[] ApplicationProtocols
         {
-            get { return IExecuteArray<string>("getApplicationProtocols"); } set { IExecute("setApplicationProtocols", value); }
+            get { return IExecuteArray<Java.Lang.String>("getApplicationProtocols"); } set { IExecute("setApplicationProtocols", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#getCipherSuites()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#setCipherSuites(java.lang.String[])"/>
         /// </summary>
-        public string[] CipherSuites
+        public Java.Lang.String[] CipherSuites
         {
-            get { return IExecuteArray<string>("getCipherSuites"); } set { IExecute("setCipherSuites", value); }
+            get { return IExecuteArray<Java.Lang.String>("getCipherSuites"); } set { IExecute("setCipherSuites", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#getEnableRetransmissions()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#setEnableRetransmissions(boolean)"/>
@@ -93,9 +93,9 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#getEndpointIdentificationAlgorithm()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#setEndpointIdentificationAlgorithm(java.lang.String)"/>
         /// </summary>
-        public string EndpointIdentificationAlgorithm
+        public Java.Lang.String EndpointIdentificationAlgorithm
         {
-            get { return IExecute<string>("getEndpointIdentificationAlgorithm"); } set { IExecute("setEndpointIdentificationAlgorithm", value); }
+            get { return IExecute<Java.Lang.String>("getEndpointIdentificationAlgorithm"); } set { IExecute("setEndpointIdentificationAlgorithm", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#getMaximumPacketSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#setMaximumPacketSize(int)"/>
@@ -114,9 +114,9 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#getProtocols()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#setProtocols(java.lang.String[])"/>
         /// </summary>
-        public string[] Protocols
+        public Java.Lang.String[] Protocols
         {
-            get { return IExecuteArray<string>("getProtocols"); } set { IExecute("setProtocols", value); }
+            get { return IExecuteArray<Java.Lang.String>("getProtocols"); } set { IExecute("setProtocols", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#getServerNames()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#setServerNames(java.util.List)"/>

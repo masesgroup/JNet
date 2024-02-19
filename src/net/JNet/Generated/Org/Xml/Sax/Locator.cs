@@ -43,11 +43,11 @@ namespace Org.Xml.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Locator.html#getPublicId()"/> 
         /// </summary>
-        string PublicId { get; }
+        Java.Lang.String PublicId { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Locator.html#getSystemId()"/> 
         /// </summary>
-        string SystemId { get; }
+        Java.Lang.String SystemId { get; }
 
         #endregion
 
@@ -96,16 +96,16 @@ namespace Org.Xml.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Locator.html#getPublicId()"/> 
         /// </summary>
-        public string PublicId
+        public Java.Lang.String PublicId
         {
-            get { return IExecute<string>("getPublicId"); }
+            get { return IExecute<Java.Lang.String>("getPublicId"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Locator.html#getSystemId()"/> 
         /// </summary>
-        public string SystemId
+        public Java.Lang.String SystemId
         {
-            get { return IExecute<string>("getSystemId"); }
+            get { return IExecute<Java.Lang.String>("getSystemId"); }
         }
 
         #endregion

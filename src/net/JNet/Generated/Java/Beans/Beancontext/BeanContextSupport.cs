@@ -239,21 +239,21 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#getResourceAsStream(java.lang.String,java.beans.beancontext.BeanContextChild)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Beans.Beancontext.BeanContextChild"/></param>
         /// <returns><see cref="Java.Io.InputStream"/></returns>
-        public Java.Io.InputStream GetResourceAsStream(string arg0, Java.Beans.Beancontext.BeanContextChild arg1)
+        public Java.Io.InputStream GetResourceAsStream(Java.Lang.String arg0, Java.Beans.Beancontext.BeanContextChild arg1)
         {
             return IExecute<Java.Io.InputStream>("getResourceAsStream", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#instantiateChild(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        public object InstantiateChild(string arg0)
+        public object InstantiateChild(Java.Lang.String arg0)
         {
             return IExecute("instantiateChild", arg0);
         }
@@ -278,10 +278,10 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#getResource(java.lang.String,java.beans.beancontext.BeanContextChild)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Beans.Beancontext.BeanContextChild"/></param>
         /// <returns><see cref="Java.Net.URL"/></returns>
-        public Java.Net.URL GetResource(string arg0, Java.Beans.Beancontext.BeanContextChild arg1)
+        public Java.Net.URL GetResource(Java.Lang.String arg0, Java.Beans.Beancontext.BeanContextChild arg1)
         {
             return IExecute<Java.Net.URL>("getResource", arg0, arg1);
         }

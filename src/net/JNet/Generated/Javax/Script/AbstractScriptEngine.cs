@@ -84,30 +84,30 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/AbstractScriptEngine.html#eval(java.lang.String,javax.script.Bindings)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Javax.Script.Bindings"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Script.ScriptException"/>
-        public object Eval(string arg0, Javax.Script.Bindings arg1)
+        public object Eval(Java.Lang.String arg0, Javax.Script.Bindings arg1)
         {
             return IExecute("eval", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/AbstractScriptEngine.html#eval(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Script.ScriptException"/>
-        public object Eval(string arg0)
+        public object Eval(Java.Lang.String arg0)
         {
             return IExecute("eval", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/AbstractScriptEngine.html#get(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
-        public object Get(string arg0)
+        public object Get(Java.Lang.String arg0)
         {
             return IExecute("get", arg0);
         }
@@ -123,9 +123,9 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/AbstractScriptEngine.html#put(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        public void Put(string arg0, object arg1)
+        public void Put(Java.Lang.String arg0, object arg1)
         {
             IExecute("put", arg0, arg1);
         }

@@ -68,26 +68,26 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#CELL_RENDERER_PROPERTY"/>
         /// </summary>
-        public static string CELL_RENDERER_PROPERTY { get { if (!_CELL_RENDERER_PROPERTYReady) { _CELL_RENDERER_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "CELL_RENDERER_PROPERTY"); _CELL_RENDERER_PROPERTYReady = true; } return _CELL_RENDERER_PROPERTYContent; } }
-        private static string _CELL_RENDERER_PROPERTYContent = default;
+        public static Java.Lang.String CELL_RENDERER_PROPERTY { get { if (!_CELL_RENDERER_PROPERTYReady) { _CELL_RENDERER_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CELL_RENDERER_PROPERTY"); _CELL_RENDERER_PROPERTYReady = true; } return _CELL_RENDERER_PROPERTYContent; } }
+        private static Java.Lang.String _CELL_RENDERER_PROPERTYContent = default;
         private static bool _CELL_RENDERER_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#COLUMN_WIDTH_PROPERTY"/>
         /// </summary>
-        public static string COLUMN_WIDTH_PROPERTY { get { if (!_COLUMN_WIDTH_PROPERTYReady) { _COLUMN_WIDTH_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "COLUMN_WIDTH_PROPERTY"); _COLUMN_WIDTH_PROPERTYReady = true; } return _COLUMN_WIDTH_PROPERTYContent; } }
-        private static string _COLUMN_WIDTH_PROPERTYContent = default;
+        public static Java.Lang.String COLUMN_WIDTH_PROPERTY { get { if (!_COLUMN_WIDTH_PROPERTYReady) { _COLUMN_WIDTH_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "COLUMN_WIDTH_PROPERTY"); _COLUMN_WIDTH_PROPERTYReady = true; } return _COLUMN_WIDTH_PROPERTYContent; } }
+        private static Java.Lang.String _COLUMN_WIDTH_PROPERTYContent = default;
         private static bool _COLUMN_WIDTH_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#HEADER_RENDERER_PROPERTY"/>
         /// </summary>
-        public static string HEADER_RENDERER_PROPERTY { get { if (!_HEADER_RENDERER_PROPERTYReady) { _HEADER_RENDERER_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "HEADER_RENDERER_PROPERTY"); _HEADER_RENDERER_PROPERTYReady = true; } return _HEADER_RENDERER_PROPERTYContent; } }
-        private static string _HEADER_RENDERER_PROPERTYContent = default;
+        public static Java.Lang.String HEADER_RENDERER_PROPERTY { get { if (!_HEADER_RENDERER_PROPERTYReady) { _HEADER_RENDERER_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "HEADER_RENDERER_PROPERTY"); _HEADER_RENDERER_PROPERTYReady = true; } return _HEADER_RENDERER_PROPERTYContent; } }
+        private static Java.Lang.String _HEADER_RENDERER_PROPERTYContent = default;
         private static bool _HEADER_RENDERER_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#HEADER_VALUE_PROPERTY"/>
         /// </summary>
-        public static string HEADER_VALUE_PROPERTY { get { if (!_HEADER_VALUE_PROPERTYReady) { _HEADER_VALUE_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "HEADER_VALUE_PROPERTY"); _HEADER_VALUE_PROPERTYReady = true; } return _HEADER_VALUE_PROPERTYContent; } }
-        private static string _HEADER_VALUE_PROPERTYContent = default;
+        public static Java.Lang.String HEADER_VALUE_PROPERTY { get { if (!_HEADER_VALUE_PROPERTYReady) { _HEADER_VALUE_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "HEADER_VALUE_PROPERTY"); _HEADER_VALUE_PROPERTYReady = true; } return _HEADER_VALUE_PROPERTYContent; } }
+        private static Java.Lang.String _HEADER_VALUE_PROPERTYContent = default;
         private static bool _HEADER_VALUE_PROPERTYReady = false; // this is used because in case of generics 
 
         #endregion

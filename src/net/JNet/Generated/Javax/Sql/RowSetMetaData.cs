@@ -50,9 +50,9 @@ namespace Javax.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setCatalogName(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void SetCatalogName(int arg0, string arg1);
+        void SetCatalogName(int arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setColumnCount(int)"/>
         /// </summary>
@@ -70,16 +70,16 @@ namespace Javax.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setColumnLabel(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void SetColumnLabel(int arg0, string arg1);
+        void SetColumnLabel(int arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setColumnName(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void SetColumnName(int arg0, string arg1);
+        void SetColumnName(int arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setColumnType(int,int)"/>
         /// </summary>
@@ -91,9 +91,9 @@ namespace Javax.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setColumnTypeName(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void SetColumnTypeName(int arg0, string arg1);
+        void SetColumnTypeName(int arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setCurrency(int,boolean)"/>
         /// </summary>
@@ -126,9 +126,9 @@ namespace Javax.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setSchemaName(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void SetSchemaName(int arg0, string arg1);
+        void SetSchemaName(int arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setSearchable(int,boolean)"/>
         /// </summary>
@@ -147,9 +147,9 @@ namespace Javax.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setTableName(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        void SetTableName(int arg0, string arg1);
+        void SetTableName(int arg0, Java.Lang.String arg1);
 
         #endregion
 
@@ -205,9 +205,9 @@ namespace Javax.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setCatalogName(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void SetCatalogName(int arg0, string arg1)
+        public void SetCatalogName(int arg0, Java.Lang.String arg1)
         {
             IExecute("setCatalogName", arg0, arg1);
         }
@@ -234,9 +234,9 @@ namespace Javax.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setColumnLabel(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void SetColumnLabel(int arg0, string arg1)
+        public void SetColumnLabel(int arg0, Java.Lang.String arg1)
         {
             IExecute("setColumnLabel", arg0, arg1);
         }
@@ -244,9 +244,9 @@ namespace Javax.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setColumnName(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void SetColumnName(int arg0, string arg1)
+        public void SetColumnName(int arg0, Java.Lang.String arg1)
         {
             IExecute("setColumnName", arg0, arg1);
         }
@@ -264,9 +264,9 @@ namespace Javax.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setColumnTypeName(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void SetColumnTypeName(int arg0, string arg1)
+        public void SetColumnTypeName(int arg0, Java.Lang.String arg1)
         {
             IExecute("setColumnTypeName", arg0, arg1);
         }
@@ -314,9 +314,9 @@ namespace Javax.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setSchemaName(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void SetSchemaName(int arg0, string arg1)
+        public void SetSchemaName(int arg0, Java.Lang.String arg1)
         {
             IExecute("setSchemaName", arg0, arg1);
         }
@@ -344,9 +344,9 @@ namespace Javax.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setTableName(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public void SetTableName(int arg0, string arg1)
+        public void SetTableName(int arg0, Java.Lang.String arg1)
         {
             IExecute("setTableName", arg0, arg1);
         }

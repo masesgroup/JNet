@@ -54,9 +54,9 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getCode()"/> 
         /// </summary>
-        public string Code
+        public Java.Lang.String Code
         {
-            get { return IExecute<string>("getCode"); }
+            get { return IExecute<Java.Lang.String>("getCode"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getColumnNumber()"/> 
@@ -111,10 +111,10 @@ namespace Javax.Tools
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getMessage(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetMessage(Java.Util.Locale arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMessage(Java.Util.Locale arg0)
         {
-            return IExecute<string>("getMessage", arg0);
+            return IExecute<Java.Lang.String>("getMessage", arg0);
         }
 
         #endregion
@@ -169,9 +169,9 @@ namespace Javax.Tools
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Javax.Tools.Diagnostic.Kind"/></returns>
-            public static Javax.Tools.Diagnostic.Kind ValueOf(string arg0)
+            public static Javax.Tools.Diagnostic.Kind ValueOf(Java.Lang.String arg0)
             {
                 return SExecute<Javax.Tools.Diagnostic.Kind>(LocalBridgeClazz, "valueOf", arg0);
             }
@@ -216,7 +216,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getCode()"/> 
         /// </summary>
-        string Code { get; }
+        Java.Lang.String Code { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getColumnNumber()"/> 
         /// </summary>
@@ -249,8 +249,8 @@ namespace Javax.Tools
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getMessage(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="string"/></returns>
-        string GetMessage(Java.Util.Locale arg0);
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        Java.Lang.String GetMessage(Java.Util.Locale arg0);
 
         #endregion
 
@@ -295,9 +295,9 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getCode()"/> 
         /// </summary>
-        public string Code
+        public Java.Lang.String Code
         {
-            get { return IExecute<string>("getCode"); }
+            get { return IExecute<Java.Lang.String>("getCode"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getColumnNumber()"/> 
@@ -352,10 +352,10 @@ namespace Javax.Tools
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getMessage(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetMessage(Java.Util.Locale arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMessage(Java.Util.Locale arg0)
         {
-            return IExecute<string>("getMessage", arg0);
+            return IExecute<Java.Lang.String>("getMessage", arg0);
         }
 
         #endregion

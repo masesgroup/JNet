@@ -76,10 +76,10 @@ namespace Java.Net.Http
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#method()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        public string Method()
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String Method()
         {
-            return IExecute<string>("method");
+            return IExecute<Java.Lang.String>("method");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#headers()"/>
@@ -268,19 +268,19 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofString(java.lang.String,java.nio.charset.Charset)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
             /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
-            public static Java.Net.Http.HttpRequest.BodyPublisher OfString(string arg0, Java.Nio.Charset.Charset arg1)
+            public static Java.Net.Http.HttpRequest.BodyPublisher OfString(Java.Lang.String arg0, Java.Nio.Charset.Charset arg1)
             {
                 return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>(LocalBridgeClazz, "ofString", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofString(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
-            public static Java.Net.Http.HttpRequest.BodyPublisher OfString(string arg0)
+            public static Java.Net.Http.HttpRequest.BodyPublisher OfString(Java.Lang.String arg0)
             {
                 return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>(LocalBridgeClazz, "ofString", arg0);
             }
@@ -367,29 +367,29 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#header(java.lang.String,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
-            /// <param name="arg1"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
-            public Java.Net.Http.HttpRequest.Builder Header(string arg0, string arg1)
+            public Java.Net.Http.HttpRequest.Builder Header(Java.Lang.String arg0, Java.Lang.String arg1)
             {
                 return IExecute<Java.Net.Http.HttpRequest.Builder>("header", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#headers(java.lang.String[])"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
-            public Java.Net.Http.HttpRequest.Builder Headers(params string[] arg0)
+            public Java.Net.Http.HttpRequest.Builder Headers(params Java.Lang.String[] arg0)
             {
                 if (arg0.Length == 0) return IExecute<Java.Net.Http.HttpRequest.Builder>("headers"); else return IExecute<Java.Net.Http.HttpRequest.Builder>("headers", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#method(java.lang.String,java.net.http.HttpRequest.BodyPublisher)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></param>
             /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
-            public Java.Net.Http.HttpRequest.Builder Method(string arg0, Java.Net.Http.HttpRequest.BodyPublisher arg1)
+            public Java.Net.Http.HttpRequest.Builder Method(Java.Lang.String arg0, Java.Net.Http.HttpRequest.BodyPublisher arg1)
             {
                 return IExecute<Java.Net.Http.HttpRequest.Builder>("method", arg0, arg1);
             }
@@ -414,10 +414,10 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#setHeader(java.lang.String,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
-            /// <param name="arg1"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
-            public Java.Net.Http.HttpRequest.Builder SetHeader(string arg0, string arg1)
+            public Java.Net.Http.HttpRequest.Builder SetHeader(Java.Lang.String arg0, Java.Lang.String arg1)
             {
                 return IExecute<Java.Net.Http.HttpRequest.Builder>("setHeader", arg0, arg1);
             }

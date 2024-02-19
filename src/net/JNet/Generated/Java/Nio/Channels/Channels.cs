@@ -81,9 +81,9 @@ namespace Java.Nio.Channels
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newReader(java.nio.channels.ReadableByteChannel,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.ReadableByteChannel"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Io.Reader"/></returns>
-        public static Java.Io.Reader NewReader(Java.Nio.Channels.ReadableByteChannel arg0, string arg1)
+        public static Java.Io.Reader NewReader(Java.Nio.Channels.ReadableByteChannel arg0, Java.Lang.String arg1)
         {
             return SExecute<Java.Io.Reader>(LocalBridgeClazz, "newReader", arg0, arg1);
         }
@@ -112,9 +112,9 @@ namespace Java.Nio.Channels
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newWriter(java.nio.channels.WritableByteChannel,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.WritableByteChannel"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Io.Writer"/></returns>
-        public static Java.Io.Writer NewWriter(Java.Nio.Channels.WritableByteChannel arg0, string arg1)
+        public static Java.Io.Writer NewWriter(Java.Nio.Channels.WritableByteChannel arg0, Java.Lang.String arg1)
         {
             return SExecute<Java.Io.Writer>(LocalBridgeClazz, "newWriter", arg0, arg1);
         }

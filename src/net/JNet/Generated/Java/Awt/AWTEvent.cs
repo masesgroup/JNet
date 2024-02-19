@@ -185,10 +185,10 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#paramString()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        public string ParamString()
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String ParamString()
         {
-            return IExecute<string>("paramString");
+            return IExecute<Java.Lang.String>("paramString");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#setSource(java.lang.Object)"/>

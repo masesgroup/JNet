@@ -37,23 +37,23 @@ namespace Java.Util.Spi
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.PrintWriter"/></param>
         /// <param name="arg1"><see cref="Java.Io.PrintWriter"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        int Run(Java.Io.PrintWriter arg0, Java.Io.PrintWriter arg1, params string[] arg2);
+        int Run(Java.Io.PrintWriter arg0, Java.Io.PrintWriter arg1, params Java.Lang.String[] arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html#name()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        string Name();
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        Java.Lang.String Name();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html#run(java.io.PrintStream,java.io.PrintStream,java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
         /// <param name="arg1"><see cref="Java.Io.PrintStream"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        int Run(Java.Io.PrintStream arg0, Java.Io.PrintStream arg1, params string[] arg2);
+        int Run(Java.Io.PrintStream arg0, Java.Io.PrintStream arg1, params Java.Lang.String[] arg2);
 
         #endregion
 
@@ -84,9 +84,9 @@ namespace Java.Util.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html#findFirst(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Optional"/></returns>
-        public static Java.Util.Optional<Java.Util.Spi.ToolProvider> FindFirst(string arg0)
+        public static Java.Util.Optional<Java.Util.Spi.ToolProvider> FindFirst(Java.Lang.String arg0)
         {
             return SExecute<Java.Util.Optional<Java.Util.Spi.ToolProvider>>(LocalBridgeClazz, "findFirst", arg0);
         }
@@ -99,9 +99,9 @@ namespace Java.Util.Spi
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.PrintWriter"/></param>
         /// <param name="arg1"><see cref="Java.Io.PrintWriter"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        public int Run(Java.Io.PrintWriter arg0, Java.Io.PrintWriter arg1, params string[] arg2)
+        public int Run(Java.Io.PrintWriter arg0, Java.Io.PrintWriter arg1, params Java.Lang.String[] arg2)
         {
             if (arg2.Length == 0) return IExecute<int>("run", arg0, arg1); else return IExecute<int>("run", arg0, arg1, arg2);
         }
@@ -109,19 +109,19 @@ namespace Java.Util.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html#name()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        public string Name()
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String Name()
         {
-            return IExecute<string>("name");
+            return IExecute<Java.Lang.String>("name");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html#run(java.io.PrintStream,java.io.PrintStream,java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
         /// <param name="arg1"><see cref="Java.Io.PrintStream"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        public int Run(Java.Io.PrintStream arg0, Java.Io.PrintStream arg1, params string[] arg2)
+        public int Run(Java.Io.PrintStream arg0, Java.Io.PrintStream arg1, params Java.Lang.String[] arg2)
         {
             if (arg2.Length == 0) return IExecute<int>("run", arg0, arg1); else return IExecute<int>("run", arg0, arg1, arg2);
         }

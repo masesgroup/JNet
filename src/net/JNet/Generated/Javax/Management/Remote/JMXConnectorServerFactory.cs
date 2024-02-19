@@ -40,26 +40,26 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerFactory.html#DEFAULT_CLASS_LOADER"/>
         /// </summary>
-        public static string DEFAULT_CLASS_LOADER { get { if (!_DEFAULT_CLASS_LOADERReady) { _DEFAULT_CLASS_LOADERContent = SGetField<string>(LocalBridgeClazz, "DEFAULT_CLASS_LOADER"); _DEFAULT_CLASS_LOADERReady = true; } return _DEFAULT_CLASS_LOADERContent; } }
-        private static string _DEFAULT_CLASS_LOADERContent = default;
+        public static Java.Lang.String DEFAULT_CLASS_LOADER { get { if (!_DEFAULT_CLASS_LOADERReady) { _DEFAULT_CLASS_LOADERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DEFAULT_CLASS_LOADER"); _DEFAULT_CLASS_LOADERReady = true; } return _DEFAULT_CLASS_LOADERContent; } }
+        private static Java.Lang.String _DEFAULT_CLASS_LOADERContent = default;
         private static bool _DEFAULT_CLASS_LOADERReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerFactory.html#DEFAULT_CLASS_LOADER_NAME"/>
         /// </summary>
-        public static string DEFAULT_CLASS_LOADER_NAME { get { if (!_DEFAULT_CLASS_LOADER_NAMEReady) { _DEFAULT_CLASS_LOADER_NAMEContent = SGetField<string>(LocalBridgeClazz, "DEFAULT_CLASS_LOADER_NAME"); _DEFAULT_CLASS_LOADER_NAMEReady = true; } return _DEFAULT_CLASS_LOADER_NAMEContent; } }
-        private static string _DEFAULT_CLASS_LOADER_NAMEContent = default;
+        public static Java.Lang.String DEFAULT_CLASS_LOADER_NAME { get { if (!_DEFAULT_CLASS_LOADER_NAMEReady) { _DEFAULT_CLASS_LOADER_NAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DEFAULT_CLASS_LOADER_NAME"); _DEFAULT_CLASS_LOADER_NAMEReady = true; } return _DEFAULT_CLASS_LOADER_NAMEContent; } }
+        private static Java.Lang.String _DEFAULT_CLASS_LOADER_NAMEContent = default;
         private static bool _DEFAULT_CLASS_LOADER_NAMEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerFactory.html#PROTOCOL_PROVIDER_CLASS_LOADER"/>
         /// </summary>
-        public static string PROTOCOL_PROVIDER_CLASS_LOADER { get { if (!_PROTOCOL_PROVIDER_CLASS_LOADERReady) { _PROTOCOL_PROVIDER_CLASS_LOADERContent = SGetField<string>(LocalBridgeClazz, "PROTOCOL_PROVIDER_CLASS_LOADER"); _PROTOCOL_PROVIDER_CLASS_LOADERReady = true; } return _PROTOCOL_PROVIDER_CLASS_LOADERContent; } }
-        private static string _PROTOCOL_PROVIDER_CLASS_LOADERContent = default;
+        public static Java.Lang.String PROTOCOL_PROVIDER_CLASS_LOADER { get { if (!_PROTOCOL_PROVIDER_CLASS_LOADERReady) { _PROTOCOL_PROVIDER_CLASS_LOADERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PROTOCOL_PROVIDER_CLASS_LOADER"); _PROTOCOL_PROVIDER_CLASS_LOADERReady = true; } return _PROTOCOL_PROVIDER_CLASS_LOADERContent; } }
+        private static Java.Lang.String _PROTOCOL_PROVIDER_CLASS_LOADERContent = default;
         private static bool _PROTOCOL_PROVIDER_CLASS_LOADERReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerFactory.html#PROTOCOL_PROVIDER_PACKAGES"/>
         /// </summary>
-        public static string PROTOCOL_PROVIDER_PACKAGES { get { if (!_PROTOCOL_PROVIDER_PACKAGESReady) { _PROTOCOL_PROVIDER_PACKAGESContent = SGetField<string>(LocalBridgeClazz, "PROTOCOL_PROVIDER_PACKAGES"); _PROTOCOL_PROVIDER_PACKAGESReady = true; } return _PROTOCOL_PROVIDER_PACKAGESContent; } }
-        private static string _PROTOCOL_PROVIDER_PACKAGESContent = default;
+        public static Java.Lang.String PROTOCOL_PROVIDER_PACKAGES { get { if (!_PROTOCOL_PROVIDER_PACKAGESReady) { _PROTOCOL_PROVIDER_PACKAGESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PROTOCOL_PROVIDER_PACKAGES"); _PROTOCOL_PROVIDER_PACKAGESReady = true; } return _PROTOCOL_PROVIDER_PACKAGESContent; } }
+        private static Java.Lang.String _PROTOCOL_PROVIDER_PACKAGESContent = default;
         private static bool _PROTOCOL_PROVIDER_PACKAGESReady = false; // this is used because in case of generics 
 
         #endregion
@@ -73,7 +73,7 @@ namespace Javax.Management.Remote
         /// <param name="arg2"><see cref="Javax.Management.MBeanServer"/></param>
         /// <returns><see cref="Javax.Management.Remote.JMXConnectorServer"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Javax.Management.Remote.JMXConnectorServer NewJMXConnectorServer(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<string, object> arg1, Javax.Management.MBeanServer arg2)
+        public static Javax.Management.Remote.JMXConnectorServer NewJMXConnectorServer(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<Java.Lang.String, object> arg1, Javax.Management.MBeanServer arg2)
         {
             return SExecute<Javax.Management.Remote.JMXConnectorServer>(LocalBridgeClazz, "newJMXConnectorServer", arg0, arg1, arg2);
         }

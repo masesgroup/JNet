@@ -58,9 +58,9 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/LinkOption.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Nio.File.LinkOption"/></returns>
-        public static Java.Nio.File.LinkOption ValueOf(string arg0)
+        public static Java.Nio.File.LinkOption ValueOf(Java.Lang.String arg0)
         {
             return SExecute<Java.Nio.File.LinkOption>(LocalBridgeClazz, "valueOf", arg0);
         }

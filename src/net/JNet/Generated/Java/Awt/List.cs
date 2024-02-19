@@ -96,9 +96,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getItems()"/> 
         /// </summary>
-        public string[] Items
+        public Java.Lang.String[] Items
         {
-            get { return IExecuteArray<string>("getItems"); }
+            get { return IExecuteArray<Java.Lang.String>("getItems"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getRows()"/> 
@@ -124,16 +124,16 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getSelectedItem()"/> 
         /// </summary>
-        public string SelectedItem
+        public Java.Lang.String SelectedItem
         {
-            get { return IExecute<string>("getSelectedItem"); }
+            get { return IExecute<Java.Lang.String>("getSelectedItem"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getSelectedItems()"/> 
         /// </summary>
-        public string[] SelectedItems
+        public Java.Lang.String[] SelectedItems
         {
-            get { return IExecuteArray<string>("getSelectedItems"); }
+            get { return IExecuteArray<Java.Lang.String>("getSelectedItems"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getSelectedObjects()"/> 
@@ -189,10 +189,10 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getItem(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetItem(int arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetItem(int arg0)
         {
-            return IExecute<string>("getItem", arg0);
+            return IExecute<Java.Lang.String>("getItem", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#addActionListener(java.awt.event.ActionListener)"/>
@@ -229,8 +229,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#remove(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public void Remove(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void Remove(Java.Lang.String arg0)
         {
             IExecute("remove", arg0);
         }
@@ -253,26 +253,26 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#replaceItem(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        public void ReplaceItem(string arg0, int arg1)
+        public void ReplaceItem(Java.Lang.String arg0, int arg1)
         {
             IExecute("replaceItem", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#add(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        public void Add(string arg0, int arg1)
+        public void Add(Java.Lang.String arg0, int arg1)
         {
             IExecute("add", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#add(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public void Add(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void Add(Java.Lang.String arg0)
         {
             IExecute("add", arg0);
         }

@@ -35,7 +35,7 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Comment.html#getText()"/> 
         /// </summary>
-        string Text { get; }
+        Java.Lang.String Text { get; }
 
         #endregion
 
@@ -70,9 +70,9 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Comment.html#getText()"/> 
         /// </summary>
-        public string Text
+        public Java.Lang.String Text
         {
-            get { return IExecute<string>("getText"); }
+            get { return IExecute<Java.Lang.String>("getText"); }
         }
 
         #endregion

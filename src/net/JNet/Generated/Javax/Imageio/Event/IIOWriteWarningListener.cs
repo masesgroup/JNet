@@ -37,8 +37,8 @@ namespace Javax.Imageio.Event
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
-        void WarningOccurred(Javax.Imageio.ImageWriter arg0, int arg1, string arg2);
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        void WarningOccurred(Javax.Imageio.ImageWriter arg0, int arg1, Java.Lang.String arg2);
 
         #endregion
 
@@ -83,12 +83,12 @@ namespace Javax.Imageio.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteWarningListener.html#warningOccurred(javax.imageio.ImageWriter,int,java.lang.String)"/>
         /// </summary>
         /// <remarks>If <see cref="OnWarningOccurred"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Imageio.ImageWriter, int, string> OnWarningOccurred { get; set; } = null;
+        public System.Action<Javax.Imageio.ImageWriter, int, Java.Lang.String> OnWarningOccurred { get; set; } = null;
 
         void WarningOccurredEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
         {
             var methodToExecute = (OnWarningOccurred != null) ? OnWarningOccurred : WarningOccurred;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<string>(1));
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<Java.Lang.String>(1));
         }
 
         /// <summary>
@@ -96,8 +96,8 @@ namespace Javax.Imageio.Event
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
-        public virtual void WarningOccurred(Javax.Imageio.ImageWriter arg0, int arg1, string arg2)
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        public virtual void WarningOccurred(Javax.Imageio.ImageWriter arg0, int arg1, Java.Lang.String arg2)
         {
             
         }

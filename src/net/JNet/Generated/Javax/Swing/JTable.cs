@@ -713,10 +713,10 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getColumnName(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetColumnName(int arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetColumnName(int arg0)
         {
-            return IExecute<string>("getColumnName", arg0);
+            return IExecute<Java.Lang.String>("getColumnName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getCellEditor(int,int)"/>
@@ -1130,9 +1130,9 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.PrintMode.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Javax.Swing.JTable.PrintMode"/></returns>
-            public static Javax.Swing.JTable.PrintMode ValueOf(string arg0)
+            public static Javax.Swing.JTable.PrintMode ValueOf(Java.Lang.String arg0)
             {
                 return SExecute<Javax.Swing.JTable.PrintMode>(LocalBridgeClazz, "valueOf", arg0);
             }

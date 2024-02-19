@@ -299,36 +299,36 @@ namespace Java.Lang
             /// </summary>
 
             /// <returns><see cref="Java.Util.Optional"/></returns>
-            public Java.Util.Optional<string[]> Arguments()
+            public Java.Util.Optional<Java.Lang.String[]> Arguments()
             {
-                return IExecute<Java.Util.Optional<string[]>>("arguments");
+                return IExecute<Java.Util.Optional<Java.Lang.String[]>>("arguments");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.Info.html#command()"/>
             /// </summary>
 
             /// <returns><see cref="Java.Util.Optional"/></returns>
-            public Java.Util.Optional<string> Command()
+            public Java.Util.Optional<Java.Lang.String> Command()
             {
-                return IExecute<Java.Util.Optional<string>>("command");
+                return IExecute<Java.Util.Optional<Java.Lang.String>>("command");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.Info.html#commandLine()"/>
             /// </summary>
 
             /// <returns><see cref="Java.Util.Optional"/></returns>
-            public Java.Util.Optional<string> CommandLine()
+            public Java.Util.Optional<Java.Lang.String> CommandLine()
             {
-                return IExecute<Java.Util.Optional<string>>("commandLine");
+                return IExecute<Java.Util.Optional<Java.Lang.String>>("commandLine");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.Info.html#user()"/>
             /// </summary>
 
             /// <returns><see cref="Java.Util.Optional"/></returns>
-            public Java.Util.Optional<string> User()
+            public Java.Util.Optional<Java.Lang.String> User()
             {
-                return IExecute<Java.Util.Optional<string>>("user");
+                return IExecute<Java.Util.Optional<Java.Lang.String>>("user");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.Info.html#totalCpuDuration()"/>

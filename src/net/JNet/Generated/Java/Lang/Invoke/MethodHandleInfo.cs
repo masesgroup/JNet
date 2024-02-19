@@ -47,7 +47,7 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#getName()"/> 
         /// </summary>
-        string Name { get; }
+        Java.Lang.String Name { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#getReferenceKind()"/> 
         /// </summary>
@@ -151,22 +151,22 @@ namespace Java.Lang.Invoke
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#referenceKindToString(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string ReferenceKindToString(int arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String ReferenceKindToString(int arg0)
         {
-            return SExecute<string>(LocalBridgeClazz, "referenceKindToString", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "referenceKindToString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#toString(int,java.lang.Class,java.lang.String,java.lang.invoke.MethodType)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="Java.Lang.Invoke.MethodType"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string ToString(int arg0, Java.Lang.Class arg1, string arg2, Java.Lang.Invoke.MethodType arg3)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String ToString(int arg0, Java.Lang.Class arg1, Java.Lang.String arg2, Java.Lang.Invoke.MethodType arg3)
         {
-            return SExecute<string>(LocalBridgeClazz, "toString", arg0, arg1, arg2, arg3);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", arg0, arg1, arg2, arg3);
         }
 
         #endregion
@@ -196,9 +196,9 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#getName()"/> 
         /// </summary>
-        public string Name
+        public Java.Lang.String Name
         {
-            get { return IExecute<string>("getName"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#getReferenceKind()"/> 

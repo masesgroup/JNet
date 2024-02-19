@@ -35,10 +35,10 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Event.HyperlinkEvent.EventType"/></param>
         /// <param name="arg2"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg3"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         /// <param name="arg4"><see cref="Javax.Swing.Text.Element"/></param>
         /// <param name="arg5"><see cref="Java.Awt.EventNs.InputEvent"/></param>
-        public HyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, string arg3, Javax.Swing.Text.Element arg4, Java.Awt.EventNs.InputEvent arg5)
+        public HyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3, Javax.Swing.Text.Element arg4, Java.Awt.EventNs.InputEvent arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
@@ -48,9 +48,9 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Event.HyperlinkEvent.EventType"/></param>
         /// <param name="arg2"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg3"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         /// <param name="arg4"><see cref="Javax.Swing.Text.Element"/></param>
-        public HyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, string arg3, Javax.Swing.Text.Element arg4)
+        public HyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3, Javax.Swing.Text.Element arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
@@ -60,8 +60,8 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Event.HyperlinkEvent.EventType"/></param>
         /// <param name="arg2"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg3"><see cref="string"/></param>
-        public HyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, string arg3)
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        public HyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
@@ -94,9 +94,9 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkEvent.html#getDescription()"/> 
         /// </summary>
-        public string Description
+        public Java.Lang.String Description
         {
-            get { return IExecute<string>("getDescription"); }
+            get { return IExecute<Java.Lang.String>("getDescription"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkEvent.html#getEventType()"/> 

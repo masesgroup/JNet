@@ -49,19 +49,19 @@ namespace Javax.Swing.Plaf
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/FileChooserUI.html#getApproveButtonText(javax.swing.JFileChooser)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetApproveButtonText(Javax.Swing.JFileChooser arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetApproveButtonText(Javax.Swing.JFileChooser arg0)
         {
-            return IExecute<string>("getApproveButtonText", arg0);
+            return IExecute<Java.Lang.String>("getApproveButtonText", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/FileChooserUI.html#getDialogTitle(javax.swing.JFileChooser)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetDialogTitle(Javax.Swing.JFileChooser arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDialogTitle(Javax.Swing.JFileChooser arg0)
         {
-            return IExecute<string>("getDialogTitle", arg0);
+            return IExecute<Java.Lang.String>("getDialogTitle", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/FileChooserUI.html#getAcceptAllFileFilter(javax.swing.JFileChooser)"/>

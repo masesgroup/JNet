@@ -55,16 +55,16 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getMaxLabel()"/> 
         /// </summary>
-        public string MaxLabel
+        public Java.Lang.String MaxLabel
         {
-            get { return IExecute<string>("getMaxLabel"); }
+            get { return IExecute<Java.Lang.String>("getMaxLabel"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getMidLabel()"/> 
         /// </summary>
-        public string MidLabel
+        public Java.Lang.String MidLabel
         {
-            get { return IExecute<string>("getMidLabel"); }
+            get { return IExecute<Java.Lang.String>("getMidLabel"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getMinimum()"/> 
@@ -76,9 +76,9 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getMinLabel()"/> 
         /// </summary>
-        public string MinLabel
+        public Java.Lang.String MinLabel
         {
-            get { return IExecute<string>("getMinLabel"); }
+            get { return IExecute<Java.Lang.String>("getMinLabel"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getPrecision()"/> 
@@ -90,9 +90,9 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getUnits()"/> 
         /// </summary>
-        public string Units
+        public Java.Lang.String Units
         {
-            get { return IExecute<string>("getUnits"); }
+            get { return IExecute<Java.Lang.String>("getUnits"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getUpdatePeriod()"/> 

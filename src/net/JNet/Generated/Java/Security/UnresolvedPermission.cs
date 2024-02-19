@@ -32,11 +32,11 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/UnresolvedPermission.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,java.security.cert.Certificate[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="Java.Security.Cert.Certificate"/></param>
-        public UnresolvedPermission(string arg0, string arg1, string arg2, Java.Security.Cert.Certificate[] arg3)
+        public UnresolvedPermission(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Security.Cert.Certificate[] arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
@@ -59,9 +59,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/UnresolvedPermission.html#getUnresolvedActions()"/> 
         /// </summary>
-        public string UnresolvedActions
+        public Java.Lang.String UnresolvedActions
         {
-            get { return IExecute<string>("getUnresolvedActions"); }
+            get { return IExecute<Java.Lang.String>("getUnresolvedActions"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/UnresolvedPermission.html#getUnresolvedCerts()"/> 
@@ -73,16 +73,16 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/UnresolvedPermission.html#getUnresolvedName()"/> 
         /// </summary>
-        public string UnresolvedName
+        public Java.Lang.String UnresolvedName
         {
-            get { return IExecute<string>("getUnresolvedName"); }
+            get { return IExecute<Java.Lang.String>("getUnresolvedName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/UnresolvedPermission.html#getUnresolvedType()"/> 
         /// </summary>
-        public string UnresolvedType
+        public Java.Lang.String UnresolvedType
         {
-            get { return IExecute<string>("getUnresolvedType"); }
+            get { return IExecute<Java.Lang.String>("getUnresolvedType"); }
         }
 
         #endregion

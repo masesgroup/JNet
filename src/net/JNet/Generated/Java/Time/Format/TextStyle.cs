@@ -80,9 +80,9 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Time.Format.TextStyle"/></returns>
-        public static Java.Time.Format.TextStyle ValueOf(string arg0)
+        public static Java.Time.Format.TextStyle ValueOf(Java.Lang.String arg0)
         {
             return SExecute<Java.Time.Format.TextStyle>(LocalBridgeClazz, "valueOf", arg0);
         }

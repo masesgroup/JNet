@@ -136,30 +136,30 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#getValue(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetValue(string arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetValue(Java.Lang.String arg0)
         {
-            return IExecute<string>("getValue", arg0);
+            return IExecute<Java.Lang.String>("getValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#getValue(java.util.jar.Attributes.Name)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Jar.Attributes.Name"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string GetValue(Java.Util.Jar.Attributes.Name arg0)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetValue(Java.Util.Jar.Attributes.Name arg0)
         {
-            return IExecute<string>("getValue", arg0);
+            return IExecute<Java.Lang.String>("getValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#putValue(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see cref="string"/></returns>
-        public string PutValue(string arg0, string arg1)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String PutValue(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<string>("putValue", arg0, arg1);
+            return IExecute<Java.Lang.String>("putValue", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#values()"/>
@@ -214,8 +214,8 @@ namespace Java.Util.Jar
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
-            public Name(string arg0)
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            public Name(Java.Lang.String arg0)
                 : base(arg0)
             {
             }

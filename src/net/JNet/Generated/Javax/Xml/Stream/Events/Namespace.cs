@@ -35,11 +35,11 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Namespace.html#getNamespaceURI()"/> 
         /// </summary>
-        string NamespaceURI { get; }
+        Java.Lang.String NamespaceURI { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Namespace.html#getPrefix()"/> 
         /// </summary>
-        string Prefix { get; }
+        Java.Lang.String Prefix { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Namespace.html#isDefaultNamespaceDeclaration()"/>
         /// </summary>
@@ -80,16 +80,16 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Namespace.html#getNamespaceURI()"/> 
         /// </summary>
-        public string NamespaceURI
+        public Java.Lang.String NamespaceURI
         {
-            get { return IExecute<string>("getNamespaceURI"); }
+            get { return IExecute<Java.Lang.String>("getNamespaceURI"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Namespace.html#getPrefix()"/> 
         /// </summary>
-        public string Prefix
+        public Java.Lang.String Prefix
         {
-            get { return IExecute<string>("getPrefix"); }
+            get { return IExecute<Java.Lang.String>("getPrefix"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Namespace.html#isDefaultNamespaceDeclaration()"/>

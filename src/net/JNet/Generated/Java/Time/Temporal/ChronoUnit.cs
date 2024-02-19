@@ -144,9 +144,9 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Time.Temporal.ChronoUnit"/></returns>
-        public static Java.Time.Temporal.ChronoUnit ValueOf(string arg0)
+        public static Java.Time.Temporal.ChronoUnit ValueOf(Java.Lang.String arg0)
         {
             return SExecute<Java.Time.Temporal.ChronoUnit>(LocalBridgeClazz, "valueOf", arg0);
         }

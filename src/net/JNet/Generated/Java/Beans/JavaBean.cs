@@ -36,20 +36,20 @@ namespace Java.Beans
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#defaultEventSet()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        string DefaultEventSet();
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        Java.Lang.String DefaultEventSet();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#defaultProperty()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        string DefaultProperty();
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        Java.Lang.String DefaultProperty();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#description()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        string Description();
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        Java.Lang.String Description();
 
         #endregion
 
@@ -85,28 +85,28 @@ namespace Java.Beans
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#defaultEventSet()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        public string DefaultEventSet()
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String DefaultEventSet()
         {
-            return IExecute<string>("defaultEventSet");
+            return IExecute<Java.Lang.String>("defaultEventSet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#defaultProperty()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        public string DefaultProperty()
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String DefaultProperty()
         {
-            return IExecute<string>("defaultProperty");
+            return IExecute<Java.Lang.String>("defaultProperty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#description()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        public string Description()
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String Description()
         {
-            return IExecute<string>("description");
+            return IExecute<Java.Lang.String>("description");
         }
 
         #endregion

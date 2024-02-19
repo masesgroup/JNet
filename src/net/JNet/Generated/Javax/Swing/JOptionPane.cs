@@ -172,68 +172,68 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#ICON_PROPERTY"/>
         /// </summary>
-        public static string ICON_PROPERTY { get { if (!_ICON_PROPERTYReady) { _ICON_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "ICON_PROPERTY"); _ICON_PROPERTYReady = true; } return _ICON_PROPERTYContent; } }
-        private static string _ICON_PROPERTYContent = default;
+        public static Java.Lang.String ICON_PROPERTY { get { if (!_ICON_PROPERTYReady) { _ICON_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ICON_PROPERTY"); _ICON_PROPERTYReady = true; } return _ICON_PROPERTYContent; } }
+        private static Java.Lang.String _ICON_PROPERTYContent = default;
         private static bool _ICON_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#INITIAL_SELECTION_VALUE_PROPERTY"/>
         /// </summary>
-        public static string INITIAL_SELECTION_VALUE_PROPERTY { get { if (!_INITIAL_SELECTION_VALUE_PROPERTYReady) { _INITIAL_SELECTION_VALUE_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "INITIAL_SELECTION_VALUE_PROPERTY"); _INITIAL_SELECTION_VALUE_PROPERTYReady = true; } return _INITIAL_SELECTION_VALUE_PROPERTYContent; } }
-        private static string _INITIAL_SELECTION_VALUE_PROPERTYContent = default;
+        public static Java.Lang.String INITIAL_SELECTION_VALUE_PROPERTY { get { if (!_INITIAL_SELECTION_VALUE_PROPERTYReady) { _INITIAL_SELECTION_VALUE_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "INITIAL_SELECTION_VALUE_PROPERTY"); _INITIAL_SELECTION_VALUE_PROPERTYReady = true; } return _INITIAL_SELECTION_VALUE_PROPERTYContent; } }
+        private static Java.Lang.String _INITIAL_SELECTION_VALUE_PROPERTYContent = default;
         private static bool _INITIAL_SELECTION_VALUE_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#INITIAL_VALUE_PROPERTY"/>
         /// </summary>
-        public static string INITIAL_VALUE_PROPERTY { get { if (!_INITIAL_VALUE_PROPERTYReady) { _INITIAL_VALUE_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "INITIAL_VALUE_PROPERTY"); _INITIAL_VALUE_PROPERTYReady = true; } return _INITIAL_VALUE_PROPERTYContent; } }
-        private static string _INITIAL_VALUE_PROPERTYContent = default;
+        public static Java.Lang.String INITIAL_VALUE_PROPERTY { get { if (!_INITIAL_VALUE_PROPERTYReady) { _INITIAL_VALUE_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "INITIAL_VALUE_PROPERTY"); _INITIAL_VALUE_PROPERTYReady = true; } return _INITIAL_VALUE_PROPERTYContent; } }
+        private static Java.Lang.String _INITIAL_VALUE_PROPERTYContent = default;
         private static bool _INITIAL_VALUE_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#INPUT_VALUE_PROPERTY"/>
         /// </summary>
-        public static string INPUT_VALUE_PROPERTY { get { if (!_INPUT_VALUE_PROPERTYReady) { _INPUT_VALUE_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "INPUT_VALUE_PROPERTY"); _INPUT_VALUE_PROPERTYReady = true; } return _INPUT_VALUE_PROPERTYContent; } }
-        private static string _INPUT_VALUE_PROPERTYContent = default;
+        public static Java.Lang.String INPUT_VALUE_PROPERTY { get { if (!_INPUT_VALUE_PROPERTYReady) { _INPUT_VALUE_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "INPUT_VALUE_PROPERTY"); _INPUT_VALUE_PROPERTYReady = true; } return _INPUT_VALUE_PROPERTYContent; } }
+        private static Java.Lang.String _INPUT_VALUE_PROPERTYContent = default;
         private static bool _INPUT_VALUE_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#MESSAGE_PROPERTY"/>
         /// </summary>
-        public static string MESSAGE_PROPERTY { get { if (!_MESSAGE_PROPERTYReady) { _MESSAGE_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "MESSAGE_PROPERTY"); _MESSAGE_PROPERTYReady = true; } return _MESSAGE_PROPERTYContent; } }
-        private static string _MESSAGE_PROPERTYContent = default;
+        public static Java.Lang.String MESSAGE_PROPERTY { get { if (!_MESSAGE_PROPERTYReady) { _MESSAGE_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MESSAGE_PROPERTY"); _MESSAGE_PROPERTYReady = true; } return _MESSAGE_PROPERTYContent; } }
+        private static Java.Lang.String _MESSAGE_PROPERTYContent = default;
         private static bool _MESSAGE_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#MESSAGE_TYPE_PROPERTY"/>
         /// </summary>
-        public static string MESSAGE_TYPE_PROPERTY { get { if (!_MESSAGE_TYPE_PROPERTYReady) { _MESSAGE_TYPE_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "MESSAGE_TYPE_PROPERTY"); _MESSAGE_TYPE_PROPERTYReady = true; } return _MESSAGE_TYPE_PROPERTYContent; } }
-        private static string _MESSAGE_TYPE_PROPERTYContent = default;
+        public static Java.Lang.String MESSAGE_TYPE_PROPERTY { get { if (!_MESSAGE_TYPE_PROPERTYReady) { _MESSAGE_TYPE_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MESSAGE_TYPE_PROPERTY"); _MESSAGE_TYPE_PROPERTYReady = true; } return _MESSAGE_TYPE_PROPERTYContent; } }
+        private static Java.Lang.String _MESSAGE_TYPE_PROPERTYContent = default;
         private static bool _MESSAGE_TYPE_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#OPTION_TYPE_PROPERTY"/>
         /// </summary>
-        public static string OPTION_TYPE_PROPERTY { get { if (!_OPTION_TYPE_PROPERTYReady) { _OPTION_TYPE_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "OPTION_TYPE_PROPERTY"); _OPTION_TYPE_PROPERTYReady = true; } return _OPTION_TYPE_PROPERTYContent; } }
-        private static string _OPTION_TYPE_PROPERTYContent = default;
+        public static Java.Lang.String OPTION_TYPE_PROPERTY { get { if (!_OPTION_TYPE_PROPERTYReady) { _OPTION_TYPE_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "OPTION_TYPE_PROPERTY"); _OPTION_TYPE_PROPERTYReady = true; } return _OPTION_TYPE_PROPERTYContent; } }
+        private static Java.Lang.String _OPTION_TYPE_PROPERTYContent = default;
         private static bool _OPTION_TYPE_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#OPTIONS_PROPERTY"/>
         /// </summary>
-        public static string OPTIONS_PROPERTY { get { if (!_OPTIONS_PROPERTYReady) { _OPTIONS_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "OPTIONS_PROPERTY"); _OPTIONS_PROPERTYReady = true; } return _OPTIONS_PROPERTYContent; } }
-        private static string _OPTIONS_PROPERTYContent = default;
+        public static Java.Lang.String OPTIONS_PROPERTY { get { if (!_OPTIONS_PROPERTYReady) { _OPTIONS_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "OPTIONS_PROPERTY"); _OPTIONS_PROPERTYReady = true; } return _OPTIONS_PROPERTYContent; } }
+        private static Java.Lang.String _OPTIONS_PROPERTYContent = default;
         private static bool _OPTIONS_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#SELECTION_VALUES_PROPERTY"/>
         /// </summary>
-        public static string SELECTION_VALUES_PROPERTY { get { if (!_SELECTION_VALUES_PROPERTYReady) { _SELECTION_VALUES_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "SELECTION_VALUES_PROPERTY"); _SELECTION_VALUES_PROPERTYReady = true; } return _SELECTION_VALUES_PROPERTYContent; } }
-        private static string _SELECTION_VALUES_PROPERTYContent = default;
+        public static Java.Lang.String SELECTION_VALUES_PROPERTY { get { if (!_SELECTION_VALUES_PROPERTYReady) { _SELECTION_VALUES_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SELECTION_VALUES_PROPERTY"); _SELECTION_VALUES_PROPERTYReady = true; } return _SELECTION_VALUES_PROPERTYContent; } }
+        private static Java.Lang.String _SELECTION_VALUES_PROPERTYContent = default;
         private static bool _SELECTION_VALUES_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#VALUE_PROPERTY"/>
         /// </summary>
-        public static string VALUE_PROPERTY { get { if (!_VALUE_PROPERTYReady) { _VALUE_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "VALUE_PROPERTY"); _VALUE_PROPERTYReady = true; } return _VALUE_PROPERTYContent; } }
-        private static string _VALUE_PROPERTYContent = default;
+        public static Java.Lang.String VALUE_PROPERTY { get { if (!_VALUE_PROPERTYReady) { _VALUE_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "VALUE_PROPERTY"); _VALUE_PROPERTYReady = true; } return _VALUE_PROPERTYContent; } }
+        private static Java.Lang.String _VALUE_PROPERTYContent = default;
         private static bool _VALUE_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#WANTS_INPUT_PROPERTY"/>
         /// </summary>
-        public static string WANTS_INPUT_PROPERTY { get { if (!_WANTS_INPUT_PROPERTYReady) { _WANTS_INPUT_PROPERTYContent = SGetField<string>(LocalBridgeClazz, "WANTS_INPUT_PROPERTY"); _WANTS_INPUT_PROPERTYReady = true; } return _WANTS_INPUT_PROPERTYContent; } }
-        private static string _WANTS_INPUT_PROPERTYContent = default;
+        public static Java.Lang.String WANTS_INPUT_PROPERTY { get { if (!_WANTS_INPUT_PROPERTYReady) { _WANTS_INPUT_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WANTS_INPUT_PROPERTY"); _WANTS_INPUT_PROPERTYReady = true; } return _WANTS_INPUT_PROPERTYContent; } }
+        private static Java.Lang.String _WANTS_INPUT_PROPERTYContent = default;
         private static bool _WANTS_INPUT_PROPERTYReady = false; // this is used because in case of generics 
 
         #endregion
@@ -251,13 +251,13 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="Javax.Swing.Icon"/></param>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
-        public static int ShowConfirmDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3, int arg4, Javax.Swing.Icon arg5)
+        public static int ShowConfirmDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3, int arg4, Javax.Swing.Icon arg5)
         {
             return SExecute<int>(LocalBridgeClazz, "showConfirmDialog", arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -266,12 +266,12 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
-        public static int ShowConfirmDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3, int arg4)
+        public static int ShowConfirmDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3, int arg4)
         {
             return SExecute<int>(LocalBridgeClazz, "showConfirmDialog", arg0, arg1, arg2, arg3, arg4);
         }
@@ -280,11 +280,11 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
-        public static int ShowConfirmDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3)
+        public static int ShowConfirmDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3)
         {
             return SExecute<int>(LocalBridgeClazz, "showConfirmDialog", arg0, arg1, arg2, arg3);
         }
@@ -304,12 +304,12 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="Javax.Swing.Icon"/></param>
         /// <returns><see cref="int"/></returns>
-        public static int ShowInternalConfirmDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3, int arg4, Javax.Swing.Icon arg5)
+        public static int ShowInternalConfirmDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3, int arg4, Javax.Swing.Icon arg5)
         {
             return SExecute<int>(LocalBridgeClazz, "showInternalConfirmDialog", arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -318,11 +318,11 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        public static int ShowInternalConfirmDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3, int arg4)
+        public static int ShowInternalConfirmDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3, int arg4)
         {
             return SExecute<int>(LocalBridgeClazz, "showInternalConfirmDialog", arg0, arg1, arg2, arg3, arg4);
         }
@@ -331,10 +331,10 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        public static int ShowInternalConfirmDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3)
+        public static int ShowInternalConfirmDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3)
         {
             return SExecute<int>(LocalBridgeClazz, "showInternalConfirmDialog", arg0, arg1, arg2, arg3);
         }
@@ -353,14 +353,14 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="Javax.Swing.Icon"/></param>
         /// <param name="arg6"><see cref="object"/></param>
         /// <param name="arg7"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
-        public static int ShowInternalOptionDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3, int arg4, Javax.Swing.Icon arg5, object[] arg6, object arg7)
+        public static int ShowInternalOptionDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3, int arg4, Javax.Swing.Icon arg5, object[] arg6, object arg7)
         {
             return SExecute<int>(LocalBridgeClazz, "showInternalOptionDialog", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
@@ -369,7 +369,7 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="Javax.Swing.Icon"/></param>
@@ -377,7 +377,7 @@ namespace Javax.Swing
         /// <param name="arg7"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
-        public static int ShowOptionDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3, int arg4, Javax.Swing.Icon arg5, object[] arg6, object arg7)
+        public static int ShowOptionDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3, int arg4, Javax.Swing.Icon arg5, object[] arg6, object arg7)
         {
             return SExecute<int>(LocalBridgeClazz, "showOptionDialog", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
@@ -396,14 +396,14 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Javax.Swing.Icon"/></param>
         /// <param name="arg5"><see cref="object"/></param>
         /// <param name="arg6"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
-        public static object ShowInputDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3, Javax.Swing.Icon arg4, object[] arg5, object arg6)
+        public static object ShowInputDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3, Javax.Swing.Icon arg4, object[] arg5, object arg6)
         {
             return SExecute(LocalBridgeClazz, "showInputDialog", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -412,13 +412,13 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Javax.Swing.Icon"/></param>
         /// <param name="arg5"><see cref="object"/></param>
         /// <param name="arg6"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
-        public static object ShowInternalInputDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3, Javax.Swing.Icon arg4, object[] arg5, object arg6)
+        public static object ShowInternalInputDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3, Javax.Swing.Icon arg4, object[] arg5, object arg6)
         {
             return SExecute(LocalBridgeClazz, "showInternalInputDialog", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -428,76 +428,76 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string ShowInputDialog(Java.Awt.Component arg0, object arg1, object arg2)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String ShowInputDialog(Java.Awt.Component arg0, object arg1, object arg2)
         {
-            return SExecute<string>(LocalBridgeClazz, "showInputDialog", arg0, arg1, arg2);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "showInputDialog", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInputDialog(java.awt.Component,java.lang.Object,java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
-        public static string ShowInputDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3)
+        public static Java.Lang.String ShowInputDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3)
         {
-            return SExecute<string>(LocalBridgeClazz, "showInputDialog", arg0, arg1, arg2, arg3);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "showInputDialog", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInputDialog(java.awt.Component,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
-        public static string ShowInputDialog(Java.Awt.Component arg0, object arg1)
+        public static Java.Lang.String ShowInputDialog(Java.Awt.Component arg0, object arg1)
         {
-            return SExecute<string>(LocalBridgeClazz, "showInputDialog", arg0, arg1);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "showInputDialog", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInputDialog(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string ShowInputDialog(object arg0, object arg1)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String ShowInputDialog(object arg0, object arg1)
         {
-            return SExecute<string>(LocalBridgeClazz, "showInputDialog", arg0, arg1);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "showInputDialog", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInputDialog(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
-        public static string ShowInputDialog(object arg0)
+        public static Java.Lang.String ShowInputDialog(object arg0)
         {
-            return SExecute<string>(LocalBridgeClazz, "showInputDialog", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "showInputDialog", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalInputDialog(java.awt.Component,java.lang.Object,java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string ShowInternalInputDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String ShowInternalInputDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3)
         {
-            return SExecute<string>(LocalBridgeClazz, "showInternalInputDialog", arg0, arg1, arg2, arg3);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "showInternalInputDialog", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalInputDialog(java.awt.Component,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="string"/></returns>
-        public static string ShowInternalInputDialog(Java.Awt.Component arg0, object arg1)
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String ShowInternalInputDialog(Java.Awt.Component arg0, object arg1)
         {
-            return SExecute<string>(LocalBridgeClazz, "showInternalInputDialog", arg0, arg1);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "showInternalInputDialog", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#getDesktopPaneForComponent(java.awt.Component)"/>
@@ -513,10 +513,10 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Javax.Swing.Icon"/></param>
-        public static void ShowInternalMessageDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3, Javax.Swing.Icon arg4)
+        public static void ShowInternalMessageDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3, Javax.Swing.Icon arg4)
         {
             SExecute(LocalBridgeClazz, "showInternalMessageDialog", arg0, arg1, arg2, arg3, arg4);
         }
@@ -525,9 +525,9 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        public static void ShowInternalMessageDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3)
+        public static void ShowInternalMessageDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3)
         {
             SExecute(LocalBridgeClazz, "showInternalMessageDialog", arg0, arg1, arg2, arg3);
         }
@@ -545,11 +545,11 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Javax.Swing.Icon"/></param>
         /// <exception cref="Java.Awt.HeadlessException"/>
-        public static void ShowMessageDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3, Javax.Swing.Icon arg4)
+        public static void ShowMessageDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3, Javax.Swing.Icon arg4)
         {
             SExecute(LocalBridgeClazz, "showMessageDialog", arg0, arg1, arg2, arg3, arg4);
         }
@@ -558,10 +558,10 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <exception cref="Java.Awt.HeadlessException"/>
-        public static void ShowMessageDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3)
+        public static void ShowMessageDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3)
         {
             SExecute(LocalBridgeClazz, "showMessageDialog", arg0, arg1, arg2, arg3);
         }
@@ -667,20 +667,20 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#createDialog(java.awt.Component,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Swing.JDialog"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
-        public Javax.Swing.JDialog CreateDialog(Java.Awt.Component arg0, string arg1)
+        public Javax.Swing.JDialog CreateDialog(Java.Awt.Component arg0, Java.Lang.String arg1)
         {
             return IExecute<Javax.Swing.JDialog>("createDialog", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#createDialog(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Swing.JDialog"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
-        public Javax.Swing.JDialog CreateDialog(string arg0)
+        public Javax.Swing.JDialog CreateDialog(Java.Lang.String arg0)
         {
             return IExecute<Javax.Swing.JDialog>("createDialog", arg0);
         }
@@ -688,9 +688,9 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#createInternalFrame(java.awt.Component,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Swing.JInternalFrame"/></returns>
-        public Javax.Swing.JInternalFrame CreateInternalFrame(Java.Awt.Component arg0, string arg1)
+        public Javax.Swing.JInternalFrame CreateInternalFrame(Java.Awt.Component arg0, Java.Lang.String arg1)
         {
             return IExecute<Javax.Swing.JInternalFrame>("createInternalFrame", arg0, arg1);
         }

@@ -32,11 +32,11 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortResponseControl.html#%3Cinit%3E(java.lang.String,boolean,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <param name="arg2"><see cref="byte"/></param>
         /// <exception cref="Java.Io.IOException"/>
-        public SortResponseControl(string arg0, bool arg1, byte[] arg2)
+        public SortResponseControl(Java.Lang.String arg0, bool arg1, byte[] arg2)
             : base(arg0, arg1, arg2)
         {
         }
@@ -51,8 +51,8 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortResponseControl.html#OID"/>
         /// </summary>
-        public static string OID { get { if (!_OIDReady) { _OIDContent = SGetField<string>(LocalBridgeClazz, "OID"); _OIDReady = true; } return _OIDContent; } }
-        private static string _OIDContent = default;
+        public static Java.Lang.String OID { get { if (!_OIDReady) { _OIDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "OID"); _OIDReady = true; } return _OIDContent; } }
+        private static Java.Lang.String _OIDContent = default;
         private static bool _OIDReady = false; // this is used because in case of generics 
 
         #endregion
@@ -65,9 +65,9 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortResponseControl.html#getAttributeID()"/> 
         /// </summary>
-        public string AttributeID
+        public Java.Lang.String AttributeID
         {
-            get { return IExecute<string>("getAttributeID"); }
+            get { return IExecute<Java.Lang.String>("getAttributeID"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortResponseControl.html#getException()"/> 

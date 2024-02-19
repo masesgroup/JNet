@@ -40,8 +40,8 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#OID"/>
         /// </summary>
-        public static string OID { get { if (!_OIDReady) { _OIDContent = SGetField<string>(LocalBridgeClazz, "OID"); _OIDReady = true; } return _OIDContent; } }
-        private static string _OIDContent = default;
+        public static Java.Lang.String OID { get { if (!_OIDReady) { _OIDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "OID"); _OIDReady = true; } return _OIDContent; } }
+        private static Java.Lang.String _OIDContent = default;
         private static bool _OIDReady = false; // this is used because in case of generics 
 
         #endregion
@@ -61,9 +61,9 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#getID()"/> 
         /// </summary>
-        public string ID
+        public Java.Lang.String ID
         {
-            get { return IExecute<string>("getID"); }
+            get { return IExecute<Java.Lang.String>("getID"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#negotiate()"/>
@@ -97,8 +97,8 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#setEnabledCipherSuites(java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public void SetEnabledCipherSuites(string[] arg0)
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetEnabledCipherSuites(Java.Lang.String[] arg0)
         {
             IExecute("setEnabledCipherSuites", new object[] { arg0 });
         }

@@ -48,32 +48,32 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#BidiElementName"/>
         /// </summary>
-        public static string BidiElementName { get { if (!_BidiElementNameReady) { _BidiElementNameContent = SGetField<string>(LocalBridgeClazz, "BidiElementName"); _BidiElementNameReady = true; } return _BidiElementNameContent; } }
-        private static string _BidiElementNameContent = default;
+        public static Java.Lang.String BidiElementName { get { if (!_BidiElementNameReady) { _BidiElementNameContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "BidiElementName"); _BidiElementNameReady = true; } return _BidiElementNameContent; } }
+        private static Java.Lang.String _BidiElementNameContent = default;
         private static bool _BidiElementNameReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#ContentElementName"/>
         /// </summary>
-        public static string ContentElementName { get { if (!_ContentElementNameReady) { _ContentElementNameContent = SGetField<string>(LocalBridgeClazz, "ContentElementName"); _ContentElementNameReady = true; } return _ContentElementNameContent; } }
-        private static string _ContentElementNameContent = default;
+        public static Java.Lang.String ContentElementName { get { if (!_ContentElementNameReady) { _ContentElementNameContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ContentElementName"); _ContentElementNameReady = true; } return _ContentElementNameContent; } }
+        private static Java.Lang.String _ContentElementNameContent = default;
         private static bool _ContentElementNameReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#ElementNameAttribute"/>
         /// </summary>
-        public static string ElementNameAttribute { get { if (!_ElementNameAttributeReady) { _ElementNameAttributeContent = SGetField<string>(LocalBridgeClazz, "ElementNameAttribute"); _ElementNameAttributeReady = true; } return _ElementNameAttributeContent; } }
-        private static string _ElementNameAttributeContent = default;
+        public static Java.Lang.String ElementNameAttribute { get { if (!_ElementNameAttributeReady) { _ElementNameAttributeContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ElementNameAttribute"); _ElementNameAttributeReady = true; } return _ElementNameAttributeContent; } }
+        private static Java.Lang.String _ElementNameAttributeContent = default;
         private static bool _ElementNameAttributeReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#ParagraphElementName"/>
         /// </summary>
-        public static string ParagraphElementName { get { if (!_ParagraphElementNameReady) { _ParagraphElementNameContent = SGetField<string>(LocalBridgeClazz, "ParagraphElementName"); _ParagraphElementNameReady = true; } return _ParagraphElementNameContent; } }
-        private static string _ParagraphElementNameContent = default;
+        public static Java.Lang.String ParagraphElementName { get { if (!_ParagraphElementNameReady) { _ParagraphElementNameContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ParagraphElementName"); _ParagraphElementNameReady = true; } return _ParagraphElementNameContent; } }
+        private static Java.Lang.String _ParagraphElementNameContent = default;
         private static bool _ParagraphElementNameReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#SectionElementName"/>
         /// </summary>
-        public static string SectionElementName { get { if (!_SectionElementNameReady) { _SectionElementNameContent = SGetField<string>(LocalBridgeClazz, "SectionElementName"); _SectionElementNameReady = true; } return _SectionElementNameContent; } }
-        private static string _SectionElementNameContent = default;
+        public static Java.Lang.String SectionElementName { get { if (!_SectionElementNameReady) { _SectionElementNameContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SectionElementName"); _SectionElementNameReady = true; } return _SectionElementNameContent; } }
+        private static Java.Lang.String _SectionElementNameContent = default;
         private static bool _SectionElementNameReady = false; // this is used because in case of generics 
 
         #endregion
@@ -206,11 +206,11 @@ namespace Javax.Swing.Text
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="string"/></returns>
+        /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
-        public string GetText(int arg0, int arg1)
+        public Java.Lang.String GetText(int arg0, int arg1)
         {
-            return IExecute<string>("getText", arg0, arg1);
+            return IExecute<Java.Lang.String>("getText", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#createPosition(int)"/>
@@ -261,10 +261,10 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#insertString(int,java.lang.String,javax.swing.text.AttributeSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Javax.Swing.Text.AttributeSet"/></param>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
-        public void InsertString(int arg0, string arg1, Javax.Swing.Text.AttributeSet arg2)
+        public void InsertString(int arg0, Java.Lang.String arg1, Javax.Swing.Text.AttributeSet arg2)
         {
             IExecute("insertString", arg0, arg1, arg2);
         }
@@ -307,10 +307,10 @@ namespace Javax.Swing.Text
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="Javax.Swing.Text.AttributeSet"/></param>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
-        public void Replace(int arg0, int arg1, string arg2, Javax.Swing.Text.AttributeSet arg3)
+        public void Replace(int arg0, int arg1, Java.Lang.String arg2, Javax.Swing.Text.AttributeSet arg3)
         {
             IExecute("replace", arg0, arg1, arg2, arg3);
         }
@@ -423,9 +423,9 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getName()"/> 
             /// </summary>
-            public string Name
+            public Java.Lang.String Name
             {
-                get { return IExecute<string>("getName"); }
+                get { return IExecute<Java.Lang.String>("getName"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getParent()"/> 
@@ -816,11 +816,11 @@ namespace Javax.Swing.Text
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="int"/></param>
-            /// <returns><see cref="string"/></returns>
+            /// <returns><see cref="Java.Lang.String"/></returns>
             /// <exception cref="Javax.Swing.Text.BadLocationException"/>
-            public string GetString(int arg0, int arg1)
+            public Java.Lang.String GetString(int arg0, int arg1)
             {
-                return IExecute<string>("getString", arg0, arg1);
+                return IExecute<Java.Lang.String>("getString", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#createPosition(int)"/>
@@ -836,10 +836,10 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#insertString(int,java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
-            /// <param name="arg1"><see cref="string"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Javax.Swing.Undo.UndoableEdit"/></returns>
             /// <exception cref="Javax.Swing.Text.BadLocationException"/>
-            public Javax.Swing.Undo.UndoableEdit InsertString(int arg0, string arg1)
+            public Javax.Swing.Undo.UndoableEdit InsertString(int arg0, Java.Lang.String arg1)
             {
                 return IExecute<Javax.Swing.Undo.UndoableEdit>("insertString", arg0, arg1);
             }

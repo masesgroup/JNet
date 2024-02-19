@@ -36,8 +36,8 @@ namespace Javax.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ConstructorParameters.html#value()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        string[] Value();
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        Java.Lang.String[] Value();
 
         #endregion
 
@@ -73,10 +73,10 @@ namespace Javax.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ConstructorParameters.html#value()"/>
         /// </summary>
 
-        /// <returns><see cref="string"/></returns>
-        public string[] Value()
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] Value()
         {
-            return IExecuteArray<string>("value");
+            return IExecuteArray<Java.Lang.String>("value");
         }
 
         #endregion

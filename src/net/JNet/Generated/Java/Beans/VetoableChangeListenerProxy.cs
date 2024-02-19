@@ -32,9 +32,9 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeListenerProxy.html#%3Cinit%3E(java.lang.String,java.beans.VetoableChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Beans.VetoableChangeListener"/></param>
-        public VetoableChangeListenerProxy(string arg0, Java.Beans.VetoableChangeListener arg1)
+        public VetoableChangeListenerProxy(Java.Lang.String arg0, Java.Beans.VetoableChangeListener arg1)
             : base(arg0, arg1)
         {
         }
@@ -61,9 +61,9 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeListenerProxy.html#getPropertyName()"/> 
         /// </summary>
-        public string PropertyName
+        public Java.Lang.String PropertyName
         {
-            get { return IExecute<string>("getPropertyName"); }
+            get { return IExecute<Java.Lang.String>("getPropertyName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeListenerProxy.html#vetoableChange(java.beans.PropertyChangeEvent)"/>

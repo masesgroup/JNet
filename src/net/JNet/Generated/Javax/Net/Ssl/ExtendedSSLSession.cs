@@ -48,16 +48,16 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/ExtendedSSLSession.html#getLocalSupportedSignatureAlgorithms()"/> 
         /// </summary>
-        public string[] LocalSupportedSignatureAlgorithms
+        public Java.Lang.String[] LocalSupportedSignatureAlgorithms
         {
-            get { return IExecuteArray<string>("getLocalSupportedSignatureAlgorithms"); }
+            get { return IExecuteArray<Java.Lang.String>("getLocalSupportedSignatureAlgorithms"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/ExtendedSSLSession.html#getPeerSupportedSignatureAlgorithms()"/> 
         /// </summary>
-        public string[] PeerSupportedSignatureAlgorithms
+        public Java.Lang.String[] PeerSupportedSignatureAlgorithms
         {
-            get { return IExecuteArray<string>("getPeerSupportedSignatureAlgorithms"); }
+            get { return IExecuteArray<Java.Lang.String>("getPeerSupportedSignatureAlgorithms"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/ExtendedSSLSession.html#getRequestedServerNames()"/> 

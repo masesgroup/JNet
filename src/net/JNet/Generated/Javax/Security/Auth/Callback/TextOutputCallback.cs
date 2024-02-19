@@ -33,8 +33,8 @@ namespace Javax.Security.Auth.Callback
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/TextOutputCallback.html#%3Cinit%3E(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="string"/></param>
-        public TextOutputCallback(int arg0, string arg1)
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public TextOutputCallback(int arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
         }
@@ -83,9 +83,9 @@ namespace Javax.Security.Auth.Callback
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/TextOutputCallback.html#getMessage()"/> 
         /// </summary>
-        public string Message
+        public Java.Lang.String Message
         {
-            get { return IExecute<string>("getMessage"); }
+            get { return IExecute<Java.Lang.String>("getMessage"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/TextOutputCallback.html#getMessageType()"/> 

@@ -35,7 +35,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <param name="arg0"><see cref="Java.Sql.SQLData"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        public SerialStruct(Java.Sql.SQLData arg0, Java.Util.Map<string, Java.Lang.Class> arg1)
+        public SerialStruct(Java.Sql.SQLData arg0, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg1)
             : base(arg0, arg1)
         {
         }
@@ -45,7 +45,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <param name="arg0"><see cref="Java.Sql.Struct"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        public SerialStruct(Java.Sql.Struct arg0, Java.Util.Map<string, Java.Lang.Class> arg1)
+        public SerialStruct(Java.Sql.Struct arg0, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg1)
             : base(arg0, arg1)
         {
         }
@@ -87,9 +87,9 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialStruct.html#getSQLTypeName()"/> 
         /// </summary>
-        public string SQLTypeName
+        public Java.Lang.String SQLTypeName
         {
-            get { return IExecute<string>("getSQLTypeName"); }
+            get { return IExecute<Java.Lang.String>("getSQLTypeName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialStruct.html#getAttributes(java.util.Map)"/>
@@ -97,7 +97,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        public object[] GetAttributes(Java.Util.Map<string, Java.Lang.Class> arg0)
+        public object[] GetAttributes(Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg0)
         {
             return IExecuteArray<object>("getAttributes", arg0);
         }

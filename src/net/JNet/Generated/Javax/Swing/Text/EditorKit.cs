@@ -63,9 +63,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/EditorKit.html#getContentType()"/> 
         /// </summary>
-        public string ContentType
+        public Java.Lang.String ContentType
         {
-            get { return IExecute<string>("getContentType"); }
+            get { return IExecute<Java.Lang.String>("getContentType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/EditorKit.html#getViewFactory()"/> 

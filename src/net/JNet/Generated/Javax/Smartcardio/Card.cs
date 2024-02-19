@@ -62,9 +62,9 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#getProtocol()"/> 
         /// </summary>
-        public string Protocol
+        public Java.Lang.String Protocol
         {
-            get { return IExecute<string>("getProtocol"); }
+            get { return IExecute<Java.Lang.String>("getProtocol"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#transmitControlCommand(int,byte[])"/>

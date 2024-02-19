@@ -68,31 +68,31 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getByAddress(java.lang.String,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
         /// <returns><see cref="Java.Net.InetAddress"/></returns>
         /// <exception cref="Java.Net.UnknownHostException"/>
-        public static Java.Net.InetAddress GetByAddress(string arg0, byte[] arg1)
+        public static Java.Net.InetAddress GetByAddress(Java.Lang.String arg0, byte[] arg1)
         {
             return SExecute<Java.Net.InetAddress>(LocalBridgeClazz, "getByAddress", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getByName(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Net.InetAddress"/></returns>
         /// <exception cref="Java.Net.UnknownHostException"/>
-        public static Java.Net.InetAddress GetByName(string arg0)
+        public static Java.Net.InetAddress GetByName(Java.Lang.String arg0)
         {
             return SExecute<Java.Net.InetAddress>(LocalBridgeClazz, "getByName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getAllByName(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Net.InetAddress"/></returns>
         /// <exception cref="Java.Net.UnknownHostException"/>
-        public static Java.Net.InetAddress[] GetAllByName(string arg0)
+        public static Java.Net.InetAddress[] GetAllByName(Java.Lang.String arg0)
         {
             return SExecuteArray<Java.Net.InetAddress>(LocalBridgeClazz, "getAllByName", arg0);
         }
@@ -110,23 +110,23 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getCanonicalHostName()"/> 
         /// </summary>
-        public string CanonicalHostName
+        public Java.Lang.String CanonicalHostName
         {
-            get { return IExecute<string>("getCanonicalHostName"); }
+            get { return IExecute<Java.Lang.String>("getCanonicalHostName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getHostAddress()"/> 
         /// </summary>
-        public string HostAddress
+        public Java.Lang.String HostAddress
         {
-            get { return IExecute<string>("getHostAddress"); }
+            get { return IExecute<Java.Lang.String>("getHostAddress"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getHostName()"/> 
         /// </summary>
-        public string HostName
+        public Java.Lang.String HostName
         {
-            get { return IExecute<string>("getHostName"); }
+            get { return IExecute<Java.Lang.String>("getHostName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isAnyLocalAddress()"/>

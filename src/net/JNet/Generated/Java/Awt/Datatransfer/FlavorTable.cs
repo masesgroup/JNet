@@ -35,15 +35,15 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/FlavorTable.html#getFlavorsForNative(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
-        Java.Util.List<Java.Awt.Datatransfer.DataFlavor> GetFlavorsForNative(string arg0);
+        Java.Util.List<Java.Awt.Datatransfer.DataFlavor> GetFlavorsForNative(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/FlavorTable.html#getNativesForFlavor(java.awt.datatransfer.DataFlavor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
-        Java.Util.List<string> GetNativesForFlavor(Java.Awt.Datatransfer.DataFlavor arg0);
+        Java.Util.List<Java.Lang.String> GetNativesForFlavor(Java.Awt.Datatransfer.DataFlavor arg0);
 
         #endregion
 
@@ -78,9 +78,9 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/FlavorTable.html#getFlavorsForNative(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
-        public Java.Util.List<Java.Awt.Datatransfer.DataFlavor> GetFlavorsForNative(string arg0)
+        public Java.Util.List<Java.Awt.Datatransfer.DataFlavor> GetFlavorsForNative(Java.Lang.String arg0)
         {
             return IExecute<Java.Util.List<Java.Awt.Datatransfer.DataFlavor>>("getFlavorsForNative", arg0);
         }
@@ -89,9 +89,9 @@ namespace Java.Awt.Datatransfer
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
-        public Java.Util.List<string> GetNativesForFlavor(Java.Awt.Datatransfer.DataFlavor arg0)
+        public Java.Util.List<Java.Lang.String> GetNativesForFlavor(Java.Awt.Datatransfer.DataFlavor arg0)
         {
-            return IExecute<Java.Util.List<string>>("getNativesForFlavor", arg0);
+            return IExecute<Java.Util.List<Java.Lang.String>>("getNativesForFlavor", arg0);
         }
 
         #endregion

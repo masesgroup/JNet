@@ -39,11 +39,11 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#getAttributes()"/> 
         /// </summary>
-        Java.Util.Map<string, object> Attributes { get; }
+        Java.Util.Map<Java.Lang.String, object> Attributes { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#getConnectionIds()"/> 
         /// </summary>
-        string[] ConnectionIds { get; }
+        Java.Lang.String[] ConnectionIds { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#isActive()"/>
         /// </summary>
@@ -56,7 +56,7 @@ namespace Javax.Management.Remote
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="Javax.Management.Remote.JMXConnector"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        Javax.Management.Remote.JMXConnector ToJMXConnector(Java.Util.Map<string, object> arg0);
+        Javax.Management.Remote.JMXConnector ToJMXConnector(Java.Util.Map<Java.Lang.String, object> arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#setMBeanServerForwarder(javax.management.remote.MBeanServerForwarder)"/>
         /// </summary>
@@ -115,16 +115,16 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#getAttributes()"/> 
         /// </summary>
-        public Java.Util.Map<string, object> Attributes
+        public Java.Util.Map<Java.Lang.String, object> Attributes
         {
-            get { return IExecute<Java.Util.Map<string, object>>("getAttributes"); }
+            get { return IExecute<Java.Util.Map<Java.Lang.String, object>>("getAttributes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#getConnectionIds()"/> 
         /// </summary>
-        public string[] ConnectionIds
+        public Java.Lang.String[] ConnectionIds
         {
-            get { return IExecuteArray<string>("getConnectionIds"); }
+            get { return IExecuteArray<Java.Lang.String>("getConnectionIds"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#isActive()"/>
@@ -141,7 +141,7 @@ namespace Javax.Management.Remote
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="Javax.Management.Remote.JMXConnector"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Javax.Management.Remote.JMXConnector ToJMXConnector(Java.Util.Map<string, object> arg0)
+        public Javax.Management.Remote.JMXConnector ToJMXConnector(Java.Util.Map<Java.Lang.String, object> arg0)
         {
             return IExecute<Javax.Management.Remote.JMXConnector>("toJMXConnector", arg0);
         }

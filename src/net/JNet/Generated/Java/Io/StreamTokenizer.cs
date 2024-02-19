@@ -56,7 +56,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#sval"/>
         /// </summary>
-        public string sval { get { return IGetField<string>("sval"); } set { ISetField("sval", value); } }
+        public Java.Lang.String sval { get { return IGetField<Java.Lang.String>("sval"); } set { ISetField("sval", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#TT_EOF"/>
         /// </summary>

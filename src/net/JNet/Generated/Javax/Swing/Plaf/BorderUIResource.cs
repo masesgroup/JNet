@@ -479,8 +479,8 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="string"/></param>
-            public TitledBorderUIResource(string arg0)
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            public TitledBorderUIResource(Java.Lang.String arg0)
                 : base(arg0)
             {
             }
@@ -488,12 +488,12 @@ namespace Javax.Swing.Plaf
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html#%3Cinit%3E(javax.swing.border.Border,java.lang.String,int,int,java.awt.Font,java.awt.Color)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
-            /// <param name="arg1"><see cref="string"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             /// <param name="arg2"><see cref="int"/></param>
             /// <param name="arg3"><see cref="int"/></param>
             /// <param name="arg4"><see cref="Java.Awt.Font"/></param>
             /// <param name="arg5"><see cref="Java.Awt.Color"/></param>
-            public TitledBorderUIResource(Javax.Swing.Border.Border arg0, string arg1, int arg2, int arg3, Java.Awt.Font arg4, Java.Awt.Color arg5)
+            public TitledBorderUIResource(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Awt.Font arg4, Java.Awt.Color arg5)
                 : base(arg0, arg1, arg2, arg3, arg4, arg5)
             {
             }
@@ -501,11 +501,11 @@ namespace Javax.Swing.Plaf
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html#%3Cinit%3E(javax.swing.border.Border,java.lang.String,int,int,java.awt.Font)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
-            /// <param name="arg1"><see cref="string"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             /// <param name="arg2"><see cref="int"/></param>
             /// <param name="arg3"><see cref="int"/></param>
             /// <param name="arg4"><see cref="Java.Awt.Font"/></param>
-            public TitledBorderUIResource(Javax.Swing.Border.Border arg0, string arg1, int arg2, int arg3, Java.Awt.Font arg4)
+            public TitledBorderUIResource(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Awt.Font arg4)
                 : base(arg0, arg1, arg2, arg3, arg4)
             {
             }
@@ -513,10 +513,10 @@ namespace Javax.Swing.Plaf
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html#%3Cinit%3E(javax.swing.border.Border,java.lang.String,int,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
-            /// <param name="arg1"><see cref="string"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             /// <param name="arg2"><see cref="int"/></param>
             /// <param name="arg3"><see cref="int"/></param>
-            public TitledBorderUIResource(Javax.Swing.Border.Border arg0, string arg1, int arg2, int arg3)
+            public TitledBorderUIResource(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3)
                 : base(arg0, arg1, arg2, arg3)
             {
             }
@@ -524,8 +524,8 @@ namespace Javax.Swing.Plaf
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html#%3Cinit%3E(javax.swing.border.Border,java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
-            /// <param name="arg1"><see cref="string"/></param>
-            public TitledBorderUIResource(Javax.Swing.Border.Border arg0, string arg1)
+            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+            public TitledBorderUIResource(Javax.Swing.Border.Border arg0, Java.Lang.String arg1)
                 : base(arg0, arg1)
             {
             }
