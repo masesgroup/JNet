@@ -55,6 +55,7 @@ namespace MASES.JNetReflector
         public const string AvoidCSharpGenericClauseDefinition = "AvoidCSharpGenericClauseDefinition";
         public const string DisableGenericsInNonGenericClasses = "DisableGenericsInNonGenericClasses";
         public const string DisableGenerics = "DisableGenerics";
+        public const string UseDirectDotNetString = "UseDirectDotNetString";
         public const string CreateInterfaceInheritance = "CreateInterfaceInheritance";
         public const string DisableInterfaceMethodGeneration = "DisableInterfaceMethodGeneration";
         public const string UseDotNetNullable = "UseDotNetNullable";

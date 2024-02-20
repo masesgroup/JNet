@@ -55,7 +55,7 @@ namespace MASES.JNetPS.Cmdlet.JMX
             JMXConnector result;
             if (UseNewJMXConnector.IsPresent)
             {
-                result = JMXConnectorFactory.NewJMXConnector(ServiceURL, Environment != null ? Environment.ToMap() : Collections.EmptyMap<string, object>());
+                result = JMXConnectorFactory.NewJMXConnector(ServiceURL, Environment != null ? Environment.ToMap((o) => { return (Java.Lang.String)o; }, (o) => { return o; }) : Collections.EmptyMap<Java.Lang.String, object>());
             }
             else
             {
@@ -65,7 +65,7 @@ namespace MASES.JNetPS.Cmdlet.JMX
                 }
                 else
                 {
-                    result = JMXConnectorFactory.Connect(ServiceURL, Environment.ToMap());
+                    result = JMXConnectorFactory.Connect(ServiceURL, Environment.ToMap((o) => { return (Java.Lang.String)o; }, (o) => { return o; }));
                 }
             }
 

@@ -17,6 +17,7 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
+using System;
 
 namespace Java.Lang
 {
@@ -25,10 +26,18 @@ namespace Java.Lang
         /// <summary>
         /// Converter from <see cref="Character"/> to <see cref="char"/>
         /// </summary>
-        public static implicit operator char(Character b) => b.CharValue();
+        public static implicit operator char(Character b) => b != null ? b.CharValue() : default;
+        /// <summary>
+        /// Converter from <see cref="Character"/> to <see cref="Nullable{Char}"/>
+        /// </summary>
+        public static implicit operator char?(Character b) => b != null ? b.CharValue() : null;
         /// <summary>
         /// Converter from <see cref="char"/> to <see cref="Character"/>
         /// </summary>
         public static implicit operator Character(char b) => ValueOf(b);
+        /// <summary>
+        /// Converter from <see cref="Nullable{Char}"/> to <see cref="Character"/>
+        /// </summary>
+        public static implicit operator Character(char? b) => b.HasValue ? ValueOf(b.Value) : null;
     }
 }

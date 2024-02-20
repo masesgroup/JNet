@@ -98,7 +98,7 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class String : JVMBridgeBase&lt;String&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class String : JVMBridgeBase&lt;String&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IComparable&lt;String&gt;, IEquatable&lt;String&gt;</code></pre>
   </div>
 
 
@@ -124,6 +124,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
       <div><span class="xref">IJVMBridgeBaseStatic</span></div>
       <div><span class="xref">IJVMBridgeBase</span></div>
       <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;</div>
     </dd>
   </dl>
 
@@ -445,6 +447,39 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <a id="Java_Lang_String__ctor_" data-uid="Java.Lang.String.#ctor*"></a>
 
+  <h3 id="Java_Lang_String__ctor_Java_Lang_String_" data-uid="Java.Lang.String.#ctor(Java.Lang.String)">
+  String(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#%3Cinit%3E(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#%3Cinit%3E(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_String__ctor_" data-uid="Java.Lang.String.#ctor*"></a>
+
   <h3 id="Java_Lang_String__ctor_Java_Lang_StringBuffer_" data-uid="Java.Lang.String.#ctor(Java.Lang.StringBuffer)">
   String(StringBuffer)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L132"><i class="bi bi-code-slash"></i></a>
@@ -544,6 +579,47 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <a id="Java_Lang_String__ctor_" data-uid="Java.Lang.String.#ctor*"></a>
 
+  <h3 id="Java_Lang_String__ctor_System_Byte___Java_Lang_String_" data-uid="Java.Lang.String.#ctor(System.Byte[],Java.Lang.String)">
+  String(byte[], String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#%3Cinit%3E(byte[],java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#%3Cinit%3E(byte[],java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String(byte[] arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.UnsupportedEncodingException.html">UnsupportedEncodingException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Lang_String__ctor_" data-uid="Java.Lang.String.#ctor*"></a>
+
   <h3 id="Java_Lang_String__ctor_System_Byte___Java_Nio_Charset_Charset_" data-uid="Java.Lang.String.#ctor(System.Byte[],Java.Nio.Charset.Charset)">
   String(byte[], Charset)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L80"><i class="bi bi-code-slash"></i></a>
@@ -619,6 +695,53 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <a id="Java_Lang_String__ctor_" data-uid="Java.Lang.String.#ctor*"></a>
 
+  <h3 id="Java_Lang_String__ctor_System_Byte___System_Int32_System_Int32_Java_Lang_String_" data-uid="Java.Lang.String.#ctor(System.Byte[],System.Int32,System.Int32,Java.Lang.String)">
+  String(byte[], int, int, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#%3Cinit%3E(byte[],int,int,java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#%3Cinit%3E(byte[],int,int,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String(byte[] arg0, int arg1, int arg2, String arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.UnsupportedEncodingException.html">UnsupportedEncodingException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Lang_String__ctor_" data-uid="Java.Lang.String.#ctor*"></a>
+
   <h3 id="Java_Lang_String__ctor_System_Byte___System_Int32_System_Int32_Java_Nio_Charset_Charset_" data-uid="Java.Lang.String.#ctor(System.Byte[],System.Int32,System.Int32,Java.Nio.Charset.Charset)">
   String(byte[], int, int, Charset)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L51"><i class="bi bi-code-slash"></i></a>
@@ -656,94 +779,6 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
 
 
-
-
-
-  <a id="Java_Lang_String__ctor_" data-uid="Java.Lang.String.#ctor*"></a>
-
-  <h3 id="Java_Lang_String__ctor_System_Byte___System_Int32_System_Int32_System_String_" data-uid="Java.Lang.String.#ctor(System.Byte[],System.Int32,System.Int32,System.String)">
-  String(byte[], int, int, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L40"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#%3Cinit%3E(byte[],int,int,java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#%3Cinit%3E(byte[],int,int,java.lang.String)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public String(byte[] arg0, int arg1, int arg2, string arg3)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
-</dd>
-    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
-</dd>
-    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
-</dd>
-    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Java.Io.UnsupportedEncodingException.html">UnsupportedEncodingException</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-  <a id="Java_Lang_String__ctor_" data-uid="Java.Lang.String.#ctor*"></a>
-
-  <h3 id="Java_Lang_String__ctor_System_Byte___System_String_" data-uid="Java.Lang.String.#ctor(System.Byte[],System.String)">
-  String(byte[], string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L71"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#%3Cinit%3E(byte[],java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#%3Cinit%3E(byte[],java.lang.String)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public String(byte[] arg0, string arg1)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
-</dd>
-    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Java.Io.UnsupportedEncodingException.html">UnsupportedEncodingException</a></dt>
-    <dd></dd>
-  </dl>
 
 
 
@@ -894,7 +929,7 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Java_Lang_String__ctor_System_String_" data-uid="Java.Lang.String.#ctor(System.String)">
   String(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/String.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#%3Cinit%3E(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#%3Cinit%3E(java.lang.String)</a></p>
@@ -1110,6 +1145,45 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_String_Item_" data-uid="Java.Lang.String.Item*"></a>
+
+  <h3 id="Java_Lang_String_Item_System_Int32_" data-uid="Java.Lang.String.Item(System.Int32)">
+  this[int]
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/String.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the character at <code class="paramref">index</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char this[int index] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index of the character to return</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a> at <code class="paramref">index</code></p>
+</dd>
   </dl>
 
 
@@ -1350,6 +1424,45 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <a id="Java_Lang_String_CompareTo_" data-uid="Java.Lang.String.CompareTo*"></a>
 
+  <h3 id="Java_Lang_String_CompareTo_Java_Lang_String_" data-uid="Java.Lang.String.CompareTo(Java.Lang.String)">
+  CompareTo(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L519"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#compareTo(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#compareTo(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_String_CompareTo_" data-uid="Java.Lang.String.CompareTo*"></a>
+
   <h3 id="Java_Lang_String_CompareTo_System_Object_" data-uid="Java.Lang.String.CompareTo(System.Object)">
   CompareTo(object)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L510"><i class="bi bi-code-slash"></i></a>
@@ -1387,49 +1500,10 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
 
 
-  <a id="Java_Lang_String_CompareTo_" data-uid="Java.Lang.String.CompareTo*"></a>
-
-  <h3 id="Java_Lang_String_CompareTo_System_String_" data-uid="Java.Lang.String.CompareTo(System.String)">
-  CompareTo(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L519"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#compareTo(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#compareTo(java.lang.String)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int CompareTo(string arg0)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
   <a id="Java_Lang_String_CompareToIgnoreCase_" data-uid="Java.Lang.String.CompareToIgnoreCase*"></a>
 
-  <h3 id="Java_Lang_String_CompareToIgnoreCase_System_String_" data-uid="Java.Lang.String.CompareToIgnoreCase(System.String)">
-  CompareToIgnoreCase(string)
+  <h3 id="Java_Lang_String_CompareToIgnoreCase_Java_Lang_String_" data-uid="Java.Lang.String.CompareToIgnoreCase(Java.Lang.String)">
+  CompareToIgnoreCase(String)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L528"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -1438,13 +1512,13 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int CompareToIgnoreCase(string arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public int CompareToIgnoreCase(String arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -1467,8 +1541,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <a id="Java_Lang_String_Concat_" data-uid="Java.Lang.String.Concat*"></a>
 
-  <h3 id="Java_Lang_String_Concat_System_String_" data-uid="Java.Lang.String.Concat(System.String)">
-  Concat(string)
+  <h3 id="Java_Lang_String_Concat_Java_Lang_String_" data-uid="Java.Lang.String.Concat(Java.Lang.String)">
+  Concat(String)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L642"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -1477,20 +1551,20 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Concat(string arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public String Concat(String arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -1633,7 +1707,7 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string CopyValueOf(char[] arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static String CopyValueOf(char[] arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1645,8 +1719,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -1672,7 +1746,7 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string CopyValueOf(char[] arg0, int arg1, int arg2)</code></pre>
+    <pre><code class="lang-csharp hljs">public static String CopyValueOf(char[] arg0, int arg1, int arg2)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1690,8 +1764,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -1707,8 +1781,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <a id="Java_Lang_String_EndsWith_" data-uid="Java.Lang.String.EndsWith*"></a>
 
-  <h3 id="Java_Lang_String_EndsWith_System_String_" data-uid="Java.Lang.String.EndsWith(System.String)">
-  EndsWith(string)
+  <h3 id="Java_Lang_String_EndsWith_Java_Lang_String_" data-uid="Java.Lang.String.EndsWith(Java.Lang.String)">
+  EndsWith(String)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L356"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -1717,13 +1791,13 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool EndsWith(string arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool EndsWith(String arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -1746,8 +1820,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <a id="Java_Lang_String_EqualsIgnoreCase_" data-uid="Java.Lang.String.EqualsIgnoreCase*"></a>
 
-  <h3 id="Java_Lang_String_EqualsIgnoreCase_System_String_" data-uid="Java.Lang.String.EqualsIgnoreCase(System.String)">
-  EqualsIgnoreCase(string)
+  <h3 id="Java_Lang_String_EqualsIgnoreCase_Java_Lang_String_" data-uid="Java.Lang.String.EqualsIgnoreCase(Java.Lang.String)">
+  EqualsIgnoreCase(String)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L365"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -1756,13 +1830,13 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool EqualsIgnoreCase(string arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool EqualsIgnoreCase(String arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -1785,36 +1859,33 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <a id="Java_Lang_String_Format_" data-uid="Java.Lang.String.Format*"></a>
 
-  <h3 id="Java_Lang_String_Format_Java_Util_Locale_System_String_System_Object___" data-uid="Java.Lang.String.Format(Java.Util.Locale,System.String,System.Object[])">
-  Format(Locale, string, params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Java_Lang_String_Format_Java_Lang_String_System_Object___" data-uid="Java.Lang.String.Format(Java.Lang.String,System.Object[])">
+  Format(String, params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L194"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#format(java.util.Locale,java.lang.String,java.lang.Object[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#format(java.util.Locale,java.lang.String,java.lang.Object[])</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#format(java.lang.String,java.lang.Object[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#format(java.lang.String,java.lang.Object[])</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string Format(Locale arg0, string arg1, params object[] arg2)</code></pre>
+    <pre><code class="lang-csharp hljs">public static String Format(String arg0, params object[] arg1)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="Java.Util.Locale.html">Locale</a></dt>
-    <dd><p><a class="xref" href="Java.Util.Locale.html">Locale</a></p>
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
-    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
-</dd>
-    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
     <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -1830,33 +1901,36 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <a id="Java_Lang_String_Format_" data-uid="Java.Lang.String.Format*"></a>
 
-  <h3 id="Java_Lang_String_Format_System_String_System_Object___" data-uid="Java.Lang.String.Format(System.String,System.Object[])">
-  Format(string, params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Java_Lang_String_Format_Java_Util_Locale_Java_Lang_String_System_Object___" data-uid="Java.Lang.String.Format(Java.Util.Locale,Java.Lang.String,System.Object[])">
+  Format(Locale, String, params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L205"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#format(java.lang.String,java.lang.Object[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#format(java.lang.String,java.lang.Object[])</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#format(java.util.Locale,java.lang.String,java.lang.Object[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#format(java.util.Locale,java.lang.String,java.lang.Object[])</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string Format(string arg0, params object[] arg1)</code></pre>
+    <pre><code class="lang-csharp hljs">public static String Format(Locale arg0, String arg1, params object[] arg2)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Locale.html">Locale</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Locale.html">Locale</a></p>
 </dd>
-    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
     <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -1867,6 +1941,50 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
 
 
+
+
+
+  <a id="Java_Lang_String_GetBytes_" data-uid="Java.Lang.String.GetBytes*"></a>
+
+  <h3 id="Java_Lang_String_GetBytes_Java_Lang_String_" data-uid="Java.Lang.String.GetBytes(Java.Lang.String)">
+  GetBytes(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L446"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#getBytes(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#getBytes(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetBytes(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.UnsupportedEncodingException.html">UnsupportedEncodingException</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -1909,50 +2027,6 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
 
 
-  <a id="Java_Lang_String_GetBytes_" data-uid="Java.Lang.String.GetBytes*"></a>
-
-  <h3 id="Java_Lang_String_GetBytes_System_String_" data-uid="Java.Lang.String.GetBytes(System.String)">
-  GetBytes(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L446"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#getBytes(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#getBytes(java.lang.String)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public byte[] GetBytes(string arg0)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Java.Io.UnsupportedEncodingException.html">UnsupportedEncodingException</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
   <a id="Java_Lang_String_GetChars_" data-uid="Java.Lang.String.GetChars*"></a>
 
   <h3 id="Java_Lang_String_GetChars_System_Int32_System_Int32_System_Char___System_Int32_" data-uid="Java.Lang.String.GetChars(System.Int32,System.Int32,System.Char[],System.Int32)">
@@ -1984,6 +2058,87 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 </dd>
   </dl>
 
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_String_IndexOf_" data-uid="Java.Lang.String.IndexOf*"></a>
+
+  <h3 id="Java_Lang_String_IndexOf_Java_Lang_String_" data-uid="Java.Lang.String.IndexOf(Java.Lang.String)">
+  IndexOf(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L566"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#indexOf(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#indexOf(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_String_IndexOf_" data-uid="Java.Lang.String.IndexOf*"></a>
+
+  <h3 id="Java_Lang_String_IndexOf_Java_Lang_String_System_Int32_" data-uid="Java.Lang.String.IndexOf(Java.Lang.String,System.Int32)">
+  IndexOf(String, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L557"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#indexOf(java.lang.String,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#indexOf(java.lang.String,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(String arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
 
 
 
@@ -2076,87 +2231,6 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
 
 
-  <a id="Java_Lang_String_IndexOf_" data-uid="Java.Lang.String.IndexOf*"></a>
-
-  <h3 id="Java_Lang_String_IndexOf_System_String_" data-uid="Java.Lang.String.IndexOf(System.String)">
-  IndexOf(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L566"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#indexOf(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#indexOf(java.lang.String)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int IndexOf(string arg0)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Java_Lang_String_IndexOf_" data-uid="Java.Lang.String.IndexOf*"></a>
-
-  <h3 id="Java_Lang_String_IndexOf_System_String_System_Int32_" data-uid="Java.Lang.String.IndexOf(System.String,System.Int32)">
-  IndexOf(string, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L557"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#indexOf(java.lang.String,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#indexOf(java.lang.String,int)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int IndexOf(string arg0, int arg1)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
-</dd>
-    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
   <a id="Java_Lang_String_Intern_" data-uid="Java.Lang.String.Intern*"></a>
 
   <h3 id="Java_Lang_String_Intern" data-uid="Java.Lang.String.Intern">
@@ -2169,14 +2243,14 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Intern()</code></pre>
+    <pre><code class="lang-csharp hljs">public String Intern()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -2268,7 +2342,7 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string Join(CharSequence arg0, params CharSequence[] arg1)</code></pre>
+    <pre><code class="lang-csharp hljs">public static String Join(CharSequence arg0, params CharSequence[] arg1)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -2283,8 +2357,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -2310,7 +2384,7 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string Join&lt;Arg1ExtendsJava_Lang_CharSequence&gt;(CharSequence arg0, Iterable&lt;Arg1ExtendsJava_Lang_CharSequence&gt; arg1) where Arg1ExtendsJava_Lang_CharSequence : CharSequence</code></pre>
+    <pre><code class="lang-csharp hljs">public static String Join&lt;Arg1ExtendsJava_Lang_CharSequence&gt;(CharSequence arg0, Iterable&lt;Arg1ExtendsJava_Lang_CharSequence&gt; arg1) where Arg1ExtendsJava_Lang_CharSequence : CharSequence</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -2325,8 +2399,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -2336,6 +2410,87 @@ Class String  <a class="header-action link-secondary" title="View source" href="
     <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
 </dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_String_LastIndexOf_" data-uid="Java.Lang.String.LastIndexOf*"></a>
+
+  <h3 id="Java_Lang_String_LastIndexOf_Java_Lang_String_" data-uid="Java.Lang.String.LastIndexOf(Java.Lang.String)">
+  LastIndexOf(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L604"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#lastIndexOf(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#lastIndexOf(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LastIndexOf(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_String_LastIndexOf_" data-uid="Java.Lang.String.LastIndexOf*"></a>
+
+  <h3 id="Java_Lang_String_LastIndexOf_Java_Lang_String_System_Int32_" data-uid="Java.Lang.String.LastIndexOf(Java.Lang.String,System.Int32)">
+  LastIndexOf(String, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L595"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#lastIndexOf(java.lang.String,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#lastIndexOf(java.lang.String,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LastIndexOf(String arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
 
 
 
@@ -2427,87 +2582,6 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
 
 
-  <a id="Java_Lang_String_LastIndexOf_" data-uid="Java.Lang.String.LastIndexOf*"></a>
-
-  <h3 id="Java_Lang_String_LastIndexOf_System_String_" data-uid="Java.Lang.String.LastIndexOf(System.String)">
-  LastIndexOf(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L604"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#lastIndexOf(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#lastIndexOf(java.lang.String)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int LastIndexOf(string arg0)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Java_Lang_String_LastIndexOf_" data-uid="Java.Lang.String.LastIndexOf*"></a>
-
-  <h3 id="Java_Lang_String_LastIndexOf_System_String_System_Int32_" data-uid="Java.Lang.String.LastIndexOf(System.String,System.Int32)">
-  LastIndexOf(string, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L595"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#lastIndexOf(java.lang.String,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#lastIndexOf(java.lang.String,int)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int LastIndexOf(string arg0, int arg1)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
-</dd>
-    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
   <a id="Java_Lang_String_Length_" data-uid="Java.Lang.String.Length*"></a>
 
   <h3 id="Java_Lang_String_Length" data-uid="Java.Lang.String.Length">
@@ -2553,13 +2627,13 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Stream&lt;string&gt; Lines()</code></pre>
+    <pre><code class="lang-csharp hljs">public Stream&lt;String&gt; Lines()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Java.Util.Stream.Stream-1.html">Stream</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dt><a class="xref" href="Java.Util.Stream.Stream-1.html">Stream</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
     <dd><p><a class="xref" href="Java.Util.Stream.Stream.html">Stream</a></p>
 </dd>
   </dl>
@@ -2576,8 +2650,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <a id="Java_Lang_String_Matches_" data-uid="Java.Lang.String.Matches*"></a>
 
-  <h3 id="Java_Lang_String_Matches_System_String_" data-uid="Java.Lang.String.Matches(System.String)">
-  Matches(string)
+  <h3 id="Java_Lang_String_Matches_Java_Lang_String_" data-uid="Java.Lang.String.Matches(Java.Lang.String)">
+  Matches(String)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L392"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -2586,13 +2660,13 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Matches(string arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool Matches(String arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -2657,8 +2731,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <a id="Java_Lang_String_RegionMatches_" data-uid="Java.Lang.String.RegionMatches*"></a>
 
-  <h3 id="Java_Lang_String_RegionMatches_System_Boolean_System_Int32_System_String_System_Int32_System_Int32_" data-uid="Java.Lang.String.RegionMatches(System.Boolean,System.Int32,System.String,System.Int32,System.Int32)">
-  RegionMatches(bool, int, string, int, int)
+  <h3 id="Java_Lang_String_RegionMatches_System_Boolean_System_Int32_Java_Lang_String_System_Int32_System_Int32_" data-uid="Java.Lang.String.RegionMatches(System.Boolean,System.Int32,Java.Lang.String,System.Int32,System.Int32)">
+  RegionMatches(bool, int, String, int, int)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L405"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -2667,7 +2741,7 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool RegionMatches(bool arg0, int arg1, string arg2, int arg3, int arg4)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool RegionMatches(bool arg0, int arg1, String arg2, int arg3, int arg4)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -2678,8 +2752,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
     <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
 </dd>
-    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
     <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
@@ -2708,8 +2782,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <a id="Java_Lang_String_RegionMatches_" data-uid="Java.Lang.String.RegionMatches*"></a>
 
-  <h3 id="Java_Lang_String_RegionMatches_System_Int32_System_String_System_Int32_System_Int32_" data-uid="Java.Lang.String.RegionMatches(System.Int32,System.String,System.Int32,System.Int32)">
-  RegionMatches(int, string, int, int)
+  <h3 id="Java_Lang_String_RegionMatches_System_Int32_Java_Lang_String_System_Int32_System_Int32_" data-uid="Java.Lang.String.RegionMatches(System.Int32,Java.Lang.String,System.Int32,System.Int32)">
+  RegionMatches(int, String, int, int)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L417"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -2718,7 +2792,7 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool RegionMatches(int arg0, string arg1, int arg2, int arg3)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool RegionMatches(int arg0, String arg1, int arg2, int arg3)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -2726,8 +2800,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
     <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
 </dd>
-    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
     <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
@@ -2766,7 +2840,7 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Repeat(int arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public String Repeat(int arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -2778,8 +2852,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -2805,7 +2879,7 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Replace(CharSequence arg0, CharSequence arg1)</code></pre>
+    <pre><code class="lang-csharp hljs">public String Replace(CharSequence arg0, CharSequence arg1)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -2820,8 +2894,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -2847,7 +2921,7 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Replace(char arg0, char arg1)</code></pre>
+    <pre><code class="lang-csharp hljs">public String Replace(char arg0, char arg1)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -2862,8 +2936,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -2879,8 +2953,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <a id="Java_Lang_String_ReplaceAll_" data-uid="Java.Lang.String.ReplaceAll*"></a>
 
-  <h3 id="Java_Lang_String_ReplaceAll_System_String_System_String_" data-uid="Java.Lang.String.ReplaceAll(System.String,System.String)">
-  ReplaceAll(string, string)
+  <h3 id="Java_Lang_String_ReplaceAll_Java_Lang_String_Java_Lang_String_" data-uid="Java.Lang.String.ReplaceAll(Java.Lang.String,Java.Lang.String)">
+  ReplaceAll(String, String)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L681"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -2889,23 +2963,23 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ReplaceAll(string arg0, string arg1)</code></pre>
+    <pre><code class="lang-csharp hljs">public String ReplaceAll(String arg0, String arg1)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
-    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -2921,8 +2995,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <a id="Java_Lang_String_ReplaceFirst_" data-uid="Java.Lang.String.ReplaceFirst*"></a>
 
-  <h3 id="Java_Lang_String_ReplaceFirst_System_String_System_String_" data-uid="Java.Lang.String.ReplaceFirst(System.String,System.String)">
-  ReplaceFirst(string, string)
+  <h3 id="Java_Lang_String_ReplaceFirst_Java_Lang_String_Java_Lang_String_" data-uid="Java.Lang.String.ReplaceFirst(Java.Lang.String,Java.Lang.String)">
+  ReplaceFirst(String, String)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L691"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -2931,23 +3005,23 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ReplaceFirst(string arg0, string arg1)</code></pre>
+    <pre><code class="lang-csharp hljs">public String ReplaceFirst(String arg0, String arg1)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
-    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -2963,8 +3037,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <a id="Java_Lang_String_Split_" data-uid="Java.Lang.String.Split*"></a>
 
-  <h3 id="Java_Lang_String_Split_System_String_" data-uid="Java.Lang.String.Split(System.String)">
-  Split(string)
+  <h3 id="Java_Lang_String_Split_Java_Lang_String_" data-uid="Java.Lang.String.Split(Java.Lang.String)">
+  Split(String)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L801"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -2973,20 +3047,20 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string[] Split(string arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public String[] Split(String arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -3002,8 +3076,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <a id="Java_Lang_String_Split_" data-uid="Java.Lang.String.Split*"></a>
 
-  <h3 id="Java_Lang_String_Split_System_String_System_Int32_" data-uid="Java.Lang.String.Split(System.String,System.Int32)">
-  Split(string, int)
+  <h3 id="Java_Lang_String_Split_Java_Lang_String_System_Int32_" data-uid="Java.Lang.String.Split(Java.Lang.String,System.Int32)">
+  Split(String, int)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L792"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -3012,13 +3086,13 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string[] Split(string arg0, int arg1)</code></pre>
+    <pre><code class="lang-csharp hljs">public String[] Split(String arg0, int arg1)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
     <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
@@ -3027,8 +3101,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -3044,8 +3118,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <a id="Java_Lang_String_StartsWith_" data-uid="Java.Lang.String.StartsWith*"></a>
 
-  <h3 id="Java_Lang_String_StartsWith_System_String_" data-uid="Java.Lang.String.StartsWith(System.String)">
-  StartsWith(string)
+  <h3 id="Java_Lang_String_StartsWith_Java_Lang_String_" data-uid="Java.Lang.String.StartsWith(Java.Lang.String)">
+  StartsWith(String)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L436"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -3054,13 +3128,13 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool StartsWith(string arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool StartsWith(String arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -3083,8 +3157,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <a id="Java_Lang_String_StartsWith_" data-uid="Java.Lang.String.StartsWith*"></a>
 
-  <h3 id="Java_Lang_String_StartsWith_System_String_System_Int32_" data-uid="Java.Lang.String.StartsWith(System.String,System.Int32)">
-  StartsWith(string, int)
+  <h3 id="Java_Lang_String_StartsWith_Java_Lang_String_System_Int32_" data-uid="Java.Lang.String.StartsWith(Java.Lang.String,System.Int32)">
+  StartsWith(String, int)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/String.cs/#L427"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -3093,13 +3167,13 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool StartsWith(string arg0, int arg1)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool StartsWith(String arg0, int arg1)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
     <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
@@ -3135,14 +3209,14 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Strip()</code></pre>
+    <pre><code class="lang-csharp hljs">public String Strip()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -3168,14 +3242,14 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string StripLeading()</code></pre>
+    <pre><code class="lang-csharp hljs">public String StripLeading()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -3201,14 +3275,14 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string StripTrailing()</code></pre>
+    <pre><code class="lang-csharp hljs">public String StripTrailing()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -3276,7 +3350,7 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Substring(int arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public String Substring(int arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3288,8 +3362,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -3315,7 +3389,7 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Substring(int arg0, int arg1)</code></pre>
+    <pre><code class="lang-csharp hljs">public String Substring(int arg0, int arg1)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3330,8 +3404,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -3390,14 +3464,14 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ToLowerCase()</code></pre>
+    <pre><code class="lang-csharp hljs">public String ToLowerCase()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -3423,7 +3497,7 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ToLowerCase(Locale arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public String ToLowerCase(Locale arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3435,8 +3509,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -3462,14 +3536,14 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ToUpperCase()</code></pre>
+    <pre><code class="lang-csharp hljs">public String ToUpperCase()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -3495,7 +3569,7 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ToUpperCase(Locale arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public String ToUpperCase(Locale arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3507,8 +3581,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -3534,14 +3608,14 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Trim()</code></pre>
+    <pre><code class="lang-csharp hljs">public String Trim()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -3567,7 +3641,7 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string ValueOf(bool arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static String ValueOf(bool arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3579,8 +3653,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -3606,7 +3680,7 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string ValueOf(char arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static String ValueOf(char arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3618,8 +3692,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -3645,7 +3719,7 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string ValueOf(char[] arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static String ValueOf(char[] arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3657,8 +3731,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -3684,7 +3758,7 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string ValueOf(char[] arg0, int arg1, int arg2)</code></pre>
+    <pre><code class="lang-csharp hljs">public static String ValueOf(char[] arg0, int arg1, int arg2)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3702,8 +3776,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -3729,7 +3803,7 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string ValueOf(double arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static String ValueOf(double arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3741,8 +3815,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -3768,7 +3842,7 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string ValueOf(int arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static String ValueOf(int arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3780,8 +3854,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -3807,7 +3881,7 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string ValueOf(long arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static String ValueOf(long arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3819,8 +3893,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -3846,7 +3920,7 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string ValueOf(object arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static String ValueOf(object arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3858,8 +3932,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -3885,7 +3959,7 @@ Class String  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string ValueOf(float arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static String ValueOf(float arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3897,8 +3971,8 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -3914,6 +3988,51 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <h2 class="section" id="operators">Operators
 </h2>
+
+
+  <a id="Java_Lang_String_op_Addition_" data-uid="Java.Lang.String.op_Addition*"></a>
+
+  <h3 id="Java_Lang_String_op_Addition_Java_Lang_String_Java_Lang_String_" data-uid="Java.Lang.String.op_Addition(Java.Lang.String,Java.Lang.String)">
+  operator +(String, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/String.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Binary operator managing concatanation within JVM</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String operator +(String a, String b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p>The left <a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>b</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p>The right <a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p>A new <a class="xref" href="Java.Lang.String.html">String</a> which is the concatanation of <code class="paramref">a</code> and <code class="paramref">b</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Java_Lang_String_op_Addition_Java_Lang_String_Java_Lang_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This overload can be very helpful because it avoids to move string contant from JVM to .NET and viceversa</p>
+</div>
+
+
 
 
   <a id="Java_Lang_String_op_Implicit_" data-uid="Java.Lang.String.op_Implicit*"></a>
@@ -4031,7 +4150,7 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Java_Lang_String_op_Implicit_Java_Lang_String__System_String" data-uid="Java.Lang.String.op_Implicit(Java.Lang.String)~System.String">
   implicit operator string(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/String.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/String.cs/#L42"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Lang.String.html">String</a> to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
@@ -4068,7 +4187,7 @@ Class String  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Java_Lang_String_op_Implicit_System_String__Java_Lang_String" data-uid="Java.Lang.String.op_Implicit(System.String)~Java.Lang.String">
   implicit operator String(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/String.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/String.cs/#L46"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> to <a class="xref" href="Java.Lang.String.html">String</a></p>

@@ -17,18 +17,65 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
+using System.Runtime.CompilerServices;
+using SystemNet = System;
 
 namespace Java.Lang
 {
-    public partial class String : JVMBridgeBase<String>
+    public partial class String : JVMBridgeBase<String>, SystemNet.IComparable<String>, SystemNet.IEquatable<String>
     {
+        #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#%3Cinit%3E(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        public String(string arg0)
+            : base(arg0)
+        {
+        }
+        #endregion
+
+        #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="String"/> to <see cref="string"/>
         /// </summary>
-        public static implicit operator string(String b) => b.ToString();
+        public static implicit operator string(String b) => b != null ? b.ToString() : null;
         /// <summary>
         /// Converter from <see cref="string"/> to <see cref="String"/>
         /// </summary>
-        public static implicit operator String(string b) => new Java.Lang.String(b);
+        public static implicit operator String(string b) => b != null ? new Java.Lang.String(b) : null;
+        #endregion
+        /// <summary>
+        /// Binary operator managing concatanation within JVM
+        /// </summary>
+        /// <param name="a">The left <see cref="String"/></param>
+        /// <param name="b">The right <see cref="String"/></param>
+        /// <returns>A new <see cref="String"/> which is the concatanation of <paramref name="a"/> and <paramref name="b"/></returns>
+        /// <remarks>This overload can be very helpful because it avoids to move string contant from JVM to .NET and viceversa</remarks>
+        public static String operator +(String a, String b) => b != null ? a?.Concat(b) : a;
+        /// <summary>
+        /// Returns the character at <paramref name="index"/>
+        /// </summary>
+        /// <param name="index">The index of the character to return</param>
+        /// <returns><see cref="char"/> at <paramref name="index"/></returns>
+        public char this[int index] => this.CharAt(index);
+
+        #region SystemNet.IComparable<String>
+
+        int SystemNet.IComparable<String>.CompareTo(Java.Lang.String other)
+        {
+            return this.CompareTo(other);
+        }
+
+        #endregion
+
+        #region SystemNet.IEquatable<String>
+
+        bool SystemNet.IEquatable<String>.Equals(Java.Lang.String other)
+        {
+            return base.Equals(other);
+        }
+
+        #endregion
     }
 }

@@ -840,7 +840,7 @@ Class Module  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String Name { get; }</code></pre>
   </div>
 
 
@@ -849,7 +849,7 @@ Class Module  <a class="header-action link-secondary" title="View source" href="
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
     <dd></dd>
   </dl>
 
@@ -872,7 +872,7 @@ Class Module  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Set&lt;string&gt; Packages { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Set&lt;String&gt; Packages { get; }</code></pre>
   </div>
 
 
@@ -881,7 +881,7 @@ Class Module  <a class="header-action link-secondary" title="View source" href="
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dt><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -898,8 +898,8 @@ Class Module  <a class="header-action link-secondary" title="View source" href="
 
   <a id="Java_Lang_Module_AddExports_" data-uid="Java.Lang.Module.AddExports*"></a>
 
-  <h3 id="Java_Lang_Module_AddExports_System_String_Java_Lang_Module_" data-uid="Java.Lang.Module.AddExports(System.String,Java.Lang.Module)">
-  AddExports(string, Module)
+  <h3 id="Java_Lang_Module_AddExports_Java_Lang_String_Java_Lang_Module_" data-uid="Java.Lang.Module.AddExports(Java.Lang.String,Java.Lang.Module)">
+  AddExports(String, Module)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L188"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -908,13 +908,94 @@ Class Module  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Module AddExports(string arg0, Module arg1)</code></pre>
+    <pre><code class="lang-csharp hljs">public Module AddExports(String arg0, Module arg1)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.Module.html">Module</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Module.html">Module</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Module.html">Module</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Module.html">Module</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Module_AddExports_" data-uid="Java.Lang.Module.AddExports*"></a>
+
+  <h3 id="Java_Lang_Module_AddExports_System_String_Java_Lang_Module_" data-uid="Java.Lang.Module.AddExports(System.String,Java.Lang.Module)">
+  AddExports(string, Module)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Module.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>If the caller's module is this module then update this module to export the given package to the given module.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Module AddExports(string pn, Module other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>other</code> <a class="xref" href="Java.Lang.Module.html">Module</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Module.html">Module</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Module_AddOpens_" data-uid="Java.Lang.Module.AddOpens*"></a>
+
+  <h3 id="Java_Lang_Module_AddOpens_Java_Lang_String_Java_Lang_Module_" data-uid="Java.Lang.Module.AddOpens(Java.Lang.String,Java.Lang.Module)">
+  AddOpens(String, Module)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L198"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#addOpens(java.lang.String,java.lang.Module)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#addOpens(java.lang.String,java.lang.Module)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Module AddOpens(String arg0, Module arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
     <dt><code>arg1</code> <a class="xref" href="Java.Lang.Module.html">Module</a></dt>
     <dd><p><a class="xref" href="Java.Lang.Module.html">Module</a></p>
@@ -942,32 +1023,29 @@ Class Module  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Java_Lang_Module_AddOpens_System_String_Java_Lang_Module_" data-uid="Java.Lang.Module.AddOpens(System.String,Java.Lang.Module)">
   AddOpens(string, Module)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L198"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Module.cs/#L42"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#addOpens(java.lang.String,java.lang.Module)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#addOpens(java.lang.String,java.lang.Module)</a></p>
+  <div class="markdown level1 summary"><p>If this module has opened a package to at least the caller module then update this module to open the package to the given module.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Module AddOpens(string arg0, Module arg1)</code></pre>
+    <pre><code class="lang-csharp hljs">public Module AddOpens(string pn, Module other)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
-</dd>
-    <dt><code>arg1</code> <a class="xref" href="Java.Lang.Module.html">Module</a></dt>
-    <dd><p><a class="xref" href="Java.Lang.Module.html">Module</a></p>
-</dd>
+    <dt><code>pn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>other</code> <a class="xref" href="Java.Lang.Module.html">Module</a></dt>
+    <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Java.Lang.Module.html">Module</a></dt>
-    <dd><p><a class="xref" href="Java.Lang.Module.html">Module</a></p>
-</dd>
+    <dd></dd>
   </dl>
 
 
@@ -1225,8 +1303,8 @@ Class Module  <a class="header-action link-secondary" title="View source" href="
 
   <a id="Java_Lang_Module_GetResourceAsStream_" data-uid="Java.Lang.Module.GetResourceAsStream*"></a>
 
-  <h3 id="Java_Lang_Module_GetResourceAsStream_System_String_" data-uid="Java.Lang.Module.GetResourceAsStream(System.String)">
-  GetResourceAsStream(string)
+  <h3 id="Java_Lang_Module_GetResourceAsStream_Java_Lang_String_" data-uid="Java.Lang.Module.GetResourceAsStream(Java.Lang.String)">
+  GetResourceAsStream(String)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L178"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -1235,13 +1313,13 @@ Class Module  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public InputStream GetResourceAsStream(string arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public InputStream GetResourceAsStream(String arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -1269,8 +1347,8 @@ Class Module  <a class="header-action link-secondary" title="View source" href="
 
   <a id="Java_Lang_Module_IsExported_" data-uid="Java.Lang.Module.IsExported*"></a>
 
-  <h3 id="Java_Lang_Module_IsExported_System_String_" data-uid="Java.Lang.Module.IsExported(System.String)">
-  IsExported(string)
+  <h3 id="Java_Lang_Module_IsExported_Java_Lang_String_" data-uid="Java.Lang.Module.IsExported(Java.Lang.String)">
+  IsExported(String)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L140"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -1279,13 +1357,13 @@ Class Module  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsExported(string arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool IsExported(String arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -1308,8 +1386,8 @@ Class Module  <a class="header-action link-secondary" title="View source" href="
 
   <a id="Java_Lang_Module_IsExported_" data-uid="Java.Lang.Module.IsExported*"></a>
 
-  <h3 id="Java_Lang_Module_IsExported_System_String_Java_Lang_Module_" data-uid="Java.Lang.Module.IsExported(System.String,Java.Lang.Module)">
-  IsExported(string, Module)
+  <h3 id="Java_Lang_Module_IsExported_Java_Lang_String_Java_Lang_Module_" data-uid="Java.Lang.Module.IsExported(Java.Lang.String,Java.Lang.Module)">
+  IsExported(String, Module)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L131"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -1318,13 +1396,13 @@ Class Module  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsExported(string arg0, Module arg1)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool IsExported(String arg0, Module arg1)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
     <dt><code>arg1</code> <a class="xref" href="Java.Lang.Module.html">Module</a></dt>
     <dd><p><a class="xref" href="Java.Lang.Module.html">Module</a></p>
@@ -1336,6 +1414,82 @@ Class Module  <a class="header-action link-secondary" title="View source" href="
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
 </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Module_IsExported_" data-uid="Java.Lang.Module.IsExported*"></a>
+
+  <h3 id="Java_Lang_Module_IsExported_System_String_" data-uid="Java.Lang.Module.IsExported(System.String)">
+  IsExported(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Module.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if this module exports the given package unconditionally.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsExported(string pn)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Module_IsExported_" data-uid="Java.Lang.Module.IsExported*"></a>
+
+  <h3 id="Java_Lang_Module_IsExported_System_String_Java_Lang_Module_" data-uid="Java.Lang.Module.IsExported(System.String,Java.Lang.Module)">
+  IsExported(string, Module)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Module.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if this module exports the given package to at least the given module.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsExported(string pn, Module other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>other</code> <a class="xref" href="Java.Lang.Module.html">Module</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
   </dl>
 
 
@@ -1383,8 +1537,8 @@ Class Module  <a class="header-action link-secondary" title="View source" href="
 
   <a id="Java_Lang_Module_IsOpen_" data-uid="Java.Lang.Module.IsOpen*"></a>
 
-  <h3 id="Java_Lang_Module_IsOpen_System_String_" data-uid="Java.Lang.Module.IsOpen(System.String)">
-  IsOpen(string)
+  <h3 id="Java_Lang_Module_IsOpen_Java_Lang_String_" data-uid="Java.Lang.Module.IsOpen(Java.Lang.String)">
+  IsOpen(String)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L168"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -1393,13 +1547,13 @@ Class Module  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsOpen(string arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool IsOpen(String arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -1422,8 +1576,8 @@ Class Module  <a class="header-action link-secondary" title="View source" href="
 
   <a id="Java_Lang_Module_IsOpen_" data-uid="Java.Lang.Module.IsOpen*"></a>
 
-  <h3 id="Java_Lang_Module_IsOpen_System_String_Java_Lang_Module_" data-uid="Java.Lang.Module.IsOpen(System.String,Java.Lang.Module)">
-  IsOpen(string, Module)
+  <h3 id="Java_Lang_Module_IsOpen_Java_Lang_String_Java_Lang_Module_" data-uid="Java.Lang.Module.IsOpen(Java.Lang.String,Java.Lang.Module)">
+  IsOpen(String, Module)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L159"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -1432,13 +1586,13 @@ Class Module  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsOpen(string arg0, Module arg1)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool IsOpen(String arg0, Module arg1)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
     <dt><code>arg1</code> <a class="xref" href="Java.Lang.Module.html">Module</a></dt>
     <dd><p><a class="xref" href="Java.Lang.Module.html">Module</a></p>
@@ -1450,6 +1604,82 @@ Class Module  <a class="header-action link-secondary" title="View source" href="
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
 </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Module_IsOpen_" data-uid="Java.Lang.Module.IsOpen*"></a>
+
+  <h3 id="Java_Lang_Module_IsOpen_System_String_" data-uid="Java.Lang.Module.IsOpen(System.String)">
+  IsOpen(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Module.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if this module has opened a package unconditionally.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOpen(string pn)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Module_IsOpen_" data-uid="Java.Lang.Module.IsOpen*"></a>
+
+  <h3 id="Java_Lang_Module_IsOpen_System_String_Java_Lang_Module_" data-uid="Java.Lang.Module.IsOpen(System.String,Java.Lang.Module)">
+  IsOpen(string, Module)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Module.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if this module has opened a package to at least the given module.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOpen(string pn, Module other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>other</code> <a class="xref" href="Java.Lang.Module.html">Module</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
   </dl>
 
 

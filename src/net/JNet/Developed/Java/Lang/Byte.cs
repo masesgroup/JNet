@@ -17,6 +17,7 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
+using System;
 
 namespace Java.Lang
 {
@@ -25,10 +26,18 @@ namespace Java.Lang
         /// <summary>
         /// Converter from <see cref="Byte"/> to <see cref="byte"/>
         /// </summary>
-        public static implicit operator byte(Byte b) => b.ByteValue();
+        public static implicit operator byte(Byte b) => b != null ? b.ByteValue() : default;
+        /// <summary>
+        /// Converter from <see cref="Byte"/> to <see cref="Nullable{Byte}"/>
+        /// </summary>
+        public static implicit operator byte?(Byte b) => b != null ? b.ByteValue() : null;
         /// <summary>
         /// Converter from <see cref="byte"/> to <see cref="Byte"/>
         /// </summary>
         public static implicit operator Byte(byte b) => ValueOf(b);
+        /// <summary>
+        /// Converter from <see cref="Nullable{Byte}"/> to <see cref="Byte"/>
+        /// </summary>
+        public static implicit operator Byte(byte? b) => b.HasValue ? ValueOf(b.Value) : null;
     }
 }

@@ -52,17 +52,47 @@ namespace MASES.JNetTest
             }
             catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
 
+            TestOperators();
+
             TestIterator();
             TestAsyncIterator().Wait();
 
             TestExtensions();
         }
 
+        static void TestOperators()
+        {
+            Java.Lang.Short a = 10;
+            Java.Lang.Short b = 100;
+
+            Java.Lang.Short c = (short)(a + b);
+            Java.Lang.Short d = (short)(c / a);
+
+            if (a < d) { a++; d = (short)(c / a); }
+
+            Java.Lang.String strA = new String("StringA");
+            Java.Lang.String strB = new String("StringB");
+
+            if (strA != strB)
+            {
+                strA += strB;
+            }
+            strA += " Extra";
+            strA += null;
+
+            var cc = strA[4];
+
+            string astr = "";
+            string bstr = "";
+
+            var ccc = astr + bstr;
+        }
+
         static async Task TestAsyncIterator()
         {
             const int execution = 100;
             Stopwatch w = Stopwatch.StartNew();
-            ArrayList<string> alist = new Java.Util.ArrayList<string>();
+            ArrayList<string> alist = new();
             for (int i = 0; i < execution; i++)
             {
                 alist.Add(i.ToString());

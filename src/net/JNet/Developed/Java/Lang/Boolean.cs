@@ -17,22 +17,27 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
+using System;
 
 namespace Java.Lang
 {
     public partial class Boolean
     {
-        ///// <summary>
-        ///// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-        ///// </summary>
-        //public override string BridgeClassName => "java.lang.Boolean";
         /// <summary>
         /// Converter from <see cref="Boolean"/> to <see cref="bool"/>
         /// </summary>
-        public static implicit operator bool(Boolean b) => b.BooleanValue();
+        public static implicit operator bool(Boolean b) => b != null ? b.BooleanValue() : default;
+        /// <summary>
+        /// Converter from <see cref="Boolean"/> to <see cref="Nullable{Boolean}"/>
+        /// </summary>
+        public static implicit operator bool?(Boolean b) => b != null ? b.BooleanValue() : null;
         /// <summary>
         /// Converter from <see cref="bool"/> to <see cref="Boolean"/>
         /// </summary>
         public static implicit operator Boolean(bool b) => ValueOf(b);
+        /// <summary>
+        /// Converter from <see cref="Nullable{Boolean}"/> to <see cref="Boolean"/>
+        /// </summary>
+        public static implicit operator Boolean(bool? b) => b.HasValue ? ValueOf(b.Value) : null;
     }
 }

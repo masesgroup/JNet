@@ -17,6 +17,7 @@
 */
 
 using Java.Util;
+using System;
 using System.Collections.Generic;
 
 namespace MASES.JNet.Specific.Extensions
@@ -126,6 +127,27 @@ namespace MASES.JNet.Specific.Extensions
             foreach (var item in dictionary)
             {
                 map.Put(item.Key, item.Value);
+            }
+            return map;
+        }
+        /// <summary>
+        /// Converts a <see cref="IDictionary{K, V}"/> to <see cref="Map{TJVMK, TJVMV}"/>
+        /// </summary>
+        /// <param name="keyConverter">Converter from <typeparamref name="K"/> to <typeparamref name="TJVMK"/></param>
+        /// <param name="valueConverter">Converter from <typeparamref name="V"/> to <typeparamref name="TJVMV"/></param>
+        /// <typeparam name="K">.NET Key type</typeparam>
+        /// <typeparam name="V">.NET Value</typeparam>
+        /// <typeparam name="TJVMK">JVM key type</typeparam>
+        /// <typeparam name="TJVMV">JVM value type</typeparam>
+        /// <param name="dictionary">The <see cref="IDictionary{K, V}"/></param>
+        /// <returns>The <see cref="Map{TJVMK, TJVMV}"/></returns>
+        public static Map<TJVMK, TJVMV> ToMap<K, V, TJVMK, TJVMV>(this IDictionary<K, V> dictionary, Func<K, TJVMK> keyConverter, Func<V, TJVMV> valueConverter)
+        {
+            HashMap<TJVMK, TJVMV> map = new();
+            if (dictionary.Count == 0) return map;
+            foreach (var item in dictionary)
+            {
+                map.Put(keyConverter(item.Key), valueConverter(item.Value));
             }
             return map;
         }
