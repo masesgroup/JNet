@@ -725,9 +725,9 @@ Class HttpResponse.BodyHandlers  <a class="header-action link-secondary" title="
 
   <a id="Java_Net_Http_HttpResponse_BodyHandlers_FromLineSubscriber_" data-uid="Java.Net.Http.HttpResponse.BodyHandlers.FromLineSubscriber*"></a>
 
-  <h3 id="Java_Net_Http_HttpResponse_BodyHandlers_FromLineSubscriber_Java_Util_Concurrent_Flow_Subscriber_System_String__" data-uid="Java.Net.Http.HttpResponse.BodyHandlers.FromLineSubscriber(Java.Util.Concurrent.Flow.Subscriber{System.String})">
-  FromLineSubscriber(Subscriber&lt;string&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpResponse.cs/#L324"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Java_Net_Http_HttpResponse_BodyHandlers_FromLineSubscriber__1_Java_Util_Concurrent_Flow_Subscriber___0__" data-uid="Java.Net.Http.HttpResponse.BodyHandlers.FromLineSubscriber``1(Java.Util.Concurrent.Flow.Subscriber{``0})">
+  FromLineSubscriber&lt;Arg0objectSuperJava_Lang_String&gt;(Subscriber&lt;Arg0objectSuperJava_Lang_String&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpResponse.cs/#L325"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#fromLineSubscriber(java.util.concurrent.Flow.Subscriber)">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#fromLineSubscriber(java.util.concurrent.Flow.Subscriber)</a></p>
@@ -735,12 +735,12 @@ Class HttpResponse.BodyHandlers  <a class="header-action link-secondary" title="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static HttpResponse.BodyHandler&lt;Void&gt; FromLineSubscriber(Flow.Subscriber&lt;string&gt; arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static HttpResponse.BodyHandler&lt;Void&gt; FromLineSubscriber&lt;Arg0objectSuperJava_Lang_String&gt;(Flow.Subscriber&lt;Arg0objectSuperJava_Lang_String&gt; arg0) where Arg0objectSuperJava_Lang_String : String</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.Flow.html">Flow</a>.<a class="xref" href="Java.Util.Concurrent.Flow.Subscriber-1.html">Subscriber</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.Flow.html">Flow</a>.<a class="xref" href="Java.Util.Concurrent.Flow.Subscriber-1.html">Subscriber</a>&lt;Arg0objectSuperJava_Lang_String&gt;</dt>
     <dd><p><a class="xref" href="Java.Util.Concurrent.Flow.Subscriber.html">Flow.Subscriber</a></p>
 </dd>
   </dl>
@@ -752,6 +752,12 @@ Class HttpResponse.BodyHandlers  <a class="header-action link-secondary" title="
 </dd>
   </dl>
 
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Arg0objectSuperJava_Lang_String</code></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
 
 
 
@@ -764,8 +770,8 @@ Class HttpResponse.BodyHandlers  <a class="header-action link-secondary" title="
 
   <a id="Java_Net_Http_HttpResponse_BodyHandlers_FromLineSubscriber_" data-uid="Java.Net.Http.HttpResponse.BodyHandlers.FromLineSubscriber*"></a>
 
-  <h3 id="Java_Net_Http_HttpResponse_BodyHandlers_FromLineSubscriber__4___1_Java_Util_Function_Function___2___3__System_String_" data-uid="Java.Net.Http.HttpResponse.BodyHandlers.FromLineSubscriber``4(``1,Java.Util.Function.Function{``2,``3},System.String)">
-  FromLineSubscriber&lt;T, S, Arg1objectSuperS, Arg1ExtendsT&gt;(S, Function&lt;Arg1objectSuperS, Arg1ExtendsT&gt;, string)
+  <h3 id="Java_Net_Http_HttpResponse_BodyHandlers_FromLineSubscriber__4___1_Java_Util_Function_Function___2___3__Java_Lang_String_" data-uid="Java.Net.Http.HttpResponse.BodyHandlers.FromLineSubscriber``4(``1,Java.Util.Function.Function{``2,``3},Java.Lang.String)">
+  FromLineSubscriber&lt;T, S, Arg1objectSuperS, Arg1ExtendsT&gt;(S, Function&lt;Arg1objectSuperS, Arg1ExtendsT&gt;, String)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpResponse.cs/#L235"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -774,7 +780,7 @@ Class HttpResponse.BodyHandlers  <a class="header-action link-secondary" title="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static HttpResponse.BodyHandler&lt;T&gt; FromLineSubscriber&lt;T, S, Arg1objectSuperS, Arg1ExtendsT&gt;(S arg0, Function&lt;Arg1objectSuperS, Arg1ExtendsT&gt; arg1, string arg2) where Arg1objectSuperS : S where Arg1ExtendsT : T</code></pre>
+    <pre><code class="lang-csharp hljs">public static HttpResponse.BodyHandler&lt;T&gt; FromLineSubscriber&lt;T, S, Arg1objectSuperS, Arg1ExtendsT&gt;(S arg0, Function&lt;Arg1objectSuperS, Arg1ExtendsT&gt; arg1, String arg2) where Arg1objectSuperS : S where Arg1ExtendsT : T</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -785,8 +791,8 @@ Class HttpResponse.BodyHandlers  <a class="header-action link-secondary" title="
     <dt><code>arg1</code> <a class="xref" href="Java.Util.Function.Function-2.html">Function</a>&lt;Arg1objectSuperS, Arg1ExtendsT&gt;</dt>
     <dd><p><a class="xref" href="Java.Util.Function.Function.html">Function</a></p>
 </dd>
-    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -824,7 +830,7 @@ Class HttpResponse.BodyHandlers  <a class="header-action link-secondary" title="
 
   <h3 id="Java_Net_Http_HttpResponse_BodyHandlers_FromSubscriber__1_Java_Util_Concurrent_Flow_Subscriber___0__" data-uid="Java.Net.Http.HttpResponse.BodyHandlers.FromSubscriber``1(Java.Util.Concurrent.Flow.Subscriber{``0})">
   FromSubscriber&lt;Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_&gt;(Subscriber&lt;Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpResponse.cs/#L334"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpResponse.cs/#L335"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#fromSubscriber(java.util.concurrent.Flow.Subscriber)">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#fromSubscriber(java.util.concurrent.Flow.Subscriber)</a></p>
@@ -957,7 +963,7 @@ Class HttpResponse.BodyHandlers  <a class="header-action link-secondary" title="
 
   <h3 id="Java_Net_Http_HttpResponse_BodyHandlers_OfByteArrayConsumer_Java_Util_Function_Consumer_Java_Util_Optional_System_Byte_____" data-uid="Java.Net.Http.HttpResponse.BodyHandlers.OfByteArrayConsumer(Java.Util.Function.Consumer{Java.Util.Optional{System.Byte[]}})">
   OfByteArrayConsumer(Consumer&lt;Optional&lt;byte[]&gt;&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpResponse.cs/#L343"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpResponse.cs/#L344"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofByteArrayConsumer(java.util.function.Consumer)">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofByteArrayConsumer(java.util.function.Consumer)</a></p>
@@ -996,7 +1002,7 @@ Class HttpResponse.BodyHandlers  <a class="header-action link-secondary" title="
 
   <h3 id="Java_Net_Http_HttpResponse_BodyHandlers_OfFile_Java_Nio_File_Path_" data-uid="Java.Net.Http.HttpResponse.BodyHandlers.OfFile(Java.Nio.File.Path)">
   OfFile(Path)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpResponse.cs/#L362"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpResponse.cs/#L363"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofFile(java.nio.file.Path)">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofFile(java.nio.file.Path)</a></p>
@@ -1035,7 +1041,7 @@ Class HttpResponse.BodyHandlers  <a class="header-action link-secondary" title="
 
   <h3 id="Java_Net_Http_HttpResponse_BodyHandlers_OfFile_Java_Nio_File_Path_Java_Nio_File_OpenOption___" data-uid="Java.Net.Http.HttpResponse.BodyHandlers.OfFile(Java.Nio.File.Path,Java.Nio.File.OpenOption[])">
   OfFile(Path, params OpenOption[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpResponse.cs/#L353"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpResponse.cs/#L354"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofFile(java.nio.file.Path,java.nio.file.OpenOption[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofFile(java.nio.file.Path,java.nio.file.OpenOption[])</a></p>
@@ -1077,7 +1083,7 @@ Class HttpResponse.BodyHandlers  <a class="header-action link-secondary" title="
 
   <h3 id="Java_Net_Http_HttpResponse_BodyHandlers_OfFileDownload_Java_Nio_File_Path_Java_Nio_File_OpenOption___" data-uid="Java.Net.Http.HttpResponse.BodyHandlers.OfFileDownload(Java.Nio.File.Path,Java.Nio.File.OpenOption[])">
   OfFileDownload(Path, params OpenOption[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpResponse.cs/#L372"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpResponse.cs/#L373"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofFileDownload(java.nio.file.Path,java.nio.file.OpenOption[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofFileDownload(java.nio.file.Path,java.nio.file.OpenOption[])</a></p>
@@ -1152,7 +1158,7 @@ Class HttpResponse.BodyHandlers  <a class="header-action link-secondary" title="
 
   <h3 id="Java_Net_Http_HttpResponse_BodyHandlers_OfLines" data-uid="Java.Net.Http.HttpResponse.BodyHandlers.OfLines">
   OfLines()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpResponse.cs/#L390"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpResponse.cs/#L391"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofLines()">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofLines()</a></p>
@@ -1160,13 +1166,13 @@ Class HttpResponse.BodyHandlers  <a class="header-action link-secondary" title="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static HttpResponse.BodyHandler&lt;Stream&lt;string&gt;&gt; OfLines()</code></pre>
+    <pre><code class="lang-csharp hljs">public static HttpResponse.BodyHandler&lt;Stream&lt;String&gt;&gt; OfLines()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Java.Net.Http.HttpResponse.html">HttpResponse</a>.<a class="xref" href="Java.Net.Http.HttpResponse.BodyHandler-1.html">BodyHandler</a>&lt;<a class="xref" href="Java.Util.Stream.Stream-1.html">Stream</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;&gt;</dt>
+    <dt><a class="xref" href="Java.Net.Http.HttpResponse.html">HttpResponse</a>.<a class="xref" href="Java.Net.Http.HttpResponse.BodyHandler-1.html">BodyHandler</a>&lt;<a class="xref" href="Java.Util.Stream.Stream-1.html">Stream</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;&gt;</dt>
     <dd><p><a class="xref" href="Java.Net.Http.HttpResponse.BodyHandler.html">HttpResponse.BodyHandler</a></p>
 </dd>
   </dl>
@@ -1185,7 +1191,7 @@ Class HttpResponse.BodyHandlers  <a class="header-action link-secondary" title="
 
   <h3 id="Java_Net_Http_HttpResponse_BodyHandlers_OfPublisher" data-uid="Java.Net.Http.HttpResponse.BodyHandlers.OfPublisher">
   OfPublisher()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpResponse.cs/#L381"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Http/HttpResponse.cs/#L382"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofPublisher()">https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofPublisher()</a></p>
@@ -1226,13 +1232,13 @@ Class HttpResponse.BodyHandlers  <a class="header-action link-secondary" title="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static HttpResponse.BodyHandler&lt;string&gt; OfString()</code></pre>
+    <pre><code class="lang-csharp hljs">public static HttpResponse.BodyHandler&lt;String&gt; OfString()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Java.Net.Http.HttpResponse.html">HttpResponse</a>.<a class="xref" href="Java.Net.Http.HttpResponse.BodyHandler-1.html">BodyHandler</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dt><a class="xref" href="Java.Net.Http.HttpResponse.html">HttpResponse</a>.<a class="xref" href="Java.Net.Http.HttpResponse.BodyHandler-1.html">BodyHandler</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
     <dd><p><a class="xref" href="Java.Net.Http.HttpResponse.BodyHandler.html">HttpResponse.BodyHandler</a></p>
 </dd>
   </dl>
@@ -1259,7 +1265,7 @@ Class HttpResponse.BodyHandlers  <a class="header-action link-secondary" title="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static HttpResponse.BodyHandler&lt;string&gt; OfString(Charset arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static HttpResponse.BodyHandler&lt;String&gt; OfString(Charset arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1271,7 +1277,7 @@ Class HttpResponse.BodyHandlers  <a class="header-action link-secondary" title="
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Java.Net.Http.HttpResponse.html">HttpResponse</a>.<a class="xref" href="Java.Net.Http.HttpResponse.BodyHandler-1.html">BodyHandler</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dt><a class="xref" href="Java.Net.Http.HttpResponse.html">HttpResponse</a>.<a class="xref" href="Java.Net.Http.HttpResponse.BodyHandler-1.html">BodyHandler</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
     <dd><p><a class="xref" href="Java.Net.Http.HttpResponse.BodyHandler.html">HttpResponse.BodyHandler</a></p>
 </dd>
   </dl>

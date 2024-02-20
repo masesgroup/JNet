@@ -725,7 +725,7 @@ public Certificate(params object[] args)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Type { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public String Type { get; }</code></pre>
   </div>
 
 
@@ -734,7 +734,7 @@ public Certificate(params object[] args)</code></pre>
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
     <dd></dd>
   </dl>
 
@@ -768,6 +768,55 @@ public Certificate(params object[] args)</code></pre>
   <dl class="parameters">
     <dt><code>arg0</code> <a class="xref" href="Java.Security.PublicKey.html">PublicKey</a></dt>
     <dd><p><a class="xref" href="Java.Security.PublicKey.html">PublicKey</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Security.Cert.CertificateException.html">CertificateException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Security.NoSuchAlgorithmException.html">NoSuchAlgorithmException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Security.InvalidKeyException.html">InvalidKeyException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Security.NoSuchProviderException.html">NoSuchProviderException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Security.SignatureException.html">SignatureException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Security_Cert_Certificate_Verify_" data-uid="Java.Security.Cert.Certificate.Verify*"></a>
+
+  <h3 id="Java_Security_Cert_Certificate_Verify_Java_Security_PublicKey_Java_Lang_String_" data-uid="Java.Security.Cert.Certificate.Verify(Java.Security.PublicKey,Java.Lang.String)">
+  Verify(PublicKey, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Security/Cert/Certificate.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Certificate.html#verify(java.security.PublicKey,java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Certificate.html#verify(java.security.PublicKey,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Verify(PublicKey arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Security.PublicKey.html">PublicKey</a></dt>
+    <dd><p><a class="xref" href="Java.Security.PublicKey.html">PublicKey</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -835,55 +884,6 @@ public Certificate(params object[] args)</code></pre>
     <dt><a class="xref" href="Java.Security.NoSuchAlgorithmException.html">NoSuchAlgorithmException</a></dt>
     <dd></dd>
     <dt><a class="xref" href="Java.Security.InvalidKeyException.html">InvalidKeyException</a></dt>
-    <dd></dd>
-    <dt><a class="xref" href="Java.Security.SignatureException.html">SignatureException</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-  <a id="Java_Security_Cert_Certificate_Verify_" data-uid="Java.Security.Cert.Certificate.Verify*"></a>
-
-  <h3 id="Java_Security_Cert_Certificate_Verify_Java_Security_PublicKey_System_String_" data-uid="Java.Security.Cert.Certificate.Verify(Java.Security.PublicKey,System.String)">
-  Verify(PublicKey, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Security/Cert/Certificate.cs/#L79"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Certificate.html#verify(java.security.PublicKey,java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Certificate.html#verify(java.security.PublicKey,java.lang.String)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Verify(PublicKey arg0, string arg1)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="Java.Security.PublicKey.html">PublicKey</a></dt>
-    <dd><p><a class="xref" href="Java.Security.PublicKey.html">PublicKey</a></p>
-</dd>
-    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Java.Security.Cert.CertificateException.html">CertificateException</a></dt>
-    <dd></dd>
-    <dt><a class="xref" href="Java.Security.NoSuchAlgorithmException.html">NoSuchAlgorithmException</a></dt>
-    <dd></dd>
-    <dt><a class="xref" href="Java.Security.InvalidKeyException.html">InvalidKeyException</a></dt>
-    <dd></dd>
-    <dt><a class="xref" href="Java.Security.NoSuchProviderException.html">NoSuchProviderException</a></dt>
     <dd></dd>
     <dt><a class="xref" href="Java.Security.SignatureException.html">SignatureException</a></dt>
     <dd></dd>

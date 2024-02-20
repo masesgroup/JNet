@@ -179,7 +179,7 @@ Class IndexedPropertyDescriptor  <a class="header-action link-secondary" title="
       <a class="xref" href="Java.Beans.FeatureDescriptor.html#Java_Beans_FeatureDescriptor_IsPreferred">FeatureDescriptor.IsPreferred()</a>
     </div>
     <div>
-      <a class="xref" href="Java.Beans.FeatureDescriptor.html#Java_Beans_FeatureDescriptor_GetValue_System_String_">FeatureDescriptor.GetValue(string)</a>
+      <a class="xref" href="Java.Beans.FeatureDescriptor.html#Java_Beans_FeatureDescriptor_GetValue_Java_Lang_String_">FeatureDescriptor.GetValue(String)</a>
     </div>
     <div>
       <a class="xref" href="Java.Beans.FeatureDescriptor.html#Java_Beans_FeatureDescriptor_AttributeNames">FeatureDescriptor.AttributeNames()</a>
@@ -194,7 +194,7 @@ Class IndexedPropertyDescriptor  <a class="header-action link-secondary" title="
       <a class="xref" href="Java.Beans.FeatureDescriptor.html#Java_Beans_FeatureDescriptor_SetPreferred_System_Boolean_">FeatureDescriptor.SetPreferred(bool)</a>
     </div>
     <div>
-      <a class="xref" href="Java.Beans.FeatureDescriptor.html#Java_Beans_FeatureDescriptor_SetValue_System_String_System_Object_">FeatureDescriptor.SetValue(string, object)</a>
+      <a class="xref" href="Java.Beans.FeatureDescriptor.html#Java_Beans_FeatureDescriptor_SetValue_Java_Lang_String_System_Object_">FeatureDescriptor.SetValue(String, object)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;FeatureDescriptor&gt;.SExecute(IJavaType, string, params object[])</a>
@@ -510,40 +510,8 @@ Class IndexedPropertyDescriptor  <a class="header-action link-secondary" title="
 
   <a id="Java_Beans_IndexedPropertyDescriptor__ctor_" data-uid="Java.Beans.IndexedPropertyDescriptor.#ctor*"></a>
 
-  <h3 id="Java_Beans_IndexedPropertyDescriptor__ctor_System_Object___" data-uid="Java.Beans.IndexedPropertyDescriptor.#ctor(System.Object[])">
-  IndexedPropertyDescriptor(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/AllPackageClasses.cs/#L691"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IndexedPropertyDescriptor(params object[] args)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Java_Beans_IndexedPropertyDescriptor__ctor_" data-uid="Java.Beans.IndexedPropertyDescriptor.#ctor*"></a>
-
-  <h3 id="Java_Beans_IndexedPropertyDescriptor__ctor_System_String_Java_Lang_Class_" data-uid="Java.Beans.IndexedPropertyDescriptor.#ctor(System.String,Java.Lang.Class)">
-  IndexedPropertyDescriptor(string, Class)
+  <h3 id="Java_Beans_IndexedPropertyDescriptor__ctor_Java_Lang_String_Java_Lang_Class_" data-uid="Java.Beans.IndexedPropertyDescriptor.#ctor(Java.Lang.String,Java.Lang.Class)">
+  IndexedPropertyDescriptor(String, Class)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/IndexedPropertyDescriptor.cs/#L52"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -552,13 +520,13 @@ Class IndexedPropertyDescriptor  <a class="header-action link-secondary" title="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IndexedPropertyDescriptor(string arg0, Class arg1)</code></pre>
+    <pre><code class="lang-csharp hljs">public IndexedPropertyDescriptor(String arg0, Class arg1)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
     <dt><code>arg1</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
     <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
@@ -583,8 +551,8 @@ Class IndexedPropertyDescriptor  <a class="header-action link-secondary" title="
 
   <a id="Java_Beans_IndexedPropertyDescriptor__ctor_" data-uid="Java.Beans.IndexedPropertyDescriptor.#ctor*"></a>
 
-  <h3 id="Java_Beans_IndexedPropertyDescriptor__ctor_System_String_Java_Lang_Class_System_String_System_String_System_String_System_String_" data-uid="Java.Beans.IndexedPropertyDescriptor.#ctor(System.String,Java.Lang.Class,System.String,System.String,System.String,System.String)">
-  IndexedPropertyDescriptor(string, Class, string, string, string, string)
+  <h3 id="Java_Beans_IndexedPropertyDescriptor__ctor_Java_Lang_String_Java_Lang_Class_Java_Lang_String_Java_Lang_String_Java_Lang_String_Java_Lang_String_" data-uid="Java.Beans.IndexedPropertyDescriptor.#ctor(Java.Lang.String,Java.Lang.Class,Java.Lang.String,Java.Lang.String,Java.Lang.String,Java.Lang.String)">
+  IndexedPropertyDescriptor(String, Class, String, String, String, String)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/IndexedPropertyDescriptor.cs/#L42"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -593,28 +561,28 @@ Class IndexedPropertyDescriptor  <a class="header-action link-secondary" title="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IndexedPropertyDescriptor(string arg0, Class arg1, string arg2, string arg3, string arg4, string arg5)</code></pre>
+    <pre><code class="lang-csharp hljs">public IndexedPropertyDescriptor(String arg0, Class arg1, String arg2, String arg3, String arg4, String arg5)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
     <dt><code>arg1</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
     <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
 </dd>
-    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
-    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><code>arg3</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
-    <dt><code>arg4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><code>arg4</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
-    <dt><code>arg5</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><code>arg5</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
   </dl>
 
@@ -636,8 +604,8 @@ Class IndexedPropertyDescriptor  <a class="header-action link-secondary" title="
 
   <a id="Java_Beans_IndexedPropertyDescriptor__ctor_" data-uid="Java.Beans.IndexedPropertyDescriptor.#ctor*"></a>
 
-  <h3 id="Java_Beans_IndexedPropertyDescriptor__ctor_System_String_Java_Lang_Reflect_Method_Java_Lang_Reflect_Method_Java_Lang_Reflect_Method_Java_Lang_Reflect_Method_" data-uid="Java.Beans.IndexedPropertyDescriptor.#ctor(System.String,Java.Lang.Reflect.Method,Java.Lang.Reflect.Method,Java.Lang.Reflect.Method,Java.Lang.Reflect.Method)">
-  IndexedPropertyDescriptor(string, Method, Method, Method, Method)
+  <h3 id="Java_Beans_IndexedPropertyDescriptor__ctor_Java_Lang_String_Java_Lang_Reflect_Method_Java_Lang_Reflect_Method_Java_Lang_Reflect_Method_Java_Lang_Reflect_Method_" data-uid="Java.Beans.IndexedPropertyDescriptor.#ctor(Java.Lang.String,Java.Lang.Reflect.Method,Java.Lang.Reflect.Method,Java.Lang.Reflect.Method,Java.Lang.Reflect.Method)">
+  IndexedPropertyDescriptor(String, Method, Method, Method, Method)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/IndexedPropertyDescriptor.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -646,13 +614,13 @@ Class IndexedPropertyDescriptor  <a class="header-action link-secondary" title="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IndexedPropertyDescriptor(string arg0, Method arg1, Method arg2, Method arg3, Method arg4)</code></pre>
+    <pre><code class="lang-csharp hljs">public IndexedPropertyDescriptor(String arg0, Method arg1, Method arg2, Method arg3, Method arg4)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
 </dd>
     <dt><code>arg1</code> <a class="xref" href="Java.Lang.Reflect.Method.html">Method</a></dt>
     <dd><p><a class="xref" href="Java.Lang.Reflect.Method.html">Method</a></p>
@@ -681,6 +649,38 @@ Class IndexedPropertyDescriptor  <a class="header-action link-secondary" title="
     <dt><a class="xref" href="Java.Beans.IntrospectionException.html">IntrospectionException</a></dt>
     <dd></dd>
   </dl>
+
+
+
+  <a id="Java_Beans_IndexedPropertyDescriptor__ctor_" data-uid="Java.Beans.IndexedPropertyDescriptor.#ctor*"></a>
+
+  <h3 id="Java_Beans_IndexedPropertyDescriptor__ctor_System_Object___" data-uid="Java.Beans.IndexedPropertyDescriptor.#ctor(System.Object[])">
+  IndexedPropertyDescriptor(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/AllPackageClasses.cs/#L691"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IndexedPropertyDescriptor(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
 

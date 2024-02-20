@@ -48334,6 +48334,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Specific.Extensions.JavaLangExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Specific.Extensions.JavaLangExtension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MASES.JNet.Specific.Extensions.JavaUtilExtensions.yml",
       "output": {
         ".html": {
