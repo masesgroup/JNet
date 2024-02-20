@@ -77,7 +77,10 @@ This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDU
 * V2.0.0+: the most notable changes in this version are in:
   * JNet: complete review of all classes based on automatic generation done using JNetReflector
   * JNetReflector: improvements in many areas from generation of .NET interfaces to generics and where clauses, full story in https://github.com/masesgroup/JNet/issues/178
-
+* V2.3.0+: the most notable changes in this version are in:
+  * JNet: review of classes based on latest updates of JNetReflector
+  * JNetReflector: use `Java.Lang.String`, by default, instead of `string` (`System.String`) (#363)
+  
 ---
 
 ## Runtime engine
