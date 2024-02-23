@@ -79,6 +79,9 @@ This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDU
 * V2.3.0+: the most notable changes in this version are in:
   * JNet: review of classes based on latest updates of JNetReflector
   * JNetReflector: use `Java.Lang.String`, by default, instead of `string` (`System.String`) (see https://github.com/masesgroup/JNet/issues/363)
+* V2.3.1+: the most notable changes in this version are in:
+  * JNet: review of classes based on latest updates of JNetReflector
+  * JNetReflector: use native types only when JVM counter-part is a native type (see https://github.com/masesgroup/JNet/issues/371)
   
 ---
 
