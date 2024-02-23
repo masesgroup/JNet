@@ -17,12 +17,23 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
+using MASES.JNet.Specific.Extensions;
 using System;
 
 namespace Java.Lang
 {
-    public partial class Double //: Number
+    public partial class Double : INativeConvertible<Double, double>
     {
+        double INativeConvertible<Double, double>.ToCLR()
+        {
+            return DoubleValue();
+        }
+
+        Double INativeConvertible<Double, double>.ToJVM(double clrValue)
+        {
+            return ValueOf(clrValue);
+        }
+
         /// <summary>
         /// Converter from <see cref="Double"/> to <see cref="double"/>
         /// </summary>

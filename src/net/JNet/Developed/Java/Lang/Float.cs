@@ -17,12 +17,23 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
+using MASES.JNet.Specific.Extensions;
 using System;
 
 namespace Java.Lang
 {
-    public partial class Float : Number
+    public partial class Float : INativeConvertible<Float, float>
     {
+        float INativeConvertible<Float, float>.ToCLR()
+        {
+            return FloatValue();
+        }
+
+        Float INativeConvertible<Float, float>.ToJVM(float clrValue)
+        {
+            return ValueOf(clrValue);
+        }
+
         /// <summary>
         /// Converter from <see cref="Float"/> to <see cref="float"/>
         /// </summary>

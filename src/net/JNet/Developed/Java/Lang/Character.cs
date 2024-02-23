@@ -17,12 +17,23 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
+using MASES.JNet.Specific.Extensions;
 using System;
 
 namespace Java.Lang
 {
-    public partial class Character
+    public partial class Character : INativeConvertible<Character, char>
     {
+        char INativeConvertible<Character, char>.ToCLR()
+        {
+            return CharValue();
+        }
+
+        Character INativeConvertible<Character, char>.ToJVM(char clrValue)
+        {
+            return ValueOf(clrValue);
+        }
+
         /// <summary>
         /// Converter from <see cref="Character"/> to <see cref="char"/>
         /// </summary>
