@@ -23,6 +23,7 @@ using System.Diagnostics;
 using Java.Lang;
 using MASES.JCOBridge.C2JBridge;
 using System.Threading.Tasks;
+using System.Linq;
 
 namespace MASES.JNetTest
 {
@@ -52,6 +53,7 @@ namespace MASES.JNetTest
             }
             catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
 
+            TestSimpleOperatorsExtension<Java.Lang.String, string>("a", "b", "c");
             TestOperators();
 
             TestIterator();
@@ -86,6 +88,20 @@ namespace MASES.JNetTest
             string bstr = "";
 
             var ccc = astr + bstr;
+        }
+
+        static void TestSimpleOperatorsExtension<TJVM, TNet>(params TNet[] dataInput)
+            where TJVM : INativeConvertible<TJVM, TNet>, new()
+        {
+            var jvmArray = dataInput.ToJVMArray<TJVM, TNet>();
+
+            var jvmIterable = dataInput.ToJVMCollectionType<ArrayList<TJVM>, TJVM, TNet>();
+
+            var netList = jvmArray.ToNetCollectionType<System.Collections.Generic.List<TNet>, TNet, TJVM>();
+
+            TNet[] arrayNet = jvmArray.ToNetArray<TNet, TJVM>();
+
+            if (!dataInput.SequenceEqual(arrayNet)) throw new System.InvalidOperationException();
         }
 
         static async Task TestAsyncIterator()
