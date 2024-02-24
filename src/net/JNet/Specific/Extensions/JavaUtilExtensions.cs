@@ -114,7 +114,7 @@ namespace MASES.JNet.Specific.Extensions
             var tInstance = new TIterableType();
             foreach (var item in set)
             {
-#if NET462_OR_GREATER
+#if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
                 tInstance.Add(func(item));
 #else
                 tInstance.Add(func != null ? func(item) : TJVMTypeInner.ToJVM(item));
