@@ -35,7 +35,7 @@ namespace MASES.JNet.Specific.Extensions
         /// </summary>
         /// <returns>The converted <typeparamref name="TNetType"/></returns>
         TNetType ToCLR();
-#if !NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
+#if !(NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS)
         /// <summary>
         /// Returns the <typeparamref name="TJVMType"/> from the <paramref name="clrValue"/> instance
         /// </summary>
