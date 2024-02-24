@@ -28,8 +28,12 @@ namespace Java.Lang
         {
             return FloatValue();
         }
-
-        Float INativeConvertible<Float, float>.ToJVM(float clrValue)
+        /// <summary>
+        /// Returns the <see cref="Float"/> from the <paramref name="clrValue"/> instance
+        /// </summary>
+        /// <param name="clrValue">The <see cref="float"/> of CLR</param>
+        /// <returns>The converted <see cref="Float"/></returns>
+        public static Float ToJVM(float clrValue)
         {
             return ValueOf(clrValue);
         }

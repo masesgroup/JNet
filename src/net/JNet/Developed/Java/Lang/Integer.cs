@@ -28,8 +28,12 @@ namespace Java.Lang
         {
             return IntValue();
         }
-
-        Integer INativeConvertible<Integer, int>.ToJVM(int clrValue)
+        /// <summary>
+        /// Returns the <see cref="Integer"/> from the <paramref name="clrValue"/> instance
+        /// </summary>
+        /// <param name="clrValue">The <see cref="int"/> of CLR</param>
+        /// <returns>The converted <see cref="Integer"/></returns>
+        public static Integer ToJVM(int clrValue)
         {
             return ValueOf(clrValue);
         }

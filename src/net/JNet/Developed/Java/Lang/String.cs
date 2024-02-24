@@ -81,8 +81,12 @@ namespace Java.Lang
         {
             return ToString();
         }
-
-        String INativeConvertible<String, string>.ToJVM(string clrValue)
+        /// <summary>
+        /// Returns the <see cref="String"/> from the <paramref name="clrValue"/> instance
+        /// </summary>
+        /// <param name="clrValue">The <see cref="string"/> of CLR</param>
+        /// <returns>The converted <see cref="String"/></returns>
+        public static String ToJVM(string clrValue)
         {
             return clrValue != null ? new Java.Lang.String(clrValue) : null;
         }

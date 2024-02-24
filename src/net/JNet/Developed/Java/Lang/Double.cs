@@ -28,8 +28,12 @@ namespace Java.Lang
         {
             return DoubleValue();
         }
-
-        Double INativeConvertible<Double, double>.ToJVM(double clrValue)
+        /// <summary>
+        /// Returns the <see cref="Double"/> from the <paramref name="clrValue"/> instance
+        /// </summary>
+        /// <param name="clrValue">The <see cref="double"/> of CLR</param>
+        /// <returns>The converted <see cref="Double"/></returns>
+        public static Double ToJVM(double clrValue)
         {
             return ValueOf(clrValue);
         }

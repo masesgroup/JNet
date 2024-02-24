@@ -28,8 +28,12 @@ namespace Java.Lang
         {
             return BooleanValue();
         }
-
-        Boolean INativeConvertible<Boolean, bool>.ToJVM(bool clrValue)
+        /// <summary>
+        /// Returns the <see cref="Boolean"/> from the <paramref name="clrValue"/> instance
+        /// </summary>
+        /// <param name="clrValue">The <see cref="bool"/> of CLR</param>
+        /// <returns>The converted <see cref="Boolean"/></returns>
+        public static Boolean ToJVM(bool clrValue)
         {
             return ValueOf(clrValue);
         }

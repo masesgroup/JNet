@@ -28,8 +28,12 @@ namespace Java.Lang
         {
             return LongValue();
         }
-
-        Long INativeConvertible<Long, long>.ToJVM(long clrValue)
+        /// <summary>
+        /// Returns the <see cref="Long"/> from the <paramref name="clrValue"/> instance
+        /// </summary>
+        /// <param name="clrValue">The <see cref="long"/> of CLR</param>
+        /// <returns>The converted <see cref="Long"/></returns>
+        public static Long ToJVM(long clrValue)
         {
             return ValueOf(clrValue);
         }

@@ -28,8 +28,12 @@ namespace Java.Lang
         {
             return ByteValue();
         }
-
-        Byte INativeConvertible<Byte, byte>.ToJVM(byte clrValue)
+        /// <summary>
+        /// Returns the <see cref="Byte"/> from the <paramref name="clrValue"/> instance
+        /// </summary>
+        /// <param name="clrValue">The <see cref="byte"/> of CLR</param>
+        /// <returns>The converted <see cref="Byte"/></returns>
+        public static Byte ToJVM(byte clrValue)
         {
             return ValueOf(clrValue);
         }

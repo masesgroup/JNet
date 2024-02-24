@@ -28,8 +28,12 @@ namespace Java.Lang
         {
             return CharValue();
         }
-
-        Character INativeConvertible<Character, char>.ToJVM(char clrValue)
+        /// <summary>
+        /// Returns the <see cref="Character"/> from the <paramref name="clrValue"/> instance
+        /// </summary>
+        /// <param name="clrValue">The <see cref="char"/> of CLR</param>
+        /// <returns>The converted <see cref="Character"/></returns>
+        public static Character ToJVM(char clrValue)
         {
             return ValueOf(clrValue);
         }

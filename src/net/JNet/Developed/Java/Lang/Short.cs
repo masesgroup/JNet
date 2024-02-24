@@ -28,8 +28,12 @@ namespace Java.Lang
         {
             return ShortValue();
         }
-
-        Short INativeConvertible<Short, short>.ToJVM(short clrValue)
+        /// <summary>
+        /// Returns the <see cref="Short"/> from the <paramref name="clrValue"/> instance
+        /// </summary>
+        /// <param name="clrValue">The <see cref="short"/> of CLR</param>
+        /// <returns>The converted <see cref="Short"/></returns>
+        public static Short ToJVM(short clrValue)
         {
             return ValueOf(clrValue);
         }

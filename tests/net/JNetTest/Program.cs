@@ -55,11 +55,10 @@ namespace MASES.JNetTest
 
             TestSimpleOperatorsExtension<Java.Lang.String, string>("a", "b", "c");
             TestOperators();
+            TestExtensions();
 
             TestIterator();
             TestAsyncIterator().Wait();
-
-            TestExtensions();
         }
 
         static void TestOperators()
@@ -99,7 +98,7 @@ namespace MASES.JNetTest
 
             var netList = jvmArray.ToNetCollectionType<System.Collections.Generic.List<TNet>, TNet, TJVM>();
 
-            TNet[] arrayNet = jvmArray.ToNetArray<TNet, TJVM>();
+            TNet[] arrayNet = jvmIterable.ToNetArray<TNet, TJVM>();
 
             if (!dataInput.SequenceEqual(arrayNet)) throw new System.InvalidOperationException();
         }
@@ -150,8 +149,8 @@ namespace MASES.JNetTest
             dict.Add("true", true);
             dict.Add("false", false);
             dict.Add("true2", true);
-            var map = dict.ToMap();
-            var newDict = map.ToDictiony();
+            var map = dict.ToJVMMap<HashMap<Java.Lang.String, Java.Lang.Boolean>, Java.Lang.String, Java.Lang.Boolean, string, bool>();
+            var newDict = map.ToNetDictiony<string, bool, Java.Lang.String, Java.Lang.Boolean>();
 
             const int execution = 10000;
             Stopwatch w = Stopwatch.StartNew();
