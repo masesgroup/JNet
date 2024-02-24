@@ -25,6 +25,7 @@
 		<TargetFrameworks>net462;net6.0;net7.0;net8.0</TargetFrameworks>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(JNET_DOCKER_BUILD_ACTIONS)' == 'true'">
+		<DefineConstants>$(DefineConstants);JNET_DOCKER_BUILD_ACTIONS</DefineConstants>
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
 		<TargetFramework>net6.0</TargetFramework>
 	</PropertyGroup>

@@ -50,7 +50,7 @@ namespace MASES.JNet.Specific.Extensions
     /// </summary>
     public static class JavaUtilExtensions
     {
-#if NET462_OR_GREATER
+#if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
         const string ToJVMMethod = "ToJVM";
 
         static Func<TNetType, TJVMType> GetToJVMMethod<TNetType, TJVMType>()
@@ -105,7 +105,7 @@ namespace MASES.JNet.Specific.Extensions
             where TIterableType : Java.Util.Collection<TJVMTypeInner>, new()
             where TJVMTypeInner : INativeConvertible<TJVMTypeInner, TNetType>, new()
         {
-#if NET462_OR_GREATER
+#if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
             if (func == null)
             {
                 func = GetToJVMMethod<TNetType, TJVMTypeInner>();
@@ -144,7 +144,7 @@ namespace MASES.JNet.Specific.Extensions
         public static TJVMType[] ToJVMArray<TJVMType, TNetType>(this TNetType[] collection, Func<TNetType, TJVMType> func = null)
             where TJVMType : INativeConvertible<TJVMType, TNetType>, new()
         {
-#if NET462_OR_GREATER
+#if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
             if (func == null)
             {
                 func = GetToJVMMethod<TNetType, TJVMType>();
@@ -153,7 +153,7 @@ namespace MASES.JNet.Specific.Extensions
             System.Collections.Generic.List<TJVMType> list = new();
             foreach (var item in collection)
             {
-#if NET462_OR_GREATER
+#if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
                 list.Add(func(item));
 #else
                 list.Add(func != null ? func(item) : TJVMType.ToJVM(item));
@@ -227,7 +227,7 @@ namespace MASES.JNet.Specific.Extensions
             where TJVMK : INativeConvertible<TJVMK, K>
             where TJVMV : INativeConvertible<TJVMV, V>
         {
-#if NET462_OR_GREATER
+#if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
             if (keyConverter == null)
             {
                 keyConverter = GetToJVMMethod<K, TJVMK>();
@@ -241,7 +241,7 @@ namespace MASES.JNet.Specific.Extensions
             var tInstance = new TMapType();
             foreach (var item in dictionary)
             {
-#if NET462_OR_GREATER
+#if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
                 tInstance.Put(keyConverter(item.Key), valueConverter(item.Value));
 #else
                 tInstance.Put(keyConverter != null ? keyConverter(item.Key) : TJVMK.ToJVM(item.Key), valueConverter != null ? valueConverter(item.Value) : TJVMV.ToJVM(item.Value));
@@ -291,7 +291,7 @@ namespace MASES.JNet.Specific.Extensions
             where TJVMK : INativeConvertible<TJVMK, K>
             where TJVMV : INativeConvertible<TJVMV, V>
         {
-#if NET462_OR_GREATER
+#if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
             if (keyConverter == null)
             {
                 keyConverter = GetToJVMMethod<K, TJVMK>();
@@ -305,7 +305,7 @@ namespace MASES.JNet.Specific.Extensions
             var tInstance = new TDictionaryType();
             foreach (var item in dictionary)
             {
-#if NET462_OR_GREATER
+#if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
                 tInstance.Put(keyConverter(item.Key), valueConverter(item.Value));
 #else
                 tInstance.Put(keyConverter != null ? keyConverter(item.Key) : TJVMK.ToJVM(item.Key), valueConverter != null ? valueConverter(item.Value) : TJVMV.ToJVM(item.Value));
