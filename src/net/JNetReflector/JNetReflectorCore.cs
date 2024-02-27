@@ -51,6 +51,8 @@ namespace MASES.JNetReflector
                 public string Url { get; set; }
             }
 
+            public string JavaPLocationPath { get; set; }
+
             public string OriginRootPath { get; set; }
 
             public string OriginJavadocUrl { get; set; }
@@ -92,6 +94,8 @@ namespace MASES.JNetReflector
             public IEnumerable<string> ClassesToAvoid { get; set; }
 
             public IEnumerable<string> ClassesToAvoidInGenerics { get; set; }
+
+            public bool PreferMethodWithSignature { get; set; }
 
             public bool OnlyPropertiesForGetterSetter { get; set; }
 
@@ -138,6 +142,12 @@ namespace MASES.JNetReflector
                         Name = CLIParam.ConfigurationFile,
                         Type = ArgumentType.Double,
                         Help = "The path where is stored a JSON file containing the tool configuration properties",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.JavaPLocationPath,
+                        Type = ArgumentType.Double,
+                        Help = "The path where the tool will locate javap",
                     },
                     new ArgumentMetadata<string>()
                     {
@@ -272,6 +282,12 @@ namespace MASES.JNetReflector
                     },
                     new ArgumentMetadata<object>()
                     {
+                        Name = CLIParam.PreferMethodWithSignature,
+                        Type = ArgumentType.Single,
+                        Help = "The option forces the tool to identify and use signature when available",
+                    },
+                    new ArgumentMetadata<object>()
+                    {
                         Name = CLIParam.OnlyPropertiesForGetterSetter,
                         Type = ArgumentType.Single,
                         Help = "The option forces the tool to convert into properties only getter/setter",
@@ -377,6 +393,9 @@ namespace MASES.JNetReflector
 
         static ConfigurationType _ConfigurationFromFile;
 
+        static string _JavaPLocationPath;
+        public static string JavaPLocationPath => _JavaPLocationPath ?? _ConfigurationFromFile.JavaPLocationPath;
+
         static string _OriginRootPath;
         public static string OriginRootPath => _OriginRootPath ?? _ConfigurationFromFile.OriginRootPath;
 
@@ -441,6 +460,9 @@ namespace MASES.JNetReflector
         static IEnumerable<string> _ClassesToAvoidInGenerics;
         public static IEnumerable<string> ClassesToAvoidInGenerics => _ClassesToAvoidInGenerics ?? _ConfigurationFromFile.ClassesToAvoidInGenerics;
 
+        static bool? _PreferMethodWithSignature;
+        public static bool PreferMethodWithSignature => _PreferMethodWithSignature ?? _ConfigurationFromFile.PreferMethodWithSignature;
+
         static bool? _OnlyPropertiesForGetterSetter;
         public static bool OnlyPropertiesForGetterSetter => _OnlyPropertiesForGetterSetter ?? _ConfigurationFromFile.OnlyPropertiesForGetterSetter;
 
@@ -490,6 +512,8 @@ namespace MASES.JNetReflector
         protected override string[] ProcessCommandLine()
         {
             var result = base.ProcessCommandLine();
+
+            _JavaPLocationPath = ParsedArgs.Get<string>(CLIParam.JavaPLocationPath);
 
             if (ParsedArgs.Exist(CLIParam.ConfigurationFile))
             {
@@ -657,6 +681,7 @@ namespace MASES.JNetReflector
             _OriginJavadocUrl = ParsedArgs.Get<string>(CLIParam.OriginJavadocUrl);
             _JavadocVersion = ParsedArgs.Get<int>(CLIParam.JavadocVersion);
 
+            if (ParsedArgs.Exist(CLIParam.PreferMethodWithSignature)) _PreferMethodWithSignature = true;
             if (ParsedArgs.Exist(CLIParam.OnlyPropertiesForGetterSetter)) _OnlyPropertiesForGetterSetter = true;
             if (ParsedArgs.Exist(CLIParam.ReflectDeprecated)) _ReflectDeprecated = true;
             if (ParsedArgs.Exist(CLIParam.AvoidCSharpGenericDefinition)) _AvoidCSharpGenericDefinition = true;
@@ -708,5 +733,15 @@ namespace MASES.JNetReflector
     /// </summary>
     public class JNetReflectorCore : JNetReflectorCore<JNetReflectorCore>
     {
+        public static string CurrentClassPath { get; private set; }
+
+        public override string ClassPath
+        {
+            get
+            {
+                CurrentClassPath = base.ClassPath;
+                return CurrentClassPath;
+            }
+        }
     }
 }

@@ -199,11 +199,11 @@ namespace MASES.JNetReflector.Templates
                 public const string LISTENER_HANDLER_NAME = "METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER";
                 public const string LISTENER_FIRST_PARAMETER = "METHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER";
                 public const string SINGLE_LISTENER_HANDLER_FORMAT = "    AddEventHandler(\"{0}\", new System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandler));"; // removed OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER = METHOD_STUB_METHOD_NAME_PLACEHOLDER;";
-                public const string EXECUTION_FORMAT = "{0}{1}{2}(\"{3}\"{4});";
+                public const string EXECUTION_FORMAT = "{0}{1}{2}(\"{3}\"{4}{5});";
                 public const string SINGLE_ARRAY_EXECUTION_FORMAT = "new object[] {{ {0} }}";
-                public const string STATIC_EXECUTION_FORMAT = "{0}{1}{2}(LocalBridgeClazz, \"{3}\"{4});";
-                public const string EXECUTION_FORMAT_EXCEPTION = "var obj = {0}<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>(\"{1}\"{2}); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<{3}>(obj);";
-                public const string STATIC_EXECUTION_FORMAT_EXCEPTION = "var obj = {0}<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>(LocalBridgeClazz, \"{1}\"{2}); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<{3}>(obj);";
+                public const string STATIC_EXECUTION_FORMAT = "{0}{1}{2}(LocalBridgeClazz, \"{3}\"{4}{5});";
+                public const string EXECUTION_FORMAT_EXCEPTION = "var obj = {0}<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>(\"{1}\"{2}{3}); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<{4}>(obj);";
+                public const string STATIC_EXECUTION_FORMAT_EXCEPTION = "var obj = {0}<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>(LocalBridgeClazz, \"{1}\"{2}{3}); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<{4}>(obj);";
                 public static readonly string DEFAULT_DECORATION = "/// <summary>" + Environment.NewLine
                                                                  + "/// METHOD_STUB_METHOD_HELP_PLACEHOLDER" + Environment.NewLine
                                                                  + "/// </summary>";
@@ -219,6 +219,7 @@ namespace MASES.JNetReflector.Templates
 
                 public const string STATIC_EXECUTE = "SExecute";
                 public const string INSTANCE_EXECUTE = "IExecute";
+                public const string SIGNATURE_EXECUTE_TRAILER = "WithSignature";
 
                 public static readonly string ACTION_LISTENER_EXECUTION_HANDLER_FORMAT = "    var methodToExecute = (OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER != null) ? OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER : METHOD_STUB_METHOD_NAME_PLACEHOLDER;" + Environment.NewLine
                                                                                        + "    methodToExecute.Invoke(METHOD_STUB_LISTENER_EXECUTION_PLACEHOLDER);";
@@ -251,14 +252,14 @@ namespace MASES.JNetReflector.Templates
                 public const string EXECUTION = "PROPERTY_STUB_EXECUTION_PLACEHOLDER";
                 public const string GET_INTERFACE_FORMAT = "get;";
                 public const string SET_INTERFACE_FORMAT = " set;";
-                public const string GET_EXECUTION_FORMAT = "get {{ return {0}{1}(\"{2}\"); }}";
-                public const string STATIC_GET_EXECUTION_FORMAT = "get {{ return {0}{1}(LocalBridgeClazz, \"{2}\"); }}";
-                public const string SET_EXECUTION_FORMAT = " set {{ {0}(\"{1}\", value); }}";
-                public const string SET_ARRAY_EXECUTION_FORMAT = " set {{ {0}(\"{1}\", new object[] { value }); }}";
-                public const string STATIC_SET_EXECUTION_FORMAT = " set {{ {0}(LocalBridgeClazz, \"{1}\", value); }}";
-                public const string STATIC_SET_ARRAY_EXECUTION_FORMAT = " set {{ {0}(LocalBridgeClazz, \"{1}\", new object[] { value }); }}";
-                public const string GET_EXECUTION_FORMAT_EXCEPTION = "get {{ var obj = {0}<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>(\"{2}\"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<{1}>(obj); }}";
-                public const string STATIC_GET_EXECUTION_FORMAT_EXCEPTION = "get {{ var obj = {0}<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>(LocalBridgeClazz, \"{2}\"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<{1}>(obj); }}";
+                public const string GET_EXECUTION_FORMAT = "get {{ return {0}{1}(\"{2}\"{3}); }}";
+                public const string STATIC_GET_EXECUTION_FORMAT = "get {{ return {0}{1}(LocalBridgeClazz, \"{2}\"{3}); }}";
+                public const string SET_EXECUTION_FORMAT = " set {{ {0}(\"{1}\"{2}, value); }}";
+                public const string SET_ARRAY_EXECUTION_FORMAT = " set {{ {0}(\"{1}\"{2}, new object[] { value }); }}";
+                public const string STATIC_SET_EXECUTION_FORMAT = " set {{ {0}(LocalBridgeClazz, \"{1}\"{2}, value); }}";
+                public const string STATIC_SET_ARRAY_EXECUTION_FORMAT = " set {{ {0}(LocalBridgeClazz, \"{1}\"{2}, new object[] { value }); }}";
+                public const string GET_EXECUTION_FORMAT_EXCEPTION = "get {{ var obj = {0}<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>(\"{2}\"{3}); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<{1}>(obj); }}";
+                public const string STATIC_GET_EXECUTION_FORMAT_EXCEPTION = "get {{ var obj = {0}<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>(LocalBridgeClazz, \"{2}\"{3}); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<{1}>(obj); }}";
 
                 public static readonly string DEFAULT_DECORATION = "/// <summary>" + Environment.NewLine
                                                                  + "/// PROPERTY_STUB_GET_PROPERTY_HELP_PLACEHOLDER PROPERTY_STUB_SET_PROPERTY_HELP_PLACEHOLDER" + Environment.NewLine
