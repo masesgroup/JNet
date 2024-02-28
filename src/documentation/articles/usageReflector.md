@@ -55,6 +55,7 @@ _jnr_ accepts the following command-line switch:
 * **AvoidCSharpGenericClauseDefinition**: The option forces the tool to reflect generics without create the clauses of C# generic definition
 * **DisableGenericsInNonGenericClasses**: The option disables generation of generic methods in non generic classes
 * **DisableGenerics**: The option forces the tool to disable any generic type
+* **UseDirectDotNetType**: The option forces the tool to use directly .NET type instead of JVM class, netive types are always managed as native (boolean - bool, etc)
 * **CreateInterfaceInheritance**: The option forces the tool to create the C# interface inheritance
 * **DisableInterfaceMethodGeneration**: The option disables the generation of the methods in the C# interface
 * **UseDotNetNullable**: The option forces the tool to use .NET nullable instead of Java types for native types
