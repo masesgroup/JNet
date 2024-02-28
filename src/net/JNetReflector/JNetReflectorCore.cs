@@ -109,7 +109,7 @@ namespace MASES.JNetReflector
 
             public bool DisableGenerics { get; set; }
 
-            public bool UseDirectDotNetString { get; set; }
+            public bool UseDirectDotNetType { get; set; }
 
             public bool CreateInterfaceInheritance { get; set; }
 
@@ -324,9 +324,9 @@ namespace MASES.JNetReflector
                     },
                     new ArgumentMetadata<object>()
                     {
-                        Name = CLIParam.UseDirectDotNetString,
+                        Name = CLIParam.UseDirectDotNetType,
                         Type = ArgumentType.Single,
-                        Help = "The option forces the tool to use directly .NET string instead of JVM string object",
+                        Help = "The option forces the tool to use directly .NET type instead of JVM class, netive types are always managed as native (boolean - bool, etc)",
                     },
                     new ArgumentMetadata<object>()
                     {
@@ -481,8 +481,8 @@ namespace MASES.JNetReflector
         static bool? _DisableGenerics;
         public static bool DisableGenerics => _DisableGenerics ?? _ConfigurationFromFile.DisableGenerics;
 
-        static bool? _UseDirectDotNetString;
-        public static bool UseDirectDotNetString => _UseDirectDotNetString ?? _ConfigurationFromFile.UseDirectDotNetString;
+        static bool? _UseDirectDotNetType;
+        public static bool UseDirectDotNetType => _UseDirectDotNetType ?? _ConfigurationFromFile.UseDirectDotNetType;
 
         static bool? _CreateInterfaceInheritance;
         public static bool CreateInterfaceInheritance => _CreateInterfaceInheritance ?? _ConfigurationFromFile.CreateInterfaceInheritance;
@@ -688,7 +688,7 @@ namespace MASES.JNetReflector
             if (ParsedArgs.Exist(CLIParam.AvoidCSharpGenericClauseDefinition)) _AvoidCSharpGenericClauseDefinition = true;
             if (ParsedArgs.Exist(CLIParam.DisableGenericsInNonGenericClasses)) _DisableGenericsInNonGenericClasses = true;
             if (ParsedArgs.Exist(CLIParam.DisableGenerics)) _DisableGenerics = true;
-            if (ParsedArgs.Exist(CLIParam.UseDirectDotNetString)) _UseDirectDotNetString = true;
+            if (ParsedArgs.Exist(CLIParam.UseDirectDotNetType)) _UseDirectDotNetType = true;
             if (ParsedArgs.Exist(CLIParam.CreateInterfaceInheritance)) _CreateInterfaceInheritance = true;
             if (ParsedArgs.Exist(CLIParam.DisableInterfaceMethodGeneration)) _DisableInterfaceMethodGeneration = true;
             if (ParsedArgs.Exist(CLIParam.UseDotNetNullable)) _UseDotNetNullable = true;
