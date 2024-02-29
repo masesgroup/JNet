@@ -73,35 +73,35 @@ namespace Java.Util.Concurrent
         /// </summary>
         public Java.Lang.Throwable ClosedException
         {
-            get { var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getClosedException"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Lang.Throwable>(obj); }
+            get { var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getClosedException", "()Ljava/lang/Throwable;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Lang.Throwable>(obj); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#getExecutor()"/> 
         /// </summary>
         public Java.Util.Concurrent.Executor Executor
         {
-            get { return IExecute<Java.Util.Concurrent.Executor>("getExecutor"); }
+            get { return IExecuteWithSignature<Java.Util.Concurrent.Executor>("getExecutor", "()Ljava/util/concurrent/Executor;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#getMaxBufferCapacity()"/> 
         /// </summary>
         public int MaxBufferCapacity
         {
-            get { return IExecute<int>("getMaxBufferCapacity"); }
+            get { return IExecuteWithSignature<int>("getMaxBufferCapacity", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#getNumberOfSubscribers()"/> 
         /// </summary>
         public int NumberOfSubscribers
         {
-            get { return IExecute<int>("getNumberOfSubscribers"); }
+            get { return IExecuteWithSignature<int>("getNumberOfSubscribers", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#getSubscribers()"/> 
         /// </summary>
         public Java.Util.List Subscribers
         {
-            get { return IExecute<Java.Util.List>("getSubscribers"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getSubscribers", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#hasSubscribers()"/>
@@ -110,7 +110,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool HasSubscribers()
         {
-            return IExecute<bool>("hasSubscribers");
+            return IExecuteWithSignature<bool>("hasSubscribers", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#isClosed()"/>
@@ -119,7 +119,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool IsClosed()
         {
-            return IExecute<bool>("isClosed");
+            return IExecuteWithSignature<bool>("isClosed", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#isSubscribed(java.util.concurrent.Flow.Subscriber)"/>
@@ -128,7 +128,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool IsSubscribed(Java.Util.Concurrent.Flow.Subscriber arg0)
         {
-            return IExecute<bool>("isSubscribed", arg0);
+            return IExecuteWithSignature<bool>("isSubscribed", "(Ljava/util/concurrent/Flow$Subscriber;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#estimateMaximumLag()"/>
@@ -137,7 +137,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int EstimateMaximumLag()
         {
-            return IExecute<int>("estimateMaximumLag");
+            return IExecuteWithSignature<int>("estimateMaximumLag", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#offer(java.lang.Object,java.util.function.BiPredicate)"/>
@@ -168,7 +168,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int Submit(object arg0)
         {
-            return IExecute<int>("submit", arg0);
+            return IExecuteWithSignature<int>("submit", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#consume(java.util.function.Consumer)"/>
@@ -177,7 +177,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public Java.Util.Concurrent.CompletableFuture Consume(Java.Util.Function.Consumer arg0)
         {
-            return IExecute<Java.Util.Concurrent.CompletableFuture>("consume", arg0);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture>("consume", "(Ljava/util/function/Consumer;)Ljava/util/concurrent/CompletableFuture;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#estimateMinimumDemand()"/>
@@ -186,14 +186,14 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="long"/></returns>
         public long EstimateMinimumDemand()
         {
-            return IExecute<long>("estimateMinimumDemand");
+            return IExecuteWithSignature<long>("estimateMinimumDemand", "()J");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#close()"/>
         /// </summary>
         public void Close()
         {
-            IExecute("close");
+            IExecuteWithSignature("close", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#closeExceptionally(java.lang.Throwable)"/>
@@ -201,7 +201,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         public void CloseExceptionally(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
-            IExecute("closeExceptionally", arg0);
+            IExecuteWithSignature("closeExceptionally", "(Ljava/lang/Throwable;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#subscribe(java.util.concurrent.Flow.Subscriber)"/>
@@ -209,7 +209,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
         public void Subscribe(Java.Util.Concurrent.Flow.Subscriber arg0)
         {
-            IExecute("subscribe", arg0);
+            IExecuteWithSignature("subscribe", "(Ljava/util/concurrent/Flow$Subscriber;)V", arg0);
         }
 
         #endregion
@@ -274,35 +274,35 @@ namespace Java.Util.Concurrent
         /// </summary>
         public Java.Lang.Throwable ClosedException
         {
-            get { var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getClosedException"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Lang.Throwable>(obj); }
+            get { var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getClosedException", "()Ljava/lang/Throwable;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Lang.Throwable>(obj); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#getExecutor()"/> 
         /// </summary>
         public Java.Util.Concurrent.Executor Executor
         {
-            get { return IExecute<Java.Util.Concurrent.Executor>("getExecutor"); }
+            get { return IExecuteWithSignature<Java.Util.Concurrent.Executor>("getExecutor", "()Ljava/util/concurrent/Executor;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#getMaxBufferCapacity()"/> 
         /// </summary>
         public int MaxBufferCapacity
         {
-            get { return IExecute<int>("getMaxBufferCapacity"); }
+            get { return IExecuteWithSignature<int>("getMaxBufferCapacity", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#getNumberOfSubscribers()"/> 
         /// </summary>
         public int NumberOfSubscribers
         {
-            get { return IExecute<int>("getNumberOfSubscribers"); }
+            get { return IExecuteWithSignature<int>("getNumberOfSubscribers", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#getSubscribers()"/> 
         /// </summary>
         public Java.Util.List Subscribers
         {
-            get { return IExecute<Java.Util.List>("getSubscribers"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getSubscribers", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#hasSubscribers()"/>
@@ -311,7 +311,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool HasSubscribers()
         {
-            return IExecute<bool>("hasSubscribers");
+            return IExecuteWithSignature<bool>("hasSubscribers", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#isClosed()"/>
@@ -320,7 +320,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool IsClosed()
         {
-            return IExecute<bool>("isClosed");
+            return IExecuteWithSignature<bool>("isClosed", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#isSubscribed(java.util.concurrent.Flow.Subscriber)"/>
@@ -330,7 +330,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool IsSubscribed<Arg0objectSuperT>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return IExecute<bool>("isSubscribed", arg0);
+            return IExecuteWithSignature<bool>("isSubscribed", "(Ljava/util/concurrent/Flow$Subscriber;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#estimateMaximumLag()"/>
@@ -339,7 +339,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int EstimateMaximumLag()
         {
-            return IExecute<int>("estimateMaximumLag");
+            return IExecuteWithSignature<int>("estimateMaximumLag", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#offer(java.lang.Object,java.util.function.BiPredicate)"/>
@@ -372,7 +372,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int Submit(T arg0)
         {
-            return IExecute<int>("submit", arg0);
+            return IExecuteWithSignature<int>("submit", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#consume(java.util.function.Consumer)"/>
@@ -382,7 +382,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public Java.Util.Concurrent.CompletableFuture<Java.Lang.Void> Consume<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return IExecute<Java.Util.Concurrent.CompletableFuture<Java.Lang.Void>>("consume", arg0);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<Java.Lang.Void>>("consume", "(Ljava/util/function/Consumer;)Ljava/util/concurrent/CompletableFuture;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#estimateMinimumDemand()"/>
@@ -391,14 +391,14 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="long"/></returns>
         public long EstimateMinimumDemand()
         {
-            return IExecute<long>("estimateMinimumDemand");
+            return IExecuteWithSignature<long>("estimateMinimumDemand", "()J");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#close()"/>
         /// </summary>
         public void Close()
         {
-            IExecute("close");
+            IExecuteWithSignature("close", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#closeExceptionally(java.lang.Throwable)"/>
@@ -406,7 +406,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         public void CloseExceptionally(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
-            IExecute("closeExceptionally", arg0);
+            IExecuteWithSignature("closeExceptionally", "(Ljava/lang/Throwable;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#subscribe(java.util.concurrent.Flow.Subscriber)"/>
@@ -415,7 +415,7 @@ namespace Java.Util.Concurrent
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         public void Subscribe<Arg0objectSuperT>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            IExecute("subscribe", arg0);
+            IExecuteWithSignature("subscribe", "(Ljava/util/concurrent/Flow$Subscriber;)V", arg0);
         }
 
         #endregion

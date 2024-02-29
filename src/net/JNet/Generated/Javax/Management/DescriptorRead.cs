@@ -72,7 +72,7 @@ namespace Javax.Management
         /// </summary>
         public Javax.Management.Descriptor Descriptor
         {
-            get { return IExecute<Javax.Management.Descriptor>("getDescriptor"); }
+            get { return IExecuteWithSignature<Javax.Management.Descriptor>("getDescriptor", "()Ljavax/management/Descriptor;"); }
         }
 
         #endregion

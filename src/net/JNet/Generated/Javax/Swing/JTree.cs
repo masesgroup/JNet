@@ -195,224 +195,224 @@ namespace Javax.Swing
         /// </summary>
         public Javax.Swing.Tree.TreePath AnchorSelectionPath
         {
-            get { return IExecute<Javax.Swing.Tree.TreePath>("getAnchorSelectionPath"); } set { IExecute("setAnchorSelectionPath", value); }
+            get { return IExecuteWithSignature<Javax.Swing.Tree.TreePath>("getAnchorSelectionPath", "()Ljavax/swing/tree/TreePath;"); } set { IExecuteWithSignature("setAnchorSelectionPath", "(Ljavax/swing/tree/TreePath;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getCellEditor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setCellEditor(javax.swing.tree.TreeCellEditor)"/>
         /// </summary>
         public Javax.Swing.Tree.TreeCellEditor CellEditor
         {
-            get { return IExecute<Javax.Swing.Tree.TreeCellEditor>("getCellEditor"); } set { IExecute("setCellEditor", value); }
+            get { return IExecuteWithSignature<Javax.Swing.Tree.TreeCellEditor>("getCellEditor", "()Ljavax/swing/tree/TreeCellEditor;"); } set { IExecuteWithSignature("setCellEditor", "(Ljavax/swing/tree/TreeCellEditor;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getCellRenderer()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setCellRenderer(javax.swing.tree.TreeCellRenderer)"/>
         /// </summary>
         public Javax.Swing.Tree.TreeCellRenderer CellRenderer
         {
-            get { return IExecute<Javax.Swing.Tree.TreeCellRenderer>("getCellRenderer"); } set { IExecute("setCellRenderer", value); }
+            get { return IExecuteWithSignature<Javax.Swing.Tree.TreeCellRenderer>("getCellRenderer", "()Ljavax/swing/tree/TreeCellRenderer;"); } set { IExecuteWithSignature("setCellRenderer", "(Ljavax/swing/tree/TreeCellRenderer;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getDragEnabled()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setDragEnabled(boolean)"/>
         /// </summary>
         public bool DragEnabled
         {
-            get { return IExecute<bool>("getDragEnabled"); } set { IExecute("setDragEnabled", value); }
+            get { return IExecuteWithSignature<bool>("getDragEnabled", "()Z"); } set { IExecuteWithSignature("setDragEnabled", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getDropMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setDropMode(javax.swing.DropMode)"/>
         /// </summary>
         public Javax.Swing.DropMode DropMode
         {
-            get { return IExecute<Javax.Swing.DropMode>("getDropMode"); } set { IExecute("setDropMode", value); }
+            get { return IExecuteWithSignature<Javax.Swing.DropMode>("getDropMode", "()Ljavax/swing/DropMode;"); } set { IExecuteWithSignature("setDropMode", "(Ljavax/swing/DropMode;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getEditingPath()"/> 
         /// </summary>
         public Javax.Swing.Tree.TreePath EditingPath
         {
-            get { return IExecute<Javax.Swing.Tree.TreePath>("getEditingPath"); }
+            get { return IExecuteWithSignature<Javax.Swing.Tree.TreePath>("getEditingPath", "()Ljavax/swing/tree/TreePath;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getExpandsSelectedPaths()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setExpandsSelectedPaths(boolean)"/>
         /// </summary>
         public bool ExpandsSelectedPaths
         {
-            get { return IExecute<bool>("getExpandsSelectedPaths"); } set { IExecute("setExpandsSelectedPaths", value); }
+            get { return IExecuteWithSignature<bool>("getExpandsSelectedPaths", "()Z"); } set { IExecuteWithSignature("setExpandsSelectedPaths", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getDropLocation()"/> 
         /// </summary>
         public Javax.Swing.JTree.DropLocation GetDropLocation
         {
-            get { return IExecute<Javax.Swing.JTree.DropLocation>("getDropLocation"); }
+            get { return IExecuteWithSignature<Javax.Swing.JTree.DropLocation>("getDropLocation", "()Ljavax/swing/JTree$DropLocation;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getInvokesStopCellEditing()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setInvokesStopCellEditing(boolean)"/>
         /// </summary>
         public bool InvokesStopCellEditing
         {
-            get { return IExecute<bool>("getInvokesStopCellEditing"); } set { IExecute("setInvokesStopCellEditing", value); }
+            get { return IExecuteWithSignature<bool>("getInvokesStopCellEditing", "()Z"); } set { IExecuteWithSignature("setInvokesStopCellEditing", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getLastSelectedPathComponent()"/> 
         /// </summary>
         public object LastSelectedPathComponent
         {
-            get { return IExecute("getLastSelectedPathComponent"); }
+            get { return IExecuteWithSignature("getLastSelectedPathComponent", "()Ljava/lang/Object;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getLeadSelectionPath()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setLeadSelectionPath(javax.swing.tree.TreePath)"/>
         /// </summary>
         public Javax.Swing.Tree.TreePath LeadSelectionPath
         {
-            get { return IExecute<Javax.Swing.Tree.TreePath>("getLeadSelectionPath"); } set { IExecute("setLeadSelectionPath", value); }
+            get { return IExecuteWithSignature<Javax.Swing.Tree.TreePath>("getLeadSelectionPath", "()Ljavax/swing/tree/TreePath;"); } set { IExecuteWithSignature("setLeadSelectionPath", "(Ljavax/swing/tree/TreePath;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getLeadSelectionRow()"/> 
         /// </summary>
         public int LeadSelectionRow
         {
-            get { return IExecute<int>("getLeadSelectionRow"); }
+            get { return IExecuteWithSignature<int>("getLeadSelectionRow", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getMaxSelectionRow()"/> 
         /// </summary>
         public int MaxSelectionRow
         {
-            get { return IExecute<int>("getMaxSelectionRow"); }
+            get { return IExecuteWithSignature<int>("getMaxSelectionRow", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getMinSelectionRow()"/> 
         /// </summary>
         public int MinSelectionRow
         {
-            get { return IExecute<int>("getMinSelectionRow"); }
+            get { return IExecuteWithSignature<int>("getMinSelectionRow", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setModel(javax.swing.tree.TreeModel)"/>
         /// </summary>
         public Javax.Swing.Tree.TreeModel Model
         {
-            get { return IExecute<Javax.Swing.Tree.TreeModel>("getModel"); } set { IExecute("setModel", value); }
+            get { return IExecuteWithSignature<Javax.Swing.Tree.TreeModel>("getModel", "()Ljavax/swing/tree/TreeModel;"); } set { IExecuteWithSignature("setModel", "(Ljavax/swing/tree/TreeModel;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getPreferredScrollableViewportSize()"/> 
         /// </summary>
         public Java.Awt.Dimension PreferredScrollableViewportSize
         {
-            get { return IExecute<Java.Awt.Dimension>("getPreferredScrollableViewportSize"); }
+            get { return IExecuteWithSignature<Java.Awt.Dimension>("getPreferredScrollableViewportSize", "()Ljava/awt/Dimension;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getRowCount()"/> 
         /// </summary>
         public int RowCount
         {
-            get { return IExecute<int>("getRowCount"); }
+            get { return IExecuteWithSignature<int>("getRowCount", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getRowHeight()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setRowHeight(int)"/>
         /// </summary>
         public int RowHeight
         {
-            get { return IExecute<int>("getRowHeight"); } set { IExecute("setRowHeight", value); }
+            get { return IExecuteWithSignature<int>("getRowHeight", "()I"); } set { IExecuteWithSignature("setRowHeight", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getScrollableTracksViewportHeight()"/> 
         /// </summary>
         public bool ScrollableTracksViewportHeight
         {
-            get { return IExecute<bool>("getScrollableTracksViewportHeight"); }
+            get { return IExecuteWithSignature<bool>("getScrollableTracksViewportHeight", "()Z"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getScrollableTracksViewportWidth()"/> 
         /// </summary>
         public bool ScrollableTracksViewportWidth
         {
-            get { return IExecute<bool>("getScrollableTracksViewportWidth"); }
+            get { return IExecuteWithSignature<bool>("getScrollableTracksViewportWidth", "()Z"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getScrollsOnExpand()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setScrollsOnExpand(boolean)"/>
         /// </summary>
         public bool ScrollsOnExpand
         {
-            get { return IExecute<bool>("getScrollsOnExpand"); } set { IExecute("setScrollsOnExpand", value); }
+            get { return IExecuteWithSignature<bool>("getScrollsOnExpand", "()Z"); } set { IExecuteWithSignature("setScrollsOnExpand", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getSelectionCount()"/> 
         /// </summary>
         public int SelectionCount
         {
-            get { return IExecute<int>("getSelectionCount"); }
+            get { return IExecuteWithSignature<int>("getSelectionCount", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getSelectionModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setSelectionModel(javax.swing.tree.TreeSelectionModel)"/>
         /// </summary>
         public Javax.Swing.Tree.TreeSelectionModel SelectionModel
         {
-            get { return IExecute<Javax.Swing.Tree.TreeSelectionModel>("getSelectionModel"); } set { IExecute("setSelectionModel", value); }
+            get { return IExecuteWithSignature<Javax.Swing.Tree.TreeSelectionModel>("getSelectionModel", "()Ljavax/swing/tree/TreeSelectionModel;"); } set { IExecuteWithSignature("setSelectionModel", "(Ljavax/swing/tree/TreeSelectionModel;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getSelectionPath()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setSelectionPath(javax.swing.tree.TreePath)"/>
         /// </summary>
         public Javax.Swing.Tree.TreePath SelectionPath
         {
-            get { return IExecute<Javax.Swing.Tree.TreePath>("getSelectionPath"); } set { IExecute("setSelectionPath", value); }
+            get { return IExecuteWithSignature<Javax.Swing.Tree.TreePath>("getSelectionPath", "()Ljavax/swing/tree/TreePath;"); } set { IExecuteWithSignature("setSelectionPath", "(Ljavax/swing/tree/TreePath;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getSelectionPaths()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setSelectionPaths(javax.swing.tree.TreePath[])"/>
         /// </summary>
         public Javax.Swing.Tree.TreePath[] SelectionPaths
         {
-            get { return IExecuteArray<Javax.Swing.Tree.TreePath>("getSelectionPaths"); } set { IExecute("setSelectionPaths", value); }
+            get { return IExecuteWithSignatureArray<Javax.Swing.Tree.TreePath>("getSelectionPaths", "()[Ljavax/swing/tree/TreePath;"); } set { IExecuteWithSignature("setSelectionPaths", "([Ljavax/swing/tree/TreePath;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getSelectionRows()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setSelectionRows(int[])"/>
         /// </summary>
         public int[] SelectionRows
         {
-            get { return IExecuteArray<int>("getSelectionRows"); } set { IExecute("setSelectionRows", value); }
+            get { return IExecuteWithSignatureArray<int>("getSelectionRows", "()[I"); } set { IExecuteWithSignature("setSelectionRows", "([I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getShowsRootHandles()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setShowsRootHandles(boolean)"/>
         /// </summary>
         public bool ShowsRootHandles
         {
-            get { return IExecute<bool>("getShowsRootHandles"); } set { IExecute("setShowsRootHandles", value); }
+            get { return IExecuteWithSignature<bool>("getShowsRootHandles", "()Z"); } set { IExecuteWithSignature("setShowsRootHandles", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getToggleClickCount()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setToggleClickCount(int)"/>
         /// </summary>
         public int ToggleClickCount
         {
-            get { return IExecute<int>("getToggleClickCount"); } set { IExecute("setToggleClickCount", value); }
+            get { return IExecuteWithSignature<int>("getToggleClickCount", "()I"); } set { IExecuteWithSignature("setToggleClickCount", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getTreeExpansionListeners()"/> 
         /// </summary>
         public Javax.Swing.Event.TreeExpansionListener[] TreeExpansionListeners
         {
-            get { return IExecuteArray<Javax.Swing.Event.TreeExpansionListener>("getTreeExpansionListeners"); }
+            get { return IExecuteWithSignatureArray<Javax.Swing.Event.TreeExpansionListener>("getTreeExpansionListeners", "()[Ljavax/swing/event/TreeExpansionListener;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getTreeSelectionListeners()"/> 
         /// </summary>
         public Javax.Swing.Event.TreeSelectionListener[] TreeSelectionListeners
         {
-            get { return IExecuteArray<Javax.Swing.Event.TreeSelectionListener>("getTreeSelectionListeners"); }
+            get { return IExecuteWithSignatureArray<Javax.Swing.Event.TreeSelectionListener>("getTreeSelectionListeners", "()[Ljavax/swing/event/TreeSelectionListener;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getTreeWillExpandListeners()"/> 
         /// </summary>
         public Javax.Swing.Event.TreeWillExpandListener[] TreeWillExpandListeners
         {
-            get { return IExecuteArray<Javax.Swing.Event.TreeWillExpandListener>("getTreeWillExpandListeners"); }
+            get { return IExecuteWithSignatureArray<Javax.Swing.Event.TreeWillExpandListener>("getTreeWillExpandListeners", "()[Ljavax/swing/event/TreeWillExpandListener;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getVisibleRowCount()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setVisibleRowCount(int)"/>
         /// </summary>
         public int VisibleRowCount
         {
-            get { return IExecute<int>("getVisibleRowCount"); } set { IExecute("setVisibleRowCount", value); }
+            get { return IExecuteWithSignature<int>("getVisibleRowCount", "()I"); } set { IExecuteWithSignature("setVisibleRowCount", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#hasBeenExpanded(javax.swing.tree.TreePath)"/>
@@ -421,7 +421,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool HasBeenExpanded(Javax.Swing.Tree.TreePath arg0)
         {
-            return IExecute<bool>("hasBeenExpanded", arg0);
+            return IExecuteWithSignature<bool>("hasBeenExpanded", "(Ljavax/swing/tree/TreePath;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isCollapsed(int)"/>
@@ -430,7 +430,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsCollapsed(int arg0)
         {
-            return IExecute<bool>("isCollapsed", arg0);
+            return IExecuteWithSignature<bool>("isCollapsed", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isCollapsed(javax.swing.tree.TreePath)"/>
@@ -439,7 +439,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsCollapsed(Javax.Swing.Tree.TreePath arg0)
         {
-            return IExecute<bool>("isCollapsed", arg0);
+            return IExecuteWithSignature<bool>("isCollapsed", "(Ljavax/swing/tree/TreePath;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isEditable()"/>
@@ -448,7 +448,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsEditable()
         {
-            return IExecute<bool>("isEditable");
+            return IExecuteWithSignature<bool>("isEditable", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isEditing()"/>
@@ -457,7 +457,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsEditing()
         {
-            return IExecute<bool>("isEditing");
+            return IExecuteWithSignature<bool>("isEditing", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isExpanded(int)"/>
@@ -466,7 +466,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsExpanded(int arg0)
         {
-            return IExecute<bool>("isExpanded", arg0);
+            return IExecuteWithSignature<bool>("isExpanded", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isExpanded(javax.swing.tree.TreePath)"/>
@@ -475,7 +475,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsExpanded(Javax.Swing.Tree.TreePath arg0)
         {
-            return IExecute<bool>("isExpanded", arg0);
+            return IExecuteWithSignature<bool>("isExpanded", "(Ljavax/swing/tree/TreePath;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isFixedRowHeight()"/>
@@ -484,7 +484,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsFixedRowHeight()
         {
-            return IExecute<bool>("isFixedRowHeight");
+            return IExecuteWithSignature<bool>("isFixedRowHeight", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isLargeModel()"/>
@@ -493,7 +493,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsLargeModel()
         {
-            return IExecute<bool>("isLargeModel");
+            return IExecuteWithSignature<bool>("isLargeModel", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isPathEditable(javax.swing.tree.TreePath)"/>
@@ -502,7 +502,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsPathEditable(Javax.Swing.Tree.TreePath arg0)
         {
-            return IExecute<bool>("isPathEditable", arg0);
+            return IExecuteWithSignature<bool>("isPathEditable", "(Ljavax/swing/tree/TreePath;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isPathSelected(javax.swing.tree.TreePath)"/>
@@ -511,7 +511,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsPathSelected(Javax.Swing.Tree.TreePath arg0)
         {
-            return IExecute<bool>("isPathSelected", arg0);
+            return IExecuteWithSignature<bool>("isPathSelected", "(Ljavax/swing/tree/TreePath;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isRootVisible()"/>
@@ -520,7 +520,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsRootVisible()
         {
-            return IExecute<bool>("isRootVisible");
+            return IExecuteWithSignature<bool>("isRootVisible", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isRowSelected(int)"/>
@@ -529,7 +529,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsRowSelected(int arg0)
         {
-            return IExecute<bool>("isRowSelected", arg0);
+            return IExecuteWithSignature<bool>("isRowSelected", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isSelectionEmpty()"/>
@@ -538,7 +538,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsSelectionEmpty()
         {
-            return IExecute<bool>("isSelectionEmpty");
+            return IExecuteWithSignature<bool>("isSelectionEmpty", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isVisible(javax.swing.tree.TreePath)"/>
@@ -547,7 +547,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsVisible(Javax.Swing.Tree.TreePath arg0)
         {
-            return IExecute<bool>("isVisible", arg0);
+            return IExecuteWithSignature<bool>("isVisible", "(Ljavax/swing/tree/TreePath;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#stopEditing()"/>
@@ -556,7 +556,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool StopEditing()
         {
-            return IExecute<bool>("stopEditing");
+            return IExecuteWithSignature<bool>("stopEditing", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getClosestRowForLocation(int,int)"/>
@@ -585,7 +585,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetRowForPath(Javax.Swing.Tree.TreePath arg0)
         {
-            return IExecute<int>("getRowForPath", arg0);
+            return IExecuteWithSignature<int>("getRowForPath", "(Ljavax/swing/tree/TreePath;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getScrollableBlockIncrement(java.awt.Rectangle,int,int)"/>
@@ -616,7 +616,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle GetPathBounds(Javax.Swing.Tree.TreePath arg0)
         {
-            return IExecute<Java.Awt.Rectangle>("getPathBounds", arg0);
+            return IExecuteWithSignature<Java.Awt.Rectangle>("getPathBounds", "(Ljavax/swing/tree/TreePath;)Ljava/awt/Rectangle;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getRowBounds(int)"/>
@@ -625,7 +625,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle GetRowBounds(int arg0)
         {
-            return IExecute<Java.Awt.Rectangle>("getRowBounds", arg0);
+            return IExecuteWithSignature<Java.Awt.Rectangle>("getRowBounds", "(I)Ljava/awt/Rectangle;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#convertValueToText(java.lang.Object,boolean,boolean,boolean,int,boolean)"/>
@@ -648,7 +648,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<Javax.Swing.Tree.TreePath> GetExpandedDescendants(Javax.Swing.Tree.TreePath arg0)
         {
-            return IExecute<Java.Util.Enumeration<Javax.Swing.Tree.TreePath>>("getExpandedDescendants", arg0);
+            return IExecuteWithSignature<Java.Util.Enumeration<Javax.Swing.Tree.TreePath>>("getExpandedDescendants", "(Ljavax/swing/tree/TreePath;)Ljava/util/Enumeration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getClosestPathForLocation(int,int)"/>
@@ -688,7 +688,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
         public Javax.Swing.Tree.TreePath GetPathForRow(int arg0)
         {
-            return IExecute<Javax.Swing.Tree.TreePath>("getPathForRow", arg0);
+            return IExecuteWithSignature<Javax.Swing.Tree.TreePath>("getPathForRow", "(I)Ljavax/swing/tree/TreePath;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addSelectionInterval(int,int)"/>
@@ -705,7 +705,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void AddSelectionPath(Javax.Swing.Tree.TreePath arg0)
         {
-            IExecute("addSelectionPath", arg0);
+            IExecuteWithSignature("addSelectionPath", "(Ljavax/swing/tree/TreePath;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addSelectionPaths(javax.swing.tree.TreePath[])"/>
@@ -713,7 +713,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void AddSelectionPaths(Javax.Swing.Tree.TreePath[] arg0)
         {
-            IExecute("addSelectionPaths", new object[] { arg0 });
+            IExecuteWithSignature("addSelectionPaths", "([Ljavax/swing/tree/TreePath;)V", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addSelectionRow(int)"/>
@@ -721,7 +721,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public void AddSelectionRow(int arg0)
         {
-            IExecute("addSelectionRow", arg0);
+            IExecuteWithSignature("addSelectionRow", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addSelectionRows(int[])"/>
@@ -729,7 +729,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public void AddSelectionRows(int[] arg0)
         {
-            IExecute("addSelectionRows", new object[] { arg0 });
+            IExecuteWithSignature("addSelectionRows", "([I)V", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addTreeExpansionListener(javax.swing.event.TreeExpansionListener)"/>
@@ -737,7 +737,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionListener"/></param>
         public void AddTreeExpansionListener(Javax.Swing.Event.TreeExpansionListener arg0)
         {
-            IExecute("addTreeExpansionListener", arg0);
+            IExecuteWithSignature("addTreeExpansionListener", "(Ljavax/swing/event/TreeExpansionListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addTreeSelectionListener(javax.swing.event.TreeSelectionListener)"/>
@@ -745,7 +745,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.TreeSelectionListener"/></param>
         public void AddTreeSelectionListener(Javax.Swing.Event.TreeSelectionListener arg0)
         {
-            IExecute("addTreeSelectionListener", arg0);
+            IExecuteWithSignature("addTreeSelectionListener", "(Ljavax/swing/event/TreeSelectionListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addTreeWillExpandListener(javax.swing.event.TreeWillExpandListener)"/>
@@ -753,21 +753,21 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.TreeWillExpandListener"/></param>
         public void AddTreeWillExpandListener(Javax.Swing.Event.TreeWillExpandListener arg0)
         {
-            IExecute("addTreeWillExpandListener", arg0);
+            IExecuteWithSignature("addTreeWillExpandListener", "(Ljavax/swing/event/TreeWillExpandListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#cancelEditing()"/>
         /// </summary>
         public void CancelEditing()
         {
-            IExecute("cancelEditing");
+            IExecuteWithSignature("cancelEditing", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#clearSelection()"/>
         /// </summary>
         public void ClearSelection()
         {
-            IExecute("clearSelection");
+            IExecuteWithSignature("clearSelection", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#collapsePath(javax.swing.tree.TreePath)"/>
@@ -775,7 +775,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void CollapsePath(Javax.Swing.Tree.TreePath arg0)
         {
-            IExecute("collapsePath", arg0);
+            IExecuteWithSignature("collapsePath", "(Ljavax/swing/tree/TreePath;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#collapseRow(int)"/>
@@ -783,7 +783,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public void CollapseRow(int arg0)
         {
-            IExecute("collapseRow", arg0);
+            IExecuteWithSignature("collapseRow", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#expandPath(javax.swing.tree.TreePath)"/>
@@ -791,7 +791,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void ExpandPath(Javax.Swing.Tree.TreePath arg0)
         {
-            IExecute("expandPath", arg0);
+            IExecuteWithSignature("expandPath", "(Ljavax/swing/tree/TreePath;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#expandRow(int)"/>
@@ -799,7 +799,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public void ExpandRow(int arg0)
         {
-            IExecute("expandRow", arg0);
+            IExecuteWithSignature("expandRow", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#fireTreeCollapsed(javax.swing.tree.TreePath)"/>
@@ -807,7 +807,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void FireTreeCollapsed(Javax.Swing.Tree.TreePath arg0)
         {
-            IExecute("fireTreeCollapsed", arg0);
+            IExecuteWithSignature("fireTreeCollapsed", "(Ljavax/swing/tree/TreePath;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#fireTreeExpanded(javax.swing.tree.TreePath)"/>
@@ -815,7 +815,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void FireTreeExpanded(Javax.Swing.Tree.TreePath arg0)
         {
-            IExecute("fireTreeExpanded", arg0);
+            IExecuteWithSignature("fireTreeExpanded", "(Ljavax/swing/tree/TreePath;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#fireTreeWillCollapse(javax.swing.tree.TreePath)"/>
@@ -824,7 +824,7 @@ namespace Javax.Swing
         /// <exception cref="Javax.Swing.Tree.ExpandVetoException"/>
         public void FireTreeWillCollapse(Javax.Swing.Tree.TreePath arg0)
         {
-            IExecute("fireTreeWillCollapse", arg0);
+            IExecuteWithSignature("fireTreeWillCollapse", "(Ljavax/swing/tree/TreePath;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#fireTreeWillExpand(javax.swing.tree.TreePath)"/>
@@ -833,7 +833,7 @@ namespace Javax.Swing
         /// <exception cref="Javax.Swing.Tree.ExpandVetoException"/>
         public void FireTreeWillExpand(Javax.Swing.Tree.TreePath arg0)
         {
-            IExecute("fireTreeWillExpand", arg0);
+            IExecuteWithSignature("fireTreeWillExpand", "(Ljavax/swing/tree/TreePath;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#makeVisible(javax.swing.tree.TreePath)"/>
@@ -841,7 +841,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void MakeVisible(Javax.Swing.Tree.TreePath arg0)
         {
-            IExecute("makeVisible", arg0);
+            IExecuteWithSignature("makeVisible", "(Ljavax/swing/tree/TreePath;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeSelectionInterval(int,int)"/>
@@ -858,7 +858,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void RemoveSelectionPath(Javax.Swing.Tree.TreePath arg0)
         {
-            IExecute("removeSelectionPath", arg0);
+            IExecuteWithSignature("removeSelectionPath", "(Ljavax/swing/tree/TreePath;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeSelectionPaths(javax.swing.tree.TreePath[])"/>
@@ -866,7 +866,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void RemoveSelectionPaths(Javax.Swing.Tree.TreePath[] arg0)
         {
-            IExecute("removeSelectionPaths", new object[] { arg0 });
+            IExecuteWithSignature("removeSelectionPaths", "([Ljavax/swing/tree/TreePath;)V", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeSelectionRow(int)"/>
@@ -874,7 +874,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public void RemoveSelectionRow(int arg0)
         {
-            IExecute("removeSelectionRow", arg0);
+            IExecuteWithSignature("removeSelectionRow", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeSelectionRows(int[])"/>
@@ -882,7 +882,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public void RemoveSelectionRows(int[] arg0)
         {
-            IExecute("removeSelectionRows", new object[] { arg0 });
+            IExecuteWithSignature("removeSelectionRows", "([I)V", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeTreeExpansionListener(javax.swing.event.TreeExpansionListener)"/>
@@ -890,7 +890,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionListener"/></param>
         public void RemoveTreeExpansionListener(Javax.Swing.Event.TreeExpansionListener arg0)
         {
-            IExecute("removeTreeExpansionListener", arg0);
+            IExecuteWithSignature("removeTreeExpansionListener", "(Ljavax/swing/event/TreeExpansionListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeTreeSelectionListener(javax.swing.event.TreeSelectionListener)"/>
@@ -898,7 +898,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.TreeSelectionListener"/></param>
         public void RemoveTreeSelectionListener(Javax.Swing.Event.TreeSelectionListener arg0)
         {
-            IExecute("removeTreeSelectionListener", arg0);
+            IExecuteWithSignature("removeTreeSelectionListener", "(Ljavax/swing/event/TreeSelectionListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeTreeWillExpandListener(javax.swing.event.TreeWillExpandListener)"/>
@@ -906,7 +906,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.TreeWillExpandListener"/></param>
         public void RemoveTreeWillExpandListener(Javax.Swing.Event.TreeWillExpandListener arg0)
         {
-            IExecute("removeTreeWillExpandListener", arg0);
+            IExecuteWithSignature("removeTreeWillExpandListener", "(Ljavax/swing/event/TreeWillExpandListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#scrollPathToVisible(javax.swing.tree.TreePath)"/>
@@ -914,7 +914,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void ScrollPathToVisible(Javax.Swing.Tree.TreePath arg0)
         {
-            IExecute("scrollPathToVisible", arg0);
+            IExecuteWithSignature("scrollPathToVisible", "(Ljavax/swing/tree/TreePath;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#scrollRowToVisible(int)"/>
@@ -922,7 +922,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public void ScrollRowToVisible(int arg0)
         {
-            IExecute("scrollRowToVisible", arg0);
+            IExecuteWithSignature("scrollRowToVisible", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setEditable(boolean)"/>
@@ -930,7 +930,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetEditable(bool arg0)
         {
-            IExecute("setEditable", arg0);
+            IExecuteWithSignature("setEditable", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setLargeModel(boolean)"/>
@@ -938,7 +938,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetLargeModel(bool arg0)
         {
-            IExecute("setLargeModel", arg0);
+            IExecuteWithSignature("setLargeModel", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setRootVisible(boolean)"/>
@@ -946,7 +946,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetRootVisible(bool arg0)
         {
-            IExecute("setRootVisible", arg0);
+            IExecuteWithSignature("setRootVisible", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setSelectionInterval(int,int)"/>
@@ -963,7 +963,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public void SetSelectionRow(int arg0)
         {
-            IExecute("setSelectionRow", arg0);
+            IExecuteWithSignature("setSelectionRow", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setUI(javax.swing.plaf.TreeUI)"/>
@@ -971,7 +971,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.TreeUI"/></param>
         public void SetUI(Javax.Swing.Plaf.TreeUI arg0)
         {
-            IExecute("setUI", arg0);
+            IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/TreeUI;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#startEditingAtPath(javax.swing.tree.TreePath)"/>
@@ -979,14 +979,14 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void StartEditingAtPath(Javax.Swing.Tree.TreePath arg0)
         {
-            IExecute("startEditingAtPath", arg0);
+            IExecuteWithSignature("startEditingAtPath", "(Ljavax/swing/tree/TreePath;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#treeDidChange()"/>
         /// </summary>
         public void TreeDidChange()
         {
-            IExecute("treeDidChange");
+            IExecuteWithSignature("treeDidChange", "()V");
         }
 
         #endregion
@@ -1017,14 +1017,14 @@ namespace Javax.Swing
             /// </summary>
             public int ChildIndex
             {
-                get { return IExecute<int>("getChildIndex"); }
+                get { return IExecuteWithSignature<int>("getChildIndex", "()I"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.DropLocation.html#getPath()"/> 
             /// </summary>
             public Javax.Swing.Tree.TreePath Path
             {
-                get { return IExecute<Javax.Swing.Tree.TreePath>("getPath"); }
+                get { return IExecuteWithSignature<Javax.Swing.Tree.TreePath>("getPath", "()Ljavax/swing/tree/TreePath;"); }
             }
 
             #endregion

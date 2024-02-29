@@ -58,7 +58,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
         public static Java.Util.ServiceLoader Load(Java.Lang.Class arg0)
         {
-            return SExecute<Java.Util.ServiceLoader>(LocalBridgeClazz, "load", arg0);
+            return SExecuteWithSignature<Java.Util.ServiceLoader>(LocalBridgeClazz, "load", "(Ljava/lang/Class;)Ljava/util/ServiceLoader;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#load(java.lang.ModuleLayer,java.lang.Class)"/>
@@ -77,7 +77,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
         public static Java.Util.ServiceLoader LoadInstalled(Java.Lang.Class arg0)
         {
-            return SExecute<Java.Util.ServiceLoader>(LocalBridgeClazz, "loadInstalled", arg0);
+            return SExecuteWithSignature<Java.Util.ServiceLoader>(LocalBridgeClazz, "loadInstalled", "(Ljava/lang/Class;)Ljava/util/ServiceLoader;", arg0);
         }
 
         #endregion
@@ -90,7 +90,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator Iterator()
         {
-            return IExecute<Java.Util.Iterator>("iterator");
+            return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#findFirst()"/>
@@ -99,14 +99,14 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional FindFirst()
         {
-            return IExecute<Java.Util.Optional>("findFirst");
+            return IExecuteWithSignature<Java.Util.Optional>("findFirst", "()Ljava/util/Optional;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#reload()"/>
         /// </summary>
         public void Reload()
         {
-            IExecute("reload");
+            IExecuteWithSignature("reload", "()V");
         }
 
         #endregion
@@ -156,7 +156,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
         public static Java.Util.ServiceLoader<S> Load(Java.Lang.Class arg0)
         {
-            return SExecute<Java.Util.ServiceLoader<S>>(LocalBridgeClazz, "load", arg0);
+            return SExecuteWithSignature<Java.Util.ServiceLoader<S>>(LocalBridgeClazz, "load", "(Ljava/lang/Class;)Ljava/util/ServiceLoader;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#load(java.lang.ModuleLayer,java.lang.Class)"/>
@@ -175,7 +175,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
         public static Java.Util.ServiceLoader<S> LoadInstalled(Java.Lang.Class arg0)
         {
-            return SExecute<Java.Util.ServiceLoader<S>>(LocalBridgeClazz, "loadInstalled", arg0);
+            return SExecuteWithSignature<Java.Util.ServiceLoader<S>>(LocalBridgeClazz, "loadInstalled", "(Ljava/lang/Class;)Ljava/util/ServiceLoader;", arg0);
         }
 
         #endregion
@@ -188,7 +188,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<S> Iterator()
         {
-            return IExecute<Java.Util.Iterator<S>>("iterator");
+            return IExecuteWithSignature<Java.Util.Iterator<S>>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#findFirst()"/>
@@ -197,14 +197,14 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<S> FindFirst()
         {
-            return IExecute<Java.Util.Optional<S>>("findFirst");
+            return IExecuteWithSignature<Java.Util.Optional<S>>("findFirst", "()Ljava/util/Optional;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#reload()"/>
         /// </summary>
         public void Reload()
         {
-            IExecute("reload");
+            IExecuteWithSignature("reload", "()V");
         }
 
         #endregion

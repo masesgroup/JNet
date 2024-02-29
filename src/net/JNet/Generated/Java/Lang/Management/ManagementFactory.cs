@@ -100,77 +100,77 @@ namespace Java.Lang.Management
         /// </summary>
         public static Java.Lang.Management.ClassLoadingMXBean ClassLoadingMXBean
         {
-            get { return SExecute<Java.Lang.Management.ClassLoadingMXBean>(LocalBridgeClazz, "getClassLoadingMXBean"); }
+            get { return SExecuteWithSignature<Java.Lang.Management.ClassLoadingMXBean>(LocalBridgeClazz, "getClassLoadingMXBean", "()Ljava/lang/management/ClassLoadingMXBean;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getCompilationMXBean()"/> 
         /// </summary>
         public static Java.Lang.Management.CompilationMXBean CompilationMXBean
         {
-            get { return SExecute<Java.Lang.Management.CompilationMXBean>(LocalBridgeClazz, "getCompilationMXBean"); }
+            get { return SExecuteWithSignature<Java.Lang.Management.CompilationMXBean>(LocalBridgeClazz, "getCompilationMXBean", "()Ljava/lang/management/CompilationMXBean;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getGarbageCollectorMXBeans()"/> 
         /// </summary>
         public static Java.Util.List<Java.Lang.Management.GarbageCollectorMXBean> GarbageCollectorMXBeans
         {
-            get { return SExecute<Java.Util.List<Java.Lang.Management.GarbageCollectorMXBean>>(LocalBridgeClazz, "getGarbageCollectorMXBeans"); }
+            get { return SExecuteWithSignature<Java.Util.List<Java.Lang.Management.GarbageCollectorMXBean>>(LocalBridgeClazz, "getGarbageCollectorMXBeans", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getMemoryManagerMXBeans()"/> 
         /// </summary>
         public static Java.Util.List<Java.Lang.Management.MemoryManagerMXBean> MemoryManagerMXBeans
         {
-            get { return SExecute<Java.Util.List<Java.Lang.Management.MemoryManagerMXBean>>(LocalBridgeClazz, "getMemoryManagerMXBeans"); }
+            get { return SExecuteWithSignature<Java.Util.List<Java.Lang.Management.MemoryManagerMXBean>>(LocalBridgeClazz, "getMemoryManagerMXBeans", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getMemoryMXBean()"/> 
         /// </summary>
         public static Java.Lang.Management.MemoryMXBean MemoryMXBean
         {
-            get { return SExecute<Java.Lang.Management.MemoryMXBean>(LocalBridgeClazz, "getMemoryMXBean"); }
+            get { return SExecuteWithSignature<Java.Lang.Management.MemoryMXBean>(LocalBridgeClazz, "getMemoryMXBean", "()Ljava/lang/management/MemoryMXBean;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getMemoryPoolMXBeans()"/> 
         /// </summary>
         public static Java.Util.List<Java.Lang.Management.MemoryPoolMXBean> MemoryPoolMXBeans
         {
-            get { return SExecute<Java.Util.List<Java.Lang.Management.MemoryPoolMXBean>>(LocalBridgeClazz, "getMemoryPoolMXBeans"); }
+            get { return SExecuteWithSignature<Java.Util.List<Java.Lang.Management.MemoryPoolMXBean>>(LocalBridgeClazz, "getMemoryPoolMXBeans", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getOperatingSystemMXBean()"/> 
         /// </summary>
         public static Java.Lang.Management.OperatingSystemMXBean OperatingSystemMXBean
         {
-            get { return SExecute<Java.Lang.Management.OperatingSystemMXBean>(LocalBridgeClazz, "getOperatingSystemMXBean"); }
+            get { return SExecuteWithSignature<Java.Lang.Management.OperatingSystemMXBean>(LocalBridgeClazz, "getOperatingSystemMXBean", "()Ljava/lang/management/OperatingSystemMXBean;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getPlatformManagementInterfaces()"/> 
         /// </summary>
         public static Java.Util.Set PlatformManagementInterfaces
         {
-            get { return SExecute<Java.Util.Set>(LocalBridgeClazz, "getPlatformManagementInterfaces"); }
+            get { return SExecuteWithSignature<Java.Util.Set>(LocalBridgeClazz, "getPlatformManagementInterfaces", "()Ljava/util/Set;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getPlatformMBeanServer()"/> 
         /// </summary>
         public static Javax.Management.MBeanServer PlatformMBeanServer
         {
-            get { return SExecute<Javax.Management.MBeanServer>(LocalBridgeClazz, "getPlatformMBeanServer"); }
+            get { return SExecuteWithSignature<Javax.Management.MBeanServer>(LocalBridgeClazz, "getPlatformMBeanServer", "()Ljavax/management/MBeanServer;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getRuntimeMXBean()"/> 
         /// </summary>
         public static Java.Lang.Management.RuntimeMXBean RuntimeMXBean
         {
-            get { return SExecute<Java.Lang.Management.RuntimeMXBean>(LocalBridgeClazz, "getRuntimeMXBean"); }
+            get { return SExecuteWithSignature<Java.Lang.Management.RuntimeMXBean>(LocalBridgeClazz, "getRuntimeMXBean", "()Ljava/lang/management/RuntimeMXBean;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getThreadMXBean()"/> 
         /// </summary>
         public static Java.Lang.Management.ThreadMXBean ThreadMXBean
         {
-            get { return SExecute<Java.Lang.Management.ThreadMXBean>(LocalBridgeClazz, "getThreadMXBean"); }
+            get { return SExecuteWithSignature<Java.Lang.Management.ThreadMXBean>(LocalBridgeClazz, "getThreadMXBean", "()Ljava/lang/management/ThreadMXBean;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getPlatformMXBeans(java.lang.Class)"/>

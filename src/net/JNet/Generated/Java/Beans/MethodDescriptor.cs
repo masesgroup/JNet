@@ -67,14 +67,14 @@ namespace Java.Beans
         /// </summary>
         public Java.Lang.Reflect.Method Method
         {
-            get { return IExecute<Java.Lang.Reflect.Method>("getMethod"); }
+            get { return IExecuteWithSignature<Java.Lang.Reflect.Method>("getMethod", "()Ljava/lang/reflect/Method;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/MethodDescriptor.html#getParameterDescriptors()"/> 
         /// </summary>
         public Java.Beans.ParameterDescriptor[] ParameterDescriptors
         {
-            get { return IExecuteArray<Java.Beans.ParameterDescriptor>("getParameterDescriptors"); }
+            get { return IExecuteWithSignatureArray<Java.Beans.ParameterDescriptor>("getParameterDescriptors", "()[Ljava/beans/ParameterDescriptor;"); }
         }
 
         #endregion

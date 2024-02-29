@@ -88,35 +88,35 @@ namespace Javax.Lang.Model.Type
         /// </summary>
         public Java.Util.List ParameterTypes
         {
-            get { return IExecute<Java.Util.List>("getParameterTypes"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getParameterTypes", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/ExecutableType.html#getReceiverType()"/> 
         /// </summary>
         public Javax.Lang.Model.Type.TypeMirror ReceiverType
         {
-            get { return IExecute<Javax.Lang.Model.Type.TypeMirror>("getReceiverType"); }
+            get { return IExecuteWithSignature<Javax.Lang.Model.Type.TypeMirror>("getReceiverType", "()Ljavax/lang/model/type/TypeMirror;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/ExecutableType.html#getReturnType()"/> 
         /// </summary>
         public Javax.Lang.Model.Type.TypeMirror ReturnType
         {
-            get { return IExecute<Javax.Lang.Model.Type.TypeMirror>("getReturnType"); }
+            get { return IExecuteWithSignature<Javax.Lang.Model.Type.TypeMirror>("getReturnType", "()Ljavax/lang/model/type/TypeMirror;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/ExecutableType.html#getThrownTypes()"/> 
         /// </summary>
         public Java.Util.List ThrownTypes
         {
-            get { return IExecute<Java.Util.List>("getThrownTypes"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getThrownTypes", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/ExecutableType.html#getTypeVariables()"/> 
         /// </summary>
         public Java.Util.List TypeVariables
         {
-            get { return IExecute<Java.Util.List>("getTypeVariables"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getTypeVariables", "()Ljava/util/List;"); }
         }
 
         #endregion

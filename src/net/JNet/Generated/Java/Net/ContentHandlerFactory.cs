@@ -76,7 +76,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.ContentHandler"/></returns>
         public Java.Net.ContentHandler CreateContentHandler(Java.Lang.String arg0)
         {
-            return IExecute<Java.Net.ContentHandler>("createContentHandler", arg0);
+            return IExecuteWithSignature<Java.Net.ContentHandler>("createContentHandler", "(Ljava/lang/String;)Ljava/net/ContentHandler;", arg0);
         }
 
         #endregion

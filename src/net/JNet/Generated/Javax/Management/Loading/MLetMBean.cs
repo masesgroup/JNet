@@ -120,14 +120,14 @@ namespace Javax.Management.Loading
         /// </summary>
         public Java.Lang.String LibraryDirectory
         {
-            get { return IExecute<Java.Lang.String>("getLibraryDirectory"); } set { IExecute("setLibraryDirectory", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getLibraryDirectory", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setLibraryDirectory", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#getURLs()"/> 
         /// </summary>
         public Java.Net.URL[] URLs
         {
-            get { return IExecuteArray<Java.Net.URL>("getURLs"); }
+            get { return IExecuteWithSignatureArray<Java.Net.URL>("getURLs", "()[Ljava/net/URL;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#getResourceAsStream(java.lang.String)"/>
@@ -136,7 +136,7 @@ namespace Javax.Management.Loading
         /// <returns><see cref="Java.Io.InputStream"/></returns>
         public Java.Io.InputStream GetResourceAsStream(Java.Lang.String arg0)
         {
-            return IExecute<Java.Io.InputStream>("getResourceAsStream", arg0);
+            return IExecuteWithSignature<Java.Io.InputStream>("getResourceAsStream", "(Ljava/lang/String;)Ljava/io/InputStream;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#getResource(java.lang.String)"/>
@@ -145,7 +145,7 @@ namespace Javax.Management.Loading
         /// <returns><see cref="Java.Net.URL"/></returns>
         public Java.Net.URL GetResource(Java.Lang.String arg0)
         {
-            return IExecute<Java.Net.URL>("getResource", arg0);
+            return IExecuteWithSignature<Java.Net.URL>("getResource", "(Ljava/lang/String;)Ljava/net/URL;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#getResources(java.lang.String)"/>
@@ -155,7 +155,7 @@ namespace Javax.Management.Loading
         /// <exception cref="Java.Io.IOException"/>
         public Java.Util.Enumeration<Java.Net.URL> GetResources(Java.Lang.String arg0)
         {
-            return IExecute<Java.Util.Enumeration<Java.Net.URL>>("getResources", arg0);
+            return IExecuteWithSignature<Java.Util.Enumeration<Java.Net.URL>>("getResources", "(Ljava/lang/String;)Ljava/util/Enumeration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#getMBeansFromURL(java.lang.String)"/>
@@ -165,7 +165,7 @@ namespace Javax.Management.Loading
         /// <exception cref="Javax.Management.ServiceNotFoundException"/>
         public Java.Util.Set<object> GetMBeansFromURL(Java.Lang.String arg0)
         {
-            return IExecute<Java.Util.Set<object>>("getMBeansFromURL", arg0);
+            return IExecuteWithSignature<Java.Util.Set<object>>("getMBeansFromURL", "(Ljava/lang/String;)Ljava/util/Set;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#getMBeansFromURL(java.net.URL)"/>
@@ -175,7 +175,7 @@ namespace Javax.Management.Loading
         /// <exception cref="Javax.Management.ServiceNotFoundException"/>
         public Java.Util.Set<object> GetMBeansFromURL(Java.Net.URL arg0)
         {
-            return IExecute<Java.Util.Set<object>>("getMBeansFromURL", arg0);
+            return IExecuteWithSignature<Java.Util.Set<object>>("getMBeansFromURL", "(Ljava/net/URL;)Ljava/util/Set;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#addURL(java.lang.String)"/>
@@ -184,7 +184,7 @@ namespace Javax.Management.Loading
         /// <exception cref="Javax.Management.ServiceNotFoundException"/>
         public void AddURL(Java.Lang.String arg0)
         {
-            IExecute("addURL", arg0);
+            IExecuteWithSignature("addURL", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#addURL(java.net.URL)"/>
@@ -192,7 +192,7 @@ namespace Javax.Management.Loading
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>
         public void AddURL(Java.Net.URL arg0)
         {
-            IExecute("addURL", arg0);
+            IExecuteWithSignature("addURL", "(Ljava/net/URL;)V", arg0);
         }
 
         #endregion

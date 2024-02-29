@@ -81,49 +81,49 @@ namespace Java.Awt
         /// </summary>
         public Java.Awt.Adjustable HAdjustable
         {
-            get { return IExecute<Java.Awt.Adjustable>("getHAdjustable"); }
+            get { return IExecuteWithSignature<Java.Awt.Adjustable>("getHAdjustable", "()Ljava/awt/Adjustable;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#getHScrollbarHeight()"/> 
         /// </summary>
         public int HScrollbarHeight
         {
-            get { return IExecute<int>("getHScrollbarHeight"); }
+            get { return IExecuteWithSignature<int>("getHScrollbarHeight", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#getScrollbarDisplayPolicy()"/> 
         /// </summary>
         public int ScrollbarDisplayPolicy
         {
-            get { return IExecute<int>("getScrollbarDisplayPolicy"); }
+            get { return IExecuteWithSignature<int>("getScrollbarDisplayPolicy", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#getScrollPosition()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#setScrollPosition(java.awt.Point)"/>
         /// </summary>
         public Java.Awt.Point ScrollPosition
         {
-            get { return IExecute<Java.Awt.Point>("getScrollPosition"); } set { IExecute("setScrollPosition", value); }
+            get { return IExecuteWithSignature<Java.Awt.Point>("getScrollPosition", "()Ljava/awt/Point;"); } set { IExecuteWithSignature("setScrollPosition", "(Ljava/awt/Point;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#getVAdjustable()"/> 
         /// </summary>
         public Java.Awt.Adjustable VAdjustable
         {
-            get { return IExecute<Java.Awt.Adjustable>("getVAdjustable"); }
+            get { return IExecuteWithSignature<Java.Awt.Adjustable>("getVAdjustable", "()Ljava/awt/Adjustable;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#getViewportSize()"/> 
         /// </summary>
         public Java.Awt.Dimension ViewportSize
         {
-            get { return IExecute<Java.Awt.Dimension>("getViewportSize"); }
+            get { return IExecuteWithSignature<Java.Awt.Dimension>("getViewportSize", "()Ljava/awt/Dimension;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#getVScrollbarWidth()"/> 
         /// </summary>
         public int VScrollbarWidth
         {
-            get { return IExecute<int>("getVScrollbarWidth"); }
+            get { return IExecuteWithSignature<int>("getVScrollbarWidth", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#isWheelScrollingEnabled()"/>
@@ -132,7 +132,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsWheelScrollingEnabled()
         {
-            return IExecute<bool>("isWheelScrollingEnabled");
+            return IExecuteWithSignature<bool>("isWheelScrollingEnabled", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#paramString()"/>
@@ -141,7 +141,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ParamString()
         {
-            return IExecute<Java.Lang.String>("paramString");
+            return IExecuteWithSignature<Java.Lang.String>("paramString", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#setScrollPosition(int,int)"/>
@@ -158,7 +158,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetWheelScrollingEnabled(bool arg0)
         {
-            IExecute("setWheelScrollingEnabled", arg0);
+            IExecuteWithSignature("setWheelScrollingEnabled", "(Z)V", arg0);
         }
 
         #endregion

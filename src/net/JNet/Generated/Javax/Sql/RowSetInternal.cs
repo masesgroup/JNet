@@ -90,28 +90,28 @@ namespace Javax.Sql
         /// </summary>
         public Java.Sql.Connection Connection
         {
-            get { return IExecute<Java.Sql.Connection>("getConnection"); }
+            get { return IExecuteWithSignature<Java.Sql.Connection>("getConnection", "()Ljava/sql/Connection;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetInternal.html#getOriginal()"/> 
         /// </summary>
         public Java.Sql.ResultSet Original
         {
-            get { return IExecute<Java.Sql.ResultSet>("getOriginal"); }
+            get { return IExecuteWithSignature<Java.Sql.ResultSet>("getOriginal", "()Ljava/sql/ResultSet;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetInternal.html#getOriginalRow()"/> 
         /// </summary>
         public Java.Sql.ResultSet OriginalRow
         {
-            get { return IExecute<Java.Sql.ResultSet>("getOriginalRow"); }
+            get { return IExecuteWithSignature<Java.Sql.ResultSet>("getOriginalRow", "()Ljava/sql/ResultSet;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetInternal.html#getParams()"/> 
         /// </summary>
         public object[] Params
         {
-            get { return IExecuteArray<object>("getParams"); }
+            get { return IExecuteWithSignatureArray<object>("getParams", "()[Ljava/lang/Object;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetInternal.html#setMetaData(javax.sql.RowSetMetaData)"/>
@@ -120,7 +120,7 @@ namespace Javax.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetMetaData(Javax.Sql.RowSetMetaData arg0)
         {
-            IExecute("setMetaData", arg0);
+            IExecuteWithSignature("setMetaData", "(Ljavax/sql/RowSetMetaData;)V", arg0);
         }
 
         #endregion

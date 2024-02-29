@@ -50,14 +50,14 @@ namespace Javax.Swing.Text
         /// </summary>
         public Javax.Swing.Text.Element CharacterAttributeRun
         {
-            get { return IExecute<Javax.Swing.Text.Element>("getCharacterAttributeRun"); }
+            get { return IExecuteWithSignature<Javax.Swing.Text.Element>("getCharacterAttributeRun", "()Ljavax/swing/text/Element;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.html#getInputAttributes()"/> 
         /// </summary>
         public Javax.Swing.Text.MutableAttributeSet InputAttributes
         {
-            get { return IExecute<Javax.Swing.Text.MutableAttributeSet>("getInputAttributes"); }
+            get { return IExecuteWithSignature<Javax.Swing.Text.MutableAttributeSet>("getInputAttributes", "()Ljavax/swing/text/MutableAttributeSet;"); }
         }
 
         #endregion

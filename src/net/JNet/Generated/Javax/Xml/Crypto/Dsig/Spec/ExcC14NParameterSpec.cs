@@ -64,7 +64,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// </summary>
         public Java.Util.List<Java.Lang.String> PrefixList
         {
-            get { return IExecute<Java.Util.List<Java.Lang.String>>("getPrefixList"); }
+            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getPrefixList", "()Ljava/util/List;"); }
         }
 
         #endregion

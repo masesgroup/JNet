@@ -72,7 +72,7 @@ namespace Java.Awt
         /// </summary>
         public Java.Awt.PrintJob PrintJob
         {
-            get { return IExecute<Java.Awt.PrintJob>("getPrintJob"); }
+            get { return IExecuteWithSignature<Java.Awt.PrintJob>("getPrintJob", "()Ljava/awt/PrintJob;"); }
         }
 
         #endregion

@@ -72,7 +72,7 @@ namespace Java.Time.Format
         /// <returns><see cref="Java.Time.Format.FormatStyle"/></returns>
         public static Java.Time.Format.FormatStyle ValueOf(Java.Lang.String arg0)
         {
-            return SExecute<Java.Time.Format.FormatStyle>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecuteWithSignature<Java.Time.Format.FormatStyle>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/time/format/FormatStyle;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/FormatStyle.html#values()"/>
@@ -81,7 +81,7 @@ namespace Java.Time.Format
         /// <returns><see cref="Java.Time.Format.FormatStyle"/></returns>
         public static Java.Time.Format.FormatStyle[] Values()
         {
-            return SExecuteArray<Java.Time.Format.FormatStyle>(LocalBridgeClazz, "values");
+            return SExecuteWithSignatureArray<Java.Time.Format.FormatStyle>(LocalBridgeClazz, "values", "()[Ljava/time/format/FormatStyle;");
         }
 
         #endregion

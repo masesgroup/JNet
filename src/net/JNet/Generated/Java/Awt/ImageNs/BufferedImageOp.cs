@@ -99,7 +99,7 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public Java.Awt.RenderingHints RenderingHints
         {
-            get { return IExecute<Java.Awt.RenderingHints>("getRenderingHints"); }
+            get { return IExecuteWithSignature<Java.Awt.RenderingHints>("getRenderingHints", "()Ljava/awt/RenderingHints;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImageOp.html#getPoint2D(java.awt.geom.Point2D,java.awt.geom.Point2D)"/>
@@ -118,7 +118,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         public Java.Awt.Geom.Rectangle2D GetBounds2D(Java.Awt.ImageNs.BufferedImage arg0)
         {
-            return IExecute<Java.Awt.Geom.Rectangle2D>("getBounds2D", arg0);
+            return IExecuteWithSignature<Java.Awt.Geom.Rectangle2D>("getBounds2D", "(Ljava/awt/image/BufferedImage;)Ljava/awt/geom/Rectangle2D;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImageOp.html#createCompatibleDestImage(java.awt.image.BufferedImage,java.awt.image.ColorModel)"/>

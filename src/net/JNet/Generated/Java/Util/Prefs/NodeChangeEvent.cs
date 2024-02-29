@@ -59,14 +59,14 @@ namespace Java.Util.Prefs
         /// </summary>
         public Java.Util.Prefs.Preferences Child
         {
-            get { return IExecute<Java.Util.Prefs.Preferences>("getChild"); }
+            get { return IExecuteWithSignature<Java.Util.Prefs.Preferences>("getChild", "()Ljava/util/prefs/Preferences;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeEvent.html#getParent()"/> 
         /// </summary>
         public Java.Util.Prefs.Preferences Parent
         {
-            get { return IExecute<Java.Util.Prefs.Preferences>("getParent"); }
+            get { return IExecuteWithSignature<Java.Util.Prefs.Preferences>("getParent", "()Ljava/util/prefs/Preferences;"); }
         }
 
         #endregion

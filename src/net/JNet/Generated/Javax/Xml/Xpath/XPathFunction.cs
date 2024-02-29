@@ -78,7 +78,7 @@ namespace Javax.Xml.Xpath
         /// <exception cref="Javax.Xml.Xpath.XPathFunctionException"/>
         public object Evaluate(Java.Util.List<object> arg0)
         {
-            return IExecute("evaluate", arg0);
+            return IExecuteWithSignature("evaluate", "(Ljava/util/List;)Ljava/lang/Object;", arg0);
         }
 
         #endregion

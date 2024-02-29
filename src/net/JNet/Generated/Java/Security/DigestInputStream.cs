@@ -59,7 +59,7 @@ namespace Java.Security
         /// </summary>
         public Java.Security.MessageDigest MessageDigest
         {
-            get { return IExecute<Java.Security.MessageDigest>("getMessageDigest"); } set { IExecute("setMessageDigest", value); }
+            get { return IExecuteWithSignature<Java.Security.MessageDigest>("getMessageDigest", "()Ljava/security/MessageDigest;"); } set { IExecuteWithSignature("setMessageDigest", "(Ljava/security/MessageDigest;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DigestInputStream.html#on(boolean)"/>
@@ -67,7 +67,7 @@ namespace Java.Security
         /// <param name="arg0"><see cref="bool"/></param>
         public void On(bool arg0)
         {
-            IExecute("on", arg0);
+            IExecuteWithSignature("on", "(Z)V", arg0);
         }
 
         #endregion

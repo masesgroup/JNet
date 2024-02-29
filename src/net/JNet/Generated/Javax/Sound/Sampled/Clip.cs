@@ -119,14 +119,14 @@ namespace Javax.Sound.Sampled
         /// </summary>
         public int FrameLength
         {
-            get { return IExecute<int>("getFrameLength"); }
+            get { return IExecuteWithSignature<int>("getFrameLength", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#getMicrosecondLength()"/> 
         /// </summary>
         public long MicrosecondLength
         {
-            get { return IExecute<long>("getMicrosecondLength"); }
+            get { return IExecuteWithSignature<long>("getMicrosecondLength", "()J"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#loop(int)"/>
@@ -134,7 +134,7 @@ namespace Javax.Sound.Sampled
         /// <param name="arg0"><see cref="int"/></param>
         public void Loop(int arg0)
         {
-            IExecute("loop", arg0);
+            IExecuteWithSignature("loop", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#open(javax.sound.sampled.AudioFormat,byte[],int,int)"/>
@@ -156,7 +156,7 @@ namespace Javax.Sound.Sampled
         /// <exception cref="Java.Io.IOException"/>
         public void Open(Javax.Sound.Sampled.AudioInputStream arg0)
         {
-            IExecute("open", arg0);
+            IExecuteWithSignature("open", "(Ljavax/sound/sampled/AudioInputStream;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#setFramePosition(int)"/>
@@ -164,7 +164,7 @@ namespace Javax.Sound.Sampled
         /// <param name="arg0"><see cref="int"/></param>
         public void SetFramePosition(int arg0)
         {
-            IExecute("setFramePosition", arg0);
+            IExecuteWithSignature("setFramePosition", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#setLoopPoints(int,int)"/>
@@ -181,7 +181,7 @@ namespace Javax.Sound.Sampled
         /// <param name="arg0"><see cref="long"/></param>
         public void SetMicrosecondPosition(long arg0)
         {
-            IExecute("setMicrosecondPosition", arg0);
+            IExecuteWithSignature("setMicrosecondPosition", "(J)V", arg0);
         }
 
         #endregion

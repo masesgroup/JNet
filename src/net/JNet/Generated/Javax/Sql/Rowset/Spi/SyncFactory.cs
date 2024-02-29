@@ -64,21 +64,21 @@ namespace Javax.Sql.Rowset.Spi
         /// </summary>
         public static Javax.Sql.Rowset.Spi.SyncFactory GetSyncFactory
         {
-            get { return SExecute<Javax.Sql.Rowset.Spi.SyncFactory>(LocalBridgeClazz, "getSyncFactory"); }
+            get { return SExecuteWithSignature<Javax.Sql.Rowset.Spi.SyncFactory>(LocalBridgeClazz, "getSyncFactory", "()Ljavax/sql/rowset/spi/SyncFactory;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#getLogger()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#setLogger(java.util.logging.Logger)"/>
         /// </summary>
         public static Java.Util.Logging.Logger Logger
         {
-            get { return SExecute<Java.Util.Logging.Logger>(LocalBridgeClazz, "getLogger"); } set { SExecute(LocalBridgeClazz, "setLogger", value); }
+            get { return SExecuteWithSignature<Java.Util.Logging.Logger>(LocalBridgeClazz, "getLogger", "()Ljava/util/logging/Logger;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setLogger", "(Ljava/util/logging/Logger;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#getRegisteredProviders()"/> 
         /// </summary>
         public static Java.Util.Enumeration<Javax.Sql.Rowset.Spi.SyncProvider> RegisteredProviders
         {
-            get { return SExecute<Java.Util.Enumeration<Javax.Sql.Rowset.Spi.SyncProvider>>(LocalBridgeClazz, "getRegisteredProviders"); }
+            get { return SExecuteWithSignature<Java.Util.Enumeration<Javax.Sql.Rowset.Spi.SyncProvider>>(LocalBridgeClazz, "getRegisteredProviders", "()Ljava/util/Enumeration;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#getInstance(java.lang.String)"/>
@@ -88,7 +88,7 @@ namespace Javax.Sql.Rowset.Spi
         /// <exception cref="Javax.Sql.Rowset.Spi.SyncFactoryException"/>
         public static Javax.Sql.Rowset.Spi.SyncProvider GetInstance(Java.Lang.String arg0)
         {
-            return SExecute<Javax.Sql.Rowset.Spi.SyncProvider>(LocalBridgeClazz, "getInstance", arg0);
+            return SExecuteWithSignature<Javax.Sql.Rowset.Spi.SyncProvider>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljavax/sql/rowset/spi/SyncProvider;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#registerProvider(java.lang.String)"/>
@@ -97,7 +97,7 @@ namespace Javax.Sql.Rowset.Spi
         /// <exception cref="Javax.Sql.Rowset.Spi.SyncFactoryException"/>
         public static void RegisterProvider(Java.Lang.String arg0)
         {
-            SExecute(LocalBridgeClazz, "registerProvider", arg0);
+            SExecuteWithSignature(LocalBridgeClazz, "registerProvider", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#setJNDIContext(javax.naming.Context)"/>
@@ -106,7 +106,7 @@ namespace Javax.Sql.Rowset.Spi
         /// <exception cref="Javax.Sql.Rowset.Spi.SyncFactoryException"/>
         public static void SetJNDIContext(Javax.Naming.Context arg0)
         {
-            SExecute(LocalBridgeClazz, "setJNDIContext", arg0);
+            SExecuteWithSignature(LocalBridgeClazz, "setJNDIContext", "(Ljavax/naming/Context;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#unregisterProvider(java.lang.String)"/>
@@ -115,7 +115,7 @@ namespace Javax.Sql.Rowset.Spi
         /// <exception cref="Javax.Sql.Rowset.Spi.SyncFactoryException"/>
         public static void UnregisterProvider(Java.Lang.String arg0)
         {
-            SExecute(LocalBridgeClazz, "unregisterProvider", arg0);
+            SExecuteWithSignature(LocalBridgeClazz, "unregisterProvider", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#setLogger(java.util.logging.Logger,java.util.logging.Level)"/>

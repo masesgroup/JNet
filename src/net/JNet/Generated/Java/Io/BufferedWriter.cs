@@ -69,7 +69,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void NewLine()
         {
-            IExecute("newLine");
+            IExecuteWithSignature("newLine", "()V");
         }
 
         #endregion

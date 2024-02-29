@@ -116,7 +116,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.URI"/></returns>
         public static Java.Net.URI Create(Java.Lang.String arg0)
         {
-            return SExecute<Java.Net.URI>(LocalBridgeClazz, "create", arg0);
+            return SExecuteWithSignature<Java.Net.URI>(LocalBridgeClazz, "create", "(Ljava/lang/String;)Ljava/net/URI;", arg0);
         }
 
         #endregion
@@ -127,105 +127,105 @@ namespace Java.Net
         /// </summary>
         public Java.Lang.String Authority
         {
-            get { return IExecute<Java.Lang.String>("getAuthority"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getAuthority", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getFragment()"/> 
         /// </summary>
         public Java.Lang.String Fragment
         {
-            get { return IExecute<Java.Lang.String>("getFragment"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getFragment", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getHost()"/> 
         /// </summary>
         public Java.Lang.String Host
         {
-            get { return IExecute<Java.Lang.String>("getHost"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getHost", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getPath()"/> 
         /// </summary>
         public Java.Lang.String Path
         {
-            get { return IExecute<Java.Lang.String>("getPath"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getPath", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getPort()"/> 
         /// </summary>
         public int Port
         {
-            get { return IExecute<int>("getPort"); }
+            get { return IExecuteWithSignature<int>("getPort", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getQuery()"/> 
         /// </summary>
         public Java.Lang.String Query
         {
-            get { return IExecute<Java.Lang.String>("getQuery"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getQuery", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getRawAuthority()"/> 
         /// </summary>
         public Java.Lang.String RawAuthority
         {
-            get { return IExecute<Java.Lang.String>("getRawAuthority"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getRawAuthority", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getRawFragment()"/> 
         /// </summary>
         public Java.Lang.String RawFragment
         {
-            get { return IExecute<Java.Lang.String>("getRawFragment"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getRawFragment", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getRawPath()"/> 
         /// </summary>
         public Java.Lang.String RawPath
         {
-            get { return IExecute<Java.Lang.String>("getRawPath"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getRawPath", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getRawQuery()"/> 
         /// </summary>
         public Java.Lang.String RawQuery
         {
-            get { return IExecute<Java.Lang.String>("getRawQuery"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getRawQuery", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getRawSchemeSpecificPart()"/> 
         /// </summary>
         public Java.Lang.String RawSchemeSpecificPart
         {
-            get { return IExecute<Java.Lang.String>("getRawSchemeSpecificPart"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getRawSchemeSpecificPart", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getRawUserInfo()"/> 
         /// </summary>
         public Java.Lang.String RawUserInfo
         {
-            get { return IExecute<Java.Lang.String>("getRawUserInfo"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getRawUserInfo", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getScheme()"/> 
         /// </summary>
         public Java.Lang.String Scheme
         {
-            get { return IExecute<Java.Lang.String>("getScheme"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getScheme", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getSchemeSpecificPart()"/> 
         /// </summary>
         public Java.Lang.String SchemeSpecificPart
         {
-            get { return IExecute<Java.Lang.String>("getSchemeSpecificPart"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getSchemeSpecificPart", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getUserInfo()"/> 
         /// </summary>
         public Java.Lang.String UserInfo
         {
-            get { return IExecute<Java.Lang.String>("getUserInfo"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getUserInfo", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#isAbsolute()"/>
@@ -234,7 +234,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool IsAbsolute()
         {
-            return IExecute<bool>("isAbsolute");
+            return IExecuteWithSignature<bool>("isAbsolute", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#isOpaque()"/>
@@ -243,7 +243,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool IsOpaque()
         {
-            return IExecute<bool>("isOpaque");
+            return IExecuteWithSignature<bool>("isOpaque", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#compareTo(java.lang.Object)"/>
@@ -252,7 +252,7 @@ namespace Java.Net
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecute<int>("compareTo", arg0);
+            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#compareTo(java.net.URI)"/>
@@ -261,7 +261,7 @@ namespace Java.Net
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Java.Net.URI arg0)
         {
-            return IExecute<int>("compareTo", arg0);
+            return IExecuteWithSignature<int>("compareTo", "(Ljava/net/URI;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#toASCIIString()"/>
@@ -270,7 +270,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToASCIIString()
         {
-            return IExecute<Java.Lang.String>("toASCIIString");
+            return IExecuteWithSignature<Java.Lang.String>("toASCIIString", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#normalize()"/>
@@ -279,7 +279,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.URI"/></returns>
         public Java.Net.URI Normalize()
         {
-            return IExecute<Java.Net.URI>("normalize");
+            return IExecuteWithSignature<Java.Net.URI>("normalize", "()Ljava/net/URI;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#parseServerAuthority()"/>
@@ -289,7 +289,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.URISyntaxException"/>
         public Java.Net.URI ParseServerAuthority()
         {
-            return IExecute<Java.Net.URI>("parseServerAuthority");
+            return IExecuteWithSignature<Java.Net.URI>("parseServerAuthority", "()Ljava/net/URI;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#relativize(java.net.URI)"/>
@@ -298,7 +298,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.URI"/></returns>
         public Java.Net.URI Relativize(Java.Net.URI arg0)
         {
-            return IExecute<Java.Net.URI>("relativize", arg0);
+            return IExecuteWithSignature<Java.Net.URI>("relativize", "(Ljava/net/URI;)Ljava/net/URI;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#resolve(java.lang.String)"/>
@@ -307,7 +307,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.URI"/></returns>
         public Java.Net.URI Resolve(Java.Lang.String arg0)
         {
-            return IExecute<Java.Net.URI>("resolve", arg0);
+            return IExecuteWithSignature<Java.Net.URI>("resolve", "(Ljava/lang/String;)Ljava/net/URI;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#resolve(java.net.URI)"/>
@@ -316,7 +316,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.URI"/></returns>
         public Java.Net.URI Resolve(Java.Net.URI arg0)
         {
-            return IExecute<Java.Net.URI>("resolve", arg0);
+            return IExecuteWithSignature<Java.Net.URI>("resolve", "(Ljava/net/URI;)Ljava/net/URI;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#toURL()"/>
@@ -326,7 +326,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.MalformedURLException"/>
         public Java.Net.URL ToURL()
         {
-            return IExecute<Java.Net.URL>("toURL");
+            return IExecuteWithSignature<Java.Net.URL>("toURL", "()Ljava/net/URL;");
         }
 
         #endregion

@@ -60,7 +60,7 @@ namespace Java.Nio.Channels.Spi
         /// <returns><see cref="bool"/></returns>
         public bool IsOpen()
         {
-            return IExecute<bool>("isOpen");
+            return IExecuteWithSignature<bool>("isOpen", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/AbstractInterruptibleChannel.html#close()"/>
@@ -69,7 +69,7 @@ namespace Java.Nio.Channels.Spi
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
-            IExecute("close");
+            IExecuteWithSignature("close", "()V");
         }
 
         #endregion

@@ -76,7 +76,7 @@ namespace Java.Security.Cert
         /// <returns><see cref="bool"/></returns>
         public bool Match(Java.Security.Cert.CRL arg0)
         {
-            return IExecute<bool>("match", arg0);
+            return IExecuteWithSignature<bool>("match", "(Ljava/security/cert/CRL;)Z", arg0);
         }
 
         #endregion

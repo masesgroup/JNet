@@ -76,7 +76,7 @@ namespace Javax.Annotation.Processing
         /// <returns><see cref="Javax.Lang.Model.SourceVersion"/></returns>
         public Javax.Lang.Model.SourceVersion Value()
         {
-            return IExecute<Javax.Lang.Model.SourceVersion>("value");
+            return IExecuteWithSignature<Javax.Lang.Model.SourceVersion>("value", "()Ljavax/lang/model/SourceVersion;");
         }
 
         #endregion

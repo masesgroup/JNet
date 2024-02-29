@@ -61,28 +61,28 @@ namespace Javax.Swing
         /// </summary>
         public int CalendarField
         {
-            get { return IExecute<int>("getCalendarField"); } set { IExecute("setCalendarField", value); }
+            get { return IExecuteWithSignature<int>("getCalendarField", "()I"); } set { IExecuteWithSignature("setCalendarField", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerDateModel.html#getDate()"/> 
         /// </summary>
         public Java.Util.Date Date
         {
-            get { return IExecute<Java.Util.Date>("getDate"); }
+            get { return IExecuteWithSignature<Java.Util.Date>("getDate", "()Ljava/util/Date;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerDateModel.html#getEnd()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerDateModel.html#setEnd(java.lang.Comparable)"/>
         /// </summary>
         public Java.Lang.Comparable<Java.Util.Date> End
         {
-            get { return IExecute<Java.Lang.Comparable<Java.Util.Date>>("getEnd"); } set { IExecute("setEnd", value); }
+            get { return IExecuteWithSignature<Java.Lang.Comparable<Java.Util.Date>>("getEnd", "()Ljava/lang/Comparable;"); } set { IExecuteWithSignature("setEnd", "(Ljava/lang/Comparable;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerDateModel.html#getStart()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerDateModel.html#setStart(java.lang.Comparable)"/>
         /// </summary>
         public Java.Lang.Comparable<Java.Util.Date> Start
         {
-            get { return IExecute<Java.Lang.Comparable<Java.Util.Date>>("getStart"); } set { IExecute("setStart", value); }
+            get { return IExecuteWithSignature<Java.Lang.Comparable<Java.Util.Date>>("getStart", "()Ljava/lang/Comparable;"); } set { IExecuteWithSignature("setStart", "(Ljava/lang/Comparable;)V", value); }
         }
 
         #endregion

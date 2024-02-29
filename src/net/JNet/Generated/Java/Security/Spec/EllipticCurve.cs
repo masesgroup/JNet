@@ -71,28 +71,28 @@ namespace Java.Security.Spec
         /// </summary>
         public Java.Math.BigInteger A
         {
-            get { return IExecute<Java.Math.BigInteger>("getA"); }
+            get { return IExecuteWithSignature<Java.Math.BigInteger>("getA", "()Ljava/math/BigInteger;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EllipticCurve.html#getB()"/> 
         /// </summary>
         public Java.Math.BigInteger B
         {
-            get { return IExecute<Java.Math.BigInteger>("getB"); }
+            get { return IExecuteWithSignature<Java.Math.BigInteger>("getB", "()Ljava/math/BigInteger;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EllipticCurve.html#getField()"/> 
         /// </summary>
         public Java.Security.Spec.ECField Field
         {
-            get { return IExecute<Java.Security.Spec.ECField>("getField"); }
+            get { return IExecuteWithSignature<Java.Security.Spec.ECField>("getField", "()Ljava/security/spec/ECField;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EllipticCurve.html#getSeed()"/> 
         /// </summary>
         public byte[] Seed
         {
-            get { return IExecuteArray<byte>("getSeed"); }
+            get { return IExecuteWithSignatureArray<byte>("getSeed", "()[B"); }
         }
 
         #endregion

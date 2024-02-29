@@ -52,7 +52,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool Verify(Javax.Swing.JComponent arg0)
         {
-            return IExecute<bool>("verify", arg0);
+            return IExecuteWithSignature<bool>("verify", "(Ljavax/swing/JComponent;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputVerifier.html#shouldYieldFocus(javax.swing.JComponent,javax.swing.JComponent)"/>
@@ -71,7 +71,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool VerifyTarget(Javax.Swing.JComponent arg0)
         {
-            return IExecute<bool>("verifyTarget", arg0);
+            return IExecuteWithSignature<bool>("verifyTarget", "(Ljavax/swing/JComponent;)Z", arg0);
         }
 
         #endregion

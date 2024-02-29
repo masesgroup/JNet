@@ -105,14 +105,14 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public double[] BankData
         {
-            get { return IExecuteArray<double>("getBankData"); }
+            get { return IExecuteWithSignatureArray<double>("getBankData", "()[[D"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferDouble.html#getData()"/> 
         /// </summary>
         public double[] Data
         {
-            get { return IExecuteArray<double>("getData"); }
+            get { return IExecuteWithSignatureArray<double>("getData", "()[D"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferDouble.html#getData(int)"/>
@@ -121,7 +121,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="double"/></returns>
         public double[] GetData(int arg0)
         {
-            return IExecuteArray<double>("getData", arg0);
+            return IExecuteWithSignatureArray<double>("getData", "(I)[D", arg0);
         }
 
         #endregion

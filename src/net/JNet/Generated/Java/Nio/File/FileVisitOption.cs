@@ -54,7 +54,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.FileVisitOption"/></returns>
         public static Java.Nio.File.FileVisitOption ValueOf(Java.Lang.String arg0)
         {
-            return SExecute<Java.Nio.File.FileVisitOption>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecuteWithSignature<Java.Nio.File.FileVisitOption>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/nio/file/FileVisitOption;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitOption.html#values()"/>
@@ -63,7 +63,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.FileVisitOption"/></returns>
         public static Java.Nio.File.FileVisitOption[] Values()
         {
-            return SExecuteArray<Java.Nio.File.FileVisitOption>(LocalBridgeClazz, "values");
+            return SExecuteWithSignatureArray<Java.Nio.File.FileVisitOption>(LocalBridgeClazz, "values", "()[Ljava/nio/file/FileVisitOption;");
         }
 
         #endregion

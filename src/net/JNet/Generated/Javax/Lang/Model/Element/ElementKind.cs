@@ -156,7 +156,7 @@ namespace Javax.Lang.Model.Element
         /// <returns><see cref="Javax.Lang.Model.Element.ElementKind"/></returns>
         public static Javax.Lang.Model.Element.ElementKind ValueOf(Java.Lang.String arg0)
         {
-            return SExecute<Javax.Lang.Model.Element.ElementKind>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecuteWithSignature<Javax.Lang.Model.Element.ElementKind>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/lang/model/element/ElementKind;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#values()"/>
@@ -165,7 +165,7 @@ namespace Javax.Lang.Model.Element
         /// <returns><see cref="Javax.Lang.Model.Element.ElementKind"/></returns>
         public static Javax.Lang.Model.Element.ElementKind[] Values()
         {
-            return SExecuteArray<Javax.Lang.Model.Element.ElementKind>(LocalBridgeClazz, "values");
+            return SExecuteWithSignatureArray<Javax.Lang.Model.Element.ElementKind>(LocalBridgeClazz, "values", "()[Ljavax/lang/model/element/ElementKind;");
         }
 
         #endregion
@@ -178,7 +178,7 @@ namespace Javax.Lang.Model.Element
         /// <returns><see cref="bool"/></returns>
         public bool IsClass()
         {
-            return IExecute<bool>("isClass");
+            return IExecuteWithSignature<bool>("isClass", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isField()"/>
@@ -187,7 +187,7 @@ namespace Javax.Lang.Model.Element
         /// <returns><see cref="bool"/></returns>
         public bool IsField()
         {
-            return IExecute<bool>("isField");
+            return IExecuteWithSignature<bool>("isField", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isInterface()"/>
@@ -196,7 +196,7 @@ namespace Javax.Lang.Model.Element
         /// <returns><see cref="bool"/></returns>
         public bool IsInterface()
         {
-            return IExecute<bool>("isInterface");
+            return IExecuteWithSignature<bool>("isInterface", "()Z");
         }
 
         #endregion

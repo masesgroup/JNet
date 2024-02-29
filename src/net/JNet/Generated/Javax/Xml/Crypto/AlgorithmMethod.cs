@@ -76,14 +76,14 @@ namespace Javax.Xml.Crypto
         /// </summary>
         public Java.Lang.String Algorithm
         {
-            get { return IExecute<Java.Lang.String>("getAlgorithm"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/AlgorithmMethod.html#getParameterSpec()"/> 
         /// </summary>
         public Java.Security.Spec.AlgorithmParameterSpec ParameterSpec
         {
-            get { return IExecute<Java.Security.Spec.AlgorithmParameterSpec>("getParameterSpec"); }
+            get { return IExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>("getParameterSpec", "()Ljava/security/spec/AlgorithmParameterSpec;"); }
         }
 
         #endregion

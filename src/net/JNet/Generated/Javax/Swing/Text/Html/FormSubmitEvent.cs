@@ -50,14 +50,14 @@ namespace Javax.Swing.Text.Html
         /// </summary>
         public Java.Lang.String Data
         {
-            get { return IExecute<Java.Lang.String>("getData"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getData", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.html#getMethod()"/> 
         /// </summary>
         public Javax.Swing.Text.Html.FormSubmitEvent.MethodType Method
         {
-            get { return IExecute<Javax.Swing.Text.Html.FormSubmitEvent.MethodType>("getMethod"); }
+            get { return IExecuteWithSignature<Javax.Swing.Text.Html.FormSubmitEvent.MethodType>("getMethod", "()Ljavax/swing/text/html/FormSubmitEvent$MethodType;"); }
         }
 
         #endregion
@@ -98,7 +98,7 @@ namespace Javax.Swing.Text.Html
             /// <returns><see cref="Javax.Swing.Text.Html.FormSubmitEvent.MethodType"/></returns>
             public static Javax.Swing.Text.Html.FormSubmitEvent.MethodType ValueOf(Java.Lang.String arg0)
             {
-                return SExecute<Javax.Swing.Text.Html.FormSubmitEvent.MethodType>(LocalBridgeClazz, "valueOf", arg0);
+                return SExecuteWithSignature<Javax.Swing.Text.Html.FormSubmitEvent.MethodType>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/swing/text/html/FormSubmitEvent$MethodType;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.MethodType.html#values()"/>
@@ -107,7 +107,7 @@ namespace Javax.Swing.Text.Html
             /// <returns><see cref="Javax.Swing.Text.Html.FormSubmitEvent.MethodType"/></returns>
             public static Javax.Swing.Text.Html.FormSubmitEvent.MethodType[] Values()
             {
-                return SExecuteArray<Javax.Swing.Text.Html.FormSubmitEvent.MethodType>(LocalBridgeClazz, "values");
+                return SExecuteWithSignatureArray<Javax.Swing.Text.Html.FormSubmitEvent.MethodType>(LocalBridgeClazz, "values", "()[Ljavax/swing/text/html/FormSubmitEvent$MethodType;");
             }
 
             #endregion

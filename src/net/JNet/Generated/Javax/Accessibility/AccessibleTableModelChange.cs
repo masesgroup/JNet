@@ -106,35 +106,35 @@ namespace Javax.Accessibility
         /// </summary>
         public int FirstColumn
         {
-            get { return IExecute<int>("getFirstColumn"); }
+            get { return IExecuteWithSignature<int>("getFirstColumn", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTableModelChange.html#getFirstRow()"/> 
         /// </summary>
         public int FirstRow
         {
-            get { return IExecute<int>("getFirstRow"); }
+            get { return IExecuteWithSignature<int>("getFirstRow", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTableModelChange.html#getLastColumn()"/> 
         /// </summary>
         public int LastColumn
         {
-            get { return IExecute<int>("getLastColumn"); }
+            get { return IExecuteWithSignature<int>("getLastColumn", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTableModelChange.html#getLastRow()"/> 
         /// </summary>
         public int LastRow
         {
-            get { return IExecute<int>("getLastRow"); }
+            get { return IExecuteWithSignature<int>("getLastRow", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTableModelChange.html#getType()"/> 
         /// </summary>
         public int Type
         {
-            get { return IExecute<int>("getType"); }
+            get { return IExecuteWithSignature<int>("getType", "()I"); }
         }
 
         #endregion

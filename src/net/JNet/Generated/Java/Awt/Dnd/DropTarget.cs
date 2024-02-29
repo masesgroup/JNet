@@ -104,28 +104,28 @@ namespace Java.Awt.Dnd
         /// </summary>
         public Java.Awt.Component Component
         {
-            get { return IExecute<Java.Awt.Component>("getComponent"); } set { IExecute("setComponent", value); }
+            get { return IExecuteWithSignature<Java.Awt.Component>("getComponent", "()Ljava/awt/Component;"); } set { IExecuteWithSignature("setComponent", "(Ljava/awt/Component;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTarget.html#getDefaultActions()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTarget.html#setDefaultActions(int)"/>
         /// </summary>
         public int DefaultActions
         {
-            get { return IExecute<int>("getDefaultActions"); } set { IExecute("setDefaultActions", value); }
+            get { return IExecuteWithSignature<int>("getDefaultActions", "()I"); } set { IExecuteWithSignature("setDefaultActions", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTarget.html#getDropTargetContext()"/> 
         /// </summary>
         public Java.Awt.Dnd.DropTargetContext DropTargetContext
         {
-            get { return IExecute<Java.Awt.Dnd.DropTargetContext>("getDropTargetContext"); }
+            get { return IExecuteWithSignature<Java.Awt.Dnd.DropTargetContext>("getDropTargetContext", "()Ljava/awt/dnd/DropTargetContext;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTarget.html#getFlavorMap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTarget.html#setFlavorMap(java.awt.datatransfer.FlavorMap)"/>
         /// </summary>
         public Java.Awt.Datatransfer.FlavorMap FlavorMap
         {
-            get { return IExecute<Java.Awt.Datatransfer.FlavorMap>("getFlavorMap"); } set { IExecute("setFlavorMap", value); }
+            get { return IExecuteWithSignature<Java.Awt.Datatransfer.FlavorMap>("getFlavorMap", "()Ljava/awt/datatransfer/FlavorMap;"); } set { IExecuteWithSignature("setFlavorMap", "(Ljava/awt/datatransfer/FlavorMap;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTarget.html#isActive()"/>
@@ -134,7 +134,7 @@ namespace Java.Awt.Dnd
         /// <returns><see cref="bool"/></returns>
         public bool IsActive()
         {
-            return IExecute<bool>("isActive");
+            return IExecuteWithSignature<bool>("isActive", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTarget.html#addDropTargetListener(java.awt.dnd.DropTargetListener)"/>
@@ -143,7 +143,7 @@ namespace Java.Awt.Dnd
         /// <exception cref="Java.Util.TooManyListenersException"/>
         public void AddDropTargetListener(Java.Awt.Dnd.DropTargetListener arg0)
         {
-            IExecute("addDropTargetListener", arg0);
+            IExecuteWithSignature("addDropTargetListener", "(Ljava/awt/dnd/DropTargetListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTarget.html#dragEnter(java.awt.dnd.DropTargetDragEvent)"/>
@@ -151,7 +151,7 @@ namespace Java.Awt.Dnd
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetDragEvent"/></param>
         public void DragEnter(Java.Awt.Dnd.DropTargetDragEvent arg0)
         {
-            IExecute("dragEnter", arg0);
+            IExecuteWithSignature("dragEnter", "(Ljava/awt/dnd/DropTargetDragEvent;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTarget.html#dragExit(java.awt.dnd.DropTargetEvent)"/>
@@ -159,7 +159,7 @@ namespace Java.Awt.Dnd
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetEvent"/></param>
         public void DragExit(Java.Awt.Dnd.DropTargetEvent arg0)
         {
-            IExecute("dragExit", arg0);
+            IExecuteWithSignature("dragExit", "(Ljava/awt/dnd/DropTargetEvent;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTarget.html#dragOver(java.awt.dnd.DropTargetDragEvent)"/>
@@ -167,7 +167,7 @@ namespace Java.Awt.Dnd
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetDragEvent"/></param>
         public void DragOver(Java.Awt.Dnd.DropTargetDragEvent arg0)
         {
-            IExecute("dragOver", arg0);
+            IExecuteWithSignature("dragOver", "(Ljava/awt/dnd/DropTargetDragEvent;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTarget.html#drop(java.awt.dnd.DropTargetDropEvent)"/>
@@ -175,7 +175,7 @@ namespace Java.Awt.Dnd
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetDropEvent"/></param>
         public void Drop(Java.Awt.Dnd.DropTargetDropEvent arg0)
         {
-            IExecute("drop", arg0);
+            IExecuteWithSignature("drop", "(Ljava/awt/dnd/DropTargetDropEvent;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTarget.html#dropActionChanged(java.awt.dnd.DropTargetDragEvent)"/>
@@ -183,7 +183,7 @@ namespace Java.Awt.Dnd
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetDragEvent"/></param>
         public void DropActionChanged(Java.Awt.Dnd.DropTargetDragEvent arg0)
         {
-            IExecute("dropActionChanged", arg0);
+            IExecuteWithSignature("dropActionChanged", "(Ljava/awt/dnd/DropTargetDragEvent;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTarget.html#removeDropTargetListener(java.awt.dnd.DropTargetListener)"/>
@@ -191,7 +191,7 @@ namespace Java.Awt.Dnd
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetListener"/></param>
         public void RemoveDropTargetListener(Java.Awt.Dnd.DropTargetListener arg0)
         {
-            IExecute("removeDropTargetListener", arg0);
+            IExecuteWithSignature("removeDropTargetListener", "(Ljava/awt/dnd/DropTargetListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTarget.html#setActive(boolean)"/>
@@ -199,21 +199,21 @@ namespace Java.Awt.Dnd
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetActive(bool arg0)
         {
-            IExecute("setActive", arg0);
+            IExecuteWithSignature("setActive", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTarget.html#addNotify()"/>
         /// </summary>
         public void AddNotify()
         {
-            IExecute("addNotify");
+            IExecuteWithSignature("addNotify", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTarget.html#removeNotify()"/>
         /// </summary>
         public void RemoveNotify()
         {
-            IExecute("removeNotify");
+            IExecuteWithSignature("removeNotify", "()V");
         }
 
         #endregion

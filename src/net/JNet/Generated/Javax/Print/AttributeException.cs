@@ -76,14 +76,14 @@ namespace Javax.Print
         /// </summary>
         public Java.Lang.Class[] UnsupportedAttributes
         {
-            get { return IExecuteArray<Java.Lang.Class>("getUnsupportedAttributes"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.Class>("getUnsupportedAttributes", "()[Ljava/lang/Class;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/AttributeException.html#getUnsupportedValues()"/> 
         /// </summary>
         public Javax.Print.Attribute.Attribute[] UnsupportedValues
         {
-            get { return IExecuteArray<Javax.Print.Attribute.Attribute>("getUnsupportedValues"); }
+            get { return IExecuteWithSignatureArray<Javax.Print.Attribute.Attribute>("getUnsupportedValues", "()[Ljavax/print/attribute/Attribute;"); }
         }
 
         #endregion

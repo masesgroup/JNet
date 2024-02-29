@@ -72,7 +72,7 @@ namespace Java.Lang
         /// </summary>
         public void Run()
         {
-            IExecute("run");
+            IExecuteWithSignature("run", "()V");
         }
 
         #endregion

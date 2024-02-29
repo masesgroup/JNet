@@ -58,14 +58,14 @@ namespace Javax.Swing.Undo
         /// </summary>
         public Javax.Swing.Event.UndoableEditListener[] UndoableEditListeners
         {
-            get { return IExecuteArray<Javax.Swing.Event.UndoableEditListener>("getUndoableEditListeners"); }
+            get { return IExecuteWithSignatureArray<Javax.Swing.Event.UndoableEditListener>("getUndoableEditListeners", "()[Ljavax/swing/event/UndoableEditListener;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEditSupport.html#getUpdateLevel()"/> 
         /// </summary>
         public int UpdateLevel
         {
-            get { return IExecute<int>("getUpdateLevel"); }
+            get { return IExecuteWithSignature<int>("getUpdateLevel", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEditSupport.html#addUndoableEditListener(javax.swing.event.UndoableEditListener)"/>
@@ -73,21 +73,21 @@ namespace Javax.Swing.Undo
         /// <param name="arg0"><see cref="Javax.Swing.Event.UndoableEditListener"/></param>
         public void AddUndoableEditListener(Javax.Swing.Event.UndoableEditListener arg0)
         {
-            IExecute("addUndoableEditListener", arg0);
+            IExecuteWithSignature("addUndoableEditListener", "(Ljavax/swing/event/UndoableEditListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEditSupport.html#beginUpdate()"/>
         /// </summary>
         public void BeginUpdate()
         {
-            IExecute("beginUpdate");
+            IExecuteWithSignature("beginUpdate", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEditSupport.html#endUpdate()"/>
         /// </summary>
         public void EndUpdate()
         {
-            IExecute("endUpdate");
+            IExecuteWithSignature("endUpdate", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEditSupport.html#postEdit(javax.swing.undo.UndoableEdit)"/>
@@ -95,7 +95,7 @@ namespace Javax.Swing.Undo
         /// <param name="arg0"><see cref="Javax.Swing.Undo.UndoableEdit"/></param>
         public void PostEdit(Javax.Swing.Undo.UndoableEdit arg0)
         {
-            IExecute("postEdit", arg0);
+            IExecuteWithSignature("postEdit", "(Ljavax/swing/undo/UndoableEdit;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEditSupport.html#removeUndoableEditListener(javax.swing.event.UndoableEditListener)"/>
@@ -103,7 +103,7 @@ namespace Javax.Swing.Undo
         /// <param name="arg0"><see cref="Javax.Swing.Event.UndoableEditListener"/></param>
         public void RemoveUndoableEditListener(Javax.Swing.Event.UndoableEditListener arg0)
         {
-            IExecute("removeUndoableEditListener", arg0);
+            IExecuteWithSignature("removeUndoableEditListener", "(Ljavax/swing/event/UndoableEditListener;)V", arg0);
         }
 
         #endregion

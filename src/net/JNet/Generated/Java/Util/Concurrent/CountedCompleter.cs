@@ -50,28 +50,28 @@ namespace Java.Util.Concurrent
         /// </summary>
         public Java.Util.Concurrent.CountedCompleter Completer
         {
-            get { return IExecute<Java.Util.Concurrent.CountedCompleter>("getCompleter"); }
+            get { return IExecuteWithSignature<Java.Util.Concurrent.CountedCompleter>("getCompleter", "()Ljava/util/concurrent/CountedCompleter;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#getPendingCount()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#setPendingCount(int)"/>
         /// </summary>
         public int PendingCount
         {
-            get { return IExecute<int>("getPendingCount"); } set { IExecute("setPendingCount", value); }
+            get { return IExecuteWithSignature<int>("getPendingCount", "()I"); } set { IExecuteWithSignature("setPendingCount", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#getRoot()"/> 
         /// </summary>
         public Java.Util.Concurrent.CountedCompleter Root
         {
-            get { return IExecute<Java.Util.Concurrent.CountedCompleter>("getRoot"); }
+            get { return IExecuteWithSignature<Java.Util.Concurrent.CountedCompleter>("getRoot", "()Ljava/util/concurrent/CountedCompleter;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#compute()"/>
         /// </summary>
         public void Compute()
         {
-            IExecute("compute");
+            IExecuteWithSignature("compute", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#onExceptionalCompletion(java.lang.Throwable,java.util.concurrent.CountedCompleter)"/>
@@ -100,7 +100,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int DecrementPendingCountUnlessZero()
         {
-            return IExecute<int>("decrementPendingCountUnlessZero");
+            return IExecuteWithSignature<int>("decrementPendingCountUnlessZero", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#firstComplete()"/>
@@ -109,7 +109,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CountedCompleter"/></returns>
         public Java.Util.Concurrent.CountedCompleter FirstComplete()
         {
-            return IExecute<Java.Util.Concurrent.CountedCompleter>("firstComplete");
+            return IExecuteWithSignature<Java.Util.Concurrent.CountedCompleter>("firstComplete", "()Ljava/util/concurrent/CountedCompleter;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#nextComplete()"/>
@@ -118,7 +118,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CountedCompleter"/></returns>
         public Java.Util.Concurrent.CountedCompleter NextComplete()
         {
-            return IExecute<Java.Util.Concurrent.CountedCompleter>("nextComplete");
+            return IExecuteWithSignature<Java.Util.Concurrent.CountedCompleter>("nextComplete", "()Ljava/util/concurrent/CountedCompleter;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#addToPendingCount(int)"/>
@@ -126,7 +126,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="int"/></param>
         public void AddToPendingCount(int arg0)
         {
-            IExecute("addToPendingCount", arg0);
+            IExecuteWithSignature("addToPendingCount", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#helpComplete(int)"/>
@@ -134,28 +134,28 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="int"/></param>
         public void HelpComplete(int arg0)
         {
-            IExecute("helpComplete", arg0);
+            IExecuteWithSignature("helpComplete", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#propagateCompletion()"/>
         /// </summary>
         public void PropagateCompletion()
         {
-            IExecute("propagateCompletion");
+            IExecuteWithSignature("propagateCompletion", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#quietlyCompleteRoot()"/>
         /// </summary>
         public void QuietlyCompleteRoot()
         {
-            IExecute("quietlyCompleteRoot");
+            IExecuteWithSignature("quietlyCompleteRoot", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#tryComplete()"/>
         /// </summary>
         public void TryComplete()
         {
-            IExecute("tryComplete");
+            IExecuteWithSignature("tryComplete", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#onCompletion(java.util.concurrent.CountedCompleter)"/>
@@ -163,7 +163,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CountedCompleter"/></param>
         public void OnCompletion(Java.Util.Concurrent.CountedCompleter arg0)
         {
-            IExecute("onCompletion", arg0);
+            IExecuteWithSignature("onCompletion", "(Ljava/util/concurrent/CountedCompleter;)V", arg0);
         }
 
         #endregion
@@ -205,28 +205,28 @@ namespace Java.Util.Concurrent
         /// </summary>
         public Java.Util.Concurrent.CountedCompleter<object> Completer
         {
-            get { return IExecute<Java.Util.Concurrent.CountedCompleter<object>>("getCompleter"); }
+            get { return IExecuteWithSignature<Java.Util.Concurrent.CountedCompleter<object>>("getCompleter", "()Ljava/util/concurrent/CountedCompleter;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#getPendingCount()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#setPendingCount(int)"/>
         /// </summary>
         public int PendingCount
         {
-            get { return IExecute<int>("getPendingCount"); } set { IExecute("setPendingCount", value); }
+            get { return IExecuteWithSignature<int>("getPendingCount", "()I"); } set { IExecuteWithSignature("setPendingCount", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#getRoot()"/> 
         /// </summary>
         public Java.Util.Concurrent.CountedCompleter<object> Root
         {
-            get { return IExecute<Java.Util.Concurrent.CountedCompleter<object>>("getRoot"); }
+            get { return IExecuteWithSignature<Java.Util.Concurrent.CountedCompleter<object>>("getRoot", "()Ljava/util/concurrent/CountedCompleter;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#compute()"/>
         /// </summary>
         public void Compute()
         {
-            IExecute("compute");
+            IExecuteWithSignature("compute", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#onExceptionalCompletion(java.lang.Throwable,java.util.concurrent.CountedCompleter)"/>
@@ -255,7 +255,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int DecrementPendingCountUnlessZero()
         {
-            return IExecute<int>("decrementPendingCountUnlessZero");
+            return IExecuteWithSignature<int>("decrementPendingCountUnlessZero", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#firstComplete()"/>
@@ -264,7 +264,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CountedCompleter"/></returns>
         public Java.Util.Concurrent.CountedCompleter<object> FirstComplete()
         {
-            return IExecute<Java.Util.Concurrent.CountedCompleter<object>>("firstComplete");
+            return IExecuteWithSignature<Java.Util.Concurrent.CountedCompleter<object>>("firstComplete", "()Ljava/util/concurrent/CountedCompleter;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#nextComplete()"/>
@@ -273,7 +273,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CountedCompleter"/></returns>
         public Java.Util.Concurrent.CountedCompleter<object> NextComplete()
         {
-            return IExecute<Java.Util.Concurrent.CountedCompleter<object>>("nextComplete");
+            return IExecuteWithSignature<Java.Util.Concurrent.CountedCompleter<object>>("nextComplete", "()Ljava/util/concurrent/CountedCompleter;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#addToPendingCount(int)"/>
@@ -281,7 +281,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="int"/></param>
         public void AddToPendingCount(int arg0)
         {
-            IExecute("addToPendingCount", arg0);
+            IExecuteWithSignature("addToPendingCount", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#helpComplete(int)"/>
@@ -289,28 +289,28 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="int"/></param>
         public void HelpComplete(int arg0)
         {
-            IExecute("helpComplete", arg0);
+            IExecuteWithSignature("helpComplete", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#propagateCompletion()"/>
         /// </summary>
         public void PropagateCompletion()
         {
-            IExecute("propagateCompletion");
+            IExecuteWithSignature("propagateCompletion", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#quietlyCompleteRoot()"/>
         /// </summary>
         public void QuietlyCompleteRoot()
         {
-            IExecute("quietlyCompleteRoot");
+            IExecuteWithSignature("quietlyCompleteRoot", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#tryComplete()"/>
         /// </summary>
         public void TryComplete()
         {
-            IExecute("tryComplete");
+            IExecuteWithSignature("tryComplete", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#onCompletion(java.util.concurrent.CountedCompleter)"/>
@@ -318,7 +318,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CountedCompleter"/></param>
         public void OnCompletion(Java.Util.Concurrent.CountedCompleter<object> arg0)
         {
-            IExecute("onCompletion", arg0);
+            IExecuteWithSignature("onCompletion", "(Ljava/util/concurrent/CountedCompleter;)V", arg0);
         }
 
         #endregion

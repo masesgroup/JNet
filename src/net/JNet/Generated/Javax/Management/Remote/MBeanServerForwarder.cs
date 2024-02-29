@@ -72,7 +72,7 @@ namespace Javax.Management.Remote
         /// </summary>
         public Javax.Management.MBeanServer MBeanServer
         {
-            get { return IExecute<Javax.Management.MBeanServer>("getMBeanServer"); } set { IExecute("setMBeanServer", value); }
+            get { return IExecuteWithSignature<Javax.Management.MBeanServer>("getMBeanServer", "()Ljavax/management/MBeanServer;"); } set { IExecuteWithSignature("setMBeanServer", "(Ljavax/management/MBeanServer;)V", value); }
         }
 
         #endregion

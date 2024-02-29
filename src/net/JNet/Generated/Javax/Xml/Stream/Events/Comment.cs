@@ -72,7 +72,7 @@ namespace Javax.Xml.Stream.Events
         /// </summary>
         public Java.Lang.String Text
         {
-            get { return IExecute<Java.Lang.String>("getText"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getText", "()Ljava/lang/String;"); }
         }
 
         #endregion

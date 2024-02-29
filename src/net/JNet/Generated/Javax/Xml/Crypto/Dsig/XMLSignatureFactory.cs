@@ -46,7 +46,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// </summary>
         public static Javax.Xml.Crypto.Dsig.XMLSignatureFactory Instance
         {
-            get { return SExecute<Javax.Xml.Crypto.Dsig.XMLSignatureFactory>(LocalBridgeClazz, "getInstance"); }
+            get { return SExecuteWithSignature<Javax.Xml.Crypto.Dsig.XMLSignatureFactory>(LocalBridgeClazz, "getInstance", "()Ljavax/xml/crypto/dsig/XMLSignatureFactory;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#getInstance(java.lang.String,java.lang.String)"/>
@@ -76,7 +76,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.XMLSignatureFactory"/></returns>
         public static Javax.Xml.Crypto.Dsig.XMLSignatureFactory GetInstance(Java.Lang.String arg0)
         {
-            return SExecute<Javax.Xml.Crypto.Dsig.XMLSignatureFactory>(LocalBridgeClazz, "getInstance", arg0);
+            return SExecuteWithSignature<Javax.Xml.Crypto.Dsig.XMLSignatureFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljavax/xml/crypto/dsig/XMLSignatureFactory;", arg0);
         }
 
         #endregion
@@ -87,28 +87,28 @@ namespace Javax.Xml.Crypto.Dsig
         /// </summary>
         public Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory KeyInfoFactory
         {
-            get { return IExecute<Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory>("getKeyInfoFactory"); }
+            get { return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory>("getKeyInfoFactory", "()Ljavax/xml/crypto/dsig/keyinfo/KeyInfoFactory;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#getMechanismType()"/> 
         /// </summary>
         public Java.Lang.String MechanismType
         {
-            get { return IExecute<Java.Lang.String>("getMechanismType"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getMechanismType", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#getProvider()"/> 
         /// </summary>
         public Java.Security.Provider Provider
         {
-            get { return IExecute<Java.Security.Provider>("getProvider"); }
+            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#getURIDereferencer()"/> 
         /// </summary>
         public Javax.Xml.Crypto.URIDereferencer URIDereferencer
         {
-            get { return IExecute<Javax.Xml.Crypto.URIDereferencer>("getURIDereferencer"); }
+            get { return IExecuteWithSignature<Javax.Xml.Crypto.URIDereferencer>("getURIDereferencer", "()Ljavax/xml/crypto/URIDereferencer;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#isFeatureSupported(java.lang.String)"/>
@@ -117,7 +117,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <returns><see cref="bool"/></returns>
         public bool IsFeatureSupported(Java.Lang.String arg0)
         {
-            return IExecute<bool>("isFeatureSupported", arg0);
+            return IExecuteWithSignature<bool>("isFeatureSupported", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newCanonicalizationMethod(java.lang.String,javax.xml.crypto.dsig.spec.C14NMethodParameterSpec)"/>
@@ -174,7 +174,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.Manifest"/></returns>
         public Javax.Xml.Crypto.Dsig.Manifest NewManifest<Arg0ExtendsJavax_Xml_Crypto_Dsig_Reference>(Java.Util.List<Arg0ExtendsJavax_Xml_Crypto_Dsig_Reference> arg0) where Arg0ExtendsJavax_Xml_Crypto_Dsig_Reference: Javax.Xml.Crypto.Dsig.Reference
         {
-            return IExecute<Javax.Xml.Crypto.Dsig.Manifest>("newManifest", arg0);
+            return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.Manifest>("newManifest", "(Ljava/util/List;)Ljavax/xml/crypto/dsig/Manifest;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newReference(java.lang.String,javax.xml.crypto.dsig.DigestMethod,java.util.List,java.lang.String,java.lang.String,byte[])"/>
@@ -361,7 +361,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <exception cref="Javax.Xml.Crypto.MarshalException"/>
         public Javax.Xml.Crypto.Dsig.XMLSignature UnmarshalXMLSignature(Javax.Xml.Crypto.Dsig.XMLValidateContext arg0)
         {
-            return IExecute<Javax.Xml.Crypto.Dsig.XMLSignature>("unmarshalXMLSignature", arg0);
+            return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.XMLSignature>("unmarshalXMLSignature", "(Ljavax/xml/crypto/dsig/XMLValidateContext;)Ljavax/xml/crypto/dsig/XMLSignature;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#unmarshalXMLSignature(javax.xml.crypto.XMLStructure)"/>
@@ -371,7 +371,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <exception cref="Javax.Xml.Crypto.MarshalException"/>
         public Javax.Xml.Crypto.Dsig.XMLSignature UnmarshalXMLSignature(Javax.Xml.Crypto.XMLStructure arg0)
         {
-            return IExecute<Javax.Xml.Crypto.Dsig.XMLSignature>("unmarshalXMLSignature", arg0);
+            return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.XMLSignature>("unmarshalXMLSignature", "(Ljavax/xml/crypto/XMLStructure;)Ljavax/xml/crypto/dsig/XMLSignature;", arg0);
         }
 
         #endregion

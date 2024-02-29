@@ -48,7 +48,7 @@ namespace Java.Nio.File.Spi
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Java.Nio.File.Spi.FileSystemProvider> InstalledProviders()
         {
-            return SExecute<Java.Util.List<Java.Nio.File.Spi.FileSystemProvider>>(LocalBridgeClazz, "installedProviders");
+            return SExecuteWithSignature<Java.Util.List<Java.Nio.File.Spi.FileSystemProvider>>(LocalBridgeClazz, "installedProviders", "()Ljava/util/List;");
         }
 
         #endregion
@@ -59,7 +59,7 @@ namespace Java.Nio.File.Spi
         /// </summary>
         public Java.Lang.String Scheme
         {
-            get { return IExecute<Java.Lang.String>("getScheme"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getScheme", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#readAttributes(java.nio.file.Path,java.lang.Class,java.nio.file.LinkOption[])"/>
@@ -94,7 +94,7 @@ namespace Java.Nio.File.Spi
         /// <exception cref="Java.Io.IOException"/>
         public bool IsHidden(Java.Nio.File.Path arg0)
         {
-            return IExecute<bool>("isHidden", arg0);
+            return IExecuteWithSignature<bool>("isHidden", "(Ljava/nio/file/Path;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#isSameFile(java.nio.file.Path,java.nio.file.Path)"/>
@@ -140,7 +140,7 @@ namespace Java.Nio.File.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.FileStore GetFileStore(Java.Nio.File.Path arg0)
         {
-            return IExecute<Java.Nio.File.FileStore>("getFileStore", arg0);
+            return IExecuteWithSignature<Java.Nio.File.FileStore>("getFileStore", "(Ljava/nio/file/Path;)Ljava/nio/file/FileStore;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#getFileSystem(java.net.URI)"/>
@@ -149,7 +149,7 @@ namespace Java.Nio.File.Spi
         /// <returns><see cref="Java.Nio.File.FileSystem"/></returns>
         public Java.Nio.File.FileSystem GetFileSystem(Java.Net.URI arg0)
         {
-            return IExecute<Java.Nio.File.FileSystem>("getFileSystem", arg0);
+            return IExecuteWithSignature<Java.Nio.File.FileSystem>("getFileSystem", "(Ljava/net/URI;)Ljava/nio/file/FileSystem;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#newFileSystem(java.net.URI,java.util.Map)"/>
@@ -169,7 +169,7 @@ namespace Java.Nio.File.Spi
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         public Java.Nio.File.Path GetPath(Java.Net.URI arg0)
         {
-            return IExecute<Java.Nio.File.Path>("getPath", arg0);
+            return IExecuteWithSignature<Java.Nio.File.Path>("getPath", "(Ljava/net/URI;)Ljava/nio/file/Path;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#readAttributes(java.nio.file.Path,java.lang.String,java.nio.file.LinkOption[])"/>
@@ -221,7 +221,7 @@ namespace Java.Nio.File.Spi
         /// <exception cref="Java.Io.IOException"/>
         public void Delete(Java.Nio.File.Path arg0)
         {
-            IExecute("delete", arg0);
+            IExecuteWithSignature("delete", "(Ljava/nio/file/Path;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#move(java.nio.file.Path,java.nio.file.Path,java.nio.file.CopyOption[])"/>
@@ -254,7 +254,7 @@ namespace Java.Nio.File.Spi
         /// <exception cref="Java.Io.IOException"/>
         public bool DeleteIfExists(Java.Nio.File.Path arg0)
         {
-            return IExecute<bool>("deleteIfExists", arg0);
+            return IExecuteWithSignature<bool>("deleteIfExists", "(Ljava/nio/file/Path;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#newInputStream(java.nio.file.Path,java.nio.file.OpenOption[])"/>
@@ -324,7 +324,7 @@ namespace Java.Nio.File.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.Path ReadSymbolicLink(Java.Nio.File.Path arg0)
         {
-            return IExecute<Java.Nio.File.Path>("readSymbolicLink", arg0);
+            return IExecuteWithSignature<Java.Nio.File.Path>("readSymbolicLink", "(Ljava/nio/file/Path;)Ljava/nio/file/Path;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#createLink(java.nio.file.Path,java.nio.file.Path)"/>

@@ -62,7 +62,7 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public Java.Awt.Dimension MinimumOptionPaneSize
         {
-            get { return IExecute<Java.Awt.Dimension>("getMinimumOptionPaneSize"); }
+            get { return IExecuteWithSignature<Java.Awt.Dimension>("getMinimumOptionPaneSize", "()Ljava/awt/Dimension;"); }
         }
 
         #endregion
@@ -102,21 +102,21 @@ namespace Javax.Swing.Plaf.Basic
             /// </summary>
             public bool CentersChildren
             {
-                get { return IExecute<bool>("getCentersChildren"); } set { IExecute("setCentersChildren", value); }
+                get { return IExecuteWithSignature<bool>("getCentersChildren", "()Z"); } set { IExecuteWithSignature("setCentersChildren", "(Z)V", value); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#getPadding()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#setPadding(int)"/>
             /// </summary>
             public int Padding
             {
-                get { return IExecute<int>("getPadding"); } set { IExecute("setPadding", value); }
+                get { return IExecuteWithSignature<int>("getPadding", "()I"); } set { IExecuteWithSignature("setPadding", "(I)V", value); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#getSyncAllWidths()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#setSyncAllWidths(boolean)"/>
             /// </summary>
             public bool SyncAllWidths
             {
-                get { return IExecute<bool>("getSyncAllWidths"); } set { IExecute("setSyncAllWidths", value); }
+                get { return IExecuteWithSignature<bool>("getSyncAllWidths", "()Z"); } set { IExecuteWithSignature("setSyncAllWidths", "(Z)V", value); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#minimumLayoutSize(java.awt.Container)"/>
@@ -125,7 +125,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <returns><see cref="Java.Awt.Dimension"/></returns>
             public Java.Awt.Dimension MinimumLayoutSize(Java.Awt.Container arg0)
             {
-                return IExecute<Java.Awt.Dimension>("minimumLayoutSize", arg0);
+                return IExecuteWithSignature<Java.Awt.Dimension>("minimumLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#preferredLayoutSize(java.awt.Container)"/>
@@ -134,7 +134,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <returns><see cref="Java.Awt.Dimension"/></returns>
             public Java.Awt.Dimension PreferredLayoutSize(Java.Awt.Container arg0)
             {
-                return IExecute<Java.Awt.Dimension>("preferredLayoutSize", arg0);
+                return IExecuteWithSignature<Java.Awt.Dimension>("preferredLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#addLayoutComponent(java.lang.String,java.awt.Component)"/>
@@ -151,7 +151,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
             public void LayoutContainer(Java.Awt.Container arg0)
             {
-                IExecute("layoutContainer", arg0);
+                IExecuteWithSignature("layoutContainer", "(Ljava/awt/Container;)V", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#removeLayoutComponent(java.awt.Component)"/>
@@ -159,7 +159,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
             public void RemoveLayoutComponent(Java.Awt.Component arg0)
             {
-                IExecute("removeLayoutComponent", arg0);
+                IExecuteWithSignature("removeLayoutComponent", "(Ljava/awt/Component;)V", arg0);
             }
 
             #endregion
@@ -210,7 +210,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
             public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
             {
-                IExecute("propertyChange", arg0);
+                IExecuteWithSignature("propertyChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);
             }
 
             #endregion

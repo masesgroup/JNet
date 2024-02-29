@@ -80,21 +80,21 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         public Java.Util.List Bounds
         {
-            get { return IExecute<Java.Util.List>("getBounds"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getBounds", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeParameterElement.html#getEnclosingElement()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Element EnclosingElement
         {
-            get { return IExecute<Javax.Lang.Model.Element.Element>("getEnclosingElement"); }
+            get { return IExecuteWithSignature<Javax.Lang.Model.Element.Element>("getEnclosingElement", "()Ljavax/lang/model/element/Element;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeParameterElement.html#getGenericElement()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Element GenericElement
         {
-            get { return IExecute<Javax.Lang.Model.Element.Element>("getGenericElement"); }
+            get { return IExecuteWithSignature<Javax.Lang.Model.Element.Element>("getGenericElement", "()Ljavax/lang/model/element/Element;"); }
         }
 
         #endregion

@@ -52,7 +52,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="bool"/></returns>
         public bool IsBlocking()
         {
-            return IExecute<bool>("isBlocking");
+            return IExecuteWithSignature<bool>("isBlocking", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#isRegistered()"/>
@@ -61,7 +61,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="bool"/></returns>
         public bool IsRegistered()
         {
-            return IExecute<bool>("isRegistered");
+            return IExecuteWithSignature<bool>("isRegistered", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#validOps()"/>
@@ -70,7 +70,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="int"/></returns>
         public int ValidOps()
         {
-            return IExecute<int>("validOps");
+            return IExecuteWithSignature<int>("validOps", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#blockingLock()"/>
@@ -79,7 +79,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="object"/></returns>
         public object BlockingLock()
         {
-            return IExecute("blockingLock");
+            return IExecuteWithSignature("blockingLock", "()Ljava/lang/Object;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#configureBlocking(boolean)"/>
@@ -89,7 +89,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.SelectableChannel ConfigureBlocking(bool arg0)
         {
-            return IExecute<Java.Nio.Channels.SelectableChannel>("configureBlocking", arg0);
+            return IExecuteWithSignature<Java.Nio.Channels.SelectableChannel>("configureBlocking", "(Z)Ljava/nio/channels/SelectableChannel;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#keyFor(java.nio.channels.Selector)"/>
@@ -98,7 +98,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Nio.Channels.SelectionKey"/></returns>
         public Java.Nio.Channels.SelectionKey KeyFor(Java.Nio.Channels.Selector arg0)
         {
-            return IExecute<Java.Nio.Channels.SelectionKey>("keyFor", arg0);
+            return IExecuteWithSignature<Java.Nio.Channels.SelectionKey>("keyFor", "(Ljava/nio/channels/Selector;)Ljava/nio/channels/SelectionKey;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#register(java.nio.channels.Selector,int,java.lang.Object)"/>
@@ -119,7 +119,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Nio.Channels.Spi.SelectorProvider"/></returns>
         public Java.Nio.Channels.Spi.SelectorProvider Provider()
         {
-            return IExecute<Java.Nio.Channels.Spi.SelectorProvider>("provider");
+            return IExecuteWithSignature<Java.Nio.Channels.Spi.SelectorProvider>("provider", "()Ljava/nio/channels/spi/SelectorProvider;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#register(java.nio.channels.Selector,int)"/>

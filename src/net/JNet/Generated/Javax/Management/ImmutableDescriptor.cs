@@ -70,7 +70,7 @@ namespace Javax.Management
         /// <returns><see cref="Javax.Management.ImmutableDescriptor"/></returns>
         public static Javax.Management.ImmutableDescriptor Union(params Javax.Management.Descriptor[] arg0)
         {
-            if (arg0.Length == 0) return SExecute<Javax.Management.ImmutableDescriptor>(LocalBridgeClazz, "union"); else return SExecute<Javax.Management.ImmutableDescriptor>(LocalBridgeClazz, "union", arg0);
+            if (arg0.Length == 0) return SExecuteWithSignature<Javax.Management.ImmutableDescriptor>(LocalBridgeClazz, "union", "([Ljavax/management/Descriptor;)Ljavax/management/ImmutableDescriptor;"); else return SExecuteWithSignature<Javax.Management.ImmutableDescriptor>(LocalBridgeClazz, "union", "([Ljavax/management/Descriptor;)Ljavax/management/ImmutableDescriptor;", arg0);
         }
 
         #endregion
@@ -81,14 +81,14 @@ namespace Javax.Management
         /// </summary>
         public Java.Lang.String[] FieldNames
         {
-            get { return IExecuteArray<Java.Lang.String>("getFieldNames"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.String>("getFieldNames", "()[Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html#getFields()"/> 
         /// </summary>
         public Java.Lang.String[] Fields
         {
-            get { return IExecuteArray<Java.Lang.String>("getFields"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.String>("getFields", "()[Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html#isValid()"/>
@@ -97,7 +97,7 @@ namespace Javax.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsValid()
         {
-            return IExecute<bool>("isValid");
+            return IExecuteWithSignature<bool>("isValid", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html#getFieldValue(java.lang.String)"/>
@@ -106,7 +106,7 @@ namespace Javax.Management
         /// <returns><see cref="object"/></returns>
         public object GetFieldValue(Java.Lang.String arg0)
         {
-            return IExecute("getFieldValue", arg0);
+            return IExecuteWithSignature("getFieldValue", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html#getFieldValues(java.lang.String[])"/>
@@ -115,7 +115,7 @@ namespace Javax.Management
         /// <returns><see cref="object"/></returns>
         public object[] GetFieldValues(params Java.Lang.String[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteArray<object>("getFieldValues"); else return IExecuteArray<object>("getFieldValues", arg0);
+            if (arg0.Length == 0) return IExecuteWithSignatureArray<object>("getFieldValues", "([Ljava/lang/String;)[Ljava/lang/Object;"); else return IExecuteWithSignatureArray<object>("getFieldValues", "([Ljava/lang/String;)[Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html#removeField(java.lang.String)"/>
@@ -123,7 +123,7 @@ namespace Javax.Management
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void RemoveField(Java.Lang.String arg0)
         {
-            IExecute("removeField", arg0);
+            IExecuteWithSignature("removeField", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html#setField(java.lang.String,java.lang.Object)"/>

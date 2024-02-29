@@ -74,7 +74,7 @@ namespace Java.Awt.DesktopNs
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.PrintFilesEvent"/></param>
         public void PrintFiles(Java.Awt.DesktopNs.PrintFilesEvent arg0)
         {
-            IExecute("printFiles", arg0);
+            IExecuteWithSignature("printFiles", "(Ljava/awt/desktop/PrintFilesEvent;)V", arg0);
         }
 
         #endregion

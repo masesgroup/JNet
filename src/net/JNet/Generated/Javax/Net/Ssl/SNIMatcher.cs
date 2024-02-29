@@ -50,7 +50,7 @@ namespace Javax.Net.Ssl
         /// </summary>
         public int Type
         {
-            get { return IExecute<int>("getType"); }
+            get { return IExecuteWithSignature<int>("getType", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SNIMatcher.html#matches(javax.net.ssl.SNIServerName)"/>
@@ -59,7 +59,7 @@ namespace Javax.Net.Ssl
         /// <returns><see cref="bool"/></returns>
         public bool Matches(Javax.Net.Ssl.SNIServerName arg0)
         {
-            return IExecute<bool>("matches", arg0);
+            return IExecuteWithSignature<bool>("matches", "(Ljavax/net/ssl/SNIServerName;)Z", arg0);
         }
 
         #endregion

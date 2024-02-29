@@ -106,7 +106,7 @@ namespace Javax.Swing
         /// </summary>
         public bool State
         {
-            get { return IExecute<bool>("getState"); } set { IExecute("setState", value); }
+            get { return IExecuteWithSignature<bool>("getState", "()Z"); } set { IExecuteWithSignature("setState", "(Z)V", value); }
         }
 
         #endregion

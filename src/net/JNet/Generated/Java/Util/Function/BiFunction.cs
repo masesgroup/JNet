@@ -86,7 +86,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.BiFunction AndThenDefault(Java.Util.Function.Function arg0)
         {
-            return IExecute<Java.Util.Function.BiFunction>("andThenDefault", arg0);
+            return IExecuteWithSignature<Java.Util.Function.BiFunction>("andThenDefault", "(Ljava/util/function/Function;)Ljava/util/function/BiFunction;", arg0);
         }
 
         /// <summary>
@@ -221,7 +221,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.BiFunction<T, U, V> AndThen<V, Arg0objectSuperR, Arg0ExtendsV>Default(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R where Arg0ExtendsV: V
         {
-            return IExecute<Java.Util.Function.BiFunction<T, U, V>>("andThenDefault", arg0);
+            return IExecuteWithSignature<Java.Util.Function.BiFunction<T, U, V>>("andThenDefault", "(Ljava/util/function/Function;)Ljava/util/function/BiFunction;", arg0);
         }
 
         /// <summary>

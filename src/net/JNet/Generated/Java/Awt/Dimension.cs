@@ -79,7 +79,7 @@ namespace Java.Awt
         /// </summary>
         public Java.Awt.Dimension Size
         {
-            get { return IExecute<Java.Awt.Dimension>("getSize"); } set { IExecute("setSize", value); }
+            get { return IExecuteWithSignature<Java.Awt.Dimension>("getSize", "()Ljava/awt/Dimension;"); } set { IExecuteWithSignature("setSize", "(Ljava/awt/Dimension;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dimension.html#setSize(int,int)"/>

@@ -50,14 +50,14 @@ namespace Javax.Xml.Parsers
         /// </summary>
         public Org.W3c.Dom.DOMImplementation DOMImplementation
         {
-            get { return IExecute<Org.W3c.Dom.DOMImplementation>("getDOMImplementation"); }
+            get { return IExecuteWithSignature<Org.W3c.Dom.DOMImplementation>("getDOMImplementation", "()Lorg/w3c/dom/DOMImplementation;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#getSchema()"/> 
         /// </summary>
         public Javax.Xml.Validation.Schema Schema
         {
-            get { return IExecute<Javax.Xml.Validation.Schema>("getSchema"); }
+            get { return IExecuteWithSignature<Javax.Xml.Validation.Schema>("getSchema", "()Ljavax/xml/validation/Schema;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#isNamespaceAware()"/>
@@ -66,7 +66,7 @@ namespace Javax.Xml.Parsers
         /// <returns><see cref="bool"/></returns>
         public bool IsNamespaceAware()
         {
-            return IExecute<bool>("isNamespaceAware");
+            return IExecuteWithSignature<bool>("isNamespaceAware", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#isValidating()"/>
@@ -75,7 +75,7 @@ namespace Javax.Xml.Parsers
         /// <returns><see cref="bool"/></returns>
         public bool IsValidating()
         {
-            return IExecute<bool>("isValidating");
+            return IExecuteWithSignature<bool>("isValidating", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#newDocument()"/>
@@ -84,7 +84,7 @@ namespace Javax.Xml.Parsers
         /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
         public Org.W3c.Dom.Document NewDocument()
         {
-            return IExecute<Org.W3c.Dom.Document>("newDocument");
+            return IExecuteWithSignature<Org.W3c.Dom.Document>("newDocument", "()Lorg/w3c/dom/Document;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#parse(org.xml.sax.InputSource)"/>
@@ -95,7 +95,7 @@ namespace Javax.Xml.Parsers
         /// <exception cref="Java.Io.IOException"/>
         public Org.W3c.Dom.Document Parse(Org.Xml.Sax.InputSource arg0)
         {
-            return IExecute<Org.W3c.Dom.Document>("parse", arg0);
+            return IExecuteWithSignature<Org.W3c.Dom.Document>("parse", "(Lorg/xml/sax/InputSource;)Lorg/w3c/dom/Document;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#setEntityResolver(org.xml.sax.EntityResolver)"/>
@@ -103,7 +103,7 @@ namespace Javax.Xml.Parsers
         /// <param name="arg0"><see cref="Org.Xml.Sax.EntityResolver"/></param>
         public void SetEntityResolver(Org.Xml.Sax.EntityResolver arg0)
         {
-            IExecute("setEntityResolver", arg0);
+            IExecuteWithSignature("setEntityResolver", "(Lorg/xml/sax/EntityResolver;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
@@ -111,7 +111,7 @@ namespace Javax.Xml.Parsers
         /// <param name="arg0"><see cref="Org.Xml.Sax.ErrorHandler"/></param>
         public void SetErrorHandler(Org.Xml.Sax.ErrorHandler arg0)
         {
-            IExecute("setErrorHandler", arg0);
+            IExecuteWithSignature("setErrorHandler", "(Lorg/xml/sax/ErrorHandler;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#isXIncludeAware()"/>
@@ -120,7 +120,7 @@ namespace Javax.Xml.Parsers
         /// <returns><see cref="bool"/></returns>
         public bool IsXIncludeAware()
         {
-            return IExecute<bool>("isXIncludeAware");
+            return IExecuteWithSignature<bool>("isXIncludeAware", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#parse(java.io.File)"/>
@@ -131,7 +131,7 @@ namespace Javax.Xml.Parsers
         /// <exception cref="Java.Io.IOException"/>
         public Org.W3c.Dom.Document Parse(Java.Io.File arg0)
         {
-            return IExecute<Org.W3c.Dom.Document>("parse", arg0);
+            return IExecuteWithSignature<Org.W3c.Dom.Document>("parse", "(Ljava/io/File;)Lorg/w3c/dom/Document;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#parse(java.io.InputStream,java.lang.String)"/>
@@ -154,7 +154,7 @@ namespace Javax.Xml.Parsers
         /// <exception cref="Java.Io.IOException"/>
         public Org.W3c.Dom.Document Parse(Java.Io.InputStream arg0)
         {
-            return IExecute<Org.W3c.Dom.Document>("parse", arg0);
+            return IExecuteWithSignature<Org.W3c.Dom.Document>("parse", "(Ljava/io/InputStream;)Lorg/w3c/dom/Document;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#parse(java.lang.String)"/>
@@ -165,14 +165,14 @@ namespace Javax.Xml.Parsers
         /// <exception cref="Java.Io.IOException"/>
         public Org.W3c.Dom.Document Parse(Java.Lang.String arg0)
         {
-            return IExecute<Org.W3c.Dom.Document>("parse", arg0);
+            return IExecuteWithSignature<Org.W3c.Dom.Document>("parse", "(Ljava/lang/String;)Lorg/w3c/dom/Document;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#reset()"/>
         /// </summary>
         public void Reset()
         {
-            IExecute("reset");
+            IExecuteWithSignature("reset", "()V");
         }
 
         #endregion

@@ -67,14 +67,14 @@ namespace Javax.Naming.Ldap
         /// </summary>
         public byte[] Cookie
         {
-            get { return IExecuteArray<byte>("getCookie"); }
+            get { return IExecuteWithSignatureArray<byte>("getCookie", "()[B"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/PagedResultsResponseControl.html#getResultSize()"/> 
         /// </summary>
         public int ResultSize
         {
-            get { return IExecute<int>("getResultSize"); }
+            get { return IExecuteWithSignature<int>("getResultSize", "()I"); }
         }
 
         #endregion

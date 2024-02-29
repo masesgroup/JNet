@@ -116,7 +116,7 @@ namespace Java.Text
             /// <returns><see cref="Java.Text.Normalizer.Form"/></returns>
             public static Java.Text.Normalizer.Form ValueOf(Java.Lang.String arg0)
             {
-                return SExecute<Java.Text.Normalizer.Form>(LocalBridgeClazz, "valueOf", arg0);
+                return SExecuteWithSignature<Java.Text.Normalizer.Form>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/text/Normalizer$Form;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.Form.html#values()"/>
@@ -125,7 +125,7 @@ namespace Java.Text
             /// <returns><see cref="Java.Text.Normalizer.Form"/></returns>
             public static Java.Text.Normalizer.Form[] Values()
             {
-                return SExecuteArray<Java.Text.Normalizer.Form>(LocalBridgeClazz, "values");
+                return SExecuteWithSignatureArray<Java.Text.Normalizer.Form>(LocalBridgeClazz, "values", "()[Ljava/text/Normalizer$Form;");
             }
 
             #endregion

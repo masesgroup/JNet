@@ -61,70 +61,70 @@ namespace Javax.Management.Loading
         /// </summary>
         public Java.Util.Map<Java.Lang.String, Java.Lang.String> Attributes
         {
-            get { return IExecute<Java.Util.Map<Java.Lang.String, Java.Lang.String>>("getAttributes"); }
+            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.String>>("getAttributes", "()Ljava/util/Map;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getCode()"/> 
         /// </summary>
         public Java.Lang.String Code
         {
-            get { return IExecute<Java.Lang.String>("getCode"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getCode", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getCodeBase()"/> 
         /// </summary>
         public Java.Net.URL CodeBase
         {
-            get { return IExecute<Java.Net.URL>("getCodeBase"); }
+            get { return IExecuteWithSignature<Java.Net.URL>("getCodeBase", "()Ljava/net/URL;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getDocumentBase()"/> 
         /// </summary>
         public Java.Net.URL DocumentBase
         {
-            get { return IExecute<Java.Net.URL>("getDocumentBase"); }
+            get { return IExecuteWithSignature<Java.Net.URL>("getDocumentBase", "()Ljava/net/URL;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getJarFiles()"/> 
         /// </summary>
         public Java.Lang.String JarFiles
         {
-            get { return IExecute<Java.Lang.String>("getJarFiles"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getJarFiles", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getParameterTypes()"/> 
         /// </summary>
         public Java.Util.List<Java.Lang.String> ParameterTypes
         {
-            get { return IExecute<Java.Util.List<Java.Lang.String>>("getParameterTypes"); }
+            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getParameterTypes", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getParameterValues()"/> 
         /// </summary>
         public Java.Util.List<Java.Lang.String> ParameterValues
         {
-            get { return IExecute<Java.Util.List<Java.Lang.String>>("getParameterValues"); }
+            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getParameterValues", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getSerializedObject()"/> 
         /// </summary>
         public Java.Lang.String SerializedObject
         {
-            get { return IExecute<Java.Lang.String>("getSerializedObject"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getSerializedObject", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getVersion()"/> 
         /// </summary>
         public Java.Lang.String Version
         {
-            get { return IExecute<Java.Lang.String>("getVersion"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getVersion", "()Ljava/lang/String;"); }
         }
 
         #endregion

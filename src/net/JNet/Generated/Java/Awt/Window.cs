@@ -75,14 +75,14 @@ namespace Java.Awt
         /// </summary>
         public static Java.Awt.Window[] OwnerlessWindows
         {
-            get { return SExecuteArray<Java.Awt.Window>(LocalBridgeClazz, "getOwnerlessWindows"); }
+            get { return SExecuteWithSignatureArray<Java.Awt.Window>(LocalBridgeClazz, "getOwnerlessWindows", "()[Ljava/awt/Window;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getWindows()"/> 
         /// </summary>
         public static Java.Awt.Window[] Windows
         {
-            get { return SExecuteArray<Java.Awt.Window>(LocalBridgeClazz, "getWindows"); }
+            get { return SExecuteWithSignatureArray<Java.Awt.Window>(LocalBridgeClazz, "getWindows", "()[Ljava/awt/Window;"); }
         }
 
         #endregion
@@ -93,105 +93,105 @@ namespace Java.Awt
         /// </summary>
         public Java.Awt.ImageNs.BufferStrategy BufferStrategy
         {
-            get { return IExecute<Java.Awt.ImageNs.BufferStrategy>("getBufferStrategy"); }
+            get { return IExecuteWithSignature<Java.Awt.ImageNs.BufferStrategy>("getBufferStrategy", "()Ljava/awt/image/BufferStrategy;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getFocusableWindowState()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setFocusableWindowState(boolean)"/>
         /// </summary>
         public bool FocusableWindowState
         {
-            get { return IExecute<bool>("getFocusableWindowState"); } set { IExecute("setFocusableWindowState", value); }
+            get { return IExecuteWithSignature<bool>("getFocusableWindowState", "()Z"); } set { IExecuteWithSignature("setFocusableWindowState", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getFocusOwner()"/> 
         /// </summary>
         public Java.Awt.Component FocusOwner
         {
-            get { return IExecute<Java.Awt.Component>("getFocusOwner"); }
+            get { return IExecuteWithSignature<Java.Awt.Component>("getFocusOwner", "()Ljava/awt/Component;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getType()"/> 
         /// </summary>
         public Java.Awt.Window.Type GetType
         {
-            get { return IExecute<Java.Awt.Window.Type>("getType"); }
+            get { return IExecuteWithSignature<Java.Awt.Window.Type>("getType", "()Ljava/awt/Window$Type;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getIconImages()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setIconImages(java.util.List)"/>
         /// </summary>
         public Java.Util.List<Java.Awt.Image> IconImages
         {
-            get { return IExecute<Java.Util.List<Java.Awt.Image>>("getIconImages"); } set { IExecute("setIconImages", value); }
+            get { return IExecuteWithSignature<Java.Util.List<Java.Awt.Image>>("getIconImages", "()Ljava/util/List;"); } set { IExecuteWithSignature("setIconImages", "(Ljava/util/List;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getModalExclusionType()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setModalExclusionType(java.awt.Dialog.ModalExclusionType)"/>
         /// </summary>
         public Java.Awt.Dialog.ModalExclusionType ModalExclusionType
         {
-            get { return IExecute<Java.Awt.Dialog.ModalExclusionType>("getModalExclusionType"); } set { IExecute("setModalExclusionType", value); }
+            get { return IExecuteWithSignature<Java.Awt.Dialog.ModalExclusionType>("getModalExclusionType", "()Ljava/awt/Dialog$ModalExclusionType;"); } set { IExecuteWithSignature("setModalExclusionType", "(Ljava/awt/Dialog$ModalExclusionType;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getMostRecentFocusOwner()"/> 
         /// </summary>
         public Java.Awt.Component MostRecentFocusOwner
         {
-            get { return IExecute<Java.Awt.Component>("getMostRecentFocusOwner"); }
+            get { return IExecuteWithSignature<Java.Awt.Component>("getMostRecentFocusOwner", "()Ljava/awt/Component;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getOpacity()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setOpacity(float)"/>
         /// </summary>
         public float Opacity
         {
-            get { return IExecute<float>("getOpacity"); } set { IExecute("setOpacity", value); }
+            get { return IExecuteWithSignature<float>("getOpacity", "()F"); } set { IExecuteWithSignature("setOpacity", "(F)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getOwnedWindows()"/> 
         /// </summary>
         public Java.Awt.Window[] OwnedWindows
         {
-            get { return IExecuteArray<Java.Awt.Window>("getOwnedWindows"); }
+            get { return IExecuteWithSignatureArray<Java.Awt.Window>("getOwnedWindows", "()[Ljava/awt/Window;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getOwner()"/> 
         /// </summary>
         public Java.Awt.Window Owner
         {
-            get { return IExecute<Java.Awt.Window>("getOwner"); }
+            get { return IExecuteWithSignature<Java.Awt.Window>("getOwner", "()Ljava/awt/Window;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getShape()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setShape(java.awt.Shape)"/>
         /// </summary>
         public Java.Awt.Shape Shape
         {
-            get { return IExecute<Java.Awt.Shape>("getShape"); } set { IExecute("setShape", value); }
+            get { return IExecuteWithSignature<Java.Awt.Shape>("getShape", "()Ljava/awt/Shape;"); } set { IExecuteWithSignature("setShape", "(Ljava/awt/Shape;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getWarningString()"/> 
         /// </summary>
         public Java.Lang.String WarningString
         {
-            get { return IExecute<Java.Lang.String>("getWarningString"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getWarningString", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getWindowFocusListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.WindowFocusListener[] WindowFocusListeners
         {
-            get { return IExecuteArray<Java.Awt.EventNs.WindowFocusListener>("getWindowFocusListeners"); }
+            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.WindowFocusListener>("getWindowFocusListeners", "()[Ljava/awt/event/WindowFocusListener;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getWindowListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.WindowListener[] WindowListeners
         {
-            get { return IExecuteArray<Java.Awt.EventNs.WindowListener>("getWindowListeners"); }
+            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.WindowListener>("getWindowListeners", "()[Ljava/awt/event/WindowListener;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getWindowStateListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.WindowStateListener[] WindowStateListeners
         {
-            get { return IExecuteArray<Java.Awt.EventNs.WindowStateListener>("getWindowStateListeners"); }
+            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.WindowStateListener>("getWindowStateListeners", "()[Ljava/awt/event/WindowStateListener;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isActive()"/>
@@ -200,7 +200,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsActive()
         {
-            return IExecute<bool>("isActive");
+            return IExecuteWithSignature<bool>("isActive", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isAlwaysOnTopSupported()"/>
@@ -209,7 +209,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsAlwaysOnTopSupported()
         {
-            return IExecute<bool>("isAlwaysOnTopSupported");
+            return IExecuteWithSignature<bool>("isAlwaysOnTopSupported", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isAutoRequestFocus()"/>
@@ -218,7 +218,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsAutoRequestFocus()
         {
-            return IExecute<bool>("isAutoRequestFocus");
+            return IExecuteWithSignature<bool>("isAutoRequestFocus", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isFocused()"/>
@@ -227,7 +227,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsFocused()
         {
-            return IExecute<bool>("isFocused");
+            return IExecuteWithSignature<bool>("isFocused", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isLocationByPlatform()"/>
@@ -236,7 +236,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsLocationByPlatform()
         {
-            return IExecute<bool>("isLocationByPlatform");
+            return IExecuteWithSignature<bool>("isLocationByPlatform", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isAlwaysOnTop()"/>
@@ -245,7 +245,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsAlwaysOnTop()
         {
-            return IExecute<bool>("isAlwaysOnTop");
+            return IExecuteWithSignature<bool>("isAlwaysOnTop", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isFocusableWindow()"/>
@@ -254,7 +254,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsFocusableWindow()
         {
-            return IExecute<bool>("isFocusableWindow");
+            return IExecuteWithSignature<bool>("isFocusableWindow", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setAlwaysOnTop(boolean)"/>
@@ -263,7 +263,7 @@ namespace Java.Awt
         /// <exception cref="Java.Lang.SecurityException"/>
         public void SetAlwaysOnTop(bool arg0)
         {
-            IExecute("setAlwaysOnTop", arg0);
+            IExecuteWithSignature("setAlwaysOnTop", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#addWindowFocusListener(java.awt.event.WindowFocusListener)"/>
@@ -271,7 +271,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowFocusListener"/></param>
         public void AddWindowFocusListener(Java.Awt.EventNs.WindowFocusListener arg0)
         {
-            IExecute("addWindowFocusListener", arg0);
+            IExecuteWithSignature("addWindowFocusListener", "(Ljava/awt/event/WindowFocusListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#addWindowListener(java.awt.event.WindowListener)"/>
@@ -279,7 +279,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowListener"/></param>
         public void AddWindowListener(Java.Awt.EventNs.WindowListener arg0)
         {
-            IExecute("addWindowListener", arg0);
+            IExecuteWithSignature("addWindowListener", "(Ljava/awt/event/WindowListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#addWindowStateListener(java.awt.event.WindowStateListener)"/>
@@ -287,7 +287,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowStateListener"/></param>
         public void AddWindowStateListener(Java.Awt.EventNs.WindowStateListener arg0)
         {
-            IExecute("addWindowStateListener", arg0);
+            IExecuteWithSignature("addWindowStateListener", "(Ljava/awt/event/WindowStateListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#removeWindowFocusListener(java.awt.event.WindowFocusListener)"/>
@@ -295,7 +295,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowFocusListener"/></param>
         public void RemoveWindowFocusListener(Java.Awt.EventNs.WindowFocusListener arg0)
         {
-            IExecute("removeWindowFocusListener", arg0);
+            IExecuteWithSignature("removeWindowFocusListener", "(Ljava/awt/event/WindowFocusListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#removeWindowListener(java.awt.event.WindowListener)"/>
@@ -303,7 +303,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowListener"/></param>
         public void RemoveWindowListener(Java.Awt.EventNs.WindowListener arg0)
         {
-            IExecute("removeWindowListener", arg0);
+            IExecuteWithSignature("removeWindowListener", "(Ljava/awt/event/WindowListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#removeWindowStateListener(java.awt.event.WindowStateListener)"/>
@@ -311,7 +311,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowStateListener"/></param>
         public void RemoveWindowStateListener(Java.Awt.EventNs.WindowStateListener arg0)
         {
-            IExecute("removeWindowStateListener", arg0);
+            IExecuteWithSignature("removeWindowStateListener", "(Ljava/awt/event/WindowStateListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#createBufferStrategy(int,java.awt.BufferCapabilities)"/>
@@ -329,21 +329,21 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="int"/></param>
         public void CreateBufferStrategy(int arg0)
         {
-            IExecute("createBufferStrategy", arg0);
+            IExecuteWithSignature("createBufferStrategy", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#dispose()"/>
         /// </summary>
         public new void Dispose()
         {
-            IExecute("dispose");
+            IExecuteWithSignature("dispose", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#pack()"/>
         /// </summary>
         public void Pack()
         {
-            IExecute("pack");
+            IExecuteWithSignature("pack", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setAutoRequestFocus(boolean)"/>
@@ -351,7 +351,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetAutoRequestFocus(bool arg0)
         {
-            IExecute("setAutoRequestFocus", arg0);
+            IExecuteWithSignature("setAutoRequestFocus", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setIconImage(java.awt.Image)"/>
@@ -359,7 +359,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
         public void SetIconImage(Java.Awt.Image arg0)
         {
-            IExecute("setIconImage", arg0);
+            IExecuteWithSignature("setIconImage", "(Ljava/awt/Image;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setLocationByPlatform(boolean)"/>
@@ -367,7 +367,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetLocationByPlatform(bool arg0)
         {
-            IExecute("setLocationByPlatform", arg0);
+            IExecuteWithSignature("setLocationByPlatform", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setLocationRelativeTo(java.awt.Component)"/>
@@ -375,7 +375,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         public void SetLocationRelativeTo(Java.Awt.Component arg0)
         {
-            IExecute("setLocationRelativeTo", arg0);
+            IExecuteWithSignature("setLocationRelativeTo", "(Ljava/awt/Component;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setType(java.awt.Window.Type)"/>
@@ -383,21 +383,21 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Window.Type"/></param>
         public void SetType(Java.Awt.Window.Type arg0)
         {
-            IExecute("setType", arg0);
+            IExecuteWithSignature("setType", "(Ljava/awt/Window$Type;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#toBack()"/>
         /// </summary>
         public void ToBack()
         {
-            IExecute("toBack");
+            IExecuteWithSignature("toBack", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#toFront()"/>
         /// </summary>
         public void ToFront()
         {
-            IExecute("toFront");
+            IExecuteWithSignature("toFront", "()V");
         }
 
         #endregion
@@ -444,7 +444,7 @@ namespace Java.Awt
             /// <returns><see cref="Java.Awt.Window.Type"/></returns>
             public static Java.Awt.Window.Type ValueOf(Java.Lang.String arg0)
             {
-                return SExecute<Java.Awt.Window.Type>(LocalBridgeClazz, "valueOf", arg0);
+                return SExecuteWithSignature<Java.Awt.Window.Type>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/awt/Window$Type;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.Type.html#values()"/>
@@ -453,7 +453,7 @@ namespace Java.Awt
             /// <returns><see cref="Java.Awt.Window.Type"/></returns>
             public static Java.Awt.Window.Type[] Values()
             {
-                return SExecuteArray<Java.Awt.Window.Type>(LocalBridgeClazz, "values");
+                return SExecuteWithSignatureArray<Java.Awt.Window.Type>(LocalBridgeClazz, "values", "()[Ljava/awt/Window$Type;");
             }
 
             #endregion

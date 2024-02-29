@@ -53,7 +53,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.Exception"/>
         public object Call()
         {
-            return IExecute("call");
+            return IExecuteWithSignature("call", "()Ljava/lang/Object;");
         }
 
         #endregion
@@ -123,7 +123,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.Exception"/>
         public V Call()
         {
-            return IExecute<V>("call");
+            return IExecuteWithSignature<V>("call", "()Ljava/lang/Object;");
         }
 
         #endregion

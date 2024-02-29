@@ -76,7 +76,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.View"/></returns>
         public Javax.Swing.Text.View Create(Javax.Swing.Text.Element arg0)
         {
-            return IExecute<Javax.Swing.Text.View>("create", arg0);
+            return IExecuteWithSignature<Javax.Swing.Text.View>("create", "(Ljavax/swing/text/Element;)Ljavax/swing/text/View;", arg0);
         }
 
         #endregion

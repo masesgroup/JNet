@@ -58,7 +58,7 @@ namespace Javax.Swing
         /// </summary>
         public Javax.Swing.JComponent Component
         {
-            get { return IExecute<Javax.Swing.JComponent>("getComponent"); }
+            get { return IExecuteWithSignature<Javax.Swing.JComponent>("getComponent", "()Ljavax/swing/JComponent;"); }
         }
 
         #endregion

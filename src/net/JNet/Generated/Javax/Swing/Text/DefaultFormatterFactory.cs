@@ -92,28 +92,28 @@ namespace Javax.Swing.Text
         /// </summary>
         public Javax.Swing.JFormattedTextField.AbstractFormatter DefaultFormatter
         {
-            get { return IExecute<Javax.Swing.JFormattedTextField.AbstractFormatter>("getDefaultFormatter"); } set { IExecute("setDefaultFormatter", value); }
+            get { return IExecuteWithSignature<Javax.Swing.JFormattedTextField.AbstractFormatter>("getDefaultFormatter", "()Ljavax/swing/JFormattedTextField$AbstractFormatter;"); } set { IExecuteWithSignature("setDefaultFormatter", "(Ljavax/swing/JFormattedTextField$AbstractFormatter;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultFormatterFactory.html#getDisplayFormatter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultFormatterFactory.html#setDisplayFormatter(javax.swing.JFormattedTextField.AbstractFormatter)"/>
         /// </summary>
         public Javax.Swing.JFormattedTextField.AbstractFormatter DisplayFormatter
         {
-            get { return IExecute<Javax.Swing.JFormattedTextField.AbstractFormatter>("getDisplayFormatter"); } set { IExecute("setDisplayFormatter", value); }
+            get { return IExecuteWithSignature<Javax.Swing.JFormattedTextField.AbstractFormatter>("getDisplayFormatter", "()Ljavax/swing/JFormattedTextField$AbstractFormatter;"); } set { IExecuteWithSignature("setDisplayFormatter", "(Ljavax/swing/JFormattedTextField$AbstractFormatter;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultFormatterFactory.html#getEditFormatter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultFormatterFactory.html#setEditFormatter(javax.swing.JFormattedTextField.AbstractFormatter)"/>
         /// </summary>
         public Javax.Swing.JFormattedTextField.AbstractFormatter EditFormatter
         {
-            get { return IExecute<Javax.Swing.JFormattedTextField.AbstractFormatter>("getEditFormatter"); } set { IExecute("setEditFormatter", value); }
+            get { return IExecuteWithSignature<Javax.Swing.JFormattedTextField.AbstractFormatter>("getEditFormatter", "()Ljavax/swing/JFormattedTextField$AbstractFormatter;"); } set { IExecuteWithSignature("setEditFormatter", "(Ljavax/swing/JFormattedTextField$AbstractFormatter;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultFormatterFactory.html#getNullFormatter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultFormatterFactory.html#setNullFormatter(javax.swing.JFormattedTextField.AbstractFormatter)"/>
         /// </summary>
         public Javax.Swing.JFormattedTextField.AbstractFormatter NullFormatter
         {
-            get { return IExecute<Javax.Swing.JFormattedTextField.AbstractFormatter>("getNullFormatter"); } set { IExecute("setNullFormatter", value); }
+            get { return IExecuteWithSignature<Javax.Swing.JFormattedTextField.AbstractFormatter>("getNullFormatter", "()Ljavax/swing/JFormattedTextField$AbstractFormatter;"); } set { IExecuteWithSignature("setNullFormatter", "(Ljavax/swing/JFormattedTextField$AbstractFormatter;)V", value); }
         }
 
         #endregion

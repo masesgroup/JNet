@@ -46,7 +46,7 @@ namespace Java.Security
         /// </summary>
         public static Java.Security.Provider[] Providers
         {
-            get { return SExecuteArray<Java.Security.Provider>(LocalBridgeClazz, "getProviders"); }
+            get { return SExecuteWithSignatureArray<Java.Security.Provider>(LocalBridgeClazz, "getProviders", "()[Ljava/security/Provider;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Security.html#addProvider(java.security.Provider)"/>
@@ -55,7 +55,7 @@ namespace Java.Security
         /// <returns><see cref="int"/></returns>
         public static int AddProvider(Java.Security.Provider arg0)
         {
-            return SExecute<int>(LocalBridgeClazz, "addProvider", arg0);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "addProvider", "(Ljava/security/Provider;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Security.html#getProperty(java.lang.String)"/>
@@ -64,7 +64,7 @@ namespace Java.Security
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetProperty(Java.Lang.String arg0)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getProperty", arg0);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getProperty", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Security.html#getProvider(java.lang.String)"/>
@@ -73,7 +73,7 @@ namespace Java.Security
         /// <returns><see cref="Java.Security.Provider"/></returns>
         public static Java.Security.Provider GetProvider(Java.Lang.String arg0)
         {
-            return SExecute<Java.Security.Provider>(LocalBridgeClazz, "getProvider", arg0);
+            return SExecuteWithSignature<Java.Security.Provider>(LocalBridgeClazz, "getProvider", "(Ljava/lang/String;)Ljava/security/Provider;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Security.html#getProviders(java.lang.String)"/>
@@ -82,7 +82,7 @@ namespace Java.Security
         /// <returns><see cref="Java.Security.Provider"/></returns>
         public static Java.Security.Provider[] GetProviders(Java.Lang.String arg0)
         {
-            return SExecuteArray<Java.Security.Provider>(LocalBridgeClazz, "getProviders", arg0);
+            return SExecuteWithSignatureArray<Java.Security.Provider>(LocalBridgeClazz, "getProviders", "(Ljava/lang/String;)[Ljava/security/Provider;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Security.html#getProviders(java.util.Map)"/>
@@ -91,7 +91,7 @@ namespace Java.Security
         /// <returns><see cref="Java.Security.Provider"/></returns>
         public static Java.Security.Provider[] GetProviders(Java.Util.Map<Java.Lang.String, Java.Lang.String> arg0)
         {
-            return SExecuteArray<Java.Security.Provider>(LocalBridgeClazz, "getProviders", arg0);
+            return SExecuteWithSignatureArray<Java.Security.Provider>(LocalBridgeClazz, "getProviders", "(Ljava/util/Map;)[Ljava/security/Provider;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Security.html#getAlgorithms(java.lang.String)"/>
@@ -100,7 +100,7 @@ namespace Java.Security
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<Java.Lang.String> GetAlgorithms(Java.Lang.String arg0)
         {
-            return SExecute<Java.Util.Set<Java.Lang.String>>(LocalBridgeClazz, "getAlgorithms", arg0);
+            return SExecuteWithSignature<Java.Util.Set<Java.Lang.String>>(LocalBridgeClazz, "getAlgorithms", "(Ljava/lang/String;)Ljava/util/Set;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Security.html#insertProviderAt(java.security.Provider,int)"/>
@@ -118,7 +118,7 @@ namespace Java.Security
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public static void RemoveProvider(Java.Lang.String arg0)
         {
-            SExecute(LocalBridgeClazz, "removeProvider", arg0);
+            SExecuteWithSignature(LocalBridgeClazz, "removeProvider", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Security.html#setProperty(java.lang.String,java.lang.String)"/>

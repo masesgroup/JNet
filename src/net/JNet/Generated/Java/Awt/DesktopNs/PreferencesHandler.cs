@@ -74,7 +74,7 @@ namespace Java.Awt.DesktopNs
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.PreferencesEvent"/></param>
         public void HandlePreferences(Java.Awt.DesktopNs.PreferencesEvent arg0)
         {
-            IExecute("handlePreferences", arg0);
+            IExecuteWithSignature("handlePreferences", "(Ljava/awt/desktop/PreferencesEvent;)V", arg0);
         }
 
         #endregion

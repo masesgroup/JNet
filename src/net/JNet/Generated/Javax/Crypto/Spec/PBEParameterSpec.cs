@@ -69,21 +69,21 @@ namespace Javax.Crypto.Spec
         /// </summary>
         public int IterationCount
         {
-            get { return IExecute<int>("getIterationCount"); }
+            get { return IExecuteWithSignature<int>("getIterationCount", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PBEParameterSpec.html#getParameterSpec()"/> 
         /// </summary>
         public Java.Security.Spec.AlgorithmParameterSpec ParameterSpec
         {
-            get { return IExecute<Java.Security.Spec.AlgorithmParameterSpec>("getParameterSpec"); }
+            get { return IExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>("getParameterSpec", "()Ljava/security/spec/AlgorithmParameterSpec;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PBEParameterSpec.html#getSalt()"/> 
         /// </summary>
         public byte[] Salt
         {
-            get { return IExecuteArray<byte>("getSalt"); }
+            get { return IExecuteWithSignatureArray<byte>("getSalt", "()[B"); }
         }
 
         #endregion

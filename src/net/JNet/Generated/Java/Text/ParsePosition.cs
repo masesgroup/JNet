@@ -58,14 +58,14 @@ namespace Java.Text
         /// </summary>
         public int ErrorIndex
         {
-            get { return IExecute<int>("getErrorIndex"); } set { IExecute("setErrorIndex", value); }
+            get { return IExecuteWithSignature<int>("getErrorIndex", "()I"); } set { IExecuteWithSignature("setErrorIndex", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ParsePosition.html#getIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ParsePosition.html#setIndex(int)"/>
         /// </summary>
         public int Index
         {
-            get { return IExecute<int>("getIndex"); } set { IExecute("setIndex", value); }
+            get { return IExecuteWithSignature<int>("getIndex", "()I"); } set { IExecuteWithSignature("setIndex", "(I)V", value); }
         }
 
         #endregion

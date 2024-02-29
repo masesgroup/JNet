@@ -67,7 +67,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.Proxy.Type"/></returns>
         public Java.Net.Proxy.Type TypeMethod()
         {
-            return IExecute<Java.Net.Proxy.Type>("type");
+            return IExecuteWithSignature<Java.Net.Proxy.Type>("type", "()Ljava/net/Proxy$Type;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.html#address()"/>
@@ -76,7 +76,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.SocketAddress"/></returns>
         public Java.Net.SocketAddress Address()
         {
-            return IExecute<Java.Net.SocketAddress>("address");
+            return IExecuteWithSignature<Java.Net.SocketAddress>("address", "()Ljava/net/SocketAddress;");
         }
 
         #endregion
@@ -123,7 +123,7 @@ namespace Java.Net
             /// <returns><see cref="Java.Net.Proxy.Type"/></returns>
             public static Java.Net.Proxy.Type ValueOf(Java.Lang.String arg0)
             {
-                return SExecute<Java.Net.Proxy.Type>(LocalBridgeClazz, "valueOf", arg0);
+                return SExecuteWithSignature<Java.Net.Proxy.Type>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/net/Proxy$Type;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.Type.html#values()"/>
@@ -132,7 +132,7 @@ namespace Java.Net
             /// <returns><see cref="Java.Net.Proxy.Type"/></returns>
             public static Java.Net.Proxy.Type[] Values()
             {
-                return SExecuteArray<Java.Net.Proxy.Type>(LocalBridgeClazz, "values");
+                return SExecuteWithSignatureArray<Java.Net.Proxy.Type>(LocalBridgeClazz, "values", "()[Ljava/net/Proxy$Type;");
             }
 
             #endregion

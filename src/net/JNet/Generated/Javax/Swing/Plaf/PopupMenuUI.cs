@@ -52,7 +52,7 @@ namespace Javax.Swing.Plaf
         /// <returns><see cref="bool"/></returns>
         public bool IsPopupTrigger(Java.Awt.EventNs.MouseEvent arg0)
         {
-            return IExecute<bool>("isPopupTrigger", arg0);
+            return IExecuteWithSignature<bool>("isPopupTrigger", "(Ljava/awt/event/MouseEvent;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/PopupMenuUI.html#getPopup(javax.swing.JPopupMenu,int,int)"/>

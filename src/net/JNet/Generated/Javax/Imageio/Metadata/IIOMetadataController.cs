@@ -76,7 +76,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="bool"/></returns>
         public bool Activate(Javax.Imageio.Metadata.IIOMetadata arg0)
         {
-            return IExecute<bool>("activate", arg0);
+            return IExecuteWithSignature<bool>("activate", "(Ljavax/imageio/metadata/IIOMetadata;)Z", arg0);
         }
 
         #endregion

@@ -90,7 +90,7 @@ namespace Java.Awt
         /// </summary>
         public int GetTransparency
         {
-            get { return IExecute<int>("getTransparency"); }
+            get { return IExecuteWithSignature<int>("getTransparency", "()I"); }
         }
 
         #endregion

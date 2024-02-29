@@ -48,14 +48,14 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="object"/></returns>
         public static object GetBlocker(Java.Lang.Thread arg0)
         {
-            return SExecute(LocalBridgeClazz, "getBlocker", arg0);
+            return SExecuteWithSignature(LocalBridgeClazz, "getBlocker", "(Ljava/lang/Thread;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#park()"/>
         /// </summary>
         public static void Park()
         {
-            SExecute(LocalBridgeClazz, "park");
+            SExecuteWithSignature(LocalBridgeClazz, "park", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#park(java.lang.Object)"/>
@@ -63,7 +63,7 @@ namespace Java.Util.Concurrent.Locks
         /// <param name="arg0"><see cref="object"/></param>
         public static void Park(object arg0)
         {
-            SExecute(LocalBridgeClazz, "park", arg0);
+            SExecuteWithSignature(LocalBridgeClazz, "park", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#parkNanos(java.lang.Object,long)"/>
@@ -80,7 +80,7 @@ namespace Java.Util.Concurrent.Locks
         /// <param name="arg0"><see cref="long"/></param>
         public static void ParkNanos(long arg0)
         {
-            SExecute(LocalBridgeClazz, "parkNanos", arg0);
+            SExecuteWithSignature(LocalBridgeClazz, "parkNanos", "(J)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#parkUntil(java.lang.Object,long)"/>
@@ -97,7 +97,7 @@ namespace Java.Util.Concurrent.Locks
         /// <param name="arg0"><see cref="long"/></param>
         public static void ParkUntil(long arg0)
         {
-            SExecute(LocalBridgeClazz, "parkUntil", arg0);
+            SExecuteWithSignature(LocalBridgeClazz, "parkUntil", "(J)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#unpark(java.lang.Thread)"/>
@@ -105,7 +105,7 @@ namespace Java.Util.Concurrent.Locks
         /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
         public static void Unpark(Java.Lang.Thread arg0)
         {
-            SExecute(LocalBridgeClazz, "unpark", arg0);
+            SExecuteWithSignature(LocalBridgeClazz, "unpark", "(Ljava/lang/Thread;)V", arg0);
         }
 
         #endregion

@@ -58,7 +58,7 @@ namespace Javax.Annotation.Processing
         /// <returns><see cref="Javax.Annotation.Processing.Completion"/></returns>
         public static Javax.Annotation.Processing.Completion Of(Java.Lang.String arg0)
         {
-            return SExecute<Javax.Annotation.Processing.Completion>(LocalBridgeClazz, "of", arg0);
+            return SExecuteWithSignature<Javax.Annotation.Processing.Completion>(LocalBridgeClazz, "of", "(Ljava/lang/String;)Ljavax/annotation/processing/Completion;", arg0);
         }
 
         #endregion

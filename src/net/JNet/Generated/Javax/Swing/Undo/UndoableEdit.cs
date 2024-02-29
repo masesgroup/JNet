@@ -126,21 +126,21 @@ namespace Javax.Swing.Undo
         /// </summary>
         public Java.Lang.String PresentationName
         {
-            get { return IExecute<Java.Lang.String>("getPresentationName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getPresentationName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#getRedoPresentationName()"/> 
         /// </summary>
         public Java.Lang.String RedoPresentationName
         {
-            get { return IExecute<Java.Lang.String>("getRedoPresentationName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getRedoPresentationName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#getUndoPresentationName()"/> 
         /// </summary>
         public Java.Lang.String UndoPresentationName
         {
-            get { return IExecute<Java.Lang.String>("getUndoPresentationName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getUndoPresentationName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#addEdit(javax.swing.undo.UndoableEdit)"/>
@@ -149,7 +149,7 @@ namespace Javax.Swing.Undo
         /// <returns><see cref="bool"/></returns>
         public bool AddEdit(Javax.Swing.Undo.UndoableEdit arg0)
         {
-            return IExecute<bool>("addEdit", arg0);
+            return IExecuteWithSignature<bool>("addEdit", "(Ljavax/swing/undo/UndoableEdit;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#canRedo()"/>
@@ -158,7 +158,7 @@ namespace Javax.Swing.Undo
         /// <returns><see cref="bool"/></returns>
         public bool CanRedo()
         {
-            return IExecute<bool>("canRedo");
+            return IExecuteWithSignature<bool>("canRedo", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#canUndo()"/>
@@ -167,7 +167,7 @@ namespace Javax.Swing.Undo
         /// <returns><see cref="bool"/></returns>
         public bool CanUndo()
         {
-            return IExecute<bool>("canUndo");
+            return IExecuteWithSignature<bool>("canUndo", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#isSignificant()"/>
@@ -176,7 +176,7 @@ namespace Javax.Swing.Undo
         /// <returns><see cref="bool"/></returns>
         public bool IsSignificant()
         {
-            return IExecute<bool>("isSignificant");
+            return IExecuteWithSignature<bool>("isSignificant", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#replaceEdit(javax.swing.undo.UndoableEdit)"/>
@@ -185,14 +185,14 @@ namespace Javax.Swing.Undo
         /// <returns><see cref="bool"/></returns>
         public bool ReplaceEdit(Javax.Swing.Undo.UndoableEdit arg0)
         {
-            return IExecute<bool>("replaceEdit", arg0);
+            return IExecuteWithSignature<bool>("replaceEdit", "(Ljavax/swing/undo/UndoableEdit;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#die()"/>
         /// </summary>
         public void Die()
         {
-            IExecute("die");
+            IExecuteWithSignature("die", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#redo()"/>
@@ -201,7 +201,7 @@ namespace Javax.Swing.Undo
         /// <exception cref="Javax.Swing.Undo.CannotRedoException"/>
         public void Redo()
         {
-            IExecute("redo");
+            IExecuteWithSignature("redo", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#undo()"/>
@@ -210,7 +210,7 @@ namespace Javax.Swing.Undo
         /// <exception cref="Javax.Swing.Undo.CannotUndoException"/>
         public void Undo()
         {
-            IExecute("undo");
+            IExecuteWithSignature("undo", "()V");
         }
 
         #endregion

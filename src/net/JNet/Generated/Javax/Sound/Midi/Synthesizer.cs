@@ -144,49 +144,49 @@ namespace Javax.Sound.Midi
         /// </summary>
         public Javax.Sound.Midi.Instrument[] AvailableInstruments
         {
-            get { return IExecuteArray<Javax.Sound.Midi.Instrument>("getAvailableInstruments"); }
+            get { return IExecuteWithSignatureArray<Javax.Sound.Midi.Instrument>("getAvailableInstruments", "()[Ljavax/sound/midi/Instrument;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#getChannels()"/> 
         /// </summary>
         public Javax.Sound.Midi.MidiChannel[] Channels
         {
-            get { return IExecuteArray<Javax.Sound.Midi.MidiChannel>("getChannels"); }
+            get { return IExecuteWithSignatureArray<Javax.Sound.Midi.MidiChannel>("getChannels", "()[Ljavax/sound/midi/MidiChannel;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#getDefaultSoundbank()"/> 
         /// </summary>
         public Javax.Sound.Midi.Soundbank DefaultSoundbank
         {
-            get { return IExecute<Javax.Sound.Midi.Soundbank>("getDefaultSoundbank"); }
+            get { return IExecuteWithSignature<Javax.Sound.Midi.Soundbank>("getDefaultSoundbank", "()Ljavax/sound/midi/Soundbank;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#getLatency()"/> 
         /// </summary>
         public long Latency
         {
-            get { return IExecute<long>("getLatency"); }
+            get { return IExecuteWithSignature<long>("getLatency", "()J"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#getLoadedInstruments()"/> 
         /// </summary>
         public Javax.Sound.Midi.Instrument[] LoadedInstruments
         {
-            get { return IExecuteArray<Javax.Sound.Midi.Instrument>("getLoadedInstruments"); }
+            get { return IExecuteWithSignatureArray<Javax.Sound.Midi.Instrument>("getLoadedInstruments", "()[Ljavax/sound/midi/Instrument;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#getMaxPolyphony()"/> 
         /// </summary>
         public int MaxPolyphony
         {
-            get { return IExecute<int>("getMaxPolyphony"); }
+            get { return IExecuteWithSignature<int>("getMaxPolyphony", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#getVoiceStatus()"/> 
         /// </summary>
         public Javax.Sound.Midi.VoiceStatus[] VoiceStatus
         {
-            get { return IExecuteArray<Javax.Sound.Midi.VoiceStatus>("getVoiceStatus"); }
+            get { return IExecuteWithSignatureArray<Javax.Sound.Midi.VoiceStatus>("getVoiceStatus", "()[Ljavax/sound/midi/VoiceStatus;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#isSoundbankSupported(javax.sound.midi.Soundbank)"/>
@@ -195,7 +195,7 @@ namespace Javax.Sound.Midi
         /// <returns><see cref="bool"/></returns>
         public bool IsSoundbankSupported(Javax.Sound.Midi.Soundbank arg0)
         {
-            return IExecute<bool>("isSoundbankSupported", arg0);
+            return IExecuteWithSignature<bool>("isSoundbankSupported", "(Ljavax/sound/midi/Soundbank;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#loadAllInstruments(javax.sound.midi.Soundbank)"/>
@@ -204,7 +204,7 @@ namespace Javax.Sound.Midi
         /// <returns><see cref="bool"/></returns>
         public bool LoadAllInstruments(Javax.Sound.Midi.Soundbank arg0)
         {
-            return IExecute<bool>("loadAllInstruments", arg0);
+            return IExecuteWithSignature<bool>("loadAllInstruments", "(Ljavax/sound/midi/Soundbank;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#loadInstrument(javax.sound.midi.Instrument)"/>
@@ -213,7 +213,7 @@ namespace Javax.Sound.Midi
         /// <returns><see cref="bool"/></returns>
         public bool LoadInstrument(Javax.Sound.Midi.Instrument arg0)
         {
-            return IExecute<bool>("loadInstrument", arg0);
+            return IExecuteWithSignature<bool>("loadInstrument", "(Ljavax/sound/midi/Instrument;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#loadInstruments(javax.sound.midi.Soundbank,javax.sound.midi.Patch[])"/>
@@ -241,7 +241,7 @@ namespace Javax.Sound.Midi
         /// <param name="arg0"><see cref="Javax.Sound.Midi.Soundbank"/></param>
         public void UnloadAllInstruments(Javax.Sound.Midi.Soundbank arg0)
         {
-            IExecute("unloadAllInstruments", arg0);
+            IExecuteWithSignature("unloadAllInstruments", "(Ljavax/sound/midi/Soundbank;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#unloadInstrument(javax.sound.midi.Instrument)"/>
@@ -249,7 +249,7 @@ namespace Javax.Sound.Midi
         /// <param name="arg0"><see cref="Javax.Sound.Midi.Instrument"/></param>
         public void UnloadInstrument(Javax.Sound.Midi.Instrument arg0)
         {
-            IExecute("unloadInstrument", arg0);
+            IExecuteWithSignature("unloadInstrument", "(Ljavax/sound/midi/Instrument;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#unloadInstruments(javax.sound.midi.Soundbank,javax.sound.midi.Patch[])"/>

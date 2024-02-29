@@ -51,7 +51,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <param name="arg0"><see cref="Javax.Swing.JScrollPane"/></param>
         public void InstallListeners(Javax.Swing.JScrollPane arg0)
         {
-            IExecute("installListeners", arg0);
+            IExecuteWithSignature("installListeners", "(Ljavax/swing/JScrollPane;)V", arg0);
         }
 
         #endregion

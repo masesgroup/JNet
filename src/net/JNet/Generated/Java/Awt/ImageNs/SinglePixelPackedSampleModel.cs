@@ -73,21 +73,21 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public int[] BitMasks
         {
-            get { return IExecuteArray<int>("getBitMasks"); }
+            get { return IExecuteWithSignatureArray<int>("getBitMasks", "()[I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SinglePixelPackedSampleModel.html#getBitOffsets()"/> 
         /// </summary>
         public int[] BitOffsets
         {
-            get { return IExecuteArray<int>("getBitOffsets"); }
+            get { return IExecuteWithSignatureArray<int>("getBitOffsets", "()[I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SinglePixelPackedSampleModel.html#getScanlineStride()"/> 
         /// </summary>
         public int ScanlineStride
         {
-            get { return IExecute<int>("getScanlineStride"); }
+            get { return IExecuteWithSignature<int>("getScanlineStride", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SinglePixelPackedSampleModel.html#getOffset(int,int)"/>

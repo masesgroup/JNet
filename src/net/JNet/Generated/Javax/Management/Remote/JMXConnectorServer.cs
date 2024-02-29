@@ -76,14 +76,14 @@ namespace Javax.Management.Remote
         /// </summary>
         public Java.Lang.String[] ConnectionIds
         {
-            get { return IExecuteArray<Java.Lang.String>("getConnectionIds"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.String>("getConnectionIds", "()[Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServer.html#getMBeanServer()"/> 
         /// </summary>
         public Javax.Management.MBeanServer MBeanServer
         {
-            get { return IExecute<Javax.Management.MBeanServer>("getMBeanServer"); }
+            get { return IExecuteWithSignature<Javax.Management.MBeanServer>("getMBeanServer", "()Ljavax/management/MBeanServer;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServer.html#toJMXConnector(java.util.Map)"/>
@@ -93,7 +93,7 @@ namespace Javax.Management.Remote
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Management.Remote.JMXConnector ToJMXConnector(Java.Util.Map<Java.Lang.String, object> arg0)
         {
-            return IExecute<Javax.Management.Remote.JMXConnector>("toJMXConnector", arg0);
+            return IExecuteWithSignature<Javax.Management.Remote.JMXConnector>("toJMXConnector", "(Ljava/util/Map;)Ljavax/management/remote/JMXConnector;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServer.html#preRegister(javax.management.MBeanServer,javax.management.ObjectName)"/>
@@ -112,7 +112,7 @@ namespace Javax.Management.Remote
         /// <exception cref="Java.Lang.Exception"/>
         public void PreDeregister()
         {
-            IExecute("preDeregister");
+            IExecuteWithSignature("preDeregister", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServer.html#setMBeanServerForwarder(javax.management.remote.MBeanServerForwarder)"/>
@@ -120,14 +120,14 @@ namespace Javax.Management.Remote
         /// <param name="arg0"><see cref="Javax.Management.Remote.MBeanServerForwarder"/></param>
         public void SetMBeanServerForwarder(Javax.Management.Remote.MBeanServerForwarder arg0)
         {
-            IExecute("setMBeanServerForwarder", arg0);
+            IExecuteWithSignature("setMBeanServerForwarder", "(Ljavax/management/remote/MBeanServerForwarder;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServer.html#postDeregister()"/>
         /// </summary>
         public void PostDeregister()
         {
-            IExecute("postDeregister");
+            IExecuteWithSignature("postDeregister", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServer.html#postRegister(java.lang.Boolean)"/>
@@ -135,7 +135,7 @@ namespace Javax.Management.Remote
         /// <param name="arg0"><see cref="Java.Lang.Boolean"/></param>
         public void PostRegister(Java.Lang.Boolean arg0)
         {
-            IExecute("postRegister", arg0);
+            IExecuteWithSignature("postRegister", "(Ljava/lang/Boolean;)V", arg0);
         }
 
         #endregion

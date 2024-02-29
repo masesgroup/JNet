@@ -72,7 +72,7 @@ namespace Org.W3c.Dom.Views
         /// </summary>
         public Org.W3c.Dom.Views.DocumentView Document
         {
-            get { return IExecute<Org.W3c.Dom.Views.DocumentView>("getDocument"); }
+            get { return IExecuteWithSignature<Org.W3c.Dom.Views.DocumentView>("getDocument", "()Lorg/w3c/dom/views/DocumentView;"); }
         }
 
         #endregion

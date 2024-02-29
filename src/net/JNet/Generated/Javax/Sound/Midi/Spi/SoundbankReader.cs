@@ -54,7 +54,7 @@ namespace Javax.Sound.Midi.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Sound.Midi.Soundbank GetSoundbank(Java.Io.File arg0)
         {
-            return IExecute<Javax.Sound.Midi.Soundbank>("getSoundbank", arg0);
+            return IExecuteWithSignature<Javax.Sound.Midi.Soundbank>("getSoundbank", "(Ljava/io/File;)Ljavax/sound/midi/Soundbank;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/SoundbankReader.html#getSoundbank(java.io.InputStream)"/>
@@ -65,7 +65,7 @@ namespace Javax.Sound.Midi.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Sound.Midi.Soundbank GetSoundbank(Java.Io.InputStream arg0)
         {
-            return IExecute<Javax.Sound.Midi.Soundbank>("getSoundbank", arg0);
+            return IExecuteWithSignature<Javax.Sound.Midi.Soundbank>("getSoundbank", "(Ljava/io/InputStream;)Ljavax/sound/midi/Soundbank;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/SoundbankReader.html#getSoundbank(java.net.URL)"/>
@@ -76,7 +76,7 @@ namespace Javax.Sound.Midi.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Sound.Midi.Soundbank GetSoundbank(Java.Net.URL arg0)
         {
-            return IExecute<Javax.Sound.Midi.Soundbank>("getSoundbank", arg0);
+            return IExecuteWithSignature<Javax.Sound.Midi.Soundbank>("getSoundbank", "(Ljava/net/URL;)Ljavax/sound/midi/Soundbank;", arg0);
         }
 
         #endregion

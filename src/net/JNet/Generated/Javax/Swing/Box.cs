@@ -60,7 +60,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public static Java.Awt.Component CreateGlue()
         {
-            return SExecute<Java.Awt.Component>(LocalBridgeClazz, "createGlue");
+            return SExecuteWithSignature<Java.Awt.Component>(LocalBridgeClazz, "createGlue", "()Ljava/awt/Component;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createHorizontalGlue()"/>
@@ -69,7 +69,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public static Java.Awt.Component CreateHorizontalGlue()
         {
-            return SExecute<Java.Awt.Component>(LocalBridgeClazz, "createHorizontalGlue");
+            return SExecuteWithSignature<Java.Awt.Component>(LocalBridgeClazz, "createHorizontalGlue", "()Ljava/awt/Component;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createHorizontalStrut(int)"/>
@@ -78,7 +78,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public static Java.Awt.Component CreateHorizontalStrut(int arg0)
         {
-            return SExecute<Java.Awt.Component>(LocalBridgeClazz, "createHorizontalStrut", arg0);
+            return SExecuteWithSignature<Java.Awt.Component>(LocalBridgeClazz, "createHorizontalStrut", "(I)Ljava/awt/Component;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createRigidArea(java.awt.Dimension)"/>
@@ -87,7 +87,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public static Java.Awt.Component CreateRigidArea(Java.Awt.Dimension arg0)
         {
-            return SExecute<Java.Awt.Component>(LocalBridgeClazz, "createRigidArea", arg0);
+            return SExecuteWithSignature<Java.Awt.Component>(LocalBridgeClazz, "createRigidArea", "(Ljava/awt/Dimension;)Ljava/awt/Component;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createVerticalGlue()"/>
@@ -96,7 +96,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public static Java.Awt.Component CreateVerticalGlue()
         {
-            return SExecute<Java.Awt.Component>(LocalBridgeClazz, "createVerticalGlue");
+            return SExecuteWithSignature<Java.Awt.Component>(LocalBridgeClazz, "createVerticalGlue", "()Ljava/awt/Component;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createVerticalStrut(int)"/>
@@ -105,7 +105,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public static Java.Awt.Component CreateVerticalStrut(int arg0)
         {
-            return SExecute<Java.Awt.Component>(LocalBridgeClazz, "createVerticalStrut", arg0);
+            return SExecuteWithSignature<Java.Awt.Component>(LocalBridgeClazz, "createVerticalStrut", "(I)Ljava/awt/Component;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createHorizontalBox()"/>
@@ -114,7 +114,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Box"/></returns>
         public static Javax.Swing.Box CreateHorizontalBox()
         {
-            return SExecute<Javax.Swing.Box>(LocalBridgeClazz, "createHorizontalBox");
+            return SExecuteWithSignature<Javax.Swing.Box>(LocalBridgeClazz, "createHorizontalBox", "()Ljavax/swing/Box;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createVerticalBox()"/>
@@ -123,7 +123,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Box"/></returns>
         public static Javax.Swing.Box CreateVerticalBox()
         {
-            return SExecute<Javax.Swing.Box>(LocalBridgeClazz, "createVerticalBox");
+            return SExecuteWithSignature<Javax.Swing.Box>(LocalBridgeClazz, "createVerticalBox", "()Ljavax/swing/Box;");
         }
 
         #endregion

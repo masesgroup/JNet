@@ -48,7 +48,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
         public static Javax.Swing.KeyStroke GetKeyStroke(char arg0)
         {
-            return SExecute<Javax.Swing.KeyStroke>(LocalBridgeClazz, "getKeyStroke", arg0);
+            return SExecuteWithSignature<Javax.Swing.KeyStroke>(LocalBridgeClazz, "getKeyStroke", "(C)Ljavax/swing/KeyStroke;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/KeyStroke.html#getKeyStroke(int,int,boolean)"/>
@@ -88,7 +88,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
         public static Javax.Swing.KeyStroke GetKeyStroke(Java.Lang.String arg0)
         {
-            return SExecute<Javax.Swing.KeyStroke>(LocalBridgeClazz, "getKeyStroke", arg0);
+            return SExecuteWithSignature<Javax.Swing.KeyStroke>(LocalBridgeClazz, "getKeyStroke", "(Ljava/lang/String;)Ljavax/swing/KeyStroke;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/KeyStroke.html#getKeyStrokeForEvent(java.awt.event.KeyEvent)"/>
@@ -97,7 +97,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
         public static Javax.Swing.KeyStroke GetKeyStrokeForEvent(Java.Awt.EventNs.KeyEvent arg0)
         {
-            return SExecute<Javax.Swing.KeyStroke>(LocalBridgeClazz, "getKeyStrokeForEvent", arg0);
+            return SExecuteWithSignature<Javax.Swing.KeyStroke>(LocalBridgeClazz, "getKeyStrokeForEvent", "(Ljava/awt/event/KeyEvent;)Ljavax/swing/KeyStroke;", arg0);
         }
 
         #endregion

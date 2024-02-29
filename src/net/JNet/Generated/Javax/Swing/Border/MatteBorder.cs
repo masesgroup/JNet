@@ -100,14 +100,14 @@ namespace Javax.Swing.Border
         /// </summary>
         public Java.Awt.Color MatteColor
         {
-            get { return IExecute<Java.Awt.Color>("getMatteColor"); }
+            get { return IExecuteWithSignature<Java.Awt.Color>("getMatteColor", "()Ljava/awt/Color;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/MatteBorder.html#getTileIcon()"/> 
         /// </summary>
         public Javax.Swing.Icon TileIcon
         {
-            get { return IExecute<Javax.Swing.Icon>("getTileIcon"); }
+            get { return IExecuteWithSignature<Javax.Swing.Icon>("getTileIcon", "()Ljavax/swing/Icon;"); }
         }
 
         #endregion

@@ -72,7 +72,7 @@ namespace Javax.Lang.Model.Type
         /// </summary>
         public Java.Util.List Bounds
         {
-            get { return IExecute<Java.Util.List>("getBounds"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getBounds", "()Ljava/util/List;"); }
         }
 
         #endregion

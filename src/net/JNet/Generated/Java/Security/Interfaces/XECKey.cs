@@ -72,7 +72,7 @@ namespace Java.Security.Interfaces
         /// </summary>
         public Java.Security.Spec.AlgorithmParameterSpec Params
         {
-            get { return IExecute<Java.Security.Spec.AlgorithmParameterSpec>("getParams"); }
+            get { return IExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>("getParams", "()Ljava/security/spec/AlgorithmParameterSpec;"); }
         }
 
         #endregion

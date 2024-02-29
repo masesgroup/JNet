@@ -59,7 +59,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetPalette(bool arg0)
         {
-            IExecute("setPalette", arg0);
+            IExecuteWithSignature("setPalette", "(Z)V", arg0);
         }
 
         #endregion

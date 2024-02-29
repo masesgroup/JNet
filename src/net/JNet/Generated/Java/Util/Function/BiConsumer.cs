@@ -84,7 +84,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.BiConsumer AndThenDefault(Java.Util.Function.BiConsumer arg0)
         {
-            return IExecute<Java.Util.Function.BiConsumer>("andThenDefault", arg0);
+            return IExecuteWithSignature<Java.Util.Function.BiConsumer>("andThenDefault", "(Ljava/util/function/BiConsumer;)Ljava/util/function/BiConsumer;", arg0);
         }
 
         /// <summary>
@@ -214,7 +214,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.BiConsumer<T, U> AndThen<Arg0objectSuperT, Arg0objectSuperU>Default(Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T where Arg0objectSuperU: U
         {
-            return IExecute<Java.Util.Function.BiConsumer<T, U>>("andThenDefault", arg0);
+            return IExecuteWithSignature<Java.Util.Function.BiConsumer<T, U>>("andThenDefault", "(Ljava/util/function/BiConsumer;)Ljava/util/function/BiConsumer;", arg0);
         }
 
         /// <summary>

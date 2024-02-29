@@ -78,7 +78,7 @@ namespace Org.W3c.Dom.Events
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Events.Event CreateEvent(Java.Lang.String arg0)
         {
-            return IExecute<Org.W3c.Dom.Events.Event>("createEvent", arg0);
+            return IExecuteWithSignature<Org.W3c.Dom.Events.Event>("createEvent", "(Ljava/lang/String;)Lorg/w3c/dom/events/Event;", arg0);
         }
 
         #endregion

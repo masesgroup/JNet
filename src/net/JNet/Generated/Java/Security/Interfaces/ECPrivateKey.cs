@@ -86,7 +86,7 @@ namespace Java.Security.Interfaces
         /// </summary>
         public Java.Math.BigInteger S
         {
-            get { return IExecute<Java.Math.BigInteger>("getS"); }
+            get { return IExecuteWithSignature<Java.Math.BigInteger>("getS", "()Ljava/math/BigInteger;"); }
         }
 
         #endregion

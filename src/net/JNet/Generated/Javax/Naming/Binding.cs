@@ -90,7 +90,7 @@ namespace Javax.Naming
         /// </summary>
         public object Object
         {
-            get { return IExecute("getObject"); } set { IExecute("setObject", value); }
+            get { return IExecuteWithSignature("getObject", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setObject", "(Ljava/lang/Object;)V", value); }
         }
 
         #endregion

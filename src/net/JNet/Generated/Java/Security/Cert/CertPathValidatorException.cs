@@ -114,7 +114,7 @@ namespace Java.Security.Cert
             /// <returns><see cref="Java.Security.Cert.CertPathValidatorException.BasicReason"/></returns>
             public static Java.Security.Cert.CertPathValidatorException.BasicReason ValueOf(Java.Lang.String arg0)
             {
-                return SExecute<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalBridgeClazz, "valueOf", arg0);
+                return SExecuteWithSignature<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/security/cert/CertPathValidatorException$BasicReason;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#values()"/>
@@ -123,7 +123,7 @@ namespace Java.Security.Cert
             /// <returns><see cref="Java.Security.Cert.CertPathValidatorException.BasicReason"/></returns>
             public static Java.Security.Cert.CertPathValidatorException.BasicReason[] Values()
             {
-                return SExecuteArray<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalBridgeClazz, "values");
+                return SExecuteWithSignatureArray<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalBridgeClazz, "values", "()[Ljava/security/cert/CertPathValidatorException$BasicReason;");
             }
 
             #endregion

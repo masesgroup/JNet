@@ -91,14 +91,14 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// </summary>
         public Java.Util.List<Javax.Xml.Crypto.Dsig.Transform> Transforms
         {
-            get { return IExecute<Java.Util.List<Javax.Xml.Crypto.Dsig.Transform>>("getTransforms"); }
+            get { return IExecuteWithSignature<Java.Util.List<Javax.Xml.Crypto.Dsig.Transform>>("getTransforms", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/RetrievalMethod.html#getURI()"/> 
         /// </summary>
         public Java.Lang.String URI
         {
-            get { return IExecute<Java.Lang.String>("getURI"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getURI", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/RetrievalMethod.html#dereference(javax.xml.crypto.XMLCryptoContext)"/>
@@ -108,7 +108,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <exception cref="Javax.Xml.Crypto.URIReferenceException"/>
         public Javax.Xml.Crypto.Data Dereference(Javax.Xml.Crypto.XMLCryptoContext arg0)
         {
-            return IExecute<Javax.Xml.Crypto.Data>("dereference", arg0);
+            return IExecuteWithSignature<Javax.Xml.Crypto.Data>("dereference", "(Ljavax/xml/crypto/XMLCryptoContext;)Ljavax/xml/crypto/Data;", arg0);
         }
 
         #endregion

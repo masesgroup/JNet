@@ -73,14 +73,14 @@ namespace Javax.Swing.Plaf.Metal
         /// </summary>
         public Javax.Swing.JComboBox<object> ComboBox
         {
-            get { return IExecute<Javax.Swing.JComboBox<object>>("getComboBox"); } set { IExecute("setComboBox", value); }
+            get { return IExecuteWithSignature<Javax.Swing.JComboBox<object>>("getComboBox", "()Ljavax/swing/JComboBox;"); } set { IExecuteWithSignature("setComboBox", "(Ljavax/swing/JComboBox;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxButton.html#getComboIcon()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxButton.html#setComboIcon(javax.swing.Icon)"/>
         /// </summary>
         public Javax.Swing.Icon ComboIcon
         {
-            get { return IExecute<Javax.Swing.Icon>("getComboIcon"); } set { IExecute("setComboIcon", value); }
+            get { return IExecuteWithSignature<Javax.Swing.Icon>("getComboIcon", "()Ljavax/swing/Icon;"); } set { IExecuteWithSignature("setComboIcon", "(Ljavax/swing/Icon;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxButton.html#isIconOnly()"/>
@@ -89,7 +89,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <returns><see cref="bool"/></returns>
         public bool IsIconOnly()
         {
-            return IExecute<bool>("isIconOnly");
+            return IExecuteWithSignature<bool>("isIconOnly", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxButton.html#setIconOnly(boolean)"/>
@@ -97,7 +97,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetIconOnly(bool arg0)
         {
-            IExecute("setIconOnly", arg0);
+            IExecuteWithSignature("setIconOnly", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxButton.html#paintComponent(java.awt.Graphics)"/>
@@ -105,7 +105,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
         public void PaintComponent(Java.Awt.Graphics arg0)
         {
-            IExecute("paintComponent", arg0);
+            IExecuteWithSignature("paintComponent", "(Ljava/awt/Graphics;)V", arg0);
         }
 
         #endregion

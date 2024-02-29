@@ -87,14 +87,14 @@ namespace Javax.Management.Modelmbean
         /// </summary>
         public Java.Lang.String[] FieldNames
         {
-            get { return IExecuteArray<Java.Lang.String>("getFieldNames"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.String>("getFieldNames", "()[Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#getFields()"/> 
         /// </summary>
         public Java.Lang.String[] Fields
         {
-            get { return IExecuteArray<Java.Lang.String>("getFields"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.String>("getFields", "()[Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#isValid()"/>
@@ -104,7 +104,7 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public bool IsValid()
         {
-            return IExecute<bool>("isValid");
+            return IExecuteWithSignature<bool>("isValid", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#getFieldValue(java.lang.String)"/>
@@ -114,7 +114,7 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public object GetFieldValue(Java.Lang.String arg0)
         {
-            return IExecute("getFieldValue", arg0);
+            return IExecuteWithSignature("getFieldValue", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#getFieldValues(java.lang.String[])"/>
@@ -123,7 +123,7 @@ namespace Javax.Management.Modelmbean
         /// <returns><see cref="object"/></returns>
         public object[] GetFieldValues(params Java.Lang.String[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteArray<object>("getFieldValues"); else return IExecuteArray<object>("getFieldValues", arg0);
+            if (arg0.Length == 0) return IExecuteWithSignatureArray<object>("getFieldValues", "([Ljava/lang/String;)[Ljava/lang/Object;"); else return IExecuteWithSignatureArray<object>("getFieldValues", "([Ljava/lang/String;)[Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#toXMLString()"/>
@@ -132,7 +132,7 @@ namespace Javax.Management.Modelmbean
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToXMLString()
         {
-            return IExecute<Java.Lang.String>("toXMLString");
+            return IExecuteWithSignature<Java.Lang.String>("toXMLString", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#removeField(java.lang.String)"/>
@@ -140,7 +140,7 @@ namespace Javax.Management.Modelmbean
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void RemoveField(Java.Lang.String arg0)
         {
-            IExecute("removeField", arg0);
+            IExecuteWithSignature("removeField", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#setField(java.lang.String,java.lang.Object)"/>

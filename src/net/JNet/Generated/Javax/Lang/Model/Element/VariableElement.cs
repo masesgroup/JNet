@@ -80,21 +80,21 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         public object ConstantValue
         {
-            get { return IExecute("getConstantValue"); }
+            get { return IExecuteWithSignature("getConstantValue", "()Ljava/lang/Object;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/VariableElement.html#getEnclosingElement()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Element EnclosingElement
         {
-            get { return IExecute<Javax.Lang.Model.Element.Element>("getEnclosingElement"); }
+            get { return IExecuteWithSignature<Javax.Lang.Model.Element.Element>("getEnclosingElement", "()Ljavax/lang/model/element/Element;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/VariableElement.html#getSimpleName()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Name SimpleName
         {
-            get { return IExecute<Javax.Lang.Model.Element.Name>("getSimpleName"); }
+            get { return IExecuteWithSignature<Javax.Lang.Model.Element.Name>("getSimpleName", "()Ljavax/lang/model/element/Name;"); }
         }
 
         #endregion

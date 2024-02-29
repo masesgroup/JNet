@@ -46,14 +46,14 @@ namespace Javax.Smartcardio
         /// </summary>
         public static Javax.Smartcardio.TerminalFactory Default
         {
-            get { return SExecute<Javax.Smartcardio.TerminalFactory>(LocalBridgeClazz, "getDefault"); }
+            get { return SExecuteWithSignature<Javax.Smartcardio.TerminalFactory>(LocalBridgeClazz, "getDefault", "()Ljavax/smartcardio/TerminalFactory;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#getDefaultType()"/> 
         /// </summary>
         public static Java.Lang.String DefaultType
         {
-            get { return SExecute<Java.Lang.String>(LocalBridgeClazz, "getDefaultType"); }
+            get { return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDefaultType", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#getInstance(java.lang.String,java.lang.Object,java.lang.String)"/>
@@ -100,14 +100,14 @@ namespace Javax.Smartcardio
         /// </summary>
         public Java.Security.Provider Provider
         {
-            get { return IExecute<Java.Security.Provider>("getProvider"); }
+            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#getType()"/> 
         /// </summary>
         public Java.Lang.String Type
         {
-            get { return IExecute<Java.Lang.String>("getType"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#terminals()"/>
@@ -116,7 +116,7 @@ namespace Javax.Smartcardio
         /// <returns><see cref="Javax.Smartcardio.CardTerminals"/></returns>
         public Javax.Smartcardio.CardTerminals Terminals()
         {
-            return IExecute<Javax.Smartcardio.CardTerminals>("terminals");
+            return IExecuteWithSignature<Javax.Smartcardio.CardTerminals>("terminals", "()Ljavax/smartcardio/CardTerminals;");
         }
 
         #endregion

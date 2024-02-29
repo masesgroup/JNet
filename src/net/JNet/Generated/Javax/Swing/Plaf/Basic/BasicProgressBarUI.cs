@@ -87,7 +87,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
             public void StateChanged(Javax.Swing.Event.ChangeEvent arg0)
             {
-                IExecute("stateChanged", arg0);
+                IExecuteWithSignature("stateChanged", "(Ljavax/swing/event/ChangeEvent;)V", arg0);
             }
 
             #endregion

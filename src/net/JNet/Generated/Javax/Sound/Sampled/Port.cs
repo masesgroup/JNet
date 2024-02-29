@@ -138,7 +138,7 @@ namespace Javax.Sound.Sampled
             /// </summary>
             public Java.Lang.String Name
             {
-                get { return IExecute<Java.Lang.String>("getName"); }
+                get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#isSource()"/>
@@ -147,7 +147,7 @@ namespace Javax.Sound.Sampled
             /// <returns><see cref="bool"/></returns>
             public bool IsSource()
             {
-                return IExecute<bool>("isSource");
+                return IExecuteWithSignature<bool>("isSource", "()Z");
             }
 
             #endregion

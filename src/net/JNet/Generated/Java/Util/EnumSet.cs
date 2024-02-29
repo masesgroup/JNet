@@ -180,7 +180,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.EnumSet"/></returns>
         public Java.Util.EnumSet Clone()
         {
-            return IExecute<Java.Util.EnumSet>("clone");
+            return IExecuteWithSignature<Java.Util.EnumSet>("clone", "()Ljava/util/EnumSet;");
         }
 
         #endregion
@@ -352,7 +352,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.EnumSet"/></returns>
         public Java.Util.EnumSet<E> Clone()
         {
-            return IExecute<Java.Util.EnumSet<E>>("clone");
+            return IExecuteWithSignature<Java.Util.EnumSet<E>>("clone", "()Ljava/util/EnumSet;");
         }
 
         #endregion

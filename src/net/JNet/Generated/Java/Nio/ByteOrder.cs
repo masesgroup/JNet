@@ -60,7 +60,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ByteOrder"/></returns>
         public static Java.Nio.ByteOrder NativeOrder()
         {
-            return SExecute<Java.Nio.ByteOrder>(LocalBridgeClazz, "nativeOrder");
+            return SExecuteWithSignature<Java.Nio.ByteOrder>(LocalBridgeClazz, "nativeOrder", "()Ljava/nio/ByteOrder;");
         }
 
         #endregion

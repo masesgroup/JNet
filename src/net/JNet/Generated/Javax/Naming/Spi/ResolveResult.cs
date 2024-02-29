@@ -68,14 +68,14 @@ namespace Javax.Naming.Spi
         /// </summary>
         public Javax.Naming.Name RemainingName
         {
-            get { return IExecute<Javax.Naming.Name>("getRemainingName"); } set { IExecute("setRemainingName", value); }
+            get { return IExecuteWithSignature<Javax.Naming.Name>("getRemainingName", "()Ljavax/naming/Name;"); } set { IExecuteWithSignature("setRemainingName", "(Ljavax/naming/Name;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ResolveResult.html#getResolvedObj()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ResolveResult.html#setResolvedObj(java.lang.Object)"/>
         /// </summary>
         public object ResolvedObj
         {
-            get { return IExecute("getResolvedObj"); } set { IExecute("setResolvedObj", value); }
+            get { return IExecuteWithSignature("getResolvedObj", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setResolvedObj", "(Ljava/lang/Object;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ResolveResult.html#appendRemainingComponent(java.lang.String)"/>
@@ -83,7 +83,7 @@ namespace Javax.Naming.Spi
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void AppendRemainingComponent(Java.Lang.String arg0)
         {
-            IExecute("appendRemainingComponent", arg0);
+            IExecuteWithSignature("appendRemainingComponent", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ResolveResult.html#appendRemainingName(javax.naming.Name)"/>
@@ -91,7 +91,7 @@ namespace Javax.Naming.Spi
         /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
         public void AppendRemainingName(Javax.Naming.Name arg0)
         {
-            IExecute("appendRemainingName", arg0);
+            IExecuteWithSignature("appendRemainingName", "(Ljavax/naming/Name;)V", arg0);
         }
 
         #endregion

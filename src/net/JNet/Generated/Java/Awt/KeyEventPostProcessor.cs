@@ -76,7 +76,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool PostProcessKeyEvent(Java.Awt.EventNs.KeyEvent arg0)
         {
-            return IExecute<bool>("postProcessKeyEvent", arg0);
+            return IExecuteWithSignature<bool>("postProcessKeyEvent", "(Ljava/awt/event/KeyEvent;)Z", arg0);
         }
 
         #endregion

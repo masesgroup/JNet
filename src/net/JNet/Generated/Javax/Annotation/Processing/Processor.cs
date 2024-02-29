@@ -103,21 +103,21 @@ namespace Javax.Annotation.Processing
         /// </summary>
         public Java.Util.Set<Java.Lang.String> SupportedAnnotationTypes
         {
-            get { return IExecute<Java.Util.Set<Java.Lang.String>>("getSupportedAnnotationTypes"); }
+            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getSupportedAnnotationTypes", "()Ljava/util/Set;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#getSupportedOptions()"/> 
         /// </summary>
         public Java.Util.Set<Java.Lang.String> SupportedOptions
         {
-            get { return IExecute<Java.Util.Set<Java.Lang.String>>("getSupportedOptions"); }
+            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getSupportedOptions", "()Ljava/util/Set;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#getSupportedSourceVersion()"/> 
         /// </summary>
         public Javax.Lang.Model.SourceVersion SupportedSourceVersion
         {
-            get { return IExecute<Javax.Lang.Model.SourceVersion>("getSupportedSourceVersion"); }
+            get { return IExecuteWithSignature<Javax.Lang.Model.SourceVersion>("getSupportedSourceVersion", "()Ljavax/lang/model/SourceVersion;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#process(java.util.Set,javax.annotation.processing.RoundEnvironment)"/>
@@ -149,7 +149,7 @@ namespace Javax.Annotation.Processing
         /// <param name="arg0"><see cref="Javax.Annotation.Processing.ProcessingEnvironment"/></param>
         public void Init(Javax.Annotation.Processing.ProcessingEnvironment arg0)
         {
-            IExecute("init", arg0);
+            IExecuteWithSignature("init", "(Ljavax/annotation/processing/ProcessingEnvironment;)V", arg0);
         }
 
         #endregion

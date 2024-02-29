@@ -58,7 +58,7 @@ namespace Javax.Net.Ssl
         /// </summary>
         public Java.Security.Cert.CertPathParameters Parameters
         {
-            get { return IExecute<Java.Security.Cert.CertPathParameters>("getParameters"); }
+            get { return IExecuteWithSignature<Java.Security.Cert.CertPathParameters>("getParameters", "()Ljava/security/cert/CertPathParameters;"); }
         }
 
         #endregion

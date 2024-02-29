@@ -59,14 +59,14 @@ namespace Javax.Naming.Event
         /// </summary>
         public Javax.Naming.Event.EventContext EventContext
         {
-            get { return IExecute<Javax.Naming.Event.EventContext>("getEventContext"); }
+            get { return IExecuteWithSignature<Javax.Naming.Event.EventContext>("getEventContext", "()Ljavax/naming/event/EventContext;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingExceptionEvent.html#getException()"/> 
         /// </summary>
         public Javax.Naming.NamingException Exception
         {
-            get { var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getException"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Javax.Naming.NamingException>(obj); }
+            get { var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getException", "()Ljavax/naming/NamingException;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Javax.Naming.NamingException>(obj); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingExceptionEvent.html#dispatch(javax.naming.event.NamingListener)"/>
@@ -74,7 +74,7 @@ namespace Javax.Naming.Event
         /// <param name="arg0"><see cref="Javax.Naming.Event.NamingListener"/></param>
         public void Dispatch(Javax.Naming.Event.NamingListener arg0)
         {
-            IExecute("dispatch", arg0);
+            IExecuteWithSignature("dispatch", "(Ljavax/naming/event/NamingListener;)V", arg0);
         }
 
         #endregion

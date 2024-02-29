@@ -97,7 +97,7 @@ namespace Javax.Crypto.Spec
         /// </summary>
         public byte[] Key
         {
-            get { return IExecuteArray<byte>("getKey"); }
+            get { return IExecuteWithSignatureArray<byte>("getKey", "()[B"); }
         }
 
         #endregion

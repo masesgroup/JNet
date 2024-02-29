@@ -94,35 +94,35 @@ namespace Javax.Management
         /// </summary>
         public Java.Lang.String Message
         {
-            get { return IExecute<Java.Lang.String>("getMessage"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getMessage", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#getSequenceNumber()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#setSequenceNumber(long)"/>
         /// </summary>
         public long SequenceNumber
         {
-            get { return IExecute<long>("getSequenceNumber"); } set { IExecute("setSequenceNumber", value); }
+            get { return IExecuteWithSignature<long>("getSequenceNumber", "()J"); } set { IExecuteWithSignature("setSequenceNumber", "(J)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#getTimeStamp()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#setTimeStamp(long)"/>
         /// </summary>
         public long TimeStamp
         {
-            get { return IExecute<long>("getTimeStamp"); } set { IExecute("setTimeStamp", value); }
+            get { return IExecuteWithSignature<long>("getTimeStamp", "()J"); } set { IExecuteWithSignature("setTimeStamp", "(J)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#getType()"/> 
         /// </summary>
         public Java.Lang.String Type
         {
-            get { return IExecute<Java.Lang.String>("getType"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#getUserData()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#setUserData(java.lang.Object)"/>
         /// </summary>
         public object UserData
         {
-            get { return IExecute("getUserData"); } set { IExecute("setUserData", value); }
+            get { return IExecuteWithSignature("getUserData", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setUserData", "(Ljava/lang/Object;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#setSource(java.lang.Object)"/>
@@ -130,7 +130,7 @@ namespace Javax.Management
         /// <param name="arg0"><see cref="object"/></param>
         public void SetSource(object arg0)
         {
-            IExecute("setSource", arg0);
+            IExecuteWithSignature("setSource", "(Ljava/lang/Object;)V", arg0);
         }
 
         #endregion

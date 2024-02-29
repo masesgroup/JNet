@@ -72,7 +72,7 @@ namespace Org.W3c.Dom.Ls
         /// </summary>
         public int WhatToShow
         {
-            get { return IExecute<int>("getWhatToShow"); }
+            get { return IExecuteWithSignature<int>("getWhatToShow", "()I"); }
         }
 
         #endregion

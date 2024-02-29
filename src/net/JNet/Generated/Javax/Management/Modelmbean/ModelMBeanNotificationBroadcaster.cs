@@ -155,7 +155,7 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public void SendAttributeChangeNotification(Javax.Management.AttributeChangeNotification arg0)
         {
-            IExecute("sendAttributeChangeNotification", arg0);
+            IExecuteWithSignature("sendAttributeChangeNotification", "(Ljavax/management/AttributeChangeNotification;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanNotificationBroadcaster.html#sendNotification(java.lang.String)"/>
@@ -165,7 +165,7 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public void SendNotification(Java.Lang.String arg0)
         {
-            IExecute("sendNotification", arg0);
+            IExecuteWithSignature("sendNotification", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanNotificationBroadcaster.html#sendNotification(javax.management.Notification)"/>
@@ -175,7 +175,7 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public void SendNotification(Javax.Management.Notification arg0)
         {
-            IExecute("sendNotification", arg0);
+            IExecuteWithSignature("sendNotification", "(Ljavax/management/Notification;)V", arg0);
         }
 
         #endregion

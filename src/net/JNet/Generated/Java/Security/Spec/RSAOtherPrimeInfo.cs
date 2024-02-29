@@ -60,21 +60,21 @@ namespace Java.Security.Spec
         /// </summary>
         public Java.Math.BigInteger CrtCoefficient
         {
-            get { return IExecute<Java.Math.BigInteger>("getCrtCoefficient"); }
+            get { return IExecuteWithSignature<Java.Math.BigInteger>("getCrtCoefficient", "()Ljava/math/BigInteger;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAOtherPrimeInfo.html#getExponent()"/> 
         /// </summary>
         public Java.Math.BigInteger Exponent
         {
-            get { return IExecute<Java.Math.BigInteger>("getExponent"); }
+            get { return IExecuteWithSignature<Java.Math.BigInteger>("getExponent", "()Ljava/math/BigInteger;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAOtherPrimeInfo.html#getPrime()"/> 
         /// </summary>
         public Java.Math.BigInteger Prime
         {
-            get { return IExecute<Java.Math.BigInteger>("getPrime"); }
+            get { return IExecuteWithSignature<Java.Math.BigInteger>("getPrime", "()Ljava/math/BigInteger;"); }
         }
 
         #endregion

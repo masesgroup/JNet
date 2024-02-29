@@ -52,7 +52,7 @@ namespace Java.Text.Spi
         /// <returns><see cref="Java.Text.DateFormatSymbols"/></returns>
         public Java.Text.DateFormatSymbols GetInstance(Java.Util.Locale arg0)
         {
-            return IExecute<Java.Text.DateFormatSymbols>("getInstance", arg0);
+            return IExecuteWithSignature<Java.Text.DateFormatSymbols>("getInstance", "(Ljava/util/Locale;)Ljava/text/DateFormatSymbols;", arg0);
         }
 
         #endregion

@@ -256,7 +256,7 @@ namespace Java.Net
         /// </summary>
         public static bool FollowRedirects
         {
-            get { return SExecute<bool>(LocalBridgeClazz, "getFollowRedirects"); } set { SExecute(LocalBridgeClazz, "setFollowRedirects", value); }
+            get { return SExecuteWithSignature<bool>(LocalBridgeClazz, "getFollowRedirects", "()Z"); } set { SExecuteWithSignature(LocalBridgeClazz, "setFollowRedirects", "(Z)V", value); }
         }
 
         #endregion
@@ -267,35 +267,35 @@ namespace Java.Net
         /// </summary>
         public Java.Io.InputStream ErrorStream
         {
-            get { return IExecute<Java.Io.InputStream>("getErrorStream"); }
+            get { return IExecuteWithSignature<Java.Io.InputStream>("getErrorStream", "()Ljava/io/InputStream;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#getInstanceFollowRedirects()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#setInstanceFollowRedirects(boolean)"/>
         /// </summary>
         public bool InstanceFollowRedirects
         {
-            get { return IExecute<bool>("getInstanceFollowRedirects"); } set { IExecute("setInstanceFollowRedirects", value); }
+            get { return IExecuteWithSignature<bool>("getInstanceFollowRedirects", "()Z"); } set { IExecuteWithSignature("setInstanceFollowRedirects", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#getRequestMethod()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#setRequestMethod(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String RequestMethod
         {
-            get { return IExecute<Java.Lang.String>("getRequestMethod"); } set { IExecute("setRequestMethod", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getRequestMethod", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setRequestMethod", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#getResponseCode()"/> 
         /// </summary>
         public int ResponseCode
         {
-            get { return IExecute<int>("getResponseCode"); }
+            get { return IExecuteWithSignature<int>("getResponseCode", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#getResponseMessage()"/> 
         /// </summary>
         public Java.Lang.String ResponseMessage
         {
-            get { return IExecute<Java.Lang.String>("getResponseMessage"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getResponseMessage", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#usingProxy()"/>
@@ -304,14 +304,14 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool UsingProxy()
         {
-            return IExecute<bool>("usingProxy");
+            return IExecuteWithSignature<bool>("usingProxy", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#disconnect()"/>
         /// </summary>
         public void Disconnect()
         {
-            IExecute("disconnect");
+            IExecuteWithSignature("disconnect", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#setAuthenticator(java.net.Authenticator)"/>
@@ -319,7 +319,7 @@ namespace Java.Net
         /// <param name="arg0"><see cref="Java.Net.Authenticator"/></param>
         public void SetAuthenticator(Java.Net.Authenticator arg0)
         {
-            IExecute("setAuthenticator", arg0);
+            IExecuteWithSignature("setAuthenticator", "(Ljava/net/Authenticator;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#setChunkedStreamingMode(int)"/>
@@ -327,7 +327,7 @@ namespace Java.Net
         /// <param name="arg0"><see cref="int"/></param>
         public void SetChunkedStreamingMode(int arg0)
         {
-            IExecute("setChunkedStreamingMode", arg0);
+            IExecuteWithSignature("setChunkedStreamingMode", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#setFixedLengthStreamingMode(int)"/>
@@ -335,7 +335,7 @@ namespace Java.Net
         /// <param name="arg0"><see cref="int"/></param>
         public void SetFixedLengthStreamingMode(int arg0)
         {
-            IExecute("setFixedLengthStreamingMode", arg0);
+            IExecuteWithSignature("setFixedLengthStreamingMode", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#setFixedLengthStreamingMode(long)"/>
@@ -343,7 +343,7 @@ namespace Java.Net
         /// <param name="arg0"><see cref="long"/></param>
         public void SetFixedLengthStreamingMode(long arg0)
         {
-            IExecute("setFixedLengthStreamingMode", arg0);
+            IExecuteWithSignature("setFixedLengthStreamingMode", "(J)V", arg0);
         }
 
         #endregion

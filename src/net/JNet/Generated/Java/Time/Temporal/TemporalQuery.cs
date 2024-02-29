@@ -52,7 +52,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="object"/></returns>
         public object QueryFrom(Java.Time.Temporal.TemporalAccessor arg0)
         {
-            return IExecute("queryFrom", arg0);
+            return IExecuteWithSignature("queryFrom", "(Ljava/time/temporal/TemporalAccessor;)Ljava/lang/Object;", arg0);
         }
 
         #endregion
@@ -120,7 +120,7 @@ namespace Java.Time.Temporal
         /// <returns><typeparamref name="R"/></returns>
         public R QueryFrom(Java.Time.Temporal.TemporalAccessor arg0)
         {
-            return IExecute<R>("queryFrom", arg0);
+            return IExecuteWithSignature<R>("queryFrom", "(Ljava/time/temporal/TemporalAccessor;)Ljava/lang/Object;", arg0);
         }
 
         #endregion

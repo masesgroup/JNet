@@ -73,28 +73,28 @@ namespace Java.Awt
         /// </summary>
         public int BitDepth
         {
-            get { return IExecute<int>("getBitDepth"); }
+            get { return IExecuteWithSignature<int>("getBitDepth", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/DisplayMode.html#getHeight()"/> 
         /// </summary>
         public int Height
         {
-            get { return IExecute<int>("getHeight"); }
+            get { return IExecuteWithSignature<int>("getHeight", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/DisplayMode.html#getRefreshRate()"/> 
         /// </summary>
         public int RefreshRate
         {
-            get { return IExecute<int>("getRefreshRate"); }
+            get { return IExecuteWithSignature<int>("getRefreshRate", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/DisplayMode.html#getWidth()"/> 
         /// </summary>
         public int Width
         {
-            get { return IExecute<int>("getWidth"); }
+            get { return IExecuteWithSignature<int>("getWidth", "()I"); }
         }
 
         #endregion

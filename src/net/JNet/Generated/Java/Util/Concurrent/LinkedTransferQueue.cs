@@ -66,7 +66,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         public int WaitingConsumerCount
         {
-            get { return IExecute<int>("getWaitingConsumerCount"); }
+            get { return IExecuteWithSignature<int>("getWaitingConsumerCount", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html#hasWaitingConsumer()"/>
@@ -75,7 +75,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool HasWaitingConsumer()
         {
-            return IExecute<bool>("hasWaitingConsumer");
+            return IExecuteWithSignature<bool>("hasWaitingConsumer", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
@@ -107,7 +107,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool TryTransfer(object arg0)
         {
-            return IExecute<bool>("tryTransfer", arg0);
+            return IExecuteWithSignature<bool>("tryTransfer", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html#poll(long,java.util.concurrent.TimeUnit)"/>
@@ -128,7 +128,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public object Take()
         {
-            return IExecute("take");
+            return IExecuteWithSignature("take", "()Ljava/lang/Object;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html#drainTo(java.util.Collection,int)"/>
@@ -147,7 +147,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int DrainTo(Java.Util.Collection arg0)
         {
-            return IExecute<int>("drainTo", arg0);
+            return IExecuteWithSignature<int>("drainTo", "(Ljava/util/Collection;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html#remainingCapacity()"/>
@@ -156,7 +156,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int RemainingCapacity()
         {
-            return IExecute<int>("remainingCapacity");
+            return IExecuteWithSignature<int>("remainingCapacity", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html#put(java.lang.Object)"/>
@@ -164,7 +164,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="object"/></param>
         public void Put(object arg0)
         {
-            IExecute("put", arg0);
+            IExecuteWithSignature("put", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html#transfer(java.lang.Object)"/>
@@ -173,7 +173,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Transfer(object arg0)
         {
-            IExecute("transfer", arg0);
+            IExecuteWithSignature("transfer", "(Ljava/lang/Object;)V", arg0);
         }
 
         #endregion
@@ -231,7 +231,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         public int WaitingConsumerCount
         {
-            get { return IExecute<int>("getWaitingConsumerCount"); }
+            get { return IExecuteWithSignature<int>("getWaitingConsumerCount", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html#hasWaitingConsumer()"/>
@@ -240,7 +240,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool HasWaitingConsumer()
         {
-            return IExecute<bool>("hasWaitingConsumer");
+            return IExecuteWithSignature<bool>("hasWaitingConsumer", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
@@ -272,7 +272,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool TryTransfer(E arg0)
         {
-            return IExecute<bool>("tryTransfer", arg0);
+            return IExecuteWithSignature<bool>("tryTransfer", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html#poll(long,java.util.concurrent.TimeUnit)"/>
@@ -293,7 +293,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public E Take()
         {
-            return IExecute<E>("take");
+            return IExecuteWithSignature<E>("take", "()Ljava/lang/Object;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html#drainTo(java.util.Collection,int)"/>
@@ -314,7 +314,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int DrainTo<Arg0objectSuperE>(Java.Util.Collection<Arg0objectSuperE> arg0) where Arg0objectSuperE: E
         {
-            return IExecute<int>("drainTo", arg0);
+            return IExecuteWithSignature<int>("drainTo", "(Ljava/util/Collection;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html#remainingCapacity()"/>
@@ -323,7 +323,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int RemainingCapacity()
         {
-            return IExecute<int>("remainingCapacity");
+            return IExecuteWithSignature<int>("remainingCapacity", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html#put(java.lang.Object)"/>
@@ -331,7 +331,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><typeparamref name="E"/></param>
         public void Put(E arg0)
         {
-            IExecute("put", arg0);
+            IExecuteWithSignature("put", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html#transfer(java.lang.Object)"/>
@@ -340,7 +340,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Transfer(E arg0)
         {
-            IExecute("transfer", arg0);
+            IExecuteWithSignature("transfer", "(Ljava/lang/Object;)V", arg0);
         }
 
         #endregion

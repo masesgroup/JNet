@@ -137,21 +137,21 @@ namespace Java.Awt.Geom
         /// </summary>
         public Java.Awt.Rectangle Bounds
         {
-            get { return IExecute<Java.Awt.Rectangle>("getBounds"); }
+            get { return IExecuteWithSignature<Java.Awt.Rectangle>("getBounds", "()Ljava/awt/Rectangle;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#getCurrentPoint()"/> 
         /// </summary>
         public Java.Awt.Geom.Point2D CurrentPoint
         {
-            get { return IExecute<Java.Awt.Geom.Point2D>("getCurrentPoint"); }
+            get { return IExecuteWithSignature<Java.Awt.Geom.Point2D>("getCurrentPoint", "()Ljava/awt/geom/Point2D;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#getWindingRule()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#setWindingRule(int)"/>
         /// </summary>
         public int WindingRule
         {
-            get { return IExecute<int>("getWindingRule"); } set { IExecute("setWindingRule", value); }
+            get { return IExecuteWithSignature<int>("getWindingRule", "()I"); } set { IExecuteWithSignature("setWindingRule", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#append(java.awt.geom.PathIterator,boolean)"/>
@@ -210,14 +210,14 @@ namespace Java.Awt.Geom
         /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
         public void Transform(Java.Awt.Geom.AffineTransform arg0)
         {
-            IExecute("transform", arg0);
+            IExecuteWithSignature("transform", "(Ljava/awt/geom/AffineTransform;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#trimToSize()"/>
         /// </summary>
         public void TrimToSize()
         {
-            IExecute("trimToSize");
+            IExecuteWithSignature("trimToSize", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#contains(double,double,double,double)"/>
@@ -248,7 +248,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool Contains(Java.Awt.Geom.Point2D arg0)
         {
-            return IExecute<bool>("contains", arg0);
+            return IExecuteWithSignature<bool>("contains", "(Ljava/awt/geom/Point2D;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#contains(java.awt.geom.Rectangle2D)"/>
@@ -257,7 +257,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool Contains(Java.Awt.Geom.Rectangle2D arg0)
         {
-            return IExecute<bool>("contains", arg0);
+            return IExecuteWithSignature<bool>("contains", "(Ljava/awt/geom/Rectangle2D;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#intersects(double,double,double,double)"/>
@@ -278,7 +278,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool Intersects(Java.Awt.Geom.Rectangle2D arg0)
         {
-            return IExecute<bool>("intersects", arg0);
+            return IExecuteWithSignature<bool>("intersects", "(Ljava/awt/geom/Rectangle2D;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#getPathIterator(java.awt.geom.AffineTransform,double)"/>
@@ -297,21 +297,21 @@ namespace Java.Awt.Geom
         /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape CreateTransformedShape(Java.Awt.Geom.AffineTransform arg0)
         {
-            return IExecute<Java.Awt.Shape>("createTransformedShape", arg0);
+            return IExecuteWithSignature<Java.Awt.Shape>("createTransformedShape", "(Ljava/awt/geom/AffineTransform;)Ljava/awt/Shape;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#closePath()"/>
         /// </summary>
         public void ClosePath()
         {
-            IExecute("closePath");
+            IExecuteWithSignature("closePath", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#reset()"/>
         /// </summary>
         public void Reset()
         {
-            IExecute("reset");
+            IExecuteWithSignature("reset", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#append(java.awt.Shape,boolean)"/>

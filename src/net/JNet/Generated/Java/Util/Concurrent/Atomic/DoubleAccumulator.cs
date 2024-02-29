@@ -59,7 +59,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         public double ThenReset
         {
-            get { return IExecute<double>("getThenReset"); }
+            get { return IExecuteWithSignature<double>("getThenReset", "()D"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAccumulator.html#get()"/>
@@ -68,7 +68,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="double"/></returns>
         public double Get()
         {
-            return IExecute<double>("get");
+            return IExecuteWithSignature<double>("get", "()D");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAccumulator.html#accumulate(double)"/>
@@ -76,14 +76,14 @@ namespace Java.Util.Concurrent.Atomic
         /// <param name="arg0"><see cref="double"/></param>
         public void Accumulate(double arg0)
         {
-            IExecute("accumulate", arg0);
+            IExecuteWithSignature("accumulate", "(D)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAccumulator.html#reset()"/>
         /// </summary>
         public void Reset()
         {
-            IExecute("reset");
+            IExecuteWithSignature("reset", "()V");
         }
 
         #endregion

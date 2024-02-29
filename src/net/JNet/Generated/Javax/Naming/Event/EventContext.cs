@@ -118,7 +118,7 @@ namespace Javax.Naming.Event
         /// <exception cref="Javax.Naming.NamingException"/>
         public bool TargetMustExist()
         {
-            return IExecute<bool>("targetMustExist");
+            return IExecuteWithSignature<bool>("targetMustExist", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#addNamingListener(java.lang.String,int,javax.naming.event.NamingListener)"/>
@@ -149,7 +149,7 @@ namespace Javax.Naming.Event
         /// <exception cref="Javax.Naming.NamingException"/>
         public void RemoveNamingListener(Javax.Naming.Event.NamingListener arg0)
         {
-            IExecute("removeNamingListener", arg0);
+            IExecuteWithSignature("removeNamingListener", "(Ljavax/naming/event/NamingListener;)V", arg0);
         }
 
         #endregion

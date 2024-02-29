@@ -479,14 +479,14 @@ namespace Java.Sql
         /// </summary>
         public Java.Sql.ResultSetMetaData MetaData
         {
-            get { return IExecute<Java.Sql.ResultSetMetaData>("getMetaData"); }
+            get { return IExecuteWithSignature<Java.Sql.ResultSetMetaData>("getMetaData", "()Ljava/sql/ResultSetMetaData;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#getParameterMetaData()"/> 
         /// </summary>
         public Java.Sql.ParameterMetaData ParameterMetaData
         {
-            get { return IExecute<Java.Sql.ParameterMetaData>("getParameterMetaData"); }
+            get { return IExecuteWithSignature<Java.Sql.ParameterMetaData>("getParameterMetaData", "()Ljava/sql/ParameterMetaData;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#execute()"/>
@@ -496,7 +496,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool Execute()
         {
-            return IExecute<bool>("execute");
+            return IExecuteWithSignature<bool>("execute", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#executeUpdate()"/>
@@ -506,7 +506,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public int ExecuteUpdate()
         {
-            return IExecute<int>("executeUpdate");
+            return IExecuteWithSignature<int>("executeUpdate", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#executeQuery()"/>
@@ -516,7 +516,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ResultSet ExecuteQuery()
         {
-            return IExecute<Java.Sql.ResultSet>("executeQuery");
+            return IExecuteWithSignature<Java.Sql.ResultSet>("executeQuery", "()Ljava/sql/ResultSet;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#addBatch()"/>
@@ -525,7 +525,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void AddBatch()
         {
-            IExecute("addBatch");
+            IExecuteWithSignature("addBatch", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#clearParameters()"/>
@@ -534,7 +534,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void ClearParameters()
         {
-            IExecute("clearParameters");
+            IExecuteWithSignature("clearParameters", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#setArray(int,java.sql.Array)"/>
@@ -1031,7 +1031,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public long ExecuteLargeUpdate()
         {
-            return IExecute<long>("executeLargeUpdate");
+            return IExecuteWithSignature<long>("executeLargeUpdate", "()J");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#setObject(int,java.lang.Object,java.sql.SQLType,int)"/>

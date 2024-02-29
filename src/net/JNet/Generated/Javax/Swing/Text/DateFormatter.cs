@@ -59,7 +59,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Java.Text.DateFormat"/></param>
         public void SetFormat(Java.Text.DateFormat arg0)
         {
-            IExecute("setFormat", arg0);
+            IExecuteWithSignature("setFormat", "(Ljava/text/DateFormat;)V", arg0);
         }
 
         #endregion

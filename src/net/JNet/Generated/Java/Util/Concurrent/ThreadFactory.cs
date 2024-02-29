@@ -76,7 +76,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Lang.Thread"/></returns>
         public Java.Lang.Thread NewThread(Java.Lang.Runnable arg0)
         {
-            return IExecute<Java.Lang.Thread>("newThread", arg0);
+            return IExecuteWithSignature<Java.Lang.Thread>("newThread", "(Ljava/lang/Runnable;)Ljava/lang/Thread;", arg0);
         }
 
         #endregion

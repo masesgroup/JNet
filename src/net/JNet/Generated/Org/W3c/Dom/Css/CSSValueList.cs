@@ -78,7 +78,7 @@ namespace Org.W3c.Dom.Css
         /// </summary>
         public int Length
         {
-            get { return IExecute<int>("getLength"); }
+            get { return IExecuteWithSignature<int>("getLength", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValueList.html#item(int)"/>
@@ -87,7 +87,7 @@ namespace Org.W3c.Dom.Css
         /// <returns><see cref="Org.W3c.Dom.Css.CSSValue"/></returns>
         public Org.W3c.Dom.Css.CSSValue Item(int arg0)
         {
-            return IExecute<Org.W3c.Dom.Css.CSSValue>("item", arg0);
+            return IExecuteWithSignature<Org.W3c.Dom.Css.CSSValue>("item", "(I)Lorg/w3c/dom/css/CSSValue;", arg0);
         }
 
         #endregion

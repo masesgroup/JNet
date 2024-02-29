@@ -50,7 +50,7 @@ namespace Javax.Swing.Plaf.Multi
         /// </summary>
         public Javax.Swing.Plaf.ComponentUI[] UIs
         {
-            get { return IExecuteArray<Javax.Swing.Plaf.ComponentUI>("getUIs"); }
+            get { return IExecuteWithSignatureArray<Javax.Swing.Plaf.ComponentUI>("getUIs", "()[Ljavax/swing/plaf/ComponentUI;"); }
         }
 
         #endregion

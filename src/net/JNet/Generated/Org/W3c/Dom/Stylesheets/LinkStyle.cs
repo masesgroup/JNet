@@ -72,7 +72,7 @@ namespace Org.W3c.Dom.Stylesheets
         /// </summary>
         public Org.W3c.Dom.Stylesheets.StyleSheet Sheet
         {
-            get { return IExecute<Org.W3c.Dom.Stylesheets.StyleSheet>("getSheet"); }
+            get { return IExecuteWithSignature<Org.W3c.Dom.Stylesheets.StyleSheet>("getSheet", "()Lorg/w3c/dom/stylesheets/StyleSheet;"); }
         }
 
         #endregion

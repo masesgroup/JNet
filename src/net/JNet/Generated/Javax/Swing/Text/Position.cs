@@ -72,7 +72,7 @@ namespace Javax.Swing.Text
         /// </summary>
         public int Offset
         {
-            get { return IExecute<int>("getOffset"); }
+            get { return IExecuteWithSignature<int>("getOffset", "()I"); }
         }
 
         #endregion

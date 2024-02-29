@@ -62,28 +62,28 @@ namespace Javax.Swing
         /// </summary>
         public Javax.Swing.JInternalFrame[] AllFrames
         {
-            get { return IExecuteArray<Javax.Swing.JInternalFrame>("getAllFrames"); }
+            get { return IExecuteWithSignatureArray<Javax.Swing.JInternalFrame>("getAllFrames", "()[Ljavax/swing/JInternalFrame;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#getDesktopManager()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#setDesktopManager(javax.swing.DesktopManager)"/>
         /// </summary>
         public Javax.Swing.DesktopManager DesktopManager
         {
-            get { return IExecute<Javax.Swing.DesktopManager>("getDesktopManager"); } set { IExecute("setDesktopManager", value); }
+            get { return IExecuteWithSignature<Javax.Swing.DesktopManager>("getDesktopManager", "()Ljavax/swing/DesktopManager;"); } set { IExecuteWithSignature("setDesktopManager", "(Ljavax/swing/DesktopManager;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#getDragMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#setDragMode(int)"/>
         /// </summary>
         public int DragMode
         {
-            get { return IExecute<int>("getDragMode"); } set { IExecute("setDragMode", value); }
+            get { return IExecuteWithSignature<int>("getDragMode", "()I"); } set { IExecuteWithSignature("setDragMode", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#getSelectedFrame()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#setSelectedFrame(javax.swing.JInternalFrame)"/>
         /// </summary>
         public Javax.Swing.JInternalFrame SelectedFrame
         {
-            get { return IExecute<Javax.Swing.JInternalFrame>("getSelectedFrame"); } set { IExecute("setSelectedFrame", value); }
+            get { return IExecuteWithSignature<Javax.Swing.JInternalFrame>("getSelectedFrame", "()Ljavax/swing/JInternalFrame;"); } set { IExecuteWithSignature("setSelectedFrame", "(Ljavax/swing/JInternalFrame;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#selectFrame(boolean)"/>
@@ -92,7 +92,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.JInternalFrame"/></returns>
         public Javax.Swing.JInternalFrame SelectFrame(bool arg0)
         {
-            return IExecute<Javax.Swing.JInternalFrame>("selectFrame", arg0);
+            return IExecuteWithSignature<Javax.Swing.JInternalFrame>("selectFrame", "(Z)Ljavax/swing/JInternalFrame;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#getAllFramesInLayer(int)"/>
@@ -101,7 +101,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.JInternalFrame"/></returns>
         public Javax.Swing.JInternalFrame[] GetAllFramesInLayer(int arg0)
         {
-            return IExecuteArray<Javax.Swing.JInternalFrame>("getAllFramesInLayer", arg0);
+            return IExecuteWithSignatureArray<Javax.Swing.JInternalFrame>("getAllFramesInLayer", "(I)[Ljavax/swing/JInternalFrame;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#setUI(javax.swing.plaf.DesktopPaneUI)"/>
@@ -109,7 +109,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.DesktopPaneUI"/></param>
         public void SetUI(Javax.Swing.Plaf.DesktopPaneUI arg0)
         {
-            IExecute("setUI", arg0);
+            IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/DesktopPaneUI;)V", arg0);
         }
 
         #endregion

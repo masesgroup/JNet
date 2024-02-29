@@ -61,7 +61,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.String ParseDTDMarkup()
         {
-            return IExecute<Java.Lang.String>("parseDTDMarkup");
+            return IExecuteWithSignature<Java.Lang.String>("parseDTDMarkup", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Parser.html#parse(java.io.Reader)"/>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <exception cref="Java.Io.IOException"/>
         public void Parse(Java.Io.Reader arg0)
         {
-            IExecute("parse", arg0);
+            IExecuteWithSignature("parse", "(Ljava/io/Reader;)V", arg0);
         }
 
         #endregion

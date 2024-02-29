@@ -78,7 +78,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.Name Parse(Java.Lang.String arg0)
         {
-            return IExecute<Javax.Naming.Name>("parse", arg0);
+            return IExecuteWithSignature<Javax.Naming.Name>("parse", "(Ljava/lang/String;)Ljavax/naming/Name;", arg0);
         }
 
         #endregion

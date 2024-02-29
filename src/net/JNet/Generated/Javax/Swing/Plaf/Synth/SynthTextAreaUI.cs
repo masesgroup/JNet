@@ -56,7 +56,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <returns><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></returns>
         public Javax.Swing.Plaf.Synth.SynthContext GetContext(Javax.Swing.JComponent arg0)
         {
-            return IExecute<Javax.Swing.Plaf.Synth.SynthContext>("getContext", arg0);
+            return IExecuteWithSignature<Javax.Swing.Plaf.Synth.SynthContext>("getContext", "(Ljavax/swing/JComponent;)Ljavax/swing/plaf/synth/SynthContext;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthTextAreaUI.html#paintBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>

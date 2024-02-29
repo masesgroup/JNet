@@ -286,7 +286,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Sql.JDBCType"/></returns>
         public static Java.Sql.JDBCType ValueOf(int arg0)
         {
-            return SExecute<Java.Sql.JDBCType>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecuteWithSignature<Java.Sql.JDBCType>(LocalBridgeClazz, "valueOf", "(I)Ljava/sql/JDBCType;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#valueOf(java.lang.String)"/>
@@ -295,7 +295,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Sql.JDBCType"/></returns>
         public static Java.Sql.JDBCType ValueOf(Java.Lang.String arg0)
         {
-            return SExecute<Java.Sql.JDBCType>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecuteWithSignature<Java.Sql.JDBCType>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/sql/JDBCType;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#values()"/>
@@ -304,7 +304,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Sql.JDBCType"/></returns>
         public static Java.Sql.JDBCType[] Values()
         {
-            return SExecuteArray<Java.Sql.JDBCType>(LocalBridgeClazz, "values");
+            return SExecuteWithSignatureArray<Java.Sql.JDBCType>(LocalBridgeClazz, "values", "()[Ljava/sql/JDBCType;");
         }
 
         #endregion
@@ -315,21 +315,21 @@ namespace Java.Sql
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#getVendor()"/> 
         /// </summary>
         public Java.Lang.String Vendor
         {
-            get { return IExecute<Java.Lang.String>("getVendor"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getVendor", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#getVendorTypeNumber()"/> 
         /// </summary>
         public Java.Lang.Integer VendorTypeNumber
         {
-            get { return IExecute<Java.Lang.Integer>("getVendorTypeNumber"); }
+            get { return IExecuteWithSignature<Java.Lang.Integer>("getVendorTypeNumber", "()Ljava/lang/Integer;"); }
         }
 
         #endregion

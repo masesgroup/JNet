@@ -50,7 +50,7 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public Javax.Swing.MenuElement[] Path
         {
-            get { return IExecuteArray<Javax.Swing.MenuElement>("getPath"); }
+            get { return IExecuteWithSignatureArray<Javax.Swing.MenuElement>("getPath", "()[Ljavax/swing/MenuElement;"); }
         }
 
         #endregion

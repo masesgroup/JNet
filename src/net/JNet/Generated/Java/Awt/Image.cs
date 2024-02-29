@@ -86,21 +86,21 @@ namespace Java.Awt
         /// </summary>
         public float AccelerationPriority
         {
-            get { return IExecute<float>("getAccelerationPriority"); } set { IExecute("setAccelerationPriority", value); }
+            get { return IExecuteWithSignature<float>("getAccelerationPriority", "()F"); } set { IExecuteWithSignature("setAccelerationPriority", "(F)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getGraphics()"/> 
         /// </summary>
         public Java.Awt.Graphics Graphics
         {
-            get { return IExecute<Java.Awt.Graphics>("getGraphics"); }
+            get { return IExecuteWithSignature<Java.Awt.Graphics>("getGraphics", "()Ljava/awt/Graphics;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getSource()"/> 
         /// </summary>
         public Java.Awt.ImageNs.ImageProducer Source
         {
-            get { return IExecute<Java.Awt.ImageNs.ImageProducer>("getSource"); }
+            get { return IExecuteWithSignature<Java.Awt.ImageNs.ImageProducer>("getSource", "()Ljava/awt/image/ImageProducer;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getHeight(java.awt.image.ImageObserver)"/>
@@ -109,7 +109,7 @@ namespace Java.Awt
         /// <returns><see cref="int"/></returns>
         public int GetHeight(Java.Awt.ImageNs.ImageObserver arg0)
         {
-            return IExecute<int>("getHeight", arg0);
+            return IExecuteWithSignature<int>("getHeight", "(Ljava/awt/image/ImageObserver;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getWidth(java.awt.image.ImageObserver)"/>
@@ -118,7 +118,7 @@ namespace Java.Awt
         /// <returns><see cref="int"/></returns>
         public int GetWidth(Java.Awt.ImageNs.ImageObserver arg0)
         {
-            return IExecute<int>("getWidth", arg0);
+            return IExecuteWithSignature<int>("getWidth", "(Ljava/awt/image/ImageObserver;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getProperty(java.lang.String,java.awt.image.ImageObserver)"/>
@@ -148,14 +148,14 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.ImageCapabilities"/></returns>
         public Java.Awt.ImageCapabilities GetCapabilities(Java.Awt.GraphicsConfiguration arg0)
         {
-            return IExecute<Java.Awt.ImageCapabilities>("getCapabilities", arg0);
+            return IExecuteWithSignature<Java.Awt.ImageCapabilities>("getCapabilities", "(Ljava/awt/GraphicsConfiguration;)Ljava/awt/ImageCapabilities;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#flush()"/>
         /// </summary>
         public void Flush()
         {
-            IExecute("flush");
+            IExecuteWithSignature("flush", "()V");
         }
 
         #endregion

@@ -60,21 +60,21 @@ namespace Java.Security.Cert
         /// </summary>
         public Java.Security.Cert.PolicyNode PolicyTree
         {
-            get { return IExecute<Java.Security.Cert.PolicyNode>("getPolicyTree"); }
+            get { return IExecuteWithSignature<Java.Security.Cert.PolicyNode>("getPolicyTree", "()Ljava/security/cert/PolicyNode;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathValidatorResult.html#getPublicKey()"/> 
         /// </summary>
         public Java.Security.PublicKey PublicKey
         {
-            get { return IExecute<Java.Security.PublicKey>("getPublicKey"); }
+            get { return IExecuteWithSignature<Java.Security.PublicKey>("getPublicKey", "()Ljava/security/PublicKey;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathValidatorResult.html#getTrustAnchor()"/> 
         /// </summary>
         public Java.Security.Cert.TrustAnchor TrustAnchor
         {
-            get { return IExecute<Java.Security.Cert.TrustAnchor>("getTrustAnchor"); }
+            get { return IExecuteWithSignature<Java.Security.Cert.TrustAnchor>("getTrustAnchor", "()Ljava/security/cert/TrustAnchor;"); }
         }
 
         #endregion

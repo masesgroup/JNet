@@ -59,21 +59,21 @@ namespace Javax.Swing.Text
         /// </summary>
         public int Axis
         {
-            get { return IExecute<int>("getAxis"); } set { IExecute("setAxis", value); }
+            get { return IExecuteWithSignature<int>("getAxis", "()I"); } set { IExecuteWithSignature("setAxis", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/BoxView.html#getHeight()"/> 
         /// </summary>
         public int Height
         {
-            get { return IExecute<int>("getHeight"); }
+            get { return IExecuteWithSignature<int>("getHeight", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/BoxView.html#getWidth()"/> 
         /// </summary>
         public int Width
         {
-            get { return IExecute<int>("getWidth"); }
+            get { return IExecuteWithSignature<int>("getWidth", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/BoxView.html#layoutChanged(int)"/>
@@ -81,7 +81,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="int"/></param>
         public void LayoutChanged(int arg0)
         {
-            IExecute("layoutChanged", arg0);
+            IExecuteWithSignature("layoutChanged", "(I)V", arg0);
         }
 
         #endregion

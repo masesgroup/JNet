@@ -56,7 +56,7 @@ namespace Javax.Swing.Plaf.Metal
         /// </summary>
         public Java.Lang.String AcceleratorString
         {
-            get { return IExecute<Java.Lang.String>("getAcceleratorString"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getAcceleratorString", "()Ljava/lang/String;"); }
         }
 
         #endregion

@@ -50,7 +50,7 @@ namespace Java.Beans
         /// </summary>
         public object Value
         {
-            get { return IExecute("getValue"); } set { IExecute("setValue", value); }
+            get { return IExecuteWithSignature("getValue", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setValue", "(Ljava/lang/Object;)V", value); }
         }
 
         #endregion

@@ -79,7 +79,7 @@ namespace Java.Awt
         /// </summary>
         public Java.Awt.Point Location
         {
-            get { return IExecute<Java.Awt.Point>("getLocation"); } set { IExecute("setLocation", value); }
+            get { return IExecuteWithSignature<Java.Awt.Point>("getLocation", "()Ljava/awt/Point;"); } set { IExecuteWithSignature("setLocation", "(Ljava/awt/Point;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Point.html#move(int,int)"/>

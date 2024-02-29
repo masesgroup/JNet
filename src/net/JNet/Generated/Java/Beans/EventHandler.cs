@@ -100,28 +100,28 @@ namespace Java.Beans
         /// </summary>
         public Java.Lang.String Action
         {
-            get { return IExecute<Java.Lang.String>("getAction"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getAction", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventHandler.html#getEventPropertyName()"/> 
         /// </summary>
         public Java.Lang.String EventPropertyName
         {
-            get { return IExecute<Java.Lang.String>("getEventPropertyName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getEventPropertyName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventHandler.html#getListenerMethodName()"/> 
         /// </summary>
         public Java.Lang.String ListenerMethodName
         {
-            get { return IExecute<Java.Lang.String>("getListenerMethodName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getListenerMethodName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventHandler.html#getTarget()"/> 
         /// </summary>
         public object Target
         {
-            get { return IExecute("getTarget"); }
+            get { return IExecuteWithSignature("getTarget", "()Ljava/lang/Object;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventHandler.html#invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[])"/>

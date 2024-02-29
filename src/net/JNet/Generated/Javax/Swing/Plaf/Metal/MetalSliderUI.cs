@@ -50,7 +50,7 @@ namespace Javax.Swing.Plaf.Metal
         /// </summary>
         public int TickLength
         {
-            get { return IExecute<int>("getTickLength"); }
+            get { return IExecuteWithSignature<int>("getTickLength", "()I"); }
         }
 
         #endregion

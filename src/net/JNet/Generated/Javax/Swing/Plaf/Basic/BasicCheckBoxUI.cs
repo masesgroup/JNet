@@ -50,7 +50,7 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public Java.Lang.String PropertyPrefix
         {
-            get { return IExecute<Java.Lang.String>("getPropertyPrefix"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getPropertyPrefix", "()Ljava/lang/String;"); }
         }
 
         #endregion

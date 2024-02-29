@@ -89,7 +89,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.InvalidApplicationException"/>
         public bool Apply(Javax.Management.ObjectName arg0)
         {
-            return IExecute<bool>("apply", arg0);
+            return IExecuteWithSignature<bool>("apply", "(Ljavax/management/ObjectName;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/QueryExp.html#setMBeanServer(javax.management.MBeanServer)"/>
@@ -97,7 +97,7 @@ namespace Javax.Management
         /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>
         public void SetMBeanServer(Javax.Management.MBeanServer arg0)
         {
-            IExecute("setMBeanServer", arg0);
+            IExecuteWithSignature("setMBeanServer", "(Ljavax/management/MBeanServer;)V", arg0);
         }
 
         #endregion

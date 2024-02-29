@@ -94,14 +94,14 @@ namespace Javax.Print
         /// </summary>
         public int Reason
         {
-            get { return IExecute<int>("getReason"); }
+            get { return IExecuteWithSignature<int>("getReason", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/URIException.html#getUnsupportedURI()"/> 
         /// </summary>
         public Java.Net.URI UnsupportedURI
         {
-            get { return IExecute<Java.Net.URI>("getUnsupportedURI"); }
+            get { return IExecuteWithSignature<Java.Net.URI>("getUnsupportedURI", "()Ljava/net/URI;"); }
         }
 
         #endregion

@@ -83,7 +83,7 @@ namespace Javax.Sound.Midi
         /// </summary>
         public byte[] Data
         {
-            get { return IExecuteArray<byte>("getData"); }
+            get { return IExecuteWithSignatureArray<byte>("getData", "()[B"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/SysexMessage.html#setMessage(byte[],int)"/>

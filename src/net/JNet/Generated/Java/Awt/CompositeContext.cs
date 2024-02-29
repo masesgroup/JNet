@@ -89,7 +89,7 @@ namespace Java.Awt
         /// </summary>
         public new void Dispose()
         {
-            IExecute("dispose");
+            IExecuteWithSignature("dispose", "()V");
         }
 
         #endregion

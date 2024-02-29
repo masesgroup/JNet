@@ -78,28 +78,28 @@ namespace Java.Awt
         /// </summary>
         public int Columns
         {
-            get { return IExecute<int>("getColumns"); } set { IExecute("setColumns", value); }
+            get { return IExecuteWithSignature<int>("getColumns", "()I"); } set { IExecuteWithSignature("setColumns", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#getHgap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#setHgap(int)"/>
         /// </summary>
         public int Hgap
         {
-            get { return IExecute<int>("getHgap"); } set { IExecute("setHgap", value); }
+            get { return IExecuteWithSignature<int>("getHgap", "()I"); } set { IExecuteWithSignature("setHgap", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#getRows()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#setRows(int)"/>
         /// </summary>
         public int Rows
         {
-            get { return IExecute<int>("getRows"); } set { IExecute("setRows", value); }
+            get { return IExecuteWithSignature<int>("getRows", "()I"); } set { IExecuteWithSignature("setRows", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#getVgap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#setVgap(int)"/>
         /// </summary>
         public int Vgap
         {
-            get { return IExecute<int>("getVgap"); } set { IExecute("setVgap", value); }
+            get { return IExecuteWithSignature<int>("getVgap", "()I"); } set { IExecuteWithSignature("setVgap", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#minimumLayoutSize(java.awt.Container)"/>
@@ -108,7 +108,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension MinimumLayoutSize(Java.Awt.Container arg0)
         {
-            return IExecute<Java.Awt.Dimension>("minimumLayoutSize", arg0);
+            return IExecuteWithSignature<Java.Awt.Dimension>("minimumLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#preferredLayoutSize(java.awt.Container)"/>
@@ -117,7 +117,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension PreferredLayoutSize(Java.Awt.Container arg0)
         {
-            return IExecute<Java.Awt.Dimension>("preferredLayoutSize", arg0);
+            return IExecuteWithSignature<Java.Awt.Dimension>("preferredLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#addLayoutComponent(java.lang.String,java.awt.Component)"/>
@@ -134,7 +134,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
         public void LayoutContainer(Java.Awt.Container arg0)
         {
-            IExecute("layoutContainer", arg0);
+            IExecuteWithSignature("layoutContainer", "(Ljava/awt/Container;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#removeLayoutComponent(java.awt.Component)"/>
@@ -142,7 +142,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         public void RemoveLayoutComponent(Java.Awt.Component arg0)
         {
-            IExecute("removeLayoutComponent", arg0);
+            IExecuteWithSignature("removeLayoutComponent", "(Ljava/awt/Component;)V", arg0);
         }
 
         #endregion

@@ -66,14 +66,14 @@ namespace Javax.Swing.Colorchooser
         /// </summary>
         public Javax.Swing.Event.ChangeListener[] ChangeListeners
         {
-            get { return IExecuteArray<Javax.Swing.Event.ChangeListener>("getChangeListeners"); }
+            get { return IExecuteWithSignatureArray<Javax.Swing.Event.ChangeListener>("getChangeListeners", "()[Ljavax/swing/event/ChangeListener;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/DefaultColorSelectionModel.html#getSelectedColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/DefaultColorSelectionModel.html#setSelectedColor(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color SelectedColor
         {
-            get { return IExecute<Java.Awt.Color>("getSelectedColor"); } set { IExecute("setSelectedColor", value); }
+            get { return IExecuteWithSignature<Java.Awt.Color>("getSelectedColor", "()Ljava/awt/Color;"); } set { IExecuteWithSignature("setSelectedColor", "(Ljava/awt/Color;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/DefaultColorSelectionModel.html#addChangeListener(javax.swing.event.ChangeListener)"/>
@@ -81,7 +81,7 @@ namespace Javax.Swing.Colorchooser
         /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
         public void AddChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
-            IExecute("addChangeListener", arg0);
+            IExecuteWithSignature("addChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/DefaultColorSelectionModel.html#removeChangeListener(javax.swing.event.ChangeListener)"/>
@@ -89,7 +89,7 @@ namespace Javax.Swing.Colorchooser
         /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
         public void RemoveChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
-            IExecute("removeChangeListener", arg0);
+            IExecuteWithSignature("removeChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
         }
 
         #endregion

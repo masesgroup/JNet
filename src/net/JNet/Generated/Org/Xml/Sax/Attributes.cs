@@ -141,7 +141,7 @@ namespace Org.Xml.Sax
         /// </summary>
         public int Length
         {
-            get { return IExecute<int>("getLength"); }
+            get { return IExecuteWithSignature<int>("getLength", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Attributes.html#getIndex(java.lang.String,java.lang.String)"/>
@@ -160,7 +160,7 @@ namespace Org.Xml.Sax
         /// <returns><see cref="int"/></returns>
         public int GetIndex(Java.Lang.String arg0)
         {
-            return IExecute<int>("getIndex", arg0);
+            return IExecuteWithSignature<int>("getIndex", "(Ljava/lang/String;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Attributes.html#getLocalName(int)"/>
@@ -169,7 +169,7 @@ namespace Org.Xml.Sax
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetLocalName(int arg0)
         {
-            return IExecute<Java.Lang.String>("getLocalName", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getLocalName", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Attributes.html#getQName(int)"/>
@@ -178,7 +178,7 @@ namespace Org.Xml.Sax
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetQName(int arg0)
         {
-            return IExecute<Java.Lang.String>("getQName", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getQName", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Attributes.html#getType(int)"/>
@@ -187,7 +187,7 @@ namespace Org.Xml.Sax
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetType(int arg0)
         {
-            return IExecute<Java.Lang.String>("getType", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getType", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Attributes.html#getType(java.lang.String,java.lang.String)"/>
@@ -206,7 +206,7 @@ namespace Org.Xml.Sax
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetType(Java.Lang.String arg0)
         {
-            return IExecute<Java.Lang.String>("getType", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getType", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Attributes.html#getURI(int)"/>
@@ -215,7 +215,7 @@ namespace Org.Xml.Sax
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetURI(int arg0)
         {
-            return IExecute<Java.Lang.String>("getURI", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getURI", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Attributes.html#getValue(int)"/>
@@ -224,7 +224,7 @@ namespace Org.Xml.Sax
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetValue(int arg0)
         {
-            return IExecute<Java.Lang.String>("getValue", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getValue", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Attributes.html#getValue(java.lang.String,java.lang.String)"/>
@@ -243,7 +243,7 @@ namespace Org.Xml.Sax
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetValue(Java.Lang.String arg0)
         {
-            return IExecute<Java.Lang.String>("getValue", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getValue", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
 
         #endregion

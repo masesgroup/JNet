@@ -64,7 +64,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="int"/></returns>
         public int Length()
         {
-            return IExecute<int>("length");
+            return IExecuteWithSignature<int>("length", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StringContent.html#getString(int,int)"/>
@@ -85,7 +85,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public Javax.Swing.Text.Position CreatePosition(int arg0)
         {
-            return IExecute<Javax.Swing.Text.Position>("createPosition", arg0);
+            return IExecuteWithSignature<Javax.Swing.Text.Position>("createPosition", "(I)Ljavax/swing/text/Position;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StringContent.html#insertString(int,java.lang.String)"/>

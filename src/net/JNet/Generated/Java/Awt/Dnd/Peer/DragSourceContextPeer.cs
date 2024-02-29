@@ -85,7 +85,7 @@ namespace Java.Awt.Dnd.Peer
         /// </summary>
         public Java.Awt.Cursor Cursor
         {
-            get { return IExecute<Java.Awt.Cursor>("getCursor"); } set { IExecute("setCursor", value); }
+            get { return IExecuteWithSignature<Java.Awt.Cursor>("getCursor", "()Ljava/awt/Cursor;"); } set { IExecuteWithSignature("setCursor", "(Ljava/awt/Cursor;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DragSourceContextPeer.html#startDrag(java.awt.dnd.DragSourceContext,java.awt.Cursor,java.awt.Image,java.awt.Point)"/>
@@ -104,7 +104,7 @@ namespace Java.Awt.Dnd.Peer
         /// </summary>
         public void TransferablesFlavorsChanged()
         {
-            IExecute("transferablesFlavorsChanged");
+            IExecuteWithSignature("transferablesFlavorsChanged", "()V");
         }
 
         #endregion

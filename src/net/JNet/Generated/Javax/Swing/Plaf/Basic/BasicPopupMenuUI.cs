@@ -50,7 +50,7 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public void InstallDefaults()
         {
-            IExecute("installDefaults");
+            IExecuteWithSignature("installDefaults", "()V");
         }
 
         #endregion

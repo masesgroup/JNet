@@ -101,7 +101,7 @@ namespace Java.Security
             /// <returns><see cref="Java.Security.KeyRep.Type"/></returns>
             public static Java.Security.KeyRep.Type ValueOf(Java.Lang.String arg0)
             {
-                return SExecute<Java.Security.KeyRep.Type>(LocalBridgeClazz, "valueOf", arg0);
+                return SExecuteWithSignature<Java.Security.KeyRep.Type>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/security/KeyRep$Type;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html#values()"/>
@@ -110,7 +110,7 @@ namespace Java.Security
             /// <returns><see cref="Java.Security.KeyRep.Type"/></returns>
             public static Java.Security.KeyRep.Type[] Values()
             {
-                return SExecuteArray<Java.Security.KeyRep.Type>(LocalBridgeClazz, "values");
+                return SExecuteWithSignatureArray<Java.Security.KeyRep.Type>(LocalBridgeClazz, "values", "()[Ljava/security/KeyRep$Type;");
             }
 
             #endregion

@@ -66,14 +66,14 @@ namespace Java.Awt.Geom
         /// </summary>
         public Java.Awt.Rectangle Bounds
         {
-            get { return IExecute<Java.Awt.Rectangle>("getBounds"); }
+            get { return IExecuteWithSignature<Java.Awt.Rectangle>("getBounds", "()Ljava/awt/Rectangle;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#getBounds2D()"/> 
         /// </summary>
         public Java.Awt.Geom.Rectangle2D Bounds2D
         {
-            get { return IExecute<Java.Awt.Geom.Rectangle2D>("getBounds2D"); }
+            get { return IExecuteWithSignature<Java.Awt.Geom.Rectangle2D>("getBounds2D", "()Ljava/awt/geom/Rectangle2D;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#contains(double,double,double,double)"/>
@@ -104,7 +104,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool Contains(Java.Awt.Geom.Point2D arg0)
         {
-            return IExecute<bool>("contains", arg0);
+            return IExecuteWithSignature<bool>("contains", "(Ljava/awt/geom/Point2D;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#contains(java.awt.geom.Rectangle2D)"/>
@@ -113,7 +113,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool Contains(Java.Awt.Geom.Rectangle2D arg0)
         {
-            return IExecute<bool>("contains", arg0);
+            return IExecuteWithSignature<bool>("contains", "(Ljava/awt/geom/Rectangle2D;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#intersects(double,double,double,double)"/>
@@ -134,7 +134,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool Intersects(Java.Awt.Geom.Rectangle2D arg0)
         {
-            return IExecute<bool>("intersects", arg0);
+            return IExecuteWithSignature<bool>("intersects", "(Ljava/awt/geom/Rectangle2D;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#isEmpty()"/>
@@ -143,7 +143,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
-            return IExecute<bool>("isEmpty");
+            return IExecuteWithSignature<bool>("isEmpty", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#isPolygonal()"/>
@@ -152,7 +152,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool IsPolygonal()
         {
-            return IExecute<bool>("isPolygonal");
+            return IExecuteWithSignature<bool>("isPolygonal", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#isRectangular()"/>
@@ -161,7 +161,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool IsRectangular()
         {
-            return IExecute<bool>("isRectangular");
+            return IExecuteWithSignature<bool>("isRectangular", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#isSingular()"/>
@@ -170,7 +170,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool IsSingular()
         {
-            return IExecute<bool>("isSingular");
+            return IExecuteWithSignature<bool>("isSingular", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#createTransformedArea(java.awt.geom.AffineTransform)"/>
@@ -179,7 +179,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="Java.Awt.Geom.Area"/></returns>
         public Java.Awt.Geom.Area CreateTransformedArea(Java.Awt.Geom.AffineTransform arg0)
         {
-            return IExecute<Java.Awt.Geom.Area>("createTransformedArea", arg0);
+            return IExecuteWithSignature<Java.Awt.Geom.Area>("createTransformedArea", "(Ljava/awt/geom/AffineTransform;)Ljava/awt/geom/Area;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#getPathIterator(java.awt.geom.AffineTransform,double)"/>
@@ -198,7 +198,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="Java.Awt.Geom.PathIterator"/></returns>
         public Java.Awt.Geom.PathIterator GetPathIterator(Java.Awt.Geom.AffineTransform arg0)
         {
-            return IExecute<Java.Awt.Geom.PathIterator>("getPathIterator", arg0);
+            return IExecuteWithSignature<Java.Awt.Geom.PathIterator>("getPathIterator", "(Ljava/awt/geom/AffineTransform;)Ljava/awt/geom/PathIterator;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#add(java.awt.geom.Area)"/>
@@ -206,7 +206,7 @@ namespace Java.Awt.Geom
         /// <param name="arg0"><see cref="Java.Awt.Geom.Area"/></param>
         public void Add(Java.Awt.Geom.Area arg0)
         {
-            IExecute("add", arg0);
+            IExecuteWithSignature("add", "(Ljava/awt/geom/Area;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#exclusiveOr(java.awt.geom.Area)"/>
@@ -214,7 +214,7 @@ namespace Java.Awt.Geom
         /// <param name="arg0"><see cref="Java.Awt.Geom.Area"/></param>
         public void ExclusiveOr(Java.Awt.Geom.Area arg0)
         {
-            IExecute("exclusiveOr", arg0);
+            IExecuteWithSignature("exclusiveOr", "(Ljava/awt/geom/Area;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#intersect(java.awt.geom.Area)"/>
@@ -222,14 +222,14 @@ namespace Java.Awt.Geom
         /// <param name="arg0"><see cref="Java.Awt.Geom.Area"/></param>
         public void Intersect(Java.Awt.Geom.Area arg0)
         {
-            IExecute("intersect", arg0);
+            IExecuteWithSignature("intersect", "(Ljava/awt/geom/Area;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#reset()"/>
         /// </summary>
         public void Reset()
         {
-            IExecute("reset");
+            IExecuteWithSignature("reset", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#subtract(java.awt.geom.Area)"/>
@@ -237,7 +237,7 @@ namespace Java.Awt.Geom
         /// <param name="arg0"><see cref="Java.Awt.Geom.Area"/></param>
         public void Subtract(Java.Awt.Geom.Area arg0)
         {
-            IExecute("subtract", arg0);
+            IExecuteWithSignature("subtract", "(Ljava/awt/geom/Area;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#transform(java.awt.geom.AffineTransform)"/>
@@ -245,7 +245,7 @@ namespace Java.Awt.Geom
         /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
         public void Transform(Java.Awt.Geom.AffineTransform arg0)
         {
-            IExecute("transform", arg0);
+            IExecuteWithSignature("transform", "(Ljava/awt/geom/AffineTransform;)V", arg0);
         }
 
         #endregion

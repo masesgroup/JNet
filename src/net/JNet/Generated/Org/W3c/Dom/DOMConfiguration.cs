@@ -93,7 +93,7 @@ namespace Org.W3c.Dom
         /// </summary>
         public Org.W3c.Dom.DOMStringList ParameterNames
         {
-            get { return IExecute<Org.W3c.Dom.DOMStringList>("getParameterNames"); }
+            get { return IExecuteWithSignature<Org.W3c.Dom.DOMStringList>("getParameterNames", "()Lorg/w3c/dom/DOMStringList;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMConfiguration.html#canSetParameter(java.lang.String,java.lang.Object)"/>
@@ -113,7 +113,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public object GetParameter(Java.Lang.String arg0)
         {
-            return IExecute("getParameter", arg0);
+            return IExecuteWithSignature("getParameter", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMConfiguration.html#setParameter(java.lang.String,java.lang.Object)"/>

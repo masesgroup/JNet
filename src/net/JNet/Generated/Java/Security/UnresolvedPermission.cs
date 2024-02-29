@@ -61,28 +61,28 @@ namespace Java.Security
         /// </summary>
         public Java.Lang.String UnresolvedActions
         {
-            get { return IExecute<Java.Lang.String>("getUnresolvedActions"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getUnresolvedActions", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/UnresolvedPermission.html#getUnresolvedCerts()"/> 
         /// </summary>
         public Java.Security.Cert.Certificate[] UnresolvedCerts
         {
-            get { return IExecuteArray<Java.Security.Cert.Certificate>("getUnresolvedCerts"); }
+            get { return IExecuteWithSignatureArray<Java.Security.Cert.Certificate>("getUnresolvedCerts", "()[Ljava/security/cert/Certificate;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/UnresolvedPermission.html#getUnresolvedName()"/> 
         /// </summary>
         public Java.Lang.String UnresolvedName
         {
-            get { return IExecute<Java.Lang.String>("getUnresolvedName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getUnresolvedName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/UnresolvedPermission.html#getUnresolvedType()"/> 
         /// </summary>
         public Java.Lang.String UnresolvedType
         {
-            get { return IExecute<Java.Lang.String>("getUnresolvedType"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getUnresolvedType", "()Ljava/lang/String;"); }
         }
 
         #endregion

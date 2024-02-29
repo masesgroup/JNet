@@ -76,7 +76,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool DispatchKeyEvent(Java.Awt.EventNs.KeyEvent arg0)
         {
-            return IExecute<bool>("dispatchKeyEvent", arg0);
+            return IExecuteWithSignature<bool>("dispatchKeyEvent", "(Ljava/awt/event/KeyEvent;)Z", arg0);
         }
 
         #endregion

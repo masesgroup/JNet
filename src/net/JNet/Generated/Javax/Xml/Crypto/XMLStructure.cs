@@ -76,7 +76,7 @@ namespace Javax.Xml.Crypto
         /// <returns><see cref="bool"/></returns>
         public bool IsFeatureSupported(Java.Lang.String arg0)
         {
-            return IExecute<bool>("isFeatureSupported", arg0);
+            return IExecuteWithSignature<bool>("isFeatureSupported", "(Ljava/lang/String;)Z", arg0);
         }
 
         #endregion

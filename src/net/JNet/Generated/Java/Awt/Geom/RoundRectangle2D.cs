@@ -50,14 +50,14 @@ namespace Java.Awt.Geom
         /// </summary>
         public double ArcHeight
         {
-            get { return IExecute<double>("getArcHeight"); }
+            get { return IExecuteWithSignature<double>("getArcHeight", "()D"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.html#getArcWidth()"/> 
         /// </summary>
         public double ArcWidth
         {
-            get { return IExecute<double>("getArcWidth"); }
+            get { return IExecuteWithSignature<double>("getArcWidth", "()D"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.html#setRoundRect(double,double,double,double,double,double)"/>
@@ -78,7 +78,7 @@ namespace Java.Awt.Geom
         /// <param name="arg0"><see cref="Java.Awt.Geom.RoundRectangle2D"/></param>
         public void SetRoundRect(Java.Awt.Geom.RoundRectangle2D arg0)
         {
-            IExecute("setRoundRect", arg0);
+            IExecuteWithSignature("setRoundRect", "(Ljava/awt/geom/RoundRectangle2D;)V", arg0);
         }
 
         #endregion

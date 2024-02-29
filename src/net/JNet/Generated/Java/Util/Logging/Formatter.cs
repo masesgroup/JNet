@@ -52,7 +52,7 @@ namespace Java.Util.Logging
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Format(Java.Util.Logging.LogRecord arg0)
         {
-            return IExecute<Java.Lang.String>("format", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("format", "(Ljava/util/logging/LogRecord;)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Formatter.html#formatMessage(java.util.logging.LogRecord)"/>
@@ -61,7 +61,7 @@ namespace Java.Util.Logging
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String FormatMessage(Java.Util.Logging.LogRecord arg0)
         {
-            return IExecute<Java.Lang.String>("formatMessage", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("formatMessage", "(Ljava/util/logging/LogRecord;)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Formatter.html#getHead(java.util.logging.Handler)"/>
@@ -70,7 +70,7 @@ namespace Java.Util.Logging
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetHead(Java.Util.Logging.Handler arg0)
         {
-            return IExecute<Java.Lang.String>("getHead", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getHead", "(Ljava/util/logging/Handler;)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Formatter.html#getTail(java.util.logging.Handler)"/>
@@ -79,7 +79,7 @@ namespace Java.Util.Logging
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetTail(Java.Util.Logging.Handler arg0)
         {
-            return IExecute<Java.Lang.String>("getTail", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getTail", "(Ljava/util/logging/Handler;)Ljava/lang/String;", arg0);
         }
 
         #endregion

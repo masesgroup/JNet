@@ -78,7 +78,7 @@ namespace Javax.Naming.Spi
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.Spi.InitialContextFactory CreateInitialContextFactory(Java.Util.Hashtable<object, object> arg0)
         {
-            return IExecute<Javax.Naming.Spi.InitialContextFactory>("createInitialContextFactory", arg0);
+            return IExecuteWithSignature<Javax.Naming.Spi.InitialContextFactory>("createInitialContextFactory", "(Ljava/util/Hashtable;)Ljavax/naming/spi/InitialContextFactory;", arg0);
         }
 
         #endregion

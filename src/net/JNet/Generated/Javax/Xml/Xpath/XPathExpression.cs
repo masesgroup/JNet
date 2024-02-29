@@ -155,7 +155,7 @@ namespace Javax.Xml.Xpath
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public Java.Lang.String Evaluate(object arg0)
         {
-            return IExecute<Java.Lang.String>("evaluate", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("evaluate", "(Ljava/lang/Object;)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathExpression.html#evaluate(org.xml.sax.InputSource)"/>
@@ -165,7 +165,7 @@ namespace Javax.Xml.Xpath
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public Java.Lang.String Evaluate(Org.Xml.Sax.InputSource arg0)
         {
-            return IExecute<Java.Lang.String>("evaluate", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("evaluate", "(Lorg/xml/sax/InputSource;)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathExpression.html#evaluateExpression(java.lang.Object,java.lang.Class)"/>
@@ -199,7 +199,7 @@ namespace Javax.Xml.Xpath
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public Javax.Xml.Xpath.XPathEvaluationResult<object> EvaluateExpression(object arg0)
         {
-            return IExecute<Javax.Xml.Xpath.XPathEvaluationResult<object>>("evaluateExpression", arg0);
+            return IExecuteWithSignature<Javax.Xml.Xpath.XPathEvaluationResult<object>>("evaluateExpression", "(Ljava/lang/Object;)Ljavax/xml/xpath/XPathEvaluationResult;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathExpression.html#evaluateExpression(org.xml.sax.InputSource)"/>
@@ -209,7 +209,7 @@ namespace Javax.Xml.Xpath
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public Javax.Xml.Xpath.XPathEvaluationResult<object> EvaluateExpression(Org.Xml.Sax.InputSource arg0)
         {
-            return IExecute<Javax.Xml.Xpath.XPathEvaluationResult<object>>("evaluateExpression", arg0);
+            return IExecuteWithSignature<Javax.Xml.Xpath.XPathEvaluationResult<object>>("evaluateExpression", "(Lorg/xml/sax/InputSource;)Ljavax/xml/xpath/XPathEvaluationResult;", arg0);
         }
 
         #endregion

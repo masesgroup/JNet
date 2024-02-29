@@ -66,7 +66,7 @@ namespace Javax.Naming
         /// </summary>
         public Java.Lang.String LinkName
         {
-            get { return IExecute<Java.Lang.String>("getLinkName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getLinkName", "()Ljava/lang/String;"); }
         }
 
         #endregion

@@ -76,7 +76,7 @@ namespace Javax.Annotation.Processing
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] Value()
         {
-            return IExecuteArray<Java.Lang.String>("value");
+            return IExecuteWithSignatureArray<Java.Lang.String>("value", "()[Ljava/lang/String;");
         }
 
         #endregion

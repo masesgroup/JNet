@@ -166,49 +166,49 @@ namespace Javax.Sound.Midi
         /// </summary>
         public int ChannelPressure
         {
-            get { return IExecute<int>("getChannelPressure"); } set { IExecute("setChannelPressure", value); }
+            get { return IExecuteWithSignature<int>("getChannelPressure", "()I"); } set { IExecuteWithSignature("setChannelPressure", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#getMono()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#setMono(boolean)"/>
         /// </summary>
         public bool Mono
         {
-            get { return IExecute<bool>("getMono"); } set { IExecute("setMono", value); }
+            get { return IExecuteWithSignature<bool>("getMono", "()Z"); } set { IExecuteWithSignature("setMono", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#getMute()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#setMute(boolean)"/>
         /// </summary>
         public bool Mute
         {
-            get { return IExecute<bool>("getMute"); } set { IExecute("setMute", value); }
+            get { return IExecuteWithSignature<bool>("getMute", "()Z"); } set { IExecuteWithSignature("setMute", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#getOmni()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#setOmni(boolean)"/>
         /// </summary>
         public bool Omni
         {
-            get { return IExecute<bool>("getOmni"); } set { IExecute("setOmni", value); }
+            get { return IExecuteWithSignature<bool>("getOmni", "()Z"); } set { IExecuteWithSignature("setOmni", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#getPitchBend()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#setPitchBend(int)"/>
         /// </summary>
         public int PitchBend
         {
-            get { return IExecute<int>("getPitchBend"); } set { IExecute("setPitchBend", value); }
+            get { return IExecuteWithSignature<int>("getPitchBend", "()I"); } set { IExecuteWithSignature("setPitchBend", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#getProgram()"/> 
         /// </summary>
         public int Program
         {
-            get { return IExecute<int>("getProgram"); }
+            get { return IExecuteWithSignature<int>("getProgram", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#getSolo()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#setSolo(boolean)"/>
         /// </summary>
         public bool Solo
         {
-            get { return IExecute<bool>("getSolo"); } set { IExecute("setSolo", value); }
+            get { return IExecuteWithSignature<bool>("getSolo", "()Z"); } set { IExecuteWithSignature("setSolo", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#localControl(boolean)"/>
@@ -217,7 +217,7 @@ namespace Javax.Sound.Midi
         /// <returns><see cref="bool"/></returns>
         public bool LocalControl(bool arg0)
         {
-            return IExecute<bool>("localControl", arg0);
+            return IExecuteWithSignature<bool>("localControl", "(Z)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#getController(int)"/>
@@ -226,7 +226,7 @@ namespace Javax.Sound.Midi
         /// <returns><see cref="int"/></returns>
         public int GetController(int arg0)
         {
-            return IExecute<int>("getController", arg0);
+            return IExecuteWithSignature<int>("getController", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#getPolyPressure(int)"/>
@@ -235,21 +235,21 @@ namespace Javax.Sound.Midi
         /// <returns><see cref="int"/></returns>
         public int GetPolyPressure(int arg0)
         {
-            return IExecute<int>("getPolyPressure", arg0);
+            return IExecuteWithSignature<int>("getPolyPressure", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#allNotesOff()"/>
         /// </summary>
         public void AllNotesOff()
         {
-            IExecute("allNotesOff");
+            IExecuteWithSignature("allNotesOff", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#allSoundOff()"/>
         /// </summary>
         public void AllSoundOff()
         {
-            IExecute("allSoundOff");
+            IExecuteWithSignature("allSoundOff", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#controlChange(int,int)"/>
@@ -275,7 +275,7 @@ namespace Javax.Sound.Midi
         /// <param name="arg0"><see cref="int"/></param>
         public void NoteOff(int arg0)
         {
-            IExecute("noteOff", arg0);
+            IExecuteWithSignature("noteOff", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#noteOn(int,int)"/>
@@ -301,14 +301,14 @@ namespace Javax.Sound.Midi
         /// <param name="arg0"><see cref="int"/></param>
         public void ProgramChange(int arg0)
         {
-            IExecute("programChange", arg0);
+            IExecuteWithSignature("programChange", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#resetAllControllers()"/>
         /// </summary>
         public void ResetAllControllers()
         {
-            IExecute("resetAllControllers");
+            IExecuteWithSignature("resetAllControllers", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#setPolyPressure(int,int)"/>

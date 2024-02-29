@@ -50,21 +50,21 @@ namespace Java.Net
         /// </summary>
         public Java.Net.InetAddress Address
         {
-            get { return IExecute<Java.Net.InetAddress>("getAddress"); }
+            get { return IExecuteWithSignature<Java.Net.InetAddress>("getAddress", "()Ljava/net/InetAddress;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InterfaceAddress.html#getBroadcast()"/> 
         /// </summary>
         public Java.Net.InetAddress Broadcast
         {
-            get { return IExecute<Java.Net.InetAddress>("getBroadcast"); }
+            get { return IExecuteWithSignature<Java.Net.InetAddress>("getBroadcast", "()Ljava/net/InetAddress;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InterfaceAddress.html#getNetworkPrefixLength()"/> 
         /// </summary>
         public short NetworkPrefixLength
         {
-            get { return IExecute<short>("getNetworkPrefixLength"); }
+            get { return IExecuteWithSignature<short>("getNetworkPrefixLength", "()S"); }
         }
 
         #endregion

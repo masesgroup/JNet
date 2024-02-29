@@ -69,21 +69,21 @@ namespace Java.Security.Spec
         /// </summary>
         public int PrimePLength
         {
-            get { return IExecute<int>("getPrimePLength"); }
+            get { return IExecuteWithSignature<int>("getPrimePLength", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAGenParameterSpec.html#getSeedLength()"/> 
         /// </summary>
         public int SeedLength
         {
-            get { return IExecute<int>("getSeedLength"); }
+            get { return IExecuteWithSignature<int>("getSeedLength", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAGenParameterSpec.html#getSubprimeQLength()"/> 
         /// </summary>
         public int SubprimeQLength
         {
-            get { return IExecute<int>("getSubprimeQLength"); }
+            get { return IExecuteWithSignature<int>("getSubprimeQLength", "()I"); }
         }
 
         #endregion

@@ -80,7 +80,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.JapaneseEra"/></returns>
         public static Java.Time.Chrono.JapaneseEra Of(int arg0)
         {
-            return SExecute<Java.Time.Chrono.JapaneseEra>(LocalBridgeClazz, "of", arg0);
+            return SExecuteWithSignature<Java.Time.Chrono.JapaneseEra>(LocalBridgeClazz, "of", "(I)Ljava/time/chrono/JapaneseEra;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#valueOf(java.lang.String)"/>
@@ -89,7 +89,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.JapaneseEra"/></returns>
         public static Java.Time.Chrono.JapaneseEra ValueOf(Java.Lang.String arg0)
         {
-            return SExecute<Java.Time.Chrono.JapaneseEra>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecuteWithSignature<Java.Time.Chrono.JapaneseEra>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/time/chrono/JapaneseEra;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#values()"/>
@@ -98,7 +98,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.JapaneseEra"/></returns>
         public static Java.Time.Chrono.JapaneseEra[] Values()
         {
-            return SExecuteArray<Java.Time.Chrono.JapaneseEra>(LocalBridgeClazz, "values");
+            return SExecuteWithSignatureArray<Java.Time.Chrono.JapaneseEra>(LocalBridgeClazz, "values", "()[Ljava/time/chrono/JapaneseEra;");
         }
 
         #endregion
@@ -109,7 +109,7 @@ namespace Java.Time.Chrono
         /// </summary>
         public int Value
         {
-            get { return IExecute<int>("getValue"); }
+            get { return IExecuteWithSignature<int>("getValue", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#getDisplayName(java.time.format.TextStyle,java.util.Locale)"/>
@@ -128,7 +128,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public Java.Time.Temporal.ValueRange Range(Java.Time.Temporal.TemporalField arg0)
         {
-            return IExecute<Java.Time.Temporal.ValueRange>("range", arg0);
+            return IExecuteWithSignature<Java.Time.Temporal.ValueRange>("range", "(Ljava/time/temporal/TemporalField;)Ljava/time/temporal/ValueRange;", arg0);
         }
 
         #endregion

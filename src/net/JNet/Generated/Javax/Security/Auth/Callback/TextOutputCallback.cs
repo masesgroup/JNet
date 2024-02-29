@@ -85,14 +85,14 @@ namespace Javax.Security.Auth.Callback
         /// </summary>
         public Java.Lang.String Message
         {
-            get { return IExecute<Java.Lang.String>("getMessage"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getMessage", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/TextOutputCallback.html#getMessageType()"/> 
         /// </summary>
         public int MessageType
         {
-            get { return IExecute<int>("getMessageType"); }
+            get { return IExecuteWithSignature<int>("getMessageType", "()I"); }
         }
 
         #endregion

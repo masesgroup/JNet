@@ -76,119 +76,119 @@ namespace Javax.Sql.Rowset
         /// </summary>
         public Java.Lang.String Command
         {
-            get { return IExecute<Java.Lang.String>("getCommand"); } set { IExecute("setCommand", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getCommand", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setCommand", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#getConcurrency()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setConcurrency(int)"/>
         /// </summary>
         public int Concurrency
         {
-            get { return IExecute<int>("getConcurrency"); } set { IExecute("setConcurrency", value); }
+            get { return IExecuteWithSignature<int>("getConcurrency", "()I"); } set { IExecuteWithSignature("setConcurrency", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#getDataSourceName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setDataSourceName(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String DataSourceName
         {
-            get { return IExecute<Java.Lang.String>("getDataSourceName"); } set { IExecute("setDataSourceName", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getDataSourceName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setDataSourceName", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#getEscapeProcessing()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setEscapeProcessing(boolean)"/>
         /// </summary>
         public bool EscapeProcessing
         {
-            get { return IExecute<bool>("getEscapeProcessing"); } set { IExecute("setEscapeProcessing", value); }
+            get { return IExecuteWithSignature<bool>("getEscapeProcessing", "()Z"); } set { IExecuteWithSignature("setEscapeProcessing", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#getFetchDirection()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setFetchDirection(int)"/>
         /// </summary>
         public int FetchDirection
         {
-            get { return IExecute<int>("getFetchDirection"); } set { IExecute("setFetchDirection", value); }
+            get { return IExecuteWithSignature<int>("getFetchDirection", "()I"); } set { IExecuteWithSignature("setFetchDirection", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#getFetchSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setFetchSize(int)"/>
         /// </summary>
         public int FetchSize
         {
-            get { return IExecute<int>("getFetchSize"); } set { IExecute("setFetchSize", value); }
+            get { return IExecuteWithSignature<int>("getFetchSize", "()I"); } set { IExecuteWithSignature("setFetchSize", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#getMaxFieldSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setMaxFieldSize(int)"/>
         /// </summary>
         public int MaxFieldSize
         {
-            get { return IExecute<int>("getMaxFieldSize"); } set { IExecute("setMaxFieldSize", value); }
+            get { return IExecuteWithSignature<int>("getMaxFieldSize", "()I"); } set { IExecuteWithSignature("setMaxFieldSize", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#getMaxRows()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setMaxRows(int)"/>
         /// </summary>
         public int MaxRows
         {
-            get { return IExecute<int>("getMaxRows"); } set { IExecute("setMaxRows", value); }
+            get { return IExecuteWithSignature<int>("getMaxRows", "()I"); } set { IExecuteWithSignature("setMaxRows", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#getParams()"/> 
         /// </summary>
         public object[] Params
         {
-            get { return IExecuteArray<object>("getParams"); }
+            get { return IExecuteWithSignatureArray<object>("getParams", "()[Ljava/lang/Object;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#getPassword()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setPassword(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Password
         {
-            get { return IExecute<Java.Lang.String>("getPassword"); } set { IExecute("setPassword", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getPassword", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setPassword", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#getQueryTimeout()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setQueryTimeout(int)"/>
         /// </summary>
         public int QueryTimeout
         {
-            get { return IExecute<int>("getQueryTimeout"); } set { IExecute("setQueryTimeout", value); }
+            get { return IExecuteWithSignature<int>("getQueryTimeout", "()I"); } set { IExecuteWithSignature("setQueryTimeout", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#getShowDeleted()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setShowDeleted(boolean)"/>
         /// </summary>
         public bool ShowDeleted
         {
-            get { return IExecute<bool>("getShowDeleted"); } set { IExecute("setShowDeleted", value); }
+            get { return IExecuteWithSignature<bool>("getShowDeleted", "()Z"); } set { IExecuteWithSignature("setShowDeleted", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#getTransactionIsolation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setTransactionIsolation(int)"/>
         /// </summary>
         public int TransactionIsolation
         {
-            get { return IExecute<int>("getTransactionIsolation"); } set { IExecute("setTransactionIsolation", value); }
+            get { return IExecuteWithSignature<int>("getTransactionIsolation", "()I"); } set { IExecuteWithSignature("setTransactionIsolation", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#getType()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setType(int)"/>
         /// </summary>
         public int Type
         {
-            get { return IExecute<int>("getType"); } set { IExecute("setType", value); }
+            get { return IExecuteWithSignature<int>("getType", "()I"); } set { IExecuteWithSignature("setType", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#getTypeMap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setTypeMap(java.util.Map)"/>
         /// </summary>
         public Java.Util.Map<Java.Lang.String, Java.Lang.Class> TypeMap
         {
-            get { return IExecute<Java.Util.Map<Java.Lang.String, Java.Lang.Class>>("getTypeMap"); } set { IExecute("setTypeMap", value); }
+            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.Class>>("getTypeMap", "()Ljava/util/Map;"); } set { IExecuteWithSignature("setTypeMap", "(Ljava/util/Map;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#getUrl()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setUrl(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Url
         {
-            get { return IExecute<Java.Lang.String>("getUrl"); } set { IExecute("setUrl", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getUrl", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setUrl", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#getUsername()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setUsername(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Username
         {
-            get { return IExecute<Java.Lang.String>("getUsername"); } set { IExecute("setUsername", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getUsername", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setUsername", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#isReadOnly()"/>
@@ -197,7 +197,7 @@ namespace Javax.Sql.Rowset
         /// <returns><see cref="bool"/></returns>
         public bool IsReadOnly()
         {
-            return IExecute<bool>("isReadOnly");
+            return IExecuteWithSignature<bool>("isReadOnly", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#addRowSetListener(javax.sql.RowSetListener)"/>
@@ -205,7 +205,7 @@ namespace Javax.Sql.Rowset
         /// <param name="arg0"><see cref="Javax.Sql.RowSetListener"/></param>
         public void AddRowSetListener(Javax.Sql.RowSetListener arg0)
         {
-            IExecute("addRowSetListener", arg0);
+            IExecuteWithSignature("addRowSetListener", "(Ljavax/sql/RowSetListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#clearParameters()"/>
@@ -214,7 +214,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void ClearParameters()
         {
-            IExecute("clearParameters");
+            IExecuteWithSignature("clearParameters", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#removeRowSetListener(javax.sql.RowSetListener)"/>
@@ -222,7 +222,7 @@ namespace Javax.Sql.Rowset
         /// <param name="arg0"><see cref="Javax.Sql.RowSetListener"/></param>
         public void RemoveRowSetListener(Javax.Sql.RowSetListener arg0)
         {
-            IExecute("removeRowSetListener", arg0);
+            IExecuteWithSignature("removeRowSetListener", "(Ljavax/sql/RowSetListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setArray(int,java.sql.Array)"/>
@@ -924,7 +924,7 @@ namespace Javax.Sql.Rowset
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetReadOnly(bool arg0)
         {
-            IExecute("setReadOnly", arg0);
+            IExecuteWithSignature("setReadOnly", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setRef(int,java.sql.Ref)"/>

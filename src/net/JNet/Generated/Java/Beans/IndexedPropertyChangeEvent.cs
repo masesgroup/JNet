@@ -62,7 +62,7 @@ namespace Java.Beans
         /// </summary>
         public int Index
         {
-            get { return IExecute<int>("getIndex"); }
+            get { return IExecuteWithSignature<int>("getIndex", "()I"); }
         }
 
         #endregion

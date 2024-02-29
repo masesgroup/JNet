@@ -94,7 +94,7 @@ namespace Javax.Management.Loading
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public Java.Lang.Class LoadClass(Java.Lang.String arg0)
         {
-            return IExecute<Java.Lang.Class>("loadClass", arg0);
+            return IExecuteWithSignature<Java.Lang.Class>("loadClass", "(Ljava/lang/String;)Ljava/lang/Class;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/ClassLoaderRepository.html#loadClassBefore(java.lang.ClassLoader,java.lang.String)"/>

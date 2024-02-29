@@ -76,7 +76,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="long"/></returns>
         public long GetDelay(Java.Util.Concurrent.TimeUnit arg0)
         {
-            return IExecute<long>("getDelay", arg0);
+            return IExecuteWithSignature<long>("getDelay", "(Ljava/util/concurrent/TimeUnit;)J", arg0);
         }
 
         #endregion

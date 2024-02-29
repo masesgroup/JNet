@@ -70,7 +70,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.StandardCopyOption"/></returns>
         public static Java.Nio.File.StandardCopyOption ValueOf(Java.Lang.String arg0)
         {
-            return SExecute<Java.Nio.File.StandardCopyOption>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecuteWithSignature<Java.Nio.File.StandardCopyOption>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/nio/file/StandardCopyOption;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardCopyOption.html#values()"/>
@@ -79,7 +79,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.StandardCopyOption"/></returns>
         public static Java.Nio.File.StandardCopyOption[] Values()
         {
-            return SExecuteArray<Java.Nio.File.StandardCopyOption>(LocalBridgeClazz, "values");
+            return SExecuteWithSignatureArray<Java.Nio.File.StandardCopyOption>(LocalBridgeClazz, "values", "()[Ljava/nio/file/StandardCopyOption;");
         }
 
         #endregion

@@ -72,7 +72,7 @@ namespace Java.Sql
         /// </summary>
         public void Deregister()
         {
-            IExecute("deregister");
+            IExecuteWithSignature("deregister", "()V");
         }
 
         #endregion

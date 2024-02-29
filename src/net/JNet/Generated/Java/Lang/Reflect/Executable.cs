@@ -58,105 +58,105 @@ namespace Java.Lang.Reflect
         /// </summary>
         public Java.Lang.Reflect.AnnotatedType[] AnnotatedExceptionTypes
         {
-            get { return IExecuteArray<Java.Lang.Reflect.AnnotatedType>("getAnnotatedExceptionTypes"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.AnnotatedType>("getAnnotatedExceptionTypes", "()[Ljava/lang/reflect/AnnotatedType;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#getAnnotatedParameterTypes()"/> 
         /// </summary>
         public Java.Lang.Reflect.AnnotatedType[] AnnotatedParameterTypes
         {
-            get { return IExecuteArray<Java.Lang.Reflect.AnnotatedType>("getAnnotatedParameterTypes"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.AnnotatedType>("getAnnotatedParameterTypes", "()[Ljava/lang/reflect/AnnotatedType;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#getAnnotatedReceiverType()"/> 
         /// </summary>
         public Java.Lang.Reflect.AnnotatedType AnnotatedReceiverType
         {
-            get { return IExecute<Java.Lang.Reflect.AnnotatedType>("getAnnotatedReceiverType"); }
+            get { return IExecuteWithSignature<Java.Lang.Reflect.AnnotatedType>("getAnnotatedReceiverType", "()Ljava/lang/reflect/AnnotatedType;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#getAnnotatedReturnType()"/> 
         /// </summary>
         public Java.Lang.Reflect.AnnotatedType AnnotatedReturnType
         {
-            get { return IExecute<Java.Lang.Reflect.AnnotatedType>("getAnnotatedReturnType"); }
+            get { return IExecuteWithSignature<Java.Lang.Reflect.AnnotatedType>("getAnnotatedReturnType", "()Ljava/lang/reflect/AnnotatedType;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#getDeclaringClass()"/> 
         /// </summary>
         public Java.Lang.Class DeclaringClass
         {
-            get { return IExecute<Java.Lang.Class>("getDeclaringClass"); }
+            get { return IExecuteWithSignature<Java.Lang.Class>("getDeclaringClass", "()Ljava/lang/Class;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#getExceptionTypes()"/> 
         /// </summary>
         public Java.Lang.Class[] ExceptionTypes
         {
-            get { return IExecuteArray<Java.Lang.Class>("getExceptionTypes"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.Class>("getExceptionTypes", "()[Ljava/lang/Class;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#getGenericExceptionTypes()"/> 
         /// </summary>
         public Java.Lang.Reflect.Type[] GenericExceptionTypes
         {
-            get { return IExecuteArray<Java.Lang.Reflect.Type>("getGenericExceptionTypes"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Type>("getGenericExceptionTypes", "()[Ljava/lang/reflect/Type;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#getGenericParameterTypes()"/> 
         /// </summary>
         public Java.Lang.Reflect.Type[] GenericParameterTypes
         {
-            get { return IExecuteArray<Java.Lang.Reflect.Type>("getGenericParameterTypes"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Type>("getGenericParameterTypes", "()[Ljava/lang/reflect/Type;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#getModifiers()"/> 
         /// </summary>
         public int Modifiers
         {
-            get { return IExecute<int>("getModifiers"); }
+            get { return IExecuteWithSignature<int>("getModifiers", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#getParameterAnnotations()"/> 
         /// </summary>
         public Java.Lang.Annotation.Annotation[] ParameterAnnotations
         {
-            get { return IExecuteArray<Java.Lang.Annotation.Annotation>("getParameterAnnotations"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getParameterAnnotations", "()[[Ljava/lang/annotation/Annotation;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#getParameterCount()"/> 
         /// </summary>
         public int ParameterCount
         {
-            get { return IExecute<int>("getParameterCount"); }
+            get { return IExecuteWithSignature<int>("getParameterCount", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#getParameters()"/> 
         /// </summary>
         public Java.Lang.Reflect.Parameter[] Parameters
         {
-            get { return IExecuteArray<Java.Lang.Reflect.Parameter>("getParameters"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Parameter>("getParameters", "()[Ljava/lang/reflect/Parameter;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#getParameterTypes()"/> 
         /// </summary>
         public Java.Lang.Class[] ParameterTypes
         {
-            get { return IExecuteArray<Java.Lang.Class>("getParameterTypes"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.Class>("getParameterTypes", "()[Ljava/lang/Class;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#getTypeParameters()"/> 
         /// </summary>
         public Java.Lang.Reflect.TypeVariable[] TypeParameters
         {
-            get { return IExecuteArray<Java.Lang.Reflect.TypeVariable>("getTypeParameters"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.TypeVariable>("getTypeParameters", "()[Ljava/lang/reflect/TypeVariable;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#toGenericString()"/>
@@ -165,7 +165,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToGenericString()
         {
-            return IExecute<Java.Lang.String>("toGenericString");
+            return IExecuteWithSignature<Java.Lang.String>("toGenericString", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#isSynthetic()"/>
@@ -174,7 +174,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public bool IsSynthetic()
         {
-            return IExecute<bool>("isSynthetic");
+            return IExecuteWithSignature<bool>("isSynthetic", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#isVarArgs()"/>
@@ -183,7 +183,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public bool IsVarArgs()
         {
-            return IExecute<bool>("isVarArgs");
+            return IExecuteWithSignature<bool>("isVarArgs", "()Z");
         }
 
         #endregion

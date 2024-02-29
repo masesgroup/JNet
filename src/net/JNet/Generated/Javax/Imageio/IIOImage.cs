@@ -70,35 +70,35 @@ namespace Javax.Imageio
         /// </summary>
         public Javax.Imageio.Metadata.IIOMetadata Metadata
         {
-            get { return IExecute<Javax.Imageio.Metadata.IIOMetadata>("getMetadata"); } set { IExecute("setMetadata", value); }
+            get { return IExecuteWithSignature<Javax.Imageio.Metadata.IIOMetadata>("getMetadata", "()Ljavax/imageio/metadata/IIOMetadata;"); } set { IExecuteWithSignature("setMetadata", "(Ljavax/imageio/metadata/IIOMetadata;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOImage.html#getNumThumbnails()"/> 
         /// </summary>
         public int NumThumbnails
         {
-            get { return IExecute<int>("getNumThumbnails"); }
+            get { return IExecuteWithSignature<int>("getNumThumbnails", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOImage.html#getRaster()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOImage.html#setRaster(java.awt.image.Raster)"/>
         /// </summary>
         public Java.Awt.ImageNs.Raster Raster
         {
-            get { return IExecute<Java.Awt.ImageNs.Raster>("getRaster"); } set { IExecute("setRaster", value); }
+            get { return IExecuteWithSignature<Java.Awt.ImageNs.Raster>("getRaster", "()Ljava/awt/image/Raster;"); } set { IExecuteWithSignature("setRaster", "(Ljava/awt/image/Raster;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOImage.html#getRenderedImage()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOImage.html#setRenderedImage(java.awt.image.RenderedImage)"/>
         /// </summary>
         public Java.Awt.ImageNs.RenderedImage RenderedImage
         {
-            get { return IExecute<Java.Awt.ImageNs.RenderedImage>("getRenderedImage"); } set { IExecute("setRenderedImage", value); }
+            get { return IExecuteWithSignature<Java.Awt.ImageNs.RenderedImage>("getRenderedImage", "()Ljava/awt/image/RenderedImage;"); } set { IExecuteWithSignature("setRenderedImage", "(Ljava/awt/image/RenderedImage;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOImage.html#getThumbnails()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOImage.html#setThumbnails(java.util.List)"/>
         /// </summary>
         public Java.Util.List Thumbnails
         {
-            get { return IExecute<Java.Util.List>("getThumbnails"); } set { IExecute("setThumbnails", value); }
+            get { return IExecuteWithSignature<Java.Util.List>("getThumbnails", "()Ljava/util/List;"); } set { IExecuteWithSignature("setThumbnails", "(Ljava/util/List;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOImage.html#hasRaster()"/>
@@ -107,7 +107,7 @@ namespace Javax.Imageio
         /// <returns><see cref="bool"/></returns>
         public bool HasRaster()
         {
-            return IExecute<bool>("hasRaster");
+            return IExecuteWithSignature<bool>("hasRaster", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOImage.html#getThumbnail(int)"/>
@@ -116,7 +116,7 @@ namespace Javax.Imageio
         /// <returns><see cref="Java.Awt.ImageNs.BufferedImage"/></returns>
         public Java.Awt.ImageNs.BufferedImage GetThumbnail(int arg0)
         {
-            return IExecute<Java.Awt.ImageNs.BufferedImage>("getThumbnail", arg0);
+            return IExecuteWithSignature<Java.Awt.ImageNs.BufferedImage>("getThumbnail", "(I)Ljava/awt/image/BufferedImage;", arg0);
         }
 
         #endregion

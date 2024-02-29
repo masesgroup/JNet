@@ -86,28 +86,28 @@ namespace Javax.Naming.Directory
         /// </summary>
         public Javax.Naming.NamingEnumeration<object> All
         {
-            get { return IExecute<Javax.Naming.NamingEnumeration<object>>("getAll"); }
+            get { return IExecuteWithSignature<Javax.Naming.NamingEnumeration<object>>("getAll", "()Ljavax/naming/NamingEnumeration;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#getAttributeDefinition()"/> 
         /// </summary>
         public Javax.Naming.Directory.DirContext AttributeDefinition
         {
-            get { return IExecute<Javax.Naming.Directory.DirContext>("getAttributeDefinition"); }
+            get { return IExecuteWithSignature<Javax.Naming.Directory.DirContext>("getAttributeDefinition", "()Ljavax/naming/directory/DirContext;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#getAttributeSyntaxDefinition()"/> 
         /// </summary>
         public Javax.Naming.Directory.DirContext AttributeSyntaxDefinition
         {
-            get { return IExecute<Javax.Naming.Directory.DirContext>("getAttributeSyntaxDefinition"); }
+            get { return IExecuteWithSignature<Javax.Naming.Directory.DirContext>("getAttributeSyntaxDefinition", "()Ljavax/naming/directory/DirContext;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#getID()"/> 
         /// </summary>
         public Java.Lang.String ID
         {
-            get { return IExecute<Java.Lang.String>("getID"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getID", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#add(java.lang.Object)"/>
@@ -116,7 +116,7 @@ namespace Javax.Naming.Directory
         /// <returns><see cref="bool"/></returns>
         public bool Add(object arg0)
         {
-            return IExecute<bool>("add", arg0);
+            return IExecuteWithSignature<bool>("add", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#contains(java.lang.Object)"/>
@@ -125,7 +125,7 @@ namespace Javax.Naming.Directory
         /// <returns><see cref="bool"/></returns>
         public bool Contains(object arg0)
         {
-            return IExecute<bool>("contains", arg0);
+            return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#isOrdered()"/>
@@ -134,7 +134,7 @@ namespace Javax.Naming.Directory
         /// <returns><see cref="bool"/></returns>
         public bool IsOrdered()
         {
-            return IExecute<bool>("isOrdered");
+            return IExecuteWithSignature<bool>("isOrdered", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#remove(java.lang.Object)"/>
@@ -143,7 +143,7 @@ namespace Javax.Naming.Directory
         /// <returns><see cref="bool"/></returns>
         public bool Remove(object arg0)
         {
-            return IExecute<bool>("remove", arg0);
+            return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#size()"/>
@@ -152,7 +152,7 @@ namespace Javax.Naming.Directory
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecute<int>("size");
+            return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#get()"/>
@@ -162,7 +162,7 @@ namespace Javax.Naming.Directory
         /// <exception cref="Javax.Naming.NamingException"/>
         public object Get()
         {
-            return IExecute("get");
+            return IExecuteWithSignature("get", "()Ljava/lang/Object;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#get(int)"/>
@@ -172,7 +172,7 @@ namespace Javax.Naming.Directory
         /// <exception cref="Javax.Naming.NamingException"/>
         public object Get(int arg0)
         {
-            return IExecute("get", arg0);
+            return IExecuteWithSignature("get", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#remove(int)"/>
@@ -181,7 +181,7 @@ namespace Javax.Naming.Directory
         /// <returns><see cref="object"/></returns>
         public object Remove(int arg0)
         {
-            return IExecute("remove", arg0);
+            return IExecuteWithSignature("remove", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#set(int,java.lang.Object)"/>
@@ -207,7 +207,7 @@ namespace Javax.Naming.Directory
         /// </summary>
         public void Clear()
         {
-            IExecute("clear");
+            IExecuteWithSignature("clear", "()V");
         }
 
         #endregion

@@ -86,7 +86,7 @@ namespace Javax.Lang.Model
         /// </summary>
         public Java.Util.List AnnotationMirrors
         {
-            get { return IExecute<Java.Util.List>("getAnnotationMirrors"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getAnnotationMirrors", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/AnnotatedConstruct.html#getAnnotation(java.lang.Class)"/>

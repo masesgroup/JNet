@@ -77,21 +77,21 @@ namespace Java.Text
         /// </summary>
         public Java.Text.Format[] Formats
         {
-            get { return IExecuteArray<Java.Text.Format>("getFormats"); } set { IExecute("setFormats", value); }
+            get { return IExecuteWithSignatureArray<Java.Text.Format>("getFormats", "()[Ljava/text/Format;"); } set { IExecuteWithSignature("setFormats", "([Ljava/text/Format;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#getFormatsByArgumentIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#setFormatsByArgumentIndex(java.text.Format[])"/>
         /// </summary>
         public Java.Text.Format[] FormatsByArgumentIndex
         {
-            get { return IExecuteArray<Java.Text.Format>("getFormatsByArgumentIndex"); } set { IExecute("setFormatsByArgumentIndex", value); }
+            get { return IExecuteWithSignatureArray<Java.Text.Format>("getFormatsByArgumentIndex", "()[Ljava/text/Format;"); } set { IExecuteWithSignature("setFormatsByArgumentIndex", "([Ljava/text/Format;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#getLocale()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#setLocale(java.util.Locale)"/>
         /// </summary>
         public Java.Util.Locale Locale
         {
-            get { return IExecute<Java.Util.Locale>("getLocale"); } set { IExecute("setLocale", value); }
+            get { return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;"); } set { IExecuteWithSignature("setLocale", "(Ljava/util/Locale;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#format(java.lang.Object[],java.lang.StringBuffer,java.text.FieldPosition)"/>
@@ -122,7 +122,7 @@ namespace Java.Text
         /// <exception cref="Java.Text.ParseException"/>
         public object[] Parse(Java.Lang.String arg0)
         {
-            return IExecuteArray<object>("parse", arg0);
+            return IExecuteWithSignatureArray<object>("parse", "(Ljava/lang/String;)[Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#toPattern()"/>
@@ -131,7 +131,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToPattern()
         {
-            return IExecute<Java.Lang.String>("toPattern");
+            return IExecuteWithSignature<Java.Lang.String>("toPattern", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#applyPattern(java.lang.String)"/>
@@ -139,7 +139,7 @@ namespace Java.Text
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void ApplyPattern(Java.Lang.String arg0)
         {
-            IExecute("applyPattern", arg0);
+            IExecuteWithSignature("applyPattern", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#setFormat(int,java.text.Format)"/>

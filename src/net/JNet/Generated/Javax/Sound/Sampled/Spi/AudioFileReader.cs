@@ -54,7 +54,7 @@ namespace Javax.Sound.Sampled.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Sound.Sampled.AudioFileFormat GetAudioFileFormat(Java.Io.File arg0)
         {
-            return IExecute<Javax.Sound.Sampled.AudioFileFormat>("getAudioFileFormat", arg0);
+            return IExecuteWithSignature<Javax.Sound.Sampled.AudioFileFormat>("getAudioFileFormat", "(Ljava/io/File;)Ljavax/sound/sampled/AudioFileFormat;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileReader.html#getAudioFileFormat(java.io.InputStream)"/>
@@ -65,7 +65,7 @@ namespace Javax.Sound.Sampled.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Sound.Sampled.AudioFileFormat GetAudioFileFormat(Java.Io.InputStream arg0)
         {
-            return IExecute<Javax.Sound.Sampled.AudioFileFormat>("getAudioFileFormat", arg0);
+            return IExecuteWithSignature<Javax.Sound.Sampled.AudioFileFormat>("getAudioFileFormat", "(Ljava/io/InputStream;)Ljavax/sound/sampled/AudioFileFormat;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileReader.html#getAudioFileFormat(java.net.URL)"/>
@@ -76,7 +76,7 @@ namespace Javax.Sound.Sampled.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Sound.Sampled.AudioFileFormat GetAudioFileFormat(Java.Net.URL arg0)
         {
-            return IExecute<Javax.Sound.Sampled.AudioFileFormat>("getAudioFileFormat", arg0);
+            return IExecuteWithSignature<Javax.Sound.Sampled.AudioFileFormat>("getAudioFileFormat", "(Ljava/net/URL;)Ljavax/sound/sampled/AudioFileFormat;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileReader.html#getAudioInputStream(java.io.File)"/>
@@ -87,7 +87,7 @@ namespace Javax.Sound.Sampled.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Sound.Sampled.AudioInputStream GetAudioInputStream(Java.Io.File arg0)
         {
-            return IExecute<Javax.Sound.Sampled.AudioInputStream>("getAudioInputStream", arg0);
+            return IExecuteWithSignature<Javax.Sound.Sampled.AudioInputStream>("getAudioInputStream", "(Ljava/io/File;)Ljavax/sound/sampled/AudioInputStream;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileReader.html#getAudioInputStream(java.io.InputStream)"/>
@@ -98,7 +98,7 @@ namespace Javax.Sound.Sampled.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Sound.Sampled.AudioInputStream GetAudioInputStream(Java.Io.InputStream arg0)
         {
-            return IExecute<Javax.Sound.Sampled.AudioInputStream>("getAudioInputStream", arg0);
+            return IExecuteWithSignature<Javax.Sound.Sampled.AudioInputStream>("getAudioInputStream", "(Ljava/io/InputStream;)Ljavax/sound/sampled/AudioInputStream;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileReader.html#getAudioInputStream(java.net.URL)"/>
@@ -109,7 +109,7 @@ namespace Javax.Sound.Sampled.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Sound.Sampled.AudioInputStream GetAudioInputStream(Java.Net.URL arg0)
         {
-            return IExecute<Javax.Sound.Sampled.AudioInputStream>("getAudioInputStream", arg0);
+            return IExecuteWithSignature<Javax.Sound.Sampled.AudioInputStream>("getAudioInputStream", "(Ljava/net/URL;)Ljavax/sound/sampled/AudioInputStream;", arg0);
         }
 
         #endregion

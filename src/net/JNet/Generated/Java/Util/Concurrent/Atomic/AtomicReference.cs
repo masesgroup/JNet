@@ -58,21 +58,21 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         public object Acquire
         {
-            get { return IExecute("getAcquire"); }
+            get { return IExecuteWithSignature("getAcquire", "()Ljava/lang/Object;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#getOpaque()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#setOpaque(java.lang.Object)"/>
         /// </summary>
         public object Opaque
         {
-            get { return IExecute("getOpaque"); } set { IExecute("setOpaque", value); }
+            get { return IExecuteWithSignature("getOpaque", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setOpaque", "(Ljava/lang/Object;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#getPlain()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#setPlain(java.lang.Object)"/>
         /// </summary>
         public object Plain
         {
-            get { return IExecute("getPlain"); } set { IExecute("setPlain", value); }
+            get { return IExecuteWithSignature("getPlain", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setPlain", "(Ljava/lang/Object;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#compareAndSet(java.lang.Object,java.lang.Object)"/>
@@ -171,7 +171,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="object"/></returns>
         public object Get()
         {
-            return IExecute("get");
+            return IExecuteWithSignature("get", "()Ljava/lang/Object;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#getAndAccumulate(java.lang.Object,java.util.function.BinaryOperator)"/>
@@ -190,7 +190,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="object"/></returns>
         public object GetAndSet(object arg0)
         {
-            return IExecute("getAndSet", arg0);
+            return IExecuteWithSignature("getAndSet", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#getAndUpdate(java.util.function.UnaryOperator)"/>
@@ -199,7 +199,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="object"/></returns>
         public object GetAndUpdate(Java.Util.Function.UnaryOperator arg0)
         {
-            return IExecute("getAndUpdate", arg0);
+            return IExecuteWithSignature("getAndUpdate", "(Ljava/util/function/UnaryOperator;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#updateAndGet(java.util.function.UnaryOperator)"/>
@@ -208,7 +208,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="object"/></returns>
         public object UpdateAndGet(Java.Util.Function.UnaryOperator arg0)
         {
-            return IExecute("updateAndGet", arg0);
+            return IExecuteWithSignature("updateAndGet", "(Ljava/util/function/UnaryOperator;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#lazySet(java.lang.Object)"/>
@@ -216,7 +216,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <param name="arg0"><see cref="object"/></param>
         public void LazySet(object arg0)
         {
-            IExecute("lazySet", arg0);
+            IExecuteWithSignature("lazySet", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#set(java.lang.Object)"/>
@@ -224,7 +224,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <param name="arg0"><see cref="object"/></param>
         public void Set(object arg0)
         {
-            IExecute("set", arg0);
+            IExecuteWithSignature("set", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#setRelease(java.lang.Object)"/>
@@ -232,7 +232,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <param name="arg0"><see cref="object"/></param>
         public void SetRelease(object arg0)
         {
-            IExecute("setRelease", arg0);
+            IExecuteWithSignature("setRelease", "(Ljava/lang/Object;)V", arg0);
         }
 
         #endregion
@@ -282,21 +282,21 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         public V Acquire
         {
-            get { return IExecute<V>("getAcquire"); }
+            get { return IExecuteWithSignature<V>("getAcquire", "()Ljava/lang/Object;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#getOpaque()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#setOpaque(java.lang.Object)"/>
         /// </summary>
         public V Opaque
         {
-            get { return IExecute<V>("getOpaque"); } set { IExecute("setOpaque", value); }
+            get { return IExecuteWithSignature<V>("getOpaque", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setOpaque", "(Ljava/lang/Object;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#getPlain()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#setPlain(java.lang.Object)"/>
         /// </summary>
         public V Plain
         {
-            get { return IExecute<V>("getPlain"); } set { IExecute("setPlain", value); }
+            get { return IExecuteWithSignature<V>("getPlain", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setPlain", "(Ljava/lang/Object;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#compareAndSet(java.lang.Object,java.lang.Object)"/>
@@ -395,7 +395,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><typeparamref name="V"/></returns>
         public V Get()
         {
-            return IExecute<V>("get");
+            return IExecuteWithSignature<V>("get", "()Ljava/lang/Object;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#getAndAccumulate(java.lang.Object,java.util.function.BinaryOperator)"/>
@@ -414,7 +414,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><typeparamref name="V"/></returns>
         public V GetAndSet(V arg0)
         {
-            return IExecute<V>("getAndSet", arg0);
+            return IExecuteWithSignature<V>("getAndSet", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#getAndUpdate(java.util.function.UnaryOperator)"/>
@@ -423,7 +423,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><typeparamref name="V"/></returns>
         public V GetAndUpdate(Java.Util.Function.UnaryOperator<V> arg0)
         {
-            return IExecute<V>("getAndUpdate", arg0);
+            return IExecuteWithSignature<V>("getAndUpdate", "(Ljava/util/function/UnaryOperator;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#updateAndGet(java.util.function.UnaryOperator)"/>
@@ -432,7 +432,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><typeparamref name="V"/></returns>
         public V UpdateAndGet(Java.Util.Function.UnaryOperator<V> arg0)
         {
-            return IExecute<V>("updateAndGet", arg0);
+            return IExecuteWithSignature<V>("updateAndGet", "(Ljava/util/function/UnaryOperator;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#lazySet(java.lang.Object)"/>
@@ -440,7 +440,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <param name="arg0"><typeparamref name="V"/></param>
         public void LazySet(V arg0)
         {
-            IExecute("lazySet", arg0);
+            IExecuteWithSignature("lazySet", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#set(java.lang.Object)"/>
@@ -448,7 +448,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <param name="arg0"><typeparamref name="V"/></param>
         public void Set(V arg0)
         {
-            IExecute("set", arg0);
+            IExecuteWithSignature("set", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#setRelease(java.lang.Object)"/>
@@ -456,7 +456,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <param name="arg0"><typeparamref name="V"/></param>
         public void SetRelease(V arg0)
         {
-            IExecute("setRelease", arg0);
+            IExecuteWithSignature("setRelease", "(Ljava/lang/Object;)V", arg0);
         }
 
         #endregion

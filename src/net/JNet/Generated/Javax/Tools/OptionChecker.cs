@@ -76,7 +76,7 @@ namespace Javax.Tools
         /// <returns><see cref="int"/></returns>
         public int IsSupportedOption(Java.Lang.String arg0)
         {
-            return IExecute<int>("isSupportedOption", arg0);
+            return IExecuteWithSignature<int>("isSupportedOption", "(Ljava/lang/String;)I", arg0);
         }
 
         #endregion

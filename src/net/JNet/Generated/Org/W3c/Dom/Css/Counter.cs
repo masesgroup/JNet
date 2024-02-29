@@ -80,21 +80,21 @@ namespace Org.W3c.Dom.Css
         /// </summary>
         public Java.Lang.String Identifier
         {
-            get { return IExecute<Java.Lang.String>("getIdentifier"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getIdentifier", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/Counter.html#getListStyle()"/> 
         /// </summary>
         public Java.Lang.String ListStyle
         {
-            get { return IExecute<Java.Lang.String>("getListStyle"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getListStyle", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/Counter.html#getSeparator()"/> 
         /// </summary>
         public Java.Lang.String Separator
         {
-            get { return IExecute<Java.Lang.String>("getSeparator"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getSeparator", "()Ljava/lang/String;"); }
         }
 
         #endregion

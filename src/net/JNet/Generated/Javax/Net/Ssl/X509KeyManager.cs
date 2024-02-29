@@ -154,7 +154,7 @@ namespace Javax.Net.Ssl
         /// <returns><see cref="Java.Security.Cert.X509Certificate"/></returns>
         public Java.Security.Cert.X509Certificate[] GetCertificateChain(Java.Lang.String arg0)
         {
-            return IExecuteArray<Java.Security.Cert.X509Certificate>("getCertificateChain", arg0);
+            return IExecuteWithSignatureArray<Java.Security.Cert.X509Certificate>("getCertificateChain", "(Ljava/lang/String;)[Ljava/security/cert/X509Certificate;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509KeyManager.html#getPrivateKey(java.lang.String)"/>
@@ -163,7 +163,7 @@ namespace Javax.Net.Ssl
         /// <returns><see cref="Java.Security.PrivateKey"/></returns>
         public Java.Security.PrivateKey GetPrivateKey(Java.Lang.String arg0)
         {
-            return IExecute<Java.Security.PrivateKey>("getPrivateKey", arg0);
+            return IExecuteWithSignature<Java.Security.PrivateKey>("getPrivateKey", "(Ljava/lang/String;)Ljava/security/PrivateKey;", arg0);
         }
 
         #endregion

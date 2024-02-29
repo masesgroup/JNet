@@ -58,7 +58,7 @@ namespace Java.Awt.ColorNs
         /// </summary>
         public Java.Awt.ColorNs.ICC_Profile Profile
         {
-            get { return IExecute<Java.Awt.ColorNs.ICC_Profile>("getProfile"); }
+            get { return IExecuteWithSignature<Java.Awt.ColorNs.ICC_Profile>("getProfile", "()Ljava/awt/color/ICC_Profile;"); }
         }
 
         #endregion

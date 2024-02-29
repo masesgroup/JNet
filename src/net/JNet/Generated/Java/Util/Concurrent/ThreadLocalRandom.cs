@@ -48,7 +48,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ThreadLocalRandom"/></returns>
         public static Java.Util.Concurrent.ThreadLocalRandom Current()
         {
-            return SExecute<Java.Util.Concurrent.ThreadLocalRandom>(LocalBridgeClazz, "current");
+            return SExecuteWithSignature<Java.Util.Concurrent.ThreadLocalRandom>(LocalBridgeClazz, "current", "()Ljava/util/concurrent/ThreadLocalRandom;");
         }
 
         #endregion
@@ -71,7 +71,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="double"/></returns>
         public double NextDouble(double arg0)
         {
-            return IExecute<double>("nextDouble", arg0);
+            return IExecuteWithSignature<double>("nextDouble", "(D)D", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html#nextInt(int,int)"/>
@@ -100,7 +100,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="long"/></returns>
         public long NextLong(long arg0)
         {
-            return IExecute<long>("nextLong", arg0);
+            return IExecuteWithSignature<long>("nextLong", "(J)J", arg0);
         }
 
         #endregion

@@ -74,7 +74,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         public void Execute(Java.Lang.Runnable arg0)
         {
-            IExecute("execute", arg0);
+            IExecuteWithSignature("execute", "(Ljava/lang/Runnable;)V", arg0);
         }
 
         #endregion

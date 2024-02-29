@@ -161,119 +161,119 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public Java.Awt.ImageNs.ColorModel ColorModel
         {
-            get { return IExecute<Java.Awt.ImageNs.ColorModel>("getColorModel"); }
+            get { return IExecuteWithSignature<Java.Awt.ImageNs.ColorModel>("getColorModel", "()Ljava/awt/image/ColorModel;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getData()"/> 
         /// </summary>
         public Java.Awt.ImageNs.Raster Data
         {
-            get { return IExecute<Java.Awt.ImageNs.Raster>("getData"); }
+            get { return IExecuteWithSignature<Java.Awt.ImageNs.Raster>("getData", "()Ljava/awt/image/Raster;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getHeight()"/> 
         /// </summary>
         public int Height
         {
-            get { return IExecute<int>("getHeight"); }
+            get { return IExecuteWithSignature<int>("getHeight", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getMinTileX()"/> 
         /// </summary>
         public int MinTileX
         {
-            get { return IExecute<int>("getMinTileX"); }
+            get { return IExecuteWithSignature<int>("getMinTileX", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getMinTileY()"/> 
         /// </summary>
         public int MinTileY
         {
-            get { return IExecute<int>("getMinTileY"); }
+            get { return IExecuteWithSignature<int>("getMinTileY", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getMinX()"/> 
         /// </summary>
         public int MinX
         {
-            get { return IExecute<int>("getMinX"); }
+            get { return IExecuteWithSignature<int>("getMinX", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getMinY()"/> 
         /// </summary>
         public int MinY
         {
-            get { return IExecute<int>("getMinY"); }
+            get { return IExecuteWithSignature<int>("getMinY", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getNumXTiles()"/> 
         /// </summary>
         public int NumXTiles
         {
-            get { return IExecute<int>("getNumXTiles"); }
+            get { return IExecuteWithSignature<int>("getNumXTiles", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getNumYTiles()"/> 
         /// </summary>
         public int NumYTiles
         {
-            get { return IExecute<int>("getNumYTiles"); }
+            get { return IExecuteWithSignature<int>("getNumYTiles", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getPropertyNames()"/> 
         /// </summary>
         public Java.Lang.String[] PropertyNames
         {
-            get { return IExecuteArray<Java.Lang.String>("getPropertyNames"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.String>("getPropertyNames", "()[Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getSampleModel()"/> 
         /// </summary>
         public Java.Awt.ImageNs.SampleModel SampleModel
         {
-            get { return IExecute<Java.Awt.ImageNs.SampleModel>("getSampleModel"); }
+            get { return IExecuteWithSignature<Java.Awt.ImageNs.SampleModel>("getSampleModel", "()Ljava/awt/image/SampleModel;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getSources()"/> 
         /// </summary>
         public Java.Util.Vector<Java.Awt.ImageNs.RenderedImage> Sources
         {
-            get { return IExecute<Java.Util.Vector<Java.Awt.ImageNs.RenderedImage>>("getSources"); }
+            get { return IExecuteWithSignature<Java.Util.Vector<Java.Awt.ImageNs.RenderedImage>>("getSources", "()Ljava/util/Vector;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getTileGridXOffset()"/> 
         /// </summary>
         public int TileGridXOffset
         {
-            get { return IExecute<int>("getTileGridXOffset"); }
+            get { return IExecuteWithSignature<int>("getTileGridXOffset", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getTileGridYOffset()"/> 
         /// </summary>
         public int TileGridYOffset
         {
-            get { return IExecute<int>("getTileGridYOffset"); }
+            get { return IExecuteWithSignature<int>("getTileGridYOffset", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getTileHeight()"/> 
         /// </summary>
         public int TileHeight
         {
-            get { return IExecute<int>("getTileHeight"); }
+            get { return IExecuteWithSignature<int>("getTileHeight", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getTileWidth()"/> 
         /// </summary>
         public int TileWidth
         {
-            get { return IExecute<int>("getTileWidth"); }
+            get { return IExecuteWithSignature<int>("getTileWidth", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getWidth()"/> 
         /// </summary>
         public int Width
         {
-            get { return IExecute<int>("getWidth"); }
+            get { return IExecuteWithSignature<int>("getWidth", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getData(java.awt.Rectangle)"/>
@@ -282,7 +282,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="Java.Awt.ImageNs.Raster"/></returns>
         public Java.Awt.ImageNs.Raster GetData(Java.Awt.Rectangle arg0)
         {
-            return IExecute<Java.Awt.ImageNs.Raster>("getData", arg0);
+            return IExecuteWithSignature<Java.Awt.ImageNs.Raster>("getData", "(Ljava/awt/Rectangle;)Ljava/awt/image/Raster;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getTile(int,int)"/>
@@ -301,7 +301,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
         public Java.Awt.ImageNs.WritableRaster CopyData(Java.Awt.ImageNs.WritableRaster arg0)
         {
-            return IExecute<Java.Awt.ImageNs.WritableRaster>("copyData", arg0);
+            return IExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>("copyData", "(Ljava/awt/image/WritableRaster;)Ljava/awt/image/WritableRaster;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getProperty(java.lang.String)"/>
@@ -310,7 +310,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="object"/></returns>
         public object GetProperty(Java.Lang.String arg0)
         {
-            return IExecute("getProperty", arg0);
+            return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
 
         #endregion
