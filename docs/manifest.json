@@ -48324,20 +48324,20 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNet.Specific.Extensions.JNetCoreExtensions.yml",
+      "source_relative_path": "api/MASES.JNet.Specific.Extensions.INativeConvertible-2.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MASES.JNet.Specific.Extensions.JNetCoreExtensions.html"
+          "relative_path": "api/MASES.JNet.Specific.Extensions.INativeConvertible-2.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNet.Specific.Extensions.JavaLangExtension.yml",
+      "source_relative_path": "api/MASES.JNet.Specific.Extensions.JNetCoreExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MASES.JNet.Specific.Extensions.JavaLangExtension.html"
+          "relative_path": "api/MASES.JNet.Specific.Extensions.JNetCoreExtensions.html"
         }
       },
       "version": ""
