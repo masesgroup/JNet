@@ -1811,28 +1811,28 @@ namespace MASES.JNetReflector
             switch (typeName)
             {
                 case "void":
-                case "java.lang.Void":
                 case "boolean":
-                case "java.lang.Boolean":
                 case "byte":
-                case "java.lang.Byte":
                 case "char":
-                case "java.lang.Character":
                 case "short":
-                case "java.lang.Short":
                 case "int":
-                case "java.lang.Integer":
                 case "long":
-                case "java.lang.Long":
                 case "float":
-                case "java.lang.Float":
                 case "double":
-                case "java.lang.Double":
+                case "java.lang.Void": // special case
                 case "java.lang.Object": // special case
                     return true;
-                default:
-                    if (JNetReflectorCore.UseDirectDotNetString && typeName == "java.lang.String") return true;
-                    return false;
+                case "java.lang.Boolean":
+                case "java.lang.Byte":
+                case "java.lang.Character":
+                case "java.lang.Short":
+                case "java.lang.Integer":
+                case "java.lang.Long":
+                case "java.lang.Float":
+                case "java.lang.Double":
+                case "java.lang.String":
+                    return JNetReflectorCore.UseDirectDotNetType;
+                default: return false;
             }
         }
 
@@ -1868,44 +1868,52 @@ namespace MASES.JNetReflector
                     case "boolean":
                         return "bool";
                     case "java.lang.Boolean":
+                        if (!JNetReflectorCore.UseDirectDotNetType) break;
                         return isFromArray ? "bool" : "bool?";
                     case "byte":
                         return "byte";
                     case "java.lang.Byte":
+                        if (!JNetReflectorCore.UseDirectDotNetType) break;
                         return isFromArray ? "byte" : "byte?";
                     case "char":
                         return "char";
                     case "java.lang.Character":
+                        if (!JNetReflectorCore.UseDirectDotNetType) break;
                         return isFromArray ? "char" : "char?";
                     case "short":
                         return "short";
                     case "java.lang.Short":
+                        if (!JNetReflectorCore.UseDirectDotNetType) break;
                         return isFromArray ? "short" : "short?";
                     case "int":
                         return "int";
                     case "java.lang.Integer":
+                        if (!JNetReflectorCore.UseDirectDotNetType) break;
                         return isFromArray ? "int" : "int?";
                     case "long":
                         return "long";
                     case "java.lang.Long":
+                        if (!JNetReflectorCore.UseDirectDotNetType) break;
                         return isFromArray ? "long" : "long?";
                     case "float":
                         return "float";
                     case "java.lang.Float":
+                        if (!JNetReflectorCore.UseDirectDotNetType) break;
                         return isFromArray ? "float" : "float?";
                     case "double":
                         return "double";
                     case "java.lang.Double":
+                        if (!JNetReflectorCore.UseDirectDotNetType) break;
                         return isFromArray ? "double" : "double?";
                     case "java.lang.Object":
                         return "object";
-                    default:
-                        {
-                            if (JNetReflectorCore.UseDirectDotNetString && typeName == "java.lang.String") return "string";
-                            var fName = ToFullQualifiedClassName(typeName, camel);
-                            return fName.ConvertClassesInConflict();
-                        }
+                    case "java.lang.String":
+                        if (!JNetReflectorCore.UseDirectDotNetType) break;
+                        return "string";
+                    default: break;
                 }
+                var fName = ToFullQualifiedClassName(typeName, camel);
+                return fName.ConvertClassesInConflict();
             }
             else
             {
@@ -1916,29 +1924,50 @@ namespace MASES.JNetReflector
                         return "void";
                     case "boolean":
                         return "bool";
+                    case "java.lang.Boolean":
+                        if (!JNetReflectorCore.UseDirectDotNetType) break;
+                        return "bool";
                     case "byte":
+                        return "byte";
+                    case "java.lang.Byte":
+                        if (!JNetReflectorCore.UseDirectDotNetType) break;
                         return "byte";
                     case "char":
                         return "char";
+                    case "java.lang.Character":
+                        if (!JNetReflectorCore.UseDirectDotNetType) break;
+                        return "char";
                     case "short":
+                        return "short";
+                    case "java.lang.Short":
+                        if (!JNetReflectorCore.UseDirectDotNetType) break;
                         return "short";
                     case "int":
                         return "int";
+                    case "java.lang.Integer":
+                        if (!JNetReflectorCore.UseDirectDotNetType) break;
+                        return "int";
                     case "long":
+                        return "long";
+                    case "java.lang.Long":
+                        if (!JNetReflectorCore.UseDirectDotNetType) break;
                         return "long";
                     case "float":
                         return "float";
+                    case "java.lang.Float":
+                        if (!JNetReflectorCore.UseDirectDotNetType) break;
+                        return "float";
                     case "double":
+                        return "double";
+                    case "java.lang.Double":
+                        if (!JNetReflectorCore.UseDirectDotNetType) break;
                         return "double";
                     case "java.lang.Object":
                         return "object";
-                    default:
-                        {
-                            if (JNetReflectorCore.UseDirectDotNetString && typeName == "java.lang.String") return "string";
-                            var fName = ToFullQualifiedClassName(typeName, camel);
-                            return fName.ConvertClassesInConflict();
-                        }
+                    default: break;
                 }
+                var fName = ToFullQualifiedClassName(typeName, camel);
+                return fName.ConvertClassesInConflict();
             }
         }
 
