@@ -58,7 +58,7 @@ namespace Javax.Management.Openmbean
         /// </summary>
         public Javax.Management.Openmbean.CompositeData CompositeData
         {
-            get { return IExecute<Javax.Management.Openmbean.CompositeData>("getCompositeData"); }
+            get { return IExecuteWithSignature<Javax.Management.Openmbean.CompositeData>("getCompositeData", "()Ljavax/management/openmbean/CompositeData;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataInvocationHandler.html#invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[])"/>

@@ -82,7 +82,7 @@ namespace Org.W3c.Dom
         /// <returns><see cref="Org.W3c.Dom.DOMImplementation"/></returns>
         public Org.W3c.Dom.DOMImplementation GetDOMImplementation(Java.Lang.String arg0)
         {
-            return IExecute<Org.W3c.Dom.DOMImplementation>("getDOMImplementation", arg0);
+            return IExecuteWithSignature<Org.W3c.Dom.DOMImplementation>("getDOMImplementation", "(Ljava/lang/String;)Lorg/w3c/dom/DOMImplementation;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementationSource.html#getDOMImplementationList(java.lang.String)"/>
@@ -91,7 +91,7 @@ namespace Org.W3c.Dom
         /// <returns><see cref="Org.W3c.Dom.DOMImplementationList"/></returns>
         public Org.W3c.Dom.DOMImplementationList GetDOMImplementationList(Java.Lang.String arg0)
         {
-            return IExecute<Org.W3c.Dom.DOMImplementationList>("getDOMImplementationList", arg0);
+            return IExecuteWithSignature<Org.W3c.Dom.DOMImplementationList>("getDOMImplementationList", "(Ljava/lang/String;)Lorg/w3c/dom/DOMImplementationList;", arg0);
         }
 
         #endregion

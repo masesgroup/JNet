@@ -51,7 +51,7 @@ namespace Java.Rmi.Activation
         /// <exception cref="Java.Rmi.RemoteException"/>
         public static bool Inactive(Java.Rmi.Activation.ActivationID arg0)
         {
-            return SExecute<bool>(LocalBridgeClazz, "inactive", arg0);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "inactive", "(Ljava/rmi/activation/ActivationID;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/Activatable.html#unexportObject(java.rmi.Remote,boolean)"/>
@@ -132,7 +132,7 @@ namespace Java.Rmi.Activation
         /// <exception cref="Java.Rmi.RemoteException"/>
         public static Java.Rmi.Remote Register(Java.Rmi.Activation.ActivationDesc arg0)
         {
-            return SExecute<Java.Rmi.Remote>(LocalBridgeClazz, "register", arg0);
+            return SExecuteWithSignature<Java.Rmi.Remote>(LocalBridgeClazz, "register", "(Ljava/rmi/activation/ActivationDesc;)Ljava/rmi/Remote;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/Activatable.html#unregister(java.rmi.activation.ActivationID)"/>
@@ -143,7 +143,7 @@ namespace Java.Rmi.Activation
         /// <exception cref="Java.Rmi.RemoteException"/>
         public static void Unregister(Java.Rmi.Activation.ActivationID arg0)
         {
-            SExecute(LocalBridgeClazz, "unregister", arg0);
+            SExecuteWithSignature(LocalBridgeClazz, "unregister", "(Ljava/rmi/activation/ActivationID;)V", arg0);
         }
 
         #endregion

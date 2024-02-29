@@ -50,28 +50,28 @@ namespace Javax.Net.Ssl
         /// </summary>
         public Java.Lang.String[] LocalSupportedSignatureAlgorithms
         {
-            get { return IExecuteArray<Java.Lang.String>("getLocalSupportedSignatureAlgorithms"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.String>("getLocalSupportedSignatureAlgorithms", "()[Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/ExtendedSSLSession.html#getPeerSupportedSignatureAlgorithms()"/> 
         /// </summary>
         public Java.Lang.String[] PeerSupportedSignatureAlgorithms
         {
-            get { return IExecuteArray<Java.Lang.String>("getPeerSupportedSignatureAlgorithms"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.String>("getPeerSupportedSignatureAlgorithms", "()[Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/ExtendedSSLSession.html#getRequestedServerNames()"/> 
         /// </summary>
         public Java.Util.List<Javax.Net.Ssl.SNIServerName> RequestedServerNames
         {
-            get { return IExecute<Java.Util.List<Javax.Net.Ssl.SNIServerName>>("getRequestedServerNames"); }
+            get { return IExecuteWithSignature<Java.Util.List<Javax.Net.Ssl.SNIServerName>>("getRequestedServerNames", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/ExtendedSSLSession.html#getStatusResponses()"/> 
         /// </summary>
         public Java.Util.List<byte[]> StatusResponses
         {
-            get { return IExecute<Java.Util.List<byte[]>>("getStatusResponses"); }
+            get { return IExecuteWithSignature<Java.Util.List<byte[]>>("getStatusResponses", "()Ljava/util/List;"); }
         }
 
         #endregion

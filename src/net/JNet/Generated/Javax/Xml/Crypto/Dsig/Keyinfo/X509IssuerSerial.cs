@@ -76,14 +76,14 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// </summary>
         public Java.Lang.String IssuerName
         {
-            get { return IExecute<Java.Lang.String>("getIssuerName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getIssuerName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509IssuerSerial.html#getSerialNumber()"/> 
         /// </summary>
         public Java.Math.BigInteger SerialNumber
         {
-            get { return IExecute<Java.Math.BigInteger>("getSerialNumber"); }
+            get { return IExecuteWithSignature<Java.Math.BigInteger>("getSerialNumber", "()Ljava/math/BigInteger;"); }
         }
 
         #endregion

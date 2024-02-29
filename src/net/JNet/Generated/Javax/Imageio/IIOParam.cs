@@ -50,70 +50,70 @@ namespace Javax.Imageio
         /// </summary>
         public Javax.Imageio.IIOParamController Controller
         {
-            get { return IExecute<Javax.Imageio.IIOParamController>("getController"); } set { IExecute("setController", value); }
+            get { return IExecuteWithSignature<Javax.Imageio.IIOParamController>("getController", "()Ljavax/imageio/IIOParamController;"); } set { IExecuteWithSignature("setController", "(Ljavax/imageio/IIOParamController;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParam.html#getDefaultController()"/> 
         /// </summary>
         public Javax.Imageio.IIOParamController DefaultController
         {
-            get { return IExecute<Javax.Imageio.IIOParamController>("getDefaultController"); }
+            get { return IExecuteWithSignature<Javax.Imageio.IIOParamController>("getDefaultController", "()Ljavax/imageio/IIOParamController;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParam.html#getDestinationOffset()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParam.html#setDestinationOffset(java.awt.Point)"/>
         /// </summary>
         public Java.Awt.Point DestinationOffset
         {
-            get { return IExecute<Java.Awt.Point>("getDestinationOffset"); } set { IExecute("setDestinationOffset", value); }
+            get { return IExecuteWithSignature<Java.Awt.Point>("getDestinationOffset", "()Ljava/awt/Point;"); } set { IExecuteWithSignature("setDestinationOffset", "(Ljava/awt/Point;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParam.html#getDestinationType()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParam.html#setDestinationType(javax.imageio.ImageTypeSpecifier)"/>
         /// </summary>
         public Javax.Imageio.ImageTypeSpecifier DestinationType
         {
-            get { return IExecute<Javax.Imageio.ImageTypeSpecifier>("getDestinationType"); } set { IExecute("setDestinationType", value); }
+            get { return IExecuteWithSignature<Javax.Imageio.ImageTypeSpecifier>("getDestinationType", "()Ljavax/imageio/ImageTypeSpecifier;"); } set { IExecuteWithSignature("setDestinationType", "(Ljavax/imageio/ImageTypeSpecifier;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParam.html#getSourceBands()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParam.html#setSourceBands(int[])"/>
         /// </summary>
         public int[] SourceBands
         {
-            get { return IExecuteArray<int>("getSourceBands"); } set { IExecute("setSourceBands", value); }
+            get { return IExecuteWithSignatureArray<int>("getSourceBands", "()[I"); } set { IExecuteWithSignature("setSourceBands", "([I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParam.html#getSourceRegion()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParam.html#setSourceRegion(java.awt.Rectangle)"/>
         /// </summary>
         public Java.Awt.Rectangle SourceRegion
         {
-            get { return IExecute<Java.Awt.Rectangle>("getSourceRegion"); } set { IExecute("setSourceRegion", value); }
+            get { return IExecuteWithSignature<Java.Awt.Rectangle>("getSourceRegion", "()Ljava/awt/Rectangle;"); } set { IExecuteWithSignature("setSourceRegion", "(Ljava/awt/Rectangle;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParam.html#getSourceXSubsampling()"/> 
         /// </summary>
         public int SourceXSubsampling
         {
-            get { return IExecute<int>("getSourceXSubsampling"); }
+            get { return IExecuteWithSignature<int>("getSourceXSubsampling", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParam.html#getSourceYSubsampling()"/> 
         /// </summary>
         public int SourceYSubsampling
         {
-            get { return IExecute<int>("getSourceYSubsampling"); }
+            get { return IExecuteWithSignature<int>("getSourceYSubsampling", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParam.html#getSubsamplingXOffset()"/> 
         /// </summary>
         public int SubsamplingXOffset
         {
-            get { return IExecute<int>("getSubsamplingXOffset"); }
+            get { return IExecuteWithSignature<int>("getSubsamplingXOffset", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParam.html#getSubsamplingYOffset()"/> 
         /// </summary>
         public int SubsamplingYOffset
         {
-            get { return IExecute<int>("getSubsamplingYOffset"); }
+            get { return IExecuteWithSignature<int>("getSubsamplingYOffset", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParam.html#activateController()"/>
@@ -122,7 +122,7 @@ namespace Javax.Imageio
         /// <returns><see cref="bool"/></returns>
         public bool ActivateController()
         {
-            return IExecute<bool>("activateController");
+            return IExecuteWithSignature<bool>("activateController", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParam.html#hasController()"/>
@@ -131,7 +131,7 @@ namespace Javax.Imageio
         /// <returns><see cref="bool"/></returns>
         public bool HasController()
         {
-            return IExecute<bool>("hasController");
+            return IExecuteWithSignature<bool>("hasController", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParam.html#setSourceSubsampling(int,int,int,int)"/>

@@ -80,7 +80,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Unread(byte[] arg0)
         {
-            IExecute("unread", new object[] { arg0 });
+            IExecuteWithSignature("unread", "([B)V", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PushbackInputStream.html#unread(int)"/>
@@ -89,7 +89,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Unread(int arg0)
         {
-            IExecute("unread", arg0);
+            IExecuteWithSignature("unread", "(I)V", arg0);
         }
 
         #endregion

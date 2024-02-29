@@ -68,63 +68,63 @@ namespace Java.Awt.Print
         /// </summary>
         public double Height
         {
-            get { return IExecute<double>("getHeight"); }
+            get { return IExecuteWithSignature<double>("getHeight", "()D"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#getImageableHeight()"/> 
         /// </summary>
         public double ImageableHeight
         {
-            get { return IExecute<double>("getImageableHeight"); }
+            get { return IExecuteWithSignature<double>("getImageableHeight", "()D"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#getImageableWidth()"/> 
         /// </summary>
         public double ImageableWidth
         {
-            get { return IExecute<double>("getImageableWidth"); }
+            get { return IExecuteWithSignature<double>("getImageableWidth", "()D"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#getImageableX()"/> 
         /// </summary>
         public double ImageableX
         {
-            get { return IExecute<double>("getImageableX"); }
+            get { return IExecuteWithSignature<double>("getImageableX", "()D"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#getImageableY()"/> 
         /// </summary>
         public double ImageableY
         {
-            get { return IExecute<double>("getImageableY"); }
+            get { return IExecuteWithSignature<double>("getImageableY", "()D"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#getMatrix()"/> 
         /// </summary>
         public double[] Matrix
         {
-            get { return IExecuteArray<double>("getMatrix"); }
+            get { return IExecuteWithSignatureArray<double>("getMatrix", "()[D"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#getOrientation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#setOrientation(int)"/>
         /// </summary>
         public int Orientation
         {
-            get { return IExecute<int>("getOrientation"); } set { IExecute("setOrientation", value); }
+            get { return IExecuteWithSignature<int>("getOrientation", "()I"); } set { IExecuteWithSignature("setOrientation", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#getPaper()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#setPaper(java.awt.print.Paper)"/>
         /// </summary>
         public Java.Awt.Print.Paper Paper
         {
-            get { return IExecute<Java.Awt.Print.Paper>("getPaper"); } set { IExecute("setPaper", value); }
+            get { return IExecuteWithSignature<Java.Awt.Print.Paper>("getPaper", "()Ljava/awt/print/Paper;"); } set { IExecuteWithSignature("setPaper", "(Ljava/awt/print/Paper;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#getWidth()"/> 
         /// </summary>
         public double Width
         {
-            get { return IExecute<double>("getWidth"); }
+            get { return IExecuteWithSignature<double>("getWidth", "()D"); }
         }
 
         #endregion

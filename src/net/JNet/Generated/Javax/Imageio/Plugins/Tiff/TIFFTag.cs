@@ -175,7 +175,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <returns><see cref="int"/></returns>
         public static int GetSizeOfType(int arg0)
         {
-            return SExecute<int>(LocalBridgeClazz, "getSizeOfType", arg0);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getSizeOfType", "(I)I", arg0);
         }
 
         #endregion
@@ -186,42 +186,42 @@ namespace Javax.Imageio.Plugins.Tiff
         /// </summary>
         public int Count
         {
-            get { return IExecute<int>("getCount"); }
+            get { return IExecuteWithSignature<int>("getCount", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#getDataTypes()"/> 
         /// </summary>
         public int DataTypes
         {
-            get { return IExecute<int>("getDataTypes"); }
+            get { return IExecuteWithSignature<int>("getDataTypes", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#getNamedValues()"/> 
         /// </summary>
         public int[] NamedValues
         {
-            get { return IExecuteArray<int>("getNamedValues"); }
+            get { return IExecuteWithSignatureArray<int>("getNamedValues", "()[I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#getNumber()"/> 
         /// </summary>
         public int Number
         {
-            get { return IExecute<int>("getNumber"); }
+            get { return IExecuteWithSignature<int>("getNumber", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#getTagSet()"/> 
         /// </summary>
         public Javax.Imageio.Plugins.Tiff.TIFFTagSet TagSet
         {
-            get { return IExecute<Javax.Imageio.Plugins.Tiff.TIFFTagSet>("getTagSet"); }
+            get { return IExecuteWithSignature<Javax.Imageio.Plugins.Tiff.TIFFTagSet>("getTagSet", "()Ljavax/imageio/plugins/tiff/TIFFTagSet;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#hasValueNames()"/>
@@ -230,7 +230,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <returns><see cref="bool"/></returns>
         public bool HasValueNames()
         {
-            return IExecute<bool>("hasValueNames");
+            return IExecuteWithSignature<bool>("hasValueNames", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#isDataTypeOK(int)"/>
@@ -239,7 +239,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <returns><see cref="bool"/></returns>
         public bool IsDataTypeOK(int arg0)
         {
-            return IExecute<bool>("isDataTypeOK", arg0);
+            return IExecuteWithSignature<bool>("isDataTypeOK", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#isIFDPointer()"/>
@@ -248,7 +248,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <returns><see cref="bool"/></returns>
         public bool IsIFDPointer()
         {
-            return IExecute<bool>("isIFDPointer");
+            return IExecuteWithSignature<bool>("isIFDPointer", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#getValueName(int)"/>
@@ -257,7 +257,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetValueName(int arg0)
         {
-            return IExecute<Java.Lang.String>("getValueName", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getValueName", "(I)Ljava/lang/String;", arg0);
         }
 
         #endregion

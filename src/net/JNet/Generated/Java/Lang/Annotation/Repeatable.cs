@@ -78,7 +78,7 @@ namespace Java.Lang.Annotation
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public Java.Lang.Class Value<ReturnExtendsJava_Lang_Annotation_Annotation>() where ReturnExtendsJava_Lang_Annotation_Annotation: Java.Lang.Annotation.Annotation
         {
-            return IExecute<Java.Lang.Class>("value");
+            return IExecuteWithSignature<Java.Lang.Class>("value", "()Ljava/lang/Class;");
         }
 
         #endregion

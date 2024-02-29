@@ -86,7 +86,7 @@ namespace Javax.Management
         /// <returns><see cref="bool"/></returns>
         public bool AddAll(Javax.Management.AttributeList arg0)
         {
-            return IExecute<bool>("addAll", arg0);
+            return IExecuteWithSignature<bool>("addAll", "(Ljavax/management/AttributeList;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#asList()"/>
@@ -95,7 +95,7 @@ namespace Javax.Management
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Javax.Management.Attribute> AsList()
         {
-            return IExecute<Java.Util.List<Javax.Management.Attribute>>("asList");
+            return IExecuteWithSignature<Java.Util.List<Javax.Management.Attribute>>("asList", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#add(int,javax.management.Attribute)"/>
@@ -112,7 +112,7 @@ namespace Javax.Management
         /// <param name="arg0"><see cref="Javax.Management.Attribute"/></param>
         public void Add(Javax.Management.Attribute arg0)
         {
-            IExecute("add", arg0);
+            IExecuteWithSignature("add", "(Ljavax/management/Attribute;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#set(int,javax.management.Attribute)"/>

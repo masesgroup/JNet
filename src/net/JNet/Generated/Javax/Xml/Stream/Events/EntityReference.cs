@@ -76,14 +76,14 @@ namespace Javax.Xml.Stream.Events
         /// </summary>
         public Javax.Xml.Stream.Events.EntityDeclaration Declaration
         {
-            get { return IExecute<Javax.Xml.Stream.Events.EntityDeclaration>("getDeclaration"); }
+            get { return IExecuteWithSignature<Javax.Xml.Stream.Events.EntityDeclaration>("getDeclaration", "()Ljavax/xml/stream/events/EntityDeclaration;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityReference.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
         }
 
         #endregion

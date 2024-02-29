@@ -124,28 +124,28 @@ namespace Javax.Xml.Crypto
         /// </summary>
         public Java.Lang.String BaseURI
         {
-            get { return IExecute<Java.Lang.String>("getBaseURI"); } set { IExecute("setBaseURI", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getBaseURI", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setBaseURI", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#getDefaultNamespacePrefix()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#setDefaultNamespacePrefix(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String DefaultNamespacePrefix
         {
-            get { return IExecute<Java.Lang.String>("getDefaultNamespacePrefix"); } set { IExecute("setDefaultNamespacePrefix", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getDefaultNamespacePrefix", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setDefaultNamespacePrefix", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#getKeySelector()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#setKeySelector(javax.xml.crypto.KeySelector)"/>
         /// </summary>
         public Javax.Xml.Crypto.KeySelector KeySelector
         {
-            get { return IExecute<Javax.Xml.Crypto.KeySelector>("getKeySelector"); } set { IExecute("setKeySelector", value); }
+            get { return IExecuteWithSignature<Javax.Xml.Crypto.KeySelector>("getKeySelector", "()Ljavax/xml/crypto/KeySelector;"); } set { IExecuteWithSignature("setKeySelector", "(Ljavax/xml/crypto/KeySelector;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#getURIDereferencer()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#setURIDereferencer(javax.xml.crypto.URIDereferencer)"/>
         /// </summary>
         public Javax.Xml.Crypto.URIDereferencer URIDereferencer
         {
-            get { return IExecute<Javax.Xml.Crypto.URIDereferencer>("getURIDereferencer"); } set { IExecute("setURIDereferencer", value); }
+            get { return IExecuteWithSignature<Javax.Xml.Crypto.URIDereferencer>("getURIDereferencer", "()Ljavax/xml/crypto/URIDereferencer;"); } set { IExecuteWithSignature("setURIDereferencer", "(Ljavax/xml/crypto/URIDereferencer;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#get(java.lang.Object)"/>
@@ -154,7 +154,7 @@ namespace Javax.Xml.Crypto
         /// <returns><see cref="object"/></returns>
         public object Get(object arg0)
         {
-            return IExecute("get", arg0);
+            return IExecuteWithSignature("get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#getProperty(java.lang.String)"/>
@@ -163,7 +163,7 @@ namespace Javax.Xml.Crypto
         /// <returns><see cref="object"/></returns>
         public object GetProperty(Java.Lang.String arg0)
         {
-            return IExecute("getProperty", arg0);
+            return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#put(java.lang.Object,java.lang.Object)"/>

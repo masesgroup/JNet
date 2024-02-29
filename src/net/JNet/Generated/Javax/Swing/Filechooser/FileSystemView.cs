@@ -46,7 +46,7 @@ namespace Javax.Swing.Filechooser
         /// </summary>
         public static Javax.Swing.Filechooser.FileSystemView GetFileSystemView
         {
-            get { return SExecute<Javax.Swing.Filechooser.FileSystemView>(LocalBridgeClazz, "getFileSystemView"); }
+            get { return SExecuteWithSignature<Javax.Swing.Filechooser.FileSystemView>(LocalBridgeClazz, "getFileSystemView", "()Ljavax/swing/filechooser/FileSystemView;"); }
         }
 
         #endregion
@@ -57,28 +57,28 @@ namespace Javax.Swing.Filechooser
         /// </summary>
         public Java.Io.File[] ChooserComboBoxFiles
         {
-            get { return IExecuteArray<Java.Io.File>("getChooserComboBoxFiles"); }
+            get { return IExecuteWithSignatureArray<Java.Io.File>("getChooserComboBoxFiles", "()[Ljava/io/File;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getDefaultDirectory()"/> 
         /// </summary>
         public Java.Io.File DefaultDirectory
         {
-            get { return IExecute<Java.Io.File>("getDefaultDirectory"); }
+            get { return IExecuteWithSignature<Java.Io.File>("getDefaultDirectory", "()Ljava/io/File;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getHomeDirectory()"/> 
         /// </summary>
         public Java.Io.File HomeDirectory
         {
-            get { return IExecute<Java.Io.File>("getHomeDirectory"); }
+            get { return IExecuteWithSignature<Java.Io.File>("getHomeDirectory", "()Ljava/io/File;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getRoots()"/> 
         /// </summary>
         public Java.Io.File[] Roots
         {
-            get { return IExecuteArray<Java.Io.File>("getRoots"); }
+            get { return IExecuteWithSignatureArray<Java.Io.File>("getRoots", "()[Ljava/io/File;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#createNewFolder(java.io.File)"/>
@@ -88,7 +88,7 @@ namespace Javax.Swing.Filechooser
         /// <exception cref="Java.Io.IOException"/>
         public Java.Io.File CreateNewFolder(Java.Io.File arg0)
         {
-            return IExecute<Java.Io.File>("createNewFolder", arg0);
+            return IExecuteWithSignature<Java.Io.File>("createNewFolder", "(Ljava/io/File;)Ljava/io/File;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#isComputerNode(java.io.File)"/>
@@ -97,7 +97,7 @@ namespace Javax.Swing.Filechooser
         /// <returns><see cref="bool"/></returns>
         public bool IsComputerNode(Java.Io.File arg0)
         {
-            return IExecute<bool>("isComputerNode", arg0);
+            return IExecuteWithSignature<bool>("isComputerNode", "(Ljava/io/File;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#isDrive(java.io.File)"/>
@@ -106,7 +106,7 @@ namespace Javax.Swing.Filechooser
         /// <returns><see cref="bool"/></returns>
         public bool IsDrive(Java.Io.File arg0)
         {
-            return IExecute<bool>("isDrive", arg0);
+            return IExecuteWithSignature<bool>("isDrive", "(Ljava/io/File;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#isFileSystem(java.io.File)"/>
@@ -115,7 +115,7 @@ namespace Javax.Swing.Filechooser
         /// <returns><see cref="bool"/></returns>
         public bool IsFileSystem(Java.Io.File arg0)
         {
-            return IExecute<bool>("isFileSystem", arg0);
+            return IExecuteWithSignature<bool>("isFileSystem", "(Ljava/io/File;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#isFileSystemRoot(java.io.File)"/>
@@ -124,7 +124,7 @@ namespace Javax.Swing.Filechooser
         /// <returns><see cref="bool"/></returns>
         public bool IsFileSystemRoot(Java.Io.File arg0)
         {
-            return IExecute<bool>("isFileSystemRoot", arg0);
+            return IExecuteWithSignature<bool>("isFileSystemRoot", "(Ljava/io/File;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#isFloppyDrive(java.io.File)"/>
@@ -133,7 +133,7 @@ namespace Javax.Swing.Filechooser
         /// <returns><see cref="bool"/></returns>
         public bool IsFloppyDrive(Java.Io.File arg0)
         {
-            return IExecute<bool>("isFloppyDrive", arg0);
+            return IExecuteWithSignature<bool>("isFloppyDrive", "(Ljava/io/File;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#isHiddenFile(java.io.File)"/>
@@ -142,7 +142,7 @@ namespace Javax.Swing.Filechooser
         /// <returns><see cref="bool"/></returns>
         public bool IsHiddenFile(Java.Io.File arg0)
         {
-            return IExecute<bool>("isHiddenFile", arg0);
+            return IExecuteWithSignature<bool>("isHiddenFile", "(Ljava/io/File;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#isLink(java.io.File)"/>
@@ -151,7 +151,7 @@ namespace Javax.Swing.Filechooser
         /// <returns><see cref="bool"/></returns>
         public bool IsLink(Java.Io.File arg0)
         {
-            return IExecute<bool>("isLink", arg0);
+            return IExecuteWithSignature<bool>("isLink", "(Ljava/io/File;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#isParent(java.io.File,java.io.File)"/>
@@ -170,7 +170,7 @@ namespace Javax.Swing.Filechooser
         /// <returns><see cref="bool"/></returns>
         public bool IsRoot(Java.Io.File arg0)
         {
-            return IExecute<bool>("isRoot", arg0);
+            return IExecuteWithSignature<bool>("isRoot", "(Ljava/io/File;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#createFileObject(java.io.File,java.lang.String)"/>
@@ -189,7 +189,7 @@ namespace Javax.Swing.Filechooser
         /// <returns><see cref="Java.Io.File"/></returns>
         public Java.Io.File CreateFileObject(Java.Lang.String arg0)
         {
-            return IExecute<Java.Io.File>("createFileObject", arg0);
+            return IExecuteWithSignature<Java.Io.File>("createFileObject", "(Ljava/lang/String;)Ljava/io/File;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getChild(java.io.File,java.lang.String)"/>
@@ -209,7 +209,7 @@ namespace Javax.Swing.Filechooser
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public Java.Io.File GetLinkLocation(Java.Io.File arg0)
         {
-            return IExecute<Java.Io.File>("getLinkLocation", arg0);
+            return IExecuteWithSignature<Java.Io.File>("getLinkLocation", "(Ljava/io/File;)Ljava/io/File;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getParentDirectory(java.io.File)"/>
@@ -218,7 +218,7 @@ namespace Javax.Swing.Filechooser
         /// <returns><see cref="Java.Io.File"/></returns>
         public Java.Io.File GetParentDirectory(Java.Io.File arg0)
         {
-            return IExecute<Java.Io.File>("getParentDirectory", arg0);
+            return IExecuteWithSignature<Java.Io.File>("getParentDirectory", "(Ljava/io/File;)Ljava/io/File;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getFiles(java.io.File,boolean)"/>
@@ -237,7 +237,7 @@ namespace Javax.Swing.Filechooser
         /// <returns><see cref="Java.Lang.Boolean"/></returns>
         public Java.Lang.Boolean IsTraversable(Java.Io.File arg0)
         {
-            return IExecute<Java.Lang.Boolean>("isTraversable", arg0);
+            return IExecuteWithSignature<Java.Lang.Boolean>("isTraversable", "(Ljava/io/File;)Ljava/lang/Boolean;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getSystemDisplayName(java.io.File)"/>
@@ -246,7 +246,7 @@ namespace Javax.Swing.Filechooser
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetSystemDisplayName(Java.Io.File arg0)
         {
-            return IExecute<Java.Lang.String>("getSystemDisplayName", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getSystemDisplayName", "(Ljava/io/File;)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getSystemTypeDescription(java.io.File)"/>
@@ -255,7 +255,7 @@ namespace Javax.Swing.Filechooser
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetSystemTypeDescription(Java.Io.File arg0)
         {
-            return IExecute<Java.Lang.String>("getSystemTypeDescription", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getSystemTypeDescription", "(Ljava/io/File;)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getSystemIcon(java.io.File)"/>
@@ -264,7 +264,7 @@ namespace Javax.Swing.Filechooser
         /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public Javax.Swing.Icon GetSystemIcon(Java.Io.File arg0)
         {
-            return IExecute<Javax.Swing.Icon>("getSystemIcon", arg0);
+            return IExecuteWithSignature<Javax.Swing.Icon>("getSystemIcon", "(Ljava/io/File;)Ljavax/swing/Icon;", arg0);
         }
 
         #endregion

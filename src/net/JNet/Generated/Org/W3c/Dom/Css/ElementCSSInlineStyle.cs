@@ -72,7 +72,7 @@ namespace Org.W3c.Dom.Css
         /// </summary>
         public Org.W3c.Dom.Css.CSSStyleDeclaration Style
         {
-            get { return IExecute<Org.W3c.Dom.Css.CSSStyleDeclaration>("getStyle"); }
+            get { return IExecuteWithSignature<Org.W3c.Dom.Css.CSSStyleDeclaration>("getStyle", "()Lorg/w3c/dom/css/CSSStyleDeclaration;"); }
         }
 
         #endregion

@@ -107,7 +107,7 @@ namespace Javax.Security.Auth.Spi
         /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
         public bool Abort()
         {
-            return IExecute<bool>("abort");
+            return IExecuteWithSignature<bool>("abort", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#commit()"/>
@@ -117,7 +117,7 @@ namespace Javax.Security.Auth.Spi
         /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
         public bool Commit()
         {
-            return IExecute<bool>("commit");
+            return IExecuteWithSignature<bool>("commit", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#login()"/>
@@ -127,7 +127,7 @@ namespace Javax.Security.Auth.Spi
         /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
         public bool Login()
         {
-            return IExecute<bool>("login");
+            return IExecuteWithSignature<bool>("login", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#logout()"/>
@@ -137,7 +137,7 @@ namespace Javax.Security.Auth.Spi
         /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
         public bool Logout()
         {
-            return IExecute<bool>("logout");
+            return IExecuteWithSignature<bool>("logout", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#initialize(javax.security.auth.Subject,javax.security.auth.callback.CallbackHandler,java.util.Map,java.util.Map)"/>

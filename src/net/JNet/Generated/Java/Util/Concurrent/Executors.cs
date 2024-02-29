@@ -60,7 +60,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.Callable"/></returns>
         public static Java.Util.Concurrent.Callable<T> PrivilegedCallableMethod<T>(Java.Util.Concurrent.Callable<T> arg0)
         {
-            return SExecute<Java.Util.Concurrent.Callable<T>>(LocalBridgeClazz, "privilegedCallable", arg0);
+            return SExecuteWithSignature<Java.Util.Concurrent.Callable<T>>(LocalBridgeClazz, "privilegedCallable", "(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Callable;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#privilegedCallableUsingCurrentClassLoader(java.util.concurrent.Callable)"/>
@@ -70,7 +70,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.Callable"/></returns>
         public static Java.Util.Concurrent.Callable<T> PrivilegedCallableUsingCurrentClassLoaderMethod<T>(Java.Util.Concurrent.Callable<T> arg0)
         {
-            return SExecute<Java.Util.Concurrent.Callable<T>>(LocalBridgeClazz, "privilegedCallableUsingCurrentClassLoader", arg0);
+            return SExecuteWithSignature<Java.Util.Concurrent.Callable<T>>(LocalBridgeClazz, "privilegedCallableUsingCurrentClassLoader", "(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Callable;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#callable(java.lang.Runnable)"/>
@@ -79,7 +79,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.Callable"/></returns>
         public static Java.Util.Concurrent.Callable<object> Callable(Java.Lang.Runnable arg0)
         {
-            return SExecute<Java.Util.Concurrent.Callable<object>>(LocalBridgeClazz, "callable", arg0);
+            return SExecuteWithSignature<Java.Util.Concurrent.Callable<object>>(LocalBridgeClazz, "callable", "(Ljava/lang/Runnable;)Ljava/util/concurrent/Callable;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#callable(java.security.PrivilegedAction)"/>
@@ -88,7 +88,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.Callable"/></returns>
         public static Java.Util.Concurrent.Callable<object> Callable(Java.Security.PrivilegedAction<object> arg0)
         {
-            return SExecute<Java.Util.Concurrent.Callable<object>>(LocalBridgeClazz, "callable", arg0);
+            return SExecuteWithSignature<Java.Util.Concurrent.Callable<object>>(LocalBridgeClazz, "callable", "(Ljava/security/PrivilegedAction;)Ljava/util/concurrent/Callable;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#callable(java.security.PrivilegedExceptionAction)"/>
@@ -97,7 +97,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.Callable"/></returns>
         public static Java.Util.Concurrent.Callable<object> Callable(Java.Security.PrivilegedExceptionAction<object> arg0)
         {
-            return SExecute<Java.Util.Concurrent.Callable<object>>(LocalBridgeClazz, "callable", arg0);
+            return SExecuteWithSignature<Java.Util.Concurrent.Callable<object>>(LocalBridgeClazz, "callable", "(Ljava/security/PrivilegedExceptionAction;)Ljava/util/concurrent/Callable;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newCachedThreadPool()"/>
@@ -106,7 +106,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ExecutorService"/></returns>
         public static Java.Util.Concurrent.ExecutorService NewCachedThreadPool()
         {
-            return SExecute<Java.Util.Concurrent.ExecutorService>(LocalBridgeClazz, "newCachedThreadPool");
+            return SExecuteWithSignature<Java.Util.Concurrent.ExecutorService>(LocalBridgeClazz, "newCachedThreadPool", "()Ljava/util/concurrent/ExecutorService;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newCachedThreadPool(java.util.concurrent.ThreadFactory)"/>
@@ -115,7 +115,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ExecutorService"/></returns>
         public static Java.Util.Concurrent.ExecutorService NewCachedThreadPool(Java.Util.Concurrent.ThreadFactory arg0)
         {
-            return SExecute<Java.Util.Concurrent.ExecutorService>(LocalBridgeClazz, "newCachedThreadPool", arg0);
+            return SExecuteWithSignature<Java.Util.Concurrent.ExecutorService>(LocalBridgeClazz, "newCachedThreadPool", "(Ljava/util/concurrent/ThreadFactory;)Ljava/util/concurrent/ExecutorService;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newFixedThreadPool(int,java.util.concurrent.ThreadFactory)"/>
@@ -134,7 +134,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ExecutorService"/></returns>
         public static Java.Util.Concurrent.ExecutorService NewFixedThreadPool(int arg0)
         {
-            return SExecute<Java.Util.Concurrent.ExecutorService>(LocalBridgeClazz, "newFixedThreadPool", arg0);
+            return SExecuteWithSignature<Java.Util.Concurrent.ExecutorService>(LocalBridgeClazz, "newFixedThreadPool", "(I)Ljava/util/concurrent/ExecutorService;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newSingleThreadExecutor()"/>
@@ -143,7 +143,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ExecutorService"/></returns>
         public static Java.Util.Concurrent.ExecutorService NewSingleThreadExecutor()
         {
-            return SExecute<Java.Util.Concurrent.ExecutorService>(LocalBridgeClazz, "newSingleThreadExecutor");
+            return SExecuteWithSignature<Java.Util.Concurrent.ExecutorService>(LocalBridgeClazz, "newSingleThreadExecutor", "()Ljava/util/concurrent/ExecutorService;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newSingleThreadExecutor(java.util.concurrent.ThreadFactory)"/>
@@ -152,7 +152,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ExecutorService"/></returns>
         public static Java.Util.Concurrent.ExecutorService NewSingleThreadExecutor(Java.Util.Concurrent.ThreadFactory arg0)
         {
-            return SExecute<Java.Util.Concurrent.ExecutorService>(LocalBridgeClazz, "newSingleThreadExecutor", arg0);
+            return SExecuteWithSignature<Java.Util.Concurrent.ExecutorService>(LocalBridgeClazz, "newSingleThreadExecutor", "(Ljava/util/concurrent/ThreadFactory;)Ljava/util/concurrent/ExecutorService;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newWorkStealingPool()"/>
@@ -161,7 +161,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ExecutorService"/></returns>
         public static Java.Util.Concurrent.ExecutorService NewWorkStealingPool()
         {
-            return SExecute<Java.Util.Concurrent.ExecutorService>(LocalBridgeClazz, "newWorkStealingPool");
+            return SExecuteWithSignature<Java.Util.Concurrent.ExecutorService>(LocalBridgeClazz, "newWorkStealingPool", "()Ljava/util/concurrent/ExecutorService;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newWorkStealingPool(int)"/>
@@ -170,7 +170,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ExecutorService"/></returns>
         public static Java.Util.Concurrent.ExecutorService NewWorkStealingPool(int arg0)
         {
-            return SExecute<Java.Util.Concurrent.ExecutorService>(LocalBridgeClazz, "newWorkStealingPool", arg0);
+            return SExecuteWithSignature<Java.Util.Concurrent.ExecutorService>(LocalBridgeClazz, "newWorkStealingPool", "(I)Ljava/util/concurrent/ExecutorService;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#unconfigurableExecutorService(java.util.concurrent.ExecutorService)"/>
@@ -179,7 +179,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ExecutorService"/></returns>
         public static Java.Util.Concurrent.ExecutorService UnconfigurableExecutorService(Java.Util.Concurrent.ExecutorService arg0)
         {
-            return SExecute<Java.Util.Concurrent.ExecutorService>(LocalBridgeClazz, "unconfigurableExecutorService", arg0);
+            return SExecuteWithSignature<Java.Util.Concurrent.ExecutorService>(LocalBridgeClazz, "unconfigurableExecutorService", "(Ljava/util/concurrent/ExecutorService;)Ljava/util/concurrent/ExecutorService;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newScheduledThreadPool(int,java.util.concurrent.ThreadFactory)"/>
@@ -198,7 +198,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ScheduledExecutorService"/></returns>
         public static Java.Util.Concurrent.ScheduledExecutorService NewScheduledThreadPool(int arg0)
         {
-            return SExecute<Java.Util.Concurrent.ScheduledExecutorService>(LocalBridgeClazz, "newScheduledThreadPool", arg0);
+            return SExecuteWithSignature<Java.Util.Concurrent.ScheduledExecutorService>(LocalBridgeClazz, "newScheduledThreadPool", "(I)Ljava/util/concurrent/ScheduledExecutorService;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newSingleThreadScheduledExecutor()"/>
@@ -207,7 +207,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ScheduledExecutorService"/></returns>
         public static Java.Util.Concurrent.ScheduledExecutorService NewSingleThreadScheduledExecutor()
         {
-            return SExecute<Java.Util.Concurrent.ScheduledExecutorService>(LocalBridgeClazz, "newSingleThreadScheduledExecutor");
+            return SExecuteWithSignature<Java.Util.Concurrent.ScheduledExecutorService>(LocalBridgeClazz, "newSingleThreadScheduledExecutor", "()Ljava/util/concurrent/ScheduledExecutorService;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newSingleThreadScheduledExecutor(java.util.concurrent.ThreadFactory)"/>
@@ -216,7 +216,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ScheduledExecutorService"/></returns>
         public static Java.Util.Concurrent.ScheduledExecutorService NewSingleThreadScheduledExecutor(Java.Util.Concurrent.ThreadFactory arg0)
         {
-            return SExecute<Java.Util.Concurrent.ScheduledExecutorService>(LocalBridgeClazz, "newSingleThreadScheduledExecutor", arg0);
+            return SExecuteWithSignature<Java.Util.Concurrent.ScheduledExecutorService>(LocalBridgeClazz, "newSingleThreadScheduledExecutor", "(Ljava/util/concurrent/ThreadFactory;)Ljava/util/concurrent/ScheduledExecutorService;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#unconfigurableScheduledExecutorService(java.util.concurrent.ScheduledExecutorService)"/>
@@ -225,7 +225,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ScheduledExecutorService"/></returns>
         public static Java.Util.Concurrent.ScheduledExecutorService UnconfigurableScheduledExecutorService(Java.Util.Concurrent.ScheduledExecutorService arg0)
         {
-            return SExecute<Java.Util.Concurrent.ScheduledExecutorService>(LocalBridgeClazz, "unconfigurableScheduledExecutorService", arg0);
+            return SExecuteWithSignature<Java.Util.Concurrent.ScheduledExecutorService>(LocalBridgeClazz, "unconfigurableScheduledExecutorService", "(Ljava/util/concurrent/ScheduledExecutorService;)Ljava/util/concurrent/ScheduledExecutorService;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#defaultThreadFactory()"/>
@@ -234,7 +234,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ThreadFactory"/></returns>
         public static Java.Util.Concurrent.ThreadFactory DefaultThreadFactoryMethod()
         {
-            return SExecute<Java.Util.Concurrent.ThreadFactory>(LocalBridgeClazz, "defaultThreadFactory");
+            return SExecuteWithSignature<Java.Util.Concurrent.ThreadFactory>(LocalBridgeClazz, "defaultThreadFactory", "()Ljava/util/concurrent/ThreadFactory;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#privilegedThreadFactory()"/>
@@ -243,7 +243,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ThreadFactory"/></returns>
         public static Java.Util.Concurrent.ThreadFactory PrivilegedThreadFactoryMethod()
         {
-            return SExecute<Java.Util.Concurrent.ThreadFactory>(LocalBridgeClazz, "privilegedThreadFactory");
+            return SExecuteWithSignature<Java.Util.Concurrent.ThreadFactory>(LocalBridgeClazz, "privilegedThreadFactory", "()Ljava/util/concurrent/ThreadFactory;");
         }
 
         #endregion

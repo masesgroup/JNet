@@ -80,21 +80,21 @@ namespace Org.W3c.Dom.Css
         /// </summary>
         public Java.Lang.String Href
         {
-            get { return IExecute<Java.Lang.String>("getHref"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getHref", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSImportRule.html#getMedia()"/> 
         /// </summary>
         public Org.W3c.Dom.Stylesheets.MediaList Media
         {
-            get { return IExecute<Org.W3c.Dom.Stylesheets.MediaList>("getMedia"); }
+            get { return IExecuteWithSignature<Org.W3c.Dom.Stylesheets.MediaList>("getMedia", "()Lorg/w3c/dom/stylesheets/MediaList;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSImportRule.html#getStyleSheet()"/> 
         /// </summary>
         public Org.W3c.Dom.Css.CSSStyleSheet StyleSheet
         {
-            get { return IExecute<Org.W3c.Dom.Css.CSSStyleSheet>("getStyleSheet"); }
+            get { return IExecuteWithSignature<Org.W3c.Dom.Css.CSSStyleSheet>("getStyleSheet", "()Lorg/w3c/dom/css/CSSStyleSheet;"); }
         }
 
         #endregion

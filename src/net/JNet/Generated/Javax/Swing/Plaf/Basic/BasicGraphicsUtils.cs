@@ -46,14 +46,14 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public static Java.Awt.Insets EtchedInsets
         {
-            get { return SExecute<Java.Awt.Insets>(LocalBridgeClazz, "getEtchedInsets"); }
+            get { return SExecuteWithSignature<Java.Awt.Insets>(LocalBridgeClazz, "getEtchedInsets", "()Ljava/awt/Insets;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#getGrooveInsets()"/> 
         /// </summary>
         public static Java.Awt.Insets GrooveInsets
         {
-            get { return SExecute<Java.Awt.Insets>(LocalBridgeClazz, "getGrooveInsets"); }
+            get { return SExecuteWithSignature<Java.Awt.Insets>(LocalBridgeClazz, "getGrooveInsets", "()Ljava/awt/Insets;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#getStringWidth(javax.swing.JComponent,java.awt.FontMetrics,java.lang.String)"/>

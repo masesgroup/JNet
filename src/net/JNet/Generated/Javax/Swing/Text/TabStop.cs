@@ -134,21 +134,21 @@ namespace Javax.Swing.Text
         /// </summary>
         public int Alignment
         {
-            get { return IExecute<int>("getAlignment"); }
+            get { return IExecuteWithSignature<int>("getAlignment", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#getLeader()"/> 
         /// </summary>
         public int Leader
         {
-            get { return IExecute<int>("getLeader"); }
+            get { return IExecuteWithSignature<int>("getLeader", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#getPosition()"/> 
         /// </summary>
         public float Position
         {
-            get { return IExecute<float>("getPosition"); }
+            get { return IExecuteWithSignature<float>("getPosition", "()F"); }
         }
 
         #endregion

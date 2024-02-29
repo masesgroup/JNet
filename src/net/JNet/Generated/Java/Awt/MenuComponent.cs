@@ -50,28 +50,28 @@ namespace Java.Awt
         /// </summary>
         public Javax.Accessibility.AccessibleContext AccessibleContext
         {
-            get { return IExecute<Javax.Accessibility.AccessibleContext>("getAccessibleContext"); }
+            get { return IExecuteWithSignature<Javax.Accessibility.AccessibleContext>("getAccessibleContext", "()Ljavax/accessibility/AccessibleContext;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuComponent.html#getFont()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuComponent.html#setFont(java.awt.Font)"/>
         /// </summary>
         public Java.Awt.Font Font
         {
-            get { return IExecute<Java.Awt.Font>("getFont"); } set { IExecute("setFont", value); }
+            get { return IExecuteWithSignature<Java.Awt.Font>("getFont", "()Ljava/awt/Font;"); } set { IExecuteWithSignature("setFont", "(Ljava/awt/Font;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuComponent.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuComponent.html#setName(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); } set { IExecute("setName", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setName", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuComponent.html#getParent()"/> 
         /// </summary>
         public Java.Awt.MenuContainer Parent
         {
-            get { return IExecute<Java.Awt.MenuContainer>("getParent"); }
+            get { return IExecuteWithSignature<Java.Awt.MenuContainer>("getParent", "()Ljava/awt/MenuContainer;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuComponent.html#dispatchEvent(java.awt.AWTEvent)"/>
@@ -79,14 +79,14 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.AWTEvent"/></param>
         public void DispatchEvent(Java.Awt.AWTEvent arg0)
         {
-            IExecute("dispatchEvent", arg0);
+            IExecuteWithSignature("dispatchEvent", "(Ljava/awt/AWTEvent;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuComponent.html#removeNotify()"/>
         /// </summary>
         public void RemoveNotify()
         {
-            IExecute("removeNotify");
+            IExecuteWithSignature("removeNotify", "()V");
         }
 
         #endregion

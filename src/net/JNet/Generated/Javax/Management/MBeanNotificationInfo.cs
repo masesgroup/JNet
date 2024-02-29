@@ -75,7 +75,7 @@ namespace Javax.Management
         /// </summary>
         public Java.Lang.String[] NotifTypes
         {
-            get { return IExecuteArray<Java.Lang.String>("getNotifTypes"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.String>("getNotifTypes", "()[Ljava/lang/String;"); }
         }
 
         #endregion

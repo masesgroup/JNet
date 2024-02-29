@@ -218,7 +218,7 @@ namespace Javax.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetColumnCount(int arg0)
         {
-            IExecute("setColumnCount", arg0);
+            IExecuteWithSignature("setColumnCount", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setColumnDisplaySize(int,int)"/>

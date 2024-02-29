@@ -109,7 +109,7 @@ namespace Java.Util.Zip
         /// <exception cref="Java.Io.IOException"/>
         public void Finish()
         {
-            IExecute("finish");
+            IExecuteWithSignature("finish", "()V");
         }
 
         #endregion

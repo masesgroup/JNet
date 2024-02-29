@@ -72,7 +72,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
         }
 
         #endregion

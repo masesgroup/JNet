@@ -58,14 +58,14 @@ namespace Javax.Swing.Plaf.Metal
         /// </summary>
         public int IconHeight
         {
-            get { return IExecute<int>("getIconHeight"); }
+            get { return IExecuteWithSignature<int>("getIconHeight", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxIcon.html#getIconWidth()"/> 
         /// </summary>
         public int IconWidth
         {
-            get { return IExecute<int>("getIconWidth"); }
+            get { return IExecuteWithSignature<int>("getIconWidth", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxIcon.html#paintIcon(java.awt.Component,java.awt.Graphics,int,int)"/>

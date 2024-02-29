@@ -48,7 +48,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="Java.Lang.Management.ThreadInfo"/></returns>
         public static Java.Lang.Management.ThreadInfo From(Javax.Management.Openmbean.CompositeData arg0)
         {
-            return SExecute<Java.Lang.Management.ThreadInfo>(LocalBridgeClazz, "from", arg0);
+            return SExecuteWithSignature<Java.Lang.Management.ThreadInfo>(LocalBridgeClazz, "from", "(Ljavax/management/openmbean/CompositeData;)Ljava/lang/management/ThreadInfo;", arg0);
         }
 
         #endregion
@@ -59,105 +59,105 @@ namespace Java.Lang.Management
         /// </summary>
         public long BlockedCount
         {
-            get { return IExecute<long>("getBlockedCount"); }
+            get { return IExecuteWithSignature<long>("getBlockedCount", "()J"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#getBlockedTime()"/> 
         /// </summary>
         public long BlockedTime
         {
-            get { return IExecute<long>("getBlockedTime"); }
+            get { return IExecuteWithSignature<long>("getBlockedTime", "()J"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#getLockedMonitors()"/> 
         /// </summary>
         public Java.Lang.Management.MonitorInfo[] LockedMonitors
         {
-            get { return IExecuteArray<Java.Lang.Management.MonitorInfo>("getLockedMonitors"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.Management.MonitorInfo>("getLockedMonitors", "()[Ljava/lang/management/MonitorInfo;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#getLockedSynchronizers()"/> 
         /// </summary>
         public Java.Lang.Management.LockInfo[] LockedSynchronizers
         {
-            get { return IExecuteArray<Java.Lang.Management.LockInfo>("getLockedSynchronizers"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.Management.LockInfo>("getLockedSynchronizers", "()[Ljava/lang/management/LockInfo;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#getLockInfo()"/> 
         /// </summary>
         public Java.Lang.Management.LockInfo LockInfo
         {
-            get { return IExecute<Java.Lang.Management.LockInfo>("getLockInfo"); }
+            get { return IExecuteWithSignature<Java.Lang.Management.LockInfo>("getLockInfo", "()Ljava/lang/management/LockInfo;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#getLockName()"/> 
         /// </summary>
         public Java.Lang.String LockName
         {
-            get { return IExecute<Java.Lang.String>("getLockName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getLockName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#getLockOwnerId()"/> 
         /// </summary>
         public long LockOwnerId
         {
-            get { return IExecute<long>("getLockOwnerId"); }
+            get { return IExecuteWithSignature<long>("getLockOwnerId", "()J"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#getLockOwnerName()"/> 
         /// </summary>
         public Java.Lang.String LockOwnerName
         {
-            get { return IExecute<Java.Lang.String>("getLockOwnerName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getLockOwnerName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#getPriority()"/> 
         /// </summary>
         public int Priority
         {
-            get { return IExecute<int>("getPriority"); }
+            get { return IExecuteWithSignature<int>("getPriority", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#getStackTrace()"/> 
         /// </summary>
         public Java.Lang.StackTraceElement[] StackTrace
         {
-            get { return IExecuteArray<Java.Lang.StackTraceElement>("getStackTrace"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.StackTraceElement>("getStackTrace", "()[Ljava/lang/StackTraceElement;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#getThreadId()"/> 
         /// </summary>
         public long ThreadId
         {
-            get { return IExecute<long>("getThreadId"); }
+            get { return IExecuteWithSignature<long>("getThreadId", "()J"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#getThreadName()"/> 
         /// </summary>
         public Java.Lang.String ThreadName
         {
-            get { return IExecute<Java.Lang.String>("getThreadName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getThreadName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#getThreadState()"/> 
         /// </summary>
         public Java.Lang.Thread.State ThreadState
         {
-            get { return IExecute<Java.Lang.Thread.State>("getThreadState"); }
+            get { return IExecuteWithSignature<Java.Lang.Thread.State>("getThreadState", "()Ljava/lang/Thread$State;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#getWaitedCount()"/> 
         /// </summary>
         public long WaitedCount
         {
-            get { return IExecute<long>("getWaitedCount"); }
+            get { return IExecuteWithSignature<long>("getWaitedCount", "()J"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#getWaitedTime()"/> 
         /// </summary>
         public long WaitedTime
         {
-            get { return IExecute<long>("getWaitedTime"); }
+            get { return IExecuteWithSignature<long>("getWaitedTime", "()J"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#isDaemon()"/>
@@ -166,7 +166,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsDaemon()
         {
-            return IExecute<bool>("isDaemon");
+            return IExecuteWithSignature<bool>("isDaemon", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#isInNative()"/>
@@ -175,7 +175,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsInNative()
         {
-            return IExecute<bool>("isInNative");
+            return IExecuteWithSignature<bool>("isInNative", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#isSuspended()"/>
@@ -184,7 +184,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsSuspended()
         {
-            return IExecute<bool>("isSuspended");
+            return IExecuteWithSignature<bool>("isSuspended", "()Z");
         }
 
         #endregion

@@ -67,7 +67,7 @@ namespace Javax.Sql.Rowset.Serial
         /// </summary>
         public Java.Net.URL Datalink
         {
-            get { return IExecute<Java.Net.URL>("getDatalink"); }
+            get { return IExecuteWithSignature<Java.Net.URL>("getDatalink", "()Ljava/net/URL;"); }
         }
 
         #endregion

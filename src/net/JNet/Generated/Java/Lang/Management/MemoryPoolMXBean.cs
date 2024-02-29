@@ -142,70 +142,70 @@ namespace Java.Lang.Management
         /// </summary>
         public Java.Lang.Management.MemoryUsage CollectionUsage
         {
-            get { return IExecute<Java.Lang.Management.MemoryUsage>("getCollectionUsage"); }
+            get { return IExecuteWithSignature<Java.Lang.Management.MemoryUsage>("getCollectionUsage", "()Ljava/lang/management/MemoryUsage;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#getCollectionUsageThreshold()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#setCollectionUsageThreshold(long)"/>
         /// </summary>
         public long CollectionUsageThreshold
         {
-            get { return IExecute<long>("getCollectionUsageThreshold"); } set { IExecute("setCollectionUsageThreshold", value); }
+            get { return IExecuteWithSignature<long>("getCollectionUsageThreshold", "()J"); } set { IExecuteWithSignature("setCollectionUsageThreshold", "(J)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#getCollectionUsageThresholdCount()"/> 
         /// </summary>
         public long CollectionUsageThresholdCount
         {
-            get { return IExecute<long>("getCollectionUsageThresholdCount"); }
+            get { return IExecuteWithSignature<long>("getCollectionUsageThresholdCount", "()J"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#getMemoryManagerNames()"/> 
         /// </summary>
         public Java.Lang.String[] MemoryManagerNames
         {
-            get { return IExecuteArray<Java.Lang.String>("getMemoryManagerNames"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.String>("getMemoryManagerNames", "()[Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#getPeakUsage()"/> 
         /// </summary>
         public Java.Lang.Management.MemoryUsage PeakUsage
         {
-            get { return IExecute<Java.Lang.Management.MemoryUsage>("getPeakUsage"); }
+            get { return IExecuteWithSignature<Java.Lang.Management.MemoryUsage>("getPeakUsage", "()Ljava/lang/management/MemoryUsage;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#getType()"/> 
         /// </summary>
         public Java.Lang.Management.MemoryType Type
         {
-            get { return IExecute<Java.Lang.Management.MemoryType>("getType"); }
+            get { return IExecuteWithSignature<Java.Lang.Management.MemoryType>("getType", "()Ljava/lang/management/MemoryType;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#getUsage()"/> 
         /// </summary>
         public Java.Lang.Management.MemoryUsage Usage
         {
-            get { return IExecute<Java.Lang.Management.MemoryUsage>("getUsage"); }
+            get { return IExecuteWithSignature<Java.Lang.Management.MemoryUsage>("getUsage", "()Ljava/lang/management/MemoryUsage;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#getUsageThreshold()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#setUsageThreshold(long)"/>
         /// </summary>
         public long UsageThreshold
         {
-            get { return IExecute<long>("getUsageThreshold"); } set { IExecute("setUsageThreshold", value); }
+            get { return IExecuteWithSignature<long>("getUsageThreshold", "()J"); } set { IExecuteWithSignature("setUsageThreshold", "(J)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#getUsageThresholdCount()"/> 
         /// </summary>
         public long UsageThresholdCount
         {
-            get { return IExecute<long>("getUsageThresholdCount"); }
+            get { return IExecuteWithSignature<long>("getUsageThresholdCount", "()J"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#isCollectionUsageThresholdExceeded()"/>
@@ -214,7 +214,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsCollectionUsageThresholdExceeded()
         {
-            return IExecute<bool>("isCollectionUsageThresholdExceeded");
+            return IExecuteWithSignature<bool>("isCollectionUsageThresholdExceeded", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#isCollectionUsageThresholdSupported()"/>
@@ -223,7 +223,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsCollectionUsageThresholdSupported()
         {
-            return IExecute<bool>("isCollectionUsageThresholdSupported");
+            return IExecuteWithSignature<bool>("isCollectionUsageThresholdSupported", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#isUsageThresholdExceeded()"/>
@@ -232,7 +232,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsUsageThresholdExceeded()
         {
-            return IExecute<bool>("isUsageThresholdExceeded");
+            return IExecuteWithSignature<bool>("isUsageThresholdExceeded", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#isUsageThresholdSupported()"/>
@@ -241,7 +241,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsUsageThresholdSupported()
         {
-            return IExecute<bool>("isUsageThresholdSupported");
+            return IExecuteWithSignature<bool>("isUsageThresholdSupported", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#isValid()"/>
@@ -250,14 +250,14 @@ namespace Java.Lang.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsValid()
         {
-            return IExecute<bool>("isValid");
+            return IExecuteWithSignature<bool>("isValid", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#resetPeakUsage()"/>
         /// </summary>
         public void ResetPeakUsage()
         {
-            IExecute("resetPeakUsage");
+            IExecuteWithSignature("resetPeakUsage", "()V");
         }
 
         #endregion

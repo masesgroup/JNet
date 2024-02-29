@@ -67,49 +67,49 @@ namespace Java.Text
         /// </summary>
         public Java.Text.DecimalFormatSymbols DecimalFormatSymbols
         {
-            get { return IExecute<Java.Text.DecimalFormatSymbols>("getDecimalFormatSymbols"); } set { IExecute("setDecimalFormatSymbols", value); }
+            get { return IExecuteWithSignature<Java.Text.DecimalFormatSymbols>("getDecimalFormatSymbols", "()Ljava/text/DecimalFormatSymbols;"); } set { IExecuteWithSignature("setDecimalFormatSymbols", "(Ljava/text/DecimalFormatSymbols;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getGroupingSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setGroupingSize(int)"/>
         /// </summary>
         public int GroupingSize
         {
-            get { return IExecute<int>("getGroupingSize"); } set { IExecute("setGroupingSize", value); }
+            get { return IExecuteWithSignature<int>("getGroupingSize", "()I"); } set { IExecuteWithSignature("setGroupingSize", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getMultiplier()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setMultiplier(int)"/>
         /// </summary>
         public int Multiplier
         {
-            get { return IExecute<int>("getMultiplier"); } set { IExecute("setMultiplier", value); }
+            get { return IExecuteWithSignature<int>("getMultiplier", "()I"); } set { IExecuteWithSignature("setMultiplier", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getNegativePrefix()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setNegativePrefix(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String NegativePrefix
         {
-            get { return IExecute<Java.Lang.String>("getNegativePrefix"); } set { IExecute("setNegativePrefix", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getNegativePrefix", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setNegativePrefix", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getNegativeSuffix()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setNegativeSuffix(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String NegativeSuffix
         {
-            get { return IExecute<Java.Lang.String>("getNegativeSuffix"); } set { IExecute("setNegativeSuffix", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getNegativeSuffix", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setNegativeSuffix", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getPositivePrefix()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setPositivePrefix(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String PositivePrefix
         {
-            get { return IExecute<Java.Lang.String>("getPositivePrefix"); } set { IExecute("setPositivePrefix", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getPositivePrefix", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setPositivePrefix", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getPositiveSuffix()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setPositiveSuffix(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String PositiveSuffix
         {
-            get { return IExecute<Java.Lang.String>("getPositiveSuffix"); } set { IExecute("setPositiveSuffix", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getPositiveSuffix", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setPositiveSuffix", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#isDecimalSeparatorAlwaysShown()"/>
@@ -118,7 +118,7 @@ namespace Java.Text
         /// <returns><see cref="bool"/></returns>
         public bool IsDecimalSeparatorAlwaysShown()
         {
-            return IExecute<bool>("isDecimalSeparatorAlwaysShown");
+            return IExecuteWithSignature<bool>("isDecimalSeparatorAlwaysShown", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#isParseBigDecimal()"/>
@@ -127,7 +127,7 @@ namespace Java.Text
         /// <returns><see cref="bool"/></returns>
         public bool IsParseBigDecimal()
         {
-            return IExecute<bool>("isParseBigDecimal");
+            return IExecuteWithSignature<bool>("isParseBigDecimal", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#toLocalizedPattern()"/>
@@ -136,7 +136,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToLocalizedPattern()
         {
-            return IExecute<Java.Lang.String>("toLocalizedPattern");
+            return IExecuteWithSignature<Java.Lang.String>("toLocalizedPattern", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#toPattern()"/>
@@ -145,7 +145,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToPattern()
         {
-            return IExecute<Java.Lang.String>("toPattern");
+            return IExecuteWithSignature<Java.Lang.String>("toPattern", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#applyLocalizedPattern(java.lang.String)"/>
@@ -153,7 +153,7 @@ namespace Java.Text
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void ApplyLocalizedPattern(Java.Lang.String arg0)
         {
-            IExecute("applyLocalizedPattern", arg0);
+            IExecuteWithSignature("applyLocalizedPattern", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#applyPattern(java.lang.String)"/>
@@ -161,7 +161,7 @@ namespace Java.Text
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void ApplyPattern(Java.Lang.String arg0)
         {
-            IExecute("applyPattern", arg0);
+            IExecuteWithSignature("applyPattern", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setDecimalSeparatorAlwaysShown(boolean)"/>
@@ -169,7 +169,7 @@ namespace Java.Text
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetDecimalSeparatorAlwaysShown(bool arg0)
         {
-            IExecute("setDecimalSeparatorAlwaysShown", arg0);
+            IExecuteWithSignature("setDecimalSeparatorAlwaysShown", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setParseBigDecimal(boolean)"/>
@@ -177,7 +177,7 @@ namespace Java.Text
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetParseBigDecimal(bool arg0)
         {
-            IExecute("setParseBigDecimal", arg0);
+            IExecuteWithSignature("setParseBigDecimal", "(Z)V", arg0);
         }
 
         #endregion

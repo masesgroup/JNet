@@ -102,84 +102,84 @@ namespace Javax.Swing.Table
         /// </summary>
         public Javax.Swing.Table.TableCellEditor CellEditor
         {
-            get { return IExecute<Javax.Swing.Table.TableCellEditor>("getCellEditor"); } set { IExecute("setCellEditor", value); }
+            get { return IExecuteWithSignature<Javax.Swing.Table.TableCellEditor>("getCellEditor", "()Ljavax/swing/table/TableCellEditor;"); } set { IExecuteWithSignature("setCellEditor", "(Ljavax/swing/table/TableCellEditor;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#getCellRenderer()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#setCellRenderer(javax.swing.table.TableCellRenderer)"/>
         /// </summary>
         public Javax.Swing.Table.TableCellRenderer CellRenderer
         {
-            get { return IExecute<Javax.Swing.Table.TableCellRenderer>("getCellRenderer"); } set { IExecute("setCellRenderer", value); }
+            get { return IExecuteWithSignature<Javax.Swing.Table.TableCellRenderer>("getCellRenderer", "()Ljavax/swing/table/TableCellRenderer;"); } set { IExecuteWithSignature("setCellRenderer", "(Ljavax/swing/table/TableCellRenderer;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#getHeaderRenderer()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#setHeaderRenderer(javax.swing.table.TableCellRenderer)"/>
         /// </summary>
         public Javax.Swing.Table.TableCellRenderer HeaderRenderer
         {
-            get { return IExecute<Javax.Swing.Table.TableCellRenderer>("getHeaderRenderer"); } set { IExecute("setHeaderRenderer", value); }
+            get { return IExecuteWithSignature<Javax.Swing.Table.TableCellRenderer>("getHeaderRenderer", "()Ljavax/swing/table/TableCellRenderer;"); } set { IExecuteWithSignature("setHeaderRenderer", "(Ljavax/swing/table/TableCellRenderer;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#getHeaderValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#setHeaderValue(java.lang.Object)"/>
         /// </summary>
         public object HeaderValue
         {
-            get { return IExecute("getHeaderValue"); } set { IExecute("setHeaderValue", value); }
+            get { return IExecuteWithSignature("getHeaderValue", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setHeaderValue", "(Ljava/lang/Object;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#getIdentifier()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#setIdentifier(java.lang.Object)"/>
         /// </summary>
         public object Identifier
         {
-            get { return IExecute("getIdentifier"); } set { IExecute("setIdentifier", value); }
+            get { return IExecuteWithSignature("getIdentifier", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setIdentifier", "(Ljava/lang/Object;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#getMaxWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#setMaxWidth(int)"/>
         /// </summary>
         public int MaxWidth
         {
-            get { return IExecute<int>("getMaxWidth"); } set { IExecute("setMaxWidth", value); }
+            get { return IExecuteWithSignature<int>("getMaxWidth", "()I"); } set { IExecuteWithSignature("setMaxWidth", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#getMinWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#setMinWidth(int)"/>
         /// </summary>
         public int MinWidth
         {
-            get { return IExecute<int>("getMinWidth"); } set { IExecute("setMinWidth", value); }
+            get { return IExecuteWithSignature<int>("getMinWidth", "()I"); } set { IExecuteWithSignature("setMinWidth", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#getModelIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#setModelIndex(int)"/>
         /// </summary>
         public int ModelIndex
         {
-            get { return IExecute<int>("getModelIndex"); } set { IExecute("setModelIndex", value); }
+            get { return IExecuteWithSignature<int>("getModelIndex", "()I"); } set { IExecuteWithSignature("setModelIndex", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#getPreferredWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#setPreferredWidth(int)"/>
         /// </summary>
         public int PreferredWidth
         {
-            get { return IExecute<int>("getPreferredWidth"); } set { IExecute("setPreferredWidth", value); }
+            get { return IExecuteWithSignature<int>("getPreferredWidth", "()I"); } set { IExecuteWithSignature("setPreferredWidth", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#getPropertyChangeListeners()"/> 
         /// </summary>
         public Java.Beans.PropertyChangeListener[] PropertyChangeListeners
         {
-            get { return IExecuteArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners"); }
+            get { return IExecuteWithSignatureArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners", "()[Ljava/beans/PropertyChangeListener;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#getResizable()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#setResizable(boolean)"/>
         /// </summary>
         public bool Resizable
         {
-            get { return IExecute<bool>("getResizable"); } set { IExecute("setResizable", value); }
+            get { return IExecuteWithSignature<bool>("getResizable", "()Z"); } set { IExecuteWithSignature("setResizable", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#getWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#setWidth(int)"/>
         /// </summary>
         public int Width
         {
-            get { return IExecute<int>("getWidth"); } set { IExecute("setWidth", value); }
+            get { return IExecuteWithSignature<int>("getWidth", "()I"); } set { IExecuteWithSignature("setWidth", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
@@ -187,7 +187,7 @@ namespace Javax.Swing.Table
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            IExecute("addPropertyChangeListener", arg0);
+            IExecuteWithSignature("addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>
@@ -195,14 +195,14 @@ namespace Javax.Swing.Table
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            IExecute("removePropertyChangeListener", arg0);
+            IExecuteWithSignature("removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#sizeWidthToFit()"/>
         /// </summary>
         public void SizeWidthToFit()
         {
-            IExecute("sizeWidthToFit");
+            IExecuteWithSignature("sizeWidthToFit", "()V");
         }
 
         #endregion

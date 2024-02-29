@@ -46,7 +46,7 @@ namespace Java.Time.Zone
         /// </summary>
         public static Java.Util.Set<Java.Lang.String> AvailableZoneIds
         {
-            get { return SExecute<Java.Util.Set<Java.Lang.String>>(LocalBridgeClazz, "getAvailableZoneIds"); }
+            get { return SExecuteWithSignature<Java.Util.Set<Java.Lang.String>>(LocalBridgeClazz, "getAvailableZoneIds", "()Ljava/util/Set;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html#refresh()"/>
@@ -55,7 +55,7 @@ namespace Java.Time.Zone
         /// <returns><see cref="bool"/></returns>
         public static bool Refresh()
         {
-            return SExecute<bool>(LocalBridgeClazz, "refresh");
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "refresh", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html#getRules(java.lang.String,boolean)"/>
@@ -74,7 +74,7 @@ namespace Java.Time.Zone
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public static Java.Util.NavigableMap<Java.Lang.String, Java.Time.Zone.ZoneRules> GetVersions(Java.Lang.String arg0)
         {
-            return SExecute<Java.Util.NavigableMap<Java.Lang.String, Java.Time.Zone.ZoneRules>>(LocalBridgeClazz, "getVersions", arg0);
+            return SExecuteWithSignature<Java.Util.NavigableMap<Java.Lang.String, Java.Time.Zone.ZoneRules>>(LocalBridgeClazz, "getVersions", "(Ljava/lang/String;)Ljava/util/NavigableMap;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html#registerProvider(java.time.zone.ZoneRulesProvider)"/>
@@ -82,7 +82,7 @@ namespace Java.Time.Zone
         /// <param name="arg0"><see cref="Java.Time.Zone.ZoneRulesProvider"/></param>
         public static void RegisterProvider(Java.Time.Zone.ZoneRulesProvider arg0)
         {
-            SExecute(LocalBridgeClazz, "registerProvider", arg0);
+            SExecuteWithSignature(LocalBridgeClazz, "registerProvider", "(Ljava/time/zone/ZoneRulesProvider;)V", arg0);
         }
 
         #endregion

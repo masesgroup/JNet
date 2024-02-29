@@ -92,7 +92,7 @@ namespace Javax.Swing.Border
         /// <returns><see cref="bool"/></returns>
         public bool IsBorderOpaque()
         {
-            return IExecute<bool>("isBorderOpaque");
+            return IExecuteWithSignature<bool>("isBorderOpaque", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/Border.html#getBorderInsets(java.awt.Component)"/>
@@ -101,7 +101,7 @@ namespace Javax.Swing.Border
         /// <returns><see cref="Java.Awt.Insets"/></returns>
         public Java.Awt.Insets GetBorderInsets(Java.Awt.Component arg0)
         {
-            return IExecute<Java.Awt.Insets>("getBorderInsets", arg0);
+            return IExecuteWithSignature<Java.Awt.Insets>("getBorderInsets", "(Ljava/awt/Component;)Ljava/awt/Insets;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/Border.html#paintBorder(java.awt.Component,java.awt.Graphics,int,int,int,int)"/>

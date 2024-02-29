@@ -129,7 +129,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.DoublePredicate AndDefault(Java.Util.Function.DoublePredicate arg0)
         {
-            return IExecute<Java.Util.Function.DoublePredicate>("andDefault", arg0);
+            return IExecuteWithSignature<Java.Util.Function.DoublePredicate>("andDefault", "(Ljava/util/function/DoublePredicate;)Ljava/util/function/DoublePredicate;", arg0);
         }
 
         /// <summary>
@@ -163,7 +163,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.DoublePredicate NegateDefault()
         {
-            return IExecute<Java.Util.Function.DoublePredicate>("negateDefault");
+            return IExecuteWithSignature<Java.Util.Function.DoublePredicate>("negateDefault", "()Ljava/util/function/DoublePredicate;");
         }
 
         /// <summary>
@@ -197,7 +197,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.DoublePredicate OrDefault(Java.Util.Function.DoublePredicate arg0)
         {
-            return IExecute<Java.Util.Function.DoublePredicate>("orDefault", arg0);
+            return IExecuteWithSignature<Java.Util.Function.DoublePredicate>("orDefault", "(Ljava/util/function/DoublePredicate;)Ljava/util/function/DoublePredicate;", arg0);
         }
 
         /// <summary>

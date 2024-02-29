@@ -72,7 +72,7 @@ namespace Java.Lang.Reflect
         /// </summary>
         public Java.Lang.String TypeName
         {
-            get { return IExecute<Java.Lang.String>("getTypeName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getTypeName", "()Ljava/lang/String;"); }
         }
 
         #endregion

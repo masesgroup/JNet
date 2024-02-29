@@ -62,7 +62,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="object"/></returns>
         public object Visit(Javax.Lang.Model.Element.Element arg0)
         {
-            return IExecute("visit", arg0);
+            return IExecuteWithSignature("visit", "(Ljavax/lang/model/element/Element;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor6.html#visitModule(javax.lang.model.element.ModuleElement,java.lang.Object)"/>
@@ -136,7 +136,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><typeparamref name="R"/></returns>
         public R Visit(Javax.Lang.Model.Element.Element arg0)
         {
-            return IExecute<R>("visit", arg0);
+            return IExecuteWithSignature<R>("visit", "(Ljavax/lang/model/element/Element;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor6.html#visitModule(javax.lang.model.element.ModuleElement,java.lang.Object)"/>

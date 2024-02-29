@@ -84,28 +84,28 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Java.Lang.String Content
         {
-            get { return IExecute<Java.Lang.String>("getContent"); } set { IExecute("setContent", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getContent", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setContent", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLMetaElement.html#getHttpEquiv()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLMetaElement.html#setHttpEquiv(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String HttpEquiv
         {
-            get { return IExecute<Java.Lang.String>("getHttpEquiv"); } set { IExecute("setHttpEquiv", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getHttpEquiv", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setHttpEquiv", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLMetaElement.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLMetaElement.html#setName(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); } set { IExecute("setName", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setName", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLMetaElement.html#getScheme()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLMetaElement.html#setScheme(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Scheme
         {
-            get { return IExecute<Java.Lang.String>("getScheme"); } set { IExecute("setScheme", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getScheme", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setScheme", "(Ljava/lang/String;)V", value); }
         }
 
         #endregion

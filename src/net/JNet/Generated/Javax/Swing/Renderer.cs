@@ -78,7 +78,7 @@ namespace Javax.Swing
         /// </summary>
         public Java.Awt.Component Component
         {
-            get { return IExecute<Java.Awt.Component>("getComponent"); }
+            get { return IExecuteWithSignature<Java.Awt.Component>("getComponent", "()Ljava/awt/Component;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Renderer.html#setValue(java.lang.Object,boolean)"/>

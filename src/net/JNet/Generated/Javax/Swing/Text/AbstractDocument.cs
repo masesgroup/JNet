@@ -88,77 +88,77 @@ namespace Javax.Swing.Text
         /// </summary>
         public int AsynchronousLoadPriority
         {
-            get { return IExecute<int>("getAsynchronousLoadPriority"); } set { IExecute("setAsynchronousLoadPriority", value); }
+            get { return IExecuteWithSignature<int>("getAsynchronousLoadPriority", "()I"); } set { IExecuteWithSignature("setAsynchronousLoadPriority", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#getDefaultRootElement()"/> 
         /// </summary>
         public Javax.Swing.Text.Element DefaultRootElement
         {
-            get { return IExecute<Javax.Swing.Text.Element>("getDefaultRootElement"); }
+            get { return IExecuteWithSignature<Javax.Swing.Text.Element>("getDefaultRootElement", "()Ljavax/swing/text/Element;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#getDocumentFilter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#setDocumentFilter(javax.swing.text.DocumentFilter)"/>
         /// </summary>
         public Javax.Swing.Text.DocumentFilter DocumentFilter
         {
-            get { return IExecute<Javax.Swing.Text.DocumentFilter>("getDocumentFilter"); } set { IExecute("setDocumentFilter", value); }
+            get { return IExecuteWithSignature<Javax.Swing.Text.DocumentFilter>("getDocumentFilter", "()Ljavax/swing/text/DocumentFilter;"); } set { IExecuteWithSignature("setDocumentFilter", "(Ljavax/swing/text/DocumentFilter;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#getDocumentListeners()"/> 
         /// </summary>
         public Javax.Swing.Event.DocumentListener[] DocumentListeners
         {
-            get { return IExecuteArray<Javax.Swing.Event.DocumentListener>("getDocumentListeners"); }
+            get { return IExecuteWithSignatureArray<Javax.Swing.Event.DocumentListener>("getDocumentListeners", "()[Ljavax/swing/event/DocumentListener;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#getDocumentProperties()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#setDocumentProperties(java.util.Dictionary)"/>
         /// </summary>
         public Java.Util.Dictionary<object, object> DocumentProperties
         {
-            get { return IExecute<Java.Util.Dictionary<object, object>>("getDocumentProperties"); } set { IExecute("setDocumentProperties", value); }
+            get { return IExecuteWithSignature<Java.Util.Dictionary<object, object>>("getDocumentProperties", "()Ljava/util/Dictionary;"); } set { IExecuteWithSignature("setDocumentProperties", "(Ljava/util/Dictionary;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#getEndPosition()"/> 
         /// </summary>
         public Javax.Swing.Text.Position EndPosition
         {
-            get { return IExecute<Javax.Swing.Text.Position>("getEndPosition"); }
+            get { return IExecuteWithSignature<Javax.Swing.Text.Position>("getEndPosition", "()Ljavax/swing/text/Position;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#getBidiRootElement()"/> 
         /// </summary>
         public Javax.Swing.Text.Element GetBidiRootElement
         {
-            get { return IExecute<Javax.Swing.Text.Element>("getBidiRootElement"); }
+            get { return IExecuteWithSignature<Javax.Swing.Text.Element>("getBidiRootElement", "()Ljavax/swing/text/Element;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#getLength()"/> 
         /// </summary>
         public int Length
         {
-            get { return IExecute<int>("getLength"); }
+            get { return IExecuteWithSignature<int>("getLength", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#getRootElements()"/> 
         /// </summary>
         public Javax.Swing.Text.Element[] RootElements
         {
-            get { return IExecuteArray<Javax.Swing.Text.Element>("getRootElements"); }
+            get { return IExecuteWithSignatureArray<Javax.Swing.Text.Element>("getRootElements", "()[Ljavax/swing/text/Element;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#getStartPosition()"/> 
         /// </summary>
         public Javax.Swing.Text.Position StartPosition
         {
-            get { return IExecute<Javax.Swing.Text.Position>("getStartPosition"); }
+            get { return IExecuteWithSignature<Javax.Swing.Text.Position>("getStartPosition", "()Ljavax/swing/text/Position;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#getUndoableEditListeners()"/> 
         /// </summary>
         public Javax.Swing.Event.UndoableEditListener[] UndoableEditListeners
         {
-            get { return IExecuteArray<Javax.Swing.Event.UndoableEditListener>("getUndoableEditListeners"); }
+            get { return IExecuteWithSignatureArray<Javax.Swing.Event.UndoableEditListener>("getUndoableEditListeners", "()[Ljavax/swing/event/UndoableEditListener;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#getParagraphElement(int)"/>
@@ -167,7 +167,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
         public Javax.Swing.Text.Element GetParagraphElement(int arg0)
         {
-            return IExecute<Javax.Swing.Text.Element>("getParagraphElement", arg0);
+            return IExecuteWithSignature<Javax.Swing.Text.Element>("getParagraphElement", "(I)Ljavax/swing/text/Element;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#getProperty(java.lang.Object)"/>
@@ -176,21 +176,21 @@ namespace Javax.Swing.Text
         /// <returns><see cref="object"/></returns>
         public object GetProperty(object arg0)
         {
-            return IExecute("getProperty", arg0);
+            return IExecuteWithSignature("getProperty", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#readLock()"/>
         /// </summary>
         public void ReadLock()
         {
-            IExecute("readLock");
+            IExecuteWithSignature("readLock", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#readUnlock()"/>
         /// </summary>
         public void ReadUnlock()
         {
-            IExecute("readUnlock");
+            IExecuteWithSignature("readUnlock", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#putProperty(java.lang.Object,java.lang.Object)"/>
@@ -220,7 +220,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public Javax.Swing.Text.Position CreatePosition(int arg0)
         {
-            return IExecute<Javax.Swing.Text.Position>("createPosition", arg0);
+            return IExecuteWithSignature<Javax.Swing.Text.Position>("createPosition", "(I)Ljavax/swing/text/Position;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#addDocumentListener(javax.swing.event.DocumentListener)"/>
@@ -228,7 +228,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Javax.Swing.Event.DocumentListener"/></param>
         public void AddDocumentListener(Javax.Swing.Event.DocumentListener arg0)
         {
-            IExecute("addDocumentListener", arg0);
+            IExecuteWithSignature("addDocumentListener", "(Ljavax/swing/event/DocumentListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#addUndoableEditListener(javax.swing.event.UndoableEditListener)"/>
@@ -236,7 +236,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Javax.Swing.Event.UndoableEditListener"/></param>
         public void AddUndoableEditListener(Javax.Swing.Event.UndoableEditListener arg0)
         {
-            IExecute("addUndoableEditListener", arg0);
+            IExecuteWithSignature("addUndoableEditListener", "(Ljavax/swing/event/UndoableEditListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#dump(java.io.PrintStream)"/>
@@ -244,7 +244,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
         public void Dump(Java.Io.PrintStream arg0)
         {
-            IExecute("dump", arg0);
+            IExecuteWithSignature("dump", "(Ljava/io/PrintStream;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#getText(int,int,javax.swing.text.Segment)"/>
@@ -284,7 +284,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Javax.Swing.Event.DocumentListener"/></param>
         public void RemoveDocumentListener(Javax.Swing.Event.DocumentListener arg0)
         {
-            IExecute("removeDocumentListener", arg0);
+            IExecuteWithSignature("removeDocumentListener", "(Ljavax/swing/event/DocumentListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#removeUndoableEditListener(javax.swing.event.UndoableEditListener)"/>
@@ -292,7 +292,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Javax.Swing.Event.UndoableEditListener"/></param>
         public void RemoveUndoableEditListener(Javax.Swing.Event.UndoableEditListener arg0)
         {
-            IExecute("removeUndoableEditListener", arg0);
+            IExecuteWithSignature("removeUndoableEditListener", "(Ljavax/swing/event/UndoableEditListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#render(java.lang.Runnable)"/>
@@ -300,7 +300,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         public void Render(Java.Lang.Runnable arg0)
         {
-            IExecute("render", arg0);
+            IExecuteWithSignature("render", "(Ljava/lang/Runnable;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#replace(int,int,java.lang.String,javax.swing.text.AttributeSet)"/>
@@ -369,91 +369,91 @@ namespace Javax.Swing.Text
             /// </summary>
             public bool AllowsChildren
             {
-                get { return IExecute<bool>("getAllowsChildren"); }
+                get { return IExecuteWithSignature<bool>("getAllowsChildren", "()Z"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getAttributeCount()"/> 
             /// </summary>
             public int AttributeCount
             {
-                get { return IExecute<int>("getAttributeCount"); }
+                get { return IExecuteWithSignature<int>("getAttributeCount", "()I"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getAttributeNames()"/> 
             /// </summary>
             public Java.Util.Enumeration<object> AttributeNames
             {
-                get { return IExecute<Java.Util.Enumeration<object>>("getAttributeNames"); }
+                get { return IExecuteWithSignature<Java.Util.Enumeration<object>>("getAttributeNames", "()Ljava/util/Enumeration;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getAttributes()"/> 
             /// </summary>
             public Javax.Swing.Text.AttributeSet Attributes
             {
-                get { return IExecute<Javax.Swing.Text.AttributeSet>("getAttributes"); }
+                get { return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("getAttributes", "()Ljavax/swing/text/AttributeSet;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getChildCount()"/> 
             /// </summary>
             public int ChildCount
             {
-                get { return IExecute<int>("getChildCount"); }
+                get { return IExecuteWithSignature<int>("getChildCount", "()I"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getDocument()"/> 
             /// </summary>
             public Javax.Swing.Text.Document Document
             {
-                get { return IExecute<Javax.Swing.Text.Document>("getDocument"); }
+                get { return IExecuteWithSignature<Javax.Swing.Text.Document>("getDocument", "()Ljavax/swing/text/Document;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getElementCount()"/> 
             /// </summary>
             public int ElementCount
             {
-                get { return IExecute<int>("getElementCount"); }
+                get { return IExecuteWithSignature<int>("getElementCount", "()I"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getEndOffset()"/> 
             /// </summary>
             public int EndOffset
             {
-                get { return IExecute<int>("getEndOffset"); }
+                get { return IExecuteWithSignature<int>("getEndOffset", "()I"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getName()"/> 
             /// </summary>
             public Java.Lang.String Name
             {
-                get { return IExecute<Java.Lang.String>("getName"); }
+                get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getParent()"/> 
             /// </summary>
             public Javax.Swing.Tree.TreeNode Parent
             {
-                get { return IExecute<Javax.Swing.Tree.TreeNode>("getParent"); }
+                get { return IExecuteWithSignature<Javax.Swing.Tree.TreeNode>("getParent", "()Ljavax/swing/tree/TreeNode;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getParentElement()"/> 
             /// </summary>
             public Javax.Swing.Text.Element ParentElement
             {
-                get { return IExecute<Javax.Swing.Text.Element>("getParentElement"); }
+                get { return IExecuteWithSignature<Javax.Swing.Text.Element>("getParentElement", "()Ljavax/swing/text/Element;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getResolveParent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#setResolveParent(javax.swing.text.AttributeSet)"/>
             /// </summary>
             public Javax.Swing.Text.AttributeSet ResolveParent
             {
-                get { return IExecute<Javax.Swing.Text.AttributeSet>("getResolveParent"); } set { IExecute("setResolveParent", value); }
+                get { return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("getResolveParent", "()Ljavax/swing/text/AttributeSet;"); } set { IExecuteWithSignature("setResolveParent", "(Ljavax/swing/text/AttributeSet;)V", value); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getStartOffset()"/> 
             /// </summary>
             public int StartOffset
             {
-                get { return IExecute<int>("getStartOffset"); }
+                get { return IExecuteWithSignature<int>("getStartOffset", "()I"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#isLeaf()"/>
@@ -462,7 +462,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="bool"/></returns>
             public bool IsLeaf()
             {
-                return IExecute<bool>("isLeaf");
+                return IExecuteWithSignature<bool>("isLeaf", "()Z");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getElementIndex(int)"/>
@@ -471,7 +471,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="int"/></returns>
             public int GetElementIndex(int arg0)
             {
-                return IExecute<int>("getElementIndex", arg0);
+                return IExecuteWithSignature<int>("getElementIndex", "(I)I", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#children()"/>
@@ -480,7 +480,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="Java.Util.Enumeration"/></returns>
             public Java.Util.Enumeration<Javax.Swing.Tree.TreeNode> Children()
             {
-                return IExecute<Java.Util.Enumeration<Javax.Swing.Tree.TreeNode>>("children");
+                return IExecuteWithSignature<Java.Util.Enumeration<Javax.Swing.Tree.TreeNode>>("children", "()Ljava/util/Enumeration;");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getElement(int)"/>
@@ -489,7 +489,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
             public Javax.Swing.Text.Element GetElement(int arg0)
             {
-                return IExecute<Javax.Swing.Text.Element>("getElement", arg0);
+                return IExecuteWithSignature<Javax.Swing.Text.Element>("getElement", "(I)Ljavax/swing/text/Element;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#containsAttribute(java.lang.Object,java.lang.Object)"/>
@@ -508,7 +508,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="bool"/></returns>
             public bool ContainsAttributes(Javax.Swing.Text.AttributeSet arg0)
             {
-                return IExecute<bool>("containsAttributes", arg0);
+                return IExecuteWithSignature<bool>("containsAttributes", "(Ljavax/swing/text/AttributeSet;)Z", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#isDefined(java.lang.Object)"/>
@@ -517,7 +517,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="bool"/></returns>
             public bool IsDefined(object arg0)
             {
-                return IExecute<bool>("isDefined", arg0);
+                return IExecuteWithSignature<bool>("isDefined", "(Ljava/lang/Object;)Z", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#isEqual(javax.swing.text.AttributeSet)"/>
@@ -526,7 +526,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="bool"/></returns>
             public bool IsEqual(Javax.Swing.Text.AttributeSet arg0)
             {
-                return IExecute<bool>("isEqual", arg0);
+                return IExecuteWithSignature<bool>("isEqual", "(Ljavax/swing/text/AttributeSet;)Z", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getIndex(javax.swing.tree.TreeNode)"/>
@@ -535,7 +535,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="int"/></returns>
             public int GetIndex(Javax.Swing.Tree.TreeNode arg0)
             {
-                return IExecute<int>("getIndex", arg0);
+                return IExecuteWithSignature<int>("getIndex", "(Ljavax/swing/tree/TreeNode;)I", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getAttribute(java.lang.Object)"/>
@@ -544,7 +544,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="object"/></returns>
             public object GetAttribute(object arg0)
             {
-                return IExecute("getAttribute", arg0);
+                return IExecuteWithSignature("getAttribute", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#copyAttributes()"/>
@@ -553,7 +553,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
             public Javax.Swing.Text.AttributeSet CopyAttributes()
             {
-                return IExecute<Javax.Swing.Text.AttributeSet>("copyAttributes");
+                return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("copyAttributes", "()Ljavax/swing/text/AttributeSet;");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getChildAt(int)"/>
@@ -562,7 +562,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="Javax.Swing.Tree.TreeNode"/></returns>
             public Javax.Swing.Tree.TreeNode GetChildAt(int arg0)
             {
-                return IExecute<Javax.Swing.Tree.TreeNode>("getChildAt", arg0);
+                return IExecuteWithSignature<Javax.Swing.Tree.TreeNode>("getChildAt", "(I)Ljavax/swing/tree/TreeNode;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#addAttribute(java.lang.Object,java.lang.Object)"/>
@@ -579,7 +579,7 @@ namespace Javax.Swing.Text
             /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
             public void AddAttributes(Javax.Swing.Text.AttributeSet arg0)
             {
-                IExecute("addAttributes", arg0);
+                IExecuteWithSignature("addAttributes", "(Ljavax/swing/text/AttributeSet;)V", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#dump(java.io.PrintStream,int)"/>
@@ -596,7 +596,7 @@ namespace Javax.Swing.Text
             /// <param name="arg0"><see cref="object"/></param>
             public void RemoveAttribute(object arg0)
             {
-                IExecute("removeAttribute", arg0);
+                IExecuteWithSignature("removeAttribute", "(Ljava/lang/Object;)V", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#removeAttributes(java.util.Enumeration)"/>
@@ -604,7 +604,7 @@ namespace Javax.Swing.Text
             /// <param name="arg0"><see cref="Java.Util.Enumeration"/></param>
             public void RemoveAttributes(Java.Util.Enumeration<object> arg0)
             {
-                IExecute("removeAttributes", arg0);
+                IExecuteWithSignature("removeAttributes", "(Ljava/util/Enumeration;)V", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#removeAttributes(javax.swing.text.AttributeSet)"/>
@@ -612,7 +612,7 @@ namespace Javax.Swing.Text
             /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
             public void RemoveAttributes(Javax.Swing.Text.AttributeSet arg0)
             {
-                IExecute("removeAttributes", arg0);
+                IExecuteWithSignature("removeAttributes", "(Ljavax/swing/text/AttributeSet;)V", arg0);
             }
 
             #endregion
@@ -650,7 +650,7 @@ namespace Javax.Swing.Text
             /// </summary>
             public Javax.Swing.Text.AttributeSet EmptySet
             {
-                get { return IExecute<Javax.Swing.Text.AttributeSet>("getEmptySet"); }
+                get { return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("getEmptySet", "()Ljavax/swing/text/AttributeSet;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AttributeContext.html#addAttribute(javax.swing.text.AttributeSet,java.lang.Object,java.lang.Object)"/>
@@ -709,7 +709,7 @@ namespace Javax.Swing.Text
             /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
             public void Reclaim(Javax.Swing.Text.AttributeSet arg0)
             {
-                IExecute("reclaim", arg0);
+                IExecuteWithSignature("reclaim", "(Ljavax/swing/text/AttributeSet;)V", arg0);
             }
 
             #endregion
@@ -759,7 +759,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
             public Javax.Swing.Text.Element PositionToElement(int arg0)
             {
-                return IExecute<Javax.Swing.Text.Element>("positionToElement", arg0);
+                return IExecuteWithSignature<Javax.Swing.Text.Element>("positionToElement", "(I)Ljavax/swing/text/Element;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.BranchElement.html#replace(int,int,javax.swing.text.Element[])"/>
@@ -809,7 +809,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="int"/></returns>
             public int Length()
             {
-                return IExecute<int>("length");
+                return IExecuteWithSignature<int>("length", "()I");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#getString(int,int)"/>
@@ -830,7 +830,7 @@ namespace Javax.Swing.Text
             /// <exception cref="Javax.Swing.Text.BadLocationException"/>
             public Javax.Swing.Text.Position CreatePosition(int arg0)
             {
-                return IExecute<Javax.Swing.Text.Position>("createPosition", arg0);
+                return IExecuteWithSignature<Javax.Swing.Text.Position>("createPosition", "(I)Ljavax/swing/text/Position;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#insertString(int,java.lang.String)"/>
@@ -916,28 +916,28 @@ namespace Javax.Swing.Text
             /// </summary>
             public Javax.Swing.Text.Document Document
             {
-                get { return IExecute<Javax.Swing.Text.Document>("getDocument"); }
+                get { return IExecuteWithSignature<Javax.Swing.Text.Document>("getDocument", "()Ljavax/swing/text/Document;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#getLength()"/> 
             /// </summary>
             public int Length
             {
-                get { return IExecute<int>("getLength"); }
+                get { return IExecuteWithSignature<int>("getLength", "()I"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#getOffset()"/> 
             /// </summary>
             public int Offset
             {
-                get { return IExecute<int>("getOffset"); }
+                get { return IExecuteWithSignature<int>("getOffset", "()I"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#getType()"/> 
             /// </summary>
             public Javax.Swing.Event.DocumentEvent.EventType Type
             {
-                get { return IExecute<Javax.Swing.Event.DocumentEvent.EventType>("getType"); }
+                get { return IExecuteWithSignature<Javax.Swing.Event.DocumentEvent.EventType>("getType", "()Ljavax/swing/event/DocumentEvent$EventType;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#getChange(javax.swing.text.Element)"/>
@@ -946,7 +946,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="Javax.Swing.Event.DocumentEvent.ElementChange"/></returns>
             public Javax.Swing.Event.DocumentEvent.ElementChange GetChange(Javax.Swing.Text.Element arg0)
             {
-                return IExecute<Javax.Swing.Event.DocumentEvent.ElementChange>("getChange", arg0);
+                return IExecuteWithSignature<Javax.Swing.Event.DocumentEvent.ElementChange>("getChange", "(Ljavax/swing/text/Element;)Ljavax/swing/event/DocumentEvent$ElementChange;", arg0);
             }
 
             #endregion
@@ -995,28 +995,28 @@ namespace Javax.Swing.Text
             /// </summary>
             public Javax.Swing.Text.Element[] ChildrenAdded
             {
-                get { return IExecuteArray<Javax.Swing.Text.Element>("getChildrenAdded"); }
+                get { return IExecuteWithSignatureArray<Javax.Swing.Text.Element>("getChildrenAdded", "()[Ljavax/swing/text/Element;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.ElementEdit.html#getChildrenRemoved()"/> 
             /// </summary>
             public Javax.Swing.Text.Element[] ChildrenRemoved
             {
-                get { return IExecuteArray<Javax.Swing.Text.Element>("getChildrenRemoved"); }
+                get { return IExecuteWithSignatureArray<Javax.Swing.Text.Element>("getChildrenRemoved", "()[Ljavax/swing/text/Element;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.ElementEdit.html#getElement()"/> 
             /// </summary>
             public Javax.Swing.Text.Element Element
             {
-                get { return IExecute<Javax.Swing.Text.Element>("getElement"); }
+                get { return IExecuteWithSignature<Javax.Swing.Text.Element>("getElement", "()Ljavax/swing/text/Element;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.ElementEdit.html#getIndex()"/> 
             /// </summary>
             public int Index
             {
-                get { return IExecute<int>("getIndex"); }
+                get { return IExecuteWithSignature<int>("getIndex", "()I"); }
             }
 
             #endregion

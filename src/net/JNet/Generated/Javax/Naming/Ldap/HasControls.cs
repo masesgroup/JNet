@@ -72,7 +72,7 @@ namespace Javax.Naming.Ldap
         /// </summary>
         public Javax.Naming.Ldap.Control[] Controls
         {
-            get { return IExecuteArray<Javax.Naming.Ldap.Control>("getControls"); }
+            get { return IExecuteWithSignatureArray<Javax.Naming.Ldap.Control>("getControls", "()[Ljavax/naming/ldap/Control;"); }
         }
 
         #endregion

@@ -58,28 +58,28 @@ namespace Org.Xml.Sax.Helpers
         /// </summary>
         public int ColumnNumber
         {
-            get { return IExecute<int>("getColumnNumber"); } set { IExecute("setColumnNumber", value); }
+            get { return IExecuteWithSignature<int>("getColumnNumber", "()I"); } set { IExecuteWithSignature("setColumnNumber", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/LocatorImpl.html#getLineNumber()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/LocatorImpl.html#setLineNumber(int)"/>
         /// </summary>
         public int LineNumber
         {
-            get { return IExecute<int>("getLineNumber"); } set { IExecute("setLineNumber", value); }
+            get { return IExecuteWithSignature<int>("getLineNumber", "()I"); } set { IExecuteWithSignature("setLineNumber", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/LocatorImpl.html#getPublicId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/LocatorImpl.html#setPublicId(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String PublicId
         {
-            get { return IExecute<Java.Lang.String>("getPublicId"); } set { IExecute("setPublicId", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getPublicId", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setPublicId", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/LocatorImpl.html#getSystemId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/LocatorImpl.html#setSystemId(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String SystemId
         {
-            get { return IExecute<Java.Lang.String>("getSystemId"); } set { IExecute("setSystemId", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", value); }
         }
 
         #endregion

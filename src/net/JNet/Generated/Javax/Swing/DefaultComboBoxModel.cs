@@ -62,7 +62,7 @@ namespace Javax.Swing
         /// </summary>
         public object SelectedItem
         {
-            get { return IExecute("getSelectedItem"); } set { IExecute("setSelectedItem", value); }
+            get { return IExecuteWithSignature("getSelectedItem", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setSelectedItem", "(Ljava/lang/Object;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html#getIndexOf(java.lang.Object)"/>
@@ -71,7 +71,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetIndexOf(object arg0)
         {
-            return IExecute<int>("getIndexOf", arg0);
+            return IExecuteWithSignature<int>("getIndexOf", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html#addAll(int,java.util.Collection)"/>
@@ -88,7 +88,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public void AddAll(Java.Util.Collection arg0)
         {
-            IExecute("addAll", arg0);
+            IExecuteWithSignature("addAll", "(Ljava/util/Collection;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html#addElement(java.lang.Object)"/>
@@ -96,7 +96,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="object"/></param>
         public void AddElement(object arg0)
         {
-            IExecute("addElement", arg0);
+            IExecuteWithSignature("addElement", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html#insertElementAt(java.lang.Object,int)"/>
@@ -112,7 +112,7 @@ namespace Javax.Swing
         /// </summary>
         public void RemoveAllElements()
         {
-            IExecute("removeAllElements");
+            IExecuteWithSignature("removeAllElements", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html#removeElement(java.lang.Object)"/>
@@ -120,7 +120,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="object"/></param>
         public void RemoveElement(object arg0)
         {
-            IExecute("removeElement", arg0);
+            IExecuteWithSignature("removeElement", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html#removeElementAt(int)"/>
@@ -128,7 +128,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public void RemoveElementAt(int arg0)
         {
-            IExecute("removeElementAt", arg0);
+            IExecuteWithSignature("removeElementAt", "(I)V", arg0);
         }
 
         #endregion
@@ -190,7 +190,7 @@ namespace Javax.Swing
         /// </summary>
         public object SelectedItem
         {
-            get { return IExecute("getSelectedItem"); } set { IExecute("setSelectedItem", value); }
+            get { return IExecuteWithSignature("getSelectedItem", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setSelectedItem", "(Ljava/lang/Object;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html#getIndexOf(java.lang.Object)"/>
@@ -199,7 +199,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetIndexOf(object arg0)
         {
-            return IExecute<int>("getIndexOf", arg0);
+            return IExecuteWithSignature<int>("getIndexOf", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html#addAll(int,java.util.Collection)"/>
@@ -218,7 +218,7 @@ namespace Javax.Swing
         /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
         public void AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE: E
         {
-            IExecute("addAll", arg0);
+            IExecuteWithSignature("addAll", "(Ljava/util/Collection;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html#addElement(java.lang.Object)"/>
@@ -226,7 +226,7 @@ namespace Javax.Swing
         /// <param name="arg0"><typeparamref name="E"/></param>
         public void AddElement(E arg0)
         {
-            IExecute("addElement", arg0);
+            IExecuteWithSignature("addElement", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html#insertElementAt(java.lang.Object,int)"/>
@@ -242,7 +242,7 @@ namespace Javax.Swing
         /// </summary>
         public void RemoveAllElements()
         {
-            IExecute("removeAllElements");
+            IExecuteWithSignature("removeAllElements", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html#removeElement(java.lang.Object)"/>
@@ -250,7 +250,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="object"/></param>
         public void RemoveElement(object arg0)
         {
-            IExecute("removeElement", arg0);
+            IExecuteWithSignature("removeElement", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html#removeElementAt(int)"/>
@@ -258,7 +258,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public void RemoveElementAt(int arg0)
         {
-            IExecute("removeElementAt", arg0);
+            IExecuteWithSignature("removeElementAt", "(I)V", arg0);
         }
 
         #endregion

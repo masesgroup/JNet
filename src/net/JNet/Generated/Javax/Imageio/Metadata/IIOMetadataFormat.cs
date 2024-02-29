@@ -367,7 +367,7 @@ namespace Javax.Imageio.Metadata
         /// </summary>
         public Java.Lang.String RootName
         {
-            get { return IExecute<Java.Lang.String>("getRootName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getRootName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#canNodeAppear(java.lang.String,javax.imageio.ImageTypeSpecifier)"/>
@@ -436,7 +436,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="int"/></returns>
         public int GetChildPolicy(Java.Lang.String arg0)
         {
-            return IExecute<int>("getChildPolicy", arg0);
+            return IExecuteWithSignature<int>("getChildPolicy", "(Ljava/lang/String;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getElementMaxChildren(java.lang.String)"/>
@@ -445,7 +445,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="int"/></returns>
         public int GetElementMaxChildren(Java.Lang.String arg0)
         {
-            return IExecute<int>("getElementMaxChildren", arg0);
+            return IExecuteWithSignature<int>("getElementMaxChildren", "(Ljava/lang/String;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getElementMinChildren(java.lang.String)"/>
@@ -454,7 +454,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="int"/></returns>
         public int GetElementMinChildren(Java.Lang.String arg0)
         {
-            return IExecute<int>("getElementMinChildren", arg0);
+            return IExecuteWithSignature<int>("getElementMinChildren", "(Ljava/lang/String;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getObjectArrayMaxLength(java.lang.String)"/>
@@ -463,7 +463,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="int"/></returns>
         public int GetObjectArrayMaxLength(Java.Lang.String arg0)
         {
-            return IExecute<int>("getObjectArrayMaxLength", arg0);
+            return IExecuteWithSignature<int>("getObjectArrayMaxLength", "(Ljava/lang/String;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getObjectArrayMinLength(java.lang.String)"/>
@@ -472,7 +472,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="int"/></returns>
         public int GetObjectArrayMinLength(Java.Lang.String arg0)
         {
-            return IExecute<int>("getObjectArrayMinLength", arg0);
+            return IExecuteWithSignature<int>("getObjectArrayMinLength", "(Ljava/lang/String;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getObjectValueType(java.lang.String)"/>
@@ -481,7 +481,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="int"/></returns>
         public int GetObjectValueType(Java.Lang.String arg0)
         {
-            return IExecute<int>("getObjectValueType", arg0);
+            return IExecuteWithSignature<int>("getObjectValueType", "(Ljava/lang/String;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getObjectClass(java.lang.String)"/>
@@ -490,7 +490,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public Java.Lang.Class GetObjectClass(Java.Lang.String arg0)
         {
-            return IExecute<Java.Lang.Class>("getObjectClass", arg0);
+            return IExecuteWithSignature<Java.Lang.Class>("getObjectClass", "(Ljava/lang/String;)Ljava/lang/Class;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getObjectMaxValue(java.lang.String)"/>
@@ -499,7 +499,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="Java.Lang.Comparable"/></returns>
         public Java.Lang.Comparable<object> GetObjectMaxValue(Java.Lang.String arg0)
         {
-            return IExecute<Java.Lang.Comparable<object>>("getObjectMaxValue", arg0);
+            return IExecuteWithSignature<Java.Lang.Comparable<object>>("getObjectMaxValue", "(Ljava/lang/String;)Ljava/lang/Comparable;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getObjectMinValue(java.lang.String)"/>
@@ -508,7 +508,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="Java.Lang.Comparable"/></returns>
         public Java.Lang.Comparable<object> GetObjectMinValue(Java.Lang.String arg0)
         {
-            return IExecute<Java.Lang.Comparable<object>>("getObjectMinValue", arg0);
+            return IExecuteWithSignature<Java.Lang.Comparable<object>>("getObjectMinValue", "(Ljava/lang/String;)Ljava/lang/Comparable;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getObjectDefaultValue(java.lang.String)"/>
@@ -517,7 +517,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="object"/></returns>
         public object GetObjectDefaultValue(Java.Lang.String arg0)
         {
-            return IExecute("getObjectDefaultValue", arg0);
+            return IExecuteWithSignature("getObjectDefaultValue", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getObjectEnumerations(java.lang.String)"/>
@@ -526,7 +526,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="object"/></returns>
         public object[] GetObjectEnumerations(Java.Lang.String arg0)
         {
-            return IExecuteArray<object>("getObjectEnumerations", arg0);
+            return IExecuteWithSignatureArray<object>("getObjectEnumerations", "(Ljava/lang/String;)[Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getAttributeDefaultValue(java.lang.String,java.lang.String)"/>
@@ -596,7 +596,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] GetAttributeNames(Java.Lang.String arg0)
         {
-            return IExecuteArray<Java.Lang.String>("getAttributeNames", arg0);
+            return IExecuteWithSignatureArray<Java.Lang.String>("getAttributeNames", "(Ljava/lang/String;)[Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getChildNames(java.lang.String)"/>
@@ -605,7 +605,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] GetChildNames(Java.Lang.String arg0)
         {
-            return IExecuteArray<Java.Lang.String>("getChildNames", arg0);
+            return IExecuteWithSignatureArray<Java.Lang.String>("getChildNames", "(Ljava/lang/String;)[Ljava/lang/String;", arg0);
         }
 
         #endregion

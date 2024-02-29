@@ -145,7 +145,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.LongUnaryOperator AndThenDefault(Java.Util.Function.LongUnaryOperator arg0)
         {
-            return IExecute<Java.Util.Function.LongUnaryOperator>("andThenDefault", arg0);
+            return IExecuteWithSignature<Java.Util.Function.LongUnaryOperator>("andThenDefault", "(Ljava/util/function/LongUnaryOperator;)Ljava/util/function/LongUnaryOperator;", arg0);
         }
 
         /// <summary>
@@ -179,7 +179,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.LongUnaryOperator ComposeDefault(Java.Util.Function.LongUnaryOperator arg0)
         {
-            return IExecute<Java.Util.Function.LongUnaryOperator>("composeDefault", arg0);
+            return IExecuteWithSignature<Java.Util.Function.LongUnaryOperator>("composeDefault", "(Ljava/util/function/LongUnaryOperator;)Ljava/util/function/LongUnaryOperator;", arg0);
         }
 
         /// <summary>

@@ -80,7 +80,7 @@ namespace Java.Security.Interfaces
         /// </summary>
         public Java.Util.Optional<byte[]> Scalar
         {
-            get { return IExecute<Java.Util.Optional<byte[]>>("getScalar"); }
+            get { return IExecuteWithSignature<Java.Util.Optional<byte[]>>("getScalar", "()Ljava/util/Optional;"); }
         }
 
         #endregion

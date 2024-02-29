@@ -175,7 +175,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.SocketException"/>
         public object GetOption(int arg0)
         {
-            return IExecute("getOption", arg0);
+            return IExecuteWithSignature("getOption", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#setOption(int,java.lang.Object)"/>

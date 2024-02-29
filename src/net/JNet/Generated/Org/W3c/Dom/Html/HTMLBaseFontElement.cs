@@ -80,21 +80,21 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Java.Lang.String Color
         {
-            get { return IExecute<Java.Lang.String>("getColor"); } set { IExecute("setColor", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getColor", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setColor", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLBaseFontElement.html#getFace()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLBaseFontElement.html#setFace(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Face
         {
-            get { return IExecute<Java.Lang.String>("getFace"); } set { IExecute("setFace", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getFace", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setFace", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLBaseFontElement.html#getSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLBaseFontElement.html#setSize(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Size
         {
-            get { return IExecute<Java.Lang.String>("getSize"); } set { IExecute("setSize", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getSize", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSize", "(Ljava/lang/String;)V", value); }
         }
 
         #endregion

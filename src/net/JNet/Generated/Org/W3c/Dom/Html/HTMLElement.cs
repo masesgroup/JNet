@@ -88,35 +88,35 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Java.Lang.String ClassName
         {
-            get { return IExecute<Java.Lang.String>("getClassName"); } set { IExecute("setClassName", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getClassName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setClassName", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLElement.html#getDir()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLElement.html#setDir(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Dir
         {
-            get { return IExecute<Java.Lang.String>("getDir"); } set { IExecute("setDir", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getDir", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setDir", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLElement.html#getId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLElement.html#setId(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Id
         {
-            get { return IExecute<Java.Lang.String>("getId"); } set { IExecute("setId", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setId", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLElement.html#getLang()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLElement.html#setLang(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Lang
         {
-            get { return IExecute<Java.Lang.String>("getLang"); } set { IExecute("setLang", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getLang", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setLang", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLElement.html#getTitle()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLElement.html#setTitle(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Title
         {
-            get { return IExecute<Java.Lang.String>("getTitle"); } set { IExecute("setTitle", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getTitle", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setTitle", "(Ljava/lang/String;)V", value); }
         }
 
         #endregion

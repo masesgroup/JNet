@@ -100,14 +100,14 @@ namespace Org.W3c.Dom.Css
         /// </summary>
         public Java.Lang.String CssText
         {
-            get { return IExecute<Java.Lang.String>("getCssText"); } set { IExecute("setCssText", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getCssText", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setCssText", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValue.html#getCssValueType()"/> 
         /// </summary>
         public short CssValueType
         {
-            get { return IExecute<short>("getCssValueType"); }
+            get { return IExecuteWithSignature<short>("getCssValueType", "()S"); }
         }
 
         #endregion

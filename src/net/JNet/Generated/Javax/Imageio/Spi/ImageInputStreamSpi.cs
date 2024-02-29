@@ -60,7 +60,7 @@ namespace Javax.Imageio.Spi
         /// </summary>
         public Java.Lang.Class InputClass
         {
-            get { return IExecute<Java.Lang.Class>("getInputClass"); }
+            get { return IExecuteWithSignature<Java.Lang.Class>("getInputClass", "()Ljava/lang/Class;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html#createInputStreamInstance(java.lang.Object,boolean,java.io.File)"/>
@@ -81,7 +81,7 @@ namespace Javax.Imageio.Spi
         /// <returns><see cref="bool"/></returns>
         public bool CanUseCacheFile()
         {
-            return IExecute<bool>("canUseCacheFile");
+            return IExecuteWithSignature<bool>("canUseCacheFile", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html#needsCacheFile()"/>
@@ -90,7 +90,7 @@ namespace Javax.Imageio.Spi
         /// <returns><see cref="bool"/></returns>
         public bool NeedsCacheFile()
         {
-            return IExecute<bool>("needsCacheFile");
+            return IExecuteWithSignature<bool>("needsCacheFile", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html#createInputStreamInstance(java.lang.Object)"/>
@@ -100,7 +100,7 @@ namespace Javax.Imageio.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Imageio.Stream.ImageInputStream CreateInputStreamInstance(object arg0)
         {
-            return IExecute<Javax.Imageio.Stream.ImageInputStream>("createInputStreamInstance", arg0);
+            return IExecuteWithSignature<Javax.Imageio.Stream.ImageInputStream>("createInputStreamInstance", "(Ljava/lang/Object;)Ljavax/imageio/stream/ImageInputStream;", arg0);
         }
 
         #endregion

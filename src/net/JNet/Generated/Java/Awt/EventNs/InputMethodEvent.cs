@@ -112,35 +112,35 @@ namespace Java.Awt.EventNs
         /// </summary>
         public Java.Awt.FontNs.TextHitInfo Caret
         {
-            get { return IExecute<Java.Awt.FontNs.TextHitInfo>("getCaret"); }
+            get { return IExecuteWithSignature<Java.Awt.FontNs.TextHitInfo>("getCaret", "()Ljava/awt/font/TextHitInfo;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#getCommittedCharacterCount()"/> 
         /// </summary>
         public int CommittedCharacterCount
         {
-            get { return IExecute<int>("getCommittedCharacterCount"); }
+            get { return IExecuteWithSignature<int>("getCommittedCharacterCount", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#getText()"/> 
         /// </summary>
         public Java.Text.AttributedCharacterIterator Text
         {
-            get { return IExecute<Java.Text.AttributedCharacterIterator>("getText"); }
+            get { return IExecuteWithSignature<Java.Text.AttributedCharacterIterator>("getText", "()Ljava/text/AttributedCharacterIterator;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#getVisiblePosition()"/> 
         /// </summary>
         public Java.Awt.FontNs.TextHitInfo VisiblePosition
         {
-            get { return IExecute<Java.Awt.FontNs.TextHitInfo>("getVisiblePosition"); }
+            get { return IExecuteWithSignature<Java.Awt.FontNs.TextHitInfo>("getVisiblePosition", "()Ljava/awt/font/TextHitInfo;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#getWhen()"/> 
         /// </summary>
         public long When
         {
-            get { return IExecute<long>("getWhen"); }
+            get { return IExecuteWithSignature<long>("getWhen", "()J"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#isConsumed()"/>
@@ -149,14 +149,14 @@ namespace Java.Awt.EventNs
         /// <returns><see cref="bool"/></returns>
         public bool IsConsumed()
         {
-            return IExecute<bool>("isConsumed");
+            return IExecuteWithSignature<bool>("isConsumed", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#consume()"/>
         /// </summary>
         public void Consume()
         {
-            IExecute("consume");
+            IExecuteWithSignature("consume", "()V");
         }
 
         #endregion

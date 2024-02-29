@@ -84,14 +84,14 @@ namespace Javax.Management.Relation
         /// </summary>
         public Java.Lang.String RelationTypeName
         {
-            get { return IExecute<Java.Lang.String>("getRelationTypeName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getRelationTypeName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationType.html#getRoleInfos()"/> 
         /// </summary>
         public Java.Util.List<Javax.Management.Relation.RoleInfo> RoleInfos
         {
-            get { return IExecute<Java.Util.List<Javax.Management.Relation.RoleInfo>>("getRoleInfos"); }
+            get { return IExecuteWithSignature<Java.Util.List<Javax.Management.Relation.RoleInfo>>("getRoleInfos", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationType.html#getRoleInfo(java.lang.String)"/>
@@ -102,7 +102,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Javax.Management.Relation.RoleInfoNotFoundException"/>
         public Javax.Management.Relation.RoleInfo GetRoleInfo(Java.Lang.String arg0)
         {
-            return IExecute<Javax.Management.Relation.RoleInfo>("getRoleInfo", arg0);
+            return IExecuteWithSignature<Javax.Management.Relation.RoleInfo>("getRoleInfo", "(Ljava/lang/String;)Ljavax/management/relation/RoleInfo;", arg0);
         }
 
         #endregion

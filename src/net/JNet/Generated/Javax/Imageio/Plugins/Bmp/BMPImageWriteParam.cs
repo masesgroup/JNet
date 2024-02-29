@@ -60,7 +60,7 @@ namespace Javax.Imageio.Plugins.Bmp
         /// <returns><see cref="bool"/></returns>
         public bool IsTopDown()
         {
-            return IExecute<bool>("isTopDown");
+            return IExecuteWithSignature<bool>("isTopDown", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/bmp/BMPImageWriteParam.html#setTopDown(boolean)"/>
@@ -68,7 +68,7 @@ namespace Javax.Imageio.Plugins.Bmp
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetTopDown(bool arg0)
         {
-            IExecute("setTopDown", arg0);
+            IExecuteWithSignature("setTopDown", "(Z)V", arg0);
         }
 
         #endregion

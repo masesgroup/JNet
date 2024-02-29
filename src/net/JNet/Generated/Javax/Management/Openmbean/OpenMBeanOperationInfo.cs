@@ -92,42 +92,42 @@ namespace Javax.Management.Openmbean
         /// </summary>
         public Java.Lang.String Description
         {
-            get { return IExecute<Java.Lang.String>("getDescription"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanOperationInfo.html#getImpact()"/> 
         /// </summary>
         public int Impact
         {
-            get { return IExecute<int>("getImpact"); }
+            get { return IExecuteWithSignature<int>("getImpact", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanOperationInfo.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanOperationInfo.html#getReturnOpenType()"/> 
         /// </summary>
         public Javax.Management.Openmbean.OpenType<object> ReturnOpenType
         {
-            get { return IExecute<Javax.Management.Openmbean.OpenType<object>>("getReturnOpenType"); }
+            get { return IExecuteWithSignature<Javax.Management.Openmbean.OpenType<object>>("getReturnOpenType", "()Ljavax/management/openmbean/OpenType;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanOperationInfo.html#getReturnType()"/> 
         /// </summary>
         public Java.Lang.String ReturnType
         {
-            get { return IExecute<Java.Lang.String>("getReturnType"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getReturnType", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanOperationInfo.html#getSignature()"/> 
         /// </summary>
         public Javax.Management.MBeanParameterInfo[] Signature
         {
-            get { return IExecuteArray<Javax.Management.MBeanParameterInfo>("getSignature"); }
+            get { return IExecuteWithSignatureArray<Javax.Management.MBeanParameterInfo>("getSignature", "()[Ljavax/management/MBeanParameterInfo;"); }
         }
 
         #endregion

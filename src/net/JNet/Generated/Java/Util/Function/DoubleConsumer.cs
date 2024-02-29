@@ -112,7 +112,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.DoubleConsumer AndThenDefault(Java.Util.Function.DoubleConsumer arg0)
         {
-            return IExecute<Java.Util.Function.DoubleConsumer>("andThenDefault", arg0);
+            return IExecuteWithSignature<Java.Util.Function.DoubleConsumer>("andThenDefault", "(Ljava/util/function/DoubleConsumer;)Ljava/util/function/DoubleConsumer;", arg0);
         }
 
         /// <summary>

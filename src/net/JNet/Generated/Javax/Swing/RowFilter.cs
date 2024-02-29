@@ -111,7 +111,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool Include(Javax.Swing.RowFilter.Entry arg0)
         {
-            return IExecute<bool>("include", arg0);
+            return IExecuteWithSignature<bool>("include", "(Ljavax/swing/RowFilter$Entry;)Z", arg0);
         }
 
         #endregion
@@ -164,7 +164,7 @@ namespace Javax.Swing
             /// <returns><see cref="Javax.Swing.RowFilter.ComparisonType"/></returns>
             public static Javax.Swing.RowFilter.ComparisonType ValueOf(Java.Lang.String arg0)
             {
-                return SExecute<Javax.Swing.RowFilter.ComparisonType>(LocalBridgeClazz, "valueOf", arg0);
+                return SExecuteWithSignature<Javax.Swing.RowFilter.ComparisonType>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/swing/RowFilter$ComparisonType;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#values()"/>
@@ -173,7 +173,7 @@ namespace Javax.Swing
             /// <returns><see cref="Javax.Swing.RowFilter.ComparisonType"/></returns>
             public static Javax.Swing.RowFilter.ComparisonType[] Values()
             {
-                return SExecuteArray<Javax.Swing.RowFilter.ComparisonType>(LocalBridgeClazz, "values");
+                return SExecuteWithSignatureArray<Javax.Swing.RowFilter.ComparisonType>(LocalBridgeClazz, "values", "()[Ljavax/swing/RowFilter$ComparisonType;");
             }
 
             #endregion
@@ -215,21 +215,21 @@ namespace Javax.Swing
             /// </summary>
             public object Identifier
             {
-                get { return IExecute("getIdentifier"); }
+                get { return IExecuteWithSignature("getIdentifier", "()Ljava/lang/Object;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getModel()"/> 
             /// </summary>
             public object Model
             {
-                get { return IExecute("getModel"); }
+                get { return IExecuteWithSignature("getModel", "()Ljava/lang/Object;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getValueCount()"/> 
             /// </summary>
             public int ValueCount
             {
-                get { return IExecute<int>("getValueCount"); }
+                get { return IExecuteWithSignature<int>("getValueCount", "()I"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getValue(int)"/>
@@ -238,7 +238,7 @@ namespace Javax.Swing
             /// <returns><see cref="object"/></returns>
             public object GetValue(int arg0)
             {
-                return IExecute("getValue", arg0);
+                return IExecuteWithSignature("getValue", "(I)Ljava/lang/Object;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getStringValue(int)"/>
@@ -247,7 +247,7 @@ namespace Javax.Swing
             /// <returns><see cref="Java.Lang.String"/></returns>
             public Java.Lang.String GetStringValue(int arg0)
             {
-                return IExecute<Java.Lang.String>("getStringValue", arg0);
+                return IExecuteWithSignature<Java.Lang.String>("getStringValue", "(I)Ljava/lang/String;", arg0);
             }
 
             #endregion
@@ -289,21 +289,21 @@ namespace Javax.Swing
             /// </summary>
             public I Identifier
             {
-                get { return IExecute<I>("getIdentifier"); }
+                get { return IExecuteWithSignature<I>("getIdentifier", "()Ljava/lang/Object;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getModel()"/> 
             /// </summary>
             public M Model
             {
-                get { return IExecute<M>("getModel"); }
+                get { return IExecuteWithSignature<M>("getModel", "()Ljava/lang/Object;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getValueCount()"/> 
             /// </summary>
             public int ValueCount
             {
-                get { return IExecute<int>("getValueCount"); }
+                get { return IExecuteWithSignature<int>("getValueCount", "()I"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getValue(int)"/>
@@ -312,7 +312,7 @@ namespace Javax.Swing
             /// <returns><see cref="object"/></returns>
             public object GetValue(int arg0)
             {
-                return IExecute("getValue", arg0);
+                return IExecuteWithSignature("getValue", "(I)Ljava/lang/Object;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getStringValue(int)"/>
@@ -321,7 +321,7 @@ namespace Javax.Swing
             /// <returns><see cref="Java.Lang.String"/></returns>
             public Java.Lang.String GetStringValue(int arg0)
             {
-                return IExecute<Java.Lang.String>("getStringValue", arg0);
+                return IExecuteWithSignature<Java.Lang.String>("getStringValue", "(I)Ljava/lang/String;", arg0);
             }
 
             #endregion
@@ -439,7 +439,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool Include<Arg0ExtendsM, Arg0ExtendsI>(Javax.Swing.RowFilter.Entry<Arg0ExtendsM, Arg0ExtendsI> arg0) where Arg0ExtendsM: M where Arg0ExtendsI: I
         {
-            return IExecute<bool>("include", arg0);
+            return IExecuteWithSignature<bool>("include", "(Ljavax/swing/RowFilter$Entry;)Z", arg0);
         }
 
         #endregion

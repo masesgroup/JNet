@@ -50,14 +50,14 @@ namespace Java.Net
         /// </summary>
         public Java.Io.OutputStream Body
         {
-            get { return IExecute<Java.Io.OutputStream>("getBody"); }
+            get { return IExecuteWithSignature<Java.Io.OutputStream>("getBody", "()Ljava/io/OutputStream;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CacheRequest.html#abort()"/>
         /// </summary>
         public void Abort()
         {
-            IExecute("abort");
+            IExecuteWithSignature("abort", "()V");
         }
 
         #endregion

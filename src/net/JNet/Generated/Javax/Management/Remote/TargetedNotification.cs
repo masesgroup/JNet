@@ -59,14 +59,14 @@ namespace Javax.Management.Remote
         /// </summary>
         public Java.Lang.Integer ListenerID
         {
-            get { return IExecute<Java.Lang.Integer>("getListenerID"); }
+            get { return IExecuteWithSignature<Java.Lang.Integer>("getListenerID", "()Ljava/lang/Integer;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/TargetedNotification.html#getNotification()"/> 
         /// </summary>
         public Javax.Management.Notification Notification
         {
-            get { return IExecute<Javax.Management.Notification>("getNotification"); }
+            get { return IExecuteWithSignature<Javax.Management.Notification>("getNotification", "()Ljavax/management/Notification;"); }
         }
 
         #endregion

@@ -59,7 +59,7 @@ namespace Java.Net
         /// </summary>
         public Java.Net.CookieStore CookieStore
         {
-            get { return IExecute<Java.Net.CookieStore>("getCookieStore"); }
+            get { return IExecuteWithSignature<Java.Net.CookieStore>("getCookieStore", "()Ljava/net/CookieStore;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieManager.html#setCookiePolicy(java.net.CookiePolicy)"/>
@@ -67,7 +67,7 @@ namespace Java.Net
         /// <param name="arg0"><see cref="Java.Net.CookiePolicy"/></param>
         public void SetCookiePolicy(Java.Net.CookiePolicy arg0)
         {
-            IExecute("setCookiePolicy", arg0);
+            IExecuteWithSignature("setCookiePolicy", "(Ljava/net/CookiePolicy;)V", arg0);
         }
 
         #endregion

@@ -79,7 +79,7 @@ namespace Java.Rmi.Server
         /// <exception cref="Java.Net.MalformedURLException"/>
         public Java.Lang.ClassLoader GetClassLoader(Java.Lang.String arg0)
         {
-            return IExecute<Java.Lang.ClassLoader>("getClassLoader", arg0);
+            return IExecuteWithSignature<Java.Lang.ClassLoader>("getClassLoader", "(Ljava/lang/String;)Ljava/lang/ClassLoader;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClassLoaderSpi.html#getClassAnnotation(java.lang.Class)"/>
@@ -88,7 +88,7 @@ namespace Java.Rmi.Server
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetClassAnnotation(Java.Lang.Class arg0)
         {
-            return IExecute<Java.Lang.String>("getClassAnnotation", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getClassAnnotation", "(Ljava/lang/Class;)Ljava/lang/String;", arg0);
         }
 
         #endregion

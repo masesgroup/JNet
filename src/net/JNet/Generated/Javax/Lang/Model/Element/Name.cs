@@ -76,7 +76,7 @@ namespace Javax.Lang.Model.Element
         /// <returns><see cref="bool"/></returns>
         public bool ContentEquals(Java.Lang.CharSequence arg0)
         {
-            return IExecute<bool>("contentEquals", arg0);
+            return IExecuteWithSignature<bool>("contentEquals", "(Ljava/lang/CharSequence;)Z", arg0);
         }
 
         #endregion

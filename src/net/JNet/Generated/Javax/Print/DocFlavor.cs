@@ -73,28 +73,28 @@ namespace Javax.Print
         /// </summary>
         public Java.Lang.String MediaSubtype
         {
-            get { return IExecute<Java.Lang.String>("getMediaSubtype"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getMediaSubtype", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.html#getMediaType()"/> 
         /// </summary>
         public Java.Lang.String MediaType
         {
-            get { return IExecute<Java.Lang.String>("getMediaType"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getMediaType", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.html#getMimeType()"/> 
         /// </summary>
         public Java.Lang.String MimeType
         {
-            get { return IExecute<Java.Lang.String>("getMimeType"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getMimeType", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.html#getRepresentationClassName()"/> 
         /// </summary>
         public Java.Lang.String RepresentationClassName
         {
-            get { return IExecute<Java.Lang.String>("getRepresentationClassName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getRepresentationClassName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.html#getParameter(java.lang.String)"/>
@@ -103,7 +103,7 @@ namespace Javax.Print
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetParameter(Java.Lang.String arg0)
         {
-            return IExecute<Java.Lang.String>("getParameter", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getParameter", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
 
         #endregion

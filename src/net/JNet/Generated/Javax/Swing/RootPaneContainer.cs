@@ -84,28 +84,28 @@ namespace Javax.Swing
         /// </summary>
         public Java.Awt.Container ContentPane
         {
-            get { return IExecute<Java.Awt.Container>("getContentPane"); } set { IExecute("setContentPane", value); }
+            get { return IExecuteWithSignature<Java.Awt.Container>("getContentPane", "()Ljava/awt/Container;"); } set { IExecuteWithSignature("setContentPane", "(Ljava/awt/Container;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RootPaneContainer.html#getGlassPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RootPaneContainer.html#setGlassPane(java.awt.Component)"/>
         /// </summary>
         public Java.Awt.Component GlassPane
         {
-            get { return IExecute<Java.Awt.Component>("getGlassPane"); } set { IExecute("setGlassPane", value); }
+            get { return IExecuteWithSignature<Java.Awt.Component>("getGlassPane", "()Ljava/awt/Component;"); } set { IExecuteWithSignature("setGlassPane", "(Ljava/awt/Component;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RootPaneContainer.html#getLayeredPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RootPaneContainer.html#setLayeredPane(javax.swing.JLayeredPane)"/>
         /// </summary>
         public Javax.Swing.JLayeredPane LayeredPane
         {
-            get { return IExecute<Javax.Swing.JLayeredPane>("getLayeredPane"); } set { IExecute("setLayeredPane", value); }
+            get { return IExecuteWithSignature<Javax.Swing.JLayeredPane>("getLayeredPane", "()Ljavax/swing/JLayeredPane;"); } set { IExecuteWithSignature("setLayeredPane", "(Ljavax/swing/JLayeredPane;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RootPaneContainer.html#getRootPane()"/> 
         /// </summary>
         public Javax.Swing.JRootPane RootPane
         {
-            get { return IExecute<Javax.Swing.JRootPane>("getRootPane"); }
+            get { return IExecuteWithSignature<Javax.Swing.JRootPane>("getRootPane", "()Ljavax/swing/JRootPane;"); }
         }
 
         #endregion

@@ -74,14 +74,14 @@ namespace Java.Beans.Beancontext
         /// </summary>
         public Java.Beans.Beancontext.BeanContext BeanContext
         {
-            get { return IExecute<Java.Beans.Beancontext.BeanContext>("getBeanContext"); } set { IExecute("setBeanContext", value); }
+            get { return IExecuteWithSignature<Java.Beans.Beancontext.BeanContext>("getBeanContext", "()Ljava/beans/beancontext/BeanContext;"); } set { IExecuteWithSignature("setBeanContext", "(Ljava/beans/beancontext/BeanContext;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#getBeanContextChildPeer()"/> 
         /// </summary>
         public Java.Beans.Beancontext.BeanContextChild BeanContextChildPeer
         {
-            get { return IExecute<Java.Beans.Beancontext.BeanContextChild>("getBeanContextChildPeer"); }
+            get { return IExecuteWithSignature<Java.Beans.Beancontext.BeanContextChild>("getBeanContextChildPeer", "()Ljava/beans/beancontext/BeanContextChild;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#isDelegated()"/>
@@ -90,7 +90,7 @@ namespace Java.Beans.Beancontext
         /// <returns><see cref="bool"/></returns>
         public bool IsDelegated()
         {
-            return IExecute<bool>("isDelegated");
+            return IExecuteWithSignature<bool>("isDelegated", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#validatePendingSetBeanContext(java.beans.beancontext.BeanContext)"/>
@@ -99,7 +99,7 @@ namespace Java.Beans.Beancontext
         /// <returns><see cref="bool"/></returns>
         public bool ValidatePendingSetBeanContext(Java.Beans.Beancontext.BeanContext arg0)
         {
-            return IExecute<bool>("validatePendingSetBeanContext", arg0);
+            return IExecuteWithSignature<bool>("validatePendingSetBeanContext", "(Ljava/beans/beancontext/BeanContext;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
@@ -164,7 +164,7 @@ namespace Java.Beans.Beancontext
         /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServiceAvailableEvent"/></param>
         public void ServiceAvailable(Java.Beans.Beancontext.BeanContextServiceAvailableEvent arg0)
         {
-            IExecute("serviceAvailable", arg0);
+            IExecuteWithSignature("serviceAvailable", "(Ljava/beans/beancontext/BeanContextServiceAvailableEvent;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent)"/>
@@ -172,7 +172,7 @@ namespace Java.Beans.Beancontext
         /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServiceRevokedEvent"/></param>
         public void ServiceRevoked(Java.Beans.Beancontext.BeanContextServiceRevokedEvent arg0)
         {
-            IExecute("serviceRevoked", arg0);
+            IExecuteWithSignature("serviceRevoked", "(Ljava/beans/beancontext/BeanContextServiceRevokedEvent;)V", arg0);
         }
 
         #endregion

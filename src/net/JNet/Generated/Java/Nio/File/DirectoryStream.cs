@@ -56,7 +56,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator Iterator()
         {
-            return IExecute<Java.Util.Iterator>("iterator");
+            return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
         }
 
         #endregion
@@ -90,7 +90,7 @@ namespace Java.Nio.File
             /// <exception cref="Java.Io.IOException"/>
             public bool Accept(object arg0)
             {
-                return IExecute<bool>("accept", arg0);
+                return IExecuteWithSignature<bool>("accept", "(Ljava/lang/Object;)Z", arg0);
             }
 
             #endregion
@@ -135,7 +135,7 @@ namespace Java.Nio.File
             /// <exception cref="Java.Io.IOException"/>
             public bool Accept(T arg0)
             {
-                return IExecute<bool>("accept", arg0);
+                return IExecuteWithSignature<bool>("accept", "(Ljava/lang/Object;)Z", arg0);
             }
 
             #endregion
@@ -214,7 +214,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<T> Iterator()
         {
-            return IExecute<Java.Util.Iterator<T>>("iterator");
+            return IExecuteWithSignature<Java.Util.Iterator<T>>("iterator", "()Ljava/util/Iterator;");
         }
 
         #endregion

@@ -113,7 +113,7 @@ namespace Javax.Swing.Event
         /// </summary>
         public Javax.Swing.JInternalFrame InternalFrame
         {
-            get { return IExecute<Javax.Swing.JInternalFrame>("getInternalFrame"); }
+            get { return IExecuteWithSignature<Javax.Swing.JInternalFrame>("getInternalFrame", "()Ljavax/swing/JInternalFrame;"); }
         }
 
         #endregion

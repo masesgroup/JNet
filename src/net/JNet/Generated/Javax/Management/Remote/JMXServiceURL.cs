@@ -82,28 +82,28 @@ namespace Javax.Management.Remote
         /// </summary>
         public Java.Lang.String Host
         {
-            get { return IExecute<Java.Lang.String>("getHost"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getHost", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXServiceURL.html#getPort()"/> 
         /// </summary>
         public int Port
         {
-            get { return IExecute<int>("getPort"); }
+            get { return IExecuteWithSignature<int>("getPort", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXServiceURL.html#getProtocol()"/> 
         /// </summary>
         public Java.Lang.String Protocol
         {
-            get { return IExecute<Java.Lang.String>("getProtocol"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getProtocol", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXServiceURL.html#getURLPath()"/> 
         /// </summary>
         public Java.Lang.String URLPath
         {
-            get { return IExecute<Java.Lang.String>("getURLPath"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getURLPath", "()Ljava/lang/String;"); }
         }
 
         #endregion

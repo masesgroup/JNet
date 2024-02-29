@@ -126,28 +126,28 @@ namespace Org.W3c.Dom.Css
         /// </summary>
         public Java.Lang.String CssText
         {
-            get { return IExecute<Java.Lang.String>("getCssText"); } set { IExecute("setCssText", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getCssText", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setCssText", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSRule.html#getParentRule()"/> 
         /// </summary>
         public Org.W3c.Dom.Css.CSSRule ParentRule
         {
-            get { return IExecute<Org.W3c.Dom.Css.CSSRule>("getParentRule"); }
+            get { return IExecuteWithSignature<Org.W3c.Dom.Css.CSSRule>("getParentRule", "()Lorg/w3c/dom/css/CSSRule;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSRule.html#getParentStyleSheet()"/> 
         /// </summary>
         public Org.W3c.Dom.Css.CSSStyleSheet ParentStyleSheet
         {
-            get { return IExecute<Org.W3c.Dom.Css.CSSStyleSheet>("getParentStyleSheet"); }
+            get { return IExecuteWithSignature<Org.W3c.Dom.Css.CSSStyleSheet>("getParentStyleSheet", "()Lorg/w3c/dom/css/CSSStyleSheet;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSRule.html#getType()"/> 
         /// </summary>
         public short Type
         {
-            get { return IExecute<short>("getType"); }
+            get { return IExecuteWithSignature<short>("getType", "()S"); }
         }
 
         #endregion

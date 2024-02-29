@@ -82,14 +82,14 @@ namespace Java.Lang.Management
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/CompilationMXBean.html#getTotalCompilationTime()"/> 
         /// </summary>
         public long TotalCompilationTime
         {
-            get { return IExecute<long>("getTotalCompilationTime"); }
+            get { return IExecuteWithSignature<long>("getTotalCompilationTime", "()J"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/CompilationMXBean.html#isCompilationTimeMonitoringSupported()"/>
@@ -98,7 +98,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsCompilationTimeMonitoringSupported()
         {
-            return IExecute<bool>("isCompilationTimeMonitoringSupported");
+            return IExecuteWithSignature<bool>("isCompilationTimeMonitoringSupported", "()Z");
         }
 
         #endregion

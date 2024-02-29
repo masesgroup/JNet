@@ -50,49 +50,49 @@ namespace Java.Awt
         /// </summary>
         public Java.Awt.Color Background
         {
-            get { return IExecute<Java.Awt.Color>("getBackground"); } set { IExecute("setBackground", value); }
+            get { return IExecuteWithSignature<Java.Awt.Color>("getBackground", "()Ljava/awt/Color;"); } set { IExecuteWithSignature("setBackground", "(Ljava/awt/Color;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getComposite()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setComposite(java.awt.Composite)"/>
         /// </summary>
         public Java.Awt.Composite Composite
         {
-            get { return IExecute<Java.Awt.Composite>("getComposite"); } set { IExecute("setComposite", value); }
+            get { return IExecuteWithSignature<Java.Awt.Composite>("getComposite", "()Ljava/awt/Composite;"); } set { IExecuteWithSignature("setComposite", "(Ljava/awt/Composite;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getDeviceConfiguration()"/> 
         /// </summary>
         public Java.Awt.GraphicsConfiguration DeviceConfiguration
         {
-            get { return IExecute<Java.Awt.GraphicsConfiguration>("getDeviceConfiguration"); }
+            get { return IExecuteWithSignature<Java.Awt.GraphicsConfiguration>("getDeviceConfiguration", "()Ljava/awt/GraphicsConfiguration;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getFontRenderContext()"/> 
         /// </summary>
         public Java.Awt.FontNs.FontRenderContext FontRenderContext
         {
-            get { return IExecute<Java.Awt.FontNs.FontRenderContext>("getFontRenderContext"); }
+            get { return IExecuteWithSignature<Java.Awt.FontNs.FontRenderContext>("getFontRenderContext", "()Ljava/awt/font/FontRenderContext;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getPaint()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setPaint(java.awt.Paint)"/>
         /// </summary>
         public Java.Awt.Paint Paint
         {
-            get { return IExecute<Java.Awt.Paint>("getPaint"); } set { IExecute("setPaint", value); }
+            get { return IExecuteWithSignature<Java.Awt.Paint>("getPaint", "()Ljava/awt/Paint;"); } set { IExecuteWithSignature("setPaint", "(Ljava/awt/Paint;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getRenderingHints()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setRenderingHints(java.util.Map)"/>
         /// </summary>
         public Java.Awt.RenderingHints RenderingHints
         {
-            get { return IExecute<Java.Awt.RenderingHints>("getRenderingHints"); } set { IExecute("setRenderingHints", value); }
+            get { return IExecuteWithSignature<Java.Awt.RenderingHints>("getRenderingHints", "()Ljava/awt/RenderingHints;"); } set { IExecuteWithSignature("setRenderingHints", "(Ljava/util/Map;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getStroke()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setStroke(java.awt.Stroke)"/>
         /// </summary>
         public Java.Awt.Stroke Stroke
         {
-            get { return IExecute<Java.Awt.Stroke>("getStroke"); } set { IExecute("setStroke", value); }
+            get { return IExecuteWithSignature<Java.Awt.Stroke>("getStroke", "()Ljava/awt/Stroke;"); } set { IExecuteWithSignature("setStroke", "(Ljava/awt/Stroke;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawImage(java.awt.Image,java.awt.geom.AffineTransform,java.awt.image.ImageObserver)"/>
@@ -123,7 +123,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
         public Java.Awt.Geom.AffineTransform GetTransform()
         {
-            return IExecute<Java.Awt.Geom.AffineTransform>("getTransform");
+            return IExecuteWithSignature<Java.Awt.Geom.AffineTransform>("getTransform", "()Ljava/awt/geom/AffineTransform;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getRenderingHint(java.awt.RenderingHints.Key)"/>
@@ -132,7 +132,7 @@ namespace Java.Awt
         /// <returns><see cref="object"/></returns>
         public object GetRenderingHint(Java.Awt.RenderingHints.Key arg0)
         {
-            return IExecute("getRenderingHint", arg0);
+            return IExecuteWithSignature("getRenderingHint", "(Ljava/awt/RenderingHints$Key;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#addRenderingHints(java.util.Map)"/>
@@ -140,7 +140,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public void AddRenderingHints(Java.Util.Map<object, object> arg0)
         {
-            IExecute("addRenderingHints", arg0);
+            IExecuteWithSignature("addRenderingHints", "(Ljava/util/Map;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#clip(java.awt.Shape)"/>
@@ -148,7 +148,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Shape"/></param>
         public void Clip(Java.Awt.Shape arg0)
         {
-            IExecute("clip", arg0);
+            IExecuteWithSignature("clip", "(Ljava/awt/Shape;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#draw(java.awt.Shape)"/>
@@ -156,7 +156,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Shape"/></param>
         public void Draw(Java.Awt.Shape arg0)
         {
-            IExecute("draw", arg0);
+            IExecuteWithSignature("draw", "(Ljava/awt/Shape;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawGlyphVector(java.awt.font.GlyphVector,float,float)"/>
@@ -223,7 +223,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Shape"/></param>
         public void Fill(Java.Awt.Shape arg0)
         {
-            IExecute("fill", arg0);
+            IExecuteWithSignature("fill", "(Ljava/awt/Shape;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#rotate(double,double,double)"/>
@@ -241,7 +241,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="double"/></param>
         public void Rotate(double arg0)
         {
-            IExecute("rotate", arg0);
+            IExecuteWithSignature("rotate", "(D)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#scale(double,double)"/>
@@ -267,7 +267,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
         public void SetTransform(Java.Awt.Geom.AffineTransform arg0)
         {
-            IExecute("setTransform", arg0);
+            IExecuteWithSignature("setTransform", "(Ljava/awt/geom/AffineTransform;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#shear(double,double)"/>
@@ -284,7 +284,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
         public void Transform(Java.Awt.Geom.AffineTransform arg0)
         {
-            IExecute("transform", arg0);
+            IExecuteWithSignature("transform", "(Ljava/awt/geom/AffineTransform;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#translate(double,double)"/>

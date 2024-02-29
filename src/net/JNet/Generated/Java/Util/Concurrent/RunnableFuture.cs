@@ -58,7 +58,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         public void Run()
         {
-            IExecute("run");
+            IExecuteWithSignature("run", "()V");
         }
 
         #endregion
@@ -130,7 +130,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         public void Run()
         {
-            IExecute("run");
+            IExecuteWithSignature("run", "()V");
         }
 
         #endregion

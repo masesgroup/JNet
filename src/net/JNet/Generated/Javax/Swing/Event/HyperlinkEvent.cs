@@ -96,35 +96,35 @@ namespace Javax.Swing.Event
         /// </summary>
         public Java.Lang.String Description
         {
-            get { return IExecute<Java.Lang.String>("getDescription"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkEvent.html#getEventType()"/> 
         /// </summary>
         public Javax.Swing.Event.HyperlinkEvent.EventType GetEventType
         {
-            get { return IExecute<Javax.Swing.Event.HyperlinkEvent.EventType>("getEventType"); }
+            get { return IExecuteWithSignature<Javax.Swing.Event.HyperlinkEvent.EventType>("getEventType", "()Ljavax/swing/event/HyperlinkEvent$EventType;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkEvent.html#getInputEvent()"/> 
         /// </summary>
         public Java.Awt.EventNs.InputEvent InputEvent
         {
-            get { return IExecute<Java.Awt.EventNs.InputEvent>("getInputEvent"); }
+            get { return IExecuteWithSignature<Java.Awt.EventNs.InputEvent>("getInputEvent", "()Ljava/awt/event/InputEvent;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkEvent.html#getSourceElement()"/> 
         /// </summary>
         public Javax.Swing.Text.Element SourceElement
         {
-            get { return IExecute<Javax.Swing.Text.Element>("getSourceElement"); }
+            get { return IExecuteWithSignature<Javax.Swing.Text.Element>("getSourceElement", "()Ljavax/swing/text/Element;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkEvent.html#getURL()"/> 
         /// </summary>
         public Java.Net.URL URL
         {
-            get { return IExecute<Java.Net.URL>("getURL"); }
+            get { return IExecuteWithSignature<Java.Net.URL>("getURL", "()Ljava/net/URL;"); }
         }
 
         #endregion

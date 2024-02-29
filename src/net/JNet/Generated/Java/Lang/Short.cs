@@ -102,7 +102,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int HashCode(short arg0)
         {
-            return SExecute<int>(LocalBridgeClazz, "hashCode", arg0);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "(S)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#toUnsignedInt(short)"/>
@@ -111,7 +111,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int ToUnsignedInt(short arg0)
         {
-            return SExecute<int>(LocalBridgeClazz, "toUnsignedInt", arg0);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "toUnsignedInt", "(S)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#decode(java.lang.String)"/>
@@ -121,7 +121,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static Java.Lang.Short Decode(Java.Lang.String arg0)
         {
-            return SExecute<Java.Lang.Short>(LocalBridgeClazz, "decode", arg0);
+            return SExecuteWithSignature<Java.Lang.Short>(LocalBridgeClazz, "decode", "(Ljava/lang/String;)Ljava/lang/Short;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#valueOf(java.lang.String,int)"/>
@@ -142,7 +142,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static Java.Lang.Short ValueOf(Java.Lang.String arg0)
         {
-            return SExecute<Java.Lang.Short>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecuteWithSignature<Java.Lang.Short>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/lang/Short;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#valueOf(short)"/>
@@ -151,7 +151,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.Short"/></returns>
         public static Java.Lang.Short ValueOf(short arg0)
         {
-            return SExecute<Java.Lang.Short>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecuteWithSignature<Java.Lang.Short>(LocalBridgeClazz, "valueOf", "(S)Ljava/lang/Short;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#toString(short)"/>
@@ -160,7 +160,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToString(short arg0)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", arg0);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(S)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#toUnsignedLong(short)"/>
@@ -169,7 +169,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long ToUnsignedLong(short arg0)
         {
-            return SExecute<long>(LocalBridgeClazz, "toUnsignedLong", arg0);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "toUnsignedLong", "(S)J", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#parseShort(java.lang.String,int)"/>
@@ -190,7 +190,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static short ParseShort(Java.Lang.String arg0)
         {
-            return SExecute<short>(LocalBridgeClazz, "parseShort", arg0);
+            return SExecuteWithSignature<short>(LocalBridgeClazz, "parseShort", "(Ljava/lang/String;)S", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#reverseBytes(short)"/>
@@ -199,7 +199,7 @@ namespace Java.Lang
         /// <returns><see cref="short"/></returns>
         public static short ReverseBytes(short arg0)
         {
-            return SExecute<short>(LocalBridgeClazz, "reverseBytes", arg0);
+            return SExecuteWithSignature<short>(LocalBridgeClazz, "reverseBytes", "(S)S", arg0);
         }
 
         #endregion
@@ -212,7 +212,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecute<int>("compareTo", arg0);
+            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#compareTo(java.lang.Short)"/>
@@ -221,7 +221,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Java.Lang.Short arg0)
         {
-            return IExecute<int>("compareTo", arg0);
+            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Short;)I", arg0);
         }
 
         #endregion

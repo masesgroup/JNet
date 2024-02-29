@@ -46,7 +46,7 @@ namespace Java.Awt
         /// </summary>
         public static Java.Awt.SystemTray GetSystemTray
         {
-            get { return SExecute<Java.Awt.SystemTray>(LocalBridgeClazz, "getSystemTray"); }
+            get { return SExecuteWithSignature<Java.Awt.SystemTray>(LocalBridgeClazz, "getSystemTray", "()Ljava/awt/SystemTray;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemTray.html#isSupported()"/>
@@ -55,7 +55,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public static bool IsSupported()
         {
-            return SExecute<bool>(LocalBridgeClazz, "isSupported");
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isSupported", "()Z");
         }
 
         #endregion
@@ -66,14 +66,14 @@ namespace Java.Awt
         /// </summary>
         public Java.Awt.TrayIcon[] TrayIcons
         {
-            get { return IExecuteArray<Java.Awt.TrayIcon>("getTrayIcons"); }
+            get { return IExecuteWithSignatureArray<Java.Awt.TrayIcon>("getTrayIcons", "()[Ljava/awt/TrayIcon;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemTray.html#getTrayIconSize()"/> 
         /// </summary>
         public Java.Awt.Dimension TrayIconSize
         {
-            get { return IExecute<Java.Awt.Dimension>("getTrayIconSize"); }
+            get { return IExecuteWithSignature<Java.Awt.Dimension>("getTrayIconSize", "()Ljava/awt/Dimension;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemTray.html#getPropertyChangeListeners(java.lang.String)"/>
@@ -82,7 +82,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Beans.PropertyChangeListener"/></returns>
         public Java.Beans.PropertyChangeListener[] GetPropertyChangeListeners(Java.Lang.String arg0)
         {
-            return IExecuteArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners", arg0);
+            return IExecuteWithSignatureArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners", "(Ljava/lang/String;)[Ljava/beans/PropertyChangeListener;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemTray.html#addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
@@ -109,7 +109,7 @@ namespace Java.Awt
         /// <exception cref="Java.Awt.AWTException"/>
         public void Add(Java.Awt.TrayIcon arg0)
         {
-            IExecute("add", arg0);
+            IExecuteWithSignature("add", "(Ljava/awt/TrayIcon;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemTray.html#remove(java.awt.TrayIcon)"/>
@@ -117,7 +117,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.TrayIcon"/></param>
         public void Remove(Java.Awt.TrayIcon arg0)
         {
-            IExecute("remove", arg0);
+            IExecuteWithSignature("remove", "(Ljava/awt/TrayIcon;)V", arg0);
         }
 
         #endregion

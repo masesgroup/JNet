@@ -67,7 +67,7 @@ namespace Javax.Sql
         /// </summary>
         public Java.Sql.SQLException SQLException
         {
-            get { var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getSQLException"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Sql.SQLException>(obj); }
+            get { var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getSQLException", "()Ljava/sql/SQLException;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Sql.SQLException>(obj); }
         }
 
         #endregion

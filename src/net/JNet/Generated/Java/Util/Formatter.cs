@@ -218,7 +218,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Io.IOException"/></returns>
         public Java.Io.IOException IoException()
         {
-            var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("ioException"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Io.IOException>(obj);
+            var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("ioException", "()Ljava/io/IOException;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Io.IOException>(obj);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#out()"/>
@@ -227,7 +227,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.Appendable"/></returns>
         public Java.Lang.Appendable Out()
         {
-            return IExecute<Java.Lang.Appendable>("out");
+            return IExecuteWithSignature<Java.Lang.Appendable>("out", "()Ljava/lang/Appendable;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#format(java.lang.String,java.lang.Object[])"/>
@@ -257,21 +257,21 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Locale"/></returns>
         public Java.Util.Locale Locale()
         {
-            return IExecute<Java.Util.Locale>("locale");
+            return IExecuteWithSignature<Java.Util.Locale>("locale", "()Ljava/util/Locale;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#close()"/>
         /// </summary>
         public void Close()
         {
-            IExecute("close");
+            IExecuteWithSignature("close", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#flush()"/>
         /// </summary>
         public void Flush()
         {
-            IExecute("flush");
+            IExecuteWithSignature("flush", "()V");
         }
 
         #endregion
@@ -312,7 +312,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Util.Formatter.BigDecimalLayoutForm"/></returns>
             public static Java.Util.Formatter.BigDecimalLayoutForm ValueOf(Java.Lang.String arg0)
             {
-                return SExecute<Java.Util.Formatter.BigDecimalLayoutForm>(LocalBridgeClazz, "valueOf", arg0);
+                return SExecuteWithSignature<Java.Util.Formatter.BigDecimalLayoutForm>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/util/Formatter$BigDecimalLayoutForm;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.BigDecimalLayoutForm.html#values()"/>
@@ -321,7 +321,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Util.Formatter.BigDecimalLayoutForm"/></returns>
             public static Java.Util.Formatter.BigDecimalLayoutForm[] Values()
             {
-                return SExecuteArray<Java.Util.Formatter.BigDecimalLayoutForm>(LocalBridgeClazz, "values");
+                return SExecuteWithSignatureArray<Java.Util.Formatter.BigDecimalLayoutForm>(LocalBridgeClazz, "values", "()[Ljava/util/Formatter$BigDecimalLayoutForm;");
             }
 
             #endregion

@@ -72,7 +72,7 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         public Javax.Lang.Model.Element.Name QualifiedName
         {
-            get { return IExecute<Javax.Lang.Model.Element.Name>("getQualifiedName"); }
+            get { return IExecuteWithSignature<Javax.Lang.Model.Element.Name>("getQualifiedName", "()Ljavax/lang/model/element/Name;"); }
         }
 
         #endregion

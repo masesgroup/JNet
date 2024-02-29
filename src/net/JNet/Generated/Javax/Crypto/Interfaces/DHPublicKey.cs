@@ -86,7 +86,7 @@ namespace Javax.Crypto.Interfaces
         /// </summary>
         public Java.Math.BigInteger Y
         {
-            get { return IExecute<Java.Math.BigInteger>("getY"); }
+            get { return IExecuteWithSignature<Java.Math.BigInteger>("getY", "()Ljava/math/BigInteger;"); }
         }
 
         #endregion

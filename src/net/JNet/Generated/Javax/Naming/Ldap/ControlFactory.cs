@@ -65,7 +65,7 @@ namespace Javax.Naming.Ldap
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.Ldap.Control GetControlInstance(Javax.Naming.Ldap.Control arg0)
         {
-            return IExecute<Javax.Naming.Ldap.Control>("getControlInstance", arg0);
+            return IExecuteWithSignature<Javax.Naming.Ldap.Control>("getControlInstance", "(Ljavax/naming/ldap/Control;)Ljavax/naming/ldap/Control;", arg0);
         }
 
         #endregion

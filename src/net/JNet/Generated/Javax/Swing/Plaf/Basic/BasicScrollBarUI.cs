@@ -58,7 +58,7 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public bool SupportsAbsolutePositioning
         {
-            get { return IExecute<bool>("getSupportsAbsolutePositioning"); }
+            get { return IExecuteWithSignature<bool>("getSupportsAbsolutePositioning", "()Z"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollBarUI.html#isThumbRollover()"/>
@@ -67,7 +67,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <returns><see cref="bool"/></returns>
         public bool IsThumbRollover()
         {
-            return IExecute<bool>("isThumbRollover");
+            return IExecuteWithSignature<bool>("isThumbRollover", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollBarUI.html#minimumLayoutSize(java.awt.Container)"/>
@@ -76,7 +76,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension MinimumLayoutSize(Java.Awt.Container arg0)
         {
-            return IExecute<Java.Awt.Dimension>("minimumLayoutSize", arg0);
+            return IExecuteWithSignature<Java.Awt.Dimension>("minimumLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollBarUI.html#preferredLayoutSize(java.awt.Container)"/>
@@ -85,7 +85,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension PreferredLayoutSize(Java.Awt.Container arg0)
         {
-            return IExecute<Java.Awt.Dimension>("preferredLayoutSize", arg0);
+            return IExecuteWithSignature<Java.Awt.Dimension>("preferredLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollBarUI.html#addLayoutComponent(java.lang.String,java.awt.Component)"/>
@@ -102,7 +102,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
         public void LayoutContainer(Java.Awt.Container arg0)
         {
-            IExecute("layoutContainer", arg0);
+            IExecuteWithSignature("layoutContainer", "(Ljava/awt/Container;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollBarUI.html#removeLayoutComponent(java.awt.Component)"/>
@@ -110,7 +110,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         public void RemoveLayoutComponent(Java.Awt.Component arg0)
         {
-            IExecute("removeLayoutComponent", arg0);
+            IExecuteWithSignature("removeLayoutComponent", "(Ljava/awt/Component;)V", arg0);
         }
 
         #endregion
@@ -154,7 +154,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
             public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
             {
-                IExecute("propertyChange", arg0);
+                IExecuteWithSignature("propertyChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);
             }
 
             #endregion

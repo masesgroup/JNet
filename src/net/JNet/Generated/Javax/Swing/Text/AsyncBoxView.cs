@@ -59,42 +59,42 @@ namespace Javax.Swing.Text
         /// </summary>
         public float BottomInset
         {
-            get { return IExecute<float>("getBottomInset"); } set { IExecute("setBottomInset", value); }
+            get { return IExecuteWithSignature<float>("getBottomInset", "()F"); } set { IExecuteWithSignature("setBottomInset", "(F)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#getLeftInset()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#setLeftInset(float)"/>
         /// </summary>
         public float LeftInset
         {
-            get { return IExecute<float>("getLeftInset"); } set { IExecute("setLeftInset", value); }
+            get { return IExecuteWithSignature<float>("getLeftInset", "()F"); } set { IExecuteWithSignature("setLeftInset", "(F)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#getMajorAxis()"/> 
         /// </summary>
         public int MajorAxis
         {
-            get { return IExecute<int>("getMajorAxis"); }
+            get { return IExecuteWithSignature<int>("getMajorAxis", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#getMinorAxis()"/> 
         /// </summary>
         public int MinorAxis
         {
-            get { return IExecute<int>("getMinorAxis"); }
+            get { return IExecuteWithSignature<int>("getMinorAxis", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#getRightInset()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#setRightInset(float)"/>
         /// </summary>
         public float RightInset
         {
-            get { return IExecute<float>("getRightInset"); } set { IExecute("setRightInset", value); }
+            get { return IExecuteWithSignature<float>("getRightInset", "()F"); } set { IExecuteWithSignature("setRightInset", "(F)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#getTopInset()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#setTopInset(float)"/>
         /// </summary>
         public float TopInset
         {
-            get { return IExecute<float>("getTopInset"); } set { IExecute("setTopInset", value); }
+            get { return IExecuteWithSignature<float>("getTopInset", "()F"); } set { IExecuteWithSignature("setTopInset", "(F)V", value); }
         }
 
         #endregion
@@ -155,7 +155,7 @@ namespace Javax.Swing.Text
             /// <param name="arg0"><see cref="Javax.Swing.Text.AsyncBoxView.ChildState"/></param>
             public void ChildChanged(Javax.Swing.Text.AsyncBoxView.ChildState arg0)
             {
-                IExecute("childChanged", arg0);
+                IExecuteWithSignature("childChanged", "(Ljavax/swing/text/AsyncBoxView$ChildState;)V", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html#paintChildren(java.awt.Graphics)"/>
@@ -163,7 +163,7 @@ namespace Javax.Swing.Text
             /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
             public void PaintChildren(Java.Awt.Graphics arg0)
             {
-                IExecute("paintChildren", arg0);
+                IExecuteWithSignature("paintChildren", "(Ljava/awt/Graphics;)V", arg0);
             }
 
             #endregion
@@ -210,35 +210,35 @@ namespace Javax.Swing.Text
             /// </summary>
             public Javax.Swing.Text.View ChildView
             {
-                get { return IExecute<Javax.Swing.Text.View>("getChildView"); }
+                get { return IExecuteWithSignature<Javax.Swing.Text.View>("getChildView", "()Ljavax/swing/text/View;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#getMajorOffset()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#setMajorOffset(float)"/>
             /// </summary>
             public float MajorOffset
             {
-                get { return IExecute<float>("getMajorOffset"); } set { IExecute("setMajorOffset", value); }
+                get { return IExecuteWithSignature<float>("getMajorOffset", "()F"); } set { IExecuteWithSignature("setMajorOffset", "(F)V", value); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#getMajorSpan()"/> 
             /// </summary>
             public float MajorSpan
             {
-                get { return IExecute<float>("getMajorSpan"); }
+                get { return IExecuteWithSignature<float>("getMajorSpan", "()F"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#getMinorOffset()"/> 
             /// </summary>
             public float MinorOffset
             {
-                get { return IExecute<float>("getMinorOffset"); }
+                get { return IExecuteWithSignature<float>("getMinorOffset", "()F"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#getMinorSpan()"/> 
             /// </summary>
             public float MinorSpan
             {
-                get { return IExecute<float>("getMinorSpan"); }
+                get { return IExecuteWithSignature<float>("getMinorSpan", "()F"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#isLayoutValid()"/>
@@ -247,7 +247,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="bool"/></returns>
             public bool IsLayoutValid()
             {
-                return IExecute<bool>("isLayoutValid");
+                return IExecuteWithSignature<bool>("isLayoutValid", "()Z");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#preferenceChanged(boolean,boolean)"/>
@@ -263,7 +263,7 @@ namespace Javax.Swing.Text
             /// </summary>
             public void Run()
             {
-                IExecute("run");
+                IExecuteWithSignature("run", "()V");
             }
 
             #endregion

@@ -67,21 +67,21 @@ namespace Java.Lang
         /// </summary>
         public int MaxPriority
         {
-            get { return IExecute<int>("getMaxPriority"); } set { IExecute("setMaxPriority", value); }
+            get { return IExecuteWithSignature<int>("getMaxPriority", "()I"); } set { IExecuteWithSignature("setMaxPriority", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#getParent()"/> 
         /// </summary>
         public Java.Lang.ThreadGroup Parent
         {
-            get { return IExecute<Java.Lang.ThreadGroup>("getParent"); }
+            get { return IExecuteWithSignature<Java.Lang.ThreadGroup>("getParent", "()Ljava/lang/ThreadGroup;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#isDaemon()"/>
@@ -90,7 +90,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsDaemon()
         {
-            return IExecute<bool>("isDaemon");
+            return IExecuteWithSignature<bool>("isDaemon", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#parentOf(java.lang.ThreadGroup)"/>
@@ -99,28 +99,28 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool ParentOf(Java.Lang.ThreadGroup arg0)
         {
-            return IExecute<bool>("parentOf", arg0);
+            return IExecuteWithSignature<bool>("parentOf", "(Ljava/lang/ThreadGroup;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#checkAccess()"/>
         /// </summary>
         public void CheckAccess()
         {
-            IExecute("checkAccess");
+            IExecuteWithSignature("checkAccess", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#destroy()"/>
         /// </summary>
         public void Destroy()
         {
-            IExecute("destroy");
+            IExecuteWithSignature("destroy", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#interrupt()"/>
         /// </summary>
         public void Interrupt()
         {
-            IExecute("interrupt");
+            IExecuteWithSignature("interrupt", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#setDaemon(boolean)"/>
@@ -128,7 +128,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetDaemon(bool arg0)
         {
-            IExecute("setDaemon", arg0);
+            IExecuteWithSignature("setDaemon", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#activeCount()"/>
@@ -137,7 +137,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int ActiveCount()
         {
-            return IExecute<int>("activeCount");
+            return IExecuteWithSignature<int>("activeCount", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#activeGroupCount()"/>
@@ -146,7 +146,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int ActiveGroupCount()
         {
-            return IExecute<int>("activeGroupCount");
+            return IExecuteWithSignature<int>("activeGroupCount", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#enumerate(java.lang.Thread[],boolean)"/>
@@ -165,7 +165,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int Enumerate(Java.Lang.Thread[] arg0)
         {
-            return IExecute<int>("enumerate", new object[] { arg0 });
+            return IExecuteWithSignature<int>("enumerate", "([Ljava/lang/Thread;)I", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#enumerate(java.lang.ThreadGroup[],boolean)"/>
@@ -184,7 +184,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int Enumerate(Java.Lang.ThreadGroup[] arg0)
         {
-            return IExecute<int>("enumerate", new object[] { arg0 });
+            return IExecuteWithSignature<int>("enumerate", "([Ljava/lang/ThreadGroup;)I", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#isDestroyed()"/>
@@ -193,14 +193,14 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsDestroyed()
         {
-            return IExecute<bool>("isDestroyed");
+            return IExecuteWithSignature<bool>("isDestroyed", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#list()"/>
         /// </summary>
         public void List()
         {
-            IExecute("list");
+            IExecuteWithSignature("list", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#uncaughtException(java.lang.Thread,java.lang.Throwable)"/>

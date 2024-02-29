@@ -72,7 +72,7 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public bool Compact
         {
-            get { return IExecute<bool>("getCompact"); } set { IExecute("setCompact", value); }
+            get { return IExecuteWithSignature<bool>("getCompact", "()Z"); } set { IExecuteWithSignature("setCompact", "(Z)V", value); }
         }
 
         #endregion

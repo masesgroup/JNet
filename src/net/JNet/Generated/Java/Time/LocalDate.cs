@@ -82,7 +82,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalDate"/></returns>
         public static Java.Time.LocalDate Now()
         {
-            return SExecute<Java.Time.LocalDate>(LocalBridgeClazz, "now");
+            return SExecuteWithSignature<Java.Time.LocalDate>(LocalBridgeClazz, "now", "()Ljava/time/LocalDate;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#now(java.time.Clock)"/>
@@ -91,7 +91,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalDate"/></returns>
         public static Java.Time.LocalDate Now(Java.Time.Clock arg0)
         {
-            return SExecute<Java.Time.LocalDate>(LocalBridgeClazz, "now", arg0);
+            return SExecuteWithSignature<Java.Time.LocalDate>(LocalBridgeClazz, "now", "(Ljava/time/Clock;)Ljava/time/LocalDate;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#now(java.time.ZoneId)"/>
@@ -100,7 +100,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalDate"/></returns>
         public static Java.Time.LocalDate Now(Java.Time.ZoneId arg0)
         {
-            return SExecute<Java.Time.LocalDate>(LocalBridgeClazz, "now", arg0);
+            return SExecuteWithSignature<Java.Time.LocalDate>(LocalBridgeClazz, "now", "(Ljava/time/ZoneId;)Ljava/time/LocalDate;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#of(int,int,int)"/>
@@ -131,7 +131,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalDate"/></returns>
         public static Java.Time.LocalDate OfEpochDay(long arg0)
         {
-            return SExecute<Java.Time.LocalDate>(LocalBridgeClazz, "ofEpochDay", arg0);
+            return SExecuteWithSignature<Java.Time.LocalDate>(LocalBridgeClazz, "ofEpochDay", "(J)Ljava/time/LocalDate;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#ofInstant(java.time.Instant,java.time.ZoneId)"/>
@@ -170,7 +170,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalDate"/></returns>
         public static Java.Time.LocalDate Parse(Java.Lang.CharSequence arg0)
         {
-            return SExecute<Java.Time.LocalDate>(LocalBridgeClazz, "parse", arg0);
+            return SExecuteWithSignature<Java.Time.LocalDate>(LocalBridgeClazz, "parse", "(Ljava/lang/CharSequence;)Ljava/time/LocalDate;", arg0);
         }
 
         #endregion
@@ -181,56 +181,56 @@ namespace Java.Time
         /// </summary>
         public Java.Time.Chrono.Chronology Chronology
         {
-            get { return IExecute<Java.Time.Chrono.Chronology>("getChronology"); }
+            get { return IExecuteWithSignature<Java.Time.Chrono.Chronology>("getChronology", "()Ljava/time/chrono/Chronology;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#getDayOfMonth()"/> 
         /// </summary>
         public int DayOfMonth
         {
-            get { return IExecute<int>("getDayOfMonth"); }
+            get { return IExecuteWithSignature<int>("getDayOfMonth", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#getDayOfWeek()"/> 
         /// </summary>
         public Java.Time.DayOfWeek DayOfWeek
         {
-            get { return IExecute<Java.Time.DayOfWeek>("getDayOfWeek"); }
+            get { return IExecuteWithSignature<Java.Time.DayOfWeek>("getDayOfWeek", "()Ljava/time/DayOfWeek;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#getDayOfYear()"/> 
         /// </summary>
         public int DayOfYear
         {
-            get { return IExecute<int>("getDayOfYear"); }
+            get { return IExecuteWithSignature<int>("getDayOfYear", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#getEra()"/> 
         /// </summary>
         public Java.Time.Chrono.Era Era
         {
-            get { return IExecute<Java.Time.Chrono.Era>("getEra"); }
+            get { return IExecuteWithSignature<Java.Time.Chrono.Era>("getEra", "()Ljava/time/chrono/Era;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#getMonth()"/> 
         /// </summary>
         public Java.Time.Month Month
         {
-            get { return IExecute<Java.Time.Month>("getMonth"); }
+            get { return IExecuteWithSignature<Java.Time.Month>("getMonth", "()Ljava/time/Month;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#getMonthValue()"/> 
         /// </summary>
         public int MonthValue
         {
-            get { return IExecute<int>("getMonthValue"); }
+            get { return IExecuteWithSignature<int>("getMonthValue", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#getYear()"/> 
         /// </summary>
         public int Year
         {
-            get { return IExecute<int>("getYear"); }
+            get { return IExecuteWithSignature<int>("getYear", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#query(java.time.temporal.TemporalQuery)"/>
@@ -240,7 +240,7 @@ namespace Java.Time
         /// <returns><typeparamref name="R"/></returns>
         public R Query<R>(Java.Time.Temporal.TemporalQuery<R> arg0)
         {
-            return IExecute<R>("query", arg0);
+            return IExecuteWithSignature<R>("query", "(Ljava/time/temporal/TemporalQuery;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#isAfter(java.time.chrono.ChronoLocalDate)"/>
@@ -249,7 +249,7 @@ namespace Java.Time
         /// <returns><see cref="bool"/></returns>
         public bool IsAfter(Java.Time.Chrono.ChronoLocalDate arg0)
         {
-            return IExecute<bool>("isAfter", arg0);
+            return IExecuteWithSignature<bool>("isAfter", "(Ljava/time/chrono/ChronoLocalDate;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#isBefore(java.time.chrono.ChronoLocalDate)"/>
@@ -258,7 +258,7 @@ namespace Java.Time
         /// <returns><see cref="bool"/></returns>
         public bool IsBefore(Java.Time.Chrono.ChronoLocalDate arg0)
         {
-            return IExecute<bool>("isBefore", arg0);
+            return IExecuteWithSignature<bool>("isBefore", "(Ljava/time/chrono/ChronoLocalDate;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#isEqual(java.time.chrono.ChronoLocalDate)"/>
@@ -267,7 +267,7 @@ namespace Java.Time
         /// <returns><see cref="bool"/></returns>
         public bool IsEqual(Java.Time.Chrono.ChronoLocalDate arg0)
         {
-            return IExecute<bool>("isEqual", arg0);
+            return IExecuteWithSignature<bool>("isEqual", "(Ljava/time/chrono/ChronoLocalDate;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#isLeapYear()"/>
@@ -276,7 +276,7 @@ namespace Java.Time
         /// <returns><see cref="bool"/></returns>
         public bool IsLeapYear()
         {
-            return IExecute<bool>("isLeapYear");
+            return IExecuteWithSignature<bool>("isLeapYear", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#isSupported(java.time.temporal.TemporalField)"/>
@@ -285,7 +285,7 @@ namespace Java.Time
         /// <returns><see cref="bool"/></returns>
         public bool IsSupported(Java.Time.Temporal.TemporalField arg0)
         {
-            return IExecute<bool>("isSupported", arg0);
+            return IExecuteWithSignature<bool>("isSupported", "(Ljava/time/temporal/TemporalField;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#isSupported(java.time.temporal.TemporalUnit)"/>
@@ -294,7 +294,7 @@ namespace Java.Time
         /// <returns><see cref="bool"/></returns>
         public bool IsSupported(Java.Time.Temporal.TemporalUnit arg0)
         {
-            return IExecute<bool>("isSupported", arg0);
+            return IExecuteWithSignature<bool>("isSupported", "(Ljava/time/temporal/TemporalUnit;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#compareTo(java.lang.Object)"/>
@@ -303,7 +303,7 @@ namespace Java.Time
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecute<int>("compareTo", arg0);
+            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#compareTo(java.time.chrono.ChronoLocalDate)"/>
@@ -312,7 +312,7 @@ namespace Java.Time
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Java.Time.Chrono.ChronoLocalDate arg0)
         {
-            return IExecute<int>("compareTo", arg0);
+            return IExecuteWithSignature<int>("compareTo", "(Ljava/time/chrono/ChronoLocalDate;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#get(java.time.temporal.TemporalField)"/>
@@ -321,7 +321,7 @@ namespace Java.Time
         /// <returns><see cref="int"/></returns>
         public int Get(Java.Time.Temporal.TemporalField arg0)
         {
-            return IExecute<int>("get", arg0);
+            return IExecuteWithSignature<int>("get", "(Ljava/time/temporal/TemporalField;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#lengthOfMonth()"/>
@@ -330,7 +330,7 @@ namespace Java.Time
         /// <returns><see cref="int"/></returns>
         public int LengthOfMonth()
         {
-            return IExecute<int>("lengthOfMonth");
+            return IExecuteWithSignature<int>("lengthOfMonth", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#lengthOfYear()"/>
@@ -339,7 +339,7 @@ namespace Java.Time
         /// <returns><see cref="int"/></returns>
         public int LengthOfYear()
         {
-            return IExecute<int>("lengthOfYear");
+            return IExecuteWithSignature<int>("lengthOfYear", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#format(java.time.format.DateTimeFormatter)"/>
@@ -348,7 +348,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Format(Java.Time.Format.DateTimeFormatter arg0)
         {
-            return IExecute<Java.Lang.String>("format", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("format", "(Ljava/time/format/DateTimeFormatter;)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#atTime(java.time.LocalTime)"/>
@@ -357,7 +357,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Chrono.ChronoLocalDateTime"/></returns>
         public Java.Time.Chrono.ChronoLocalDateTime AtTime(Java.Time.LocalTime arg0)
         {
-            return IExecute<Java.Time.Chrono.ChronoLocalDateTime>("atTime", arg0);
+            return IExecuteWithSignature<Java.Time.Chrono.ChronoLocalDateTime>("atTime", "(Ljava/time/LocalTime;)Ljava/time/chrono/ChronoLocalDateTime;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#until(java.time.chrono.ChronoLocalDate)"/>
@@ -366,7 +366,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
         public Java.Time.Chrono.ChronoPeriod Until(Java.Time.Chrono.ChronoLocalDate arg0)
         {
-            return IExecute<Java.Time.Chrono.ChronoPeriod>("until", arg0);
+            return IExecuteWithSignature<Java.Time.Chrono.ChronoPeriod>("until", "(Ljava/time/chrono/ChronoLocalDate;)Ljava/time/chrono/ChronoPeriod;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#minusDays(long)"/>
@@ -375,7 +375,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalDate"/></returns>
         public Java.Time.LocalDate MinusDays(long arg0)
         {
-            return IExecute<Java.Time.LocalDate>("minusDays", arg0);
+            return IExecuteWithSignature<Java.Time.LocalDate>("minusDays", "(J)Ljava/time/LocalDate;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#minusMonths(long)"/>
@@ -384,7 +384,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalDate"/></returns>
         public Java.Time.LocalDate MinusMonths(long arg0)
         {
-            return IExecute<Java.Time.LocalDate>("minusMonths", arg0);
+            return IExecuteWithSignature<Java.Time.LocalDate>("minusMonths", "(J)Ljava/time/LocalDate;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#minusWeeks(long)"/>
@@ -393,7 +393,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalDate"/></returns>
         public Java.Time.LocalDate MinusWeeks(long arg0)
         {
-            return IExecute<Java.Time.LocalDate>("minusWeeks", arg0);
+            return IExecuteWithSignature<Java.Time.LocalDate>("minusWeeks", "(J)Ljava/time/LocalDate;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#minusYears(long)"/>
@@ -402,7 +402,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalDate"/></returns>
         public Java.Time.LocalDate MinusYears(long arg0)
         {
-            return IExecute<Java.Time.LocalDate>("minusYears", arg0);
+            return IExecuteWithSignature<Java.Time.LocalDate>("minusYears", "(J)Ljava/time/LocalDate;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#plusDays(long)"/>
@@ -411,7 +411,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalDate"/></returns>
         public Java.Time.LocalDate PlusDays(long arg0)
         {
-            return IExecute<Java.Time.LocalDate>("plusDays", arg0);
+            return IExecuteWithSignature<Java.Time.LocalDate>("plusDays", "(J)Ljava/time/LocalDate;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#plusMonths(long)"/>
@@ -420,7 +420,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalDate"/></returns>
         public Java.Time.LocalDate PlusMonths(long arg0)
         {
-            return IExecute<Java.Time.LocalDate>("plusMonths", arg0);
+            return IExecuteWithSignature<Java.Time.LocalDate>("plusMonths", "(J)Ljava/time/LocalDate;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#plusWeeks(long)"/>
@@ -429,7 +429,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalDate"/></returns>
         public Java.Time.LocalDate PlusWeeks(long arg0)
         {
-            return IExecute<Java.Time.LocalDate>("plusWeeks", arg0);
+            return IExecuteWithSignature<Java.Time.LocalDate>("plusWeeks", "(J)Ljava/time/LocalDate;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#plusYears(long)"/>
@@ -438,7 +438,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalDate"/></returns>
         public Java.Time.LocalDate PlusYears(long arg0)
         {
-            return IExecute<Java.Time.LocalDate>("plusYears", arg0);
+            return IExecuteWithSignature<Java.Time.LocalDate>("plusYears", "(J)Ljava/time/LocalDate;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#withDayOfMonth(int)"/>
@@ -447,7 +447,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalDate"/></returns>
         public Java.Time.LocalDate WithDayOfMonth(int arg0)
         {
-            return IExecute<Java.Time.LocalDate>("withDayOfMonth", arg0);
+            return IExecuteWithSignature<Java.Time.LocalDate>("withDayOfMonth", "(I)Ljava/time/LocalDate;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#withDayOfYear(int)"/>
@@ -456,7 +456,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalDate"/></returns>
         public Java.Time.LocalDate WithDayOfYear(int arg0)
         {
-            return IExecute<Java.Time.LocalDate>("withDayOfYear", arg0);
+            return IExecuteWithSignature<Java.Time.LocalDate>("withDayOfYear", "(I)Ljava/time/LocalDate;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#withMonth(int)"/>
@@ -465,7 +465,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalDate"/></returns>
         public Java.Time.LocalDate WithMonth(int arg0)
         {
-            return IExecute<Java.Time.LocalDate>("withMonth", arg0);
+            return IExecuteWithSignature<Java.Time.LocalDate>("withMonth", "(I)Ljava/time/LocalDate;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#withYear(int)"/>
@@ -474,7 +474,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalDate"/></returns>
         public Java.Time.LocalDate WithYear(int arg0)
         {
-            return IExecute<Java.Time.LocalDate>("withYear", arg0);
+            return IExecuteWithSignature<Java.Time.LocalDate>("withYear", "(I)Ljava/time/LocalDate;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#atStartOfDay()"/>
@@ -483,7 +483,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalDateTime"/></returns>
         public Java.Time.LocalDateTime AtStartOfDay()
         {
-            return IExecute<Java.Time.LocalDateTime>("atStartOfDay");
+            return IExecuteWithSignature<Java.Time.LocalDateTime>("atStartOfDay", "()Ljava/time/LocalDateTime;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#atTime(int,int,int,int)"/>
@@ -525,7 +525,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
         public Java.Time.OffsetDateTime AtTime(Java.Time.OffsetTime arg0)
         {
-            return IExecute<Java.Time.OffsetDateTime>("atTime", arg0);
+            return IExecuteWithSignature<Java.Time.OffsetDateTime>("atTime", "(Ljava/time/OffsetTime;)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#adjustInto(java.time.temporal.Temporal)"/>
@@ -534,7 +534,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal AdjustInto(Java.Time.Temporal.Temporal arg0)
         {
-            return IExecute<Java.Time.Temporal.Temporal>("adjustInto", arg0);
+            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("adjustInto", "(Ljava/time/temporal/Temporal;)Ljava/time/temporal/Temporal;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#range(java.time.temporal.TemporalField)"/>
@@ -543,7 +543,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public Java.Time.Temporal.ValueRange Range(Java.Time.Temporal.TemporalField arg0)
         {
-            return IExecute<Java.Time.Temporal.ValueRange>("range", arg0);
+            return IExecuteWithSignature<Java.Time.Temporal.ValueRange>("range", "(Ljava/time/temporal/TemporalField;)Ljava/time/temporal/ValueRange;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#atStartOfDay(java.time.ZoneId)"/>
@@ -552,7 +552,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime AtStartOfDay(Java.Time.ZoneId arg0)
         {
-            return IExecute<Java.Time.ZonedDateTime>("atStartOfDay", arg0);
+            return IExecuteWithSignature<Java.Time.ZonedDateTime>("atStartOfDay", "(Ljava/time/ZoneId;)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#datesUntil(java.time.LocalDate,java.time.Period)"/>
@@ -571,7 +571,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Java.Time.LocalDate> DatesUntil(Java.Time.LocalDate arg0)
         {
-            return IExecute<Java.Util.Stream.Stream<Java.Time.LocalDate>>("datesUntil", arg0);
+            return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Time.LocalDate>>("datesUntil", "(Ljava/time/LocalDate;)Ljava/util/stream/Stream;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#getLong(java.time.temporal.TemporalField)"/>
@@ -580,7 +580,7 @@ namespace Java.Time
         /// <returns><see cref="long"/></returns>
         public long GetLong(Java.Time.Temporal.TemporalField arg0)
         {
-            return IExecute<long>("getLong", arg0);
+            return IExecuteWithSignature<long>("getLong", "(Ljava/time/temporal/TemporalField;)J", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#toEpochDay()"/>
@@ -589,7 +589,7 @@ namespace Java.Time
         /// <returns><see cref="long"/></returns>
         public long ToEpochDay()
         {
-            return IExecute<long>("toEpochDay");
+            return IExecuteWithSignature<long>("toEpochDay", "()J");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#toEpochSecond(java.time.LocalTime,java.time.ZoneOffset)"/>

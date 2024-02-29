@@ -59,14 +59,14 @@ namespace Javax.Swing
         /// </summary>
         public Java.Util.Locale DefaultLocale
         {
-            get { return IExecute<Java.Util.Locale>("getDefaultLocale"); } set { IExecute("setDefaultLocale", value); }
+            get { return IExecuteWithSignature<Java.Util.Locale>("getDefaultLocale", "()Ljava/util/Locale;"); } set { IExecuteWithSignature("setDefaultLocale", "(Ljava/util/Locale;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getPropertyChangeListeners()"/> 
         /// </summary>
         public Java.Beans.PropertyChangeListener[] PropertyChangeListeners
         {
-            get { return IExecuteArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners"); }
+            get { return IExecuteWithSignatureArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners", "()[Ljava/beans/PropertyChangeListener;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getBoolean(java.lang.Object,java.util.Locale)"/>
@@ -85,7 +85,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool GetBoolean(object arg0)
         {
-            return IExecute<bool>("getBoolean", arg0);
+            return IExecuteWithSignature<bool>("getBoolean", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getInt(java.lang.Object,java.util.Locale)"/>
@@ -104,7 +104,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetInt(object arg0)
         {
-            return IExecute<int>("getInt", arg0);
+            return IExecuteWithSignature<int>("getInt", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getColor(java.lang.Object,java.util.Locale)"/>
@@ -123,7 +123,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public Java.Awt.Color GetColor(object arg0)
         {
-            return IExecute<Java.Awt.Color>("getColor", arg0);
+            return IExecuteWithSignature<Java.Awt.Color>("getColor", "(Ljava/lang/Object;)Ljava/awt/Color;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getDimension(java.lang.Object,java.util.Locale)"/>
@@ -142,7 +142,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension GetDimension(object arg0)
         {
-            return IExecute<Java.Awt.Dimension>("getDimension", arg0);
+            return IExecuteWithSignature<Java.Awt.Dimension>("getDimension", "(Ljava/lang/Object;)Ljava/awt/Dimension;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getFont(java.lang.Object,java.util.Locale)"/>
@@ -161,7 +161,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public Java.Awt.Font GetFont(object arg0)
         {
-            return IExecute<Java.Awt.Font>("getFont", arg0);
+            return IExecuteWithSignature<Java.Awt.Font>("getFont", "(Ljava/lang/Object;)Ljava/awt/Font;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getInsets(java.lang.Object,java.util.Locale)"/>
@@ -180,7 +180,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Insets"/></returns>
         public Java.Awt.Insets GetInsets(object arg0)
         {
-            return IExecute<Java.Awt.Insets>("getInsets", arg0);
+            return IExecuteWithSignature<Java.Awt.Insets>("getInsets", "(Ljava/lang/Object;)Ljava/awt/Insets;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getUIClass(java.lang.String,java.lang.ClassLoader)"/>
@@ -201,7 +201,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public Java.Lang.Class GetUIClass<ReturnExtendsJavax_Swing_Plaf_ComponentUI>(Java.Lang.String arg0) where ReturnExtendsJavax_Swing_Plaf_ComponentUI: Javax.Swing.Plaf.ComponentUI
         {
-            return IExecute<Java.Lang.Class>("getUIClass", arg0);
+            return IExecuteWithSignature<Java.Lang.Class>("getUIClass", "(Ljava/lang/String;)Ljava/lang/Class;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#get(java.lang.Object,java.util.Locale)"/>
@@ -230,7 +230,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetString(object arg0)
         {
-            return IExecute<Java.Lang.String>("getString", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getString", "(Ljava/lang/Object;)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getBorder(java.lang.Object,java.util.Locale)"/>
@@ -249,7 +249,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public Javax.Swing.Border.Border GetBorder(object arg0)
         {
-            return IExecute<Javax.Swing.Border.Border>("getBorder", arg0);
+            return IExecuteWithSignature<Javax.Swing.Border.Border>("getBorder", "(Ljava/lang/Object;)Ljavax/swing/border/Border;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getIcon(java.lang.Object,java.util.Locale)"/>
@@ -268,7 +268,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public Javax.Swing.Icon GetIcon(object arg0)
         {
-            return IExecute<Javax.Swing.Icon>("getIcon", arg0);
+            return IExecuteWithSignature<Javax.Swing.Icon>("getIcon", "(Ljava/lang/Object;)Ljavax/swing/Icon;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getUI(javax.swing.JComponent)"/>
@@ -277,7 +277,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Plaf.ComponentUI"/></returns>
         public Javax.Swing.Plaf.ComponentUI GetUI(Javax.Swing.JComponent arg0)
         {
-            return IExecute<Javax.Swing.Plaf.ComponentUI>("getUI", arg0);
+            return IExecuteWithSignature<Javax.Swing.Plaf.ComponentUI>("getUI", "(Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
@@ -285,7 +285,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            IExecute("addPropertyChangeListener", arg0);
+            IExecuteWithSignature("addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#addResourceBundle(java.lang.String)"/>
@@ -293,7 +293,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void AddResourceBundle(Java.Lang.String arg0)
         {
-            IExecute("addResourceBundle", arg0);
+            IExecuteWithSignature("addResourceBundle", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>
@@ -301,7 +301,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            IExecute("removePropertyChangeListener", arg0);
+            IExecuteWithSignature("removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#removeResourceBundle(java.lang.String)"/>
@@ -309,7 +309,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void RemoveResourceBundle(Java.Lang.String arg0)
         {
-            IExecute("removeResourceBundle", arg0);
+            IExecuteWithSignature("removeResourceBundle", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#putDefaults(java.lang.Object[])"/>
@@ -317,7 +317,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="object"/></param>
         public void PutDefaults(object[] arg0)
         {
-            IExecute("putDefaults", new object[] { arg0 });
+            IExecuteWithSignature("putDefaults", "([Ljava/lang/Object;)V", new object[] { arg0 });
         }
 
         #endregion
@@ -350,7 +350,7 @@ namespace Javax.Swing
             /// <returns><see cref="object"/></returns>
             public object CreateValue(Javax.Swing.UIDefaults arg0)
             {
-                return IExecute("createValue", arg0);
+                return IExecuteWithSignature("createValue", "(Ljavax/swing/UIDefaults;)Ljava/lang/Object;", arg0);
             }
 
             #endregion
@@ -390,7 +390,7 @@ namespace Javax.Swing
             /// <returns><see cref="object"/></returns>
             public object CreateValue(Javax.Swing.UIDefaults arg0)
             {
-                return IExecute("createValue", arg0);
+                return IExecuteWithSignature("createValue", "(Ljavax/swing/UIDefaults;)Ljava/lang/Object;", arg0);
             }
 
             #endregion
@@ -430,7 +430,7 @@ namespace Javax.Swing
             /// <returns><see cref="object"/></returns>
             public object CreateValue(Javax.Swing.UIDefaults arg0)
             {
-                return IExecute("createValue", arg0);
+                return IExecuteWithSignature("createValue", "(Ljavax/swing/UIDefaults;)Ljava/lang/Object;", arg0);
             }
 
             #endregion
@@ -487,7 +487,7 @@ namespace Javax.Swing
             /// <returns><see cref="object"/></returns>
             public object CreateValue(Javax.Swing.UIDefaults arg0)
             {
-                return IExecute("createValue", arg0);
+                return IExecuteWithSignature("createValue", "(Ljavax/swing/UIDefaults;)Ljava/lang/Object;", arg0);
             }
 
             #endregion

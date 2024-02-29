@@ -63,7 +63,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <returns><see cref="bool"/></returns>
         public bool IsOpaque(Javax.Swing.Plaf.Synth.SynthContext arg0)
         {
-            return IExecute<bool>("isOpaque", arg0);
+            return IExecuteWithSignature<bool>("isOpaque", "(Ljavax/swing/plaf/synth/SynthContext;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getInt(javax.swing.plaf.synth.SynthContext,java.lang.Object,int)"/>
@@ -93,7 +93,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public Java.Awt.Font GetFont(Javax.Swing.Plaf.Synth.SynthContext arg0)
         {
-            return IExecute<Java.Awt.Font>("getFont", arg0);
+            return IExecuteWithSignature<Java.Awt.Font>("getFont", "(Ljavax/swing/plaf/synth/SynthContext;)Ljava/awt/Font;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getInsets(javax.swing.plaf.synth.SynthContext,java.awt.Insets)"/>
@@ -143,7 +143,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <returns><see cref="Javax.Swing.Plaf.Synth.SynthGraphicsUtils"/></returns>
         public Javax.Swing.Plaf.Synth.SynthGraphicsUtils GetGraphicsUtils(Javax.Swing.Plaf.Synth.SynthContext arg0)
         {
-            return IExecute<Javax.Swing.Plaf.Synth.SynthGraphicsUtils>("getGraphicsUtils", arg0);
+            return IExecuteWithSignature<Javax.Swing.Plaf.Synth.SynthGraphicsUtils>("getGraphicsUtils", "(Ljavax/swing/plaf/synth/SynthContext;)Ljavax/swing/plaf/synth/SynthGraphicsUtils;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getPainter(javax.swing.plaf.synth.SynthContext)"/>
@@ -152,7 +152,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <returns><see cref="Javax.Swing.Plaf.Synth.SynthPainter"/></returns>
         public Javax.Swing.Plaf.Synth.SynthPainter GetPainter(Javax.Swing.Plaf.Synth.SynthContext arg0)
         {
-            return IExecute<Javax.Swing.Plaf.Synth.SynthPainter>("getPainter", arg0);
+            return IExecuteWithSignature<Javax.Swing.Plaf.Synth.SynthPainter>("getPainter", "(Ljavax/swing/plaf/synth/SynthContext;)Ljavax/swing/plaf/synth/SynthPainter;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#installDefaults(javax.swing.plaf.synth.SynthContext)"/>
@@ -160,7 +160,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         public void InstallDefaults(Javax.Swing.Plaf.Synth.SynthContext arg0)
         {
-            IExecute("installDefaults", arg0);
+            IExecuteWithSignature("installDefaults", "(Ljavax/swing/plaf/synth/SynthContext;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#uninstallDefaults(javax.swing.plaf.synth.SynthContext)"/>
@@ -168,7 +168,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         public void UninstallDefaults(Javax.Swing.Plaf.Synth.SynthContext arg0)
         {
-            IExecute("uninstallDefaults", arg0);
+            IExecuteWithSignature("uninstallDefaults", "(Ljavax/swing/plaf/synth/SynthContext;)V", arg0);
         }
 
         #endregion

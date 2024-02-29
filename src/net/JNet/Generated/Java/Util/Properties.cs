@@ -78,7 +78,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetProperty(Java.Lang.String arg0)
         {
-            return IExecute<Java.Lang.String>("getProperty", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getProperty", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Properties.html#propertyNames()"/>
@@ -87,7 +87,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<object> PropertyNames()
         {
-            return IExecute<Java.Util.Enumeration<object>>("propertyNames");
+            return IExecuteWithSignature<Java.Util.Enumeration<object>>("propertyNames", "()Ljava/util/Enumeration;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Properties.html#stringPropertyNames()"/>
@@ -96,7 +96,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.String> StringPropertyNames()
         {
-            return IExecute<Java.Util.Set<Java.Lang.String>>("stringPropertyNames");
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("stringPropertyNames", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Properties.html#setProperty(java.lang.String,java.lang.String)"/>
@@ -115,7 +115,7 @@ namespace Java.Util
         /// <exception cref="Java.Io.IOException"/>
         public void Load(Java.Io.InputStream arg0)
         {
-            IExecute("load", arg0);
+            IExecuteWithSignature("load", "(Ljava/io/InputStream;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Properties.html#load(java.io.Reader)"/>
@@ -124,7 +124,7 @@ namespace Java.Util
         /// <exception cref="Java.Io.IOException"/>
         public void Load(Java.Io.Reader arg0)
         {
-            IExecute("load", arg0);
+            IExecuteWithSignature("load", "(Ljava/io/Reader;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Properties.html#loadFromXML(java.io.InputStream)"/>
@@ -134,7 +134,7 @@ namespace Java.Util
         /// <exception cref="Java.Util.InvalidPropertiesFormatException"/>
         public void LoadFromXML(Java.Io.InputStream arg0)
         {
-            IExecute("loadFromXML", arg0);
+            IExecuteWithSignature("loadFromXML", "(Ljava/io/InputStream;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Properties.html#list(java.io.PrintStream)"/>
@@ -142,7 +142,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
         public void List(Java.Io.PrintStream arg0)
         {
-            IExecute("list", arg0);
+            IExecuteWithSignature("list", "(Ljava/io/PrintStream;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Properties.html#list(java.io.PrintWriter)"/>
@@ -150,7 +150,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Io.PrintWriter"/></param>
         public void List(Java.Io.PrintWriter arg0)
         {
-            IExecute("list", arg0);
+            IExecuteWithSignature("list", "(Ljava/io/PrintWriter;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Properties.html#store(java.io.OutputStream,java.lang.String)"/>

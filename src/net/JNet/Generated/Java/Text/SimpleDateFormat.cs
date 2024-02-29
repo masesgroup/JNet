@@ -76,14 +76,14 @@ namespace Java.Text
         /// </summary>
         public Java.Text.DateFormatSymbols DateFormatSymbols
         {
-            get { return IExecute<Java.Text.DateFormatSymbols>("getDateFormatSymbols"); } set { IExecute("setDateFormatSymbols", value); }
+            get { return IExecuteWithSignature<Java.Text.DateFormatSymbols>("getDateFormatSymbols", "()Ljava/text/DateFormatSymbols;"); } set { IExecuteWithSignature("setDateFormatSymbols", "(Ljava/text/DateFormatSymbols;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/SimpleDateFormat.html#get2DigitYearStart()"/> 
         /// </summary>
         public Java.Util.Date Get2DigitYearStart
         {
-            get { return IExecute<Java.Util.Date>("get2DigitYearStart"); }
+            get { return IExecuteWithSignature<Java.Util.Date>("get2DigitYearStart", "()Ljava/util/Date;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/SimpleDateFormat.html#toLocalizedPattern()"/>
@@ -92,7 +92,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToLocalizedPattern()
         {
-            return IExecute<Java.Lang.String>("toLocalizedPattern");
+            return IExecuteWithSignature<Java.Lang.String>("toLocalizedPattern", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/SimpleDateFormat.html#toPattern()"/>
@@ -101,7 +101,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToPattern()
         {
-            return IExecute<Java.Lang.String>("toPattern");
+            return IExecuteWithSignature<Java.Lang.String>("toPattern", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/SimpleDateFormat.html#applyLocalizedPattern(java.lang.String)"/>
@@ -109,7 +109,7 @@ namespace Java.Text
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void ApplyLocalizedPattern(Java.Lang.String arg0)
         {
-            IExecute("applyLocalizedPattern", arg0);
+            IExecuteWithSignature("applyLocalizedPattern", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/SimpleDateFormat.html#applyPattern(java.lang.String)"/>
@@ -117,7 +117,7 @@ namespace Java.Text
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void ApplyPattern(Java.Lang.String arg0)
         {
-            IExecute("applyPattern", arg0);
+            IExecuteWithSignature("applyPattern", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/SimpleDateFormat.html#set2DigitYearStart(java.util.Date)"/>
@@ -125,7 +125,7 @@ namespace Java.Text
         /// <param name="arg0"><see cref="Java.Util.Date"/></param>
         public void Set2DigitYearStart(Java.Util.Date arg0)
         {
-            IExecute("set2DigitYearStart", arg0);
+            IExecuteWithSignature("set2DigitYearStart", "(Ljava/util/Date;)V", arg0);
         }
 
         #endregion

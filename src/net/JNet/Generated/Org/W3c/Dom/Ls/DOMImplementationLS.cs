@@ -108,7 +108,7 @@ namespace Org.W3c.Dom.Ls
         /// <returns><see cref="Org.W3c.Dom.Ls.LSInput"/></returns>
         public Org.W3c.Dom.Ls.LSInput CreateLSInput()
         {
-            return IExecute<Org.W3c.Dom.Ls.LSInput>("createLSInput");
+            return IExecuteWithSignature<Org.W3c.Dom.Ls.LSInput>("createLSInput", "()Lorg/w3c/dom/ls/LSInput;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/DOMImplementationLS.html#createLSOutput()"/>
@@ -117,7 +117,7 @@ namespace Org.W3c.Dom.Ls
         /// <returns><see cref="Org.W3c.Dom.Ls.LSOutput"/></returns>
         public Org.W3c.Dom.Ls.LSOutput CreateLSOutput()
         {
-            return IExecute<Org.W3c.Dom.Ls.LSOutput>("createLSOutput");
+            return IExecuteWithSignature<Org.W3c.Dom.Ls.LSOutput>("createLSOutput", "()Lorg/w3c/dom/ls/LSOutput;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/DOMImplementationLS.html#createLSParser(short,java.lang.String)"/>
@@ -137,7 +137,7 @@ namespace Org.W3c.Dom.Ls
         /// <returns><see cref="Org.W3c.Dom.Ls.LSSerializer"/></returns>
         public Org.W3c.Dom.Ls.LSSerializer CreateLSSerializer()
         {
-            return IExecute<Org.W3c.Dom.Ls.LSSerializer>("createLSSerializer");
+            return IExecuteWithSignature<Org.W3c.Dom.Ls.LSSerializer>("createLSSerializer", "()Lorg/w3c/dom/ls/LSSerializer;");
         }
 
         #endregion

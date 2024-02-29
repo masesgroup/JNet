@@ -76,7 +76,7 @@ namespace Java.Lang.Annotation
         /// <returns><see cref="Java.Lang.Annotation.ElementType"/></returns>
         public Java.Lang.Annotation.ElementType[] Value()
         {
-            return IExecuteArray<Java.Lang.Annotation.ElementType>("value");
+            return IExecuteWithSignatureArray<Java.Lang.Annotation.ElementType>("value", "()[Ljava/lang/annotation/ElementType;");
         }
 
         #endregion

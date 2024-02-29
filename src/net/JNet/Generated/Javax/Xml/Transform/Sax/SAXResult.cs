@@ -64,21 +64,21 @@ namespace Javax.Xml.Transform.Sax
         /// </summary>
         public Org.Xml.Sax.ContentHandler Handler
         {
-            get { return IExecute<Org.Xml.Sax.ContentHandler>("getHandler"); } set { IExecute("setHandler", value); }
+            get { return IExecuteWithSignature<Org.Xml.Sax.ContentHandler>("getHandler", "()Lorg/xml/sax/ContentHandler;"); } set { IExecuteWithSignature("setHandler", "(Lorg/xml/sax/ContentHandler;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXResult.html#getLexicalHandler()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXResult.html#setLexicalHandler(org.xml.sax.ext.LexicalHandler)"/>
         /// </summary>
         public Org.Xml.Sax.Ext.LexicalHandler LexicalHandler
         {
-            get { return IExecute<Org.Xml.Sax.Ext.LexicalHandler>("getLexicalHandler"); } set { IExecute("setLexicalHandler", value); }
+            get { return IExecuteWithSignature<Org.Xml.Sax.Ext.LexicalHandler>("getLexicalHandler", "()Lorg/xml/sax/ext/LexicalHandler;"); } set { IExecuteWithSignature("setLexicalHandler", "(Lorg/xml/sax/ext/LexicalHandler;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXResult.html#getSystemId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXResult.html#setSystemId(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String SystemId
         {
-            get { return IExecute<Java.Lang.String>("getSystemId"); } set { IExecute("setSystemId", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", value); }
         }
 
         #endregion

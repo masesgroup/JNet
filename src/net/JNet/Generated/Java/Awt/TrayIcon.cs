@@ -77,56 +77,56 @@ namespace Java.Awt
         /// </summary>
         public Java.Lang.String ActionCommand
         {
-            get { return IExecute<Java.Lang.String>("getActionCommand"); } set { IExecute("setActionCommand", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getActionCommand", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setActionCommand", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#getActionListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.ActionListener[] ActionListeners
         {
-            get { return IExecuteArray<Java.Awt.EventNs.ActionListener>("getActionListeners"); }
+            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.ActionListener>("getActionListeners", "()[Ljava/awt/event/ActionListener;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#getImage()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#setImage(java.awt.Image)"/>
         /// </summary>
         public Java.Awt.Image Image
         {
-            get { return IExecute<Java.Awt.Image>("getImage"); } set { IExecute("setImage", value); }
+            get { return IExecuteWithSignature<Java.Awt.Image>("getImage", "()Ljava/awt/Image;"); } set { IExecuteWithSignature("setImage", "(Ljava/awt/Image;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#getMouseListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.MouseListener[] MouseListeners
         {
-            get { return IExecuteArray<Java.Awt.EventNs.MouseListener>("getMouseListeners"); }
+            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.MouseListener>("getMouseListeners", "()[Ljava/awt/event/MouseListener;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#getMouseMotionListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.MouseMotionListener[] MouseMotionListeners
         {
-            get { return IExecuteArray<Java.Awt.EventNs.MouseMotionListener>("getMouseMotionListeners"); }
+            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.MouseMotionListener>("getMouseMotionListeners", "()[Ljava/awt/event/MouseMotionListener;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#getPopupMenu()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#setPopupMenu(java.awt.PopupMenu)"/>
         /// </summary>
         public Java.Awt.PopupMenu PopupMenu
         {
-            get { return IExecute<Java.Awt.PopupMenu>("getPopupMenu"); } set { IExecute("setPopupMenu", value); }
+            get { return IExecuteWithSignature<Java.Awt.PopupMenu>("getPopupMenu", "()Ljava/awt/PopupMenu;"); } set { IExecuteWithSignature("setPopupMenu", "(Ljava/awt/PopupMenu;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#getSize()"/> 
         /// </summary>
         public Java.Awt.Dimension Size
         {
-            get { return IExecute<Java.Awt.Dimension>("getSize"); }
+            get { return IExecuteWithSignature<Java.Awt.Dimension>("getSize", "()Ljava/awt/Dimension;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#getToolTip()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#setToolTip(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String ToolTip
         {
-            get { return IExecute<Java.Lang.String>("getToolTip"); } set { IExecute("setToolTip", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getToolTip", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setToolTip", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#isImageAutoSize()"/>
@@ -135,7 +135,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsImageAutoSize()
         {
-            return IExecute<bool>("isImageAutoSize");
+            return IExecuteWithSignature<bool>("isImageAutoSize", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#addActionListener(java.awt.event.ActionListener)"/>
@@ -143,7 +143,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
         public void AddActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
-            IExecute("addActionListener", arg0);
+            IExecuteWithSignature("addActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#addMouseListener(java.awt.event.MouseListener)"/>
@@ -151,7 +151,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseListener"/></param>
         public void AddMouseListener(Java.Awt.EventNs.MouseListener arg0)
         {
-            IExecute("addMouseListener", arg0);
+            IExecuteWithSignature("addMouseListener", "(Ljava/awt/event/MouseListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#addMouseMotionListener(java.awt.event.MouseMotionListener)"/>
@@ -159,7 +159,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseMotionListener"/></param>
         public void AddMouseMotionListener(Java.Awt.EventNs.MouseMotionListener arg0)
         {
-            IExecute("addMouseMotionListener", arg0);
+            IExecuteWithSignature("addMouseMotionListener", "(Ljava/awt/event/MouseMotionListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#removeActionListener(java.awt.event.ActionListener)"/>
@@ -167,7 +167,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
         public void RemoveActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
-            IExecute("removeActionListener", arg0);
+            IExecuteWithSignature("removeActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#removeMouseListener(java.awt.event.MouseListener)"/>
@@ -175,7 +175,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseListener"/></param>
         public void RemoveMouseListener(Java.Awt.EventNs.MouseListener arg0)
         {
-            IExecute("removeMouseListener", arg0);
+            IExecuteWithSignature("removeMouseListener", "(Ljava/awt/event/MouseListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#removeMouseMotionListener(java.awt.event.MouseMotionListener)"/>
@@ -183,7 +183,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseMotionListener"/></param>
         public void RemoveMouseMotionListener(Java.Awt.EventNs.MouseMotionListener arg0)
         {
-            IExecute("removeMouseMotionListener", arg0);
+            IExecuteWithSignature("removeMouseMotionListener", "(Ljava/awt/event/MouseMotionListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#displayMessage(java.lang.String,java.lang.String,java.awt.TrayIcon.MessageType)"/>
@@ -201,7 +201,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetImageAutoSize(bool arg0)
         {
-            IExecute("setImageAutoSize", arg0);
+            IExecuteWithSignature("setImageAutoSize", "(Z)V", arg0);
         }
 
         #endregion
@@ -254,7 +254,7 @@ namespace Java.Awt
             /// <returns><see cref="Java.Awt.TrayIcon.MessageType"/></returns>
             public static Java.Awt.TrayIcon.MessageType ValueOf(Java.Lang.String arg0)
             {
-                return SExecute<Java.Awt.TrayIcon.MessageType>(LocalBridgeClazz, "valueOf", arg0);
+                return SExecuteWithSignature<Java.Awt.TrayIcon.MessageType>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/awt/TrayIcon$MessageType;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.MessageType.html#values()"/>
@@ -263,7 +263,7 @@ namespace Java.Awt
             /// <returns><see cref="Java.Awt.TrayIcon.MessageType"/></returns>
             public static Java.Awt.TrayIcon.MessageType[] Values()
             {
-                return SExecuteArray<Java.Awt.TrayIcon.MessageType>(LocalBridgeClazz, "values");
+                return SExecuteWithSignatureArray<Java.Awt.TrayIcon.MessageType>(LocalBridgeClazz, "values", "()[Ljava/awt/TrayIcon$MessageType;");
             }
 
             #endregion

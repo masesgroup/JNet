@@ -59,14 +59,14 @@ namespace Java.Rmi.Dgc
         /// </summary>
         public long Value
         {
-            get { return IExecute<long>("getValue"); }
+            get { return IExecuteWithSignature<long>("getValue", "()J"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/dgc/Lease.html#getVMID()"/> 
         /// </summary>
         public Java.Rmi.Dgc.VMID VMID
         {
-            get { return IExecute<Java.Rmi.Dgc.VMID>("getVMID"); }
+            get { return IExecuteWithSignature<Java.Rmi.Dgc.VMID>("getVMID", "()Ljava/rmi/dgc/VMID;"); }
         }
 
         #endregion

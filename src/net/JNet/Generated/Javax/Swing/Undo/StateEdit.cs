@@ -67,7 +67,7 @@ namespace Javax.Swing.Undo
         /// </summary>
         public void End()
         {
-            IExecute("end");
+            IExecuteWithSignature("end", "()V");
         }
 
         #endregion

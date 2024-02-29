@@ -50,7 +50,7 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public Javax.Swing.Icon DefaultIcon
         {
-            get { return IExecute<Javax.Swing.Icon>("getDefaultIcon"); }
+            get { return IExecuteWithSignature<Javax.Swing.Icon>("getDefaultIcon", "()Ljavax/swing/Icon;"); }
         }
 
         #endregion

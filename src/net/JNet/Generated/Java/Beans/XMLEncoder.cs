@@ -73,21 +73,21 @@ namespace Java.Beans
         /// </summary>
         public object Owner
         {
-            get { return IExecute("getOwner"); } set { IExecute("setOwner", value); }
+            get { return IExecuteWithSignature("getOwner", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setOwner", "(Ljava/lang/Object;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLEncoder.html#close()"/>
         /// </summary>
         public void Close()
         {
-            IExecute("close");
+            IExecuteWithSignature("close", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLEncoder.html#flush()"/>
         /// </summary>
         public void Flush()
         {
-            IExecute("flush");
+            IExecuteWithSignature("flush", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLEncoder.html#writeObject(java.lang.Object)"/>
@@ -95,7 +95,7 @@ namespace Java.Beans
         /// <param name="arg0"><see cref="object"/></param>
         public void WriteObject(object arg0)
         {
-            IExecute("writeObject", arg0);
+            IExecuteWithSignature("writeObject", "(Ljava/lang/Object;)V", arg0);
         }
 
         #endregion

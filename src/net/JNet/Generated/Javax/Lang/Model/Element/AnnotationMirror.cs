@@ -76,14 +76,14 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         public Javax.Lang.Model.Type.DeclaredType AnnotationType
         {
-            get { return IExecute<Javax.Lang.Model.Type.DeclaredType>("getAnnotationType"); }
+            get { return IExecuteWithSignature<Javax.Lang.Model.Type.DeclaredType>("getAnnotationType", "()Ljavax/lang/model/type/DeclaredType;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationMirror.html#getElementValues()"/> 
         /// </summary>
         public Java.Util.Map ElementValues
         {
-            get { return IExecute<Java.Util.Map>("getElementValues"); }
+            get { return IExecuteWithSignature<Java.Util.Map>("getElementValues", "()Ljava/util/Map;"); }
         }
 
         #endregion

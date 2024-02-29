@@ -130,14 +130,14 @@ namespace Javax.Security.Sasl
         /// </summary>
         public static Java.Util.Enumeration<Javax.Security.Sasl.SaslClientFactory> SaslClientFactories
         {
-            get { return SExecute<Java.Util.Enumeration<Javax.Security.Sasl.SaslClientFactory>>(LocalBridgeClazz, "getSaslClientFactories"); }
+            get { return SExecuteWithSignature<Java.Util.Enumeration<Javax.Security.Sasl.SaslClientFactory>>(LocalBridgeClazz, "getSaslClientFactories", "()Ljava/util/Enumeration;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#getSaslServerFactories()"/> 
         /// </summary>
         public static Java.Util.Enumeration<Javax.Security.Sasl.SaslServerFactory> SaslServerFactories
         {
-            get { return SExecute<Java.Util.Enumeration<Javax.Security.Sasl.SaslServerFactory>>(LocalBridgeClazz, "getSaslServerFactories"); }
+            get { return SExecuteWithSignature<Java.Util.Enumeration<Javax.Security.Sasl.SaslServerFactory>>(LocalBridgeClazz, "getSaslServerFactories", "()Ljava/util/Enumeration;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#createSaslClient(java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.util.Map,javax.security.auth.callback.CallbackHandler)"/>

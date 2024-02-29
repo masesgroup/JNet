@@ -98,7 +98,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.DayOfWeek"/></returns>
         public static Java.Time.DayOfWeek From(Java.Time.Temporal.TemporalAccessor arg0)
         {
-            return SExecute<Java.Time.DayOfWeek>(LocalBridgeClazz, "from", arg0);
+            return SExecuteWithSignature<Java.Time.DayOfWeek>(LocalBridgeClazz, "from", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/DayOfWeek;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#of(int)"/>
@@ -107,7 +107,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.DayOfWeek"/></returns>
         public static Java.Time.DayOfWeek Of(int arg0)
         {
-            return SExecute<Java.Time.DayOfWeek>(LocalBridgeClazz, "of", arg0);
+            return SExecuteWithSignature<Java.Time.DayOfWeek>(LocalBridgeClazz, "of", "(I)Ljava/time/DayOfWeek;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#valueOf(java.lang.String)"/>
@@ -116,7 +116,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.DayOfWeek"/></returns>
         public static Java.Time.DayOfWeek ValueOf(Java.Lang.String arg0)
         {
-            return SExecute<Java.Time.DayOfWeek>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecuteWithSignature<Java.Time.DayOfWeek>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/time/DayOfWeek;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#values()"/>
@@ -125,7 +125,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.DayOfWeek"/></returns>
         public static Java.Time.DayOfWeek[] Values()
         {
-            return SExecuteArray<Java.Time.DayOfWeek>(LocalBridgeClazz, "values");
+            return SExecuteWithSignatureArray<Java.Time.DayOfWeek>(LocalBridgeClazz, "values", "()[Ljava/time/DayOfWeek;");
         }
 
         #endregion
@@ -136,7 +136,7 @@ namespace Java.Time
         /// </summary>
         public int Value
         {
-            get { return IExecute<int>("getValue"); }
+            get { return IExecuteWithSignature<int>("getValue", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#query(java.time.temporal.TemporalQuery)"/>
@@ -146,7 +146,7 @@ namespace Java.Time
         /// <returns><typeparamref name="R"/></returns>
         public R Query<R>(Java.Time.Temporal.TemporalQuery<R> arg0)
         {
-            return IExecute<R>("query", arg0);
+            return IExecuteWithSignature<R>("query", "(Ljava/time/temporal/TemporalQuery;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#isSupported(java.time.temporal.TemporalField)"/>
@@ -155,7 +155,7 @@ namespace Java.Time
         /// <returns><see cref="bool"/></returns>
         public bool IsSupported(Java.Time.Temporal.TemporalField arg0)
         {
-            return IExecute<bool>("isSupported", arg0);
+            return IExecuteWithSignature<bool>("isSupported", "(Ljava/time/temporal/TemporalField;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#get(java.time.temporal.TemporalField)"/>
@@ -164,7 +164,7 @@ namespace Java.Time
         /// <returns><see cref="int"/></returns>
         public int Get(Java.Time.Temporal.TemporalField arg0)
         {
-            return IExecute<int>("get", arg0);
+            return IExecuteWithSignature<int>("get", "(Ljava/time/temporal/TemporalField;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#getDisplayName(java.time.format.TextStyle,java.util.Locale)"/>
@@ -183,7 +183,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.DayOfWeek"/></returns>
         public Java.Time.DayOfWeek Minus(long arg0)
         {
-            return IExecute<Java.Time.DayOfWeek>("minus", arg0);
+            return IExecuteWithSignature<Java.Time.DayOfWeek>("minus", "(J)Ljava/time/DayOfWeek;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#plus(long)"/>
@@ -192,7 +192,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.DayOfWeek"/></returns>
         public Java.Time.DayOfWeek Plus(long arg0)
         {
-            return IExecute<Java.Time.DayOfWeek>("plus", arg0);
+            return IExecuteWithSignature<Java.Time.DayOfWeek>("plus", "(J)Ljava/time/DayOfWeek;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#adjustInto(java.time.temporal.Temporal)"/>
@@ -201,7 +201,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal AdjustInto(Java.Time.Temporal.Temporal arg0)
         {
-            return IExecute<Java.Time.Temporal.Temporal>("adjustInto", arg0);
+            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("adjustInto", "(Ljava/time/temporal/Temporal;)Ljava/time/temporal/Temporal;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#range(java.time.temporal.TemporalField)"/>
@@ -210,7 +210,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public Java.Time.Temporal.ValueRange Range(Java.Time.Temporal.TemporalField arg0)
         {
-            return IExecute<Java.Time.Temporal.ValueRange>("range", arg0);
+            return IExecuteWithSignature<Java.Time.Temporal.ValueRange>("range", "(Ljava/time/temporal/TemporalField;)Ljava/time/temporal/ValueRange;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#getLong(java.time.temporal.TemporalField)"/>
@@ -219,7 +219,7 @@ namespace Java.Time
         /// <returns><see cref="long"/></returns>
         public long GetLong(Java.Time.Temporal.TemporalField arg0)
         {
-            return IExecute<long>("getLong", arg0);
+            return IExecuteWithSignature<long>("getLong", "(Ljava/time/temporal/TemporalField;)J", arg0);
         }
 
         #endregion

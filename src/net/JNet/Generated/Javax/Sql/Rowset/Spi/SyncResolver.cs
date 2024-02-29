@@ -138,7 +138,7 @@ namespace Javax.Sql.Rowset.Spi
         /// </summary>
         public int Status
         {
-            get { return IExecute<int>("getStatus"); }
+            get { return IExecuteWithSignature<int>("getStatus", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#nextConflict()"/>
@@ -148,7 +148,7 @@ namespace Javax.Sql.Rowset.Spi
         /// <exception cref="Java.Sql.SQLException"/>
         public bool NextConflict()
         {
-            return IExecute<bool>("nextConflict");
+            return IExecuteWithSignature<bool>("nextConflict", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#previousConflict()"/>
@@ -158,7 +158,7 @@ namespace Javax.Sql.Rowset.Spi
         /// <exception cref="Java.Sql.SQLException"/>
         public bool PreviousConflict()
         {
-            return IExecute<bool>("previousConflict");
+            return IExecuteWithSignature<bool>("previousConflict", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#getConflictValue(int)"/>
@@ -168,7 +168,7 @@ namespace Javax.Sql.Rowset.Spi
         /// <exception cref="Java.Sql.SQLException"/>
         public object GetConflictValue(int arg0)
         {
-            return IExecute("getConflictValue", arg0);
+            return IExecuteWithSignature("getConflictValue", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#getConflictValue(java.lang.String)"/>
@@ -178,7 +178,7 @@ namespace Javax.Sql.Rowset.Spi
         /// <exception cref="Java.Sql.SQLException"/>
         public object GetConflictValue(Java.Lang.String arg0)
         {
-            return IExecute("getConflictValue", arg0);
+            return IExecuteWithSignature("getConflictValue", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#setResolvedValue(int,java.lang.Object)"/>

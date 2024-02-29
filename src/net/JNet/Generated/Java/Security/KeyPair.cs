@@ -59,14 +59,14 @@ namespace Java.Security
         /// </summary>
         public Java.Security.PrivateKey Private
         {
-            get { return IExecute<Java.Security.PrivateKey>("getPrivate"); }
+            get { return IExecuteWithSignature<Java.Security.PrivateKey>("getPrivate", "()Ljava/security/PrivateKey;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPair.html#getPublic()"/> 
         /// </summary>
         public Java.Security.PublicKey Public
         {
-            get { return IExecute<Java.Security.PublicKey>("getPublic"); }
+            get { return IExecuteWithSignature<Java.Security.PublicKey>("getPublic", "()Ljava/security/PublicKey;"); }
         }
 
         #endregion

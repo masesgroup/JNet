@@ -58,7 +58,7 @@ namespace Javax.Swing.Table
         /// </summary>
         public Javax.Swing.Event.TableModelListener[] TableModelListeners
         {
-            get { return IExecuteArray<Javax.Swing.Event.TableModelListener>("getTableModelListeners"); }
+            get { return IExecuteWithSignatureArray<Javax.Swing.Event.TableModelListener>("getTableModelListeners", "()[Ljavax/swing/event/TableModelListener;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#isCellEditable(int,int)"/>
@@ -77,7 +77,7 @@ namespace Javax.Swing.Table
         /// <returns><see cref="int"/></returns>
         public int FindColumn(Java.Lang.String arg0)
         {
-            return IExecute<int>("findColumn", arg0);
+            return IExecuteWithSignature<int>("findColumn", "(Ljava/lang/String;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#getColumnClass(int)"/>
@@ -86,7 +86,7 @@ namespace Javax.Swing.Table
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public Java.Lang.Class GetColumnClass(int arg0)
         {
-            return IExecute<Java.Lang.Class>("getColumnClass", arg0);
+            return IExecuteWithSignature<Java.Lang.Class>("getColumnClass", "(I)Ljava/lang/Class;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#getColumnName(int)"/>
@@ -95,7 +95,7 @@ namespace Javax.Swing.Table
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetColumnName(int arg0)
         {
-            return IExecute<Java.Lang.String>("getColumnName", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getColumnName", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#addTableModelListener(javax.swing.event.TableModelListener)"/>
@@ -103,7 +103,7 @@ namespace Javax.Swing.Table
         /// <param name="arg0"><see cref="Javax.Swing.Event.TableModelListener"/></param>
         public void AddTableModelListener(Javax.Swing.Event.TableModelListener arg0)
         {
-            IExecute("addTableModelListener", arg0);
+            IExecuteWithSignature("addTableModelListener", "(Ljavax/swing/event/TableModelListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#fireTableCellUpdated(int,int)"/>
@@ -120,14 +120,14 @@ namespace Javax.Swing.Table
         /// <param name="arg0"><see cref="Javax.Swing.Event.TableModelEvent"/></param>
         public void FireTableChanged(Javax.Swing.Event.TableModelEvent arg0)
         {
-            IExecute("fireTableChanged", arg0);
+            IExecuteWithSignature("fireTableChanged", "(Ljavax/swing/event/TableModelEvent;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#fireTableDataChanged()"/>
         /// </summary>
         public void FireTableDataChanged()
         {
-            IExecute("fireTableDataChanged");
+            IExecuteWithSignature("fireTableDataChanged", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#fireTableRowsDeleted(int,int)"/>
@@ -161,7 +161,7 @@ namespace Javax.Swing.Table
         /// </summary>
         public void FireTableStructureChanged()
         {
-            IExecute("fireTableStructureChanged");
+            IExecuteWithSignature("fireTableStructureChanged", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#removeTableModelListener(javax.swing.event.TableModelListener)"/>
@@ -169,7 +169,7 @@ namespace Javax.Swing.Table
         /// <param name="arg0"><see cref="Javax.Swing.Event.TableModelListener"/></param>
         public void RemoveTableModelListener(Javax.Swing.Event.TableModelListener arg0)
         {
-            IExecute("removeTableModelListener", arg0);
+            IExecuteWithSignature("removeTableModelListener", "(Ljavax/swing/event/TableModelListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#setValueAt(java.lang.Object,int,int)"/>

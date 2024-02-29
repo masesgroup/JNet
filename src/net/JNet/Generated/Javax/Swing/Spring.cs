@@ -65,7 +65,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Spring"/></returns>
         public static Javax.Swing.Spring Constant(int arg0)
         {
-            return SExecute<Javax.Swing.Spring>(LocalBridgeClazz, "constant", arg0);
+            return SExecuteWithSignature<Javax.Swing.Spring>(LocalBridgeClazz, "constant", "(I)Ljavax/swing/Spring;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#height(java.awt.Component)"/>
@@ -74,7 +74,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Spring"/></returns>
         public static Javax.Swing.Spring Height(Java.Awt.Component arg0)
         {
-            return SExecute<Javax.Swing.Spring>(LocalBridgeClazz, "height", arg0);
+            return SExecuteWithSignature<Javax.Swing.Spring>(LocalBridgeClazz, "height", "(Ljava/awt/Component;)Ljavax/swing/Spring;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#max(javax.swing.Spring,javax.swing.Spring)"/>
@@ -93,7 +93,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Spring"/></returns>
         public static Javax.Swing.Spring Minus(Javax.Swing.Spring arg0)
         {
-            return SExecute<Javax.Swing.Spring>(LocalBridgeClazz, "minus", arg0);
+            return SExecuteWithSignature<Javax.Swing.Spring>(LocalBridgeClazz, "minus", "(Ljavax/swing/Spring;)Ljavax/swing/Spring;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#scale(javax.swing.Spring,float)"/>
@@ -122,7 +122,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Spring"/></returns>
         public static Javax.Swing.Spring Width(Java.Awt.Component arg0)
         {
-            return SExecute<Javax.Swing.Spring>(LocalBridgeClazz, "width", arg0);
+            return SExecuteWithSignature<Javax.Swing.Spring>(LocalBridgeClazz, "width", "(Ljava/awt/Component;)Ljavax/swing/Spring;", arg0);
         }
 
         #endregion
@@ -133,28 +133,28 @@ namespace Javax.Swing
         /// </summary>
         public int MaximumValue
         {
-            get { return IExecute<int>("getMaximumValue"); }
+            get { return IExecuteWithSignature<int>("getMaximumValue", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#getMinimumValue()"/> 
         /// </summary>
         public int MinimumValue
         {
-            get { return IExecute<int>("getMinimumValue"); }
+            get { return IExecuteWithSignature<int>("getMinimumValue", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#getPreferredValue()"/> 
         /// </summary>
         public int PreferredValue
         {
-            get { return IExecute<int>("getPreferredValue"); }
+            get { return IExecuteWithSignature<int>("getPreferredValue", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#setValue(int)"/>
         /// </summary>
         public int Value
         {
-            get { return IExecute<int>("getValue"); } set { IExecute("setValue", value); }
+            get { return IExecuteWithSignature<int>("getValue", "()I"); } set { IExecuteWithSignature("setValue", "(I)V", value); }
         }
 
         #endregion

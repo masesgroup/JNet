@@ -50,7 +50,7 @@ namespace Javax.Sound.Sampled.Spi
         /// </summary>
         public Javax.Sound.Sampled.AudioFileFormat.Type[] AudioFileTypes
         {
-            get { return IExecuteArray<Javax.Sound.Sampled.AudioFileFormat.Type>("getAudioFileTypes"); }
+            get { return IExecuteWithSignatureArray<Javax.Sound.Sampled.AudioFileFormat.Type>("getAudioFileTypes", "()[Ljavax/sound/sampled/AudioFileFormat$Type;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileWriter.html#write(javax.sound.sampled.AudioInputStream,javax.sound.sampled.AudioFileFormat.Type,java.io.File)"/>
@@ -83,7 +83,7 @@ namespace Javax.Sound.Sampled.Spi
         /// <returns><see cref="Javax.Sound.Sampled.AudioFileFormat.Type"/></returns>
         public Javax.Sound.Sampled.AudioFileFormat.Type[] GetAudioFileTypes(Javax.Sound.Sampled.AudioInputStream arg0)
         {
-            return IExecuteArray<Javax.Sound.Sampled.AudioFileFormat.Type>("getAudioFileTypes", arg0);
+            return IExecuteWithSignatureArray<Javax.Sound.Sampled.AudioFileFormat.Type>("getAudioFileTypes", "(Ljavax/sound/sampled/AudioInputStream;)[Ljavax/sound/sampled/AudioFileFormat$Type;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileWriter.html#isFileTypeSupported(javax.sound.sampled.AudioFileFormat.Type,javax.sound.sampled.AudioInputStream)"/>
@@ -102,7 +102,7 @@ namespace Javax.Sound.Sampled.Spi
         /// <returns><see cref="bool"/></returns>
         public bool IsFileTypeSupported(Javax.Sound.Sampled.AudioFileFormat.Type arg0)
         {
-            return IExecute<bool>("isFileTypeSupported", arg0);
+            return IExecuteWithSignature<bool>("isFileTypeSupported", "(Ljavax/sound/sampled/AudioFileFormat$Type;)Z", arg0);
         }
 
         #endregion

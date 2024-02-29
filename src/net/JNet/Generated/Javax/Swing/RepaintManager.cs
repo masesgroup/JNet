@@ -48,7 +48,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.RepaintManager"/></returns>
         public static Javax.Swing.RepaintManager CurrentManager(Java.Awt.Component arg0)
         {
-            return SExecute<Javax.Swing.RepaintManager>(LocalBridgeClazz, "currentManager", arg0);
+            return SExecuteWithSignature<Javax.Swing.RepaintManager>(LocalBridgeClazz, "currentManager", "(Ljava/awt/Component;)Ljavax/swing/RepaintManager;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#currentManager(javax.swing.JComponent)"/>
@@ -57,7 +57,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.RepaintManager"/></returns>
         public static Javax.Swing.RepaintManager CurrentManager(Javax.Swing.JComponent arg0)
         {
-            return SExecute<Javax.Swing.RepaintManager>(LocalBridgeClazz, "currentManager", arg0);
+            return SExecuteWithSignature<Javax.Swing.RepaintManager>(LocalBridgeClazz, "currentManager", "(Ljavax/swing/JComponent;)Ljavax/swing/RepaintManager;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#setCurrentManager(javax.swing.RepaintManager)"/>
@@ -65,7 +65,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.RepaintManager"/></param>
         public static void SetCurrentManager(Javax.Swing.RepaintManager arg0)
         {
-            SExecute(LocalBridgeClazz, "setCurrentManager", arg0);
+            SExecuteWithSignature(LocalBridgeClazz, "setCurrentManager", "(Ljavax/swing/RepaintManager;)V", arg0);
         }
 
         #endregion
@@ -76,7 +76,7 @@ namespace Javax.Swing
         /// </summary>
         public Java.Awt.Dimension DoubleBufferMaximumSize
         {
-            get { return IExecute<Java.Awt.Dimension>("getDoubleBufferMaximumSize"); } set { IExecute("setDoubleBufferMaximumSize", value); }
+            get { return IExecuteWithSignature<Java.Awt.Dimension>("getDoubleBufferMaximumSize", "()Ljava/awt/Dimension;"); } set { IExecuteWithSignature("setDoubleBufferMaximumSize", "(Ljava/awt/Dimension;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#isCompletelyDirty(javax.swing.JComponent)"/>
@@ -85,7 +85,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsCompletelyDirty(Javax.Swing.JComponent arg0)
         {
-            return IExecute<bool>("isCompletelyDirty", arg0);
+            return IExecuteWithSignature<bool>("isCompletelyDirty", "(Ljavax/swing/JComponent;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#isDoubleBufferingEnabled()"/>
@@ -94,7 +94,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsDoubleBufferingEnabled()
         {
-            return IExecute<bool>("isDoubleBufferingEnabled");
+            return IExecuteWithSignature<bool>("isDoubleBufferingEnabled", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#getOffscreenBuffer(java.awt.Component,int,int)"/>
@@ -125,7 +125,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle GetDirtyRegion(Javax.Swing.JComponent arg0)
         {
-            return IExecute<Java.Awt.Rectangle>("getDirtyRegion", arg0);
+            return IExecuteWithSignature<Java.Awt.Rectangle>("getDirtyRegion", "(Ljavax/swing/JComponent;)Ljava/awt/Rectangle;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#addInvalidComponent(javax.swing.JComponent)"/>
@@ -133,7 +133,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
         public void AddInvalidComponent(Javax.Swing.JComponent arg0)
         {
-            IExecute("addInvalidComponent", arg0);
+            IExecuteWithSignature("addInvalidComponent", "(Ljavax/swing/JComponent;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#removeInvalidComponent(javax.swing.JComponent)"/>
@@ -141,7 +141,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
         public void RemoveInvalidComponent(Javax.Swing.JComponent arg0)
         {
-            IExecute("removeInvalidComponent", arg0);
+            IExecuteWithSignature("removeInvalidComponent", "(Ljavax/swing/JComponent;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#addDirtyRegion(java.awt.Window,int,int,int,int)"/>
@@ -173,7 +173,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
         public void MarkCompletelyClean(Javax.Swing.JComponent arg0)
         {
-            IExecute("markCompletelyClean", arg0);
+            IExecuteWithSignature("markCompletelyClean", "(Ljavax/swing/JComponent;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#markCompletelyDirty(javax.swing.JComponent)"/>
@@ -181,14 +181,14 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
         public void MarkCompletelyDirty(Javax.Swing.JComponent arg0)
         {
-            IExecute("markCompletelyDirty", arg0);
+            IExecuteWithSignature("markCompletelyDirty", "(Ljavax/swing/JComponent;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#paintDirtyRegions()"/>
         /// </summary>
         public void PaintDirtyRegions()
         {
-            IExecute("paintDirtyRegions");
+            IExecuteWithSignature("paintDirtyRegions", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#setDoubleBufferingEnabled(boolean)"/>
@@ -196,14 +196,14 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetDoubleBufferingEnabled(bool arg0)
         {
-            IExecute("setDoubleBufferingEnabled", arg0);
+            IExecuteWithSignature("setDoubleBufferingEnabled", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#validateInvalidComponents()"/>
         /// </summary>
         public void ValidateInvalidComponents()
         {
-            IExecute("validateInvalidComponents");
+            IExecuteWithSignature("validateInvalidComponents", "()V");
         }
 
         #endregion

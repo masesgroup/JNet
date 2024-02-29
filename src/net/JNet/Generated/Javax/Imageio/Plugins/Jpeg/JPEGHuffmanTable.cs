@@ -83,14 +83,14 @@ namespace Javax.Imageio.Plugins.Jpeg
         /// </summary>
         public short[] Lengths
         {
-            get { return IExecuteArray<short>("getLengths"); }
+            get { return IExecuteWithSignatureArray<short>("getLengths", "()[S"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html#getValues()"/> 
         /// </summary>
         public short[] Values
         {
-            get { return IExecuteArray<short>("getValues"); }
+            get { return IExecuteWithSignatureArray<short>("getValues", "()[S"); }
         }
 
         #endregion

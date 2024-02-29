@@ -59,21 +59,21 @@ namespace Java.Security.Cert
         /// </summary>
         public byte[] Encoded
         {
-            get { return IExecuteArray<byte>("getEncoded"); }
+            get { return IExecuteWithSignatureArray<byte>("getEncoded", "()[B"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyQualifierInfo.html#getPolicyQualifier()"/> 
         /// </summary>
         public byte[] PolicyQualifier
         {
-            get { return IExecuteArray<byte>("getPolicyQualifier"); }
+            get { return IExecuteWithSignatureArray<byte>("getPolicyQualifier", "()[B"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyQualifierInfo.html#getPolicyQualifierId()"/> 
         /// </summary>
         public Java.Lang.String PolicyQualifierId
         {
-            get { return IExecute<Java.Lang.String>("getPolicyQualifierId"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getPolicyQualifierId", "()Ljava/lang/String;"); }
         }
 
         #endregion

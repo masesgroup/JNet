@@ -78,21 +78,21 @@ namespace Java.Text
         /// </summary>
         public int BeginIndex
         {
-            get { return IExecute<int>("getBeginIndex"); }
+            get { return IExecuteWithSignature<int>("getBeginIndex", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#getEndIndex()"/> 
         /// </summary>
         public int EndIndex
         {
-            get { return IExecute<int>("getEndIndex"); }
+            get { return IExecuteWithSignature<int>("getEndIndex", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#getIndex()"/> 
         /// </summary>
         public int Index
         {
-            get { return IExecute<int>("getIndex"); }
+            get { return IExecuteWithSignature<int>("getIndex", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#current()"/>
@@ -101,7 +101,7 @@ namespace Java.Text
         /// <returns><see cref="char"/></returns>
         public char Current()
         {
-            return IExecute<char>("current");
+            return IExecuteWithSignature<char>("current", "()C");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#first()"/>
@@ -110,7 +110,7 @@ namespace Java.Text
         /// <returns><see cref="char"/></returns>
         public char First()
         {
-            return IExecute<char>("first");
+            return IExecuteWithSignature<char>("first", "()C");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#last()"/>
@@ -119,7 +119,7 @@ namespace Java.Text
         /// <returns><see cref="char"/></returns>
         public char Last()
         {
-            return IExecute<char>("last");
+            return IExecuteWithSignature<char>("last", "()C");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#next()"/>
@@ -128,7 +128,7 @@ namespace Java.Text
         /// <returns><see cref="char"/></returns>
         public char Next()
         {
-            return IExecute<char>("next");
+            return IExecuteWithSignature<char>("next", "()C");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#previous()"/>
@@ -137,7 +137,7 @@ namespace Java.Text
         /// <returns><see cref="char"/></returns>
         public char Previous()
         {
-            return IExecute<char>("previous");
+            return IExecuteWithSignature<char>("previous", "()C");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#setIndex(int)"/>
@@ -146,7 +146,7 @@ namespace Java.Text
         /// <returns><see cref="char"/></returns>
         public char SetIndex(int arg0)
         {
-            return IExecute<char>("setIndex", arg0);
+            return IExecuteWithSignature<char>("setIndex", "(I)C", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#setText(java.lang.String)"/>
@@ -154,7 +154,7 @@ namespace Java.Text
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void SetText(Java.Lang.String arg0)
         {
-            IExecute("setText", arg0);
+            IExecuteWithSignature("setText", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

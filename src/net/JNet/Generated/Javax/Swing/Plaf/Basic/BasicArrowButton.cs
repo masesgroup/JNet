@@ -74,7 +74,7 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public int Direction
         {
-            get { return IExecute<int>("getDirection"); } set { IExecute("setDirection", value); }
+            get { return IExecuteWithSignature<int>("getDirection", "()I"); } set { IExecuteWithSignature("setDirection", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicArrowButton.html#paintTriangle(java.awt.Graphics,int,int,int,int,boolean)"/>

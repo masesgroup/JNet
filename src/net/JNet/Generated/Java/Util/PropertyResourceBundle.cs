@@ -70,7 +70,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object HandleGetObject(Java.Lang.String arg0)
         {
-            return IExecute("handleGetObject", arg0);
+            return IExecuteWithSignature("handleGetObject", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
 
         #endregion

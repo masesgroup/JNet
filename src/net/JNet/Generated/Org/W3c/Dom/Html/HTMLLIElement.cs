@@ -76,14 +76,14 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Java.Lang.String Type
         {
-            get { return IExecute<Java.Lang.String>("getType"); } set { IExecute("setType", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setType", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLIElement.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLIElement.html#setValue(int)"/>
         /// </summary>
         public int Value
         {
-            get { return IExecute<int>("getValue"); } set { IExecute("setValue", value); }
+            get { return IExecuteWithSignature<int>("getValue", "()I"); } set { IExecuteWithSignature("setValue", "(I)V", value); }
         }
 
         #endregion

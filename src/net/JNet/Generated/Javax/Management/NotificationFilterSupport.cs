@@ -54,7 +54,7 @@ namespace Javax.Management
         /// </summary>
         public Java.Util.Vector<Java.Lang.String> EnabledTypes
         {
-            get { return IExecute<Java.Util.Vector<Java.Lang.String>>("getEnabledTypes"); }
+            get { return IExecuteWithSignature<Java.Util.Vector<Java.Lang.String>>("getEnabledTypes", "()Ljava/util/Vector;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilterSupport.html#isNotificationEnabled(javax.management.Notification)"/>
@@ -63,14 +63,14 @@ namespace Javax.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsNotificationEnabled(Javax.Management.Notification arg0)
         {
-            return IExecute<bool>("isNotificationEnabled", arg0);
+            return IExecuteWithSignature<bool>("isNotificationEnabled", "(Ljavax/management/Notification;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilterSupport.html#disableAllTypes()"/>
         /// </summary>
         public void DisableAllTypes()
         {
-            IExecute("disableAllTypes");
+            IExecuteWithSignature("disableAllTypes", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilterSupport.html#disableType(java.lang.String)"/>
@@ -78,7 +78,7 @@ namespace Javax.Management
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void DisableType(Java.Lang.String arg0)
         {
-            IExecute("disableType", arg0);
+            IExecuteWithSignature("disableType", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilterSupport.html#enableType(java.lang.String)"/>
@@ -87,7 +87,7 @@ namespace Javax.Management
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void EnableType(Java.Lang.String arg0)
         {
-            IExecute("enableType", arg0);
+            IExecuteWithSignature("enableType", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

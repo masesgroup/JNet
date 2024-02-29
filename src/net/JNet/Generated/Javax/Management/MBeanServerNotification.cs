@@ -73,7 +73,7 @@ namespace Javax.Management
         /// </summary>
         public Javax.Management.ObjectName MBeanName
         {
-            get { return IExecute<Javax.Management.ObjectName>("getMBeanName"); }
+            get { return IExecuteWithSignature<Javax.Management.ObjectName>("getMBeanName", "()Ljavax/management/ObjectName;"); }
         }
 
         #endregion

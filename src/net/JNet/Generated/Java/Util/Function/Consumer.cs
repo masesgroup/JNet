@@ -83,7 +83,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Consumer AndThenDefault(Java.Util.Function.Consumer arg0)
         {
-            return IExecute<Java.Util.Function.Consumer>("andThenDefault", arg0);
+            return IExecuteWithSignature<Java.Util.Function.Consumer>("andThenDefault", "(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;", arg0);
         }
 
         /// <summary>
@@ -209,7 +209,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Consumer<T> AndThen<Arg0objectSuperT>Default(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return IExecute<Java.Util.Function.Consumer<T>>("andThenDefault", arg0);
+            return IExecuteWithSignature<Java.Util.Function.Consumer<T>>("andThenDefault", "(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;", arg0);
         }
 
         /// <summary>

@@ -72,7 +72,7 @@ namespace Javax.Accessibility
         /// </summary>
         public Javax.Accessibility.AccessibleContext AccessibleContext
         {
-            get { return IExecute<Javax.Accessibility.AccessibleContext>("getAccessibleContext"); }
+            get { return IExecuteWithSignature<Javax.Accessibility.AccessibleContext>("getAccessibleContext", "()Ljavax/accessibility/AccessibleContext;"); }
         }
 
         #endregion

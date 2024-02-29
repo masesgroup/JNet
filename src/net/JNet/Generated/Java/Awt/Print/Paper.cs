@@ -50,42 +50,42 @@ namespace Java.Awt.Print
         /// </summary>
         public double Height
         {
-            get { return IExecute<double>("getHeight"); }
+            get { return IExecuteWithSignature<double>("getHeight", "()D"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Paper.html#getImageableHeight()"/> 
         /// </summary>
         public double ImageableHeight
         {
-            get { return IExecute<double>("getImageableHeight"); }
+            get { return IExecuteWithSignature<double>("getImageableHeight", "()D"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Paper.html#getImageableWidth()"/> 
         /// </summary>
         public double ImageableWidth
         {
-            get { return IExecute<double>("getImageableWidth"); }
+            get { return IExecuteWithSignature<double>("getImageableWidth", "()D"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Paper.html#getImageableX()"/> 
         /// </summary>
         public double ImageableX
         {
-            get { return IExecute<double>("getImageableX"); }
+            get { return IExecuteWithSignature<double>("getImageableX", "()D"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Paper.html#getImageableY()"/> 
         /// </summary>
         public double ImageableY
         {
-            get { return IExecute<double>("getImageableY"); }
+            get { return IExecuteWithSignature<double>("getImageableY", "()D"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Paper.html#getWidth()"/> 
         /// </summary>
         public double Width
         {
-            get { return IExecute<double>("getWidth"); }
+            get { return IExecuteWithSignature<double>("getWidth", "()D"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Paper.html#setImageableArea(double,double,double,double)"/>

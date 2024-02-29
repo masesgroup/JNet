@@ -111,21 +111,21 @@ namespace Javax.Management.Monitor
         /// </summary>
         public long GranularityPeriod
         {
-            get { return IExecute<long>("getGranularityPeriod"); } set { IExecute("setGranularityPeriod", value); }
+            get { return IExecuteWithSignature<long>("getGranularityPeriod", "()J"); } set { IExecuteWithSignature("setGranularityPeriod", "(J)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#getObservedAttribute()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#setObservedAttribute(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String ObservedAttribute
         {
-            get { return IExecute<Java.Lang.String>("getObservedAttribute"); } set { IExecute("setObservedAttribute", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getObservedAttribute", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setObservedAttribute", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#getObservedObjects()"/> 
         /// </summary>
         public Javax.Management.ObjectName[] ObservedObjects
         {
-            get { return IExecuteArray<Javax.Management.ObjectName>("getObservedObjects"); }
+            get { return IExecuteWithSignatureArray<Javax.Management.ObjectName>("getObservedObjects", "()[Ljavax/management/ObjectName;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#containsObservedObject(javax.management.ObjectName)"/>
@@ -134,7 +134,7 @@ namespace Javax.Management.Monitor
         /// <returns><see cref="bool"/></returns>
         public bool ContainsObservedObject(Javax.Management.ObjectName arg0)
         {
-            return IExecute<bool>("containsObservedObject", arg0);
+            return IExecuteWithSignature<bool>("containsObservedObject", "(Ljavax/management/ObjectName;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#isActive()"/>
@@ -143,7 +143,7 @@ namespace Javax.Management.Monitor
         /// <returns><see cref="bool"/></returns>
         public bool IsActive()
         {
-            return IExecute<bool>("isActive");
+            return IExecuteWithSignature<bool>("isActive", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#addObservedObject(javax.management.ObjectName)"/>
@@ -152,7 +152,7 @@ namespace Javax.Management.Monitor
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void AddObservedObject(Javax.Management.ObjectName arg0)
         {
-            IExecute("addObservedObject", arg0);
+            IExecuteWithSignature("addObservedObject", "(Ljavax/management/ObjectName;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#removeObservedObject(javax.management.ObjectName)"/>
@@ -160,21 +160,21 @@ namespace Javax.Management.Monitor
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
         public void RemoveObservedObject(Javax.Management.ObjectName arg0)
         {
-            IExecute("removeObservedObject", arg0);
+            IExecuteWithSignature("removeObservedObject", "(Ljavax/management/ObjectName;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#start()"/>
         /// </summary>
         public void Start()
         {
-            IExecute("start");
+            IExecuteWithSignature("start", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#stop()"/>
         /// </summary>
         public void Stop()
         {
-            IExecute("stop");
+            IExecuteWithSignature("stop", "()V");
         }
 
         #endregion

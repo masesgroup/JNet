@@ -112,7 +112,7 @@ namespace Javax.Sound.Sampled
         /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
         public void Open(Javax.Sound.Sampled.AudioFormat arg0)
         {
-            IExecute("open", arg0);
+            IExecuteWithSignature("open", "(Ljavax/sound/sampled/AudioFormat;)V", arg0);
         }
 
         #endregion

@@ -69,21 +69,21 @@ namespace Java.Security.Spec
         /// </summary>
         public Java.Math.BigInteger Modulus
         {
-            get { return IExecute<Java.Math.BigInteger>("getModulus"); }
+            get { return IExecuteWithSignature<Java.Math.BigInteger>("getModulus", "()Ljava/math/BigInteger;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPublicKeySpec.html#getParams()"/> 
         /// </summary>
         public Java.Security.Spec.AlgorithmParameterSpec Params
         {
-            get { return IExecute<Java.Security.Spec.AlgorithmParameterSpec>("getParams"); }
+            get { return IExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>("getParams", "()Ljava/security/spec/AlgorithmParameterSpec;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPublicKeySpec.html#getPublicExponent()"/> 
         /// </summary>
         public Java.Math.BigInteger PublicExponent
         {
-            get { return IExecute<Java.Math.BigInteger>("getPublicExponent"); }
+            get { return IExecuteWithSignature<Java.Math.BigInteger>("getPublicExponent", "()Ljava/math/BigInteger;"); }
         }
 
         #endregion

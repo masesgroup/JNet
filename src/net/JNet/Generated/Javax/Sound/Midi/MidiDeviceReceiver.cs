@@ -72,7 +72,7 @@ namespace Javax.Sound.Midi
         /// </summary>
         public Javax.Sound.Midi.MidiDevice MidiDevice
         {
-            get { return IExecute<Javax.Sound.Midi.MidiDevice>("getMidiDevice"); }
+            get { return IExecuteWithSignature<Javax.Sound.Midi.MidiDevice>("getMidiDevice", "()Ljavax/sound/midi/MidiDevice;"); }
         }
 
         #endregion

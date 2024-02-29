@@ -71,7 +71,7 @@ namespace Java.Security.Cert
         /// </summary>
         public int MaxPathLength
         {
-            get { return IExecute<int>("getMaxPathLength"); } set { IExecute("setMaxPathLength", value); }
+            get { return IExecuteWithSignature<int>("getMaxPathLength", "()I"); } set { IExecuteWithSignature("setMaxPathLength", "(I)V", value); }
         }
 
         #endregion

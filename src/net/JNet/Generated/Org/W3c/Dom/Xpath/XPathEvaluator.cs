@@ -124,7 +124,7 @@ namespace Org.W3c.Dom.Xpath
         /// <returns><see cref="Org.W3c.Dom.Xpath.XPathNSResolver"/></returns>
         public Org.W3c.Dom.Xpath.XPathNSResolver CreateNSResolver(Org.W3c.Dom.Node arg0)
         {
-            return IExecute<Org.W3c.Dom.Xpath.XPathNSResolver>("createNSResolver", arg0);
+            return IExecuteWithSignature<Org.W3c.Dom.Xpath.XPathNSResolver>("createNSResolver", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/xpath/XPathNSResolver;", arg0);
         }
 
         #endregion

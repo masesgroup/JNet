@@ -152,7 +152,7 @@ namespace Javax.Management
         /// <returns><see cref="bool"/></returns>
         public static bool IsMXBeanInterface(Java.Lang.Class arg0)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isMXBeanInterface", arg0);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isMXBeanInterface", "(Ljava/lang/Class;)Z", arg0);
         }
 
         #endregion

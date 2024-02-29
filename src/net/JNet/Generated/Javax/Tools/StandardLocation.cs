@@ -126,7 +126,7 @@ namespace Javax.Tools
         /// <returns><see cref="Javax.Tools.JavaFileManager.Location"/></returns>
         public static Javax.Tools.JavaFileManager.Location LocationFor(Java.Lang.String arg0)
         {
-            return SExecute<Javax.Tools.JavaFileManager.Location>(LocalBridgeClazz, "locationFor", arg0);
+            return SExecuteWithSignature<Javax.Tools.JavaFileManager.Location>(LocalBridgeClazz, "locationFor", "(Ljava/lang/String;)Ljavax/tools/JavaFileManager$Location;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#valueOf(java.lang.String)"/>
@@ -135,7 +135,7 @@ namespace Javax.Tools
         /// <returns><see cref="Javax.Tools.StandardLocation"/></returns>
         public static Javax.Tools.StandardLocation ValueOf(Java.Lang.String arg0)
         {
-            return SExecute<Javax.Tools.StandardLocation>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecuteWithSignature<Javax.Tools.StandardLocation>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/tools/StandardLocation;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#values()"/>
@@ -144,7 +144,7 @@ namespace Javax.Tools
         /// <returns><see cref="Javax.Tools.StandardLocation"/></returns>
         public static Javax.Tools.StandardLocation[] Values()
         {
-            return SExecuteArray<Javax.Tools.StandardLocation>(LocalBridgeClazz, "values");
+            return SExecuteWithSignatureArray<Javax.Tools.StandardLocation>(LocalBridgeClazz, "values", "()[Ljavax/tools/StandardLocation;");
         }
 
         #endregion
@@ -155,7 +155,7 @@ namespace Javax.Tools
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#isModuleOrientedLocation()"/>
@@ -164,7 +164,7 @@ namespace Javax.Tools
         /// <returns><see cref="bool"/></returns>
         public bool IsModuleOrientedLocation()
         {
-            return IExecute<bool>("isModuleOrientedLocation");
+            return IExecuteWithSignature<bool>("isModuleOrientedLocation", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#isOutputLocation()"/>
@@ -173,7 +173,7 @@ namespace Javax.Tools
         /// <returns><see cref="bool"/></returns>
         public bool IsOutputLocation()
         {
-            return IExecute<bool>("isOutputLocation");
+            return IExecuteWithSignature<bool>("isOutputLocation", "()Z");
         }
 
         #endregion

@@ -72,7 +72,7 @@ namespace Javax.Lang.Model.Type
         /// </summary>
         public Java.Util.List Alternatives
         {
-            get { return IExecute<Java.Util.List>("getAlternatives"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getAlternatives", "()Ljava/util/List;"); }
         }
 
         #endregion

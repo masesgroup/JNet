@@ -75,14 +75,14 @@ namespace Javax.Imageio.Spi
         /// </summary>
         public Java.Lang.String[] ImageReaderSpiNames
         {
-            get { return IExecuteArray<Java.Lang.String>("getImageReaderSpiNames"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.String>("getImageReaderSpiNames", "()[Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#getOutputTypes()"/> 
         /// </summary>
         public Java.Lang.Class[] OutputTypes
         {
-            get { return IExecuteArray<Java.Lang.Class>("getOutputTypes"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.Class>("getOutputTypes", "()[Ljava/lang/Class;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#canEncodeImage(javax.imageio.ImageTypeSpecifier)"/>
@@ -91,7 +91,7 @@ namespace Javax.Imageio.Spi
         /// <returns><see cref="bool"/></returns>
         public bool CanEncodeImage(Javax.Imageio.ImageTypeSpecifier arg0)
         {
-            return IExecute<bool>("canEncodeImage", arg0);
+            return IExecuteWithSignature<bool>("canEncodeImage", "(Ljavax/imageio/ImageTypeSpecifier;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#createWriterInstance(java.lang.Object)"/>
@@ -101,7 +101,7 @@ namespace Javax.Imageio.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Imageio.ImageWriter CreateWriterInstance(object arg0)
         {
-            return IExecute<Javax.Imageio.ImageWriter>("createWriterInstance", arg0);
+            return IExecuteWithSignature<Javax.Imageio.ImageWriter>("createWriterInstance", "(Ljava/lang/Object;)Ljavax/imageio/ImageWriter;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#canEncodeImage(java.awt.image.RenderedImage)"/>
@@ -110,7 +110,7 @@ namespace Javax.Imageio.Spi
         /// <returns><see cref="bool"/></returns>
         public bool CanEncodeImage(Java.Awt.ImageNs.RenderedImage arg0)
         {
-            return IExecute<bool>("canEncodeImage", arg0);
+            return IExecuteWithSignature<bool>("canEncodeImage", "(Ljava/awt/image/RenderedImage;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#isFormatLossless()"/>
@@ -119,7 +119,7 @@ namespace Javax.Imageio.Spi
         /// <returns><see cref="bool"/></returns>
         public bool IsFormatLossless()
         {
-            return IExecute<bool>("isFormatLossless");
+            return IExecuteWithSignature<bool>("isFormatLossless", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#isOwnWriter(javax.imageio.ImageWriter)"/>
@@ -128,7 +128,7 @@ namespace Javax.Imageio.Spi
         /// <returns><see cref="bool"/></returns>
         public bool IsOwnWriter(Javax.Imageio.ImageWriter arg0)
         {
-            return IExecute<bool>("isOwnWriter", arg0);
+            return IExecuteWithSignature<bool>("isOwnWriter", "(Ljavax/imageio/ImageWriter;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#createWriterInstance()"/>
@@ -138,7 +138,7 @@ namespace Javax.Imageio.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Imageio.ImageWriter CreateWriterInstance()
         {
-            return IExecute<Javax.Imageio.ImageWriter>("createWriterInstance");
+            return IExecuteWithSignature<Javax.Imageio.ImageWriter>("createWriterInstance", "()Ljavax/imageio/ImageWriter;");
         }
 
         #endregion

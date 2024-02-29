@@ -72,7 +72,7 @@ namespace Javax.Print.Attribute
         /// <returns><see cref="float"/></returns>
         public float GetX(int arg0)
         {
-            return IExecute<float>("getX", arg0);
+            return IExecuteWithSignature<float>("getX", "(I)F", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/Size2DSyntax.html#getY(int)"/>
@@ -81,7 +81,7 @@ namespace Javax.Print.Attribute
         /// <returns><see cref="float"/></returns>
         public float GetY(int arg0)
         {
-            return IExecute<float>("getY", arg0);
+            return IExecuteWithSignature<float>("getY", "(I)F", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/Size2DSyntax.html#getSize(int)"/>
@@ -90,7 +90,7 @@ namespace Javax.Print.Attribute
         /// <returns><see cref="float"/></returns>
         public float[] GetSize(int arg0)
         {
-            return IExecuteArray<float>("getSize", arg0);
+            return IExecuteWithSignatureArray<float>("getSize", "(I)[F", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/Size2DSyntax.html#toString(int,java.lang.String)"/>

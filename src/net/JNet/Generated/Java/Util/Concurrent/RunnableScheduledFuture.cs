@@ -60,7 +60,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool IsPeriodic()
         {
-            return IExecute<bool>("isPeriodic");
+            return IExecuteWithSignature<bool>("isPeriodic", "()Z");
         }
 
         #endregion
@@ -136,7 +136,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool IsPeriodic()
         {
-            return IExecute<bool>("isPeriodic");
+            return IExecuteWithSignature<bool>("isPeriodic", "()Z");
         }
 
         #endregion

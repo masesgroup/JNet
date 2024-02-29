@@ -133,7 +133,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Predicate AndDefault(Java.Util.Function.Predicate arg0)
         {
-            return IExecute<Java.Util.Function.Predicate>("andDefault", arg0);
+            return IExecuteWithSignature<Java.Util.Function.Predicate>("andDefault", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }
 
         /// <summary>
@@ -167,7 +167,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Predicate NegateDefault()
         {
-            return IExecute<Java.Util.Function.Predicate>("negateDefault");
+            return IExecuteWithSignature<Java.Util.Function.Predicate>("negateDefault", "()Ljava/util/function/Predicate;");
         }
 
         /// <summary>
@@ -201,7 +201,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Predicate OrDefault(Java.Util.Function.Predicate arg0)
         {
-            return IExecute<Java.Util.Function.Predicate>("orDefault", arg0);
+            return IExecuteWithSignature<Java.Util.Function.Predicate>("orDefault", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }
 
         /// <summary>
@@ -392,7 +392,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Predicate<T> And<Arg0objectSuperT>Default(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return IExecute<Java.Util.Function.Predicate<T>>("andDefault", arg0);
+            return IExecuteWithSignature<Java.Util.Function.Predicate<T>>("andDefault", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }
 
         /// <summary>
@@ -427,7 +427,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Predicate<T> NegateDefault()
         {
-            return IExecute<Java.Util.Function.Predicate<T>>("negateDefault");
+            return IExecuteWithSignature<Java.Util.Function.Predicate<T>>("negateDefault", "()Ljava/util/function/Predicate;");
         }
 
         /// <summary>
@@ -462,7 +462,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Predicate<T> Or<Arg0objectSuperT>Default(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return IExecute<Java.Util.Function.Predicate<T>>("orDefault", arg0);
+            return IExecuteWithSignature<Java.Util.Function.Predicate<T>>("orDefault", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }
 
         /// <summary>

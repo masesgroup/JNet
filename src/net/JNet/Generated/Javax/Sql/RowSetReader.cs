@@ -76,7 +76,7 @@ namespace Javax.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void ReadData(Javax.Sql.RowSetInternal arg0)
         {
-            IExecute("readData", arg0);
+            IExecuteWithSignature("readData", "(Ljavax/sql/RowSetInternal;)V", arg0);
         }
 
         #endregion

@@ -116,49 +116,49 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         public Javax.Lang.Model.Element.AnnotationValue DefaultValue
         {
-            get { return IExecute<Javax.Lang.Model.Element.AnnotationValue>("getDefaultValue"); }
+            get { return IExecuteWithSignature<Javax.Lang.Model.Element.AnnotationValue>("getDefaultValue", "()Ljavax/lang/model/element/AnnotationValue;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getParameters()"/> 
         /// </summary>
         public Java.Util.List Parameters
         {
-            get { return IExecute<Java.Util.List>("getParameters"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getParameters", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getReceiverType()"/> 
         /// </summary>
         public Javax.Lang.Model.Type.TypeMirror ReceiverType
         {
-            get { return IExecute<Javax.Lang.Model.Type.TypeMirror>("getReceiverType"); }
+            get { return IExecuteWithSignature<Javax.Lang.Model.Type.TypeMirror>("getReceiverType", "()Ljavax/lang/model/type/TypeMirror;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getReturnType()"/> 
         /// </summary>
         public Javax.Lang.Model.Type.TypeMirror ReturnType
         {
-            get { return IExecute<Javax.Lang.Model.Type.TypeMirror>("getReturnType"); }
+            get { return IExecuteWithSignature<Javax.Lang.Model.Type.TypeMirror>("getReturnType", "()Ljavax/lang/model/type/TypeMirror;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getSimpleName()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Name SimpleName
         {
-            get { return IExecute<Javax.Lang.Model.Element.Name>("getSimpleName"); }
+            get { return IExecuteWithSignature<Javax.Lang.Model.Element.Name>("getSimpleName", "()Ljavax/lang/model/element/Name;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getThrownTypes()"/> 
         /// </summary>
         public Java.Util.List ThrownTypes
         {
-            get { return IExecute<Java.Util.List>("getThrownTypes"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getThrownTypes", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getTypeParameters()"/> 
         /// </summary>
         public Java.Util.List TypeParameters
         {
-            get { return IExecute<Java.Util.List>("getTypeParameters"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getTypeParameters", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#isDefault()"/>
@@ -167,7 +167,7 @@ namespace Javax.Lang.Model.Element
         /// <returns><see cref="bool"/></returns>
         public bool IsDefault()
         {
-            return IExecute<bool>("isDefault");
+            return IExecuteWithSignature<bool>("isDefault", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#isVarArgs()"/>
@@ -176,7 +176,7 @@ namespace Javax.Lang.Model.Element
         /// <returns><see cref="bool"/></returns>
         public bool IsVarArgs()
         {
-            return IExecute<bool>("isVarArgs");
+            return IExecuteWithSignature<bool>("isVarArgs", "()Z");
         }
 
         #endregion

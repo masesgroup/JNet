@@ -73,35 +73,35 @@ namespace Javax.Swing.Text.Html
         /// </summary>
         public Java.Net.URL Base
         {
-            get { return IExecute<Java.Net.URL>("getBase"); } set { IExecute("setBase", value); }
+            get { return IExecuteWithSignature<Java.Net.URL>("getBase", "()Ljava/net/URL;"); } set { IExecuteWithSignature("setBase", "(Ljava/net/URL;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getParser()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#setParser(javax.swing.text.html.HTMLEditorKit.Parser)"/>
         /// </summary>
         public Javax.Swing.Text.Html.HTMLEditorKit.Parser Parser
         {
-            get { return IExecute<Javax.Swing.Text.Html.HTMLEditorKit.Parser>("getParser"); } set { IExecute("setParser", value); }
+            get { return IExecuteWithSignature<Javax.Swing.Text.Html.HTMLEditorKit.Parser>("getParser", "()Ljavax/swing/text/html/HTMLEditorKit$Parser;"); } set { IExecuteWithSignature("setParser", "(Ljavax/swing/text/html/HTMLEditorKit$Parser;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getPreservesUnknownTags()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#setPreservesUnknownTags(boolean)"/>
         /// </summary>
         public bool PreservesUnknownTags
         {
-            get { return IExecute<bool>("getPreservesUnknownTags"); } set { IExecute("setPreservesUnknownTags", value); }
+            get { return IExecuteWithSignature<bool>("getPreservesUnknownTags", "()Z"); } set { IExecuteWithSignature("setPreservesUnknownTags", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getStyleSheet()"/> 
         /// </summary>
         public Javax.Swing.Text.Html.StyleSheet StyleSheet
         {
-            get { return IExecute<Javax.Swing.Text.Html.StyleSheet>("getStyleSheet"); }
+            get { return IExecuteWithSignature<Javax.Swing.Text.Html.StyleSheet>("getStyleSheet", "()Ljavax/swing/text/html/StyleSheet;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getTokenThreshold()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#setTokenThreshold(int)"/>
         /// </summary>
         public int TokenThreshold
         {
-            get { return IExecute<int>("getTokenThreshold"); } set { IExecute("setTokenThreshold", value); }
+            get { return IExecuteWithSignature<int>("getTokenThreshold", "()I"); } set { IExecuteWithSignature("setTokenThreshold", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getElement(java.lang.String)"/>
@@ -110,7 +110,7 @@ namespace Javax.Swing.Text.Html
         /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
         public Javax.Swing.Text.Element GetElement(Java.Lang.String arg0)
         {
-            return IExecute<Javax.Swing.Text.Element>("getElement", arg0);
+            return IExecuteWithSignature<Javax.Swing.Text.Element>("getElement", "(Ljava/lang/String;)Ljavax/swing/text/Element;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getElement(javax.swing.text.Element,java.lang.Object,java.lang.Object)"/>
@@ -130,7 +130,7 @@ namespace Javax.Swing.Text.Html
         /// <returns><see cref="Javax.Swing.Text.Html.HTMLDocument.Iterator"/></returns>
         public Javax.Swing.Text.Html.HTMLDocument.Iterator GetIterator(Javax.Swing.Text.Html.HTML.Tag arg0)
         {
-            return IExecute<Javax.Swing.Text.Html.HTMLDocument.Iterator>("getIterator", arg0);
+            return IExecuteWithSignature<Javax.Swing.Text.Html.HTMLDocument.Iterator>("getIterator", "(Ljavax/swing/text/html/HTML$Tag;)Ljavax/swing/text/html/HTMLDocument$Iterator;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getReader(int,int,int,javax.swing.text.html.HTML.Tag)"/>
@@ -151,7 +151,7 @@ namespace Javax.Swing.Text.Html
         /// <returns><see cref="Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback"/></returns>
         public Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback GetReader(int arg0)
         {
-            return IExecute<Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback>("getReader", arg0);
+            return IExecuteWithSignature<Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback>("getReader", "(I)Ljavax/swing/text/html/HTMLEditorKit$ParserCallback;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#insertAfterEnd(javax.swing.text.Element,java.lang.String)"/>
@@ -203,7 +203,7 @@ namespace Javax.Swing.Text.Html
         /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTMLFrameHyperlinkEvent"/></param>
         public void ProcessHTMLFrameHyperlinkEvent(Javax.Swing.Text.Html.HTMLFrameHyperlinkEvent arg0)
         {
-            IExecute("processHTMLFrameHyperlinkEvent", arg0);
+            IExecuteWithSignature("processHTMLFrameHyperlinkEvent", "(Ljavax/swing/text/html/HTMLFrameHyperlinkEvent;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#setInnerHTML(javax.swing.text.Element,java.lang.String)"/>
@@ -663,7 +663,7 @@ namespace Javax.Swing.Text.Html
                 /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
                 public void End(Javax.Swing.Text.Html.HTML.Tag arg0)
                 {
-                    IExecute("end", arg0);
+                    IExecuteWithSignature("end", "(Ljavax/swing/text/html/HTML$Tag;)V", arg0);
                 }
                 /// <summary>
                 /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.TagAction.html#start(javax.swing.text.html.HTML.Tag,javax.swing.text.MutableAttributeSet)"/>
@@ -717,28 +717,28 @@ namespace Javax.Swing.Text.Html
             /// </summary>
             public Javax.Swing.Text.AttributeSet Attributes
             {
-                get { return IExecute<Javax.Swing.Text.AttributeSet>("getAttributes"); }
+                get { return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("getAttributes", "()Ljavax/swing/text/AttributeSet;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html#getEndOffset()"/> 
             /// </summary>
             public int EndOffset
             {
-                get { return IExecute<int>("getEndOffset"); }
+                get { return IExecuteWithSignature<int>("getEndOffset", "()I"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html#getStartOffset()"/> 
             /// </summary>
             public int StartOffset
             {
-                get { return IExecute<int>("getStartOffset"); }
+                get { return IExecuteWithSignature<int>("getStartOffset", "()I"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html#getTag()"/> 
             /// </summary>
             public Javax.Swing.Text.Html.HTML.Tag Tag
             {
-                get { return IExecute<Javax.Swing.Text.Html.HTML.Tag>("getTag"); }
+                get { return IExecuteWithSignature<Javax.Swing.Text.Html.HTML.Tag>("getTag", "()Ljavax/swing/text/html/HTML$Tag;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html#isValid()"/>
@@ -747,14 +747,14 @@ namespace Javax.Swing.Text.Html
             /// <returns><see cref="bool"/></returns>
             public bool IsValid()
             {
-                return IExecute<bool>("isValid");
+                return IExecuteWithSignature<bool>("isValid", "()Z");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html#next()"/>
             /// </summary>
             public void Next()
             {
-                IExecute("next");
+                IExecuteWithSignature("next", "()V");
             }
 
             #endregion

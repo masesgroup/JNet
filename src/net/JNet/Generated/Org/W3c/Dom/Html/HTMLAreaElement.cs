@@ -100,56 +100,56 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Java.Lang.String AccessKey
         {
-            get { return IExecute<Java.Lang.String>("getAccessKey"); } set { IExecute("setAccessKey", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getAccessKey", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAccessKey", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAreaElement.html#getAlt()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAreaElement.html#setAlt(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Alt
         {
-            get { return IExecute<Java.Lang.String>("getAlt"); } set { IExecute("setAlt", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getAlt", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAlt", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAreaElement.html#getCoords()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAreaElement.html#setCoords(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Coords
         {
-            get { return IExecute<Java.Lang.String>("getCoords"); } set { IExecute("setCoords", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getCoords", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setCoords", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAreaElement.html#getHref()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAreaElement.html#setHref(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Href
         {
-            get { return IExecute<Java.Lang.String>("getHref"); } set { IExecute("setHref", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getHref", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setHref", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAreaElement.html#getNoHref()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAreaElement.html#setNoHref(boolean)"/>
         /// </summary>
         public bool NoHref
         {
-            get { return IExecute<bool>("getNoHref"); } set { IExecute("setNoHref", value); }
+            get { return IExecuteWithSignature<bool>("getNoHref", "()Z"); } set { IExecuteWithSignature("setNoHref", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAreaElement.html#getShape()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAreaElement.html#setShape(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Shape
         {
-            get { return IExecute<Java.Lang.String>("getShape"); } set { IExecute("setShape", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getShape", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setShape", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAreaElement.html#getTabIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAreaElement.html#setTabIndex(int)"/>
         /// </summary>
         public int TabIndex
         {
-            get { return IExecute<int>("getTabIndex"); } set { IExecute("setTabIndex", value); }
+            get { return IExecuteWithSignature<int>("getTabIndex", "()I"); } set { IExecuteWithSignature("setTabIndex", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAreaElement.html#getTarget()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAreaElement.html#setTarget(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Target
         {
-            get { return IExecute<Java.Lang.String>("getTarget"); } set { IExecute("setTarget", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getTarget", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setTarget", "(Ljava/lang/String;)V", value); }
         }
 
         #endregion

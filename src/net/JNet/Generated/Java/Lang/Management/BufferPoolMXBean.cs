@@ -84,28 +84,28 @@ namespace Java.Lang.Management
         /// </summary>
         public long Count
         {
-            get { return IExecute<long>("getCount"); }
+            get { return IExecuteWithSignature<long>("getCount", "()J"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/BufferPoolMXBean.html#getMemoryUsed()"/> 
         /// </summary>
         public long MemoryUsed
         {
-            get { return IExecute<long>("getMemoryUsed"); }
+            get { return IExecuteWithSignature<long>("getMemoryUsed", "()J"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/BufferPoolMXBean.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/BufferPoolMXBean.html#getTotalCapacity()"/> 
         /// </summary>
         public long TotalCapacity
         {
-            get { return IExecute<long>("getTotalCapacity"); }
+            get { return IExecuteWithSignature<long>("getTotalCapacity", "()J"); }
         }
 
         #endregion

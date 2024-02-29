@@ -106,35 +106,35 @@ namespace Javax.Management.Monitor
         /// </summary>
         public bool DifferenceMode
         {
-            get { return IExecute<bool>("getDifferenceMode"); } set { IExecute("setDifferenceMode", value); }
+            get { return IExecuteWithSignature<bool>("getDifferenceMode", "()Z"); } set { IExecuteWithSignature("setDifferenceMode", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/CounterMonitorMBean.html#getInitThreshold()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/CounterMonitorMBean.html#setInitThreshold(java.lang.Number)"/>
         /// </summary>
         public Java.Lang.Number InitThreshold
         {
-            get { return IExecute<Java.Lang.Number>("getInitThreshold"); } set { IExecute("setInitThreshold", value); }
+            get { return IExecuteWithSignature<Java.Lang.Number>("getInitThreshold", "()Ljava/lang/Number;"); } set { IExecuteWithSignature("setInitThreshold", "(Ljava/lang/Number;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/CounterMonitorMBean.html#getModulus()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/CounterMonitorMBean.html#setModulus(java.lang.Number)"/>
         /// </summary>
         public Java.Lang.Number Modulus
         {
-            get { return IExecute<Java.Lang.Number>("getModulus"); } set { IExecute("setModulus", value); }
+            get { return IExecuteWithSignature<Java.Lang.Number>("getModulus", "()Ljava/lang/Number;"); } set { IExecuteWithSignature("setModulus", "(Ljava/lang/Number;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/CounterMonitorMBean.html#getNotify()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/CounterMonitorMBean.html#setNotify(boolean)"/>
         /// </summary>
         public bool Notify
         {
-            get { return IExecute<bool>("getNotify"); } set { IExecute("setNotify", value); }
+            get { return IExecuteWithSignature<bool>("getNotify", "()Z"); } set { IExecuteWithSignature("setNotify", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/CounterMonitorMBean.html#getOffset()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/CounterMonitorMBean.html#setOffset(java.lang.Number)"/>
         /// </summary>
         public Java.Lang.Number Offset
         {
-            get { return IExecute<Java.Lang.Number>("getOffset"); } set { IExecute("setOffset", value); }
+            get { return IExecuteWithSignature<Java.Lang.Number>("getOffset", "()Ljava/lang/Number;"); } set { IExecuteWithSignature("setOffset", "(Ljava/lang/Number;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/CounterMonitorMBean.html#getDerivedGauge(javax.management.ObjectName)"/>
@@ -143,7 +143,7 @@ namespace Javax.Management.Monitor
         /// <returns><see cref="Java.Lang.Number"/></returns>
         public Java.Lang.Number GetDerivedGauge(Javax.Management.ObjectName arg0)
         {
-            return IExecute<Java.Lang.Number>("getDerivedGauge", arg0);
+            return IExecuteWithSignature<Java.Lang.Number>("getDerivedGauge", "(Ljavax/management/ObjectName;)Ljava/lang/Number;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/CounterMonitorMBean.html#getThreshold(javax.management.ObjectName)"/>
@@ -152,7 +152,7 @@ namespace Javax.Management.Monitor
         /// <returns><see cref="Java.Lang.Number"/></returns>
         public Java.Lang.Number GetThreshold(Javax.Management.ObjectName arg0)
         {
-            return IExecute<Java.Lang.Number>("getThreshold", arg0);
+            return IExecuteWithSignature<Java.Lang.Number>("getThreshold", "(Ljavax/management/ObjectName;)Ljava/lang/Number;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/CounterMonitorMBean.html#getDerivedGaugeTimeStamp(javax.management.ObjectName)"/>
@@ -161,7 +161,7 @@ namespace Javax.Management.Monitor
         /// <returns><see cref="long"/></returns>
         public long GetDerivedGaugeTimeStamp(Javax.Management.ObjectName arg0)
         {
-            return IExecute<long>("getDerivedGaugeTimeStamp", arg0);
+            return IExecuteWithSignature<long>("getDerivedGaugeTimeStamp", "(Ljavax/management/ObjectName;)J", arg0);
         }
 
         #endregion

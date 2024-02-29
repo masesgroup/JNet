@@ -72,7 +72,7 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         public Java.Util.List TypeParameters
         {
-            get { return IExecute<Java.Util.List>("getTypeParameters"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getTypeParameters", "()Ljava/util/List;"); }
         }
 
         #endregion

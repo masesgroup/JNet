@@ -121,35 +121,35 @@ namespace Java.Awt.EventNs
         /// </summary>
         public double PreciseWheelRotation
         {
-            get { return IExecute<double>("getPreciseWheelRotation"); }
+            get { return IExecuteWithSignature<double>("getPreciseWheelRotation", "()D"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseWheelEvent.html#getScrollAmount()"/> 
         /// </summary>
         public int ScrollAmount
         {
-            get { return IExecute<int>("getScrollAmount"); }
+            get { return IExecuteWithSignature<int>("getScrollAmount", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseWheelEvent.html#getScrollType()"/> 
         /// </summary>
         public int ScrollType
         {
-            get { return IExecute<int>("getScrollType"); }
+            get { return IExecuteWithSignature<int>("getScrollType", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseWheelEvent.html#getUnitsToScroll()"/> 
         /// </summary>
         public int UnitsToScroll
         {
-            get { return IExecute<int>("getUnitsToScroll"); }
+            get { return IExecuteWithSignature<int>("getUnitsToScroll", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseWheelEvent.html#getWheelRotation()"/> 
         /// </summary>
         public int WheelRotation
         {
-            get { return IExecute<int>("getWheelRotation"); }
+            get { return IExecuteWithSignature<int>("getWheelRotation", "()I"); }
         }
 
         #endregion

@@ -79,35 +79,35 @@ namespace Javax.Crypto.Spec
         /// </summary>
         public int IterationCount
         {
-            get { return IExecute<int>("getIterationCount"); }
+            get { return IExecuteWithSignature<int>("getIterationCount", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PBEKeySpec.html#getKeyLength()"/> 
         /// </summary>
         public int KeyLength
         {
-            get { return IExecute<int>("getKeyLength"); }
+            get { return IExecuteWithSignature<int>("getKeyLength", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PBEKeySpec.html#getPassword()"/> 
         /// </summary>
         public char[] Password
         {
-            get { return IExecuteArray<char>("getPassword"); }
+            get { return IExecuteWithSignatureArray<char>("getPassword", "()[C"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PBEKeySpec.html#getSalt()"/> 
         /// </summary>
         public byte[] Salt
         {
-            get { return IExecuteArray<byte>("getSalt"); }
+            get { return IExecuteWithSignatureArray<byte>("getSalt", "()[B"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PBEKeySpec.html#clearPassword()"/>
         /// </summary>
         public void ClearPassword()
         {
-            IExecute("clearPassword");
+            IExecuteWithSignature("clearPassword", "()V");
         }
 
         #endregion

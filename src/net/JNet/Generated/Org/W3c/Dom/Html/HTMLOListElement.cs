@@ -80,21 +80,21 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public bool Compact
         {
-            get { return IExecute<bool>("getCompact"); } set { IExecute("setCompact", value); }
+            get { return IExecuteWithSignature<bool>("getCompact", "()Z"); } set { IExecuteWithSignature("setCompact", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOListElement.html#getStart()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOListElement.html#setStart(int)"/>
         /// </summary>
         public int Start
         {
-            get { return IExecute<int>("getStart"); } set { IExecute("setStart", value); }
+            get { return IExecuteWithSignature<int>("getStart", "()I"); } set { IExecuteWithSignature("setStart", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOListElement.html#getType()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOListElement.html#setType(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Type
         {
-            get { return IExecute<Java.Lang.String>("getType"); } set { IExecute("setType", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setType", "(Ljava/lang/String;)V", value); }
         }
 
         #endregion

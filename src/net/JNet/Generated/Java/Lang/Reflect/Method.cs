@@ -50,21 +50,21 @@ namespace Java.Lang.Reflect
         /// </summary>
         public object DefaultValue
         {
-            get { return IExecute("getDefaultValue"); }
+            get { return IExecuteWithSignature("getDefaultValue", "()Ljava/lang/Object;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Method.html#getGenericReturnType()"/> 
         /// </summary>
         public Java.Lang.Reflect.Type GenericReturnType
         {
-            get { return IExecute<Java.Lang.Reflect.Type>("getGenericReturnType"); }
+            get { return IExecuteWithSignature<Java.Lang.Reflect.Type>("getGenericReturnType", "()Ljava/lang/reflect/Type;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Method.html#getReturnType()"/> 
         /// </summary>
         public Java.Lang.Class ReturnType
         {
-            get { return IExecute<Java.Lang.Class>("getReturnType"); }
+            get { return IExecuteWithSignature<Java.Lang.Class>("getReturnType", "()Ljava/lang/Class;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Method.html#isBridge()"/>
@@ -73,7 +73,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public bool IsBridge()
         {
-            return IExecute<bool>("isBridge");
+            return IExecuteWithSignature<bool>("isBridge", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Method.html#isDefault()"/>
@@ -82,7 +82,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public bool IsDefault()
         {
-            return IExecute<bool>("isDefault");
+            return IExecuteWithSignature<bool>("isDefault", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Method.html#invoke(java.lang.Object,java.lang.Object[])"/>

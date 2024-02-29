@@ -91,7 +91,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
         {
-            return IExecute<Java.Lang.String>("name");
+            return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributeView.html#readAttributes()"/>
@@ -101,7 +101,7 @@ namespace Java.Nio.File.Attribute
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.Attribute.BasicFileAttributes ReadAttributes()
         {
-            return IExecute<Java.Nio.File.Attribute.BasicFileAttributes>("readAttributes");
+            return IExecuteWithSignature<Java.Nio.File.Attribute.BasicFileAttributes>("readAttributes", "()Ljava/nio/file/attribute/BasicFileAttributes;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributeView.html#setTimes(java.nio.file.attribute.FileTime,java.nio.file.attribute.FileTime,java.nio.file.attribute.FileTime)"/>

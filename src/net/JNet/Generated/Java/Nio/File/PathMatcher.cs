@@ -76,7 +76,7 @@ namespace Java.Nio.File
         /// <returns><see cref="bool"/></returns>
         public bool Matches(Java.Nio.File.Path arg0)
         {
-            return IExecute<bool>("matches", arg0);
+            return IExecuteWithSignature<bool>("matches", "(Ljava/nio/file/Path;)Z", arg0);
         }
 
         #endregion

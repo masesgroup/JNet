@@ -60,14 +60,14 @@ namespace Java.Beans.Beancontext
         /// </summary>
         public Java.Lang.Class ServiceClass
         {
-            get { return IExecute<Java.Lang.Class>("getServiceClass"); }
+            get { return IExecuteWithSignature<Java.Lang.Class>("getServiceClass", "()Ljava/lang/Class;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#getSourceAsBeanContextServices()"/> 
         /// </summary>
         public Java.Beans.Beancontext.BeanContextServices SourceAsBeanContextServices
         {
-            get { return IExecute<Java.Beans.Beancontext.BeanContextServices>("getSourceAsBeanContextServices"); }
+            get { return IExecuteWithSignature<Java.Beans.Beancontext.BeanContextServices>("getSourceAsBeanContextServices", "()Ljava/beans/beancontext/BeanContextServices;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#isCurrentServiceInvalidNow()"/>
@@ -76,7 +76,7 @@ namespace Java.Beans.Beancontext
         /// <returns><see cref="bool"/></returns>
         public bool IsCurrentServiceInvalidNow()
         {
-            return IExecute<bool>("isCurrentServiceInvalidNow");
+            return IExecuteWithSignature<bool>("isCurrentServiceInvalidNow", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#isServiceClass(java.lang.Class)"/>
@@ -85,7 +85,7 @@ namespace Java.Beans.Beancontext
         /// <returns><see cref="bool"/></returns>
         public bool IsServiceClass(Java.Lang.Class arg0)
         {
-            return IExecute<bool>("isServiceClass", arg0);
+            return IExecuteWithSignature<bool>("isServiceClass", "(Ljava/lang/Class;)Z", arg0);
         }
 
         #endregion

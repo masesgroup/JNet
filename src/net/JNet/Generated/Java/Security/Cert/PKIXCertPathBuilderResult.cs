@@ -65,7 +65,7 @@ namespace Java.Security.Cert
         /// </summary>
         public Java.Security.Cert.CertPath CertPath
         {
-            get { return IExecute<Java.Security.Cert.CertPath>("getCertPath"); }
+            get { return IExecuteWithSignature<Java.Security.Cert.CertPath>("getCertPath", "()Ljava/security/cert/CertPath;"); }
         }
 
         #endregion

@@ -150,7 +150,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="Java.Nio.File.Attribute.AclEntryPermission"/></returns>
         public static Java.Nio.File.Attribute.AclEntryPermission ValueOf(Java.Lang.String arg0)
         {
-            return SExecute<Java.Nio.File.Attribute.AclEntryPermission>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecuteWithSignature<Java.Nio.File.Attribute.AclEntryPermission>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/nio/file/attribute/AclEntryPermission;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryPermission.html#values()"/>
@@ -159,7 +159,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="Java.Nio.File.Attribute.AclEntryPermission"/></returns>
         public static Java.Nio.File.Attribute.AclEntryPermission[] Values()
         {
-            return SExecuteArray<Java.Nio.File.Attribute.AclEntryPermission>(LocalBridgeClazz, "values");
+            return SExecuteWithSignatureArray<Java.Nio.File.Attribute.AclEntryPermission>(LocalBridgeClazz, "values", "()[Ljava/nio/file/attribute/AclEntryPermission;");
         }
 
         #endregion

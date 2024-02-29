@@ -54,84 +54,84 @@ namespace Java.Security.Cert
         /// </summary>
         public byte[] Encoded
         {
-            get { return IExecuteArray<byte>("getEncoded"); }
+            get { return IExecuteWithSignatureArray<byte>("getEncoded", "()[B"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRL.html#getIssuerDN()"/> 
         /// </summary>
         public Java.Security.Principal IssuerDN
         {
-            get { return IExecute<Java.Security.Principal>("getIssuerDN"); }
+            get { return IExecuteWithSignature<Java.Security.Principal>("getIssuerDN", "()Ljava/security/Principal;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRL.html#getIssuerX500Principal()"/> 
         /// </summary>
         public Javax.Security.Auth.X500.X500Principal IssuerX500Principal
         {
-            get { return IExecute<Javax.Security.Auth.X500.X500Principal>("getIssuerX500Principal"); }
+            get { return IExecuteWithSignature<Javax.Security.Auth.X500.X500Principal>("getIssuerX500Principal", "()Ljavax/security/auth/x500/X500Principal;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRL.html#getNextUpdate()"/> 
         /// </summary>
         public Java.Util.Date NextUpdate
         {
-            get { return IExecute<Java.Util.Date>("getNextUpdate"); }
+            get { return IExecuteWithSignature<Java.Util.Date>("getNextUpdate", "()Ljava/util/Date;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRL.html#getRevokedCertificates()"/> 
         /// </summary>
         public Java.Util.Set RevokedCertificates
         {
-            get { return IExecute<Java.Util.Set>("getRevokedCertificates"); }
+            get { return IExecuteWithSignature<Java.Util.Set>("getRevokedCertificates", "()Ljava/util/Set;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRL.html#getSigAlgName()"/> 
         /// </summary>
         public Java.Lang.String SigAlgName
         {
-            get { return IExecute<Java.Lang.String>("getSigAlgName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getSigAlgName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRL.html#getSigAlgOID()"/> 
         /// </summary>
         public Java.Lang.String SigAlgOID
         {
-            get { return IExecute<Java.Lang.String>("getSigAlgOID"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getSigAlgOID", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRL.html#getSigAlgParams()"/> 
         /// </summary>
         public byte[] SigAlgParams
         {
-            get { return IExecuteArray<byte>("getSigAlgParams"); }
+            get { return IExecuteWithSignatureArray<byte>("getSigAlgParams", "()[B"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRL.html#getSignature()"/> 
         /// </summary>
         public byte[] Signature
         {
-            get { return IExecuteArray<byte>("getSignature"); }
+            get { return IExecuteWithSignatureArray<byte>("getSignature", "()[B"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRL.html#getTBSCertList()"/> 
         /// </summary>
         public byte[] TBSCertList
         {
-            get { return IExecuteArray<byte>("getTBSCertList"); }
+            get { return IExecuteWithSignatureArray<byte>("getTBSCertList", "()[B"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRL.html#getThisUpdate()"/> 
         /// </summary>
         public Java.Util.Date ThisUpdate
         {
-            get { return IExecute<Java.Util.Date>("getThisUpdate"); }
+            get { return IExecuteWithSignature<Java.Util.Date>("getThisUpdate", "()Ljava/util/Date;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRL.html#getVersion()"/> 
         /// </summary>
         public int Version
         {
-            get { return IExecute<int>("getVersion"); }
+            get { return IExecuteWithSignature<int>("getVersion", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRL.html#getRevokedCertificate(java.math.BigInteger)"/>
@@ -140,7 +140,7 @@ namespace Java.Security.Cert
         /// <returns><see cref="Java.Security.Cert.X509CRLEntry"/></returns>
         public Java.Security.Cert.X509CRLEntry GetRevokedCertificate(Java.Math.BigInteger arg0)
         {
-            return IExecute<Java.Security.Cert.X509CRLEntry>("getRevokedCertificate", arg0);
+            return IExecuteWithSignature<Java.Security.Cert.X509CRLEntry>("getRevokedCertificate", "(Ljava/math/BigInteger;)Ljava/security/cert/X509CRLEntry;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRL.html#verify(java.security.PublicKey,java.lang.String)"/>
@@ -167,7 +167,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.SignatureException"/>
         public void Verify(Java.Security.PublicKey arg0)
         {
-            IExecute("verify", arg0);
+            IExecuteWithSignature("verify", "(Ljava/security/PublicKey;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRL.html#getRevokedCertificate(java.security.cert.X509Certificate)"/>
@@ -176,7 +176,7 @@ namespace Java.Security.Cert
         /// <returns><see cref="Java.Security.Cert.X509CRLEntry"/></returns>
         public Java.Security.Cert.X509CRLEntry GetRevokedCertificate(Java.Security.Cert.X509Certificate arg0)
         {
-            return IExecute<Java.Security.Cert.X509CRLEntry>("getRevokedCertificate", arg0);
+            return IExecuteWithSignature<Java.Security.Cert.X509CRLEntry>("getRevokedCertificate", "(Ljava/security/cert/X509Certificate;)Ljava/security/cert/X509CRLEntry;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRL.html#verify(java.security.PublicKey,java.security.Provider)"/>

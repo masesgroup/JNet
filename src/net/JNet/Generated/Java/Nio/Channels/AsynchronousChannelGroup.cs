@@ -71,7 +71,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.AsynchronousChannelGroup WithThreadPool(Java.Util.Concurrent.ExecutorService arg0)
         {
-            return SExecute<Java.Nio.Channels.AsynchronousChannelGroup>(LocalBridgeClazz, "withThreadPool", arg0);
+            return SExecuteWithSignature<Java.Nio.Channels.AsynchronousChannelGroup>(LocalBridgeClazz, "withThreadPool", "(Ljava/util/concurrent/ExecutorService;)Ljava/nio/channels/AsynchronousChannelGroup;", arg0);
         }
 
         #endregion
@@ -95,7 +95,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="bool"/></returns>
         public bool IsShutdown()
         {
-            return IExecute<bool>("isShutdown");
+            return IExecuteWithSignature<bool>("isShutdown", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#isTerminated()"/>
@@ -104,14 +104,14 @@ namespace Java.Nio.Channels
         /// <returns><see cref="bool"/></returns>
         public bool IsTerminated()
         {
-            return IExecute<bool>("isTerminated");
+            return IExecuteWithSignature<bool>("isTerminated", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#shutdown()"/>
         /// </summary>
         public void Shutdown()
         {
-            IExecute("shutdown");
+            IExecuteWithSignature("shutdown", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#shutdownNow()"/>
@@ -120,7 +120,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public void ShutdownNow()
         {
-            IExecute("shutdownNow");
+            IExecuteWithSignature("shutdownNow", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#provider()"/>
@@ -129,7 +129,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Nio.Channels.Spi.AsynchronousChannelProvider"/></returns>
         public Java.Nio.Channels.Spi.AsynchronousChannelProvider Provider()
         {
-            return IExecute<Java.Nio.Channels.Spi.AsynchronousChannelProvider>("provider");
+            return IExecuteWithSignature<Java.Nio.Channels.Spi.AsynchronousChannelProvider>("provider", "()Ljava/nio/channels/spi/AsynchronousChannelProvider;");
         }
 
         #endregion

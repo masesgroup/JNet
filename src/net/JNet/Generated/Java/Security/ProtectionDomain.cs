@@ -70,28 +70,28 @@ namespace Java.Security
         /// </summary>
         public Java.Lang.ClassLoader ClassLoader
         {
-            get { return IExecute<Java.Lang.ClassLoader>("getClassLoader"); }
+            get { return IExecuteWithSignature<Java.Lang.ClassLoader>("getClassLoader", "()Ljava/lang/ClassLoader;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#getCodeSource()"/> 
         /// </summary>
         public Java.Security.CodeSource CodeSource
         {
-            get { return IExecute<Java.Security.CodeSource>("getCodeSource"); }
+            get { return IExecuteWithSignature<Java.Security.CodeSource>("getCodeSource", "()Ljava/security/CodeSource;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#getPermissions()"/> 
         /// </summary>
         public Java.Security.PermissionCollection Permissions
         {
-            get { return IExecute<Java.Security.PermissionCollection>("getPermissions"); }
+            get { return IExecuteWithSignature<Java.Security.PermissionCollection>("getPermissions", "()Ljava/security/PermissionCollection;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#getPrincipals()"/> 
         /// </summary>
         public Java.Security.Principal[] Principals
         {
-            get { return IExecuteArray<Java.Security.Principal>("getPrincipals"); }
+            get { return IExecuteWithSignatureArray<Java.Security.Principal>("getPrincipals", "()[Ljava/security/Principal;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#implies(java.security.Permission)"/>
@@ -100,7 +100,7 @@ namespace Java.Security
         /// <returns><see cref="bool"/></returns>
         public bool Implies(Java.Security.Permission arg0)
         {
-            return IExecute<bool>("implies", arg0);
+            return IExecuteWithSignature<bool>("implies", "(Ljava/security/Permission;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#staticPermissionsOnly()"/>
@@ -109,7 +109,7 @@ namespace Java.Security
         /// <returns><see cref="bool"/></returns>
         public bool StaticPermissionsOnly()
         {
-            return IExecute<bool>("staticPermissionsOnly");
+            return IExecuteWithSignature<bool>("staticPermissionsOnly", "()Z");
         }
 
         #endregion

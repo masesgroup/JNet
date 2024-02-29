@@ -116,7 +116,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
-            IExecute("close");
+            IExecuteWithSignature("close", "()V");
         }
 
         #endregion

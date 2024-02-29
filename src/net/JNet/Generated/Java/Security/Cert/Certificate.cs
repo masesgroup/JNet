@@ -50,21 +50,21 @@ namespace Java.Security.Cert
         /// </summary>
         public byte[] Encoded
         {
-            get { return IExecuteArray<byte>("getEncoded"); }
+            get { return IExecuteWithSignatureArray<byte>("getEncoded", "()[B"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Certificate.html#getPublicKey()"/> 
         /// </summary>
         public Java.Security.PublicKey PublicKey
         {
-            get { return IExecute<Java.Security.PublicKey>("getPublicKey"); }
+            get { return IExecuteWithSignature<Java.Security.PublicKey>("getPublicKey", "()Ljava/security/PublicKey;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Certificate.html#getType()"/> 
         /// </summary>
         public Java.Lang.String Type
         {
-            get { return IExecute<Java.Lang.String>("getType"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Certificate.html#verify(java.security.PublicKey,java.lang.String)"/>
@@ -91,7 +91,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.SignatureException"/>
         public void Verify(Java.Security.PublicKey arg0)
         {
-            IExecute("verify", arg0);
+            IExecuteWithSignature("verify", "(Ljava/security/PublicKey;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Certificate.html#verify(java.security.PublicKey,java.security.Provider)"/>

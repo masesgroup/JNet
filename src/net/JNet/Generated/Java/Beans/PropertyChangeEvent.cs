@@ -61,28 +61,28 @@ namespace Java.Beans
         /// </summary>
         public object NewValue
         {
-            get { return IExecute("getNewValue"); }
+            get { return IExecuteWithSignature("getNewValue", "()Ljava/lang/Object;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeEvent.html#getOldValue()"/> 
         /// </summary>
         public object OldValue
         {
-            get { return IExecute("getOldValue"); }
+            get { return IExecuteWithSignature("getOldValue", "()Ljava/lang/Object;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeEvent.html#getPropagationId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeEvent.html#setPropagationId(java.lang.Object)"/>
         /// </summary>
         public object PropagationId
         {
-            get { return IExecute("getPropagationId"); } set { IExecute("setPropagationId", value); }
+            get { return IExecuteWithSignature("getPropagationId", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setPropagationId", "(Ljava/lang/Object;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeEvent.html#getPropertyName()"/> 
         /// </summary>
         public Java.Lang.String PropertyName
         {
-            get { return IExecute<Java.Lang.String>("getPropertyName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getPropertyName", "()Ljava/lang/String;"); }
         }
 
         #endregion

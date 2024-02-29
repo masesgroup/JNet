@@ -358,7 +358,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// </summary>
         public static Javax.Imageio.Plugins.Tiff.ExifGPSTagSet Instance
         {
-            get { return SExecute<Javax.Imageio.Plugins.Tiff.ExifGPSTagSet>(LocalBridgeClazz, "getInstance"); }
+            get { return SExecuteWithSignature<Javax.Imageio.Plugins.Tiff.ExifGPSTagSet>(LocalBridgeClazz, "getInstance", "()Ljavax/imageio/plugins/tiff/ExifGPSTagSet;"); }
         }
 
         #endregion

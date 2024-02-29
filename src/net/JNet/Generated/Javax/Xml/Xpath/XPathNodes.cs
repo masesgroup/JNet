@@ -89,7 +89,7 @@ namespace Javax.Xml.Xpath
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecute<int>("size");
+            return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathNodes.html#iterator()"/>
@@ -98,7 +98,7 @@ namespace Javax.Xml.Xpath
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<Org.W3c.Dom.Node> Iterator()
         {
-            return IExecute<Java.Util.Iterator<Org.W3c.Dom.Node>>("iterator");
+            return IExecuteWithSignature<Java.Util.Iterator<Org.W3c.Dom.Node>>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathNodes.html#get(int)"/>
@@ -108,7 +108,7 @@ namespace Javax.Xml.Xpath
         /// <exception cref="Javax.Xml.Xpath.XPathException"/>
         public Org.W3c.Dom.Node Get(int arg0)
         {
-            return IExecute<Org.W3c.Dom.Node>("get", arg0);
+            return IExecuteWithSignature<Org.W3c.Dom.Node>("get", "(I)Lorg/w3c/dom/Node;", arg0);
         }
 
         #endregion

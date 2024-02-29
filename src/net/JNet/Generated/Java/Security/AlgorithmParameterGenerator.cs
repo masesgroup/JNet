@@ -72,7 +72,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.AlgorithmParameterGenerator GetInstance(Java.Lang.String arg0)
         {
-            return SExecute<Java.Security.AlgorithmParameterGenerator>(LocalBridgeClazz, "getInstance", arg0);
+            return SExecuteWithSignature<Java.Security.AlgorithmParameterGenerator>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljava/security/AlgorithmParameterGenerator;", arg0);
         }
 
         #endregion
@@ -83,14 +83,14 @@ namespace Java.Security
         /// </summary>
         public Java.Lang.String Algorithm
         {
-            get { return IExecute<Java.Lang.String>("getAlgorithm"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameterGenerator.html#getProvider()"/> 
         /// </summary>
         public Java.Security.Provider Provider
         {
-            get { return IExecute<Java.Security.Provider>("getProvider"); }
+            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameterGenerator.html#generateParameters()"/>
@@ -99,7 +99,7 @@ namespace Java.Security
         /// <returns><see cref="Java.Security.AlgorithmParameters"/></returns>
         public Java.Security.AlgorithmParameters GenerateParameters()
         {
-            return IExecute<Java.Security.AlgorithmParameters>("generateParameters");
+            return IExecuteWithSignature<Java.Security.AlgorithmParameters>("generateParameters", "()Ljava/security/AlgorithmParameters;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameterGenerator.html#init(int,java.security.SecureRandom)"/>
@@ -116,7 +116,7 @@ namespace Java.Security
         /// <param name="arg0"><see cref="int"/></param>
         public void Init(int arg0)
         {
-            IExecute("init", arg0);
+            IExecuteWithSignature("init", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameterGenerator.html#init(java.security.spec.AlgorithmParameterSpec,java.security.SecureRandom)"/>
@@ -135,7 +135,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public void Init(Java.Security.Spec.AlgorithmParameterSpec arg0)
         {
-            IExecute("init", arg0);
+            IExecuteWithSignature("init", "(Ljava/security/spec/AlgorithmParameterSpec;)V", arg0);
         }
 
         #endregion

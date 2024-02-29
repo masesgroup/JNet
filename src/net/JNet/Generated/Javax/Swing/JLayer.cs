@@ -79,42 +79,42 @@ namespace Javax.Swing
         /// </summary>
         public Javax.Swing.JPanel GlassPane
         {
-            get { return IExecute<Javax.Swing.JPanel>("getGlassPane"); } set { IExecute("setGlassPane", value); }
+            get { return IExecuteWithSignature<Javax.Swing.JPanel>("getGlassPane", "()Ljavax/swing/JPanel;"); } set { IExecuteWithSignature("setGlassPane", "(Ljavax/swing/JPanel;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getLayerEventMask()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#setLayerEventMask(long)"/>
         /// </summary>
         public long LayerEventMask
         {
-            get { return IExecute<long>("getLayerEventMask"); } set { IExecute("setLayerEventMask", value); }
+            get { return IExecuteWithSignature<long>("getLayerEventMask", "()J"); } set { IExecuteWithSignature("setLayerEventMask", "(J)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getPreferredScrollableViewportSize()"/> 
         /// </summary>
         public Java.Awt.Dimension PreferredScrollableViewportSize
         {
-            get { return IExecute<Java.Awt.Dimension>("getPreferredScrollableViewportSize"); }
+            get { return IExecuteWithSignature<Java.Awt.Dimension>("getPreferredScrollableViewportSize", "()Ljava/awt/Dimension;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getScrollableTracksViewportHeight()"/> 
         /// </summary>
         public bool ScrollableTracksViewportHeight
         {
-            get { return IExecute<bool>("getScrollableTracksViewportHeight"); }
+            get { return IExecuteWithSignature<bool>("getScrollableTracksViewportHeight", "()Z"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getScrollableTracksViewportWidth()"/> 
         /// </summary>
         public bool ScrollableTracksViewportWidth
         {
-            get { return IExecute<bool>("getScrollableTracksViewportWidth"); }
+            get { return IExecuteWithSignature<bool>("getScrollableTracksViewportWidth", "()Z"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getView()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#setView(java.awt.Component)"/>
         /// </summary>
         public Java.Awt.Component View
         {
-            get { return IExecute<Java.Awt.Component>("getView"); } set { IExecute("setView", value); }
+            get { return IExecuteWithSignature<Java.Awt.Component>("getView", "()Ljava/awt/Component;"); } set { IExecuteWithSignature("setView", "(Ljava/awt/Component;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getScrollableBlockIncrement(java.awt.Rectangle,int,int)"/>
@@ -145,7 +145,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.JPanel"/></returns>
         public Javax.Swing.JPanel CreateGlassPane()
         {
-            return IExecute<Javax.Swing.JPanel>("createGlassPane");
+            return IExecuteWithSignature<Javax.Swing.JPanel>("createGlassPane", "()Ljavax/swing/JPanel;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#propertyChange(java.beans.PropertyChangeEvent)"/>
@@ -153,7 +153,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
         public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
         {
-            IExecute("propertyChange", arg0);
+            IExecuteWithSignature("propertyChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#setUI(javax.swing.plaf.LayerUI)"/>
@@ -161,7 +161,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.LayerUI"/></param>
         public void SetUI(Javax.Swing.Plaf.LayerUI arg0)
         {
-            IExecute("setUI", arg0);
+            IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/LayerUI;)V", arg0);
         }
 
         #endregion
@@ -232,42 +232,42 @@ namespace Javax.Swing
         /// </summary>
         public Javax.Swing.JPanel GlassPane
         {
-            get { return IExecute<Javax.Swing.JPanel>("getGlassPane"); } set { IExecute("setGlassPane", value); }
+            get { return IExecuteWithSignature<Javax.Swing.JPanel>("getGlassPane", "()Ljavax/swing/JPanel;"); } set { IExecuteWithSignature("setGlassPane", "(Ljavax/swing/JPanel;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getLayerEventMask()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#setLayerEventMask(long)"/>
         /// </summary>
         public long LayerEventMask
         {
-            get { return IExecute<long>("getLayerEventMask"); } set { IExecute("setLayerEventMask", value); }
+            get { return IExecuteWithSignature<long>("getLayerEventMask", "()J"); } set { IExecuteWithSignature("setLayerEventMask", "(J)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getPreferredScrollableViewportSize()"/> 
         /// </summary>
         public Java.Awt.Dimension PreferredScrollableViewportSize
         {
-            get { return IExecute<Java.Awt.Dimension>("getPreferredScrollableViewportSize"); }
+            get { return IExecuteWithSignature<Java.Awt.Dimension>("getPreferredScrollableViewportSize", "()Ljava/awt/Dimension;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getScrollableTracksViewportHeight()"/> 
         /// </summary>
         public bool ScrollableTracksViewportHeight
         {
-            get { return IExecute<bool>("getScrollableTracksViewportHeight"); }
+            get { return IExecuteWithSignature<bool>("getScrollableTracksViewportHeight", "()Z"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getScrollableTracksViewportWidth()"/> 
         /// </summary>
         public bool ScrollableTracksViewportWidth
         {
-            get { return IExecute<bool>("getScrollableTracksViewportWidth"); }
+            get { return IExecuteWithSignature<bool>("getScrollableTracksViewportWidth", "()Z"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getView()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#setView(java.awt.Component)"/>
         /// </summary>
         public V View
         {
-            get { return IExecute<V>("getView"); } set { IExecute("setView", value); }
+            get { return IExecuteWithSignature<V>("getView", "()Ljava/awt/Component;"); } set { IExecuteWithSignature("setView", "(Ljava/awt/Component;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getScrollableBlockIncrement(java.awt.Rectangle,int,int)"/>
@@ -298,7 +298,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.JPanel"/></returns>
         public Javax.Swing.JPanel CreateGlassPane()
         {
-            return IExecute<Javax.Swing.JPanel>("createGlassPane");
+            return IExecuteWithSignature<Javax.Swing.JPanel>("createGlassPane", "()Ljavax/swing/JPanel;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#propertyChange(java.beans.PropertyChangeEvent)"/>
@@ -306,7 +306,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
         public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
         {
-            IExecute("propertyChange", arg0);
+            IExecuteWithSignature("propertyChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#setUI(javax.swing.plaf.LayerUI)"/>
@@ -314,7 +314,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.LayerUI"/></param>
         public void SetUI(Javax.Swing.Plaf.LayerUI arg0)
         {
-            IExecute("setUI", arg0);
+            IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/LayerUI;)V", arg0);
         }
 
         #endregion

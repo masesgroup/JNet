@@ -128,14 +128,14 @@ namespace Javax.Management.Remote
         /// </summary>
         public Java.Lang.String ConnectionId
         {
-            get { return IExecute<Java.Lang.String>("getConnectionId"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getConnectionId", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#getMBeanServerConnection()"/> 
         /// </summary>
         public Javax.Management.MBeanServerConnection MBeanServerConnection
         {
-            get { return IExecute<Javax.Management.MBeanServerConnection>("getMBeanServerConnection"); }
+            get { return IExecuteWithSignature<Javax.Management.MBeanServerConnection>("getMBeanServerConnection", "()Ljavax/management/MBeanServerConnection;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#getMBeanServerConnection(javax.security.auth.Subject)"/>
@@ -145,7 +145,7 @@ namespace Javax.Management.Remote
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Management.MBeanServerConnection GetMBeanServerConnection(Javax.Security.Auth.Subject arg0)
         {
-            return IExecute<Javax.Management.MBeanServerConnection>("getMBeanServerConnection", arg0);
+            return IExecuteWithSignature<Javax.Management.MBeanServerConnection>("getMBeanServerConnection", "(Ljavax/security/auth/Subject;)Ljavax/management/MBeanServerConnection;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#addConnectionNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)"/>
@@ -164,7 +164,7 @@ namespace Javax.Management.Remote
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
-            IExecute("close");
+            IExecuteWithSignature("close", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#connect()"/>
@@ -173,7 +173,7 @@ namespace Javax.Management.Remote
         /// <exception cref="Java.Io.IOException"/>
         public void Connect()
         {
-            IExecute("connect");
+            IExecuteWithSignature("connect", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#connect(java.util.Map)"/>
@@ -182,7 +182,7 @@ namespace Javax.Management.Remote
         /// <exception cref="Java.Io.IOException"/>
         public void Connect(Java.Util.Map<Java.Lang.String, object> arg0)
         {
-            IExecute("connect", arg0);
+            IExecuteWithSignature("connect", "(Ljava/util/Map;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#removeConnectionNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)"/>
@@ -202,7 +202,7 @@ namespace Javax.Management.Remote
         /// <exception cref="Javax.Management.ListenerNotFoundException"/>
         public void RemoveConnectionNotificationListener(Javax.Management.NotificationListener arg0)
         {
-            IExecute("removeConnectionNotificationListener", arg0);
+            IExecuteWithSignature("removeConnectionNotificationListener", "(Ljavax/management/NotificationListener;)V", arg0);
         }
 
         #endregion

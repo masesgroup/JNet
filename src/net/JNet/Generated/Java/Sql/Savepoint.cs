@@ -76,14 +76,14 @@ namespace Java.Sql
         /// </summary>
         public int SavepointId
         {
-            get { return IExecute<int>("getSavepointId"); }
+            get { return IExecuteWithSignature<int>("getSavepointId", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Savepoint.html#getSavepointName()"/> 
         /// </summary>
         public Java.Lang.String SavepointName
         {
-            get { return IExecute<Java.Lang.String>("getSavepointName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getSavepointName", "()Ljava/lang/String;"); }
         }
 
         #endregion

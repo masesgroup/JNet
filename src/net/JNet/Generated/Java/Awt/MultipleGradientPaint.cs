@@ -50,42 +50,42 @@ namespace Java.Awt
         /// </summary>
         public Java.Awt.Color[] Colors
         {
-            get { return IExecuteArray<Java.Awt.Color>("getColors"); }
+            get { return IExecuteWithSignatureArray<Java.Awt.Color>("getColors", "()[Ljava/awt/Color;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.html#getColorSpace()"/> 
         /// </summary>
         public Java.Awt.MultipleGradientPaint.ColorSpaceType ColorSpace
         {
-            get { return IExecute<Java.Awt.MultipleGradientPaint.ColorSpaceType>("getColorSpace"); }
+            get { return IExecuteWithSignature<Java.Awt.MultipleGradientPaint.ColorSpaceType>("getColorSpace", "()Ljava/awt/MultipleGradientPaint$ColorSpaceType;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.html#getFractions()"/> 
         /// </summary>
         public float[] Fractions
         {
-            get { return IExecuteArray<float>("getFractions"); }
+            get { return IExecuteWithSignatureArray<float>("getFractions", "()[F"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.html#getCycleMethod()"/> 
         /// </summary>
         public Java.Awt.MultipleGradientPaint.CycleMethod GetCycleMethod
         {
-            get { return IExecute<Java.Awt.MultipleGradientPaint.CycleMethod>("getCycleMethod"); }
+            get { return IExecuteWithSignature<Java.Awt.MultipleGradientPaint.CycleMethod>("getCycleMethod", "()Ljava/awt/MultipleGradientPaint$CycleMethod;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.html#getTransform()"/> 
         /// </summary>
         public Java.Awt.Geom.AffineTransform Transform
         {
-            get { return IExecute<Java.Awt.Geom.AffineTransform>("getTransform"); }
+            get { return IExecuteWithSignature<Java.Awt.Geom.AffineTransform>("getTransform", "()Ljava/awt/geom/AffineTransform;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.html#getTransparency()"/> 
         /// </summary>
         public int Transparency
         {
-            get { return IExecute<int>("getTransparency"); }
+            get { return IExecuteWithSignature<int>("getTransparency", "()I"); }
         }
 
         #endregion
@@ -126,7 +126,7 @@ namespace Java.Awt
             /// <returns><see cref="Java.Awt.MultipleGradientPaint.ColorSpaceType"/></returns>
             public static Java.Awt.MultipleGradientPaint.ColorSpaceType ValueOf(Java.Lang.String arg0)
             {
-                return SExecute<Java.Awt.MultipleGradientPaint.ColorSpaceType>(LocalBridgeClazz, "valueOf", arg0);
+                return SExecuteWithSignature<Java.Awt.MultipleGradientPaint.ColorSpaceType>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/awt/MultipleGradientPaint$ColorSpaceType;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.ColorSpaceType.html#values()"/>
@@ -135,7 +135,7 @@ namespace Java.Awt
             /// <returns><see cref="Java.Awt.MultipleGradientPaint.ColorSpaceType"/></returns>
             public static Java.Awt.MultipleGradientPaint.ColorSpaceType[] Values()
             {
-                return SExecuteArray<Java.Awt.MultipleGradientPaint.ColorSpaceType>(LocalBridgeClazz, "values");
+                return SExecuteWithSignatureArray<Java.Awt.MultipleGradientPaint.ColorSpaceType>(LocalBridgeClazz, "values", "()[Ljava/awt/MultipleGradientPaint$ColorSpaceType;");
             }
 
             #endregion
@@ -193,7 +193,7 @@ namespace Java.Awt
             /// <returns><see cref="Java.Awt.MultipleGradientPaint.CycleMethod"/></returns>
             public static Java.Awt.MultipleGradientPaint.CycleMethod ValueOf(Java.Lang.String arg0)
             {
-                return SExecute<Java.Awt.MultipleGradientPaint.CycleMethod>(LocalBridgeClazz, "valueOf", arg0);
+                return SExecuteWithSignature<Java.Awt.MultipleGradientPaint.CycleMethod>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/awt/MultipleGradientPaint$CycleMethod;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.CycleMethod.html#values()"/>
@@ -202,7 +202,7 @@ namespace Java.Awt
             /// <returns><see cref="Java.Awt.MultipleGradientPaint.CycleMethod"/></returns>
             public static Java.Awt.MultipleGradientPaint.CycleMethod[] Values()
             {
-                return SExecuteArray<Java.Awt.MultipleGradientPaint.CycleMethod>(LocalBridgeClazz, "values");
+                return SExecuteWithSignatureArray<Java.Awt.MultipleGradientPaint.CycleMethod>(LocalBridgeClazz, "values", "()[Ljava/awt/MultipleGradientPaint$CycleMethod;");
             }
 
             #endregion

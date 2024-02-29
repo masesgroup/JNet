@@ -58,14 +58,14 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public Java.Awt.Component EditorComponent
         {
-            get { return IExecute<Java.Awt.Component>("getEditorComponent"); }
+            get { return IExecuteWithSignature<Java.Awt.Component>("getEditorComponent", "()Ljava/awt/Component;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxEditor.html#getItem()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxEditor.html#setItem(java.lang.Object)"/>
         /// </summary>
         public object Item
         {
-            get { return IExecute("getItem"); } set { IExecute("setItem", value); }
+            get { return IExecuteWithSignature("getItem", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setItem", "(Ljava/lang/Object;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxEditor.html#addActionListener(java.awt.event.ActionListener)"/>
@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
         public void AddActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
-            IExecute("addActionListener", arg0);
+            IExecuteWithSignature("addActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxEditor.html#focusGained(java.awt.event.FocusEvent)"/>
@@ -81,7 +81,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
         public void FocusGained(Java.Awt.EventNs.FocusEvent arg0)
         {
-            IExecute("focusGained", arg0);
+            IExecuteWithSignature("focusGained", "(Ljava/awt/event/FocusEvent;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxEditor.html#focusLost(java.awt.event.FocusEvent)"/>
@@ -89,7 +89,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
         public void FocusLost(Java.Awt.EventNs.FocusEvent arg0)
         {
-            IExecute("focusLost", arg0);
+            IExecuteWithSignature("focusLost", "(Ljava/awt/event/FocusEvent;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxEditor.html#removeActionListener(java.awt.event.ActionListener)"/>
@@ -97,14 +97,14 @@ namespace Javax.Swing.Plaf.Basic
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
         public void RemoveActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
-            IExecute("removeActionListener", arg0);
+            IExecuteWithSignature("removeActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxEditor.html#selectAll()"/>
         /// </summary>
         public void SelectAll()
         {
-            IExecute("selectAll");
+            IExecuteWithSignature("selectAll", "()V");
         }
 
         #endregion

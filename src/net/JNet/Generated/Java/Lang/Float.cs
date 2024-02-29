@@ -118,7 +118,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsFinite(float arg0)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isFinite", arg0);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isFinite", "(F)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#isInfinite(float)"/>
@@ -127,7 +127,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsInfinite(float arg0)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isInfinite", arg0);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isInfinite", "(F)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#isNaN(float)"/>
@@ -136,7 +136,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsNaN(float arg0)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isNaN", arg0);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isNaN", "(F)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#max(float,float)"/>
@@ -166,7 +166,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static float ParseFloat(Java.Lang.String arg0)
         {
-            return SExecute<float>(LocalBridgeClazz, "parseFloat", arg0);
+            return SExecuteWithSignature<float>(LocalBridgeClazz, "parseFloat", "(Ljava/lang/String;)F", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#sum(float,float)"/>
@@ -195,7 +195,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int FloatToIntBits(float arg0)
         {
-            return SExecute<int>(LocalBridgeClazz, "floatToIntBits", arg0);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "floatToIntBits", "(F)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#hashCode(float)"/>
@@ -204,7 +204,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int HashCode(float arg0)
         {
-            return SExecute<int>(LocalBridgeClazz, "hashCode", arg0);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "(F)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#valueOf(float)"/>
@@ -213,7 +213,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.Float"/></returns>
         public static Java.Lang.Float ValueOf(float arg0)
         {
-            return SExecute<Java.Lang.Float>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecuteWithSignature<Java.Lang.Float>(LocalBridgeClazz, "valueOf", "(F)Ljava/lang/Float;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#valueOf(java.lang.String)"/>
@@ -223,7 +223,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static Java.Lang.Float ValueOf(Java.Lang.String arg0)
         {
-            return SExecute<Java.Lang.Float>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecuteWithSignature<Java.Lang.Float>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/lang/Float;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#toHexString(float)"/>
@@ -232,7 +232,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToHexString(float arg0)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toHexString", arg0);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toHexString", "(F)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#toString(float)"/>
@@ -241,7 +241,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToString(float arg0)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", arg0);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(F)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#intBitsToFloat(int)"/>
@@ -250,7 +250,7 @@ namespace Java.Lang
         /// <returns><see cref="float"/></returns>
         public static float IntBitsToFloat(int arg0)
         {
-            return SExecute<float>(LocalBridgeClazz, "intBitsToFloat", arg0);
+            return SExecuteWithSignature<float>(LocalBridgeClazz, "intBitsToFloat", "(I)F", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#floatToRawIntBits(float)"/>
@@ -259,7 +259,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int FloatToRawIntBits(float arg0)
         {
-            return SExecute<int>(LocalBridgeClazz, "floatToRawIntBits", arg0);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "floatToRawIntBits", "(F)I", arg0);
         }
 
         #endregion
@@ -272,7 +272,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsInfinite()
         {
-            return IExecute<bool>("isInfinite");
+            return IExecuteWithSignature<bool>("isInfinite", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#isNaN()"/>
@@ -281,7 +281,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsNaN()
         {
-            return IExecute<bool>("isNaN");
+            return IExecuteWithSignature<bool>("isNaN", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#compareTo(java.lang.Float)"/>
@@ -290,7 +290,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Java.Lang.Float arg0)
         {
-            return IExecute<int>("compareTo", arg0);
+            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Float;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#compareTo(java.lang.Object)"/>
@@ -299,7 +299,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecute<int>("compareTo", arg0);
+            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
 
         #endregion

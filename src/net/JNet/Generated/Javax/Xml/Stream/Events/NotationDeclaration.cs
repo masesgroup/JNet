@@ -80,21 +80,21 @@ namespace Javax.Xml.Stream.Events
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/NotationDeclaration.html#getPublicId()"/> 
         /// </summary>
         public Java.Lang.String PublicId
         {
-            get { return IExecute<Java.Lang.String>("getPublicId"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getPublicId", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/NotationDeclaration.html#getSystemId()"/> 
         /// </summary>
         public Java.Lang.String SystemId
         {
-            get { return IExecute<Java.Lang.String>("getSystemId"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); }
         }
 
         #endregion

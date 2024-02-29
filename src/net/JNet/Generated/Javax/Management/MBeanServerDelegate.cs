@@ -64,56 +64,56 @@ namespace Javax.Management
         /// </summary>
         public Java.Lang.String ImplementationName
         {
-            get { return IExecute<Java.Lang.String>("getImplementationName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getImplementationName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#getImplementationVendor()"/> 
         /// </summary>
         public Java.Lang.String ImplementationVendor
         {
-            get { return IExecute<Java.Lang.String>("getImplementationVendor"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getImplementationVendor", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#getImplementationVersion()"/> 
         /// </summary>
         public Java.Lang.String ImplementationVersion
         {
-            get { return IExecute<Java.Lang.String>("getImplementationVersion"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getImplementationVersion", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#getMBeanServerId()"/> 
         /// </summary>
         public Java.Lang.String MBeanServerId
         {
-            get { return IExecute<Java.Lang.String>("getMBeanServerId"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getMBeanServerId", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#getNotificationInfo()"/> 
         /// </summary>
         public Javax.Management.MBeanNotificationInfo[] NotificationInfo
         {
-            get { return IExecuteArray<Javax.Management.MBeanNotificationInfo>("getNotificationInfo"); }
+            get { return IExecuteWithSignatureArray<Javax.Management.MBeanNotificationInfo>("getNotificationInfo", "()[Ljavax/management/MBeanNotificationInfo;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#getSpecificationName()"/> 
         /// </summary>
         public Java.Lang.String SpecificationName
         {
-            get { return IExecute<Java.Lang.String>("getSpecificationName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getSpecificationName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#getSpecificationVendor()"/> 
         /// </summary>
         public Java.Lang.String SpecificationVendor
         {
-            get { return IExecute<Java.Lang.String>("getSpecificationVendor"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getSpecificationVendor", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#getSpecificationVersion()"/> 
         /// </summary>
         public Java.Lang.String SpecificationVersion
         {
-            get { return IExecute<Java.Lang.String>("getSpecificationVersion"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getSpecificationVersion", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#addNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)"/>
@@ -144,7 +144,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.ListenerNotFoundException"/>
         public void RemoveNotificationListener(Javax.Management.NotificationListener arg0)
         {
-            IExecute("removeNotificationListener", arg0);
+            IExecuteWithSignature("removeNotificationListener", "(Ljavax/management/NotificationListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#sendNotification(javax.management.Notification)"/>
@@ -152,7 +152,7 @@ namespace Javax.Management
         /// <param name="arg0"><see cref="Javax.Management.Notification"/></param>
         public void SendNotification(Javax.Management.Notification arg0)
         {
-            IExecute("sendNotification", arg0);
+            IExecuteWithSignature("sendNotification", "(Ljavax/management/Notification;)V", arg0);
         }
 
         #endregion

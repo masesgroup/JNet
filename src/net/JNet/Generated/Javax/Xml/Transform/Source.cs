@@ -78,7 +78,7 @@ namespace Javax.Xml.Transform
         /// </summary>
         public Java.Lang.String SystemId
         {
-            get { return IExecute<Java.Lang.String>("getSystemId"); } set { IExecute("setSystemId", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Source.html#isEmpty()"/>
@@ -87,7 +87,7 @@ namespace Javax.Xml.Transform
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
-            return IExecute<bool>("isEmpty");
+            return IExecuteWithSignature<bool>("isEmpty", "()Z");
         }
 
         #endregion

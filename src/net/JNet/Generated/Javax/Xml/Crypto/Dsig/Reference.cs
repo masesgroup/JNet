@@ -111,49 +111,49 @@ namespace Javax.Xml.Crypto.Dsig
         /// </summary>
         public byte[] CalculatedDigestValue
         {
-            get { return IExecuteArray<byte>("getCalculatedDigestValue"); }
+            get { return IExecuteWithSignatureArray<byte>("getCalculatedDigestValue", "()[B"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html#getDereferencedData()"/> 
         /// </summary>
         public Javax.Xml.Crypto.Data DereferencedData
         {
-            get { return IExecute<Javax.Xml.Crypto.Data>("getDereferencedData"); }
+            get { return IExecuteWithSignature<Javax.Xml.Crypto.Data>("getDereferencedData", "()Ljavax/xml/crypto/Data;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html#getDigestInputStream()"/> 
         /// </summary>
         public Java.Io.InputStream DigestInputStream
         {
-            get { return IExecute<Java.Io.InputStream>("getDigestInputStream"); }
+            get { return IExecuteWithSignature<Java.Io.InputStream>("getDigestInputStream", "()Ljava/io/InputStream;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html#getDigestMethod()"/> 
         /// </summary>
         public Javax.Xml.Crypto.Dsig.DigestMethod DigestMethod
         {
-            get { return IExecute<Javax.Xml.Crypto.Dsig.DigestMethod>("getDigestMethod"); }
+            get { return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.DigestMethod>("getDigestMethod", "()Ljavax/xml/crypto/dsig/DigestMethod;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html#getDigestValue()"/> 
         /// </summary>
         public byte[] DigestValue
         {
-            get { return IExecuteArray<byte>("getDigestValue"); }
+            get { return IExecuteWithSignatureArray<byte>("getDigestValue", "()[B"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html#getId()"/> 
         /// </summary>
         public Java.Lang.String Id
         {
-            get { return IExecute<Java.Lang.String>("getId"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html#getTransforms()"/> 
         /// </summary>
         public Java.Util.List<Javax.Xml.Crypto.Dsig.Transform> Transforms
         {
-            get { return IExecute<Java.Util.List<Javax.Xml.Crypto.Dsig.Transform>>("getTransforms"); }
+            get { return IExecuteWithSignature<Java.Util.List<Javax.Xml.Crypto.Dsig.Transform>>("getTransforms", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html#validate(javax.xml.crypto.dsig.XMLValidateContext)"/>
@@ -163,7 +163,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <exception cref="Javax.Xml.Crypto.Dsig.XMLSignatureException"/>
         public bool Validate(Javax.Xml.Crypto.Dsig.XMLValidateContext arg0)
         {
-            return IExecute<bool>("validate", arg0);
+            return IExecuteWithSignature<bool>("validate", "(Ljavax/xml/crypto/dsig/XMLValidateContext;)Z", arg0);
         }
 
         #endregion

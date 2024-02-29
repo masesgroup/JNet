@@ -75,21 +75,21 @@ namespace Javax.Security.Auth.Callback
         /// </summary>
         public Java.Lang.String DefaultName
         {
-            get { return IExecute<Java.Lang.String>("getDefaultName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getDefaultName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/NameCallback.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/NameCallback.html#setName(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); } set { IExecute("setName", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setName", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/NameCallback.html#getPrompt()"/> 
         /// </summary>
         public Java.Lang.String Prompt
         {
-            get { return IExecute<Java.Lang.String>("getPrompt"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getPrompt", "()Ljava/lang/String;"); }
         }
 
         #endregion

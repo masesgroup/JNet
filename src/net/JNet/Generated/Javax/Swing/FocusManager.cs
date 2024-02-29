@@ -52,7 +52,7 @@ namespace Javax.Swing
         /// </summary>
         public static Javax.Swing.FocusManager CurrentManager
         {
-            get { return SExecute<Javax.Swing.FocusManager>(LocalBridgeClazz, "getCurrentManager"); } set { SExecute(LocalBridgeClazz, "setCurrentManager", value); }
+            get { return SExecuteWithSignature<Javax.Swing.FocusManager>(LocalBridgeClazz, "getCurrentManager", "()Ljavax/swing/FocusManager;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setCurrentManager", "(Ljavax/swing/FocusManager;)V", value); }
         }
 
         #endregion

@@ -58,140 +58,140 @@ namespace Javax.Xml.Stream.Util
         /// </summary>
         public int AttributeCount
         {
-            get { return IExecute<int>("getAttributeCount"); }
+            get { return IExecuteWithSignature<int>("getAttributeCount", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getCharacterEncodingScheme()"/> 
         /// </summary>
         public Java.Lang.String CharacterEncodingScheme
         {
-            get { return IExecute<Java.Lang.String>("getCharacterEncodingScheme"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getCharacterEncodingScheme", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getElementText()"/> 
         /// </summary>
         public Java.Lang.String ElementText
         {
-            get { return IExecute<Java.Lang.String>("getElementText"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getElementText", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getEncoding()"/> 
         /// </summary>
         public Java.Lang.String Encoding
         {
-            get { return IExecute<Java.Lang.String>("getEncoding"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getEncoding", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getEventType()"/> 
         /// </summary>
         public int EventType
         {
-            get { return IExecute<int>("getEventType"); }
+            get { return IExecuteWithSignature<int>("getEventType", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getLocalName()"/> 
         /// </summary>
         public Java.Lang.String LocalName
         {
-            get { return IExecute<Java.Lang.String>("getLocalName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getLocalName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getLocation()"/> 
         /// </summary>
         public Javax.Xml.Stream.Location Location
         {
-            get { return IExecute<Javax.Xml.Stream.Location>("getLocation"); }
+            get { return IExecuteWithSignature<Javax.Xml.Stream.Location>("getLocation", "()Ljavax/xml/stream/Location;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getName()"/> 
         /// </summary>
         public Javax.Xml.Namespace.QName Name
         {
-            get { return IExecute<Javax.Xml.Namespace.QName>("getName"); }
+            get { return IExecuteWithSignature<Javax.Xml.Namespace.QName>("getName", "()Ljavax/xml/namespace/QName;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getNamespaceContext()"/> 
         /// </summary>
         public Javax.Xml.Namespace.NamespaceContext NamespaceContext
         {
-            get { return IExecute<Javax.Xml.Namespace.NamespaceContext>("getNamespaceContext"); }
+            get { return IExecuteWithSignature<Javax.Xml.Namespace.NamespaceContext>("getNamespaceContext", "()Ljavax/xml/namespace/NamespaceContext;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getNamespaceCount()"/> 
         /// </summary>
         public int NamespaceCount
         {
-            get { return IExecute<int>("getNamespaceCount"); }
+            get { return IExecuteWithSignature<int>("getNamespaceCount", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getNamespaceURI()"/> 
         /// </summary>
         public Java.Lang.String NamespaceURI
         {
-            get { return IExecute<Java.Lang.String>("getNamespaceURI"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getNamespaceURI", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getParent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#setParent(javax.xml.stream.XMLStreamReader)"/>
         /// </summary>
         public Javax.Xml.Stream.XMLStreamReader Parent
         {
-            get { return IExecute<Javax.Xml.Stream.XMLStreamReader>("getParent"); } set { IExecute("setParent", value); }
+            get { return IExecuteWithSignature<Javax.Xml.Stream.XMLStreamReader>("getParent", "()Ljavax/xml/stream/XMLStreamReader;"); } set { IExecuteWithSignature("setParent", "(Ljavax/xml/stream/XMLStreamReader;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getPIData()"/> 
         /// </summary>
         public Java.Lang.String PIData
         {
-            get { return IExecute<Java.Lang.String>("getPIData"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getPIData", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getPITarget()"/> 
         /// </summary>
         public Java.Lang.String PITarget
         {
-            get { return IExecute<Java.Lang.String>("getPITarget"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getPITarget", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getPrefix()"/> 
         /// </summary>
         public Java.Lang.String Prefix
         {
-            get { return IExecute<Java.Lang.String>("getPrefix"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getPrefix", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getText()"/> 
         /// </summary>
         public Java.Lang.String Text
         {
-            get { return IExecute<Java.Lang.String>("getText"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getText", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getTextCharacters()"/> 
         /// </summary>
         public char[] TextCharacters
         {
-            get { return IExecuteArray<char>("getTextCharacters"); }
+            get { return IExecuteWithSignatureArray<char>("getTextCharacters", "()[C"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getTextLength()"/> 
         /// </summary>
         public int TextLength
         {
-            get { return IExecute<int>("getTextLength"); }
+            get { return IExecuteWithSignature<int>("getTextLength", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getTextStart()"/> 
         /// </summary>
         public int TextStart
         {
-            get { return IExecute<int>("getTextStart"); }
+            get { return IExecuteWithSignature<int>("getTextStart", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getVersion()"/> 
         /// </summary>
         public Java.Lang.String Version
         {
-            get { return IExecute<Java.Lang.String>("getVersion"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getVersion", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#hasName()"/>
@@ -200,7 +200,7 @@ namespace Javax.Xml.Stream.Util
         /// <returns><see cref="bool"/></returns>
         public bool HasName()
         {
-            return IExecute<bool>("hasName");
+            return IExecuteWithSignature<bool>("hasName", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#hasNext()"/>
@@ -210,7 +210,7 @@ namespace Javax.Xml.Stream.Util
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public bool HasNext()
         {
-            return IExecute<bool>("hasNext");
+            return IExecuteWithSignature<bool>("hasNext", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#hasText()"/>
@@ -219,7 +219,7 @@ namespace Javax.Xml.Stream.Util
         /// <returns><see cref="bool"/></returns>
         public bool HasText()
         {
-            return IExecute<bool>("hasText");
+            return IExecuteWithSignature<bool>("hasText", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#isAttributeSpecified(int)"/>
@@ -228,7 +228,7 @@ namespace Javax.Xml.Stream.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsAttributeSpecified(int arg0)
         {
-            return IExecute<bool>("isAttributeSpecified", arg0);
+            return IExecuteWithSignature<bool>("isAttributeSpecified", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#isCharacters()"/>
@@ -237,7 +237,7 @@ namespace Javax.Xml.Stream.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsCharacters()
         {
-            return IExecute<bool>("isCharacters");
+            return IExecuteWithSignature<bool>("isCharacters", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#isEndElement()"/>
@@ -246,7 +246,7 @@ namespace Javax.Xml.Stream.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsEndElement()
         {
-            return IExecute<bool>("isEndElement");
+            return IExecuteWithSignature<bool>("isEndElement", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#isStandalone()"/>
@@ -255,7 +255,7 @@ namespace Javax.Xml.Stream.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsStandalone()
         {
-            return IExecute<bool>("isStandalone");
+            return IExecuteWithSignature<bool>("isStandalone", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#isStartElement()"/>
@@ -264,7 +264,7 @@ namespace Javax.Xml.Stream.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsStartElement()
         {
-            return IExecute<bool>("isStartElement");
+            return IExecuteWithSignature<bool>("isStartElement", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#isWhiteSpace()"/>
@@ -273,7 +273,7 @@ namespace Javax.Xml.Stream.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsWhiteSpace()
         {
-            return IExecute<bool>("isWhiteSpace");
+            return IExecuteWithSignature<bool>("isWhiteSpace", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#standaloneSet()"/>
@@ -282,7 +282,7 @@ namespace Javax.Xml.Stream.Util
         /// <returns><see cref="bool"/></returns>
         public bool StandaloneSet()
         {
-            return IExecute<bool>("standaloneSet");
+            return IExecuteWithSignature<bool>("standaloneSet", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getTextCharacters(int,char[],int,int)"/>
@@ -305,7 +305,7 @@ namespace Javax.Xml.Stream.Util
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public int Next()
         {
-            return IExecute<int>("next");
+            return IExecuteWithSignature<int>("next", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#nextTag()"/>
@@ -315,7 +315,7 @@ namespace Javax.Xml.Stream.Util
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public int NextTag()
         {
-            return IExecute<int>("nextTag");
+            return IExecuteWithSignature<int>("nextTag", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getProperty(java.lang.String)"/>
@@ -324,7 +324,7 @@ namespace Javax.Xml.Stream.Util
         /// <returns><see cref="object"/></returns>
         public object GetProperty(Java.Lang.String arg0)
         {
-            return IExecute("getProperty", arg0);
+            return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getAttributeLocalName(int)"/>
@@ -333,7 +333,7 @@ namespace Javax.Xml.Stream.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetAttributeLocalName(int arg0)
         {
-            return IExecute<Java.Lang.String>("getAttributeLocalName", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getAttributeLocalName", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getAttributeNamespace(int)"/>
@@ -342,7 +342,7 @@ namespace Javax.Xml.Stream.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetAttributeNamespace(int arg0)
         {
-            return IExecute<Java.Lang.String>("getAttributeNamespace", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getAttributeNamespace", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getAttributePrefix(int)"/>
@@ -351,7 +351,7 @@ namespace Javax.Xml.Stream.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetAttributePrefix(int arg0)
         {
-            return IExecute<Java.Lang.String>("getAttributePrefix", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getAttributePrefix", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getAttributeType(int)"/>
@@ -360,7 +360,7 @@ namespace Javax.Xml.Stream.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetAttributeType(int arg0)
         {
-            return IExecute<Java.Lang.String>("getAttributeType", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getAttributeType", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getAttributeValue(int)"/>
@@ -369,7 +369,7 @@ namespace Javax.Xml.Stream.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetAttributeValue(int arg0)
         {
-            return IExecute<Java.Lang.String>("getAttributeValue", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getAttributeValue", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getAttributeValue(java.lang.String,java.lang.String)"/>
@@ -388,7 +388,7 @@ namespace Javax.Xml.Stream.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetNamespacePrefix(int arg0)
         {
-            return IExecute<Java.Lang.String>("getNamespacePrefix", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getNamespacePrefix", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getNamespaceURI(int)"/>
@@ -397,7 +397,7 @@ namespace Javax.Xml.Stream.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetNamespaceURI(int arg0)
         {
-            return IExecute<Java.Lang.String>("getNamespaceURI", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getNamespaceURI", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getNamespaceURI(java.lang.String)"/>
@@ -406,7 +406,7 @@ namespace Javax.Xml.Stream.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetNamespaceURI(Java.Lang.String arg0)
         {
-            return IExecute<Java.Lang.String>("getNamespaceURI", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getNamespaceURI", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getAttributeName(int)"/>
@@ -415,7 +415,7 @@ namespace Javax.Xml.Stream.Util
         /// <returns><see cref="Javax.Xml.Namespace.QName"/></returns>
         public Javax.Xml.Namespace.QName GetAttributeName(int arg0)
         {
-            return IExecute<Javax.Xml.Namespace.QName>("getAttributeName", arg0);
+            return IExecuteWithSignature<Javax.Xml.Namespace.QName>("getAttributeName", "(I)Ljavax/xml/namespace/QName;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#close()"/>
@@ -424,7 +424,7 @@ namespace Javax.Xml.Stream.Util
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void Close()
         {
-            IExecute("close");
+            IExecuteWithSignature("close", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#require(int,java.lang.String,java.lang.String)"/>

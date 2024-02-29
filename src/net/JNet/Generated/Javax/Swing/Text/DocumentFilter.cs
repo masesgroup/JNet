@@ -110,7 +110,7 @@ namespace Javax.Swing.Text
             /// </summary>
             public Javax.Swing.Text.Document Document
             {
-                get { return IExecute<Javax.Swing.Text.Document>("getDocument"); }
+                get { return IExecuteWithSignature<Javax.Swing.Text.Document>("getDocument", "()Ljavax/swing/text/Document;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DocumentFilter.FilterBypass.html#insertString(int,java.lang.String,javax.swing.text.AttributeSet)"/>

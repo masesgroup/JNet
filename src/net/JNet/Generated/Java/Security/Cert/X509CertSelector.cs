@@ -50,154 +50,154 @@ namespace Java.Security.Cert
         /// </summary>
         public byte[] AuthorityKeyIdentifier
         {
-            get { return IExecuteArray<byte>("getAuthorityKeyIdentifier"); } set { IExecute("setAuthorityKeyIdentifier", value); }
+            get { return IExecuteWithSignatureArray<byte>("getAuthorityKeyIdentifier", "()[B"); } set { IExecuteWithSignature("setAuthorityKeyIdentifier", "([B)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getBasicConstraints()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setBasicConstraints(int)"/>
         /// </summary>
         public int BasicConstraints
         {
-            get { return IExecute<int>("getBasicConstraints"); } set { IExecute("setBasicConstraints", value); }
+            get { return IExecuteWithSignature<int>("getBasicConstraints", "()I"); } set { IExecuteWithSignature("setBasicConstraints", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getCertificate()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setCertificate(java.security.cert.X509Certificate)"/>
         /// </summary>
         public Java.Security.Cert.X509Certificate Certificate
         {
-            get { return IExecute<Java.Security.Cert.X509Certificate>("getCertificate"); } set { IExecute("setCertificate", value); }
+            get { return IExecuteWithSignature<Java.Security.Cert.X509Certificate>("getCertificate", "()Ljava/security/cert/X509Certificate;"); } set { IExecuteWithSignature("setCertificate", "(Ljava/security/cert/X509Certificate;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getCertificateValid()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setCertificateValid(java.util.Date)"/>
         /// </summary>
         public Java.Util.Date CertificateValid
         {
-            get { return IExecute<Java.Util.Date>("getCertificateValid"); } set { IExecute("setCertificateValid", value); }
+            get { return IExecuteWithSignature<Java.Util.Date>("getCertificateValid", "()Ljava/util/Date;"); } set { IExecuteWithSignature("setCertificateValid", "(Ljava/util/Date;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getExtendedKeyUsage()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setExtendedKeyUsage(java.util.Set)"/>
         /// </summary>
         public Java.Util.Set<Java.Lang.String> ExtendedKeyUsage
         {
-            get { return IExecute<Java.Util.Set<Java.Lang.String>>("getExtendedKeyUsage"); } set { IExecute("setExtendedKeyUsage", value); }
+            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getExtendedKeyUsage", "()Ljava/util/Set;"); } set { IExecuteWithSignature("setExtendedKeyUsage", "(Ljava/util/Set;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getIssuer()"/> 
         /// </summary>
         public Javax.Security.Auth.X500.X500Principal Issuer
         {
-            get { return IExecute<Javax.Security.Auth.X500.X500Principal>("getIssuer"); }
+            get { return IExecuteWithSignature<Javax.Security.Auth.X500.X500Principal>("getIssuer", "()Ljavax/security/auth/x500/X500Principal;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getIssuerAsBytes()"/> 
         /// </summary>
         public byte[] IssuerAsBytes
         {
-            get { return IExecuteArray<byte>("getIssuerAsBytes"); }
+            get { return IExecuteWithSignatureArray<byte>("getIssuerAsBytes", "()[B"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getIssuerAsString()"/> 
         /// </summary>
         public Java.Lang.String IssuerAsString
         {
-            get { return IExecute<Java.Lang.String>("getIssuerAsString"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getIssuerAsString", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getKeyUsage()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setKeyUsage(boolean[])"/>
         /// </summary>
         public bool[] KeyUsage
         {
-            get { return IExecuteArray<bool>("getKeyUsage"); } set { IExecute("setKeyUsage", value); }
+            get { return IExecuteWithSignatureArray<bool>("getKeyUsage", "()[Z"); } set { IExecuteWithSignature("setKeyUsage", "([Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getMatchAllSubjectAltNames()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setMatchAllSubjectAltNames(boolean)"/>
         /// </summary>
         public bool MatchAllSubjectAltNames
         {
-            get { return IExecute<bool>("getMatchAllSubjectAltNames"); } set { IExecute("setMatchAllSubjectAltNames", value); }
+            get { return IExecuteWithSignature<bool>("getMatchAllSubjectAltNames", "()Z"); } set { IExecuteWithSignature("setMatchAllSubjectAltNames", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getNameConstraints()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setNameConstraints(byte[])"/>
         /// </summary>
         public byte[] NameConstraints
         {
-            get { return IExecuteArray<byte>("getNameConstraints"); } set { IExecute("setNameConstraints", value); }
+            get { return IExecuteWithSignatureArray<byte>("getNameConstraints", "()[B"); } set { IExecuteWithSignature("setNameConstraints", "([B)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getPathToNames()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setPathToNames(java.util.Collection)"/>
         /// </summary>
         public Java.Util.Collection<Java.Util.List<object>> PathToNames
         {
-            get { return IExecute<Java.Util.Collection<Java.Util.List<object>>>("getPathToNames"); } set { IExecute("setPathToNames", value); }
+            get { return IExecuteWithSignature<Java.Util.Collection<Java.Util.List<object>>>("getPathToNames", "()Ljava/util/Collection;"); } set { IExecuteWithSignature("setPathToNames", "(Ljava/util/Collection;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getPolicy()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setPolicy(java.util.Set)"/>
         /// </summary>
         public Java.Util.Set<Java.Lang.String> Policy
         {
-            get { return IExecute<Java.Util.Set<Java.Lang.String>>("getPolicy"); } set { IExecute("setPolicy", value); }
+            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getPolicy", "()Ljava/util/Set;"); } set { IExecuteWithSignature("setPolicy", "(Ljava/util/Set;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getPrivateKeyValid()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setPrivateKeyValid(java.util.Date)"/>
         /// </summary>
         public Java.Util.Date PrivateKeyValid
         {
-            get { return IExecute<Java.Util.Date>("getPrivateKeyValid"); } set { IExecute("setPrivateKeyValid", value); }
+            get { return IExecuteWithSignature<Java.Util.Date>("getPrivateKeyValid", "()Ljava/util/Date;"); } set { IExecuteWithSignature("setPrivateKeyValid", "(Ljava/util/Date;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getSerialNumber()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSerialNumber(java.math.BigInteger)"/>
         /// </summary>
         public Java.Math.BigInteger SerialNumber
         {
-            get { return IExecute<Java.Math.BigInteger>("getSerialNumber"); } set { IExecute("setSerialNumber", value); }
+            get { return IExecuteWithSignature<Java.Math.BigInteger>("getSerialNumber", "()Ljava/math/BigInteger;"); } set { IExecuteWithSignature("setSerialNumber", "(Ljava/math/BigInteger;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getSubject()"/> 
         /// </summary>
         public Javax.Security.Auth.X500.X500Principal Subject
         {
-            get { return IExecute<Javax.Security.Auth.X500.X500Principal>("getSubject"); }
+            get { return IExecuteWithSignature<Javax.Security.Auth.X500.X500Principal>("getSubject", "()Ljavax/security/auth/x500/X500Principal;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getSubjectAlternativeNames()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubjectAlternativeNames(java.util.Collection)"/>
         /// </summary>
         public Java.Util.Collection<Java.Util.List<object>> SubjectAlternativeNames
         {
-            get { return IExecute<Java.Util.Collection<Java.Util.List<object>>>("getSubjectAlternativeNames"); } set { IExecute("setSubjectAlternativeNames", value); }
+            get { return IExecuteWithSignature<Java.Util.Collection<Java.Util.List<object>>>("getSubjectAlternativeNames", "()Ljava/util/Collection;"); } set { IExecuteWithSignature("setSubjectAlternativeNames", "(Ljava/util/Collection;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getSubjectAsBytes()"/> 
         /// </summary>
         public byte[] SubjectAsBytes
         {
-            get { return IExecuteArray<byte>("getSubjectAsBytes"); }
+            get { return IExecuteWithSignatureArray<byte>("getSubjectAsBytes", "()[B"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getSubjectAsString()"/> 
         /// </summary>
         public Java.Lang.String SubjectAsString
         {
-            get { return IExecute<Java.Lang.String>("getSubjectAsString"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getSubjectAsString", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getSubjectKeyIdentifier()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubjectKeyIdentifier(byte[])"/>
         /// </summary>
         public byte[] SubjectKeyIdentifier
         {
-            get { return IExecuteArray<byte>("getSubjectKeyIdentifier"); } set { IExecute("setSubjectKeyIdentifier", value); }
+            get { return IExecuteWithSignatureArray<byte>("getSubjectKeyIdentifier", "()[B"); } set { IExecuteWithSignature("setSubjectKeyIdentifier", "([B)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getSubjectPublicKey()"/> 
         /// </summary>
         public Java.Security.PublicKey SubjectPublicKey
         {
-            get { return IExecute<Java.Security.PublicKey>("getSubjectPublicKey"); }
+            get { return IExecuteWithSignature<Java.Security.PublicKey>("getSubjectPublicKey", "()Ljava/security/PublicKey;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getSubjectPublicKeyAlgID()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubjectPublicKeyAlgID(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String SubjectPublicKeyAlgID
         {
-            get { return IExecute<Java.Lang.String>("getSubjectPublicKeyAlgID"); } set { IExecute("setSubjectPublicKeyAlgID", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getSubjectPublicKeyAlgID", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSubjectPublicKeyAlgID", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#match(java.security.cert.Certificate)"/>
@@ -206,7 +206,7 @@ namespace Java.Security.Cert
         /// <returns><see cref="bool"/></returns>
         public bool Match(Java.Security.Cert.Certificate arg0)
         {
-            return IExecute<bool>("match", arg0);
+            return IExecuteWithSignature<bool>("match", "(Ljava/security/cert/Certificate;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#addPathToName(int,byte[])"/>
@@ -255,7 +255,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Io.IOException"/>
         public void SetIssuer(byte[] arg0)
         {
-            IExecute("setIssuer", new object[] { arg0 });
+            IExecuteWithSignature("setIssuer", "([B)V", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setIssuer(java.lang.String)"/>
@@ -264,7 +264,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Io.IOException"/>
         public void SetIssuer(Java.Lang.String arg0)
         {
-            IExecute("setIssuer", arg0);
+            IExecuteWithSignature("setIssuer", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setIssuer(javax.security.auth.x500.X500Principal)"/>
@@ -272,7 +272,7 @@ namespace Java.Security.Cert
         /// <param name="arg0"><see cref="Javax.Security.Auth.X500.X500Principal"/></param>
         public void SetIssuer(Javax.Security.Auth.X500.X500Principal arg0)
         {
-            IExecute("setIssuer", arg0);
+            IExecuteWithSignature("setIssuer", "(Ljavax/security/auth/x500/X500Principal;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubject(byte[])"/>
@@ -281,7 +281,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Io.IOException"/>
         public void SetSubject(byte[] arg0)
         {
-            IExecute("setSubject", new object[] { arg0 });
+            IExecuteWithSignature("setSubject", "([B)V", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubject(java.lang.String)"/>
@@ -290,7 +290,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Io.IOException"/>
         public void SetSubject(Java.Lang.String arg0)
         {
-            IExecute("setSubject", arg0);
+            IExecuteWithSignature("setSubject", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubject(javax.security.auth.x500.X500Principal)"/>
@@ -298,7 +298,7 @@ namespace Java.Security.Cert
         /// <param name="arg0"><see cref="Javax.Security.Auth.X500.X500Principal"/></param>
         public void SetSubject(Javax.Security.Auth.X500.X500Principal arg0)
         {
-            IExecute("setSubject", arg0);
+            IExecuteWithSignature("setSubject", "(Ljavax/security/auth/x500/X500Principal;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubjectPublicKey(byte[])"/>
@@ -307,7 +307,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Io.IOException"/>
         public void SetSubjectPublicKey(byte[] arg0)
         {
-            IExecute("setSubjectPublicKey", new object[] { arg0 });
+            IExecuteWithSignature("setSubjectPublicKey", "([B)V", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubjectPublicKey(java.security.PublicKey)"/>
@@ -315,7 +315,7 @@ namespace Java.Security.Cert
         /// <param name="arg0"><see cref="Java.Security.PublicKey"/></param>
         public void SetSubjectPublicKey(Java.Security.PublicKey arg0)
         {
-            IExecute("setSubjectPublicKey", arg0);
+            IExecuteWithSignature("setSubjectPublicKey", "(Ljava/security/PublicKey;)V", arg0);
         }
 
         #endregion

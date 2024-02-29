@@ -50,14 +50,14 @@ namespace Javax.Swing.Event
         /// </summary>
         public int ListenerCount
         {
-            get { return IExecute<int>("getListenerCount"); }
+            get { return IExecuteWithSignature<int>("getListenerCount", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/EventListenerList.html#getListenerList()"/> 
         /// </summary>
         public object[] ListenerList
         {
-            get { return IExecuteArray<object>("getListenerList"); }
+            get { return IExecuteWithSignatureArray<object>("getListenerList", "()[Ljava/lang/Object;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/EventListenerList.html#getListenerCount(java.lang.Class)"/>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Event
         /// <returns><see cref="int"/></returns>
         public int GetListenerCount(Java.Lang.Class arg0)
         {
-            return IExecute<int>("getListenerCount", arg0);
+            return IExecuteWithSignature<int>("getListenerCount", "(Ljava/lang/Class;)I", arg0);
         }
 
         #endregion

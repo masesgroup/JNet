@@ -67,14 +67,14 @@ namespace Java.Beans
         /// </summary>
         public Java.Lang.Class BeanClass
         {
-            get { return IExecute<Java.Lang.Class>("getBeanClass"); }
+            get { return IExecuteWithSignature<Java.Lang.Class>("getBeanClass", "()Ljava/lang/Class;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanDescriptor.html#getCustomizerClass()"/> 
         /// </summary>
         public Java.Lang.Class CustomizerClass
         {
-            get { return IExecute<Java.Lang.Class>("getCustomizerClass"); }
+            get { return IExecuteWithSignature<Java.Lang.Class>("getCustomizerClass", "()Ljava/lang/Class;"); }
         }
 
         #endregion

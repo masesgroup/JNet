@@ -67,7 +67,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Java.Net.HttpCookie> Parse(Java.Lang.String arg0)
         {
-            return SExecute<Java.Util.List<Java.Net.HttpCookie>>(LocalBridgeClazz, "parse", arg0);
+            return SExecuteWithSignature<Java.Util.List<Java.Net.HttpCookie>>(LocalBridgeClazz, "parse", "(Ljava/lang/String;)Ljava/util/List;", arg0);
         }
 
         #endregion
@@ -78,77 +78,77 @@ namespace Java.Net
         /// </summary>
         public Java.Lang.String Comment
         {
-            get { return IExecute<Java.Lang.String>("getComment"); } set { IExecute("setComment", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getComment", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setComment", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getCommentURL()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setCommentURL(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String CommentURL
         {
-            get { return IExecute<Java.Lang.String>("getCommentURL"); } set { IExecute("setCommentURL", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getCommentURL", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setCommentURL", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getDiscard()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setDiscard(boolean)"/>
         /// </summary>
         public bool Discard
         {
-            get { return IExecute<bool>("getDiscard"); } set { IExecute("setDiscard", value); }
+            get { return IExecuteWithSignature<bool>("getDiscard", "()Z"); } set { IExecuteWithSignature("setDiscard", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getDomain()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setDomain(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Domain
         {
-            get { return IExecute<Java.Lang.String>("getDomain"); } set { IExecute("setDomain", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getDomain", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setDomain", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getMaxAge()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setMaxAge(long)"/>
         /// </summary>
         public long MaxAge
         {
-            get { return IExecute<long>("getMaxAge"); } set { IExecute("setMaxAge", value); }
+            get { return IExecuteWithSignature<long>("getMaxAge", "()J"); } set { IExecuteWithSignature("setMaxAge", "(J)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getPath()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setPath(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Path
         {
-            get { return IExecute<Java.Lang.String>("getPath"); } set { IExecute("setPath", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getPath", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setPath", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getPortlist()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setPortlist(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Portlist
         {
-            get { return IExecute<Java.Lang.String>("getPortlist"); } set { IExecute("setPortlist", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getPortlist", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setPortlist", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getSecure()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setSecure(boolean)"/>
         /// </summary>
         public bool Secure
         {
-            get { return IExecute<bool>("getSecure"); } set { IExecute("setSecure", value); }
+            get { return IExecuteWithSignature<bool>("getSecure", "()Z"); } set { IExecuteWithSignature("setSecure", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setValue(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Value
         {
-            get { return IExecute<Java.Lang.String>("getValue"); } set { IExecute("setValue", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getValue", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setValue", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getVersion()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setVersion(int)"/>
         /// </summary>
         public int Version
         {
-            get { return IExecute<int>("getVersion"); } set { IExecute("setVersion", value); }
+            get { return IExecuteWithSignature<int>("getVersion", "()I"); } set { IExecuteWithSignature("setVersion", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#hasExpired()"/>
@@ -157,7 +157,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool HasExpired()
         {
-            return IExecute<bool>("hasExpired");
+            return IExecuteWithSignature<bool>("hasExpired", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#isHttpOnly()"/>
@@ -166,7 +166,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool IsHttpOnly()
         {
-            return IExecute<bool>("isHttpOnly");
+            return IExecuteWithSignature<bool>("isHttpOnly", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setHttpOnly(boolean)"/>
@@ -174,7 +174,7 @@ namespace Java.Net
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetHttpOnly(bool arg0)
         {
-            IExecute("setHttpOnly", arg0);
+            IExecuteWithSignature("setHttpOnly", "(Z)V", arg0);
         }
 
         #endregion

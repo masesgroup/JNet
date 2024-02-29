@@ -67,28 +67,28 @@ namespace Org.Ietf.Jgss
         /// </summary>
         public int MinorStatus
         {
-            get { return IExecute<int>("getMinorStatus"); }
+            get { return IExecuteWithSignature<int>("getMinorStatus", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#getMinorString()"/> 
         /// </summary>
         public Java.Lang.String MinorString
         {
-            get { return IExecute<Java.Lang.String>("getMinorString"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getMinorString", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#getPrivacy()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#setPrivacy(boolean)"/>
         /// </summary>
         public bool Privacy
         {
-            get { return IExecute<bool>("getPrivacy"); } set { IExecute("setPrivacy", value); }
+            get { return IExecuteWithSignature<bool>("getPrivacy", "()Z"); } set { IExecuteWithSignature("setPrivacy", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#getQOP()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#setQOP(int)"/>
         /// </summary>
         public int QOP
         {
-            get { return IExecute<int>("getQOP"); } set { IExecute("setQOP", value); }
+            get { return IExecuteWithSignature<int>("getQOP", "()I"); } set { IExecuteWithSignature("setQOP", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#isDuplicateToken()"/>
@@ -97,7 +97,7 @@ namespace Org.Ietf.Jgss
         /// <returns><see cref="bool"/></returns>
         public bool IsDuplicateToken()
         {
-            return IExecute<bool>("isDuplicateToken");
+            return IExecuteWithSignature<bool>("isDuplicateToken", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#isGapToken()"/>
@@ -106,7 +106,7 @@ namespace Org.Ietf.Jgss
         /// <returns><see cref="bool"/></returns>
         public bool IsGapToken()
         {
-            return IExecute<bool>("isGapToken");
+            return IExecuteWithSignature<bool>("isGapToken", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#isOldToken()"/>
@@ -115,7 +115,7 @@ namespace Org.Ietf.Jgss
         /// <returns><see cref="bool"/></returns>
         public bool IsOldToken()
         {
-            return IExecute<bool>("isOldToken");
+            return IExecuteWithSignature<bool>("isOldToken", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#isUnseqToken()"/>
@@ -124,7 +124,7 @@ namespace Org.Ietf.Jgss
         /// <returns><see cref="bool"/></returns>
         public bool IsUnseqToken()
         {
-            return IExecute<bool>("isUnseqToken");
+            return IExecuteWithSignature<bool>("isUnseqToken", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#setSupplementaryStates(boolean,boolean,boolean,boolean,int,java.lang.String)"/>

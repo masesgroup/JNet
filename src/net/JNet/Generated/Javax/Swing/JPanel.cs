@@ -80,7 +80,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.PanelUI"/></param>
         public void SetUI(Javax.Swing.Plaf.PanelUI arg0)
         {
-            IExecute("setUI", arg0);
+            IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/PanelUI;)V", arg0);
         }
 
         #endregion

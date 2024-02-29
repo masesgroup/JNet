@@ -72,7 +72,7 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Org.W3c.Dom.Html.HTMLFormElement Form
         {
-            get { return IExecute<Org.W3c.Dom.Html.HTMLFormElement>("getForm"); }
+            get { return IExecuteWithSignature<Org.W3c.Dom.Html.HTMLFormElement>("getForm", "()Lorg/w3c/dom/html/HTMLFormElement;"); }
         }
 
         #endregion

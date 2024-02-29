@@ -76,7 +76,7 @@ namespace Org.W3c.Dom.Html
         /// <returns><see cref="Org.W3c.Dom.Html.HTMLDocument"/></returns>
         public Org.W3c.Dom.Html.HTMLDocument CreateHTMLDocument(Java.Lang.String arg0)
         {
-            return IExecute<Org.W3c.Dom.Html.HTMLDocument>("createHTMLDocument", arg0);
+            return IExecuteWithSignature<Org.W3c.Dom.Html.HTMLDocument>("createHTMLDocument", "(Ljava/lang/String;)Lorg/w3c/dom/html/HTMLDocument;", arg0);
         }
 
         #endregion

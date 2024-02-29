@@ -84,7 +84,7 @@ namespace Java.Awt.EventNs
         /// </summary>
         public Java.Awt.Rectangle UpdateRect
         {
-            get { return IExecute<Java.Awt.Rectangle>("getUpdateRect"); } set { IExecute("setUpdateRect", value); }
+            get { return IExecuteWithSignature<Java.Awt.Rectangle>("getUpdateRect", "()Ljava/awt/Rectangle;"); } set { IExecuteWithSignature("setUpdateRect", "(Ljava/awt/Rectangle;)V", value); }
         }
 
         #endregion

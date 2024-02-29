@@ -85,7 +85,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="object"/></returns>
         public object Get(object arg0)
         {
-            return IExecute("get", arg0);
+            return IExecuteWithSignature("get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#lazySet(java.lang.Object,java.lang.Object)"/>
@@ -234,7 +234,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><typeparamref name="V"/></returns>
         public V Get(T arg0)
         {
-            return IExecute<V>("get", arg0);
+            return IExecuteWithSignature<V>("get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#lazySet(java.lang.Object,java.lang.Object)"/>

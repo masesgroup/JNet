@@ -57,7 +57,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Image"/></returns>
         public static Java.Awt.Image CreateDisabledImage(Java.Awt.Image arg0)
         {
-            return SExecute<Java.Awt.Image>(LocalBridgeClazz, "createDisabledImage", arg0);
+            return SExecuteWithSignature<Java.Awt.Image>(LocalBridgeClazz, "createDisabledImage", "(Ljava/awt/Image;)Ljava/awt/Image;", arg0);
         }
 
         #endregion

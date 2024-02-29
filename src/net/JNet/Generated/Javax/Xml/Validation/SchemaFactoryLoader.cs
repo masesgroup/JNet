@@ -52,7 +52,7 @@ namespace Javax.Xml.Validation
         /// <returns><see cref="Javax.Xml.Validation.SchemaFactory"/></returns>
         public Javax.Xml.Validation.SchemaFactory NewFactory(Java.Lang.String arg0)
         {
-            return IExecute<Javax.Xml.Validation.SchemaFactory>("newFactory", arg0);
+            return IExecuteWithSignature<Javax.Xml.Validation.SchemaFactory>("newFactory", "(Ljava/lang/String;)Ljavax/xml/validation/SchemaFactory;", arg0);
         }
 
         #endregion

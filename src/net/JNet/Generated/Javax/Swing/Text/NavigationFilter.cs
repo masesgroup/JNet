@@ -108,7 +108,7 @@ namespace Javax.Swing.Text
             /// </summary>
             public Javax.Swing.Text.Caret Caret
             {
-                get { return IExecute<Javax.Swing.Text.Caret>("getCaret"); }
+                get { return IExecuteWithSignature<Javax.Swing.Text.Caret>("getCaret", "()Ljavax/swing/text/Caret;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/NavigationFilter.FilterBypass.html#moveDot(int,javax.swing.text.Position.Bias)"/>

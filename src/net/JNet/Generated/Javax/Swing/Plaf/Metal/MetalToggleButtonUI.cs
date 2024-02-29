@@ -51,7 +51,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <param name="arg0"><see cref="Javax.Swing.AbstractButton"/></param>
         public void InstallDefaults(Javax.Swing.AbstractButton arg0)
         {
-            IExecute("installDefaults", arg0);
+            IExecuteWithSignature("installDefaults", "(Ljavax/swing/AbstractButton;)V", arg0);
         }
 
         #endregion

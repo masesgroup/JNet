@@ -58,7 +58,7 @@ namespace Javax.Print.Attribute
         /// </summary>
         public int[] Members
         {
-            get { return IExecuteArray<int>("getMembers"); }
+            get { return IExecuteWithSignatureArray<int>("getMembers", "()[[I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/SetOfIntegerSyntax.html#contains(int)"/>
@@ -67,7 +67,7 @@ namespace Javax.Print.Attribute
         /// <returns><see cref="bool"/></returns>
         public bool Contains(int arg0)
         {
-            return IExecute<bool>("contains", arg0);
+            return IExecuteWithSignature<bool>("contains", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/SetOfIntegerSyntax.html#contains(javax.print.attribute.IntegerSyntax)"/>
@@ -76,7 +76,7 @@ namespace Javax.Print.Attribute
         /// <returns><see cref="bool"/></returns>
         public bool Contains(Javax.Print.Attribute.IntegerSyntax arg0)
         {
-            return IExecute<bool>("contains", arg0);
+            return IExecuteWithSignature<bool>("contains", "(Ljavax/print/attribute/IntegerSyntax;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/SetOfIntegerSyntax.html#next(int)"/>
@@ -85,7 +85,7 @@ namespace Javax.Print.Attribute
         /// <returns><see cref="int"/></returns>
         public int Next(int arg0)
         {
-            return IExecute<int>("next", arg0);
+            return IExecuteWithSignature<int>("next", "(I)I", arg0);
         }
 
         #endregion

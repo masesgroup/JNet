@@ -72,7 +72,7 @@ namespace Javax.Xml.Transform.Dom
         /// </summary>
         public Org.W3c.Dom.Node OriginatingNode
         {
-            get { return IExecute<Org.W3c.Dom.Node>("getOriginatingNode"); }
+            get { return IExecuteWithSignature<Org.W3c.Dom.Node>("getOriginatingNode", "()Lorg/w3c/dom/Node;"); }
         }
 
         #endregion

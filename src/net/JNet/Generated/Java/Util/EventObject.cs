@@ -58,7 +58,7 @@ namespace Java.Util
         /// </summary>
         public object Source
         {
-            get { return IExecute("getSource"); }
+            get { return IExecuteWithSignature("getSource", "()Ljava/lang/Object;"); }
         }
 
         #endregion

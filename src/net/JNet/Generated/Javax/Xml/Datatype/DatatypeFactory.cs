@@ -60,7 +60,7 @@ namespace Javax.Xml.Datatype
         /// <returns><see cref="Javax.Xml.Datatype.DatatypeFactory"/></returns>
         public static Javax.Xml.Datatype.DatatypeFactory NewDefaultInstance()
         {
-            return SExecute<Javax.Xml.Datatype.DatatypeFactory>(LocalBridgeClazz, "newDefaultInstance");
+            return SExecuteWithSignature<Javax.Xml.Datatype.DatatypeFactory>(LocalBridgeClazz, "newDefaultInstance", "()Ljavax/xml/datatype/DatatypeFactory;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#newInstance()"/>
@@ -70,7 +70,7 @@ namespace Javax.Xml.Datatype
         /// <exception cref="Javax.Xml.Datatype.DatatypeConfigurationException"/>
         public static Javax.Xml.Datatype.DatatypeFactory NewInstance()
         {
-            return SExecute<Javax.Xml.Datatype.DatatypeFactory>(LocalBridgeClazz, "newInstance");
+            return SExecuteWithSignature<Javax.Xml.Datatype.DatatypeFactory>(LocalBridgeClazz, "newInstance", "()Ljavax/xml/datatype/DatatypeFactory;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#newInstance(java.lang.String,java.lang.ClassLoader)"/>
@@ -109,7 +109,7 @@ namespace Javax.Xml.Datatype
         /// <returns><see cref="Javax.Xml.Datatype.Duration"/></returns>
         public Javax.Xml.Datatype.Duration NewDuration(Java.Lang.String arg0)
         {
-            return IExecute<Javax.Xml.Datatype.Duration>("newDuration", arg0);
+            return IExecuteWithSignature<Javax.Xml.Datatype.Duration>("newDuration", "(Ljava/lang/String;)Ljavax/xml/datatype/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#newDuration(long)"/>
@@ -118,7 +118,7 @@ namespace Javax.Xml.Datatype
         /// <returns><see cref="Javax.Xml.Datatype.Duration"/></returns>
         public Javax.Xml.Datatype.Duration NewDuration(long arg0)
         {
-            return IExecute<Javax.Xml.Datatype.Duration>("newDuration", arg0);
+            return IExecuteWithSignature<Javax.Xml.Datatype.Duration>("newDuration", "(J)Ljavax/xml/datatype/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#newXMLGregorianCalendar()"/>
@@ -127,7 +127,7 @@ namespace Javax.Xml.Datatype
         /// <returns><see cref="Javax.Xml.Datatype.XMLGregorianCalendar"/></returns>
         public Javax.Xml.Datatype.XMLGregorianCalendar NewXMLGregorianCalendar()
         {
-            return IExecute<Javax.Xml.Datatype.XMLGregorianCalendar>("newXMLGregorianCalendar");
+            return IExecuteWithSignature<Javax.Xml.Datatype.XMLGregorianCalendar>("newXMLGregorianCalendar", "()Ljavax/xml/datatype/XMLGregorianCalendar;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#newXMLGregorianCalendar(java.lang.String)"/>
@@ -136,7 +136,7 @@ namespace Javax.Xml.Datatype
         /// <returns><see cref="Javax.Xml.Datatype.XMLGregorianCalendar"/></returns>
         public Javax.Xml.Datatype.XMLGregorianCalendar NewXMLGregorianCalendar(Java.Lang.String arg0)
         {
-            return IExecute<Javax.Xml.Datatype.XMLGregorianCalendar>("newXMLGregorianCalendar", arg0);
+            return IExecuteWithSignature<Javax.Xml.Datatype.XMLGregorianCalendar>("newXMLGregorianCalendar", "(Ljava/lang/String;)Ljavax/xml/datatype/XMLGregorianCalendar;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#newXMLGregorianCalendar(java.math.BigInteger,int,int,int,int,int,java.math.BigDecimal,int)"/>
@@ -161,7 +161,7 @@ namespace Javax.Xml.Datatype
         /// <returns><see cref="Javax.Xml.Datatype.XMLGregorianCalendar"/></returns>
         public Javax.Xml.Datatype.XMLGregorianCalendar NewXMLGregorianCalendar(Java.Util.GregorianCalendar arg0)
         {
-            return IExecute<Javax.Xml.Datatype.XMLGregorianCalendar>("newXMLGregorianCalendar", arg0);
+            return IExecuteWithSignature<Javax.Xml.Datatype.XMLGregorianCalendar>("newXMLGregorianCalendar", "(Ljava/util/GregorianCalendar;)Ljavax/xml/datatype/XMLGregorianCalendar;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#newDuration(boolean,int,int,int,int,int,int)"/>
@@ -211,7 +211,7 @@ namespace Javax.Xml.Datatype
         /// <returns><see cref="Javax.Xml.Datatype.Duration"/></returns>
         public Javax.Xml.Datatype.Duration NewDurationDayTime(Java.Lang.String arg0)
         {
-            return IExecute<Javax.Xml.Datatype.Duration>("newDurationDayTime", arg0);
+            return IExecuteWithSignature<Javax.Xml.Datatype.Duration>("newDurationDayTime", "(Ljava/lang/String;)Ljavax/xml/datatype/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#newDurationDayTime(long)"/>
@@ -220,7 +220,7 @@ namespace Javax.Xml.Datatype
         /// <returns><see cref="Javax.Xml.Datatype.Duration"/></returns>
         public Javax.Xml.Datatype.Duration NewDurationDayTime(long arg0)
         {
-            return IExecute<Javax.Xml.Datatype.Duration>("newDurationDayTime", arg0);
+            return IExecuteWithSignature<Javax.Xml.Datatype.Duration>("newDurationDayTime", "(J)Ljavax/xml/datatype/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#newDurationYearMonth(boolean,int,int)"/>
@@ -251,7 +251,7 @@ namespace Javax.Xml.Datatype
         /// <returns><see cref="Javax.Xml.Datatype.Duration"/></returns>
         public Javax.Xml.Datatype.Duration NewDurationYearMonth(Java.Lang.String arg0)
         {
-            return IExecute<Javax.Xml.Datatype.Duration>("newDurationYearMonth", arg0);
+            return IExecuteWithSignature<Javax.Xml.Datatype.Duration>("newDurationYearMonth", "(Ljava/lang/String;)Ljavax/xml/datatype/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#newDurationYearMonth(long)"/>
@@ -260,7 +260,7 @@ namespace Javax.Xml.Datatype
         /// <returns><see cref="Javax.Xml.Datatype.Duration"/></returns>
         public Javax.Xml.Datatype.Duration NewDurationYearMonth(long arg0)
         {
-            return IExecute<Javax.Xml.Datatype.Duration>("newDurationYearMonth", arg0);
+            return IExecuteWithSignature<Javax.Xml.Datatype.Duration>("newDurationYearMonth", "(J)Ljavax/xml/datatype/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#newXMLGregorianCalendar(int,int,int,int,int,int,int,int)"/>

@@ -50,7 +50,7 @@ namespace Javax.Tools
         /// </summary>
         public Java.Util.List Diagnostics
         {
-            get { return IExecute<Java.Util.List>("getDiagnostics"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getDiagnostics", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DiagnosticCollector.html#report(javax.tools.Diagnostic)"/>
@@ -58,7 +58,7 @@ namespace Javax.Tools
         /// <param name="arg0"><see cref="Javax.Tools.Diagnostic"/></param>
         public void Report(Javax.Tools.Diagnostic arg0)
         {
-            IExecute("report", arg0);
+            IExecuteWithSignature("report", "(Ljavax/tools/Diagnostic;)V", arg0);
         }
 
         #endregion
@@ -100,7 +100,7 @@ namespace Javax.Tools
         /// </summary>
         public Java.Util.List Diagnostics
         {
-            get { return IExecute<Java.Util.List>("getDiagnostics"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getDiagnostics", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DiagnosticCollector.html#report(javax.tools.Diagnostic)"/>
@@ -109,7 +109,7 @@ namespace Javax.Tools
         /// <typeparam name="Arg0ExtendsS"><typeparamref name="S"/></typeparam>
         public void Report<Arg0ExtendsS>(Javax.Tools.Diagnostic<Arg0ExtendsS> arg0) where Arg0ExtendsS: S
         {
-            IExecute("report", arg0);
+            IExecuteWithSignature("report", "(Ljavax/tools/Diagnostic;)V", arg0);
         }
 
         #endregion

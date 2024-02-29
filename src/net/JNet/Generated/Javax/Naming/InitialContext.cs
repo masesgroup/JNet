@@ -59,7 +59,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public static T DoLookup<T>(Java.Lang.String arg0)
         {
-            return SExecute<T>(LocalBridgeClazz, "doLookup", arg0);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "doLookup", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#doLookup(javax.naming.Name)"/>
@@ -70,7 +70,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public static T DoLookup<T>(Javax.Naming.Name arg0)
         {
-            return SExecute<T>(LocalBridgeClazz, "doLookup", arg0);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "doLookup", "(Ljavax/naming/Name;)Ljava/lang/Object;", arg0);
         }
 
         #endregion
@@ -81,14 +81,14 @@ namespace Javax.Naming
         /// </summary>
         public Java.Util.Hashtable<object, object> Environment
         {
-            get { return IExecute<Java.Util.Hashtable<object, object>>("getEnvironment"); }
+            get { return IExecuteWithSignature<Java.Util.Hashtable<object, object>>("getEnvironment", "()Ljava/util/Hashtable;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#getNameInNamespace()"/> 
         /// </summary>
         public Java.Lang.String NameInNamespace
         {
-            get { return IExecute<Java.Lang.String>("getNameInNamespace"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getNameInNamespace", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#addToEnvironment(java.lang.String,java.lang.Object)"/>
@@ -109,7 +109,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public object Lookup(Java.Lang.String arg0)
         {
-            return IExecute("lookup", arg0);
+            return IExecuteWithSignature("lookup", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#lookup(javax.naming.Name)"/>
@@ -119,7 +119,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public object Lookup(Javax.Naming.Name arg0)
         {
-            return IExecute("lookup", arg0);
+            return IExecuteWithSignature("lookup", "(Ljavax/naming/Name;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#lookupLink(java.lang.String)"/>
@@ -129,7 +129,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public object LookupLink(Java.Lang.String arg0)
         {
-            return IExecute("lookupLink", arg0);
+            return IExecuteWithSignature("lookupLink", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#lookupLink(javax.naming.Name)"/>
@@ -139,7 +139,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public object LookupLink(Javax.Naming.Name arg0)
         {
-            return IExecute("lookupLink", arg0);
+            return IExecuteWithSignature("lookupLink", "(Ljavax/naming/Name;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#removeFromEnvironment(java.lang.String)"/>
@@ -149,7 +149,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public object RemoveFromEnvironment(Java.Lang.String arg0)
         {
-            return IExecute("removeFromEnvironment", arg0);
+            return IExecuteWithSignature("removeFromEnvironment", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#composeName(java.lang.String,java.lang.String)"/>
@@ -170,7 +170,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.Context CreateSubcontext(Java.Lang.String arg0)
         {
-            return IExecute<Javax.Naming.Context>("createSubcontext", arg0);
+            return IExecuteWithSignature<Javax.Naming.Context>("createSubcontext", "(Ljava/lang/String;)Ljavax/naming/Context;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#createSubcontext(javax.naming.Name)"/>
@@ -180,7 +180,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.Context CreateSubcontext(Javax.Naming.Name arg0)
         {
-            return IExecute<Javax.Naming.Context>("createSubcontext", arg0);
+            return IExecuteWithSignature<Javax.Naming.Context>("createSubcontext", "(Ljavax/naming/Name;)Ljavax/naming/Context;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#composeName(javax.naming.Name,javax.naming.Name)"/>
@@ -201,7 +201,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.NameParser GetNameParser(Java.Lang.String arg0)
         {
-            return IExecute<Javax.Naming.NameParser>("getNameParser", arg0);
+            return IExecuteWithSignature<Javax.Naming.NameParser>("getNameParser", "(Ljava/lang/String;)Ljavax/naming/NameParser;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#getNameParser(javax.naming.Name)"/>
@@ -211,7 +211,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.NameParser GetNameParser(Javax.Naming.Name arg0)
         {
-            return IExecute<Javax.Naming.NameParser>("getNameParser", arg0);
+            return IExecuteWithSignature<Javax.Naming.NameParser>("getNameParser", "(Ljavax/naming/Name;)Ljavax/naming/NameParser;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#listBindings(java.lang.String)"/>
@@ -221,7 +221,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.NamingEnumeration<Javax.Naming.Binding> ListBindings(Java.Lang.String arg0)
         {
-            return IExecute<Javax.Naming.NamingEnumeration<Javax.Naming.Binding>>("listBindings", arg0);
+            return IExecuteWithSignature<Javax.Naming.NamingEnumeration<Javax.Naming.Binding>>("listBindings", "(Ljava/lang/String;)Ljavax/naming/NamingEnumeration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#listBindings(javax.naming.Name)"/>
@@ -231,7 +231,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.NamingEnumeration<Javax.Naming.Binding> ListBindings(Javax.Naming.Name arg0)
         {
-            return IExecute<Javax.Naming.NamingEnumeration<Javax.Naming.Binding>>("listBindings", arg0);
+            return IExecuteWithSignature<Javax.Naming.NamingEnumeration<Javax.Naming.Binding>>("listBindings", "(Ljavax/naming/Name;)Ljavax/naming/NamingEnumeration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#list(java.lang.String)"/>
@@ -241,7 +241,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.NamingEnumeration<Javax.Naming.NameClassPair> List(Java.Lang.String arg0)
         {
-            return IExecute<Javax.Naming.NamingEnumeration<Javax.Naming.NameClassPair>>("list", arg0);
+            return IExecuteWithSignature<Javax.Naming.NamingEnumeration<Javax.Naming.NameClassPair>>("list", "(Ljava/lang/String;)Ljavax/naming/NamingEnumeration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#list(javax.naming.Name)"/>
@@ -251,7 +251,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.NamingEnumeration<Javax.Naming.NameClassPair> List(Javax.Naming.Name arg0)
         {
-            return IExecute<Javax.Naming.NamingEnumeration<Javax.Naming.NameClassPair>>("list", arg0);
+            return IExecuteWithSignature<Javax.Naming.NamingEnumeration<Javax.Naming.NameClassPair>>("list", "(Ljavax/naming/Name;)Ljavax/naming/NamingEnumeration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#bind(java.lang.String,java.lang.Object)"/>
@@ -280,7 +280,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public void Close()
         {
-            IExecute("close");
+            IExecuteWithSignature("close", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#destroySubcontext(java.lang.String)"/>
@@ -289,7 +289,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public void DestroySubcontext(Java.Lang.String arg0)
         {
-            IExecute("destroySubcontext", arg0);
+            IExecuteWithSignature("destroySubcontext", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#destroySubcontext(javax.naming.Name)"/>
@@ -298,7 +298,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public void DestroySubcontext(Javax.Naming.Name arg0)
         {
-            IExecute("destroySubcontext", arg0);
+            IExecuteWithSignature("destroySubcontext", "(Ljavax/naming/Name;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#rebind(java.lang.String,java.lang.Object)"/>
@@ -347,7 +347,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public void Unbind(Java.Lang.String arg0)
         {
-            IExecute("unbind", arg0);
+            IExecuteWithSignature("unbind", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#unbind(javax.naming.Name)"/>
@@ -356,7 +356,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public void Unbind(Javax.Naming.Name arg0)
         {
-            IExecute("unbind", arg0);
+            IExecuteWithSignature("unbind", "(Ljavax/naming/Name;)V", arg0);
         }
 
         #endregion

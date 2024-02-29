@@ -50,7 +50,7 @@ namespace Java.Security.Cert
         /// </summary>
         public Java.Lang.String Type
         {
-            get { return IExecute<Java.Lang.String>("getType"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRL.html#isRevoked(java.security.cert.Certificate)"/>
@@ -59,7 +59,7 @@ namespace Java.Security.Cert
         /// <returns><see cref="bool"/></returns>
         public bool IsRevoked(Java.Security.Cert.Certificate arg0)
         {
-            return IExecute<bool>("isRevoked", arg0);
+            return IExecuteWithSignature<bool>("isRevoked", "(Ljava/security/cert/Certificate;)Z", arg0);
         }
 
         #endregion

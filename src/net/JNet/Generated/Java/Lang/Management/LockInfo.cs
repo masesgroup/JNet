@@ -57,7 +57,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="Java.Lang.Management.LockInfo"/></returns>
         public static Java.Lang.Management.LockInfo From(Javax.Management.Openmbean.CompositeData arg0)
         {
-            return SExecute<Java.Lang.Management.LockInfo>(LocalBridgeClazz, "from", arg0);
+            return SExecuteWithSignature<Java.Lang.Management.LockInfo>(LocalBridgeClazz, "from", "(Ljavax/management/openmbean/CompositeData;)Ljava/lang/management/LockInfo;", arg0);
         }
 
         #endregion
@@ -68,14 +68,14 @@ namespace Java.Lang.Management
         /// </summary>
         public Java.Lang.String ClassName
         {
-            get { return IExecute<Java.Lang.String>("getClassName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getClassName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/LockInfo.html#getIdentityHashCode()"/> 
         /// </summary>
         public int IdentityHashCode
         {
-            get { return IExecute<int>("getIdentityHashCode"); }
+            get { return IExecuteWithSignature<int>("getIdentityHashCode", "()I"); }
         }
 
         #endregion

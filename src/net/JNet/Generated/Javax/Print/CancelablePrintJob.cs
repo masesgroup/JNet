@@ -76,7 +76,7 @@ namespace Javax.Print
         /// <exception cref="Javax.Print.PrintException"/>
         public void Cancel()
         {
-            IExecute("cancel");
+            IExecuteWithSignature("cancel", "()V");
         }
 
         #endregion

@@ -110,28 +110,28 @@ namespace Javax.Management.Monitor
         /// </summary>
         public object DerivedGauge
         {
-            get { return IExecute("getDerivedGauge"); }
+            get { return IExecuteWithSignature("getDerivedGauge", "()Ljava/lang/Object;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#getObservedAttribute()"/> 
         /// </summary>
         public Java.Lang.String ObservedAttribute
         {
-            get { return IExecute<Java.Lang.String>("getObservedAttribute"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getObservedAttribute", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#getObservedObject()"/> 
         /// </summary>
         public Javax.Management.ObjectName ObservedObject
         {
-            get { return IExecute<Javax.Management.ObjectName>("getObservedObject"); }
+            get { return IExecuteWithSignature<Javax.Management.ObjectName>("getObservedObject", "()Ljavax/management/ObjectName;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#getTrigger()"/> 
         /// </summary>
         public object Trigger
         {
-            get { return IExecute("getTrigger"); }
+            get { return IExecuteWithSignature("getTrigger", "()Ljava/lang/Object;"); }
         }
 
         #endregion

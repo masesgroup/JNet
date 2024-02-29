@@ -78,7 +78,7 @@ namespace Javax.Sound.Midi
         /// </summary>
         public void Close()
         {
-            IExecute("close");
+            IExecuteWithSignature("close", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Receiver.html#send(javax.sound.midi.MidiMessage,long)"/>

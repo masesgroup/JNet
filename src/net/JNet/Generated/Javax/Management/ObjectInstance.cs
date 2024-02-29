@@ -69,14 +69,14 @@ namespace Javax.Management
         /// </summary>
         public Java.Lang.String ClassName
         {
-            get { return IExecute<Java.Lang.String>("getClassName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getClassName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectInstance.html#getObjectName()"/> 
         /// </summary>
         public Javax.Management.ObjectName ObjectName
         {
-            get { return IExecute<Javax.Management.ObjectName>("getObjectName"); }
+            get { return IExecuteWithSignature<Javax.Management.ObjectName>("getObjectName", "()Ljavax/management/ObjectName;"); }
         }
 
         #endregion

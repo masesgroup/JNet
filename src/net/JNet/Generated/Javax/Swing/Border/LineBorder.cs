@@ -75,7 +75,7 @@ namespace Javax.Swing.Border
         /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateBlackLineBorder()
         {
-            return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "createBlackLineBorder");
+            return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "createBlackLineBorder", "()Ljavax/swing/border/Border;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/LineBorder.html#createGrayLineBorder()"/>
@@ -84,7 +84,7 @@ namespace Javax.Swing.Border
         /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateGrayLineBorder()
         {
-            return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "createGrayLineBorder");
+            return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "createGrayLineBorder", "()Ljavax/swing/border/Border;");
         }
 
         #endregion
@@ -95,21 +95,21 @@ namespace Javax.Swing.Border
         /// </summary>
         public Java.Awt.Color LineColor
         {
-            get { return IExecute<Java.Awt.Color>("getLineColor"); }
+            get { return IExecuteWithSignature<Java.Awt.Color>("getLineColor", "()Ljava/awt/Color;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/LineBorder.html#getRoundedCorners()"/> 
         /// </summary>
         public bool RoundedCorners
         {
-            get { return IExecute<bool>("getRoundedCorners"); }
+            get { return IExecuteWithSignature<bool>("getRoundedCorners", "()Z"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/LineBorder.html#getThickness()"/> 
         /// </summary>
         public int Thickness
         {
-            get { return IExecute<int>("getThickness"); }
+            get { return IExecuteWithSignature<int>("getThickness", "()I"); }
         }
 
         #endregion

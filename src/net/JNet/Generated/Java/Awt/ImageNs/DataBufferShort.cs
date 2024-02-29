@@ -105,14 +105,14 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public short[] BankData
         {
-            get { return IExecuteArray<short>("getBankData"); }
+            get { return IExecuteWithSignatureArray<short>("getBankData", "()[[S"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferShort.html#getData()"/> 
         /// </summary>
         public short[] Data
         {
-            get { return IExecuteArray<short>("getData"); }
+            get { return IExecuteWithSignatureArray<short>("getData", "()[S"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferShort.html#getData(int)"/>
@@ -121,7 +121,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="short"/></returns>
         public short[] GetData(int arg0)
         {
-            return IExecuteArray<short>("getData", arg0);
+            return IExecuteWithSignatureArray<short>("getData", "(I)[S", arg0);
         }
 
         #endregion

@@ -92,21 +92,21 @@ namespace Javax.Transaction.Xa
         /// </summary>
         public byte[] BranchQualifier
         {
-            get { return IExecuteArray<byte>("getBranchQualifier"); }
+            get { return IExecuteWithSignatureArray<byte>("getBranchQualifier", "()[B"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/Xid.html#getFormatId()"/> 
         /// </summary>
         public int FormatId
         {
-            get { return IExecute<int>("getFormatId"); }
+            get { return IExecuteWithSignature<int>("getFormatId", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/Xid.html#getGlobalTransactionId()"/> 
         /// </summary>
         public byte[] GlobalTransactionId
         {
-            get { return IExecuteArray<byte>("getGlobalTransactionId"); }
+            get { return IExecuteWithSignatureArray<byte>("getGlobalTransactionId", "()[B"); }
         }
 
         #endregion

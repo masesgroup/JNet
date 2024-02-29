@@ -49,7 +49,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.SocketException"/>
         public static Java.Net.NetworkInterface GetByIndex(int arg0)
         {
-            return SExecute<Java.Net.NetworkInterface>(LocalBridgeClazz, "getByIndex", arg0);
+            return SExecuteWithSignature<Java.Net.NetworkInterface>(LocalBridgeClazz, "getByIndex", "(I)Ljava/net/NetworkInterface;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getByInetAddress(java.net.InetAddress)"/>
@@ -59,7 +59,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.SocketException"/>
         public static Java.Net.NetworkInterface GetByInetAddress(Java.Net.InetAddress arg0)
         {
-            return SExecute<Java.Net.NetworkInterface>(LocalBridgeClazz, "getByInetAddress", arg0);
+            return SExecuteWithSignature<Java.Net.NetworkInterface>(LocalBridgeClazz, "getByInetAddress", "(Ljava/net/InetAddress;)Ljava/net/NetworkInterface;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getByName(java.lang.String)"/>
@@ -69,7 +69,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.SocketException"/>
         public static Java.Net.NetworkInterface GetByName(Java.Lang.String arg0)
         {
-            return SExecute<Java.Net.NetworkInterface>(LocalBridgeClazz, "getByName", arg0);
+            return SExecuteWithSignature<Java.Net.NetworkInterface>(LocalBridgeClazz, "getByName", "(Ljava/lang/String;)Ljava/net/NetworkInterface;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getNetworkInterfaces()"/>
@@ -79,7 +79,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.SocketException"/>
         public static Java.Util.Enumeration<Java.Net.NetworkInterface> GetNetworkInterfaces()
         {
-            return SExecute<Java.Util.Enumeration<Java.Net.NetworkInterface>>(LocalBridgeClazz, "getNetworkInterfaces");
+            return SExecuteWithSignature<Java.Util.Enumeration<Java.Net.NetworkInterface>>(LocalBridgeClazz, "getNetworkInterfaces", "()Ljava/util/Enumeration;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#networkInterfaces()"/>
@@ -89,7 +89,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.SocketException"/>
         public static Java.Util.Stream.Stream<Java.Net.NetworkInterface> NetworkInterfaces()
         {
-            return SExecute<Java.Util.Stream.Stream<Java.Net.NetworkInterface>>(LocalBridgeClazz, "networkInterfaces");
+            return SExecuteWithSignature<Java.Util.Stream.Stream<Java.Net.NetworkInterface>>(LocalBridgeClazz, "networkInterfaces", "()Ljava/util/stream/Stream;");
         }
 
         #endregion
@@ -100,49 +100,49 @@ namespace Java.Net
         /// </summary>
         public Java.Lang.String DisplayName
         {
-            get { return IExecute<Java.Lang.String>("getDisplayName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getHardwareAddress()"/> 
         /// </summary>
         public byte[] HardwareAddress
         {
-            get { return IExecuteArray<byte>("getHardwareAddress"); }
+            get { return IExecuteWithSignatureArray<byte>("getHardwareAddress", "()[B"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getIndex()"/> 
         /// </summary>
         public int Index
         {
-            get { return IExecute<int>("getIndex"); }
+            get { return IExecuteWithSignature<int>("getIndex", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getInterfaceAddresses()"/> 
         /// </summary>
         public Java.Util.List<Java.Net.InterfaceAddress> InterfaceAddresses
         {
-            get { return IExecute<Java.Util.List<Java.Net.InterfaceAddress>>("getInterfaceAddresses"); }
+            get { return IExecuteWithSignature<Java.Util.List<Java.Net.InterfaceAddress>>("getInterfaceAddresses", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getMTU()"/> 
         /// </summary>
         public int MTU
         {
-            get { return IExecute<int>("getMTU"); }
+            get { return IExecuteWithSignature<int>("getMTU", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getParent()"/> 
         /// </summary>
         public Java.Net.NetworkInterface Parent
         {
-            get { return IExecute<Java.Net.NetworkInterface>("getParent"); }
+            get { return IExecuteWithSignature<Java.Net.NetworkInterface>("getParent", "()Ljava/net/NetworkInterface;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#isLoopback()"/>
@@ -152,7 +152,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.SocketException"/>
         public bool IsLoopback()
         {
-            return IExecute<bool>("isLoopback");
+            return IExecuteWithSignature<bool>("isLoopback", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#isPointToPoint()"/>
@@ -162,7 +162,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.SocketException"/>
         public bool IsPointToPoint()
         {
-            return IExecute<bool>("isPointToPoint");
+            return IExecuteWithSignature<bool>("isPointToPoint", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#isUp()"/>
@@ -172,7 +172,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.SocketException"/>
         public bool IsUp()
         {
-            return IExecute<bool>("isUp");
+            return IExecuteWithSignature<bool>("isUp", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#isVirtual()"/>
@@ -181,7 +181,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool IsVirtual()
         {
-            return IExecute<bool>("isVirtual");
+            return IExecuteWithSignature<bool>("isVirtual", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#supportsMulticast()"/>
@@ -191,7 +191,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.SocketException"/>
         public bool SupportsMulticast()
         {
-            return IExecute<bool>("supportsMulticast");
+            return IExecuteWithSignature<bool>("supportsMulticast", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getInetAddresses()"/>
@@ -200,7 +200,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<Java.Net.InetAddress> GetInetAddresses()
         {
-            return IExecute<Java.Util.Enumeration<Java.Net.InetAddress>>("getInetAddresses");
+            return IExecuteWithSignature<Java.Util.Enumeration<Java.Net.InetAddress>>("getInetAddresses", "()Ljava/util/Enumeration;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getSubInterfaces()"/>
@@ -209,7 +209,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<Java.Net.NetworkInterface> GetSubInterfaces()
         {
-            return IExecute<Java.Util.Enumeration<Java.Net.NetworkInterface>>("getSubInterfaces");
+            return IExecuteWithSignature<Java.Util.Enumeration<Java.Net.NetworkInterface>>("getSubInterfaces", "()Ljava/util/Enumeration;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#inetAddresses()"/>
@@ -218,7 +218,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Java.Net.InetAddress> InetAddresses()
         {
-            return IExecute<Java.Util.Stream.Stream<Java.Net.InetAddress>>("inetAddresses");
+            return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Net.InetAddress>>("inetAddresses", "()Ljava/util/stream/Stream;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#subInterfaces()"/>
@@ -227,7 +227,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Java.Net.NetworkInterface> SubInterfaces()
         {
-            return IExecute<Java.Util.Stream.Stream<Java.Net.NetworkInterface>>("subInterfaces");
+            return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Net.NetworkInterface>>("subInterfaces", "()Ljava/util/stream/Stream;");
         }
 
         #endregion

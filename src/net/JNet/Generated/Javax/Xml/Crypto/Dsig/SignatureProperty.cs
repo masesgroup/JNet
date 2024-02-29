@@ -80,21 +80,21 @@ namespace Javax.Xml.Crypto.Dsig
         /// </summary>
         public Java.Util.List<Javax.Xml.Crypto.XMLStructure> Content
         {
-            get { return IExecute<Java.Util.List<Javax.Xml.Crypto.XMLStructure>>("getContent"); }
+            get { return IExecuteWithSignature<Java.Util.List<Javax.Xml.Crypto.XMLStructure>>("getContent", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureProperty.html#getId()"/> 
         /// </summary>
         public Java.Lang.String Id
         {
-            get { return IExecute<Java.Lang.String>("getId"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureProperty.html#getTarget()"/> 
         /// </summary>
         public Java.Lang.String Target
         {
-            get { return IExecute<Java.Lang.String>("getTarget"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getTarget", "()Ljava/lang/String;"); }
         }
 
         #endregion

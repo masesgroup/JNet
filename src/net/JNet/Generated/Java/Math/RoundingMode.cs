@@ -96,7 +96,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.RoundingMode"/></returns>
         public static Java.Math.RoundingMode ValueOf(int arg0)
         {
-            return SExecute<Java.Math.RoundingMode>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecuteWithSignature<Java.Math.RoundingMode>(LocalBridgeClazz, "valueOf", "(I)Ljava/math/RoundingMode;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html#valueOf(java.lang.String)"/>
@@ -105,7 +105,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.RoundingMode"/></returns>
         public static Java.Math.RoundingMode ValueOf(Java.Lang.String arg0)
         {
-            return SExecute<Java.Math.RoundingMode>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecuteWithSignature<Java.Math.RoundingMode>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/math/RoundingMode;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html#values()"/>
@@ -114,7 +114,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.RoundingMode"/></returns>
         public static Java.Math.RoundingMode[] Values()
         {
-            return SExecuteArray<Java.Math.RoundingMode>(LocalBridgeClazz, "values");
+            return SExecuteWithSignatureArray<Java.Math.RoundingMode>(LocalBridgeClazz, "values", "()[Ljava/math/RoundingMode;");
         }
 
         #endregion

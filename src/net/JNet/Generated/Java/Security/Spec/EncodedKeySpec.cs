@@ -58,21 +58,21 @@ namespace Java.Security.Spec
         /// </summary>
         public Java.Lang.String Algorithm
         {
-            get { return IExecute<Java.Lang.String>("getAlgorithm"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EncodedKeySpec.html#getEncoded()"/> 
         /// </summary>
         public byte[] Encoded
         {
-            get { return IExecuteArray<byte>("getEncoded"); }
+            get { return IExecuteWithSignatureArray<byte>("getEncoded", "()[B"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EncodedKeySpec.html#getFormat()"/> 
         /// </summary>
         public Java.Lang.String Format
         {
-            get { return IExecute<Java.Lang.String>("getFormat"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getFormat", "()Ljava/lang/String;"); }
         }
 
         #endregion

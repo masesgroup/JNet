@@ -52,7 +52,7 @@ namespace Javax.Swing.Plaf
         /// <returns><see cref="int"/></returns>
         public int GetTabRunCount(Javax.Swing.JTabbedPane arg0)
         {
-            return IExecute<int>("getTabRunCount", arg0);
+            return IExecuteWithSignature<int>("getTabRunCount", "(Ljavax/swing/JTabbedPane;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TabbedPaneUI.html#tabForCoordinate(javax.swing.JTabbedPane,int,int)"/>

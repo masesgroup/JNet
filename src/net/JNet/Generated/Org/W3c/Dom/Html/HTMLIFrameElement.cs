@@ -112,77 +112,77 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Java.Lang.String Align
         {
-            get { return IExecute<Java.Lang.String>("getAlign"); } set { IExecute("setAlign", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getAlign", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAlign", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLIFrameElement.html#getContentDocument()"/> 
         /// </summary>
         public Org.W3c.Dom.Document ContentDocument
         {
-            get { return IExecute<Org.W3c.Dom.Document>("getContentDocument"); }
+            get { return IExecuteWithSignature<Org.W3c.Dom.Document>("getContentDocument", "()Lorg/w3c/dom/Document;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLIFrameElement.html#getFrameBorder()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLIFrameElement.html#setFrameBorder(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String FrameBorder
         {
-            get { return IExecute<Java.Lang.String>("getFrameBorder"); } set { IExecute("setFrameBorder", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getFrameBorder", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setFrameBorder", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLIFrameElement.html#getHeight()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLIFrameElement.html#setHeight(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Height
         {
-            get { return IExecute<Java.Lang.String>("getHeight"); } set { IExecute("setHeight", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getHeight", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setHeight", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLIFrameElement.html#getLongDesc()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLIFrameElement.html#setLongDesc(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String LongDesc
         {
-            get { return IExecute<Java.Lang.String>("getLongDesc"); } set { IExecute("setLongDesc", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getLongDesc", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setLongDesc", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLIFrameElement.html#getMarginHeight()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLIFrameElement.html#setMarginHeight(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String MarginHeight
         {
-            get { return IExecute<Java.Lang.String>("getMarginHeight"); } set { IExecute("setMarginHeight", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getMarginHeight", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setMarginHeight", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLIFrameElement.html#getMarginWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLIFrameElement.html#setMarginWidth(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String MarginWidth
         {
-            get { return IExecute<Java.Lang.String>("getMarginWidth"); } set { IExecute("setMarginWidth", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getMarginWidth", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setMarginWidth", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLIFrameElement.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLIFrameElement.html#setName(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); } set { IExecute("setName", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setName", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLIFrameElement.html#getScrolling()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLIFrameElement.html#setScrolling(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Scrolling
         {
-            get { return IExecute<Java.Lang.String>("getScrolling"); } set { IExecute("setScrolling", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getScrolling", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setScrolling", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLIFrameElement.html#getSrc()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLIFrameElement.html#setSrc(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Src
         {
-            get { return IExecute<Java.Lang.String>("getSrc"); } set { IExecute("setSrc", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getSrc", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSrc", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLIFrameElement.html#getWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLIFrameElement.html#setWidth(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Width
         {
-            get { return IExecute<Java.Lang.String>("getWidth"); } set { IExecute("setWidth", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getWidth", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setWidth", "(Ljava/lang/String;)V", value); }
         }
 
         #endregion

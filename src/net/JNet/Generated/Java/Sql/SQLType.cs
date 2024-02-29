@@ -80,21 +80,21 @@ namespace Java.Sql
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLType.html#getVendor()"/> 
         /// </summary>
         public Java.Lang.String Vendor
         {
-            get { return IExecute<Java.Lang.String>("getVendor"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getVendor", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLType.html#getVendorTypeNumber()"/> 
         /// </summary>
         public Java.Lang.Integer VendorTypeNumber
         {
-            get { return IExecute<Java.Lang.Integer>("getVendorTypeNumber"); }
+            get { return IExecuteWithSignature<Java.Lang.Integer>("getVendorTypeNumber", "()Ljava/lang/Integer;"); }
         }
 
         #endregion

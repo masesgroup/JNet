@@ -98,14 +98,14 @@ namespace Java.Util.Zip
         /// </summary>
         public long Value
         {
-            get { return IExecute<long>("getValue"); }
+            get { return IExecuteWithSignature<long>("getValue", "()J"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Checksum.html#reset()"/>
         /// </summary>
         public void Reset()
         {
-            IExecute("reset");
+            IExecuteWithSignature("reset", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Checksum.html#update(byte[],int,int)"/>
@@ -123,7 +123,7 @@ namespace Java.Util.Zip
         /// <param name="arg0"><see cref="int"/></param>
         public void Update(int arg0)
         {
-            IExecute("update", arg0);
+            IExecuteWithSignature("update", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Checksum.html#update(byte[])"/>
@@ -131,7 +131,7 @@ namespace Java.Util.Zip
         /// <param name="arg0"><see cref="byte"/></param>
         public void Update(byte[] arg0)
         {
-            IExecute("update", new object[] { arg0 });
+            IExecuteWithSignature("update", "([B)V", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Checksum.html#update(java.nio.ByteBuffer)"/>
@@ -139,7 +139,7 @@ namespace Java.Util.Zip
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         public void Update(Java.Nio.ByteBuffer arg0)
         {
-            IExecute("update", arg0);
+            IExecuteWithSignature("update", "(Ljava/nio/ByteBuffer;)V", arg0);
         }
 
         #endregion

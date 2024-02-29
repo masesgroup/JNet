@@ -94,14 +94,14 @@ namespace Org.W3c.Dom.Stylesheets
         /// </summary>
         public int Length
         {
-            get { return IExecute<int>("getLength"); }
+            get { return IExecuteWithSignature<int>("getLength", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/MediaList.html#getMediaText()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/MediaList.html#setMediaText(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String MediaText
         {
-            get { return IExecute<Java.Lang.String>("getMediaText"); } set { IExecute("setMediaText", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getMediaText", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setMediaText", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/MediaList.html#item(int)"/>
@@ -110,7 +110,7 @@ namespace Org.W3c.Dom.Stylesheets
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Item(int arg0)
         {
-            return IExecute<Java.Lang.String>("item", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("item", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/MediaList.html#appendMedium(java.lang.String)"/>
@@ -119,7 +119,7 @@ namespace Org.W3c.Dom.Stylesheets
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void AppendMedium(Java.Lang.String arg0)
         {
-            IExecute("appendMedium", arg0);
+            IExecuteWithSignature("appendMedium", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/MediaList.html#deleteMedium(java.lang.String)"/>
@@ -128,7 +128,7 @@ namespace Org.W3c.Dom.Stylesheets
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void DeleteMedium(Java.Lang.String arg0)
         {
-            IExecute("deleteMedium", arg0);
+            IExecuteWithSignature("deleteMedium", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

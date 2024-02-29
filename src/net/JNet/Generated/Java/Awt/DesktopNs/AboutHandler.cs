@@ -74,7 +74,7 @@ namespace Java.Awt.DesktopNs
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AboutEvent"/></param>
         public void HandleAbout(Java.Awt.DesktopNs.AboutEvent arg0)
         {
-            IExecute("handleAbout", arg0);
+            IExecuteWithSignature("handleAbout", "(Ljava/awt/desktop/AboutEvent;)V", arg0);
         }
 
         #endregion

@@ -359,7 +359,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool ContainsKey(object arg0)
         {
-            return IExecute<bool>("containsKey", arg0);
+            return IExecuteWithSignature<bool>("containsKey", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#containsValue(java.lang.Object)"/>
@@ -368,7 +368,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool ContainsValue(object arg0)
         {
-            return IExecute<bool>("containsValue", arg0);
+            return IExecuteWithSignature<bool>("containsValue", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#isEmpty()"/>
@@ -377,7 +377,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
-            return IExecute<bool>("isEmpty");
+            return IExecuteWithSignature<bool>("isEmpty", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#size()"/>
@@ -386,7 +386,7 @@ namespace Java.Awt
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecute<int>("size");
+            return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#get(java.lang.Object)"/>
@@ -395,7 +395,7 @@ namespace Java.Awt
         /// <returns><see cref="object"/></returns>
         public object Get(object arg0)
         {
-            return IExecute("get", arg0);
+            return IExecuteWithSignature("get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#put(java.lang.Object,java.lang.Object)"/>
@@ -414,7 +414,7 @@ namespace Java.Awt
         /// <returns><see cref="object"/></returns>
         public object Remove(object arg0)
         {
-            return IExecute("remove", arg0);
+            return IExecuteWithSignature("remove", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#values()"/>
@@ -423,7 +423,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public Java.Util.Collection<object> Values()
         {
-            return IExecute<Java.Util.Collection<object>>("values");
+            return IExecuteWithSignature<Java.Util.Collection<object>>("values", "()Ljava/util/Collection;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#keySet()"/>
@@ -432,7 +432,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<object> KeySet()
         {
-            return IExecute<Java.Util.Set<object>>("keySet");
+            return IExecuteWithSignature<Java.Util.Set<object>>("keySet", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#entrySet()"/>
@@ -441,7 +441,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Util.Map.Entry<object, object>> EntrySet()
         {
-            return IExecute<Java.Util.Set<Java.Util.Map.Entry<object, object>>>("entrySet");
+            return IExecuteWithSignature<Java.Util.Set<Java.Util.Map.Entry<object, object>>>("entrySet", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#add(java.awt.RenderingHints)"/>
@@ -449,14 +449,14 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.RenderingHints"/></param>
         public void Add(Java.Awt.RenderingHints arg0)
         {
-            IExecute("add", arg0);
+            IExecuteWithSignature("add", "(Ljava/awt/RenderingHints;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#clear()"/>
         /// </summary>
         public void Clear()
         {
-            IExecute("clear");
+            IExecuteWithSignature("clear", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#putAll(java.util.Map)"/>
@@ -464,7 +464,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public void PutAll(Java.Util.Map<object, object> arg0)
         {
-            IExecute("putAll", arg0);
+            IExecuteWithSignature("putAll", "(Ljava/util/Map;)V", arg0);
         }
 
         #endregion
@@ -497,7 +497,7 @@ namespace Java.Awt
             /// <returns><see cref="bool"/></returns>
             public bool IsCompatibleValue(object arg0)
             {
-                return IExecute<bool>("isCompatibleValue", arg0);
+                return IExecuteWithSignature<bool>("isCompatibleValue", "(Ljava/lang/Object;)Z", arg0);
             }
 
             #endregion

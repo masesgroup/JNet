@@ -76,14 +76,14 @@ namespace Org.W3c.Dom.Css
         /// </summary>
         public Java.Lang.String SelectorText
         {
-            get { return IExecute<Java.Lang.String>("getSelectorText"); } set { IExecute("setSelectorText", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getSelectorText", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSelectorText", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPageRule.html#getStyle()"/> 
         /// </summary>
         public Org.W3c.Dom.Css.CSSStyleDeclaration Style
         {
-            get { return IExecute<Org.W3c.Dom.Css.CSSStyleDeclaration>("getStyle"); }
+            get { return IExecuteWithSignature<Org.W3c.Dom.Css.CSSStyleDeclaration>("getStyle", "()Lorg/w3c/dom/css/CSSStyleDeclaration;"); }
         }
 
         #endregion

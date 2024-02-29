@@ -79,14 +79,14 @@ namespace Javax.Swing
         /// </summary>
         public object[] Keys
         {
-            get { return IExecuteArray<object>("getKeys"); }
+            get { return IExecuteWithSignatureArray<object>("getKeys", "()[Ljava/lang/Object;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractAction.html#getPropertyChangeListeners()"/> 
         /// </summary>
         public Java.Beans.PropertyChangeListener[] PropertyChangeListeners
         {
-            get { return IExecuteArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners"); }
+            get { return IExecuteWithSignatureArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners", "()[Ljava/beans/PropertyChangeListener;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractAction.html#isEnabled()"/>
@@ -95,7 +95,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsEnabled()
         {
-            return IExecute<bool>("isEnabled");
+            return IExecuteWithSignature<bool>("isEnabled", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractAction.html#getValue(java.lang.String)"/>
@@ -104,7 +104,7 @@ namespace Javax.Swing
         /// <returns><see cref="object"/></returns>
         public object GetValue(Java.Lang.String arg0)
         {
-            return IExecute("getValue", arg0);
+            return IExecuteWithSignature("getValue", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractAction.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
@@ -112,7 +112,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            IExecute("addPropertyChangeListener", arg0);
+            IExecuteWithSignature("addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractAction.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>
@@ -120,7 +120,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            IExecute("removePropertyChangeListener", arg0);
+            IExecuteWithSignature("removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractAction.html#putValue(java.lang.String,java.lang.Object)"/>
@@ -137,7 +137,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetEnabled(bool arg0)
         {
-            IExecute("setEnabled", arg0);
+            IExecuteWithSignature("setEnabled", "(Z)V", arg0);
         }
 
         #endregion

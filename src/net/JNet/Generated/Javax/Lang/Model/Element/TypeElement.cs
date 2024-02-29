@@ -112,42 +112,42 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         public Java.Util.List EnclosedElements
         {
-            get { return IExecute<Java.Util.List>("getEnclosedElements"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getEnclosedElements", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getEnclosingElement()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Element EnclosingElement
         {
-            get { return IExecute<Javax.Lang.Model.Element.Element>("getEnclosingElement"); }
+            get { return IExecuteWithSignature<Javax.Lang.Model.Element.Element>("getEnclosingElement", "()Ljavax/lang/model/element/Element;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getInterfaces()"/> 
         /// </summary>
         public Java.Util.List Interfaces
         {
-            get { return IExecute<Java.Util.List>("getInterfaces"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getInterfaces", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getNestingKind()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.NestingKind NestingKind
         {
-            get { return IExecute<Javax.Lang.Model.Element.NestingKind>("getNestingKind"); }
+            get { return IExecuteWithSignature<Javax.Lang.Model.Element.NestingKind>("getNestingKind", "()Ljavax/lang/model/element/NestingKind;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getQualifiedName()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Name QualifiedName
         {
-            get { return IExecute<Javax.Lang.Model.Element.Name>("getQualifiedName"); }
+            get { return IExecuteWithSignature<Javax.Lang.Model.Element.Name>("getQualifiedName", "()Ljavax/lang/model/element/Name;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getSimpleName()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Name SimpleName
         {
-            get { return IExecute<Javax.Lang.Model.Element.Name>("getSimpleName"); }
+            get { return IExecuteWithSignature<Javax.Lang.Model.Element.Name>("getSimpleName", "()Ljavax/lang/model/element/Name;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getSuperclass()"/> 
@@ -161,7 +161,7 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         public Java.Util.List TypeParameters
         {
-            get { return IExecute<Java.Util.List>("getTypeParameters"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getTypeParameters", "()Ljava/util/List;"); }
         }
 
         #endregion

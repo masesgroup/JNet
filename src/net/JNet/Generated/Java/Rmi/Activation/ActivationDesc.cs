@@ -96,35 +96,35 @@ namespace Java.Rmi.Activation
         /// </summary>
         public Java.Lang.String ClassName
         {
-            get { return IExecute<Java.Lang.String>("getClassName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getClassName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationDesc.html#getData()"/> 
         /// </summary>
         public Java.Rmi.MarshalledObject<object> Data
         {
-            get { return IExecute<Java.Rmi.MarshalledObject<object>>("getData"); }
+            get { return IExecuteWithSignature<Java.Rmi.MarshalledObject<object>>("getData", "()Ljava/rmi/MarshalledObject;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationDesc.html#getGroupID()"/> 
         /// </summary>
         public Java.Rmi.Activation.ActivationGroupID GroupID
         {
-            get { return IExecute<Java.Rmi.Activation.ActivationGroupID>("getGroupID"); }
+            get { return IExecuteWithSignature<Java.Rmi.Activation.ActivationGroupID>("getGroupID", "()Ljava/rmi/activation/ActivationGroupID;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationDesc.html#getLocation()"/> 
         /// </summary>
         public Java.Lang.String Location
         {
-            get { return IExecute<Java.Lang.String>("getLocation"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getLocation", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationDesc.html#getRestartMode()"/> 
         /// </summary>
         public bool RestartMode
         {
-            get { return IExecute<bool>("getRestartMode"); }
+            get { return IExecuteWithSignature<bool>("getRestartMode", "()Z"); }
         }
 
         #endregion

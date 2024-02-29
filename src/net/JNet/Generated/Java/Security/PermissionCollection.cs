@@ -52,7 +52,7 @@ namespace Java.Security
         /// <returns><see cref="bool"/></returns>
         public bool Implies(Java.Security.Permission arg0)
         {
-            return IExecute<bool>("implies", arg0);
+            return IExecuteWithSignature<bool>("implies", "(Ljava/security/Permission;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PermissionCollection.html#elements()"/>
@@ -61,7 +61,7 @@ namespace Java.Security
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<Java.Security.Permission> Elements()
         {
-            return IExecute<Java.Util.Enumeration<Java.Security.Permission>>("elements");
+            return IExecuteWithSignature<Java.Util.Enumeration<Java.Security.Permission>>("elements", "()Ljava/util/Enumeration;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PermissionCollection.html#add(java.security.Permission)"/>
@@ -69,7 +69,7 @@ namespace Java.Security
         /// <param name="arg0"><see cref="Java.Security.Permission"/></param>
         public void Add(Java.Security.Permission arg0)
         {
-            IExecute("add", arg0);
+            IExecuteWithSignature("add", "(Ljava/security/Permission;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PermissionCollection.html#isReadOnly()"/>
@@ -78,7 +78,7 @@ namespace Java.Security
         /// <returns><see cref="bool"/></returns>
         public bool IsReadOnly()
         {
-            return IExecute<bool>("isReadOnly");
+            return IExecuteWithSignature<bool>("isReadOnly", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PermissionCollection.html#elementsAsStream()"/>
@@ -87,14 +87,14 @@ namespace Java.Security
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Java.Security.Permission> ElementsAsStream()
         {
-            return IExecute<Java.Util.Stream.Stream<Java.Security.Permission>>("elementsAsStream");
+            return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Security.Permission>>("elementsAsStream", "()Ljava/util/stream/Stream;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PermissionCollection.html#setReadOnly()"/>
         /// </summary>
         public void SetReadOnly()
         {
-            IExecute("setReadOnly");
+            IExecuteWithSignature("setReadOnly", "()V");
         }
 
         #endregion

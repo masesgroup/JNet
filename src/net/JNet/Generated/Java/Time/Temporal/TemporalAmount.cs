@@ -90,7 +90,7 @@ namespace Java.Time.Temporal
         /// </summary>
         public Java.Util.List<Java.Time.Temporal.TemporalUnit> Units
         {
-            get { return IExecute<Java.Util.List<Java.Time.Temporal.TemporalUnit>>("getUnits"); }
+            get { return IExecuteWithSignature<Java.Util.List<Java.Time.Temporal.TemporalUnit>>("getUnits", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAmount.html#addTo(java.time.temporal.Temporal)"/>
@@ -99,7 +99,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal AddTo(Java.Time.Temporal.Temporal arg0)
         {
-            return IExecute<Java.Time.Temporal.Temporal>("addTo", arg0);
+            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("addTo", "(Ljava/time/temporal/Temporal;)Ljava/time/temporal/Temporal;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAmount.html#subtractFrom(java.time.temporal.Temporal)"/>
@@ -108,7 +108,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal SubtractFrom(Java.Time.Temporal.Temporal arg0)
         {
-            return IExecute<Java.Time.Temporal.Temporal>("subtractFrom", arg0);
+            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("subtractFrom", "(Ljava/time/temporal/Temporal;)Ljava/time/temporal/Temporal;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAmount.html#get(java.time.temporal.TemporalUnit)"/>
@@ -117,7 +117,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="long"/></returns>
         public long Get(Java.Time.Temporal.TemporalUnit arg0)
         {
-            return IExecute<long>("get", arg0);
+            return IExecuteWithSignature<long>("get", "(Ljava/time/temporal/TemporalUnit;)J", arg0);
         }
 
         #endregion

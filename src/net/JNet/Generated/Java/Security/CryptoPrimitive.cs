@@ -108,7 +108,7 @@ namespace Java.Security
         /// <returns><see cref="Java.Security.CryptoPrimitive"/></returns>
         public static Java.Security.CryptoPrimitive ValueOf(Java.Lang.String arg0)
         {
-            return SExecute<Java.Security.CryptoPrimitive>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecuteWithSignature<Java.Security.CryptoPrimitive>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/security/CryptoPrimitive;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html#values()"/>
@@ -117,7 +117,7 @@ namespace Java.Security
         /// <returns><see cref="Java.Security.CryptoPrimitive"/></returns>
         public static Java.Security.CryptoPrimitive[] Values()
         {
-            return SExecuteArray<Java.Security.CryptoPrimitive>(LocalBridgeClazz, "values");
+            return SExecuteWithSignatureArray<Java.Security.CryptoPrimitive>(LocalBridgeClazz, "values", "()[Ljava/security/CryptoPrimitive;");
         }
 
         #endregion

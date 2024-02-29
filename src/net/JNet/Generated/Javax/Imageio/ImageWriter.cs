@@ -50,35 +50,35 @@ namespace Javax.Imageio
         /// </summary>
         public Java.Util.Locale[] AvailableLocales
         {
-            get { return IExecuteArray<Java.Util.Locale>("getAvailableLocales"); }
+            get { return IExecuteWithSignatureArray<Java.Util.Locale>("getAvailableLocales", "()[Ljava/util/Locale;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#getDefaultWriteParam()"/> 
         /// </summary>
         public Javax.Imageio.ImageWriteParam DefaultWriteParam
         {
-            get { return IExecute<Javax.Imageio.ImageWriteParam>("getDefaultWriteParam"); }
+            get { return IExecuteWithSignature<Javax.Imageio.ImageWriteParam>("getDefaultWriteParam", "()Ljavax/imageio/ImageWriteParam;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#getLocale()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#setLocale(java.util.Locale)"/>
         /// </summary>
         public Java.Util.Locale Locale
         {
-            get { return IExecute<Java.Util.Locale>("getLocale"); } set { IExecute("setLocale", value); }
+            get { return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;"); } set { IExecuteWithSignature("setLocale", "(Ljava/util/Locale;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#getOriginatingProvider()"/> 
         /// </summary>
         public Javax.Imageio.Spi.ImageWriterSpi OriginatingProvider
         {
-            get { return IExecute<Javax.Imageio.Spi.ImageWriterSpi>("getOriginatingProvider"); }
+            get { return IExecuteWithSignature<Javax.Imageio.Spi.ImageWriterSpi>("getOriginatingProvider", "()Ljavax/imageio/spi/ImageWriterSpi;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#getOutput()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#setOutput(java.lang.Object)"/>
         /// </summary>
         public object Output
         {
-            get { return IExecute("getOutput"); } set { IExecute("setOutput", value); }
+            get { return IExecuteWithSignature("getOutput", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setOutput", "(Ljava/lang/Object;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#convertImageMetadata(javax.imageio.metadata.IIOMetadata,javax.imageio.ImageTypeSpecifier,javax.imageio.ImageWriteParam)"/>
@@ -118,7 +118,7 @@ namespace Javax.Imageio
         /// <returns><see cref="Javax.Imageio.Metadata.IIOMetadata"/></returns>
         public Javax.Imageio.Metadata.IIOMetadata GetDefaultStreamMetadata(Javax.Imageio.ImageWriteParam arg0)
         {
-            return IExecute<Javax.Imageio.Metadata.IIOMetadata>("getDefaultStreamMetadata", arg0);
+            return IExecuteWithSignature<Javax.Imageio.Metadata.IIOMetadata>("getDefaultStreamMetadata", "(Ljavax/imageio/ImageWriteParam;)Ljavax/imageio/metadata/IIOMetadata;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)"/>
@@ -139,7 +139,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public bool CanInsertEmpty(int arg0)
         {
-            return IExecute<bool>("canInsertEmpty", arg0);
+            return IExecuteWithSignature<bool>("canInsertEmpty", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#canInsertImage(int)"/>
@@ -149,7 +149,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public bool CanInsertImage(int arg0)
         {
-            return IExecute<bool>("canInsertImage", arg0);
+            return IExecuteWithSignature<bool>("canInsertImage", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#canRemoveImage(int)"/>
@@ -159,7 +159,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public bool CanRemoveImage(int arg0)
         {
-            return IExecute<bool>("canRemoveImage", arg0);
+            return IExecuteWithSignature<bool>("canRemoveImage", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#canReplaceImageMetadata(int)"/>
@@ -169,7 +169,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public bool CanReplaceImageMetadata(int arg0)
         {
-            return IExecute<bool>("canReplaceImageMetadata", arg0);
+            return IExecuteWithSignature<bool>("canReplaceImageMetadata", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#canReplacePixels(int)"/>
@@ -179,7 +179,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public bool CanReplacePixels(int arg0)
         {
-            return IExecute<bool>("canReplacePixels", arg0);
+            return IExecuteWithSignature<bool>("canReplacePixels", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#canReplaceStreamMetadata()"/>
@@ -189,7 +189,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public bool CanReplaceStreamMetadata()
         {
-            return IExecute<bool>("canReplaceStreamMetadata");
+            return IExecuteWithSignature<bool>("canReplaceStreamMetadata", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#canWriteEmpty()"/>
@@ -199,7 +199,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public bool CanWriteEmpty()
         {
-            return IExecute<bool>("canWriteEmpty");
+            return IExecuteWithSignature<bool>("canWriteEmpty", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#canWriteRasters()"/>
@@ -208,7 +208,7 @@ namespace Javax.Imageio
         /// <returns><see cref="bool"/></returns>
         public bool CanWriteRasters()
         {
-            return IExecute<bool>("canWriteRasters");
+            return IExecuteWithSignature<bool>("canWriteRasters", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#canWriteSequence()"/>
@@ -217,7 +217,7 @@ namespace Javax.Imageio
         /// <returns><see cref="bool"/></returns>
         public bool CanWriteSequence()
         {
-            return IExecute<bool>("canWriteSequence");
+            return IExecuteWithSignature<bool>("canWriteSequence", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#getNumThumbnailsSupported(javax.imageio.ImageTypeSpecifier,javax.imageio.ImageWriteParam,javax.imageio.metadata.IIOMetadata,javax.imageio.metadata.IIOMetadata)"/>
@@ -248,7 +248,7 @@ namespace Javax.Imageio
         /// </summary>
         public void Abort()
         {
-            IExecute("abort");
+            IExecuteWithSignature("abort", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#addIIOWriteProgressListener(javax.imageio.event.IIOWriteProgressListener)"/>
@@ -256,7 +256,7 @@ namespace Javax.Imageio
         /// <param name="arg0"><see cref="Javax.Imageio.Event.IIOWriteProgressListener"/></param>
         public void AddIIOWriteProgressListener(Javax.Imageio.Event.IIOWriteProgressListener arg0)
         {
-            IExecute("addIIOWriteProgressListener", arg0);
+            IExecuteWithSignature("addIIOWriteProgressListener", "(Ljavax/imageio/event/IIOWriteProgressListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#addIIOWriteWarningListener(javax.imageio.event.IIOWriteWarningListener)"/>
@@ -264,14 +264,14 @@ namespace Javax.Imageio
         /// <param name="arg0"><see cref="Javax.Imageio.Event.IIOWriteWarningListener"/></param>
         public void AddIIOWriteWarningListener(Javax.Imageio.Event.IIOWriteWarningListener arg0)
         {
-            IExecute("addIIOWriteWarningListener", arg0);
+            IExecuteWithSignature("addIIOWriteWarningListener", "(Ljavax/imageio/event/IIOWriteWarningListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#dispose()"/>
         /// </summary>
         public new void Dispose()
         {
-            IExecute("dispose");
+            IExecuteWithSignature("dispose", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#endInsertEmpty()"/>
@@ -280,7 +280,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public void EndInsertEmpty()
         {
-            IExecute("endInsertEmpty");
+            IExecuteWithSignature("endInsertEmpty", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#endReplacePixels()"/>
@@ -289,7 +289,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public void EndReplacePixels()
         {
-            IExecute("endReplacePixels");
+            IExecuteWithSignature("endReplacePixels", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#endWriteEmpty()"/>
@@ -298,7 +298,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public void EndWriteEmpty()
         {
-            IExecute("endWriteEmpty");
+            IExecuteWithSignature("endWriteEmpty", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#endWriteSequence()"/>
@@ -307,7 +307,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public void EndWriteSequence()
         {
-            IExecute("endWriteSequence");
+            IExecuteWithSignature("endWriteSequence", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#prepareInsertEmpty(int,javax.imageio.ImageTypeSpecifier,int,int,javax.imageio.metadata.IIOMetadata,java.util.List,javax.imageio.ImageWriteParam)"/>
@@ -358,21 +358,21 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public void PrepareWriteSequence(Javax.Imageio.Metadata.IIOMetadata arg0)
         {
-            IExecute("prepareWriteSequence", arg0);
+            IExecuteWithSignature("prepareWriteSequence", "(Ljavax/imageio/metadata/IIOMetadata;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#removeAllIIOWriteProgressListeners()"/>
         /// </summary>
         public void RemoveAllIIOWriteProgressListeners()
         {
-            IExecute("removeAllIIOWriteProgressListeners");
+            IExecuteWithSignature("removeAllIIOWriteProgressListeners", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#removeAllIIOWriteWarningListeners()"/>
         /// </summary>
         public void RemoveAllIIOWriteWarningListeners()
         {
-            IExecute("removeAllIIOWriteWarningListeners");
+            IExecuteWithSignature("removeAllIIOWriteWarningListeners", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#removeIIOWriteProgressListener(javax.imageio.event.IIOWriteProgressListener)"/>
@@ -380,7 +380,7 @@ namespace Javax.Imageio
         /// <param name="arg0"><see cref="Javax.Imageio.Event.IIOWriteProgressListener"/></param>
         public void RemoveIIOWriteProgressListener(Javax.Imageio.Event.IIOWriteProgressListener arg0)
         {
-            IExecute("removeIIOWriteProgressListener", arg0);
+            IExecuteWithSignature("removeIIOWriteProgressListener", "(Ljavax/imageio/event/IIOWriteProgressListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#removeIIOWriteWarningListener(javax.imageio.event.IIOWriteWarningListener)"/>
@@ -388,7 +388,7 @@ namespace Javax.Imageio
         /// <param name="arg0"><see cref="Javax.Imageio.Event.IIOWriteWarningListener"/></param>
         public void RemoveIIOWriteWarningListener(Javax.Imageio.Event.IIOWriteWarningListener arg0)
         {
-            IExecute("removeIIOWriteWarningListener", arg0);
+            IExecuteWithSignature("removeIIOWriteWarningListener", "(Ljavax/imageio/event/IIOWriteWarningListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#removeImage(int)"/>
@@ -397,7 +397,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public void RemoveImage(int arg0)
         {
-            IExecute("removeImage", arg0);
+            IExecuteWithSignature("removeImage", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#replaceImageMetadata(int,javax.imageio.metadata.IIOMetadata)"/>
@@ -436,14 +436,14 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public void ReplaceStreamMetadata(Javax.Imageio.Metadata.IIOMetadata arg0)
         {
-            IExecute("replaceStreamMetadata", arg0);
+            IExecuteWithSignature("replaceStreamMetadata", "(Ljavax/imageio/metadata/IIOMetadata;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#reset()"/>
         /// </summary>
         public void Reset()
         {
-            IExecute("reset");
+            IExecuteWithSignature("reset", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#write(java.awt.image.RenderedImage)"/>
@@ -452,7 +452,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public void Write(Java.Awt.ImageNs.RenderedImage arg0)
         {
-            IExecute("write", arg0);
+            IExecuteWithSignature("write", "(Ljava/awt/image/RenderedImage;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#write(javax.imageio.IIOImage)"/>
@@ -461,7 +461,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public void Write(Javax.Imageio.IIOImage arg0)
         {
-            IExecute("write", arg0);
+            IExecuteWithSignature("write", "(Ljavax/imageio/IIOImage;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#writeInsert(int,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)"/>

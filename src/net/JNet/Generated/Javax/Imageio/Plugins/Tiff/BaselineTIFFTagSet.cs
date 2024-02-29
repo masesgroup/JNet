@@ -904,7 +904,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// </summary>
         public static Javax.Imageio.Plugins.Tiff.BaselineTIFFTagSet Instance
         {
-            get { return SExecute<Javax.Imageio.Plugins.Tiff.BaselineTIFFTagSet>(LocalBridgeClazz, "getInstance"); }
+            get { return SExecuteWithSignature<Javax.Imageio.Plugins.Tiff.BaselineTIFFTagSet>(LocalBridgeClazz, "getInstance", "()Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet;"); }
         }
 
         #endregion

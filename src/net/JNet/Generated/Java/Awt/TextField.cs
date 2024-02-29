@@ -78,21 +78,21 @@ namespace Java.Awt
         /// </summary>
         public Java.Awt.EventNs.ActionListener[] ActionListeners
         {
-            get { return IExecuteArray<Java.Awt.EventNs.ActionListener>("getActionListeners"); }
+            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.ActionListener>("getActionListeners", "()[Ljava/awt/event/ActionListener;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextField.html#getColumns()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextField.html#setColumns(int)"/>
         /// </summary>
         public int Columns
         {
-            get { return IExecute<int>("getColumns"); } set { IExecute("setColumns", value); }
+            get { return IExecuteWithSignature<int>("getColumns", "()I"); } set { IExecuteWithSignature("setColumns", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextField.html#getEchoChar()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextField.html#setEchoChar(char)"/>
         /// </summary>
         public char EchoChar
         {
-            get { return IExecute<char>("getEchoChar"); } set { IExecute("setEchoChar", value); }
+            get { return IExecuteWithSignature<char>("getEchoChar", "()C"); } set { IExecuteWithSignature("setEchoChar", "(C)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextField.html#echoCharIsSet()"/>
@@ -101,7 +101,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool EchoCharIsSet()
         {
-            return IExecute<bool>("echoCharIsSet");
+            return IExecuteWithSignature<bool>("echoCharIsSet", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextField.html#getMinimumSize(int)"/>
@@ -110,7 +110,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension GetMinimumSize(int arg0)
         {
-            return IExecute<Java.Awt.Dimension>("getMinimumSize", arg0);
+            return IExecuteWithSignature<Java.Awt.Dimension>("getMinimumSize", "(I)Ljava/awt/Dimension;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextField.html#getPreferredSize(int)"/>
@@ -119,7 +119,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension GetPreferredSize(int arg0)
         {
-            return IExecute<Java.Awt.Dimension>("getPreferredSize", arg0);
+            return IExecuteWithSignature<Java.Awt.Dimension>("getPreferredSize", "(I)Ljava/awt/Dimension;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextField.html#addActionListener(java.awt.event.ActionListener)"/>
@@ -127,7 +127,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
         public void AddActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
-            IExecute("addActionListener", arg0);
+            IExecuteWithSignature("addActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextField.html#removeActionListener(java.awt.event.ActionListener)"/>
@@ -135,7 +135,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
         public void RemoveActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
-            IExecute("removeActionListener", arg0);
+            IExecuteWithSignature("removeActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
         }
 
         #endregion

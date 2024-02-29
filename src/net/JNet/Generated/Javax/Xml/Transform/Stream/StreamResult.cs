@@ -88,21 +88,21 @@ namespace Javax.Xml.Transform.Stream
         /// </summary>
         public Java.Io.OutputStream OutputStream
         {
-            get { return IExecute<Java.Io.OutputStream>("getOutputStream"); } set { IExecute("setOutputStream", value); }
+            get { return IExecuteWithSignature<Java.Io.OutputStream>("getOutputStream", "()Ljava/io/OutputStream;"); } set { IExecuteWithSignature("setOutputStream", "(Ljava/io/OutputStream;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamResult.html#getSystemId()"/> 
         /// </summary>
         public Java.Lang.String SystemId
         {
-            get { return IExecute<Java.Lang.String>("getSystemId"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamResult.html#getWriter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamResult.html#setWriter(java.io.Writer)"/>
         /// </summary>
         public Java.Io.Writer Writer
         {
-            get { return IExecute<Java.Io.Writer>("getWriter"); } set { IExecute("setWriter", value); }
+            get { return IExecuteWithSignature<Java.Io.Writer>("getWriter", "()Ljava/io/Writer;"); } set { IExecuteWithSignature("setWriter", "(Ljava/io/Writer;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamResult.html#setSystemId(java.io.File)"/>
@@ -110,7 +110,7 @@ namespace Javax.Xml.Transform.Stream
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         public void SetSystemId(Java.Io.File arg0)
         {
-            IExecute("setSystemId", arg0);
+            IExecuteWithSignature("setSystemId", "(Ljava/io/File;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamResult.html#setSystemId(java.lang.String)"/>
@@ -118,7 +118,7 @@ namespace Javax.Xml.Transform.Stream
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void SetSystemId(Java.Lang.String arg0)
         {
-            IExecute("setSystemId", arg0);
+            IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

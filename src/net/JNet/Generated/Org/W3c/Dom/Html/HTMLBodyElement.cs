@@ -92,42 +92,42 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Java.Lang.String ALink
         {
-            get { return IExecute<Java.Lang.String>("getALink"); } set { IExecute("setALink", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getALink", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setALink", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLBodyElement.html#getBackground()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLBodyElement.html#setBackground(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Background
         {
-            get { return IExecute<Java.Lang.String>("getBackground"); } set { IExecute("setBackground", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getBackground", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setBackground", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLBodyElement.html#getBgColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLBodyElement.html#setBgColor(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String BgColor
         {
-            get { return IExecute<Java.Lang.String>("getBgColor"); } set { IExecute("setBgColor", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getBgColor", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setBgColor", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLBodyElement.html#getLink()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLBodyElement.html#setLink(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Link
         {
-            get { return IExecute<Java.Lang.String>("getLink"); } set { IExecute("setLink", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getLink", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setLink", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLBodyElement.html#getText()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLBodyElement.html#setText(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Text
         {
-            get { return IExecute<Java.Lang.String>("getText"); } set { IExecute("setText", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getText", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setText", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLBodyElement.html#getVLink()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLBodyElement.html#setVLink(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String VLink
         {
-            get { return IExecute<Java.Lang.String>("getVLink"); } set { IExecute("setVLink", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getVLink", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setVLink", "(Ljava/lang/String;)V", value); }
         }
 
         #endregion

@@ -230,7 +230,7 @@ namespace Java.Sql
         /// </summary>
         public int ColumnCount
         {
-            get { return IExecute<int>("getColumnCount"); }
+            get { return IExecuteWithSignature<int>("getColumnCount", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSetMetaData.html#isAutoIncrement(int)"/>
@@ -240,7 +240,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsAutoIncrement(int arg0)
         {
-            return IExecute<bool>("isAutoIncrement", arg0);
+            return IExecuteWithSignature<bool>("isAutoIncrement", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSetMetaData.html#isCaseSensitive(int)"/>
@@ -250,7 +250,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsCaseSensitive(int arg0)
         {
-            return IExecute<bool>("isCaseSensitive", arg0);
+            return IExecuteWithSignature<bool>("isCaseSensitive", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSetMetaData.html#isCurrency(int)"/>
@@ -260,7 +260,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsCurrency(int arg0)
         {
-            return IExecute<bool>("isCurrency", arg0);
+            return IExecuteWithSignature<bool>("isCurrency", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSetMetaData.html#isDefinitelyWritable(int)"/>
@@ -270,7 +270,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsDefinitelyWritable(int arg0)
         {
-            return IExecute<bool>("isDefinitelyWritable", arg0);
+            return IExecuteWithSignature<bool>("isDefinitelyWritable", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSetMetaData.html#isReadOnly(int)"/>
@@ -280,7 +280,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsReadOnly(int arg0)
         {
-            return IExecute<bool>("isReadOnly", arg0);
+            return IExecuteWithSignature<bool>("isReadOnly", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSetMetaData.html#isSearchable(int)"/>
@@ -290,7 +290,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsSearchable(int arg0)
         {
-            return IExecute<bool>("isSearchable", arg0);
+            return IExecuteWithSignature<bool>("isSearchable", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSetMetaData.html#isSigned(int)"/>
@@ -300,7 +300,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsSigned(int arg0)
         {
-            return IExecute<bool>("isSigned", arg0);
+            return IExecuteWithSignature<bool>("isSigned", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSetMetaData.html#isWritable(int)"/>
@@ -310,7 +310,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsWritable(int arg0)
         {
-            return IExecute<bool>("isWritable", arg0);
+            return IExecuteWithSignature<bool>("isWritable", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSetMetaData.html#getColumnDisplaySize(int)"/>
@@ -320,7 +320,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public int GetColumnDisplaySize(int arg0)
         {
-            return IExecute<int>("getColumnDisplaySize", arg0);
+            return IExecuteWithSignature<int>("getColumnDisplaySize", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSetMetaData.html#getColumnType(int)"/>
@@ -330,7 +330,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public int GetColumnType(int arg0)
         {
-            return IExecute<int>("getColumnType", arg0);
+            return IExecuteWithSignature<int>("getColumnType", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSetMetaData.html#getPrecision(int)"/>
@@ -340,7 +340,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public int GetPrecision(int arg0)
         {
-            return IExecute<int>("getPrecision", arg0);
+            return IExecuteWithSignature<int>("getPrecision", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSetMetaData.html#getScale(int)"/>
@@ -350,7 +350,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public int GetScale(int arg0)
         {
-            return IExecute<int>("getScale", arg0);
+            return IExecuteWithSignature<int>("getScale", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSetMetaData.html#isNullable(int)"/>
@@ -360,7 +360,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public int IsNullable(int arg0)
         {
-            return IExecute<int>("isNullable", arg0);
+            return IExecuteWithSignature<int>("isNullable", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSetMetaData.html#getCatalogName(int)"/>
@@ -370,7 +370,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Lang.String GetCatalogName(int arg0)
         {
-            return IExecute<Java.Lang.String>("getCatalogName", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getCatalogName", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSetMetaData.html#getColumnClassName(int)"/>
@@ -380,7 +380,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Lang.String GetColumnClassName(int arg0)
         {
-            return IExecute<Java.Lang.String>("getColumnClassName", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getColumnClassName", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSetMetaData.html#getColumnLabel(int)"/>
@@ -390,7 +390,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Lang.String GetColumnLabel(int arg0)
         {
-            return IExecute<Java.Lang.String>("getColumnLabel", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getColumnLabel", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSetMetaData.html#getColumnName(int)"/>
@@ -400,7 +400,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Lang.String GetColumnName(int arg0)
         {
-            return IExecute<Java.Lang.String>("getColumnName", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getColumnName", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSetMetaData.html#getColumnTypeName(int)"/>
@@ -410,7 +410,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Lang.String GetColumnTypeName(int arg0)
         {
-            return IExecute<Java.Lang.String>("getColumnTypeName", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getColumnTypeName", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSetMetaData.html#getSchemaName(int)"/>
@@ -420,7 +420,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Lang.String GetSchemaName(int arg0)
         {
-            return IExecute<Java.Lang.String>("getSchemaName", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getSchemaName", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSetMetaData.html#getTableName(int)"/>
@@ -430,7 +430,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Lang.String GetTableName(int arg0)
         {
-            return IExecute<Java.Lang.String>("getTableName", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getTableName", "(I)Ljava/lang/String;", arg0);
         }
 
         #endregion

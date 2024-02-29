@@ -50,42 +50,42 @@ namespace Java.Security.Cert
         /// </summary>
         public Java.Util.List<Java.Security.Cert.Extension> OcspExtensions
         {
-            get { return IExecute<Java.Util.List<Java.Security.Cert.Extension>>("getOcspExtensions"); } set { IExecute("setOcspExtensions", value); }
+            get { return IExecuteWithSignature<Java.Util.List<Java.Security.Cert.Extension>>("getOcspExtensions", "()Ljava/util/List;"); } set { IExecuteWithSignature("setOcspExtensions", "(Ljava/util/List;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXRevocationChecker.html#getOcspResponder()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXRevocationChecker.html#setOcspResponder(java.net.URI)"/>
         /// </summary>
         public Java.Net.URI OcspResponder
         {
-            get { return IExecute<Java.Net.URI>("getOcspResponder"); } set { IExecute("setOcspResponder", value); }
+            get { return IExecuteWithSignature<Java.Net.URI>("getOcspResponder", "()Ljava/net/URI;"); } set { IExecuteWithSignature("setOcspResponder", "(Ljava/net/URI;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXRevocationChecker.html#getOcspResponderCert()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXRevocationChecker.html#setOcspResponderCert(java.security.cert.X509Certificate)"/>
         /// </summary>
         public Java.Security.Cert.X509Certificate OcspResponderCert
         {
-            get { return IExecute<Java.Security.Cert.X509Certificate>("getOcspResponderCert"); } set { IExecute("setOcspResponderCert", value); }
+            get { return IExecuteWithSignature<Java.Security.Cert.X509Certificate>("getOcspResponderCert", "()Ljava/security/cert/X509Certificate;"); } set { IExecuteWithSignature("setOcspResponderCert", "(Ljava/security/cert/X509Certificate;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXRevocationChecker.html#getOcspResponses()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXRevocationChecker.html#setOcspResponses(java.util.Map)"/>
         /// </summary>
         public Java.Util.Map<Java.Security.Cert.X509Certificate, byte[]> OcspResponses
         {
-            get { return IExecute<Java.Util.Map<Java.Security.Cert.X509Certificate, byte[]>>("getOcspResponses"); } set { IExecute("setOcspResponses", value); }
+            get { return IExecuteWithSignature<Java.Util.Map<Java.Security.Cert.X509Certificate, byte[]>>("getOcspResponses", "()Ljava/util/Map;"); } set { IExecuteWithSignature("setOcspResponses", "(Ljava/util/Map;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXRevocationChecker.html#getOptions()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXRevocationChecker.html#setOptions(java.util.Set)"/>
         /// </summary>
         public Java.Util.Set<Java.Security.Cert.PKIXRevocationChecker.Option> Options
         {
-            get { return IExecute<Java.Util.Set<Java.Security.Cert.PKIXRevocationChecker.Option>>("getOptions"); } set { IExecute("setOptions", value); }
+            get { return IExecuteWithSignature<Java.Util.Set<Java.Security.Cert.PKIXRevocationChecker.Option>>("getOptions", "()Ljava/util/Set;"); } set { IExecuteWithSignature("setOptions", "(Ljava/util/Set;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXRevocationChecker.html#getSoftFailExceptions()"/> 
         /// </summary>
         public Java.Util.List<Java.Security.Cert.CertPathValidatorException> SoftFailExceptions
         {
-            get { return IExecute<Java.Util.List<Java.Security.Cert.CertPathValidatorException>>("getSoftFailExceptions"); }
+            get { return IExecuteWithSignature<Java.Util.List<Java.Security.Cert.CertPathValidatorException>>("getSoftFailExceptions", "()Ljava/util/List;"); }
         }
 
         #endregion
@@ -138,7 +138,7 @@ namespace Java.Security.Cert
             /// <returns><see cref="Java.Security.Cert.PKIXRevocationChecker.Option"/></returns>
             public static Java.Security.Cert.PKIXRevocationChecker.Option ValueOf(Java.Lang.String arg0)
             {
-                return SExecute<Java.Security.Cert.PKIXRevocationChecker.Option>(LocalBridgeClazz, "valueOf", arg0);
+                return SExecuteWithSignature<Java.Security.Cert.PKIXRevocationChecker.Option>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/security/cert/PKIXRevocationChecker$Option;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXRevocationChecker.Option.html#values()"/>
@@ -147,7 +147,7 @@ namespace Java.Security.Cert
             /// <returns><see cref="Java.Security.Cert.PKIXRevocationChecker.Option"/></returns>
             public static Java.Security.Cert.PKIXRevocationChecker.Option[] Values()
             {
-                return SExecuteArray<Java.Security.Cert.PKIXRevocationChecker.Option>(LocalBridgeClazz, "values");
+                return SExecuteWithSignatureArray<Java.Security.Cert.PKIXRevocationChecker.Option>(LocalBridgeClazz, "values", "()[Ljava/security/cert/PKIXRevocationChecker$Option;");
             }
 
             #endregion

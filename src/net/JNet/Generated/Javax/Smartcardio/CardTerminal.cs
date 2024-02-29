@@ -50,7 +50,7 @@ namespace Javax.Smartcardio
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminal.html#isCardPresent()"/>
@@ -60,7 +60,7 @@ namespace Javax.Smartcardio
         /// <exception cref="Javax.Smartcardio.CardException"/>
         public bool IsCardPresent()
         {
-            return IExecute<bool>("isCardPresent");
+            return IExecuteWithSignature<bool>("isCardPresent", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminal.html#waitForCardAbsent(long)"/>
@@ -70,7 +70,7 @@ namespace Javax.Smartcardio
         /// <exception cref="Javax.Smartcardio.CardException"/>
         public bool WaitForCardAbsent(long arg0)
         {
-            return IExecute<bool>("waitForCardAbsent", arg0);
+            return IExecuteWithSignature<bool>("waitForCardAbsent", "(J)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminal.html#waitForCardPresent(long)"/>
@@ -80,7 +80,7 @@ namespace Javax.Smartcardio
         /// <exception cref="Javax.Smartcardio.CardException"/>
         public bool WaitForCardPresent(long arg0)
         {
-            return IExecute<bool>("waitForCardPresent", arg0);
+            return IExecuteWithSignature<bool>("waitForCardPresent", "(J)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminal.html#connect(java.lang.String)"/>
@@ -90,7 +90,7 @@ namespace Javax.Smartcardio
         /// <exception cref="Javax.Smartcardio.CardException"/>
         public Javax.Smartcardio.Card Connect(Java.Lang.String arg0)
         {
-            return IExecute<Javax.Smartcardio.Card>("connect", arg0);
+            return IExecuteWithSignature<Javax.Smartcardio.Card>("connect", "(Ljava/lang/String;)Ljavax/smartcardio/Card;", arg0);
         }
 
         #endregion

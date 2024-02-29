@@ -129,21 +129,21 @@ namespace Javax.Swing.Text
         /// </summary>
         public int AttributeCount
         {
-            get { return IExecute<int>("getAttributeCount"); }
+            get { return IExecuteWithSignature<int>("getAttributeCount", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AttributeSet.html#getAttributeNames()"/> 
         /// </summary>
         public Java.Util.Enumeration<object> AttributeNames
         {
-            get { return IExecute<Java.Util.Enumeration<object>>("getAttributeNames"); }
+            get { return IExecuteWithSignature<Java.Util.Enumeration<object>>("getAttributeNames", "()Ljava/util/Enumeration;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AttributeSet.html#getResolveParent()"/> 
         /// </summary>
         public Javax.Swing.Text.AttributeSet ResolveParent
         {
-            get { return IExecute<Javax.Swing.Text.AttributeSet>("getResolveParent"); }
+            get { return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("getResolveParent", "()Ljavax/swing/text/AttributeSet;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AttributeSet.html#containsAttribute(java.lang.Object,java.lang.Object)"/>
@@ -162,7 +162,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="bool"/></returns>
         public bool ContainsAttributes(Javax.Swing.Text.AttributeSet arg0)
         {
-            return IExecute<bool>("containsAttributes", arg0);
+            return IExecuteWithSignature<bool>("containsAttributes", "(Ljavax/swing/text/AttributeSet;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AttributeSet.html#isDefined(java.lang.Object)"/>
@@ -171,7 +171,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="bool"/></returns>
         public bool IsDefined(object arg0)
         {
-            return IExecute<bool>("isDefined", arg0);
+            return IExecuteWithSignature<bool>("isDefined", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AttributeSet.html#isEqual(javax.swing.text.AttributeSet)"/>
@@ -180,7 +180,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="bool"/></returns>
         public bool IsEqual(Javax.Swing.Text.AttributeSet arg0)
         {
-            return IExecute<bool>("isEqual", arg0);
+            return IExecuteWithSignature<bool>("isEqual", "(Ljavax/swing/text/AttributeSet;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AttributeSet.html#getAttribute(java.lang.Object)"/>
@@ -189,7 +189,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="object"/></returns>
         public object GetAttribute(object arg0)
         {
-            return IExecute("getAttribute", arg0);
+            return IExecuteWithSignature("getAttribute", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AttributeSet.html#copyAttributes()"/>
@@ -198,7 +198,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
         public Javax.Swing.Text.AttributeSet CopyAttributes()
         {
-            return IExecute<Javax.Swing.Text.AttributeSet>("copyAttributes");
+            return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("copyAttributes", "()Ljavax/swing/text/AttributeSet;");
         }
 
         #endregion

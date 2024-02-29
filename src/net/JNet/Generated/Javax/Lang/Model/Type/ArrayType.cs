@@ -72,7 +72,7 @@ namespace Javax.Lang.Model.Type
         /// </summary>
         public Javax.Lang.Model.Type.TypeMirror ComponentType
         {
-            get { return IExecute<Javax.Lang.Model.Type.TypeMirror>("getComponentType"); }
+            get { return IExecuteWithSignature<Javax.Lang.Model.Type.TypeMirror>("getComponentType", "()Ljavax/lang/model/type/TypeMirror;"); }
         }
 
         #endregion

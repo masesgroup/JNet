@@ -152,35 +152,35 @@ namespace Javax.Print
         /// </summary>
         public Javax.Print.Attribute.PrintServiceAttributeSet Attributes
         {
-            get { return IExecute<Javax.Print.Attribute.PrintServiceAttributeSet>("getAttributes"); }
+            get { return IExecuteWithSignature<Javax.Print.Attribute.PrintServiceAttributeSet>("getAttributes", "()Ljavax/print/attribute/PrintServiceAttributeSet;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#getServiceUIFactory()"/> 
         /// </summary>
         public Javax.Print.ServiceUIFactory ServiceUIFactory
         {
-            get { return IExecute<Javax.Print.ServiceUIFactory>("getServiceUIFactory"); }
+            get { return IExecuteWithSignature<Javax.Print.ServiceUIFactory>("getServiceUIFactory", "()Ljavax/print/ServiceUIFactory;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#getSupportedAttributeCategories()"/> 
         /// </summary>
         public Java.Lang.Class[] SupportedAttributeCategories
         {
-            get { return IExecuteArray<Java.Lang.Class>("getSupportedAttributeCategories"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.Class>("getSupportedAttributeCategories", "()[Ljava/lang/Class;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#getSupportedDocFlavors()"/> 
         /// </summary>
         public Javax.Print.DocFlavor[] SupportedDocFlavors
         {
-            get { return IExecuteArray<Javax.Print.DocFlavor>("getSupportedDocFlavors"); }
+            get { return IExecuteWithSignatureArray<Javax.Print.DocFlavor>("getSupportedDocFlavors", "()[Ljavax/print/DocFlavor;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#getAttribute(java.lang.Class)"/>
@@ -199,7 +199,7 @@ namespace Javax.Print
         /// <returns><see cref="bool"/></returns>
         public bool IsAttributeCategorySupported(Java.Lang.Class arg0)
         {
-            return IExecute<bool>("isAttributeCategorySupported", arg0);
+            return IExecuteWithSignature<bool>("isAttributeCategorySupported", "(Ljava/lang/Class;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#isAttributeValueSupported(javax.print.attribute.Attribute,javax.print.DocFlavor,javax.print.attribute.AttributeSet)"/>
@@ -219,7 +219,7 @@ namespace Javax.Print
         /// <returns><see cref="bool"/></returns>
         public bool IsDocFlavorSupported(Javax.Print.DocFlavor arg0)
         {
-            return IExecute<bool>("isDocFlavorSupported", arg0);
+            return IExecuteWithSignature<bool>("isDocFlavorSupported", "(Ljavax/print/DocFlavor;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#getDefaultAttributeValue(java.lang.Class)"/>
@@ -228,7 +228,7 @@ namespace Javax.Print
         /// <returns><see cref="object"/></returns>
         public object GetDefaultAttributeValue(Java.Lang.Class arg0)
         {
-            return IExecute("getDefaultAttributeValue", arg0);
+            return IExecuteWithSignature("getDefaultAttributeValue", "(Ljava/lang/Class;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#getSupportedAttributeValues(java.lang.Class,javax.print.DocFlavor,javax.print.attribute.AttributeSet)"/>
@@ -258,7 +258,7 @@ namespace Javax.Print
         /// <returns><see cref="Javax.Print.DocPrintJob"/></returns>
         public Javax.Print.DocPrintJob CreatePrintJob()
         {
-            return IExecute<Javax.Print.DocPrintJob>("createPrintJob");
+            return IExecuteWithSignature<Javax.Print.DocPrintJob>("createPrintJob", "()Ljavax/print/DocPrintJob;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#addPrintServiceAttributeListener(javax.print.event.PrintServiceAttributeListener)"/>
@@ -266,7 +266,7 @@ namespace Javax.Print
         /// <param name="arg0"><see cref="Javax.Print.Event.PrintServiceAttributeListener"/></param>
         public void AddPrintServiceAttributeListener(Javax.Print.Event.PrintServiceAttributeListener arg0)
         {
-            IExecute("addPrintServiceAttributeListener", arg0);
+            IExecuteWithSignature("addPrintServiceAttributeListener", "(Ljavax/print/event/PrintServiceAttributeListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#removePrintServiceAttributeListener(javax.print.event.PrintServiceAttributeListener)"/>
@@ -274,7 +274,7 @@ namespace Javax.Print
         /// <param name="arg0"><see cref="Javax.Print.Event.PrintServiceAttributeListener"/></param>
         public void RemovePrintServiceAttributeListener(Javax.Print.Event.PrintServiceAttributeListener arg0)
         {
-            IExecute("removePrintServiceAttributeListener", arg0);
+            IExecuteWithSignature("removePrintServiceAttributeListener", "(Ljavax/print/event/PrintServiceAttributeListener;)V", arg0);
         }
 
         #endregion

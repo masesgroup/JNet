@@ -78,7 +78,7 @@ namespace Java.Lang
         /// <exception cref="Java.Io.IOException"/>
         public int Read(Java.Nio.CharBuffer arg0)
         {
-            return IExecute<int>("read", arg0);
+            return IExecuteWithSignature<int>("read", "(Ljava/nio/CharBuffer;)I", arg0);
         }
 
         #endregion
