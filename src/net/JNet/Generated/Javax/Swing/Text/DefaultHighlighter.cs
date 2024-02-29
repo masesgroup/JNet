@@ -56,7 +56,7 @@ namespace Javax.Swing.Text
         /// </summary>
         public bool DrawsLayeredHighlights
         {
-            get { return IExecute<bool>("getDrawsLayeredHighlights"); } set { IExecute("setDrawsLayeredHighlights", value); }
+            get { return IExecuteWithSignature<bool>("getDrawsLayeredHighlights", "()Z"); } set { IExecuteWithSignature("setDrawsLayeredHighlights", "(Z)V", value); }
         }
 
         #endregion
@@ -95,7 +95,7 @@ namespace Javax.Swing.Text
             /// </summary>
             public Java.Awt.Color Color
             {
-                get { return IExecute<Java.Awt.Color>("getColor"); }
+                get { return IExecuteWithSignature<Java.Awt.Color>("getColor", "()Ljava/awt/Color;"); }
             }
 
             #endregion

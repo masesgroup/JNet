@@ -59,7 +59,7 @@ namespace Javax.Swing.Text
         /// </summary>
         public int FlowAxis
         {
-            get { return IExecute<int>("getFlowAxis"); }
+            get { return IExecuteWithSignature<int>("getFlowAxis", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/FlowView.html#getFlowSpan(int)"/>
@@ -68,7 +68,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="int"/></returns>
         public int GetFlowSpan(int arg0)
         {
-            return IExecute<int>("getFlowSpan", arg0);
+            return IExecuteWithSignature<int>("getFlowSpan", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/FlowView.html#getFlowStart(int)"/>
@@ -77,7 +77,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="int"/></returns>
         public int GetFlowStart(int arg0)
         {
-            return IExecute<int>("getFlowStart", arg0);
+            return IExecuteWithSignature<int>("getFlowStart", "(I)I", arg0);
         }
 
         #endregion
@@ -129,7 +129,7 @@ namespace Javax.Swing.Text
             /// <param name="arg0"><see cref="Javax.Swing.Text.FlowView"/></param>
             public void Layout(Javax.Swing.Text.FlowView arg0)
             {
-                IExecute("layout", arg0);
+                IExecuteWithSignature("layout", "(Ljavax/swing/text/FlowView;)V", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/FlowView.FlowStrategy.html#removeUpdate(javax.swing.text.FlowView,javax.swing.event.DocumentEvent,java.awt.Rectangle)"/>

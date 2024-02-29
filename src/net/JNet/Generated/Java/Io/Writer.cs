@@ -60,7 +60,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.Writer"/></returns>
         public static Java.Io.Writer NullWriter()
         {
-            return SExecute<Java.Io.Writer>(LocalBridgeClazz, "nullWriter");
+            return SExecuteWithSignature<Java.Io.Writer>(LocalBridgeClazz, "nullWriter", "()Ljava/io/Writer;");
         }
 
         #endregion
@@ -73,7 +73,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
-            IExecute("close");
+            IExecuteWithSignature("close", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Writer.html#flush()"/>
@@ -82,7 +82,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Flush()
         {
-            IExecute("flush");
+            IExecuteWithSignature("flush", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Writer.html#write(char[],int,int)"/>
@@ -103,7 +103,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.Appendable Append(char arg0)
         {
-            return IExecute<Java.Lang.Appendable>("append", arg0);
+            return IExecuteWithSignature<Java.Lang.Appendable>("append", "(C)Ljava/lang/Appendable;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Writer.html#append(java.lang.CharSequence,int,int)"/>
@@ -125,7 +125,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.Appendable Append(Java.Lang.CharSequence arg0)
         {
-            return IExecute<Java.Lang.Appendable>("append", arg0);
+            return IExecuteWithSignature<Java.Lang.Appendable>("append", "(Ljava/lang/CharSequence;)Ljava/lang/Appendable;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Writer.html#write(char[])"/>
@@ -134,7 +134,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Write(char[] arg0)
         {
-            IExecute("write", new object[] { arg0 });
+            IExecuteWithSignature("write", "([C)V", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Writer.html#write(int)"/>
@@ -143,7 +143,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Write(int arg0)
         {
-            IExecute("write", arg0);
+            IExecuteWithSignature("write", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Writer.html#write(java.lang.String,int,int)"/>
@@ -163,7 +163,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Write(Java.Lang.String arg0)
         {
-            IExecute("write", arg0);
+            IExecuteWithSignature("write", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

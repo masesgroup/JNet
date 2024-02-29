@@ -58,14 +58,14 @@ namespace Javax.Smartcardio
         /// </summary>
         public byte[] Bytes
         {
-            get { return IExecuteArray<byte>("getBytes"); }
+            get { return IExecuteWithSignatureArray<byte>("getBytes", "()[B"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/ATR.html#getHistoricalBytes()"/> 
         /// </summary>
         public byte[] HistoricalBytes
         {
-            get { return IExecuteArray<byte>("getHistoricalBytes"); }
+            get { return IExecuteWithSignatureArray<byte>("getHistoricalBytes", "()[B"); }
         }
 
         #endregion

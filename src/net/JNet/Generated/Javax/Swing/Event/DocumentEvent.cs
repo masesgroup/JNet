@@ -90,28 +90,28 @@ namespace Javax.Swing.Event
         /// </summary>
         public Javax.Swing.Text.Document Document
         {
-            get { return IExecute<Javax.Swing.Text.Document>("getDocument"); }
+            get { return IExecuteWithSignature<Javax.Swing.Text.Document>("getDocument", "()Ljavax/swing/text/Document;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.html#getLength()"/> 
         /// </summary>
         public int Length
         {
-            get { return IExecute<int>("getLength"); }
+            get { return IExecuteWithSignature<int>("getLength", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.html#getOffset()"/> 
         /// </summary>
         public int Offset
         {
-            get { return IExecute<int>("getOffset"); }
+            get { return IExecuteWithSignature<int>("getOffset", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.html#getType()"/> 
         /// </summary>
         public Javax.Swing.Event.DocumentEvent.EventType Type
         {
-            get { return IExecute<Javax.Swing.Event.DocumentEvent.EventType>("getType"); }
+            get { return IExecuteWithSignature<Javax.Swing.Event.DocumentEvent.EventType>("getType", "()Ljavax/swing/event/DocumentEvent$EventType;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.html#getChange(javax.swing.text.Element)"/>
@@ -120,7 +120,7 @@ namespace Javax.Swing.Event
         /// <returns><see cref="Javax.Swing.Event.DocumentEvent.ElementChange"/></returns>
         public Javax.Swing.Event.DocumentEvent.ElementChange GetChange(Javax.Swing.Text.Element arg0)
         {
-            return IExecute<Javax.Swing.Event.DocumentEvent.ElementChange>("getChange", arg0);
+            return IExecuteWithSignature<Javax.Swing.Event.DocumentEvent.ElementChange>("getChange", "(Ljavax/swing/text/Element;)Ljavax/swing/event/DocumentEvent$ElementChange;", arg0);
         }
 
         #endregion
@@ -151,28 +151,28 @@ namespace Javax.Swing.Event
             /// </summary>
             public Javax.Swing.Text.Element[] ChildrenAdded
             {
-                get { return IExecuteArray<Javax.Swing.Text.Element>("getChildrenAdded"); }
+                get { return IExecuteWithSignatureArray<Javax.Swing.Text.Element>("getChildrenAdded", "()[Ljavax/swing/text/Element;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.ElementChange.html#getChildrenRemoved()"/> 
             /// </summary>
             public Javax.Swing.Text.Element[] ChildrenRemoved
             {
-                get { return IExecuteArray<Javax.Swing.Text.Element>("getChildrenRemoved"); }
+                get { return IExecuteWithSignatureArray<Javax.Swing.Text.Element>("getChildrenRemoved", "()[Ljavax/swing/text/Element;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.ElementChange.html#getElement()"/> 
             /// </summary>
             public Javax.Swing.Text.Element Element
             {
-                get { return IExecute<Javax.Swing.Text.Element>("getElement"); }
+                get { return IExecuteWithSignature<Javax.Swing.Text.Element>("getElement", "()Ljavax/swing/text/Element;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.ElementChange.html#getIndex()"/> 
             /// </summary>
             public int Index
             {
-                get { return IExecute<int>("getIndex"); }
+                get { return IExecuteWithSignature<int>("getIndex", "()I"); }
             }
 
             #endregion

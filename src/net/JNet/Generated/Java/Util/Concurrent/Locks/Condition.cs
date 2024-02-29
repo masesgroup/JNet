@@ -122,7 +122,7 @@ namespace Java.Util.Concurrent.Locks
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool AwaitUntil(Java.Util.Date arg0)
         {
-            return IExecute<bool>("awaitUntil", arg0);
+            return IExecuteWithSignature<bool>("awaitUntil", "(Ljava/util/Date;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Condition.html#awaitNanos(long)"/>
@@ -132,7 +132,7 @@ namespace Java.Util.Concurrent.Locks
         /// <exception cref="Java.Lang.InterruptedException"/>
         public long AwaitNanos(long arg0)
         {
-            return IExecute<long>("awaitNanos", arg0);
+            return IExecuteWithSignature<long>("awaitNanos", "(J)J", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Condition.html#await()"/>
@@ -141,28 +141,28 @@ namespace Java.Util.Concurrent.Locks
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Await()
         {
-            IExecute("await");
+            IExecuteWithSignature("await", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Condition.html#awaitUninterruptibly()"/>
         /// </summary>
         public void AwaitUninterruptibly()
         {
-            IExecute("awaitUninterruptibly");
+            IExecuteWithSignature("awaitUninterruptibly", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Condition.html#signal()"/>
         /// </summary>
         public void Signal()
         {
-            IExecute("signal");
+            IExecuteWithSignature("signal", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Condition.html#signalAll()"/>
         /// </summary>
         public void SignalAll()
         {
-            IExecute("signalAll");
+            IExecuteWithSignature("signalAll", "()V");
         }
 
         #endregion

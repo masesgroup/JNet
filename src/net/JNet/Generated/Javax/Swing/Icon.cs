@@ -84,14 +84,14 @@ namespace Javax.Swing
         /// </summary>
         public int IconHeight
         {
-            get { return IExecute<int>("getIconHeight"); }
+            get { return IExecuteWithSignature<int>("getIconHeight", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Icon.html#getIconWidth()"/> 
         /// </summary>
         public int IconWidth
         {
-            get { return IExecute<int>("getIconWidth"); }
+            get { return IExecuteWithSignature<int>("getIconWidth", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Icon.html#paintIcon(java.awt.Component,java.awt.Graphics,int,int)"/>

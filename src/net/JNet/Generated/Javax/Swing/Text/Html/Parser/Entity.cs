@@ -70,7 +70,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <returns><see cref="int"/></returns>
         public static int Name2type(Java.Lang.String arg0)
         {
-            return SExecute<int>(LocalBridgeClazz, "name2type", arg0);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "name2type", "(Ljava/lang/String;)I", arg0);
         }
 
         #endregion
@@ -81,28 +81,28 @@ namespace Javax.Swing.Text.Html.Parser
         /// </summary>
         public char[] Data
         {
-            get { return IExecuteArray<char>("getData"); }
+            get { return IExecuteWithSignatureArray<char>("getData", "()[C"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Entity.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Entity.html#getString()"/> 
         /// </summary>
         public Java.Lang.String String
         {
-            get { return IExecute<Java.Lang.String>("getString"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getString", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Entity.html#getType()"/> 
         /// </summary>
         public int Type
         {
-            get { return IExecute<int>("getType"); }
+            get { return IExecuteWithSignature<int>("getType", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Entity.html#isGeneral()"/>
@@ -111,7 +111,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <returns><see cref="bool"/></returns>
         public bool IsGeneral()
         {
-            return IExecute<bool>("isGeneral");
+            return IExecuteWithSignature<bool>("isGeneral", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Entity.html#isParameter()"/>
@@ -120,7 +120,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <returns><see cref="bool"/></returns>
         public bool IsParameter()
         {
-            return IExecute<bool>("isParameter");
+            return IExecuteWithSignature<bool>("isParameter", "()Z");
         }
 
         #endregion

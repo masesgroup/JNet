@@ -78,7 +78,7 @@ namespace Org.W3c.Dom
         /// </summary>
         public int Length
         {
-            get { return IExecute<int>("getLength"); }
+            get { return IExecuteWithSignature<int>("getLength", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementationList.html#item(int)"/>
@@ -87,7 +87,7 @@ namespace Org.W3c.Dom
         /// <returns><see cref="Org.W3c.Dom.DOMImplementation"/></returns>
         public Org.W3c.Dom.DOMImplementation Item(int arg0)
         {
-            return IExecute<Org.W3c.Dom.DOMImplementation>("item", arg0);
+            return IExecuteWithSignature<Org.W3c.Dom.DOMImplementation>("item", "(I)Lorg/w3c/dom/DOMImplementation;", arg0);
         }
 
         #endregion

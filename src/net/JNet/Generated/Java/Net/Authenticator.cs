@@ -46,7 +46,7 @@ namespace Java.Net
         /// </summary>
         public static Java.Net.Authenticator Default
         {
-            get { return SExecute<Java.Net.Authenticator>(LocalBridgeClazz, "getDefault"); } set { SExecute(LocalBridgeClazz, "setDefault", value); }
+            get { return SExecuteWithSignature<Java.Net.Authenticator>(LocalBridgeClazz, "getDefault", "()Ljava/net/Authenticator;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setDefault", "(Ljava/net/Authenticator;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.html#requestPasswordAuthentication(java.lang.String,java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String,java.net.URL,java.net.Authenticator.RequestorType)"/>
@@ -167,7 +167,7 @@ namespace Java.Net
             /// <returns><see cref="Java.Net.Authenticator.RequestorType"/></returns>
             public static Java.Net.Authenticator.RequestorType ValueOf(Java.Lang.String arg0)
             {
-                return SExecute<Java.Net.Authenticator.RequestorType>(LocalBridgeClazz, "valueOf", arg0);
+                return SExecuteWithSignature<Java.Net.Authenticator.RequestorType>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/net/Authenticator$RequestorType;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.RequestorType.html#values()"/>
@@ -176,7 +176,7 @@ namespace Java.Net
             /// <returns><see cref="Java.Net.Authenticator.RequestorType"/></returns>
             public static Java.Net.Authenticator.RequestorType[] Values()
             {
-                return SExecuteArray<Java.Net.Authenticator.RequestorType>(LocalBridgeClazz, "values");
+                return SExecuteWithSignatureArray<Java.Net.Authenticator.RequestorType>(LocalBridgeClazz, "values", "()[Ljava/net/Authenticator$RequestorType;");
             }
 
             #endregion

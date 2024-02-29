@@ -61,21 +61,21 @@ namespace Javax.Management.Relation
         /// </summary>
         public int ProblemType
         {
-            get { return IExecute<int>("getProblemType"); } set { IExecute("setProblemType", value); }
+            get { return IExecuteWithSignature<int>("getProblemType", "()I"); } set { IExecuteWithSignature("setProblemType", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolved.html#getRoleName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolved.html#setRoleName(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String RoleName
         {
-            get { return IExecute<Java.Lang.String>("getRoleName"); } set { IExecute("setRoleName", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getRoleName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setRoleName", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolved.html#getRoleValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolved.html#setRoleValue(java.util.List)"/>
         /// </summary>
         public Java.Util.List<Javax.Management.ObjectName> RoleValue
         {
-            get { return IExecute<Java.Util.List<Javax.Management.ObjectName>>("getRoleValue"); } set { IExecute("setRoleValue", value); }
+            get { return IExecuteWithSignature<Java.Util.List<Javax.Management.ObjectName>>("getRoleValue", "()Ljava/util/List;"); } set { IExecuteWithSignature("setRoleValue", "(Ljava/util/List;)V", value); }
         }
 
         #endregion

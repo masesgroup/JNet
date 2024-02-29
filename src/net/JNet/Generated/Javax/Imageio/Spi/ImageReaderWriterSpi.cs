@@ -73,56 +73,56 @@ namespace Javax.Imageio.Spi
         /// </summary>
         public Java.Lang.String[] ExtraImageMetadataFormatNames
         {
-            get { return IExecuteArray<Java.Lang.String>("getExtraImageMetadataFormatNames"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.String>("getExtraImageMetadataFormatNames", "()[Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getExtraStreamMetadataFormatNames()"/> 
         /// </summary>
         public Java.Lang.String[] ExtraStreamMetadataFormatNames
         {
-            get { return IExecuteArray<Java.Lang.String>("getExtraStreamMetadataFormatNames"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.String>("getExtraStreamMetadataFormatNames", "()[Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getFileSuffixes()"/> 
         /// </summary>
         public Java.Lang.String[] FileSuffixes
         {
-            get { return IExecuteArray<Java.Lang.String>("getFileSuffixes"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.String>("getFileSuffixes", "()[Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getFormatNames()"/> 
         /// </summary>
         public Java.Lang.String[] FormatNames
         {
-            get { return IExecuteArray<Java.Lang.String>("getFormatNames"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.String>("getFormatNames", "()[Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getMIMETypes()"/> 
         /// </summary>
         public Java.Lang.String[] MIMETypes
         {
-            get { return IExecuteArray<Java.Lang.String>("getMIMETypes"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.String>("getMIMETypes", "()[Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getNativeImageMetadataFormatName()"/> 
         /// </summary>
         public Java.Lang.String NativeImageMetadataFormatName
         {
-            get { return IExecute<Java.Lang.String>("getNativeImageMetadataFormatName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getNativeImageMetadataFormatName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getNativeStreamMetadataFormatName()"/> 
         /// </summary>
         public Java.Lang.String NativeStreamMetadataFormatName
         {
-            get { return IExecute<Java.Lang.String>("getNativeStreamMetadataFormatName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getNativeStreamMetadataFormatName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getPluginClassName()"/> 
         /// </summary>
         public Java.Lang.String PluginClassName
         {
-            get { return IExecute<Java.Lang.String>("getPluginClassName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getPluginClassName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#isStandardImageMetadataFormatSupported()"/>
@@ -131,7 +131,7 @@ namespace Javax.Imageio.Spi
         /// <returns><see cref="bool"/></returns>
         public bool IsStandardImageMetadataFormatSupported()
         {
-            return IExecute<bool>("isStandardImageMetadataFormatSupported");
+            return IExecuteWithSignature<bool>("isStandardImageMetadataFormatSupported", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#isStandardStreamMetadataFormatSupported()"/>
@@ -140,7 +140,7 @@ namespace Javax.Imageio.Spi
         /// <returns><see cref="bool"/></returns>
         public bool IsStandardStreamMetadataFormatSupported()
         {
-            return IExecute<bool>("isStandardStreamMetadataFormatSupported");
+            return IExecuteWithSignature<bool>("isStandardStreamMetadataFormatSupported", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getImageMetadataFormat(java.lang.String)"/>
@@ -149,7 +149,7 @@ namespace Javax.Imageio.Spi
         /// <returns><see cref="Javax.Imageio.Metadata.IIOMetadataFormat"/></returns>
         public Javax.Imageio.Metadata.IIOMetadataFormat GetImageMetadataFormat(Java.Lang.String arg0)
         {
-            return IExecute<Javax.Imageio.Metadata.IIOMetadataFormat>("getImageMetadataFormat", arg0);
+            return IExecuteWithSignature<Javax.Imageio.Metadata.IIOMetadataFormat>("getImageMetadataFormat", "(Ljava/lang/String;)Ljavax/imageio/metadata/IIOMetadataFormat;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getStreamMetadataFormat(java.lang.String)"/>
@@ -158,7 +158,7 @@ namespace Javax.Imageio.Spi
         /// <returns><see cref="Javax.Imageio.Metadata.IIOMetadataFormat"/></returns>
         public Javax.Imageio.Metadata.IIOMetadataFormat GetStreamMetadataFormat(Java.Lang.String arg0)
         {
-            return IExecute<Javax.Imageio.Metadata.IIOMetadataFormat>("getStreamMetadataFormat", arg0);
+            return IExecuteWithSignature<Javax.Imageio.Metadata.IIOMetadataFormat>("getStreamMetadataFormat", "(Ljava/lang/String;)Ljavax/imageio/metadata/IIOMetadataFormat;", arg0);
         }
 
         #endregion

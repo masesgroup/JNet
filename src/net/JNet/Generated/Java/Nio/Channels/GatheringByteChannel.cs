@@ -99,7 +99,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public long Write(Java.Nio.ByteBuffer[] arg0)
         {
-            return IExecute<long>("write", new object[] { arg0 });
+            return IExecuteWithSignature<long>("write", "([Ljava/nio/ByteBuffer;)J", new object[] { arg0 });
         }
 
         #endregion

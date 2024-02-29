@@ -109,14 +109,14 @@ namespace Javax.Security.Auth.X500
         /// </summary>
         public byte[] Encoded
         {
-            get { return IExecuteArray<byte>("getEncoded"); }
+            get { return IExecuteWithSignatureArray<byte>("getEncoded", "()[B"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500Principal.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500Principal.html#getName(java.lang.String,java.util.Map)"/>
@@ -135,7 +135,7 @@ namespace Javax.Security.Auth.X500
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetName(Java.Lang.String arg0)
         {
-            return IExecute<Java.Lang.String>("getName", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getName", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
 
         #endregion

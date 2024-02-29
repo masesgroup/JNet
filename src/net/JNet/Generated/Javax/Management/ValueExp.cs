@@ -84,7 +84,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.InvalidApplicationException"/>
         public Javax.Management.ValueExp Apply(Javax.Management.ObjectName arg0)
         {
-            return IExecute<Javax.Management.ValueExp>("apply", arg0);
+            return IExecuteWithSignature<Javax.Management.ValueExp>("apply", "(Ljavax/management/ObjectName;)Ljavax/management/ValueExp;", arg0);
         }
 
         #endregion

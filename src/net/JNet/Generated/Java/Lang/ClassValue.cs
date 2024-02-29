@@ -52,7 +52,7 @@ namespace Java.Lang
         /// <returns><see cref="object"/></returns>
         public object Get(Java.Lang.Class arg0)
         {
-            return IExecute("get", arg0);
+            return IExecuteWithSignature("get", "(Ljava/lang/Class;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassValue.html#remove(java.lang.Class)"/>
@@ -60,7 +60,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         public void Remove(Java.Lang.Class arg0)
         {
-            IExecute("remove", arg0);
+            IExecuteWithSignature("remove", "(Ljava/lang/Class;)V", arg0);
         }
 
         #endregion
@@ -104,7 +104,7 @@ namespace Java.Lang
         /// <returns><typeparamref name="T"/></returns>
         public T Get(Java.Lang.Class arg0)
         {
-            return IExecute<T>("get", arg0);
+            return IExecuteWithSignature<T>("get", "(Ljava/lang/Class;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassValue.html#remove(java.lang.Class)"/>
@@ -112,7 +112,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         public void Remove(Java.Lang.Class arg0)
         {
-            IExecute("remove", arg0);
+            IExecuteWithSignature("remove", "(Ljava/lang/Class;)V", arg0);
         }
 
         #endregion

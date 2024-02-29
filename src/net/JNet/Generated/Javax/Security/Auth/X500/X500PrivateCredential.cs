@@ -69,21 +69,21 @@ namespace Javax.Security.Auth.X500
         /// </summary>
         public Java.Lang.String Alias
         {
-            get { return IExecute<Java.Lang.String>("getAlias"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getAlias", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500PrivateCredential.html#getCertificate()"/> 
         /// </summary>
         public Java.Security.Cert.X509Certificate Certificate
         {
-            get { return IExecute<Java.Security.Cert.X509Certificate>("getCertificate"); }
+            get { return IExecuteWithSignature<Java.Security.Cert.X509Certificate>("getCertificate", "()Ljava/security/cert/X509Certificate;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500PrivateCredential.html#getPrivateKey()"/> 
         /// </summary>
         public Java.Security.PrivateKey PrivateKey
         {
-            get { return IExecute<Java.Security.PrivateKey>("getPrivateKey"); }
+            get { return IExecuteWithSignature<Java.Security.PrivateKey>("getPrivateKey", "()Ljava/security/PrivateKey;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500PrivateCredential.html#isDestroyed()"/>
@@ -92,14 +92,14 @@ namespace Javax.Security.Auth.X500
         /// <returns><see cref="bool"/></returns>
         public bool IsDestroyed()
         {
-            return IExecute<bool>("isDestroyed");
+            return IExecuteWithSignature<bool>("isDestroyed", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500PrivateCredential.html#destroy()"/>
         /// </summary>
         public void Destroy()
         {
-            IExecute("destroy");
+            IExecuteWithSignature("destroy", "()V");
         }
 
         #endregion

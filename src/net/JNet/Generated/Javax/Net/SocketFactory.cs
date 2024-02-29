@@ -46,7 +46,7 @@ namespace Javax.Net
         /// </summary>
         public static Javax.Net.SocketFactory Default
         {
-            get { return SExecute<Javax.Net.SocketFactory>(LocalBridgeClazz, "getDefault"); }
+            get { return SExecuteWithSignature<Javax.Net.SocketFactory>(LocalBridgeClazz, "getDefault", "()Ljavax/net/SocketFactory;"); }
         }
 
         #endregion
@@ -110,7 +110,7 @@ namespace Javax.Net
         /// <exception cref="Java.Io.IOException"/>
         public Java.Net.Socket CreateSocket()
         {
-            return IExecute<Java.Net.Socket>("createSocket");
+            return IExecuteWithSignature<Java.Net.Socket>("createSocket", "()Ljava/net/Socket;");
         }
 
         #endregion

@@ -182,7 +182,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><see cref="object"/></returns>
         public object Visit(Javax.Lang.Model.Type.TypeMirror arg0)
         {
-            return IExecute("visit", arg0);
+            return IExecuteWithSignature("visit", "(Ljavax/lang/model/type/TypeMirror;)Ljava/lang/Object;", arg0);
         }
 
         #endregion
@@ -471,7 +471,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><typeparamref name="R"/></returns>
         public R Visit(Javax.Lang.Model.Type.TypeMirror arg0)
         {
-            return IExecute<R>("visit", arg0);
+            return IExecuteWithSignature<R>("visit", "(Ljavax/lang/model/type/TypeMirror;)Ljava/lang/Object;", arg0);
         }
 
         #endregion

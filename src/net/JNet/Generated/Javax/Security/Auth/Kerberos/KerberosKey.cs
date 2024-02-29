@@ -71,42 +71,42 @@ namespace Javax.Security.Auth.Kerberos
         /// </summary>
         public Java.Lang.String Algorithm
         {
-            get { return IExecute<Java.Lang.String>("getAlgorithm"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosKey.html#getEncoded()"/> 
         /// </summary>
         public byte[] Encoded
         {
-            get { return IExecuteArray<byte>("getEncoded"); }
+            get { return IExecuteWithSignatureArray<byte>("getEncoded", "()[B"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosKey.html#getFormat()"/> 
         /// </summary>
         public Java.Lang.String Format
         {
-            get { return IExecute<Java.Lang.String>("getFormat"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getFormat", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosKey.html#getKeyType()"/> 
         /// </summary>
         public int KeyType
         {
-            get { return IExecute<int>("getKeyType"); }
+            get { return IExecuteWithSignature<int>("getKeyType", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosKey.html#getPrincipal()"/> 
         /// </summary>
         public Javax.Security.Auth.Kerberos.KerberosPrincipal Principal
         {
-            get { return IExecute<Javax.Security.Auth.Kerberos.KerberosPrincipal>("getPrincipal"); }
+            get { return IExecuteWithSignature<Javax.Security.Auth.Kerberos.KerberosPrincipal>("getPrincipal", "()Ljavax/security/auth/kerberos/KerberosPrincipal;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosKey.html#getVersionNumber()"/> 
         /// </summary>
         public int VersionNumber
         {
-            get { return IExecute<int>("getVersionNumber"); }
+            get { return IExecuteWithSignature<int>("getVersionNumber", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosKey.html#isDestroyed()"/>
@@ -115,7 +115,7 @@ namespace Javax.Security.Auth.Kerberos
         /// <returns><see cref="bool"/></returns>
         public bool IsDestroyed()
         {
-            return IExecute<bool>("isDestroyed");
+            return IExecuteWithSignature<bool>("isDestroyed", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosKey.html#destroy()"/>
@@ -124,7 +124,7 @@ namespace Javax.Security.Auth.Kerberos
         /// <exception cref="Javax.Security.Auth.DestroyFailedException"/>
         public void Destroy()
         {
-            IExecute("destroy");
+            IExecuteWithSignature("destroy", "()V");
         }
 
         #endregion

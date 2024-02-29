@@ -72,7 +72,7 @@ namespace Javax.Sql.Rowset
         /// </summary>
         public Javax.Sql.Rowset.Predicate Filter
         {
-            get { return IExecute<Javax.Sql.Rowset.Predicate>("getFilter"); } set { IExecute("setFilter", value); }
+            get { return IExecuteWithSignature<Javax.Sql.Rowset.Predicate>("getFilter", "()Ljavax/sql/rowset/Predicate;"); } set { IExecuteWithSignature("setFilter", "(Ljavax/sql/rowset/Predicate;)V", value); }
         }
 
         #endregion

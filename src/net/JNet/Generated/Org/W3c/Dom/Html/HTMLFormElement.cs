@@ -108,70 +108,70 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Java.Lang.String AcceptCharset
         {
-            get { return IExecute<Java.Lang.String>("getAcceptCharset"); } set { IExecute("setAcceptCharset", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getAcceptCharset", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAcceptCharset", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFormElement.html#getAction()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFormElement.html#setAction(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Action
         {
-            get { return IExecute<Java.Lang.String>("getAction"); } set { IExecute("setAction", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getAction", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAction", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFormElement.html#getElements()"/> 
         /// </summary>
         public Org.W3c.Dom.Html.HTMLCollection Elements
         {
-            get { return IExecute<Org.W3c.Dom.Html.HTMLCollection>("getElements"); }
+            get { return IExecuteWithSignature<Org.W3c.Dom.Html.HTMLCollection>("getElements", "()Lorg/w3c/dom/html/HTMLCollection;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFormElement.html#getEnctype()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFormElement.html#setEnctype(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Enctype
         {
-            get { return IExecute<Java.Lang.String>("getEnctype"); } set { IExecute("setEnctype", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getEnctype", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setEnctype", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFormElement.html#getLength()"/> 
         /// </summary>
         public int Length
         {
-            get { return IExecute<int>("getLength"); }
+            get { return IExecuteWithSignature<int>("getLength", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFormElement.html#getMethod()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFormElement.html#setMethod(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Method
         {
-            get { return IExecute<Java.Lang.String>("getMethod"); } set { IExecute("setMethod", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getMethod", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setMethod", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFormElement.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFormElement.html#setName(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); } set { IExecute("setName", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setName", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFormElement.html#getTarget()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFormElement.html#setTarget(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Target
         {
-            get { return IExecute<Java.Lang.String>("getTarget"); } set { IExecute("setTarget", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getTarget", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setTarget", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFormElement.html#reset()"/>
         /// </summary>
         public void Reset()
         {
-            IExecute("reset");
+            IExecuteWithSignature("reset", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFormElement.html#submit()"/>
         /// </summary>
         public void Submit()
         {
-            IExecute("submit");
+            IExecuteWithSignature("submit", "()V");
         }
 
         #endregion

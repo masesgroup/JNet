@@ -103,7 +103,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
         {
-            return IExecute<Java.Lang.String>("name");
+            return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributeView.html#setGroup(java.nio.file.attribute.GroupPrincipal)"/>
@@ -112,7 +112,7 @@ namespace Java.Nio.File.Attribute
         /// <exception cref="Java.Io.IOException"/>
         public void SetGroup(Java.Nio.File.Attribute.GroupPrincipal arg0)
         {
-            IExecute("setGroup", arg0);
+            IExecuteWithSignature("setGroup", "(Ljava/nio/file/attribute/GroupPrincipal;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributeView.html#setPermissions(java.util.Set)"/>
@@ -121,7 +121,7 @@ namespace Java.Nio.File.Attribute
         /// <exception cref="Java.Io.IOException"/>
         public void SetPermissions(Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission> arg0)
         {
-            IExecute("setPermissions", arg0);
+            IExecuteWithSignature("setPermissions", "(Ljava/util/Set;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributeView.html#readAttributes()"/>
@@ -131,7 +131,7 @@ namespace Java.Nio.File.Attribute
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.Attribute.BasicFileAttributes ReadAttributes()
         {
-            return IExecute<Java.Nio.File.Attribute.BasicFileAttributes>("readAttributes");
+            return IExecuteWithSignature<Java.Nio.File.Attribute.BasicFileAttributes>("readAttributes", "()Ljava/nio/file/attribute/BasicFileAttributes;");
         }
 
         #endregion

@@ -52,14 +52,14 @@ namespace Javax.Swing.Plaf.Metal
         /// <returns><see cref="Java.Beans.PropertyChangeListener"/></returns>
         public Java.Beans.PropertyChangeListener CreatePropertyChangeListener()
         {
-            return IExecute<Java.Beans.PropertyChangeListener>("createPropertyChangeListener");
+            return IExecuteWithSignature<Java.Beans.PropertyChangeListener>("createPropertyChangeListener", "()Ljava/beans/PropertyChangeListener;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.html#configureEditor()"/>
         /// </summary>
         public void ConfigureEditor()
         {
-            IExecute("configureEditor");
+            IExecuteWithSignature("configureEditor", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.html#layoutComboBox(java.awt.Container,javax.swing.plaf.metal.MetalComboBoxUI.MetalComboBoxLayoutManager)"/>
@@ -75,7 +75,7 @@ namespace Javax.Swing.Plaf.Metal
         /// </summary>
         public void UnconfigureEditor()
         {
-            IExecute("unconfigureEditor");
+            IExecuteWithSignature("unconfigureEditor", "()V");
         }
 
         #endregion
@@ -115,7 +115,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
             public void SuperLayout(Java.Awt.Container arg0)
             {
-                IExecute("superLayout", arg0);
+                IExecuteWithSignature("superLayout", "(Ljava/awt/Container;)V", arg0);
             }
 
             #endregion

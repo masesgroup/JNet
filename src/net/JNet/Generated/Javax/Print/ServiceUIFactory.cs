@@ -110,7 +110,7 @@ namespace Javax.Print
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] GetUIClassNamesForRole(int arg0)
         {
-            return IExecuteArray<Java.Lang.String>("getUIClassNamesForRole", arg0);
+            return IExecuteWithSignatureArray<Java.Lang.String>("getUIClassNamesForRole", "(I)[Ljava/lang/String;", arg0);
         }
 
         #endregion

@@ -124,7 +124,7 @@ namespace Org.Xml.Sax.Ext
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndCDATA()
         {
-            IExecute("endCDATA");
+            IExecuteWithSignature("endCDATA", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#endDTD()"/>
@@ -133,7 +133,7 @@ namespace Org.Xml.Sax.Ext
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndDTD()
         {
-            IExecute("endDTD");
+            IExecuteWithSignature("endDTD", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#endEntity(java.lang.String)"/>
@@ -142,7 +142,7 @@ namespace Org.Xml.Sax.Ext
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndEntity(Java.Lang.String arg0)
         {
-            IExecute("endEntity", arg0);
+            IExecuteWithSignature("endEntity", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#externalEntityDecl(java.lang.String,java.lang.String,java.lang.String)"/>
@@ -172,7 +172,7 @@ namespace Org.Xml.Sax.Ext
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void StartCDATA()
         {
-            IExecute("startCDATA");
+            IExecuteWithSignature("startCDATA", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#startDTD(java.lang.String,java.lang.String,java.lang.String)"/>
@@ -192,7 +192,7 @@ namespace Org.Xml.Sax.Ext
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void StartEntity(Java.Lang.String arg0)
         {
-            IExecute("startEntity", arg0);
+            IExecuteWithSignature("startEntity", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

@@ -76,7 +76,7 @@ namespace Java.Beans
         /// <returns><see cref="bool"/></returns>
         public bool Value()
         {
-            return IExecute<bool>("value");
+            return IExecuteWithSignature<bool>("value", "()Z");
         }
 
         #endregion

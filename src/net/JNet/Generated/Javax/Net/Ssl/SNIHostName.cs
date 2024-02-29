@@ -64,7 +64,7 @@ namespace Javax.Net.Ssl
         /// <returns><see cref="Javax.Net.Ssl.SNIMatcher"/></returns>
         public static Javax.Net.Ssl.SNIMatcher CreateSNIMatcher(Java.Lang.String arg0)
         {
-            return SExecute<Javax.Net.Ssl.SNIMatcher>(LocalBridgeClazz, "createSNIMatcher", arg0);
+            return SExecuteWithSignature<Javax.Net.Ssl.SNIMatcher>(LocalBridgeClazz, "createSNIMatcher", "(Ljava/lang/String;)Ljavax/net/ssl/SNIMatcher;", arg0);
         }
 
         #endregion
@@ -75,7 +75,7 @@ namespace Javax.Net.Ssl
         /// </summary>
         public Java.Lang.String AsciiName
         {
-            get { return IExecute<Java.Lang.String>("getAsciiName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getAsciiName", "()Ljava/lang/String;"); }
         }
 
         #endregion

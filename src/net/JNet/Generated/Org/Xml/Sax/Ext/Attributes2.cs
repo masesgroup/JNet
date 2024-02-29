@@ -108,7 +108,7 @@ namespace Org.Xml.Sax.Ext
         /// <returns><see cref="bool"/></returns>
         public bool IsDeclared(int arg0)
         {
-            return IExecute<bool>("isDeclared", arg0);
+            return IExecuteWithSignature<bool>("isDeclared", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Attributes2.html#isDeclared(java.lang.String,java.lang.String)"/>
@@ -127,7 +127,7 @@ namespace Org.Xml.Sax.Ext
         /// <returns><see cref="bool"/></returns>
         public bool IsDeclared(Java.Lang.String arg0)
         {
-            return IExecute<bool>("isDeclared", arg0);
+            return IExecuteWithSignature<bool>("isDeclared", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Attributes2.html#isSpecified(int)"/>
@@ -136,7 +136,7 @@ namespace Org.Xml.Sax.Ext
         /// <returns><see cref="bool"/></returns>
         public bool IsSpecified(int arg0)
         {
-            return IExecute<bool>("isSpecified", arg0);
+            return IExecuteWithSignature<bool>("isSpecified", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Attributes2.html#isSpecified(java.lang.String,java.lang.String)"/>
@@ -155,7 +155,7 @@ namespace Org.Xml.Sax.Ext
         /// <returns><see cref="bool"/></returns>
         public bool IsSpecified(Java.Lang.String arg0)
         {
-            return IExecute<bool>("isSpecified", arg0);
+            return IExecuteWithSignature<bool>("isSpecified", "(Ljava/lang/String;)Z", arg0);
         }
 
         #endregion

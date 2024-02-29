@@ -50,7 +50,7 @@ namespace Javax.Swing.Filechooser
         /// </summary>
         public Java.Lang.String Description
         {
-            get { return IExecute<Java.Lang.String>("getDescription"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileFilter.html#accept(java.io.File)"/>
@@ -59,7 +59,7 @@ namespace Javax.Swing.Filechooser
         /// <returns><see cref="bool"/></returns>
         public bool Accept(Java.Io.File arg0)
         {
-            return IExecute<bool>("accept", arg0);
+            return IExecuteWithSignature<bool>("accept", "(Ljava/io/File;)Z", arg0);
         }
 
         #endregion

@@ -202,7 +202,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.AlphaComposite"/></returns>
         public static Java.Awt.AlphaComposite GetInstance(int arg0)
         {
-            return SExecute<Java.Awt.AlphaComposite>(LocalBridgeClazz, "getInstance", arg0);
+            return SExecuteWithSignature<Java.Awt.AlphaComposite>(LocalBridgeClazz, "getInstance", "(I)Ljava/awt/AlphaComposite;", arg0);
         }
 
         #endregion
@@ -213,14 +213,14 @@ namespace Java.Awt
         /// </summary>
         public float Alpha
         {
-            get { return IExecute<float>("getAlpha"); }
+            get { return IExecuteWithSignature<float>("getAlpha", "()F"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#getRule()"/> 
         /// </summary>
         public int Rule
         {
-            get { return IExecute<int>("getRule"); }
+            get { return IExecuteWithSignature<int>("getRule", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#derive(float)"/>
@@ -229,7 +229,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.AlphaComposite"/></returns>
         public Java.Awt.AlphaComposite Derive(float arg0)
         {
-            return IExecute<Java.Awt.AlphaComposite>("derive", arg0);
+            return IExecuteWithSignature<Java.Awt.AlphaComposite>("derive", "(F)Ljava/awt/AlphaComposite;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#derive(int)"/>
@@ -238,7 +238,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.AlphaComposite"/></returns>
         public Java.Awt.AlphaComposite Derive(int arg0)
         {
-            return IExecute<Java.Awt.AlphaComposite>("derive", arg0);
+            return IExecuteWithSignature<Java.Awt.AlphaComposite>("derive", "(I)Ljava/awt/AlphaComposite;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#createContext(java.awt.image.ColorModel,java.awt.image.ColorModel,java.awt.RenderingHints)"/>

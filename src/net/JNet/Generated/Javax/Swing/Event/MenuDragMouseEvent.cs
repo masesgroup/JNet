@@ -86,14 +86,14 @@ namespace Javax.Swing.Event
         /// </summary>
         public Javax.Swing.MenuSelectionManager MenuSelectionManager
         {
-            get { return IExecute<Javax.Swing.MenuSelectionManager>("getMenuSelectionManager"); }
+            get { return IExecuteWithSignature<Javax.Swing.MenuSelectionManager>("getMenuSelectionManager", "()Ljavax/swing/MenuSelectionManager;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseEvent.html#getPath()"/> 
         /// </summary>
         public Javax.Swing.MenuElement[] Path
         {
-            get { return IExecuteArray<Javax.Swing.MenuElement>("getPath"); }
+            get { return IExecuteWithSignatureArray<Javax.Swing.MenuElement>("getPath", "()[Ljavax/swing/MenuElement;"); }
         }
 
         #endregion

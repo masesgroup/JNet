@@ -72,7 +72,7 @@ namespace Org.W3c.Dom.Css
         /// </summary>
         public Java.Lang.String Encoding
         {
-            get { return IExecute<Java.Lang.String>("getEncoding"); } set { IExecute("setEncoding", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getEncoding", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setEncoding", "(Ljava/lang/String;)V", value); }
         }
 
         #endregion

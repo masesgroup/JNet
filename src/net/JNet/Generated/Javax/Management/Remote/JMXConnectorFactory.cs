@@ -78,7 +78,7 @@ namespace Javax.Management.Remote
         /// <exception cref="Java.Io.IOException"/>
         public static Javax.Management.Remote.JMXConnector Connect(Javax.Management.Remote.JMXServiceURL arg0)
         {
-            return SExecute<Javax.Management.Remote.JMXConnector>(LocalBridgeClazz, "connect", arg0);
+            return SExecuteWithSignature<Javax.Management.Remote.JMXConnector>(LocalBridgeClazz, "connect", "(Ljavax/management/remote/JMXServiceURL;)Ljavax/management/remote/JMXConnector;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorFactory.html#newJMXConnector(javax.management.remote.JMXServiceURL,java.util.Map)"/>

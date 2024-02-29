@@ -67,7 +67,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void Write(int arg0)
         {
-            IExecute("write", arg0);
+            IExecuteWithSignature("write", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStreamImpl.html#write(byte[])"/>
@@ -76,7 +76,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void Write(byte[] arg0)
         {
-            IExecute("write", new object[] { arg0 });
+            IExecuteWithSignature("write", "([B)V", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStreamImpl.html#writeBit(int)"/>
@@ -85,7 +85,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void WriteBit(int arg0)
         {
-            IExecute("writeBit", arg0);
+            IExecuteWithSignature("writeBit", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStreamImpl.html#writeBits(long,int)"/>
@@ -104,7 +104,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void WriteBoolean(bool arg0)
         {
-            IExecute("writeBoolean", arg0);
+            IExecuteWithSignature("writeBoolean", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStreamImpl.html#writeByte(int)"/>
@@ -113,7 +113,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void WriteByte(int arg0)
         {
-            IExecute("writeByte", arg0);
+            IExecuteWithSignature("writeByte", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStreamImpl.html#writeBytes(java.lang.String)"/>
@@ -122,7 +122,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void WriteBytes(Java.Lang.String arg0)
         {
-            IExecute("writeBytes", arg0);
+            IExecuteWithSignature("writeBytes", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStreamImpl.html#writeChar(int)"/>
@@ -131,7 +131,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void WriteChar(int arg0)
         {
-            IExecute("writeChar", arg0);
+            IExecuteWithSignature("writeChar", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStreamImpl.html#writeChars(char[],int,int)"/>
@@ -151,7 +151,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void WriteChars(Java.Lang.String arg0)
         {
-            IExecute("writeChars", arg0);
+            IExecuteWithSignature("writeChars", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStreamImpl.html#writeDouble(double)"/>
@@ -160,7 +160,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void WriteDouble(double arg0)
         {
-            IExecute("writeDouble", arg0);
+            IExecuteWithSignature("writeDouble", "(D)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStreamImpl.html#writeDoubles(double[],int,int)"/>
@@ -180,7 +180,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void WriteFloat(float arg0)
         {
-            IExecute("writeFloat", arg0);
+            IExecuteWithSignature("writeFloat", "(F)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStreamImpl.html#writeFloats(float[],int,int)"/>
@@ -200,7 +200,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void WriteInt(int arg0)
         {
-            IExecute("writeInt", arg0);
+            IExecuteWithSignature("writeInt", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStreamImpl.html#writeInts(int[],int,int)"/>
@@ -220,7 +220,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void WriteLong(long arg0)
         {
-            IExecute("writeLong", arg0);
+            IExecuteWithSignature("writeLong", "(J)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStreamImpl.html#writeLongs(long[],int,int)"/>
@@ -240,7 +240,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void WriteShort(int arg0)
         {
-            IExecute("writeShort", arg0);
+            IExecuteWithSignature("writeShort", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStreamImpl.html#writeShorts(short[],int,int)"/>
@@ -260,7 +260,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void WriteUTF(Java.Lang.String arg0)
         {
-            IExecute("writeUTF", arg0);
+            IExecuteWithSignature("writeUTF", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

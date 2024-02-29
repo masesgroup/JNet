@@ -72,7 +72,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Sql.ClientInfoStatus"/></returns>
         public static Java.Sql.ClientInfoStatus ValueOf(Java.Lang.String arg0)
         {
-            return SExecute<Java.Sql.ClientInfoStatus>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecuteWithSignature<Java.Sql.ClientInfoStatus>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/sql/ClientInfoStatus;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ClientInfoStatus.html#values()"/>
@@ -81,7 +81,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Sql.ClientInfoStatus"/></returns>
         public static Java.Sql.ClientInfoStatus[] Values()
         {
-            return SExecuteArray<Java.Sql.ClientInfoStatus>(LocalBridgeClazz, "values");
+            return SExecuteWithSignatureArray<Java.Sql.ClientInfoStatus>(LocalBridgeClazz, "values", "()[Ljava/sql/ClientInfoStatus;");
         }
 
         #endregion

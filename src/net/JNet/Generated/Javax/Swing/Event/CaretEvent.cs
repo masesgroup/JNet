@@ -58,14 +58,14 @@ namespace Javax.Swing.Event
         /// </summary>
         public int Dot
         {
-            get { return IExecute<int>("getDot"); }
+            get { return IExecuteWithSignature<int>("getDot", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CaretEvent.html#getMark()"/> 
         /// </summary>
         public int Mark
         {
-            get { return IExecute<int>("getMark"); }
+            get { return IExecuteWithSignature<int>("getMark", "()I"); }
         }
 
         #endregion

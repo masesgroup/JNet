@@ -52,7 +52,7 @@ namespace Java.Text.Spi
         /// <returns><see cref="Java.Text.Collator"/></returns>
         public Java.Text.Collator GetInstance(Java.Util.Locale arg0)
         {
-            return IExecute<Java.Text.Collator>("getInstance", arg0);
+            return IExecuteWithSignature<Java.Text.Collator>("getInstance", "(Ljava/util/Locale;)Ljava/text/Collator;", arg0);
         }
 
         #endregion

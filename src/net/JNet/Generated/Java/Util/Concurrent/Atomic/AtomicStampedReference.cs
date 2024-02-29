@@ -59,14 +59,14 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         public object Reference
         {
-            get { return IExecute("getReference"); }
+            get { return IExecuteWithSignature("getReference", "()Ljava/lang/Object;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#getStamp()"/> 
         /// </summary>
         public int Stamp
         {
-            get { return IExecute<int>("getStamp"); }
+            get { return IExecuteWithSignature<int>("getStamp", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#attemptStamp(java.lang.Object,int)"/>
@@ -109,7 +109,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="object"/></returns>
         public object Get(int[] arg0)
         {
-            return IExecute("get", new object[] { arg0 });
+            return IExecuteWithSignature("get", "([I)Ljava/lang/Object;", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#set(java.lang.Object,int)"/>
@@ -169,14 +169,14 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         public V Reference
         {
-            get { return IExecute<V>("getReference"); }
+            get { return IExecuteWithSignature<V>("getReference", "()Ljava/lang/Object;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#getStamp()"/> 
         /// </summary>
         public int Stamp
         {
-            get { return IExecute<int>("getStamp"); }
+            get { return IExecuteWithSignature<int>("getStamp", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#attemptStamp(java.lang.Object,int)"/>
@@ -219,7 +219,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><typeparamref name="V"/></returns>
         public V Get(int[] arg0)
         {
-            return IExecute<V>("get", new object[] { arg0 });
+            return IExecuteWithSignature<V>("get", "([I)Ljava/lang/Object;", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#set(java.lang.Object,int)"/>

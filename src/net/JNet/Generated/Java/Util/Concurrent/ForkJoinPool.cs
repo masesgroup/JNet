@@ -60,7 +60,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         public static int CommonPoolParallelism
         {
-            get { return SExecute<int>(LocalBridgeClazz, "getCommonPoolParallelism"); }
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getCommonPoolParallelism", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#commonPool()"/>
@@ -69,7 +69,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ForkJoinPool"/></returns>
         public static Java.Util.Concurrent.ForkJoinPool CommonPool()
         {
-            return SExecute<Java.Util.Concurrent.ForkJoinPool>(LocalBridgeClazz, "commonPool");
+            return SExecuteWithSignature<Java.Util.Concurrent.ForkJoinPool>(LocalBridgeClazz, "commonPool", "()Ljava/util/concurrent/ForkJoinPool;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#managedBlock(java.util.concurrent.ForkJoinPool.ManagedBlocker)"/>
@@ -78,7 +78,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public static void ManagedBlock(Java.Util.Concurrent.ForkJoinPool.ManagedBlocker arg0)
         {
-            SExecute(LocalBridgeClazz, "managedBlock", arg0);
+            SExecuteWithSignature(LocalBridgeClazz, "managedBlock", "(Ljava/util/concurrent/ForkJoinPool$ManagedBlocker;)V", arg0);
         }
 
         #endregion
@@ -89,63 +89,63 @@ namespace Java.Util.Concurrent
         /// </summary>
         public int ActiveThreadCount
         {
-            get { return IExecute<int>("getActiveThreadCount"); }
+            get { return IExecuteWithSignature<int>("getActiveThreadCount", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#getAsyncMode()"/> 
         /// </summary>
         public bool AsyncMode
         {
-            get { return IExecute<bool>("getAsyncMode"); }
+            get { return IExecuteWithSignature<bool>("getAsyncMode", "()Z"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#getFactory()"/> 
         /// </summary>
         public Java.Util.Concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory Factory
         {
-            get { return IExecute<Java.Util.Concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory>("getFactory"); }
+            get { return IExecuteWithSignature<Java.Util.Concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory>("getFactory", "()Ljava/util/concurrent/ForkJoinPool$ForkJoinWorkerThreadFactory;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#getParallelism()"/> 
         /// </summary>
         public int Parallelism
         {
-            get { return IExecute<int>("getParallelism"); }
+            get { return IExecuteWithSignature<int>("getParallelism", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#getPoolSize()"/> 
         /// </summary>
         public int PoolSize
         {
-            get { return IExecute<int>("getPoolSize"); }
+            get { return IExecuteWithSignature<int>("getPoolSize", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#getQueuedSubmissionCount()"/> 
         /// </summary>
         public int QueuedSubmissionCount
         {
-            get { return IExecute<int>("getQueuedSubmissionCount"); }
+            get { return IExecuteWithSignature<int>("getQueuedSubmissionCount", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#getQueuedTaskCount()"/> 
         /// </summary>
         public long QueuedTaskCount
         {
-            get { return IExecute<long>("getQueuedTaskCount"); }
+            get { return IExecuteWithSignature<long>("getQueuedTaskCount", "()J"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#getRunningThreadCount()"/> 
         /// </summary>
         public int RunningThreadCount
         {
-            get { return IExecute<int>("getRunningThreadCount"); }
+            get { return IExecuteWithSignature<int>("getRunningThreadCount", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#getStealCount()"/> 
         /// </summary>
         public long StealCount
         {
-            get { return IExecute<long>("getStealCount"); }
+            get { return IExecuteWithSignature<long>("getStealCount", "()J"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#submit(java.util.concurrent.ForkJoinTask)"/>
@@ -155,7 +155,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
         public Java.Util.Concurrent.ForkJoinTask<T> Submit<T>(Java.Util.Concurrent.ForkJoinTask<T> arg0)
         {
-            return IExecute<Java.Util.Concurrent.ForkJoinTask<T>>("submit", arg0);
+            return IExecuteWithSignature<Java.Util.Concurrent.ForkJoinTask<T>>("submit", "(Ljava/util/concurrent/ForkJoinTask;)Ljava/util/concurrent/ForkJoinTask;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#invoke(java.util.concurrent.ForkJoinTask)"/>
@@ -165,7 +165,7 @@ namespace Java.Util.Concurrent
         /// <returns><typeparamref name="T"/></returns>
         public T Invoke<T>(Java.Util.Concurrent.ForkJoinTask<T> arg0)
         {
-            return IExecute<T>("invoke", arg0);
+            return IExecuteWithSignature<T>("invoke", "(Ljava/util/concurrent/ForkJoinTask;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#awaitQuiescence(long,java.util.concurrent.TimeUnit)"/>
@@ -184,7 +184,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool HasQueuedSubmissions()
         {
-            return IExecute<bool>("hasQueuedSubmissions");
+            return IExecuteWithSignature<bool>("hasQueuedSubmissions", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#isQuiescent()"/>
@@ -193,7 +193,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool IsQuiescent()
         {
-            return IExecute<bool>("isQuiescent");
+            return IExecuteWithSignature<bool>("isQuiescent", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#isTerminating()"/>
@@ -202,7 +202,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool IsTerminating()
         {
-            return IExecute<bool>("isTerminating");
+            return IExecuteWithSignature<bool>("isTerminating", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#execute(java.util.concurrent.ForkJoinTask)"/>
@@ -210,7 +210,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
         public void Execute(Java.Util.Concurrent.ForkJoinTask<object> arg0)
         {
-            IExecute("execute", arg0);
+            IExecuteWithSignature("execute", "(Ljava/util/concurrent/ForkJoinTask;)V", arg0);
         }
 
         #endregion
@@ -243,7 +243,7 @@ namespace Java.Util.Concurrent
             /// <returns><see cref="Java.Util.Concurrent.ForkJoinWorkerThread"/></returns>
             public Java.Util.Concurrent.ForkJoinWorkerThread NewThread(Java.Util.Concurrent.ForkJoinPool arg0)
             {
-                return IExecute<Java.Util.Concurrent.ForkJoinWorkerThread>("newThread", arg0);
+                return IExecuteWithSignature<Java.Util.Concurrent.ForkJoinWorkerThread>("newThread", "(Ljava/util/concurrent/ForkJoinPool;)Ljava/util/concurrent/ForkJoinWorkerThread;", arg0);
             }
 
             #endregion
@@ -284,7 +284,7 @@ namespace Java.Util.Concurrent
             /// <exception cref="Java.Lang.InterruptedException"/>
             public bool Block()
             {
-                return IExecute<bool>("block");
+                return IExecuteWithSignature<bool>("block", "()Z");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.ManagedBlocker.html#isReleasable()"/>
@@ -293,7 +293,7 @@ namespace Java.Util.Concurrent
             /// <returns><see cref="bool"/></returns>
             public bool IsReleasable()
             {
-                return IExecute<bool>("isReleasable");
+                return IExecuteWithSignature<bool>("isReleasable", "()Z");
             }
 
             #endregion

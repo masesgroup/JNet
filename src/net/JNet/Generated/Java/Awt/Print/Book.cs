@@ -50,7 +50,7 @@ namespace Java.Awt.Print
         /// </summary>
         public int NumberOfPages
         {
-            get { return IExecute<int>("getNumberOfPages"); }
+            get { return IExecuteWithSignature<int>("getNumberOfPages", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Book.html#getPageFormat(int)"/>
@@ -60,7 +60,7 @@ namespace Java.Awt.Print
         /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
         public Java.Awt.Print.PageFormat GetPageFormat(int arg0)
         {
-            return IExecute<Java.Awt.Print.PageFormat>("getPageFormat", arg0);
+            return IExecuteWithSignature<Java.Awt.Print.PageFormat>("getPageFormat", "(I)Ljava/awt/print/PageFormat;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Book.html#getPrintable(int)"/>
@@ -70,7 +70,7 @@ namespace Java.Awt.Print
         /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
         public Java.Awt.Print.Printable GetPrintable(int arg0)
         {
-            return IExecute<Java.Awt.Print.Printable>("getPrintable", arg0);
+            return IExecuteWithSignature<Java.Awt.Print.Printable>("getPrintable", "(I)Ljava/awt/print/Printable;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Book.html#append(java.awt.print.Printable,java.awt.print.PageFormat,int)"/>

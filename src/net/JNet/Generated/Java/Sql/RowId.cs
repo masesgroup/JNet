@@ -72,7 +72,7 @@ namespace Java.Sql
         /// </summary>
         public byte[] Bytes
         {
-            get { return IExecuteArray<byte>("getBytes"); }
+            get { return IExecuteWithSignatureArray<byte>("getBytes", "()[B"); }
         }
 
         #endregion

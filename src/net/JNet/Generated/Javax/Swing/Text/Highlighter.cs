@@ -113,7 +113,7 @@ namespace Javax.Swing.Text
         /// </summary>
         public Javax.Swing.Text.Highlighter.Highlight[] Highlights
         {
-            get { return IExecuteArray<Javax.Swing.Text.Highlighter.Highlight>("getHighlights"); }
+            get { return IExecuteWithSignatureArray<Javax.Swing.Text.Highlighter.Highlight>("getHighlights", "()[Ljavax/swing/text/Highlighter$Highlight;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#addHighlight(int,int,javax.swing.text.Highlighter.HighlightPainter)"/>
@@ -144,7 +144,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
         public void Deinstall(Javax.Swing.Text.JTextComponent arg0)
         {
-            IExecute("deinstall", arg0);
+            IExecuteWithSignature("deinstall", "(Ljavax/swing/text/JTextComponent;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#install(javax.swing.text.JTextComponent)"/>
@@ -152,7 +152,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
         public void Install(Javax.Swing.Text.JTextComponent arg0)
         {
-            IExecute("install", arg0);
+            IExecuteWithSignature("install", "(Ljavax/swing/text/JTextComponent;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#paint(java.awt.Graphics)"/>
@@ -160,14 +160,14 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
         public void Paint(Java.Awt.Graphics arg0)
         {
-            IExecute("paint", arg0);
+            IExecuteWithSignature("paint", "(Ljava/awt/Graphics;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#removeAllHighlights()"/>
         /// </summary>
         public void RemoveAllHighlights()
         {
-            IExecute("removeAllHighlights");
+            IExecuteWithSignature("removeAllHighlights", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#removeHighlight(java.lang.Object)"/>
@@ -175,7 +175,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="object"/></param>
         public void RemoveHighlight(object arg0)
         {
-            IExecute("removeHighlight", arg0);
+            IExecuteWithSignature("removeHighlight", "(Ljava/lang/Object;)V", arg0);
         }
 
         #endregion
@@ -206,21 +206,21 @@ namespace Javax.Swing.Text
             /// </summary>
             public int EndOffset
             {
-                get { return IExecute<int>("getEndOffset"); }
+                get { return IExecuteWithSignature<int>("getEndOffset", "()I"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.Highlight.html#getPainter()"/> 
             /// </summary>
             public Javax.Swing.Text.Highlighter.HighlightPainter Painter
             {
-                get { return IExecute<Javax.Swing.Text.Highlighter.HighlightPainter>("getPainter"); }
+                get { return IExecuteWithSignature<Javax.Swing.Text.Highlighter.HighlightPainter>("getPainter", "()Ljavax/swing/text/Highlighter$HighlightPainter;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.Highlight.html#getStartOffset()"/> 
             /// </summary>
             public int StartOffset
             {
-                get { return IExecute<int>("getStartOffset"); }
+                get { return IExecuteWithSignature<int>("getStartOffset", "()I"); }
             }
 
             #endregion

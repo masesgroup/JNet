@@ -46,7 +46,7 @@ namespace Java.Rmi.Server
         /// </summary>
         public static Java.Rmi.Server.RMIClassLoaderSpi DefaultProviderInstance
         {
-            get { return SExecute<Java.Rmi.Server.RMIClassLoaderSpi>(LocalBridgeClazz, "getDefaultProviderInstance"); }
+            get { return SExecuteWithSignature<Java.Rmi.Server.RMIClassLoaderSpi>(LocalBridgeClazz, "getDefaultProviderInstance", "()Ljava/rmi/server/RMIClassLoaderSpi;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClassLoader.html#loadClass(java.lang.String,java.lang.String,java.lang.ClassLoader)"/>
@@ -107,7 +107,7 @@ namespace Java.Rmi.Server
         /// <exception cref="Java.Lang.SecurityException"/>
         public static Java.Lang.ClassLoader GetClassLoader(Java.Lang.String arg0)
         {
-            return SExecute<Java.Lang.ClassLoader>(LocalBridgeClazz, "getClassLoader", arg0);
+            return SExecuteWithSignature<Java.Lang.ClassLoader>(LocalBridgeClazz, "getClassLoader", "(Ljava/lang/String;)Ljava/lang/ClassLoader;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClassLoader.html#getClassAnnotation(java.lang.Class)"/>
@@ -116,7 +116,7 @@ namespace Java.Rmi.Server
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetClassAnnotation(Java.Lang.Class arg0)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getClassAnnotation", arg0);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getClassAnnotation", "(Ljava/lang/Class;)Ljava/lang/String;", arg0);
         }
 
         #endregion

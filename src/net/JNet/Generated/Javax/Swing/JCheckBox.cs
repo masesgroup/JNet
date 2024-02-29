@@ -119,7 +119,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsBorderPaintedFlat()
         {
-            return IExecute<bool>("isBorderPaintedFlat");
+            return IExecuteWithSignature<bool>("isBorderPaintedFlat", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JCheckBox.html#setBorderPaintedFlat(boolean)"/>
@@ -127,7 +127,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetBorderPaintedFlat(bool arg0)
         {
-            IExecute("setBorderPaintedFlat", arg0);
+            IExecuteWithSignature("setBorderPaintedFlat", "(Z)V", arg0);
         }
 
         #endregion

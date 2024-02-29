@@ -76,7 +76,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.Exception"/>
         public void Close()
         {
-            IExecute("close");
+            IExecuteWithSignature("close", "()V");
         }
 
         #endregion

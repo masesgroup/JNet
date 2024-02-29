@@ -68,21 +68,21 @@ namespace Javax.Xml.Crypto
         /// </summary>
         public Java.Lang.String MimeType
         {
-            get { return IExecute<Java.Lang.String>("getMimeType"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getMimeType", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/OctetStreamData.html#getOctetStream()"/> 
         /// </summary>
         public Java.Io.InputStream OctetStream
         {
-            get { return IExecute<Java.Io.InputStream>("getOctetStream"); }
+            get { return IExecuteWithSignature<Java.Io.InputStream>("getOctetStream", "()Ljava/io/InputStream;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/OctetStreamData.html#getURI()"/> 
         /// </summary>
         public Java.Lang.String URI
         {
-            get { return IExecute<Java.Lang.String>("getURI"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getURI", "()Ljava/lang/String;"); }
         }
 
         #endregion

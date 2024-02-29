@@ -50,14 +50,14 @@ namespace Javax.Swing
         /// </summary>
         public void Hide()
         {
-            IExecute("hide");
+            IExecuteWithSignature("hide", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Popup.html#show()"/>
         /// </summary>
         public void Show()
         {
-            IExecute("show");
+            IExecuteWithSignature("show", "()V");
         }
 
         #endregion

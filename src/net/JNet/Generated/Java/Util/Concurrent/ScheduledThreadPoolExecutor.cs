@@ -90,21 +90,21 @@ namespace Java.Util.Concurrent
         /// </summary>
         public bool ContinueExistingPeriodicTasksAfterShutdownPolicy
         {
-            get { return IExecute<bool>("getContinueExistingPeriodicTasksAfterShutdownPolicy"); } set { IExecute("setContinueExistingPeriodicTasksAfterShutdownPolicy", value); }
+            get { return IExecuteWithSignature<bool>("getContinueExistingPeriodicTasksAfterShutdownPolicy", "()Z"); } set { IExecuteWithSignature("setContinueExistingPeriodicTasksAfterShutdownPolicy", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#getExecuteExistingDelayedTasksAfterShutdownPolicy()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#setExecuteExistingDelayedTasksAfterShutdownPolicy(boolean)"/>
         /// </summary>
         public bool ExecuteExistingDelayedTasksAfterShutdownPolicy
         {
-            get { return IExecute<bool>("getExecuteExistingDelayedTasksAfterShutdownPolicy"); } set { IExecute("setExecuteExistingDelayedTasksAfterShutdownPolicy", value); }
+            get { return IExecuteWithSignature<bool>("getExecuteExistingDelayedTasksAfterShutdownPolicy", "()Z"); } set { IExecuteWithSignature("setExecuteExistingDelayedTasksAfterShutdownPolicy", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#getRemoveOnCancelPolicy()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#setRemoveOnCancelPolicy(boolean)"/>
         /// </summary>
         public bool RemoveOnCancelPolicy
         {
-            get { return IExecute<bool>("getRemoveOnCancelPolicy"); } set { IExecute("setRemoveOnCancelPolicy", value); }
+            get { return IExecuteWithSignature<bool>("getRemoveOnCancelPolicy", "()Z"); } set { IExecuteWithSignature("setRemoveOnCancelPolicy", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#schedule(java.util.concurrent.Callable,long,java.util.concurrent.TimeUnit)"/>

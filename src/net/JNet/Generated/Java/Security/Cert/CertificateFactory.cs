@@ -72,7 +72,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         public static Java.Security.Cert.CertificateFactory GetInstance(Java.Lang.String arg0)
         {
-            return SExecute<Java.Security.Cert.CertificateFactory>(LocalBridgeClazz, "getInstance", arg0);
+            return SExecuteWithSignature<Java.Security.Cert.CertificateFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljava/security/cert/CertificateFactory;", arg0);
         }
 
         #endregion
@@ -83,21 +83,21 @@ namespace Java.Security.Cert
         /// </summary>
         public Java.Util.Iterator<Java.Lang.String> CertPathEncodings
         {
-            get { return IExecute<Java.Util.Iterator<Java.Lang.String>>("getCertPathEncodings"); }
+            get { return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("getCertPathEncodings", "()Ljava/util/Iterator;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#getProvider()"/> 
         /// </summary>
         public Java.Security.Provider Provider
         {
-            get { return IExecute<Java.Security.Provider>("getProvider"); }
+            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#getType()"/> 
         /// </summary>
         public Java.Lang.String Type
         {
-            get { return IExecute<Java.Lang.String>("getType"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#generateCertificate(java.io.InputStream)"/>
@@ -107,7 +107,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         public Java.Security.Cert.Certificate GenerateCertificate(Java.Io.InputStream arg0)
         {
-            return IExecute<Java.Security.Cert.Certificate>("generateCertificate", arg0);
+            return IExecuteWithSignature<Java.Security.Cert.Certificate>("generateCertificate", "(Ljava/io/InputStream;)Ljava/security/cert/Certificate;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#generateCertPath(java.io.InputStream,java.lang.String)"/>
@@ -128,7 +128,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         public Java.Security.Cert.CertPath GenerateCertPath(Java.Io.InputStream arg0)
         {
-            return IExecute<Java.Security.Cert.CertPath>("generateCertPath", arg0);
+            return IExecuteWithSignature<Java.Security.Cert.CertPath>("generateCertPath", "(Ljava/io/InputStream;)Ljava/security/cert/CertPath;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#generateCertPath(java.util.List)"/>
@@ -139,7 +139,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         public Java.Security.Cert.CertPath GenerateCertPath<Arg0ExtendsJava_Security_Cert_Certificate>(Java.Util.List<Arg0ExtendsJava_Security_Cert_Certificate> arg0) where Arg0ExtendsJava_Security_Cert_Certificate: Java.Security.Cert.Certificate
         {
-            return IExecute<Java.Security.Cert.CertPath>("generateCertPath", arg0);
+            return IExecuteWithSignature<Java.Security.Cert.CertPath>("generateCertPath", "(Ljava/util/List;)Ljava/security/cert/CertPath;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#generateCRL(java.io.InputStream)"/>
@@ -149,7 +149,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.Cert.CRLException"/>
         public Java.Security.Cert.CRL GenerateCRL(Java.Io.InputStream arg0)
         {
-            return IExecute<Java.Security.Cert.CRL>("generateCRL", arg0);
+            return IExecuteWithSignature<Java.Security.Cert.CRL>("generateCRL", "(Ljava/io/InputStream;)Ljava/security/cert/CRL;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#generateCertificates(java.io.InputStream)"/>
@@ -160,7 +160,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         public Java.Util.Collection<ReturnExtendsJava_Security_Cert_Certificate> GenerateCertificates<ReturnExtendsJava_Security_Cert_Certificate>(Java.Io.InputStream arg0) where ReturnExtendsJava_Security_Cert_Certificate: Java.Security.Cert.Certificate
         {
-            return IExecute<Java.Util.Collection<ReturnExtendsJava_Security_Cert_Certificate>>("generateCertificates", arg0);
+            return IExecuteWithSignature<Java.Util.Collection<ReturnExtendsJava_Security_Cert_Certificate>>("generateCertificates", "(Ljava/io/InputStream;)Ljava/util/Collection;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#generateCRLs(java.io.InputStream)"/>
@@ -171,7 +171,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.Cert.CRLException"/>
         public Java.Util.Collection<ReturnExtendsJava_Security_Cert_CRL> GenerateCRLs<ReturnExtendsJava_Security_Cert_CRL>(Java.Io.InputStream arg0) where ReturnExtendsJava_Security_Cert_CRL: Java.Security.Cert.CRL
         {
-            return IExecute<Java.Util.Collection<ReturnExtendsJava_Security_Cert_CRL>>("generateCRLs", arg0);
+            return IExecuteWithSignature<Java.Util.Collection<ReturnExtendsJava_Security_Cert_CRL>>("generateCRLs", "(Ljava/io/InputStream;)Ljava/util/Collection;", arg0);
         }
 
         #endregion

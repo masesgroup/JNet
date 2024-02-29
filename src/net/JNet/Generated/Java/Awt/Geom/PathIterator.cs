@@ -136,7 +136,7 @@ namespace Java.Awt.Geom
         /// </summary>
         public int WindingRule
         {
-            get { return IExecute<int>("getWindingRule"); }
+            get { return IExecuteWithSignature<int>("getWindingRule", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#isDone()"/>
@@ -145,7 +145,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool IsDone()
         {
-            return IExecute<bool>("isDone");
+            return IExecuteWithSignature<bool>("isDone", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#currentSegment(double[])"/>
@@ -154,7 +154,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="int"/></returns>
         public int CurrentSegment(double[] arg0)
         {
-            return IExecute<int>("currentSegment", new object[] { arg0 });
+            return IExecuteWithSignature<int>("currentSegment", "([D)I", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#currentSegment(float[])"/>
@@ -163,14 +163,14 @@ namespace Java.Awt.Geom
         /// <returns><see cref="int"/></returns>
         public int CurrentSegment(float[] arg0)
         {
-            return IExecute<int>("currentSegment", new object[] { arg0 });
+            return IExecuteWithSignature<int>("currentSegment", "([F)I", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#next()"/>
         /// </summary>
         public void Next()
         {
-            IExecute("next");
+            IExecuteWithSignature("next", "()V");
         }
 
         #endregion

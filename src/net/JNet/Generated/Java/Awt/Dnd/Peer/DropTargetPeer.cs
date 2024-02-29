@@ -79,7 +79,7 @@ namespace Java.Awt.Dnd.Peer
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTarget"/></param>
         public void AddDropTarget(Java.Awt.Dnd.DropTarget arg0)
         {
-            IExecute("addDropTarget", arg0);
+            IExecuteWithSignature("addDropTarget", "(Ljava/awt/dnd/DropTarget;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetPeer.html#removeDropTarget(java.awt.dnd.DropTarget)"/>
@@ -87,7 +87,7 @@ namespace Java.Awt.Dnd.Peer
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTarget"/></param>
         public void RemoveDropTarget(Java.Awt.Dnd.DropTarget arg0)
         {
-            IExecute("removeDropTarget", arg0);
+            IExecuteWithSignature("removeDropTarget", "(Ljava/awt/dnd/DropTarget;)V", arg0);
         }
 
         #endregion

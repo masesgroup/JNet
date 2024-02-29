@@ -91,7 +91,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
             public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
             {
-                IExecute("propertyChange", arg0);
+                IExecuteWithSignature("propertyChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);
             }
 
             #endregion
@@ -142,7 +142,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
             public void StateChanged(Javax.Swing.Event.ChangeEvent arg0)
             {
-                IExecute("stateChanged", arg0);
+                IExecuteWithSignature("stateChanged", "(Ljavax/swing/event/ChangeEvent;)V", arg0);
             }
 
             #endregion

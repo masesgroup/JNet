@@ -95,21 +95,21 @@ namespace Javax.Sql
         /// </summary>
         public int LoginTimeout
         {
-            get { return IExecute<int>("getLoginTimeout"); } set { IExecute("setLoginTimeout", value); }
+            get { return IExecuteWithSignature<int>("getLoginTimeout", "()I"); } set { IExecuteWithSignature("setLoginTimeout", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html#getLogWriter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html#setLogWriter(java.io.PrintWriter)"/>
         /// </summary>
         public Java.Io.PrintWriter LogWriter
         {
-            get { return IExecute<Java.Io.PrintWriter>("getLogWriter"); } set { IExecute("setLogWriter", value); }
+            get { return IExecuteWithSignature<Java.Io.PrintWriter>("getLogWriter", "()Ljava/io/PrintWriter;"); } set { IExecuteWithSignature("setLogWriter", "(Ljava/io/PrintWriter;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html#getPooledConnection()"/> 
         /// </summary>
         public Javax.Sql.PooledConnection PooledConnection
         {
-            get { return IExecute<Javax.Sql.PooledConnection>("getPooledConnection"); }
+            get { return IExecuteWithSignature<Javax.Sql.PooledConnection>("getPooledConnection", "()Ljavax/sql/PooledConnection;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html#getPooledConnection(java.lang.String,java.lang.String)"/>
@@ -130,7 +130,7 @@ namespace Javax.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Javax.Sql.PooledConnectionBuilder CreatePooledConnectionBuilder()
         {
-            return IExecute<Javax.Sql.PooledConnectionBuilder>("createPooledConnectionBuilder");
+            return IExecuteWithSignature<Javax.Sql.PooledConnectionBuilder>("createPooledConnectionBuilder", "()Ljavax/sql/PooledConnectionBuilder;");
         }
 
         #endregion

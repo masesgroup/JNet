@@ -87,7 +87,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MouseClicked(Java.Awt.EventNs.MouseEvent arg0)
             {
-                IExecute("mouseClicked", arg0);
+                IExecuteWithSignature("mouseClicked", "(Ljava/awt/event/MouseEvent;)V", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableHeaderUI.MouseInputHandler.html#mouseDragged(java.awt.event.MouseEvent)"/>
@@ -95,7 +95,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MouseDragged(Java.Awt.EventNs.MouseEvent arg0)
             {
-                IExecute("mouseDragged", arg0);
+                IExecuteWithSignature("mouseDragged", "(Ljava/awt/event/MouseEvent;)V", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableHeaderUI.MouseInputHandler.html#mouseEntered(java.awt.event.MouseEvent)"/>
@@ -103,7 +103,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MouseEntered(Java.Awt.EventNs.MouseEvent arg0)
             {
-                IExecute("mouseEntered", arg0);
+                IExecuteWithSignature("mouseEntered", "(Ljava/awt/event/MouseEvent;)V", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableHeaderUI.MouseInputHandler.html#mouseExited(java.awt.event.MouseEvent)"/>
@@ -111,7 +111,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MouseExited(Java.Awt.EventNs.MouseEvent arg0)
             {
-                IExecute("mouseExited", arg0);
+                IExecuteWithSignature("mouseExited", "(Ljava/awt/event/MouseEvent;)V", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableHeaderUI.MouseInputHandler.html#mouseMoved(java.awt.event.MouseEvent)"/>
@@ -119,7 +119,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MouseMoved(Java.Awt.EventNs.MouseEvent arg0)
             {
-                IExecute("mouseMoved", arg0);
+                IExecuteWithSignature("mouseMoved", "(Ljava/awt/event/MouseEvent;)V", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableHeaderUI.MouseInputHandler.html#mousePressed(java.awt.event.MouseEvent)"/>
@@ -127,7 +127,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MousePressed(Java.Awt.EventNs.MouseEvent arg0)
             {
-                IExecute("mousePressed", arg0);
+                IExecuteWithSignature("mousePressed", "(Ljava/awt/event/MouseEvent;)V", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableHeaderUI.MouseInputHandler.html#mouseReleased(java.awt.event.MouseEvent)"/>
@@ -135,7 +135,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MouseReleased(Java.Awt.EventNs.MouseEvent arg0)
             {
-                IExecute("mouseReleased", arg0);
+                IExecuteWithSignature("mouseReleased", "(Ljava/awt/event/MouseEvent;)V", arg0);
             }
 
             #endregion

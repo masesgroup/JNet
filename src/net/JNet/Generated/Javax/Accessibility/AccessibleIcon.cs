@@ -80,21 +80,21 @@ namespace Javax.Accessibility
         /// </summary>
         public Java.Lang.String AccessibleIconDescription
         {
-            get { return IExecute<Java.Lang.String>("getAccessibleIconDescription"); } set { IExecute("setAccessibleIconDescription", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getAccessibleIconDescription", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAccessibleIconDescription", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleIcon.html#getAccessibleIconHeight()"/> 
         /// </summary>
         public int AccessibleIconHeight
         {
-            get { return IExecute<int>("getAccessibleIconHeight"); }
+            get { return IExecuteWithSignature<int>("getAccessibleIconHeight", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleIcon.html#getAccessibleIconWidth()"/> 
         /// </summary>
         public int AccessibleIconWidth
         {
-            get { return IExecute<int>("getAccessibleIconWidth"); }
+            get { return IExecuteWithSignature<int>("getAccessibleIconWidth", "()I"); }
         }
 
         #endregion

@@ -75,7 +75,7 @@ namespace Java.Rmi.Server
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Rmi.Server.ObjID Read(Java.Io.ObjectInput arg0)
         {
-            return SExecute<Java.Rmi.Server.ObjID>(LocalBridgeClazz, "read", arg0);
+            return SExecuteWithSignature<Java.Rmi.Server.ObjID>(LocalBridgeClazz, "read", "(Ljava/io/ObjectInput;)Ljava/rmi/server/ObjID;", arg0);
         }
 
         #endregion
@@ -88,7 +88,7 @@ namespace Java.Rmi.Server
         /// <exception cref="Java.Io.IOException"/>
         public void Write(Java.Io.ObjectOutput arg0)
         {
-            IExecute("write", arg0);
+            IExecuteWithSignature("write", "(Ljava/io/ObjectOutput;)V", arg0);
         }
 
         #endregion

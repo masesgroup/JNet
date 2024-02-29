@@ -78,7 +78,7 @@ namespace Org.W3c.Dom.Xpath
         /// </summary>
         public Org.W3c.Dom.Element OwnerElement
         {
-            get { return IExecute<Org.W3c.Dom.Element>("getOwnerElement"); }
+            get { return IExecuteWithSignature<Org.W3c.Dom.Element>("getOwnerElement", "()Lorg/w3c/dom/Element;"); }
         }
 
         #endregion

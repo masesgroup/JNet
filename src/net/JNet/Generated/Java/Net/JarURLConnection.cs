@@ -50,56 +50,56 @@ namespace Java.Net
         /// </summary>
         public Java.Util.Jar.Attributes Attributes
         {
-            get { return IExecute<Java.Util.Jar.Attributes>("getAttributes"); }
+            get { return IExecuteWithSignature<Java.Util.Jar.Attributes>("getAttributes", "()Ljava/util/jar/Attributes;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/JarURLConnection.html#getCertificates()"/> 
         /// </summary>
         public Java.Security.Cert.Certificate[] Certificates
         {
-            get { return IExecuteArray<Java.Security.Cert.Certificate>("getCertificates"); }
+            get { return IExecuteWithSignatureArray<Java.Security.Cert.Certificate>("getCertificates", "()[Ljava/security/cert/Certificate;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/JarURLConnection.html#getEntryName()"/> 
         /// </summary>
         public Java.Lang.String EntryName
         {
-            get { return IExecute<Java.Lang.String>("getEntryName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getEntryName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/JarURLConnection.html#getJarEntry()"/> 
         /// </summary>
         public Java.Util.Jar.JarEntry JarEntry
         {
-            get { return IExecute<Java.Util.Jar.JarEntry>("getJarEntry"); }
+            get { return IExecuteWithSignature<Java.Util.Jar.JarEntry>("getJarEntry", "()Ljava/util/jar/JarEntry;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/JarURLConnection.html#getJarFile()"/> 
         /// </summary>
         public Java.Util.Jar.JarFile JarFile
         {
-            get { return IExecute<Java.Util.Jar.JarFile>("getJarFile"); }
+            get { return IExecuteWithSignature<Java.Util.Jar.JarFile>("getJarFile", "()Ljava/util/jar/JarFile;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/JarURLConnection.html#getJarFileURL()"/> 
         /// </summary>
         public Java.Net.URL JarFileURL
         {
-            get { return IExecute<Java.Net.URL>("getJarFileURL"); }
+            get { return IExecuteWithSignature<Java.Net.URL>("getJarFileURL", "()Ljava/net/URL;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/JarURLConnection.html#getMainAttributes()"/> 
         /// </summary>
         public Java.Util.Jar.Attributes MainAttributes
         {
-            get { return IExecute<Java.Util.Jar.Attributes>("getMainAttributes"); }
+            get { return IExecuteWithSignature<Java.Util.Jar.Attributes>("getMainAttributes", "()Ljava/util/jar/Attributes;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/JarURLConnection.html#getManifest()"/> 
         /// </summary>
         public Java.Util.Jar.Manifest Manifest
         {
-            get { return IExecute<Java.Util.Jar.Manifest>("getManifest"); }
+            get { return IExecuteWithSignature<Java.Util.Jar.Manifest>("getManifest", "()Ljava/util/jar/Manifest;"); }
         }
 
         #endregion

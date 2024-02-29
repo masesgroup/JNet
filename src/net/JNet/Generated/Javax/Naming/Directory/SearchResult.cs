@@ -94,7 +94,7 @@ namespace Javax.Naming.Directory
         /// </summary>
         public Javax.Naming.Directory.Attributes Attributes
         {
-            get { return IExecute<Javax.Naming.Directory.Attributes>("getAttributes"); } set { IExecute("setAttributes", value); }
+            get { return IExecuteWithSignature<Javax.Naming.Directory.Attributes>("getAttributes", "()Ljavax/naming/directory/Attributes;"); } set { IExecuteWithSignature("setAttributes", "(Ljavax/naming/directory/Attributes;)V", value); }
         }
 
         #endregion

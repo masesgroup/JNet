@@ -58,7 +58,7 @@ namespace Javax.Print.Attribute
         /// </summary>
         public Java.Net.URI URI
         {
-            get { return IExecute<Java.Net.URI>("getURI"); }
+            get { return IExecuteWithSignature<Java.Net.URI>("getURI", "()Ljava/net/URI;"); }
         }
 
         #endregion

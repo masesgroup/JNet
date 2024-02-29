@@ -73,21 +73,21 @@ namespace Java.Awt
         /// </summary>
         public Java.Awt.EventNs.ItemListener[] ItemListeners
         {
-            get { return IExecuteArray<Java.Awt.EventNs.ItemListener>("getItemListeners"); }
+            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.ItemListener>("getItemListeners", "()[Ljava/awt/event/ItemListener;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CheckboxMenuItem.html#getSelectedObjects()"/> 
         /// </summary>
         public object[] SelectedObjects
         {
-            get { return IExecuteArray<object>("getSelectedObjects"); }
+            get { return IExecuteWithSignatureArray<object>("getSelectedObjects", "()[Ljava/lang/Object;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CheckboxMenuItem.html#getState()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CheckboxMenuItem.html#setState(boolean)"/>
         /// </summary>
         public bool State
         {
-            get { return IExecute<bool>("getState"); } set { IExecute("setState", value); }
+            get { return IExecuteWithSignature<bool>("getState", "()Z"); } set { IExecuteWithSignature("setState", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CheckboxMenuItem.html#addItemListener(java.awt.event.ItemListener)"/>
@@ -95,7 +95,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
         public void AddItemListener(Java.Awt.EventNs.ItemListener arg0)
         {
-            IExecute("addItemListener", arg0);
+            IExecuteWithSignature("addItemListener", "(Ljava/awt/event/ItemListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CheckboxMenuItem.html#removeItemListener(java.awt.event.ItemListener)"/>
@@ -103,7 +103,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
         public void RemoveItemListener(Java.Awt.EventNs.ItemListener arg0)
         {
-            IExecute("removeItemListener", arg0);
+            IExecuteWithSignature("removeItemListener", "(Ljava/awt/event/ItemListener;)V", arg0);
         }
 
         #endregion

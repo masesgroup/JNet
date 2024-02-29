@@ -76,14 +76,14 @@ namespace Java.Lang.Reflect
         /// </summary>
         public Java.Lang.Reflect.AnnotatedType AnnotatedOwnerType
         {
-            get { return IExecute<Java.Lang.Reflect.AnnotatedType>("getAnnotatedOwnerType"); }
+            get { return IExecuteWithSignature<Java.Lang.Reflect.AnnotatedType>("getAnnotatedOwnerType", "()Ljava/lang/reflect/AnnotatedType;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedType.html#getType()"/> 
         /// </summary>
         public Java.Lang.Reflect.Type Type
         {
-            get { return IExecute<Java.Lang.Reflect.Type>("getType"); }
+            get { return IExecuteWithSignature<Java.Lang.Reflect.Type>("getType", "()Ljava/lang/reflect/Type;"); }
         }
 
         #endregion

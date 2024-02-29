@@ -72,7 +72,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Javax.Crypto.KeyAgreement GetInstance(Java.Lang.String arg0)
         {
-            return SExecute<Javax.Crypto.KeyAgreement>(LocalBridgeClazz, "getInstance", arg0);
+            return SExecuteWithSignature<Javax.Crypto.KeyAgreement>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljavax/crypto/KeyAgreement;", arg0);
         }
 
         #endregion
@@ -83,14 +83,14 @@ namespace Javax.Crypto
         /// </summary>
         public Java.Lang.String Algorithm
         {
-            get { return IExecute<Java.Lang.String>("getAlgorithm"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#getProvider()"/> 
         /// </summary>
         public Java.Security.Provider Provider
         {
-            get { return IExecute<Java.Security.Provider>("getProvider"); }
+            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#generateSecret()"/>
@@ -100,7 +100,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Lang.IllegalStateException"/>
         public byte[] GenerateSecret()
         {
-            return IExecuteArray<byte>("generateSecret");
+            return IExecuteWithSignatureArray<byte>("generateSecret", "()[B");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#generateSecret(byte[],int)"/>
@@ -136,7 +136,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Security.InvalidKeyException"/>
         public Javax.Crypto.SecretKey GenerateSecret(Java.Lang.String arg0)
         {
-            return IExecute<Javax.Crypto.SecretKey>("generateSecret", arg0);
+            return IExecuteWithSignature<Javax.Crypto.SecretKey>("generateSecret", "(Ljava/lang/String;)Ljavax/crypto/SecretKey;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#init(java.security.Key,java.security.SecureRandom)"/>
@@ -178,7 +178,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Security.InvalidKeyException"/>
         public void Init(Java.Security.Key arg0)
         {
-            IExecute("init", arg0);
+            IExecuteWithSignature("init", "(Ljava/security/Key;)V", arg0);
         }
 
         #endregion

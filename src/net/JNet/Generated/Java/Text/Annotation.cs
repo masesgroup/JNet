@@ -58,7 +58,7 @@ namespace Java.Text
         /// </summary>
         public object Value
         {
-            get { return IExecute("getValue"); }
+            get { return IExecuteWithSignature("getValue", "()Ljava/lang/Object;"); }
         }
 
         #endregion

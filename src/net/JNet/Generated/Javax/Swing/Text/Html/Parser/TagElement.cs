@@ -67,14 +67,14 @@ namespace Javax.Swing.Text.Html.Parser
         /// </summary>
         public Javax.Swing.Text.Html.Parser.Element Element
         {
-            get { return IExecute<Javax.Swing.Text.Html.Parser.Element>("getElement"); }
+            get { return IExecuteWithSignature<Javax.Swing.Text.Html.Parser.Element>("getElement", "()Ljavax/swing/text/html/parser/Element;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/TagElement.html#getHTMLTag()"/> 
         /// </summary>
         public Javax.Swing.Text.Html.HTML.Tag HTMLTag
         {
-            get { return IExecute<Javax.Swing.Text.Html.HTML.Tag>("getHTMLTag"); }
+            get { return IExecuteWithSignature<Javax.Swing.Text.Html.HTML.Tag>("getHTMLTag", "()Ljavax/swing/text/html/HTML$Tag;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/TagElement.html#breaksFlow()"/>
@@ -83,7 +83,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <returns><see cref="bool"/></returns>
         public bool BreaksFlow()
         {
-            return IExecute<bool>("breaksFlow");
+            return IExecuteWithSignature<bool>("breaksFlow", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/TagElement.html#fictional()"/>
@@ -92,7 +92,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <returns><see cref="bool"/></returns>
         public bool Fictional()
         {
-            return IExecute<bool>("fictional");
+            return IExecuteWithSignature<bool>("fictional", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/TagElement.html#isPreformatted()"/>
@@ -101,7 +101,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <returns><see cref="bool"/></returns>
         public bool IsPreformatted()
         {
-            return IExecute<bool>("isPreformatted");
+            return IExecuteWithSignature<bool>("isPreformatted", "()Z");
         }
 
         #endregion

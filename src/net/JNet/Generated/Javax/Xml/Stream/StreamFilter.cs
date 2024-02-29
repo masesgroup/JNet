@@ -76,7 +76,7 @@ namespace Javax.Xml.Stream
         /// <returns><see cref="bool"/></returns>
         public bool Accept(Javax.Xml.Stream.XMLStreamReader arg0)
         {
-            return IExecute<bool>("accept", arg0);
+            return IExecuteWithSignature<bool>("accept", "(Ljavax/xml/stream/XMLStreamReader;)Z", arg0);
         }
 
         #endregion

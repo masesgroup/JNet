@@ -86,21 +86,21 @@ namespace Javax.Accessibility
         /// </summary>
         public Java.Lang.Number CurrentAccessibleValue
         {
-            get { return IExecute<Java.Lang.Number>("getCurrentAccessibleValue"); }
+            get { return IExecuteWithSignature<Java.Lang.Number>("getCurrentAccessibleValue", "()Ljava/lang/Number;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleValue.html#getMaximumAccessibleValue()"/> 
         /// </summary>
         public Java.Lang.Number MaximumAccessibleValue
         {
-            get { return IExecute<Java.Lang.Number>("getMaximumAccessibleValue"); }
+            get { return IExecuteWithSignature<Java.Lang.Number>("getMaximumAccessibleValue", "()Ljava/lang/Number;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleValue.html#getMinimumAccessibleValue()"/> 
         /// </summary>
         public Java.Lang.Number MinimumAccessibleValue
         {
-            get { return IExecute<Java.Lang.Number>("getMinimumAccessibleValue"); }
+            get { return IExecuteWithSignature<Java.Lang.Number>("getMinimumAccessibleValue", "()Ljava/lang/Number;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleValue.html#setCurrentAccessibleValue(java.lang.Number)"/>
@@ -109,7 +109,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="bool"/></returns>
         public bool SetCurrentAccessibleValue(Java.Lang.Number arg0)
         {
-            return IExecute<bool>("setCurrentAccessibleValue", arg0);
+            return IExecuteWithSignature<bool>("setCurrentAccessibleValue", "(Ljava/lang/Number;)Z", arg0);
         }
 
         #endregion

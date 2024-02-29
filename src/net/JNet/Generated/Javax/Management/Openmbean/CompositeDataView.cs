@@ -76,7 +76,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="Javax.Management.Openmbean.CompositeData"/></returns>
         public Javax.Management.Openmbean.CompositeData ToCompositeData(Javax.Management.Openmbean.CompositeType arg0)
         {
-            return IExecute<Javax.Management.Openmbean.CompositeData>("toCompositeData", arg0);
+            return IExecuteWithSignature<Javax.Management.Openmbean.CompositeData>("toCompositeData", "(Ljavax/management/openmbean/CompositeType;)Ljavax/management/openmbean/CompositeData;", arg0);
         }
 
         #endregion

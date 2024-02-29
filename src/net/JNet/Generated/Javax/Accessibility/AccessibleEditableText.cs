@@ -161,7 +161,7 @@ namespace Javax.Accessibility
         /// <param name="arg0"><see cref="int"/></param>
         public void Paste(int arg0)
         {
-            IExecute("paste", arg0);
+            IExecuteWithSignature("paste", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#replaceText(int,int,java.lang.String)"/>
@@ -198,7 +198,7 @@ namespace Javax.Accessibility
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void SetTextContents(Java.Lang.String arg0)
         {
-            IExecute("setTextContents", arg0);
+            IExecuteWithSignature("setTextContents", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

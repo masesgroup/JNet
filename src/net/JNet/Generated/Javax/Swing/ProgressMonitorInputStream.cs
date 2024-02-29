@@ -60,7 +60,7 @@ namespace Javax.Swing
         /// </summary>
         public Javax.Swing.ProgressMonitor ProgressMonitor
         {
-            get { return IExecute<Javax.Swing.ProgressMonitor>("getProgressMonitor"); }
+            get { return IExecuteWithSignature<Javax.Swing.ProgressMonitor>("getProgressMonitor", "()Ljavax/swing/ProgressMonitor;"); }
         }
 
         #endregion

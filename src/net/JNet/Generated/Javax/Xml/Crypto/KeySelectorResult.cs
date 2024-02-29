@@ -72,7 +72,7 @@ namespace Javax.Xml.Crypto
         /// </summary>
         public Java.Security.Key Key
         {
-            get { return IExecute<Java.Security.Key>("getKey"); }
+            get { return IExecuteWithSignature<Java.Security.Key>("getKey", "()Ljava/security/Key;"); }
         }
 
         #endregion

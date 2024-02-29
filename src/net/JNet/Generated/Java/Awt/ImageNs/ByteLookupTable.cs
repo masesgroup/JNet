@@ -68,7 +68,7 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public byte[] Table
         {
-            get { return IExecuteArray<byte>("getTable"); }
+            get { return IExecuteWithSignatureArray<byte>("getTable", "()[[B"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ByteLookupTable.html#lookupPixel(byte[],byte[])"/>

@@ -60,7 +60,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool NextBoolean()
         {
-            return IExecute<bool>("nextBoolean");
+            return IExecuteWithSignature<bool>("nextBoolean", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#nextDouble()"/>
@@ -69,7 +69,7 @@ namespace Java.Util
         /// <returns><see cref="double"/></returns>
         public double NextDouble()
         {
-            return IExecute<double>("nextDouble");
+            return IExecuteWithSignature<double>("nextDouble", "()D");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#nextDouble(double,double)"/>
@@ -88,7 +88,7 @@ namespace Java.Util
         /// <returns><see cref="double"/></returns>
         public double NextDouble(double arg0)
         {
-            return IExecute<double>("nextDouble", arg0);
+            return IExecuteWithSignature<double>("nextDouble", "(D)D", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#nextInt()"/>
@@ -97,7 +97,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int NextInt()
         {
-            return IExecute<int>("nextInt");
+            return IExecuteWithSignature<int>("nextInt", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#nextInt(int,int)"/>
@@ -116,7 +116,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int NextInt(int arg0)
         {
-            return IExecute<int>("nextInt", arg0);
+            return IExecuteWithSignature<int>("nextInt", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#split()"/>
@@ -125,7 +125,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.SplittableRandom"/></returns>
         public Java.Util.SplittableRandom Split()
         {
-            return IExecute<Java.Util.SplittableRandom>("split");
+            return IExecuteWithSignature<Java.Util.SplittableRandom>("split", "()Ljava/util/SplittableRandom;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#doubles()"/>
@@ -134,7 +134,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream Doubles()
         {
-            return IExecute<Java.Util.Stream.DoubleStream>("doubles");
+            return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("doubles", "()Ljava/util/stream/DoubleStream;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#doubles(double,double)"/>
@@ -164,7 +164,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream Doubles(long arg0)
         {
-            return IExecute<Java.Util.Stream.DoubleStream>("doubles", arg0);
+            return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("doubles", "(J)Ljava/util/stream/DoubleStream;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#ints()"/>
@@ -173,7 +173,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream Ints()
         {
-            return IExecute<Java.Util.Stream.IntStream>("ints");
+            return IExecuteWithSignature<Java.Util.Stream.IntStream>("ints", "()Ljava/util/stream/IntStream;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#ints(int,int)"/>
@@ -203,7 +203,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream Ints(long arg0)
         {
-            return IExecute<Java.Util.Stream.IntStream>("ints", arg0);
+            return IExecuteWithSignature<Java.Util.Stream.IntStream>("ints", "(J)Ljava/util/stream/IntStream;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#longs()"/>
@@ -212,7 +212,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream Longs()
         {
-            return IExecute<Java.Util.Stream.LongStream>("longs");
+            return IExecuteWithSignature<Java.Util.Stream.LongStream>("longs", "()Ljava/util/stream/LongStream;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#longs(long,long,long)"/>
@@ -242,7 +242,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream Longs(long arg0)
         {
-            return IExecute<Java.Util.Stream.LongStream>("longs", arg0);
+            return IExecuteWithSignature<Java.Util.Stream.LongStream>("longs", "(J)Ljava/util/stream/LongStream;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#nextLong()"/>
@@ -251,7 +251,7 @@ namespace Java.Util
         /// <returns><see cref="long"/></returns>
         public long NextLong()
         {
-            return IExecute<long>("nextLong");
+            return IExecuteWithSignature<long>("nextLong", "()J");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#nextLong(long,long)"/>
@@ -270,7 +270,7 @@ namespace Java.Util
         /// <returns><see cref="long"/></returns>
         public long NextLong(long arg0)
         {
-            return IExecute<long>("nextLong", arg0);
+            return IExecuteWithSignature<long>("nextLong", "(J)J", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#nextBytes(byte[])"/>
@@ -278,7 +278,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="byte"/></param>
         public void NextBytes(byte[] arg0)
         {
-            IExecute("nextBytes", new object[] { arg0 });
+            IExecuteWithSignature("nextBytes", "([B)V", new object[] { arg0 });
         }
 
         #endregion

@@ -121,28 +121,28 @@ namespace Java.Awt.EventNs
         /// </summary>
         public Java.Awt.Component Changed
         {
-            get { return IExecute<Java.Awt.Component>("getChanged"); }
+            get { return IExecuteWithSignature<Java.Awt.Component>("getChanged", "()Ljava/awt/Component;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#getChangedParent()"/> 
         /// </summary>
         public Java.Awt.Container ChangedParent
         {
-            get { return IExecute<Java.Awt.Container>("getChangedParent"); }
+            get { return IExecuteWithSignature<Java.Awt.Container>("getChangedParent", "()Ljava/awt/Container;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#getChangeFlags()"/> 
         /// </summary>
         public long ChangeFlags
         {
-            get { return IExecute<long>("getChangeFlags"); }
+            get { return IExecuteWithSignature<long>("getChangeFlags", "()J"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#getComponent()"/> 
         /// </summary>
         public Java.Awt.Component Component
         {
-            get { return IExecute<Java.Awt.Component>("getComponent"); }
+            get { return IExecuteWithSignature<Java.Awt.Component>("getComponent", "()Ljava/awt/Component;"); }
         }
 
         #endregion

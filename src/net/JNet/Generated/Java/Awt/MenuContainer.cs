@@ -77,7 +77,7 @@ namespace Java.Awt
         /// </summary>
         public Java.Awt.Font Font
         {
-            get { return IExecute<Java.Awt.Font>("getFont"); }
+            get { return IExecuteWithSignature<Java.Awt.Font>("getFont", "()Ljava/awt/Font;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuContainer.html#remove(java.awt.MenuComponent)"/>
@@ -85,7 +85,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.MenuComponent"/></param>
         public void Remove(Java.Awt.MenuComponent arg0)
         {
-            IExecute("remove", arg0);
+            IExecuteWithSignature("remove", "(Ljava/awt/MenuComponent;)V", arg0);
         }
 
         #endregion

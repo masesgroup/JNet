@@ -72,7 +72,7 @@ namespace Java.Lang.Management
         /// </summary>
         public Javax.Management.ObjectName ObjectName
         {
-            get { return IExecute<Javax.Management.ObjectName>("getObjectName"); }
+            get { return IExecuteWithSignature<Javax.Management.ObjectName>("getObjectName", "()Ljavax/management/ObjectName;"); }
         }
 
         #endregion

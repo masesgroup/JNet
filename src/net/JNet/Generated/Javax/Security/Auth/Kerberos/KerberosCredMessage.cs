@@ -60,21 +60,21 @@ namespace Javax.Security.Auth.Kerberos
         /// </summary>
         public byte[] Encoded
         {
-            get { return IExecuteArray<byte>("getEncoded"); }
+            get { return IExecuteWithSignatureArray<byte>("getEncoded", "()[B"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosCredMessage.html#getRecipient()"/> 
         /// </summary>
         public Javax.Security.Auth.Kerberos.KerberosPrincipal Recipient
         {
-            get { return IExecute<Javax.Security.Auth.Kerberos.KerberosPrincipal>("getRecipient"); }
+            get { return IExecuteWithSignature<Javax.Security.Auth.Kerberos.KerberosPrincipal>("getRecipient", "()Ljavax/security/auth/kerberos/KerberosPrincipal;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosCredMessage.html#getSender()"/> 
         /// </summary>
         public Javax.Security.Auth.Kerberos.KerberosPrincipal Sender
         {
-            get { return IExecute<Javax.Security.Auth.Kerberos.KerberosPrincipal>("getSender"); }
+            get { return IExecuteWithSignature<Javax.Security.Auth.Kerberos.KerberosPrincipal>("getSender", "()Ljavax/security/auth/kerberos/KerberosPrincipal;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosCredMessage.html#isDestroyed()"/>
@@ -83,14 +83,14 @@ namespace Javax.Security.Auth.Kerberos
         /// <returns><see cref="bool"/></returns>
         public bool IsDestroyed()
         {
-            return IExecute<bool>("isDestroyed");
+            return IExecuteWithSignature<bool>("isDestroyed", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosCredMessage.html#destroy()"/>
         /// </summary>
         public void Destroy()
         {
-            IExecute("destroy");
+            IExecuteWithSignature("destroy", "()V");
         }
 
         #endregion

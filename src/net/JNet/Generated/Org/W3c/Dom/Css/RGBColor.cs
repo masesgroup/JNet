@@ -80,21 +80,21 @@ namespace Org.W3c.Dom.Css
         /// </summary>
         public Org.W3c.Dom.Css.CSSPrimitiveValue Blue
         {
-            get { return IExecute<Org.W3c.Dom.Css.CSSPrimitiveValue>("getBlue"); }
+            get { return IExecuteWithSignature<Org.W3c.Dom.Css.CSSPrimitiveValue>("getBlue", "()Lorg/w3c/dom/css/CSSPrimitiveValue;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/RGBColor.html#getGreen()"/> 
         /// </summary>
         public Org.W3c.Dom.Css.CSSPrimitiveValue Green
         {
-            get { return IExecute<Org.W3c.Dom.Css.CSSPrimitiveValue>("getGreen"); }
+            get { return IExecuteWithSignature<Org.W3c.Dom.Css.CSSPrimitiveValue>("getGreen", "()Lorg/w3c/dom/css/CSSPrimitiveValue;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/RGBColor.html#getRed()"/> 
         /// </summary>
         public Org.W3c.Dom.Css.CSSPrimitiveValue Red
         {
-            get { return IExecute<Org.W3c.Dom.Css.CSSPrimitiveValue>("getRed"); }
+            get { return IExecuteWithSignature<Org.W3c.Dom.Css.CSSPrimitiveValue>("getRed", "()Lorg/w3c/dom/css/CSSPrimitiveValue;"); }
         }
 
         #endregion

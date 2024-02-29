@@ -47,7 +47,7 @@ namespace Java.Lang.Ref
         /// <param name="arg0"><see cref="object"/></param>
         public static void ReachabilityFence(object arg0)
         {
-            SExecute(LocalBridgeClazz, "reachabilityFence", arg0);
+            SExecuteWithSignature(LocalBridgeClazz, "reachabilityFence", "(Ljava/lang/Object;)V", arg0);
         }
 
         #endregion
@@ -60,7 +60,7 @@ namespace Java.Lang.Ref
         /// <returns><see cref="bool"/></returns>
         public bool Enqueue()
         {
-            return IExecute<bool>("enqueue");
+            return IExecuteWithSignature<bool>("enqueue", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#isEnqueued()"/>
@@ -69,7 +69,7 @@ namespace Java.Lang.Ref
         /// <returns><see cref="bool"/></returns>
         public bool IsEnqueued()
         {
-            return IExecute<bool>("isEnqueued");
+            return IExecuteWithSignature<bool>("isEnqueued", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#get()"/>
@@ -78,14 +78,14 @@ namespace Java.Lang.Ref
         /// <returns><see cref="object"/></returns>
         public object Get()
         {
-            return IExecute("get");
+            return IExecuteWithSignature("get", "()Ljava/lang/Object;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#clear()"/>
         /// </summary>
         public void Clear()
         {
-            IExecute("clear");
+            IExecuteWithSignature("clear", "()V");
         }
 
         #endregion
@@ -124,7 +124,7 @@ namespace Java.Lang.Ref
         /// <param name="arg0"><see cref="object"/></param>
         public static void ReachabilityFence(object arg0)
         {
-            SExecute(LocalBridgeClazz, "reachabilityFence", arg0);
+            SExecuteWithSignature(LocalBridgeClazz, "reachabilityFence", "(Ljava/lang/Object;)V", arg0);
         }
 
         #endregion
@@ -137,7 +137,7 @@ namespace Java.Lang.Ref
         /// <returns><see cref="bool"/></returns>
         public bool Enqueue()
         {
-            return IExecute<bool>("enqueue");
+            return IExecuteWithSignature<bool>("enqueue", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#isEnqueued()"/>
@@ -146,7 +146,7 @@ namespace Java.Lang.Ref
         /// <returns><see cref="bool"/></returns>
         public bool IsEnqueued()
         {
-            return IExecute<bool>("isEnqueued");
+            return IExecuteWithSignature<bool>("isEnqueued", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#get()"/>
@@ -155,14 +155,14 @@ namespace Java.Lang.Ref
         /// <returns><typeparamref name="T"/></returns>
         public T Get()
         {
-            return IExecute<T>("get");
+            return IExecuteWithSignature<T>("get", "()Ljava/lang/Object;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#clear()"/>
         /// </summary>
         public void Clear()
         {
-            IExecute("clear");
+            IExecuteWithSignature("clear", "()V");
         }
 
         #endregion

@@ -88,7 +88,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         public void Load()
         {
-            IExecute("load");
+            IExecuteWithSignature("load", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/PersistentMBean.html#store()"/>
@@ -99,7 +99,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         public void Store()
         {
-            IExecute("store");
+            IExecuteWithSignature("store", "()V");
         }
 
         #endregion

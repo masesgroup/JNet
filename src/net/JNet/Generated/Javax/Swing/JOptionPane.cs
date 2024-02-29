@@ -244,7 +244,7 @@ namespace Javax.Swing
         /// </summary>
         public static Java.Awt.Frame RootFrame
         {
-            get { return SExecute<Java.Awt.Frame>(LocalBridgeClazz, "getRootFrame"); } set { SExecute(LocalBridgeClazz, "setRootFrame", value); }
+            get { return SExecuteWithSignature<Java.Awt.Frame>(LocalBridgeClazz, "getRootFrame", "()Ljava/awt/Frame;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setRootFrame", "(Ljava/awt/Frame;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showConfirmDialog(java.awt.Component,java.lang.Object,java.lang.String,int,int,javax.swing.Icon)"/>
@@ -389,7 +389,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static Java.Awt.Frame GetFrameForComponent(Java.Awt.Component arg0)
         {
-            return SExecute<Java.Awt.Frame>(LocalBridgeClazz, "getFrameForComponent", arg0);
+            return SExecuteWithSignature<Java.Awt.Frame>(LocalBridgeClazz, "getFrameForComponent", "(Ljava/awt/Component;)Ljava/awt/Frame;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInputDialog(java.awt.Component,java.lang.Object,java.lang.String,int,javax.swing.Icon,java.lang.Object[],java.lang.Object)"/>
@@ -475,7 +475,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static Java.Lang.String ShowInputDialog(object arg0)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "showInputDialog", arg0);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "showInputDialog", "(Ljava/lang/Object;)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalInputDialog(java.awt.Component,java.lang.Object,java.lang.String,int)"/>
@@ -506,7 +506,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.JDesktopPane"/></returns>
         public static Javax.Swing.JDesktopPane GetDesktopPaneForComponent(Java.Awt.Component arg0)
         {
-            return SExecute<Javax.Swing.JDesktopPane>(LocalBridgeClazz, "getDesktopPaneForComponent", arg0);
+            return SExecuteWithSignature<Javax.Swing.JDesktopPane>(LocalBridgeClazz, "getDesktopPaneForComponent", "(Ljava/awt/Component;)Ljavax/swing/JDesktopPane;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int,javax.swing.Icon)"/>
@@ -584,84 +584,84 @@ namespace Javax.Swing
         /// </summary>
         public Javax.Swing.Icon Icon
         {
-            get { return IExecute<Javax.Swing.Icon>("getIcon"); } set { IExecute("setIcon", value); }
+            get { return IExecuteWithSignature<Javax.Swing.Icon>("getIcon", "()Ljavax/swing/Icon;"); } set { IExecuteWithSignature("setIcon", "(Ljavax/swing/Icon;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#getInitialSelectionValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#setInitialSelectionValue(java.lang.Object)"/>
         /// </summary>
         public object InitialSelectionValue
         {
-            get { return IExecute("getInitialSelectionValue"); } set { IExecute("setInitialSelectionValue", value); }
+            get { return IExecuteWithSignature("getInitialSelectionValue", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setInitialSelectionValue", "(Ljava/lang/Object;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#getInitialValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#setInitialValue(java.lang.Object)"/>
         /// </summary>
         public object InitialValue
         {
-            get { return IExecute("getInitialValue"); } set { IExecute("setInitialValue", value); }
+            get { return IExecuteWithSignature("getInitialValue", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setInitialValue", "(Ljava/lang/Object;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#getInputValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#setInputValue(java.lang.Object)"/>
         /// </summary>
         public object InputValue
         {
-            get { return IExecute("getInputValue"); } set { IExecute("setInputValue", value); }
+            get { return IExecuteWithSignature("getInputValue", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setInputValue", "(Ljava/lang/Object;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#getMaxCharactersPerLineCount()"/> 
         /// </summary>
         public int MaxCharactersPerLineCount
         {
-            get { return IExecute<int>("getMaxCharactersPerLineCount"); }
+            get { return IExecuteWithSignature<int>("getMaxCharactersPerLineCount", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#getMessage()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#setMessage(java.lang.Object)"/>
         /// </summary>
         public object Message
         {
-            get { return IExecute("getMessage"); } set { IExecute("setMessage", value); }
+            get { return IExecuteWithSignature("getMessage", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setMessage", "(Ljava/lang/Object;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#getMessageType()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#setMessageType(int)"/>
         /// </summary>
         public int MessageType
         {
-            get { return IExecute<int>("getMessageType"); } set { IExecute("setMessageType", value); }
+            get { return IExecuteWithSignature<int>("getMessageType", "()I"); } set { IExecuteWithSignature("setMessageType", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#getOptions()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#setOptions(java.lang.Object[])"/>
         /// </summary>
         public object[] Options
         {
-            get { return IExecuteArray<object>("getOptions"); } set { IExecute("setOptions", value); }
+            get { return IExecuteWithSignatureArray<object>("getOptions", "()[Ljava/lang/Object;"); } set { IExecuteWithSignature("setOptions", "([Ljava/lang/Object;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#getOptionType()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#setOptionType(int)"/>
         /// </summary>
         public int OptionType
         {
-            get { return IExecute<int>("getOptionType"); } set { IExecute("setOptionType", value); }
+            get { return IExecuteWithSignature<int>("getOptionType", "()I"); } set { IExecuteWithSignature("setOptionType", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#getSelectionValues()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#setSelectionValues(java.lang.Object[])"/>
         /// </summary>
         public object[] SelectionValues
         {
-            get { return IExecuteArray<object>("getSelectionValues"); } set { IExecute("setSelectionValues", value); }
+            get { return IExecuteWithSignatureArray<object>("getSelectionValues", "()[Ljava/lang/Object;"); } set { IExecuteWithSignature("setSelectionValues", "([Ljava/lang/Object;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#setValue(java.lang.Object)"/>
         /// </summary>
         public object Value
         {
-            get { return IExecute("getValue"); } set { IExecute("setValue", value); }
+            get { return IExecuteWithSignature("getValue", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setValue", "(Ljava/lang/Object;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#getWantsInput()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#setWantsInput(boolean)"/>
         /// </summary>
         public bool WantsInput
         {
-            get { return IExecute<bool>("getWantsInput"); } set { IExecute("setWantsInput", value); }
+            get { return IExecuteWithSignature<bool>("getWantsInput", "()Z"); } set { IExecuteWithSignature("setWantsInput", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#createDialog(java.awt.Component,java.lang.String)"/>
@@ -682,7 +682,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public Javax.Swing.JDialog CreateDialog(Java.Lang.String arg0)
         {
-            return IExecute<Javax.Swing.JDialog>("createDialog", arg0);
+            return IExecuteWithSignature<Javax.Swing.JDialog>("createDialog", "(Ljava/lang/String;)Ljavax/swing/JDialog;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#createInternalFrame(java.awt.Component,java.lang.String)"/>
@@ -699,7 +699,7 @@ namespace Javax.Swing
         /// </summary>
         public void SelectInitialValue()
         {
-            IExecute("selectInitialValue");
+            IExecuteWithSignature("selectInitialValue", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#setUI(javax.swing.plaf.OptionPaneUI)"/>
@@ -707,7 +707,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.OptionPaneUI"/></param>
         public void SetUI(Javax.Swing.Plaf.OptionPaneUI arg0)
         {
-            IExecute("setUI", arg0);
+            IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/OptionPaneUI;)V", arg0);
         }
 
         #endregion

@@ -76,14 +76,14 @@ namespace Java.Io
         /// </summary>
         public Java.Nio.Channels.FileChannel Channel
         {
-            get { return IExecute<Java.Nio.Channels.FileChannel>("getChannel"); }
+            get { return IExecuteWithSignature<Java.Nio.Channels.FileChannel>("getChannel", "()Ljava/nio/channels/FileChannel;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileInputStream.html#getFD()"/> 
         /// </summary>
         public Java.Io.FileDescriptor FD
         {
-            get { return IExecute<Java.Io.FileDescriptor>("getFD"); }
+            get { return IExecuteWithSignature<Java.Io.FileDescriptor>("getFD", "()Ljava/io/FileDescriptor;"); }
         }
 
         #endregion

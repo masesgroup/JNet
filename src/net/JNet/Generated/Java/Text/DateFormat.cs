@@ -184,35 +184,35 @@ namespace Java.Text
         /// </summary>
         public static Java.Util.Locale[] AvailableLocales
         {
-            get { return SExecuteArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales"); }
+            get { return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#getDateInstance()"/> 
         /// </summary>
         public static Java.Text.DateFormat DateInstance
         {
-            get { return SExecute<Java.Text.DateFormat>(LocalBridgeClazz, "getDateInstance"); }
+            get { return SExecuteWithSignature<Java.Text.DateFormat>(LocalBridgeClazz, "getDateInstance", "()Ljava/text/DateFormat;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#getDateTimeInstance()"/> 
         /// </summary>
         public static Java.Text.DateFormat DateTimeInstance
         {
-            get { return SExecute<Java.Text.DateFormat>(LocalBridgeClazz, "getDateTimeInstance"); }
+            get { return SExecuteWithSignature<Java.Text.DateFormat>(LocalBridgeClazz, "getDateTimeInstance", "()Ljava/text/DateFormat;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#getInstance()"/> 
         /// </summary>
         public static Java.Text.DateFormat Instance
         {
-            get { return SExecute<Java.Text.DateFormat>(LocalBridgeClazz, "getInstance"); }
+            get { return SExecuteWithSignature<Java.Text.DateFormat>(LocalBridgeClazz, "getInstance", "()Ljava/text/DateFormat;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#getTimeInstance()"/> 
         /// </summary>
         public static Java.Text.DateFormat TimeInstance
         {
-            get { return SExecute<Java.Text.DateFormat>(LocalBridgeClazz, "getTimeInstance"); }
+            get { return SExecuteWithSignature<Java.Text.DateFormat>(LocalBridgeClazz, "getTimeInstance", "()Ljava/text/DateFormat;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#getDateInstance(int,java.util.Locale)"/>
@@ -231,7 +231,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.DateFormat"/></returns>
         public static Java.Text.DateFormat GetDateInstance(int arg0)
         {
-            return SExecute<Java.Text.DateFormat>(LocalBridgeClazz, "getDateInstance", arg0);
+            return SExecuteWithSignature<Java.Text.DateFormat>(LocalBridgeClazz, "getDateInstance", "(I)Ljava/text/DateFormat;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#getDateTimeInstance(int,int,java.util.Locale)"/>
@@ -271,7 +271,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.DateFormat"/></returns>
         public static Java.Text.DateFormat GetTimeInstance(int arg0)
         {
-            return SExecute<Java.Text.DateFormat>(LocalBridgeClazz, "getTimeInstance", arg0);
+            return SExecuteWithSignature<Java.Text.DateFormat>(LocalBridgeClazz, "getTimeInstance", "(I)Ljava/text/DateFormat;", arg0);
         }
 
         #endregion
@@ -282,21 +282,21 @@ namespace Java.Text
         /// </summary>
         public Java.Util.Calendar Calendar
         {
-            get { return IExecute<Java.Util.Calendar>("getCalendar"); } set { IExecute("setCalendar", value); }
+            get { return IExecuteWithSignature<Java.Util.Calendar>("getCalendar", "()Ljava/util/Calendar;"); } set { IExecuteWithSignature("setCalendar", "(Ljava/util/Calendar;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#getNumberFormat()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#setNumberFormat(java.text.NumberFormat)"/>
         /// </summary>
         public Java.Text.NumberFormat NumberFormat
         {
-            get { return IExecute<Java.Text.NumberFormat>("getNumberFormat"); } set { IExecute("setNumberFormat", value); }
+            get { return IExecuteWithSignature<Java.Text.NumberFormat>("getNumberFormat", "()Ljava/text/NumberFormat;"); } set { IExecuteWithSignature("setNumberFormat", "(Ljava/text/NumberFormat;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#getTimeZone()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#setTimeZone(java.util.TimeZone)"/>
         /// </summary>
         public Java.Util.TimeZone TimeZone
         {
-            get { return IExecute<Java.Util.TimeZone>("getTimeZone"); } set { IExecute("setTimeZone", value); }
+            get { return IExecuteWithSignature<Java.Util.TimeZone>("getTimeZone", "()Ljava/util/TimeZone;"); } set { IExecuteWithSignature("setTimeZone", "(Ljava/util/TimeZone;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#format(java.util.Date,java.lang.StringBuffer,java.text.FieldPosition)"/>
@@ -326,7 +326,7 @@ namespace Java.Text
         /// <returns><see cref="bool"/></returns>
         public bool IsLenient()
         {
-            return IExecute<bool>("isLenient");
+            return IExecuteWithSignature<bool>("isLenient", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#format(java.util.Date)"/>
@@ -335,7 +335,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Format(Java.Util.Date arg0)
         {
-            return IExecute<Java.Lang.String>("format", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("format", "(Ljava/util/Date;)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#parse(java.lang.String)"/>
@@ -345,7 +345,7 @@ namespace Java.Text
         /// <exception cref="Java.Text.ParseException"/>
         public Java.Util.Date Parse(Java.Lang.String arg0)
         {
-            return IExecute<Java.Util.Date>("parse", arg0);
+            return IExecuteWithSignature<Java.Util.Date>("parse", "(Ljava/lang/String;)Ljava/util/Date;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#setLenient(boolean)"/>
@@ -353,7 +353,7 @@ namespace Java.Text
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetLenient(bool arg0)
         {
-            IExecute("setLenient", arg0);
+            IExecuteWithSignature("setLenient", "(Z)V", arg0);
         }
 
         #endregion
@@ -490,7 +490,7 @@ namespace Java.Text
             /// <returns><see cref="Java.Text.DateFormat.Field"/></returns>
             public static Java.Text.DateFormat.Field OfCalendarField(int arg0)
             {
-                return SExecute<Java.Text.DateFormat.Field>(LocalBridgeClazz, "ofCalendarField", arg0);
+                return SExecuteWithSignature<Java.Text.DateFormat.Field>(LocalBridgeClazz, "ofCalendarField", "(I)Ljava/text/DateFormat$Field;", arg0);
             }
 
             #endregion
@@ -501,7 +501,7 @@ namespace Java.Text
             /// </summary>
             public int CalendarField
             {
-                get { return IExecute<int>("getCalendarField"); }
+                get { return IExecuteWithSignature<int>("getCalendarField", "()I"); }
             }
 
             #endregion

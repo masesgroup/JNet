@@ -59,14 +59,14 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public float[] Matrix
         {
-            get { return IExecuteArray<float>("getMatrix"); }
+            get { return IExecuteWithSignatureArray<float>("getMatrix", "()[[F"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BandCombineOp.html#getRenderingHints()"/> 
         /// </summary>
         public Java.Awt.RenderingHints RenderingHints
         {
-            get { return IExecute<Java.Awt.RenderingHints>("getRenderingHints"); }
+            get { return IExecuteWithSignature<Java.Awt.RenderingHints>("getRenderingHints", "()Ljava/awt/RenderingHints;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BandCombineOp.html#getPoint2D(java.awt.geom.Point2D,java.awt.geom.Point2D)"/>
@@ -85,7 +85,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         public Java.Awt.Geom.Rectangle2D GetBounds2D(Java.Awt.ImageNs.Raster arg0)
         {
-            return IExecute<Java.Awt.Geom.Rectangle2D>("getBounds2D", arg0);
+            return IExecuteWithSignature<Java.Awt.Geom.Rectangle2D>("getBounds2D", "(Ljava/awt/image/Raster;)Ljava/awt/geom/Rectangle2D;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BandCombineOp.html#createCompatibleDestRaster(java.awt.image.Raster)"/>
@@ -94,7 +94,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
         public Java.Awt.ImageNs.WritableRaster CreateCompatibleDestRaster(Java.Awt.ImageNs.Raster arg0)
         {
-            return IExecute<Java.Awt.ImageNs.WritableRaster>("createCompatibleDestRaster", arg0);
+            return IExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>("createCompatibleDestRaster", "(Ljava/awt/image/Raster;)Ljava/awt/image/WritableRaster;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BandCombineOp.html#filter(java.awt.image.Raster,java.awt.image.WritableRaster)"/>

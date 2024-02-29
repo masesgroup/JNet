@@ -58,7 +58,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// </summary>
         public Javax.Xml.Crypto.XMLStructure Stylesheet
         {
-            get { return IExecute<Javax.Xml.Crypto.XMLStructure>("getStylesheet"); }
+            get { return IExecuteWithSignature<Javax.Xml.Crypto.XMLStructure>("getStylesheet", "()Ljavax/xml/crypto/XMLStructure;"); }
         }
 
         #endregion

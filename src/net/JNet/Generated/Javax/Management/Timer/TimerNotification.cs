@@ -63,7 +63,7 @@ namespace Javax.Management.Timer
         /// </summary>
         public Java.Lang.Integer NotificationID
         {
-            get { return IExecute<Java.Lang.Integer>("getNotificationID"); }
+            get { return IExecuteWithSignature<Java.Lang.Integer>("getNotificationID", "()Ljava/lang/Integer;"); }
         }
 
         #endregion

@@ -77,21 +77,21 @@ namespace Javax.Management
         /// </summary>
         public Java.Lang.String Description
         {
-            get { return IExecute<Java.Lang.String>("getDescription"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanFeatureInfo.html#getDescriptor()"/> 
         /// </summary>
         public Javax.Management.Descriptor Descriptor
         {
-            get { return IExecute<Javax.Management.Descriptor>("getDescriptor"); }
+            get { return IExecuteWithSignature<Javax.Management.Descriptor>("getDescriptor", "()Ljavax/management/Descriptor;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanFeatureInfo.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
         }
 
         #endregion

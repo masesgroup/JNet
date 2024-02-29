@@ -72,7 +72,7 @@ namespace Javax.Crypto.Interfaces
         /// </summary>
         public Javax.Crypto.Spec.DHParameterSpec Params
         {
-            get { return IExecute<Javax.Crypto.Spec.DHParameterSpec>("getParams"); }
+            get { return IExecuteWithSignature<Javax.Crypto.Spec.DHParameterSpec>("getParams", "()Ljavax/crypto/spec/DHParameterSpec;"); }
         }
 
         #endregion

@@ -78,7 +78,7 @@ namespace Java.Security
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Principal.html#implies(javax.security.auth.Subject)"/>
@@ -87,7 +87,7 @@ namespace Java.Security
         /// <returns><see cref="bool"/></returns>
         public bool Implies(Javax.Security.Auth.Subject arg0)
         {
-            return IExecute<bool>("implies", arg0);
+            return IExecuteWithSignature<bool>("implies", "(Ljavax/security/auth/Subject;)Z", arg0);
         }
 
         #endregion

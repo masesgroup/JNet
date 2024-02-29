@@ -67,7 +67,7 @@ namespace Java.Util.Zip
         /// </summary>
         public Java.Util.Zip.ZipEntry NextEntry
         {
-            get { return IExecute<Java.Util.Zip.ZipEntry>("getNextEntry"); }
+            get { return IExecuteWithSignature<Java.Util.Zip.ZipEntry>("getNextEntry", "()Ljava/util/zip/ZipEntry;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipInputStream.html#closeEntry()"/>
@@ -76,7 +76,7 @@ namespace Java.Util.Zip
         /// <exception cref="Java.Io.IOException"/>
         public void CloseEntry()
         {
-            IExecute("closeEntry");
+            IExecuteWithSignature("closeEntry", "()V");
         }
 
         #endregion

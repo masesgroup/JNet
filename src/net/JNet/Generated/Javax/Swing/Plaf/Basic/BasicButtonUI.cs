@@ -52,7 +52,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <returns><see cref="int"/></returns>
         public int GetDefaultTextIconGap(Javax.Swing.AbstractButton arg0)
         {
-            return IExecute<int>("getDefaultTextIconGap", arg0);
+            return IExecuteWithSignature<int>("getDefaultTextIconGap", "(Ljavax/swing/AbstractButton;)I", arg0);
         }
 
         #endregion

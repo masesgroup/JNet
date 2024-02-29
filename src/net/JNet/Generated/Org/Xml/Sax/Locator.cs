@@ -84,28 +84,28 @@ namespace Org.Xml.Sax
         /// </summary>
         public int ColumnNumber
         {
-            get { return IExecute<int>("getColumnNumber"); }
+            get { return IExecuteWithSignature<int>("getColumnNumber", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Locator.html#getLineNumber()"/> 
         /// </summary>
         public int LineNumber
         {
-            get { return IExecute<int>("getLineNumber"); }
+            get { return IExecuteWithSignature<int>("getLineNumber", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Locator.html#getPublicId()"/> 
         /// </summary>
         public Java.Lang.String PublicId
         {
-            get { return IExecute<Java.Lang.String>("getPublicId"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getPublicId", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Locator.html#getSystemId()"/> 
         /// </summary>
         public Java.Lang.String SystemId
         {
-            get { return IExecute<Java.Lang.String>("getSystemId"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); }
         }
 
         #endregion

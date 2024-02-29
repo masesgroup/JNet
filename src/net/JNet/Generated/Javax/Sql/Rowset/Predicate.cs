@@ -114,7 +114,7 @@ namespace Javax.Sql.Rowset
         /// <returns><see cref="bool"/></returns>
         public bool Evaluate(Javax.Sql.RowSet arg0)
         {
-            return IExecute<bool>("evaluate", arg0);
+            return IExecuteWithSignature<bool>("evaluate", "(Ljavax/sql/RowSet;)Z", arg0);
         }
 
         #endregion

@@ -96,7 +96,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <returns><see cref="int"/></returns>
         public static int Name2type(Java.Lang.String arg0)
         {
-            return SExecute<int>(LocalBridgeClazz, "name2type", arg0);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "name2type", "(Ljava/lang/String;)I", arg0);
         }
 
         #endregion
@@ -107,35 +107,35 @@ namespace Javax.Swing.Text.Html.Parser
         /// </summary>
         public Javax.Swing.Text.Html.Parser.AttributeList Attributes
         {
-            get { return IExecute<Javax.Swing.Text.Html.Parser.AttributeList>("getAttributes"); }
+            get { return IExecuteWithSignature<Javax.Swing.Text.Html.Parser.AttributeList>("getAttributes", "()Ljavax/swing/text/html/parser/AttributeList;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#getContent()"/> 
         /// </summary>
         public Javax.Swing.Text.Html.Parser.ContentModel Content
         {
-            get { return IExecute<Javax.Swing.Text.Html.Parser.ContentModel>("getContent"); }
+            get { return IExecuteWithSignature<Javax.Swing.Text.Html.Parser.ContentModel>("getContent", "()Ljavax/swing/text/html/parser/ContentModel;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#getIndex()"/> 
         /// </summary>
         public int Index
         {
-            get { return IExecute<int>("getIndex"); }
+            get { return IExecuteWithSignature<int>("getIndex", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#getType()"/> 
         /// </summary>
         public int Type
         {
-            get { return IExecute<int>("getType"); }
+            get { return IExecuteWithSignature<int>("getType", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#isEmpty()"/>
@@ -144,7 +144,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
-            return IExecute<bool>("isEmpty");
+            return IExecuteWithSignature<bool>("isEmpty", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#omitEnd()"/>
@@ -153,7 +153,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <returns><see cref="bool"/></returns>
         public bool OmitEnd()
         {
-            return IExecute<bool>("omitEnd");
+            return IExecuteWithSignature<bool>("omitEnd", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#omitStart()"/>
@@ -162,7 +162,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <returns><see cref="bool"/></returns>
         public bool OmitStart()
         {
-            return IExecute<bool>("omitStart");
+            return IExecuteWithSignature<bool>("omitStart", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#getAttribute(java.lang.String)"/>
@@ -171,7 +171,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <returns><see cref="Javax.Swing.Text.Html.Parser.AttributeList"/></returns>
         public Javax.Swing.Text.Html.Parser.AttributeList GetAttribute(Java.Lang.String arg0)
         {
-            return IExecute<Javax.Swing.Text.Html.Parser.AttributeList>("getAttribute", arg0);
+            return IExecuteWithSignature<Javax.Swing.Text.Html.Parser.AttributeList>("getAttribute", "(Ljava/lang/String;)Ljavax/swing/text/html/parser/AttributeList;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#getAttributeByValue(java.lang.String)"/>
@@ -180,7 +180,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <returns><see cref="Javax.Swing.Text.Html.Parser.AttributeList"/></returns>
         public Javax.Swing.Text.Html.Parser.AttributeList GetAttributeByValue(Java.Lang.String arg0)
         {
-            return IExecute<Javax.Swing.Text.Html.Parser.AttributeList>("getAttributeByValue", arg0);
+            return IExecuteWithSignature<Javax.Swing.Text.Html.Parser.AttributeList>("getAttributeByValue", "(Ljava/lang/String;)Ljavax/swing/text/html/parser/AttributeList;", arg0);
         }
 
         #endregion

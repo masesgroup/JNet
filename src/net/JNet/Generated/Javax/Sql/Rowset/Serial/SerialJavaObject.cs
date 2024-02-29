@@ -67,14 +67,14 @@ namespace Javax.Sql.Rowset.Serial
         /// </summary>
         public Java.Lang.Reflect.Field[] Fields
         {
-            get { return IExecuteArray<Java.Lang.Reflect.Field>("getFields"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Field>("getFields", "()[Ljava/lang/reflect/Field;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialJavaObject.html#getObject()"/> 
         /// </summary>
         public object Object
         {
-            get { return IExecute("getObject"); }
+            get { return IExecuteWithSignature("getObject", "()Ljava/lang/Object;"); }
         }
 
         #endregion

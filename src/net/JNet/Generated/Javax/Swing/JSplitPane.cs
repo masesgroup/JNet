@@ -176,77 +176,77 @@ namespace Javax.Swing
         /// </summary>
         public Java.Awt.Component BottomComponent
         {
-            get { return IExecute<Java.Awt.Component>("getBottomComponent"); } set { IExecute("setBottomComponent", value); }
+            get { return IExecuteWithSignature<Java.Awt.Component>("getBottomComponent", "()Ljava/awt/Component;"); } set { IExecuteWithSignature("setBottomComponent", "(Ljava/awt/Component;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#getDividerLocation()"/> 
         /// </summary>
         public int DividerLocation
         {
-            get { return IExecute<int>("getDividerLocation"); }
+            get { return IExecuteWithSignature<int>("getDividerLocation", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#getDividerSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#setDividerSize(int)"/>
         /// </summary>
         public int DividerSize
         {
-            get { return IExecute<int>("getDividerSize"); } set { IExecute("setDividerSize", value); }
+            get { return IExecuteWithSignature<int>("getDividerSize", "()I"); } set { IExecuteWithSignature("setDividerSize", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#getLastDividerLocation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#setLastDividerLocation(int)"/>
         /// </summary>
         public int LastDividerLocation
         {
-            get { return IExecute<int>("getLastDividerLocation"); } set { IExecute("setLastDividerLocation", value); }
+            get { return IExecuteWithSignature<int>("getLastDividerLocation", "()I"); } set { IExecuteWithSignature("setLastDividerLocation", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#getLeftComponent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#setLeftComponent(java.awt.Component)"/>
         /// </summary>
         public Java.Awt.Component LeftComponent
         {
-            get { return IExecute<Java.Awt.Component>("getLeftComponent"); } set { IExecute("setLeftComponent", value); }
+            get { return IExecuteWithSignature<Java.Awt.Component>("getLeftComponent", "()Ljava/awt/Component;"); } set { IExecuteWithSignature("setLeftComponent", "(Ljava/awt/Component;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#getMaximumDividerLocation()"/> 
         /// </summary>
         public int MaximumDividerLocation
         {
-            get { return IExecute<int>("getMaximumDividerLocation"); }
+            get { return IExecuteWithSignature<int>("getMaximumDividerLocation", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#getMinimumDividerLocation()"/> 
         /// </summary>
         public int MinimumDividerLocation
         {
-            get { return IExecute<int>("getMinimumDividerLocation"); }
+            get { return IExecuteWithSignature<int>("getMinimumDividerLocation", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#getOrientation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#setOrientation(int)"/>
         /// </summary>
         public int Orientation
         {
-            get { return IExecute<int>("getOrientation"); } set { IExecute("setOrientation", value); }
+            get { return IExecuteWithSignature<int>("getOrientation", "()I"); } set { IExecuteWithSignature("setOrientation", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#getResizeWeight()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#setResizeWeight(double)"/>
         /// </summary>
         public double ResizeWeight
         {
-            get { return IExecute<double>("getResizeWeight"); } set { IExecute("setResizeWeight", value); }
+            get { return IExecuteWithSignature<double>("getResizeWeight", "()D"); } set { IExecuteWithSignature("setResizeWeight", "(D)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#getRightComponent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#setRightComponent(java.awt.Component)"/>
         /// </summary>
         public Java.Awt.Component RightComponent
         {
-            get { return IExecute<Java.Awt.Component>("getRightComponent"); } set { IExecute("setRightComponent", value); }
+            get { return IExecuteWithSignature<Java.Awt.Component>("getRightComponent", "()Ljava/awt/Component;"); } set { IExecuteWithSignature("setRightComponent", "(Ljava/awt/Component;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#getTopComponent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#setTopComponent(java.awt.Component)"/>
         /// </summary>
         public Java.Awt.Component TopComponent
         {
-            get { return IExecute<Java.Awt.Component>("getTopComponent"); } set { IExecute("setTopComponent", value); }
+            get { return IExecuteWithSignature<Java.Awt.Component>("getTopComponent", "()Ljava/awt/Component;"); } set { IExecuteWithSignature("setTopComponent", "(Ljava/awt/Component;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#isContinuousLayout()"/>
@@ -255,7 +255,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsContinuousLayout()
         {
-            return IExecute<bool>("isContinuousLayout");
+            return IExecuteWithSignature<bool>("isContinuousLayout", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#isOneTouchExpandable()"/>
@@ -264,14 +264,14 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsOneTouchExpandable()
         {
-            return IExecute<bool>("isOneTouchExpandable");
+            return IExecuteWithSignature<bool>("isOneTouchExpandable", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#resetToPreferredSizes()"/>
         /// </summary>
         public void ResetToPreferredSizes()
         {
-            IExecute("resetToPreferredSizes");
+            IExecuteWithSignature("resetToPreferredSizes", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#setContinuousLayout(boolean)"/>
@@ -279,7 +279,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetContinuousLayout(bool arg0)
         {
-            IExecute("setContinuousLayout", arg0);
+            IExecuteWithSignature("setContinuousLayout", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#setDividerLocation(double)"/>
@@ -287,7 +287,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="double"/></param>
         public void SetDividerLocation(double arg0)
         {
-            IExecute("setDividerLocation", arg0);
+            IExecuteWithSignature("setDividerLocation", "(D)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#setDividerLocation(int)"/>
@@ -295,7 +295,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public void SetDividerLocation(int arg0)
         {
-            IExecute("setDividerLocation", arg0);
+            IExecuteWithSignature("setDividerLocation", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#setOneTouchExpandable(boolean)"/>
@@ -303,7 +303,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetOneTouchExpandable(bool arg0)
         {
-            IExecute("setOneTouchExpandable", arg0);
+            IExecuteWithSignature("setOneTouchExpandable", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#setUI(javax.swing.plaf.SplitPaneUI)"/>
@@ -311,7 +311,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.SplitPaneUI"/></param>
         public void SetUI(Javax.Swing.Plaf.SplitPaneUI arg0)
         {
-            IExecute("setUI", arg0);
+            IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/SplitPaneUI;)V", arg0);
         }
 
         #endregion

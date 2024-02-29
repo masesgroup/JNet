@@ -78,7 +78,7 @@ namespace Javax.Naming.Spi
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.Context GetInitialContext(Java.Util.Hashtable<object, object> arg0)
         {
-            return IExecute<Javax.Naming.Context>("getInitialContext", arg0);
+            return IExecuteWithSignature<Javax.Naming.Context>("getInitialContext", "(Ljava/util/Hashtable;)Ljavax/naming/Context;", arg0);
         }
 
         #endregion

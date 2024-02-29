@@ -290,7 +290,7 @@ namespace Javax.Xml.Datatype
             /// </summary>
             public int Id
             {
-                get { return IExecute<int>("getId"); }
+                get { return IExecuteWithSignature<int>("getId", "()I"); }
             }
 
             #endregion

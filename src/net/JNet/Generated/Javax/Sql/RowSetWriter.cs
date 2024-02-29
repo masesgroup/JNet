@@ -78,7 +78,7 @@ namespace Javax.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool WriteData(Javax.Sql.RowSetInternal arg0)
         {
-            return IExecute<bool>("writeData", arg0);
+            return IExecuteWithSignature<bool>("writeData", "(Ljavax/sql/RowSetInternal;)Z", arg0);
         }
 
         #endregion

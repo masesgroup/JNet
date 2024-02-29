@@ -72,7 +72,7 @@ namespace Java.Awt
         /// </summary>
         public void Dispatch()
         {
-            IExecute("dispatch");
+            IExecuteWithSignature("dispatch", "()V");
         }
 
         #endregion

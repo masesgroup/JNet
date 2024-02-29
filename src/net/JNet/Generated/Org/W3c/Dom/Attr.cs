@@ -94,35 +94,35 @@ namespace Org.W3c.Dom
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#getOwnerElement()"/> 
         /// </summary>
         public Org.W3c.Dom.Element OwnerElement
         {
-            get { return IExecute<Org.W3c.Dom.Element>("getOwnerElement"); }
+            get { return IExecuteWithSignature<Org.W3c.Dom.Element>("getOwnerElement", "()Lorg/w3c/dom/Element;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#getSchemaTypeInfo()"/> 
         /// </summary>
         public Org.W3c.Dom.TypeInfo SchemaTypeInfo
         {
-            get { return IExecute<Org.W3c.Dom.TypeInfo>("getSchemaTypeInfo"); }
+            get { return IExecuteWithSignature<Org.W3c.Dom.TypeInfo>("getSchemaTypeInfo", "()Lorg/w3c/dom/TypeInfo;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#getSpecified()"/> 
         /// </summary>
         public bool Specified
         {
-            get { return IExecute<bool>("getSpecified"); }
+            get { return IExecuteWithSignature<bool>("getSpecified", "()Z"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#setValue(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Value
         {
-            get { return IExecute<Java.Lang.String>("getValue"); } set { IExecute("setValue", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getValue", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setValue", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#isId()"/>
@@ -131,7 +131,7 @@ namespace Org.W3c.Dom
         /// <returns><see cref="bool"/></returns>
         public bool IsId()
         {
-            return IExecute<bool>("isId");
+            return IExecuteWithSignature<bool>("isId", "()Z");
         }
 
         #endregion

@@ -59,14 +59,14 @@ namespace Javax.Print.Event
         /// </summary>
         public Javax.Print.Attribute.PrintServiceAttributeSet Attributes
         {
-            get { return IExecute<Javax.Print.Attribute.PrintServiceAttributeSet>("getAttributes"); }
+            get { return IExecuteWithSignature<Javax.Print.Attribute.PrintServiceAttributeSet>("getAttributes", "()Ljavax/print/attribute/PrintServiceAttributeSet;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintServiceAttributeEvent.html#getPrintService()"/> 
         /// </summary>
         public Javax.Print.PrintService PrintService
         {
-            get { return IExecute<Javax.Print.PrintService>("getPrintService"); }
+            get { return IExecuteWithSignature<Javax.Print.PrintService>("getPrintService", "()Ljavax/print/PrintService;"); }
         }
 
         #endregion

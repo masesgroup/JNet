@@ -50,28 +50,28 @@ namespace Javax.Script
         /// </summary>
         public Java.Io.Writer ErrorWriter
         {
-            get { return IExecute<Java.Io.Writer>("getErrorWriter"); } set { IExecute("setErrorWriter", value); }
+            get { return IExecuteWithSignature<Java.Io.Writer>("getErrorWriter", "()Ljava/io/Writer;"); } set { IExecuteWithSignature("setErrorWriter", "(Ljava/io/Writer;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleScriptContext.html#getReader()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleScriptContext.html#setReader(java.io.Reader)"/>
         /// </summary>
         public Java.Io.Reader Reader
         {
-            get { return IExecute<Java.Io.Reader>("getReader"); } set { IExecute("setReader", value); }
+            get { return IExecuteWithSignature<Java.Io.Reader>("getReader", "()Ljava/io/Reader;"); } set { IExecuteWithSignature("setReader", "(Ljava/io/Reader;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleScriptContext.html#getScopes()"/> 
         /// </summary>
         public Java.Util.List<Java.Lang.Integer> Scopes
         {
-            get { return IExecute<Java.Util.List<Java.Lang.Integer>>("getScopes"); }
+            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getScopes", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleScriptContext.html#getWriter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleScriptContext.html#setWriter(java.io.Writer)"/>
         /// </summary>
         public Java.Io.Writer Writer
         {
-            get { return IExecute<Java.Io.Writer>("getWriter"); } set { IExecute("setWriter", value); }
+            get { return IExecuteWithSignature<Java.Io.Writer>("getWriter", "()Ljava/io/Writer;"); } set { IExecuteWithSignature("setWriter", "(Ljava/io/Writer;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleScriptContext.html#getAttributesScope(java.lang.String)"/>
@@ -80,7 +80,7 @@ namespace Javax.Script
         /// <returns><see cref="int"/></returns>
         public int GetAttributesScope(Java.Lang.String arg0)
         {
-            return IExecute<int>("getAttributesScope", arg0);
+            return IExecuteWithSignature<int>("getAttributesScope", "(Ljava/lang/String;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleScriptContext.html#getAttribute(java.lang.String,int)"/>
@@ -99,7 +99,7 @@ namespace Javax.Script
         /// <returns><see cref="object"/></returns>
         public object GetAttribute(Java.Lang.String arg0)
         {
-            return IExecute("getAttribute", arg0);
+            return IExecuteWithSignature("getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleScriptContext.html#removeAttribute(java.lang.String,int)"/>
@@ -118,7 +118,7 @@ namespace Javax.Script
         /// <returns><see cref="Javax.Script.Bindings"/></returns>
         public Javax.Script.Bindings GetBindings(int arg0)
         {
-            return IExecute<Javax.Script.Bindings>("getBindings", arg0);
+            return IExecuteWithSignature<Javax.Script.Bindings>("getBindings", "(I)Ljavax/script/Bindings;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleScriptContext.html#setAttribute(java.lang.String,java.lang.Object,int)"/>

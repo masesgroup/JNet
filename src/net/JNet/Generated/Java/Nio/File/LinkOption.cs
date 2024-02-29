@@ -62,7 +62,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.LinkOption"/></returns>
         public static Java.Nio.File.LinkOption ValueOf(Java.Lang.String arg0)
         {
-            return SExecute<Java.Nio.File.LinkOption>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecuteWithSignature<Java.Nio.File.LinkOption>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/nio/file/LinkOption;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/LinkOption.html#values()"/>
@@ -71,7 +71,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.LinkOption"/></returns>
         public static Java.Nio.File.LinkOption[] Values()
         {
-            return SExecuteArray<Java.Nio.File.LinkOption>(LocalBridgeClazz, "values");
+            return SExecuteWithSignatureArray<Java.Nio.File.LinkOption>(LocalBridgeClazz, "values", "()[Ljava/nio/file/LinkOption;");
         }
 
         #endregion

@@ -60,14 +60,14 @@ namespace Java.Util.Logging
         /// </summary>
         public Java.Util.Logging.Level PushLevel
         {
-            get { return IExecute<Java.Util.Logging.Level>("getPushLevel"); } set { IExecute("setPushLevel", value); }
+            get { return IExecuteWithSignature<Java.Util.Logging.Level>("getPushLevel", "()Ljava/util/logging/Level;"); } set { IExecuteWithSignature("setPushLevel", "(Ljava/util/logging/Level;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/MemoryHandler.html#push()"/>
         /// </summary>
         public void Push()
         {
-            IExecute("push");
+            IExecuteWithSignature("push", "()V");
         }
 
         #endregion

@@ -84,28 +84,28 @@ namespace Javax.Xml.Stream.Events
         /// </summary>
         public Java.Lang.String DocumentTypeDeclaration
         {
-            get { return IExecute<Java.Lang.String>("getDocumentTypeDeclaration"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getDocumentTypeDeclaration", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/DTD.html#getEntities()"/> 
         /// </summary>
         public Java.Util.List<Javax.Xml.Stream.Events.EntityDeclaration> Entities
         {
-            get { return IExecute<Java.Util.List<Javax.Xml.Stream.Events.EntityDeclaration>>("getEntities"); }
+            get { return IExecuteWithSignature<Java.Util.List<Javax.Xml.Stream.Events.EntityDeclaration>>("getEntities", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/DTD.html#getNotations()"/> 
         /// </summary>
         public Java.Util.List<Javax.Xml.Stream.Events.NotationDeclaration> Notations
         {
-            get { return IExecute<Java.Util.List<Javax.Xml.Stream.Events.NotationDeclaration>>("getNotations"); }
+            get { return IExecuteWithSignature<Java.Util.List<Javax.Xml.Stream.Events.NotationDeclaration>>("getNotations", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/DTD.html#getProcessedDTD()"/> 
         /// </summary>
         public object ProcessedDTD
         {
-            get { return IExecute("getProcessedDTD"); }
+            get { return IExecuteWithSignature("getProcessedDTD", "()Ljava/lang/Object;"); }
         }
 
         #endregion

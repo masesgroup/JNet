@@ -92,42 +92,42 @@ namespace Org.W3c.Dom
         /// </summary>
         public Java.Lang.String InputEncoding
         {
-            get { return IExecute<Java.Lang.String>("getInputEncoding"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getInputEncoding", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html#getNotationName()"/> 
         /// </summary>
         public Java.Lang.String NotationName
         {
-            get { return IExecute<Java.Lang.String>("getNotationName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getNotationName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html#getPublicId()"/> 
         /// </summary>
         public Java.Lang.String PublicId
         {
-            get { return IExecute<Java.Lang.String>("getPublicId"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getPublicId", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html#getSystemId()"/> 
         /// </summary>
         public Java.Lang.String SystemId
         {
-            get { return IExecute<Java.Lang.String>("getSystemId"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html#getXmlEncoding()"/> 
         /// </summary>
         public Java.Lang.String XmlEncoding
         {
-            get { return IExecute<Java.Lang.String>("getXmlEncoding"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getXmlEncoding", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html#getXmlVersion()"/> 
         /// </summary>
         public Java.Lang.String XmlVersion
         {
-            get { return IExecute<Java.Lang.String>("getXmlVersion"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getXmlVersion", "()Ljava/lang/String;"); }
         }
 
         #endregion

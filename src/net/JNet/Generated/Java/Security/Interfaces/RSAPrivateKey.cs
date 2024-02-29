@@ -86,7 +86,7 @@ namespace Java.Security.Interfaces
         /// </summary>
         public Java.Math.BigInteger PrivateExponent
         {
-            get { return IExecute<Java.Math.BigInteger>("getPrivateExponent"); }
+            get { return IExecuteWithSignature<Java.Math.BigInteger>("getPrivateExponent", "()Ljava/math/BigInteger;"); }
         }
 
         #endregion

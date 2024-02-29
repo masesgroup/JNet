@@ -48,7 +48,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String QuoteReplacement(Java.Lang.String arg0)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "quoteReplacement", arg0);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "quoteReplacement", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
 
         #endregion
@@ -61,7 +61,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="bool"/></returns>
         public bool Find()
         {
-            return IExecute<bool>("find");
+            return IExecuteWithSignature<bool>("find", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#find(int)"/>
@@ -70,7 +70,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="bool"/></returns>
         public bool Find(int arg0)
         {
-            return IExecute<bool>("find", arg0);
+            return IExecuteWithSignature<bool>("find", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#hasAnchoringBounds()"/>
@@ -79,7 +79,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="bool"/></returns>
         public bool HasAnchoringBounds()
         {
-            return IExecute<bool>("hasAnchoringBounds");
+            return IExecuteWithSignature<bool>("hasAnchoringBounds", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#hasTransparentBounds()"/>
@@ -88,7 +88,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="bool"/></returns>
         public bool HasTransparentBounds()
         {
-            return IExecute<bool>("hasTransparentBounds");
+            return IExecuteWithSignature<bool>("hasTransparentBounds", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#hitEnd()"/>
@@ -97,7 +97,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="bool"/></returns>
         public bool HitEnd()
         {
-            return IExecute<bool>("hitEnd");
+            return IExecuteWithSignature<bool>("hitEnd", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#lookingAt()"/>
@@ -106,7 +106,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="bool"/></returns>
         public bool LookingAt()
         {
-            return IExecute<bool>("lookingAt");
+            return IExecuteWithSignature<bool>("lookingAt", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#matches()"/>
@@ -115,7 +115,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="bool"/></returns>
         public bool Matches()
         {
-            return IExecute<bool>("matches");
+            return IExecuteWithSignature<bool>("matches", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#requireEnd()"/>
@@ -124,7 +124,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="bool"/></returns>
         public bool RequireEnd()
         {
-            return IExecute<bool>("requireEnd");
+            return IExecuteWithSignature<bool>("requireEnd", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#end()"/>
@@ -133,7 +133,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="int"/></returns>
         public int End()
         {
-            return IExecute<int>("end");
+            return IExecuteWithSignature<int>("end", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#end(int)"/>
@@ -142,7 +142,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="int"/></returns>
         public int End(int arg0)
         {
-            return IExecute<int>("end", arg0);
+            return IExecuteWithSignature<int>("end", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#end(java.lang.String)"/>
@@ -151,7 +151,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="int"/></returns>
         public int End(Java.Lang.String arg0)
         {
-            return IExecute<int>("end", arg0);
+            return IExecuteWithSignature<int>("end", "(Ljava/lang/String;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#groupCount()"/>
@@ -160,7 +160,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="int"/></returns>
         public int GroupCount()
         {
-            return IExecute<int>("groupCount");
+            return IExecuteWithSignature<int>("groupCount", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#regionEnd()"/>
@@ -169,7 +169,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="int"/></returns>
         public int RegionEnd()
         {
-            return IExecute<int>("regionEnd");
+            return IExecuteWithSignature<int>("regionEnd", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#regionStart()"/>
@@ -178,7 +178,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="int"/></returns>
         public int RegionStart()
         {
-            return IExecute<int>("regionStart");
+            return IExecuteWithSignature<int>("regionStart", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#start()"/>
@@ -187,7 +187,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="int"/></returns>
         public int Start()
         {
-            return IExecute<int>("start");
+            return IExecuteWithSignature<int>("start", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#start(int)"/>
@@ -196,7 +196,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="int"/></returns>
         public int Start(int arg0)
         {
-            return IExecute<int>("start", arg0);
+            return IExecuteWithSignature<int>("start", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#start(java.lang.String)"/>
@@ -205,7 +205,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="int"/></returns>
         public int Start(Java.Lang.String arg0)
         {
-            return IExecute<int>("start", arg0);
+            return IExecuteWithSignature<int>("start", "(Ljava/lang/String;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#group()"/>
@@ -214,7 +214,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Group()
         {
-            return IExecute<Java.Lang.String>("group");
+            return IExecuteWithSignature<Java.Lang.String>("group", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#group(int)"/>
@@ -223,7 +223,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Group(int arg0)
         {
-            return IExecute<Java.Lang.String>("group", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("group", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#group(java.lang.String)"/>
@@ -232,7 +232,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Group(Java.Lang.String arg0)
         {
-            return IExecute<Java.Lang.String>("group", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("group", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#replaceAll(java.lang.String)"/>
@@ -241,7 +241,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ReplaceAll(Java.Lang.String arg0)
         {
-            return IExecute<Java.Lang.String>("replaceAll", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("replaceAll", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#replaceAll(java.util.function.Function)"/>
@@ -250,7 +250,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ReplaceAll(Java.Util.Function.Function<Java.Util.Regex.MatchResult, Java.Lang.String> arg0)
         {
-            return IExecute<Java.Lang.String>("replaceAll", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("replaceAll", "(Ljava/util/function/Function;)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#replaceFirst(java.lang.String)"/>
@@ -259,7 +259,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ReplaceFirst(Java.Lang.String arg0)
         {
-            return IExecute<Java.Lang.String>("replaceFirst", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("replaceFirst", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#replaceFirst(java.util.function.Function)"/>
@@ -268,7 +268,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ReplaceFirst(Java.Util.Function.Function<Java.Util.Regex.MatchResult, Java.Lang.String> arg0)
         {
-            return IExecute<Java.Lang.String>("replaceFirst", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("replaceFirst", "(Ljava/util/function/Function;)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#appendTail(java.lang.StringBuffer)"/>
@@ -277,7 +277,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="Java.Lang.StringBuffer"/></returns>
         public Java.Lang.StringBuffer AppendTail(Java.Lang.StringBuffer arg0)
         {
-            return IExecute<Java.Lang.StringBuffer>("appendTail", arg0);
+            return IExecuteWithSignature<Java.Lang.StringBuffer>("appendTail", "(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#appendTail(java.lang.StringBuilder)"/>
@@ -286,7 +286,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="Java.Lang.StringBuilder"/></returns>
         public Java.Lang.StringBuilder AppendTail(Java.Lang.StringBuilder arg0)
         {
-            return IExecute<Java.Lang.StringBuilder>("appendTail", arg0);
+            return IExecuteWithSignature<Java.Lang.StringBuilder>("appendTail", "(Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#appendReplacement(java.lang.StringBuffer,java.lang.String)"/>
@@ -325,7 +325,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="Java.Util.Regex.Matcher"/></returns>
         public Java.Util.Regex.Matcher Reset()
         {
-            return IExecute<Java.Util.Regex.Matcher>("reset");
+            return IExecuteWithSignature<Java.Util.Regex.Matcher>("reset", "()Ljava/util/regex/Matcher;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#reset(java.lang.CharSequence)"/>
@@ -334,7 +334,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="Java.Util.Regex.Matcher"/></returns>
         public Java.Util.Regex.Matcher Reset(Java.Lang.CharSequence arg0)
         {
-            return IExecute<Java.Util.Regex.Matcher>("reset", arg0);
+            return IExecuteWithSignature<Java.Util.Regex.Matcher>("reset", "(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#useAnchoringBounds(boolean)"/>
@@ -343,7 +343,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="Java.Util.Regex.Matcher"/></returns>
         public Java.Util.Regex.Matcher UseAnchoringBounds(bool arg0)
         {
-            return IExecute<Java.Util.Regex.Matcher>("useAnchoringBounds", arg0);
+            return IExecuteWithSignature<Java.Util.Regex.Matcher>("useAnchoringBounds", "(Z)Ljava/util/regex/Matcher;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#usePattern(java.util.regex.Pattern)"/>
@@ -352,7 +352,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="Java.Util.Regex.Matcher"/></returns>
         public Java.Util.Regex.Matcher UsePattern(Java.Util.Regex.Pattern arg0)
         {
-            return IExecute<Java.Util.Regex.Matcher>("usePattern", arg0);
+            return IExecuteWithSignature<Java.Util.Regex.Matcher>("usePattern", "(Ljava/util/regex/Pattern;)Ljava/util/regex/Matcher;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#useTransparentBounds(boolean)"/>
@@ -361,7 +361,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="Java.Util.Regex.Matcher"/></returns>
         public Java.Util.Regex.Matcher UseTransparentBounds(bool arg0)
         {
-            return IExecute<Java.Util.Regex.Matcher>("useTransparentBounds", arg0);
+            return IExecuteWithSignature<Java.Util.Regex.Matcher>("useTransparentBounds", "(Z)Ljava/util/regex/Matcher;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#toMatchResult()"/>
@@ -370,7 +370,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="Java.Util.Regex.MatchResult"/></returns>
         public Java.Util.Regex.MatchResult ToMatchResult()
         {
-            return IExecute<Java.Util.Regex.MatchResult>("toMatchResult");
+            return IExecuteWithSignature<Java.Util.Regex.MatchResult>("toMatchResult", "()Ljava/util/regex/MatchResult;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#pattern()"/>
@@ -379,7 +379,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="Java.Util.Regex.Pattern"/></returns>
         public Java.Util.Regex.Pattern Pattern()
         {
-            return IExecute<Java.Util.Regex.Pattern>("pattern");
+            return IExecuteWithSignature<Java.Util.Regex.Pattern>("pattern", "()Ljava/util/regex/Pattern;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#results()"/>
@@ -388,7 +388,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Java.Util.Regex.MatchResult> Results()
         {
-            return IExecute<Java.Util.Stream.Stream<Java.Util.Regex.MatchResult>>("results");
+            return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Util.Regex.MatchResult>>("results", "()Ljava/util/stream/Stream;");
         }
 
         #endregion

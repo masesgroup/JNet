@@ -75,7 +75,7 @@ namespace Javax.Xml.Namespace
         /// <returns><see cref="Javax.Xml.Namespace.QName"/></returns>
         public static Javax.Xml.Namespace.QName ValueOf(Java.Lang.String arg0)
         {
-            return SExecute<Javax.Xml.Namespace.QName>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecuteWithSignature<Javax.Xml.Namespace.QName>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/xml/namespace/QName;", arg0);
         }
 
         #endregion
@@ -86,21 +86,21 @@ namespace Javax.Xml.Namespace
         /// </summary>
         public Java.Lang.String LocalPart
         {
-            get { return IExecute<Java.Lang.String>("getLocalPart"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getLocalPart", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/namespace/QName.html#getNamespaceURI()"/> 
         /// </summary>
         public Java.Lang.String NamespaceURI
         {
-            get { return IExecute<Java.Lang.String>("getNamespaceURI"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getNamespaceURI", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/namespace/QName.html#getPrefix()"/> 
         /// </summary>
         public Java.Lang.String Prefix
         {
-            get { return IExecute<Java.Lang.String>("getPrefix"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getPrefix", "()Ljava/lang/String;"); }
         }
 
         #endregion

@@ -80,21 +80,21 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Java.Lang.String AccessKey
         {
-            get { return IExecute<Java.Lang.String>("getAccessKey"); } set { IExecute("setAccessKey", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getAccessKey", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAccessKey", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLabelElement.html#getForm()"/> 
         /// </summary>
         public Org.W3c.Dom.Html.HTMLFormElement Form
         {
-            get { return IExecute<Org.W3c.Dom.Html.HTMLFormElement>("getForm"); }
+            get { return IExecuteWithSignature<Org.W3c.Dom.Html.HTMLFormElement>("getForm", "()Lorg/w3c/dom/html/HTMLFormElement;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLabelElement.html#getHtmlFor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLabelElement.html#setHtmlFor(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String HtmlFor
         {
-            get { return IExecute<Java.Lang.String>("getHtmlFor"); } set { IExecute("setHtmlFor", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getHtmlFor", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setHtmlFor", "(Ljava/lang/String;)V", value); }
         }
 
         #endregion

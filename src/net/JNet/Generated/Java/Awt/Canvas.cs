@@ -62,7 +62,7 @@ namespace Java.Awt
         /// </summary>
         public Java.Awt.ImageNs.BufferStrategy BufferStrategy
         {
-            get { return IExecute<Java.Awt.ImageNs.BufferStrategy>("getBufferStrategy"); }
+            get { return IExecuteWithSignature<Java.Awt.ImageNs.BufferStrategy>("getBufferStrategy", "()Ljava/awt/image/BufferStrategy;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Canvas.html#createBufferStrategy(int,java.awt.BufferCapabilities)"/>
@@ -80,7 +80,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="int"/></param>
         public void CreateBufferStrategy(int arg0)
         {
-            IExecute("createBufferStrategy", arg0);
+            IExecuteWithSignature("createBufferStrategy", "(I)V", arg0);
         }
 
         #endregion

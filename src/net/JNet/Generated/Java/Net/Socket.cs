@@ -101,7 +101,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public static void SetSocketImplFactory(Java.Net.SocketImplFactory arg0)
         {
-            SExecute(LocalBridgeClazz, "setSocketImplFactory", arg0);
+            SExecuteWithSignature(LocalBridgeClazz, "setSocketImplFactory", "(Ljava/net/SocketImplFactory;)V", arg0);
         }
 
         #endregion
@@ -112,126 +112,126 @@ namespace Java.Net
         /// </summary>
         public Java.Nio.Channels.SocketChannel Channel
         {
-            get { return IExecute<Java.Nio.Channels.SocketChannel>("getChannel"); }
+            get { return IExecuteWithSignature<Java.Nio.Channels.SocketChannel>("getChannel", "()Ljava/nio/channels/SocketChannel;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getInetAddress()"/> 
         /// </summary>
         public Java.Net.InetAddress InetAddress
         {
-            get { return IExecute<Java.Net.InetAddress>("getInetAddress"); }
+            get { return IExecuteWithSignature<Java.Net.InetAddress>("getInetAddress", "()Ljava/net/InetAddress;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getInputStream()"/> 
         /// </summary>
         public Java.Io.InputStream InputStream
         {
-            get { return IExecute<Java.Io.InputStream>("getInputStream"); }
+            get { return IExecuteWithSignature<Java.Io.InputStream>("getInputStream", "()Ljava/io/InputStream;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getKeepAlive()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setKeepAlive(boolean)"/>
         /// </summary>
         public bool KeepAlive
         {
-            get { return IExecute<bool>("getKeepAlive"); } set { IExecute("setKeepAlive", value); }
+            get { return IExecuteWithSignature<bool>("getKeepAlive", "()Z"); } set { IExecuteWithSignature("setKeepAlive", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getLocalAddress()"/> 
         /// </summary>
         public Java.Net.InetAddress LocalAddress
         {
-            get { return IExecute<Java.Net.InetAddress>("getLocalAddress"); }
+            get { return IExecuteWithSignature<Java.Net.InetAddress>("getLocalAddress", "()Ljava/net/InetAddress;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getLocalPort()"/> 
         /// </summary>
         public int LocalPort
         {
-            get { return IExecute<int>("getLocalPort"); }
+            get { return IExecuteWithSignature<int>("getLocalPort", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getLocalSocketAddress()"/> 
         /// </summary>
         public Java.Net.SocketAddress LocalSocketAddress
         {
-            get { return IExecute<Java.Net.SocketAddress>("getLocalSocketAddress"); }
+            get { return IExecuteWithSignature<Java.Net.SocketAddress>("getLocalSocketAddress", "()Ljava/net/SocketAddress;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getOOBInline()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setOOBInline(boolean)"/>
         /// </summary>
         public bool OOBInline
         {
-            get { return IExecute<bool>("getOOBInline"); } set { IExecute("setOOBInline", value); }
+            get { return IExecuteWithSignature<bool>("getOOBInline", "()Z"); } set { IExecuteWithSignature("setOOBInline", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getOutputStream()"/> 
         /// </summary>
         public Java.Io.OutputStream OutputStream
         {
-            get { return IExecute<Java.Io.OutputStream>("getOutputStream"); }
+            get { return IExecuteWithSignature<Java.Io.OutputStream>("getOutputStream", "()Ljava/io/OutputStream;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getPort()"/> 
         /// </summary>
         public int Port
         {
-            get { return IExecute<int>("getPort"); }
+            get { return IExecuteWithSignature<int>("getPort", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getReceiveBufferSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setReceiveBufferSize(int)"/>
         /// </summary>
         public int ReceiveBufferSize
         {
-            get { return IExecute<int>("getReceiveBufferSize"); } set { IExecute("setReceiveBufferSize", value); }
+            get { return IExecuteWithSignature<int>("getReceiveBufferSize", "()I"); } set { IExecuteWithSignature("setReceiveBufferSize", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getRemoteSocketAddress()"/> 
         /// </summary>
         public Java.Net.SocketAddress RemoteSocketAddress
         {
-            get { return IExecute<Java.Net.SocketAddress>("getRemoteSocketAddress"); }
+            get { return IExecuteWithSignature<Java.Net.SocketAddress>("getRemoteSocketAddress", "()Ljava/net/SocketAddress;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getReuseAddress()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setReuseAddress(boolean)"/>
         /// </summary>
         public bool ReuseAddress
         {
-            get { return IExecute<bool>("getReuseAddress"); } set { IExecute("setReuseAddress", value); }
+            get { return IExecuteWithSignature<bool>("getReuseAddress", "()Z"); } set { IExecuteWithSignature("setReuseAddress", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getSendBufferSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setSendBufferSize(int)"/>
         /// </summary>
         public int SendBufferSize
         {
-            get { return IExecute<int>("getSendBufferSize"); } set { IExecute("setSendBufferSize", value); }
+            get { return IExecuteWithSignature<int>("getSendBufferSize", "()I"); } set { IExecuteWithSignature("setSendBufferSize", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getSoLinger()"/> 
         /// </summary>
         public int SoLinger
         {
-            get { return IExecute<int>("getSoLinger"); }
+            get { return IExecuteWithSignature<int>("getSoLinger", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getSoTimeout()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setSoTimeout(int)"/>
         /// </summary>
         public int SoTimeout
         {
-            get { return IExecute<int>("getSoTimeout"); } set { IExecute("setSoTimeout", value); }
+            get { return IExecuteWithSignature<int>("getSoTimeout", "()I"); } set { IExecuteWithSignature("setSoTimeout", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getTcpNoDelay()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setTcpNoDelay(boolean)"/>
         /// </summary>
         public bool TcpNoDelay
         {
-            get { return IExecute<bool>("getTcpNoDelay"); } set { IExecute("setTcpNoDelay", value); }
+            get { return IExecuteWithSignature<bool>("getTcpNoDelay", "()Z"); } set { IExecuteWithSignature("setTcpNoDelay", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getTrafficClass()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setTrafficClass(int)"/>
         /// </summary>
         public int TrafficClass
         {
-            get { return IExecute<int>("getTrafficClass"); } set { IExecute("setTrafficClass", value); }
+            get { return IExecuteWithSignature<int>("getTrafficClass", "()I"); } set { IExecuteWithSignature("setTrafficClass", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setOption(java.net.SocketOption,java.lang.Object)"/>
@@ -254,7 +254,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public T GetOption<T>(Java.Net.SocketOption<T> arg0)
         {
-            return IExecute<T>("getOption", arg0);
+            return IExecuteWithSignature<T>("getOption", "(Ljava/net/SocketOption;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#isBound()"/>
@@ -263,7 +263,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool IsBound()
         {
-            return IExecute<bool>("isBound");
+            return IExecuteWithSignature<bool>("isBound", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#isClosed()"/>
@@ -272,7 +272,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool IsClosed()
         {
-            return IExecute<bool>("isClosed");
+            return IExecuteWithSignature<bool>("isClosed", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#isConnected()"/>
@@ -281,7 +281,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool IsConnected()
         {
-            return IExecute<bool>("isConnected");
+            return IExecuteWithSignature<bool>("isConnected", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#isInputShutdown()"/>
@@ -290,7 +290,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool IsInputShutdown()
         {
-            return IExecute<bool>("isInputShutdown");
+            return IExecuteWithSignature<bool>("isInputShutdown", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#isOutputShutdown()"/>
@@ -299,7 +299,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool IsOutputShutdown()
         {
-            return IExecute<bool>("isOutputShutdown");
+            return IExecuteWithSignature<bool>("isOutputShutdown", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#supportedOptions()"/>
@@ -308,7 +308,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Net.SocketOption<object>> SupportedOptions()
         {
-            return IExecute<Java.Util.Set<Java.Net.SocketOption<object>>>("supportedOptions");
+            return IExecuteWithSignature<Java.Util.Set<Java.Net.SocketOption<object>>>("supportedOptions", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#close()"/>
@@ -317,7 +317,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
-            IExecute("close");
+            IExecuteWithSignature("close", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#bind(java.net.SocketAddress)"/>
@@ -326,7 +326,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public void Bind(Java.Net.SocketAddress arg0)
         {
-            IExecute("bind", arg0);
+            IExecuteWithSignature("bind", "(Ljava/net/SocketAddress;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#connect(java.net.SocketAddress,int)"/>
@@ -345,7 +345,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public void Connect(Java.Net.SocketAddress arg0)
         {
-            IExecute("connect", arg0);
+            IExecuteWithSignature("connect", "(Ljava/net/SocketAddress;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#sendUrgentData(int)"/>
@@ -354,7 +354,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public void SendUrgentData(int arg0)
         {
-            IExecute("sendUrgentData", arg0);
+            IExecuteWithSignature("sendUrgentData", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setPerformancePreferences(int,int,int)"/>
@@ -383,7 +383,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public void ShutdownInput()
         {
-            IExecute("shutdownInput");
+            IExecuteWithSignature("shutdownInput", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#shutdownOutput()"/>
@@ -392,7 +392,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public void ShutdownOutput()
         {
-            IExecute("shutdownOutput");
+            IExecuteWithSignature("shutdownOutput", "()V");
         }
 
         #endregion

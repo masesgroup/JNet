@@ -80,21 +80,21 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public bool Disabled
         {
-            get { return IExecute<bool>("getDisabled"); } set { IExecute("setDisabled", value); }
+            get { return IExecuteWithSignature<bool>("getDisabled", "()Z"); } set { IExecuteWithSignature("setDisabled", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLStyleElement.html#getMedia()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLStyleElement.html#setMedia(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Media
         {
-            get { return IExecute<Java.Lang.String>("getMedia"); } set { IExecute("setMedia", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getMedia", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setMedia", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLStyleElement.html#getType()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLStyleElement.html#setType(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Type
         {
-            get { return IExecute<Java.Lang.String>("getType"); } set { IExecute("setType", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setType", "(Ljava/lang/String;)V", value); }
         }
 
         #endregion

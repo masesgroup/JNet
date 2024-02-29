@@ -76,7 +76,7 @@ namespace Javax.Print
         /// <returns><see cref="Javax.Print.MultiDocPrintJob"/></returns>
         public Javax.Print.MultiDocPrintJob CreateMultiDocPrintJob()
         {
-            return IExecute<Javax.Print.MultiDocPrintJob>("createMultiDocPrintJob");
+            return IExecuteWithSignature<Javax.Print.MultiDocPrintJob>("createMultiDocPrintJob", "()Ljavax/print/MultiDocPrintJob;");
         }
 
         #endregion

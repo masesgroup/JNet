@@ -50,7 +50,7 @@ namespace Javax.Crypto.Spec
         /// </summary>
         public Java.Lang.String Algorithm
         {
-            get { return IExecute<Java.Lang.String>("getAlgorithm"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
         }
 
         #endregion
@@ -95,7 +95,7 @@ namespace Javax.Crypto.Spec
             /// </summary>
             public byte[] Value
             {
-                get { return IExecuteArray<byte>("getValue"); }
+                get { return IExecuteWithSignatureArray<byte>("getValue", "()[B"); }
             }
 
             #endregion

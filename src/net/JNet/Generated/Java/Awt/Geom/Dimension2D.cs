@@ -50,14 +50,14 @@ namespace Java.Awt.Geom
         /// </summary>
         public double Height
         {
-            get { return IExecute<double>("getHeight"); }
+            get { return IExecuteWithSignature<double>("getHeight", "()D"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Dimension2D.html#getWidth()"/> 
         /// </summary>
         public double Width
         {
-            get { return IExecute<double>("getWidth"); }
+            get { return IExecuteWithSignature<double>("getWidth", "()D"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Dimension2D.html#setSize(double,double)"/>
@@ -74,7 +74,7 @@ namespace Java.Awt.Geom
         /// <param name="arg0"><see cref="Java.Awt.Geom.Dimension2D"/></param>
         public void SetSize(Java.Awt.Geom.Dimension2D arg0)
         {
-            IExecute("setSize", arg0);
+            IExecuteWithSignature("setSize", "(Ljava/awt/geom/Dimension2D;)V", arg0);
         }
 
         #endregion

@@ -50,14 +50,14 @@ namespace Java.Lang
         /// </summary>
         public object SecurityContext
         {
-            get { return IExecute("getSecurityContext"); }
+            get { return IExecuteWithSignature("getSecurityContext", "()Ljava/lang/Object;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#getThreadGroup()"/> 
         /// </summary>
         public Java.Lang.ThreadGroup ThreadGroup
         {
-            get { return IExecute<Java.Lang.ThreadGroup>("getThreadGroup"); }
+            get { return IExecuteWithSignature<Java.Lang.ThreadGroup>("getThreadGroup", "()Ljava/lang/ThreadGroup;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkAccept(java.lang.String,int)"/>
@@ -74,7 +74,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
         public void CheckAccess(Java.Lang.Thread arg0)
         {
-            IExecute("checkAccess", arg0);
+            IExecuteWithSignature("checkAccess", "(Ljava/lang/Thread;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkAccess(java.lang.ThreadGroup)"/>
@@ -82,7 +82,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
         public void CheckAccess(Java.Lang.ThreadGroup arg0)
         {
-            IExecute("checkAccess", arg0);
+            IExecuteWithSignature("checkAccess", "(Ljava/lang/ThreadGroup;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkConnect(java.lang.String,int,java.lang.Object)"/>
@@ -108,7 +108,7 @@ namespace Java.Lang
         /// </summary>
         public void CheckCreateClassLoader()
         {
-            IExecute("checkCreateClassLoader");
+            IExecuteWithSignature("checkCreateClassLoader", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkDelete(java.lang.String)"/>
@@ -116,7 +116,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void CheckDelete(Java.Lang.String arg0)
         {
-            IExecute("checkDelete", arg0);
+            IExecuteWithSignature("checkDelete", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkExec(java.lang.String)"/>
@@ -124,7 +124,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void CheckExec(Java.Lang.String arg0)
         {
-            IExecute("checkExec", arg0);
+            IExecuteWithSignature("checkExec", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkExit(int)"/>
@@ -132,7 +132,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="int"/></param>
         public void CheckExit(int arg0)
         {
-            IExecute("checkExit", arg0);
+            IExecuteWithSignature("checkExit", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkLink(java.lang.String)"/>
@@ -140,7 +140,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void CheckLink(Java.Lang.String arg0)
         {
-            IExecute("checkLink", arg0);
+            IExecuteWithSignature("checkLink", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkListen(int)"/>
@@ -148,7 +148,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="int"/></param>
         public void CheckListen(int arg0)
         {
-            IExecute("checkListen", arg0);
+            IExecuteWithSignature("checkListen", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkMulticast(java.net.InetAddress)"/>
@@ -156,7 +156,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
         public void CheckMulticast(Java.Net.InetAddress arg0)
         {
-            IExecute("checkMulticast", arg0);
+            IExecuteWithSignature("checkMulticast", "(Ljava/net/InetAddress;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkPackageAccess(java.lang.String)"/>
@@ -164,7 +164,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void CheckPackageAccess(Java.Lang.String arg0)
         {
-            IExecute("checkPackageAccess", arg0);
+            IExecuteWithSignature("checkPackageAccess", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkPackageDefinition(java.lang.String)"/>
@@ -172,7 +172,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void CheckPackageDefinition(Java.Lang.String arg0)
         {
-            IExecute("checkPackageDefinition", arg0);
+            IExecuteWithSignature("checkPackageDefinition", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkPermission(java.security.Permission,java.lang.Object)"/>
@@ -189,21 +189,21 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Security.Permission"/></param>
         public void CheckPermission(Java.Security.Permission arg0)
         {
-            IExecute("checkPermission", arg0);
+            IExecuteWithSignature("checkPermission", "(Ljava/security/Permission;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkPrintJobAccess()"/>
         /// </summary>
         public void CheckPrintJobAccess()
         {
-            IExecute("checkPrintJobAccess");
+            IExecuteWithSignature("checkPrintJobAccess", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkPropertiesAccess()"/>
         /// </summary>
         public void CheckPropertiesAccess()
         {
-            IExecute("checkPropertiesAccess");
+            IExecuteWithSignature("checkPropertiesAccess", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkPropertyAccess(java.lang.String)"/>
@@ -211,7 +211,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void CheckPropertyAccess(Java.Lang.String arg0)
         {
-            IExecute("checkPropertyAccess", arg0);
+            IExecuteWithSignature("checkPropertyAccess", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkRead(java.io.FileDescriptor)"/>
@@ -219,7 +219,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         public void CheckRead(Java.Io.FileDescriptor arg0)
         {
-            IExecute("checkRead", arg0);
+            IExecuteWithSignature("checkRead", "(Ljava/io/FileDescriptor;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkRead(java.lang.String,java.lang.Object)"/>
@@ -236,7 +236,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void CheckRead(Java.Lang.String arg0)
         {
-            IExecute("checkRead", arg0);
+            IExecuteWithSignature("checkRead", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkSecurityAccess(java.lang.String)"/>
@@ -244,14 +244,14 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void CheckSecurityAccess(Java.Lang.String arg0)
         {
-            IExecute("checkSecurityAccess", arg0);
+            IExecuteWithSignature("checkSecurityAccess", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkSetFactory()"/>
         /// </summary>
         public void CheckSetFactory()
         {
-            IExecute("checkSetFactory");
+            IExecuteWithSignature("checkSetFactory", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkWrite(java.io.FileDescriptor)"/>
@@ -259,7 +259,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         public void CheckWrite(Java.Io.FileDescriptor arg0)
         {
-            IExecute("checkWrite", arg0);
+            IExecuteWithSignature("checkWrite", "(Ljava/io/FileDescriptor;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkWrite(java.lang.String)"/>
@@ -267,7 +267,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void CheckWrite(Java.Lang.String arg0)
         {
-            IExecute("checkWrite", arg0);
+            IExecuteWithSignature("checkWrite", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

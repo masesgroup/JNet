@@ -78,7 +78,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public int Write(Java.Nio.ByteBuffer arg0)
         {
-            return IExecute<int>("write", arg0);
+            return IExecuteWithSignature<int>("write", "(Ljava/nio/ByteBuffer;)I", arg0);
         }
 
         #endregion

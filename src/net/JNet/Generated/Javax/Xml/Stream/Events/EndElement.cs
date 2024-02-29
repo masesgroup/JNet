@@ -76,14 +76,14 @@ namespace Javax.Xml.Stream.Events
         /// </summary>
         public Javax.Xml.Namespace.QName Name
         {
-            get { return IExecute<Javax.Xml.Namespace.QName>("getName"); }
+            get { return IExecuteWithSignature<Javax.Xml.Namespace.QName>("getName", "()Ljavax/xml/namespace/QName;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EndElement.html#getNamespaces()"/> 
         /// </summary>
         public Java.Util.Iterator<Javax.Xml.Stream.Events.Namespace> Namespaces
         {
-            get { return IExecute<Java.Util.Iterator<Javax.Xml.Stream.Events.Namespace>>("getNamespaces"); }
+            get { return IExecuteWithSignature<Java.Util.Iterator<Javax.Xml.Stream.Events.Namespace>>("getNamespaces", "()Ljava/util/Iterator;"); }
         }
 
         #endregion

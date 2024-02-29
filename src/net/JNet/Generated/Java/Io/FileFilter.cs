@@ -76,7 +76,7 @@ namespace Java.Io
         /// <returns><see cref="bool"/></returns>
         public bool Accept(Java.Io.File arg0)
         {
-            return IExecute<bool>("accept", arg0);
+            return IExecuteWithSignature<bool>("accept", "(Ljava/io/File;)Z", arg0);
         }
 
         #endregion

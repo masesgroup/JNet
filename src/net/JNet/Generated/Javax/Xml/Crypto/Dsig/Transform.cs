@@ -127,7 +127,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// </summary>
         public Java.Security.Spec.AlgorithmParameterSpec ParameterSpec
         {
-            get { return IExecute<Java.Security.Spec.AlgorithmParameterSpec>("getParameterSpec"); }
+            get { return IExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>("getParameterSpec", "()Ljava/security/spec/AlgorithmParameterSpec;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#transform(javax.xml.crypto.Data,javax.xml.crypto.XMLCryptoContext,java.io.OutputStream)"/>

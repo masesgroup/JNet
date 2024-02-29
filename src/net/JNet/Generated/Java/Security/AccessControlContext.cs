@@ -67,7 +67,7 @@ namespace Java.Security
         /// </summary>
         public Java.Security.DomainCombiner DomainCombiner
         {
-            get { return IExecute<Java.Security.DomainCombiner>("getDomainCombiner"); }
+            get { return IExecuteWithSignature<Java.Security.DomainCombiner>("getDomainCombiner", "()Ljava/security/DomainCombiner;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessControlContext.html#checkPermission(java.security.Permission)"/>
@@ -76,7 +76,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.AccessControlException"/>
         public void CheckPermission(Java.Security.Permission arg0)
         {
-            IExecute("checkPermission", arg0);
+            IExecuteWithSignature("checkPermission", "(Ljava/security/Permission;)V", arg0);
         }
 
         #endregion

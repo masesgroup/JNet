@@ -65,7 +65,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.SocketChannel Open()
         {
-            return SExecute<Java.Nio.Channels.SocketChannel>(LocalBridgeClazz, "open");
+            return SExecuteWithSignature<Java.Nio.Channels.SocketChannel>(LocalBridgeClazz, "open", "()Ljava/nio/channels/SocketChannel;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#open(java.net.SocketAddress)"/>
@@ -75,7 +75,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.SocketChannel Open(Java.Net.SocketAddress arg0)
         {
-            return SExecute<Java.Nio.Channels.SocketChannel>(LocalBridgeClazz, "open", arg0);
+            return SExecuteWithSignature<Java.Nio.Channels.SocketChannel>(LocalBridgeClazz, "open", "(Ljava/net/SocketAddress;)Ljava/nio/channels/SocketChannel;", arg0);
         }
 
         #endregion
@@ -86,14 +86,14 @@ namespace Java.Nio.Channels
         /// </summary>
         public Java.Net.SocketAddress LocalAddress
         {
-            get { return IExecute<Java.Net.SocketAddress>("getLocalAddress"); }
+            get { return IExecuteWithSignature<Java.Net.SocketAddress>("getLocalAddress", "()Ljava/net/SocketAddress;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#getRemoteAddress()"/> 
         /// </summary>
         public Java.Net.SocketAddress RemoteAddress
         {
-            get { return IExecute<Java.Net.SocketAddress>("getRemoteAddress"); }
+            get { return IExecuteWithSignature<Java.Net.SocketAddress>("getRemoteAddress", "()Ljava/net/SocketAddress;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#connect(java.net.SocketAddress)"/>
@@ -103,7 +103,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public bool Connect(Java.Net.SocketAddress arg0)
         {
-            return IExecute<bool>("connect", arg0);
+            return IExecuteWithSignature<bool>("connect", "(Ljava/net/SocketAddress;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#finishConnect()"/>
@@ -113,7 +113,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public bool FinishConnect()
         {
-            return IExecute<bool>("finishConnect");
+            return IExecuteWithSignature<bool>("finishConnect", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#isConnected()"/>
@@ -122,7 +122,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="bool"/></returns>
         public bool IsConnected()
         {
-            return IExecute<bool>("isConnected");
+            return IExecuteWithSignature<bool>("isConnected", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#isConnectionPending()"/>
@@ -131,7 +131,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="bool"/></returns>
         public bool IsConnectionPending()
         {
-            return IExecute<bool>("isConnectionPending");
+            return IExecuteWithSignature<bool>("isConnectionPending", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#read(java.nio.ByteBuffer)"/>
@@ -141,7 +141,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public int Read(Java.Nio.ByteBuffer arg0)
         {
-            return IExecute<int>("read", arg0);
+            return IExecuteWithSignature<int>("read", "(Ljava/nio/ByteBuffer;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#write(java.nio.ByteBuffer)"/>
@@ -151,7 +151,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public int Write(Java.Nio.ByteBuffer arg0)
         {
-            return IExecute<int>("write", arg0);
+            return IExecuteWithSignature<int>("write", "(Ljava/nio/ByteBuffer;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#socket()"/>
@@ -160,7 +160,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Net.Socket"/></returns>
         public Java.Net.Socket Socket()
         {
-            return IExecute<Java.Net.Socket>("socket");
+            return IExecuteWithSignature<Java.Net.Socket>("socket", "()Ljava/net/Socket;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#shutdownInput()"/>
@@ -170,7 +170,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.SocketChannel ShutdownInput()
         {
-            return IExecute<Java.Nio.Channels.SocketChannel>("shutdownInput");
+            return IExecuteWithSignature<Java.Nio.Channels.SocketChannel>("shutdownInput", "()Ljava/nio/channels/SocketChannel;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#shutdownOutput()"/>
@@ -180,7 +180,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.SocketChannel ShutdownOutput()
         {
-            return IExecute<Java.Nio.Channels.SocketChannel>("shutdownOutput");
+            return IExecuteWithSignature<Java.Nio.Channels.SocketChannel>("shutdownOutput", "()Ljava/nio/channels/SocketChannel;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#read(java.nio.ByteBuffer[],int,int)"/>
@@ -214,7 +214,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public long Read(Java.Nio.ByteBuffer[] arg0)
         {
-            return IExecute<long>("read", new object[] { arg0 });
+            return IExecuteWithSignature<long>("read", "([Ljava/nio/ByteBuffer;)J", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#write(java.nio.ByteBuffer[])"/>
@@ -224,7 +224,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public long Write(Java.Nio.ByteBuffer[] arg0)
         {
-            return IExecute<long>("write", new object[] { arg0 });
+            return IExecuteWithSignature<long>("write", "([Ljava/nio/ByteBuffer;)J", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#bind(java.net.SocketAddress)"/>
@@ -234,7 +234,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.NetworkChannel Bind(Java.Net.SocketAddress arg0)
         {
-            return IExecute<Java.Nio.Channels.NetworkChannel>("bind", arg0);
+            return IExecuteWithSignature<Java.Nio.Channels.NetworkChannel>("bind", "(Ljava/net/SocketAddress;)Ljava/nio/channels/NetworkChannel;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#setOption(java.net.SocketOption,java.lang.Object)"/>

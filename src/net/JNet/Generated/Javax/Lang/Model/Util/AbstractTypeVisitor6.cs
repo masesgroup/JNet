@@ -62,7 +62,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="object"/></returns>
         public object Visit(Javax.Lang.Model.Type.TypeMirror arg0)
         {
-            return IExecute("visit", arg0);
+            return IExecuteWithSignature("visit", "(Ljavax/lang/model/type/TypeMirror;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor6.html#visitIntersection(javax.lang.model.type.IntersectionType,java.lang.Object)"/>
@@ -146,7 +146,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><typeparamref name="R"/></returns>
         public R Visit(Javax.Lang.Model.Type.TypeMirror arg0)
         {
-            return IExecute<R>("visit", arg0);
+            return IExecuteWithSignature<R>("visit", "(Ljavax/lang/model/type/TypeMirror;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor6.html#visitIntersection(javax.lang.model.type.IntersectionType,java.lang.Object)"/>

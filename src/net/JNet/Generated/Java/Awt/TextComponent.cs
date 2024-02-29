@@ -54,42 +54,42 @@ namespace Java.Awt
         /// </summary>
         public int CaretPosition
         {
-            get { return IExecute<int>("getCaretPosition"); } set { IExecute("setCaretPosition", value); }
+            get { return IExecuteWithSignature<int>("getCaretPosition", "()I"); } set { IExecuteWithSignature("setCaretPosition", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#getSelectedText()"/> 
         /// </summary>
         public Java.Lang.String SelectedText
         {
-            get { return IExecute<Java.Lang.String>("getSelectedText"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getSelectedText", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#getSelectionEnd()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#setSelectionEnd(int)"/>
         /// </summary>
         public int SelectionEnd
         {
-            get { return IExecute<int>("getSelectionEnd"); } set { IExecute("setSelectionEnd", value); }
+            get { return IExecuteWithSignature<int>("getSelectionEnd", "()I"); } set { IExecuteWithSignature("setSelectionEnd", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#getSelectionStart()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#setSelectionStart(int)"/>
         /// </summary>
         public int SelectionStart
         {
-            get { return IExecute<int>("getSelectionStart"); } set { IExecute("setSelectionStart", value); }
+            get { return IExecuteWithSignature<int>("getSelectionStart", "()I"); } set { IExecuteWithSignature("setSelectionStart", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#getText()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#setText(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Text
         {
-            get { return IExecute<Java.Lang.String>("getText"); } set { IExecute("setText", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getText", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setText", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#getTextListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.TextListener[] TextListeners
         {
-            get { return IExecuteArray<Java.Awt.EventNs.TextListener>("getTextListeners"); }
+            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.TextListener>("getTextListeners", "()[Ljava/awt/event/TextListener;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#isEditable()"/>
@@ -98,7 +98,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsEditable()
         {
-            return IExecute<bool>("isEditable");
+            return IExecuteWithSignature<bool>("isEditable", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#addTextListener(java.awt.event.TextListener)"/>
@@ -106,7 +106,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.TextListener"/></param>
         public void AddTextListener(Java.Awt.EventNs.TextListener arg0)
         {
-            IExecute("addTextListener", arg0);
+            IExecuteWithSignature("addTextListener", "(Ljava/awt/event/TextListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#removeTextListener(java.awt.event.TextListener)"/>
@@ -114,7 +114,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.TextListener"/></param>
         public void RemoveTextListener(Java.Awt.EventNs.TextListener arg0)
         {
-            IExecute("removeTextListener", arg0);
+            IExecuteWithSignature("removeTextListener", "(Ljava/awt/event/TextListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#select(int,int)"/>
@@ -130,7 +130,7 @@ namespace Java.Awt
         /// </summary>
         public void SelectAll()
         {
-            IExecute("selectAll");
+            IExecuteWithSignature("selectAll", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#setEditable(boolean)"/>
@@ -138,7 +138,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetEditable(bool arg0)
         {
-            IExecute("setEditable", arg0);
+            IExecuteWithSignature("setEditable", "(Z)V", arg0);
         }
 
         #endregion

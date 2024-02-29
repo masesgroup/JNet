@@ -76,14 +76,14 @@ namespace Javax.Annotation.Processing
         /// </summary>
         public Java.Lang.String Message
         {
-            get { return IExecute<Java.Lang.String>("getMessage"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getMessage", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Completion.html#getValue()"/> 
         /// </summary>
         public Java.Lang.String Value
         {
-            get { return IExecute<Java.Lang.String>("getValue"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getValue", "()Ljava/lang/String;"); }
         }
 
         #endregion

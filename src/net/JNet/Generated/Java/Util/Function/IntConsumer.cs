@@ -112,7 +112,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.IntConsumer AndThenDefault(Java.Util.Function.IntConsumer arg0)
         {
-            return IExecute<Java.Util.Function.IntConsumer>("andThenDefault", arg0);
+            return IExecuteWithSignature<Java.Util.Function.IntConsumer>("andThenDefault", "(Ljava/util/function/IntConsumer;)Ljava/util/function/IntConsumer;", arg0);
         }
 
         /// <summary>

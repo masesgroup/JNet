@@ -87,21 +87,21 @@ namespace Javax.Tools
         /// </summary>
         public Javax.Lang.Model.Element.Modifier AccessLevel
         {
-            get { return IExecute<Javax.Lang.Model.Element.Modifier>("getAccessLevel"); }
+            get { return IExecuteWithSignature<Javax.Lang.Model.Element.Modifier>("getAccessLevel", "()Ljavax/lang/model/element/Modifier;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.html#getKind()"/> 
         /// </summary>
         public Javax.Tools.JavaFileObject.Kind GetKind
         {
-            get { return IExecute<Javax.Tools.JavaFileObject.Kind>("getKind"); }
+            get { return IExecuteWithSignature<Javax.Tools.JavaFileObject.Kind>("getKind", "()Ljavax/tools/JavaFileObject$Kind;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.html#getNestingKind()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.NestingKind NestingKind
         {
-            get { return IExecute<Javax.Lang.Model.Element.NestingKind>("getNestingKind"); }
+            get { return IExecuteWithSignature<Javax.Lang.Model.Element.NestingKind>("getNestingKind", "()Ljavax/lang/model/element/NestingKind;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.html#isNameCompatible(java.lang.String,javax.tools.JavaFileObject.Kind)"/>
@@ -170,7 +170,7 @@ namespace Javax.Tools
             /// <returns><see cref="Javax.Tools.JavaFileObject.Kind"/></returns>
             public static Javax.Tools.JavaFileObject.Kind ValueOf(Java.Lang.String arg0)
             {
-                return SExecute<Javax.Tools.JavaFileObject.Kind>(LocalBridgeClazz, "valueOf", arg0);
+                return SExecuteWithSignature<Javax.Tools.JavaFileObject.Kind>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/tools/JavaFileObject$Kind;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#values()"/>
@@ -179,7 +179,7 @@ namespace Javax.Tools
             /// <returns><see cref="Javax.Tools.JavaFileObject.Kind"/></returns>
             public static Javax.Tools.JavaFileObject.Kind[] Values()
             {
-                return SExecuteArray<Javax.Tools.JavaFileObject.Kind>(LocalBridgeClazz, "values");
+                return SExecuteWithSignatureArray<Javax.Tools.JavaFileObject.Kind>(LocalBridgeClazz, "values", "()[Ljavax/tools/JavaFileObject$Kind;");
             }
 
             #endregion

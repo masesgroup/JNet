@@ -77,14 +77,14 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int Purge()
         {
-            return IExecute<int>("purge");
+            return IExecuteWithSignature<int>("purge", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#cancel()"/>
         /// </summary>
         public void Cancel()
         {
-            IExecute("cancel");
+            IExecuteWithSignature("cancel", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#schedule(java.util.TimerTask,java.util.Date,long)"/>

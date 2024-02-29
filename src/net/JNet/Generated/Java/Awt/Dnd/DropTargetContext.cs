@@ -50,14 +50,14 @@ namespace Java.Awt.Dnd
         /// </summary>
         public Java.Awt.Component Component
         {
-            get { return IExecute<Java.Awt.Component>("getComponent"); }
+            get { return IExecuteWithSignature<Java.Awt.Component>("getComponent", "()Ljava/awt/Component;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetContext.html#getDropTarget()"/> 
         /// </summary>
         public Java.Awt.Dnd.DropTarget DropTarget
         {
-            get { return IExecute<Java.Awt.Dnd.DropTarget>("getDropTarget"); }
+            get { return IExecuteWithSignature<Java.Awt.Dnd.DropTarget>("getDropTarget", "()Ljava/awt/dnd/DropTarget;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetContext.html#dropComplete(boolean)"/>
@@ -66,7 +66,7 @@ namespace Java.Awt.Dnd
         /// <exception cref="Java.Awt.Dnd.InvalidDnDOperationException"/>
         public void DropComplete(bool arg0)
         {
-            IExecute("dropComplete", arg0);
+            IExecuteWithSignature("dropComplete", "(Z)V", arg0);
         }
 
         #endregion

@@ -72,7 +72,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetDefaultComponent(Java.Awt.Container arg0)
         {
-            return IExecute<Java.Awt.Component>("getDefaultComponent", arg0);
+            return IExecuteWithSignature<Java.Awt.Component>("getDefaultComponent", "(Ljava/awt/Container;)Ljava/awt/Component;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FocusTraversalPolicy.html#getFirstComponent(java.awt.Container)"/>
@@ -81,7 +81,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetFirstComponent(Java.Awt.Container arg0)
         {
-            return IExecute<Java.Awt.Component>("getFirstComponent", arg0);
+            return IExecuteWithSignature<Java.Awt.Component>("getFirstComponent", "(Ljava/awt/Container;)Ljava/awt/Component;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FocusTraversalPolicy.html#getLastComponent(java.awt.Container)"/>
@@ -90,7 +90,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetLastComponent(Java.Awt.Container arg0)
         {
-            return IExecute<Java.Awt.Component>("getLastComponent", arg0);
+            return IExecuteWithSignature<Java.Awt.Component>("getLastComponent", "(Ljava/awt/Container;)Ljava/awt/Component;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FocusTraversalPolicy.html#getInitialComponent(java.awt.Window)"/>
@@ -99,7 +99,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetInitialComponent(Java.Awt.Window arg0)
         {
-            return IExecute<Java.Awt.Component>("getInitialComponent", arg0);
+            return IExecuteWithSignature<Java.Awt.Component>("getInitialComponent", "(Ljava/awt/Window;)Ljava/awt/Component;", arg0);
         }
 
         #endregion

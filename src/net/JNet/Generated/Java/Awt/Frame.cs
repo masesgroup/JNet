@@ -106,7 +106,7 @@ namespace Java.Awt
         /// </summary>
         public static Java.Awt.Frame[] Frames
         {
-            get { return SExecuteArray<Java.Awt.Frame>(LocalBridgeClazz, "getFrames"); }
+            get { return SExecuteWithSignatureArray<Java.Awt.Frame>(LocalBridgeClazz, "getFrames", "()[Ljava/awt/Frame;"); }
         }
 
         #endregion
@@ -117,42 +117,42 @@ namespace Java.Awt
         /// </summary>
         public int ExtendedState
         {
-            get { return IExecute<int>("getExtendedState"); } set { IExecute("setExtendedState", value); }
+            get { return IExecuteWithSignature<int>("getExtendedState", "()I"); } set { IExecuteWithSignature("setExtendedState", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getIconImage()"/> 
         /// </summary>
         public Java.Awt.Image IconImage
         {
-            get { return IExecute<Java.Awt.Image>("getIconImage"); }
+            get { return IExecuteWithSignature<Java.Awt.Image>("getIconImage", "()Ljava/awt/Image;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getMaximizedBounds()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setMaximizedBounds(java.awt.Rectangle)"/>
         /// </summary>
         public Java.Awt.Rectangle MaximizedBounds
         {
-            get { return IExecute<Java.Awt.Rectangle>("getMaximizedBounds"); } set { IExecute("setMaximizedBounds", value); }
+            get { return IExecuteWithSignature<Java.Awt.Rectangle>("getMaximizedBounds", "()Ljava/awt/Rectangle;"); } set { IExecuteWithSignature("setMaximizedBounds", "(Ljava/awt/Rectangle;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getMenuBar()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setMenuBar(java.awt.MenuBar)"/>
         /// </summary>
         public Java.Awt.MenuBar MenuBar
         {
-            get { return IExecute<Java.Awt.MenuBar>("getMenuBar"); } set { IExecute("setMenuBar", value); }
+            get { return IExecuteWithSignature<Java.Awt.MenuBar>("getMenuBar", "()Ljava/awt/MenuBar;"); } set { IExecuteWithSignature("setMenuBar", "(Ljava/awt/MenuBar;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getState()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setState(int)"/>
         /// </summary>
         public int State
         {
-            get { return IExecute<int>("getState"); } set { IExecute("setState", value); }
+            get { return IExecuteWithSignature<int>("getState", "()I"); } set { IExecuteWithSignature("setState", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getTitle()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setTitle(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Title
         {
-            get { return IExecute<Java.Lang.String>("getTitle"); } set { IExecute("setTitle", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getTitle", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setTitle", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#isResizable()"/>
@@ -161,7 +161,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsResizable()
         {
-            return IExecute<bool>("isResizable");
+            return IExecuteWithSignature<bool>("isResizable", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#isUndecorated()"/>
@@ -170,7 +170,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsUndecorated()
         {
-            return IExecute<bool>("isUndecorated");
+            return IExecuteWithSignature<bool>("isUndecorated", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setResizable(boolean)"/>
@@ -178,7 +178,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetResizable(bool arg0)
         {
-            IExecute("setResizable", arg0);
+            IExecuteWithSignature("setResizable", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setUndecorated(boolean)"/>
@@ -186,7 +186,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetUndecorated(bool arg0)
         {
-            IExecute("setUndecorated", arg0);
+            IExecuteWithSignature("setUndecorated", "(Z)V", arg0);
         }
 
         #endregion

@@ -96,7 +96,7 @@ namespace Java.Beans.Beancontext
         /// </summary>
         public Java.Beans.Beancontext.BeanContext BeanContext
         {
-            get { return IExecute<Java.Beans.Beancontext.BeanContext>("getBeanContext"); } set { IExecute("setBeanContext", value); }
+            get { return IExecuteWithSignature<Java.Beans.Beancontext.BeanContext>("getBeanContext", "()Ljava/beans/beancontext/BeanContext;"); } set { IExecuteWithSignature("setBeanContext", "(Ljava/beans/beancontext/BeanContext;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChild.html#addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>

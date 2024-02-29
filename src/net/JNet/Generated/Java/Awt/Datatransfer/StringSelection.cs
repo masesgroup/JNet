@@ -66,7 +66,7 @@ namespace Java.Awt.Datatransfer
         /// </summary>
         public Java.Awt.Datatransfer.DataFlavor[] TransferDataFlavors
         {
-            get { return IExecuteArray<Java.Awt.Datatransfer.DataFlavor>("getTransferDataFlavors"); }
+            get { return IExecuteWithSignatureArray<Java.Awt.Datatransfer.DataFlavor>("getTransferDataFlavors", "()[Ljava/awt/datatransfer/DataFlavor;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/StringSelection.html#isDataFlavorSupported(java.awt.datatransfer.DataFlavor)"/>
@@ -75,7 +75,7 @@ namespace Java.Awt.Datatransfer
         /// <returns><see cref="bool"/></returns>
         public bool IsDataFlavorSupported(Java.Awt.Datatransfer.DataFlavor arg0)
         {
-            return IExecute<bool>("isDataFlavorSupported", arg0);
+            return IExecuteWithSignature<bool>("isDataFlavorSupported", "(Ljava/awt/datatransfer/DataFlavor;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/StringSelection.html#getTransferData(java.awt.datatransfer.DataFlavor)"/>
@@ -86,7 +86,7 @@ namespace Java.Awt.Datatransfer
         /// <exception cref="Java.Io.IOException"/>
         public object GetTransferData(Java.Awt.Datatransfer.DataFlavor arg0)
         {
-            return IExecute("getTransferData", arg0);
+            return IExecuteWithSignature("getTransferData", "(Ljava/awt/datatransfer/DataFlavor;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/StringSelection.html#lostOwnership(java.awt.datatransfer.Clipboard,java.awt.datatransfer.Transferable)"/>

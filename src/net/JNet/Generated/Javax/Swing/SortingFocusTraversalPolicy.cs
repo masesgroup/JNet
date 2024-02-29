@@ -50,7 +50,7 @@ namespace Javax.Swing
         /// </summary>
         public bool ImplicitDownCycleTraversal
         {
-            get { return IExecute<bool>("getImplicitDownCycleTraversal"); } set { IExecute("setImplicitDownCycleTraversal", value); }
+            get { return IExecuteWithSignature<bool>("getImplicitDownCycleTraversal", "()Z"); } set { IExecuteWithSignature("setImplicitDownCycleTraversal", "(Z)V", value); }
         }
 
         #endregion

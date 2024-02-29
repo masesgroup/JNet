@@ -243,7 +243,7 @@ namespace Java.Time.Chrono
         /// </summary>
         public static Java.Util.Set<Java.Time.Chrono.Chronology> AvailableChronologies
         {
-            get { return SExecute<Java.Util.Set<Java.Time.Chrono.Chronology>>(LocalBridgeClazz, "getAvailableChronologies"); }
+            get { return SExecuteWithSignature<Java.Util.Set<Java.Time.Chrono.Chronology>>(LocalBridgeClazz, "getAvailableChronologies", "()Ljava/util/Set;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#from(java.time.temporal.TemporalAccessor)"/>
@@ -252,7 +252,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.Chronology"/></returns>
         public static Java.Time.Chrono.Chronology From(Java.Time.Temporal.TemporalAccessor arg0)
         {
-            return SExecute<Java.Time.Chrono.Chronology>(LocalBridgeClazz, "from", arg0);
+            return SExecuteWithSignature<Java.Time.Chrono.Chronology>(LocalBridgeClazz, "from", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/chrono/Chronology;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#of(java.lang.String)"/>
@@ -261,7 +261,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.Chronology"/></returns>
         public static Java.Time.Chrono.Chronology Of(Java.Lang.String arg0)
         {
-            return SExecute<Java.Time.Chrono.Chronology>(LocalBridgeClazz, "of", arg0);
+            return SExecuteWithSignature<Java.Time.Chrono.Chronology>(LocalBridgeClazz, "of", "(Ljava/lang/String;)Ljava/time/chrono/Chronology;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#ofLocale(java.util.Locale)"/>
@@ -270,7 +270,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.Chronology"/></returns>
         public static Java.Time.Chrono.Chronology OfLocale(Java.Util.Locale arg0)
         {
-            return SExecute<Java.Time.Chrono.Chronology>(LocalBridgeClazz, "ofLocale", arg0);
+            return SExecuteWithSignature<Java.Time.Chrono.Chronology>(LocalBridgeClazz, "ofLocale", "(Ljava/util/Locale;)Ljava/time/chrono/Chronology;", arg0);
         }
 
         #endregion
@@ -281,14 +281,14 @@ namespace Java.Time.Chrono
         /// </summary>
         public Java.Lang.String CalendarType
         {
-            get { return IExecute<Java.Lang.String>("getCalendarType"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getCalendarType", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#getId()"/> 
         /// </summary>
         public Java.Lang.String Id
         {
-            get { return IExecute<Java.Lang.String>("getId"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#isLeapYear(long)"/>
@@ -297,7 +297,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="bool"/></returns>
         public bool IsLeapYear(long arg0)
         {
-            return IExecute<bool>("isLeapYear", arg0);
+            return IExecuteWithSignature<bool>("isLeapYear", "(J)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#compareTo(java.time.chrono.Chronology)"/>
@@ -306,7 +306,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Java.Time.Chrono.Chronology arg0)
         {
-            return IExecute<int>("compareTo", arg0);
+            return IExecuteWithSignature<int>("compareTo", "(Ljava/time/chrono/Chronology;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#prolepticYear(java.time.chrono.Era,int)"/>
@@ -336,7 +336,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
         public Java.Time.Chrono.ChronoLocalDate Date(Java.Time.Temporal.TemporalAccessor arg0)
         {
-            return IExecute<Java.Time.Chrono.ChronoLocalDate>("date", arg0);
+            return IExecuteWithSignature<Java.Time.Chrono.ChronoLocalDate>("date", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/chrono/ChronoLocalDate;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#dateEpochDay(long)"/>
@@ -345,7 +345,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
         public Java.Time.Chrono.ChronoLocalDate DateEpochDay(long arg0)
         {
-            return IExecute<Java.Time.Chrono.ChronoLocalDate>("dateEpochDay", arg0);
+            return IExecuteWithSignature<Java.Time.Chrono.ChronoLocalDate>("dateEpochDay", "(J)Ljava/time/chrono/ChronoLocalDate;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#dateYearDay(int,int)"/>
@@ -374,7 +374,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.Era"/></returns>
         public Java.Time.Chrono.Era EraOf(int arg0)
         {
-            return IExecute<Java.Time.Chrono.Era>("eraOf", arg0);
+            return IExecuteWithSignature<Java.Time.Chrono.Era>("eraOf", "(I)Ljava/time/chrono/Era;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#range(java.time.temporal.ChronoField)"/>
@@ -383,7 +383,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public Java.Time.Temporal.ValueRange Range(Java.Time.Temporal.ChronoField arg0)
         {
-            return IExecute<Java.Time.Temporal.ValueRange>("range", arg0);
+            return IExecuteWithSignature<Java.Time.Temporal.ValueRange>("range", "(Ljava/time/temporal/ChronoField;)Ljava/time/temporal/ValueRange;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#eras()"/>
@@ -392,7 +392,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Java.Time.Chrono.Era> Eras()
         {
-            return IExecute<Java.Util.List<Java.Time.Chrono.Era>>("eras");
+            return IExecuteWithSignature<Java.Util.List<Java.Time.Chrono.Era>>("eras", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#compareTo(java.lang.Object)"/>
@@ -401,7 +401,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecute<int>("compareTo", arg0);
+            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#getDisplayName(java.time.format.TextStyle,java.util.Locale)"/>
@@ -432,7 +432,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
         public Java.Time.Chrono.ChronoLocalDate DateNow()
         {
-            return IExecute<Java.Time.Chrono.ChronoLocalDate>("dateNow");
+            return IExecuteWithSignature<Java.Time.Chrono.ChronoLocalDate>("dateNow", "()Ljava/time/chrono/ChronoLocalDate;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#dateNow(java.time.Clock)"/>
@@ -441,7 +441,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
         public Java.Time.Chrono.ChronoLocalDate DateNow(Java.Time.Clock arg0)
         {
-            return IExecute<Java.Time.Chrono.ChronoLocalDate>("dateNow", arg0);
+            return IExecuteWithSignature<Java.Time.Chrono.ChronoLocalDate>("dateNow", "(Ljava/time/Clock;)Ljava/time/chrono/ChronoLocalDate;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#dateNow(java.time.ZoneId)"/>
@@ -450,7 +450,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
         public Java.Time.Chrono.ChronoLocalDate DateNow(Java.Time.ZoneId arg0)
         {
-            return IExecute<Java.Time.Chrono.ChronoLocalDate>("dateNow", arg0);
+            return IExecuteWithSignature<Java.Time.Chrono.ChronoLocalDate>("dateNow", "(Ljava/time/ZoneId;)Ljava/time/chrono/ChronoLocalDate;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#dateYearDay(java.time.chrono.Era,int,int)"/>
@@ -470,7 +470,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.ChronoLocalDateTime"/></returns>
         public Java.Time.Chrono.ChronoLocalDateTime LocalDateTime(Java.Time.Temporal.TemporalAccessor arg0)
         {
-            return IExecute<Java.Time.Chrono.ChronoLocalDateTime>("localDateTime", arg0);
+            return IExecuteWithSignature<Java.Time.Chrono.ChronoLocalDateTime>("localDateTime", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/chrono/ChronoLocalDateTime;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#period(int,int,int)"/>
@@ -500,7 +500,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></returns>
         public Java.Time.Chrono.ChronoZonedDateTime ZonedDateTime(Java.Time.Temporal.TemporalAccessor arg0)
         {
-            return IExecute<Java.Time.Chrono.ChronoZonedDateTime>("zonedDateTime", arg0);
+            return IExecuteWithSignature<Java.Time.Chrono.ChronoZonedDateTime>("zonedDateTime", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/chrono/ChronoZonedDateTime;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#epochSecond(int,int,int,int,int,int,java.time.ZoneOffset)"/>

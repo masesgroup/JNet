@@ -86,7 +86,7 @@ namespace Java.Security.Interfaces
         /// </summary>
         public Java.Security.Spec.ECPoint W
         {
-            get { return IExecute<Java.Security.Spec.ECPoint>("getW"); }
+            get { return IExecuteWithSignature<Java.Security.Spec.ECPoint>("getW", "()Ljava/security/spec/ECPoint;"); }
         }
 
         #endregion

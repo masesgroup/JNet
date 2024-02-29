@@ -46,7 +46,7 @@ namespace Java.Beans
         /// </summary>
         public static Java.Lang.String[] EditorSearchPath
         {
-            get { return SExecuteArray<Java.Lang.String>(LocalBridgeClazz, "getEditorSearchPath"); } set { SExecute(LocalBridgeClazz, "setEditorSearchPath", value); }
+            get { return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "getEditorSearchPath", "()[Ljava/lang/String;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setEditorSearchPath", "([Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorManager.html#findEditor(java.lang.Class)"/>
@@ -55,7 +55,7 @@ namespace Java.Beans
         /// <returns><see cref="Java.Beans.PropertyEditor"/></returns>
         public static Java.Beans.PropertyEditor FindEditor(Java.Lang.Class arg0)
         {
-            return SExecute<Java.Beans.PropertyEditor>(LocalBridgeClazz, "findEditor", arg0);
+            return SExecuteWithSignature<Java.Beans.PropertyEditor>(LocalBridgeClazz, "findEditor", "(Ljava/lang/Class;)Ljava/beans/PropertyEditor;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorManager.html#registerEditor(java.lang.Class,java.lang.Class)"/>

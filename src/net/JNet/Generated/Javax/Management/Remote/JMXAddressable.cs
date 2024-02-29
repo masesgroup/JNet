@@ -72,7 +72,7 @@ namespace Javax.Management.Remote
         /// </summary>
         public Javax.Management.Remote.JMXServiceURL Address
         {
-            get { return IExecute<Javax.Management.Remote.JMXServiceURL>("getAddress"); }
+            get { return IExecuteWithSignature<Javax.Management.Remote.JMXServiceURL>("getAddress", "()Ljavax/management/remote/JMXServiceURL;"); }
         }
 
         #endregion

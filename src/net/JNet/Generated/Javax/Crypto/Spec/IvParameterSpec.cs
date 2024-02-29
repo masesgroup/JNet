@@ -68,7 +68,7 @@ namespace Javax.Crypto.Spec
         /// </summary>
         public byte[] IV
         {
-            get { return IExecuteArray<byte>("getIV"); }
+            get { return IExecuteWithSignatureArray<byte>("getIV", "()[B"); }
         }
 
         #endregion

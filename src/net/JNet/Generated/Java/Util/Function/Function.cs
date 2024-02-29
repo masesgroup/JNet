@@ -109,7 +109,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Function AndThenDefault(Java.Util.Function.Function arg0)
         {
-            return IExecute<Java.Util.Function.Function>("andThenDefault", arg0);
+            return IExecuteWithSignature<Java.Util.Function.Function>("andThenDefault", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
         }
 
         /// <summary>
@@ -143,7 +143,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Function ComposeDefault(Java.Util.Function.Function arg0)
         {
-            return IExecute<Java.Util.Function.Function>("composeDefault", arg0);
+            return IExecuteWithSignature<Java.Util.Function.Function>("composeDefault", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
         }
 
         /// <summary>
@@ -309,7 +309,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Function<T, V> AndThen<V, Arg0objectSuperR, Arg0ExtendsV>Default(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R where Arg0ExtendsV: V
         {
-            return IExecute<Java.Util.Function.Function<T, V>>("andThenDefault", arg0);
+            return IExecuteWithSignature<Java.Util.Function.Function<T, V>>("andThenDefault", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
         }
 
         /// <summary>
@@ -349,7 +349,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Function<V, R> Compose<V, Arg0objectSuperV, Arg0ExtendsT>Default(Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT> arg0) where Arg0objectSuperV: V where Arg0ExtendsT: T
         {
-            return IExecute<Java.Util.Function.Function<V, R>>("composeDefault", arg0);
+            return IExecuteWithSignature<Java.Util.Function.Function<V, R>>("composeDefault", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
         }
 
         /// <summary>

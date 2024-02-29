@@ -58,7 +58,7 @@ namespace Java.Beans
         /// </summary>
         public Java.Beans.PropertyChangeListener[] PropertyChangeListeners
         {
-            get { return IExecuteArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners"); }
+            get { return IExecuteWithSignatureArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners", "()[Ljava/beans/PropertyChangeListener;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeSupport.html#hasListeners(java.lang.String)"/>
@@ -67,7 +67,7 @@ namespace Java.Beans
         /// <returns><see cref="bool"/></returns>
         public bool HasListeners(Java.Lang.String arg0)
         {
-            return IExecute<bool>("hasListeners", arg0);
+            return IExecuteWithSignature<bool>("hasListeners", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeSupport.html#getPropertyChangeListeners(java.lang.String)"/>
@@ -76,7 +76,7 @@ namespace Java.Beans
         /// <returns><see cref="Java.Beans.PropertyChangeListener"/></returns>
         public Java.Beans.PropertyChangeListener[] GetPropertyChangeListeners(Java.Lang.String arg0)
         {
-            return IExecuteArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners", arg0);
+            return IExecuteWithSignatureArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners", "(Ljava/lang/String;)[Ljava/beans/PropertyChangeListener;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeSupport.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
@@ -84,7 +84,7 @@ namespace Java.Beans
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            IExecute("addPropertyChangeListener", arg0);
+            IExecuteWithSignature("addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeSupport.html#addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
@@ -134,7 +134,7 @@ namespace Java.Beans
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
         public void FirePropertyChange(Java.Beans.PropertyChangeEvent arg0)
         {
-            IExecute("firePropertyChange", arg0);
+            IExecuteWithSignature("firePropertyChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeSupport.html#firePropertyChange(java.lang.String,boolean,boolean)"/>
@@ -172,7 +172,7 @@ namespace Java.Beans
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            IExecute("removePropertyChangeListener", arg0);
+            IExecuteWithSignature("removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeSupport.html#removePropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>

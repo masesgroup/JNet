@@ -56,7 +56,7 @@ namespace Javax.Xml.Crypto
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator Iterator()
         {
-            return IExecute<Java.Util.Iterator>("iterator");
+            return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
         }
 
         #endregion
@@ -128,7 +128,7 @@ namespace Javax.Xml.Crypto
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<T> Iterator()
         {
-            return IExecute<Java.Util.Iterator<T>>("iterator");
+            return IExecuteWithSignature<Java.Util.Iterator<T>>("iterator", "()Ljava/util/Iterator;");
         }
 
         #endregion

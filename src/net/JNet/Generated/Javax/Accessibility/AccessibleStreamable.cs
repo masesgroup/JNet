@@ -78,7 +78,7 @@ namespace Javax.Accessibility
         /// </summary>
         public Java.Awt.Datatransfer.DataFlavor[] MimeTypes
         {
-            get { return IExecuteArray<Java.Awt.Datatransfer.DataFlavor>("getMimeTypes"); }
+            get { return IExecuteWithSignatureArray<Java.Awt.Datatransfer.DataFlavor>("getMimeTypes", "()[Ljava/awt/datatransfer/DataFlavor;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStreamable.html#getStream(java.awt.datatransfer.DataFlavor)"/>
@@ -87,7 +87,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="Java.Io.InputStream"/></returns>
         public Java.Io.InputStream GetStream(Java.Awt.Datatransfer.DataFlavor arg0)
         {
-            return IExecute<Java.Io.InputStream>("getStream", arg0);
+            return IExecuteWithSignature<Java.Io.InputStream>("getStream", "(Ljava/awt/datatransfer/DataFlavor;)Ljava/io/InputStream;", arg0);
         }
 
         #endregion

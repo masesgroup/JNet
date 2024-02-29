@@ -88,28 +88,28 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public int AlphaMask
         {
-            get { return IExecute<int>("getAlphaMask"); }
+            get { return IExecuteWithSignature<int>("getAlphaMask", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DirectColorModel.html#getBlueMask()"/> 
         /// </summary>
         public int BlueMask
         {
-            get { return IExecute<int>("getBlueMask"); }
+            get { return IExecuteWithSignature<int>("getBlueMask", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DirectColorModel.html#getGreenMask()"/> 
         /// </summary>
         public int GreenMask
         {
-            get { return IExecute<int>("getGreenMask"); }
+            get { return IExecuteWithSignature<int>("getGreenMask", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DirectColorModel.html#getRedMask()"/> 
         /// </summary>
         public int RedMask
         {
-            get { return IExecute<int>("getRedMask"); }
+            get { return IExecuteWithSignature<int>("getRedMask", "()I"); }
         }
 
         #endregion

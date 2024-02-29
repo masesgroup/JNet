@@ -82,7 +82,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// </summary>
         public static Javax.Imageio.Plugins.Tiff.GeoTIFFTagSet Instance
         {
-            get { return SExecute<Javax.Imageio.Plugins.Tiff.GeoTIFFTagSet>(LocalBridgeClazz, "getInstance"); }
+            get { return SExecuteWithSignature<Javax.Imageio.Plugins.Tiff.GeoTIFFTagSet>(LocalBridgeClazz, "getInstance", "()Ljavax/imageio/plugins/tiff/GeoTIFFTagSet;"); }
         }
 
         #endregion

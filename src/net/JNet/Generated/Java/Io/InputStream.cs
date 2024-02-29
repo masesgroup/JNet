@@ -48,7 +48,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.InputStream"/></returns>
         public static Java.Io.InputStream NullInputStream()
         {
-            return SExecute<Java.Io.InputStream>(LocalBridgeClazz, "nullInputStream");
+            return SExecuteWithSignature<Java.Io.InputStream>(LocalBridgeClazz, "nullInputStream", "()Ljava/io/InputStream;");
         }
 
         #endregion
@@ -62,7 +62,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public int Read()
         {
-            return IExecute<int>("read");
+            return IExecuteWithSignature<int>("read", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#markSupported()"/>
@@ -71,7 +71,7 @@ namespace Java.Io
         /// <returns><see cref="bool"/></returns>
         public bool MarkSupported()
         {
-            return IExecute<bool>("markSupported");
+            return IExecuteWithSignature<bool>("markSupported", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#readAllBytes()"/>
@@ -81,7 +81,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public byte[] ReadAllBytes()
         {
-            return IExecuteArray<byte>("readAllBytes");
+            return IExecuteWithSignatureArray<byte>("readAllBytes", "()[B");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#readNBytes(int)"/>
@@ -91,7 +91,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public byte[] ReadNBytes(int arg0)
         {
-            return IExecuteArray<byte>("readNBytes", arg0);
+            return IExecuteWithSignatureArray<byte>("readNBytes", "(I)[B", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#available()"/>
@@ -101,7 +101,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public int Available()
         {
-            return IExecute<int>("available");
+            return IExecuteWithSignature<int>("available", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#read(byte[],int,int)"/>
@@ -123,7 +123,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public int Read(byte[] arg0)
         {
-            return IExecute<int>("read", new object[] { arg0 });
+            return IExecuteWithSignature<int>("read", "([B)I", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#readNBytes(byte[],int,int)"/>
@@ -145,7 +145,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public long Skip(long arg0)
         {
-            return IExecute<long>("skip", arg0);
+            return IExecuteWithSignature<long>("skip", "(J)J", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#transferTo(java.io.OutputStream)"/>
@@ -155,7 +155,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public long TransferTo(Java.Io.OutputStream arg0)
         {
-            return IExecute<long>("transferTo", arg0);
+            return IExecuteWithSignature<long>("transferTo", "(Ljava/io/OutputStream;)J", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#mark(int)"/>
@@ -163,7 +163,7 @@ namespace Java.Io
         /// <param name="arg0"><see cref="int"/></param>
         public void Mark(int arg0)
         {
-            IExecute("mark", arg0);
+            IExecuteWithSignature("mark", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#reset()"/>
@@ -172,7 +172,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Reset()
         {
-            IExecute("reset");
+            IExecuteWithSignature("reset", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#close()"/>
@@ -181,7 +181,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
-            IExecute("close");
+            IExecuteWithSignature("close", "()V");
         }
 
         #endregion

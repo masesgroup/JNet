@@ -72,7 +72,7 @@ namespace Javax.Naming
         /// </summary>
         public Javax.Naming.Reference Reference
         {
-            get { return IExecute<Javax.Naming.Reference>("getReference"); }
+            get { return IExecuteWithSignature<Javax.Naming.Reference>("getReference", "()Ljavax/naming/Reference;"); }
         }
 
         #endregion

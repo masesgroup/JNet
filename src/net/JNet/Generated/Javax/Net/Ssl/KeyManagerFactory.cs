@@ -46,7 +46,7 @@ namespace Javax.Net.Ssl
         /// </summary>
         public static Java.Lang.String DefaultAlgorithm
         {
-            get { return SExecute<Java.Lang.String>(LocalBridgeClazz, "getDefaultAlgorithm"); }
+            get { return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDefaultAlgorithm", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html#getInstance(java.lang.String,java.lang.String)"/>
@@ -79,7 +79,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Javax.Net.Ssl.KeyManagerFactory GetInstance(Java.Lang.String arg0)
         {
-            return SExecute<Javax.Net.Ssl.KeyManagerFactory>(LocalBridgeClazz, "getInstance", arg0);
+            return SExecuteWithSignature<Javax.Net.Ssl.KeyManagerFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljavax/net/ssl/KeyManagerFactory;", arg0);
         }
 
         #endregion
@@ -90,21 +90,21 @@ namespace Javax.Net.Ssl
         /// </summary>
         public Java.Lang.String Algorithm
         {
-            get { return IExecute<Java.Lang.String>("getAlgorithm"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html#getKeyManagers()"/> 
         /// </summary>
         public Javax.Net.Ssl.KeyManager[] KeyManagers
         {
-            get { return IExecuteArray<Javax.Net.Ssl.KeyManager>("getKeyManagers"); }
+            get { return IExecuteWithSignatureArray<Javax.Net.Ssl.KeyManager>("getKeyManagers", "()[Ljavax/net/ssl/KeyManager;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html#getProvider()"/> 
         /// </summary>
         public Java.Security.Provider Provider
         {
-            get { return IExecute<Java.Security.Provider>("getProvider"); }
+            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html#init(java.security.KeyStore,char[])"/>
@@ -125,7 +125,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public void Init(Javax.Net.Ssl.ManagerFactoryParameters arg0)
         {
-            IExecute("init", arg0);
+            IExecuteWithSignature("init", "(Ljavax/net/ssl/ManagerFactoryParameters;)V", arg0);
         }
 
         #endregion

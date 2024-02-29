@@ -78,7 +78,7 @@ namespace Java.Rmi.Server
         /// <exception cref="Java.Io.IOException"/>
         public Java.Net.ServerSocket CreateServerSocket(int arg0)
         {
-            return IExecute<Java.Net.ServerSocket>("createServerSocket", arg0);
+            return IExecuteWithSignature<Java.Net.ServerSocket>("createServerSocket", "(I)Ljava/net/ServerSocket;", arg0);
         }
 
         #endregion

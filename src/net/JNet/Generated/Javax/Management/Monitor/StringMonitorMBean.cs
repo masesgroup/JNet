@@ -92,21 +92,21 @@ namespace Javax.Management.Monitor
         /// </summary>
         public bool NotifyDiffer
         {
-            get { return IExecute<bool>("getNotifyDiffer"); } set { IExecute("setNotifyDiffer", value); }
+            get { return IExecuteWithSignature<bool>("getNotifyDiffer", "()Z"); } set { IExecuteWithSignature("setNotifyDiffer", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/StringMonitorMBean.html#getNotifyMatch()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/StringMonitorMBean.html#setNotifyMatch(boolean)"/>
         /// </summary>
         public bool NotifyMatch
         {
-            get { return IExecute<bool>("getNotifyMatch"); } set { IExecute("setNotifyMatch", value); }
+            get { return IExecuteWithSignature<bool>("getNotifyMatch", "()Z"); } set { IExecuteWithSignature("setNotifyMatch", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/StringMonitorMBean.html#getStringToCompare()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/StringMonitorMBean.html#setStringToCompare(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String StringToCompare
         {
-            get { return IExecute<Java.Lang.String>("getStringToCompare"); } set { IExecute("setStringToCompare", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getStringToCompare", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setStringToCompare", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/StringMonitorMBean.html#getDerivedGauge(javax.management.ObjectName)"/>
@@ -115,7 +115,7 @@ namespace Javax.Management.Monitor
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDerivedGauge(Javax.Management.ObjectName arg0)
         {
-            return IExecute<Java.Lang.String>("getDerivedGauge", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getDerivedGauge", "(Ljavax/management/ObjectName;)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/StringMonitorMBean.html#getDerivedGaugeTimeStamp(javax.management.ObjectName)"/>
@@ -124,7 +124,7 @@ namespace Javax.Management.Monitor
         /// <returns><see cref="long"/></returns>
         public long GetDerivedGaugeTimeStamp(Javax.Management.ObjectName arg0)
         {
-            return IExecute<long>("getDerivedGaugeTimeStamp", arg0);
+            return IExecuteWithSignature<long>("getDerivedGaugeTimeStamp", "(Ljavax/management/ObjectName;)J", arg0);
         }
 
         #endregion

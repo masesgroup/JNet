@@ -72,7 +72,7 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public int Width
         {
-            get { return IExecute<int>("getWidth"); } set { IExecute("setWidth", value); }
+            get { return IExecuteWithSignature<int>("getWidth", "()I"); } set { IExecuteWithSignature("setWidth", "(I)V", value); }
         }
 
         #endregion

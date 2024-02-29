@@ -137,7 +137,7 @@ namespace Javax.Management.Openmbean
         /// <exception cref="Java.Io.ObjectStreamException"/>
         public object ReadResolve()
         {
-            return IExecute("readResolve");
+            return IExecuteWithSignature("readResolve", "()Ljava/lang/Object;");
         }
 
         #endregion
@@ -266,7 +266,7 @@ namespace Javax.Management.Openmbean
         /// <exception cref="Java.Io.ObjectStreamException"/>
         public object ReadResolve()
         {
-            return IExecute("readResolve");
+            return IExecuteWithSignature("readResolve", "()Ljava/lang/Object;");
         }
 
         #endregion

@@ -59,21 +59,21 @@ namespace Java.Security
         /// </summary>
         public Java.Net.URI Configuration
         {
-            get { return IExecute<Java.Net.URI>("getConfiguration"); }
+            get { return IExecuteWithSignature<Java.Net.URI>("getConfiguration", "()Ljava/net/URI;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DomainLoadStoreParameter.html#getProtectionParameter()"/> 
         /// </summary>
         public Java.Security.KeyStore.ProtectionParameter ProtectionParameter
         {
-            get { return IExecute<Java.Security.KeyStore.ProtectionParameter>("getProtectionParameter"); }
+            get { return IExecuteWithSignature<Java.Security.KeyStore.ProtectionParameter>("getProtectionParameter", "()Ljava/security/KeyStore$ProtectionParameter;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DomainLoadStoreParameter.html#getProtectionParams()"/> 
         /// </summary>
         public Java.Util.Map<Java.Lang.String, Java.Security.KeyStore.ProtectionParameter> ProtectionParams
         {
-            get { return IExecute<Java.Util.Map<Java.Lang.String, Java.Security.KeyStore.ProtectionParameter>>("getProtectionParams"); }
+            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Security.KeyStore.ProtectionParameter>>("getProtectionParams", "()Ljava/util/Map;"); }
         }
 
         #endregion

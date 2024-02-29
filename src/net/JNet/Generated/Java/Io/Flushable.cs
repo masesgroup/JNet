@@ -76,7 +76,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Flush()
         {
-            IExecute("flush");
+            IExecuteWithSignature("flush", "()V");
         }
 
         #endregion

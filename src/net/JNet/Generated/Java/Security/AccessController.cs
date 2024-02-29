@@ -46,7 +46,7 @@ namespace Java.Security
         /// </summary>
         public static Java.Security.AccessControlContext Context
         {
-            get { return SExecute<Java.Security.AccessControlContext>(LocalBridgeClazz, "getContext"); }
+            get { return SExecuteWithSignature<Java.Security.AccessControlContext>(LocalBridgeClazz, "getContext", "()Ljava/security/AccessControlContext;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivileged(java.security.PrivilegedAction,java.security.AccessControlContext,java.security.Permission[])"/>
@@ -93,7 +93,7 @@ namespace Java.Security
         /// <returns><typeparamref name="T"/></returns>
         public static T DoPrivilegedWithCombiner<T>(Java.Security.PrivilegedAction<T> arg0)
         {
-            return SExecute<T>(LocalBridgeClazz, "doPrivilegedWithCombiner", arg0);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivilegedWithCombiner", "(Ljava/security/PrivilegedAction;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivilegedWithCombiner(java.security.PrivilegedExceptionAction,java.security.AccessControlContext,java.security.Permission[])"/>
@@ -117,7 +117,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.PrivilegedActionException"/>
         public static T DoPrivilegedWithCombiner<T>(Java.Security.PrivilegedExceptionAction<T> arg0)
         {
-            return SExecute<T>(LocalBridgeClazz, "doPrivilegedWithCombiner", arg0);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivilegedWithCombiner", "(Ljava/security/PrivilegedExceptionAction;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivileged(java.security.PrivilegedAction,java.security.AccessControlContext)"/>
@@ -138,7 +138,7 @@ namespace Java.Security
         /// <returns><typeparamref name="T"/></returns>
         public static T DoPrivileged<T>(Java.Security.PrivilegedAction<T> arg0)
         {
-            return SExecute<T>(LocalBridgeClazz, "doPrivileged", arg0);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivileged", "(Ljava/security/PrivilegedAction;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivileged(java.security.PrivilegedExceptionAction,java.security.AccessControlContext)"/>
@@ -161,7 +161,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.PrivilegedActionException"/>
         public static T DoPrivileged<T>(Java.Security.PrivilegedExceptionAction<T> arg0)
         {
-            return SExecute<T>(LocalBridgeClazz, "doPrivileged", arg0);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivileged", "(Ljava/security/PrivilegedExceptionAction;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#checkPermission(java.security.Permission)"/>
@@ -170,7 +170,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.AccessControlException"/>
         public static void CheckPermission(Java.Security.Permission arg0)
         {
-            SExecute(LocalBridgeClazz, "checkPermission", arg0);
+            SExecuteWithSignature(LocalBridgeClazz, "checkPermission", "(Ljava/security/Permission;)V", arg0);
         }
 
         #endregion

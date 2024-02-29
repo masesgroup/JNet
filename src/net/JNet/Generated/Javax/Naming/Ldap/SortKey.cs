@@ -68,14 +68,14 @@ namespace Javax.Naming.Ldap
         /// </summary>
         public Java.Lang.String AttributeID
         {
-            get { return IExecute<Java.Lang.String>("getAttributeID"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getAttributeID", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortKey.html#getMatchingRuleID()"/> 
         /// </summary>
         public Java.Lang.String MatchingRuleID
         {
-            get { return IExecute<Java.Lang.String>("getMatchingRuleID"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getMatchingRuleID", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortKey.html#isAscending()"/>
@@ -84,7 +84,7 @@ namespace Javax.Naming.Ldap
         /// <returns><see cref="bool"/></returns>
         public bool IsAscending()
         {
-            return IExecute<bool>("isAscending");
+            return IExecuteWithSignature<bool>("isAscending", "()Z");
         }
 
         #endregion

@@ -58,7 +58,7 @@ namespace Javax.Management
         /// </summary>
         public Java.Lang.String AttributeName
         {
-            get { return IExecute<Java.Lang.String>("getAttributeName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getAttributeName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeValueExp.html#apply(javax.management.ObjectName)"/>
@@ -71,7 +71,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.InvalidApplicationException"/>
         public Javax.Management.ValueExp Apply(Javax.Management.ObjectName arg0)
         {
-            return IExecute<Javax.Management.ValueExp>("apply", arg0);
+            return IExecuteWithSignature<Javax.Management.ValueExp>("apply", "(Ljavax/management/ObjectName;)Ljavax/management/ValueExp;", arg0);
         }
 
         #endregion

@@ -50,14 +50,14 @@ namespace Javax.Net.Ssl
         /// </summary>
         public Java.Lang.String[] DefaultCipherSuites
         {
-            get { return IExecuteArray<Java.Lang.String>("getDefaultCipherSuites"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.String>("getDefaultCipherSuites", "()[Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocketFactory.html#getSupportedCipherSuites()"/> 
         /// </summary>
         public Java.Lang.String[] SupportedCipherSuites
         {
-            get { return IExecuteArray<Java.Lang.String>("getSupportedCipherSuites"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.String>("getSupportedCipherSuites", "()[Ljava/lang/String;"); }
         }
 
         #endregion

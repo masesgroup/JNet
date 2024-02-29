@@ -74,7 +74,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static bool DeleteIfExists(Java.Nio.File.Path arg0)
         {
-            return SExecute<bool>(LocalBridgeClazz, "deleteIfExists", arg0);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "deleteIfExists", "(Ljava/nio/file/Path;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#exists(java.nio.file.Path,java.nio.file.LinkOption[])"/>
@@ -103,7 +103,7 @@ namespace Java.Nio.File
         /// <returns><see cref="bool"/></returns>
         public static bool IsExecutable(Java.Nio.File.Path arg0)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isExecutable", arg0);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isExecutable", "(Ljava/nio/file/Path;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#isHidden(java.nio.file.Path)"/>
@@ -113,7 +113,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static bool IsHidden(Java.Nio.File.Path arg0)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isHidden", arg0);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isHidden", "(Ljava/nio/file/Path;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#isReadable(java.nio.file.Path)"/>
@@ -122,7 +122,7 @@ namespace Java.Nio.File
         /// <returns><see cref="bool"/></returns>
         public static bool IsReadable(Java.Nio.File.Path arg0)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isReadable", arg0);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isReadable", "(Ljava/nio/file/Path;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#isRegularFile(java.nio.file.Path,java.nio.file.LinkOption[])"/>
@@ -152,7 +152,7 @@ namespace Java.Nio.File
         /// <returns><see cref="bool"/></returns>
         public static bool IsSymbolicLink(Java.Nio.File.Path arg0)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isSymbolicLink", arg0);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isSymbolicLink", "(Ljava/nio/file/Path;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#isWritable(java.nio.file.Path)"/>
@@ -161,7 +161,7 @@ namespace Java.Nio.File
         /// <returns><see cref="bool"/></returns>
         public static bool IsWritable(Java.Nio.File.Path arg0)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isWritable", arg0);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isWritable", "(Ljava/nio/file/Path;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#notExists(java.nio.file.Path,java.nio.file.LinkOption[])"/>
@@ -181,7 +181,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static byte[] ReadAllBytes(Java.Nio.File.Path arg0)
         {
-            return SExecuteArray<byte>(LocalBridgeClazz, "readAllBytes", arg0);
+            return SExecuteWithSignatureArray<byte>(LocalBridgeClazz, "readAllBytes", "(Ljava/nio/file/Path;)[B", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#newBufferedReader(java.nio.file.Path,java.nio.charset.Charset)"/>
@@ -202,7 +202,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Io.BufferedReader NewBufferedReader(Java.Nio.File.Path arg0)
         {
-            return SExecute<Java.Io.BufferedReader>(LocalBridgeClazz, "newBufferedReader", arg0);
+            return SExecuteWithSignature<Java.Io.BufferedReader>(LocalBridgeClazz, "newBufferedReader", "(Ljava/nio/file/Path;)Ljava/io/BufferedReader;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#newBufferedWriter(java.nio.file.Path,java.nio.charset.Charset,java.nio.file.OpenOption[])"/>
@@ -269,7 +269,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Lang.String ProbeContentType(Java.Nio.File.Path arg0)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "probeContentType", arg0);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "probeContentType", "(Ljava/nio/file/Path;)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#readString(java.nio.file.Path,java.nio.charset.Charset)"/>
@@ -290,7 +290,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Lang.String ReadString(Java.Nio.File.Path arg0)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "readString", arg0);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "readString", "(Ljava/nio/file/Path;)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#newByteChannel(java.nio.file.Path,java.nio.file.OpenOption[])"/>
@@ -369,7 +369,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.DirectoryStream<Java.Nio.File.Path> NewDirectoryStream(Java.Nio.File.Path arg0)
         {
-            return SExecute<Java.Nio.File.DirectoryStream<Java.Nio.File.Path>>(LocalBridgeClazz, "newDirectoryStream", arg0);
+            return SExecuteWithSignature<Java.Nio.File.DirectoryStream<Java.Nio.File.Path>>(LocalBridgeClazz, "newDirectoryStream", "(Ljava/nio/file/Path;)Ljava/nio/file/DirectoryStream;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#getFileStore(java.nio.file.Path)"/>
@@ -379,7 +379,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.FileStore GetFileStore(Java.Nio.File.Path arg0)
         {
-            return SExecute<Java.Nio.File.FileStore>(LocalBridgeClazz, "getFileStore", arg0);
+            return SExecuteWithSignature<Java.Nio.File.FileStore>(LocalBridgeClazz, "getFileStore", "(Ljava/nio/file/Path;)Ljava/nio/file/FileStore;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#copy(java.nio.file.Path,java.nio.file.Path,java.nio.file.CopyOption[])"/>
@@ -517,7 +517,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path ReadSymbolicLink(Java.Nio.File.Path arg0)
         {
-            return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "readSymbolicLink", arg0);
+            return SExecuteWithSignature<Java.Nio.File.Path>(LocalBridgeClazz, "readSymbolicLink", "(Ljava/nio/file/Path;)Ljava/nio/file/Path;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#setAttribute(java.nio.file.Path,java.lang.String,java.lang.Object,java.nio.file.LinkOption[])"/>
@@ -674,7 +674,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Util.List<Java.Lang.String> ReadAllLines(Java.Nio.File.Path arg0)
         {
-            return SExecute<Java.Util.List<Java.Lang.String>>(LocalBridgeClazz, "readAllLines", arg0);
+            return SExecuteWithSignature<Java.Util.List<Java.Lang.String>>(LocalBridgeClazz, "readAllLines", "(Ljava/nio/file/Path;)Ljava/util/List;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#readAttributes(java.nio.file.Path,java.lang.String,java.nio.file.LinkOption[])"/>
@@ -718,7 +718,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Util.Stream.Stream<Java.Lang.String> Lines(Java.Nio.File.Path arg0)
         {
-            return SExecute<Java.Util.Stream.Stream<Java.Lang.String>>(LocalBridgeClazz, "lines", arg0);
+            return SExecuteWithSignature<Java.Util.Stream.Stream<Java.Lang.String>>(LocalBridgeClazz, "lines", "(Ljava/nio/file/Path;)Ljava/util/stream/Stream;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#find(java.nio.file.Path,int,java.util.function.BiPredicate,java.nio.file.FileVisitOption[])"/>
@@ -741,7 +741,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Util.Stream.Stream<Java.Nio.File.Path> List(Java.Nio.File.Path arg0)
         {
-            return SExecute<Java.Util.Stream.Stream<Java.Nio.File.Path>>(LocalBridgeClazz, "list", arg0);
+            return SExecuteWithSignature<Java.Util.Stream.Stream<Java.Nio.File.Path>>(LocalBridgeClazz, "list", "(Ljava/nio/file/Path;)Ljava/util/stream/Stream;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#walk(java.nio.file.Path,int,java.nio.file.FileVisitOption[])"/>
@@ -797,7 +797,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static long Size(Java.Nio.File.Path arg0)
         {
-            return SExecute<long>(LocalBridgeClazz, "size", arg0);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "size", "(Ljava/nio/file/Path;)J", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#delete(java.nio.file.Path)"/>
@@ -806,7 +806,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static void Delete(Java.Nio.File.Path arg0)
         {
-            SExecute(LocalBridgeClazz, "delete", arg0);
+            SExecuteWithSignature(LocalBridgeClazz, "delete", "(Ljava/nio/file/Path;)V", arg0);
         }
 
         #endregion

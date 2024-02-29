@@ -94,7 +94,7 @@ namespace Javax.Print.Attribute.Standard
         /// <returns><see cref="Javax.Print.Attribute.Standard.MediaSize"/></returns>
         public static Javax.Print.Attribute.Standard.MediaSize GetMediaSizeForName(Javax.Print.Attribute.Standard.MediaSizeName arg0)
         {
-            return SExecute<Javax.Print.Attribute.Standard.MediaSize>(LocalBridgeClazz, "getMediaSizeForName", arg0);
+            return SExecuteWithSignature<Javax.Print.Attribute.Standard.MediaSize>(LocalBridgeClazz, "getMediaSizeForName", "(Ljavax/print/attribute/standard/MediaSizeName;)Ljavax/print/attribute/standard/MediaSize;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.html#findMedia(float,float,int)"/>
@@ -116,21 +116,21 @@ namespace Javax.Print.Attribute.Standard
         /// </summary>
         public Java.Lang.Class Category
         {
-            get { return IExecute<Java.Lang.Class>("getCategory"); }
+            get { return IExecuteWithSignature<Java.Lang.Class>("getCategory", "()Ljava/lang/Class;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.html#getMediaSizeName()"/> 
         /// </summary>
         public Javax.Print.Attribute.Standard.MediaSizeName MediaSizeName
         {
-            get { return IExecute<Javax.Print.Attribute.Standard.MediaSizeName>("getMediaSizeName"); }
+            get { return IExecuteWithSignature<Javax.Print.Attribute.Standard.MediaSizeName>("getMediaSizeName", "()Ljavax/print/attribute/standard/MediaSizeName;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
         }
 
         #endregion

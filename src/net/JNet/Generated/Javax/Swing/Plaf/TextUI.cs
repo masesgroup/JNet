@@ -66,7 +66,7 @@ namespace Javax.Swing.Plaf
         /// <returns><see cref="Javax.Swing.Text.EditorKit"/></returns>
         public Javax.Swing.Text.EditorKit GetEditorKit(Javax.Swing.Text.JTextComponent arg0)
         {
-            return IExecute<Javax.Swing.Text.EditorKit>("getEditorKit", arg0);
+            return IExecuteWithSignature<Javax.Swing.Text.EditorKit>("getEditorKit", "(Ljavax/swing/text/JTextComponent;)Ljavax/swing/text/EditorKit;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TextUI.html#getRootView(javax.swing.text.JTextComponent)"/>
@@ -75,7 +75,7 @@ namespace Javax.Swing.Plaf
         /// <returns><see cref="Javax.Swing.Text.View"/></returns>
         public Javax.Swing.Text.View GetRootView(Javax.Swing.Text.JTextComponent arg0)
         {
-            return IExecute<Javax.Swing.Text.View>("getRootView", arg0);
+            return IExecuteWithSignature<Javax.Swing.Text.View>("getRootView", "(Ljavax/swing/text/JTextComponent;)Ljavax/swing/text/View;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TextUI.html#damageRange(javax.swing.text.JTextComponent,int,int,javax.swing.text.Position.Bias,javax.swing.text.Position.Bias)"/>

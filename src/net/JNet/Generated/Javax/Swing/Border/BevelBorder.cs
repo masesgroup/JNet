@@ -92,35 +92,35 @@ namespace Javax.Swing.Border
         /// </summary>
         public int BevelType
         {
-            get { return IExecute<int>("getBevelType"); }
+            get { return IExecuteWithSignature<int>("getBevelType", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/BevelBorder.html#getHighlightInnerColor()"/> 
         /// </summary>
         public Java.Awt.Color HighlightInnerColor
         {
-            get { return IExecute<Java.Awt.Color>("getHighlightInnerColor"); }
+            get { return IExecuteWithSignature<Java.Awt.Color>("getHighlightInnerColor", "()Ljava/awt/Color;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/BevelBorder.html#getHighlightOuterColor()"/> 
         /// </summary>
         public Java.Awt.Color HighlightOuterColor
         {
-            get { return IExecute<Java.Awt.Color>("getHighlightOuterColor"); }
+            get { return IExecuteWithSignature<Java.Awt.Color>("getHighlightOuterColor", "()Ljava/awt/Color;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/BevelBorder.html#getShadowInnerColor()"/> 
         /// </summary>
         public Java.Awt.Color ShadowInnerColor
         {
-            get { return IExecute<Java.Awt.Color>("getShadowInnerColor"); }
+            get { return IExecuteWithSignature<Java.Awt.Color>("getShadowInnerColor", "()Ljava/awt/Color;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/BevelBorder.html#getShadowOuterColor()"/> 
         /// </summary>
         public Java.Awt.Color ShadowOuterColor
         {
-            get { return IExecute<Java.Awt.Color>("getShadowOuterColor"); }
+            get { return IExecuteWithSignature<Java.Awt.Color>("getShadowOuterColor", "()Ljava/awt/Color;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/BevelBorder.html#getHighlightInnerColor(java.awt.Component)"/>
@@ -129,7 +129,7 @@ namespace Javax.Swing.Border
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public Java.Awt.Color GetHighlightInnerColor(Java.Awt.Component arg0)
         {
-            return IExecute<Java.Awt.Color>("getHighlightInnerColor", arg0);
+            return IExecuteWithSignature<Java.Awt.Color>("getHighlightInnerColor", "(Ljava/awt/Component;)Ljava/awt/Color;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/BevelBorder.html#getHighlightOuterColor(java.awt.Component)"/>
@@ -138,7 +138,7 @@ namespace Javax.Swing.Border
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public Java.Awt.Color GetHighlightOuterColor(Java.Awt.Component arg0)
         {
-            return IExecute<Java.Awt.Color>("getHighlightOuterColor", arg0);
+            return IExecuteWithSignature<Java.Awt.Color>("getHighlightOuterColor", "(Ljava/awt/Component;)Ljava/awt/Color;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/BevelBorder.html#getShadowInnerColor(java.awt.Component)"/>
@@ -147,7 +147,7 @@ namespace Javax.Swing.Border
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public Java.Awt.Color GetShadowInnerColor(Java.Awt.Component arg0)
         {
-            return IExecute<Java.Awt.Color>("getShadowInnerColor", arg0);
+            return IExecuteWithSignature<Java.Awt.Color>("getShadowInnerColor", "(Ljava/awt/Component;)Ljava/awt/Color;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/BevelBorder.html#getShadowOuterColor(java.awt.Component)"/>
@@ -156,7 +156,7 @@ namespace Javax.Swing.Border
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public Java.Awt.Color GetShadowOuterColor(Java.Awt.Component arg0)
         {
-            return IExecute<Java.Awt.Color>("getShadowOuterColor", arg0);
+            return IExecuteWithSignature<Java.Awt.Color>("getShadowOuterColor", "(Ljava/awt/Component;)Ljava/awt/Color;", arg0);
         }
 
         #endregion

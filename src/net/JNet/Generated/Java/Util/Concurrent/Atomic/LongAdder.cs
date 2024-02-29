@@ -52,7 +52,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="long"/></returns>
         public long Sum()
         {
-            return IExecute<long>("sum");
+            return IExecuteWithSignature<long>("sum", "()J");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAdder.html#sumThenReset()"/>
@@ -61,7 +61,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="long"/></returns>
         public long SumThenReset()
         {
-            return IExecute<long>("sumThenReset");
+            return IExecuteWithSignature<long>("sumThenReset", "()J");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAdder.html#add(long)"/>
@@ -69,28 +69,28 @@ namespace Java.Util.Concurrent.Atomic
         /// <param name="arg0"><see cref="long"/></param>
         public void Add(long arg0)
         {
-            IExecute("add", arg0);
+            IExecuteWithSignature("add", "(J)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAdder.html#decrement()"/>
         /// </summary>
         public void Decrement()
         {
-            IExecute("decrement");
+            IExecuteWithSignature("decrement", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAdder.html#increment()"/>
         /// </summary>
         public void Increment()
         {
-            IExecute("increment");
+            IExecuteWithSignature("increment", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAdder.html#reset()"/>
         /// </summary>
         public void Reset()
         {
-            IExecute("reset");
+            IExecuteWithSignature("reset", "()V");
         }
 
         #endregion

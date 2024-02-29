@@ -85,14 +85,14 @@ namespace Org.W3c.Dom.Events
         /// </summary>
         public int Detail
         {
-            get { return IExecute<int>("getDetail"); }
+            get { return IExecuteWithSignature<int>("getDetail", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/UIEvent.html#getView()"/> 
         /// </summary>
         public Org.W3c.Dom.Views.AbstractView View
         {
-            get { return IExecute<Org.W3c.Dom.Views.AbstractView>("getView"); }
+            get { return IExecuteWithSignature<Org.W3c.Dom.Views.AbstractView>("getView", "()Lorg/w3c/dom/views/AbstractView;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/UIEvent.html#initUIEvent(java.lang.String,boolean,boolean,org.w3c.dom.views.AbstractView,int)"/>

@@ -72,7 +72,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.KeyFactory GetInstance(Java.Lang.String arg0)
         {
-            return SExecute<Java.Security.KeyFactory>(LocalBridgeClazz, "getInstance", arg0);
+            return SExecuteWithSignature<Java.Security.KeyFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljava/security/KeyFactory;", arg0);
         }
 
         #endregion
@@ -83,14 +83,14 @@ namespace Java.Security
         /// </summary>
         public Java.Lang.String Algorithm
         {
-            get { return IExecute<Java.Lang.String>("getAlgorithm"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyFactory.html#getProvider()"/> 
         /// </summary>
         public Java.Security.Provider Provider
         {
-            get { return IExecute<Java.Security.Provider>("getProvider"); }
+            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyFactory.html#getKeySpec(java.security.Key,java.lang.Class)"/>
@@ -112,7 +112,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.InvalidKeyException"/>
         public Java.Security.Key TranslateKey(Java.Security.Key arg0)
         {
-            return IExecute<Java.Security.Key>("translateKey", arg0);
+            return IExecuteWithSignature<Java.Security.Key>("translateKey", "(Ljava/security/Key;)Ljava/security/Key;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyFactory.html#generatePrivate(java.security.spec.KeySpec)"/>
@@ -122,7 +122,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.Spec.InvalidKeySpecException"/>
         public Java.Security.PrivateKey GeneratePrivate(Java.Security.Spec.KeySpec arg0)
         {
-            return IExecute<Java.Security.PrivateKey>("generatePrivate", arg0);
+            return IExecuteWithSignature<Java.Security.PrivateKey>("generatePrivate", "(Ljava/security/spec/KeySpec;)Ljava/security/PrivateKey;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyFactory.html#generatePublic(java.security.spec.KeySpec)"/>
@@ -132,7 +132,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.Spec.InvalidKeySpecException"/>
         public Java.Security.PublicKey GeneratePublic(Java.Security.Spec.KeySpec arg0)
         {
-            return IExecute<Java.Security.PublicKey>("generatePublic", arg0);
+            return IExecuteWithSignature<Java.Security.PublicKey>("generatePublic", "(Ljava/security/spec/KeySpec;)Ljava/security/PublicKey;", arg0);
         }
 
         #endregion

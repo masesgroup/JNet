@@ -82,14 +82,14 @@ namespace Java.Awt.Dnd
         /// </summary>
         public static Java.Awt.Dnd.DragSource DefaultDragSource
         {
-            get { return SExecute<Java.Awt.Dnd.DragSource>(LocalBridgeClazz, "getDefaultDragSource"); }
+            get { return SExecuteWithSignature<Java.Awt.Dnd.DragSource>(LocalBridgeClazz, "getDefaultDragSource", "()Ljava/awt/dnd/DragSource;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#getDragThreshold()"/> 
         /// </summary>
         public static int DragThreshold
         {
-            get { return SExecute<int>(LocalBridgeClazz, "getDragThreshold"); }
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getDragThreshold", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#isDragImageSupported()"/>
@@ -98,7 +98,7 @@ namespace Java.Awt.Dnd
         /// <returns><see cref="bool"/></returns>
         public static bool IsDragImageSupported()
         {
-            return SExecute<bool>(LocalBridgeClazz, "isDragImageSupported");
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isDragImageSupported", "()Z");
         }
 
         #endregion
@@ -109,21 +109,21 @@ namespace Java.Awt.Dnd
         /// </summary>
         public Java.Awt.Dnd.DragSourceListener[] DragSourceListeners
         {
-            get { return IExecuteArray<Java.Awt.Dnd.DragSourceListener>("getDragSourceListeners"); }
+            get { return IExecuteWithSignatureArray<Java.Awt.Dnd.DragSourceListener>("getDragSourceListeners", "()[Ljava/awt/dnd/DragSourceListener;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#getDragSourceMotionListeners()"/> 
         /// </summary>
         public Java.Awt.Dnd.DragSourceMotionListener[] DragSourceMotionListeners
         {
-            get { return IExecuteArray<Java.Awt.Dnd.DragSourceMotionListener>("getDragSourceMotionListeners"); }
+            get { return IExecuteWithSignatureArray<Java.Awt.Dnd.DragSourceMotionListener>("getDragSourceMotionListeners", "()[Ljava/awt/dnd/DragSourceMotionListener;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#getFlavorMap()"/> 
         /// </summary>
         public Java.Awt.Datatransfer.FlavorMap FlavorMap
         {
-            get { return IExecute<Java.Awt.Datatransfer.FlavorMap>("getFlavorMap"); }
+            get { return IExecuteWithSignature<Java.Awt.Datatransfer.FlavorMap>("getFlavorMap", "()Ljava/awt/datatransfer/FlavorMap;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#createDragGestureRecognizer(java.lang.Class,java.awt.Component,int,java.awt.dnd.DragGestureListener)"/>
@@ -155,7 +155,7 @@ namespace Java.Awt.Dnd
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceListener"/></param>
         public void AddDragSourceListener(Java.Awt.Dnd.DragSourceListener arg0)
         {
-            IExecute("addDragSourceListener", arg0);
+            IExecuteWithSignature("addDragSourceListener", "(Ljava/awt/dnd/DragSourceListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#addDragSourceMotionListener(java.awt.dnd.DragSourceMotionListener)"/>
@@ -163,7 +163,7 @@ namespace Java.Awt.Dnd
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceMotionListener"/></param>
         public void AddDragSourceMotionListener(Java.Awt.Dnd.DragSourceMotionListener arg0)
         {
-            IExecute("addDragSourceMotionListener", arg0);
+            IExecuteWithSignature("addDragSourceMotionListener", "(Ljava/awt/dnd/DragSourceMotionListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#removeDragSourceListener(java.awt.dnd.DragSourceListener)"/>
@@ -171,7 +171,7 @@ namespace Java.Awt.Dnd
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceListener"/></param>
         public void RemoveDragSourceListener(Java.Awt.Dnd.DragSourceListener arg0)
         {
-            IExecute("removeDragSourceListener", arg0);
+            IExecuteWithSignature("removeDragSourceListener", "(Ljava/awt/dnd/DragSourceListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#removeDragSourceMotionListener(java.awt.dnd.DragSourceMotionListener)"/>
@@ -179,7 +179,7 @@ namespace Java.Awt.Dnd
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceMotionListener"/></param>
         public void RemoveDragSourceMotionListener(Java.Awt.Dnd.DragSourceMotionListener arg0)
         {
-            IExecute("removeDragSourceMotionListener", arg0);
+            IExecuteWithSignature("removeDragSourceMotionListener", "(Ljava/awt/dnd/DragSourceMotionListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#startDrag(java.awt.dnd.DragGestureEvent,java.awt.Cursor,java.awt.datatransfer.Transferable,java.awt.dnd.DragSourceListener,java.awt.datatransfer.FlavorMap)"/>

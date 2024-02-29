@@ -58,14 +58,14 @@ namespace Javax.Print.Attribute
         /// </summary>
         public Java.Util.Locale Locale
         {
-            get { return IExecute<Java.Util.Locale>("getLocale"); }
+            get { return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/TextSyntax.html#getValue()"/> 
         /// </summary>
         public Java.Lang.String Value
         {
-            get { return IExecute<Java.Lang.String>("getValue"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getValue", "()Ljava/lang/String;"); }
         }
 
         #endregion

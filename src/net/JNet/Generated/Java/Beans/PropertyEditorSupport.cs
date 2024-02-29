@@ -58,42 +58,42 @@ namespace Java.Beans
         /// </summary>
         public Java.Lang.String AsText
         {
-            get { return IExecute<Java.Lang.String>("getAsText"); } set { IExecute("setAsText", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getAsText", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAsText", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorSupport.html#getCustomEditor()"/> 
         /// </summary>
         public Java.Awt.Component CustomEditor
         {
-            get { return IExecute<Java.Awt.Component>("getCustomEditor"); }
+            get { return IExecuteWithSignature<Java.Awt.Component>("getCustomEditor", "()Ljava/awt/Component;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorSupport.html#getJavaInitializationString()"/> 
         /// </summary>
         public Java.Lang.String JavaInitializationString
         {
-            get { return IExecute<Java.Lang.String>("getJavaInitializationString"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getJavaInitializationString", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorSupport.html#getSource()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorSupport.html#setSource(java.lang.Object)"/>
         /// </summary>
         public object Source
         {
-            get { return IExecute("getSource"); } set { IExecute("setSource", value); }
+            get { return IExecuteWithSignature("getSource", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setSource", "(Ljava/lang/Object;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorSupport.html#getTags()"/> 
         /// </summary>
         public Java.Lang.String[] Tags
         {
-            get { return IExecuteArray<Java.Lang.String>("getTags"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.String>("getTags", "()[Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorSupport.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorSupport.html#setValue(java.lang.Object)"/>
         /// </summary>
         public object Value
         {
-            get { return IExecute("getValue"); } set { IExecute("setValue", value); }
+            get { return IExecuteWithSignature("getValue", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setValue", "(Ljava/lang/Object;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorSupport.html#isPaintable()"/>
@@ -102,7 +102,7 @@ namespace Java.Beans
         /// <returns><see cref="bool"/></returns>
         public bool IsPaintable()
         {
-            return IExecute<bool>("isPaintable");
+            return IExecuteWithSignature<bool>("isPaintable", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorSupport.html#supportsCustomEditor()"/>
@@ -111,7 +111,7 @@ namespace Java.Beans
         /// <returns><see cref="bool"/></returns>
         public bool SupportsCustomEditor()
         {
-            return IExecute<bool>("supportsCustomEditor");
+            return IExecuteWithSignature<bool>("supportsCustomEditor", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorSupport.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
@@ -119,7 +119,7 @@ namespace Java.Beans
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            IExecute("addPropertyChangeListener", arg0);
+            IExecuteWithSignature("addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorSupport.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>
@@ -127,14 +127,14 @@ namespace Java.Beans
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            IExecute("removePropertyChangeListener", arg0);
+            IExecuteWithSignature("removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorSupport.html#firePropertyChange()"/>
         /// </summary>
         public void FirePropertyChange()
         {
-            IExecute("firePropertyChange");
+            IExecuteWithSignature("firePropertyChange", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorSupport.html#paintValue(java.awt.Graphics,java.awt.Rectangle)"/>

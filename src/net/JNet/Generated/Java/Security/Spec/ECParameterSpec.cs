@@ -61,28 +61,28 @@ namespace Java.Security.Spec
         /// </summary>
         public int Cofactor
         {
-            get { return IExecute<int>("getCofactor"); }
+            get { return IExecuteWithSignature<int>("getCofactor", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECParameterSpec.html#getCurve()"/> 
         /// </summary>
         public Java.Security.Spec.EllipticCurve Curve
         {
-            get { return IExecute<Java.Security.Spec.EllipticCurve>("getCurve"); }
+            get { return IExecuteWithSignature<Java.Security.Spec.EllipticCurve>("getCurve", "()Ljava/security/spec/EllipticCurve;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECParameterSpec.html#getGenerator()"/> 
         /// </summary>
         public Java.Security.Spec.ECPoint Generator
         {
-            get { return IExecute<Java.Security.Spec.ECPoint>("getGenerator"); }
+            get { return IExecuteWithSignature<Java.Security.Spec.ECPoint>("getGenerator", "()Ljava/security/spec/ECPoint;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECParameterSpec.html#getOrder()"/> 
         /// </summary>
         public Java.Math.BigInteger Order
         {
-            get { return IExecute<Java.Math.BigInteger>("getOrder"); }
+            get { return IExecuteWithSignature<Java.Math.BigInteger>("getOrder", "()Ljava/math/BigInteger;"); }
         }
 
         #endregion

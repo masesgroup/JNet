@@ -100,56 +100,56 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public bool DefaultSelected
         {
-            get { return IExecute<bool>("getDefaultSelected"); } set { IExecute("setDefaultSelected", value); }
+            get { return IExecuteWithSignature<bool>("getDefaultSelected", "()Z"); } set { IExecuteWithSignature("setDefaultSelected", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptionElement.html#getDisabled()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptionElement.html#setDisabled(boolean)"/>
         /// </summary>
         public bool Disabled
         {
-            get { return IExecute<bool>("getDisabled"); } set { IExecute("setDisabled", value); }
+            get { return IExecuteWithSignature<bool>("getDisabled", "()Z"); } set { IExecuteWithSignature("setDisabled", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptionElement.html#getForm()"/> 
         /// </summary>
         public Org.W3c.Dom.Html.HTMLFormElement Form
         {
-            get { return IExecute<Org.W3c.Dom.Html.HTMLFormElement>("getForm"); }
+            get { return IExecuteWithSignature<Org.W3c.Dom.Html.HTMLFormElement>("getForm", "()Lorg/w3c/dom/html/HTMLFormElement;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptionElement.html#getIndex()"/> 
         /// </summary>
         public int Index
         {
-            get { return IExecute<int>("getIndex"); }
+            get { return IExecuteWithSignature<int>("getIndex", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptionElement.html#getLabel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptionElement.html#setLabel(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Label
         {
-            get { return IExecute<Java.Lang.String>("getLabel"); } set { IExecute("setLabel", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getLabel", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setLabel", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptionElement.html#getSelected()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptionElement.html#setSelected(boolean)"/>
         /// </summary>
         public bool Selected
         {
-            get { return IExecute<bool>("getSelected"); } set { IExecute("setSelected", value); }
+            get { return IExecuteWithSignature<bool>("getSelected", "()Z"); } set { IExecuteWithSignature("setSelected", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptionElement.html#getText()"/> 
         /// </summary>
         public Java.Lang.String Text
         {
-            get { return IExecute<Java.Lang.String>("getText"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getText", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptionElement.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptionElement.html#setValue(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Value
         {
-            get { return IExecute<Java.Lang.String>("getValue"); } set { IExecute("setValue", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getValue", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setValue", "(Ljava/lang/String;)V", value); }
         }
 
         #endregion

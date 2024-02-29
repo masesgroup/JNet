@@ -76,7 +76,7 @@ namespace Java.Util.Spi
         /// <returns><see cref="Java.Util.ResourceBundle.Control"/></returns>
         public Java.Util.ResourceBundle.Control GetControl(Java.Lang.String arg0)
         {
-            return IExecute<Java.Util.ResourceBundle.Control>("getControl", arg0);
+            return IExecuteWithSignature<Java.Util.ResourceBundle.Control>("getControl", "(Ljava/lang/String;)Ljava/util/ResourceBundle$Control;", arg0);
         }
 
         #endregion

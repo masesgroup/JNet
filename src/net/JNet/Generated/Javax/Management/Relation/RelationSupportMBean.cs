@@ -82,7 +82,7 @@ namespace Javax.Management.Relation
         /// <returns><see cref="Java.Lang.Boolean"/></returns>
         public Java.Lang.Boolean IsInRelationService()
         {
-            return IExecute<Java.Lang.Boolean>("isInRelationService");
+            return IExecuteWithSignature<Java.Lang.Boolean>("isInRelationService", "()Ljava/lang/Boolean;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html#setRelationServiceManagementFlag(java.lang.Boolean)"/>
@@ -91,7 +91,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void SetRelationServiceManagementFlag(Java.Lang.Boolean arg0)
         {
-            IExecute("setRelationServiceManagementFlag", arg0);
+            IExecuteWithSignature("setRelationServiceManagementFlag", "(Ljava/lang/Boolean;)V", arg0);
         }
 
         #endregion

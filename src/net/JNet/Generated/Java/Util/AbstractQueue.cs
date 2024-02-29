@@ -56,7 +56,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Element()
         {
-            return IExecute("element");
+            return IExecuteWithSignature("element", "()Ljava/lang/Object;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html#remove()"/>
@@ -65,7 +65,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Remove()
         {
-            return IExecute("remove");
+            return IExecuteWithSignature("remove", "()Ljava/lang/Object;");
         }
 
         #endregion
@@ -113,7 +113,7 @@ namespace Java.Util
         /// <returns><typeparamref name="E"/></returns>
         public E Element()
         {
-            return IExecute<E>("element");
+            return IExecuteWithSignature<E>("element", "()Ljava/lang/Object;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html#remove()"/>
@@ -122,7 +122,7 @@ namespace Java.Util
         /// <returns><typeparamref name="E"/></returns>
         public E Remove()
         {
-            return IExecute<E>("remove");
+            return IExecuteWithSignature<E>("remove", "()Ljava/lang/Object;");
         }
 
         #endregion

@@ -72,7 +72,7 @@ namespace Java.Lang.Reflect
         /// </summary>
         public Java.Lang.Reflect.TypeVariable[] TypeParameters
         {
-            get { return IExecuteArray<Java.Lang.Reflect.TypeVariable>("getTypeParameters"); }
+            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.TypeVariable>("getTypeParameters", "()[Ljava/lang/reflect/TypeVariable;"); }
         }
 
         #endregion

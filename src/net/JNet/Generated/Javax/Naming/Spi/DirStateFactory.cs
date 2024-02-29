@@ -126,14 +126,14 @@ namespace Javax.Naming.Spi
             /// </summary>
             public Javax.Naming.Directory.Attributes Attributes
             {
-                get { return IExecute<Javax.Naming.Directory.Attributes>("getAttributes"); }
+                get { return IExecuteWithSignature<Javax.Naming.Directory.Attributes>("getAttributes", "()Ljavax/naming/directory/Attributes;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirStateFactory.Result.html#getObject()"/> 
             /// </summary>
             public object Object
             {
-                get { return IExecute("getObject"); }
+                get { return IExecuteWithSignature("getObject", "()Ljava/lang/Object;"); }
             }
 
             #endregion

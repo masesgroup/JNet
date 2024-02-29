@@ -132,28 +132,28 @@ namespace Javax.Swing.Text.Html
         /// </summary>
         public Javax.Accessibility.AccessibleContext AccessibleContext
         {
-            get { return IExecute<Javax.Accessibility.AccessibleContext>("getAccessibleContext"); }
+            get { return IExecuteWithSignature<Javax.Accessibility.AccessibleContext>("getAccessibleContext", "()Ljavax/accessibility/AccessibleContext;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#getDefaultCursor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#setDefaultCursor(java.awt.Cursor)"/>
         /// </summary>
         public Java.Awt.Cursor DefaultCursor
         {
-            get { return IExecute<Java.Awt.Cursor>("getDefaultCursor"); } set { IExecute("setDefaultCursor", value); }
+            get { return IExecuteWithSignature<Java.Awt.Cursor>("getDefaultCursor", "()Ljava/awt/Cursor;"); } set { IExecuteWithSignature("setDefaultCursor", "(Ljava/awt/Cursor;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#getLinkCursor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#setLinkCursor(java.awt.Cursor)"/>
         /// </summary>
         public Java.Awt.Cursor LinkCursor
         {
-            get { return IExecute<Java.Awt.Cursor>("getLinkCursor"); } set { IExecute("setLinkCursor", value); }
+            get { return IExecuteWithSignature<Java.Awt.Cursor>("getLinkCursor", "()Ljava/awt/Cursor;"); } set { IExecuteWithSignature("setLinkCursor", "(Ljava/awt/Cursor;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#getStyleSheet()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#setStyleSheet(javax.swing.text.html.StyleSheet)"/>
         /// </summary>
         public Javax.Swing.Text.Html.StyleSheet StyleSheet
         {
-            get { return IExecute<Javax.Swing.Text.Html.StyleSheet>("getStyleSheet"); } set { IExecute("setStyleSheet", value); }
+            get { return IExecuteWithSignature<Javax.Swing.Text.Html.StyleSheet>("getStyleSheet", "()Ljavax/swing/text/html/StyleSheet;"); } set { IExecuteWithSignature("setStyleSheet", "(Ljavax/swing/text/html/StyleSheet;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#isAutoFormSubmission()"/>
@@ -162,7 +162,7 @@ namespace Javax.Swing.Text.Html
         /// <returns><see cref="bool"/></returns>
         public bool IsAutoFormSubmission()
         {
-            return IExecute<bool>("isAutoFormSubmission");
+            return IExecuteWithSignature<bool>("isAutoFormSubmission", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#insertHTML(javax.swing.text.html.HTMLDocument,int,java.lang.String,int,int,javax.swing.text.html.HTML.Tag)"/>
@@ -185,7 +185,7 @@ namespace Javax.Swing.Text.Html
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetAutoFormSubmission(bool arg0)
         {
-            IExecute("setAutoFormSubmission", arg0);
+            IExecuteWithSignature("setAutoFormSubmission", "(Z)V", arg0);
         }
 
         #endregion
@@ -218,7 +218,7 @@ namespace Javax.Swing.Text.Html
             /// <returns><see cref="Javax.Swing.Text.View"/></returns>
             public Javax.Swing.Text.View Create(Javax.Swing.Text.Element arg0)
             {
-                return IExecute<Javax.Swing.Text.View>("create", arg0);
+                return IExecuteWithSignature<Javax.Swing.Text.View>("create", "(Ljavax/swing/text/Element;)Ljavax/swing/text/View;", arg0);
             }
 
             #endregion
@@ -400,7 +400,7 @@ namespace Javax.Swing.Text.Html
             /// <exception cref="Javax.Swing.Text.BadLocationException"/>
             public void Flush()
             {
-                IExecute("flush");
+                IExecuteWithSignature("flush", "()V");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.ParserCallback.html#handleComment(char[],int)"/>
@@ -417,7 +417,7 @@ namespace Javax.Swing.Text.Html
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             public void HandleEndOfLineString(Java.Lang.String arg0)
             {
-                IExecute("handleEndOfLineString", arg0);
+                IExecuteWithSignature("handleEndOfLineString", "(Ljava/lang/String;)V", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.ParserCallback.html#handleEndTag(javax.swing.text.html.HTML.Tag,int)"/>

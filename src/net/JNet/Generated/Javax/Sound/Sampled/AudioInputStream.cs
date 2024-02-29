@@ -68,14 +68,14 @@ namespace Javax.Sound.Sampled
         /// </summary>
         public Javax.Sound.Sampled.AudioFormat Format
         {
-            get { return IExecute<Javax.Sound.Sampled.AudioFormat>("getFormat"); }
+            get { return IExecuteWithSignature<Javax.Sound.Sampled.AudioFormat>("getFormat", "()Ljavax/sound/sampled/AudioFormat;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioInputStream.html#getFrameLength()"/> 
         /// </summary>
         public long FrameLength
         {
-            get { return IExecute<long>("getFrameLength"); }
+            get { return IExecuteWithSignature<long>("getFrameLength", "()J"); }
         }
 
         #endregion

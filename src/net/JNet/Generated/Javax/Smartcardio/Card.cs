@@ -50,21 +50,21 @@ namespace Javax.Smartcardio
         /// </summary>
         public Javax.Smartcardio.ATR ATR
         {
-            get { return IExecute<Javax.Smartcardio.ATR>("getATR"); }
+            get { return IExecuteWithSignature<Javax.Smartcardio.ATR>("getATR", "()Ljavax/smartcardio/ATR;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#getBasicChannel()"/> 
         /// </summary>
         public Javax.Smartcardio.CardChannel BasicChannel
         {
-            get { return IExecute<Javax.Smartcardio.CardChannel>("getBasicChannel"); }
+            get { return IExecuteWithSignature<Javax.Smartcardio.CardChannel>("getBasicChannel", "()Ljavax/smartcardio/CardChannel;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#getProtocol()"/> 
         /// </summary>
         public Java.Lang.String Protocol
         {
-            get { return IExecute<Java.Lang.String>("getProtocol"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getProtocol", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#transmitControlCommand(int,byte[])"/>
@@ -85,7 +85,7 @@ namespace Javax.Smartcardio
         /// <exception cref="Javax.Smartcardio.CardException"/>
         public Javax.Smartcardio.CardChannel OpenLogicalChannel()
         {
-            return IExecute<Javax.Smartcardio.CardChannel>("openLogicalChannel");
+            return IExecuteWithSignature<Javax.Smartcardio.CardChannel>("openLogicalChannel", "()Ljavax/smartcardio/CardChannel;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#beginExclusive()"/>
@@ -94,7 +94,7 @@ namespace Javax.Smartcardio
         /// <exception cref="Javax.Smartcardio.CardException"/>
         public void BeginExclusive()
         {
-            IExecute("beginExclusive");
+            IExecuteWithSignature("beginExclusive", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#disconnect(boolean)"/>
@@ -103,7 +103,7 @@ namespace Javax.Smartcardio
         /// <exception cref="Javax.Smartcardio.CardException"/>
         public void Disconnect(bool arg0)
         {
-            IExecute("disconnect", arg0);
+            IExecuteWithSignature("disconnect", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#endExclusive()"/>
@@ -112,7 +112,7 @@ namespace Javax.Smartcardio
         /// <exception cref="Javax.Smartcardio.CardException"/>
         public void EndExclusive()
         {
-            IExecute("endExclusive");
+            IExecuteWithSignature("endExclusive", "()V");
         }
 
         #endregion

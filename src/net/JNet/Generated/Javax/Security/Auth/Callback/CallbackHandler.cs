@@ -78,7 +78,7 @@ namespace Javax.Security.Auth.Callback
         /// <exception cref="Javax.Security.Auth.Callback.UnsupportedCallbackException"/>
         public void Handle(Javax.Security.Auth.Callback.Callback[] arg0)
         {
-            IExecute("handle", new object[] { arg0 });
+            IExecuteWithSignature("handle", "([Ljavax/security/auth/callback/Callback;)V", new object[] { arg0 });
         }
 
         #endregion

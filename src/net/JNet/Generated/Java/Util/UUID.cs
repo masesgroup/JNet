@@ -65,7 +65,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.UUID"/></returns>
         public static Java.Util.UUID FromString(Java.Lang.String arg0)
         {
-            return SExecute<Java.Util.UUID>(LocalBridgeClazz, "fromString", arg0);
+            return SExecuteWithSignature<Java.Util.UUID>(LocalBridgeClazz, "fromString", "(Ljava/lang/String;)Ljava/util/UUID;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#nameUUIDFromBytes(byte[])"/>
@@ -74,7 +74,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.UUID"/></returns>
         public static Java.Util.UUID NameUUIDFromBytes(byte[] arg0)
         {
-            return SExecute<Java.Util.UUID>(LocalBridgeClazz, "nameUUIDFromBytes", new object[] { arg0 });
+            return SExecuteWithSignature<Java.Util.UUID>(LocalBridgeClazz, "nameUUIDFromBytes", "([B)Ljava/util/UUID;", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#randomUUID()"/>
@@ -83,7 +83,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.UUID"/></returns>
         public static Java.Util.UUID RandomUUID()
         {
-            return SExecute<Java.Util.UUID>(LocalBridgeClazz, "randomUUID");
+            return SExecuteWithSignature<Java.Util.UUID>(LocalBridgeClazz, "randomUUID", "()Ljava/util/UUID;");
         }
 
         #endregion
@@ -94,14 +94,14 @@ namespace Java.Util
         /// </summary>
         public long LeastSignificantBits
         {
-            get { return IExecute<long>("getLeastSignificantBits"); }
+            get { return IExecuteWithSignature<long>("getLeastSignificantBits", "()J"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#getMostSignificantBits()"/> 
         /// </summary>
         public long MostSignificantBits
         {
-            get { return IExecute<long>("getMostSignificantBits"); }
+            get { return IExecuteWithSignature<long>("getMostSignificantBits", "()J"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#clockSequence()"/>
@@ -110,7 +110,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int ClockSequence()
         {
-            return IExecute<int>("clockSequence");
+            return IExecuteWithSignature<int>("clockSequence", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#compareTo(java.lang.Object)"/>
@@ -119,7 +119,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecute<int>("compareTo", arg0);
+            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#compareTo(java.util.UUID)"/>
@@ -128,7 +128,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Java.Util.UUID arg0)
         {
-            return IExecute<int>("compareTo", arg0);
+            return IExecuteWithSignature<int>("compareTo", "(Ljava/util/UUID;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#variant()"/>
@@ -137,7 +137,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int Variant()
         {
-            return IExecute<int>("variant");
+            return IExecuteWithSignature<int>("variant", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#version()"/>
@@ -146,7 +146,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int Version()
         {
-            return IExecute<int>("version");
+            return IExecuteWithSignature<int>("version", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#node()"/>
@@ -155,7 +155,7 @@ namespace Java.Util
         /// <returns><see cref="long"/></returns>
         public long Node()
         {
-            return IExecute<long>("node");
+            return IExecuteWithSignature<long>("node", "()J");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#timestamp()"/>
@@ -164,7 +164,7 @@ namespace Java.Util
         /// <returns><see cref="long"/></returns>
         public long Timestamp()
         {
-            return IExecute<long>("timestamp");
+            return IExecuteWithSignature<long>("timestamp", "()J");
         }
 
         #endregion

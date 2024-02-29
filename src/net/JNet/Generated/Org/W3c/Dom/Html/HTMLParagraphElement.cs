@@ -72,7 +72,7 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Java.Lang.String Align
         {
-            get { return IExecute<Java.Lang.String>("getAlign"); } set { IExecute("setAlign", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getAlign", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAlign", "(Ljava/lang/String;)V", value); }
         }
 
         #endregion

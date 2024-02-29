@@ -104,7 +104,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="bool"/></returns>
         public bool TryLock()
         {
-            return IExecute<bool>("tryLock");
+            return IExecuteWithSignature<bool>("tryLock", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Lock.html#tryLock(long,java.util.concurrent.TimeUnit)"/>
@@ -124,14 +124,14 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="Java.Util.Concurrent.Locks.Condition"/></returns>
         public Java.Util.Concurrent.Locks.Condition NewCondition()
         {
-            return IExecute<Java.Util.Concurrent.Locks.Condition>("newCondition");
+            return IExecuteWithSignature<Java.Util.Concurrent.Locks.Condition>("newCondition", "()Ljava/util/concurrent/locks/Condition;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Lock.html#lock()"/>
         /// </summary>
         public void LockMethod()
         {
-            IExecute("lock");
+            IExecuteWithSignature("lock", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Lock.html#lockInterruptibly()"/>
@@ -140,14 +140,14 @@ namespace Java.Util.Concurrent.Locks
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void LockInterruptibly()
         {
-            IExecute("lockInterruptibly");
+            IExecuteWithSignature("lockInterruptibly", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Lock.html#unlock()"/>
         /// </summary>
         public void Unlock()
         {
-            IExecute("unlock");
+            IExecuteWithSignature("unlock", "()V");
         }
 
         #endregion

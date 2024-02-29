@@ -53,7 +53,7 @@ namespace Java.Nio.File.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.String ProbeContentType(Java.Nio.File.Path arg0)
         {
-            return IExecute<Java.Lang.String>("probeContentType", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("probeContentType", "(Ljava/nio/file/Path;)Ljava/lang/String;", arg0);
         }
 
         #endregion

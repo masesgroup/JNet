@@ -72,21 +72,21 @@ namespace Javax.Xml.Transform.Stax
         /// </summary>
         public Java.Lang.String SystemId
         {
-            get { return IExecute<Java.Lang.String>("getSystemId"); } set { IExecute("setSystemId", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXResult.html#getXMLEventWriter()"/> 
         /// </summary>
         public Javax.Xml.Stream.XMLEventWriter XMLEventWriter
         {
-            get { return IExecute<Javax.Xml.Stream.XMLEventWriter>("getXMLEventWriter"); }
+            get { return IExecuteWithSignature<Javax.Xml.Stream.XMLEventWriter>("getXMLEventWriter", "()Ljavax/xml/stream/XMLEventWriter;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXResult.html#getXMLStreamWriter()"/> 
         /// </summary>
         public Javax.Xml.Stream.XMLStreamWriter XMLStreamWriter
         {
-            get { return IExecute<Javax.Xml.Stream.XMLStreamWriter>("getXMLStreamWriter"); }
+            get { return IExecuteWithSignature<Javax.Xml.Stream.XMLStreamWriter>("getXMLStreamWriter", "()Ljavax/xml/stream/XMLStreamWriter;"); }
         }
 
         #endregion

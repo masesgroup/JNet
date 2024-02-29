@@ -145,7 +145,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.DoubleUnaryOperator AndThenDefault(Java.Util.Function.DoubleUnaryOperator arg0)
         {
-            return IExecute<Java.Util.Function.DoubleUnaryOperator>("andThenDefault", arg0);
+            return IExecuteWithSignature<Java.Util.Function.DoubleUnaryOperator>("andThenDefault", "(Ljava/util/function/DoubleUnaryOperator;)Ljava/util/function/DoubleUnaryOperator;", arg0);
         }
 
         /// <summary>
@@ -179,7 +179,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.DoubleUnaryOperator ComposeDefault(Java.Util.Function.DoubleUnaryOperator arg0)
         {
-            return IExecute<Java.Util.Function.DoubleUnaryOperator>("composeDefault", arg0);
+            return IExecuteWithSignature<Java.Util.Function.DoubleUnaryOperator>("composeDefault", "(Ljava/util/function/DoubleUnaryOperator;)Ljava/util/function/DoubleUnaryOperator;", arg0);
         }
 
         /// <summary>

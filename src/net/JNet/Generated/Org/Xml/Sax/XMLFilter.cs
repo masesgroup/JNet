@@ -72,7 +72,7 @@ namespace Org.Xml.Sax
         /// </summary>
         public Org.Xml.Sax.XMLReader Parent
         {
-            get { return IExecute<Org.Xml.Sax.XMLReader>("getParent"); } set { IExecute("setParent", value); }
+            get { return IExecuteWithSignature<Org.Xml.Sax.XMLReader>("getParent", "()Lorg/xml/sax/XMLReader;"); } set { IExecuteWithSignature("setParent", "(Lorg/xml/sax/XMLReader;)V", value); }
         }
 
         #endregion

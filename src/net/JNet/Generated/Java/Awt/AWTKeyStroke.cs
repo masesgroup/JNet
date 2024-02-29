@@ -48,7 +48,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.AWTKeyStroke"/></returns>
         public static Java.Awt.AWTKeyStroke GetAWTKeyStroke(char arg0)
         {
-            return SExecute<Java.Awt.AWTKeyStroke>(LocalBridgeClazz, "getAWTKeyStroke", arg0);
+            return SExecuteWithSignature<Java.Awt.AWTKeyStroke>(LocalBridgeClazz, "getAWTKeyStroke", "(C)Ljava/awt/AWTKeyStroke;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTKeyStroke.html#getAWTKeyStroke(int,int,boolean)"/>
@@ -88,7 +88,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.AWTKeyStroke"/></returns>
         public static Java.Awt.AWTKeyStroke GetAWTKeyStroke(Java.Lang.String arg0)
         {
-            return SExecute<Java.Awt.AWTKeyStroke>(LocalBridgeClazz, "getAWTKeyStroke", arg0);
+            return SExecuteWithSignature<Java.Awt.AWTKeyStroke>(LocalBridgeClazz, "getAWTKeyStroke", "(Ljava/lang/String;)Ljava/awt/AWTKeyStroke;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTKeyStroke.html#getAWTKeyStrokeForEvent(java.awt.event.KeyEvent)"/>
@@ -97,7 +97,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.AWTKeyStroke"/></returns>
         public static Java.Awt.AWTKeyStroke GetAWTKeyStrokeForEvent(Java.Awt.EventNs.KeyEvent arg0)
         {
-            return SExecute<Java.Awt.AWTKeyStroke>(LocalBridgeClazz, "getAWTKeyStrokeForEvent", arg0);
+            return SExecuteWithSignature<Java.Awt.AWTKeyStroke>(LocalBridgeClazz, "getAWTKeyStrokeForEvent", "(Ljava/awt/event/KeyEvent;)Ljava/awt/AWTKeyStroke;", arg0);
         }
 
         #endregion
@@ -108,28 +108,28 @@ namespace Java.Awt
         /// </summary>
         public char KeyChar
         {
-            get { return IExecute<char>("getKeyChar"); }
+            get { return IExecuteWithSignature<char>("getKeyChar", "()C"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTKeyStroke.html#getKeyCode()"/> 
         /// </summary>
         public int KeyCode
         {
-            get { return IExecute<int>("getKeyCode"); }
+            get { return IExecuteWithSignature<int>("getKeyCode", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTKeyStroke.html#getKeyEventType()"/> 
         /// </summary>
         public int KeyEventType
         {
-            get { return IExecute<int>("getKeyEventType"); }
+            get { return IExecuteWithSignature<int>("getKeyEventType", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTKeyStroke.html#getModifiers()"/> 
         /// </summary>
         public int Modifiers
         {
-            get { return IExecute<int>("getModifiers"); }
+            get { return IExecuteWithSignature<int>("getModifiers", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTKeyStroke.html#isOnKeyRelease()"/>
@@ -138,7 +138,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsOnKeyRelease()
         {
-            return IExecute<bool>("isOnKeyRelease");
+            return IExecuteWithSignature<bool>("isOnKeyRelease", "()Z");
         }
 
         #endregion

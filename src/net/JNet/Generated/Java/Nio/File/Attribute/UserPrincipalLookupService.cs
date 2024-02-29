@@ -53,7 +53,7 @@ namespace Java.Nio.File.Attribute
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.Attribute.GroupPrincipal LookupPrincipalByGroupName(Java.Lang.String arg0)
         {
-            return IExecute<Java.Nio.File.Attribute.GroupPrincipal>("lookupPrincipalByGroupName", arg0);
+            return IExecuteWithSignature<Java.Nio.File.Attribute.GroupPrincipal>("lookupPrincipalByGroupName", "(Ljava/lang/String;)Ljava/nio/file/attribute/GroupPrincipal;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/UserPrincipalLookupService.html#lookupPrincipalByName(java.lang.String)"/>
@@ -63,7 +63,7 @@ namespace Java.Nio.File.Attribute
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.Attribute.UserPrincipal LookupPrincipalByName(Java.Lang.String arg0)
         {
-            return IExecute<Java.Nio.File.Attribute.UserPrincipal>("lookupPrincipalByName", arg0);
+            return IExecuteWithSignature<Java.Nio.File.Attribute.UserPrincipal>("lookupPrincipalByName", "(Ljava/lang/String;)Ljava/nio/file/attribute/UserPrincipal;", arg0);
         }
 
         #endregion

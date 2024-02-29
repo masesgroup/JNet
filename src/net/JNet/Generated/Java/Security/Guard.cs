@@ -76,7 +76,7 @@ namespace Java.Security
         /// <exception cref="Java.Lang.SecurityException"/>
         public void CheckGuard(object arg0)
         {
-            IExecute("checkGuard", arg0);
+            IExecuteWithSignature("checkGuard", "(Ljava/lang/Object;)V", arg0);
         }
 
         #endregion

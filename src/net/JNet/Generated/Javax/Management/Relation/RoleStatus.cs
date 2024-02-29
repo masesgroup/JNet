@@ -90,7 +90,7 @@ namespace Javax.Management.Relation
         /// <returns><see cref="bool"/></returns>
         public static bool IsRoleStatus(int arg0)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isRoleStatus", arg0);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isRoleStatus", "(I)Z", arg0);
         }
 
         #endregion

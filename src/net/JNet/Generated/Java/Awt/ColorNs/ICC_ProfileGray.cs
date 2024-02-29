@@ -50,21 +50,21 @@ namespace Java.Awt.ColorNs
         /// </summary>
         public float Gamma
         {
-            get { return IExecute<float>("getGamma"); }
+            get { return IExecuteWithSignature<float>("getGamma", "()F"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_ProfileGray.html#getMediaWhitePoint()"/> 
         /// </summary>
         public float[] MediaWhitePoint
         {
-            get { return IExecuteArray<float>("getMediaWhitePoint"); }
+            get { return IExecuteWithSignatureArray<float>("getMediaWhitePoint", "()[F"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_ProfileGray.html#getTRC()"/> 
         /// </summary>
         public short[] TRC
         {
-            get { return IExecuteArray<short>("getTRC"); }
+            get { return IExecuteWithSignatureArray<short>("getTRC", "()[S"); }
         }
 
         #endregion

@@ -78,7 +78,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.InputMap"/></returns>
         public static Javax.Swing.InputMap MakeInputMap(object[] arg0)
         {
-            return SExecute<Javax.Swing.InputMap>(LocalBridgeClazz, "makeInputMap", new object[] { arg0 });
+            return SExecuteWithSignature<Javax.Swing.InputMap>(LocalBridgeClazz, "makeInputMap", "([Ljava/lang/Object;)Ljavax/swing/InputMap;", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#makeKeyBindings(java.lang.Object[])"/>
@@ -87,7 +87,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Text.JTextComponent.KeyBinding"/></returns>
         public static Javax.Swing.Text.JTextComponent.KeyBinding[] MakeKeyBindings(object[] arg0)
         {
-            return SExecuteArray<Javax.Swing.Text.JTextComponent.KeyBinding>(LocalBridgeClazz, "makeKeyBindings", new object[] { arg0 });
+            return SExecuteWithSignatureArray<Javax.Swing.Text.JTextComponent.KeyBinding>(LocalBridgeClazz, "makeKeyBindings", "([Ljava/lang/Object;)[Ljavax/swing/text/JTextComponent$KeyBinding;", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#installBorder(javax.swing.JComponent,java.lang.String)"/>
@@ -144,7 +144,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
         public static void UninstallBorder(Javax.Swing.JComponent arg0)
         {
-            SExecute(LocalBridgeClazz, "uninstallBorder", arg0);
+            SExecuteWithSignature(LocalBridgeClazz, "uninstallBorder", "(Ljavax/swing/JComponent;)V", arg0);
         }
 
         #endregion
@@ -155,42 +155,42 @@ namespace Javax.Swing
         /// </summary>
         public Javax.Swing.UIDefaults Defaults
         {
-            get { return IExecute<Javax.Swing.UIDefaults>("getDefaults"); }
+            get { return IExecuteWithSignature<Javax.Swing.UIDefaults>("getDefaults", "()Ljavax/swing/UIDefaults;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#getDescription()"/> 
         /// </summary>
         public Java.Lang.String Description
         {
-            get { return IExecute<Java.Lang.String>("getDescription"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#getID()"/> 
         /// </summary>
         public Java.Lang.String ID
         {
-            get { return IExecute<Java.Lang.String>("getID"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getID", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#getLayoutStyle()"/> 
         /// </summary>
         public Javax.Swing.LayoutStyle LayoutStyle
         {
-            get { return IExecute<Javax.Swing.LayoutStyle>("getLayoutStyle"); }
+            get { return IExecuteWithSignature<Javax.Swing.LayoutStyle>("getLayoutStyle", "()Ljavax/swing/LayoutStyle;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#getSupportsWindowDecorations()"/> 
         /// </summary>
         public bool SupportsWindowDecorations
         {
-            get { return IExecute<bool>("getSupportsWindowDecorations"); }
+            get { return IExecuteWithSignature<bool>("getSupportsWindowDecorations", "()Z"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#isNativeLookAndFeel()"/>
@@ -199,7 +199,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsNativeLookAndFeel()
         {
-            return IExecute<bool>("isNativeLookAndFeel");
+            return IExecuteWithSignature<bool>("isNativeLookAndFeel", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#isSupportedLookAndFeel()"/>
@@ -208,7 +208,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsSupportedLookAndFeel()
         {
-            return IExecute<bool>("isSupportedLookAndFeel");
+            return IExecuteWithSignature<bool>("isSupportedLookAndFeel", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#getDisabledIcon(javax.swing.JComponent,javax.swing.Icon)"/>
@@ -235,7 +235,7 @@ namespace Javax.Swing
         /// </summary>
         public void Initialize()
         {
-            IExecute("initialize");
+            IExecuteWithSignature("initialize", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#provideErrorFeedback(java.awt.Component)"/>
@@ -243,14 +243,14 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         public void ProvideErrorFeedback(Java.Awt.Component arg0)
         {
-            IExecute("provideErrorFeedback", arg0);
+            IExecuteWithSignature("provideErrorFeedback", "(Ljava/awt/Component;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#uninitialize()"/>
         /// </summary>
         public void Uninitialize()
         {
-            IExecute("uninitialize");
+            IExecuteWithSignature("uninitialize", "()V");
         }
 
         #endregion

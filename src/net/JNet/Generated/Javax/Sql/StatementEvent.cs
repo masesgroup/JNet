@@ -69,14 +69,14 @@ namespace Javax.Sql
         /// </summary>
         public Java.Sql.SQLException SQLException
         {
-            get { var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getSQLException"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Sql.SQLException>(obj); }
+            get { var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getSQLException", "()Ljava/sql/SQLException;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Sql.SQLException>(obj); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEvent.html#getStatement()"/> 
         /// </summary>
         public Java.Sql.PreparedStatement Statement
         {
-            get { return IExecute<Java.Sql.PreparedStatement>("getStatement"); }
+            get { return IExecuteWithSignature<Java.Sql.PreparedStatement>("getStatement", "()Ljava/sql/PreparedStatement;"); }
         }
 
         #endregion

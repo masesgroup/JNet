@@ -84,7 +84,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.EnumMap"/></returns>
         public Java.Util.EnumMap Clone()
         {
-            return IExecute<Java.Util.EnumMap>("clone");
+            return IExecuteWithSignature<Java.Util.EnumMap>("clone", "()Ljava/util/EnumMap;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumMap.html#put(java.lang.Enum,java.lang.Object)"/>
@@ -170,7 +170,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.EnumMap"/></returns>
         public Java.Util.EnumMap Clone()
         {
-            return IExecute<Java.Util.EnumMap>("clone");
+            return IExecuteWithSignature<Java.Util.EnumMap>("clone", "()Ljava/util/EnumMap;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumMap.html#put(java.lang.Enum,java.lang.Object)"/>

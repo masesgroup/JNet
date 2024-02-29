@@ -65,14 +65,14 @@ namespace Java.Security.Spec
         /// </summary>
         public Java.Math.BigInteger AffineX
         {
-            get { return IExecute<Java.Math.BigInteger>("getAffineX"); }
+            get { return IExecuteWithSignature<Java.Math.BigInteger>("getAffineX", "()Ljava/math/BigInteger;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECPoint.html#getAffineY()"/> 
         /// </summary>
         public Java.Math.BigInteger AffineY
         {
-            get { return IExecute<Java.Math.BigInteger>("getAffineY"); }
+            get { return IExecuteWithSignature<Java.Math.BigInteger>("getAffineY", "()Ljava/math/BigInteger;"); }
         }
 
         #endregion

@@ -58,21 +58,21 @@ namespace Javax.Swing.Text
         /// </summary>
         public Javax.Swing.Action[] Actions
         {
-            get { return IExecuteArray<Javax.Swing.Action>("getActions"); }
+            get { return IExecuteWithSignatureArray<Javax.Swing.Action>("getActions", "()[Ljavax/swing/Action;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/EditorKit.html#getContentType()"/> 
         /// </summary>
         public Java.Lang.String ContentType
         {
-            get { return IExecute<Java.Lang.String>("getContentType"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getContentType", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/EditorKit.html#getViewFactory()"/> 
         /// </summary>
         public Javax.Swing.Text.ViewFactory ViewFactory
         {
-            get { return IExecute<Javax.Swing.Text.ViewFactory>("getViewFactory"); }
+            get { return IExecuteWithSignature<Javax.Swing.Text.ViewFactory>("getViewFactory", "()Ljavax/swing/text/ViewFactory;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/EditorKit.html#createCaret()"/>
@@ -81,7 +81,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.Caret"/></returns>
         public Javax.Swing.Text.Caret CreateCaret()
         {
-            return IExecute<Javax.Swing.Text.Caret>("createCaret");
+            return IExecuteWithSignature<Javax.Swing.Text.Caret>("createCaret", "()Ljavax/swing/text/Caret;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/EditorKit.html#createDefaultDocument()"/>
@@ -90,7 +90,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.Document"/></returns>
         public Javax.Swing.Text.Document CreateDefaultDocument()
         {
-            return IExecute<Javax.Swing.Text.Document>("createDefaultDocument");
+            return IExecuteWithSignature<Javax.Swing.Text.Document>("createDefaultDocument", "()Ljavax/swing/text/Document;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/EditorKit.html#read(java.io.InputStream,javax.swing.text.Document,int)"/>
@@ -148,7 +148,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Javax.Swing.JEditorPane"/></param>
         public void Deinstall(Javax.Swing.JEditorPane arg0)
         {
-            IExecute("deinstall", arg0);
+            IExecuteWithSignature("deinstall", "(Ljavax/swing/JEditorPane;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/EditorKit.html#install(javax.swing.JEditorPane)"/>
@@ -156,7 +156,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Javax.Swing.JEditorPane"/></param>
         public void Install(Javax.Swing.JEditorPane arg0)
         {
-            IExecute("install", arg0);
+            IExecuteWithSignature("install", "(Ljavax/swing/JEditorPane;)V", arg0);
         }
 
         #endregion

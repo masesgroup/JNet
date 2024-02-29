@@ -65,7 +65,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.DatagramChannel Open()
         {
-            return SExecute<Java.Nio.Channels.DatagramChannel>(LocalBridgeClazz, "open");
+            return SExecuteWithSignature<Java.Nio.Channels.DatagramChannel>(LocalBridgeClazz, "open", "()Ljava/nio/channels/DatagramChannel;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/DatagramChannel.html#open(java.net.ProtocolFamily)"/>
@@ -75,7 +75,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.DatagramChannel Open(Java.Net.ProtocolFamily arg0)
         {
-            return SExecute<Java.Nio.Channels.DatagramChannel>(LocalBridgeClazz, "open", arg0);
+            return SExecuteWithSignature<Java.Nio.Channels.DatagramChannel>(LocalBridgeClazz, "open", "(Ljava/net/ProtocolFamily;)Ljava/nio/channels/DatagramChannel;", arg0);
         }
 
         #endregion
@@ -86,14 +86,14 @@ namespace Java.Nio.Channels
         /// </summary>
         public Java.Net.SocketAddress LocalAddress
         {
-            get { return IExecute<Java.Net.SocketAddress>("getLocalAddress"); }
+            get { return IExecuteWithSignature<Java.Net.SocketAddress>("getLocalAddress", "()Ljava/net/SocketAddress;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/DatagramChannel.html#getRemoteAddress()"/> 
         /// </summary>
         public Java.Net.SocketAddress RemoteAddress
         {
-            get { return IExecute<Java.Net.SocketAddress>("getRemoteAddress"); }
+            get { return IExecuteWithSignature<Java.Net.SocketAddress>("getRemoteAddress", "()Ljava/net/SocketAddress;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/DatagramChannel.html#isConnected()"/>
@@ -102,7 +102,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="bool"/></returns>
         public bool IsConnected()
         {
-            return IExecute<bool>("isConnected");
+            return IExecuteWithSignature<bool>("isConnected", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/DatagramChannel.html#read(java.nio.ByteBuffer)"/>
@@ -112,7 +112,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public int Read(Java.Nio.ByteBuffer arg0)
         {
-            return IExecute<int>("read", arg0);
+            return IExecuteWithSignature<int>("read", "(Ljava/nio/ByteBuffer;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/DatagramChannel.html#send(java.nio.ByteBuffer,java.net.SocketAddress)"/>
@@ -133,7 +133,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public int Write(Java.Nio.ByteBuffer arg0)
         {
-            return IExecute<int>("write", arg0);
+            return IExecuteWithSignature<int>("write", "(Ljava/nio/ByteBuffer;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/DatagramChannel.html#socket()"/>
@@ -142,7 +142,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Net.DatagramSocket"/></returns>
         public Java.Net.DatagramSocket Socket()
         {
-            return IExecute<Java.Net.DatagramSocket>("socket");
+            return IExecuteWithSignature<Java.Net.DatagramSocket>("socket", "()Ljava/net/DatagramSocket;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/DatagramChannel.html#receive(java.nio.ByteBuffer)"/>
@@ -152,7 +152,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public Java.Net.SocketAddress Receive(Java.Nio.ByteBuffer arg0)
         {
-            return IExecute<Java.Net.SocketAddress>("receive", arg0);
+            return IExecuteWithSignature<Java.Net.SocketAddress>("receive", "(Ljava/nio/ByteBuffer;)Ljava/net/SocketAddress;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/DatagramChannel.html#connect(java.net.SocketAddress)"/>
@@ -162,7 +162,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.DatagramChannel Connect(Java.Net.SocketAddress arg0)
         {
-            return IExecute<Java.Nio.Channels.DatagramChannel>("connect", arg0);
+            return IExecuteWithSignature<Java.Nio.Channels.DatagramChannel>("connect", "(Ljava/net/SocketAddress;)Ljava/nio/channels/DatagramChannel;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/DatagramChannel.html#disconnect()"/>
@@ -172,7 +172,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.DatagramChannel Disconnect()
         {
-            return IExecute<Java.Nio.Channels.DatagramChannel>("disconnect");
+            return IExecuteWithSignature<Java.Nio.Channels.DatagramChannel>("disconnect", "()Ljava/nio/channels/DatagramChannel;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/DatagramChannel.html#read(java.nio.ByteBuffer[],int,int)"/>
@@ -206,7 +206,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public long Read(Java.Nio.ByteBuffer[] arg0)
         {
-            return IExecute<long>("read", new object[] { arg0 });
+            return IExecuteWithSignature<long>("read", "([Ljava/nio/ByteBuffer;)J", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/DatagramChannel.html#write(java.nio.ByteBuffer[])"/>
@@ -216,7 +216,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public long Write(Java.Nio.ByteBuffer[] arg0)
         {
-            return IExecute<long>("write", new object[] { arg0 });
+            return IExecuteWithSignature<long>("write", "([Ljava/nio/ByteBuffer;)J", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/DatagramChannel.html#bind(java.net.SocketAddress)"/>
@@ -226,7 +226,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.NetworkChannel Bind(Java.Net.SocketAddress arg0)
         {
-            return IExecute<Java.Nio.Channels.NetworkChannel>("bind", arg0);
+            return IExecuteWithSignature<Java.Nio.Channels.NetworkChannel>("bind", "(Ljava/net/SocketAddress;)Ljava/nio/channels/NetworkChannel;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/DatagramChannel.html#setOption(java.net.SocketOption,java.lang.Object)"/>

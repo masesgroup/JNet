@@ -76,7 +76,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public static Java.Time.Duration From(Java.Time.Temporal.TemporalAmount arg0)
         {
-            return SExecute<Java.Time.Duration>(LocalBridgeClazz, "from", arg0);
+            return SExecuteWithSignature<Java.Time.Duration>(LocalBridgeClazz, "from", "(Ljava/time/temporal/TemporalAmount;)Ljava/time/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#of(long,java.time.temporal.TemporalUnit)"/>
@@ -95,7 +95,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public static Java.Time.Duration OfDays(long arg0)
         {
-            return SExecute<Java.Time.Duration>(LocalBridgeClazz, "ofDays", arg0);
+            return SExecuteWithSignature<Java.Time.Duration>(LocalBridgeClazz, "ofDays", "(J)Ljava/time/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#ofHours(long)"/>
@@ -104,7 +104,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public static Java.Time.Duration OfHours(long arg0)
         {
-            return SExecute<Java.Time.Duration>(LocalBridgeClazz, "ofHours", arg0);
+            return SExecuteWithSignature<Java.Time.Duration>(LocalBridgeClazz, "ofHours", "(J)Ljava/time/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#ofMillis(long)"/>
@@ -113,7 +113,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public static Java.Time.Duration OfMillis(long arg0)
         {
-            return SExecute<Java.Time.Duration>(LocalBridgeClazz, "ofMillis", arg0);
+            return SExecuteWithSignature<Java.Time.Duration>(LocalBridgeClazz, "ofMillis", "(J)Ljava/time/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#ofMinutes(long)"/>
@@ -122,7 +122,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public static Java.Time.Duration OfMinutes(long arg0)
         {
-            return SExecute<Java.Time.Duration>(LocalBridgeClazz, "ofMinutes", arg0);
+            return SExecuteWithSignature<Java.Time.Duration>(LocalBridgeClazz, "ofMinutes", "(J)Ljava/time/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#ofNanos(long)"/>
@@ -131,7 +131,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public static Java.Time.Duration OfNanos(long arg0)
         {
-            return SExecute<Java.Time.Duration>(LocalBridgeClazz, "ofNanos", arg0);
+            return SExecuteWithSignature<Java.Time.Duration>(LocalBridgeClazz, "ofNanos", "(J)Ljava/time/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#ofSeconds(long,long)"/>
@@ -150,7 +150,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public static Java.Time.Duration OfSeconds(long arg0)
         {
-            return SExecute<Java.Time.Duration>(LocalBridgeClazz, "ofSeconds", arg0);
+            return SExecuteWithSignature<Java.Time.Duration>(LocalBridgeClazz, "ofSeconds", "(J)Ljava/time/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#parse(java.lang.CharSequence)"/>
@@ -159,7 +159,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public static Java.Time.Duration Parse(Java.Lang.CharSequence arg0)
         {
-            return SExecute<Java.Time.Duration>(LocalBridgeClazz, "parse", arg0);
+            return SExecuteWithSignature<Java.Time.Duration>(LocalBridgeClazz, "parse", "(Ljava/lang/CharSequence;)Ljava/time/Duration;", arg0);
         }
 
         #endregion
@@ -170,21 +170,21 @@ namespace Java.Time
         /// </summary>
         public int Nano
         {
-            get { return IExecute<int>("getNano"); }
+            get { return IExecuteWithSignature<int>("getNano", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#getSeconds()"/> 
         /// </summary>
         public long Seconds
         {
-            get { return IExecute<long>("getSeconds"); }
+            get { return IExecuteWithSignature<long>("getSeconds", "()J"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#getUnits()"/> 
         /// </summary>
         public Java.Util.List<Java.Time.Temporal.TemporalUnit> Units
         {
-            get { return IExecute<Java.Util.List<Java.Time.Temporal.TemporalUnit>>("getUnits"); }
+            get { return IExecuteWithSignature<Java.Util.List<Java.Time.Temporal.TemporalUnit>>("getUnits", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#isNegative()"/>
@@ -193,7 +193,7 @@ namespace Java.Time
         /// <returns><see cref="bool"/></returns>
         public bool IsNegative()
         {
-            return IExecute<bool>("isNegative");
+            return IExecuteWithSignature<bool>("isNegative", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#isZero()"/>
@@ -202,7 +202,7 @@ namespace Java.Time
         /// <returns><see cref="bool"/></returns>
         public bool IsZero()
         {
-            return IExecute<bool>("isZero");
+            return IExecuteWithSignature<bool>("isZero", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#compareTo(java.lang.Object)"/>
@@ -211,7 +211,7 @@ namespace Java.Time
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecute<int>("compareTo", arg0);
+            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#compareTo(java.time.Duration)"/>
@@ -220,7 +220,7 @@ namespace Java.Time
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Java.Time.Duration arg0)
         {
-            return IExecute<int>("compareTo", arg0);
+            return IExecuteWithSignature<int>("compareTo", "(Ljava/time/Duration;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toHoursPart()"/>
@@ -229,7 +229,7 @@ namespace Java.Time
         /// <returns><see cref="int"/></returns>
         public int ToHoursPart()
         {
-            return IExecute<int>("toHoursPart");
+            return IExecuteWithSignature<int>("toHoursPart", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toMillisPart()"/>
@@ -238,7 +238,7 @@ namespace Java.Time
         /// <returns><see cref="int"/></returns>
         public int ToMillisPart()
         {
-            return IExecute<int>("toMillisPart");
+            return IExecuteWithSignature<int>("toMillisPart", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toMinutesPart()"/>
@@ -247,7 +247,7 @@ namespace Java.Time
         /// <returns><see cref="int"/></returns>
         public int ToMinutesPart()
         {
-            return IExecute<int>("toMinutesPart");
+            return IExecuteWithSignature<int>("toMinutesPart", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toNanosPart()"/>
@@ -256,7 +256,7 @@ namespace Java.Time
         /// <returns><see cref="int"/></returns>
         public int ToNanosPart()
         {
-            return IExecute<int>("toNanosPart");
+            return IExecuteWithSignature<int>("toNanosPart", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toSecondsPart()"/>
@@ -265,7 +265,7 @@ namespace Java.Time
         /// <returns><see cref="int"/></returns>
         public int ToSecondsPart()
         {
-            return IExecute<int>("toSecondsPart");
+            return IExecuteWithSignature<int>("toSecondsPart", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#abs()"/>
@@ -274,7 +274,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public Java.Time.Duration Abs()
         {
-            return IExecute<Java.Time.Duration>("abs");
+            return IExecuteWithSignature<Java.Time.Duration>("abs", "()Ljava/time/Duration;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#dividedBy(long)"/>
@@ -283,7 +283,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public Java.Time.Duration DividedBy(long arg0)
         {
-            return IExecute<Java.Time.Duration>("dividedBy", arg0);
+            return IExecuteWithSignature<Java.Time.Duration>("dividedBy", "(J)Ljava/time/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#minus(java.time.Duration)"/>
@@ -292,7 +292,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public Java.Time.Duration Minus(Java.Time.Duration arg0)
         {
-            return IExecute<Java.Time.Duration>("minus", arg0);
+            return IExecuteWithSignature<Java.Time.Duration>("minus", "(Ljava/time/Duration;)Ljava/time/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#minus(long,java.time.temporal.TemporalUnit)"/>
@@ -311,7 +311,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public Java.Time.Duration MinusDays(long arg0)
         {
-            return IExecute<Java.Time.Duration>("minusDays", arg0);
+            return IExecuteWithSignature<Java.Time.Duration>("minusDays", "(J)Ljava/time/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#minusHours(long)"/>
@@ -320,7 +320,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public Java.Time.Duration MinusHours(long arg0)
         {
-            return IExecute<Java.Time.Duration>("minusHours", arg0);
+            return IExecuteWithSignature<Java.Time.Duration>("minusHours", "(J)Ljava/time/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#minusMillis(long)"/>
@@ -329,7 +329,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public Java.Time.Duration MinusMillis(long arg0)
         {
-            return IExecute<Java.Time.Duration>("minusMillis", arg0);
+            return IExecuteWithSignature<Java.Time.Duration>("minusMillis", "(J)Ljava/time/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#minusMinutes(long)"/>
@@ -338,7 +338,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public Java.Time.Duration MinusMinutes(long arg0)
         {
-            return IExecute<Java.Time.Duration>("minusMinutes", arg0);
+            return IExecuteWithSignature<Java.Time.Duration>("minusMinutes", "(J)Ljava/time/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#minusNanos(long)"/>
@@ -347,7 +347,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public Java.Time.Duration MinusNanos(long arg0)
         {
-            return IExecute<Java.Time.Duration>("minusNanos", arg0);
+            return IExecuteWithSignature<Java.Time.Duration>("minusNanos", "(J)Ljava/time/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#minusSeconds(long)"/>
@@ -356,7 +356,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public Java.Time.Duration MinusSeconds(long arg0)
         {
-            return IExecute<Java.Time.Duration>("minusSeconds", arg0);
+            return IExecuteWithSignature<Java.Time.Duration>("minusSeconds", "(J)Ljava/time/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#multipliedBy(long)"/>
@@ -365,7 +365,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public Java.Time.Duration MultipliedBy(long arg0)
         {
-            return IExecute<Java.Time.Duration>("multipliedBy", arg0);
+            return IExecuteWithSignature<Java.Time.Duration>("multipliedBy", "(J)Ljava/time/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#negated()"/>
@@ -374,7 +374,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public Java.Time.Duration Negated()
         {
-            return IExecute<Java.Time.Duration>("negated");
+            return IExecuteWithSignature<Java.Time.Duration>("negated", "()Ljava/time/Duration;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#plus(java.time.Duration)"/>
@@ -383,7 +383,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public Java.Time.Duration Plus(Java.Time.Duration arg0)
         {
-            return IExecute<Java.Time.Duration>("plus", arg0);
+            return IExecuteWithSignature<Java.Time.Duration>("plus", "(Ljava/time/Duration;)Ljava/time/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#plus(long,java.time.temporal.TemporalUnit)"/>
@@ -402,7 +402,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public Java.Time.Duration PlusDays(long arg0)
         {
-            return IExecute<Java.Time.Duration>("plusDays", arg0);
+            return IExecuteWithSignature<Java.Time.Duration>("plusDays", "(J)Ljava/time/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#plusHours(long)"/>
@@ -411,7 +411,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public Java.Time.Duration PlusHours(long arg0)
         {
-            return IExecute<Java.Time.Duration>("plusHours", arg0);
+            return IExecuteWithSignature<Java.Time.Duration>("plusHours", "(J)Ljava/time/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#plusMillis(long)"/>
@@ -420,7 +420,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public Java.Time.Duration PlusMillis(long arg0)
         {
-            return IExecute<Java.Time.Duration>("plusMillis", arg0);
+            return IExecuteWithSignature<Java.Time.Duration>("plusMillis", "(J)Ljava/time/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#plusMinutes(long)"/>
@@ -429,7 +429,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public Java.Time.Duration PlusMinutes(long arg0)
         {
-            return IExecute<Java.Time.Duration>("plusMinutes", arg0);
+            return IExecuteWithSignature<Java.Time.Duration>("plusMinutes", "(J)Ljava/time/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#plusNanos(long)"/>
@@ -438,7 +438,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public Java.Time.Duration PlusNanos(long arg0)
         {
-            return IExecute<Java.Time.Duration>("plusNanos", arg0);
+            return IExecuteWithSignature<Java.Time.Duration>("plusNanos", "(J)Ljava/time/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#plusSeconds(long)"/>
@@ -447,7 +447,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public Java.Time.Duration PlusSeconds(long arg0)
         {
-            return IExecute<Java.Time.Duration>("plusSeconds", arg0);
+            return IExecuteWithSignature<Java.Time.Duration>("plusSeconds", "(J)Ljava/time/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#truncatedTo(java.time.temporal.TemporalUnit)"/>
@@ -456,7 +456,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public Java.Time.Duration TruncatedTo(Java.Time.Temporal.TemporalUnit arg0)
         {
-            return IExecute<Java.Time.Duration>("truncatedTo", arg0);
+            return IExecuteWithSignature<Java.Time.Duration>("truncatedTo", "(Ljava/time/temporal/TemporalUnit;)Ljava/time/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#withNanos(int)"/>
@@ -465,7 +465,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public Java.Time.Duration WithNanos(int arg0)
         {
-            return IExecute<Java.Time.Duration>("withNanos", arg0);
+            return IExecuteWithSignature<Java.Time.Duration>("withNanos", "(I)Ljava/time/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#withSeconds(long)"/>
@@ -474,7 +474,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public Java.Time.Duration WithSeconds(long arg0)
         {
-            return IExecute<Java.Time.Duration>("withSeconds", arg0);
+            return IExecuteWithSignature<Java.Time.Duration>("withSeconds", "(J)Ljava/time/Duration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#addTo(java.time.temporal.Temporal)"/>
@@ -483,7 +483,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal AddTo(Java.Time.Temporal.Temporal arg0)
         {
-            return IExecute<Java.Time.Temporal.Temporal>("addTo", arg0);
+            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("addTo", "(Ljava/time/temporal/Temporal;)Ljava/time/temporal/Temporal;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#subtractFrom(java.time.temporal.Temporal)"/>
@@ -492,7 +492,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal SubtractFrom(Java.Time.Temporal.Temporal arg0)
         {
-            return IExecute<Java.Time.Temporal.Temporal>("subtractFrom", arg0);
+            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("subtractFrom", "(Ljava/time/temporal/Temporal;)Ljava/time/temporal/Temporal;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#dividedBy(java.time.Duration)"/>
@@ -501,7 +501,7 @@ namespace Java.Time
         /// <returns><see cref="long"/></returns>
         public long DividedBy(Java.Time.Duration arg0)
         {
-            return IExecute<long>("dividedBy", arg0);
+            return IExecuteWithSignature<long>("dividedBy", "(Ljava/time/Duration;)J", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#get(java.time.temporal.TemporalUnit)"/>
@@ -510,7 +510,7 @@ namespace Java.Time
         /// <returns><see cref="long"/></returns>
         public long Get(Java.Time.Temporal.TemporalUnit arg0)
         {
-            return IExecute<long>("get", arg0);
+            return IExecuteWithSignature<long>("get", "(Ljava/time/temporal/TemporalUnit;)J", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toDays()"/>
@@ -519,7 +519,7 @@ namespace Java.Time
         /// <returns><see cref="long"/></returns>
         public long ToDays()
         {
-            return IExecute<long>("toDays");
+            return IExecuteWithSignature<long>("toDays", "()J");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toDaysPart()"/>
@@ -528,7 +528,7 @@ namespace Java.Time
         /// <returns><see cref="long"/></returns>
         public long ToDaysPart()
         {
-            return IExecute<long>("toDaysPart");
+            return IExecuteWithSignature<long>("toDaysPart", "()J");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toHours()"/>
@@ -537,7 +537,7 @@ namespace Java.Time
         /// <returns><see cref="long"/></returns>
         public long ToHours()
         {
-            return IExecute<long>("toHours");
+            return IExecuteWithSignature<long>("toHours", "()J");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toMillis()"/>
@@ -546,7 +546,7 @@ namespace Java.Time
         /// <returns><see cref="long"/></returns>
         public long ToMillis()
         {
-            return IExecute<long>("toMillis");
+            return IExecuteWithSignature<long>("toMillis", "()J");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toMinutes()"/>
@@ -555,7 +555,7 @@ namespace Java.Time
         /// <returns><see cref="long"/></returns>
         public long ToMinutes()
         {
-            return IExecute<long>("toMinutes");
+            return IExecuteWithSignature<long>("toMinutes", "()J");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toNanos()"/>
@@ -564,7 +564,7 @@ namespace Java.Time
         /// <returns><see cref="long"/></returns>
         public long ToNanos()
         {
-            return IExecute<long>("toNanos");
+            return IExecuteWithSignature<long>("toNanos", "()J");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toSeconds()"/>
@@ -573,7 +573,7 @@ namespace Java.Time
         /// <returns><see cref="long"/></returns>
         public long ToSeconds()
         {
-            return IExecute<long>("toSeconds");
+            return IExecuteWithSignature<long>("toSeconds", "()J");
         }
 
         #endregion

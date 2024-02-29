@@ -76,7 +76,7 @@ namespace Javax.Swing.Tree
         /// <returns><see cref="int"/></returns>
         public int[] GetRowsForPaths(Javax.Swing.Tree.TreePath[] arg0)
         {
-            return IExecuteArray<int>("getRowsForPaths", new object[] { arg0 });
+            return IExecuteWithSignatureArray<int>("getRowsForPaths", "([Ljavax/swing/tree/TreePath;)[I", new object[] { arg0 });
         }
 
         #endregion

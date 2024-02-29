@@ -120,7 +120,7 @@ namespace Javax.Lang.Model
         /// <returns><see cref="bool"/></returns>
         public static bool IsIdentifier(Java.Lang.CharSequence arg0)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isIdentifier", arg0);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isIdentifier", "(Ljava/lang/CharSequence;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#isKeyword(java.lang.CharSequence,javax.lang.model.SourceVersion)"/>
@@ -139,7 +139,7 @@ namespace Javax.Lang.Model
         /// <returns><see cref="bool"/></returns>
         public static bool IsKeyword(Java.Lang.CharSequence arg0)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isKeyword", arg0);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isKeyword", "(Ljava/lang/CharSequence;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#isName(java.lang.CharSequence,javax.lang.model.SourceVersion)"/>
@@ -158,7 +158,7 @@ namespace Javax.Lang.Model
         /// <returns><see cref="bool"/></returns>
         public static bool IsName(Java.Lang.CharSequence arg0)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isName", arg0);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isName", "(Ljava/lang/CharSequence;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#latest()"/>
@@ -167,7 +167,7 @@ namespace Javax.Lang.Model
         /// <returns><see cref="Javax.Lang.Model.SourceVersion"/></returns>
         public static Javax.Lang.Model.SourceVersion Latest()
         {
-            return SExecute<Javax.Lang.Model.SourceVersion>(LocalBridgeClazz, "latest");
+            return SExecuteWithSignature<Javax.Lang.Model.SourceVersion>(LocalBridgeClazz, "latest", "()Ljavax/lang/model/SourceVersion;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#latestSupported()"/>
@@ -176,7 +176,7 @@ namespace Javax.Lang.Model
         /// <returns><see cref="Javax.Lang.Model.SourceVersion"/></returns>
         public static Javax.Lang.Model.SourceVersion LatestSupported()
         {
-            return SExecute<Javax.Lang.Model.SourceVersion>(LocalBridgeClazz, "latestSupported");
+            return SExecuteWithSignature<Javax.Lang.Model.SourceVersion>(LocalBridgeClazz, "latestSupported", "()Ljavax/lang/model/SourceVersion;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#valueOf(java.lang.String)"/>
@@ -185,7 +185,7 @@ namespace Javax.Lang.Model
         /// <returns><see cref="Javax.Lang.Model.SourceVersion"/></returns>
         public static Javax.Lang.Model.SourceVersion ValueOf(Java.Lang.String arg0)
         {
-            return SExecute<Javax.Lang.Model.SourceVersion>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecuteWithSignature<Javax.Lang.Model.SourceVersion>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/lang/model/SourceVersion;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#values()"/>
@@ -194,7 +194,7 @@ namespace Javax.Lang.Model
         /// <returns><see cref="Javax.Lang.Model.SourceVersion"/></returns>
         public static Javax.Lang.Model.SourceVersion[] Values()
         {
-            return SExecuteArray<Javax.Lang.Model.SourceVersion>(LocalBridgeClazz, "values");
+            return SExecuteWithSignatureArray<Javax.Lang.Model.SourceVersion>(LocalBridgeClazz, "values", "()[Ljavax/lang/model/SourceVersion;");
         }
 
         #endregion

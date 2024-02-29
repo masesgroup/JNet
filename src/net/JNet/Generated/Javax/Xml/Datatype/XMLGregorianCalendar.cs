@@ -50,84 +50,84 @@ namespace Javax.Xml.Datatype
         /// </summary>
         public int Day
         {
-            get { return IExecute<int>("getDay"); } set { IExecute("setDay", value); }
+            get { return IExecuteWithSignature<int>("getDay", "()I"); } set { IExecuteWithSignature("setDay", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#getEon()"/> 
         /// </summary>
         public Java.Math.BigInteger Eon
         {
-            get { return IExecute<Java.Math.BigInteger>("getEon"); }
+            get { return IExecuteWithSignature<Java.Math.BigInteger>("getEon", "()Ljava/math/BigInteger;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#getEonAndYear()"/> 
         /// </summary>
         public Java.Math.BigInteger EonAndYear
         {
-            get { return IExecute<Java.Math.BigInteger>("getEonAndYear"); }
+            get { return IExecuteWithSignature<Java.Math.BigInteger>("getEonAndYear", "()Ljava/math/BigInteger;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#getFractionalSecond()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#setFractionalSecond(java.math.BigDecimal)"/>
         /// </summary>
         public Java.Math.BigDecimal FractionalSecond
         {
-            get { return IExecute<Java.Math.BigDecimal>("getFractionalSecond"); } set { IExecute("setFractionalSecond", value); }
+            get { return IExecuteWithSignature<Java.Math.BigDecimal>("getFractionalSecond", "()Ljava/math/BigDecimal;"); } set { IExecuteWithSignature("setFractionalSecond", "(Ljava/math/BigDecimal;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#getHour()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#setHour(int)"/>
         /// </summary>
         public int Hour
         {
-            get { return IExecute<int>("getHour"); } set { IExecute("setHour", value); }
+            get { return IExecuteWithSignature<int>("getHour", "()I"); } set { IExecuteWithSignature("setHour", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#getMillisecond()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#setMillisecond(int)"/>
         /// </summary>
         public int Millisecond
         {
-            get { return IExecute<int>("getMillisecond"); } set { IExecute("setMillisecond", value); }
+            get { return IExecuteWithSignature<int>("getMillisecond", "()I"); } set { IExecuteWithSignature("setMillisecond", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#getMinute()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#setMinute(int)"/>
         /// </summary>
         public int Minute
         {
-            get { return IExecute<int>("getMinute"); } set { IExecute("setMinute", value); }
+            get { return IExecuteWithSignature<int>("getMinute", "()I"); } set { IExecuteWithSignature("setMinute", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#getMonth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#setMonth(int)"/>
         /// </summary>
         public int Month
         {
-            get { return IExecute<int>("getMonth"); } set { IExecute("setMonth", value); }
+            get { return IExecuteWithSignature<int>("getMonth", "()I"); } set { IExecuteWithSignature("setMonth", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#getSecond()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#setSecond(int)"/>
         /// </summary>
         public int Second
         {
-            get { return IExecute<int>("getSecond"); } set { IExecute("setSecond", value); }
+            get { return IExecuteWithSignature<int>("getSecond", "()I"); } set { IExecuteWithSignature("setSecond", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#getTimezone()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#setTimezone(int)"/>
         /// </summary>
         public int Timezone
         {
-            get { return IExecute<int>("getTimezone"); } set { IExecute("setTimezone", value); }
+            get { return IExecuteWithSignature<int>("getTimezone", "()I"); } set { IExecuteWithSignature("setTimezone", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#getXMLSchemaType()"/> 
         /// </summary>
         public Javax.Xml.Namespace.QName XMLSchemaType
         {
-            get { return IExecute<Javax.Xml.Namespace.QName>("getXMLSchemaType"); }
+            get { return IExecuteWithSignature<Javax.Xml.Namespace.QName>("getXMLSchemaType", "()Ljavax/xml/namespace/QName;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#getYear()"/> 
         /// </summary>
         public int Year
         {
-            get { return IExecute<int>("getYear"); }
+            get { return IExecuteWithSignature<int>("getYear", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#isValid()"/>
@@ -136,7 +136,7 @@ namespace Javax.Xml.Datatype
         /// <returns><see cref="bool"/></returns>
         public bool IsValid()
         {
-            return IExecute<bool>("isValid");
+            return IExecuteWithSignature<bool>("isValid", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#compare(javax.xml.datatype.XMLGregorianCalendar)"/>
@@ -145,7 +145,7 @@ namespace Javax.Xml.Datatype
         /// <returns><see cref="int"/></returns>
         public int Compare(Javax.Xml.Datatype.XMLGregorianCalendar arg0)
         {
-            return IExecute<int>("compare", arg0);
+            return IExecuteWithSignature<int>("compare", "(Ljavax/xml/datatype/XMLGregorianCalendar;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#toXMLFormat()"/>
@@ -154,7 +154,7 @@ namespace Javax.Xml.Datatype
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToXMLFormat()
         {
-            return IExecute<Java.Lang.String>("toXMLFormat");
+            return IExecuteWithSignature<Java.Lang.String>("toXMLFormat", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#toGregorianCalendar()"/>
@@ -163,7 +163,7 @@ namespace Javax.Xml.Datatype
         /// <returns><see cref="Java.Util.GregorianCalendar"/></returns>
         public Java.Util.GregorianCalendar ToGregorianCalendar()
         {
-            return IExecute<Java.Util.GregorianCalendar>("toGregorianCalendar");
+            return IExecuteWithSignature<Java.Util.GregorianCalendar>("toGregorianCalendar", "()Ljava/util/GregorianCalendar;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#toGregorianCalendar(java.util.TimeZone,java.util.Locale,javax.xml.datatype.XMLGregorianCalendar)"/>
@@ -183,7 +183,7 @@ namespace Javax.Xml.Datatype
         /// <returns><see cref="Java.Util.TimeZone"/></returns>
         public Java.Util.TimeZone GetTimeZone(int arg0)
         {
-            return IExecute<Java.Util.TimeZone>("getTimeZone", arg0);
+            return IExecuteWithSignature<Java.Util.TimeZone>("getTimeZone", "(I)Ljava/util/TimeZone;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#normalize()"/>
@@ -192,7 +192,7 @@ namespace Javax.Xml.Datatype
         /// <returns><see cref="Javax.Xml.Datatype.XMLGregorianCalendar"/></returns>
         public Javax.Xml.Datatype.XMLGregorianCalendar Normalize()
         {
-            return IExecute<Javax.Xml.Datatype.XMLGregorianCalendar>("normalize");
+            return IExecuteWithSignature<Javax.Xml.Datatype.XMLGregorianCalendar>("normalize", "()Ljavax/xml/datatype/XMLGregorianCalendar;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#add(javax.xml.datatype.Duration)"/>
@@ -200,21 +200,21 @@ namespace Javax.Xml.Datatype
         /// <param name="arg0"><see cref="Javax.Xml.Datatype.Duration"/></param>
         public void Add(Javax.Xml.Datatype.Duration arg0)
         {
-            IExecute("add", arg0);
+            IExecuteWithSignature("add", "(Ljavax/xml/datatype/Duration;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#clear()"/>
         /// </summary>
         public void Clear()
         {
-            IExecute("clear");
+            IExecuteWithSignature("clear", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#reset()"/>
         /// </summary>
         public void Reset()
         {
-            IExecute("reset");
+            IExecuteWithSignature("reset", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#setYear(int)"/>
@@ -222,7 +222,7 @@ namespace Javax.Xml.Datatype
         /// <param name="arg0"><see cref="int"/></param>
         public void SetYear(int arg0)
         {
-            IExecute("setYear", arg0);
+            IExecuteWithSignature("setYear", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#setYear(java.math.BigInteger)"/>
@@ -230,7 +230,7 @@ namespace Javax.Xml.Datatype
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         public void SetYear(Java.Math.BigInteger arg0)
         {
-            IExecute("setYear", arg0);
+            IExecuteWithSignature("setYear", "(Ljava/math/BigInteger;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#setTime(int,int,int,int)"/>

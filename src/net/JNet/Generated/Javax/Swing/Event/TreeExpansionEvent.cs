@@ -59,7 +59,7 @@ namespace Javax.Swing.Event
         /// </summary>
         public Javax.Swing.Tree.TreePath Path
         {
-            get { return IExecute<Javax.Swing.Tree.TreePath>("getPath"); }
+            get { return IExecuteWithSignature<Javax.Swing.Tree.TreePath>("getPath", "()Ljavax/swing/tree/TreePath;"); }
         }
 
         #endregion

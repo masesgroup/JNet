@@ -76,7 +76,7 @@ namespace Javax.Xml.Xpath
         /// <returns><see cref="object"/></returns>
         public object ResolveVariable(Javax.Xml.Namespace.QName arg0)
         {
-            return IExecute("resolveVariable", arg0);
+            return IExecuteWithSignature("resolveVariable", "(Ljavax/xml/namespace/QName;)Ljava/lang/Object;", arg0);
         }
 
         #endregion

@@ -50,42 +50,42 @@ namespace Javax.Imageio
         /// </summary>
         public Java.Awt.ImageNs.BufferedImage Destination
         {
-            get { return IExecute<Java.Awt.ImageNs.BufferedImage>("getDestination"); } set { IExecute("setDestination", value); }
+            get { return IExecuteWithSignature<Java.Awt.ImageNs.BufferedImage>("getDestination", "()Ljava/awt/image/BufferedImage;"); } set { IExecuteWithSignature("setDestination", "(Ljava/awt/image/BufferedImage;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#getDestinationBands()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#setDestinationBands(int[])"/>
         /// </summary>
         public int[] DestinationBands
         {
-            get { return IExecuteArray<int>("getDestinationBands"); } set { IExecute("setDestinationBands", value); }
+            get { return IExecuteWithSignatureArray<int>("getDestinationBands", "()[I"); } set { IExecuteWithSignature("setDestinationBands", "([I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#getSourceMaxProgressivePass()"/> 
         /// </summary>
         public int SourceMaxProgressivePass
         {
-            get { return IExecute<int>("getSourceMaxProgressivePass"); }
+            get { return IExecuteWithSignature<int>("getSourceMaxProgressivePass", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#getSourceMinProgressivePass()"/> 
         /// </summary>
         public int SourceMinProgressivePass
         {
-            get { return IExecute<int>("getSourceMinProgressivePass"); }
+            get { return IExecuteWithSignature<int>("getSourceMinProgressivePass", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#getSourceNumProgressivePasses()"/> 
         /// </summary>
         public int SourceNumProgressivePasses
         {
-            get { return IExecute<int>("getSourceNumProgressivePasses"); }
+            get { return IExecuteWithSignature<int>("getSourceNumProgressivePasses", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#getSourceRenderSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#setSourceRenderSize(java.awt.Dimension)"/>
         /// </summary>
         public Java.Awt.Dimension SourceRenderSize
         {
-            get { return IExecute<Java.Awt.Dimension>("getSourceRenderSize"); } set { IExecute("setSourceRenderSize", value); }
+            get { return IExecuteWithSignature<Java.Awt.Dimension>("getSourceRenderSize", "()Ljava/awt/Dimension;"); } set { IExecuteWithSignature("setSourceRenderSize", "(Ljava/awt/Dimension;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#canSetSourceRenderSize()"/>
@@ -94,7 +94,7 @@ namespace Javax.Imageio
         /// <returns><see cref="bool"/></returns>
         public bool CanSetSourceRenderSize()
         {
-            return IExecute<bool>("canSetSourceRenderSize");
+            return IExecuteWithSignature<bool>("canSetSourceRenderSize", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#setSourceProgressivePasses(int,int)"/>

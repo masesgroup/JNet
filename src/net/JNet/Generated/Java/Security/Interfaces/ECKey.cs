@@ -72,7 +72,7 @@ namespace Java.Security.Interfaces
         /// </summary>
         public Java.Security.Spec.ECParameterSpec Params
         {
-            get { return IExecute<Java.Security.Spec.ECParameterSpec>("getParams"); }
+            get { return IExecuteWithSignature<Java.Security.Spec.ECParameterSpec>("getParams", "()Ljava/security/spec/ECParameterSpec;"); }
         }
 
         #endregion

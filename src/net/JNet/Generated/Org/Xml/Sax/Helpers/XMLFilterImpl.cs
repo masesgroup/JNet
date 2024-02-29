@@ -78,35 +78,35 @@ namespace Org.Xml.Sax.Helpers
         /// </summary>
         public Org.Xml.Sax.ContentHandler ContentHandler
         {
-            get { return IExecute<Org.Xml.Sax.ContentHandler>("getContentHandler"); } set { IExecute("setContentHandler", value); }
+            get { return IExecuteWithSignature<Org.Xml.Sax.ContentHandler>("getContentHandler", "()Lorg/xml/sax/ContentHandler;"); } set { IExecuteWithSignature("setContentHandler", "(Lorg/xml/sax/ContentHandler;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#getDTDHandler()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#setDTDHandler(org.xml.sax.DTDHandler)"/>
         /// </summary>
         public Org.Xml.Sax.DTDHandler DTDHandler
         {
-            get { return IExecute<Org.Xml.Sax.DTDHandler>("getDTDHandler"); } set { IExecute("setDTDHandler", value); }
+            get { return IExecuteWithSignature<Org.Xml.Sax.DTDHandler>("getDTDHandler", "()Lorg/xml/sax/DTDHandler;"); } set { IExecuteWithSignature("setDTDHandler", "(Lorg/xml/sax/DTDHandler;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#getEntityResolver()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#setEntityResolver(org.xml.sax.EntityResolver)"/>
         /// </summary>
         public Org.Xml.Sax.EntityResolver EntityResolver
         {
-            get { return IExecute<Org.Xml.Sax.EntityResolver>("getEntityResolver"); } set { IExecute("setEntityResolver", value); }
+            get { return IExecuteWithSignature<Org.Xml.Sax.EntityResolver>("getEntityResolver", "()Lorg/xml/sax/EntityResolver;"); } set { IExecuteWithSignature("setEntityResolver", "(Lorg/xml/sax/EntityResolver;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#getErrorHandler()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
         /// </summary>
         public Org.Xml.Sax.ErrorHandler ErrorHandler
         {
-            get { return IExecute<Org.Xml.Sax.ErrorHandler>("getErrorHandler"); } set { IExecute("setErrorHandler", value); }
+            get { return IExecuteWithSignature<Org.Xml.Sax.ErrorHandler>("getErrorHandler", "()Lorg/xml/sax/ErrorHandler;"); } set { IExecuteWithSignature("setErrorHandler", "(Lorg/xml/sax/ErrorHandler;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#getParent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#setParent(org.xml.sax.XMLReader)"/>
         /// </summary>
         public Org.Xml.Sax.XMLReader Parent
         {
-            get { return IExecute<Org.Xml.Sax.XMLReader>("getParent"); } set { IExecute("setParent", value); }
+            get { return IExecuteWithSignature<Org.Xml.Sax.XMLReader>("getParent", "()Lorg/xml/sax/XMLReader;"); } set { IExecuteWithSignature("setParent", "(Lorg/xml/sax/XMLReader;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#getFeature(java.lang.String)"/>
@@ -117,7 +117,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public bool GetFeature(Java.Lang.String arg0)
         {
-            return IExecute<bool>("getFeature", arg0);
+            return IExecuteWithSignature<bool>("getFeature", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#getProperty(java.lang.String)"/>
@@ -128,7 +128,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public object GetProperty(Java.Lang.String arg0)
         {
-            return IExecute("getProperty", arg0);
+            return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#resolveEntity(java.lang.String,java.lang.String)"/>
@@ -160,7 +160,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndDocument()
         {
-            IExecute("endDocument");
+            IExecuteWithSignature("endDocument", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#endElement(java.lang.String,java.lang.String,java.lang.String)"/>
@@ -180,7 +180,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndPrefixMapping(Java.Lang.String arg0)
         {
-            IExecute("endPrefixMapping", arg0);
+            IExecuteWithSignature("endPrefixMapping", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#error(org.xml.sax.SAXParseException)"/>
@@ -189,7 +189,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void Error(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
-            IExecute("error", arg0);
+            IExecuteWithSignature("error", "(Lorg/xml/sax/SAXParseException;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#fatalError(org.xml.sax.SAXParseException)"/>
@@ -198,7 +198,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void FatalError(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
-            IExecute("fatalError", arg0);
+            IExecuteWithSignature("fatalError", "(Lorg/xml/sax/SAXParseException;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#ignorableWhitespace(char[],int,int)"/>
@@ -230,7 +230,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Java.Io.IOException"/>
         public void Parse(Java.Lang.String arg0)
         {
-            IExecute("parse", arg0);
+            IExecuteWithSignature("parse", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#parse(org.xml.sax.InputSource)"/>
@@ -240,7 +240,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Java.Io.IOException"/>
         public void Parse(Org.Xml.Sax.InputSource arg0)
         {
-            IExecute("parse", arg0);
+            IExecuteWithSignature("parse", "(Lorg/xml/sax/InputSource;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#processingInstruction(java.lang.String,java.lang.String)"/>
@@ -258,7 +258,7 @@ namespace Org.Xml.Sax.Helpers
         /// <param name="arg0"><see cref="Org.Xml.Sax.Locator"/></param>
         public void SetDocumentLocator(Org.Xml.Sax.Locator arg0)
         {
-            IExecute("setDocumentLocator", arg0);
+            IExecuteWithSignature("setDocumentLocator", "(Lorg/xml/sax/Locator;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#setFeature(java.lang.String,boolean)"/>
@@ -289,7 +289,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void SkippedEntity(Java.Lang.String arg0)
         {
-            IExecute("skippedEntity", arg0);
+            IExecuteWithSignature("skippedEntity", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#startDocument()"/>
@@ -298,7 +298,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void StartDocument()
         {
-            IExecute("startDocument");
+            IExecuteWithSignature("startDocument", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)"/>
@@ -341,7 +341,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void Warning(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
-            IExecute("warning", arg0);
+            IExecuteWithSignature("warning", "(Lorg/xml/sax/SAXParseException;)V", arg0);
         }
 
         #endregion

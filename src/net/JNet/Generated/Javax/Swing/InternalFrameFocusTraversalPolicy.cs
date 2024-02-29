@@ -52,7 +52,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetInitialComponent(Javax.Swing.JInternalFrame arg0)
         {
-            return IExecute<Java.Awt.Component>("getInitialComponent", arg0);
+            return IExecuteWithSignature<Java.Awt.Component>("getInitialComponent", "(Ljavax/swing/JInternalFrame;)Ljava/awt/Component;", arg0);
         }
 
         #endregion

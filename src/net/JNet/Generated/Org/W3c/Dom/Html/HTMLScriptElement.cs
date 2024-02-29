@@ -96,49 +96,49 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Java.Lang.String Charset
         {
-            get { return IExecute<Java.Lang.String>("getCharset"); } set { IExecute("setCharset", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getCharset", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setCharset", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLScriptElement.html#getDefer()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLScriptElement.html#setDefer(boolean)"/>
         /// </summary>
         public bool Defer
         {
-            get { return IExecute<bool>("getDefer"); } set { IExecute("setDefer", value); }
+            get { return IExecuteWithSignature<bool>("getDefer", "()Z"); } set { IExecuteWithSignature("setDefer", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLScriptElement.html#getEvent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLScriptElement.html#setEvent(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Event
         {
-            get { return IExecute<Java.Lang.String>("getEvent"); } set { IExecute("setEvent", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getEvent", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setEvent", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLScriptElement.html#getHtmlFor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLScriptElement.html#setHtmlFor(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String HtmlFor
         {
-            get { return IExecute<Java.Lang.String>("getHtmlFor"); } set { IExecute("setHtmlFor", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getHtmlFor", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setHtmlFor", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLScriptElement.html#getSrc()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLScriptElement.html#setSrc(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Src
         {
-            get { return IExecute<Java.Lang.String>("getSrc"); } set { IExecute("setSrc", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getSrc", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSrc", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLScriptElement.html#getText()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLScriptElement.html#setText(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Text
         {
-            get { return IExecute<Java.Lang.String>("getText"); } set { IExecute("setText", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getText", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setText", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLScriptElement.html#getType()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLScriptElement.html#setType(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Type
         {
-            get { return IExecute<Java.Lang.String>("getType"); } set { IExecute("setType", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setType", "(Ljava/lang/String;)V", value); }
         }
 
         #endregion

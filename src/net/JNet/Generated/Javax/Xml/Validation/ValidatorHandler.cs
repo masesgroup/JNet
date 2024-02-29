@@ -50,28 +50,28 @@ namespace Javax.Xml.Validation
         /// </summary>
         public Org.Xml.Sax.ContentHandler ContentHandler
         {
-            get { return IExecute<Org.Xml.Sax.ContentHandler>("getContentHandler"); } set { IExecute("setContentHandler", value); }
+            get { return IExecuteWithSignature<Org.Xml.Sax.ContentHandler>("getContentHandler", "()Lorg/xml/sax/ContentHandler;"); } set { IExecuteWithSignature("setContentHandler", "(Lorg/xml/sax/ContentHandler;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/ValidatorHandler.html#getErrorHandler()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/ValidatorHandler.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
         /// </summary>
         public Org.Xml.Sax.ErrorHandler ErrorHandler
         {
-            get { return IExecute<Org.Xml.Sax.ErrorHandler>("getErrorHandler"); } set { IExecute("setErrorHandler", value); }
+            get { return IExecuteWithSignature<Org.Xml.Sax.ErrorHandler>("getErrorHandler", "()Lorg/xml/sax/ErrorHandler;"); } set { IExecuteWithSignature("setErrorHandler", "(Lorg/xml/sax/ErrorHandler;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/ValidatorHandler.html#getResourceResolver()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/ValidatorHandler.html#setResourceResolver(org.w3c.dom.ls.LSResourceResolver)"/>
         /// </summary>
         public Org.W3c.Dom.Ls.LSResourceResolver ResourceResolver
         {
-            get { return IExecute<Org.W3c.Dom.Ls.LSResourceResolver>("getResourceResolver"); } set { IExecute("setResourceResolver", value); }
+            get { return IExecuteWithSignature<Org.W3c.Dom.Ls.LSResourceResolver>("getResourceResolver", "()Lorg/w3c/dom/ls/LSResourceResolver;"); } set { IExecuteWithSignature("setResourceResolver", "(Lorg/w3c/dom/ls/LSResourceResolver;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/ValidatorHandler.html#getTypeInfoProvider()"/> 
         /// </summary>
         public Javax.Xml.Validation.TypeInfoProvider TypeInfoProvider
         {
-            get { return IExecute<Javax.Xml.Validation.TypeInfoProvider>("getTypeInfoProvider"); }
+            get { return IExecuteWithSignature<Javax.Xml.Validation.TypeInfoProvider>("getTypeInfoProvider", "()Ljavax/xml/validation/TypeInfoProvider;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/ValidatorHandler.html#getFeature(java.lang.String)"/>
@@ -82,7 +82,7 @@ namespace Javax.Xml.Validation
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public bool GetFeature(Java.Lang.String arg0)
         {
-            return IExecute<bool>("getFeature", arg0);
+            return IExecuteWithSignature<bool>("getFeature", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/ValidatorHandler.html#getProperty(java.lang.String)"/>
@@ -93,7 +93,7 @@ namespace Javax.Xml.Validation
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public object GetProperty(Java.Lang.String arg0)
         {
-            return IExecute("getProperty", arg0);
+            return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/ValidatorHandler.html#setFeature(java.lang.String,boolean)"/>

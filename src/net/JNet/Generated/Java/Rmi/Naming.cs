@@ -50,7 +50,7 @@ namespace Java.Rmi
         /// <exception cref="Java.Net.MalformedURLException"/>
         public static Java.Lang.String[] List(Java.Lang.String arg0)
         {
-            return SExecuteArray<Java.Lang.String>(LocalBridgeClazz, "list", arg0);
+            return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "list", "(Ljava/lang/String;)[Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/Naming.html#lookup(java.lang.String)"/>
@@ -62,7 +62,7 @@ namespace Java.Rmi
         /// <exception cref="Java.Rmi.RemoteException"/>
         public static Java.Rmi.Remote Lookup(Java.Lang.String arg0)
         {
-            return SExecute<Java.Rmi.Remote>(LocalBridgeClazz, "lookup", arg0);
+            return SExecuteWithSignature<Java.Rmi.Remote>(LocalBridgeClazz, "lookup", "(Ljava/lang/String;)Ljava/rmi/Remote;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/Naming.html#bind(java.lang.String,java.rmi.Remote)"/>
@@ -96,7 +96,7 @@ namespace Java.Rmi
         /// <exception cref="Java.Net.MalformedURLException"/>
         public static void Unbind(Java.Lang.String arg0)
         {
-            SExecute(LocalBridgeClazz, "unbind", arg0);
+            SExecuteWithSignature(LocalBridgeClazz, "unbind", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

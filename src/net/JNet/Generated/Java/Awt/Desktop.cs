@@ -46,7 +46,7 @@ namespace Java.Awt
         /// </summary>
         public static Java.Awt.Desktop GetDesktop
         {
-            get { return SExecute<Java.Awt.Desktop>(LocalBridgeClazz, "getDesktop"); }
+            get { return SExecuteWithSignature<Java.Awt.Desktop>(LocalBridgeClazz, "getDesktop", "()Ljava/awt/Desktop;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#isDesktopSupported()"/>
@@ -55,7 +55,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public static bool IsDesktopSupported()
         {
-            return SExecute<bool>(LocalBridgeClazz, "isDesktopSupported");
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isDesktopSupported", "()Z");
         }
 
         #endregion
@@ -68,7 +68,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsSupported(Java.Awt.Desktop.Action arg0)
         {
-            return IExecute<bool>("isSupported", arg0);
+            return IExecuteWithSignature<bool>("isSupported", "(Ljava/awt/Desktop$Action;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#moveToTrash(java.io.File)"/>
@@ -77,7 +77,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool MoveToTrash(Java.Io.File arg0)
         {
-            return IExecute<bool>("moveToTrash", arg0);
+            return IExecuteWithSignature<bool>("moveToTrash", "(Ljava/io/File;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#addAppEventListener(java.awt.desktop.SystemEventListener)"/>
@@ -85,7 +85,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.SystemEventListener"/></param>
         public void AddAppEventListener(Java.Awt.DesktopNs.SystemEventListener arg0)
         {
-            IExecute("addAppEventListener", arg0);
+            IExecuteWithSignature("addAppEventListener", "(Ljava/awt/desktop/SystemEventListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#browse(java.net.URI)"/>
@@ -94,7 +94,7 @@ namespace Java.Awt
         /// <exception cref="Java.Io.IOException"/>
         public void Browse(Java.Net.URI arg0)
         {
-            IExecute("browse", arg0);
+            IExecuteWithSignature("browse", "(Ljava/net/URI;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#browseFileDirectory(java.io.File)"/>
@@ -102,14 +102,14 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         public void BrowseFileDirectory(Java.Io.File arg0)
         {
-            IExecute("browseFileDirectory", arg0);
+            IExecuteWithSignature("browseFileDirectory", "(Ljava/io/File;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#disableSuddenTermination()"/>
         /// </summary>
         public void DisableSuddenTermination()
         {
-            IExecute("disableSuddenTermination");
+            IExecuteWithSignature("disableSuddenTermination", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#edit(java.io.File)"/>
@@ -118,14 +118,14 @@ namespace Java.Awt
         /// <exception cref="Java.Io.IOException"/>
         public void Edit(Java.Io.File arg0)
         {
-            IExecute("edit", arg0);
+            IExecuteWithSignature("edit", "(Ljava/io/File;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#enableSuddenTermination()"/>
         /// </summary>
         public void EnableSuddenTermination()
         {
-            IExecute("enableSuddenTermination");
+            IExecuteWithSignature("enableSuddenTermination", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#mail()"/>
@@ -134,7 +134,7 @@ namespace Java.Awt
         /// <exception cref="Java.Io.IOException"/>
         public void Mail()
         {
-            IExecute("mail");
+            IExecuteWithSignature("mail", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#mail(java.net.URI)"/>
@@ -143,7 +143,7 @@ namespace Java.Awt
         /// <exception cref="Java.Io.IOException"/>
         public void Mail(Java.Net.URI arg0)
         {
-            IExecute("mail", arg0);
+            IExecuteWithSignature("mail", "(Ljava/net/URI;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#open(java.io.File)"/>
@@ -152,14 +152,14 @@ namespace Java.Awt
         /// <exception cref="Java.Io.IOException"/>
         public void Open(Java.Io.File arg0)
         {
-            IExecute("open", arg0);
+            IExecuteWithSignature("open", "(Ljava/io/File;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#openHelpViewer()"/>
         /// </summary>
         public void OpenHelpViewer()
         {
-            IExecute("openHelpViewer");
+            IExecuteWithSignature("openHelpViewer", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#print(java.io.File)"/>
@@ -168,7 +168,7 @@ namespace Java.Awt
         /// <exception cref="Java.Io.IOException"/>
         public void Print(Java.Io.File arg0)
         {
-            IExecute("print", arg0);
+            IExecuteWithSignature("print", "(Ljava/io/File;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#removeAppEventListener(java.awt.desktop.SystemEventListener)"/>
@@ -176,7 +176,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.SystemEventListener"/></param>
         public void RemoveAppEventListener(Java.Awt.DesktopNs.SystemEventListener arg0)
         {
-            IExecute("removeAppEventListener", arg0);
+            IExecuteWithSignature("removeAppEventListener", "(Ljava/awt/desktop/SystemEventListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#requestForeground(boolean)"/>
@@ -184,7 +184,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="bool"/></param>
         public void RequestForeground(bool arg0)
         {
-            IExecute("requestForeground", arg0);
+            IExecuteWithSignature("requestForeground", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#setAboutHandler(java.awt.desktop.AboutHandler)"/>
@@ -192,7 +192,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AboutHandler"/></param>
         public void SetAboutHandler(Java.Awt.DesktopNs.AboutHandler arg0)
         {
-            IExecute("setAboutHandler", arg0);
+            IExecuteWithSignature("setAboutHandler", "(Ljava/awt/desktop/AboutHandler;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#setDefaultMenuBar(javax.swing.JMenuBar)"/>
@@ -200,7 +200,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Javax.Swing.JMenuBar"/></param>
         public void SetDefaultMenuBar(Javax.Swing.JMenuBar arg0)
         {
-            IExecute("setDefaultMenuBar", arg0);
+            IExecuteWithSignature("setDefaultMenuBar", "(Ljavax/swing/JMenuBar;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#setOpenFileHandler(java.awt.desktop.OpenFilesHandler)"/>
@@ -208,7 +208,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.OpenFilesHandler"/></param>
         public void SetOpenFileHandler(Java.Awt.DesktopNs.OpenFilesHandler arg0)
         {
-            IExecute("setOpenFileHandler", arg0);
+            IExecuteWithSignature("setOpenFileHandler", "(Ljava/awt/desktop/OpenFilesHandler;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#setOpenURIHandler(java.awt.desktop.OpenURIHandler)"/>
@@ -216,7 +216,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.OpenURIHandler"/></param>
         public void SetOpenURIHandler(Java.Awt.DesktopNs.OpenURIHandler arg0)
         {
-            IExecute("setOpenURIHandler", arg0);
+            IExecuteWithSignature("setOpenURIHandler", "(Ljava/awt/desktop/OpenURIHandler;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#setPreferencesHandler(java.awt.desktop.PreferencesHandler)"/>
@@ -224,7 +224,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.PreferencesHandler"/></param>
         public void SetPreferencesHandler(Java.Awt.DesktopNs.PreferencesHandler arg0)
         {
-            IExecute("setPreferencesHandler", arg0);
+            IExecuteWithSignature("setPreferencesHandler", "(Ljava/awt/desktop/PreferencesHandler;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#setPrintFileHandler(java.awt.desktop.PrintFilesHandler)"/>
@@ -232,7 +232,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.PrintFilesHandler"/></param>
         public void SetPrintFileHandler(Java.Awt.DesktopNs.PrintFilesHandler arg0)
         {
-            IExecute("setPrintFileHandler", arg0);
+            IExecuteWithSignature("setPrintFileHandler", "(Ljava/awt/desktop/PrintFilesHandler;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#setQuitHandler(java.awt.desktop.QuitHandler)"/>
@@ -240,7 +240,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.QuitHandler"/></param>
         public void SetQuitHandler(Java.Awt.DesktopNs.QuitHandler arg0)
         {
-            IExecute("setQuitHandler", arg0);
+            IExecuteWithSignature("setQuitHandler", "(Ljava/awt/desktop/QuitHandler;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#setQuitStrategy(java.awt.desktop.QuitStrategy)"/>
@@ -248,7 +248,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.QuitStrategy"/></param>
         public void SetQuitStrategy(Java.Awt.DesktopNs.QuitStrategy arg0)
         {
-            IExecute("setQuitStrategy", arg0);
+            IExecuteWithSignature("setQuitStrategy", "(Ljava/awt/desktop/QuitStrategy;)V", arg0);
         }
 
         #endregion
@@ -421,7 +421,7 @@ namespace Java.Awt
             /// <returns><see cref="Java.Awt.Desktop.Action"/></returns>
             public static Java.Awt.Desktop.Action ValueOf(Java.Lang.String arg0)
             {
-                return SExecute<Java.Awt.Desktop.Action>(LocalBridgeClazz, "valueOf", arg0);
+                return SExecuteWithSignature<Java.Awt.Desktop.Action>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/awt/Desktop$Action;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#values()"/>
@@ -430,7 +430,7 @@ namespace Java.Awt
             /// <returns><see cref="Java.Awt.Desktop.Action"/></returns>
             public static Java.Awt.Desktop.Action[] Values()
             {
-                return SExecuteArray<Java.Awt.Desktop.Action>(LocalBridgeClazz, "values");
+                return SExecuteWithSignatureArray<Java.Awt.Desktop.Action>(LocalBridgeClazz, "values", "()[Ljava/awt/Desktop$Action;");
             }
 
             #endregion

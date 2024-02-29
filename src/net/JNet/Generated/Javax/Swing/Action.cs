@@ -282,7 +282,7 @@ namespace Javax.Swing
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public bool AcceptDefault(object arg0)
         {
-            return IExecute<bool>("acceptDefault", arg0);
+            return IExecuteWithSignature<bool>("acceptDefault", "(Ljava/lang/Object;)Z", arg0);
         }
 
         /// <summary>

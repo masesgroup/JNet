@@ -91,21 +91,21 @@ namespace Java.Lang.Management
         /// </summary>
         public int LoadedClassCount
         {
-            get { return IExecute<int>("getLoadedClassCount"); }
+            get { return IExecuteWithSignature<int>("getLoadedClassCount", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ClassLoadingMXBean.html#getTotalLoadedClassCount()"/> 
         /// </summary>
         public long TotalLoadedClassCount
         {
-            get { return IExecute<long>("getTotalLoadedClassCount"); }
+            get { return IExecuteWithSignature<long>("getTotalLoadedClassCount", "()J"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ClassLoadingMXBean.html#getUnloadedClassCount()"/> 
         /// </summary>
         public long UnloadedClassCount
         {
-            get { return IExecute<long>("getUnloadedClassCount"); }
+            get { return IExecuteWithSignature<long>("getUnloadedClassCount", "()J"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ClassLoadingMXBean.html#isVerbose()"/>
@@ -114,7 +114,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsVerbose()
         {
-            return IExecute<bool>("isVerbose");
+            return IExecuteWithSignature<bool>("isVerbose", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ClassLoadingMXBean.html#setVerbose(boolean)"/>
@@ -122,7 +122,7 @@ namespace Java.Lang.Management
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetVerbose(bool arg0)
         {
-            IExecute("setVerbose", arg0);
+            IExecuteWithSignature("setVerbose", "(Z)V", arg0);
         }
 
         #endregion

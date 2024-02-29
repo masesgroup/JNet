@@ -79,7 +79,7 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public Java.Util.List<Java.Awt.Image> ResolutionVariants
         {
-            get { return IExecute<Java.Util.List<Java.Awt.Image>>("getResolutionVariants"); }
+            get { return IExecuteWithSignature<Java.Util.List<Java.Awt.Image>>("getResolutionVariants", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MultiResolutionImage.html#getResolutionVariant(double,double)"/>

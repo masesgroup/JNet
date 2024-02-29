@@ -96,7 +96,7 @@ namespace Java.Text
         /// </summary>
         public Java.Text.AttributedCharacterIterator Iterator
         {
-            get { return IExecute<Java.Text.AttributedCharacterIterator>("getIterator"); }
+            get { return IExecuteWithSignature<Java.Text.AttributedCharacterIterator>("getIterator", "()Ljava/text/AttributedCharacterIterator;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#getIterator(java.text.AttributedCharacterIterator.Attribute[],int,int)"/>
@@ -116,7 +116,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.AttributedCharacterIterator"/></returns>
         public Java.Text.AttributedCharacterIterator GetIterator(Java.Text.AttributedCharacterIterator.Attribute[] arg0)
         {
-            return IExecute<Java.Text.AttributedCharacterIterator>("getIterator", new object[] { arg0 });
+            return IExecuteWithSignature<Java.Text.AttributedCharacterIterator>("getIterator", "([Ljava/text/AttributedCharacterIterator$Attribute;)Ljava/text/AttributedCharacterIterator;", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#addAttribute(java.text.AttributedCharacterIterator.Attribute,java.lang.Object,int,int)"/>

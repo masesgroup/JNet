@@ -54,140 +54,140 @@ namespace Java.Security.Cert
         /// </summary>
         public int BasicConstraints
         {
-            get { return IExecute<int>("getBasicConstraints"); }
+            get { return IExecuteWithSignature<int>("getBasicConstraints", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getExtendedKeyUsage()"/> 
         /// </summary>
         public Java.Util.List<Java.Lang.String> ExtendedKeyUsage
         {
-            get { return IExecute<Java.Util.List<Java.Lang.String>>("getExtendedKeyUsage"); }
+            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getExtendedKeyUsage", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getIssuerAlternativeNames()"/> 
         /// </summary>
         public Java.Util.Collection<Java.Util.List<object>> IssuerAlternativeNames
         {
-            get { return IExecute<Java.Util.Collection<Java.Util.List<object>>>("getIssuerAlternativeNames"); }
+            get { return IExecuteWithSignature<Java.Util.Collection<Java.Util.List<object>>>("getIssuerAlternativeNames", "()Ljava/util/Collection;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getIssuerDN()"/> 
         /// </summary>
         public Java.Security.Principal IssuerDN
         {
-            get { return IExecute<Java.Security.Principal>("getIssuerDN"); }
+            get { return IExecuteWithSignature<Java.Security.Principal>("getIssuerDN", "()Ljava/security/Principal;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getIssuerUniqueID()"/> 
         /// </summary>
         public bool[] IssuerUniqueID
         {
-            get { return IExecuteArray<bool>("getIssuerUniqueID"); }
+            get { return IExecuteWithSignatureArray<bool>("getIssuerUniqueID", "()[Z"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getIssuerX500Principal()"/> 
         /// </summary>
         public Javax.Security.Auth.X500.X500Principal IssuerX500Principal
         {
-            get { return IExecute<Javax.Security.Auth.X500.X500Principal>("getIssuerX500Principal"); }
+            get { return IExecuteWithSignature<Javax.Security.Auth.X500.X500Principal>("getIssuerX500Principal", "()Ljavax/security/auth/x500/X500Principal;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getKeyUsage()"/> 
         /// </summary>
         public bool[] KeyUsage
         {
-            get { return IExecuteArray<bool>("getKeyUsage"); }
+            get { return IExecuteWithSignatureArray<bool>("getKeyUsage", "()[Z"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getNotAfter()"/> 
         /// </summary>
         public Java.Util.Date NotAfter
         {
-            get { return IExecute<Java.Util.Date>("getNotAfter"); }
+            get { return IExecuteWithSignature<Java.Util.Date>("getNotAfter", "()Ljava/util/Date;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getNotBefore()"/> 
         /// </summary>
         public Java.Util.Date NotBefore
         {
-            get { return IExecute<Java.Util.Date>("getNotBefore"); }
+            get { return IExecuteWithSignature<Java.Util.Date>("getNotBefore", "()Ljava/util/Date;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getSerialNumber()"/> 
         /// </summary>
         public Java.Math.BigInteger SerialNumber
         {
-            get { return IExecute<Java.Math.BigInteger>("getSerialNumber"); }
+            get { return IExecuteWithSignature<Java.Math.BigInteger>("getSerialNumber", "()Ljava/math/BigInteger;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getSigAlgName()"/> 
         /// </summary>
         public Java.Lang.String SigAlgName
         {
-            get { return IExecute<Java.Lang.String>("getSigAlgName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getSigAlgName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getSigAlgOID()"/> 
         /// </summary>
         public Java.Lang.String SigAlgOID
         {
-            get { return IExecute<Java.Lang.String>("getSigAlgOID"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getSigAlgOID", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getSigAlgParams()"/> 
         /// </summary>
         public byte[] SigAlgParams
         {
-            get { return IExecuteArray<byte>("getSigAlgParams"); }
+            get { return IExecuteWithSignatureArray<byte>("getSigAlgParams", "()[B"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getSignature()"/> 
         /// </summary>
         public byte[] Signature
         {
-            get { return IExecuteArray<byte>("getSignature"); }
+            get { return IExecuteWithSignatureArray<byte>("getSignature", "()[B"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getSubjectAlternativeNames()"/> 
         /// </summary>
         public Java.Util.Collection<Java.Util.List<object>> SubjectAlternativeNames
         {
-            get { return IExecute<Java.Util.Collection<Java.Util.List<object>>>("getSubjectAlternativeNames"); }
+            get { return IExecuteWithSignature<Java.Util.Collection<Java.Util.List<object>>>("getSubjectAlternativeNames", "()Ljava/util/Collection;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getSubjectDN()"/> 
         /// </summary>
         public Java.Security.Principal SubjectDN
         {
-            get { return IExecute<Java.Security.Principal>("getSubjectDN"); }
+            get { return IExecuteWithSignature<Java.Security.Principal>("getSubjectDN", "()Ljava/security/Principal;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getSubjectUniqueID()"/> 
         /// </summary>
         public bool[] SubjectUniqueID
         {
-            get { return IExecuteArray<bool>("getSubjectUniqueID"); }
+            get { return IExecuteWithSignatureArray<bool>("getSubjectUniqueID", "()[Z"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getSubjectX500Principal()"/> 
         /// </summary>
         public Javax.Security.Auth.X500.X500Principal SubjectX500Principal
         {
-            get { return IExecute<Javax.Security.Auth.X500.X500Principal>("getSubjectX500Principal"); }
+            get { return IExecuteWithSignature<Javax.Security.Auth.X500.X500Principal>("getSubjectX500Principal", "()Ljavax/security/auth/x500/X500Principal;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getTBSCertificate()"/> 
         /// </summary>
         public byte[] TBSCertificate
         {
-            get { return IExecuteArray<byte>("getTBSCertificate"); }
+            get { return IExecuteWithSignatureArray<byte>("getTBSCertificate", "()[B"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getVersion()"/> 
         /// </summary>
         public int Version
         {
-            get { return IExecute<int>("getVersion"); }
+            get { return IExecuteWithSignature<int>("getVersion", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#checkValidity()"/>
@@ -197,7 +197,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.Cert.CertificateNotYetValidException"/>
         public void CheckValidity()
         {
-            IExecute("checkValidity");
+            IExecuteWithSignature("checkValidity", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#checkValidity(java.util.Date)"/>
@@ -207,7 +207,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.Cert.CertificateNotYetValidException"/>
         public void CheckValidity(Java.Util.Date arg0)
         {
-            IExecute("checkValidity", arg0);
+            IExecuteWithSignature("checkValidity", "(Ljava/util/Date;)V", arg0);
         }
 
         #endregion

@@ -94,7 +94,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="bool"/></returns>
         public bool IsArchive()
         {
-            return IExecute<bool>("isArchive");
+            return IExecuteWithSignature<bool>("isArchive", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isHidden()"/>
@@ -103,7 +103,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="bool"/></returns>
         public bool IsHidden()
         {
-            return IExecute<bool>("isHidden");
+            return IExecuteWithSignature<bool>("isHidden", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isReadOnly()"/>
@@ -112,7 +112,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="bool"/></returns>
         public bool IsReadOnly()
         {
-            return IExecute<bool>("isReadOnly");
+            return IExecuteWithSignature<bool>("isReadOnly", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isSystem()"/>
@@ -121,7 +121,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="bool"/></returns>
         public bool IsSystem()
         {
-            return IExecute<bool>("isSystem");
+            return IExecuteWithSignature<bool>("isSystem", "()Z");
         }
 
         #endregion

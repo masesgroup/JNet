@@ -56,49 +56,49 @@ namespace Javax.Swing.Colorchooser
         /// </summary>
         public Javax.Swing.Colorchooser.ColorSelectionModel ColorSelectionModel
         {
-            get { return IExecute<Javax.Swing.Colorchooser.ColorSelectionModel>("getColorSelectionModel"); }
+            get { return IExecuteWithSignature<Javax.Swing.Colorchooser.ColorSelectionModel>("getColorSelectionModel", "()Ljavax/swing/colorchooser/ColorSelectionModel;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/AbstractColorChooserPanel.html#getDisplayedMnemonicIndex()"/> 
         /// </summary>
         public int DisplayedMnemonicIndex
         {
-            get { return IExecute<int>("getDisplayedMnemonicIndex"); }
+            get { return IExecuteWithSignature<int>("getDisplayedMnemonicIndex", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/AbstractColorChooserPanel.html#getDisplayName()"/> 
         /// </summary>
         public Java.Lang.String DisplayName
         {
-            get { return IExecute<Java.Lang.String>("getDisplayName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/AbstractColorChooserPanel.html#getLargeDisplayIcon()"/> 
         /// </summary>
         public Javax.Swing.Icon LargeDisplayIcon
         {
-            get { return IExecute<Javax.Swing.Icon>("getLargeDisplayIcon"); }
+            get { return IExecuteWithSignature<Javax.Swing.Icon>("getLargeDisplayIcon", "()Ljavax/swing/Icon;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/AbstractColorChooserPanel.html#getMnemonic()"/> 
         /// </summary>
         public int Mnemonic
         {
-            get { return IExecute<int>("getMnemonic"); }
+            get { return IExecuteWithSignature<int>("getMnemonic", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/AbstractColorChooserPanel.html#getSmallDisplayIcon()"/> 
         /// </summary>
         public Javax.Swing.Icon SmallDisplayIcon
         {
-            get { return IExecute<Javax.Swing.Icon>("getSmallDisplayIcon"); }
+            get { return IExecuteWithSignature<Javax.Swing.Icon>("getSmallDisplayIcon", "()Ljavax/swing/Icon;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/AbstractColorChooserPanel.html#updateChooser()"/>
         /// </summary>
         public void UpdateChooser()
         {
-            IExecute("updateChooser");
+            IExecuteWithSignature("updateChooser", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/AbstractColorChooserPanel.html#isColorTransparencySelectionEnabled()"/>
@@ -107,7 +107,7 @@ namespace Javax.Swing.Colorchooser
         /// <returns><see cref="bool"/></returns>
         public bool IsColorTransparencySelectionEnabled()
         {
-            return IExecute<bool>("isColorTransparencySelectionEnabled");
+            return IExecuteWithSignature<bool>("isColorTransparencySelectionEnabled", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/AbstractColorChooserPanel.html#installChooserPanel(javax.swing.JColorChooser)"/>
@@ -115,7 +115,7 @@ namespace Javax.Swing.Colorchooser
         /// <param name="arg0"><see cref="Javax.Swing.JColorChooser"/></param>
         public void InstallChooserPanel(Javax.Swing.JColorChooser arg0)
         {
-            IExecute("installChooserPanel", arg0);
+            IExecuteWithSignature("installChooserPanel", "(Ljavax/swing/JColorChooser;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/AbstractColorChooserPanel.html#setColorTransparencySelectionEnabled(boolean)"/>
@@ -123,7 +123,7 @@ namespace Javax.Swing.Colorchooser
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetColorTransparencySelectionEnabled(bool arg0)
         {
-            IExecute("setColorTransparencySelectionEnabled", arg0);
+            IExecuteWithSignature("setColorTransparencySelectionEnabled", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/AbstractColorChooserPanel.html#uninstallChooserPanel(javax.swing.JColorChooser)"/>
@@ -131,7 +131,7 @@ namespace Javax.Swing.Colorchooser
         /// <param name="arg0"><see cref="Javax.Swing.JColorChooser"/></param>
         public void UninstallChooserPanel(Javax.Swing.JColorChooser arg0)
         {
-            IExecute("uninstallChooserPanel", arg0);
+            IExecuteWithSignature("uninstallChooserPanel", "(Ljavax/swing/JColorChooser;)V", arg0);
         }
 
         #endregion

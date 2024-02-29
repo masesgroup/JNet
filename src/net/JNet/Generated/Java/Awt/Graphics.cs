@@ -50,35 +50,35 @@ namespace Java.Awt
         /// </summary>
         public Java.Awt.Shape Clip
         {
-            get { return IExecute<Java.Awt.Shape>("getClip"); } set { IExecute("setClip", value); }
+            get { return IExecuteWithSignature<Java.Awt.Shape>("getClip", "()Ljava/awt/Shape;"); } set { IExecuteWithSignature("setClip", "(Ljava/awt/Shape;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#getClipBounds()"/> 
         /// </summary>
         public Java.Awt.Rectangle ClipBounds
         {
-            get { return IExecute<Java.Awt.Rectangle>("getClipBounds"); }
+            get { return IExecuteWithSignature<Java.Awt.Rectangle>("getClipBounds", "()Ljava/awt/Rectangle;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#getColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#setColor(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color Color
         {
-            get { return IExecute<Java.Awt.Color>("getColor"); } set { IExecute("setColor", value); }
+            get { return IExecuteWithSignature<Java.Awt.Color>("getColor", "()Ljava/awt/Color;"); } set { IExecuteWithSignature("setColor", "(Ljava/awt/Color;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#getFont()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#setFont(java.awt.Font)"/>
         /// </summary>
         public Java.Awt.Font Font
         {
-            get { return IExecute<Java.Awt.Font>("getFont"); } set { IExecute("setFont", value); }
+            get { return IExecuteWithSignature<Java.Awt.Font>("getFont", "()Ljava/awt/Font;"); } set { IExecuteWithSignature("setFont", "(Ljava/awt/Font;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#getFontMetrics()"/> 
         /// </summary>
         public Java.Awt.FontMetrics FontMetrics
         {
-            get { return IExecute<Java.Awt.FontMetrics>("getFontMetrics"); }
+            get { return IExecuteWithSignature<Java.Awt.FontMetrics>("getFontMetrics", "()Ljava/awt/FontMetrics;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#drawImage(java.awt.Image,int,int,int,int,int,int,int,int,java.awt.Color,java.awt.image.ImageObserver)"/>
@@ -178,7 +178,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.FontMetrics"/></returns>
         public Java.Awt.FontMetrics GetFontMetrics(Java.Awt.Font arg0)
         {
-            return IExecute<Java.Awt.FontMetrics>("getFontMetrics", arg0);
+            return IExecuteWithSignature<Java.Awt.FontMetrics>("getFontMetrics", "(Ljava/awt/Font;)Ljava/awt/FontMetrics;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#create()"/>
@@ -187,7 +187,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Graphics"/></returns>
         public Java.Awt.Graphics Create()
         {
-            return IExecute<Java.Awt.Graphics>("create");
+            return IExecuteWithSignature<Java.Awt.Graphics>("create", "()Ljava/awt/Graphics;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#clearRect(int,int,int,int)"/>
@@ -229,7 +229,7 @@ namespace Java.Awt
         /// </summary>
         public new void Dispose()
         {
-            IExecute("dispose");
+            IExecuteWithSignature("dispose", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#drawArc(int,int,int,int,int,int)"/>
@@ -393,7 +393,7 @@ namespace Java.Awt
         /// </summary>
         public void SetPaintMode()
         {
-            IExecute("setPaintMode");
+            IExecuteWithSignature("setPaintMode", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#setXORMode(java.awt.Color)"/>
@@ -401,7 +401,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
         public void SetXORMode(Java.Awt.Color arg0)
         {
-            IExecute("setXORMode", arg0);
+            IExecuteWithSignature("setXORMode", "(Ljava/awt/Color;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#translate(int,int)"/>
@@ -443,7 +443,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle GetClipBounds(Java.Awt.Rectangle arg0)
         {
-            return IExecute<Java.Awt.Rectangle>("getClipBounds", arg0);
+            return IExecuteWithSignature<Java.Awt.Rectangle>("getClipBounds", "(Ljava/awt/Rectangle;)Ljava/awt/Rectangle;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#draw3DRect(int,int,int,int,boolean)"/>
@@ -487,7 +487,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Polygon"/></param>
         public void DrawPolygon(Java.Awt.Polygon arg0)
         {
-            IExecute("drawPolygon", arg0);
+            IExecuteWithSignature("drawPolygon", "(Ljava/awt/Polygon;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#drawRect(int,int,int,int)"/>
@@ -518,7 +518,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Polygon"/></param>
         public void FillPolygon(Java.Awt.Polygon arg0)
         {
-            IExecute("fillPolygon", arg0);
+            IExecuteWithSignature("fillPolygon", "(Ljava/awt/Polygon;)V", arg0);
         }
 
         #endregion

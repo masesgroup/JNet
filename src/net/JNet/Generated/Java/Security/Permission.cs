@@ -66,14 +66,14 @@ namespace Java.Security
         /// </summary>
         public Java.Lang.String Actions
         {
-            get { return IExecute<Java.Lang.String>("getActions"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getActions", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Permission.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Permission.html#implies(java.security.Permission)"/>
@@ -82,7 +82,7 @@ namespace Java.Security
         /// <returns><see cref="bool"/></returns>
         public bool Implies(Java.Security.Permission arg0)
         {
-            return IExecute<bool>("implies", arg0);
+            return IExecuteWithSignature<bool>("implies", "(Ljava/security/Permission;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Permission.html#newPermissionCollection()"/>
@@ -91,7 +91,7 @@ namespace Java.Security
         /// <returns><see cref="Java.Security.PermissionCollection"/></returns>
         public Java.Security.PermissionCollection NewPermissionCollection()
         {
-            return IExecute<Java.Security.PermissionCollection>("newPermissionCollection");
+            return IExecuteWithSignature<Java.Security.PermissionCollection>("newPermissionCollection", "()Ljava/security/PermissionCollection;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Permission.html#checkGuard(java.lang.Object)"/>
@@ -100,7 +100,7 @@ namespace Java.Security
         /// <exception cref="Java.Lang.SecurityException"/>
         public void CheckGuard(object arg0)
         {
-            IExecute("checkGuard", arg0);
+            IExecuteWithSignature("checkGuard", "(Ljava/lang/Object;)V", arg0);
         }
 
         #endregion

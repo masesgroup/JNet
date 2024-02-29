@@ -98,7 +98,7 @@ namespace Java.Nio.File
         /// <returns><see cref="bool"/></returns>
         public bool IsValid()
         {
-            return IExecute<bool>("isValid");
+            return IExecuteWithSignature<bool>("isValid", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#reset()"/>
@@ -107,7 +107,7 @@ namespace Java.Nio.File
         /// <returns><see cref="bool"/></returns>
         public bool Reset()
         {
-            return IExecute<bool>("reset");
+            return IExecuteWithSignature<bool>("reset", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#watchable()"/>
@@ -116,7 +116,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.Watchable"/></returns>
         public Java.Nio.File.Watchable Watchable()
         {
-            return IExecute<Java.Nio.File.Watchable>("watchable");
+            return IExecuteWithSignature<Java.Nio.File.Watchable>("watchable", "()Ljava/nio/file/Watchable;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#pollEvents()"/>
@@ -125,14 +125,14 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Java.Nio.File.WatchEvent<object>> PollEvents()
         {
-            return IExecute<Java.Util.List<Java.Nio.File.WatchEvent<object>>>("pollEvents");
+            return IExecuteWithSignature<Java.Util.List<Java.Nio.File.WatchEvent<object>>>("pollEvents", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#cancel()"/>
         /// </summary>
         public void Cancel()
         {
-            IExecute("cancel");
+            IExecuteWithSignature("cancel", "()V");
         }
 
         #endregion

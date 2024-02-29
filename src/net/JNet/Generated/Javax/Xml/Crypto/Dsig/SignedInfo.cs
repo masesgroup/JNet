@@ -88,35 +88,35 @@ namespace Javax.Xml.Crypto.Dsig
         /// </summary>
         public Javax.Xml.Crypto.Dsig.CanonicalizationMethod CanonicalizationMethod
         {
-            get { return IExecute<Javax.Xml.Crypto.Dsig.CanonicalizationMethod>("getCanonicalizationMethod"); }
+            get { return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.CanonicalizationMethod>("getCanonicalizationMethod", "()Ljavax/xml/crypto/dsig/CanonicalizationMethod;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignedInfo.html#getCanonicalizedData()"/> 
         /// </summary>
         public Java.Io.InputStream CanonicalizedData
         {
-            get { return IExecute<Java.Io.InputStream>("getCanonicalizedData"); }
+            get { return IExecuteWithSignature<Java.Io.InputStream>("getCanonicalizedData", "()Ljava/io/InputStream;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignedInfo.html#getId()"/> 
         /// </summary>
         public Java.Lang.String Id
         {
-            get { return IExecute<Java.Lang.String>("getId"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignedInfo.html#getReferences()"/> 
         /// </summary>
         public Java.Util.List<Javax.Xml.Crypto.Dsig.Reference> References
         {
-            get { return IExecute<Java.Util.List<Javax.Xml.Crypto.Dsig.Reference>>("getReferences"); }
+            get { return IExecuteWithSignature<Java.Util.List<Javax.Xml.Crypto.Dsig.Reference>>("getReferences", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignedInfo.html#getSignatureMethod()"/> 
         /// </summary>
         public Javax.Xml.Crypto.Dsig.SignatureMethod SignatureMethod
         {
-            get { return IExecute<Javax.Xml.Crypto.Dsig.SignatureMethod>("getSignatureMethod"); }
+            get { return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.SignatureMethod>("getSignatureMethod", "()Ljavax/xml/crypto/dsig/SignatureMethod;"); }
         }
 
         #endregion

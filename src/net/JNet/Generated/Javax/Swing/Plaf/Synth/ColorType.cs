@@ -86,7 +86,7 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         public int ID
         {
-            get { return IExecute<int>("getID"); }
+            get { return IExecuteWithSignature<int>("getID", "()I"); }
         }
 
         #endregion

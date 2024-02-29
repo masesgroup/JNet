@@ -76,7 +76,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape CreateStrokedShape(Java.Awt.Shape arg0)
         {
-            return IExecute<Java.Awt.Shape>("createStrokedShape", arg0);
+            return IExecuteWithSignature<Java.Awt.Shape>("createStrokedShape", "(Ljava/awt/Shape;)Ljava/awt/Shape;", arg0);
         }
 
         #endregion

@@ -50,21 +50,21 @@ namespace Javax.Swing.Text
         /// </summary>
         public int EndOffset
         {
-            get { return IExecute<int>("getEndOffset"); }
+            get { return IExecuteWithSignature<int>("getEndOffset", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractWriter.html#getLineSeparator()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractWriter.html#setLineSeparator(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String LineSeparator
         {
-            get { return IExecute<Java.Lang.String>("getLineSeparator"); } set { IExecute("setLineSeparator", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getLineSeparator", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setLineSeparator", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractWriter.html#getStartOffset()"/> 
         /// </summary>
         public int StartOffset
         {
-            get { return IExecute<int>("getStartOffset"); }
+            get { return IExecuteWithSignature<int>("getStartOffset", "()I"); }
         }
 
         #endregion

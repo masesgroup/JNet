@@ -72,7 +72,7 @@ namespace Java.Beans.Beancontext
         /// </summary>
         public Java.Beans.Beancontext.BeanContextChild GetBeanContextProxy
         {
-            get { return IExecute<Java.Beans.Beancontext.BeanContextChild>("getBeanContextProxy"); }
+            get { return IExecuteWithSignature<Java.Beans.Beancontext.BeanContextChild>("getBeanContextProxy", "()Ljava/beans/beancontext/BeanContextChild;"); }
         }
 
         #endregion

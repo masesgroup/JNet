@@ -74,7 +74,7 @@ namespace Java.Awt.DesktopNs
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.OpenURIEvent"/></param>
         public void OpenURI(Java.Awt.DesktopNs.OpenURIEvent arg0)
         {
-            IExecute("openURI", arg0);
+            IExecuteWithSignature("openURI", "(Ljava/awt/desktop/OpenURIEvent;)V", arg0);
         }
 
         #endregion

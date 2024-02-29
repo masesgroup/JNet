@@ -92,42 +92,42 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Java.Lang.String Align
         {
-            get { return IExecute<Java.Lang.String>("getAlign"); } set { IExecute("setAlign", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getAlign", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAlign", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#getCh()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#setCh(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Ch
         {
-            get { return IExecute<Java.Lang.String>("getCh"); } set { IExecute("setCh", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getCh", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setCh", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#getChOff()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#setChOff(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String ChOff
         {
-            get { return IExecute<Java.Lang.String>("getChOff"); } set { IExecute("setChOff", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getChOff", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setChOff", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#getSpan()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#setSpan(int)"/>
         /// </summary>
         public int Span
         {
-            get { return IExecute<int>("getSpan"); } set { IExecute("setSpan", value); }
+            get { return IExecuteWithSignature<int>("getSpan", "()I"); } set { IExecuteWithSignature("setSpan", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#getVAlign()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#setVAlign(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String VAlign
         {
-            get { return IExecute<Java.Lang.String>("getVAlign"); } set { IExecute("setVAlign", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getVAlign", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setVAlign", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#getWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableColElement.html#setWidth(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Width
         {
-            get { return IExecute<Java.Lang.String>("getWidth"); } set { IExecute("setWidth", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getWidth", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setWidth", "(Ljava/lang/String;)V", value); }
         }
 
         #endregion

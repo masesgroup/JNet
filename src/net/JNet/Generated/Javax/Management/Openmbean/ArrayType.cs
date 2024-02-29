@@ -69,7 +69,7 @@ namespace Javax.Management.Openmbean
         /// <exception cref="Javax.Management.Openmbean.OpenDataException"/>
         public static Javax.Management.Openmbean.ArrayType GetArrayType(Javax.Management.Openmbean.OpenType arg0)
         {
-            return SExecute<Javax.Management.Openmbean.ArrayType>(LocalBridgeClazz, "getArrayType", arg0);
+            return SExecuteWithSignature<Javax.Management.Openmbean.ArrayType>(LocalBridgeClazz, "getArrayType", "(Ljavax/management/openmbean/OpenType;)Ljavax/management/openmbean/ArrayType;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/ArrayType.html#getPrimitiveArrayType(java.lang.Class)"/>
@@ -78,7 +78,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="Javax.Management.Openmbean.ArrayType"/></returns>
         public static Javax.Management.Openmbean.ArrayType GetPrimitiveArrayType(Java.Lang.Class arg0)
         {
-            return SExecute<Javax.Management.Openmbean.ArrayType>(LocalBridgeClazz, "getPrimitiveArrayType", arg0);
+            return SExecuteWithSignature<Javax.Management.Openmbean.ArrayType>(LocalBridgeClazz, "getPrimitiveArrayType", "(Ljava/lang/Class;)Ljavax/management/openmbean/ArrayType;", arg0);
         }
 
         #endregion
@@ -89,14 +89,14 @@ namespace Javax.Management.Openmbean
         /// </summary>
         public int Dimension
         {
-            get { return IExecute<int>("getDimension"); }
+            get { return IExecuteWithSignature<int>("getDimension", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/ArrayType.html#getElementOpenType()"/> 
         /// </summary>
         public Javax.Management.Openmbean.OpenType ElementOpenType
         {
-            get { return IExecute<Javax.Management.Openmbean.OpenType>("getElementOpenType"); }
+            get { return IExecuteWithSignature<Javax.Management.Openmbean.OpenType>("getElementOpenType", "()Ljavax/management/openmbean/OpenType;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/ArrayType.html#isPrimitiveArray()"/>
@@ -105,7 +105,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="bool"/></returns>
         public bool IsPrimitiveArray()
         {
-            return IExecute<bool>("isPrimitiveArray");
+            return IExecuteWithSignature<bool>("isPrimitiveArray", "()Z");
         }
 
         #endregion
@@ -167,7 +167,7 @@ namespace Javax.Management.Openmbean
         /// <exception cref="Javax.Management.Openmbean.OpenDataException"/>
         public static Javax.Management.Openmbean.ArrayType<E[]> GetArrayType<E>(Javax.Management.Openmbean.OpenType<E> arg0)
         {
-            return SExecute<Javax.Management.Openmbean.ArrayType<E[]>>(LocalBridgeClazz, "getArrayType", arg0);
+            return SExecuteWithSignature<Javax.Management.Openmbean.ArrayType<E[]>>(LocalBridgeClazz, "getArrayType", "(Ljavax/management/openmbean/OpenType;)Ljavax/management/openmbean/ArrayType;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/ArrayType.html#getPrimitiveArrayType(java.lang.Class)"/>
@@ -176,7 +176,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="Javax.Management.Openmbean.ArrayType"/></returns>
         public static Javax.Management.Openmbean.ArrayType<T> GetPrimitiveArrayType(Java.Lang.Class arg0)
         {
-            return SExecute<Javax.Management.Openmbean.ArrayType<T>>(LocalBridgeClazz, "getPrimitiveArrayType", arg0);
+            return SExecuteWithSignature<Javax.Management.Openmbean.ArrayType<T>>(LocalBridgeClazz, "getPrimitiveArrayType", "(Ljava/lang/Class;)Ljavax/management/openmbean/ArrayType;", arg0);
         }
 
         #endregion
@@ -187,14 +187,14 @@ namespace Javax.Management.Openmbean
         /// </summary>
         public int Dimension
         {
-            get { return IExecute<int>("getDimension"); }
+            get { return IExecuteWithSignature<int>("getDimension", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/ArrayType.html#getElementOpenType()"/> 
         /// </summary>
         public Javax.Management.Openmbean.OpenType<object> ElementOpenType
         {
-            get { return IExecute<Javax.Management.Openmbean.OpenType<object>>("getElementOpenType"); }
+            get { return IExecuteWithSignature<Javax.Management.Openmbean.OpenType<object>>("getElementOpenType", "()Ljavax/management/openmbean/OpenType;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/ArrayType.html#isPrimitiveArray()"/>
@@ -203,7 +203,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="bool"/></returns>
         public bool IsPrimitiveArray()
         {
-            return IExecute<bool>("isPrimitiveArray");
+            return IExecuteWithSignature<bool>("isPrimitiveArray", "()Z");
         }
 
         #endregion

@@ -78,7 +78,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.Keymap"/></returns>
         public static Javax.Swing.Text.Keymap GetKeymap(Java.Lang.String arg0)
         {
-            return SExecute<Javax.Swing.Text.Keymap>(LocalBridgeClazz, "getKeymap", arg0);
+            return SExecuteWithSignature<Javax.Swing.Text.Keymap>(LocalBridgeClazz, "getKeymap", "(Ljava/lang/String;)Ljavax/swing/text/Keymap;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#removeKeymap(java.lang.String)"/>
@@ -87,7 +87,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.Keymap"/></returns>
         public static Javax.Swing.Text.Keymap RemoveKeymap(Java.Lang.String arg0)
         {
-            return SExecute<Javax.Swing.Text.Keymap>(LocalBridgeClazz, "removeKeymap", arg0);
+            return SExecuteWithSignature<Javax.Swing.Text.Keymap>(LocalBridgeClazz, "removeKeymap", "(Ljava/lang/String;)Ljavax/swing/text/Keymap;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#loadKeymap(javax.swing.text.Keymap,javax.swing.text.JTextComponent.KeyBinding[],javax.swing.Action[])"/>
@@ -108,168 +108,168 @@ namespace Javax.Swing.Text
         /// </summary>
         public Javax.Swing.Action[] Actions
         {
-            get { return IExecuteArray<Javax.Swing.Action>("getActions"); }
+            get { return IExecuteWithSignatureArray<Javax.Swing.Action>("getActions", "()[Ljavax/swing/Action;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getCaret()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setCaret(javax.swing.text.Caret)"/>
         /// </summary>
         public Javax.Swing.Text.Caret Caret
         {
-            get { return IExecute<Javax.Swing.Text.Caret>("getCaret"); } set { IExecute("setCaret", value); }
+            get { return IExecuteWithSignature<Javax.Swing.Text.Caret>("getCaret", "()Ljavax/swing/text/Caret;"); } set { IExecuteWithSignature("setCaret", "(Ljavax/swing/text/Caret;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getCaretColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setCaretColor(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color CaretColor
         {
-            get { return IExecute<Java.Awt.Color>("getCaretColor"); } set { IExecute("setCaretColor", value); }
+            get { return IExecuteWithSignature<Java.Awt.Color>("getCaretColor", "()Ljava/awt/Color;"); } set { IExecuteWithSignature("setCaretColor", "(Ljava/awt/Color;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getCaretListeners()"/> 
         /// </summary>
         public Javax.Swing.Event.CaretListener[] CaretListeners
         {
-            get { return IExecuteArray<Javax.Swing.Event.CaretListener>("getCaretListeners"); }
+            get { return IExecuteWithSignatureArray<Javax.Swing.Event.CaretListener>("getCaretListeners", "()[Ljavax/swing/event/CaretListener;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getCaretPosition()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setCaretPosition(int)"/>
         /// </summary>
         public int CaretPosition
         {
-            get { return IExecute<int>("getCaretPosition"); } set { IExecute("setCaretPosition", value); }
+            get { return IExecuteWithSignature<int>("getCaretPosition", "()I"); } set { IExecuteWithSignature("setCaretPosition", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getDisabledTextColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setDisabledTextColor(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color DisabledTextColor
         {
-            get { return IExecute<Java.Awt.Color>("getDisabledTextColor"); } set { IExecute("setDisabledTextColor", value); }
+            get { return IExecuteWithSignature<Java.Awt.Color>("getDisabledTextColor", "()Ljava/awt/Color;"); } set { IExecuteWithSignature("setDisabledTextColor", "(Ljava/awt/Color;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getDocument()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setDocument(javax.swing.text.Document)"/>
         /// </summary>
         public Javax.Swing.Text.Document Document
         {
-            get { return IExecute<Javax.Swing.Text.Document>("getDocument"); } set { IExecute("setDocument", value); }
+            get { return IExecuteWithSignature<Javax.Swing.Text.Document>("getDocument", "()Ljavax/swing/text/Document;"); } set { IExecuteWithSignature("setDocument", "(Ljavax/swing/text/Document;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getDragEnabled()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setDragEnabled(boolean)"/>
         /// </summary>
         public bool DragEnabled
         {
-            get { return IExecute<bool>("getDragEnabled"); } set { IExecute("setDragEnabled", value); }
+            get { return IExecuteWithSignature<bool>("getDragEnabled", "()Z"); } set { IExecuteWithSignature("setDragEnabled", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getDropMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setDropMode(javax.swing.DropMode)"/>
         /// </summary>
         public Javax.Swing.DropMode DropMode
         {
-            get { return IExecute<Javax.Swing.DropMode>("getDropMode"); } set { IExecute("setDropMode", value); }
+            get { return IExecuteWithSignature<Javax.Swing.DropMode>("getDropMode", "()Ljavax/swing/DropMode;"); } set { IExecuteWithSignature("setDropMode", "(Ljavax/swing/DropMode;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getFocusAccelerator()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setFocusAccelerator(char)"/>
         /// </summary>
         public char FocusAccelerator
         {
-            get { return IExecute<char>("getFocusAccelerator"); } set { IExecute("setFocusAccelerator", value); }
+            get { return IExecuteWithSignature<char>("getFocusAccelerator", "()C"); } set { IExecuteWithSignature("setFocusAccelerator", "(C)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getDropLocation()"/> 
         /// </summary>
         public Javax.Swing.Text.JTextComponent.DropLocation GetDropLocation
         {
-            get { return IExecute<Javax.Swing.Text.JTextComponent.DropLocation>("getDropLocation"); }
+            get { return IExecuteWithSignature<Javax.Swing.Text.JTextComponent.DropLocation>("getDropLocation", "()Ljavax/swing/text/JTextComponent$DropLocation;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getHighlighter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setHighlighter(javax.swing.text.Highlighter)"/>
         /// </summary>
         public Javax.Swing.Text.Highlighter Highlighter
         {
-            get { return IExecute<Javax.Swing.Text.Highlighter>("getHighlighter"); } set { IExecute("setHighlighter", value); }
+            get { return IExecuteWithSignature<Javax.Swing.Text.Highlighter>("getHighlighter", "()Ljavax/swing/text/Highlighter;"); } set { IExecuteWithSignature("setHighlighter", "(Ljavax/swing/text/Highlighter;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getKeymap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setKeymap(javax.swing.text.Keymap)"/>
         /// </summary>
         public Javax.Swing.Text.Keymap Keymap
         {
-            get { return IExecute<Javax.Swing.Text.Keymap>("getKeymap"); } set { IExecute("setKeymap", value); }
+            get { return IExecuteWithSignature<Javax.Swing.Text.Keymap>("getKeymap", "()Ljavax/swing/text/Keymap;"); } set { IExecuteWithSignature("setKeymap", "(Ljavax/swing/text/Keymap;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getMargin()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setMargin(java.awt.Insets)"/>
         /// </summary>
         public Java.Awt.Insets Margin
         {
-            get { return IExecute<Java.Awt.Insets>("getMargin"); } set { IExecute("setMargin", value); }
+            get { return IExecuteWithSignature<Java.Awt.Insets>("getMargin", "()Ljava/awt/Insets;"); } set { IExecuteWithSignature("setMargin", "(Ljava/awt/Insets;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getNavigationFilter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setNavigationFilter(javax.swing.text.NavigationFilter)"/>
         /// </summary>
         public Javax.Swing.Text.NavigationFilter NavigationFilter
         {
-            get { return IExecute<Javax.Swing.Text.NavigationFilter>("getNavigationFilter"); } set { IExecute("setNavigationFilter", value); }
+            get { return IExecuteWithSignature<Javax.Swing.Text.NavigationFilter>("getNavigationFilter", "()Ljavax/swing/text/NavigationFilter;"); } set { IExecuteWithSignature("setNavigationFilter", "(Ljavax/swing/text/NavigationFilter;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getPreferredScrollableViewportSize()"/> 
         /// </summary>
         public Java.Awt.Dimension PreferredScrollableViewportSize
         {
-            get { return IExecute<Java.Awt.Dimension>("getPreferredScrollableViewportSize"); }
+            get { return IExecuteWithSignature<Java.Awt.Dimension>("getPreferredScrollableViewportSize", "()Ljava/awt/Dimension;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getScrollableTracksViewportHeight()"/> 
         /// </summary>
         public bool ScrollableTracksViewportHeight
         {
-            get { return IExecute<bool>("getScrollableTracksViewportHeight"); }
+            get { return IExecuteWithSignature<bool>("getScrollableTracksViewportHeight", "()Z"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getScrollableTracksViewportWidth()"/> 
         /// </summary>
         public bool ScrollableTracksViewportWidth
         {
-            get { return IExecute<bool>("getScrollableTracksViewportWidth"); }
+            get { return IExecuteWithSignature<bool>("getScrollableTracksViewportWidth", "()Z"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getSelectedText()"/> 
         /// </summary>
         public Java.Lang.String SelectedText
         {
-            get { return IExecute<Java.Lang.String>("getSelectedText"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getSelectedText", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getSelectedTextColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setSelectedTextColor(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color SelectedTextColor
         {
-            get { return IExecute<Java.Awt.Color>("getSelectedTextColor"); } set { IExecute("setSelectedTextColor", value); }
+            get { return IExecuteWithSignature<Java.Awt.Color>("getSelectedTextColor", "()Ljava/awt/Color;"); } set { IExecuteWithSignature("setSelectedTextColor", "(Ljava/awt/Color;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getSelectionColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setSelectionColor(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color SelectionColor
         {
-            get { return IExecute<Java.Awt.Color>("getSelectionColor"); } set { IExecute("setSelectionColor", value); }
+            get { return IExecuteWithSignature<Java.Awt.Color>("getSelectionColor", "()Ljava/awt/Color;"); } set { IExecuteWithSignature("setSelectionColor", "(Ljava/awt/Color;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getSelectionEnd()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setSelectionEnd(int)"/>
         /// </summary>
         public int SelectionEnd
         {
-            get { return IExecute<int>("getSelectionEnd"); } set { IExecute("setSelectionEnd", value); }
+            get { return IExecuteWithSignature<int>("getSelectionEnd", "()I"); } set { IExecuteWithSignature("setSelectionEnd", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getSelectionStart()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setSelectionStart(int)"/>
         /// </summary>
         public int SelectionStart
         {
-            get { return IExecute<int>("getSelectionStart"); } set { IExecute("setSelectionStart", value); }
+            get { return IExecuteWithSignature<int>("getSelectionStart", "()I"); } set { IExecuteWithSignature("setSelectionStart", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getText()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setText(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Text
         {
-            get { return IExecute<Java.Lang.String>("getText"); } set { IExecute("setText", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getText", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setText", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#isEditable()"/>
@@ -278,7 +278,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="bool"/></returns>
         public bool IsEditable()
         {
-            return IExecute<bool>("isEditable");
+            return IExecuteWithSignature<bool>("isEditable", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#print()"/>
@@ -288,7 +288,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Java.Awt.Print.PrinterException"/>
         public bool Print()
         {
-            return IExecute<bool>("print");
+            return IExecuteWithSignature<bool>("print", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#print(java.text.MessageFormat,java.text.MessageFormat,boolean,javax.print.PrintService,javax.print.attribute.PrintRequestAttributeSet,boolean)"/>
@@ -345,7 +345,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="int"/></returns>
         public int ViewToModel2D(Java.Awt.Geom.Point2D arg0)
         {
-            return IExecute<int>("viewToModel2D", arg0);
+            return IExecuteWithSignature<int>("viewToModel2D", "(Ljava/awt/geom/Point2D;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#modelToView2D(int)"/>
@@ -355,7 +355,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public Java.Awt.Geom.Rectangle2D ModelToView2D(int arg0)
         {
-            return IExecute<Java.Awt.Geom.Rectangle2D>("modelToView2D", arg0);
+            return IExecuteWithSignature<Java.Awt.Geom.Rectangle2D>("modelToView2D", "(I)Ljava/awt/geom/Rectangle2D;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getPrintable(java.text.MessageFormat,java.text.MessageFormat)"/>
@@ -384,21 +384,21 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Javax.Swing.Event.CaretListener"/></param>
         public void AddCaretListener(Javax.Swing.Event.CaretListener arg0)
         {
-            IExecute("addCaretListener", arg0);
+            IExecuteWithSignature("addCaretListener", "(Ljavax/swing/event/CaretListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#copy()"/>
         /// </summary>
         public void Copy()
         {
-            IExecute("copy");
+            IExecuteWithSignature("copy", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#cut()"/>
         /// </summary>
         public void Cut()
         {
-            IExecute("cut");
+            IExecuteWithSignature("cut", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#moveCaretPosition(int)"/>
@@ -406,14 +406,14 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="int"/></param>
         public void MoveCaretPosition(int arg0)
         {
-            IExecute("moveCaretPosition", arg0);
+            IExecuteWithSignature("moveCaretPosition", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#paste()"/>
         /// </summary>
         public void Paste()
         {
-            IExecute("paste");
+            IExecuteWithSignature("paste", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#read(java.io.Reader,java.lang.Object)"/>
@@ -431,7 +431,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Javax.Swing.Event.CaretListener"/></param>
         public void RemoveCaretListener(Javax.Swing.Event.CaretListener arg0)
         {
-            IExecute("removeCaretListener", arg0);
+            IExecuteWithSignature("removeCaretListener", "(Ljavax/swing/event/CaretListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#replaceSelection(java.lang.String)"/>
@@ -439,7 +439,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void ReplaceSelection(Java.Lang.String arg0)
         {
-            IExecute("replaceSelection", arg0);
+            IExecuteWithSignature("replaceSelection", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#select(int,int)"/>
@@ -455,7 +455,7 @@ namespace Javax.Swing.Text
         /// </summary>
         public void SelectAll()
         {
-            IExecute("selectAll");
+            IExecuteWithSignature("selectAll", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setEditable(boolean)"/>
@@ -463,7 +463,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetEditable(bool arg0)
         {
-            IExecute("setEditable", arg0);
+            IExecuteWithSignature("setEditable", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setUI(javax.swing.plaf.TextUI)"/>
@@ -471,7 +471,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.TextUI"/></param>
         public void SetUI(Javax.Swing.Plaf.TextUI arg0)
         {
-            IExecute("setUI", arg0);
+            IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/TextUI;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#write(java.io.Writer)"/>
@@ -480,7 +480,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Java.Io.IOException"/>
         public void Write(Java.Io.Writer arg0)
         {
-            IExecute("write", arg0);
+            IExecuteWithSignature("write", "(Ljava/io/Writer;)V", arg0);
         }
 
         #endregion
@@ -543,42 +543,42 @@ namespace Javax.Swing.Text
             /// </summary>
             public int AccessibleActionCount
             {
-                get { return IExecute<int>("getAccessibleActionCount"); }
+                get { return IExecuteWithSignature<int>("getAccessibleActionCount", "()I"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getCaretPosition()"/> 
             /// </summary>
             public int CaretPosition
             {
-                get { return IExecute<int>("getCaretPosition"); }
+                get { return IExecuteWithSignature<int>("getCaretPosition", "()I"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getCharCount()"/> 
             /// </summary>
             public int CharCount
             {
-                get { return IExecute<int>("getCharCount"); }
+                get { return IExecuteWithSignature<int>("getCharCount", "()I"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getSelectedText()"/> 
             /// </summary>
             public Java.Lang.String SelectedText
             {
-                get { return IExecute<Java.Lang.String>("getSelectedText"); }
+                get { return IExecuteWithSignature<Java.Lang.String>("getSelectedText", "()Ljava/lang/String;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getSelectionEnd()"/> 
             /// </summary>
             public int SelectionEnd
             {
-                get { return IExecute<int>("getSelectionEnd"); }
+                get { return IExecuteWithSignature<int>("getSelectionEnd", "()I"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getSelectionStart()"/> 
             /// </summary>
             public int SelectionStart
             {
-                get { return IExecute<int>("getSelectionStart"); }
+                get { return IExecuteWithSignature<int>("getSelectionStart", "()I"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#doAccessibleAction(int)"/>
@@ -587,7 +587,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="bool"/></returns>
             public bool DoAccessibleAction(int arg0)
             {
-                return IExecute<bool>("doAccessibleAction", arg0);
+                return IExecuteWithSignature<bool>("doAccessibleAction", "(I)Z", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getIndexAtPoint(java.awt.Point)"/>
@@ -596,7 +596,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="int"/></returns>
             public int GetIndexAtPoint(Java.Awt.Point arg0)
             {
-                return IExecute<int>("getIndexAtPoint", arg0);
+                return IExecuteWithSignature<int>("getIndexAtPoint", "(Ljava/awt/Point;)I", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getCharacterBounds(int)"/>
@@ -605,7 +605,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="Java.Awt.Rectangle"/></returns>
             public Java.Awt.Rectangle GetCharacterBounds(int arg0)
             {
-                return IExecute<Java.Awt.Rectangle>("getCharacterBounds", arg0);
+                return IExecuteWithSignature<Java.Awt.Rectangle>("getCharacterBounds", "(I)Ljava/awt/Rectangle;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getTextBounds(int,int)"/>
@@ -624,7 +624,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="Java.Lang.String"/></returns>
             public Java.Lang.String GetAccessibleActionDescription(int arg0)
             {
-                return IExecute<Java.Lang.String>("getAccessibleActionDescription", arg0);
+                return IExecuteWithSignature<Java.Lang.String>("getAccessibleActionDescription", "(I)Ljava/lang/String;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getAfterIndex(int,int)"/>
@@ -703,7 +703,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
             public Javax.Swing.Text.AttributeSet GetCharacterAttribute(int arg0)
             {
-                return IExecute<Javax.Swing.Text.AttributeSet>("getCharacterAttribute", arg0);
+                return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("getCharacterAttribute", "(I)Ljavax/swing/text/AttributeSet;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#caretUpdate(javax.swing.event.CaretEvent)"/>
@@ -711,7 +711,7 @@ namespace Javax.Swing.Text
             /// <param name="arg0"><see cref="Javax.Swing.Event.CaretEvent"/></param>
             public void CaretUpdate(Javax.Swing.Event.CaretEvent arg0)
             {
-                IExecute("caretUpdate", arg0);
+                IExecuteWithSignature("caretUpdate", "(Ljavax/swing/event/CaretEvent;)V", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#changedUpdate(javax.swing.event.DocumentEvent)"/>
@@ -719,7 +719,7 @@ namespace Javax.Swing.Text
             /// <param name="arg0"><see cref="Javax.Swing.Event.DocumentEvent"/></param>
             public void ChangedUpdate(Javax.Swing.Event.DocumentEvent arg0)
             {
-                IExecute("changedUpdate", arg0);
+                IExecuteWithSignature("changedUpdate", "(Ljavax/swing/event/DocumentEvent;)V", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#cut(int,int)"/>
@@ -754,7 +754,7 @@ namespace Javax.Swing.Text
             /// <param name="arg0"><see cref="Javax.Swing.Event.DocumentEvent"/></param>
             public void InsertUpdate(Javax.Swing.Event.DocumentEvent arg0)
             {
-                IExecute("insertUpdate", arg0);
+                IExecuteWithSignature("insertUpdate", "(Ljavax/swing/event/DocumentEvent;)V", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#paste(int)"/>
@@ -762,7 +762,7 @@ namespace Javax.Swing.Text
             /// <param name="arg0"><see cref="int"/></param>
             public void Paste(int arg0)
             {
-                IExecute("paste", arg0);
+                IExecuteWithSignature("paste", "(I)V", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#removeUpdate(javax.swing.event.DocumentEvent)"/>
@@ -770,7 +770,7 @@ namespace Javax.Swing.Text
             /// <param name="arg0"><see cref="Javax.Swing.Event.DocumentEvent"/></param>
             public void RemoveUpdate(Javax.Swing.Event.DocumentEvent arg0)
             {
-                IExecute("removeUpdate", arg0);
+                IExecuteWithSignature("removeUpdate", "(Ljavax/swing/event/DocumentEvent;)V", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#replaceText(int,int,java.lang.String)"/>
@@ -807,7 +807,7 @@ namespace Javax.Swing.Text
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             public void SetTextContents(Java.Lang.String arg0)
             {
-                IExecute("setTextContents", arg0);
+                IExecuteWithSignature("setTextContents", "(Ljava/lang/String;)V", arg0);
             }
 
             #endregion
@@ -845,14 +845,14 @@ namespace Javax.Swing.Text
             /// </summary>
             public Javax.Swing.Text.Position.Bias Bias
             {
-                get { return IExecute<Javax.Swing.Text.Position.Bias>("getBias"); }
+                get { return IExecuteWithSignature<Javax.Swing.Text.Position.Bias>("getBias", "()Ljavax/swing/text/Position$Bias;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.DropLocation.html#getIndex()"/> 
             /// </summary>
             public int Index
             {
-                get { return IExecute<int>("getIndex"); }
+                get { return IExecuteWithSignature<int>("getIndex", "()I"); }
             }
 
             #endregion

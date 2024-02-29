@@ -52,7 +52,7 @@ namespace Javax.Swing.Plaf
         /// <returns><see cref="bool"/></returns>
         public bool ContainsCustomComponents(Javax.Swing.JOptionPane arg0)
         {
-            return IExecute<bool>("containsCustomComponents", arg0);
+            return IExecuteWithSignature<bool>("containsCustomComponents", "(Ljavax/swing/JOptionPane;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/OptionPaneUI.html#selectInitialValue(javax.swing.JOptionPane)"/>
@@ -60,7 +60,7 @@ namespace Javax.Swing.Plaf
         /// <param name="arg0"><see cref="Javax.Swing.JOptionPane"/></param>
         public void SelectInitialValue(Javax.Swing.JOptionPane arg0)
         {
-            IExecute("selectInitialValue", arg0);
+            IExecuteWithSignature("selectInitialValue", "(Ljavax/swing/JOptionPane;)V", arg0);
         }
 
         #endregion

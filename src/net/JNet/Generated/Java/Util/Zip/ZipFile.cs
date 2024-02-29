@@ -126,14 +126,14 @@ namespace Java.Util.Zip
         /// </summary>
         public Java.Lang.String Comment
         {
-            get { return IExecute<Java.Lang.String>("getComment"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getComment", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecute<Java.Lang.String>("getName"); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#size()"/>
@@ -142,7 +142,7 @@ namespace Java.Util.Zip
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecute<int>("size");
+            return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#getInputStream(java.util.zip.ZipEntry)"/>
@@ -152,7 +152,7 @@ namespace Java.Util.Zip
         /// <exception cref="Java.Io.IOException"/>
         public Java.Io.InputStream GetInputStream(Java.Util.Zip.ZipEntry arg0)
         {
-            return IExecute<Java.Io.InputStream>("getInputStream", arg0);
+            return IExecuteWithSignature<Java.Io.InputStream>("getInputStream", "(Ljava/util/zip/ZipEntry;)Ljava/io/InputStream;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#entries()"/>
@@ -162,7 +162,7 @@ namespace Java.Util.Zip
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<ReturnExtendsJava_Util_Zip_ZipEntry> Entries<ReturnExtendsJava_Util_Zip_ZipEntry>() where ReturnExtendsJava_Util_Zip_ZipEntry: Java.Util.Zip.ZipEntry
         {
-            return IExecute<Java.Util.Enumeration<ReturnExtendsJava_Util_Zip_ZipEntry>>("entries");
+            return IExecuteWithSignature<Java.Util.Enumeration<ReturnExtendsJava_Util_Zip_ZipEntry>>("entries", "()Ljava/util/Enumeration;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#stream()"/>
@@ -172,7 +172,7 @@ namespace Java.Util.Zip
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<ReturnExtendsJava_Util_Zip_ZipEntry> Stream<ReturnExtendsJava_Util_Zip_ZipEntry>() where ReturnExtendsJava_Util_Zip_ZipEntry: Java.Util.Zip.ZipEntry
         {
-            return IExecute<Java.Util.Stream.Stream<ReturnExtendsJava_Util_Zip_ZipEntry>>("stream");
+            return IExecuteWithSignature<Java.Util.Stream.Stream<ReturnExtendsJava_Util_Zip_ZipEntry>>("stream", "()Ljava/util/stream/Stream;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#getEntry(java.lang.String)"/>
@@ -181,7 +181,7 @@ namespace Java.Util.Zip
         /// <returns><see cref="Java.Util.Zip.ZipEntry"/></returns>
         public Java.Util.Zip.ZipEntry GetEntry(Java.Lang.String arg0)
         {
-            return IExecute<Java.Util.Zip.ZipEntry>("getEntry", arg0);
+            return IExecuteWithSignature<Java.Util.Zip.ZipEntry>("getEntry", "(Ljava/lang/String;)Ljava/util/zip/ZipEntry;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#close()"/>
@@ -190,7 +190,7 @@ namespace Java.Util.Zip
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
-            IExecute("close");
+            IExecuteWithSignature("close", "()V");
         }
 
         #endregion

@@ -76,7 +76,7 @@ namespace Org.W3c.Dom.Ranges
         /// <returns><see cref="Org.W3c.Dom.Ranges.Range"/></returns>
         public Org.W3c.Dom.Ranges.Range CreateRange()
         {
-            return IExecute<Org.W3c.Dom.Ranges.Range>("createRange");
+            return IExecuteWithSignature<Org.W3c.Dom.Ranges.Range>("createRange", "()Lorg/w3c/dom/ranges/Range;");
         }
 
         #endregion

@@ -84,7 +84,7 @@ namespace Java.Io
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public void ReadExternal(Java.Io.ObjectInput arg0)
         {
-            IExecute("readExternal", arg0);
+            IExecuteWithSignature("readExternal", "(Ljava/io/ObjectInput;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Externalizable.html#writeExternal(java.io.ObjectOutput)"/>
@@ -93,7 +93,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void WriteExternal(Java.Io.ObjectOutput arg0)
         {
-            IExecute("writeExternal", arg0);
+            IExecuteWithSignature("writeExternal", "(Ljava/io/ObjectOutput;)V", arg0);
         }
 
         #endregion

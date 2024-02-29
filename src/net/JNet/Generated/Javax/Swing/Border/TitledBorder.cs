@@ -189,42 +189,42 @@ namespace Javax.Swing.Border
         /// </summary>
         public Javax.Swing.Border.Border Border
         {
-            get { return IExecute<Javax.Swing.Border.Border>("getBorder"); } set { IExecute("setBorder", value); }
+            get { return IExecuteWithSignature<Javax.Swing.Border.Border>("getBorder", "()Ljavax/swing/border/Border;"); } set { IExecuteWithSignature("setBorder", "(Ljavax/swing/border/Border;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#getTitle()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#setTitle(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Title
         {
-            get { return IExecute<Java.Lang.String>("getTitle"); } set { IExecute("setTitle", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getTitle", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setTitle", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#getTitleColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#setTitleColor(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color TitleColor
         {
-            get { return IExecute<Java.Awt.Color>("getTitleColor"); } set { IExecute("setTitleColor", value); }
+            get { return IExecuteWithSignature<Java.Awt.Color>("getTitleColor", "()Ljava/awt/Color;"); } set { IExecuteWithSignature("setTitleColor", "(Ljava/awt/Color;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#getTitleFont()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#setTitleFont(java.awt.Font)"/>
         /// </summary>
         public Java.Awt.Font TitleFont
         {
-            get { return IExecute<Java.Awt.Font>("getTitleFont"); } set { IExecute("setTitleFont", value); }
+            get { return IExecuteWithSignature<Java.Awt.Font>("getTitleFont", "()Ljava/awt/Font;"); } set { IExecuteWithSignature("setTitleFont", "(Ljava/awt/Font;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#getTitleJustification()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#setTitleJustification(int)"/>
         /// </summary>
         public int TitleJustification
         {
-            get { return IExecute<int>("getTitleJustification"); } set { IExecute("setTitleJustification", value); }
+            get { return IExecuteWithSignature<int>("getTitleJustification", "()I"); } set { IExecuteWithSignature("setTitleJustification", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#getTitlePosition()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#setTitlePosition(int)"/>
         /// </summary>
         public int TitlePosition
         {
-            get { return IExecute<int>("getTitlePosition"); } set { IExecute("setTitlePosition", value); }
+            get { return IExecuteWithSignature<int>("getTitlePosition", "()I"); } set { IExecuteWithSignature("setTitlePosition", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#getMinimumSize(java.awt.Component)"/>
@@ -233,7 +233,7 @@ namespace Javax.Swing.Border
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension GetMinimumSize(Java.Awt.Component arg0)
         {
-            return IExecute<Java.Awt.Dimension>("getMinimumSize", arg0);
+            return IExecuteWithSignature<Java.Awt.Dimension>("getMinimumSize", "(Ljava/awt/Component;)Ljava/awt/Dimension;", arg0);
         }
 
         #endregion

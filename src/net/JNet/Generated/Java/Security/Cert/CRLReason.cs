@@ -114,7 +114,7 @@ namespace Java.Security.Cert
         /// <returns><see cref="Java.Security.Cert.CRLReason"/></returns>
         public static Java.Security.Cert.CRLReason ValueOf(Java.Lang.String arg0)
         {
-            return SExecute<Java.Security.Cert.CRLReason>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecuteWithSignature<Java.Security.Cert.CRLReason>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/security/cert/CRLReason;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html#values()"/>
@@ -123,7 +123,7 @@ namespace Java.Security.Cert
         /// <returns><see cref="Java.Security.Cert.CRLReason"/></returns>
         public static Java.Security.Cert.CRLReason[] Values()
         {
-            return SExecuteArray<Java.Security.Cert.CRLReason>(LocalBridgeClazz, "values");
+            return SExecuteWithSignatureArray<Java.Security.Cert.CRLReason>(LocalBridgeClazz, "values", "()[Ljava/security/cert/CRLReason;");
         }
 
         #endregion

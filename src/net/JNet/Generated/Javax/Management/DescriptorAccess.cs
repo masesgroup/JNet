@@ -74,7 +74,7 @@ namespace Javax.Management
         /// <param name="arg0"><see cref="Javax.Management.Descriptor"/></param>
         public void SetDescriptor(Javax.Management.Descriptor arg0)
         {
-            IExecute("setDescriptor", arg0);
+            IExecuteWithSignature("setDescriptor", "(Ljavax/management/Descriptor;)V", arg0);
         }
 
         #endregion

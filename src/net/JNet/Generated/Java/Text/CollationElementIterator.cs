@@ -54,7 +54,7 @@ namespace Java.Text
         /// <returns><see cref="int"/></returns>
         public static int PrimaryOrder(int arg0)
         {
-            return SExecute<int>(LocalBridgeClazz, "primaryOrder", arg0);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "primaryOrder", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationElementIterator.html#secondaryOrder(int)"/>
@@ -63,7 +63,7 @@ namespace Java.Text
         /// <returns><see cref="short"/></returns>
         public static short SecondaryOrder(int arg0)
         {
-            return SExecute<short>(LocalBridgeClazz, "secondaryOrder", arg0);
+            return SExecuteWithSignature<short>(LocalBridgeClazz, "secondaryOrder", "(I)S", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationElementIterator.html#tertiaryOrder(int)"/>
@@ -72,7 +72,7 @@ namespace Java.Text
         /// <returns><see cref="short"/></returns>
         public static short TertiaryOrder(int arg0)
         {
-            return SExecute<short>(LocalBridgeClazz, "tertiaryOrder", arg0);
+            return SExecuteWithSignature<short>(LocalBridgeClazz, "tertiaryOrder", "(I)S", arg0);
         }
 
         #endregion
@@ -83,7 +83,7 @@ namespace Java.Text
         /// </summary>
         public int Offset
         {
-            get { return IExecute<int>("getOffset"); } set { IExecute("setOffset", value); }
+            get { return IExecuteWithSignature<int>("getOffset", "()I"); } set { IExecuteWithSignature("setOffset", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationElementIterator.html#getMaxExpansion(int)"/>
@@ -92,7 +92,7 @@ namespace Java.Text
         /// <returns><see cref="int"/></returns>
         public int GetMaxExpansion(int arg0)
         {
-            return IExecute<int>("getMaxExpansion", arg0);
+            return IExecuteWithSignature<int>("getMaxExpansion", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationElementIterator.html#next()"/>
@@ -101,7 +101,7 @@ namespace Java.Text
         /// <returns><see cref="int"/></returns>
         public int Next()
         {
-            return IExecute<int>("next");
+            return IExecuteWithSignature<int>("next", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationElementIterator.html#previous()"/>
@@ -110,14 +110,14 @@ namespace Java.Text
         /// <returns><see cref="int"/></returns>
         public int Previous()
         {
-            return IExecute<int>("previous");
+            return IExecuteWithSignature<int>("previous", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationElementIterator.html#reset()"/>
         /// </summary>
         public void Reset()
         {
-            IExecute("reset");
+            IExecuteWithSignature("reset", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationElementIterator.html#setText(java.lang.String)"/>
@@ -125,7 +125,7 @@ namespace Java.Text
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void SetText(Java.Lang.String arg0)
         {
-            IExecute("setText", arg0);
+            IExecuteWithSignature("setText", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationElementIterator.html#setText(java.text.CharacterIterator)"/>
@@ -133,7 +133,7 @@ namespace Java.Text
         /// <param name="arg0"><see cref="Java.Text.CharacterIterator"/></param>
         public void SetText(Java.Text.CharacterIterator arg0)
         {
-            IExecute("setText", arg0);
+            IExecuteWithSignature("setText", "(Ljava/text/CharacterIterator;)V", arg0);
         }
 
         #endregion

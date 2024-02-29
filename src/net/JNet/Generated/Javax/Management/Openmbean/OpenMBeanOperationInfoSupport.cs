@@ -79,7 +79,7 @@ namespace Javax.Management.Openmbean
         /// </summary>
         public Javax.Management.Openmbean.OpenType<object> ReturnOpenType
         {
-            get { return IExecute<Javax.Management.Openmbean.OpenType<object>>("getReturnOpenType"); }
+            get { return IExecuteWithSignature<Javax.Management.Openmbean.OpenType<object>>("getReturnOpenType", "()Ljavax/management/openmbean/OpenType;"); }
         }
 
         #endregion

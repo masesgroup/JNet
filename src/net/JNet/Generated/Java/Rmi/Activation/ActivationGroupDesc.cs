@@ -139,14 +139,14 @@ namespace Java.Rmi.Activation
             /// </summary>
             public Java.Lang.String[] CommandOptions
             {
-                get { return IExecuteArray<Java.Lang.String>("getCommandOptions"); }
+                get { return IExecuteWithSignatureArray<Java.Lang.String>("getCommandOptions", "()[Ljava/lang/String;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.CommandEnvironment.html#getCommandPath()"/> 
             /// </summary>
             public Java.Lang.String CommandPath
             {
-                get { return IExecute<Java.Lang.String>("getCommandPath"); }
+                get { return IExecuteWithSignature<Java.Lang.String>("getCommandPath", "()Ljava/lang/String;"); }
             }
 
             #endregion

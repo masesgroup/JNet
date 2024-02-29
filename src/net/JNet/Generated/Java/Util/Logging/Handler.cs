@@ -50,35 +50,35 @@ namespace Java.Util.Logging
         /// </summary>
         public Java.Lang.String Encoding
         {
-            get { return IExecute<Java.Lang.String>("getEncoding"); } set { IExecute("setEncoding", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getEncoding", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setEncoding", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getErrorManager()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setErrorManager(java.util.logging.ErrorManager)"/>
         /// </summary>
         public Java.Util.Logging.ErrorManager ErrorManager
         {
-            get { return IExecute<Java.Util.Logging.ErrorManager>("getErrorManager"); } set { IExecute("setErrorManager", value); }
+            get { return IExecuteWithSignature<Java.Util.Logging.ErrorManager>("getErrorManager", "()Ljava/util/logging/ErrorManager;"); } set { IExecuteWithSignature("setErrorManager", "(Ljava/util/logging/ErrorManager;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getFilter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setFilter(java.util.logging.Filter)"/>
         /// </summary>
         public Java.Util.Logging.Filter Filter
         {
-            get { return IExecute<Java.Util.Logging.Filter>("getFilter"); } set { IExecute("setFilter", value); }
+            get { return IExecuteWithSignature<Java.Util.Logging.Filter>("getFilter", "()Ljava/util/logging/Filter;"); } set { IExecuteWithSignature("setFilter", "(Ljava/util/logging/Filter;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getFormatter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setFormatter(java.util.logging.Formatter)"/>
         /// </summary>
         public Java.Util.Logging.Formatter Formatter
         {
-            get { return IExecute<Java.Util.Logging.Formatter>("getFormatter"); } set { IExecute("setFormatter", value); }
+            get { return IExecuteWithSignature<Java.Util.Logging.Formatter>("getFormatter", "()Ljava/util/logging/Formatter;"); } set { IExecuteWithSignature("setFormatter", "(Ljava/util/logging/Formatter;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getLevel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setLevel(java.util.logging.Level)"/>
         /// </summary>
         public Java.Util.Logging.Level Level
         {
-            get { return IExecute<Java.Util.Logging.Level>("getLevel"); } set { IExecute("setLevel", value); }
+            get { return IExecuteWithSignature<Java.Util.Logging.Level>("getLevel", "()Ljava/util/logging/Level;"); } set { IExecuteWithSignature("setLevel", "(Ljava/util/logging/Level;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#close()"/>
@@ -87,14 +87,14 @@ namespace Java.Util.Logging
         /// <exception cref="Java.Lang.SecurityException"/>
         public void Close()
         {
-            IExecute("close");
+            IExecuteWithSignature("close", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#flush()"/>
         /// </summary>
         public void Flush()
         {
-            IExecute("flush");
+            IExecuteWithSignature("flush", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#publish(java.util.logging.LogRecord)"/>
@@ -102,7 +102,7 @@ namespace Java.Util.Logging
         /// <param name="arg0"><see cref="Java.Util.Logging.LogRecord"/></param>
         public void Publish(Java.Util.Logging.LogRecord arg0)
         {
-            IExecute("publish", arg0);
+            IExecuteWithSignature("publish", "(Ljava/util/logging/LogRecord;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#isLoggable(java.util.logging.LogRecord)"/>
@@ -111,7 +111,7 @@ namespace Java.Util.Logging
         /// <returns><see cref="bool"/></returns>
         public bool IsLoggable(Java.Util.Logging.LogRecord arg0)
         {
-            return IExecute<bool>("isLoggable", arg0);
+            return IExecuteWithSignature<bool>("isLoggable", "(Ljava/util/logging/LogRecord;)Z", arg0);
         }
 
         #endregion

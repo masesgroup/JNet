@@ -59,7 +59,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public static Java.Lang.String RoleValueToString(Java.Util.List<Javax.Management.ObjectName> arg0)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "roleValueToString", arg0);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "roleValueToString", "(Ljava/util/List;)Ljava/lang/String;", arg0);
         }
 
         #endregion
@@ -70,14 +70,14 @@ namespace Javax.Management.Relation
         /// </summary>
         public Java.Lang.String RoleName
         {
-            get { return IExecute<Java.Lang.String>("getRoleName"); } set { IExecute("setRoleName", value); }
+            get { return IExecuteWithSignature<Java.Lang.String>("getRoleName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setRoleName", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Role.html#getRoleValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Role.html#setRoleValue(java.util.List)"/>
         /// </summary>
         public Java.Util.List<Javax.Management.ObjectName> RoleValue
         {
-            get { return IExecute<Java.Util.List<Javax.Management.ObjectName>>("getRoleValue"); } set { IExecute("setRoleValue", value); }
+            get { return IExecuteWithSignature<Java.Util.List<Javax.Management.ObjectName>>("getRoleValue", "()Ljava/util/List;"); } set { IExecuteWithSignature("setRoleValue", "(Ljava/util/List;)V", value); }
         }
 
         #endregion

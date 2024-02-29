@@ -82,7 +82,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetFirstComponent(Java.Awt.Container arg0)
         {
-            return IExecute<Java.Awt.Component>("getFirstComponent", arg0);
+            return IExecuteWithSignature<Java.Awt.Component>("getFirstComponent", "(Ljava/awt/Container;)Ljava/awt/Component;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultFocusManager.html#getLastComponent(java.awt.Container)"/>
@@ -91,7 +91,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetLastComponent(Java.Awt.Container arg0)
         {
-            return IExecute<Java.Awt.Component>("getLastComponent", arg0);
+            return IExecuteWithSignature<Java.Awt.Component>("getLastComponent", "(Ljava/awt/Container;)Ljava/awt/Component;", arg0);
         }
 
         #endregion
