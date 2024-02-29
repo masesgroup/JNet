@@ -169,7 +169,7 @@ namespace MASES.JNetTest
 
         static void TestExtensions()
         {
-            System.Collections.Generic.Dictionary<Java.Lang.String, bool> dict = new();
+            System.Collections.Generic.Dictionary<string, bool> dict = new();
             dict.Add("true", true);
             dict.Add("false", false);
             dict.Add("true2", true);
