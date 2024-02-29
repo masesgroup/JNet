@@ -24,6 +24,12 @@
 using Java.Lang;
 using Java.Util;
 using MASES.JCOBridge.C2JBridge;
+using MASES.JNetReflector;
+using System;
+using System.Collections.Concurrent;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 
 namespace Org.Mases.Jnet
 {
@@ -32,6 +38,8 @@ namespace Org.Mases.Jnet
     /// </summary>
     public class JNetReflectorHelper : JVMBridgeBase<JNetReflectorHelper>
     {
+        static string JNetReflectorHelperTempFolder = Path.Combine(Path.GetDirectoryName(typeof(JNetReflectorHelper).Assembly.Location));
+
         public override string BridgeClassName => "org.mases.jnet.JNetReflectorHelper";
 
         /// <summary>
@@ -42,6 +50,161 @@ namespace Org.Mases.Jnet
             get { return SExecute<bool>("getLoggingState"); }
             set { SExecute("setLoggingState", value); }
         }
+
+        public static IDictionary<Class, IReadOnlyDictionary<string, string>> ExtractJavaInfo(IEnumerable<Class> classes, string classPath, string javapFullPath = null)
+        {
+            const int argumentLengthLimit = 32699; // from MSDN
+
+            List<Class> localList = new List<Class>(classes);
+            var dict = new ConcurrentDictionary<Class, IReadOnlyDictionary<string, string>>();
+            string baseArgumentStr = string.IsNullOrWhiteSpace(classPath) ? string.Empty : $"-cp {classPath} " + "-s ";
+            if (baseArgumentStr.Length > argumentLengthLimit)
+            {
+                throw new ArgumentException("The length is too long to fill in the available storage", nameof(classPath));
+            }
+
+            while (localList.Count != 0)
+            {
+                List<Class> toBeAnalyzed = new();
+                string arguments = (string.IsNullOrWhiteSpace(classPath) ? string.Empty : $"-cp {classPath} ") + "-s ";
+                foreach (var clazz in localList.ToArray())
+                {
+                    string newClass = $"{clazz.Name} ";
+                    int newLength = arguments.Length + newClass.Length;
+                    if (newLength < argumentLengthLimit)
+                    {
+                        arguments += newClass;
+                        toBeAnalyzed.Add(clazz);
+                        localList.Remove(clazz);
+                    }
+                    else break;
+                }
+
+                Process process = null;
+                bool exited = false;
+
+                try
+                {
+                    ProcessStartInfo si = new ProcessStartInfo();
+                    si.UseShellExecute = false;
+                    si.RedirectStandardOutput = si.RedirectStandardError = true;
+                    si.WorkingDirectory = JNetReflectorHelperTempFolder;
+                    si.CreateNoWindow = true;
+                    si.UseShellExecute = false;
+                    si.FileName = Path.Combine(javapFullPath != null ? javapFullPath : string.Empty, "javap");
+                    si.Arguments = arguments;
+
+                    process = Process.Start(si);
+                    TimeSpan initial = process.TotalProcessorTime;
+                    int cycles = 0;
+                    while ((exited = process.WaitForExit(100)) == false)
+                    {
+                        process.Refresh();
+                        TimeSpan current = process.TotalProcessorTime;
+                        if ((current - initial) < TimeSpan.FromMilliseconds(10)) break; // process is idle???
+                        if (++cycles > toBeAnalyzed.Count) break; // elapsed max cycles
+                    }
+                    if (exited && process.ExitCode != 0) throw new InvalidOperationException($"javap falied with error {process.ExitCode}");
+                    Dictionary<string, string> map = new Dictionary<string, string>();
+                    string line;
+                    int classCounter = -1;
+                    string methodName = string.Empty;
+                    string className = string.Empty;
+                    bool nextLineIsDescriptor = false;
+                    while ((line = process.StandardOutput.ReadLine()) != null)
+                    {
+                        if (line.Contains("Compiled from"))
+                        {
+                            if (classCounter != -1) { dict.TryAdd(toBeAnalyzed[classCounter], map); }
+                            classCounter++;
+                            className = toBeAnalyzed[classCounter].Name;
+                            map = new Dictionary<string, string>();
+                        }
+                        if (nextLineIsDescriptor)
+                        {
+                            nextLineIsDescriptor = false;
+                            string signature = line.TrimStart().TrimEnd();
+                            signature = signature.Remove(0, "descriptor: ".Length);
+                            map.Add(methodName, signature);
+                        }
+                        bool isInterfaceOrClassLine = line.Contains("class") || line.Contains("interface");
+                        if (line.Contains("public") && !isInterfaceOrClassLine)
+                        {
+                            nextLineIsDescriptor = true;
+                            methodName = line.TrimStart().TrimEnd();
+                            methodName = methodName.RemoveThrowsAndCleanupSignature();
+                            methodName = methodName.AddClassNameToSignature(className);
+                        }
+                    }
+                    dict.TryAdd(toBeAnalyzed[classCounter], map);
+                }
+                catch { }
+                finally
+                {
+                    if (!exited && !process.HasExited) try { process?.Kill(); } catch { }
+                }
+            }
+
+            return dict;
+        }
+
+        public static IReadOnlyDictionary<string, string> ExtractJavaInfo(Class clazz, string classPath, string javapFullPath = null)
+        {
+            IReadOnlyDictionary<string, string> result = null;
+            Process process = null;
+            bool exited = false;
+            try
+            {
+                string className = clazz.Name;
+
+                ProcessStartInfo si = new ProcessStartInfo();
+                si.UseShellExecute = false;
+                si.RedirectStandardOutput = si.RedirectStandardError = true;
+                si.WorkingDirectory = JNetReflectorHelperTempFolder;
+                si.CreateNoWindow = true;
+                si.UseShellExecute = false;
+                si.FileName = Path.Combine(javapFullPath != null ? javapFullPath : string.Empty, "javap");
+                si.Arguments = (string.IsNullOrWhiteSpace(classPath) ? string.Empty : $"-cp {classPath} ") + "-s " + className.Replace('$', '.');
+
+                process = Process.Start(si);
+                exited = process.WaitForExit(10000);
+                if (exited && process.ExitCode != 0) return result;
+                Dictionary<string, string> map = new Dictionary<string, string>();
+                string line;
+                int lineCounter = 0;
+                string methodName = string.Empty;
+                bool nextLineIsDescriptor = false;
+                while ((line = process.StandardOutput.ReadLine()) != null)
+                {
+                    lineCounter++;
+                    if (lineCounter < 3) continue;
+                    if (nextLineIsDescriptor)
+                    {
+                        nextLineIsDescriptor = false;
+                        string signature = line.TrimStart().TrimEnd();
+                        signature = signature.Remove(0, "descriptor: ".Length);
+                        map.Add(methodName, signature);
+                    }
+                    bool isInterfaceOrClassLine = line.Contains("class") || line.Contains("interface");
+                    if (line.Contains("public") && !isInterfaceOrClassLine)
+                    {
+                        nextLineIsDescriptor = true;
+                        methodName = line.TrimStart().TrimEnd();
+                        methodName = methodName.RemoveThrowsAndCleanupSignature();
+                        methodName = methodName.AddClassNameToSignature(className);
+                    }
+                }
+
+                result = map;
+            }
+            catch { }
+            finally
+            {
+                if (!exited && !process.HasExited) try { process?.Kill(); } catch { }
+            }
+            return result;
+        }
+
         /// <summary>
         /// Find all <see cref="Class"/>es in the classpath
         /// </summary>

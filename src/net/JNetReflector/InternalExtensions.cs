@@ -25,6 +25,7 @@ using Java.Lang;
 using Java.Lang.Reflect;
 using System.Text;
 using MASES.JNetReflector.Templates;
+using System.Runtime.CompilerServices;
 
 namespace MASES.JNetReflector
 {
@@ -283,6 +284,39 @@ namespace MASES.JNetReflector
             if (result.EndsWith(", new()")) result = result.Substring(0, result.IndexOf(", new()"));
             if (result.Contains(SpecialNames.ArrayTypeTrailer)) result = result.Substring(0, result.IndexOf(SpecialNames.ArrayTypeTrailer));
             return result.Replace(SpecialNames.BeginGenericDeclaration, "{").Replace(SpecialNames.EndGenericDeclaration, "}");
+        }
+
+        public static string RemoveThrowsAndCleanupSignature(this string methodSignature)
+        {
+            if (methodSignature.Contains(SpecialNames.JavaLangThrows))
+            {
+                methodSignature = methodSignature.Substring(0, methodSignature.IndexOf(SpecialNames.JavaLangThrows));
+                return methodSignature.TrimEnd();
+            }
+            else if (methodSignature.EndsWith(';'))
+            {
+                return methodSignature.Substring(0, methodSignature.Length - 1);
+            }
+            return methodSignature;
+        }
+
+        public static string AddClassNameToSignature(this string methodSignature, string className)
+        {
+            int index = methodSignature.IndexOf('(');
+            if (index == -1) return methodSignature; // not a method
+
+            int index2 = methodSignature.Substring(0, index).LastIndexOf(' ');
+            methodSignature = methodSignature.Insert(index2 + 1, className + ".");
+
+            return methodSignature;
+        }
+
+        public static string SignatureFromGenericString(this IReadOnlyDictionary<string, string> methodSignatures, string genString)
+        {
+            var filteredGenString = genString.RemoveThrowsAndCleanupSignature();
+            string signature = null;
+            methodSignatures.TryGetValue(filteredGenString, out signature);
+            return signature;
         }
 
         #endregion

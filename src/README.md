@@ -15,6 +15,7 @@ The configuration is:
   "RelativeDestinationCSharpClassPath": "net\\JNet\\Generated",
   "RelativeDestinationJavaListenerPath": "jvm\\jnet\\src\\main\\java",
   "JavaListenerBasePackage": "org.mases.jnet.generated",
+  "PreferMethodWithSignature": true,
   "OnlyPropertiesForGetterSetter": true,
   "ModulesToParse": [
     "org.*",
