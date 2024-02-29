@@ -16,6 +16,7 @@
 *  Refer to LICENSE for more information.
 */
 
+using Java.Lang;
 using Java.Util;
 using Javax.Management.Remote;
 using MASES.JNet.Specific.Extensions;
@@ -53,9 +54,14 @@ namespace MASES.JNetPS.Cmdlet.JMX
         protected override void ProcessCommand()
         {
             JMXConnector result;
+            Map<Java.Lang.String, object> map = Collections.EmptyMap<Java.Lang.String, object>();
+            if (Environment !=  null)
+            {
+                map = Environment.ToJVMMap<Java.Lang.String, object, string, object>((o) => { return (Java.Lang.String)o; }, (o) => { return o; });
+            }
             if (UseNewJMXConnector.IsPresent)
             {
-                result = JMXConnectorFactory.NewJMXConnector(ServiceURL, Environment != null ? Environment.ToMap((o) => { return (Java.Lang.String)o; }, (o) => { return o; }) : Collections.EmptyMap<Java.Lang.String, object>());
+                result = JMXConnectorFactory.NewJMXConnector(ServiceURL, map);
             }
             else
             {
@@ -65,7 +71,7 @@ namespace MASES.JNetPS.Cmdlet.JMX
                 }
                 else
                 {
-                    result = JMXConnectorFactory.Connect(ServiceURL, Environment.ToMap((o) => { return (Java.Lang.String)o; }, (o) => { return o; }));
+                    result = JMXConnectorFactory.Connect(ServiceURL, map);
                 }
             }
 

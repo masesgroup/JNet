@@ -17,12 +17,27 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
+using MASES.JNet.Specific.Extensions;
 using System;
 
 namespace Java.Lang
 {
-    public partial class Short : Number
+    public partial class Short : INativeConvertible<Short, short>
     {
+        short INativeConvertible<Short, short>.ToCLR()
+        {
+            return ShortValue();
+        }
+        /// <summary>
+        /// Returns the <see cref="Short"/> from the <paramref name="clrValue"/> instance
+        /// </summary>
+        /// <param name="clrValue">The <see cref="short"/> of CLR</param>
+        /// <returns>The converted <see cref="Short"/></returns>
+        public static Short ToJVM(short clrValue)
+        {
+            return ValueOf(clrValue);
+        }
+
         /// <summary>
         /// Converter from <see cref="Short"/> to <see cref="short"/>
         /// </summary>

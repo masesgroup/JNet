@@ -17,12 +17,27 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
+using MASES.JNet.Specific.Extensions;
 using System;
 
 namespace Java.Lang
 {
-    public partial class Integer : Number
+    public partial class Integer : INativeConvertible<Integer, int>
     {
+        int INativeConvertible<Integer, int>.ToCLR()
+        {
+            return IntValue();
+        }
+        /// <summary>
+        /// Returns the <see cref="Integer"/> from the <paramref name="clrValue"/> instance
+        /// </summary>
+        /// <param name="clrValue">The <see cref="int"/> of CLR</param>
+        /// <returns>The converted <see cref="Integer"/></returns>
+        public static Integer ToJVM(int clrValue)
+        {
+            return ValueOf(clrValue);
+        }
+
         /// <summary>
         /// Converter from <see cref="Integer"/> to <see cref="int"/>
         /// </summary>

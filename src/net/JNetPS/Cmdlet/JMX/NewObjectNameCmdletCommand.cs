@@ -16,6 +16,7 @@
 *  Refer to LICENSE for more information.
 */
 
+using Java.Util;
 using Javax.Management;
 using MASES.JCOBridge.C2JBridge;
 using MASES.JNet.Specific.Extensions;
@@ -75,7 +76,7 @@ namespace MASES.JNetPS.Cmdlet.JMX
             }
             else if (Table != null)
             {
-                result = new ObjectName(NameOrDomain, Table.ToHashtable());
+                result = new ObjectName(NameOrDomain, Table.ToJVMDictionary<Hashtable<Java.Lang.String, Java.Lang.String>, Java.Lang.String, Java.Lang.String, string, string>());
             }
             else throw new InvalidOperationException("Never been here.");
 

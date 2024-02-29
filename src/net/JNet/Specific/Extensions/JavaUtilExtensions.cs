@@ -18,118 +18,238 @@
 
 using Java.Util;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace MASES.JNet.Specific.Extensions
 {
     /// <summary>
+    /// Interface defining the .NET type corresponding to the JVM class implementing <see cref="INativeConvertible{TJVMType, TNetType}"/>
+    /// </summary>
+    /// <typeparam name="TJVMType">The JVM type</typeparam>
+    /// <typeparam name="TNetType">The .NET type corresponding to <typeparamref name="TJVMType"/></typeparam>
+    public interface INativeConvertible<TJVMType, TNetType>
+    {
+        /// <summary>
+        /// Returns the <typeparamref name="TNetType"/> from this instance
+        /// </summary>
+        /// <returns>The converted <typeparamref name="TNetType"/></returns>
+        TNetType ToCLR();
+#if !(NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS)
+        /// <summary>
+        /// Returns the <typeparamref name="TJVMType"/> from the <paramref name="clrValue"/> instance
+        /// </summary>
+        /// <param name="clrValue">The <typeparamref name="TNetType"/> of CLR</param>
+        /// <returns>The converted <typeparamref name="TJVMType"/></returns>
+        abstract static TJVMType ToJVM(TNetType clrValue);
+#endif
+    }
+
+    /// <summary>
     /// Extension for Java.Util classes
     /// </summary>
     public static class JavaUtilExtensions
     {
+#if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
+        const string ToJVMMethod = "ToJVM";
+
+        static Func<TNetType, TJVMType> GetToJVMMethod<TNetType, TJVMType>()
+        {
+           return (Func<TNetType, TJVMType>)typeof(TJVMType).GetMethod(ToJVMMethod, new Type[] { typeof(TNetType) }).CreateDelegate(typeof(Func<TNetType, TJVMType>));
+        }
+#endif
         #region List Extensions
         /// <summary>
-        /// Converts a <see cref="Collection{T}"/> to <see cref="ICollection{T}"/>
+        /// Converts an <see cref="System.Collections.Generic.IEnumerable{T}"/> of <typeparamref name="TJVMType"/> to an <typeparamref name="TEnumerableType"/> of <typeparamref name="TNetTypeInner"/>
         /// </summary>
-        /// <typeparam name="T">Type</typeparam>
-        /// <param name="set">The <see cref="Collection{T}"/></param>
-        /// <returns>The <see cref="ICollection{T}"/></returns>
-        public static System.Collections.Generic.ICollection<T> ToCollection<T>(this Collection<T> set)
+        /// <typeparam name="TEnumerableType">A type implementing <see cref="System.Collections.Generic.IEnumerable{T}"/></typeparam>
+        /// <typeparam name="TNetTypeInner">The expected .NET type</typeparam>
+        /// <typeparam name="TJVMType">The original JVM type</typeparam>
+        /// <param name="set">The <see cref="System.Collections.Generic.IEnumerable{T}"/> of <typeparamref name="TJVMType"/> to be converted</param>
+        /// <param name="func">An <see cref="Func{T, TResult}"/> used to convert <typeparamref name="TJVMType"/> into <typeparamref name="TNetTypeInner"/></param>
+        /// <returns>The converted <typeparamref name="TEnumerableType"/> of <typeparamref name="TNetTypeInner"/></returns>
+        public static TEnumerableType ToNetCollectionType<TEnumerableType, TNetTypeInner, TJVMType>(this System.Collections.Generic.IEnumerable<TJVMType> set, Func<TJVMType, TNetTypeInner> func = null)
+            where TEnumerableType : System.Collections.Generic.ICollection<TNetTypeInner>, new()
+            where TJVMType : INativeConvertible<TJVMType, TNetTypeInner>
         {
-            System.Collections.Generic.List<T> list = new();
-            if (set.IsEmpty()) return list;
+            var tInstance = new TEnumerableType();
             foreach (var item in set)
             {
-                list.Add(item);
+                tInstance.Add(func != null ? func(item) : item.ToCLR());
             }
-            return list;
+            return tInstance;
         }
+
         /// <summary>
-        /// Converts a <see cref="Collection{T}"/> to <see cref="System.Collections.Generic.List{T}"/>
+        /// Converts an <see cref="System.Collections.Generic.IEnumerable{T}"/> of <see cref="Java.Lang.String"/> to an array of <see cref="string"/>
         /// </summary>
-        /// <typeparam name="T">Type</typeparam>
-        /// <param name="set">The <see cref="Collection{T}"/></param>
-        /// <returns>The <see cref="System.Collections.Generic.List{T}"/></returns>
-        public static System.Collections.Generic.List<T> ToList<T>(this Collection<T> set)
+        /// <param name="set">The <see cref="System.Collections.Generic.IEnumerable{T}"/> of <see cref="Java.Lang.String"/> to be converted</param>
+        /// <returns>The converted array of <see cref="string"/></returns>
+        public static TNetType[] ToNetArray<TNetType, TJVMType>(this System.Collections.Generic.IEnumerable<TJVMType> set)
+            where TJVMType : INativeConvertible<TJVMType, TNetType>
         {
-            System.Collections.Generic.List<T> list = new();
-            if (set.IsEmpty()) return list;
+            var tmpEnum = ToNetCollectionType<System.Collections.Generic.List<TNetType>, TNetType, TJVMType>(set);
+            return tmpEnum.ToArray();
+        }
+
+        /// <summary>
+        /// Converts an <see cref="System.Collections.Generic.IEnumerable{T}"/> of <typeparamref name="TNetType"/> to an <typeparamref name="TIterableType"/> of <typeparamref name="TJVMTypeInner"/>
+        /// </summary>
+        /// <typeparam name="TIterableType">A type implementing <see cref="Java.Lang.Iterable{T}"/></typeparam>
+        /// <typeparam name="TJVMTypeInner">The expected JVM type</typeparam>
+        /// <typeparam name="TNetType">The original .NET type</typeparam>
+        /// <param name="set">The <see cref="Java.Util.Collection{T}"/> of <typeparamref name="TJVMTypeInner"/> to be converted</param>
+        /// <param name="func">An optional <see cref="Func{T, TResult}"/> used to return <typeparamref name="TJVMTypeInner"/> from data of <typeparamref name="TNetType"/> in <paramref name="set"/></param>
+        /// <returns>The converted <typeparamref name="TIterableType"/> of <typeparamref name="TJVMTypeInner"/></returns>
+        public static TIterableType ToJVMCollectionType<TIterableType, TJVMTypeInner, TNetType>(this System.Collections.Generic.IEnumerable<TNetType> set, Func<TNetType, TJVMTypeInner> func = null)
+            where TIterableType : Java.Util.Collection<TJVMTypeInner>, new()
+            where TJVMTypeInner : INativeConvertible<TJVMTypeInner, TNetType>, new()
+        {
+#if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
+            if (func == null)
+            {
+                func = GetToJVMMethod<TNetType, TJVMTypeInner>();
+            }
+#endif
+            var tInstance = new TIterableType();
             foreach (var item in set)
             {
-                list.Add(item);
+#if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
+                tInstance.Add(func(item));
+#else
+                tInstance.Add(func != null ? func(item) : TJVMTypeInner.ToJVM(item));
+#endif
             }
-            return list;
+            return tInstance;
         }
+
         /// <summary>
-        /// Converts a <see cref="ICollection{T}"/> to <see cref="Collection{T}"/>
+        /// Converts an <see cref="System.Collections.Generic.IEnumerable{T}"/> of <see cref="string"/> to an <see cref="Java.Util.Collection{T}"/> of <see cref="Java.Lang.String"/>
         /// </summary>
-        /// <typeparam name="T">Type</typeparam>
-        /// <param name="collection">The <see cref="ICollection{T}"/></param>
-        /// <returns>The <see cref="Collection{T}"/></returns>
-        public static Collection<T> ToJCollection<T>(this System.Collections.Generic.ICollection<T> collection)
+        /// <param name="set">The <see cref="System.Collections.Generic.IEnumerable{T}"/> of <see cref="string"/> to be converted</param>
+        /// <param name="func">An optional <see cref="Func{T, TResult}"/> used to return <typeparamref name="TJVMType"/> from data of <typeparamref name="TNetType"/> in <paramref name="set"/></param>
+        /// <returns>The converted <see cref="Java.Util.Collection{T}"/> of <see cref="Java.Lang.String"/></returns>
+        public static Java.Util.Collection<TJVMType> ToJVMCollection<TJVMType, TNetType>(this System.Collections.Generic.IEnumerable<TNetType> set, Func<TNetType, TJVMType> func = null)
+            where TJVMType : INativeConvertible<TJVMType, TNetType>, new()
         {
-            ArrayList<T> list = new();
-            if (collection.Count == 0) return list.CastTo<Collection<T>>();
+            return ToJVMCollectionType<ArrayList<TJVMType>, TJVMType, TNetType>(set, func);
+        }
+
+        /// <summary>
+        /// Converts an <see cref="System.Collections.Generic.IEnumerable{T}"/> of <see cref="string"/> to an array of <see cref="Java.Lang.String"/>
+        /// </summary>
+        /// <param name="collection">The array of <typeparamref name="TNetType"/> to be converted</param>
+        /// <param name="func">An optional <see cref="Func{T, TResult}"/> used to return <typeparamref name="TJVMType"/> from data of <typeparamref name="TNetType"/> in <paramref name="collection"/></param>
+        /// <returns>The array of <typeparamref name="TJVMType"/></returns>
+        public static TJVMType[] ToJVMArray<TJVMType, TNetType>(this TNetType[] collection, Func<TNetType, TJVMType> func = null)
+            where TJVMType : INativeConvertible<TJVMType, TNetType>, new()
+        {
+#if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
+            if (func == null)
+            {
+                func = GetToJVMMethod<TNetType, TJVMType>();
+            }
+#endif
+            System.Collections.Generic.List<TJVMType> list = new();
             foreach (var item in collection)
             {
-                list.Add(item);
+#if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
+                list.Add(func(item));
+#else
+                list.Add(func != null ? func(item) : TJVMType.ToJVM(item));
+#endif
             }
-            return list.CastTo<Collection<T>>();
-        }
-        /// <summary>
-        /// Converts a <see cref="ICollection{T}"/> to <see cref="Java.Util.List{T}"/>
-        /// </summary>
-        /// <typeparam name="T">Type</typeparam>
-        /// <param name="collection">The <see cref="ICollection{T}"/></param>
-        /// <returns>The <see cref="Java.Util.List{T}"/></returns>
-        public static Java.Util.List<T> ToJList<T>(this System.Collections.Generic.ICollection<T> collection)
-        {
-            ArrayList<T> list = new();
-            if (collection.Count == 0) return list;
-            foreach (var item in collection)
-            {
-                list.Add(item);
-            }
-            return list;
+            return list.ToArray();
         }
 
         #endregion
 
         #region Map/Dictionary Extensions
         /// <summary>
-        /// Converts a <see cref="Map{K, V}"/> to <see cref="System.Collections.Generic.Dictionary{K, V}"/>
+        /// Converts a <see cref="IDictionary{K, V}"/> to <see cref="Map{TJVMK, TJVMV}"/>
         /// </summary>
-        /// <typeparam name="K">Key</typeparam>
-        /// <typeparam name="V">Value</typeparam>
-        /// <param name="map">The <see cref="Map{K, V}"/></param>
-        /// <returns>The <see cref="System.Collections.Generic.Dictionary{K, V}"/></returns>
-        public static System.Collections.Generic.Dictionary<K, V> ToDictiony<K, V>(this Map<K, V> map)
+        /// <param name="keyConverter">Optional converter from <typeparamref name="TJVMK"/> to <typeparamref name="K"/></param>
+        /// <param name="valueConverter">Optional converter from <typeparamref name="TJVMV"/> to <typeparamref name="V"/></param>
+        /// <typeparam name="TDictionaryType">The <see cref="IDictionary{K, V}"/> over <typeparamref name="K"/> and <typeparamref name="V"/></typeparam>
+        /// <typeparam name="K">.NET Key type</typeparam>
+        /// <typeparam name="V">.NET Value</typeparam>
+        /// <typeparam name="TJVMK">JVM key type</typeparam>
+        /// <typeparam name="TJVMV">JVM value type</typeparam>
+        /// <param name="map">The <see cref="Map{TJVMK, TJVMV}"/></param>
+        /// <returns>The <see cref="IDictionary{K, V}"/></returns>
+        public static TDictionaryType ToNetDictiony<TDictionaryType, K, V, TJVMK, TJVMV>(this Map<TJVMK, TJVMV> map, Func<TJVMK, K> keyConverter = null, Func<TJVMV, V> valueConverter = null)
+            where TDictionaryType : IDictionary<K, V>, new()
+            where TJVMK : INativeConvertible<TJVMK, K>
+            where TJVMV : INativeConvertible<TJVMV, V>
         {
-            System.Collections.Generic.Dictionary<K, V> dictionary = new();
-            if (map.IsEmpty()) return dictionary;
-            foreach (var item in map.EntrySet())
+            if (map == null) throw new ArgumentNullException(nameof(map));
+            var tInstance = new TDictionaryType();
+            foreach (var key in map.KeySet())
             {
-                dictionary.Add(item.Key, item.Value);
+                var value = map.Get(key);
+                tInstance.Add(keyConverter != null ? keyConverter(key) : key.ToCLR(), valueConverter != null ? valueConverter(value) : value.ToCLR());
             }
-            return dictionary;
+            return tInstance;
         }
+
         /// <summary>
-        /// Converts a <see cref="IDictionary{K, V}"/> to <see cref="Map{K, V}"/>
+        /// Converts a <see cref="IDictionary{K, V}"/> to <see cref="Map{TJVMK, TJVMV}"/>
         /// </summary>
-        /// <typeparam name="K">Key</typeparam>
-        /// <typeparam name="V">Value</typeparam>
-        /// <param name="dictionary">The <see cref="IDictionary{K, V}"/></param>
-        /// <returns>The <see cref="Map{K, V}"/></returns>
-        public static Map<K, V> ToMap<K, V>(this IDictionary<K, V> dictionary)
+        /// <param name="keyConverter">Optional converter from <typeparamref name="TJVMK"/> to <typeparamref name="K"/></param>
+        /// <param name="valueConverter">Optional converter from <typeparamref name="TJVMV"/> to <typeparamref name="V"/></param>
+        /// <typeparam name="K">.NET Key type</typeparam>
+        /// <typeparam name="V">.NET Value</typeparam>
+        /// <typeparam name="TJVMK">JVM key type</typeparam>
+        /// <typeparam name="TJVMV">JVM value type</typeparam>
+        /// <param name="map">The <see cref="Map{TJVMK, TJVMV}"/></param>
+        /// <returns>The <see cref="IDictionary{K, V}"/></returns>
+        public static IDictionary<K, V> ToNetDictiony<K, V, TJVMK, TJVMV>(this Map<TJVMK, TJVMV> map, Func<TJVMK, K> keyConverter = null, Func<TJVMV, V> valueConverter = null)
+            where TJVMK : INativeConvertible<TJVMK, K>
+            where TJVMV : INativeConvertible<TJVMV, V>
         {
-            HashMap<K, V> map = new();
-            if (dictionary.Count == 0) return map;
+            return ToNetDictiony<System.Collections.Generic.Dictionary<K, V>, K, V, TJVMK, TJVMV>(map, keyConverter, valueConverter);
+        }
+
+        /// <summary>
+        /// Converts a <see cref="IDictionary{K, V}"/> to <typeparamref name="TMapType"/>
+        /// </summary>
+        /// <param name="keyConverter">Optional converter from <typeparamref name="K"/> to <typeparamref name="TJVMK"/></param>
+        /// <param name="valueConverter">Optional converter from <typeparamref name="V"/> to <typeparamref name="TJVMV"/></param>
+        /// <typeparam name="TMapType">The <see cref="Java.Util.Map{K, V}"/> over <typeparamref name="TJVMK"/> and <typeparamref name="TJVMV"/></typeparam>
+        /// <typeparam name="K">.NET Key type</typeparam>
+        /// <typeparam name="V">.NET Value</typeparam>
+        /// <typeparam name="TJVMK">JVM key type</typeparam>
+        /// <typeparam name="TJVMV">JVM value type</typeparam>
+        /// <param name="dictionary">The <see cref="IDictionary{K, V}"/></param>
+        /// <returns>The <typeparamref name="TMapType"/></returns>
+        public static TMapType ToJVMMap<TMapType, TJVMK, TJVMV, K, V>(this IDictionary<K, V> dictionary, Func<K, TJVMK> keyConverter = null, Func<V, TJVMV> valueConverter = null)
+            where TMapType : Java.Util.Map<TJVMK, TJVMV>, new()
+            where TJVMK : INativeConvertible<TJVMK, K>
+            where TJVMV : INativeConvertible<TJVMV, V>
+        {
+#if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
+            if (keyConverter == null)
+            {
+                keyConverter = GetToJVMMethod<K, TJVMK>();
+            }
+            if (valueConverter == null)
+            {
+                valueConverter = GetToJVMMethod<V, TJVMV>();
+            }
+#endif
+            if (dictionary == null) throw new ArgumentNullException(nameof(dictionary));
+            var tInstance = new TMapType();
             foreach (var item in dictionary)
             {
-                map.Put(item.Key, item.Value);
+#if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
+                tInstance.Put(keyConverter(item.Key), valueConverter(item.Value));
+#else
+                tInstance.Put(keyConverter != null ? keyConverter(item.Key) : TJVMK.ToJVM(item.Key), valueConverter != null ? valueConverter(item.Value) : TJVMV.ToJVM(item.Value));
+#endif
             }
-            return map;
+            return tInstance;
         }
+
         /// <summary>
         /// Converts a <see cref="IDictionary{K, V}"/> to <see cref="Map{TJVMK, TJVMV}"/>
         /// </summary>
@@ -141,34 +261,83 @@ namespace MASES.JNet.Specific.Extensions
         /// <typeparam name="TJVMV">JVM value type</typeparam>
         /// <param name="dictionary">The <see cref="IDictionary{K, V}"/></param>
         /// <returns>The <see cref="Map{TJVMK, TJVMV}"/></returns>
-        public static Map<TJVMK, TJVMV> ToMap<K, V, TJVMK, TJVMV>(this IDictionary<K, V> dictionary, Func<K, TJVMK> keyConverter, Func<V, TJVMV> valueConverter)
+        public static Map<TJVMK, TJVMV> ToJVMMap<TJVMK, TJVMV, K, V>(this IDictionary<K, V> dictionary, Func<K, TJVMK> keyConverter, Func<V, TJVMV> valueConverter)
         {
-            HashMap<TJVMK, TJVMV> map = new();
-            if (dictionary.Count == 0) return map;
+            if (dictionary == null) throw new ArgumentNullException(nameof(dictionary));
+            if (keyConverter == null) throw new ArgumentNullException(nameof(keyConverter));
+            if (valueConverter == null) throw new ArgumentNullException(nameof(valueConverter));
+            var tInstance = new HashMap<TJVMK, TJVMV>();
             foreach (var item in dictionary)
             {
-                map.Put(keyConverter(item.Key), valueConverter(item.Value));
+                tInstance.Put(keyConverter(item.Key), valueConverter(item.Value));
             }
-            return map;
-        }
-        /// <summary>
-        /// Converts a <see cref="IDictionary{K, V}"/> to <see cref="Hashtable{K, V}"/>
-        /// </summary>
-        /// <typeparam name="K">Key</typeparam>
-        /// <typeparam name="V">Value</typeparam>
-        /// <param name="dictionary">The <see cref="IDictionary{K, V}"/></param>
-        /// <returns>The <see cref="Hashtable{K, V}"/></returns>
-        public static Hashtable<K, V> ToHashtable<K, V>(this IDictionary<K, V> dictionary)
-        {
-            Hashtable<K, V> hTable = new();
-            if (dictionary.Count == 0) return hTable;
-            foreach (var item in dictionary)
-            {
-                hTable.Put(item.Key, item.Value);
-            }
-            return hTable;
+            return tInstance;
         }
 
-        #endregion
+        /// <summary>
+        /// Converts a <see cref="IDictionary{K, V}"/> to <typeparamref name="TDictionaryType"/>
+        /// </summary>
+        /// <param name="keyConverter">Optional converter from <typeparamref name="K"/> to <typeparamref name="TJVMK"/></param>
+        /// <param name="valueConverter">Optional converter from <typeparamref name="V"/> to <typeparamref name="TJVMV"/></param>
+        /// <typeparam name="TDictionaryType">The <see cref="Java.Util.Dictionary{K, V}"/> over <typeparamref name="TJVMK"/> and <typeparamref name="TJVMV"/></typeparam>
+        /// <typeparam name="K">.NET Key type</typeparam>
+        /// <typeparam name="V">.NET Value</typeparam>
+        /// <typeparam name="TJVMK">JVM key type</typeparam>
+        /// <typeparam name="TJVMV">JVM value type</typeparam>
+        /// <param name="dictionary">The <see cref="IDictionary{K, V}"/></param>
+        /// <returns>The <typeparamref name="TDictionaryType"/></returns>
+        public static TDictionaryType ToJVMDictionary<TDictionaryType, TJVMK, TJVMV, K, V>(this IDictionary<K, V> dictionary, Func<K, TJVMK> keyConverter = null, Func<V, TJVMV> valueConverter = null)
+            where TDictionaryType : Java.Util.Dictionary<TJVMK, TJVMV>, new()
+            where TJVMK : INativeConvertible<TJVMK, K>
+            where TJVMV : INativeConvertible<TJVMV, V>
+        {
+#if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
+            if (keyConverter == null)
+            {
+                keyConverter = GetToJVMMethod<K, TJVMK>();
+            }
+            if (valueConverter == null)
+            {
+                valueConverter = GetToJVMMethod<V, TJVMV>();
+            }
+#endif
+            if (dictionary == null) throw new ArgumentNullException(nameof(dictionary));
+            var tInstance = new TDictionaryType();
+            foreach (var item in dictionary)
+            {
+#if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
+                tInstance.Put(keyConverter(item.Key), valueConverter(item.Value));
+#else
+                tInstance.Put(keyConverter != null ? keyConverter(item.Key) : TJVMK.ToJVM(item.Key), valueConverter != null ? valueConverter(item.Value) : TJVMV.ToJVM(item.Value));
+#endif
+            }
+            return tInstance;
+        }
+
+        /// <summary>
+        /// Converts a <see cref="IDictionary{K, V}"/> to <see cref="Java.Util.Dictionary{TJVMK, TJVMV}"/>
+        /// </summary>
+        /// <param name="keyConverter">Converter from <typeparamref name="K"/> to <typeparamref name="TJVMK"/></param>
+        /// <param name="valueConverter">Converter from <typeparamref name="V"/> to <typeparamref name="TJVMV"/></param>
+        /// <typeparam name="K">.NET Key type</typeparam>
+        /// <typeparam name="V">.NET Value</typeparam>
+        /// <typeparam name="TJVMK">JVM key type</typeparam>
+        /// <typeparam name="TJVMV">JVM value type</typeparam>
+        /// <param name="dictionary">The <see cref="IDictionary{K, V}"/></param>
+        /// <returns>The <see cref="Java.Util.Dictionary{TJVMK, TJVMV}"/></returns>
+        public static Java.Util.Dictionary<TJVMK, TJVMV> ToJVMDictionary<TJVMK, TJVMV, K, V>(this IDictionary<K, V> dictionary, Func<K, TJVMK> keyConverter, Func<V, TJVMV> valueConverter)
+        {
+            if (dictionary == null) throw new ArgumentNullException(nameof(dictionary));
+            if (keyConverter == null) throw new ArgumentNullException(nameof(keyConverter));
+            if (valueConverter == null) throw new ArgumentNullException(nameof(valueConverter));
+            var tInstance = new Hashtable<TJVMK, TJVMV>();
+            foreach (var item in dictionary)
+            {
+                tInstance.Put(keyConverter(item.Key), valueConverter(item.Value));
+            }
+            return tInstance;
+        }
+
+#endregion
     }
 }

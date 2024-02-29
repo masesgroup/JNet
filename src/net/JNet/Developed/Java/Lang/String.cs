@@ -17,12 +17,13 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
+using MASES.JNet.Specific.Extensions;
 using System.Runtime.CompilerServices;
 using SystemNet = System;
 
 namespace Java.Lang
 {
-    public partial class String : JVMBridgeBase<String>, SystemNet.IComparable<String>, SystemNet.IEquatable<String>
+    public partial class String : JVMBridgeBase<String>, INativeConvertible<String, string>, SystemNet.IComparable<String>, SystemNet.IEquatable<String>
     {
         #region Constructors
         /// <summary>
@@ -76,6 +77,114 @@ namespace Java.Lang
             return base.Equals(other);
         }
 
+        string INativeConvertible<String, string>.ToCLR()
+        {
+            return ToString();
+        }
+        /// <summary>
+        /// Returns the <see cref="String"/> from the <paramref name="clrValue"/> instance
+        /// </summary>
+        /// <param name="clrValue">The <see cref="string"/> of CLR</param>
+        /// <returns>The converted <see cref="String"/></returns>
+        public static String ToJVM(string clrValue)
+        {
+            return clrValue != null ? new Java.Lang.String(clrValue) : null;
+        }
+
         #endregion
+
+        //#region Enumerable/Array Extensions
+
+        ///// <summary>
+        ///// Converts an <see cref="SystemNet.Collections.Generic.IEnumerable{T}"/> of <see cref="Java.Lang.String"/> to an array of <see cref="string"/>
+        ///// </summary>
+        ///// <param name="set">The <see cref="SystemNet.Collections.Generic.IEnumerable{T}"/> of <see cref="Java.Lang.String"/> to be converted</param>
+        ///// <returns>The converted array of <see cref="string"/></returns>
+        //public static implicit operator string[](Java.Lang.String[] set)
+        //{
+        //    SystemNet.Collections.Generic.List<string> list = new();
+        //    foreach (var item in set)
+        //    {
+        //        list.Add(item);
+        //    }
+        //    return list.ToArray();
+        //}
+
+        ///// <summary>
+        ///// Converts an <see cref="SystemNet.Collections.Generic.IEnumerable{T}"/> of <see cref="Java.Lang.String"/> to an array of <see cref="string"/>
+        ///// </summary>
+        ///// <param name="set">The <see cref="SystemNet.Collections.Generic.IEnumerable{T}"/> of <see cref="Java.Lang.String"/> to be converted</param>
+        ///// <returns>The converted array of <see cref="string"/></returns>
+        //public static implicit operator string[](Java.Util.Collection<Java.Lang.String> set)
+        //{
+        //    SystemNet.Collections.Generic.List<string> list = new();
+        //    foreach (var item in set)
+        //    {
+        //        list.Add(item);
+        //    }
+        //    return list.ToArray();
+        //}
+
+        ///// <summary>
+        ///// Converts an <see cref="SystemNet.Collections.Generic.IEnumerable{T}"/> of <see cref="Java.Lang.String"/> to an array of <see cref="string"/>
+        ///// </summary>
+        ///// <param name="set">The <see cref="SystemNet.Collections.Generic.IEnumerable{T}"/> of <see cref="Java.Lang.String"/> to be converted</param>
+        ///// <returns>The converted array of <see cref="string"/></returns>
+        //public static implicit operator string[](Java.Lang.Iterable<Java.Lang.String> set)
+        //{
+        //    SystemNet.Collections.Generic.List<string> list = new();
+        //    foreach (var item in set)
+        //    {
+        //        list.Add(item);
+        //    }
+        //    return list.ToArray();
+        //}
+
+        ///// <summary>
+        ///// Converts an <see cref="SystemNet.Collections.Generic.IEnumerable{T}"/> of <see cref="string"/> to an <see cref="Java.Util.Collection{T}"/> of <see cref="Java.Lang.String"/>
+        ///// </summary>
+        ///// <param name="set">The <see cref="SystemNet.Collections.Generic.IEnumerable{T}"/> of <see cref="string"/> to be converted</param>
+        ///// <returns>The converted <see cref="Java.Util.Collection{T}"/> of <see cref="Java.Lang.String"/></returns>
+        //public static implicit operator Java.Util.Collection<Java.Lang.String>(string[] set)
+        //{
+        //    Java.Util.ArrayList<Java.Lang.String> list = new();
+        //    foreach (var item in set)
+        //    {
+        //        list.Add(item);
+        //    }
+        //    return list;
+        //}
+
+        ///// <summary>
+        ///// Converts an <see cref="SystemNet.Collections.Generic.IEnumerable{T}"/> of <see cref="string"/> to an <see cref="Java.Lang.Iterable{T}"/> of <see cref="Java.Lang.String"/>
+        ///// </summary>
+        ///// <param name="set">The array of <see cref="string"/> to be converted</param>
+        ///// <returns>The converted <see cref="Java.Lang.Iterable{T}"/> of <see cref="Java.Lang.String"/></returns>
+        //public static implicit operator Java.Lang.Iterable<Java.Lang.String>(string[] set)
+        //{
+        //    Java.Util.ArrayList<Java.Lang.String> list = new();
+        //    foreach (var item in set)
+        //    {
+        //        list.Add(item);
+        //    }
+        //    return list;
+        //}
+
+        ///// <summary>
+        ///// Converts an <see cref="SystemNet.Collections.Generic.IEnumerable{T}"/> of <see cref="string"/> to an array of <see cref="Java.Lang.String"/>
+        ///// </summary>
+        ///// <param name="collection">The <see cref="SystemNet.Collections.Generic.IEnumerable{T}"/> of <see cref="string"/> to be converted</param>
+        ///// <returns>The array of <see cref="Java.Lang.String"/></returns>
+        //public static implicit operator Java.Lang.String[](string[] collection)
+        //{
+        //    SystemNet.Collections.Generic.List<Java.Lang.String> list = new();
+        //    foreach (var item in collection)
+        //    {
+        //        list.Add(item);
+        //    }
+        //    return list.ToArray();
+        //}
+
+        //#endregion
     }
 }

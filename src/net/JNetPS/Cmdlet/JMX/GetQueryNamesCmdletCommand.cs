@@ -20,6 +20,7 @@ using Javax.Management;
 using Javax.Management.Remote;
 using MASES.JNet.Specific.Extensions;
 using MASES.JNetPSCore.Cmdlet;
+using System.Collections.Generic;
 using System.Management.Automation;
 
 namespace MASES.JNetPS.Cmdlet.JMX
@@ -53,7 +54,7 @@ namespace MASES.JNetPS.Cmdlet.JMX
         {
             var objects = Connector.MBeanServerConnection.QueryNames(ObjectName, Query);
 
-            WriteObject(objects.ToList());
+            WriteObject(objects);
         }
     }
 }
