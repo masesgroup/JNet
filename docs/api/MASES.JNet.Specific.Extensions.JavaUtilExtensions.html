@@ -85,7 +85,7 @@
 
 
   <h1 id="MASES_JNet_Specific_Extensions_JavaUtilExtensions" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions" class="text-break">
-Class JavaUtilExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/Extensions/JavaUtilExtensions.cs/#L28"><i class="bi bi-code-slash"></i></a>
+Class JavaUtilExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/Extensions/JavaUtilExtensions.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -149,343 +149,294 @@ Class JavaUtilExtensions  <a class="header-action link-secondary" title="View so
 </h2>
 
 
-  <a id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToCollection_" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToCollection*"></a>
+  <a id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToJVMArray_" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToJVMArray*"></a>
 
-  <h3 id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToCollection__1_Java_Util_Collection___0__" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToCollection``1(Java.Util.Collection{``0})">
-  ToCollection&lt;T&gt;(Collection&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/Extensions/JavaUtilExtensions.cs/#L37"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Converts a <a class="xref" href="Java.Util.Collection-1.html">Collection&lt;E&gt;</a> to <a class="xref" href="Java.Util.ICollection-1.html">ICollection&lt;E&gt;</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ICollection&lt;T&gt; ToCollection&lt;T&gt;(this Collection&lt;T&gt; set)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>set</code> <a class="xref" href="Java.Util.Collection-1.html">Collection</a>&lt;T&gt;</dt>
-    <dd><p>The <a class="xref" href="Java.Util.Collection-1.html">Collection&lt;E&gt;</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;T&gt;</dt>
-    <dd><p>The <a class="xref" href="Java.Util.ICollection-1.html">ICollection&lt;E&gt;</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T</code></dt>
-    <dd><p>Type</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <a id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToDictiony_" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToDictiony*"></a>
-
-  <h3 id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToDictiony__2_Java_Util_Map___0___1__" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToDictiony``2(Java.Util.Map{``0,``1})">
-  ToDictiony&lt;K, V&gt;(Map&lt;K, V&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/Extensions/JavaUtilExtensions.cs/#L106"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Converts a <a class="xref" href="Java.Util.Map-2.html">Map&lt;K, V&gt;</a> to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary&lt;TKey, TValue&gt;</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Dictionary&lt;K, V&gt; ToDictiony&lt;K, V&gt;(this Map&lt;K, V&gt; map)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>map</code> <a class="xref" href="Java.Util.Map-2.html">Map</a>&lt;K, V&gt;</dt>
-    <dd><p>The <a class="xref" href="Java.Util.Map-2.html">Map&lt;K, V&gt;</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;K, V&gt;</dt>
-    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary&lt;TKey, TValue&gt;</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>K</code></dt>
-    <dd><p>Key</p>
-</dd>
-    <dt><code>V</code></dt>
-    <dd><p>Value</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <a id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToHashtable_" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToHashtable*"></a>
-
-  <h3 id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToHashtable__2_System_Collections_Generic_IDictionary___0___1__" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToHashtable``2(System.Collections.Generic.IDictionary{``0,``1})">
-  ToHashtable&lt;K, V&gt;(IDictionary&lt;K, V&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/Extensions/JavaUtilExtensions.cs/#L161"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Converts a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a> to <a class="xref" href="Java.Util.Hashtable-2.html">Hashtable&lt;K, V&gt;</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Hashtable&lt;K, V&gt; ToHashtable&lt;K, V&gt;(this IDictionary&lt;K, V&gt; dictionary)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>dictionary</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;K, V&gt;</dt>
-    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Java.Util.Hashtable-2.html">Hashtable</a>&lt;K, V&gt;</dt>
-    <dd><p>The <a class="xref" href="Java.Util.Hashtable-2.html">Hashtable&lt;K, V&gt;</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>K</code></dt>
-    <dd><p>Key</p>
-</dd>
-    <dt><code>V</code></dt>
-    <dd><p>Value</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <a id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToJCollection_" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToJCollection*"></a>
-
-  <h3 id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToJCollection__1_System_Collections_Generic_ICollection___0__" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToJCollection``1(System.Collections.Generic.ICollection{``0})">
-  ToJCollection&lt;T&gt;(ICollection&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/Extensions/JavaUtilExtensions.cs/#L69"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Converts a <a class="xref" href="Java.Util.ICollection-1.html">ICollection&lt;E&gt;</a> to <a class="xref" href="Java.Util.Collection-1.html">Collection&lt;E&gt;</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Collection&lt;T&gt; ToJCollection&lt;T&gt;(this ICollection&lt;T&gt; collection)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>collection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;T&gt;</dt>
-    <dd><p>The <a class="xref" href="Java.Util.ICollection-1.html">ICollection&lt;E&gt;</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Java.Util.Collection-1.html">Collection</a>&lt;T&gt;</dt>
-    <dd><p>The <a class="xref" href="Java.Util.Collection-1.html">Collection&lt;E&gt;</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T</code></dt>
-    <dd><p>Type</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <a id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToJList_" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToJList*"></a>
-
-  <h3 id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToJList__1_System_Collections_Generic_ICollection___0__" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToJList``1(System.Collections.Generic.ICollection{``0})">
-  ToJList&lt;T&gt;(ICollection&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/Extensions/JavaUtilExtensions.cs/#L85"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Converts a <a class="xref" href="Java.Util.ICollection-1.html">ICollection&lt;E&gt;</a> to <a class="xref" href="Java.Util.List-1.html">List&lt;E&gt;</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static List&lt;T&gt; ToJList&lt;T&gt;(this ICollection&lt;T&gt; collection)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>collection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;T&gt;</dt>
-    <dd><p>The <a class="xref" href="Java.Util.ICollection-1.html">ICollection&lt;E&gt;</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;T&gt;</dt>
-    <dd><p>The <a class="xref" href="Java.Util.List-1.html">List&lt;E&gt;</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T</code></dt>
-    <dd><p>Type</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <a id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToList_" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToList*"></a>
-
-  <h3 id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToList__1_Java_Util_Collection___0__" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToList``1(Java.Util.Collection{``0})">
-  ToList&lt;T&gt;(Collection&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/Extensions/JavaUtilExtensions.cs/#L53"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Converts a <a class="xref" href="Java.Util.Collection-1.html">Collection&lt;E&gt;</a> to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static List&lt;T&gt; ToList&lt;T&gt;(this Collection&lt;T&gt; set)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>set</code> <a class="xref" href="Java.Util.Collection-1.html">Collection</a>&lt;T&gt;</dt>
-    <dd><p>The <a class="xref" href="Java.Util.Collection-1.html">Collection&lt;E&gt;</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</dt>
-    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T</code></dt>
-    <dd><p>Type</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <a id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToMap_" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToMap*"></a>
-
-  <h3 id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToMap__2_System_Collections_Generic_IDictionary___0___1__" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToMap``2(System.Collections.Generic.IDictionary{``0,``1})">
-  ToMap&lt;K, V&gt;(IDictionary&lt;K, V&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/Extensions/JavaUtilExtensions.cs/#L123"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Converts a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a> to <a class="xref" href="Java.Util.Map-2.html">Map&lt;K, V&gt;</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Map&lt;K, V&gt; ToMap&lt;K, V&gt;(this IDictionary&lt;K, V&gt; dictionary)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>dictionary</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;K, V&gt;</dt>
-    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Java.Util.Map-2.html">Map</a>&lt;K, V&gt;</dt>
-    <dd><p>The <a class="xref" href="Java.Util.Map-2.html">Map&lt;K, V&gt;</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>K</code></dt>
-    <dd><p>Key</p>
-</dd>
-    <dt><code>V</code></dt>
-    <dd><p>Value</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <a id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToMap_" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToMap*"></a>
-
-  <h3 id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToMap__4_System_Collections_Generic_IDictionary___0___1__System_Func___0___2__System_Func___1___3__" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToMap``4(System.Collections.Generic.IDictionary{``0,``1},System.Func{``0,``2},System.Func{``1,``3})">
-  ToMap&lt;K, V, TJVMK, TJVMV&gt;(IDictionary&lt;K, V&gt;, Func&lt;K, TJVMK&gt;, Func&lt;V, TJVMV&gt;)
+  <h3 id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToJVMArray__2___1___System_Func___1___0__" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToJVMArray``2(``1[],System.Func{``1,``0})">
+  ToJVMArray&lt;TJVMType, TNetType&gt;(TNetType[], Func&lt;TNetType, TJVMType&gt;)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/Extensions/JavaUtilExtensions.cs/#L144"><i class="bi bi-code-slash"></i></a>
   </h3>
 
+  <div class="markdown level1 summary"><p>Converts an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> to an array of <a class="xref" href="Java.Lang.String.html">String</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TJVMType[] ToJVMArray&lt;TJVMType, TNetType&gt;(this TNetType[] collection, Func&lt;TNetType, TJVMType&gt; func = null) where TJVMType : INativeConvertible&lt;TJVMType, TNetType&gt;, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collection</code> TNetType[]</dt>
+    <dd><p>The array of <code class="typeparamref">TNetType</code> to be converted</p>
+</dd>
+    <dt><code>func</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TNetType, TJVMType&gt;</dt>
+    <dd><p>An optional <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func&lt;T, TResult&gt;</a> used to return <code class="typeparamref">TJVMType</code> from data of <code class="typeparamref">TNetType</code> in <code class="paramref">collection</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>TJVMType[]</dt>
+    <dd><p>The array of <code class="typeparamref">TJVMType</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TJVMType</code></dt>
+    <dd></dd>
+    <dt><code>TNetType</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToJVMCollectionType_" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToJVMCollectionType*"></a>
+
+  <h3 id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToJVMCollectionType__3_System_Collections_Generic_IEnumerable___2__System_Func___2___1__" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToJVMCollectionType``3(System.Collections.Generic.IEnumerable{``2},System.Func{``2,``1})">
+  ToJVMCollectionType&lt;TIterableType, TJVMTypeInner, TNetType&gt;(IEnumerable&lt;TNetType&gt;, Func&lt;TNetType, TJVMTypeInner&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/Extensions/JavaUtilExtensions.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <code class="typeparamref">TNetType</code> to an <code class="typeparamref">TIterableType</code> of <code class="typeparamref">TJVMTypeInner</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TIterableType ToJVMCollectionType&lt;TIterableType, TJVMTypeInner, TNetType&gt;(this IEnumerable&lt;TNetType&gt; set, Func&lt;TNetType, TJVMTypeInner&gt; func = null) where TIterableType : Collection&lt;TJVMTypeInner&gt;, new() where TJVMTypeInner : INativeConvertible&lt;TJVMTypeInner, TNetType&gt;, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>set</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TNetType&gt;</dt>
+    <dd><p>The <a class="xref" href="Java.Util.Collection-1.html">Collection&lt;E&gt;</a> of <code class="typeparamref">TJVMTypeInner</code> to be converted</p>
+</dd>
+    <dt><code>func</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TNetType, TJVMTypeInner&gt;</dt>
+    <dd><p>An optional <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func&lt;T, TResult&gt;</a> used to return <code class="typeparamref">TJVMTypeInner</code> from data of <code class="typeparamref">TNetType</code> in <code class="paramref">set</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TIterableType</span></dt>
+    <dd><p>The converted <code class="typeparamref">TIterableType</code> of <code class="typeparamref">TJVMTypeInner</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TIterableType</code></dt>
+    <dd><p>A type implementing <a class="xref" href="Java.Lang.Iterable-1.html">Iterable&lt;T&gt;</a></p>
+</dd>
+    <dt><code>TJVMTypeInner</code></dt>
+    <dd><p>The expected JVM type</p>
+</dd>
+    <dt><code>TNetType</code></dt>
+    <dd><p>The original .NET type</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToJVMCollection_" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToJVMCollection*"></a>
+
+  <h3 id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToJVMCollection__2_System_Collections_Generic_IEnumerable___1__System_Func___1___0__" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToJVMCollection``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,``0})">
+  ToJVMCollection&lt;TJVMType, TNetType&gt;(IEnumerable&lt;TNetType&gt;, Func&lt;TNetType, TJVMType&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/Extensions/JavaUtilExtensions.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> to an <a class="xref" href="Java.Util.Collection-1.html">Collection&lt;E&gt;</a> of <a class="xref" href="Java.Lang.String.html">String</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Collection&lt;TJVMType&gt; ToJVMCollection&lt;TJVMType, TNetType&gt;(this IEnumerable&lt;TNetType&gt; set, Func&lt;TNetType, TJVMType&gt; func = null) where TJVMType : INativeConvertible&lt;TJVMType, TNetType&gt;, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>set</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TNetType&gt;</dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> to be converted</p>
+</dd>
+    <dt><code>func</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TNetType, TJVMType&gt;</dt>
+    <dd><p>An optional <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func&lt;T, TResult&gt;</a> used to return <code class="typeparamref">TJVMType</code> from data of <code class="typeparamref">TNetType</code> in <code class="paramref">set</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Collection-1.html">Collection</a>&lt;TJVMType&gt;</dt>
+    <dd><p>The converted <a class="xref" href="Java.Util.Collection-1.html">Collection&lt;E&gt;</a> of <a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TJVMType</code></dt>
+    <dd></dd>
+    <dt><code>TNetType</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToJVMDictionary_" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToJVMDictionary*"></a>
+
+  <h3 id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToJVMDictionary__4_System_Collections_Generic_IDictionary___2___3__System_Func___2___0__System_Func___3___1__" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToJVMDictionary``4(System.Collections.Generic.IDictionary{``2,``3},System.Func{``2,``0},System.Func{``3,``1})">
+  ToJVMDictionary&lt;TJVMK, TJVMV, K, V&gt;(IDictionary&lt;K, V&gt;, Func&lt;K, TJVMK&gt;, Func&lt;V, TJVMV&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/Extensions/JavaUtilExtensions.cs/#L328"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a> to <a class="xref" href="Java.Util.Dictionary-2.html">Dictionary&lt;K, V&gt;</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;TJVMK, TJVMV&gt; ToJVMDictionary&lt;TJVMK, TJVMV, K, V&gt;(this IDictionary&lt;K, V&gt; dictionary, Func&lt;K, TJVMK&gt; keyConverter, Func&lt;V, TJVMV&gt; valueConverter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dictionary</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;K, V&gt;</dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a></p>
+</dd>
+    <dt><code>keyConverter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;K, TJVMK&gt;</dt>
+    <dd><p>Converter from <code class="typeparamref">K</code> to <code class="typeparamref">TJVMK</code></p>
+</dd>
+    <dt><code>valueConverter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;V, TJVMV&gt;</dt>
+    <dd><p>Converter from <code class="typeparamref">V</code> to <code class="typeparamref">TJVMV</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Dictionary-2.html">Dictionary</a>&lt;TJVMK, TJVMV&gt;</dt>
+    <dd><p>The <a class="xref" href="Java.Util.Dictionary-2.html">Dictionary&lt;K, V&gt;</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TJVMK</code></dt>
+    <dd><p>JVM key type</p>
+</dd>
+    <dt><code>TJVMV</code></dt>
+    <dd><p>JVM value type</p>
+</dd>
+    <dt><code>K</code></dt>
+    <dd><p>.NET Key type</p>
+</dd>
+    <dt><code>V</code></dt>
+    <dd><p>.NET Value</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToJVMDictionary_" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToJVMDictionary*"></a>
+
+  <h3 id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToJVMDictionary__5_System_Collections_Generic_IDictionary___3___4__System_Func___3___1__System_Func___4___2__" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToJVMDictionary``5(System.Collections.Generic.IDictionary{``3,``4},System.Func{``3,``1},System.Func{``4,``2})">
+  ToJVMDictionary&lt;TDictionaryType, TJVMK, TJVMV, K, V&gt;(IDictionary&lt;K, V&gt;, Func&lt;K, TJVMK&gt;, Func&lt;V, TJVMV&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/Extensions/JavaUtilExtensions.cs/#L289"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a> to <code class="typeparamref">TDictionaryType</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TDictionaryType ToJVMDictionary&lt;TDictionaryType, TJVMK, TJVMV, K, V&gt;(this IDictionary&lt;K, V&gt; dictionary, Func&lt;K, TJVMK&gt; keyConverter = null, Func&lt;V, TJVMV&gt; valueConverter = null) where TDictionaryType : Dictionary&lt;TJVMK, TJVMV&gt;, new() where TJVMK : INativeConvertible&lt;TJVMK, K&gt; where TJVMV : INativeConvertible&lt;TJVMV, V&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dictionary</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;K, V&gt;</dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a></p>
+</dd>
+    <dt><code>keyConverter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;K, TJVMK&gt;</dt>
+    <dd><p>Optional converter from <code class="typeparamref">K</code> to <code class="typeparamref">TJVMK</code></p>
+</dd>
+    <dt><code>valueConverter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;V, TJVMV&gt;</dt>
+    <dd><p>Optional converter from <code class="typeparamref">V</code> to <code class="typeparamref">TJVMV</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TDictionaryType</span></dt>
+    <dd><p>The <code class="typeparamref">TDictionaryType</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TDictionaryType</code></dt>
+    <dd><p>The <a class="xref" href="Java.Util.Dictionary-2.html">Dictionary&lt;K, V&gt;</a> over <code class="typeparamref">TJVMK</code> and <code class="typeparamref">TJVMV</code></p>
+</dd>
+    <dt><code>TJVMK</code></dt>
+    <dd><p>JVM key type</p>
+</dd>
+    <dt><code>TJVMV</code></dt>
+    <dd><p>JVM value type</p>
+</dd>
+    <dt><code>K</code></dt>
+    <dd><p>.NET Key type</p>
+</dd>
+    <dt><code>V</code></dt>
+    <dd><p>.NET Value</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToJVMMap_" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToJVMMap*"></a>
+
+  <h3 id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToJVMMap__4_System_Collections_Generic_IDictionary___2___3__System_Func___2___0__System_Func___3___1__" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToJVMMap``4(System.Collections.Generic.IDictionary{``2,``3},System.Func{``2,``0},System.Func{``3,``1})">
+  ToJVMMap&lt;TJVMK, TJVMV, K, V&gt;(IDictionary&lt;K, V&gt;, Func&lt;K, TJVMK&gt;, Func&lt;V, TJVMV&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/Extensions/JavaUtilExtensions.cs/#L264"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Converts a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a> to <a class="xref" href="Java.Util.Map-2.html">Map&lt;K, V&gt;</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Map&lt;TJVMK, TJVMV&gt; ToMap&lt;K, V, TJVMK, TJVMV&gt;(this IDictionary&lt;K, V&gt; dictionary, Func&lt;K, TJVMK&gt; keyConverter, Func&lt;V, TJVMV&gt; valueConverter)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Map&lt;TJVMK, TJVMV&gt; ToJVMMap&lt;TJVMK, TJVMV, K, V&gt;(this IDictionary&lt;K, V&gt; dictionary, Func&lt;K, TJVMK&gt; keyConverter, Func&lt;V, TJVMV&gt; valueConverter)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -505,6 +456,229 @@ Class JavaUtilExtensions  <a class="header-action link-secondary" title="View so
   <dl class="parameters">
     <dt><a class="xref" href="Java.Util.Map-2.html">Map</a>&lt;TJVMK, TJVMV&gt;</dt>
     <dd><p>The <a class="xref" href="Java.Util.Map-2.html">Map&lt;K, V&gt;</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TJVMK</code></dt>
+    <dd><p>JVM key type</p>
+</dd>
+    <dt><code>TJVMV</code></dt>
+    <dd><p>JVM value type</p>
+</dd>
+    <dt><code>K</code></dt>
+    <dd><p>.NET Key type</p>
+</dd>
+    <dt><code>V</code></dt>
+    <dd><p>.NET Value</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToJVMMap_" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToJVMMap*"></a>
+
+  <h3 id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToJVMMap__5_System_Collections_Generic_IDictionary___3___4__System_Func___3___1__System_Func___4___2__" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToJVMMap``5(System.Collections.Generic.IDictionary{``3,``4},System.Func{``3,``1},System.Func{``4,``2})">
+  ToJVMMap&lt;TMapType, TJVMK, TJVMV, K, V&gt;(IDictionary&lt;K, V&gt;, Func&lt;K, TJVMK&gt;, Func&lt;V, TJVMV&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/Extensions/JavaUtilExtensions.cs/#L225"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a> to <code class="typeparamref">TMapType</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TMapType ToJVMMap&lt;TMapType, TJVMK, TJVMV, K, V&gt;(this IDictionary&lt;K, V&gt; dictionary, Func&lt;K, TJVMK&gt; keyConverter = null, Func&lt;V, TJVMV&gt; valueConverter = null) where TMapType : Map&lt;TJVMK, TJVMV&gt;, new() where TJVMK : INativeConvertible&lt;TJVMK, K&gt; where TJVMV : INativeConvertible&lt;TJVMV, V&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dictionary</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;K, V&gt;</dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a></p>
+</dd>
+    <dt><code>keyConverter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;K, TJVMK&gt;</dt>
+    <dd><p>Optional converter from <code class="typeparamref">K</code> to <code class="typeparamref">TJVMK</code></p>
+</dd>
+    <dt><code>valueConverter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;V, TJVMV&gt;</dt>
+    <dd><p>Optional converter from <code class="typeparamref">V</code> to <code class="typeparamref">TJVMV</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TMapType</span></dt>
+    <dd><p>The <code class="typeparamref">TMapType</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TMapType</code></dt>
+    <dd><p>The <a class="xref" href="Java.Util.Map-2.html">Map&lt;K, V&gt;</a> over <code class="typeparamref">TJVMK</code> and <code class="typeparamref">TJVMV</code></p>
+</dd>
+    <dt><code>TJVMK</code></dt>
+    <dd><p>JVM key type</p>
+</dd>
+    <dt><code>TJVMV</code></dt>
+    <dd><p>JVM value type</p>
+</dd>
+    <dt><code>K</code></dt>
+    <dd><p>.NET Key type</p>
+</dd>
+    <dt><code>V</code></dt>
+    <dd><p>.NET Value</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToNetArray_" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToNetArray*"></a>
+
+  <h3 id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToNetArray__2_System_Collections_Generic_IEnumerable___1__" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToNetArray``2(System.Collections.Generic.IEnumerable{``1})">
+  ToNetArray&lt;TNetType, TJVMType&gt;(IEnumerable&lt;TJVMType&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/Extensions/JavaUtilExtensions.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <a class="xref" href="Java.Lang.String.html">String</a> to an array of <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TNetType[] ToNetArray&lt;TNetType, TJVMType&gt;(this IEnumerable&lt;TJVMType&gt; set) where TJVMType : INativeConvertible&lt;TJVMType, TNetType&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>set</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TJVMType&gt;</dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <a class="xref" href="Java.Lang.String.html">String</a> to be converted</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>TNetType[]</dt>
+    <dd><p>The converted array of <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TNetType</code></dt>
+    <dd></dd>
+    <dt><code>TJVMType</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToNetCollectionType_" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToNetCollectionType*"></a>
+
+  <h3 id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToNetCollectionType__3_System_Collections_Generic_IEnumerable___2__System_Func___2___1__" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToNetCollectionType``3(System.Collections.Generic.IEnumerable{``2},System.Func{``2,``1})">
+  ToNetCollectionType&lt;TEnumerableType, TNetTypeInner, TJVMType&gt;(IEnumerable&lt;TJVMType&gt;, Func&lt;TJVMType, TNetTypeInner&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/Extensions/JavaUtilExtensions.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <code class="typeparamref">TJVMType</code> to an <code class="typeparamref">TEnumerableType</code> of <code class="typeparamref">TNetTypeInner</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TEnumerableType ToNetCollectionType&lt;TEnumerableType, TNetTypeInner, TJVMType&gt;(this IEnumerable&lt;TJVMType&gt; set, Func&lt;TJVMType, TNetTypeInner&gt; func = null) where TEnumerableType : ICollection&lt;TNetTypeInner&gt;, new() where TJVMType : INativeConvertible&lt;TJVMType, TNetTypeInner&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>set</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TJVMType&gt;</dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <code class="typeparamref">TJVMType</code> to be converted</p>
+</dd>
+    <dt><code>func</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TJVMType, TNetTypeInner&gt;</dt>
+    <dd><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func&lt;T, TResult&gt;</a> used to convert <code class="typeparamref">TJVMType</code> into <code class="typeparamref">TNetTypeInner</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TEnumerableType</span></dt>
+    <dd><p>The converted <code class="typeparamref">TEnumerableType</code> of <code class="typeparamref">TNetTypeInner</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TEnumerableType</code></dt>
+    <dd><p>A type implementing <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a></p>
+</dd>
+    <dt><code>TNetTypeInner</code></dt>
+    <dd><p>The expected .NET type</p>
+</dd>
+    <dt><code>TJVMType</code></dt>
+    <dd><p>The original JVM type</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToNetDictiony_" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToNetDictiony*"></a>
+
+  <h3 id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToNetDictiony__4_Java_Util_Map___2___3__System_Func___2___0__System_Func___3___1__" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToNetDictiony``4(Java.Util.Map{``2,``3},System.Func{``2,``0},System.Func{``3,``1})">
+  ToNetDictiony&lt;K, V, TJVMK, TJVMV&gt;(Map&lt;TJVMK, TJVMV&gt;, Func&lt;TJVMK, K&gt;, Func&lt;TJVMV, V&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/Extensions/JavaUtilExtensions.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a> to <a class="xref" href="Java.Util.Map-2.html">Map&lt;K, V&gt;</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDictionary&lt;K, V&gt; ToNetDictiony&lt;K, V, TJVMK, TJVMV&gt;(this Map&lt;TJVMK, TJVMV&gt; map, Func&lt;TJVMK, K&gt; keyConverter = null, Func&lt;TJVMV, V&gt; valueConverter = null) where TJVMK : INativeConvertible&lt;TJVMK, K&gt; where TJVMV : INativeConvertible&lt;TJVMV, V&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Java.Util.Map-2.html">Map</a>&lt;TJVMK, TJVMV&gt;</dt>
+    <dd><p>The <a class="xref" href="Java.Util.Map-2.html">Map&lt;K, V&gt;</a></p>
+</dd>
+    <dt><code>keyConverter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TJVMK, K&gt;</dt>
+    <dd><p>Optional converter from <code class="typeparamref">TJVMK</code> to <code class="typeparamref">K</code></p>
+</dd>
+    <dt><code>valueConverter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TJVMV, V&gt;</dt>
+    <dd><p>Optional converter from <code class="typeparamref">TJVMV</code> to <code class="typeparamref">V</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;K, V&gt;</dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a></p>
 </dd>
   </dl>
 
@@ -533,11 +707,74 @@ Class JavaUtilExtensions  <a class="header-action link-secondary" title="View so
 
 
 
+  <a id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToNetDictiony_" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToNetDictiony*"></a>
+
+  <h3 id="MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToNetDictiony__5_Java_Util_Map___3___4__System_Func___3___1__System_Func___4___2__" data-uid="MASES.JNet.Specific.Extensions.JavaUtilExtensions.ToNetDictiony``5(Java.Util.Map{``3,``4},System.Func{``3,``1},System.Func{``4,``2})">
+  ToNetDictiony&lt;TDictionaryType, K, V, TJVMK, TJVMV&gt;(Map&lt;TJVMK, TJVMV&gt;, Func&lt;TJVMK, K&gt;, Func&lt;TJVMV, V&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/Extensions/JavaUtilExtensions.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a> to <a class="xref" href="Java.Util.Map-2.html">Map&lt;K, V&gt;</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TDictionaryType ToNetDictiony&lt;TDictionaryType, K, V, TJVMK, TJVMV&gt;(this Map&lt;TJVMK, TJVMV&gt; map, Func&lt;TJVMK, K&gt; keyConverter = null, Func&lt;TJVMV, V&gt; valueConverter = null) where TDictionaryType : IDictionary&lt;K, V&gt;, new() where TJVMK : INativeConvertible&lt;TJVMK, K&gt; where TJVMV : INativeConvertible&lt;TJVMV, V&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Java.Util.Map-2.html">Map</a>&lt;TJVMK, TJVMV&gt;</dt>
+    <dd><p>The <a class="xref" href="Java.Util.Map-2.html">Map&lt;K, V&gt;</a></p>
+</dd>
+    <dt><code>keyConverter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TJVMK, K&gt;</dt>
+    <dd><p>Optional converter from <code class="typeparamref">TJVMK</code> to <code class="typeparamref">K</code></p>
+</dd>
+    <dt><code>valueConverter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TJVMV, V&gt;</dt>
+    <dd><p>Optional converter from <code class="typeparamref">TJVMV</code> to <code class="typeparamref">V</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TDictionaryType</span></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TDictionaryType</code></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a> over <code class="typeparamref">K</code> and <code class="typeparamref">V</code></p>
+</dd>
+    <dt><code>K</code></dt>
+    <dd><p>.NET Key type</p>
+</dd>
+    <dt><code>V</code></dt>
+    <dd><p>.NET Value</p>
+</dd>
+    <dt><code>TJVMK</code></dt>
+    <dd><p>JVM key type</p>
+</dd>
+    <dt><code>TJVMV</code></dt>
+    <dd><p>JVM value type</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/Extensions/JavaUtilExtensions.cs/#L28" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/Extensions/JavaUtilExtensions.cs/#L51" class="edit-link">Edit this page</a>
         </div>
 
 

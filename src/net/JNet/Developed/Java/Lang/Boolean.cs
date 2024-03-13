@@ -17,12 +17,27 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
+using MASES.JNet.Specific.Extensions;
 using System;
 
 namespace Java.Lang
 {
-    public partial class Boolean
+    public partial class Boolean : INativeConvertible<Boolean, bool>
     {
+        bool INativeConvertible<Boolean, bool>.ToCLR()
+        {
+            return BooleanValue();
+        }
+        /// <summary>
+        /// Returns the <see cref="Boolean"/> from the <paramref name="clrValue"/> instance
+        /// </summary>
+        /// <param name="clrValue">The <see cref="bool"/> of CLR</param>
+        /// <returns>The converted <see cref="Boolean"/></returns>
+        public static Boolean ToJVM(bool clrValue)
+        {
+            return ValueOf(clrValue);
+        }
+
         /// <summary>
         /// Converter from <see cref="Boolean"/> to <see cref="bool"/>
         /// </summary>

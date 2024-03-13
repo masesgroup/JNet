@@ -26,6 +26,7 @@ jnetreflector -OriginRootPath C:\\myJars -OriginJavadocUrl \"https://thehost/jav
 _jnr_ accepts the following command-line switch:
 
 * **ConfigurationFile**: The path where is stored a JSON file containing the tool configuration properties; the JSON items shall be written using the same command-line property names
+* **JavaPLocationPath**: The path where the tool will locate javap, default is to use system available
 * **OriginRootPath**: The origin path where Jars to be analyzed, and dependencies, are stored
 * **OriginJavadocUrl**: The base URL of the Javadoc to be associated to the classes
 * **JavadocVersion**: The version of the Javadoc to be associated to the classes, it means the Javadoc tool version used
@@ -47,12 +48,14 @@ _jnr_ accepts the following command-line switch:
 * **ClassesToAvoidJavaListener**: A CSV list of class names to be avoided during generation of Java listener classes
 * **NamespacesInConflict**: A CSV list of namespaces in conflict with class name: to this one will be added an "Ns" at the end
 * **ClassesInConflict**: A CSV list of classes in conflict with namespace name: to this one will be added an "Class" at the end
+* **PreferMethodWithSignature**: The option forces the tool to identify and use signature when available
 * **OnlyPropertiesForGetterSetter**: The option forces the tool to convert into properties only getter/setter
 * **ReflectDeprecated**: The option forces the tool to write any constructor, method or field marked as deprecated, default is to avoid deprecated
 * **AvoidCSharpGenericDefinition**: The option forces the tool to reflect generics without create the C# generic definition
 * **AvoidCSharpGenericClauseDefinition**: The option forces the tool to reflect generics without create the clauses of C# generic definition
 * **DisableGenericsInNonGenericClasses**: The option disables generation of generic methods in non generic classes
 * **DisableGenerics**: The option forces the tool to disable any generic type
+* **UseDirectDotNetType**: The option forces the tool to use directly .NET type instead of JVM class, netive types are always managed as native (boolean - bool, etc)
 * **CreateInterfaceInheritance**: The option forces the tool to create the C# interface inheritance
 * **DisableInterfaceMethodGeneration**: The option disables the generation of the methods in the C# interface
 * **UseDotNetNullable**: The option forces the tool to use .NET nullable instead of Java types for native types
@@ -78,6 +81,7 @@ The options used are:
   "RelativeDestinationCSharpClassPath": "net\\JNet\\Generated",
   "RelativeDestinationJavaListenerPath": "jvm\\jnet\\src\\main\\java",
   "JavaListenerBasePackage": "org.mases.jnet.generated",
+  "PreferMethodWithSignature": true,
   "OnlyPropertiesForGetterSetter": true,
   "ModulesToParse": [
     "org.*",

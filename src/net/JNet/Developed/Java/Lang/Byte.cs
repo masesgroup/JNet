@@ -17,12 +17,27 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
+using MASES.JNet.Specific.Extensions;
 using System;
 
 namespace Java.Lang
 {
-    public partial class Byte
+    public partial class Byte : INativeConvertible<Byte, byte>
     {
+        byte INativeConvertible<Byte, byte>.ToCLR()
+        {
+            return ByteValue();
+        }
+        /// <summary>
+        /// Returns the <see cref="Byte"/> from the <paramref name="clrValue"/> instance
+        /// </summary>
+        /// <param name="clrValue">The <see cref="byte"/> of CLR</param>
+        /// <returns>The converted <see cref="Byte"/></returns>
+        public static Byte ToJVM(byte clrValue)
+        {
+            return ValueOf(clrValue);
+        }
+
         /// <summary>
         /// Converter from <see cref="Byte"/> to <see cref="byte"/>
         /// </summary>

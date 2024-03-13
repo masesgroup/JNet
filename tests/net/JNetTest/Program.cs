@@ -23,6 +23,7 @@ using System.Diagnostics;
 using Java.Lang;
 using MASES.JCOBridge.C2JBridge;
 using System.Threading.Tasks;
+using System.Linq;
 
 namespace MASES.JNetTest
 {
@@ -33,8 +34,6 @@ namespace MASES.JNetTest
             JNetTestCore.CreateGlobalInstance();
             var appArgs = JNetTestCore.FilteredArgs;
 
-            var setEmpty = Collections.EmptySet<int>();
-
             var cls = Java.Lang.Class.Of<Vector<string>>();
             var cls2 = JNetTestCore.Class<Vector<string>>();
 
@@ -43,7 +42,7 @@ namespace MASES.JNetTest
 
             try
             {
-                var set = Collections.Singleton("test");
+                var set = Collections.Singleton((Java.Lang.String)"test");
                 if (appArgs.Length != 0) set.Add(appArgs[0]);
             }
             catch (UnsupportedOperationException)
@@ -52,12 +51,38 @@ namespace MASES.JNetTest
             }
             catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
 
-            TestOperators();
-
-            TestIterator();
-            TestAsyncIterator().Wait();
+            TestSimpleOperatorsExtension<Java.Lang.String, string>("a", "b", "c");
+            TestArrays();
 
             TestExtensions();
+
+            TestOperators();
+            TestExtensions();
+
+            TestIterator();
+
+            TestAsyncIterator().Wait();
+        }
+
+        static void TestArrays()
+        {
+            ArrayList<int[]> arr = new();
+            arr.Add(new int[] { 0, 1 });
+
+            ArrayList<int> arr1 = new();
+            arr1.Add(1);
+
+            ArrayList<string> arr2 = new();
+            arr2.Add("a");
+
+            ArrayList<Java.Lang.String> arr3 = new();
+            arr3.Add("a");
+            arr3.Add("b");
+
+            Java.Lang.String[] arrRes = new String[1] { new String() };
+            arrRes = arr3.ToArray(arrRes);
+
+            var setEmpty = Collections.EmptySet<int>();
         }
 
         static void TestOperators()
@@ -88,6 +113,20 @@ namespace MASES.JNetTest
             var ccc = astr + bstr;
         }
 
+        static void TestSimpleOperatorsExtension<TJVM, TNet>(params TNet[] dataInput)
+            where TJVM : INativeConvertible<TJVM, TNet>, new()
+        {
+            var jvmArray = dataInput.ToJVMArray<TJVM, TNet>();
+
+            var jvmIterable = dataInput.ToJVMCollectionType<ArrayList<TJVM>, TJVM, TNet>();
+
+            var netList = jvmArray.ToNetCollectionType<System.Collections.Generic.List<TNet>, TNet, TJVM>();
+
+            TNet[] arrayNet = jvmIterable.ToNetArray<TNet, TJVM>();
+
+            if (!dataInput.SequenceEqual(arrayNet)) throw new System.InvalidOperationException();
+        }
+
         static async Task TestAsyncIterator()
         {
             const int execution = 100;
@@ -112,14 +151,14 @@ namespace MASES.JNetTest
         {
             const int execution = 100;
             Stopwatch w = Stopwatch.StartNew();
-            ArrayList<string> alist = new Java.Util.ArrayList<string>();
+            ArrayList<Java.Lang.String> alist = new();
             for (int i = 0; i < execution; i++)
             {
                 alist.Add(i.ToString());
             }
             w.Stop();
 
-            foreach (var item in ((List<string>)alist).WithPrefetch())
+            foreach (var item in (alist).WithPrefetch())
             {
                 if (!int.TryParse(item, out int i))
                 {
@@ -134,8 +173,8 @@ namespace MASES.JNetTest
             dict.Add("true", true);
             dict.Add("false", false);
             dict.Add("true2", true);
-            var map = dict.ToMap();
-            var newDict = map.ToDictiony();
+            var map = dict.ToJVMMap<HashMap<Java.Lang.String, Java.Lang.Boolean>, Java.Lang.String, Java.Lang.Boolean, string, bool>();
+            var newDict = map.ToNetDictiony<string, bool, Java.Lang.String, Java.Lang.Boolean>();
 
             const int execution = 10000;
             Stopwatch w = Stopwatch.StartNew();

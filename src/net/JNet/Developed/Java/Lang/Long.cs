@@ -17,12 +17,27 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
+using MASES.JNet.Specific.Extensions;
 using System;
 
 namespace Java.Lang
 {
-    public partial class Long : Number
+    public partial class Long : INativeConvertible<Long, long>
     {
+        long INativeConvertible<Long, long>.ToCLR()
+        {
+            return LongValue();
+        }
+        /// <summary>
+        /// Returns the <see cref="Long"/> from the <paramref name="clrValue"/> instance
+        /// </summary>
+        /// <param name="clrValue">The <see cref="long"/> of CLR</param>
+        /// <returns>The converted <see cref="Long"/></returns>
+        public static Long ToJVM(long clrValue)
+        {
+            return ValueOf(clrValue);
+        }
+
         /// <summary>
         /// Converter from <see cref="Long"/> to <see cref="long"/>
         /// </summary>

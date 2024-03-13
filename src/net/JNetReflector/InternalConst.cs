@@ -28,6 +28,7 @@ namespace MASES.JNetReflector
     {
         // ReflectorArgs
         public const string ConfigurationFile = "ConfigurationFile";
+        public const string JavaPLocationPath = "JavaPLocationPath";
         public const string OriginRootPath = "OriginRootPath";
         public const string OriginJavadocUrl = "OriginJavadocUrl";
         public const string JavadocVersion = "JavadocVersion";
@@ -49,13 +50,14 @@ namespace MASES.JNetReflector
         public const string NamespacesToAvoid = "NamespacesToAvoid";
         public const string ClassesToAvoid = "ClassesToAvoid";
         public const string ClassesToAvoidInGenerics = "ClassesToAvoidInGenerics";
+        public const string PreferMethodWithSignature = "PreferMethodWithSignature";
         public const string OnlyPropertiesForGetterSetter = "OnlyPropertiesForGetterSetter";
         public const string ReflectDeprecated = "ReflectDeprecated";
         public const string AvoidCSharpGenericDefinition = "AvoidCSharpGenericDefinition";
         public const string AvoidCSharpGenericClauseDefinition = "AvoidCSharpGenericClauseDefinition";
         public const string DisableGenericsInNonGenericClasses = "DisableGenericsInNonGenericClasses";
         public const string DisableGenerics = "DisableGenerics";
-        public const string UseDirectDotNetString = "UseDirectDotNetString";
+        public const string UseDirectDotNetType = "UseDirectDotNetType";
         public const string CreateInterfaceInheritance = "CreateInterfaceInheritance";
         public const string DisableInterfaceMethodGeneration = "DisableInterfaceMethodGeneration";
         public const string UseDotNetNullable = "UseDotNetNullable";
@@ -84,6 +86,7 @@ namespace MASES.JNetReflector
         public const string EndGenericDeclaration = ">";
         public const string NetObject = "object";
         public const string JavaLangAnyType = "?";
+        public const string JavaLangThrows = "throws";
         public const string JavaLangClass = "Java.Lang.Class";
         public const string JavaLangVoid = "Java.Lang.Void";
         public const string JavaLangObject = "java.lang.Object";

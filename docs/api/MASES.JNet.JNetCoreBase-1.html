@@ -229,6 +229,18 @@ Class JNetCoreBase&lt;T&gt;  <a class="header-action link-secondary" title="View
       <span class="xref">SetupJVMWrapper.EnableCriticalMethods</span>
     </div>
     <div>
+      <span class="xref">SetupJVMWrapper.EnableCriticalMethodsOnGetThreshold</span>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper.EnableCriticalMethodsOnGet</span>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper.EnableCriticalMethodsOnSetThreshold</span>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper.EnableCriticalMethodsOnSet</span>
+    </div>
+    <div>
       <span class="xref">SetupJVMWrapper.JVM</span>
     </div>
     <div>
@@ -810,7 +822,7 @@ Class JNetCoreBase&lt;T&gt;  <a class="header-action link-secondary" title="View
 
   <h3 id="MASES_JNet_JNetCoreBase_1_ClassPath" data-uid="MASES.JNet.JNetCoreBase`1.ClassPath">
   ClassPath
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/JNetCoreBase.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/JNetCoreBase.cs/#L219"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1372,7 +1384,7 @@ Class JNetCoreBase&lt;T&gt;  <a class="header-action link-secondary" title="View
 
   <h3 id="MASES_JNet_JNetCoreBase_1_PathToParse" data-uid="MASES.JNet.JNetCoreBase`1.PathToParse">
   PathToParse
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/JNetCoreBase.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/JNetCoreBase.cs/#L224"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>A list of paths to be used in initialization of JVM ClassPath</p>
@@ -1408,7 +1420,7 @@ Class JNetCoreBase&lt;T&gt;  <a class="header-action link-secondary" title="View
 
   <h3 id="MASES_JNet_JNetCoreBase_1_Class__1" data-uid="MASES.JNet.JNetCoreBase`1.Class``1">
   Class&lt;TClass&gt;()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/JNetCoreBase.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/JNetCoreBase.cs/#L256"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieve the <a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName.htm</a> of <code class="typeparamref">TClass</code></p>
@@ -1447,7 +1459,7 @@ Class JNetCoreBase&lt;T&gt;  <a class="header-action link-secondary" title="View
 
   <h3 id="MASES_JNet_JNetCoreBase_1_HelpInfo_System_Nullable_System_Int32__" data-uid="MASES.JNet.JNetCoreBase`1.HelpInfo(System.Nullable{System.Int32})">
   HelpInfo(int?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/JNetCoreBase.cs/#L245"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/JNetCoreBase.cs/#L249"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1483,7 +1495,7 @@ Class JNetCoreBase&lt;T&gt;  <a class="header-action link-secondary" title="View
 
   <h3 id="MASES_JNet_JNetCoreBase_1_New_System_String_" data-uid="MASES.JNet.JNetCoreBase`1.New(System.String)">
   New(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/JNetCoreBase.cs/#L263"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/JNetCoreBase.cs/#L267"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieve the object associated to <code class="paramref">className</code></p>
@@ -1522,7 +1534,7 @@ Class JNetCoreBase&lt;T&gt;  <a class="header-action link-secondary" title="View
 
   <h3 id="MASES_JNet_JNetCoreBase_1_New_System_String_System_Object___" data-uid="MASES.JNet.JNetCoreBase`1.New(System.String,System.Object[])">
   New(string, params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/JNetCoreBase.cs/#L274"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/JNetCoreBase.cs/#L278"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieve the object associated to <code class="paramref">className</code></p>
