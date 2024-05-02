@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\Common\Common.props" />
+  <PropertyGroup>
+    <AssemblyName>JNetByteBufferTest</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MASES.JNetByteBufferTest</RootNamespace>
+    <Title>JNetByteBufferTest - a test tool for JNet</Title>
+    <Description>JNetByteBufferTest - a test tool for JNet</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\Common\Initializer.cs" Link="Initializer.cs" />
+  </ItemGroup>
+</Project>

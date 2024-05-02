@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jnetAWTApp", "..\..\src\net
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{360FAD84-7744-4B18-8624-1B5AE07534F6}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JNetByteBufferTest", "JNetByteBufferTest\JNetByteBufferTest.csproj", "{96FDB00B-58C0-4DA5-B254-B5970706DD70}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{BD61B857-1919-4546-8B87-3F525BF269F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD61B857-1919-4546-8B87-3F525BF269F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD61B857-1919-4546-8B87-3F525BF269F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96FDB00B-58C0-4DA5-B254-B5970706DD70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96FDB00B-58C0-4DA5-B254-B5970706DD70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96FDB00B-58C0-4DA5-B254-B5970706DD70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96FDB00B-58C0-4DA5-B254-B5970706DD70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,6 +82,7 @@ Global
 		{6F8234A7-1336-49D9-A68A-3327DFBDFCDD} = {D622CE4D-8CE5-486A-9AAE-97AC093122C7}
 		{17DC32BC-9C75-4846-B08D-D90241B71436} = {D622CE4D-8CE5-486A-9AAE-97AC093122C7}
 		{BD61B857-1919-4546-8B87-3F525BF269F1} = {D622CE4D-8CE5-486A-9AAE-97AC093122C7}
+		{96FDB00B-58C0-4DA5-B254-B5970706DD70} = {360FAD84-7744-4B18-8624-1B5AE07534F6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A7C16DC-1BAA-44BC-AA1C-D40B7B61878E}

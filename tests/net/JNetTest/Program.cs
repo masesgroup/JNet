@@ -24,6 +24,9 @@ using Java.Lang;
 using MASES.JCOBridge.C2JBridge;
 using System.Threading.Tasks;
 using System.Linq;
+using Java.Nio;
+using MASES.JCOBridge.C2JBridge.JVMInterop;
+using MASES.JNet.Specific;
 
 namespace MASES.JNetTest
 {
@@ -34,35 +37,115 @@ namespace MASES.JNetTest
             JNetTestCore.CreateGlobalInstance();
             var appArgs = JNetTestCore.FilteredArgs;
 
-            var cls = Java.Lang.Class.Of<Vector<string>>();
-            var cls2 = JNetTestCore.Class<Vector<string>>();
+            TestExtensions();
 
-            var res = cls.Equals(cls2);
-            System.Console.WriteLine($"Class are equals: {res}");
+            TestMemoryStream();
 
+            TestByteBuffers();
+
+            TestEquality();
+
+            TestSingleton();
+
+            TestSimpleOperatorsExtension<Java.Lang.String, string>("a", "b", "c");
+
+            TestArrays();
+
+            TestOperators();
+
+            TestIterator();
+
+            TestAsyncIterator().Wait();
+        }
+
+        static void TestSingleton()
+        {
             try
             {
                 var set = Collections.Singleton((Java.Lang.String)"test");
-                if (appArgs.Length != 0) set.Add(appArgs[0]);
+                set.Add("testData");
             }
             catch (UnsupportedOperationException)
             {
                 System.Console.WriteLine("Add Operation not supported as expected");
             }
             catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
-
-            TestSimpleOperatorsExtension<Java.Lang.String, string>("a", "b", "c");
-            TestArrays();
-
-            TestExtensions();
-
-            TestOperators();
-            TestExtensions();
-
-            TestIterator();
-
-            TestAsyncIterator().Wait();
         }
+
+        static void TestEquality()
+        {
+            var cls = Java.Lang.Class.Of<Vector<string>>();
+            var cls2 = JNetTestCore.Class<Vector<string>>();
+
+            var res = cls.Equals(cls2);
+            System.Console.WriteLine($"Class are equals: {res}");
+        }
+
+        static void TestMemoryStream()
+        {
+            System.IO.MemoryStream ms = new();
+            for (int i = 0; i < 100000; i++)
+            {
+                ms.WriteByte((byte)(i % byte.MaxValue));
+            }
+
+            ByteBuffer bb = (ByteBuffer) ms;
+        }
+
+        static void TestByteBuffers()
+        {
+            byte[] bytes = new byte[100000];
+            for (int i = 0; i < bytes.Length; i++)
+            {
+                bytes[i] = (byte)(i % byte.MaxValue);
+            }
+
+            var bbCast = (Java.Nio.ByteBuffer)bytes;
+
+            /*
+            var jClass = JNetTestCore.GlobalInstance.JVM.GetClass("org.mases.jcobridge.JCOBridgeSharedBuffer");
+            var jj = jClass.Invoke<IJavaObject>("Create", bytes);
+            var backObj = jj.Invoke<long>("getBackingIndex");
+            */
+            byte[] newArray;
+            //JVMBridgeSharedBuffer.TryGetValue(backObj, out newArray);
+
+            var direct = JNetTestCore.GlobalInstance.JVM.NewDirectBuffer(bytes);
+
+            var getSharedBuffer = JNetTestCore.GlobalInstance.JVM.GetDirectBuffer<byte>(direct.JavaObject);
+            var getSharedBufferInt = JNetTestCore.GlobalInstance.JVM.GetDirectBuffer<int>(direct.JavaObject);
+
+            direct[10] = 4;
+
+            if (direct[10] != getSharedBuffer[10]) throw new System.InvalidOperationException();
+
+            var bb = Java.Nio.ByteBuffer.Wrap(bytes);
+            var hasArray = bb.HasArray();
+            var isDirect = bb.IsDirect();
+            var obj = bb.Array();
+
+            var bb2 = Java.Nio.ByteBuffer.AllocateDirect(bytes.Length);
+            bb2.Put(bytes, 0, bytes.Length);
+
+            var intBuffer = bb2.AsIntBuffer();
+            var newCapacity = intBuffer.Capacity();
+
+            var newBuffer = JNetTestCore.GlobalInstance.JVM.GetDirectBuffer<byte>(bb2.BridgeInstance);
+
+            bb2.IsDirect();
+            bb2.Rewind();
+            bb2.Get();
+
+            var bb3 = Java.Nio.ByteBuffer.AllocateDirect(bytes.Length);
+            bb3.Put(bytes, 0, bytes.Length);
+
+            JCOBridgeDirectBuffer<byte> db = (JCOBridgeDirectBuffer<byte>)bb3;
+            bb3.Rewind();
+            JCOBridgeDirectBuffer<int> db2 = (JCOBridgeDirectBuffer<int>)bb3.AsIntBuffer();
+
+            newBuffer = JNetTestCore.GlobalInstance.JVM.GetDirectBuffer<byte>(bb3.BridgeInstance);
+        }
+
 
         static void TestArrays()
         {
@@ -177,26 +260,52 @@ namespace MASES.JNetTest
             var newDict = map.ToNetDictiony<string, bool, Java.Lang.String, Java.Lang.Boolean>();
 
             const int execution = 10000;
-            Stopwatch w = Stopwatch.StartNew();
-            Java.Util.ArrayList<int> alist = new Java.Util.ArrayList<int>();
-            for (int i = 0; i < execution; i++)
-            {
-                alist.Add(i);
-            }
-            w.Stop();
-            System.Console.WriteLine($"ArrayList Elapsed ticks: {w.ElapsedTicks}");
-            w.Restart();
-            System.Collections.Generic.List<int> nlist = new System.Collections.Generic.List<int>();
-            for (int i = 0; i < execution; i++)
-            {
-                nlist.Add(i);
-            }
-            w.Stop();
-            System.Console.WriteLine($"System.Collections.Generic.List Elapsed ticks: {w.ElapsedTicks}");
 
-            //var collection = newDict.Values.ToJCollection();
-            //var intermediate = collection.ToList<Map.Entry<string, string>>();
-            var list = ((List<int>)alist).ToList();
+            for (int index = 0; index < 5; index++)
+            {
+                Stopwatch w = Stopwatch.StartNew();
+                Java.Util.ArrayList<int> alist = new Java.Util.ArrayList<int>();
+                for (int i = 0; i < execution; i++)
+                {
+                    alist.Add(i);
+                }
+                w.Stop();
+                System.Console.WriteLine($"ArrayList Elapsed ticks: {w.ElapsedTicks}");
+
+                w.Restart();
+                System.Collections.Generic.List<int> nlist = new System.Collections.Generic.List<int>();
+                for (int i = 0; i < execution; i++)
+                {
+                    nlist.Add(i);
+                }
+                w.Stop();
+                System.Console.WriteLine($"System.Collections.Generic.List Elapsed ticks: {w.ElapsedTicks}");
+
+                var tmpArray = nlist.ToArray();
+
+                w.Restart();
+                var tmpJList = JNetHelper.ListFrom(tmpArray);
+                alist = new Java.Util.ArrayList<int>(tmpJList);
+                w.Stop();
+                System.Console.WriteLine($"Java.Util.ArrayList from array Elapsed ticks: {w.ElapsedTicks}");
+
+                var intBuffer = IntBuffer.From(tmpArray, false, false);
+
+                w.Restart();
+                tmpJList = JNetHelper.ListFrom(intBuffer);
+                alist = new Java.Util.ArrayList<int>(tmpJList);
+                w.Stop();
+                System.Console.WriteLine($"Java.Util.ArrayList from array premade buffer Elapsed ticks: {w.ElapsedTicks}");
+
+                w.Restart();
+                tmpJList = JNetHelper.ListFrom(tmpArray, true);
+                alist = new Java.Util.ArrayList<int>(tmpJList);
+                w.Stop();
+                System.Console.WriteLine($"Java.Util.ArrayList from array buffered Elapsed ticks: {w.ElapsedTicks}");
+                //var collection = newDict.Values.ToJCollection();
+                //var intermediate = collection.ToList<Map.Entry<string, string>>();
+                var list = ((List<int>)alist).ToList();
+            }
         }
     }
 }
