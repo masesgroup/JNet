@@ -51,7 +51,7 @@ namespace MASES.JNetTest
             }
             catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
 
-            TestSimpleOperatorsExtension<Java.Lang.String, string>("a", "b", "c");
+            TestSimpleOperatorsExtension();
             TestArrays();
 
             TestExtensions();
@@ -111,6 +111,11 @@ namespace MASES.JNetTest
             string bstr = "";
 
             var ccc = astr + bstr;
+        }
+
+        static void TestSimpleOperatorsExtension()
+        {
+            TestSimpleOperatorsExtension<Java.Lang.String, string>("a", "b", "c");
         }
 
         static void TestSimpleOperatorsExtension<TJVM, TNet>(params TNet[] dataInput)
