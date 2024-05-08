@@ -201,7 +201,7 @@ jobs:
         with:
           enableCrossOsArchive: true
           path: ./bin/
-          key: JNet_bin
+          key: JNet_bin_${{ github.run_id }}_${{ github.run_attempt }}
           
   execute_tests:
     needs: build_windows
@@ -231,7 +231,7 @@ jobs:
           fail-on-cache-miss: true
           enableCrossOsArchive: true
           path: ./bin/
-          key: JNet_bin
+          key: JNet_bin_${{ github.run_id }}_${{ github.run_attempt }}
  
       - name: Set up Apache Maven Central
         uses: actions/setup-java@v4
