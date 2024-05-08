@@ -211,7 +211,7 @@ jobs:
         os: [ 'ubuntu-latest', 'windows-latest' ]
         framework: [ 'net462', 'net6.0', 'net7.0', 'net8.0' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle']
-        jdk_version: [ '11', '13', '17', '21' ]
+        jdk_version: [ '11', '17', '21' ] # only LTS versions
         exclude:
           - os: ubuntu-latest
             framework: net462
