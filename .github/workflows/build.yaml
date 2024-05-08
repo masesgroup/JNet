@@ -197,7 +197,7 @@ jobs:
           path: .\bin\*nupkg
 
       - name: Save JNet bin in cache
-        uses: actions/cache/save@v3
+        uses: actions/cache/save@v4
         with:
           enableCrossOsArchive: true
           path: ./bin/
@@ -215,6 +215,8 @@ jobs:
         exclude:
           - os: ubuntu-latest
             framework: net462
+          - jdk_vendor: oracle
+            jdk_version: 11
         
     runs-on: ${{ matrix.os }}
     steps:
@@ -224,7 +226,7 @@ jobs:
           fetch-depth: '1'
 
       - name: Restore JNet bin from cache
-        uses: actions/cache/restore@v3
+        uses: actions/cache/restore@v4
         with:
           fail-on-cache-miss: true
           enableCrossOsArchive: true
@@ -245,7 +247,13 @@ jobs:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ONLINE }}
         
       - name: Executing JNetTest on Windows with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
-        if: matrix.os == 'windows-latest'
+        if: matrix.os == 'windows-latest' $$ matrix.os != net462
         run: dotnet .\bin\${{ matrix.framework }}\JNetTest.dll
+        env:
+          JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ONLINE }}
+          
+      - name: Executing JNetTest on Windows with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
+        if: matrix.os == 'windows-latest' $$ matrix.os == net462
+        run: .\bin\${{ matrix.framework }}\JNetTest.exe
         env:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ONLINE }}
