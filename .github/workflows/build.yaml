@@ -233,7 +233,7 @@ jobs:
           path: ./bin/
           key: JNet_bin_${{ github.run_id }}_${{ github.run_attempt }}
  
-      - name: Set up Apache Maven Central
+      - name: Set up JDK distribution
         uses: actions/setup-java@v4
         with: # running setup-java again overwrites the settings.xml
           distribution: ${{ matrix.jdk_vendor }}
@@ -247,13 +247,13 @@ jobs:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ONLINE }}
         
       - name: Executing JNetTest on Windows with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
-        if: "${{ matrix.os }} == 'windows-latest' $$ ${{ matrix.framework }} != 'net462'"
+        if: ${{ matrix.os == 'windows-latest' $$ matrix.framework != 'net462' }}
         run: dotnet .\bin\${{ matrix.framework }}\JNetTest.dll
         env:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ONLINE }}
           
       - name: Executing JNetTest on Windows with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
-        if: "${{ matrix.os }} == 'windows-latest' $$ ${{ matrix.framework }} == 'net462'"
+        if: ${{ matrix.os == 'windows-latest' $$ matrix.framework == 'net462' }}
         run: .\bin\${{ matrix.framework }}\JNetTest.exe
         env:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ONLINE }}
