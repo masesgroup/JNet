@@ -238,10 +238,14 @@ jobs:
           java-version: ${{ matrix.jdk_version }}
           cache: 'maven'
  
-      - name: Executing JNetTest tests on Ubuntu with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
+      - name: Executing JNetTest on Ubuntu with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
         if: matrix.os == 'ubuntu-latest'
         run: dotnet ./bin/${{ matrix.framework }}/JNetTest.dll
+        env:
+          JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ONLINE }}
         
-      - name: Executing JNetTest tests on Windows with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
+      - name: Executing JNetTest on Windows with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
         if: matrix.os == 'windows-latest'
         run: dotnet .\bin\${{ matrix.framework }}\JNetTest.dll
+        env:
+          JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ONLINE }}
