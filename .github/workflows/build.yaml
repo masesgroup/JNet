@@ -247,13 +247,13 @@ jobs:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ONLINE }}
         
       - name: Executing JNetTest on Windows with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
-        if: ${{ matrix.os == 'windows-latest' $$ matrix.framework != 'net462' }}
+        if: ${{ matrix.os == 'windows-latest' && matrix.framework != 'net462' }}
         run: dotnet .\bin\${{ matrix.framework }}\JNetTest.dll
         env:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ONLINE }}
           
       - name: Executing JNetTest on Windows with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
-        if: ${{ matrix.os == 'windows-latest' $$ matrix.framework == 'net462' }}
+        if: ${{ matrix.os == 'windows-latest' && matrix.framework == 'net462' }}
         run: .\bin\${{ matrix.framework }}\JNetTest.exe
         env:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ONLINE }}
