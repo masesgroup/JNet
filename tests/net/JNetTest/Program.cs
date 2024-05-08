@@ -53,15 +53,13 @@ namespace MASES.JNetTest
 
             TestArrays();
 
-            TestExtensions();
-
             TestOperators();
+
+            TestIterator();
 
             TestExtensions();
 
             TestSimpleOperatorsExtension();
-
-            TestIterator();
 
             TestAsyncIterator().Wait();
         }
