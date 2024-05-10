@@ -76,7 +76,9 @@ namespace Java.Lang
         {
             return base.Equals(other);
         }
+        #endregion
 
+        #region INativeConvertible<String, string>
         string INativeConvertible<String, string>.ToCLR()
         {
             return ToString();

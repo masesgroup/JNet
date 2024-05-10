@@ -149,6 +149,8 @@ namespace MASES.JNetTest
 
         static void TestArrays()
         {
+            System.Console.WriteLine("TestArrays");
+
             ArrayList<int[]> arr = new();
             arr.Add(new int[] { 0, 1 });
 
@@ -170,6 +172,8 @@ namespace MASES.JNetTest
 
         static void TestOperators()
         {
+            System.Console.WriteLine("TestOperators");
+
             Java.Lang.Short a = 10;
             Java.Lang.Short b = 100;
 
@@ -196,6 +200,13 @@ namespace MASES.JNetTest
             var ccc = astr + bstr;
         }
 
+        static void TestSimpleOperatorsExtension()
+        {
+            System.Console.WriteLine("TestSimpleOperatorsExtension");
+
+            TestSimpleOperatorsExtension<Java.Lang.String, string>("a", "b", "c");
+        }
+
         static void TestSimpleOperatorsExtension<TJVM, TNet>(params TNet[] dataInput)
             where TJVM : INativeConvertible<TJVM, TNet>, new()
         {
@@ -212,6 +223,8 @@ namespace MASES.JNetTest
 
         static async Task TestAsyncIterator()
         {
+            System.Console.WriteLine("TestAsyncIterator");
+
             const int execution = 100;
             Stopwatch w = Stopwatch.StartNew();
             ArrayList<string> alist = new();
@@ -232,6 +245,8 @@ namespace MASES.JNetTest
 
         static void TestIterator()
         {
+            System.Console.WriteLine("TestIterator");
+
             const int execution = 100;
             Stopwatch w = Stopwatch.StartNew();
             ArrayList<Java.Lang.String> alist = new();
@@ -252,6 +267,8 @@ namespace MASES.JNetTest
 
         static void TestExtensions()
         {
+            System.Console.WriteLine("TestExtensions");
+
             System.Collections.Generic.Dictionary<string, bool> dict = new();
             dict.Add("true", true);
             dict.Add("false", false);
