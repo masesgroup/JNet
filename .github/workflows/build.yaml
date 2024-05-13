@@ -201,7 +201,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: JNet
-          path: .\bin\*nupkg
+          path: .\bin\*
 
       - name: Save JNet bin in cache
         uses: actions/cache/save@v4
