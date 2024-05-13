@@ -60,6 +60,8 @@ namespace MASES.JNetTest
 
         static void TestSingleton()
         {
+            System.Console.WriteLine("TestSingleton");
+
             try
             {
                 var set = Collections.Singleton((Java.Lang.String)"test");
@@ -74,6 +76,8 @@ namespace MASES.JNetTest
 
         static void TestEquality()
         {
+            System.Console.WriteLine("TestEquality");
+
             var cls = Java.Lang.Class.Of<Vector<string>>();
             var cls2 = JNetTestCore.Class<Vector<string>>();
 
@@ -83,6 +87,8 @@ namespace MASES.JNetTest
 
         static void TestMemoryStream()
         {
+            System.Console.WriteLine("TestMemoryStream");
+
             System.IO.MemoryStream ms = new();
             for (int i = 0; i < 100000; i++)
             {
@@ -94,6 +100,8 @@ namespace MASES.JNetTest
 
         static void TestByteBuffers()
         {
+            System.Console.WriteLine("TestByteBuffers");
+
             byte[] bytes = new byte[100000];
             for (int i = 0; i < bytes.Length; i++)
             {
@@ -145,7 +153,6 @@ namespace MASES.JNetTest
 
             newBuffer = JNetTestCore.GlobalInstance.JVM.GetDirectBuffer<byte>(bb3.BridgeInstance);
         }
-
 
         static void TestArrays()
         {
