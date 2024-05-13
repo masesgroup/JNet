@@ -201,7 +201,10 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: JNet
-          path: .\bin\*
+          path: .\bin\*nupkg
+
+      - name: Recompile to create cache
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618" tests\net\JNetTest.sln
 
       - name: Save JNet bin in cache
         uses: actions/cache/save@v4
