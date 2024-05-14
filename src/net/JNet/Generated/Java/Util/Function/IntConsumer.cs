@@ -43,12 +43,6 @@ namespace Java.Util.Function
         /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
         /// <returns><see cref="Java.Util.Function.IntConsumer"/></returns>
         Java.Util.Function.IntConsumer AndThen(Java.Util.Function.IntConsumer arg0);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntConsumer.html#andThen(java.util.function.IntConsumer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
-        /// <returns><see cref="Java.Util.Function.IntConsumer"/></returns>
-        Java.Util.Function.IntConsumer AndThenDirect(Java.Util.Function.IntConsumer arg0);
 
         #endregion
 
@@ -143,30 +137,6 @@ namespace Java.Util.Function
         public virtual Java.Util.Function.IntConsumer AndThen(Java.Util.Function.IntConsumer arg0)
         {
             return AndThenDefault(arg0);
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntConsumer.html#andThen(java.util.function.IntConsumer)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.IntConsumer, Java.Util.Function.IntConsumer> OnAndThen { get; set; } = null;
-
-        void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.IntConsumer>> data)
-        {
-            var methodToExecute = (OnAndThen != null) ? OnAndThen : AndThenDirect;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntConsumer.html#andThen(java.util.function.IntConsumer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
-        /// <returns><see cref="Java.Util.Function.IntConsumer"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThenDefault"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.IntConsumer AndThenDirect(Java.Util.Function.IntConsumer arg0)
-        {
-            return IExecuteWithSignature<Java.Util.Function.IntConsumerDirect, Java.Util.Function.IntConsumer>("andThenDefault", "(Ljava/util/function/IntConsumer;)Ljava/util/function/IntConsumer;", arg0);
         }
 
         #endregion

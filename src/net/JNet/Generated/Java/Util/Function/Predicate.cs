@@ -66,29 +66,6 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#isEqual(java.lang.Object)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnIsEqual"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<object, Java.Util.Function.Predicate> OnIsEqual { get; set; } = null;
-
-        void IsEqualEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
-        {
-            var methodToExecute = (OnIsEqual != null) ? OnIsEqual : IsEqualDirect;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#isEqual(java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        public virtual Java.Util.Function.Predicate IsEqualDirect(object arg0)
-        {
-            return SExecuteWithSignature<Java.Util.Function.PredicateDirect, Java.Util.Function.Predicate>(LocalBridgeClazz, "isEqual", "(Ljava/lang/Object;)Ljava/util/function/Predicate;", arg0);
-        }
-
-        /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#not(java.util.function.Predicate)"/>
         /// </summary>
         /// <remarks>If <see cref="OnNot"/> has a value it takes precedence over corresponding class method</remarks>
@@ -109,29 +86,6 @@ namespace Java.Util.Function
         public virtual Java.Util.Function.Predicate Not(Java.Util.Function.Predicate arg0)
         {
             return default;
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#not(java.util.function.Predicate)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnNot"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.Predicate, Java.Util.Function.Predicate> OnNot { get; set; } = null;
-
-        void NotEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Predicate>> data)
-        {
-            var methodToExecute = (OnNot != null) ? OnNot : NotDirect;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#not(java.util.function.Predicate)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        public virtual Java.Util.Function.Predicate NotDirect(Java.Util.Function.Predicate arg0)
-        {
-            return SExecuteWithSignature<Java.Util.Function.PredicateDirect, Java.Util.Function.Predicate>(LocalBridgeClazz, "not", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }
 
         #endregion
@@ -205,30 +159,6 @@ namespace Java.Util.Function
         {
             return AndDefault(arg0);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnAnd"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.Predicate, Java.Util.Function.Predicate> OnAnd { get; set; } = null;
-
-        void AndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Predicate>> data)
-        {
-            var methodToExecute = (OnAnd != null) ? OnAnd : AndDirect;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndDefault"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.Predicate AndDirect(Java.Util.Function.Predicate arg0)
-        {
-            return IExecuteWithSignature<Java.Util.Function.PredicateDirect, Java.Util.Function.Predicate>("andDefault", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
         /// </summary>
@@ -262,30 +192,6 @@ namespace Java.Util.Function
         public virtual Java.Util.Function.Predicate Negate()
         {
             return NegateDefault();
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnNegate"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.Predicate> OnNegate { get; set; } = null;
-
-        void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnNegate != null) ? OnNegate : NegateDirect;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
-        /// </summary>
-
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="NegateDefault"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.Predicate NegateDirect()
-        {
-            return IExecuteWithSignature<Java.Util.Function.PredicateDirect, Java.Util.Function.Predicate>("negateDefault", "()Ljava/util/function/Predicate;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
@@ -322,30 +228,6 @@ namespace Java.Util.Function
             return OrDefault(arg0);
         }
 
-        /// <summary>
-        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOr"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.Predicate, Java.Util.Function.Predicate> OnOr { get; set; } = null;
-
-        void OrEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Predicate>> data)
-        {
-            var methodToExecute = (OnOr != null) ? OnOr : OrDirect;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OrDefault"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.Predicate OrDirect(Java.Util.Function.Predicate arg0)
-        {
-            return IExecuteWithSignature<Java.Util.Function.PredicateDirect, Java.Util.Function.Predicate>("orDefault", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
-        }
-
         #endregion
 
         #region Nested classes
@@ -377,24 +259,11 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         Java.Util.Function.Predicate<T> And<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        Java.Util.Function.Predicate<T> And<Arg0objectSuperT>Direct(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
         /// </summary>
 
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         Java.Util.Function.Predicate<T> Negate();
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
-        /// </summary>
-
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        Java.Util.Function.Predicate<T> NegateDirect();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
         /// </summary>
@@ -402,13 +271,6 @@ namespace Java.Util.Function
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         Java.Util.Function.Predicate<T> Or<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        Java.Util.Function.Predicate<T> Or<Arg0objectSuperT>Direct(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
 
         #endregion
 
@@ -461,29 +323,6 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#isEqual(java.lang.Object)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnIsEqual"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<object, Java.Util.Function.Predicate<T>> OnIsEqual { get; set; } = null;
-
-        void IsEqualEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
-        {
-            var methodToExecute = (OnIsEqual != null) ? OnIsEqual : IsEqualDirect;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#isEqual(java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        public virtual Java.Util.Function.Predicate<T> IsEqualDirect(object arg0)
-        {
-            return SExecuteWithSignature<Java.Util.Function.PredicateDirect<T>, Java.Util.Function.Predicate<T>>(LocalBridgeClazz, "isEqual", "(Ljava/lang/Object;)Ljava/util/function/Predicate;", arg0);
-        }
-
-        /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#not(java.util.function.Predicate)"/>
         /// </summary>
         /// <remarks>If <see cref="OnNot<Arg0objectSuperT>"/> has a value it takes precedence over corresponding class method</remarks>
@@ -505,30 +344,6 @@ namespace Java.Util.Function
         public virtual Java.Util.Function.Predicate<T> Not<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
             return default;
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#not(java.util.function.Predicate)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnNot<Arg0objectSuperT>"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.Predicate<Arg0objectSuperT>, Java.Util.Function.Predicate<T>> OnNot<Arg0objectSuperT> { get; set; } = null;
-
-        void Not<Arg0objectSuperT>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Predicate<Arg0objectSuperT>>> data)
-        {
-            var methodToExecute = (OnNot<Arg0objectSuperT> != null) ? OnNot<Arg0objectSuperT> : Not<Arg0objectSuperT>Direct;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#not(java.util.function.Predicate)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        public virtual Java.Util.Function.Predicate<T> Not<Arg0objectSuperT>Direct(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
-        {
-            return SExecuteWithSignature<Java.Util.Function.PredicateDirect<T>, Java.Util.Function.Predicate<T>>(LocalBridgeClazz, "not", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }
 
         #endregion
@@ -604,31 +419,6 @@ namespace Java.Util.Function
         {
             return And<Arg0objectSuperT>Default(arg0);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnAnd<Arg0objectSuperT>"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.Predicate<Arg0objectSuperT>, Java.Util.Function.Predicate<T>> OnAnd<Arg0objectSuperT> { get; set; } = null;
-
-        void And<Arg0objectSuperT>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Predicate<Arg0objectSuperT>>> data)
-        {
-            var methodToExecute = (OnAnd<Arg0objectSuperT> != null) ? OnAnd<Arg0objectSuperT> : And<Arg0objectSuperT>Direct;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="And<Arg0objectSuperT>Default"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.Predicate<T> And<Arg0objectSuperT>Direct(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
-        {
-            return IExecuteWithSignature<Java.Util.Function.PredicateDirect<T>, Java.Util.Function.Predicate<T>>("andDefault", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
         /// </summary>
@@ -662,30 +452,6 @@ namespace Java.Util.Function
         public virtual Java.Util.Function.Predicate<T> Negate()
         {
             return NegateDefault();
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnNegate"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.Predicate<T>> OnNegate { get; set; } = null;
-
-        void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnNegate != null) ? OnNegate : NegateDirect;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
-        /// </summary>
-
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="NegateDefault"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.Predicate<T> NegateDirect()
-        {
-            return IExecuteWithSignature<Java.Util.Function.PredicateDirect<T>, Java.Util.Function.Predicate<T>>("negateDefault", "()Ljava/util/function/Predicate;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
@@ -722,31 +488,6 @@ namespace Java.Util.Function
         public virtual Java.Util.Function.Predicate<T> Or<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
             return Or<Arg0objectSuperT>Default(arg0);
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOr<Arg0objectSuperT>"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.Predicate<Arg0objectSuperT>, Java.Util.Function.Predicate<T>> OnOr<Arg0objectSuperT> { get; set; } = null;
-
-        void Or<Arg0objectSuperT>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Predicate<Arg0objectSuperT>>> data)
-        {
-            var methodToExecute = (OnOr<Arg0objectSuperT> != null) ? OnOr<Arg0objectSuperT> : Or<Arg0objectSuperT>Direct;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="Or<Arg0objectSuperT>Default"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.Predicate<T> Or<Arg0objectSuperT>Direct(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
-        {
-            return IExecuteWithSignature<Java.Util.Function.PredicateDirect<T>, Java.Util.Function.Predicate<T>>("orDefault", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }
 
         #endregion
