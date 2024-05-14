@@ -42,9 +42,49 @@ namespace Java.Util.Function
     public abstract class BinaryOperator : JVMBridgeListener
     {
         /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
+
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => "org.mases.jnet.util.function.JNetBinaryOperator";
+    }
+
+    /// <summary>
+    /// Direct override of <see cref="BinaryOperator"/>
+    /// </summary>
+    public class BinaryOperatorDirect : BinaryOperator
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="BinaryOperator.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.util.function.BinaryOperator";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => true;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
     }
 
     /// <summary>
@@ -62,7 +102,10 @@ namespace Java.Util.Function
         /// </summary>
         public BinaryOperator()
         {
-            AddEventHandler("apply", new EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyEventHandler)); OnApply = Apply;
+            if (InitHandlers)
+            {
+                AddEventHandler("apply", new EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyEventHandler)); OnApply = Apply;
+            }
         }
 
         void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
@@ -77,5 +120,40 @@ namespace Java.Util.Function
         /// <param name="o2">The Function object</param>
         /// <returns>The apply <typeparamref name="T"/></returns>
         public virtual T Apply(T o1, T o2) { return default(T); }
+    }
+
+    /// <summary>
+    /// Direct override of <see cref="BinaryOperator{T}"/>
+    /// </summary>
+    public class BinaryOperatorDirect<T> : BinaryOperator<T>
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="BinaryOperator.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.util.function.BinaryOperator";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => true;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
     }
 }

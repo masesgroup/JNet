@@ -1979,14 +1979,25 @@ namespace MASES.JNetReflector
 
                 subClassBlock.AppendLine(singleMethod);
 
-                if (isListenerReturnType)
+                if (isListenerReturnType && !forListener)
                 {
+                    string directMethodName = methodName;
+                    var indexOfGenerics = methodName.IndexOf('<');
+                    if (indexOfGenerics > 0)
+                    {
+                        directMethodName = methodName.Insert(indexOfGenerics, SpecialNames.DirectMethodSuffix);
+                    }
+                    else
+                    {
+                        directMethodName = methodName + SpecialNames.DirectMethodSuffix;
+                    }
+
                     singleMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.DECORATION, jDecoration.ToString())
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_EXECUTION, listenerHandlerType)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_NAME, baseHandlerName)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.MODIFIER, modifier)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
-                                           .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodName + SpecialNames.DirectMethodSuffix)
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, directMethodName)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.PARAMETERS, paramsString)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.WHERECLAUSES, genericClauses.ConvertClauses(isGeneric))
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, executionStubDirect)
