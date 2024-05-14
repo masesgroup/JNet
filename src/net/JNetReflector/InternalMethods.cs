@@ -499,7 +499,7 @@ namespace MASES.JNetReflector
                                                          .Replace(AllPackageClasses.NAMESPACE, jClass.Namespace(JNetReflectorCore.UseCamel))
                                                          .Replace(AllPackageClasses.CLASSES, singleFileBlockStr);
 
-                var clsName = jClass.JVMClassName(null, false);
+                var clsName = jClass.JVMClassName(null, false, false);
                 var classPath = Path.Combine(JNetReflectorCore.DestinationCSharpClassPath, jClass.Namespace(JNetReflectorCore.UseCamel).Replace(SpecialNames.NamespaceSeparator, Path.DirectorySeparatorChar), $"{clsName}.cs");
                 WriteFile(classPath, fileContent);
             }
@@ -706,8 +706,8 @@ namespace MASES.JNetReflector
             {
                 allPackagesClassBlock = stubException.Replace(AllPackageClasses.ClassStub.DECORATION, jClassDecoration.ToString())
                                                      .Replace(AllPackageClasses.ClassStub.JAVACLASS, jClass.JVMFullClassName())
-                                                     .Replace(AllPackageClasses.ClassStub.SIMPLECLASS, jClass.JVMClassName(null, false))
-                                                     .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(null, isGeneric))
+                                                     .Replace(AllPackageClasses.ClassStub.SIMPLECLASS, jClass.JVMClassName(null, false, false))
+                                                     .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(null, isGeneric, false))
                                                      .Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocHrefUrl(JNetReflectorCore.UseCamel))
                                                      .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(isGeneric, false, JNetReflectorCore.UseCamel))
                                                      .Replace(AllPackageClasses.ClassStub.WHERECLAUSES, string.Empty);
@@ -717,8 +717,10 @@ namespace MASES.JNetReflector
                 allPackagesClassBlock = template.Replace(AllPackageClasses.ClassStub.DECORATION, jClassDecoration.ToString())
                                                 .Replace(AllPackageClasses.ClassStub.LISTENER_CLASS, bPrepareJavaListener ? AllPackageClasses.ClassStub.LISTENER_CLASS_BLOCK : AllPackageClasses.ClassStub.LISTENER_CLASS_WARNING)
                                                 .Replace(AllPackageClasses.ClassStub.JAVACLASS, bPrepareJavaListener ? javaClassListenerName : jClass.JVMFullClassName())
-                                                .Replace(AllPackageClasses.ClassStub.SIMPLECLASS, jClass.JVMClassName(new List<KeyValuePair<string, string>>(), false))
-                                                .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(new List<KeyValuePair<string, string>>(), isGeneric))
+                                                .Replace(AllPackageClasses.ClassStub.JAVACLASS_DIRECT, jClass.JVMFullClassName())
+                                                .Replace(AllPackageClasses.ClassStub.SIMPLECLASS, jClass.JVMClassName(new List<KeyValuePair<string, string>>(), false, false))
+                                                .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(new List<KeyValuePair<string, string>>(), isGeneric, false))
+                                                .Replace(AllPackageClasses.ClassStub.CLASS_DIRECT, jClass.JVMClassName(new List<KeyValuePair<string, string>>(), isGeneric, true))
                                                 .Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocHrefUrl(JNetReflectorCore.UseCamel))
                                                 .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(isGeneric, jClassIsListener, JNetReflectorCore.UseCamel) + (isMainClass ? SpecialNames.MainClassPlaceHolder : string.Empty))
                                                 .Replace(AllPackageClasses.ClassStub.WHERECLAUSES, jClass.WhereClauses(isGeneric, JNetReflectorCore.UseCamel))
@@ -796,7 +798,7 @@ namespace MASES.JNetReflector
                 interfaceConstraint = interfaceConstraint.Substring(0, interfaceConstraint.LastIndexOf(", "));
             }
 
-            singleClassStr = singleClass.Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(new List<KeyValuePair<string, string>>(), isGeneric))
+            singleClassStr = singleClass.Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(new List<KeyValuePair<string, string>>(), isGeneric, false))
                                         .Replace(AllPackageClasses.ClassStub.INTERFACE_CONSTRAINT, !string.IsNullOrWhiteSpace(interfaceConstraint) ? " : " + interfaceConstraint : string.Empty)
                                         .Replace(AllPackageClasses.ClassStub.CONSTRUCTORS, constructorClassBlock)
                                         .Replace(AllPackageClasses.ClassStub.OPERATORS, operatorClassBlock)
@@ -1930,7 +1932,7 @@ namespace MASES.JNetReflector
 
             if (forListener && !forInterface && !staticMethods)
             {
-                var listenerBlock = string.Format(AllPackageClasses.ClassStub.MethodStub.BLOCK_LISTENER_HANDLER_FORMAT, classDefinition.JVMClassName(null, false), subListenerHandlerBlock.ToString());
+                var listenerBlock = string.Format(AllPackageClasses.ClassStub.MethodStub.BLOCK_LISTENER_HANDLER_FORMAT, classDefinition.JVMClassName(null, false, false), subListenerHandlerBlock.ToString());
                 returnStr = listenerBlock + returnStr;
             }
 

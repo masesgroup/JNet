@@ -1079,12 +1079,13 @@ namespace MASES.JNetReflector
             return false;
         }
 
-        public static string JVMClassName(this Class entry, IList<KeyValuePair<string, string>> genClause, bool usedInGenerics)
+        public static string JVMClassName(this Class entry, IList<KeyValuePair<string, string>> genClause, bool usedInGenerics, bool isDirect)
         {
             if (entry.IsJVMNestedClass()) return entry.JVMNestedClassName(entry.JVMNestingLevels(), genClause, usedInGenerics);
             var cName = entry.SimpleName;
             cName = cName.Contains(SpecialNames.NestedClassSeparator) ? cName.Substring(0, cName.LastIndexOf(SpecialNames.NestedClassSeparator)) : cName;
             cName = cName.ConvertClassesInConflict();
+            if (isDirect) cName += SpecialNames.DirectMethodSuffix;
             if (usedInGenerics) cName = entry.ApplyGenerics(genClause, usedInGenerics, cName);
             return cName;
         }
@@ -1374,7 +1375,7 @@ namespace MASES.JNetReflector
                     }
                     else
                     {
-                        string innerName = entry.JVMClassName(null, usedInGenerics);
+                        string innerName = entry.JVMClassName(null, usedInGenerics, false);
                         return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeBase<{0}>", innerName);
                     }
                 }
@@ -1386,7 +1387,7 @@ namespace MASES.JNetReflector
             }
             catch
             {
-                string className = entry.JVMClassName(null, usedInGenerics);
+                string className = entry.JVMClassName(null, usedInGenerics, false);
                 return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeBase<{0}>", className);
             }
         }
@@ -1401,7 +1402,7 @@ namespace MASES.JNetReflector
 
         public static string JVMInterfaceName(this Class entry, IList<KeyValuePair<string, string>> genClause, bool usedInGenerics, bool fullyQualified)
         {
-            var cName = entry.JVMClassName(genClause, usedInGenerics);
+            var cName = entry.JVMClassName(genClause, usedInGenerics, false);
             cName = "I" + cName;
             if (fullyQualified)
             {
