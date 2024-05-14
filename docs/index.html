@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
     <header class="bg-body border-bottom">
@@ -59,23 +59,9 @@
     </header>
 
     <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
-          </div>
-        </div>
-      </div>
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
 
           <nav id="breadcrumb"></nav>
         </div>
@@ -176,6 +162,19 @@
 <li>JNet: review of classes based on latest updates of JNetReflector</li>
 <li>JNetReflector: use native types only when JVM counter-part is a native type (see <a href="https://github.com/masesgroup/JNet/issues/371">https://github.com/masesgroup/JNet/issues/371</a>)</li>
 <li>JNetReflector: can use signature to invoke JVM methods (see <a href="https://github.com/masesgroup/JNet/issues/374">https://github.com/masesgroup/JNet/issues/374</a>) or fallback to current behavior</li>
+</ul>
+</li>
+<li>V2.5.0+: the most notable changes in this version are in:
+<ul>
+<li>Tools and Docker images update to .NET 8</li>
+<li>JNetReflector: create side-by-side class on each listener used in case of pure JVM interface (see <a href="https://github.com/masesgroup/JNet/issues/393">https://github.com/masesgroup/JNet/issues/393</a>)</li>
+<li>JNet:
+<ul>
+<li>review of classes based on latest updates of JNetReflector</li>
+<li>enhanced ByteBuffer management</li>
+<li>speed-up array/list conversion</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

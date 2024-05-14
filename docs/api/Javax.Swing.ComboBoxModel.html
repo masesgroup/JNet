@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -316,6 +316,9 @@ Class ComboBoxModel  <a class="header-action link-secondary" title="View source"
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -346,7 +349,10 @@ Class ComboBoxModel  <a class="header-action link-secondary" title="View source"
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.Dispose()</span>
@@ -505,7 +511,7 @@ Class ComboBoxModel  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Javax_Swing_ComboBoxModel__ctor" data-uid="Javax.Swing.ComboBoxModel.#ctor">
   ComboBoxModel()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L830"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L871"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -533,7 +539,7 @@ public ComboBoxModel()</code></pre>
 
   <h3 id="Javax_Swing_ComboBoxModel__ctor_System_Object___" data-uid="Javax.Swing.ComboBoxModel.#ctor(System.Object[])">
   ComboBoxModel(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L835"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L876"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -570,7 +576,7 @@ public ComboBoxModel(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_ComboBoxModel_BridgeClassName" data-uid="Javax.Swing.ComboBoxModel.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L843"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L884"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -602,7 +608,7 @@ public ComboBoxModel(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_ComboBoxModel_IsBridgeAbstract" data-uid="Javax.Swing.ComboBoxModel.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L847"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L888"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -634,7 +640,7 @@ public ComboBoxModel(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_ComboBoxModel_IsBridgeCloseable" data-uid="Javax.Swing.ComboBoxModel.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L851"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L892"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -666,7 +672,7 @@ public ComboBoxModel(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_ComboBoxModel_IsBridgeInterface" data-uid="Javax.Swing.ComboBoxModel.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L855"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L896"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -698,7 +704,7 @@ public ComboBoxModel(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_ComboBoxModel_IsBridgeStatic" data-uid="Javax.Swing.ComboBoxModel.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L859"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L900"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -733,7 +739,8 @@ public ComboBoxModel(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/ComboBoxModel.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ComboBoxModel.html#getSelectedItem()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ComboBoxModel.html#getSelectedItem()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ComboBoxModel.html#setSelectedItem(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ComboBoxModel.html#setSelectedItem(java.lang.Object)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ComboBoxModel.html#getSelectedItem()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ComboBoxModel.html#getSelectedItem()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ComboBoxModel.html#setSelectedItem(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ComboBoxModel.html#setSelectedItem(java.lang.Object)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

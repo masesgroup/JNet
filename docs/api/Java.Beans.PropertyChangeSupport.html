@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -305,6 +305,9 @@ Class PropertyChangeSupport  <a class="header-action link-secondary" title="View
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -335,7 +338,10 @@ Class PropertyChangeSupport  <a class="header-action link-secondary" title="View
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.Dispose()</span>
@@ -494,7 +500,7 @@ Class PropertyChangeSupport  <a class="header-action link-secondary" title="View
 
   <h3 id="Java_Beans_PropertyChangeSupport__ctor" data-uid="Java.Beans.PropertyChangeSupport.#ctor">
   PropertyChangeSupport()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/AllPackageClasses.cs/#L1082"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/AllPackageClasses.cs/#L1164"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -554,7 +560,7 @@ Class PropertyChangeSupport  <a class="header-action link-secondary" title="View
 
   <h3 id="Java_Beans_PropertyChangeSupport__ctor_System_Object___" data-uid="Java.Beans.PropertyChangeSupport.#ctor(System.Object[])">
   PropertyChangeSupport(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/AllPackageClasses.cs/#L1086"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/AllPackageClasses.cs/#L1168"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -590,7 +596,7 @@ Class PropertyChangeSupport  <a class="header-action link-secondary" title="View
 
   <h3 id="Java_Beans_PropertyChangeSupport_BridgeClassName" data-uid="Java.Beans.PropertyChangeSupport.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/AllPackageClasses.cs/#L1093"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/AllPackageClasses.cs/#L1175"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -622,7 +628,7 @@ Class PropertyChangeSupport  <a class="header-action link-secondary" title="View
 
   <h3 id="Java_Beans_PropertyChangeSupport_IsBridgeAbstract" data-uid="Java.Beans.PropertyChangeSupport.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/AllPackageClasses.cs/#L1097"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/AllPackageClasses.cs/#L1179"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -654,7 +660,7 @@ Class PropertyChangeSupport  <a class="header-action link-secondary" title="View
 
   <h3 id="Java_Beans_PropertyChangeSupport_IsBridgeCloseable" data-uid="Java.Beans.PropertyChangeSupport.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/AllPackageClasses.cs/#L1101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/AllPackageClasses.cs/#L1183"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -686,7 +692,7 @@ Class PropertyChangeSupport  <a class="header-action link-secondary" title="View
 
   <h3 id="Java_Beans_PropertyChangeSupport_IsBridgeInterface" data-uid="Java.Beans.PropertyChangeSupport.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/AllPackageClasses.cs/#L1105"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/AllPackageClasses.cs/#L1187"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -718,7 +724,7 @@ Class PropertyChangeSupport  <a class="header-action link-secondary" title="View
 
   <h3 id="Java_Beans_PropertyChangeSupport_IsBridgeStatic" data-uid="Java.Beans.PropertyChangeSupport.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/AllPackageClasses.cs/#L1109"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/AllPackageClasses.cs/#L1191"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>

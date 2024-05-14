@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -85,7 +85,7 @@
 
 
   <h1 id="MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_ConstructorStub" data-uid="MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub" class="text-break">
-Class AllPackageClasses.ClassStub.ConstructorStub  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L159"><i class="bi bi-code-slash"></i></a>
+Class AllPackageClasses.ClassStub.ConstructorStub  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L161"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -151,7 +151,7 @@ Class AllPackageClasses.ClassStub.ConstructorStub  <a class="header-action link-
 
   <h3 id="MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_ConstructorStub_DECORATION" data-uid="MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.DECORATION">
   DECORATION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L163"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -181,7 +181,7 @@ Class AllPackageClasses.ClassStub.ConstructorStub  <a class="header-action link-
 
   <h3 id="MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_ConstructorStub_DEFAULT_DECORATION" data-uid="MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.DEFAULT_DECORATION">
   DEFAULT_DECORATION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L170"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -211,7 +211,7 @@ Class AllPackageClasses.ClassStub.ConstructorStub  <a class="header-action link-
 
   <h3 id="MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_ConstructorStub_EXECUTION" data-uid="MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.EXECUTION">
   EXECUTION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L168"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -241,7 +241,7 @@ Class AllPackageClasses.ClassStub.ConstructorStub  <a class="header-action link-
 
   <h3 id="MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_ConstructorStub_HELP" data-uid="MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.HELP">
   HELP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L164"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -271,7 +271,7 @@ Class AllPackageClasses.ClassStub.ConstructorStub  <a class="header-action link-
 
   <h3 id="MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_ConstructorStub_HELP_EXCEPTION_DECORATION" data-uid="MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.HELP_EXCEPTION_DECORATION">
   HELP_EXCEPTION_DECORATION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L176"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -301,7 +301,7 @@ Class AllPackageClasses.ClassStub.ConstructorStub  <a class="header-action link-
 
   <h3 id="MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_ConstructorStub_HELP_PARAM_DECORATION" data-uid="MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.HELP_PARAM_DECORATION">
   HELP_PARAM_DECORATION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L173"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -331,7 +331,7 @@ Class AllPackageClasses.ClassStub.ConstructorStub  <a class="header-action link-
 
   <h3 id="MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_ConstructorStub_HELP_PARAM_SEE_DECORATION" data-uid="MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.HELP_PARAM_SEE_DECORATION">
   HELP_PARAM_SEE_DECORATION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L174"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -361,7 +361,7 @@ Class AllPackageClasses.ClassStub.ConstructorStub  <a class="header-action link-
 
   <h3 id="MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_ConstructorStub_HELP_PARAM_TYPEPARAMREF_DECORATION" data-uid="MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.HELP_PARAM_TYPEPARAMREF_DECORATION">
   HELP_PARAM_TYPEPARAMREF_DECORATION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L175"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -391,7 +391,7 @@ Class AllPackageClasses.ClassStub.ConstructorStub  <a class="header-action link-
 
   <h3 id="MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_ConstructorStub_MODIFIER" data-uid="MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.MODIFIER">
   MODIFIER
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L165"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -421,7 +421,7 @@ Class AllPackageClasses.ClassStub.ConstructorStub  <a class="header-action link-
 
   <h3 id="MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_ConstructorStub_NAME" data-uid="MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.NAME">
   NAME
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L164"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L166"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -451,7 +451,7 @@ Class AllPackageClasses.ClassStub.ConstructorStub  <a class="header-action link-
 
   <h3 id="MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_ConstructorStub_OBSOLETE_DECORATION" data-uid="MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.OBSOLETE_DECORATION">
   OBSOLETE_DECORATION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L177"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -481,7 +481,7 @@ Class AllPackageClasses.ClassStub.ConstructorStub  <a class="header-action link-
 
   <h3 id="MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_ConstructorStub_PARAMETERS" data-uid="MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.PARAMETERS">
   PARAMETERS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L167"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -512,7 +512,7 @@ Class AllPackageClasses.ClassStub.ConstructorStub  <a class="header-action link-
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L159" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L161" class="edit-link">Edit this page</a>
         </div>
 
 

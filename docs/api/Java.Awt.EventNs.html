@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -96,6 +96,11 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.EventNs.AWTEventListenerDirect.html">AWTEventListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.EventNs.AWTEventListener.html">AWTEventListener</a> or its generic type if there is one</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Java.Awt.EventNs.AWTEventListenerProxy.html">AWTEventListenerProxy</a></dt>
       <dd><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListenerProxy.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListenerProxy.html</a></p>
 </dd>
@@ -111,6 +116,11 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.EventNs.ActionListenerDirect.html">ActionListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.EventNs.ActionListener.html">ActionListener</a> or its generic type if there is one</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Java.Awt.EventNs.AdjustmentEvent.html">AdjustmentEvent</a></dt>
       <dd><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html</a></p>
 </dd>
@@ -121,8 +131,18 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.EventNs.AdjustmentListenerDirect.html">AdjustmentListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.EventNs.AdjustmentListener.html">AdjustmentListener</a> or its generic type if there is one</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Java.Awt.EventNs.ComponentAdapter.html">ComponentAdapter</a></dt>
       <dd><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentAdapter.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentAdapter.html</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.EventNs.ComponentAdapterDirect.html">ComponentAdapterDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.EventNs.ComponentAdapter.html">ComponentAdapter</a> or its generic type if there is one</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -136,8 +156,18 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.EventNs.ComponentListenerDirect.html">ComponentListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.EventNs.ComponentListener.html">ComponentListener</a> or its generic type if there is one</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Java.Awt.EventNs.ContainerAdapter.html">ContainerAdapter</a></dt>
       <dd><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerAdapter.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerAdapter.html</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.EventNs.ContainerAdapterDirect.html">ContainerAdapterDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.EventNs.ContainerAdapter.html">ContainerAdapter</a> or its generic type if there is one</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -151,8 +181,18 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.EventNs.ContainerListenerDirect.html">ContainerListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.EventNs.ContainerListener.html">ContainerListener</a> or its generic type if there is one</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Java.Awt.EventNs.FocusAdapter.html">FocusAdapter</a></dt>
       <dd><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusAdapter.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusAdapter.html</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.EventNs.FocusAdapterDirect.html">FocusAdapterDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.EventNs.FocusAdapter.html">FocusAdapter</a> or its generic type if there is one</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -171,13 +211,28 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.EventNs.FocusListenerDirect.html">FocusListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.EventNs.FocusListener.html">FocusListener</a> or its generic type if there is one</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Java.Awt.EventNs.HierarchyBoundsAdapter.html">HierarchyBoundsAdapter</a></dt>
       <dd><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyBoundsAdapter.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyBoundsAdapter.html</a></p>
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.EventNs.HierarchyBoundsAdapterDirect.html">HierarchyBoundsAdapterDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.EventNs.HierarchyBoundsAdapter.html">HierarchyBoundsAdapter</a> or its generic type if there is one</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Java.Awt.EventNs.HierarchyBoundsListener.html">HierarchyBoundsListener</a></dt>
       <dd><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyBoundsListener.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyBoundsListener.html</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.EventNs.HierarchyBoundsListenerDirect.html">HierarchyBoundsListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.EventNs.HierarchyBoundsListener.html">HierarchyBoundsListener</a> or its generic type if there is one</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -188,6 +243,11 @@ Classes
     <dl class="jumplist">
       <dt><a class="xref" href="Java.Awt.EventNs.HierarchyListener.html">HierarchyListener</a></dt>
       <dd><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyListener.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyListener.html</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.EventNs.HierarchyListenerDirect.html">HierarchyListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.EventNs.HierarchyListener.html">HierarchyListener</a> or its generic type if there is one</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -206,6 +266,11 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.EventNs.InputMethodListenerDirect.html">InputMethodListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.EventNs.InputMethodListener.html">InputMethodListener</a> or its generic type if there is one</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Java.Awt.EventNs.InvocationEvent.html">InvocationEvent</a></dt>
       <dd><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html</a></p>
 </dd>
@@ -221,8 +286,18 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.EventNs.ItemListenerDirect.html">ItemListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.EventNs.ItemListener.html">ItemListener</a> or its generic type if there is one</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Java.Awt.EventNs.KeyAdapter.html">KeyAdapter</a></dt>
       <dd><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyAdapter.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyAdapter.html</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.EventNs.KeyAdapterDirect.html">KeyAdapterDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.EventNs.KeyAdapter.html">KeyAdapter</a> or its generic type if there is one</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -236,8 +311,18 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.EventNs.KeyListenerDirect.html">KeyListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.EventNs.KeyListener.html">KeyListener</a> or its generic type if there is one</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Java.Awt.EventNs.MouseAdapter.html">MouseAdapter</a></dt>
       <dd><p>Listener for MouseAdapter. Extends <a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a>, implements <a class="xref" href="Java.Awt.EventNs.IMouseAdapter.html">IMouseAdapter</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.EventNs.MouseAdapterDirect.html">MouseAdapterDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.EventNs.MouseAdapter.html">MouseAdapter</a> or its generic type if there is one</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -251,13 +336,28 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.EventNs.MouseListenerDirect.html">MouseListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.EventNs.MouseListener.html">MouseListener</a> or its generic type if there is one</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Java.Awt.EventNs.MouseMotionAdapter.html">MouseMotionAdapter</a></dt>
       <dd><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseMotionAdapter.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseMotionAdapter.html</a></p>
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.EventNs.MouseMotionAdapterDirect.html">MouseMotionAdapterDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.EventNs.MouseMotionAdapter.html">MouseMotionAdapter</a> or its generic type if there is one</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Java.Awt.EventNs.MouseMotionListener.html">MouseMotionListener</a></dt>
       <dd><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseMotionListener.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseMotionListener.html</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.EventNs.MouseMotionListenerDirect.html">MouseMotionListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.EventNs.MouseMotionListener.html">MouseMotionListener</a> or its generic type if there is one</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -268,6 +368,11 @@ Classes
     <dl class="jumplist">
       <dt><a class="xref" href="Java.Awt.EventNs.MouseWheelListener.html">MouseWheelListener</a></dt>
       <dd><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseWheelListener.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseWheelListener.html</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.EventNs.MouseWheelListenerDirect.html">MouseWheelListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.EventNs.MouseWheelListener.html">MouseWheelListener</a> or its generic type if there is one</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -286,8 +391,18 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.EventNs.TextListenerDirect.html">TextListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.EventNs.TextListener.html">TextListener</a> or its generic type if there is one</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Java.Awt.EventNs.WindowAdapter.html">WindowAdapter</a></dt>
       <dd><p>Listener for <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html</a>. Extends <a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a>, implements <a class="xref" href="Java.Awt.EventNs.IWindowAdapter.html">IWindowAdapter</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.EventNs.WindowAdapterDirect.html">WindowAdapterDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.EventNs.WindowAdapter.html">WindowAdapter</a> or its generic type if there is one</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -301,13 +416,28 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.EventNs.WindowFocusListenerDirect.html">WindowFocusListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.EventNs.WindowFocusListener.html">WindowFocusListener</a> or its generic type if there is one</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Java.Awt.EventNs.WindowListener.html">WindowListener</a></dt>
       <dd><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html</a></p>
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.EventNs.WindowListenerDirect.html">WindowListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.EventNs.WindowListener.html">WindowListener</a> or its generic type if there is one</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Java.Awt.EventNs.WindowStateListener.html">WindowStateListener</a></dt>
       <dd><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowStateListener.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowStateListener.html</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.EventNs.WindowStateListenerDirect.html">WindowStateListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.EventNs.WindowStateListener.html">WindowStateListener</a> or its generic type if there is one</p>
 </dd>
     </dl>
     <h3 id="interfaces">

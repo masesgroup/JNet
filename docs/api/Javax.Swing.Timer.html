@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -299,6 +299,9 @@ Class Timer  <a class="header-action link-secondary" title="View source" href="h
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -329,7 +332,10 @@ Class Timer  <a class="header-action link-secondary" title="View source" href="h
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.Dispose()</span>
@@ -488,7 +494,7 @@ Class Timer  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Javax_Swing_Timer__ctor" data-uid="Javax.Swing.Timer.#ctor">
   Timer()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L7625"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L7666"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -551,7 +557,7 @@ Class Timer  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Javax_Swing_Timer__ctor_System_Object___" data-uid="Javax.Swing.Timer.#ctor(System.Object[])">
   Timer(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L7629"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L7670"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -590,7 +596,8 @@ Class Timer  <a class="header-action link-secondary" title="View source" href="h
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Timer.cs/#L67"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#getActionCommand()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#getActionCommand()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#setActionCommand(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#setActionCommand(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#getActionCommand()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#getActionCommand()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#setActionCommand(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#setActionCommand(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -651,7 +658,7 @@ Class Timer  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Javax_Swing_Timer_BridgeClassName" data-uid="Javax.Swing.Timer.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L7636"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L7677"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -686,7 +693,8 @@ Class Timer  <a class="header-action link-secondary" title="View source" href="h
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Timer.cs/#L81"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#getDelay()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#getDelay()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#setDelay(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#setDelay(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#getDelay()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#getDelay()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#setDelay(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#setDelay(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -718,7 +726,8 @@ Class Timer  <a class="header-action link-secondary" title="View source" href="h
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Timer.cs/#L88"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#getInitialDelay()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#getInitialDelay()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#setInitialDelay(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#setInitialDelay(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#getInitialDelay()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#getInitialDelay()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#setInitialDelay(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#setInitialDelay(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -747,7 +756,7 @@ Class Timer  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Javax_Swing_Timer_IsBridgeAbstract" data-uid="Javax.Swing.Timer.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L7640"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L7681"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -779,7 +788,7 @@ Class Timer  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Javax_Swing_Timer_IsBridgeCloseable" data-uid="Javax.Swing.Timer.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L7644"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L7685"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -811,7 +820,7 @@ Class Timer  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Javax_Swing_Timer_IsBridgeInterface" data-uid="Javax.Swing.Timer.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L7648"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L7689"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -843,7 +852,7 @@ Class Timer  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Javax_Swing_Timer_IsBridgeStatic" data-uid="Javax.Swing.Timer.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L7652"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L7693"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -878,7 +887,8 @@ Class Timer  <a class="header-action link-secondary" title="View source" href="h
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Timer.cs/#L56"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#getLogTimers()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#getLogTimers()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#setLogTimers(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#setLogTimers(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#getLogTimers()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#getLogTimers()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#setLogTimers(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#setLogTimers(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

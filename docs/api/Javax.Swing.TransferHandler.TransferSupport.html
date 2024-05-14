@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -297,6 +297,9 @@ Class TransferHandler.TransferSupport  <a class="header-action link-secondary" t
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -327,7 +330,10 @@ Class TransferHandler.TransferSupport  <a class="header-action link-secondary" t
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.Dispose()</span>
@@ -486,7 +492,7 @@ Class TransferHandler.TransferSupport  <a class="header-action link-secondary" t
 
   <h3 id="Javax_Swing_TransferHandler_TransferSupport__ctor" data-uid="Javax.Swing.TransferHandler.TransferSupport.#ctor">
   TransferSupport()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L7753"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L7794"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -549,7 +555,7 @@ Class TransferHandler.TransferSupport  <a class="header-action link-secondary" t
 
   <h3 id="Javax_Swing_TransferHandler_TransferSupport__ctor_System_Object___" data-uid="Javax.Swing.TransferHandler.TransferSupport.#ctor(System.Object[])">
   TransferSupport(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L7757"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L7798"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -585,7 +591,7 @@ Class TransferHandler.TransferSupport  <a class="header-action link-secondary" t
 
   <h3 id="Javax_Swing_TransferHandler_TransferSupport_BridgeClassName" data-uid="Javax.Swing.TransferHandler.TransferSupport.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L7764"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L7805"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -684,7 +690,8 @@ Class TransferHandler.TransferSupport  <a class="header-action link-secondary" t
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/TransferHandler.cs/#L286"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#getDropAction()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#getDropAction()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#setDropAction(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#setDropAction(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#getDropAction()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#getDropAction()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#setDropAction(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#setDropAction(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -745,7 +752,7 @@ Class TransferHandler.TransferSupport  <a class="header-action link-secondary" t
 
   <h3 id="Javax_Swing_TransferHandler_TransferSupport_IsBridgeAbstract" data-uid="Javax.Swing.TransferHandler.TransferSupport.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L7768"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L7809"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -777,7 +784,7 @@ Class TransferHandler.TransferSupport  <a class="header-action link-secondary" t
 
   <h3 id="Javax_Swing_TransferHandler_TransferSupport_IsBridgeCloseable" data-uid="Javax.Swing.TransferHandler.TransferSupport.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L7772"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L7813"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -809,7 +816,7 @@ Class TransferHandler.TransferSupport  <a class="header-action link-secondary" t
 
   <h3 id="Javax_Swing_TransferHandler_TransferSupport_IsBridgeInterface" data-uid="Javax.Swing.TransferHandler.TransferSupport.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L7776"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L7817"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -841,7 +848,7 @@ Class TransferHandler.TransferSupport  <a class="header-action link-secondary" t
 
   <h3 id="Javax_Swing_TransferHandler_TransferSupport_IsBridgeStatic" data-uid="Javax.Swing.TransferHandler.TransferSupport.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L7780"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L7821"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>

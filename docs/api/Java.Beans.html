@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -151,6 +151,11 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Java.Beans.ExceptionListenerDirect.html">ExceptionListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Beans.ExceptionListener.html">ExceptionListener</a> or its generic type if there is one</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Java.Beans.Expression.html">Expression</a></dt>
       <dd><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Expression.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Expression.html</a></p>
 </dd>
@@ -211,6 +216,11 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Java.Beans.PropertyChangeListenerDirect.html">PropertyChangeListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Beans.PropertyChangeListener.html">PropertyChangeListener</a> or its generic type if there is one</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Java.Beans.PropertyChangeListenerProxy.html">PropertyChangeListenerProxy</a></dt>
       <dd><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListenerProxy.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListenerProxy.html</a></p>
 </dd>
@@ -263,6 +273,11 @@ Classes
     <dl class="jumplist">
       <dt><a class="xref" href="Java.Beans.VetoableChangeListener.html">VetoableChangeListener</a></dt>
       <dd><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeListener.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeListener.html</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Java.Beans.VetoableChangeListenerDirect.html">VetoableChangeListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Beans.VetoableChangeListener.html">VetoableChangeListener</a> or its generic type if there is one</p>
 </dd>
     </dl>
     <dl class="jumplist">

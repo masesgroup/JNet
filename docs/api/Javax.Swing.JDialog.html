@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -1033,6 +1033,9 @@ Class JDialog  <a class="header-action link-secondary" title="View source" href=
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -1063,7 +1066,10 @@ Class JDialog  <a class="header-action link-secondary" title="View source" href=
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.ToString()</span>
@@ -1216,7 +1222,7 @@ Class JDialog  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Javax_Swing_JDialog__ctor" data-uid="Javax.Swing.JDialog.#ctor">
   JDialog()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2754"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2795"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -1801,7 +1807,7 @@ Class JDialog  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Javax_Swing_JDialog__ctor_System_Object___" data-uid="Javax.Swing.JDialog.#ctor(System.Object[])">
   JDialog(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2758"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2799"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -1837,7 +1843,7 @@ Class JDialog  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Javax_Swing_JDialog_BridgeClassName" data-uid="Javax.Swing.JDialog.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2765"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2806"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -1872,7 +1878,8 @@ Class JDialog  <a class="header-action link-secondary" title="View source" href=
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JDialog.cs/#L221"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#getContentPane()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#getContentPane()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#setContentPane(java.awt.Container)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#setContentPane(java.awt.Container)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#getContentPane()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#getContentPane()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#setContentPane(java.awt.Container)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#setContentPane(java.awt.Container)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1904,7 +1911,8 @@ Class JDialog  <a class="header-action link-secondary" title="View source" href=
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JDialog.cs/#L228"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#getDefaultCloseOperation()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#getDefaultCloseOperation()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#setDefaultCloseOperation(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#setDefaultCloseOperation(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#getDefaultCloseOperation()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#getDefaultCloseOperation()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#setDefaultCloseOperation(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#setDefaultCloseOperation(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1936,7 +1944,8 @@ Class JDialog  <a class="header-action link-secondary" title="View source" href=
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JDialog.cs/#L235"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#getGlassPane()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#getGlassPane()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#setGlassPane(java.awt.Component)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#setGlassPane(java.awt.Component)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#getGlassPane()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#getGlassPane()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#setGlassPane(java.awt.Component)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#setGlassPane(java.awt.Component)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1965,7 +1974,7 @@ Class JDialog  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Javax_Swing_JDialog_IsBridgeAbstract" data-uid="Javax.Swing.JDialog.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2769"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2810"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -1997,7 +2006,7 @@ Class JDialog  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Javax_Swing_JDialog_IsBridgeCloseable" data-uid="Javax.Swing.JDialog.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2773"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2814"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -2029,7 +2038,7 @@ Class JDialog  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Javax_Swing_JDialog_IsBridgeInterface" data-uid="Javax.Swing.JDialog.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2777"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2818"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -2061,7 +2070,7 @@ Class JDialog  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Javax_Swing_JDialog_IsBridgeStatic" data-uid="Javax.Swing.JDialog.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2781"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2822"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -2096,7 +2105,8 @@ Class JDialog  <a class="header-action link-secondary" title="View source" href=
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JDialog.cs/#L242"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#getJMenuBar()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#getJMenuBar()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#setJMenuBar(javax.swing.JMenuBar)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#setJMenuBar(javax.swing.JMenuBar)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#getJMenuBar()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#getJMenuBar()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#setJMenuBar(javax.swing.JMenuBar)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#setJMenuBar(javax.swing.JMenuBar)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2128,7 +2138,8 @@ Class JDialog  <a class="header-action link-secondary" title="View source" href=
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JDialog.cs/#L249"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#getLayeredPane()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#getLayeredPane()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#setLayeredPane(javax.swing.JLayeredPane)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#setLayeredPane(javax.swing.JLayeredPane)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#getLayeredPane()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#getLayeredPane()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#setLayeredPane(javax.swing.JLayeredPane)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#setLayeredPane(javax.swing.JLayeredPane)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2192,7 +2203,8 @@ Class JDialog  <a class="header-action link-secondary" title="View source" href=
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JDialog.cs/#L263"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#getTransferHandler()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#getTransferHandler()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#setTransferHandler(javax.swing.TransferHandler)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#setTransferHandler(javax.swing.TransferHandler)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#getTransferHandler()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#getTransferHandler()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#setTransferHandler(javax.swing.TransferHandler)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#setTransferHandler(javax.swing.TransferHandler)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -301,6 +301,9 @@ Class X509CertSelector  <a class="header-action link-secondary" title="View sour
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -331,7 +334,10 @@ Class X509CertSelector  <a class="header-action link-secondary" title="View sour
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.Dispose()</span>
@@ -556,7 +562,8 @@ Class X509CertSelector  <a class="header-action link-secondary" title="View sour
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Security/Cert/X509CertSelector.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getAuthorityKeyIdentifier()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getAuthorityKeyIdentifier()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setAuthorityKeyIdentifier(byte[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setAuthorityKeyIdentifier(byte[])</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getAuthorityKeyIdentifier()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getAuthorityKeyIdentifier()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setAuthorityKeyIdentifier(byte[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setAuthorityKeyIdentifier(byte[])</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -588,7 +595,8 @@ Class X509CertSelector  <a class="header-action link-secondary" title="View sour
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Security/Cert/X509CertSelector.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getBasicConstraints()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getBasicConstraints()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setBasicConstraints(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setBasicConstraints(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getBasicConstraints()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getBasicConstraints()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setBasicConstraints(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setBasicConstraints(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -652,7 +660,8 @@ Class X509CertSelector  <a class="header-action link-secondary" title="View sour
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Security/Cert/X509CertSelector.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getCertificate()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getCertificate()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setCertificate(java.security.cert.X509Certificate)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setCertificate(java.security.cert.X509Certificate)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getCertificate()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getCertificate()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setCertificate(java.security.cert.X509Certificate)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setCertificate(java.security.cert.X509Certificate)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -684,7 +693,8 @@ Class X509CertSelector  <a class="header-action link-secondary" title="View sour
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Security/Cert/X509CertSelector.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getCertificateValid()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getCertificateValid()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setCertificateValid(java.util.Date)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setCertificateValid(java.util.Date)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getCertificateValid()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getCertificateValid()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setCertificateValid(java.util.Date)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setCertificateValid(java.util.Date)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -716,7 +726,8 @@ Class X509CertSelector  <a class="header-action link-secondary" title="View sour
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Security/Cert/X509CertSelector.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getExtendedKeyUsage()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getExtendedKeyUsage()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setExtendedKeyUsage(java.util.Set)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setExtendedKeyUsage(java.util.Set)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getExtendedKeyUsage()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getExtendedKeyUsage()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setExtendedKeyUsage(java.util.Set)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setExtendedKeyUsage(java.util.Set)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -972,7 +983,8 @@ Class X509CertSelector  <a class="header-action link-secondary" title="View sour
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Security/Cert/X509CertSelector.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getKeyUsage()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getKeyUsage()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setKeyUsage(boolean[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setKeyUsage(boolean[])</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getKeyUsage()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getKeyUsage()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setKeyUsage(boolean[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setKeyUsage(boolean[])</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1004,7 +1016,8 @@ Class X509CertSelector  <a class="header-action link-secondary" title="View sour
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Security/Cert/X509CertSelector.cs/#L114"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getMatchAllSubjectAltNames()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getMatchAllSubjectAltNames()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setMatchAllSubjectAltNames(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setMatchAllSubjectAltNames(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getMatchAllSubjectAltNames()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getMatchAllSubjectAltNames()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setMatchAllSubjectAltNames(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setMatchAllSubjectAltNames(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1036,7 +1049,8 @@ Class X509CertSelector  <a class="header-action link-secondary" title="View sour
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Security/Cert/X509CertSelector.cs/#L121"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getNameConstraints()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getNameConstraints()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setNameConstraints(byte[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setNameConstraints(byte[])</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getNameConstraints()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getNameConstraints()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setNameConstraints(byte[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setNameConstraints(byte[])</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1068,7 +1082,8 @@ Class X509CertSelector  <a class="header-action link-secondary" title="View sour
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Security/Cert/X509CertSelector.cs/#L128"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getPathToNames()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getPathToNames()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setPathToNames(java.util.Collection)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setPathToNames(java.util.Collection)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getPathToNames()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getPathToNames()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setPathToNames(java.util.Collection)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setPathToNames(java.util.Collection)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1100,7 +1115,8 @@ Class X509CertSelector  <a class="header-action link-secondary" title="View sour
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Security/Cert/X509CertSelector.cs/#L135"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getPolicy()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getPolicy()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setPolicy(java.util.Set)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setPolicy(java.util.Set)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getPolicy()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getPolicy()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setPolicy(java.util.Set)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setPolicy(java.util.Set)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1132,7 +1148,8 @@ Class X509CertSelector  <a class="header-action link-secondary" title="View sour
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Security/Cert/X509CertSelector.cs/#L142"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getPrivateKeyValid()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getPrivateKeyValid()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setPrivateKeyValid(java.util.Date)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setPrivateKeyValid(java.util.Date)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getPrivateKeyValid()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getPrivateKeyValid()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setPrivateKeyValid(java.util.Date)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setPrivateKeyValid(java.util.Date)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1164,7 +1181,8 @@ Class X509CertSelector  <a class="header-action link-secondary" title="View sour
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Security/Cert/X509CertSelector.cs/#L149"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getSerialNumber()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getSerialNumber()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSerialNumber(java.math.BigInteger)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSerialNumber(java.math.BigInteger)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getSerialNumber()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getSerialNumber()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSerialNumber(java.math.BigInteger)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSerialNumber(java.math.BigInteger)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1228,7 +1246,8 @@ Class X509CertSelector  <a class="header-action link-secondary" title="View sour
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Security/Cert/X509CertSelector.cs/#L163"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getSubjectAlternativeNames()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getSubjectAlternativeNames()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubjectAlternativeNames(java.util.Collection)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubjectAlternativeNames(java.util.Collection)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getSubjectAlternativeNames()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getSubjectAlternativeNames()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubjectAlternativeNames(java.util.Collection)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubjectAlternativeNames(java.util.Collection)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1324,7 +1343,8 @@ Class X509CertSelector  <a class="header-action link-secondary" title="View sour
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Security/Cert/X509CertSelector.cs/#L184"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getSubjectKeyIdentifier()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getSubjectKeyIdentifier()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubjectKeyIdentifier(byte[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubjectKeyIdentifier(byte[])</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getSubjectKeyIdentifier()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getSubjectKeyIdentifier()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubjectKeyIdentifier(byte[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubjectKeyIdentifier(byte[])</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1388,7 +1408,8 @@ Class X509CertSelector  <a class="header-action link-secondary" title="View sour
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Security/Cert/X509CertSelector.cs/#L198"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getSubjectPublicKeyAlgID()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getSubjectPublicKeyAlgID()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubjectPublicKeyAlgID(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubjectPublicKeyAlgID(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getSubjectPublicKeyAlgID()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getSubjectPublicKeyAlgID()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubjectPublicKeyAlgID(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubjectPublicKeyAlgID(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

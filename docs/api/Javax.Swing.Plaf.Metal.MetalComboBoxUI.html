@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -366,6 +366,9 @@ Class MetalComboBoxUI  <a class="header-action link-secondary" title="View sourc
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -396,7 +399,10 @@ Class MetalComboBoxUI  <a class="header-action link-secondary" title="View sourc
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.Dispose()</span>
@@ -782,7 +788,7 @@ Class MetalComboBoxUI  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalComboBoxUI_ConfigureEditor" data-uid="Javax.Swing.Plaf.Metal.MetalComboBoxUI.ConfigureEditor">
   ConfigureEditor()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalComboBoxUI.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalComboBoxUI.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.html#configureEditor()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.html#configureEditor()</a></p>
@@ -838,11 +844,44 @@ Class MetalComboBoxUI  <a class="header-action link-secondary" title="View sourc
 
 
 
+  <a id="Javax_Swing_Plaf_Metal_MetalComboBoxUI_CreatePropertyChangeListenerDirect_" data-uid="Javax.Swing.Plaf.Metal.MetalComboBoxUI.CreatePropertyChangeListenerDirect*"></a>
+
+  <h3 id="Javax_Swing_Plaf_Metal_MetalComboBoxUI_CreatePropertyChangeListenerDirect" data-uid="Javax.Swing.Plaf.Metal.MetalComboBoxUI.CreatePropertyChangeListenerDirect">
+  CreatePropertyChangeListenerDirect()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalComboBoxUI.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.html#createPropertyChangeListener()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.html#createPropertyChangeListener()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PropertyChangeListener CreatePropertyChangeListenerDirect()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Beans.PropertyChangeListener.html">PropertyChangeListener</a></dt>
+    <dd><p><a class="xref" href="Java.Beans.PropertyChangeListener.html">PropertyChangeListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Javax_Swing_Plaf_Metal_MetalComboBoxUI_LayoutComboBox_" data-uid="Javax.Swing.Plaf.Metal.MetalComboBoxUI.LayoutComboBox*"></a>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalComboBoxUI_LayoutComboBox_Java_Awt_Container_Javax_Swing_Plaf_Metal_MetalComboBoxUI_MetalComboBoxLayoutManager_" data-uid="Javax.Swing.Plaf.Metal.MetalComboBoxUI.LayoutComboBox(Java.Awt.Container,Javax.Swing.Plaf.Metal.MetalComboBoxUI.MetalComboBoxLayoutManager)">
   LayoutComboBox(Container, MetalComboBoxLayoutManager)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalComboBoxUI.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalComboBoxUI.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.html#layoutComboBox(java.awt.Container,javax.swing.plaf.metal.MetalComboBoxUI.MetalComboBoxLayoutManager)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.html#layoutComboBox(java.awt.Container,javax.swing.plaf.metal.MetalComboBoxUI.MetalComboBoxLayoutManager)</a></p>
@@ -878,7 +917,7 @@ Class MetalComboBoxUI  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalComboBoxUI_UnconfigureEditor" data-uid="Javax.Swing.Plaf.Metal.MetalComboBoxUI.UnconfigureEditor">
   UnconfigureEditor()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalComboBoxUI.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalComboBoxUI.cs/#L85"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.html#unconfigureEditor()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.html#unconfigureEditor()</a></p>

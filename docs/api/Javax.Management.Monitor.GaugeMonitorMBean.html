@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -327,6 +327,9 @@ Class GaugeMonitorMBean  <a class="header-action link-secondary" title="View sou
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -357,7 +360,10 @@ Class GaugeMonitorMBean  <a class="header-action link-secondary" title="View sou
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.Dispose()</span>
@@ -616,7 +622,8 @@ public GaugeMonitorMBean(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/GaugeMonitorMBean.cs/#L108"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getDifferenceMode()">https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getDifferenceMode()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#setDifferenceMode(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#setDifferenceMode(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getDifferenceMode()">https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getDifferenceMode()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#setDifferenceMode(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#setDifferenceMode(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -840,7 +847,8 @@ public GaugeMonitorMBean(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/GaugeMonitorMBean.cs/#L129"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getNotifyHigh()">https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getNotifyHigh()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#setNotifyHigh(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#setNotifyHigh(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getNotifyHigh()">https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getNotifyHigh()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#setNotifyHigh(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#setNotifyHigh(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -872,7 +880,8 @@ public GaugeMonitorMBean(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/GaugeMonitorMBean.cs/#L136"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getNotifyLow()">https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getNotifyLow()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#setNotifyLow(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#setNotifyLow(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getNotifyLow()">https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getNotifyLow()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#setNotifyLow(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#setNotifyLow(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

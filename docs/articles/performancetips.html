@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Performance tips of Java/JVM suite for .NET | MASES Group - JNet </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Performance tips of Java/JVM suite for .NET | MASES Group - JNet ">
+      <meta name="description" content="Describes some tips about performance of Java/JVM suite for .NET">
+      
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/JNet/blob/master/src/documentation/articles/performancetips.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="jnet-performance-tips">JNet performance tips</h1>
+
+<p>This article tries to report some tips can be used when the user faces with the performances, meanwhile explains the reasons.</p>
+<h2 id="reduce-clr-jvm-boundary-invocations">Reduce CLR-JVM boundary invocations</h2>
+<p>The library tries to optimize the usage of invocations at CLR-JVM boundary, however the user shall avoid an expansive usage of methods if not strictly needed.
+Consider the following code (available in the <strong>tests</strong> folder projects):</p>
+<pre><code class="lang-c#">const int execution = 10000;
+Java.Util.ArrayList&lt;int&gt; alist = new Java.Util.ArrayList&lt;int&gt;();
+for (int i = 0; i &lt; execution; i++)
+{
+    alist.Add(i);
+}
+</code></pre>
+<p>The previous code creates a <code>Java.Util.ArrayList&lt;int&gt;</code> and fills it, within the loop, invoking <code>Add</code> method: the fill operation is very expensive because on every loop the CLR-JVM boundary shall be traversed.
+The previous is only an example of the impact of CLR-JVM boundary when performance is a key element.</p>
+<h3 id="jnet-helper-class">JNet helper class</h3>
+<p>The specific previous example can be optimized with some features of JNet available to build <code>java.util.List</code> of primitive types starting from array of primitive types of the CLR.</p>
+<h4 id="jnet-helper-class-based-on-array-transfer">JNet helper class based on array transfer</h4>
+<p>An optimized way to allocate a <code>Java.Util.ArrayList&lt;int&gt;</code> uses the <code>JNetHelper</code> class available in JNet:</p>
+<pre><code class="lang-c#">const int execution = 10000;
+int[] tmpArray = new int[execution];
+var tmpJList = JNetHelper.ListFrom(tmpArray);
+Java.Util.ArrayList&lt;int&gt; alist = new Java.Util.ArrayList&lt;int&gt;(tmpJList);
+</code></pre>
+<p>the previous code (also available in the <strong>tests</strong> folder projects) move the primitive array using few invocations at CLR-JVM boundary, the final job is done in the JVM where the <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/util/List.html"><code>java.util.List</code></a> is created and then it is returned to the CLR.</p>
+<h4 id="jnet-helper-class-based-on-javaniobuffer">JNet helper class based on java.nio.*Buffer</h4>
+<p>The previous code can uses a <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a> to transfrer data using other overloads of <code>JNetHelper.ListFrom</code>:</p>
+<pre><code class="lang-c#">const int execution = 10000;
+int[] tmpArray = new int[execution];
+var intBuffer = IntBuffer.From(tmpArray, false, false);
+var tmpJList = JNetHelper.ListFrom(intBuffer);
+Java.Util.ArrayList&lt;int&gt; alist = new Java.Util.ArrayList&lt;int&gt;(tmpJList);
+</code></pre>
+<p>or</p>
+<pre><code class="lang-c#">const int execution = 10000;
+int[] tmpArray = new int[execution];
+var tmpJList = JNetHelper.ListFrom(tmpArray, true);
+Java.Util.ArrayList&lt;int&gt; alist = new Java.Util.ArrayList&lt;int&gt;(tmpJList);
+</code></pre>
+<p>Both examples uses a shared memory to move memory from CLR to JVM, the difference is mainly:</p>
+<ul>
+<li>in the first example the user allocates the <code>IntBuffer</code> and can reuse it for other reasons, e.g. refill it with other data to be sent to the JVM removing the need to create a new one</li>
+<li>in the second example an <code>IntBuffer</code> is allocated behind the scene each time the <code>JNetHelper.ListFrom</code> is invoked.</li>
+</ul>
+<h3 id="performance-comparison-and-tips">Performance comparison and tips</h3>
+<p>Considering all examples it is possible to highligh how invocations at CLR-JVM boundary impacts on performance.
+The JNetTest project (available in the <strong>tests</strong> folder projects) executes a timing comparison and the synthesis of the results is the following:</p>
+<ul>
+<li>First example is always the most impacted; using it as reference...</li>
+<li>...when the JNet helper, based on array transfer, is used the speed is more or less 100 times higher</li>
+<li>...when the JNet helper, based on java.nio.*Buffer, is used the speed can be 140 times higher</li>
+<li>Building a <code>System.Collections.Generic.List&lt;int&gt;</code> directly in the CLR the speed can be 1000 times higher</li>
+</ul>
+<div class="TIP">
+<h5>Tip</h5>
+<p>From the previous it is possible to report three things:</p>
+<ul>
+<li>when it is possible, the user shall avoid the invocation of methods in the JVM from the CLR to reduce their impact on performances;</li>
+<li>if it possible the invocations at CLR-JVM boundary shall be collapsed just like JNetHelper does;</li>
+<li>if something can be made entirely in CLR or JVM try to do it in that environment until invocation at CLR-JVM boundary is really needed.</li>
+</ul>
+</div>
+<h2 id="memory-transfer-at-clr-jvm-boundary">Memory transfer at CLR-JVM boundary</h2>
+<p>Latest version of JNet comes with many new APIs to manage data exchange at CLR-JVM boundary using <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a>.</p>
+<p>The <a href="#JNet-helper-class-based-on-java.nio.*Buffer">chapter</a> introduces one of the usage of the new APIs in a specific context behind an helper class, however <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a> can be used starting from many types of CLR inputs:</p>
+<ul>
+<li>from an <code>IntPtr</code></li>
+<li>from a <code>System.IO.MemoryStream</code></li>
+<li>from an array of primitive types (<code>byte</code>, <code>short</code>, <code>int</code>, <code>long</code>, and so on)</li>
+</ul>
+<p>All previous variants are available because there many possible needs, here some examples:</p>
+<ul>
+<li>An <code>IntPtr</code>, representing a generic native memory pointer, can be the address of a memory allocated from COM (Component Object Model), a pointer to a unmanaged memory or other cases</li>
+<li>A <code>System.IO.MemoryStream</code> can be the output of some operations (e.g. a JSON serialization before convert it to an array of bytes)</li>
+<li>An array of <code>byte</code>s can be a file read from the disk, information from a socket and so on</li>
+</ul>
+<p>JNI (CLR-JVM boundary) comes with many methods to transfer data using array of primitivess, but in some conditions both CLR and JVM can make multiple copies of the memory reducing the performances.
+An example can be a <code>System.IO.MemoryStream</code> holding information to be transferred in the JVM:</p>
+<ol>
+<li>the data within the <code>System.IO.MemoryStream</code> shall be extracted and converted into an array of <code>byte</code>s;</li>
+<li>the array of <code>byte</code>s shall be allocated from the CLR then the content of <code>System.IO.MemoryStream</code> shall be copied in it;</li>
+<li>the array of <code>byte</code>s shall be transferred to the JVM and this operation needs to:
+a. create a new array in the JVM with length equals to the CLR array
+b. execute a memory copy from CLR memory to the JVM memory</li>
+<li>the operation 3.b can be impacted, depending on the JVM, from a further copy becuase the JVM itself can decide to use a temporary array reference at JNI (CLR-JVM boundary) level</li>
+<li>then the JVM can use the data sent from the CLR.</li>
+</ol>
+<p>With the new APIs available in JNet the previous steps becomes:</p>
+<ol>
+<li>A <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a> is created diretly from <code>System.IO.MemoryStream</code>;</li>
+<li>the reference to <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a> is sent to the JVM, but the memory isn't moved;</li>
+<li>then the JVM can directly access the CLR memory using <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html#get()"><code>public abstract byte get()</code></a> or <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html#get(int)"><code>public abstract byte get(int index)</code></a> methods.</li>
+</ol>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Other methods can be used to retrieve an array of <code>byte</code>s if the code needs that kind of type, however it is important to notice that an user shall avoid the <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html#get(byte%5B%5D)"><code>public ByteBuffer get(byte[] dst)</code></a> method because the underlying implementation executes a byte-to-byte copy, while it is preferable the <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html#get(byte%5B%5D,int,int)"><code>public ByteBuffer get(byte[] dst, int offset, int length)</code></a> method because it executes a copy based on block of bytes.</p>
+</div>
+<h3 id="the-impact-of-array-creation">The impact of array creation</h3>
+<p>In the previous chapter was reported that an user can obtain an array of <code>byte</code>s (or any other primitive) by method parameter or reading data transferred using a <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a>.
+If an array of primitives is needed the JVM (or the CLR) is heavely impacted because the JVM (or the CLR) must execute some work to obtain it.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The work mentioned before does not change if the array comes from JNI (CLR-JVM boundary) or from <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a>.</p>
+</div>
+<p>The JNetByteBufferTest project (available in the <strong>tests</strong> folder projects) executes a set of different tests comparing some cases:</p>
+<ol>
+<li>executes a transfer using array of <code>byte</code>s, and it is used as reference</li>
+<li>then executes memory transfer using <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a> and reads the data allocating, on each execution, a new array of <code>byte</code>s</li>
+<li>then executes memory transfer using <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a> and reads the data reusing, on each execution, a previously allocated array of <code>byte</code>s</li>
+<li>then executes memory transfer using <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a> without reads the data</li>
+</ol>
+<p>The previous steps are done both from CLR to the JVM, then from JVM to the CLR, repeating them many times and using different array lengths; from the tests executed it is possible to highlight that:</p>
+<ul>
+<li><p>test cases 1 and 2:</p>
+<ul>
+<li>array of <code>byte</code>s performs better than <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a> mainly for smallest arrays in both directions</li>
+<li><a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a> not always performs better than array of <code>byte</code>s and the reason can be found in the allocation of array of <code>byte</code>s requested from JVM, and CLR, on each execution</li>
+</ul>
+</li>
+<li><p>test case 3:</p>
+<ul>
+<li>in general, avoiding array allocation gives an enhancement of 4/5 times than transfer made with array of <code>byte</code>s</li>
+<li>currently, transferring few data (smallest length) from JVM to CLR, array of <code>byte</code>s performs better than <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a></li>
+</ul>
+</li>
+<li><p>test case 4:</p>
+<ul>
+<li>uncomparable with the other tests, it is useful to measure the transfer of the <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a> which is acting as a pointer to the JVM (or CLR) memory</li>
+</ul>
+</li>
+</ul>
+<div class="TIP">
+<h5>Tip</h5>
+<p>For test case 4: if the user implements a sparse access to the memory transferred using a <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a>, the code does not need to move memory (or make a copy) with array of <code>byte</code>s, gaining in performance.</p>
+</div>
+<h3 id="performance-and-tips">Performance and tips</h3>
+<p>From the previous chapter it is clear that memory allocation is a key to be considered in performances because the memory shall be found from the JVM, or CLR, then it shall be released.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>When it is possible, try to reuse the previously allocated arrays to avoid an expansive load on JVM, or CLR, both during creation and when the arrays are garbage collected.</p>
+</div>
+<h2 id="execute-iterations-in-parallel">Execute iterations in parallel</h2>
+<p>The chapter <a href="#Performance-comparison-and-tips">Performance comparison and tips</a> recommends to reduce the number of invocations at CLR-JVM boundary to the minimum possible, JNetHelper is a great helper when the user is facing with primitives and <a href="#Memory-transfer-at-CLR-JVM-boundary">Memory transfer at CLR-JVM boundary</a> explain how to optimize memory transfer.
+However in many conditions the user shall executes iterations on objects which cannot be managed like primitive types. To explain better, consider the following snippet:</p>
+<pre><code class="lang-c#">ArrayList&lt;Java.Lang.String&gt; alist = GetAnArrayListOfString();
+foreach (Java.Lang.String item in alist)
+{
+    // EXPENSIVE OPERATION OVER item
+}
+</code></pre>
+<p>the code requests a <code>Java.Lang.String</code> using the <code>Java.Lang.Iterable</code> interface, then executes an EXPENSIVE operation over it: when the CLR is executing the operation the JVM does not do anything with the <code>Java.Lang.Iterable</code> interface, the next time the CLR code requests a new item the <code>Java.Lang.Iterable</code> interface is impacted.
+In general this means that:</p>
+<ol>
+<li>the next <strong>EXPENSIVE OPERATION OVER item</strong> shall wait that the item is received from the JVM</li>
+<li>while <strong>EXPENSIVE OPERATION OVER item</strong> is executed the JVM is idle</li>
+</ol>
+<p>To speed up the iteration it is possible to use the <code>WithPrefetch</code> extension method like in the following sinppet:</p>
+<pre><code class="lang-c#">ArrayList&lt;Java.Lang.String&gt; alist = GetAnArrayListOfString();
+foreach (Java.Lang.String item in alist.WithPrefetch())
+{
+    // EXPENSIVE OPERATION OVER item
+}
+</code></pre>
+<p><code>WithPrefetch</code> returns a new iterator that retrieves data from JVM in parallel: while <strong>EXPENSIVE OPERATION OVER item</strong> is executed, a new item is received from the JVM.</p>
+<p>A further improvement can be obtained using <code>WithThread</code> extension method like in:</p>
+<pre><code class="lang-c#">ArrayList&lt;Java.Lang.String&gt; alist = GetAnArrayListOfString();
+foreach (Java.Lang.String item in alist.WithPrefetch().WithThread())
+{
+    // EXPENSIVE OPERATION OVER item
+}
+</code></pre>
+<p><code>WithThread</code> creates an external native thread which executes the retrieve operation.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>It is preferable to use <code>WithPrefetch</code> and <code>WithThread</code> when the number of items are high and the operation over item is expensive; otherwise the time spent to allocate the external native thread and manage the second iterator is more than the operation executed with classic iterator.</p>
+</div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/documentation/articles/performancetips.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

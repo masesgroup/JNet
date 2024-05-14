@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -297,6 +297,9 @@ Class Logger  <a class="header-action link-secondary" title="View source" href="
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -327,7 +330,10 @@ Class Logger  <a class="header-action link-secondary" title="View source" href="
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.Dispose()</span>
@@ -616,7 +622,8 @@ Class Logger  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Logging/Logger.cs/#L99"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#getFilter()">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#getFilter()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#setFilter(java.util.logging.Filter)">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#setFilter(java.util.logging.Filter)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#getFilter()">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#getFilter()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#setFilter(java.util.logging.Filter)">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#setFilter(java.util.logging.Filter)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -872,7 +879,8 @@ Class Logger  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Logging/Logger.cs/#L113"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#getLevel()">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#getLevel()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#setLevel(java.util.logging.Level)">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#setLevel(java.util.logging.Level)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#getLevel()">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#getLevel()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#setLevel(java.util.logging.Level)">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#setLevel(java.util.logging.Level)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -936,7 +944,8 @@ Class Logger  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Logging/Logger.cs/#L127"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#getParent()">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#getParent()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#setParent(java.util.logging.Logger)">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#setParent(java.util.logging.Logger)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#getParent()">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#getParent()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#setParent(java.util.logging.Logger)">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#setParent(java.util.logging.Logger)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -968,7 +977,8 @@ Class Logger  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Logging/Logger.cs/#L134"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#getResourceBundle()">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#getResourceBundle()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#setResourceBundle(java.util.ResourceBundle)">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#setResourceBundle(java.util.ResourceBundle)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#getResourceBundle()">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#getResourceBundle()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#setResourceBundle(java.util.ResourceBundle)">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#setResourceBundle(java.util.ResourceBundle)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1032,7 +1042,8 @@ Class Logger  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Logging/Logger.cs/#L148"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#getUseParentHandlers()">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#getUseParentHandlers()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#setUseParentHandlers(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#setUseParentHandlers(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#getUseParentHandlers()">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#getUseParentHandlers()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#setUseParentHandlers(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#setUseParentHandlers(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

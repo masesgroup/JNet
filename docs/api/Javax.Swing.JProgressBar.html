@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -244,6 +244,9 @@ Class JProgressBar  <a class="header-action link-secondary" title="View source" 
     </div>
     <div>
       <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_GetActionForKeyStroke_Javax_Swing_KeyStroke_">JComponent.GetActionForKeyStroke(KeyStroke)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_GetActionForKeyStrokeDirect_Javax_Swing_KeyStroke_">JComponent.GetActionForKeyStrokeDirect(KeyStroke)</a>
     </div>
     <div>
       <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_GetInsets_Java_Awt_Insets_">JComponent.GetInsets(Insets)</a>
@@ -1071,6 +1074,9 @@ Class JProgressBar  <a class="header-action link-secondary" title="View source" 
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -1101,7 +1107,10 @@ Class JProgressBar  <a class="header-action link-secondary" title="View source" 
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.ToString()</span>
@@ -1257,7 +1266,7 @@ Class JProgressBar  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Javax_Swing_JProgressBar__ctor" data-uid="Javax.Swing.JProgressBar.#ctor">
   JProgressBar()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3816"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3857"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -1425,7 +1434,7 @@ Class JProgressBar  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Javax_Swing_JProgressBar__ctor_System_Object___" data-uid="Javax.Swing.JProgressBar.#ctor(System.Object[])">
   JProgressBar(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3820"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3861"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -1461,7 +1470,7 @@ Class JProgressBar  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Javax_Swing_JProgressBar_BridgeClassName" data-uid="Javax.Swing.JProgressBar.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3827"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3868"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -1525,7 +1534,7 @@ Class JProgressBar  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Javax_Swing_JProgressBar_IsBridgeAbstract" data-uid="Javax.Swing.JProgressBar.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3831"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3872"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -1557,7 +1566,7 @@ Class JProgressBar  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Javax_Swing_JProgressBar_IsBridgeCloseable" data-uid="Javax.Swing.JProgressBar.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3835"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3876"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -1589,7 +1598,7 @@ Class JProgressBar  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Javax_Swing_JProgressBar_IsBridgeInterface" data-uid="Javax.Swing.JProgressBar.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3839"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3880"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -1621,7 +1630,7 @@ Class JProgressBar  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Javax_Swing_JProgressBar_IsBridgeStatic" data-uid="Javax.Swing.JProgressBar.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3843"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3884"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -1656,7 +1665,8 @@ Class JProgressBar  <a class="header-action link-secondary" title="View source" 
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JProgressBar.cs/#L101"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#getMaximum()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#getMaximum()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#setMaximum(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#setMaximum(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#getMaximum()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#getMaximum()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#setMaximum(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#setMaximum(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1688,7 +1698,8 @@ Class JProgressBar  <a class="header-action link-secondary" title="View source" 
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JProgressBar.cs/#L108"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#getMinimum()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#getMinimum()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#setMinimum(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#setMinimum(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#getMinimum()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#getMinimum()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#setMinimum(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#setMinimum(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1720,7 +1731,8 @@ Class JProgressBar  <a class="header-action link-secondary" title="View source" 
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JProgressBar.cs/#L115"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#getModel()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#getModel()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#setModel(javax.swing.BoundedRangeModel)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#setModel(javax.swing.BoundedRangeModel)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#getModel()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#getModel()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#setModel(javax.swing.BoundedRangeModel)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#setModel(javax.swing.BoundedRangeModel)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1752,7 +1764,8 @@ Class JProgressBar  <a class="header-action link-secondary" title="View source" 
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JProgressBar.cs/#L122"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#getOrientation()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#getOrientation()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#setOrientation(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#setOrientation(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#getOrientation()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#getOrientation()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#setOrientation(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#setOrientation(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1816,7 +1829,8 @@ Class JProgressBar  <a class="header-action link-secondary" title="View source" 
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JProgressBar.cs/#L136"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#getString()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#getString()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#setString(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#setString(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#getString()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#getString()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#setString(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#setString(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1848,7 +1862,8 @@ Class JProgressBar  <a class="header-action link-secondary" title="View source" 
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JProgressBar.cs/#L143"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#getValue()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#getValue()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#setValue(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#setValue(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#getValue()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#getValue()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#setValue(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#setValue(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

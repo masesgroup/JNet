@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -299,6 +299,9 @@ Class Pattern  <a class="header-action link-secondary" title="View source" href=
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -329,7 +332,10 @@ Class Pattern  <a class="header-action link-secondary" title="View source" href=
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.Dispose()</span>
@@ -1032,11 +1038,44 @@ Class Pattern  <a class="header-action link-secondary" title="View source" href=
 
 
 
+  <a id="Java_Util_Regex_Pattern_AsMatchPredicateDirect_" data-uid="Java.Util.Regex.Pattern.AsMatchPredicateDirect*"></a>
+
+  <h3 id="Java_Util_Regex_Pattern_AsMatchPredicateDirect" data-uid="Java.Util.Regex.Pattern.AsMatchPredicateDirect">
+  AsMatchPredicateDirect()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Regex/Pattern.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#asMatchPredicate()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#asMatchPredicate()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Predicate&lt;String&gt; AsMatchPredicateDirect()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Function.Predicate-1.html">Predicate</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Predicate.html">Predicate</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_Regex_Pattern_AsPredicate_" data-uid="Java.Util.Regex.Pattern.AsPredicate*"></a>
 
   <h3 id="Java_Util_Regex_Pattern_AsPredicate" data-uid="Java.Util.Regex.Pattern.AsPredicate">
   AsPredicate()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Regex/Pattern.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Regex/Pattern.cs/#L200"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#asPredicate()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#asPredicate()</a></p>
@@ -1045,6 +1084,39 @@ Class Pattern  <a class="header-action link-secondary" title="View source" href=
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Predicate&lt;String&gt; AsPredicate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Function.Predicate-1.html">Predicate</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Predicate.html">Predicate</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Regex_Pattern_AsPredicateDirect_" data-uid="Java.Util.Regex.Pattern.AsPredicateDirect*"></a>
+
+  <h3 id="Java_Util_Regex_Pattern_AsPredicateDirect" data-uid="Java.Util.Regex.Pattern.AsPredicateDirect">
+  AsPredicateDirect()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Regex/Pattern.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#asPredicate()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#asPredicate()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Predicate&lt;String&gt; AsPredicateDirect()</code></pre>
   </div>
 
 
@@ -1183,7 +1255,7 @@ Class Pattern  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Java_Util_Regex_Pattern_Matcher_Java_Lang_CharSequence_" data-uid="Java.Util.Regex.Pattern.Matcher(Java.Lang.CharSequence)">
   Matcher(CharSequence)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Regex/Pattern.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Regex/Pattern.cs/#L218"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#matcher(java.lang.CharSequence)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#matcher(java.lang.CharSequence)</a></p>
@@ -1417,7 +1489,7 @@ Class Pattern  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Java_Util_Regex_Pattern_SplitAsStream_Java_Lang_CharSequence_" data-uid="Java.Util.Regex.Pattern.SplitAsStream(Java.Lang.CharSequence)">
   SplitAsStream(CharSequence)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Regex/Pattern.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Regex/Pattern.cs/#L227"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#splitAsStream(java.lang.CharSequence)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#splitAsStream(java.lang.CharSequence)</a></p>

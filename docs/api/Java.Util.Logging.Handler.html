@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -304,6 +304,9 @@ Class Handler  <a class="header-action link-secondary" title="View source" href=
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -334,7 +337,10 @@ Class Handler  <a class="header-action link-secondary" title="View source" href=
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.Dispose()</span>
@@ -593,7 +599,8 @@ public Handler(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Logging/Handler.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getEncoding()">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getEncoding()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setEncoding(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setEncoding(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getEncoding()">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getEncoding()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setEncoding(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setEncoding(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -625,7 +632,8 @@ public Handler(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Logging/Handler.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getErrorManager()">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getErrorManager()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setErrorManager(java.util.logging.ErrorManager)">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setErrorManager(java.util.logging.ErrorManager)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getErrorManager()">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getErrorManager()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setErrorManager(java.util.logging.ErrorManager)">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setErrorManager(java.util.logging.ErrorManager)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -657,7 +665,8 @@ public Handler(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Logging/Handler.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getFilter()">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getFilter()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setFilter(java.util.logging.Filter)">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setFilter(java.util.logging.Filter)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getFilter()">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getFilter()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setFilter(java.util.logging.Filter)">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setFilter(java.util.logging.Filter)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -689,7 +698,8 @@ public Handler(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Logging/Handler.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getFormatter()">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getFormatter()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setFormatter(java.util.logging.Formatter)">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setFormatter(java.util.logging.Formatter)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getFormatter()">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getFormatter()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setFormatter(java.util.logging.Formatter)">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setFormatter(java.util.logging.Formatter)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -849,7 +859,8 @@ public Handler(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Logging/Handler.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getLevel()">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getLevel()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setLevel(java.util.logging.Level)">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setLevel(java.util.logging.Level)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getLevel()">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getLevel()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setLevel(java.util.logging.Level)">https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setLevel(java.util.logging.Level)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

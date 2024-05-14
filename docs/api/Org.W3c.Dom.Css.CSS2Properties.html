@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -298,6 +298,9 @@ Class CSS2Properties  <a class="header-action link-secondary" title="View source
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -328,7 +331,10 @@ Class CSS2Properties  <a class="header-action link-secondary" title="View source
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.Dispose()</span>
@@ -555,7 +561,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L557"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getAzimuth()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getAzimuth()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setAzimuth(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setAzimuth(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getAzimuth()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getAzimuth()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setAzimuth(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setAzimuth(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -587,7 +594,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L564"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBackground()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBackground()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBackground(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBackground(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBackground()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBackground()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBackground(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBackground(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -619,7 +627,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L571"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBackgroundAttachment()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBackgroundAttachment()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBackgroundAttachment(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBackgroundAttachment(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBackgroundAttachment()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBackgroundAttachment()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBackgroundAttachment(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBackgroundAttachment(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -651,7 +660,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L578"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBackgroundColor()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBackgroundColor()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBackgroundColor(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBackgroundColor(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBackgroundColor()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBackgroundColor()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBackgroundColor(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBackgroundColor(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -683,7 +693,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L585"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBackgroundImage()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBackgroundImage()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBackgroundImage(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBackgroundImage(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBackgroundImage()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBackgroundImage()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBackgroundImage(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBackgroundImage(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -715,7 +726,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L592"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBackgroundPosition()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBackgroundPosition()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBackgroundPosition(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBackgroundPosition(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBackgroundPosition()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBackgroundPosition()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBackgroundPosition(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBackgroundPosition(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -747,7 +759,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L599"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBackgroundRepeat()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBackgroundRepeat()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBackgroundRepeat(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBackgroundRepeat(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBackgroundRepeat()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBackgroundRepeat()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBackgroundRepeat(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBackgroundRepeat(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -779,7 +792,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L606"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorder()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorder()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorder(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorder(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorder()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorder()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorder(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorder(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -811,7 +825,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L613"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderBottom()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderBottom()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderBottom(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderBottom(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderBottom()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderBottom()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderBottom(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderBottom(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -843,7 +858,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L620"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderBottomColor()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderBottomColor()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderBottomColor(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderBottomColor(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderBottomColor()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderBottomColor()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderBottomColor(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderBottomColor(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -875,7 +891,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L627"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderBottomStyle()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderBottomStyle()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderBottomStyle(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderBottomStyle(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderBottomStyle()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderBottomStyle()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderBottomStyle(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderBottomStyle(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -907,7 +924,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L634"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderBottomWidth()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderBottomWidth()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderBottomWidth(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderBottomWidth(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderBottomWidth()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderBottomWidth()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderBottomWidth(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderBottomWidth(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -939,7 +957,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L641"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderCollapse()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderCollapse()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderCollapse(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderCollapse(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderCollapse()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderCollapse()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderCollapse(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderCollapse(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -971,7 +990,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L648"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderColor()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderColor()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderColor(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderColor(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderColor()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderColor()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderColor(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderColor(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1003,7 +1023,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L655"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderLeft()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderLeft()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderLeft(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderLeft(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderLeft()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderLeft()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderLeft(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderLeft(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1035,7 +1056,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L662"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderLeftColor()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderLeftColor()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderLeftColor(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderLeftColor(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderLeftColor()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderLeftColor()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderLeftColor(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderLeftColor(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1067,7 +1089,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L669"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderLeftStyle()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderLeftStyle()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderLeftStyle(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderLeftStyle(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderLeftStyle()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderLeftStyle()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderLeftStyle(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderLeftStyle(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1099,7 +1122,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L676"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderLeftWidth()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderLeftWidth()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderLeftWidth(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderLeftWidth(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderLeftWidth()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderLeftWidth()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderLeftWidth(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderLeftWidth(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1131,7 +1155,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L683"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderRight()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderRight()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderRight(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderRight(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderRight()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderRight()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderRight(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderRight(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1163,7 +1188,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L690"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderRightColor()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderRightColor()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderRightColor(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderRightColor(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderRightColor()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderRightColor()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderRightColor(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderRightColor(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1195,7 +1221,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L697"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderRightStyle()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderRightStyle()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderRightStyle(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderRightStyle(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderRightStyle()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderRightStyle()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderRightStyle(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderRightStyle(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1227,7 +1254,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L704"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderRightWidth()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderRightWidth()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderRightWidth(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderRightWidth(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderRightWidth()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderRightWidth()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderRightWidth(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderRightWidth(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1259,7 +1287,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L711"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderSpacing()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderSpacing()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderSpacing(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderSpacing(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderSpacing()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderSpacing()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderSpacing(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderSpacing(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1291,7 +1320,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L718"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderStyle()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderStyle()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderStyle(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderStyle(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderStyle()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderStyle()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderStyle(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderStyle(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1323,7 +1353,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L725"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderTop()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderTop()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderTop(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderTop(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderTop()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderTop()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderTop(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderTop(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1355,7 +1386,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L732"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderTopColor()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderTopColor()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderTopColor(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderTopColor(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderTopColor()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderTopColor()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderTopColor(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderTopColor(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1387,7 +1419,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L739"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderTopStyle()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderTopStyle()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderTopStyle(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderTopStyle(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderTopStyle()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderTopStyle()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderTopStyle(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderTopStyle(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1419,7 +1452,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L746"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderTopWidth()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderTopWidth()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderTopWidth(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderTopWidth(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderTopWidth()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderTopWidth()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderTopWidth(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderTopWidth(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1451,7 +1485,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L753"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderWidth()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderWidth()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderWidth(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderWidth(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderWidth()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderWidth()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderWidth(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderWidth(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1483,7 +1518,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L760"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBottom()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBottom()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBottom(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBottom(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBottom()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBottom()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBottom(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBottom(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1547,7 +1583,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L767"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCaptionSide()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCaptionSide()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCaptionSide(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCaptionSide(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCaptionSide()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCaptionSide()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCaptionSide(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCaptionSide(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1579,7 +1616,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L774"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getClear()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getClear()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setClear(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setClear(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getClear()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getClear()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setClear(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setClear(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1611,7 +1649,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L781"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getClip()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getClip()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setClip(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setClip(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getClip()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getClip()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setClip(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setClip(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1643,7 +1682,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L788"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getColor()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getColor()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setColor(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setColor(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getColor()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getColor()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setColor(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setColor(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1675,7 +1715,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L795"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getContent()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getContent()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setContent(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setContent(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getContent()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getContent()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setContent(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setContent(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1707,7 +1748,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L802"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCounterIncrement()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCounterIncrement()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCounterIncrement(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCounterIncrement(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCounterIncrement()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCounterIncrement()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCounterIncrement(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCounterIncrement(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1739,7 +1781,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L809"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCounterReset()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCounterReset()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCounterReset(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCounterReset(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCounterReset()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCounterReset()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCounterReset(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCounterReset(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1771,7 +1814,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L816"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCssFloat()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCssFloat()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCssFloat(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCssFloat(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCssFloat()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCssFloat()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCssFloat(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCssFloat(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1803,7 +1847,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L823"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCue()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCue()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCue(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCue(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCue()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCue()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCue(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCue(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1835,7 +1880,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L830"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCueAfter()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCueAfter()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCueAfter(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCueAfter(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCueAfter()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCueAfter()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCueAfter(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCueAfter(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1867,7 +1913,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L837"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCueBefore()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCueBefore()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCueBefore(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCueBefore(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCueBefore()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCueBefore()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCueBefore(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCueBefore(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1899,7 +1946,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L844"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCursor()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCursor()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCursor(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCursor(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCursor()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCursor()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCursor(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCursor(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1931,7 +1979,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L851"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getDirection()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getDirection()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setDirection(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setDirection(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getDirection()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getDirection()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setDirection(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setDirection(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1963,7 +2012,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L858"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getDisplay()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getDisplay()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setDisplay(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setDisplay(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getDisplay()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getDisplay()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setDisplay(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setDisplay(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1995,7 +2045,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L865"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getElevation()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getElevation()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setElevation(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setElevation(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getElevation()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getElevation()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setElevation(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setElevation(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2027,7 +2078,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L872"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getEmptyCells()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getEmptyCells()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setEmptyCells(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setEmptyCells(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getEmptyCells()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getEmptyCells()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setEmptyCells(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setEmptyCells(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2059,7 +2111,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L879"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFont()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFont()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFont(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFont(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFont()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFont()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFont(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFont(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2091,7 +2144,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L886"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontFamily()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontFamily()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontFamily(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontFamily(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontFamily()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontFamily()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontFamily(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontFamily(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2123,7 +2177,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L893"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontSize()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontSize()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontSize(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontSize(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontSize()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontSize()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontSize(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontSize(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2155,7 +2210,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L900"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontSizeAdjust()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontSizeAdjust()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontSizeAdjust(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontSizeAdjust(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontSizeAdjust()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontSizeAdjust()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontSizeAdjust(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontSizeAdjust(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2187,7 +2243,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L907"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontStretch()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontStretch()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontStretch(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontStretch(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontStretch()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontStretch()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontStretch(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontStretch(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2219,7 +2276,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L914"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontStyle()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontStyle()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontStyle(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontStyle(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontStyle()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontStyle()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontStyle(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontStyle(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2251,7 +2309,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L921"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontVariant()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontVariant()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontVariant(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontVariant(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontVariant()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontVariant()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontVariant(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontVariant(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2283,7 +2342,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L928"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontWeight()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontWeight()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontWeight(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontWeight(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontWeight()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontWeight()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontWeight(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontWeight(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2315,7 +2375,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L935"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getHeight()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getHeight()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setHeight(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setHeight(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getHeight()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getHeight()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setHeight(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setHeight(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2475,7 +2536,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L942"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getLeft()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getLeft()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setLeft(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setLeft(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getLeft()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getLeft()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setLeft(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setLeft(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2507,7 +2569,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L949"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getLetterSpacing()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getLetterSpacing()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setLetterSpacing(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setLetterSpacing(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getLetterSpacing()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getLetterSpacing()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setLetterSpacing(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setLetterSpacing(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2539,7 +2602,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L956"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getLineHeight()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getLineHeight()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setLineHeight(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setLineHeight(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getLineHeight()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getLineHeight()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setLineHeight(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setLineHeight(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2571,7 +2635,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L963"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getListStyle()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getListStyle()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setListStyle(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setListStyle(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getListStyle()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getListStyle()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setListStyle(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setListStyle(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2603,7 +2668,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L970"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getListStyleImage()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getListStyleImage()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setListStyleImage(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setListStyleImage(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getListStyleImage()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getListStyleImage()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setListStyleImage(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setListStyleImage(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2635,7 +2701,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L977"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getListStylePosition()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getListStylePosition()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setListStylePosition(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setListStylePosition(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getListStylePosition()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getListStylePosition()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setListStylePosition(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setListStylePosition(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2667,7 +2734,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L984"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getListStyleType()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getListStyleType()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setListStyleType(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setListStyleType(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getListStyleType()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getListStyleType()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setListStyleType(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setListStyleType(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2699,7 +2767,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L991"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMargin()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMargin()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMargin(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMargin(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMargin()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMargin()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMargin(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMargin(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2731,7 +2800,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L998"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMarginBottom()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMarginBottom()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMarginBottom(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMarginBottom(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMarginBottom()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMarginBottom()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMarginBottom(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMarginBottom(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2763,7 +2833,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1005"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMarginLeft()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMarginLeft()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMarginLeft(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMarginLeft(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMarginLeft()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMarginLeft()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMarginLeft(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMarginLeft(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2795,7 +2866,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1012"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMarginRight()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMarginRight()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMarginRight(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMarginRight(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMarginRight()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMarginRight()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMarginRight(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMarginRight(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2827,7 +2899,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1019"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMarginTop()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMarginTop()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMarginTop(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMarginTop(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMarginTop()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMarginTop()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMarginTop(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMarginTop(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2859,7 +2932,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1026"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMarkerOffset()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMarkerOffset()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMarkerOffset(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMarkerOffset(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMarkerOffset()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMarkerOffset()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMarkerOffset(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMarkerOffset(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2891,7 +2965,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1033"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMarks()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMarks()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMarks(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMarks(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMarks()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMarks()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMarks(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMarks(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2923,7 +2998,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1040"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMaxHeight()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMaxHeight()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMaxHeight(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMaxHeight(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMaxHeight()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMaxHeight()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMaxHeight(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMaxHeight(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2955,7 +3031,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1047"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMaxWidth()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMaxWidth()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMaxWidth(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMaxWidth(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMaxWidth()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMaxWidth()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMaxWidth(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMaxWidth(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2987,7 +3064,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1054"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMinHeight()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMinHeight()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMinHeight(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMinHeight(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMinHeight()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMinHeight()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMinHeight(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMinHeight(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3019,7 +3097,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1061"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMinWidth()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMinWidth()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMinWidth(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMinWidth(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMinWidth()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMinWidth()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMinWidth(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMinWidth(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3051,7 +3130,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1068"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getOrphans()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getOrphans()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setOrphans(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setOrphans(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getOrphans()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getOrphans()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setOrphans(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setOrphans(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3083,7 +3163,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1075"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getOutline()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getOutline()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setOutline(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setOutline(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getOutline()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getOutline()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setOutline(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setOutline(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3115,7 +3196,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1082"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getOutlineColor()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getOutlineColor()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setOutlineColor(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setOutlineColor(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getOutlineColor()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getOutlineColor()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setOutlineColor(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setOutlineColor(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3147,7 +3229,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1089"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getOutlineStyle()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getOutlineStyle()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setOutlineStyle(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setOutlineStyle(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getOutlineStyle()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getOutlineStyle()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setOutlineStyle(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setOutlineStyle(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3179,7 +3262,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1096"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getOutlineWidth()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getOutlineWidth()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setOutlineWidth(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setOutlineWidth(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getOutlineWidth()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getOutlineWidth()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setOutlineWidth(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setOutlineWidth(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3211,7 +3295,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1103"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getOverflow()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getOverflow()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setOverflow(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setOverflow(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getOverflow()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getOverflow()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setOverflow(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setOverflow(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3243,7 +3328,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1110"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPadding()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPadding()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPadding(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPadding(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPadding()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPadding()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPadding(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPadding(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3275,7 +3361,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1117"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPaddingBottom()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPaddingBottom()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPaddingBottom(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPaddingBottom(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPaddingBottom()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPaddingBottom()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPaddingBottom(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPaddingBottom(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3307,7 +3394,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1124"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPaddingLeft()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPaddingLeft()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPaddingLeft(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPaddingLeft(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPaddingLeft()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPaddingLeft()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPaddingLeft(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPaddingLeft(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3339,7 +3427,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1131"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPaddingRight()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPaddingRight()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPaddingRight(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPaddingRight(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPaddingRight()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPaddingRight()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPaddingRight(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPaddingRight(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3371,7 +3460,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1138"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPaddingTop()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPaddingTop()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPaddingTop(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPaddingTop(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPaddingTop()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPaddingTop()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPaddingTop(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPaddingTop(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3403,7 +3493,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1145"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPage()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPage()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPage(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPage(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPage()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPage()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPage(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPage(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3435,7 +3526,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1152"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPageBreakAfter()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPageBreakAfter()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPageBreakAfter(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPageBreakAfter(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPageBreakAfter()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPageBreakAfter()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPageBreakAfter(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPageBreakAfter(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3467,7 +3559,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1159"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPageBreakBefore()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPageBreakBefore()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPageBreakBefore(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPageBreakBefore(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPageBreakBefore()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPageBreakBefore()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPageBreakBefore(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPageBreakBefore(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3499,7 +3592,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1166"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPageBreakInside()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPageBreakInside()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPageBreakInside(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPageBreakInside(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPageBreakInside()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPageBreakInside()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPageBreakInside(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPageBreakInside(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3531,7 +3625,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1173"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPause()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPause()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPause(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPause(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPause()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPause()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPause(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPause(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3563,7 +3658,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1180"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPauseAfter()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPauseAfter()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPauseAfter(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPauseAfter(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPauseAfter()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPauseAfter()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPauseAfter(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPauseAfter(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3595,7 +3691,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1187"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPauseBefore()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPauseBefore()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPauseBefore(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPauseBefore(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPauseBefore()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPauseBefore()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPauseBefore(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPauseBefore(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3627,7 +3724,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1194"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPitch()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPitch()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPitch(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPitch(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPitch()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPitch()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPitch(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPitch(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3659,7 +3757,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1201"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPitchRange()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPitchRange()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPitchRange(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPitchRange(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPitchRange()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPitchRange()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPitchRange(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPitchRange(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3691,7 +3790,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1208"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPlayDuring()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPlayDuring()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPlayDuring(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPlayDuring(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPlayDuring()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPlayDuring()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPlayDuring(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPlayDuring(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3723,7 +3823,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1215"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPosition()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPosition()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPosition(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPosition(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPosition()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPosition()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPosition(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPosition(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3755,7 +3856,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1222"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getQuotes()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getQuotes()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setQuotes(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setQuotes(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getQuotes()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getQuotes()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setQuotes(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setQuotes(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3787,7 +3889,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1229"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getRichness()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getRichness()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setRichness(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setRichness(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getRichness()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getRichness()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setRichness(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setRichness(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3819,7 +3922,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1236"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getRight()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getRight()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setRight(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setRight(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getRight()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getRight()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setRight(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setRight(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3851,7 +3955,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1243"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getSize()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getSize()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setSize(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setSize(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getSize()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getSize()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setSize(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setSize(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3883,7 +3988,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1250"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getSpeak()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getSpeak()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setSpeak(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setSpeak(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getSpeak()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getSpeak()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setSpeak(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setSpeak(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3915,7 +4021,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1257"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getSpeakHeader()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getSpeakHeader()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setSpeakHeader(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setSpeakHeader(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getSpeakHeader()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getSpeakHeader()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setSpeakHeader(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setSpeakHeader(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3947,7 +4054,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1264"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getSpeakNumeral()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getSpeakNumeral()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setSpeakNumeral(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setSpeakNumeral(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getSpeakNumeral()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getSpeakNumeral()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setSpeakNumeral(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setSpeakNumeral(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3979,7 +4087,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1271"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getSpeakPunctuation()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getSpeakPunctuation()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setSpeakPunctuation(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setSpeakPunctuation(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getSpeakPunctuation()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getSpeakPunctuation()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setSpeakPunctuation(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setSpeakPunctuation(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -4011,7 +4120,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1278"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getSpeechRate()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getSpeechRate()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setSpeechRate(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setSpeechRate(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getSpeechRate()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getSpeechRate()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setSpeechRate(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setSpeechRate(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -4043,7 +4153,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1285"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getStress()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getStress()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setStress(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setStress(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getStress()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getStress()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setStress(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setStress(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -4075,7 +4186,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1292"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTableLayout()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTableLayout()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTableLayout(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTableLayout(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTableLayout()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTableLayout()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTableLayout(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTableLayout(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -4107,7 +4219,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1299"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTextAlign()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTextAlign()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTextAlign(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTextAlign(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTextAlign()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTextAlign()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTextAlign(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTextAlign(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -4139,7 +4252,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1306"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTextDecoration()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTextDecoration()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTextDecoration(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTextDecoration(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTextDecoration()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTextDecoration()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTextDecoration(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTextDecoration(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -4171,7 +4285,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1313"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTextIndent()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTextIndent()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTextIndent(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTextIndent(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTextIndent()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTextIndent()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTextIndent(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTextIndent(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -4203,7 +4318,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1320"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTextShadow()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTextShadow()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTextShadow(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTextShadow(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTextShadow()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTextShadow()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTextShadow(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTextShadow(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -4235,7 +4351,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1327"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTextTransform()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTextTransform()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTextTransform(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTextTransform(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTextTransform()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTextTransform()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTextTransform(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTextTransform(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -4267,7 +4384,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1334"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTop()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTop()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTop(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTop(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTop()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTop()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTop(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTop(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -4299,7 +4417,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1341"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getUnicodeBidi()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getUnicodeBidi()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setUnicodeBidi(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setUnicodeBidi(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getUnicodeBidi()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getUnicodeBidi()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setUnicodeBidi(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setUnicodeBidi(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -4331,7 +4450,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1348"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getVerticalAlign()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getVerticalAlign()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setVerticalAlign(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setVerticalAlign(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getVerticalAlign()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getVerticalAlign()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setVerticalAlign(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setVerticalAlign(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -4363,7 +4483,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1355"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getVisibility()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getVisibility()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setVisibility(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setVisibility(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getVisibility()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getVisibility()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setVisibility(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setVisibility(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -4395,7 +4516,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1362"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getVoiceFamily()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getVoiceFamily()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setVoiceFamily(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setVoiceFamily(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getVoiceFamily()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getVoiceFamily()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setVoiceFamily(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setVoiceFamily(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -4427,7 +4549,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1369"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getVolume()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getVolume()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setVolume(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setVolume(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getVolume()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getVolume()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setVolume(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setVolume(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -4459,7 +4582,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1376"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getWhiteSpace()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getWhiteSpace()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setWhiteSpace(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setWhiteSpace(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getWhiteSpace()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getWhiteSpace()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setWhiteSpace(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setWhiteSpace(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -4491,7 +4615,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1383"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getWidows()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getWidows()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setWidows(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setWidows(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getWidows()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getWidows()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setWidows(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setWidows(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -4523,7 +4648,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1390"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getWidth()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getWidth()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setWidth(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setWidth(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getWidth()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getWidth()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setWidth(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setWidth(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -4555,7 +4681,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1397"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getWordSpacing()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getWordSpacing()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setWordSpacing(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setWordSpacing(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getWordSpacing()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getWordSpacing()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setWordSpacing(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setWordSpacing(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -4587,7 +4714,8 @@ public CSS2Properties(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Css/CSS2Properties.cs/#L1404"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getZIndex()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getZIndex()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setZIndex(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setZIndex(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getZIndex()">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getZIndex()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setZIndex(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setZIndex(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -919,6 +919,9 @@ Class JComponent  <a class="header-action link-secondary" title="View source" hr
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -949,7 +952,10 @@ Class JComponent  <a class="header-action link-secondary" title="View source" hr
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.ToString()</span>
@@ -1105,7 +1111,7 @@ Class JComponent  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Javax_Swing_JComponent__ctor" data-uid="Javax.Swing.JComponent.#ctor">
   JComponent()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2618"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2659"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -1133,7 +1139,7 @@ public JComponent()</code></pre>
 
   <h3 id="Javax_Swing_JComponent__ctor_System_Object___" data-uid="Javax.Swing.JComponent.#ctor(System.Object[])">
   JComponent(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2623"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2664"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -1173,7 +1179,8 @@ public JComponent(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L101"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getActionMap()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getActionMap()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setActionMap(javax.swing.ActionMap)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setActionMap(javax.swing.ActionMap)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getActionMap()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getActionMap()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setActionMap(javax.swing.ActionMap)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setActionMap(javax.swing.ActionMap)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1237,7 +1244,8 @@ public JComponent(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L115"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getAutoscrolls()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getAutoscrolls()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setAutoscrolls(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setAutoscrolls(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getAutoscrolls()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getAutoscrolls()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setAutoscrolls(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setAutoscrolls(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1269,7 +1277,8 @@ public JComponent(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L122"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getBorder()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getBorder()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setBorder(javax.swing.border.Border)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setBorder(javax.swing.border.Border)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getBorder()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getBorder()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setBorder(javax.swing.border.Border)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setBorder(javax.swing.border.Border)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1298,7 +1307,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_BridgeClassName" data-uid="Javax.Swing.JComponent.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2631"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2672"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -1333,7 +1342,8 @@ public JComponent(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L129"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getComponentPopupMenu()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getComponentPopupMenu()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setComponentPopupMenu(javax.swing.JPopupMenu)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setComponentPopupMenu(javax.swing.JPopupMenu)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getComponentPopupMenu()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getComponentPopupMenu()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setComponentPopupMenu(javax.swing.JPopupMenu)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setComponentPopupMenu(javax.swing.JPopupMenu)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1365,7 +1375,8 @@ public JComponent(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L136"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getDebugGraphicsOptions()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getDebugGraphicsOptions()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setDebugGraphicsOptions(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setDebugGraphicsOptions(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getDebugGraphicsOptions()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getDebugGraphicsOptions()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setDebugGraphicsOptions(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setDebugGraphicsOptions(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1397,7 +1408,8 @@ public JComponent(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L81"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getDefaultLocale()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getDefaultLocale()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setDefaultLocale(java.util.Locale)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setDefaultLocale(java.util.Locale)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getDefaultLocale()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getDefaultLocale()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setDefaultLocale(java.util.Locale)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setDefaultLocale(java.util.Locale)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1429,7 +1441,8 @@ public JComponent(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L143"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getInheritsPopupMenu()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getInheritsPopupMenu()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setInheritsPopupMenu(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setInheritsPopupMenu(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getInheritsPopupMenu()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getInheritsPopupMenu()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setInheritsPopupMenu(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setInheritsPopupMenu(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1493,7 +1506,8 @@ public JComponent(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L157"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getInputVerifier()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getInputVerifier()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setInputVerifier(javax.swing.InputVerifier)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setInputVerifier(javax.swing.InputVerifier)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getInputVerifier()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getInputVerifier()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setInputVerifier(javax.swing.InputVerifier)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setInputVerifier(javax.swing.InputVerifier)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1522,7 +1536,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_IsBridgeAbstract" data-uid="Javax.Swing.JComponent.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2635"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2676"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -1554,7 +1568,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_IsBridgeCloseable" data-uid="Javax.Swing.JComponent.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2639"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2680"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -1586,7 +1600,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_IsBridgeInterface" data-uid="Javax.Swing.JComponent.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2643"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2684"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -1618,7 +1632,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_IsBridgeStatic" data-uid="Javax.Swing.JComponent.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2647"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2688"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -1749,7 +1763,8 @@ public JComponent(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L178"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getToolTipText()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getToolTipText()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setToolTipText(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setToolTipText(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getToolTipText()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getToolTipText()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setToolTipText(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setToolTipText(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1813,7 +1828,8 @@ public JComponent(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L192"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getTransferHandler()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getTransferHandler()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setTransferHandler(javax.swing.TransferHandler)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setTransferHandler(javax.swing.TransferHandler)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getTransferHandler()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getTransferHandler()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setTransferHandler(javax.swing.TransferHandler)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setTransferHandler(javax.swing.TransferHandler)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1941,7 +1957,8 @@ public JComponent(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L213"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getVerifyInputWhenFocusTarget()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getVerifyInputWhenFocusTarget()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setVerifyInputWhenFocusTarget(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setVerifyInputWhenFocusTarget(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getVerifyInputWhenFocusTarget()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getVerifyInputWhenFocusTarget()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setVerifyInputWhenFocusTarget(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setVerifyInputWhenFocusTarget(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2134,7 +2151,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_AddAncestorListener_Javax_Swing_Event_AncestorListener_" data-uid="Javax.Swing.JComponent.AddAncestorListener(Javax.Swing.Event.AncestorListener)">
   AddAncestorListener(AncestorListener)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L395"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L404"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#addAncestorListener(javax.swing.event.AncestorListener)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#addAncestorListener(javax.swing.event.AncestorListener)</a></p>
@@ -2167,7 +2184,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_AddVetoableChangeListener_Java_Beans_VetoableChangeListener_" data-uid="Javax.Swing.JComponent.AddVetoableChangeListener(Java.Beans.VetoableChangeListener)">
   AddVetoableChangeListener(VetoableChangeListener)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L379"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L388"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#addVetoableChangeListener(java.beans.VetoableChangeListener)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#addVetoableChangeListener(java.beans.VetoableChangeListener)</a></p>
@@ -2200,7 +2217,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_ComputeVisibleRect_Java_Awt_Rectangle_" data-uid="Javax.Swing.JComponent.ComputeVisibleRect(Java.Awt.Rectangle)">
   ComputeVisibleRect(Rectangle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L403"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L412"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#computeVisibleRect(java.awt.Rectangle)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#computeVisibleRect(java.awt.Rectangle)</a></p>
@@ -2233,7 +2250,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_CreateToolTip" data-uid="Javax.Swing.JComponent.CreateToolTip">
   CreateToolTip()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L371"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L380"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#createToolTip()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#createToolTip()</a></p>
@@ -2266,7 +2283,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_FirePropertyChange_Java_Lang_String_System_Boolean_System_Boolean_" data-uid="Javax.Swing.JComponent.FirePropertyChange(Java.Lang.String,System.Boolean,System.Boolean)">
   FirePropertyChange(String, bool, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L413"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L422"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#firePropertyChange(java.lang.String,boolean,boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#firePropertyChange(java.lang.String,boolean,boolean)</a></p>
@@ -2305,7 +2322,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_FirePropertyChange_Java_Lang_String_System_Int32_System_Int32_" data-uid="Javax.Swing.JComponent.FirePropertyChange(Java.Lang.String,System.Int32,System.Int32)">
   FirePropertyChange(String, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L423"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L432"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#firePropertyChange(java.lang.String,int,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#firePropertyChange(java.lang.String,int,int)</a></p>
@@ -2353,6 +2370,45 @@ public JComponent(params object[] args)</code></pre>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public ActionListener GetActionForKeyStroke(KeyStroke arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Swing.KeyStroke.html">KeyStroke</a></dt>
+    <dd><p><a class="xref" href="Javax.Swing.KeyStroke.html">KeyStroke</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Awt.EventNs.ActionListener.html">ActionListener</a></dt>
+    <dd><p><a class="xref" href="Java.Awt.EventNs.ActionListener.html">ActionListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Swing_JComponent_GetActionForKeyStrokeDirect_" data-uid="Javax.Swing.JComponent.GetActionForKeyStrokeDirect*"></a>
+
+  <h3 id="Javax_Swing_JComponent_GetActionForKeyStrokeDirect_Javax_Swing_KeyStroke_" data-uid="Javax.Swing.JComponent.GetActionForKeyStrokeDirect(Javax.Swing.KeyStroke)">
+  GetActionForKeyStrokeDirect(KeyStroke)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L335"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getActionForKeyStroke(javax.swing.KeyStroke)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getActionForKeyStroke(javax.swing.KeyStroke)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActionListener GetActionForKeyStrokeDirect(KeyStroke arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -2500,7 +2556,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_GetInsets_Java_Awt_Insets_" data-uid="Javax.Swing.JComponent.GetInsets(Java.Awt.Insets)">
   GetInsets(Insets)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L335"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L344"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getInsets(java.awt.Insets)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getInsets(java.awt.Insets)</a></p>
@@ -2539,7 +2595,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_GetPopupLocation_Java_Awt_EventNs_MouseEvent_" data-uid="Javax.Swing.JComponent.GetPopupLocation(Java.Awt.EventNs.MouseEvent)">
   GetPopupLocation(MouseEvent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L344"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L353"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getPopupLocation(java.awt.event.MouseEvent)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getPopupLocation(java.awt.event.MouseEvent)</a></p>
@@ -2578,7 +2634,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_GetToolTipLocation_Java_Awt_EventNs_MouseEvent_" data-uid="Javax.Swing.JComponent.GetToolTipLocation(Java.Awt.EventNs.MouseEvent)">
   GetToolTipLocation(MouseEvent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L353"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L362"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getToolTipLocation(java.awt.event.MouseEvent)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getToolTipLocation(java.awt.event.MouseEvent)</a></p>
@@ -2617,7 +2673,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_GetToolTipText_Java_Awt_EventNs_MouseEvent_" data-uid="Javax.Swing.JComponent.GetToolTipText(Java.Awt.EventNs.MouseEvent)">
   GetToolTipText(MouseEvent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L362"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L371"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getToolTipText(java.awt.event.MouseEvent)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getToolTipText(java.awt.event.MouseEvent)</a></p>
@@ -2656,7 +2712,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_GrabFocus" data-uid="Javax.Swing.JComponent.GrabFocus">
   GrabFocus()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L430"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L439"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#grabFocus()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#grabFocus()</a></p>
@@ -2854,7 +2910,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_PaintImmediately_Java_Awt_Rectangle_" data-uid="Javax.Swing.JComponent.PaintImmediately(Java.Awt.Rectangle)">
   PaintImmediately(Rectangle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L449"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L458"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#paintImmediately(java.awt.Rectangle)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#paintImmediately(java.awt.Rectangle)</a></p>
@@ -2887,7 +2943,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_PaintImmediately_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Javax.Swing.JComponent.PaintImmediately(System.Int32,System.Int32,System.Int32,System.Int32)">
   PaintImmediately(int, int, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L441"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L450"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#paintImmediately(int,int,int,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#paintImmediately(int,int,int,int)</a></p>
@@ -2965,7 +3021,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_RegisterKeyboardAction_Java_Awt_EventNs_ActionListener_Java_Lang_String_Javax_Swing_KeyStroke_System_Int32_" data-uid="Javax.Swing.JComponent.RegisterKeyboardAction(Java.Awt.EventNs.ActionListener,Java.Lang.String,Javax.Swing.KeyStroke,System.Int32)">
   RegisterKeyboardAction(ActionListener, String, KeyStroke, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L460"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L469"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#registerKeyboardAction(java.awt.event.ActionListener,java.lang.String,javax.swing.KeyStroke,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#registerKeyboardAction(java.awt.event.ActionListener,java.lang.String,javax.swing.KeyStroke,int)</a></p>
@@ -3007,7 +3063,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_RegisterKeyboardAction_Java_Awt_EventNs_ActionListener_Javax_Swing_KeyStroke_System_Int32_" data-uid="Javax.Swing.JComponent.RegisterKeyboardAction(Java.Awt.EventNs.ActionListener,Javax.Swing.KeyStroke,System.Int32)">
   RegisterKeyboardAction(ActionListener, KeyStroke, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L470"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L479"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#registerKeyboardAction(java.awt.event.ActionListener,javax.swing.KeyStroke,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#registerKeyboardAction(java.awt.event.ActionListener,javax.swing.KeyStroke,int)</a></p>
@@ -3046,7 +3102,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_RemoveAncestorListener_Javax_Swing_Event_AncestorListener_" data-uid="Javax.Swing.JComponent.RemoveAncestorListener(Javax.Swing.Event.AncestorListener)">
   RemoveAncestorListener(AncestorListener)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L478"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L487"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#removeAncestorListener(javax.swing.event.AncestorListener)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#removeAncestorListener(javax.swing.event.AncestorListener)</a></p>
@@ -3079,7 +3135,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_RemoveVetoableChangeListener_Java_Beans_VetoableChangeListener_" data-uid="Javax.Swing.JComponent.RemoveVetoableChangeListener(Java.Beans.VetoableChangeListener)">
   RemoveVetoableChangeListener(VetoableChangeListener)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L387"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L396"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#removeVetoableChangeListener(java.beans.VetoableChangeListener)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#removeVetoableChangeListener(java.beans.VetoableChangeListener)</a></p>
@@ -3112,7 +3168,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_Repaint_Java_Awt_Rectangle_" data-uid="Javax.Swing.JComponent.Repaint(Java.Awt.Rectangle)">
   Repaint(Rectangle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L486"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L495"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#repaint(java.awt.Rectangle)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#repaint(java.awt.Rectangle)</a></p>
@@ -3184,7 +3240,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_ResetKeyboardActions" data-uid="Javax.Swing.JComponent.ResetKeyboardActions">
   ResetKeyboardActions()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L493"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L502"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#resetKeyboardActions()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#resetKeyboardActions()</a></p>
@@ -3211,7 +3267,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_ScrollRectToVisible_Java_Awt_Rectangle_" data-uid="Javax.Swing.JComponent.ScrollRectToVisible(Java.Awt.Rectangle)">
   ScrollRectToVisible(Rectangle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L501"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L510"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#scrollRectToVisible(java.awt.Rectangle)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#scrollRectToVisible(java.awt.Rectangle)</a></p>
@@ -3244,7 +3300,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_SetAlignmentX_System_Single_" data-uid="Javax.Swing.JComponent.SetAlignmentX(System.Single)">
   SetAlignmentX(float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L509"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L518"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setAlignmentX(float)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setAlignmentX(float)</a></p>
@@ -3277,7 +3333,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_SetAlignmentY_System_Single_" data-uid="Javax.Swing.JComponent.SetAlignmentY(System.Single)">
   SetAlignmentY(float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L517"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L526"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setAlignmentY(float)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setAlignmentY(float)</a></p>
@@ -3310,7 +3366,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_SetDoubleBuffered_System_Boolean_" data-uid="Javax.Swing.JComponent.SetDoubleBuffered(System.Boolean)">
   SetDoubleBuffered(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L525"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L534"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setDoubleBuffered(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setDoubleBuffered(boolean)</a></p>
@@ -3379,7 +3435,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_SetOpaque_System_Boolean_" data-uid="Javax.Swing.JComponent.SetOpaque(System.Boolean)">
   SetOpaque(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L533"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L542"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setOpaque(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setOpaque(boolean)</a></p>
@@ -3412,7 +3468,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_SetRequestFocusEnabled_System_Boolean_" data-uid="Javax.Swing.JComponent.SetRequestFocusEnabled(System.Boolean)">
   SetRequestFocusEnabled(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L541"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L550"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setRequestFocusEnabled(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setRequestFocusEnabled(boolean)</a></p>
@@ -3445,7 +3501,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_UnregisterKeyboardAction_Javax_Swing_KeyStroke_" data-uid="Javax.Swing.JComponent.UnregisterKeyboardAction(Javax.Swing.KeyStroke)">
   UnregisterKeyboardAction(KeyStroke)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L549"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L558"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#unregisterKeyboardAction(javax.swing.KeyStroke)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#unregisterKeyboardAction(javax.swing.KeyStroke)</a></p>
@@ -3478,7 +3534,7 @@ public JComponent(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_JComponent_UpdateUI" data-uid="Javax.Swing.JComponent.UpdateUI">
   UpdateUI()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L556"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JComponent.cs/#L565"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#updateUI()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#updateUI()</a></p>

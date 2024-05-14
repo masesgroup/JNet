@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -96,6 +96,16 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Java.Util.Function.BiConsumerDirect.html">BiConsumerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Util.Function.BiConsumer.html">BiConsumer</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Java.Util.Function.BiConsumerDirect-2.html">BiConsumerDirect&lt;T, U&gt;</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Util.Function.BiConsumer-2.html">BiConsumer&lt;T, U&gt;</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Java.Util.Function.BiConsumer-2.html">BiConsumer&lt;T, U&gt;</a></dt>
       <dd><p>Listener for <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiConsumer.html">https://docs.oracle.com/javase/8/docs/api/java/util/function/BiConsumer.html</a>. Extends <a class="xref" href="Java.Util.Function.BiConsumer.html">BiConsumer</a></p>
 </dd>
@@ -123,6 +133,16 @@ Classes
     <dl class="jumplist">
       <dt><a class="xref" href="Java.Util.Function.BinaryOperator.html">BinaryOperator</a></dt>
       <dd><p>Listener for <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BinaryOperator.html">https://docs.oracle.com/javase/8/docs/api/java/util/function/BinaryOperator.html</a>. Extends <a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Java.Util.Function.BinaryOperatorDirect.html">BinaryOperatorDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Util.Function.BinaryOperator.html">BinaryOperator</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Java.Util.Function.BinaryOperatorDirect-1.html">BinaryOperatorDirect&lt;T&gt;</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Util.Function.BinaryOperator-1.html">BinaryOperator&lt;T&gt;</a></p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -193,6 +213,16 @@ Classes
     <dl class="jumplist">
       <dt><a class="xref" href="Java.Util.Function.Function.html">Function</a></dt>
       <dd><p>Listener for <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html">https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html</a>. Extends <a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Java.Util.Function.FunctionDirect.html">FunctionDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Util.Function.Function.html">Function</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Java.Util.Function.FunctionDirect-2.html">FunctionDirect&lt;TObject, TReturn&gt;</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Util.Function.Function-2.html">Function&lt;TObject, TReturn&gt;</a></p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -326,6 +356,16 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Java.Util.Function.PredicateDirect.html">PredicateDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Util.Function.Predicate.html">Predicate</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Java.Util.Function.PredicateDirect-1.html">PredicateDirect&lt;T&gt;</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Util.Function.Predicate-1.html">Predicate&lt;TObject&gt;</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Java.Util.Function.Predicate-1.html">Predicate&lt;TObject&gt;</a></dt>
       <dd><p>Listener for <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html">https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html</a>. Extends <a class="xref" href="Java.Util.Function.Predicate.html">Predicate</a></p>
 </dd>
@@ -333,6 +373,16 @@ Classes
     <dl class="jumplist">
       <dt><a class="xref" href="Java.Util.Function.Supplier.html">Supplier</a></dt>
       <dd><p>Listener for <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html">https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html</a>. Extends <a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Java.Util.Function.SupplierDirect.html">SupplierDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Util.Function.Supplier.html">Supplier</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Java.Util.Function.SupplierDirect-1.html">SupplierDirect&lt;TReturn&gt;</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Util.Function.Supplier-1.html">Supplier&lt;TReturn&gt;</a></p>
 </dd>
     </dl>
     <dl class="jumplist">

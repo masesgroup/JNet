@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -269,6 +269,36 @@ Class SpecialNames  <a class="header-action link-secondary" title="View source" 
 
 
 
+  <h3 id="MASES_JNetReflector_SpecialNames_DirectMethodSuffix" data-uid="MASES.JNetReflector.SpecialNames.DirectMethodSuffix">
+  DirectMethodSuffix
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/InternalConst.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string DirectMethodSuffix = &quot;Direct&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <h3 id="MASES_JNetReflector_SpecialNames_EndGenericDeclaration" data-uid="MASES.JNetReflector.SpecialNames.EndGenericDeclaration">
   EndGenericDeclaration
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/InternalConst.cs/#L86"><i class="bi bi-code-slash"></i></a>
@@ -361,7 +391,7 @@ Class SpecialNames  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="MASES_JNetReflector_SpecialNames_JVMBridgeException" data-uid="MASES.JNetReflector.SpecialNames.JVMBridgeException">
   JVMBridgeException
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/InternalConst.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/InternalConst.cs/#L108"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -781,7 +811,7 @@ Class SpecialNames  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="MASES_JNetReflector_SpecialNames_MainClassPlaceHolder" data-uid="MASES.JNetReflector.SpecialNames.MainClassPlaceHolder">
   MainClassPlaceHolder
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/InternalConst.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/InternalConst.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -871,7 +901,7 @@ Class SpecialNames  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="MASES_JNetReflector_SpecialNames_NamespaceSuffix" data-uid="MASES.JNetReflector.SpecialNames.NamespaceSuffix">
   NamespaceSuffix
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/InternalConst.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/InternalConst.cs/#L106"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -961,7 +991,7 @@ Class SpecialNames  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="MASES_JNetReflector_SpecialNames_NumberStartNames" data-uid="MASES.JNetReflector.SpecialNames.NumberStartNames">
   NumberStartNames
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/InternalConst.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/InternalConst.cs/#L224"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1021,7 +1051,7 @@ Class SpecialNames  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="MASES_JNetReflector_SpecialNames_ReservedJNetNames" data-uid="MASES.JNetReflector.SpecialNames.ReservedJNetNames">
   ReservedJNetNames
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/InternalConst.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/InternalConst.cs/#L210"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1051,7 +1081,7 @@ Class SpecialNames  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="MASES_JNetReflector_SpecialNames_ReservedLanguageNames" data-uid="MASES.JNetReflector.SpecialNames.ReservedLanguageNames">
   ReservedLanguageNames
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/InternalConst.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/InternalConst.cs/#L193"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1081,7 +1111,7 @@ Class SpecialNames  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="MASES_JNetReflector_SpecialNames_ReservedPropertyNames" data-uid="MASES.JNetReflector.SpecialNames.ReservedPropertyNames">
   ReservedPropertyNames
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/InternalConst.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/InternalConst.cs/#L182"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1111,7 +1141,7 @@ Class SpecialNames  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="MASES_JNetReflector_SpecialNames_SpecialNumberedNames" data-uid="MASES.JNetReflector.SpecialNames.SpecialNumberedNames">
   SpecialNumberedNames
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/InternalConst.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/InternalConst.cs/#L170"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1146,7 +1176,7 @@ Class SpecialNames  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="MASES_JNetReflector_SpecialNames_IsJavaLangException_System_String_" data-uid="MASES.JNetReflector.SpecialNames.IsJavaLangException(System.String)">
   IsJavaLangException(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/InternalConst.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/InternalConst.cs/#L110"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>

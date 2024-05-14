@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
     <header class="bg-body border-bottom">
@@ -90,17 +90,17 @@ If classes or methods are not available yet it is possible to use the approach s
 <h3 id="jvm-identification">JVM identification</h3>
 <p>One of the most important command-line switch is <strong>JVMPath</strong> and it is available in <a href="https://www.jcobridge.com/net-examples/command-line-options/">JCOBridge switches</a>: it can be used to set-up the location of the JVM library (jvm.dll/libjvm.so) if JCOBridge is not able to identify a suitable JRE installation.
 If a developer is using JNet within its own product it is possible to override the <strong>JVMPath</strong> property with a snippet like the following one:</p>
-<pre><code class="lang-c#">    class MyJNetCore : JNetCore
+<pre><code class="lang-c#">class MyJNetCore : JNetCore
+{
+    public override string JVMPath
     {
-        public override string JVMPath
+        get
         {
-            get
-            {
-                string pathToJVM = &quot;Set here the path to JVM library or use your own search method&quot;;
-                return pathToJVM;
-            }
+            string pathToJVM = &quot;Set here the path to JVM library or use your own search method&quot;;
+            return pathToJVM;
         }
     }
+}
 </code></pre>
 <p><strong>IMPORTANT NOTE</strong>: <code>pathToJVM</code> shall be escaped</p>
 <ol>

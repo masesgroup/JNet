@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -772,6 +772,9 @@ Class Scrollbar  <a class="header-action link-secondary" title="View source" hre
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -802,7 +805,10 @@ Class Scrollbar  <a class="header-action link-secondary" title="View source" hre
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.Dispose()</span>
@@ -1147,7 +1153,8 @@ Class Scrollbar  <a class="header-action link-secondary" title="View source" hre
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Scrollbar.cs/#L100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getBlockIncrement()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getBlockIncrement()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setBlockIncrement(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setBlockIncrement(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getBlockIncrement()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getBlockIncrement()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setBlockIncrement(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setBlockIncrement(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1371,7 +1378,8 @@ Class Scrollbar  <a class="header-action link-secondary" title="View source" hre
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Scrollbar.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getMaximum()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getMaximum()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setMaximum(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setMaximum(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getMaximum()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getMaximum()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setMaximum(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setMaximum(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1403,7 +1411,8 @@ Class Scrollbar  <a class="header-action link-secondary" title="View source" hre
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Scrollbar.cs/#L114"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getMinimum()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getMinimum()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setMinimum(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setMinimum(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getMinimum()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getMinimum()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setMinimum(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setMinimum(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1435,7 +1444,8 @@ Class Scrollbar  <a class="header-action link-secondary" title="View source" hre
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Scrollbar.cs/#L121"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getOrientation()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getOrientation()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setOrientation(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setOrientation(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getOrientation()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getOrientation()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setOrientation(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setOrientation(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1467,7 +1477,8 @@ Class Scrollbar  <a class="header-action link-secondary" title="View source" hre
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Scrollbar.cs/#L128"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getUnitIncrement()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getUnitIncrement()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setUnitIncrement(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setUnitIncrement(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getUnitIncrement()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getUnitIncrement()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setUnitIncrement(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setUnitIncrement(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1531,7 +1542,8 @@ Class Scrollbar  <a class="header-action link-secondary" title="View source" hre
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Scrollbar.cs/#L135"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getValue()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getValue()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setValue(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setValue(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getValue()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getValue()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setValue(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setValue(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1563,7 +1575,8 @@ Class Scrollbar  <a class="header-action link-secondary" title="View source" hre
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Scrollbar.cs/#L142"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getValueIsAdjusting()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getValueIsAdjusting()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setValueIsAdjusting(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setValueIsAdjusting(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getValueIsAdjusting()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getValueIsAdjusting()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setValueIsAdjusting(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setValueIsAdjusting(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1595,7 +1608,8 @@ Class Scrollbar  <a class="header-action link-secondary" title="View source" hre
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Scrollbar.cs/#L149"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getVisibleAmount()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getVisibleAmount()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setVisibleAmount(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setVisibleAmount(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getVisibleAmount()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#getVisibleAmount()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setVisibleAmount(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#setVisibleAmount(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

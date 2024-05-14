@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -306,6 +306,9 @@ Class XMLCryptoContext  <a class="header-action link-secondary" title="View sour
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -336,7 +339,10 @@ Class XMLCryptoContext  <a class="header-action link-secondary" title="View sour
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.Dispose()</span>
@@ -563,7 +569,8 @@ public XMLCryptoContext(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Crypto/XMLCryptoContext.cs/#L125"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#getBaseURI()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#getBaseURI()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#setBaseURI(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#setBaseURI(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#getBaseURI()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#getBaseURI()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#setBaseURI(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#setBaseURI(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -627,7 +634,8 @@ public XMLCryptoContext(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Crypto/XMLCryptoContext.cs/#L132"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#getDefaultNamespacePrefix()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#getDefaultNamespacePrefix()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#setDefaultNamespacePrefix(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#setDefaultNamespacePrefix(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#getDefaultNamespacePrefix()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#getDefaultNamespacePrefix()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#setDefaultNamespacePrefix(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#setDefaultNamespacePrefix(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -787,7 +795,8 @@ public XMLCryptoContext(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Crypto/XMLCryptoContext.cs/#L139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#getKeySelector()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#getKeySelector()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#setKeySelector(javax.xml.crypto.KeySelector)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#setKeySelector(javax.xml.crypto.KeySelector)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#getKeySelector()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#getKeySelector()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#setKeySelector(javax.xml.crypto.KeySelector)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#setKeySelector(javax.xml.crypto.KeySelector)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -819,7 +828,8 @@ public XMLCryptoContext(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Crypto/XMLCryptoContext.cs/#L146"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#getURIDereferencer()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#getURIDereferencer()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#setURIDereferencer(javax.xml.crypto.URIDereferencer)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#setURIDereferencer(javax.xml.crypto.URIDereferencer)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#getURIDereferencer()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#getURIDereferencer()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#setURIDereferencer(javax.xml.crypto.URIDereferencer)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#setURIDereferencer(javax.xml.crypto.URIDereferencer)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

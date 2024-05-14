@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -85,7 +85,7 @@
 
 
   <h1 id="Java_Awt_EventNs_AdjustmentListener" data-uid="Java.Awt.EventNs.AdjustmentListener" class="text-break">
-Class AdjustmentListener  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/AllPackageClasses.cs/#L143"><i class="bi bi-code-slash"></i></a>
+Class AdjustmentListener  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/AllPackageClasses.cs/#L184"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -131,6 +131,12 @@ Class AdjustmentListener  <a class="header-action link-secondary" title="View so
     </dd>
   </dl>
 
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Java.Awt.EventNs.AdjustmentListenerDirect.html">AdjustmentListenerDirect</a></div>
+    </dd>
+  </dl>
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
@@ -322,6 +328,9 @@ Class AdjustmentListener  <a class="header-action link-secondary" title="View so
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -352,7 +361,10 @@ Class AdjustmentListener  <a class="header-action link-secondary" title="View so
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.ToString()</span>
@@ -514,7 +526,7 @@ Class AdjustmentListener  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Awt_EventNs_AdjustmentListener__ctor" data-uid="Java.Awt.EventNs.AdjustmentListener.#ctor">
   AdjustmentListener()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/AllPackageClasses.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/AllPackageClasses.cs/#L189"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -545,7 +557,7 @@ Class AdjustmentListener  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Awt_EventNs_AdjustmentListener_BridgeClassName" data-uid="Java.Awt.EventNs.AdjustmentListener.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/AllPackageClasses.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/AllPackageClasses.cs/#L198"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm</a></p>
@@ -563,6 +575,38 @@ Class AdjustmentListener  <a class="header-action link-secondary" title="View so
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_EventNs_AdjustmentListener_InitHandlers_" data-uid="Java.Awt.EventNs.AdjustmentListener.InitHandlers*"></a>
+
+  <h3 id="Java_Awt_EventNs_AdjustmentListener_InitHandlers" data-uid="Java.Awt.EventNs.AdjustmentListener.InitHandlers">
+  InitHandlers
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/AllPackageClasses.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enable/disable handlers initialization, default is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool InitHandlers { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
 
@@ -676,7 +720,7 @@ Class AdjustmentListener  <a class="header-action link-secondary" title="View so
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/AllPackageClasses.cs/#L143" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/AllPackageClasses.cs/#L184" class="edit-link">Edit this page</a>
         </div>
 
 

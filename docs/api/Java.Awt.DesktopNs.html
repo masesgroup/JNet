@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -116,6 +116,11 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.DesktopNs.AppForegroundListenerDirect.html">AppForegroundListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.DesktopNs.AppForegroundListener.html">AppForegroundListener</a> or its generic type if there is one</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Java.Awt.DesktopNs.AppHiddenEvent.html">AppHiddenEvent</a></dt>
       <dd><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppHiddenEvent.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppHiddenEvent.html</a></p>
 </dd>
@@ -126,6 +131,11 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.DesktopNs.AppHiddenListenerDirect.html">AppHiddenListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.DesktopNs.AppHiddenListener.html">AppHiddenListener</a> or its generic type if there is one</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Java.Awt.DesktopNs.AppReopenedEvent.html">AppReopenedEvent</a></dt>
       <dd><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppReopenedEvent.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppReopenedEvent.html</a></p>
 </dd>
@@ -133,6 +143,11 @@ Classes
     <dl class="jumplist">
       <dt><a class="xref" href="Java.Awt.DesktopNs.AppReopenedListener.html">AppReopenedListener</a></dt>
       <dd><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppReopenedListener.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppReopenedListener.html</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.DesktopNs.AppReopenedListenerDirect.html">AppReopenedListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.DesktopNs.AppReopenedListener.html">AppReopenedListener</a> or its generic type if there is one</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -211,8 +226,18 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.DesktopNs.ScreenSleepListenerDirect.html">ScreenSleepListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.DesktopNs.ScreenSleepListener.html">ScreenSleepListener</a> or its generic type if there is one</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Java.Awt.DesktopNs.SystemEventListener.html">SystemEventListener</a></dt>
       <dd><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/SystemEventListener.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/SystemEventListener.html</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.DesktopNs.SystemEventListenerDirect.html">SystemEventListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.DesktopNs.SystemEventListener.html">SystemEventListener</a> or its generic type if there is one</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -223,6 +248,11 @@ Classes
     <dl class="jumplist">
       <dt><a class="xref" href="Java.Awt.DesktopNs.SystemSleepListener.html">SystemSleepListener</a></dt>
       <dd><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/SystemSleepListener.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/SystemSleepListener.html</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.DesktopNs.SystemSleepListenerDirect.html">SystemSleepListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.DesktopNs.SystemSleepListener.html">SystemSleepListener</a> or its generic type if there is one</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -238,6 +268,11 @@ Classes
     <dl class="jumplist">
       <dt><a class="xref" href="Java.Awt.DesktopNs.UserSessionListener.html">UserSessionListener</a></dt>
       <dd><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionListener.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionListener.html</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Java.Awt.DesktopNs.UserSessionListenerDirect.html">UserSessionListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Awt.DesktopNs.UserSessionListener.html">UserSessionListener</a> or its generic type if there is one</p>
 </dd>
     </dl>
     <h3 id="interfaces">

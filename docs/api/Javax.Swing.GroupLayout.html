@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -301,6 +301,9 @@ Class GroupLayout  <a class="header-action link-secondary" title="View source" h
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -331,7 +334,10 @@ Class GroupLayout  <a class="header-action link-secondary" title="View source" h
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.Dispose()</span>
@@ -490,7 +496,7 @@ Class GroupLayout  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Javax_Swing_GroupLayout__ctor" data-uid="Javax.Swing.GroupLayout.#ctor">
   GroupLayout()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L1859"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L1900"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -550,7 +556,7 @@ Class GroupLayout  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Javax_Swing_GroupLayout__ctor_System_Object___" data-uid="Javax.Swing.GroupLayout.#ctor(System.Object[])">
   GroupLayout(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L1863"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L1904"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -589,7 +595,8 @@ Class GroupLayout  <a class="header-action link-secondary" title="View source" h
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/GroupLayout.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#getAutoCreateContainerGaps()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#getAutoCreateContainerGaps()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#setAutoCreateContainerGaps(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#setAutoCreateContainerGaps(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#getAutoCreateContainerGaps()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#getAutoCreateContainerGaps()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#setAutoCreateContainerGaps(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#setAutoCreateContainerGaps(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -621,7 +628,8 @@ Class GroupLayout  <a class="header-action link-secondary" title="View source" h
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/GroupLayout.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#getAutoCreateGaps()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#getAutoCreateGaps()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#setAutoCreateGaps(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#setAutoCreateGaps(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#getAutoCreateGaps()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#getAutoCreateGaps()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#setAutoCreateGaps(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#setAutoCreateGaps(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -650,7 +658,7 @@ Class GroupLayout  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Javax_Swing_GroupLayout_BridgeClassName" data-uid="Javax.Swing.GroupLayout.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L1870"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L1911"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -717,7 +725,8 @@ Class GroupLayout  <a class="header-action link-secondary" title="View source" h
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/GroupLayout.cs/#L85"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#getHonorsVisibility()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#getHonorsVisibility()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#setHonorsVisibility(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#setHonorsVisibility(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#getHonorsVisibility()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#getHonorsVisibility()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#setHonorsVisibility(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#setHonorsVisibility(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -746,7 +755,7 @@ Class GroupLayout  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Javax_Swing_GroupLayout_IsBridgeAbstract" data-uid="Javax.Swing.GroupLayout.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L1874"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L1915"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -778,7 +787,7 @@ Class GroupLayout  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Javax_Swing_GroupLayout_IsBridgeCloseable" data-uid="Javax.Swing.GroupLayout.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L1878"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L1919"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -810,7 +819,7 @@ Class GroupLayout  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Javax_Swing_GroupLayout_IsBridgeInterface" data-uid="Javax.Swing.GroupLayout.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L1882"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L1923"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -842,7 +851,7 @@ Class GroupLayout  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Javax_Swing_GroupLayout_IsBridgeStatic" data-uid="Javax.Swing.GroupLayout.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L1886"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L1927"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -877,7 +886,8 @@ Class GroupLayout  <a class="header-action link-secondary" title="View source" h
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/GroupLayout.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#getLayoutStyle()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#getLayoutStyle()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#setLayoutStyle(javax.swing.LayoutStyle)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#setLayoutStyle(javax.swing.LayoutStyle)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#getLayoutStyle()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#getLayoutStyle()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#setLayoutStyle(javax.swing.LayoutStyle)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#setLayoutStyle(javax.swing.LayoutStyle)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

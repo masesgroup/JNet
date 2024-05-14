@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -85,7 +85,7 @@
 
 
   <h1 id="Java_Util_Function_BiConsumer_2" data-uid="Java.Util.Function.BiConsumer`2" class="text-break">
-Class BiConsumer&lt;T, U&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/BiConsumer.cs/#L55"><i class="bi bi-code-slash"></i></a>
+Class BiConsumer&lt;T, U&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/BiConsumer.cs/#L95"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -139,10 +139,19 @@ Class BiConsumer&lt;T, U&gt;  <a class="header-action link-secondary" title="Vie
     </dd>
   </dl>
 
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Java.Util.Function.BiConsumerDirect-2.html">BiConsumerDirect&lt;T, U&gt;</a></div>
+    </dd>
+  </dl>
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="Java.Util.Function.BiConsumer.html#Java_Util_Function_BiConsumer_InitHandlers">BiConsumer.InitHandlers</a>
+    </div>
     <div>
       <a class="xref" href="Java.Util.Function.BiConsumer.html#Java_Util_Function_BiConsumer_BridgeClassName">BiConsumer.BridgeClassName</a>
     </div>
@@ -333,6 +342,9 @@ Class BiConsumer&lt;T, U&gt;  <a class="header-action link-secondary" title="Vie
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -363,7 +375,10 @@ Class BiConsumer&lt;T, U&gt;  <a class="header-action link-secondary" title="Vie
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.ToString()</span>
@@ -522,7 +537,7 @@ Class BiConsumer&lt;T, U&gt;  <a class="header-action link-secondary" title="Vie
 
   <h3 id="Java_Util_Function_BiConsumer_2__ctor" data-uid="Java.Util.Function.BiConsumer`2.#ctor">
   BiConsumer()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/BiConsumer.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/BiConsumer.cs/#L104"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initialize a new instance of <a class="xref" href="Java.Util.Function.BiConsumer-2.html">BiConsumer&lt;T, U&gt;</a></p>
@@ -553,7 +568,7 @@ Class BiConsumer&lt;T, U&gt;  <a class="header-action link-secondary" title="Vie
 
   <h3 id="Java_Util_Function_BiConsumer_2_OnAccept" data-uid="Java.Util.Function.BiConsumer`2.OnAccept">
   OnAccept
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/BiConsumer.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/BiConsumer.cs/#L100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action&lt;T1, T2&gt;</a> to be executed</p>
@@ -589,7 +604,7 @@ Class BiConsumer&lt;T, U&gt;  <a class="header-action link-secondary" title="Vie
 
   <h3 id="Java_Util_Function_BiConsumer_2_Accept__0__1_" data-uid="Java.Util.Function.BiConsumer`2.Accept(`0,`1)">
   Accept(T, U)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/BiConsumer.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/BiConsumer.cs/#L121"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Executes the Consumer action in the CLR</p>
@@ -625,7 +640,7 @@ Class BiConsumer&lt;T, U&gt;  <a class="header-action link-secondary" title="Vie
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/BiConsumer.cs/#L55" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/BiConsumer.cs/#L95" class="edit-link">Edit this page</a>
         </div>
 
 

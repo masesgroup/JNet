@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -297,6 +297,9 @@ Class DecimalFormatSymbols  <a class="header-action link-secondary" title="View 
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -327,7 +330,10 @@ Class DecimalFormatSymbols  <a class="header-action link-secondary" title="View 
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.Dispose()</span>
@@ -649,7 +655,8 @@ Class DecimalFormatSymbols  <a class="header-action link-secondary" title="View 
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/DecimalFormatSymbols.cs/#L90"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getCurrency()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getCurrency()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setCurrency(java.util.Currency)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setCurrency(java.util.Currency)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getCurrency()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getCurrency()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setCurrency(java.util.Currency)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setCurrency(java.util.Currency)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -681,7 +688,8 @@ Class DecimalFormatSymbols  <a class="header-action link-secondary" title="View 
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/DecimalFormatSymbols.cs/#L97"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getCurrencySymbol()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getCurrencySymbol()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setCurrencySymbol(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setCurrencySymbol(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getCurrencySymbol()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getCurrencySymbol()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setCurrencySymbol(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setCurrencySymbol(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -713,7 +721,8 @@ Class DecimalFormatSymbols  <a class="header-action link-secondary" title="View 
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/DecimalFormatSymbols.cs/#L104"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getDecimalSeparator()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getDecimalSeparator()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setDecimalSeparator(char)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setDecimalSeparator(char)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getDecimalSeparator()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getDecimalSeparator()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setDecimalSeparator(char)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setDecimalSeparator(char)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -745,7 +754,8 @@ Class DecimalFormatSymbols  <a class="header-action link-secondary" title="View 
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/DecimalFormatSymbols.cs/#L111"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getDigit()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getDigit()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setDigit(char)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setDigit(char)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getDigit()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getDigit()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setDigit(char)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setDigit(char)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -777,7 +787,8 @@ Class DecimalFormatSymbols  <a class="header-action link-secondary" title="View 
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/DecimalFormatSymbols.cs/#L118"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getExponentSeparator()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getExponentSeparator()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setExponentSeparator(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setExponentSeparator(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getExponentSeparator()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getExponentSeparator()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setExponentSeparator(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setExponentSeparator(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -809,7 +820,8 @@ Class DecimalFormatSymbols  <a class="header-action link-secondary" title="View 
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/DecimalFormatSymbols.cs/#L125"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getGroupingSeparator()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getGroupingSeparator()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setGroupingSeparator(char)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setGroupingSeparator(char)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getGroupingSeparator()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getGroupingSeparator()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setGroupingSeparator(char)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setGroupingSeparator(char)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -841,7 +853,8 @@ Class DecimalFormatSymbols  <a class="header-action link-secondary" title="View 
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/DecimalFormatSymbols.cs/#L132"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getInfinity()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getInfinity()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setInfinity(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setInfinity(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getInfinity()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getInfinity()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setInfinity(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setInfinity(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -905,7 +918,8 @@ Class DecimalFormatSymbols  <a class="header-action link-secondary" title="View 
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/DecimalFormatSymbols.cs/#L139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getInternationalCurrencySymbol()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getInternationalCurrencySymbol()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setInternationalCurrencySymbol(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setInternationalCurrencySymbol(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getInternationalCurrencySymbol()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getInternationalCurrencySymbol()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setInternationalCurrencySymbol(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setInternationalCurrencySymbol(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1065,7 +1079,8 @@ Class DecimalFormatSymbols  <a class="header-action link-secondary" title="View 
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/DecimalFormatSymbols.cs/#L146"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getMinusSign()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getMinusSign()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setMinusSign(char)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setMinusSign(char)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getMinusSign()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getMinusSign()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setMinusSign(char)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setMinusSign(char)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1097,7 +1112,8 @@ Class DecimalFormatSymbols  <a class="header-action link-secondary" title="View 
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/DecimalFormatSymbols.cs/#L153"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getMonetaryDecimalSeparator()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getMonetaryDecimalSeparator()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setMonetaryDecimalSeparator(char)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setMonetaryDecimalSeparator(char)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getMonetaryDecimalSeparator()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getMonetaryDecimalSeparator()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setMonetaryDecimalSeparator(char)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setMonetaryDecimalSeparator(char)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1129,7 +1145,8 @@ Class DecimalFormatSymbols  <a class="header-action link-secondary" title="View 
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/DecimalFormatSymbols.cs/#L160"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getNaN()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getNaN()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setNaN(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setNaN(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getNaN()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getNaN()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setNaN(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setNaN(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1161,7 +1178,8 @@ Class DecimalFormatSymbols  <a class="header-action link-secondary" title="View 
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/DecimalFormatSymbols.cs/#L167"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getPatternSeparator()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getPatternSeparator()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setPatternSeparator(char)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setPatternSeparator(char)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getPatternSeparator()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getPatternSeparator()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setPatternSeparator(char)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setPatternSeparator(char)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1193,7 +1211,8 @@ Class DecimalFormatSymbols  <a class="header-action link-secondary" title="View 
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/DecimalFormatSymbols.cs/#L181"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getPerMill()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getPerMill()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setPerMill(char)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setPerMill(char)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getPerMill()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getPerMill()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setPerMill(char)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setPerMill(char)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1225,7 +1244,8 @@ Class DecimalFormatSymbols  <a class="header-action link-secondary" title="View 
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/DecimalFormatSymbols.cs/#L174"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getPercent()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getPercent()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setPercent(char)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setPercent(char)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getPercent()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getPercent()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setPercent(char)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setPercent(char)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1257,7 +1277,8 @@ Class DecimalFormatSymbols  <a class="header-action link-secondary" title="View 
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/DecimalFormatSymbols.cs/#L188"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getZeroDigit()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getZeroDigit()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setZeroDigit(char)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setZeroDigit(char)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getZeroDigit()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getZeroDigit()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setZeroDigit(char)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setZeroDigit(char)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
