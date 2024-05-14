@@ -45,35 +45,17 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
         Java.Util.Function.DoublePredicate And(Java.Util.Function.DoublePredicate arg0);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#and(java.util.function.DoublePredicate)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
-        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
-        Java.Util.Function.DoublePredicate AndDirect(Java.Util.Function.DoublePredicate arg0);
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#negate()"/>
         /// </summary>
 
         /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
         Java.Util.Function.DoublePredicate Negate();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#negate()"/>
-        /// </summary>
-
-        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
-        Java.Util.Function.DoublePredicate NegateDirect();
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#or(java.util.function.DoublePredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
         /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
         Java.Util.Function.DoublePredicate Or(Java.Util.Function.DoublePredicate arg0);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#or(java.util.function.DoublePredicate)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
-        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
-        Java.Util.Function.DoublePredicate OrDirect(Java.Util.Function.DoublePredicate arg0);
 
         #endregion
 
@@ -173,30 +155,6 @@ namespace Java.Util.Function
         {
             return AndDefault(arg0);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#and(java.util.function.DoublePredicate)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnAnd"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.DoublePredicate, Java.Util.Function.DoublePredicate> OnAnd { get; set; } = null;
-
-        void AndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.DoublePredicate>> data)
-        {
-            var methodToExecute = (OnAnd != null) ? OnAnd : AndDirect;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#and(java.util.function.DoublePredicate)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
-        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndDefault"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.DoublePredicate AndDirect(Java.Util.Function.DoublePredicate arg0)
-        {
-            return IExecuteWithSignature<Java.Util.Function.DoublePredicateDirect, Java.Util.Function.DoublePredicate>("andDefault", "(Ljava/util/function/DoublePredicate;)Ljava/util/function/DoublePredicate;", arg0);
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#negate()"/>
         /// </summary>
@@ -231,30 +189,6 @@ namespace Java.Util.Function
         {
             return NegateDefault();
         }
-
-        /// <summary>
-        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#negate()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnNegate"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.DoublePredicate> OnNegate { get; set; } = null;
-
-        void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnNegate != null) ? OnNegate : NegateDirect;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#negate()"/>
-        /// </summary>
-
-        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="NegateDefault"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.DoublePredicate NegateDirect()
-        {
-            return IExecuteWithSignature<Java.Util.Function.DoublePredicateDirect, Java.Util.Function.DoublePredicate>("negateDefault", "()Ljava/util/function/DoublePredicate;");
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#or(java.util.function.DoublePredicate)"/>
         /// </summary>
@@ -288,30 +222,6 @@ namespace Java.Util.Function
         public virtual Java.Util.Function.DoublePredicate Or(Java.Util.Function.DoublePredicate arg0)
         {
             return OrDefault(arg0);
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#or(java.util.function.DoublePredicate)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOr"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.DoublePredicate, Java.Util.Function.DoublePredicate> OnOr { get; set; } = null;
-
-        void OrEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.DoublePredicate>> data)
-        {
-            var methodToExecute = (OnOr != null) ? OnOr : OrDirect;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#or(java.util.function.DoublePredicate)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
-        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OrDefault"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.DoublePredicate OrDirect(Java.Util.Function.DoublePredicate arg0)
-        {
-            return IExecuteWithSignature<Java.Util.Function.DoublePredicateDirect, Java.Util.Function.DoublePredicate>("orDefault", "(Ljava/util/function/DoublePredicate;)Ljava/util/function/DoublePredicate;", arg0);
         }
 
         #endregion

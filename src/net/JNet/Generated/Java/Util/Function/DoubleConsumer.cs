@@ -43,12 +43,6 @@ namespace Java.Util.Function
         /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
         /// <returns><see cref="Java.Util.Function.DoubleConsumer"/></returns>
         Java.Util.Function.DoubleConsumer AndThen(Java.Util.Function.DoubleConsumer arg0);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleConsumer.html#andThen(java.util.function.DoubleConsumer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
-        /// <returns><see cref="Java.Util.Function.DoubleConsumer"/></returns>
-        Java.Util.Function.DoubleConsumer AndThenDirect(Java.Util.Function.DoubleConsumer arg0);
 
         #endregion
 
@@ -143,30 +137,6 @@ namespace Java.Util.Function
         public virtual Java.Util.Function.DoubleConsumer AndThen(Java.Util.Function.DoubleConsumer arg0)
         {
             return AndThenDefault(arg0);
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleConsumer.html#andThen(java.util.function.DoubleConsumer)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.DoubleConsumer, Java.Util.Function.DoubleConsumer> OnAndThen { get; set; } = null;
-
-        void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.DoubleConsumer>> data)
-        {
-            var methodToExecute = (OnAndThen != null) ? OnAndThen : AndThenDirect;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleConsumer.html#andThen(java.util.function.DoubleConsumer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
-        /// <returns><see cref="Java.Util.Function.DoubleConsumer"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThenDefault"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.DoubleConsumer AndThenDirect(Java.Util.Function.DoubleConsumer arg0)
-        {
-            return IExecuteWithSignature<Java.Util.Function.DoubleConsumerDirect, Java.Util.Function.DoubleConsumer>("andThenDefault", "(Ljava/util/function/DoubleConsumer;)Ljava/util/function/DoubleConsumer;", arg0);
         }
 
         #endregion

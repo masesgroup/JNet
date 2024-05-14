@@ -45,35 +45,17 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
         Java.Util.Function.IntPredicate And(Java.Util.Function.IntPredicate arg0);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#and(java.util.function.IntPredicate)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
-        /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
-        Java.Util.Function.IntPredicate AndDirect(Java.Util.Function.IntPredicate arg0);
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#negate()"/>
         /// </summary>
 
         /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
         Java.Util.Function.IntPredicate Negate();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#negate()"/>
-        /// </summary>
-
-        /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
-        Java.Util.Function.IntPredicate NegateDirect();
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#or(java.util.function.IntPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
         Java.Util.Function.IntPredicate Or(Java.Util.Function.IntPredicate arg0);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#or(java.util.function.IntPredicate)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
-        /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
-        Java.Util.Function.IntPredicate OrDirect(Java.Util.Function.IntPredicate arg0);
 
         #endregion
 
@@ -173,30 +155,6 @@ namespace Java.Util.Function
         {
             return AndDefault(arg0);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#and(java.util.function.IntPredicate)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnAnd"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.IntPredicate, Java.Util.Function.IntPredicate> OnAnd { get; set; } = null;
-
-        void AndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.IntPredicate>> data)
-        {
-            var methodToExecute = (OnAnd != null) ? OnAnd : AndDirect;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#and(java.util.function.IntPredicate)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
-        /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndDefault"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.IntPredicate AndDirect(Java.Util.Function.IntPredicate arg0)
-        {
-            return IExecuteWithSignature<Java.Util.Function.IntPredicateDirect, Java.Util.Function.IntPredicate>("andDefault", "(Ljava/util/function/IntPredicate;)Ljava/util/function/IntPredicate;", arg0);
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#negate()"/>
         /// </summary>
@@ -231,30 +189,6 @@ namespace Java.Util.Function
         {
             return NegateDefault();
         }
-
-        /// <summary>
-        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#negate()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnNegate"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.IntPredicate> OnNegate { get; set; } = null;
-
-        void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnNegate != null) ? OnNegate : NegateDirect;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#negate()"/>
-        /// </summary>
-
-        /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="NegateDefault"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.IntPredicate NegateDirect()
-        {
-            return IExecuteWithSignature<Java.Util.Function.IntPredicateDirect, Java.Util.Function.IntPredicate>("negateDefault", "()Ljava/util/function/IntPredicate;");
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#or(java.util.function.IntPredicate)"/>
         /// </summary>
@@ -288,30 +222,6 @@ namespace Java.Util.Function
         public virtual Java.Util.Function.IntPredicate Or(Java.Util.Function.IntPredicate arg0)
         {
             return OrDefault(arg0);
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#or(java.util.function.IntPredicate)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOr"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.IntPredicate, Java.Util.Function.IntPredicate> OnOr { get; set; } = null;
-
-        void OrEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.IntPredicate>> data)
-        {
-            var methodToExecute = (OnOr != null) ? OnOr : OrDirect;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#or(java.util.function.IntPredicate)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
-        /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OrDefault"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.IntPredicate OrDirect(Java.Util.Function.IntPredicate arg0)
-        {
-            return IExecuteWithSignature<Java.Util.Function.IntPredicateDirect, Java.Util.Function.IntPredicate>("orDefault", "(Ljava/util/function/IntPredicate;)Ljava/util/function/IntPredicate;", arg0);
         }
 
         #endregion
