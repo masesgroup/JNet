@@ -2313,6 +2313,12 @@ namespace MASES.JNetReflector
             return entry.ReturnType.IsJVMException();
         }
 
+        public static bool IsReturnTypeAListener(this Method entry)
+        {
+            if (entry == null) throw new ArgumentNullException(nameof(entry));
+            return entry.ReturnType.IsJVMListenerClass();
+        }
+
         public static string ReturnType(this Method entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClauses, string prefix, bool usedInGenerics, bool camel)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
