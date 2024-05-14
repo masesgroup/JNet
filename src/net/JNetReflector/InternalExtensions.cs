@@ -80,11 +80,11 @@ namespace MASES.JNetReflector
                 {
                     if (classDefinition.JVMNestingLevels() == nestingLevel) // same level of requester
                     {
-                        collpase = entry == classDefinition.JVMNestedClassName(nestingLevel, null, false);
+                        collpase = entry == classDefinition.JVMNestedClassName(nestingLevel, null, false, false);
                     }
                     else if (classDefinition.JVMNestingLevels() > nestingLevel) // more levels then requester
                     {
-                        collpase = entry == classDefinition.JVMNestedClassName(nestingLevel + 1, null, false);
+                        collpase = entry == classDefinition.JVMNestedClassName(nestingLevel + 1, null, false, false);
                     }
                 }
                 else
@@ -1081,7 +1081,7 @@ namespace MASES.JNetReflector
 
         public static string JVMClassName(this Class entry, IList<KeyValuePair<string, string>> genClause, bool usedInGenerics, bool isDirect)
         {
-            if (entry.IsJVMNestedClass()) return entry.JVMNestedClassName(entry.JVMNestingLevels(), genClause, usedInGenerics);
+            if (entry.IsJVMNestedClass()) return entry.JVMNestedClassName(entry.JVMNestingLevels(), genClause, usedInGenerics, isDirect);
             var cName = entry.SimpleName;
             cName = cName.Contains(SpecialNames.NestedClassSeparator) ? cName.Substring(0, cName.LastIndexOf(SpecialNames.NestedClassSeparator)) : cName;
             cName = cName.ConvertClassesInConflict();
@@ -1096,7 +1096,7 @@ namespace MASES.JNetReflector
             return cName.Contains(SpecialNames.NestedClassSeparator) ? cName.Substring(0, cName.IndexOf(SpecialNames.NestedClassSeparator)) : cName;
         }
 
-        static string JVMNestedClassName(this Class entry, int nestingLevel, IList<KeyValuePair<string, string>> genClause, bool usedInGenerics, bool onlyName = false)
+        static string JVMNestedClassName(this Class entry, int nestingLevel, IList<KeyValuePair<string, string>> genClause, bool usedInGenerics, bool isDirect, bool onlyName = false)
         {
             var cName = entry.TypeName;
             if (cName.Contains(SpecialNames.NestedClassSeparator))
@@ -1105,6 +1105,7 @@ namespace MASES.JNetReflector
                 cName = names[nestingLevel];
             }
             cName = cName.ConvertClassesInConflict();
+            if (isDirect) cName += SpecialNames.DirectMethodSuffix;
             if (!onlyName) cName = entry.ApplyGenerics(genClause, usedInGenerics, cName);
             return cName;
         }
@@ -1532,7 +1533,7 @@ namespace MASES.JNetReflector
                 return true;
             }
 
-            string className = entry.JVMNestedClassName(entry.JVMNestingLevels(), null, true);
+            string className = entry.JVMNestedClassName(entry.JVMNestingLevels(), null, true, false);
 
             if (entry.IsJVMNestedClass()
                 && SpecialNames.SpecialNumberedNames.Any((o) => className.StartsWith(o))) return true;

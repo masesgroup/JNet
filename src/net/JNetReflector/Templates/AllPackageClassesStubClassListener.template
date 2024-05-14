@@ -24,18 +24,17 @@ ALLPACKAGE_CLASSES_STUB_LISTENER_CLASS_PLACEHOLDER
 /// </summary>
 public partial class ALLPACKAGE_CLASSES_STUB_CLASS_DIRECT_PLACEHOLDER : ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER
 {
-    const string _bridgeClassName = "ALLPACKAGE_CLASSES_STUB_JAVACLASS_DIRECT_PLACEHOLDER";
     /// <summary>
     /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
     /// </summary>
     public override bool AutoInit => false;
 
     /// <inheritdoc cref="ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER.InitHandlers"/>
-    public override bool InitHandlers => false;
+    protected override bool InitHandlers => false;
 
     /// <summary>
     /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
     /// </summary>
-    public override string BridgeClassName => _bridgeClassName;
+    public override string BridgeClassName => "ALLPACKAGE_CLASSES_STUB_JAVACLASS_DIRECT_PLACEHOLDER";
 }
 #endregion
