@@ -169,7 +169,11 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public HandshakeCompletedListener() { InitializeHandlers(); }
+        public HandshakeCompletedListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -179,6 +183,27 @@ namespace Javax.Net.Ssl
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region HandshakeCompletedListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="HandshakeCompletedListener"/>
+    /// </summary>
+    public partial class HandshakeCompletedListenerDirect : HandshakeCompletedListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="HandshakeCompletedListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "javax.net.ssl.HandshakeCompletedListener";
     }
     #endregion
 
@@ -1268,7 +1293,11 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SSLSessionBindingListener() { InitializeHandlers(); }
+        public SSLSessionBindingListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1278,6 +1307,27 @@ namespace Javax.Net.Ssl
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region SSLSessionBindingListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="SSLSessionBindingListener"/>
+    /// </summary>
+    public partial class SSLSessionBindingListenerDirect : SSLSessionBindingListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="SSLSessionBindingListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "javax.net.ssl.SSLSessionBindingListener";
     }
     #endregion
 

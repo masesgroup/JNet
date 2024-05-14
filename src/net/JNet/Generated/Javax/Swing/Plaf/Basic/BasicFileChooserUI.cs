@@ -149,6 +149,15 @@ namespace Javax.Swing.Plaf.Basic
             return IExecuteWithSignature<Java.Beans.PropertyChangeListener>("createPropertyChangeListener", "(Ljavax/swing/JFileChooser;)Ljava/beans/PropertyChangeListener;", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#createPropertyChangeListener(javax.swing.JFileChooser)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
+        /// <returns><see cref="Java.Beans.PropertyChangeListener"/></returns>
+        public Java.Beans.PropertyChangeListener CreatePropertyChangeListenerDirect(Javax.Swing.JFileChooser arg0)
+        {
+            return IExecuteWithSignature<Java.Beans.PropertyChangeListenerDirect, Java.Beans.PropertyChangeListener>("createPropertyChangeListener", "(Ljavax/swing/JFileChooser;)Ljava/beans/PropertyChangeListener;", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getApproveButtonToolTipText(javax.swing.JFileChooser)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
@@ -165,6 +174,15 @@ namespace Javax.Swing.Plaf.Basic
         public Javax.Swing.Event.ListSelectionListener CreateListSelectionListener(Javax.Swing.JFileChooser arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Event.ListSelectionListener>("createListSelectionListener", "(Ljavax/swing/JFileChooser;)Ljavax/swing/event/ListSelectionListener;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#createListSelectionListener(javax.swing.JFileChooser)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
+        /// <returns><see cref="Javax.Swing.Event.ListSelectionListener"/></returns>
+        public Javax.Swing.Event.ListSelectionListener CreateListSelectionListenerDirect(Javax.Swing.JFileChooser arg0)
+        {
+            return IExecuteWithSignature<Javax.Swing.Event.ListSelectionListenerDirect, Javax.Swing.Event.ListSelectionListener>("createListSelectionListener", "(Ljavax/swing/JFileChooser;)Ljavax/swing/event/ListSelectionListener;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#clearIconCache()"/>

@@ -169,7 +169,11 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DragGestureListener() { InitializeHandlers(); }
+        public DragGestureListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -179,6 +183,27 @@ namespace Java.Awt.Dnd
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region DragGestureListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="DragGestureListener"/>
+    /// </summary>
+    public partial class DragGestureListenerDirect : DragGestureListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="DragGestureListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.dnd.DragGestureListener";
     }
     #endregion
 
@@ -281,7 +306,11 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DragSourceAdapter() { InitializeHandlers(); }
+        public DragSourceAdapter() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -291,6 +320,27 @@ namespace Java.Awt.Dnd
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region DragSourceAdapterDirect
+    /// <summary>
+    /// Direct override of <see cref="DragSourceAdapter"/>
+    /// </summary>
+    public partial class DragSourceAdapterDirect : DragSourceAdapter
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="DragSourceAdapter.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.dnd.DragSourceAdapter";
     }
     #endregion
 
@@ -479,7 +529,11 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DragSourceListener() { InitializeHandlers(); }
+        public DragSourceListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -492,6 +546,27 @@ namespace Java.Awt.Dnd
     }
     #endregion
 
+    #region DragSourceListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="DragSourceListener"/>
+    /// </summary>
+    public partial class DragSourceListenerDirect : DragSourceListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="DragSourceListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.dnd.DragSourceListener";
+    }
+    #endregion
+
     #region DragSourceMotionListener
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceMotionListener.html"/>
@@ -501,7 +576,11 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DragSourceMotionListener() { InitializeHandlers(); }
+        public DragSourceMotionListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -511,6 +590,27 @@ namespace Java.Awt.Dnd
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region DragSourceMotionListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="DragSourceMotionListener"/>
+    /// </summary>
+    public partial class DragSourceMotionListenerDirect : DragSourceMotionListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="DragSourceMotionListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.dnd.DragSourceMotionListener";
     }
     #endregion
 
@@ -567,7 +667,11 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DropTargetAdapter() { InitializeHandlers(); }
+        public DropTargetAdapter() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -577,6 +681,27 @@ namespace Java.Awt.Dnd
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region DropTargetAdapterDirect
+    /// <summary>
+    /// Direct override of <see cref="DropTargetAdapter"/>
+    /// </summary>
+    public partial class DropTargetAdapterDirect : DropTargetAdapter
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="DropTargetAdapter.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.dnd.DropTargetAdapter";
     }
     #endregion
 
@@ -765,7 +890,11 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DropTargetListener() { InitializeHandlers(); }
+        public DropTargetListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -775,6 +904,27 @@ namespace Java.Awt.Dnd
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region DropTargetListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="DropTargetListener"/>
+    /// </summary>
+    public partial class DropTargetListenerDirect : DropTargetListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="DropTargetListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.dnd.DropTargetListener";
     }
     #endregion
 

@@ -79,7 +79,11 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ActionListener() { InitializeHandlers(); }
+        public ActionListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -89,6 +93,27 @@ namespace Java.Awt.EventNs
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region ActionListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="ActionListener"/>
+    /// </summary>
+    public partial class ActionListenerDirect : ActionListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="ActionListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.event.ActionListener";
     }
     #endregion
 
@@ -145,7 +170,11 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public AdjustmentListener() { InitializeHandlers(); }
+        public AdjustmentListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -158,6 +187,27 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
+    #region AdjustmentListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="AdjustmentListener"/>
+    /// </summary>
+    public partial class AdjustmentListenerDirect : AdjustmentListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="AdjustmentListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.event.AdjustmentListener";
+    }
+    #endregion
+
     #region AWTEventListener
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListener.html"/>
@@ -167,7 +217,11 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public AWTEventListener() { InitializeHandlers(); }
+        public AWTEventListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -177,6 +231,27 @@ namespace Java.Awt.EventNs
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region AWTEventListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="AWTEventListener"/>
+    /// </summary>
+    public partial class AWTEventListenerDirect : AWTEventListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="AWTEventListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.event.AWTEventListener";
     }
     #endregion
 
@@ -233,7 +308,11 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ComponentAdapter() { InitializeHandlers(); }
+        public ComponentAdapter() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -243,6 +322,27 @@ namespace Java.Awt.EventNs
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region ComponentAdapterDirect
+    /// <summary>
+    /// Direct override of <see cref="ComponentAdapter"/>
+    /// </summary>
+    public partial class ComponentAdapterDirect : ComponentAdapter
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="ComponentAdapter.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.event.ComponentAdapter";
     }
     #endregion
 
@@ -299,7 +399,11 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ComponentListener() { InitializeHandlers(); }
+        public ComponentListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -312,6 +416,27 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
+    #region ComponentListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="ComponentListener"/>
+    /// </summary>
+    public partial class ComponentListenerDirect : ComponentListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="ComponentListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.event.ComponentListener";
+    }
+    #endregion
+
     #region ContainerAdapter
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerAdapter.html"/>
@@ -321,7 +446,11 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ContainerAdapter() { InitializeHandlers(); }
+        public ContainerAdapter() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -331,6 +460,27 @@ namespace Java.Awt.EventNs
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region ContainerAdapterDirect
+    /// <summary>
+    /// Direct override of <see cref="ContainerAdapter"/>
+    /// </summary>
+    public partial class ContainerAdapterDirect : ContainerAdapter
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="ContainerAdapter.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.event.ContainerAdapter";
     }
     #endregion
 
@@ -387,7 +537,11 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ContainerListener() { InitializeHandlers(); }
+        public ContainerListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -400,6 +554,27 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
+    #region ContainerListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="ContainerListener"/>
+    /// </summary>
+    public partial class ContainerListenerDirect : ContainerListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="ContainerListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.event.ContainerListener";
+    }
+    #endregion
+
     #region FocusAdapter
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusAdapter.html"/>
@@ -409,7 +584,11 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public FocusAdapter() { InitializeHandlers(); }
+        public FocusAdapter() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -419,6 +598,27 @@ namespace Java.Awt.EventNs
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region FocusAdapterDirect
+    /// <summary>
+    /// Direct override of <see cref="FocusAdapter"/>
+    /// </summary>
+    public partial class FocusAdapterDirect : FocusAdapter
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="FocusAdapter.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.event.FocusAdapter";
     }
     #endregion
 
@@ -519,7 +719,11 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public FocusListener() { InitializeHandlers(); }
+        public FocusListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -532,6 +736,27 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
+    #region FocusListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="FocusListener"/>
+    /// </summary>
+    public partial class FocusListenerDirect : FocusListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="FocusListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.event.FocusListener";
+    }
+    #endregion
+
     #region HierarchyBoundsAdapter
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyBoundsAdapter.html"/>
@@ -541,7 +766,11 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public HierarchyBoundsAdapter() { InitializeHandlers(); }
+        public HierarchyBoundsAdapter() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -554,6 +783,27 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
+    #region HierarchyBoundsAdapterDirect
+    /// <summary>
+    /// Direct override of <see cref="HierarchyBoundsAdapter"/>
+    /// </summary>
+    public partial class HierarchyBoundsAdapterDirect : HierarchyBoundsAdapter
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="HierarchyBoundsAdapter.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.event.HierarchyBoundsAdapter";
+    }
+    #endregion
+
     #region HierarchyBoundsListener
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyBoundsListener.html"/>
@@ -563,7 +813,11 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public HierarchyBoundsListener() { InitializeHandlers(); }
+        public HierarchyBoundsListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -573,6 +827,27 @@ namespace Java.Awt.EventNs
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region HierarchyBoundsListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="HierarchyBoundsListener"/>
+    /// </summary>
+    public partial class HierarchyBoundsListenerDirect : HierarchyBoundsListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="HierarchyBoundsListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.event.HierarchyBoundsListener";
     }
     #endregion
 
@@ -629,7 +904,11 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public HierarchyListener() { InitializeHandlers(); }
+        public HierarchyListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -639,6 +918,27 @@ namespace Java.Awt.EventNs
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region HierarchyListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="HierarchyListener"/>
+    /// </summary>
+    public partial class HierarchyListenerDirect : HierarchyListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="HierarchyListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.event.HierarchyListener";
     }
     #endregion
 
@@ -741,7 +1041,11 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public InputMethodListener() { InitializeHandlers(); }
+        public InputMethodListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -751,6 +1055,27 @@ namespace Java.Awt.EventNs
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region InputMethodListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="InputMethodListener"/>
+    /// </summary>
+    public partial class InputMethodListenerDirect : InputMethodListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="InputMethodListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.event.InputMethodListener";
     }
     #endregion
 
@@ -851,7 +1176,11 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ItemListener() { InitializeHandlers(); }
+        public ItemListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -864,6 +1193,27 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
+    #region ItemListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="ItemListener"/>
+    /// </summary>
+    public partial class ItemListenerDirect : ItemListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="ItemListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.event.ItemListener";
+    }
+    #endregion
+
     #region KeyAdapter
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyAdapter.html"/>
@@ -873,7 +1223,11 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public KeyAdapter() { InitializeHandlers(); }
+        public KeyAdapter() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -883,6 +1237,27 @@ namespace Java.Awt.EventNs
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region KeyAdapterDirect
+    /// <summary>
+    /// Direct override of <see cref="KeyAdapter"/>
+    /// </summary>
+    public partial class KeyAdapterDirect : KeyAdapter
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="KeyAdapter.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.event.KeyAdapter";
     }
     #endregion
 
@@ -939,7 +1314,11 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public KeyListener() { InitializeHandlers(); }
+        public KeyListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -952,6 +1331,27 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
+    #region KeyListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="KeyListener"/>
+    /// </summary>
+    public partial class KeyListenerDirect : KeyListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="KeyListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.event.KeyListener";
+    }
+    #endregion
+
     #region MouseAdapter
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseAdapter.html"/>
@@ -961,7 +1361,11 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public MouseAdapter() { InitializeHandlers(); }
+        public MouseAdapter() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -971,6 +1375,27 @@ namespace Java.Awt.EventNs
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region MouseAdapterDirect
+    /// <summary>
+    /// Direct override of <see cref="MouseAdapter"/>
+    /// </summary>
+    public partial class MouseAdapterDirect : MouseAdapter
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="MouseAdapter.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.event.MouseAdapter";
     }
     #endregion
 
@@ -1027,7 +1452,11 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public MouseListener() { InitializeHandlers(); }
+        public MouseListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1040,6 +1469,27 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
+    #region MouseListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="MouseListener"/>
+    /// </summary>
+    public partial class MouseListenerDirect : MouseListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="MouseListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.event.MouseListener";
+    }
+    #endregion
+
     #region MouseMotionAdapter
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseMotionAdapter.html"/>
@@ -1049,7 +1499,11 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public MouseMotionAdapter() { InitializeHandlers(); }
+        public MouseMotionAdapter() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1062,6 +1516,27 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
+    #region MouseMotionAdapterDirect
+    /// <summary>
+    /// Direct override of <see cref="MouseMotionAdapter"/>
+    /// </summary>
+    public partial class MouseMotionAdapterDirect : MouseMotionAdapter
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="MouseMotionAdapter.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.event.MouseMotionAdapter";
+    }
+    #endregion
+
     #region MouseMotionListener
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseMotionListener.html"/>
@@ -1071,7 +1546,11 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public MouseMotionListener() { InitializeHandlers(); }
+        public MouseMotionListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1081,6 +1560,27 @@ namespace Java.Awt.EventNs
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region MouseMotionListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="MouseMotionListener"/>
+    /// </summary>
+    public partial class MouseMotionListenerDirect : MouseMotionListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="MouseMotionListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.event.MouseMotionListener";
     }
     #endregion
 
@@ -1137,7 +1637,11 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public MouseWheelListener() { InitializeHandlers(); }
+        public MouseWheelListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1147,6 +1651,27 @@ namespace Java.Awt.EventNs
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region MouseWheelListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="MouseWheelListener"/>
+    /// </summary>
+    public partial class MouseWheelListenerDirect : MouseWheelListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="MouseWheelListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.event.MouseWheelListener";
     }
     #endregion
 
@@ -1247,7 +1772,11 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public TextListener() { InitializeHandlers(); }
+        public TextListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1260,6 +1789,27 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
+    #region TextListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="TextListener"/>
+    /// </summary>
+    public partial class TextListenerDirect : TextListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="TextListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.event.TextListener";
+    }
+    #endregion
+
     #region WindowAdapter
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html"/>
@@ -1269,7 +1819,11 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public WindowAdapter() { InitializeHandlers(); }
+        public WindowAdapter() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1279,6 +1833,27 @@ namespace Java.Awt.EventNs
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region WindowAdapterDirect
+    /// <summary>
+    /// Direct override of <see cref="WindowAdapter"/>
+    /// </summary>
+    public partial class WindowAdapterDirect : WindowAdapter
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="WindowAdapter.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.event.WindowAdapter";
     }
     #endregion
 
@@ -1335,7 +1910,11 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public WindowFocusListener() { InitializeHandlers(); }
+        public WindowFocusListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1348,6 +1927,27 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
+    #region WindowFocusListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="WindowFocusListener"/>
+    /// </summary>
+    public partial class WindowFocusListenerDirect : WindowFocusListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="WindowFocusListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.event.WindowFocusListener";
+    }
+    #endregion
+
     #region WindowListener
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html"/>
@@ -1357,7 +1957,11 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public WindowListener() { InitializeHandlers(); }
+        public WindowListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1370,6 +1974,27 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
+    #region WindowListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="WindowListener"/>
+    /// </summary>
+    public partial class WindowListenerDirect : WindowListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="WindowListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.event.WindowListener";
+    }
+    #endregion
+
     #region WindowStateListener
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowStateListener.html"/>
@@ -1379,7 +2004,11 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public WindowStateListener() { InitializeHandlers(); }
+        public WindowStateListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1389,6 +2018,27 @@ namespace Java.Awt.EventNs
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region WindowStateListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="WindowStateListener"/>
+    /// </summary>
+    public partial class WindowStateListenerDirect : WindowStateListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="WindowStateListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.event.WindowStateListener";
     }
     #endregion
 

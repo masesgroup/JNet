@@ -127,7 +127,11 @@ namespace Javax.Naming.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public NamespaceChangeListener() { InitializeHandlers(); }
+        public NamespaceChangeListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -137,6 +141,27 @@ namespace Javax.Naming.Event
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region NamespaceChangeListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="NamespaceChangeListener"/>
+    /// </summary>
+    public partial class NamespaceChangeListenerDirect : NamespaceChangeListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="NamespaceChangeListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "javax.naming.event.NamespaceChangeListener";
     }
     #endregion
 
@@ -237,7 +262,11 @@ namespace Javax.Naming.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public NamingListener() { InitializeHandlers(); }
+        public NamingListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -250,6 +279,27 @@ namespace Javax.Naming.Event
     }
     #endregion
 
+    #region NamingListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="NamingListener"/>
+    /// </summary>
+    public partial class NamingListenerDirect : NamingListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="NamingListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "javax.naming.event.NamingListener";
+    }
+    #endregion
+
     #region ObjectChangeListener
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/ObjectChangeListener.html"/>
@@ -259,7 +309,11 @@ namespace Javax.Naming.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ObjectChangeListener() { InitializeHandlers(); }
+        public ObjectChangeListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -269,6 +323,27 @@ namespace Javax.Naming.Event
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region ObjectChangeListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="ObjectChangeListener"/>
+    /// </summary>
+    public partial class ObjectChangeListenerDirect : ObjectChangeListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="ObjectChangeListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "javax.naming.event.ObjectChangeListener";
     }
     #endregion
 

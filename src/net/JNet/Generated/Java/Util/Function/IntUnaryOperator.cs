@@ -45,11 +45,23 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>
         Java.Util.Function.IntUnaryOperator AndThen(Java.Util.Function.IntUnaryOperator arg0);
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#andThen(java.util.function.IntUnaryOperator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
+        /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>
+        Java.Util.Function.IntUnaryOperator AndThenDirect(Java.Util.Function.IntUnaryOperator arg0);
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#compose(java.util.function.IntUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
         /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>
         Java.Util.Function.IntUnaryOperator Compose(Java.Util.Function.IntUnaryOperator arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#compose(java.util.function.IntUnaryOperator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
+        /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>
+        Java.Util.Function.IntUnaryOperator ComposeDirect(Java.Util.Function.IntUnaryOperator arg0);
 
         #endregion
 
@@ -99,6 +111,29 @@ namespace Java.Util.Function
         public virtual Java.Util.Function.IntUnaryOperator Identity()
         {
             return default;
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#identity()"/>
+        /// </summary>
+        /// <remarks>If <see cref="OnIdentity"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<Java.Util.Function.IntUnaryOperator> OnIdentity { get; set; } = null;
+
+        void IdentityEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        {
+            var methodToExecute = (OnIdentity != null) ? OnIdentity : IdentityDirect;
+            var executionResult = methodToExecute.Invoke();
+            data.SetReturnValue(executionResult);
+        }
+
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#identity()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>
+        public virtual Java.Util.Function.IntUnaryOperator IdentityDirect()
+        {
+            return SExecuteWithSignature<Java.Util.Function.IntUnaryOperatorDirect, Java.Util.Function.IntUnaryOperator>(LocalBridgeClazz, "identity", "()Ljava/util/function/IntUnaryOperator;");
         }
 
         #endregion
@@ -171,6 +206,30 @@ namespace Java.Util.Function
         {
             return AndThenDefault(arg0);
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#andThen(java.util.function.IntUnaryOperator)"/>
+        /// </summary>
+        /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<Java.Util.Function.IntUnaryOperator, Java.Util.Function.IntUnaryOperator> OnAndThen { get; set; } = null;
+
+        void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.IntUnaryOperator>> data)
+        {
+            var methodToExecute = (OnAndThen != null) ? OnAndThen : AndThenDirect;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
+            data.SetReturnValue(executionResult);
+        }
+
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#andThen(java.util.function.IntUnaryOperator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
+        /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThenDefault"/>; override the method to implement a different behavior</remarks>
+        public virtual Java.Util.Function.IntUnaryOperator AndThenDirect(Java.Util.Function.IntUnaryOperator arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Function.IntUnaryOperatorDirect, Java.Util.Function.IntUnaryOperator>("andThenDefault", "(Ljava/util/function/IntUnaryOperator;)Ljava/util/function/IntUnaryOperator;", arg0);
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#compose(java.util.function.IntUnaryOperator)"/>
         /// </summary>
@@ -204,6 +263,30 @@ namespace Java.Util.Function
         public virtual Java.Util.Function.IntUnaryOperator Compose(Java.Util.Function.IntUnaryOperator arg0)
         {
             return ComposeDefault(arg0);
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#compose(java.util.function.IntUnaryOperator)"/>
+        /// </summary>
+        /// <remarks>If <see cref="OnCompose"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<Java.Util.Function.IntUnaryOperator, Java.Util.Function.IntUnaryOperator> OnCompose { get; set; } = null;
+
+        void ComposeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.IntUnaryOperator>> data)
+        {
+            var methodToExecute = (OnCompose != null) ? OnCompose : ComposeDirect;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
+            data.SetReturnValue(executionResult);
+        }
+
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#compose(java.util.function.IntUnaryOperator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
+        /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="ComposeDefault"/>; override the method to implement a different behavior</remarks>
+        public virtual Java.Util.Function.IntUnaryOperator ComposeDirect(Java.Util.Function.IntUnaryOperator arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Function.IntUnaryOperatorDirect, Java.Util.Function.IntUnaryOperator>("composeDefault", "(Ljava/util/function/IntUnaryOperator;)Ljava/util/function/IntUnaryOperator;", arg0);
         }
 
         #endregion

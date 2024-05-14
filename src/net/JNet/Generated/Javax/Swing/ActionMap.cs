@@ -89,6 +89,15 @@ namespace Javax.Swing
             return IExecuteWithSignature<Javax.Swing.Action>("get", "(Ljava/lang/Object;)Ljavax/swing/Action;", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ActionMap.html#get(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Javax.Swing.Action"/></returns>
+        public Javax.Swing.Action GetDirect(object arg0)
+        {
+            return IExecuteWithSignature<Javax.Swing.ActionDirect, Javax.Swing.Action>("get", "(Ljava/lang/Object;)Ljavax/swing/Action;", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ActionMap.html#clear()"/>
         /// </summary>
         public void Clear()

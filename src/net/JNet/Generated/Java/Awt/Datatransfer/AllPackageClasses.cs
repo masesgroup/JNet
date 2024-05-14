@@ -213,7 +213,11 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public FlavorListener() { InitializeHandlers(); }
+        public FlavorListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -223,6 +227,27 @@ namespace Java.Awt.Datatransfer
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region FlavorListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="FlavorListener"/>
+    /// </summary>
+    public partial class FlavorListenerDirect : FlavorListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="FlavorListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.awt.datatransfer.FlavorListener";
     }
     #endregion
 

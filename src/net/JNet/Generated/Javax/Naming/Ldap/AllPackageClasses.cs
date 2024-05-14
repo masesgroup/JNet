@@ -948,7 +948,11 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public UnsolicitedNotificationListener() { InitializeHandlers(); }
+        public UnsolicitedNotificationListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -958,6 +962,27 @@ namespace Javax.Naming.Ldap
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region UnsolicitedNotificationListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="UnsolicitedNotificationListener"/>
+    /// </summary>
+    public partial class UnsolicitedNotificationListenerDirect : UnsolicitedNotificationListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="UnsolicitedNotificationListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "javax.naming.ldap.UnsolicitedNotificationListener";
     }
     #endregion
 

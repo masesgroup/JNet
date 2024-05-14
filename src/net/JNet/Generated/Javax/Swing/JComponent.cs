@@ -328,6 +328,15 @@ namespace Javax.Swing
             return IExecuteWithSignature<Java.Awt.EventNs.ActionListener>("getActionForKeyStroke", "(Ljavax/swing/KeyStroke;)Ljava/awt/event/ActionListener;", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getActionForKeyStroke(javax.swing.KeyStroke)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.ActionListener"/></returns>
+        public Java.Awt.EventNs.ActionListener GetActionForKeyStrokeDirect(Javax.Swing.KeyStroke arg0)
+        {
+            return IExecuteWithSignature<Java.Awt.EventNs.ActionListenerDirect, Java.Awt.EventNs.ActionListener>("getActionForKeyStroke", "(Ljavax/swing/KeyStroke;)Ljava/awt/event/ActionListener;", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getInsets(java.awt.Insets)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Insets"/></param>
