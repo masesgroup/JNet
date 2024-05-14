@@ -184,6 +184,15 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<Java.Util.Function.Predicate<Java.Lang.String>>("asMatchPredicate", "()Ljava/util/function/Predicate;");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#asMatchPredicate()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
+        public Java.Util.Function.Predicate<Java.Lang.String> AsMatchPredicateDirect()
+        {
+            return IExecuteWithSignature<Java.Util.Function.PredicateDirect<Java.Lang.String>, Java.Util.Function.Predicate<Java.Lang.String>>("asMatchPredicate", "()Ljava/util/function/Predicate;");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#asPredicate()"/>
         /// </summary>
 
@@ -191,6 +200,15 @@ namespace Java.Util.Regex
         public Java.Util.Function.Predicate<Java.Lang.String> AsPredicate()
         {
             return IExecuteWithSignature<Java.Util.Function.Predicate<Java.Lang.String>>("asPredicate", "()Ljava/util/function/Predicate;");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#asPredicate()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
+        public Java.Util.Function.Predicate<Java.Lang.String> AsPredicateDirect()
+        {
+            return IExecuteWithSignature<Java.Util.Function.PredicateDirect<Java.Lang.String>, Java.Util.Function.Predicate<Java.Lang.String>>("asPredicate", "()Ljava/util/function/Predicate;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#matcher(java.lang.CharSequence)"/>

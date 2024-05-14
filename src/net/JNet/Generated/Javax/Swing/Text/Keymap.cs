@@ -65,6 +65,12 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Action"/></returns>
         Javax.Swing.Action GetAction(Javax.Swing.KeyStroke arg0);
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getAction(javax.swing.KeyStroke)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
+        /// <returns><see cref="Javax.Swing.Action"/></returns>
+        Javax.Swing.Action GetActionDirect(Javax.Swing.KeyStroke arg0);
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getKeyStrokesForAction(javax.swing.Action)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Action"/></param>
@@ -168,6 +174,15 @@ namespace Javax.Swing.Text
         public Javax.Swing.Action GetAction(Javax.Swing.KeyStroke arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Action>("getAction", "(Ljavax/swing/KeyStroke;)Ljavax/swing/Action;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getAction(javax.swing.KeyStroke)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
+        /// <returns><see cref="Javax.Swing.Action"/></returns>
+        public Javax.Swing.Action GetActionDirect(Javax.Swing.KeyStroke arg0)
+        {
+            return IExecuteWithSignature<Javax.Swing.ActionDirect, Javax.Swing.Action>("getAction", "(Ljavax/swing/KeyStroke;)Ljavax/swing/Action;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getKeyStrokesForAction(javax.swing.Action)"/>

@@ -529,7 +529,11 @@ namespace Java.Beans
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ExceptionListener() { InitializeHandlers(); }
+        public ExceptionListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -539,6 +543,27 @@ namespace Java.Beans
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region ExceptionListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="ExceptionListener"/>
+    /// </summary>
+    public partial class ExceptionListenerDirect : ExceptionListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="ExceptionListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.beans.ExceptionListener";
     }
     #endregion
 
@@ -1012,7 +1037,11 @@ namespace Java.Beans
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public PropertyChangeListener() { InitializeHandlers(); }
+        public PropertyChangeListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1022,6 +1051,27 @@ namespace Java.Beans
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region PropertyChangeListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="PropertyChangeListener"/>
+    /// </summary>
+    public partial class PropertyChangeListenerDirect : PropertyChangeListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="PropertyChangeListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.beans.PropertyChangeListener";
     }
     #endregion
 
@@ -1451,7 +1501,11 @@ namespace Java.Beans
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public VetoableChangeListener() { InitializeHandlers(); }
+        public VetoableChangeListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1461,6 +1515,27 @@ namespace Java.Beans
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region VetoableChangeListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="VetoableChangeListener"/>
+    /// </summary>
+    public partial class VetoableChangeListenerDirect : VetoableChangeListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="VetoableChangeListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.beans.VetoableChangeListener";
     }
     #endregion
 

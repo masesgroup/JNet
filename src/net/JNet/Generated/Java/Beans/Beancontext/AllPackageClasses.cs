@@ -353,7 +353,11 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public BeanContextMembershipListener() { InitializeHandlers(); }
+        public BeanContextMembershipListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -363,6 +367,27 @@ namespace Java.Beans.Beancontext
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region BeanContextMembershipListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="BeanContextMembershipListener"/>
+    /// </summary>
+    public partial class BeanContextMembershipListenerDirect : BeanContextMembershipListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="BeanContextMembershipListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.beans.beancontext.BeanContextMembershipListener";
     }
     #endregion
 
@@ -601,7 +626,11 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public BeanContextServiceRevokedListener() { InitializeHandlers(); }
+        public BeanContextServiceRevokedListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -611,6 +640,27 @@ namespace Java.Beans.Beancontext
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region BeanContextServiceRevokedListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="BeanContextServiceRevokedListener"/>
+    /// </summary>
+    public partial class BeanContextServiceRevokedListenerDirect : BeanContextServiceRevokedListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="BeanContextServiceRevokedListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.beans.beancontext.BeanContextServiceRevokedListener";
     }
     #endregion
 
@@ -669,7 +719,11 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public BeanContextServicesListener() { InitializeHandlers(); }
+        public BeanContextServicesListener() { if (InitHandlers) InitializeHandlers(); }
+        /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -679,6 +733,27 @@ namespace Java.Beans.Beancontext
     
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region BeanContextServicesListenerDirect
+    /// <summary>
+    /// Direct override of <see cref="BeanContextServicesListener"/>
+    /// </summary>
+    public partial class BeanContextServicesListenerDirect : BeanContextServicesListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc cref="BeanContextServicesListener.InitHandlers"/>
+        protected override bool InitHandlers => false;
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.beans.beancontext.BeanContextServicesListener";
     }
     #endregion
 

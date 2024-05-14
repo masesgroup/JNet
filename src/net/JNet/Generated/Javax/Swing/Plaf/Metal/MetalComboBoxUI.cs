@@ -55,6 +55,15 @@ namespace Javax.Swing.Plaf.Metal
             return IExecuteWithSignature<Java.Beans.PropertyChangeListener>("createPropertyChangeListener", "()Ljava/beans/PropertyChangeListener;");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.html#createPropertyChangeListener()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Beans.PropertyChangeListener"/></returns>
+        public Java.Beans.PropertyChangeListener CreatePropertyChangeListenerDirect()
+        {
+            return IExecuteWithSignature<Java.Beans.PropertyChangeListenerDirect, Java.Beans.PropertyChangeListener>("createPropertyChangeListener", "()Ljava/beans/PropertyChangeListener;");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.html#configureEditor()"/>
         /// </summary>
         public void ConfigureEditor()

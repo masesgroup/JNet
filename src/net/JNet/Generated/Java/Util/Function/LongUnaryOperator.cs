@@ -45,11 +45,23 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.LongUnaryOperator"/></returns>
         Java.Util.Function.LongUnaryOperator AndThen(Java.Util.Function.LongUnaryOperator arg0);
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongUnaryOperator.html#andThen(java.util.function.LongUnaryOperator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.LongUnaryOperator"/></param>
+        /// <returns><see cref="Java.Util.Function.LongUnaryOperator"/></returns>
+        Java.Util.Function.LongUnaryOperator AndThenDirect(Java.Util.Function.LongUnaryOperator arg0);
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongUnaryOperator.html#compose(java.util.function.LongUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongUnaryOperator"/></param>
         /// <returns><see cref="Java.Util.Function.LongUnaryOperator"/></returns>
         Java.Util.Function.LongUnaryOperator Compose(Java.Util.Function.LongUnaryOperator arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongUnaryOperator.html#compose(java.util.function.LongUnaryOperator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.LongUnaryOperator"/></param>
+        /// <returns><see cref="Java.Util.Function.LongUnaryOperator"/></returns>
+        Java.Util.Function.LongUnaryOperator ComposeDirect(Java.Util.Function.LongUnaryOperator arg0);
 
         #endregion
 
@@ -99,6 +111,29 @@ namespace Java.Util.Function
         public virtual Java.Util.Function.LongUnaryOperator Identity()
         {
             return default;
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongUnaryOperator.html#identity()"/>
+        /// </summary>
+        /// <remarks>If <see cref="OnIdentity"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<Java.Util.Function.LongUnaryOperator> OnIdentity { get; set; } = null;
+
+        void IdentityEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        {
+            var methodToExecute = (OnIdentity != null) ? OnIdentity : IdentityDirect;
+            var executionResult = methodToExecute.Invoke();
+            data.SetReturnValue(executionResult);
+        }
+
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongUnaryOperator.html#identity()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Function.LongUnaryOperator"/></returns>
+        public virtual Java.Util.Function.LongUnaryOperator IdentityDirect()
+        {
+            return SExecuteWithSignature<Java.Util.Function.LongUnaryOperatorDirect, Java.Util.Function.LongUnaryOperator>(LocalBridgeClazz, "identity", "()Ljava/util/function/LongUnaryOperator;");
         }
 
         #endregion
@@ -171,6 +206,30 @@ namespace Java.Util.Function
         {
             return AndThenDefault(arg0);
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongUnaryOperator.html#andThen(java.util.function.LongUnaryOperator)"/>
+        /// </summary>
+        /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<Java.Util.Function.LongUnaryOperator, Java.Util.Function.LongUnaryOperator> OnAndThen { get; set; } = null;
+
+        void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.LongUnaryOperator>> data)
+        {
+            var methodToExecute = (OnAndThen != null) ? OnAndThen : AndThenDirect;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
+            data.SetReturnValue(executionResult);
+        }
+
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongUnaryOperator.html#andThen(java.util.function.LongUnaryOperator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.LongUnaryOperator"/></param>
+        /// <returns><see cref="Java.Util.Function.LongUnaryOperator"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThenDefault"/>; override the method to implement a different behavior</remarks>
+        public virtual Java.Util.Function.LongUnaryOperator AndThenDirect(Java.Util.Function.LongUnaryOperator arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Function.LongUnaryOperatorDirect, Java.Util.Function.LongUnaryOperator>("andThenDefault", "(Ljava/util/function/LongUnaryOperator;)Ljava/util/function/LongUnaryOperator;", arg0);
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongUnaryOperator.html#compose(java.util.function.LongUnaryOperator)"/>
         /// </summary>
@@ -204,6 +263,30 @@ namespace Java.Util.Function
         public virtual Java.Util.Function.LongUnaryOperator Compose(Java.Util.Function.LongUnaryOperator arg0)
         {
             return ComposeDefault(arg0);
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongUnaryOperator.html#compose(java.util.function.LongUnaryOperator)"/>
+        /// </summary>
+        /// <remarks>If <see cref="OnCompose"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<Java.Util.Function.LongUnaryOperator, Java.Util.Function.LongUnaryOperator> OnCompose { get; set; } = null;
+
+        void ComposeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.LongUnaryOperator>> data)
+        {
+            var methodToExecute = (OnCompose != null) ? OnCompose : ComposeDirect;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
+            data.SetReturnValue(executionResult);
+        }
+
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongUnaryOperator.html#compose(java.util.function.LongUnaryOperator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.LongUnaryOperator"/></param>
+        /// <returns><see cref="Java.Util.Function.LongUnaryOperator"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="ComposeDefault"/>; override the method to implement a different behavior</remarks>
+        public virtual Java.Util.Function.LongUnaryOperator ComposeDirect(Java.Util.Function.LongUnaryOperator arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Function.LongUnaryOperatorDirect, Java.Util.Function.LongUnaryOperator>("composeDefault", "(Ljava/util/function/LongUnaryOperator;)Ljava/util/function/LongUnaryOperator;", arg0);
         }
 
         #endregion

@@ -43,6 +43,12 @@ namespace Java.Util.Function
         /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
         /// <returns><see cref="Java.Util.Function.LongConsumer"/></returns>
         Java.Util.Function.LongConsumer AndThen(Java.Util.Function.LongConsumer arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongConsumer.html#andThen(java.util.function.LongConsumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
+        /// <returns><see cref="Java.Util.Function.LongConsumer"/></returns>
+        Java.Util.Function.LongConsumer AndThenDirect(Java.Util.Function.LongConsumer arg0);
 
         #endregion
 
@@ -137,6 +143,30 @@ namespace Java.Util.Function
         public virtual Java.Util.Function.LongConsumer AndThen(Java.Util.Function.LongConsumer arg0)
         {
             return AndThenDefault(arg0);
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongConsumer.html#andThen(java.util.function.LongConsumer)"/>
+        /// </summary>
+        /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<Java.Util.Function.LongConsumer, Java.Util.Function.LongConsumer> OnAndThen { get; set; } = null;
+
+        void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.LongConsumer>> data)
+        {
+            var methodToExecute = (OnAndThen != null) ? OnAndThen : AndThenDirect;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
+            data.SetReturnValue(executionResult);
+        }
+
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongConsumer.html#andThen(java.util.function.LongConsumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
+        /// <returns><see cref="Java.Util.Function.LongConsumer"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThenDefault"/>; override the method to implement a different behavior</remarks>
+        public virtual Java.Util.Function.LongConsumer AndThenDirect(Java.Util.Function.LongConsumer arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Function.LongConsumerDirect, Java.Util.Function.LongConsumer>("andThenDefault", "(Ljava/util/function/LongConsumer;)Ljava/util/function/LongConsumer;", arg0);
         }
 
         #endregion
