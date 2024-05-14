@@ -20,7 +20,7 @@ ALLPACKAGE_CLASSES_STUB_LISTENER_CLASS_PLACEHOLDER
 
 #region ALLPACKAGE_CLASSES_STUB_CLASS_DIRECT_PLACEHOLDER
 /// <summary>
-/// Direct override of <see cref="ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER"/>
+/// Direct override of <see cref="ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER"/> or its generic type if there is one
 /// </summary>
 public partial class ALLPACKAGE_CLASSES_STUB_CLASS_DIRECT_PLACEHOLDER : ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER
 {
@@ -29,7 +29,7 @@ public partial class ALLPACKAGE_CLASSES_STUB_CLASS_DIRECT_PLACEHOLDER : ALLPACKA
     /// </summary>
     public override bool AutoInit => false;
 
-    /// <inheritdoc cref="ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER.InitHandlers"/>
+    /// <inheritdoc cref="ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER.InitHandlers"/>
     protected override bool InitHandlers => false;
 
     /// <summary>
