@@ -60,11 +60,14 @@ This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDU
 * [Roadmap](src/documentation/articles/roadmap.md)
 * [Current state](src/documentation/articles/currentstate.md)
 * [JNet usage](src/documentation/articles/usage.md)
+* [JNet performance tips](src/documentation/articles/performancetips.md)
 * [JNet APIs extensibility](src/documentation/articles/API_extensibility.md)
+* [JNet JVM callbacks](src/documentation/articles/jvm_callbacks.md)
 * [JNet CLI usage](src/documentation/articles/usageCLI.md)
 * [JNet Docker usage](src/documentation/articles/docker.md)
 * [JNet Reflector usage](src/documentation/articles/usageReflector.md)
 * [JNet PowerShell usage](src/documentation/articles/usagePS.md)
+* [JNet Command-line switches](src/documentation/articles/commandlineswitch.md)
 
 ### News
 

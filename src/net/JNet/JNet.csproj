@@ -14,21 +14,30 @@
 		<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
 		<RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
 	</PropertyGroup>
-  <ItemGroup>
-    <None Include="mases.jnet.targets" Pack="true" PackagePath="build" />
-    <None Include="..\..\..\jars\*.jar" Pack="true" PackagePath="build\jars" />
-    <None Include="..\..\documentation\articles\usage.md" Pack="true" PackagePath="\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="Generated\Java\Util\Function\**" />
-    <None Remove="Generated\Java\Util\Function\**" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="MASES.CLIParser" Version="3.2.1" />
-    <PackageReference Include="MASES.JCOBridge" Version="2.5.11">
-      <IncludeAssets>All</IncludeAssets>
-      <PrivateAssets>None</PrivateAssets>
-    </PackageReference>
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
-  </ItemGroup>
+	<ItemGroup Condition="True">
+		<jnetcore_jars Include="$(ProjectDir)\..\..\..\jars\*.*" />
+	</ItemGroup>
+	<Target Name="CopyCustomContent" AfterTargets="AfterBuild" Condition="'$(GITHUB_ACTIONS)' != 'true' Or '$(GITHUB_TEST_PREPARATION)' == 'true'">
+		<Copy SourceFiles="@(jnetcore_jars)" DestinationFolder="$(OutDir)\jars" />
+	</Target>
+	<Target Name="CopyCustomContentOnPublish" AfterTargets="Publish" Condition="'$(GITHUB_ACTIONS)' != 'true' Or '$(GITHUB_TEST_PREPARATION)' == 'true'">
+		<Copy SourceFiles="@(jnetcore_jars)" DestinationFolder="$(OutDir)\jars" />
+	</Target>
+	<ItemGroup>
+		<None Include="mases.jnet.targets" Pack="true" PackagePath="build" />
+		<None Include="..\..\..\jars\*.jar" Pack="true" PackagePath="build\jars" />
+		<None Include="..\..\documentation\articles\usage.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Remove="Generated\Java\Util\Function\**" />
+		<None Remove="Generated\Java\Util\Function\**" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="MASES.CLIParser" Version="3.2.1" />
+		<PackageReference Include="MASES.JCOBridge" Version="2.5.12">
+			<IncludeAssets>All</IncludeAssets>
+			<PrivateAssets>None</PrivateAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
+	</ItemGroup>
 </Project>

@@ -18,17 +18,17 @@ One of the most important command-line switch is **JVMPath** and it is available
 If a developer is using JNet within its own product it is possible to override the **JVMPath** property with a snippet like the following one:
 
 ```c#
-    class MyJNetCore : JNetCore
+class MyJNetCore : JNetCore
+{
+    public override string JVMPath
     {
-        public override string JVMPath
+        get
         {
-            get
-            {
-                string pathToJVM = "Set here the path to JVM library or use your own search method";
-                return pathToJVM;
-            }
+            string pathToJVM = "Set here the path to JVM library or use your own search method";
+            return pathToJVM;
         }
     }
+}
 ```
 
 **IMPORTANT NOTE**: `pathToJVM` shall be escaped

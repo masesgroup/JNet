@@ -17,10 +17,26 @@
 */
 
 using MASES.JNet;
+using System.Collections.Generic;
 
 namespace MASES.JNetTest.Common
 {
     class JNetTestCore : JNetCore<JNetTestCore>
-    { 
+    {
+#if DEBUG
+        public override bool EnableDebug => true;
+#endif
+        protected override IList<string> PathToParse
+        {
+            get
+            {
+                var lst = base.PathToParse;
+                var assembly = typeof(JNetTestCore).Assembly;
+                var path = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(assembly.Location), JARsSubFolder, $"jnet-test-1.0.0.0.jar");
+                if (!System.IO.File.Exists(path)) throw new System.IO.FileNotFoundException("JAR file for test not available, run Maven first", path);
+                lst.Add(path);
+                return lst;
+            }
+        }
     }
 }
