@@ -87,7 +87,14 @@ This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDU
   * JNet: review of classes based on latest updates of JNetReflector
   * JNetReflector: use native types only when JVM counter-part is a native type (see https://github.com/masesgroup/JNet/issues/371)
   * JNetReflector: can use signature to invoke JVM methods (see https://github.com/masesgroup/JNet/issues/374) or fallback to current behavior
-  
+* V2.5.0+: the most notable changes in this version are in:
+  * Tools and Docker images update to .NET 8
+  * JNetReflector: create side-by-side class on each listener used in case of pure JVM interface (see https://github.com/masesgroup/JNet/issues/393)
+  * JNet:
+    * review of classes based on latest updates of JNetReflector
+    * enhanced ByteBuffer management
+    * speed-up array/list conversion
+
 ---
 
 ## Runtime engine

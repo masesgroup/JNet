@@ -8,7 +8,7 @@
 		<Description>JNetPS - JNet (Java/JVM suite for .NET) PowerShell command line interface</Description>
 		<Product>JNetPS</Product>
 		<OutputPath>..\..\..\MASES.JNetPS\</OutputPath>
-		<TargetFrameworks>net462;net6.0</TargetFrameworks>
+		<TargetFrameworks>net462;net8.0</TargetFrameworks>
 		<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
 		<RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
 	</PropertyGroup>
@@ -42,7 +42,7 @@
 	  <None Update="MASES.JNetPSFramework.psd1" Condition="'$(TargetFramework)' == 'net462'">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </None>
-	  <None Update="MASES.JNetPSCore.psd1" Condition="'$(TargetFramework)' == 'net6.0'">
+	  <None Update="MASES.JNetPSCore.psd1" Condition="'$(TargetFramework)' == 'net8.0'">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </None>
 	</ItemGroup>

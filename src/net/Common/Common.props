@@ -27,7 +27,7 @@
 	<PropertyGroup Condition="'$(JNET_DOCKER_BUILD_ACTIONS)' == 'true'">
 		<DefineConstants>$(DefineConstants);JNET_DOCKER_BUILD_ACTIONS</DefineConstants>
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-		<TargetFramework>net6.0</TargetFramework>
+		<TargetFramework>net8.0</TargetFramework>
 	</PropertyGroup>
 	<ItemGroup Condition="'$(JNET_DOCKER_BUILD_ACTIONS)' != 'true'">
 		<None Include="..\..\..\LICENSE" Pack="true" PackagePath="" />

@@ -42,7 +42,7 @@
         <classpathfile>${basedir}/classpathfile.classpath</classpathfile>
         <jnetversion>2.4.0.0</jnetversion>
         <jcobridgeversion>2.5.13</jcobridgeversion>
-		<jcobridgepath>../../../bin/net6.0/JCOBridge.jar</jcobridgepath>
+		<jcobridgepath>../../../bin/net8.0/JCOBridge.jar</jcobridgepath>
     </properties>
     <distributionManagement>
         <snapshotRepository>
