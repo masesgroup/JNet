@@ -36,5 +36,21 @@ public partial class ALLPACKAGE_CLASSES_STUB_CLASS_DIRECT_PLACEHOLDER : ALLPACKA
     /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
     /// </summary>
     public override string BridgeClassName => "ALLPACKAGE_CLASSES_STUB_JAVACLASS_DIRECT_PLACEHOLDER";
+    /// <summary>
+    /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+    /// </summary>
+    public override bool IsBridgeAbstract => ALLPACKAGE_CLASSES_STUB_ISABSTRACT_PLACEHOLDER;
+    /// <summary>
+    /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+    /// </summary>
+    public override bool IsBridgeCloseable => ALLPACKAGE_CLASSES_STUB_ISCLOSEABLE_PLACEHOLDER;
+    /// <summary>
+    /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+    /// </summary>
+    public override bool IsBridgeInterface => ALLPACKAGE_CLASSES_STUB_ISINTERFACE_PLACEHOLDER;
+    /// <summary>
+    /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+    /// </summary>
+    public override bool IsBridgeStatic => ALLPACKAGE_CLASSES_STUB_ISSTATIC_PLACEHOLDER;
 }
 #endregion
