@@ -499,7 +499,7 @@ namespace MASES.JNetReflector
                                                          .Replace(AllPackageClasses.NAMESPACE, jClass.Namespace(JNetReflectorCore.UseCamel))
                                                          .Replace(AllPackageClasses.CLASSES, singleFileBlockStr);
 
-                var clsName = jClass.JVMClassName(null, false);
+                var clsName = jClass.JVMClassName(null, false, false);
                 var classPath = Path.Combine(JNetReflectorCore.DestinationCSharpClassPath, jClass.Namespace(JNetReflectorCore.UseCamel).Replace(SpecialNames.NamespaceSeparator, Path.DirectorySeparatorChar), $"{clsName}.cs");
                 WriteFile(classPath, fileContent);
             }
@@ -706,8 +706,8 @@ namespace MASES.JNetReflector
             {
                 allPackagesClassBlock = stubException.Replace(AllPackageClasses.ClassStub.DECORATION, jClassDecoration.ToString())
                                                      .Replace(AllPackageClasses.ClassStub.JAVACLASS, jClass.JVMFullClassName())
-                                                     .Replace(AllPackageClasses.ClassStub.SIMPLECLASS, jClass.JVMClassName(null, false))
-                                                     .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(null, isGeneric))
+                                                     .Replace(AllPackageClasses.ClassStub.SIMPLECLASS, jClass.JVMClassName(null, false, false))
+                                                     .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(null, isGeneric, false))
                                                      .Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocHrefUrl(JNetReflectorCore.UseCamel))
                                                      .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(isGeneric, false, JNetReflectorCore.UseCamel))
                                                      .Replace(AllPackageClasses.ClassStub.WHERECLAUSES, string.Empty);
@@ -717,8 +717,10 @@ namespace MASES.JNetReflector
                 allPackagesClassBlock = template.Replace(AllPackageClasses.ClassStub.DECORATION, jClassDecoration.ToString())
                                                 .Replace(AllPackageClasses.ClassStub.LISTENER_CLASS, bPrepareJavaListener ? AllPackageClasses.ClassStub.LISTENER_CLASS_BLOCK : AllPackageClasses.ClassStub.LISTENER_CLASS_WARNING)
                                                 .Replace(AllPackageClasses.ClassStub.JAVACLASS, bPrepareJavaListener ? javaClassListenerName : jClass.JVMFullClassName())
-                                                .Replace(AllPackageClasses.ClassStub.SIMPLECLASS, jClass.JVMClassName(new List<KeyValuePair<string, string>>(), false))
-                                                .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(new List<KeyValuePair<string, string>>(), isGeneric))
+                                                .Replace(AllPackageClasses.ClassStub.JAVACLASS_DIRECT, jClass.JVMFullClassName())
+                                                .Replace(AllPackageClasses.ClassStub.SIMPLECLASS, jClass.JVMClassName(new List<KeyValuePair<string, string>>(), false, false))
+                                                .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(new List<KeyValuePair<string, string>>(), isGeneric, false))
+                                                .Replace(AllPackageClasses.ClassStub.CLASS_DIRECT, jClass.JVMClassName(new List<KeyValuePair<string, string>>(), isGeneric, true))
                                                 .Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocHrefUrl(JNetReflectorCore.UseCamel))
                                                 .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(isGeneric, jClassIsListener, JNetReflectorCore.UseCamel) + (isMainClass ? SpecialNames.MainClassPlaceHolder : string.Empty))
                                                 .Replace(AllPackageClasses.ClassStub.WHERECLAUSES, jClass.WhereClauses(isGeneric, JNetReflectorCore.UseCamel))
@@ -796,7 +798,7 @@ namespace MASES.JNetReflector
                 interfaceConstraint = interfaceConstraint.Substring(0, interfaceConstraint.LastIndexOf(", "));
             }
 
-            singleClassStr = singleClass.Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(new List<KeyValuePair<string, string>>(), isGeneric))
+            singleClassStr = singleClass.Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(new List<KeyValuePair<string, string>>(), isGeneric, false))
                                         .Replace(AllPackageClasses.ClassStub.INTERFACE_CONSTRAINT, !string.IsNullOrWhiteSpace(interfaceConstraint) ? " : " + interfaceConstraint : string.Empty)
                                         .Replace(AllPackageClasses.ClassStub.CONSTRUCTORS, constructorClassBlock)
                                         .Replace(AllPackageClasses.ClassStub.OPERATORS, operatorClassBlock)
@@ -1707,55 +1709,107 @@ namespace MASES.JNetReflector
                     executionParamsString = string.Format(AllPackageClasses.ClassStub.MethodStub.SINGLE_ARRAY_EXECUTION_FORMAT, parameters[0].Name);
                 }
 
+                bool isListenerReturnType = method.IsReturnTypeAListener();
                 bool isVoidMethod = method.IsVoid();
                 bool isReturnTypeException = method.IsReturnTypeAnException();
                 string executionStub = string.Empty;
+                string executionStubDirect = string.Empty;
                 if (forListener && method.IsDefault) methodNameOrigin += SpecialNames.DefaultMethodSuffix;
                 if (isReturnTypeException)
                 {
                     var execFormat = method.IsStatic() ? AllPackageClasses.ClassStub.MethodStub.STATIC_EXECUTION_FORMAT_EXCEPTION : AllPackageClasses.ClassStub.MethodStub.EXECUTION_FORMAT_EXCEPTION;
-                    executionStub = string.Format(execFormat, execStub,
-                                                              methodNameOrigin,
-                                                              string.IsNullOrWhiteSpace(signature) ? string.Empty : $", \"{signature}\"",
-                                                              executionParamsString.Length == 0 ? string.Empty : ", " + executionParamsString,
-                                                              returnType);
+                    executionStub = string.Format(execFormat,
+                                                  execStub,
+                                                  methodNameOrigin,
+                                                  string.IsNullOrWhiteSpace(signature) ? string.Empty : $", \"{signature}\"",
+                                                  executionParamsString.Length == 0 ? string.Empty : ", " + executionParamsString,
+                                                  returnType);
                 }
                 else
                 {
                     var execFormat = method.IsStatic() ? AllPackageClasses.ClassStub.MethodStub.STATIC_EXECUTION_FORMAT : AllPackageClasses.ClassStub.MethodStub.EXECUTION_FORMAT;
-                    executionStub = string.Format(execFormat, method.IsVoid() ? string.Empty : "return ",
-                                                              execStub,
-                                                              isVoidMethod || method.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : $"<{returnType}>",
-                                                              methodNameOrigin,
-                                                              string.IsNullOrWhiteSpace(signature) ? string.Empty : $", \"{signature}\"",
-                                                              executionParamsString.Length == 0 ? string.Empty : ", " + executionParamsString);
+                    executionStub = string.Format(execFormat, 
+                                                  method.IsVoid() ? string.Empty : "return ",
+                                                  execStub,
+                                                  isVoidMethod || method.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : $"<{returnType}>",
+                                                  methodNameOrigin,
+                                                  string.IsNullOrWhiteSpace(signature) ? string.Empty : $", \"{signature}\"",
+                                                  executionParamsString.Length == 0 ? string.Empty : ", " + executionParamsString);
+                    if (isListenerReturnType)
+                    {
+                        string directNewClass = returnType;
+                        var indexOfGenerics = returnType.IndexOf('<');
+                        if (indexOfGenerics > 0)
+                        {
+                            directNewClass = returnType.Insert(indexOfGenerics, SpecialNames.DirectMethodSuffix);
+                        }
+                        else
+                        {
+                            directNewClass = returnType + SpecialNames.DirectMethodSuffix;
+                        }
+
+                        executionStubDirect = string.Format(execFormat, 
+                                                            method.IsVoid() ? string.Empty : "return ",
+                                                            execStub,
+                                                            isVoidMethod || method.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : $"<{directNewClass}, {returnType}>",
+                                                            methodNameOrigin,
+                                                            string.IsNullOrWhiteSpace(signature) ? string.Empty : $", \"{signature}\"",
+                                                            executionParamsString.Length == 0 ? string.Empty : ", " + executionParamsString);
+                    }
                 }
 
                 if (hasVarArg)
                 {
                     string executionStubWithVarArg = string.Empty;
+                    string executionStubWithVarArgDirect = string.Empty;
                     if (isReturnTypeException)
                     {
                         var execFormat = method.IsStatic() ? AllPackageClasses.ClassStub.MethodStub.STATIC_EXECUTION_FORMAT_EXCEPTION : AllPackageClasses.ClassStub.MethodStub.EXECUTION_FORMAT_EXCEPTION;
-                        executionStubWithVarArg = string.Format(execFormat, execStub,
-                                                                            methodNameOrigin,
-                                                                            string.IsNullOrWhiteSpace(signature) ? string.Empty : $", \"{signature}\"",
-                                                                            (executionParamsString.Length == 0 ? string.Empty : ", ")
-                                                                            + executionParamsString + ", " + varArg.Name(),
-                                                                            returnType);
+                        executionStubWithVarArg = string.Format(execFormat,
+                                                                execStub,
+                                                                methodNameOrigin,
+                                                                string.IsNullOrWhiteSpace(signature) ? string.Empty : $", \"{signature}\"",
+                                                                (executionParamsString.Length == 0 ? string.Empty : ", ")
+                                                                + executionParamsString + ", " + varArg.Name(),
+                                                                returnType);
                     }
                     else
                     {
                         var execFormat = method.IsStatic() ? AllPackageClasses.ClassStub.MethodStub.STATIC_EXECUTION_FORMAT : AllPackageClasses.ClassStub.MethodStub.EXECUTION_FORMAT;
-                        executionStubWithVarArg = string.Format(execFormat, isVoidMethod ? string.Empty : "return ",
-                                                                            execStub,
-                                                                            isVoidMethod || method.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : $"<{returnType}>",
-                                                                            methodNameOrigin,
-                                                                            string.IsNullOrWhiteSpace(signature) ? string.Empty : $", \"{signature}\"",
-                                                                            (executionParamsString.Length == 0 ? string.Empty : ", ")
-                                                                            + executionParamsString + ", " + varArg.Name());
+                        executionStubWithVarArg = string.Format(execFormat, 
+                                                                isVoidMethod ? string.Empty : "return ",
+                                                                execStub,
+                                                                isVoidMethod || method.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : $"<{returnType}>",
+                                                                methodNameOrigin,
+                                                                string.IsNullOrWhiteSpace(signature) ? string.Empty : $", \"{signature}\"",
+                                                                (executionParamsString.Length == 0 ? string.Empty : ", ")
+                                                                + executionParamsString + ", " + varArg.Name());
+
+                        if (isListenerReturnType)
+                        {
+                            string directNewClass = returnType;
+                            var indexOfGenerics = returnType.IndexOf('<');
+                            if (indexOfGenerics > 0)
+                            {
+                                directNewClass = returnType.Insert(indexOfGenerics, SpecialNames.DirectMethodSuffix);
+                            }
+                            else
+                            {
+                                directNewClass = returnType + SpecialNames.DirectMethodSuffix;
+                            }
+
+                            executionStubWithVarArgDirect = string.Format(execFormat, 
+                                                                          isVoidMethod ? string.Empty : "return ",
+                                                                          execStub,
+                                                                          isVoidMethod || method.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : $"<{directNewClass}, {returnType}>",
+                                                                          methodNameOrigin,
+                                                                          string.IsNullOrWhiteSpace(signature) ? string.Empty : $", \"{signature}\"",
+                                                                          (executionParamsString.Length == 0 ? string.Empty : ", ")
+                                                                          + executionParamsString + ", " + varArg.Name());
+                        }
                     }
                     executionStub = $"if ({varArg.Name()}.Length == 0) {executionStub} else {executionStubWithVarArg}";
+                    executionStubDirect = $"if ({varArg.Name()}.Length == 0) {executionStubDirect} else {executionStubWithVarArgDirect}";
                 }
 
                 ReportTrace(ReflectionTraceLevel.Debug, "Preparing method {0}", genString);
@@ -1924,13 +1978,32 @@ namespace MASES.JNetReflector
                                        .Replace(AllPackageClasses.ClassStub.MethodStub.HELP, method.JavadocHrefUrl(JNetReflectorCore.UseCamel));
 
                 subClassBlock.AppendLine(singleMethod);
+
+                if (isListenerReturnType)
+                {
+                    singleMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.DECORATION, jDecoration.ToString())
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_EXECUTION, listenerHandlerType)
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_NAME, baseHandlerName)
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.MODIFIER, modifier)
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodName + SpecialNames.DirectMethodSuffix)
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.PARAMETERS, paramsString)
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.WHERECLAUSES, genericClauses.ConvertClauses(isGeneric))
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, executionStubDirect)
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION_TYPE, executionPropertyParams)
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_FIRST_PARAMETER, CLRListenerEventArgsType)
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION, listenerExecutionParamsString)
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.HELP, method.JavadocHrefUrl(JNetReflectorCore.UseCamel));
+
+                    subClassBlock.AppendLine(singleMethod);
+                }
             }
 
             var returnStr = subClassBlock.ToString();
 
             if (forListener && !forInterface && !staticMethods)
             {
-                var listenerBlock = string.Format(AllPackageClasses.ClassStub.MethodStub.BLOCK_LISTENER_HANDLER_FORMAT, classDefinition.JVMClassName(null, false), subListenerHandlerBlock.ToString());
+                var listenerBlock = string.Format(AllPackageClasses.ClassStub.MethodStub.BLOCK_LISTENER_HANDLER_FORMAT, classDefinition.JVMClassName(null, false, false), subListenerHandlerBlock.ToString());
                 returnStr = listenerBlock + returnStr;
             }
 
