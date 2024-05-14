@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -85,7 +85,7 @@
 
 
   <h1 id="MASES_JNet_Specific_Extensions_JNetCoreExtensions" data-uid="MASES.JNet.Specific.Extensions.JNetCoreExtensions" class="text-break">
-Class JNetCoreExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/Extensions/JNetCoreExtensions.cs/#L26"><i class="bi bi-code-slash"></i></a>
+Class JNetCoreExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/Extensions/JNetCoreExtensions.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -153,7 +153,7 @@ Class JNetCoreExtensions  <a class="header-action link-secondary" title="View so
 
   <h3 id="MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_" data-uid="MASES.JNet.Specific.Extensions.JNetCoreExtensions.Class``1(``0)">
   Class&lt;TClass&gt;(TClass)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/Extensions/JNetCoreExtensions.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/Extensions/JNetCoreExtensions.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieve the <a class="xref" href="Java.Lang.Class-1.html">Class&lt;T&gt;</a> from the <code class="typeparamref">TClass</code></p>
@@ -193,11 +193,72 @@ Class JNetCoreExtensions  <a class="header-action link-secondary" title="View so
 
 
 
+  <a id="MASES_JNet_Specific_Extensions_JNetCoreExtensions_DirectBufferWithWrap_" data-uid="MASES.JNet.Specific.Extensions.JNetCoreExtensions.DirectBufferWithWrap*"></a>
+
+  <h3 id="MASES_JNet_Specific_Extensions_JNetCoreExtensions_DirectBufferWithWrap__2___0___System_Boolean_System_Boolean_System_Int32_System_Func_Java_Nio_ByteBuffer___1__" data-uid="MASES.JNet.Specific.Extensions.JNetCoreExtensions.DirectBufferWithWrap``2(``0[],System.Boolean,System.Boolean,System.Int32,System.Func{Java.Nio.ByteBuffer,``1})">
+  DirectBufferWithWrap&lt;TData, TWrap&gt;(TData[], bool, bool, int, Func&lt;ByteBuffer, TWrap&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/Extensions/JNetCoreExtensions.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The method creates a <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> and wrap it into <code class="typeparamref">TWrap</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TWrap DirectBufferWithWrap&lt;TData, TWrap&gt;(this TData[] data, bool useMemoryControlBlock = true, bool arrangeCapacity = true, int timeToLive = -1, Func&lt;ByteBuffer, TWrap&gt; converter = null) where TWrap : IJVMBridgeBase, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> TData[]</dt>
+    <dd><p>The array of <code class="typeparamref">TData</code> to be wrapped</p>
+</dd>
+    <dt><code>useMemoryControlBlock</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Appends to the end of the <code class="paramref">data</code> a memory block will be used to controls and arbitrates memory between CLR and JVM</p>
+</dd>
+    <dt><code>arrangeCapacity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> the <code class="typeparamref">TData</code> array in <code class="paramref">data</code> will be resized to the next power of 2,
+so capacity will be memory aligned and the limit of java.nio.ByteBuffer will be current size of <code class="paramref">data</code></p>
+</dd>
+    <dt><code>timeToLive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The time to live, expressed in milliseconds, the underlying memory shall remain available; if the time to live expires the pinned memory is retired leaving potentially the JVM under the possibility of an access violation.</p>
+</dd>
+    <dt><code>converter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a>, TWrap&gt;</dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func&lt;T, TResult&gt;</a> that receives the prepared <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> and shall return <code class="typeparamref">TWrap</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TWrap</span></dt>
+    <dd><p>The <code class="typeparamref">TWrap</code> instance</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TData</code></dt>
+    <dd><p>The data to be wrapped</p>
+</dd>
+    <dt><code>TWrap</code></dt>
+    <dd><p>The wrapping class</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/Extensions/JNetCoreExtensions.cs/#L26" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/Extensions/JNetCoreExtensions.cs/#L28" class="edit-link">Edit this page</a>
         </div>
 
 

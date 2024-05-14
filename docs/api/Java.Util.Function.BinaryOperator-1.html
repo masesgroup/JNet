@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -85,7 +85,7 @@
 
 
   <h1 id="Java_Util_Function_BinaryOperator_1" data-uid="Java.Util.Function.BinaryOperator`1" class="text-break">
-Class BinaryOperator&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/BinaryOperator.cs/#L54"><i class="bi bi-code-slash"></i></a>
+Class BinaryOperator&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/BinaryOperator.cs/#L94"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -136,10 +136,19 @@ Class BinaryOperator&lt;T&gt;  <a class="header-action link-secondary" title="Vi
     </dd>
   </dl>
 
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Java.Util.Function.BinaryOperatorDirect-1.html">BinaryOperatorDirect&lt;T&gt;</a></div>
+    </dd>
+  </dl>
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="Java.Util.Function.BinaryOperator.html#Java_Util_Function_BinaryOperator_InitHandlers">BinaryOperator.InitHandlers</a>
+    </div>
     <div>
       <a class="xref" href="Java.Util.Function.BinaryOperator.html#Java_Util_Function_BinaryOperator_BridgeClassName">BinaryOperator.BridgeClassName</a>
     </div>
@@ -330,6 +339,9 @@ Class BinaryOperator&lt;T&gt;  <a class="header-action link-secondary" title="Vi
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -360,7 +372,10 @@ Class BinaryOperator&lt;T&gt;  <a class="header-action link-secondary" title="Vi
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.ToString()</span>
@@ -519,7 +534,7 @@ Class BinaryOperator&lt;T&gt;  <a class="header-action link-secondary" title="Vi
 
   <h3 id="Java_Util_Function_BinaryOperator_1__ctor" data-uid="Java.Util.Function.BinaryOperator`1.#ctor">
   BinaryOperator()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/BinaryOperator.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/BinaryOperator.cs/#L103"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initialize a new instance of <a class="xref" href="Java.Util.Function.BinaryOperator-1.html">BinaryOperator&lt;T&gt;</a></p>
@@ -550,7 +565,7 @@ Class BinaryOperator&lt;T&gt;  <a class="header-action link-secondary" title="Vi
 
   <h3 id="Java_Util_Function_BinaryOperator_1_OnApply" data-uid="Java.Util.Function.BinaryOperator`1.OnApply">
   OnApply
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/BinaryOperator.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/BinaryOperator.cs/#L99"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func&lt;T, TResult&gt;</a> to be executed</p>
@@ -586,7 +601,7 @@ Class BinaryOperator&lt;T&gt;  <a class="header-action link-secondary" title="Vi
 
   <h3 id="Java_Util_Function_BinaryOperator_1_Apply__0__0_" data-uid="Java.Util.Function.BinaryOperator`1.Apply(`0,`0)">
   Apply(T, T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/BinaryOperator.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/BinaryOperator.cs/#L122"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Executes the Function action in the CLR</p>
@@ -628,7 +643,7 @@ Class BinaryOperator&lt;T&gt;  <a class="header-action link-secondary" title="Vi
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/BinaryOperator.cs/#L54" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/BinaryOperator.cs/#L94" class="edit-link">Edit this page</a>
         </div>
 
 

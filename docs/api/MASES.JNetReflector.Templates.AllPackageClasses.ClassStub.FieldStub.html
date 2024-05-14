@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -85,7 +85,7 @@
 
 
   <h1 id="MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_FieldStub" data-uid="MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub" class="text-break">
-Class AllPackageClasses.ClassStub.FieldStub  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L270"><i class="bi bi-code-slash"></i></a>
+Class AllPackageClasses.ClassStub.FieldStub  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L272"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -151,7 +151,7 @@ Class AllPackageClasses.ClassStub.FieldStub  <a class="header-action link-second
 
   <h3 id="MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_FieldStub_DECORATION" data-uid="MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.DECORATION">
   DECORATION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L272"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L274"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -181,7 +181,7 @@ Class AllPackageClasses.ClassStub.FieldStub  <a class="header-action link-second
 
   <h3 id="MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_FieldStub_DEFAULT_DECORATION" data-uid="MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.DEFAULT_DECORATION">
   DEFAULT_DECORATION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L285"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L287"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -211,7 +211,7 @@ Class AllPackageClasses.ClassStub.FieldStub  <a class="header-action link-second
 
   <h3 id="MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_FieldStub_EXECUTION" data-uid="MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.EXECUTION">
   EXECUTION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L279"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -241,7 +241,7 @@ Class AllPackageClasses.ClassStub.FieldStub  <a class="header-action link-second
 
   <h3 id="MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_FieldStub_GET_EXECUTION_FORMAT" data-uid="MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.GET_EXECUTION_FORMAT">
   GET_EXECUTION_FORMAT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L280"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -271,7 +271,7 @@ Class AllPackageClasses.ClassStub.FieldStub  <a class="header-action link-second
 
   <h3 id="MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_FieldStub_GET_EXECUTION_FORMAT_FINAL" data-uid="MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.GET_EXECUTION_FORMAT_FINAL">
   GET_EXECUTION_FORMAT_FINAL
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L279"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L281"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -301,7 +301,7 @@ Class AllPackageClasses.ClassStub.FieldStub  <a class="header-action link-second
 
   <h3 id="MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_FieldStub_GET_STATIC_EXECUTION_FORMAT" data-uid="MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.GET_STATIC_EXECUTION_FORMAT">
   GET_STATIC_EXECUTION_FORMAT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L280"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L282"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -331,7 +331,7 @@ Class AllPackageClasses.ClassStub.FieldStub  <a class="header-action link-second
 
   <h3 id="MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_FieldStub_GET_STATIC_EXECUTION_FORMAT_FINAL" data-uid="MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.GET_STATIC_EXECUTION_FORMAT_FINAL">
   GET_STATIC_EXECUTION_FORMAT_FINAL
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L281"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L283"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -361,7 +361,7 @@ Class AllPackageClasses.ClassStub.FieldStub  <a class="header-action link-second
 
   <h3 id="MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_FieldStub_HELP" data-uid="MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.HELP">
   HELP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L275"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -391,7 +391,7 @@ Class AllPackageClasses.ClassStub.FieldStub  <a class="header-action link-second
 
   <h3 id="MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_FieldStub_MODIFIER" data-uid="MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.MODIFIER">
   MODIFIER
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L274"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L276"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -421,7 +421,7 @@ Class AllPackageClasses.ClassStub.FieldStub  <a class="header-action link-second
 
   <h3 id="MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_FieldStub_NAME" data-uid="MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.NAME">
   NAME
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L276"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L278"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -451,7 +451,7 @@ Class AllPackageClasses.ClassStub.FieldStub  <a class="header-action link-second
 
   <h3 id="MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_FieldStub_OBSOLETE_DECORATION" data-uid="MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.OBSOLETE_DECORATION">
   OBSOLETE_DECORATION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L288"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L290"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -481,7 +481,7 @@ Class AllPackageClasses.ClassStub.FieldStub  <a class="header-action link-second
 
   <h3 id="MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_FieldStub_SET_EXECUTION_FORMAT" data-uid="MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.SET_EXECUTION_FORMAT">
   SET_EXECUTION_FORMAT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L282"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L284"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -511,7 +511,7 @@ Class AllPackageClasses.ClassStub.FieldStub  <a class="header-action link-second
 
   <h3 id="MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_FieldStub_SET_STATIC_EXECUTION_FORMAT" data-uid="MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.SET_STATIC_EXECUTION_FORMAT">
   SET_STATIC_EXECUTION_FORMAT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L285"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -541,7 +541,7 @@ Class AllPackageClasses.ClassStub.FieldStub  <a class="header-action link-second
 
   <h3 id="MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_FieldStub_TYPE" data-uid="MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.TYPE">
   TYPE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L275"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L277"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -572,7 +572,7 @@ Class AllPackageClasses.ClassStub.FieldStub  <a class="header-action link-second
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L270" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/Templates/Templates.cs/#L272" class="edit-link">Edit this page</a>
         </div>
 
 

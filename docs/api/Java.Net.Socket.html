@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -307,6 +307,9 @@ Class Socket  <a class="header-action link-secondary" title="View source" href="
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -337,7 +340,10 @@ Class Socket  <a class="header-action link-secondary" title="View source" href="
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.Dispose()</span>
@@ -1029,7 +1035,8 @@ Class Socket  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Socket.cs/#L134"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getKeepAlive()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getKeepAlive()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setKeepAlive(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setKeepAlive(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getKeepAlive()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getKeepAlive()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setKeepAlive(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setKeepAlive(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1157,7 +1164,8 @@ Class Socket  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Socket.cs/#L162"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getOOBInline()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getOOBInline()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setOOBInline(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setOOBInline(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getOOBInline()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getOOBInline()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setOOBInline(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setOOBInline(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1253,7 +1261,8 @@ Class Socket  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Socket.cs/#L183"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getReceiveBufferSize()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getReceiveBufferSize()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setReceiveBufferSize(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setReceiveBufferSize(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getReceiveBufferSize()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getReceiveBufferSize()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setReceiveBufferSize(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setReceiveBufferSize(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1317,7 +1326,8 @@ Class Socket  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Socket.cs/#L197"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getReuseAddress()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getReuseAddress()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setReuseAddress(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setReuseAddress(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getReuseAddress()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getReuseAddress()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setReuseAddress(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setReuseAddress(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1349,7 +1359,8 @@ Class Socket  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Socket.cs/#L204"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getSendBufferSize()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getSendBufferSize()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setSendBufferSize(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setSendBufferSize(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getSendBufferSize()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getSendBufferSize()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setSendBufferSize(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setSendBufferSize(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1413,7 +1424,8 @@ Class Socket  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Socket.cs/#L218"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getSoTimeout()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getSoTimeout()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setSoTimeout(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setSoTimeout(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getSoTimeout()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getSoTimeout()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setSoTimeout(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setSoTimeout(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1445,7 +1457,8 @@ Class Socket  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Socket.cs/#L225"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getTcpNoDelay()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getTcpNoDelay()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setTcpNoDelay(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setTcpNoDelay(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getTcpNoDelay()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getTcpNoDelay()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setTcpNoDelay(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setTcpNoDelay(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1477,7 +1490,8 @@ Class Socket  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/Socket.cs/#L232"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getTrafficClass()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getTrafficClass()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setTrafficClass(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setTrafficClass(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getTrafficClass()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getTrafficClass()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setTrafficClass(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setTrafficClass(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

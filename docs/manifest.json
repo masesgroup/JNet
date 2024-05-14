@@ -424,6 +424,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Datatransfer.FlavorListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Datatransfer.FlavorListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Awt.Datatransfer.FlavorMap.yml",
       "output": {
         ".html": {
@@ -644,6 +654,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.DesktopNs.AppForegroundListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.DesktopNs.AppForegroundListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Awt.DesktopNs.AppHiddenEvent.yml",
       "output": {
         ".html": {
@@ -664,6 +684,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.DesktopNs.AppHiddenListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.DesktopNs.AppHiddenListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Awt.DesktopNs.AppReopenedEvent.yml",
       "output": {
         ".html": {
@@ -678,6 +708,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Awt.DesktopNs.AppReopenedListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.DesktopNs.AppReopenedListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.DesktopNs.AppReopenedListenerDirect.html"
         }
       },
       "version": ""
@@ -974,10 +1014,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.DesktopNs.ScreenSleepListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.DesktopNs.ScreenSleepListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Awt.DesktopNs.SystemEventListener.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Awt.DesktopNs.SystemEventListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.DesktopNs.SystemEventListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.DesktopNs.SystemEventListenerDirect.html"
         }
       },
       "version": ""
@@ -998,6 +1058,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Awt.DesktopNs.SystemSleepListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.DesktopNs.SystemSleepListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.DesktopNs.SystemSleepListenerDirect.html"
         }
       },
       "version": ""
@@ -1028,6 +1098,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Awt.DesktopNs.UserSessionListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.DesktopNs.UserSessionListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.DesktopNs.UserSessionListenerDirect.html"
         }
       },
       "version": ""
@@ -1134,6 +1214,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Dnd.DragGestureListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Dnd.DragGestureListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Awt.Dnd.DragGestureRecognizer.yml",
       "output": {
         ".html": {
@@ -1158,6 +1248,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Awt.Dnd.DragSourceAdapter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Dnd.DragSourceAdapterDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Dnd.DragSourceAdapterDirect.html"
         }
       },
       "version": ""
@@ -1214,10 +1314,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Dnd.DragSourceListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Dnd.DragSourceListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Awt.Dnd.DragSourceMotionListener.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Awt.Dnd.DragSourceMotionListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Dnd.DragSourceMotionListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Dnd.DragSourceMotionListenerDirect.html"
         }
       },
       "version": ""
@@ -1238,6 +1358,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Awt.Dnd.DropTargetAdapter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Dnd.DropTargetAdapterDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Dnd.DropTargetAdapterDirect.html"
         }
       },
       "version": ""
@@ -1288,6 +1418,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Awt.Dnd.DropTargetListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Dnd.DropTargetListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Dnd.DropTargetListenerDirect.html"
         }
       },
       "version": ""
@@ -1464,6 +1604,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.EventNs.AWTEventListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.EventNs.AWTEventListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Awt.EventNs.AWTEventListenerProxy.yml",
       "output": {
         ".html": {
@@ -1494,6 +1644,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.EventNs.ActionListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.EventNs.ActionListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Awt.EventNs.AdjustmentEvent.yml",
       "output": {
         ".html": {
@@ -1514,10 +1674,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.EventNs.AdjustmentListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.EventNs.AdjustmentListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Awt.EventNs.ComponentAdapter.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Awt.EventNs.ComponentAdapter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.EventNs.ComponentAdapterDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.EventNs.ComponentAdapterDirect.html"
         }
       },
       "version": ""
@@ -1544,10 +1724,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.EventNs.ComponentListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.EventNs.ComponentListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Awt.EventNs.ContainerAdapter.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Awt.EventNs.ContainerAdapter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.EventNs.ContainerAdapterDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.EventNs.ContainerAdapterDirect.html"
         }
       },
       "version": ""
@@ -1574,10 +1774,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.EventNs.ContainerListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.EventNs.ContainerListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Awt.EventNs.FocusAdapter.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Awt.EventNs.FocusAdapter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.EventNs.FocusAdapterDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.EventNs.FocusAdapterDirect.html"
         }
       },
       "version": ""
@@ -1614,6 +1834,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.EventNs.FocusListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.EventNs.FocusListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Awt.EventNs.HierarchyBoundsAdapter.yml",
       "output": {
         ".html": {
@@ -1624,10 +1854,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.EventNs.HierarchyBoundsAdapterDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.EventNs.HierarchyBoundsAdapterDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Awt.EventNs.HierarchyBoundsListener.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Awt.EventNs.HierarchyBoundsListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.EventNs.HierarchyBoundsListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.EventNs.HierarchyBoundsListenerDirect.html"
         }
       },
       "version": ""
@@ -1648,6 +1898,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Awt.EventNs.HierarchyListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.EventNs.HierarchyListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.EventNs.HierarchyListenerDirect.html"
         }
       },
       "version": ""
@@ -1884,6 +2144,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.EventNs.InputMethodListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.EventNs.InputMethodListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Awt.EventNs.InvocationEvent.yml",
       "output": {
         ".html": {
@@ -1914,10 +2184,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.EventNs.ItemListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.EventNs.ItemListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Awt.EventNs.KeyAdapter.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Awt.EventNs.KeyAdapter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.EventNs.KeyAdapterDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.EventNs.KeyAdapterDirect.html"
         }
       },
       "version": ""
@@ -1944,10 +2234,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.EventNs.KeyListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.EventNs.KeyListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Awt.EventNs.MouseAdapter.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Awt.EventNs.MouseAdapter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.EventNs.MouseAdapterDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.EventNs.MouseAdapterDirect.html"
         }
       },
       "version": ""
@@ -1974,6 +2284,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.EventNs.MouseListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.EventNs.MouseListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Awt.EventNs.MouseMotionAdapter.yml",
       "output": {
         ".html": {
@@ -1984,10 +2304,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.EventNs.MouseMotionAdapterDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.EventNs.MouseMotionAdapterDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Awt.EventNs.MouseMotionListener.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Awt.EventNs.MouseMotionListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.EventNs.MouseMotionListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.EventNs.MouseMotionListenerDirect.html"
         }
       },
       "version": ""
@@ -2008,6 +2348,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Awt.EventNs.MouseWheelListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.EventNs.MouseWheelListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.EventNs.MouseWheelListenerDirect.html"
         }
       },
       "version": ""
@@ -2044,10 +2394,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.EventNs.TextListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.EventNs.TextListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Awt.EventNs.WindowAdapter.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Awt.EventNs.WindowAdapter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.EventNs.WindowAdapterDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.EventNs.WindowAdapterDirect.html"
         }
       },
       "version": ""
@@ -2074,6 +2444,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.EventNs.WindowFocusListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.EventNs.WindowFocusListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Awt.EventNs.WindowListener.yml",
       "output": {
         ".html": {
@@ -2084,10 +2464,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.EventNs.WindowListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.EventNs.WindowListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Awt.EventNs.WindowStateListener.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Awt.EventNs.WindowStateListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.EventNs.WindowStateListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.EventNs.WindowStateListenerDirect.html"
         }
       },
       "version": ""
@@ -4964,6 +5364,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Beans.Beancontext.BeanContextMembershipListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Beans.Beancontext.BeanContextMembershipListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Beans.Beancontext.BeanContextProxy.yml",
       "output": {
         ".html": {
@@ -5024,6 +5434,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Beans.Beancontext.BeanContextServiceRevokedListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Beans.Beancontext.BeanContextServiceRevokedListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Beans.Beancontext.BeanContextServices.yml",
       "output": {
         ".html": {
@@ -5038,6 +5458,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Beans.Beancontext.BeanContextServicesListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Beans.Beancontext.BeanContextServicesListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Beans.Beancontext.BeanContextServicesListenerDirect.html"
         }
       },
       "version": ""
@@ -5268,6 +5698,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Beans.ExceptionListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Beans.ExceptionListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Beans.ExceptionListenerDirect.html"
         }
       },
       "version": ""
@@ -5514,6 +5954,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Beans.PropertyChangeListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Beans.PropertyChangeListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Beans.PropertyChangeListenerProxy.yml",
       "output": {
         ".html": {
@@ -5618,6 +6068,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Beans.VetoableChangeListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Beans.VetoableChangeListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Beans.VetoableChangeListenerDirect.html"
         }
       },
       "version": ""
@@ -10178,6 +10638,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Net.Http.WebSocket.Listener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Net.Http.WebSocket.ListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Net.Http.WebSocket.ListenerDirect.html"
         }
       },
       "version": ""
@@ -20484,6 +20954,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.BiConsumerDirect-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.BiConsumerDirect-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.BiConsumerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.BiConsumerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.BiFunction-3.yml",
       "output": {
         ".html": {
@@ -20538,6 +21028,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.BinaryOperator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.BinaryOperatorDirect-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.BinaryOperatorDirect-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.BinaryOperatorDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.BinaryOperatorDirect.html"
         }
       },
       "version": ""
@@ -20678,6 +21188,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.Function.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.FunctionDirect-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.FunctionDirect-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.FunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.FunctionDirect.html"
         }
       },
       "version": ""
@@ -21374,6 +21904,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.PredicateDirect-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.PredicateDirect-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.PredicateDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.PredicateDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.Supplier-1.yml",
       "output": {
         ".html": {
@@ -21388,6 +21938,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.Supplier.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.SupplierDirect-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.SupplierDirect-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.SupplierDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.SupplierDirect.html"
         }
       },
       "version": ""
@@ -22654,6 +23224,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Prefs.NodeChangeListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Prefs.NodeChangeListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Prefs.PreferenceChangeEvent.yml",
       "output": {
         ".html": {
@@ -22668,6 +23248,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Prefs.PreferenceChangeListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Prefs.PreferenceChangeListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Prefs.PreferenceChangeListenerDirect.html"
         }
       },
       "version": ""
@@ -25204,10 +25794,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Imageio.Event.IIOReadProgressListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Imageio.Event.IIOReadProgressListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Imageio.Event.IIOReadUpdateListener.yml",
       "output": {
         ".html": {
           "relative_path": "api/Javax.Imageio.Event.IIOReadUpdateListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Imageio.Event.IIOReadUpdateListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Imageio.Event.IIOReadUpdateListenerDirect.html"
         }
       },
       "version": ""
@@ -25224,6 +25834,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Imageio.Event.IIOReadWarningListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Imageio.Event.IIOReadWarningListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Imageio.Event.IIOWriteProgressListener.yml",
       "output": {
         ".html": {
@@ -25234,10 +25854,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Imageio.Event.IIOWriteProgressListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Imageio.Event.IIOWriteProgressListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Imageio.Event.IIOWriteWarningListener.yml",
       "output": {
         ".html": {
           "relative_path": "api/Javax.Imageio.Event.IIOWriteWarningListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Imageio.Event.IIOWriteWarningListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Imageio.Event.IIOWriteWarningListenerDirect.html"
         }
       },
       "version": ""
@@ -28724,6 +29364,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Management.NotificationFilterDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Management.NotificationFilterDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Management.NotificationFilterSupport.yml",
       "output": {
         ".html": {
@@ -28738,6 +29388,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Javax.Management.NotificationListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Management.NotificationListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Management.NotificationListenerDirect.html"
         }
       },
       "version": ""
@@ -30444,6 +31104,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Naming.Event.NamespaceChangeListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Naming.Event.NamespaceChangeListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Naming.Event.NamingEvent.yml",
       "output": {
         ".html": {
@@ -30474,10 +31144,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Naming.Event.NamingListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Naming.Event.NamingListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Naming.Event.ObjectChangeListener.yml",
       "output": {
         ".html": {
           "relative_path": "api/Javax.Naming.Event.ObjectChangeListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Naming.Event.ObjectChangeListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Naming.Event.ObjectChangeListenerDirect.html"
         }
       },
       "version": ""
@@ -30868,6 +31558,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Javax.Naming.Ldap.UnsolicitedNotificationListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Naming.Ldap.UnsolicitedNotificationListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Naming.Ldap.UnsolicitedNotificationListenerDirect.html"
         }
       },
       "version": ""
@@ -31434,6 +32134,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Net.Ssl.HandshakeCompletedListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Net.Ssl.HandshakeCompletedListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Net.Ssl.HostnameVerifier.yml",
       "output": {
         ".html": {
@@ -31808,6 +32518,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Javax.Net.Ssl.SSLSessionBindingListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Net.Ssl.SSLSessionBindingListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Net.Ssl.SSLSessionBindingListenerDirect.html"
         }
       },
       "version": ""
@@ -33264,6 +33984,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Print.Event.PrintJobAdapterDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Print.Event.PrintJobAdapterDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Print.Event.PrintJobAttributeEvent.yml",
       "output": {
         ".html": {
@@ -33278,6 +34008,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Javax.Print.Event.PrintJobAttributeListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Print.Event.PrintJobAttributeListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Print.Event.PrintJobAttributeListenerDirect.html"
         }
       },
       "version": ""
@@ -33304,6 +34044,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Print.Event.PrintJobListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Print.Event.PrintJobListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Print.Event.PrintServiceAttributeEvent.yml",
       "output": {
         ".html": {
@@ -33318,6 +34068,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Javax.Print.Event.PrintServiceAttributeListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Print.Event.PrintServiceAttributeListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Print.Event.PrintServiceAttributeListenerDirect.html"
         }
       },
       "version": ""
@@ -34644,6 +35404,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Sound.Midi.ControllerEventListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Sound.Midi.ControllerEventListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Sound.Midi.IControllerEventListener.yml",
       "output": {
         ".html": {
@@ -34778,6 +35548,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Javax.Sound.Midi.MetaEventListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Sound.Midi.MetaEventListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Sound.Midi.MetaEventListenerDirect.html"
         }
       },
       "version": ""
@@ -35414,6 +36194,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Sound.Sampled.LineListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Sound.Sampled.LineListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Sound.Sampled.LineUnavailableException.yml",
       "output": {
         ".html": {
@@ -35588,6 +36378,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Javax.Sql.ConnectionEventListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Sql.ConnectionEventListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Sql.ConnectionEventListenerDirect.html"
         }
       },
       "version": ""
@@ -35828,6 +36628,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Javax.Sql.RowSetListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Sql.RowSetListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Sql.RowSetListenerDirect.html"
         }
       },
       "version": ""
@@ -36334,6 +37144,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Sql.StatementEventListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Sql.StatementEventListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Sql.XAConnection.yml",
       "output": {
         ".html": {
@@ -36438,6 +37258,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Javax.Swing.Action.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Swing.ActionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Swing.ActionDirect.html"
         }
       },
       "version": ""
@@ -36974,6 +37804,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Swing.Event.AncestorListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Swing.Event.AncestorListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Swing.Event.CaretEvent.yml",
       "output": {
         ".html": {
@@ -36994,10 +37834,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Swing.Event.CaretListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Swing.Event.CaretListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Swing.Event.CellEditorListener.yml",
       "output": {
         ".html": {
           "relative_path": "api/Javax.Swing.Event.CellEditorListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Swing.Event.CellEditorListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Swing.Event.CellEditorListenerDirect.html"
         }
       },
       "version": ""
@@ -37018,6 +37878,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Javax.Swing.Event.ChangeListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Swing.Event.ChangeListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Swing.Event.ChangeListenerDirect.html"
         }
       },
       "version": ""
@@ -37064,6 +37934,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Swing.Event.DocumentListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Swing.Event.DocumentListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Swing.Event.EventListenerList.yml",
       "output": {
         ".html": {
@@ -37098,6 +37978,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Javax.Swing.Event.HyperlinkListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Swing.Event.HyperlinkListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Swing.Event.HyperlinkListenerDirect.html"
         }
       },
       "version": ""
@@ -37354,6 +38244,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Swing.Event.InternalFrameAdapterDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Swing.Event.InternalFrameAdapterDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Swing.Event.InternalFrameEvent.yml",
       "output": {
         ".html": {
@@ -37368,6 +38268,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Javax.Swing.Event.InternalFrameListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Swing.Event.InternalFrameListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Swing.Event.InternalFrameListenerDirect.html"
         }
       },
       "version": ""
@@ -37394,6 +38304,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Swing.Event.ListDataListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Swing.Event.ListDataListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Swing.Event.ListSelectionEvent.yml",
       "output": {
         ".html": {
@@ -37414,6 +38334,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Swing.Event.ListSelectionListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Swing.Event.ListSelectionListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Swing.Event.MenuDragMouseEvent.yml",
       "output": {
         ".html": {
@@ -37428,6 +38358,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Javax.Swing.Event.MenuDragMouseListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Swing.Event.MenuDragMouseListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Swing.Event.MenuDragMouseListenerDirect.html"
         }
       },
       "version": ""
@@ -37464,10 +38404,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Swing.Event.MenuKeyListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Swing.Event.MenuKeyListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Swing.Event.MenuListener.yml",
       "output": {
         ".html": {
           "relative_path": "api/Javax.Swing.Event.MenuListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Swing.Event.MenuListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Swing.Event.MenuListenerDirect.html"
         }
       },
       "version": ""
@@ -37484,10 +38444,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Swing.Event.MouseInputAdapterDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Swing.Event.MouseInputAdapterDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Swing.Event.MouseInputListener.yml",
       "output": {
         ".html": {
           "relative_path": "api/Javax.Swing.Event.MouseInputListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Swing.Event.MouseInputListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Swing.Event.MouseInputListenerDirect.html"
         }
       },
       "version": ""
@@ -37508,6 +38488,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Javax.Swing.Event.PopupMenuListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Swing.Event.PopupMenuListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Swing.Event.PopupMenuListenerDirect.html"
         }
       },
       "version": ""
@@ -37544,6 +38534,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Swing.Event.RowSorterListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Swing.Event.RowSorterListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Swing.Event.SwingPropertyChangeSupport.yml",
       "output": {
         ".html": {
@@ -37574,6 +38574,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Swing.Event.TableColumnModelListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Swing.Event.TableColumnModelListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Swing.Event.TableModelEvent.yml",
       "output": {
         ".html": {
@@ -37588,6 +38598,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Javax.Swing.Event.TableModelListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Swing.Event.TableModelListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Swing.Event.TableModelListenerDirect.html"
         }
       },
       "version": ""
@@ -37614,6 +38634,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Swing.Event.TreeExpansionListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Swing.Event.TreeExpansionListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Swing.Event.TreeModelEvent.yml",
       "output": {
         ".html": {
@@ -37628,6 +38658,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Javax.Swing.Event.TreeModelListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Swing.Event.TreeModelListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Swing.Event.TreeModelListenerDirect.html"
         }
       },
       "version": ""
@@ -37654,10 +38694,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Swing.Event.TreeSelectionListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Swing.Event.TreeSelectionListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Swing.Event.TreeWillExpandListener.yml",
       "output": {
         ".html": {
           "relative_path": "api/Javax.Swing.Event.TreeWillExpandListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Swing.Event.TreeWillExpandListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Swing.Event.TreeWillExpandListenerDirect.html"
         }
       },
       "version": ""
@@ -37678,6 +38738,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Javax.Swing.Event.UndoableEditListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Swing.Event.UndoableEditListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Swing.Event.UndoableEditListenerDirect.html"
         }
       },
       "version": ""
@@ -47654,6 +48724,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Xml.Transform.ErrorListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Xml.Transform.ErrorListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Xml.Transform.IErrorListener.yml",
       "output": {
         ".html": {
@@ -48388,6 +49468,16 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNet.Specific.JNetAsyncEnumerator-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Specific.JNetHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Specific.JNetHelper.html"
         }
       },
       "version": ""
@@ -50018,6 +51108,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Org.W3c.Dom.Events.EventListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Org.W3c.Dom.Events.EventListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Org.W3c.Dom.Events.EventListenerDirect.html"
         }
       },
       "version": ""
@@ -52544,6 +53644,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Org.Xml.Sax.Helpers.ParserAdapterDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Org.Xml.Sax.Helpers.ParserAdapterDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Org.Xml.Sax.Helpers.XMLFilterImpl.yml",
       "output": {
         ".html": {
@@ -52558,6 +53668,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Org.Xml.Sax.Helpers.XMLReaderAdapter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Org.Xml.Sax.Helpers.XMLReaderAdapterDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Org.Xml.Sax.Helpers.XMLReaderAdapterDirect.html"
         }
       },
       "version": ""
@@ -52821,6 +53941,16 @@
       "output": {
         ".html": {
           "relative_path": "articles/jvm_callbacks.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/performancetips.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/performancetips.html"
         }
       },
       "version": ""

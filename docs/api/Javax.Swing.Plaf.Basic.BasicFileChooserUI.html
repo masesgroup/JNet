@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -365,6 +365,9 @@ Class BasicFileChooserUI  <a class="header-action link-secondary" title="View so
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -395,7 +398,10 @@ Class BasicFileChooserUI  <a class="header-action link-secondary" title="View so
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.Dispose()</span>
@@ -717,7 +723,8 @@ Class BasicFileChooserUI  <a class="header-action link-secondary" title="View so
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Basic/BasicFileChooserUI.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getDirectoryName()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getDirectoryName()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#setDirectoryName(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#setDirectoryName(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getDirectoryName()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getDirectoryName()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#setDirectoryName(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#setDirectoryName(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -781,7 +788,8 @@ Class BasicFileChooserUI  <a class="header-action link-secondary" title="View so
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Basic/BasicFileChooserUI.cs/#L80"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getFileName()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getFileName()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#setFileName(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#setFileName(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getFileName()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getFileName()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#setFileName(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#setFileName(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1166,7 +1174,7 @@ Class BasicFileChooserUI  <a class="header-action link-secondary" title="View so
 
   <h3 id="Javax_Swing_Plaf_Basic_BasicFileChooserUI_ClearIconCache" data-uid="Javax.Swing.Plaf.Basic.BasicFileChooserUI.ClearIconCache">
   ClearIconCache()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Basic/BasicFileChooserUI.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Basic/BasicFileChooserUI.cs/#L190"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#clearIconCache()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#clearIconCache()</a></p>
@@ -1193,7 +1201,7 @@ Class BasicFileChooserUI  <a class="header-action link-secondary" title="View so
 
   <h3 id="Javax_Swing_Plaf_Basic_BasicFileChooserUI_CreateListSelectionListener_Javax_Swing_JFileChooser_" data-uid="Javax.Swing.Plaf.Basic.BasicFileChooserUI.CreateListSelectionListener(Javax.Swing.JFileChooser)">
   CreateListSelectionListener(JFileChooser)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Basic/BasicFileChooserUI.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Basic/BasicFileChooserUI.cs/#L174"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#createListSelectionListener(javax.swing.JFileChooser)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#createListSelectionListener(javax.swing.JFileChooser)</a></p>
@@ -1202,6 +1210,45 @@ Class BasicFileChooserUI  <a class="header-action link-secondary" title="View so
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public ListSelectionListener CreateListSelectionListener(JFileChooser arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Swing.JFileChooser.html">JFileChooser</a></dt>
+    <dd><p><a class="xref" href="Javax.Swing.JFileChooser.html">JFileChooser</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Swing.Event.ListSelectionListener.html">ListSelectionListener</a></dt>
+    <dd><p><a class="xref" href="Javax.Swing.Event.ListSelectionListener.html">ListSelectionListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Swing_Plaf_Basic_BasicFileChooserUI_CreateListSelectionListenerDirect_" data-uid="Javax.Swing.Plaf.Basic.BasicFileChooserUI.CreateListSelectionListenerDirect*"></a>
+
+  <h3 id="Javax_Swing_Plaf_Basic_BasicFileChooserUI_CreateListSelectionListenerDirect_Javax_Swing_JFileChooser_" data-uid="Javax.Swing.Plaf.Basic.BasicFileChooserUI.CreateListSelectionListenerDirect(Javax.Swing.JFileChooser)">
+  CreateListSelectionListenerDirect(JFileChooser)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Basic/BasicFileChooserUI.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#createListSelectionListener(javax.swing.JFileChooser)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#createListSelectionListener(javax.swing.JFileChooser)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ListSelectionListener CreateListSelectionListenerDirect(JFileChooser arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1241,6 +1288,45 @@ Class BasicFileChooserUI  <a class="header-action link-secondary" title="View so
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PropertyChangeListener CreatePropertyChangeListener(JFileChooser arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Swing.JFileChooser.html">JFileChooser</a></dt>
+    <dd><p><a class="xref" href="Javax.Swing.JFileChooser.html">JFileChooser</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Beans.PropertyChangeListener.html">PropertyChangeListener</a></dt>
+    <dd><p><a class="xref" href="Java.Beans.PropertyChangeListener.html">PropertyChangeListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Swing_Plaf_Basic_BasicFileChooserUI_CreatePropertyChangeListenerDirect_" data-uid="Javax.Swing.Plaf.Basic.BasicFileChooserUI.CreatePropertyChangeListenerDirect*"></a>
+
+  <h3 id="Javax_Swing_Plaf_Basic_BasicFileChooserUI_CreatePropertyChangeListenerDirect_Javax_Swing_JFileChooser_" data-uid="Javax.Swing.Plaf.Basic.BasicFileChooserUI.CreatePropertyChangeListenerDirect(Javax.Swing.JFileChooser)">
+  CreatePropertyChangeListenerDirect(JFileChooser)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Basic/BasicFileChooserUI.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#createPropertyChangeListener(javax.swing.JFileChooser)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#createPropertyChangeListener(javax.swing.JFileChooser)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PropertyChangeListener CreatePropertyChangeListenerDirect(JFileChooser arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1310,7 +1396,7 @@ Class BasicFileChooserUI  <a class="header-action link-secondary" title="View so
 
   <h3 id="Javax_Swing_Plaf_Basic_BasicFileChooserUI_GetApproveButtonToolTipText_Javax_Swing_JFileChooser_" data-uid="Javax.Swing.Plaf.Basic.BasicFileChooserUI.GetApproveButtonToolTipText(Javax.Swing.JFileChooser)">
   GetApproveButtonToolTipText(JFileChooser)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Basic/BasicFileChooserUI.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Basic/BasicFileChooserUI.cs/#L165"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getApproveButtonToolTipText(javax.swing.JFileChooser)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getApproveButtonToolTipText(javax.swing.JFileChooser)</a></p>
@@ -1349,7 +1435,7 @@ Class BasicFileChooserUI  <a class="header-action link-secondary" title="View so
 
   <h3 id="Javax_Swing_Plaf_Basic_BasicFileChooserUI_InstallComponents_Javax_Swing_JFileChooser_" data-uid="Javax.Swing.Plaf.Basic.BasicFileChooserUI.InstallComponents(Javax.Swing.JFileChooser)">
   InstallComponents(JFileChooser)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Basic/BasicFileChooserUI.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Basic/BasicFileChooserUI.cs/#L198"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#installComponents(javax.swing.JFileChooser)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#installComponents(javax.swing.JFileChooser)</a></p>
@@ -1382,7 +1468,7 @@ Class BasicFileChooserUI  <a class="header-action link-secondary" title="View so
 
   <h3 id="Javax_Swing_Plaf_Basic_BasicFileChooserUI_UninstallComponents_Javax_Swing_JFileChooser_" data-uid="Javax.Swing.Plaf.Basic.BasicFileChooserUI.UninstallComponents(Javax.Swing.JFileChooser)">
   UninstallComponents(JFileChooser)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Basic/BasicFileChooserUI.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Basic/BasicFileChooserUI.cs/#L206"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#uninstallComponents(javax.swing.JFileChooser)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#uninstallComponents(javax.swing.JFileChooser)</a></p>

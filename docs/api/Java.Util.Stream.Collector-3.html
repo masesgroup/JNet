@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -85,7 +85,7 @@
 
 
   <h1 id="Java_Util_Stream_Collector_3" data-uid="Java.Util.Stream.Collector`3" class="text-break">
-Class Collector&lt;T, A, R&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collector.cs/#L245"><i class="bi bi-code-slash"></i></a>
+Class Collector&lt;T, A, R&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collector.cs/#L305"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -307,6 +307,9 @@ Class Collector&lt;T, A, R&gt;  <a class="header-action link-secondary" title="V
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -337,7 +340,10 @@ Class Collector&lt;T, A, R&gt;  <a class="header-action link-secondary" title="V
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.Dispose()</span>
@@ -725,7 +731,7 @@ public Collector(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_Collector_3_Accumulator" data-uid="Java.Util.Stream.Collector`3.Accumulator">
   Accumulator()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collector.cs/#L298"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collector.cs/#L358"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#accumulator()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#accumulator()</a></p>
@@ -754,11 +760,44 @@ public Collector(params object[] args)</code></pre>
 
 
 
+  <a id="Java_Util_Stream_Collector_3_AccumulatorDirect_" data-uid="Java.Util.Stream.Collector`3.AccumulatorDirect*"></a>
+
+  <h3 id="Java_Util_Stream_Collector_3_AccumulatorDirect" data-uid="Java.Util.Stream.Collector`3.AccumulatorDirect">
+  AccumulatorDirect()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collector.cs/#L367"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#accumulator()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#accumulator()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BiConsumer&lt;A, T&gt; AccumulatorDirect()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Function.BiConsumer-2.html">BiConsumer</a>&lt;A, T&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.BiConsumer.html">BiConsumer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_Stream_Collector_3_CharacteristicsMethod_" data-uid="Java.Util.Stream.Collector`3.CharacteristicsMethod*"></a>
 
   <h3 id="Java_Util_Stream_Collector_3_CharacteristicsMethod" data-uid="Java.Util.Stream.Collector`3.CharacteristicsMethod">
   CharacteristicsMethod()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collector.cs/#L334"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collector.cs/#L430"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#characteristics()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#characteristics()</a></p>
@@ -791,7 +830,7 @@ public Collector(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_Collector_3_Combiner" data-uid="Java.Util.Stream.Collector`3.Combiner">
   Combiner()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collector.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collector.cs/#L376"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#combiner()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#combiner()</a></p>
@@ -820,11 +859,44 @@ public Collector(params object[] args)</code></pre>
 
 
 
+  <a id="Java_Util_Stream_Collector_3_CombinerDirect_" data-uid="Java.Util.Stream.Collector`3.CombinerDirect*"></a>
+
+  <h3 id="Java_Util_Stream_Collector_3_CombinerDirect" data-uid="Java.Util.Stream.Collector`3.CombinerDirect">
+  CombinerDirect()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collector.cs/#L385"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#combiner()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#combiner()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BinaryOperator&lt;A&gt; CombinerDirect()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Function.BinaryOperator-1.html">BinaryOperator</a>&lt;A&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.BinaryOperator.html">BinaryOperator</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_Stream_Collector_3_Finisher_" data-uid="Java.Util.Stream.Collector`3.Finisher*"></a>
 
   <h3 id="Java_Util_Stream_Collector_3_Finisher" data-uid="Java.Util.Stream.Collector`3.Finisher">
   Finisher()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collector.cs/#L316"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collector.cs/#L394"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#finisher()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#finisher()</a></p>
@@ -853,11 +925,44 @@ public Collector(params object[] args)</code></pre>
 
 
 
+  <a id="Java_Util_Stream_Collector_3_FinisherDirect_" data-uid="Java.Util.Stream.Collector`3.FinisherDirect*"></a>
+
+  <h3 id="Java_Util_Stream_Collector_3_FinisherDirect" data-uid="Java.Util.Stream.Collector`3.FinisherDirect">
+  FinisherDirect()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collector.cs/#L403"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#finisher()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#finisher()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Function&lt;A, R&gt; FinisherDirect()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Function.Function-2.html">Function</a>&lt;A, R&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Function.html">Function</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_Stream_Collector_3_Of_" data-uid="Java.Util.Stream.Collector`3.Of*"></a>
 
   <h3 id="Java_Util_Stream_Collector_3_Of_Java_Util_Function_Supplier__1__Java_Util_Function_BiConsumer__1__0__Java_Util_Function_BinaryOperator__1__Java_Util_Function_Function__1__2__Java_Util_Stream_Collector_Characteristics___" data-uid="Java.Util.Stream.Collector`3.Of(Java.Util.Function.Supplier{`1},Java.Util.Function.BiConsumer{`1,`0},Java.Util.Function.BinaryOperator{`1},Java.Util.Function.Function{`1,`2},Java.Util.Stream.Collector.Characteristics[])">
   Of(Supplier&lt;A&gt;, BiConsumer&lt;A, T&gt;, BinaryOperator&lt;A&gt;, Function&lt;A, R&gt;, params Characteristics[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collector.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collector.cs/#L333"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#of(java.util.function.Supplier,java.util.function.BiConsumer,java.util.function.BinaryOperator,java.util.function.Function,java.util.stream.Collector.Characteristics[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#of(java.util.function.Supplier,java.util.function.BiConsumer,java.util.function.BinaryOperator,java.util.function.Function,java.util.stream.Collector.Characteristics[])</a></p>
@@ -908,7 +1013,7 @@ public Collector(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_Collector_3_Of_Java_Util_Function_Supplier__2__Java_Util_Function_BiConsumer__2__0__Java_Util_Function_BinaryOperator__2__Java_Util_Stream_Collector_Characteristics___" data-uid="Java.Util.Stream.Collector`3.Of(Java.Util.Function.Supplier{`2},Java.Util.Function.BiConsumer{`2,`0},Java.Util.Function.BinaryOperator{`2},Java.Util.Stream.Collector.Characteristics[])">
   Of(Supplier&lt;R&gt;, BiConsumer&lt;R, T&gt;, BinaryOperator&lt;R&gt;, params Characteristics[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collector.cs/#L285"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collector.cs/#L345"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#of(java.util.function.Supplier,java.util.function.BiConsumer,java.util.function.BinaryOperator,java.util.stream.Collector.Characteristics[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#of(java.util.function.Supplier,java.util.function.BiConsumer,java.util.function.BinaryOperator,java.util.stream.Collector.Characteristics[])</a></p>
@@ -956,7 +1061,7 @@ public Collector(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_Collector_3_Supplier" data-uid="Java.Util.Stream.Collector`3.Supplier">
   Supplier()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collector.cs/#L325"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collector.cs/#L412"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#supplier()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#supplier()</a></p>
@@ -985,6 +1090,39 @@ public Collector(params object[] args)</code></pre>
 
 
 
+  <a id="Java_Util_Stream_Collector_3_SupplierDirect_" data-uid="Java.Util.Stream.Collector`3.SupplierDirect*"></a>
+
+  <h3 id="Java_Util_Stream_Collector_3_SupplierDirect" data-uid="Java.Util.Stream.Collector`3.SupplierDirect">
+  SupplierDirect()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collector.cs/#L421"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#supplier()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#supplier()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Supplier&lt;A&gt; SupplierDirect()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Function.Supplier-1.html">Supplier</a>&lt;A&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Supplier.html">Supplier</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="operators">Operators
 </h2>
 
@@ -993,7 +1131,7 @@ public Collector(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_Collector_3_op_Implicit_Java_Util_Stream_Collector__0__1__2___Java_Util_Stream_Collector" data-uid="Java.Util.Stream.Collector`3.op_Implicit(Java.Util.Stream.Collector{`0,`1,`2})~Java.Util.Stream.Collector">
   implicit operator Collector(Collector&lt;T, A, R&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collector.cs/#L255"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collector.cs/#L315"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.Stream.Collector-3.html">Collector&lt;T, A, R&gt;</a> to <a class="xref" href="Java.Util.Stream.Collector.html">Collector</a></p>
@@ -1030,7 +1168,7 @@ public Collector(params object[] args)</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collector.cs/#L245" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collector.cs/#L305" class="edit-link">Edit this page</a>
         </div>
 
 

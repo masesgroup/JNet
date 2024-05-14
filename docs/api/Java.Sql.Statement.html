@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -304,6 +304,9 @@ Class Statement  <a class="header-action link-secondary" title="View source" hre
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -334,7 +337,10 @@ Class Statement  <a class="header-action link-secondary" title="View source" hre
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.Dispose()</span>
@@ -721,7 +727,8 @@ public Statement(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/Statement.cs/#L415"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getFetchDirection()">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getFetchDirection()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setFetchDirection(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setFetchDirection(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getFetchDirection()">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getFetchDirection()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setFetchDirection(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setFetchDirection(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -753,7 +760,8 @@ public Statement(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/Statement.cs/#L422"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getFetchSize()">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getFetchSize()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setFetchSize(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setFetchSize(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getFetchSize()">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getFetchSize()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setFetchSize(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setFetchSize(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -977,7 +985,8 @@ public Statement(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/Statement.cs/#L436"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getLargeMaxRows()">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getLargeMaxRows()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setLargeMaxRows(long)">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setLargeMaxRows(long)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getLargeMaxRows()">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getLargeMaxRows()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setLargeMaxRows(long)">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setLargeMaxRows(long)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1041,7 +1050,8 @@ public Statement(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/Statement.cs/#L450"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getMaxFieldSize()">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getMaxFieldSize()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setMaxFieldSize(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setMaxFieldSize(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getMaxFieldSize()">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getMaxFieldSize()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setMaxFieldSize(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setMaxFieldSize(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1073,7 +1083,8 @@ public Statement(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/Statement.cs/#L457"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getMaxRows()">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getMaxRows()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setMaxRows(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setMaxRows(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getMaxRows()">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getMaxRows()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setMaxRows(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setMaxRows(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1169,7 +1180,8 @@ public Statement(params object[] args)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/Statement.cs/#L471"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getQueryTimeout()">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getQueryTimeout()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setQueryTimeout(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setQueryTimeout(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getQueryTimeout()">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getQueryTimeout()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setQueryTimeout(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setQueryTimeout(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

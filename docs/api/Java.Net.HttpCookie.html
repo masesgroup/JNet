@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -299,6 +299,9 @@ Class HttpCookie  <a class="header-action link-secondary" title="View source" hr
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -329,7 +332,10 @@ Class HttpCookie  <a class="header-action link-secondary" title="View source" hr
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.Dispose()</span>
@@ -622,7 +628,8 @@ Class HttpCookie  <a class="header-action link-secondary" title="View source" hr
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/HttpCookie.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getComment()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getComment()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setComment(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setComment(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getComment()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getComment()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setComment(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setComment(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -654,7 +661,8 @@ Class HttpCookie  <a class="header-action link-secondary" title="View source" hr
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/HttpCookie.cs/#L86"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getCommentURL()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getCommentURL()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setCommentURL(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setCommentURL(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getCommentURL()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getCommentURL()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setCommentURL(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setCommentURL(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -686,7 +694,8 @@ Class HttpCookie  <a class="header-action link-secondary" title="View source" hr
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/HttpCookie.cs/#L93"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getDiscard()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getDiscard()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setDiscard(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setDiscard(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getDiscard()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getDiscard()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setDiscard(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setDiscard(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -718,7 +727,8 @@ Class HttpCookie  <a class="header-action link-secondary" title="View source" hr
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/HttpCookie.cs/#L100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getDomain()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getDomain()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setDomain(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setDomain(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getDomain()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getDomain()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setDomain(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setDomain(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -878,7 +888,8 @@ Class HttpCookie  <a class="header-action link-secondary" title="View source" hr
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/HttpCookie.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getMaxAge()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getMaxAge()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setMaxAge(long)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setMaxAge(long)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getMaxAge()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getMaxAge()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setMaxAge(long)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setMaxAge(long)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -942,7 +953,8 @@ Class HttpCookie  <a class="header-action link-secondary" title="View source" hr
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/HttpCookie.cs/#L121"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getPath()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getPath()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setPath(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setPath(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getPath()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getPath()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setPath(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setPath(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -974,7 +986,8 @@ Class HttpCookie  <a class="header-action link-secondary" title="View source" hr
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/HttpCookie.cs/#L128"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getPortlist()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getPortlist()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setPortlist(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setPortlist(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getPortlist()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getPortlist()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setPortlist(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setPortlist(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1006,7 +1019,8 @@ Class HttpCookie  <a class="header-action link-secondary" title="View source" hr
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/HttpCookie.cs/#L135"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getSecure()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getSecure()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setSecure(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setSecure(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getSecure()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getSecure()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setSecure(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setSecure(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1038,7 +1052,8 @@ Class HttpCookie  <a class="header-action link-secondary" title="View source" hr
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/HttpCookie.cs/#L142"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getValue()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getValue()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setValue(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setValue(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getValue()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getValue()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setValue(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setValue(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1070,7 +1085,8 @@ Class HttpCookie  <a class="header-action link-secondary" title="View source" hr
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/HttpCookie.cs/#L149"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getVersion()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getVersion()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setVersion(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setVersion(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getVersion()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getVersion()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setVersion(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setVersion(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

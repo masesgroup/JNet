@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -244,6 +244,9 @@ Class JList  <a class="header-action link-secondary" title="View source" href="h
     </div>
     <div>
       <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_GetActionForKeyStroke_Javax_Swing_KeyStroke_">JComponent.GetActionForKeyStroke(KeyStroke)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_GetActionForKeyStrokeDirect_Javax_Swing_KeyStroke_">JComponent.GetActionForKeyStrokeDirect(KeyStroke)</a>
     </div>
     <div>
       <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_GetInsets_Java_Awt_Insets_">JComponent.GetInsets(Insets)</a>
@@ -1071,6 +1074,9 @@ Class JList  <a class="header-action link-secondary" title="View source" href="h
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -1101,7 +1107,10 @@ Class JList  <a class="header-action link-secondary" title="View source" href="h
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.ToString()</span>
@@ -1257,7 +1266,7 @@ Class JList  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Javax_Swing_JList__ctor" data-uid="Javax.Swing.JList.#ctor">
   JList()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3331"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3372"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -1350,7 +1359,7 @@ Class JList  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Javax_Swing_JList__ctor_System_Object___" data-uid="Javax.Swing.JList.#ctor(System.Object[])">
   JList(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3335"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3376"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -1418,7 +1427,7 @@ Class JList  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Javax_Swing_JList_BridgeClassName" data-uid="Javax.Swing.JList.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3342"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3383"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -1453,7 +1462,8 @@ Class JList  <a class="header-action link-secondary" title="View source" href="h
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JList.cs/#L100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getCellRenderer()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getCellRenderer()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setCellRenderer(javax.swing.ListCellRenderer)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setCellRenderer(javax.swing.ListCellRenderer)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getCellRenderer()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getCellRenderer()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setCellRenderer(javax.swing.ListCellRenderer)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setCellRenderer(javax.swing.ListCellRenderer)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1485,7 +1495,8 @@ Class JList  <a class="header-action link-secondary" title="View source" href="h
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JList.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getDragEnabled()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getDragEnabled()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setDragEnabled(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setDragEnabled(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getDragEnabled()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getDragEnabled()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setDragEnabled(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setDragEnabled(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1517,7 +1528,8 @@ Class JList  <a class="header-action link-secondary" title="View source" href="h
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JList.cs/#L114"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getDropMode()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getDropMode()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setDropMode(javax.swing.DropMode)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setDropMode(javax.swing.DropMode)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getDropMode()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getDropMode()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setDropMode(javax.swing.DropMode)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setDropMode(javax.swing.DropMode)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1581,7 +1593,8 @@ Class JList  <a class="header-action link-secondary" title="View source" href="h
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JList.cs/#L128"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getFixedCellHeight()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getFixedCellHeight()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setFixedCellHeight(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setFixedCellHeight(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getFixedCellHeight()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getFixedCellHeight()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setFixedCellHeight(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setFixedCellHeight(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1613,7 +1626,8 @@ Class JList  <a class="header-action link-secondary" title="View source" href="h
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JList.cs/#L135"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getFixedCellWidth()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getFixedCellWidth()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setFixedCellWidth(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setFixedCellWidth(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getFixedCellWidth()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getFixedCellWidth()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setFixedCellWidth(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setFixedCellWidth(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1706,7 +1720,7 @@ Class JList  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Javax_Swing_JList_IsBridgeAbstract" data-uid="Javax.Swing.JList.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3346"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3387"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -1738,7 +1752,7 @@ Class JList  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Javax_Swing_JList_IsBridgeCloseable" data-uid="Javax.Swing.JList.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3350"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3391"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -1770,7 +1784,7 @@ Class JList  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Javax_Swing_JList_IsBridgeInterface" data-uid="Javax.Swing.JList.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3354"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3395"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -1802,7 +1816,7 @@ Class JList  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Javax_Swing_JList_IsBridgeStatic" data-uid="Javax.Swing.JList.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3358"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3399"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -1869,7 +1883,8 @@ Class JList  <a class="header-action link-secondary" title="View source" href="h
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JList.cs/#L156"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getLayoutOrientation()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getLayoutOrientation()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setLayoutOrientation(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setLayoutOrientation(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getLayoutOrientation()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getLayoutOrientation()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setLayoutOrientation(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setLayoutOrientation(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2029,7 +2044,8 @@ Class JList  <a class="header-action link-secondary" title="View source" href="h
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JList.cs/#L191"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getModel()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getModel()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setModel(javax.swing.ListModel)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setModel(javax.swing.ListModel)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getModel()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getModel()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setModel(javax.swing.ListModel)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setModel(javax.swing.ListModel)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2093,7 +2109,8 @@ Class JList  <a class="header-action link-secondary" title="View source" href="h
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JList.cs/#L205"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getPrototypeCellValue()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getPrototypeCellValue()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setPrototypeCellValue(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setPrototypeCellValue(java.lang.Object)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getPrototypeCellValue()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getPrototypeCellValue()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setPrototypeCellValue(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setPrototypeCellValue(java.lang.Object)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2189,7 +2206,8 @@ Class JList  <a class="header-action link-secondary" title="View source" href="h
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JList.cs/#L226"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectedIndex()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectedIndex()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectedIndex(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectedIndex(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectedIndex()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectedIndex()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectedIndex(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectedIndex(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2221,7 +2239,8 @@ Class JList  <a class="header-action link-secondary" title="View source" href="h
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JList.cs/#L233"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectedIndices()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectedIndices()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectedIndices(int[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectedIndices(int[])</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectedIndices()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectedIndices()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectedIndices(int[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectedIndices(int[])</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2317,7 +2336,8 @@ Class JList  <a class="header-action link-secondary" title="View source" href="h
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JList.cs/#L254"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectionBackground()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectionBackground()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectionBackground(java.awt.Color)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectionBackground(java.awt.Color)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectionBackground()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectionBackground()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectionBackground(java.awt.Color)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectionBackground(java.awt.Color)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2349,7 +2369,8 @@ Class JList  <a class="header-action link-secondary" title="View source" href="h
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JList.cs/#L261"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectionForeground()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectionForeground()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectionForeground(java.awt.Color)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectionForeground(java.awt.Color)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectionForeground()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectionForeground()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectionForeground(java.awt.Color)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectionForeground(java.awt.Color)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2381,7 +2402,8 @@ Class JList  <a class="header-action link-secondary" title="View source" href="h
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JList.cs/#L268"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectionMode()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectionMode()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectionMode(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectionMode(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectionMode()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectionMode()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectionMode(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectionMode(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2413,7 +2435,8 @@ Class JList  <a class="header-action link-secondary" title="View source" href="h
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JList.cs/#L275"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectionModel()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectionModel()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectionModel(javax.swing.ListSelectionModel)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectionModel(javax.swing.ListSelectionModel)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectionModel()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectionModel()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectionModel(javax.swing.ListSelectionModel)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectionModel(javax.swing.ListSelectionModel)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2509,7 +2532,8 @@ Class JList  <a class="header-action link-secondary" title="View source" href="h
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JList.cs/#L282"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getValueIsAdjusting()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getValueIsAdjusting()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setValueIsAdjusting(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setValueIsAdjusting(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getValueIsAdjusting()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getValueIsAdjusting()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setValueIsAdjusting(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setValueIsAdjusting(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2541,7 +2565,8 @@ Class JList  <a class="header-action link-secondary" title="View source" href="h
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JList.cs/#L289"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getVisibleRowCount()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getVisibleRowCount()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setVisibleRowCount(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setVisibleRowCount(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getVisibleRowCount()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getVisibleRowCount()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setVisibleRowCount(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setVisibleRowCount(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

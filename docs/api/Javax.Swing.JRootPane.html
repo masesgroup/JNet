@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -244,6 +244,9 @@ Class JRootPane  <a class="header-action link-secondary" title="View source" hre
     </div>
     <div>
       <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_GetActionForKeyStroke_Javax_Swing_KeyStroke_">JComponent.GetActionForKeyStroke(KeyStroke)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_GetActionForKeyStrokeDirect_Javax_Swing_KeyStroke_">JComponent.GetActionForKeyStrokeDirect(KeyStroke)</a>
     </div>
     <div>
       <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_GetInsets_Java_Awt_Insets_">JComponent.GetInsets(Insets)</a>
@@ -1071,6 +1074,9 @@ Class JRootPane  <a class="header-action link-secondary" title="View source" hre
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -1101,7 +1107,10 @@ Class JRootPane  <a class="header-action link-secondary" title="View source" hre
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.ToString()</span>
@@ -1257,7 +1266,7 @@ Class JRootPane  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Javax_Swing_JRootPane__ctor" data-uid="Javax.Swing.JRootPane.#ctor">
   JRootPane()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3948"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3989"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -1284,7 +1293,7 @@ Class JRootPane  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Javax_Swing_JRootPane__ctor_System_Object___" data-uid="Javax.Swing.JRootPane.#ctor(System.Object[])">
   JRootPane(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3952"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3993"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -1320,7 +1329,7 @@ Class JRootPane  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Javax_Swing_JRootPane_BridgeClassName" data-uid="Javax.Swing.JRootPane.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3959"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L4000"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -1387,7 +1396,8 @@ Class JRootPane  <a class="header-action link-secondary" title="View source" hre
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JRootPane.cs/#L109"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getContentPane()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getContentPane()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setContentPane(java.awt.Container)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setContentPane(java.awt.Container)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getContentPane()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getContentPane()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setContentPane(java.awt.Container)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setContentPane(java.awt.Container)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1419,7 +1429,8 @@ Class JRootPane  <a class="header-action link-secondary" title="View source" hre
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JRootPane.cs/#L116"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getDefaultButton()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getDefaultButton()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setDefaultButton(javax.swing.JButton)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setDefaultButton(javax.swing.JButton)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getDefaultButton()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getDefaultButton()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setDefaultButton(javax.swing.JButton)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setDefaultButton(javax.swing.JButton)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1547,7 +1558,8 @@ Class JRootPane  <a class="header-action link-secondary" title="View source" hre
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JRootPane.cs/#L123"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getGlassPane()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getGlassPane()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setGlassPane(java.awt.Component)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setGlassPane(java.awt.Component)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getGlassPane()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getGlassPane()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setGlassPane(java.awt.Component)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setGlassPane(java.awt.Component)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1608,7 +1620,7 @@ Class JRootPane  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Javax_Swing_JRootPane_IsBridgeAbstract" data-uid="Javax.Swing.JRootPane.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3963"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L4004"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -1640,7 +1652,7 @@ Class JRootPane  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Javax_Swing_JRootPane_IsBridgeCloseable" data-uid="Javax.Swing.JRootPane.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3967"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L4008"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -1672,7 +1684,7 @@ Class JRootPane  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Javax_Swing_JRootPane_IsBridgeInterface" data-uid="Javax.Swing.JRootPane.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3971"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L4012"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -1704,7 +1716,7 @@ Class JRootPane  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Javax_Swing_JRootPane_IsBridgeStatic" data-uid="Javax.Swing.JRootPane.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L3975"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L4016"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -1739,7 +1751,8 @@ Class JRootPane  <a class="header-action link-secondary" title="View source" hre
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JRootPane.cs/#L130"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getJMenuBar()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getJMenuBar()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setJMenuBar(javax.swing.JMenuBar)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setJMenuBar(javax.swing.JMenuBar)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getJMenuBar()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getJMenuBar()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setJMenuBar(javax.swing.JMenuBar)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setJMenuBar(javax.swing.JMenuBar)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1771,7 +1784,8 @@ Class JRootPane  <a class="header-action link-secondary" title="View source" hre
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JRootPane.cs/#L137"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getLayeredPane()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getLayeredPane()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setLayeredPane(javax.swing.JLayeredPane)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setLayeredPane(javax.swing.JLayeredPane)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getLayeredPane()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getLayeredPane()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setLayeredPane(javax.swing.JLayeredPane)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setLayeredPane(javax.swing.JLayeredPane)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1931,7 +1945,8 @@ Class JRootPane  <a class="header-action link-secondary" title="View source" hre
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JRootPane.cs/#L144"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getWindowDecorationStyle()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getWindowDecorationStyle()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setWindowDecorationStyle(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setWindowDecorationStyle(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getWindowDecorationStyle()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getWindowDecorationStyle()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setWindowDecorationStyle(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setWindowDecorationStyle(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

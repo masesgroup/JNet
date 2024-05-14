@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -244,6 +244,9 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
     </div>
     <div>
       <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_GetActionForKeyStroke_Javax_Swing_KeyStroke_">JComponent.GetActionForKeyStroke(KeyStroke)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_GetActionForKeyStrokeDirect_Javax_Swing_KeyStroke_">JComponent.GetActionForKeyStrokeDirect(KeyStroke)</a>
     </div>
     <div>
       <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_GetInsets_Java_Awt_Insets_">JComponent.GetInsets(Insets)</a>
@@ -1071,6 +1074,9 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -1101,7 +1107,10 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.ToString()</span>
@@ -1257,7 +1266,7 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Javax_Swing_JTable__ctor" data-uid="Javax.Swing.JTable.#ctor">
   JTable()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L4476"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L4517"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -1464,7 +1473,7 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Javax_Swing_JTable__ctor_System_Object___" data-uid="Javax.Swing.JTable.#ctor(System.Object[])">
   JTable(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L4480"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L4521"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -1663,7 +1672,8 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JTable.cs/#L154"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getAutoCreateColumnsFromModel()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getAutoCreateColumnsFromModel()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setAutoCreateColumnsFromModel(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setAutoCreateColumnsFromModel(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getAutoCreateColumnsFromModel()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getAutoCreateColumnsFromModel()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setAutoCreateColumnsFromModel(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setAutoCreateColumnsFromModel(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1695,7 +1705,8 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JTable.cs/#L161"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getAutoCreateRowSorter()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getAutoCreateRowSorter()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setAutoCreateRowSorter(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setAutoCreateRowSorter(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getAutoCreateRowSorter()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getAutoCreateRowSorter()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setAutoCreateRowSorter(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setAutoCreateRowSorter(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1727,7 +1738,8 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JTable.cs/#L168"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getAutoResizeMode()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getAutoResizeMode()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setAutoResizeMode(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setAutoResizeMode(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getAutoResizeMode()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getAutoResizeMode()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setAutoResizeMode(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setAutoResizeMode(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1756,7 +1768,7 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Javax_Swing_JTable_BridgeClassName" data-uid="Javax.Swing.JTable.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L4487"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L4528"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -1791,7 +1803,8 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JTable.cs/#L175"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getCellEditor()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getCellEditor()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setCellEditor(javax.swing.table.TableCellEditor)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setCellEditor(javax.swing.table.TableCellEditor)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getCellEditor()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getCellEditor()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setCellEditor(javax.swing.table.TableCellEditor)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setCellEditor(javax.swing.table.TableCellEditor)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1823,7 +1836,8 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JTable.cs/#L182"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getCellSelectionEnabled()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getCellSelectionEnabled()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setCellSelectionEnabled(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setCellSelectionEnabled(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getCellSelectionEnabled()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getCellSelectionEnabled()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setCellSelectionEnabled(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setCellSelectionEnabled(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1887,7 +1901,8 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JTable.cs/#L196"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getColumnModel()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getColumnModel()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setColumnModel(javax.swing.table.TableColumnModel)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setColumnModel(javax.swing.table.TableColumnModel)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getColumnModel()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getColumnModel()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setColumnModel(javax.swing.table.TableColumnModel)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setColumnModel(javax.swing.table.TableColumnModel)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1919,7 +1934,8 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JTable.cs/#L203"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getColumnSelectionAllowed()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getColumnSelectionAllowed()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setColumnSelectionAllowed(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setColumnSelectionAllowed(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getColumnSelectionAllowed()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getColumnSelectionAllowed()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setColumnSelectionAllowed(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setColumnSelectionAllowed(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1951,7 +1967,8 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JTable.cs/#L210"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getDragEnabled()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getDragEnabled()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setDragEnabled(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setDragEnabled(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getDragEnabled()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getDragEnabled()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setDragEnabled(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setDragEnabled(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1983,7 +2000,8 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JTable.cs/#L217"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getDropMode()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getDropMode()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setDropMode(javax.swing.DropMode)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setDropMode(javax.swing.DropMode)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getDropMode()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getDropMode()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setDropMode(javax.swing.DropMode)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setDropMode(javax.swing.DropMode)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2015,7 +2033,8 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JTable.cs/#L224"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getEditingColumn()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getEditingColumn()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setEditingColumn(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setEditingColumn(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getEditingColumn()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getEditingColumn()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setEditingColumn(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setEditingColumn(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2047,7 +2066,8 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JTable.cs/#L231"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getEditingRow()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getEditingRow()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setEditingRow(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setEditingRow(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getEditingRow()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getEditingRow()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setEditingRow(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setEditingRow(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2111,7 +2131,8 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JTable.cs/#L245"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getFillsViewportHeight()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getFillsViewportHeight()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setFillsViewportHeight(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setFillsViewportHeight(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getFillsViewportHeight()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getFillsViewportHeight()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setFillsViewportHeight(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setFillsViewportHeight(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2175,7 +2196,8 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JTable.cs/#L259"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getGridColor()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getGridColor()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setGridColor(java.awt.Color)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setGridColor(java.awt.Color)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getGridColor()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getGridColor()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setGridColor(java.awt.Color)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setGridColor(java.awt.Color)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2207,7 +2229,8 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JTable.cs/#L266"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getIntercellSpacing()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getIntercellSpacing()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setIntercellSpacing(java.awt.Dimension)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setIntercellSpacing(java.awt.Dimension)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getIntercellSpacing()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getIntercellSpacing()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setIntercellSpacing(java.awt.Dimension)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setIntercellSpacing(java.awt.Dimension)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2236,7 +2259,7 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Javax_Swing_JTable_IsBridgeAbstract" data-uid="Javax.Swing.JTable.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L4491"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L4532"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -2268,7 +2291,7 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Javax_Swing_JTable_IsBridgeCloseable" data-uid="Javax.Swing.JTable.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L4495"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L4536"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -2300,7 +2323,7 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Javax_Swing_JTable_IsBridgeInterface" data-uid="Javax.Swing.JTable.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L4499"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L4540"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -2332,7 +2355,7 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Javax_Swing_JTable_IsBridgeStatic" data-uid="Javax.Swing.JTable.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L4503"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L4544"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -2367,7 +2390,8 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JTable.cs/#L273"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getModel()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getModel()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setModel(javax.swing.table.TableModel)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setModel(javax.swing.table.TableModel)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getModel()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getModel()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setModel(javax.swing.table.TableModel)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setModel(javax.swing.table.TableModel)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2399,7 +2423,8 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JTable.cs/#L280"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getPreferredScrollableViewportSize()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getPreferredScrollableViewportSize()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setPreferredScrollableViewportSize(java.awt.Dimension)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setPreferredScrollableViewportSize(java.awt.Dimension)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getPreferredScrollableViewportSize()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getPreferredScrollableViewportSize()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setPreferredScrollableViewportSize(java.awt.Dimension)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setPreferredScrollableViewportSize(java.awt.Dimension)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2463,7 +2488,8 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JTable.cs/#L294"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getRowHeight()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getRowHeight()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setRowHeight(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setRowHeight(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getRowHeight()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getRowHeight()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setRowHeight(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setRowHeight(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2495,7 +2521,8 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JTable.cs/#L301"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getRowMargin()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getRowMargin()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setRowMargin(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setRowMargin(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getRowMargin()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getRowMargin()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setRowMargin(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setRowMargin(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2527,7 +2554,8 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JTable.cs/#L308"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getRowSelectionAllowed()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getRowSelectionAllowed()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setRowSelectionAllowed(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setRowSelectionAllowed(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getRowSelectionAllowed()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getRowSelectionAllowed()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setRowSelectionAllowed(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setRowSelectionAllowed(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2559,7 +2587,8 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JTable.cs/#L315"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getRowSorter()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getRowSorter()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setRowSorter(javax.swing.RowSorter)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setRowSorter(javax.swing.RowSorter)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getRowSorter()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getRowSorter()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setRowSorter(javax.swing.RowSorter)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setRowSorter(javax.swing.RowSorter)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2847,7 +2876,8 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JTable.cs/#L378"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getSelectionBackground()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getSelectionBackground()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setSelectionBackground(java.awt.Color)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setSelectionBackground(java.awt.Color)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getSelectionBackground()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getSelectionBackground()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setSelectionBackground(java.awt.Color)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setSelectionBackground(java.awt.Color)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2879,7 +2909,8 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JTable.cs/#L385"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getSelectionForeground()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getSelectionForeground()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setSelectionForeground(java.awt.Color)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setSelectionForeground(java.awt.Color)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getSelectionForeground()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getSelectionForeground()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setSelectionForeground(java.awt.Color)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setSelectionForeground(java.awt.Color)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2911,7 +2942,8 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JTable.cs/#L392"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getSelectionModel()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getSelectionModel()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setSelectionModel(javax.swing.ListSelectionModel)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setSelectionModel(javax.swing.ListSelectionModel)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getSelectionModel()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getSelectionModel()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setSelectionModel(javax.swing.ListSelectionModel)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setSelectionModel(javax.swing.ListSelectionModel)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2943,7 +2975,8 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JTable.cs/#L399"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getShowHorizontalLines()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getShowHorizontalLines()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setShowHorizontalLines(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setShowHorizontalLines(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getShowHorizontalLines()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getShowHorizontalLines()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setShowHorizontalLines(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setShowHorizontalLines(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -2975,7 +3008,8 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JTable.cs/#L406"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getShowVerticalLines()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getShowVerticalLines()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setShowVerticalLines(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setShowVerticalLines(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getShowVerticalLines()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getShowVerticalLines()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setShowVerticalLines(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setShowVerticalLines(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3007,7 +3041,8 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JTable.cs/#L413"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getSurrendersFocusOnKeystroke()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getSurrendersFocusOnKeystroke()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setSurrendersFocusOnKeystroke(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setSurrendersFocusOnKeystroke(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getSurrendersFocusOnKeystroke()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getSurrendersFocusOnKeystroke()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setSurrendersFocusOnKeystroke(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setSurrendersFocusOnKeystroke(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3039,7 +3074,8 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JTable.cs/#L420"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getTableHeader()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getTableHeader()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setTableHeader(javax.swing.table.JTableHeader)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setTableHeader(javax.swing.table.JTableHeader)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getTableHeader()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getTableHeader()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setTableHeader(javax.swing.table.JTableHeader)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setTableHeader(javax.swing.table.JTableHeader)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3071,7 +3107,8 @@ Class JTable  <a class="header-action link-secondary" title="View source" href="
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JTable.cs/#L427"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getUpdateSelectionOnSort()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getUpdateSelectionOnSort()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setUpdateSelectionOnSort(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setUpdateSelectionOnSort(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getUpdateSelectionOnSort()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getUpdateSelectionOnSort()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setUpdateSelectionOnSort(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setUpdateSelectionOnSort(boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

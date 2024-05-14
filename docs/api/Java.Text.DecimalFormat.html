@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -401,6 +401,9 @@ Class DecimalFormat  <a class="header-action link-secondary" title="View source"
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -431,7 +434,10 @@ Class DecimalFormat  <a class="header-action link-secondary" title="View source"
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.Dispose()</span>
@@ -757,7 +763,8 @@ Class DecimalFormat  <a class="header-action link-secondary" title="View source"
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/DecimalFormat.cs/#L68"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getDecimalFormatSymbols()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getDecimalFormatSymbols()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setDecimalFormatSymbols(java.text.DecimalFormatSymbols)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setDecimalFormatSymbols(java.text.DecimalFormatSymbols)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getDecimalFormatSymbols()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getDecimalFormatSymbols()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setDecimalFormatSymbols(java.text.DecimalFormatSymbols)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setDecimalFormatSymbols(java.text.DecimalFormatSymbols)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -789,7 +796,8 @@ Class DecimalFormat  <a class="header-action link-secondary" title="View source"
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/DecimalFormat.cs/#L75"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getGroupingSize()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getGroupingSize()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setGroupingSize(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setGroupingSize(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getGroupingSize()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getGroupingSize()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setGroupingSize(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setGroupingSize(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -949,7 +957,8 @@ Class DecimalFormat  <a class="header-action link-secondary" title="View source"
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/DecimalFormat.cs/#L82"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getMultiplier()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getMultiplier()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setMultiplier(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setMultiplier(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getMultiplier()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getMultiplier()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setMultiplier(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setMultiplier(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -981,7 +990,8 @@ Class DecimalFormat  <a class="header-action link-secondary" title="View source"
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/DecimalFormat.cs/#L89"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getNegativePrefix()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getNegativePrefix()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setNegativePrefix(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setNegativePrefix(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getNegativePrefix()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getNegativePrefix()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setNegativePrefix(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setNegativePrefix(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1013,7 +1023,8 @@ Class DecimalFormat  <a class="header-action link-secondary" title="View source"
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/DecimalFormat.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getNegativeSuffix()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getNegativeSuffix()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setNegativeSuffix(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setNegativeSuffix(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getNegativeSuffix()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getNegativeSuffix()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setNegativeSuffix(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setNegativeSuffix(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1045,7 +1056,8 @@ Class DecimalFormat  <a class="header-action link-secondary" title="View source"
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/DecimalFormat.cs/#L103"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getPositivePrefix()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getPositivePrefix()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setPositivePrefix(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setPositivePrefix(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getPositivePrefix()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getPositivePrefix()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setPositivePrefix(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setPositivePrefix(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1077,7 +1089,8 @@ Class DecimalFormat  <a class="header-action link-secondary" title="View source"
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/DecimalFormat.cs/#L110"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getPositiveSuffix()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getPositiveSuffix()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setPositiveSuffix(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setPositiveSuffix(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getPositiveSuffix()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#getPositiveSuffix()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setPositiveSuffix(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setPositiveSuffix(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -1008,6 +1008,9 @@ Class Frame  <a class="header-action link-secondary" title="View source" href="h
       <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
       <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
@@ -1038,7 +1041,10 @@ Class Frame  <a class="header-action link-secondary" title="View source" href="h
       <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.CastTo&lt;TNewClass&gt;(bool)</a>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
       <span class="xref">JVMBridgeBase.ToString()</span>
@@ -1396,7 +1402,8 @@ Class Frame  <a class="header-action link-secondary" title="View source" href="h
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Frame.cs/#L118"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getExtendedState()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getExtendedState()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setExtendedState(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setExtendedState(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getExtendedState()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getExtendedState()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setExtendedState(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setExtendedState(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1748,7 +1755,8 @@ Class Frame  <a class="header-action link-secondary" title="View source" href="h
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Frame.cs/#L132"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getMaximizedBounds()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getMaximizedBounds()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setMaximizedBounds(java.awt.Rectangle)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setMaximizedBounds(java.awt.Rectangle)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getMaximizedBounds()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getMaximizedBounds()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setMaximizedBounds(java.awt.Rectangle)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setMaximizedBounds(java.awt.Rectangle)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1780,7 +1788,8 @@ Class Frame  <a class="header-action link-secondary" title="View source" href="h
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Frame.cs/#L139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getMenuBar()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getMenuBar()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setMenuBar(java.awt.MenuBar)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setMenuBar(java.awt.MenuBar)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getMenuBar()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getMenuBar()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setMenuBar(java.awt.MenuBar)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setMenuBar(java.awt.MenuBar)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1844,7 +1853,8 @@ Class Frame  <a class="header-action link-secondary" title="View source" href="h
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Frame.cs/#L146"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getState()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getState()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setState(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setState(int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getState()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getState()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setState(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setState(int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1876,7 +1886,8 @@ Class Frame  <a class="header-action link-secondary" title="View source" href="h
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Frame.cs/#L153"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getTitle()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getTitle()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setTitle(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setTitle(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getTitle()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getTitle()</a>
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setTitle(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setTitle(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

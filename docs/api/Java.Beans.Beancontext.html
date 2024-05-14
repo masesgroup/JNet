@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -131,6 +131,11 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Java.Beans.Beancontext.BeanContextMembershipListenerDirect.html">BeanContextMembershipListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Beans.Beancontext.BeanContextMembershipListener.html">BeanContextMembershipListener</a> or its generic type if there is one</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Java.Beans.Beancontext.BeanContextProxy.html">BeanContextProxy</a></dt>
       <dd><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextProxy.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextProxy.html</a></p>
 </dd>
@@ -161,6 +166,11 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Java.Beans.Beancontext.BeanContextServiceRevokedListenerDirect.html">BeanContextServiceRevokedListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Beans.Beancontext.BeanContextServiceRevokedListener.html">BeanContextServiceRevokedListener</a> or its generic type if there is one</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Java.Beans.Beancontext.BeanContextServices.html">BeanContextServices</a></dt>
       <dd><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServices.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServices.html</a></p>
 </dd>
@@ -168,6 +178,11 @@ Classes
     <dl class="jumplist">
       <dt><a class="xref" href="Java.Beans.Beancontext.BeanContextServicesListener.html">BeanContextServicesListener</a></dt>
       <dd><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesListener.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesListener.html</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Java.Beans.Beancontext.BeanContextServicesListenerDirect.html">BeanContextServicesListenerDirect</a></dt>
+      <dd><p>Direct override of <a class="xref" href="Java.Beans.Beancontext.BeanContextServicesListener.html">BeanContextServicesListener</a> or its generic type if there is one</p>
 </dd>
     </dl>
     <dl class="jumplist">
