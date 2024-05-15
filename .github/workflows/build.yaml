@@ -210,7 +210,7 @@ jobs:
         with:
           enableCrossOsArchive: true
           path: ./bin/
-          key: JNet_bin_${{ github.run_id }}_${{ github.run_attempt }}
+          key: JNet_bin_${{ env.GITHUB_SHA }}
           
   execute_tests:
     needs: build_windows
@@ -240,7 +240,7 @@ jobs:
           fail-on-cache-miss: true
           enableCrossOsArchive: true
           path: ./bin/
-          key: JNet_bin_${{ github.run_id }}_${{ github.run_attempt }}
+          key: JNet_bin_${{ env.GITHUB_SHA }}
  
       - name: Set up JDK distribution
         uses: actions/setup-java@v4
