@@ -34,16 +34,6 @@ namespace MASES.JNetReflector
         static string _CurrentJavadocBaseUrl;
         static int _CurrentJavadocVersion;
 
-        static Java.Lang.ClassLoader _loader;
-        static Java.Lang.ClassLoader SystemClassLoader
-        {
-            get
-            {
-                if (_loader == null) _loader = Java.Lang.ClassLoader.SystemClassLoader;
-                return _loader;
-            }
-        }
-
         #region General info
 
         public static void SetJavaDocInfo(string currentJavadocBaseUrl, int currentJavadocVersion)
@@ -116,7 +106,7 @@ namespace MASES.JNetReflector
         {
             try
             {
-                return Class.ForName(entry, true, SystemClassLoader);
+                return Class.ForName(entry, true, Class.SystemClassLoader);
             }
             catch
             {
@@ -395,7 +385,7 @@ namespace MASES.JNetReflector
             try
             {
                 var cName = entry.JVMFullQualifiedClassName();
-                return Class.ForName(cName, true, SystemClassLoader);
+                return Class.ForName(cName, true, Class.SystemClassLoader);
             }
             catch
             {
