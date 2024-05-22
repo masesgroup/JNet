@@ -5,11 +5,7 @@ public partial class ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER : ALLPACKAGE_CLAS
     /// <summary>
     /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
     /// </summary>
-    public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER() { if (InitHandlers) InitializeHandlers(); }
-    /// <summary>
-    /// Enable/disable handlers initialization, default is <see langword="true"/>
-    /// </summary>
-    protected virtual bool InitHandlers { get; } = true;
+    public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER() { InitializeHandlers(); }
 
 ALLPACKAGE_CLASSES_STUB_LISTENER_CLASS_PLACEHOLDER
 
@@ -25,12 +21,12 @@ ALLPACKAGE_CLASSES_STUB_LISTENER_CLASS_PLACEHOLDER
 public partial class ALLPACKAGE_CLASSES_STUB_CLASS_DIRECT_PLACEHOLDER : ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER
 {
     /// <summary>
-    /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+    /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
     /// </summary>
     public override bool AutoInit => false;
 
-    /// <inheritdoc cref="ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER.InitHandlers"/>
-    protected override bool InitHandlers => false;
+    /// <inheritdoc />
+    protected override void InitializeHandlers() { }
 
     /// <summary>
     /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
