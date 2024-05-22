@@ -274,6 +274,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#isEditable()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsEditable()
         {
@@ -282,6 +283,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#print()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Awt.Print.PrinterException"/>
         public bool Print()

@@ -96,6 +96,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#decrementPendingCountUnlessZero()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int DecrementPendingCountUnlessZero()
         {
@@ -104,6 +105,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#firstComplete()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Concurrent.CountedCompleter"/></returns>
         public Java.Util.Concurrent.CountedCompleter FirstComplete()
         {
@@ -112,6 +114,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#nextComplete()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Concurrent.CountedCompleter"/></returns>
         public Java.Util.Concurrent.CountedCompleter NextComplete()
         {
@@ -248,6 +251,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#decrementPendingCountUnlessZero()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int DecrementPendingCountUnlessZero()
         {
@@ -256,6 +260,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#firstComplete()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Concurrent.CountedCompleter"/></returns>
         public Java.Util.Concurrent.CountedCompleter<object> FirstComplete()
         {
@@ -264,6 +269,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#nextComplete()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Concurrent.CountedCompleter"/></returns>
         public Java.Util.Concurrent.CountedCompleter<object> NextComplete()
         {

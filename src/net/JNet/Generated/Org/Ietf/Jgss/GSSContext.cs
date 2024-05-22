@@ -83,22 +83,26 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#isEstablished()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool IsEstablished();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#isInitiator()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         bool IsInitiator();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#isProtReady()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool IsProtReady();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#isTransferable()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         bool IsTransferable();
@@ -114,6 +118,7 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#export()"/>
         /// </summary>
+
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         byte[] Export();
@@ -168,6 +173,7 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#dispose()"/>
         /// </summary>
+
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         void Dispose();
         /// <summary>
@@ -366,6 +372,7 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#isEstablished()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsEstablished()
         {
@@ -374,6 +381,7 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#isInitiator()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public bool IsInitiator()
@@ -383,6 +391,7 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#isProtReady()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsProtReady()
         {
@@ -391,6 +400,7 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#isTransferable()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public bool IsTransferable()
@@ -412,6 +422,7 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#export()"/>
         /// </summary>
+
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public byte[] Export()
@@ -484,6 +495,7 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#dispose()"/>
         /// </summary>
+
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public new void Dispose()
         {

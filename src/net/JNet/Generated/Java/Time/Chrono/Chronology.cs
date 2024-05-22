@@ -108,6 +108,7 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#eras()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.List"/></returns>
         Java.Util.List<Java.Time.Chrono.Era> Eras();
         /// <summary>
@@ -135,6 +136,7 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#dateNow()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
         Java.Time.Chrono.ChronoLocalDate DateNow();
         /// <summary>
@@ -386,6 +388,7 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#eras()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Java.Time.Chrono.Era> Eras()
         {
@@ -425,6 +428,7 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#dateNow()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
         public Java.Time.Chrono.ChronoLocalDate DateNow()
         {

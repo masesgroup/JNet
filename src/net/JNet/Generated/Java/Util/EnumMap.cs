@@ -80,6 +80,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumMap.html#clone()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.EnumMap"/></returns>
         public Java.Util.EnumMap Clone()
         {
@@ -165,6 +166,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumMap.html#clone()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.EnumMap"/></returns>
         public Java.Util.EnumMap Clone()
         {

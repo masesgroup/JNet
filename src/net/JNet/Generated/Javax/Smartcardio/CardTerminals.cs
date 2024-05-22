@@ -68,6 +68,7 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.html#list()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.List"/></returns>
         /// <exception cref="Javax.Smartcardio.CardException"/>
         public Java.Util.List<Javax.Smartcardio.CardTerminal> List()
@@ -86,6 +87,7 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.html#waitForChange()"/>
         /// </summary>
+
         /// <exception cref="Javax.Smartcardio.CardException"/>
         public void WaitForChange()
         {
@@ -153,6 +155,7 @@ namespace Javax.Smartcardio
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#values()"/>
             /// </summary>
+
             /// <returns><see cref="Javax.Smartcardio.CardTerminals.State"/></returns>
             public static Javax.Smartcardio.CardTerminals.State[] Values()
             {

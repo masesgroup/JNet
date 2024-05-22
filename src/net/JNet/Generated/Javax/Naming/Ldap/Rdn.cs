@@ -133,6 +133,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#size()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
@@ -141,6 +142,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#toAttributes()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Naming.Directory.Attributes"/></returns>
         public Javax.Naming.Directory.Attributes ToAttributes()
         {

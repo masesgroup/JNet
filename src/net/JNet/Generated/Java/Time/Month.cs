@@ -151,6 +151,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#values()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Month"/></returns>
         public static Java.Time.Month[] Values()
         {
@@ -216,6 +217,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#maxLength()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int MaxLength()
         {
@@ -224,6 +226,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#minLength()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int MinLength()
         {
@@ -242,6 +245,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#firstMonthOfQuarter()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Month"/></returns>
         public Java.Time.Month FirstMonthOfQuarter()
         {

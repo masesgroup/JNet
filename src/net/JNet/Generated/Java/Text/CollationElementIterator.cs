@@ -97,6 +97,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationElementIterator.html#next()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Next()
         {
@@ -105,6 +106,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationElementIterator.html#previous()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Previous()
         {

@@ -226,6 +226,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#hasValueNames()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool HasValueNames()
         {
@@ -243,6 +244,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#isIFDPointer()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsIFDPointer()
         {

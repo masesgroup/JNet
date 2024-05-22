@@ -48,6 +48,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#isEmpty()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
@@ -56,6 +57,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#size()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
@@ -64,6 +66,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#keys()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration Keys()
         {
@@ -72,6 +75,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#elements()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration Elements()
         {
@@ -143,6 +147,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#isEmpty()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
@@ -151,6 +156,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#size()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
@@ -159,6 +165,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#keys()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<K> Keys()
         {
@@ -167,6 +174,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#elements()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<V> Elements()
         {

@@ -171,6 +171,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#size()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Security.KeyStoreException"/>
         public int Size()
@@ -246,6 +247,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#aliases()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         /// <exception cref="Java.Security.KeyStoreException"/>
         public Java.Util.Enumeration<Java.Lang.String> Aliases()
@@ -681,6 +683,7 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#isDestroyed()"/>
             /// </summary>
+
             /// <returns><see cref="bool"/></returns>
             public bool IsDestroyed()
             {
@@ -689,6 +692,7 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#destroy()"/>
             /// </summary>
+
             /// <exception cref="Javax.Security.Auth.DestroyFailedException"/>
             public void Destroy()
             {

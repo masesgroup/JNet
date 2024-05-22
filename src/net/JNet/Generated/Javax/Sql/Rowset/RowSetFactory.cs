@@ -35,30 +35,35 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetFactory.html#createCachedRowSet()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Sql.Rowset.CachedRowSet"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Javax.Sql.Rowset.CachedRowSet CreateCachedRowSet();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetFactory.html#createFilteredRowSet()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Sql.Rowset.FilteredRowSet"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Javax.Sql.Rowset.FilteredRowSet CreateFilteredRowSet();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetFactory.html#createJdbcRowSet()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Sql.Rowset.JdbcRowSet"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Javax.Sql.Rowset.JdbcRowSet CreateJdbcRowSet();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetFactory.html#createJoinRowSet()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Sql.Rowset.JoinRowSet"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Javax.Sql.Rowset.JoinRowSet CreateJoinRowSet();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetFactory.html#createWebRowSet()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Sql.Rowset.WebRowSet"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Javax.Sql.Rowset.WebRowSet CreateWebRowSet();
@@ -96,6 +101,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetFactory.html#createCachedRowSet()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Sql.Rowset.CachedRowSet"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Javax.Sql.Rowset.CachedRowSet CreateCachedRowSet()
@@ -105,6 +111,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetFactory.html#createFilteredRowSet()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Sql.Rowset.FilteredRowSet"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Javax.Sql.Rowset.FilteredRowSet CreateFilteredRowSet()
@@ -114,6 +121,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetFactory.html#createJdbcRowSet()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Sql.Rowset.JdbcRowSet"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Javax.Sql.Rowset.JdbcRowSet CreateJdbcRowSet()
@@ -123,6 +131,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetFactory.html#createJoinRowSet()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Sql.Rowset.JoinRowSet"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Javax.Sql.Rowset.JoinRowSet CreateJoinRowSet()
@@ -132,6 +141,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetFactory.html#createWebRowSet()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Sql.Rowset.WebRowSet"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Javax.Sql.Rowset.WebRowSet CreateWebRowSet()

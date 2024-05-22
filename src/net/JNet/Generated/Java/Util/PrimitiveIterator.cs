@@ -80,6 +80,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#nextDouble()"/>
             /// </summary>
+
             /// <returns><see cref="double"/></returns>
             public double NextDouble()
             {
@@ -88,6 +89,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#next()"/>
             /// </summary>
+
             /// <returns><see cref="object"/></returns>
             public object Next()
             {
@@ -152,6 +154,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html#nextInt()"/>
             /// </summary>
+
             /// <returns><see cref="int"/></returns>
             public int NextInt()
             {
@@ -160,6 +163,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html#next()"/>
             /// </summary>
+
             /// <returns><see cref="object"/></returns>
             public object Next()
             {
@@ -224,6 +228,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#nextLong()"/>
             /// </summary>
+
             /// <returns><see cref="long"/></returns>
             public long NextLong()
             {
@@ -232,6 +237,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#next()"/>
             /// </summary>
+
             /// <returns><see cref="object"/></returns>
             public object Next()
             {

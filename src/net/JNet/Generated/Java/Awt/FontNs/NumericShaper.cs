@@ -238,6 +238,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#isContextual()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsContextual()
         {
@@ -529,6 +530,7 @@ namespace Java.Awt.FontNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#values()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Awt.FontNs.NumericShaper.Range"/></returns>
             public static Java.Awt.FontNs.NumericShaper.Range[] Values()
             {

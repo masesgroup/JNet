@@ -88,6 +88,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/SimpleDateFormat.html#toLocalizedPattern()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToLocalizedPattern()
         {
@@ -96,6 +97,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/SimpleDateFormat.html#toPattern()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToPattern()
         {

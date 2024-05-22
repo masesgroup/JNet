@@ -48,6 +48,7 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#hasMore()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
         public bool HasMore()
@@ -57,6 +58,7 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#next()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
         public object Next()
@@ -66,6 +68,7 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#close()"/>
         /// </summary>
+
         /// <exception cref="Javax.Naming.NamingException"/>
         public void Close()
         {
@@ -92,18 +95,21 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#hasMore()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
         bool HasMore();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#next()"/>
         /// </summary>
+
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
         T Next();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#close()"/>
         /// </summary>
+
         /// <exception cref="Javax.Naming.NamingException"/>
         void Close();
 
@@ -144,6 +150,7 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#hasMore()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
         public bool HasMore()
@@ -153,6 +160,7 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#next()"/>
         /// </summary>
+
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
         public T Next()
@@ -162,6 +170,7 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#close()"/>
         /// </summary>
+
         /// <exception cref="Javax.Naming.NamingException"/>
         public void Close()
         {

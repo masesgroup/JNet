@@ -59,18 +59,21 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#cloneContents()"/>
         /// </summary>
+
         /// <returns><see cref="Org.W3c.Dom.DocumentFragment"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         Org.W3c.Dom.DocumentFragment CloneContents();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#extractContents()"/>
         /// </summary>
+
         /// <returns><see cref="Org.W3c.Dom.DocumentFragment"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         Org.W3c.Dom.DocumentFragment ExtractContents();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#cloneRange()"/>
         /// </summary>
+
         /// <returns><see cref="Org.W3c.Dom.Ranges.Range"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         Org.W3c.Dom.Ranges.Range CloneRange();
@@ -91,11 +94,13 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#deleteContents()"/>
         /// </summary>
+
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         void DeleteContents();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#detach()"/>
         /// </summary>
+
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         void Detach();
         /// <summary>
@@ -270,6 +275,7 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#cloneContents()"/>
         /// </summary>
+
         /// <returns><see cref="Org.W3c.Dom.DocumentFragment"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.DocumentFragment CloneContents()
@@ -279,6 +285,7 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#extractContents()"/>
         /// </summary>
+
         /// <returns><see cref="Org.W3c.Dom.DocumentFragment"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.DocumentFragment ExtractContents()
@@ -288,6 +295,7 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#cloneRange()"/>
         /// </summary>
+
         /// <returns><see cref="Org.W3c.Dom.Ranges.Range"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Ranges.Range CloneRange()
@@ -317,6 +325,7 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#deleteContents()"/>
         /// </summary>
+
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void DeleteContents()
         {
@@ -325,6 +334,7 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#detach()"/>
         /// </summary>
+
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void Detach()
         {

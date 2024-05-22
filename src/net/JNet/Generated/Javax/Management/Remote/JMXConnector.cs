@@ -57,11 +57,13 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#close()"/>
         /// </summary>
+
         /// <exception cref="Java.Io.IOException"/>
         void Close();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#connect()"/>
         /// </summary>
+
         /// <exception cref="Java.Io.IOException"/>
         void Connect();
         /// <summary>
@@ -158,6 +160,7 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#close()"/>
         /// </summary>
+
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
@@ -166,6 +169,7 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#connect()"/>
         /// </summary>
+
         /// <exception cref="Java.Io.IOException"/>
         public void Connect()
         {

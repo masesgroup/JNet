@@ -232,6 +232,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#length()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Length()
         {
@@ -512,6 +513,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#length()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Length()
         {

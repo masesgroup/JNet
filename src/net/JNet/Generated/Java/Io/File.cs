@@ -133,6 +133,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#listRoots()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Io.File"/></returns>
         public static Java.Io.File[] ListRoots()
         {
@@ -222,6 +223,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#canExecute()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool CanExecute()
         {
@@ -230,6 +232,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#canRead()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool CanRead()
         {
@@ -238,6 +241,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#canWrite()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool CanWrite()
         {
@@ -246,6 +250,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#createNewFile()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public bool CreateNewFile()
@@ -255,6 +260,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#delete()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool Delete()
         {
@@ -263,6 +269,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#exists()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool Exists()
         {
@@ -271,6 +278,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#isAbsolute()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsAbsolute()
         {
@@ -279,6 +287,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#isDirectory()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsDirectory()
         {
@@ -287,6 +296,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#isFile()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsFile()
         {
@@ -295,6 +305,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#isHidden()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsHidden()
         {
@@ -303,6 +314,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#mkdir()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool Mkdir()
         {
@@ -311,6 +323,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#mkdirs()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool Mkdirs()
         {
@@ -375,6 +388,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#setReadOnly()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool SetReadOnly()
         {
@@ -420,6 +434,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#listFiles()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Io.File"/></returns>
         public Java.Io.File[] ListFiles()
         {
@@ -446,6 +461,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#list()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] List()
         {
@@ -463,6 +479,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#toURI()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Net.URI"/></returns>
         public Java.Net.URI ToURI()
         {
@@ -471,6 +488,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#toPath()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         public Java.Nio.File.Path ToPath()
         {
@@ -479,6 +497,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#lastModified()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         public long LastModified()
         {
@@ -487,6 +506,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#length()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         public long Length()
         {

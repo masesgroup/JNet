@@ -48,6 +48,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html#poll()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.Ref.Reference"/></returns>
         public Java.Lang.Ref.Reference Poll()
         {
@@ -56,6 +57,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html#remove()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.Ref.Reference"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public Java.Lang.Ref.Reference Remove()
@@ -111,6 +113,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html#poll()"/>
         /// </summary>
+
         /// <typeparam name="ReturnExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Lang.Ref.Reference"/></returns>
         public Java.Lang.Ref.Reference<ReturnExtendsT> Poll<ReturnExtendsT>() where ReturnExtendsT: T
@@ -120,6 +123,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html#remove()"/>
         /// </summary>
+
         /// <typeparam name="ReturnExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Lang.Ref.Reference"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>

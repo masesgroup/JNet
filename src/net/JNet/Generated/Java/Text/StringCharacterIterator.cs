@@ -97,6 +97,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#current()"/>
         /// </summary>
+
         /// <returns><see cref="char"/></returns>
         public char Current()
         {
@@ -105,6 +106,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#first()"/>
         /// </summary>
+
         /// <returns><see cref="char"/></returns>
         public char First()
         {
@@ -113,6 +115,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#last()"/>
         /// </summary>
+
         /// <returns><see cref="char"/></returns>
         public char Last()
         {
@@ -121,6 +124,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#next()"/>
         /// </summary>
+
         /// <returns><see cref="char"/></returns>
         public char Next()
         {
@@ -129,6 +133,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#previous()"/>
         /// </summary>
+
         /// <returns><see cref="char"/></returns>
         public char Previous()
         {

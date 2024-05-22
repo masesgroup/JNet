@@ -102,6 +102,7 @@ namespace Java.Rmi.Activation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationSystem.html#shutdown()"/>
         /// </summary>
+
         /// <exception cref="Java.Rmi.RemoteException"/>
         void Shutdown();
         /// <summary>
@@ -248,6 +249,7 @@ namespace Java.Rmi.Activation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationSystem.html#shutdown()"/>
         /// </summary>
+
         /// <exception cref="Java.Rmi.RemoteException"/>
         public void Shutdown()
         {

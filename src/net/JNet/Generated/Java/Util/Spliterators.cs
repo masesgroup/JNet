@@ -55,6 +55,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#emptySpliterator()"/>
         /// </summary>
+
         /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public static Java.Util.Spliterator<T> EmptySpliteratorMethod<T>()
@@ -152,6 +153,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#emptyDoubleSpliterator()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Spliterator.OfDouble"/></returns>
         public static Java.Util.Spliterator.OfDouble EmptyDoubleSpliterator()
         {
@@ -203,6 +205,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#emptyIntSpliterator()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Spliterator.OfInt"/></returns>
         public static Java.Util.Spliterator.OfInt EmptyIntSpliterator()
         {
@@ -254,6 +257,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#emptyLongSpliterator()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Spliterator.OfLong"/></returns>
         public static Java.Util.Spliterator.OfLong EmptyLongSpliterator()
         {
@@ -333,6 +337,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractDoubleSpliterator.html#characteristics()"/>
             /// </summary>
+
             /// <returns><see cref="int"/></returns>
             public int Characteristics()
             {
@@ -341,6 +346,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractDoubleSpliterator.html#trySplit()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Util.Spliterator.OfDouble"/></returns>
             public Java.Util.Spliterator.OfDouble TrySplit()
             {
@@ -349,6 +355,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractDoubleSpliterator.html#estimateSize()"/>
             /// </summary>
+
             /// <returns><see cref="long"/></returns>
             public long EstimateSize()
             {
@@ -388,6 +395,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractIntSpliterator.html#characteristics()"/>
             /// </summary>
+
             /// <returns><see cref="int"/></returns>
             public int Characteristics()
             {
@@ -396,6 +404,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractIntSpliterator.html#trySplit()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Util.Spliterator.OfInt"/></returns>
             public Java.Util.Spliterator.OfInt TrySplit()
             {
@@ -404,6 +413,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractIntSpliterator.html#estimateSize()"/>
             /// </summary>
+
             /// <returns><see cref="long"/></returns>
             public long EstimateSize()
             {
@@ -443,6 +453,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractLongSpliterator.html#characteristics()"/>
             /// </summary>
+
             /// <returns><see cref="int"/></returns>
             public int Characteristics()
             {
@@ -451,6 +462,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractLongSpliterator.html#trySplit()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Util.Spliterator.OfLong"/></returns>
             public Java.Util.Spliterator.OfLong TrySplit()
             {
@@ -459,6 +471,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractLongSpliterator.html#estimateSize()"/>
             /// </summary>
+
             /// <returns><see cref="long"/></returns>
             public long EstimateSize()
             {
@@ -498,6 +511,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractSpliterator.html#characteristics()"/>
             /// </summary>
+
             /// <returns><see cref="int"/></returns>
             public int Characteristics()
             {
@@ -506,6 +520,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractSpliterator.html#trySplit()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Util.Spliterator"/></returns>
             public Java.Util.Spliterator TrySplit()
             {
@@ -514,6 +529,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractSpliterator.html#estimateSize()"/>
             /// </summary>
+
             /// <returns><see cref="long"/></returns>
             public long EstimateSize()
             {
@@ -557,6 +573,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractSpliterator.html#characteristics()"/>
             /// </summary>
+
             /// <returns><see cref="int"/></returns>
             public int Characteristics()
             {
@@ -565,6 +582,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractSpliterator.html#trySplit()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Util.Spliterator"/></returns>
             public Java.Util.Spliterator<T> TrySplit()
             {
@@ -573,6 +591,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractSpliterator.html#estimateSize()"/>
             /// </summary>
+
             /// <returns><see cref="long"/></returns>
             public long EstimateSize()
             {

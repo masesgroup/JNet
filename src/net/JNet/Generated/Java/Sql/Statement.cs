@@ -137,18 +137,21 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#isClosed()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         bool IsClosed();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#isCloseOnCompletion()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         bool IsCloseOnCompletion();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#isPoolable()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         bool IsPoolable();
@@ -186,6 +189,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#executeBatch()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         int[] ExecuteBatch();
@@ -205,26 +209,31 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#cancel()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         void Cancel();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#clearBatch()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         void ClearBatch();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#clearWarnings()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         void ClearWarnings();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#close()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         void Close();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#closeOnCompletion()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         void CloseOnCompletion();
         /// <summary>
@@ -308,6 +317,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#executeLargeBatch()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         long[] ExecuteLargeBatch();
@@ -560,6 +570,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#isClosed()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsClosed()
@@ -569,6 +580,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#isCloseOnCompletion()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsCloseOnCompletion()
@@ -578,6 +590,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#isPoolable()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsPoolable()
@@ -630,6 +643,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#executeBatch()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public int[] ExecuteBatch()
@@ -658,6 +672,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#cancel()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void Cancel()
         {
@@ -666,6 +681,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#clearBatch()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void ClearBatch()
         {
@@ -674,6 +690,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#clearWarnings()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void ClearWarnings()
         {
@@ -682,6 +699,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#close()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void Close()
         {
@@ -690,6 +708,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#closeOnCompletion()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void CloseOnCompletion()
         {
@@ -809,6 +828,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#executeLargeBatch()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public long[] ExecuteLargeBatch()

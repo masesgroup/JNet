@@ -44,6 +44,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#empty()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public static Java.Util.Optional Empty()
         {
@@ -102,6 +103,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#isEmpty()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
@@ -110,6 +112,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#isPresent()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsPresent()
         {
@@ -136,6 +139,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#stream()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream Stream()
         {
@@ -144,6 +148,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#get()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public object Get()
         {
@@ -170,6 +175,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#orElseThrow()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public object OrElseThrow()
         {
@@ -226,6 +232,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#empty()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public static Java.Util.Optional<T> Empty()
         {
@@ -293,6 +300,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#isEmpty()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
@@ -301,6 +309,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#isPresent()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsPresent()
         {
@@ -330,6 +339,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#stream()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<T> Stream()
         {
@@ -338,6 +348,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#get()"/>
         /// </summary>
+
         /// <returns><typeparamref name="T"/></returns>
         public T Get()
         {
@@ -365,6 +376,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#orElseThrow()"/>
         /// </summary>
+
         /// <returns><typeparamref name="T"/></returns>
         public T OrElseThrow()
         {

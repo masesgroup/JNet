@@ -1088,6 +1088,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#breaksFlow()"/>
             /// </summary>
+
             /// <returns><see cref="bool"/></returns>
             public bool BreaksFlow()
             {
@@ -1096,6 +1097,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#isBlock()"/>
             /// </summary>
+
             /// <returns><see cref="bool"/></returns>
             public bool IsBlock()
             {
@@ -1104,6 +1106,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#isPreformatted()"/>
             /// </summary>
+
             /// <returns><see cref="bool"/></returns>
             public bool IsPreformatted()
             {

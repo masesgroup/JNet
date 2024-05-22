@@ -79,6 +79,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#randomUUID()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.UUID"/></returns>
         public static Java.Util.UUID RandomUUID()
         {
@@ -105,6 +106,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#clockSequence()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int ClockSequence()
         {
@@ -131,6 +133,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#variant()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Variant()
         {
@@ -139,6 +142,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#version()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Version()
         {
@@ -147,6 +151,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#node()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         public long Node()
         {
@@ -155,6 +160,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#timestamp()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         public long Timestamp()
         {

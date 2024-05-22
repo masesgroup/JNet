@@ -111,6 +111,7 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#baseVersion()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.Runtime.Version"/></returns>
         public static Java.Lang.Runtime.Version BaseVersion()
         {
@@ -119,6 +120,7 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#runtimeVersion()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.Runtime.Version"/></returns>
         public static Java.Lang.Runtime.Version RuntimeVersion()
         {
@@ -145,6 +147,7 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#isMultiRelease()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsMultiRelease()
         {
@@ -162,6 +165,7 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#versionedStream()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Java.Util.Jar.JarEntry> VersionedStream()
         {

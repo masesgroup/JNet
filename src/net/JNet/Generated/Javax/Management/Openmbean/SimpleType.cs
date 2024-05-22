@@ -132,6 +132,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#readResolve()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Io.ObjectStreamException"/>
         public object ReadResolve()
@@ -260,6 +261,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#readResolve()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Io.ObjectStreamException"/>
         public object ReadResolve()

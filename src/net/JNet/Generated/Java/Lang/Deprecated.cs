@@ -35,11 +35,13 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Deprecated.html#forRemoval()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool ForRemoval();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Deprecated.html#since()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.String"/></returns>
         Java.Lang.String Since();
 
@@ -76,6 +78,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Deprecated.html#forRemoval()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool ForRemoval()
         {
@@ -84,6 +87,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Deprecated.html#since()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Since()
         {

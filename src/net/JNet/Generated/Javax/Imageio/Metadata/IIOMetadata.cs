@@ -83,6 +83,7 @@ namespace Javax.Imageio.Metadata
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#isReadOnly()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsReadOnly()
         {
@@ -117,6 +118,7 @@ namespace Javax.Imageio.Metadata
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#activateController()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool ActivateController()
         {
@@ -125,6 +127,7 @@ namespace Javax.Imageio.Metadata
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#hasController()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool HasController()
         {
@@ -133,6 +136,7 @@ namespace Javax.Imageio.Metadata
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#isStandardMetadataFormatSupported()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsStandardMetadataFormatSupported()
         {

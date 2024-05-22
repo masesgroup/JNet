@@ -44,6 +44,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetProvider.html#newFactory()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Sql.Rowset.RowSetFactory"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public static Javax.Sql.Rowset.RowSetFactory NewFactory()

@@ -106,6 +106,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageOp.html#isDynamic()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsDynamic()
         {
@@ -123,6 +124,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageOp.html#createDefaultRendering()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Awt.ImageNs.RenderedImage"/></returns>
         public Java.Awt.ImageNs.RenderedImage CreateDefaultRendering()
         {

@@ -197,6 +197,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#isDefaultLookAndFeelDecorated()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public static bool IsDefaultLookAndFeelDecorated()
         {

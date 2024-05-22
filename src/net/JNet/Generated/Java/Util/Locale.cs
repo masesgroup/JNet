@@ -451,6 +451,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#hasExtensions()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool HasExtensions()
         {
@@ -522,6 +523,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#toLanguageTag()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToLanguageTag()
         {
@@ -530,6 +532,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#stripExtensions()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Locale"/></returns>
         public Java.Util.Locale StripExtensions()
         {
@@ -562,6 +565,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Builder.html#build()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Util.Locale"/></returns>
             public Java.Util.Locale Build()
             {
@@ -579,6 +583,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Builder.html#clear()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Util.Locale.Builder"/></returns>
             public Java.Util.Locale.Builder Clear()
             {
@@ -587,6 +592,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Builder.html#clearExtensions()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Util.Locale.Builder"/></returns>
             public Java.Util.Locale.Builder ClearExtensions()
             {
@@ -726,6 +732,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Category.html#values()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Util.Locale.Category"/></returns>
             public static Java.Util.Locale.Category[] Values()
             {
@@ -804,6 +811,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.FilteringMode.html#values()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Util.Locale.FilteringMode"/></returns>
             public static Java.Util.Locale.FilteringMode[] Values()
             {
@@ -870,6 +878,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.IsoCountryCode.html#values()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Util.Locale.IsoCountryCode"/></returns>
             public static Java.Util.Locale.IsoCountryCode[] Values()
             {

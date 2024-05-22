@@ -44,6 +44,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#newHttpClient()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Net.Http.HttpClient"/></returns>
         public static Java.Net.Http.HttpClient NewHttpClient()
         {
@@ -52,6 +53,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#newBuilder()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Net.Http.HttpClient.Builder"/></returns>
         public static Java.Net.Http.HttpClient.Builder NewBuilder()
         {
@@ -100,6 +102,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#followRedirects()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Net.Http.HttpClient.Redirect"/></returns>
         public Java.Net.Http.HttpClient.Redirect FollowRedirects()
         {
@@ -108,6 +111,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#version()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Net.Http.HttpClient.Version"/></returns>
         public Java.Net.Http.HttpClient.Version VersionMethod()
         {
@@ -116,6 +120,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#authenticator()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<Java.Net.Authenticator> Authenticator()
         {
@@ -124,6 +129,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#cookieHandler()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<Java.Net.CookieHandler> CookieHandler()
         {
@@ -132,6 +138,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#proxy()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<Java.Net.ProxySelector> Proxy()
         {
@@ -140,6 +147,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#connectTimeout()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<Java.Time.Duration> ConnectTimeout()
         {
@@ -148,6 +156,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#executor()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<Java.Util.Concurrent.Executor> Executor()
         {
@@ -156,6 +165,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sslContext()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Net.Ssl.SSLContext"/></returns>
         public Javax.Net.Ssl.SSLContext SslContext()
         {
@@ -164,6 +174,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sslParameters()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Net.Ssl.SSLParameters"/></returns>
         public Javax.Net.Ssl.SSLParameters SslParameters()
         {
@@ -172,6 +183,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#newWebSocketBuilder()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Net.Http.WebSocket.Builder"/></returns>
         public Java.Net.Http.WebSocket.Builder NewWebSocketBuilder()
         {
@@ -210,6 +222,7 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#build()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Net.Http.HttpClient"/></returns>
             public Java.Net.Http.HttpClient Build()
             {
@@ -362,6 +375,7 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html#values()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Net.Http.HttpClient.Redirect"/></returns>
             public static Java.Net.Http.HttpClient.Redirect[] Values()
             {
@@ -422,6 +436,7 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Version.html#values()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Net.Http.HttpClient.Version"/></returns>
             public static Java.Net.Http.HttpClient.Version[] Values()
             {

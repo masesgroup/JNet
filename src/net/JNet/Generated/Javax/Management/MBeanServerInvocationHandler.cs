@@ -94,6 +94,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerInvocationHandler.html#isMXBean()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsMXBean()
         {

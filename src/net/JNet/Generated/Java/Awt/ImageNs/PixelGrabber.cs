@@ -119,6 +119,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#grabPixels()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool GrabPixels()
@@ -138,6 +139,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#getStatus()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int GetStatus()
         {
@@ -146,6 +148,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#status()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Status()
         {

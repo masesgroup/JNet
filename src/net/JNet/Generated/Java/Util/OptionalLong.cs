@@ -44,6 +44,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#empty()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.OptionalLong"/></returns>
         public static Java.Util.OptionalLong Empty()
         {
@@ -84,6 +85,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#isEmpty()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
@@ -92,6 +94,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#isPresent()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsPresent()
         {
@@ -100,6 +103,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#stream()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream Stream()
         {
@@ -126,6 +130,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#orElseThrow()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         public long OrElseThrow()
         {

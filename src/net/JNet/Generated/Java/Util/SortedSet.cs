@@ -48,6 +48,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#first()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public object First()
         {
@@ -56,6 +57,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#last()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public object Last()
         {
@@ -92,6 +94,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#spliterator()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public Java.Util.Spliterator Spliterator()
         {
@@ -118,11 +121,13 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#first()"/>
         /// </summary>
+
         /// <returns><typeparamref name="E"/></returns>
         E First();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#last()"/>
         /// </summary>
+
         /// <returns><typeparamref name="E"/></returns>
         E Last();
         /// <summary>
@@ -147,6 +152,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#spliterator()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         Java.Util.Spliterator<E> Spliterator();
 
@@ -187,6 +193,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#first()"/>
         /// </summary>
+
         /// <returns><typeparamref name="E"/></returns>
         public E First()
         {
@@ -195,6 +202,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#last()"/>
         /// </summary>
+
         /// <returns><typeparamref name="E"/></returns>
         public E Last()
         {
@@ -231,6 +239,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#spliterator()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public Java.Util.Spliterator<E> Spliterator()
         {

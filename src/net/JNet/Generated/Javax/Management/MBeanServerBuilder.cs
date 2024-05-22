@@ -59,6 +59,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerBuilder.html#newMBeanServerDelegate()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Management.MBeanServerDelegate"/></returns>
         public Javax.Management.MBeanServerDelegate NewMBeanServerDelegate()
         {

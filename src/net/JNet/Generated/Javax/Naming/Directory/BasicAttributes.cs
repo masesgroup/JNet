@@ -89,6 +89,7 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttributes.html#isCaseIgnored()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsCaseIgnored()
         {
@@ -97,6 +98,7 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttributes.html#size()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Size()
         {

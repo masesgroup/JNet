@@ -56,6 +56,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createGlue()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public static Java.Awt.Component CreateGlue()
         {
@@ -64,6 +65,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createHorizontalGlue()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public static Java.Awt.Component CreateHorizontalGlue()
         {
@@ -90,6 +92,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createVerticalGlue()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public static Java.Awt.Component CreateVerticalGlue()
         {
@@ -107,6 +110,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createHorizontalBox()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Swing.Box"/></returns>
         public static Javax.Swing.Box CreateHorizontalBox()
         {
@@ -115,6 +119,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createVerticalBox()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Swing.Box"/></returns>
         public static Javax.Swing.Box CreateVerticalBox()
         {

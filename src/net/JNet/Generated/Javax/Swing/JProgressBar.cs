@@ -147,6 +147,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#isBorderPainted()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsBorderPainted()
         {
@@ -155,6 +156,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#isIndeterminate()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsIndeterminate()
         {
@@ -163,6 +165,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#isStringPainted()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsStringPainted()
         {

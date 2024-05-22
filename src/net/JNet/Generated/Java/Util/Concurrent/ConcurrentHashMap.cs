@@ -87,6 +87,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#newKeySet()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentHashMap.KeySetView"/></returns>
         public static Java.Util.Concurrent.ConcurrentHashMap.KeySetView NewKeySet()
         {
@@ -346,6 +347,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#keys()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration Keys()
         {
@@ -354,6 +356,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#elements()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration Elements()
         {
@@ -382,6 +385,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#mappingCount()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         public long MappingCount()
         {
@@ -654,6 +658,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#newKeySet()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentHashMap.KeySetView"/></returns>
         public static Java.Util.Concurrent.ConcurrentHashMap.KeySetView<K, Java.Lang.Boolean> NewKeySet()
         {
@@ -969,6 +974,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#keys()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<K> Keys()
         {
@@ -977,6 +983,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#elements()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<V> Elements()
         {
@@ -1008,6 +1015,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#mappingCount()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         public long MappingCount()
         {

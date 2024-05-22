@@ -458,6 +458,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#isLeaf()"/>
             /// </summary>
+
             /// <returns><see cref="bool"/></returns>
             public bool IsLeaf()
             {
@@ -475,6 +476,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#children()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Util.Enumeration"/></returns>
             public Java.Util.Enumeration<Javax.Swing.Tree.TreeNode> Children()
             {
@@ -547,6 +549,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#copyAttributes()"/>
             /// </summary>
+
             /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
             public Javax.Swing.Text.AttributeSet CopyAttributes()
             {
@@ -802,6 +805,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#length()"/>
             /// </summary>
+
             /// <returns><see cref="int"/></returns>
             public int Length()
             {

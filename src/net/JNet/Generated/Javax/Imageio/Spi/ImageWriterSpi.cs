@@ -115,6 +115,7 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#isFormatLossless()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsFormatLossless()
         {
@@ -132,6 +133,7 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#createWriterInstance()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Imageio.ImageWriter"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Imageio.ImageWriter CreateWriterInstance()

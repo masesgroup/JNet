@@ -48,6 +48,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#readPassword()"/>
         /// </summary>
+
         /// <returns><see cref="char"/></returns>
         public char[] ReadPassword()
         {
@@ -86,6 +87,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#writer()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Io.PrintWriter"/></returns>
         public Java.Io.PrintWriter Writer()
         {
@@ -94,6 +96,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#reader()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Io.Reader"/></returns>
         public Java.Io.Reader Reader()
         {
@@ -102,6 +105,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#readLine()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ReadLine()
         {

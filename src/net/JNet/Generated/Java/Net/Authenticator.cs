@@ -172,6 +172,7 @@ namespace Java.Net
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.RequestorType.html#values()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Net.Authenticator.RequestorType"/></returns>
             public static Java.Net.Authenticator.RequestorType[] Values()
             {

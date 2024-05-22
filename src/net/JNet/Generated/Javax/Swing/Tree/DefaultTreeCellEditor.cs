@@ -125,6 +125,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#stopCellEditing()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool StopCellEditing()
         {

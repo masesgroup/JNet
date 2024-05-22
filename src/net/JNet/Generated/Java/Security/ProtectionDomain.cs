@@ -105,6 +105,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#staticPermissionsOnly()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool StaticPermissionsOnly()
         {

@@ -77,41 +77,49 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#sum()"/>
         /// </summary>
+
         /// <returns><see cref="double"/></returns>
         double Sum();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#toArray()"/>
         /// </summary>
+
         /// <returns><see cref="double"/></returns>
         double[] ToArray();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#summaryStatistics()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.DoubleSummaryStatistics"/></returns>
         Java.Util.DoubleSummaryStatistics SummaryStatistics();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#average()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
         Java.Util.OptionalDouble Average();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#findAny()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
         Java.Util.OptionalDouble FindAny();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#findFirst()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
         Java.Util.OptionalDouble FindFirst();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#max()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
         Java.Util.OptionalDouble Max();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#min()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
         Java.Util.OptionalDouble Min();
         /// <summary>
@@ -123,6 +131,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#distinct()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         Java.Util.Stream.DoubleStream Distinct();
         /// <summary>
@@ -165,6 +174,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#sorted()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         Java.Util.Stream.DoubleStream Sorted();
         /// <summary>
@@ -182,11 +192,13 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#boxed()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         Java.Util.Stream.Stream<Java.Lang.Double> Boxed();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#count()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         long Count();
         /// <summary>
@@ -202,21 +214,25 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#iterator()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         Java.Util.Iterator Iterator();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#spliterator()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         Java.Util.Spliterator Spliterator();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#parallel()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
         Java.Util.Stream.BaseStream Parallel();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#sequential()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
         Java.Util.Stream.BaseStream Sequential();
         /// <summary>
@@ -271,6 +287,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#empty()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public static Java.Util.Stream.DoubleStream Empty()
         {
@@ -391,6 +408,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#sum()"/>
         /// </summary>
+
         /// <returns><see cref="double"/></returns>
         public double Sum()
         {
@@ -399,6 +417,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#toArray()"/>
         /// </summary>
+
         /// <returns><see cref="double"/></returns>
         public double[] ToArray()
         {
@@ -407,6 +426,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#summaryStatistics()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.DoubleSummaryStatistics"/></returns>
         public Java.Util.DoubleSummaryStatistics SummaryStatistics()
         {
@@ -415,6 +435,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#average()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
         public Java.Util.OptionalDouble Average()
         {
@@ -423,6 +444,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#findAny()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
         public Java.Util.OptionalDouble FindAny()
         {
@@ -431,6 +453,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#findFirst()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
         public Java.Util.OptionalDouble FindFirst()
         {
@@ -439,6 +462,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#max()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
         public Java.Util.OptionalDouble Max()
         {
@@ -447,6 +471,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#min()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
         public Java.Util.OptionalDouble Min()
         {
@@ -464,6 +489,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#distinct()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream Distinct()
         {
@@ -527,6 +553,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#sorted()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream Sorted()
         {
@@ -553,6 +580,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#boxed()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Java.Lang.Double> Boxed()
         {
@@ -561,6 +589,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#count()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         public long Count()
         {
@@ -585,6 +614,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#iterator()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator Iterator()
         {
@@ -593,6 +623,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#spliterator()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public Java.Util.Spliterator Spliterator()
         {
@@ -601,6 +632,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#parallel()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
         public Java.Util.Stream.BaseStream Parallel()
         {
@@ -609,6 +641,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#sequential()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
         public Java.Util.Stream.BaseStream Sequential()
         {

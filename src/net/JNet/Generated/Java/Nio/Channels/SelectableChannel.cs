@@ -48,6 +48,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#isBlocking()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsBlocking()
         {
@@ -56,6 +57,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#isRegistered()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsRegistered()
         {
@@ -64,6 +66,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#validOps()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int ValidOps()
         {
@@ -72,6 +75,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#blockingLock()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public object BlockingLock()
         {
@@ -111,6 +115,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#provider()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.Channels.Spi.SelectorProvider"/></returns>
         public Java.Nio.Channels.Spi.SelectorProvider Provider()
         {

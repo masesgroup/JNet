@@ -123,6 +123,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#element()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public object Element()
         {
@@ -131,6 +132,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#peek()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public object Peek()
         {
@@ -139,6 +141,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#peekFirst()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public object PeekFirst()
         {
@@ -147,6 +150,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#peekLast()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public object PeekLast()
         {
@@ -155,6 +159,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#poll()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public object Poll()
         {
@@ -163,6 +168,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#pollFirst()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public object PollFirst()
         {
@@ -171,6 +177,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#pollLast()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public object PollLast()
         {
@@ -179,6 +186,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#pop()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public object Pop()
         {
@@ -187,6 +195,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#remove()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public object Remove()
         {
@@ -195,6 +204,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#removeFirst()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public object RemoveFirst()
         {
@@ -203,6 +213,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#removeLast()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public object RemoveLast()
         {
@@ -211,6 +222,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#descendingIterator()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator DescendingIterator()
         {
@@ -353,6 +365,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#element()"/>
         /// </summary>
+
         /// <returns><typeparamref name="E"/></returns>
         public E Element()
         {
@@ -361,6 +374,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#peek()"/>
         /// </summary>
+
         /// <returns><typeparamref name="E"/></returns>
         public E Peek()
         {
@@ -369,6 +383,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#peekFirst()"/>
         /// </summary>
+
         /// <returns><typeparamref name="E"/></returns>
         public E PeekFirst()
         {
@@ -377,6 +392,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#peekLast()"/>
         /// </summary>
+
         /// <returns><typeparamref name="E"/></returns>
         public E PeekLast()
         {
@@ -385,6 +401,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#poll()"/>
         /// </summary>
+
         /// <returns><typeparamref name="E"/></returns>
         public E Poll()
         {
@@ -393,6 +410,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#pollFirst()"/>
         /// </summary>
+
         /// <returns><typeparamref name="E"/></returns>
         public E PollFirst()
         {
@@ -401,6 +419,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#pollLast()"/>
         /// </summary>
+
         /// <returns><typeparamref name="E"/></returns>
         public E PollLast()
         {
@@ -409,6 +428,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#pop()"/>
         /// </summary>
+
         /// <returns><typeparamref name="E"/></returns>
         public E Pop()
         {
@@ -417,6 +437,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#remove()"/>
         /// </summary>
+
         /// <returns><typeparamref name="E"/></returns>
         public E Remove()
         {
@@ -425,6 +446,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#removeFirst()"/>
         /// </summary>
+
         /// <returns><typeparamref name="E"/></returns>
         public E RemoveFirst()
         {
@@ -433,6 +455,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#removeLast()"/>
         /// </summary>
+
         /// <returns><typeparamref name="E"/></returns>
         public E RemoveLast()
         {
@@ -441,6 +464,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#descendingIterator()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<E> DescendingIterator()
         {

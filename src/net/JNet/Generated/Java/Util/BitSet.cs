@@ -118,6 +118,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#isEmpty()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
@@ -126,6 +127,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#toByteArray()"/>
         /// </summary>
+
         /// <returns><see cref="byte"/></returns>
         public byte[] ToByteArray()
         {
@@ -134,6 +136,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#cardinality()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Cardinality()
         {
@@ -142,6 +145,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#length()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Length()
         {
@@ -186,6 +190,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#size()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
@@ -204,6 +209,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#stream()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream Stream()
         {
@@ -212,6 +218,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#toLongArray()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         public long[] ToLongArray()
         {

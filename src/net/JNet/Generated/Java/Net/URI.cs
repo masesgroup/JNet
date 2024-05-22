@@ -230,6 +230,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#isAbsolute()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsAbsolute()
         {
@@ -238,6 +239,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#isOpaque()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsOpaque()
         {
@@ -264,6 +266,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#toASCIIString()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToASCIIString()
         {
@@ -272,6 +275,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#normalize()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Net.URI"/></returns>
         public Java.Net.URI Normalize()
         {
@@ -280,6 +284,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#parseServerAuthority()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Net.URI"/></returns>
         /// <exception cref="Java.Net.URISyntaxException"/>
         public Java.Net.URI ParseServerAuthority()
@@ -316,6 +321,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#toURL()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Net.URL"/></returns>
         /// <exception cref="Java.Net.MalformedURLException"/>
         public Java.Net.URL ToURL()

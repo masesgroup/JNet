@@ -35,6 +35,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocketImplFactory.html#createDatagramSocketImpl()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Net.DatagramSocketImpl"/></returns>
         Java.Net.DatagramSocketImpl CreateDatagramSocketImpl();
 
@@ -71,6 +72,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocketImplFactory.html#createDatagramSocketImpl()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Net.DatagramSocketImpl"/></returns>
         public Java.Net.DatagramSocketImpl CreateDatagramSocketImpl()
         {

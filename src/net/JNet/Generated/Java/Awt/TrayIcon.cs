@@ -131,6 +131,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#isImageAutoSize()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsImageAutoSize()
         {
@@ -258,6 +259,7 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.MessageType.html#values()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Awt.TrayIcon.MessageType"/></returns>
             public static Java.Awt.TrayIcon.MessageType[] Values()
             {

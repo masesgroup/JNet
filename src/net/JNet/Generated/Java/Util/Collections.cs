@@ -95,6 +95,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyNavigableSet()"/>
         /// </summary>
+
         /// <typeparam name="E"></typeparam>
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public static Java.Util.NavigableSet<E> EmptyNavigableSet<E>()
@@ -147,6 +148,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptySortedSet()"/>
         /// </summary>
+
         /// <typeparam name="E"></typeparam>
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
         public static Java.Util.SortedSet<E> EmptySortedSet<E>()
@@ -345,6 +347,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyEnumeration()"/>
         /// </summary>
+
         /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public static Java.Util.Enumeration<T> EmptyEnumerationMethod<T>()
@@ -364,6 +367,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyIterator()"/>
         /// </summary>
+
         /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public static Java.Util.Iterator<T> EmptyIteratorMethod<T>()
@@ -415,6 +419,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyListIterator()"/>
         /// </summary>
+
         /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.ListIterator"/></returns>
         public static Java.Util.ListIterator<T> EmptyListIteratorMethod<T>()
@@ -569,6 +574,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyMap()"/>
         /// </summary>
+
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="V"></typeparam>
         /// <returns><see cref="Java.Util.Map"/></returns>
@@ -579,6 +585,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyNavigableMap()"/>
         /// </summary>
+
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="V"></typeparam>
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
@@ -589,6 +596,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptySortedMap()"/>
         /// </summary>
+
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="V"></typeparam>
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
@@ -599,6 +607,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyList()"/>
         /// </summary>
+
         /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<T> EmptyListMethod<T>()
@@ -608,6 +617,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptySet()"/>
         /// </summary>
+
         /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<T> EmptySetMethod<T>()

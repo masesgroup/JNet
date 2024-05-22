@@ -52,6 +52,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html#element()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public object Element()
         {
@@ -60,6 +61,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html#remove()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public object Remove()
         {
@@ -107,6 +109,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html#element()"/>
         /// </summary>
+
         /// <returns><typeparamref name="E"/></returns>
         public E Element()
         {
@@ -115,6 +118,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html#remove()"/>
         /// </summary>
+
         /// <returns><typeparamref name="E"/></returns>
         public E Remove()
         {

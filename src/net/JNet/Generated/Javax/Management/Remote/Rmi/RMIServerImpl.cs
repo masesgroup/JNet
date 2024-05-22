@@ -85,6 +85,7 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServerImpl.html#toStub()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Rmi.Remote"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Rmi.Remote ToStub()
@@ -104,6 +105,7 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServerImpl.html#close()"/>
         /// </summary>
+
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {

@@ -50,6 +50,7 @@ namespace Org.W3c.Dom.Bootstrap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/bootstrap/DOMImplementationRegistry.html#newInstance()"/>
         /// </summary>
+
         /// <returns><see cref="Org.W3c.Dom.Bootstrap.DOMImplementationRegistry"/></returns>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         /// <exception cref="Java.Lang.InstantiationException"/>

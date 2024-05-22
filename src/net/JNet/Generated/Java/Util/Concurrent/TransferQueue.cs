@@ -55,6 +55,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html#hasWaitingConsumer()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool HasWaitingConsumer()
         {
@@ -115,6 +116,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html#hasWaitingConsumer()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool HasWaitingConsumer();
         /// <summary>
@@ -183,6 +185,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html#hasWaitingConsumer()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool HasWaitingConsumer()
         {

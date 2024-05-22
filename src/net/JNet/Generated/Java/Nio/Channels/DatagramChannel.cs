@@ -60,6 +60,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/DatagramChannel.html#open()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.Channels.DatagramChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.DatagramChannel Open()
@@ -97,6 +98,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/DatagramChannel.html#isConnected()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsConnected()
         {
@@ -136,6 +138,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/DatagramChannel.html#socket()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Net.DatagramSocket"/></returns>
         public Java.Net.DatagramSocket Socket()
         {
@@ -164,6 +167,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/DatagramChannel.html#disconnect()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.Channels.DatagramChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.DatagramChannel Disconnect()

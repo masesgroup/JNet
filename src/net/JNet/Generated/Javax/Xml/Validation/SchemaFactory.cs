@@ -44,6 +44,7 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactory.html#newDefaultInstance()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Xml.Validation.SchemaFactory"/></returns>
         public static Javax.Xml.Validation.SchemaFactory NewDefaultInstance()
         {
@@ -99,6 +100,7 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactory.html#newSchema()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Xml.Validation.Schema"/></returns>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public Javax.Xml.Validation.Schema NewSchema()

@@ -134,6 +134,7 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#parsedLeapSecond()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Temporal.TemporalQuery"/></returns>
         public static Java.Time.Temporal.TemporalQuery<Java.Lang.Boolean> ParsedLeapSecond()
         {
@@ -142,6 +143,7 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#parsedExcessDays()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Temporal.TemporalQuery"/></returns>
         public static Java.Time.Temporal.TemporalQuery<Java.Time.Period> ParsedExcessDays()
         {
@@ -272,6 +274,7 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#toFormat()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Text.Format"/></returns>
         public Java.Text.Format ToFormat()
         {

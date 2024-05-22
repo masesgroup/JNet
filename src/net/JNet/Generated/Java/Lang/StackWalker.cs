@@ -158,6 +158,7 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#values()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Lang.StackWalker.Option"/></returns>
             public static Java.Lang.StackWalker.Option[] Values()
             {
@@ -257,6 +258,7 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#isNativeMethod()"/>
             /// </summary>
+
             /// <returns><see cref="bool"/></returns>
             public bool IsNativeMethod()
             {
@@ -265,6 +267,7 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#toStackTraceElement()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Lang.StackTraceElement"/></returns>
             public Java.Lang.StackTraceElement ToStackTraceElement()
             {

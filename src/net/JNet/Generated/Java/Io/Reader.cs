@@ -52,6 +52,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#nullReader()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Io.Reader"/></returns>
         public static Java.Io.Reader NullReader()
         {
@@ -76,6 +77,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#close()"/>
         /// </summary>
+
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
@@ -84,6 +86,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#markSupported()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool MarkSupported()
         {
@@ -92,6 +95,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#ready()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public bool Ready()
@@ -101,6 +105,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#read()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int Read()
@@ -159,6 +164,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#reset()"/>
         /// </summary>
+
         /// <exception cref="Java.Io.IOException"/>
         public void Reset()
         {

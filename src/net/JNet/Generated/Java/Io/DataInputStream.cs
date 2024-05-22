@@ -70,6 +70,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#readBoolean()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public bool ReadBoolean()
@@ -79,6 +80,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#readByte()"/>
         /// </summary>
+
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public byte ReadByte()
@@ -88,6 +90,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#readChar()"/>
         /// </summary>
+
         /// <returns><see cref="char"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public char ReadChar()
@@ -97,6 +100,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#readDouble()"/>
         /// </summary>
+
         /// <returns><see cref="double"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public double ReadDouble()
@@ -106,6 +110,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#readFloat()"/>
         /// </summary>
+
         /// <returns><see cref="float"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public float ReadFloat()
@@ -115,6 +120,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#readInt()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int ReadInt()
@@ -124,6 +130,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#readUnsignedByte()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int ReadUnsignedByte()
@@ -133,6 +140,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#readUnsignedShort()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int ReadUnsignedShort()
@@ -152,6 +160,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#readUTF()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.String ReadUTF()
@@ -161,6 +170,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#readLong()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public long ReadLong()
@@ -170,6 +180,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#readShort()"/>
         /// </summary>
+
         /// <returns><see cref="short"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public short ReadShort()

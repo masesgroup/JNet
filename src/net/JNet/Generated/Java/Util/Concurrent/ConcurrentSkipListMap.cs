@@ -76,6 +76,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#descendingMap()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/></returns>
         public Java.Util.Concurrent.ConcurrentNavigableMap DescendingMap()
         {
@@ -144,6 +145,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#clone()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentSkipListMap"/></returns>
         public Java.Util.Concurrent.ConcurrentSkipListMap Clone()
         {
@@ -161,6 +163,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#firstEntry()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry FirstEntry()
         {
@@ -187,6 +190,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#lastEntry()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry LastEntry()
         {
@@ -204,6 +208,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#pollFirstEntry()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry PollFirstEntry()
         {
@@ -212,6 +217,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#pollLastEntry()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry PollLastEntry()
         {
@@ -220,6 +226,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#descendingKeySet()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet DescendingKeySet()
         {
@@ -228,6 +235,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#navigableKeySet()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet NavigableKeySet()
         {
@@ -245,6 +253,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#firstKey()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public object FirstKey()
         {
@@ -271,6 +280,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#lastKey()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public object LastKey()
         {
@@ -351,6 +361,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#descendingMap()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/></returns>
         public Java.Util.Concurrent.ConcurrentNavigableMap<K, V> DescendingMap()
         {
@@ -419,6 +430,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#clone()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentSkipListMap"/></returns>
         public Java.Util.Concurrent.ConcurrentSkipListMap<K, V> Clone()
         {
@@ -436,6 +448,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#firstEntry()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry<K, V> FirstEntry()
         {
@@ -462,6 +475,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#lastEntry()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry<K, V> LastEntry()
         {
@@ -479,6 +493,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#pollFirstEntry()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry<K, V> PollFirstEntry()
         {
@@ -487,6 +502,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#pollLastEntry()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry<K, V> PollLastEntry()
         {
@@ -495,6 +511,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#descendingKeySet()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet<K> DescendingKeySet()
         {
@@ -503,6 +520,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#navigableKeySet()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet<K> NavigableKeySet()
         {
@@ -520,6 +538,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#firstKey()"/>
         /// </summary>
+
         /// <returns><typeparamref name="K"/></returns>
         public K FirstKey()
         {
@@ -546,6 +565,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#lastKey()"/>
         /// </summary>
+
         /// <returns><typeparamref name="K"/></returns>
         public K LastKey()
         {

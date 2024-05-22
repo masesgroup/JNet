@@ -77,6 +77,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitResult.html#values()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
         public static Java.Nio.File.FileVisitResult[] Values()
         {

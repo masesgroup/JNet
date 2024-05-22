@@ -47,16 +47,19 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isDateBased()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool IsDateBased();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isDurationEstimated()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool IsDurationEstimated();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isTimeBased()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool IsTimeBased();
         /// <summary>
@@ -124,6 +127,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isDateBased()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsDateBased()
         {
@@ -132,6 +136,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isDurationEstimated()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsDurationEstimated()
         {
@@ -140,6 +145,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isTimeBased()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsTimeBased()
         {

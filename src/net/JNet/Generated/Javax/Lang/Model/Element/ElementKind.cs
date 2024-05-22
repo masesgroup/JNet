@@ -161,6 +161,7 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#values()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Lang.Model.Element.ElementKind"/></returns>
         public static Javax.Lang.Model.Element.ElementKind[] Values()
         {
@@ -173,6 +174,7 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isClass()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsClass()
         {
@@ -181,6 +183,7 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isField()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsField()
         {
@@ -189,6 +192,7 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isInterface()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsInterface()
         {

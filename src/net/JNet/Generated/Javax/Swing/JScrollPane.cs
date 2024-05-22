@@ -146,6 +146,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#isWheelScrollingEnabled()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsWheelScrollingEnabled()
         {
@@ -163,6 +164,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#createHorizontalScrollBar()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Swing.JScrollBar"/></returns>
         public Javax.Swing.JScrollBar CreateHorizontalScrollBar()
         {
@@ -171,6 +173,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#createVerticalScrollBar()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Swing.JScrollBar"/></returns>
         public Javax.Swing.JScrollBar CreateVerticalScrollBar()
         {

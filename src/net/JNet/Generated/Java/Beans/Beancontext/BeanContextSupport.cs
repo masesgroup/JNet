@@ -130,6 +130,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#avoidingGui()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool AvoidingGui()
         {
@@ -165,6 +166,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#isEmpty()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
@@ -173,6 +175,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#isSerializing()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsSerializing()
         {
@@ -227,6 +230,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#size()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
@@ -256,6 +260,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#toArray()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
@@ -283,6 +288,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#iterator()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<object> Iterator()
         {
@@ -291,6 +297,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#isDesignTime()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsDesignTime()
         {
@@ -299,6 +306,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#needsGui()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool NeedsGui()
         {

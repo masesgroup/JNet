@@ -104,6 +104,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#values()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Concurrent.TimeUnit"/></returns>
         public static Java.Util.Concurrent.TimeUnit[] Values()
         {
@@ -116,6 +117,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toChronoUnit()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Temporal.ChronoUnit"/></returns>
         public Java.Time.Temporal.ChronoUnit ToChronoUnit()
         {

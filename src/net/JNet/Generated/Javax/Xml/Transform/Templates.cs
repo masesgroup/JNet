@@ -39,6 +39,7 @@ namespace Javax.Xml.Transform
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Templates.html#newTransformer()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Xml.Transform.Transformer"/></returns>
         /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
         Javax.Xml.Transform.Transformer NewTransformer();
@@ -83,6 +84,7 @@ namespace Javax.Xml.Transform
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Templates.html#newTransformer()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Xml.Transform.Transformer"/></returns>
         /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
         public Javax.Xml.Transform.Transformer NewTransformer()

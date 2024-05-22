@@ -70,6 +70,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public virtual object Get()
         {
@@ -109,6 +110,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public override object Get()
         {
@@ -135,6 +137,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/>
         /// </summary>
+
         /// <returns><typeparamref name="T"/></returns>
         T Get();
 
@@ -193,6 +196,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/>
         /// </summary>
+
         /// <returns><typeparamref name="T"/></returns>
         public virtual T Get()
         {
@@ -232,6 +236,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/>
         /// </summary>
+
         /// <returns><typeparamref name="T"/></returns>
         public override T Get()
         {

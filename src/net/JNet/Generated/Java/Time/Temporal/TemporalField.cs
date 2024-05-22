@@ -51,6 +51,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#isDateBased()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool IsDateBased();
         /// <summary>
@@ -62,11 +63,13 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#isTimeBased()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool IsTimeBased();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#range()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         Java.Time.Temporal.ValueRange Range();
         /// <summary>
@@ -154,6 +157,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#isDateBased()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsDateBased()
         {
@@ -171,6 +175,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#isTimeBased()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsTimeBased()
         {
@@ -179,6 +184,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#range()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public Java.Time.Temporal.ValueRange Range()
         {

@@ -169,6 +169,7 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#values()"/>
             /// </summary>
+
             /// <returns><see cref="Javax.Swing.RowFilter.ComparisonType"/></returns>
             public static Javax.Swing.RowFilter.ComparisonType[] Values()
             {

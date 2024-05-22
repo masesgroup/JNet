@@ -83,6 +83,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLEntry.html#hasExtensions()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool HasExtensions()
         {

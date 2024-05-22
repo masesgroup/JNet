@@ -74,6 +74,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getNetworkInterfaces()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         /// <exception cref="Java.Net.SocketException"/>
         public static Java.Util.Enumeration<Java.Net.NetworkInterface> GetNetworkInterfaces()
@@ -83,6 +84,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#networkInterfaces()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         /// <exception cref="Java.Net.SocketException"/>
         public static Java.Util.Stream.Stream<Java.Net.NetworkInterface> NetworkInterfaces()
@@ -145,6 +147,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#isLoopback()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Net.SocketException"/>
         public bool IsLoopback()
@@ -154,6 +157,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#isPointToPoint()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Net.SocketException"/>
         public bool IsPointToPoint()
@@ -163,6 +167,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#isUp()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Net.SocketException"/>
         public bool IsUp()
@@ -172,6 +177,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#isVirtual()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsVirtual()
         {
@@ -180,6 +186,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#supportsMulticast()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Net.SocketException"/>
         public bool SupportsMulticast()
@@ -189,6 +196,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getInetAddresses()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<Java.Net.InetAddress> GetInetAddresses()
         {
@@ -197,6 +205,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getSubInterfaces()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<Java.Net.NetworkInterface> GetSubInterfaces()
         {
@@ -205,6 +214,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#inetAddresses()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Java.Net.InetAddress> InetAddresses()
         {
@@ -213,6 +223,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#subInterfaces()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Java.Net.NetworkInterface> SubInterfaces()
         {

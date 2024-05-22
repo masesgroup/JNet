@@ -51,6 +51,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#isDesktopSupported()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public static bool IsDesktopSupported()
         {
@@ -129,6 +130,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#mail()"/>
         /// </summary>
+
         /// <exception cref="Java.Io.IOException"/>
         public void Mail()
         {
@@ -424,6 +426,7 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#values()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Awt.Desktop.Action"/></returns>
             public static Java.Awt.Desktop.Action[] Values()
             {

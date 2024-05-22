@@ -85,6 +85,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.html#bytesConsumed()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int BytesConsumed()
         {
@@ -93,6 +94,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.html#bytesProduced()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int BytesProduced()
         {
@@ -101,6 +103,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.html#sequenceNumber()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         public long SequenceNumber()
         {
@@ -174,6 +177,7 @@ namespace Javax.Net.Ssl
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.HandshakeStatus.html#values()"/>
             /// </summary>
+
             /// <returns><see cref="Javax.Net.Ssl.SSLEngineResult.HandshakeStatus"/></returns>
             public static Javax.Net.Ssl.SSLEngineResult.HandshakeStatus[] Values()
             {
@@ -246,6 +250,7 @@ namespace Javax.Net.Ssl
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html#values()"/>
             /// </summary>
+
             /// <returns><see cref="Javax.Net.Ssl.SSLEngineResult.Status"/></returns>
             public static Javax.Net.Ssl.SSLEngineResult.Status[] Values()
             {

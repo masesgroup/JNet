@@ -106,6 +106,7 @@ namespace Javax.Security.Auth.Kerberos
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#exists()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool Exists()
         {
@@ -114,6 +115,7 @@ namespace Javax.Security.Auth.Kerberos
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#isBound()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsBound()
         {

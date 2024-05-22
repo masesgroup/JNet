@@ -146,6 +146,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#baseIsLeftToRight()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool BaseIsLeftToRight()
         {
@@ -154,6 +155,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#isLeftToRight()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsLeftToRight()
         {
@@ -162,6 +164,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#isMixed()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsMixed()
         {
@@ -170,6 +173,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#isRightToLeft()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsRightToLeft()
         {

@@ -43,29 +43,34 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#execute()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         bool Execute();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#executeUpdate()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         int ExecuteUpdate();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#executeQuery()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.ResultSet"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Sql.ResultSet ExecuteQuery();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#addBatch()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         void AddBatch();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#clearParameters()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         void ClearParameters();
         /// <summary>
@@ -417,6 +422,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#executeLargeUpdate()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         long ExecuteLargeUpdate();
@@ -485,6 +491,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#execute()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public bool Execute()
@@ -494,6 +501,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#executeUpdate()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public int ExecuteUpdate()
@@ -503,6 +511,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#executeQuery()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.ResultSet"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ResultSet ExecuteQuery()
@@ -512,6 +521,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#addBatch()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void AddBatch()
         {
@@ -520,6 +530,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#clearParameters()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void ClearParameters()
         {
@@ -1015,6 +1026,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html#executeLargeUpdate()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public long ExecuteLargeUpdate()

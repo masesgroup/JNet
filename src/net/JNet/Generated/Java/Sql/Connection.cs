@@ -75,12 +75,14 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#isClosed()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         bool IsClosed();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#isReadOnly()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         bool IsReadOnly();
@@ -116,6 +118,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createBlob()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.Blob"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Sql.Blob CreateBlob();
@@ -148,12 +151,14 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createClob()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.Clob"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Sql.Clob CreateClob();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createNClob()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.NClob"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Sql.NClob CreateNClob();
@@ -210,6 +215,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setSavepoint()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.Savepoint"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Sql.Savepoint SetSavepoint();
@@ -223,12 +229,14 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createSQLXML()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.SQLXML"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Sql.SQLXML CreateSQLXML();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createStatement()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.Statement"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Sql.Statement CreateStatement();
@@ -266,16 +274,19 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#clearWarnings()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         void ClearWarnings();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#close()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         void Close();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#commit()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         void Commit();
         /// <summary>
@@ -287,6 +298,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#rollback()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         void Rollback();
         /// <summary>
@@ -335,11 +347,13 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#beginRequest()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         void BeginRequest();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#endRequest()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         void EndRequest();
         /// <summary>
@@ -497,6 +511,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#isClosed()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsClosed()
@@ -506,6 +521,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#isReadOnly()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsReadOnly()
@@ -556,6 +572,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createBlob()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.Blob"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Blob CreateBlob()
@@ -600,6 +617,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createClob()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.Clob"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Clob CreateClob()
@@ -609,6 +627,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createNClob()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.NClob"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.NClob CreateNClob()
@@ -686,6 +705,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setSavepoint()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.Savepoint"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Savepoint SetSavepoint()
@@ -705,6 +725,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createSQLXML()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.SQLXML"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.SQLXML CreateSQLXML()
@@ -714,6 +735,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createStatement()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.Statement"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Statement CreateStatement()
@@ -766,6 +788,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#clearWarnings()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void ClearWarnings()
         {
@@ -774,6 +797,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#close()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void Close()
         {
@@ -782,6 +806,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#commit()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void Commit()
         {
@@ -799,6 +824,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#rollback()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void Rollback()
         {
@@ -868,6 +894,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#beginRequest()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void BeginRequest()
         {
@@ -876,6 +903,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#endRequest()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void EndRequest()
         {

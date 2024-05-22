@@ -224,6 +224,7 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#classModifiers()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public static int ClassModifiers()
         {
@@ -232,6 +233,7 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#constructorModifiers()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public static int ConstructorModifiers()
         {
@@ -240,6 +242,7 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#fieldModifiers()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public static int FieldModifiers()
         {
@@ -248,6 +251,7 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#interfaceModifiers()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public static int InterfaceModifiers()
         {
@@ -256,6 +260,7 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#methodModifiers()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public static int MethodModifiers()
         {
@@ -264,6 +269,7 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#parameterModifiers()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public static int ParameterModifiers()
         {

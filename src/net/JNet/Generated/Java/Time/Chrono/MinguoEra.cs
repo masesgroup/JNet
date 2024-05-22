@@ -78,6 +78,7 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoEra.html#values()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Chrono.MinguoEra"/></returns>
         public static Java.Time.Chrono.MinguoEra[] Values()
         {

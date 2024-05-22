@@ -75,6 +75,7 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#replacement()"/>
         /// </summary>
+
         /// <returns><see cref="byte"/></returns>
         public byte[] Replacement()
         {
@@ -83,6 +84,7 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#averageBytesPerChar()"/>
         /// </summary>
+
         /// <returns><see cref="float"/></returns>
         public float AverageBytesPerChar()
         {
@@ -91,6 +93,7 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#maxBytesPerChar()"/>
         /// </summary>
+
         /// <returns><see cref="float"/></returns>
         public float MaxBytesPerChar()
         {
@@ -109,6 +112,7 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#charset()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.Charset.Charset"/></returns>
         public Java.Nio.Charset.Charset Charset()
         {
@@ -144,6 +148,7 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#reset()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.Charset.CharsetEncoder"/></returns>
         public Java.Nio.Charset.CharsetEncoder Reset()
         {
@@ -172,6 +177,7 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#malformedInputAction()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.Charset.CodingErrorAction"/></returns>
         public Java.Nio.Charset.CodingErrorAction MalformedInputAction()
         {
@@ -180,6 +186,7 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#unmappableCharacterAction()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.Charset.CodingErrorAction"/></returns>
         public Java.Nio.Charset.CodingErrorAction UnmappableCharacterAction()
         {

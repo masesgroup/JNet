@@ -67,6 +67,7 @@ namespace Java.Rmi.Activation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html#currentGroupID()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Rmi.Activation.ActivationGroupID"/></returns>
         public static Java.Rmi.Activation.ActivationGroupID CurrentGroupID()
         {

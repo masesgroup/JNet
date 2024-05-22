@@ -93,6 +93,7 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#isDuplicateToken()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsDuplicateToken()
         {
@@ -101,6 +102,7 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#isGapToken()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsGapToken()
         {
@@ -109,6 +111,7 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#isOldToken()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsOldToken()
         {
@@ -117,6 +120,7 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#isUnseqToken()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsUnseqToken()
         {

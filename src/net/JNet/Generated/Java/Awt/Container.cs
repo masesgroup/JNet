@@ -99,6 +99,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#isFocusCycleRoot()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsFocusCycleRoot()
         {
@@ -107,6 +108,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#isFocusTraversalPolicySet()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsFocusTraversalPolicySet()
         {
@@ -115,6 +117,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#isValidateRoot()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsValidateRoot()
         {
@@ -123,6 +126,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#isFocusTraversalPolicyProvider()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsFocusTraversalPolicyProvider()
         {

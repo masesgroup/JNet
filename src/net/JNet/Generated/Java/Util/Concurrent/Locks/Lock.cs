@@ -35,6 +35,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Lock.html#tryLock()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool TryLock();
         /// <summary>
@@ -48,6 +49,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Lock.html#newCondition()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Concurrent.Locks.Condition"/></returns>
         Java.Util.Concurrent.Locks.Condition NewCondition();
         /// <summary>
@@ -57,6 +59,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Lock.html#lockInterruptibly()"/>
         /// </summary>
+
         /// <exception cref="Java.Lang.InterruptedException"/>
         void LockInterruptibly();
         /// <summary>
@@ -97,6 +100,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Lock.html#tryLock()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool TryLock()
         {
@@ -116,6 +120,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Lock.html#newCondition()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Concurrent.Locks.Condition"/></returns>
         public Java.Util.Concurrent.Locks.Condition NewCondition()
         {
@@ -131,6 +136,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Lock.html#lockInterruptibly()"/>
         /// </summary>
+
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void LockInterruptibly()
         {

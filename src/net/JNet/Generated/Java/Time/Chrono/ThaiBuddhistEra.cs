@@ -78,6 +78,7 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistEra.html#values()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Chrono.ThaiBuddhistEra"/></returns>
         public static Java.Time.Chrono.ThaiBuddhistEra[] Values()
         {

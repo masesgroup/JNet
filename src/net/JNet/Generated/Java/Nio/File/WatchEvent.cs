@@ -48,6 +48,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#count()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Count()
         {
@@ -56,6 +57,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#kind()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.File.WatchEvent.Kind"/></returns>
         public Java.Nio.File.WatchEvent.Kind KindMethod()
         {
@@ -64,6 +66,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#context()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public object Context()
         {
@@ -96,6 +99,7 @@ namespace Java.Nio.File
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.Kind.html#type()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Lang.Class"/></returns>
             public Java.Lang.Class Type()
             {
@@ -104,6 +108,7 @@ namespace Java.Nio.File
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.Kind.html#name()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Lang.String"/></returns>
             public Java.Lang.String Name()
             {
@@ -147,6 +152,7 @@ namespace Java.Nio.File
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.Kind.html#type()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Lang.Class"/></returns>
             public Java.Lang.Class Type()
             {
@@ -155,6 +161,7 @@ namespace Java.Nio.File
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.Kind.html#name()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Lang.String"/></returns>
             public Java.Lang.String Name()
             {
@@ -194,6 +201,7 @@ namespace Java.Nio.File
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.Modifier.html#name()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Lang.String"/></returns>
             public Java.Lang.String Name()
             {
@@ -227,16 +235,19 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#count()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         int Count();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#kind()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.File.WatchEvent.Kind"/></returns>
         Java.Nio.File.WatchEvent.Kind<T> KindMethod();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#context()"/>
         /// </summary>
+
         /// <returns><typeparamref name="T"/></returns>
         T Context();
 
@@ -277,6 +288,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#count()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Count()
         {
@@ -285,6 +297,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#kind()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.File.WatchEvent.Kind"/></returns>
         public Java.Nio.File.WatchEvent.Kind<T> KindMethod()
         {
@@ -293,6 +306,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#context()"/>
         /// </summary>
+
         /// <returns><typeparamref name="T"/></returns>
         public T Context()
         {

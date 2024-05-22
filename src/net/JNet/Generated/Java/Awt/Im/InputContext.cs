@@ -69,6 +69,7 @@ namespace Java.Awt.Im
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputContext.html#isCompositionEnabled()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsCompositionEnabled()
         {

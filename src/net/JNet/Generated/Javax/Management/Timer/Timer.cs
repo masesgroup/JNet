@@ -107,6 +107,7 @@ namespace Javax.Management.Timer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#isActive()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsActive()
         {
@@ -126,6 +127,7 @@ namespace Javax.Management.Timer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#isEmpty()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
@@ -318,6 +320,7 @@ namespace Javax.Management.Timer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#preDeregister()"/>
         /// </summary>
+
         /// <exception cref="Java.Lang.Exception"/>
         public void PreDeregister()
         {

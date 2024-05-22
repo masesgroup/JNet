@@ -237,6 +237,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#values()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Temporal.ChronoField"/></returns>
         public static Java.Time.Temporal.ChronoField[] Values()
         {
@@ -274,6 +275,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#isDateBased()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsDateBased()
         {
@@ -291,6 +293,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#isTimeBased()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsTimeBased()
         {
@@ -317,6 +320,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#range()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public Java.Time.Temporal.ValueRange Range()
         {

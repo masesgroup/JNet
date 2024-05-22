@@ -54,6 +54,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#empty()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream Empty()
         {
@@ -208,6 +209,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#toArray()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
@@ -216,6 +218,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#findAny()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional FindAny()
         {
@@ -224,6 +227,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#findFirst()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional FindFirst()
         {
@@ -295,6 +299,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#distinct()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream Distinct()
         {
@@ -339,6 +344,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#sorted()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream Sorted()
         {
@@ -347,6 +353,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#count()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         public long Count()
         {
@@ -493,16 +500,19 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#toArray()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         object[] ToArray();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#findAny()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Optional"/></returns>
         Java.Util.Optional<T> FindAny();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#findFirst()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Optional"/></returns>
         Java.Util.Optional<T> FindFirst();
         /// <summary>
@@ -559,6 +569,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#distinct()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         Java.Util.Stream.Stream<T> Distinct();
         /// <summary>
@@ -590,11 +601,13 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#sorted()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         Java.Util.Stream.Stream<T> Sorted();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#count()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         long Count();
         /// <summary>
@@ -676,6 +689,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#empty()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream<T> Empty()
         {
@@ -850,6 +864,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#toArray()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
@@ -858,6 +873,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#findAny()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<T> FindAny()
         {
@@ -866,6 +882,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#findFirst()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<T> FindFirst()
         {
@@ -946,6 +963,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#distinct()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<T> Distinct()
         {
@@ -992,6 +1010,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#sorted()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<T> Sorted()
         {
@@ -1000,6 +1019,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#count()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         public long Count()
         {

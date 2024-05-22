@@ -170,6 +170,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#allowsCoreThreadTimeOut()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool AllowsCoreThreadTimeOut()
         {
@@ -178,6 +179,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#isTerminating()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsTerminating()
         {
@@ -186,6 +188,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#prestartCoreThread()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool PrestartCoreThread()
         {
@@ -203,6 +206,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#prestartAllCoreThreads()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int PrestartAllCoreThreads()
         {

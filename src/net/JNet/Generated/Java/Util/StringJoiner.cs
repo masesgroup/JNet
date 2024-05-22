@@ -66,6 +66,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringJoiner.html#length()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Length()
         {

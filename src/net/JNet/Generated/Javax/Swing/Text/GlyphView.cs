@@ -99,6 +99,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#isStrikeThrough()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsStrikeThrough()
         {
@@ -107,6 +108,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#isSubscript()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsSubscript()
         {
@@ -115,6 +117,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#isSuperscript()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsSuperscript()
         {
@@ -123,6 +126,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#isUnderline()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsUnderline()
         {

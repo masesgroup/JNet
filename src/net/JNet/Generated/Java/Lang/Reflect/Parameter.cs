@@ -144,6 +144,7 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Parameter.html#isImplicit()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsImplicit()
         {
@@ -152,6 +153,7 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Parameter.html#isNamePresent()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsNamePresent()
         {
@@ -160,6 +162,7 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Parameter.html#isSynthetic()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsSynthetic()
         {
@@ -168,6 +171,7 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Parameter.html#isVarArgs()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsVarArgs()
         {

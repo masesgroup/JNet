@@ -109,6 +109,7 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#isGap()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsGap()
         {
@@ -117,6 +118,7 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#isOverlap()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsOverlap()
         {
@@ -152,6 +154,7 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#toEpochSecond()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         public long ToEpochSecond()
         {

@@ -119,6 +119,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#readObject()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public object ReadObject()
         {

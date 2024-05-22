@@ -47,11 +47,13 @@ namespace Javax.Management.Timer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#isActive()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool IsActive();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#isEmpty()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool IsEmpty();
         /// <summary>
@@ -227,6 +229,7 @@ namespace Javax.Management.Timer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#isActive()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsActive()
         {
@@ -235,6 +238,7 @@ namespace Javax.Management.Timer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#isEmpty()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {

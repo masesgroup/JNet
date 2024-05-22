@@ -122,6 +122,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#isNativeMethod()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsNativeMethod()
         {

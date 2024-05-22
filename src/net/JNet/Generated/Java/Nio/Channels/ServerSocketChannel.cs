@@ -48,6 +48,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ServerSocketChannel.html#open()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.Channels.ServerSocketChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.ServerSocketChannel Open()
@@ -68,6 +69,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ServerSocketChannel.html#socket()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Net.ServerSocket"/></returns>
         public Java.Net.ServerSocket Socket()
         {
@@ -87,6 +89,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ServerSocketChannel.html#accept()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.Channels.SocketChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.SocketChannel Accept()

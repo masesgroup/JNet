@@ -372,6 +372,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#hasLayoutAttributes()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool HasLayoutAttributes()
         {
@@ -380,6 +381,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#hasUniformLineMetrics()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool HasUniformLineMetrics()
         {
@@ -388,6 +390,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#isBold()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsBold()
         {
@@ -396,6 +399,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#isItalic()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsItalic()
         {
@@ -404,6 +408,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#isPlain()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsPlain()
         {
@@ -412,6 +417,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#isTransformed()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsTransformed()
         {

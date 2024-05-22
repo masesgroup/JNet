@@ -47,6 +47,7 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#isActive()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool IsActive();
         /// <summary>
@@ -64,11 +65,13 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#start()"/>
         /// </summary>
+
         /// <exception cref="Java.Io.IOException"/>
         void Start();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#stop()"/>
         /// </summary>
+
         /// <exception cref="Java.Io.IOException"/>
         void Stop();
 
@@ -126,6 +129,7 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#isActive()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsActive()
         {
@@ -152,6 +156,7 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#start()"/>
         /// </summary>
+
         /// <exception cref="Java.Io.IOException"/>
         public void Start()
         {
@@ -160,6 +165,7 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#stop()"/>
         /// </summary>
+
         /// <exception cref="Java.Io.IOException"/>
         public void Stop()
         {

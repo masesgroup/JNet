@@ -35,11 +35,13 @@ namespace Javax.Sql.Rowset.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/TransactionalWriter.html#commit()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         void Commit();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/TransactionalWriter.html#rollback()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         void Rollback();
         /// <summary>
@@ -82,6 +84,7 @@ namespace Javax.Sql.Rowset.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/TransactionalWriter.html#commit()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void Commit()
         {
@@ -90,6 +93,7 @@ namespace Javax.Sql.Rowset.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/TransactionalWriter.html#rollback()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void Rollback()
         {

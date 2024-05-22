@@ -94,6 +94,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongUnaryOperator.html#identity()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Function.LongUnaryOperator"/></returns>
         public virtual Java.Util.Function.LongUnaryOperator Identity()
         {

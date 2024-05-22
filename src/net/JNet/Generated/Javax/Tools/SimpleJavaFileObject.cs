@@ -83,6 +83,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#delete()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool Delete()
         {
@@ -101,6 +102,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#openInputStream()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Io.InputStream"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Io.InputStream OpenInputStream()
@@ -110,6 +112,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#openOutputStream()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Io.OutputStream"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Io.OutputStream OpenOutputStream()
@@ -129,6 +132,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#openWriter()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Io.Writer"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Io.Writer OpenWriter()
@@ -148,6 +152,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#toUri()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Net.URI"/></returns>
         public Java.Net.URI ToUri()
         {

@@ -133,6 +133,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#intValue()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int IntValue()
         {

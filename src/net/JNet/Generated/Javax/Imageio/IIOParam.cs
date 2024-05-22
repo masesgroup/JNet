@@ -118,6 +118,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParam.html#activateController()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool ActivateController()
         {
@@ -126,6 +127,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParam.html#hasController()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool HasController()
         {

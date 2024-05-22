@@ -44,6 +44,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQueries.html#chronology()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Temporal.TemporalQuery"/></returns>
         public static Java.Time.Temporal.TemporalQuery<Java.Time.Chrono.Chronology> Chronology()
         {
@@ -52,6 +53,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQueries.html#localDate()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Temporal.TemporalQuery"/></returns>
         public static Java.Time.Temporal.TemporalQuery<Java.Time.LocalDate> LocalDate()
         {
@@ -60,6 +62,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQueries.html#localTime()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Temporal.TemporalQuery"/></returns>
         public static Java.Time.Temporal.TemporalQuery<Java.Time.LocalTime> LocalTime()
         {
@@ -68,6 +71,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQueries.html#precision()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Temporal.TemporalQuery"/></returns>
         public static Java.Time.Temporal.TemporalQuery<Java.Time.Temporal.TemporalUnit> Precision()
         {
@@ -76,6 +80,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQueries.html#zone()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Temporal.TemporalQuery"/></returns>
         public static Java.Time.Temporal.TemporalQuery<Java.Time.ZoneId> Zone()
         {
@@ -84,6 +89,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQueries.html#zoneId()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Temporal.TemporalQuery"/></returns>
         public static Java.Time.Temporal.TemporalQuery<Java.Time.ZoneId> ZoneId()
         {
@@ -92,6 +98,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQueries.html#offset()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Temporal.TemporalQuery"/></returns>
         public static Java.Time.Temporal.TemporalQuery<Java.Time.ZoneOffset> Offset()
         {

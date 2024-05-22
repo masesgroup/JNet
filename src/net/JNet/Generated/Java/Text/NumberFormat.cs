@@ -221,6 +221,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#isGroupingUsed()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsGroupingUsed()
         {
@@ -229,6 +230,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#isParseIntegerOnly()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsParseIntegerOnly()
         {

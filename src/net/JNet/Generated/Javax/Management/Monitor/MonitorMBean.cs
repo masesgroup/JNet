@@ -53,6 +53,7 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#isActive()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool IsActive();
         /// <summary>
@@ -138,6 +139,7 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#isActive()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsActive()
         {

@@ -43,6 +43,7 @@ namespace Javax.Lang.Model.Type
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVariable.html#asElement()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Lang.Model.Element.Element"/></returns>
         Javax.Lang.Model.Element.Element AsElement();
 
@@ -93,6 +94,7 @@ namespace Javax.Lang.Model.Type
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVariable.html#asElement()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Lang.Model.Element.Element"/></returns>
         public Javax.Lang.Model.Element.Element AsElement()
         {

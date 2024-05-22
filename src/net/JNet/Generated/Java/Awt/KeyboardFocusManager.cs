@@ -332,6 +332,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#clearGlobalFocusOwner()"/>
         /// </summary>
+
         /// <exception cref="Java.Lang.SecurityException"/>
         public void ClearGlobalFocusOwner()
         {

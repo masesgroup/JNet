@@ -83,6 +83,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#console()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Io.Console"/></returns>
         public static Java.Io.Console Console()
         {
@@ -128,6 +129,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#lineSeparator()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String LineSeparator()
         {
@@ -165,6 +167,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#inheritedChannel()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.Channels.Channel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.Channel InheritedChannel()
@@ -192,6 +195,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#currentTimeMillis()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         public static long CurrentTimeMillis()
         {
@@ -200,6 +204,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#nanoTime()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         public static long NanoTime()
         {
@@ -476,6 +481,7 @@ namespace Java.Lang
                 /// <summary>
                 /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.Level.html#values()"/>
                 /// </summary>
+
                 /// <returns><see cref="Java.Lang.System.Logger.Level"/></returns>
                 public static Java.Lang.System.Logger.Level[] Values()
                 {

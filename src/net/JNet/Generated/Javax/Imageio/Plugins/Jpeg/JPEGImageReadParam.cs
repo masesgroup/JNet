@@ -69,6 +69,7 @@ namespace Javax.Imageio.Plugins.Jpeg
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageReadParam.html#areTablesSet()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool AreTablesSet()
         {

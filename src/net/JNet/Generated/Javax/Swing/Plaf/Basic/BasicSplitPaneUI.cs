@@ -83,6 +83,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#isContinuousLayout()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsContinuousLayout()
         {
@@ -100,6 +101,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#createDefaultDivider()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Swing.Plaf.Basic.BasicSplitPaneDivider"/></returns>
         public Javax.Swing.Plaf.Basic.BasicSplitPaneDivider CreateDefaultDivider()
         {

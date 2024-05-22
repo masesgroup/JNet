@@ -126,6 +126,7 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html#values()"/>
             /// </summary>
+
             /// <returns><see cref="Javax.Swing.LayoutStyle.ComponentPlacement"/></returns>
             public static Javax.Swing.LayoutStyle.ComponentPlacement[] Values()
             {

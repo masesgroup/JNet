@@ -103,6 +103,7 @@ namespace Javax.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#createPrintJob()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Print.DocPrintJob"/></returns>
         Javax.Print.DocPrintJob CreatePrintJob();
         /// <summary>
@@ -253,6 +254,7 @@ namespace Javax.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#createPrintJob()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Print.DocPrintJob"/></returns>
         public Javax.Print.DocPrintJob CreatePrintJob()
         {

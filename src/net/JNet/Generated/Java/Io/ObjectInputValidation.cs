@@ -35,6 +35,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputValidation.html#validateObject()"/>
         /// </summary>
+
         /// <exception cref="Java.Io.InvalidObjectException"/>
         void ValidateObject();
 
@@ -71,6 +72,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputValidation.html#validateObject()"/>
         /// </summary>
+
         /// <exception cref="Java.Io.InvalidObjectException"/>
         public void ValidateObject()
         {

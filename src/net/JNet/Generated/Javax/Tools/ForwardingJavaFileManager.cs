@@ -232,6 +232,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileManager.html#close()"/>
         /// </summary>
+
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
@@ -240,6 +241,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileManager.html#flush()"/>
         /// </summary>
+
         /// <exception cref="Java.Io.IOException"/>
         public void Flush()
         {
@@ -468,6 +470,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileManager.html#close()"/>
         /// </summary>
+
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
@@ -476,6 +479,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileManager.html#flush()"/>
         /// </summary>
+
         /// <exception cref="Java.Io.IOException"/>
         public void Flush()
         {

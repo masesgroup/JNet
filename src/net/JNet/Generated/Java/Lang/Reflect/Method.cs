@@ -69,6 +69,7 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Method.html#isBridge()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsBridge()
         {
@@ -77,6 +78,7 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Method.html#isDefault()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsDefault()
         {

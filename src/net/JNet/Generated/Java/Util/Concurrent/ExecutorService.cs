@@ -101,11 +101,13 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#isShutdown()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool IsShutdown();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#isTerminated()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool IsTerminated();
         /// <summary>
@@ -117,6 +119,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#shutdownNow()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.List"/></returns>
         Java.Util.List<Java.Lang.Runnable> ShutdownNow();
         /// <summary>
@@ -244,6 +247,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#isShutdown()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsShutdown()
         {
@@ -252,6 +256,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#isTerminated()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsTerminated()
         {
@@ -269,6 +274,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#shutdownNow()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Java.Lang.Runnable> ShutdownNow()
         {

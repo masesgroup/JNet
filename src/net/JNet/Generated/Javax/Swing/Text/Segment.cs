@@ -103,6 +103,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#isPartialReturn()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsPartialReturn()
         {
@@ -120,6 +121,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#current()"/>
         /// </summary>
+
         /// <returns><see cref="char"/></returns>
         public char Current()
         {
@@ -128,6 +130,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#first()"/>
         /// </summary>
+
         /// <returns><see cref="char"/></returns>
         public char First()
         {
@@ -136,6 +139,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#last()"/>
         /// </summary>
+
         /// <returns><see cref="char"/></returns>
         public char Last()
         {
@@ -144,6 +148,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#next()"/>
         /// </summary>
+
         /// <returns><see cref="char"/></returns>
         public char Next()
         {
@@ -152,6 +157,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#previous()"/>
         /// </summary>
+
         /// <returns><see cref="char"/></returns>
         public char Previous()
         {
@@ -169,6 +175,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#length()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Length()
         {

@@ -110,6 +110,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createEmptyBorder()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateEmptyBorder()
         {
@@ -130,6 +131,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createEtchedBorder()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateEtchedBorder()
         {
@@ -198,6 +200,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createLoweredBevelBorder()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateLoweredBevelBorder()
         {
@@ -206,6 +209,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createLoweredSoftBevelBorder()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateLoweredSoftBevelBorder()
         {
@@ -214,6 +218,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createRaisedBevelBorder()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateRaisedBevelBorder()
         {
@@ -222,6 +227,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createRaisedSoftBevelBorder()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateRaisedSoftBevelBorder()
         {
@@ -282,6 +288,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createCompoundBorder()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Swing.Border.CompoundBorder"/></returns>
         public static Javax.Swing.Border.CompoundBorder CreateCompoundBorder()
         {

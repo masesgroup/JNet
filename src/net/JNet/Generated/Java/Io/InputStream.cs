@@ -44,6 +44,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#nullInputStream()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Io.InputStream"/></returns>
         public static Java.Io.InputStream NullInputStream()
         {
@@ -56,6 +57,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#read()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int Read()
@@ -65,6 +67,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#markSupported()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool MarkSupported()
         {
@@ -73,6 +76,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#readAllBytes()"/>
         /// </summary>
+
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public byte[] ReadAllBytes()
@@ -92,6 +96,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#available()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int Available()
@@ -163,6 +168,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#reset()"/>
         /// </summary>
+
         /// <exception cref="Java.Io.IOException"/>
         public void Reset()
         {
@@ -171,6 +177,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#close()"/>
         /// </summary>
+
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {

@@ -55,6 +55,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/DataSource.html#createConnectionBuilder()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.ConnectionBuilder"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Sql.ConnectionBuilder CreateConnectionBuilder();
@@ -132,6 +133,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/DataSource.html#createConnectionBuilder()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.ConnectionBuilder"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ConnectionBuilder CreateConnectionBuilder()

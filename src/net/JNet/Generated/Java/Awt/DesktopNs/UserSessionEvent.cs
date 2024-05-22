@@ -116,6 +116,7 @@ namespace Java.Awt.DesktopNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#values()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Awt.DesktopNs.UserSessionEvent.Reason"/></returns>
             public static Java.Awt.DesktopNs.UserSessionEvent.Reason[] Values()
             {

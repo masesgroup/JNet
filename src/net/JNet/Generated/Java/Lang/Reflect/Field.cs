@@ -105,6 +105,7 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#isEnumConstant()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsEnumConstant()
         {
@@ -113,6 +114,7 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#isSynthetic()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsSynthetic()
         {
@@ -187,6 +189,7 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#toGenericString()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToGenericString()
         {

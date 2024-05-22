@@ -115,6 +115,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#isTerminated()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsTerminated()
         {
@@ -123,6 +124,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#arrive()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Arrive()
         {
@@ -131,6 +133,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#arriveAndAwaitAdvance()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int ArriveAndAwaitAdvance()
         {
@@ -139,6 +142,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#arriveAndDeregister()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int ArriveAndDeregister()
         {
@@ -188,6 +192,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#register()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Register()
         {

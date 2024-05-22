@@ -35,16 +35,19 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#defaultEventSet()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.String"/></returns>
         Java.Lang.String DefaultEventSet();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#defaultProperty()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.String"/></returns>
         Java.Lang.String DefaultProperty();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#description()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.String"/></returns>
         Java.Lang.String Description();
 
@@ -81,6 +84,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#defaultEventSet()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String DefaultEventSet()
         {
@@ -89,6 +93,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#defaultProperty()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String DefaultProperty()
         {
@@ -97,6 +102,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#description()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Description()
         {

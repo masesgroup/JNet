@@ -68,6 +68,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#negotiate()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Net.Ssl.SSLSession"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Net.Ssl.SSLSession Negotiate()
@@ -87,6 +88,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#close()"/>
         /// </summary>
+
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {

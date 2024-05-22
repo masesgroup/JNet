@@ -44,6 +44,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Pipe.html#open()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.Channels.Pipe"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.Pipe Open()
@@ -57,6 +58,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Pipe.html#sink()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.Channels.Pipe.SinkChannel"/></returns>
         public Java.Nio.Channels.Pipe.SinkChannel Sink()
         {
@@ -65,6 +67,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Pipe.html#source()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.Channels.Pipe.SourceChannel"/></returns>
         public Java.Nio.Channels.Pipe.SourceChannel Source()
         {

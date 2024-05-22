@@ -83,6 +83,7 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStateSet.html#toArray()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Accessibility.AccessibleState"/></returns>
         public Javax.Accessibility.AccessibleState[] ToArray()
         {

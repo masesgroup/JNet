@@ -151,6 +151,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#createParallelGroup()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Swing.GroupLayout.ParallelGroup"/></returns>
         public Javax.Swing.GroupLayout.ParallelGroup CreateParallelGroup()
         {
@@ -178,6 +179,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#createSequentialGroup()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Swing.GroupLayout.SequentialGroup"/></returns>
         public Javax.Swing.GroupLayout.SequentialGroup CreateSequentialGroup()
         {
@@ -332,6 +334,7 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Alignment.html#values()"/>
             /// </summary>
+
             /// <returns><see cref="Javax.Swing.GroupLayout.Alignment"/></returns>
             public static Javax.Swing.GroupLayout.Alignment[] Values()
             {
@@ -543,6 +546,7 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.SequentialGroup.html#addContainerGap()"/>
             /// </summary>
+
             /// <returns><see cref="Javax.Swing.GroupLayout.SequentialGroup"/></returns>
             public Javax.Swing.GroupLayout.SequentialGroup AddContainerGap()
             {

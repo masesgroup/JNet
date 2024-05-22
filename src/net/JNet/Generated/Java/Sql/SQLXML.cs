@@ -63,18 +63,21 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setBinaryStream()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Io.OutputStream"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Io.OutputStream SetBinaryStream();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setCharacterStream()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Io.Writer"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Io.Writer SetCharacterStream();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#free()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         void Free();
 
@@ -154,6 +157,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setBinaryStream()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Io.OutputStream"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.OutputStream SetBinaryStream()
@@ -163,6 +167,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setCharacterStream()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Io.Writer"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.Writer SetCharacterStream()
@@ -172,6 +177,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#free()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void Free()
         {

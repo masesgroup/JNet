@@ -48,6 +48,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#hasArray()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool HasArray()
         {
@@ -56,6 +57,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#isDirect()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsDirect()
         {
@@ -64,6 +66,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#isReadOnly()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsReadOnly()
         {
@@ -72,6 +75,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#arrayOffset()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int ArrayOffset()
         {
@@ -80,6 +84,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#array()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public object Array()
         {
@@ -88,6 +93,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#duplicate()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Duplicate()
         {
@@ -96,6 +102,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#slice()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Slice()
         {
@@ -104,6 +111,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#hasRemaining()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool HasRemaining()
         {
@@ -112,6 +120,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#capacity()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Capacity()
         {
@@ -120,6 +129,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#limit()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Limit()
         {
@@ -128,6 +138,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#position()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Position()
         {
@@ -136,6 +147,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#remaining()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Remaining()
         {
@@ -144,6 +156,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#clear()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Clear()
         {
@@ -152,6 +165,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#flip()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Flip()
         {
@@ -169,6 +183,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#mark()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Mark()
         {
@@ -186,6 +201,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#reset()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Reset()
         {
@@ -194,6 +210,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#rewind()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Rewind()
         {

@@ -66,6 +66,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileDescriptor.html#valid()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool Valid()
         {
@@ -74,6 +75,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileDescriptor.html#sync()"/>
         /// </summary>
+
         /// <exception cref="Java.Io.SyncFailedException"/>
         public void Sync()
         {

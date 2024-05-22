@@ -140,6 +140,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#flags()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Flags()
         {
@@ -148,6 +149,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#pattern()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String PatternMethod()
         {
@@ -175,6 +177,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#asMatchPredicate()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         public Java.Util.Function.Predicate<Java.Lang.String> AsMatchPredicate()
         {
@@ -183,6 +186,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#asMatchPredicate()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         public Java.Util.Function.Predicate<Java.Lang.String> AsMatchPredicateDirect()
         {
@@ -191,6 +195,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#asPredicate()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         public Java.Util.Function.Predicate<Java.Lang.String> AsPredicate()
         {
@@ -199,6 +204,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#asPredicate()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         public Java.Util.Function.Predicate<Java.Lang.String> AsPredicateDirect()
         {

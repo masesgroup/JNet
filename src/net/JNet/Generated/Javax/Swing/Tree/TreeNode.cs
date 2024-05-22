@@ -47,6 +47,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#isLeaf()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool IsLeaf();
         /// <summary>
@@ -58,6 +59,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#children()"/>
         /// </summary>
+
         /// <typeparam name="ReturnExtendsJavax_Swing_Tree_TreeNode"><see cref="Javax.Swing.Tree.TreeNode"/></typeparam>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         Java.Util.Enumeration<ReturnExtendsJavax_Swing_Tree_TreeNode> Children<ReturnExtendsJavax_Swing_Tree_TreeNode>() where ReturnExtendsJavax_Swing_Tree_TreeNode: Javax.Swing.Tree.TreeNode;
@@ -122,6 +124,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#isLeaf()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsLeaf()
         {
@@ -139,6 +142,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#children()"/>
         /// </summary>
+
         /// <typeparam name="ReturnExtendsJavax_Swing_Tree_TreeNode"><see cref="Javax.Swing.Tree.TreeNode"/></typeparam>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<ReturnExtendsJavax_Swing_Tree_TreeNode> Children<ReturnExtendsJavax_Swing_Tree_TreeNode>() where ReturnExtendsJavax_Swing_Tree_TreeNode: Javax.Swing.Tree.TreeNode

@@ -48,6 +48,7 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Schema.html#newValidator()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Xml.Validation.Validator"/></returns>
         public Javax.Xml.Validation.Validator NewValidator()
         {
@@ -56,6 +57,7 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Schema.html#newValidatorHandler()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Xml.Validation.ValidatorHandler"/></returns>
         public Javax.Xml.Validation.ValidatorHandler NewValidatorHandler()
         {

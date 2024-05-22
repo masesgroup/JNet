@@ -72,6 +72,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#isFair()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsFair()
         {
@@ -80,6 +81,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#tryAcquire()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool TryAcquire()
         {
@@ -120,6 +122,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#hasQueuedThreads()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool HasQueuedThreads()
         {
@@ -128,6 +131,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#availablePermits()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int AvailablePermits()
         {
@@ -136,6 +140,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#drainPermits()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int DrainPermits()
         {
@@ -144,6 +149,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#acquire()"/>
         /// </summary>
+
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Acquire()
         {

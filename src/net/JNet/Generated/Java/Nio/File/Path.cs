@@ -61,6 +61,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#isAbsolute()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool IsAbsolute();
         /// <summary>
@@ -78,6 +79,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#toUri()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Net.URI"/></returns>
         Java.Net.URI ToUri();
         /// <summary>
@@ -89,6 +91,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#normalize()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         Java.Nio.File.Path Normalize();
         /// <summary>
@@ -113,6 +116,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#toAbsolutePath()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         Java.Nio.File.Path ToAbsolutePath();
         /// <summary>
@@ -152,6 +156,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#toFile()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Io.File"/></returns>
         Java.Io.File ToFile();
         /// <summary>
@@ -183,6 +188,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#iterator()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         Java.Util.Iterator<Java.Nio.File.Path> Iterator();
 
@@ -290,6 +296,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#isAbsolute()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsAbsolute()
         {
@@ -316,6 +323,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#toUri()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Net.URI"/></returns>
         public Java.Net.URI ToUri()
         {
@@ -333,6 +341,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#normalize()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         public Java.Nio.File.Path Normalize()
         {
@@ -369,6 +378,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#toAbsolutePath()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         public Java.Nio.File.Path ToAbsolutePath()
         {
@@ -426,6 +436,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#toFile()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Io.File"/></returns>
         public Java.Io.File ToFile()
         {
@@ -472,6 +483,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#iterator()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<Java.Nio.File.Path> Iterator()
         {

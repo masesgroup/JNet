@@ -139,6 +139,7 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#hasPrimitives()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool HasPrimitives()
         {
@@ -147,6 +148,7 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#hasWrappers()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool HasWrappers()
         {
@@ -155,6 +157,7 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#parameterCount()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int ParameterCount()
         {
@@ -163,6 +166,7 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#lastParameterType()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public Java.Lang.Class LastParameterType()
         {
@@ -180,6 +184,7 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#returnType()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public Java.Lang.Class ReturnType()
         {
@@ -188,6 +193,7 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#parameterArray()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public Java.Lang.Class[] ParameterArray()
         {
@@ -243,6 +249,7 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#erase()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public Java.Lang.Invoke.MethodType Erase()
         {
@@ -251,6 +258,7 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#generic()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public Java.Lang.Invoke.MethodType Generic()
         {
@@ -279,6 +287,7 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#unwrap()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public Java.Lang.Invoke.MethodType Unwrap()
         {
@@ -287,6 +296,7 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#wrap()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public Java.Lang.Invoke.MethodType Wrap()
         {
@@ -295,6 +305,7 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#toMethodDescriptorString()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToMethodDescriptorString()
         {
@@ -303,6 +314,7 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#parameterList()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Java.Lang.Class> ParameterList()
         {

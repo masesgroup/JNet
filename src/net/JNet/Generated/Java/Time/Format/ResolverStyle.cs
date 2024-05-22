@@ -71,6 +71,7 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/ResolverStyle.html#values()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Format.ResolverStyle"/></returns>
         public static Java.Time.Format.ResolverStyle[] Values()
         {

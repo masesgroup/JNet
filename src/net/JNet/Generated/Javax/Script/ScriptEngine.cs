@@ -95,6 +95,7 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#createBindings()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Script.Bindings"/></returns>
         Javax.Script.Bindings CreateBindings();
         /// <summary>
@@ -278,6 +279,7 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#createBindings()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Script.Bindings"/></returns>
         public Javax.Script.Bindings CreateBindings()
         {

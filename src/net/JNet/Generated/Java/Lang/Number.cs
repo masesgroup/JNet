@@ -48,6 +48,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#doubleValue()"/>
         /// </summary>
+
         /// <returns><see cref="double"/></returns>
         public double DoubleValue()
         {
@@ -56,6 +57,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#floatValue()"/>
         /// </summary>
+
         /// <returns><see cref="float"/></returns>
         public float FloatValue()
         {
@@ -64,6 +66,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#intValue()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int IntValue()
         {
@@ -72,6 +75,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#longValue()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         public long LongValue()
         {
@@ -80,6 +84,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#byteValue()"/>
         /// </summary>
+
         /// <returns><see cref="byte"/></returns>
         public byte ByteValue()
         {
@@ -88,6 +93,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#shortValue()"/>
         /// </summary>
+
         /// <returns><see cref="short"/></returns>
         public short ShortValue()
         {

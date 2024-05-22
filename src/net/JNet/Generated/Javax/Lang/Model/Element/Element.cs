@@ -75,6 +75,7 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#asType()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Lang.Model.Type.TypeMirror"/></returns>
         Javax.Lang.Model.Type.TypeMirror AsType();
 
@@ -175,6 +176,7 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#asType()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Lang.Model.Type.TypeMirror"/></returns>
         public Javax.Lang.Model.Type.TypeMirror AsType()
         {

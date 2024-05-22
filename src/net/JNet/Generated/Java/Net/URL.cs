@@ -208,6 +208,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#openStream()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Io.InputStream"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Io.InputStream OpenStream()
@@ -227,6 +228,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#toExternalForm()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToExternalForm()
         {
@@ -235,6 +237,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#toURI()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Net.URI"/></returns>
         /// <exception cref="Java.Net.URISyntaxException"/>
         public Java.Net.URI ToURI()
@@ -244,6 +247,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#openConnection()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Net.URLConnection"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Net.URLConnection OpenConnection()

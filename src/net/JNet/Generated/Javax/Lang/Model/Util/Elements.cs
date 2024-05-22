@@ -525,6 +525,7 @@ namespace Javax.Lang.Model.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html#values()"/>
             /// </summary>
+
             /// <returns><see cref="Javax.Lang.Model.Util.Elements.Origin"/></returns>
             public static Javax.Lang.Model.Util.Elements.Origin[] Values()
             {
@@ -537,6 +538,7 @@ namespace Javax.Lang.Model.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html#isDeclared()"/>
             /// </summary>
+
             /// <returns><see cref="bool"/></returns>
             public bool IsDeclared()
             {

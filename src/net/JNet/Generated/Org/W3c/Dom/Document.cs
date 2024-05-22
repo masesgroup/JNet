@@ -103,6 +103,7 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createDocumentFragment()"/>
         /// </summary>
+
         /// <returns><see cref="Org.W3c.Dom.DocumentFragment"/></returns>
         Org.W3c.Dom.DocumentFragment CreateDocumentFragment();
         /// <summary>
@@ -332,6 +333,7 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createDocumentFragment()"/>
         /// </summary>
+
         /// <returns><see cref="Org.W3c.Dom.DocumentFragment"/></returns>
         public Org.W3c.Dom.DocumentFragment CreateDocumentFragment()
         {

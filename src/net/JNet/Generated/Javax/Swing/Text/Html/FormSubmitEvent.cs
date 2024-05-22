@@ -103,6 +103,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.MethodType.html#values()"/>
             /// </summary>
+
             /// <returns><see cref="Javax.Swing.Text.Html.FormSubmitEvent.MethodType"/></returns>
             public static Javax.Swing.Text.Html.FormSubmitEvent.MethodType[] Values()
             {

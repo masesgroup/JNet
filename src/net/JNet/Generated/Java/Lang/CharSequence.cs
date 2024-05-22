@@ -41,6 +41,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html#length()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         int Length();
         /// <summary>
@@ -53,11 +54,13 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html#chars()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         Java.Util.Stream.IntStream Chars();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html#codePoints()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         Java.Util.Stream.IntStream CodePoints();
 
@@ -113,6 +116,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html#length()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Length()
         {
@@ -131,6 +135,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html#chars()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream Chars()
         {
@@ -139,6 +144,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html#codePoints()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream CodePoints()
         {

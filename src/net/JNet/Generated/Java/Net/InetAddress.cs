@@ -131,6 +131,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isAnyLocalAddress()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsAnyLocalAddress()
         {
@@ -139,6 +140,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isLinkLocalAddress()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsLinkLocalAddress()
         {
@@ -147,6 +149,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isLoopbackAddress()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsLoopbackAddress()
         {
@@ -155,6 +158,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMCGlobal()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsMCGlobal()
         {
@@ -163,6 +167,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMCLinkLocal()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsMCLinkLocal()
         {
@@ -171,6 +176,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMCNodeLocal()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsMCNodeLocal()
         {
@@ -179,6 +185,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMCOrgLocal()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsMCOrgLocal()
         {
@@ -187,6 +194,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMCSiteLocal()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsMCSiteLocal()
         {
@@ -195,6 +203,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMulticastAddress()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsMulticastAddress()
         {
@@ -225,6 +234,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isSiteLocalAddress()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsSiteLocalAddress()
         {

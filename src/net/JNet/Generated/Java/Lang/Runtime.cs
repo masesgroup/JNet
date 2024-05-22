@@ -51,6 +51,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#version()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.Runtime.Version"/></returns>
         public static Java.Lang.Runtime.Version VersionMethod()
         {
@@ -138,6 +139,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#availableProcessors()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int AvailableProcessors()
         {
@@ -146,6 +148,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#freeMemory()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         public long FreeMemory()
         {
@@ -154,6 +157,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#maxMemory()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         public long MaxMemory()
         {
@@ -162,6 +166,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#totalMemory()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         public long TotalMemory()
         {
@@ -293,6 +298,7 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#feature()"/>
             /// </summary>
+
             /// <returns><see cref="int"/></returns>
             public int Feature()
             {
@@ -301,6 +307,7 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#interim()"/>
             /// </summary>
+
             /// <returns><see cref="int"/></returns>
             public int Interim()
             {
@@ -309,6 +316,7 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#patch()"/>
             /// </summary>
+
             /// <returns><see cref="int"/></returns>
             public int Patch()
             {
@@ -317,6 +325,7 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#update()"/>
             /// </summary>
+
             /// <returns><see cref="int"/></returns>
             public int Update()
             {
@@ -325,6 +334,7 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#version()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Util.List"/></returns>
             public Java.Util.List<Java.Lang.Integer> VersionMethod()
             {
@@ -333,6 +343,7 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#build()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Util.Optional"/></returns>
             public Java.Util.Optional<Java.Lang.Integer> Build()
             {
@@ -341,6 +352,7 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#optional()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Util.Optional"/></returns>
             public Java.Util.Optional<Java.Lang.String> Optional()
             {
@@ -349,6 +361,7 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#pre()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Util.Optional"/></returns>
             public Java.Util.Optional<Java.Lang.String> Pre()
             {

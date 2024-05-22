@@ -176,6 +176,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#newIncompleteFuture()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public Java.Util.Concurrent.CompletableFuture NewIncompleteFuture()
         {
@@ -211,6 +212,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#isCancelled()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsCancelled()
         {
@@ -219,6 +221,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#isCompletedExceptionally()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsCompletedExceptionally()
         {
@@ -227,6 +230,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#isDone()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsDone()
         {
@@ -265,6 +269,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#copy()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public Java.Util.Concurrent.CompletableFuture Copy()
         {
@@ -283,6 +288,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#toCompletableFuture()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public Java.Util.Concurrent.CompletableFuture ToCompletableFuture()
         {
@@ -654,6 +660,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#minimalCompletionStage()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage MinimalCompletionStage()
         {
@@ -662,6 +669,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#defaultExecutor()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Concurrent.Executor"/></returns>
         public Java.Util.Concurrent.Executor DefaultExecutor()
         {
@@ -670,6 +678,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#get()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
@@ -702,6 +711,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#join()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public object Join()
         {
@@ -926,6 +936,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#newIncompleteFuture()"/>
         /// </summary>
+
         /// <typeparam name="U"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public Java.Util.Concurrent.CompletableFuture<U> NewIncompleteFuture<U>()
@@ -962,6 +973,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#isCancelled()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsCancelled()
         {
@@ -970,6 +982,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#isCompletedExceptionally()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsCompletedExceptionally()
         {
@@ -978,6 +991,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#isDone()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsDone()
         {
@@ -1018,6 +1032,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#copy()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public Java.Util.Concurrent.CompletableFuture<T> Copy()
         {
@@ -1036,6 +1051,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#toCompletableFuture()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public Java.Util.Concurrent.CompletableFuture<T> ToCompletableFuture()
         {
@@ -1407,6 +1423,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#minimalCompletionStage()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<T> MinimalCompletionStage()
         {
@@ -1415,6 +1432,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#defaultExecutor()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Concurrent.Executor"/></returns>
         public Java.Util.Concurrent.Executor DefaultExecutor()
         {
@@ -1423,6 +1441,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#get()"/>
         /// </summary>
+
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
@@ -1455,6 +1474,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#join()"/>
         /// </summary>
+
         /// <returns><typeparamref name="T"/></returns>
         public T Join()
         {

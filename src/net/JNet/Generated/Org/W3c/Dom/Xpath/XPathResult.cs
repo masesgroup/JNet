@@ -63,6 +63,7 @@ namespace Org.W3c.Dom.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#iterateNext()"/>
         /// </summary>
+
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         /// <exception cref="Org.W3c.Dom.Xpath.XPathException"/>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
@@ -217,6 +218,7 @@ namespace Org.W3c.Dom.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#iterateNext()"/>
         /// </summary>
+
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         /// <exception cref="Org.W3c.Dom.Xpath.XPathException"/>
         /// <exception cref="Org.W3c.Dom.DOMException"/>

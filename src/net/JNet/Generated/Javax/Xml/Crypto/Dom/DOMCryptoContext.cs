@@ -134,6 +134,7 @@ namespace Javax.Xml.Crypto.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMCryptoContext.html#iterator()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<Java.Util.Map.Entry<Java.Lang.String, Org.W3c.Dom.Element>> Iterator()
         {

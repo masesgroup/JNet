@@ -71,6 +71,7 @@ namespace Java.Lang.Annotation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/RetentionPolicy.html#values()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.Annotation.RetentionPolicy"/></returns>
         public static Java.Lang.Annotation.RetentionPolicy[] Values()
         {

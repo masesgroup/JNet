@@ -153,6 +153,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#values()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Temporal.ChronoUnit"/></returns>
         public static Java.Time.Temporal.ChronoUnit[] Values()
         {
@@ -183,6 +184,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#isDateBased()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsDateBased()
         {
@@ -191,6 +193,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#isDurationEstimated()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsDurationEstimated()
         {
@@ -208,6 +211,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#isTimeBased()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsTimeBased()
         {

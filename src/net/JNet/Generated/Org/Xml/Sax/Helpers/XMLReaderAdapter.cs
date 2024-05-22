@@ -109,6 +109,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#endDocument()"/>
         /// </summary>
+
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public virtual void EndDocument()
         {
@@ -396,6 +397,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#startDocument()"/>
         /// </summary>
+
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public virtual void StartDocument()
         {
@@ -493,6 +495,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#endDocument()"/>
         /// </summary>
+
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public override void EndDocument()
         {
@@ -611,6 +614,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#startDocument()"/>
         /// </summary>
+
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public override void StartDocument()
         {

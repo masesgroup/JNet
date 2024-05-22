@@ -172,6 +172,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Period.html#isNegative()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsNegative()
         {
@@ -180,6 +181,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Period.html#isZero()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsZero()
         {
@@ -206,6 +208,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Period.html#negated()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
         public Java.Time.Chrono.ChronoPeriod Negated()
         {
@@ -214,6 +217,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Period.html#normalized()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
         public Java.Time.Chrono.ChronoPeriod Normalized()
         {
@@ -339,6 +343,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Period.html#toTotalMonths()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         public long ToTotalMonths()
         {

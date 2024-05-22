@@ -73,6 +73,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html#systemDefaultZone()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Clock"/></returns>
         public static Java.Time.Clock SystemDefaultZone()
         {
@@ -81,6 +82,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html#systemUTC()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Clock"/></returns>
         public static Java.Time.Clock SystemUTC()
         {
@@ -146,6 +148,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html#instant()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public Java.Time.Instant Instant()
         {
@@ -154,6 +157,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html#millis()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         public long Millis()
         {

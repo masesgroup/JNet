@@ -55,6 +55,7 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#normalized()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
         Java.Time.Chrono.ChronoPeriod Normalized();
         /// <summary>
@@ -84,16 +85,19 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#isNegative()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool IsNegative();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#isZero()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool IsZero();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#negated()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
         Java.Time.Chrono.ChronoPeriod Negated();
 
@@ -172,6 +176,7 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#normalized()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
         public Java.Time.Chrono.ChronoPeriod Normalized()
         {
@@ -216,6 +221,7 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#isNegative()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsNegative()
         {
@@ -224,6 +230,7 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#isZero()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsZero()
         {
@@ -232,6 +239,7 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#negated()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
         public Java.Time.Chrono.ChronoPeriod Negated()
         {

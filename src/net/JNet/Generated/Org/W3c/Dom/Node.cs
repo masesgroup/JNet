@@ -99,11 +99,13 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#hasAttributes()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool HasAttributes();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#hasChildNodes()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool HasChildNodes();
         /// <summary>
@@ -465,6 +467,7 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#hasAttributes()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool HasAttributes()
         {
@@ -473,6 +476,7 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#hasChildNodes()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool HasChildNodes()
         {

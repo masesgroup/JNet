@@ -44,6 +44,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#empty()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
         public static Java.Util.OptionalDouble Empty()
         {
@@ -84,6 +85,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#isEmpty()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
@@ -92,6 +94,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#isPresent()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsPresent()
         {
@@ -118,6 +121,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#orElseThrow()"/>
         /// </summary>
+
         /// <returns><see cref="double"/></returns>
         public double OrElseThrow()
         {
@@ -126,6 +130,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#stream()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream Stream()
         {

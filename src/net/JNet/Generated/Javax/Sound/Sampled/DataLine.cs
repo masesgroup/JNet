@@ -59,16 +59,19 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#isActive()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool IsActive();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#isRunning()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool IsRunning();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#available()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         int Available();
         /// <summary>
@@ -163,6 +166,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#isActive()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsActive()
         {
@@ -171,6 +175,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#isRunning()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsRunning()
         {
@@ -179,6 +184,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#available()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Available()
         {

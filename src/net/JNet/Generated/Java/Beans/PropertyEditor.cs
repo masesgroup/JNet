@@ -55,11 +55,13 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#isPaintable()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool IsPaintable();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#supportsCustomEditor()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool SupportsCustomEditor();
         /// <summary>
@@ -147,6 +149,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#isPaintable()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsPaintable()
         {
@@ -155,6 +158,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#supportsCustomEditor()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool SupportsCustomEditor()
         {

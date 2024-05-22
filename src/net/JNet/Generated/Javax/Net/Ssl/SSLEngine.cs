@@ -174,6 +174,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#isInboundDone()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsInboundDone()
         {
@@ -182,6 +183,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#isOutboundDone()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsOutboundDone()
         {
@@ -216,6 +218,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#beginHandshake()"/>
         /// </summary>
+
         /// <exception cref="Javax.Net.Ssl.SSLException"/>
         public void BeginHandshake()
         {
@@ -224,6 +227,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#closeInbound()"/>
         /// </summary>
+
         /// <exception cref="Javax.Net.Ssl.SSLException"/>
         public void CloseInbound()
         {

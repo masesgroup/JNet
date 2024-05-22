@@ -58,11 +58,13 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html#close()"/>
         /// </summary>
+
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         void Close();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html#flush()"/>
         /// </summary>
+
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         void Flush();
         /// <summary>
@@ -147,6 +149,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html#close()"/>
         /// </summary>
+
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void Close()
         {
@@ -155,6 +158,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html#flush()"/>
         /// </summary>
+
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void Flush()
         {

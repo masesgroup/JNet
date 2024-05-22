@@ -44,6 +44,7 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.html#newBuilder()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.File.Attribute.AclEntry.Builder"/></returns>
         public static Java.Nio.File.Attribute.AclEntry.Builder NewBuilder()
         {
@@ -65,6 +66,7 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.html#type()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.File.Attribute.AclEntryType"/></returns>
         public Java.Nio.File.Attribute.AclEntryType Type()
         {
@@ -73,6 +75,7 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.html#principal()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.File.Attribute.UserPrincipal"/></returns>
         public Java.Nio.File.Attribute.UserPrincipal Principal()
         {
@@ -81,6 +84,7 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.html#flags()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Nio.File.Attribute.AclEntryFlag> Flags()
         {
@@ -89,6 +93,7 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.html#permissions()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Nio.File.Attribute.AclEntryPermission> Permissions()
         {
@@ -121,6 +126,7 @@ namespace Java.Nio.File.Attribute
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.Builder.html#build()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Nio.File.Attribute.AclEntry"/></returns>
             public Java.Nio.File.Attribute.AclEntry Build()
             {

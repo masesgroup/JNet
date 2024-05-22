@@ -54,6 +54,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html#firstDayOfMonth()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
         public static Java.Time.Temporal.TemporalAdjuster FirstDayOfMonth()
         {
@@ -62,6 +63,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html#firstDayOfNextMonth()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
         public static Java.Time.Temporal.TemporalAdjuster FirstDayOfNextMonth()
         {
@@ -70,6 +72,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html#firstDayOfNextYear()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
         public static Java.Time.Temporal.TemporalAdjuster FirstDayOfNextYear()
         {
@@ -78,6 +81,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html#firstDayOfYear()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
         public static Java.Time.Temporal.TemporalAdjuster FirstDayOfYear()
         {
@@ -95,6 +99,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html#lastDayOfMonth()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
         public static Java.Time.Temporal.TemporalAdjuster LastDayOfMonth()
         {
@@ -103,6 +108,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html#lastDayOfYear()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
         public static Java.Time.Temporal.TemporalAdjuster LastDayOfYear()
         {

@@ -43,6 +43,7 @@ namespace Java.Awt.Im.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html#isCompositionEnabled()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool IsCompositionEnabled();
         /// <summary>
@@ -153,6 +154,7 @@ namespace Java.Awt.Im.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html#isCompositionEnabled()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsCompositionEnabled()
         {

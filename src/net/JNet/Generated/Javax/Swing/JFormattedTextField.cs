@@ -141,6 +141,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#isEditValid()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsEditValid()
         {
@@ -149,6 +150,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#commitEdit()"/>
         /// </summary>
+
         /// <exception cref="Java.Text.ParseException"/>
         public void CommitEdit()
         {

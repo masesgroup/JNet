@@ -55,6 +55,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#size()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
@@ -72,6 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#allKeys()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
         public Javax.Swing.KeyStroke[] AllKeys()
         {
@@ -80,6 +82,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#keys()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
         public Javax.Swing.KeyStroke[] Keys()
         {

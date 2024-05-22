@@ -268,6 +268,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#isInfinite()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsInfinite()
         {
@@ -276,6 +277,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#isNaN()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsNaN()
         {

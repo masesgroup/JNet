@@ -35,6 +35,7 @@ namespace Javax.Annotation.Processing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/SupportedAnnotationTypes.html#value()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.String"/></returns>
         Java.Lang.String[] Value();
 
@@ -71,6 +72,7 @@ namespace Javax.Annotation.Processing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/SupportedAnnotationTypes.html#value()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] Value()
         {

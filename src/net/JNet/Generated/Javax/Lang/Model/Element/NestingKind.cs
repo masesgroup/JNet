@@ -77,6 +77,7 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#values()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Lang.Model.Element.NestingKind"/></returns>
         public static Javax.Lang.Model.Element.NestingKind[] Values()
         {
@@ -89,6 +90,7 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#isNested()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsNested()
         {

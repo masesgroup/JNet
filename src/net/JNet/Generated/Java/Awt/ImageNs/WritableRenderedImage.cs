@@ -39,6 +39,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#hasTileWriters()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool HasTileWriters();
         /// <summary>
@@ -117,6 +118,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#hasTileWriters()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool HasTileWriters()
         {

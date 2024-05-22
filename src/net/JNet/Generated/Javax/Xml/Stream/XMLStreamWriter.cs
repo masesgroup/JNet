@@ -53,11 +53,13 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#close()"/>
         /// </summary>
+
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         void Close();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#flush()"/>
         /// </summary>
+
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         void Flush();
         /// <summary>
@@ -159,11 +161,13 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeEndDocument()"/>
         /// </summary>
+
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         void WriteEndDocument();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeEndElement()"/>
         /// </summary>
+
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         void WriteEndElement();
         /// <summary>
@@ -195,6 +199,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeStartDocument()"/>
         /// </summary>
+
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         void WriteStartDocument();
         /// <summary>
@@ -292,6 +297,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#close()"/>
         /// </summary>
+
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void Close()
         {
@@ -300,6 +306,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#flush()"/>
         /// </summary>
+
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void Flush()
         {
@@ -446,6 +453,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeEndDocument()"/>
         /// </summary>
+
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void WriteEndDocument()
         {
@@ -454,6 +462,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeEndElement()"/>
         /// </summary>
+
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void WriteEndElement()
         {
@@ -500,6 +509,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeStartDocument()"/>
         /// </summary>
+
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void WriteStartDocument()
         {

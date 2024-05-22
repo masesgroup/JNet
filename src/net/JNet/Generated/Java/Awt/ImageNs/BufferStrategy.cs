@@ -62,6 +62,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferStrategy.html#contentsLost()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool ContentsLost()
         {
@@ -70,6 +71,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferStrategy.html#contentsRestored()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool ContentsRestored()
         {

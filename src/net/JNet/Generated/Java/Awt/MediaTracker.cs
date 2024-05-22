@@ -87,6 +87,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#checkAll()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool CheckAll()
         {
@@ -142,6 +143,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#isErrorAny()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsErrorAny()
         {
@@ -237,6 +239,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#waitForAll()"/>
         /// </summary>
+
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void WaitForAll()
         {

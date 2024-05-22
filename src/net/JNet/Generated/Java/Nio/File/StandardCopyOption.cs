@@ -75,6 +75,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardCopyOption.html#values()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Nio.File.StandardCopyOption"/></returns>
         public static Java.Nio.File.StandardCopyOption[] Values()
         {

@@ -57,6 +57,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#find()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool Find()
         {
@@ -74,6 +75,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#hasAnchoringBounds()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool HasAnchoringBounds()
         {
@@ -82,6 +84,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#hasTransparentBounds()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool HasTransparentBounds()
         {
@@ -90,6 +93,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#hitEnd()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool HitEnd()
         {
@@ -98,6 +102,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#lookingAt()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool LookingAt()
         {
@@ -106,6 +111,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#matches()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool Matches()
         {
@@ -114,6 +120,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#requireEnd()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool RequireEnd()
         {
@@ -122,6 +129,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#end()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int End()
         {
@@ -148,6 +156,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#groupCount()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int GroupCount()
         {
@@ -156,6 +165,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#regionEnd()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int RegionEnd()
         {
@@ -164,6 +174,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#regionStart()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int RegionStart()
         {
@@ -172,6 +183,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#start()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Start()
         {
@@ -198,6 +210,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#group()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Group()
         {
@@ -308,6 +321,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#reset()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Regex.Matcher"/></returns>
         public Java.Util.Regex.Matcher Reset()
         {
@@ -352,6 +366,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#toMatchResult()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Regex.MatchResult"/></returns>
         public Java.Util.Regex.MatchResult ToMatchResult()
         {
@@ -360,6 +375,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#pattern()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Regex.Pattern"/></returns>
         public Java.Util.Regex.Pattern Pattern()
         {
@@ -368,6 +384,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#results()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Java.Util.Regex.MatchResult> Results()
         {

@@ -39,11 +39,13 @@ namespace Javax.Security.Sasl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#hasInitialResponse()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool HasInitialResponse();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#isComplete()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool IsComplete();
         /// <summary>
@@ -80,6 +82,7 @@ namespace Javax.Security.Sasl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#dispose()"/>
         /// </summary>
+
         /// <exception cref="Javax.Security.Sasl.SaslException"/>
         void Dispose();
 
@@ -123,6 +126,7 @@ namespace Javax.Security.Sasl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#hasInitialResponse()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool HasInitialResponse()
         {
@@ -131,6 +135,7 @@ namespace Javax.Security.Sasl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#isComplete()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsComplete()
         {
@@ -182,6 +187,7 @@ namespace Javax.Security.Sasl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#dispose()"/>
         /// </summary>
+
         /// <exception cref="Javax.Security.Sasl.SaslException"/>
         public new void Dispose()
         {

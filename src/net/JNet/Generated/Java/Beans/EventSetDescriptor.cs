@@ -171,6 +171,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#isInDefaultEventSet()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsInDefaultEventSet()
         {
@@ -179,6 +180,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#isUnicast()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsUnicast()
         {

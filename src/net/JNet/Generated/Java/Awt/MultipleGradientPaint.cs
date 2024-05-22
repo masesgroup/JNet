@@ -131,6 +131,7 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.ColorSpaceType.html#values()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Awt.MultipleGradientPaint.ColorSpaceType"/></returns>
             public static Java.Awt.MultipleGradientPaint.ColorSpaceType[] Values()
             {
@@ -197,6 +198,7 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.CycleMethod.html#values()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Awt.MultipleGradientPaint.CycleMethod"/></returns>
             public static Java.Awt.MultipleGradientPaint.CycleMethod[] Values()
             {

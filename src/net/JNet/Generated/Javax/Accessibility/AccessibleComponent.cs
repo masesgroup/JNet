@@ -73,21 +73,25 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#isEnabled()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool IsEnabled();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#isFocusTraversable()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool IsFocusTraversable();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#isShowing()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool IsShowing();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#isVisible()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool IsVisible();
         /// <summary>
@@ -225,6 +229,7 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#isEnabled()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsEnabled()
         {
@@ -233,6 +238,7 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#isFocusTraversable()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsFocusTraversable()
         {
@@ -241,6 +247,7 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#isShowing()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsShowing()
         {
@@ -249,6 +256,7 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#isVisible()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsVisible()
         {

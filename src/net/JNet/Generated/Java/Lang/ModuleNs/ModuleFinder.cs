@@ -41,6 +41,7 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#findAll()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Set"/></returns>
         Java.Util.Set<Java.Lang.ModuleNs.ModuleReference> FindAll();
 
@@ -91,6 +92,7 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#ofSystem()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.ModuleNs.ModuleFinder"/></returns>
         public static Java.Lang.ModuleNs.ModuleFinder OfSystem()
         {
@@ -112,6 +114,7 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#findAll()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.ModuleNs.ModuleReference> FindAll()
         {

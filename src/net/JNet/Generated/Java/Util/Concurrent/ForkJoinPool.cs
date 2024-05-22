@@ -65,6 +65,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#commonPool()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Concurrent.ForkJoinPool"/></returns>
         public static Java.Util.Concurrent.ForkJoinPool CommonPool()
         {
@@ -179,6 +180,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#hasQueuedSubmissions()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool HasQueuedSubmissions()
         {
@@ -187,6 +189,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#isQuiescent()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsQuiescent()
         {
@@ -195,6 +198,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#isTerminating()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsTerminating()
         {
@@ -275,6 +279,7 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.ManagedBlocker.html#block()"/>
             /// </summary>
+
             /// <returns><see cref="bool"/></returns>
             /// <exception cref="Java.Lang.InterruptedException"/>
             public bool Block()
@@ -284,6 +289,7 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.ManagedBlocker.html#isReleasable()"/>
             /// </summary>
+
             /// <returns><see cref="bool"/></returns>
             public bool IsReleasable()
             {

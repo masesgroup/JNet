@@ -167,6 +167,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#get()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public object Get()
         {
@@ -390,6 +391,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#get()"/>
         /// </summary>
+
         /// <returns><typeparamref name="V"/></returns>
         public V Get()
         {

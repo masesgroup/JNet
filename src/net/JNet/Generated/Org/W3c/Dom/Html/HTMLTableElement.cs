@@ -91,16 +91,19 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#createCaption()"/>
         /// </summary>
+
         /// <returns><see cref="Org.W3c.Dom.Html.HTMLElement"/></returns>
         Org.W3c.Dom.Html.HTMLElement CreateCaption();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#createTFoot()"/>
         /// </summary>
+
         /// <returns><see cref="Org.W3c.Dom.Html.HTMLElement"/></returns>
         Org.W3c.Dom.Html.HTMLElement CreateTFoot();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#createTHead()"/>
         /// </summary>
+
         /// <returns><see cref="Org.W3c.Dom.Html.HTMLElement"/></returns>
         Org.W3c.Dom.Html.HTMLElement CreateTHead();
         /// <summary>
@@ -260,6 +263,7 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#createCaption()"/>
         /// </summary>
+
         /// <returns><see cref="Org.W3c.Dom.Html.HTMLElement"/></returns>
         public Org.W3c.Dom.Html.HTMLElement CreateCaption()
         {
@@ -268,6 +272,7 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#createTFoot()"/>
         /// </summary>
+
         /// <returns><see cref="Org.W3c.Dom.Html.HTMLElement"/></returns>
         public Org.W3c.Dom.Html.HTMLElement CreateTFoot()
         {
@@ -276,6 +281,7 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#createTHead()"/>
         /// </summary>
+
         /// <returns><see cref="Org.W3c.Dom.Html.HTMLElement"/></returns>
         public Org.W3c.Dom.Html.HTMLElement CreateTHead()
         {

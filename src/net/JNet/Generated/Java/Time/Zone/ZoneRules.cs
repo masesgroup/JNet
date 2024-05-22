@@ -93,6 +93,7 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#isFixedOffset()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsFixedOffset()
         {

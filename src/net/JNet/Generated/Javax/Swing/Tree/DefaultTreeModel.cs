@@ -87,6 +87,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#asksAllowsChildren()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool AsksAllowsChildren()
         {

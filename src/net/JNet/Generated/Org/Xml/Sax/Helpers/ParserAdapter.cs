@@ -140,6 +140,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#getContentHandler()"/>
         /// </summary>
+
         /// <returns><see cref="Org.Xml.Sax.ContentHandler"/></returns>
         public virtual Org.Xml.Sax.ContentHandler GetContentHandler()
         {
@@ -162,6 +163,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#getDTDHandler()"/>
         /// </summary>
+
         /// <returns><see cref="Org.Xml.Sax.DTDHandler"/></returns>
         public virtual Org.Xml.Sax.DTDHandler GetDTDHandler()
         {
@@ -184,6 +186,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#getEntityResolver()"/>
         /// </summary>
+
         /// <returns><see cref="Org.Xml.Sax.EntityResolver"/></returns>
         public virtual Org.Xml.Sax.EntityResolver GetEntityResolver()
         {
@@ -206,6 +209,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#getErrorHandler()"/>
         /// </summary>
+
         /// <returns><see cref="Org.Xml.Sax.ErrorHandler"/></returns>
         public virtual Org.Xml.Sax.ErrorHandler GetErrorHandler()
         {
@@ -251,6 +255,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#endDocument()"/>
         /// </summary>
+
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public virtual void EndDocument()
         {
@@ -540,6 +545,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#startDocument()"/>
         /// </summary>
+
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public virtual void StartDocument()
         {
@@ -640,6 +646,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#endDocument()"/>
         /// </summary>
+
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public override void EndDocument()
         {
@@ -728,6 +735,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#startDocument()"/>
         /// </summary>
+
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public override void StartDocument()
         {

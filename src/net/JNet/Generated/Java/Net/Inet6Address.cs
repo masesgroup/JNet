@@ -86,6 +86,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Inet6Address.html#isIPv4CompatibleAddress()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsIPv4CompatibleAddress()
         {

@@ -197,6 +197,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isDomainPattern()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsDomainPattern()
         {
@@ -205,6 +206,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPattern()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsPattern()
         {
@@ -213,6 +215,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPropertyListPattern()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsPropertyListPattern()
         {
@@ -221,6 +224,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPropertyPattern()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsPropertyPattern()
         {
@@ -229,6 +233,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPropertyValuePattern()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsPropertyValuePattern()
         {

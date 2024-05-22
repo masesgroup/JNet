@@ -81,6 +81,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#now()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public static Java.Time.OffsetTime Now()
         {
@@ -289,6 +290,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#toLocalTime()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public Java.Time.LocalTime ToLocalTime()
         {

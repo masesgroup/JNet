@@ -91,6 +91,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Clob.html#length()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         long Length();
@@ -113,6 +114,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Clob.html#free()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         void Free();
         /// <summary>
@@ -235,6 +237,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Clob.html#length()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public long Length()
@@ -266,6 +269,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Clob.html#free()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void Free()
         {

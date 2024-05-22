@@ -165,6 +165,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#canReadRaster()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool CanReadRaster()
         {
@@ -183,6 +184,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#isIgnoringMetadata()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsIgnoringMetadata()
         {
@@ -211,6 +213,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#isSeekForwardOnly()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsSeekForwardOnly()
         {
@@ -219,6 +222,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#readerSupportsThumbnails()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool ReaderSupportsThumbnails()
         {

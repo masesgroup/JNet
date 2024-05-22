@@ -135,6 +135,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultButtonModel.html#isArmed()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsArmed()
         {
@@ -143,6 +144,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultButtonModel.html#isEnabled()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsEnabled()
         {
@@ -151,6 +153,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultButtonModel.html#isPressed()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsPressed()
         {
@@ -159,6 +162,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultButtonModel.html#isRollover()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsRollover()
         {
@@ -167,6 +171,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultButtonModel.html#isSelected()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsSelected()
         {

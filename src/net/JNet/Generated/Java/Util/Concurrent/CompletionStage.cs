@@ -225,6 +225,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#toCompletableFuture()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public Java.Util.Concurrent.CompletableFuture ToCompletableFuture()
         {
@@ -626,6 +627,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#toCompletableFuture()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         Java.Util.Concurrent.CompletableFuture<T> ToCompletableFuture();
         /// <summary>
@@ -1054,6 +1056,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#toCompletableFuture()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public Java.Util.Concurrent.CompletableFuture<T> ToCompletableFuture()
         {

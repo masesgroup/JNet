@@ -35,11 +35,13 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SecondaryLoop.html#enter()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool Enter();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SecondaryLoop.html#exit()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool Exit();
 
@@ -76,6 +78,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SecondaryLoop.html#enter()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool Enter()
         {
@@ -84,6 +87,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SecondaryLoop.html#exit()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool Exit()
         {

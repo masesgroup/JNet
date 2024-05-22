@@ -35,11 +35,13 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferencesFactory.html#systemRoot()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
         Java.Util.Prefs.Preferences SystemRoot();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferencesFactory.html#userRoot()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
         Java.Util.Prefs.Preferences UserRoot();
 
@@ -76,6 +78,7 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferencesFactory.html#systemRoot()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
         public Java.Util.Prefs.Preferences SystemRoot()
         {
@@ -84,6 +87,7 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferencesFactory.html#userRoot()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
         public Java.Util.Prefs.Preferences UserRoot()
         {

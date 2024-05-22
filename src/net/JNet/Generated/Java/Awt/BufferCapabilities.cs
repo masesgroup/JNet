@@ -79,6 +79,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#isFullScreenRequired()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsFullScreenRequired()
         {
@@ -87,6 +88,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#isMultiBufferAvailable()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsMultiBufferAvailable()
         {
@@ -95,6 +97,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#isPageFlipping()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsPageFlipping()
         {

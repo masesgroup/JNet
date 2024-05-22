@@ -52,6 +52,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html#nullOutputStream()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Io.OutputStream"/></returns>
         public static Java.Io.OutputStream NullOutputStream()
         {
@@ -73,6 +74,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html#close()"/>
         /// </summary>
+
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
@@ -81,6 +83,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html#flush()"/>
         /// </summary>
+
         /// <exception cref="Java.Io.IOException"/>
         public void Flush()
         {

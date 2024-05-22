@@ -39,6 +39,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#isDynamic()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool IsDynamic();
         /// <summary>
@@ -111,6 +112,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#isDynamic()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsDynamic()
         {

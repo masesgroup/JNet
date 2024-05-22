@@ -35,162 +35,189 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readBoolean()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         bool ReadBoolean();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#wasNull()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         bool WasNull();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readByte()"/>
         /// </summary>
+
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         byte ReadByte();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readBytes()"/>
         /// </summary>
+
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         byte[] ReadBytes();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readDouble()"/>
         /// </summary>
+
         /// <returns><see cref="double"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         double ReadDouble();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readFloat()"/>
         /// </summary>
+
         /// <returns><see cref="float"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         float ReadFloat();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readInt()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         int ReadInt();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readAsciiStream()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Io.InputStream"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Io.InputStream ReadAsciiStream();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readBinaryStream()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Io.InputStream"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Io.InputStream ReadBinaryStream();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readCharacterStream()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Io.Reader"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Io.Reader ReadCharacterStream();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readObject()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         object ReadObject();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readNString()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Lang.String ReadNString();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readString()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Lang.String ReadString();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readBigDecimal()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Math.BigDecimal ReadBigDecimal();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readURL()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Net.URL"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Net.URL ReadURL();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readArray()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.Array"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Sql.Array ReadArray();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readBlob()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.Blob"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Sql.Blob ReadBlob();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readClob()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.Clob"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Sql.Clob ReadClob();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readDate()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.Date"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Sql.Date ReadDate();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readNClob()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.NClob"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Sql.NClob ReadNClob();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readRef()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.Ref"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Sql.Ref ReadRef();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readRowId()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.RowId"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Sql.RowId ReadRowId();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readSQLXML()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.SQLXML"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Sql.SQLXML ReadSQLXML();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readTime()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.Time"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Sql.Time ReadTime();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readTimestamp()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.Timestamp"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Sql.Timestamp ReadTimestamp();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readLong()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         long ReadLong();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readShort()"/>
         /// </summary>
+
         /// <returns><see cref="short"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         short ReadShort();
@@ -236,6 +263,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readBoolean()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public bool ReadBoolean()
@@ -245,6 +273,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#wasNull()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public bool WasNull()
@@ -254,6 +283,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readByte()"/>
         /// </summary>
+
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public byte ReadByte()
@@ -263,6 +293,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readBytes()"/>
         /// </summary>
+
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public byte[] ReadBytes()
@@ -272,6 +303,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readDouble()"/>
         /// </summary>
+
         /// <returns><see cref="double"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public double ReadDouble()
@@ -281,6 +313,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readFloat()"/>
         /// </summary>
+
         /// <returns><see cref="float"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public float ReadFloat()
@@ -290,6 +323,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readInt()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public int ReadInt()
@@ -299,6 +333,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readAsciiStream()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Io.InputStream"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.InputStream ReadAsciiStream()
@@ -308,6 +343,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readBinaryStream()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Io.InputStream"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.InputStream ReadBinaryStream()
@@ -317,6 +353,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readCharacterStream()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Io.Reader"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.Reader ReadCharacterStream()
@@ -326,6 +363,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readObject()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public object ReadObject()
@@ -335,6 +373,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readNString()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Lang.String ReadNString()
@@ -344,6 +383,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readString()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Lang.String ReadString()
@@ -353,6 +393,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readBigDecimal()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Math.BigDecimal ReadBigDecimal()
@@ -362,6 +403,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readURL()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Net.URL"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Net.URL ReadURL()
@@ -371,6 +413,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readArray()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.Array"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Array ReadArray()
@@ -380,6 +423,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readBlob()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.Blob"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Blob ReadBlob()
@@ -389,6 +433,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readClob()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.Clob"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Clob ReadClob()
@@ -398,6 +443,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readDate()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.Date"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Date ReadDate()
@@ -407,6 +453,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readNClob()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.NClob"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.NClob ReadNClob()
@@ -416,6 +463,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readRef()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.Ref"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Ref ReadRef()
@@ -425,6 +473,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readRowId()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.RowId"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.RowId ReadRowId()
@@ -434,6 +483,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readSQLXML()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.SQLXML"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.SQLXML ReadSQLXML()
@@ -443,6 +493,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readTime()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.Time"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Time ReadTime()
@@ -452,6 +503,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readTimestamp()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Sql.Timestamp"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Timestamp ReadTimestamp()
@@ -461,6 +513,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readLong()"/>
         /// </summary>
+
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public long ReadLong()
@@ -470,6 +523,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html#readShort()"/>
         /// </summary>
+
         /// <returns><see cref="short"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public short ReadShort()

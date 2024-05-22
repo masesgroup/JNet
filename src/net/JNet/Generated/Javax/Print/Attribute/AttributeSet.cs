@@ -59,6 +59,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSet.html#isEmpty()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool IsEmpty();
         /// <summary>
@@ -76,6 +77,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSet.html#size()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         int Size();
         /// <summary>
@@ -87,6 +89,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSet.html#toArray()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Print.Attribute.Attribute"/></returns>
         Javax.Print.Attribute.Attribute[] ToArray();
         /// <summary>
@@ -163,6 +166,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSet.html#isEmpty()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
@@ -189,6 +193,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSet.html#size()"/>
         /// </summary>
+
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
@@ -206,6 +211,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSet.html#toArray()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Print.Attribute.Attribute"/></returns>
         public Javax.Print.Attribute.Attribute[] ToArray()
         {

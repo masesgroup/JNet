@@ -98,6 +98,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#newDefaultFactory()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Xml.Stream.XMLInputFactory"/></returns>
         public static Javax.Xml.Stream.XMLInputFactory NewDefaultFactory()
         {
@@ -106,6 +107,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#newFactory()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Xml.Stream.XMLInputFactory"/></returns>
         /// <exception cref="Javax.Xml.Stream.FactoryConfigurationError"/>
         public static Javax.Xml.Stream.XMLInputFactory NewFactory()
@@ -126,6 +128,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#newInstance()"/>
         /// </summary>
+
         /// <returns><see cref="Javax.Xml.Stream.XMLInputFactory"/></returns>
         /// <exception cref="Javax.Xml.Stream.FactoryConfigurationError"/>
         public static Javax.Xml.Stream.XMLInputFactory NewInstance()

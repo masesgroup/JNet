@@ -48,6 +48,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#empty()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool Empty()
         {
@@ -65,6 +66,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#peek()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public object Peek()
         {
@@ -73,6 +75,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#pop()"/>
         /// </summary>
+
         /// <returns><see cref="object"/></returns>
         public object Pop()
         {
@@ -125,6 +128,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#empty()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool Empty()
         {
@@ -142,6 +146,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#peek()"/>
         /// </summary>
+
         /// <returns><typeparamref name="E"/></returns>
         public E Peek()
         {
@@ -150,6 +155,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#pop()"/>
         /// </summary>
+
         /// <returns><typeparamref name="E"/></returns>
         public E Pop()
         {

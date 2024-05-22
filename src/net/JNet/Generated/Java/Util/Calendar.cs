@@ -537,6 +537,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#isLenient()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsLenient()
         {
@@ -545,6 +546,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#isWeekDateSupported()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsWeekDateSupported()
         {
@@ -562,6 +564,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#toInstant()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public Java.Time.Instant ToInstant()
         {
@@ -747,6 +750,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#build()"/>
             /// </summary>
+
             /// <returns><see cref="Java.Util.Calendar"/></returns>
             public Java.Util.Calendar Build()
             {

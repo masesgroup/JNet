@@ -173,6 +173,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#preDeregister()"/>
         /// </summary>
+
         /// <exception cref="Java.Lang.Exception"/>
         public void PreDeregister()
         {

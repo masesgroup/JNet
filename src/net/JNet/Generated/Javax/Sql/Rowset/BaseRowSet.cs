@@ -193,6 +193,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#isReadOnly()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsReadOnly()
         {
@@ -209,6 +210,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#clearParameters()"/>
         /// </summary>
+
         /// <exception cref="Java.Sql.SQLException"/>
         public void ClearParameters()
         {

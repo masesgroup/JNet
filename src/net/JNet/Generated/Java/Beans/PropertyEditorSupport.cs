@@ -98,6 +98,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorSupport.html#isPaintable()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsPaintable()
         {
@@ -106,6 +107,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorSupport.html#supportsCustomEditor()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool SupportsCustomEditor()
         {

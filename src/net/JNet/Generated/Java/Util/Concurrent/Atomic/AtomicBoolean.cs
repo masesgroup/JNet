@@ -127,6 +127,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#get()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool Get()
         {

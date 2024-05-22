@@ -55,6 +55,7 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#isId()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         bool IsId();
 
@@ -126,6 +127,7 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#isId()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsId()
         {

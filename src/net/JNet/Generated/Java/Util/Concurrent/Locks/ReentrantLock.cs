@@ -87,6 +87,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#isHeldByCurrentThread()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsHeldByCurrentThread()
         {
@@ -95,6 +96,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#isLocked()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsLocked()
         {
@@ -103,6 +105,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#tryLock()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool TryLock()
         {
@@ -131,6 +134,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#hasQueuedThreads()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool HasQueuedThreads()
         {
@@ -139,6 +143,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#isFair()"/>
         /// </summary>
+
         /// <returns><see cref="bool"/></returns>
         public bool IsFair()
         {
@@ -156,6 +161,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#newCondition()"/>
         /// </summary>
+
         /// <returns><see cref="Java.Util.Concurrent.Locks.Condition"/></returns>
         public Java.Util.Concurrent.Locks.Condition NewCondition()
         {
@@ -171,6 +177,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#lockInterruptibly()"/>
         /// </summary>
+
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void LockInterruptibly()
         {
