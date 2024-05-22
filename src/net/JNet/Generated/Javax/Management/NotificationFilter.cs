@@ -110,4 +110,44 @@ namespace Javax.Management
         // TODO: complete the class
     }
     #endregion
+
+    #region NotificationFilterDirect
+    public partial class NotificationFilterDirect : Javax.Management.INotificationFilter
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilter.html#isNotificationEnabled(javax.management.Notification)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Notification"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public override bool IsNotificationEnabled(Javax.Management.Notification arg0)
+        {
+            return IExecuteWithSignature<bool>("isNotificationEnabled", "(Ljavax/management/Notification;)Z", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

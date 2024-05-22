@@ -107,4 +107,43 @@ namespace Org.W3c.Dom.Events
         // TODO: complete the class
     }
     #endregion
+
+    #region EventListenerDirect
+    public partial class EventListenerDirect : Org.W3c.Dom.Events.IEventListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventListener.html#handleEvent(org.w3c.dom.events.Event)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Events.Event"/></param>
+        public override void HandleEvent(Org.W3c.Dom.Events.Event arg0)
+        {
+            IExecuteWithSignature("handleEvent", "(Lorg/w3c/dom/events/Event;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

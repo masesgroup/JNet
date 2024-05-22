@@ -107,4 +107,43 @@ namespace Javax.Net.Ssl
         // TODO: complete the class
     }
     #endregion
+
+    #region HandshakeCompletedListenerDirect
+    public partial class HandshakeCompletedListenerDirect : Javax.Net.Ssl.IHandshakeCompletedListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedListener.html#handshakeCompleted(javax.net.ssl.HandshakeCompletedEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Net.Ssl.HandshakeCompletedEvent"/></param>
+        public override void HandshakeCompleted(Javax.Net.Ssl.HandshakeCompletedEvent arg0)
+        {
+            IExecuteWithSignature("handshakeCompleted", "(Ljavax/net/ssl/HandshakeCompletedEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

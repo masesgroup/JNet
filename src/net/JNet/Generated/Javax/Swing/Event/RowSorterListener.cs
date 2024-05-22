@@ -107,4 +107,43 @@ namespace Javax.Swing.Event
         // TODO: complete the class
     }
     #endregion
+
+    #region RowSorterListenerDirect
+    public partial class RowSorterListenerDirect : Javax.Swing.Event.IRowSorterListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterListener.html#sorterChanged(javax.swing.event.RowSorterEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.RowSorterEvent"/></param>
+        public override void SorterChanged(Javax.Swing.Event.RowSorterEvent arg0)
+        {
+            IExecuteWithSignature("sorterChanged", "(Ljavax/swing/event/RowSorterEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

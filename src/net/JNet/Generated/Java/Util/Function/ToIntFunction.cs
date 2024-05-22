@@ -87,6 +87,46 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region ToIntFunctionDirect
+    public partial class ToIntFunctionDirect
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntFunction.html#applyAsInt(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="int"/></returns>
+        public override int ApplyAsInt(object arg0)
+        {
+            return IExecuteWithSignature<int>("applyAsInt", "(Ljava/lang/Object;)I", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region IToIntFunction<T>
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.function.ToIntFunction implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntFunction.html"/>
@@ -161,6 +201,46 @@ namespace Java.Util.Function
         public virtual int ApplyAsInt(T arg0)
         {
             return default;
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
+    #region ToIntFunctionDirect<T>
+    public partial class ToIntFunctionDirect<T> : Java.Util.Function.IToIntFunction<T>
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntFunction.html#applyAsInt(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <returns><see cref="int"/></returns>
+        public override int ApplyAsInt(T arg0)
+        {
+            return IExecuteWithSignature<int>("applyAsInt", "(Ljava/lang/Object;)I", arg0);
         }
 
         #endregion

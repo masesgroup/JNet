@@ -86,6 +86,46 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region ObjLongConsumerDirect
+    public partial class ObjLongConsumerDirect
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjLongConsumer.html#accept(java.lang.Object,long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        public override void Accept(object arg0, long arg1)
+        {
+            IExecute("accept", arg0, arg1);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region IObjLongConsumer<T>
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.function.ObjLongConsumer implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjLongConsumer.html"/>
@@ -159,6 +199,46 @@ namespace Java.Util.Function
         public virtual void Accept(T arg0, long arg1)
         {
             
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
+    #region ObjLongConsumerDirect<T>
+    public partial class ObjLongConsumerDirect<T> : Java.Util.Function.IObjLongConsumer<T>
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjLongConsumer.html#accept(java.lang.Object,long)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        public override void Accept(T arg0, long arg1)
+        {
+            IExecute("accept", arg0, arg1);
         }
 
         #endregion

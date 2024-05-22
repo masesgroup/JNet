@@ -188,4 +188,67 @@ namespace Javax.Swing.Event
         // TODO: complete the class
     }
     #endregion
+
+    #region MenuDragMouseListenerDirect
+    public partial class MenuDragMouseListenerDirect : Javax.Swing.Event.IMenuDragMouseListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html#menuDragMouseDragged(javax.swing.event.MenuDragMouseEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuDragMouseEvent"/></param>
+        public override void MenuDragMouseDragged(Javax.Swing.Event.MenuDragMouseEvent arg0)
+        {
+            IExecuteWithSignature("menuDragMouseDragged", "(Ljavax/swing/event/MenuDragMouseEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html#menuDragMouseEntered(javax.swing.event.MenuDragMouseEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuDragMouseEvent"/></param>
+        public override void MenuDragMouseEntered(Javax.Swing.Event.MenuDragMouseEvent arg0)
+        {
+            IExecuteWithSignature("menuDragMouseEntered", "(Ljavax/swing/event/MenuDragMouseEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html#menuDragMouseExited(javax.swing.event.MenuDragMouseEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuDragMouseEvent"/></param>
+        public override void MenuDragMouseExited(Javax.Swing.Event.MenuDragMouseEvent arg0)
+        {
+            IExecuteWithSignature("menuDragMouseExited", "(Ljavax/swing/event/MenuDragMouseEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html#menuDragMouseReleased(javax.swing.event.MenuDragMouseEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuDragMouseEvent"/></param>
+        public override void MenuDragMouseReleased(Javax.Swing.Event.MenuDragMouseEvent arg0)
+        {
+            IExecuteWithSignature("menuDragMouseReleased", "(Ljavax/swing/event/MenuDragMouseEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

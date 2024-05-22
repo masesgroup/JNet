@@ -107,4 +107,43 @@ namespace Javax.Naming.Event
         // TODO: complete the class
     }
     #endregion
+
+    #region NamingListenerDirect
+    public partial class NamingListenerDirect : Javax.Naming.Event.INamingListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html#namingExceptionThrown(javax.naming.event.NamingExceptionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingExceptionEvent"/></param>
+        public override void NamingExceptionThrown(Javax.Naming.Event.NamingExceptionEvent arg0)
+        {
+            IExecuteWithSignature("namingExceptionThrown", "(Ljavax/naming/event/NamingExceptionEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

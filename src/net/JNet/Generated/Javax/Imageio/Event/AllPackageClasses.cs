@@ -35,11 +35,7 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public IIOReadProgressListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public IIOReadProgressListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -59,12 +55,12 @@ namespace Javax.Imageio.Event
     public partial class IIOReadProgressListenerDirect : IIOReadProgressListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="IIOReadProgressListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -98,11 +94,7 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public IIOReadUpdateListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public IIOReadUpdateListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -122,12 +114,12 @@ namespace Javax.Imageio.Event
     public partial class IIOReadUpdateListenerDirect : IIOReadUpdateListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="IIOReadUpdateListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -161,11 +153,7 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public IIOReadWarningListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public IIOReadWarningListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -185,12 +173,12 @@ namespace Javax.Imageio.Event
     public partial class IIOReadWarningListenerDirect : IIOReadWarningListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="IIOReadWarningListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -224,11 +212,7 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public IIOWriteProgressListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public IIOWriteProgressListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -248,12 +232,12 @@ namespace Javax.Imageio.Event
     public partial class IIOWriteProgressListenerDirect : IIOWriteProgressListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="IIOWriteProgressListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -287,11 +271,7 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public IIOWriteWarningListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public IIOWriteWarningListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -311,12 +291,12 @@ namespace Javax.Imageio.Event
     public partial class IIOWriteWarningListenerDirect : IIOWriteWarningListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="IIOWriteWarningListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>

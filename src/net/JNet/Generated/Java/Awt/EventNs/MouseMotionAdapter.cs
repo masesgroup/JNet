@@ -106,4 +106,51 @@ namespace Java.Awt.EventNs
         // TODO: complete the class
     }
     #endregion
+
+    #region MouseMotionAdapterDirect
+    public partial class MouseMotionAdapterDirect
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseMotionAdapter.html#mouseDragged(java.awt.event.MouseEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        public override void MouseDragged(Java.Awt.EventNs.MouseEvent arg0)
+        {
+            IExecuteWithSignature("mouseDragged", "(Ljava/awt/event/MouseEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseMotionAdapter.html#mouseMoved(java.awt.event.MouseEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        public override void MouseMoved(Java.Awt.EventNs.MouseEvent arg0)
+        {
+            IExecuteWithSignature("mouseMoved", "(Ljava/awt/event/MouseEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

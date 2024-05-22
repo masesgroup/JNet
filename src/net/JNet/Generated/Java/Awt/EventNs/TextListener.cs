@@ -107,4 +107,43 @@ namespace Java.Awt.EventNs
         // TODO: complete the class
     }
     #endregion
+
+    #region TextListenerDirect
+    public partial class TextListenerDirect : Java.Awt.EventNs.ITextListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextListener.html#textValueChanged(java.awt.event.TextEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.TextEvent"/></param>
+        public override void TextValueChanged(Java.Awt.EventNs.TextEvent arg0)
+        {
+            IExecuteWithSignature("textValueChanged", "(Ljava/awt/event/TextEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

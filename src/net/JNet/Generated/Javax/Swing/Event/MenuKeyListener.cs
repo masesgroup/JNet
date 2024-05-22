@@ -161,4 +161,59 @@ namespace Javax.Swing.Event
         // TODO: complete the class
     }
     #endregion
+
+    #region MenuKeyListenerDirect
+    public partial class MenuKeyListenerDirect : Javax.Swing.Event.IMenuKeyListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuKeyListener.html#menuKeyPressed(javax.swing.event.MenuKeyEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuKeyEvent"/></param>
+        public override void MenuKeyPressed(Javax.Swing.Event.MenuKeyEvent arg0)
+        {
+            IExecuteWithSignature("menuKeyPressed", "(Ljavax/swing/event/MenuKeyEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuKeyListener.html#menuKeyReleased(javax.swing.event.MenuKeyEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuKeyEvent"/></param>
+        public override void MenuKeyReleased(Javax.Swing.Event.MenuKeyEvent arg0)
+        {
+            IExecuteWithSignature("menuKeyReleased", "(Ljavax/swing/event/MenuKeyEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuKeyListener.html#menuKeyTyped(javax.swing.event.MenuKeyEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuKeyEvent"/></param>
+        public override void MenuKeyTyped(Javax.Swing.Event.MenuKeyEvent arg0)
+        {
+            IExecuteWithSignature("menuKeyTyped", "(Ljavax/swing/event/MenuKeyEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

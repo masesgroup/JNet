@@ -107,4 +107,43 @@ namespace Java.Awt.Dnd
         // TODO: complete the class
     }
     #endregion
+
+    #region DragGestureListenerDirect
+    public partial class DragGestureListenerDirect : Java.Awt.Dnd.IDragGestureListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureListener.html#dragGestureRecognized(java.awt.dnd.DragGestureEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragGestureEvent"/></param>
+        public override void DragGestureRecognized(Java.Awt.Dnd.DragGestureEvent arg0)
+        {
+            IExecuteWithSignature("dragGestureRecognized", "(Ljava/awt/dnd/DragGestureEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

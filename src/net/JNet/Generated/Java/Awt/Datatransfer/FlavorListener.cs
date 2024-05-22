@@ -107,4 +107,43 @@ namespace Java.Awt.Datatransfer
         // TODO: complete the class
     }
     #endregion
+
+    #region FlavorListenerDirect
+    public partial class FlavorListenerDirect : Java.Awt.Datatransfer.IFlavorListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/FlavorListener.html#flavorsChanged(java.awt.datatransfer.FlavorEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.FlavorEvent"/></param>
+        public override void FlavorsChanged(Java.Awt.Datatransfer.FlavorEvent arg0)
+        {
+            IExecuteWithSignature("flavorsChanged", "(Ljava/awt/datatransfer/FlavorEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

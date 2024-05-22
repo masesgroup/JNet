@@ -107,4 +107,43 @@ namespace Javax.Swing.Event
         // TODO: complete the class
     }
     #endregion
+
+    #region HyperlinkListenerDirect
+    public partial class HyperlinkListenerDirect : Javax.Swing.Event.IHyperlinkListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkListener.html#hyperlinkUpdate(javax.swing.event.HyperlinkEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.HyperlinkEvent"/></param>
+        public override void HyperlinkUpdate(Javax.Swing.Event.HyperlinkEvent arg0)
+        {
+            IExecuteWithSignature("hyperlinkUpdate", "(Ljavax/swing/event/HyperlinkEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

@@ -148,4 +148,52 @@ namespace Java.Util.Function
         // TODO: complete the class
     }
     #endregion
+
+    #region DoubleConsumerDirect
+    public partial class DoubleConsumerDirect : Java.Util.Function.IDoubleConsumer
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleConsumer.html#accept(double)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        public override void Accept(double arg0)
+        {
+            IExecuteWithSignature("accept", "(D)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleConsumer.html#andThen(java.util.function.DoubleConsumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
+        /// <returns><see cref="Java.Util.Function.DoubleConsumer"/></returns>
+        public override Java.Util.Function.DoubleConsumer AndThen(Java.Util.Function.DoubleConsumer arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Function.DoubleConsumerDirect, Java.Util.Function.DoubleConsumer>("andThen", "(Ljava/util/function/DoubleConsumer;)Ljava/util/function/DoubleConsumer;", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

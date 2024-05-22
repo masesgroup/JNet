@@ -215,4 +215,62 @@ namespace Java.Util.Function
         // TODO: complete the class
     }
     #endregion
+
+    #region DoubleUnaryOperatorDirect
+    public partial class DoubleUnaryOperatorDirect : Java.Util.Function.IDoubleUnaryOperator
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#applyAsDouble(double)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <returns><see cref="double"/></returns>
+        public override double ApplyAsDouble(double arg0)
+        {
+            return IExecuteWithSignature<double>("applyAsDouble", "(D)D", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#andThen(java.util.function.DoubleUnaryOperator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.DoubleUnaryOperator"/></param>
+        /// <returns><see cref="Java.Util.Function.DoubleUnaryOperator"/></returns>
+        public override Java.Util.Function.DoubleUnaryOperator AndThen(Java.Util.Function.DoubleUnaryOperator arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Function.DoubleUnaryOperatorDirect, Java.Util.Function.DoubleUnaryOperator>("andThen", "(Ljava/util/function/DoubleUnaryOperator;)Ljava/util/function/DoubleUnaryOperator;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#compose(java.util.function.DoubleUnaryOperator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.DoubleUnaryOperator"/></param>
+        /// <returns><see cref="Java.Util.Function.DoubleUnaryOperator"/></returns>
+        public override Java.Util.Function.DoubleUnaryOperator Compose(Java.Util.Function.DoubleUnaryOperator arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Function.DoubleUnaryOperatorDirect, Java.Util.Function.DoubleUnaryOperator>("compose", "(Ljava/util/function/DoubleUnaryOperator;)Ljava/util/function/DoubleUnaryOperator;", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

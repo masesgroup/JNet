@@ -123,6 +123,56 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region BinaryOperatorDirect
+    public partial class BinaryOperatorDirect
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="object"/></returns>
+        public override object Apply(object arg0, object arg1)
+        {
+            return IExecute("apply", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
+        public override Java.Util.Function.BiFunction AndThen(Java.Util.Function.Function arg0)
+        {
+            return IExecute<Java.Util.Function.BiFunctionDirect, Java.Util.Function.BiFunction>("andThen", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region IBinaryOperator<T>
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.function.BinaryOperator implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BinaryOperator.html"/>
@@ -259,6 +309,63 @@ namespace Java.Util.Function
         public virtual Java.Util.Function.BiFunction<T, U, V> AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R where Arg0ExtendsV: V
         {
             return AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>Default(arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
+    #region BinaryOperatorDirect<T>
+    public partial class BinaryOperatorDirect<T> : Java.Util.Function.IBinaryOperator<T>
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><typeparamref name="U"/></param>
+        /// <typeparam name="R"></typeparam>
+        /// <typeparam name="U"></typeparam>
+        /// <returns><typeparamref name="R"/></returns>
+        public override R Apply<R, U>(T arg0, U arg1)
+        {
+            return IExecute<R>("apply", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="U"></typeparam>
+        /// <typeparam name="V"></typeparam>
+        /// <typeparam name="Arg0objectSuperR"><typeparamref name="R"/></typeparam>
+        /// <typeparam name="R"></typeparam>
+        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
+        /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
+        public override Java.Util.Function.BiFunction<T, U, V> AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R where Arg0ExtendsV: V
+        {
+            return IExecute<Java.Util.Function.BiFunctionDirect<T, U, V>, Java.Util.Function.BiFunction<T, U, V>>("andThen", arg0);
         }
 
         #endregion

@@ -134,4 +134,51 @@ namespace Javax.Sql
         // TODO: complete the class
     }
     #endregion
+
+    #region ConnectionEventListenerDirect
+    public partial class ConnectionEventListenerDirect : Javax.Sql.IConnectionEventListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEventListener.html#connectionClosed(javax.sql.ConnectionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.ConnectionEvent"/></param>
+        public override void ConnectionClosed(Javax.Sql.ConnectionEvent arg0)
+        {
+            IExecuteWithSignature("connectionClosed", "(Ljavax/sql/ConnectionEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEventListener.html#connectionErrorOccurred(javax.sql.ConnectionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.ConnectionEvent"/></param>
+        public override void ConnectionErrorOccurred(Javax.Sql.ConnectionEvent arg0)
+        {
+            IExecuteWithSignature("connectionErrorOccurred", "(Ljavax/sql/ConnectionEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

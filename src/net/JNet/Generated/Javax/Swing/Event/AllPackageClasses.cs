@@ -79,11 +79,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public AncestorListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public AncestorListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -103,12 +99,12 @@ namespace Javax.Swing.Event
     public partial class AncestorListenerDirect : AncestorListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="AncestorListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -188,11 +184,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public CaretListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public CaretListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -212,12 +204,12 @@ namespace Javax.Swing.Event
     public partial class CaretListenerDirect : CaretListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="CaretListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -251,11 +243,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public CellEditorListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public CellEditorListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -275,12 +263,12 @@ namespace Javax.Swing.Event
     public partial class CellEditorListenerDirect : CellEditorListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="CellEditorListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -358,11 +346,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ChangeListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public ChangeListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -382,12 +366,12 @@ namespace Javax.Swing.Event
     public partial class ChangeListenerDirect : ChangeListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="ChangeListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -557,11 +541,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DocumentListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public DocumentListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -581,12 +561,12 @@ namespace Javax.Swing.Event
     public partial class DocumentListenerDirect : DocumentListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="DocumentListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -752,11 +732,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public HyperlinkListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public HyperlinkListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -776,12 +752,12 @@ namespace Javax.Swing.Event
     public partial class HyperlinkListenerDirect : HyperlinkListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="HyperlinkListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -815,11 +791,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public InternalFrameAdapter() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public InternalFrameAdapter() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -839,12 +811,12 @@ namespace Javax.Swing.Event
     public partial class InternalFrameAdapterDirect : InternalFrameAdapter
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="InternalFrameAdapter.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -922,11 +894,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public InternalFrameListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public InternalFrameListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -946,12 +914,12 @@ namespace Javax.Swing.Event
     public partial class InternalFrameListenerDirect : InternalFrameListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="InternalFrameListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1029,11 +997,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ListDataListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public ListDataListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1053,12 +1017,12 @@ namespace Javax.Swing.Event
     public partial class ListDataListenerDirect : ListDataListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="ListDataListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1136,11 +1100,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ListSelectionListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public ListSelectionListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1160,12 +1120,12 @@ namespace Javax.Swing.Event
     public partial class ListSelectionListenerDirect : ListSelectionListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="ListSelectionListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1243,11 +1203,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public MenuDragMouseListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public MenuDragMouseListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1267,12 +1223,12 @@ namespace Javax.Swing.Event
     public partial class MenuDragMouseListenerDirect : MenuDragMouseListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="MenuDragMouseListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1394,11 +1350,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public MenuKeyListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public MenuKeyListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1418,12 +1370,12 @@ namespace Javax.Swing.Event
     public partial class MenuKeyListenerDirect : MenuKeyListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="MenuKeyListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1457,11 +1409,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public MenuListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public MenuListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1481,12 +1429,12 @@ namespace Javax.Swing.Event
     public partial class MenuListenerDirect : MenuListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="MenuListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1520,11 +1468,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public MouseInputAdapter() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public MouseInputAdapter() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1544,12 +1488,12 @@ namespace Javax.Swing.Event
     public partial class MouseInputAdapterDirect : MouseInputAdapter
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="MouseInputAdapter.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1583,11 +1527,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public MouseInputListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public MouseInputListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1607,12 +1547,12 @@ namespace Javax.Swing.Event
     public partial class MouseInputListenerDirect : MouseInputListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="MouseInputListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1690,11 +1630,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public PopupMenuListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public PopupMenuListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1714,12 +1650,12 @@ namespace Javax.Swing.Event
     public partial class PopupMenuListenerDirect : PopupMenuListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="PopupMenuListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1841,11 +1777,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public RowSorterListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public RowSorterListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1865,12 +1797,12 @@ namespace Javax.Swing.Event
     public partial class RowSorterListenerDirect : RowSorterListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="RowSorterListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1992,11 +1924,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public TableColumnModelListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public TableColumnModelListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -2016,12 +1944,12 @@ namespace Javax.Swing.Event
     public partial class TableColumnModelListenerDirect : TableColumnModelListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="TableColumnModelListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -2099,11 +2027,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public TableModelListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public TableModelListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -2123,12 +2047,12 @@ namespace Javax.Swing.Event
     public partial class TableModelListenerDirect : TableModelListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="TableModelListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -2206,11 +2130,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public TreeExpansionListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public TreeExpansionListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -2230,12 +2150,12 @@ namespace Javax.Swing.Event
     public partial class TreeExpansionListenerDirect : TreeExpansionListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="TreeExpansionListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -2313,11 +2233,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public TreeModelListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public TreeModelListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -2337,12 +2253,12 @@ namespace Javax.Swing.Event
     public partial class TreeModelListenerDirect : TreeModelListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="TreeModelListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -2420,11 +2336,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public TreeSelectionListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public TreeSelectionListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -2444,12 +2356,12 @@ namespace Javax.Swing.Event
     public partial class TreeSelectionListenerDirect : TreeSelectionListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="TreeSelectionListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -2483,11 +2395,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public TreeWillExpandListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public TreeWillExpandListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -2507,12 +2415,12 @@ namespace Javax.Swing.Event
     public partial class TreeWillExpandListenerDirect : TreeWillExpandListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="TreeWillExpandListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -2590,11 +2498,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public UndoableEditListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public UndoableEditListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -2614,12 +2518,12 @@ namespace Javax.Swing.Event
     public partial class UndoableEditListenerDirect : UndoableEditListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="UndoableEditListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>

@@ -107,4 +107,43 @@ namespace Javax.Swing.Event
         // TODO: complete the class
     }
     #endregion
+
+    #region ListSelectionListenerDirect
+    public partial class ListSelectionListenerDirect : Javax.Swing.Event.IListSelectionListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListSelectionListener.html#valueChanged(javax.swing.event.ListSelectionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionEvent"/></param>
+        public override void ValueChanged(Javax.Swing.Event.ListSelectionEvent arg0)
+        {
+            IExecuteWithSignature("valueChanged", "(Ljavax/swing/event/ListSelectionEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

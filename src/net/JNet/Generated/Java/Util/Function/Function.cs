@@ -180,6 +180,64 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region FunctionDirect
+    public partial class FunctionDirect
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#apply(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="object"/></returns>
+        public override object Apply(object arg0)
+        {
+            return IExecuteWithSignature("apply", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        public override Java.Util.Function.Function AndThen(Java.Util.Function.Function arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Function.FunctionDirect, Java.Util.Function.Function>("andThen", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        public override Java.Util.Function.Function Compose(Java.Util.Function.Function arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Function.FunctionDirect, Java.Util.Function.Function>("compose", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region IFunction<T, R>
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.function.Function implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html"/>
@@ -377,6 +435,70 @@ namespace Java.Util.Function
         public virtual Java.Util.Function.Function<V, R> Compose<V, Arg0objectSuperV, Arg0ExtendsT>(Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT> arg0) where Arg0objectSuperV: V where Arg0ExtendsT: T
         {
             return Compose<V, Arg0objectSuperV, Arg0ExtendsT>Default(arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
+    #region FunctionDirect<T, R>
+    public partial class FunctionDirect<T, R> : Java.Util.Function.IFunction<T, R>
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#apply(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <returns><typeparamref name="R"/></returns>
+        public override R Apply(T arg0)
+        {
+            return IExecuteWithSignature<R>("apply", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="V"></typeparam>
+        /// <typeparam name="Arg0objectSuperR"><typeparamref name="R"/></typeparam>
+        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
+        /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        public override Java.Util.Function.Function<T, V> AndThen<V, Arg0objectSuperR, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R where Arg0ExtendsV: V
+        {
+            return IExecuteWithSignature<Java.Util.Function.FunctionDirect<T, V>, Java.Util.Function.Function<T, V>>("andThen", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="V"></typeparam>
+        /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
+        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
+        /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        public override Java.Util.Function.Function<V, R> Compose<V, Arg0objectSuperV, Arg0ExtendsT>(Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT> arg0) where Arg0objectSuperV: V where Arg0ExtendsT: T
+        {
+            return IExecuteWithSignature<Java.Util.Function.FunctionDirect<V, R>, Java.Util.Function.Function<V, R>>("compose", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
         }
 
         #endregion

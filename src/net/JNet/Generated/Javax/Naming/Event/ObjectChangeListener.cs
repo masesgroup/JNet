@@ -134,4 +134,51 @@ namespace Javax.Naming.Event
         // TODO: complete the class
     }
     #endregion
+
+    #region ObjectChangeListenerDirect
+    public partial class ObjectChangeListenerDirect : Javax.Naming.Event.IObjectChangeListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html#namingExceptionThrown(javax.naming.event.NamingExceptionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingExceptionEvent"/></param>
+        public override void NamingExceptionThrown(Javax.Naming.Event.NamingExceptionEvent arg0)
+        {
+            IExecute("namingExceptionThrown", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/ObjectChangeListener.html#objectChanged(javax.naming.event.NamingEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingEvent"/></param>
+        public override void ObjectChanged(Javax.Naming.Event.NamingEvent arg0)
+        {
+            IExecuteWithSignature("objectChanged", "(Ljavax/naming/event/NamingEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

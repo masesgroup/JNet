@@ -110,4 +110,44 @@ namespace Java.Util.Function
         // TODO: complete the class
     }
     #endregion
+
+    #region IntToDoubleFunctionDirect
+    public partial class IntToDoubleFunctionDirect : Java.Util.Function.IIntToDoubleFunction
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntToDoubleFunction.html#applyAsDouble(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="double"/></returns>
+        public override double ApplyAsDouble(int arg0)
+        {
+            return IExecuteWithSignature<double>("applyAsDouble", "(I)D", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

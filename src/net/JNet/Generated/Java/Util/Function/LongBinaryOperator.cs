@@ -112,4 +112,45 @@ namespace Java.Util.Function
         // TODO: complete the class
     }
     #endregion
+
+    #region LongBinaryOperatorDirect
+    public partial class LongBinaryOperatorDirect : Java.Util.Function.ILongBinaryOperator
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongBinaryOperator.html#applyAsLong(long,long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <returns><see cref="long"/></returns>
+        public override long ApplyAsLong(long arg0, long arg1)
+        {
+            return IExecute<long>("applyAsLong", arg0, arg1);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

@@ -134,4 +134,51 @@ namespace Java.Awt.EventNs
         // TODO: complete the class
     }
     #endregion
+
+    #region FocusListenerDirect
+    public partial class FocusListenerDirect : Java.Awt.EventNs.IFocusListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusListener.html#focusGained(java.awt.event.FocusEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
+        public override void FocusGained(Java.Awt.EventNs.FocusEvent arg0)
+        {
+            IExecuteWithSignature("focusGained", "(Ljava/awt/event/FocusEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusListener.html#focusLost(java.awt.event.FocusEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
+        public override void FocusLost(Java.Awt.EventNs.FocusEvent arg0)
+        {
+            IExecuteWithSignature("focusLost", "(Ljava/awt/event/FocusEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

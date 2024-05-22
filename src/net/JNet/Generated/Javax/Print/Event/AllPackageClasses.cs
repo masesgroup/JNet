@@ -79,11 +79,7 @@ namespace Javax.Print.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public PrintJobAdapter() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public PrintJobAdapter() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -103,12 +99,12 @@ namespace Javax.Print.Event
     public partial class PrintJobAdapterDirect : PrintJobAdapter
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="PrintJobAdapter.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -186,11 +182,7 @@ namespace Javax.Print.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public PrintJobAttributeListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public PrintJobAttributeListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -210,12 +202,12 @@ namespace Javax.Print.Event
     public partial class PrintJobAttributeListenerDirect : PrintJobAttributeListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="PrintJobAttributeListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -293,11 +285,7 @@ namespace Javax.Print.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public PrintJobListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public PrintJobListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -317,12 +305,12 @@ namespace Javax.Print.Event
     public partial class PrintJobListenerDirect : PrintJobListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="PrintJobListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -400,11 +388,7 @@ namespace Javax.Print.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public PrintServiceAttributeListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public PrintServiceAttributeListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -424,12 +408,12 @@ namespace Javax.Print.Event
     public partial class PrintServiceAttributeListenerDirect : PrintServiceAttributeListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="PrintServiceAttributeListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>

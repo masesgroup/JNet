@@ -107,4 +107,43 @@ namespace Javax.Print.Event
         // TODO: complete the class
     }
     #endregion
+
+    #region PrintJobAttributeListenerDirect
+    public partial class PrintJobAttributeListenerDirect : Javax.Print.Event.IPrintJobAttributeListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAttributeListener.html#attributeUpdate(javax.print.event.PrintJobAttributeEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobAttributeEvent"/></param>
+        public override void AttributeUpdate(Javax.Print.Event.PrintJobAttributeEvent arg0)
+        {
+            IExecuteWithSignature("attributeUpdate", "(Ljavax/print/event/PrintJobAttributeEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

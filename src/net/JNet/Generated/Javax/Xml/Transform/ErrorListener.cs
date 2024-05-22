@@ -167,4 +167,62 @@ namespace Javax.Xml.Transform
         // TODO: complete the class
     }
     #endregion
+
+    #region ErrorListenerDirect
+    public partial class ErrorListenerDirect : Javax.Xml.Transform.IErrorListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/ErrorListener.html#error(javax.xml.transform.TransformerException)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Transform.TransformerException"/></param>
+        /// <exception cref="Javax.Xml.Transform.TransformerException"/>
+        public override void Error(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
+        {
+            IExecuteWithSignature("error", "(Ljavax/xml/transform/TransformerException;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/ErrorListener.html#fatalError(javax.xml.transform.TransformerException)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Transform.TransformerException"/></param>
+        /// <exception cref="Javax.Xml.Transform.TransformerException"/>
+        public override void FatalError(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
+        {
+            IExecuteWithSignature("fatalError", "(Ljavax/xml/transform/TransformerException;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/ErrorListener.html#warning(javax.xml.transform.TransformerException)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Transform.TransformerException"/></param>
+        /// <exception cref="Javax.Xml.Transform.TransformerException"/>
+        public override void Warning(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
+        {
+            IExecuteWithSignature("warning", "(Ljavax/xml/transform/TransformerException;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

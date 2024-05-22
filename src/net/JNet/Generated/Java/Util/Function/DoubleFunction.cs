@@ -87,6 +87,46 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region DoubleFunctionDirect
+    public partial class DoubleFunctionDirect
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleFunction.html#apply(double)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <returns><see cref="object"/></returns>
+        public override object Apply(double arg0)
+        {
+            return IExecuteWithSignature("apply", "(D)Ljava/lang/Object;", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region IDoubleFunction<R>
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.function.DoubleFunction implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleFunction.html"/>
@@ -161,6 +201,46 @@ namespace Java.Util.Function
         public virtual R Apply(double arg0)
         {
             return default;
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
+    #region DoubleFunctionDirect<R>
+    public partial class DoubleFunctionDirect<R> : Java.Util.Function.IDoubleFunction<R>
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleFunction.html#apply(double)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <returns><typeparamref name="R"/></returns>
+        public override R Apply(double arg0)
+        {
+            return IExecuteWithSignature<R>("apply", "(D)Ljava/lang/Object;", arg0);
         }
 
         #endregion

@@ -213,11 +213,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public AppForegroundListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public AppForegroundListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -237,12 +233,12 @@ namespace Java.Awt.DesktopNs
     public partial class AppForegroundListenerDirect : AppForegroundListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="AppForegroundListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -320,11 +316,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public AppHiddenListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public AppHiddenListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -344,12 +336,12 @@ namespace Java.Awt.DesktopNs
     public partial class AppHiddenListenerDirect : AppHiddenListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="AppHiddenListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -427,11 +419,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public AppReopenedListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public AppReopenedListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -451,12 +439,12 @@ namespace Java.Awt.DesktopNs
     public partial class AppReopenedListenerDirect : AppReopenedListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="AppReopenedListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1118,11 +1106,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ScreenSleepListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public ScreenSleepListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1142,12 +1126,12 @@ namespace Java.Awt.DesktopNs
     public partial class ScreenSleepListenerDirect : ScreenSleepListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="ScreenSleepListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1181,11 +1165,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SystemEventListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public SystemEventListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1205,12 +1185,12 @@ namespace Java.Awt.DesktopNs
     public partial class SystemEventListenerDirect : SystemEventListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="SystemEventListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1288,11 +1268,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SystemSleepListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public SystemSleepListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1312,12 +1288,12 @@ namespace Java.Awt.DesktopNs
     public partial class SystemSleepListenerDirect : SystemSleepListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="SystemSleepListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1439,11 +1415,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public UserSessionListener() { if (InitHandlers) InitializeHandlers(); }
-        /// <summary>
-        /// Enable/disable handlers initialization, default is <see langword="true"/>
-        /// </summary>
-        protected virtual bool InitHandlers { get; } = true;
+        public UserSessionListener() { InitializeHandlers(); }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1463,12 +1435,12 @@ namespace Java.Awt.DesktopNs
     public partial class UserSessionListenerDirect : UserSessionListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="UserSessionListener.InitHandlers"/>
-        protected override bool InitHandlers => false;
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>

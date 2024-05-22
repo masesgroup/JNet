@@ -134,4 +134,51 @@ namespace Java.Util.Prefs
         // TODO: complete the class
     }
     #endregion
+
+    #region NodeChangeListenerDirect
+    public partial class NodeChangeListenerDirect : Java.Util.Prefs.INodeChangeListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeListener.html#childAdded(java.util.prefs.NodeChangeEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Prefs.NodeChangeEvent"/></param>
+        public override void ChildAdded(Java.Util.Prefs.NodeChangeEvent arg0)
+        {
+            IExecuteWithSignature("childAdded", "(Ljava/util/prefs/NodeChangeEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeListener.html#childRemoved(java.util.prefs.NodeChangeEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Prefs.NodeChangeEvent"/></param>
+        public override void ChildRemoved(Java.Util.Prefs.NodeChangeEvent arg0)
+        {
+            IExecuteWithSignature("childRemoved", "(Ljava/util/prefs/NodeChangeEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

@@ -233,4 +233,71 @@ namespace Java.Util.Function
         // TODO: complete the class
     }
     #endregion
+
+    #region LongPredicateDirect
+    public partial class LongPredicateDirect : Java.Util.Function.ILongPredicate
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#test(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public override bool Test(long arg0)
+        {
+            return IExecuteWithSignature<bool>("test", "(J)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#and(java.util.function.LongPredicate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
+        /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
+        public override Java.Util.Function.LongPredicate And(Java.Util.Function.LongPredicate arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Function.LongPredicateDirect, Java.Util.Function.LongPredicate>("and", "(Ljava/util/function/LongPredicate;)Ljava/util/function/LongPredicate;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#negate()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
+        public override Java.Util.Function.LongPredicate Negate()
+        {
+            return IExecuteWithSignature<Java.Util.Function.LongPredicateDirect, Java.Util.Function.LongPredicate>("negate", "()Ljava/util/function/LongPredicate;");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#or(java.util.function.LongPredicate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
+        /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
+        public override Java.Util.Function.LongPredicate Or(Java.Util.Function.LongPredicate arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Function.LongPredicateDirect, Java.Util.Function.LongPredicate>("or", "(Ljava/util/function/LongPredicate;)Ljava/util/function/LongPredicate;", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

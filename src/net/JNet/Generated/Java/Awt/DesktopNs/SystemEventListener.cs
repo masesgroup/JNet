@@ -80,4 +80,35 @@ namespace Java.Awt.DesktopNs
         // TODO: complete the class
     }
     #endregion
+
+    #region SystemEventListenerDirect
+    public partial class SystemEventListenerDirect : Java.Awt.DesktopNs.ISystemEventListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

@@ -107,4 +107,43 @@ namespace Java.Awt.EventNs
         // TODO: complete the class
     }
     #endregion
+
+    #region MouseWheelListenerDirect
+    public partial class MouseWheelListenerDirect : Java.Awt.EventNs.IMouseWheelListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseWheelListener.html#mouseWheelMoved(java.awt.event.MouseWheelEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseWheelEvent"/></param>
+        public override void MouseWheelMoved(Java.Awt.EventNs.MouseWheelEvent arg0)
+        {
+            IExecuteWithSignature("mouseWheelMoved", "(Ljava/awt/event/MouseWheelEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

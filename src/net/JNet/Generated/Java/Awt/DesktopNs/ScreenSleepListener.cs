@@ -134,4 +134,51 @@ namespace Java.Awt.DesktopNs
         // TODO: complete the class
     }
     #endregion
+
+    #region ScreenSleepListenerDirect
+    public partial class ScreenSleepListenerDirect : Java.Awt.DesktopNs.IScreenSleepListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/ScreenSleepListener.html#screenAboutToSleep(java.awt.desktop.ScreenSleepEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.ScreenSleepEvent"/></param>
+        public override void ScreenAboutToSleep(Java.Awt.DesktopNs.ScreenSleepEvent arg0)
+        {
+            IExecuteWithSignature("screenAboutToSleep", "(Ljava/awt/desktop/ScreenSleepEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/ScreenSleepListener.html#screenAwoke(java.awt.desktop.ScreenSleepEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.ScreenSleepEvent"/></param>
+        public override void ScreenAwoke(Java.Awt.DesktopNs.ScreenSleepEvent arg0)
+        {
+            IExecuteWithSignature("screenAwoke", "(Ljava/awt/desktop/ScreenSleepEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

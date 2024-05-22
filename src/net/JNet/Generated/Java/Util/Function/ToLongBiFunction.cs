@@ -88,6 +88,47 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region ToLongBiFunctionDirect
+    public partial class ToLongBiFunctionDirect
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongBiFunction.html#applyAsLong(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="long"/></returns>
+        public override long ApplyAsLong(object arg0, object arg1)
+        {
+            return IExecute<long>("applyAsLong", arg0, arg1);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region IToLongBiFunction<T, U>
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.function.ToLongBiFunction implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongBiFunction.html"/>
@@ -164,6 +205,47 @@ namespace Java.Util.Function
         public virtual long ApplyAsLong(T arg0, U arg1)
         {
             return default;
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
+    #region ToLongBiFunctionDirect<T, U>
+    public partial class ToLongBiFunctionDirect<T, U> : Java.Util.Function.IToLongBiFunction<T, U>
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongBiFunction.html#applyAsLong(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><typeparamref name="U"/></param>
+        /// <returns><see cref="long"/></returns>
+        public override long ApplyAsLong(T arg0, U arg1)
+        {
+            return IExecute<long>("applyAsLong", arg0, arg1);
         }
 
         #endregion

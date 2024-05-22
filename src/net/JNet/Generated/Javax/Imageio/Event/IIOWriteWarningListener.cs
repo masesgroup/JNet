@@ -111,4 +111,45 @@ namespace Javax.Imageio.Event
         // TODO: complete the class
     }
     #endregion
+
+    #region IIOWriteWarningListenerDirect
+    public partial class IIOWriteWarningListenerDirect : Javax.Imageio.Event.IIIOWriteWarningListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteWarningListener.html#warningOccurred(javax.imageio.ImageWriter,int,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        public override void WarningOccurred(Javax.Imageio.ImageWriter arg0, int arg1, Java.Lang.String arg2)
+        {
+            IExecute("warningOccurred", arg0, arg1, arg2);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

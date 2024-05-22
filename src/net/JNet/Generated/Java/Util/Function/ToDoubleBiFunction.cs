@@ -88,6 +88,47 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region ToDoubleBiFunctionDirect
+    public partial class ToDoubleBiFunctionDirect
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToDoubleBiFunction.html#applyAsDouble(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="double"/></returns>
+        public override double ApplyAsDouble(object arg0, object arg1)
+        {
+            return IExecute<double>("applyAsDouble", arg0, arg1);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region IToDoubleBiFunction<T, U>
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.function.ToDoubleBiFunction implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToDoubleBiFunction.html"/>
@@ -164,6 +205,47 @@ namespace Java.Util.Function
         public virtual double ApplyAsDouble(T arg0, U arg1)
         {
             return default;
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
+    #region ToDoubleBiFunctionDirect<T, U>
+    public partial class ToDoubleBiFunctionDirect<T, U> : Java.Util.Function.IToDoubleBiFunction<T, U>
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToDoubleBiFunction.html#applyAsDouble(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><typeparamref name="U"/></param>
+        /// <returns><see cref="double"/></returns>
+        public override double ApplyAsDouble(T arg0, U arg1)
+        {
+            return IExecute<double>("applyAsDouble", arg0, arg1);
         }
 
         #endregion

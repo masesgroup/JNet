@@ -87,6 +87,46 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region IntFunctionDirect
+    public partial class IntFunctionDirect
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntFunction.html#apply(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="object"/></returns>
+        public override object Apply(int arg0)
+        {
+            return IExecuteWithSignature("apply", "(I)Ljava/lang/Object;", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region IIntFunction<R>
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.function.IntFunction implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntFunction.html"/>
@@ -161,6 +201,46 @@ namespace Java.Util.Function
         public virtual R Apply(int arg0)
         {
             return default;
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
+    #region IntFunctionDirect<R>
+    public partial class IntFunctionDirect<R> : Java.Util.Function.IIntFunction<R>
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntFunction.html#apply(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><typeparamref name="R"/></returns>
+        public override R Apply(int arg0)
+        {
+            return IExecuteWithSignature<R>("apply", "(I)Ljava/lang/Object;", arg0);
         }
 
         #endregion

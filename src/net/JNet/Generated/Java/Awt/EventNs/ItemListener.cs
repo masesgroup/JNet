@@ -107,4 +107,43 @@ namespace Java.Awt.EventNs
         // TODO: complete the class
     }
     #endregion
+
+    #region ItemListenerDirect
+    public partial class ItemListenerDirect : Java.Awt.EventNs.IItemListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemListener.html#itemStateChanged(java.awt.event.ItemEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemEvent"/></param>
+        public override void ItemStateChanged(Java.Awt.EventNs.ItemEvent arg0)
+        {
+            IExecuteWithSignature("itemStateChanged", "(Ljava/awt/event/ItemEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

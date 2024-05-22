@@ -269,4 +269,91 @@ namespace Java.Awt.EventNs
         // TODO: complete the class
     }
     #endregion
+
+    #region WindowListenerDirect
+    public partial class WindowListenerDirect : Java.Awt.EventNs.IWindowListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html#windowActivated(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        public override void WindowActivated(Java.Awt.EventNs.WindowEvent arg0)
+        {
+            IExecuteWithSignature("windowActivated", "(Ljava/awt/event/WindowEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html#windowClosed(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        public override void WindowClosed(Java.Awt.EventNs.WindowEvent arg0)
+        {
+            IExecuteWithSignature("windowClosed", "(Ljava/awt/event/WindowEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html#windowClosing(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        public override void WindowClosing(Java.Awt.EventNs.WindowEvent arg0)
+        {
+            IExecuteWithSignature("windowClosing", "(Ljava/awt/event/WindowEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html#windowDeactivated(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        public override void WindowDeactivated(Java.Awt.EventNs.WindowEvent arg0)
+        {
+            IExecuteWithSignature("windowDeactivated", "(Ljava/awt/event/WindowEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html#windowDeiconified(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        public override void WindowDeiconified(Java.Awt.EventNs.WindowEvent arg0)
+        {
+            IExecuteWithSignature("windowDeiconified", "(Ljava/awt/event/WindowEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html#windowIconified(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        public override void WindowIconified(Java.Awt.EventNs.WindowEvent arg0)
+        {
+            IExecuteWithSignature("windowIconified", "(Ljava/awt/event/WindowEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html#windowOpened(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        public override void WindowOpened(Java.Awt.EventNs.WindowEvent arg0)
+        {
+            IExecuteWithSignature("windowOpened", "(Ljava/awt/event/WindowEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

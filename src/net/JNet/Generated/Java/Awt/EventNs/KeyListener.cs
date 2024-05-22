@@ -161,4 +161,59 @@ namespace Java.Awt.EventNs
         // TODO: complete the class
     }
     #endregion
+
+    #region KeyListenerDirect
+    public partial class KeyListenerDirect : Java.Awt.EventNs.IKeyListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyListener.html#keyPressed(java.awt.event.KeyEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
+        public override void KeyPressed(Java.Awt.EventNs.KeyEvent arg0)
+        {
+            IExecuteWithSignature("keyPressed", "(Ljava/awt/event/KeyEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyListener.html#keyReleased(java.awt.event.KeyEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
+        public override void KeyReleased(Java.Awt.EventNs.KeyEvent arg0)
+        {
+            IExecuteWithSignature("keyReleased", "(Ljava/awt/event/KeyEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyListener.html#keyTyped(java.awt.event.KeyEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
+        public override void KeyTyped(Java.Awt.EventNs.KeyEvent arg0)
+        {
+            IExecuteWithSignature("keyTyped", "(Ljava/awt/event/KeyEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

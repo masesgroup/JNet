@@ -87,6 +87,46 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region LongFunctionDirect
+    public partial class LongFunctionDirect
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongFunction.html#apply(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <returns><see cref="object"/></returns>
+        public override object Apply(long arg0)
+        {
+            return IExecuteWithSignature("apply", "(J)Ljava/lang/Object;", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ILongFunction<R>
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.function.LongFunction implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongFunction.html"/>
@@ -161,6 +201,46 @@ namespace Java.Util.Function
         public virtual R Apply(long arg0)
         {
             return default;
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
+    #region LongFunctionDirect<R>
+    public partial class LongFunctionDirect<R> : Java.Util.Function.ILongFunction<R>
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongFunction.html#apply(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <returns><typeparamref name="R"/></returns>
+        public override R Apply(long arg0)
+        {
+            return IExecuteWithSignature<R>("apply", "(J)Ljava/lang/Object;", arg0);
         }
 
         #endregion

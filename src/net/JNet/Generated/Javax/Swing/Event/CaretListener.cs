@@ -107,4 +107,43 @@ namespace Javax.Swing.Event
         // TODO: complete the class
     }
     #endregion
+
+    #region CaretListenerDirect
+    public partial class CaretListenerDirect : Javax.Swing.Event.ICaretListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CaretListener.html#caretUpdate(javax.swing.event.CaretEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.CaretEvent"/></param>
+        public override void CaretUpdate(Javax.Swing.Event.CaretEvent arg0)
+        {
+            IExecuteWithSignature("caretUpdate", "(Ljavax/swing/event/CaretEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

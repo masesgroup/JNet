@@ -188,4 +188,67 @@ namespace Javax.Naming.Event
         // TODO: complete the class
     }
     #endregion
+
+    #region NamespaceChangeListenerDirect
+    public partial class NamespaceChangeListenerDirect : Javax.Naming.Event.INamespaceChangeListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html#objectAdded(javax.naming.event.NamingEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingEvent"/></param>
+        public override void ObjectAdded(Javax.Naming.Event.NamingEvent arg0)
+        {
+            IExecuteWithSignature("objectAdded", "(Ljavax/naming/event/NamingEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html#objectRemoved(javax.naming.event.NamingEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingEvent"/></param>
+        public override void ObjectRemoved(Javax.Naming.Event.NamingEvent arg0)
+        {
+            IExecuteWithSignature("objectRemoved", "(Ljavax/naming/event/NamingEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html#objectRenamed(javax.naming.event.NamingEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingEvent"/></param>
+        public override void ObjectRenamed(Javax.Naming.Event.NamingEvent arg0)
+        {
+            IExecuteWithSignature("objectRenamed", "(Ljavax/naming/event/NamingEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html#namingExceptionThrown(javax.naming.event.NamingExceptionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingExceptionEvent"/></param>
+        public override void NamingExceptionThrown(Javax.Naming.Event.NamingExceptionEvent arg0)
+        {
+            IExecute("namingExceptionThrown", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

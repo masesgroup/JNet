@@ -318,4 +318,103 @@ namespace Javax.Swing
         // TODO: complete the class
     }
     #endregion
+
+    #region ActionDirect
+    public partial class ActionDirect : Javax.Swing.IAction
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#isEnabled()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public override bool IsEnabled()
+        {
+            return IExecuteWithSignature<bool>("isEnabled", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#getValue(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="object"/></returns>
+        public override object GetValue(Java.Lang.String arg0)
+        {
+            return IExecuteWithSignature("getValue", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html#actionPerformed(java.awt.event.ActionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionEvent"/></param>
+        public override void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
+        {
+            IExecute("actionPerformed", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
+        public override void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
+        {
+            IExecuteWithSignature("addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#putValue(java.lang.String,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        public override void PutValue(Java.Lang.String arg0, object arg1)
+        {
+            IExecute("putValue", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
+        public override void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
+        {
+            IExecuteWithSignature("removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#setEnabled(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public override void SetEnabled(bool arg0)
+        {
+            IExecuteWithSignature("setEnabled", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#accept(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public override bool Accept(object arg0)
+        {
+            return IExecuteWithSignature<bool>("accept", "(Ljava/lang/Object;)Z", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }
