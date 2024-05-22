@@ -1890,7 +1890,7 @@ namespace MASES.JNetReflector
                 StringBuilder jDecoration = new StringBuilder(AllPackageClasses.ClassStub.MethodStub.DEFAULT_DECORATION);
                 string paramHelp = methodHelpBuilder.ToString();
                 if (paramHelp.EndsWith(Environment.NewLine)) paramHelp = paramHelp.Substring(0, paramHelp.LastIndexOf(Environment.NewLine));
-                if (!string.IsNullOrEmpty(paramHelp))
+                if (!string.IsNullOrWhiteSpace(paramHelp) && paramHelp.Contains('/'))
                 {
                     jDecoration.AppendLine();
                     jDecoration.Append(paramHelp);
