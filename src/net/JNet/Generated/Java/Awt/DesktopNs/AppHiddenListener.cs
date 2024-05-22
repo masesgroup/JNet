@@ -134,4 +134,51 @@ namespace Java.Awt.DesktopNs
         // TODO: complete the class
     }
     #endregion
+
+    #region AppHiddenListenerDirect
+    public partial class AppHiddenListenerDirect : Java.Awt.DesktopNs.IAppHiddenListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppHiddenListener.html#appHidden(java.awt.desktop.AppHiddenEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppHiddenEvent"/></param>
+        public override void AppHidden(Java.Awt.DesktopNs.AppHiddenEvent arg0)
+        {
+            IExecuteWithSignature("appHidden", "(Ljava/awt/desktop/AppHiddenEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppHiddenListener.html#appUnhidden(java.awt.desktop.AppHiddenEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppHiddenEvent"/></param>
+        public override void AppUnhidden(Java.Awt.DesktopNs.AppHiddenEvent arg0)
+        {
+            IExecuteWithSignature("appUnhidden", "(Ljava/awt/desktop/AppHiddenEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

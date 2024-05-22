@@ -109,4 +109,44 @@ namespace Javax.Management
         // TODO: complete the class
     }
     #endregion
+
+    #region NotificationListenerDirect
+    public partial class NotificationListenerDirect : Javax.Management.INotificationListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationListener.html#handleNotification(javax.management.Notification,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Notification"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        public override void HandleNotification(Javax.Management.Notification arg0, object arg1)
+        {
+            IExecute("handleNotification", arg0, arg1);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

@@ -161,4 +161,59 @@ namespace Javax.Swing.Event
         // TODO: complete the class
     }
     #endregion
+
+    #region PopupMenuListenerDirect
+    public partial class PopupMenuListenerDirect : Javax.Swing.Event.IPopupMenuListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html#popupMenuCanceled(javax.swing.event.PopupMenuEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.PopupMenuEvent"/></param>
+        public override void PopupMenuCanceled(Javax.Swing.Event.PopupMenuEvent arg0)
+        {
+            IExecuteWithSignature("popupMenuCanceled", "(Ljavax/swing/event/PopupMenuEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html#popupMenuWillBecomeInvisible(javax.swing.event.PopupMenuEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.PopupMenuEvent"/></param>
+        public override void PopupMenuWillBecomeInvisible(Javax.Swing.Event.PopupMenuEvent arg0)
+        {
+            IExecuteWithSignature("popupMenuWillBecomeInvisible", "(Ljavax/swing/event/PopupMenuEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html#popupMenuWillBecomeVisible(javax.swing.event.PopupMenuEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.PopupMenuEvent"/></param>
+        public override void PopupMenuWillBecomeVisible(Javax.Swing.Event.PopupMenuEvent arg0)
+        {
+            IExecuteWithSignature("popupMenuWillBecomeVisible", "(Ljavax/swing/event/PopupMenuEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

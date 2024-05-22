@@ -107,4 +107,43 @@ namespace Java.Awt.EventNs
         // TODO: complete the class
     }
     #endregion
+
+    #region AWTEventListenerDirect
+    public partial class AWTEventListenerDirect : Java.Awt.EventNs.IAWTEventListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListener.html#eventDispatched(java.awt.AWTEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.AWTEvent"/></param>
+        public override void EventDispatched(Java.Awt.AWTEvent arg0)
+        {
+            IExecuteWithSignature("eventDispatched", "(Ljava/awt/AWTEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

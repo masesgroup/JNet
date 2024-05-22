@@ -87,6 +87,46 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region SupplierDirect
+    public partial class SupplierDirect
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/>
+        /// </summary>
+
+        /// <returns><see cref="object"/></returns>
+        public override object Get()
+        {
+            return IExecuteWithSignature("get", "()Ljava/lang/Object;");
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ISupplier<T>
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.function.Supplier implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html"/>
@@ -161,6 +201,46 @@ namespace Java.Util.Function
         public virtual T Get()
         {
             return default;
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
+    #region SupplierDirect<T>
+    public partial class SupplierDirect<T> : Java.Util.Function.ISupplier<T>
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/>
+        /// </summary>
+
+        /// <returns><typeparamref name="T"/></returns>
+        public override T Get()
+        {
+            return IExecuteWithSignature<T>("get", "()Ljava/lang/Object;");
         }
 
         #endregion

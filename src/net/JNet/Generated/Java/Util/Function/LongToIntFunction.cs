@@ -110,4 +110,44 @@ namespace Java.Util.Function
         // TODO: complete the class
     }
     #endregion
+
+    #region LongToIntFunctionDirect
+    public partial class LongToIntFunctionDirect : Java.Util.Function.ILongToIntFunction
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongToIntFunction.html#applyAsInt(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <returns><see cref="int"/></returns>
+        public override int ApplyAsInt(long arg0)
+        {
+            return IExecuteWithSignature<int>("applyAsInt", "(J)I", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

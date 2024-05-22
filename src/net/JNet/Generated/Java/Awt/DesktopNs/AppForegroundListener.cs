@@ -134,4 +134,51 @@ namespace Java.Awt.DesktopNs
         // TODO: complete the class
     }
     #endregion
+
+    #region AppForegroundListenerDirect
+    public partial class AppForegroundListenerDirect : Java.Awt.DesktopNs.IAppForegroundListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppForegroundListener.html#appMovedToBackground(java.awt.desktop.AppForegroundEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppForegroundEvent"/></param>
+        public override void AppMovedToBackground(Java.Awt.DesktopNs.AppForegroundEvent arg0)
+        {
+            IExecuteWithSignature("appMovedToBackground", "(Ljava/awt/desktop/AppForegroundEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppForegroundListener.html#appRaisedToForeground(java.awt.desktop.AppForegroundEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppForegroundEvent"/></param>
+        public override void AppRaisedToForeground(Java.Awt.DesktopNs.AppForegroundEvent arg0)
+        {
+            IExecuteWithSignature("appRaisedToForeground", "(Ljava/awt/desktop/AppForegroundEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

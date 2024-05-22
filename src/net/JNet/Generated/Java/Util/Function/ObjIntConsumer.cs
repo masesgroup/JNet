@@ -86,6 +86,46 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region ObjIntConsumerDirect
+    public partial class ObjIntConsumerDirect
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjIntConsumer.html#accept(java.lang.Object,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        public override void Accept(object arg0, int arg1)
+        {
+            IExecute("accept", arg0, arg1);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region IObjIntConsumer<T>
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.function.ObjIntConsumer implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjIntConsumer.html"/>
@@ -159,6 +199,46 @@ namespace Java.Util.Function
         public virtual void Accept(T arg0, int arg1)
         {
             
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
+    #region ObjIntConsumerDirect<T>
+    public partial class ObjIntConsumerDirect<T> : Java.Util.Function.IObjIntConsumer<T>
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjIntConsumer.html#accept(java.lang.Object,int)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        public override void Accept(T arg0, int arg1)
+        {
+            IExecute("accept", arg0, arg1);
         }
 
         #endregion

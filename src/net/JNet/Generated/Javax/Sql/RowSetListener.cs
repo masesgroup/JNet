@@ -161,4 +161,59 @@ namespace Javax.Sql
         // TODO: complete the class
     }
     #endregion
+
+    #region RowSetListenerDirect
+    public partial class RowSetListenerDirect : Javax.Sql.IRowSetListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetListener.html#cursorMoved(javax.sql.RowSetEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.RowSetEvent"/></param>
+        public override void CursorMoved(Javax.Sql.RowSetEvent arg0)
+        {
+            IExecuteWithSignature("cursorMoved", "(Ljavax/sql/RowSetEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetListener.html#rowChanged(javax.sql.RowSetEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.RowSetEvent"/></param>
+        public override void RowChanged(Javax.Sql.RowSetEvent arg0)
+        {
+            IExecuteWithSignature("rowChanged", "(Ljavax/sql/RowSetEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetListener.html#rowSetChanged(javax.sql.RowSetEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.RowSetEvent"/></param>
+        public override void RowSetChanged(Javax.Sql.RowSetEvent arg0)
+        {
+            IExecuteWithSignature("rowSetChanged", "(Ljavax/sql/RowSetEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

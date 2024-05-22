@@ -107,4 +107,43 @@ namespace Java.Awt.DesktopNs
         // TODO: complete the class
     }
     #endregion
+
+    #region AppReopenedListenerDirect
+    public partial class AppReopenedListenerDirect : Java.Awt.DesktopNs.IAppReopenedListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppReopenedListener.html#appReopened(java.awt.desktop.AppReopenedEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppReopenedEvent"/></param>
+        public override void AppReopened(Java.Awt.DesktopNs.AppReopenedEvent arg0)
+        {
+            IExecuteWithSignature("appReopened", "(Ljava/awt/desktop/AppReopenedEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

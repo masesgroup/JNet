@@ -134,4 +134,51 @@ namespace Javax.Sql
         // TODO: complete the class
     }
     #endregion
+
+    #region StatementEventListenerDirect
+    public partial class StatementEventListenerDirect : Javax.Sql.IStatementEventListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEventListener.html#statementClosed(javax.sql.StatementEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.StatementEvent"/></param>
+        public override void StatementClosed(Javax.Sql.StatementEvent arg0)
+        {
+            IExecuteWithSignature("statementClosed", "(Ljavax/sql/StatementEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEventListener.html#statementErrorOccurred(javax.sql.StatementEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.StatementEvent"/></param>
+        public override void StatementErrorOccurred(Javax.Sql.StatementEvent arg0)
+        {
+            IExecuteWithSignature("statementErrorOccurred", "(Ljavax/sql/StatementEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

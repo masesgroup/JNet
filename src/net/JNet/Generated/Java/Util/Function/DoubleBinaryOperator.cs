@@ -112,4 +112,45 @@ namespace Java.Util.Function
         // TODO: complete the class
     }
     #endregion
+
+    #region DoubleBinaryOperatorDirect
+    public partial class DoubleBinaryOperatorDirect : Java.Util.Function.IDoubleBinaryOperator
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleBinaryOperator.html#applyAsDouble(double,double)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        /// <returns><see cref="double"/></returns>
+        public override double ApplyAsDouble(double arg0, double arg1)
+        {
+            return IExecute<double>("applyAsDouble", arg0, arg1);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

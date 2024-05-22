@@ -134,4 +134,51 @@ namespace Javax.Naming.Ldap
         // TODO: complete the class
     }
     #endregion
+
+    #region UnsolicitedNotificationListenerDirect
+    public partial class UnsolicitedNotificationListenerDirect : Javax.Naming.Ldap.IUnsolicitedNotificationListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html#namingExceptionThrown(javax.naming.event.NamingExceptionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingExceptionEvent"/></param>
+        public override void NamingExceptionThrown(Javax.Naming.Event.NamingExceptionEvent arg0)
+        {
+            IExecute("namingExceptionThrown", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotificationListener.html#notificationReceived(javax.naming.ldap.UnsolicitedNotificationEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Ldap.UnsolicitedNotificationEvent"/></param>
+        public override void NotificationReceived(Javax.Naming.Ldap.UnsolicitedNotificationEvent arg0)
+        {
+            IExecuteWithSignature("notificationReceived", "(Ljavax/naming/ldap/UnsolicitedNotificationEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

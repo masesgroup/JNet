@@ -172,4 +172,75 @@ namespace Java.Awt.Dnd
         // TODO: complete the class
     }
     #endregion
+
+    #region DropTargetAdapterDirect
+    public partial class DropTargetAdapterDirect
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html#drop(java.awt.dnd.DropTargetDropEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetDropEvent"/></param>
+        public override void Drop(Java.Awt.Dnd.DropTargetDropEvent arg0)
+        {
+            IExecute("drop", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetAdapter.html#dragEnter(java.awt.dnd.DropTargetDragEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetDragEvent"/></param>
+        public override void DragEnter(Java.Awt.Dnd.DropTargetDragEvent arg0)
+        {
+            IExecuteWithSignature("dragEnter", "(Ljava/awt/dnd/DropTargetDragEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetAdapter.html#dragExit(java.awt.dnd.DropTargetEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetEvent"/></param>
+        public override void DragExit(Java.Awt.Dnd.DropTargetEvent arg0)
+        {
+            IExecuteWithSignature("dragExit", "(Ljava/awt/dnd/DropTargetEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetAdapter.html#dragOver(java.awt.dnd.DropTargetDragEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetDragEvent"/></param>
+        public override void DragOver(Java.Awt.Dnd.DropTargetDragEvent arg0)
+        {
+            IExecuteWithSignature("dragOver", "(Ljava/awt/dnd/DropTargetDragEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetAdapter.html#dropActionChanged(java.awt.dnd.DropTargetDragEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetDragEvent"/></param>
+        public override void DropActionChanged(Java.Awt.Dnd.DropTargetDragEvent arg0)
+        {
+            IExecuteWithSignature("dropActionChanged", "(Ljava/awt/dnd/DropTargetDragEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

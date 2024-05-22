@@ -134,4 +134,51 @@ namespace Java.Awt.EventNs
         // TODO: complete the class
     }
     #endregion
+
+    #region InputMethodListenerDirect
+    public partial class InputMethodListenerDirect : Java.Awt.EventNs.IInputMethodListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html#caretPositionChanged(java.awt.event.InputMethodEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodEvent"/></param>
+        public override void CaretPositionChanged(Java.Awt.EventNs.InputMethodEvent arg0)
+        {
+            IExecuteWithSignature("caretPositionChanged", "(Ljava/awt/event/InputMethodEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html#inputMethodTextChanged(java.awt.event.InputMethodEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodEvent"/></param>
+        public override void InputMethodTextChanged(Java.Awt.EventNs.InputMethodEvent arg0)
+        {
+            IExecuteWithSignature("inputMethodTextChanged", "(Ljava/awt/event/InputMethodEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

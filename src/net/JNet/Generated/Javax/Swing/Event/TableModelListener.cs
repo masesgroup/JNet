@@ -107,4 +107,43 @@ namespace Javax.Swing.Event
         // TODO: complete the class
     }
     #endregion
+
+    #region TableModelListenerDirect
+    public partial class TableModelListenerDirect : Javax.Swing.Event.ITableModelListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelListener.html#tableChanged(javax.swing.event.TableModelEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TableModelEvent"/></param>
+        public override void TableChanged(Javax.Swing.Event.TableModelEvent arg0)
+        {
+            IExecuteWithSignature("tableChanged", "(Ljavax/swing/event/TableModelEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

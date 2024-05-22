@@ -134,4 +134,51 @@ namespace Javax.Swing.Event
         // TODO: complete the class
     }
     #endregion
+
+    #region CellEditorListenerDirect
+    public partial class CellEditorListenerDirect : Javax.Swing.Event.ICellEditorListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CellEditorListener.html#editingCanceled(javax.swing.event.ChangeEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
+        public override void EditingCanceled(Javax.Swing.Event.ChangeEvent arg0)
+        {
+            IExecuteWithSignature("editingCanceled", "(Ljavax/swing/event/ChangeEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CellEditorListener.html#editingStopped(javax.swing.event.ChangeEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
+        public override void EditingStopped(Javax.Swing.Event.ChangeEvent arg0)
+        {
+            IExecuteWithSignature("editingStopped", "(Ljavax/swing/event/ChangeEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

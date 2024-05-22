@@ -148,4 +148,52 @@ namespace Java.Util.Function
         // TODO: complete the class
     }
     #endregion
+
+    #region LongConsumerDirect
+    public partial class LongConsumerDirect : Java.Util.Function.ILongConsumer
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongConsumer.html#accept(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public override void Accept(long arg0)
+        {
+            IExecuteWithSignature("accept", "(J)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongConsumer.html#andThen(java.util.function.LongConsumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
+        /// <returns><see cref="Java.Util.Function.LongConsumer"/></returns>
+        public override Java.Util.Function.LongConsumer AndThen(Java.Util.Function.LongConsumer arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Function.LongConsumerDirect, Java.Util.Function.LongConsumer>("andThen", "(Ljava/util/function/LongConsumer;)Ljava/util/function/LongConsumer;", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

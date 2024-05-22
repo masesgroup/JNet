@@ -87,6 +87,46 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region ToLongFunctionDirect
+    public partial class ToLongFunctionDirect
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongFunction.html#applyAsLong(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="long"/></returns>
+        public override long ApplyAsLong(object arg0)
+        {
+            return IExecuteWithSignature<long>("applyAsLong", "(Ljava/lang/Object;)J", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region IToLongFunction<T>
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.function.ToLongFunction implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongFunction.html"/>
@@ -161,6 +201,46 @@ namespace Java.Util.Function
         public virtual long ApplyAsLong(T arg0)
         {
             return default;
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
+    #region ToLongFunctionDirect<T>
+    public partial class ToLongFunctionDirect<T> : Java.Util.Function.IToLongFunction<T>
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongFunction.html#applyAsLong(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <returns><see cref="long"/></returns>
+        public override long ApplyAsLong(T arg0)
+        {
+            return IExecuteWithSignature<long>("applyAsLong", "(Ljava/lang/Object;)J", arg0);
         }
 
         #endregion

@@ -107,4 +107,43 @@ namespace Javax.Print.Event
         // TODO: complete the class
     }
     #endregion
+
+    #region PrintServiceAttributeListenerDirect
+    public partial class PrintServiceAttributeListenerDirect : Javax.Print.Event.IPrintServiceAttributeListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintServiceAttributeListener.html#attributeUpdate(javax.print.event.PrintServiceAttributeEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintServiceAttributeEvent"/></param>
+        public override void AttributeUpdate(Javax.Print.Event.PrintServiceAttributeEvent arg0)
+        {
+            IExecuteWithSignature("attributeUpdate", "(Ljavax/print/event/PrintServiceAttributeEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

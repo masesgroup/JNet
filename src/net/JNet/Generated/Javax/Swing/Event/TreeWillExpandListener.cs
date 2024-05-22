@@ -138,4 +138,53 @@ namespace Javax.Swing.Event
         // TODO: complete the class
     }
     #endregion
+
+    #region TreeWillExpandListenerDirect
+    public partial class TreeWillExpandListenerDirect : Javax.Swing.Event.ITreeWillExpandListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeWillExpandListener.html#treeWillCollapse(javax.swing.event.TreeExpansionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionEvent"/></param>
+        /// <exception cref="Javax.Swing.Tree.ExpandVetoException"/>
+        public override void TreeWillCollapse(Javax.Swing.Event.TreeExpansionEvent arg0)
+        {
+            IExecuteWithSignature("treeWillCollapse", "(Ljavax/swing/event/TreeExpansionEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeWillExpandListener.html#treeWillExpand(javax.swing.event.TreeExpansionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionEvent"/></param>
+        /// <exception cref="Javax.Swing.Tree.ExpandVetoException"/>
+        public override void TreeWillExpand(Javax.Swing.Event.TreeExpansionEvent arg0)
+        {
+            IExecuteWithSignature("treeWillExpand", "(Ljavax/swing/event/TreeExpansionEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

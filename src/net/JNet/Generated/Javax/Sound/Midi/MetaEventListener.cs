@@ -107,4 +107,43 @@ namespace Javax.Sound.Midi
         // TODO: complete the class
     }
     #endregion
+
+    #region MetaEventListenerDirect
+    public partial class MetaEventListenerDirect : Javax.Sound.Midi.IMetaEventListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MetaEventListener.html#meta(javax.sound.midi.MetaMessage)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Midi.MetaMessage"/></param>
+        public override void Meta(Javax.Sound.Midi.MetaMessage arg0)
+        {
+            IExecuteWithSignature("meta", "(Ljavax/sound/midi/MetaMessage;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

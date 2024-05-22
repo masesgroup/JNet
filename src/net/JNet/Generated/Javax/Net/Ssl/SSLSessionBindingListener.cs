@@ -134,4 +134,51 @@ namespace Javax.Net.Ssl
         // TODO: complete the class
     }
     #endregion
+
+    #region SSLSessionBindingListenerDirect
+    public partial class SSLSessionBindingListenerDirect : Javax.Net.Ssl.ISSLSessionBindingListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingListener.html#valueBound(javax.net.ssl.SSLSessionBindingEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLSessionBindingEvent"/></param>
+        public override void ValueBound(Javax.Net.Ssl.SSLSessionBindingEvent arg0)
+        {
+            IExecuteWithSignature("valueBound", "(Ljavax/net/ssl/SSLSessionBindingEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingListener.html#valueUnbound(javax.net.ssl.SSLSessionBindingEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLSessionBindingEvent"/></param>
+        public override void ValueUnbound(Javax.Net.Ssl.SSLSessionBindingEvent arg0)
+        {
+            IExecuteWithSignature("valueUnbound", "(Ljavax/net/ssl/SSLSessionBindingEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

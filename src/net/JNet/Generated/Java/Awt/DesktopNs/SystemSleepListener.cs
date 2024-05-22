@@ -134,4 +134,51 @@ namespace Java.Awt.DesktopNs
         // TODO: complete the class
     }
     #endregion
+
+    #region SystemSleepListenerDirect
+    public partial class SystemSleepListenerDirect : Java.Awt.DesktopNs.ISystemSleepListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/SystemSleepListener.html#systemAboutToSleep(java.awt.desktop.SystemSleepEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.SystemSleepEvent"/></param>
+        public override void SystemAboutToSleep(Java.Awt.DesktopNs.SystemSleepEvent arg0)
+        {
+            IExecuteWithSignature("systemAboutToSleep", "(Ljava/awt/desktop/SystemSleepEvent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/SystemSleepListener.html#systemAwoke(java.awt.desktop.SystemSleepEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.SystemSleepEvent"/></param>
+        public override void SystemAwoke(Java.Awt.DesktopNs.SystemSleepEvent arg0)
+        {
+            IExecuteWithSignature("systemAwoke", "(Ljava/awt/desktop/SystemSleepEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

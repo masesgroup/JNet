@@ -110,4 +110,44 @@ namespace Java.Util.Function
         // TODO: complete the class
     }
     #endregion
+
+    #region LongToDoubleFunctionDirect
+    public partial class LongToDoubleFunctionDirect : Java.Util.Function.ILongToDoubleFunction
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongToDoubleFunction.html#applyAsDouble(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <returns><see cref="double"/></returns>
+        public override double ApplyAsDouble(long arg0)
+        {
+            return IExecuteWithSignature<double>("applyAsDouble", "(J)D", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

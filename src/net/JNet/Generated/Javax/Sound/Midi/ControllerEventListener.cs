@@ -107,4 +107,43 @@ namespace Javax.Sound.Midi
         // TODO: complete the class
     }
     #endregion
+
+    #region ControllerEventListenerDirect
+    public partial class ControllerEventListenerDirect : Javax.Sound.Midi.IControllerEventListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ControllerEventListener.html#controlChange(javax.sound.midi.ShortMessage)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Midi.ShortMessage"/></param>
+        public override void ControlChange(Javax.Sound.Midi.ShortMessage arg0)
+        {
+            IExecuteWithSignature("controlChange", "(Ljavax/sound/midi/ShortMessage;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }

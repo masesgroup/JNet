@@ -107,4 +107,43 @@ namespace Javax.Sound.Sampled
         // TODO: complete the class
     }
     #endregion
+
+    #region LineListenerDirect
+    public partial class LineListenerDirect : Javax.Sound.Sampled.ILineListener
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineListener.html#update(javax.sound.sampled.LineEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.LineEvent"/></param>
+        public override void Update(Javax.Sound.Sampled.LineEvent arg0)
+        {
+            IExecuteWithSignature("update", "(Ljavax/sound/sampled/LineEvent;)V", arg0);
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
 }
