@@ -481,7 +481,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#isEditing()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsEditing()
         {
@@ -499,7 +498,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#print()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Awt.Print.PrinterException"/>
         public bool Print()
@@ -1073,7 +1071,6 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.DropLocation.html#isInsertColumn()"/>
             /// </summary>
-
             /// <returns><see cref="bool"/></returns>
             public bool IsInsertColumn()
             {
@@ -1082,7 +1079,6 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.DropLocation.html#isInsertRow()"/>
             /// </summary>
-
             /// <returns><see cref="bool"/></returns>
             public bool IsInsertRow()
             {
@@ -1139,7 +1135,6 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.PrintMode.html#values()"/>
             /// </summary>
-
             /// <returns><see cref="Javax.Swing.JTable.PrintMode"/></returns>
             public static Javax.Swing.JTable.PrintMode[] Values()
             {

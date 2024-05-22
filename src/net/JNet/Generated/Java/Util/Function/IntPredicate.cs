@@ -47,7 +47,6 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#negate()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
         Java.Util.Function.IntPredicate Negate();
         /// <summary>
@@ -158,7 +157,6 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#negate()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.IntPredicate NegateDefault()
@@ -182,7 +180,6 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#negate()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="NegateDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.IntPredicate Negate()
@@ -275,7 +272,6 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#negate()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
         public override Java.Util.Function.IntPredicate Negate()
         {

@@ -102,7 +102,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newCachedThreadPool()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Concurrent.ExecutorService"/></returns>
         public static Java.Util.Concurrent.ExecutorService NewCachedThreadPool()
         {
@@ -139,7 +138,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newSingleThreadExecutor()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Concurrent.ExecutorService"/></returns>
         public static Java.Util.Concurrent.ExecutorService NewSingleThreadExecutor()
         {
@@ -157,7 +155,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newWorkStealingPool()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Concurrent.ExecutorService"/></returns>
         public static Java.Util.Concurrent.ExecutorService NewWorkStealingPool()
         {
@@ -203,7 +200,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newSingleThreadScheduledExecutor()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Concurrent.ScheduledExecutorService"/></returns>
         public static Java.Util.Concurrent.ScheduledExecutorService NewSingleThreadScheduledExecutor()
         {
@@ -230,7 +226,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#defaultThreadFactory()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Concurrent.ThreadFactory"/></returns>
         public static Java.Util.Concurrent.ThreadFactory DefaultThreadFactoryMethod()
         {
@@ -239,7 +234,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#privilegedThreadFactory()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Concurrent.ThreadFactory"/></returns>
         public static Java.Util.Concurrent.ThreadFactory PrivilegedThreadFactoryMethod()
         {

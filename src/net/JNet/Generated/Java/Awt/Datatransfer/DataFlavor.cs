@@ -207,7 +207,6 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isFlavorJavaFileListType()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsFlavorJavaFileListType()
         {
@@ -216,7 +215,6 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isFlavorRemoteObjectType()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsFlavorRemoteObjectType()
         {
@@ -225,7 +223,6 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isFlavorSerializedObjectType()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsFlavorSerializedObjectType()
         {
@@ -234,7 +231,6 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isFlavorTextType()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsFlavorTextType()
         {
@@ -252,7 +248,6 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isMimeTypeSerializedObject()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsMimeTypeSerializedObject()
         {
@@ -261,7 +256,6 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isRepresentationClassByteBuffer()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsRepresentationClassByteBuffer()
         {
@@ -270,7 +264,6 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isRepresentationClassCharBuffer()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsRepresentationClassCharBuffer()
         {
@@ -279,7 +272,6 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isRepresentationClassInputStream()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsRepresentationClassInputStream()
         {
@@ -288,7 +280,6 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isRepresentationClassReader()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsRepresentationClassReader()
         {
@@ -297,7 +288,6 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isRepresentationClassRemote()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsRepresentationClassRemote()
         {
@@ -306,7 +296,6 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isRepresentationClassSerializable()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsRepresentationClassSerializable()
         {

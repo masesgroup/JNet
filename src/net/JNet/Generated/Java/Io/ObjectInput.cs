@@ -35,14 +35,12 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#available()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         int Available();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#read()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         int Read();
@@ -65,7 +63,6 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#readObject()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         /// <exception cref="Java.Io.IOException"/>
@@ -80,7 +77,6 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#close()"/>
         /// </summary>
-
         /// <exception cref="Java.Io.IOException"/>
         void Close();
 
@@ -125,7 +121,6 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#available()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int Available()
@@ -135,7 +130,6 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#read()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int Read()
@@ -167,7 +161,6 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#readObject()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         /// <exception cref="Java.Io.IOException"/>
@@ -188,7 +181,6 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#close()"/>
         /// </summary>
-
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {

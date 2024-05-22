@@ -123,7 +123,6 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#isAnyPolicyInhibited()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsAnyPolicyInhibited()
         {
@@ -132,7 +131,6 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#isExplicitPolicyRequired()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsExplicitPolicyRequired()
         {
@@ -141,7 +139,6 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#isPolicyMappingInhibited()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsPolicyMappingInhibited()
         {
@@ -150,7 +147,6 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#isRevocationEnabled()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsRevocationEnabled()
         {

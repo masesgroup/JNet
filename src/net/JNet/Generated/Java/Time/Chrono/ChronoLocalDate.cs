@@ -43,7 +43,6 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#lengthOfMonth()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         int LengthOfMonth();
         /// <summary>
@@ -87,7 +86,6 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#isLeapYear()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsLeapYear();
         /// <summary>
@@ -117,7 +115,6 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#lengthOfYear()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         int LengthOfYear();
         /// <summary>
@@ -180,7 +177,6 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#toEpochDay()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         long ToEpochDay();
 
@@ -252,7 +248,6 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#lengthOfMonth()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int LengthOfMonth()
         {
@@ -317,7 +312,6 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#isLeapYear()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsLeapYear()
         {
@@ -362,7 +356,6 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#lengthOfYear()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int LengthOfYear()
         {
@@ -455,7 +448,6 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#toEpochDay()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long ToEpochDay()
         {

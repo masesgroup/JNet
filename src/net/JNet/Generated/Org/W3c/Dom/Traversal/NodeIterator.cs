@@ -51,14 +51,12 @@ namespace Org.W3c.Dom.Traversal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#nextNode()"/>
         /// </summary>
-
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         Org.W3c.Dom.Node NextNode();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#previousNode()"/>
         /// </summary>
-
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         Org.W3c.Dom.Node PreviousNode();
@@ -128,7 +126,6 @@ namespace Org.W3c.Dom.Traversal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#nextNode()"/>
         /// </summary>
-
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Node NextNode()
@@ -138,7 +135,6 @@ namespace Org.W3c.Dom.Traversal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#previousNode()"/>
         /// </summary>
-
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Node PreviousNode()

@@ -70,7 +70,6 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/EventReaderDelegate.html#hasNext()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasNext()
         {
@@ -89,7 +88,6 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/EventReaderDelegate.html#next()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object Next()
         {
@@ -98,7 +96,6 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/EventReaderDelegate.html#nextEvent()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Stream.Events.XMLEvent"/></returns>
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public Javax.Xml.Stream.Events.XMLEvent NextEvent()
@@ -108,7 +105,6 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/EventReaderDelegate.html#nextTag()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Stream.Events.XMLEvent"/></returns>
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public Javax.Xml.Stream.Events.XMLEvent NextTag()
@@ -118,7 +114,6 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/EventReaderDelegate.html#peek()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Stream.Events.XMLEvent"/></returns>
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public Javax.Xml.Stream.Events.XMLEvent Peek()
@@ -128,7 +123,6 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/EventReaderDelegate.html#close()"/>
         /// </summary>
-
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void Close()
         {

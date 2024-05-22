@@ -152,7 +152,6 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#serialClass()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Lang.Class"/></returns>
             public Java.Lang.Class SerialClass()
             {
@@ -161,7 +160,6 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#arrayLength()"/>
             /// </summary>
-
             /// <returns><see cref="long"/></returns>
             public long ArrayLength()
             {
@@ -170,7 +168,6 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#depth()"/>
             /// </summary>
-
             /// <returns><see cref="long"/></returns>
             public long Depth()
             {
@@ -179,7 +176,6 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#references()"/>
             /// </summary>
-
             /// <returns><see cref="long"/></returns>
             public long References()
             {
@@ -188,7 +184,6 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#streamBytes()"/>
             /// </summary>
-
             /// <returns><see cref="long"/></returns>
             public long StreamBytes()
             {
@@ -251,7 +246,6 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Status.html#values()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Io.ObjectInputFilter.Status"/></returns>
             public static Java.Io.ObjectInputFilter.Status[] Values()
             {

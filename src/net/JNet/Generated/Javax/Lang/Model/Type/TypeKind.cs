@@ -185,7 +185,6 @@ namespace Javax.Lang.Model.Type
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#values()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Lang.Model.Type.TypeKind"/></returns>
         public static Javax.Lang.Model.Type.TypeKind[] Values()
         {
@@ -198,7 +197,6 @@ namespace Javax.Lang.Model.Type
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#isPrimitive()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsPrimitive()
         {

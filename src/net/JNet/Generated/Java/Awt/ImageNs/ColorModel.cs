@@ -166,7 +166,6 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#hasAlpha()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasAlpha()
         {
@@ -175,7 +174,6 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#isAlphaPremultiplied()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsAlphaPremultiplied()
         {

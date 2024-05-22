@@ -48,7 +48,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#poll()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         public Java.Util.Concurrent.Future Poll()
         {
@@ -87,7 +86,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#take()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public Java.Util.Concurrent.Future Take()
@@ -115,7 +113,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#poll()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         Java.Util.Concurrent.Future<V> Poll();
         /// <summary>
@@ -142,7 +139,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#take()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         Java.Util.Concurrent.Future<V> Take();
@@ -184,7 +180,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#poll()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         public Java.Util.Concurrent.Future<V> Poll()
         {
@@ -223,7 +218,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#take()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public Java.Util.Concurrent.Future<V> Take()

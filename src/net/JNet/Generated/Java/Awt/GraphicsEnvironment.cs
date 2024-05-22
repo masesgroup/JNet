@@ -51,7 +51,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#isHeadless()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public static bool IsHeadless()
         {
@@ -124,7 +123,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#isHeadlessInstance()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsHeadlessInstance()
         {

@@ -39,19 +39,16 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#isAnonymous()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsAnonymous();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#isMN()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsMN();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#export()"/>
         /// </summary>
-
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         byte[] Export();
@@ -139,7 +136,6 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#isAnonymous()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsAnonymous()
         {
@@ -148,7 +144,6 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#isMN()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsMN()
         {
@@ -157,7 +152,6 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#export()"/>
         /// </summary>
-
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public byte[] Export()

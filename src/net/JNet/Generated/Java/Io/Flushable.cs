@@ -35,7 +35,6 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Flushable.html#flush()"/>
         /// </summary>
-
         /// <exception cref="Java.Io.IOException"/>
         void Flush();
 
@@ -72,7 +71,6 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Flushable.html#flush()"/>
         /// </summary>
-
         /// <exception cref="Java.Io.IOException"/>
         public void Flush()
         {

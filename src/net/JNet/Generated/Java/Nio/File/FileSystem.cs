@@ -76,7 +76,6 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#isOpen()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsOpen()
         {
@@ -85,7 +84,6 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#isReadOnly()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsReadOnly()
         {
@@ -113,7 +111,6 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#provider()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Nio.File.Spi.FileSystemProvider"/></returns>
         public Java.Nio.File.Spi.FileSystemProvider Provider()
         {
@@ -122,7 +119,6 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#newWatchService()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Nio.File.WatchService"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.WatchService NewWatchService()
@@ -132,7 +128,6 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#supportedFileAttributeViews()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.String> SupportedFileAttributeViews()
         {
@@ -141,7 +136,6 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#close()"/>
         /// </summary>
-
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {

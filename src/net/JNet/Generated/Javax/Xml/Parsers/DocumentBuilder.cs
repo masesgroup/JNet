@@ -62,7 +62,6 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#isNamespaceAware()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsNamespaceAware()
         {
@@ -71,7 +70,6 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#isValidating()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsValidating()
         {
@@ -80,7 +78,6 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#newDocument()"/>
         /// </summary>
-
         /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
         public Org.W3c.Dom.Document NewDocument()
         {
@@ -116,7 +113,6 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#isXIncludeAware()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsXIncludeAware()
         {

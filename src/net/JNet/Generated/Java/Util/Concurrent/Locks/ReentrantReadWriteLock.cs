@@ -101,7 +101,6 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#isWriteLocked()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsWriteLocked()
         {
@@ -110,7 +109,6 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#isWriteLockedByCurrentThread()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsWriteLockedByCurrentThread()
         {
@@ -128,7 +126,6 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#hasQueuedThreads()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasQueuedThreads()
         {
@@ -137,7 +134,6 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#isFair()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsFair()
         {
@@ -155,7 +151,6 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#readLock()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
         public Java.Util.Concurrent.Locks.Lock ReadLockMethod()
         {
@@ -164,7 +159,6 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#writeLock()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
         public Java.Util.Concurrent.Locks.Lock WriteLockMethod()
         {
@@ -205,7 +199,6 @@ namespace Java.Util.Concurrent.Locks
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#tryLock()"/>
             /// </summary>
-
             /// <returns><see cref="bool"/></returns>
             public bool TryLock()
             {
@@ -225,7 +218,6 @@ namespace Java.Util.Concurrent.Locks
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#newCondition()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Util.Concurrent.Locks.Condition"/></returns>
             public Java.Util.Concurrent.Locks.Condition NewCondition()
             {
@@ -241,7 +233,6 @@ namespace Java.Util.Concurrent.Locks
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#lockInterruptibly()"/>
             /// </summary>
-
             /// <exception cref="Java.Lang.InterruptedException"/>
             public void LockInterruptibly()
             {
@@ -303,7 +294,6 @@ namespace Java.Util.Concurrent.Locks
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html#isHeldByCurrentThread()"/>
             /// </summary>
-
             /// <returns><see cref="bool"/></returns>
             public bool IsHeldByCurrentThread()
             {
@@ -312,7 +302,6 @@ namespace Java.Util.Concurrent.Locks
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html#tryLock()"/>
             /// </summary>
-
             /// <returns><see cref="bool"/></returns>
             public bool TryLock()
             {
@@ -332,7 +321,6 @@ namespace Java.Util.Concurrent.Locks
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html#newCondition()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Util.Concurrent.Locks.Condition"/></returns>
             public Java.Util.Concurrent.Locks.Condition NewCondition()
             {
@@ -348,7 +336,6 @@ namespace Java.Util.Concurrent.Locks
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html#lockInterruptibly()"/>
             /// </summary>
-
             /// <exception cref="Java.Lang.InterruptedException"/>
             public void LockInterruptibly()
             {

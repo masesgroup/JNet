@@ -87,7 +87,6 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/DefaultHandler.html#endDocument()"/>
         /// </summary>
-
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndDocument()
         {
@@ -183,7 +182,6 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/DefaultHandler.html#startDocument()"/>
         /// </summary>
-
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void StartDocument()
         {

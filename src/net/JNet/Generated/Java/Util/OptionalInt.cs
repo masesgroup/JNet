@@ -44,7 +44,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#empty()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.OptionalInt"/></returns>
         public static Java.Util.OptionalInt Empty()
         {
@@ -85,7 +84,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#isEmpty()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
@@ -94,7 +92,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#isPresent()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsPresent()
         {
@@ -121,7 +118,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#orElseThrow()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int OrElseThrow()
         {
@@ -130,7 +126,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#stream()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream Stream()
         {

@@ -314,7 +314,6 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#isIdentity()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsIdentity()
         {
@@ -323,7 +322,6 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#createInverse()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
         /// <exception cref="Java.Awt.Geom.NoninvertibleTransformException"/>
         public Java.Awt.Geom.AffineTransform CreateInverse()
@@ -414,7 +412,6 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#invert()"/>
         /// </summary>
-
         /// <exception cref="Java.Awt.Geom.NoninvertibleTransformException"/>
         public void Invert()
         {

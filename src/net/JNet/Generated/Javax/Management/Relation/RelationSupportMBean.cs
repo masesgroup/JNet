@@ -35,7 +35,6 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html#isInRelationService()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.Boolean"/></returns>
         Java.Lang.Boolean IsInRelationService();
         /// <summary>
@@ -78,7 +77,6 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html#isInRelationService()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.Boolean"/></returns>
         public Java.Lang.Boolean IsInRelationService()
         {

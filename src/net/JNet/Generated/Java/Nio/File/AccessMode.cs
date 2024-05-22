@@ -71,7 +71,6 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AccessMode.html#values()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Nio.File.AccessMode"/></returns>
         public static Java.Nio.File.AccessMode[] Values()
         {

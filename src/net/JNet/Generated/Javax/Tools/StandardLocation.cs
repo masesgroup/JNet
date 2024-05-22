@@ -140,7 +140,6 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#values()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Tools.StandardLocation"/></returns>
         public static Javax.Tools.StandardLocation[] Values()
         {
@@ -160,7 +159,6 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#isModuleOrientedLocation()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsModuleOrientedLocation()
         {
@@ -169,7 +167,6 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#isOutputLocation()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsOutputLocation()
         {

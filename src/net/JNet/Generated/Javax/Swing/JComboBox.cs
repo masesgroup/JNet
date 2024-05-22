@@ -185,7 +185,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#isEditable()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsEditable()
         {
@@ -194,7 +193,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#isLightWeightPopupEnabled()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsLightWeightPopupEnabled()
         {
@@ -203,7 +201,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#isPopupVisible()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsPopupVisible()
         {
@@ -663,7 +660,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#isEditable()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsEditable()
         {
@@ -672,7 +668,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#isLightWeightPopupEnabled()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsLightWeightPopupEnabled()
         {
@@ -681,7 +676,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#isPopupVisible()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsPopupVisible()
         {

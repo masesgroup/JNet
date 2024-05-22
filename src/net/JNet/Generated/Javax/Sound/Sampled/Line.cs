@@ -49,7 +49,6 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#isOpen()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsOpen();
         /// <summary>
@@ -70,7 +69,6 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#open()"/>
         /// </summary>
-
         /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
         void Open();
         /// <summary>
@@ -135,7 +133,6 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#isOpen()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsOpen()
         {
@@ -168,7 +165,6 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#open()"/>
         /// </summary>
-
         /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
         public void Open()
         {

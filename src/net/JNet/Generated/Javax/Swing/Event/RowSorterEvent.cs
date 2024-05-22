@@ -130,7 +130,6 @@ namespace Javax.Swing.Event
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.Type.html#values()"/>
             /// </summary>
-
             /// <returns><see cref="Javax.Swing.Event.RowSorterEvent.Type"/></returns>
             public static Javax.Swing.Event.RowSorterEvent.Type[] Values()
             {

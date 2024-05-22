@@ -47,19 +47,16 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#encodingSet()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool EncodingSet();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#isStandalone()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsStandalone();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#standaloneSet()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool StandaloneSet();
 
@@ -117,7 +114,6 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#encodingSet()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool EncodingSet()
         {
@@ -126,7 +122,6 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#isStandalone()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsStandalone()
         {
@@ -135,7 +130,6 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#standaloneSet()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool StandaloneSet()
         {

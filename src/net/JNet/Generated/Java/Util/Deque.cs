@@ -143,7 +143,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#element()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object Element()
         {
@@ -152,7 +151,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#peek()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object Peek()
         {
@@ -161,7 +159,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#peekFirst()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object PeekFirst()
         {
@@ -170,7 +167,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#peekLast()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object PeekLast()
         {
@@ -179,7 +175,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#poll()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object Poll()
         {
@@ -188,7 +183,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#pollFirst()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object PollFirst()
         {
@@ -197,7 +191,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#pollLast()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object PollLast()
         {
@@ -206,7 +199,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#pop()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object Pop()
         {
@@ -215,7 +207,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#remove()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object Remove()
         {
@@ -224,7 +215,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#removeFirst()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object RemoveFirst()
         {
@@ -233,7 +223,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#removeLast()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object RemoveLast()
         {
@@ -242,7 +231,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#size()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
@@ -251,7 +239,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#descendingIterator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator DescendingIterator()
         {
@@ -260,7 +247,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#iterator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator Iterator()
         {
@@ -374,85 +360,71 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#element()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         E Element();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#peek()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         E Peek();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#peekFirst()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         E PeekFirst();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#peekLast()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         E PeekLast();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#poll()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         E Poll();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#pollFirst()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         E PollFirst();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#pollLast()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         E PollLast();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#pop()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         E Pop();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#remove()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         E Remove();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#removeFirst()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         E RemoveFirst();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#removeLast()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         E RemoveLast();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#size()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         int Size();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#descendingIterator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         Java.Util.Iterator<E> DescendingIterator();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#iterator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         Java.Util.Iterator<E> Iterator();
         /// <summary>
@@ -604,7 +576,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#element()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E Element()
         {
@@ -613,7 +584,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#peek()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E Peek()
         {
@@ -622,7 +592,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#peekFirst()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E PeekFirst()
         {
@@ -631,7 +600,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#peekLast()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E PeekLast()
         {
@@ -640,7 +608,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#poll()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E Poll()
         {
@@ -649,7 +616,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#pollFirst()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E PollFirst()
         {
@@ -658,7 +624,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#pollLast()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E PollLast()
         {
@@ -667,7 +632,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#pop()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E Pop()
         {
@@ -676,7 +640,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#remove()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E Remove()
         {
@@ -685,7 +648,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#removeFirst()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E RemoveFirst()
         {
@@ -694,7 +656,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#removeLast()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E RemoveLast()
         {
@@ -703,7 +664,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#size()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
@@ -712,7 +672,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#descendingIterator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<E> DescendingIterator()
         {
@@ -721,7 +680,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#iterator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<E> Iterator()
         {

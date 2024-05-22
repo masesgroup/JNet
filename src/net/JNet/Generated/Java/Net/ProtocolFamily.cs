@@ -35,7 +35,6 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ProtocolFamily.html#name()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.String"/></returns>
         Java.Lang.String Name();
 
@@ -72,7 +71,6 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ProtocolFamily.html#name()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
         {

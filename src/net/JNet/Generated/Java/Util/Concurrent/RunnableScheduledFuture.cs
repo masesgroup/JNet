@@ -56,7 +56,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RunnableScheduledFuture.html#isPeriodic()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsPeriodic()
         {
@@ -83,7 +82,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RunnableScheduledFuture.html#isPeriodic()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsPeriodic();
 
@@ -132,7 +130,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RunnableScheduledFuture.html#isPeriodic()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsPeriodic()
         {

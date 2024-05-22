@@ -51,7 +51,6 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#lookupPrintServices()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Print.PrintService"/></returns>
         public static Javax.Print.PrintService[] LookupPrintServices()
         {
@@ -101,7 +100,6 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#isCancelled()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsCancelled()
         {
@@ -110,7 +108,6 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#printDialog()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public bool PrintDialog()
@@ -155,7 +152,6 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#print()"/>
         /// </summary>
-
         /// <exception cref="Java.Awt.Print.PrinterException"/>
         public void Print()
         {
@@ -200,7 +196,6 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#defaultPage()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Awt.Print.PageFormat"/></returns>
         public Java.Awt.Print.PageFormat DefaultPage()
         {

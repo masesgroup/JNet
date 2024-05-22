@@ -95,7 +95,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#systemDefault()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.ZoneId"/></returns>
         public static Java.Time.ZoneId SystemDefault()
         {
@@ -132,7 +131,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#normalized()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.ZoneId"/></returns>
         public Java.Time.ZoneId Normalized()
         {

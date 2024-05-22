@@ -44,7 +44,6 @@ namespace Java.Nio.Channels.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/AsynchronousChannelProvider.html#provider()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Nio.Channels.Spi.AsynchronousChannelProvider"/></returns>
         public static Java.Nio.Channels.Spi.AsynchronousChannelProvider Provider()
         {

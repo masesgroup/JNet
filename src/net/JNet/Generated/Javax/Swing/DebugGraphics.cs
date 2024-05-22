@@ -85,7 +85,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#flashCount()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public static int FlashCount()
         {
@@ -94,7 +93,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#flashTime()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public static int FlashTime()
         {
@@ -103,7 +101,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#flashColor()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public static Java.Awt.Color FlashColor()
         {
@@ -112,7 +109,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#logStream()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Io.PrintStream"/></returns>
         public static Java.Io.PrintStream LogStream()
         {
@@ -164,7 +160,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#isDrawingBuffer()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsDrawingBuffer()
         {

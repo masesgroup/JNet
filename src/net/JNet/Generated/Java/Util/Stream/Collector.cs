@@ -73,7 +73,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#accumulator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
         public Java.Util.Function.BiConsumer Accumulator()
         {
@@ -82,7 +81,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#accumulator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
         public Java.Util.Function.BiConsumer AccumulatorDirect()
         {
@@ -91,7 +89,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#combiner()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
         public Java.Util.Function.BinaryOperator Combiner()
         {
@@ -100,7 +97,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#combiner()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
         public Java.Util.Function.BinaryOperator CombinerDirect()
         {
@@ -109,7 +105,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#finisher()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
         public Java.Util.Function.Function Finisher()
         {
@@ -118,7 +113,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#finisher()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
         public Java.Util.Function.Function FinisherDirect()
         {
@@ -127,7 +121,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#supplier()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.Supplier"/></returns>
         public Java.Util.Function.Supplier Supplier()
         {
@@ -136,7 +129,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#supplier()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.Supplier"/></returns>
         public Java.Util.Function.Supplier SupplierDirect()
         {
@@ -145,7 +137,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#characteristics()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set CharacteristicsMethod()
         {
@@ -201,7 +192,6 @@ namespace Java.Util.Stream
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.Characteristics.html#values()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Util.Stream.Collector.Characteristics"/></returns>
             public static Java.Util.Stream.Collector.Characteristics[] Values()
             {
@@ -239,55 +229,46 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#accumulator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
         Java.Util.Function.BiConsumer<A, T> Accumulator();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#accumulator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
         Java.Util.Function.BiConsumer<A, T> AccumulatorDirect();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#combiner()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
         Java.Util.Function.BinaryOperator<A> Combiner();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#combiner()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
         Java.Util.Function.BinaryOperator<A> CombinerDirect();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#finisher()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
         Java.Util.Function.Function<A, R> Finisher();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#finisher()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
         Java.Util.Function.Function<A, R> FinisherDirect();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#supplier()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.Supplier"/></returns>
         Java.Util.Function.Supplier<A> Supplier();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#supplier()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.Supplier"/></returns>
         Java.Util.Function.Supplier<A> SupplierDirect();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#characteristics()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Set"/></returns>
         Java.Util.Set<Java.Util.Stream.Collector.Characteristics> CharacteristicsMethod();
 
@@ -353,7 +334,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#accumulator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
         public Java.Util.Function.BiConsumer<A, T> Accumulator()
         {
@@ -362,7 +342,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#accumulator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
         public Java.Util.Function.BiConsumer<A, T> AccumulatorDirect()
         {
@@ -371,7 +350,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#combiner()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
         public Java.Util.Function.BinaryOperator<A> Combiner()
         {
@@ -380,7 +358,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#combiner()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
         public Java.Util.Function.BinaryOperator<A> CombinerDirect()
         {
@@ -389,7 +366,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#finisher()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
         public Java.Util.Function.Function<A, R> Finisher()
         {
@@ -398,7 +374,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#finisher()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
         public Java.Util.Function.Function<A, R> FinisherDirect()
         {
@@ -407,7 +382,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#supplier()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.Supplier"/></returns>
         public Java.Util.Function.Supplier<A> Supplier()
         {
@@ -416,7 +390,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#supplier()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.Supplier"/></returns>
         public Java.Util.Function.Supplier<A> SupplierDirect()
         {
@@ -425,7 +398,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#characteristics()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Util.Stream.Collector.Characteristics> CharacteristicsMethod()
         {

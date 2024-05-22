@@ -99,7 +99,6 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#dayOfWeek()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.Temporal.TemporalField"/></returns>
         public Java.Time.Temporal.TemporalField DayOfWeek()
         {
@@ -108,7 +107,6 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#weekBasedYear()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.Temporal.TemporalField"/></returns>
         public Java.Time.Temporal.TemporalField WeekBasedYear()
         {
@@ -117,7 +115,6 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#weekOfMonth()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.Temporal.TemporalField"/></returns>
         public Java.Time.Temporal.TemporalField WeekOfMonth()
         {
@@ -126,7 +123,6 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#weekOfWeekBasedYear()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.Temporal.TemporalField"/></returns>
         public Java.Time.Temporal.TemporalField WeekOfWeekBasedYear()
         {
@@ -135,7 +131,6 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#weekOfYear()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.Temporal.TemporalField"/></returns>
         public Java.Time.Temporal.TemporalField WeekOfYear()
         {

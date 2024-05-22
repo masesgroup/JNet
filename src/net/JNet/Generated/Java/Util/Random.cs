@@ -56,7 +56,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextBoolean()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool NextBoolean()
         {
@@ -65,7 +64,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextDouble()"/>
         /// </summary>
-
         /// <returns><see cref="double"/></returns>
         public double NextDouble()
         {
@@ -74,7 +72,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextFloat()"/>
         /// </summary>
-
         /// <returns><see cref="float"/></returns>
         public float NextFloat()
         {
@@ -83,7 +80,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextInt()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int NextInt()
         {
@@ -101,7 +97,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#doubles()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream Doubles()
         {
@@ -140,7 +135,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#ints()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream Ints()
         {
@@ -179,7 +173,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#longs()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream Longs()
         {
@@ -218,7 +211,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextLong()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long NextLong()
         {
@@ -227,7 +219,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextGaussian()"/>
         /// </summary>
-
         /// <returns><see cref="double"/></returns>
         public double NextGaussian()
         {

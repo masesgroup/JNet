@@ -92,7 +92,6 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#varType()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public Java.Lang.Class VarType()
         {
@@ -119,7 +118,6 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#coordinateTypes()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Java.Lang.Class> CoordinateTypes()
         {
@@ -627,7 +625,6 @@ namespace Java.Lang.Invoke
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#values()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Lang.Invoke.VarHandle.AccessMode"/></returns>
             public static Java.Lang.Invoke.VarHandle.AccessMode[] Values()
             {
@@ -640,7 +637,6 @@ namespace Java.Lang.Invoke
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#methodName()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Lang.String"/></returns>
             public Java.Lang.String MethodName()
             {

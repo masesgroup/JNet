@@ -48,7 +48,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasNext()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasNext()
         {
@@ -57,7 +56,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasPrevious()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasPrevious()
         {
@@ -66,7 +64,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#next()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object Next()
         {
@@ -75,7 +72,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previous()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object Previous()
         {
@@ -84,7 +80,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#nextIndex()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int NextIndex()
         {
@@ -93,7 +88,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previousIndex()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int PreviousIndex()
         {
@@ -143,37 +137,31 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasNext()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool HasNext();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasPrevious()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool HasPrevious();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#next()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         E Next();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previous()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         E Previous();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#nextIndex()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         int NextIndex();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previousIndex()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         int PreviousIndex();
         /// <summary>
@@ -228,7 +216,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasNext()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasNext()
         {
@@ -237,7 +224,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasPrevious()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasPrevious()
         {
@@ -246,7 +232,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#next()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E Next()
         {
@@ -255,7 +240,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previous()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E Previous()
         {
@@ -264,7 +248,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#nextIndex()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int NextIndex()
         {
@@ -273,7 +256,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previousIndex()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int PreviousIndex()
         {

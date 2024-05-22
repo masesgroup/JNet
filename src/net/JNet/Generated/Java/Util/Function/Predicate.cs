@@ -162,7 +162,6 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Predicate NegateDefault()
@@ -186,7 +185,6 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="NegateDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.Predicate Negate()
@@ -279,7 +277,6 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         public override Java.Util.Function.Predicate Negate()
         {
@@ -328,7 +325,6 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         Java.Util.Function.Predicate<T> Negate();
         /// <summary>
@@ -489,7 +485,6 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Predicate<T> NegateDefault()
@@ -513,7 +508,6 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="NegateDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.Predicate<T> Negate()
@@ -609,7 +603,6 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         public override Java.Util.Function.Predicate<T> Negate()
         {

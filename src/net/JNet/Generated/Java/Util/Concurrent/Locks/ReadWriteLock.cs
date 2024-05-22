@@ -35,13 +35,11 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReadWriteLock.html#readLock()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
         Java.Util.Concurrent.Locks.Lock ReadLock();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReadWriteLock.html#writeLock()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
         Java.Util.Concurrent.Locks.Lock WriteLock();
 
@@ -78,7 +76,6 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReadWriteLock.html#readLock()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
         public Java.Util.Concurrent.Locks.Lock ReadLock()
         {
@@ -87,7 +84,6 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReadWriteLock.html#writeLock()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
         public Java.Util.Concurrent.Locks.Lock WriteLock()
         {

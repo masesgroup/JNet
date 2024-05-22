@@ -86,7 +86,6 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#isDelegated()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsDelegated()
         {

@@ -461,7 +461,6 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#isInherited()"/>
             /// </summary>
-
             /// <returns><see cref="bool"/></returns>
             public bool IsInherited()
             {

@@ -74,7 +74,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#redirectErrorStream()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool RedirectErrorStream()
         {
@@ -83,7 +82,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#directory()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Io.File"/></returns>
         public Java.Io.File Directory()
         {
@@ -92,7 +90,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#start()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.Process"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.Process Start()
@@ -129,7 +126,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#inheritIO()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.ProcessBuilder"/></returns>
         public Java.Lang.ProcessBuilder InheritIO()
         {
@@ -201,7 +197,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#redirectError()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.ProcessBuilder.Redirect"/></returns>
         public Java.Lang.ProcessBuilder.Redirect RedirectError()
         {
@@ -210,7 +205,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#redirectInput()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.ProcessBuilder.Redirect"/></returns>
         public Java.Lang.ProcessBuilder.Redirect RedirectInput()
         {
@@ -219,7 +213,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#redirectOutput()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.ProcessBuilder.Redirect"/></returns>
         public Java.Lang.ProcessBuilder.Redirect RedirectOutput()
         {
@@ -228,7 +221,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#command()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Java.Lang.String> Command()
         {
@@ -237,7 +229,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#environment()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Map"/></returns>
         public Java.Util.Map<Java.Lang.String, Java.Lang.String> Environment()
         {
@@ -315,7 +306,6 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.html#file()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Io.File"/></returns>
             public Java.Io.File File()
             {

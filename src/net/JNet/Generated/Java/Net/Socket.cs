@@ -259,7 +259,6 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#isBound()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsBound()
         {
@@ -268,7 +267,6 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#isClosed()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsClosed()
         {
@@ -277,7 +275,6 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#isConnected()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsConnected()
         {
@@ -286,7 +283,6 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#isInputShutdown()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsInputShutdown()
         {
@@ -295,7 +291,6 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#isOutputShutdown()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsOutputShutdown()
         {
@@ -304,7 +299,6 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#supportedOptions()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Net.SocketOption<object>> SupportedOptions()
         {
@@ -313,7 +307,6 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#close()"/>
         /// </summary>
-
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
@@ -379,7 +372,6 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#shutdownInput()"/>
         /// </summary>
-
         /// <exception cref="Java.Io.IOException"/>
         public void ShutdownInput()
         {
@@ -388,7 +380,6 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#shutdownOutput()"/>
         /// </summary>
-
         /// <exception cref="Java.Io.IOException"/>
         public void ShutdownOutput()
         {

@@ -39,7 +39,6 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#isDone()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsDone();
         /// <summary>
@@ -141,7 +140,6 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#isDone()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsDone()
         {

@@ -60,7 +60,6 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#open()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Nio.Channels.SocketChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.SocketChannel Open()
@@ -108,7 +107,6 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#finishConnect()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public bool FinishConnect()
@@ -118,7 +116,6 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#isConnected()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsConnected()
         {
@@ -127,7 +124,6 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#isConnectionPending()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsConnectionPending()
         {
@@ -156,7 +152,6 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#socket()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Net.Socket"/></returns>
         public Java.Net.Socket Socket()
         {
@@ -165,7 +160,6 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#shutdownInput()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Nio.Channels.SocketChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.SocketChannel ShutdownInput()
@@ -175,7 +169,6 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#shutdownOutput()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Nio.Channels.SocketChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.SocketChannel ShutdownOutput()

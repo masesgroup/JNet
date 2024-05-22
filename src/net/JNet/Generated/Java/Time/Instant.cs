@@ -87,7 +87,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#now()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public static Java.Time.Instant Now()
         {
@@ -398,7 +397,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#toEpochMilli()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long ToEpochMilli()
         {

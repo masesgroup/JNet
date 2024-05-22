@@ -56,7 +56,6 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#enqueue()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool Enqueue()
         {
@@ -65,7 +64,6 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#isEnqueued()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsEnqueued()
         {
@@ -74,7 +72,6 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#get()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object Get()
         {
@@ -133,7 +130,6 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#enqueue()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool Enqueue()
         {
@@ -142,7 +138,6 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#isEnqueued()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsEnqueued()
         {
@@ -151,7 +146,6 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#get()"/>
         /// </summary>
-
         /// <returns><typeparamref name="T"/></returns>
         public T Get()
         {

@@ -64,7 +64,6 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAccumulator.html#get()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long Get()
         {

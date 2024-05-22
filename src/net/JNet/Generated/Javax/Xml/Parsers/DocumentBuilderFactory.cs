@@ -44,7 +44,6 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#newDefaultInstance()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Parsers.DocumentBuilderFactory"/></returns>
         public static Javax.Xml.Parsers.DocumentBuilderFactory NewDefaultInstance()
         {
@@ -53,7 +52,6 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#newInstance()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Parsers.DocumentBuilderFactory"/></returns>
         public static Javax.Xml.Parsers.DocumentBuilderFactory NewInstance()
         {
@@ -103,7 +101,6 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#newDocumentBuilder()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Parsers.DocumentBuilder"/></returns>
         /// <exception cref="Javax.Xml.Parsers.ParserConfigurationException"/>
         public Javax.Xml.Parsers.DocumentBuilder NewDocumentBuilder()
@@ -133,7 +130,6 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isCoalescing()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsCoalescing()
         {
@@ -142,7 +138,6 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isExpandEntityReferences()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsExpandEntityReferences()
         {
@@ -151,7 +146,6 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isIgnoringComments()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsIgnoringComments()
         {
@@ -160,7 +154,6 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isIgnoringElementContentWhitespace()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsIgnoringElementContentWhitespace()
         {
@@ -169,7 +162,6 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isNamespaceAware()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsNamespaceAware()
         {
@@ -178,7 +170,6 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isValidating()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsValidating()
         {
@@ -187,7 +178,6 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isXIncludeAware()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsXIncludeAware()
         {

@@ -178,7 +178,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#hasNext()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasNext()
         {
@@ -205,7 +204,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#hasNextBigDecimal()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasNextBigDecimal()
         {
@@ -214,7 +212,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#hasNextBigInteger()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasNextBigInteger()
         {
@@ -232,7 +229,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#hasNextBoolean()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasNextBoolean()
         {
@@ -241,7 +237,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#hasNextByte()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasNextByte()
         {
@@ -259,7 +254,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#hasNextDouble()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasNextDouble()
         {
@@ -268,7 +262,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#hasNextFloat()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasNextFloat()
         {
@@ -277,7 +270,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#hasNextInt()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasNextInt()
         {
@@ -295,7 +287,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#hasNextLine()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasNextLine()
         {
@@ -304,7 +295,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#hasNextLong()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasNextLong()
         {
@@ -322,7 +312,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#hasNextShort()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasNextShort()
         {
@@ -340,7 +329,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#nextBoolean()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool NextBoolean()
         {
@@ -349,7 +337,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#nextByte()"/>
         /// </summary>
-
         /// <returns><see cref="byte"/></returns>
         public byte NextByte()
         {
@@ -367,7 +354,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#nextDouble()"/>
         /// </summary>
-
         /// <returns><see cref="double"/></returns>
         public double NextDouble()
         {
@@ -376,7 +362,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#nextFloat()"/>
         /// </summary>
-
         /// <returns><see cref="float"/></returns>
         public float NextFloat()
         {
@@ -385,7 +370,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#nextInt()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int NextInt()
         {
@@ -403,7 +387,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#radix()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int Radix()
         {
@@ -412,7 +395,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#ioException()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Io.IOException"/></returns>
         public Java.Io.IOException IoException()
         {
@@ -421,7 +403,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#next()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object Next()
         {
@@ -486,7 +467,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#nextLine()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String NextLine()
         {
@@ -495,7 +475,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#nextBigDecimal()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal NextBigDecimal()
         {
@@ -504,7 +483,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#nextBigInteger()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger NextBigInteger()
         {
@@ -522,7 +500,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#locale()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Locale"/></returns>
         public Java.Util.Locale Locale()
         {
@@ -531,7 +508,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#match()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Regex.MatchResult"/></returns>
         public Java.Util.Regex.MatchResult Match()
         {
@@ -540,7 +516,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#delimiter()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Regex.Pattern"/></returns>
         public Java.Util.Regex.Pattern Delimiter()
         {
@@ -549,7 +524,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#reset()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Scanner"/></returns>
         public Java.Util.Scanner Reset()
         {
@@ -612,7 +586,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#tokens()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Java.Lang.String> Tokens()
         {
@@ -639,7 +612,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#nextLong()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long NextLong()
         {
@@ -657,7 +629,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#nextShort()"/>
         /// </summary>
-
         /// <returns><see cref="short"/></returns>
         public short NextShort()
         {

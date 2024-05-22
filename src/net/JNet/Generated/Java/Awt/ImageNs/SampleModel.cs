@@ -129,7 +129,6 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#createDataBuffer()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Awt.ImageNs.DataBuffer"/></returns>
         public Java.Awt.ImageNs.DataBuffer CreateDataBuffer()
         {

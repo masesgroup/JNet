@@ -109,7 +109,6 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#isFixed()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsFixed()
         {
@@ -118,7 +117,6 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#isIntValue()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsIntValue()
         {

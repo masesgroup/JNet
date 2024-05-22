@@ -89,7 +89,6 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#values()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.Format.TextStyle"/></returns>
         public static Java.Time.Format.TextStyle[] Values()
         {
@@ -102,7 +101,6 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#isStandalone()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsStandalone()
         {
@@ -111,7 +109,6 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#asNormal()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.Format.TextStyle"/></returns>
         public Java.Time.Format.TextStyle AsNormal()
         {
@@ -120,7 +117,6 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#asStandalone()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.Format.TextStyle"/></returns>
         public Java.Time.Format.TextStyle AsStandalone()
         {

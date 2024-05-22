@@ -98,7 +98,6 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanAttributeInfo.html#isIs()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsIs()
         {
@@ -107,7 +106,6 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanAttributeInfo.html#isReadable()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsReadable()
         {
@@ -116,7 +114,6 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanAttributeInfo.html#isWritable()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsWritable()
         {

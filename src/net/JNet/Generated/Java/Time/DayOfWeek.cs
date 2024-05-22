@@ -121,7 +121,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#values()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.DayOfWeek"/></returns>
         public static Java.Time.DayOfWeek[] Values()
         {

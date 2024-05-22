@@ -145,7 +145,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#interrupted()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public static bool Interrupted()
         {
@@ -154,7 +153,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#activeCount()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public static int ActiveCount()
         {
@@ -181,7 +179,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#currentThread()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.Thread"/></returns>
         public static Java.Lang.Thread CurrentThread()
         {
@@ -283,7 +280,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#isInterrupted()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsInterrupted()
         {
@@ -292,7 +288,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#isDaemon()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsDaemon()
         {
@@ -301,7 +296,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#isAlive()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsAlive()
         {
@@ -336,7 +330,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#join()"/>
         /// </summary>
-
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Join()
         {
@@ -439,7 +432,6 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#values()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Lang.Thread.State"/></returns>
             public static Java.Lang.Thread.State[] Values()
             {

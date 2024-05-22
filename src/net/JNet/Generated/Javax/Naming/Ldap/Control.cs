@@ -43,7 +43,6 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Control.html#isCritical()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsCritical();
 
@@ -106,7 +105,6 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Control.html#isCritical()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsCritical()
         {

@@ -114,7 +114,6 @@ namespace Javax.Tools
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.DocumentationTask.html#call()"/>
             /// </summary>
-
             /// <returns><see cref="object"/></returns>
             /// <exception cref="Java.Lang.Exception"/>
             public object Call()
@@ -178,7 +177,6 @@ namespace Javax.Tools
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#values()"/>
             /// </summary>
-
             /// <returns><see cref="Javax.Tools.DocumentationTool.Location"/></returns>
             public static Javax.Tools.DocumentationTool.Location[] Values()
             {
@@ -198,7 +196,6 @@ namespace Javax.Tools
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#isOutputLocation()"/>
             /// </summary>
-
             /// <returns><see cref="bool"/></returns>
             public bool IsOutputLocation()
             {

@@ -128,7 +128,6 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isAltDown()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsAltDown()
         {
@@ -137,7 +136,6 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isAltGraphDown()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsAltGraphDown()
         {
@@ -146,7 +144,6 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isConsumed()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsConsumed()
         {
@@ -155,7 +152,6 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isControlDown()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsControlDown()
         {
@@ -164,7 +160,6 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isMetaDown()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsMetaDown()
         {
@@ -173,7 +168,6 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isShiftDown()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsShiftDown()
         {

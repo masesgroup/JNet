@@ -44,7 +44,6 @@ namespace Java.Nio.File.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#installedProviders()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Java.Nio.File.Spi.FileSystemProvider> InstalledProviders()
         {

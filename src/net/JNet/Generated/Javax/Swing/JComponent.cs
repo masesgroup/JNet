@@ -231,7 +231,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#isOptimizedDrawingEnabled()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsOptimizedDrawingEnabled()
         {
@@ -240,7 +239,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#isPaintingTile()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsPaintingTile()
         {
@@ -249,7 +247,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#isRequestFocusEnabled()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsRequestFocusEnabled()
         {
@@ -267,7 +264,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#isPaintingForPrint()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsPaintingForPrint()
         {
@@ -375,7 +371,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#createToolTip()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Swing.JToolTip"/></returns>
         public Javax.Swing.JToolTip CreateToolTip()
         {

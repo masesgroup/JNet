@@ -39,13 +39,11 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#isInputClosed()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsInputClosed();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#isOutputClosed()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsOutputClosed();
         /// <summary>
@@ -137,7 +135,6 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#isInputClosed()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsInputClosed()
         {
@@ -146,7 +143,6 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#isOutputClosed()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsOutputClosed()
         {

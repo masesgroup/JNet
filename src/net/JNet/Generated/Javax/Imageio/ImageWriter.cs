@@ -184,7 +184,6 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#canReplaceStreamMetadata()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public bool CanReplaceStreamMetadata()
@@ -194,7 +193,6 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#canWriteEmpty()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public bool CanWriteEmpty()
@@ -204,7 +202,6 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#canWriteRasters()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool CanWriteRasters()
         {
@@ -213,7 +210,6 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#canWriteSequence()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool CanWriteSequence()
         {
@@ -276,7 +272,6 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#endInsertEmpty()"/>
         /// </summary>
-
         /// <exception cref="Java.Io.IOException"/>
         public void EndInsertEmpty()
         {
@@ -285,7 +280,6 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#endReplacePixels()"/>
         /// </summary>
-
         /// <exception cref="Java.Io.IOException"/>
         public void EndReplacePixels()
         {
@@ -294,7 +288,6 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#endWriteEmpty()"/>
         /// </summary>
-
         /// <exception cref="Java.Io.IOException"/>
         public void EndWriteEmpty()
         {
@@ -303,7 +296,6 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#endWriteSequence()"/>
         /// </summary>
-
         /// <exception cref="Java.Io.IOException"/>
         public void EndWriteSequence()
         {

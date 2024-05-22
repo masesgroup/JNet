@@ -79,7 +79,6 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#isReadOnly()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsReadOnly();
         /// <summary>
@@ -90,13 +89,11 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#clearParameters()"/>
         /// </summary>
-
         /// <exception cref="Java.Sql.SQLException"/>
         void ClearParameters();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#execute()"/>
         /// </summary>
-
         /// <exception cref="Java.Sql.SQLException"/>
         void Execute();
         /// <summary>
@@ -856,7 +853,6 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#isReadOnly()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsReadOnly()
         {
@@ -873,7 +869,6 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#clearParameters()"/>
         /// </summary>
-
         /// <exception cref="Java.Sql.SQLException"/>
         public void ClearParameters()
         {
@@ -882,7 +877,6 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#execute()"/>
         /// </summary>
-
         /// <exception cref="Java.Sql.SQLException"/>
         public void Execute()
         {

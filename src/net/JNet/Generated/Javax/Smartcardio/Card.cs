@@ -80,7 +80,6 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#openLogicalChannel()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Smartcardio.CardChannel"/></returns>
         /// <exception cref="Javax.Smartcardio.CardException"/>
         public Javax.Smartcardio.CardChannel OpenLogicalChannel()
@@ -90,7 +89,6 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#beginExclusive()"/>
         /// </summary>
-
         /// <exception cref="Javax.Smartcardio.CardException"/>
         public void BeginExclusive()
         {
@@ -108,7 +106,6 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#endExclusive()"/>
         /// </summary>
-
         /// <exception cref="Javax.Smartcardio.CardException"/>
         public void EndExclusive()
         {

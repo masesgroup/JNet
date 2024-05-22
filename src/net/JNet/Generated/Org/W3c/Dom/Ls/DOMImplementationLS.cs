@@ -35,13 +35,11 @@ namespace Org.W3c.Dom.Ls
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/DOMImplementationLS.html#createLSInput()"/>
         /// </summary>
-
         /// <returns><see cref="Org.W3c.Dom.Ls.LSInput"/></returns>
         Org.W3c.Dom.Ls.LSInput CreateLSInput();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/DOMImplementationLS.html#createLSOutput()"/>
         /// </summary>
-
         /// <returns><see cref="Org.W3c.Dom.Ls.LSOutput"/></returns>
         Org.W3c.Dom.Ls.LSOutput CreateLSOutput();
         /// <summary>
@@ -55,7 +53,6 @@ namespace Org.W3c.Dom.Ls
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/DOMImplementationLS.html#createLSSerializer()"/>
         /// </summary>
-
         /// <returns><see cref="Org.W3c.Dom.Ls.LSSerializer"/></returns>
         Org.W3c.Dom.Ls.LSSerializer CreateLSSerializer();
 
@@ -104,7 +101,6 @@ namespace Org.W3c.Dom.Ls
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/DOMImplementationLS.html#createLSInput()"/>
         /// </summary>
-
         /// <returns><see cref="Org.W3c.Dom.Ls.LSInput"/></returns>
         public Org.W3c.Dom.Ls.LSInput CreateLSInput()
         {
@@ -113,7 +109,6 @@ namespace Org.W3c.Dom.Ls
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/DOMImplementationLS.html#createLSOutput()"/>
         /// </summary>
-
         /// <returns><see cref="Org.W3c.Dom.Ls.LSOutput"/></returns>
         public Org.W3c.Dom.Ls.LSOutput CreateLSOutput()
         {
@@ -133,7 +128,6 @@ namespace Org.W3c.Dom.Ls
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/DOMImplementationLS.html#createLSSerializer()"/>
         /// </summary>
-
         /// <returns><see cref="Org.W3c.Dom.Ls.LSSerializer"/></returns>
         public Org.W3c.Dom.Ls.LSSerializer CreateLSSerializer()
         {

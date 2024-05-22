@@ -47,7 +47,6 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#createShardingKeyBuilder()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Sql.ShardingKeyBuilder"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Sql.ShardingKeyBuilder CreateShardingKeyBuilder();
@@ -106,7 +105,6 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#createShardingKeyBuilder()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Sql.ShardingKeyBuilder"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ShardingKeyBuilder CreateShardingKeyBuilder()

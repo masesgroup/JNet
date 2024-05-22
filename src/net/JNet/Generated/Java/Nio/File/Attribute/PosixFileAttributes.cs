@@ -35,19 +35,16 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributes.html#group()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Nio.File.Attribute.GroupPrincipal"/></returns>
         Java.Nio.File.Attribute.GroupPrincipal Group();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributes.html#owner()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Nio.File.Attribute.UserPrincipal"/></returns>
         Java.Nio.File.Attribute.UserPrincipal Owner();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributes.html#permissions()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Set"/></returns>
         Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission> Permissions();
 
@@ -84,7 +81,6 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributes.html#group()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Nio.File.Attribute.GroupPrincipal"/></returns>
         public Java.Nio.File.Attribute.GroupPrincipal Group()
         {
@@ -93,7 +89,6 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributes.html#owner()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Nio.File.Attribute.UserPrincipal"/></returns>
         public Java.Nio.File.Attribute.UserPrincipal Owner()
         {
@@ -102,7 +97,6 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributes.html#permissions()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission> Permissions()
         {

@@ -48,7 +48,6 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/MappedByteBuffer.html#isLoaded()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsLoaded()
         {
@@ -57,7 +56,6 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/MappedByteBuffer.html#force()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Nio.MappedByteBuffer"/></returns>
         public Java.Nio.MappedByteBuffer Force()
         {
@@ -66,7 +64,6 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/MappedByteBuffer.html#load()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Nio.MappedByteBuffer"/></returns>
         public Java.Nio.MappedByteBuffer Load()
         {

@@ -48,7 +48,6 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedAction.html#run()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object Run()
         {
@@ -75,7 +74,6 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedAction.html#run()"/>
         /// </summary>
-
         /// <returns><typeparamref name="T"/></returns>
         T Run();
 
@@ -116,7 +114,6 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedAction.html#run()"/>
         /// </summary>
-
         /// <returns><typeparamref name="T"/></returns>
         public T Run()
         {

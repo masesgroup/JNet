@@ -444,7 +444,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isEditable()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsEditable()
         {
@@ -453,7 +452,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isEditing()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsEditing()
         {
@@ -480,7 +478,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isFixedRowHeight()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsFixedRowHeight()
         {
@@ -489,7 +486,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isLargeModel()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsLargeModel()
         {
@@ -516,7 +512,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isRootVisible()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsRootVisible()
         {
@@ -534,7 +529,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isSelectionEmpty()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsSelectionEmpty()
         {
@@ -552,7 +546,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#stopEditing()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool StopEditing()
         {

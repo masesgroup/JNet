@@ -125,7 +125,6 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#isAutomatic()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsAutomatic()
         {
@@ -134,7 +133,6 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#isOpen()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsOpen()
         {
@@ -161,7 +159,6 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#name()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
         {
@@ -170,7 +167,6 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#toNameAndVersion()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToNameAndVersion()
         {
@@ -179,7 +175,6 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#version()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<Java.Lang.ModuleNs.ModuleDescriptor.Version> VersionMethod()
         {
@@ -188,7 +183,6 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#mainClass()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<Java.Lang.String> MainClass()
         {
@@ -197,7 +191,6 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#rawVersion()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<Java.Lang.String> RawVersion()
         {
@@ -206,7 +199,6 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#exports()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Exports> ExportsMethod()
         {
@@ -215,7 +207,6 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#modifiers()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Modifier> Modifiers()
         {
@@ -224,7 +215,6 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#opens()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Opens> OpensMethod()
         {
@@ -233,7 +223,6 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#provides()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Provides> ProvidesMethod()
         {
@@ -242,7 +231,6 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#requires()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Requires> RequiresMethod()
         {
@@ -251,7 +239,6 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#packages()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.String> Packages()
         {
@@ -260,7 +247,6 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#uses()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.String> Uses()
         {
@@ -293,7 +279,6 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#build()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor"/></returns>
             public Java.Lang.ModuleNs.ModuleDescriptor Build()
             {
@@ -534,7 +519,6 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.html#isQualified()"/>
             /// </summary>
-
             /// <returns><see cref="bool"/></returns>
             public bool IsQualified()
             {
@@ -561,7 +545,6 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.html#source()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Lang.String"/></returns>
             public Java.Lang.String Source()
             {
@@ -570,7 +553,6 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.html#modifiers()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Util.Set"/></returns>
             public Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier> Modifiers()
             {
@@ -579,7 +561,6 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.html#targets()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Util.Set"/></returns>
             public Java.Util.Set<Java.Lang.String> Targets()
             {
@@ -629,7 +610,6 @@ namespace Java.Lang.ModuleNs
                 /// <summary>
                 /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.Modifier.html#values()"/>
                 /// </summary>
-
                 /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier"/></returns>
                 public static Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier[] Values()
                 {
@@ -709,7 +689,6 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html#values()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Modifier"/></returns>
             public static Java.Lang.ModuleNs.ModuleDescriptor.Modifier[] Values()
             {
@@ -753,7 +732,6 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.html#isQualified()"/>
             /// </summary>
-
             /// <returns><see cref="bool"/></returns>
             public bool IsQualified()
             {
@@ -780,7 +758,6 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.html#source()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Lang.String"/></returns>
             public Java.Lang.String Source()
             {
@@ -789,7 +766,6 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.html#modifiers()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Util.Set"/></returns>
             public Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier> Modifiers()
             {
@@ -798,7 +774,6 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.html#targets()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Util.Set"/></returns>
             public Java.Util.Set<Java.Lang.String> Targets()
             {
@@ -848,7 +823,6 @@ namespace Java.Lang.ModuleNs
                 /// <summary>
                 /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.Modifier.html#values()"/>
                 /// </summary>
-
                 /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier"/></returns>
                 public static Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier[] Values()
                 {
@@ -917,7 +891,6 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Provides.html#service()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Lang.String"/></returns>
             public Java.Lang.String Service()
             {
@@ -926,7 +899,6 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Provides.html#providers()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Util.List"/></returns>
             public Java.Util.List<Java.Lang.String> Providers()
             {
@@ -984,7 +956,6 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.html#name()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Lang.String"/></returns>
             public Java.Lang.String Name()
             {
@@ -993,7 +964,6 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.html#compiledVersion()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Util.Optional"/></returns>
             public Java.Util.Optional<Java.Lang.ModuleNs.ModuleDescriptor.Version> CompiledVersion()
             {
@@ -1002,7 +972,6 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.html#rawCompiledVersion()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Util.Optional"/></returns>
             public Java.Util.Optional<Java.Lang.String> RawCompiledVersion()
             {
@@ -1011,7 +980,6 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.html#modifiers()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Util.Set"/></returns>
             public Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier> Modifiers()
             {
@@ -1073,7 +1041,6 @@ namespace Java.Lang.ModuleNs
                 /// <summary>
                 /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.Modifier.html#values()"/>
                 /// </summary>
-
                 /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier"/></returns>
                 public static Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier[] Values()
                 {

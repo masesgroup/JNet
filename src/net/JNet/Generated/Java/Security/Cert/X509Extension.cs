@@ -43,7 +43,6 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html#hasUnsupportedCriticalExtension()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool HasUnsupportedCriticalExtension();
         /// <summary>
@@ -100,7 +99,6 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html#hasUnsupportedCriticalExtension()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasUnsupportedCriticalExtension()
         {

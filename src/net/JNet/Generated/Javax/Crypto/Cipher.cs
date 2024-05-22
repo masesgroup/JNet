@@ -188,7 +188,6 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#doFinal()"/>
         /// </summary>
-
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Javax.Crypto.IllegalBlockSizeException"/>
         /// <exception cref="Javax.Crypto.BadPaddingException"/>

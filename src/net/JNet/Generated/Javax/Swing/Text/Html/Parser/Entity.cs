@@ -107,7 +107,6 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Entity.html#isGeneral()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsGeneral()
         {
@@ -116,7 +115,6 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Entity.html#isParameter()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsParameter()
         {

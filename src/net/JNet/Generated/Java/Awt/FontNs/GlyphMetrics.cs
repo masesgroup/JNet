@@ -149,7 +149,6 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#isCombining()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsCombining()
         {
@@ -158,7 +157,6 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#isComponent()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsComponent()
         {
@@ -167,7 +165,6 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#isLigature()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsLigature()
         {
@@ -176,7 +173,6 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#isStandard()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsStandard()
         {
@@ -185,7 +181,6 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#isWhitespace()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsWhitespace()
         {

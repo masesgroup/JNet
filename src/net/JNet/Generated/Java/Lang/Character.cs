@@ -1222,7 +1222,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#charValue()"/>
         /// </summary>
-
         /// <returns><see cref="char"/></returns>
         public char CharValue()
         {
@@ -3917,7 +3916,6 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#values()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Lang.Character.UnicodeScript"/></returns>
             public static Java.Lang.Character.UnicodeScript[] Values()
             {

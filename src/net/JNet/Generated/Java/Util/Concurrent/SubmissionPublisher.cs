@@ -106,7 +106,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#hasSubscribers()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasSubscribers()
         {
@@ -115,7 +114,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#isClosed()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsClosed()
         {
@@ -133,7 +131,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#estimateMaximumLag()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int EstimateMaximumLag()
         {
@@ -182,7 +179,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#estimateMinimumDemand()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long EstimateMinimumDemand()
         {
@@ -307,7 +303,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#hasSubscribers()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasSubscribers()
         {
@@ -316,7 +311,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#isClosed()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsClosed()
         {
@@ -335,7 +329,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#estimateMaximumLag()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int EstimateMaximumLag()
         {
@@ -387,7 +380,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#estimateMinimumDemand()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long EstimateMinimumDemand()
         {

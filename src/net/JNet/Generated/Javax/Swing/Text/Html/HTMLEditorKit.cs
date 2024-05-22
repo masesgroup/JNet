@@ -158,7 +158,6 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#isAutoFormSubmission()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsAutoFormSubmission()
         {
@@ -396,7 +395,6 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.ParserCallback.html#flush()"/>
             /// </summary>
-
             /// <exception cref="Javax.Swing.Text.BadLocationException"/>
             public void Flush()
             {

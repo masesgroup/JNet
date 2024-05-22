@@ -35,7 +35,6 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntSupplier.html#getAsInt()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         int GetAsInt();
 
@@ -94,7 +93,6 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntSupplier.html#getAsInt()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public virtual int GetAsInt()
         {

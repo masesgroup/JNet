@@ -44,7 +44,6 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#newDefaultFactory()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Stream.XMLEventFactory"/></returns>
         public static Javax.Xml.Stream.XMLEventFactory NewDefaultFactory()
         {
@@ -53,7 +52,6 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#newFactory()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Stream.XMLEventFactory"/></returns>
         /// <exception cref="Javax.Xml.Stream.FactoryConfigurationError"/>
         public static Javax.Xml.Stream.XMLEventFactory NewFactory()
@@ -74,7 +72,6 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#newInstance()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Stream.XMLEventFactory"/></returns>
         /// <exception cref="Javax.Xml.Stream.FactoryConfigurationError"/>
         public static Javax.Xml.Stream.XMLEventFactory NewInstance()
@@ -174,7 +171,6 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#createEndDocument()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Stream.Events.EndDocument"/></returns>
         public Javax.Xml.Stream.Events.EndDocument CreateEndDocument()
         {
@@ -257,7 +253,6 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#createStartDocument()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Stream.Events.StartDocument"/></returns>
         public Javax.Xml.Stream.Events.StartDocument CreateStartDocument()
         {

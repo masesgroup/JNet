@@ -53,7 +53,6 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#defaultCharset()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Nio.Charset.Charset"/></returns>
         public static Java.Nio.Charset.Charset DefaultCharset()
         {
@@ -71,7 +70,6 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#availableCharsets()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
         public static Java.Util.SortedMap<Java.Lang.String, Java.Nio.Charset.Charset> AvailableCharsets()
         {
@@ -93,7 +91,6 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#newDecoder()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Nio.Charset.CharsetDecoder"/></returns>
         public Java.Nio.Charset.CharsetDecoder NewDecoder()
         {
@@ -102,7 +99,6 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#newEncoder()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Nio.Charset.CharsetEncoder"/></returns>
         public Java.Nio.Charset.CharsetEncoder NewEncoder()
         {
@@ -111,7 +107,6 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#canEncode()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool CanEncode()
         {
@@ -120,7 +115,6 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#isRegistered()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsRegistered()
         {
@@ -138,7 +132,6 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#name()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
         {
@@ -174,7 +167,6 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#aliases()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.String> Aliases()
         {
@@ -192,7 +184,6 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#displayName()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String DisplayName()
         {

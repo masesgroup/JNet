@@ -162,7 +162,6 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialClob.html#length()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
         public long Length()
@@ -196,7 +195,6 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialClob.html#free()"/>
         /// </summary>
-
         /// <exception cref="Java.Sql.SQLException"/>
         public void Free()
         {

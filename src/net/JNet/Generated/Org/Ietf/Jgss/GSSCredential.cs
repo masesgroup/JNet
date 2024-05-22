@@ -89,7 +89,6 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#dispose()"/>
         /// </summary>
-
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         void Dispose();
 
@@ -237,7 +236,6 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#dispose()"/>
         /// </summary>
-
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public new void Dispose()
         {

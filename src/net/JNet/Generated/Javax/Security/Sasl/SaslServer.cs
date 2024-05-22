@@ -43,7 +43,6 @@ namespace Javax.Security.Sasl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#isComplete()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsComplete();
         /// <summary>
@@ -80,7 +79,6 @@ namespace Javax.Security.Sasl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#dispose()"/>
         /// </summary>
-
         /// <exception cref="Javax.Security.Sasl.SaslException"/>
         void Dispose();
 
@@ -131,7 +129,6 @@ namespace Javax.Security.Sasl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#isComplete()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsComplete()
         {
@@ -183,7 +180,6 @@ namespace Javax.Security.Sasl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#dispose()"/>
         /// </summary>
-
         /// <exception cref="Javax.Security.Sasl.SaslException"/>
         public new void Dispose()
         {

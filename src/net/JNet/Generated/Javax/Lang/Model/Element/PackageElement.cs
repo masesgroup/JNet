@@ -51,7 +51,6 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/PackageElement.html#isUnnamed()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsUnnamed();
 
@@ -124,7 +123,6 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/PackageElement.html#isUnnamed()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsUnnamed()
         {

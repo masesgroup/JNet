@@ -69,7 +69,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#now()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.YearMonth"/></returns>
         public static Java.Time.YearMonth Now()
         {
@@ -188,7 +187,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#isLeapYear()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsLeapYear()
         {
@@ -251,7 +249,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#lengthOfMonth()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int LengthOfMonth()
         {
@@ -260,7 +257,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#lengthOfYear()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int LengthOfYear()
         {
@@ -287,7 +283,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#atEndOfMonth()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.LocalDate"/></returns>
         public Java.Time.LocalDate AtEndOfMonth()
         {

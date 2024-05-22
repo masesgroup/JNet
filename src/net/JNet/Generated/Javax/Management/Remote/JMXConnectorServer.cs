@@ -108,7 +108,6 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServer.html#preDeregister()"/>
         /// </summary>
-
         /// <exception cref="Java.Lang.Exception"/>
         public void PreDeregister()
         {

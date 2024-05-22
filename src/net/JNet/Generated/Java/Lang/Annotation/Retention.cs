@@ -35,7 +35,6 @@ namespace Java.Lang.Annotation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Retention.html#value()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.Annotation.RetentionPolicy"/></returns>
         Java.Lang.Annotation.RetentionPolicy Value();
 
@@ -72,7 +71,6 @@ namespace Java.Lang.Annotation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Retention.html#value()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.Annotation.RetentionPolicy"/></returns>
         public Java.Lang.Annotation.RetentionPolicy Value()
         {

@@ -51,19 +51,16 @@ namespace Java.Lang.Instrument
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isNativeMethodPrefixSupported()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsNativeMethodPrefixSupported();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isRedefineClassesSupported()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsRedefineClassesSupported();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isRetransformClassesSupported()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsRetransformClassesSupported();
         /// <summary>
@@ -193,7 +190,6 @@ namespace Java.Lang.Instrument
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isNativeMethodPrefixSupported()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsNativeMethodPrefixSupported()
         {
@@ -202,7 +198,6 @@ namespace Java.Lang.Instrument
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isRedefineClassesSupported()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsRedefineClassesSupported()
         {
@@ -211,7 +206,6 @@ namespace Java.Lang.Instrument
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isRetransformClassesSupported()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsRetransformClassesSupported()
         {

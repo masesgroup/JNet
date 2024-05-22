@@ -35,7 +35,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#isEnabled()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsEnabled();
         /// <summary>
@@ -139,7 +138,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#isEnabled()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public virtual bool IsEnabled()
         {
@@ -342,7 +340,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#isEnabled()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public override bool IsEnabled()
         {

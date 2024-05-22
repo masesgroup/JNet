@@ -365,7 +365,6 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationService.html#isActive()"/>
         /// </summary>
-
         /// <exception cref="Javax.Management.Relation.RelationServiceNotRegisteredException"/>
         public void IsActive()
         {
@@ -389,7 +388,6 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationService.html#preDeregister()"/>
         /// </summary>
-
         /// <exception cref="Java.Lang.Exception"/>
         public void PreDeregister()
         {
@@ -398,7 +396,6 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationService.html#purgeRelations()"/>
         /// </summary>
-
         /// <exception cref="Javax.Management.Relation.RelationServiceNotRegisteredException"/>
         public void PurgeRelations()
         {

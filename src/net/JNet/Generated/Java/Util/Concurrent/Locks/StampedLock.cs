@@ -91,7 +91,6 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#isReadLocked()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsReadLocked()
         {
@@ -100,7 +99,6 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#isWriteLocked()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsWriteLocked()
         {
@@ -109,7 +107,6 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#tryUnlockRead()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool TryUnlockRead()
         {
@@ -118,7 +115,6 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#tryUnlockWrite()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool TryUnlockWrite()
         {
@@ -136,7 +132,6 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#asReadLock()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
         public Java.Util.Concurrent.Locks.Lock AsReadLock()
         {
@@ -145,7 +140,6 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#asWriteLock()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
         public Java.Util.Concurrent.Locks.Lock AsWriteLock()
         {
@@ -154,7 +148,6 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#asReadWriteLock()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Concurrent.Locks.ReadWriteLock"/></returns>
         public Java.Util.Concurrent.Locks.ReadWriteLock AsReadWriteLock()
         {
@@ -163,7 +156,6 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#readLock()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long ReadLock()
         {
@@ -172,7 +164,6 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#readLockInterruptibly()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public long ReadLockInterruptibly()
@@ -209,7 +200,6 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#tryOptimisticRead()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long TryOptimisticRead()
         {
@@ -218,7 +208,6 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#tryReadLock()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long TryReadLock()
         {
@@ -238,7 +227,6 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#tryWriteLock()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long TryWriteLock()
         {
@@ -258,7 +246,6 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#writeLock()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long WriteLock()
         {
@@ -267,7 +254,6 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#writeLockInterruptibly()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public long WriteLockInterruptibly()

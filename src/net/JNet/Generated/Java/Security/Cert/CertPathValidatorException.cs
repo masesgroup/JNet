@@ -119,7 +119,6 @@ namespace Java.Security.Cert
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#values()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Security.Cert.CertPathValidatorException.BasicReason"/></returns>
             public static Java.Security.Cert.CertPathValidatorException.BasicReason[] Values()
             {

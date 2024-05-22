@@ -214,7 +214,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#ioException()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Io.IOException"/></returns>
         public Java.Io.IOException IoException()
         {
@@ -223,7 +222,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#out()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.Appendable"/></returns>
         public Java.Lang.Appendable Out()
         {
@@ -253,7 +251,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#locale()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Locale"/></returns>
         public Java.Util.Locale Locale()
         {
@@ -317,7 +314,6 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.BigDecimalLayoutForm.html#values()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Util.Formatter.BigDecimalLayoutForm"/></returns>
             public static Java.Util.Formatter.BigDecimalLayoutForm[] Values()
             {

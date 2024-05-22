@@ -247,7 +247,6 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Encoder.html#withoutPadding()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Util.Base64.Encoder"/></returns>
             public Java.Util.Base64.Encoder WithoutPadding()
             {

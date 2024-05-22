@@ -96,7 +96,6 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#isAntiAliased()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsAntiAliased()
         {
@@ -105,7 +104,6 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#isTransformed()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsTransformed()
         {
@@ -114,7 +112,6 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#usesFractionalMetrics()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool UsesFractionalMetrics()
         {

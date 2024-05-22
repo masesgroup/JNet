@@ -393,7 +393,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#desiredAssertionStatus()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool DesiredAssertionStatus()
         {
@@ -402,7 +401,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isAnnotation()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsAnnotation()
         {
@@ -420,7 +418,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isAnonymousClass()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsAnonymousClass()
         {
@@ -429,7 +426,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isEnum()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsEnum()
         {
@@ -438,7 +434,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isLocalClass()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsLocalClass()
         {
@@ -447,7 +442,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isMemberClass()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsMemberClass()
         {
@@ -465,7 +459,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isSynthetic()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsSynthetic()
         {
@@ -551,7 +544,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#toGenericString()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToGenericString()
         {
@@ -569,7 +561,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isArray()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsArray()
         {
@@ -596,7 +587,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isInterface()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsInterface()
         {
@@ -605,7 +595,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isPrimitive()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsPrimitive()
         {
@@ -1009,7 +998,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#desiredAssertionStatus()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool DesiredAssertionStatus()
         {
@@ -1018,7 +1006,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isAnnotation()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsAnnotation()
         {
@@ -1036,7 +1023,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isAnonymousClass()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsAnonymousClass()
         {
@@ -1045,7 +1031,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isEnum()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsEnum()
         {
@@ -1054,7 +1039,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isLocalClass()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsLocalClass()
         {
@@ -1063,7 +1047,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isMemberClass()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsMemberClass()
         {
@@ -1081,7 +1064,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isSynthetic()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsSynthetic()
         {
@@ -1167,7 +1149,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#toGenericString()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToGenericString()
         {
@@ -1185,7 +1166,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isArray()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsArray()
         {
@@ -1212,7 +1192,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isInterface()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsInterface()
         {
@@ -1221,7 +1200,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isPrimitive()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsPrimitive()
         {

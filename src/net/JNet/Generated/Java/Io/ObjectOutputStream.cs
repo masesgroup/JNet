@@ -74,7 +74,6 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html#putFields()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Io.ObjectOutputStream.PutField"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Io.ObjectOutputStream.PutField PutFields()
@@ -84,7 +83,6 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html#defaultWriteObject()"/>
         /// </summary>
-
         /// <exception cref="Java.Io.IOException"/>
         public void DefaultWriteObject()
         {
@@ -93,7 +91,6 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html#reset()"/>
         /// </summary>
-
         /// <exception cref="Java.Io.IOException"/>
         public void Reset()
         {
@@ -165,7 +162,6 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html#writeFields()"/>
         /// </summary>
-
         /// <exception cref="Java.Io.IOException"/>
         public void WriteFields()
         {

@@ -223,7 +223,6 @@ namespace Javax.Imageio.Metadata
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#hasAttributes()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasAttributes()
         {
@@ -232,7 +231,6 @@ namespace Javax.Imageio.Metadata
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#hasChildNodes()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasChildNodes()
         {

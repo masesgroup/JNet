@@ -43,13 +43,11 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html#endCDATA()"/>
         /// </summary>
-
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         void EndCDATA();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html#endDTD()"/>
         /// </summary>
-
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         void EndDTD();
         /// <summary>
@@ -61,7 +59,6 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html#startCDATA()"/>
         /// </summary>
-
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         void StartCDATA();
         /// <summary>
@@ -123,7 +120,6 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html#endCDATA()"/>
         /// </summary>
-
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndCDATA()
         {
@@ -132,7 +128,6 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html#endDTD()"/>
         /// </summary>
-
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndDTD()
         {
@@ -150,7 +145,6 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html#startCDATA()"/>
         /// </summary>
-
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void StartCDATA()
         {
