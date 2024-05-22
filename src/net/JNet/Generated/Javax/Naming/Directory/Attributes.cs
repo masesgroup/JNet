@@ -43,13 +43,11 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#isCaseIgnored()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsCaseIgnored();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#size()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         int Size();
         /// <summary>
@@ -133,7 +131,6 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#isCaseIgnored()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsCaseIgnored()
         {
@@ -142,7 +139,6 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#size()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int Size()
         {

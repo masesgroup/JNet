@@ -81,7 +81,6 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#order()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Nio.ByteOrder"/></returns>
         public Java.Nio.ByteOrder Order()
         {
@@ -90,7 +89,6 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#asReadOnlyBuffer()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
         public Java.Nio.ShortBuffer AsReadOnlyBuffer()
         {
@@ -99,7 +97,6 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#compact()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
         public Java.Nio.ShortBuffer Compact()
         {
@@ -127,7 +124,6 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#get()"/>
         /// </summary>
-
         /// <returns><see cref="short"/></returns>
         public short Get()
         {

@@ -52,7 +52,6 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.html#iterator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator Iterator()
         {
@@ -165,7 +164,6 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.html#iterator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         Java.Util.Iterator<T> Iterator();
 
@@ -210,7 +208,6 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.html#iterator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<T> Iterator()
         {

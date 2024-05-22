@@ -58,7 +58,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#isDispatchThread()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public static bool IsDispatchThread()
         {
@@ -96,7 +95,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#peekEvent()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Awt.AWTEvent"/></returns>
         public Java.Awt.AWTEvent PeekEvent()
         {
@@ -114,7 +112,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#createSecondaryLoop()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Awt.SecondaryLoop"/></returns>
         public Java.Awt.SecondaryLoop CreateSecondaryLoop()
         {

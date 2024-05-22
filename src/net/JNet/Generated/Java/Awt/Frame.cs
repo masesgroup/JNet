@@ -157,7 +157,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#isResizable()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsResizable()
         {
@@ -166,7 +165,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#isUndecorated()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsUndecorated()
         {

@@ -90,7 +90,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Year.html#now()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.Year"/></returns>
         public static Java.Time.Year Now()
         {
@@ -184,7 +183,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Year.html#isLeap()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsLeap()
         {
@@ -247,7 +245,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Year.html#length()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int Length()
         {

@@ -200,7 +200,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#isModal()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsModal()
         {
@@ -209,7 +208,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#isResizable()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsResizable()
         {
@@ -218,7 +216,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#isUndecorated()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsUndecorated()
         {
@@ -306,7 +303,6 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalExclusionType.html#values()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Awt.Dialog.ModalExclusionType"/></returns>
             public static Java.Awt.Dialog.ModalExclusionType[] Values()
             {
@@ -379,7 +375,6 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalityType.html#values()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Awt.Dialog.ModalityType"/></returns>
             public static Java.Awt.Dialog.ModalityType[] Values()
             {

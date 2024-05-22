@@ -71,7 +71,6 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#systemRoot()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
         public static Java.Util.Prefs.Preferences SystemRoot()
         {
@@ -89,7 +88,6 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#userRoot()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
         public static Java.Util.Prefs.Preferences UserRoot()
         {
@@ -122,7 +120,6 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#isUserNode()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsUserNode()
         {
@@ -181,7 +178,6 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#absolutePath()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String AbsolutePath()
         {
@@ -200,7 +196,6 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#name()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
         {
@@ -209,7 +204,6 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#childrenNames()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Util.Prefs.BackingStoreException"/>
         public Java.Lang.String[] ChildrenNames()
@@ -219,7 +213,6 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#keys()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Util.Prefs.BackingStoreException"/>
         public Java.Lang.String[] Keys()
@@ -238,7 +231,6 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#parent()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
         public Java.Util.Prefs.Preferences Parent()
         {
@@ -273,7 +265,6 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#clear()"/>
         /// </summary>
-
         /// <exception cref="Java.Util.Prefs.BackingStoreException"/>
         public void Clear()
         {
@@ -302,7 +293,6 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#flush()"/>
         /// </summary>
-
         /// <exception cref="Java.Util.Prefs.BackingStoreException"/>
         public void Flush()
         {
@@ -382,7 +372,6 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#removeNode()"/>
         /// </summary>
-
         /// <exception cref="Java.Util.Prefs.BackingStoreException"/>
         public void RemoveNode()
         {
@@ -407,7 +396,6 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#sync()"/>
         /// </summary>
-
         /// <exception cref="Java.Util.Prefs.BackingStoreException"/>
         public void Sync()
         {

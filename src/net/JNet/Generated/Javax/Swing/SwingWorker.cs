@@ -78,7 +78,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#isCancelled()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsCancelled()
         {
@@ -87,7 +86,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#isDone()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsDone()
         {
@@ -96,7 +94,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#get()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
@@ -207,7 +204,6 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.StateValue.html#values()"/>
             /// </summary>
-
             /// <returns><see cref="Javax.Swing.SwingWorker.StateValue"/></returns>
             public static Javax.Swing.SwingWorker.StateValue[] Values()
             {
@@ -292,7 +288,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#isCancelled()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsCancelled()
         {
@@ -301,7 +296,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#isDone()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsDone()
         {
@@ -310,7 +304,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#get()"/>
         /// </summary>
-
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>

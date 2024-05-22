@@ -95,7 +95,6 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameterGenerator.html#generateParameters()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Security.AlgorithmParameters"/></returns>
         public Java.Security.AlgorithmParameters GenerateParameters()
         {

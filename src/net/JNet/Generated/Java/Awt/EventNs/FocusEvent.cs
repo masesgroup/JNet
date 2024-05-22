@@ -128,7 +128,6 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#isTemporary()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsTemporary()
         {
@@ -232,7 +231,6 @@ namespace Java.Awt.EventNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#values()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Awt.EventNs.FocusEvent.Cause"/></returns>
             public static Java.Awt.EventNs.FocusEvent.Cause[] Values()
             {

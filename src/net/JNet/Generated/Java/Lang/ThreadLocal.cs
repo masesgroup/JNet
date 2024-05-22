@@ -57,7 +57,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadLocal.html#get()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object Get()
         {
@@ -127,7 +126,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadLocal.html#get()"/>
         /// </summary>
-
         /// <returns><typeparamref name="T"/></returns>
         public T Get()
         {

@@ -50,7 +50,6 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#newDefaultFactory()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Stream.XMLOutputFactory"/></returns>
         public static Javax.Xml.Stream.XMLOutputFactory NewDefaultFactory()
         {
@@ -59,7 +58,6 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#newFactory()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Stream.XMLOutputFactory"/></returns>
         /// <exception cref="Javax.Xml.Stream.FactoryConfigurationError"/>
         public static Javax.Xml.Stream.XMLOutputFactory NewFactory()
@@ -80,7 +78,6 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#newInstance()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Stream.XMLOutputFactory"/></returns>
         /// <exception cref="Javax.Xml.Stream.FactoryConfigurationError"/>
         public static Javax.Xml.Stream.XMLOutputFactory NewInstance()

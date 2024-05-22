@@ -67,7 +67,6 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#isOpen()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsOpen();
         /// <summary>
@@ -77,7 +76,6 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#open()"/>
         /// </summary>
-
         /// <exception cref="Javax.Sound.Midi.MidiUnavailableException"/>
         void Open();
 
@@ -170,7 +168,6 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#isOpen()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsOpen()
         {
@@ -186,7 +183,6 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#open()"/>
         /// </summary>
-
         /// <exception cref="Javax.Sound.Midi.MidiUnavailableException"/>
         public void Open()
         {

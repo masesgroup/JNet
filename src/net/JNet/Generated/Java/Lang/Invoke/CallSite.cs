@@ -55,7 +55,6 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/CallSite.html#dynamicInvoker()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public Java.Lang.Invoke.MethodHandle DynamicInvoker()
         {
@@ -64,7 +63,6 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/CallSite.html#type()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public Java.Lang.Invoke.MethodType Type()
         {

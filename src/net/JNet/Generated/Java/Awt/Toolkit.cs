@@ -282,7 +282,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#areExtraMouseButtonsEnabled()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public bool AreExtraMouseButtonsEnabled()
@@ -302,7 +301,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#isAlwaysOnTopSupported()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsAlwaysOnTopSupported()
         {
@@ -311,7 +309,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#isDynamicLayoutActive()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public bool IsDynamicLayoutActive()

@@ -66,7 +66,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#element()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object Element()
         {
@@ -75,7 +74,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#peek()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object Peek()
         {
@@ -84,7 +82,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#poll()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object Poll()
         {
@@ -93,7 +90,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#remove()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object Remove()
         {
@@ -132,25 +128,21 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#element()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         E Element();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#peek()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         E Peek();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#poll()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         E Poll();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#remove()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         E Remove();
 
@@ -209,7 +201,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#element()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E Element()
         {
@@ -218,7 +209,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#peek()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E Peek()
         {
@@ -227,7 +217,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#poll()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E Poll()
         {
@@ -236,7 +225,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#remove()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E Remove()
         {

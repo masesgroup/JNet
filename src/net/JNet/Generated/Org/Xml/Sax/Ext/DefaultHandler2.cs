@@ -120,7 +120,6 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#endCDATA()"/>
         /// </summary>
-
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndCDATA()
         {
@@ -129,7 +128,6 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#endDTD()"/>
         /// </summary>
-
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndDTD()
         {
@@ -168,7 +166,6 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#startCDATA()"/>
         /// </summary>
-
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void StartCDATA()
         {

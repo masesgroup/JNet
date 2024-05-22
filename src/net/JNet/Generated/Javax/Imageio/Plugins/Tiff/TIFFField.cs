@@ -239,7 +239,6 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#hasDirectory()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasDirectory()
         {
@@ -248,7 +247,6 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#isIntegral()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsIntegral()
         {
@@ -311,7 +309,6 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#clone()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Imageio.Plugins.Tiff.TIFFField"/></returns>
         /// <exception cref="Java.Lang.CloneNotSupportedException"/>
         public Javax.Imageio.Plugins.Tiff.TIFFField Clone()

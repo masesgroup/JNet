@@ -72,7 +72,6 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html#isValid()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsValid()
         {
@@ -81,7 +80,6 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html#interestOps()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int InterestOps()
         {
@@ -90,7 +88,6 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html#readyOps()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int ReadyOps()
         {
@@ -99,7 +96,6 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html#channel()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Nio.Channels.SelectableChannel"/></returns>
         public Java.Nio.Channels.SelectableChannel Channel()
         {
@@ -117,7 +113,6 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html#selector()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Nio.Channels.Selector"/></returns>
         public Java.Nio.Channels.Selector Selector()
         {
@@ -133,7 +128,6 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html#isAcceptable()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsAcceptable()
         {
@@ -142,7 +136,6 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html#isConnectable()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsConnectable()
         {
@@ -151,7 +144,6 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html#isReadable()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsReadable()
         {
@@ -160,7 +152,6 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html#isWritable()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsWritable()
         {
@@ -178,7 +169,6 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html#attachment()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object Attachment()
         {

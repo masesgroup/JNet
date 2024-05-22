@@ -106,7 +106,6 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFileFormat.html#properties()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Map"/></returns>
         public Java.Util.Map<Java.Lang.String, object> Properties()
         {

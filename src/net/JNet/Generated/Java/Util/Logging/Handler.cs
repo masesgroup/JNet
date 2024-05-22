@@ -83,7 +83,6 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#close()"/>
         /// </summary>
-
         /// <exception cref="Java.Lang.SecurityException"/>
         public void Close()
         {

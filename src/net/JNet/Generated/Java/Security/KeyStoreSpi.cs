@@ -75,7 +75,6 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineSize()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int EngineSize()
         {
@@ -132,7 +131,6 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineAliases()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<Java.Lang.String> EngineAliases()
         {

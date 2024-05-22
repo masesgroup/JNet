@@ -55,13 +55,11 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#isOpen()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsOpen();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#isUnnamed()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsUnnamed();
 
@@ -141,7 +139,6 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#isOpen()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsOpen()
         {
@@ -150,7 +147,6 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#isUnnamed()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsUnnamed()
         {
@@ -268,7 +264,6 @@ namespace Javax.Lang.Model.Element
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#values()"/>
             /// </summary>
-
             /// <returns><see cref="Javax.Lang.Model.Element.ModuleElement.DirectiveKind"/></returns>
             public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind[] Values()
             {
@@ -678,7 +673,6 @@ namespace Javax.Lang.Model.Element
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.RequiresDirective.html#isStatic()"/>
             /// </summary>
-
             /// <returns><see cref="bool"/></returns>
             public bool IsStatic()
             {
@@ -687,7 +681,6 @@ namespace Javax.Lang.Model.Element
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.RequiresDirective.html#isTransitive()"/>
             /// </summary>
-
             /// <returns><see cref="bool"/></returns>
             public bool IsTransitive()
             {

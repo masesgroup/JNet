@@ -69,7 +69,6 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/StandardProtocolFamily.html#values()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Net.StandardProtocolFamily"/></returns>
         public static Java.Net.StandardProtocolFamily[] Values()
         {

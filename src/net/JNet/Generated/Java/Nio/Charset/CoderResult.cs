@@ -78,7 +78,6 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#isError()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsError()
         {
@@ -87,7 +86,6 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#isMalformed()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsMalformed()
         {
@@ -96,7 +94,6 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#isOverflow()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsOverflow()
         {
@@ -105,7 +102,6 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#isUnderflow()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsUnderflow()
         {
@@ -114,7 +110,6 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#isUnmappable()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsUnmappable()
         {
@@ -123,7 +118,6 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#length()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int Length()
         {
@@ -132,7 +126,6 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#throwException()"/>
         /// </summary>
-
         /// <exception cref="Java.Nio.Charset.CharacterCodingException"/>
         public void ThrowException()
         {

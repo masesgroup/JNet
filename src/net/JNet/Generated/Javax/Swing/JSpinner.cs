@@ -110,7 +110,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.html#commitEdit()"/>
         /// </summary>
-
         /// <exception cref="Java.Text.ParseException"/>
         public void CommitEdit()
         {
@@ -282,7 +281,6 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#commitEdit()"/>
             /// </summary>
-
             /// <exception cref="Java.Text.ParseException"/>
             public void CommitEdit()
             {

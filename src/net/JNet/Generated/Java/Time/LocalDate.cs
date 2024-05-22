@@ -78,7 +78,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#now()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.LocalDate"/></returns>
         public static Java.Time.LocalDate Now()
         {
@@ -272,7 +271,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#isLeapYear()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsLeapYear()
         {
@@ -326,7 +324,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#lengthOfMonth()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int LengthOfMonth()
         {
@@ -335,7 +332,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#lengthOfYear()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int LengthOfYear()
         {
@@ -479,7 +475,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#atStartOfDay()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.LocalDateTime"/></returns>
         public Java.Time.LocalDateTime AtStartOfDay()
         {
@@ -585,7 +580,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#toEpochDay()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long ToEpochDay()
         {

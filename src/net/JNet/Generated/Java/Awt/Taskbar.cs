@@ -51,7 +51,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#isTaskbarSupported()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public static bool IsTaskbarSupported()
         {
@@ -236,7 +235,6 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#values()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Awt.Taskbar.Feature"/></returns>
             public static Java.Awt.Taskbar.Feature[] Values()
             {
@@ -315,7 +313,6 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#values()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Awt.Taskbar.State"/></returns>
             public static Java.Awt.Taskbar.State[] Values()
             {

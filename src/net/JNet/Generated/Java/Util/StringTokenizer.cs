@@ -75,7 +75,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#hasMoreElements()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasMoreElements()
         {
@@ -84,7 +83,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#hasMoreTokens()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasMoreTokens()
         {
@@ -93,7 +91,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#countTokens()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int CountTokens()
         {
@@ -102,7 +99,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#nextElement()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object NextElement()
         {
@@ -111,7 +107,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#nextToken()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String NextToken()
         {

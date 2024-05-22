@@ -204,7 +204,6 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#isVisible()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsVisible()
         {

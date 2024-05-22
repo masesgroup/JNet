@@ -35,7 +35,6 @@ namespace Java.Lang.Annotation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Target.html#value()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.Annotation.ElementType"/></returns>
         Java.Lang.Annotation.ElementType[] Value();
 
@@ -72,7 +71,6 @@ namespace Java.Lang.Annotation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Target.html#value()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.Annotation.ElementType"/></returns>
         public Java.Lang.Annotation.ElementType[] Value()
         {

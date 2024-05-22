@@ -35,13 +35,11 @@ namespace Javax.Security.Auth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Refreshable.html#isCurrent()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsCurrent();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Refreshable.html#refresh()"/>
         /// </summary>
-
         /// <exception cref="Javax.Security.Auth.RefreshFailedException"/>
         void Refresh();
 
@@ -78,7 +76,6 @@ namespace Javax.Security.Auth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Refreshable.html#isCurrent()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsCurrent()
         {
@@ -87,7 +84,6 @@ namespace Javax.Security.Auth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Refreshable.html#refresh()"/>
         /// </summary>
-
         /// <exception cref="Javax.Security.Auth.RefreshFailedException"/>
         public void Refresh()
         {

@@ -116,13 +116,11 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#close()"/>
         /// </summary>
-
         /// <exception cref="Java.Io.IOException"/>
         void Close();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#flush()"/>
         /// </summary>
-
         /// <exception cref="Java.Io.IOException"/>
         void Flush();
         /// <summary>
@@ -329,7 +327,6 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#close()"/>
         /// </summary>
-
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
@@ -338,7 +335,6 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#flush()"/>
         /// </summary>
-
         /// <exception cref="Java.Io.IOException"/>
         public void Flush()
         {
@@ -443,7 +439,6 @@ namespace Javax.Tools
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.Location.html#isOutputLocation()"/>
             /// </summary>
-
             /// <returns><see cref="bool"/></returns>
             public bool IsOutputLocation()
             {
@@ -452,7 +447,6 @@ namespace Javax.Tools
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.Location.html#isModuleOrientedLocation()"/>
             /// </summary>
-
             /// <returns><see cref="bool"/></returns>
             public bool IsModuleOrientedLocation()
             {

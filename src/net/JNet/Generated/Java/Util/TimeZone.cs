@@ -146,7 +146,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#useDaylightTime()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool UseDaylightTime()
         {
@@ -178,7 +177,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#observesDaylightTime()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool ObservesDaylightTime()
         {
@@ -226,7 +224,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#toZoneId()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.ZoneId"/></returns>
         public Java.Time.ZoneId ToZoneId()
         {

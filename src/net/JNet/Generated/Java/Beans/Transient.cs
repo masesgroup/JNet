@@ -35,7 +35,6 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Transient.html#value()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool Value();
 
@@ -72,7 +71,6 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Transient.html#value()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool Value()
         {

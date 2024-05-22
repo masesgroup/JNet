@@ -166,7 +166,6 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#finished()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool Finished()
         {
@@ -175,7 +174,6 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#needsInput()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool NeedsInput()
         {

@@ -55,43 +55,36 @@ namespace Org.W3c.Dom.Traversal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html#firstChild()"/>
         /// </summary>
-
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         Org.W3c.Dom.Node FirstChild();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html#lastChild()"/>
         /// </summary>
-
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         Org.W3c.Dom.Node LastChild();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html#nextNode()"/>
         /// </summary>
-
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         Org.W3c.Dom.Node NextNode();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html#nextSibling()"/>
         /// </summary>
-
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         Org.W3c.Dom.Node NextSibling();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html#parentNode()"/>
         /// </summary>
-
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         Org.W3c.Dom.Node ParentNode();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html#previousNode()"/>
         /// </summary>
-
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         Org.W3c.Dom.Node PreviousNode();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html#previousSibling()"/>
         /// </summary>
-
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         Org.W3c.Dom.Node PreviousSibling();
 
@@ -163,7 +156,6 @@ namespace Org.W3c.Dom.Traversal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html#firstChild()"/>
         /// </summary>
-
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         public Org.W3c.Dom.Node FirstChild()
         {
@@ -172,7 +164,6 @@ namespace Org.W3c.Dom.Traversal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html#lastChild()"/>
         /// </summary>
-
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         public Org.W3c.Dom.Node LastChild()
         {
@@ -181,7 +172,6 @@ namespace Org.W3c.Dom.Traversal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html#nextNode()"/>
         /// </summary>
-
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         public Org.W3c.Dom.Node NextNode()
         {
@@ -190,7 +180,6 @@ namespace Org.W3c.Dom.Traversal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html#nextSibling()"/>
         /// </summary>
-
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         public Org.W3c.Dom.Node NextSibling()
         {
@@ -199,7 +188,6 @@ namespace Org.W3c.Dom.Traversal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html#parentNode()"/>
         /// </summary>
-
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         public Org.W3c.Dom.Node ParentNode()
         {
@@ -208,7 +196,6 @@ namespace Org.W3c.Dom.Traversal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html#previousNode()"/>
         /// </summary>
-
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         public Org.W3c.Dom.Node PreviousNode()
         {
@@ -217,7 +204,6 @@ namespace Org.W3c.Dom.Traversal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html#previousSibling()"/>
         /// </summary>
-
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         public Org.W3c.Dom.Node PreviousSibling()
         {

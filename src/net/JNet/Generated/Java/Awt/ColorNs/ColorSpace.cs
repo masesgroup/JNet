@@ -287,7 +287,6 @@ namespace Java.Awt.ColorNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#isCS_sRGB()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsCS_sRGB()
         {

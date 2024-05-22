@@ -56,7 +56,6 @@ namespace Javax.Xml.Datatype
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#newDefaultInstance()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Datatype.DatatypeFactory"/></returns>
         public static Javax.Xml.Datatype.DatatypeFactory NewDefaultInstance()
         {
@@ -65,7 +64,6 @@ namespace Javax.Xml.Datatype
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#newInstance()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Datatype.DatatypeFactory"/></returns>
         /// <exception cref="Javax.Xml.Datatype.DatatypeConfigurationException"/>
         public static Javax.Xml.Datatype.DatatypeFactory NewInstance()
@@ -123,7 +121,6 @@ namespace Javax.Xml.Datatype
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#newXMLGregorianCalendar()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Datatype.XMLGregorianCalendar"/></returns>
         public Javax.Xml.Datatype.XMLGregorianCalendar NewXMLGregorianCalendar()
         {

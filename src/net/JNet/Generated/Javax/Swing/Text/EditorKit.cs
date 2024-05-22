@@ -77,7 +77,6 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/EditorKit.html#createCaret()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Swing.Text.Caret"/></returns>
         public Javax.Swing.Text.Caret CreateCaret()
         {
@@ -86,7 +85,6 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/EditorKit.html#createDefaultDocument()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Swing.Text.Document"/></returns>
         public Javax.Swing.Text.Document CreateDefaultDocument()
         {

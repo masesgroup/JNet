@@ -85,7 +85,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#elements()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration Elements()
         {
@@ -112,7 +111,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#firstElement()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object FirstElement()
         {
@@ -121,7 +119,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#lastElement()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object LastElement()
         {
@@ -130,7 +127,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#capacity()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int Capacity()
         {
@@ -303,7 +299,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#elements()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<E> Elements()
         {
@@ -330,7 +325,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#firstElement()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E FirstElement()
         {
@@ -339,7 +333,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#lastElement()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E LastElement()
         {
@@ -348,7 +341,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#capacity()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int Capacity()
         {

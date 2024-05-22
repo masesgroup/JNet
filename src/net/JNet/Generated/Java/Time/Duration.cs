@@ -189,7 +189,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#isNegative()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsNegative()
         {
@@ -198,7 +197,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#isZero()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsZero()
         {
@@ -225,7 +223,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toHoursPart()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int ToHoursPart()
         {
@@ -234,7 +231,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toMillisPart()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int ToMillisPart()
         {
@@ -243,7 +239,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toMinutesPart()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int ToMinutesPart()
         {
@@ -252,7 +247,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toNanosPart()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int ToNanosPart()
         {
@@ -261,7 +255,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toSecondsPart()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int ToSecondsPart()
         {
@@ -270,7 +263,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#abs()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public Java.Time.Duration Abs()
         {
@@ -370,7 +362,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#negated()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public Java.Time.Duration Negated()
         {
@@ -515,7 +506,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toDays()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long ToDays()
         {
@@ -524,7 +514,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toDaysPart()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long ToDaysPart()
         {
@@ -533,7 +522,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toHours()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long ToHours()
         {
@@ -542,7 +530,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toMillis()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long ToMillis()
         {
@@ -551,7 +538,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toMinutes()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long ToMinutes()
         {
@@ -560,7 +546,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toNanos()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long ToNanos()
         {
@@ -569,7 +554,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toSeconds()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long ToSeconds()
         {

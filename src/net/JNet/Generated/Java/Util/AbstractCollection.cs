@@ -57,7 +57,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#size()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
@@ -66,7 +65,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#iterator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator Iterator()
         {
@@ -111,7 +109,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#isEmpty()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
@@ -147,7 +144,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#toArray()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
@@ -208,7 +204,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#size()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
@@ -217,7 +212,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#iterator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<E> Iterator()
         {
@@ -263,7 +257,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#isEmpty()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
@@ -299,7 +292,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#toArray()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {

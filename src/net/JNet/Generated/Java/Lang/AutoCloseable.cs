@@ -35,7 +35,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/AutoCloseable.html#close()"/>
         /// </summary>
-
         /// <exception cref="Java.Lang.Exception"/>
         void Close();
 
@@ -72,7 +71,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/AutoCloseable.html#close()"/>
         /// </summary>
-
         /// <exception cref="Java.Lang.Exception"/>
         public void Close()
         {

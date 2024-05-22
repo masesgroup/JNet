@@ -63,14 +63,12 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SeekableByteChannel.html#position()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         long Position();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SeekableByteChannel.html#size()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         long Size();
@@ -148,7 +146,6 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SeekableByteChannel.html#position()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public long Position()
@@ -158,7 +155,6 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SeekableByteChannel.html#size()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public long Size()

@@ -196,7 +196,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isActive()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsActive()
         {
@@ -205,7 +204,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isAlwaysOnTopSupported()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsAlwaysOnTopSupported()
         {
@@ -214,7 +212,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isAutoRequestFocus()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsAutoRequestFocus()
         {
@@ -223,7 +220,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isFocused()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsFocused()
         {
@@ -232,7 +228,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isLocationByPlatform()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsLocationByPlatform()
         {
@@ -241,7 +236,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isAlwaysOnTop()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsAlwaysOnTop()
         {
@@ -250,7 +244,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isFocusableWindow()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsFocusableWindow()
         {
@@ -449,7 +442,6 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.Type.html#values()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Awt.Window.Type"/></returns>
             public static Java.Awt.Window.Type[] Values()
             {

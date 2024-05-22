@@ -35,7 +35,6 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ConnectionBuilder.html#build()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Sql.Connection"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Sql.Connection Build();
@@ -97,7 +96,6 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ConnectionBuilder.html#build()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Sql.Connection"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Connection Build()

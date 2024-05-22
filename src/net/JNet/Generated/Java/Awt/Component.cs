@@ -433,7 +433,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#hasFocus()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasFocus()
         {
@@ -456,7 +455,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isBackgroundSet()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsBackgroundSet()
         {
@@ -465,7 +463,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isCursorSet()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsCursorSet()
         {
@@ -474,7 +471,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isDisplayable()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsDisplayable()
         {
@@ -483,7 +479,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isDoubleBuffered()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsDoubleBuffered()
         {
@@ -492,7 +487,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isEnabled()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsEnabled()
         {
@@ -501,7 +495,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isFocusable()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsFocusable()
         {
@@ -519,7 +512,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isFocusOwner()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsFocusOwner()
         {
@@ -528,7 +520,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isFontSet()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsFontSet()
         {
@@ -537,7 +528,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isForegroundSet()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsForegroundSet()
         {
@@ -546,7 +536,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isLightweight()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsLightweight()
         {
@@ -555,7 +544,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isMaximumSizeSet()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsMaximumSizeSet()
         {
@@ -564,7 +552,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isMinimumSizeSet()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsMinimumSizeSet()
         {
@@ -573,7 +560,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isOpaque()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsOpaque()
         {
@@ -582,7 +568,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isPreferredSizeSet()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsPreferredSizeSet()
         {
@@ -591,7 +576,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isShowing()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsShowing()
         {
@@ -600,7 +584,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isValid()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsValid()
         {
@@ -609,7 +592,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isVisible()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsVisible()
         {
@@ -640,7 +622,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#requestFocusInWindow()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool RequestFocusInWindow()
         {
@@ -1403,7 +1384,6 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#values()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Awt.Component.BaselineResizeBehavior"/></returns>
             public static Java.Awt.Component.BaselineResizeBehavior[] Values()
             {

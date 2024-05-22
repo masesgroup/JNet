@@ -35,7 +35,6 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/MatchResult.html#end()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         int End();
         /// <summary>
@@ -47,13 +46,11 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/MatchResult.html#groupCount()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         int GroupCount();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/MatchResult.html#start()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         int Start();
         /// <summary>
@@ -65,7 +62,6 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/MatchResult.html#group()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.String"/></returns>
         Java.Lang.String Group();
         /// <summary>
@@ -108,7 +104,6 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/MatchResult.html#end()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int End()
         {
@@ -126,7 +121,6 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/MatchResult.html#groupCount()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int GroupCount()
         {
@@ -135,7 +129,6 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/MatchResult.html#start()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int Start()
         {
@@ -153,7 +146,6 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/MatchResult.html#group()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Group()
         {

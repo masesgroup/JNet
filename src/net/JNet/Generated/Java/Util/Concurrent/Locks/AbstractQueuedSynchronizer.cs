@@ -83,7 +83,6 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#hasContended()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasContended()
         {
@@ -92,7 +91,6 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#hasQueuedPredecessors()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasQueuedPredecessors()
         {
@@ -101,7 +99,6 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#hasQueuedThreads()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasQueuedThreads()
         {
@@ -300,7 +297,6 @@ namespace Java.Util.Concurrent.Locks
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.ConditionObject.html#await()"/>
             /// </summary>
-
             /// <exception cref="Java.Lang.InterruptedException"/>
             public void Await()
             {

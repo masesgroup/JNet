@@ -113,13 +113,11 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#isRecording()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsRecording();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#isRunning()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsRunning();
         /// <summary>
@@ -365,7 +363,6 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#isRecording()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsRecording()
         {
@@ -374,7 +371,6 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#isRunning()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsRunning()
         {

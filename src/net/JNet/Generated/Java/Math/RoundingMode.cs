@@ -110,7 +110,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html#values()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Math.RoundingMode"/></returns>
         public static Java.Math.RoundingMode[] Values()
         {

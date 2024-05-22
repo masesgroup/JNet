@@ -447,7 +447,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#counting()"/>
         /// </summary>
-
         /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Lang.Long> Counting<T>()
@@ -490,7 +489,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toList()"/>
         /// </summary>
-
         /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Util.List<T>> ToList<T>()
@@ -500,7 +498,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toUnmodifiableList()"/>
         /// </summary>
-
         /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Util.List<T>> ToUnmodifiableList<T>()
@@ -542,7 +539,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toSet()"/>
         /// </summary>
-
         /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Util.Set<T>> ToSet<T>()
@@ -552,7 +548,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toUnmodifiableSet()"/>
         /// </summary>
-
         /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Util.Set<T>> ToUnmodifiableSet<T>()
@@ -573,7 +568,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#joining()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<Java.Lang.CharSequence, object, Java.Lang.String> Joining()
         {

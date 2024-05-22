@@ -240,7 +240,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#byteValueExact()"/>
         /// </summary>
-
         /// <returns><see cref="byte"/></returns>
         public byte ByteValueExact()
         {
@@ -267,7 +266,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#intValueExact()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int IntValueExact()
         {
@@ -276,7 +274,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#precision()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int Precision()
         {
@@ -285,7 +282,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#scale()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int Scale()
         {
@@ -294,7 +290,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#signum()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int Signum()
         {
@@ -303,7 +298,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#toEngineeringString()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToEngineeringString()
         {
@@ -312,7 +306,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#toPlainString()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToPlainString()
         {
@@ -321,7 +314,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#abs()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal Abs()
         {
@@ -472,7 +464,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#negate()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal Negate()
         {
@@ -490,7 +481,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#plus()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal Plus()
         {
@@ -592,7 +582,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#stripTrailingZeros()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal StripTrailingZeros()
         {
@@ -620,7 +609,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#ulp()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal Ulp()
         {
@@ -648,7 +636,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#toBigInteger()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger ToBigInteger()
         {
@@ -657,7 +644,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#toBigIntegerExact()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger ToBigIntegerExact()
         {
@@ -666,7 +652,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#unscaledValue()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger UnscaledValue()
         {
@@ -675,7 +660,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#longValueExact()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long LongValueExact()
         {
@@ -684,7 +668,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#shortValueExact()"/>
         /// </summary>
-
         /// <returns><see cref="short"/></returns>
         public short ShortValueExact()
         {

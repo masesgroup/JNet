@@ -300,7 +300,6 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#values()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Sql.JDBCType"/></returns>
         public static Java.Sql.JDBCType[] Values()
         {

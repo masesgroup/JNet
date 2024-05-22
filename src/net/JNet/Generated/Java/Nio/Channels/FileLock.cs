@@ -48,7 +48,6 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#isValid()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsValid()
         {
@@ -57,7 +56,6 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#release()"/>
         /// </summary>
-
         /// <exception cref="Java.Io.IOException"/>
         public void Release()
         {
@@ -66,7 +64,6 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#isShared()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsShared()
         {
@@ -85,7 +82,6 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#channel()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Nio.Channels.FileChannel"/></returns>
         public Java.Nio.Channels.FileChannel Channel()
         {
@@ -94,7 +90,6 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#position()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long Position()
         {
@@ -103,7 +98,6 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#size()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long Size()
         {
@@ -112,7 +106,6 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#close()"/>
         /// </summary>
-
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
@@ -121,7 +114,6 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#acquiredBy()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Nio.Channels.Channel"/></returns>
         public Java.Nio.Channels.Channel AcquiredBy()
         {

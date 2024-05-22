@@ -101,7 +101,6 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html#toArray()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
@@ -119,7 +118,6 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html#iterator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<Java.Awt.EventNs.InputEvent> Iterator()
         {

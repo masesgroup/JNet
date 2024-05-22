@@ -86,7 +86,6 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#canRedo()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool CanRedo()
         {
@@ -95,7 +94,6 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#canUndo()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool CanUndo()
         {
@@ -104,7 +102,6 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#isSignificant()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsSignificant()
         {
@@ -129,7 +126,6 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#redo()"/>
         /// </summary>
-
         /// <exception cref="Javax.Swing.Undo.CannotRedoException"/>
         public void Redo()
         {
@@ -138,7 +134,6 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#undo()"/>
         /// </summary>
-
         /// <exception cref="Javax.Swing.Undo.CannotUndoException"/>
         public void Undo()
         {

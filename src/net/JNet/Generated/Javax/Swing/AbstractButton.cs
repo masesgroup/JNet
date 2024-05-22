@@ -345,7 +345,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isBorderPainted()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsBorderPainted()
         {
@@ -354,7 +353,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isContentAreaFilled()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsContentAreaFilled()
         {
@@ -363,7 +361,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isFocusPainted()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsFocusPainted()
         {
@@ -372,7 +369,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isRolloverEnabled()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsRolloverEnabled()
         {
@@ -381,7 +377,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isSelected()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsSelected()
         {

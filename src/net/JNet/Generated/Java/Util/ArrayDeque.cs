@@ -135,7 +135,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#element()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object Element()
         {
@@ -144,7 +143,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#peek()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object Peek()
         {
@@ -153,7 +151,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#peekFirst()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object PeekFirst()
         {
@@ -162,7 +159,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#peekLast()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object PeekLast()
         {
@@ -171,7 +167,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#poll()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object Poll()
         {
@@ -180,7 +175,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#pollFirst()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object PollFirst()
         {
@@ -189,7 +183,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#pollLast()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object PollLast()
         {
@@ -198,7 +191,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#pop()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object Pop()
         {
@@ -207,7 +199,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#remove()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object Remove()
         {
@@ -216,7 +207,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#removeFirst()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object RemoveFirst()
         {
@@ -225,7 +215,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#removeLast()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object RemoveLast()
         {
@@ -234,7 +223,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#clone()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.ArrayDeque"/></returns>
         public Java.Util.ArrayDeque Clone()
         {
@@ -243,7 +231,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#descendingIterator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator DescendingIteratorMethod()
         {
@@ -398,7 +385,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#element()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E Element()
         {
@@ -407,7 +393,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#peek()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E Peek()
         {
@@ -416,7 +401,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#peekFirst()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E PeekFirst()
         {
@@ -425,7 +409,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#peekLast()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E PeekLast()
         {
@@ -434,7 +417,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#poll()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E Poll()
         {
@@ -443,7 +425,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#pollFirst()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E PollFirst()
         {
@@ -452,7 +433,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#pollLast()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E PollLast()
         {
@@ -461,7 +441,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#pop()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E Pop()
         {
@@ -470,7 +449,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#remove()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E Remove()
         {
@@ -479,7 +457,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#removeFirst()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E RemoveFirst()
         {
@@ -488,7 +465,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#removeLast()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E RemoveLast()
         {
@@ -497,7 +473,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#clone()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.ArrayDeque"/></returns>
         public Java.Util.ArrayDeque<E> Clone()
         {
@@ -506,7 +481,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#descendingIterator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<E> DescendingIteratorMethod()
         {

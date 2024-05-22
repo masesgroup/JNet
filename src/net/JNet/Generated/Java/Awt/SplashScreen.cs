@@ -76,7 +76,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#isVisible()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsVisible()
         {
@@ -85,7 +84,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#createGraphics()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Awt.Graphics2D"/></returns>
         /// <exception cref="Java.Lang.IllegalStateException"/>
         public Java.Awt.Graphics2D CreateGraphics()
@@ -95,7 +93,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#close()"/>
         /// </summary>
-
         /// <exception cref="Java.Lang.IllegalStateException"/>
         public void Close()
         {
@@ -104,7 +101,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#update()"/>
         /// </summary>
-
         /// <exception cref="Java.Lang.IllegalStateException"/>
         public void Update()
         {

@@ -57,7 +57,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#isEmpty()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
@@ -84,7 +83,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#firstElement()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object FirstElement()
         {
@@ -102,7 +100,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#lastElement()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object LastElement()
         {
@@ -130,7 +127,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#capacity()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int Capacity()
         {
@@ -177,7 +173,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#size()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
@@ -186,7 +181,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#toArray()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
@@ -195,7 +189,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#elements()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration Elements()
         {
@@ -362,7 +355,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#isEmpty()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
@@ -389,7 +381,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#firstElement()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E FirstElement()
         {
@@ -407,7 +398,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#lastElement()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E LastElement()
         {
@@ -435,7 +425,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#capacity()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int Capacity()
         {
@@ -482,7 +471,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#size()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
@@ -491,7 +479,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#toArray()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
@@ -500,7 +487,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#elements()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<E> Elements()
         {

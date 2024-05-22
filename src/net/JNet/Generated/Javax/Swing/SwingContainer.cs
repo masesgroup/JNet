@@ -35,13 +35,11 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingContainer.html#value()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool Value();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingContainer.html#delegate()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.String"/></returns>
         Java.Lang.String Delegate();
 
@@ -78,7 +76,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingContainer.html#value()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool Value()
         {
@@ -87,7 +84,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingContainer.html#delegate()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Delegate()
         {

@@ -74,7 +74,6 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#isEmpty()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
@@ -83,7 +82,6 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#size()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
@@ -130,7 +128,6 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#values()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public Java.Util.Collection<object> Values()
         {
@@ -139,7 +136,6 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#keySet()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.String> KeySet()
         {
@@ -148,7 +144,6 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#entrySet()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Util.Map.Entry<Java.Lang.String, object>> EntrySet()
         {

@@ -48,7 +48,6 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAdder.html#sum()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long Sum()
         {
@@ -57,7 +56,6 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAdder.html#sumThenReset()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long SumThenReset()
         {

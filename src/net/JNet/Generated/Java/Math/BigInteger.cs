@@ -194,7 +194,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#byteValueExact()"/>
         /// </summary>
-
         /// <returns><see cref="byte"/></returns>
         public byte ByteValueExact()
         {
@@ -203,7 +202,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#toByteArray()"/>
         /// </summary>
-
         /// <returns><see cref="byte"/></returns>
         public byte[] ToByteArray()
         {
@@ -212,7 +210,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#bitCount()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int BitCount()
         {
@@ -221,7 +218,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#bitLength()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int BitLength()
         {
@@ -248,7 +244,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#intValueExact()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int IntValueExact()
         {
@@ -257,7 +252,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#signum()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int Signum()
         {
@@ -275,7 +269,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#abs()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Abs()
         {
@@ -402,7 +395,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#negate()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Negate()
         {
@@ -411,7 +403,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#nextProbablePrime()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger NextProbablePrime()
         {
@@ -420,7 +411,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#not()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Not()
         {
@@ -483,7 +473,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#sqrt()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Sqrt()
         {
@@ -519,7 +508,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#sqrtAndRemainder()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger[] SqrtAndRemainder()
         {
@@ -528,7 +516,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#longValueExact()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long LongValueExact()
         {
@@ -537,7 +524,6 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#shortValueExact()"/>
         /// </summary>
-
         /// <returns><see cref="short"/></returns>
         public short ShortValueExact()
         {

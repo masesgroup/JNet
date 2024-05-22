@@ -48,7 +48,6 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html#type()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType"/></returns>
         public Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType Type()
         {
@@ -57,7 +56,6 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html#value()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object Value()
         {
@@ -140,7 +138,6 @@ namespace Javax.Xml.Xpath
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#values()"/>
             /// </summary>
-
             /// <returns><see cref="Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType"/></returns>
             public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType[] Values()
             {
@@ -178,13 +175,11 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html#type()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType"/></returns>
         Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType Type();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html#value()"/>
         /// </summary>
-
         /// <returns><typeparamref name="T"/></returns>
         T Value();
 
@@ -225,7 +220,6 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html#type()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType"/></returns>
         public Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType Type()
         {
@@ -234,7 +228,6 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html#value()"/>
         /// </summary>
-
         /// <returns><typeparamref name="T"/></returns>
         public T Value()
         {

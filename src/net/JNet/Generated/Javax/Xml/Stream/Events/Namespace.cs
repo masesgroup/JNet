@@ -43,7 +43,6 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Namespace.html#isDefaultNamespaceDeclaration()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsDefaultNamespaceDeclaration();
 
@@ -94,7 +93,6 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Namespace.html#isDefaultNamespaceDeclaration()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsDefaultNamespaceDeclaration()
         {

@@ -106,7 +106,6 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html#values()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Security.KeyRep.Type"/></returns>
             public static Java.Security.KeyRep.Type[] Values()
             {

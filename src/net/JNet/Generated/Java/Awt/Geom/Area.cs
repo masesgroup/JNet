@@ -139,7 +139,6 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#isEmpty()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
@@ -148,7 +147,6 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#isPolygonal()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsPolygonal()
         {
@@ -157,7 +155,6 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#isRectangular()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsRectangular()
         {
@@ -166,7 +163,6 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#isSingular()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsSingular()
         {

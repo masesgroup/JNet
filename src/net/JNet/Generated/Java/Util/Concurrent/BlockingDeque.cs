@@ -164,7 +164,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#element()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object Element()
         {
@@ -173,7 +172,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#peek()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object Peek()
         {
@@ -182,7 +180,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#poll()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object Poll()
         {
@@ -224,7 +221,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#remove()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object Remove()
         {
@@ -233,7 +229,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#take()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public object Take()
@@ -243,7 +238,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#takeFirst()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public object TakeFirst()
@@ -253,7 +247,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#takeLast()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public object TakeLast()
@@ -263,7 +256,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#size()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
@@ -272,7 +264,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#iterator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator Iterator()
         {
@@ -425,19 +416,16 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#element()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         E Element();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#peek()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         E Peek();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#poll()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         E Poll();
         /// <summary>
@@ -467,40 +455,34 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#remove()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         E Remove();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#take()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         E Take();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#takeFirst()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         E TakeFirst();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#takeLast()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         E TakeLast();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#size()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         int Size();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#iterator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         Java.Util.Iterator<E> Iterator();
         /// <summary>
@@ -690,7 +672,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#element()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E Element()
         {
@@ -699,7 +680,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#peek()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E Peek()
         {
@@ -708,7 +688,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#poll()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E Poll()
         {
@@ -750,7 +729,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#remove()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E Remove()
         {
@@ -759,7 +737,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#take()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public E Take()
@@ -769,7 +746,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#takeFirst()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public E TakeFirst()
@@ -779,7 +755,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#takeLast()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public E TakeLast()
@@ -789,7 +764,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#size()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
@@ -798,7 +772,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#iterator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<E> Iterator()
         {

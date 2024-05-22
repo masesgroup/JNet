@@ -85,7 +85,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#firstEntry()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry FirstEntry()
         {
@@ -112,7 +111,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#lastEntry()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry LastEntry()
         {
@@ -130,7 +128,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#pollFirstEntry()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry PollFirstEntry()
         {
@@ -139,7 +136,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#pollLastEntry()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry PollLastEntry()
         {
@@ -148,7 +144,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#descendingMap()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public Java.Util.NavigableMap DescendingMap()
         {
@@ -189,7 +184,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#descendingKeySet()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet DescendingKeySet()
         {
@@ -198,7 +192,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#navigableKeySet()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet NavigableKeySet()
         {
@@ -244,7 +237,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#firstKey()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object FirstKey()
         {
@@ -271,7 +263,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#lastKey()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object LastKey()
         {
@@ -361,7 +352,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#firstEntry()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry<K, V> FirstEntry()
         {
@@ -388,7 +378,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#lastEntry()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry<K, V> LastEntry()
         {
@@ -406,7 +395,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#pollFirstEntry()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry<K, V> PollFirstEntry()
         {
@@ -415,7 +403,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#pollLastEntry()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry<K, V> PollLastEntry()
         {
@@ -424,7 +411,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#descendingMap()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public Java.Util.NavigableMap<K, V> DescendingMap()
         {
@@ -465,7 +451,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#descendingKeySet()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet<K> DescendingKeySet()
         {
@@ -474,7 +459,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#navigableKeySet()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet<K> NavigableKeySet()
         {
@@ -520,7 +504,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#firstKey()"/>
         /// </summary>
-
         /// <returns><typeparamref name="K"/></returns>
         public K FirstKey()
         {
@@ -547,7 +530,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#lastKey()"/>
         /// </summary>
-
         /// <returns><typeparamref name="K"/></returns>
         public K LastKey()
         {

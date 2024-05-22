@@ -459,7 +459,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#brighter()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public Java.Awt.Color Brighter()
         {
@@ -468,7 +467,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#darker()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public Java.Awt.Color Darker()
         {

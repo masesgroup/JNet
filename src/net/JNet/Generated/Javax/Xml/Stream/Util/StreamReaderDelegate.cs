@@ -196,7 +196,6 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#hasName()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasName()
         {
@@ -205,7 +204,6 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#hasNext()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public bool HasNext()
@@ -215,7 +213,6 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#hasText()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool HasText()
         {
@@ -233,7 +230,6 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#isCharacters()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsCharacters()
         {
@@ -242,7 +238,6 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#isEndElement()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsEndElement()
         {
@@ -251,7 +246,6 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#isStandalone()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsStandalone()
         {
@@ -260,7 +254,6 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#isStartElement()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsStartElement()
         {
@@ -269,7 +262,6 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#isWhiteSpace()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsWhiteSpace()
         {
@@ -278,7 +270,6 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#standaloneSet()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool StandaloneSet()
         {
@@ -300,7 +291,6 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#next()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public int Next()
@@ -310,7 +300,6 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#nextTag()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public int NextTag()
@@ -420,7 +409,6 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#close()"/>
         /// </summary>
-
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void Close()
         {

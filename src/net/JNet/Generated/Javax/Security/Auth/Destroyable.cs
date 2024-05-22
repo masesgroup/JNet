@@ -35,13 +35,11 @@ namespace Javax.Security.Auth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Destroyable.html#isDestroyed()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsDestroyed();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Destroyable.html#destroy()"/>
         /// </summary>
-
         /// <exception cref="Javax.Security.Auth.DestroyFailedException"/>
         void Destroy();
 
@@ -78,7 +76,6 @@ namespace Javax.Security.Auth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Destroyable.html#isDestroyed()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsDestroyed()
         {
@@ -87,7 +84,6 @@ namespace Javax.Security.Auth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Destroyable.html#destroy()"/>
         /// </summary>
-
         /// <exception cref="Javax.Security.Auth.DestroyFailedException"/>
         public void Destroy()
         {

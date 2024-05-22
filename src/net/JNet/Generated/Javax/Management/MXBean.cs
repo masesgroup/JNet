@@ -35,7 +35,6 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MXBean.html#value()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool Value();
 
@@ -72,7 +71,6 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MXBean.html#value()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool Value()
         {

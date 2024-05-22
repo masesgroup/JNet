@@ -122,7 +122,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#isDisplayChangeSupported()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsDisplayChangeSupported()
         {
@@ -131,7 +130,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#isFullScreenSupported()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsFullScreenSupported()
         {
@@ -205,7 +203,6 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.WindowTranslucency.html#values()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Awt.GraphicsDevice.WindowTranslucency"/></returns>
             public static Java.Awt.GraphicsDevice.WindowTranslucency[] Values()
             {

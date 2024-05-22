@@ -44,7 +44,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#boot()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.ModuleLayer"/></returns>
         public static Java.Lang.ModuleLayer Boot()
         {
@@ -53,7 +52,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#empty()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.ModuleLayer"/></returns>
         public static Java.Lang.ModuleLayer Empty()
         {
@@ -108,7 +106,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#configuration()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.ModuleNs.Configuration"/></returns>
         public Java.Lang.ModuleNs.Configuration Configuration()
         {
@@ -147,7 +144,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#parents()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Java.Lang.ModuleLayer> Parents()
         {
@@ -165,7 +161,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#modules()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.Module> Modules()
         {
@@ -198,7 +193,6 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.Controller.html#layer()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Lang.ModuleLayer"/></returns>
             public Java.Lang.ModuleLayer Layer()
             {

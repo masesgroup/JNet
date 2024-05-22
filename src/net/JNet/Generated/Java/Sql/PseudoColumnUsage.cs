@@ -77,7 +77,6 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PseudoColumnUsage.html#values()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Sql.PseudoColumnUsage"/></returns>
         public static Java.Sql.PseudoColumnUsage[] Values()
         {

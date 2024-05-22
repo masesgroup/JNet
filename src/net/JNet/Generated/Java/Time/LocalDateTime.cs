@@ -72,7 +72,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html#now()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.LocalDateTime"/></returns>
         public static Java.Time.LocalDateTime Now()
         {
@@ -398,7 +397,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html#toLocalDate()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
         public Java.Time.Chrono.ChronoLocalDate ToLocalDate()
         {
@@ -641,7 +639,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html#toLocalTime()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public Java.Time.LocalTime ToLocalTime()
         {

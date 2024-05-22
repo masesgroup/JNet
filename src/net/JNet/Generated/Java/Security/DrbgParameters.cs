@@ -127,7 +127,6 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#values()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Security.DrbgParameters.Capability"/></returns>
             public static Java.Security.DrbgParameters.Capability[] Values()
             {
@@ -140,7 +139,6 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#supportsPredictionResistance()"/>
             /// </summary>
-
             /// <returns><see cref="bool"/></returns>
             public bool SupportsPredictionResistance()
             {
@@ -149,7 +147,6 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#supportsReseeding()"/>
             /// </summary>
-
             /// <returns><see cref="bool"/></returns>
             public bool SupportsReseeding()
             {

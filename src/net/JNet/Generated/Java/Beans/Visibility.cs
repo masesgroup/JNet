@@ -35,13 +35,11 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html#avoidingGui()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool AvoidingGui();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html#needsGui()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool NeedsGui();
         /// <summary>
@@ -86,7 +84,6 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html#avoidingGui()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool AvoidingGui()
         {
@@ -95,7 +92,6 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html#needsGui()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool NeedsGui()
         {

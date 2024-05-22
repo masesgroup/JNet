@@ -138,7 +138,6 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#isActive()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsActive()
         {
@@ -147,7 +146,6 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#isSelectionVisible()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsSelectionVisible()
         {
@@ -156,7 +154,6 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#isVisible()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsVisible()
         {

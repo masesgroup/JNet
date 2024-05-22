@@ -44,7 +44,6 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#isDesignTime()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public static bool IsDesignTime()
         {
@@ -53,7 +52,6 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#isGuiAvailable()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public static bool IsGuiAvailable()
         {

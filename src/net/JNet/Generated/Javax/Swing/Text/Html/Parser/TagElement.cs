@@ -79,7 +79,6 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/TagElement.html#breaksFlow()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool BreaksFlow()
         {
@@ -88,7 +87,6 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/TagElement.html#fictional()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool Fictional()
         {
@@ -97,7 +95,6 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/TagElement.html#isPreformatted()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsPreformatted()
         {

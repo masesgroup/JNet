@@ -35,49 +35,41 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#bound()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool Bound();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#expert()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool Expert();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#hidden()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool Hidden();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#preferred()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool Preferred();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#required()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool Required();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#visualUpdate()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool VisualUpdate();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#description()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.String"/></returns>
         Java.Lang.String Description();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#enumerationValues()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.String"/></returns>
         Java.Lang.String[] EnumerationValues();
 
@@ -114,7 +106,6 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#bound()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool Bound()
         {
@@ -123,7 +114,6 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#expert()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool Expert()
         {
@@ -132,7 +122,6 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#hidden()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool Hidden()
         {
@@ -141,7 +130,6 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#preferred()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool Preferred()
         {
@@ -150,7 +138,6 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#required()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool Required()
         {
@@ -159,7 +146,6 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#visualUpdate()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool VisualUpdate()
         {
@@ -168,7 +154,6 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#description()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Description()
         {
@@ -177,7 +162,6 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#enumerationValues()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] EnumerationValues()
         {

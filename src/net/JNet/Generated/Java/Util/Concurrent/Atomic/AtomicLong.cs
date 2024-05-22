@@ -190,7 +190,6 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#decrementAndGet()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long DecrementAndGet()
         {
@@ -199,7 +198,6 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#get()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long Get()
         {
@@ -245,7 +243,6 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#incrementAndGet()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long IncrementAndGet()
         {

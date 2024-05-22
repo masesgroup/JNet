@@ -43,7 +43,6 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#isValid()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         bool IsValid();
@@ -135,7 +134,6 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#isValid()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public bool IsValid()

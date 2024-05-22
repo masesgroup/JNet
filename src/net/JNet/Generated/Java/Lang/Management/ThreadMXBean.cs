@@ -63,43 +63,36 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isCurrentThreadCpuTimeSupported()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsCurrentThreadCpuTimeSupported();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isObjectMonitorUsageSupported()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsObjectMonitorUsageSupported();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isSynchronizerUsageSupported()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsSynchronizerUsageSupported();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isThreadContentionMonitoringEnabled()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsThreadContentionMonitoringEnabled();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isThreadContentionMonitoringSupported()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsThreadContentionMonitoringSupported();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isThreadCpuTimeEnabled()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsThreadCpuTimeEnabled();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isThreadCpuTimeSupported()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsThreadCpuTimeSupported();
         /// <summary>
@@ -158,13 +151,11 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#findDeadlockedThreads()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         long[] FindDeadlockedThreads();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#findMonitorDeadlockedThreads()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         long[] FindMonitorDeadlockedThreads();
         /// <summary>
@@ -281,7 +272,6 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isCurrentThreadCpuTimeSupported()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsCurrentThreadCpuTimeSupported()
         {
@@ -290,7 +280,6 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isObjectMonitorUsageSupported()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsObjectMonitorUsageSupported()
         {
@@ -299,7 +288,6 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isSynchronizerUsageSupported()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsSynchronizerUsageSupported()
         {
@@ -308,7 +296,6 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isThreadContentionMonitoringEnabled()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsThreadContentionMonitoringEnabled()
         {
@@ -317,7 +304,6 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isThreadContentionMonitoringSupported()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsThreadContentionMonitoringSupported()
         {
@@ -326,7 +312,6 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isThreadCpuTimeEnabled()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsThreadCpuTimeEnabled()
         {
@@ -335,7 +320,6 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isThreadCpuTimeSupported()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsThreadCpuTimeSupported()
         {
@@ -421,7 +405,6 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#findDeadlockedThreads()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long[] FindDeadlockedThreads()
         {
@@ -430,7 +413,6 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#findMonitorDeadlockedThreads()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long[] FindMonitorDeadlockedThreads()
         {

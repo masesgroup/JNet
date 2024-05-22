@@ -406,7 +406,6 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#lookup()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></returns>
         public static Java.Lang.Invoke.MethodHandles.Lookup LookupMethod()
         {
@@ -426,7 +425,6 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#publicLookup()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></returns>
         public static Java.Lang.Invoke.MethodHandles.Lookup PublicLookup()
         {
@@ -531,7 +529,6 @@ namespace Java.Lang.Invoke
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#hasPrivateAccess()"/>
             /// </summary>
-
             /// <returns><see cref="bool"/></returns>
             public bool HasPrivateAccess()
             {
@@ -540,7 +537,6 @@ namespace Java.Lang.Invoke
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#lookupModes()"/>
             /// </summary>
-
             /// <returns><see cref="int"/></returns>
             public int LookupModes()
             {
@@ -580,7 +576,6 @@ namespace Java.Lang.Invoke
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#lookupClass()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Lang.Class"/></returns>
             public Java.Lang.Class LookupClass()
             {

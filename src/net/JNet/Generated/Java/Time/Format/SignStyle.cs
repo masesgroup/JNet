@@ -83,7 +83,6 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/SignStyle.html#values()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.Format.SignStyle"/></returns>
         public static Java.Time.Format.SignStyle[] Values()
         {

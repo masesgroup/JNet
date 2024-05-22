@@ -42,7 +42,6 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/XMLEventAllocator.html#newInstance()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Stream.Util.XMLEventAllocator"/></returns>
         Javax.Xml.Stream.Util.XMLEventAllocator NewInstance();
         /// <summary>
@@ -96,7 +95,6 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/XMLEventAllocator.html#newInstance()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Stream.Util.XMLEventAllocator"/></returns>
         public Javax.Xml.Stream.Util.XMLEventAllocator NewInstance()
         {

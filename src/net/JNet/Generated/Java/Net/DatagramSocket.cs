@@ -199,7 +199,6 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#isBound()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsBound()
         {
@@ -208,7 +207,6 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#isClosed()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsClosed()
         {
@@ -217,7 +215,6 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#isConnected()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsConnected()
         {
@@ -226,7 +223,6 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#supportedOptions()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Net.SocketOption<object>> SupportedOptions()
         {

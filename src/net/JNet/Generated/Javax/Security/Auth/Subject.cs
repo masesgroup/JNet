@@ -167,7 +167,6 @@ namespace Javax.Security.Auth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#isReadOnly()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsReadOnly()
         {

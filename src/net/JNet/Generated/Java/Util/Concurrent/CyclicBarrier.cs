@@ -79,7 +79,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CyclicBarrier.html#isBroken()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsBroken()
         {
@@ -88,7 +87,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CyclicBarrier.html#await()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         /// <exception cref="Java.Util.Concurrent.BrokenBarrierException"/>

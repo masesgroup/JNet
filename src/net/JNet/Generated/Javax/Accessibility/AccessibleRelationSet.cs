@@ -83,7 +83,6 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#size()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
@@ -101,7 +100,6 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#toArray()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Accessibility.AccessibleRelation"/></returns>
         public Javax.Accessibility.AccessibleRelation[] ToArray()
         {

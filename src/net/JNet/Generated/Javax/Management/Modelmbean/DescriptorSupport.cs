@@ -99,7 +99,6 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#isValid()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public bool IsValid()
@@ -128,7 +127,6 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#toXMLString()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToXMLString()
         {

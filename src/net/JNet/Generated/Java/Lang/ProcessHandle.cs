@@ -35,25 +35,21 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#destroy()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool Destroy();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#destroyForcibly()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool DestroyForcibly();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#isAlive()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsAlive();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#supportsNormalTermination()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool SupportsNormalTermination();
         /// <summary>
@@ -65,37 +61,31 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#info()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.ProcessHandle.Info"/></returns>
         Java.Lang.ProcessHandle.Info InfoMethod();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#onExit()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         Java.Util.Concurrent.CompletableFuture<Java.Lang.ProcessHandle> OnExit();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#parent()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Optional"/></returns>
         Java.Util.Optional<Java.Lang.ProcessHandle> Parent();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#children()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         Java.Util.Stream.Stream<Java.Lang.ProcessHandle> Children();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#descendants()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         Java.Util.Stream.Stream<Java.Lang.ProcessHandle> Descendants();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#pid()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         long Pid();
         /// <summary>
@@ -134,7 +124,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#current()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.ProcessHandle"/></returns>
         public static Java.Lang.ProcessHandle Current()
         {
@@ -152,7 +141,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#allProcesses()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream<Java.Lang.ProcessHandle> AllProcesses()
         {
@@ -165,7 +153,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#destroy()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool Destroy()
         {
@@ -174,7 +161,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#destroyForcibly()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool DestroyForcibly()
         {
@@ -183,7 +169,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#isAlive()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsAlive()
         {
@@ -192,7 +177,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#supportsNormalTermination()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool SupportsNormalTermination()
         {
@@ -210,7 +194,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#info()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.ProcessHandle.Info"/></returns>
         public Java.Lang.ProcessHandle.Info InfoMethod()
         {
@@ -219,7 +202,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#onExit()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public Java.Util.Concurrent.CompletableFuture<Java.Lang.ProcessHandle> OnExit()
         {
@@ -228,7 +210,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#parent()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<Java.Lang.ProcessHandle> Parent()
         {
@@ -237,7 +218,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#children()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Java.Lang.ProcessHandle> Children()
         {
@@ -246,7 +226,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#descendants()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Java.Lang.ProcessHandle> Descendants()
         {
@@ -255,7 +234,6 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#pid()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long Pid()
         {
@@ -297,7 +275,6 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.Info.html#arguments()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Util.Optional"/></returns>
             public Java.Util.Optional<Java.Lang.String[]> Arguments()
             {
@@ -306,7 +283,6 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.Info.html#command()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Util.Optional"/></returns>
             public Java.Util.Optional<Java.Lang.String> Command()
             {
@@ -315,7 +291,6 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.Info.html#commandLine()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Util.Optional"/></returns>
             public Java.Util.Optional<Java.Lang.String> CommandLine()
             {
@@ -324,7 +299,6 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.Info.html#user()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Util.Optional"/></returns>
             public Java.Util.Optional<Java.Lang.String> User()
             {
@@ -333,7 +307,6 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.Info.html#totalCpuDuration()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Util.Optional"/></returns>
             public Java.Util.Optional<Java.Time.Duration> TotalCpuDuration()
             {
@@ -342,7 +315,6 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.Info.html#startInstant()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Util.Optional"/></returns>
             public Java.Util.Optional<Java.Time.Instant> StartInstant()
             {

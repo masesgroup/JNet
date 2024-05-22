@@ -69,7 +69,6 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#isExpert()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsExpert()
         {
@@ -78,7 +77,6 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#isHidden()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsHidden()
         {
@@ -87,7 +85,6 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#isPreferred()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsPreferred()
         {
@@ -105,7 +102,6 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#attributeNames()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<Java.Lang.String> AttributeNames()
         {

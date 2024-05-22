@@ -160,7 +160,6 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#isReadable()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsReadable()
         {
@@ -169,7 +168,6 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#isWritable()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsWritable()
         {

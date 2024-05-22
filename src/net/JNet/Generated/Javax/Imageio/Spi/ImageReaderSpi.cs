@@ -116,7 +116,6 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderSpi.html#createReaderInstance()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Imageio.ImageReader"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Imageio.ImageReader CreateReaderInstance()

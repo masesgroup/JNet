@@ -44,7 +44,6 @@ namespace Javax.Xml.Transform
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#newDefaultInstance()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Transform.TransformerFactory"/></returns>
         public static Javax.Xml.Transform.TransformerFactory NewDefaultInstance()
         {
@@ -53,7 +52,6 @@ namespace Javax.Xml.Transform
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#newInstance()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Transform.TransformerFactory"/></returns>
         /// <exception cref="Javax.Xml.Transform.TransformerFactoryConfigurationError"/>
         public static Javax.Xml.Transform.TransformerFactory NewInstance()
@@ -133,7 +131,6 @@ namespace Javax.Xml.Transform
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#newTransformer()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Transform.Transformer"/></returns>
         /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
         public Javax.Xml.Transform.Transformer NewTransformer()

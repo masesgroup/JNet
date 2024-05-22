@@ -35,25 +35,21 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isArchive()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsArchive();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isHidden()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsHidden();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isReadOnly()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsReadOnly();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isSystem()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsSystem();
 
@@ -90,7 +86,6 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isArchive()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsArchive()
         {
@@ -99,7 +94,6 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isHidden()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsHidden()
         {
@@ -108,7 +102,6 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isReadOnly()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsReadOnly()
         {
@@ -117,7 +110,6 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isSystem()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsSystem()
         {

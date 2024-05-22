@@ -161,7 +161,6 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#toGenericString()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToGenericString()
         {
@@ -170,7 +169,6 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#isSynthetic()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsSynthetic()
         {
@@ -179,7 +177,6 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#isVarArgs()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsVarArgs()
         {

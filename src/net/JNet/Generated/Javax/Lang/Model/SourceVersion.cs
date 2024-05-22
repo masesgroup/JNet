@@ -163,7 +163,6 @@ namespace Javax.Lang.Model
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#latest()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Lang.Model.SourceVersion"/></returns>
         public static Javax.Lang.Model.SourceVersion Latest()
         {
@@ -172,7 +171,6 @@ namespace Javax.Lang.Model
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#latestSupported()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Lang.Model.SourceVersion"/></returns>
         public static Javax.Lang.Model.SourceVersion LatestSupported()
         {
@@ -190,7 +188,6 @@ namespace Javax.Lang.Model
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#values()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Lang.Model.SourceVersion"/></returns>
         public static Javax.Lang.Model.SourceVersion[] Values()
         {

@@ -72,7 +72,6 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahEra.html#values()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.Chrono.HijrahEra"/></returns>
         public static Java.Time.Chrono.HijrahEra[] Values()
         {

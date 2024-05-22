@@ -63,7 +63,6 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NetworkChannel.html#supportedOptions()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Set"/></returns>
         Java.Util.Set<Java.Net.SocketOption<object>> SupportedOptions();
 
@@ -140,7 +139,6 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NetworkChannel.html#supportedOptions()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Net.SocketOption<object>> SupportedOptions()
         {

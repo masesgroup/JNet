@@ -57,7 +57,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#isCancelled()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsCancelled()
         {
@@ -66,7 +65,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#isDone()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsDone()
         {
@@ -75,7 +73,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#get()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
@@ -123,19 +120,16 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#isCancelled()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsCancelled();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#isDone()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsDone();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#get()"/>
         /// </summary>
-
         /// <returns><typeparamref name="V"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
@@ -197,7 +191,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#isCancelled()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsCancelled()
         {
@@ -206,7 +199,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#isDone()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsDone()
         {
@@ -215,7 +207,6 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#get()"/>
         /// </summary>
-
         /// <returns><typeparamref name="V"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>

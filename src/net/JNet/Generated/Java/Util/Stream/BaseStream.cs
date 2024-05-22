@@ -48,7 +48,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#isParallel()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsParallel()
         {
@@ -57,7 +56,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#iterator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator Iterator()
         {
@@ -66,7 +64,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#spliterator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public Java.Util.Spliterator Spliterator()
         {
@@ -84,7 +81,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#parallel()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
         public Java.Util.Stream.BaseStream Parallel()
         {
@@ -93,7 +89,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#sequential()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
         public Java.Util.Stream.BaseStream Sequential()
         {
@@ -102,7 +97,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#unordered()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
         public Java.Util.Stream.BaseStream Unordered()
         {
@@ -136,19 +130,16 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#isParallel()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsParallel();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#iterator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         Java.Util.Iterator<T> Iterator();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#spliterator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         Java.Util.Spliterator<T> Spliterator();
         /// <summary>
@@ -160,19 +151,16 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#parallel()"/>
         /// </summary>
-
         /// <returns><typeparamref name="S"/></returns>
         S Parallel();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#sequential()"/>
         /// </summary>
-
         /// <returns><typeparamref name="S"/></returns>
         S Sequential();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#unordered()"/>
         /// </summary>
-
         /// <returns><typeparamref name="S"/></returns>
         S Unordered();
         /// <summary>
@@ -217,7 +205,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#isParallel()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsParallel()
         {
@@ -226,7 +213,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#iterator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<T> Iterator()
         {
@@ -235,7 +221,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#spliterator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public Java.Util.Spliterator<T> Spliterator()
         {
@@ -253,7 +238,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#parallel()"/>
         /// </summary>
-
         /// <returns><typeparamref name="S"/></returns>
         public S Parallel()
         {
@@ -262,7 +246,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#sequential()"/>
         /// </summary>
-
         /// <returns><typeparamref name="S"/></returns>
         public S Sequential()
         {
@@ -271,7 +254,6 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#unordered()"/>
         /// </summary>
-
         /// <returns><typeparamref name="S"/></returns>
         public S Unordered()
         {

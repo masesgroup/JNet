@@ -71,7 +71,6 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageTranscoderSpi.html#createTranscoderInstance()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Imageio.ImageTranscoder"/></returns>
         public Javax.Imageio.ImageTranscoder CreateTranscoderInstance()
         {

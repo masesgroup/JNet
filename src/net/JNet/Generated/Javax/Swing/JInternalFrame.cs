@@ -288,7 +288,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#isClosable()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsClosable()
         {
@@ -297,7 +296,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#isClosed()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsClosed()
         {
@@ -306,7 +304,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#isIcon()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsIcon()
         {
@@ -315,7 +312,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#isIconifiable()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsIconifiable()
         {
@@ -324,7 +320,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#isMaximizable()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsMaximizable()
         {
@@ -333,7 +328,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#isMaximum()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsMaximum()
         {
@@ -342,7 +336,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#isResizable()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsResizable()
         {
@@ -351,7 +344,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#isSelected()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsSelected()
         {

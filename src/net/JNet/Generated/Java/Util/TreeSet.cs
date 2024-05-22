@@ -85,7 +85,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#first()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object First()
         {
@@ -112,7 +111,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#last()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object Last()
         {
@@ -130,7 +128,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#pollFirst()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object PollFirst()
         {
@@ -139,7 +136,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#pollLast()"/>
         /// </summary>
-
         /// <returns><see cref="object"/></returns>
         public object PollLast()
         {
@@ -148,7 +144,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#descendingIterator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator DescendingIterator()
         {
@@ -157,7 +152,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#descendingSet()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet DescendingSet()
         {
@@ -298,7 +292,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#first()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E First()
         {
@@ -325,7 +318,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#last()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E Last()
         {
@@ -343,7 +335,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#pollFirst()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E PollFirst()
         {
@@ -352,7 +343,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#pollLast()"/>
         /// </summary>
-
         /// <returns><typeparamref name="E"/></returns>
         public E PollLast()
         {
@@ -361,7 +351,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#descendingIterator()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<E> DescendingIterator()
         {
@@ -370,7 +359,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#descendingSet()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet<E> DescendingSet()
         {

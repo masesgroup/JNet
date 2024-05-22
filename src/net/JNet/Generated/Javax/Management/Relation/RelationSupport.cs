@@ -118,7 +118,6 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#isInRelationService()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.Boolean"/></returns>
         public Java.Lang.Boolean IsInRelationService()
         {
@@ -161,7 +160,6 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#retrieveAllRoles()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Management.Relation.RoleList"/></returns>
         public Javax.Management.Relation.RoleList RetrieveAllRoles()
         {
@@ -224,7 +222,6 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#preDeregister()"/>
         /// </summary>
-
         /// <exception cref="Java.Lang.Exception"/>
         public void PreDeregister()
         {

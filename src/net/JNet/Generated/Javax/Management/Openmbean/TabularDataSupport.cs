@@ -125,7 +125,6 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularDataSupport.html#isEmpty()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
@@ -134,7 +133,6 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularDataSupport.html#size()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
@@ -180,7 +178,6 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularDataSupport.html#values()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public Java.Util.Collection<object> Values()
         {
@@ -189,7 +186,6 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularDataSupport.html#keySet()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<object> KeySet()
         {
@@ -198,7 +194,6 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularDataSupport.html#entrySet()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Util.Map.Entry<object, object>> EntrySet()
         {

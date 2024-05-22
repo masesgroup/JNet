@@ -124,7 +124,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#isPopupMenuVisible()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsPopupMenuVisible()
         {
@@ -133,7 +132,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#isTearOff()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsTearOff()
         {
@@ -142,7 +140,6 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#isTopLevelMenu()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsTopLevelMenu()
         {

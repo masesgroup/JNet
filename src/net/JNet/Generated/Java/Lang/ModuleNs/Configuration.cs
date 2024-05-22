@@ -44,7 +44,6 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/Configuration.html#empty()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.ModuleNs.Configuration"/></returns>
         public static Java.Lang.ModuleNs.Configuration Empty()
         {
@@ -103,7 +102,6 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/Configuration.html#parents()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Java.Lang.ModuleNs.Configuration> Parents()
         {
@@ -121,7 +119,6 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/Configuration.html#modules()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.ModuleNs.ResolvedModule> Modules()
         {

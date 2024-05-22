@@ -65,7 +65,6 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryType.html#values()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.Management.MemoryType"/></returns>
         public static Java.Lang.Management.MemoryType[] Values()
         {

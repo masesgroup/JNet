@@ -1321,7 +1321,6 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#isActionKey()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsActionKey()
         {

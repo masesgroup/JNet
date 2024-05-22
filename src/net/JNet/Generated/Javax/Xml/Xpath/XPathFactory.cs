@@ -56,7 +56,6 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newDefaultInstance()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Xpath.XPathFactory"/></returns>
         public static Javax.Xml.Xpath.XPathFactory NewDefaultInstance()
         {
@@ -65,7 +64,6 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newInstance()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Xpath.XPathFactory"/></returns>
         public static Javax.Xml.Xpath.XPathFactory NewInstance()
         {
@@ -119,7 +117,6 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newXPath()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Xpath.XPath"/></returns>
         public Javax.Xml.Xpath.XPath NewXPath()
         {

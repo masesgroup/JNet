@@ -48,7 +48,6 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReference.html#open()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.ModuleNs.ModuleReader"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.ModuleNs.ModuleReader Open()
@@ -58,7 +57,6 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReference.html#descriptor()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor"/></returns>
         public Java.Lang.ModuleNs.ModuleDescriptor Descriptor()
         {
@@ -67,7 +65,6 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReference.html#location()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<Java.Net.URI> Location()
         {

@@ -119,7 +119,6 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getTransform()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
         public Java.Awt.Geom.AffineTransform GetTransform()
         {

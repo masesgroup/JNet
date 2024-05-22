@@ -53,7 +53,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map Of()
         {
@@ -293,7 +292,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#isEmpty()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
@@ -302,7 +300,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#size()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
@@ -311,7 +308,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#values()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public Java.Util.Collection Values()
         {
@@ -320,7 +316,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#entrySet()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set EntrySet()
         {
@@ -329,7 +324,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#keySet()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set KeySet()
         {
@@ -631,31 +625,26 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#isEmpty()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsEmpty();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#size()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         int Size();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#values()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Collection"/></returns>
         Java.Util.Collection<V> Values();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#entrySet()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Set"/></returns>
         Java.Util.Set<Java.Util.Map.Entry<K, V>> EntrySet();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#keySet()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Set"/></returns>
         Java.Util.Set<K> KeySet();
         /// <summary>
@@ -823,7 +812,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map<K, V> Of()
         {
@@ -1065,7 +1053,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#isEmpty()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
@@ -1074,7 +1061,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#size()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
@@ -1083,7 +1069,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#values()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public Java.Util.Collection<V> Values()
         {
@@ -1092,7 +1077,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#entrySet()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Util.Map.Entry<K, V>> EntrySet()
         {
@@ -1101,7 +1085,6 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#keySet()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<K> KeySet()
         {

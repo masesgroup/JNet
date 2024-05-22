@@ -81,7 +81,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#now()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
         public static Java.Time.OffsetDateTime Now()
         {
@@ -346,7 +345,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#toInstant()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public Java.Time.Instant ToInstant()
         {
@@ -355,7 +353,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#toLocalDate()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.LocalDate"/></returns>
         public Java.Time.LocalDate ToLocalDate()
         {
@@ -364,7 +361,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#toLocalDateTime()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.LocalDateTime"/></returns>
         public Java.Time.LocalDateTime ToLocalDateTime()
         {
@@ -373,7 +369,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#toLocalTime()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public Java.Time.LocalTime ToLocalTime()
         {
@@ -625,7 +620,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#toOffsetTime()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public Java.Time.OffsetTime ToOffsetTime()
         {
@@ -727,7 +721,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#toZonedDateTime()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime ToZonedDateTime()
         {
@@ -745,7 +738,6 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#toEpochSecond()"/>
         /// </summary>
-
         /// <returns><see cref="long"/></returns>
         public long ToEpochSecond()
         {

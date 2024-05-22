@@ -35,7 +35,6 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Closeable.html#close()"/>
         /// </summary>
-
         /// <exception cref="Java.Io.IOException"/>
         void Close();
 
@@ -72,7 +71,6 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Closeable.html#close()"/>
         /// </summary>
-
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {

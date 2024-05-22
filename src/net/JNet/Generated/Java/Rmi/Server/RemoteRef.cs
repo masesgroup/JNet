@@ -41,7 +41,6 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteHashCode()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         int RemoteHashCode();
         /// <summary>
@@ -63,7 +62,6 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteToString()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.String"/></returns>
         Java.Lang.String RemoteToString();
 
@@ -121,7 +119,6 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteHashCode()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int RemoteHashCode()
         {
@@ -152,7 +149,6 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteToString()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String RemoteToString()
         {

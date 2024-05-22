@@ -35,19 +35,16 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isIs()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsIs();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isReadable()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsReadable();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isWritable()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsWritable();
 
@@ -84,7 +81,6 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isIs()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsIs()
         {
@@ -93,7 +89,6 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isReadable()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsReadable()
         {
@@ -102,7 +97,6 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isWritable()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsWritable()
         {

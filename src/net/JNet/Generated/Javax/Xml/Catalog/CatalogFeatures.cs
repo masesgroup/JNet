@@ -44,7 +44,6 @@ namespace Javax.Xml.Catalog
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.html#defaults()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Catalog.CatalogFeatures"/></returns>
         public static Javax.Xml.Catalog.CatalogFeatures Defaults()
         {
@@ -53,7 +52,6 @@ namespace Javax.Xml.Catalog
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.html#builder()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Catalog.CatalogFeatures.Builder"/></returns>
         public static Javax.Xml.Catalog.CatalogFeatures.Builder BuilderMethod()
         {
@@ -99,7 +97,6 @@ namespace Javax.Xml.Catalog
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Builder.html#build()"/>
             /// </summary>
-
             /// <returns><see cref="Javax.Xml.Catalog.CatalogFeatures"/></returns>
             public Javax.Xml.Catalog.CatalogFeatures Build()
             {
@@ -178,7 +175,6 @@ namespace Javax.Xml.Catalog
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#values()"/>
             /// </summary>
-
             /// <returns><see cref="Javax.Xml.Catalog.CatalogFeatures.Feature"/></returns>
             public static Javax.Xml.Catalog.CatalogFeatures.Feature[] Values()
             {
@@ -198,7 +194,6 @@ namespace Javax.Xml.Catalog
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#defaultValue()"/>
             /// </summary>
-
             /// <returns><see cref="Java.Lang.String"/></returns>
             public Java.Lang.String DefaultValue()
             {

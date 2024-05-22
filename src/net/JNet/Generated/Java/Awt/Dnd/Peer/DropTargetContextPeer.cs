@@ -51,7 +51,6 @@ namespace Java.Awt.Dnd.Peer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#isTransferableJVMLocal()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         bool IsTransferableJVMLocal();
         /// <summary>
@@ -139,7 +138,6 @@ namespace Java.Awt.Dnd.Peer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#isTransferableJVMLocal()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsTransferableJVMLocal()
         {

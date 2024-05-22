@@ -42,14 +42,12 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#list()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         Java.Util.Stream.Stream<Java.Lang.String> List();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#close()"/>
         /// </summary>
-
         /// <exception cref="Java.Io.IOException"/>
         void Close();
         /// <summary>
@@ -115,7 +113,6 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#list()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Util.Stream.Stream<Java.Lang.String> List()
@@ -125,7 +122,6 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#close()"/>
         /// </summary>
-
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {

@@ -185,7 +185,6 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#canOffsetTiles()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool CanOffsetTiles()
         {
@@ -194,7 +193,6 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#canWriteCompressed()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool CanWriteCompressed()
         {
@@ -203,7 +201,6 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#canWriteProgressive()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool CanWriteProgressive()
         {
@@ -212,7 +209,6 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#canWriteTiles()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool CanWriteTiles()
         {
@@ -221,7 +217,6 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#isCompressionLossless()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         public bool IsCompressionLossless()
         {

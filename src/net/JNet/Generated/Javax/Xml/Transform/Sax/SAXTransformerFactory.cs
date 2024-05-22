@@ -60,7 +60,6 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXTransformerFactory.html#newTemplatesHandler()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Transform.Sax.TemplatesHandler"/></returns>
         /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
         public Javax.Xml.Transform.Sax.TemplatesHandler NewTemplatesHandler()
@@ -70,7 +69,6 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXTransformerFactory.html#newTransformerHandler()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Xml.Transform.Sax.TransformerHandler"/></returns>
         /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
         public Javax.Xml.Transform.Sax.TransformerHandler NewTransformerHandler()

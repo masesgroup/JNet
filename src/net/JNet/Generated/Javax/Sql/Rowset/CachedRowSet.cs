@@ -81,27 +81,23 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#nextPage()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         bool NextPage();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#previousPage()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         bool PreviousPage();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#size()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         int Size();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#toCollection()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Collection"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Util.Collection<object> ToCollection();
@@ -122,35 +118,30 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#createShared()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Sql.RowSet"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Javax.Sql.RowSet CreateShared();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#createCopy()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Sql.Rowset.CachedRowSet"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Javax.Sql.Rowset.CachedRowSet CreateCopy();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#createCopyNoConstraints()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Sql.Rowset.CachedRowSet"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Javax.Sql.Rowset.CachedRowSet CreateCopyNoConstraints();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#createCopySchema()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Sql.Rowset.CachedRowSet"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Javax.Sql.Rowset.CachedRowSet CreateCopySchema();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#acceptChanges()"/>
         /// </summary>
-
         /// <exception cref="Javax.Sql.Rowset.Spi.SyncProviderException"/>
         void AcceptChanges();
         /// <summary>
@@ -162,7 +153,6 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#commit()"/>
         /// </summary>
-
         /// <exception cref="Java.Sql.SQLException"/>
         void Commit();
         /// <summary>
@@ -187,19 +177,16 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#release()"/>
         /// </summary>
-
         /// <exception cref="Java.Sql.SQLException"/>
         void Release();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#restoreOriginal()"/>
         /// </summary>
-
         /// <exception cref="Java.Sql.SQLException"/>
         void RestoreOriginal();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#rollback()"/>
         /// </summary>
-
         /// <exception cref="Java.Sql.SQLException"/>
         void Rollback();
         /// <summary>
@@ -224,25 +211,21 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#setOriginalRow()"/>
         /// </summary>
-
         /// <exception cref="Java.Sql.SQLException"/>
         void SetOriginalRow();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#undoDelete()"/>
         /// </summary>
-
         /// <exception cref="Java.Sql.SQLException"/>
         void UndoDelete();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#undoInsert()"/>
         /// </summary>
-
         /// <exception cref="Java.Sql.SQLException"/>
         void UndoInsert();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#undoUpdate()"/>
         /// </summary>
-
         /// <exception cref="Java.Sql.SQLException"/>
         void UndoUpdate();
 
@@ -363,7 +346,6 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#nextPage()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public bool NextPage()
@@ -373,7 +355,6 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#previousPage()"/>
         /// </summary>
-
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public bool PreviousPage()
@@ -383,7 +364,6 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#size()"/>
         /// </summary>
-
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
@@ -392,7 +372,6 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#toCollection()"/>
         /// </summary>
-
         /// <returns><see cref="Java.Util.Collection"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Util.Collection<object> ToCollection()
@@ -422,7 +401,6 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#createShared()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Sql.RowSet"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Javax.Sql.RowSet CreateShared()
@@ -432,7 +410,6 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#createCopy()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Sql.Rowset.CachedRowSet"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Javax.Sql.Rowset.CachedRowSet CreateCopy()
@@ -442,7 +419,6 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#createCopyNoConstraints()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Sql.Rowset.CachedRowSet"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Javax.Sql.Rowset.CachedRowSet CreateCopyNoConstraints()
@@ -452,7 +428,6 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#createCopySchema()"/>
         /// </summary>
-
         /// <returns><see cref="Javax.Sql.Rowset.CachedRowSet"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Javax.Sql.Rowset.CachedRowSet CreateCopySchema()
@@ -462,7 +437,6 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#acceptChanges()"/>
         /// </summary>
-
         /// <exception cref="Javax.Sql.Rowset.Spi.SyncProviderException"/>
         public void AcceptChanges()
         {
@@ -480,7 +454,6 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#commit()"/>
         /// </summary>
-
         /// <exception cref="Java.Sql.SQLException"/>
         public void Commit()
         {
@@ -517,7 +490,6 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#release()"/>
         /// </summary>
-
         /// <exception cref="Java.Sql.SQLException"/>
         public void Release()
         {
@@ -526,7 +498,6 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#restoreOriginal()"/>
         /// </summary>
-
         /// <exception cref="Java.Sql.SQLException"/>
         public void RestoreOriginal()
         {
@@ -535,7 +506,6 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#rollback()"/>
         /// </summary>
-
         /// <exception cref="Java.Sql.SQLException"/>
         public void Rollback()
         {
@@ -572,7 +542,6 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#setOriginalRow()"/>
         /// </summary>
-
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetOriginalRow()
         {
@@ -581,7 +550,6 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#undoDelete()"/>
         /// </summary>
-
         /// <exception cref="Java.Sql.SQLException"/>
         public void UndoDelete()
         {
@@ -590,7 +558,6 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#undoInsert()"/>
         /// </summary>
-
         /// <exception cref="Java.Sql.SQLException"/>
         public void UndoInsert()
         {
@@ -599,7 +566,6 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#undoUpdate()"/>
         /// </summary>
-
         /// <exception cref="Java.Sql.SQLException"/>
         public void UndoUpdate()
         {
