@@ -1856,7 +1856,8 @@ namespace MASES.JNetReflector
                             typeParamHelp.AppendLine(singleTypeParam);
                         }
                     }
-                    if (!methodHelpBuilder.ToString().EndsWith(Environment.NewLine)) methodHelpBuilder.AppendLine();
+                    var tmpMethodHelp = methodHelpBuilder.ToString();
+                    if (!string.IsNullOrWhiteSpace(tmpMethodHelp) && !tmpMethodHelp.EndsWith(Environment.NewLine)) methodHelpBuilder.AppendLine();
                     methodHelpBuilder.Append(typeParamHelp.ToString());
                 }
 
@@ -1870,7 +1871,8 @@ namespace MASES.JNetReflector
                     }
                     var returnContent = string.Format(helpFormat, returnTypeForDocs.ConvertToJavadoc());
                     string strReturn = string.Format(AllPackageClasses.ClassStub.MethodStub.HELP_RETURN_DECORATION, returnContent);
-                    if (!methodHelpBuilder.ToString().EndsWith(Environment.NewLine)) methodHelpBuilder.AppendLine();
+                    var tmpMethodHelp = methodHelpBuilder.ToString();
+                    if (!string.IsNullOrWhiteSpace(tmpMethodHelp) && !tmpMethodHelp.EndsWith(Environment.NewLine)) methodHelpBuilder.AppendLine();
                     methodHelpBuilder.Append(strReturn);
                 }
                 var exceptions = method.ExceptionTypes;
@@ -1883,7 +1885,8 @@ namespace MASES.JNetReflector
                         exceptionBuilder.AppendFormat(AllPackageClasses.ClassStub.MethodStub.HELP_EXCEPTION_DECORATION, expType.ConvertToJavadoc());
                         if (i < exceptions.Length - 1) exceptionBuilder.AppendLine();
                     }
-                    if (!methodHelpBuilder.ToString().EndsWith(Environment.NewLine)) methodHelpBuilder.AppendLine();
+                    var tmpMethodHelp = methodHelpBuilder.ToString();
+                    if (!string.IsNullOrWhiteSpace(tmpMethodHelp) && !tmpMethodHelp.EndsWith(Environment.NewLine)) methodHelpBuilder.AppendLine();
                     methodHelpBuilder.Append(exceptionBuilder.ToString());
                 }
 
