@@ -632,6 +632,7 @@ namespace MASES.JNetReflector
             string fieldClassBlock = string.Empty;
             string staticMethodClassBlock = string.Empty;
             string methodClassBlock = string.Empty;
+            string methodClassBlockDirect = string.Empty;
             string methodInterfaceBlock = string.Empty;
 
             bool jClassIsDepracated = jClass.IsDeprecated();
@@ -734,17 +735,18 @@ namespace MASES.JNetReflector
                     constructorClassBlock = jClass.AnalyzeConstructors(classDefinitions, isGeneric, true).AddTabLevel(1);
                     operatorClassBlock = jClass.AnalyzeOperators(classDefinitions, isGeneric, true).AddTabLevel(1);
                     fieldClassBlock = jClass.AnalyzeFields(classDefinitions, isGeneric).AddTabLevel(1);
-                    staticMethodClassBlock = jClass.AnalyzeMethods(signatures, classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, true).AddTabLevel(1);
-                    methodClassBlock = jClass.AnalyzeMethods(signatures, classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, false).AddTabLevel(1);
+                    staticMethodClassBlock = jClass.AnalyzeMethods(signatures, classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, false, true).AddTabLevel(1);
+                    methodClassBlock = jClass.AnalyzeMethods(signatures, classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, false, false).AddTabLevel(1);
                 }
                 else
                 {
-                    staticMethodClassBlock = jClass.AnalyzeMethods(signatures, classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, true).AddTabLevel(1);
-                    methodClassBlock = jClass.AnalyzeMethods(signatures, classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, false).AddTabLevel(1);
+                    staticMethodClassBlock = jClass.AnalyzeMethods(signatures, classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, false, true).AddTabLevel(1);
+                    methodClassBlock = jClass.AnalyzeMethods(signatures, classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, false, false).AddTabLevel(1);
+                    methodClassBlockDirect = jClass.AnalyzeMethods(signatures, classDefinitions, methodPrefilter, isGeneric, false, false, true, false).AddTabLevel(1);
                 }
                 if (!JNetReflectorCore.DisableInterfaceMethodGeneration && createInterfaceData)
                 {
-                    methodInterfaceBlock = jClass.AnalyzeMethods(signatures, classDefinitions, methodPrefilter, isGeneric, true, jClassIsListener, false).AddTabLevel(1);
+                    methodInterfaceBlock = jClass.AnalyzeMethods(signatures, classDefinitions, methodPrefilter, isGeneric, true, jClassIsListener, false, false).AddTabLevel(1);
                 }
             }
 
@@ -805,6 +807,21 @@ namespace MASES.JNetReflector
                                         .Replace(AllPackageClasses.ClassStub.FIELDS, fieldClassBlock)
                                         .Replace(AllPackageClasses.ClassStub.STATICMETHODS, staticMethodClassBlock)
                                         .Replace(AllPackageClasses.ClassStub.METHODS, methodClassBlock);
+
+            if (jClassIsListener)
+            {
+                string singleClassStrDirect = singleClass.Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(new List<KeyValuePair<string, string>>(), isGeneric, true))
+                                                         .Replace(AllPackageClasses.ClassStub.INTERFACE_CONSTRAINT, !string.IsNullOrWhiteSpace(interfaceConstraint) ? " : " + interfaceConstraint : string.Empty)
+                                                         .Replace(AllPackageClasses.ClassStub.CONSTRUCTORS, string.Empty)
+                                                         .Replace(AllPackageClasses.ClassStub.OPERATORS, string.Empty)
+                                                         .Replace(AllPackageClasses.ClassStub.FIELDS, string.Empty)
+                                                         .Replace(AllPackageClasses.ClassStub.STATICMETHODS, string.Empty)
+                                                         .Replace(AllPackageClasses.ClassStub.METHODS, methodClassBlockDirect)
+                                                         .Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, string.Empty); // remove from direct the nested classes since they will be managed from listener
+
+                singleClassStr += Environment.NewLine + Environment.NewLine;
+                singleClassStr += singleClassStrDirect;
+            }
 
             if (bPrepareJavaListener)
             {
@@ -1195,7 +1212,7 @@ namespace MASES.JNetReflector
             return prefilteredMethods;
         }
 
-        static string AnalyzeMethods(this Class classDefinition, IReadOnlyDictionary<string, string> methodsToSignature, IEnumerable<Class> classDefinitions, IList<Method> prefilteredMethods, bool isGeneric, bool forInterface, bool forListener, bool staticMethods)
+        static string AnalyzeMethods(this Class classDefinition, IReadOnlyDictionary<string, string> methodsToSignature, IEnumerable<Class> classDefinitions, IList<Method> prefilteredMethods, bool isGeneric, bool forInterface, bool forListener, bool isDirectListener, bool staticMethods)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Methods of {0} with static {1} *******************", classDefinition.GenericString, staticMethods);
 
@@ -1715,6 +1732,18 @@ namespace MASES.JNetReflector
                 string executionStub = string.Empty;
                 string executionStubDirect = string.Empty;
                 if (forListener && method.IsDefault) methodNameOrigin += SpecialNames.DefaultMethodSuffix;
+
+                string directNewClass = returnType;
+                var indexOfGenerics = returnType.IndexOf('<');
+                if (indexOfGenerics > 0)
+                {
+                    directNewClass = returnType.Insert(indexOfGenerics, SpecialNames.DirectMethodSuffix);
+                }
+                else
+                {
+                    directNewClass = returnType + SpecialNames.DirectMethodSuffix;
+                }
+
                 if (isReturnTypeException)
                 {
                     var execFormat = method.IsStatic() ? AllPackageClasses.ClassStub.MethodStub.STATIC_EXECUTION_FORMAT_EXCEPTION : AllPackageClasses.ClassStub.MethodStub.EXECUTION_FORMAT_EXCEPTION;
@@ -1727,31 +1756,27 @@ namespace MASES.JNetReflector
                 }
                 else
                 {
+                    string executeGenType = $"<{returnType}>";
+                    string executeGenTypeDirect = $"<{directNewClass}, {returnType}>";
+                    if (isListenerReturnType && isDirectListener == true)
+                    {
+                        executeGenType = executeGenTypeDirect;
+                    }
+
                     var execFormat = method.IsStatic() ? AllPackageClasses.ClassStub.MethodStub.STATIC_EXECUTION_FORMAT : AllPackageClasses.ClassStub.MethodStub.EXECUTION_FORMAT;
-                    executionStub = string.Format(execFormat, 
+                    executionStub = string.Format(execFormat,
                                                   method.IsVoid() ? string.Empty : "return ",
                                                   execStub,
-                                                  isVoidMethod || method.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : $"<{returnType}>",
+                                                  isVoidMethod || method.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : executeGenType,
                                                   methodNameOrigin,
                                                   string.IsNullOrWhiteSpace(signature) ? string.Empty : $", \"{signature}\"",
                                                   executionParamsString.Length == 0 ? string.Empty : ", " + executionParamsString);
-                    if (isListenerReturnType)
+                    if (isListenerReturnType && isDirectListener == false)
                     {
-                        string directNewClass = returnType;
-                        var indexOfGenerics = returnType.IndexOf('<');
-                        if (indexOfGenerics > 0)
-                        {
-                            directNewClass = returnType.Insert(indexOfGenerics, SpecialNames.DirectMethodSuffix);
-                        }
-                        else
-                        {
-                            directNewClass = returnType + SpecialNames.DirectMethodSuffix;
-                        }
-
-                        executionStubDirect = string.Format(execFormat, 
+                        executionStubDirect = string.Format(execFormat,
                                                             method.IsVoid() ? string.Empty : "return ",
                                                             execStub,
-                                                            isVoidMethod || method.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : $"<{directNewClass}, {returnType}>",
+                                                            isVoidMethod || method.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : executeGenTypeDirect,
                                                             methodNameOrigin,
                                                             string.IsNullOrWhiteSpace(signature) ? string.Empty : $", \"{signature}\"",
                                                             executionParamsString.Length == 0 ? string.Empty : ", " + executionParamsString);
@@ -1775,33 +1800,29 @@ namespace MASES.JNetReflector
                     }
                     else
                     {
+                        string executeGenType = $"<{returnType}>";
+                        string executeGenTypeDirect = $"<{directNewClass}, {returnType}>";
+                        if (isListenerReturnType && isDirectListener == true)
+                        {
+                            executeGenType = executeGenTypeDirect;
+                        }
+
                         var execFormat = method.IsStatic() ? AllPackageClasses.ClassStub.MethodStub.STATIC_EXECUTION_FORMAT : AllPackageClasses.ClassStub.MethodStub.EXECUTION_FORMAT;
-                        executionStubWithVarArg = string.Format(execFormat, 
+                        executionStubWithVarArg = string.Format(execFormat,
                                                                 isVoidMethod ? string.Empty : "return ",
                                                                 execStub,
-                                                                isVoidMethod || method.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : $"<{returnType}>",
+                                                                isVoidMethod || method.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : executeGenType,
                                                                 methodNameOrigin,
                                                                 string.IsNullOrWhiteSpace(signature) ? string.Empty : $", \"{signature}\"",
                                                                 (executionParamsString.Length == 0 ? string.Empty : ", ")
                                                                 + executionParamsString + ", " + varArg.Name());
 
-                        if (isListenerReturnType)
+                        if (isListenerReturnType && isDirectListener == false)
                         {
-                            string directNewClass = returnType;
-                            var indexOfGenerics = returnType.IndexOf('<');
-                            if (indexOfGenerics > 0)
-                            {
-                                directNewClass = returnType.Insert(indexOfGenerics, SpecialNames.DirectMethodSuffix);
-                            }
-                            else
-                            {
-                                directNewClass = returnType + SpecialNames.DirectMethodSuffix;
-                            }
-
-                            executionStubWithVarArgDirect = string.Format(execFormat, 
+                            executionStubWithVarArgDirect = string.Format(execFormat,
                                                                           isVoidMethod ? string.Empty : "return ",
                                                                           execStub,
-                                                                          isVoidMethod || method.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : $"<{directNewClass}, {returnType}>",
+                                                                          isVoidMethod || method.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : executeGenTypeDirect,
                                                                           methodNameOrigin,
                                                                           string.IsNullOrWhiteSpace(signature) ? string.Empty : $", \"{signature}\"",
                                                                           (executionParamsString.Length == 0 ? string.Empty : ", ")
@@ -1963,6 +1984,7 @@ namespace MASES.JNetReflector
                     template = Template.GetTemplate(Template.SingleMethodTemplate);
                 }
                 if (forListener) modifier = " virtual";
+                if (isDirectListener) modifier = " override";
                 singleMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.DECORATION, jDecoration.ToString())
                                        .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_EXECUTION, listenerHandlerType)
                                        .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_NAME, baseHandlerName)
@@ -1979,10 +2001,10 @@ namespace MASES.JNetReflector
 
                 subClassBlock.AppendLine(singleMethod);
 
-                if (isListenerReturnType && !forListener)
+                if (isListenerReturnType && !forListener && isDirectListener == false)
                 {
                     string directMethodName = methodName;
-                    var indexOfGenerics = methodName.IndexOf('<');
+                    indexOfGenerics = methodName.IndexOf('<');
                     if (indexOfGenerics > 0)
                     {
                         directMethodName = methodName.Insert(indexOfGenerics, SpecialNames.DirectMethodSuffix);
@@ -2173,7 +2195,7 @@ namespace MASES.JNetReflector
 
                 if (method.IsDefault)
                 {
-                    execStub = string.Format(isVoidMethod ? AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_VOID_LISTENER_EXECUTION_FORMAT : AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_TYPED_LISTENER_EXECUTION_FORMAT, 
+                    execStub = string.Format(isVoidMethod ? AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_VOID_LISTENER_EXECUTION_FORMAT : AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_TYPED_LISTENER_EXECUTION_FORMAT,
                                              extendingInterface, methodNameOrigin, executionParamsString.Length == 0 ? string.Empty : executionParamsString);
 
                     var singleDefaultMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
