@@ -22,33 +22,19 @@ namespace Java.Util
 {
     public partial class Collections
     {
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#singletonList(T)"/>
-        /// </summary>
+        /// <inheritdoc cref="SingletonListMethod"/>
         public static List<E> SingletonList<E>(E element) => SingletonListMethod<E>(element);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#singletonMap(K,V)"/>
-        /// </summary>
+        /// <inheritdoc cref="SingletonMapMethod"/>
         public static Map<K, V> SingletonMap<K, V>(K key, V value) => SingletonMapMethod<K, V>(key, value);
-        /// <summary>
-        /// Returns an iterator that has no elements.
-        /// </summary>
+        /// <inheritdoc cref="EmptyIteratorMethod"/>
         public static Iterator<T> EmptyIterator<T>() => EmptyIteratorMethod<T>();
-        /// <summary>
-        /// Returns an empty list(immutable).
-        /// </summary>
+        /// <inheritdoc cref="EmptyListMethod"/>
         public static List<T> EmptyList<T>() => EmptyListMethod<T>();
-        /// <summary>
-        ///  Returns a list iterator that has no elements.
-        /// </summary>
+        /// <inheritdoc cref="EmptyListIteratorMethod"/>
         public static ListIterator<T> EmptyListIterator<T>() => EmptyListIteratorMethod<T>();
-        /// <summary>
-        /// Returns an empty map(immutable).
-        /// </summary>
+        /// <inheritdoc cref="EmptyMapMethod"/>
         public static Map<K, V> EmptyMap<K, V>() => EmptyMapMethod<K, V>();
-        /// <summary>
-        /// Returns an empty set(immutable).
-        /// </summary>
+        /// <inheritdoc cref="EmptySetMethod"/>
         public static Set<T> EmptySet<T>() => EmptySetMethod<T>();
     }
 }
