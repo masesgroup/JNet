@@ -22,39 +22,19 @@ namespace Java.Util
 {
     public partial class Collections
     {
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#singletonList(T)"/>
-        /// </summary>
-        public static List<E> SingletonList<E>(E element)
-        {
-            return SExecute<List<E>>("singleton", element);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#singletonMap(K,V)"/>
-        /// </summary>
-        public static Map<K, V> SingletonMap<K, V>(K key, V value)
-        {
-            return SExecute<Map<K, V>>("singletonMap", key, value);
-        }
-        /// <summary>
-        /// Returns an iterator that has no elements.
-        /// </summary>
-        public static Iterator<T> EmptyIterator<T>() => SExecute<Iterator<T>>("emptyIterator");
-        /// <summary>
-        /// Returns an empty list(immutable).
-        /// </summary>
-        public static List<T> EmptyList<T>() => SExecute<List<T>>("emptyList");
-        /// <summary>
-        ///  Returns a list iterator that has no elements.
-        /// </summary>
-        public static ListIterator<T> EmptyListIterator<T>() => SExecute<ListIterator<T>>("emptyListIterator");
-        /// <summary>
-        /// Returns an empty map(immutable).
-        /// </summary>
-        public static Map<K, V> EmptyMap<K, V>() => SExecute<Map<K, V>>("emptyMap");
-        /// <summary>
-        /// Returns an empty set(immutable).
-        /// </summary>
-        public static Set<T> EmptySet<T>() => SExecute<Set<T>>("emptySet");
+        /// <inheritdoc cref="SingletonListMethod"/>
+        public static List<E> SingletonList<E>(E element) => SingletonListMethod<E>(element);
+        /// <inheritdoc cref="SingletonMapMethod"/>
+        public static Map<K, V> SingletonMap<K, V>(K key, V value) => SingletonMapMethod<K, V>(key, value);
+        /// <inheritdoc cref="EmptyIteratorMethod"/>
+        public static Iterator<T> EmptyIterator<T>() => EmptyIteratorMethod<T>();
+        /// <inheritdoc cref="EmptyListMethod"/>
+        public static List<T> EmptyList<T>() => EmptyListMethod<T>();
+        /// <inheritdoc cref="EmptyListIteratorMethod"/>
+        public static ListIterator<T> EmptyListIterator<T>() => EmptyListIteratorMethod<T>();
+        /// <inheritdoc cref="EmptyMapMethod"/>
+        public static Map<K, V> EmptyMap<K, V>() => EmptyMapMethod<K, V>();
+        /// <inheritdoc cref="EmptySetMethod"/>
+        public static Set<T> EmptySet<T>() => EmptySetMethod<T>();
     }
 }
