@@ -65,6 +65,7 @@ namespace MASES.JNetReflector
                     innerException = innerException.InnerException;
                 }
                 ShowHelp(sb.ToString());
+                Environment.ExitCode = 1;
             }
             catch (Exception e)
             {
@@ -85,6 +86,7 @@ namespace MASES.JNetReflector
                     innerException = innerException.InnerException;
                 }
                 ShowHelp(sb.ToString());
+                Environment.ExitCode = 1;
             }
             finally
             {
