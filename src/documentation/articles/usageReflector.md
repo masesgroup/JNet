@@ -50,6 +50,7 @@ _jnr_ accepts the following command-line switch:
 * **NamespacesInConflict**: A CSV list of namespaces in conflict with class name: to this one will be added an "Ns" at the end
 * **ClassesInConflict**: A CSV list of classes in conflict with namespace name: to this one will be added an "Class" at the end
 * **PreferMethodWithSignature**: The option forces the tool to identify and use signature when available
+* **DisablePropertiesForGetterSetter**: The option disable generation of properties for getter/setter methods
 * **OnlyPropertiesForGetterSetter**: The option forces the tool to convert into properties only getter/setter
 * **ReflectDeprecated**: The option forces the tool to write any constructor, method or field marked as deprecated, default is to avoid deprecated
 * **AvoidCSharpGenericDefinition**: The option forces the tool to reflect generics without create the C# generic definition

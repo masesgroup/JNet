@@ -1235,7 +1235,7 @@ namespace MASES.JNetReflector
                 var paramCount = method.ParameterCount;
                 var methodNameOrigin = method.Name;
 
-                if (!forListener && method.IsProperty()) // avoid properties in Listeners
+                if (!JNetReflectorCore.DisablePropertiesForGetterSetter && !forListener && method.IsProperty()) // avoid properties in Listeners
                 {
                     var propertyName = method.PropertyName(classDefinitions, false, JNetReflectorCore.UseCamel);
                     if (propertyName.IsReservedName()

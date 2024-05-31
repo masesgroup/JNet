@@ -99,6 +99,8 @@ namespace MASES.JNetReflector
 
             public bool PreferMethodWithSignature { get; set; }
 
+            public bool DisablePropertiesForGetterSetter { get; set; }
+
             public bool OnlyPropertiesForGetterSetter { get; set; }
 
             public bool ReflectDeprecated { get; set; }
@@ -296,6 +298,12 @@ namespace MASES.JNetReflector
                     },
                     new ArgumentMetadata<object>()
                     {
+                        Name = CLIParam.DisablePropertiesForGetterSetter,
+                        Type = ArgumentType.Single,
+                        Help = "The option disable generation of properties for getter/setter methods",
+                    },
+                    new ArgumentMetadata<object>()
+                    {
                         Name = CLIParam.OnlyPropertiesForGetterSetter,
                         Type = ArgumentType.Single,
                         Help = "The option forces the tool to convert into properties only getter/setter",
@@ -473,6 +481,9 @@ namespace MASES.JNetReflector
 
         static bool? _PreferMethodWithSignature;
         public static bool PreferMethodWithSignature => _PreferMethodWithSignature ?? _ConfigurationFromFile.PreferMethodWithSignature;
+
+        static bool? _DisablePropertiesForGetterSetter;
+        public static bool DisablePropertiesForGetterSetter => _DisablePropertiesForGetterSetter ?? _ConfigurationFromFile.DisablePropertiesForGetterSetter;
 
         static bool? _OnlyPropertiesForGetterSetter;
         public static bool OnlyPropertiesForGetterSetter => _OnlyPropertiesForGetterSetter ?? _ConfigurationFromFile.OnlyPropertiesForGetterSetter;
@@ -704,6 +715,7 @@ namespace MASES.JNetReflector
             _JavadocVersion = ParsedArgs.Get<int>(CLIParam.JavadocVersion);
 
             if (ParsedArgs.Exist(CLIParam.PreferMethodWithSignature)) _PreferMethodWithSignature = true;
+            if (ParsedArgs.Exist(CLIParam.DisablePropertiesForGetterSetter)) _DisablePropertiesForGetterSetter = true;
             if (ParsedArgs.Exist(CLIParam.OnlyPropertiesForGetterSetter)) _OnlyPropertiesForGetterSetter = true;
             if (ParsedArgs.Exist(CLIParam.ReflectDeprecated)) _ReflectDeprecated = true;
             if (ParsedArgs.Exist(CLIParam.AvoidCSharpGenericDefinition)) _AvoidCSharpGenericDefinition = true;

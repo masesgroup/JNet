@@ -52,6 +52,7 @@ namespace MASES.JNetReflector
         public const string ClassesToAvoid = "ClassesToAvoid";
         public const string ClassesToAvoidInGenerics = "ClassesToAvoidInGenerics";
         public const string PreferMethodWithSignature = "PreferMethodWithSignature";
+        public const string DisablePropertiesForGetterSetter = "DisablePropertiesForGetterSetter";
         public const string OnlyPropertiesForGetterSetter = "OnlyPropertiesForGetterSetter";
         public const string ReflectDeprecated = "ReflectDeprecated";
         public const string AvoidCSharpGenericDefinition = "AvoidCSharpGenericDefinition";
