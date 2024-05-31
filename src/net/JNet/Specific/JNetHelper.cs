@@ -56,6 +56,17 @@ namespace MASES.JNet.Specific
         public override bool IsBridgeStatic => false;
 
         /// <summary>
+        /// Retrieve the <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName.htm"/> of <typeparamref name="TClass"></typeparamref>
+        /// </summary>
+        /// <typeparam name="TClass">A type implementing <see href="https://www.jcobridge.com/api-clr/html/T_MASES_JCOBridge_C2JBridge_IJVMBridgeBase.htm"/></typeparam>
+        /// <returns>The <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName.htm"/></returns>
+        public static Java.Lang.Class<TClass> Class<TClass>() where TClass : IJVMBridgeBase, new()
+        {
+            var className = JVMBridgeBase.ClassNameOf<TClass>();
+            return Java.Lang.Class<TClass>.SExecute<Java.Lang.Class<TClass>>("forName", className);
+        }
+
+        /// <summary>
         /// Executes the <see href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/util/Arrays.html#asList(T...)"/> over primitive types
         /// </summary>
         /// <param name="data">Array of primitive types</param>
