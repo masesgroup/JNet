@@ -44,6 +44,7 @@ namespace MASES.JNetReflector
         public const string ModulesToParse = "ModulesToParse";
         public const string ClassesManuallyDeveloped = "ClassesManuallyDeveloped";
         public const string ClassesToBeListener = "ClassesToBeListener";
+        public const string ClassesToRemoveAsListener = "ClassesToRemoveAsListener";
         public const string ClassesToAvoidJavaListener = "ClassesToAvoidJavaListener";
         public const string NamespacesInConflict = "NamespacesInConflict";
         public const string ClassesInConflict = "ClassesInConflict";
@@ -100,6 +101,7 @@ namespace MASES.JNetReflector
         public const string JavaLangAdapter = "Adapter";
         public const string ArrayTypeTrailer = "[]";
         public const string PropertySuffix = "Property";
+        public const string FieldSuffix = "Field";
         public const string MethodSuffix = "Method";
         public const string DefaultMethodSuffix = "Default";
         public const string DirectMethodSuffix = "Direct";
@@ -204,6 +206,8 @@ namespace MASES.JNetReflector
             lst.Add("enum");
             lst.Add("namespace");
             lst.Add("where");
+            lst.Add("bool");
+            lst.Add("string");
             return lst;
         }
 

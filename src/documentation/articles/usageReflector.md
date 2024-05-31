@@ -45,6 +45,7 @@ _jnr_ accepts the following command-line switch:
 * **ClassesToAvoidInGenerics**: A CSV list of classes to be removed during analysis from the classes which have generics types
 * **ClassesManuallyDeveloped**: A CSV list of class names will be manually developed
 * **ClassesToBeListener**: A CSV list of class names to be treated as Listener, the tool consider any class which its name ends with "Listener" or "Adapter" as Listener
+* **ClassesToRemoveAsListener**: A CSV list of class names to be removed from the list of Listener identified since the tool consider any class which its name ends with "Listener" or "Adapter" as Listener
 * **ClassesToAvoidJavaListener**: A CSV list of class names to be avoided during generation of Java listener classes
 * **NamespacesInConflict**: A CSV list of namespaces in conflict with class name: to this one will be added an "Ns" at the end
 * **ClassesInConflict**: A CSV list of classes in conflict with namespace name: to this one will be added an "Class" at the end

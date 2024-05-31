@@ -123,6 +123,7 @@ namespace MASES.JNetReflector
 
         static bool IsJVMListenerClass(this string typeName)
         {
+            if (JNetReflectorCore.ClassesToRemoveAsListener != null && JNetReflectorCore.ClassesToRemoveAsListener.Any((o) => typeName == o)) return false;
             if (typeName.StartsWith(SpecialNames.JavaUtilFunctions)) return true;
             if (typeName.EndsWith(SpecialNames.JavaLangListener)) return true;
             if (typeName.EndsWith(SpecialNames.JavaLangAdapter)) return true;

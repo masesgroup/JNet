@@ -2259,7 +2259,7 @@ namespace MASES.JNetReflector
 
                 if (fieldName.IsReservedName() || fieldName.CollapseWithClassOrNestedClass(nestingLevel, classDefinitions))
                 {
-                    fieldName += "Field";
+                    fieldName += SpecialNames.FieldSuffix;
                 }
 
                 ReportTrace(ReflectionTraceLevel.Debug, "Preparing field {0}", field.GenericString);

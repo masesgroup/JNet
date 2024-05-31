@@ -83,6 +83,8 @@ namespace MASES.JNetReflector
 
             public IEnumerable<string> ClassesToBeListener { get; set; }
 
+            public IEnumerable<string> ClassesToRemoveAsListener { get; set; }
+
             public IEnumerable<string> ClassesToAvoidJavaListener { get; set; }
 
             public IEnumerable<string> NamespacesInConflict { get; set; }
@@ -243,6 +245,12 @@ namespace MASES.JNetReflector
                         Name = CLIParam.ClassesToBeListener,
                         Type = ArgumentType.Double,
                         Help = "A CSV list of class names to be treated as Listener, the tool consider any class which its name ends with \"Listener\" or \"Adapter\" as Listener",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.ClassesToRemoveAsListener,
+                        Type = ArgumentType.Double,
+                        Help = "A CSV list of class names to be removed from the list of Listener identified since the tool consider any class which its name ends with \"Listener\" or \"Adapter\" as Listener",
                     },
                     new ArgumentMetadata<string>()
                     {
@@ -442,6 +450,9 @@ namespace MASES.JNetReflector
         static IEnumerable<string> _ClassesToBeListener;
         public static IEnumerable<string> ClassesToBeListener => _ClassesToBeListener ?? _ConfigurationFromFile.ClassesToBeListener;
 
+        static IEnumerable<string> _ClassesToRemoveAsListener;
+        public static IEnumerable<string> ClassesToRemoveAsListener => _ClassesToRemoveAsListener ?? _ConfigurationFromFile.ClassesToRemoveAsListener;
+
         static IEnumerable<string> _ClassesToAvoidJavaListener;
         public static IEnumerable<string> ClassesToAvoidJavaListener => _ClassesToAvoidJavaListener ?? _ConfigurationFromFile.ClassesToAvoidJavaListener;
 
@@ -602,6 +613,17 @@ namespace MASES.JNetReflector
                     if (!classesToBeListener.Contains(item)) classesToBeListener.Add(item);
                 }
                 _ClassesToBeListener = classesToBeListener;
+            }
+
+            List<string> classesToRemoveAsListener = new List<string>();
+            if (ParsedArgs.Exist(CLIParam.ClassesToRemoveAsListener))
+            {
+                var classes = ParsedArgs.Get<string>(CLIParam.ClassesToRemoveAsListener).Split(',', ';');
+                foreach (var item in classes)
+                {
+                    if (!classesToRemoveAsListener.Contains(item)) classesToRemoveAsListener.Add(item);
+                }
+                _ClassesToRemoveAsListener = classesToRemoveAsListener;
             }
 
             List<string> classesToAvoidJavaListener = new List<string>();
