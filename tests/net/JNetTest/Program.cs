@@ -79,7 +79,7 @@ namespace MASES.JNetTest
             System.Console.WriteLine("TestEquality");
 
             var cls = Java.Lang.Class.Of<Vector<string>>();
-            var cls2 = JNetTestCore.Class<Vector<string>>();
+            var cls2 = JNetHelper.Class<Vector<string>>();
 
             var res = cls.Equals(cls2);
             System.Console.WriteLine($"Class are equals: {res}");
