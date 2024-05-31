@@ -30,7 +30,7 @@ namespace MASES.JNet.Specific
     /// </summary>
     public sealed class JNetHelper : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JNetHelper>
     {
-        const string _bridgeClassName = "org.mases.jnet.JNetHelper";
+        const string _bridgeClassName = "org.mases.jnet.developed.JNetHelper";
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 

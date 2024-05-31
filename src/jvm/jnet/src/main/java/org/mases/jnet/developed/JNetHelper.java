@@ -16,7 +16,7 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.jnet;
+package org.mases.jnet.developed;
 
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;

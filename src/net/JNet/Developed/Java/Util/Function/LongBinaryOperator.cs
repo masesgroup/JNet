@@ -43,7 +43,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.util.function.JNetLongBinaryOperator";
+        public override string BridgeClassName => "org.mases.jnet.developed.java.util.function.JNetLongBinaryOperator";
 
         /// <summary>
         /// The <see cref="Func{Int64, Int64, Int64}"/> to be executed

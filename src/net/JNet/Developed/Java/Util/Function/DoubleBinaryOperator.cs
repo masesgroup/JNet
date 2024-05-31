@@ -43,7 +43,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.util.function.JNetDoubleBinaryOperator";
+        public override string BridgeClassName => "org.mases.jnet.developed.java.util.function.JNetDoubleBinaryOperator";
 
         /// <summary>
         /// The <see cref="Func{Double, Double, Double}"/> to be executed
