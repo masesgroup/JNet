@@ -83,7 +83,8 @@ namespace MASES.JNetReflector
         public const string ClassExtension = ".class";
         public const char JNISeparator = '/';
         public const char NamespaceSeparator = '.';
-        public const char NestedClassSeparator = '$'; 
+        public const char NestedClassSeparator = '$';
+        public const char ListenerNestedClassSeparator = '_';
         public const string BeginGenericDeclaration = "<";
         public const string EndGenericDeclaration = ">";
         public const string NetObject = "object";

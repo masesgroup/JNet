@@ -49,6 +49,7 @@ namespace MASES.JNetReflector
                 }
                 public int Version { get; set; }
                 public string Url { get; set; }
+                public bool NoModule { get; set; }
             }
 
             public string JavaPLocationPath { get; set; }

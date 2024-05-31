@@ -128,14 +128,16 @@ namespace MASES.JNetReflector
             {
                 string javadocUrl = JNetReflectorCore.OriginJavadocUrl;
                 int javadocVersion = JNetReflectorCore.JavadocVersion;
+                bool noModule = false;
                 if (JNetReflectorCore.OriginJavadocJARVersionAndUrls != null)
                 {
                     var data = JNetReflectorCore.OriginJavadocJARVersionAndUrls.ElementAt(i);
                     javadocVersion = data.Version;
                     javadocUrl = data.Url;
+                    noModule = data.NoModule;
                 }
 
-                AnalyzeJar(jarNames[i], javadocUrl, javadocVersion);
+                AnalyzeJar(jarNames[i], javadocUrl, javadocVersion, noModule);
             }
         }
 
@@ -151,7 +153,7 @@ namespace MASES.JNetReflector
                     resultingArguments.AddItem(jSubClass);
                 }
             }
-            JNetReflectorExtensions.SetJavaDocInfo(JNetReflectorCore.OriginJavadocUrl, JNetReflectorCore.JavadocVersion);
+            JNetReflectorExtensions.SetJavaDocInfo(JNetReflectorCore.OriginJavadocUrl, JNetReflectorCore.JavadocVersion, false);
             JarOrModuleName = "CustomSelection";
             resultingArguments.AnalyzeItems();
         }
@@ -181,7 +183,7 @@ namespace MASES.JNetReflector
             subEntries.Add(cls.Name, cls);
         }
 
-        public static void AnalyzeJar(string pathToJar, string javadocUrl, int javadocVersion)
+        public static void AnalyzeJar(string pathToJar, string javadocUrl, int javadocVersion, bool noModule)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Jar {0} *******************", pathToJar);
             using (ZipArchive archive = ZipFile.OpenRead(pathToJar))
@@ -202,7 +204,7 @@ namespace MASES.JNetReflector
                 }
 
                 ReportTrace(ReflectionTraceLevel.Info, "Starting analysis for {0} entries", resultingArguments.Count);
-                JNetReflectorExtensions.SetJavaDocInfo(javadocUrl, javadocVersion);
+                JNetReflectorExtensions.SetJavaDocInfo(javadocUrl, javadocVersion, noModule);
                 JarOrModuleName = Path.GetFileName(pathToJar);
                 resultingArguments.AnalyzeItems();
             }
@@ -229,7 +231,7 @@ namespace MASES.JNetReflector
             }
 
             ReportTrace(ReflectionTraceLevel.Info, "Starting analysis for {0} entries", data.Count);
-            JNetReflectorExtensions.SetJavaDocInfo(JNetReflectorCore.OriginJavadocUrl, JNetReflectorCore.JavadocVersion);
+            JNetReflectorExtensions.SetJavaDocInfo(JNetReflectorCore.OriginJavadocUrl, JNetReflectorCore.JavadocVersion, true);
             JarOrModuleName = ns;
             data.AnalyzeItems();
         }
@@ -645,7 +647,7 @@ namespace MASES.JNetReflector
             {
                 javaClassListenerPackage = JNetReflectorCore.JavaListenerBasePackage;
                 javaClassListenerPackage += string.IsNullOrEmpty(jClass.Package.Name) ? string.Empty : SpecialNames.NamespaceSeparator + jClass.Package.Name;
-                javaClassListenerName = javaClassListenerPackage + SpecialNames.NamespaceSeparator + jClass.SimpleName;
+                javaClassListenerName = javaClassListenerPackage + SpecialNames.NamespaceSeparator + jClass.JVMListenerClassName();
             }
             bool isClassCloseable = jClass.IsCloseable();
             bool isClassAbstract = jClass.IsAbstract();
@@ -825,7 +827,7 @@ namespace MASES.JNetReflector
 
             if (bPrepareJavaListener)
             {
-                var clsName = jClass.SimpleName;
+                var clsName = jClass.JVMListenerClassName();
                 var fullInterfaces = jClass.Name.Replace(SpecialNames.NestedClassSeparator, SpecialNames.NamespaceSeparator);
 
                 var javaClassMethodBlock = jClass.AnalyzeJavaMethods(fullInterfaces, isGeneric).AddTabLevel(1);

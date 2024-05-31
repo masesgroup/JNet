@@ -26,6 +26,7 @@ using Java.Lang.Reflect;
 using System.Text;
 using MASES.JNetReflector.Templates;
 using System.Runtime.CompilerServices;
+using System.Reflection;
 
 namespace MASES.JNetReflector
 {
@@ -33,13 +34,15 @@ namespace MASES.JNetReflector
     {
         static string _CurrentJavadocBaseUrl;
         static int _CurrentJavadocVersion;
+        static bool _CurrentNoModule;
 
         #region General info
 
-        public static void SetJavaDocInfo(string currentJavadocBaseUrl, int currentJavadocVersion)
+        public static void SetJavaDocInfo(string currentJavadocBaseUrl, int currentJavadocVersion, bool noModule)
         {
             _CurrentJavadocBaseUrl = currentJavadocBaseUrl;
             _CurrentJavadocVersion = currentJavadocVersion;
+            _CurrentNoModule = noModule;
         }
 
         #endregion
@@ -1034,7 +1037,15 @@ namespace MASES.JNetReflector
 
         public static bool IsJVMListenerClass(this Class entry)
         {
-            return entry.TypeName.IsJVMListenerClass();
+            if (entry.TypeName.IsJVMListenerClass())
+            {
+                if (!entry.IsInterface && entry.Interfaces.Length != 0) // if a class and there aren't interfaces it is not a listener
+                {
+                    return false;
+                }
+                return true;
+            }
+            return false;
         }
 
         public static bool ImplementsJVMListenerClass(this Class entry)
@@ -1106,6 +1117,13 @@ namespace MASES.JNetReflector
             var cName = entry.TypeName;
             cName = cName.Contains(SpecialNames.NamespaceSeparator) ? cName.Remove(0, cName.LastIndexOf(SpecialNames.NamespaceSeparator) + 1) : cName;
             return cName.Contains(SpecialNames.NestedClassSeparator) ? cName.Substring(0, cName.LastIndexOf(SpecialNames.NestedClassSeparator)) : cName;
+        }
+
+        public static string JVMListenerClassName(this Class entry)
+        {
+            var cName = entry.Name;
+            cName = cName.Replace(SpecialNames.NestedClassSeparator, SpecialNames.ListenerNestedClassSeparator);
+            return cName;
         }
 
         public static void GetGenerics(this Class entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool usedInGenerics, bool camel)
@@ -2022,11 +2040,14 @@ namespace MASES.JNetReflector
                     catch (System.Exception e)
 #endif
                     {
-                        var name = module.ToString();
-                        if (!string.IsNullOrEmpty(name) && !name.StartsWith("unnamed"))
+                        if (!_CurrentNoModule)
                         {
-                            name = name.Remove(0, "module ".Length);
-                            newURl += name + "/";
+                            var name = module.ToString();
+                            if (!string.IsNullOrEmpty(name) && !name.StartsWith("unnamed"))
+                            {
+                                name = name.Remove(0, "module ".Length);
+                                newURl += name + "/";
+                            }
                         }
                     }
                 }
