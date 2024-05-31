@@ -42,7 +42,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.util.function.JNetDoublePredicate";
+        public override string BridgeClassName => "org.mases.jnet.developed.java.util.function.JNetDoublePredicate";
 
         /// <summary>
         /// The <see cref="Func{TObject, Boolean}"/> to be executed

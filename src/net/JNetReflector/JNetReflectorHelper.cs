@@ -40,7 +40,7 @@ namespace Org.Mases.Jnet
     {
         static string JNetReflectorHelperTempFolder = Path.Combine(Path.GetDirectoryName(typeof(JNetReflectorHelper).Assembly.Location));
 
-        public override string BridgeClassName => "org.mases.jnet.JNetReflectorHelper";
+        public override string BridgeClassName => "org.mases.jnet.developed.JNetReflectorHelper";
 
         /// <summary>
         /// Enable or disable logging

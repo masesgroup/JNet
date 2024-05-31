@@ -48,7 +48,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.util.JNetComparator";
+        public override string BridgeClassName => "org.mases.jnet.developed.java.util.JNetComparator";
     }
 
     /// <inheritdoc cref="Comparator"/>

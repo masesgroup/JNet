@@ -28,6 +28,17 @@
 		<None Include="..\..\..\jars\*.jar" Pack="true" PackagePath="build\jars" />
 		<None Include="..\..\documentation\articles\usage.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
+	<ItemGroup Condition="'$(GITHUB_SIMPLIFIED_GENERATION)' == 'true'">
+		<Compile Remove="Developed\**" />
+		<Compile Remove="Generated\**" />
+		<Compile Remove="Specific\**" />
+		<EmbeddedResource Remove="Developed\**" />
+		<EmbeddedResource Remove="Generated\**" />
+		<EmbeddedResource Remove="Specific\**" />
+		<None Remove="Developed\**" />
+		<None Remove="Generated\**" />
+		<None Remove="Specific\**" />
+	</ItemGroup>
 	<ItemGroup>
 		<Compile Remove="Generated\Java\Util\Function\**" />
 		<None Remove="Generated\Java\Util\Function\**" />
