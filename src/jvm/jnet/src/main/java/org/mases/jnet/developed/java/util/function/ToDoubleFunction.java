@@ -16,18 +16,16 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.jnet.util.function;
+package org.mases.jnet.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.ToDoubleFunction;
-
 /**
- * The {@link JNetToDoubleFunction} class represents a generic implementation of
- * {@link ToDoubleFunction}
+ * The {@link ToDoubleFunction} class represents a generic implementation of
+ * {@link java.util.function.ToDoubleFunction}
  */
-public final class JNetToDoubleFunction extends JCListener implements ToDoubleFunction {
-    public JNetToDoubleFunction(String key) throws JCNativeException {
+public final class ToDoubleFunction extends JCListener implements java.util.function.ToDoubleFunction {
+    public ToDoubleFunction(String key) throws JCNativeException {
         super(key);
     }
 

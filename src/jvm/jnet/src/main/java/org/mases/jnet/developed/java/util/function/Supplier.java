@@ -16,18 +16,16 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.jnet.util.function;
+package org.mases.jnet.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.Supplier;
-
 /**
- * The {@link JNetSupplier} class represents a generic implementation of
- * {@link Supplier}
+ * The {@link Supplier} class represents a generic implementation of
+ * {@link java.util.function.Supplier}
  */
-public final class JNetSupplier extends JCListener implements Supplier {
-    public JNetSupplier(String key) throws JCNativeException {
+public final class Supplier extends JCListener implements java.util.function.Supplier {
+    public Supplier(String key) throws JCNativeException {
         super(key);
     }
 

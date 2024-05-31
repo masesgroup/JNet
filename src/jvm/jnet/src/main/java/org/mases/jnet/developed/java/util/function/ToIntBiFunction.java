@@ -16,18 +16,16 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.jnet.util.function;
+package org.mases.jnet.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.ToIntBiFunction;
-
 /**
- * The {@link JNetToIntBiFunction} class represents a generic implementation of
- * {@link ToIntBiFunction}
+ * The {@link ToIntBiFunction} class represents a generic implementation of
+ * {@link java.util.function.ToIntBiFunction}
  */
-public final class JNetToIntBiFunction extends JCListener implements ToIntBiFunction {
-    public JNetToIntBiFunction(String key) throws JCNativeException {
+public final class ToIntBiFunction extends JCListener implements java.util.function.ToIntBiFunction {
+    public ToIntBiFunction(String key) throws JCNativeException {
         super(key);
     }
 

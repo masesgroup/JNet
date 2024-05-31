@@ -16,18 +16,16 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.jnet.util.function;
+package org.mases.jnet.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.ToIntFunction;
-
 /**
- * The {@link JNetToIntFunction} class represents a generic implementation of
- * {@link ToIntFunction}
+ * The {@link ToIntFunction} class represents a generic implementation of
+ * {@link java.util.function.ToIntFunction}
  */
-public final class JNetToIntFunction extends JCListener implements ToIntFunction {
-    public JNetToIntFunction(String key) throws JCNativeException {
+public final class ToIntFunction extends JCListener implements java.util.function.ToIntFunction {
+    public ToIntFunction(String key) throws JCNativeException {
         super(key);
     }
 

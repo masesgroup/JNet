@@ -16,18 +16,16 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.jnet.util.function;
+package org.mases.jnet.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.LongUnaryOperator;
-
 /**
- * The {@link JNetLongUnaryOperator} class represents a generic implementation of
- * {@link LongUnaryOperator}
+ * The {@link LongUnaryOperator} class represents a generic implementation of
+ * {@link java.util.function.LongUnaryOperator}
  */
-public final class JNetLongUnaryOperator extends JCListener implements LongUnaryOperator {
-    public JNetLongUnaryOperator(String key) throws JCNativeException {
+public final class LongUnaryOperator extends JCListener implements java.util.function.LongUnaryOperator {
+    public LongUnaryOperator(String key) throws JCNativeException {
         super(key);
     }
 

@@ -16,18 +16,16 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.jnet.util.function;
+package org.mases.jnet.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.LongSupplier;
-
 /**
- * The {@link JNetLongSupplier} class represents a generic implementation of
- * {@link LongSupplier}
+ * The {@link LongSupplier} class represents a generic implementation of
+ * {@link java.util.function.LongSupplier}
  */
-public final class JNetLongSupplier extends JCListener implements LongSupplier {
-    public JNetLongSupplier(String key) throws JCNativeException {
+public final class LongSupplier extends JCListener implements java.util.function.LongSupplier {
+    public LongSupplier(String key) throws JCNativeException {
         super(key);
     }
 

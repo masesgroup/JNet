@@ -16,18 +16,16 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.jnet.util.function;
+package org.mases.jnet.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.Function;
-
 /**
- * The {@link JNetFunction} class represents a generic implementation of
- * {@link Function}
+ * The {@link Function} class represents a generic implementation of
+ * {@link java.util.function.Function}
  */
-public final class JNetFunction extends JCListener implements Function {
-    public JNetFunction(String key) throws JCNativeException {
+public final class Function extends JCListener implements java.util.function.Function {
+    public Function(String key) throws JCNativeException {
         super(key);
     }
 

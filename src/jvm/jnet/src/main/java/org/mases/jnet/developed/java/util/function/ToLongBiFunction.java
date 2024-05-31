@@ -16,18 +16,16 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.jnet.util.function;
+package org.mases.jnet.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.ToLongBiFunction;
-
 /**
- * The {@link JNetToLongBiFunction} class represents a generic implementation of
- * {@link ToLongBiFunction}
+ * The {@link ToLongBiFunction} class represents a generic implementation of
+ * {@link java.util.function.ToLongBiFunction}
  */
-public final class JNetToLongBiFunction extends JCListener implements ToLongBiFunction {
-    public JNetToLongBiFunction(String key) throws JCNativeException {
+public final class ToLongBiFunction extends JCListener implements java.util.function.ToLongBiFunction {
+    public ToLongBiFunction(String key) throws JCNativeException {
         super(key);
     }
 

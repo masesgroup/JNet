@@ -16,18 +16,16 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.jnet.util.function;
+package org.mases.jnet.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.IntUnaryOperator;
-
 /**
- * The {@link JNetIntUnaryOperator} class represents a generic implementation of
- * {@link IntUnaryOperator}
+ * The {@link IntUnaryOperator} class represents a generic implementation of
+ * {@link java.util.function.IntUnaryOperator}
  */
-public final class JNetIntUnaryOperator extends JCListener implements IntUnaryOperator {
-    public JNetIntUnaryOperator(String key) throws JCNativeException {
+public final class IntUnaryOperator extends JCListener implements java.util.function.IntUnaryOperator {
+    public IntUnaryOperator(String key) throws JCNativeException {
         super(key);
     }
 

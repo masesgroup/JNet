@@ -16,18 +16,16 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.jnet.util.function;
+package org.mases.jnet.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.BooleanSupplier;
-
 /**
- * The {@link JNetBooleanSupplier} class represents a generic implementation of
- * {@link BooleanSupplier}
+ * The {@link BooleanSupplier} class represents a generic implementation of
+ * {@link java.util.function.BooleanSupplier}
  */
-public final class JNetBooleanSupplier extends JCListener implements BooleanSupplier {
-    public JNetBooleanSupplier(String key) throws JCNativeException {
+public final class BooleanSupplier extends JCListener implements java.util.function.BooleanSupplier {
+    public BooleanSupplier(String key) throws JCNativeException {
         super(key);
     }
 

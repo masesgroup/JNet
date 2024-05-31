@@ -16,18 +16,16 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.jnet.util.function;
+package org.mases.jnet.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.LongToDoubleFunction;
-
 /**
- * The {@link JNetLongToDoubleFunction} class represents a generic implementation of
- * {@link LongToDoubleFunction}
+ * The {@link LongToDoubleFunction} class represents a generic implementation of
+ * {@link java.util.function.LongToDoubleFunction}
  */
-public final class JNetLongToDoubleFunction extends JCListener implements LongToDoubleFunction {
-    public JNetLongToDoubleFunction(String key) throws JCNativeException {
+public final class LongToDoubleFunction extends JCListener implements java.util.function.LongToDoubleFunction {
+    public LongToDoubleFunction(String key) throws JCNativeException {
         super(key);
     }
 

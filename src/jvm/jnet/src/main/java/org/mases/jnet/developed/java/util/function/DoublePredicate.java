@@ -16,18 +16,16 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.jnet.util.function;
+package org.mases.jnet.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.DoublePredicate;
-
 /**
- * The {@link JNetDoublePredicate} class represents a generic implementation of
- * {@link DoublePredicate}
+ * The {@link DoublePredicate} class represents a generic implementation of
+ * {@link java.util.function.DoublePredicate}
  */
-public final class JNetDoublePredicate extends JCListener implements DoublePredicate {
-    public JNetDoublePredicate(String key) throws JCNativeException {
+public final class DoublePredicate extends JCListener implements java.util.function.DoublePredicate {
+    public DoublePredicate(String key) throws JCNativeException {
         super(key);
     }
 

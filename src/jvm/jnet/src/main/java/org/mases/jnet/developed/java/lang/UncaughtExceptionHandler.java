@@ -16,18 +16,18 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.jnet.lang;
+package org.mases.jnet.developed.java.lang;
 
 import org.mases.jcobridge.JCListener;
 import org.mases.jcobridge.JCNativeException;
 import org.mases.jcobridge.JCObject;
 
 /**
- * The {@link JNetUncaughtExceptionHandler} class represents a generic implementation of
+ * The {@link UncaughtExceptionHandler} class represents a generic implementation of
  * {@link Thread.UncaughtExceptionHandler}
  */
-public class JNetUncaughtExceptionHandler extends JCListener implements Thread.UncaughtExceptionHandler {
-    public JNetUncaughtExceptionHandler(String key) throws JCNativeException {
+public class UncaughtExceptionHandler extends JCListener implements Thread.UncaughtExceptionHandler {
+    public UncaughtExceptionHandler(String key) throws JCNativeException {
         super(key);
     }
 

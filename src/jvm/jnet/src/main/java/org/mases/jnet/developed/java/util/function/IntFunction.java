@@ -16,18 +16,16 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.jnet.util.function;
+package org.mases.jnet.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.IntFunction;
-
 /**
- * The {@link JNetIntFunction} class represents a generic implementation of
- * {@link IntFunction}
+ * The {@link IntFunction} class represents a generic implementation of
+ * {@link java.util.function.IntFunction}
  */
-public final class JNetIntFunction extends JCListener implements IntFunction {
-    public JNetIntFunction(String key) throws JCNativeException {
+public final class IntFunction extends JCListener implements java.util.function.IntFunction {
+    public IntFunction(String key) throws JCNativeException {
         super(key);
     }
 

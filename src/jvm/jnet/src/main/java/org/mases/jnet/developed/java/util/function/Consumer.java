@@ -16,18 +16,16 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.jnet.util.function;
+package org.mases.jnet.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.Consumer;
-
 /**
- * The {@link JNetConsumer} class represents a generic implementation of
- * {@link Consumer}
+ * The {@link Consumer} class represents a generic implementation of
+ * {@link java.util.function.Consumer}
  */
-public final class JNetConsumer extends JCListener implements Consumer {
-    public JNetConsumer(String key) throws JCNativeException {
+public final class Consumer extends JCListener implements java.util.function.Consumer {
+    public Consumer(String key) throws JCNativeException {
         super(key);
     }
 

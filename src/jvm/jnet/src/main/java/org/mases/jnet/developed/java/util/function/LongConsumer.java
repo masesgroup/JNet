@@ -16,18 +16,16 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.jnet.util.function;
+package org.mases.jnet.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.LongConsumer;
-
 /**
- * The {@link JNetLongConsumer} class represents a generic implementation of
- * {@link LongConsumer}
+ * The {@link LongConsumer} class represents a generic implementation of
+ * {@link java.util.function.LongConsumer}
  */
-public final class JNetLongConsumer extends JCListener implements LongConsumer {
-    public JNetLongConsumer(String key) throws JCNativeException {
+public final class LongConsumer extends JCListener implements java.util.function.LongConsumer {
+    public LongConsumer(String key) throws JCNativeException {
         super(key);
     }
 

@@ -16,18 +16,16 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.jnet.util.function;
+package org.mases.jnet.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.ObjIntConsumer;
-
 /**
- * The {@link JNetObjIntConsumer} class represents a generic implementation of
- * {@link ObjIntConsumer}
+ * The {@link ObjIntConsumer} class represents a generic implementation of
+ * {@link java.util.function.ObjIntConsumer}
  */
-public final class JNetObjIntConsumer extends JCListener implements ObjIntConsumer {
-    public JNetObjIntConsumer(String key) throws JCNativeException {
+public final class ObjIntConsumer extends JCListener implements java.util.function.ObjIntConsumer {
+    public ObjIntConsumer(String key) throws JCNativeException {
         super(key);
     }
 

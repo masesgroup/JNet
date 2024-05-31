@@ -16,18 +16,16 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.jnet.util.function;
+package org.mases.jnet.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.LongFunction;
-
 /**
- * The {@link JNetLongFunction} class represents a generic implementation of
- * {@link LongFunction}
+ * The {@link LongFunction} class represents a generic implementation of
+ * {@link java.util.function.LongFunction}
  */
-public final class JNetLongFunction extends JCListener implements LongFunction {
-    public JNetLongFunction(String key) throws JCNativeException {
+public final class LongFunction extends JCListener implements java.util.function.LongFunction {
+    public LongFunction(String key) throws JCNativeException {
         super(key);
     }
 

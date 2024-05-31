@@ -16,18 +16,16 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.jnet.util.function;
+package org.mases.jnet.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.ToLongFunction;
-
 /**
- * The {@link JNetToLongFunction} class represents a generic implementation of
- * {@link ToLongFunction}
+ * The {@link ToLongFunction} class represents a generic implementation of
+ * {@link java.util.function.ToLongFunction}
  */
-public final class JNetToLongFunction extends JCListener implements ToLongFunction {
-    public JNetToLongFunction(String key) throws JCNativeException {
+public final class ToLongFunction extends JCListener implements java.util.function.ToLongFunction {
+    public ToLongFunction(String key) throws JCNativeException {
         super(key);
     }
 

@@ -16,18 +16,16 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.jnet.util.function;
+package org.mases.jnet.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.BiFunction;
-
 /**
- * The {@link JNetBiFunction} class represents a generic implementation of
- * {@link BiFunction}
+ * The {@link BiFunction} class represents a generic implementation of
+ * {@link java.util.function.BiFunction}
  */
-public final class JNetBiFunction extends JCListener implements BiFunction {
-    public JNetBiFunction(String key) throws JCNativeException {
+public final class BiFunction extends JCListener implements java.util.function.BiFunction {
+    public BiFunction(String key) throws JCNativeException {
         super(key);
     }
 
