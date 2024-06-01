@@ -42,7 +42,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.developed.java.util.function.JNetIntUnaryOperator";
+        public override string BridgeClassName => "org.mases.jnet.developed.java.util.function.IntUnaryOperator";
 
         /// <summary>
         /// The <see cref="Func{Int32, Int32}"/> to be executed

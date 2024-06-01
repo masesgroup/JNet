@@ -49,7 +49,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.developed.java.util.function.JNetBinaryOperator";
+        public override string BridgeClassName => "org.mases.jnet.developed.java.util.function.BinaryOperator";
     }
 
     /// <summary>
