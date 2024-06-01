@@ -1601,6 +1601,29 @@ namespace MASES.JNetReflector
                     {
                         if (!typeStr.EndsWith(SpecialNames.ArrayTypeTrailer)) typeStr += SpecialNames.ArrayTypeTrailer;
                         methodParamsBuilder.AppendFormat($"params {typeStr} {varArg.Name()}, ");
+                        listenerParamsBuilder.AppendFormat($"{typeStr}, ");
+                        if (i == 0)
+                        {
+                            if (!parameter.IsJVMException())
+                            {
+                                listenerExecutionParamsBuilder.AppendFormat("data.EventData.TypedEventData, ");
+                            }
+                            else
+                            {
+                                listenerExecutionParamsBuilder.AppendFormat("JVMBridgeException.New(data.EventData.EventData as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject), ");
+                            }
+                        }
+                        else
+                        {
+                            if (parameter.IsJVMException())
+                            {
+                                listenerExecutionParamsBuilder.AppendFormat($"JVMBridgeException.New(data.EventData.ExtraData.Get({i - 1}) as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject), ");
+                            }
+                            else
+                            {
+                                listenerExecutionParamsBuilder.AppendFormat($"data.EventData.GetAt<{typeStr}>({i - 1}), ");
+                            }
+                        }
                     }
                     else
                     {

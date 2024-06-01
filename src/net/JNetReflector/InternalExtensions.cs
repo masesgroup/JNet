@@ -1039,7 +1039,7 @@ namespace MASES.JNetReflector
         {
             if (entry.TypeName.IsJVMListenerClass())
             {
-                if (!entry.IsInterface && entry.Interfaces.Length != 0) // if a class and there aren't interfaces it is not a listener
+                if (!entry.IsInterface && entry.Interfaces.Length == 0) // if a class and there aren't interfaces it is not a listener
                 {
                     return false;
                 }
