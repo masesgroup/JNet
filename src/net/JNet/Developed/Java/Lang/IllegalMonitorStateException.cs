@@ -23,7 +23,7 @@ namespace Java.Lang
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalMonitorStateException.html"/>
     /// </summary>
-    public class IllegalMonitorStateException : JVMBridgeException<IllegalMonitorStateException>
+    public class IllegalMonitorStateException : RuntimeException
     {
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
