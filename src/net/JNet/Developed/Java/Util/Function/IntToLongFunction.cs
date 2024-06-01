@@ -42,7 +42,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.developed.java.util.function.JNetIntToLongFunction";
+        public override string BridgeClassName => "org.mases.jnet.developed.java.util.function.IntToLongFunction";
 
         /// <summary>
         /// The <see cref="Func{Int64, Int32}"/> to be executed

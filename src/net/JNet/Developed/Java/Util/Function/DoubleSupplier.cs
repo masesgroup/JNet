@@ -41,7 +41,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.developed.java.util.function.JNetDoubleSupplier";
+        public override string BridgeClassName => "org.mases.jnet.developed.java.util.function.DoubleSupplier";
 
         /// <summary>
         /// The <see cref="Func{Double}"/> to be executed
