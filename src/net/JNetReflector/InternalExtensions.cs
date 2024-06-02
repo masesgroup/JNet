@@ -462,7 +462,7 @@ namespace MASES.JNetReflector
                 if (!string.IsNullOrEmpty(bounds))
                 {
                     bounds = bounds.Substring(0, bounds.LastIndexOf(", "));
-                    sbWhere.AppendFormat(" where {0}: {1}", typeParameter.Name, bounds);
+                    sbWhere.AppendFormat(AllPackageClasses.WHERE_CLAUSE, typeParameter.Name, bounds);
                 }
             }
             var parameters = sbWhere.ToString();
@@ -684,7 +684,7 @@ namespace MASES.JNetReflector
                 if (!string.IsNullOrEmpty(clause.Value)
                     && clause.Key != clause.Value) // this avoids circular clauses
                 {
-                    sbWhere.AppendFormat(" where {0}: {1}", clause.Key, clause.Value);
+                    sbWhere.AppendFormat(AllPackageClasses.WHERE_CLAUSE, clause.Key, clause.Value);
                 }
             }
             var parameters = sbWhere.ToString();
@@ -829,13 +829,14 @@ namespace MASES.JNetReflector
             genArguments?.Add(entry.Name);
             List<string> bounds = null;
             /*** this piece of code crashes the JVM
-             
+
             if (entry.Bounds.Length != 0)
             {
                 bounds = new List<string>();
                 foreach (var bound in entry.Bounds)
                 {
-                    var result = bound.GetGenerics(null, null, null, true, camel);
+                    bool toBeAvoided = false;
+                    var result = bound.GetGenerics(null, null, null, reportNative, usedInGenerics, camel, out toBeAvoided);
                     if (!(result == "object" || result == "object[]")) bounds.Add(result);
                 }
             }
@@ -1150,7 +1151,8 @@ namespace MASES.JNetReflector
                     if (!IsJVMNativeType(bound.TypeName))
                     {
                         string result;
-                        if (entry.TypeName == bound.TypeName && entry.IsJVMGenericClass() && usedInGenerics)
+                        if (entry.IsJVMGenericClass() && usedInGenerics 
+                            && (entry.TypeName == bound.TypeName || bound.TypeName.StartsWith(entry.TypeName)))
                         {
                             // force the generic class in this case
                             result = entry.ToFullQualifiedClassName(usedInGenerics, camel);
@@ -1166,7 +1168,7 @@ namespace MASES.JNetReflector
                 if (!string.IsNullOrEmpty(bounds))
                 {
                     bounds = bounds.Substring(0, bounds.LastIndexOf(", "));
-                    sbWhere.AppendFormat(" where {0}: {1}", typeParameter.Name, bounds);
+                    sbWhere.AppendFormat(AllPackageClasses.WHERE_CLAUSE, typeParameter.Name, bounds);
                 }
             }
             var parameters = sbWhere.ToString();

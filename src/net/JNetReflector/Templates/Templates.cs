@@ -114,6 +114,8 @@ namespace MASES.JNetReflector.Templates
         const string CREF_URL = "<see cref=\"{0}\"/>";
         const string HREF_URL = "<see href=\"{0}\"/>";
 
+        public const string WHERE_CLAUSE = " where {0} : {1}";
+
         public class ClassStub
         {
             public const string DECORATION = "ALLPACKAGE_CLASSES_STUB_CLASS_DECORATION_PLACEHOLDER";
