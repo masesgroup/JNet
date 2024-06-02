@@ -1936,7 +1936,7 @@ namespace MASES.JNetReflector
                 string CLRListenerEventArgsType = string.Empty;
                 string executionPropertyParams = string.Empty;
                 string listenerHandlerType = string.Empty;
-                string singleMethod;
+                string singleMethod = null;
                 string template;
                 string baseHandlerName = methodIndexer == 0 ? methodName : (methodIndexer == 1 ? methodName + paramCount : methodName + paramCount + $"_{methodIndexer}");
                 if (forListener)
@@ -1971,6 +1971,34 @@ namespace MASES.JNetReflector
                         }
                         executionStub = isVoidMethod ? $"{methodNameDefault}({executionParamsString});" : $"return {methodNameDefault}({executionParamsString});";
                     }
+                    else if (staticMethods && method.IsStatic())
+                    {
+                        jDecoration.AppendLine();
+                        jDecoration.Append(AllPackageClasses.ClassStub.MethodStub.HELP_REMARK_STATIC_METHOD);
+
+                        string methodNameDefault = methodName;
+                        template = Template.GetTemplate(Template.SingleMethodTemplate);
+                        singleMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.DECORATION, jDecoration.ToString())
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_EXECUTION, listenerHandlerType)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_NAME, baseHandlerName)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.MODIFIER, modifier)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodNameDefault)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.PARAMETERS, paramsString)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.WHERECLAUSES, genericClauses.ConvertClauses(isGeneric))
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, executionStub)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION_TYPE, executionPropertyParams)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_FIRST_PARAMETER, CLRListenerEventArgsType)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION, listenerExecutionParamsString)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.HELP, method.JavadocHrefUrl(JNetReflectorCore.UseCamel));
+
+                        jDecoration = new StringBuilder(jDecorationTemporary);
+                        if (forListener)
+                        {
+                            subClassBlock.AppendLine(singleMethod);
+                        }
+                        executionStub = isVoidMethod ? $"{methodNameDefault}({executionParamsString});" : $"return {methodNameDefault}({executionParamsString});";
+                    }
                     else
                     {
                         executionStub = isVoidMethod ? string.Empty : "return default;";
@@ -1982,21 +2010,23 @@ namespace MASES.JNetReflector
                     if (!isVoidMethod)
                     {
                         listenerParamsString = paramCount == 0 ? $"{returnType}" : listenerParamsString + $", {returnType}";
-                        executionPropertyParams = $"System.Func<{listenerParamsString}>";
+                        executionPropertyParams = $"global::System.Func<{listenerParamsString}>";
                         listenerHandlerType = AllPackageClasses.ClassStub.MethodStub.FUNC_LISTENER_EXECUTION_HANDLER_FORMAT;
                     }
                     else
                     {
-                        executionPropertyParams = paramCount == 0 ? "System.Action" : $"System.Action<{listenerParamsString}>";
+                        executionPropertyParams = paramCount == 0 ? "global::System.Action" : $"global::System.Action<{listenerParamsString}>";
                         listenerHandlerType = AllPackageClasses.ClassStub.MethodStub.ACTION_LISTENER_EXECUTION_HANDLER_FORMAT;
                     }
+                    if (!method.IsStatic())
+                    {
+                        string singleListenerHandler = string.Format(AllPackageClasses.ClassStub.MethodStub.SINGLE_LISTENER_HANDLER_FORMAT, eventHandlerName);
+                        singleListenerHandler = singleListenerHandler.Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_FIRST_PARAMETER, CLRListenerEventArgsType)
+                                                                     .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodName)
+                                                                     .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_NAME, baseHandlerName);
 
-                    string singleListenerHandler = string.Format(AllPackageClasses.ClassStub.MethodStub.SINGLE_LISTENER_HANDLER_FORMAT, eventHandlerName);
-                    singleListenerHandler = singleListenerHandler.Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_FIRST_PARAMETER, CLRListenerEventArgsType)
-                                                                 .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodName)
-                                                                 .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_NAME, baseHandlerName);
-
-                    subListenerHandlerBlock.AppendLine(singleListenerHandler);
+                        subListenerHandlerBlock.AppendLine(singleListenerHandler);
+                    }
                 }
 
                 if (forInterface)
@@ -2013,21 +2043,29 @@ namespace MASES.JNetReflector
                 }
                 if (forListener) modifier = " virtual";
                 if (isDirectListener) modifier = " override";
-                singleMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.DECORATION, jDecoration.ToString())
-                                       .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_EXECUTION, listenerHandlerType)
-                                       .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_NAME, baseHandlerName)
-                                       .Replace(AllPackageClasses.ClassStub.MethodStub.MODIFIER, modifier)
-                                       .Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
-                                       .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodName)
-                                       .Replace(AllPackageClasses.ClassStub.MethodStub.PARAMETERS, paramsString)
-                                       .Replace(AllPackageClasses.ClassStub.MethodStub.WHERECLAUSES, genericClauses.ConvertClauses(isGeneric))
-                                       .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, executionStub)
-                                       .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION_TYPE, executionPropertyParams)
-                                       .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_FIRST_PARAMETER, CLRListenerEventArgsType)
-                                       .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION, listenerExecutionParamsString)
-                                       .Replace(AllPackageClasses.ClassStub.MethodStub.HELP, method.JavadocHrefUrl(JNetReflectorCore.UseCamel));
 
-                subClassBlock.AppendLine(singleMethod);
+                if (staticMethods && forListener)
+                {
+                    // do nothing
+                }
+                else
+                {
+                    singleMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.DECORATION, jDecoration.ToString())
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_EXECUTION, listenerHandlerType)
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_NAME, baseHandlerName)
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.MODIFIER, modifier)
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodName)
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.PARAMETERS, paramsString)
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.WHERECLAUSES, genericClauses.ConvertClauses(isGeneric))
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, executionStub)
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION_TYPE, executionPropertyParams)
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_FIRST_PARAMETER, CLRListenerEventArgsType)
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION, listenerExecutionParamsString)
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.HELP, method.JavadocHrefUrl(JNetReflectorCore.UseCamel));
+                    
+                    subClassBlock.AppendLine(singleMethod);
+                }
 
                 if (isListenerReturnType && !forListener && isDirectListener == false)
                 {

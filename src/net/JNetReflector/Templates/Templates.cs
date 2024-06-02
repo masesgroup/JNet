@@ -155,10 +155,13 @@ namespace MASES.JNetReflector.Templates
 
             public const string LISTENER_CLASS_WARNING = "#warning Remember to build the Java class for event listener";
 
-            public static string LISTENER_CLASS_BLOCK = "    /// <summary>" + Environment.NewLine
+            public static string LISTENER_CLASS_BLOCK = "    const string _bridgeClassName = \"ALLPACKAGE_CLASSES_STUB_JAVACLASS_PLACEHOLDER\";" + Environment.NewLine
+                                                      + "    private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);" + Environment.NewLine
+                                                      + "    " + Environment.NewLine
+                                                      + "    /// <summary>" + Environment.NewLine
                                                       + "    /// <see href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm\"/>" + Environment.NewLine
                                                       + "    /// </summary>" + Environment.NewLine
-                                                      + "    public override string BridgeClassName => \"ALLPACKAGE_CLASSES_STUB_JAVACLASS_PLACEHOLDER\";" + Environment.NewLine;
+                                                      + "    public override string BridgeClassName => _bridgeClassName;" + Environment.NewLine;
 
             public class ConstructorStub
             {
@@ -202,7 +205,7 @@ namespace MASES.JNetReflector.Templates
                 public const string LISTENER_HANDLER_EXECUTION = "METHOD_STUB_LISTENER_HANDLER_EXECUTION_PLACEHOLDER";
                 public const string LISTENER_HANDLER_NAME = "METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER";
                 public const string LISTENER_FIRST_PARAMETER = "METHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER";
-                public const string SINGLE_LISTENER_HANDLER_FORMAT = "    AddEventHandler(\"{0}\", new System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandler));"; // removed OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER = METHOD_STUB_METHOD_NAME_PLACEHOLDER;";
+                public const string SINGLE_LISTENER_HANDLER_FORMAT = "    AddEventHandler(\"{0}\", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandler));"; // removed OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER = METHOD_STUB_METHOD_NAME_PLACEHOLDER;";
                 public const string EXECUTION_FORMAT = "{0}{1}{2}(\"{3}\"{4}{5});";
                 public const string SINGLE_ARRAY_EXECUTION_FORMAT = "new object[] {{ {0} }}";
                 public const string STATIC_EXECUTION_FORMAT = "{0}{1}{2}(LocalBridgeClazz, \"{3}\"{4}{5});";
@@ -218,6 +221,7 @@ namespace MASES.JNetReflector.Templates
                 public const string HELP_RETURN_DECORATION = "/// <returns>{0}</returns>";
                 public const string HELP_EXCEPTION_DECORATION = "/// <exception cref=\"{0}\"/>";
                 public const string HELP_REMARK_DEFAULT_METHOD = "/// <remarks>The method invokes the default implementation in the JVM interface</remarks>";
+                public const string HELP_REMARK_STATIC_METHOD = "/// <remarks>The method invokes the static implementation in the JVM interface</remarks>";
                 public const string HELP_REMARK_HANDLER_WITH_DEFAULT = "/// <remarks>The method invokes the default implementation in the JVM interface using <see cref=\"{0}\"/>; override the method to implement a different behavior</remarks>";
                 public const string OBSOLETE_DECORATION = "[global::System.Obsolete()]";
 

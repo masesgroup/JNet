@@ -28,10 +28,13 @@ public partial class ALLPACKAGE_CLASSES_STUB_CLASS_DIRECT_PLACEHOLDER : ALLPACKA
     /// <inheritdoc />
     protected override void InitializeHandlers() { }
 
+    const string _bridgeClassName = "ALLPACKAGE_CLASSES_STUB_JAVACLASS_DIRECT_PLACEHOLDER";
+    private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
     /// <summary>
     /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
     /// </summary>
-    public override string BridgeClassName => "ALLPACKAGE_CLASSES_STUB_JAVACLASS_DIRECT_PLACEHOLDER";
+    public override string BridgeClassName => _bridgeClassName;
     /// <summary>
     /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
     /// </summary>
