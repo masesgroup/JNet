@@ -22,7 +22,6 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
-using DotNetSystemObsolete = System.ObsoleteAttribute;
 
 namespace ALLPACKAGE_NAMESPACE_PLACEHOLDER
 {
