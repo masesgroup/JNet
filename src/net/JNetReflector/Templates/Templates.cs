@@ -115,6 +115,7 @@ namespace MASES.JNetReflector.Templates
         const string HREF_URL = "<see href=\"{0}\"/>";
 
         public const string WHERE_CLAUSE = " where {0} : {1}";
+        public const string WHERE_CLAUSE_NEW = ", new()";
 
         public class ClassStub
         {

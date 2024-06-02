@@ -730,7 +730,7 @@ namespace MASES.JNetReflector
             string result;
             if (bClass != null && bClass.IsInterface())
             {
-                result = bClass.JVMInterfaceName(new List<KeyValuePair<string, string>>(), usedInGenerics, true) + ", new()"; // the new constraint means the type shall be a class implementing the interface
+                result = bClass.JVMInterfaceName(new List<KeyValuePair<string, string>>(), usedInGenerics, true) + AllPackageClasses.WHERE_CLAUSE_NEW; // the new constraint means the type shall be a class implementing the interface
             }
             else if (parentTypeName != null && bound.TypeName.Contains(SpecialNames.BeginGenericDeclaration)
                     && bound.TypeName.Contains(SpecialNames.JavaLangAnyType))
@@ -1184,6 +1184,7 @@ namespace MASES.JNetReflector
             StringBuilder sbWhere = new StringBuilder();
             foreach (var typeParameter in entry.TypeParameters)
             {
+                bool hasNew = false;
                 StringBuilder sbBounds = new StringBuilder();
                 foreach (var bound in typeParameter.Bounds)
                 {
@@ -1200,12 +1201,20 @@ namespace MASES.JNetReflector
                         {
                             result = bound.GetBound(usedInGenerics, camel, typeParameter.Name);
                         }
+
+                        if (result.EndsWith(AllPackageClasses.WHERE_CLAUSE_NEW))
+                        {
+                            hasNew = true;
+                            result = result.Substring(0, result.IndexOf(AllPackageClasses.WHERE_CLAUSE_NEW));
+                        }
+
                         sbBounds.AppendFormat("{0}, ", result);
                     }
                 }
                 var bounds = sbBounds.ToString();
                 if (!string.IsNullOrEmpty(bounds))
                 {
+                    if (hasNew) bounds += AllPackageClasses.WHERE_CLAUSE_NEW;
                     bounds = bounds.Substring(0, bounds.LastIndexOf(", "));
                     sbWhere.AppendFormat(AllPackageClasses.WHERE_CLAUSE, typeParameter.Name, bounds);
                 }
