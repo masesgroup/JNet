@@ -103,6 +103,7 @@ namespace MASES.JNetReflector
         public const string JavaLangAdapter = "Adapter";
         public const string ArrayTypeTrailer = "[]";
         public const string PropertySuffix = "Property";
+        public const string ClassSuffix = "Class";
         public const string FieldSuffix = "Field";
         public const string MethodSuffix = "Method";
         public const string DefaultMethodSuffix = "Default";

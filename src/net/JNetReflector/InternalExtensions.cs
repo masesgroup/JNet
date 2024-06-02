@@ -124,9 +124,15 @@ namespace MASES.JNetReflector
             return false;
         }
 
+        static bool IsJVMListenerClassesToRemoveAsListener(this string typeName)
+        {
+            if (JNetReflectorCore.ClassesToRemoveAsListener != null && JNetReflectorCore.ClassesToRemoveAsListener.Any((o) => typeName == o)) return true;
+            return false;
+        }
+
         static bool IsJVMListenerClass(this string typeName)
         {
-            if (JNetReflectorCore.ClassesToRemoveAsListener != null && JNetReflectorCore.ClassesToRemoveAsListener.Any((o) => typeName == o)) return false;
+            if (typeName.IsJVMListenerClassesToRemoveAsListener()) return false;
             if (typeName.StartsWith(SpecialNames.JavaUtilFunctions)) return true;
             if (typeName.EndsWith(SpecialNames.JavaLangListener)) return true;
             if (typeName.EndsWith(SpecialNames.JavaLangAdapter)) return true;
@@ -244,11 +250,12 @@ namespace MASES.JNetReflector
                 {
                     if (cName == cic)
                     {
-                        cName += "Class";
+                        cName += SpecialNames.ClassSuffix;
                         break;
                     }
                 }
             }
+            if (cName.IsReservedName()) cName += SpecialNames.ClassSuffix;
             return string.IsNullOrEmpty(nName) ? cName : nName + SpecialNames.NamespaceSeparator + cName;
         }
 
@@ -1327,6 +1334,11 @@ namespace MASES.JNetReflector
                 }
                 return "MASES.JCOBridge.C2JBridge.JVMBridgeListener";
             }
+            else if (entry.TypeName.IsJVMListenerClassesToRemoveAsListener())
+            {
+                string className = entry.JVMClassName(null, usedInGenerics, false);
+                return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeBase<{0}>", className);
+            }
             try
             {
                 var superCls = entry.SuperClass;
@@ -1339,7 +1351,7 @@ namespace MASES.JNetReflector
                     || (JNetReflectorCore.ReflectDeprecated ? false : superCls.IsDeprecated())
                     || superCls.MustBeAvoided()
                     || superCls.TypeName == SpecialNames.JavaLangObject)
-                {
+                {              
                     if ((superCls == null || superCls.TypeName == SpecialNames.JavaLangObject) && entry.ContainsIterable())
                     {
                         string innerName = string.Empty;
