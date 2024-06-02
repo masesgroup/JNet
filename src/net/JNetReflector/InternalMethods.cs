@@ -231,7 +231,7 @@ namespace MASES.JNetReflector
             }
 
             ReportTrace(ReflectionTraceLevel.Info, "Starting analysis for {0} entries", data.Count);
-            JNetReflectorExtensions.SetJavaDocInfo(JNetReflectorCore.OriginJavadocUrl, JNetReflectorCore.JavadocVersion, true);
+            JNetReflectorExtensions.SetJavaDocInfo(JNetReflectorCore.OriginJavadocUrl, JNetReflectorCore.JavadocVersion, false);
             JarOrModuleName = ns;
             data.AnalyzeItems();
         }
