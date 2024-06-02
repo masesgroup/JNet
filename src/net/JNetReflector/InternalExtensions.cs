@@ -432,11 +432,12 @@ namespace MASES.JNetReflector
             }
         }
 
-        static string ApplyGenerics(this TypeVariable[] entries, IList<KeyValuePair<string, string>> genClause, string prefix, string name, bool usedInGenerics, bool camel)
+        static string ApplyGenerics(this TypeVariable[] entries, IList<KeyValuePair<string, string>> genClause, string prefix, string name, bool usedInGenerics, bool camel, params string[] genericTypesReplacement)
         {
             List<string> genArguments = new List<string>();
             entries.GetGenerics(genArguments, genClause, prefix, true, usedInGenerics, camel, out bool _);
-            var parameters = genArguments.ConvertGenerics();
+            var parameters = (genericTypesReplacement != null && genericTypesReplacement.Length != 0) ? genericTypesReplacement.ConvertGenerics()
+                                                                                                      : genArguments.ConvertGenerics();
             if (!string.IsNullOrEmpty(parameters))
             {
                 return $"{name}<{parameters}>";
@@ -454,7 +455,7 @@ namespace MASES.JNetReflector
                 {
                     if (!IsJVMNativeType(bound.TypeName))
                     {
-                        string result = bound.GetBound(usedInGenerics, camel);
+                        string result = bound.GetBound(usedInGenerics, camel, typeParameter.Name);
                         sbBounds.AppendFormat("{0}, ", result);
                     }
                 }
@@ -701,13 +702,21 @@ namespace MASES.JNetReflector
             }
         }
 
-        static string GetBound(this Java.Lang.Reflect.Type bound, bool usedInGenerics, bool camel)
+        static string GetBound(this Java.Lang.Reflect.Type bound, bool usedInGenerics, bool camel, string parentTypeName)
         {
             var bClass = bound.TypeName.JVMClass();
             string result;
             if (bClass != null && bClass.IsInterface())
             {
                 result = bClass.JVMInterfaceName(new List<KeyValuePair<string, string>>(), usedInGenerics, true) + ", new()"; // the new constraint means the type shall be a class implementing the interface
+            }
+            else if (parentTypeName != null && bound.TypeName.Contains(SpecialNames.BeginGenericDeclaration)
+                    && bound.TypeName.Contains(SpecialNames.JavaLangAnyType))
+            {
+                var cName = bound.TypeName;
+                cName = cName.Contains('<') ? cName.Substring(0, cName.IndexOf('<')) : cName;
+                bClass = cName.JVMClass();
+                result = bClass.ToFullQualifiedClassName(usedInGenerics, camel, parentTypeName);
             }
             else
             {
@@ -796,7 +805,7 @@ namespace MASES.JNetReflector
                 mustBeAvoided |= localMustBeAvoided;
                 foreach (var bound in expectedType.Bounds)
                 {
-                    string result = bound.GetBound(usedInGenerics, camel);
+                    string result = bound.GetBound(usedInGenerics, camel, null);
                     if (actualTypeName == SpecialNames.JavaLangAnyType && !(result == SpecialNames.NetObject || result == (SpecialNames.NetObject + SpecialNames.ArrayTypeTrailer)
                                                   || result.Contains(SpecialNames.JavaLangAnyType))) // type used in Java to define any-type
                     {
@@ -849,7 +858,7 @@ namespace MASES.JNetReflector
                 bounds = new List<string>();
                 foreach (var bound in entry.Bounds)
                 {
-                    string result = bound.GetBound(usedInGenerics, camel);
+                    string result = bound.GetBound(usedInGenerics, camel, null);
                     if (!(result == SpecialNames.NetObject || result == (SpecialNames.NetObject + SpecialNames.ArrayTypeTrailer)
                         || result.Contains(SpecialNames.JavaLangAnyType))) // type used in Java to define any-type
                     {
@@ -1133,10 +1142,10 @@ namespace MASES.JNetReflector
             entry.TypeParameters.GetGenerics(genArguments, genClause, prefix, true, usedInGenerics, camel, out bool _);
         }
 
-        static string ApplyGenerics(this Class entry, IList<KeyValuePair<string, string>> genClause, bool usedInGenerics, string name)
+        static string ApplyGenerics(this Class entry, IList<KeyValuePair<string, string>> genClause, bool usedInGenerics, string name, params string[] genericTypesReplacement)
         {
             if (!usedInGenerics || !entry.IsJVMGenericClass()) return name;
-            return entry.TypeParameters.ApplyGenerics(genClause, null, name, usedInGenerics, true);
+            return entry.TypeParameters.ApplyGenerics(genClause, null, name, usedInGenerics, true, genericTypesReplacement);
         }
 
         public static string WhereClauses(this Class entry, bool usedInGenerics, bool camel)
@@ -1159,7 +1168,7 @@ namespace MASES.JNetReflector
                         }
                         else
                         {
-                            result = bound.GetBound(usedInGenerics, camel);
+                            result = bound.GetBound(usedInGenerics, camel, typeParameter.Name);
                         }
                         sbBounds.AppendFormat("{0}, ", result);
                     }
@@ -1181,11 +1190,11 @@ namespace MASES.JNetReflector
             return name.Replace(SpecialNames.JNISeparator, SpecialNames.NamespaceSeparator);
         }
 
-        public static string ToFullQualifiedClassName(this Class cls, bool usedInGenerics, bool camel)
+        public static string ToFullQualifiedClassName(this Class cls, bool usedInGenerics, bool camel, params string[] genericTypesReplacement)
         {
             var cName = cls.TypeName;
             cName = ToFullQualifiedClassName(cName, camel);
-            if (usedInGenerics) cName = cls.ApplyGenerics(null, usedInGenerics, cName);
+            if (usedInGenerics) cName = cls.ApplyGenerics(null, usedInGenerics, cName, genericTypesReplacement);
             return cName;
         }
 
