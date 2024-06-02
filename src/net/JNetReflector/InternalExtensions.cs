@@ -635,6 +635,21 @@ namespace MASES.JNetReflector
             return false;
         }
 
+        static bool IsParameterizedTypeWithoutGenerics(this Java.Lang.Reflect.Type entry)
+        {
+            if (entry.IsInstanceOf<ParameterizedType>())
+            {
+                bool hasGeneric = false;
+                var parType = entry.CastTo<ParameterizedType>();
+                foreach (var item in parType.ActualTypeArguments)
+                {
+                    hasGeneric |= item.IsGenerics();
+                }
+                return !hasGeneric;
+            }
+            return false;
+        }
+
         static string ApplyGenerics(this Java.Lang.Reflect.Type entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool reportNative, bool usedInGenerics, bool camel)
         {
             var retClass = entry.GetGenerics(genArguments, genClause, prefix, reportNative, usedInGenerics, camel, out bool _);
@@ -724,6 +739,10 @@ namespace MASES.JNetReflector
                 cName = cName.Contains('<') ? cName.Substring(0, cName.IndexOf('<')) : cName;
                 bClass = cName.JVMClass();
                 result = bClass.ToFullQualifiedClassName(usedInGenerics, camel, parentTypeName);
+            }
+            else if (bound.IsParameterizedTypeWithoutGenerics())
+            {
+                result = bound.GetGenerics(null, null, string.Empty, true, usedInGenerics, camel, out _);
             }
             else
             {
