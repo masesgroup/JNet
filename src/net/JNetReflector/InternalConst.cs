@@ -208,6 +208,9 @@ namespace MASES.JNetReflector
             lst.Add("enum");
             lst.Add("namespace");
             lst.Add("where");
+            lst.Add("checked");
+            lst.Add("fixed");
+            lst.Add("unsafe");
             lst.Add("bool");
             lst.Add("string");
             return lst;
