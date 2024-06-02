@@ -1132,6 +1132,10 @@ namespace MASES.JNetReflector
         public static string JVMListenerClassName(this Class entry)
         {
             var cName = entry.Name;
+            var packageName = (entry.Package != null && !string.IsNullOrWhiteSpace(entry.Package.Name)) ? entry.Package.Name 
+                                                                                                        : string.Empty;
+            cName = (!string.IsNullOrWhiteSpace(packageName) && cName.StartsWith(packageName)) ? cName.Remove(0, packageName.Length + 1) 
+                                                                                               : cName;
             cName = cName.Replace(SpecialNames.NestedClassSeparator, SpecialNames.ListenerNestedClassSeparator);
             return cName;
         }
