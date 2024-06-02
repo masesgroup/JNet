@@ -58,9 +58,11 @@ namespace MASES.JNetReflector
 
             public string OriginJavadocUrl { get; set; }
 
-            public IEnumerable<VersionUrl> OriginJavadocJARVersionAndUrls { get; set; }
-
             public int JavadocVersion { get; set; }
+
+            public bool JavadocNoModule { get; set; }
+
+            public IEnumerable<VersionUrl> OriginJavadocJARVersionAndUrls { get; set; }
 
             public string DestinationRootPath { get; set; }
 
@@ -173,6 +175,12 @@ namespace MASES.JNetReflector
                         Type = ArgumentType.Double,
                         Default = 11,
                         Help = "The version of the Javadoc to be associated to the classes, it means the Javadoc tool version used",
+                    },
+                    new ArgumentMetadata<object>()
+                    {
+                        Name = CLIParam.JavadocNoModule,
+                        Type = ArgumentType.Single,
+                        Help = "Do not add module in the Javadoc generated Url",
                     },
                     new ArgumentMetadata<string>()
                     {
@@ -419,11 +427,14 @@ namespace MASES.JNetReflector
         static string _OriginJavadocUrl;
         public static string OriginJavadocUrl => _OriginJavadocUrl ?? _ConfigurationFromFile.OriginJavadocUrl;
 
-        static IEnumerable<ConfigurationType.VersionUrl> _OriginJavadocJARVersionAndUrls;
-        public static IEnumerable<ConfigurationType.VersionUrl> OriginJavadocJARVersionAndUrls => _OriginJavadocJARVersionAndUrls ?? _ConfigurationFromFile.OriginJavadocJARVersionAndUrls;
-
         static int? _JavadocVersion = null;
         public static int JavadocVersion => _JavadocVersion ?? _ConfigurationFromFile.JavadocVersion;
+
+        static bool? _JavadocNoModule;
+        public static bool JavadocNoModule => _JavadocNoModule ?? _ConfigurationFromFile.JavadocNoModule;
+
+        static IEnumerable<ConfigurationType.VersionUrl> _OriginJavadocJARVersionAndUrls;
+        public static IEnumerable<ConfigurationType.VersionUrl> OriginJavadocJARVersionAndUrls => _OriginJavadocJARVersionAndUrls ?? _ConfigurationFromFile.OriginJavadocJARVersionAndUrls;
 
         static string _DestinationRootPath;
         public static string DestinationRootPath => _DestinationRootPath ?? _ConfigurationFromFile.DestinationRootPath;
@@ -714,6 +725,7 @@ namespace MASES.JNetReflector
 
             _OriginJavadocUrl = ParsedArgs.Get<string>(CLIParam.OriginJavadocUrl);
             _JavadocVersion = ParsedArgs.Get<int>(CLIParam.JavadocVersion);
+            if (ParsedArgs.Exist(CLIParam.JavadocNoModule)) _JavadocNoModule = true;
 
             if (ParsedArgs.Exist(CLIParam.PreferMethodWithSignature)) _PreferMethodWithSignature = true;
             if (ParsedArgs.Exist(CLIParam.DisablePropertiesForGetterSetter)) _DisablePropertiesForGetterSetter = true;

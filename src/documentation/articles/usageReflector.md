@@ -30,6 +30,7 @@ _jnr_ accepts the following command-line switch:
 * **OriginRootPath**: The origin path where Jars to be analyzed, and dependencies, are stored
 * **OriginJavadocUrl**: The base URL of the Javadoc to be associated to the classes
 * **JavadocVersion**: The version of the Javadoc to be associated to the classes, it means the Javadoc tool version used
+* **JavadocNoModule**: Do not add module in the Javadoc generated Url
 * **OriginJavadocJARVersionAndUrls**: A CSV list of keypair of JavadocVersion and OriginJavadocUrl, separated by |, associated to the JARs to be analyzed
 * **DestinationRootPath**: The destination root path where reflected classes will be stored
 * **DestinationCSharpClassPath**: The destination root path where C# reflected classes will be stored
