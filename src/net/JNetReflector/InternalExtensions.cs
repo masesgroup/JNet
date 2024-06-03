@@ -1214,8 +1214,8 @@ namespace MASES.JNetReflector
                 var bounds = sbBounds.ToString();
                 if (!string.IsNullOrEmpty(bounds))
                 {
-                    if (hasNew) bounds += AllPackageClasses.WHERE_CLAUSE_NEW;
                     bounds = bounds.Substring(0, bounds.LastIndexOf(", "));
+                    if (hasNew) bounds += AllPackageClasses.WHERE_CLAUSE_NEW;
                     sbWhere.AppendFormat(AllPackageClasses.WHERE_CLAUSE, typeParameter.Name, bounds);
                 }
             }
