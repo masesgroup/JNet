@@ -1165,7 +1165,7 @@ namespace MASES.JNetReflector
                    ) continue; // special methods managed from JCOBridge
 
                 if (paramCount == 0 && method.IsVoid() &&
-                    (methodNameOrigin == "notify" || methodNameOrigin == "notifyAll" || methodNameOrigin == "wait")
+                    (methodNameOrigin == "notify" || methodNameOrigin == "notifyAll" || methodNameOrigin == "wait" || methodNameOrigin == "finalize")
                    ) continue; // special methods managed from JCOBridge
 
                 if (paramCount == 1 && method.IsVoid() &&
