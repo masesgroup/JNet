@@ -990,7 +990,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public Java.Util.Concurrent.CompletableFuture<T> CompleteAsync<Arg0ExtendsT>(Java.Util.Function.Supplier<Arg0ExtendsT> arg0, Java.Util.Concurrent.Executor arg1) where Arg0ExtendsT: T
+        public Java.Util.Concurrent.CompletableFuture<T> CompleteAsync<Arg0ExtendsT>(Java.Util.Function.Supplier<Arg0ExtendsT> arg0, Java.Util.Concurrent.Executor arg1) where Arg0ExtendsT : T
         {
             return IExecute<Java.Util.Concurrent.CompletableFuture<T>>("completeAsync", arg0, arg1);
         }
@@ -1000,7 +1000,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public Java.Util.Concurrent.CompletableFuture<T> CompleteAsync<Arg0ExtendsT>(Java.Util.Function.Supplier<Arg0ExtendsT> arg0) where Arg0ExtendsT: T
+        public Java.Util.Concurrent.CompletableFuture<T> CompleteAsync<Arg0ExtendsT>(Java.Util.Function.Supplier<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
         {
             return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<T>>("completeAsync", "(Ljava/util/function/Supplier;)Ljava/util/concurrent/CompletableFuture;", arg0);
         }

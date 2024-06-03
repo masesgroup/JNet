@@ -78,8 +78,8 @@ namespace Java.Awt.DesktopNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("screenAboutToSleep", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.ScreenSleepEvent>>>(ScreenAboutToSleepEventHandler));
-            AddEventHandler("screenAwoke", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.ScreenSleepEvent>>>(ScreenAwokeEventHandler));
+            AddEventHandler("screenAboutToSleep", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.ScreenSleepEvent>>>(ScreenAboutToSleepEventHandler));
+            AddEventHandler("screenAwoke", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.ScreenSleepEvent>>>(ScreenAwokeEventHandler));
 
         }
 
@@ -87,7 +87,7 @@ namespace Java.Awt.DesktopNs
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/ScreenSleepListener.html#screenAboutToSleep(java.awt.desktop.ScreenSleepEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnScreenAboutToSleep"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.DesktopNs.ScreenSleepEvent> OnScreenAboutToSleep { get; set; } = null;
+        public global::System.Action<Java.Awt.DesktopNs.ScreenSleepEvent> OnScreenAboutToSleep { get; set; } = null;
 
         void ScreenAboutToSleepEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.ScreenSleepEvent>> data)
         {
@@ -108,7 +108,7 @@ namespace Java.Awt.DesktopNs
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/ScreenSleepListener.html#screenAwoke(java.awt.desktop.ScreenSleepEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnScreenAwoke"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.DesktopNs.ScreenSleepEvent> OnScreenAwoke { get; set; } = null;
+        public global::System.Action<Java.Awt.DesktopNs.ScreenSleepEvent> OnScreenAwoke { get; set; } = null;
 
         void ScreenAwokeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.ScreenSleepEvent>> data)
         {

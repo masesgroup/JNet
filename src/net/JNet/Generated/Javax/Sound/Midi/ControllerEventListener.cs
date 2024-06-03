@@ -73,7 +73,7 @@ namespace Javax.Sound.Midi
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("controlChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sound.Midi.ShortMessage>>>(ControlChangeEventHandler));
+            AddEventHandler("controlChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sound.Midi.ShortMessage>>>(ControlChangeEventHandler));
 
         }
 
@@ -81,7 +81,7 @@ namespace Javax.Sound.Midi
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ControllerEventListener.html#controlChange(javax.sound.midi.ShortMessage)"/>
         /// </summary>
         /// <remarks>If <see cref="OnControlChange"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Sound.Midi.ShortMessage> OnControlChange { get; set; } = null;
+        public global::System.Action<Javax.Sound.Midi.ShortMessage> OnControlChange { get; set; } = null;
 
         void ControlChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sound.Midi.ShortMessage>> data)
         {

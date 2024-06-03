@@ -79,7 +79,7 @@ namespace Java.Nio.File
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="V"><see cref="Java.Nio.File.Attribute.IFileStoreAttributeView"/></typeparam>
         /// <returns><typeparamref name="V"/></returns>
-        public V GetFileStoreAttributeView<V>(Java.Lang.Class arg0) where V: Java.Nio.File.Attribute.IFileStoreAttributeView, new()
+        public V GetFileStoreAttributeView<V>(Java.Lang.Class arg0) where V : Java.Nio.File.Attribute.IFileStoreAttributeView, new()
         {
             return IExecute<V>("getFileStoreAttributeView", arg0);
         }

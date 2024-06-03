@@ -189,7 +189,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
         /// <typeparam name="ReturnExtendsJavax_Swing_Plaf_ComponentUI"><see cref="Javax.Swing.Plaf.ComponentUI"/></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
-        public Java.Lang.Class GetUIClass<ReturnExtendsJavax_Swing_Plaf_ComponentUI>(Java.Lang.String arg0, Java.Lang.ClassLoader arg1) where ReturnExtendsJavax_Swing_Plaf_ComponentUI: Javax.Swing.Plaf.ComponentUI
+        public Java.Lang.Class GetUIClass<ReturnExtendsJavax_Swing_Plaf_ComponentUI>(Java.Lang.String arg0, Java.Lang.ClassLoader arg1) where ReturnExtendsJavax_Swing_Plaf_ComponentUI : Javax.Swing.Plaf.ComponentUI
         {
             return IExecute<Java.Lang.Class>("getUIClass", arg0, arg1);
         }
@@ -199,7 +199,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <typeparam name="ReturnExtendsJavax_Swing_Plaf_ComponentUI"><see cref="Javax.Swing.Plaf.ComponentUI"/></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
-        public Java.Lang.Class GetUIClass<ReturnExtendsJavax_Swing_Plaf_ComponentUI>(Java.Lang.String arg0) where ReturnExtendsJavax_Swing_Plaf_ComponentUI: Javax.Swing.Plaf.ComponentUI
+        public Java.Lang.Class GetUIClass<ReturnExtendsJavax_Swing_Plaf_ComponentUI>(Java.Lang.String arg0) where ReturnExtendsJavax_Swing_Plaf_ComponentUI : Javax.Swing.Plaf.ComponentUI
         {
             return IExecuteWithSignature<Java.Lang.Class>("getUIClass", "(Ljava/lang/String;)Ljava/lang/Class;", arg0);
         }

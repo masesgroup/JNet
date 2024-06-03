@@ -191,7 +191,7 @@ namespace Java.Util.Concurrent
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
             /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-            public void Subscribe<Arg0objectSuperT>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+            public void Subscribe<Arg0objectSuperT>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
             {
                 IExecuteWithSignature("subscribe", "(Ljava/util/concurrent/Flow$Subscriber;)V", arg0);
             }

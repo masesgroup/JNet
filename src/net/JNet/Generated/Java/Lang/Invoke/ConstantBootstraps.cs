@@ -49,7 +49,7 @@ namespace Java.Lang.Invoke
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="E"><see cref="Java.Lang.Enum{E}"/></typeparam>
         /// <returns><typeparamref name="E"/></returns>
-        public static E EnumConstant<E>(Java.Lang.Invoke.MethodHandles.Lookup arg0, Java.Lang.String arg1, Java.Lang.Class arg2) where E: Java.Lang.Enum<E>
+        public static E EnumConstant<E>(Java.Lang.Invoke.MethodHandles.Lookup arg0, Java.Lang.String arg1, Java.Lang.Class arg2) where E : Java.Lang.Enum<E>
         {
             return SExecute<E>(LocalBridgeClazz, "enumConstant", arg0, arg1, arg2);
         }

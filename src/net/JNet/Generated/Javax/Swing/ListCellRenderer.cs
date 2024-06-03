@@ -86,7 +86,7 @@ namespace Javax.Swing
         /// <param name="arg4"><see cref="bool"/></param>
         /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="Java.Awt.Component"/></returns>
-        Java.Awt.Component GetListCellRendererComponent<Arg0ExtendsE>(Javax.Swing.JList<Arg0ExtendsE> arg0, E arg1, int arg2, bool arg3, bool arg4) where Arg0ExtendsE: E;
+        Java.Awt.Component GetListCellRendererComponent<Arg0ExtendsE>(Javax.Swing.JList<Arg0ExtendsE> arg0, E arg1, int arg2, bool arg3, bool arg4) where Arg0ExtendsE : E;
 
         #endregion
 
@@ -132,7 +132,7 @@ namespace Javax.Swing
         /// <param name="arg4"><see cref="bool"/></param>
         /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="Java.Awt.Component"/></returns>
-        public Java.Awt.Component GetListCellRendererComponent<Arg0ExtendsE>(Javax.Swing.JList<Arg0ExtendsE> arg0, E arg1, int arg2, bool arg3, bool arg4) where Arg0ExtendsE: E
+        public Java.Awt.Component GetListCellRendererComponent<Arg0ExtendsE>(Javax.Swing.JList<Arg0ExtendsE> arg0, E arg1, int arg2, bool arg3, bool arg4) where Arg0ExtendsE : E
         {
             return IExecute<Java.Awt.Component>("getListCellRendererComponent", arg0, arg1, arg2, arg3, arg4);
         }

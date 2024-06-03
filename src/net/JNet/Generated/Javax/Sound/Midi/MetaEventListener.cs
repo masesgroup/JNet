@@ -73,7 +73,7 @@ namespace Javax.Sound.Midi
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("meta", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sound.Midi.MetaMessage>>>(MetaEventHandler));
+            AddEventHandler("meta", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sound.Midi.MetaMessage>>>(MetaEventHandler));
 
         }
 
@@ -81,7 +81,7 @@ namespace Javax.Sound.Midi
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MetaEventListener.html#meta(javax.sound.midi.MetaMessage)"/>
         /// </summary>
         /// <remarks>If <see cref="OnMeta"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Sound.Midi.MetaMessage> OnMeta { get; set; } = null;
+        public global::System.Action<Javax.Sound.Midi.MetaMessage> OnMeta { get; set; } = null;
 
         void MetaEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sound.Midi.MetaMessage>> data)
         {

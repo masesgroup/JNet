@@ -116,7 +116,7 @@ namespace Javax.Lang.Model.Util
         /// <param name="arg1"><typeparamref name="P"/></param>
         /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
         /// <returns><typeparamref name="R"/></returns>
-        public R Scan<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0, P arg1) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
+        public R Scan<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0, P arg1) where Arg0ExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
             return IExecute<R>("scan", arg0, arg1);
         }

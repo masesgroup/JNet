@@ -119,7 +119,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <typeparam name="Arg0ExtendsJavax_Xml_Crypto_XMLStructure"><see cref="Javax.Xml.Crypto.XMLStructure"/></typeparam>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo"/></returns>
-        public Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo NewKeyInfo<Arg0ExtendsJavax_Xml_Crypto_XMLStructure>(Java.Util.List<Arg0ExtendsJavax_Xml_Crypto_XMLStructure> arg0, Java.Lang.String arg1) where Arg0ExtendsJavax_Xml_Crypto_XMLStructure: Javax.Xml.Crypto.XMLStructure
+        public Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo NewKeyInfo<Arg0ExtendsJavax_Xml_Crypto_XMLStructure>(Java.Util.List<Arg0ExtendsJavax_Xml_Crypto_XMLStructure> arg0, Java.Lang.String arg1) where Arg0ExtendsJavax_Xml_Crypto_XMLStructure : Javax.Xml.Crypto.XMLStructure
         {
             return IExecute<Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo>("newKeyInfo", arg0, arg1);
         }
@@ -129,7 +129,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <typeparam name="Arg0ExtendsJavax_Xml_Crypto_XMLStructure"><see cref="Javax.Xml.Crypto.XMLStructure"/></typeparam>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo"/></returns>
-        public Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo NewKeyInfo<Arg0ExtendsJavax_Xml_Crypto_XMLStructure>(Java.Util.List<Arg0ExtendsJavax_Xml_Crypto_XMLStructure> arg0) where Arg0ExtendsJavax_Xml_Crypto_XMLStructure: Javax.Xml.Crypto.XMLStructure
+        public Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo NewKeyInfo<Arg0ExtendsJavax_Xml_Crypto_XMLStructure>(Java.Util.List<Arg0ExtendsJavax_Xml_Crypto_XMLStructure> arg0) where Arg0ExtendsJavax_Xml_Crypto_XMLStructure : Javax.Xml.Crypto.XMLStructure
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo>("newKeyInfo", "(Ljava/util/List;)Ljavax/xml/crypto/dsig/keyinfo/KeyInfo;", arg0);
         }
@@ -170,7 +170,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <param name="arg2"><see cref="Java.Util.List"/></param>
         /// <typeparam name="Arg2ExtendsJavax_Xml_Crypto_XMLStructure"><see cref="Javax.Xml.Crypto.XMLStructure"/></typeparam>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.PGPData"/></returns>
-        public Javax.Xml.Crypto.Dsig.Keyinfo.PGPData NewPGPData<Arg2ExtendsJavax_Xml_Crypto_XMLStructure>(byte[] arg0, byte[] arg1, Java.Util.List<Arg2ExtendsJavax_Xml_Crypto_XMLStructure> arg2) where Arg2ExtendsJavax_Xml_Crypto_XMLStructure: Javax.Xml.Crypto.XMLStructure
+        public Javax.Xml.Crypto.Dsig.Keyinfo.PGPData NewPGPData<Arg2ExtendsJavax_Xml_Crypto_XMLStructure>(byte[] arg0, byte[] arg1, Java.Util.List<Arg2ExtendsJavax_Xml_Crypto_XMLStructure> arg2) where Arg2ExtendsJavax_Xml_Crypto_XMLStructure : Javax.Xml.Crypto.XMLStructure
         {
             return IExecute<Javax.Xml.Crypto.Dsig.Keyinfo.PGPData>("newPGPData", arg0, arg1, arg2);
         }
@@ -181,7 +181,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
         /// <typeparam name="Arg1ExtendsJavax_Xml_Crypto_XMLStructure"><see cref="Javax.Xml.Crypto.XMLStructure"/></typeparam>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.PGPData"/></returns>
-        public Javax.Xml.Crypto.Dsig.Keyinfo.PGPData NewPGPData<Arg1ExtendsJavax_Xml_Crypto_XMLStructure>(byte[] arg0, Java.Util.List<Arg1ExtendsJavax_Xml_Crypto_XMLStructure> arg1) where Arg1ExtendsJavax_Xml_Crypto_XMLStructure: Javax.Xml.Crypto.XMLStructure
+        public Javax.Xml.Crypto.Dsig.Keyinfo.PGPData NewPGPData<Arg1ExtendsJavax_Xml_Crypto_XMLStructure>(byte[] arg0, Java.Util.List<Arg1ExtendsJavax_Xml_Crypto_XMLStructure> arg1) where Arg1ExtendsJavax_Xml_Crypto_XMLStructure : Javax.Xml.Crypto.XMLStructure
         {
             return IExecute<Javax.Xml.Crypto.Dsig.Keyinfo.PGPData>("newPGPData", arg0, arg1);
         }
@@ -202,7 +202,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <param name="arg2"><see cref="Java.Util.List"/></param>
         /// <typeparam name="Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform"><see cref="Javax.Xml.Crypto.Dsig.Transform"/></typeparam>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.RetrievalMethod"/></returns>
-        public Javax.Xml.Crypto.Dsig.Keyinfo.RetrievalMethod NewRetrievalMethod<Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform>(Java.Lang.String arg0, Java.Lang.String arg1, Java.Util.List<Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform> arg2) where Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform: Javax.Xml.Crypto.Dsig.Transform
+        public Javax.Xml.Crypto.Dsig.Keyinfo.RetrievalMethod NewRetrievalMethod<Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform>(Java.Lang.String arg0, Java.Lang.String arg1, Java.Util.List<Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform> arg2) where Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform : Javax.Xml.Crypto.Dsig.Transform
         {
             return IExecute<Javax.Xml.Crypto.Dsig.Keyinfo.RetrievalMethod>("newRetrievalMethod", arg0, arg1, arg2);
         }

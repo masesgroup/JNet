@@ -92,7 +92,7 @@ namespace Java.Util
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg1ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public static T RequireNonNullElseGet<T, Arg1ExtendsT>(T arg0, Java.Util.Function.Supplier<Arg1ExtendsT> arg1) where Arg1ExtendsT: T
+        public static T RequireNonNullElseGet<T, Arg1ExtendsT>(T arg0, Java.Util.Function.Supplier<Arg1ExtendsT> arg1) where Arg1ExtendsT : T
         {
             return SExecute<T>(LocalBridgeClazz, "requireNonNullElseGet", arg0, arg1);
         }

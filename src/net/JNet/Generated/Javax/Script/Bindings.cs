@@ -62,7 +62,7 @@ namespace Javax.Script
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <typeparam name="Arg0ExtendsJava_Lang_String"><see cref="Java.Lang.String"/></typeparam>
-        void PutAll<Arg0ExtendsJava_Lang_String>(Java.Util.Map<Arg0ExtendsJava_Lang_String, object> arg0) where Arg0ExtendsJava_Lang_String: Java.Lang.String;
+        void PutAll<Arg0ExtendsJava_Lang_String>(Java.Util.Map<Arg0ExtendsJava_Lang_String, object> arg0) where Arg0ExtendsJava_Lang_String : Java.Lang.String;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Bindings.html#put(java.lang.Object,java.lang.Object)"/>
         /// </summary>
@@ -143,7 +143,7 @@ namespace Javax.Script
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <typeparam name="Arg0ExtendsJava_Lang_String"><see cref="Java.Lang.String"/></typeparam>
-        public void PutAll<Arg0ExtendsJava_Lang_String>(Java.Util.Map<Arg0ExtendsJava_Lang_String, object> arg0) where Arg0ExtendsJava_Lang_String: Java.Lang.String
+        public void PutAll<Arg0ExtendsJava_Lang_String>(Java.Util.Map<Arg0ExtendsJava_Lang_String, object> arg0) where Arg0ExtendsJava_Lang_String : Java.Lang.String
         {
             IExecute("putAll", arg0);
         }

@@ -40,7 +40,7 @@ namespace Java.Rmi.Activation
         /// <typeparam name="Arg1ExtendsJava_Rmi_Remote"><see cref="Java.Rmi.Remote"/></typeparam>
         /// <exception cref="Java.Rmi.Activation.UnknownObjectException"/>
         /// <exception cref="Java.Rmi.RemoteException"/>
-        void ActiveObject<Arg1ExtendsJava_Rmi_Remote>(Java.Rmi.Activation.ActivationID arg0, Java.Rmi.MarshalledObject<Arg1ExtendsJava_Rmi_Remote> arg1) where Arg1ExtendsJava_Rmi_Remote: Java.Rmi.Remote;
+        void ActiveObject<Arg1ExtendsJava_Rmi_Remote>(Java.Rmi.Activation.ActivationID arg0, Java.Rmi.MarshalledObject<Arg1ExtendsJava_Rmi_Remote> arg1) where Arg1ExtendsJava_Rmi_Remote : Java.Rmi.Remote;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationMonitor.html#inactiveGroup(java.rmi.activation.ActivationGroupID,long)"/>
         /// </summary>
@@ -95,7 +95,7 @@ namespace Java.Rmi.Activation
         /// <typeparam name="Arg1ExtendsJava_Rmi_Remote"><see cref="Java.Rmi.Remote"/></typeparam>
         /// <exception cref="Java.Rmi.Activation.UnknownObjectException"/>
         /// <exception cref="Java.Rmi.RemoteException"/>
-        public void ActiveObject<Arg1ExtendsJava_Rmi_Remote>(Java.Rmi.Activation.ActivationID arg0, Java.Rmi.MarshalledObject<Arg1ExtendsJava_Rmi_Remote> arg1) where Arg1ExtendsJava_Rmi_Remote: Java.Rmi.Remote
+        public void ActiveObject<Arg1ExtendsJava_Rmi_Remote>(Java.Rmi.Activation.ActivationID arg0, Java.Rmi.MarshalledObject<Arg1ExtendsJava_Rmi_Remote> arg1) where Arg1ExtendsJava_Rmi_Remote : Java.Rmi.Remote
         {
             IExecute("activeObject", arg0, arg1);
         }

@@ -362,7 +362,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        bool AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE: E;
+        bool AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE : E;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#contains(java.lang.Object)"/>
         /// </summary>
@@ -459,7 +459,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        public static Java.Util.Set<E> CopyOf<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE: E
+        public static Java.Util.Set<E> CopyOf<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE : E
         {
             return SExecuteWithSignature<Java.Util.Set<E>>(LocalBridgeClazz, "copyOf", "(Ljava/util/Collection;)Ljava/util/Set;", arg0);
         }
@@ -644,7 +644,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE: E
+        public bool AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE : E
         {
             return IExecuteWithSignature<bool>("addAll", "(Ljava/util/Collection;)Z", arg0);
         }

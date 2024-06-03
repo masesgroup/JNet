@@ -95,7 +95,7 @@ namespace Java.Lang
         /// <typeparam name="Arg0objectSuperJava_Util_Stream_Stream_Java_Lang_StackWalker_StackFrame_"><see cref="Java.Util.Stream.Stream{Java.Lang.StackWalker.StackFrame}"/></typeparam>
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T Walk<T, Arg0objectSuperJava_Util_Stream_Stream_Java_Lang_StackWalker_StackFrame_, Arg0ExtendsT>(Java.Util.Function.Function<Arg0objectSuperJava_Util_Stream_Stream_Java_Lang_StackWalker_StackFrame_, Arg0ExtendsT> arg0) where Arg0objectSuperJava_Util_Stream_Stream_Java_Lang_StackWalker_StackFrame_: Java.Util.Stream.Stream<Java.Lang.StackWalker.StackFrame> where Arg0ExtendsT: T
+        public T Walk<T, Arg0objectSuperJava_Util_Stream_Stream_Java_Lang_StackWalker_StackFrame_, Arg0ExtendsT>(Java.Util.Function.Function<Arg0objectSuperJava_Util_Stream_Stream_Java_Lang_StackWalker_StackFrame_, Arg0ExtendsT> arg0) where Arg0objectSuperJava_Util_Stream_Stream_Java_Lang_StackWalker_StackFrame_ : Java.Util.Stream.Stream<Java.Lang.StackWalker.StackFrame> where Arg0ExtendsT : T
         {
             return IExecuteWithSignature<T>("walk", "(Ljava/util/function/Function;)Ljava/lang/Object;", arg0);
         }
@@ -104,7 +104,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <typeparam name="Arg0objectSuperJava_Lang_StackWalker_StackFrame"><see cref="Java.Lang.StackWalker.StackFrame"/></typeparam>
-        public void ForEach<Arg0objectSuperJava_Lang_StackWalker_StackFrame>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_StackWalker_StackFrame> arg0) where Arg0objectSuperJava_Lang_StackWalker_StackFrame: Java.Lang.StackWalker.StackFrame
+        public void ForEach<Arg0objectSuperJava_Lang_StackWalker_StackFrame>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_StackWalker_StackFrame> arg0) where Arg0objectSuperJava_Lang_StackWalker_StackFrame : Java.Lang.StackWalker.StackFrame
         {
             IExecuteWithSignature("forEach", "(Ljava/util/function/Consumer;)V", arg0);
         }

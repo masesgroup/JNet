@@ -47,7 +47,7 @@ namespace Javax.Lang.Model.Util
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
         /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<Javax.Lang.Model.Element.ExecutableElement> ConstructorsIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
+        public static Java.Util.List<Javax.Lang.Model.Element.ExecutableElement> ConstructorsIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
             return SExecuteWithSignature<Java.Util.List<Javax.Lang.Model.Element.ExecutableElement>>(LocalBridgeClazz, "constructorsIn", "(Ljava/lang/Iterable;)Ljava/util/List;", arg0);
         }
@@ -57,7 +57,7 @@ namespace Javax.Lang.Model.Util
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
         /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<Javax.Lang.Model.Element.ExecutableElement> MethodsIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
+        public static Java.Util.List<Javax.Lang.Model.Element.ExecutableElement> MethodsIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
             return SExecuteWithSignature<Java.Util.List<Javax.Lang.Model.Element.ExecutableElement>>(LocalBridgeClazz, "methodsIn", "(Ljava/lang/Iterable;)Ljava/util/List;", arg0);
         }
@@ -67,7 +67,7 @@ namespace Javax.Lang.Model.Util
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
         /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<Javax.Lang.Model.Element.ModuleElement> ModulesIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
+        public static Java.Util.List<Javax.Lang.Model.Element.ModuleElement> ModulesIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
             return SExecuteWithSignature<Java.Util.List<Javax.Lang.Model.Element.ModuleElement>>(LocalBridgeClazz, "modulesIn", "(Ljava/lang/Iterable;)Ljava/util/List;", arg0);
         }
@@ -77,7 +77,7 @@ namespace Javax.Lang.Model.Util
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
         /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive"><see cref="Javax.Lang.Model.Element.ModuleElement.Directive"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<Javax.Lang.Model.Element.ModuleElement.ExportsDirective> ExportsIn<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive> arg0) where Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive: Javax.Lang.Model.Element.ModuleElement.Directive
+        public static Java.Util.List<Javax.Lang.Model.Element.ModuleElement.ExportsDirective> ExportsIn<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive> arg0) where Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive : Javax.Lang.Model.Element.ModuleElement.Directive
         {
             return SExecuteWithSignature<Java.Util.List<Javax.Lang.Model.Element.ModuleElement.ExportsDirective>>(LocalBridgeClazz, "exportsIn", "(Ljava/lang/Iterable;)Ljava/util/List;", arg0);
         }
@@ -87,7 +87,7 @@ namespace Javax.Lang.Model.Util
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
         /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive"><see cref="Javax.Lang.Model.Element.ModuleElement.Directive"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<Javax.Lang.Model.Element.ModuleElement.OpensDirective> OpensIn<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive> arg0) where Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive: Javax.Lang.Model.Element.ModuleElement.Directive
+        public static Java.Util.List<Javax.Lang.Model.Element.ModuleElement.OpensDirective> OpensIn<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive> arg0) where Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive : Javax.Lang.Model.Element.ModuleElement.Directive
         {
             return SExecuteWithSignature<Java.Util.List<Javax.Lang.Model.Element.ModuleElement.OpensDirective>>(LocalBridgeClazz, "opensIn", "(Ljava/lang/Iterable;)Ljava/util/List;", arg0);
         }
@@ -97,7 +97,7 @@ namespace Javax.Lang.Model.Util
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
         /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive"><see cref="Javax.Lang.Model.Element.ModuleElement.Directive"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<Javax.Lang.Model.Element.ModuleElement.ProvidesDirective> ProvidesIn<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive> arg0) where Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive: Javax.Lang.Model.Element.ModuleElement.Directive
+        public static Java.Util.List<Javax.Lang.Model.Element.ModuleElement.ProvidesDirective> ProvidesIn<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive> arg0) where Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive : Javax.Lang.Model.Element.ModuleElement.Directive
         {
             return SExecuteWithSignature<Java.Util.List<Javax.Lang.Model.Element.ModuleElement.ProvidesDirective>>(LocalBridgeClazz, "providesIn", "(Ljava/lang/Iterable;)Ljava/util/List;", arg0);
         }
@@ -107,7 +107,7 @@ namespace Javax.Lang.Model.Util
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
         /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive"><see cref="Javax.Lang.Model.Element.ModuleElement.Directive"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<Javax.Lang.Model.Element.ModuleElement.RequiresDirective> RequiresIn<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive> arg0) where Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive: Javax.Lang.Model.Element.ModuleElement.Directive
+        public static Java.Util.List<Javax.Lang.Model.Element.ModuleElement.RequiresDirective> RequiresIn<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive> arg0) where Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive : Javax.Lang.Model.Element.ModuleElement.Directive
         {
             return SExecuteWithSignature<Java.Util.List<Javax.Lang.Model.Element.ModuleElement.RequiresDirective>>(LocalBridgeClazz, "requiresIn", "(Ljava/lang/Iterable;)Ljava/util/List;", arg0);
         }
@@ -117,7 +117,7 @@ namespace Javax.Lang.Model.Util
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
         /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive"><see cref="Javax.Lang.Model.Element.ModuleElement.Directive"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<Javax.Lang.Model.Element.ModuleElement.UsesDirective> UsesIn<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive> arg0) where Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive: Javax.Lang.Model.Element.ModuleElement.Directive
+        public static Java.Util.List<Javax.Lang.Model.Element.ModuleElement.UsesDirective> UsesIn<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive> arg0) where Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive : Javax.Lang.Model.Element.ModuleElement.Directive
         {
             return SExecuteWithSignature<Java.Util.List<Javax.Lang.Model.Element.ModuleElement.UsesDirective>>(LocalBridgeClazz, "usesIn", "(Ljava/lang/Iterable;)Ljava/util/List;", arg0);
         }
@@ -127,7 +127,7 @@ namespace Javax.Lang.Model.Util
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
         /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<Javax.Lang.Model.Element.PackageElement> PackagesIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
+        public static Java.Util.List<Javax.Lang.Model.Element.PackageElement> PackagesIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
             return SExecuteWithSignature<Java.Util.List<Javax.Lang.Model.Element.PackageElement>>(LocalBridgeClazz, "packagesIn", "(Ljava/lang/Iterable;)Ljava/util/List;", arg0);
         }
@@ -137,7 +137,7 @@ namespace Javax.Lang.Model.Util
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
         /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<Javax.Lang.Model.Element.TypeElement> TypesIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
+        public static Java.Util.List<Javax.Lang.Model.Element.TypeElement> TypesIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
             return SExecuteWithSignature<Java.Util.List<Javax.Lang.Model.Element.TypeElement>>(LocalBridgeClazz, "typesIn", "(Ljava/lang/Iterable;)Ljava/util/List;", arg0);
         }
@@ -147,7 +147,7 @@ namespace Javax.Lang.Model.Util
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
         /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<Javax.Lang.Model.Element.VariableElement> FieldsIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
+        public static Java.Util.List<Javax.Lang.Model.Element.VariableElement> FieldsIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
             return SExecuteWithSignature<Java.Util.List<Javax.Lang.Model.Element.VariableElement>>(LocalBridgeClazz, "fieldsIn", "(Ljava/lang/Iterable;)Ljava/util/List;", arg0);
         }
@@ -157,7 +157,7 @@ namespace Javax.Lang.Model.Util
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        public static Java.Util.Set<Javax.Lang.Model.Element.ExecutableElement> ConstructorsIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
+        public static Java.Util.Set<Javax.Lang.Model.Element.ExecutableElement> ConstructorsIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
             return SExecuteWithSignature<Java.Util.Set<Javax.Lang.Model.Element.ExecutableElement>>(LocalBridgeClazz, "constructorsIn", "(Ljava/util/Set;)Ljava/util/Set;", arg0);
         }
@@ -167,7 +167,7 @@ namespace Javax.Lang.Model.Util
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        public static Java.Util.Set<Javax.Lang.Model.Element.ExecutableElement> MethodsIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
+        public static Java.Util.Set<Javax.Lang.Model.Element.ExecutableElement> MethodsIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
             return SExecuteWithSignature<Java.Util.Set<Javax.Lang.Model.Element.ExecutableElement>>(LocalBridgeClazz, "methodsIn", "(Ljava/util/Set;)Ljava/util/Set;", arg0);
         }
@@ -177,7 +177,7 @@ namespace Javax.Lang.Model.Util
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        public static Java.Util.Set<Javax.Lang.Model.Element.ModuleElement> ModulesIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
+        public static Java.Util.Set<Javax.Lang.Model.Element.ModuleElement> ModulesIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
             return SExecuteWithSignature<Java.Util.Set<Javax.Lang.Model.Element.ModuleElement>>(LocalBridgeClazz, "modulesIn", "(Ljava/util/Set;)Ljava/util/Set;", arg0);
         }
@@ -187,7 +187,7 @@ namespace Javax.Lang.Model.Util
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        public static Java.Util.Set<Javax.Lang.Model.Element.PackageElement> PackagesIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
+        public static Java.Util.Set<Javax.Lang.Model.Element.PackageElement> PackagesIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
             return SExecuteWithSignature<Java.Util.Set<Javax.Lang.Model.Element.PackageElement>>(LocalBridgeClazz, "packagesIn", "(Ljava/util/Set;)Ljava/util/Set;", arg0);
         }
@@ -197,7 +197,7 @@ namespace Javax.Lang.Model.Util
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        public static Java.Util.Set<Javax.Lang.Model.Element.TypeElement> TypesIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
+        public static Java.Util.Set<Javax.Lang.Model.Element.TypeElement> TypesIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
             return SExecuteWithSignature<Java.Util.Set<Javax.Lang.Model.Element.TypeElement>>(LocalBridgeClazz, "typesIn", "(Ljava/util/Set;)Ljava/util/Set;", arg0);
         }
@@ -207,7 +207,7 @@ namespace Javax.Lang.Model.Util
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        public static Java.Util.Set<Javax.Lang.Model.Element.VariableElement> FieldsIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
+        public static Java.Util.Set<Javax.Lang.Model.Element.VariableElement> FieldsIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
             return SExecuteWithSignature<Java.Util.Set<Javax.Lang.Model.Element.VariableElement>>(LocalBridgeClazz, "fieldsIn", "(Ljava/util/Set;)Ljava/util/Set;", arg0);
         }

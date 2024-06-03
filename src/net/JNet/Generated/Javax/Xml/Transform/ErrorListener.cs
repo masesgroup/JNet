@@ -86,9 +86,9 @@ namespace Javax.Xml.Transform
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("error", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(ErrorEventHandler));
-            AddEventHandler("fatalError", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(FatalErrorEventHandler));
-            AddEventHandler("warning", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(WarningEventHandler));
+            AddEventHandler("error", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(ErrorEventHandler));
+            AddEventHandler("fatalError", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(FatalErrorEventHandler));
+            AddEventHandler("warning", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(WarningEventHandler));
 
         }
 
@@ -96,7 +96,7 @@ namespace Javax.Xml.Transform
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/ErrorListener.html#error(javax.xml.transform.TransformerException)"/>
         /// </summary>
         /// <remarks>If <see cref="OnError"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnError { get; set; } = null;
+        public global::System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnError { get; set; } = null;
 
         void ErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -118,7 +118,7 @@ namespace Javax.Xml.Transform
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/ErrorListener.html#fatalError(javax.xml.transform.TransformerException)"/>
         /// </summary>
         /// <remarks>If <see cref="OnFatalError"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnFatalError { get; set; } = null;
+        public global::System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnFatalError { get; set; } = null;
 
         void FatalErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -140,7 +140,7 @@ namespace Javax.Xml.Transform
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/ErrorListener.html#warning(javax.xml.transform.TransformerException)"/>
         /// </summary>
         /// <remarks>If <see cref="OnWarning"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnWarning { get; set; } = null;
+        public global::System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnWarning { get; set; } = null;
 
         void WarningEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {

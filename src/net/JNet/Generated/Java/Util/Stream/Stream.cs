@@ -429,7 +429,7 @@ namespace Java.Util.Stream
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="A"></typeparam>
         /// <returns><typeparamref name="R"/></returns>
-        R Collect<R, Arg0objectSuperT, A>(Java.Util.Stream.Collector<Arg0objectSuperT, A, R> arg0) where Arg0objectSuperT: T;
+        R Collect<R, Arg0objectSuperT, A>(Java.Util.Stream.Collector<Arg0objectSuperT, A, R> arg0) where Arg0objectSuperT : T;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#flatMap(java.util.function.Function)"/>
         /// </summary>
@@ -439,7 +439,7 @@ namespace Java.Util.Stream
         /// <typeparam name="Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_"><see cref="Java.Util.Stream.Stream{Arg0ExtendsR}"/></typeparam>
         /// <typeparam name="Arg0ExtendsR"><typeparamref name="R"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        Java.Util.Stream.Stream<R> FlatMap<R, Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_, Arg0ExtendsR>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_> arg0) where Arg0objectSuperT: T where Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_: Java.Util.Stream.Stream<Arg0ExtendsR> where Arg0ExtendsR: R;
+        Java.Util.Stream.Stream<R> FlatMap<R, Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_, Arg0ExtendsR>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_> arg0) where Arg0objectSuperT : T where Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_ : Java.Util.Stream.Stream<Arg0ExtendsR> where Arg0ExtendsR : R;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#map(java.util.function.Function)"/>
         /// </summary>
@@ -448,7 +448,7 @@ namespace Java.Util.Stream
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="Arg0ExtendsR"><typeparamref name="R"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        Java.Util.Stream.Stream<R> Map<R, Arg0objectSuperT, Arg0ExtendsR>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsR> arg0) where Arg0objectSuperT: T where Arg0ExtendsR: R;
+        Java.Util.Stream.Stream<R> Map<R, Arg0objectSuperT, Arg0ExtendsR>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsR> arg0) where Arg0objectSuperT : T where Arg0ExtendsR : R;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#collect(java.util.function.Supplier,java.util.function.BiConsumer,java.util.function.BiConsumer)"/>
         /// </summary>
@@ -458,7 +458,7 @@ namespace Java.Util.Stream
         /// <typeparam name="R"></typeparam>
         /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><typeparamref name="R"/></returns>
-        R Collect<R, Arg1objectSuperT>(Java.Util.Function.Supplier<R> arg0, Java.Util.Function.BiConsumer<R, Arg1objectSuperT> arg1, Java.Util.Function.BiConsumer<R, R> arg2) where Arg1objectSuperT: T;
+        R Collect<R, Arg1objectSuperT>(Java.Util.Function.Supplier<R> arg0, Java.Util.Function.BiConsumer<R, Arg1objectSuperT> arg1, Java.Util.Function.BiConsumer<R, R> arg2) where Arg1objectSuperT : T;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#reduce(java.lang.Object,java.util.function.BiFunction,java.util.function.BinaryOperator)"/>
         /// </summary>
@@ -468,28 +468,28 @@ namespace Java.Util.Stream
         /// <typeparam name="U"></typeparam>
         /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><typeparamref name="U"/></returns>
-        U Reduce<U, Arg1objectSuperT>(U arg0, Java.Util.Function.BiFunction<U, Arg1objectSuperT, U> arg1, Java.Util.Function.BinaryOperator<U> arg2) where Arg1objectSuperT: T;
+        U Reduce<U, Arg1objectSuperT>(U arg0, Java.Util.Function.BiFunction<U, Arg1objectSuperT, U> arg1, Java.Util.Function.BinaryOperator<U> arg2) where Arg1objectSuperT : T;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#allMatch(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        bool AllMatch<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
+        bool AllMatch<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#anyMatch(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        bool AnyMatch<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
+        bool AnyMatch<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#noneMatch(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        bool NoneMatch<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
+        bool NoneMatch<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#toArray()"/>
         /// </summary>
@@ -518,14 +518,14 @@ namespace Java.Util.Stream
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="Arg0ExtendsJava_Util_Stream_DoubleStream"><see cref="Java.Util.Stream.DoubleStream"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
-        Java.Util.Stream.DoubleStream FlatMapToDouble<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_DoubleStream>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_DoubleStream> arg0) where Arg0objectSuperT: T where Arg0ExtendsJava_Util_Stream_DoubleStream: Java.Util.Stream.DoubleStream;
+        Java.Util.Stream.DoubleStream FlatMapToDouble<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_DoubleStream>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_DoubleStream> arg0) where Arg0objectSuperT : T where Arg0ExtendsJava_Util_Stream_DoubleStream : Java.Util.Stream.DoubleStream;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#mapToDouble(java.util.function.ToDoubleFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.ToDoubleFunction"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
-        Java.Util.Stream.DoubleStream MapToDouble<Arg0objectSuperT>(Java.Util.Function.ToDoubleFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
+        Java.Util.Stream.DoubleStream MapToDouble<Arg0objectSuperT>(Java.Util.Function.ToDoubleFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT : T;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#flatMapToInt(java.util.function.Function)"/>
         /// </summary>
@@ -533,14 +533,14 @@ namespace Java.Util.Stream
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="Arg0ExtendsJava_Util_Stream_IntStream"><see cref="Java.Util.Stream.IntStream"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
-        Java.Util.Stream.IntStream FlatMapToInt<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_IntStream>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_IntStream> arg0) where Arg0objectSuperT: T where Arg0ExtendsJava_Util_Stream_IntStream: Java.Util.Stream.IntStream;
+        Java.Util.Stream.IntStream FlatMapToInt<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_IntStream>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_IntStream> arg0) where Arg0objectSuperT : T where Arg0ExtendsJava_Util_Stream_IntStream : Java.Util.Stream.IntStream;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#mapToInt(java.util.function.ToIntFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.ToIntFunction"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
-        Java.Util.Stream.IntStream MapToInt<Arg0objectSuperT>(Java.Util.Function.ToIntFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
+        Java.Util.Stream.IntStream MapToInt<Arg0objectSuperT>(Java.Util.Function.ToIntFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT : T;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#flatMapToLong(java.util.function.Function)"/>
         /// </summary>
@@ -548,14 +548,14 @@ namespace Java.Util.Stream
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="Arg0ExtendsJava_Util_Stream_LongStream"><see cref="Java.Util.Stream.LongStream"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
-        Java.Util.Stream.LongStream FlatMapToLong<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_LongStream>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_LongStream> arg0) where Arg0objectSuperT: T where Arg0ExtendsJava_Util_Stream_LongStream: Java.Util.Stream.LongStream;
+        Java.Util.Stream.LongStream FlatMapToLong<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_LongStream>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_LongStream> arg0) where Arg0objectSuperT : T where Arg0ExtendsJava_Util_Stream_LongStream : Java.Util.Stream.LongStream;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#mapToLong(java.util.function.ToLongFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.ToLongFunction"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
-        Java.Util.Stream.LongStream MapToLong<Arg0objectSuperT>(Java.Util.Function.ToLongFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
+        Java.Util.Stream.LongStream MapToLong<Arg0objectSuperT>(Java.Util.Function.ToLongFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT : T;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#distinct()"/>
         /// </summary>
@@ -567,7 +567,7 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        Java.Util.Stream.Stream<T> Filter<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
+        Java.Util.Stream.Stream<T> Filter<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#limit(long)"/>
         /// </summary>
@@ -580,7 +580,7 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        Java.Util.Stream.Stream<T> Peek<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
+        Java.Util.Stream.Stream<T> Peek<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#skip(long)"/>
         /// </summary>
@@ -609,27 +609,27 @@ namespace Java.Util.Stream
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        void ForEach<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
+        void ForEach<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#forEachOrdered(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        void ForEachOrdered<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
+        void ForEachOrdered<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#dropWhile(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        Java.Util.Stream.Stream<T> DropWhile<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
+        Java.Util.Stream.Stream<T> DropWhile<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#takeWhile(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        Java.Util.Stream.Stream<T> TakeWhile<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
+        Java.Util.Stream.Stream<T> TakeWhile<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T;
 
         #endregion
 
@@ -669,7 +669,7 @@ namespace Java.Util.Stream
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="Arg1ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public static Java.Util.Stream.Stream<T> Concat<Arg0ExtendsT, Arg1ExtendsT>(Java.Util.Stream.Stream<Arg0ExtendsT> arg0, Java.Util.Stream.Stream<Arg1ExtendsT> arg1) where Arg0ExtendsT: T where Arg1ExtendsT: T
+        public static Java.Util.Stream.Stream<T> Concat<Arg0ExtendsT, Arg1ExtendsT>(Java.Util.Stream.Stream<Arg0ExtendsT> arg0, Java.Util.Stream.Stream<Arg1ExtendsT> arg1) where Arg0ExtendsT : T where Arg1ExtendsT : T
         {
             return SExecute<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "concat", arg0, arg1);
         }
@@ -687,7 +687,7 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public static Java.Util.Stream.Stream<T> Generate<Arg0ExtendsT>(Java.Util.Function.Supplier<Arg0ExtendsT> arg0) where Arg0ExtendsT: T
+        public static Java.Util.Stream.Stream<T> Generate<Arg0ExtendsT>(Java.Util.Function.Supplier<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
         {
             return SExecuteWithSignature<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "generate", "(Ljava/util/function/Supplier;)Ljava/util/stream/Stream;", arg0);
         }
@@ -699,7 +699,7 @@ namespace Java.Util.Stream
         /// <param name="arg2"><see cref="Java.Util.Function.UnaryOperator"/></param>
         /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public static Java.Util.Stream.Stream<T> Iterate<Arg1objectSuperT>(T arg0, Java.Util.Function.Predicate<Arg1objectSuperT> arg1, Java.Util.Function.UnaryOperator<T> arg2) where Arg1objectSuperT: T
+        public static Java.Util.Stream.Stream<T> Iterate<Arg1objectSuperT>(T arg0, Java.Util.Function.Predicate<Arg1objectSuperT> arg1, Java.Util.Function.UnaryOperator<T> arg2) where Arg1objectSuperT : T
         {
             return SExecute<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "iterate", arg0, arg1, arg2);
         }
@@ -762,7 +762,7 @@ namespace Java.Util.Stream
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="A"></typeparam>
         /// <returns><typeparamref name="R"/></returns>
-        public R Collect<R, Arg0objectSuperT, A>(Java.Util.Stream.Collector<Arg0objectSuperT, A, R> arg0) where Arg0objectSuperT: T
+        public R Collect<R, Arg0objectSuperT, A>(Java.Util.Stream.Collector<Arg0objectSuperT, A, R> arg0) where Arg0objectSuperT : T
         {
             return IExecute<R>("collect", arg0);
         }
@@ -775,7 +775,7 @@ namespace Java.Util.Stream
         /// <typeparam name="Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_"><see cref="Java.Util.Stream.Stream{Arg0ExtendsR}"/></typeparam>
         /// <typeparam name="Arg0ExtendsR"><typeparamref name="R"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<R> FlatMap<R, Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_, Arg0ExtendsR>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_> arg0) where Arg0objectSuperT: T where Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_: Java.Util.Stream.Stream<Arg0ExtendsR> where Arg0ExtendsR: R
+        public Java.Util.Stream.Stream<R> FlatMap<R, Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_, Arg0ExtendsR>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_> arg0) where Arg0objectSuperT : T where Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_ : Java.Util.Stream.Stream<Arg0ExtendsR> where Arg0ExtendsR : R
         {
             return IExecuteWithSignature<Java.Util.Stream.Stream<R>>("flatMap", "(Ljava/util/function/Function;)Ljava/util/stream/Stream;", arg0);
         }
@@ -787,7 +787,7 @@ namespace Java.Util.Stream
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="Arg0ExtendsR"><typeparamref name="R"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<R> Map<R, Arg0objectSuperT, Arg0ExtendsR>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsR> arg0) where Arg0objectSuperT: T where Arg0ExtendsR: R
+        public Java.Util.Stream.Stream<R> Map<R, Arg0objectSuperT, Arg0ExtendsR>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsR> arg0) where Arg0objectSuperT : T where Arg0ExtendsR : R
         {
             return IExecuteWithSignature<Java.Util.Stream.Stream<R>>("map", "(Ljava/util/function/Function;)Ljava/util/stream/Stream;", arg0);
         }
@@ -800,7 +800,7 @@ namespace Java.Util.Stream
         /// <typeparam name="R"></typeparam>
         /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><typeparamref name="R"/></returns>
-        public R Collect<R, Arg1objectSuperT>(Java.Util.Function.Supplier<R> arg0, Java.Util.Function.BiConsumer<R, Arg1objectSuperT> arg1, Java.Util.Function.BiConsumer<R, R> arg2) where Arg1objectSuperT: T
+        public R Collect<R, Arg1objectSuperT>(Java.Util.Function.Supplier<R> arg0, Java.Util.Function.BiConsumer<R, Arg1objectSuperT> arg1, Java.Util.Function.BiConsumer<R, R> arg2) where Arg1objectSuperT : T
         {
             return IExecute<R>("collect", arg0, arg1, arg2);
         }
@@ -813,7 +813,7 @@ namespace Java.Util.Stream
         /// <typeparam name="U"></typeparam>
         /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><typeparamref name="U"/></returns>
-        public U Reduce<U, Arg1objectSuperT>(U arg0, Java.Util.Function.BiFunction<U, Arg1objectSuperT, U> arg1, Java.Util.Function.BinaryOperator<U> arg2) where Arg1objectSuperT: T
+        public U Reduce<U, Arg1objectSuperT>(U arg0, Java.Util.Function.BiFunction<U, Arg1objectSuperT, U> arg1, Java.Util.Function.BinaryOperator<U> arg2) where Arg1objectSuperT : T
         {
             return IExecute<U>("reduce", arg0, arg1, arg2);
         }
@@ -823,7 +823,7 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool AllMatch<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public bool AllMatch<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             return IExecuteWithSignature<bool>("allMatch", "(Ljava/util/function/Predicate;)Z", arg0);
         }
@@ -833,7 +833,7 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool AnyMatch<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public bool AnyMatch<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             return IExecuteWithSignature<bool>("anyMatch", "(Ljava/util/function/Predicate;)Z", arg0);
         }
@@ -843,7 +843,7 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool NoneMatch<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public bool NoneMatch<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             return IExecuteWithSignature<bool>("noneMatch", "(Ljava/util/function/Predicate;)Z", arg0);
         }
@@ -887,7 +887,7 @@ namespace Java.Util.Stream
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="Arg0ExtendsJava_Util_Stream_DoubleStream"><see cref="Java.Util.Stream.DoubleStream"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
-        public Java.Util.Stream.DoubleStream FlatMapToDouble<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_DoubleStream>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_DoubleStream> arg0) where Arg0objectSuperT: T where Arg0ExtendsJava_Util_Stream_DoubleStream: Java.Util.Stream.DoubleStream
+        public Java.Util.Stream.DoubleStream FlatMapToDouble<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_DoubleStream>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_DoubleStream> arg0) where Arg0objectSuperT : T where Arg0ExtendsJava_Util_Stream_DoubleStream : Java.Util.Stream.DoubleStream
         {
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("flatMapToDouble", "(Ljava/util/function/Function;)Ljava/util/stream/DoubleStream;", arg0);
         }
@@ -897,7 +897,7 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.ToDoubleFunction"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
-        public Java.Util.Stream.DoubleStream MapToDouble<Arg0objectSuperT>(Java.Util.Function.ToDoubleFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public Java.Util.Stream.DoubleStream MapToDouble<Arg0objectSuperT>(Java.Util.Function.ToDoubleFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("mapToDouble", "(Ljava/util/function/ToDoubleFunction;)Ljava/util/stream/DoubleStream;", arg0);
         }
@@ -908,7 +908,7 @@ namespace Java.Util.Stream
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="Arg0ExtendsJava_Util_Stream_IntStream"><see cref="Java.Util.Stream.IntStream"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
-        public Java.Util.Stream.IntStream FlatMapToInt<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_IntStream>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_IntStream> arg0) where Arg0objectSuperT: T where Arg0ExtendsJava_Util_Stream_IntStream: Java.Util.Stream.IntStream
+        public Java.Util.Stream.IntStream FlatMapToInt<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_IntStream>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_IntStream> arg0) where Arg0objectSuperT : T where Arg0ExtendsJava_Util_Stream_IntStream : Java.Util.Stream.IntStream
         {
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("flatMapToInt", "(Ljava/util/function/Function;)Ljava/util/stream/IntStream;", arg0);
         }
@@ -918,7 +918,7 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.ToIntFunction"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
-        public Java.Util.Stream.IntStream MapToInt<Arg0objectSuperT>(Java.Util.Function.ToIntFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public Java.Util.Stream.IntStream MapToInt<Arg0objectSuperT>(Java.Util.Function.ToIntFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("mapToInt", "(Ljava/util/function/ToIntFunction;)Ljava/util/stream/IntStream;", arg0);
         }
@@ -929,7 +929,7 @@ namespace Java.Util.Stream
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="Arg0ExtendsJava_Util_Stream_LongStream"><see cref="Java.Util.Stream.LongStream"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
-        public Java.Util.Stream.LongStream FlatMapToLong<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_LongStream>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_LongStream> arg0) where Arg0objectSuperT: T where Arg0ExtendsJava_Util_Stream_LongStream: Java.Util.Stream.LongStream
+        public Java.Util.Stream.LongStream FlatMapToLong<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_LongStream>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_LongStream> arg0) where Arg0objectSuperT : T where Arg0ExtendsJava_Util_Stream_LongStream : Java.Util.Stream.LongStream
         {
             return IExecuteWithSignature<Java.Util.Stream.LongStream>("flatMapToLong", "(Ljava/util/function/Function;)Ljava/util/stream/LongStream;", arg0);
         }
@@ -939,7 +939,7 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.ToLongFunction"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
-        public Java.Util.Stream.LongStream MapToLong<Arg0objectSuperT>(Java.Util.Function.ToLongFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public Java.Util.Stream.LongStream MapToLong<Arg0objectSuperT>(Java.Util.Function.ToLongFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             return IExecuteWithSignature<Java.Util.Stream.LongStream>("mapToLong", "(Ljava/util/function/ToLongFunction;)Ljava/util/stream/LongStream;", arg0);
         }
@@ -957,7 +957,7 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<T> Filter<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public Java.Util.Stream.Stream<T> Filter<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             return IExecuteWithSignature<Java.Util.Stream.Stream<T>>("filter", "(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;", arg0);
         }
@@ -976,7 +976,7 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<T> Peek<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public Java.Util.Stream.Stream<T> Peek<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             return IExecuteWithSignature<Java.Util.Stream.Stream<T>>("peek", "(Ljava/util/function/Consumer;)Ljava/util/stream/Stream;", arg0);
         }
@@ -1020,7 +1020,7 @@ namespace Java.Util.Stream
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        public void ForEach<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public void ForEach<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             IExecuteWithSignature("forEach", "(Ljava/util/function/Consumer;)V", arg0);
         }
@@ -1029,7 +1029,7 @@ namespace Java.Util.Stream
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        public void ForEachOrdered<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public void ForEachOrdered<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             IExecuteWithSignature("forEachOrdered", "(Ljava/util/function/Consumer;)V", arg0);
         }
@@ -1039,7 +1039,7 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<T> DropWhile<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public Java.Util.Stream.Stream<T> DropWhile<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             return IExecuteWithSignature<Java.Util.Stream.Stream<T>>("dropWhile", "(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;", arg0);
         }
@@ -1049,7 +1049,7 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<T> TakeWhile<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public Java.Util.Stream.Stream<T> TakeWhile<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             return IExecuteWithSignature<Java.Util.Stream.Stream<T>>("takeWhile", "(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;", arg0);
         }

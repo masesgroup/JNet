@@ -262,7 +262,7 @@ namespace Java.Util
         /// <typeparam name="Arg0ExtendsJava_Util_Optional_Arg0ExtendsU_"><see cref="Java.Util.Optional{Arg0ExtendsU}"/></typeparam>
         /// <typeparam name="Arg0ExtendsU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<U> FlatMap<U, Arg0objectSuperT, Arg0ExtendsJava_Util_Optional_Arg0ExtendsU_, Arg0ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Optional_Arg0ExtendsU_> arg0) where Arg0objectSuperT: T where Arg0ExtendsJava_Util_Optional_Arg0ExtendsU_: Java.Util.Optional<Arg0ExtendsU> where Arg0ExtendsU: U
+        public Java.Util.Optional<U> FlatMap<U, Arg0objectSuperT, Arg0ExtendsJava_Util_Optional_Arg0ExtendsU_, Arg0ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Optional_Arg0ExtendsU_> arg0) where Arg0objectSuperT : T where Arg0ExtendsJava_Util_Optional_Arg0ExtendsU_ : Java.Util.Optional<Arg0ExtendsU> where Arg0ExtendsU : U
         {
             return IExecuteWithSignature<Java.Util.Optional<U>>("flatMap", "(Ljava/util/function/Function;)Ljava/util/Optional;", arg0);
         }
@@ -274,7 +274,7 @@ namespace Java.Util
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="Arg0ExtendsU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<U> Map<U, Arg0objectSuperT, Arg0ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsU> arg0) where Arg0objectSuperT: T where Arg0ExtendsU: U
+        public Java.Util.Optional<U> Map<U, Arg0objectSuperT, Arg0ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsU> arg0) where Arg0objectSuperT : T where Arg0ExtendsU : U
         {
             return IExecuteWithSignature<Java.Util.Optional<U>>("map", "(Ljava/util/function/Function;)Ljava/util/Optional;", arg0);
         }
@@ -286,7 +286,7 @@ namespace Java.Util
         /// <typeparam name="X"></typeparam>
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Lang.Throwable"/>
-        public T OrElseThrow<Arg0ExtendsX, X>(Java.Util.Function.Supplier<Arg0ExtendsX> arg0) where Arg0ExtendsX: X
+        public T OrElseThrow<Arg0ExtendsX, X>(Java.Util.Function.Supplier<Arg0ExtendsX> arg0) where Arg0ExtendsX : X
         {
             return IExecute<T>("orElseThrow", arg0);
         }
@@ -312,7 +312,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<T> Filter<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public Java.Util.Optional<T> Filter<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             return IExecuteWithSignature<Java.Util.Optional<T>>("filter", "(Ljava/util/function/Predicate;)Ljava/util/Optional;", arg0);
         }
@@ -323,7 +323,7 @@ namespace Java.Util
         /// <typeparam name="Arg0ExtendsJava_Util_Optional_Arg0ExtendsT_"><see cref="Java.Util.Optional{Arg0ExtendsT}"/></typeparam>
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<T> Or<Arg0ExtendsJava_Util_Optional_Arg0ExtendsT_, Arg0ExtendsT>(Java.Util.Function.Supplier<Arg0ExtendsJava_Util_Optional_Arg0ExtendsT_> arg0) where Arg0ExtendsJava_Util_Optional_Arg0ExtendsT_: Java.Util.Optional<Arg0ExtendsT> where Arg0ExtendsT: T
+        public Java.Util.Optional<T> Or<Arg0ExtendsJava_Util_Optional_Arg0ExtendsT_, Arg0ExtendsT>(Java.Util.Function.Supplier<Arg0ExtendsJava_Util_Optional_Arg0ExtendsT_> arg0) where Arg0ExtendsJava_Util_Optional_Arg0ExtendsT_ : Java.Util.Optional<Arg0ExtendsT> where Arg0ExtendsT : T
         {
             return IExecuteWithSignature<Java.Util.Optional<T>>("or", "(Ljava/util/function/Supplier;)Ljava/util/Optional;", arg0);
         }
@@ -358,7 +358,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T OrElseGet<Arg0ExtendsT>(Java.Util.Function.Supplier<Arg0ExtendsT> arg0) where Arg0ExtendsT: T
+        public T OrElseGet<Arg0ExtendsT>(Java.Util.Function.Supplier<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
         {
             return IExecuteWithSignature<T>("orElseGet", "(Ljava/util/function/Supplier;)Ljava/lang/Object;", arg0);
         }
@@ -375,7 +375,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        public void IfPresent<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public void IfPresent<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             IExecuteWithSignature("ifPresent", "(Ljava/util/function/Consumer;)V", arg0);
         }
@@ -385,7 +385,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        public void IfPresentOrElse<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0, Java.Lang.Runnable arg1) where Arg0objectSuperT: T
+        public void IfPresentOrElse<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0, Java.Lang.Runnable arg1) where Arg0objectSuperT : T
         {
             IExecute("ifPresentOrElse", arg0, arg1);
         }

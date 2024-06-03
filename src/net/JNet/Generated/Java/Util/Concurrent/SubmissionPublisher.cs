@@ -322,7 +322,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool IsSubscribed<Arg0objectSuperT>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public bool IsSubscribed<Arg0objectSuperT>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             return IExecuteWithSignature<bool>("isSubscribed", "(Ljava/util/concurrent/Flow$Subscriber;)Z", arg0);
         }
@@ -341,7 +341,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="Java.Util.Function.BiPredicate"/></param>
         /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="int"/></returns>
-        public int Offer<Arg1objectSuperT>(T arg0, Java.Util.Function.BiPredicate<Java.Util.Concurrent.Flow.Subscriber<Arg1objectSuperT>, Arg1objectSuperT> arg1) where Arg1objectSuperT: T
+        public int Offer<Arg1objectSuperT>(T arg0, Java.Util.Function.BiPredicate<Java.Util.Concurrent.Flow.Subscriber<Arg1objectSuperT>, Arg1objectSuperT> arg1) where Arg1objectSuperT : T
         {
             return IExecute<int>("offer", arg0, arg1);
         }
@@ -354,7 +354,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg3"><see cref="Java.Util.Function.BiPredicate"/></param>
         /// <typeparam name="Arg3objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="int"/></returns>
-        public int Offer<Arg3objectSuperT>(T arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2, Java.Util.Function.BiPredicate<Java.Util.Concurrent.Flow.Subscriber<Arg3objectSuperT>, Arg3objectSuperT> arg3) where Arg3objectSuperT: T
+        public int Offer<Arg3objectSuperT>(T arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2, Java.Util.Function.BiPredicate<Java.Util.Concurrent.Flow.Subscriber<Arg3objectSuperT>, Arg3objectSuperT> arg3) where Arg3objectSuperT : T
         {
             return IExecute<int>("offer", arg0, arg1, arg2, arg3);
         }
@@ -373,7 +373,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public Java.Util.Concurrent.CompletableFuture<Java.Lang.Void> Consume<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public Java.Util.Concurrent.CompletableFuture<Java.Lang.Void> Consume<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<Java.Lang.Void>>("consume", "(Ljava/util/function/Consumer;)Ljava/util/concurrent/CompletableFuture;", arg0);
         }
@@ -405,7 +405,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        public void Subscribe<Arg0objectSuperT>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public void Subscribe<Arg0objectSuperT>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             IExecuteWithSignature("subscribe", "(Ljava/util/concurrent/Flow$Subscriber;)V", arg0);
         }

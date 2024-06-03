@@ -83,9 +83,9 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("popupMenuCanceled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>>>(PopupMenuCanceledEventHandler));
-            AddEventHandler("popupMenuWillBecomeInvisible", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>>>(PopupMenuWillBecomeInvisibleEventHandler));
-            AddEventHandler("popupMenuWillBecomeVisible", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>>>(PopupMenuWillBecomeVisibleEventHandler));
+            AddEventHandler("popupMenuCanceled", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>>>(PopupMenuCanceledEventHandler));
+            AddEventHandler("popupMenuWillBecomeInvisible", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>>>(PopupMenuWillBecomeInvisibleEventHandler));
+            AddEventHandler("popupMenuWillBecomeVisible", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>>>(PopupMenuWillBecomeVisibleEventHandler));
 
         }
 
@@ -93,7 +93,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html#popupMenuCanceled(javax.swing.event.PopupMenuEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnPopupMenuCanceled"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.PopupMenuEvent> OnPopupMenuCanceled { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.PopupMenuEvent> OnPopupMenuCanceled { get; set; } = null;
 
         void PopupMenuCanceledEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>> data)
         {
@@ -114,7 +114,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html#popupMenuWillBecomeInvisible(javax.swing.event.PopupMenuEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnPopupMenuWillBecomeInvisible"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.PopupMenuEvent> OnPopupMenuWillBecomeInvisible { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.PopupMenuEvent> OnPopupMenuWillBecomeInvisible { get; set; } = null;
 
         void PopupMenuWillBecomeInvisibleEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>> data)
         {
@@ -135,7 +135,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html#popupMenuWillBecomeVisible(javax.swing.event.PopupMenuEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnPopupMenuWillBecomeVisible"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.PopupMenuEvent> OnPopupMenuWillBecomeVisible { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.PopupMenuEvent> OnPopupMenuWillBecomeVisible { get; set; } = null;
 
         void PopupMenuWillBecomeVisibleEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>> data)
         {

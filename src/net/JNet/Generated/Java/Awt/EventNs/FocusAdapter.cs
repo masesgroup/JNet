@@ -50,8 +50,8 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("focusGained", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.FocusEvent>>>(FocusGainedEventHandler));
-            AddEventHandler("focusLost", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.FocusEvent>>>(FocusLostEventHandler));
+            AddEventHandler("focusGained", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.FocusEvent>>>(FocusGainedEventHandler));
+            AddEventHandler("focusLost", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.FocusEvent>>>(FocusLostEventHandler));
 
         }
 
@@ -59,7 +59,7 @@ namespace Java.Awt.EventNs
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusAdapter.html#focusGained(java.awt.event.FocusEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnFocusGained"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.EventNs.FocusEvent> OnFocusGained { get; set; } = null;
+        public global::System.Action<Java.Awt.EventNs.FocusEvent> OnFocusGained { get; set; } = null;
 
         void FocusGainedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.FocusEvent>> data)
         {
@@ -80,7 +80,7 @@ namespace Java.Awt.EventNs
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusAdapter.html#focusLost(java.awt.event.FocusEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnFocusLost"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.EventNs.FocusEvent> OnFocusLost { get; set; } = null;
+        public global::System.Action<Java.Awt.EventNs.FocusEvent> OnFocusLost { get; set; } = null;
 
         void FocusLostEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.FocusEvent>> data)
         {

@@ -74,7 +74,7 @@ namespace Java.Lang.Reflect
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="T"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T GetAnnotation<T>(Java.Lang.Class arg0) where T: Java.Lang.Annotation.IAnnotation, new()
+        public T GetAnnotation<T>(Java.Lang.Class arg0) where T : Java.Lang.Annotation.IAnnotation, new()
         {
             return IExecute<T>("getAnnotation", arg0);
         }
@@ -84,7 +84,7 @@ namespace Java.Lang.Reflect
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="T"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T GetDeclaredAnnotation<T>(Java.Lang.Class arg0) where T: Java.Lang.Annotation.IAnnotation, new()
+        public T GetDeclaredAnnotation<T>(Java.Lang.Class arg0) where T : Java.Lang.Annotation.IAnnotation, new()
         {
             return IExecute<T>("getDeclaredAnnotation", arg0);
         }
@@ -94,7 +94,7 @@ namespace Java.Lang.Reflect
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="T"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T[] GetAnnotationsByType<T>(Java.Lang.Class arg0) where T: Java.Lang.Annotation.IAnnotation, new()
+        public T[] GetAnnotationsByType<T>(Java.Lang.Class arg0) where T : Java.Lang.Annotation.IAnnotation, new()
         {
             return IExecuteArray<T>("getAnnotationsByType", arg0);
         }
@@ -104,7 +104,7 @@ namespace Java.Lang.Reflect
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="T"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T[] GetDeclaredAnnotationsByType<T>(Java.Lang.Class arg0) where T: Java.Lang.Annotation.IAnnotation, new()
+        public T[] GetDeclaredAnnotationsByType<T>(Java.Lang.Class arg0) where T : Java.Lang.Annotation.IAnnotation, new()
         {
             return IExecuteArray<T>("getDeclaredAnnotationsByType", arg0);
         }

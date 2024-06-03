@@ -223,7 +223,7 @@ namespace Java.Lang
         /// <param name="arg1"><see cref="Java.Lang.Iterable"/></param>
         /// <typeparam name="Arg1ExtendsJava_Lang_CharSequence"><see cref="Java.Lang.CharSequence"/></typeparam>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        public static Java.Lang.String Join<Arg1ExtendsJava_Lang_CharSequence>(Java.Lang.CharSequence arg0, Java.Lang.Iterable<Arg1ExtendsJava_Lang_CharSequence> arg1) where Arg1ExtendsJava_Lang_CharSequence: Java.Lang.CharSequence
+        public static Java.Lang.String Join<Arg1ExtendsJava_Lang_CharSequence>(Java.Lang.CharSequence arg0, Java.Lang.Iterable<Arg1ExtendsJava_Lang_CharSequence> arg1) where Arg1ExtendsJava_Lang_CharSequence : Java.Lang.CharSequence
         {
             return SExecute<Java.Lang.String>(LocalBridgeClazz, "join", arg0, arg1);
         }

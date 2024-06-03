@@ -78,8 +78,8 @@ namespace Java.Awt.DesktopNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("appHidden", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppHiddenEvent>>>(AppHiddenEventHandler));
-            AddEventHandler("appUnhidden", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppHiddenEvent>>>(AppUnhiddenEventHandler));
+            AddEventHandler("appHidden", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppHiddenEvent>>>(AppHiddenEventHandler));
+            AddEventHandler("appUnhidden", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppHiddenEvent>>>(AppUnhiddenEventHandler));
 
         }
 
@@ -87,7 +87,7 @@ namespace Java.Awt.DesktopNs
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppHiddenListener.html#appHidden(java.awt.desktop.AppHiddenEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAppHidden"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.DesktopNs.AppHiddenEvent> OnAppHidden { get; set; } = null;
+        public global::System.Action<Java.Awt.DesktopNs.AppHiddenEvent> OnAppHidden { get; set; } = null;
 
         void AppHiddenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppHiddenEvent>> data)
         {
@@ -108,7 +108,7 @@ namespace Java.Awt.DesktopNs
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppHiddenListener.html#appUnhidden(java.awt.desktop.AppHiddenEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAppUnhidden"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.DesktopNs.AppHiddenEvent> OnAppUnhidden { get; set; } = null;
+        public global::System.Action<Java.Awt.DesktopNs.AppHiddenEvent> OnAppUnhidden { get; set; } = null;
 
         void AppUnhiddenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppHiddenEvent>> data)
         {

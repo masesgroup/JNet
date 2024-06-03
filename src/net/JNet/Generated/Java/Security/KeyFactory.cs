@@ -100,7 +100,7 @@ namespace Java.Security
         /// <typeparam name="T"><see cref="Java.Security.Spec.IKeySpec"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Security.Spec.InvalidKeySpecException"/>
-        public T GetKeySpec<T>(Java.Security.Key arg0, Java.Lang.Class arg1) where T: Java.Security.Spec.IKeySpec, new()
+        public T GetKeySpec<T>(Java.Security.Key arg0, Java.Lang.Class arg1) where T : Java.Security.Spec.IKeySpec, new()
         {
             return IExecute<T>("getKeySpec", arg0, arg1);
         }

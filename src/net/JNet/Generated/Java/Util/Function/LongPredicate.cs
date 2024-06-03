@@ -91,10 +91,10 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("test", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(TestEventHandler));
-            AddEventHandler("and", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.LongPredicate>>>(AndEventHandler));
-            AddEventHandler("negate", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler));
-            AddEventHandler("or", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.LongPredicate>>>(OrEventHandler));
+            AddEventHandler("test", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(TestEventHandler));
+            AddEventHandler("and", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.LongPredicate>>>(AndEventHandler));
+            AddEventHandler("negate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler));
+            AddEventHandler("or", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.LongPredicate>>>(OrEventHandler));
 
         }
 
@@ -102,7 +102,7 @@ namespace Java.Util.Function
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#test(long)"/>
         /// </summary>
         /// <remarks>If <see cref="OnTest"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<long, bool> OnTest { get; set; } = null;
+        public global::System.Func<long, bool> OnTest { get; set; } = null;
 
         void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
         {
@@ -135,7 +135,7 @@ namespace Java.Util.Function
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#and(java.util.function.LongPredicate)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAnd"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.LongPredicate, Java.Util.Function.LongPredicate> OnAnd { get; set; } = null;
+        public global::System.Func<Java.Util.Function.LongPredicate, Java.Util.Function.LongPredicate> OnAnd { get; set; } = null;
 
         void AndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.LongPredicate>> data)
         {
@@ -168,7 +168,7 @@ namespace Java.Util.Function
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#negate()"/>
         /// </summary>
         /// <remarks>If <see cref="OnNegate"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.LongPredicate> OnNegate { get; set; } = null;
+        public global::System.Func<Java.Util.Function.LongPredicate> OnNegate { get; set; } = null;
 
         void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -201,7 +201,7 @@ namespace Java.Util.Function
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#or(java.util.function.LongPredicate)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOr"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.LongPredicate, Java.Util.Function.LongPredicate> OnOr { get; set; } = null;
+        public global::System.Func<Java.Util.Function.LongPredicate, Java.Util.Function.LongPredicate> OnOr { get; set; } = null;
 
         void OrEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.LongPredicate>> data)
         {

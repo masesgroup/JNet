@@ -78,8 +78,8 @@ namespace Javax.Sql
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("statementClosed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>>>(StatementClosedEventHandler));
-            AddEventHandler("statementErrorOccurred", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>>>(StatementErrorOccurredEventHandler));
+            AddEventHandler("statementClosed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>>>(StatementClosedEventHandler));
+            AddEventHandler("statementErrorOccurred", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>>>(StatementErrorOccurredEventHandler));
 
         }
 
@@ -87,7 +87,7 @@ namespace Javax.Sql
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEventListener.html#statementClosed(javax.sql.StatementEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnStatementClosed"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Sql.StatementEvent> OnStatementClosed { get; set; } = null;
+        public global::System.Action<Javax.Sql.StatementEvent> OnStatementClosed { get; set; } = null;
 
         void StatementClosedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>> data)
         {
@@ -108,7 +108,7 @@ namespace Javax.Sql
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEventListener.html#statementErrorOccurred(javax.sql.StatementEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnStatementErrorOccurred"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Sql.StatementEvent> OnStatementErrorOccurred { get; set; } = null;
+        public global::System.Action<Javax.Sql.StatementEvent> OnStatementErrorOccurred { get; set; } = null;
 
         void StatementErrorOccurredEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>> data)
         {

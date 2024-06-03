@@ -78,8 +78,8 @@ namespace Java.Beans.Beancontext
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("serviceRevoked", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceRevokedEvent>>>(ServiceRevokedEventHandler));
-            AddEventHandler("serviceAvailable", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceAvailableEvent>>>(ServiceAvailableEventHandler));
+            AddEventHandler("serviceRevoked", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceRevokedEvent>>>(ServiceRevokedEventHandler));
+            AddEventHandler("serviceAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceAvailableEvent>>>(ServiceAvailableEventHandler));
 
         }
 
@@ -87,7 +87,7 @@ namespace Java.Beans.Beancontext
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedListener.html#serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnServiceRevoked"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Beans.Beancontext.BeanContextServiceRevokedEvent> OnServiceRevoked { get; set; } = null;
+        public global::System.Action<Java.Beans.Beancontext.BeanContextServiceRevokedEvent> OnServiceRevoked { get; set; } = null;
 
         void ServiceRevokedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceRevokedEvent>> data)
         {
@@ -108,7 +108,7 @@ namespace Java.Beans.Beancontext
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesListener.html#serviceAvailable(java.beans.beancontext.BeanContextServiceAvailableEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnServiceAvailable"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Beans.Beancontext.BeanContextServiceAvailableEvent> OnServiceAvailable { get; set; } = null;
+        public global::System.Action<Java.Beans.Beancontext.BeanContextServiceAvailableEvent> OnServiceAvailable { get; set; } = null;
 
         void ServiceAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceAvailableEvent>> data)
         {

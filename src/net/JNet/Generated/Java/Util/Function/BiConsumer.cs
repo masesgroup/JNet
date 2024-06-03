@@ -50,8 +50,8 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(AcceptEventHandler));
-            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiConsumer>>>(AndThenEventHandler));
+            AddEventHandler("accept", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(AcceptEventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiConsumer>>>(AndThenEventHandler));
 
         }
 
@@ -59,7 +59,7 @@ namespace Java.Util.Function
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#accept(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAccept"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<object, object> OnAccept { get; set; } = null;
+        public global::System.Action<object, object> OnAccept { get; set; } = null;
 
         void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
         {
@@ -91,7 +91,7 @@ namespace Java.Util.Function
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.BiConsumer, Java.Util.Function.BiConsumer> OnAndThen { get; set; } = null;
+        public global::System.Func<Java.Util.Function.BiConsumer, Java.Util.Function.BiConsumer> OnAndThen { get; set; } = null;
 
         void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.BiConsumer>> data)
         {
@@ -190,7 +190,7 @@ namespace Java.Util.Function
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="Arg0objectSuperU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
-        Java.Util.Function.BiConsumer<T, U> AndThen<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T where Arg0objectSuperU: U;
+        Java.Util.Function.BiConsumer<T, U> AndThen<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U;
 
         #endregion
 
@@ -227,8 +227,8 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(AcceptEventHandler));
-            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU>>>>(AndThen<Arg0objectSuperT, Arg0objectSuperU>EventHandler));
+            AddEventHandler("accept", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(AcceptEventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU>>>>(AndThen<Arg0objectSuperT, Arg0objectSuperU>EventHandler));
 
         }
 
@@ -236,7 +236,7 @@ namespace Java.Util.Function
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#accept(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAccept"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<T, U> OnAccept { get; set; } = null;
+        public global::System.Action<T, U> OnAccept { get; set; } = null;
 
         void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
         {
@@ -261,7 +261,7 @@ namespace Java.Util.Function
         /// <typeparam name="Arg0objectSuperU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public Java.Util.Function.BiConsumer<T, U> AndThen<Arg0objectSuperT, Arg0objectSuperU>Default(Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T where Arg0objectSuperU: U
+        public Java.Util.Function.BiConsumer<T, U> AndThen<Arg0objectSuperT, Arg0objectSuperU>Default(Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
         {
             return IExecuteWithSignature<Java.Util.Function.BiConsumer<T, U>>("andThenDefault", "(Ljava/util/function/BiConsumer;)Ljava/util/function/BiConsumer;", arg0);
         }
@@ -270,7 +270,7 @@ namespace Java.Util.Function
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAndThen<Arg0objectSuperT, Arg0objectSuperU>"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU>, Java.Util.Function.BiConsumer<T, U>> OnAndThen<Arg0objectSuperT, Arg0objectSuperU> { get; set; } = null;
+        public global::System.Func<Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU>, Java.Util.Function.BiConsumer<T, U>> OnAndThen<Arg0objectSuperT, Arg0objectSuperU> { get; set; } = null;
 
         void AndThen<Arg0objectSuperT, Arg0objectSuperU>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU>>> data)
         {
@@ -287,7 +287,7 @@ namespace Java.Util.Function
         /// <typeparam name="Arg0objectSuperU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThen<Arg0objectSuperT, Arg0objectSuperU>Default"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.BiConsumer<T, U> AndThen<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T where Arg0objectSuperU: U
+        public virtual Java.Util.Function.BiConsumer<T, U> AndThen<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
         {
             return AndThen<Arg0objectSuperT, Arg0objectSuperU>Default(arg0);
         }
@@ -338,7 +338,7 @@ namespace Java.Util.Function
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="Arg0objectSuperU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
-        public override Java.Util.Function.BiConsumer<T, U> AndThen<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T where Arg0objectSuperU: U
+        public override Java.Util.Function.BiConsumer<T, U> AndThen<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
         {
             return IExecuteWithSignature<Java.Util.Function.BiConsumerDirect<T, U>, Java.Util.Function.BiConsumer<T, U>>("andThen", "(Ljava/util/function/BiConsumer;)Ljava/util/function/BiConsumer;", arg0);
         }

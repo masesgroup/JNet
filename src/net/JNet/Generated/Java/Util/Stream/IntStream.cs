@@ -48,7 +48,7 @@ namespace Java.Util.Stream
         /// <typeparam name="U"></typeparam>
         /// <typeparam name="Arg0ExtendsU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        Java.Util.Stream.Stream<U> MapToObj<U, Arg0ExtendsU>(Java.Util.Function.IntFunction<Arg0ExtendsU> arg0) where Arg0ExtendsU: U;
+        Java.Util.Stream.Stream<U> MapToObj<U, Arg0ExtendsU>(Java.Util.Function.IntFunction<Arg0ExtendsU> arg0) where Arg0ExtendsU : U;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#allMatch(java.util.function.IntPredicate)"/>
         /// </summary>
@@ -148,7 +148,7 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.IntFunction"/></param>
         /// <typeparam name="Arg0ExtendsJava_Util_Stream_IntStream"><see cref="Java.Util.Stream.IntStream"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
-        Java.Util.Stream.IntStream FlatMap<Arg0ExtendsJava_Util_Stream_IntStream>(Java.Util.Function.IntFunction<Arg0ExtendsJava_Util_Stream_IntStream> arg0) where Arg0ExtendsJava_Util_Stream_IntStream: Java.Util.Stream.IntStream;
+        Java.Util.Stream.IntStream FlatMap<Arg0ExtendsJava_Util_Stream_IntStream>(Java.Util.Function.IntFunction<Arg0ExtendsJava_Util_Stream_IntStream> arg0) where Arg0ExtendsJava_Util_Stream_IntStream : Java.Util.Stream.IntStream;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#limit(long)"/>
         /// </summary>
@@ -377,7 +377,7 @@ namespace Java.Util.Stream
         /// <typeparam name="U"></typeparam>
         /// <typeparam name="Arg0ExtendsU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<U> MapToObj<U, Arg0ExtendsU>(Java.Util.Function.IntFunction<Arg0ExtendsU> arg0) where Arg0ExtendsU: U
+        public Java.Util.Stream.Stream<U> MapToObj<U, Arg0ExtendsU>(Java.Util.Function.IntFunction<Arg0ExtendsU> arg0) where Arg0ExtendsU : U
         {
             return IExecuteWithSignature<Java.Util.Stream.Stream<U>>("mapToObj", "(Ljava/util/function/IntFunction;)Ljava/util/stream/Stream;", arg0);
         }
@@ -531,7 +531,7 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.IntFunction"/></param>
         /// <typeparam name="Arg0ExtendsJava_Util_Stream_IntStream"><see cref="Java.Util.Stream.IntStream"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
-        public Java.Util.Stream.IntStream FlatMap<Arg0ExtendsJava_Util_Stream_IntStream>(Java.Util.Function.IntFunction<Arg0ExtendsJava_Util_Stream_IntStream> arg0) where Arg0ExtendsJava_Util_Stream_IntStream: Java.Util.Stream.IntStream
+        public Java.Util.Stream.IntStream FlatMap<Arg0ExtendsJava_Util_Stream_IntStream>(Java.Util.Function.IntFunction<Arg0ExtendsJava_Util_Stream_IntStream> arg0) where Arg0ExtendsJava_Util_Stream_IntStream : Java.Util.Stream.IntStream
         {
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("flatMap", "(Ljava/util/function/IntFunction;)Ljava/util/stream/IntStream;", arg0);
         }

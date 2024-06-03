@@ -380,7 +380,7 @@ namespace Javax.Imageio
         /// <typeparam name="Arg0ExtendsJavax_Imageio_ImageReadParam"><see cref="Javax.Imageio.ImageReadParam"/></typeparam>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Util.Iterator<Javax.Imageio.IIOImage> ReadAll<Arg0ExtendsJavax_Imageio_ImageReadParam>(Java.Util.Iterator<Arg0ExtendsJavax_Imageio_ImageReadParam> arg0) where Arg0ExtendsJavax_Imageio_ImageReadParam: Javax.Imageio.ImageReadParam
+        public Java.Util.Iterator<Javax.Imageio.IIOImage> ReadAll<Arg0ExtendsJavax_Imageio_ImageReadParam>(Java.Util.Iterator<Arg0ExtendsJavax_Imageio_ImageReadParam> arg0) where Arg0ExtendsJavax_Imageio_ImageReadParam : Javax.Imageio.ImageReadParam
         {
             return IExecuteWithSignature<Java.Util.Iterator<Javax.Imageio.IIOImage>>("readAll", "(Ljava/util/Iterator;)Ljava/util/Iterator;", arg0);
         }
