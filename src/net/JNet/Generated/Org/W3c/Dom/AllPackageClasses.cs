@@ -36,12 +36,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Attr class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Attr class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Attr() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Attr class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Attr class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Attr(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -82,12 +82,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("CDATASection class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CDATASection class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CDATASection() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("CDATASection class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CDATASection class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CDATASection(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -128,12 +128,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("CharacterData class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CharacterData class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CharacterData() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("CharacterData class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CharacterData class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CharacterData(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -174,12 +174,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Comment class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Comment class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Comment() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Comment class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Comment class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Comment(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -220,12 +220,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Document class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Document class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Document() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Document class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Document class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Document(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -266,12 +266,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DocumentFragment class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DocumentFragment class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DocumentFragment() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DocumentFragment class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DocumentFragment class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DocumentFragment(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -312,12 +312,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DocumentType class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DocumentType class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DocumentType() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DocumentType class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DocumentType class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DocumentType(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -358,12 +358,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DOMConfiguration class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMConfiguration class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMConfiguration() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DOMConfiguration class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMConfiguration class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMConfiguration(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -404,12 +404,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DOMError class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMError class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMError() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DOMError class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMError class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMError(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -450,12 +450,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DOMErrorHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMErrorHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMErrorHandler() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DOMErrorHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMErrorHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMErrorHandler(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -513,12 +513,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DOMImplementation class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMImplementation class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMImplementation() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DOMImplementation class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMImplementation class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMImplementation(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -559,12 +559,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DOMImplementationList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMImplementationList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMImplementationList() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DOMImplementationList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMImplementationList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMImplementationList(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -605,12 +605,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DOMImplementationSource class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMImplementationSource class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMImplementationSource() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DOMImplementationSource class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMImplementationSource class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMImplementationSource(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -651,12 +651,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DOMLocator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMLocator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMLocator() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DOMLocator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMLocator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMLocator(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -697,12 +697,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DOMStringList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMStringList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMStringList() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DOMStringList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMStringList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMStringList(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -743,12 +743,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Element class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Element class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Element() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Element class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Element class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Element(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -789,12 +789,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ElementTraversal class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ElementTraversal class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ElementTraversal() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ElementTraversal class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ElementTraversal class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ElementTraversal(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -835,12 +835,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Entity class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Entity class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Entity() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Entity class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Entity class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Entity(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -881,12 +881,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("EntityReference class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("EntityReference class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public EntityReference() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("EntityReference class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("EntityReference class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public EntityReference(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -927,12 +927,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("NamedNodeMap class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("NamedNodeMap class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public NamedNodeMap() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("NamedNodeMap class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("NamedNodeMap class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public NamedNodeMap(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -973,12 +973,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("NameList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("NameList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public NameList() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("NameList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("NameList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public NameList(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1019,12 +1019,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Node class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Node class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Node() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Node class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Node class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Node(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1065,12 +1065,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("NodeList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("NodeList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public NodeList() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("NodeList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("NodeList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public NodeList(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1111,12 +1111,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Notation class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Notation class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Notation() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Notation class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Notation class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Notation(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1157,12 +1157,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ProcessingInstruction class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ProcessingInstruction class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ProcessingInstruction() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ProcessingInstruction class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ProcessingInstruction class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ProcessingInstruction(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1203,12 +1203,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Text class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Text class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Text() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Text class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Text class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Text(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1249,12 +1249,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("TypeInfo class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TypeInfo class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TypeInfo() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("TypeInfo class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TypeInfo class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TypeInfo(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1295,12 +1295,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("UserDataHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("UserDataHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public UserDataHandler() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("UserDataHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("UserDataHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public UserDataHandler(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);

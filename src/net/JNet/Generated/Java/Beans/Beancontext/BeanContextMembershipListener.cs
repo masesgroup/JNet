@@ -78,8 +78,8 @@ namespace Java.Beans.Beancontext
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("childrenAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextMembershipEvent>>>(ChildrenAddedEventHandler));
-            AddEventHandler("childrenRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextMembershipEvent>>>(ChildrenRemovedEventHandler));
+            AddEventHandler("childrenAdded", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextMembershipEvent>>>(ChildrenAddedEventHandler));
+            AddEventHandler("childrenRemoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextMembershipEvent>>>(ChildrenRemovedEventHandler));
 
         }
 
@@ -87,7 +87,7 @@ namespace Java.Beans.Beancontext
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipListener.html#childrenAdded(java.beans.beancontext.BeanContextMembershipEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnChildrenAdded"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Beans.Beancontext.BeanContextMembershipEvent> OnChildrenAdded { get; set; } = null;
+        public global::System.Action<Java.Beans.Beancontext.BeanContextMembershipEvent> OnChildrenAdded { get; set; } = null;
 
         void ChildrenAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextMembershipEvent>> data)
         {
@@ -108,7 +108,7 @@ namespace Java.Beans.Beancontext
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipListener.html#childrenRemoved(java.beans.beancontext.BeanContextMembershipEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnChildrenRemoved"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Beans.Beancontext.BeanContextMembershipEvent> OnChildrenRemoved { get; set; } = null;
+        public global::System.Action<Java.Beans.Beancontext.BeanContextMembershipEvent> OnChildrenRemoved { get; set; } = null;
 
         void ChildrenRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextMembershipEvent>> data)
         {

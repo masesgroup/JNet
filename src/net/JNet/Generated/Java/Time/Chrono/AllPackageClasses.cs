@@ -36,12 +36,12 @@ namespace Java.Time.Chrono
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AbstractChronology class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AbstractChronology class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractChronology() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AbstractChronology class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AbstractChronology class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractChronology(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -82,12 +82,12 @@ namespace Java.Time.Chrono
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ChronoLocalDate class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ChronoLocalDate class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ChronoLocalDate() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ChronoLocalDate class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ChronoLocalDate class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ChronoLocalDate(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -128,12 +128,12 @@ namespace Java.Time.Chrono
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ChronoLocalDateTime class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ChronoLocalDateTime class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ChronoLocalDateTime() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ChronoLocalDateTime class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ChronoLocalDateTime class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ChronoLocalDateTime(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -174,12 +174,12 @@ namespace Java.Time.Chrono
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Chronology class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Chronology class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Chronology() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Chronology class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Chronology class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Chronology(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -220,12 +220,12 @@ namespace Java.Time.Chrono
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ChronoPeriod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ChronoPeriod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ChronoPeriod() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ChronoPeriod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ChronoPeriod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ChronoPeriod(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -266,12 +266,12 @@ namespace Java.Time.Chrono
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ChronoZonedDateTime class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ChronoZonedDateTime class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ChronoZonedDateTime() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ChronoZonedDateTime class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ChronoZonedDateTime class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ChronoZonedDateTime(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -312,12 +312,12 @@ namespace Java.Time.Chrono
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Era class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Era class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Era() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Era class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Era class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Era(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);

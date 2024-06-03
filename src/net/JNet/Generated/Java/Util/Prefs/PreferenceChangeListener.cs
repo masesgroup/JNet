@@ -73,7 +73,7 @@ namespace Java.Util.Prefs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("preferenceChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Prefs.PreferenceChangeEvent>>>(PreferenceChangeEventHandler));
+            AddEventHandler("preferenceChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Prefs.PreferenceChangeEvent>>>(PreferenceChangeEventHandler));
 
         }
 
@@ -81,7 +81,7 @@ namespace Java.Util.Prefs
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferenceChangeListener.html#preferenceChange(java.util.prefs.PreferenceChangeEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnPreferenceChange"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Util.Prefs.PreferenceChangeEvent> OnPreferenceChange { get; set; } = null;
+        public global::System.Action<Java.Util.Prefs.PreferenceChangeEvent> OnPreferenceChange { get; set; } = null;
 
         void PreferenceChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Prefs.PreferenceChangeEvent>> data)
         {

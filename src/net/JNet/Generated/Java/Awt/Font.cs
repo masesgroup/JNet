@@ -230,7 +230,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <typeparam name="Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></typeparam>
         /// <returns><see cref="Java.Awt.Font"/></returns>
-        public static Java.Awt.Font GetFont<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute>(Java.Util.Map<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute, object> arg0) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute: Java.Text.AttributedCharacterIterator.Attribute
+        public static Java.Awt.Font GetFont<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute>(Java.Util.Map<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute, object> arg0) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute : Java.Text.AttributedCharacterIterator.Attribute
         {
             return SExecuteWithSignature<Java.Awt.Font>(LocalBridgeClazz, "getFont", "(Ljava/util/Map;)Ljava/awt/Font;", arg0);
         }
@@ -510,7 +510,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <typeparam name="Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></typeparam>
         /// <returns><see cref="Java.Awt.Font"/></returns>
-        public Java.Awt.Font DeriveFont<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute>(Java.Util.Map<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute, object> arg0) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute: Java.Text.AttributedCharacterIterator.Attribute
+        public Java.Awt.Font DeriveFont<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute>(Java.Util.Map<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute, object> arg0) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute : Java.Text.AttributedCharacterIterator.Attribute
         {
             return IExecuteWithSignature<Java.Awt.Font>("deriveFont", "(Ljava/util/Map;)Ljava/awt/Font;", arg0);
         }

@@ -78,8 +78,8 @@ namespace Javax.Naming.Ldap
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("namingExceptionThrown", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingExceptionEvent>>>(NamingExceptionThrownEventHandler));
-            AddEventHandler("notificationReceived", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Ldap.UnsolicitedNotificationEvent>>>(NotificationReceivedEventHandler));
+            AddEventHandler("namingExceptionThrown", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingExceptionEvent>>>(NamingExceptionThrownEventHandler));
+            AddEventHandler("notificationReceived", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Ldap.UnsolicitedNotificationEvent>>>(NotificationReceivedEventHandler));
 
         }
 
@@ -87,7 +87,7 @@ namespace Javax.Naming.Ldap
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html#namingExceptionThrown(javax.naming.event.NamingExceptionEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnNamingExceptionThrown"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Naming.Event.NamingExceptionEvent> OnNamingExceptionThrown { get; set; } = null;
+        public global::System.Action<Javax.Naming.Event.NamingExceptionEvent> OnNamingExceptionThrown { get; set; } = null;
 
         void NamingExceptionThrownEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingExceptionEvent>> data)
         {
@@ -108,7 +108,7 @@ namespace Javax.Naming.Ldap
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotificationListener.html#notificationReceived(javax.naming.ldap.UnsolicitedNotificationEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnNotificationReceived"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Naming.Ldap.UnsolicitedNotificationEvent> OnNotificationReceived { get; set; } = null;
+        public global::System.Action<Javax.Naming.Ldap.UnsolicitedNotificationEvent> OnNotificationReceived { get; set; } = null;
 
         void NotificationReceivedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Naming.Ldap.UnsolicitedNotificationEvent>> data)
         {

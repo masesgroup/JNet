@@ -158,7 +158,7 @@ namespace Java.Util.Zip
         /// </summary>
         /// <typeparam name="ReturnExtendsJava_Util_Zip_ZipEntry"><see cref="Java.Util.Zip.ZipEntry"/></typeparam>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public Java.Util.Enumeration<ReturnExtendsJava_Util_Zip_ZipEntry> Entries<ReturnExtendsJava_Util_Zip_ZipEntry>() where ReturnExtendsJava_Util_Zip_ZipEntry: Java.Util.Zip.ZipEntry
+        public Java.Util.Enumeration<ReturnExtendsJava_Util_Zip_ZipEntry> Entries<ReturnExtendsJava_Util_Zip_ZipEntry>() where ReturnExtendsJava_Util_Zip_ZipEntry : Java.Util.Zip.ZipEntry
         {
             return IExecuteWithSignature<Java.Util.Enumeration<ReturnExtendsJava_Util_Zip_ZipEntry>>("entries", "()Ljava/util/Enumeration;");
         }
@@ -167,7 +167,7 @@ namespace Java.Util.Zip
         /// </summary>
         /// <typeparam name="ReturnExtendsJava_Util_Zip_ZipEntry"><see cref="Java.Util.Zip.ZipEntry"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<ReturnExtendsJava_Util_Zip_ZipEntry> Stream<ReturnExtendsJava_Util_Zip_ZipEntry>() where ReturnExtendsJava_Util_Zip_ZipEntry: Java.Util.Zip.ZipEntry
+        public Java.Util.Stream.Stream<ReturnExtendsJava_Util_Zip_ZipEntry> Stream<ReturnExtendsJava_Util_Zip_ZipEntry>() where ReturnExtendsJava_Util_Zip_ZipEntry : Java.Util.Zip.ZipEntry
         {
             return IExecuteWithSignature<Java.Util.Stream.Stream<ReturnExtendsJava_Util_Zip_ZipEntry>>("stream", "()Ljava/util/stream/Stream;");
         }

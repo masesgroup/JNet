@@ -36,12 +36,12 @@ namespace Java.Lang.Management
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("BufferPoolMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("BufferPoolMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public BufferPoolMXBean() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("BufferPoolMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("BufferPoolMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public BufferPoolMXBean(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -82,12 +82,12 @@ namespace Java.Lang.Management
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ClassLoadingMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ClassLoadingMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ClassLoadingMXBean() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ClassLoadingMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ClassLoadingMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ClassLoadingMXBean(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -128,12 +128,12 @@ namespace Java.Lang.Management
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("CompilationMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CompilationMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CompilationMXBean() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("CompilationMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CompilationMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CompilationMXBean(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -174,12 +174,12 @@ namespace Java.Lang.Management
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("GarbageCollectorMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("GarbageCollectorMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public GarbageCollectorMXBean() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("GarbageCollectorMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("GarbageCollectorMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public GarbageCollectorMXBean(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -352,12 +352,12 @@ namespace Java.Lang.Management
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("MemoryManagerMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("MemoryManagerMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public MemoryManagerMXBean() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("MemoryManagerMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("MemoryManagerMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public MemoryManagerMXBean(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -398,12 +398,12 @@ namespace Java.Lang.Management
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("MemoryMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("MemoryMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public MemoryMXBean() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("MemoryMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("MemoryMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public MemoryMXBean(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -488,12 +488,12 @@ namespace Java.Lang.Management
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("MemoryPoolMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("MemoryPoolMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public MemoryPoolMXBean() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("MemoryPoolMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("MemoryPoolMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public MemoryPoolMXBean(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -666,12 +666,12 @@ namespace Java.Lang.Management
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("OperatingSystemMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("OperatingSystemMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public OperatingSystemMXBean() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("OperatingSystemMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("OperatingSystemMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public OperatingSystemMXBean(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -712,12 +712,12 @@ namespace Java.Lang.Management
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("PlatformLoggingMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("PlatformLoggingMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PlatformLoggingMXBean() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("PlatformLoggingMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("PlatformLoggingMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PlatformLoggingMXBean(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -758,12 +758,12 @@ namespace Java.Lang.Management
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("PlatformManagedObject class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("PlatformManagedObject class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PlatformManagedObject() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("PlatformManagedObject class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("PlatformManagedObject class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PlatformManagedObject(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -804,12 +804,12 @@ namespace Java.Lang.Management
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("RuntimeMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RuntimeMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RuntimeMXBean() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("RuntimeMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RuntimeMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RuntimeMXBean(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -894,12 +894,12 @@ namespace Java.Lang.Management
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ThreadMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ThreadMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ThreadMXBean() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ThreadMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ThreadMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ThreadMXBean(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);

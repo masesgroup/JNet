@@ -77,27 +77,14 @@ namespace Java.Util.Function
         #endregion
 
         #region Static methods
-        
-        /// <summary>
-        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongUnaryOperator.html#identity()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnIdentity"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.LongUnaryOperator> OnIdentity { get; set; } = null;
-
-        void IdentityEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnIdentity != null) ? OnIdentity : Identity;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongUnaryOperator.html#identity()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.LongUnaryOperator"/></returns>
-        public virtual Java.Util.Function.LongUnaryOperator Identity()
+        /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
+        public static Java.Util.Function.LongUnaryOperator Identity()
         {
-            return default;
+            return SExecuteWithSignature<Java.Util.Function.LongUnaryOperator>(LocalBridgeClazz, "identity", "()Ljava/util/function/LongUnaryOperator;");
         }
 
         #endregion
@@ -108,9 +95,9 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("applyAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyAsLongEventHandler));
-            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.LongUnaryOperator>>>(AndThenEventHandler));
-            AddEventHandler("compose", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.LongUnaryOperator>>>(ComposeEventHandler));
+            AddEventHandler("applyAsLong", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyAsLongEventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.LongUnaryOperator>>>(AndThenEventHandler));
+            AddEventHandler("compose", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.LongUnaryOperator>>>(ComposeEventHandler));
 
         }
 
@@ -118,7 +105,7 @@ namespace Java.Util.Function
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongUnaryOperator.html#applyAsLong(long)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApplyAsLong"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<long, long> OnApplyAsLong { get; set; } = null;
+        public global::System.Func<long, long> OnApplyAsLong { get; set; } = null;
 
         void ApplyAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
         {
@@ -151,7 +138,7 @@ namespace Java.Util.Function
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongUnaryOperator.html#andThen(java.util.function.LongUnaryOperator)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.LongUnaryOperator, Java.Util.Function.LongUnaryOperator> OnAndThen { get; set; } = null;
+        public global::System.Func<Java.Util.Function.LongUnaryOperator, Java.Util.Function.LongUnaryOperator> OnAndThen { get; set; } = null;
 
         void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.LongUnaryOperator>> data)
         {
@@ -185,7 +172,7 @@ namespace Java.Util.Function
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongUnaryOperator.html#compose(java.util.function.LongUnaryOperator)"/>
         /// </summary>
         /// <remarks>If <see cref="OnCompose"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.LongUnaryOperator, Java.Util.Function.LongUnaryOperator> OnCompose { get; set; } = null;
+        public global::System.Func<Java.Util.Function.LongUnaryOperator, Java.Util.Function.LongUnaryOperator> OnCompose { get; set; } = null;
 
         void ComposeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.LongUnaryOperator>> data)
         {

@@ -103,13 +103,13 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("internalFrameActivated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameActivatedEventHandler));
-            AddEventHandler("internalFrameClosed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameClosedEventHandler));
-            AddEventHandler("internalFrameClosing", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameClosingEventHandler));
-            AddEventHandler("internalFrameDeactivated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameDeactivatedEventHandler));
-            AddEventHandler("internalFrameDeiconified", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameDeiconifiedEventHandler));
-            AddEventHandler("internalFrameIconified", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameIconifiedEventHandler));
-            AddEventHandler("internalFrameOpened", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameOpenedEventHandler));
+            AddEventHandler("internalFrameActivated", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameActivatedEventHandler));
+            AddEventHandler("internalFrameClosed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameClosedEventHandler));
+            AddEventHandler("internalFrameClosing", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameClosingEventHandler));
+            AddEventHandler("internalFrameDeactivated", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameDeactivatedEventHandler));
+            AddEventHandler("internalFrameDeiconified", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameDeiconifiedEventHandler));
+            AddEventHandler("internalFrameIconified", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameIconifiedEventHandler));
+            AddEventHandler("internalFrameOpened", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameOpenedEventHandler));
 
         }
 
@@ -117,7 +117,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html#internalFrameActivated(javax.swing.event.InternalFrameEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnInternalFrameActivated"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.InternalFrameEvent> OnInternalFrameActivated { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.InternalFrameEvent> OnInternalFrameActivated { get; set; } = null;
 
         void InternalFrameActivatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>> data)
         {
@@ -138,7 +138,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html#internalFrameClosed(javax.swing.event.InternalFrameEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnInternalFrameClosed"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.InternalFrameEvent> OnInternalFrameClosed { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.InternalFrameEvent> OnInternalFrameClosed { get; set; } = null;
 
         void InternalFrameClosedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>> data)
         {
@@ -159,7 +159,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html#internalFrameClosing(javax.swing.event.InternalFrameEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnInternalFrameClosing"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.InternalFrameEvent> OnInternalFrameClosing { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.InternalFrameEvent> OnInternalFrameClosing { get; set; } = null;
 
         void InternalFrameClosingEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>> data)
         {
@@ -180,7 +180,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html#internalFrameDeactivated(javax.swing.event.InternalFrameEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnInternalFrameDeactivated"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.InternalFrameEvent> OnInternalFrameDeactivated { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.InternalFrameEvent> OnInternalFrameDeactivated { get; set; } = null;
 
         void InternalFrameDeactivatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>> data)
         {
@@ -201,7 +201,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html#internalFrameDeiconified(javax.swing.event.InternalFrameEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnInternalFrameDeiconified"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.InternalFrameEvent> OnInternalFrameDeiconified { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.InternalFrameEvent> OnInternalFrameDeiconified { get; set; } = null;
 
         void InternalFrameDeiconifiedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>> data)
         {
@@ -222,7 +222,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html#internalFrameIconified(javax.swing.event.InternalFrameEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnInternalFrameIconified"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.InternalFrameEvent> OnInternalFrameIconified { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.InternalFrameEvent> OnInternalFrameIconified { get; set; } = null;
 
         void InternalFrameIconifiedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>> data)
         {
@@ -243,7 +243,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html#internalFrameOpened(javax.swing.event.InternalFrameEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnInternalFrameOpened"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.InternalFrameEvent> OnInternalFrameOpened { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.InternalFrameEvent> OnInternalFrameOpened { get; set; } = null;
 
         void InternalFrameOpenedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>> data)
         {

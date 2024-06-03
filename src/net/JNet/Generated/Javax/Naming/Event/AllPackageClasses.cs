@@ -36,12 +36,12 @@ namespace Javax.Naming.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("EventContext class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("EventContext class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public EventContext() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("EventContext class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("EventContext class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public EventContext(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -82,12 +82,12 @@ namespace Javax.Naming.Event
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("EventDirContext class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("EventDirContext class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public EventDirContext() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("EventDirContext class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("EventDirContext class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public EventDirContext(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -129,10 +129,13 @@ namespace Javax.Naming.Event
         /// </summary>
         public NamespaceChangeListener() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.jnet.generated.javax.naming.event.NamespaceChangeListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.generated.javax.naming.event.NamespaceChangeListener";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -154,10 +157,13 @@ namespace Javax.Naming.Event
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "javax.naming.event.NamespaceChangeListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "javax.naming.event.NamespaceChangeListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -276,10 +282,13 @@ namespace Javax.Naming.Event
         /// </summary>
         public NamingListener() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.jnet.generated.javax.naming.event.NamingListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.generated.javax.naming.event.NamingListener";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -301,10 +310,13 @@ namespace Javax.Naming.Event
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "javax.naming.event.NamingListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "javax.naming.event.NamingListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -335,10 +347,13 @@ namespace Javax.Naming.Event
         /// </summary>
         public ObjectChangeListener() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.jnet.generated.javax.naming.event.ObjectChangeListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.generated.javax.naming.event.ObjectChangeListener";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -360,10 +375,13 @@ namespace Javax.Naming.Event
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "javax.naming.event.ObjectChangeListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "javax.naming.event.ObjectChangeListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>

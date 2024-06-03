@@ -80,12 +80,12 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AboutHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AboutHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AboutHandler() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AboutHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AboutHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AboutHandler(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -215,10 +215,13 @@ namespace Java.Awt.DesktopNs
         /// </summary>
         public AppForegroundListener() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.jnet.generated.java.awt.desktop.AppForegroundListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.desktop.AppForegroundListener";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -240,10 +243,13 @@ namespace Java.Awt.DesktopNs
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.awt.desktop.AppForegroundListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.awt.desktop.AppForegroundListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -318,10 +324,13 @@ namespace Java.Awt.DesktopNs
         /// </summary>
         public AppHiddenListener() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.jnet.generated.java.awt.desktop.AppHiddenListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.desktop.AppHiddenListener";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -343,10 +352,13 @@ namespace Java.Awt.DesktopNs
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.awt.desktop.AppHiddenListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.awt.desktop.AppHiddenListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -421,10 +433,13 @@ namespace Java.Awt.DesktopNs
         /// </summary>
         public AppReopenedListener() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.jnet.generated.java.awt.desktop.AppReopenedListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.desktop.AppReopenedListener";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -446,10 +461,13 @@ namespace Java.Awt.DesktopNs
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.awt.desktop.AppReopenedListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.awt.desktop.AppReopenedListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -567,12 +585,12 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("OpenFilesHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("OpenFilesHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public OpenFilesHandler() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("OpenFilesHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("OpenFilesHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public OpenFilesHandler(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -657,12 +675,12 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("OpenURIHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("OpenURIHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public OpenURIHandler() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("OpenURIHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("OpenURIHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public OpenURIHandler(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -747,12 +765,12 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("PreferencesHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("PreferencesHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PreferencesHandler() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("PreferencesHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("PreferencesHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PreferencesHandler(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -837,12 +855,12 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("PrintFilesHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("PrintFilesHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PrintFilesHandler() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("PrintFilesHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("PrintFilesHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PrintFilesHandler(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -927,12 +945,12 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("QuitHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("QuitHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public QuitHandler() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("QuitHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("QuitHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public QuitHandler(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -973,12 +991,12 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("QuitResponse class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("QuitResponse class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public QuitResponse() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("QuitResponse class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("QuitResponse class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public QuitResponse(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1108,10 +1126,13 @@ namespace Java.Awt.DesktopNs
         /// </summary>
         public ScreenSleepListener() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.jnet.generated.java.awt.desktop.ScreenSleepListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.desktop.ScreenSleepListener";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -1133,10 +1154,13 @@ namespace Java.Awt.DesktopNs
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.awt.desktop.ScreenSleepListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.awt.desktop.ScreenSleepListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -1167,10 +1191,13 @@ namespace Java.Awt.DesktopNs
         /// </summary>
         public SystemEventListener() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.jnet.generated.java.awt.desktop.SystemEventListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.desktop.SystemEventListener";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -1192,10 +1219,13 @@ namespace Java.Awt.DesktopNs
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.awt.desktop.SystemEventListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.awt.desktop.SystemEventListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -1270,10 +1300,13 @@ namespace Java.Awt.DesktopNs
         /// </summary>
         public SystemSleepListener() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.jnet.generated.java.awt.desktop.SystemSleepListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.desktop.SystemSleepListener";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -1295,10 +1328,13 @@ namespace Java.Awt.DesktopNs
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.awt.desktop.SystemSleepListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.awt.desktop.SystemSleepListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -1417,10 +1453,13 @@ namespace Java.Awt.DesktopNs
         /// </summary>
         public UserSessionListener() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.jnet.generated.java.awt.desktop.UserSessionListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.desktop.UserSessionListener";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -1442,10 +1481,13 @@ namespace Java.Awt.DesktopNs
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.awt.desktop.UserSessionListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.awt.desktop.UserSessionListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>

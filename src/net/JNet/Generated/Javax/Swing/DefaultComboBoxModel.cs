@@ -207,7 +207,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="Arg1ExtendsE"><typeparamref name="E"/></typeparam>
-        public void AddAll<Arg1ExtendsE>(int arg0, Java.Util.Collection<Arg1ExtendsE> arg1) where Arg1ExtendsE: E
+        public void AddAll<Arg1ExtendsE>(int arg0, Java.Util.Collection<Arg1ExtendsE> arg1) where Arg1ExtendsE : E
         {
             IExecute("addAll", arg0, arg1);
         }
@@ -216,7 +216,7 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
-        public void AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE: E
+        public void AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE : E
         {
             IExecuteWithSignature("addAll", "(Ljava/util/Collection;)V", arg0);
         }

@@ -213,10 +213,13 @@ namespace Org.Xml.Sax.Helpers
         /// </summary>
         public ParserAdapter() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.jnet.generated.org.xml.sax.helpers.ParserAdapter";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.generated.org.xml.sax.helpers.ParserAdapter";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -238,10 +241,13 @@ namespace Org.Xml.Sax.Helpers
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "org.xml.sax.helpers.ParserAdapter";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.xml.sax.helpers.ParserAdapter";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -316,10 +322,13 @@ namespace Org.Xml.Sax.Helpers
         /// </summary>
         public XMLReaderAdapter() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.jnet.generated.org.xml.sax.helpers.XMLReaderAdapter";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.generated.org.xml.sax.helpers.XMLReaderAdapter";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -341,10 +350,13 @@ namespace Org.Xml.Sax.Helpers
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "org.xml.sax.helpers.XMLReaderAdapter";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.xml.sax.helpers.XMLReaderAdapter";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>

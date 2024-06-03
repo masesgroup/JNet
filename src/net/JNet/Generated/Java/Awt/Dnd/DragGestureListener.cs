@@ -73,7 +73,7 @@ namespace Java.Awt.Dnd
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("dragGestureRecognized", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragGestureEvent>>>(DragGestureRecognizedEventHandler));
+            AddEventHandler("dragGestureRecognized", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragGestureEvent>>>(DragGestureRecognizedEventHandler));
 
         }
 
@@ -81,7 +81,7 @@ namespace Java.Awt.Dnd
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureListener.html#dragGestureRecognized(java.awt.dnd.DragGestureEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnDragGestureRecognized"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.Dnd.DragGestureEvent> OnDragGestureRecognized { get; set; } = null;
+        public global::System.Action<Java.Awt.Dnd.DragGestureEvent> OnDragGestureRecognized { get; set; } = null;
 
         void DragGestureRecognizedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragGestureEvent>> data)
         {

@@ -83,9 +83,9 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("ancestorAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>>>(AncestorAddedEventHandler));
-            AddEventHandler("ancestorMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>>>(AncestorMovedEventHandler));
-            AddEventHandler("ancestorRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>>>(AncestorRemovedEventHandler));
+            AddEventHandler("ancestorAdded", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>>>(AncestorAddedEventHandler));
+            AddEventHandler("ancestorMoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>>>(AncestorMovedEventHandler));
+            AddEventHandler("ancestorRemoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>>>(AncestorRemovedEventHandler));
 
         }
 
@@ -93,7 +93,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorListener.html#ancestorAdded(javax.swing.event.AncestorEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAncestorAdded"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.AncestorEvent> OnAncestorAdded { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.AncestorEvent> OnAncestorAdded { get; set; } = null;
 
         void AncestorAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>> data)
         {
@@ -114,7 +114,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorListener.html#ancestorMoved(javax.swing.event.AncestorEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAncestorMoved"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.AncestorEvent> OnAncestorMoved { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.AncestorEvent> OnAncestorMoved { get; set; } = null;
 
         void AncestorMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>> data)
         {
@@ -135,7 +135,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorListener.html#ancestorRemoved(javax.swing.event.AncestorEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAncestorRemoved"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.AncestorEvent> OnAncestorRemoved { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.AncestorEvent> OnAncestorRemoved { get; set; } = null;
 
         void AncestorRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>> data)
         {

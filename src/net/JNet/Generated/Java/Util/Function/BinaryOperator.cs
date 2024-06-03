@@ -50,8 +50,8 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyEventHandler));
-            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>>>(AndThenEventHandler));
+            AddEventHandler("apply", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyEventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>>>(AndThenEventHandler));
 
         }
 
@@ -59,7 +59,7 @@ namespace Java.Util.Function
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApply"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<object, object, object> OnApply { get; set; } = null;
+        public global::System.Func<object, object, object> OnApply { get; set; } = null;
 
         void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
         {
@@ -93,7 +93,7 @@ namespace Java.Util.Function
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.Function, Java.Util.Function.BiFunction> OnAndThen { get; set; } = null;
+        public global::System.Func<Java.Util.Function.Function, Java.Util.Function.BiFunction> OnAndThen { get; set; } = null;
 
         void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>> data)
         {
@@ -199,7 +199,7 @@ namespace Java.Util.Function
         /// <typeparam name="R"></typeparam>
         /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
-        Java.Util.Function.BiFunction<T, U, V> AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R where Arg0ExtendsV: V;
+        Java.Util.Function.BiFunction<T, U, V> AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V;
 
         #endregion
 
@@ -236,8 +236,8 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(Apply<R, U>EventHandler));
-            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>>>(AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>EventHandler));
+            AddEventHandler("apply", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(Apply<R, U>EventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>>>(AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>EventHandler));
 
         }
 
@@ -245,7 +245,7 @@ namespace Java.Util.Function
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApply<R, U>"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<T, U, R> OnApply<R, U> { get; set; } = null;
+        public global::System.Func<T, U, R> OnApply<R, U> { get; set; } = null;
 
         void Apply<R, U>EventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
         {
@@ -277,7 +277,7 @@ namespace Java.Util.Function
         /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public Java.Util.Function.BiFunction<T, U, V> AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>Default(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R where Arg0ExtendsV: V
+        public Java.Util.Function.BiFunction<T, U, V> AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>Default(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
         {
             return IExecute<Java.Util.Function.BiFunction<T, U, V>>("andThenDefault", arg0);
         }
@@ -286,7 +286,7 @@ namespace Java.Util.Function
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>, Java.Util.Function.BiFunction<T, U, V>> OnAndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV> { get; set; } = null;
+        public global::System.Func<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>, Java.Util.Function.BiFunction<T, U, V>> OnAndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV> { get; set; } = null;
 
         void AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>> data)
         {
@@ -306,7 +306,7 @@ namespace Java.Util.Function
         /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>Default"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.BiFunction<T, U, V> AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R where Arg0ExtendsV: V
+        public virtual Java.Util.Function.BiFunction<T, U, V> AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
         {
             return AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>Default(arg0);
         }
@@ -363,7 +363,7 @@ namespace Java.Util.Function
         /// <typeparam name="R"></typeparam>
         /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
-        public override Java.Util.Function.BiFunction<T, U, V> AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R where Arg0ExtendsV: V
+        public override Java.Util.Function.BiFunction<T, U, V> AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
         {
             return IExecute<Java.Util.Function.BiFunctionDirect<T, U, V>, Java.Util.Function.BiFunction<T, U, V>>("andThen", arg0);
         }

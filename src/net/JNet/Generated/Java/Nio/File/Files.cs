@@ -50,7 +50,7 @@ namespace Java.Nio.File
         /// <typeparam name="A"><see cref="Java.Nio.File.Attribute.IBasicFileAttributes"/></typeparam>
         /// <returns><typeparamref name="A"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static A ReadAttributes<A>(Java.Nio.File.Path arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where A: Java.Nio.File.Attribute.IBasicFileAttributes, new()
+        public static A ReadAttributes<A>(Java.Nio.File.Path arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where A : Java.Nio.File.Attribute.IBasicFileAttributes, new()
         {
             if (arg2.Length == 0) return SExecute<A>(LocalBridgeClazz, "readAttributes", arg0, arg1); else return SExecute<A>(LocalBridgeClazz, "readAttributes", arg0, arg1, arg2);
         }
@@ -62,7 +62,7 @@ namespace Java.Nio.File
         /// <param name="arg2"><see cref="Java.Nio.File.LinkOption"/></param>
         /// <typeparam name="V"><see cref="Java.Nio.File.Attribute.IFileAttributeView"/></typeparam>
         /// <returns><typeparamref name="V"/></returns>
-        public static V GetFileAttributeView<V>(Java.Nio.File.Path arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where V: Java.Nio.File.Attribute.IFileAttributeView, new()
+        public static V GetFileAttributeView<V>(Java.Nio.File.Path arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where V : Java.Nio.File.Attribute.IFileAttributeView, new()
         {
             if (arg2.Length == 0) return SExecute<V>(LocalBridgeClazz, "getFileAttributeView", arg0, arg1); else return SExecute<V>(LocalBridgeClazz, "getFileAttributeView", arg0, arg1, arg2);
         }
@@ -312,7 +312,7 @@ namespace Java.Nio.File
         /// <typeparam name="Arg1ExtendsJava_Nio_File_OpenOption"><see cref="Java.Nio.File.OpenOption"/></typeparam>
         /// <returns><see cref="Java.Nio.Channels.SeekableByteChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.Channels.SeekableByteChannel NewByteChannel<Arg1ExtendsJava_Nio_File_OpenOption>(Java.Nio.File.Path arg0, Java.Util.Set<Arg1ExtendsJava_Nio_File_OpenOption> arg1, params Java.Nio.File.Attribute.FileAttribute<object>[] arg2) where Arg1ExtendsJava_Nio_File_OpenOption: Java.Nio.File.OpenOption
+        public static Java.Nio.Channels.SeekableByteChannel NewByteChannel<Arg1ExtendsJava_Nio_File_OpenOption>(Java.Nio.File.Path arg0, Java.Util.Set<Arg1ExtendsJava_Nio_File_OpenOption> arg1, params Java.Nio.File.Attribute.FileAttribute<object>[] arg2) where Arg1ExtendsJava_Nio_File_OpenOption : Java.Nio.File.OpenOption
         {
             if (arg2.Length == 0) return SExecute<Java.Nio.Channels.SeekableByteChannel>(LocalBridgeClazz, "newByteChannel", arg0, arg1); else return SExecute<Java.Nio.Channels.SeekableByteChannel>(LocalBridgeClazz, "newByteChannel", arg0, arg1, arg2);
         }
@@ -357,7 +357,7 @@ namespace Java.Nio.File
         /// <typeparam name="Arg1objectSuperJava_Nio_File_Path"><see cref="Java.Nio.File.Path"/></typeparam>
         /// <returns><see cref="Java.Nio.File.DirectoryStream"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.File.DirectoryStream<Java.Nio.File.Path> NewDirectoryStream<Arg1objectSuperJava_Nio_File_Path>(Java.Nio.File.Path arg0, Java.Nio.File.DirectoryStream.Filter<Arg1objectSuperJava_Nio_File_Path> arg1) where Arg1objectSuperJava_Nio_File_Path: Java.Nio.File.Path
+        public static Java.Nio.File.DirectoryStream<Java.Nio.File.Path> NewDirectoryStream<Arg1objectSuperJava_Nio_File_Path>(Java.Nio.File.Path arg0, Java.Nio.File.DirectoryStream.Filter<Arg1objectSuperJava_Nio_File_Path> arg1) where Arg1objectSuperJava_Nio_File_Path : Java.Nio.File.Path
         {
             return SExecute<Java.Nio.File.DirectoryStream<Java.Nio.File.Path>>(LocalBridgeClazz, "newDirectoryStream", arg0, arg1);
         }
@@ -573,7 +573,7 @@ namespace Java.Nio.File
         /// <typeparam name="Arg1objectSuperJava_Nio_File_Path"><see cref="Java.Nio.File.Path"/></typeparam>
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.File.Path WalkFileTree<Arg1objectSuperJava_Nio_File_Path>(Java.Nio.File.Path arg0, Java.Nio.File.FileVisitor<Arg1objectSuperJava_Nio_File_Path> arg1) where Arg1objectSuperJava_Nio_File_Path: Java.Nio.File.Path
+        public static Java.Nio.File.Path WalkFileTree<Arg1objectSuperJava_Nio_File_Path>(Java.Nio.File.Path arg0, Java.Nio.File.FileVisitor<Arg1objectSuperJava_Nio_File_Path> arg1) where Arg1objectSuperJava_Nio_File_Path : Java.Nio.File.Path
         {
             return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "walkFileTree", arg0, arg1);
         }
@@ -587,7 +587,7 @@ namespace Java.Nio.File
         /// <typeparam name="Arg3objectSuperJava_Nio_File_Path"><see cref="Java.Nio.File.Path"/></typeparam>
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.File.Path WalkFileTree<Arg3objectSuperJava_Nio_File_Path>(Java.Nio.File.Path arg0, Java.Util.Set<Java.Nio.File.FileVisitOption> arg1, int arg2, Java.Nio.File.FileVisitor<Arg3objectSuperJava_Nio_File_Path> arg3) where Arg3objectSuperJava_Nio_File_Path: Java.Nio.File.Path
+        public static Java.Nio.File.Path WalkFileTree<Arg3objectSuperJava_Nio_File_Path>(Java.Nio.File.Path arg0, Java.Util.Set<Java.Nio.File.FileVisitOption> arg1, int arg2, Java.Nio.File.FileVisitor<Arg3objectSuperJava_Nio_File_Path> arg3) where Arg3objectSuperJava_Nio_File_Path : Java.Nio.File.Path
         {
             return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "walkFileTree", arg0, arg1, arg2, arg3);
         }
@@ -613,7 +613,7 @@ namespace Java.Nio.File
         /// <typeparam name="Arg1ExtendsJava_Lang_CharSequence"><see cref="Java.Lang.CharSequence"/></typeparam>
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.File.Path Write<Arg1ExtendsJava_Lang_CharSequence>(Java.Nio.File.Path arg0, Java.Lang.Iterable<Arg1ExtendsJava_Lang_CharSequence> arg1, Java.Nio.Charset.Charset arg2, params Java.Nio.File.OpenOption[] arg3) where Arg1ExtendsJava_Lang_CharSequence: Java.Lang.CharSequence
+        public static Java.Nio.File.Path Write<Arg1ExtendsJava_Lang_CharSequence>(Java.Nio.File.Path arg0, Java.Lang.Iterable<Arg1ExtendsJava_Lang_CharSequence> arg1, Java.Nio.Charset.Charset arg2, params Java.Nio.File.OpenOption[] arg3) where Arg1ExtendsJava_Lang_CharSequence : Java.Lang.CharSequence
         {
             if (arg3.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "write", arg0, arg1, arg2); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "write", arg0, arg1, arg2, arg3);
         }
@@ -626,7 +626,7 @@ namespace Java.Nio.File
         /// <typeparam name="Arg1ExtendsJava_Lang_CharSequence"><see cref="Java.Lang.CharSequence"/></typeparam>
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.File.Path Write<Arg1ExtendsJava_Lang_CharSequence>(Java.Nio.File.Path arg0, Java.Lang.Iterable<Arg1ExtendsJava_Lang_CharSequence> arg1, params Java.Nio.File.OpenOption[] arg2) where Arg1ExtendsJava_Lang_CharSequence: Java.Lang.CharSequence
+        public static Java.Nio.File.Path Write<Arg1ExtendsJava_Lang_CharSequence>(Java.Nio.File.Path arg0, Java.Lang.Iterable<Arg1ExtendsJava_Lang_CharSequence> arg1, params Java.Nio.File.OpenOption[] arg2) where Arg1ExtendsJava_Lang_CharSequence : Java.Lang.CharSequence
         {
             if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "write", arg0, arg1); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "write", arg0, arg1, arg2);
         }

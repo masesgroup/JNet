@@ -93,11 +93,11 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("mouseClicked", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseClickedEventHandler));
-            AddEventHandler("mouseEntered", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseEnteredEventHandler));
-            AddEventHandler("mouseExited", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseExitedEventHandler));
-            AddEventHandler("mousePressed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MousePressedEventHandler));
-            AddEventHandler("mouseReleased", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseReleasedEventHandler));
+            AddEventHandler("mouseClicked", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseClickedEventHandler));
+            AddEventHandler("mouseEntered", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseEnteredEventHandler));
+            AddEventHandler("mouseExited", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseExitedEventHandler));
+            AddEventHandler("mousePressed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MousePressedEventHandler));
+            AddEventHandler("mouseReleased", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseReleasedEventHandler));
 
         }
 
@@ -105,7 +105,7 @@ namespace Java.Awt.EventNs
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mouseClicked(java.awt.event.MouseEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnMouseClicked"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.EventNs.MouseEvent> OnMouseClicked { get; set; } = null;
+        public global::System.Action<Java.Awt.EventNs.MouseEvent> OnMouseClicked { get; set; } = null;
 
         void MouseClickedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
         {
@@ -126,7 +126,7 @@ namespace Java.Awt.EventNs
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mouseEntered(java.awt.event.MouseEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnMouseEntered"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.EventNs.MouseEvent> OnMouseEntered { get; set; } = null;
+        public global::System.Action<Java.Awt.EventNs.MouseEvent> OnMouseEntered { get; set; } = null;
 
         void MouseEnteredEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
         {
@@ -147,7 +147,7 @@ namespace Java.Awt.EventNs
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mouseExited(java.awt.event.MouseEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnMouseExited"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.EventNs.MouseEvent> OnMouseExited { get; set; } = null;
+        public global::System.Action<Java.Awt.EventNs.MouseEvent> OnMouseExited { get; set; } = null;
 
         void MouseExitedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
         {
@@ -168,7 +168,7 @@ namespace Java.Awt.EventNs
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mousePressed(java.awt.event.MouseEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnMousePressed"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.EventNs.MouseEvent> OnMousePressed { get; set; } = null;
+        public global::System.Action<Java.Awt.EventNs.MouseEvent> OnMousePressed { get; set; } = null;
 
         void MousePressedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
         {
@@ -189,7 +189,7 @@ namespace Java.Awt.EventNs
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mouseReleased(java.awt.event.MouseEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnMouseReleased"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.EventNs.MouseEvent> OnMouseReleased { get; set; } = null;
+        public global::System.Action<Java.Awt.EventNs.MouseEvent> OnMouseReleased { get; set; } = null;
 
         void MouseReleasedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
         {

@@ -436,7 +436,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="Arg1ExtendsE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool AddAll<Arg1ExtendsE>(int arg0, Java.Util.Collection<Arg1ExtendsE> arg1) where Arg1ExtendsE: E
+        public bool AddAll<Arg1ExtendsE>(int arg0, Java.Util.Collection<Arg1ExtendsE> arg1) where Arg1ExtendsE : E
         {
             return IExecute<bool>("addAll", arg0, arg1);
         }
@@ -446,7 +446,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE: E
+        public bool AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE : E
         {
             return IExecuteWithSignature<bool>("addAll", "(Ljava/util/Collection;)Z", arg0);
         }
@@ -509,7 +509,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool RemoveIf<Arg0objectSuperE>(Java.Util.Function.Predicate<Arg0objectSuperE> arg0) where Arg0objectSuperE: E
+        public bool RemoveIf<Arg0objectSuperE>(Java.Util.Function.Predicate<Arg0objectSuperE> arg0) where Arg0objectSuperE : E
         {
             return IExecuteWithSignature<bool>("removeIf", "(Ljava/util/function/Predicate;)Z", arg0);
         }
@@ -556,7 +556,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="int"/></returns>
-        public int AddAllAbsent<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE: E
+        public int AddAllAbsent<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE : E
         {
             return IExecuteWithSignature<int>("addAllAbsent", "(Ljava/util/Collection;)I", arg0);
         }
@@ -678,7 +678,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
-        public void ForEach<Arg0objectSuperE>(Java.Util.Function.Consumer<Arg0objectSuperE> arg0) where Arg0objectSuperE: E
+        public void ForEach<Arg0objectSuperE>(Java.Util.Function.Consumer<Arg0objectSuperE> arg0) where Arg0objectSuperE : E
         {
             IExecuteWithSignature("forEach", "(Ljava/util/function/Consumer;)V", arg0);
         }

@@ -79,8 +79,8 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<double>>>(AcceptEventHandler));
-            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.DoubleConsumer>>>(AndThenEventHandler));
+            AddEventHandler("accept", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<double>>>(AcceptEventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.DoubleConsumer>>>(AndThenEventHandler));
 
         }
 
@@ -88,7 +88,7 @@ namespace Java.Util.Function
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleConsumer.html#accept(double)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAccept"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<double> OnAccept { get; set; } = null;
+        public global::System.Action<double> OnAccept { get; set; } = null;
 
         void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<double>> data)
         {
@@ -119,7 +119,7 @@ namespace Java.Util.Function
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleConsumer.html#andThen(java.util.function.DoubleConsumer)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.DoubleConsumer, Java.Util.Function.DoubleConsumer> OnAndThen { get; set; } = null;
+        public global::System.Func<Java.Util.Function.DoubleConsumer, Java.Util.Function.DoubleConsumer> OnAndThen { get; set; } = null;
 
         void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.DoubleConsumer>> data)
         {

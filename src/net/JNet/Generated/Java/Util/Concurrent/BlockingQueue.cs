@@ -221,14 +221,14 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="int"/></param>
         /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="int"/></returns>
-        int DrainTo<Arg0objectSuperE>(Java.Util.Collection<Arg0objectSuperE> arg0, int arg1) where Arg0objectSuperE: E;
+        int DrainTo<Arg0objectSuperE>(Java.Util.Collection<Arg0objectSuperE> arg0, int arg1) where Arg0objectSuperE : E;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html#drainTo(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="int"/></returns>
-        int DrainTo<Arg0objectSuperE>(Java.Util.Collection<Arg0objectSuperE> arg0) where Arg0objectSuperE: E;
+        int DrainTo<Arg0objectSuperE>(Java.Util.Collection<Arg0objectSuperE> arg0) where Arg0objectSuperE : E;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html#remainingCapacity()"/>
         /// </summary>
@@ -350,7 +350,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="int"/></param>
         /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="int"/></returns>
-        public int DrainTo<Arg0objectSuperE>(Java.Util.Collection<Arg0objectSuperE> arg0, int arg1) where Arg0objectSuperE: E
+        public int DrainTo<Arg0objectSuperE>(Java.Util.Collection<Arg0objectSuperE> arg0, int arg1) where Arg0objectSuperE : E
         {
             return IExecute<int>("drainTo", arg0, arg1);
         }
@@ -360,7 +360,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="int"/></returns>
-        public int DrainTo<Arg0objectSuperE>(Java.Util.Collection<Arg0objectSuperE> arg0) where Arg0objectSuperE: E
+        public int DrainTo<Arg0objectSuperE>(Java.Util.Collection<Arg0objectSuperE> arg0) where Arg0objectSuperE : E
         {
             return IExecuteWithSignature<int>("drainTo", "(Ljava/util/Collection;)I", arg0);
         }

@@ -106,7 +106,7 @@ namespace Java.Security
         /// <typeparam name="T"><see cref="Java.Security.Spec.IAlgorithmParameterSpec"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Security.Spec.InvalidParameterSpecException"/>
-        public T GetParameterSpec<T>(Java.Lang.Class arg0) where T: Java.Security.Spec.IAlgorithmParameterSpec, new()
+        public T GetParameterSpec<T>(Java.Lang.Class arg0) where T : Java.Security.Spec.IAlgorithmParameterSpec, new()
         {
             return IExecute<T>("getParameterSpec", arg0);
         }

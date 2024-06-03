@@ -88,10 +88,10 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("componentHidden", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>>>(ComponentHiddenEventHandler));
-            AddEventHandler("componentMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>>>(ComponentMovedEventHandler));
-            AddEventHandler("componentResized", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>>>(ComponentResizedEventHandler));
-            AddEventHandler("componentShown", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>>>(ComponentShownEventHandler));
+            AddEventHandler("componentHidden", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>>>(ComponentHiddenEventHandler));
+            AddEventHandler("componentMoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>>>(ComponentMovedEventHandler));
+            AddEventHandler("componentResized", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>>>(ComponentResizedEventHandler));
+            AddEventHandler("componentShown", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>>>(ComponentShownEventHandler));
 
         }
 
@@ -99,7 +99,7 @@ namespace Java.Awt.EventNs
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentHidden(java.awt.event.ComponentEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnComponentHidden"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.EventNs.ComponentEvent> OnComponentHidden { get; set; } = null;
+        public global::System.Action<Java.Awt.EventNs.ComponentEvent> OnComponentHidden { get; set; } = null;
 
         void ComponentHiddenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>> data)
         {
@@ -120,7 +120,7 @@ namespace Java.Awt.EventNs
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentMoved(java.awt.event.ComponentEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnComponentMoved"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.EventNs.ComponentEvent> OnComponentMoved { get; set; } = null;
+        public global::System.Action<Java.Awt.EventNs.ComponentEvent> OnComponentMoved { get; set; } = null;
 
         void ComponentMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>> data)
         {
@@ -141,7 +141,7 @@ namespace Java.Awt.EventNs
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentResized(java.awt.event.ComponentEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnComponentResized"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.EventNs.ComponentEvent> OnComponentResized { get; set; } = null;
+        public global::System.Action<Java.Awt.EventNs.ComponentEvent> OnComponentResized { get; set; } = null;
 
         void ComponentResizedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>> data)
         {
@@ -162,7 +162,7 @@ namespace Java.Awt.EventNs
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentShown(java.awt.event.ComponentEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnComponentShown"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.EventNs.ComponentEvent> OnComponentShown { get; set; } = null;
+        public global::System.Action<Java.Awt.EventNs.ComponentEvent> OnComponentShown { get; set; } = null;
 
         void ComponentShownEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>> data)
         {

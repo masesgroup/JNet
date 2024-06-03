@@ -73,7 +73,7 @@ namespace Java.Nio.Channels
         /// <typeparam name="Arg1ExtendsJava_Nio_File_OpenOption"><see cref="Java.Nio.File.OpenOption"/></typeparam>
         /// <returns><see cref="Java.Nio.Channels.FileChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.Channels.FileChannel Open<Arg1ExtendsJava_Nio_File_OpenOption>(Java.Nio.File.Path arg0, Java.Util.Set<Arg1ExtendsJava_Nio_File_OpenOption> arg1, params Java.Nio.File.Attribute.FileAttribute<object>[] arg2) where Arg1ExtendsJava_Nio_File_OpenOption: Java.Nio.File.OpenOption
+        public static Java.Nio.Channels.FileChannel Open<Arg1ExtendsJava_Nio_File_OpenOption>(Java.Nio.File.Path arg0, Java.Util.Set<Arg1ExtendsJava_Nio_File_OpenOption> arg1, params Java.Nio.File.Attribute.FileAttribute<object>[] arg2) where Arg1ExtendsJava_Nio_File_OpenOption : Java.Nio.File.OpenOption
         {
             if (arg2.Length == 0) return SExecute<Java.Nio.Channels.FileChannel>(LocalBridgeClazz, "open", arg0, arg1); else return SExecute<Java.Nio.Channels.FileChannel>(LocalBridgeClazz, "open", arg0, arg1, arg2);
         }

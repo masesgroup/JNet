@@ -78,8 +78,8 @@ namespace Java.Awt.DesktopNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("appMovedToBackground", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppForegroundEvent>>>(AppMovedToBackgroundEventHandler));
-            AddEventHandler("appRaisedToForeground", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppForegroundEvent>>>(AppRaisedToForegroundEventHandler));
+            AddEventHandler("appMovedToBackground", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppForegroundEvent>>>(AppMovedToBackgroundEventHandler));
+            AddEventHandler("appRaisedToForeground", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppForegroundEvent>>>(AppRaisedToForegroundEventHandler));
 
         }
 
@@ -87,7 +87,7 @@ namespace Java.Awt.DesktopNs
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppForegroundListener.html#appMovedToBackground(java.awt.desktop.AppForegroundEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAppMovedToBackground"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.DesktopNs.AppForegroundEvent> OnAppMovedToBackground { get; set; } = null;
+        public global::System.Action<Java.Awt.DesktopNs.AppForegroundEvent> OnAppMovedToBackground { get; set; } = null;
 
         void AppMovedToBackgroundEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppForegroundEvent>> data)
         {
@@ -108,7 +108,7 @@ namespace Java.Awt.DesktopNs
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppForegroundListener.html#appRaisedToForeground(java.awt.desktop.AppForegroundEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAppRaisedToForeground"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.DesktopNs.AppForegroundEvent> OnAppRaisedToForeground { get; set; } = null;
+        public global::System.Action<Java.Awt.DesktopNs.AppForegroundEvent> OnAppRaisedToForeground { get; set; } = null;
 
         void AppRaisedToForegroundEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppForegroundEvent>> data)
         {

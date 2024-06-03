@@ -81,10 +81,13 @@ namespace Javax.Print.Event
         /// </summary>
         public PrintJobAdapter() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.jnet.generated.javax.print.event.PrintJobAdapter";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.generated.javax.print.event.PrintJobAdapter";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -106,10 +109,13 @@ namespace Javax.Print.Event
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "javax.print.event.PrintJobAdapter";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "javax.print.event.PrintJobAdapter";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -184,10 +190,13 @@ namespace Javax.Print.Event
         /// </summary>
         public PrintJobAttributeListener() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.jnet.generated.javax.print.event.PrintJobAttributeListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.generated.javax.print.event.PrintJobAttributeListener";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -209,10 +218,13 @@ namespace Javax.Print.Event
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "javax.print.event.PrintJobAttributeListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "javax.print.event.PrintJobAttributeListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -287,10 +299,13 @@ namespace Javax.Print.Event
         /// </summary>
         public PrintJobListener() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.jnet.generated.javax.print.event.PrintJobListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.generated.javax.print.event.PrintJobListener";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -312,10 +327,13 @@ namespace Javax.Print.Event
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "javax.print.event.PrintJobListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "javax.print.event.PrintJobListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -390,10 +408,13 @@ namespace Javax.Print.Event
         /// </summary>
         public PrintServiceAttributeListener() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.jnet.generated.javax.print.event.PrintServiceAttributeListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.generated.javax.print.event.PrintServiceAttributeListener";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -415,10 +436,13 @@ namespace Javax.Print.Event
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "javax.print.event.PrintServiceAttributeListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "javax.print.event.PrintServiceAttributeListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>

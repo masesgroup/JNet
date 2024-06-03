@@ -73,7 +73,7 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("textValueChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.TextEvent>>>(TextValueChangedEventHandler));
+            AddEventHandler("textValueChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.TextEvent>>>(TextValueChangedEventHandler));
 
         }
 
@@ -81,7 +81,7 @@ namespace Java.Awt.EventNs
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextListener.html#textValueChanged(java.awt.event.TextEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnTextValueChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.EventNs.TextEvent> OnTextValueChanged { get; set; } = null;
+        public global::System.Action<Java.Awt.EventNs.TextEvent> OnTextValueChanged { get; set; } = null;
 
         void TextValueChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.TextEvent>> data)
         {

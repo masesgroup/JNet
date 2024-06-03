@@ -243,7 +243,7 @@ namespace Javax.Lang.Model.Element
         /// <param name="arg1"><typeparamref name="P"/></param>
         /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue"><see cref="Javax.Lang.Model.Element.AnnotationValue"/></typeparam>
         /// <returns><typeparamref name="R"/></returns>
-        R VisitArray<Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue>(Java.Util.List<Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue> arg0, P arg1) where Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue: Javax.Lang.Model.Element.AnnotationValue;
+        R VisitArray<Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue>(Java.Util.List<Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue> arg0, P arg1) where Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue : Javax.Lang.Model.Element.AnnotationValue;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitBoolean(boolean,java.lang.Object)"/>
         /// </summary>
@@ -396,7 +396,7 @@ namespace Javax.Lang.Model.Element
         /// <param name="arg1"><typeparamref name="P"/></param>
         /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue"><see cref="Javax.Lang.Model.Element.AnnotationValue"/></typeparam>
         /// <returns><typeparamref name="R"/></returns>
-        public R VisitArray<Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue>(Java.Util.List<Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue> arg0, P arg1) where Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue: Javax.Lang.Model.Element.AnnotationValue
+        public R VisitArray<Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue>(Java.Util.List<Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue> arg0, P arg1) where Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue : Javax.Lang.Model.Element.AnnotationValue
         {
             return IExecute<R>("visitArray", arg0, arg1);
         }

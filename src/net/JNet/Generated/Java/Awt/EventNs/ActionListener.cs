@@ -73,7 +73,7 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("actionPerformed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ActionEvent>>>(ActionPerformedEventHandler));
+            AddEventHandler("actionPerformed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ActionEvent>>>(ActionPerformedEventHandler));
 
         }
 
@@ -81,7 +81,7 @@ namespace Java.Awt.EventNs
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html#actionPerformed(java.awt.event.ActionEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnActionPerformed"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.EventNs.ActionEvent> OnActionPerformed { get; set; } = null;
+        public global::System.Action<Java.Awt.EventNs.ActionEvent> OnActionPerformed { get; set; } = null;
 
         void ActionPerformedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ActionEvent>> data)
         {

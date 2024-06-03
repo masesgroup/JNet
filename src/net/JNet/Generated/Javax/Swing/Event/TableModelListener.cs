@@ -73,7 +73,7 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("tableChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableModelEvent>>>(TableChangedEventHandler));
+            AddEventHandler("tableChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableModelEvent>>>(TableChangedEventHandler));
 
         }
 
@@ -81,7 +81,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelListener.html#tableChanged(javax.swing.event.TableModelEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnTableChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.TableModelEvent> OnTableChanged { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.TableModelEvent> OnTableChanged { get; set; } = null;
 
         void TableChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableModelEvent>> data)
         {

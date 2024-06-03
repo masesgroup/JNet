@@ -224,7 +224,7 @@ namespace Java.Net.Http
             /// <typeparam name="Arg1objectSuperS"><typeparamref name="S"/></typeparam>
             /// <typeparam name="Arg1ExtendsT"><typeparamref name="T"/></typeparam>
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
-            public static Java.Net.Http.HttpResponse.BodyHandler<T> FromLineSubscriber<T, S, Arg1objectSuperS, Arg1ExtendsT>(S arg0, Java.Util.Function.Function<Arg1objectSuperS, Arg1ExtendsT> arg1, Java.Lang.String arg2) where Arg1objectSuperS: S where Arg1ExtendsT: T
+            public static Java.Net.Http.HttpResponse.BodyHandler<T> FromLineSubscriber<T, S, Arg1objectSuperS, Arg1ExtendsT>(S arg0, Java.Util.Function.Function<Arg1objectSuperS, Arg1ExtendsT> arg1, Java.Lang.String arg2) where Arg1objectSuperS : S where Arg1ExtendsT : T
             {
                 return SExecute<Java.Net.Http.HttpResponse.BodyHandler<T>>(LocalBridgeClazz, "fromLineSubscriber", arg0, arg1, arg2);
             }
@@ -238,7 +238,7 @@ namespace Java.Net.Http
             /// <typeparam name="Arg1objectSuperS"><typeparamref name="S"/></typeparam>
             /// <typeparam name="Arg1ExtendsT"><typeparamref name="T"/></typeparam>
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
-            public static Java.Net.Http.HttpResponse.BodyHandler<T> FromSubscriber<T, S, Arg1objectSuperS, Arg1ExtendsT>(S arg0, Java.Util.Function.Function<Arg1objectSuperS, Arg1ExtendsT> arg1) where Arg1objectSuperS: S where Arg1ExtendsT: T
+            public static Java.Net.Http.HttpResponse.BodyHandler<T> FromSubscriber<T, S, Arg1objectSuperS, Arg1ExtendsT>(S arg0, Java.Util.Function.Function<Arg1objectSuperS, Arg1ExtendsT> arg1) where Arg1objectSuperS : S where Arg1ExtendsT : T
             {
                 return SExecute<Java.Net.Http.HttpResponse.BodyHandler<T>>(LocalBridgeClazz, "fromSubscriber", arg0, arg1);
             }
@@ -310,7 +310,7 @@ namespace Java.Net.Http
             /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
             /// <typeparam name="Arg0objectSuperJava_Lang_String"><see cref="Java.Lang.String"/></typeparam>
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
-            public static Java.Net.Http.HttpResponse.BodyHandler<Java.Lang.Void> FromLineSubscriber<Arg0objectSuperJava_Lang_String>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperJava_Lang_String> arg0) where Arg0objectSuperJava_Lang_String: Java.Lang.String
+            public static Java.Net.Http.HttpResponse.BodyHandler<Java.Lang.Void> FromLineSubscriber<Arg0objectSuperJava_Lang_String>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperJava_Lang_String> arg0) where Arg0objectSuperJava_Lang_String : Java.Lang.String
             {
                 return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler<Java.Lang.Void>>(LocalBridgeClazz, "fromLineSubscriber", "(Ljava/util/concurrent/Flow$Subscriber;)Ljava/net/http/HttpResponse$BodyHandler;", arg0);
             }
@@ -320,7 +320,7 @@ namespace Java.Net.Http
             /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
             /// <typeparam name="Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_"><see cref="Java.Util.List{Java.Nio.ByteBuffer}"/></typeparam>
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
-            public static Java.Net.Http.HttpResponse.BodyHandler<Java.Lang.Void> FromSubscriber<Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_> arg0) where Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_: Java.Util.List<Java.Nio.ByteBuffer>
+            public static Java.Net.Http.HttpResponse.BodyHandler<Java.Lang.Void> FromSubscriber<Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_> arg0) where Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_ : Java.Util.List<Java.Nio.ByteBuffer>
             {
                 return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler<Java.Lang.Void>>(LocalBridgeClazz, "fromSubscriber", "(Ljava/util/concurrent/Flow$Subscriber;)Ljava/net/http/HttpResponse$BodyHandler;", arg0);
             }
@@ -501,7 +501,7 @@ namespace Java.Net.Http
             /// <typeparam name="Arg1objectSuperS"><typeparamref name="S"/></typeparam>
             /// <typeparam name="Arg1ExtendsT"><typeparamref name="T"/></typeparam>
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
-            public static Java.Net.Http.HttpResponse.BodySubscriber<T> FromLineSubscriber<T, S, Arg1objectSuperS, Arg1ExtendsT>(S arg0, Java.Util.Function.Function<Arg1objectSuperS, Arg1ExtendsT> arg1, Java.Nio.Charset.Charset arg2, Java.Lang.String arg3) where Arg1objectSuperS: S where Arg1ExtendsT: T
+            public static Java.Net.Http.HttpResponse.BodySubscriber<T> FromLineSubscriber<T, S, Arg1objectSuperS, Arg1ExtendsT>(S arg0, Java.Util.Function.Function<Arg1objectSuperS, Arg1ExtendsT> arg1, Java.Nio.Charset.Charset arg2, Java.Lang.String arg3) where Arg1objectSuperS : S where Arg1ExtendsT : T
             {
                 return SExecute<Java.Net.Http.HttpResponse.BodySubscriber<T>>(LocalBridgeClazz, "fromLineSubscriber", arg0, arg1, arg2, arg3);
             }
@@ -515,7 +515,7 @@ namespace Java.Net.Http
             /// <typeparam name="Arg1objectSuperS"><typeparamref name="S"/></typeparam>
             /// <typeparam name="Arg1ExtendsT"><typeparamref name="T"/></typeparam>
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
-            public static Java.Net.Http.HttpResponse.BodySubscriber<T> FromSubscriber<T, S, Arg1objectSuperS, Arg1ExtendsT>(S arg0, Java.Util.Function.Function<Arg1objectSuperS, Arg1ExtendsT> arg1) where Arg1objectSuperS: S where Arg1ExtendsT: T
+            public static Java.Net.Http.HttpResponse.BodySubscriber<T> FromSubscriber<T, S, Arg1objectSuperS, Arg1ExtendsT>(S arg0, Java.Util.Function.Function<Arg1objectSuperS, Arg1ExtendsT> arg1) where Arg1objectSuperS : S where Arg1ExtendsT : T
             {
                 return SExecute<Java.Net.Http.HttpResponse.BodySubscriber<T>>(LocalBridgeClazz, "fromSubscriber", arg0, arg1);
             }
@@ -529,7 +529,7 @@ namespace Java.Net.Http
             /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
             /// <typeparam name="Arg1ExtendsU"><typeparamref name="U"/></typeparam>
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
-            public static Java.Net.Http.HttpResponse.BodySubscriber<U> Mapping<U, T, Arg1objectSuperT, Arg1ExtendsU>(Java.Net.Http.HttpResponse.BodySubscriber<T> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1) where Arg1objectSuperT: T where Arg1ExtendsU: U
+            public static Java.Net.Http.HttpResponse.BodySubscriber<U> Mapping<U, T, Arg1objectSuperT, Arg1ExtendsU>(Java.Net.Http.HttpResponse.BodySubscriber<T> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1) where Arg1objectSuperT : T where Arg1ExtendsU : U
             {
                 return SExecute<Java.Net.Http.HttpResponse.BodySubscriber<U>>(LocalBridgeClazz, "mapping", arg0, arg1);
             }
@@ -593,7 +593,7 @@ namespace Java.Net.Http
             /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
             /// <typeparam name="Arg0objectSuperJava_Lang_String"><see cref="Java.Lang.String"/></typeparam>
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
-            public static Java.Net.Http.HttpResponse.BodySubscriber<Java.Lang.Void> FromLineSubscriber<Arg0objectSuperJava_Lang_String>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperJava_Lang_String> arg0) where Arg0objectSuperJava_Lang_String: Java.Lang.String
+            public static Java.Net.Http.HttpResponse.BodySubscriber<Java.Lang.Void> FromLineSubscriber<Arg0objectSuperJava_Lang_String>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperJava_Lang_String> arg0) where Arg0objectSuperJava_Lang_String : Java.Lang.String
             {
                 return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber<Java.Lang.Void>>(LocalBridgeClazz, "fromLineSubscriber", "(Ljava/util/concurrent/Flow$Subscriber;)Ljava/net/http/HttpResponse$BodySubscriber;", arg0);
             }
@@ -603,7 +603,7 @@ namespace Java.Net.Http
             /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
             /// <typeparam name="Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_"><see cref="Java.Util.List{Java.Nio.ByteBuffer}"/></typeparam>
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
-            public static Java.Net.Http.HttpResponse.BodySubscriber<Java.Lang.Void> FromSubscriber<Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_> arg0) where Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_: Java.Util.List<Java.Nio.ByteBuffer>
+            public static Java.Net.Http.HttpResponse.BodySubscriber<Java.Lang.Void> FromSubscriber<Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_> arg0) where Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_ : Java.Util.List<Java.Nio.ByteBuffer>
             {
                 return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber<Java.Lang.Void>>(LocalBridgeClazz, "fromSubscriber", "(Ljava/util/concurrent/Flow$Subscriber;)Ljava/net/http/HttpResponse$BodySubscriber;", arg0);
             }

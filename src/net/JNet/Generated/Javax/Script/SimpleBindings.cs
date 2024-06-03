@@ -161,7 +161,7 @@ namespace Javax.Script
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <typeparam name="Arg0ExtendsJava_Lang_String"><see cref="Java.Lang.String"/></typeparam>
-        public void PutAll<Arg0ExtendsJava_Lang_String>(Java.Util.Map<Arg0ExtendsJava_Lang_String, object> arg0) where Arg0ExtendsJava_Lang_String: Java.Lang.String
+        public void PutAll<Arg0ExtendsJava_Lang_String>(Java.Util.Map<Arg0ExtendsJava_Lang_String, object> arg0) where Arg0ExtendsJava_Lang_String : Java.Lang.String
         {
             IExecute("putAll", arg0);
         }

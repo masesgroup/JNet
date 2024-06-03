@@ -463,14 +463,14 @@ namespace Java.Util
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="Arg1ExtendsE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        bool AddAll<Arg1ExtendsE>(int arg0, Java.Util.Collection<Arg1ExtendsE> arg1) where Arg1ExtendsE: E;
+        bool AddAll<Arg1ExtendsE>(int arg0, Java.Util.Collection<Arg1ExtendsE> arg1) where Arg1ExtendsE : E;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#addAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        bool AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE: E;
+        bool AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE : E;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#contains(java.lang.Object)"/>
         /// </summary>
@@ -627,7 +627,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<E> CopyOf<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE: E
+        public static Java.Util.List<E> CopyOf<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE : E
         {
             return SExecuteWithSignature<Java.Util.List<E>>(LocalBridgeClazz, "copyOf", "(Ljava/util/Collection;)Ljava/util/List;", arg0);
         }
@@ -813,7 +813,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="Arg1ExtendsE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool AddAll<Arg1ExtendsE>(int arg0, Java.Util.Collection<Arg1ExtendsE> arg1) where Arg1ExtendsE: E
+        public bool AddAll<Arg1ExtendsE>(int arg0, Java.Util.Collection<Arg1ExtendsE> arg1) where Arg1ExtendsE : E
         {
             return IExecute<bool>("addAll", arg0, arg1);
         }
@@ -823,7 +823,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE: E
+        public bool AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE : E
         {
             return IExecuteWithSignature<bool>("addAll", "(Ljava/util/Collection;)Z", arg0);
         }

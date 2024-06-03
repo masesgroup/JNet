@@ -73,7 +73,7 @@ namespace Java.Awt.Datatransfer
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("flavorsChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Datatransfer.FlavorEvent>>>(FlavorsChangedEventHandler));
+            AddEventHandler("flavorsChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Datatransfer.FlavorEvent>>>(FlavorsChangedEventHandler));
 
         }
 
@@ -81,7 +81,7 @@ namespace Java.Awt.Datatransfer
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/FlavorListener.html#flavorsChanged(java.awt.datatransfer.FlavorEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnFlavorsChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.Datatransfer.FlavorEvent> OnFlavorsChanged { get; set; } = null;
+        public global::System.Action<Java.Awt.Datatransfer.FlavorEvent> OnFlavorsChanged { get; set; } = null;
 
         void FlavorsChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Datatransfer.FlavorEvent>> data)
         {

@@ -198,7 +198,7 @@ namespace Java.Util
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
             /// <typeparam name="Arg0objectSuperJava_Lang_Double"><see cref="Java.Lang.Double"/></typeparam>
             /// <returns><see cref="bool"/></returns>
-            public bool TryAdvance<Arg0objectSuperJava_Lang_Double>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Double> arg0) where Arg0objectSuperJava_Lang_Double: Java.Lang.Double
+            public bool TryAdvance<Arg0objectSuperJava_Lang_Double>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Double> arg0) where Arg0objectSuperJava_Lang_Double : Java.Lang.Double
             {
                 return IExecuteWithSignature<bool>("tryAdvance", "(Ljava/util/function/Consumer;)Z", arg0);
             }
@@ -223,7 +223,7 @@ namespace Java.Util
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
             /// <typeparam name="Arg0objectSuperJava_Lang_Double"><see cref="Java.Lang.Double"/></typeparam>
-            public void ForEachRemaining<Arg0objectSuperJava_Lang_Double>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Double> arg0) where Arg0objectSuperJava_Lang_Double: Java.Lang.Double
+            public void ForEachRemaining<Arg0objectSuperJava_Lang_Double>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Double> arg0) where Arg0objectSuperJava_Lang_Double : Java.Lang.Double
             {
                 IExecuteWithSignature("forEachRemaining", "(Ljava/util/function/Consumer;)V", arg0);
             }
@@ -290,7 +290,7 @@ namespace Java.Util
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
             /// <typeparam name="Arg0objectSuperJava_Lang_Integer"><see cref="Java.Lang.Integer"/></typeparam>
             /// <returns><see cref="bool"/></returns>
-            public bool TryAdvance<Arg0objectSuperJava_Lang_Integer>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Integer> arg0) where Arg0objectSuperJava_Lang_Integer: Java.Lang.Integer
+            public bool TryAdvance<Arg0objectSuperJava_Lang_Integer>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Integer> arg0) where Arg0objectSuperJava_Lang_Integer : Java.Lang.Integer
             {
                 return IExecuteWithSignature<bool>("tryAdvance", "(Ljava/util/function/Consumer;)Z", arg0);
             }
@@ -315,7 +315,7 @@ namespace Java.Util
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
             /// <typeparam name="Arg0objectSuperJava_Lang_Integer"><see cref="Java.Lang.Integer"/></typeparam>
-            public void ForEachRemaining<Arg0objectSuperJava_Lang_Integer>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Integer> arg0) where Arg0objectSuperJava_Lang_Integer: Java.Lang.Integer
+            public void ForEachRemaining<Arg0objectSuperJava_Lang_Integer>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Integer> arg0) where Arg0objectSuperJava_Lang_Integer : Java.Lang.Integer
             {
                 IExecuteWithSignature("forEachRemaining", "(Ljava/util/function/Consumer;)V", arg0);
             }
@@ -382,7 +382,7 @@ namespace Java.Util
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
             /// <typeparam name="Arg0objectSuperJava_Lang_Long"><see cref="Java.Lang.Long"/></typeparam>
             /// <returns><see cref="bool"/></returns>
-            public bool TryAdvance<Arg0objectSuperJava_Lang_Long>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Long> arg0) where Arg0objectSuperJava_Lang_Long: Java.Lang.Long
+            public bool TryAdvance<Arg0objectSuperJava_Lang_Long>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Long> arg0) where Arg0objectSuperJava_Lang_Long : Java.Lang.Long
             {
                 return IExecuteWithSignature<bool>("tryAdvance", "(Ljava/util/function/Consumer;)Z", arg0);
             }
@@ -407,7 +407,7 @@ namespace Java.Util
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
             /// <typeparam name="Arg0objectSuperJava_Lang_Long"><see cref="Java.Lang.Long"/></typeparam>
-            public void ForEachRemaining<Arg0objectSuperJava_Lang_Long>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Long> arg0) where Arg0objectSuperJava_Lang_Long: Java.Lang.Long
+            public void ForEachRemaining<Arg0objectSuperJava_Lang_Long>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Long> arg0) where Arg0objectSuperJava_Lang_Long : Java.Lang.Long
             {
                 IExecuteWithSignature("forEachRemaining", "(Ljava/util/function/Consumer;)V", arg0);
             }
@@ -570,7 +570,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        bool TryAdvance<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
+        bool TryAdvance<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#characteristics()"/>
         /// </summary>
@@ -597,7 +597,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        void ForEachRemaining<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
+        void ForEachRemaining<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T;
 
         #endregion
 
@@ -694,7 +694,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool TryAdvance<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public bool TryAdvance<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             return IExecuteWithSignature<bool>("tryAdvance", "(Ljava/util/function/Consumer;)Z", arg0);
         }
@@ -736,7 +736,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        public void ForEachRemaining<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public void ForEachRemaining<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             IExecuteWithSignature("forEachRemaining", "(Ljava/util/function/Consumer;)V", arg0);
         }

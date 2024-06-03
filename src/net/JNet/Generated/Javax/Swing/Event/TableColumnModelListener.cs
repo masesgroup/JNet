@@ -93,11 +93,11 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("columnAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableColumnModelEvent>>>(ColumnAddedEventHandler));
-            AddEventHandler("columnMarginChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>>>(ColumnMarginChangedEventHandler));
-            AddEventHandler("columnMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableColumnModelEvent>>>(ColumnMovedEventHandler));
-            AddEventHandler("columnRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableColumnModelEvent>>>(ColumnRemovedEventHandler));
-            AddEventHandler("columnSelectionChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListSelectionEvent>>>(ColumnSelectionChangedEventHandler));
+            AddEventHandler("columnAdded", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableColumnModelEvent>>>(ColumnAddedEventHandler));
+            AddEventHandler("columnMarginChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>>>(ColumnMarginChangedEventHandler));
+            AddEventHandler("columnMoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableColumnModelEvent>>>(ColumnMovedEventHandler));
+            AddEventHandler("columnRemoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableColumnModelEvent>>>(ColumnRemovedEventHandler));
+            AddEventHandler("columnSelectionChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListSelectionEvent>>>(ColumnSelectionChangedEventHandler));
 
         }
 
@@ -105,7 +105,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnAdded(javax.swing.event.TableColumnModelEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnColumnAdded"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.TableColumnModelEvent> OnColumnAdded { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.TableColumnModelEvent> OnColumnAdded { get; set; } = null;
 
         void ColumnAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableColumnModelEvent>> data)
         {
@@ -126,7 +126,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnMarginChanged(javax.swing.event.ChangeEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnColumnMarginChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.ChangeEvent> OnColumnMarginChanged { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.ChangeEvent> OnColumnMarginChanged { get; set; } = null;
 
         void ColumnMarginChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>> data)
         {
@@ -147,7 +147,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnMoved(javax.swing.event.TableColumnModelEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnColumnMoved"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.TableColumnModelEvent> OnColumnMoved { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.TableColumnModelEvent> OnColumnMoved { get; set; } = null;
 
         void ColumnMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableColumnModelEvent>> data)
         {
@@ -168,7 +168,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnRemoved(javax.swing.event.TableColumnModelEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnColumnRemoved"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.TableColumnModelEvent> OnColumnRemoved { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.TableColumnModelEvent> OnColumnRemoved { get; set; } = null;
 
         void ColumnRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableColumnModelEvent>> data)
         {
@@ -189,7 +189,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnSelectionChanged(javax.swing.event.ListSelectionEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnColumnSelectionChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.ListSelectionEvent> OnColumnSelectionChanged { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.ListSelectionEvent> OnColumnSelectionChanged { get; set; } = null;
 
         void ColumnSelectionChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListSelectionEvent>> data)
         {

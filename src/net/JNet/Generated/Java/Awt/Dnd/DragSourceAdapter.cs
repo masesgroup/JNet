@@ -50,12 +50,12 @@ namespace Java.Awt.Dnd
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("dragDropEnd", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDropEvent>>>(DragDropEndEventHandler));
-            AddEventHandler("dragEnter", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>>>(DragEnterEventHandler));
-            AddEventHandler("dragExit", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceEvent>>>(DragExitEventHandler));
-            AddEventHandler("dragMouseMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>>>(DragMouseMovedEventHandler));
-            AddEventHandler("dragOver", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>>>(DragOverEventHandler));
-            AddEventHandler("dropActionChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>>>(DropActionChangedEventHandler));
+            AddEventHandler("dragDropEnd", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDropEvent>>>(DragDropEndEventHandler));
+            AddEventHandler("dragEnter", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>>>(DragEnterEventHandler));
+            AddEventHandler("dragExit", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceEvent>>>(DragExitEventHandler));
+            AddEventHandler("dragMouseMoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>>>(DragMouseMovedEventHandler));
+            AddEventHandler("dragOver", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>>>(DragOverEventHandler));
+            AddEventHandler("dropActionChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>>>(DropActionChangedEventHandler));
 
         }
 
@@ -63,7 +63,7 @@ namespace Java.Awt.Dnd
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html#dragDropEnd(java.awt.dnd.DragSourceDropEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnDragDropEnd"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.Dnd.DragSourceDropEvent> OnDragDropEnd { get; set; } = null;
+        public global::System.Action<Java.Awt.Dnd.DragSourceDropEvent> OnDragDropEnd { get; set; } = null;
 
         void DragDropEndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDropEvent>> data)
         {
@@ -84,7 +84,7 @@ namespace Java.Awt.Dnd
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html#dragEnter(java.awt.dnd.DragSourceDragEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnDragEnter"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.Dnd.DragSourceDragEvent> OnDragEnter { get; set; } = null;
+        public global::System.Action<Java.Awt.Dnd.DragSourceDragEvent> OnDragEnter { get; set; } = null;
 
         void DragEnterEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>> data)
         {
@@ -105,7 +105,7 @@ namespace Java.Awt.Dnd
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html#dragExit(java.awt.dnd.DragSourceEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnDragExit"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.Dnd.DragSourceEvent> OnDragExit { get; set; } = null;
+        public global::System.Action<Java.Awt.Dnd.DragSourceEvent> OnDragExit { get; set; } = null;
 
         void DragExitEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceEvent>> data)
         {
@@ -126,7 +126,7 @@ namespace Java.Awt.Dnd
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html#dragMouseMoved(java.awt.dnd.DragSourceDragEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnDragMouseMoved"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.Dnd.DragSourceDragEvent> OnDragMouseMoved { get; set; } = null;
+        public global::System.Action<Java.Awt.Dnd.DragSourceDragEvent> OnDragMouseMoved { get; set; } = null;
 
         void DragMouseMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>> data)
         {
@@ -147,7 +147,7 @@ namespace Java.Awt.Dnd
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html#dragOver(java.awt.dnd.DragSourceDragEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnDragOver"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.Dnd.DragSourceDragEvent> OnDragOver { get; set; } = null;
+        public global::System.Action<Java.Awt.Dnd.DragSourceDragEvent> OnDragOver { get; set; } = null;
 
         void DragOverEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>> data)
         {
@@ -168,7 +168,7 @@ namespace Java.Awt.Dnd
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html#dropActionChanged(java.awt.dnd.DragSourceDragEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnDropActionChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.Dnd.DragSourceDragEvent> OnDropActionChanged { get; set; } = null;
+        public global::System.Action<Java.Awt.Dnd.DragSourceDragEvent> OnDropActionChanged { get; set; } = null;
 
         void DropActionChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>> data)
         {

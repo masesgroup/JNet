@@ -196,7 +196,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="Arg1ExtendsE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool AddAll<Arg1ExtendsE>(int arg0, Java.Util.Collection<Arg1ExtendsE> arg1) where Arg1ExtendsE: E
+        public bool AddAll<Arg1ExtendsE>(int arg0, Java.Util.Collection<Arg1ExtendsE> arg1) where Arg1ExtendsE : E
         {
             return IExecute<bool>("addAll", arg0, arg1);
         }

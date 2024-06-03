@@ -950,7 +950,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="A"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="A"/></returns>
-        public A GetAnnotation<A>(Java.Lang.Class arg0) where A: Java.Lang.Annotation.IAnnotation, new()
+        public A GetAnnotation<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation, new()
         {
             return IExecute<A>("getAnnotation", arg0);
         }
@@ -960,7 +960,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="A"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="A"/></returns>
-        public A GetDeclaredAnnotation<A>(Java.Lang.Class arg0) where A: Java.Lang.Annotation.IAnnotation, new()
+        public A GetDeclaredAnnotation<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation, new()
         {
             return IExecute<A>("getDeclaredAnnotation", arg0);
         }
@@ -970,7 +970,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="A"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="A"/></returns>
-        public A[] GetAnnotationsByType<A>(Java.Lang.Class arg0) where A: Java.Lang.Annotation.IAnnotation, new()
+        public A[] GetAnnotationsByType<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation, new()
         {
             return IExecuteArray<A>("getAnnotationsByType", arg0);
         }
@@ -980,7 +980,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="A"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="A"/></returns>
-        public A[] GetDeclaredAnnotationsByType<A>(Java.Lang.Class arg0) where A: Java.Lang.Annotation.IAnnotation, new()
+        public A[] GetDeclaredAnnotationsByType<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation, new()
         {
             return IExecuteArray<A>("getDeclaredAnnotationsByType", arg0);
         }
@@ -991,7 +991,7 @@ namespace Java.Lang
         /// <typeparam name="ReturnExtendsU"><typeparamref name="U"/></typeparam>
         /// <typeparam name="U"></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
-        public Java.Lang.Class AsSubclass<ReturnExtendsU, U>(Java.Lang.Class arg0) where ReturnExtendsU: U
+        public Java.Lang.Class AsSubclass<ReturnExtendsU, U>(Java.Lang.Class arg0) where ReturnExtendsU : U
         {
             return IExecute<Java.Lang.Class>("asSubclass", arg0);
         }

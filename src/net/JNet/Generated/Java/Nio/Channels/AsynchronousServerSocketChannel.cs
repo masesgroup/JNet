@@ -86,7 +86,7 @@ namespace Java.Nio.Channels
         /// <param name="arg1"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
         /// <typeparam name="A"></typeparam>
         /// <typeparam name="Arg1objectSuperA"><typeparamref name="A"/></typeparam>
-        public void Accept<A, Arg1objectSuperA>(A arg0, Java.Nio.Channels.CompletionHandler<Java.Nio.Channels.AsynchronousSocketChannel, Arg1objectSuperA> arg1) where Arg1objectSuperA: A
+        public void Accept<A, Arg1objectSuperA>(A arg0, Java.Nio.Channels.CompletionHandler<Java.Nio.Channels.AsynchronousSocketChannel, Arg1objectSuperA> arg1) where Arg1objectSuperA : A
         {
             IExecute("accept", arg0, arg1);
         }

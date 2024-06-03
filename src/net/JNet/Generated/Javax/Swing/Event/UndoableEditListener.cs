@@ -73,7 +73,7 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("undoableEditHappened", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.UndoableEditEvent>>>(UndoableEditHappenedEventHandler));
+            AddEventHandler("undoableEditHappened", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.UndoableEditEvent>>>(UndoableEditHappenedEventHandler));
 
         }
 
@@ -81,7 +81,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/UndoableEditListener.html#undoableEditHappened(javax.swing.event.UndoableEditEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnUndoableEditHappened"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.UndoableEditEvent> OnUndoableEditHappened { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.UndoableEditEvent> OnUndoableEditHappened { get; set; } = null;
 
         void UndoableEditHappenedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.UndoableEditEvent>> data)
         {

@@ -47,7 +47,7 @@ namespace Java.Time.Temporal
         /// <param name="arg1"><see cref="long"/></param>
         /// <typeparam name="R"><see cref="Java.Time.Temporal.ITemporal"/></typeparam>
         /// <returns><typeparamref name="R"/></returns>
-        R AdjustInto<R>(R arg0, long arg1) where R: Java.Time.Temporal.ITemporal, new();
+        R AdjustInto<R>(R arg0, long arg1) where R : Java.Time.Temporal.ITemporal, new();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#isDateBased()"/>
         /// </summary>
@@ -147,7 +147,7 @@ namespace Java.Time.Temporal
         /// <param name="arg1"><see cref="long"/></param>
         /// <typeparam name="R"><see cref="Java.Time.Temporal.ITemporal"/></typeparam>
         /// <returns><typeparamref name="R"/></returns>
-        public R AdjustInto<R>(R arg0, long arg1) where R: Java.Time.Temporal.ITemporal, new()
+        public R AdjustInto<R>(R arg0, long arg1) where R : Java.Time.Temporal.ITemporal, new()
         {
             return IExecute<R>("adjustInto", arg0, arg1);
         }

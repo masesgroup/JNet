@@ -22,8 +22,8 @@
 
 package org.mases.jnet.generated.java.net.http;
 
-public final class Listener extends org.mases.jcobridge.JCListener implements java.net.http.WebSocket.Listener {
-    public Listener(String key) throws org.mases.jcobridge.JCNativeException {
+public final class WebSocket_Listener extends org.mases.jcobridge.JCListener implements java.net.http.WebSocket.Listener {
+    public WebSocket_Listener(String key) throws org.mases.jcobridge.JCNativeException {
         super(key);
     }
 

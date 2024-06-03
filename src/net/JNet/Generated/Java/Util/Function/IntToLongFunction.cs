@@ -74,7 +74,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("applyAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyAsLongEventHandler));
+            AddEventHandler("applyAsLong", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyAsLongEventHandler));
 
         }
 
@@ -82,7 +82,7 @@ namespace Java.Util.Function
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntToLongFunction.html#applyAsLong(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApplyAsLong"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int, long> OnApplyAsLong { get; set; } = null;
+        public global::System.Func<int, long> OnApplyAsLong { get; set; } = null;
 
         void ApplyAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {

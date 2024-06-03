@@ -78,8 +78,8 @@ namespace Javax.Sql
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("connectionClosed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>>>(ConnectionClosedEventHandler));
-            AddEventHandler("connectionErrorOccurred", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>>>(ConnectionErrorOccurredEventHandler));
+            AddEventHandler("connectionClosed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>>>(ConnectionClosedEventHandler));
+            AddEventHandler("connectionErrorOccurred", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>>>(ConnectionErrorOccurredEventHandler));
 
         }
 
@@ -87,7 +87,7 @@ namespace Javax.Sql
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEventListener.html#connectionClosed(javax.sql.ConnectionEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnConnectionClosed"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Sql.ConnectionEvent> OnConnectionClosed { get; set; } = null;
+        public global::System.Action<Javax.Sql.ConnectionEvent> OnConnectionClosed { get; set; } = null;
 
         void ConnectionClosedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>> data)
         {
@@ -108,7 +108,7 @@ namespace Javax.Sql
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEventListener.html#connectionErrorOccurred(javax.sql.ConnectionEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnConnectionErrorOccurred"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Sql.ConnectionEvent> OnConnectionErrorOccurred { get; set; } = null;
+        public global::System.Action<Javax.Sql.ConnectionEvent> OnConnectionErrorOccurred { get; set; } = null;
 
         void ConnectionErrorOccurredEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>> data)
         {

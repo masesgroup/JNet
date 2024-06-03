@@ -50,7 +50,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyEventHandler));
+            AddEventHandler("apply", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyEventHandler));
 
         }
 
@@ -58,7 +58,7 @@ namespace Java.Util.Function
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntFunction.html#apply(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApply"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int, object> OnApply { get; set; } = null;
+        public global::System.Func<int, object> OnApply { get; set; } = null;
 
         void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -176,7 +176,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyEventHandler));
+            AddEventHandler("apply", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyEventHandler));
 
         }
 
@@ -184,7 +184,7 @@ namespace Java.Util.Function
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntFunction.html#apply(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApply"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int, R> OnApply { get; set; } = null;
+        public global::System.Func<int, R> OnApply { get; set; } = null;
 
         void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {

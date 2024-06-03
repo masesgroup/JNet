@@ -76,7 +76,7 @@ namespace Java.Util.Concurrent
         /// <typeparam name="Arg0ExtendsJava_Util_Concurrent_Callable_T_"><see cref="Java.Util.Concurrent.Callable{T}"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
-        public Java.Util.List<Java.Util.Concurrent.Future<T>> InvokeAll<T, Arg0ExtendsJava_Util_Concurrent_Callable_T_>(Java.Util.Collection<Arg0ExtendsJava_Util_Concurrent_Callable_T_> arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2) where Arg0ExtendsJava_Util_Concurrent_Callable_T_: Java.Util.Concurrent.Callable<T>
+        public Java.Util.List<Java.Util.Concurrent.Future<T>> InvokeAll<T, Arg0ExtendsJava_Util_Concurrent_Callable_T_>(Java.Util.Collection<Arg0ExtendsJava_Util_Concurrent_Callable_T_> arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2) where Arg0ExtendsJava_Util_Concurrent_Callable_T_ : Java.Util.Concurrent.Callable<T>
         {
             return IExecute<Java.Util.List<Java.Util.Concurrent.Future<T>>>("invokeAll", arg0, arg1, arg2);
         }
@@ -88,7 +88,7 @@ namespace Java.Util.Concurrent
         /// <typeparam name="Arg0ExtendsJava_Util_Concurrent_Callable_T_"><see cref="Java.Util.Concurrent.Callable{T}"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
-        public Java.Util.List<Java.Util.Concurrent.Future<T>> InvokeAll<T, Arg0ExtendsJava_Util_Concurrent_Callable_T_>(Java.Util.Collection<Arg0ExtendsJava_Util_Concurrent_Callable_T_> arg0) where Arg0ExtendsJava_Util_Concurrent_Callable_T_: Java.Util.Concurrent.Callable<T>
+        public Java.Util.List<Java.Util.Concurrent.Future<T>> InvokeAll<T, Arg0ExtendsJava_Util_Concurrent_Callable_T_>(Java.Util.Collection<Arg0ExtendsJava_Util_Concurrent_Callable_T_> arg0) where Arg0ExtendsJava_Util_Concurrent_Callable_T_ : Java.Util.Concurrent.Callable<T>
         {
             return IExecuteWithSignature<Java.Util.List<Java.Util.Concurrent.Future<T>>>("invokeAll", "(Ljava/util/Collection;)Ljava/util/List;", arg0);
         }
@@ -104,7 +104,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
         /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
-        public T InvokeAny<T, Arg0ExtendsJava_Util_Concurrent_Callable_T_>(Java.Util.Collection<Arg0ExtendsJava_Util_Concurrent_Callable_T_> arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2) where Arg0ExtendsJava_Util_Concurrent_Callable_T_: Java.Util.Concurrent.Callable<T>
+        public T InvokeAny<T, Arg0ExtendsJava_Util_Concurrent_Callable_T_>(Java.Util.Collection<Arg0ExtendsJava_Util_Concurrent_Callable_T_> arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2) where Arg0ExtendsJava_Util_Concurrent_Callable_T_ : Java.Util.Concurrent.Callable<T>
         {
             return IExecute<T>("invokeAny", arg0, arg1, arg2);
         }
@@ -117,7 +117,7 @@ namespace Java.Util.Concurrent
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
-        public T InvokeAny<T, Arg0ExtendsJava_Util_Concurrent_Callable_T_>(Java.Util.Collection<Arg0ExtendsJava_Util_Concurrent_Callable_T_> arg0) where Arg0ExtendsJava_Util_Concurrent_Callable_T_: Java.Util.Concurrent.Callable<T>
+        public T InvokeAny<T, Arg0ExtendsJava_Util_Concurrent_Callable_T_>(Java.Util.Collection<Arg0ExtendsJava_Util_Concurrent_Callable_T_> arg0) where Arg0ExtendsJava_Util_Concurrent_Callable_T_ : Java.Util.Concurrent.Callable<T>
         {
             return IExecuteWithSignature<T>("invokeAny", "(Ljava/util/Collection;)Ljava/lang/Object;", arg0);
         }

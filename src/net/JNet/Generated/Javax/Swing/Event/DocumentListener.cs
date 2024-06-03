@@ -83,9 +83,9 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("changedUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>>>(ChangedUpdateEventHandler));
-            AddEventHandler("insertUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>>>(InsertUpdateEventHandler));
-            AddEventHandler("removeUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>>>(RemoveUpdateEventHandler));
+            AddEventHandler("changedUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>>>(ChangedUpdateEventHandler));
+            AddEventHandler("insertUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>>>(InsertUpdateEventHandler));
+            AddEventHandler("removeUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>>>(RemoveUpdateEventHandler));
 
         }
 
@@ -93,7 +93,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentListener.html#changedUpdate(javax.swing.event.DocumentEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnChangedUpdate"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.DocumentEvent> OnChangedUpdate { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.DocumentEvent> OnChangedUpdate { get; set; } = null;
 
         void ChangedUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>> data)
         {
@@ -114,7 +114,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentListener.html#insertUpdate(javax.swing.event.DocumentEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnInsertUpdate"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.DocumentEvent> OnInsertUpdate { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.DocumentEvent> OnInsertUpdate { get; set; } = null;
 
         void InsertUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>> data)
         {
@@ -135,7 +135,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentListener.html#removeUpdate(javax.swing.event.DocumentEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnRemoveUpdate"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.DocumentEvent> OnRemoveUpdate { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.DocumentEvent> OnRemoveUpdate { get; set; } = null;
 
         void RemoveUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>> data)
         {

@@ -88,10 +88,10 @@ namespace Javax.Naming.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("objectAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingEvent>>>(ObjectAddedEventHandler));
-            AddEventHandler("objectRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingEvent>>>(ObjectRemovedEventHandler));
-            AddEventHandler("objectRenamed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingEvent>>>(ObjectRenamedEventHandler));
-            AddEventHandler("namingExceptionThrown", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingExceptionEvent>>>(NamingExceptionThrownEventHandler));
+            AddEventHandler("objectAdded", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingEvent>>>(ObjectAddedEventHandler));
+            AddEventHandler("objectRemoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingEvent>>>(ObjectRemovedEventHandler));
+            AddEventHandler("objectRenamed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingEvent>>>(ObjectRenamedEventHandler));
+            AddEventHandler("namingExceptionThrown", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingExceptionEvent>>>(NamingExceptionThrownEventHandler));
 
         }
 
@@ -99,7 +99,7 @@ namespace Javax.Naming.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html#objectAdded(javax.naming.event.NamingEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnObjectAdded"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Naming.Event.NamingEvent> OnObjectAdded { get; set; } = null;
+        public global::System.Action<Javax.Naming.Event.NamingEvent> OnObjectAdded { get; set; } = null;
 
         void ObjectAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingEvent>> data)
         {
@@ -120,7 +120,7 @@ namespace Javax.Naming.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html#objectRemoved(javax.naming.event.NamingEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnObjectRemoved"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Naming.Event.NamingEvent> OnObjectRemoved { get; set; } = null;
+        public global::System.Action<Javax.Naming.Event.NamingEvent> OnObjectRemoved { get; set; } = null;
 
         void ObjectRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingEvent>> data)
         {
@@ -141,7 +141,7 @@ namespace Javax.Naming.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html#objectRenamed(javax.naming.event.NamingEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnObjectRenamed"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Naming.Event.NamingEvent> OnObjectRenamed { get; set; } = null;
+        public global::System.Action<Javax.Naming.Event.NamingEvent> OnObjectRenamed { get; set; } = null;
 
         void ObjectRenamedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingEvent>> data)
         {
@@ -162,7 +162,7 @@ namespace Javax.Naming.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html#namingExceptionThrown(javax.naming.event.NamingExceptionEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnNamingExceptionThrown"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Naming.Event.NamingExceptionEvent> OnNamingExceptionThrown { get; set; } = null;
+        public global::System.Action<Javax.Naming.Event.NamingExceptionEvent> OnNamingExceptionThrown { get; set; } = null;
 
         void NamingExceptionThrownEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingExceptionEvent>> data)
         {

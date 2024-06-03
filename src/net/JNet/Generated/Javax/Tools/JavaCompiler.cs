@@ -116,7 +116,7 @@ namespace Javax.Tools
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
             /// <typeparam name="Arg0ExtendsJavax_Annotation_Processing_Processor"><see cref="Javax.Annotation.Processing.Processor"/></typeparam>
-            public void SetProcessors<Arg0ExtendsJavax_Annotation_Processing_Processor>(Java.Lang.Iterable<Arg0ExtendsJavax_Annotation_Processing_Processor> arg0) where Arg0ExtendsJavax_Annotation_Processing_Processor: Javax.Annotation.Processing.Processor
+            public void SetProcessors<Arg0ExtendsJavax_Annotation_Processing_Processor>(Java.Lang.Iterable<Arg0ExtendsJavax_Annotation_Processing_Processor> arg0) where Arg0ExtendsJavax_Annotation_Processing_Processor : Javax.Annotation.Processing.Processor
             {
                 IExecuteWithSignature("setProcessors", "(Ljava/lang/Iterable;)V", arg0);
             }

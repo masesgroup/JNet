@@ -73,7 +73,7 @@ namespace Java.Beans.Beancontext
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("serviceRevoked", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceRevokedEvent>>>(ServiceRevokedEventHandler));
+            AddEventHandler("serviceRevoked", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceRevokedEvent>>>(ServiceRevokedEventHandler));
 
         }
 
@@ -81,7 +81,7 @@ namespace Java.Beans.Beancontext
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedListener.html#serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnServiceRevoked"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Beans.Beancontext.BeanContextServiceRevokedEvent> OnServiceRevoked { get; set; } = null;
+        public global::System.Action<Java.Beans.Beancontext.BeanContextServiceRevokedEvent> OnServiceRevoked { get; set; } = null;
 
         void ServiceRevokedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceRevokedEvent>> data)
         {

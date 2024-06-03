@@ -200,7 +200,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="Java.Util.Function.IntFunction"/></param>
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg1ExtendsT"><typeparamref name="T"/></typeparam>
-        public static void ParallelSetAll<T, Arg1ExtendsT>(T[] arg0, Java.Util.Function.IntFunction<Arg1ExtendsT> arg1) where Arg1ExtendsT: T
+        public static void ParallelSetAll<T, Arg1ExtendsT>(T[] arg0, Java.Util.Function.IntFunction<Arg1ExtendsT> arg1) where Arg1ExtendsT : T
         {
             SExecute(LocalBridgeClazz, "parallelSetAll", arg0, arg1);
         }
@@ -231,7 +231,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="Java.Util.Function.IntFunction"/></param>
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg1ExtendsT"><typeparamref name="T"/></typeparam>
-        public static void SetAll<T, Arg1ExtendsT>(T[] arg0, Java.Util.Function.IntFunction<Arg1ExtendsT> arg1) where Arg1ExtendsT: T
+        public static void SetAll<T, Arg1ExtendsT>(T[] arg0, Java.Util.Function.IntFunction<Arg1ExtendsT> arg1) where Arg1ExtendsT : T
         {
             SExecute(LocalBridgeClazz, "setAll", arg0, arg1);
         }

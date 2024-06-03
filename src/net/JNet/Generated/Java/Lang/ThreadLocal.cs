@@ -115,7 +115,7 @@ namespace Java.Lang
         /// <typeparam name="S"></typeparam>
         /// <typeparam name="Arg0ExtendsS"><typeparamref name="S"/></typeparam>
         /// <returns><see cref="Java.Lang.ThreadLocal"/></returns>
-        public static Java.Lang.ThreadLocal<S> WithInitial<S, Arg0ExtendsS>(Java.Util.Function.Supplier<Arg0ExtendsS> arg0) where Arg0ExtendsS: S
+        public static Java.Lang.ThreadLocal<S> WithInitial<S, Arg0ExtendsS>(Java.Util.Function.Supplier<Arg0ExtendsS> arg0) where Arg0ExtendsS : S
         {
             return SExecuteWithSignature<Java.Lang.ThreadLocal<S>>(LocalBridgeClazz, "withInitial", "(Ljava/util/function/Supplier;)Ljava/lang/ThreadLocal;", arg0);
         }

@@ -685,7 +685,7 @@ namespace Java.Util.Concurrent
         /// <typeparam name="Arg2objectSuperU"><typeparamref name="U"/></typeparam>
         /// <typeparam name="Arg2ExtendsU"><typeparamref name="U"/></typeparam>
         /// <returns><typeparamref name="U"/></returns>
-        public U Reduce<U, Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsU, Arg2objectSuperU, Arg2ExtendsU>(long arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsU> arg1, Java.Util.Function.BiFunction<Arg2objectSuperU, Arg2objectSuperU, Arg2ExtendsU> arg2) where Arg1objectSuperK: K where Arg1objectSuperV: V where Arg1ExtendsU: U where Arg2objectSuperU: U where Arg2ExtendsU: U
+        public U Reduce<U, Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsU, Arg2objectSuperU, Arg2ExtendsU>(long arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsU> arg1, Java.Util.Function.BiFunction<Arg2objectSuperU, Arg2objectSuperU, Arg2ExtendsU> arg2) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsU : U where Arg2objectSuperU : U where Arg2ExtendsU : U
         {
             return IExecute<U>("reduce", arg0, arg1, arg2);
         }
@@ -700,7 +700,7 @@ namespace Java.Util.Concurrent
         /// <typeparam name="Arg2objectSuperU"><typeparamref name="U"/></typeparam>
         /// <typeparam name="Arg2ExtendsU"><typeparamref name="U"/></typeparam>
         /// <returns><typeparamref name="U"/></returns>
-        public U ReduceEntries<U, Arg1ExtendsU, Arg2objectSuperU, Arg2ExtendsU>(long arg0, Java.Util.Function.Function<Java.Util.Map.Entry<K, V>, Arg1ExtendsU> arg1, Java.Util.Function.BiFunction<Arg2objectSuperU, Arg2objectSuperU, Arg2ExtendsU> arg2) where Arg1ExtendsU: U where Arg2objectSuperU: U where Arg2ExtendsU: U
+        public U ReduceEntries<U, Arg1ExtendsU, Arg2objectSuperU, Arg2ExtendsU>(long arg0, Java.Util.Function.Function<Java.Util.Map.Entry<K, V>, Arg1ExtendsU> arg1, Java.Util.Function.BiFunction<Arg2objectSuperU, Arg2objectSuperU, Arg2ExtendsU> arg2) where Arg1ExtendsU : U where Arg2objectSuperU : U where Arg2ExtendsU : U
         {
             return IExecute<U>("reduceEntries", arg0, arg1, arg2);
         }
@@ -716,7 +716,7 @@ namespace Java.Util.Concurrent
         /// <typeparam name="Arg2objectSuperU"><typeparamref name="U"/></typeparam>
         /// <typeparam name="Arg2ExtendsU"><typeparamref name="U"/></typeparam>
         /// <returns><typeparamref name="U"/></returns>
-        public U ReduceKeys<U, Arg1objectSuperK, Arg1ExtendsU, Arg2objectSuperU, Arg2ExtendsU>(long arg0, Java.Util.Function.Function<Arg1objectSuperK, Arg1ExtendsU> arg1, Java.Util.Function.BiFunction<Arg2objectSuperU, Arg2objectSuperU, Arg2ExtendsU> arg2) where Arg1objectSuperK: K where Arg1ExtendsU: U where Arg2objectSuperU: U where Arg2ExtendsU: U
+        public U ReduceKeys<U, Arg1objectSuperK, Arg1ExtendsU, Arg2objectSuperU, Arg2ExtendsU>(long arg0, Java.Util.Function.Function<Arg1objectSuperK, Arg1ExtendsU> arg1, Java.Util.Function.BiFunction<Arg2objectSuperU, Arg2objectSuperU, Arg2ExtendsU> arg2) where Arg1objectSuperK : K where Arg1ExtendsU : U where Arg2objectSuperU : U where Arg2ExtendsU : U
         {
             return IExecute<U>("reduceKeys", arg0, arg1, arg2);
         }
@@ -732,7 +732,7 @@ namespace Java.Util.Concurrent
         /// <typeparam name="Arg2objectSuperU"><typeparamref name="U"/></typeparam>
         /// <typeparam name="Arg2ExtendsU"><typeparamref name="U"/></typeparam>
         /// <returns><typeparamref name="U"/></returns>
-        public U ReduceValues<U, Arg1objectSuperV, Arg1ExtendsU, Arg2objectSuperU, Arg2ExtendsU>(long arg0, Java.Util.Function.Function<Arg1objectSuperV, Arg1ExtendsU> arg1, Java.Util.Function.BiFunction<Arg2objectSuperU, Arg2objectSuperU, Arg2ExtendsU> arg2) where Arg1objectSuperV: V where Arg1ExtendsU: U where Arg2objectSuperU: U where Arg2ExtendsU: U
+        public U ReduceValues<U, Arg1objectSuperV, Arg1ExtendsU, Arg2objectSuperU, Arg2ExtendsU>(long arg0, Java.Util.Function.Function<Arg1objectSuperV, Arg1ExtendsU> arg1, Java.Util.Function.BiFunction<Arg2objectSuperU, Arg2objectSuperU, Arg2ExtendsU> arg2) where Arg1objectSuperV : V where Arg1ExtendsU : U where Arg2objectSuperU : U where Arg2ExtendsU : U
         {
             return IExecute<U>("reduceValues", arg0, arg1, arg2);
         }
@@ -746,7 +746,7 @@ namespace Java.Util.Concurrent
         /// <typeparam name="Arg1objectSuperV"><typeparamref name="V"/></typeparam>
         /// <typeparam name="Arg1ExtendsU"><typeparamref name="U"/></typeparam>
         /// <returns><typeparamref name="U"/></returns>
-        public U Search<U, Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsU>(long arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsU> arg1) where Arg1objectSuperK: K where Arg1objectSuperV: V where Arg1ExtendsU: U
+        public U Search<U, Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsU>(long arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsU> arg1) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsU : U
         {
             return IExecute<U>("search", arg0, arg1);
         }
@@ -758,7 +758,7 @@ namespace Java.Util.Concurrent
         /// <typeparam name="U"></typeparam>
         /// <typeparam name="Arg1ExtendsU"><typeparamref name="U"/></typeparam>
         /// <returns><typeparamref name="U"/></returns>
-        public U SearchEntries<U, Arg1ExtendsU>(long arg0, Java.Util.Function.Function<Java.Util.Map.Entry<K, V>, Arg1ExtendsU> arg1) where Arg1ExtendsU: U
+        public U SearchEntries<U, Arg1ExtendsU>(long arg0, Java.Util.Function.Function<Java.Util.Map.Entry<K, V>, Arg1ExtendsU> arg1) where Arg1ExtendsU : U
         {
             return IExecute<U>("searchEntries", arg0, arg1);
         }
@@ -771,7 +771,7 @@ namespace Java.Util.Concurrent
         /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
         /// <typeparam name="Arg1ExtendsU"><typeparamref name="U"/></typeparam>
         /// <returns><typeparamref name="U"/></returns>
-        public U SearchKeys<U, Arg1objectSuperK, Arg1ExtendsU>(long arg0, Java.Util.Function.Function<Arg1objectSuperK, Arg1ExtendsU> arg1) where Arg1objectSuperK: K where Arg1ExtendsU: U
+        public U SearchKeys<U, Arg1objectSuperK, Arg1ExtendsU>(long arg0, Java.Util.Function.Function<Arg1objectSuperK, Arg1ExtendsU> arg1) where Arg1objectSuperK : K where Arg1ExtendsU : U
         {
             return IExecute<U>("searchKeys", arg0, arg1);
         }
@@ -784,7 +784,7 @@ namespace Java.Util.Concurrent
         /// <typeparam name="Arg1objectSuperV"><typeparamref name="V"/></typeparam>
         /// <typeparam name="Arg1ExtendsU"><typeparamref name="U"/></typeparam>
         /// <returns><typeparamref name="U"/></returns>
-        public U SearchValues<U, Arg1objectSuperV, Arg1ExtendsU>(long arg0, Java.Util.Function.Function<Arg1objectSuperV, Arg1ExtendsU> arg1) where Arg1objectSuperV: V where Arg1ExtendsU: U
+        public U SearchValues<U, Arg1objectSuperV, Arg1ExtendsU>(long arg0, Java.Util.Function.Function<Arg1objectSuperV, Arg1ExtendsU> arg1) where Arg1objectSuperV : V where Arg1ExtendsU : U
         {
             return IExecute<U>("searchValues", arg0, arg1);
         }
@@ -799,7 +799,7 @@ namespace Java.Util.Concurrent
         /// <typeparam name="Arg1ExtendsU"><typeparamref name="U"/></typeparam>
         /// <typeparam name="U"></typeparam>
         /// <typeparam name="Arg2objectSuperU"><typeparamref name="U"/></typeparam>
-        public void ForEach<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsU, U, Arg2objectSuperU>(long arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsU> arg1, Java.Util.Function.Consumer<Arg2objectSuperU> arg2) where Arg1objectSuperK: K where Arg1objectSuperV: V where Arg1ExtendsU: U where Arg2objectSuperU: U
+        public void ForEach<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsU, U, Arg2objectSuperU>(long arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsU> arg1, Java.Util.Function.Consumer<Arg2objectSuperU> arg2) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsU : U where Arg2objectSuperU : U
         {
             IExecute("forEach", arg0, arg1, arg2);
         }
@@ -812,7 +812,7 @@ namespace Java.Util.Concurrent
         /// <typeparam name="Arg1ExtendsU"><typeparamref name="U"/></typeparam>
         /// <typeparam name="U"></typeparam>
         /// <typeparam name="Arg2objectSuperU"><typeparamref name="U"/></typeparam>
-        public void ForEachEntry<Arg1ExtendsU, U, Arg2objectSuperU>(long arg0, Java.Util.Function.Function<Java.Util.Map.Entry<K, V>, Arg1ExtendsU> arg1, Java.Util.Function.Consumer<Arg2objectSuperU> arg2) where Arg1ExtendsU: U where Arg2objectSuperU: U
+        public void ForEachEntry<Arg1ExtendsU, U, Arg2objectSuperU>(long arg0, Java.Util.Function.Function<Java.Util.Map.Entry<K, V>, Arg1ExtendsU> arg1, Java.Util.Function.Consumer<Arg2objectSuperU> arg2) where Arg1ExtendsU : U where Arg2objectSuperU : U
         {
             IExecute("forEachEntry", arg0, arg1, arg2);
         }
@@ -826,7 +826,7 @@ namespace Java.Util.Concurrent
         /// <typeparam name="Arg1ExtendsU"><typeparamref name="U"/></typeparam>
         /// <typeparam name="U"></typeparam>
         /// <typeparam name="Arg2objectSuperU"><typeparamref name="U"/></typeparam>
-        public void ForEachKey<Arg1objectSuperK, Arg1ExtendsU, U, Arg2objectSuperU>(long arg0, Java.Util.Function.Function<Arg1objectSuperK, Arg1ExtendsU> arg1, Java.Util.Function.Consumer<Arg2objectSuperU> arg2) where Arg1objectSuperK: K where Arg1ExtendsU: U where Arg2objectSuperU: U
+        public void ForEachKey<Arg1objectSuperK, Arg1ExtendsU, U, Arg2objectSuperU>(long arg0, Java.Util.Function.Function<Arg1objectSuperK, Arg1ExtendsU> arg1, Java.Util.Function.Consumer<Arg2objectSuperU> arg2) where Arg1objectSuperK : K where Arg1ExtendsU : U where Arg2objectSuperU : U
         {
             IExecute("forEachKey", arg0, arg1, arg2);
         }
@@ -840,7 +840,7 @@ namespace Java.Util.Concurrent
         /// <typeparam name="Arg1ExtendsU"><typeparamref name="U"/></typeparam>
         /// <typeparam name="U"></typeparam>
         /// <typeparam name="Arg2objectSuperU"><typeparamref name="U"/></typeparam>
-        public void ForEachValue<Arg1objectSuperV, Arg1ExtendsU, U, Arg2objectSuperU>(long arg0, Java.Util.Function.Function<Arg1objectSuperV, Arg1ExtendsU> arg1, Java.Util.Function.Consumer<Arg2objectSuperU> arg2) where Arg1objectSuperV: V where Arg1ExtendsU: U where Arg2objectSuperU: U
+        public void ForEachValue<Arg1objectSuperV, Arg1ExtendsU, U, Arg2objectSuperU>(long arg0, Java.Util.Function.Function<Arg1objectSuperV, Arg1ExtendsU> arg1, Java.Util.Function.Consumer<Arg2objectSuperU> arg2) where Arg1objectSuperV : V where Arg1ExtendsU : U where Arg2objectSuperU : U
         {
             IExecute("forEachValue", arg0, arg1, arg2);
         }
@@ -874,7 +874,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg3"><see cref="Java.Util.Function.DoubleBinaryOperator"/></param>
         /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
         /// <returns><see cref="double"/></returns>
-        public double ReduceKeysToDouble<Arg1objectSuperK>(long arg0, Java.Util.Function.ToDoubleFunction<Arg1objectSuperK> arg1, double arg2, Java.Util.Function.DoubleBinaryOperator arg3) where Arg1objectSuperK: K
+        public double ReduceKeysToDouble<Arg1objectSuperK>(long arg0, Java.Util.Function.ToDoubleFunction<Arg1objectSuperK> arg1, double arg2, Java.Util.Function.DoubleBinaryOperator arg3) where Arg1objectSuperK : K
         {
             return IExecute<double>("reduceKeysToDouble", arg0, arg1, arg2, arg3);
         }
@@ -888,7 +888,7 @@ namespace Java.Util.Concurrent
         /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
         /// <typeparam name="Arg1objectSuperV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="double"/></returns>
-        public double ReduceToDouble<Arg1objectSuperK, Arg1objectSuperV>(long arg0, Java.Util.Function.ToDoubleBiFunction<Arg1objectSuperK, Arg1objectSuperV> arg1, double arg2, Java.Util.Function.DoubleBinaryOperator arg3) where Arg1objectSuperK: K where Arg1objectSuperV: V
+        public double ReduceToDouble<Arg1objectSuperK, Arg1objectSuperV>(long arg0, Java.Util.Function.ToDoubleBiFunction<Arg1objectSuperK, Arg1objectSuperV> arg1, double arg2, Java.Util.Function.DoubleBinaryOperator arg3) where Arg1objectSuperK : K where Arg1objectSuperV : V
         {
             return IExecute<double>("reduceToDouble", arg0, arg1, arg2, arg3);
         }
@@ -901,7 +901,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg3"><see cref="Java.Util.Function.DoubleBinaryOperator"/></param>
         /// <typeparam name="Arg1objectSuperV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="double"/></returns>
-        public double ReduceValuesToDouble<Arg1objectSuperV>(long arg0, Java.Util.Function.ToDoubleFunction<Arg1objectSuperV> arg1, double arg2, Java.Util.Function.DoubleBinaryOperator arg3) where Arg1objectSuperV: V
+        public double ReduceValuesToDouble<Arg1objectSuperV>(long arg0, Java.Util.Function.ToDoubleFunction<Arg1objectSuperV> arg1, double arg2, Java.Util.Function.DoubleBinaryOperator arg3) where Arg1objectSuperV : V
         {
             return IExecute<double>("reduceValuesToDouble", arg0, arg1, arg2, arg3);
         }
@@ -926,7 +926,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg3"><see cref="Java.Util.Function.IntBinaryOperator"/></param>
         /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
         /// <returns><see cref="int"/></returns>
-        public int ReduceKeysToInt<Arg1objectSuperK>(long arg0, Java.Util.Function.ToIntFunction<Arg1objectSuperK> arg1, int arg2, Java.Util.Function.IntBinaryOperator arg3) where Arg1objectSuperK: K
+        public int ReduceKeysToInt<Arg1objectSuperK>(long arg0, Java.Util.Function.ToIntFunction<Arg1objectSuperK> arg1, int arg2, Java.Util.Function.IntBinaryOperator arg3) where Arg1objectSuperK : K
         {
             return IExecute<int>("reduceKeysToInt", arg0, arg1, arg2, arg3);
         }
@@ -940,7 +940,7 @@ namespace Java.Util.Concurrent
         /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
         /// <typeparam name="Arg1objectSuperV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="int"/></returns>
-        public int ReduceToInt<Arg1objectSuperK, Arg1objectSuperV>(long arg0, Java.Util.Function.ToIntBiFunction<Arg1objectSuperK, Arg1objectSuperV> arg1, int arg2, Java.Util.Function.IntBinaryOperator arg3) where Arg1objectSuperK: K where Arg1objectSuperV: V
+        public int ReduceToInt<Arg1objectSuperK, Arg1objectSuperV>(long arg0, Java.Util.Function.ToIntBiFunction<Arg1objectSuperK, Arg1objectSuperV> arg1, int arg2, Java.Util.Function.IntBinaryOperator arg3) where Arg1objectSuperK : K where Arg1objectSuperV : V
         {
             return IExecute<int>("reduceToInt", arg0, arg1, arg2, arg3);
         }
@@ -953,7 +953,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg3"><see cref="Java.Util.Function.IntBinaryOperator"/></param>
         /// <typeparam name="Arg1objectSuperV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="int"/></returns>
-        public int ReduceValuesToInt<Arg1objectSuperV>(long arg0, Java.Util.Function.ToIntFunction<Arg1objectSuperV> arg1, int arg2, Java.Util.Function.IntBinaryOperator arg3) where Arg1objectSuperV: V
+        public int ReduceValuesToInt<Arg1objectSuperV>(long arg0, Java.Util.Function.ToIntFunction<Arg1objectSuperV> arg1, int arg2, Java.Util.Function.IntBinaryOperator arg3) where Arg1objectSuperV : V
         {
             return IExecute<int>("reduceValuesToInt", arg0, arg1, arg2, arg3);
         }
@@ -989,7 +989,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
         /// <typeparam name="Arg1ExtendsJava_Util_Map_Entry_K_V_"><see cref="Java.Util.Map.Entry{K, V}"/></typeparam>
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
-        public Java.Util.Map.Entry<K, V> ReduceEntries<Arg1ExtendsJava_Util_Map_Entry_K_V_>(long arg0, Java.Util.Function.BiFunction<Java.Util.Map.Entry<K, V>, Java.Util.Map.Entry<K, V>, Arg1ExtendsJava_Util_Map_Entry_K_V_> arg1) where Arg1ExtendsJava_Util_Map_Entry_K_V_: Java.Util.Map.Entry<K, V>
+        public Java.Util.Map.Entry<K, V> ReduceEntries<Arg1ExtendsJava_Util_Map_Entry_K_V_>(long arg0, Java.Util.Function.BiFunction<Java.Util.Map.Entry<K, V>, Java.Util.Map.Entry<K, V>, Arg1ExtendsJava_Util_Map_Entry_K_V_> arg1) where Arg1ExtendsJava_Util_Map_Entry_K_V_ : Java.Util.Map.Entry<K, V>
         {
             return IExecute<Java.Util.Map.Entry<K, V>>("reduceEntries", arg0, arg1);
         }
@@ -1001,7 +1001,7 @@ namespace Java.Util.Concurrent
         /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
         /// <typeparam name="Arg1ExtendsK"><typeparamref name="K"/></typeparam>
         /// <returns><typeparamref name="K"/></returns>
-        public K ReduceKeys<Arg1objectSuperK, Arg1ExtendsK>(long arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperK, Arg1ExtendsK> arg1) where Arg1objectSuperK: K where Arg1ExtendsK: K
+        public K ReduceKeys<Arg1objectSuperK, Arg1ExtendsK>(long arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperK, Arg1ExtendsK> arg1) where Arg1objectSuperK : K where Arg1ExtendsK : K
         {
             return IExecute<K>("reduceKeys", arg0, arg1);
         }
@@ -1034,7 +1034,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg3"><see cref="Java.Util.Function.LongBinaryOperator"/></param>
         /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
         /// <returns><see cref="long"/></returns>
-        public long ReduceKeysToLong<Arg1objectSuperK>(long arg0, Java.Util.Function.ToLongFunction<Arg1objectSuperK> arg1, long arg2, Java.Util.Function.LongBinaryOperator arg3) where Arg1objectSuperK: K
+        public long ReduceKeysToLong<Arg1objectSuperK>(long arg0, Java.Util.Function.ToLongFunction<Arg1objectSuperK> arg1, long arg2, Java.Util.Function.LongBinaryOperator arg3) where Arg1objectSuperK : K
         {
             return IExecute<long>("reduceKeysToLong", arg0, arg1, arg2, arg3);
         }
@@ -1048,7 +1048,7 @@ namespace Java.Util.Concurrent
         /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
         /// <typeparam name="Arg1objectSuperV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="long"/></returns>
-        public long ReduceToLong<Arg1objectSuperK, Arg1objectSuperV>(long arg0, Java.Util.Function.ToLongBiFunction<Arg1objectSuperK, Arg1objectSuperV> arg1, long arg2, Java.Util.Function.LongBinaryOperator arg3) where Arg1objectSuperK: K where Arg1objectSuperV: V
+        public long ReduceToLong<Arg1objectSuperK, Arg1objectSuperV>(long arg0, Java.Util.Function.ToLongBiFunction<Arg1objectSuperK, Arg1objectSuperV> arg1, long arg2, Java.Util.Function.LongBinaryOperator arg3) where Arg1objectSuperK : K where Arg1objectSuperV : V
         {
             return IExecute<long>("reduceToLong", arg0, arg1, arg2, arg3);
         }
@@ -1061,7 +1061,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg3"><see cref="Java.Util.Function.LongBinaryOperator"/></param>
         /// <typeparam name="Arg1objectSuperV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="long"/></returns>
-        public long ReduceValuesToLong<Arg1objectSuperV>(long arg0, Java.Util.Function.ToLongFunction<Arg1objectSuperV> arg1, long arg2, Java.Util.Function.LongBinaryOperator arg3) where Arg1objectSuperV: V
+        public long ReduceValuesToLong<Arg1objectSuperV>(long arg0, Java.Util.Function.ToLongFunction<Arg1objectSuperV> arg1, long arg2, Java.Util.Function.LongBinaryOperator arg3) where Arg1objectSuperV : V
         {
             return IExecute<long>("reduceValuesToLong", arg0, arg1, arg2, arg3);
         }
@@ -1073,7 +1073,7 @@ namespace Java.Util.Concurrent
         /// <typeparam name="Arg1objectSuperV"><typeparamref name="V"/></typeparam>
         /// <typeparam name="Arg1ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><typeparamref name="V"/></returns>
-        public V ReduceValues<Arg1objectSuperV, Arg1ExtendsV>(long arg0, Java.Util.Function.BiFunction<Arg1objectSuperV, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperV: V where Arg1ExtendsV: V
+        public V ReduceValues<Arg1objectSuperV, Arg1ExtendsV>(long arg0, Java.Util.Function.BiFunction<Arg1objectSuperV, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperV : V where Arg1ExtendsV : V
         {
             return IExecute<V>("reduceValues", arg0, arg1);
         }
@@ -1084,7 +1084,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="Java.Util.Function.BiConsumer"/></param>
         /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
         /// <typeparam name="Arg1objectSuperV"><typeparamref name="V"/></typeparam>
-        public void ForEach<Arg1objectSuperK, Arg1objectSuperV>(long arg0, Java.Util.Function.BiConsumer<Arg1objectSuperK, Arg1objectSuperV> arg1) where Arg1objectSuperK: K where Arg1objectSuperV: V
+        public void ForEach<Arg1objectSuperK, Arg1objectSuperV>(long arg0, Java.Util.Function.BiConsumer<Arg1objectSuperK, Arg1objectSuperV> arg1) where Arg1objectSuperK : K where Arg1objectSuperV : V
         {
             IExecute("forEach", arg0, arg1);
         }
@@ -1094,7 +1094,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
         /// <typeparam name="Arg1objectSuperJava_Util_Map_Entry_K_V_"><see cref="Java.Util.Map.Entry{K, V}"/></typeparam>
-        public void ForEachEntry<Arg1objectSuperJava_Util_Map_Entry_K_V_>(long arg0, Java.Util.Function.Consumer<Arg1objectSuperJava_Util_Map_Entry_K_V_> arg1) where Arg1objectSuperJava_Util_Map_Entry_K_V_: Java.Util.Map.Entry<K, V>
+        public void ForEachEntry<Arg1objectSuperJava_Util_Map_Entry_K_V_>(long arg0, Java.Util.Function.Consumer<Arg1objectSuperJava_Util_Map_Entry_K_V_> arg1) where Arg1objectSuperJava_Util_Map_Entry_K_V_ : Java.Util.Map.Entry<K, V>
         {
             IExecute("forEachEntry", arg0, arg1);
         }
@@ -1104,7 +1104,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
         /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
-        public void ForEachKey<Arg1objectSuperK>(long arg0, Java.Util.Function.Consumer<Arg1objectSuperK> arg1) where Arg1objectSuperK: K
+        public void ForEachKey<Arg1objectSuperK>(long arg0, Java.Util.Function.Consumer<Arg1objectSuperK> arg1) where Arg1objectSuperK : K
         {
             IExecute("forEachKey", arg0, arg1);
         }
@@ -1114,7 +1114,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
         /// <typeparam name="Arg1objectSuperV"><typeparamref name="V"/></typeparam>
-        public void ForEachValue<Arg1objectSuperV>(long arg0, Java.Util.Function.Consumer<Arg1objectSuperV> arg1) where Arg1objectSuperV: V
+        public void ForEachValue<Arg1objectSuperV>(long arg0, Java.Util.Function.Consumer<Arg1objectSuperV> arg1) where Arg1objectSuperV : V
         {
             IExecute("forEachValue", arg0, arg1);
         }

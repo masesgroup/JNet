@@ -113,7 +113,7 @@ namespace Java.Lang.Ref
         /// </summary>
         /// <typeparam name="ReturnExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Lang.Ref.Reference"/></returns>
-        public Java.Lang.Ref.Reference<ReturnExtendsT> Poll<ReturnExtendsT>() where ReturnExtendsT: T
+        public Java.Lang.Ref.Reference<ReturnExtendsT> Poll<ReturnExtendsT>() where ReturnExtendsT : T
         {
             return IExecuteWithSignature<Java.Lang.Ref.Reference<ReturnExtendsT>>("poll", "()Ljava/lang/ref/Reference;");
         }
@@ -123,7 +123,7 @@ namespace Java.Lang.Ref
         /// <typeparam name="ReturnExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Lang.Ref.Reference"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
-        public Java.Lang.Ref.Reference<ReturnExtendsT> Remove<ReturnExtendsT>() where ReturnExtendsT: T
+        public Java.Lang.Ref.Reference<ReturnExtendsT> Remove<ReturnExtendsT>() where ReturnExtendsT : T
         {
             return IExecuteWithSignature<Java.Lang.Ref.Reference<ReturnExtendsT>>("remove", "()Ljava/lang/ref/Reference;");
         }
@@ -135,7 +135,7 @@ namespace Java.Lang.Ref
         /// <returns><see cref="Java.Lang.Ref.Reference"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.InterruptedException"/>
-        public Java.Lang.Ref.Reference<ReturnExtendsT> Remove<ReturnExtendsT>(long arg0) where ReturnExtendsT: T
+        public Java.Lang.Ref.Reference<ReturnExtendsT> Remove<ReturnExtendsT>(long arg0) where ReturnExtendsT : T
         {
             return IExecuteWithSignature<Java.Lang.Ref.Reference<ReturnExtendsT>>("remove", "(J)Ljava/lang/ref/Reference;", arg0);
         }
