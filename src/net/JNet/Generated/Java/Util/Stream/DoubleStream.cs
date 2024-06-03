@@ -48,7 +48,7 @@ namespace Java.Util.Stream
         /// <typeparam name="U"></typeparam>
         /// <typeparam name="Arg0ExtendsU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        Java.Util.Stream.Stream<U> MapToObj<U, Arg0ExtendsU>(Java.Util.Function.DoubleFunction<Arg0ExtendsU> arg0) where Arg0ExtendsU: U;
+        Java.Util.Stream.Stream<U> MapToObj<U, Arg0ExtendsU>(Java.Util.Function.DoubleFunction<Arg0ExtendsU> arg0) where Arg0ExtendsU : U;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#allMatch(java.util.function.DoublePredicate)"/>
         /// </summary>
@@ -137,7 +137,7 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.DoubleFunction"/></param>
         /// <typeparam name="Arg0ExtendsJava_Util_Stream_DoubleStream"><see cref="Java.Util.Stream.DoubleStream"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
-        Java.Util.Stream.DoubleStream FlatMap<Arg0ExtendsJava_Util_Stream_DoubleStream>(Java.Util.Function.DoubleFunction<Arg0ExtendsJava_Util_Stream_DoubleStream> arg0) where Arg0ExtendsJava_Util_Stream_DoubleStream: Java.Util.Stream.DoubleStream;
+        Java.Util.Stream.DoubleStream FlatMap<Arg0ExtendsJava_Util_Stream_DoubleStream>(Java.Util.Function.DoubleFunction<Arg0ExtendsJava_Util_Stream_DoubleStream> arg0) where Arg0ExtendsJava_Util_Stream_DoubleStream : Java.Util.Stream.DoubleStream;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#limit(long)"/>
         /// </summary>
@@ -347,7 +347,7 @@ namespace Java.Util.Stream
         /// <typeparam name="U"></typeparam>
         /// <typeparam name="Arg0ExtendsU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<U> MapToObj<U, Arg0ExtendsU>(Java.Util.Function.DoubleFunction<Arg0ExtendsU> arg0) where Arg0ExtendsU: U
+        public Java.Util.Stream.Stream<U> MapToObj<U, Arg0ExtendsU>(Java.Util.Function.DoubleFunction<Arg0ExtendsU> arg0) where Arg0ExtendsU : U
         {
             return IExecuteWithSignature<Java.Util.Stream.Stream<U>>("mapToObj", "(Ljava/util/function/DoubleFunction;)Ljava/util/stream/Stream;", arg0);
         }
@@ -484,7 +484,7 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.DoubleFunction"/></param>
         /// <typeparam name="Arg0ExtendsJava_Util_Stream_DoubleStream"><see cref="Java.Util.Stream.DoubleStream"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
-        public Java.Util.Stream.DoubleStream FlatMap<Arg0ExtendsJava_Util_Stream_DoubleStream>(Java.Util.Function.DoubleFunction<Arg0ExtendsJava_Util_Stream_DoubleStream> arg0) where Arg0ExtendsJava_Util_Stream_DoubleStream: Java.Util.Stream.DoubleStream
+        public Java.Util.Stream.DoubleStream FlatMap<Arg0ExtendsJava_Util_Stream_DoubleStream>(Java.Util.Function.DoubleFunction<Arg0ExtendsJava_Util_Stream_DoubleStream> arg0) where Arg0ExtendsJava_Util_Stream_DoubleStream : Java.Util.Stream.DoubleStream
         {
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("flatMap", "(Ljava/util/function/DoubleFunction;)Ljava/util/stream/DoubleStream;", arg0);
         }

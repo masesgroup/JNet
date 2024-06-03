@@ -50,27 +50,27 @@ namespace Org.Xml.Sax.Helpers
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("getFeature", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(GetFeatureEventHandler));
-            AddEventHandler("getProperty", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(GetPropertyEventHandler));
-            AddEventHandler("getContentHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetContentHandlerEventHandler));
-            AddEventHandler("getDTDHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetDTDHandlerEventHandler));
-            AddEventHandler("getEntityResolver", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetEntityResolverEventHandler));
-            AddEventHandler("getErrorHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetErrorHandlerEventHandler));
-            AddEventHandler("characters", new System.EventHandler<CLRListenerEventArgs<CLREventData<char[]>>>(CharactersEventHandler));
-            AddEventHandler("endDocument", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(EndDocumentEventHandler));
-            AddEventHandler("endElement", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(EndElementEventHandler));
-            AddEventHandler("ignorableWhitespace", new System.EventHandler<CLRListenerEventArgs<CLREventData<char[]>>>(IgnorableWhitespaceEventHandler));
-            AddEventHandler("parse", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(ParseEventHandler));
-            AddEventHandler("parse1", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.InputSource>>>(Parse1EventHandler));
-            AddEventHandler("processingInstruction", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(ProcessingInstructionEventHandler));
-            AddEventHandler("setContentHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.ContentHandler>>>(SetContentHandlerEventHandler));
-            AddEventHandler("setDocumentLocator", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.Locator>>>(SetDocumentLocatorEventHandler));
-            AddEventHandler("setDTDHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.DTDHandler>>>(SetDTDHandlerEventHandler));
-            AddEventHandler("setEntityResolver", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.EntityResolver>>>(SetEntityResolverEventHandler));
-            AddEventHandler("setErrorHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.ErrorHandler>>>(SetErrorHandlerEventHandler));
-            AddEventHandler("setFeature", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(SetFeatureEventHandler));
-            AddEventHandler("setProperty", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(SetPropertyEventHandler));
-            AddEventHandler("startDocument", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(StartDocumentEventHandler));
+            AddEventHandler("getFeature", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(GetFeatureEventHandler));
+            AddEventHandler("getProperty", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(GetPropertyEventHandler));
+            AddEventHandler("getContentHandler", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetContentHandlerEventHandler));
+            AddEventHandler("getDTDHandler", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetDTDHandlerEventHandler));
+            AddEventHandler("getEntityResolver", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetEntityResolverEventHandler));
+            AddEventHandler("getErrorHandler", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetErrorHandlerEventHandler));
+            AddEventHandler("characters", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<char[]>>>(CharactersEventHandler));
+            AddEventHandler("endDocument", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(EndDocumentEventHandler));
+            AddEventHandler("endElement", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(EndElementEventHandler));
+            AddEventHandler("ignorableWhitespace", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<char[]>>>(IgnorableWhitespaceEventHandler));
+            AddEventHandler("parse", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(ParseEventHandler));
+            AddEventHandler("parse1", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.InputSource>>>(Parse1EventHandler));
+            AddEventHandler("processingInstruction", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(ProcessingInstructionEventHandler));
+            AddEventHandler("setContentHandler", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.ContentHandler>>>(SetContentHandlerEventHandler));
+            AddEventHandler("setDocumentLocator", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.Locator>>>(SetDocumentLocatorEventHandler));
+            AddEventHandler("setDTDHandler", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.DTDHandler>>>(SetDTDHandlerEventHandler));
+            AddEventHandler("setEntityResolver", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.EntityResolver>>>(SetEntityResolverEventHandler));
+            AddEventHandler("setErrorHandler", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.ErrorHandler>>>(SetErrorHandlerEventHandler));
+            AddEventHandler("setFeature", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(SetFeatureEventHandler));
+            AddEventHandler("setProperty", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(SetPropertyEventHandler));
+            AddEventHandler("startDocument", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(StartDocumentEventHandler));
 
         }
 
@@ -78,7 +78,7 @@ namespace Org.Xml.Sax.Helpers
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#getFeature(java.lang.String)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetFeature"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Lang.String, bool> OnGetFeature { get; set; } = null;
+        public global::System.Func<Java.Lang.String, bool> OnGetFeature { get; set; } = null;
 
         void GetFeatureEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
@@ -103,7 +103,7 @@ namespace Org.Xml.Sax.Helpers
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#getProperty(java.lang.String)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetProperty"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Lang.String, object> OnGetProperty { get; set; } = null;
+        public global::System.Func<Java.Lang.String, object> OnGetProperty { get; set; } = null;
 
         void GetPropertyEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
@@ -128,7 +128,7 @@ namespace Org.Xml.Sax.Helpers
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#getContentHandler()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetContentHandler"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Org.Xml.Sax.ContentHandler> OnGetContentHandler { get; set; } = null;
+        public global::System.Func<Org.Xml.Sax.ContentHandler> OnGetContentHandler { get; set; } = null;
 
         void GetContentHandlerEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -150,7 +150,7 @@ namespace Org.Xml.Sax.Helpers
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#getDTDHandler()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetDTDHandler"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Org.Xml.Sax.DTDHandler> OnGetDTDHandler { get; set; } = null;
+        public global::System.Func<Org.Xml.Sax.DTDHandler> OnGetDTDHandler { get; set; } = null;
 
         void GetDTDHandlerEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -172,7 +172,7 @@ namespace Org.Xml.Sax.Helpers
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#getEntityResolver()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetEntityResolver"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Org.Xml.Sax.EntityResolver> OnGetEntityResolver { get; set; } = null;
+        public global::System.Func<Org.Xml.Sax.EntityResolver> OnGetEntityResolver { get; set; } = null;
 
         void GetEntityResolverEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -194,7 +194,7 @@ namespace Org.Xml.Sax.Helpers
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#getErrorHandler()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetErrorHandler"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Org.Xml.Sax.ErrorHandler> OnGetErrorHandler { get; set; } = null;
+        public global::System.Func<Org.Xml.Sax.ErrorHandler> OnGetErrorHandler { get; set; } = null;
 
         void GetErrorHandlerEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -216,7 +216,7 @@ namespace Org.Xml.Sax.Helpers
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#characters(char[],int,int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnCharacters"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<char[], int, int> OnCharacters { get; set; } = null;
+        public global::System.Action<char[], int, int> OnCharacters { get; set; } = null;
 
         void CharactersEventHandler(object sender, CLRListenerEventArgs<CLREventData<char[]>> data)
         {
@@ -240,7 +240,7 @@ namespace Org.Xml.Sax.Helpers
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#endDocument()"/>
         /// </summary>
         /// <remarks>If <see cref="OnEndDocument"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action OnEndDocument { get; set; } = null;
+        public global::System.Action OnEndDocument { get; set; } = null;
 
         void EndDocumentEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -261,7 +261,7 @@ namespace Org.Xml.Sax.Helpers
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#endElement(java.lang.String)"/>
         /// </summary>
         /// <remarks>If <see cref="OnEndElement"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Lang.String> OnEndElement { get; set; } = null;
+        public global::System.Action<Java.Lang.String> OnEndElement { get; set; } = null;
 
         void EndElementEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
@@ -283,7 +283,7 @@ namespace Org.Xml.Sax.Helpers
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#ignorableWhitespace(char[],int,int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnIgnorableWhitespace"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<char[], int, int> OnIgnorableWhitespace { get; set; } = null;
+        public global::System.Action<char[], int, int> OnIgnorableWhitespace { get; set; } = null;
 
         void IgnorableWhitespaceEventHandler(object sender, CLRListenerEventArgs<CLREventData<char[]>> data)
         {
@@ -307,7 +307,7 @@ namespace Org.Xml.Sax.Helpers
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#parse(java.lang.String)"/>
         /// </summary>
         /// <remarks>If <see cref="OnParse"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Lang.String> OnParse { get; set; } = null;
+        public global::System.Action<Java.Lang.String> OnParse { get; set; } = null;
 
         void ParseEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
@@ -330,7 +330,7 @@ namespace Org.Xml.Sax.Helpers
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#parse(org.xml.sax.InputSource)"/>
         /// </summary>
         /// <remarks>If <see cref="OnParse1"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Org.Xml.Sax.InputSource> OnParse1 { get; set; } = null;
+        public global::System.Action<Org.Xml.Sax.InputSource> OnParse1 { get; set; } = null;
 
         void Parse1EventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.InputSource>> data)
         {
@@ -353,7 +353,7 @@ namespace Org.Xml.Sax.Helpers
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#processingInstruction(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <remarks>If <see cref="OnProcessingInstruction"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Lang.String, Java.Lang.String> OnProcessingInstruction { get; set; } = null;
+        public global::System.Action<Java.Lang.String, Java.Lang.String> OnProcessingInstruction { get; set; } = null;
 
         void ProcessingInstructionEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
@@ -376,7 +376,7 @@ namespace Org.Xml.Sax.Helpers
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#setContentHandler(org.xml.sax.ContentHandler)"/>
         /// </summary>
         /// <remarks>If <see cref="OnSetContentHandler"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Org.Xml.Sax.ContentHandler> OnSetContentHandler { get; set; } = null;
+        public global::System.Action<Org.Xml.Sax.ContentHandler> OnSetContentHandler { get; set; } = null;
 
         void SetContentHandlerEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.ContentHandler>> data)
         {
@@ -397,7 +397,7 @@ namespace Org.Xml.Sax.Helpers
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#setDocumentLocator(org.xml.sax.Locator)"/>
         /// </summary>
         /// <remarks>If <see cref="OnSetDocumentLocator"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Org.Xml.Sax.Locator> OnSetDocumentLocator { get; set; } = null;
+        public global::System.Action<Org.Xml.Sax.Locator> OnSetDocumentLocator { get; set; } = null;
 
         void SetDocumentLocatorEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.Locator>> data)
         {
@@ -418,7 +418,7 @@ namespace Org.Xml.Sax.Helpers
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#setDTDHandler(org.xml.sax.DTDHandler)"/>
         /// </summary>
         /// <remarks>If <see cref="OnSetDTDHandler"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Org.Xml.Sax.DTDHandler> OnSetDTDHandler { get; set; } = null;
+        public global::System.Action<Org.Xml.Sax.DTDHandler> OnSetDTDHandler { get; set; } = null;
 
         void SetDTDHandlerEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.DTDHandler>> data)
         {
@@ -439,7 +439,7 @@ namespace Org.Xml.Sax.Helpers
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#setEntityResolver(org.xml.sax.EntityResolver)"/>
         /// </summary>
         /// <remarks>If <see cref="OnSetEntityResolver"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Org.Xml.Sax.EntityResolver> OnSetEntityResolver { get; set; } = null;
+        public global::System.Action<Org.Xml.Sax.EntityResolver> OnSetEntityResolver { get; set; } = null;
 
         void SetEntityResolverEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.EntityResolver>> data)
         {
@@ -460,7 +460,7 @@ namespace Org.Xml.Sax.Helpers
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
         /// </summary>
         /// <remarks>If <see cref="OnSetErrorHandler"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Org.Xml.Sax.ErrorHandler> OnSetErrorHandler { get; set; } = null;
+        public global::System.Action<Org.Xml.Sax.ErrorHandler> OnSetErrorHandler { get; set; } = null;
 
         void SetErrorHandlerEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.ErrorHandler>> data)
         {
@@ -481,7 +481,7 @@ namespace Org.Xml.Sax.Helpers
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#setFeature(java.lang.String,boolean)"/>
         /// </summary>
         /// <remarks>If <see cref="OnSetFeature"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Lang.String, bool> OnSetFeature { get; set; } = null;
+        public global::System.Action<Java.Lang.String, bool> OnSetFeature { get; set; } = null;
 
         void SetFeatureEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
@@ -505,7 +505,7 @@ namespace Org.Xml.Sax.Helpers
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#setProperty(java.lang.String,java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnSetProperty"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Lang.String, object> OnSetProperty { get; set; } = null;
+        public global::System.Action<Java.Lang.String, object> OnSetProperty { get; set; } = null;
 
         void SetPropertyEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
@@ -529,7 +529,7 @@ namespace Org.Xml.Sax.Helpers
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#startDocument()"/>
         /// </summary>
         /// <remarks>If <see cref="OnStartDocument"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action OnStartDocument { get; set; } = null;
+        public global::System.Action OnStartDocument { get; set; } = null;
 
         void StartDocumentEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {

@@ -81,14 +81,14 @@ namespace Javax.Lang.Model.Util
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
         /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror"><see cref="Javax.Lang.Model.Element.AnnotationMirror"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
-        Java.Util.List<ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror> GetAllAnnotationMirrors<ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror>(Javax.Lang.Model.Element.Element arg0) where ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror: Javax.Lang.Model.Element.AnnotationMirror;
+        Java.Util.List<ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror> GetAllAnnotationMirrors<ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror>(Javax.Lang.Model.Element.Element arg0) where ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror : Javax.Lang.Model.Element.AnnotationMirror;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getAllMembers(javax.lang.model.element.TypeElement)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
         /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
-        Java.Util.List<ReturnExtendsJavax_Lang_Model_Element_Element> GetAllMembers<ReturnExtendsJavax_Lang_Model_Element_Element>(Javax.Lang.Model.Element.TypeElement arg0) where ReturnExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element;
+        Java.Util.List<ReturnExtendsJavax_Lang_Model_Element_Element> GetAllMembers<ReturnExtendsJavax_Lang_Model_Element_Element>(Javax.Lang.Model.Element.TypeElement arg0) where ReturnExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getElementValuesWithDefaults(javax.lang.model.element.AnnotationMirror)"/>
         /// </summary>
@@ -96,7 +96,7 @@ namespace Javax.Lang.Model.Util
         /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_ExecutableElement"><see cref="Javax.Lang.Model.Element.ExecutableElement"/></typeparam>
         /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_AnnotationValue"><see cref="Javax.Lang.Model.Element.AnnotationValue"/></typeparam>
         /// <returns><see cref="Java.Util.Map"/></returns>
-        Java.Util.Map<ReturnExtendsJavax_Lang_Model_Element_ExecutableElement, ReturnExtendsJavax_Lang_Model_Element_AnnotationValue> GetElementValuesWithDefaults<ReturnExtendsJavax_Lang_Model_Element_ExecutableElement, ReturnExtendsJavax_Lang_Model_Element_AnnotationValue>(Javax.Lang.Model.Element.AnnotationMirror arg0) where ReturnExtendsJavax_Lang_Model_Element_ExecutableElement: Javax.Lang.Model.Element.ExecutableElement where ReturnExtendsJavax_Lang_Model_Element_AnnotationValue: Javax.Lang.Model.Element.AnnotationValue;
+        Java.Util.Map<ReturnExtendsJavax_Lang_Model_Element_ExecutableElement, ReturnExtendsJavax_Lang_Model_Element_AnnotationValue> GetElementValuesWithDefaults<ReturnExtendsJavax_Lang_Model_Element_ExecutableElement, ReturnExtendsJavax_Lang_Model_Element_AnnotationValue>(Javax.Lang.Model.Element.AnnotationMirror arg0) where ReturnExtendsJavax_Lang_Model_Element_ExecutableElement : Javax.Lang.Model.Element.ExecutableElement where ReturnExtendsJavax_Lang_Model_Element_AnnotationValue : Javax.Lang.Model.Element.AnnotationValue;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getBinaryName(javax.lang.model.element.TypeElement)"/>
         /// </summary>
@@ -145,14 +145,14 @@ namespace Javax.Lang.Model.Util
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_PackageElement"><see cref="Javax.Lang.Model.Element.PackageElement"/></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_PackageElement> GetAllPackageElements<ReturnExtendsJavax_Lang_Model_Element_PackageElement>(Java.Lang.CharSequence arg0) where ReturnExtendsJavax_Lang_Model_Element_PackageElement: Javax.Lang.Model.Element.PackageElement;
+        Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_PackageElement> GetAllPackageElements<ReturnExtendsJavax_Lang_Model_Element_PackageElement>(Java.Lang.CharSequence arg0) where ReturnExtendsJavax_Lang_Model_Element_PackageElement : Javax.Lang.Model.Element.PackageElement;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getAllTypeElements(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_TypeElement"><see cref="Javax.Lang.Model.Element.TypeElement"/></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_TypeElement> GetAllTypeElements<ReturnExtendsJavax_Lang_Model_Element_TypeElement>(Java.Lang.CharSequence arg0) where ReturnExtendsJavax_Lang_Model_Element_TypeElement: Javax.Lang.Model.Element.TypeElement;
+        Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_TypeElement> GetAllTypeElements<ReturnExtendsJavax_Lang_Model_Element_TypeElement>(Java.Lang.CharSequence arg0) where ReturnExtendsJavax_Lang_Model_Element_TypeElement : Javax.Lang.Model.Element.TypeElement;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getModuleElement(java.lang.CharSequence)"/>
         /// </summary>
@@ -300,7 +300,7 @@ namespace Javax.Lang.Model.Util
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
         /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror"><see cref="Javax.Lang.Model.Element.AnnotationMirror"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
-        public Java.Util.List<ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror> GetAllAnnotationMirrors<ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror>(Javax.Lang.Model.Element.Element arg0) where ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror: Javax.Lang.Model.Element.AnnotationMirror
+        public Java.Util.List<ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror> GetAllAnnotationMirrors<ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror>(Javax.Lang.Model.Element.Element arg0) where ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror : Javax.Lang.Model.Element.AnnotationMirror
         {
             return IExecuteWithSignature<Java.Util.List<ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror>>("getAllAnnotationMirrors", "(Ljavax/lang/model/element/Element;)Ljava/util/List;", arg0);
         }
@@ -310,7 +310,7 @@ namespace Javax.Lang.Model.Util
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
         /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
-        public Java.Util.List<ReturnExtendsJavax_Lang_Model_Element_Element> GetAllMembers<ReturnExtendsJavax_Lang_Model_Element_Element>(Javax.Lang.Model.Element.TypeElement arg0) where ReturnExtendsJavax_Lang_Model_Element_Element: Javax.Lang.Model.Element.Element
+        public Java.Util.List<ReturnExtendsJavax_Lang_Model_Element_Element> GetAllMembers<ReturnExtendsJavax_Lang_Model_Element_Element>(Javax.Lang.Model.Element.TypeElement arg0) where ReturnExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
             return IExecuteWithSignature<Java.Util.List<ReturnExtendsJavax_Lang_Model_Element_Element>>("getAllMembers", "(Ljavax/lang/model/element/TypeElement;)Ljava/util/List;", arg0);
         }
@@ -321,7 +321,7 @@ namespace Javax.Lang.Model.Util
         /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_ExecutableElement"><see cref="Javax.Lang.Model.Element.ExecutableElement"/></typeparam>
         /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_AnnotationValue"><see cref="Javax.Lang.Model.Element.AnnotationValue"/></typeparam>
         /// <returns><see cref="Java.Util.Map"/></returns>
-        public Java.Util.Map<ReturnExtendsJavax_Lang_Model_Element_ExecutableElement, ReturnExtendsJavax_Lang_Model_Element_AnnotationValue> GetElementValuesWithDefaults<ReturnExtendsJavax_Lang_Model_Element_ExecutableElement, ReturnExtendsJavax_Lang_Model_Element_AnnotationValue>(Javax.Lang.Model.Element.AnnotationMirror arg0) where ReturnExtendsJavax_Lang_Model_Element_ExecutableElement: Javax.Lang.Model.Element.ExecutableElement where ReturnExtendsJavax_Lang_Model_Element_AnnotationValue: Javax.Lang.Model.Element.AnnotationValue
+        public Java.Util.Map<ReturnExtendsJavax_Lang_Model_Element_ExecutableElement, ReturnExtendsJavax_Lang_Model_Element_AnnotationValue> GetElementValuesWithDefaults<ReturnExtendsJavax_Lang_Model_Element_ExecutableElement, ReturnExtendsJavax_Lang_Model_Element_AnnotationValue>(Javax.Lang.Model.Element.AnnotationMirror arg0) where ReturnExtendsJavax_Lang_Model_Element_ExecutableElement : Javax.Lang.Model.Element.ExecutableElement where ReturnExtendsJavax_Lang_Model_Element_AnnotationValue : Javax.Lang.Model.Element.AnnotationValue
         {
             return IExecuteWithSignature<Java.Util.Map<ReturnExtendsJavax_Lang_Model_Element_ExecutableElement, ReturnExtendsJavax_Lang_Model_Element_AnnotationValue>>("getElementValuesWithDefaults", "(Ljavax/lang/model/element/AnnotationMirror;)Ljava/util/Map;", arg0);
         }
@@ -394,7 +394,7 @@ namespace Javax.Lang.Model.Util
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_PackageElement"><see cref="Javax.Lang.Model.Element.PackageElement"/></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_PackageElement> GetAllPackageElements<ReturnExtendsJavax_Lang_Model_Element_PackageElement>(Java.Lang.CharSequence arg0) where ReturnExtendsJavax_Lang_Model_Element_PackageElement: Javax.Lang.Model.Element.PackageElement
+        public Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_PackageElement> GetAllPackageElements<ReturnExtendsJavax_Lang_Model_Element_PackageElement>(Java.Lang.CharSequence arg0) where ReturnExtendsJavax_Lang_Model_Element_PackageElement : Javax.Lang.Model.Element.PackageElement
         {
             return IExecuteWithSignature<Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_PackageElement>>("getAllPackageElements", "(Ljava/lang/CharSequence;)Ljava/util/Set;", arg0);
         }
@@ -404,7 +404,7 @@ namespace Javax.Lang.Model.Util
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_TypeElement"><see cref="Javax.Lang.Model.Element.TypeElement"/></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_TypeElement> GetAllTypeElements<ReturnExtendsJavax_Lang_Model_Element_TypeElement>(Java.Lang.CharSequence arg0) where ReturnExtendsJavax_Lang_Model_Element_TypeElement: Javax.Lang.Model.Element.TypeElement
+        public Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_TypeElement> GetAllTypeElements<ReturnExtendsJavax_Lang_Model_Element_TypeElement>(Java.Lang.CharSequence arg0) where ReturnExtendsJavax_Lang_Model_Element_TypeElement : Javax.Lang.Model.Element.TypeElement
         {
             return IExecuteWithSignature<Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_TypeElement>>("getAllTypeElements", "(Ljava/lang/CharSequence;)Ljava/util/Set;", arg0);
         }

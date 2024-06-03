@@ -73,7 +73,7 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("caretUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.CaretEvent>>>(CaretUpdateEventHandler));
+            AddEventHandler("caretUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.CaretEvent>>>(CaretUpdateEventHandler));
 
         }
 
@@ -81,7 +81,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CaretListener.html#caretUpdate(javax.swing.event.CaretEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnCaretUpdate"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.CaretEvent> OnCaretUpdate { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.CaretEvent> OnCaretUpdate { get; set; } = null;
 
         void CaretUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.CaretEvent>> data)
         {

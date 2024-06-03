@@ -80,8 +80,8 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("treeWillCollapse", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeExpansionEvent>>>(TreeWillCollapseEventHandler));
-            AddEventHandler("treeWillExpand", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeExpansionEvent>>>(TreeWillExpandEventHandler));
+            AddEventHandler("treeWillCollapse", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeExpansionEvent>>>(TreeWillCollapseEventHandler));
+            AddEventHandler("treeWillExpand", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeExpansionEvent>>>(TreeWillExpandEventHandler));
 
         }
 
@@ -89,7 +89,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeWillExpandListener.html#treeWillCollapse(javax.swing.event.TreeExpansionEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnTreeWillCollapse"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.TreeExpansionEvent> OnTreeWillCollapse { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.TreeExpansionEvent> OnTreeWillCollapse { get; set; } = null;
 
         void TreeWillCollapseEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeExpansionEvent>> data)
         {
@@ -111,7 +111,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeWillExpandListener.html#treeWillExpand(javax.swing.event.TreeExpansionEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnTreeWillExpand"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.TreeExpansionEvent> OnTreeWillExpand { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.TreeExpansionEvent> OnTreeWillExpand { get; set; } = null;
 
         void TreeWillExpandEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeExpansionEvent>> data)
         {

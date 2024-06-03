@@ -198,7 +198,7 @@ namespace Java.Util
         /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
         /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="Java.Util.Map"/></returns>
-        public static Java.Util.Map<K, V> UnmodifiableMapMethod<K, V, Arg0ExtendsK, Arg0ExtendsV>(Java.Util.Map<Arg0ExtendsK, Arg0ExtendsV> arg0) where Arg0ExtendsK: K where Arg0ExtendsV: V
+        public static Java.Util.Map<K, V> UnmodifiableMapMethod<K, V, Arg0ExtendsK, Arg0ExtendsV>(Java.Util.Map<Arg0ExtendsK, Arg0ExtendsV> arg0) where Arg0ExtendsK : K where Arg0ExtendsV : V
         {
             return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "unmodifiableMap", arg0);
         }
@@ -234,7 +234,7 @@ namespace Java.Util
         /// <typeparam name="V"></typeparam>
         /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
-        public static Java.Util.NavigableMap<K, V> UnmodifiableNavigableMapMethod<K, V, Arg0ExtendsV>(Java.Util.NavigableMap<K, Arg0ExtendsV> arg0) where Arg0ExtendsV: V
+        public static Java.Util.NavigableMap<K, V> UnmodifiableNavigableMapMethod<K, V, Arg0ExtendsV>(Java.Util.NavigableMap<K, Arg0ExtendsV> arg0) where Arg0ExtendsV : V
         {
             return SExecute<Java.Util.NavigableMap<K, V>>(LocalBridgeClazz, "unmodifiableNavigableMap", arg0);
         }
@@ -270,7 +270,7 @@ namespace Java.Util
         /// <typeparam name="V"></typeparam>
         /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
-        public static Java.Util.SortedMap<K, V> UnmodifiableSortedMapMethod<K, V, Arg0ExtendsV>(Java.Util.SortedMap<K, Arg0ExtendsV> arg0) where Arg0ExtendsV: V
+        public static Java.Util.SortedMap<K, V> UnmodifiableSortedMapMethod<K, V, Arg0ExtendsV>(Java.Util.SortedMap<K, Arg0ExtendsV> arg0) where Arg0ExtendsV : V
         {
             return SExecute<Java.Util.SortedMap<K, V>>(LocalBridgeClazz, "unmodifiableSortedMap", arg0);
         }
@@ -282,7 +282,7 @@ namespace Java.Util
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="T"></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public static bool AddAll<Arg0objectSuperT, T>(Java.Util.Collection<Arg0objectSuperT> arg0, params T[] arg1) where Arg0objectSuperT: T
+        public static bool AddAll<Arg0objectSuperT, T>(Java.Util.Collection<Arg0objectSuperT> arg0, params T[] arg1) where Arg0objectSuperT : T
         {
             if (arg1.Length == 0) return SExecute<bool>(LocalBridgeClazz, "addAll", arg0); else return SExecute<bool>(LocalBridgeClazz, "addAll", arg0, arg1);
         }
@@ -307,7 +307,7 @@ namespace Java.Util
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="T"></typeparam>
         /// <returns><see cref="int"/></returns>
-        public static int BinarySearch<Arg0ExtendsJava_Lang_Comparable_Arg0objectSuperT_, Arg0objectSuperT, T>(Java.Util.List<Arg0ExtendsJava_Lang_Comparable_Arg0objectSuperT_> arg0, T arg1) where Arg0ExtendsJava_Lang_Comparable_Arg0objectSuperT_: Java.Lang.Comparable<Arg0objectSuperT> where Arg0objectSuperT: T
+        public static int BinarySearch<Arg0ExtendsJava_Lang_Comparable_Arg0objectSuperT_, Arg0objectSuperT, T>(Java.Util.List<Arg0ExtendsJava_Lang_Comparable_Arg0objectSuperT_> arg0, T arg1) where Arg0ExtendsJava_Lang_Comparable_Arg0objectSuperT_ : Java.Lang.Comparable<Arg0objectSuperT> where Arg0objectSuperT : T
         {
             return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1);
         }
@@ -338,7 +338,7 @@ namespace Java.Util
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Collection"/></returns>
-        public static Java.Util.Collection<T> UnmodifiableCollectionMethod<T, Arg0ExtendsT>(Java.Util.Collection<Arg0ExtendsT> arg0) where Arg0ExtendsT: T
+        public static Java.Util.Collection<T> UnmodifiableCollectionMethod<T, Arg0ExtendsT>(Java.Util.Collection<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
         {
             return SExecuteWithSignature<Java.Util.Collection<T>>(LocalBridgeClazz, "unmodifiableCollection", "(Ljava/util/Collection;)Ljava/util/Collection;", arg0);
         }
@@ -408,7 +408,7 @@ namespace Java.Util
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<T> UnmodifiableListMethod<T, Arg0ExtendsT>(Java.Util.List<Arg0ExtendsT> arg0) where Arg0ExtendsT: T
+        public static Java.Util.List<T> UnmodifiableListMethod<T, Arg0ExtendsT>(Java.Util.List<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
         {
             return SExecuteWithSignature<Java.Util.List<T>>(LocalBridgeClazz, "unmodifiableList", "(Ljava/util/List;)Ljava/util/List;", arg0);
         }
@@ -478,7 +478,7 @@ namespace Java.Util
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        public static Java.Util.Set<T> UnmodifiableSetMethod<T, Arg0ExtendsT>(Java.Util.Set<Arg0ExtendsT> arg0) where Arg0ExtendsT: T
+        public static Java.Util.Set<T> UnmodifiableSetMethod<T, Arg0ExtendsT>(Java.Util.Set<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
         {
             return SExecuteWithSignature<Java.Util.Set<T>>(LocalBridgeClazz, "unmodifiableSet", "(Ljava/util/Set;)Ljava/util/Set;", arg0);
         }
@@ -509,7 +509,7 @@ namespace Java.Util
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public static T Max<T, Arg0ExtendsT>(Java.Util.Collection<Arg0ExtendsT> arg0) where Arg0ExtendsT: T
+        public static T Max<T, Arg0ExtendsT>(Java.Util.Collection<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
         {
             return SExecute<T>(LocalBridgeClazz, "max", arg0);
         }
@@ -520,7 +520,7 @@ namespace Java.Util
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public static T Min<T, Arg0ExtendsT>(Java.Util.Collection<Arg0ExtendsT> arg0) where Arg0ExtendsT: T
+        public static T Min<T, Arg0ExtendsT>(Java.Util.Collection<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
         {
             return SExecute<T>(LocalBridgeClazz, "min", arg0);
         }
@@ -532,7 +532,7 @@ namespace Java.Util
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg1ExtendsT"><typeparamref name="T"/></typeparam>
-        public static void Copy<Arg0objectSuperT, T, Arg1ExtendsT>(Java.Util.List<Arg0objectSuperT> arg0, Java.Util.List<Arg1ExtendsT> arg1) where Arg0objectSuperT: T where Arg1ExtendsT: T
+        public static void Copy<Arg0objectSuperT, T, Arg1ExtendsT>(Java.Util.List<Arg0objectSuperT> arg0, Java.Util.List<Arg1ExtendsT> arg1) where Arg0objectSuperT : T where Arg1ExtendsT : T
         {
             SExecute(LocalBridgeClazz, "copy", arg0, arg1);
         }
@@ -543,7 +543,7 @@ namespace Java.Util
         /// <param name="arg1"><typeparamref name="T"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="T"></typeparam>
-        public static void Fill<Arg0objectSuperT, T>(Java.Util.List<Arg0objectSuperT> arg0, T arg1) where Arg0objectSuperT: T
+        public static void Fill<Arg0objectSuperT, T>(Java.Util.List<Arg0objectSuperT> arg0, T arg1) where Arg0objectSuperT : T
         {
             SExecute(LocalBridgeClazz, "fill", arg0, arg1);
         }

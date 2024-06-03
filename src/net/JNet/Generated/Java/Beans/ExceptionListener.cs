@@ -73,7 +73,7 @@ namespace Java.Beans
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("exceptionThrown", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(ExceptionThrownEventHandler));
+            AddEventHandler("exceptionThrown", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(ExceptionThrownEventHandler));
 
         }
 
@@ -81,7 +81,7 @@ namespace Java.Beans
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/ExceptionListener.html#exceptionThrown(java.lang.Exception)"/>
         /// </summary>
         /// <remarks>If <see cref="OnExceptionThrown"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnExceptionThrown { get; set; } = null;
+        public global::System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnExceptionThrown { get; set; } = null;
 
         void ExceptionThrownEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {

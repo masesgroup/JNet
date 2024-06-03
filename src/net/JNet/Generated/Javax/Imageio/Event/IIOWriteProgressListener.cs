@@ -108,13 +108,13 @@ namespace Javax.Imageio.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("imageComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ImageCompleteEventHandler));
-            AddEventHandler("imageProgress", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ImageProgressEventHandler));
-            AddEventHandler("imageStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ImageStartedEventHandler));
-            AddEventHandler("thumbnailComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ThumbnailCompleteEventHandler));
-            AddEventHandler("thumbnailProgress", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ThumbnailProgressEventHandler));
-            AddEventHandler("thumbnailStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ThumbnailStartedEventHandler));
-            AddEventHandler("writeAborted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(WriteAbortedEventHandler));
+            AddEventHandler("imageComplete", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ImageCompleteEventHandler));
+            AddEventHandler("imageProgress", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ImageProgressEventHandler));
+            AddEventHandler("imageStarted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ImageStartedEventHandler));
+            AddEventHandler("thumbnailComplete", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ThumbnailCompleteEventHandler));
+            AddEventHandler("thumbnailProgress", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ThumbnailProgressEventHandler));
+            AddEventHandler("thumbnailStarted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ThumbnailStartedEventHandler));
+            AddEventHandler("writeAborted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(WriteAbortedEventHandler));
 
         }
 
@@ -122,7 +122,7 @@ namespace Javax.Imageio.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#imageComplete(javax.imageio.ImageWriter)"/>
         /// </summary>
         /// <remarks>If <see cref="OnImageComplete"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Imageio.ImageWriter> OnImageComplete { get; set; } = null;
+        public global::System.Action<Javax.Imageio.ImageWriter> OnImageComplete { get; set; } = null;
 
         void ImageCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
         {
@@ -143,7 +143,7 @@ namespace Javax.Imageio.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#imageProgress(javax.imageio.ImageWriter,float)"/>
         /// </summary>
         /// <remarks>If <see cref="OnImageProgress"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Imageio.ImageWriter, float> OnImageProgress { get; set; } = null;
+        public global::System.Action<Javax.Imageio.ImageWriter, float> OnImageProgress { get; set; } = null;
 
         void ImageProgressEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
         {
@@ -165,7 +165,7 @@ namespace Javax.Imageio.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#imageStarted(javax.imageio.ImageWriter,int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnImageStarted"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Imageio.ImageWriter, int> OnImageStarted { get; set; } = null;
+        public global::System.Action<Javax.Imageio.ImageWriter, int> OnImageStarted { get; set; } = null;
 
         void ImageStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
         {
@@ -187,7 +187,7 @@ namespace Javax.Imageio.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#thumbnailComplete(javax.imageio.ImageWriter)"/>
         /// </summary>
         /// <remarks>If <see cref="OnThumbnailComplete"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Imageio.ImageWriter> OnThumbnailComplete { get; set; } = null;
+        public global::System.Action<Javax.Imageio.ImageWriter> OnThumbnailComplete { get; set; } = null;
 
         void ThumbnailCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
         {
@@ -208,7 +208,7 @@ namespace Javax.Imageio.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#thumbnailProgress(javax.imageio.ImageWriter,float)"/>
         /// </summary>
         /// <remarks>If <see cref="OnThumbnailProgress"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Imageio.ImageWriter, float> OnThumbnailProgress { get; set; } = null;
+        public global::System.Action<Javax.Imageio.ImageWriter, float> OnThumbnailProgress { get; set; } = null;
 
         void ThumbnailProgressEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
         {
@@ -230,7 +230,7 @@ namespace Javax.Imageio.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#thumbnailStarted(javax.imageio.ImageWriter,int,int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnThumbnailStarted"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Imageio.ImageWriter, int, int> OnThumbnailStarted { get; set; } = null;
+        public global::System.Action<Javax.Imageio.ImageWriter, int, int> OnThumbnailStarted { get; set; } = null;
 
         void ThumbnailStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
         {
@@ -253,7 +253,7 @@ namespace Javax.Imageio.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#writeAborted(javax.imageio.ImageWriter)"/>
         /// </summary>
         /// <remarks>If <see cref="OnWriteAborted"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Imageio.ImageWriter> OnWriteAborted { get; set; } = null;
+        public global::System.Action<Javax.Imageio.ImageWriter> OnWriteAborted { get; set; } = null;
 
         void WriteAbortedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
         {

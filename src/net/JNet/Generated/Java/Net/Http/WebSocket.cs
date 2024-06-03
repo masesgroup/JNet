@@ -310,13 +310,13 @@ namespace Java.Net.Http
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onBinary", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnBinaryEventHandler));
-                AddEventHandler("onClose", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnCloseEventHandler));
-                AddEventHandler("onPing", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnPingEventHandler));
-                AddEventHandler("onPong", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnPongEventHandler));
-                AddEventHandler("onText", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnTextEventHandler));
-                AddEventHandler("onError", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnErrorEventHandler));
-                AddEventHandler("onOpen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnOpenEventHandler));
+                AddEventHandler("onBinary", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnBinaryEventHandler));
+                AddEventHandler("onClose", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnCloseEventHandler));
+                AddEventHandler("onPing", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnPingEventHandler));
+                AddEventHandler("onPong", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnPongEventHandler));
+                AddEventHandler("onText", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnTextEventHandler));
+                AddEventHandler("onError", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnErrorEventHandler));
+                AddEventHandler("onOpen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnOpenEventHandler));
 
             }
             /// <summary>
@@ -336,7 +336,7 @@ namespace Java.Net.Http
             /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onBinary(java.net.http.WebSocket,java.nio.ByteBuffer,boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnBinary"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Java.Net.Http.WebSocket, Java.Nio.ByteBuffer, bool, Java.Util.Concurrent.CompletionStage<object>> OnOnBinary { get; set; } = null;
+            public global::System.Func<Java.Net.Http.WebSocket, Java.Nio.ByteBuffer, bool, Java.Util.Concurrent.CompletionStage<object>> OnOnBinary { get; set; } = null;
 
             void OnBinaryEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>> data)
             {
@@ -374,7 +374,7 @@ namespace Java.Net.Http
             /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onClose(java.net.http.WebSocket,int,java.lang.String)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnClose"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Java.Net.Http.WebSocket, int, Java.Lang.String, Java.Util.Concurrent.CompletionStage<object>> OnOnClose { get; set; } = null;
+            public global::System.Func<Java.Net.Http.WebSocket, int, Java.Lang.String, Java.Util.Concurrent.CompletionStage<object>> OnOnClose { get; set; } = null;
 
             void OnCloseEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>> data)
             {
@@ -411,7 +411,7 @@ namespace Java.Net.Http
             /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onPing(java.net.http.WebSocket,java.nio.ByteBuffer)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPing"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Java.Net.Http.WebSocket, Java.Nio.ByteBuffer, Java.Util.Concurrent.CompletionStage<object>> OnOnPing { get; set; } = null;
+            public global::System.Func<Java.Net.Http.WebSocket, Java.Nio.ByteBuffer, Java.Util.Concurrent.CompletionStage<object>> OnOnPing { get; set; } = null;
 
             void OnPingEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>> data)
             {
@@ -447,7 +447,7 @@ namespace Java.Net.Http
             /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onPong(java.net.http.WebSocket,java.nio.ByteBuffer)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPong"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Java.Net.Http.WebSocket, Java.Nio.ByteBuffer, Java.Util.Concurrent.CompletionStage<object>> OnOnPong { get; set; } = null;
+            public global::System.Func<Java.Net.Http.WebSocket, Java.Nio.ByteBuffer, Java.Util.Concurrent.CompletionStage<object>> OnOnPong { get; set; } = null;
 
             void OnPongEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>> data)
             {
@@ -484,7 +484,7 @@ namespace Java.Net.Http
             /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onText(java.net.http.WebSocket,java.lang.CharSequence,boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnText"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Java.Net.Http.WebSocket, Java.Lang.CharSequence, bool, Java.Util.Concurrent.CompletionStage<object>> OnOnText { get; set; } = null;
+            public global::System.Func<Java.Net.Http.WebSocket, Java.Lang.CharSequence, bool, Java.Util.Concurrent.CompletionStage<object>> OnOnText { get; set; } = null;
 
             void OnTextEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>> data)
             {
@@ -520,7 +520,7 @@ namespace Java.Net.Http
             /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onError(java.net.http.WebSocket,java.lang.Throwable)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnError"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Java.Net.Http.WebSocket, MASES.JCOBridge.C2JBridge.JVMBridgeException> OnOnError { get; set; } = null;
+            public global::System.Action<Java.Net.Http.WebSocket, MASES.JCOBridge.C2JBridge.JVMBridgeException> OnOnError { get; set; } = null;
 
             void OnErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>> data)
             {
@@ -552,7 +552,7 @@ namespace Java.Net.Http
             /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onOpen(java.net.http.WebSocket)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnOpen"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Java.Net.Http.WebSocket> OnOnOpen { get; set; } = null;
+            public global::System.Action<Java.Net.Http.WebSocket> OnOnOpen { get; set; } = null;
 
             void OnOpenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>> data)
             {

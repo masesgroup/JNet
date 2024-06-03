@@ -88,10 +88,10 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("treeNodesChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>>>(TreeNodesChangedEventHandler));
-            AddEventHandler("treeNodesInserted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>>>(TreeNodesInsertedEventHandler));
-            AddEventHandler("treeNodesRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>>>(TreeNodesRemovedEventHandler));
-            AddEventHandler("treeStructureChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>>>(TreeStructureChangedEventHandler));
+            AddEventHandler("treeNodesChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>>>(TreeNodesChangedEventHandler));
+            AddEventHandler("treeNodesInserted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>>>(TreeNodesInsertedEventHandler));
+            AddEventHandler("treeNodesRemoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>>>(TreeNodesRemovedEventHandler));
+            AddEventHandler("treeStructureChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>>>(TreeStructureChangedEventHandler));
 
         }
 
@@ -99,7 +99,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeNodesChanged(javax.swing.event.TreeModelEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnTreeNodesChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.TreeModelEvent> OnTreeNodesChanged { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.TreeModelEvent> OnTreeNodesChanged { get; set; } = null;
 
         void TreeNodesChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>> data)
         {
@@ -120,7 +120,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeNodesInserted(javax.swing.event.TreeModelEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnTreeNodesInserted"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.TreeModelEvent> OnTreeNodesInserted { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.TreeModelEvent> OnTreeNodesInserted { get; set; } = null;
 
         void TreeNodesInsertedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>> data)
         {
@@ -141,7 +141,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeNodesRemoved(javax.swing.event.TreeModelEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnTreeNodesRemoved"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.TreeModelEvent> OnTreeNodesRemoved { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.TreeModelEvent> OnTreeNodesRemoved { get; set; } = null;
 
         void TreeNodesRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>> data)
         {
@@ -162,7 +162,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeStructureChanged(javax.swing.event.TreeModelEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnTreeStructureChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.TreeModelEvent> OnTreeStructureChanged { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.TreeModelEvent> OnTreeStructureChanged { get; set; } = null;
 
         void TreeStructureChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>> data)
         {

@@ -100,7 +100,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="T"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T GetAnnotation<T>(Java.Lang.Class arg0) where T: Java.Lang.Annotation.IAnnotation, new()
+        public T GetAnnotation<T>(Java.Lang.Class arg0) where T : Java.Lang.Annotation.IAnnotation, new()
         {
             return IExecute<T>("getAnnotation", arg0);
         }

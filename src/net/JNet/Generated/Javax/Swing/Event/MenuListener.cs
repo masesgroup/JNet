@@ -83,9 +83,9 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("menuCanceled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>>>(MenuCanceledEventHandler));
-            AddEventHandler("menuDeselected", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>>>(MenuDeselectedEventHandler));
-            AddEventHandler("menuSelected", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>>>(MenuSelectedEventHandler));
+            AddEventHandler("menuCanceled", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>>>(MenuCanceledEventHandler));
+            AddEventHandler("menuDeselected", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>>>(MenuDeselectedEventHandler));
+            AddEventHandler("menuSelected", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>>>(MenuSelectedEventHandler));
 
         }
 
@@ -93,7 +93,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuListener.html#menuCanceled(javax.swing.event.MenuEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnMenuCanceled"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.MenuEvent> OnMenuCanceled { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.MenuEvent> OnMenuCanceled { get; set; } = null;
 
         void MenuCanceledEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>> data)
         {
@@ -114,7 +114,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuListener.html#menuDeselected(javax.swing.event.MenuEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnMenuDeselected"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.MenuEvent> OnMenuDeselected { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.MenuEvent> OnMenuDeselected { get; set; } = null;
 
         void MenuDeselectedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>> data)
         {
@@ -135,7 +135,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuListener.html#menuSelected(javax.swing.event.MenuEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnMenuSelected"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.MenuEvent> OnMenuSelected { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.MenuEvent> OnMenuSelected { get; set; } = null;
 
         void MenuSelectedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>> data)
         {

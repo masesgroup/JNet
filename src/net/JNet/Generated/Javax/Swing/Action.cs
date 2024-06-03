@@ -111,14 +111,14 @@ namespace Javax.Swing
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("isEnabled", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(IsEnabledEventHandler));
-            AddEventHandler("getValue", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(GetValueEventHandler));
-            AddEventHandler("actionPerformed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ActionEvent>>>(ActionPerformedEventHandler));
-            AddEventHandler("addPropertyChangeListener", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeListener>>>(AddPropertyChangeListenerEventHandler));
-            AddEventHandler("putValue", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(PutValueEventHandler));
-            AddEventHandler("removePropertyChangeListener", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeListener>>>(RemovePropertyChangeListenerEventHandler));
-            AddEventHandler("setEnabled", new System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(SetEnabledEventHandler));
-            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(AcceptEventHandler));
+            AddEventHandler("isEnabled", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(IsEnabledEventHandler));
+            AddEventHandler("getValue", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(GetValueEventHandler));
+            AddEventHandler("actionPerformed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ActionEvent>>>(ActionPerformedEventHandler));
+            AddEventHandler("addPropertyChangeListener", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeListener>>>(AddPropertyChangeListenerEventHandler));
+            AddEventHandler("putValue", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(PutValueEventHandler));
+            AddEventHandler("removePropertyChangeListener", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeListener>>>(RemovePropertyChangeListenerEventHandler));
+            AddEventHandler("setEnabled", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(SetEnabledEventHandler));
+            AddEventHandler("accept", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(AcceptEventHandler));
 
         }
 
@@ -126,7 +126,7 @@ namespace Javax.Swing
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#isEnabled()"/>
         /// </summary>
         /// <remarks>If <see cref="OnIsEnabled"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<bool> OnIsEnabled { get; set; } = null;
+        public global::System.Func<bool> OnIsEnabled { get; set; } = null;
 
         void IsEnabledEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -148,7 +148,7 @@ namespace Javax.Swing
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#getValue(java.lang.String)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetValue"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Lang.String, object> OnGetValue { get; set; } = null;
+        public global::System.Func<Java.Lang.String, object> OnGetValue { get; set; } = null;
 
         void GetValueEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
@@ -171,7 +171,7 @@ namespace Javax.Swing
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html#actionPerformed(java.awt.event.ActionEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnActionPerformed"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.EventNs.ActionEvent> OnActionPerformed { get; set; } = null;
+        public global::System.Action<Java.Awt.EventNs.ActionEvent> OnActionPerformed { get; set; } = null;
 
         void ActionPerformedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ActionEvent>> data)
         {
@@ -192,7 +192,7 @@ namespace Javax.Swing
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAddPropertyChangeListener"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Beans.PropertyChangeListener> OnAddPropertyChangeListener { get; set; } = null;
+        public global::System.Action<Java.Beans.PropertyChangeListener> OnAddPropertyChangeListener { get; set; } = null;
 
         void AddPropertyChangeListenerEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeListener>> data)
         {
@@ -213,7 +213,7 @@ namespace Javax.Swing
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#putValue(java.lang.String,java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnPutValue"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Lang.String, object> OnPutValue { get; set; } = null;
+        public global::System.Action<Java.Lang.String, object> OnPutValue { get; set; } = null;
 
         void PutValueEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
@@ -235,7 +235,7 @@ namespace Javax.Swing
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>
         /// </summary>
         /// <remarks>If <see cref="OnRemovePropertyChangeListener"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Beans.PropertyChangeListener> OnRemovePropertyChangeListener { get; set; } = null;
+        public global::System.Action<Java.Beans.PropertyChangeListener> OnRemovePropertyChangeListener { get; set; } = null;
 
         void RemovePropertyChangeListenerEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeListener>> data)
         {
@@ -256,7 +256,7 @@ namespace Javax.Swing
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#setEnabled(boolean)"/>
         /// </summary>
         /// <remarks>If <see cref="OnSetEnabled"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<bool> OnSetEnabled { get; set; } = null;
+        public global::System.Action<bool> OnSetEnabled { get; set; } = null;
 
         void SetEnabledEventHandler(object sender, CLRListenerEventArgs<CLREventData<bool>> data)
         {
@@ -287,7 +287,7 @@ namespace Javax.Swing
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#accept(java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAccept"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<object, bool> OnAccept { get; set; } = null;
+        public global::System.Func<object, bool> OnAccept { get; set; } = null;
 
         void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
         {

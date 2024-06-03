@@ -73,7 +73,7 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("stateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>>>(StateChangedEventHandler));
+            AddEventHandler("stateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>>>(StateChangedEventHandler));
 
         }
 
@@ -81,7 +81,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ChangeListener.html#stateChanged(javax.swing.event.ChangeEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.ChangeEvent> OnStateChanged { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.ChangeEvent> OnStateChanged { get; set; } = null;
 
         void StateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>> data)
         {

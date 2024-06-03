@@ -78,8 +78,8 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("ancestorMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>>>(AncestorMovedEventHandler));
-            AddEventHandler("ancestorResized", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>>>(AncestorResizedEventHandler));
+            AddEventHandler("ancestorMoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>>>(AncestorMovedEventHandler));
+            AddEventHandler("ancestorResized", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>>>(AncestorResizedEventHandler));
 
         }
 
@@ -87,7 +87,7 @@ namespace Java.Awt.EventNs
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyBoundsListener.html#ancestorMoved(java.awt.event.HierarchyEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAncestorMoved"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.EventNs.HierarchyEvent> OnAncestorMoved { get; set; } = null;
+        public global::System.Action<Java.Awt.EventNs.HierarchyEvent> OnAncestorMoved { get; set; } = null;
 
         void AncestorMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>> data)
         {
@@ -108,7 +108,7 @@ namespace Java.Awt.EventNs
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyBoundsListener.html#ancestorResized(java.awt.event.HierarchyEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAncestorResized"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.EventNs.HierarchyEvent> OnAncestorResized { get; set; } = null;
+        public global::System.Action<Java.Awt.EventNs.HierarchyEvent> OnAncestorResized { get; set; } = null;
 
         void AncestorResizedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>> data)
         {

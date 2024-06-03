@@ -50,10 +50,10 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("test", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(TestEventHandler));
-            AddEventHandler("and", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate>>>(AndEventHandler));
-            AddEventHandler("negate", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler));
-            AddEventHandler("or", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate>>>(OrEventHandler));
+            AddEventHandler("test", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(TestEventHandler));
+            AddEventHandler("and", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate>>>(AndEventHandler));
+            AddEventHandler("negate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler));
+            AddEventHandler("or", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate>>>(OrEventHandler));
 
         }
 
@@ -61,7 +61,7 @@ namespace Java.Util.Function
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#test(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnTest"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<object, object, bool> OnTest { get; set; } = null;
+        public global::System.Func<object, object, bool> OnTest { get; set; } = null;
 
         void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
         {
@@ -95,7 +95,7 @@ namespace Java.Util.Function
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAnd"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.BiPredicate, Java.Util.Function.BiPredicate> OnAnd { get; set; } = null;
+        public global::System.Func<Java.Util.Function.BiPredicate, Java.Util.Function.BiPredicate> OnAnd { get; set; } = null;
 
         void AndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate>> data)
         {
@@ -128,7 +128,7 @@ namespace Java.Util.Function
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#negate()"/>
         /// </summary>
         /// <remarks>If <see cref="OnNegate"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.BiPredicate> OnNegate { get; set; } = null;
+        public global::System.Func<Java.Util.Function.BiPredicate> OnNegate { get; set; } = null;
 
         void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -161,7 +161,7 @@ namespace Java.Util.Function
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOr"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.BiPredicate, Java.Util.Function.BiPredicate> OnOr { get; set; } = null;
+        public global::System.Func<Java.Util.Function.BiPredicate, Java.Util.Function.BiPredicate> OnOr { get; set; } = null;
 
         void OrEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate>> data)
         {
@@ -279,7 +279,7 @@ namespace Java.Util.Function
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="Arg0objectSuperU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
-        Java.Util.Function.BiPredicate<T, U> And<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T where Arg0objectSuperU: U;
+        Java.Util.Function.BiPredicate<T, U> And<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#negate()"/>
         /// </summary>
@@ -292,7 +292,7 @@ namespace Java.Util.Function
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="Arg0objectSuperU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
-        Java.Util.Function.BiPredicate<T, U> Or<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T where Arg0objectSuperU: U;
+        Java.Util.Function.BiPredicate<T, U> Or<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U;
 
         #endregion
 
@@ -329,10 +329,10 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("test", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(TestEventHandler));
-            AddEventHandler("and", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>>>>(And<Arg0objectSuperT, Arg0objectSuperU>EventHandler));
-            AddEventHandler("negate", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler));
-            AddEventHandler("or", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>>>>(Or<Arg0objectSuperT, Arg0objectSuperU>EventHandler));
+            AddEventHandler("test", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(TestEventHandler));
+            AddEventHandler("and", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>>>>(And<Arg0objectSuperT, Arg0objectSuperU>EventHandler));
+            AddEventHandler("negate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler));
+            AddEventHandler("or", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>>>>(Or<Arg0objectSuperT, Arg0objectSuperU>EventHandler));
 
         }
 
@@ -340,7 +340,7 @@ namespace Java.Util.Function
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#test(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnTest"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<T, U, bool> OnTest { get; set; } = null;
+        public global::System.Func<T, U, bool> OnTest { get; set; } = null;
 
         void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
         {
@@ -367,7 +367,7 @@ namespace Java.Util.Function
         /// <typeparam name="Arg0objectSuperU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public Java.Util.Function.BiPredicate<T, U> And<Arg0objectSuperT, Arg0objectSuperU>Default(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T where Arg0objectSuperU: U
+        public Java.Util.Function.BiPredicate<T, U> And<Arg0objectSuperT, Arg0objectSuperU>Default(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
         {
             return IExecuteWithSignature<Java.Util.Function.BiPredicate<T, U>>("andDefault", "(Ljava/util/function/BiPredicate;)Ljava/util/function/BiPredicate;", arg0);
         }
@@ -376,7 +376,7 @@ namespace Java.Util.Function
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAnd<Arg0objectSuperT, Arg0objectSuperU>"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>, Java.Util.Function.BiPredicate<T, U>> OnAnd<Arg0objectSuperT, Arg0objectSuperU> { get; set; } = null;
+        public global::System.Func<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>, Java.Util.Function.BiPredicate<T, U>> OnAnd<Arg0objectSuperT, Arg0objectSuperU> { get; set; } = null;
 
         void And<Arg0objectSuperT, Arg0objectSuperU>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>>> data)
         {
@@ -393,7 +393,7 @@ namespace Java.Util.Function
         /// <typeparam name="Arg0objectSuperU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="And<Arg0objectSuperT, Arg0objectSuperU>Default"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.BiPredicate<T, U> And<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T where Arg0objectSuperU: U
+        public virtual Java.Util.Function.BiPredicate<T, U> And<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
         {
             return And<Arg0objectSuperT, Arg0objectSuperU>Default(arg0);
         }
@@ -411,7 +411,7 @@ namespace Java.Util.Function
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#negate()"/>
         /// </summary>
         /// <remarks>If <see cref="OnNegate"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.BiPredicate<T, U>> OnNegate { get; set; } = null;
+        public global::System.Func<Java.Util.Function.BiPredicate<T, U>> OnNegate { get; set; } = null;
 
         void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -437,7 +437,7 @@ namespace Java.Util.Function
         /// <typeparam name="Arg0objectSuperU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public Java.Util.Function.BiPredicate<T, U> Or<Arg0objectSuperT, Arg0objectSuperU>Default(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T where Arg0objectSuperU: U
+        public Java.Util.Function.BiPredicate<T, U> Or<Arg0objectSuperT, Arg0objectSuperU>Default(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
         {
             return IExecuteWithSignature<Java.Util.Function.BiPredicate<T, U>>("orDefault", "(Ljava/util/function/BiPredicate;)Ljava/util/function/BiPredicate;", arg0);
         }
@@ -446,7 +446,7 @@ namespace Java.Util.Function
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOr<Arg0objectSuperT, Arg0objectSuperU>"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>, Java.Util.Function.BiPredicate<T, U>> OnOr<Arg0objectSuperT, Arg0objectSuperU> { get; set; } = null;
+        public global::System.Func<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>, Java.Util.Function.BiPredicate<T, U>> OnOr<Arg0objectSuperT, Arg0objectSuperU> { get; set; } = null;
 
         void Or<Arg0objectSuperT, Arg0objectSuperU>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>>> data)
         {
@@ -463,7 +463,7 @@ namespace Java.Util.Function
         /// <typeparam name="Arg0objectSuperU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="Or<Arg0objectSuperT, Arg0objectSuperU>Default"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.BiPredicate<T, U> Or<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T where Arg0objectSuperU: U
+        public virtual Java.Util.Function.BiPredicate<T, U> Or<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
         {
             return Or<Arg0objectSuperT, Arg0objectSuperU>Default(arg0);
         }
@@ -515,7 +515,7 @@ namespace Java.Util.Function
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="Arg0objectSuperU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
-        public override Java.Util.Function.BiPredicate<T, U> And<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T where Arg0objectSuperU: U
+        public override Java.Util.Function.BiPredicate<T, U> And<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
         {
             return IExecuteWithSignature<Java.Util.Function.BiPredicateDirect<T, U>, Java.Util.Function.BiPredicate<T, U>>("and", "(Ljava/util/function/BiPredicate;)Ljava/util/function/BiPredicate;", arg0);
         }
@@ -534,7 +534,7 @@ namespace Java.Util.Function
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="Arg0objectSuperU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
-        public override Java.Util.Function.BiPredicate<T, U> Or<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T where Arg0objectSuperU: U
+        public override Java.Util.Function.BiPredicate<T, U> Or<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
         {
             return IExecuteWithSignature<Java.Util.Function.BiPredicateDirect<T, U>, Java.Util.Function.BiPredicate<T, U>>("or", "(Ljava/util/function/BiPredicate;)Ljava/util/function/BiPredicate;", arg0);
         }

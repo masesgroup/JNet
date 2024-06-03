@@ -48,7 +48,7 @@ namespace Java.Util
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public static Java.Util.Iterator<T> Iterator<T, Arg0ExtendsT>(Java.Util.Spliterator<Arg0ExtendsT> arg0) where Arg0ExtendsT: T
+        public static Java.Util.Iterator<T> Iterator<T, Arg0ExtendsT>(Java.Util.Spliterator<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
         {
             return SExecuteWithSignature<Java.Util.Iterator<T>>(LocalBridgeClazz, "iterator", "(Ljava/util/Spliterator;)Ljava/util/Iterator;", arg0);
         }
@@ -93,7 +93,7 @@ namespace Java.Util
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        public static Java.Util.Spliterator<T> Spliterator<T, Arg0ExtendsT>(Java.Util.Collection<Arg0ExtendsT> arg0, int arg1) where Arg0ExtendsT: T
+        public static Java.Util.Spliterator<T> Spliterator<T, Arg0ExtendsT>(Java.Util.Collection<Arg0ExtendsT> arg0, int arg1) where Arg0ExtendsT : T
         {
             return SExecute<Java.Util.Spliterator<T>>(LocalBridgeClazz, "spliterator", arg0, arg1);
         }
@@ -106,7 +106,7 @@ namespace Java.Util
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        public static Java.Util.Spliterator<T> Spliterator<T, Arg0ExtendsT>(Java.Util.Iterator<Arg0ExtendsT> arg0, long arg1, int arg2) where Arg0ExtendsT: T
+        public static Java.Util.Spliterator<T> Spliterator<T, Arg0ExtendsT>(Java.Util.Iterator<Arg0ExtendsT> arg0, long arg1, int arg2) where Arg0ExtendsT : T
         {
             return SExecute<Java.Util.Spliterator<T>>(LocalBridgeClazz, "spliterator", arg0, arg1, arg2);
         }
@@ -118,7 +118,7 @@ namespace Java.Util
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        public static Java.Util.Spliterator<T> SpliteratorUnknownSize<T, Arg0ExtendsT>(Java.Util.Iterator<Arg0ExtendsT> arg0, int arg1) where Arg0ExtendsT: T
+        public static Java.Util.Spliterator<T> SpliteratorUnknownSize<T, Arg0ExtendsT>(Java.Util.Iterator<Arg0ExtendsT> arg0, int arg1) where Arg0ExtendsT : T
         {
             return SExecute<Java.Util.Spliterator<T>>(LocalBridgeClazz, "spliteratorUnknownSize", arg0, arg1);
         }

@@ -73,7 +73,7 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("sorterChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.RowSorterEvent>>>(SorterChangedEventHandler));
+            AddEventHandler("sorterChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.RowSorterEvent>>>(SorterChangedEventHandler));
 
         }
 
@@ -81,7 +81,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterListener.html#sorterChanged(javax.swing.event.RowSorterEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnSorterChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.RowSorterEvent> OnSorterChanged { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.RowSorterEvent> OnSorterChanged { get; set; } = null;
 
         void SorterChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.RowSorterEvent>> data)
         {

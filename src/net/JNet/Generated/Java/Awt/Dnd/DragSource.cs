@@ -133,7 +133,7 @@ namespace Java.Awt.Dnd
         /// <param name="arg3"><see cref="Java.Awt.Dnd.DragGestureListener"/></param>
         /// <typeparam name="T"><see cref="Java.Awt.Dnd.DragGestureRecognizer"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T CreateDragGestureRecognizer<T>(Java.Lang.Class arg0, Java.Awt.Component arg1, int arg2, Java.Awt.Dnd.DragGestureListener arg3) where T: Java.Awt.Dnd.DragGestureRecognizer
+        public T CreateDragGestureRecognizer<T>(Java.Lang.Class arg0, Java.Awt.Component arg1, int arg2, Java.Awt.Dnd.DragGestureListener arg3) where T : Java.Awt.Dnd.DragGestureRecognizer
         {
             return IExecute<T>("createDragGestureRecognizer", arg0, arg1, arg2, arg3);
         }

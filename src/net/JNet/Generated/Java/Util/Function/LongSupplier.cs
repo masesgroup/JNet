@@ -73,7 +73,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("getAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsLongEventHandler));
+            AddEventHandler("getAsLong", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsLongEventHandler));
 
         }
 
@@ -81,7 +81,7 @@ namespace Java.Util.Function
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongSupplier.html#getAsLong()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetAsLong"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<long> OnGetAsLong { get; set; } = null;
+        public global::System.Func<long> OnGetAsLong { get; set; } = null;
 
         void GetAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {

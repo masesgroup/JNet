@@ -74,7 +74,7 @@ namespace Javax.Management
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("handleNotification", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Management.Notification>>>(HandleNotificationEventHandler));
+            AddEventHandler("handleNotification", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Management.Notification>>>(HandleNotificationEventHandler));
 
         }
 
@@ -82,7 +82,7 @@ namespace Javax.Management
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationListener.html#handleNotification(javax.management.Notification,java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnHandleNotification"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Management.Notification, object> OnHandleNotification { get; set; } = null;
+        public global::System.Action<Javax.Management.Notification, object> OnHandleNotification { get; set; } = null;
 
         void HandleNotificationEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Management.Notification>> data)
         {

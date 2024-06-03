@@ -184,7 +184,7 @@ namespace Java.Net.Http
             /// <param name="arg1"><see cref="long"/></param>
             /// <typeparam name="Arg0ExtendsJava_Nio_ByteBuffer"><see cref="Java.Nio.ByteBuffer"/></typeparam>
             /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
-            public static Java.Net.Http.HttpRequest.BodyPublisher FromPublisher<Arg0ExtendsJava_Nio_ByteBuffer>(Java.Util.Concurrent.Flow.Publisher<Arg0ExtendsJava_Nio_ByteBuffer> arg0, long arg1) where Arg0ExtendsJava_Nio_ByteBuffer: Java.Nio.ByteBuffer
+            public static Java.Net.Http.HttpRequest.BodyPublisher FromPublisher<Arg0ExtendsJava_Nio_ByteBuffer>(Java.Util.Concurrent.Flow.Publisher<Arg0ExtendsJava_Nio_ByteBuffer> arg0, long arg1) where Arg0ExtendsJava_Nio_ByteBuffer : Java.Nio.ByteBuffer
             {
                 return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>(LocalBridgeClazz, "fromPublisher", arg0, arg1);
             }
@@ -194,7 +194,7 @@ namespace Java.Net.Http
             /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Publisher"/></param>
             /// <typeparam name="Arg0ExtendsJava_Nio_ByteBuffer"><see cref="Java.Nio.ByteBuffer"/></typeparam>
             /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
-            public static Java.Net.Http.HttpRequest.BodyPublisher FromPublisher<Arg0ExtendsJava_Nio_ByteBuffer>(Java.Util.Concurrent.Flow.Publisher<Arg0ExtendsJava_Nio_ByteBuffer> arg0) where Arg0ExtendsJava_Nio_ByteBuffer: Java.Nio.ByteBuffer
+            public static Java.Net.Http.HttpRequest.BodyPublisher FromPublisher<Arg0ExtendsJava_Nio_ByteBuffer>(Java.Util.Concurrent.Flow.Publisher<Arg0ExtendsJava_Nio_ByteBuffer> arg0) where Arg0ExtendsJava_Nio_ByteBuffer : Java.Nio.ByteBuffer
             {
                 return SExecuteWithSignature<Java.Net.Http.HttpRequest.BodyPublisher>(LocalBridgeClazz, "fromPublisher", "(Ljava/util/concurrent/Flow$Publisher;)Ljava/net/http/HttpRequest$BodyPublisher;", arg0);
             }
@@ -251,7 +251,7 @@ namespace Java.Net.Http
             /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
             /// <typeparam name="Arg0ExtendsJava_Io_InputStream"><see cref="Java.Io.InputStream"/></typeparam>
             /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
-            public static Java.Net.Http.HttpRequest.BodyPublisher OfInputStream<Arg0ExtendsJava_Io_InputStream>(Java.Util.Function.Supplier<Arg0ExtendsJava_Io_InputStream> arg0) where Arg0ExtendsJava_Io_InputStream: Java.Io.InputStream
+            public static Java.Net.Http.HttpRequest.BodyPublisher OfInputStream<Arg0ExtendsJava_Io_InputStream>(Java.Util.Function.Supplier<Arg0ExtendsJava_Io_InputStream> arg0) where Arg0ExtendsJava_Io_InputStream : Java.Io.InputStream
             {
                 return SExecuteWithSignature<Java.Net.Http.HttpRequest.BodyPublisher>(LocalBridgeClazz, "ofInputStream", "(Ljava/util/function/Supplier;)Ljava/net/http/HttpRequest$BodyPublisher;", arg0);
             }

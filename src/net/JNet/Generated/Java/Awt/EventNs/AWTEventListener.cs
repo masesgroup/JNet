@@ -73,7 +73,7 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("eventDispatched", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.AWTEvent>>>(EventDispatchedEventHandler));
+            AddEventHandler("eventDispatched", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.AWTEvent>>>(EventDispatchedEventHandler));
 
         }
 
@@ -81,7 +81,7 @@ namespace Java.Awt.EventNs
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListener.html#eventDispatched(java.awt.AWTEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnEventDispatched"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.AWTEvent> OnEventDispatched { get; set; } = null;
+        public global::System.Action<Java.Awt.AWTEvent> OnEventDispatched { get; set; } = null;
 
         void EventDispatchedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.AWTEvent>> data)
         {

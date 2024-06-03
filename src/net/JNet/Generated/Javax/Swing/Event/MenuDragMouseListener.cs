@@ -88,10 +88,10 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("menuDragMouseDragged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>>>(MenuDragMouseDraggedEventHandler));
-            AddEventHandler("menuDragMouseEntered", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>>>(MenuDragMouseEnteredEventHandler));
-            AddEventHandler("menuDragMouseExited", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>>>(MenuDragMouseExitedEventHandler));
-            AddEventHandler("menuDragMouseReleased", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>>>(MenuDragMouseReleasedEventHandler));
+            AddEventHandler("menuDragMouseDragged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>>>(MenuDragMouseDraggedEventHandler));
+            AddEventHandler("menuDragMouseEntered", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>>>(MenuDragMouseEnteredEventHandler));
+            AddEventHandler("menuDragMouseExited", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>>>(MenuDragMouseExitedEventHandler));
+            AddEventHandler("menuDragMouseReleased", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>>>(MenuDragMouseReleasedEventHandler));
 
         }
 
@@ -99,7 +99,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html#menuDragMouseDragged(javax.swing.event.MenuDragMouseEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnMenuDragMouseDragged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.MenuDragMouseEvent> OnMenuDragMouseDragged { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.MenuDragMouseEvent> OnMenuDragMouseDragged { get; set; } = null;
 
         void MenuDragMouseDraggedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>> data)
         {
@@ -120,7 +120,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html#menuDragMouseEntered(javax.swing.event.MenuDragMouseEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnMenuDragMouseEntered"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.MenuDragMouseEvent> OnMenuDragMouseEntered { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.MenuDragMouseEvent> OnMenuDragMouseEntered { get; set; } = null;
 
         void MenuDragMouseEnteredEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>> data)
         {
@@ -141,7 +141,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html#menuDragMouseExited(javax.swing.event.MenuDragMouseEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnMenuDragMouseExited"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.MenuDragMouseEvent> OnMenuDragMouseExited { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.MenuDragMouseEvent> OnMenuDragMouseExited { get; set; } = null;
 
         void MenuDragMouseExitedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>> data)
         {
@@ -162,7 +162,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html#menuDragMouseReleased(javax.swing.event.MenuDragMouseEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnMenuDragMouseReleased"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.MenuDragMouseEvent> OnMenuDragMouseReleased { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.MenuDragMouseEvent> OnMenuDragMouseReleased { get; set; } = null;
 
         void MenuDragMouseReleasedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>> data)
         {

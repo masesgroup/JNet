@@ -119,7 +119,7 @@ namespace Java.Security.Cert
         /// <typeparam name="ReturnExtendsJava_Security_Cert_Certificate"><see cref="Java.Security.Cert.Certificate"/></typeparam>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         /// <exception cref="Java.Security.Cert.CertStoreException"/>
-        public Java.Util.Collection<ReturnExtendsJava_Security_Cert_Certificate> GetCertificates<ReturnExtendsJava_Security_Cert_Certificate>(Java.Security.Cert.CertSelector arg0) where ReturnExtendsJava_Security_Cert_Certificate: Java.Security.Cert.Certificate
+        public Java.Util.Collection<ReturnExtendsJava_Security_Cert_Certificate> GetCertificates<ReturnExtendsJava_Security_Cert_Certificate>(Java.Security.Cert.CertSelector arg0) where ReturnExtendsJava_Security_Cert_Certificate : Java.Security.Cert.Certificate
         {
             return IExecuteWithSignature<Java.Util.Collection<ReturnExtendsJava_Security_Cert_Certificate>>("getCertificates", "(Ljava/security/cert/CertSelector;)Ljava/util/Collection;", arg0);
         }
@@ -130,7 +130,7 @@ namespace Java.Security.Cert
         /// <typeparam name="ReturnExtendsJava_Security_Cert_CRL"><see cref="Java.Security.Cert.CRL"/></typeparam>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         /// <exception cref="Java.Security.Cert.CertStoreException"/>
-        public Java.Util.Collection<ReturnExtendsJava_Security_Cert_CRL> GetCRLs<ReturnExtendsJava_Security_Cert_CRL>(Java.Security.Cert.CRLSelector arg0) where ReturnExtendsJava_Security_Cert_CRL: Java.Security.Cert.CRL
+        public Java.Util.Collection<ReturnExtendsJava_Security_Cert_CRL> GetCRLs<ReturnExtendsJava_Security_Cert_CRL>(Java.Security.Cert.CRLSelector arg0) where ReturnExtendsJava_Security_Cert_CRL : Java.Security.Cert.CRL
         {
             return IExecuteWithSignature<Java.Util.Collection<ReturnExtendsJava_Security_Cert_CRL>>("getCRLs", "(Ljava/security/cert/CRLSelector;)Ljava/util/Collection;", arg0);
         }

@@ -78,8 +78,8 @@ namespace Javax.Naming.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("namingExceptionThrown", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingExceptionEvent>>>(NamingExceptionThrownEventHandler));
-            AddEventHandler("objectChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingEvent>>>(ObjectChangedEventHandler));
+            AddEventHandler("namingExceptionThrown", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingExceptionEvent>>>(NamingExceptionThrownEventHandler));
+            AddEventHandler("objectChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingEvent>>>(ObjectChangedEventHandler));
 
         }
 
@@ -87,7 +87,7 @@ namespace Javax.Naming.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html#namingExceptionThrown(javax.naming.event.NamingExceptionEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnNamingExceptionThrown"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Naming.Event.NamingExceptionEvent> OnNamingExceptionThrown { get; set; } = null;
+        public global::System.Action<Javax.Naming.Event.NamingExceptionEvent> OnNamingExceptionThrown { get; set; } = null;
 
         void NamingExceptionThrownEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingExceptionEvent>> data)
         {
@@ -108,7 +108,7 @@ namespace Javax.Naming.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/ObjectChangeListener.html#objectChanged(javax.naming.event.NamingEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnObjectChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Naming.Event.NamingEvent> OnObjectChanged { get; set; } = null;
+        public global::System.Action<Javax.Naming.Event.NamingEvent> OnObjectChanged { get; set; } = null;
 
         void ObjectChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingEvent>> data)
         {

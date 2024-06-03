@@ -83,9 +83,9 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("contentsChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>>>(ContentsChangedEventHandler));
-            AddEventHandler("intervalAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>>>(IntervalAddedEventHandler));
-            AddEventHandler("intervalRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>>>(IntervalRemovedEventHandler));
+            AddEventHandler("contentsChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>>>(ContentsChangedEventHandler));
+            AddEventHandler("intervalAdded", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>>>(IntervalAddedEventHandler));
+            AddEventHandler("intervalRemoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>>>(IntervalRemovedEventHandler));
 
         }
 
@@ -93,7 +93,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataListener.html#contentsChanged(javax.swing.event.ListDataEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnContentsChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.ListDataEvent> OnContentsChanged { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.ListDataEvent> OnContentsChanged { get; set; } = null;
 
         void ContentsChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>> data)
         {
@@ -114,7 +114,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataListener.html#intervalAdded(javax.swing.event.ListDataEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnIntervalAdded"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.ListDataEvent> OnIntervalAdded { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.ListDataEvent> OnIntervalAdded { get; set; } = null;
 
         void IntervalAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>> data)
         {
@@ -135,7 +135,7 @@ namespace Javax.Swing.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataListener.html#intervalRemoved(javax.swing.event.ListDataEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnIntervalRemoved"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Swing.Event.ListDataEvent> OnIntervalRemoved { get; set; } = null;
+        public global::System.Action<Javax.Swing.Event.ListDataEvent> OnIntervalRemoved { get; set; } = null;
 
         void IntervalRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>> data)
         {

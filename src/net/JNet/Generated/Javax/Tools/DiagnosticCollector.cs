@@ -107,7 +107,7 @@ namespace Javax.Tools
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Tools.Diagnostic"/></param>
         /// <typeparam name="Arg0ExtendsS"><typeparamref name="S"/></typeparam>
-        public void Report<Arg0ExtendsS>(Javax.Tools.Diagnostic<Arg0ExtendsS> arg0) where Arg0ExtendsS: S
+        public void Report<Arg0ExtendsS>(Javax.Tools.Diagnostic<Arg0ExtendsS> arg0) where Arg0ExtendsS : S
         {
             IExecuteWithSignature("report", "(Ljavax/tools/Diagnostic;)V", arg0);
         }

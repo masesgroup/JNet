@@ -137,7 +137,7 @@ namespace Java.Security.Cert
         /// <typeparam name="Arg0ExtendsJava_Security_Cert_Certificate"><see cref="Java.Security.Cert.Certificate"/></typeparam>
         /// <returns><see cref="Java.Security.Cert.CertPath"/></returns>
         /// <exception cref="Java.Security.Cert.CertificateException"/>
-        public Java.Security.Cert.CertPath GenerateCertPath<Arg0ExtendsJava_Security_Cert_Certificate>(Java.Util.List<Arg0ExtendsJava_Security_Cert_Certificate> arg0) where Arg0ExtendsJava_Security_Cert_Certificate: Java.Security.Cert.Certificate
+        public Java.Security.Cert.CertPath GenerateCertPath<Arg0ExtendsJava_Security_Cert_Certificate>(Java.Util.List<Arg0ExtendsJava_Security_Cert_Certificate> arg0) where Arg0ExtendsJava_Security_Cert_Certificate : Java.Security.Cert.Certificate
         {
             return IExecuteWithSignature<Java.Security.Cert.CertPath>("generateCertPath", "(Ljava/util/List;)Ljava/security/cert/CertPath;", arg0);
         }
@@ -158,7 +158,7 @@ namespace Java.Security.Cert
         /// <typeparam name="ReturnExtendsJava_Security_Cert_Certificate"><see cref="Java.Security.Cert.Certificate"/></typeparam>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         /// <exception cref="Java.Security.Cert.CertificateException"/>
-        public Java.Util.Collection<ReturnExtendsJava_Security_Cert_Certificate> GenerateCertificates<ReturnExtendsJava_Security_Cert_Certificate>(Java.Io.InputStream arg0) where ReturnExtendsJava_Security_Cert_Certificate: Java.Security.Cert.Certificate
+        public Java.Util.Collection<ReturnExtendsJava_Security_Cert_Certificate> GenerateCertificates<ReturnExtendsJava_Security_Cert_Certificate>(Java.Io.InputStream arg0) where ReturnExtendsJava_Security_Cert_Certificate : Java.Security.Cert.Certificate
         {
             return IExecuteWithSignature<Java.Util.Collection<ReturnExtendsJava_Security_Cert_Certificate>>("generateCertificates", "(Ljava/io/InputStream;)Ljava/util/Collection;", arg0);
         }
@@ -169,7 +169,7 @@ namespace Java.Security.Cert
         /// <typeparam name="ReturnExtendsJava_Security_Cert_CRL"><see cref="Java.Security.Cert.CRL"/></typeparam>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         /// <exception cref="Java.Security.Cert.CRLException"/>
-        public Java.Util.Collection<ReturnExtendsJava_Security_Cert_CRL> GenerateCRLs<ReturnExtendsJava_Security_Cert_CRL>(Java.Io.InputStream arg0) where ReturnExtendsJava_Security_Cert_CRL: Java.Security.Cert.CRL
+        public Java.Util.Collection<ReturnExtendsJava_Security_Cert_CRL> GenerateCRLs<ReturnExtendsJava_Security_Cert_CRL>(Java.Io.InputStream arg0) where ReturnExtendsJava_Security_Cert_CRL : Java.Security.Cert.CRL
         {
             return IExecuteWithSignature<Java.Util.Collection<ReturnExtendsJava_Security_Cert_CRL>>("generateCRLs", "(Ljava/io/InputStream;)Ljava/util/Collection;", arg0);
         }

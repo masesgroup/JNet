@@ -73,7 +73,7 @@ namespace Java.Beans
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("propertyChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeEvent>>>(PropertyChangeEventHandler));
+            AddEventHandler("propertyChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeEvent>>>(PropertyChangeEventHandler));
 
         }
 
@@ -81,7 +81,7 @@ namespace Java.Beans
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListener.html#propertyChange(java.beans.PropertyChangeEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnPropertyChange"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Beans.PropertyChangeEvent> OnPropertyChange { get; set; } = null;
+        public global::System.Action<Java.Beans.PropertyChangeEvent> OnPropertyChange { get; set; } = null;
 
         void PropertyChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeEvent>> data)
         {

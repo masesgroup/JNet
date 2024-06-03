@@ -78,8 +78,8 @@ namespace Java.Awt.DesktopNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("userSessionActivated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.UserSessionEvent>>>(UserSessionActivatedEventHandler));
-            AddEventHandler("userSessionDeactivated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.UserSessionEvent>>>(UserSessionDeactivatedEventHandler));
+            AddEventHandler("userSessionActivated", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.UserSessionEvent>>>(UserSessionActivatedEventHandler));
+            AddEventHandler("userSessionDeactivated", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.UserSessionEvent>>>(UserSessionDeactivatedEventHandler));
 
         }
 
@@ -87,7 +87,7 @@ namespace Java.Awt.DesktopNs
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionListener.html#userSessionActivated(java.awt.desktop.UserSessionEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnUserSessionActivated"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.DesktopNs.UserSessionEvent> OnUserSessionActivated { get; set; } = null;
+        public global::System.Action<Java.Awt.DesktopNs.UserSessionEvent> OnUserSessionActivated { get; set; } = null;
 
         void UserSessionActivatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.UserSessionEvent>> data)
         {
@@ -108,7 +108,7 @@ namespace Java.Awt.DesktopNs
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionListener.html#userSessionDeactivated(java.awt.desktop.UserSessionEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnUserSessionDeactivated"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Awt.DesktopNs.UserSessionEvent> OnUserSessionDeactivated { get; set; } = null;
+        public global::System.Action<Java.Awt.DesktopNs.UserSessionEvent> OnUserSessionDeactivated { get; set; } = null;
 
         void UserSessionDeactivatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.UserSessionEvent>> data)
         {

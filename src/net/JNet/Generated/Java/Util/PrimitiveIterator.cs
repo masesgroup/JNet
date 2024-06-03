@@ -106,7 +106,7 @@ namespace Java.Util
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
             /// <typeparam name="Arg0objectSuperJava_Lang_Double"><see cref="Java.Lang.Double"/></typeparam>
-            public void ForEachRemaining<Arg0objectSuperJava_Lang_Double>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Double> arg0) where Arg0objectSuperJava_Lang_Double: Java.Lang.Double
+            public void ForEachRemaining<Arg0objectSuperJava_Lang_Double>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Double> arg0) where Arg0objectSuperJava_Lang_Double : Java.Lang.Double
             {
                 IExecuteWithSignature("forEachRemaining", "(Ljava/util/function/Consumer;)V", arg0);
             }
@@ -178,7 +178,7 @@ namespace Java.Util
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
             /// <typeparam name="Arg0objectSuperJava_Lang_Integer"><see cref="Java.Lang.Integer"/></typeparam>
-            public void ForEachRemaining<Arg0objectSuperJava_Lang_Integer>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Integer> arg0) where Arg0objectSuperJava_Lang_Integer: Java.Lang.Integer
+            public void ForEachRemaining<Arg0objectSuperJava_Lang_Integer>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Integer> arg0) where Arg0objectSuperJava_Lang_Integer : Java.Lang.Integer
             {
                 IExecuteWithSignature("forEachRemaining", "(Ljava/util/function/Consumer;)V", arg0);
             }
@@ -250,7 +250,7 @@ namespace Java.Util
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
             /// <typeparam name="Arg0objectSuperJava_Lang_Long"><see cref="Java.Lang.Long"/></typeparam>
-            public void ForEachRemaining<Arg0objectSuperJava_Lang_Long>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Long> arg0) where Arg0objectSuperJava_Lang_Long: Java.Lang.Long
+            public void ForEachRemaining<Arg0objectSuperJava_Lang_Long>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Long> arg0) where Arg0objectSuperJava_Lang_Long : Java.Lang.Long
             {
                 IExecuteWithSignature("forEachRemaining", "(Ljava/util/function/Consumer;)V", arg0);
             }

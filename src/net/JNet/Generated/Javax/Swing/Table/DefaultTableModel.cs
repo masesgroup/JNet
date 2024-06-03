@@ -220,7 +220,7 @@ namespace Javax.Swing.Table
         /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
         /// <param name="arg1"><see cref="Java.Util.Vector"/></param>
         /// <typeparam name="Arg0ExtendsJava_Util_Vector"><see cref="Java.Util.Vector"/></typeparam>
-        public void SetDataVector<Arg0ExtendsJava_Util_Vector>(Java.Util.Vector<Arg0ExtendsJava_Util_Vector> arg0, Java.Util.Vector<object> arg1) where Arg0ExtendsJava_Util_Vector: Java.Util.Vector
+        public void SetDataVector<Arg0ExtendsJava_Util_Vector>(Java.Util.Vector<Arg0ExtendsJava_Util_Vector> arg0, Java.Util.Vector<object> arg1) where Arg0ExtendsJava_Util_Vector : Java.Util.Vector
         {
             IExecute("setDataVector", arg0, arg1);
         }

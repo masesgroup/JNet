@@ -37,7 +37,7 @@ namespace Java.Lang.Annotation
         /// </summary>
         /// <typeparam name="ReturnExtendsJava_Lang_Annotation_Annotation"><see cref="Java.Lang.Annotation.Annotation"/></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
-        Java.Lang.Class Value<ReturnExtendsJava_Lang_Annotation_Annotation>() where ReturnExtendsJava_Lang_Annotation_Annotation: Java.Lang.Annotation.Annotation;
+        Java.Lang.Class Value<ReturnExtendsJava_Lang_Annotation_Annotation>() where ReturnExtendsJava_Lang_Annotation_Annotation : Java.Lang.Annotation.Annotation;
 
         #endregion
 
@@ -74,7 +74,7 @@ namespace Java.Lang.Annotation
         /// </summary>
         /// <typeparam name="ReturnExtendsJava_Lang_Annotation_Annotation"><see cref="Java.Lang.Annotation.Annotation"/></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
-        public Java.Lang.Class Value<ReturnExtendsJava_Lang_Annotation_Annotation>() where ReturnExtendsJava_Lang_Annotation_Annotation: Java.Lang.Annotation.Annotation
+        public Java.Lang.Class Value<ReturnExtendsJava_Lang_Annotation_Annotation>() where ReturnExtendsJava_Lang_Annotation_Annotation : Java.Lang.Annotation.Annotation
         {
             return IExecuteWithSignature<Java.Lang.Class>("value", "()Ljava/lang/Class;");
         }

@@ -77,7 +77,7 @@ namespace Java.Util
         /// <typeparam name="X"></typeparam>
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Lang.Throwable"/>
-        public long OrElseThrow<Arg0ExtendsX, X>(Java.Util.Function.Supplier<Arg0ExtendsX> arg0) where Arg0ExtendsX: X
+        public long OrElseThrow<Arg0ExtendsX, X>(Java.Util.Function.Supplier<Arg0ExtendsX> arg0) where Arg0ExtendsX : X
         {
             return IExecute<long>("orElseThrow", arg0);
         }

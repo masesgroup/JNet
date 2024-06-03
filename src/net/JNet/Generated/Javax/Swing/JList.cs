@@ -933,7 +933,7 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
         /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
-        public void SetListData<Arg0ExtendsE>(Java.Util.Vector<Arg0ExtendsE> arg0) where Arg0ExtendsE: E
+        public void SetListData<Arg0ExtendsE>(Java.Util.Vector<Arg0ExtendsE> arg0) where Arg0ExtendsE : E
         {
             IExecuteWithSignature("setListData", "(Ljava/util/Vector;)V", arg0);
         }

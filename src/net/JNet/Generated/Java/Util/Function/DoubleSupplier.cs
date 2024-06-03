@@ -73,7 +73,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("getAsDouble", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsDoubleEventHandler));
+            AddEventHandler("getAsDouble", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsDoubleEventHandler));
 
         }
 
@@ -81,7 +81,7 @@ namespace Java.Util.Function
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleSupplier.html#getAsDouble()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetAsDouble"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<double> OnGetAsDouble { get; set; } = null;
+        public global::System.Func<double> OnGetAsDouble { get; set; } = null;
 
         void GetAsDoubleEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {

@@ -73,7 +73,7 @@ namespace Javax.Print.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("attributeUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobAttributeEvent>>>(AttributeUpdateEventHandler));
+            AddEventHandler("attributeUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobAttributeEvent>>>(AttributeUpdateEventHandler));
 
         }
 
@@ -81,7 +81,7 @@ namespace Javax.Print.Event
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAttributeListener.html#attributeUpdate(javax.print.event.PrintJobAttributeEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAttributeUpdate"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Print.Event.PrintJobAttributeEvent> OnAttributeUpdate { get; set; } = null;
+        public global::System.Action<Javax.Print.Event.PrintJobAttributeEvent> OnAttributeUpdate { get; set; } = null;
 
         void AttributeUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobAttributeEvent>> data)
         {
