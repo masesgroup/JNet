@@ -81,9 +81,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#getCertPathEncodings()"/> 
         /// </summary>
-        public Java.Util.Iterator<Java.Lang.String> CertPathEncodings
+        public Java.Util.IteratorClass<Java.Lang.String> CertPathEncodings
         {
-            get { return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("getCertPathEncodings", "()Ljava/util/Iterator;"); }
+            get { return IExecuteWithSignature<Java.Util.IteratorClass<Java.Lang.String>>("getCertPathEncodings", "()Ljava/util/Iterator;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#getProvider()"/> 

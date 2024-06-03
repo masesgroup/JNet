@@ -122,7 +122,7 @@ namespace Java.Time.Temporal
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.DayOfWeek"/></param>
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
-        public static Java.Time.Temporal.TemporalAdjuster Next(Java.Time.DayOfWeek arg0)
+        public static Java.Time.Temporal.TemporalAdjuster NextMethod(Java.Time.DayOfWeek arg0)
         {
             return SExecuteWithSignature<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "next", "(Ljava/time/DayOfWeek;)Ljava/time/temporal/TemporalAdjuster;", arg0);
         }

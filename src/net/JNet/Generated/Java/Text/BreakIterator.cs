@@ -166,7 +166,7 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#next()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        public int Next()
+        public int NextMethod()
         {
             return IExecuteWithSignature<int>("next", "()I");
         }
@@ -175,7 +175,7 @@ namespace Java.Text
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        public int Next(int arg0)
+        public int NextMethod(int arg0)
         {
             return IExecuteWithSignature<int>("next", "(I)I", arg0);
         }

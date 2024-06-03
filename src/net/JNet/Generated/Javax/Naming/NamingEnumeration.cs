@@ -59,7 +59,7 @@ namespace Javax.Naming
         /// </summary>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public object Next()
+        public object NextMethod()
         {
             return IExecuteWithSignature("next", "()Ljava/lang/Object;");
         }
@@ -100,7 +100,7 @@ namespace Javax.Naming
         /// </summary>
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        T Next();
+        T NextMethod();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#close()"/>
         /// </summary>
@@ -155,7 +155,7 @@ namespace Javax.Naming
         /// </summary>
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public T Next()
+        public T NextMethod()
         {
             return IExecuteWithSignature<T>("next", "()Ljava/lang/Object;");
         }

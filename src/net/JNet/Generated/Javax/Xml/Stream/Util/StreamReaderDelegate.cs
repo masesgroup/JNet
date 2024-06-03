@@ -206,7 +206,7 @@ namespace Javax.Xml.Stream.Util
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
-        public bool HasNext()
+        public bool HasNextMethod()
         {
             return IExecuteWithSignature<bool>("hasNext", "()Z");
         }
@@ -293,7 +293,7 @@ namespace Javax.Xml.Stream.Util
         /// </summary>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
-        public int Next()
+        public int NextMethod()
         {
             return IExecuteWithSignature<int>("next", "()I");
         }

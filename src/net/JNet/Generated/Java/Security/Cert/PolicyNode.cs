@@ -35,7 +35,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#getChildren()"/> 
         /// </summary>
-        Java.Util.Iterator Children { get; }
+        Java.Util.IteratorClass Children { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#getDepth()"/> 
         /// </summary>
@@ -95,9 +95,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#getChildren()"/> 
         /// </summary>
-        public Java.Util.Iterator Children
+        public Java.Util.IteratorClass Children
         {
-            get { return IExecuteWithSignature<Java.Util.Iterator>("getChildren", "()Ljava/util/Iterator;"); }
+            get { return IExecuteWithSignature<Java.Util.IteratorClass>("getChildren", "()Ljava/util/Iterator;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#getDepth()"/> 

@@ -118,7 +118,7 @@ namespace Javax.Xml.Stream
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
-        bool HasNext();
+        bool HasNextMethod();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#hasText()"/>
         /// </summary>
@@ -175,7 +175,7 @@ namespace Javax.Xml.Stream
         /// </summary>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
-        int Next();
+        int NextMethod();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#nextTag()"/>
         /// </summary>
@@ -440,7 +440,7 @@ namespace Javax.Xml.Stream
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
-        public bool HasNext()
+        public bool HasNextMethod()
         {
             return IExecuteWithSignature<bool>("hasNext", "()Z");
         }
@@ -527,7 +527,7 @@ namespace Javax.Xml.Stream
         /// </summary>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
-        public int Next()
+        public int NextMethod()
         {
             return IExecuteWithSignature<int>("next", "()I");
         }

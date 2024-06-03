@@ -145,7 +145,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#next()"/>
         /// </summary>
         /// <returns><see cref="char"/></returns>
-        public char Next()
+        public char NextMethod()
         {
             return IExecuteWithSignature<char>("next", "()C");
         }

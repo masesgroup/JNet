@@ -264,10 +264,10 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator Iterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass IteratorMethod()
         {
-            return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#addFirst(java.lang.Object)"/>
@@ -483,8 +483,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        Java.Util.Iterator<E> Iterator();
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        Java.Util.IteratorClass<E> IteratorMethod();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#addFirst(java.lang.Object)"/>
         /// </summary>
@@ -772,10 +772,10 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<E> Iterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<E> IteratorMethod()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<E>>("iterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass<E>>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#addFirst(java.lang.Object)"/>

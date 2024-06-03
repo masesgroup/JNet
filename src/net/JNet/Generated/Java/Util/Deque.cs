@@ -239,18 +239,18 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#descendingIterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator DescendingIterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass DescendingIterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator>("descendingIterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass>("descendingIterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator Iterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass IteratorMethod()
         {
-            return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#addFirst(java.lang.Object)"/>
@@ -420,13 +420,13 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#descendingIterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        Java.Util.Iterator<E> DescendingIterator();
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        Java.Util.IteratorClass<E> DescendingIterator();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        Java.Util.Iterator<E> Iterator();
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        Java.Util.IteratorClass<E> IteratorMethod();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#addFirst(java.lang.Object)"/>
         /// </summary>
@@ -672,18 +672,18 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#descendingIterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<E> DescendingIterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<E> DescendingIterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<E>>("descendingIterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass<E>>("descendingIterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<E> Iterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<E> IteratorMethod()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<E>>("iterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass<E>>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html#addFirst(java.lang.Object)"/>

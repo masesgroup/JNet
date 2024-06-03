@@ -990,23 +990,23 @@ namespace Javax.Swing.Text.Html
         }
         #endregion
 
-        #region Iterator
+        #region IteratorClass
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html"/>
         /// </summary>
-        public partial class Iterator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Iterator>
+        public partial class IteratorClass : MASES.JCOBridge.C2JBridge.JVMBridgeBase<IteratorClass>
         {
             const string _bridgeClassName = "javax.swing.text.html.HTMLDocument$Iterator";
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [global::System.Obsolete("Iterator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public Iterator() { }
+            [global::System.Obsolete("IteratorClass class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public IteratorClass() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [global::System.Obsolete("Iterator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public Iterator(params object[] args) : base(args) { }
+            [global::System.Obsolete("IteratorClass class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public IteratorClass(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 

@@ -146,11 +146,11 @@ namespace Javax.Imageio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getImageTypes(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Util.Iterator<Javax.Imageio.ImageTypeSpecifier> GetImageTypes(int arg0)
+        public Java.Util.IteratorClass<Javax.Imageio.ImageTypeSpecifier> GetImageTypes(int arg0)
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Javax.Imageio.ImageTypeSpecifier>>("getImageTypes", "(I)Ljava/util/Iterator;", arg0);
+            return IExecuteWithSignature<Java.Util.IteratorClass<Javax.Imageio.ImageTypeSpecifier>>("getImageTypes", "(I)Ljava/util/Iterator;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getImageMetadata(int)"/>
@@ -376,13 +376,13 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#readAll(java.util.Iterator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Iterator"/></param>
+        /// <param name="arg0"><see cref="Java.Util.IteratorClass"/></param>
         /// <typeparam name="Arg0ExtendsJavax_Imageio_ImageReadParam"><see cref="Javax.Imageio.ImageReadParam"/></typeparam>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Util.Iterator<Javax.Imageio.IIOImage> ReadAll<Arg0ExtendsJavax_Imageio_ImageReadParam>(Java.Util.Iterator<Arg0ExtendsJavax_Imageio_ImageReadParam> arg0) where Arg0ExtendsJavax_Imageio_ImageReadParam : Javax.Imageio.ImageReadParam
+        public Java.Util.IteratorClass<Javax.Imageio.IIOImage> ReadAll<Arg0ExtendsJavax_Imageio_ImageReadParam>(Java.Util.IteratorClass<Arg0ExtendsJavax_Imageio_ImageReadParam> arg0) where Arg0ExtendsJavax_Imageio_ImageReadParam : Javax.Imageio.ImageReadParam
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Javax.Imageio.IIOImage>>("readAll", "(Ljava/util/Iterator;)Ljava/util/Iterator;", arg0);
+            return IExecuteWithSignature<Java.Util.IteratorClass<Javax.Imageio.IIOImage>>("readAll", "(Ljava/util/Iterator;)Ljava/util/Iterator;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#readAll(int,javax.imageio.ImageReadParam)"/>

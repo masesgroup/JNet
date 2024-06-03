@@ -35,7 +35,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServices.html#getCurrentServiceClasses()"/> 
         /// </summary>
-        Java.Util.Iterator<object> CurrentServiceClasses { get; }
+        Java.Util.IteratorClass<object> CurrentServiceClasses { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServices.html#addService(java.lang.Class,java.beans.beancontext.BeanContextServiceProvider)"/>
         /// </summary>
@@ -64,8 +64,8 @@ namespace Java.Beans.Beancontext
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServices.html#getCurrentServiceSelectors(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        Java.Util.Iterator<object> GetCurrentServiceSelectors(Java.Lang.Class arg0);
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        Java.Util.IteratorClass<object> GetCurrentServiceSelectors(Java.Lang.Class arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServices.html#addBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener)"/>
         /// </summary>
@@ -132,9 +132,9 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServices.html#getCurrentServiceClasses()"/> 
         /// </summary>
-        public Java.Util.Iterator<object> CurrentServiceClasses
+        public Java.Util.IteratorClass<object> CurrentServiceClasses
         {
-            get { return IExecuteWithSignature<Java.Util.Iterator<object>>("getCurrentServiceClasses", "()Ljava/util/Iterator;"); }
+            get { return IExecuteWithSignature<Java.Util.IteratorClass<object>>("getCurrentServiceClasses", "()Ljava/util/Iterator;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServices.html#addService(java.lang.Class,java.beans.beancontext.BeanContextServiceProvider)"/>
@@ -173,10 +173,10 @@ namespace Java.Beans.Beancontext
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServices.html#getCurrentServiceSelectors(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<object> GetCurrentServiceSelectors(Java.Lang.Class arg0)
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<object> GetCurrentServiceSelectors(Java.Lang.Class arg0)
         {
-            return IExecuteWithSignature<Java.Util.Iterator<object>>("getCurrentServiceSelectors", "(Ljava/lang/Class;)Ljava/util/Iterator;", arg0);
+            return IExecuteWithSignature<Java.Util.IteratorClass<object>>("getCurrentServiceSelectors", "(Ljava/lang/Class;)Ljava/util/Iterator;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServices.html#addBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener)"/>

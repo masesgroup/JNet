@@ -546,7 +546,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         public override Java.Util.Function.Predicate<T> And<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return IExecuteWithSignature<Java.Util.Function.PredicateDirect<T>, Java.Util.Function.Predicate<T>>("and", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
+            return IExecuteWithSignature<Java.Util.Function.Predicate<T>>("and", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
@@ -554,7 +554,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         public override Java.Util.Function.Predicate<T> Negate()
         {
-            return IExecuteWithSignature<Java.Util.Function.PredicateDirect<T>, Java.Util.Function.Predicate<T>>("negate", "()Ljava/util/function/Predicate;");
+            return IExecuteWithSignature<Java.Util.Function.Predicate<T>>("negate", "()Ljava/util/function/Predicate;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
@@ -564,7 +564,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         public override Java.Util.Function.Predicate<T> Or<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return IExecuteWithSignature<Java.Util.Function.PredicateDirect<T>, Java.Util.Function.Predicate<T>>("or", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
+            return IExecuteWithSignature<Java.Util.Function.Predicate<T>>("or", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }
 
         #endregion

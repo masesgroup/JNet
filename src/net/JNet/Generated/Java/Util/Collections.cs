@@ -365,10 +365,10 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyIterator()"/>
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public static Java.Util.Iterator<T> EmptyIteratorMethod<T>()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public static Java.Util.IteratorClass<T> EmptyIteratorMethod<T>()
         {
-            return SExecuteWithSignature<Java.Util.Iterator<T>>(LocalBridgeClazz, "emptyIterator", "()Ljava/util/Iterator;");
+            return SExecuteWithSignature<Java.Util.IteratorClass<T>>(LocalBridgeClazz, "emptyIterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#nCopies(int,java.lang.Object)"/>

@@ -118,10 +118,10 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<Java.Awt.EventNs.InputEvent> Iterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<Java.Awt.EventNs.InputEvent> IteratorMethod()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Java.Awt.EventNs.InputEvent>>("iterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass<Java.Awt.EventNs.InputEvent>>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html#startDrag(java.awt.Cursor,java.awt.datatransfer.Transferable,java.awt.dnd.DragSourceListener)"/>

@@ -47,10 +47,10 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.Spliterator"/></param>
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public static Java.Util.Iterator<T> Iterator<T, Arg0ExtendsT>(Java.Util.Spliterator<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public static Java.Util.IteratorClass<T> IteratorMethod<T, Arg0ExtendsT>(Java.Util.Spliterator<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
         {
-            return SExecuteWithSignature<Java.Util.Iterator<T>>(LocalBridgeClazz, "iterator", "(Ljava/util/Spliterator;)Ljava/util/Iterator;", arg0);
+            return SExecuteWithSignature<Java.Util.IteratorClass<T>>(LocalBridgeClazz, "iterator", "(Ljava/util/Spliterator;)Ljava/util/Iterator;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#emptySpliterator()"/>
@@ -100,25 +100,25 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#spliterator(java.util.Iterator,long,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Iterator"/></param>
+        /// <param name="arg0"><see cref="Java.Util.IteratorClass"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        public static Java.Util.Spliterator<T> Spliterator<T, Arg0ExtendsT>(Java.Util.Iterator<Arg0ExtendsT> arg0, long arg1, int arg2) where Arg0ExtendsT : T
+        public static Java.Util.Spliterator<T> Spliterator<T, Arg0ExtendsT>(Java.Util.IteratorClass<Arg0ExtendsT> arg0, long arg1, int arg2) where Arg0ExtendsT : T
         {
             return SExecute<Java.Util.Spliterator<T>>(LocalBridgeClazz, "spliterator", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#spliteratorUnknownSize(java.util.Iterator,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Iterator"/></param>
+        /// <param name="arg0"><see cref="Java.Util.IteratorClass"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        public static Java.Util.Spliterator<T> SpliteratorUnknownSize<T, Arg0ExtendsT>(Java.Util.Iterator<Arg0ExtendsT> arg0, int arg1) where Arg0ExtendsT : T
+        public static Java.Util.Spliterator<T> SpliteratorUnknownSize<T, Arg0ExtendsT>(Java.Util.IteratorClass<Arg0ExtendsT> arg0, int arg1) where Arg0ExtendsT : T
         {
             return SExecute<Java.Util.Spliterator<T>>(LocalBridgeClazz, "spliteratorUnknownSize", arg0, arg1);
         }
@@ -127,7 +127,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Spliterator.OfDouble"/></param>
         /// <returns><see cref="Java.Util.PrimitiveIterator.OfDouble"/></returns>
-        public static Java.Util.PrimitiveIterator.OfDouble Iterator(Java.Util.Spliterator.OfDouble arg0)
+        public static Java.Util.PrimitiveIterator.OfDouble IteratorMethod(Java.Util.Spliterator.OfDouble arg0)
         {
             return SExecuteWithSignature<Java.Util.PrimitiveIterator.OfDouble>(LocalBridgeClazz, "iterator", "(Ljava/util/Spliterator$OfDouble;)Ljava/util/PrimitiveIterator$OfDouble;", arg0);
         }
@@ -136,7 +136,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Spliterator.OfInt"/></param>
         /// <returns><see cref="Java.Util.PrimitiveIterator.OfInt"/></returns>
-        public static Java.Util.PrimitiveIterator.OfInt Iterator(Java.Util.Spliterator.OfInt arg0)
+        public static Java.Util.PrimitiveIterator.OfInt IteratorMethod(Java.Util.Spliterator.OfInt arg0)
         {
             return SExecuteWithSignature<Java.Util.PrimitiveIterator.OfInt>(LocalBridgeClazz, "iterator", "(Ljava/util/Spliterator$OfInt;)Ljava/util/PrimitiveIterator$OfInt;", arg0);
         }
@@ -145,7 +145,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Spliterator.OfLong"/></param>
         /// <returns><see cref="Java.Util.PrimitiveIterator.OfLong"/></returns>
-        public static Java.Util.PrimitiveIterator.OfLong Iterator(Java.Util.Spliterator.OfLong arg0)
+        public static Java.Util.PrimitiveIterator.OfLong IteratorMethod(Java.Util.Spliterator.OfLong arg0)
         {
             return SExecuteWithSignature<Java.Util.PrimitiveIterator.OfLong>(LocalBridgeClazz, "iterator", "(Ljava/util/Spliterator$OfLong;)Ljava/util/PrimitiveIterator$OfLong;", arg0);
         }

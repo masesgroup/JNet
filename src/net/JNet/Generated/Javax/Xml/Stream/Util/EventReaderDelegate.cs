@@ -71,7 +71,7 @@ namespace Javax.Xml.Stream.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/EventReaderDelegate.html#hasNext()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        public bool HasNext()
+        public bool HasNextMethod()
         {
             return IExecuteWithSignature<bool>("hasNext", "()Z");
         }
@@ -89,7 +89,7 @@ namespace Javax.Xml.Stream.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/EventReaderDelegate.html#next()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
-        public object Next()
+        public object NextMethod()
         {
             return IExecuteWithSignature("next", "()Ljava/lang/Object;");
         }

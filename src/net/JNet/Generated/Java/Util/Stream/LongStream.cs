@@ -207,8 +207,8 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        Java.Util.Iterator Iterator();
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        Java.Util.IteratorClass IteratorMethod();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#spliterator()"/>
         /// </summary>
@@ -618,10 +618,10 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator Iterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass IteratorMethod()
         {
-            return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#spliterator()"/>

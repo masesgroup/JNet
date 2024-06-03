@@ -117,6 +117,13 @@ namespace Javax.Swing.Text.Html.Parser
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#getNext()"/> 
+        /// </summary>
+        public Javax.Swing.Text.Html.Parser.AttributeList GetNext
+        {
+            get { return IExecuteWithSignature<Javax.Swing.Text.Html.Parser.AttributeList>("getNext", "()Ljavax/swing/text/html/parser/AttributeList;"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#getModifier()"/> 
         /// </summary>
         public int Modifier
@@ -129,13 +136,6 @@ namespace Javax.Swing.Text.Html.Parser
         public Java.Lang.String Name
         {
             get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#getNext()"/> 
-        /// </summary>
-        public Javax.Swing.Text.Html.Parser.AttributeList Next
-        {
-            get { return IExecuteWithSignature<Javax.Swing.Text.Html.Parser.AttributeList>("getNext", "()Ljavax/swing/text/html/parser/AttributeList;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#getType()"/> 

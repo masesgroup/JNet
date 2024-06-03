@@ -89,7 +89,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#next()"/>
             /// </summary>
             /// <returns><see cref="object"/></returns>
-            public object Next()
+            public object NextMethod()
             {
                 return IExecuteWithSignature("next", "()Ljava/lang/Object;");
             }
@@ -161,7 +161,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html#next()"/>
             /// </summary>
             /// <returns><see cref="object"/></returns>
-            public object Next()
+            public object NextMethod()
             {
                 return IExecuteWithSignature("next", "()Ljava/lang/Object;");
             }
@@ -233,7 +233,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#next()"/>
             /// </summary>
             /// <returns><see cref="object"/></returns>
-            public object Next()
+            public object NextMethod()
             {
                 return IExecuteWithSignature("next", "()Ljava/lang/Object;");
             }

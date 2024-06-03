@@ -127,10 +127,10 @@ namespace Javax.Swing.Text.Html
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getIterator(javax.swing.text.html.HTML.Tag)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
-        /// <returns><see cref="Javax.Swing.Text.Html.HTMLDocument.Iterator"/></returns>
-        public Javax.Swing.Text.Html.HTMLDocument.Iterator GetIterator(Javax.Swing.Text.Html.HTML.Tag arg0)
+        /// <returns><see cref="Javax.Swing.Text.Html.HTMLDocument.IteratorClass"/></returns>
+        public Javax.Swing.Text.Html.HTMLDocument.IteratorClass GetIterator(Javax.Swing.Text.Html.HTML.Tag arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.Text.Html.HTMLDocument.Iterator>("getIterator", "(Ljavax/swing/text/html/HTML$Tag;)Ljavax/swing/text/html/HTMLDocument$Iterator;", arg0);
+            return IExecuteWithSignature<Javax.Swing.Text.Html.HTMLDocument.IteratorClass>("getIterator", "(Ljavax/swing/text/html/HTML$Tag;)Ljavax/swing/text/html/HTMLDocument$Iterator;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getReader(int,int,int,javax.swing.text.html.HTML.Tag)"/>
@@ -692,8 +692,8 @@ namespace Javax.Swing.Text.Html
         }
         #endregion
 
-        #region Iterator
-        public partial class Iterator
+        #region IteratorClass
+        public partial class IteratorClass
         {
             #region Constructors
 
@@ -751,7 +751,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html#next()"/>
             /// </summary>
-            public void Next()
+            public void NextMethod()
             {
                 IExecuteWithSignature("next", "()V");
             }

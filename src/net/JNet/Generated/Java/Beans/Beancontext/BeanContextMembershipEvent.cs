@@ -82,10 +82,10 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipEvent.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator Iterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass IteratorMethod()
         {
-            return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass>("iterator", "()Ljava/util/Iterator;");
         }
 
         #endregion

@@ -71,9 +71,9 @@ namespace Javax.Tools
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileManager.html#handleOption(java.lang.String,java.util.Iterator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Iterator"/></param>
+        /// <param name="arg1"><see cref="Java.Util.IteratorClass"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool HandleOption(Java.Lang.String arg0, Java.Util.Iterator arg1)
+        public bool HandleOption(Java.Lang.String arg0, Java.Util.IteratorClass arg1)
         {
             return IExecute<bool>("handleOption", arg0, arg1);
         }
@@ -307,9 +307,9 @@ namespace Javax.Tools
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileManager.html#handleOption(java.lang.String,java.util.Iterator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Iterator"/></param>
+        /// <param name="arg1"><see cref="Java.Util.IteratorClass"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool HandleOption(Java.Lang.String arg0, Java.Util.Iterator<Java.Lang.String> arg1)
+        public bool HandleOption(Java.Lang.String arg0, Java.Util.IteratorClass<Java.Lang.String> arg1)
         {
             return IExecute<bool>("handleOption", arg0, arg1);
         }

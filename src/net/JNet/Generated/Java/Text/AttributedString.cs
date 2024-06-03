@@ -92,11 +92,12 @@ namespace Java.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#getIterator()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#getIterator()"/>
         /// </summary>
-        public Java.Text.AttributedCharacterIterator Iterator
+        /// <returns><see cref="Java.Text.AttributedCharacterIterator"/></returns>
+        public Java.Text.AttributedCharacterIterator GetIterator()
         {
-            get { return IExecuteWithSignature<Java.Text.AttributedCharacterIterator>("getIterator", "()Ljava/text/AttributedCharacterIterator;"); }
+            return IExecuteWithSignature<Java.Text.AttributedCharacterIterator>("getIterator", "()Ljava/text/AttributedCharacterIterator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#getIterator(java.text.AttributedCharacterIterator.Attribute[],int,int)"/>

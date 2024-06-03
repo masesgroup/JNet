@@ -179,7 +179,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#hasNext()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        public bool HasNext()
+        public bool HasNextMethod()
         {
             return IExecuteWithSignature<bool>("hasNext", "()Z");
         }
@@ -188,7 +188,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool HasNext(Java.Lang.String arg0)
+        public bool HasNextMethod(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("hasNext", "(Ljava/lang/String;)Z", arg0);
         }
@@ -197,7 +197,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Regex.Pattern"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool HasNext(Java.Util.Regex.Pattern arg0)
+        public bool HasNextMethod(Java.Util.Regex.Pattern arg0)
         {
             return IExecuteWithSignature<bool>("hasNext", "(Ljava/util/regex/Pattern;)Z", arg0);
         }
@@ -404,7 +404,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#next()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
-        public object Next()
+        public object NextMethod()
         {
             return IExecuteWithSignature("next", "()Ljava/lang/Object;");
         }
@@ -451,7 +451,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        public Java.Lang.String Next(Java.Lang.String arg0)
+        public Java.Lang.String NextMethod(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("next", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
@@ -460,7 +460,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Regex.Pattern"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        public Java.Lang.String Next(Java.Util.Regex.Pattern arg0)
+        public Java.Lang.String NextMethod(Java.Util.Regex.Pattern arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("next", "(Ljava/util/regex/Pattern;)Ljava/lang/String;", arg0);
         }

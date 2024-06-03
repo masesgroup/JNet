@@ -41,7 +41,7 @@ namespace Javax.Print
         /// </summary>
         /// <returns><see cref="Javax.Print.MultiDoc"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        Javax.Print.MultiDoc Next();
+        Javax.Print.MultiDoc NextMethod();
 
         #endregion
 
@@ -85,7 +85,7 @@ namespace Javax.Print
         /// </summary>
         /// <returns><see cref="Javax.Print.MultiDoc"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Javax.Print.MultiDoc Next()
+        public Javax.Print.MultiDoc NextMethod()
         {
             return IExecuteWithSignature<Javax.Print.MultiDoc>("next", "()Ljavax/print/MultiDoc;");
         }

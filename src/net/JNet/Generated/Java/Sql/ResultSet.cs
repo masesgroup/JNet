@@ -158,7 +158,7 @@ namespace Java.Sql
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        bool Next();
+        bool NextMethod();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#previous()"/>
         /// </summary>
@@ -1605,7 +1605,7 @@ namespace Java.Sql
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public bool Next()
+        public bool NextMethod()
         {
             return IExecuteWithSignature<bool>("next", "()Z");
         }

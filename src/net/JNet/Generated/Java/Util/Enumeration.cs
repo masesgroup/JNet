@@ -64,10 +64,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#asIterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator AsIterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass AsIterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator>("asIterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass>("asIterator", "()Ljava/util/Iterator;");
         }
 
         #endregion
@@ -100,8 +100,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#asIterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        Java.Util.Iterator<E> AsIterator();
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        Java.Util.IteratorClass<E> AsIterator();
 
         #endregion
 
@@ -156,10 +156,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#asIterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<E> AsIterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<E> AsIterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<E>>("asIterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass<E>>("asIterator", "()Ljava/util/Iterator;");
         }
 
         #endregion

@@ -32,8 +32,8 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#%3Cinit%3E(java.util.Iterator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Iterator"/></param>
-        public ServiceRegistry(Java.Util.Iterator<Java.Lang.Class> arg0)
+        /// <param name="arg0"><see cref="Java.Util.IteratorClass"/></param>
+        public ServiceRegistry(Java.Util.IteratorClass<Java.Lang.Class> arg0)
             : base(arg0)
         {
         }
@@ -55,20 +55,20 @@ namespace Javax.Imageio.Spi
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public static Java.Util.Iterator<T> LookupProviders<T>(Java.Lang.Class arg0, Java.Lang.ClassLoader arg1)
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public static Java.Util.IteratorClass<T> LookupProviders<T>(Java.Lang.Class arg0, Java.Lang.ClassLoader arg1)
         {
-            return SExecute<Java.Util.Iterator<T>>(LocalBridgeClazz, "lookupProviders", arg0, arg1);
+            return SExecute<Java.Util.IteratorClass<T>>(LocalBridgeClazz, "lookupProviders", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#lookupProviders(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public static Java.Util.Iterator<T> LookupProviders<T>(Java.Lang.Class arg0)
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public static Java.Util.IteratorClass<T> LookupProviders<T>(Java.Lang.Class arg0)
         {
-            return SExecuteWithSignature<Java.Util.Iterator<T>>(LocalBridgeClazz, "lookupProviders", "(Ljava/lang/Class;)Ljava/util/Iterator;", arg0);
+            return SExecuteWithSignature<Java.Util.IteratorClass<T>>(LocalBridgeClazz, "lookupProviders", "(Ljava/lang/Class;)Ljava/util/Iterator;", arg0);
         }
 
         #endregion
@@ -77,9 +77,9 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#getCategories()"/> 
         /// </summary>
-        public Java.Util.Iterator<Java.Lang.Class> Categories
+        public Java.Util.IteratorClass<Java.Lang.Class> Categories
         {
-            get { return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.Class>>("getCategories", "()Ljava/util/Iterator;"); }
+            get { return IExecuteWithSignature<Java.Util.IteratorClass<Java.Lang.Class>>("getCategories", "()Ljava/util/Iterator;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#deregisterServiceProvider(java.lang.Object,java.lang.Class)"/>
@@ -133,10 +133,10 @@ namespace Javax.Imageio.Spi
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<T> GetServiceProviders<T>(Java.Lang.Class arg0, bool arg1)
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<T> GetServiceProviders<T>(Java.Lang.Class arg0, bool arg1)
         {
-            return IExecute<Java.Util.Iterator<T>>("getServiceProviders", arg0, arg1);
+            return IExecute<Java.Util.IteratorClass<T>>("getServiceProviders", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#getServiceProviders(java.lang.Class,javax.imageio.spi.ServiceRegistry.Filter,boolean)"/>
@@ -145,10 +145,10 @@ namespace Javax.Imageio.Spi
         /// <param name="arg1"><see cref="Javax.Imageio.Spi.ServiceRegistry.Filter"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<T> GetServiceProviders<T>(Java.Lang.Class arg0, Javax.Imageio.Spi.ServiceRegistry.Filter arg1, bool arg2)
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<T> GetServiceProviders<T>(Java.Lang.Class arg0, Javax.Imageio.Spi.ServiceRegistry.Filter arg1, bool arg2)
         {
-            return IExecute<Java.Util.Iterator<T>>("getServiceProviders", arg0, arg1, arg2);
+            return IExecute<Java.Util.IteratorClass<T>>("getServiceProviders", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#getServiceProviderByClass(java.lang.Class)"/>
@@ -203,8 +203,8 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#registerServiceProviders(java.util.Iterator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Iterator"/></param>
-        public void RegisterServiceProviders(Java.Util.Iterator<object> arg0)
+        /// <param name="arg0"><see cref="Java.Util.IteratorClass"/></param>
+        public void RegisterServiceProviders(Java.Util.IteratorClass<object> arg0)
         {
             IExecuteWithSignature("registerServiceProviders", "(Ljava/util/Iterator;)V", arg0);
         }

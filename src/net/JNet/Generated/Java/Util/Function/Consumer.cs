@@ -331,7 +331,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.Consumer"/></returns>
         public override Java.Util.Function.Consumer<T> AndThen<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return IExecuteWithSignature<Java.Util.Function.ConsumerDirect<T>, Java.Util.Function.Consumer<T>>("andThen", "(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;", arg0);
+            return IExecuteWithSignature<Java.Util.Function.Consumer<T>>("andThen", "(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;", arg0);
         }
 
         #endregion

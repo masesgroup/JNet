@@ -40,7 +40,7 @@ namespace Javax.Xml.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#hasNext()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        bool HasNext();
+        bool HasNextMethod();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#getProperty(java.lang.String)"/>
         /// </summary>
@@ -113,7 +113,7 @@ namespace Javax.Xml.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#hasNext()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        public bool HasNext()
+        public bool HasNextMethod()
         {
             return IExecuteWithSignature<bool>("hasNext", "()Z");
         }

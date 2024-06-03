@@ -89,7 +89,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ElementIterator.html#next()"/>
         /// </summary>
         /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
-        public Javax.Swing.Text.Element Next()
+        public Javax.Swing.Text.Element NextMethod()
         {
             return IExecuteWithSignature<Javax.Swing.Text.Element>("next", "()Ljavax/swing/text/Element;");
         }

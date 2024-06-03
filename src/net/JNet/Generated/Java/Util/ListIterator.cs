@@ -49,7 +49,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasNext()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        public bool HasNext()
+        public bool HasNextMethod()
         {
             return IExecuteWithSignature<bool>("hasNext", "()Z");
         }
@@ -65,7 +65,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#next()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
-        public object Next()
+        public object NextMethod()
         {
             return IExecuteWithSignature("next", "()Ljava/lang/Object;");
         }
@@ -138,7 +138,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasNext()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        bool HasNext();
+        bool HasNextMethod();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasPrevious()"/>
         /// </summary>
@@ -148,7 +148,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#next()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
-        E Next();
+        E NextMethod();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previous()"/>
         /// </summary>
@@ -217,7 +217,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasNext()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        public bool HasNext()
+        public bool HasNextMethod()
         {
             return IExecuteWithSignature<bool>("hasNext", "()Z");
         }
@@ -233,7 +233,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#next()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
-        public E Next()
+        public E NextMethod()
         {
             return IExecuteWithSignature<E>("next", "()Ljava/lang/Object;");
         }

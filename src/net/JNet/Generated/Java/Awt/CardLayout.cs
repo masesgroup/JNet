@@ -166,7 +166,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CardLayout.html#next(java.awt.Container)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
-        public void Next(Java.Awt.Container arg0)
+        public void NextMethod(Java.Awt.Container arg0)
         {
             IExecuteWithSignature("next", "(Ljava/awt/Container;)V", arg0);
         }

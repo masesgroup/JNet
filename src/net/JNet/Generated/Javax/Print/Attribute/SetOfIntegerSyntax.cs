@@ -83,7 +83,7 @@ namespace Javax.Print.Attribute
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        public int Next(int arg0)
+        public int NextMethod(int arg0)
         {
             return IExecuteWithSignature<int>("next", "(I)I", arg0);
         }

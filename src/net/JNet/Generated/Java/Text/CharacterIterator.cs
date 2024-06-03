@@ -63,7 +63,7 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CharacterIterator.html#next()"/>
         /// </summary>
         /// <returns><see cref="char"/></returns>
-        char Next();
+        char NextMethod();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CharacterIterator.html#previous()"/>
         /// </summary>
@@ -161,7 +161,7 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CharacterIterator.html#next()"/>
         /// </summary>
         /// <returns><see cref="char"/></returns>
-        public char Next()
+        public char NextMethod()
         {
             return IExecuteWithSignature<char>("next", "()C");
         }

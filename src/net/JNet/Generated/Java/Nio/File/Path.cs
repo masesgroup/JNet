@@ -183,8 +183,8 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        Java.Util.Iterator<Java.Nio.File.Path> Iterator();
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        Java.Util.IteratorClass<Java.Nio.File.Path> IteratorMethod();
 
         #endregion
 
@@ -472,10 +472,10 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<Java.Nio.File.Path> Iterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<Java.Nio.File.Path> IteratorMethod()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Java.Nio.File.Path>>("iterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass<Java.Nio.File.Path>>("iterator", "()Ljava/util/Iterator;");
         }
 
         #endregion

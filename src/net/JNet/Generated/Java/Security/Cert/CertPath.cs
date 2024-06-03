@@ -62,9 +62,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPath.html#getEncodings()"/> 
         /// </summary>
-        public Java.Util.Iterator<Java.Lang.String> Encodings
+        public Java.Util.IteratorClass<Java.Lang.String> Encodings
         {
-            get { return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("getEncodings", "()Ljava/util/Iterator;"); }
+            get { return IExecuteWithSignature<Java.Util.IteratorClass<Java.Lang.String>>("getEncodings", "()Ljava/util/Iterator;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPath.html#getType()"/> 

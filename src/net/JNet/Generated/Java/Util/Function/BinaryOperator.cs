@@ -365,7 +365,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
         public override Java.Util.Function.BiFunction<T, U, V> AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
         {
-            return IExecute<Java.Util.Function.BiFunctionDirect<T, U, V>, Java.Util.Function.BiFunction<T, U, V>>("andThen", arg0);
+            return IExecute<Java.Util.Function.BiFunction<T, U, V>>("andThen", arg0);
         }
 
         #endregion
