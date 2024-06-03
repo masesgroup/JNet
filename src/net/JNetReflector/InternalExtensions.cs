@@ -27,6 +27,7 @@ using System.Text;
 using MASES.JNetReflector.Templates;
 using System.Runtime.CompilerServices;
 using System.Reflection;
+using System.Reflection.Emit;
 
 namespace MASES.JNetReflector
 {
@@ -59,6 +60,7 @@ namespace MASES.JNetReflector
         {
             var testName = entry.Contains(SpecialNames.BeginGenericDeclaration) ? entry.Substring(0, entry.IndexOf(SpecialNames.BeginGenericDeclaration)) : entry;
             if (SpecialNames.ReservedLanguageNames.Any((n) => testName.Equals(n))) return true;
+            if (SpecialNames.ReservedDevelopedNames.Any((n) => testName.Equals(n))) return true;
             if (SpecialNames.ReservedJNetNames.Any((n) => testName.Equals(n))) return true;
             if (SpecialNames.NumberStartNames.Any((n) => testName.StartsWith(n))) return true;
             return false;
@@ -682,17 +684,25 @@ namespace MASES.JNetReflector
         static string ConvertGenerics(this IEnumerable<string> entry)
         {
             StringBuilder sb = new StringBuilder();
+            bool hasNew = false;
             if (entry != null)
             {
                 foreach (var item in entry)
                 {
-                    sb.AppendFormat("{0}, ", item);
+                    var result = item;
+                    if (result.EndsWith(AllPackageClasses.WHERE_CLAUSE_NEW))
+                    {
+                        hasNew = true;
+                        result = result.Substring(0, result.IndexOf(AllPackageClasses.WHERE_CLAUSE_NEW));
+                    }
+                    sb.AppendFormat("{0}, ", result);
                 }
             }
             var parameters = sb.ToString();
             if (!string.IsNullOrEmpty(parameters))
             {
                 parameters = parameters.Substring(0, parameters.LastIndexOf(", "));
+                if (hasNew) parameters += AllPackageClasses.WHERE_CLAUSE_NEW;
                 return parameters;
             }
             return string.Empty;
@@ -2380,10 +2390,18 @@ namespace MASES.JNetReflector
             return entry.ReturnType.IsJVMException();
         }
 
-        public static bool IsReturnTypeAListener(this Method entry)
+        public static bool IsReturnTypeAListener(this Method entry, bool usedInGenerics)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
-            return entry.ReturnType.IsJVMListenerClass();
+            if (!usedInGenerics || !entry.GenericReturnType.IsGenerics())
+            {
+                return entry.ReturnType.IsJVMListenerClass();
+            }
+            else if (!entry.GenericReturnType.IsGenerics())
+            {
+                return true;
+            }
+            return false;
         }
 
         public static string ReturnType(this Method entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClauses, string prefix, bool usedInGenerics, bool camel)

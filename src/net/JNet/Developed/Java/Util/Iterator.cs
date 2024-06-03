@@ -47,17 +47,11 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#hasNext()"/> 
         /// </summary>
-        public bool HasNext
-        {
-            get { return IExecute<bool>("hasNext"); }
-        }
+        public bool HasNext() => IExecute<bool>("hasNext");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#next()"/> 
         /// </summary>
-        public object Next
-        {
-            get { return IExecute("next"); }
-        }
+        public object Next() => IExecute("next");
 #if !JNETREFLECTOR
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#forEachRemaining(java.util.function.Consumer)"/>
@@ -87,11 +81,11 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#hasNext()"/> 
         /// </summary>
-        bool HasNext { get; }
+        bool HasNext();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#next()"/> 
         /// </summary>
-        E Next { get; }
+        E Next();
 #if !JNETREFLECTOR
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#forEachRemaining(java.util.function.Consumer)"/>
@@ -138,17 +132,11 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#hasNext()"/> 
         /// </summary>
-        public bool HasNext
-        {
-            get { return IExecute<bool>("hasNext"); }
-        }
+        public bool HasNext() => IExecute<bool>("hasNext");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#next()"/> 
         /// </summary>
-        public E Next
-        {
-            get { return IExecute<E>("next"); }
-        }
+        public E Next() => IExecute<E>("next");
 #if !JNETREFLECTOR
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#forEachRemaining(java.util.function.Consumer)"/>

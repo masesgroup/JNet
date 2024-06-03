@@ -1753,7 +1753,7 @@ namespace MASES.JNetReflector
                     executionParamsString = string.Format(AllPackageClasses.ClassStub.MethodStub.SINGLE_ARRAY_EXECUTION_FORMAT, parameters[0].Name);
                 }
 
-                bool isListenerReturnType = method.IsReturnTypeAListener();
+                bool isListenerReturnType = method.IsReturnTypeAListener(isGeneric);
                 bool isVoidMethod = method.IsVoid();
                 bool isReturnTypeException = method.IsReturnTypeAnException();
                 string executionStub = string.Empty;
