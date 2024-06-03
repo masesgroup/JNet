@@ -103,7 +103,7 @@ namespace MASES.JNetReflector
             {
                 AnalyzeNamespaces();
             }
-            else throw new ArgumentException("At least one of ClassesToAnaylyze, NamespacesToParse or OriginRootPath must be set");
+            else throw new ArgumentException("At least one of ClassesToAnaylyze, JarsToAnalyze or ModulesToParse must be set");
             w.Stop();
 
             if (JNetReflectorCore.JarsToAnalyze != null)
@@ -123,6 +123,8 @@ namespace MASES.JNetReflector
 
         public static void AnalyzeJars()
         {
+            if (string.IsNullOrWhiteSpace(JNetReflectorCore.OriginRootPath)) throw new ArgumentException($"OriginRootPath shall be set when the tool shall manage JAR reflection");
+
             List<string> jarNames = new List<string>(JNetReflectorCore.JarsToAnalyze.Select((o) => Path.Combine(JNetReflectorCore.OriginRootPath, o)));
             for (int i = 0; i < jarNames.Count; i++)
             {
