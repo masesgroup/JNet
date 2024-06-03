@@ -30,6 +30,7 @@ _jnr_ accepts the following command-line switch:
 * **OriginRootPath**: The origin path where Jars to be analyzed, and dependencies, are stored
 * **OriginJavadocUrl**: The base URL of the Javadoc to be associated to the classes
 * **JavadocVersion**: The version of the Javadoc to be associated to the classes, it means the Javadoc tool version used
+* **JavadocNoModule**: Do not add module in the Javadoc generated Url
 * **OriginJavadocJARVersionAndUrls**: A CSV list of keypair of JavadocVersion and OriginJavadocUrl, separated by |, associated to the JARs to be analyzed
 * **DestinationRootPath**: The destination root path where reflected classes will be stored
 * **DestinationCSharpClassPath**: The destination root path where C# reflected classes will be stored
@@ -45,10 +46,12 @@ _jnr_ accepts the following command-line switch:
 * **ClassesToAvoidInGenerics**: A CSV list of classes to be removed during analysis from the classes which have generics types
 * **ClassesManuallyDeveloped**: A CSV list of class names will be manually developed
 * **ClassesToBeListener**: A CSV list of class names to be treated as Listener, the tool consider any class which its name ends with "Listener" or "Adapter" as Listener
+* **ClassesToRemoveAsListener**: A CSV list of class names to be removed from the list of Listener identified since the tool consider any class which its name ends with "Listener" or "Adapter" as Listener
 * **ClassesToAvoidJavaListener**: A CSV list of class names to be avoided during generation of Java listener classes
 * **NamespacesInConflict**: A CSV list of namespaces in conflict with class name: to this one will be added an "Ns" at the end
 * **ClassesInConflict**: A CSV list of classes in conflict with namespace name: to this one will be added an "Class" at the end
 * **PreferMethodWithSignature**: The option forces the tool to identify and use signature when available
+* **DisablePropertiesForGetterSetter**: The option disable generation of properties for getter/setter methods
 * **OnlyPropertiesForGetterSetter**: The option forces the tool to convert into properties only getter/setter
 * **ReflectDeprecated**: The option forces the tool to write any constructor, method or field marked as deprecated, default is to avoid deprecated
 * **AvoidCSharpGenericDefinition**: The option forces the tool to reflect generics without create the C# generic definition

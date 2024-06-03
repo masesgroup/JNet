@@ -32,6 +32,7 @@ namespace MASES.JNetReflector
         public const string OriginRootPath = "OriginRootPath";
         public const string OriginJavadocUrl = "OriginJavadocUrl";
         public const string JavadocVersion = "JavadocVersion";
+        public const string JavadocNoModule = "JavadocNoModule";
         public const string OriginJavadocJARVersionAndUrls = "OriginJavadocJARVersionAndUrls";
         public const string DestinationRootPath = "DestinationRootPath";
         public const string DestinationCSharpClassPath = "DestinationCSharpClassPath";
@@ -44,6 +45,7 @@ namespace MASES.JNetReflector
         public const string ModulesToParse = "ModulesToParse";
         public const string ClassesManuallyDeveloped = "ClassesManuallyDeveloped";
         public const string ClassesToBeListener = "ClassesToBeListener";
+        public const string ClassesToRemoveAsListener = "ClassesToRemoveAsListener";
         public const string ClassesToAvoidJavaListener = "ClassesToAvoidJavaListener";
         public const string NamespacesInConflict = "NamespacesInConflict";
         public const string ClassesInConflict = "ClassesInConflict";
@@ -51,6 +53,7 @@ namespace MASES.JNetReflector
         public const string ClassesToAvoid = "ClassesToAvoid";
         public const string ClassesToAvoidInGenerics = "ClassesToAvoidInGenerics";
         public const string PreferMethodWithSignature = "PreferMethodWithSignature";
+        public const string DisablePropertiesForGetterSetter = "DisablePropertiesForGetterSetter";
         public const string OnlyPropertiesForGetterSetter = "OnlyPropertiesForGetterSetter";
         public const string ReflectDeprecated = "ReflectDeprecated";
         public const string AvoidCSharpGenericDefinition = "AvoidCSharpGenericDefinition";
@@ -81,7 +84,8 @@ namespace MASES.JNetReflector
         public const string ClassExtension = ".class";
         public const char JNISeparator = '/';
         public const char NamespaceSeparator = '.';
-        public const char NestedClassSeparator = '$'; 
+        public const char NestedClassSeparator = '$';
+        public const char ListenerNestedClassSeparator = '_';
         public const string BeginGenericDeclaration = "<";
         public const string EndGenericDeclaration = ">";
         public const string NetObject = "object";
@@ -100,6 +104,8 @@ namespace MASES.JNetReflector
         public const string JavaLangAdapter = "Adapter";
         public const string ArrayTypeTrailer = "[]";
         public const string PropertySuffix = "Property";
+        public const string ClassSuffix = "Class";
+        public const string FieldSuffix = "Field";
         public const string MethodSuffix = "Method";
         public const string DefaultMethodSuffix = "Default";
         public const string DirectMethodSuffix = "Direct";
@@ -204,6 +210,11 @@ namespace MASES.JNetReflector
             lst.Add("enum");
             lst.Add("namespace");
             lst.Add("where");
+            lst.Add("checked");
+            lst.Add("fixed");
+            lst.Add("unsafe");
+            lst.Add("bool");
+            lst.Add("string");
             return lst;
         }
 

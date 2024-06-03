@@ -49,6 +49,7 @@ namespace MASES.JNetReflector
                 }
                 public int Version { get; set; }
                 public string Url { get; set; }
+                public bool NoModule { get; set; }
             }
 
             public string JavaPLocationPath { get; set; }
@@ -57,9 +58,11 @@ namespace MASES.JNetReflector
 
             public string OriginJavadocUrl { get; set; }
 
-            public IEnumerable<VersionUrl> OriginJavadocJARVersionAndUrls { get; set; }
-
             public int JavadocVersion { get; set; }
+
+            public bool JavadocNoModule { get; set; }
+
+            public IEnumerable<VersionUrl> OriginJavadocJARVersionAndUrls { get; set; }
 
             public string DestinationRootPath { get; set; }
 
@@ -83,6 +86,8 @@ namespace MASES.JNetReflector
 
             public IEnumerable<string> ClassesToBeListener { get; set; }
 
+            public IEnumerable<string> ClassesToRemoveAsListener { get; set; }
+
             public IEnumerable<string> ClassesToAvoidJavaListener { get; set; }
 
             public IEnumerable<string> NamespacesInConflict { get; set; }
@@ -96,6 +101,8 @@ namespace MASES.JNetReflector
             public IEnumerable<string> ClassesToAvoidInGenerics { get; set; }
 
             public bool PreferMethodWithSignature { get; set; }
+
+            public bool DisablePropertiesForGetterSetter { get; set; }
 
             public bool OnlyPropertiesForGetterSetter { get; set; }
 
@@ -168,6 +175,12 @@ namespace MASES.JNetReflector
                         Type = ArgumentType.Double,
                         Default = 11,
                         Help = "The version of the Javadoc to be associated to the classes, it means the Javadoc tool version used",
+                    },
+                    new ArgumentMetadata<object>()
+                    {
+                        Name = CLIParam.JavadocNoModule,
+                        Type = ArgumentType.Single,
+                        Help = "Do not add module in the Javadoc generated Url",
                     },
                     new ArgumentMetadata<string>()
                     {
@@ -246,6 +259,12 @@ namespace MASES.JNetReflector
                     },
                     new ArgumentMetadata<string>()
                     {
+                        Name = CLIParam.ClassesToRemoveAsListener,
+                        Type = ArgumentType.Double,
+                        Help = "A CSV list of class names to be removed from the list of Listener identified since the tool consider any class which its name ends with \"Listener\" or \"Adapter\" as Listener",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
                         Name = CLIParam.ClassesToAvoidJavaListener,
                         Type = ArgumentType.Double,
                         Help = "A CSV list of class names to be avoided during generation of Java listener classes",
@@ -285,6 +304,12 @@ namespace MASES.JNetReflector
                         Name = CLIParam.PreferMethodWithSignature,
                         Type = ArgumentType.Single,
                         Help = "The option forces the tool to identify and use signature when available",
+                    },
+                    new ArgumentMetadata<object>()
+                    {
+                        Name = CLIParam.DisablePropertiesForGetterSetter,
+                        Type = ArgumentType.Single,
+                        Help = "The option disable generation of properties for getter/setter methods",
                     },
                     new ArgumentMetadata<object>()
                     {
@@ -402,11 +427,14 @@ namespace MASES.JNetReflector
         static string _OriginJavadocUrl;
         public static string OriginJavadocUrl => _OriginJavadocUrl ?? _ConfigurationFromFile.OriginJavadocUrl;
 
-        static IEnumerable<ConfigurationType.VersionUrl> _OriginJavadocJARVersionAndUrls;
-        public static IEnumerable<ConfigurationType.VersionUrl> OriginJavadocJARVersionAndUrls => _OriginJavadocJARVersionAndUrls ?? _ConfigurationFromFile.OriginJavadocJARVersionAndUrls;
-
         static int? _JavadocVersion = null;
         public static int JavadocVersion => _JavadocVersion ?? _ConfigurationFromFile.JavadocVersion;
+
+        static bool? _JavadocNoModule;
+        public static bool JavadocNoModule => _JavadocNoModule ?? _ConfigurationFromFile.JavadocNoModule;
+
+        static IEnumerable<ConfigurationType.VersionUrl> _OriginJavadocJARVersionAndUrls;
+        public static IEnumerable<ConfigurationType.VersionUrl> OriginJavadocJARVersionAndUrls => _OriginJavadocJARVersionAndUrls ?? _ConfigurationFromFile.OriginJavadocJARVersionAndUrls;
 
         static string _DestinationRootPath;
         public static string DestinationRootPath => _DestinationRootPath ?? _ConfigurationFromFile.DestinationRootPath;
@@ -442,6 +470,9 @@ namespace MASES.JNetReflector
         static IEnumerable<string> _ClassesToBeListener;
         public static IEnumerable<string> ClassesToBeListener => _ClassesToBeListener ?? _ConfigurationFromFile.ClassesToBeListener;
 
+        static IEnumerable<string> _ClassesToRemoveAsListener;
+        public static IEnumerable<string> ClassesToRemoveAsListener => _ClassesToRemoveAsListener ?? _ConfigurationFromFile.ClassesToRemoveAsListener;
+
         static IEnumerable<string> _ClassesToAvoidJavaListener;
         public static IEnumerable<string> ClassesToAvoidJavaListener => _ClassesToAvoidJavaListener ?? _ConfigurationFromFile.ClassesToAvoidJavaListener;
 
@@ -462,6 +493,9 @@ namespace MASES.JNetReflector
 
         static bool? _PreferMethodWithSignature;
         public static bool PreferMethodWithSignature => _PreferMethodWithSignature ?? _ConfigurationFromFile.PreferMethodWithSignature;
+
+        static bool? _DisablePropertiesForGetterSetter;
+        public static bool DisablePropertiesForGetterSetter => _DisablePropertiesForGetterSetter ?? _ConfigurationFromFile.DisablePropertiesForGetterSetter;
 
         static bool? _OnlyPropertiesForGetterSetter;
         public static bool OnlyPropertiesForGetterSetter => _OnlyPropertiesForGetterSetter ?? _ConfigurationFromFile.OnlyPropertiesForGetterSetter;
@@ -604,6 +638,17 @@ namespace MASES.JNetReflector
                 _ClassesToBeListener = classesToBeListener;
             }
 
+            List<string> classesToRemoveAsListener = new List<string>();
+            if (ParsedArgs.Exist(CLIParam.ClassesToRemoveAsListener))
+            {
+                var classes = ParsedArgs.Get<string>(CLIParam.ClassesToRemoveAsListener).Split(',', ';');
+                foreach (var item in classes)
+                {
+                    if (!classesToRemoveAsListener.Contains(item)) classesToRemoveAsListener.Add(item);
+                }
+                _ClassesToRemoveAsListener = classesToRemoveAsListener;
+            }
+
             List<string> classesToAvoidJavaListener = new List<string>();
             if (ParsedArgs.Exist(CLIParam.ClassesToAvoidJavaListener))
             {
@@ -680,8 +725,10 @@ namespace MASES.JNetReflector
 
             _OriginJavadocUrl = ParsedArgs.Get<string>(CLIParam.OriginJavadocUrl);
             _JavadocVersion = ParsedArgs.Get<int>(CLIParam.JavadocVersion);
+            if (ParsedArgs.Exist(CLIParam.JavadocNoModule)) _JavadocNoModule = true;
 
             if (ParsedArgs.Exist(CLIParam.PreferMethodWithSignature)) _PreferMethodWithSignature = true;
+            if (ParsedArgs.Exist(CLIParam.DisablePropertiesForGetterSetter)) _DisablePropertiesForGetterSetter = true;
             if (ParsedArgs.Exist(CLIParam.OnlyPropertiesForGetterSetter)) _OnlyPropertiesForGetterSetter = true;
             if (ParsedArgs.Exist(CLIParam.ReflectDeprecated)) _ReflectDeprecated = true;
             if (ParsedArgs.Exist(CLIParam.AvoidCSharpGenericDefinition)) _AvoidCSharpGenericDefinition = true;

@@ -26,6 +26,7 @@ using Java.Lang.Reflect;
 using System.Text;
 using MASES.JNetReflector.Templates;
 using System.Runtime.CompilerServices;
+using System.Reflection;
 
 namespace MASES.JNetReflector
 {
@@ -33,13 +34,15 @@ namespace MASES.JNetReflector
     {
         static string _CurrentJavadocBaseUrl;
         static int _CurrentJavadocVersion;
+        static bool _CurrentNoModule;
 
         #region General info
 
-        public static void SetJavaDocInfo(string currentJavadocBaseUrl, int currentJavadocVersion)
+        public static void SetJavaDocInfo(string currentJavadocBaseUrl, int currentJavadocVersion, bool noModule)
         {
             _CurrentJavadocBaseUrl = currentJavadocBaseUrl;
             _CurrentJavadocVersion = currentJavadocVersion;
+            _CurrentNoModule = noModule;
         }
 
         #endregion
@@ -121,8 +124,15 @@ namespace MASES.JNetReflector
             return false;
         }
 
+        static bool IsJVMListenerClassesToRemoveAsListener(this string typeName)
+        {
+            if (JNetReflectorCore.ClassesToRemoveAsListener != null && JNetReflectorCore.ClassesToRemoveAsListener.Any((o) => typeName == o)) return true;
+            return false;
+        }
+
         static bool IsJVMListenerClass(this string typeName)
         {
+            if (typeName.IsJVMListenerClassesToRemoveAsListener()) return false;
             if (typeName.StartsWith(SpecialNames.JavaUtilFunctions)) return true;
             if (typeName.EndsWith(SpecialNames.JavaLangListener)) return true;
             if (typeName.EndsWith(SpecialNames.JavaLangAdapter)) return true;
@@ -240,11 +250,12 @@ namespace MASES.JNetReflector
                 {
                     if (cName == cic)
                     {
-                        cName += "Class";
+                        cName += SpecialNames.ClassSuffix;
                         break;
                     }
                 }
             }
+            if (cName.IsReservedName()) cName += SpecialNames.ClassSuffix;
             return string.IsNullOrEmpty(nName) ? cName : nName + SpecialNames.NamespaceSeparator + cName;
         }
 
@@ -428,11 +439,12 @@ namespace MASES.JNetReflector
             }
         }
 
-        static string ApplyGenerics(this TypeVariable[] entries, IList<KeyValuePair<string, string>> genClause, string prefix, string name, bool usedInGenerics, bool camel)
+        static string ApplyGenerics(this TypeVariable[] entries, IList<KeyValuePair<string, string>> genClause, string prefix, string name, bool usedInGenerics, bool camel, params string[] genericTypesReplacement)
         {
             List<string> genArguments = new List<string>();
             entries.GetGenerics(genArguments, genClause, prefix, true, usedInGenerics, camel, out bool _);
-            var parameters = genArguments.ConvertGenerics();
+            var parameters = (genericTypesReplacement != null && genericTypesReplacement.Length != 0) ? genericTypesReplacement.ConvertGenerics()
+                                                                                                      : genArguments.ConvertGenerics();
             if (!string.IsNullOrEmpty(parameters))
             {
                 return $"{name}<{parameters}>";
@@ -450,7 +462,7 @@ namespace MASES.JNetReflector
                 {
                     if (!IsJVMNativeType(bound.TypeName))
                     {
-                        string result = bound.GetBound(usedInGenerics, camel);
+                        string result = bound.GetBound(usedInGenerics, camel, typeParameter.Name);
                         sbBounds.AppendFormat("{0}, ", result);
                     }
                 }
@@ -458,7 +470,7 @@ namespace MASES.JNetReflector
                 if (!string.IsNullOrEmpty(bounds))
                 {
                     bounds = bounds.Substring(0, bounds.LastIndexOf(", "));
-                    sbWhere.AppendFormat(" where {0}: {1}", typeParameter.Name, bounds);
+                    sbWhere.AppendFormat(AllPackageClasses.WHERE_CLAUSE, typeParameter.Name, bounds);
                 }
             }
             var parameters = sbWhere.ToString();
@@ -623,6 +635,21 @@ namespace MASES.JNetReflector
             return false;
         }
 
+        static bool IsParameterizedTypeWithoutGenerics(this Java.Lang.Reflect.Type entry)
+        {
+            if (entry.IsInstanceOf<ParameterizedType>())
+            {
+                bool hasGeneric = false;
+                var parType = entry.CastTo<ParameterizedType>();
+                foreach (var item in parType.ActualTypeArguments)
+                {
+                    hasGeneric |= item.IsGenerics();
+                }
+                return !hasGeneric;
+            }
+            return false;
+        }
+
         static string ApplyGenerics(this Java.Lang.Reflect.Type entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool reportNative, bool usedInGenerics, bool camel)
         {
             var retClass = entry.GetGenerics(genArguments, genClause, prefix, reportNative, usedInGenerics, camel, out bool _);
@@ -680,7 +707,7 @@ namespace MASES.JNetReflector
                 if (!string.IsNullOrEmpty(clause.Value)
                     && clause.Key != clause.Value) // this avoids circular clauses
                 {
-                    sbWhere.AppendFormat(" where {0}: {1}", clause.Key, clause.Value);
+                    sbWhere.AppendFormat(AllPackageClasses.WHERE_CLAUSE, clause.Key, clause.Value);
                 }
             }
             var parameters = sbWhere.ToString();
@@ -697,13 +724,25 @@ namespace MASES.JNetReflector
             }
         }
 
-        static string GetBound(this Java.Lang.Reflect.Type bound, bool usedInGenerics, bool camel)
+        static string GetBound(this Java.Lang.Reflect.Type bound, bool usedInGenerics, bool camel, string parentTypeName)
         {
             var bClass = bound.TypeName.JVMClass();
             string result;
             if (bClass != null && bClass.IsInterface())
             {
-                result = bClass.JVMInterfaceName(new List<KeyValuePair<string, string>>(), usedInGenerics, true) + ", new()"; // the new constraint means the type shall be a class implementing the interface
+                result = bClass.JVMInterfaceName(new List<KeyValuePair<string, string>>(), usedInGenerics, true) + AllPackageClasses.WHERE_CLAUSE_NEW; // the new constraint means the type shall be a class implementing the interface
+            }
+            else if (parentTypeName != null && bound.TypeName.Contains(SpecialNames.BeginGenericDeclaration)
+                    && bound.TypeName.Contains(SpecialNames.JavaLangAnyType))
+            {
+                var cName = bound.TypeName;
+                cName = cName.Contains('<') ? cName.Substring(0, cName.IndexOf('<')) : cName;
+                bClass = cName.JVMClass();
+                result = bClass.ToFullQualifiedClassName(usedInGenerics, camel, parentTypeName);
+            }
+            else if (bound.IsParameterizedTypeWithoutGenerics())
+            {
+                result = bound.GetGenerics(null, null, string.Empty, true, usedInGenerics, camel, out _);
             }
             else
             {
@@ -792,7 +831,7 @@ namespace MASES.JNetReflector
                 mustBeAvoided |= localMustBeAvoided;
                 foreach (var bound in expectedType.Bounds)
                 {
-                    string result = bound.GetBound(usedInGenerics, camel);
+                    string result = bound.GetBound(usedInGenerics, camel, null);
                     if (actualTypeName == SpecialNames.JavaLangAnyType && !(result == SpecialNames.NetObject || result == (SpecialNames.NetObject + SpecialNames.ArrayTypeTrailer)
                                                   || result.Contains(SpecialNames.JavaLangAnyType))) // type used in Java to define any-type
                     {
@@ -825,13 +864,14 @@ namespace MASES.JNetReflector
             genArguments?.Add(entry.Name);
             List<string> bounds = null;
             /*** this piece of code crashes the JVM
-             
+
             if (entry.Bounds.Length != 0)
             {
                 bounds = new List<string>();
                 foreach (var bound in entry.Bounds)
                 {
-                    var result = bound.GetGenerics(null, null, null, true, camel);
+                    bool toBeAvoided = false;
+                    var result = bound.GetGenerics(null, null, null, reportNative, usedInGenerics, camel, out toBeAvoided);
                     if (!(result == "object" || result == "object[]")) bounds.Add(result);
                 }
             }
@@ -844,7 +884,7 @@ namespace MASES.JNetReflector
                 bounds = new List<string>();
                 foreach (var bound in entry.Bounds)
                 {
-                    string result = bound.GetBound(usedInGenerics, camel);
+                    string result = bound.GetBound(usedInGenerics, camel, null);
                     if (!(result == SpecialNames.NetObject || result == (SpecialNames.NetObject + SpecialNames.ArrayTypeTrailer)
                         || result.Contains(SpecialNames.JavaLangAnyType))) // type used in Java to define any-type
                     {
@@ -1033,7 +1073,15 @@ namespace MASES.JNetReflector
 
         public static bool IsJVMListenerClass(this Class entry)
         {
-            return entry.TypeName.IsJVMListenerClass();
+            if (entry.TypeName.IsJVMListenerClass())
+            {
+                if (!entry.IsInterface && entry.Interfaces.Length == 0) // if a class and there aren't interfaces it is not a listener
+                {
+                    return false;
+                }
+                return true;
+            }
+            return false;
         }
 
         public static bool ImplementsJVMListenerClass(this Class entry)
@@ -1107,16 +1155,27 @@ namespace MASES.JNetReflector
             return cName.Contains(SpecialNames.NestedClassSeparator) ? cName.Substring(0, cName.LastIndexOf(SpecialNames.NestedClassSeparator)) : cName;
         }
 
+        public static string JVMListenerClassName(this Class entry)
+        {
+            var cName = entry.Name;
+            var packageName = (entry.Package != null && !string.IsNullOrWhiteSpace(entry.Package.Name)) ? entry.Package.Name 
+                                                                                                        : string.Empty;
+            cName = (!string.IsNullOrWhiteSpace(packageName) && cName.StartsWith(packageName)) ? cName.Remove(0, packageName.Length + 1) 
+                                                                                               : cName;
+            cName = cName.Replace(SpecialNames.NestedClassSeparator, SpecialNames.ListenerNestedClassSeparator);
+            return cName;
+        }
+
         public static void GetGenerics(this Class entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool usedInGenerics, bool camel)
         {
             if (!entry.IsJVMGenericClass()) return;
             entry.TypeParameters.GetGenerics(genArguments, genClause, prefix, true, usedInGenerics, camel, out bool _);
         }
 
-        static string ApplyGenerics(this Class entry, IList<KeyValuePair<string, string>> genClause, bool usedInGenerics, string name)
+        static string ApplyGenerics(this Class entry, IList<KeyValuePair<string, string>> genClause, bool usedInGenerics, string name, params string[] genericTypesReplacement)
         {
             if (!usedInGenerics || !entry.IsJVMGenericClass()) return name;
-            return entry.TypeParameters.ApplyGenerics(genClause, null, name, usedInGenerics, true);
+            return entry.TypeParameters.ApplyGenerics(genClause, null, name, usedInGenerics, true, genericTypesReplacement);
         }
 
         public static string WhereClauses(this Class entry, bool usedInGenerics, bool camel)
@@ -1125,29 +1184,39 @@ namespace MASES.JNetReflector
             StringBuilder sbWhere = new StringBuilder();
             foreach (var typeParameter in entry.TypeParameters)
             {
+                bool hasNew = false;
                 StringBuilder sbBounds = new StringBuilder();
                 foreach (var bound in typeParameter.Bounds)
                 {
                     if (!IsJVMNativeType(bound.TypeName))
                     {
                         string result;
-                        if (entry.TypeName == bound.TypeName && entry.IsJVMGenericClass() && usedInGenerics)
+                        if (entry.IsJVMGenericClass() && usedInGenerics 
+                            && (entry.TypeName == bound.TypeName || bound.TypeName.StartsWith(entry.TypeName)))
                         {
                             // force the generic class in this case
                             result = entry.ToFullQualifiedClassName(usedInGenerics, camel);
                         }
                         else
                         {
-                            result = bound.GetBound(usedInGenerics, camel);
+                            result = bound.GetBound(usedInGenerics, camel, typeParameter.Name);
                         }
+
+                        if (result.EndsWith(AllPackageClasses.WHERE_CLAUSE_NEW))
+                        {
+                            hasNew = true;
+                            result = result.Substring(0, result.IndexOf(AllPackageClasses.WHERE_CLAUSE_NEW));
+                        }
+
                         sbBounds.AppendFormat("{0}, ", result);
                     }
                 }
                 var bounds = sbBounds.ToString();
                 if (!string.IsNullOrEmpty(bounds))
                 {
+                    if (hasNew) bounds += AllPackageClasses.WHERE_CLAUSE_NEW;
                     bounds = bounds.Substring(0, bounds.LastIndexOf(", "));
-                    sbWhere.AppendFormat(" where {0}: {1}", typeParameter.Name, bounds);
+                    sbWhere.AppendFormat(AllPackageClasses.WHERE_CLAUSE, typeParameter.Name, bounds);
                 }
             }
             var parameters = sbWhere.ToString();
@@ -1160,11 +1229,11 @@ namespace MASES.JNetReflector
             return name.Replace(SpecialNames.JNISeparator, SpecialNames.NamespaceSeparator);
         }
 
-        public static string ToFullQualifiedClassName(this Class cls, bool usedInGenerics, bool camel)
+        public static string ToFullQualifiedClassName(this Class cls, bool usedInGenerics, bool camel, params string[] genericTypesReplacement)
         {
             var cName = cls.TypeName;
             cName = ToFullQualifiedClassName(cName, camel);
-            if (usedInGenerics) cName = cls.ApplyGenerics(null, usedInGenerics, cName);
+            if (usedInGenerics) cName = cls.ApplyGenerics(null, usedInGenerics, cName, genericTypesReplacement);
             return cName;
         }
 
@@ -1293,6 +1362,11 @@ namespace MASES.JNetReflector
                 }
                 return "MASES.JCOBridge.C2JBridge.JVMBridgeListener";
             }
+            else if (entry.TypeName.IsJVMListenerClassesToRemoveAsListener())
+            {
+                string className = entry.JVMClassName(null, usedInGenerics, false);
+                return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeBase<{0}>", className);
+            }
             try
             {
                 var superCls = entry.SuperClass;
@@ -1305,7 +1379,7 @@ namespace MASES.JNetReflector
                     || (JNetReflectorCore.ReflectDeprecated ? false : superCls.IsDeprecated())
                     || superCls.MustBeAvoided()
                     || superCls.TypeName == SpecialNames.JavaLangObject)
-                {
+                {              
                     if ((superCls == null || superCls.TypeName == SpecialNames.JavaLangObject) && entry.ContainsIterable())
                     {
                         string innerName = string.Empty;
@@ -2021,11 +2095,14 @@ namespace MASES.JNetReflector
                     catch (System.Exception e)
 #endif
                     {
-                        var name = module.ToString();
-                        if (!string.IsNullOrEmpty(name) && !name.StartsWith("unnamed"))
+                        if (!_CurrentNoModule)
                         {
-                            name = name.Remove(0, "module ".Length);
-                            newURl += name + "/";
+                            var name = module.ToString();
+                            if (!string.IsNullOrEmpty(name) && !name.StartsWith("unnamed"))
+                            {
+                                name = name.Remove(0, "module ".Length);
+                                newURl += name + "/";
+                            }
                         }
                     }
                 }
