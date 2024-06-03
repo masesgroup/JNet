@@ -59,6 +59,7 @@ namespace MASES.JNetReflector
         {
             var testName = entry.Contains(SpecialNames.BeginGenericDeclaration) ? entry.Substring(0, entry.IndexOf(SpecialNames.BeginGenericDeclaration)) : entry;
             if (SpecialNames.ReservedLanguageNames.Any((n) => testName.Equals(n))) return true;
+            if (SpecialNames.ReservedDevelopedNames.Any((n) => testName.Equals(n))) return true;
             if (SpecialNames.ReservedJNetNames.Any((n) => testName.Equals(n))) return true;
             if (SpecialNames.NumberStartNames.Any((n) => testName.StartsWith(n))) return true;
             return false;

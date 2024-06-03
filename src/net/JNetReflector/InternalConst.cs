@@ -218,6 +218,17 @@ namespace MASES.JNetReflector
             return lst;
         }
 
+        public static IEnumerable<string> ReservedDevelopedNames = CreateReservedDevelopedNames();
+
+        static IEnumerable<string> CreateReservedDevelopedNames()
+        {
+            List<string> lst = new List<string>();
+            lst.Add("HasNext");
+            lst.Add("Next");
+            lst.Add("Iterator");
+            return lst;
+        }
+
         public static IEnumerable<string> ReservedJNetNames = CreateReservedJNetNames();
 
         static IEnumerable<string> CreateReservedJNetNames()
