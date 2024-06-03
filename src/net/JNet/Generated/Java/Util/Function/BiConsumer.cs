@@ -340,7 +340,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
         public override Java.Util.Function.BiConsumer<T, U> AndThen<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
         {
-            return IExecuteWithSignature<Java.Util.Function.BiConsumerDirect<T, U>, Java.Util.Function.BiConsumer<T, U>>("andThen", "(Ljava/util/function/BiConsumer;)Ljava/util/function/BiConsumer;", arg0);
+            return IExecuteWithSignature<Java.Util.Function.BiConsumer<T, U>>("andThen", "(Ljava/util/function/BiConsumer;)Ljava/util/function/BiConsumer;", arg0);
         }
 
         #endregion
