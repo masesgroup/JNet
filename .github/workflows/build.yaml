@@ -226,9 +226,9 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: '1'
+     # - uses: actions/checkout@v4
+     #   with:
+     #     fetch-depth: '1'
 
       - name: Restore JNet bin from cache
         uses: actions/cache/restore@v4
@@ -243,7 +243,7 @@ jobs:
         with: # running setup-java again overwrites the settings.xml
           distribution: ${{ matrix.jdk_vendor }}
           java-version: ${{ matrix.jdk_version }}
-          cache: 'maven'
+          #cache: 'maven'
  
       - name: Executing JNetTest on Ubuntu with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
         if: matrix.os == 'ubuntu-latest'
