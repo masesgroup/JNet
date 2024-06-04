@@ -17,6 +17,7 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
+using MASES.JCOBridge.C2JBridge.JVMInterop;
 using System;
 
 namespace Java.Util.Function
@@ -40,6 +41,10 @@ namespace Java.Util.Function
     public class LongToIntFunction : JVMBridgeListener, ILongToIntFunction
     {
         /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => "org.mases.jnet.developed.java.util.function.LongToIntFunction";
@@ -53,7 +58,10 @@ namespace Java.Util.Function
         /// </summary>
         public LongToIntFunction()
         {
-            AddEventHandler("applyAsInt", new EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyAsIntEventHandler)); OnApplyAsInt = ApplyAsInt;
+            if (InitHandlers)
+            {
+                AddEventHandler("applyAsInt", new EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyAsIntEventHandler)); OnApplyAsInt = ApplyAsInt;
+            }
         }
 
         void ApplyAsIntEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
@@ -67,5 +75,53 @@ namespace Java.Util.Function
         /// <param name="o">The input of LongToIntFunction</param>
         /// <returns>The applyAsInt result</returns>
         public virtual int ApplyAsInt(long o) { return default(int); }
+    }
+
+    /// <summary>
+    /// Direct override of <see cref="LongToIntFunction"/> or its generic type if there is one
+    /// </summary>
+    public partial class LongToIntFunctionDirect : LongToIntFunction
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc />
+        protected override bool InitHandlers => false;
+
+        const string _bridgeClassName = "java.util.function.LongToIntFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => true;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => true;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongToIntFunction.html#applyAsInt(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <returns><see cref="int"/></returns>
+        public override int ApplyAsInt(long arg0)
+        {
+            return IExecuteWithSignature<int>("applyAsInt", "(J)I", arg0);
+        }
     }
 }

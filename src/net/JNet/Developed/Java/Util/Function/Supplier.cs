@@ -60,7 +60,7 @@ namespace Java.Util.Function
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="Predicate.InitHandlers"/>
+        /// <inheritdoc />
         protected override bool InitHandlers => false;
 
         /// <summary>
@@ -83,6 +83,15 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
+
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        public object Get()
+        {
+            return IExecuteWithSignature("get", "()Ljava/lang/Object;");
+        }
     }
 
     /// <summary>
@@ -121,14 +130,14 @@ namespace Java.Util.Function
     /// <summary>
     /// Direct override of <see cref="Supplier{TReturn}"/>
     /// </summary>
-    public class SupplierDirect<TReturn> : Supplier<TReturn>
+    public class SupplierDirect<T> : Supplier<T>
     {
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="Predicate.InitHandlers"/>
+        /// <inheritdoc />
         protected override bool InitHandlers => false;
 
         /// <summary>
@@ -151,5 +160,14 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
+
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/>
+        /// </summary>
+        /// <returns><typeparamref name="T"/></returns>
+        public override T Get()
+        {
+            return IExecuteWithSignature<T>("get", "()Ljava/lang/Object;");
+        }
     }
 }

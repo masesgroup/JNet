@@ -17,6 +17,7 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
+using MASES.JCOBridge.C2JBridge.JVMInterop;
 using System;
 
 namespace Java.Util.Function
@@ -39,6 +40,10 @@ namespace Java.Util.Function
     public class DoubleConsumer : JVMBridgeListener, IDoubleConsumer
     {
         /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => "org.mases.jnet.developed.java.util.function.DoubleConsumer";
@@ -52,7 +57,10 @@ namespace Java.Util.Function
         /// </summary>
         public DoubleConsumer()
         {
-            AddEventHandler("accept", new EventHandler<CLRListenerEventArgs<CLREventData<double>>>(AcceptEventHandler)); OnAccept = Accept;
+            if (InitHandlers)
+            {
+                AddEventHandler("accept", new EventHandler<CLRListenerEventArgs<CLREventData<double>>>(AcceptEventHandler)); OnAccept = Accept;
+            }
         }
 
         void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<double>> data)
@@ -64,5 +72,61 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="obj">The DoubleConsumer object</param>
         public virtual void Accept(double obj) { }
+    }
+
+    /// <summary>
+    /// Direct override of <see cref="DoubleConsumer"/> or its generic type if there is one
+    /// </summary>
+    public partial class DoubleConsumerDirect : DoubleConsumer
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc />
+        protected override bool InitHandlers => false;
+
+        const string _bridgeClassName = "java.util.function.DoubleConsumer";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => true;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => true;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleConsumer.html#accept(double)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        public override void Accept(double arg0)
+        {
+            IExecuteWithSignature("accept", "(D)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleConsumer.html#andThen(java.util.function.DoubleConsumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
+        /// <returns><see cref="Java.Util.Function.DoubleConsumer"/></returns>
+        public Java.Util.Function.DoubleConsumer AndThen(Java.Util.Function.DoubleConsumer arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Function.DoubleConsumerDirect, Java.Util.Function.DoubleConsumer>("andThen", "(Ljava/util/function/DoubleConsumer;)Ljava/util/function/DoubleConsumer;", arg0);
+        }
     }
 }

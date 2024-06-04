@@ -17,6 +17,7 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
+using MASES.JCOBridge.C2JBridge.JVMInterop;
 using System;
 
 namespace Java.Util.Function
@@ -40,6 +41,10 @@ namespace Java.Util.Function
     public class LongToDoubleFunction : JVMBridgeListener, ILongToDoubleFunction
     {
         /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => "org.mases.jnet.developed.java.util.function.LongToDoubleFunction";
@@ -53,7 +58,10 @@ namespace Java.Util.Function
         /// </summary>
         public LongToDoubleFunction()
         {
-            AddEventHandler("applyAsDouble", new EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyAsDoubleEventHandler)); OnApplyAsDouble = ApplyAsDouble;
+            if (InitHandlers)
+            {
+                AddEventHandler("applyAsDouble", new EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyAsDoubleEventHandler)); OnApplyAsDouble = ApplyAsDouble;
+            }
         }
 
         void ApplyAsDoubleEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
@@ -67,5 +75,53 @@ namespace Java.Util.Function
         /// <param name="o">The input of LongToDoubleFunction</param>
         /// <returns>The ApplyAsDouble result</returns>
         public virtual double ApplyAsDouble(long o) { return default(double); }
+    }
+
+    /// <summary>
+    /// Direct override of <see cref="LongToDoubleFunction"/> or its generic type if there is one
+    /// </summary>
+    public partial class LongToDoubleFunctionDirect : LongToDoubleFunction
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc />
+        protected override bool InitHandlers => false;
+
+        const string _bridgeClassName = "java.util.function.LongToDoubleFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => true;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => true;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongToDoubleFunction.html#applyAsDouble(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <returns><see cref="double"/></returns>
+        public override double ApplyAsDouble(long arg0)
+        {
+            return IExecuteWithSignature<double>("applyAsDouble", "(J)D", arg0);
+        }
     }
 }
