@@ -17,6 +17,7 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
+using MASES.JCOBridge.C2JBridge.JVMInterop;
 using System;
 
 namespace Java.Util.Function
@@ -40,6 +41,10 @@ namespace Java.Util.Function
     public class DoublePredicate : JVMBridgeListener, IDoublePredicate
     {
         /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => "org.mases.jnet.developed.java.util.function.DoublePredicate";
@@ -53,7 +58,10 @@ namespace Java.Util.Function
         /// </summary>
         public DoublePredicate()
         {
-            AddEventHandler("test", new EventHandler<CLRListenerEventArgs<CLREventData<double>>>(TestEventHandler)); OnTest = Test;
+            if (InitHandlers)
+            {
+                AddEventHandler("test", new EventHandler<CLRListenerEventArgs<CLREventData<double>>>(TestEventHandler)); OnTest = Test;
+            }
         }
 
         void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<double>> data)
@@ -67,5 +75,79 @@ namespace Java.Util.Function
         /// <param name="obj">The DoublePredicate object</param>
         /// <returns>The test evaluation</returns>
         public virtual bool Test(double obj) { return false; }
+    }
+
+    /// <summary>
+    /// Direct override of <see cref="DoublePredicate"/> or its generic type if there is one
+    /// </summary>
+    public partial class DoublePredicateDirect : DoublePredicate
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc />
+        protected override bool InitHandlers => false;
+
+        const string _bridgeClassName = "java.util.function.DoublePredicate";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => true;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => true;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#test(double)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public override bool Test(double arg0)
+        {
+            return IExecuteWithSignature<bool>("test", "(D)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#and(java.util.function.DoublePredicate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
+        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
+        public Java.Util.Function.DoublePredicate And(Java.Util.Function.DoublePredicate arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Function.DoublePredicateDirect, Java.Util.Function.DoublePredicate>("and", "(Ljava/util/function/DoublePredicate;)Ljava/util/function/DoublePredicate;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#negate()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
+        public Java.Util.Function.DoublePredicate Negate()
+        {
+            return IExecuteWithSignature<Java.Util.Function.DoublePredicateDirect, Java.Util.Function.DoublePredicate>("negate", "()Ljava/util/function/DoublePredicate;");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#or(java.util.function.DoublePredicate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
+        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
+        public Java.Util.Function.DoublePredicate Or(Java.Util.Function.DoublePredicate arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Function.DoublePredicateDirect, Java.Util.Function.DoublePredicate>("or", "(Ljava/util/function/DoublePredicate;)Ljava/util/function/DoublePredicate;", arg0);
+        }
     }
 }
