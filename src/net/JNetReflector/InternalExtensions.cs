@@ -60,7 +60,6 @@ namespace MASES.JNetReflector
         {
             var testName = entry.Contains(SpecialNames.BeginGenericDeclaration) ? entry.Substring(0, entry.IndexOf(SpecialNames.BeginGenericDeclaration)) : entry;
             if (SpecialNames.ReservedLanguageNames.Any((n) => testName.Equals(n))) return true;
-            if (SpecialNames.ReservedDevelopedNames.Any((n) => testName.Equals(n))) return true;
             if (SpecialNames.ReservedJNetNames.Any((n) => testName.Equals(n))) return true;
             if (SpecialNames.NumberStartNames.Any((n) => testName.StartsWith(n))) return true;
             return false;
@@ -562,7 +561,9 @@ namespace MASES.JNetReflector
 
         public static bool IsJVMListenerClass(this Java.Lang.Reflect.Type type)
         {
-            return type.TypeName.IsJVMListenerClass();
+            var typeStr = type.TypeName;
+            typeStr = typeStr.Contains('<') ? typeStr.Substring(0, typeStr.IndexOf('<')) : typeStr;
+            return typeStr.IsJVMListenerClass();
         }
 
         public static string Type(this Java.Lang.Reflect.Type type, Class clazz, IList<string> genArguments, IList<KeyValuePair<string, string>> genClauses, string prefix, bool usedInGenerics, bool camel)
@@ -1168,9 +1169,9 @@ namespace MASES.JNetReflector
         public static string JVMListenerClassName(this Class entry)
         {
             var cName = entry.Name;
-            var packageName = (entry.Package != null && !string.IsNullOrWhiteSpace(entry.Package.Name)) ? entry.Package.Name 
+            var packageName = (entry.Package != null && !string.IsNullOrWhiteSpace(entry.Package.Name)) ? entry.Package.Name
                                                                                                         : string.Empty;
-            cName = (!string.IsNullOrWhiteSpace(packageName) && cName.StartsWith(packageName)) ? cName.Remove(0, packageName.Length + 1) 
+            cName = (!string.IsNullOrWhiteSpace(packageName) && cName.StartsWith(packageName)) ? cName.Remove(0, packageName.Length + 1)
                                                                                                : cName;
             cName = cName.Replace(SpecialNames.NestedClassSeparator, SpecialNames.ListenerNestedClassSeparator);
             return cName;
@@ -1201,7 +1202,7 @@ namespace MASES.JNetReflector
                     if (!IsJVMNativeType(bound.TypeName))
                     {
                         string result;
-                        if (entry.IsJVMGenericClass() && usedInGenerics 
+                        if (entry.IsJVMGenericClass() && usedInGenerics
                             && (entry.TypeName == bound.TypeName || bound.TypeName.StartsWith(entry.TypeName)))
                         {
                             // force the generic class in this case
@@ -1389,7 +1390,7 @@ namespace MASES.JNetReflector
                     || (JNetReflectorCore.ReflectDeprecated ? false : superCls.IsDeprecated())
                     || superCls.MustBeAvoided()
                     || superCls.TypeName == SpecialNames.JavaLangObject)
-                {              
+                {
                     if ((superCls == null || superCls.TypeName == SpecialNames.JavaLangObject) && entry.ContainsIterable())
                     {
                         string innerName = string.Empty;
@@ -2397,9 +2398,9 @@ namespace MASES.JNetReflector
             {
                 return entry.ReturnType.IsJVMListenerClass();
             }
-            else if (!entry.GenericReturnType.IsGenerics())
+            else if (entry.GenericReturnType.IsGenerics())
             {
-                return true;
+                return entry.GenericReturnType.IsJVMListenerClass();
             }
             return false;
         }

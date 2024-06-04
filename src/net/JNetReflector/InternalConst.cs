@@ -193,6 +193,9 @@ namespace MASES.JNetReflector
             lst.Add("clone");
             lst.Add("build");
             lst.Add("create");
+            lst.Add("hasNext");
+            lst.Add("next");
+            lst.Add("iterator");
             return lst;
         }
 
@@ -215,17 +218,6 @@ namespace MASES.JNetReflector
             lst.Add("unsafe");
             lst.Add("bool");
             lst.Add("string");
-            return lst;
-        }
-
-        public static IEnumerable<string> ReservedDevelopedNames = CreateReservedDevelopedNames();
-
-        static IEnumerable<string> CreateReservedDevelopedNames()
-        {
-            List<string> lst = new List<string>();
-            lst.Add("HasNext");
-            lst.Add("Next");
-            lst.Add("Iterator");
             return lst;
         }
 
