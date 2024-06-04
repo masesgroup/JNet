@@ -119,7 +119,7 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="double"/></returns>
-        public override double ApplyAsDouble(int arg0)
+        public double ApplyAsDouble(int arg0)
         {
             return IExecuteWithSignature<double>("applyAsDouble", "(I)D", arg0);
         }

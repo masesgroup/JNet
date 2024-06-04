@@ -153,7 +153,7 @@ namespace Java.Util.Function
     /// <summary>
     /// Direct override of <see cref="Function{TObject, TReturn}"/>
     /// </summary>
-    public class FunctionDirect<TObject, TReturn> : Function<TObject, TReturn>
+    public class FunctionDirect<T, R> : Function<T, R>
     {
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>

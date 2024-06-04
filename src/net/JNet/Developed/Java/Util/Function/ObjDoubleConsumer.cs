@@ -87,7 +87,7 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="double"/></param>
-        public override void Accept(object arg0, double arg1)
+        public void Accept(object arg0, double arg1)
         {
             IExecute("accept", arg0, arg1);
         }

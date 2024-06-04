@@ -96,7 +96,7 @@ namespace Java.Util.Function
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
-        public override int ApplyAsInt(object arg0, object arg1)
+        public int ApplyAsInt(object arg0, object arg1)
         {
             return IExecute<int>("applyAsInt", arg0, arg1);
         }
