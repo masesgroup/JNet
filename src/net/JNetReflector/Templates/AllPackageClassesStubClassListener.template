@@ -29,7 +29,8 @@ public partial class ALLPACKAGE_CLASSES_STUB_CLASS_DIRECT_PLACEHOLDER : ALLPACKA
     protected override void InitializeHandlers() { }
 
     const string _bridgeClassName = "ALLPACKAGE_CLASSES_STUB_JAVACLASS_DIRECT_PLACEHOLDER";
-    private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+    private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+    private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
     /// <summary>
     /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
