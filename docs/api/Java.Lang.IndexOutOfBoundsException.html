@@ -98,7 +98,7 @@ Class IndexOutOfBoundsException  <a class="header-action link-secondary" title="
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class IndexOutOfBoundsException : JVMBridgeException&lt;IndexOutOfBoundsException&gt;, ISerializable, _Exception, IJVMBridgeCore</code></pre>
+    <pre><code class="lang-csharp hljs">public class IndexOutOfBoundsException : RuntimeException, ISerializable, _Exception, IJVMBridgeCore</code></pre>
   </div>
 
 
@@ -110,7 +110,10 @@ Class IndexOutOfBoundsException  <a class="header-action link-secondary" title="
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></div>
       <div><span class="xref">JVMBridgeException</span></div>
-      <div><span class="xref">JVMBridgeException</span>&lt;<a class="xref" href="Java.Lang.IndexOutOfBoundsException.html">IndexOutOfBoundsException</a>&gt;</div>
+      <div><span class="xref">JVMBridgeException</span>&lt;<a class="xref" href="Java.Lang.Throwable.html">Throwable</a>&gt;</div>
+      <div><a class="xref" href="Java.Lang.Throwable.html">Throwable</a></div>
+      <div><a class="xref" href="Java.Lang.Exception.html">Exception</a></div>
+      <div><a class="xref" href="Java.Lang.RuntimeException.html">RuntimeException</a></div>
       <div><span class="xref">IndexOutOfBoundsException</span></div>
     </dd>
   </dl>
@@ -124,21 +127,43 @@ Class IndexOutOfBoundsException  <a class="header-action link-secondary" title="
     </dd>
   </dl>
 
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Java.Lang.ArrayIndexOutOfBoundsException.html">ArrayIndexOutOfBoundsException</a></div>
+      <div><a class="xref" href="Java.Lang.StringIndexOutOfBoundsException.html">StringIndexOutOfBoundsException</a></div>
+    </dd>
+  </dl>
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <span class="xref">JVMBridgeException&lt;IndexOutOfBoundsException&gt;.Convert(JavaException)</span>
+      <a class="xref" href="Java.Lang.Throwable.html#Java_Lang_Throwable_AddSuppressed_Java_Lang_Throwable_">Throwable.AddSuppressed(Throwable)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeException&lt;IndexOutOfBoundsException&gt;.Create(params object[])</a>
+      <a class="xref" href="Java.Lang.Throwable.html#Java_Lang_Throwable_FillInStackTrace">Throwable.FillInStackTrace()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeException&lt;IndexOutOfBoundsException&gt;.CreateWithSignature(string, params object[])</a>
+      <a class="xref" href="Java.Lang.Throwable.html#Java_Lang_Throwable_Cause">Throwable.Cause</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeException&lt;IndexOutOfBoundsException&gt;.ThrowNew(params object[])</a>
+      <a class="xref" href="Java.Lang.Throwable.html#Java_Lang_Throwable_LocalizedMessage">Throwable.LocalizedMessage</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Lang.Throwable.html#Java_Lang_Throwable_Message">Throwable.Message</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeException&lt;Throwable&gt;.Convert(JavaException)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeException&lt;Throwable&gt;.Create(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeException&lt;Throwable&gt;.CreateWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeException&lt;Throwable&gt;.ThrowNew(params object[])</a>
     </div>
     <div>
       <span class="xref">JVMBridgeException.New(IJavaObject)</span>
@@ -163,9 +188,6 @@ Class IndexOutOfBoundsException  <a class="header-action link-secondary" title="
     </div>
     <div>
       <span class="xref">JVMBridgeException.IsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeException.Message</span>
     </div>
     <div>
       <span class="xref">JVMBridgeException.StackTrace</span>

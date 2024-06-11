@@ -98,7 +98,7 @@ Class Exception  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Exception : JVMBridgeException&lt;Exception&gt;, ISerializable, _Exception, IJVMBridgeCore</code></pre>
+    <pre><code class="lang-csharp hljs">public class Exception : Throwable, ISerializable, _Exception, IJVMBridgeCore</code></pre>
   </div>
 
 
@@ -110,7 +110,8 @@ Class Exception  <a class="header-action link-secondary" title="View source" hre
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></div>
       <div><span class="xref">JVMBridgeException</span></div>
-      <div><span class="xref">JVMBridgeException</span>&lt;<a class="xref" href="Java.Lang.Exception.html">Exception</a>&gt;</div>
+      <div><span class="xref">JVMBridgeException</span>&lt;<a class="xref" href="Java.Lang.Throwable.html">Throwable</a>&gt;</div>
+      <div><a class="xref" href="Java.Lang.Throwable.html">Throwable</a></div>
       <div><span class="xref">Exception</span></div>
     </dd>
   </dl>
@@ -136,10 +137,14 @@ Class Exception  <a class="header-action link-secondary" title="View source" hre
       <div><a class="xref" href="Java.Beans.IntrospectionException.html">IntrospectionException</a></div>
       <div><a class="xref" href="Java.Beans.PropertyVetoException.html">PropertyVetoException</a></div>
       <div><a class="xref" href="Java.Io.IOException.html">IOException</a></div>
+      <div><a class="xref" href="Java.Lang.CloneNotSupportedException.html">CloneNotSupportedException</a></div>
       <div><a class="xref" href="Java.Lang.Instrument.IllegalClassFormatException.html">IllegalClassFormatException</a></div>
       <div><a class="xref" href="Java.Lang.Instrument.UnmodifiableClassException.html">UnmodifiableClassException</a></div>
+      <div><a class="xref" href="Java.Lang.InterruptedException.html">InterruptedException</a></div>
       <div><a class="xref" href="Java.Lang.Invoke.LambdaConversionException.html">LambdaConversionException</a></div>
       <div><a class="xref" href="Java.Lang.Invoke.StringConcatException.html">StringConcatException</a></div>
+      <div><a class="xref" href="Java.Lang.ReflectiveOperationException.html">ReflectiveOperationException</a></div>
+      <div><a class="xref" href="Java.Lang.RuntimeException.html">RuntimeException</a></div>
       <div><a class="xref" href="Java.Net.URISyntaxException.html">URISyntaxException</a></div>
       <div><a class="xref" href="Java.Rmi.Activation.ActivationException.html">ActivationException</a></div>
       <div><a class="xref" href="Java.Rmi.AlreadyBoundException.html">AlreadyBoundException</a></div>
@@ -197,16 +202,31 @@ Class Exception  <a class="header-action link-secondary" title="View source" hre
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <span class="xref">JVMBridgeException&lt;Exception&gt;.Convert(JavaException)</span>
+      <a class="xref" href="Java.Lang.Throwable.html#Java_Lang_Throwable_AddSuppressed_Java_Lang_Throwable_">Throwable.AddSuppressed(Throwable)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeException&lt;Exception&gt;.Create(params object[])</a>
+      <a class="xref" href="Java.Lang.Throwable.html#Java_Lang_Throwable_FillInStackTrace">Throwable.FillInStackTrace()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeException&lt;Exception&gt;.CreateWithSignature(string, params object[])</a>
+      <a class="xref" href="Java.Lang.Throwable.html#Java_Lang_Throwable_Cause">Throwable.Cause</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeException&lt;Exception&gt;.ThrowNew(params object[])</a>
+      <a class="xref" href="Java.Lang.Throwable.html#Java_Lang_Throwable_LocalizedMessage">Throwable.LocalizedMessage</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Lang.Throwable.html#Java_Lang_Throwable_Message">Throwable.Message</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeException&lt;Throwable&gt;.Convert(JavaException)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeException&lt;Throwable&gt;.Create(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeException&lt;Throwable&gt;.CreateWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeException&lt;Throwable&gt;.ThrowNew(params object[])</a>
     </div>
     <div>
       <span class="xref">JVMBridgeException.New(IJavaObject)</span>
@@ -231,9 +251,6 @@ Class Exception  <a class="header-action link-secondary" title="View source" hre
     </div>
     <div>
       <span class="xref">JVMBridgeException.IsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeException.Message</span>
     </div>
     <div>
       <span class="xref">JVMBridgeException.StackTrace</span>
