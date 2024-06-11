@@ -101,6 +101,7 @@
 <li><strong>OriginRootPath</strong>: The origin path where Jars to be analyzed, and dependencies, are stored</li>
 <li><strong>OriginJavadocUrl</strong>: The base URL of the Javadoc to be associated to the classes</li>
 <li><strong>JavadocVersion</strong>: The version of the Javadoc to be associated to the classes, it means the Javadoc tool version used</li>
+<li><strong>JavadocNoModule</strong>: Do not add module in the Javadoc generated Url</li>
 <li><strong>OriginJavadocJARVersionAndUrls</strong>: A CSV list of keypair of JavadocVersion and OriginJavadocUrl, separated by |, associated to the JARs to be analyzed</li>
 <li><strong>DestinationRootPath</strong>: The destination root path where reflected classes will be stored</li>
 <li><strong>DestinationCSharpClassPath</strong>: The destination root path where C# reflected classes will be stored</li>
@@ -116,10 +117,12 @@
 <li><strong>ClassesToAvoidInGenerics</strong>: A CSV list of classes to be removed during analysis from the classes which have generics types</li>
 <li><strong>ClassesManuallyDeveloped</strong>: A CSV list of class names will be manually developed</li>
 <li><strong>ClassesToBeListener</strong>: A CSV list of class names to be treated as Listener, the tool consider any class which its name ends with &quot;Listener&quot; or &quot;Adapter&quot; as Listener</li>
+<li><strong>ClassesToRemoveAsListener</strong>: A CSV list of class names to be removed from the list of Listener identified since the tool consider any class which its name ends with &quot;Listener&quot; or &quot;Adapter&quot; as Listener</li>
 <li><strong>ClassesToAvoidJavaListener</strong>: A CSV list of class names to be avoided during generation of Java listener classes</li>
 <li><strong>NamespacesInConflict</strong>: A CSV list of namespaces in conflict with class name: to this one will be added an &quot;Ns&quot; at the end</li>
 <li><strong>ClassesInConflict</strong>: A CSV list of classes in conflict with namespace name: to this one will be added an &quot;Class&quot; at the end</li>
 <li><strong>PreferMethodWithSignature</strong>: The option forces the tool to identify and use signature when available</li>
+<li><strong>DisablePropertiesForGetterSetter</strong>: The option disable generation of properties for getter/setter methods</li>
 <li><strong>OnlyPropertiesForGetterSetter</strong>: The option forces the tool to convert into properties only getter/setter</li>
 <li><strong>ReflectDeprecated</strong>: The option forces the tool to write any constructor, method or field marked as deprecated, default is to avoid deprecated</li>
 <li><strong>AvoidCSharpGenericDefinition</strong>: The option forces the tool to reflect generics without create the C# generic definition</li>
