@@ -39,6 +39,7 @@
 		<None Remove="Generated\**" />
 		<None Remove="Specific\**" />
 		<Compile Include="Developed\Java\Lang\String.cs" />
+		<Compile Include="Generated\Java\Lang\String.cs" />
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Remove="Generated\Java\Util\Function\**" />
