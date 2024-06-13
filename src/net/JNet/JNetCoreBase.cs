@@ -294,6 +294,7 @@ namespace MASES.JNet
             }
             catch (ArgumentException)
             {
+#if !JNET_SIMPLIFIED_GENERATION
                 if (type.GetInterface(typeof(IJVMBridgeMain).Name) == null) throw;
                 var execType = type;
                 do
@@ -324,11 +325,11 @@ namespace MASES.JNet
                     execType = execType.BaseType;
                 }
                 while (execType != null && execType != typeof(object));
-
+#endif
             }
             throw new ArgumentException($"{type} does not define any IJVMBridgeMain type or interface", "type");
         }
 
-        #endregion
+#endregion
     }
 }

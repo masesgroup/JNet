@@ -14,6 +14,9 @@
 		<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
 		<RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
 	</PropertyGroup>
+	<PropertyGroup Condition="'$(GITHUB_SIMPLIFIED_GENERATION)' == 'true'">
+		<DefineConstants>$(DefineConstants);JNET_SIMPLIFIED_GENERATION</DefineConstants>
+	</PropertyGroup>
 	<ItemGroup Condition="True">
 		<jnetcore_jars Include="$(ProjectDir)\..\..\..\jars\*.*" />
 	</ItemGroup>
@@ -38,8 +41,6 @@
 		<None Remove="Developed\**" />
 		<None Remove="Generated\**" />
 		<None Remove="Specific\**" />
-		<Compile Include="Developed\Java\Lang\String.cs" />
-		<Compile Include="Generated\Java\Lang\String.cs" />
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Remove="Generated\Java\Util\Function\**" />
