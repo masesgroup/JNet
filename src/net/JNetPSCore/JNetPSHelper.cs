@@ -469,17 +469,32 @@ namespace MASES.JNetPSCore
             {
                 if (_instanceCreated) { cmdlet.WriteWarning("A new CreateGlobalInstance requested, but it was previously requested."); return; }
                 cmdlet.WriteDebug("Invoking CreateGlobalInstance");
-                _ = typeof(TClass).RunStaticMethodOn(typeof(SetupJVMWrapper<>), nameof(JNetCore<TClass>.CreateGlobalInstance));
-                cmdlet.WriteDebug("Invoked CreateGlobalInstance");
-                _instanceCreated = true;
+                try
+                {
+                    try
+                    {
+                        _ = typeof(TClass).RunStaticMethodOn(typeof(SetupJVMWrapper<>), nameof(JNetCore<TClass>.CreateGlobalInstance));
+                    }
+                    catch (TargetInvocationException tie) { throw tie.InnerException; }
+                }
+                catch (Exception jbe)
+                {
+                    cmdlet.WriteExtendedError(jbe);
+                    cmdlet.WriteWarning("Something went wrong within CreateGlobalInstance, maybe the instance is unusable.");
+                }
+                finally
+                {
+                    cmdlet.WriteDebug("Invoked CreateGlobalInstance");
+                    _instanceCreated = true;
+                }
             }
         }
         /// <summary>
-        /// Invokes <see cref="SetupJVMWrapper.Launch(Type, string[])"/> to start a Main-Class
+        /// Invokes <see cref="JNetCore{TClass}.Launch(Type, string[])"/> to start a Main-Class
         /// </summary>
         public static void Launch(Type type, params string[] args)
         {
-            _ = typeof(TClass).RunStaticMethodOn(typeof(SetupJVMWrapper), nameof(SetupJVMWrapper.Launch), type, args);
+            _ = typeof(TClass).RunStaticMethodOn(typeof(JNetCore<TClass>), nameof(JNetCore<TClass>.Launch), type, args);
         }
         /// <summary>
         /// Creates a new class instance
