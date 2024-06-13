@@ -294,7 +294,7 @@ namespace MASES.JNet
             }
             catch (ArgumentException)
             {
-#if !JNET_SIMPLIFIED_GENERATION
+#if !JNETREFLECTOR && !JNET_SIMPLIFIED_GENERATION
                 if (type.GetInterface(typeof(IJVMBridgeMain).Name) == null) throw;
                 var execType = type;
                 do
