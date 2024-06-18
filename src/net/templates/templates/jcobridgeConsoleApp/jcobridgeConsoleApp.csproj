@@ -7,6 +7,6 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="MASES.JCOBridge" Version="2.5.13" IncludeAssets="All" PrivateAssets="None" />
+    <PackageReference Include="MASES.JCOBridge" Version="2.5.14" IncludeAssets="All" PrivateAssets="None" />
   </ItemGroup>
 </Project>
