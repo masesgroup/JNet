@@ -258,7 +258,7 @@ jobs:
         shell: pwsh
         run: ${{ github.workspace }}\.github\workflows\GetLicense.ps1 ${{ secrets.JCOBRIDGE_ENCODED_2_5_15 }} ${{ github.workspace }}\JCOBridge.lic
 
-      - name: Executing JNetTest on Ubuntu with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
+      - name: Executing JNetTest on ${{ matrix.os }} with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
         if: ${{ matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest' || matrix.os == 'macos-13' }}
         run: dotnet ./bin/${{ matrix.framework }}/JNetTest.dll
         env:
