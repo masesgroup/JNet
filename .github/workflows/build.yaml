@@ -220,6 +220,10 @@ jobs:
         exclude:
           - os: ubuntu-latest
             framework: net462
+          - os: macos-latest
+            framework: net462, net6.0
+          - os: macos-13
+            framework: net462, net6.0
           - jdk_vendor: oracle
             jdk_version: 11
         
