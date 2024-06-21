@@ -254,10 +254,16 @@ jobs:
           #cache: 'maven'
  
       - name: Executing JNetTest on Ubuntu with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
-        if: ${{ matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest' || matrix.os == 'macos-13' }}
+        if: ${{ matrix.os == 'ubuntu-latest' }}
         run: dotnet ./bin/${{ matrix.framework }}/JNetTest.dll
         env:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ONLINE }}
+          
+      - name: Executing JNetTest on Ubuntu with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
+        if: ${{ matrix.os == 'macos-latest' || matrix.os == 'macos-13' }}
+        run: dotnet ./bin/${{ matrix.framework }}/JNetTest.dll
+        env:
+          JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED }}
         
       - name: Executing JNetTest on Windows with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
         if: ${{ matrix.os == 'windows-latest' && matrix.framework != 'net462' }}
