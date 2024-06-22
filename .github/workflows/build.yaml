@@ -213,13 +213,21 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ 'ubuntu-latest', 'windows-latest' ]
+        os: [ 'ubuntu-latest', 'windows-latest', 'macos-latest', 'macos-13' ]
         framework: [ 'net462', 'net6.0', 'net8.0' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle']
         jdk_version: [ '11', '17', '21' ] # only LTS versions
         exclude:
           - os: ubuntu-latest
             framework: net462
+          - os: macos-latest
+            framework: net462
+          - os: macos-latest
+            framework: net6.0
+          - os: macos-13
+            framework: net462
+          - os: macos-13
+            framework: net6.0
           - jdk_vendor: oracle
             jdk_version: 11
         
@@ -244,9 +252,9 @@ jobs:
           distribution: ${{ matrix.jdk_vendor }}
           java-version: ${{ matrix.jdk_version }}
           #cache: 'maven'
- 
-      - name: Executing JNetTest on Ubuntu with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
-        if: matrix.os == 'ubuntu-latest'
+
+      - name: Executing JNetTest on ${{ matrix.os }} with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
+        if: ${{ matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest' || matrix.os == 'macos-13' }}
         run: dotnet ./bin/${{ matrix.framework }}/JNetTest.dll
         env:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ONLINE }}
