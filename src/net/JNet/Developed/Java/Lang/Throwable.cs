@@ -50,6 +50,6 @@ namespace Java.Lang
         /// <summary>
         /// Returns the detail message string of this throwable.
         /// </summary>
-        public new string Message => IExecute<string>("getMessage");
+        public new string Message => this.BridgeInstance == null ? base.Message : IExecute<string>("getMessage");
     }
 }
