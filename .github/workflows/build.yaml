@@ -270,3 +270,24 @@ jobs:
         run: .\bin\${{ matrix.framework }}\JNetTest.exe
         env:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ONLINE }}
+          
+  final_cleanup:
+    needs: [ execute_tests ]
+    if: "always()"
+    runs-on: ubuntu-latest
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: '1'
+    
+      - name: Install GH extension
+        run: gh extension install actions/gh-actions-cache
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Clear caches
+        run: gh actions-cache delete JNet_bin_${{ github.sha }} --confirm
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
