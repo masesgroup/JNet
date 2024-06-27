@@ -85,7 +85,7 @@
 
 
   <h1 id="Java_Lang_Iterable" data-uid="Java.Lang.Iterable" class="text-break">
-Class Iterable  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Iterable.cs/#L26"><i class="bi bi-code-slash"></i></a>
+Class Iterable  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Iterable.cs/#L40"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -98,7 +98,7 @@ Class Iterable  <a class="header-action link-secondary" title="View source" href
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Iterable : JVMBridgeBaseEnumerable&lt;Iterable&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IEnumerable, IEnumerableExtension</code></pre>
+    <pre><code class="lang-csharp hljs">public class Iterable : JVMBridgeBaseEnumerable&lt;Iterable&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IEnumerable, IEnumerableExtension, IIterable</code></pre>
   </div>
 
 
@@ -127,6 +127,7 @@ Class Iterable  <a class="header-action link-secondary" title="View source" href
       <div><span class="xref">IJVMBridgeDefinition</span></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
       <div><span class="xref">IEnumerableExtension</span></div>
+      <div><a class="xref" href="Java.Lang.IIterable.html">IIterable</a></div>
     </dd>
   </dl>
 
@@ -333,6 +334,12 @@ Class Iterable  <a class="header-action link-secondary" title="View source" href
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -516,7 +523,7 @@ Class Iterable  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Java_Lang_Iterable__ctor" data-uid="Java.Lang.Iterable.#ctor">
   Iterable()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Iterable.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Iterable.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -543,7 +550,7 @@ Class Iterable  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Java_Lang_Iterable__ctor_System_Object___" data-uid="Java.Lang.Iterable.#ctor(System.Object[])">
   Iterable(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Iterable.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Iterable.cs/#L57"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -579,7 +586,7 @@ Class Iterable  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Java_Lang_Iterable_BridgeClassName" data-uid="Java.Lang.Iterable.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Iterable.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Iterable.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -611,7 +618,7 @@ Class Iterable  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Java_Lang_Iterable_IsBridgeInterface" data-uid="Java.Lang.Iterable.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Iterable.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Iterable.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -639,11 +646,15 @@ Class Iterable  <a class="header-action link-secondary" title="View source" href
 
 
 
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
   <a id="Java_Lang_Iterable_Iterator_" data-uid="Java.Lang.Iterable.Iterator*"></a>
 
   <h3 id="Java_Lang_Iterable_Iterator" data-uid="Java.Lang.Iterable.Iterator">
-  Iterator
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Iterable.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  Iterator()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Iterable.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns an iterator over elements of type <see langref="object"></see></p>
@@ -651,14 +662,11 @@ Class Iterable  <a class="header-action link-secondary" title="View source" href
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Iterator Iterator { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Iterator Iterator()</code></pre>
   </div>
 
 
-
-
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Java.Util.Iterator.html">Iterator</a></dt>
     <dd><p>An <a class="xref" href="Java.Util.Iterator-1.html">Iterator&lt;E&gt;</a></p>
@@ -673,10 +681,13 @@ Class Iterable  <a class="header-action link-secondary" title="View source" href
 
 
 
+
+
+
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Iterable.cs/#L26" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Iterable.cs/#L40" class="edit-link">Edit this page</a>
         </div>
 
 

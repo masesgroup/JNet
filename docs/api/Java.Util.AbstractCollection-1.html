@@ -85,7 +85,7 @@
 
 
   <h1 id="Java_Util_AbstractCollection_1" data-uid="Java.Util.AbstractCollection`1" class="text-break">
-Class AbstractCollection&lt;E&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L80"><i class="bi bi-code-slash"></i></a>
+Class AbstractCollection&lt;E&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L81"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -98,7 +98,7 @@ Class AbstractCollection&lt;E&gt;  <a class="header-action link-secondary" title
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AbstractCollection&lt;E&gt; : Collection&lt;E&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IEnumerableExtension, IEnumerable&lt;E&gt;, IEnumerable, IAsyncEnumerable&lt;E&gt;, ICollection&lt;E&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class AbstractCollection&lt;E&gt; : Collection&lt;E&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IEnumerableExtension, IEnumerable&lt;E&gt;, IEnumerable, IAsyncEnumerable&lt;E&gt;, IIterable&lt;E&gt;, ICollection&lt;E&gt;</code></pre>
   </div>
 
 
@@ -138,6 +138,7 @@ Class AbstractCollection&lt;E&gt;  <a class="header-action link-secondary" title
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;E&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;E&gt;</div>
+      <div><a class="xref" href="Java.Lang.IIterable-1.html">IIterable</a>&lt;E&gt;</div>
       <div><a class="xref" href="Java.Util.ICollection-1.html">ICollection</a>&lt;E&gt;</div>
     </dd>
   </dl>
@@ -367,6 +368,12 @@ Class AbstractCollection&lt;E&gt;  <a class="header-action link-secondary" title
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -553,7 +560,7 @@ Class AbstractCollection&lt;E&gt;  <a class="header-action link-secondary" title
 
   <h3 id="Java_Util_AbstractCollection_1__ctor" data-uid="Java.Util.AbstractCollection`1.#ctor">
   AbstractCollection()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L87"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -581,7 +588,7 @@ public AbstractCollection()</code></pre>
 
   <h3 id="Java_Util_AbstractCollection_1__ctor_System_Object___" data-uid="Java.Util.AbstractCollection`1.#ctor(System.Object[])">
   AbstractCollection(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -618,7 +625,7 @@ public AbstractCollection(params object[] args)</code></pre>
 
   <h3 id="Java_Util_AbstractCollection_1_BridgeClassName" data-uid="Java.Util.AbstractCollection`1.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L101"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -650,7 +657,7 @@ public AbstractCollection(params object[] args)</code></pre>
 
   <h3 id="Java_Util_AbstractCollection_1_IsBridgeAbstract" data-uid="Java.Util.AbstractCollection`1.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L105"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -682,7 +689,7 @@ public AbstractCollection(params object[] args)</code></pre>
 
   <h3 id="Java_Util_AbstractCollection_1_IsBridgeCloseable" data-uid="Java.Util.AbstractCollection`1.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L109"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -714,7 +721,7 @@ public AbstractCollection(params object[] args)</code></pre>
 
   <h3 id="Java_Util_AbstractCollection_1_IsBridgeInterface" data-uid="Java.Util.AbstractCollection`1.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L113"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -746,7 +753,7 @@ public AbstractCollection(params object[] args)</code></pre>
 
   <h3 id="Java_Util_AbstractCollection_1_IsBridgeStatic" data-uid="Java.Util.AbstractCollection`1.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L117"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -1305,7 +1312,7 @@ public AbstractCollection(params object[] args)</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L80" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L81" class="edit-link">Edit this page</a>
         </div>
 
 

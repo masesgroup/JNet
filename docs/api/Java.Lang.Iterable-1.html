@@ -85,7 +85,7 @@
 
 
   <h1 id="Java_Lang_Iterable_1" data-uid="Java.Lang.Iterable`1" class="text-break">
-Class Iterable&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Iterable.cs/#L57"><i class="bi bi-code-slash"></i></a>
+Class Iterable&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Iterable.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -98,7 +98,7 @@ Class Iterable&lt;T&gt;  <a class="header-action link-secondary" title="View sou
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Iterable&lt;T&gt; : JNetAsyncEnumerable&lt;Iterable&lt;T&gt;, T&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IEnumerableExtension, IEnumerable&lt;T&gt;, IEnumerable, IAsyncEnumerable&lt;T&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class Iterable&lt;T&gt; : JNetAsyncEnumerable&lt;Iterable&lt;T&gt;, T&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IEnumerableExtension, IEnumerable&lt;T&gt;, IEnumerable, IAsyncEnumerable&lt;T&gt;, IIterable&lt;T&gt;</code></pre>
   </div>
 
 
@@ -137,6 +137,7 @@ Class Iterable&lt;T&gt;  <a class="header-action link-secondary" title="View sou
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;T&gt;</div>
+      <div><a class="xref" href="Java.Lang.IIterable-1.html">IIterable</a>&lt;T&gt;</div>
     </dd>
   </dl>
 
@@ -351,6 +352,12 @@ Class Iterable&lt;T&gt;  <a class="header-action link-secondary" title="View sou
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -546,7 +553,7 @@ Class Iterable&lt;T&gt;  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Java_Lang_Iterable_1__ctor" data-uid="Java.Lang.Iterable`1.#ctor">
   Iterable()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Iterable.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Iterable.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -573,7 +580,7 @@ Class Iterable&lt;T&gt;  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Java_Lang_Iterable_1__ctor_System_Object___" data-uid="Java.Lang.Iterable`1.#ctor(System.Object[])">
   Iterable(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Iterable.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Iterable.cs/#L100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -609,7 +616,7 @@ Class Iterable&lt;T&gt;  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Java_Lang_Iterable_1_BridgeClassName" data-uid="Java.Lang.Iterable`1.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Iterable.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Iterable.cs/#L88"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -641,7 +648,7 @@ Class Iterable&lt;T&gt;  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Java_Lang_Iterable_1_IsBridgeInterface" data-uid="Java.Lang.Iterable`1.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Iterable.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Iterable.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -669,11 +676,15 @@ Class Iterable&lt;T&gt;  <a class="header-action link-secondary" title="View sou
 
 
 
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
   <a id="Java_Lang_Iterable_1_Iterator_" data-uid="Java.Lang.Iterable`1.Iterator*"></a>
 
   <h3 id="Java_Lang_Iterable_1_Iterator" data-uid="Java.Lang.Iterable`1.Iterator">
-  Iterator
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Iterable.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  Iterator()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Iterable.cs/#L106"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns an iterator over elements of type <code class="typeparamref">T</code>.</p>
@@ -681,14 +692,11 @@ Class Iterable&lt;T&gt;  <a class="header-action link-secondary" title="View sou
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Iterator&lt;T&gt; Iterator { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Iterator&lt;T&gt; Iterator()</code></pre>
   </div>
 
 
-
-
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Java.Util.Iterator-1.html">Iterator</a>&lt;T&gt;</dt>
     <dd><p>An <a class="xref" href="Java.Util.Iterator-1.html">Iterator&lt;E&gt;</a></p>
@@ -703,10 +711,13 @@ Class Iterable&lt;T&gt;  <a class="header-action link-secondary" title="View sou
 
 
 
+
+
+
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Iterable.cs/#L57" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Iterable.cs/#L83" class="edit-link">Edit this page</a>
         </div>
 
 

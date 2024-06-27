@@ -98,7 +98,7 @@ Class RoleUnresolvedList  <a class="header-action link-secondary" title="View so
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class RoleUnresolvedList : ArrayList&lt;object&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IEnumerableExtension, IEnumerable&lt;object&gt;, IEnumerable, IAsyncEnumerable&lt;object&gt;, ICollection&lt;object&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class RoleUnresolvedList : ArrayList&lt;object&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IEnumerableExtension, IEnumerable&lt;object&gt;, IEnumerable, IAsyncEnumerable&lt;object&gt;, IIterable&lt;object&gt;, ICollection&lt;object&gt;</code></pre>
   </div>
 
 
@@ -136,6 +136,7 @@ Class RoleUnresolvedList  <a class="header-action link-secondary" title="View so
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</div>
+      <div><a class="xref" href="Java.Lang.IIterable-1.html">IIterable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</div>
       <div><a class="xref" href="Java.Util.ICollection-1.html">ICollection</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</div>
     </dd>
   </dl>
@@ -439,6 +440,12 @@ Class RoleUnresolvedList  <a class="header-action link-secondary" title="View so
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -625,7 +632,7 @@ Class RoleUnresolvedList  <a class="header-action link-secondary" title="View so
 
   <h3 id="Javax_Management_Relation_RoleUnresolvedList__ctor" data-uid="Javax.Management.Relation.RoleUnresolvedList.#ctor">
   RoleUnresolvedList()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Relation/AllPackageClasses.cs/#L894"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Relation/AllPackageClasses.cs/#L909"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -723,7 +730,7 @@ Class RoleUnresolvedList  <a class="header-action link-secondary" title="View so
 
   <h3 id="Javax_Management_Relation_RoleUnresolvedList__ctor_System_Object___" data-uid="Javax.Management.Relation.RoleUnresolvedList.#ctor(System.Object[])">
   RoleUnresolvedList(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Relation/AllPackageClasses.cs/#L898"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Relation/AllPackageClasses.cs/#L913"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -759,7 +766,7 @@ Class RoleUnresolvedList  <a class="header-action link-secondary" title="View so
 
   <h3 id="Javax_Management_Relation_RoleUnresolvedList_BridgeClassName" data-uid="Javax.Management.Relation.RoleUnresolvedList.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Relation/AllPackageClasses.cs/#L905"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Relation/AllPackageClasses.cs/#L921"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -791,7 +798,7 @@ Class RoleUnresolvedList  <a class="header-action link-secondary" title="View so
 
   <h3 id="Javax_Management_Relation_RoleUnresolvedList_IsBridgeAbstract" data-uid="Javax.Management.Relation.RoleUnresolvedList.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Relation/AllPackageClasses.cs/#L909"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Relation/AllPackageClasses.cs/#L925"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -823,7 +830,7 @@ Class RoleUnresolvedList  <a class="header-action link-secondary" title="View so
 
   <h3 id="Javax_Management_Relation_RoleUnresolvedList_IsBridgeCloseable" data-uid="Javax.Management.Relation.RoleUnresolvedList.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Relation/AllPackageClasses.cs/#L913"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Relation/AllPackageClasses.cs/#L929"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -855,7 +862,7 @@ Class RoleUnresolvedList  <a class="header-action link-secondary" title="View so
 
   <h3 id="Javax_Management_Relation_RoleUnresolvedList_IsBridgeInterface" data-uid="Javax.Management.Relation.RoleUnresolvedList.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Relation/AllPackageClasses.cs/#L917"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Relation/AllPackageClasses.cs/#L933"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -887,7 +894,7 @@ Class RoleUnresolvedList  <a class="header-action link-secondary" title="View so
 
   <h3 id="Javax_Management_Relation_RoleUnresolvedList_IsBridgeStatic" data-uid="Javax.Management.Relation.RoleUnresolvedList.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Relation/AllPackageClasses.cs/#L921"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Relation/AllPackageClasses.cs/#L937"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>

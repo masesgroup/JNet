@@ -7774,6 +7774,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Lang.IIterable-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Lang.IIterable-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Lang.IIterable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Lang.IIterable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Lang.IOverride.yml",
       "output": {
         ".html": {
@@ -20994,6 +21014,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.BiFunctionDirect-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.BiFunctionDirect-3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.BiFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.BiFunctionDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.BiPredicate-2.yml",
       "output": {
         ".html": {
@@ -21008,6 +21048,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.BiPredicate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.BiPredicateDirect-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.BiPredicateDirect-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.BiPredicateDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.BiPredicateDirect.html"
         }
       },
       "version": ""
@@ -21064,6 +21124,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.BooleanSupplierDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.BooleanSupplierDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.Consumer-1.yml",
       "output": {
         ".html": {
@@ -21084,6 +21154,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ConsumerDirect-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ConsumerDirect-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ConsumerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ConsumerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.DoubleBinaryOperator.yml",
       "output": {
         ".html": {
@@ -21094,10 +21184,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.DoubleBinaryOperatorDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.DoubleBinaryOperatorDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.DoubleConsumer.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.DoubleConsumer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.DoubleConsumerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.DoubleConsumerDirect.html"
         }
       },
       "version": ""
@@ -21124,10 +21234,40 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.DoubleFunctionDirect-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.DoubleFunctionDirect-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.DoubleFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.DoubleFunctionDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.DoublePredicate.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.DoublePredicate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.DoublePredicateDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.DoublePredicateDirect.html"
         }
       },
       "version": ""
@@ -21144,10 +21284,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.DoubleSupplierDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.DoubleSupplierDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.DoubleToIntFunction.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.DoubleToIntFunction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.DoubleToIntFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.DoubleToIntFunctionDirect.html"
         }
       },
       "version": ""
@@ -21164,10 +21324,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.DoubleToLongFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.DoubleToLongFunctionDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.DoubleUnaryOperator.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.DoubleUnaryOperator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.DoubleUnaryOperatorDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.DoubleUnaryOperatorDirect.html"
         }
       },
       "version": ""
@@ -21654,10 +21834,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.IntBinaryOperatorDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.IntBinaryOperatorDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.IntConsumer.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.IntConsumer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.IntConsumerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.IntConsumerDirect.html"
         }
       },
       "version": ""
@@ -21684,10 +21884,40 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.IntFunctionDirect-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.IntFunctionDirect-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.IntFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.IntFunctionDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.IntPredicate.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.IntPredicate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.IntPredicateDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.IntPredicateDirect.html"
         }
       },
       "version": ""
@@ -21704,10 +21934,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.IntSupplierDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.IntSupplierDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.IntToDoubleFunction.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.IntToDoubleFunction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.IntToDoubleFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.IntToDoubleFunctionDirect.html"
         }
       },
       "version": ""
@@ -21724,10 +21974,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.IntToLongFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.IntToLongFunctionDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.IntUnaryOperator.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.IntUnaryOperator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.IntUnaryOperatorDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.IntUnaryOperatorDirect.html"
         }
       },
       "version": ""
@@ -21744,10 +22014,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.LongBinaryOperatorDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.LongBinaryOperatorDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.LongConsumer.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.LongConsumer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.LongConsumerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.LongConsumerDirect.html"
         }
       },
       "version": ""
@@ -21774,10 +22064,40 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.LongFunctionDirect-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.LongFunctionDirect-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.LongFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.LongFunctionDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.LongPredicate.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.LongPredicate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.LongPredicateDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.LongPredicateDirect.html"
         }
       },
       "version": ""
@@ -21794,10 +22114,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.LongSupplierDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.LongSupplierDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.LongToDoubleFunction.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.LongToDoubleFunction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.LongToDoubleFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.LongToDoubleFunctionDirect.html"
         }
       },
       "version": ""
@@ -21814,10 +22154,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.LongToIntFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.LongToIntFunctionDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.LongUnaryOperator.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.LongUnaryOperator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.LongUnaryOperatorDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.LongUnaryOperatorDirect.html"
         }
       },
       "version": ""
@@ -21844,6 +22204,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ObjDoubleConsumerDirect-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ObjDoubleConsumerDirect-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ObjDoubleConsumerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ObjDoubleConsumerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.ObjIntConsumer-1.yml",
       "output": {
         ".html": {
@@ -21864,6 +22244,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ObjIntConsumerDirect-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ObjIntConsumerDirect-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ObjIntConsumerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ObjIntConsumerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.ObjLongConsumer-1.yml",
       "output": {
         ".html": {
@@ -21878,6 +22278,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.ObjLongConsumer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ObjLongConsumerDirect-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ObjLongConsumerDirect-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ObjLongConsumerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ObjLongConsumerDirect.html"
         }
       },
       "version": ""
@@ -21984,6 +22404,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ToDoubleBiFunctionDirect-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ToDoubleBiFunctionDirect-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ToDoubleBiFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ToDoubleBiFunctionDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.ToDoubleFunction-1.yml",
       "output": {
         ".html": {
@@ -21998,6 +22438,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.ToDoubleFunction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ToDoubleFunctionDirect-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ToDoubleFunctionDirect-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ToDoubleFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ToDoubleFunctionDirect.html"
         }
       },
       "version": ""
@@ -22024,6 +22484,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ToIntBiFunctionDirect-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ToIntBiFunctionDirect-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ToIntBiFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ToIntBiFunctionDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.ToIntFunction-1.yml",
       "output": {
         ".html": {
@@ -22038,6 +22518,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.ToIntFunction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ToIntFunctionDirect-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ToIntFunctionDirect-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ToIntFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ToIntFunctionDirect.html"
         }
       },
       "version": ""
@@ -22064,6 +22564,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ToLongBiFunctionDirect-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ToLongBiFunctionDirect-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ToLongBiFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ToLongBiFunctionDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.ToLongFunction-1.yml",
       "output": {
         ".html": {
@@ -22084,6 +22604,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ToLongFunctionDirect-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ToLongFunctionDirect-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ToLongFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ToLongFunctionDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.UnaryOperator-1.yml",
       "output": {
         ".html": {
@@ -22098,6 +22638,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.UnaryOperator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.UnaryOperatorDirect-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.UnaryOperatorDirect-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.UnaryOperatorDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.UnaryOperatorDirect.html"
         }
       },
       "version": ""

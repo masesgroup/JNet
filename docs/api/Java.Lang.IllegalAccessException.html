@@ -98,7 +98,7 @@ Class IllegalAccessException  <a class="header-action link-secondary" title="Vie
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class IllegalAccessException : JVMBridgeException&lt;IllegalAccessException&gt;, ISerializable, _Exception, IJVMBridgeCore</code></pre>
+    <pre><code class="lang-csharp hljs">public class IllegalAccessException : ReflectiveOperationException, ISerializable, _Exception, IJVMBridgeCore</code></pre>
   </div>
 
 
@@ -110,7 +110,10 @@ Class IllegalAccessException  <a class="header-action link-secondary" title="Vie
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></div>
       <div><span class="xref">JVMBridgeException</span></div>
-      <div><span class="xref">JVMBridgeException</span>&lt;<a class="xref" href="Java.Lang.IllegalAccessException.html">IllegalAccessException</a>&gt;</div>
+      <div><span class="xref">JVMBridgeException</span>&lt;<a class="xref" href="Java.Lang.Throwable.html">Throwable</a>&gt;</div>
+      <div><a class="xref" href="Java.Lang.Throwable.html">Throwable</a></div>
+      <div><a class="xref" href="Java.Lang.Exception.html">Exception</a></div>
+      <div><a class="xref" href="Java.Lang.ReflectiveOperationException.html">ReflectiveOperationException</a></div>
       <div><span class="xref">IllegalAccessException</span></div>
     </dd>
   </dl>
@@ -129,16 +132,31 @@ Class IllegalAccessException  <a class="header-action link-secondary" title="Vie
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <span class="xref">JVMBridgeException&lt;IllegalAccessException&gt;.Convert(JavaException)</span>
+      <a class="xref" href="Java.Lang.Throwable.html#Java_Lang_Throwable_AddSuppressed_Java_Lang_Throwable_">Throwable.AddSuppressed(Throwable)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeException&lt;IllegalAccessException&gt;.Create(params object[])</a>
+      <a class="xref" href="Java.Lang.Throwable.html#Java_Lang_Throwable_FillInStackTrace">Throwable.FillInStackTrace()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeException&lt;IllegalAccessException&gt;.CreateWithSignature(string, params object[])</a>
+      <a class="xref" href="Java.Lang.Throwable.html#Java_Lang_Throwable_Cause">Throwable.Cause</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeException&lt;IllegalAccessException&gt;.ThrowNew(params object[])</a>
+      <a class="xref" href="Java.Lang.Throwable.html#Java_Lang_Throwable_LocalizedMessage">Throwable.LocalizedMessage</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Lang.Throwable.html#Java_Lang_Throwable_Message">Throwable.Message</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeException&lt;Throwable&gt;.Convert(JavaException)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeException&lt;Throwable&gt;.Create(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeException&lt;Throwable&gt;.CreateWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeException&lt;Throwable&gt;.ThrowNew(params object[])</a>
     </div>
     <div>
       <span class="xref">JVMBridgeException.New(IJavaObject)</span>
@@ -163,9 +181,6 @@ Class IllegalAccessException  <a class="header-action link-secondary" title="Vie
     </div>
     <div>
       <span class="xref">JVMBridgeException.IsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeException.Message</span>
     </div>
     <div>
       <span class="xref">JVMBridgeException.StackTrace</span>

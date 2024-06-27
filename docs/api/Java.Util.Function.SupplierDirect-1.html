@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-      <title>Class SupplierDirect&lt;TReturn&gt; | MASES Group - JNet </title>
+      <title>Class SupplierDirect&lt;T&gt; | MASES Group - JNet </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class SupplierDirect&lt;TReturn&gt; | MASES Group - JNet ">
+      <meta name="title" content="Class SupplierDirect&lt;T&gt; | MASES Group - JNet ">
       <meta name="description" content="This is a descriptive page of JNet, the Java/JVM suite for .NET">
       <meta name="description" content="Direct override of">
       <link rel="icon" href="../images/favicon.ico">
@@ -85,7 +85,7 @@
 
 
   <h1 id="Java_Util_Function_SupplierDirect_1" data-uid="Java.Util.Function.SupplierDirect`1" class="text-break">
-Class SupplierDirect&lt;TReturn&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Supplier.cs/#L124"><i class="bi bi-code-slash"></i></a>
+Class SupplierDirect&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Supplier.cs/#L133"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -98,14 +98,14 @@ Class SupplierDirect&lt;TReturn&gt;  <a class="header-action link-secondary" tit
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SupplierDirect&lt;TReturn&gt; : Supplier&lt;TReturn&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, ISupplier&lt;TReturn&gt;, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class SupplierDirect&lt;T&gt; : Supplier&lt;T&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, ISupplier&lt;T&gt;, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
   </div>
 
 
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
-    <dt><code>TReturn</code></dt>
+    <dt><code>T</code></dt>
     <dd></dd>
   </dl>
 
@@ -118,8 +118,8 @@ Class SupplierDirect&lt;TReturn&gt;  <a class="header-action link-secondary" tit
       <div><span class="xref">JVMBridgeBase</span>&lt;<span class="xref">JVMBridgeListener</span>&gt;</div>
       <div><span class="xref">JVMBridgeListener</span></div>
       <div><a class="xref" href="Java.Util.Function.Supplier.html">Supplier</a></div>
-      <div><a class="xref" href="Java.Util.Function.Supplier-1.html">Supplier</a>&lt;TReturn&gt;</div>
-      <div><span class="xref">SupplierDirect&lt;TReturn&gt;</span></div>
+      <div><a class="xref" href="Java.Util.Function.Supplier-1.html">Supplier</a>&lt;T&gt;</div>
+      <div><span class="xref">SupplierDirect&lt;T&gt;</span></div>
     </dd>
   </dl>
 
@@ -130,7 +130,7 @@ Class SupplierDirect&lt;TReturn&gt;  <a class="header-action link-secondary" tit
       <div><span class="xref">IJVMBridgeCore</span></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
       <div><span class="xref">IJVMBridgeBaseStatic</span></div>
-      <div><a class="xref" href="Java.Util.Function.ISupplier-1.html">ISupplier</a>&lt;TReturn&gt;</div>
+      <div><a class="xref" href="Java.Util.Function.ISupplier-1.html">ISupplier</a>&lt;T&gt;</div>
       <div><span class="xref">IJVMBridgeBase</span></div>
       <div><span class="xref">IJVMBridgeDefinition</span></div>
     </dd>
@@ -141,10 +141,7 @@ Class SupplierDirect&lt;TReturn&gt;  <a class="header-action link-secondary" tit
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="Java.Util.Function.Supplier-1.html#Java_Util_Function_Supplier_1_OnGet">Supplier&lt;TReturn&gt;.OnGet</a>
-    </div>
-    <div>
-      <a class="xref" href="Java.Util.Function.Supplier-1.html#Java_Util_Function_Supplier_1_Get">Supplier&lt;TReturn&gt;.Get()</a>
+      <a class="xref" href="Java.Util.Function.Supplier-1.html#Java_Util_Function_Supplier_1_OnGet">Supplier&lt;T&gt;.OnGet</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeListener.AddEventHandler(string, EventHandler)</a>
@@ -345,6 +342,12 @@ Class SupplierDirect&lt;TReturn&gt;  <a class="header-action link-secondary" tit
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -513,10 +516,10 @@ Class SupplierDirect&lt;TReturn&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Function_SupplierDirect_1_AutoInit" data-uid="Java.Util.Function.SupplierDirect`1.AutoInit">
   AutoInit
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Supplier.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Supplier.cs/#L138"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm">https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -545,7 +548,7 @@ Class SupplierDirect&lt;TReturn&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Function_SupplierDirect_1_BridgeClassName" data-uid="Java.Util.Function.SupplierDirect`1.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Supplier.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Supplier.cs/#L146"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm</a></p>
@@ -577,7 +580,7 @@ Class SupplierDirect&lt;TReturn&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Function_SupplierDirect_1_InitHandlers" data-uid="Java.Util.Function.SupplierDirect`1.InitHandlers">
   InitHandlers
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Supplier.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Supplier.cs/#L141"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Enable/disable handlers initialization, default is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a></p>
@@ -609,7 +612,7 @@ Class SupplierDirect&lt;TReturn&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Function_SupplierDirect_1_IsBridgeAbstract" data-uid="Java.Util.Function.SupplierDirect`1.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Supplier.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Supplier.cs/#L150"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -641,7 +644,7 @@ Class SupplierDirect&lt;TReturn&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Function_SupplierDirect_1_IsBridgeCloseable" data-uid="Java.Util.Function.SupplierDirect`1.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Supplier.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Supplier.cs/#L154"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -673,7 +676,7 @@ Class SupplierDirect&lt;TReturn&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Function_SupplierDirect_1_IsBridgeInterface" data-uid="Java.Util.Function.SupplierDirect`1.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Supplier.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Supplier.cs/#L158"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -705,7 +708,7 @@ Class SupplierDirect&lt;TReturn&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Function_SupplierDirect_1_IsBridgeStatic" data-uid="Java.Util.Function.SupplierDirect`1.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Supplier.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Supplier.cs/#L162"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -733,11 +736,48 @@ Class SupplierDirect&lt;TReturn&gt;  <a class="header-action link-secondary" tit
 
 
 
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Java_Util_Function_SupplierDirect_1_Get_" data-uid="Java.Util.Function.SupplierDirect`1.Get*"></a>
+
+  <h3 id="Java_Util_Function_SupplierDirect_1_Get" data-uid="Java.Util.Function.SupplierDirect`1.Get">
+  Get()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Supplier.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override T Get()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Supplier.cs/#L124" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Supplier.cs/#L133" class="edit-link">Edit this page</a>
         </div>
 
 

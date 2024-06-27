@@ -98,7 +98,7 @@ Class NavigableSet&lt;E&gt;  <a class="header-action link-secondary" title="View
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class NavigableSet&lt;E&gt; : SortedSet&lt;E&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IEnumerableExtension, IEnumerable&lt;E&gt;, IEnumerable, IAsyncEnumerable&lt;E&gt;, INavigableSet&lt;E&gt;, ISortedSet&lt;E&gt;, ISet&lt;E&gt;, ICollection&lt;E&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class NavigableSet&lt;E&gt; : SortedSet&lt;E&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IEnumerableExtension, IEnumerable&lt;E&gt;, IEnumerable, IAsyncEnumerable&lt;E&gt;, IIterable&lt;E&gt;, INavigableSet&lt;E&gt;, ISortedSet&lt;E&gt;, ISet&lt;E&gt;, ICollection&lt;E&gt;</code></pre>
   </div>
 
 
@@ -140,6 +140,7 @@ Class NavigableSet&lt;E&gt;  <a class="header-action link-secondary" title="View
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;E&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;E&gt;</div>
+      <div><a class="xref" href="Java.Lang.IIterable-1.html">IIterable</a>&lt;E&gt;</div>
       <div><a class="xref" href="Java.Util.INavigableSet-1.html">INavigableSet</a>&lt;E&gt;</div>
       <div><a class="xref" href="Java.Util.ISortedSet-1.html">ISortedSet</a>&lt;E&gt;</div>
       <div><a class="xref" href="Java.Util.ISet-1.html">ISet</a>&lt;E&gt;</div>
@@ -446,6 +447,12 @@ Class NavigableSet&lt;E&gt;  <a class="header-action link-secondary" title="View
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -632,7 +639,7 @@ Class NavigableSet&lt;E&gt;  <a class="header-action link-secondary" title="View
 
   <h3 id="Java_Util_NavigableSet_1__ctor" data-uid="Java.Util.NavigableSet`1.#ctor">
   NavigableSet()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4192"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4277"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -660,7 +667,7 @@ public NavigableSet()</code></pre>
 
   <h3 id="Java_Util_NavigableSet_1__ctor_System_Object___" data-uid="Java.Util.NavigableSet`1.#ctor(System.Object[])">
   NavigableSet(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4197"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4282"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -697,7 +704,7 @@ public NavigableSet(params object[] args)</code></pre>
 
   <h3 id="Java_Util_NavigableSet_1_BridgeClassName" data-uid="Java.Util.NavigableSet`1.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4205"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4291"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -729,7 +736,7 @@ public NavigableSet(params object[] args)</code></pre>
 
   <h3 id="Java_Util_NavigableSet_1_IsBridgeAbstract" data-uid="Java.Util.NavigableSet`1.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4209"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4295"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -761,7 +768,7 @@ public NavigableSet(params object[] args)</code></pre>
 
   <h3 id="Java_Util_NavigableSet_1_IsBridgeCloseable" data-uid="Java.Util.NavigableSet`1.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4213"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4299"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -793,7 +800,7 @@ public NavigableSet(params object[] args)</code></pre>
 
   <h3 id="Java_Util_NavigableSet_1_IsBridgeInterface" data-uid="Java.Util.NavigableSet`1.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4217"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4303"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -825,7 +832,7 @@ public NavigableSet(params object[] args)</code></pre>
 
   <h3 id="Java_Util_NavigableSet_1_IsBridgeStatic" data-uid="Java.Util.NavigableSet`1.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4221"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4307"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>

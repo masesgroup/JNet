@@ -325,6 +325,12 @@ Class Iterator  <a class="header-action link-secondary" title="View source" href
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -599,38 +605,6 @@ Class Iterator  <a class="header-action link-secondary" title="View source" href
 
 
 
-  <a id="Java_Util_Iterator_HasNext_" data-uid="Java.Util.Iterator.HasNext*"></a>
-
-  <h3 id="Java_Util_Iterator_HasNext" data-uid="Java.Util.Iterator.HasNext">
-  HasNext
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Iterator.cs/#L50"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#hasNext()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#hasNext()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool HasNext { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="Java_Util_Iterator_IsBridgeInterface_" data-uid="Java.Util.Iterator.IsBridgeInterface*"></a>
 
   <h3 id="Java_Util_Iterator_IsBridgeInterface" data-uid="Java.Util.Iterator.IsBridgeInterface">
@@ -663,38 +637,6 @@ Class Iterator  <a class="header-action link-secondary" title="View source" href
 
 
 
-  <a id="Java_Util_Iterator_Next_" data-uid="Java.Util.Iterator.Next*"></a>
-
-  <h3 id="Java_Util_Iterator_Next" data-uid="Java.Util.Iterator.Next">
-  Next
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Iterator.cs/#L57"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#next()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#next()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public object Next { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -703,7 +645,7 @@ Class Iterator  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Java_Util_Iterator_ForEachRemaining_Java_Util_Function_Consumer_" data-uid="Java.Util.Iterator.ForEachRemaining(Java.Util.Function.Consumer)">
   ForEachRemaining(Consumer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Iterator.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Iterator.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#forEachRemaining(java.util.function.Consumer)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#forEachRemaining(java.util.function.Consumer)</a></p>
@@ -732,11 +674,75 @@ Class Iterator  <a class="header-action link-secondary" title="View source" href
 
 
 
+  <a id="Java_Util_Iterator_HasNext_" data-uid="Java.Util.Iterator.HasNext*"></a>
+
+  <h3 id="Java_Util_Iterator_HasNext" data-uid="Java.Util.Iterator.HasNext">
+  HasNext()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Iterator.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#hasNext()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#hasNext()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasNext()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Iterator_Next_" data-uid="Java.Util.Iterator.Next*"></a>
+
+  <h3 id="Java_Util_Iterator_Next" data-uid="Java.Util.Iterator.Next">
+  Next()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Iterator.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#next()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#next()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Next()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_Iterator_Remove_" data-uid="Java.Util.Iterator.Remove*"></a>
 
   <h3 id="Java_Util_Iterator_Remove" data-uid="Java.Util.Iterator.Remove">
   Remove()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Iterator.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Iterator.cs/#L67"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#remove()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#remove()</a></p>

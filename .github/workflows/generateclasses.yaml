@@ -69,8 +69,13 @@ jobs:
           MASES.JNetReflector.exe -TraceLevel 0 -DestinationRootPath ..\..\src\ -ConfigurationFile ..\..\src\configuration.json
         env:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ONLINE }}
-          
+
+      - name: Try compilation
+        continue-on-error: true
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618" src\net\JNet.sln
+ 
       - name: Extract commit SHA
+        if: ${{ github.repository_owner == 'masesgroup' && inputs.GeneratePR == true }}
         run: |
           echo "GITHUB_COMMIT_MESSAGE=$(echo $GITHUB_SHA | cut -c 1-7)" >> $GITHUB_ENV
         shell: bash

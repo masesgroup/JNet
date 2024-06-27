@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-      <title>Class FunctionDirect&lt;TObject, TReturn&gt; | MASES Group - JNet </title>
+      <title>Class FunctionDirect&lt;T, R&gt; | MASES Group - JNet </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class FunctionDirect&lt;TObject, TReturn&gt; | MASES Group - JNet ">
+      <meta name="title" content="Class FunctionDirect&lt;T, R&gt; | MASES Group - JNet ">
       <meta name="description" content="This is a descriptive page of JNet, the Java/JVM suite for .NET">
       <meta name="description" content="Direct override of">
       <link rel="icon" href="../images/favicon.ico">
@@ -85,7 +85,7 @@
 
 
   <h1 id="Java_Util_Function_FunctionDirect_2" data-uid="Java.Util.Function.FunctionDirect`2" class="text-break">
-Class FunctionDirect&lt;TObject, TReturn&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Function.cs/#L129"><i class="bi bi-code-slash"></i></a>
+Class FunctionDirect&lt;T, R&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Function.cs/#L156"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -98,16 +98,16 @@ Class FunctionDirect&lt;TObject, TReturn&gt;  <a class="header-action link-secon
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class FunctionDirect&lt;TObject, TReturn&gt; : Function&lt;TObject, TReturn&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IFunction&lt;TObject, TReturn&gt;, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class FunctionDirect&lt;T, R&gt; : Function&lt;T, R&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IFunction&lt;T, R&gt;, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
   </div>
 
 
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
-    <dt><code>TObject</code></dt>
+    <dt><code>T</code></dt>
     <dd></dd>
-    <dt><code>TReturn</code></dt>
+    <dt><code>R</code></dt>
     <dd></dd>
   </dl>
 
@@ -120,8 +120,8 @@ Class FunctionDirect&lt;TObject, TReturn&gt;  <a class="header-action link-secon
       <div><span class="xref">JVMBridgeBase</span>&lt;<span class="xref">JVMBridgeListener</span>&gt;</div>
       <div><span class="xref">JVMBridgeListener</span></div>
       <div><a class="xref" href="Java.Util.Function.Function.html">Function</a></div>
-      <div><a class="xref" href="Java.Util.Function.Function-2.html">Function</a>&lt;TObject, TReturn&gt;</div>
-      <div><span class="xref">FunctionDirect&lt;TObject, TReturn&gt;</span></div>
+      <div><a class="xref" href="Java.Util.Function.Function-2.html">Function</a>&lt;T, R&gt;</div>
+      <div><span class="xref">FunctionDirect&lt;T, R&gt;</span></div>
     </dd>
   </dl>
 
@@ -132,7 +132,7 @@ Class FunctionDirect&lt;TObject, TReturn&gt;  <a class="header-action link-secon
       <div><span class="xref">IJVMBridgeCore</span></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
       <div><span class="xref">IJVMBridgeBaseStatic</span></div>
-      <div><a class="xref" href="Java.Util.Function.IFunction-2.html">IFunction</a>&lt;TObject, TReturn&gt;</div>
+      <div><a class="xref" href="Java.Util.Function.IFunction-2.html">IFunction</a>&lt;T, R&gt;</div>
       <div><span class="xref">IJVMBridgeBase</span></div>
       <div><span class="xref">IJVMBridgeDefinition</span></div>
     </dd>
@@ -143,10 +143,10 @@ Class FunctionDirect&lt;TObject, TReturn&gt;  <a class="header-action link-secon
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="Java.Util.Function.Function-2.html#Java_Util_Function_Function_2_OnApply">Function&lt;TObject, TReturn&gt;.OnApply</a>
+      <a class="xref" href="Java.Util.Function.Function-2.html#Java_Util_Function_Function_2_OnApply">Function&lt;T, R&gt;.OnApply</a>
     </div>
     <div>
-      <a class="xref" href="Java.Util.Function.Function-2.html#Java_Util_Function_Function_2_Apply__0_">Function&lt;TObject, TReturn&gt;.Apply(TObject)</a>
+      <a class="xref" href="Java.Util.Function.Function-2.html#Java_Util_Function_Function_2_Apply__0_">Function&lt;T, R&gt;.Apply(T)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeListener.AddEventHandler(string, EventHandler)</a>
@@ -347,6 +347,12 @@ Class FunctionDirect&lt;TObject, TReturn&gt;  <a class="header-action link-secon
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -515,10 +521,10 @@ Class FunctionDirect&lt;TObject, TReturn&gt;  <a class="header-action link-secon
 
   <h3 id="Java_Util_Function_FunctionDirect_2_AutoInit" data-uid="Java.Util.Function.FunctionDirect`2.AutoInit">
   AutoInit
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Function.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Function.cs/#L161"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm">https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -547,7 +553,7 @@ Class FunctionDirect&lt;TObject, TReturn&gt;  <a class="header-action link-secon
 
   <h3 id="Java_Util_Function_FunctionDirect_2_BridgeClassName" data-uid="Java.Util.Function.FunctionDirect`2.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Function.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Function.cs/#L169"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm</a></p>
@@ -579,7 +585,7 @@ Class FunctionDirect&lt;TObject, TReturn&gt;  <a class="header-action link-secon
 
   <h3 id="Java_Util_Function_FunctionDirect_2_InitHandlers" data-uid="Java.Util.Function.FunctionDirect`2.InitHandlers">
   InitHandlers
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Function.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Function.cs/#L164"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Enable/disable handlers initialization, default is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a></p>
@@ -611,7 +617,7 @@ Class FunctionDirect&lt;TObject, TReturn&gt;  <a class="header-action link-secon
 
   <h3 id="Java_Util_Function_FunctionDirect_2_IsBridgeAbstract" data-uid="Java.Util.Function.FunctionDirect`2.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Function.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Function.cs/#L173"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -643,7 +649,7 @@ Class FunctionDirect&lt;TObject, TReturn&gt;  <a class="header-action link-secon
 
   <h3 id="Java_Util_Function_FunctionDirect_2_IsBridgeCloseable" data-uid="Java.Util.Function.FunctionDirect`2.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Function.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Function.cs/#L177"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -675,7 +681,7 @@ Class FunctionDirect&lt;TObject, TReturn&gt;  <a class="header-action link-secon
 
   <h3 id="Java_Util_Function_FunctionDirect_2_IsBridgeInterface" data-uid="Java.Util.Function.FunctionDirect`2.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Function.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Function.cs/#L181"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -707,7 +713,7 @@ Class FunctionDirect&lt;TObject, TReturn&gt;  <a class="header-action link-secon
 
   <h3 id="Java_Util_Function_FunctionDirect_2_IsBridgeStatic" data-uid="Java.Util.Function.FunctionDirect`2.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Function.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Function.cs/#L185"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -735,11 +741,154 @@ Class FunctionDirect&lt;TObject, TReturn&gt;  <a class="header-action link-secon
 
 
 
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Java_Util_Function_FunctionDirect_2_AndThen_" data-uid="Java.Util.Function.FunctionDirect`2.AndThen*"></a>
+
+  <h3 id="Java_Util_Function_FunctionDirect_2_AndThen__3_Java_Util_Function_Function___1___2__" data-uid="Java.Util.Function.FunctionDirect`2.AndThen``3(Java.Util.Function.Function{``1,``2})">
+  AndThen&lt;V, Arg0objectSuperR, Arg0ExtendsV&gt;(Function&lt;Arg0objectSuperR, Arg0ExtendsV&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Function.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Function&lt;T, V&gt; AndThen&lt;V, Arg0objectSuperR, Arg0ExtendsV&gt;(Function&lt;Arg0objectSuperR, Arg0ExtendsV&gt; arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.Function-2.html">Function</a>&lt;Arg0objectSuperR, Arg0ExtendsV&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Function.html">Function</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Function.Function-2.html">Function</a>&lt;T, V&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Function.html">Function</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>V</code></dt>
+    <dd></dd>
+    <dt><code>Arg0objectSuperR</code></dt>
+    <dd><p><code class="typeparamref">R</code></p>
+</dd>
+    <dt><code>Arg0ExtendsV</code></dt>
+    <dd><p><code class="typeparamref">V</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Function_FunctionDirect_2_Apply_" data-uid="Java.Util.Function.FunctionDirect`2.Apply*"></a>
+
+  <h3 id="Java_Util_Function_FunctionDirect_2_Apply__0_" data-uid="Java.Util.Function.FunctionDirect`2.Apply(`0)">
+  Apply(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Function.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#apply(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#apply(java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override R Apply(T arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <span class="xref">T</span></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">R</span></dt>
+    <dd><p><code class="typeparamref">R</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Function_FunctionDirect_2_Compose_" data-uid="Java.Util.Function.FunctionDirect`2.Compose*"></a>
+
+  <h3 id="Java_Util_Function_FunctionDirect_2_Compose__3_Java_Util_Function_Function___1___2__" data-uid="Java.Util.Function.FunctionDirect`2.Compose``3(Java.Util.Function.Function{``1,``2})">
+  Compose&lt;V, Arg0objectSuperV, Arg0ExtendsT&gt;(Function&lt;Arg0objectSuperV, Arg0ExtendsT&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Function.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Function&lt;V, R&gt; Compose&lt;V, Arg0objectSuperV, Arg0ExtendsT&gt;(Function&lt;Arg0objectSuperV, Arg0ExtendsT&gt; arg0) where Arg0objectSuperV : V where Arg0ExtendsT : T</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.Function-2.html">Function</a>&lt;Arg0objectSuperV, Arg0ExtendsT&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Function.html">Function</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Function.Function-2.html">Function</a>&lt;V, R&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Function.html">Function</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>V</code></dt>
+    <dd></dd>
+    <dt><code>Arg0objectSuperV</code></dt>
+    <dd><p><code class="typeparamref">V</code></p>
+</dd>
+    <dt><code>Arg0ExtendsT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Function.cs/#L129" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Function/Function.cs/#L156" class="edit-link">Edit this page</a>
         </div>
 
 

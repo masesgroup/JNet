@@ -98,7 +98,7 @@ Class PriorityQueue  <a class="header-action link-secondary" title="View source"
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class PriorityQueue : AbstractQueue, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IEnumerable, IEnumerableExtension</code></pre>
+    <pre><code class="lang-csharp hljs">public class PriorityQueue : AbstractQueue, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IEnumerable, IEnumerableExtension, IIterable</code></pre>
   </div>
 
 
@@ -131,6 +131,7 @@ Class PriorityQueue  <a class="header-action link-secondary" title="View source"
       <div><span class="xref">IJVMBridgeDefinition</span></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
       <div><span class="xref">IEnumerableExtension</span></div>
+      <div><a class="xref" href="Java.Lang.IIterable.html">IIterable</a></div>
     </dd>
   </dl>
 
@@ -388,6 +389,12 @@ Class PriorityQueue  <a class="header-action link-secondary" title="View source"
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -562,7 +569,7 @@ Class PriorityQueue  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Java_Util_PriorityQueue__ctor" data-uid="Java.Util.PriorityQueue.#ctor">
   PriorityQueue()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4752"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4849"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -721,7 +728,7 @@ Class PriorityQueue  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Java_Util_PriorityQueue__ctor_System_Object___" data-uid="Java.Util.PriorityQueue.#ctor(System.Object[])">
   PriorityQueue(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4756"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4853"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -757,7 +764,7 @@ Class PriorityQueue  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Java_Util_PriorityQueue_BridgeClassName" data-uid="Java.Util.PriorityQueue.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4763"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4861"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -789,7 +796,7 @@ Class PriorityQueue  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Java_Util_PriorityQueue_IsBridgeAbstract" data-uid="Java.Util.PriorityQueue.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4767"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4865"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -821,7 +828,7 @@ Class PriorityQueue  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Java_Util_PriorityQueue_IsBridgeCloseable" data-uid="Java.Util.PriorityQueue.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4771"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4869"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -853,7 +860,7 @@ Class PriorityQueue  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Java_Util_PriorityQueue_IsBridgeInterface" data-uid="Java.Util.PriorityQueue.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4775"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4873"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -885,7 +892,7 @@ Class PriorityQueue  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Java_Util_PriorityQueue_IsBridgeStatic" data-uid="Java.Util.PriorityQueue.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4779"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4877"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
