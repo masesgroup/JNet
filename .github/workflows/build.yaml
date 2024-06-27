@@ -206,7 +206,7 @@ jobs:
         with:
           enableCrossOsArchive: true
           path: ./bin/
-          key: JNet_bin_${{ github.sha }}
+          key: JNet_${{ github.run_number }}_${{ github.run_attempt }}_bin_${{ github.sha }}
           
   execute_tests:
     needs: build_windows
@@ -244,7 +244,7 @@ jobs:
           fail-on-cache-miss: true
           enableCrossOsArchive: true
           path: ./bin/
-          key: JNet_bin_${{ github.sha }}
+          key: JNet_${{ github.run_number }}_${{ github.run_attempt }}_bin_${{ github.sha }}
  
       - name: Set up JDK distribution
         uses: actions/setup-java@v4
@@ -286,7 +286,7 @@ jobs:
         run: |
           gh extension install actions/gh-actions-cache
           echo "Fetching list of cache key"
-          cacheKeysForPR=$(gh actions-cache list --key JNet )
+          cacheKeysForPR=$(gh actions-cache list --key JNet_${{ github.run_number }}_${{ github.run_attempt }} )
           ## Setting this to not fail the workflow while deleting cache keys.
           set +e
           echo "Deleting caches..."
