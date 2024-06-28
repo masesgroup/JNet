@@ -1,4 +1,4 @@
-FROM --platform=$TARGETPLATFORM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
+FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:8.0-jammy AS build-env
 ARG TARGETARCH
 WORKDIR /app
 
@@ -8,10 +8,10 @@ ENV JNET_DOCKER_BUILD_ACTIONS=true
 # Restore as distinct layers
 RUN dotnet restore JNetDocker.sln -a $TARGETARCH
 # Build and publish a release
-RUN dotnet publish ./JNetCLI/JNetCLI.csproj --framework net6.0 -c Release -o out -a $TARGETARCH
+RUN dotnet publish ./JNetCLI/JNetCLI.csproj --framework net8.0 -c Release -o out -a $TARGETARCH
 
 # Build runtime image
-FROM --platform=$TARGETPLATFORM mcr.microsoft.com/dotnet/runtime:6.0
+FROM --platform=$TARGETPLATFORM mcr.microsoft.com/dotnet/runtime:8.0-jammy
 ARG TARGETARCH
 
 # Add JRE
