@@ -11,7 +11,7 @@ RUN dotnet restore JNetDocker.sln -a $TARGETARCH
 RUN dotnet publish ./JNetCLI/JNetCLI.csproj --framework net8.0 -c Release -o out -a $TARGETARCH
 
 # Build runtime image
-FROM --platform=$TARGETPLATFORM mcr.microsoft.com/dotnet/runtime:8.0-jammy
+FROM mcr.microsoft.com/dotnet/runtime:8.0-jammy
 ARG TARGETARCH
 
 # Add JRE
