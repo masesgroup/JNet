@@ -210,9 +210,13 @@ jobs:
         run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618" src\net\JNet.sln
 
       - uses: actions/upload-artifact@v4
+        id: upload-artifact-JNetNuGet
         with:
           name: JNetNuGet
           path: .\bin\*nupkg
+
+      - name: Output artifact ID
+        run: echo 'Artifact ID is ${{ steps.upload-artifact-JNetNuGet.outputs.artifact-id }}'
 
       - name: Compile tests and templates
         run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618" tests\net\JNetTest.sln
