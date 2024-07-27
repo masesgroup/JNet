@@ -18,7 +18,7 @@
 		<DefineConstants>$(DefineConstants);JNET_SIMPLIFIED_GENERATION</DefineConstants>
 	</PropertyGroup>
 	<ItemGroup Condition="True">
-		<jnetcore_jars Include="$(ProjectDir)\..\..\..\jars\*.*" />
+		<jnetcore_jars Include="$(ProjectDir)\..\..\..\jars\jnet-*.*" />
 	</ItemGroup>
 	<Target Name="CopyCustomContent" AfterTargets="AfterBuild" Condition="'$(GITHUB_ACTIONS)' != 'true' Or '$(GITHUB_TEST_PREPARATION)' == 'true'">
 		<Copy SourceFiles="@(jnetcore_jars)" DestinationFolder="$(OutDir)\jars" />

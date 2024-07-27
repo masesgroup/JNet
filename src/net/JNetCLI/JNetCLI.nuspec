@@ -24,7 +24,7 @@
 		<file src="..\..\..\LICENSE" target="LICENSE" />
 		<file src="..\Common\JCOB128x128.png" target="" />
 		<file src="..\..\documentation\articles\usageCLI.md" target="" />
-		<file src="..\..\..\jars\" target="tools\net8.0\any\jars\" />
+		<file src="..\..\..\jars\jnet-*.jar" target="tools\net8.0\any\jars\" />
 		<file src="..\..\..\binCLI\net8.0\" target="tools\net8.0\any\" />
 	</files>
 </package>
