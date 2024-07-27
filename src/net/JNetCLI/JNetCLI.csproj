@@ -16,7 +16,7 @@
     <RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
   </PropertyGroup>
 	<ItemGroup>
-		<jnetcli_jars Include="$(ProjectDir)\..\..\..\jars\jnet-*.*" />
+		<jnetcli_jars Include="$(ProjectDir)\..\..\..\jars\jnet-*" />
 		<None Include="..\..\documentation\articles\usageReflector.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 	<Target Name="CopyCustomContent" AfterTargets="AfterBuild">
