@@ -74,6 +74,10 @@ namespace MASES.JNet
                     version = version.Substring(0, version.LastIndexOf(".0"));
                     jnetFile = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(assembly.Location), JARsSubFolder, $"jnet-{version}.jar");
                 }
+                if (!System.IO.File.Exists(jnetFile))
+                {
+                    throw new System.IO.FileNotFoundException("Unable to identify JNet Jar location", jnetFile);
+                }
                 var lst = base.PathToParse;
                 lst.Add(jnetFile);
                 return lst;
