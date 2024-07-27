@@ -28,7 +28,7 @@
 	</Target>
 	<ItemGroup>
 		<None Include="mases.jnet.targets" Pack="true" PackagePath="build" />
-		<None Include="..\..\..\jars\*.jar" Pack="true" PackagePath="build\jars" />
+		<None Include="..\..\..\jars\jnet-*" Pack="true" PackagePath="build\jars" />
 		<None Include="..\..\documentation\articles\usage.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 	<ItemGroup Condition="'$(GITHUB_SIMPLIFIED_GENERATION)' == 'true'">
