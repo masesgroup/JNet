@@ -17,7 +17,7 @@ ARG TARGETARCH
 # Add JRE
 RUN apt-get update && apt-get install -y --no-install-recommends openjdk-17-jre-headless && rm -rf /var/lib/apt/lists/*
 
-ADD ./jars /app/jars
+ADD ./jars/jnet-*.jar /app/jars
 
 ENV JCOBRIDGE_JVMPath=/usr/lib/jvm/java-17-openjdk-$TARGETARCH/lib/server/libjvm.so
 ENV JCOBRIDGE_LicensePath=

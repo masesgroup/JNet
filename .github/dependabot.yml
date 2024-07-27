@@ -9,8 +9,9 @@ updates:
     directory: "/src/net" # Location of package manifests
     schedule:
       interval: "weekly"
+
   - package-ecosystem: maven
-    directory: "/src/java/jnet"
+    directory: "/src/jvm/jnet"
     schedule:
       interval: "weekly"
 
