@@ -30,6 +30,14 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#%3Cinit%3E(java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        public ConcurrentSkipListMap(Java.Util.Comparator arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
@@ -73,6 +81,14 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#comparator()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public Java.Util.Comparator Comparator()
+        {
+            return IExecuteWithSignature<Java.Util.Comparator>("comparator", "()Ljava/util/Comparator;");
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#descendingMap()"/>
         /// </summary>
@@ -301,6 +317,14 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#%3Cinit%3E(java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        public ConcurrentSkipListMap(Java.Util.Comparator<K> arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
@@ -348,6 +372,15 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#comparator()"/>
+        /// </summary>
+        /// <typeparam name="ReturnobjectSuperK"><typeparamref name="K"/></typeparam>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public Java.Util.Comparator<ReturnobjectSuperK> Comparator<ReturnobjectSuperK>() where ReturnobjectSuperK : K
+        {
+            return IExecuteWithSignature<Java.Util.Comparator<ReturnobjectSuperK>>("comparator", "()Ljava/util/Comparator;");
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#descendingMap()"/>
         /// </summary>

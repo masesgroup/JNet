@@ -94,6 +94,13 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#getComparator()"/> 
+        /// </summary>
+        public Java.Util.Comparator Comparator
+        {
+            get { return IExecuteWithSignature<Java.Util.Comparator>("getComparator", "()Ljava/util/Comparator;"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#getExactSizeIfKnown()"/> 
         /// </summary>
         public long ExactSizeIfKnown
@@ -561,6 +568,10 @@ namespace Java.Util
     {
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#getComparator()"/> 
+        /// </summary>
+        Java.Util.Comparator Comparator { get; }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#getExactSizeIfKnown()"/> 
         /// </summary>
         long ExactSizeIfKnown { get; }
@@ -681,6 +692,13 @@ namespace Java.Util
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#getComparator()"/> 
+        /// </summary>
+        public Java.Util.Comparator Comparator
+        {
+            get { return IExecuteWithSignature<Java.Util.Comparator>("getComparator", "()Ljava/util/Comparator;"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#getExactSizeIfKnown()"/> 
         /// </summary>

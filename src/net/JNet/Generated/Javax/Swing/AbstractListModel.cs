@@ -61,6 +61,15 @@ namespace Javax.Swing
             get { return IExecuteWithSignatureArray<Javax.Swing.Event.ListDataListener>("getListDataListeners", "()[Ljavax/swing/event/ListDataListener;"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#getListeners(java.lang.Class)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.EventListener"/></returns>
+        public Java.Util.EventListener[] GetListeners(Java.Lang.Class arg0)
+        {
+            return IExecuteArray<Java.Util.EventListener>("getListeners", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#addListDataListener(javax.swing.event.ListDataListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataListener"/></param>
@@ -125,6 +134,16 @@ namespace Javax.Swing
         public Javax.Swing.Event.ListDataListener[] ListDataListeners
         {
             get { return IExecuteWithSignatureArray<Javax.Swing.Event.ListDataListener>("getListDataListeners", "()[Ljavax/swing/event/ListDataListener;"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#getListeners(java.lang.Class)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="T"><see cref="Java.Util.IEventListener"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        public T[] GetListeners<T>(Java.Lang.Class arg0) where T : Java.Util.IEventListener, new()
+        {
+            return IExecuteArray<T>("getListeners", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#addListDataListener(javax.swing.event.ListDataListener)"/>
