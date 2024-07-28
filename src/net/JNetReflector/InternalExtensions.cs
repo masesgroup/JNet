@@ -738,8 +738,8 @@ namespace MASES.JNetReflector
         static string GetBound(this Java.Lang.Reflect.Type bound, bool usedInGenerics, bool camel, string parentTypeName)
         {
             var bClass = bound.TypeName.JVMClass();
-            if (bClass.IsClassToAvoid()) return string.Empty;
-            string result;
+            if (bClass != null && bClass.IsClassToAvoid()) return string.Empty;
+            string result = string.Empty;
             if (bClass != null && bClass.IsInterface())
             {
                 result = bClass.JVMInterfaceName(new List<KeyValuePair<string, string>>(), usedInGenerics, true) + AllPackageClasses.WHERE_CLAUSE_NEW; // the new constraint means the type shall be a class implementing the interface
@@ -750,7 +750,10 @@ namespace MASES.JNetReflector
                 var cName = bound.TypeName;
                 cName = cName.Contains('<') ? cName.Substring(0, cName.IndexOf('<')) : cName;
                 bClass = cName.JVMClass();
-                result = bClass.ToFullQualifiedClassName(usedInGenerics, camel, parentTypeName);
+                if (bClass != null && !bClass.IsClassToAvoid())
+                {
+                    result = bClass.ToFullQualifiedClassName(usedInGenerics, camel, parentTypeName);
+                }
             }
             else if (bound.IsParameterizedTypeWithoutGenerics())
             {
