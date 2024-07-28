@@ -464,7 +464,7 @@ namespace MASES.JNetReflector
                     if (!IsJVMNativeType(bound.TypeName))
                     {
                         string result = bound.GetBound(usedInGenerics, camel, typeParameter.Name);
-                        sbBounds.AppendFormat("{0}, ", result);
+                        if (!string.IsNullOrWhiteSpace(result)) sbBounds.AppendFormat("{0}, ", result);
                     }
                 }
                 var bounds = sbBounds.ToString();
@@ -738,6 +738,7 @@ namespace MASES.JNetReflector
         static string GetBound(this Java.Lang.Reflect.Type bound, bool usedInGenerics, bool camel, string parentTypeName)
         {
             var bClass = bound.TypeName.JVMClass();
+            if (bClass.IsClassToAvoid()) return string.Empty;
             string result;
             if (bClass != null && bClass.IsInterface())
             {
@@ -843,6 +844,7 @@ namespace MASES.JNetReflector
                 foreach (var bound in expectedType.Bounds)
                 {
                     string result = bound.GetBound(usedInGenerics, camel, null);
+                    if (string.IsNullOrWhiteSpace(result)) continue;
                     if (actualTypeName == SpecialNames.JavaLangAnyType && !(result == SpecialNames.NetObject || result == (SpecialNames.NetObject + SpecialNames.ArrayTypeTrailer)
                                                   || result.Contains(SpecialNames.JavaLangAnyType))) // type used in Java to define any-type
                     {
@@ -896,6 +898,7 @@ namespace MASES.JNetReflector
                 foreach (var bound in entry.Bounds)
                 {
                     string result = bound.GetBound(usedInGenerics, camel, null);
+                    if (string.IsNullOrWhiteSpace(result)) continue;
                     if (!(result == SpecialNames.NetObject || result == (SpecialNames.NetObject + SpecialNames.ArrayTypeTrailer)
                         || result.Contains(SpecialNames.JavaLangAnyType))) // type used in Java to define any-type
                     {
@@ -1219,7 +1222,7 @@ namespace MASES.JNetReflector
                             result = result.Substring(0, result.IndexOf(AllPackageClasses.WHERE_CLAUSE_NEW));
                         }
 
-                        sbBounds.AppendFormat("{0}, ", result);
+                        if (!string.IsNullOrWhiteSpace(result)) sbBounds.AppendFormat("{0}, ", result);
                     }
                 }
                 var bounds = sbBounds.ToString();
