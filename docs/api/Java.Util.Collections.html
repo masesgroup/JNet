@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -871,7 +871,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_AsLifoQueue__1_Java_Util_Deque___0__" data-uid="Java.Util.Collections.AsLifoQueue``1(Java.Util.Deque{``0})">
   AsLifoQueue&lt;T&gt;(Deque&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L450"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L483"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#asLifoQueue(java.util.Deque)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#asLifoQueue(java.util.Deque)</a></p>
@@ -900,6 +900,62 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
   <dl class="parameters">
     <dt><code>T</code></dt>
     <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Collections_BinarySearch_" data-uid="Java.Util.Collections.BinarySearch*"></a>
+
+  <h3 id="Java_Util_Collections_BinarySearch__3_Java_Util_List___0____1_Java_Util_Comparator___2__" data-uid="Java.Util.Collections.BinarySearch``3(Java.Util.List{``0},``1,Java.Util.Comparator{``2})">
+  BinarySearch&lt;Arg0ExtendsT, T, Arg2objectSuperT&gt;(List&lt;Arg0ExtendsT&gt;, T, Comparator&lt;Arg2objectSuperT&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L324"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#binarySearch(java.util.List,java.lang.Object,java.util.Comparator)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#binarySearch(java.util.List,java.lang.Object,java.util.Comparator)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BinarySearch&lt;Arg0ExtendsT, T, Arg2objectSuperT&gt;(List&lt;Arg0ExtendsT&gt; arg0, T arg1, Comparator&lt;Arg2objectSuperT&gt; arg2) where Arg0ExtendsT : T where Arg2objectSuperT : T</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.List-1.html">List</a>&lt;Arg0ExtendsT&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+    <dt><code>arg1</code> <span class="xref">T</span></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Util.Comparator-1.html">Comparator</a>&lt;Arg2objectSuperT&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Comparator.html">Comparator</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Arg0ExtendsT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>Arg2objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
   </dl>
 
 
@@ -1406,7 +1462,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_Copy__3_Java_Util_List___0__Java_Util_List___2__" data-uid="Java.Util.Collections.Copy``3(Java.Util.List{``0},Java.Util.List{``2})">
   Copy&lt;Arg0objectSuperT, T, Arg1ExtendsT&gt;(List&lt;Arg0objectSuperT&gt;, List&lt;Arg1ExtendsT&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L535"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L594"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#copy(java.util.List,java.util.List)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#copy(java.util.List,java.util.List)</a></p>
@@ -1453,7 +1509,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_Disjoint_Java_Util_Collection_System_Object__Java_Util_Collection_System_Object__" data-uid="Java.Util.Collections.Disjoint(Java.Util.Collection{System.Object},Java.Util.Collection{System.Object})">
   Disjoint(Collection&lt;object&gt;, Collection&lt;object&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L565"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L635"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#disjoint(java.util.Collection,java.util.Collection)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#disjoint(java.util.Collection,java.util.Collection)</a></p>
@@ -1495,7 +1551,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_EmptyEnumerationMethod__1" data-uid="Java.Util.Collections.EmptyEnumerationMethod``1">
   EmptyEnumerationMethod&lt;T&gt;()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L350"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L383"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyEnumeration()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyEnumeration()</a></p>
@@ -1533,7 +1589,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_EmptyIteratorMethod__1" data-uid="Java.Util.Collections.EmptyIteratorMethod``1">
   EmptyIteratorMethod&lt;T&gt;()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L369"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L402"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyIterator()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyIterator()</a></p>
@@ -1609,7 +1665,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_EmptyListIteratorMethod__1" data-uid="Java.Util.Collections.EmptyListIteratorMethod``1">
   EmptyListIteratorMethod&lt;T&gt;()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L420"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L453"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyListIterator()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyListIterator()</a></p>
@@ -1685,7 +1741,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_EmptyListMethod__1" data-uid="Java.Util.Collections.EmptyListMethod``1">
   EmptyListMethod&lt;T&gt;()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L604"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L674"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyList()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyList()</a></p>
@@ -1761,7 +1817,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_EmptyMapMethod__2" data-uid="Java.Util.Collections.EmptyMapMethod``2">
   EmptyMapMethod&lt;K, V&gt;()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L575"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L645"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyMap()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyMap()</a></p>
@@ -1841,7 +1897,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_EmptyNavigableMap__2" data-uid="Java.Util.Collections.EmptyNavigableMap``2">
   EmptyNavigableMap&lt;K, V&gt;()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L585"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L655"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyNavigableMap()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyNavigableMap()</a></p>
@@ -1919,7 +1975,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_EmptySetMethod__1" data-uid="Java.Util.Collections.EmptySetMethod``1">
   EmptySetMethod&lt;T&gt;()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L613"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L683"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptySet()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptySet()</a></p>
@@ -1995,7 +2051,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_EmptySortedMap__2" data-uid="Java.Util.Collections.EmptySortedMap``2">
   EmptySortedMap&lt;K, V&gt;()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L595"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L665"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptySortedMap()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptySortedMap()</a></p>
@@ -2073,7 +2129,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_Enumeration__1_Java_Util_Collection___0__" data-uid="Java.Util.Collections.Enumeration``1(Java.Util.Collection{``0})">
   Enumeration&lt;T&gt;(Collection&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L360"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L393"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#enumeration(java.util.Collection)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#enumeration(java.util.Collection)</a></p>
@@ -2117,7 +2173,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_Fill__2_Java_Util_List___0____1_" data-uid="Java.Util.Collections.Fill``2(Java.Util.List{``0},``1)">
   Fill&lt;Arg0objectSuperT, T&gt;(List&lt;Arg0objectSuperT&gt;, T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L546"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L605"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#fill(java.util.List,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#fill(java.util.List,java.lang.Object)</a></p>
@@ -2161,7 +2217,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_Frequency_Java_Util_Collection_System_Object__System_Object_" data-uid="Java.Util.Collections.Frequency(Java.Util.Collection{System.Object},System.Object)">
   Frequency(Collection&lt;object&gt;, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L623"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L693"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#frequency(java.util.Collection,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#frequency(java.util.Collection,java.lang.Object)</a></p>
@@ -2203,7 +2259,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_IndexOfSubList_Java_Util_List_System_Object__Java_Util_List_System_Object__" data-uid="Java.Util.Collections.IndexOfSubList(Java.Util.List{System.Object},Java.Util.List{System.Object})">
   IndexOfSubList(List&lt;object&gt;, List&lt;object&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L633"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L703"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#indexOfSubList(java.util.List,java.util.List)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#indexOfSubList(java.util.List,java.util.List)</a></p>
@@ -2245,7 +2301,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_LastIndexOfSubList_Java_Util_List_System_Object__Java_Util_List_System_Object__" data-uid="Java.Util.Collections.LastIndexOfSubList(Java.Util.List{System.Object},Java.Util.List{System.Object})">
   LastIndexOfSubList(List&lt;object&gt;, List&lt;object&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L643"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L713"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#lastIndexOfSubList(java.util.List,java.util.List)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#lastIndexOfSubList(java.util.List,java.util.List)</a></p>
@@ -2287,7 +2343,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_List__1_Java_Util_Enumeration___0__" data-uid="Java.Util.Collections.List``1(Java.Util.Enumeration{``0})">
   List&lt;T&gt;(Enumeration&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L320"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L334"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#list(java.util.Enumeration)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#list(java.util.Enumeration)</a></p>
@@ -2331,7 +2387,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_Max__2_Java_Util_Collection___1__" data-uid="Java.Util.Collections.Max``2(Java.Util.Collection{``1})">
   Max&lt;T, Arg0ExtendsT&gt;(Collection&lt;Arg0ExtendsT&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L512"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L558"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#max(java.util.Collection)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#max(java.util.Collection)</a></p>
@@ -2374,11 +2430,64 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
 
 
+  <a id="Java_Util_Collections_Max_" data-uid="Java.Util.Collections.Max*"></a>
+
+  <h3 id="Java_Util_Collections_Max__3_Java_Util_Collection___1__Java_Util_Comparator___2__" data-uid="Java.Util.Collections.Max``3(Java.Util.Collection{``1},Java.Util.Comparator{``2})">
+  Max&lt;T, Arg0ExtendsT, Arg1objectSuperT&gt;(Collection&lt;Arg0ExtendsT&gt;, Comparator&lt;Arg1objectSuperT&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L547"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#max(java.util.Collection,java.util.Comparator)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#max(java.util.Collection,java.util.Comparator)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T Max&lt;T, Arg0ExtendsT, Arg1objectSuperT&gt;(Collection&lt;Arg0ExtendsT&gt; arg0, Comparator&lt;Arg1objectSuperT&gt; arg1) where Arg0ExtendsT : T where Arg1objectSuperT : T</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Collection-1.html">Collection</a>&lt;Arg0ExtendsT&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Collection.html">Collection</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Comparator-1.html">Comparator</a>&lt;Arg1objectSuperT&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Comparator.html">Comparator</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>Arg0ExtendsT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>Arg1objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_Collections_Min_" data-uid="Java.Util.Collections.Min*"></a>
 
   <h3 id="Java_Util_Collections_Min__2_Java_Util_Collection___1__" data-uid="Java.Util.Collections.Min``2(Java.Util.Collection{``1})">
   Min&lt;T, Arg0ExtendsT&gt;(Collection&lt;Arg0ExtendsT&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L523"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L582"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#min(java.util.Collection)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#min(java.util.Collection)</a></p>
@@ -2421,11 +2530,64 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
 
 
+  <a id="Java_Util_Collections_Min_" data-uid="Java.Util.Collections.Min*"></a>
+
+  <h3 id="Java_Util_Collections_Min__3_Java_Util_Collection___1__Java_Util_Comparator___2__" data-uid="Java.Util.Collections.Min``3(Java.Util.Collection{``1},Java.Util.Comparator{``2})">
+  Min&lt;T, Arg0ExtendsT, Arg1objectSuperT&gt;(Collection&lt;Arg0ExtendsT&gt;, Comparator&lt;Arg1objectSuperT&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L571"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#min(java.util.Collection,java.util.Comparator)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#min(java.util.Collection,java.util.Comparator)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T Min&lt;T, Arg0ExtendsT, Arg1objectSuperT&gt;(Collection&lt;Arg0ExtendsT&gt; arg0, Comparator&lt;Arg1objectSuperT&gt; arg1) where Arg0ExtendsT : T where Arg1objectSuperT : T</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Collection-1.html">Collection</a>&lt;Arg0ExtendsT&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Collection.html">Collection</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Comparator-1.html">Comparator</a>&lt;Arg1objectSuperT&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Comparator.html">Comparator</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>Arg0ExtendsT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>Arg1objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_Collections_NCopies_" data-uid="Java.Util.Collections.NCopies*"></a>
 
   <h3 id="Java_Util_Collections_NCopies__1_System_Int32___0_" data-uid="Java.Util.Collections.NCopies``1(System.Int32,``0)">
   NCopies&lt;T&gt;(int, T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L380"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L413"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#nCopies(int,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#nCopies(int,java.lang.Object)</a></p>
@@ -2566,7 +2728,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_Reverse_Java_Util_List_System_Object__" data-uid="Java.Util.Collections.Reverse(Java.Util.List{System.Object})">
   Reverse(List&lt;object&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L651"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L721"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#reverse(java.util.List)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#reverse(java.util.List)</a></p>
@@ -2595,11 +2757,93 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
 
 
+  <a id="Java_Util_Collections_ReverseOrder_" data-uid="Java.Util.Collections.ReverseOrder*"></a>
+
+  <h3 id="Java_Util_Collections_ReverseOrder__1" data-uid="Java.Util.Collections.ReverseOrder``1">
+  ReverseOrder&lt;T&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L364"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#reverseOrder()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#reverseOrder()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Comparator&lt;T&gt; ReverseOrder&lt;T&gt;()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Comparator-1.html">Comparator</a>&lt;T&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Comparator.html">Comparator</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Collections_ReverseOrder_" data-uid="Java.Util.Collections.ReverseOrder*"></a>
+
+  <h3 id="Java_Util_Collections_ReverseOrder__1_Java_Util_Comparator___0__" data-uid="Java.Util.Collections.ReverseOrder``1(Java.Util.Comparator{``0})">
+  ReverseOrder&lt;T&gt;(Comparator&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#reverseOrder(java.util.Comparator)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#reverseOrder(java.util.Comparator)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Comparator&lt;T&gt; ReverseOrder&lt;T&gt;(Comparator&lt;T&gt; arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Comparator-1.html">Comparator</a>&lt;T&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Comparator.html">Comparator</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Comparator-1.html">Comparator</a>&lt;T&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Comparator.html">Comparator</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_Collections_Rotate_" data-uid="Java.Util.Collections.Rotate*"></a>
 
   <h3 id="Java_Util_Collections_Rotate_Java_Util_List_System_Object__System_Int32_" data-uid="Java.Util.Collections.Rotate(Java.Util.List{System.Object},System.Int32)">
   Rotate(List&lt;object&gt;, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L660"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L730"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#rotate(java.util.List,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#rotate(java.util.List,int)</a></p>
@@ -2635,7 +2879,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_Shuffle_Java_Util_List_System_Object__" data-uid="Java.Util.Collections.Shuffle(Java.Util.List{System.Object})">
   Shuffle(List&lt;object&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L677"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L747"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#shuffle(java.util.List)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#shuffle(java.util.List)</a></p>
@@ -2668,7 +2912,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_Shuffle_Java_Util_List_System_Object__Java_Util_Random_" data-uid="Java.Util.Collections.Shuffle(Java.Util.List{System.Object},Java.Util.Random)">
   Shuffle(List&lt;object&gt;, Random)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L669"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L739"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#shuffle(java.util.List,java.util.Random)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#shuffle(java.util.List,java.util.Random)</a></p>
@@ -2704,7 +2948,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_SingletonListMethod__1___0_" data-uid="Java.Util.Collections.SingletonListMethod``1(``0)">
   SingletonListMethod&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L390"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L423"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#singletonList(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#singletonList(java.lang.Object)</a></p>
@@ -2887,7 +3131,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_Singleton__1___0_" data-uid="Java.Util.Collections.Singleton``1(``0)">
   Singleton&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L460"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L493"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#singleton(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#singleton(java.lang.Object)</a></p>
@@ -2931,7 +3175,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_Sort__1_Java_Util_List___0__" data-uid="Java.Util.Collections.Sort``1(Java.Util.List{``0})">
   Sort&lt;T&gt;(List&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L555"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L625"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#sort(java.util.List)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#sort(java.util.List)</a></p>
@@ -2965,11 +3209,55 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
 
 
+  <a id="Java_Util_Collections_Sort_" data-uid="Java.Util.Collections.Sort*"></a>
+
+  <h3 id="Java_Util_Collections_Sort__2_Java_Util_List___0__Java_Util_Comparator___1__" data-uid="Java.Util.Collections.Sort``2(Java.Util.List{``0},Java.Util.Comparator{``1})">
+  Sort&lt;T, Arg1objectSuperT&gt;(List&lt;T&gt;, Comparator&lt;Arg1objectSuperT&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L616"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#sort(java.util.List,java.util.Comparator)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#sort(java.util.List,java.util.Comparator)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Sort&lt;T, Arg1objectSuperT&gt;(List&lt;T&gt; arg0, Comparator&lt;Arg1objectSuperT&gt; arg1) where Arg1objectSuperT : T</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.List-1.html">List</a>&lt;T&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Comparator-1.html">Comparator</a>&lt;Arg1objectSuperT&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Comparator.html">Comparator</a></p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>Arg1objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_Collections_Swap_" data-uid="Java.Util.Collections.Swap*"></a>
 
   <h3 id="Java_Util_Collections_Swap_Java_Util_List_System_Object__System_Int32_System_Int32_" data-uid="Java.Util.Collections.Swap(Java.Util.List{System.Object},System.Int32,System.Int32)">
   Swap(List&lt;object&gt;, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L687"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L757"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#swap(java.util.List,int,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#swap(java.util.List,int,int)</a></p>
@@ -3008,7 +3296,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_SynchronizedCollectionMethod__1_Java_Util_Collection___0__" data-uid="Java.Util.Collections.SynchronizedCollectionMethod``1(Java.Util.Collection{``0})">
   SynchronizedCollectionMethod&lt;T&gt;(Collection&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L330"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L344"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedCollection(java.util.Collection)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedCollection(java.util.Collection)</a></p>
@@ -3052,7 +3340,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_SynchronizedListMethod__1_Java_Util_List___0__" data-uid="Java.Util.Collections.SynchronizedListMethod``1(Java.Util.List{``0})">
   SynchronizedListMethod&lt;T&gt;(List&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L400"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L433"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedList(java.util.List)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedList(java.util.List)</a></p>
@@ -3188,7 +3476,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_SynchronizedNavigableSetMethod__1_Java_Util_NavigableSet___0__" data-uid="Java.Util.Collections.SynchronizedNavigableSetMethod``1(Java.Util.NavigableSet{``0})">
   SynchronizedNavigableSetMethod&lt;T&gt;(NavigableSet&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L430"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L463"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedNavigableSet(java.util.NavigableSet)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedNavigableSet(java.util.NavigableSet)</a></p>
@@ -3232,7 +3520,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_SynchronizedSetMethod__1_Java_Util_Set___0__" data-uid="Java.Util.Collections.SynchronizedSetMethod``1(Java.Util.Set{``0})">
   SynchronizedSetMethod&lt;T&gt;(Set&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L470"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L503"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedSet(java.util.Set)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedSet(java.util.Set)</a></p>
@@ -3322,7 +3610,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_SynchronizedSortedSetMethod__1_Java_Util_SortedSet___0__" data-uid="Java.Util.Collections.SynchronizedSortedSetMethod``1(Java.Util.SortedSet{``0})">
   SynchronizedSortedSetMethod&lt;T&gt;(SortedSet&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L491"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L524"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedSortedSet(java.util.SortedSet)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedSortedSet(java.util.SortedSet)</a></p>
@@ -3366,7 +3654,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_UnmodifiableCollectionMethod__2_Java_Util_Collection___1__" data-uid="Java.Util.Collections.UnmodifiableCollectionMethod``2(Java.Util.Collection{``1})">
   UnmodifiableCollectionMethod&lt;T, Arg0ExtendsT&gt;(Collection&lt;Arg0ExtendsT&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L341"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L355"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableCollection(java.util.Collection)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableCollection(java.util.Collection)</a></p>
@@ -3413,7 +3701,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_UnmodifiableListMethod__2_Java_Util_List___1__" data-uid="Java.Util.Collections.UnmodifiableListMethod``2(Java.Util.List{``1})">
   UnmodifiableListMethod&lt;T, Arg0ExtendsT&gt;(List&lt;Arg0ExtendsT&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L411"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L444"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableList(java.util.List)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableList(java.util.List)</a></p>
@@ -3561,7 +3849,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_UnmodifiableNavigableSetMethod__1_Java_Util_NavigableSet___0__" data-uid="Java.Util.Collections.UnmodifiableNavigableSetMethod``1(Java.Util.NavigableSet{``0})">
   UnmodifiableNavigableSetMethod&lt;T&gt;(NavigableSet&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L440"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L473"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableNavigableSet(java.util.NavigableSet)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableNavigableSet(java.util.NavigableSet)</a></p>
@@ -3605,7 +3893,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_UnmodifiableSetMethod__2_Java_Util_Set___1__" data-uid="Java.Util.Collections.UnmodifiableSetMethod``2(Java.Util.Set{``1})">
   UnmodifiableSetMethod&lt;T, Arg0ExtendsT&gt;(Set&lt;Arg0ExtendsT&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L481"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L514"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableSet(java.util.Set)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableSet(java.util.Set)</a></p>
@@ -3701,7 +3989,7 @@ Class Collections  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Java_Util_Collections_UnmodifiableSortedSetMethod__1_Java_Util_SortedSet___0__" data-uid="Java.Util.Collections.UnmodifiableSortedSetMethod``1(Java.Util.SortedSet{``0})">
   UnmodifiableSortedSetMethod&lt;T&gt;(SortedSet&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L501"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Collections.cs/#L534"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableSortedSet(java.util.SortedSet)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableSortedSet(java.util.SortedSet)</a></p>

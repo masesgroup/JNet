@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -1443,7 +1443,7 @@ Class Collectors  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Util_Stream_Collectors_Joining" data-uid="Java.Util.Stream.Collectors.Joining">
   Joining()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collectors.cs/#L572"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collectors.cs/#L594"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#joining()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#joining()</a></p>
@@ -1476,7 +1476,7 @@ Class Collectors  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Util_Stream_Collectors_Joining_Java_Lang_CharSequence_" data-uid="Java.Util.Stream.Collectors.Joining(Java.Lang.CharSequence)">
   Joining(CharSequence)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collectors.cs/#L592"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collectors.cs/#L614"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#joining(java.lang.CharSequence)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#joining(java.lang.CharSequence)</a></p>
@@ -1515,7 +1515,7 @@ Class Collectors  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Util_Stream_Collectors_Joining_Java_Lang_CharSequence_Java_Lang_CharSequence_Java_Lang_CharSequence_" data-uid="Java.Util.Stream.Collectors.Joining(Java.Lang.CharSequence,Java.Lang.CharSequence,Java.Lang.CharSequence)">
   Joining(CharSequence, CharSequence, CharSequence)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collectors.cs/#L583"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collectors.cs/#L605"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#joining(java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#joining(java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence)</a></p>
@@ -1607,6 +1607,100 @@ Class Collectors  <a class="header-action link-secondary" title="View source" hr
 </dd>
     <dt><code>A</code></dt>
     <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_Collectors_MaxBy_" data-uid="Java.Util.Stream.Collectors.MaxBy*"></a>
+
+  <h3 id="Java_Util_Stream_Collectors_MaxBy__2_Java_Util_Comparator___1__" data-uid="Java.Util.Stream.Collectors.MaxBy``2(Java.Util.Comparator{``1})">
+  MaxBy&lt;T, Arg0objectSuperT&gt;(Comparator&lt;Arg0objectSuperT&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collectors.cs/#L536"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#maxBy(java.util.Comparator)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#maxBy(java.util.Comparator)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Collector&lt;T, object, Optional&lt;T&gt;&gt; MaxBy&lt;T, Arg0objectSuperT&gt;(Comparator&lt;Arg0objectSuperT&gt; arg0) where Arg0objectSuperT : T</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Comparator-1.html">Comparator</a>&lt;Arg0objectSuperT&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Comparator.html">Comparator</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Stream.Collector-3.html">Collector</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>, <a class="xref" href="Java.Util.Optional-1.html">Optional</a>&lt;T&gt;&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Stream.Collector.html">Collector</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>Arg0objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_Collectors_MinBy_" data-uid="Java.Util.Stream.Collectors.MinBy*"></a>
+
+  <h3 id="Java_Util_Stream_Collectors_MinBy__2_Java_Util_Comparator___1__" data-uid="Java.Util.Stream.Collectors.MinBy``2(Java.Util.Comparator{``1})">
+  MinBy&lt;T, Arg0objectSuperT&gt;(Comparator&lt;Arg0objectSuperT&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collectors.cs/#L547"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#minBy(java.util.Comparator)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#minBy(java.util.Comparator)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Collector&lt;T, object, Optional&lt;T&gt;&gt; MinBy&lt;T, Arg0objectSuperT&gt;(Comparator&lt;Arg0objectSuperT&gt; arg0) where Arg0objectSuperT : T</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Comparator-1.html">Comparator</a>&lt;Arg0objectSuperT&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Comparator.html">Comparator</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Stream.Collector-3.html">Collector</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>, <a class="xref" href="Java.Util.Optional-1.html">Optional</a>&lt;T&gt;&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Stream.Collector.html">Collector</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>Arg0objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
   </dl>
 
 
@@ -1726,7 +1820,7 @@ Class Collectors  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Util_Stream_Collectors_Reducing__1_Java_Util_Function_BinaryOperator___0__" data-uid="Java.Util.Stream.Collectors.Reducing``1(Java.Util.Function.BinaryOperator{``0})">
   Reducing&lt;T&gt;(BinaryOperator&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collectors.cs/#L535"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collectors.cs/#L557"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#reducing(java.util.function.BinaryOperator)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#reducing(java.util.function.BinaryOperator)</a></p>
@@ -1770,7 +1864,7 @@ Class Collectors  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Util_Stream_Collectors_Reducing__1___0_Java_Util_Function_BinaryOperator___0__" data-uid="Java.Util.Stream.Collectors.Reducing``1(``0,Java.Util.Function.BinaryOperator{``0})">
   Reducing&lt;T&gt;(T, BinaryOperator&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collectors.cs/#L564"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collectors.cs/#L586"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#reducing(java.lang.Object,java.util.function.BinaryOperator)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#reducing(java.lang.Object,java.util.function.BinaryOperator)</a></p>
@@ -2644,7 +2738,7 @@ Class Collectors  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Util_Stream_Collectors_ToSet__1" data-uid="Java.Util.Stream.Collectors.ToSet``1">
   ToSet&lt;T&gt;()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collectors.cs/#L544"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collectors.cs/#L566"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toSet()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toSet()</a></p>
@@ -2849,7 +2943,7 @@ Class Collectors  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Util_Stream_Collectors_ToUnmodifiableSet__1" data-uid="Java.Util.Stream.Collectors.ToUnmodifiableSet``1">
   ToUnmodifiableSet&lt;T&gt;()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collectors.cs/#L553"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/Collectors.cs/#L575"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toUnmodifiableSet()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toUnmodifiableSet()</a></p>

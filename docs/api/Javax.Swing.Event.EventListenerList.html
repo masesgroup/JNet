@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -787,11 +787,53 @@ Class EventListenerList  <a class="header-action link-secondary" title="View sou
 </h2>
 
 
+  <a id="Javax_Swing_Event_EventListenerList_Add_" data-uid="Javax.Swing.Event.EventListenerList.Add*"></a>
+
+  <h3 id="Javax_Swing_Event_EventListenerList_Add__1_Java_Lang_Class___0_" data-uid="Javax.Swing.Event.EventListenerList.Add``1(Java.Lang.Class,``0)">
+  Add&lt;T&gt;(Class, T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Event/EventListenerList.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/EventListenerList.html#add(java.lang.Class,java.util.EventListener)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/EventListenerList.html#add(java.lang.Class,java.util.EventListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add&lt;T&gt;(Class arg0, T arg1) where T : IEventListener, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+    <dt><code>arg1</code> <span class="xref">T</span></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p><a class="xref" href="Java.Util.IEventListener.html">IEventListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <a id="Javax_Swing_Event_EventListenerList_GetListenerCount_" data-uid="Javax.Swing.Event.EventListenerList.GetListenerCount*"></a>
 
   <h3 id="Javax_Swing_Event_EventListenerList_GetListenerCount_Java_Lang_Class_" data-uid="Javax.Swing.Event.EventListenerList.GetListenerCount(Java.Lang.Class)">
   GetListenerCount(Class)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Event/EventListenerList.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Event/EventListenerList.cs/#L77"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/EventListenerList.html#getListenerCount(java.lang.Class)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/EventListenerList.html#getListenerCount(java.lang.Class)</a></p>
@@ -816,6 +858,93 @@ Class EventListenerList  <a class="header-action link-secondary" title="View sou
 </dd>
   </dl>
 
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Swing_Event_EventListenerList_GetListeners_" data-uid="Javax.Swing.Event.EventListenerList.GetListeners*"></a>
+
+  <h3 id="Javax_Swing_Event_EventListenerList_GetListeners__1_Java_Lang_Class_" data-uid="Javax.Swing.Event.EventListenerList.GetListeners``1(Java.Lang.Class)">
+  GetListeners&lt;T&gt;(Class)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Event/EventListenerList.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/EventListenerList.html#getListeners(java.lang.Class)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/EventListenerList.html#getListeners(java.lang.Class)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T[] GetListeners&lt;T&gt;(Class arg0) where T : IEventListener, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>T[]</dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p><a class="xref" href="Java.Util.IEventListener.html">IEventListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Swing_Event_EventListenerList_Remove_" data-uid="Javax.Swing.Event.EventListenerList.Remove*"></a>
+
+  <h3 id="Javax_Swing_Event_EventListenerList_Remove__1_Java_Lang_Class___0_" data-uid="Javax.Swing.Event.EventListenerList.Remove``1(Java.Lang.Class,``0)">
+  Remove&lt;T&gt;(Class, T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Event/EventListenerList.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/EventListenerList.html#remove(java.lang.Class,java.util.EventListener)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/EventListenerList.html#remove(java.lang.Class,java.util.EventListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Remove&lt;T&gt;(Class arg0, T arg1) where T : IEventListener, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+    <dt><code>arg1</code> <span class="xref">T</span></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p><a class="xref" href="Java.Util.IEventListener.html">IEventListener</a></p>
+</dd>
+  </dl>
 
 
 
