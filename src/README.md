@@ -39,11 +39,13 @@ The configuration is:
     "javax.swing.Action",
     "javax.management.NotificationFilter"
   ],
+  "ClassesManuallyDeveloped": [
+    "java.util.Comparator",
+    "java.util.EventListener"
+  ],
   "ClassesToAvoid": [
     "java.lang.ProcessBuilder$Redirect$Type",
     "java.lang.Thread$UncaughtExceptionHandler",
-    "java.util.Comparator",
-    "java.util.EventListener",
     "java.util.stream.DoubleStream$Builder",
     "java.util.stream.IntStream$Builder",
     "java.util.stream.LongStream$Builder",
