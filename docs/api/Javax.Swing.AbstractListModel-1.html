@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -736,7 +736,7 @@ public AbstractListModel(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_AbstractListModel_1_ListDataListeners" data-uid="Javax.Swing.AbstractListModel`1.ListDataListeners">
   ListDataListeners
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AbstractListModel.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AbstractListModel.cs/#L134"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#getListDataListeners()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#getListDataListeners()</a></p>
@@ -772,7 +772,7 @@ public AbstractListModel(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_AbstractListModel_1_AddListDataListener_Javax_Swing_Event_ListDataListener_" data-uid="Javax.Swing.AbstractListModel`1.AddListDataListener(Javax.Swing.Event.ListDataListener)">
   AddListDataListener(ListDataListener)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AbstractListModel.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AbstractListModel.cs/#L152"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#addListDataListener(javax.swing.event.ListDataListener)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#addListDataListener(javax.swing.event.ListDataListener)</a></p>
@@ -801,11 +801,56 @@ public AbstractListModel(params object[] args)</code></pre>
 
 
 
+  <a id="Javax_Swing_AbstractListModel_1_GetListeners_" data-uid="Javax.Swing.AbstractListModel`1.GetListeners*"></a>
+
+  <h3 id="Javax_Swing_AbstractListModel_1_GetListeners__1_Java_Lang_Class_" data-uid="Javax.Swing.AbstractListModel`1.GetListeners``1(Java.Lang.Class)">
+  GetListeners&lt;T&gt;(Class)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AbstractListModel.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#getListeners(java.lang.Class)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#getListeners(java.lang.Class)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T[] GetListeners&lt;T&gt;(Class arg0) where T : IEventListener, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>T[]</dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p><a class="xref" href="Java.Util.IEventListener.html">IEventListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <a id="Javax_Swing_AbstractListModel_1_RemoveListDataListener_" data-uid="Javax.Swing.AbstractListModel`1.RemoveListDataListener*"></a>
 
   <h3 id="Javax_Swing_AbstractListModel_1_RemoveListDataListener_Javax_Swing_Event_ListDataListener_" data-uid="Javax.Swing.AbstractListModel`1.RemoveListDataListener(Javax.Swing.Event.ListDataListener)">
   RemoveListDataListener(ListDataListener)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AbstractListModel.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AbstractListModel.cs/#L160"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#removeListDataListener(javax.swing.event.ListDataListener)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#removeListDataListener(javax.swing.event.ListDataListener)</a></p>
@@ -842,7 +887,7 @@ public AbstractListModel(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_AbstractListModel_1_op_Implicit_Javax_Swing_AbstractListModel__0___Java_Io_Serializable" data-uid="Javax.Swing.AbstractListModel`1.op_Implicit(Javax.Swing.AbstractListModel{`0})~Java.Io.Serializable">
   implicit operator Serializable(AbstractListModel&lt;E&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AbstractListModel.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AbstractListModel.cs/#L114"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Javax.Swing.AbstractListModel-1.html">AbstractListModel&lt;E&gt;</a> to <a class="xref" href="Java.Io.Serializable.html">Serializable</a></p>
@@ -879,7 +924,7 @@ public AbstractListModel(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_AbstractListModel_1_op_Implicit_Javax_Swing_AbstractListModel__0___Javax_Swing_AbstractListModel" data-uid="Javax.Swing.AbstractListModel`1.op_Implicit(Javax.Swing.AbstractListModel{`0})~Javax.Swing.AbstractListModel">
   implicit operator AbstractListModel(AbstractListModel&lt;E&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AbstractListModel.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AbstractListModel.cs/#L118"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Javax.Swing.AbstractListModel-1.html">AbstractListModel&lt;E&gt;</a> to <a class="xref" href="Javax.Swing.AbstractListModel.html">AbstractListModel</a></p>
@@ -916,7 +961,7 @@ public AbstractListModel(params object[] args)</code></pre>
 
   <h3 id="Javax_Swing_AbstractListModel_1_op_Implicit_Javax_Swing_AbstractListModel__0___Javax_Swing_ListModel__0_" data-uid="Javax.Swing.AbstractListModel`1.op_Implicit(Javax.Swing.AbstractListModel{`0})~Javax.Swing.ListModel{`0}">
   implicit operator ListModel&lt;E&gt;(AbstractListModel&lt;E&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AbstractListModel.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AbstractListModel.cs/#L110"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Javax.Swing.AbstractListModel-1.html">AbstractListModel&lt;E&gt;</a> to <a class="xref" href="Javax.Swing.ListModel-1.html">ListModel&lt;E&gt;</a></p>
