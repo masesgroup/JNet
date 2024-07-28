@@ -500,6 +500,40 @@ namespace Java.Util
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html#comparingByKey()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.Comparator"/></returns>
+            public static Java.Util.Comparator ComparingByKey()
+            {
+                return SExecute<Java.Util.Comparator>(LocalBridgeClazz, "comparingByKey");
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html#comparingByKey(java.util.Comparator)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+            /// <returns><see cref="Java.Util.Comparator"/></returns>
+            public static Java.Util.Comparator ComparingByKey(Java.Util.Comparator arg0)
+            {
+                return SExecute<Java.Util.Comparator>(LocalBridgeClazz, "comparingByKey", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html#comparingByValue()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.Comparator"/></returns>
+            public static Java.Util.Comparator ComparingByValue()
+            {
+                return SExecute<Java.Util.Comparator>(LocalBridgeClazz, "comparingByValue");
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html#comparingByValue(java.util.Comparator)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+            /// <returns><see cref="Java.Util.Comparator"/></returns>
+            public static Java.Util.Comparator ComparingByValue(Java.Util.Comparator arg0)
+            {
+                return SExecute<Java.Util.Comparator>(LocalBridgeClazz, "comparingByValue", arg0);
+            }
 
             #endregion
 
@@ -558,6 +592,42 @@ namespace Java.Util
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html#comparingByKey()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.Comparator"/></returns>
+            public static Java.Util.Comparator<Java.Util.Map.Entry<K, V>> ComparingByKey()
+            {
+                return SExecute<Java.Util.Comparator<Java.Util.Map.Entry<K, V>>>(LocalBridgeClazz, "comparingByKey");
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html#comparingByKey(java.util.Comparator)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+            /// <typeparam name="Arg0objectSuperK"><typeparamref name="K"/></typeparam>
+            /// <returns><see cref="Java.Util.Comparator"/></returns>
+            public static Java.Util.Comparator<Java.Util.Map.Entry<K, V>> ComparingByKey<Arg0objectSuperK>(Java.Util.Comparator<Arg0objectSuperK> arg0) where Arg0objectSuperK : K
+            {
+                return SExecute<Java.Util.Comparator<Java.Util.Map.Entry<K, V>>>(LocalBridgeClazz, "comparingByKey", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html#comparingByValue()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.Comparator"/></returns>
+            public static Java.Util.Comparator<Java.Util.Map.Entry<K, V>> ComparingByValue()
+            {
+                return SExecute<Java.Util.Comparator<Java.Util.Map.Entry<K, V>>>(LocalBridgeClazz, "comparingByValue");
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html#comparingByValue(java.util.Comparator)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+            /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
+            /// <returns><see cref="Java.Util.Comparator"/></returns>
+            public static Java.Util.Comparator<Java.Util.Map.Entry<K, V>> ComparingByValue<Arg0objectSuperV>(Java.Util.Comparator<Arg0objectSuperV> arg0) where Arg0objectSuperV : V
+            {
+                return SExecute<Java.Util.Comparator<Java.Util.Map.Entry<K, V>>>(LocalBridgeClazz, "comparingByValue", arg0);
+            }
 
             #endregion
 

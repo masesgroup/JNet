@@ -62,6 +62,14 @@ namespace Java.Time.Chrono
         {
             return SExecuteWithSignature<Java.Time.Chrono.ChronoLocalDateTime>(LocalBridgeClazz, "from", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/chrono/ChronoLocalDateTime;", arg0);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDateTime.html#timeLineOrder()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public static Java.Util.Comparator TimeLineOrder()
+        {
+            return SExecuteWithSignature<Java.Util.Comparator>(LocalBridgeClazz, "timeLineOrder", "()Ljava/util/Comparator;");
+        }
 
         #endregion
 

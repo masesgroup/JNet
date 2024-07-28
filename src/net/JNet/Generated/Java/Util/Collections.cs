@@ -312,6 +312,20 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#binarySearch(java.util.List,java.lang.Object,java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg2objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <returns><see cref="int"/></returns>
+        public static int BinarySearch<Arg0ExtendsT, T, Arg2objectSuperT>(Java.Util.List<Arg0ExtendsT> arg0, T arg1, Java.Util.Comparator<Arg2objectSuperT> arg2) where Arg0ExtendsT : T where Arg2objectSuperT : T
+        {
+            return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#list(java.util.Enumeration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Enumeration"/></param>
@@ -341,6 +355,25 @@ namespace Java.Util
         public static Java.Util.Collection<T> UnmodifiableCollectionMethod<T, Arg0ExtendsT>(Java.Util.Collection<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
         {
             return SExecuteWithSignature<Java.Util.Collection<T>>(LocalBridgeClazz, "unmodifiableCollection", "(Ljava/util/Collection;)Ljava/util/Collection;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#reverseOrder()"/>
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public static Java.Util.Comparator<T> ReverseOrder<T>()
+        {
+            return SExecuteWithSignature<Java.Util.Comparator<T>>(LocalBridgeClazz, "reverseOrder", "()Ljava/util/Comparator;");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#reverseOrder(java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public static Java.Util.Comparator<T> ReverseOrder<T>(Java.Util.Comparator<T> arg0)
+        {
+            return SExecuteWithSignature<Java.Util.Comparator<T>>(LocalBridgeClazz, "reverseOrder", "(Ljava/util/Comparator;)Ljava/util/Comparator;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyEnumeration()"/>
@@ -503,6 +536,19 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.SortedSet<T>>(LocalBridgeClazz, "unmodifiableSortedSet", "(Ljava/util/SortedSet;)Ljava/util/SortedSet;", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#max(java.util.Collection,java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        public static T Max<T, Arg0ExtendsT, Arg1objectSuperT>(Java.Util.Collection<Arg0ExtendsT> arg0, Java.Util.Comparator<Arg1objectSuperT> arg1) where Arg0ExtendsT : T where Arg1objectSuperT : T
+        {
+            return SExecute<T>(LocalBridgeClazz, "max", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#max(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
@@ -512,6 +558,19 @@ namespace Java.Util
         public static T Max<T, Arg0ExtendsT>(Java.Util.Collection<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
         {
             return SExecute<T>(LocalBridgeClazz, "max", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#min(java.util.Collection,java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        public static T Min<T, Arg0ExtendsT, Arg1objectSuperT>(Java.Util.Collection<Arg0ExtendsT> arg0, Java.Util.Comparator<Arg1objectSuperT> arg1) where Arg0ExtendsT : T where Arg1objectSuperT : T
+        {
+            return SExecute<T>(LocalBridgeClazz, "min", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#min(java.util.Collection)"/>
@@ -546,6 +605,17 @@ namespace Java.Util
         public static void Fill<Arg0objectSuperT, T>(Java.Util.List<Arg0objectSuperT> arg0, T arg1) where Arg0objectSuperT : T
         {
             SExecute(LocalBridgeClazz, "fill", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#sort(java.util.List,java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
+        public static void Sort<T, Arg1objectSuperT>(Java.Util.List<T> arg0, Java.Util.Comparator<Arg1objectSuperT> arg1) where Arg1objectSuperT : T
+        {
+            SExecute(LocalBridgeClazz, "sort", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#sort(java.util.List)"/>

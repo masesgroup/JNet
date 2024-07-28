@@ -54,6 +54,14 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Collection>("values", "()Ljava/util/Collection;");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#comparator()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public Java.Util.Comparator Comparator()
+        {
+            return IExecuteWithSignature<Java.Util.Comparator>("comparator", "()Ljava/util/Comparator;");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#entrySet()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Set"/></returns>
@@ -137,6 +145,12 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Collection"/></returns>
         Java.Util.Collection<V> Values();
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#comparator()"/>
+        /// </summary>
+        /// <typeparam name="ReturnobjectSuperK"><typeparamref name="K"/></typeparam>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        Java.Util.Comparator<ReturnobjectSuperK> Comparator<ReturnobjectSuperK>() where ReturnobjectSuperK : K;
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#entrySet()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Set"/></returns>
@@ -217,6 +231,15 @@ namespace Java.Util
         public Java.Util.Collection<V> Values()
         {
             return IExecuteWithSignature<Java.Util.Collection<V>>("values", "()Ljava/util/Collection;");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#comparator()"/>
+        /// </summary>
+        /// <typeparam name="ReturnobjectSuperK"><typeparamref name="K"/></typeparam>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public Java.Util.Comparator<ReturnobjectSuperK> Comparator<ReturnobjectSuperK>() where ReturnobjectSuperK : K
+        {
+            return IExecuteWithSignature<Java.Util.Comparator<ReturnobjectSuperK>>("comparator", "()Ljava/util/Comparator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#entrySet()"/>

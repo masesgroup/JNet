@@ -343,6 +343,14 @@ namespace Java.Util.Concurrent
         {
             IExecuteWithSignature("replaceAll", "(Ljava/util/function/UnaryOperator;)V", arg0);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#sort(java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        public void Sort(Java.Util.Comparator arg0)
+        {
+            IExecuteWithSignature("sort", "(Ljava/util/Comparator;)V", arg0);
+        }
 
         #endregion
 
@@ -689,6 +697,15 @@ namespace Java.Util.Concurrent
         public void ReplaceAll(Java.Util.Function.UnaryOperator<E> arg0)
         {
             IExecuteWithSignature("replaceAll", "(Ljava/util/function/UnaryOperator;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#sort(java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
+        public void Sort<Arg0objectSuperE>(Java.Util.Comparator<Arg0objectSuperE> arg0) where Arg0objectSuperE : E
+        {
+            IExecuteWithSignature("sort", "(Ljava/util/Comparator;)V", arg0);
         }
 
         #endregion

@@ -69,6 +69,81 @@ namespace Java.Util
             return SExecuteArray<T>(LocalBridgeClazz, "copyOfRange", arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(java.lang.Object[],int,int,java.lang.Object[],int,int,java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><typeparamref name="T"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg6objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <returns><see cref="bool"/></returns>
+        public static bool Equals<T, Arg6objectSuperT>(T[] arg0, int arg1, int arg2, T[] arg3, int arg4, int arg5, Java.Util.Comparator<Arg6objectSuperT> arg6) where Arg6objectSuperT : T
+        {
+            return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(java.lang.Object[],java.lang.Object[],java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg2objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <returns><see cref="bool"/></returns>
+        public static bool Equals<T, Arg2objectSuperT>(T[] arg0, T[] arg1, Java.Util.Comparator<Arg2objectSuperT> arg2) where Arg2objectSuperT : T
+        {
+            return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(java.lang.Object[],int,int,java.lang.Object,java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><typeparamref name="T"/></param>
+        /// <param name="arg4"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg4objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <returns><see cref="int"/></returns>
+        public static int BinarySearch<T, Arg4objectSuperT>(T[] arg0, int arg1, int arg2, T arg3, Java.Util.Comparator<Arg4objectSuperT> arg4) where Arg4objectSuperT : T
+        {
+            return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(java.lang.Object[],java.lang.Object,java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg2objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <returns><see cref="int"/></returns>
+        public static int BinarySearch<T, Arg2objectSuperT>(T[] arg0, T arg1, Java.Util.Comparator<Arg2objectSuperT> arg2) where Arg2objectSuperT : T
+        {
+            return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(java.lang.Object[],int,int,java.lang.Object[],int,int,java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><typeparamref name="T"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg6objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <returns><see cref="int"/></returns>
+        public static int Compare<T, Arg6objectSuperT>(T[] arg0, int arg1, int arg2, T[] arg3, int arg4, int arg5, Java.Util.Comparator<Arg6objectSuperT> arg6) where Arg6objectSuperT : T
+        {
+            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(java.lang.Comparable[],int,int,java.lang.Comparable[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
@@ -84,6 +159,19 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(java.lang.Object[],java.lang.Object[],java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg2objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <returns><see cref="int"/></returns>
+        public static int Compare<T, Arg2objectSuperT>(T[] arg0, T[] arg1, Java.Util.Comparator<Arg2objectSuperT> arg2) where Arg2objectSuperT : T
+        {
+            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(java.lang.Comparable[],java.lang.Comparable[])"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
@@ -93,6 +181,36 @@ namespace Java.Util
         public static int Compare<T>(T[] arg0, T[] arg1)
         {
             return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(java.lang.Object[],int,int,java.lang.Object[],int,int,java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><typeparamref name="T"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg6objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <returns><see cref="int"/></returns>
+        public static int Mismatch<T, Arg6objectSuperT>(T[] arg0, int arg1, int arg2, T[] arg3, int arg4, int arg5, Java.Util.Comparator<Arg6objectSuperT> arg6) where Arg6objectSuperT : T
+        {
+            return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(java.lang.Object[],java.lang.Object[],java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg2objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <returns><see cref="int"/></returns>
+        public static int Mismatch<T, Arg2objectSuperT>(T[] arg0, T[] arg1, Java.Util.Comparator<Arg2objectSuperT> arg2) where Arg2objectSuperT : T
+        {
+            return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#asList(java.lang.Object[])"/>
@@ -205,6 +323,19 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "parallelSetAll", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(java.lang.Object[],int,int,java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg3objectSuperT"><typeparamref name="T"/></typeparam>
+        public static void ParallelSort<T, Arg3objectSuperT>(T[] arg0, int arg1, int arg2, Java.Util.Comparator<Arg3objectSuperT> arg3) where Arg3objectSuperT : T
+        {
+            SExecute(LocalBridgeClazz, "parallelSort", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(java.lang.Comparable[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
@@ -214,6 +345,17 @@ namespace Java.Util
         public static void ParallelSort<T>(T[] arg0, int arg1, int arg2)
         {
             SExecute(LocalBridgeClazz, "parallelSort", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(java.lang.Object[],java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
+        public static void ParallelSort<T, Arg1objectSuperT>(T[] arg0, Java.Util.Comparator<Arg1objectSuperT> arg1) where Arg1objectSuperT : T
+        {
+            SExecute(LocalBridgeClazz, "parallelSort", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(java.lang.Comparable[])"/>
@@ -234,6 +376,30 @@ namespace Java.Util
         public static void SetAll<T, Arg1ExtendsT>(T[] arg0, Java.Util.Function.IntFunction<Arg1ExtendsT> arg1) where Arg1ExtendsT : T
         {
             SExecute(LocalBridgeClazz, "setAll", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(java.lang.Object[],int,int,java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg3objectSuperT"><typeparamref name="T"/></typeparam>
+        public static void Sort<T, Arg3objectSuperT>(T[] arg0, int arg1, int arg2, Java.Util.Comparator<Arg3objectSuperT> arg3) where Arg3objectSuperT : T
+        {
+            SExecute(LocalBridgeClazz, "sort", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(java.lang.Object[],java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
+        public static void Sort<T, Arg1objectSuperT>(T[] arg0, Java.Util.Comparator<Arg1objectSuperT> arg1) where Arg1objectSuperT : T
+        {
+            SExecute(LocalBridgeClazz, "sort", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#deepEquals(java.lang.Object[],java.lang.Object[])"/>

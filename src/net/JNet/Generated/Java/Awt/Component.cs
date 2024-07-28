@@ -403,6 +403,16 @@ namespace Java.Awt
             get { return IExecuteWithSignature<int>("getY", "()I"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getListeners(java.lang.Class)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="T"><see cref="Java.Util.IEventListener"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        public T[] GetListeners<T>(Java.Lang.Class arg0) where T : Java.Util.IEventListener, new()
+        {
+            return IExecuteArray<T>("getListeners", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#areFocusTraversalKeysSet(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
