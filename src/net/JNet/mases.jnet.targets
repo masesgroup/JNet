@@ -3,11 +3,11 @@
     <jnet_jars Include="$(MSBuildThisFileDirectory)\jars\*.*" />
   </ItemGroup>
 
-  <Target Name="CopyFilesNative" BeforeTargets="Build">
+  <Target Name="JNet_CopyFilesNative" BeforeTargets="Build">
     <Copy SourceFiles="@(jnet_jars)" DestinationFolder="$(TargetDir)\jars" />
   </Target>
   
-  <Target Name="CopyFilesNativePublish" BeforeTargets="Publish">
+  <Target Name="JNet_CopyFilesNativePublish" BeforeTargets="Publish">
     <Copy SourceFiles="@(jnet_jars)" DestinationFolder="$(PublishDir)\jars" />
   </Target>
 </Project>
