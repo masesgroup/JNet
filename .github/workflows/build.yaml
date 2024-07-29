@@ -8,6 +8,8 @@ on:
   push:
     # only trigger on branches, not on tags
     branches: '**'
+    paths-ignore:
+      - 'docs/**'
 
 concurrency:
   group: '${{ github.workflow }} @ ${{ github.event.pull_request.head.label || github.head_ref || github.ref }}'
