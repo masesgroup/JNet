@@ -494,7 +494,7 @@ namespace MASES.JNetPSCore
         /// </summary>
         public static void Launch(Type type, params string[] args)
         {
-            _ = typeof(TClass).RunStaticMethodOn(typeof(JNetCore<TClass>), nameof(JNetCore<TClass>.Launch), type, args);
+            _ = typeof(TClass).RunStaticMethodOn(typeof(JNetCoreBase<TClass>), nameof(JNetCore<TClass>.Launch), type, args);
         }
         /// <summary>
         /// Creates a new class instance
