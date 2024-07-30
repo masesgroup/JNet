@@ -316,15 +316,15 @@ jobs:
           java-version: ${{ matrix.jdk_version }}
 
       - name: Install PowerShell module
+        shell: pwsh
         run: |
           $env:DOTNET_CLI_UI_LANGUAGE="en_US"
           Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
-        shell: pwsh
-        
+
       - name: Execute PowerShell test on ${{ matrix.os }} with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
         shell: pwsh
-        run: .\tests\scripts\JNetPSTest.ps1
+        run: ${{ github.workspace }}\tests\scripts\JNetPSTest.ps1
         env:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_5_17 }}
 
