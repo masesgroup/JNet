@@ -494,7 +494,7 @@ namespace MASES.JNetPSCore
         /// </summary>
         public static void Launch(Type type, params string[] args)
         {
-            _ = typeof(TClass).RunStaticMethodOn(typeof(JNetCoreBase<TClass>), nameof(JNetCore<TClass>.Launch), type, args);
+            _ = typeof(TClass).RunStaticMethodOn(typeof(JNetCoreBase<>), nameof(JNetCoreBase<TClass>.Launch), type, args);
         }
         /// <summary>
         /// Creates a new class instance
@@ -504,7 +504,7 @@ namespace MASES.JNetPSCore
         /// <returns>The newly created object</returns>
         public static object New(string className, params object[] args)
         {
-            return typeof(TClass).RunStaticMethodOn(typeof(JNetCoreBase<>), nameof(JNetCore<TClass>.New), className, args);
+            return typeof(TClass).RunStaticMethodOn(typeof(JNetCoreBase<>), nameof(JNetCoreBase<TClass>.New), className, args);
         }
     }
 }
