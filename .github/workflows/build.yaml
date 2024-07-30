@@ -329,7 +329,7 @@ jobs:
       - name: Execute PowerShell test on ${{ matrix.os }} with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
         shell: pwsh
         run: |
-          $env:GITHUB_WORKSPACE\.github\workflows\scripts\JNetPSTest.ps1
+          $env:GITHUB_WORKSPACE\tests\scripts\JNetPSTest.ps1
         env:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_5_17 }}
 
