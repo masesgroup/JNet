@@ -319,24 +319,25 @@ jobs:
           distribution: ${{ matrix.jdk_vendor }}
           java-version: ${{ matrix.jdk_version }}
 
-      - name: Install PowerShell module
+      - name: Execute PowerShell test on ${{ matrix.os }} with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
+        if: ${{ matrix.os != 'windows-latest' }}
         shell: pwsh
         run: |
           $env:DOTNET_CLI_UI_LANGUAGE="en_US"
           Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
-
-      - name: Execute PowerShell test on ${{ matrix.os }} with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
-        if: ${{ matrix.os != 'windows-latest' }}
-        shell: pwsh
-        run: ${{ github.workspace }}/bin/JNetPSTest.ps1
+          ${{ github.workspace }}/bin/JNetPSTest.ps1
         env:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_5_17 }}
 
       - name: Execute PowerShell test on ${{ matrix.os }} with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
         if: ${{ matrix.os == 'windows-latest' }}
         shell: pwsh
-        run: ${{ github.workspace }}\bin\JNetPSTest.ps1
+        run: |
+          $env:DOTNET_CLI_UI_LANGUAGE="en_US"
+          Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
+          Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
+          ${{ github.workspace }}\bin\JNetPSTest.ps1
         env:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_5_17 }}
 
