@@ -100,7 +100,7 @@
 </code></pre>
 <h3 id="execution">Execution</h3>
 <p>Now everything is ready and you can create objects like in the following snippet:</p>
-<pre><code class="lang-powershell">$var = New-JObject java.lang.String &quot;Hello from&quot;
+<pre><code class="lang-powershell">$var = New-JObject -Class java.lang.String -Arguments &quot;Hello from&quot;
 $var.ToString()
 $var = $var.concat(&quot; JNetPS&quot;)
 $var.ToString()
