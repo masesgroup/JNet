@@ -326,7 +326,6 @@ jobs:
           $env:DOTNET_CLI_UI_LANGUAGE="en_US"
           Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
-          Import-Module MASES.JNetPS
           ${{ github.workspace }}/bin/JNetPSTest.ps1
         env:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_5_17 }}
@@ -338,7 +337,17 @@ jobs:
           $env:DOTNET_CLI_UI_LANGUAGE="en_US"
           Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
-          Import-Module MASES.JNetPS
+          ${{ github.workspace }}\bin\JNetPSTest.ps1
+        env:
+          JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_5_17 }}
+
+      - name: Execute PowerShell 5.1 test on ${{ matrix.os }} with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
+        if: ${{ matrix.os == 'windows-latest' }}
+        shell: powershell
+        run: |
+          $env:DOTNET_CLI_UI_LANGUAGE="en_US"
+          Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
+          Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
           ${{ github.workspace }}\bin\JNetPSTest.ps1
         env:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_5_17 }}
