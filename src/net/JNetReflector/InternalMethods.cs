@@ -1513,6 +1513,7 @@ namespace MASES.JNetReflector
                 }
 
                 bool bypass = false;
+                bool hasMainVarVargs = false;
                 bool hasVarArg = false;
                 List<Parameter> parameters = new List<Parameter>();
                 Parameter varArg = null;
@@ -1521,7 +1522,13 @@ namespace MASES.JNetReflector
                 {
                     if (JNetReflectorCore.DisableGenerics && parameter.Type.IsOrInheritFromJVMGenericClass()) { bypass = true; break; }
                     if (parameter.MustBeAvoided(isGeneric)) { bypass = true; break; }
-                    if (!parameter.IsVarArgs)
+                    bool isParameterVarArgs = parameter.IsVarArgs;
+                    if (isParameterVarArgs && methodNameOrigin == "main" && method.Parameters.Length == 1 && method.IsStatic())
+                    {
+                        isParameterVarArgs = false; // convert vararg parameter to a standard array parameter only for main method
+                        hasMainVarVargs = true;
+                    }
+                    if (!isParameterVarArgs)
                     {
                         parameters.Add(parameter);
                     }
@@ -1748,7 +1755,9 @@ namespace MASES.JNetReflector
                     isArrayReturnType = true;
                 }
 
-                if (paramCount == 1 && !parameters[0].IsVarArgs && parameters[0].Type(null, null, parameters[0].Name().Camel(), isGeneric, JNetReflectorCore.UseCamel).EndsWith(SpecialNames.ArrayTypeTrailer))
+                if (paramCount == 1 
+                    && (hasMainVarVargs || !parameters[0].IsVarArgs) 
+                    && parameters[0].Type(null, null, parameters[0].Name().Camel(), isGeneric, JNetReflectorCore.UseCamel).EndsWith(SpecialNames.ArrayTypeTrailer))
                 {
                     executionParamsString = string.Format(AllPackageClasses.ClassStub.MethodStub.SINGLE_ARRAY_EXECUTION_FORMAT, parameters[0].Name);
                 }
