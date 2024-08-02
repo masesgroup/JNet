@@ -1559,6 +1559,11 @@ namespace MASES.JNetReflector
                 for (int i = 0; i < parameters.Count; i++)
                 {
                     var parameter = parameters[i];
+                    bool isParameterVarArgs = parameter.IsVarArgs;
+                    if (isParameterVarArgs && methodNameOrigin == "main" && parameters.Count == 1 && method.IsStatic())
+                    {
+                        isParameterVarArgs = false; // convert vararg parameter to a standard array parameter only for main method
+                    }
 
                     List<string> paramGenArguments = new List<string>();
                     List<KeyValuePair<string, string>> paramGenClauses = new List<KeyValuePair<string, string>>();
@@ -1569,7 +1574,7 @@ namespace MASES.JNetReflector
                     {
                         bool usableGenStrings = true;
                         if (typeStr.IsNetNativeType()) usableGenStrings = false;
-                        else if (parameter.IsVarArgs && typeStr.EndsWith(SpecialNames.ArrayTypeTrailer))
+                        else if (isParameterVarArgs && typeStr.EndsWith(SpecialNames.ArrayTypeTrailer))
                         {
                             typeStr = typeStr.Substring(0, typeStr.IndexOf(SpecialNames.ArrayTypeTrailer));
                         }
@@ -1606,7 +1611,7 @@ namespace MASES.JNetReflector
                     }
                     var content = string.Format(helpFormat, typeStrForDoc.ConvertToJavadoc());
                     methodHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.MethodStub.HELP_PARAM_DECORATION, parameter.Name(), content));
-                    if (parameter.IsVarArgs)
+                    if (isParameterVarArgs)
                     {
                         if (!typeStr.EndsWith(SpecialNames.ArrayTypeTrailer)) typeStr += SpecialNames.ArrayTypeTrailer;
                         methodParamsBuilder.AppendFormat($"params {typeStr} {varArg.Name()}, ");

@@ -13,7 +13,7 @@
 		<RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
 	</PropertyGroup>
 
-	<PropertyGroup Condition="'$(TargetFramework)' == 'net6.0'">
+	<PropertyGroup Condition="'$(TargetFramework)' == 'net8.0'">
 		<OutputType>Exe</OutputType>
 	</PropertyGroup>
 	

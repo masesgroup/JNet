@@ -36,7 +36,7 @@ Start-JNetPS [arguments]
 Now everything is ready and you can create objects like in the following snippet:
 
 ```powershell
-$var = New-JObject java.lang.String "Hello from"
+$var = New-JObject -Class java.lang.String -Arguments "Hello from"
 $var.ToString()
 $var = $var.concat(" JNetPS")
 $var.ToString()
