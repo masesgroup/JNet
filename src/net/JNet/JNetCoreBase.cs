@@ -159,6 +159,7 @@ namespace MASES.JNet
         /// </summary>
         public JNetCoreBase()
         {
+            JCOBridge.C2JBridge.JCOBridge.RegisterExceptions(typeof(JNetCoreBase<>).Assembly);
         }
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/M_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_ProcessCommandLine.htm"/>
@@ -220,7 +221,31 @@ namespace MASES.JNet
         /// <summary>
         /// A list of paths to be used in initialization of JVM ClassPath
         /// </summary>
-        protected virtual IList<string> PathToParse => new List<string>();
+        protected virtual IList<string> PathToParse
+        {
+            get
+            {
+                var lst = new List<string>();
+
+                var assembly = typeof(JNetCoreBase<>).Assembly;
+                var version = assembly.GetName().Version.ToString();
+                // 1. check first full version
+                var jnetcoreFile = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(assembly.Location), JARsSubFolder, $"jnetcore-{version}.jar");
+                if (!System.IO.File.Exists(jnetcoreFile) && version.EndsWith(".0"))
+                {
+                    // 2. if not exist remove last part of version
+                    version = version.Substring(0, version.LastIndexOf(".0"));
+                    jnetcoreFile = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(assembly.Location), JARsSubFolder, $"jnetcore-{version}.jar");
+                }
+                if (!System.IO.File.Exists(jnetcoreFile))
+                {
+                    throw new System.IO.FileNotFoundException("Unable to identify JNet Core Jar location", jnetcoreFile);
+                }
+
+                lst.Add(jnetcoreFile);
+                return lst;
+            }
+        }
 
         string buildClassPath()
         {
@@ -241,7 +266,7 @@ namespace MASES.JNet
             return classPath;
         }
 
-#endregion
+        #endregion
 
         #region Auxiliary Methods
         /// <inheritdoc cref="Parser.HelpInfo(int?)"/>
@@ -330,6 +355,6 @@ namespace MASES.JNet
             throw new ArgumentException($"{type} does not define any IJVMBridgeMain type or interface", "type");
         }
 
-#endregion
+        #endregion
     }
 }

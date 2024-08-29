@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<Import Project="..\Common\Common.props" />
 	<PropertyGroup>
-		<AssemblyName>MASES.JNet</AssemblyName>
-		<RootNamespace>MASES.JNet</RootNamespace>
+		<AssemblyName>MASES.JNetCore</AssemblyName>
+		<RootNamespace>MASES.JNetCore</RootNamespace>
 		<Title>Java/JVM suite for .NET - a comprehensive suite of libraries and tools to use Java/JVM APIs (Java, Scala, Kotlin, ...) and .NET side-by-side</Title>
 		<Description>Java/JVM suite for .NET - a comprehensive suite of libraries and tools to use Java/JVM APIs (Java, Scala, Kotlin, ...) and .NET side-by-side</Description>
-		<Product>JNet</Product>
+		<Product>JNetCore</Product>
 		<OutputPath>..\..\..\bin\</OutputPath>
 		<PackageTags>jnet dotnet clr jvm dotnetcore netcore dotnet6 net6 dotnet8 net8 java bridge gateway</PackageTags>
-		<PackageId>MASES.JNet</PackageId>
+		<PackageId>MASES.JNetCore</PackageId>
 		<PackageReadmeFile>usage.md</PackageReadmeFile>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
@@ -18,17 +18,17 @@
 		<DefineConstants>$(DefineConstants);JNET_SIMPLIFIED_GENERATION</DefineConstants>
 	</PropertyGroup>
 	<ItemGroup Condition="True">
-		<jnet_jars Include="$(ProjectDir)\..\..\..\jars\jnet-*" />
+		<jnetcore_jars Include="$(ProjectDir)\..\..\..\jars\jnet-*" />
 	</ItemGroup>
 	<Target Name="CopyCustomContent" AfterTargets="AfterBuild" Condition="'$(GITHUB_ACTIONS)' != 'true' Or '$(GITHUB_TEST_PREPARATION)' == 'true'">
-		<Copy SourceFiles="@(jnet_jars)" DestinationFolder="$(OutDir)\jars" />
+		<Copy SourceFiles="@(jnetcore_jars)" DestinationFolder="$(OutDir)\jars" />
 	</Target>
 	<Target Name="CopyCustomContentOnPublish" AfterTargets="Publish" Condition="'$(GITHUB_ACTIONS)' != 'true' Or '$(GITHUB_TEST_PREPARATION)' == 'true'">
-		<Copy SourceFiles="@(jnet_jars)" DestinationFolder="$(OutDir)\jars" />
+		<Copy SourceFiles="@(jnetcore_jars)" DestinationFolder="$(OutDir)\jars" />
 	</Target>
 	<ItemGroup>
-		<None Include="mases.jnet.targets" Pack="true" PackagePath="build" />
-		<None Include="..\..\..\jars\jnet-*" Pack="true" PackagePath="build\jars" />
+		<None Include="mases.jnetcore.targets" Pack="true" PackagePath="build" />
+		<None Include="..\..\..\jars\jnetcore-*" Pack="true" PackagePath="build\jars" />
 		<None Include="..\..\documentation\articles\usage.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 	<ItemGroup Condition="'$(GITHUB_SIMPLIFIED_GENERATION)' == 'true'">
@@ -46,16 +46,38 @@
 		<Compile Remove="Generated\Java\Util\Function\**" />
 		<None Remove="Generated\Java\Util\Function\**" />
 	</ItemGroup>
-	<ItemGroup>
-	  <Compile Remove="JNetCoreBase.cs" />
-	  <Compile Remove="Specific\**" />
+	<ItemGroup Condition="'$(GITHUB_SIMPLIFIED_GENERATION)' != 'true'">
+		<Compile Remove="Developed\Java\**" />
+		<Compile Remove="Developed\Javax\**" />
+		<Compile Remove="Generated\Java\**" />
+		<Compile Remove="Generated\Javax\**" />
+		<Compile Remove="Generated\Org\**" />
+		<Compile Remove="JNetCore.cs" />
+		<Compile Include="Developed\Java\Lang\*.cs" />
+		<Compile Remove="Developed\Java\Lang\*Error.cs" />
+		<Compile Remove="Developed\Java\Lang\*Exception.cs" />
+		<Compile Include="Developed\Java\Nio\*.cs" />
+		<Compile Include="Developed\Java\Util\Function\**" />
+		<Compile Include="Developed\Java\Util\Comparator.cs" />
+		<Compile Include="Developed\Java\Util\EventListener.cs" />
+		<Compile Include="Developed\Java\Util\Iterator.cs" />
+		<Compile Include="Generated\Java\Lang\*.cs" />
+		<Compile Include="Generated\Java\Nio\*.cs" />
 	</ItemGroup>
 	<ItemGroup>
-		<ProjectReference Include="JNetCore.csproj">
+	  <Compile Remove="Developed\Java\Lang\ClassLoader.cs" />
+	  <Compile Remove="Developed\Java\Lang\Compiler.cs" />
+	  <Compile Remove="Developed\Java\Lang\Module.cs" />
+	  <Compile Remove="Developed\Java\Lang\Object.cs" />
+	  <Compile Remove="Developed\Java\Lang\Package.cs" />
+	  <Compile Remove="Developed\Java\Lang\SecurityManager.cs" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="MASES.CLIParser" Version="3.2.1" />
+		<PackageReference Include="MASES.JCOBridge" Version="2.5.17">
 			<IncludeAssets>All</IncludeAssets>
 			<PrivateAssets>None</PrivateAssets>
-		</ProjectReference>
-		<PackageReference Include="MASES.CLIParser" Version="3.2.1" />
+		</PackageReference>
 		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
 	</ItemGroup>
 </Project>
