@@ -26,6 +26,23 @@ using System;
 
 namespace Java.Lang
 {
+    #region AbstractMethodError
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/AbstractMethodError.html"/>
+    /// </summary>
+    public partial class AbstractMethodError : Java.Lang.IncompatibleClassChangeError
+    {
+        const string _bridgeClassName = "java.lang.AbstractMethodError";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region Appendable
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html"/>
@@ -67,6 +84,74 @@ namespace Java.Lang
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ArithmeticException
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ArithmeticException.html"/>
+    /// </summary>
+    public partial class ArithmeticException : Java.Lang.RuntimeException
+    {
+        const string _bridgeClassName = "java.lang.ArithmeticException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ArrayIndexOutOfBoundsException
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ArrayIndexOutOfBoundsException.html"/>
+    /// </summary>
+    public partial class ArrayIndexOutOfBoundsException : Java.Lang.IndexOutOfBoundsException
+    {
+        const string _bridgeClassName = "java.lang.ArrayIndexOutOfBoundsException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ArrayStoreException
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ArrayStoreException.html"/>
+    /// </summary>
+    public partial class ArrayStoreException : Java.Lang.RuntimeException
+    {
+        const string _bridgeClassName = "java.lang.ArrayStoreException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region AssertionError
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/AssertionError.html"/>
+    /// </summary>
+    public partial class AssertionError : Java.Lang.Error
+    {
+        const string _bridgeClassName = "java.lang.AssertionError";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
 
         // TODO: complete the class
 
@@ -159,6 +244,23 @@ namespace Java.Lang
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region BootstrapMethodError
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/BootstrapMethodError.html"/>
+    /// </summary>
+    public partial class BootstrapMethodError : Java.Lang.LinkageError
+    {
+        const string _bridgeClassName = "java.lang.BootstrapMethodError";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
 
         // TODO: complete the class
 
@@ -528,6 +630,57 @@ namespace Java.Lang
     }
     #endregion
 
+    #region ClassCastException
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassCastException.html"/>
+    /// </summary>
+    public partial class ClassCastException : Java.Lang.RuntimeException
+    {
+        const string _bridgeClassName = "java.lang.ClassCastException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ClassCircularityError
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassCircularityError.html"/>
+    /// </summary>
+    public partial class ClassCircularityError : Java.Lang.LinkageError
+    {
+        const string _bridgeClassName = "java.lang.ClassCircularityError";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ClassFormatError
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassFormatError.html"/>
+    /// </summary>
+    public partial class ClassFormatError : Java.Lang.LinkageError
+    {
+        const string _bridgeClassName = "java.lang.ClassFormatError";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region ClassLoader
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html"/>
@@ -569,6 +722,23 @@ namespace Java.Lang
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ClassNotFoundException
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassNotFoundException.html"/>
+    /// </summary>
+    public partial class ClassNotFoundException : Java.Lang.ReflectiveOperationException
+    {
+        const string _bridgeClassName = "java.lang.ClassNotFoundException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
 
         // TODO: complete the class
 
@@ -711,6 +881,23 @@ namespace Java.Lang
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CloneNotSupportedException
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CloneNotSupportedException.html"/>
+    /// </summary>
+    public partial class CloneNotSupportedException : Java.Lang.Exception
+    {
+        const string _bridgeClassName = "java.lang.CloneNotSupportedException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
 
         // TODO: complete the class
 
@@ -999,6 +1186,74 @@ namespace Java.Lang
     }
     #endregion
 
+    #region EnumConstantNotPresentException
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/EnumConstantNotPresentException.html"/>
+    /// </summary>
+    public partial class EnumConstantNotPresentException : Java.Lang.RuntimeException
+    {
+        const string _bridgeClassName = "java.lang.EnumConstantNotPresentException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Error
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Error.html"/>
+    /// </summary>
+    public partial class Error : Java.Lang.Throwable
+    {
+        const string _bridgeClassName = "java.lang.Error";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Exception
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Exception.html"/>
+    /// </summary>
+    public partial class Exception : Java.Lang.Throwable
+    {
+        const string _bridgeClassName = "java.lang.Exception";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ExceptionInInitializerError
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ExceptionInInitializerError.html"/>
+    /// </summary>
+    public partial class ExceptionInInitializerError : Java.Lang.LinkageError
+    {
+        const string _bridgeClassName = "java.lang.ExceptionInInitializerError";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region Float
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html"/>
@@ -1091,6 +1346,57 @@ namespace Java.Lang
     }
     #endregion
 
+    #region IllegalAccessError
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/IllegalAccessError.html"/>
+    /// </summary>
+    public partial class IllegalAccessError : Java.Lang.IncompatibleClassChangeError
+    {
+        const string _bridgeClassName = "java.lang.IllegalAccessError";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region IllegalAccessException
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/IllegalAccessException.html"/>
+    /// </summary>
+    public partial class IllegalAccessException : Java.Lang.ReflectiveOperationException
+    {
+        const string _bridgeClassName = "java.lang.IllegalAccessException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region IllegalArgumentException
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/IllegalArgumentException.html"/>
+    /// </summary>
+    public partial class IllegalArgumentException : Java.Lang.RuntimeException
+    {
+        const string _bridgeClassName = "java.lang.IllegalArgumentException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region IllegalCallerException
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/IllegalCallerException.html"/>
@@ -1098,6 +1404,91 @@ namespace Java.Lang
     public partial class IllegalCallerException : Java.Lang.RuntimeException
     {
         const string _bridgeClassName = "java.lang.IllegalCallerException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region IllegalMonitorStateException
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/IllegalMonitorStateException.html"/>
+    /// </summary>
+    public partial class IllegalMonitorStateException : Java.Lang.RuntimeException
+    {
+        const string _bridgeClassName = "java.lang.IllegalMonitorStateException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region IllegalStateException
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/IllegalStateException.html"/>
+    /// </summary>
+    public partial class IllegalStateException : Java.Lang.RuntimeException
+    {
+        const string _bridgeClassName = "java.lang.IllegalStateException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region IllegalThreadStateException
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/IllegalThreadStateException.html"/>
+    /// </summary>
+    public partial class IllegalThreadStateException : Java.Lang.IllegalArgumentException
+    {
+        const string _bridgeClassName = "java.lang.IllegalThreadStateException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region IncompatibleClassChangeError
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/IncompatibleClassChangeError.html"/>
+    /// </summary>
+    public partial class IncompatibleClassChangeError : Java.Lang.LinkageError
+    {
+        const string _bridgeClassName = "java.lang.IncompatibleClassChangeError";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region IndexOutOfBoundsException
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/IndexOutOfBoundsException.html"/>
+    /// </summary>
+    public partial class IndexOutOfBoundsException : Java.Lang.RuntimeException
+    {
+        const string _bridgeClassName = "java.lang.IndexOutOfBoundsException";
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
         /// </summary>
@@ -1199,6 +1590,40 @@ namespace Java.Lang
     }
     #endregion
 
+    #region InstantiationError
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/InstantiationError.html"/>
+    /// </summary>
+    public partial class InstantiationError : Java.Lang.IncompatibleClassChangeError
+    {
+        const string _bridgeClassName = "java.lang.InstantiationError";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region InstantiationException
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/InstantiationException.html"/>
+    /// </summary>
+    public partial class InstantiationException : Java.Lang.ReflectiveOperationException
+    {
+        const string _bridgeClassName = "java.lang.InstantiationException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region Integer
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html"/>
@@ -1244,6 +1669,40 @@ namespace Java.Lang
     }
     #endregion
 
+    #region InternalError
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/InternalError.html"/>
+    /// </summary>
+    public partial class InternalError : Java.Lang.VirtualMachineError
+    {
+        const string _bridgeClassName = "java.lang.InternalError";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region InterruptedException
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/InterruptedException.html"/>
+    /// </summary>
+    public partial class InterruptedException : Java.Lang.Exception
+    {
+        const string _bridgeClassName = "java.lang.InterruptedException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
 
 
 
@@ -1255,6 +1714,23 @@ namespace Java.Lang
     public partial class LayerInstantiationException : Java.Lang.RuntimeException
     {
         const string _bridgeClassName = "java.lang.LayerInstantiationException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region LinkageError
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/LinkageError.html"/>
+    /// </summary>
+    public partial class LinkageError : Java.Lang.Error
+    {
+        const string _bridgeClassName = "java.lang.LinkageError";
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
         /// </summary>
@@ -1490,6 +1966,125 @@ namespace Java.Lang
     }
     #endregion
 
+    #region NegativeArraySizeException
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/NegativeArraySizeException.html"/>
+    /// </summary>
+    public partial class NegativeArraySizeException : Java.Lang.RuntimeException
+    {
+        const string _bridgeClassName = "java.lang.NegativeArraySizeException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region NoClassDefFoundError
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/NoClassDefFoundError.html"/>
+    /// </summary>
+    public partial class NoClassDefFoundError : Java.Lang.LinkageError
+    {
+        const string _bridgeClassName = "java.lang.NoClassDefFoundError";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region NoSuchFieldError
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/NoSuchFieldError.html"/>
+    /// </summary>
+    public partial class NoSuchFieldError : Java.Lang.IncompatibleClassChangeError
+    {
+        const string _bridgeClassName = "java.lang.NoSuchFieldError";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region NoSuchFieldException
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/NoSuchFieldException.html"/>
+    /// </summary>
+    public partial class NoSuchFieldException : Java.Lang.ReflectiveOperationException
+    {
+        const string _bridgeClassName = "java.lang.NoSuchFieldException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region NoSuchMethodError
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/NoSuchMethodError.html"/>
+    /// </summary>
+    public partial class NoSuchMethodError : Java.Lang.IncompatibleClassChangeError
+    {
+        const string _bridgeClassName = "java.lang.NoSuchMethodError";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region NoSuchMethodException
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/NoSuchMethodException.html"/>
+    /// </summary>
+    public partial class NoSuchMethodException : Java.Lang.ReflectiveOperationException
+    {
+        const string _bridgeClassName = "java.lang.NoSuchMethodException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region NullPointerException
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/NullPointerException.html"/>
+    /// </summary>
+    public partial class NullPointerException : Java.Lang.RuntimeException
+    {
+        const string _bridgeClassName = "java.lang.NullPointerException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region Number
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html"/>
@@ -1537,6 +2132,23 @@ namespace Java.Lang
     }
     #endregion
 
+    #region NumberFormatException
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/NumberFormatException.html"/>
+    /// </summary>
+    public partial class NumberFormatException : Java.Lang.IllegalArgumentException
+    {
+        const string _bridgeClassName = "java.lang.NumberFormatException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region Object
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html"/>
@@ -1576,6 +2188,23 @@ namespace Java.Lang
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region OutOfMemoryError
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/OutOfMemoryError.html"/>
+    /// </summary>
+    public partial class OutOfMemoryError : Java.Lang.VirtualMachineError
+    {
+        const string _bridgeClassName = "java.lang.OutOfMemoryError";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
 
         // TODO: complete the class
 
@@ -1999,6 +2628,23 @@ namespace Java.Lang
     }
     #endregion
 
+    #region ReflectiveOperationException
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ReflectiveOperationException.html"/>
+    /// </summary>
+    public partial class ReflectiveOperationException : Java.Lang.Exception
+    {
+        const string _bridgeClassName = "java.lang.ReflectiveOperationException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region Runnable
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runnable.html"/>
@@ -2136,6 +2782,23 @@ namespace Java.Lang
     }
     #endregion
 
+    #region RuntimeException
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/RuntimeException.html"/>
+    /// </summary>
+    public partial class RuntimeException : Java.Lang.Exception
+    {
+        const string _bridgeClassName = "java.lang.RuntimeException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region RuntimePermission
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/RuntimePermission.html"/>
@@ -2228,6 +2891,23 @@ namespace Java.Lang
     }
     #endregion
 
+    #region SecurityException
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityException.html"/>
+    /// </summary>
+    public partial class SecurityException : Java.Lang.RuntimeException
+    {
+        const string _bridgeClassName = "java.lang.SecurityException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region SecurityManager
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html"/>
@@ -2312,6 +2992,23 @@ namespace Java.Lang
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region StackOverflowError
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackOverflowError.html"/>
+    /// </summary>
+    public partial class StackOverflowError : Java.Lang.VirtualMachineError
+    {
+        const string _bridgeClassName = "java.lang.StackOverflowError";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
 
         // TODO: complete the class
 
@@ -2674,6 +3371,23 @@ namespace Java.Lang
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region StringIndexOutOfBoundsException
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StringIndexOutOfBoundsException.html"/>
+    /// </summary>
+    public partial class StringIndexOutOfBoundsException : Java.Lang.IndexOutOfBoundsException
+    {
+        const string _bridgeClassName = "java.lang.StringIndexOutOfBoundsException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
 
         // TODO: complete the class
 
@@ -3151,6 +3865,125 @@ namespace Java.Lang
 
         // TODO: complete the class
     
+    }
+    #endregion
+
+    #region TypeNotPresentException
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/TypeNotPresentException.html"/>
+    /// </summary>
+    public partial class TypeNotPresentException : Java.Lang.RuntimeException
+    {
+        const string _bridgeClassName = "java.lang.TypeNotPresentException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region UnknownError
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/UnknownError.html"/>
+    /// </summary>
+    public partial class UnknownError : Java.Lang.VirtualMachineError
+    {
+        const string _bridgeClassName = "java.lang.UnknownError";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region UnsatisfiedLinkError
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/UnsatisfiedLinkError.html"/>
+    /// </summary>
+    public partial class UnsatisfiedLinkError : Java.Lang.LinkageError
+    {
+        const string _bridgeClassName = "java.lang.UnsatisfiedLinkError";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region UnsupportedClassVersionError
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/UnsupportedClassVersionError.html"/>
+    /// </summary>
+    public partial class UnsupportedClassVersionError : Java.Lang.ClassFormatError
+    {
+        const string _bridgeClassName = "java.lang.UnsupportedClassVersionError";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region UnsupportedOperationException
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/UnsupportedOperationException.html"/>
+    /// </summary>
+    public partial class UnsupportedOperationException : Java.Lang.RuntimeException
+    {
+        const string _bridgeClassName = "java.lang.UnsupportedOperationException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region VerifyError
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/VerifyError.html"/>
+    /// </summary>
+    public partial class VerifyError : Java.Lang.LinkageError
+    {
+        const string _bridgeClassName = "java.lang.VerifyError";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region VirtualMachineError
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/VirtualMachineError.html"/>
+    /// </summary>
+    public partial class VirtualMachineError : Java.Lang.Error
+    {
+        const string _bridgeClassName = "java.lang.VirtualMachineError";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
     }
     #endregion
 
