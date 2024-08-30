@@ -55,9 +55,7 @@ jobs:
           MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
 
       - name: Clear C# generated files
-        run: | 
-          Remove-Item .\src\net\JNet\GeneratedCore\* -Recurse -Force -Exclude README.md
-          Remove-Item .\src\net\JNet\Generated\* -Recurse -Force -Exclude README.md
+        run: Remove-Item .\src\net\JNet\Generated\* -Recurse -Force -Exclude README.md
 
       - name: Clear Java generated files
         run: |
@@ -70,7 +68,6 @@ jobs:
         shell: cmd
         run: |
           cd binReflector\net8.0
-          MASES.JNetReflector.exe -TraceLevel 0 -DestinationRootPath ..\..\src\ -ConfigurationFile ..\..\src\configurationCore.json
           MASES.JNetReflector.exe -TraceLevel 0 -DestinationRootPath ..\..\src\ -ConfigurationFile ..\..\src\configuration.json
         env:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ONLINE }}
