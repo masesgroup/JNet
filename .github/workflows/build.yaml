@@ -241,7 +241,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ 'ubuntu-latest', 'windows-latest', 'macos-latest', 'macos-13' ]
+        os: [ 'ubuntu-latest', 'windows-latest', 'macos-latest', 'macos-latest-large' ]
         framework: [ 'net462', 'net6.0', 'net8.0' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle']
         jdk_version: [ '11', '17', '21' ] # only LTS versions
@@ -291,12 +291,19 @@ jobs:
         env:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_5_17 }}
 
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+          path: ${{ github.workspace }}/**/hs_err_*
+          retention-days: 7
+
   execute_tests_powershell:
     needs: build_windows
     strategy:
       fail-fast: false
       matrix:
-        os: [ 'ubuntu-latest', 'windows-latest', 'macos-latest', 'macos-13' ]
+        os: [ 'ubuntu-latest', 'windows-latest', 'macos-latest', 'macos-latest-large' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle']
         jdk_version: [ '11', '17', '21' ] # only LTS versions
         exclude:
@@ -350,6 +357,13 @@ jobs:
           ${{ github.workspace }}\bin\JNetPSTest.ps1
         env:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_5_17 }}
+
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: Crash_powershell_${{ matrix.os }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+          path: ${{ github.workspace }}/**/hs_err_*
+          retention-days: 7
 
   final_cleanup:
     needs: [ execute_tests, execute_tests_powershell ]
