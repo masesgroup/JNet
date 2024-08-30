@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi
 {
+    #region ConnectIOException definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/ConnectIOException.html"/>
+    /// </summary>
+    public partial class ConnectIOException : Java.Rmi.RemoteException
+    {
+        const string _bridgeClassName = "java.rmi.ConnectIOException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region ConnectIOException
     public partial class ConnectIOException
     {

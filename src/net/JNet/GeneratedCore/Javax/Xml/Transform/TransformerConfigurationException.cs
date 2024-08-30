@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Transform
 {
+    #region TransformerConfigurationException definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerConfigurationException.html"/>
+    /// </summary>
+    public partial class TransformerConfigurationException : Javax.Xml.Transform.TransformerException
+    {
+        const string _bridgeClassName = "javax.xml.transform.TransformerConfigurationException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region TransformerConfigurationException
     public partial class TransformerConfigurationException
     {

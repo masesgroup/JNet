@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Security.Auth.Login
 {
+    #region AccountExpiredException definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/AccountExpiredException.html"/>
+    /// </summary>
+    public partial class AccountExpiredException : Javax.Security.Auth.Login.AccountException
+    {
+        const string _bridgeClassName = "javax.security.auth.login.AccountExpiredException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region AccountExpiredException
     public partial class AccountExpiredException
     {

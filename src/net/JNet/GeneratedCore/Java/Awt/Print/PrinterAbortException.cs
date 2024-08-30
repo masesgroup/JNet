@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Print
 {
+    #region PrinterAbortException definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterAbortException.html"/>
+    /// </summary>
+    public partial class PrinterAbortException : Java.Awt.Print.PrinterException
+    {
+        const string _bridgeClassName = "java.awt.print.PrinterAbortException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region PrinterAbortException
     public partial class PrinterAbortException
     {

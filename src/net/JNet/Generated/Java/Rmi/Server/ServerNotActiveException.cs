@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi.Server
 {
+    #region ServerNotActiveException definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/ServerNotActiveException.html"/>
+    /// </summary>
+    public partial class ServerNotActiveException : Java.Lang.Exception
+    {
+        const string _bridgeClassName = "java.rmi.server.ServerNotActiveException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region ServerNotActiveException
     public partial class ServerNotActiveException
     {

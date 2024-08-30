@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Annotation
 {
+    #region AnnotationTypeMismatchException definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/AnnotationTypeMismatchException.html"/>
+    /// </summary>
+    public partial class AnnotationTypeMismatchException : Java.Lang.RuntimeException
+    {
+        const string _bridgeClassName = "java.lang.annotation.AnnotationTypeMismatchException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region AnnotationTypeMismatchException
     public partial class AnnotationTypeMismatchException
     {

@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
+    #region RejectedExecutionException definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RejectedExecutionException.html"/>
+    /// </summary>
+    public partial class RejectedExecutionException : Java.Lang.RuntimeException
+    {
+        const string _bridgeClassName = "java.util.concurrent.RejectedExecutionException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region RejectedExecutionException
     public partial class RejectedExecutionException
     {

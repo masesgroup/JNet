@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
+    #region ShutdownChannelGroupException definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ShutdownChannelGroupException.html"/>
+    /// </summary>
+    public partial class ShutdownChannelGroupException : Java.Lang.IllegalStateException
+    {
+        const string _bridgeClassName = "java.nio.channels.ShutdownChannelGroupException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region ShutdownChannelGroupException
     public partial class ShutdownChannelGroupException
     {

@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql.Rowset.Serial
 {
+    #region SerialException definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialException.html"/>
+    /// </summary>
+    public partial class SerialException : Java.Sql.SQLException
+    {
+        const string _bridgeClassName = "javax.sql.rowset.serial.SerialException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region SerialException
     public partial class SerialException
     {

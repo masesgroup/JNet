@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
+    #region SQLNonTransientConnectionException definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLNonTransientConnectionException.html"/>
+    /// </summary>
+    public partial class SQLNonTransientConnectionException : Java.Sql.SQLNonTransientException
+    {
+        const string _bridgeClassName = "java.sql.SQLNonTransientConnectionException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region SQLNonTransientConnectionException
     public partial class SQLNonTransientConnectionException
     {

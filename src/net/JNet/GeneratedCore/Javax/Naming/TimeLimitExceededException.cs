@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming
 {
+    #region TimeLimitExceededException definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/TimeLimitExceededException.html"/>
+    /// </summary>
+    public partial class TimeLimitExceededException : Javax.Naming.LimitExceededException
+    {
+        const string _bridgeClassName = "javax.naming.TimeLimitExceededException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region TimeLimitExceededException
     public partial class TimeLimitExceededException
     {

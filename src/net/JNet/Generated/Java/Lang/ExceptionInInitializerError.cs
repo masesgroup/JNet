@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
+    #region ExceptionInInitializerError definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ExceptionInInitializerError.html"/>
+    /// </summary>
+    public partial class ExceptionInInitializerError : Java.Lang.LinkageError
+    {
+        const string _bridgeClassName = "java.lang.ExceptionInInitializerError";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region ExceptionInInitializerError
     public partial class ExceptionInInitializerError
     {

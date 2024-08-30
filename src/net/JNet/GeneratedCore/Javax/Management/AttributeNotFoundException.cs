@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
+    #region AttributeNotFoundException definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeNotFoundException.html"/>
+    /// </summary>
+    public partial class AttributeNotFoundException : Javax.Management.OperationsException
+    {
+        const string _bridgeClassName = "javax.management.AttributeNotFoundException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region AttributeNotFoundException
     public partial class AttributeNotFoundException
     {

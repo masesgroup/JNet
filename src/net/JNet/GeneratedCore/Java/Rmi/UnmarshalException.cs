@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi
 {
+    #region UnmarshalException definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/UnmarshalException.html"/>
+    /// </summary>
+    public partial class UnmarshalException : Java.Rmi.RemoteException
+    {
+        const string _bridgeClassName = "java.rmi.UnmarshalException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region UnmarshalException
     public partial class UnmarshalException
     {

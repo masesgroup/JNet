@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
+    #region InstantiationException definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/InstantiationException.html"/>
+    /// </summary>
+    public partial class InstantiationException : Java.Lang.ReflectiveOperationException
+    {
+        const string _bridgeClassName = "java.lang.InstantiationException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region InstantiationException
     public partial class InstantiationException
     {

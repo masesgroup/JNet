@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
+    #region CharConversionException definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/CharConversionException.html"/>
+    /// </summary>
+    public partial class CharConversionException : Java.Io.IOException
+    {
+        const string _bridgeClassName = "java.io.CharConversionException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region CharConversionException
     public partial class CharConversionException
     {

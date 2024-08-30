@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Directory
 {
+    #region NoSuchAttributeException definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/NoSuchAttributeException.html"/>
+    /// </summary>
+    public partial class NoSuchAttributeException : Javax.Naming.NamingException
+    {
+        const string _bridgeClassName = "javax.naming.directory.NoSuchAttributeException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region NoSuchAttributeException
     public partial class NoSuchAttributeException
     {

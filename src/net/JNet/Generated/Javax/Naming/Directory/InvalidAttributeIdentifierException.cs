@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Directory
 {
+    #region InvalidAttributeIdentifierException definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/InvalidAttributeIdentifierException.html"/>
+    /// </summary>
+    public partial class InvalidAttributeIdentifierException : Javax.Naming.NamingException
+    {
+        const string _bridgeClassName = "javax.naming.directory.InvalidAttributeIdentifierException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region InvalidAttributeIdentifierException
     public partial class InvalidAttributeIdentifierException
     {

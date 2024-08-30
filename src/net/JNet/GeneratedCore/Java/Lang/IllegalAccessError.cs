@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
+    #region IllegalAccessError definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/IllegalAccessError.html"/>
+    /// </summary>
+    public partial class IllegalAccessError : Java.Lang.IncompatibleClassChangeError
+    {
+        const string _bridgeClassName = "java.lang.IllegalAccessError";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region IllegalAccessError
     public partial class IllegalAccessError
     {

@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Openmbean
 {
+    #region InvalidKeyException definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/InvalidKeyException.html"/>
+    /// </summary>
+    public partial class InvalidKeyException : Java.Lang.IllegalArgumentException
+    {
+        const string _bridgeClassName = "javax.management.openmbean.InvalidKeyException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region InvalidKeyException
     public partial class InvalidKeyException
     {

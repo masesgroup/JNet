@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
+    #region InvalidAlgorithmParameterException definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/InvalidAlgorithmParameterException.html"/>
+    /// </summary>
+    public partial class InvalidAlgorithmParameterException : Java.Security.GeneralSecurityException
+    {
+        const string _bridgeClassName = "java.security.InvalidAlgorithmParameterException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region InvalidAlgorithmParameterException
     public partial class InvalidAlgorithmParameterException
     {

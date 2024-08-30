@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming
 {
+    #region CannotProceedException definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CannotProceedException.html"/>
+    /// </summary>
+    public partial class CannotProceedException : Javax.Naming.NamingException
+    {
+        const string _bridgeClassName = "javax.naming.CannotProceedException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region CannotProceedException
     public partial class CannotProceedException
     {

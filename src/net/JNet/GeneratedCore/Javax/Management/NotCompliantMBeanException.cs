@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
+    #region NotCompliantMBeanException definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotCompliantMBeanException.html"/>
+    /// </summary>
+    public partial class NotCompliantMBeanException : Javax.Management.OperationsException
+    {
+        const string _bridgeClassName = "javax.management.NotCompliantMBeanException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region NotCompliantMBeanException
     public partial class NotCompliantMBeanException
     {

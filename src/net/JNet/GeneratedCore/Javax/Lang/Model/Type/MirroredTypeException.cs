@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Type
 {
+    #region MirroredTypeException definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/MirroredTypeException.html"/>
+    /// </summary>
+    public partial class MirroredTypeException : Javax.Lang.Model.Type.MirroredTypesException
+    {
+        const string _bridgeClassName = "javax.lang.model.type.MirroredTypeException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region MirroredTypeException
     public partial class MirroredTypeException
     {

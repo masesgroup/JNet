@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Validation
 {
+    #region SchemaFactoryConfigurationError definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactoryConfigurationError.html"/>
+    /// </summary>
+    public partial class SchemaFactoryConfigurationError : Java.Lang.Error
+    {
+        const string _bridgeClassName = "javax.xml.validation.SchemaFactoryConfigurationError";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region SchemaFactoryConfigurationError
     public partial class SchemaFactoryConfigurationError
     {

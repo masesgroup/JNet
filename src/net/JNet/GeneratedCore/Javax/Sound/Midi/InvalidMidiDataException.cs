@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Midi
 {
+    #region InvalidMidiDataException definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/InvalidMidiDataException.html"/>
+    /// </summary>
+    public partial class InvalidMidiDataException : Java.Lang.Exception
+    {
+        const string _bridgeClassName = "javax.sound.midi.InvalidMidiDataException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region InvalidMidiDataException
     public partial class InvalidMidiDataException
     {

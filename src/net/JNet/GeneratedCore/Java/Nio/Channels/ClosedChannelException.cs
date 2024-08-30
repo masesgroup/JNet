@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
+    #region ClosedChannelException definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ClosedChannelException.html"/>
+    /// </summary>
+    public partial class ClosedChannelException : Java.Io.IOException
+    {
+        const string _bridgeClassName = "java.nio.channels.ClosedChannelException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region ClosedChannelException
     public partial class ClosedChannelException
     {

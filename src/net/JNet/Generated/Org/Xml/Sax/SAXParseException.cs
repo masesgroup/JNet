@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.Xml.Sax
 {
+    #region SAXParseException definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/SAXParseException.html"/>
+    /// </summary>
+    public partial class SAXParseException : Org.Xml.Sax.SAXException
+    {
+        const string _bridgeClassName = "org.xml.sax.SAXParseException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region SAXParseException
     public partial class SAXParseException
     {

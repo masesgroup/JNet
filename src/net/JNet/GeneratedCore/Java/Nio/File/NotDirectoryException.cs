@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File
 {
+    #region NotDirectoryException definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/NotDirectoryException.html"/>
+    /// </summary>
+    public partial class NotDirectoryException : Java.Nio.File.FileSystemException
+    {
+        const string _bridgeClassName = "java.nio.file.NotDirectoryException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region NotDirectoryException
     public partial class NotDirectoryException
     {

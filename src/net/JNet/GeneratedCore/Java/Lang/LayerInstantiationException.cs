@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
+    #region LayerInstantiationException definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/LayerInstantiationException.html"/>
+    /// </summary>
+    public partial class LayerInstantiationException : Java.Lang.RuntimeException
+    {
+        const string _bridgeClassName = "java.lang.LayerInstantiationException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region LayerInstantiationException
     public partial class LayerInstantiationException
     {

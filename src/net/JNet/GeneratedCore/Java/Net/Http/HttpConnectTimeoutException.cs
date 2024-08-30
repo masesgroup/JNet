@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net.Http
 {
+    #region HttpConnectTimeoutException definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpConnectTimeoutException.html"/>
+    /// </summary>
+    public partial class HttpConnectTimeoutException : Java.Net.Http.HttpTimeoutException
+    {
+        const string _bridgeClassName = "java.net.http.HttpConnectTimeoutException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region HttpConnectTimeoutException
     public partial class HttpConnectTimeoutException
     {

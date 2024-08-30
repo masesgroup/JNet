@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Sampled
 {
+    #region UnsupportedAudioFileException definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/UnsupportedAudioFileException.html"/>
+    /// </summary>
+    public partial class UnsupportedAudioFileException : Java.Lang.Exception
+    {
+        const string _bridgeClassName = "javax.sound.sampled.UnsupportedAudioFileException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region UnsupportedAudioFileException
     public partial class UnsupportedAudioFileException
     {

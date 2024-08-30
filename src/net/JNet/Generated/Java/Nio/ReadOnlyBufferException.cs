@@ -25,6 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio
 {
+    #region ReadOnlyBufferException definition
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ReadOnlyBufferException.html"/>
+    /// </summary>
+    public partial class ReadOnlyBufferException : Java.Lang.UnsupportedOperationException
+    {
+        const string _bridgeClassName = "java.nio.ReadOnlyBufferException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region ReadOnlyBufferException
     public partial class ReadOnlyBufferException
     {
