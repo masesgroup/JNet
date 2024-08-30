@@ -5,8 +5,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.masesgroup</groupId>
-	<artifactId>jnet</artifactId>
-	<name>mases.jnet</name>
+	<artifactId>jnetcore</artifactId>
+	<name>mases.jnetcore</name>
 	<description>JNet-Java interface bridging implementation</description>
 	<url>https://github.com/masesgroup/JNet</url>
 	<version>${jnetversion}</version>
