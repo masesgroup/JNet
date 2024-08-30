@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region Objects definition
+    #region Objects declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Objects
+    #region Objects implementation
     public partial class Objects
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print
 {
-    #region DocPrintJob definition
+    #region DocPrintJob declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocPrintJob.html"/>
     /// </summary>
@@ -126,7 +126,7 @@ namespace Javax.Print
     }
     #endregion
 
-    #region DocPrintJob
+    #region DocPrintJob implementation
     public partial class DocPrintJob : Javax.Print.IDocPrintJob
     {
         #region Constructors

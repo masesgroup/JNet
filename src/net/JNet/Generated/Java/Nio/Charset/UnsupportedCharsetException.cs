@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Charset
 {
-    #region UnsupportedCharsetException definition
+    #region UnsupportedCharsetException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/UnsupportedCharsetException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Nio.Charset
     }
     #endregion
 
-    #region UnsupportedCharsetException
+    #region UnsupportedCharsetException implementation
     public partial class UnsupportedCharsetException
     {
         #region Constructors

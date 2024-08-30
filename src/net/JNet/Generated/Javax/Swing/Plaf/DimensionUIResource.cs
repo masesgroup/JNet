@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf
 {
-    #region DimensionUIResource definition
+    #region DimensionUIResource declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/DimensionUIResource.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf
     }
     #endregion
 
-    #region DimensionUIResource
+    #region DimensionUIResource implementation
     public partial class DimensionUIResource
     {
         #region Constructors

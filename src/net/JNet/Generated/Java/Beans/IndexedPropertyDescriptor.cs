@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans
 {
-    #region IndexedPropertyDescriptor definition
+    #region IndexedPropertyDescriptor declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IndexedPropertyDescriptor.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Beans
     }
     #endregion
 
-    #region IndexedPropertyDescriptor
+    #region IndexedPropertyDescriptor implementation
     public partial class IndexedPropertyDescriptor
     {
         #region Constructors

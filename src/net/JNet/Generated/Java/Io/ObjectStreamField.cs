@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
-    #region ObjectStreamField definition
+    #region ObjectStreamField declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Io
     }
     #endregion
 
-    #region ObjectStreamField
+    #region ObjectStreamField implementation
     public partial class ObjectStreamField
     {
         #region Constructors

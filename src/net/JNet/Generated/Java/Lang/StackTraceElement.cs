@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region StackTraceElement definition
+    #region StackTraceElement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region StackTraceElement
+    #region StackTraceElement implementation
     public partial class StackTraceElement
     {
         #region Constructors

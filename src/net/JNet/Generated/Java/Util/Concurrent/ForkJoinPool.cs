@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region ForkJoinPool definition
+    #region ForkJoinPool declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Util.Concurrent
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region ForkJoinWorkerThreadFactory definition
+        #region ForkJoinWorkerThreadFactory declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory.html"/>
         /// </summary>
@@ -113,7 +113,7 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
-        #region ManagedBlocker definition
+        #region ManagedBlocker declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.ManagedBlocker.html"/>
         /// </summary>
@@ -164,7 +164,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ForkJoinPool
+    #region ForkJoinPool implementation
     public partial class ForkJoinPool
     {
         #region Constructors
@@ -351,7 +351,7 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Nested classes
-        #region ForkJoinWorkerThreadFactory
+        #region ForkJoinWorkerThreadFactory implementation
         public partial class ForkJoinWorkerThreadFactory
         {
             #region Constructors
@@ -391,7 +391,7 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
-        #region ManagedBlocker
+        #region ManagedBlocker implementation
         public partial class ManagedBlocker
         {
             #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom
 {
-    #region Attr definition
+    #region Attr declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html"/>
     /// </summary>
@@ -115,7 +115,7 @@ namespace Org.W3c.Dom
     }
     #endregion
 
-    #region Attr
+    #region Attr implementation
     public partial class Attr : Org.W3c.Dom.IAttr
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region StandardEmitterMBean definition
+    #region StandardEmitterMBean declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardEmitterMBean.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region StandardEmitterMBean
+    #region StandardEmitterMBean implementation
     public partial class StandardEmitterMBean
     {
         #region Constructors

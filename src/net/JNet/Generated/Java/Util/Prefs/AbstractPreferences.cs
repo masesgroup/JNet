@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Prefs
 {
-    #region AbstractPreferences definition
+    #region AbstractPreferences declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/AbstractPreferences.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util.Prefs
     }
     #endregion
 
-    #region AbstractPreferences
+    #region AbstractPreferences implementation
     public partial class AbstractPreferences
     {
         #region Constructors

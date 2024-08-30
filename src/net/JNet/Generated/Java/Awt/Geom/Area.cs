@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Geom
 {
-    #region Area definition
+    #region Area declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.Geom
     }
     #endregion
 
-    #region Area
+    #region Area implementation
     public partial class Area
     {
         #region Constructors

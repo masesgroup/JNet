@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
-    #region URI definition
+    #region URI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Net
     }
     #endregion
 
-    #region URI
+    #region URI implementation
     public partial class URI
     {
         #region Constructors

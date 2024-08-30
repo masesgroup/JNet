@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Multi
 {
-    #region MultiTextUI definition
+    #region MultiTextUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/multi/MultiTextUI.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf.Multi
     }
     #endregion
 
-    #region MultiTextUI
+    #region MultiTextUI implementation
     public partial class MultiTextUI
     {
         #region Constructors

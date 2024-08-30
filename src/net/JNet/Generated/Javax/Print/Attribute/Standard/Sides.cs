@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Attribute.Standard
 {
-    #region Sides definition
+    #region Sides declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Sides.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Print.Attribute.Standard
     }
     #endregion
 
-    #region Sides
+    #region Sides implementation
     public partial class Sides
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Instrument
 {
-    #region ClassFileTransformer definition
+    #region ClassFileTransformer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/ClassFileTransformer.html"/>
     /// </summary>
@@ -113,7 +113,7 @@ namespace Java.Lang.Instrument
     }
     #endregion
 
-    #region ClassFileTransformer
+    #region ClassFileTransformer implementation
     public partial class ClassFileTransformer : Java.Lang.Instrument.IClassFileTransformer
     {
         #region Constructors

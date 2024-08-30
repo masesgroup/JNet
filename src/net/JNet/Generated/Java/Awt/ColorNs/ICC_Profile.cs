@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ColorNs
 {
-    #region ICC_Profile definition
+    #region ICC_Profile declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.ColorNs
     }
     #endregion
 
-    #region ICC_Profile
+    #region ICC_Profile implementation
     public partial class ICC_Profile
     {
         #region Constructors

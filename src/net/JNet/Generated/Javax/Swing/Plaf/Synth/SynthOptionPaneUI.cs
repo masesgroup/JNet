@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Synth
 {
-    #region SynthOptionPaneUI definition
+    #region SynthOptionPaneUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthOptionPaneUI.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf.Synth
     }
     #endregion
 
-    #region SynthOptionPaneUI
+    #region SynthOptionPaneUI implementation
     public partial class SynthOptionPaneUI
     {
         #region Constructors

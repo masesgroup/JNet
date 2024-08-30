@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region TextAction definition
+    #region TextAction declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TextAction.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region TextAction
+    #region TextAction implementation
     public partial class TextAction
     {
         #region Constructors

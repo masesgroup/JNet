@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf
 {
-    #region InsetsUIResource definition
+    #region InsetsUIResource declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/InsetsUIResource.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf
     }
     #endregion
 
-    #region InsetsUIResource
+    #region InsetsUIResource implementation
     public partial class InsetsUIResource
     {
         #region Constructors

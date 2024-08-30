@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region InvalidKeyException definition
+    #region InvalidKeyException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/InvalidKeyException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region InvalidKeyException
+    #region InvalidKeyException implementation
     public partial class InvalidKeyException
     {
         #region Constructors

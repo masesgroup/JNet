@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region SecureRandomSpi definition
+    #region SecureRandomSpi declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandomSpi.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region SecureRandomSpi
+    #region SecureRandomSpi implementation
     public partial class SecureRandomSpi
     {
         #region Constructors

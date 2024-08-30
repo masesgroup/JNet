@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Interfaces
 {
-    #region DSAKey definition
+    #region DSAKey declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAKey.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Java.Security.Interfaces
     }
     #endregion
 
-    #region DSAKey
+    #region DSAKey implementation
     public partial class DSAKey : Java.Security.Interfaces.IDSAKey
     {
         #region Constructors

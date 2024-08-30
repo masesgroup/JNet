@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Synth
 {
-    #region SynthTreeUI definition
+    #region SynthTreeUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthTreeUI.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf.Synth
     }
     #endregion
 
-    #region SynthTreeUI
+    #region SynthTreeUI implementation
     public partial class SynthTreeUI
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto
 {
-    #region KeySelectorException definition
+    #region KeySelectorException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelectorException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Xml.Crypto
     }
     #endregion
 
-    #region KeySelectorException
+    #region KeySelectorException implementation
     public partial class KeySelectorException
     {
         #region Constructors

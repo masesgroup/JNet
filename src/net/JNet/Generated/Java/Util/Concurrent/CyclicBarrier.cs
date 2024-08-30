@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region CyclicBarrier definition
+    #region CyclicBarrier declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CyclicBarrier.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region CyclicBarrier
+    #region CyclicBarrier implementation
     public partial class CyclicBarrier
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region IntUnaryOperator definition
+    #region IntUnaryOperator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IntUnaryOperatorDirect definition
+    #region IntUnaryOperatorDirect declaration
     /// <summary>
     /// Direct override of <see cref="IntUnaryOperator"/> or its generic type if there is one
     /// </summary>
@@ -128,7 +128,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IntUnaryOperator
+    #region IntUnaryOperator implementation
     public partial class IntUnaryOperator : Java.Util.Function.IIntUnaryOperator
     {
         #region Constructors
@@ -269,7 +269,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IntUnaryOperatorDirect
+    #region IntUnaryOperatorDirect implementation
     public partial class IntUnaryOperatorDirect : Java.Util.Function.IIntUnaryOperator
     {
         #region Constructors

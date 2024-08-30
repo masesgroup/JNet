@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File
 {
-    #region ReadOnlyFileSystemException definition
+    #region ReadOnlyFileSystemException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/ReadOnlyFileSystemException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region ReadOnlyFileSystemException
+    #region ReadOnlyFileSystemException implementation
     public partial class ReadOnlyFileSystemException
     {
         #region Constructors

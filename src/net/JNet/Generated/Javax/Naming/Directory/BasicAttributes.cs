@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Directory
 {
-    #region BasicAttributes definition
+    #region BasicAttributes declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttributes.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Naming.Directory
     }
     #endregion
 
-    #region BasicAttributes
+    #region BasicAttributes implementation
     public partial class BasicAttributes
     {
         #region Constructors

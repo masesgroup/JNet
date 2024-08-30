@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ColorNs
 {
-    #region CMMException definition
+    #region CMMException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/CMMException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Awt.ColorNs
     }
     #endregion
 
-    #region CMMException
+    #region CMMException implementation
     public partial class CMMException
     {
         #region Constructors

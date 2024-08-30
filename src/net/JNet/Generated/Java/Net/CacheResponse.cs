@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
-    #region CacheResponse definition
+    #region CacheResponse declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CacheResponse.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Net
     }
     #endregion
 
-    #region CacheResponse
+    #region CacheResponse implementation
     public partial class CacheResponse
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region List definition
+    #region List declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region List<E> definition
+    #region List<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region List
+    #region List implementation
     public partial class List
     {
         #region Constructors
@@ -710,7 +710,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region List<E>
+    #region List<E> implementation
     public partial class List<E> : Java.Util.IList<E>
     {
         #region Constructors

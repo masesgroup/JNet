@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region DriverPropertyInfo definition
+    #region DriverPropertyInfo declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverPropertyInfo.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region DriverPropertyInfo
+    #region DriverPropertyInfo implementation
     public partial class DriverPropertyInfo
     {
         #region Constructors

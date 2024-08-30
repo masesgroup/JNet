@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
-    #region ItemEvent definition
+    #region ItemEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region ItemEvent
+    #region ItemEvent implementation
     public partial class ItemEvent
     {
         #region Constructors

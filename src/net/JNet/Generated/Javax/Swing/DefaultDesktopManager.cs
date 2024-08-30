@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region DefaultDesktopManager definition
+    #region DefaultDesktopManager declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultDesktopManager.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region DefaultDesktopManager
+    #region DefaultDesktopManager implementation
     public partial class DefaultDesktopManager
     {
         #region Constructors

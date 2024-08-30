@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
-    #region HTMLQuoteElement definition
+    #region HTMLQuoteElement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLQuoteElement.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Org.W3c.Dom.Html
     }
     #endregion
 
-    #region HTMLQuoteElement
+    #region HTMLQuoteElement implementation
     public partial class HTMLQuoteElement : Org.W3c.Dom.Html.IHTMLQuoteElement
     {
         #region Constructors

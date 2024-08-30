@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
-    #region HTMLMenuElement definition
+    #region HTMLMenuElement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLMenuElement.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Org.W3c.Dom.Html
     }
     #endregion
 
-    #region HTMLMenuElement
+    #region HTMLMenuElement implementation
     public partial class HTMLMenuElement : Org.W3c.Dom.Html.IHTMLMenuElement
     {
         #region Constructors

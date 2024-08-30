@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Midi
 {
-    #region MidiDevice definition
+    #region MidiDevice declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Sound.Midi
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Info definition
+        #region Info declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.Info.html"/>
         /// </summary>
@@ -181,7 +181,7 @@ namespace Javax.Sound.Midi
     }
     #endregion
 
-    #region MidiDevice
+    #region MidiDevice implementation
     public partial class MidiDevice : Javax.Sound.Midi.IMidiDevice
     {
         #region Constructors
@@ -284,7 +284,7 @@ namespace Javax.Sound.Midi
         #endregion
 
         #region Nested classes
-        #region Info
+        #region Info implementation
         public partial class Info
         {
             #region Constructors

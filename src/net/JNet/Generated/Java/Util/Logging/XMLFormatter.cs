@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Logging
 {
-    #region XMLFormatter definition
+    #region XMLFormatter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/XMLFormatter.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Logging
     }
     #endregion
 
-    #region XMLFormatter
+    #region XMLFormatter implementation
     public partial class XMLFormatter
     {
         #region Constructors

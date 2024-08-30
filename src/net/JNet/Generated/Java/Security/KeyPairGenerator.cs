@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region KeyPairGenerator definition
+    #region KeyPairGenerator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGenerator.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region KeyPairGenerator
+    #region KeyPairGenerator implementation
     public partial class KeyPairGenerator
     {
         #region Constructors

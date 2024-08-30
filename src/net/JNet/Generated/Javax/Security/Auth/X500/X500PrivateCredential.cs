@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Security.Auth.X500
 {
-    #region X500PrivateCredential definition
+    #region X500PrivateCredential declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500PrivateCredential.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Security.Auth.X500
     }
     #endregion
 
-    #region X500PrivateCredential
+    #region X500PrivateCredential implementation
     public partial class X500PrivateCredential
     {
         #region Constructors

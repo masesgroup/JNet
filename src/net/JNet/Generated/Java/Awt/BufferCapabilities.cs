@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region BufferCapabilities definition
+    #region BufferCapabilities declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Awt
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region FlipContents definition
+        #region FlipContents declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.FlipContents.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region BufferCapabilities
+    #region BufferCapabilities implementation
     public partial class BufferCapabilities
     {
         #region Constructors
@@ -194,7 +194,7 @@ namespace Java.Awt
         #endregion
 
         #region Nested classes
-        #region FlipContents
+        #region FlipContents implementation
         public partial class FlipContents
         {
             #region Constructors

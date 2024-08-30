@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region Math definition
+    #region Math declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region Math
+    #region Math implementation
     public partial class Math
     {
         #region Constructors

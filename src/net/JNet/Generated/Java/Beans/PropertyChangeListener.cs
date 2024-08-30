@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans
 {
-    #region PropertyChangeListener definition
+    #region PropertyChangeListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Beans
     }
     #endregion
 
-    #region PropertyChangeListenerDirect definition
+    #region PropertyChangeListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="PropertyChangeListener"/> or its generic type if there is one
     /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Beans
     }
     #endregion
 
-    #region PropertyChangeListener
+    #region PropertyChangeListener implementation
     public partial class PropertyChangeListener : Java.Beans.IPropertyChangeListener
     {
         #region Constructors
@@ -175,7 +175,7 @@ namespace Java.Beans
     }
     #endregion
 
-    #region PropertyChangeListenerDirect
+    #region PropertyChangeListenerDirect implementation
     public partial class PropertyChangeListenerDirect : Java.Beans.IPropertyChangeListener
     {
         #region Constructors

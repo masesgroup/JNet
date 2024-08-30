@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Basic
 {
-    #region BasicDesktopPaneUI definition
+    #region BasicDesktopPaneUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicDesktopPaneUI.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf.Basic
     }
     #endregion
 
-    #region BasicDesktopPaneUI
+    #region BasicDesktopPaneUI implementation
     public partial class BasicDesktopPaneUI
     {
         #region Constructors

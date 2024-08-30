@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ImageNs
 {
-    #region ImageProducer definition
+    #region ImageProducer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageProducer.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Awt.ImageNs
     }
     #endregion
 
-    #region ImageProducer
+    #region ImageProducer implementation
     public partial class ImageProducer : Java.Awt.ImageNs.IImageProducer
     {
         #region Constructors

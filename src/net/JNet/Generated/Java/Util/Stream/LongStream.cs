@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Stream
 {
-    #region LongStream definition
+    #region LongStream declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html"/>
     /// </summary>
@@ -294,7 +294,7 @@ namespace Java.Util.Stream
     }
     #endregion
 
-    #region LongStream
+    #region LongStream implementation
     public partial class LongStream : Java.Util.Stream.ILongStream
     {
         #region Constructors

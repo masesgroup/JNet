@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region SQLNonTransientException definition
+    #region SQLNonTransientException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLNonTransientException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region SQLNonTransientException
+    #region SQLNonTransientException implementation
     public partial class SQLNonTransientException
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region AbstractWriter definition
+    #region AbstractWriter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractWriter.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region AbstractWriter
+    #region AbstractWriter implementation
     public partial class AbstractWriter
     {
         #region Constructors

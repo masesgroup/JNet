@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Annotation
 {
-    #region Inherited definition
+    #region Inherited declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Inherited.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Java.Lang.Annotation
     }
     #endregion
 
-    #region Inherited
+    #region Inherited implementation
     public partial class Inherited : Java.Lang.Annotation.IInherited
     {
         #region Constructors

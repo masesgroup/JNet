@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig.Spec
 {
-    #region TransformParameterSpec definition
+    #region TransformParameterSpec declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/TransformParameterSpec.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
     }
     #endregion
 
-    #region TransformParameterSpec
+    #region TransformParameterSpec implementation
     public partial class TransformParameterSpec : Javax.Xml.Crypto.Dsig.Spec.ITransformParameterSpec
     {
         #region Constructors

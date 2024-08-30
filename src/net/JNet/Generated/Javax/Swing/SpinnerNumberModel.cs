@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region SpinnerNumberModel definition
+    #region SpinnerNumberModel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerNumberModel.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region SpinnerNumberModel
+    #region SpinnerNumberModel implementation
     public partial class SpinnerNumberModel
     {
         #region Constructors

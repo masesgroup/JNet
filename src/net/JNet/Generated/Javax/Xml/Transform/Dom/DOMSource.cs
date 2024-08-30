@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Transform.Dom
 {
-    #region DOMSource definition
+    #region DOMSource declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/dom/DOMSource.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Xml.Transform.Dom
     }
     #endregion
 
-    #region DOMSource
+    #region DOMSource implementation
     public partial class DOMSource
     {
         #region Constructors

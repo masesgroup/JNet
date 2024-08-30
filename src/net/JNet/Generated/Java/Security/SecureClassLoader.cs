@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region SecureClassLoader definition
+    #region SecureClassLoader declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureClassLoader.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region SecureClassLoader
+    #region SecureClassLoader implementation
     public partial class SecureClassLoader
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region ToIntFunction definition
+    #region ToIntFunction declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntFunction.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToIntFunctionDirect definition
+    #region ToIntFunctionDirect declaration
     /// <summary>
     /// Direct override of <see cref="ToIntFunction"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToIntFunction<T> definition
+    #region ToIntFunction<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntFunction.html"/>
     /// </summary>
@@ -119,7 +119,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToIntFunctionDirect<T> definition
+    #region ToIntFunctionDirect<T> declaration
     /// <summary>
     /// Direct override of <see cref="ToIntFunction"/> or its generic type if there is one
     /// </summary>
@@ -160,7 +160,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToIntFunction
+    #region ToIntFunction implementation
     public partial class ToIntFunction
     {
         #region Constructors
@@ -222,7 +222,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToIntFunctionDirect
+    #region ToIntFunctionDirect implementation
     public partial class ToIntFunctionDirect
     {
         #region Constructors
@@ -286,7 +286,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToIntFunction<T>
+    #region ToIntFunction<T> implementation
     public partial class ToIntFunction<T> : Java.Util.Function.IToIntFunction<T>
     {
         #region Constructors
@@ -348,7 +348,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToIntFunctionDirect<T>
+    #region ToIntFunctionDirect<T> implementation
     public partial class ToIntFunctionDirect<T> : Java.Util.Function.IToIntFunction<T>
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming
 {
-    #region AuthenticationException definition
+    #region AuthenticationException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/AuthenticationException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Naming
     }
     #endregion
 
-    #region AuthenticationException
+    #region AuthenticationException implementation
     public partial class AuthenticationException
     {
         #region Constructors

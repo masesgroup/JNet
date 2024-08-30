@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region MBeanException definition
+    #region MBeanException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region MBeanException
+    #region MBeanException implementation
     public partial class MBeanException
     {
         #region Constructors

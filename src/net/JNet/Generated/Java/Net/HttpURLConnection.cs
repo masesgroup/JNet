@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
-    #region HttpURLConnection definition
+    #region HttpURLConnection declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Net
     }
     #endregion
 
-    #region HttpURLConnection
+    #region HttpURLConnection implementation
     public partial class HttpURLConnection
     {
         #region Constructors

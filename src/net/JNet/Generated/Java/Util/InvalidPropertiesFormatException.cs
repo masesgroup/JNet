@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region InvalidPropertiesFormatException definition
+    #region InvalidPropertiesFormatException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/InvalidPropertiesFormatException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region InvalidPropertiesFormatException
+    #region InvalidPropertiesFormatException implementation
     public partial class InvalidPropertiesFormatException
     {
         #region Constructors

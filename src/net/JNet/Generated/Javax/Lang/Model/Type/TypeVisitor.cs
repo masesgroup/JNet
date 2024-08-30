@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Type
 {
-    #region TypeVisitor definition
+    #region TypeVisitor declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Lang.Model.Type
     }
     #endregion
 
-    #region TypeVisitor<R, P> definition
+    #region TypeVisitor<R, P> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html"/>
     /// </summary>
@@ -121,7 +121,7 @@ namespace Javax.Lang.Model.Type
     }
     #endregion
 
-    #region TypeVisitor
+    #region TypeVisitor implementation
     public partial class TypeVisitor
     {
         #region Constructors
@@ -406,7 +406,7 @@ namespace Javax.Lang.Model.Type
     }
     #endregion
 
-    #region TypeVisitor<R, P>
+    #region TypeVisitor<R, P> implementation
     public partial class TypeVisitor<R, P> : Javax.Lang.Model.Type.ITypeVisitor<R, P>
     {
         #region Constructors

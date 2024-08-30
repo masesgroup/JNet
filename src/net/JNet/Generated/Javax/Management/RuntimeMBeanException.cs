@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region RuntimeMBeanException definition
+    #region RuntimeMBeanException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/RuntimeMBeanException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region RuntimeMBeanException
+    #region RuntimeMBeanException implementation
     public partial class RuntimeMBeanException
     {
         #region Constructors

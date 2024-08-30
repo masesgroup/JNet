@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.Xml.Sax
 {
-    #region InputSource definition
+    #region InputSource declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Org.Xml.Sax
     }
     #endregion
 
-    #region InputSource
+    #region InputSource implementation
     public partial class InputSource
     {
         #region Constructors

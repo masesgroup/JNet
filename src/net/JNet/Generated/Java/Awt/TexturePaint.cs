@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region TexturePaint definition
+    #region TexturePaint declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TexturePaint.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region TexturePaint
+    #region TexturePaint implementation
     public partial class TexturePaint
     {
         #region Constructors

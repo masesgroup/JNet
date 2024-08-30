@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region Consumer definition
+    #region Consumer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ConsumerDirect definition
+    #region ConsumerDirect declaration
     /// <summary>
     /// Direct override of <see cref="Consumer"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region Consumer<T> definition
+    #region Consumer<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html"/>
     /// </summary>
@@ -119,7 +119,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ConsumerDirect<T> definition
+    #region ConsumerDirect<T> declaration
     /// <summary>
     /// Direct override of <see cref="Consumer"/> or its generic type if there is one
     /// </summary>
@@ -160,7 +160,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region Consumer
+    #region Consumer implementation
     public partial class Consumer
     {
         #region Constructors
@@ -255,7 +255,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ConsumerDirect
+    #region ConsumerDirect implementation
     public partial class ConsumerDirect
     {
         #region Constructors
@@ -333,7 +333,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region Consumer<T>
+    #region Consumer<T> implementation
     public partial class Consumer<T> : Java.Util.Function.IConsumer<T>
     {
         #region Constructors
@@ -430,7 +430,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ConsumerDirect<T>
+    #region ConsumerDirect<T> implementation
     public partial class ConsumerDirect<T> : Java.Util.Function.IConsumer<T>
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Util
 {
-    #region ElementFilter definition
+    #region ElementFilter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region ElementFilter
+    #region ElementFilter implementation
     public partial class ElementFilter
     {
         #region Constructors

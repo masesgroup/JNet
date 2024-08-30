@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Prefs
 {
-    #region BackingStoreException definition
+    #region BackingStoreException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/BackingStoreException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Util.Prefs
     }
     #endregion
 
-    #region BackingStoreException
+    #region BackingStoreException implementation
     public partial class BackingStoreException
     {
         #region Constructors

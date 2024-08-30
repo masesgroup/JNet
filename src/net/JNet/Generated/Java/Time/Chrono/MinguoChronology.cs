@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time.Chrono
 {
-    #region MinguoChronology definition
+    #region MinguoChronology declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoChronology.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Time.Chrono
     }
     #endregion
 
-    #region MinguoChronology
+    #region MinguoChronology implementation
     public partial class MinguoChronology
     {
         #region Constructors

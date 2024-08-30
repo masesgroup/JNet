@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Xpath
 {
-    #region XPathExpression definition
+    #region XPathExpression declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathExpression.html"/>
     /// </summary>
@@ -100,7 +100,7 @@ namespace Org.W3c.Dom.Xpath
     }
     #endregion
 
-    #region XPathExpression
+    #region XPathExpression implementation
     public partial class XPathExpression : Org.W3c.Dom.Xpath.IXPathExpression
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Cert
 {
-    #region X509Extension definition
+    #region X509Extension declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html"/>
     /// </summary>
@@ -109,7 +109,7 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region X509Extension
+    #region X509Extension implementation
     public partial class X509Extension : Java.Security.Cert.IX509Extension
     {
         #region Constructors

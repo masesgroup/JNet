@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Interfaces
 {
-    #region DSAPublicKey definition
+    #region DSAPublicKey declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAPublicKey.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Java.Security.Interfaces
     }
     #endregion
 
-    #region DSAPublicKey
+    #region DSAPublicKey implementation
     public partial class DSAPublicKey : Java.Security.Interfaces.IDSAPublicKey
     {
         #region Constructors

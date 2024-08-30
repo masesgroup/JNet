@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File
 {
-    #region Paths definition
+    #region Paths declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Paths.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region Paths
+    #region Paths implementation
     public partial class Paths
     {
         #region Constructors

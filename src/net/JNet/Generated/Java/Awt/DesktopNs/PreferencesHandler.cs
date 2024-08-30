@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.DesktopNs
 {
-    #region PreferencesHandler definition
+    #region PreferencesHandler declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/PreferencesHandler.html"/>
     /// </summary>
@@ -95,7 +95,7 @@ namespace Java.Awt.DesktopNs
     }
     #endregion
 
-    #region PreferencesHandler
+    #region PreferencesHandler implementation
     public partial class PreferencesHandler : Java.Awt.DesktopNs.IPreferencesHandler
     {
         #region Constructors

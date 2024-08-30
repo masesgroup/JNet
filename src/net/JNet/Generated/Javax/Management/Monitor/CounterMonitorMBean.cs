@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Monitor
 {
-    #region CounterMonitorMBean definition
+    #region CounterMonitorMBean declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/CounterMonitorMBean.html"/>
     /// </summary>
@@ -128,7 +128,7 @@ namespace Javax.Management.Monitor
     }
     #endregion
 
-    #region CounterMonitorMBean
+    #region CounterMonitorMBean implementation
     public partial class CounterMonitorMBean : Javax.Management.Monitor.ICounterMonitorMBean
     {
         #region Constructors

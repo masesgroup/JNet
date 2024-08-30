@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Crypto
 {
-    #region IllegalBlockSizeException definition
+    #region IllegalBlockSizeException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/IllegalBlockSizeException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Crypto
     }
     #endregion
 
-    #region IllegalBlockSizeException
+    #region IllegalBlockSizeException implementation
     public partial class IllegalBlockSizeException
     {
         #region Constructors

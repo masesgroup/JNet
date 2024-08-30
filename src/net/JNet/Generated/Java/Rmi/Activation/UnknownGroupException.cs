@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi.Activation
 {
-    #region UnknownGroupException definition
+    #region UnknownGroupException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/UnknownGroupException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Rmi.Activation
     }
     #endregion
 
-    #region UnknownGroupException
+    #region UnknownGroupException implementation
     public partial class UnknownGroupException
     {
         #region Constructors

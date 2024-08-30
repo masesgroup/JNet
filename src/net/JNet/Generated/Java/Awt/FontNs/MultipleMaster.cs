@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.FontNs
 {
-    #region MultipleMaster definition
+    #region MultipleMaster declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/MultipleMaster.html"/>
     /// </summary>
@@ -122,7 +122,7 @@ namespace Java.Awt.FontNs
     }
     #endregion
 
-    #region MultipleMaster
+    #region MultipleMaster implementation
     public partial class MultipleMaster : Java.Awt.FontNs.IMultipleMaster
     {
         #region Constructors

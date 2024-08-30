@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region CompletionStage definition
+    #region CompletionStage declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region CompletionStage<T> definition
+    #region CompletionStage<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region CompletionStage
+    #region CompletionStage implementation
     public partial class CompletionStage
     {
         #region Constructors
@@ -879,7 +879,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region CompletionStage<T>
+    #region CompletionStage<T> implementation
     public partial class CompletionStage<T> : Java.Util.Concurrent.ICompletionStage<T>
     {
         #region Constructors

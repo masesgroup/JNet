@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File.Attribute
 {
-    #region UserPrincipalNotFoundException definition
+    #region UserPrincipalNotFoundException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/UserPrincipalNotFoundException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Nio.File.Attribute
     }
     #endregion
 
-    #region UserPrincipalNotFoundException
+    #region UserPrincipalNotFoundException implementation
     public partial class UserPrincipalNotFoundException
     {
         #region Constructors

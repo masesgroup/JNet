@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File
 {
-    #region AccessDeniedException definition
+    #region AccessDeniedException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AccessDeniedException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region AccessDeniedException
+    #region AccessDeniedException implementation
     public partial class AccessDeniedException
     {
         #region Constructors

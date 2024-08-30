@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net.Http
 {
-    #region HttpClient definition
+    #region HttpClient declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Java.Net.Http
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Builder definition
+        #region Builder declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region Redirect definition
+        #region Redirect declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html"/>
         /// </summary>
@@ -160,7 +160,7 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region Version definition
+        #region Version declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Version.html"/>
         /// </summary>
@@ -209,7 +209,7 @@ namespace Java.Net.Http
     }
     #endregion
 
-    #region HttpClient
+    #region HttpClient implementation
     public partial class HttpClient
     {
         #region Constructors
@@ -365,7 +365,7 @@ namespace Java.Net.Http
         #endregion
 
         #region Nested classes
-        #region Builder
+        #region Builder implementation
         public partial class Builder
         {
             #region Constructors
@@ -500,7 +500,7 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region Redirect
+        #region Redirect implementation
         public partial class Redirect
         {
             #region Constructors
@@ -566,7 +566,7 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region Version
+        #region Version implementation
         public partial class Version
         {
             #region Constructors

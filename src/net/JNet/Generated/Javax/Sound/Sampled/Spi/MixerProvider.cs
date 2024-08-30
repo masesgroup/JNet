@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Sampled.Spi
 {
-    #region MixerProvider definition
+    #region MixerProvider declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/MixerProvider.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Sound.Sampled.Spi
     }
     #endregion
 
-    #region MixerProvider
+    #region MixerProvider implementation
     public partial class MixerProvider
     {
         #region Constructors

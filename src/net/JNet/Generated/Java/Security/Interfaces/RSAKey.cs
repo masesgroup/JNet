@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Interfaces
 {
-    #region RSAKey definition
+    #region RSAKey declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAKey.html"/>
     /// </summary>
@@ -98,7 +98,7 @@ namespace Java.Security.Interfaces
     }
     #endregion
 
-    #region RSAKey
+    #region RSAKey implementation
     public partial class RSAKey : Java.Security.Interfaces.IRSAKey
     {
         #region Constructors

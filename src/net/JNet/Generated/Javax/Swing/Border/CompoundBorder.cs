@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Border
 {
-    #region CompoundBorder definition
+    #region CompoundBorder declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/CompoundBorder.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Border
     }
     #endregion
 
-    #region CompoundBorder
+    #region CompoundBorder implementation
     public partial class CompoundBorder
     {
         #region Constructors

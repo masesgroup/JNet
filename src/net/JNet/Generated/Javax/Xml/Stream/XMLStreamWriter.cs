@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream
 {
-    #region XMLStreamWriter definition
+    #region XMLStreamWriter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html"/>
     /// </summary>
@@ -289,7 +289,7 @@ namespace Javax.Xml.Stream
     }
     #endregion
 
-    #region XMLStreamWriter
+    #region XMLStreamWriter implementation
     public partial class XMLStreamWriter : Javax.Xml.Stream.IXMLStreamWriter
     {
         #region Constructors

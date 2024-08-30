@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region ToIntBiFunction definition
+    #region ToIntBiFunction declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntBiFunction.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToIntBiFunctionDirect definition
+    #region ToIntBiFunctionDirect declaration
     /// <summary>
     /// Direct override of <see cref="ToIntBiFunction"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToIntBiFunction<T, U> definition
+    #region ToIntBiFunction<T, U> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntBiFunction.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToIntBiFunctionDirect<T, U> definition
+    #region ToIntBiFunctionDirect<T, U> declaration
     /// <summary>
     /// Direct override of <see cref="ToIntBiFunction"/> or its generic type if there is one
     /// </summary>
@@ -161,7 +161,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToIntBiFunction
+    #region ToIntBiFunction implementation
     public partial class ToIntBiFunction
     {
         #region Constructors
@@ -224,7 +224,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToIntBiFunctionDirect
+    #region ToIntBiFunctionDirect implementation
     public partial class ToIntBiFunctionDirect
     {
         #region Constructors
@@ -290,7 +290,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToIntBiFunction<T, U>
+    #region ToIntBiFunction<T, U> implementation
     public partial class ToIntBiFunction<T, U> : Java.Util.Function.IToIntBiFunction<T, U>
     {
         #region Constructors
@@ -353,7 +353,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToIntBiFunctionDirect<T, U>
+    #region ToIntBiFunctionDirect<T, U> implementation
     public partial class ToIntBiFunctionDirect<T, U> : Java.Util.Function.IToIntBiFunction<T, U>
     {
         #region Constructors

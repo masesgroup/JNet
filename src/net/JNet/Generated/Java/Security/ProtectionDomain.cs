@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region ProtectionDomain definition
+    #region ProtectionDomain declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region ProtectionDomain
+    #region ProtectionDomain implementation
     public partial class ProtectionDomain
     {
         #region Constructors

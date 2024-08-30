@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
-    #region HTMLPreElement definition
+    #region HTMLPreElement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLPreElement.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Org.W3c.Dom.Html
     }
     #endregion
 
-    #region HTMLPreElement
+    #region HTMLPreElement implementation
     public partial class HTMLPreElement : Org.W3c.Dom.Html.IHTMLPreElement
     {
         #region Constructors

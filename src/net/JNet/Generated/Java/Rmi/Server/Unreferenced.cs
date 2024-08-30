@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi.Server
 {
-    #region Unreferenced definition
+    #region Unreferenced declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/Unreferenced.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Java.Rmi.Server
     }
     #endregion
 
-    #region Unreferenced
+    #region Unreferenced implementation
     public partial class Unreferenced : Java.Rmi.Server.IUnreferenced
     {
         #region Constructors

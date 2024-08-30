@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Basic
 {
-    #region BasicTextFieldUI definition
+    #region BasicTextFieldUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTextFieldUI.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf.Basic
     }
     #endregion
 
-    #region BasicTextFieldUI
+    #region BasicTextFieldUI implementation
     public partial class BasicTextFieldUI
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
-    #region ProtocolException definition
+    #region ProtocolException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ProtocolException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Net
     }
     #endregion
 
-    #region ProtocolException
+    #region ProtocolException implementation
     public partial class ProtocolException
     {
         #region Constructors

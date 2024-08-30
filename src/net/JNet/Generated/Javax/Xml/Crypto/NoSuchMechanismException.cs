@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto
 {
-    #region NoSuchMechanismException definition
+    #region NoSuchMechanismException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/NoSuchMechanismException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Xml.Crypto
     }
     #endregion
 
-    #region NoSuchMechanismException
+    #region NoSuchMechanismException implementation
     public partial class NoSuchMechanismException
     {
         #region Constructors

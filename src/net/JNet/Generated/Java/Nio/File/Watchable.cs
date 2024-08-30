@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File
 {
-    #region Watchable definition
+    #region Watchable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Watchable.html"/>
     /// </summary>
@@ -107,7 +107,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region Watchable
+    #region Watchable implementation
     public partial class Watchable : Java.Nio.File.IWatchable
     {
         #region Constructors

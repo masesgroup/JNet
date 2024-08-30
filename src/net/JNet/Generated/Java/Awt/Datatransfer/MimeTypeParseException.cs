@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Datatransfer
 {
-    #region MimeTypeParseException definition
+    #region MimeTypeParseException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/MimeTypeParseException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Awt.Datatransfer
     }
     #endregion
 
-    #region MimeTypeParseException
+    #region MimeTypeParseException implementation
     public partial class MimeTypeParseException
     {
         #region Constructors

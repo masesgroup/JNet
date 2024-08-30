@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Text
 {
-    #region ParseException definition
+    #region ParseException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ParseException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Text
     }
     #endregion
 
-    #region ParseException
+    #region ParseException implementation
     public partial class ParseException
     {
         #region Constructors

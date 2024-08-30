@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
-    #region CaretEvent definition
+    #region CaretEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CaretEvent.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region CaretEvent
+    #region CaretEvent implementation
     public partial class CaretEvent
     {
         #region Constructors

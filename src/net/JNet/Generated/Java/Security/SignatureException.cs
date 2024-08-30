@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region SignatureException definition
+    #region SignatureException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SignatureException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region SignatureException
+    #region SignatureException implementation
     public partial class SignatureException
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region TabExpander definition
+    #region TabExpander declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabExpander.html"/>
     /// </summary>
@@ -97,7 +97,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region TabExpander
+    #region TabExpander implementation
     public partial class TabExpander : Javax.Swing.Text.ITabExpander
     {
         #region Constructors

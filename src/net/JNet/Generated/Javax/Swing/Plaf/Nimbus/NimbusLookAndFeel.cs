@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Nimbus
 {
-    #region NimbusLookAndFeel definition
+    #region NimbusLookAndFeel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/nimbus/NimbusLookAndFeel.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf.Nimbus
     }
     #endregion
 
-    #region NimbusLookAndFeel
+    #region NimbusLookAndFeel implementation
     public partial class NimbusLookAndFeel
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto
 {
-    #region KeySelectorResult definition
+    #region KeySelectorResult declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelectorResult.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Javax.Xml.Crypto
     }
     #endregion
 
-    #region KeySelectorResult
+    #region KeySelectorResult implementation
     public partial class KeySelectorResult : Javax.Xml.Crypto.IKeySelectorResult
     {
         #region Constructors

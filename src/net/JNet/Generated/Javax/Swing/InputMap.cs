@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region InputMap definition
+    #region InputMap declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region InputMap
+    #region InputMap implementation
     public partial class InputMap
     {
         #region Constructors

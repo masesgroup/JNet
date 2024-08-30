@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Util
 {
-    #region SimpleTypeVisitor6 definition
+    #region SimpleTypeVisitor6 declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleTypeVisitor6.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region SimpleTypeVisitor6<R, P> definition
+    #region SimpleTypeVisitor6<R, P> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleTypeVisitor6.html"/>
     /// </summary>
@@ -117,7 +117,7 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region SimpleTypeVisitor6
+    #region SimpleTypeVisitor6 implementation
     public partial class SimpleTypeVisitor6
     {
         #region Constructors
@@ -148,7 +148,7 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region SimpleTypeVisitor6<R, P>
+    #region SimpleTypeVisitor6<R, P> implementation
     public partial class SimpleTypeVisitor6<R, P>
     {
         #region Constructors

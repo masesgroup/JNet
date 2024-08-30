@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time.Format
 {
-    #region ResolverStyle definition
+    #region ResolverStyle declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/ResolverStyle.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Time.Format
     }
     #endregion
 
-    #region ResolverStyle
+    #region ResolverStyle implementation
     public partial class ResolverStyle
     {
         #region Constructors

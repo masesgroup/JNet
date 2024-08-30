@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region ReflectiveOperationException definition
+    #region ReflectiveOperationException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ReflectiveOperationException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region ReflectiveOperationException
+    #region ReflectiveOperationException implementation
     public partial class ReflectiveOperationException
     {
         #region Constructors

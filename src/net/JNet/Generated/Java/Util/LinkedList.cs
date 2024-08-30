@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region LinkedList definition
+    #region LinkedList declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region LinkedList<E> definition
+    #region LinkedList<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region LinkedList
+    #region LinkedList implementation
     public partial class LinkedList
     {
         #region Constructors
@@ -350,7 +350,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region LinkedList<E>
+    #region LinkedList<E> implementation
     public partial class LinkedList<E>
     {
         #region Constructors

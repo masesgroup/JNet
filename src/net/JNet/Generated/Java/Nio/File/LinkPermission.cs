@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File
 {
-    #region LinkPermission definition
+    #region LinkPermission declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/LinkPermission.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region LinkPermission
+    #region LinkPermission implementation
     public partial class LinkPermission
     {
         #region Constructors

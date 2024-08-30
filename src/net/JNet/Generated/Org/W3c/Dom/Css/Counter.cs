@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Css
 {
-    #region Counter definition
+    #region Counter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/Counter.html"/>
     /// </summary>
@@ -102,7 +102,7 @@ namespace Org.W3c.Dom.Css
     }
     #endregion
 
-    #region Counter
+    #region Counter implementation
     public partial class Counter : Org.W3c.Dom.Css.ICounter
     {
         #region Constructors

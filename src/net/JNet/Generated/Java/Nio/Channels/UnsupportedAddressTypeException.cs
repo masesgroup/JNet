@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
-    #region UnsupportedAddressTypeException definition
+    #region UnsupportedAddressTypeException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/UnsupportedAddressTypeException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region UnsupportedAddressTypeException
+    #region UnsupportedAddressTypeException implementation
     public partial class UnsupportedAddressTypeException
     {
         #region Constructors

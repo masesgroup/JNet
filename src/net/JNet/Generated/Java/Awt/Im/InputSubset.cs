@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Im
 {
-    #region InputSubset definition
+    #region InputSubset declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputSubset.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.Im
     }
     #endregion
 
-    #region InputSubset
+    #region InputSubset implementation
     public partial class InputSubset
     {
         #region Constructors

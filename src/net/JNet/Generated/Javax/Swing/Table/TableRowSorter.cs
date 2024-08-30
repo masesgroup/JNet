@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Table
 {
-    #region TableRowSorter definition
+    #region TableRowSorter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableRowSorter.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Table
     }
     #endregion
 
-    #region TableRowSorter<M> definition
+    #region TableRowSorter<M> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableRowSorter.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Javax.Swing.Table
     }
     #endregion
 
-    #region TableRowSorter
+    #region TableRowSorter implementation
     public partial class TableRowSorter
     {
         #region Constructors
@@ -170,7 +170,7 @@ namespace Javax.Swing.Table
     }
     #endregion
 
-    #region TableRowSorter<M>
+    #region TableRowSorter<M> implementation
     public partial class TableRowSorter<M>
     {
         #region Constructors

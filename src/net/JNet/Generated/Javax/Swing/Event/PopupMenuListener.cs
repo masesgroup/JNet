@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
-    #region PopupMenuListener definition
+    #region PopupMenuListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region PopupMenuListenerDirect definition
+    #region PopupMenuListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="PopupMenuListener"/> or its generic type if there is one
     /// </summary>
@@ -125,7 +125,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region PopupMenuListener
+    #region PopupMenuListener implementation
     public partial class PopupMenuListener : Javax.Swing.Event.IPopupMenuListener
     {
         #region Constructors
@@ -229,7 +229,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region PopupMenuListenerDirect
+    #region PopupMenuListenerDirect implementation
     public partial class PopupMenuListenerDirect : Javax.Swing.Event.IPopupMenuListener
     {
         #region Constructors

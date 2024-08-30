@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region CallableStatement definition
+    #region CallableStatement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html"/>
     /// </summary>
@@ -969,7 +969,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region CallableStatement
+    #region CallableStatement implementation
     public partial class CallableStatement : Java.Sql.ICallableStatement
     {
         #region Constructors

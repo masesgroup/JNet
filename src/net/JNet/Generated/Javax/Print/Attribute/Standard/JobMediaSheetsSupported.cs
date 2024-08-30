@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Attribute.Standard
 {
-    #region JobMediaSheetsSupported definition
+    #region JobMediaSheetsSupported declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobMediaSheetsSupported.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Print.Attribute.Standard
     }
     #endregion
 
-    #region JobMediaSheetsSupported
+    #region JobMediaSheetsSupported implementation
     public partial class JobMediaSheetsSupported
     {
         #region Constructors

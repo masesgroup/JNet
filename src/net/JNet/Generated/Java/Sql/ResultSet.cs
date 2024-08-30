@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region ResultSet definition
+    #region ResultSet declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html"/>
     /// </summary>
@@ -1372,7 +1372,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region ResultSet
+    #region ResultSet implementation
     public partial class ResultSet : Java.Sql.IResultSet
     {
         #region Constructors

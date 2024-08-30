@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans
 {
-    #region VetoableChangeSupport definition
+    #region VetoableChangeSupport declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeSupport.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Beans
     }
     #endregion
 
-    #region VetoableChangeSupport
+    #region VetoableChangeSupport implementation
     public partial class VetoableChangeSupport
     {
         #region Constructors

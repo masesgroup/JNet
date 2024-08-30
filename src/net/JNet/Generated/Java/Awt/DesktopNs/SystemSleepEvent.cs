@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.DesktopNs
 {
-    #region SystemSleepEvent definition
+    #region SystemSleepEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/SystemSleepEvent.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.DesktopNs
     }
     #endregion
 
-    #region SystemSleepEvent
+    #region SystemSleepEvent implementation
     public partial class SystemSleepEvent
     {
         #region Constructors

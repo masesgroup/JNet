@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Crypto.Interfaces
 {
-    #region PBEKey definition
+    #region PBEKey declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/PBEKey.html"/>
     /// </summary>
@@ -102,7 +102,7 @@ namespace Javax.Crypto.Interfaces
     }
     #endregion
 
-    #region PBEKey
+    #region PBEKey implementation
     public partial class PBEKey : Javax.Crypto.Interfaces.IPBEKey
     {
         #region Constructors

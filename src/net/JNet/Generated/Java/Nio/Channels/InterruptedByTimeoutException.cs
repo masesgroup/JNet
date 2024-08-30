@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
-    #region InterruptedByTimeoutException definition
+    #region InterruptedByTimeoutException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/InterruptedByTimeoutException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region InterruptedByTimeoutException
+    #region InterruptedByTimeoutException implementation
     public partial class InterruptedByTimeoutException
     {
         #region Constructors

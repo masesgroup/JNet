@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region LinearGradientPaint definition
+    #region LinearGradientPaint declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/LinearGradientPaint.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region LinearGradientPaint
+    #region LinearGradientPaint implementation
     public partial class LinearGradientPaint
     {
         #region Constructors

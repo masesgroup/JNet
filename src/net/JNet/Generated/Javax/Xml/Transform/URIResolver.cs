@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Transform
 {
-    #region URIResolver definition
+    #region URIResolver declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/URIResolver.html"/>
     /// </summary>
@@ -98,7 +98,7 @@ namespace Javax.Xml.Transform
     }
     #endregion
 
-    #region URIResolver
+    #region URIResolver implementation
     public partial class URIResolver : Javax.Xml.Transform.IURIResolver
     {
         #region Constructors

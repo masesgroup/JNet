@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Validation
 {
-    #region Schema definition
+    #region Schema declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Schema.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Xml.Validation
     }
     #endregion
 
-    #region Schema
+    #region Schema implementation
     public partial class Schema
     {
         #region Constructors

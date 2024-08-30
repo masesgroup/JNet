@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File.Attribute
 {
-    #region DosFileAttributes definition
+    #region DosFileAttributes declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html"/>
     /// </summary>
@@ -110,7 +110,7 @@ namespace Java.Nio.File.Attribute
     }
     #endregion
 
-    #region DosFileAttributes
+    #region DosFileAttributes implementation
     public partial class DosFileAttributes : Java.Nio.File.Attribute.IDosFileAttributes
     {
         #region Constructors

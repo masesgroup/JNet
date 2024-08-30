@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Stream
 {
-    #region StreamSupport definition
+    #region StreamSupport declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/StreamSupport.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Stream
     }
     #endregion
 
-    #region StreamSupport
+    #region StreamSupport implementation
     public partial class StreamSupport
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio
 {
-    #region IIOException definition
+    #region IIOException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Imageio
     }
     #endregion
 
-    #region IIOException
+    #region IIOException implementation
     public partial class IIOException
     {
         #region Constructors

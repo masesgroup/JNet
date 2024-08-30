@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Sampled
 {
-    #region DataLine definition
+    #region DataLine declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Sound.Sampled
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Info definition
+        #region Info declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.Info.html"/>
         /// </summary>
@@ -190,7 +190,7 @@ namespace Javax.Sound.Sampled
     }
     #endregion
 
-    #region DataLine
+    #region DataLine implementation
     public partial class DataLine : Javax.Sound.Sampled.IDataLine
     {
         #region Constructors
@@ -308,7 +308,7 @@ namespace Javax.Sound.Sampled
         #endregion
 
         #region Nested classes
-        #region Info
+        #region Info implementation
         public partial class Info
         {
             #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File
 {
-    #region ClosedDirectoryStreamException definition
+    #region ClosedDirectoryStreamException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/ClosedDirectoryStreamException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region ClosedDirectoryStreamException
+    #region ClosedDirectoryStreamException implementation
     public partial class ClosedDirectoryStreamException
     {
         #region Constructors

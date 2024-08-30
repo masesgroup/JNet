@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region PriorityQueue definition
+    #region PriorityQueue declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region PriorityQueue<E> definition
+    #region PriorityQueue<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region PriorityQueue
+    #region PriorityQueue implementation
     public partial class PriorityQueue
     {
         #region Constructors
@@ -208,7 +208,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region PriorityQueue<E>
+    #region PriorityQueue<E> implementation
     public partial class PriorityQueue<E>
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.ModuleNs
 {
-    #region ModuleFinder definition
+    #region ModuleFinder declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html"/>
     /// </summary>
@@ -101,7 +101,7 @@ namespace Java.Lang.ModuleNs
     }
     #endregion
 
-    #region ModuleFinder
+    #region ModuleFinder implementation
     public partial class ModuleFinder : Java.Lang.ModuleNs.IModuleFinder
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net.Http
 {
-    #region HttpRequest definition
+    #region HttpRequest declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Java.Net.Http
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region BodyPublisher definition
+        #region BodyPublisher declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublisher.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region BodyPublishers definition
+        #region BodyPublishers declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html"/>
         /// </summary>
@@ -160,7 +160,7 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region Builder definition
+        #region Builder declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html"/>
         /// </summary>
@@ -211,7 +211,7 @@ namespace Java.Net.Http
     }
     #endregion
 
-    #region HttpRequest
+    #region HttpRequest implementation
     public partial class HttpRequest
     {
         #region Constructors
@@ -308,7 +308,7 @@ namespace Java.Net.Http
         #endregion
 
         #region Nested classes
-        #region BodyPublisher
+        #region BodyPublisher implementation
         public partial class BodyPublisher
         {
             #region Constructors
@@ -347,7 +347,7 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region BodyPublishers
+        #region BodyPublishers implementation
         public partial class BodyPublishers
         {
             #region Constructors
@@ -475,7 +475,7 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region Builder
+        #region Builder implementation
         public partial class Builder
         {
             #region Constructors

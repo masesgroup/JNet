@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region UnsupportedOperationException definition
+    #region UnsupportedOperationException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/UnsupportedOperationException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region UnsupportedOperationException
+    #region UnsupportedOperationException implementation
     public partial class UnsupportedOperationException
     {
         #region Constructors

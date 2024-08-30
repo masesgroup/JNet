@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio.Spi
 {
-    #region RegisterableService definition
+    #region RegisterableService declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/RegisterableService.html"/>
     /// </summary>
@@ -102,7 +102,7 @@ namespace Javax.Imageio.Spi
     }
     #endregion
 
-    #region RegisterableService
+    #region RegisterableService implementation
     public partial class RegisterableService : Javax.Imageio.Spi.IRegisterableService
     {
         #region Constructors

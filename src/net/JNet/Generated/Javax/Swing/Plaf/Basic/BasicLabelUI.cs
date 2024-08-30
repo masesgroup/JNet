@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Basic
 {
-    #region BasicLabelUI definition
+    #region BasicLabelUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicLabelUI.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf.Basic
     }
     #endregion
 
-    #region BasicLabelUI
+    #region BasicLabelUI implementation
     public partial class BasicLabelUI
     {
         #region Constructors

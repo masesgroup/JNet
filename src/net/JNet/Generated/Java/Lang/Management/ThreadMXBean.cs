@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Management
 {
-    #region ThreadMXBean definition
+    #region ThreadMXBean declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html"/>
     /// </summary>
@@ -247,7 +247,7 @@ namespace Java.Lang.Management
     }
     #endregion
 
-    #region ThreadMXBean
+    #region ThreadMXBean implementation
     public partial class ThreadMXBean : Java.Lang.Management.IThreadMXBean
     {
         #region Constructors

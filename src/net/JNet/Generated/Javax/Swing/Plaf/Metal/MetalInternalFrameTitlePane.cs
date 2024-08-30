@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Metal
 {
-    #region MetalInternalFrameTitlePane definition
+    #region MetalInternalFrameTitlePane declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalInternalFrameTitlePane.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf.Metal
     }
     #endregion
 
-    #region MetalInternalFrameTitlePane
+    #region MetalInternalFrameTitlePane implementation
     public partial class MetalInternalFrameTitlePane
     {
         #region Constructors

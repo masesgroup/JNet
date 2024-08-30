@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
-    #region MenuEvent definition
+    #region MenuEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuEvent.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region MenuEvent
+    #region MenuEvent implementation
     public partial class MenuEvent
     {
         #region Constructors

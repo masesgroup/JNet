@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region IntBinaryOperator definition
+    #region IntBinaryOperator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntBinaryOperator.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IntBinaryOperatorDirect definition
+    #region IntBinaryOperatorDirect declaration
     /// <summary>
     /// Direct override of <see cref="IntBinaryOperator"/> or its generic type if there is one
     /// </summary>
@@ -117,7 +117,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IntBinaryOperator
+    #region IntBinaryOperator implementation
     public partial class IntBinaryOperator : Java.Util.Function.IIntBinaryOperator
     {
         #region Constructors
@@ -180,7 +180,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IntBinaryOperatorDirect
+    #region IntBinaryOperatorDirect implementation
     public partial class IntBinaryOperatorDirect : Java.Util.Function.IIntBinaryOperator
     {
         #region Constructors

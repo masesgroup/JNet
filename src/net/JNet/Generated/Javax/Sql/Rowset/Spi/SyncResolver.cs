@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql.Rowset.Spi
 {
-    #region SyncResolver definition
+    #region SyncResolver declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html"/>
     /// </summary>
@@ -134,7 +134,7 @@ namespace Javax.Sql.Rowset.Spi
     }
     #endregion
 
-    #region SyncResolver
+    #region SyncResolver implementation
     public partial class SyncResolver : Javax.Sql.Rowset.Spi.ISyncResolver
     {
         #region Constructors

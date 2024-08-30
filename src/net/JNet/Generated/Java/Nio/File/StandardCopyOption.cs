@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File
 {
-    #region StandardCopyOption definition
+    #region StandardCopyOption declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardCopyOption.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region StandardCopyOption
+    #region StandardCopyOption implementation
     public partial class StandardCopyOption
     {
         #region Constructors

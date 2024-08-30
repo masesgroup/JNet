@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time.Temporal
 {
-    #region TemporalAdjuster definition
+    #region TemporalAdjuster declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjuster.html"/>
     /// </summary>
@@ -96,7 +96,7 @@ namespace Java.Time.Temporal
     }
     #endregion
 
-    #region TemporalAdjuster
+    #region TemporalAdjuster implementation
     public partial class TemporalAdjuster : Java.Time.Temporal.ITemporalAdjuster
     {
         #region Constructors

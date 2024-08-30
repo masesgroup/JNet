@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
-    #region MalformedParametersException definition
+    #region MalformedParametersException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/MalformedParametersException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region MalformedParametersException
+    #region MalformedParametersException implementation
     public partial class MalformedParametersException
     {
         #region Constructors

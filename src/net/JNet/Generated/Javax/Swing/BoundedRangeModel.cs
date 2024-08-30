@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region BoundedRangeModel definition
+    #region BoundedRangeModel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoundedRangeModel.html"/>
     /// </summary>
@@ -129,7 +129,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region BoundedRangeModel
+    #region BoundedRangeModel implementation
     public partial class BoundedRangeModel : Javax.Swing.IBoundedRangeModel
     {
         #region Constructors

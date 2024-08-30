@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Loading
 {
-    #region PrivateClassLoader definition
+    #region PrivateClassLoader declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/PrivateClassLoader.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Javax.Management.Loading
     }
     #endregion
 
-    #region PrivateClassLoader
+    #region PrivateClassLoader implementation
     public partial class PrivateClassLoader : Javax.Management.Loading.IPrivateClassLoader
     {
         #region Constructors

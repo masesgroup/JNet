@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf
 {
-    #region LayerUI definition
+    #region LayerUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/LayerUI.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf
     }
     #endregion
 
-    #region LayerUI<V> definition
+    #region LayerUI<V> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/LayerUI.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Javax.Swing.Plaf
     }
     #endregion
 
-    #region LayerUI
+    #region LayerUI implementation
     public partial class LayerUI
     {
         #region Constructors
@@ -262,7 +262,7 @@ namespace Javax.Swing.Plaf
     }
     #endregion
 
-    #region LayerUI<V>
+    #region LayerUI<V> implementation
     public partial class LayerUI<V>
     {
         #region Constructors

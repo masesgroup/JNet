@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region NoSuchAlgorithmException definition
+    #region NoSuchAlgorithmException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/NoSuchAlgorithmException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region NoSuchAlgorithmException
+    #region NoSuchAlgorithmException implementation
     public partial class NoSuchAlgorithmException
     {
         #region Constructors

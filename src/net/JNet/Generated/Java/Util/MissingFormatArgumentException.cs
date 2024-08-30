@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region MissingFormatArgumentException definition
+    #region MissingFormatArgumentException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/MissingFormatArgumentException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region MissingFormatArgumentException
+    #region MissingFormatArgumentException implementation
     public partial class MissingFormatArgumentException
     {
         #region Constructors

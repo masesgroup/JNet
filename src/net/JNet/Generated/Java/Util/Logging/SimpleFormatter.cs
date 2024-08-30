@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Logging
 {
-    #region SimpleFormatter definition
+    #region SimpleFormatter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/SimpleFormatter.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Logging
     }
     #endregion
 
-    #region SimpleFormatter
+    #region SimpleFormatter implementation
     public partial class SimpleFormatter
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Spec
 {
-    #region XECPublicKeySpec definition
+    #region XECPublicKeySpec declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/XECPublicKeySpec.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Security.Spec
     }
     #endregion
 
-    #region XECPublicKeySpec
+    #region XECPublicKeySpec implementation
     public partial class XECPublicKeySpec
     {
         #region Constructors

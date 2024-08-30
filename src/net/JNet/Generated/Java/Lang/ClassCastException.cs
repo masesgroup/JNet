@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region ClassCastException definition
+    #region ClassCastException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassCastException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region ClassCastException
+    #region ClassCastException implementation
     public partial class ClassCastException
     {
         #region Constructors

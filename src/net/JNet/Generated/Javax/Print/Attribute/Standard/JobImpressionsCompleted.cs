@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Attribute.Standard
 {
-    #region JobImpressionsCompleted definition
+    #region JobImpressionsCompleted declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobImpressionsCompleted.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Print.Attribute.Standard
     }
     #endregion
 
-    #region JobImpressionsCompleted
+    #region JobImpressionsCompleted implementation
     public partial class JobImpressionsCompleted
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region NavigableMap definition
+    #region NavigableMap declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region NavigableMap<K, V> definition
+    #region NavigableMap<K, V> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html"/>
     /// </summary>
@@ -121,7 +121,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region NavigableMap
+    #region NavigableMap implementation
     public partial class NavigableMap
     {
         #region Constructors
@@ -483,7 +483,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region NavigableMap<K, V>
+    #region NavigableMap<K, V> implementation
     public partial class NavigableMap<K, V> : Java.Util.INavigableMap<K, V>
     {
         #region Constructors

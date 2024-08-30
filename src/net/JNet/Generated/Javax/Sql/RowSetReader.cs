@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql
 {
-    #region RowSetReader definition
+    #region RowSetReader declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetReader.html"/>
     /// </summary>
@@ -96,7 +96,7 @@ namespace Javax.Sql
     }
     #endregion
 
-    #region RowSetReader
+    #region RowSetReader implementation
     public partial class RowSetReader : Javax.Sql.IRowSetReader
     {
         #region Constructors

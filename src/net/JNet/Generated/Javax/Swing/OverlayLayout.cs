@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region OverlayLayout definition
+    #region OverlayLayout declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/OverlayLayout.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region OverlayLayout
+    #region OverlayLayout implementation
     public partial class OverlayLayout
     {
         #region Constructors

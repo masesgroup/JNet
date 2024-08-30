@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Multi
 {
-    #region MultiListUI definition
+    #region MultiListUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/multi/MultiListUI.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf.Multi
     }
     #endregion
 
-    #region MultiListUI
+    #region MultiListUI implementation
     public partial class MultiListUI
     {
         #region Constructors

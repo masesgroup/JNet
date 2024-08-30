@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Management
 {
-    #region MemoryManagerMXBean definition
+    #region MemoryManagerMXBean declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryManagerMXBean.html"/>
     /// </summary>
@@ -103,7 +103,7 @@ namespace Java.Lang.Management
     }
     #endregion
 
-    #region MemoryManagerMXBean
+    #region MemoryManagerMXBean implementation
     public partial class MemoryManagerMXBean : Java.Lang.Management.IMemoryManagerMXBean
     {
         #region Constructors

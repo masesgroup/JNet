@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Util
 {
-    #region ElementKindVisitor9 definition
+    #region ElementKindVisitor9 declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor9.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region ElementKindVisitor9<R, P> definition
+    #region ElementKindVisitor9<R, P> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor9.html"/>
     /// </summary>
@@ -117,7 +117,7 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region ElementKindVisitor9
+    #region ElementKindVisitor9 implementation
     public partial class ElementKindVisitor9
     {
         #region Constructors
@@ -148,7 +148,7 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region ElementKindVisitor9<R, P>
+    #region ElementKindVisitor9<R, P> implementation
     public partial class ElementKindVisitor9<R, P>
     {
         #region Constructors

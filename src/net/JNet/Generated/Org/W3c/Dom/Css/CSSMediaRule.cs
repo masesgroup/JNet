@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Css
 {
-    #region CSSMediaRule definition
+    #region CSSMediaRule declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSMediaRule.html"/>
     /// </summary>
@@ -112,7 +112,7 @@ namespace Org.W3c.Dom.Css
     }
     #endregion
 
-    #region CSSMediaRule
+    #region CSSMediaRule implementation
     public partial class CSSMediaRule : Org.W3c.Dom.Css.ICSSMediaRule
     {
         #region Constructors

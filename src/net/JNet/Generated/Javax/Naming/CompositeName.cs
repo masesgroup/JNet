@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming
 {
-    #region CompositeName definition
+    #region CompositeName declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CompositeName.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Naming
     }
     #endregion
 
-    #region CompositeName
+    #region CompositeName implementation
     public partial class CompositeName
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
-    #region AccessibleObject definition
+    #region AccessibleObject declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region AccessibleObject
+    #region AccessibleObject implementation
     public partial class AccessibleObject
     {
         #region Constructors

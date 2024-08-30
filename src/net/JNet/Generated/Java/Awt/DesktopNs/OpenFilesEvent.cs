@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.DesktopNs
 {
-    #region OpenFilesEvent definition
+    #region OpenFilesEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/OpenFilesEvent.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.DesktopNs
     }
     #endregion
 
-    #region OpenFilesEvent
+    #region OpenFilesEvent implementation
     public partial class OpenFilesEvent
     {
         #region Constructors

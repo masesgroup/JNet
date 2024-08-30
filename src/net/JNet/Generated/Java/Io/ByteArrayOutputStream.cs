@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
-    #region ByteArrayOutputStream definition
+    #region ByteArrayOutputStream declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ByteArrayOutputStream.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Io
     }
     #endregion
 
-    #region ByteArrayOutputStream
+    #region ByteArrayOutputStream implementation
     public partial class ByteArrayOutputStream
     {
         #region Constructors

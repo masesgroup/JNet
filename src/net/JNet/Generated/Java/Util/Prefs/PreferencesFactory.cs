@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Prefs
 {
-    #region PreferencesFactory definition
+    #region PreferencesFactory declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferencesFactory.html"/>
     /// </summary>
@@ -100,7 +100,7 @@ namespace Java.Util.Prefs
     }
     #endregion
 
-    #region PreferencesFactory
+    #region PreferencesFactory implementation
     public partial class PreferencesFactory : Java.Util.Prefs.IPreferencesFactory
     {
         #region Constructors

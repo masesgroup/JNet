@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region DisplayMode definition
+    #region DisplayMode declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/DisplayMode.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region DisplayMode
+    #region DisplayMode implementation
     public partial class DisplayMode
     {
         #region Constructors

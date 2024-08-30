@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region MessageDigestSpi definition
+    #region MessageDigestSpi declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigestSpi.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region MessageDigestSpi
+    #region MessageDigestSpi implementation
     public partial class MessageDigestSpi
     {
         #region Constructors

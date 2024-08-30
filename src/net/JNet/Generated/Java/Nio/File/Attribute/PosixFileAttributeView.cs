@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File.Attribute
 {
-    #region PosixFileAttributeView definition
+    #region PosixFileAttributeView declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributeView.html"/>
     /// </summary>
@@ -113,7 +113,7 @@ namespace Java.Nio.File.Attribute
     }
     #endregion
 
-    #region PosixFileAttributeView
+    #region PosixFileAttributeView implementation
     public partial class PosixFileAttributeView : Java.Nio.File.Attribute.IPosixFileAttributeView
     {
         #region Constructors

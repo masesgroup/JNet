@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Dnd
 {
-    #region DragSourceContext definition
+    #region DragSourceContext declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceContext.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.Dnd
     }
     #endregion
 
-    #region DragSourceContext
+    #region DragSourceContext implementation
     public partial class DragSourceContext
     {
         #region Constructors

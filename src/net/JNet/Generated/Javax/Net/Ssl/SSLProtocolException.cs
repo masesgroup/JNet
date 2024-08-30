@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Net.Ssl
 {
-    #region SSLProtocolException definition
+    #region SSLProtocolException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLProtocolException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region SSLProtocolException
+    #region SSLProtocolException implementation
     public partial class SSLProtocolException
     {
         #region Constructors

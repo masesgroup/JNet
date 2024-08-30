@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region ActiveEvent definition
+    #region ActiveEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ActiveEvent.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region ActiveEvent
+    #region ActiveEvent implementation
     public partial class ActiveEvent : Java.Awt.IActiveEvent
     {
         #region Constructors

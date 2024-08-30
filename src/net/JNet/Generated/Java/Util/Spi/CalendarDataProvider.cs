@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Spi
 {
-    #region CalendarDataProvider definition
+    #region CalendarDataProvider declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/CalendarDataProvider.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util.Spi
     }
     #endregion
 
-    #region CalendarDataProvider
+    #region CalendarDataProvider implementation
     public partial class CalendarDataProvider
     {
         #region Constructors

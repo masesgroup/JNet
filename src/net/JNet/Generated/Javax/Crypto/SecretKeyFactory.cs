@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Crypto
 {
-    #region SecretKeyFactory definition
+    #region SecretKeyFactory declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SecretKeyFactory.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Crypto
     }
     #endregion
 
-    #region SecretKeyFactory
+    #region SecretKeyFactory implementation
     public partial class SecretKeyFactory
     {
         #region Constructors

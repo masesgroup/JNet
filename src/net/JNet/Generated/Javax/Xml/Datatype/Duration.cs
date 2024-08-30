@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Datatype
 {
-    #region Duration definition
+    #region Duration declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/Duration.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Xml.Datatype
     }
     #endregion
 
-    #region Duration
+    #region Duration implementation
     public partial class Duration
     {
         #region Constructors

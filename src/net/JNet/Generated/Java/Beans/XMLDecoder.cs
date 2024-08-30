@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans
 {
-    #region XMLDecoder definition
+    #region XMLDecoder declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Beans
     }
     #endregion
 
-    #region XMLDecoder
+    #region XMLDecoder implementation
     public partial class XMLDecoder
     {
         #region Constructors

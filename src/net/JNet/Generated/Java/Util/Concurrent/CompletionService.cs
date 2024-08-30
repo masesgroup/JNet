@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region CompletionService definition
+    #region CompletionService declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region CompletionService<V> definition
+    #region CompletionService<V> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region CompletionService
+    #region CompletionService implementation
     public partial class CompletionService
     {
         #region Constructors
@@ -248,7 +248,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region CompletionService<V>
+    #region CompletionService<V> implementation
     public partial class CompletionService<V> : Java.Util.Concurrent.ICompletionService<V>
     {
         #region Constructors

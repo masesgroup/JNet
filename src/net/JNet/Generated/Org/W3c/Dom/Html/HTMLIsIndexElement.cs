@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
-    #region HTMLIsIndexElement definition
+    #region HTMLIsIndexElement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLIsIndexElement.html"/>
     /// </summary>
@@ -98,7 +98,7 @@ namespace Org.W3c.Dom.Html
     }
     #endregion
 
-    #region HTMLIsIndexElement
+    #region HTMLIsIndexElement implementation
     public partial class HTMLIsIndexElement : Org.W3c.Dom.Html.IHTMLIsIndexElement
     {
         #region Constructors

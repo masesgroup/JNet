@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Crypto.Spec
 {
-    #region DHGenParameterSpec definition
+    #region DHGenParameterSpec declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHGenParameterSpec.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Crypto.Spec
     }
     #endregion
 
-    #region DHGenParameterSpec
+    #region DHGenParameterSpec implementation
     public partial class DHGenParameterSpec
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region AttributeSet definition
+    #region AttributeSet declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AttributeSet.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Swing.Text
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region CharacterAttribute definition
+        #region CharacterAttribute declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AttributeSet.CharacterAttribute.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region ColorAttribute definition
+        #region ColorAttribute declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AttributeSet.ColorAttribute.html"/>
         /// </summary>
@@ -162,7 +162,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region FontAttribute definition
+        #region FontAttribute declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AttributeSet.FontAttribute.html"/>
         /// </summary>
@@ -209,7 +209,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region ParagraphAttribute definition
+        #region ParagraphAttribute declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AttributeSet.ParagraphAttribute.html"/>
         /// </summary>
@@ -326,7 +326,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region AttributeSet
+    #region AttributeSet implementation
     public partial class AttributeSet : Javax.Swing.Text.IAttributeSet
     {
         #region Constructors
@@ -437,7 +437,7 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Nested classes
-        #region CharacterAttribute
+        #region CharacterAttribute implementation
         public partial class CharacterAttribute
         {
             #region Constructors
@@ -468,7 +468,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region ColorAttribute
+        #region ColorAttribute implementation
         public partial class ColorAttribute
         {
             #region Constructors
@@ -499,7 +499,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region FontAttribute
+        #region FontAttribute implementation
         public partial class FontAttribute
         {
             #region Constructors
@@ -530,7 +530,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region ParagraphAttribute
+        #region ParagraphAttribute implementation
         public partial class ParagraphAttribute
         {
             #region Constructors

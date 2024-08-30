@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File.Attribute
 {
-    #region FileOwnerAttributeView definition
+    #region FileOwnerAttributeView declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileOwnerAttributeView.html"/>
     /// </summary>
@@ -99,7 +99,7 @@ namespace Java.Nio.File.Attribute
     }
     #endregion
 
-    #region FileOwnerAttributeView
+    #region FileOwnerAttributeView implementation
     public partial class FileOwnerAttributeView : Java.Nio.File.Attribute.IFileOwnerAttributeView
     {
         #region Constructors

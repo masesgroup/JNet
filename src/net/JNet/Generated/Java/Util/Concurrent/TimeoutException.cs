@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region TimeoutException definition
+    #region TimeoutException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeoutException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region TimeoutException
+    #region TimeoutException implementation
     public partial class TimeoutException
     {
         #region Constructors

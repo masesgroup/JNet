@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans
 {
-    #region XMLEncoder definition
+    #region XMLEncoder declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLEncoder.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Beans
     }
     #endregion
 
-    #region XMLEncoder
+    #region XMLEncoder implementation
     public partial class XMLEncoder
     {
         #region Constructors

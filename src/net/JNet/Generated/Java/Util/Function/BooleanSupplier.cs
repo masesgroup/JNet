@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region BooleanSupplier definition
+    #region BooleanSupplier declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BooleanSupplier.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BooleanSupplierDirect definition
+    #region BooleanSupplierDirect declaration
     /// <summary>
     /// Direct override of <see cref="BooleanSupplier"/> or its generic type if there is one
     /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BooleanSupplier
+    #region BooleanSupplier implementation
     public partial class BooleanSupplier : Java.Util.Function.IBooleanSupplier
     {
         #region Constructors
@@ -176,7 +176,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BooleanSupplierDirect
+    #region BooleanSupplierDirect implementation
     public partial class BooleanSupplierDirect : Java.Util.Function.IBooleanSupplier
     {
         #region Constructors

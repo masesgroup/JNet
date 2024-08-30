@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Ldap
 {
-    #region StartTlsResponse definition
+    #region StartTlsResponse declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Naming.Ldap
     }
     #endregion
 
-    #region StartTlsResponse
+    #region StartTlsResponse implementation
     public partial class StartTlsResponse
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region ChangedCharSetException definition
+    #region ChangedCharSetException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ChangedCharSetException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region ChangedCharSetException
+    #region ChangedCharSetException implementation
     public partial class ChangedCharSetException
     {
         #region Constructors

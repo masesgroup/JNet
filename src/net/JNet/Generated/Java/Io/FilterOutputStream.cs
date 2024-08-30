@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
-    #region FilterOutputStream definition
+    #region FilterOutputStream declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FilterOutputStream.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Io
     }
     #endregion
 
-    #region FilterOutputStream
+    #region FilterOutputStream implementation
     public partial class FilterOutputStream
     {
         #region Constructors

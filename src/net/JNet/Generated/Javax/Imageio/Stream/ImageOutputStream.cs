@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio.Stream
 {
-    #region ImageOutputStream definition
+    #region ImageOutputStream declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html"/>
     /// </summary>
@@ -243,7 +243,7 @@ namespace Javax.Imageio.Stream
     }
     #endregion
 
-    #region ImageOutputStream
+    #region ImageOutputStream implementation
     public partial class ImageOutputStream : Javax.Imageio.Stream.IImageOutputStream
     {
         #region Constructors

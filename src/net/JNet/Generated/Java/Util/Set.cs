@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region Set definition
+    #region Set declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Set<E> definition
+    #region Set<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Set
+    #region Set implementation
     public partial class Set
     {
         #region Constructors
@@ -528,7 +528,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Set<E>
+    #region Set<E> implementation
     public partial class Set<E> : Java.Util.ISet<E>
     {
         #region Constructors

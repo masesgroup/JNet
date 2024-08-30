@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans
 {
-    #region ParameterDescriptor definition
+    #region ParameterDescriptor declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/ParameterDescriptor.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Beans
     }
     #endregion
 
-    #region ParameterDescriptor
+    #region ParameterDescriptor implementation
     public partial class ParameterDescriptor
     {
         #region Constructors

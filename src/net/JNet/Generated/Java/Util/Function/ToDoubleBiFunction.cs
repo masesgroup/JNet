@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region ToDoubleBiFunction definition
+    #region ToDoubleBiFunction declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToDoubleBiFunction.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToDoubleBiFunctionDirect definition
+    #region ToDoubleBiFunctionDirect declaration
     /// <summary>
     /// Direct override of <see cref="ToDoubleBiFunction"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToDoubleBiFunction<T, U> definition
+    #region ToDoubleBiFunction<T, U> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToDoubleBiFunction.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToDoubleBiFunctionDirect<T, U> definition
+    #region ToDoubleBiFunctionDirect<T, U> declaration
     /// <summary>
     /// Direct override of <see cref="ToDoubleBiFunction"/> or its generic type if there is one
     /// </summary>
@@ -161,7 +161,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToDoubleBiFunction
+    #region ToDoubleBiFunction implementation
     public partial class ToDoubleBiFunction
     {
         #region Constructors
@@ -224,7 +224,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToDoubleBiFunctionDirect
+    #region ToDoubleBiFunctionDirect implementation
     public partial class ToDoubleBiFunctionDirect
     {
         #region Constructors
@@ -290,7 +290,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToDoubleBiFunction<T, U>
+    #region ToDoubleBiFunction<T, U> implementation
     public partial class ToDoubleBiFunction<T, U> : Java.Util.Function.IToDoubleBiFunction<T, U>
     {
         #region Constructors
@@ -353,7 +353,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToDoubleBiFunctionDirect<T, U>
+    #region ToDoubleBiFunctionDirect<T, U> implementation
     public partial class ToDoubleBiFunctionDirect<T, U> : Java.Util.Function.IToDoubleBiFunction<T, U>
     {
         #region Constructors

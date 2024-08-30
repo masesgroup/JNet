@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi
 {
-    #region RemoteException definition
+    #region RemoteException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/RemoteException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Rmi
     }
     #endregion
 
-    #region RemoteException
+    #region RemoteException implementation
     public partial class RemoteException
     {
         #region Constructors

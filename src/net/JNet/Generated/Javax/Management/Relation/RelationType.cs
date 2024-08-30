@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Relation
 {
-    #region RelationType definition
+    #region RelationType declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationType.html"/>
     /// </summary>
@@ -106,7 +106,7 @@ namespace Javax.Management.Relation
     }
     #endregion
 
-    #region RelationType
+    #region RelationType implementation
     public partial class RelationType : Javax.Management.Relation.IRelationType
     {
         #region Constructors

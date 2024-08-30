@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region Enumeration definition
+    #region Enumeration declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Enumeration<E> definition
+    #region Enumeration<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Enumeration
+    #region Enumeration implementation
     public partial class Enumeration
     {
         #region Constructors
@@ -208,7 +208,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Enumeration<E>
+    #region Enumeration<E> implementation
     public partial class Enumeration<E> : Java.Util.IEnumeration<E>
     {
         #region Constructors

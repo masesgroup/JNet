@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto
 {
-    #region AlgorithmMethod definition
+    #region AlgorithmMethod declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/AlgorithmMethod.html"/>
     /// </summary>
@@ -98,7 +98,7 @@ namespace Javax.Xml.Crypto
     }
     #endregion
 
-    #region AlgorithmMethod
+    #region AlgorithmMethod implementation
     public partial class AlgorithmMethod : Javax.Xml.Crypto.IAlgorithmMethod
     {
         #region Constructors

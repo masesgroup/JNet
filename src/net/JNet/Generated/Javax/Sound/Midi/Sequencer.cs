@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Midi
 {
-    #region Sequencer definition
+    #region Sequencer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Sound.Midi
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region SyncMode definition
+        #region SyncMode declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.SyncMode.html"/>
         /// </summary>
@@ -294,7 +294,7 @@ namespace Javax.Sound.Midi
     }
     #endregion
 
-    #region Sequencer
+    #region Sequencer implementation
     public partial class Sequencer : Javax.Sound.Midi.ISequencer
     {
         #region Constructors
@@ -582,7 +582,7 @@ namespace Javax.Sound.Midi
         #endregion
 
         #region Nested classes
-        #region SyncMode
+        #region SyncMode implementation
         public partial class SyncMode
         {
             #region Constructors

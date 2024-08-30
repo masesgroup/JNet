@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
-    #region WriteAbortedException definition
+    #region WriteAbortedException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/WriteAbortedException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Io
     }
     #endregion
 
-    #region WriteAbortedException
+    #region WriteAbortedException implementation
     public partial class WriteAbortedException
     {
         #region Constructors

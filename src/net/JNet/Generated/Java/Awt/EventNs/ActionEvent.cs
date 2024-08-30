@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
-    #region ActionEvent definition
+    #region ActionEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionEvent.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region ActionEvent
+    #region ActionEvent implementation
     public partial class ActionEvent
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio
 {
-    #region DoubleBuffer definition
+    #region DoubleBuffer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Nio
     }
     #endregion
 
-    #region DoubleBuffer
+    #region DoubleBuffer implementation
     public partial class DoubleBuffer
     {
         #region Constructors

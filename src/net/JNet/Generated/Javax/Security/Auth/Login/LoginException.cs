@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Security.Auth.Login
 {
-    #region LoginException definition
+    #region LoginException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Security.Auth.Login
     }
     #endregion
 
-    #region LoginException
+    #region LoginException implementation
     public partial class LoginException
     {
         #region Constructors

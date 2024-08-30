@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Transaction.Xa
 {
-    #region Xid definition
+    #region Xid declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/Xid.html"/>
     /// </summary>
@@ -102,7 +102,7 @@ namespace Javax.Transaction.Xa
     }
     #endregion
 
-    #region Xid
+    #region Xid implementation
     public partial class Xid : Javax.Transaction.Xa.IXid
     {
         #region Constructors

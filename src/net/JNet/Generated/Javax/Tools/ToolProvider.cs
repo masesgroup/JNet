@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Tools
 {
-    #region ToolProvider definition
+    #region ToolProvider declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ToolProvider.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Tools
     }
     #endregion
 
-    #region ToolProvider
+    #region ToolProvider implementation
     public partial class ToolProvider
     {
         #region Constructors

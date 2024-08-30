@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Midi
 {
-    #region MetaEventListener definition
+    #region MetaEventListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MetaEventListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Sound.Midi
     }
     #endregion
 
-    #region MetaEventListenerDirect definition
+    #region MetaEventListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="MetaEventListener"/> or its generic type if there is one
     /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Sound.Midi
     }
     #endregion
 
-    #region MetaEventListener
+    #region MetaEventListener implementation
     public partial class MetaEventListener : Javax.Sound.Midi.IMetaEventListener
     {
         #region Constructors
@@ -175,7 +175,7 @@ namespace Javax.Sound.Midi
     }
     #endregion
 
-    #region MetaEventListenerDirect
+    #region MetaEventListenerDirect implementation
     public partial class MetaEventListenerDirect : Javax.Sound.Midi.IMetaEventListener
     {
         #region Constructors

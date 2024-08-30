@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Annotation.Processing
 {
-    #region SupportedSourceVersion definition
+    #region SupportedSourceVersion declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/SupportedSourceVersion.html"/>
     /// </summary>
@@ -95,7 +95,7 @@ namespace Javax.Annotation.Processing
     }
     #endregion
 
-    #region SupportedSourceVersion
+    #region SupportedSourceVersion implementation
     public partial class SupportedSourceVersion : Javax.Annotation.Processing.ISupportedSourceVersion
     {
         #region Constructors

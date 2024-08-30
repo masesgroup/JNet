@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Metal
 {
-    #region MetalToggleButtonUI definition
+    #region MetalToggleButtonUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalToggleButtonUI.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf.Metal
     }
     #endregion
 
-    #region MetalToggleButtonUI
+    #region MetalToggleButtonUI implementation
     public partial class MetalToggleButtonUI
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Crypto.Spec
 {
-    #region PBEKeySpec definition
+    #region PBEKeySpec declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PBEKeySpec.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Crypto.Spec
     }
     #endregion
 
-    #region PBEKeySpec
+    #region PBEKeySpec implementation
     public partial class PBEKeySpec
     {
         #region Constructors

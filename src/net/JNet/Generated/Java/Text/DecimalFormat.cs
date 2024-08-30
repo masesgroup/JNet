@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Text
 {
-    #region DecimalFormat definition
+    #region DecimalFormat declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Text
     }
     #endregion
 
-    #region DecimalFormat
+    #region DecimalFormat implementation
     public partial class DecimalFormat
     {
         #region Constructors

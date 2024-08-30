@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent.Atomic
 {
-    #region LongAccumulator definition
+    #region LongAccumulator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAccumulator.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Concurrent.Atomic
     }
     #endregion
 
-    #region LongAccumulator
+    #region LongAccumulator implementation
     public partial class LongAccumulator
     {
         #region Constructors

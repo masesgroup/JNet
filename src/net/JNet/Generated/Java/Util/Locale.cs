@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region Locale definition
+    #region Locale declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Util
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Builder definition
+        #region Builder declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Builder.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region Category definition
+        #region Category declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Category.html"/>
         /// </summary>
@@ -156,7 +156,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region FilteringMode definition
+        #region FilteringMode declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.FilteringMode.html"/>
         /// </summary>
@@ -201,7 +201,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region IsoCountryCode definition
+        #region IsoCountryCode declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.IsoCountryCode.html"/>
         /// </summary>
@@ -248,7 +248,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region LanguageRange definition
+        #region LanguageRange declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html"/>
         /// </summary>
@@ -297,7 +297,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Locale
+    #region Locale implementation
     public partial class Locale
     {
         #region Constructors
@@ -811,7 +811,7 @@ namespace Java.Util
         #endregion
 
         #region Nested classes
-        #region Builder
+        #region Builder implementation
         public partial class Builder
         {
             #region Constructors
@@ -958,7 +958,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region Category
+        #region Category implementation
         public partial class Category
         {
             #region Constructors
@@ -1018,7 +1018,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region FilteringMode
+        #region FilteringMode implementation
         public partial class FilteringMode
         {
             #region Constructors
@@ -1096,7 +1096,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region IsoCountryCode
+        #region IsoCountryCode implementation
         public partial class IsoCountryCode
         {
             #region Constructors
@@ -1162,7 +1162,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region LanguageRange
+        #region LanguageRange implementation
         public partial class LanguageRange
         {
             #region Constructors

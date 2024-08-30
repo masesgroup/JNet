@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Instrument
 {
-    #region ClassDefinition definition
+    #region ClassDefinition declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/ClassDefinition.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Lang.Instrument
     }
     #endregion
 
-    #region ClassDefinition
+    #region ClassDefinition implementation
     public partial class ClassDefinition
     {
         #region Constructors

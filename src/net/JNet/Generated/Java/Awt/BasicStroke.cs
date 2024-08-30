@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region BasicStroke definition
+    #region BasicStroke declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region BasicStroke
+    #region BasicStroke implementation
     public partial class BasicStroke
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
-    #region MenuDragMouseListener definition
+    #region MenuDragMouseListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region MenuDragMouseListenerDirect definition
+    #region MenuDragMouseListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="MenuDragMouseListener"/> or its generic type if there is one
     /// </summary>
@@ -130,7 +130,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region MenuDragMouseListener
+    #region MenuDragMouseListener implementation
     public partial class MenuDragMouseListener : Javax.Swing.Event.IMenuDragMouseListener
     {
         #region Constructors
@@ -256,7 +256,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region MenuDragMouseListenerDirect
+    #region MenuDragMouseListenerDirect implementation
     public partial class MenuDragMouseListenerDirect : Javax.Swing.Event.IMenuDragMouseListener
     {
         #region Constructors

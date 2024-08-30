@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels.Spi
 {
-    #region SelectorProvider definition
+    #region SelectorProvider declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/SelectorProvider.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Nio.Channels.Spi
     }
     #endregion
 
-    #region SelectorProvider
+    #region SelectorProvider implementation
     public partial class SelectorProvider
     {
         #region Constructors

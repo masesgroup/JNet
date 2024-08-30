@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql.Rowset
 {
-    #region RowSetMetaDataImpl definition
+    #region RowSetMetaDataImpl declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Sql.Rowset
     }
     #endregion
 
-    #region RowSetMetaDataImpl
+    #region RowSetMetaDataImpl implementation
     public partial class RowSetMetaDataImpl
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql.Rowset
 {
-    #region RowSetFactory definition
+    #region RowSetFactory declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetFactory.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Javax.Sql.Rowset
     }
     #endregion
 
-    #region RowSetFactory
+    #region RowSetFactory implementation
     public partial class RowSetFactory : Javax.Sql.Rowset.IRowSetFactory
     {
         #region Constructors

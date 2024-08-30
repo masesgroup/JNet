@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net.Http
 {
-    #region HttpConnectTimeoutException definition
+    #region HttpConnectTimeoutException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpConnectTimeoutException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Net.Http
     }
     #endregion
 
-    #region HttpConnectTimeoutException
+    #region HttpConnectTimeoutException implementation
     public partial class HttpConnectTimeoutException
     {
         #region Constructors

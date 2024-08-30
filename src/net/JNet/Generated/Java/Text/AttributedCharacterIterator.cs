@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Text
 {
-    #region AttributedCharacterIterator definition
+    #region AttributedCharacterIterator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Java.Text
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Attribute definition
+        #region Attribute declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.Attribute.html"/>
         /// </summary>
@@ -183,7 +183,7 @@ namespace Java.Text
     }
     #endregion
 
-    #region AttributedCharacterIterator
+    #region AttributedCharacterIterator implementation
     public partial class AttributedCharacterIterator : Java.Text.IAttributedCharacterIterator
     {
         #region Constructors
@@ -282,7 +282,7 @@ namespace Java.Text
         #endregion
 
         #region Nested classes
-        #region Attribute
+        #region Attribute implementation
         public partial class Attribute
         {
             #region Constructors

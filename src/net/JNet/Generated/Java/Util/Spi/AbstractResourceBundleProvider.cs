@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Spi
 {
-    #region AbstractResourceBundleProvider definition
+    #region AbstractResourceBundleProvider declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/AbstractResourceBundleProvider.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util.Spi
     }
     #endregion
 
-    #region AbstractResourceBundleProvider
+    #region AbstractResourceBundleProvider implementation
     public partial class AbstractResourceBundleProvider
     {
         #region Constructors

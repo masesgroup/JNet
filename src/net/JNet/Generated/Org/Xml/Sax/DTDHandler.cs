@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.Xml.Sax
 {
-    #region DTDHandler definition
+    #region DTDHandler declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/DTDHandler.html"/>
     /// </summary>
@@ -107,7 +107,7 @@ namespace Org.Xml.Sax
     }
     #endregion
 
-    #region DTDHandler
+    #region DTDHandler implementation
     public partial class DTDHandler : Org.Xml.Sax.IDTDHandler
     {
         #region Constructors

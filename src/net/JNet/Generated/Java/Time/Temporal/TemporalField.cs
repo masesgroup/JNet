@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time.Temporal
 {
-    #region TemporalField definition
+    #region TemporalField declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html"/>
     /// </summary>
@@ -153,7 +153,7 @@ namespace Java.Time.Temporal
     }
     #endregion
 
-    #region TemporalField
+    #region TemporalField implementation
     public partial class TemporalField : Java.Time.Temporal.ITemporalField
     {
         #region Constructors

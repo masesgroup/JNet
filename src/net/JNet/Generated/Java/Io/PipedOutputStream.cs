@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
-    #region PipedOutputStream definition
+    #region PipedOutputStream declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PipedOutputStream.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Io
     }
     #endregion
 
-    #region PipedOutputStream
+    #region PipedOutputStream implementation
     public partial class PipedOutputStream
     {
         #region Constructors

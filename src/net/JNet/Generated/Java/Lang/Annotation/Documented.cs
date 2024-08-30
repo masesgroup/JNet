@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Annotation
 {
-    #region Documented definition
+    #region Documented declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Documented.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Java.Lang.Annotation
     }
     #endregion
 
-    #region Documented
+    #region Documented implementation
     public partial class Documented : Java.Lang.Annotation.IDocumented
     {
         #region Constructors

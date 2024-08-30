@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Type
 {
-    #region UnionType definition
+    #region UnionType declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/UnionType.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Javax.Lang.Model.Type
     }
     #endregion
 
-    #region UnionType
+    #region UnionType implementation
     public partial class UnionType : Javax.Lang.Model.Type.IUnionType
     {
         #region Constructors

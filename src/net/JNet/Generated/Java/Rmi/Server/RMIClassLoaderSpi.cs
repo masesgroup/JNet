@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi.Server
 {
-    #region RMIClassLoaderSpi definition
+    #region RMIClassLoaderSpi declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClassLoaderSpi.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Rmi.Server
     }
     #endregion
 
-    #region RMIClassLoaderSpi
+    #region RMIClassLoaderSpi implementation
     public partial class RMIClassLoaderSpi
     {
         #region Constructors

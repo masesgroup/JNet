@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region SpringLayout definition
+    #region SpringLayout declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Constraints definition
+        #region Constraints declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.Constraints.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region SpringLayout
+    #region SpringLayout implementation
     public partial class SpringLayout
     {
         #region Constructors
@@ -323,7 +323,7 @@ namespace Javax.Swing
         #endregion
 
         #region Nested classes
-        #region Constraints
+        #region Constraints implementation
         public partial class Constraints
         {
             #region Constructors

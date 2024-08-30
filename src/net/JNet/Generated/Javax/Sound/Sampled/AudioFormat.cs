@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Sampled
 {
-    #region AudioFormat definition
+    #region AudioFormat declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Sound.Sampled
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Encoding definition
+        #region Encoding declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Sound.Sampled
     }
     #endregion
 
-    #region AudioFormat
+    #region AudioFormat implementation
     public partial class AudioFormat
     {
         #region Constructors
@@ -256,7 +256,7 @@ namespace Javax.Sound.Sampled
         #endregion
 
         #region Nested classes
-        #region Encoding
+        #region Encoding implementation
         public partial class Encoding
         {
             #region Constructors

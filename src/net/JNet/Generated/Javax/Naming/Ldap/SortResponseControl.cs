@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Ldap
 {
-    #region SortResponseControl definition
+    #region SortResponseControl declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortResponseControl.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Naming.Ldap
     }
     #endregion
 
-    #region SortResponseControl
+    #region SortResponseControl implementation
     public partial class SortResponseControl
     {
         #region Constructors

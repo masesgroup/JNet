@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Invoke
 {
-    #region VarHandle definition
+    #region VarHandle declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Java.Lang.Invoke
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region AccessMode definition
+        #region AccessMode declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html"/>
         /// </summary>
@@ -117,7 +117,7 @@ namespace Java.Lang.Invoke
     }
     #endregion
 
-    #region VarHandle
+    #region VarHandle implementation
     public partial class VarHandle
     {
         #region Constructors
@@ -494,7 +494,7 @@ namespace Java.Lang.Invoke
         #endregion
 
         #region Nested classes
-        #region AccessMode
+        #region AccessMode implementation
         public partial class AccessMode
         {
             #region Constructors

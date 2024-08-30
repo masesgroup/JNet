@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region DoubleUnaryOperator definition
+    #region DoubleUnaryOperator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region DoubleUnaryOperatorDirect definition
+    #region DoubleUnaryOperatorDirect declaration
     /// <summary>
     /// Direct override of <see cref="DoubleUnaryOperator"/> or its generic type if there is one
     /// </summary>
@@ -128,7 +128,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region DoubleUnaryOperator
+    #region DoubleUnaryOperator implementation
     public partial class DoubleUnaryOperator : Java.Util.Function.IDoubleUnaryOperator
     {
         #region Constructors
@@ -269,7 +269,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region DoubleUnaryOperatorDirect
+    #region DoubleUnaryOperatorDirect implementation
     public partial class DoubleUnaryOperatorDirect : Java.Util.Function.IDoubleUnaryOperator
     {
         #region Constructors

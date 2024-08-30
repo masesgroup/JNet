@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Script
 {
-    #region ScriptException definition
+    #region ScriptException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Script
     }
     #endregion
 
-    #region ScriptException
+    #region ScriptException implementation
     public partial class ScriptException
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time.Chrono
 {
-    #region Era definition
+    #region Era declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Era.html"/>
     /// </summary>
@@ -138,7 +138,7 @@ namespace Java.Time.Chrono
     }
     #endregion
 
-    #region Era
+    #region Era implementation
     public partial class Era : Java.Time.Chrono.IEra
     {
         #region Constructors

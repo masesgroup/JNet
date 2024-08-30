@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
-    #region SelectionKey definition
+    #region SelectionKey declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region SelectionKey
+    #region SelectionKey implementation
     public partial class SelectionKey
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
-    #region HttpRetryException definition
+    #region HttpRetryException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpRetryException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Net
     }
     #endregion
 
-    #region HttpRetryException
+    #region HttpRetryException implementation
     public partial class HttpRetryException
     {
         #region Constructors

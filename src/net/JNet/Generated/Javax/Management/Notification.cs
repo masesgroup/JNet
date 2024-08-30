@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region Notification definition
+    #region Notification declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region Notification
+    #region Notification implementation
     public partial class Notification
     {
         #region Constructors

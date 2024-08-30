@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream.Util
 {
-    #region XMLEventConsumer definition
+    #region XMLEventConsumer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/XMLEventConsumer.html"/>
     /// </summary>
@@ -96,7 +96,7 @@ namespace Javax.Xml.Stream.Util
     }
     #endregion
 
-    #region XMLEventConsumer
+    #region XMLEventConsumer implementation
     public partial class XMLEventConsumer : Javax.Xml.Stream.Util.IXMLEventConsumer
     {
         #region Constructors

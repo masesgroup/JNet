@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio
 {
-    #region ByteBuffer definition
+    #region ByteBuffer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Nio
     }
     #endregion
 
-    #region ByteBuffer
+    #region ByteBuffer implementation
     public partial class ByteBuffer
     {
         #region Constructors

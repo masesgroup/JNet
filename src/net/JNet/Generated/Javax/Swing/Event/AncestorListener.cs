@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
-    #region AncestorListener definition
+    #region AncestorListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region AncestorListenerDirect definition
+    #region AncestorListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="AncestorListener"/> or its generic type if there is one
     /// </summary>
@@ -125,7 +125,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region AncestorListener
+    #region AncestorListener implementation
     public partial class AncestorListener : Javax.Swing.Event.IAncestorListener
     {
         #region Constructors
@@ -229,7 +229,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region AncestorListenerDirect
+    #region AncestorListenerDirect implementation
     public partial class AncestorListenerDirect : Javax.Swing.Event.IAncestorListener
     {
         #region Constructors

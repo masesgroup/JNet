@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.FontNs
 {
-    #region FontRenderContext definition
+    #region FontRenderContext declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.FontNs
     }
     #endregion
 
-    #region FontRenderContext
+    #region FontRenderContext implementation
     public partial class FontRenderContext
     {
         #region Constructors

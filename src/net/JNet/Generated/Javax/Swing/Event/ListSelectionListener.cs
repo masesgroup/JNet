@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
-    #region ListSelectionListener definition
+    #region ListSelectionListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListSelectionListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region ListSelectionListenerDirect definition
+    #region ListSelectionListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="ListSelectionListener"/> or its generic type if there is one
     /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region ListSelectionListener
+    #region ListSelectionListener implementation
     public partial class ListSelectionListener : Javax.Swing.Event.IListSelectionListener
     {
         #region Constructors
@@ -175,7 +175,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region ListSelectionListenerDirect
+    #region ListSelectionListenerDirect implementation
     public partial class ListSelectionListenerDirect : Javax.Swing.Event.IListSelectionListener
     {
         #region Constructors

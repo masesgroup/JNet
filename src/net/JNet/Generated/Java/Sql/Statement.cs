@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region Statement definition
+    #region Statement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html"/>
     /// </summary>
@@ -369,7 +369,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region Statement
+    #region Statement implementation
     public partial class Statement : Java.Sql.IStatement
     {
         #region Constructors

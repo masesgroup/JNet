@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region Long definition
+    #region Long declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region Long
+    #region Long implementation
     public partial class Long
     {
         #region Constructors

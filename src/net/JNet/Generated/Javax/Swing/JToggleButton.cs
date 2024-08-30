@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region JToggleButton definition
+    #region JToggleButton declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToggleButton.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region ToggleButtonModel definition
+        #region ToggleButtonModel declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToggleButton.ToggleButtonModel.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region JToggleButton
+    #region JToggleButton implementation
     public partial class JToggleButton
     {
         #region Constructors
@@ -204,7 +204,7 @@ namespace Javax.Swing
         #endregion
 
         #region Nested classes
-        #region ToggleButtonModel
+        #region ToggleButtonModel implementation
         public partial class ToggleButtonModel
         {
             #region Constructors

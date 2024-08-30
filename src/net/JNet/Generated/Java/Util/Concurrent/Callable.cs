@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region Callable definition
+    #region Callable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region Callable<V> definition
+    #region Callable<V> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region Callable
+    #region Callable implementation
     public partial class Callable
     {
         #region Constructors
@@ -184,7 +184,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region Callable<V>
+    #region Callable<V> implementation
     public partial class Callable<V> : Java.Util.Concurrent.ICallable<V>
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Stream
 {
-    #region IntStream definition
+    #region IntStream declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html"/>
     /// </summary>
@@ -299,7 +299,7 @@ namespace Java.Util.Stream
     }
     #endregion
 
-    #region IntStream
+    #region IntStream implementation
     public partial class IntStream : Java.Util.Stream.IIntStream
     {
         #region Constructors

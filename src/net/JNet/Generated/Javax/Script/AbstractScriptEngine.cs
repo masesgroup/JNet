@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Script
 {
-    #region AbstractScriptEngine definition
+    #region AbstractScriptEngine declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/AbstractScriptEngine.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Script
     }
     #endregion
 
-    #region AbstractScriptEngine
+    #region AbstractScriptEngine implementation
     public partial class AbstractScriptEngine
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Attribute.Standard
 {
-    #region DialogOwner definition
+    #region DialogOwner declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/DialogOwner.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Print.Attribute.Standard
     }
     #endregion
 
-    #region DialogOwner
+    #region DialogOwner implementation
     public partial class DialogOwner
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
-    #region UndoableEditListener definition
+    #region UndoableEditListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/UndoableEditListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region UndoableEditListenerDirect definition
+    #region UndoableEditListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="UndoableEditListener"/> or its generic type if there is one
     /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region UndoableEditListener
+    #region UndoableEditListener implementation
     public partial class UndoableEditListener : Javax.Swing.Event.IUndoableEditListener
     {
         #region Constructors
@@ -175,7 +175,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region UndoableEditListenerDirect
+    #region UndoableEditListenerDirect implementation
     public partial class UndoableEditListenerDirect : Javax.Swing.Event.IUndoableEditListener
     {
         #region Constructors

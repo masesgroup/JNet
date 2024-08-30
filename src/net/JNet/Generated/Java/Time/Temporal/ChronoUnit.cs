@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time.Temporal
 {
-    #region ChronoUnit definition
+    #region ChronoUnit declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Time.Temporal
     }
     #endregion
 
-    #region ChronoUnit
+    #region ChronoUnit implementation
     public partial class ChronoUnit
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Security.Auth.Callback
 {
-    #region NameCallback definition
+    #region NameCallback declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/NameCallback.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Security.Auth.Callback
     }
     #endregion
 
-    #region NameCallback
+    #region NameCallback implementation
     public partial class NameCallback
     {
         #region Constructors

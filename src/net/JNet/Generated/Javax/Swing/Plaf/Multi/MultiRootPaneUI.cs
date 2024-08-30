@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Multi
 {
-    #region MultiRootPaneUI definition
+    #region MultiRootPaneUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/multi/MultiRootPaneUI.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf.Multi
     }
     #endregion
 
-    #region MultiRootPaneUI
+    #region MultiRootPaneUI implementation
     public partial class MultiRootPaneUI
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi.Server
 {
-    #region RMIClientSocketFactory definition
+    #region RMIClientSocketFactory declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClientSocketFactory.html"/>
     /// </summary>
@@ -98,7 +98,7 @@ namespace Java.Rmi.Server
     }
     #endregion
 
-    #region RMIClientSocketFactory
+    #region RMIClientSocketFactory implementation
     public partial class RMIClientSocketFactory : Java.Rmi.Server.IRMIClientSocketFactory
     {
         #region Constructors

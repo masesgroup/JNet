@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf
 {
-    #region BorderUIResource definition
+    #region BorderUIResource declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Plaf
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region BevelBorderUIResource definition
+        #region BevelBorderUIResource declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.BevelBorderUIResource.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Swing.Plaf
         }
         #endregion
 
-        #region CompoundBorderUIResource definition
+        #region CompoundBorderUIResource declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.CompoundBorderUIResource.html"/>
         /// </summary>
@@ -156,7 +156,7 @@ namespace Javax.Swing.Plaf
         }
         #endregion
 
-        #region EmptyBorderUIResource definition
+        #region EmptyBorderUIResource declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.EmptyBorderUIResource.html"/>
         /// </summary>
@@ -201,7 +201,7 @@ namespace Javax.Swing.Plaf
         }
         #endregion
 
-        #region EtchedBorderUIResource definition
+        #region EtchedBorderUIResource declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.EtchedBorderUIResource.html"/>
         /// </summary>
@@ -246,7 +246,7 @@ namespace Javax.Swing.Plaf
         }
         #endregion
 
-        #region LineBorderUIResource definition
+        #region LineBorderUIResource declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.LineBorderUIResource.html"/>
         /// </summary>
@@ -291,7 +291,7 @@ namespace Javax.Swing.Plaf
         }
         #endregion
 
-        #region MatteBorderUIResource definition
+        #region MatteBorderUIResource declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.MatteBorderUIResource.html"/>
         /// </summary>
@@ -336,7 +336,7 @@ namespace Javax.Swing.Plaf
         }
         #endregion
 
-        #region TitledBorderUIResource definition
+        #region TitledBorderUIResource declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html"/>
         /// </summary>
@@ -385,7 +385,7 @@ namespace Javax.Swing.Plaf
     }
     #endregion
 
-    #region BorderUIResource
+    #region BorderUIResource implementation
     public partial class BorderUIResource
     {
         #region Constructors
@@ -487,7 +487,7 @@ namespace Javax.Swing.Plaf
         #endregion
 
         #region Nested classes
-        #region BevelBorderUIResource
+        #region BevelBorderUIResource implementation
         public partial class BevelBorderUIResource
         {
             #region Constructors
@@ -552,7 +552,7 @@ namespace Javax.Swing.Plaf
         }
         #endregion
 
-        #region CompoundBorderUIResource
+        #region CompoundBorderUIResource implementation
         public partial class CompoundBorderUIResource
         {
             #region Constructors
@@ -596,7 +596,7 @@ namespace Javax.Swing.Plaf
         }
         #endregion
 
-        #region EmptyBorderUIResource
+        #region EmptyBorderUIResource implementation
         public partial class EmptyBorderUIResource
         {
             #region Constructors
@@ -650,7 +650,7 @@ namespace Javax.Swing.Plaf
         }
         #endregion
 
-        #region EtchedBorderUIResource
+        #region EtchedBorderUIResource implementation
         public partial class EtchedBorderUIResource
         {
             #region Constructors
@@ -712,7 +712,7 @@ namespace Javax.Swing.Plaf
         }
         #endregion
 
-        #region LineBorderUIResource
+        #region LineBorderUIResource implementation
         public partial class LineBorderUIResource
         {
             #region Constructors
@@ -764,7 +764,7 @@ namespace Javax.Swing.Plaf
         }
         #endregion
 
-        #region MatteBorderUIResource
+        #region MatteBorderUIResource implementation
         public partial class MatteBorderUIResource
         {
             #region Constructors
@@ -831,7 +831,7 @@ namespace Javax.Swing.Plaf
         }
         #endregion
 
-        #region TitledBorderUIResource
+        #region TitledBorderUIResource implementation
         public partial class TitledBorderUIResource
         {
             #region Constructors

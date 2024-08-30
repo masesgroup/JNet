@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Management
 {
-    #region LockInfo definition
+    #region LockInfo declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/LockInfo.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Lang.Management
     }
     #endregion
 
-    #region LockInfo
+    #region LockInfo implementation
     public partial class LockInfo
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Print
 {
-    #region Pageable definition
+    #region Pageable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Pageable.html"/>
     /// </summary>
@@ -108,7 +108,7 @@ namespace Java.Awt.Print
     }
     #endregion
 
-    #region Pageable
+    #region Pageable implementation
     public partial class Pageable : Java.Awt.Print.IPageable
     {
         #region Constructors

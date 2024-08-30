@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Basic
 {
-    #region BasicToolBarSeparatorUI definition
+    #region BasicToolBarSeparatorUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarSeparatorUI.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf.Basic
     }
     #endregion
 
-    #region BasicToolBarSeparatorUI
+    #region BasicToolBarSeparatorUI implementation
     public partial class BasicToolBarSeparatorUI
     {
         #region Constructors

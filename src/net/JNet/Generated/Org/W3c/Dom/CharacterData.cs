@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom
 {
-    #region CharacterData definition
+    #region CharacterData declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html"/>
     /// </summary>
@@ -134,7 +134,7 @@ namespace Org.W3c.Dom
     }
     #endregion
 
-    #region CharacterData
+    #region CharacterData implementation
     public partial class CharacterData : Org.W3c.Dom.ICharacterData
     {
         #region Constructors

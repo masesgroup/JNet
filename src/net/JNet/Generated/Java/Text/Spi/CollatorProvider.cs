@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Text.Spi
 {
-    #region CollatorProvider definition
+    #region CollatorProvider declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/CollatorProvider.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Text.Spi
     }
     #endregion
 
-    #region CollatorProvider
+    #region CollatorProvider implementation
     public partial class CollatorProvider
     {
         #region Constructors

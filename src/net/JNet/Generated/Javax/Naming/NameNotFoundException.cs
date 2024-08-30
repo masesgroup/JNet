@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming
 {
-    #region NameNotFoundException definition
+    #region NameNotFoundException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameNotFoundException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Naming
     }
     #endregion
 
-    #region NameNotFoundException
+    #region NameNotFoundException implementation
     public partial class NameNotFoundException
     {
         #region Constructors

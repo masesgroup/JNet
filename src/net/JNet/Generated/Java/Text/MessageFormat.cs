@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Text
 {
-    #region MessageFormat definition
+    #region MessageFormat declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Text
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Field definition
+        #region Field declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.Field.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Text
     }
     #endregion
 
-    #region MessageFormat
+    #region MessageFormat implementation
     public partial class MessageFormat
     {
         #region Constructors
@@ -252,7 +252,7 @@ namespace Java.Text
         #endregion
 
         #region Nested classes
-        #region Field
+        #region Field implementation
         public partial class Field
         {
             #region Constructors

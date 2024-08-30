@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region Error definition
+    #region Error declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Error.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region Error
+    #region Error implementation
     public partial class Error
     {
         #region Constructors

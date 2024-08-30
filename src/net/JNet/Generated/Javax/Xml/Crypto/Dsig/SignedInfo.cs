@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig
 {
-    #region SignedInfo definition
+    #region SignedInfo declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignedInfo.html"/>
     /// </summary>
@@ -110,7 +110,7 @@ namespace Javax.Xml.Crypto.Dsig
     }
     #endregion
 
-    #region SignedInfo
+    #region SignedInfo implementation
     public partial class SignedInfo : Javax.Xml.Crypto.Dsig.ISignedInfo
     {
         #region Constructors

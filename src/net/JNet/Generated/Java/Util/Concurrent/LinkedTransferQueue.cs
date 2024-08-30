@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region LinkedTransferQueue definition
+    #region LinkedTransferQueue declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region LinkedTransferQueue<E> definition
+    #region LinkedTransferQueue<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region LinkedTransferQueue
+    #region LinkedTransferQueue implementation
     public partial class LinkedTransferQueue
     {
         #region Constructors
@@ -274,7 +274,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region LinkedTransferQueue<E>
+    #region LinkedTransferQueue<E> implementation
     public partial class LinkedTransferQueue<E>
     {
         #region Constructors

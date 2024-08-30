@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
-    #region ChangeListener definition
+    #region ChangeListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ChangeListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region ChangeListenerDirect definition
+    #region ChangeListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="ChangeListener"/> or its generic type if there is one
     /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region ChangeListener
+    #region ChangeListener implementation
     public partial class ChangeListener : Javax.Swing.Event.IChangeListener
     {
         #region Constructors
@@ -175,7 +175,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region ChangeListenerDirect
+    #region ChangeListenerDirect implementation
     public partial class ChangeListenerDirect : Javax.Swing.Event.IChangeListener
     {
         #region Constructors

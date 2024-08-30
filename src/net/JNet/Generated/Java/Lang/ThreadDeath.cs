@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region ThreadDeath definition
+    #region ThreadDeath declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadDeath.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region ThreadDeath
+    #region ThreadDeath implementation
     public partial class ThreadDeath
     {
         #region Constructors

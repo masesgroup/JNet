@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Crypto
 {
-    #region EncryptedPrivateKeyInfo definition
+    #region EncryptedPrivateKeyInfo declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Crypto
     }
     #endregion
 
-    #region EncryptedPrivateKeyInfo
+    #region EncryptedPrivateKeyInfo implementation
     public partial class EncryptedPrivateKeyInfo
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Spec
 {
-    #region ECField definition
+    #region ECField declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECField.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Java.Security.Spec
     }
     #endregion
 
-    #region ECField
+    #region ECField implementation
     public partial class ECField : Java.Security.Spec.IECField
     {
         #region Constructors

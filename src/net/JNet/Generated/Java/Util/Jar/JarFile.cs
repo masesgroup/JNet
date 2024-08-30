@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Jar
 {
-    #region JarFile definition
+    #region JarFile declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Jar
     }
     #endregion
 
-    #region JarFile
+    #region JarFile implementation
     public partial class JarFile
     {
         #region Constructors

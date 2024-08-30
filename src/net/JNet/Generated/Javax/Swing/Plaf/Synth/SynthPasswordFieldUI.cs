@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Synth
 {
-    #region SynthPasswordFieldUI definition
+    #region SynthPasswordFieldUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPasswordFieldUI.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf.Synth
     }
     #endregion
 
-    #region SynthPasswordFieldUI
+    #region SynthPasswordFieldUI implementation
     public partial class SynthPasswordFieldUI
     {
         #region Constructors

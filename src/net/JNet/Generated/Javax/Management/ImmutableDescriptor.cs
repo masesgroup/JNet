@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region ImmutableDescriptor definition
+    #region ImmutableDescriptor declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region ImmutableDescriptor
+    #region ImmutableDescriptor implementation
     public partial class ImmutableDescriptor
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region AbstractListModel definition
+    #region AbstractListModel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region AbstractListModel<E> definition
+    #region AbstractListModel<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region AbstractListModel
+    #region AbstractListModel implementation
     public partial class AbstractListModel
     {
         #region Constructors
@@ -191,7 +191,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region AbstractListModel<E>
+    #region AbstractListModel<E> implementation
     public partial class AbstractListModel<E>
     {
         #region Constructors

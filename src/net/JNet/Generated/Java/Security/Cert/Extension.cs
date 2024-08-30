@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Cert
 {
-    #region Extension definition
+    #region Extension declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Extension.html"/>
     /// </summary>
@@ -109,7 +109,7 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region Extension
+    #region Extension implementation
     public partial class Extension : Java.Security.Cert.IExtension
     {
         #region Constructors

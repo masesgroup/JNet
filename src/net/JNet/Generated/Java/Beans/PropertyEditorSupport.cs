@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans
 {
-    #region PropertyEditorSupport definition
+    #region PropertyEditorSupport declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorSupport.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Beans
     }
     #endregion
 
-    #region PropertyEditorSupport
+    #region PropertyEditorSupport implementation
     public partial class PropertyEditorSupport
     {
         #region Constructors

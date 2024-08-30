@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels.Spi
 {
-    #region AbstractSelector definition
+    #region AbstractSelector declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/AbstractSelector.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Nio.Channels.Spi
     }
     #endregion
 
-    #region AbstractSelector
+    #region AbstractSelector implementation
     public partial class AbstractSelector
     {
         #region Constructors

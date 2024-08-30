@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Midi
 {
-    #region SysexMessage definition
+    #region SysexMessage declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/SysexMessage.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Sound.Midi
     }
     #endregion
 
-    #region SysexMessage
+    #region SysexMessage implementation
     public partial class SysexMessage
     {
         #region Constructors

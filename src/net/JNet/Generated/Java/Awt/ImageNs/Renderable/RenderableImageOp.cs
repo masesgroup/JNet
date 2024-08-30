@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ImageNs.Renderable
 {
-    #region RenderableImageOp definition
+    #region RenderableImageOp declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageOp.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.ImageNs.Renderable
     }
     #endregion
 
-    #region RenderableImageOp
+    #region RenderableImageOp implementation
     public partial class RenderableImageOp
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent.Locks
 {
-    #region AbstractOwnableSynchronizer definition
+    #region AbstractOwnableSynchronizer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractOwnableSynchronizer.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util.Concurrent.Locks
     }
     #endregion
 
-    #region AbstractOwnableSynchronizer
+    #region AbstractOwnableSynchronizer implementation
     public partial class AbstractOwnableSynchronizer
     {
         #region Constructors

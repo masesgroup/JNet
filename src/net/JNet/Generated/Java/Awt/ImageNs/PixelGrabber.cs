@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ImageNs
 {
-    #region PixelGrabber definition
+    #region PixelGrabber declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.ImageNs
     }
     #endregion
 
-    #region PixelGrabber
+    #region PixelGrabber implementation
     public partial class PixelGrabber
     {
         #region Constructors

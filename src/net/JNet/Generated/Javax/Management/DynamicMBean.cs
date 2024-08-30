@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region DynamicMBean definition
+    #region DynamicMBean declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/DynamicMBean.html"/>
     /// </summary>
@@ -134,7 +134,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region DynamicMBean
+    #region DynamicMBean implementation
     public partial class DynamicMBean : Javax.Management.IDynamicMBean
     {
         #region Constructors

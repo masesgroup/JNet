@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Spi
 {
-    #region InitialContextFactory definition
+    #region InitialContextFactory declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/InitialContextFactory.html"/>
     /// </summary>
@@ -97,7 +97,7 @@ namespace Javax.Naming.Spi
     }
     #endregion
 
-    #region InitialContextFactory
+    #region InitialContextFactory implementation
     public partial class InitialContextFactory : Javax.Naming.Spi.IInitialContextFactory
     {
         #region Constructors

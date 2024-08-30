@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Crypto
 {
-    #region CipherSpi definition
+    #region CipherSpi declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/CipherSpi.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Crypto
     }
     #endregion
 
-    #region CipherSpi
+    #region CipherSpi implementation
     public partial class CipherSpi
     {
         #region Constructors

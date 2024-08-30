@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Util
 {
-    #region Elements definition
+    #region Elements declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Lang.Model.Util
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Origin definition
+        #region Origin declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html"/>
         /// </summary>
@@ -302,7 +302,7 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region Elements
+    #region Elements implementation
     public partial class Elements : Javax.Lang.Model.Util.IElements
     {
         #region Constructors
@@ -571,7 +571,7 @@ namespace Javax.Lang.Model.Util
         #endregion
 
         #region Nested classes
-        #region Origin
+        #region Origin implementation
         public partial class Origin
         {
             #region Constructors

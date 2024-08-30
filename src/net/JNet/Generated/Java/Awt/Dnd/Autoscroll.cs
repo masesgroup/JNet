@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Dnd
 {
-    #region Autoscroll definition
+    #region Autoscroll declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/Autoscroll.html"/>
     /// </summary>
@@ -99,7 +99,7 @@ namespace Java.Awt.Dnd
     }
     #endregion
 
-    #region Autoscroll
+    #region Autoscroll implementation
     public partial class Autoscroll : Java.Awt.Dnd.IAutoscroll
     {
         #region Constructors

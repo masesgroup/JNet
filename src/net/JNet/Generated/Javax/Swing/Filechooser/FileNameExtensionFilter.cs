@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Filechooser
 {
-    #region FileNameExtensionFilter definition
+    #region FileNameExtensionFilter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileNameExtensionFilter.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Filechooser
     }
     #endregion
 
-    #region FileNameExtensionFilter
+    #region FileNameExtensionFilter implementation
     public partial class FileNameExtensionFilter
     {
         #region Constructors

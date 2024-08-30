@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Cert
 {
-    #region CRLReason definition
+    #region CRLReason declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region CRLReason
+    #region CRLReason implementation
     public partial class CRLReason
     {
         #region Constructors

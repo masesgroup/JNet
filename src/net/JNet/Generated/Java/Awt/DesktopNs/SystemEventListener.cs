@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.DesktopNs
 {
-    #region SystemEventListener definition
+    #region SystemEventListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/SystemEventListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Awt.DesktopNs
     }
     #endregion
 
-    #region SystemEventListenerDirect definition
+    #region SystemEventListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="SystemEventListener"/> or its generic type if there is one
     /// </summary>
@@ -110,7 +110,7 @@ namespace Java.Awt.DesktopNs
     }
     #endregion
 
-    #region SystemEventListener
+    #region SystemEventListener implementation
     public partial class SystemEventListener : Java.Awt.DesktopNs.ISystemEventListener
     {
         #region Constructors
@@ -148,7 +148,7 @@ namespace Java.Awt.DesktopNs
     }
     #endregion
 
-    #region SystemEventListenerDirect
+    #region SystemEventListenerDirect implementation
     public partial class SystemEventListenerDirect : Java.Awt.DesktopNs.ISystemEventListener
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Text
 {
-    #region Collator definition
+    #region Collator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Text
     }
     #endregion
 
-    #region Collator
+    #region Collator implementation
     public partial class Collator
     {
         #region Constructors

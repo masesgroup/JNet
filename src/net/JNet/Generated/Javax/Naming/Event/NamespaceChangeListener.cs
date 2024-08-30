@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Event
 {
-    #region NamespaceChangeListener definition
+    #region NamespaceChangeListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Naming.Event
     }
     #endregion
 
-    #region NamespaceChangeListenerDirect definition
+    #region NamespaceChangeListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="NamespaceChangeListener"/> or its generic type if there is one
     /// </summary>
@@ -130,7 +130,7 @@ namespace Javax.Naming.Event
     }
     #endregion
 
-    #region NamespaceChangeListener
+    #region NamespaceChangeListener implementation
     public partial class NamespaceChangeListener : Javax.Naming.Event.INamespaceChangeListener
     {
         #region Constructors
@@ -256,7 +256,7 @@ namespace Javax.Naming.Event
     }
     #endregion
 
-    #region NamespaceChangeListenerDirect
+    #region NamespaceChangeListenerDirect implementation
     public partial class NamespaceChangeListenerDirect : Javax.Naming.Event.INamespaceChangeListener
     {
         #region Constructors

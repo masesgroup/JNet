@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region AlphaComposite definition
+    #region AlphaComposite declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region AlphaComposite
+    #region AlphaComposite implementation
     public partial class AlphaComposite
     {
         #region Constructors

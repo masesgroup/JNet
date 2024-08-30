@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Spec
 {
-    #region MGF1ParameterSpec definition
+    #region MGF1ParameterSpec declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Security.Spec
     }
     #endregion
 
-    #region MGF1ParameterSpec
+    #region MGF1ParameterSpec implementation
     public partial class MGF1ParameterSpec
     {
         #region Constructors

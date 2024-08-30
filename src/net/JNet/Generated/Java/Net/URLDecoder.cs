@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
-    #region URLDecoder definition
+    #region URLDecoder declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLDecoder.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Net
     }
     #endregion
 
-    #region URLDecoder
+    #region URLDecoder implementation
     public partial class URLDecoder
     {
         #region Constructors

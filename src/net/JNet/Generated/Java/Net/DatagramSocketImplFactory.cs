@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
-    #region DatagramSocketImplFactory definition
+    #region DatagramSocketImplFactory declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocketImplFactory.html"/>
     /// </summary>
@@ -95,7 +95,7 @@ namespace Java.Net
     }
     #endregion
 
-    #region DatagramSocketImplFactory
+    #region DatagramSocketImplFactory implementation
     public partial class DatagramSocketImplFactory : Java.Net.IDatagramSocketImplFactory
     {
         #region Constructors

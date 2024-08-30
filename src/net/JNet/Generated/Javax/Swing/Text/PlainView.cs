@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region PlainView definition
+    #region PlainView declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/PlainView.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region PlainView
+    #region PlainView implementation
     public partial class PlainView
     {
         #region Constructors

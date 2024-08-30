@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region JFormattedTextField definition
+    #region JFormattedTextField declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region AbstractFormatter definition
+        #region AbstractFormatter declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatter.html"/>
         /// </summary>
@@ -113,7 +113,7 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region AbstractFormatterFactory definition
+        #region AbstractFormatterFactory declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatterFactory.html"/>
         /// </summary>
@@ -164,7 +164,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region JFormattedTextField
+    #region JFormattedTextField implementation
     public partial class JFormattedTextField
     {
         #region Constructors
@@ -297,7 +297,7 @@ namespace Javax.Swing
         #endregion
 
         #region Nested classes
-        #region AbstractFormatter
+        #region AbstractFormatter implementation
         public partial class AbstractFormatter
         {
             #region Constructors
@@ -363,7 +363,7 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region AbstractFormatterFactory
+        #region AbstractFormatterFactory implementation
         public partial class AbstractFormatterFactory
         {
             #region Constructors

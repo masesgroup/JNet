@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region DefaultRowSorter definition
+    #region DefaultRowSorter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultRowSorter.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region DefaultRowSorter<M, I> definition
+    #region DefaultRowSorter<M, I> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultRowSorter.html"/>
     /// </summary>
@@ -121,7 +121,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region DefaultRowSorter
+    #region DefaultRowSorter implementation
     public partial class DefaultRowSorter
     {
         #region Constructors
@@ -216,7 +216,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region DefaultRowSorter<M, I>
+    #region DefaultRowSorter<M, I> implementation
     public partial class DefaultRowSorter<M, I>
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region OperationsException definition
+    #region OperationsException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/OperationsException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region OperationsException
+    #region OperationsException implementation
     public partial class OperationsException
     {
         #region Constructors

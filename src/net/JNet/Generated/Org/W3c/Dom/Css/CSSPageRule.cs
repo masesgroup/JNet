@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Css
 {
-    #region CSSPageRule definition
+    #region CSSPageRule declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPageRule.html"/>
     /// </summary>
@@ -98,7 +98,7 @@ namespace Org.W3c.Dom.Css
     }
     #endregion
 
-    #region CSSPageRule
+    #region CSSPageRule implementation
     public partial class CSSPageRule : Org.W3c.Dom.Css.ICSSPageRule
     {
         #region Constructors

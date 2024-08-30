@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans
 {
-    #region EventSetDescriptor definition
+    #region EventSetDescriptor declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Beans
     }
     #endregion
 
-    #region EventSetDescriptor
+    #region EventSetDescriptor implementation
     public partial class EventSetDescriptor
     {
         #region Constructors

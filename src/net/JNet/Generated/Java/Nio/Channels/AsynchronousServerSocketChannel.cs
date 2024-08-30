@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
-    #region AsynchronousServerSocketChannel definition
+    #region AsynchronousServerSocketChannel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousServerSocketChannel.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region AsynchronousServerSocketChannel
+    #region AsynchronousServerSocketChannel implementation
     public partial class AsynchronousServerSocketChannel
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Tools
 {
-    #region JavaFileObject definition
+    #region JavaFileObject declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Tools
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Kind definition
+        #region Kind declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html"/>
         /// </summary>
@@ -154,7 +154,7 @@ namespace Javax.Tools
     }
     #endregion
 
-    #region JavaFileObject
+    #region JavaFileObject implementation
     public partial class JavaFileObject : Javax.Tools.IJavaFileObject
     {
         #region Constructors
@@ -209,7 +209,7 @@ namespace Javax.Tools
         #endregion
 
         #region Nested classes
-        #region Kind
+        #region Kind implementation
         public partial class Kind
         {
             #region Constructors

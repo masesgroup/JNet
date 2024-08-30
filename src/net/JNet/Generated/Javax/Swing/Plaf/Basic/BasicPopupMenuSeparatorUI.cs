@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Basic
 {
-    #region BasicPopupMenuSeparatorUI definition
+    #region BasicPopupMenuSeparatorUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicPopupMenuSeparatorUI.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf.Basic
     }
     #endregion
 
-    #region BasicPopupMenuSeparatorUI
+    #region BasicPopupMenuSeparatorUI implementation
     public partial class BasicPopupMenuSeparatorUI
     {
         #region Constructors

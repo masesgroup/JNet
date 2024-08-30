@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Openmbean
 {
-    #region ArrayType definition
+    #region ArrayType declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/ArrayType.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Management.Openmbean
     }
     #endregion
 
-    #region ArrayType<T> definition
+    #region ArrayType<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/ArrayType.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Javax.Management.Openmbean
     }
     #endregion
 
-    #region ArrayType
+    #region ArrayType implementation
     public partial class ArrayType
     {
         #region Constructors
@@ -208,7 +208,7 @@ namespace Javax.Management.Openmbean
     }
     #endregion
 
-    #region ArrayType<T>
+    #region ArrayType<T> implementation
     public partial class ArrayType<T>
     {
         #region Constructors

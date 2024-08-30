@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql.Rowset
 {
-    #region Predicate definition
+    #region Predicate declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/Predicate.html"/>
     /// </summary>
@@ -112,7 +112,7 @@ namespace Javax.Sql.Rowset
     }
     #endregion
 
-    #region Predicate
+    #region Predicate implementation
     public partial class Predicate : Javax.Sql.Rowset.IPredicate
     {
         #region Constructors

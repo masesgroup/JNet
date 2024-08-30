@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf
 {
-    #region ProgressBarUI definition
+    #region ProgressBarUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ProgressBarUI.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Swing.Plaf
     }
     #endregion
 
-    #region ProgressBarUI
+    #region ProgressBarUI implementation
     public partial class ProgressBarUI
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Cert
 {
-    #region X509CRLEntry definition
+    #region X509CRLEntry declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLEntry.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region X509CRLEntry
+    #region X509CRLEntry implementation
     public partial class X509CRLEntry
     {
         #region Constructors

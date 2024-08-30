@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region RejectedExecutionException definition
+    #region RejectedExecutionException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RejectedExecutionException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region RejectedExecutionException
+    #region RejectedExecutionException implementation
     public partial class RejectedExecutionException
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region PrintJob definition
+    #region PrintJob declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PrintJob.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region PrintJob
+    #region PrintJob implementation
     public partial class PrintJob
     {
         #region Constructors

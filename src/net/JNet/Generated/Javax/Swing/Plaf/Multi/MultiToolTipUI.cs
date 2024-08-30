@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Multi
 {
-    #region MultiToolTipUI definition
+    #region MultiToolTipUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/multi/MultiToolTipUI.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf.Multi
     }
     #endregion
 
-    #region MultiToolTipUI
+    #region MultiToolTipUI implementation
     public partial class MultiToolTipUI
     {
         #region Constructors

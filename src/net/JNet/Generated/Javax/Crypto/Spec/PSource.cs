@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Crypto.Spec
 {
-    #region PSource definition
+    #region PSource declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PSource.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Crypto.Spec
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region PSpecified definition
+        #region PSpecified declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PSource.PSpecified.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Crypto.Spec
     }
     #endregion
 
-    #region PSource
+    #region PSource implementation
     public partial class PSource
     {
         #region Constructors
@@ -146,7 +146,7 @@ namespace Javax.Crypto.Spec
         #endregion
 
         #region Nested classes
-        #region PSpecified
+        #region PSpecified implementation
         public partial class PSpecified
         {
             #region Constructors

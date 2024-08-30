@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans.Beancontext
 {
-    #region BeanContextServicesListener definition
+    #region BeanContextServicesListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Beans.Beancontext
     }
     #endregion
 
-    #region BeanContextServicesListenerDirect definition
+    #region BeanContextServicesListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="BeanContextServicesListener"/> or its generic type if there is one
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Beans.Beancontext
     }
     #endregion
 
-    #region BeanContextServicesListener
+    #region BeanContextServicesListener implementation
     public partial class BeanContextServicesListener : Java.Beans.Beancontext.IBeanContextServicesListener
     {
         #region Constructors
@@ -202,7 +202,7 @@ namespace Java.Beans.Beancontext
     }
     #endregion
 
-    #region BeanContextServicesListenerDirect
+    #region BeanContextServicesListenerDirect implementation
     public partial class BeanContextServicesListenerDirect : Java.Beans.Beancontext.IBeanContextServicesListener
     {
         #region Constructors

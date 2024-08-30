@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
-    #region CellEditorListener definition
+    #region CellEditorListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CellEditorListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region CellEditorListenerDirect definition
+    #region CellEditorListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="CellEditorListener"/> or its generic type if there is one
     /// </summary>
@@ -120,7 +120,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region CellEditorListener
+    #region CellEditorListener implementation
     public partial class CellEditorListener : Javax.Swing.Event.ICellEditorListener
     {
         #region Constructors
@@ -202,7 +202,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region CellEditorListenerDirect
+    #region CellEditorListenerDirect implementation
     public partial class CellEditorListenerDirect : Javax.Swing.Event.ICellEditorListener
     {
         #region Constructors

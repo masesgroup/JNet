@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Remote
 {
-    #region JMXServerErrorException definition
+    #region JMXServerErrorException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXServerErrorException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Management.Remote
     }
     #endregion
 
-    #region JMXServerErrorException
+    #region JMXServerErrorException implementation
     public partial class JMXServerErrorException
     {
         #region Constructors

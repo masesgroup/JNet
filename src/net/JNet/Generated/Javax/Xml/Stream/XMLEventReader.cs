@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream
 {
-    #region XMLEventReader definition
+    #region XMLEventReader declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html"/>
     /// </summary>
@@ -129,7 +129,7 @@ namespace Javax.Xml.Stream
     }
     #endregion
 
-    #region XMLEventReader
+    #region XMLEventReader implementation
     public partial class XMLEventReader : Javax.Xml.Stream.IXMLEventReader
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Crypto
 {
-    #region MacSpi definition
+    #region MacSpi declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/MacSpi.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Crypto
     }
     #endregion
 
-    #region MacSpi
+    #region MacSpi implementation
     public partial class MacSpi
     {
         #region Constructors

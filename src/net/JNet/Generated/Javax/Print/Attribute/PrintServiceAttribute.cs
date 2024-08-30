@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Attribute
 {
-    #region PrintServiceAttribute definition
+    #region PrintServiceAttribute declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/PrintServiceAttribute.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Javax.Print.Attribute
     }
     #endregion
 
-    #region PrintServiceAttribute
+    #region PrintServiceAttribute implementation
     public partial class PrintServiceAttribute : Javax.Print.Attribute.IPrintServiceAttribute
     {
         #region Constructors

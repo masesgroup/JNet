@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.Xml.Sax
 {
-    #region SAXParseException definition
+    #region SAXParseException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/SAXParseException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Org.Xml.Sax
     }
     #endregion
 
-    #region SAXParseException
+    #region SAXParseException implementation
     public partial class SAXParseException
     {
         #region Constructors

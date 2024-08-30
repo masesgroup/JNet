@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
-    #region ProtocolFamily definition
+    #region ProtocolFamily declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ProtocolFamily.html"/>
     /// </summary>
@@ -95,7 +95,7 @@ namespace Java.Net
     }
     #endregion
 
-    #region ProtocolFamily
+    #region ProtocolFamily implementation
     public partial class ProtocolFamily : Java.Net.IProtocolFamily
     {
         #region Constructors

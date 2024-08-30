@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region ObjDoubleConsumer definition
+    #region ObjDoubleConsumer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjDoubleConsumer.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjDoubleConsumerDirect definition
+    #region ObjDoubleConsumerDirect declaration
     /// <summary>
     /// Direct override of <see cref="ObjDoubleConsumer"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjDoubleConsumer<T> definition
+    #region ObjDoubleConsumer<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjDoubleConsumer.html"/>
     /// </summary>
@@ -119,7 +119,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjDoubleConsumerDirect<T> definition
+    #region ObjDoubleConsumerDirect<T> declaration
     /// <summary>
     /// Direct override of <see cref="ObjDoubleConsumer"/> or its generic type if there is one
     /// </summary>
@@ -160,7 +160,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjDoubleConsumer
+    #region ObjDoubleConsumer implementation
     public partial class ObjDoubleConsumer
     {
         #region Constructors
@@ -221,7 +221,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjDoubleConsumerDirect
+    #region ObjDoubleConsumerDirect implementation
     public partial class ObjDoubleConsumerDirect
     {
         #region Constructors
@@ -285,7 +285,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjDoubleConsumer<T>
+    #region ObjDoubleConsumer<T> implementation
     public partial class ObjDoubleConsumer<T> : Java.Util.Function.IObjDoubleConsumer<T>
     {
         #region Constructors
@@ -346,7 +346,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjDoubleConsumerDirect<T>
+    #region ObjDoubleConsumerDirect<T> implementation
     public partial class ObjDoubleConsumerDirect<T> : Java.Util.Function.IObjDoubleConsumer<T>
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Net.Ssl
 {
-    #region HandshakeCompletedListener definition
+    #region HandshakeCompletedListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region HandshakeCompletedListenerDirect definition
+    #region HandshakeCompletedListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="HandshakeCompletedListener"/> or its generic type if there is one
     /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region HandshakeCompletedListener
+    #region HandshakeCompletedListener implementation
     public partial class HandshakeCompletedListener : Javax.Net.Ssl.IHandshakeCompletedListener
     {
         #region Constructors
@@ -175,7 +175,7 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region HandshakeCompletedListenerDirect
+    #region HandshakeCompletedListenerDirect implementation
     public partial class HandshakeCompletedListenerDirect : Javax.Net.Ssl.IHandshakeCompletedListener
     {
         #region Constructors

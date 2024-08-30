@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File
 {
-    #region DirectoryNotEmptyException definition
+    #region DirectoryNotEmptyException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryNotEmptyException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region DirectoryNotEmptyException
+    #region DirectoryNotEmptyException implementation
     public partial class DirectoryNotEmptyException
     {
         #region Constructors

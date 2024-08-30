@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Basic
 {
-    #region BasicTreeUI definition
+    #region BasicTreeUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Plaf.Basic
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region CellEditorHandler definition
+        #region CellEditorHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.CellEditorHandler.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region FocusHandler definition
+        #region FocusHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.FocusHandler.html"/>
         /// </summary>
@@ -156,7 +156,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region MouseInputHandler definition
+        #region MouseInputHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.MouseInputHandler.html"/>
         /// </summary>
@@ -201,7 +201,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region NodeDimensionsHandler definition
+        #region NodeDimensionsHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.NodeDimensionsHandler.html"/>
         /// </summary>
@@ -246,7 +246,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region PropertyChangeHandler definition
+        #region PropertyChangeHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.PropertyChangeHandler.html"/>
         /// </summary>
@@ -291,7 +291,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region SelectionModelPropertyChangeHandler definition
+        #region SelectionModelPropertyChangeHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.SelectionModelPropertyChangeHandler.html"/>
         /// </summary>
@@ -336,7 +336,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region TreeCancelEditingAction definition
+        #region TreeCancelEditingAction declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.TreeCancelEditingAction.html"/>
         /// </summary>
@@ -381,7 +381,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region TreeExpansionHandler definition
+        #region TreeExpansionHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.TreeExpansionHandler.html"/>
         /// </summary>
@@ -426,7 +426,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region TreeHomeAction definition
+        #region TreeHomeAction declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.TreeHomeAction.html"/>
         /// </summary>
@@ -471,7 +471,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region TreeIncrementAction definition
+        #region TreeIncrementAction declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.TreeIncrementAction.html"/>
         /// </summary>
@@ -516,7 +516,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region TreeModelHandler definition
+        #region TreeModelHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.TreeModelHandler.html"/>
         /// </summary>
@@ -561,7 +561,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region TreePageAction definition
+        #region TreePageAction declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.TreePageAction.html"/>
         /// </summary>
@@ -606,7 +606,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region TreeSelectionHandler definition
+        #region TreeSelectionHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.TreeSelectionHandler.html"/>
         /// </summary>
@@ -651,7 +651,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region TreeToggleAction definition
+        #region TreeToggleAction declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.TreeToggleAction.html"/>
         /// </summary>
@@ -696,7 +696,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region TreeTraverseAction definition
+        #region TreeTraverseAction declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.TreeTraverseAction.html"/>
         /// </summary>
@@ -745,7 +745,7 @@ namespace Javax.Swing.Plaf.Basic
     }
     #endregion
 
-    #region BasicTreeUI
+    #region BasicTreeUI implementation
     public partial class BasicTreeUI
     {
         #region Constructors
@@ -814,7 +814,7 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Nested classes
-        #region CellEditorHandler
+        #region CellEditorHandler implementation
         public partial class CellEditorHandler
         {
             #region Constructors
@@ -873,7 +873,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region FocusHandler
+        #region FocusHandler implementation
         public partial class FocusHandler
         {
             #region Constructors
@@ -932,7 +932,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region MouseInputHandler
+        #region MouseInputHandler implementation
         public partial class MouseInputHandler
         {
             #region Constructors
@@ -1034,7 +1034,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region NodeDimensionsHandler
+        #region NodeDimensionsHandler implementation
         public partial class NodeDimensionsHandler
         {
             #region Constructors
@@ -1073,7 +1073,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region PropertyChangeHandler
+        #region PropertyChangeHandler implementation
         public partial class PropertyChangeHandler
         {
             #region Constructors
@@ -1124,7 +1124,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region SelectionModelPropertyChangeHandler
+        #region SelectionModelPropertyChangeHandler implementation
         public partial class SelectionModelPropertyChangeHandler
         {
             #region Constructors
@@ -1175,7 +1175,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region TreeCancelEditingAction
+        #region TreeCancelEditingAction implementation
         public partial class TreeCancelEditingAction
         {
             #region Constructors
@@ -1215,7 +1215,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region TreeExpansionHandler
+        #region TreeExpansionHandler implementation
         public partial class TreeExpansionHandler
         {
             #region Constructors
@@ -1274,7 +1274,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region TreeHomeAction
+        #region TreeHomeAction implementation
         public partial class TreeHomeAction
         {
             #region Constructors
@@ -1315,7 +1315,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region TreeIncrementAction
+        #region TreeIncrementAction implementation
         public partial class TreeIncrementAction
         {
             #region Constructors
@@ -1356,7 +1356,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region TreeModelHandler
+        #region TreeModelHandler implementation
         public partial class TreeModelHandler
         {
             #region Constructors
@@ -1431,7 +1431,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region TreePageAction
+        #region TreePageAction implementation
         public partial class TreePageAction
         {
             #region Constructors
@@ -1472,7 +1472,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region TreeSelectionHandler
+        #region TreeSelectionHandler implementation
         public partial class TreeSelectionHandler
         {
             #region Constructors
@@ -1523,7 +1523,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region TreeToggleAction
+        #region TreeToggleAction implementation
         public partial class TreeToggleAction
         {
             #region Constructors
@@ -1563,7 +1563,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region TreeTraverseAction
+        #region TreeTraverseAction implementation
         public partial class TreeTraverseAction
         {
             #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
-    #region InputStream definition
+    #region InputStream declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Io
     }
     #endregion
 
-    #region InputStream
+    #region InputStream implementation
     public partial class InputStream
     {
         #region Constructors

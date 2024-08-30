@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region GuardedObject definition
+    #region GuardedObject declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/GuardedObject.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region GuardedObject
+    #region GuardedObject implementation
     public partial class GuardedObject
     {
         #region Constructors

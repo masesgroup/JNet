@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Util
 {
-    #region ElementScanner6 definition
+    #region ElementScanner6 declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region ElementScanner6<R, P> definition
+    #region ElementScanner6<R, P> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html"/>
     /// </summary>
@@ -117,7 +117,7 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region ElementScanner6
+    #region ElementScanner6 implementation
     public partial class ElementScanner6
     {
         #region Constructors
@@ -177,7 +177,7 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region ElementScanner6<R, P>
+    #region ElementScanner6<R, P> implementation
     public partial class ElementScanner6<R, P>
     {
         #region Constructors

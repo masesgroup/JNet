@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi.Activation
 {
-    #region ActivationInstantiator definition
+    #region ActivationInstantiator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationInstantiator.html"/>
     /// </summary>
@@ -100,7 +100,7 @@ namespace Java.Rmi.Activation
     }
     #endregion
 
-    #region ActivationInstantiator
+    #region ActivationInstantiator implementation
     public partial class ActivationInstantiator : Java.Rmi.Activation.IActivationInstantiator
     {
         #region Constructors

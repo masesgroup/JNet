@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
-    #region SyncFailedException definition
+    #region SyncFailedException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/SyncFailedException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Io
     }
     #endregion
 
-    #region SyncFailedException
+    #region SyncFailedException implementation
     public partial class SyncFailedException
     {
         #region Constructors

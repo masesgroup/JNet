@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region UnresolvedPermission definition
+    #region UnresolvedPermission declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/UnresolvedPermission.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region UnresolvedPermission
+    #region UnresolvedPermission implementation
     public partial class UnresolvedPermission
     {
         #region Constructors

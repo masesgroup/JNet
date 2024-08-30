@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region ThreadPoolExecutor definition
+    #region ThreadPoolExecutor declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Util.Concurrent
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region AbortPolicy definition
+        #region AbortPolicy declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.AbortPolicy.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
-        #region CallerRunsPolicy definition
+        #region CallerRunsPolicy declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.CallerRunsPolicy.html"/>
         /// </summary>
@@ -156,7 +156,7 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
-        #region DiscardOldestPolicy definition
+        #region DiscardOldestPolicy declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.DiscardOldestPolicy.html"/>
         /// </summary>
@@ -201,7 +201,7 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
-        #region DiscardPolicy definition
+        #region DiscardPolicy declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.DiscardPolicy.html"/>
         /// </summary>
@@ -250,7 +250,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ThreadPoolExecutor
+    #region ThreadPoolExecutor implementation
     public partial class ThreadPoolExecutor
     {
         #region Constructors
@@ -470,7 +470,7 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Nested classes
-        #region AbortPolicy
+        #region AbortPolicy implementation
         public partial class AbortPolicy
         {
             #region Constructors
@@ -510,7 +510,7 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
-        #region CallerRunsPolicy
+        #region CallerRunsPolicy implementation
         public partial class CallerRunsPolicy
         {
             #region Constructors
@@ -550,7 +550,7 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
-        #region DiscardOldestPolicy
+        #region DiscardOldestPolicy implementation
         public partial class DiscardOldestPolicy
         {
             #region Constructors
@@ -590,7 +590,7 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
-        #region DiscardPolicy
+        #region DiscardPolicy implementation
         public partial class DiscardPolicy
         {
             #region Constructors

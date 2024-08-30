@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Ls
 {
-    #region LSSerializer definition
+    #region LSSerializer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSSerializer.html"/>
     /// </summary>
@@ -126,7 +126,7 @@ namespace Org.W3c.Dom.Ls
     }
     #endregion
 
-    #region LSSerializer
+    #region LSSerializer implementation
     public partial class LSSerializer : Org.W3c.Dom.Ls.ILSSerializer
     {
         #region Constructors

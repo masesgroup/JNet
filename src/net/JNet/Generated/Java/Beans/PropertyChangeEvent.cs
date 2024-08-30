@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans
 {
-    #region PropertyChangeEvent definition
+    #region PropertyChangeEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeEvent.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Beans
     }
     #endregion
 
-    #region PropertyChangeEvent
+    #region PropertyChangeEvent implementation
     public partial class PropertyChangeEvent
     {
         #region Constructors

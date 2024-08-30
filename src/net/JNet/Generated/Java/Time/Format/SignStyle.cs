@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time.Format
 {
-    #region SignStyle definition
+    #region SignStyle declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/SignStyle.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Time.Format
     }
     #endregion
 
-    #region SignStyle
+    #region SignStyle implementation
     public partial class SignStyle
     {
         #region Constructors

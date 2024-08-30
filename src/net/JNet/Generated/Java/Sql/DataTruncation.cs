@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region DataTruncation definition
+    #region DataTruncation declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DataTruncation.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region DataTruncation
+    #region DataTruncation implementation
     public partial class DataTruncation
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region RowIdLifetime definition
+    #region RowIdLifetime declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/RowIdLifetime.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region RowIdLifetime
+    #region RowIdLifetime implementation
     public partial class RowIdLifetime
     {
         #region Constructors

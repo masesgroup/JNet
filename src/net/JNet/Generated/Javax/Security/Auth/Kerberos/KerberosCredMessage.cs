@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Security.Auth.Kerberos
 {
-    #region KerberosCredMessage definition
+    #region KerberosCredMessage declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosCredMessage.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Security.Auth.Kerberos
     }
     #endregion
 
-    #region KerberosCredMessage
+    #region KerberosCredMessage implementation
     public partial class KerberosCredMessage
     {
         #region Constructors

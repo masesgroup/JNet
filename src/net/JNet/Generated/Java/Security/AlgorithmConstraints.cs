@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region AlgorithmConstraints definition
+    #region AlgorithmConstraints declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmConstraints.html"/>
     /// </summary>
@@ -114,7 +114,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region AlgorithmConstraints
+    #region AlgorithmConstraints implementation
     public partial class AlgorithmConstraints : Java.Security.IAlgorithmConstraints
     {
         #region Constructors

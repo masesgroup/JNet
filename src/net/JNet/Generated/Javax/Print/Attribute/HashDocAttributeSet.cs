@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Attribute
 {
-    #region HashDocAttributeSet definition
+    #region HashDocAttributeSet declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashDocAttributeSet.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Print.Attribute
     }
     #endregion
 
-    #region HashDocAttributeSet
+    #region HashDocAttributeSet implementation
     public partial class HashDocAttributeSet
     {
         #region Constructors

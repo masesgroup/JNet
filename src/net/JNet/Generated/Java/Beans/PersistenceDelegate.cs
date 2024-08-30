@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans
 {
-    #region PersistenceDelegate definition
+    #region PersistenceDelegate declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PersistenceDelegate.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Beans
     }
     #endregion
 
-    #region PersistenceDelegate
+    #region PersistenceDelegate implementation
     public partial class PersistenceDelegate
     {
         #region Constructors

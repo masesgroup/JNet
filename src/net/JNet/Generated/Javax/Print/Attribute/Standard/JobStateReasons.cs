@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Attribute.Standard
 {
-    #region JobStateReasons definition
+    #region JobStateReasons declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReasons.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Print.Attribute.Standard
     }
     #endregion
 
-    #region JobStateReasons
+    #region JobStateReasons implementation
     public partial class JobStateReasons
     {
         #region Constructors

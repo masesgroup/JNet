@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region BadBinaryOpValueExpException definition
+    #region BadBinaryOpValueExpException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/BadBinaryOpValueExpException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region BadBinaryOpValueExpException
+    #region BadBinaryOpValueExpException implementation
     public partial class BadBinaryOpValueExpException
     {
         #region Constructors

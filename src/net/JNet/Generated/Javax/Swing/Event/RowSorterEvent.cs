@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
-    #region RowSorterEvent definition
+    #region RowSorterEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Event
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Type definition
+        #region Type declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.Type.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region RowSorterEvent
+    #region RowSorterEvent implementation
     public partial class RowSorterEvent
     {
         #region Constructors
@@ -180,7 +180,7 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Nested classes
-        #region Type
+        #region Type implementation
         public partial class Type
         {
             #region Constructors

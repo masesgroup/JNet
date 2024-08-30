@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Element
 {
-    #region UnknownAnnotationValueException definition
+    #region UnknownAnnotationValueException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/UnknownAnnotationValueException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Lang.Model.Element
     }
     #endregion
 
-    #region UnknownAnnotationValueException
+    #region UnknownAnnotationValueException implementation
     public partial class UnknownAnnotationValueException
     {
         #region Constructors

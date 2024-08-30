@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Undo
 {
-    #region CompoundEdit definition
+    #region CompoundEdit declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/CompoundEdit.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Undo
     }
     #endregion
 
-    #region CompoundEdit
+    #region CompoundEdit implementation
     public partial class CompoundEdit
     {
         #region Constructors

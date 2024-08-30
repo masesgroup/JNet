@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
-    #region AnnotatedParameterizedType definition
+    #region AnnotatedParameterizedType declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedParameterizedType.html"/>
     /// </summary>
@@ -98,7 +98,7 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region AnnotatedParameterizedType
+    #region AnnotatedParameterizedType implementation
     public partial class AnnotatedParameterizedType : Java.Lang.Reflect.IAnnotatedParameterizedType
     {
         #region Constructors

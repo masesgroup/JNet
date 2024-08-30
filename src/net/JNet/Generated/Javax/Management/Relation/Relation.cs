@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Relation
 {
-    #region Relation definition
+    #region Relation declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html"/>
     /// </summary>
@@ -173,7 +173,7 @@ namespace Javax.Management.Relation
     }
     #endregion
 
-    #region Relation
+    #region Relation implementation
     public partial class Relation : Javax.Management.Relation.IRelation
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region ElementIterator definition
+    #region ElementIterator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ElementIterator.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region ElementIterator
+    #region ElementIterator implementation
     public partial class ElementIterator
     {
         #region Constructors

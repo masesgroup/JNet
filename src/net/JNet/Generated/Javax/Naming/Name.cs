@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming
 {
-    #region Name definition
+    #region Name declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Name.html"/>
     /// </summary>
@@ -177,7 +177,7 @@ namespace Javax.Naming
     }
     #endregion
 
-    #region Name
+    #region Name implementation
     public partial class Name : Javax.Naming.IName
     {
         #region Constructors

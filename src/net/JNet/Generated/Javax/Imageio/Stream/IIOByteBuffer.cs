@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio.Stream
 {
-    #region IIOByteBuffer definition
+    #region IIOByteBuffer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/IIOByteBuffer.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Imageio.Stream
     }
     #endregion
 
-    #region IIOByteBuffer
+    #region IIOByteBuffer implementation
     public partial class IIOByteBuffer
     {
         #region Constructors

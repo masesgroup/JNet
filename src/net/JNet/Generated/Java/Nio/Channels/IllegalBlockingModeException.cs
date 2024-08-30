@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
-    #region IllegalBlockingModeException definition
+    #region IllegalBlockingModeException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/IllegalBlockingModeException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region IllegalBlockingModeException
+    #region IllegalBlockingModeException implementation
     public partial class IllegalBlockingModeException
     {
         #region Constructors

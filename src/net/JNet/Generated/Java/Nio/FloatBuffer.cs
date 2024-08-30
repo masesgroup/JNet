@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio
 {
-    #region FloatBuffer definition
+    #region FloatBuffer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Nio
     }
     #endregion
 
-    #region FloatBuffer
+    #region FloatBuffer implementation
     public partial class FloatBuffer
     {
         #region Constructors

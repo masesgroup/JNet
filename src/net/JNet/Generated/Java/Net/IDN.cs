@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
-    #region IDN definition
+    #region IDN declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/IDN.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Net
     }
     #endregion
 
-    #region IDN
+    #region IDN implementation
     public partial class IDN
     {
         #region Constructors

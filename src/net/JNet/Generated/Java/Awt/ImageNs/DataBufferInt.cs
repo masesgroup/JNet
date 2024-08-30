@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ImageNs
 {
-    #region DataBufferInt definition
+    #region DataBufferInt declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferInt.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.ImageNs
     }
     #endregion
 
-    #region DataBufferInt
+    #region DataBufferInt implementation
     public partial class DataBufferInt
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region ClassFormatError definition
+    #region ClassFormatError declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassFormatError.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region ClassFormatError
+    #region ClassFormatError implementation
     public partial class ClassFormatError
     {
         #region Constructors

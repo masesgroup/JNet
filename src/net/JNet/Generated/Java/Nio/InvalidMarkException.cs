@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio
 {
-    #region InvalidMarkException definition
+    #region InvalidMarkException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/InvalidMarkException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Nio
     }
     #endregion
 
-    #region InvalidMarkException
+    #region InvalidMarkException implementation
     public partial class InvalidMarkException
     {
         #region Constructors

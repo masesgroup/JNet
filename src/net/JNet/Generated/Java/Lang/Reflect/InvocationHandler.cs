@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
-    #region InvocationHandler definition
+    #region InvocationHandler declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/InvocationHandler.html"/>
     /// </summary>
@@ -99,7 +99,7 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region InvocationHandler
+    #region InvocationHandler implementation
     public partial class InvocationHandler : Java.Lang.Reflect.IInvocationHandler
     {
         #region Constructors

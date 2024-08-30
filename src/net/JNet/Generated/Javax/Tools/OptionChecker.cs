@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Tools
 {
-    #region OptionChecker definition
+    #region OptionChecker declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/OptionChecker.html"/>
     /// </summary>
@@ -96,7 +96,7 @@ namespace Javax.Tools
     }
     #endregion
 
-    #region OptionChecker
+    #region OptionChecker implementation
     public partial class OptionChecker : Javax.Tools.IOptionChecker
     {
         #region Constructors

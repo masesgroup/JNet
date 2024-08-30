@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.Ietf.Jgss
 {
-    #region GSSContext definition
+    #region GSSContext declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html"/>
     /// </summary>
@@ -294,7 +294,7 @@ namespace Org.Ietf.Jgss
     }
     #endregion
 
-    #region GSSContext
+    #region GSSContext implementation
     public partial class GSSContext : Org.Ietf.Jgss.IGSSContext
     {
         #region Constructors

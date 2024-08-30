@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region TrayIcon definition
+    #region TrayIcon declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Awt
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region MessageType definition
+        #region MessageType declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.MessageType.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region TrayIcon
+    #region TrayIcon implementation
     public partial class TrayIcon
     {
         #region Constructors
@@ -296,7 +296,7 @@ namespace Java.Awt
         #endregion
 
         #region Nested classes
-        #region MessageType
+        #region MessageType implementation
         public partial class MessageType
         {
             #region Constructors

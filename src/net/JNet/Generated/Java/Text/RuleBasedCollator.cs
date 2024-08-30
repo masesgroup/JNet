@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Text
 {
-    #region RuleBasedCollator definition
+    #region RuleBasedCollator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/RuleBasedCollator.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Text
     }
     #endregion
 
-    #region RuleBasedCollator
+    #region RuleBasedCollator implementation
     public partial class RuleBasedCollator
     {
         #region Constructors

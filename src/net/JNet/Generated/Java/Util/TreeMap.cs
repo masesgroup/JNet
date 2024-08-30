@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region TreeMap definition
+    #region TreeMap declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region TreeMap<K, V> definition
+    #region TreeMap<K, V> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html"/>
     /// </summary>
@@ -117,7 +117,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region TreeMap
+    #region TreeMap implementation
     public partial class TreeMap
     {
         #region Constructors
@@ -396,7 +396,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region TreeMap<K, V>
+    #region TreeMap<K, V> implementation
     public partial class TreeMap<K, V>
     {
         #region Constructors

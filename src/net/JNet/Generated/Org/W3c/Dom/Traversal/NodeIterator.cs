@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Traversal
 {
-    #region NodeIterator definition
+    #region NodeIterator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html"/>
     /// </summary>
@@ -122,7 +122,7 @@ namespace Org.W3c.Dom.Traversal
     }
     #endregion
 
-    #region NodeIterator
+    #region NodeIterator implementation
     public partial class NodeIterator : Org.W3c.Dom.Traversal.INodeIterator
     {
         #region Constructors

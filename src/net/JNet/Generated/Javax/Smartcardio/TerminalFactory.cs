@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Smartcardio
 {
-    #region TerminalFactory definition
+    #region TerminalFactory declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Smartcardio
     }
     #endregion
 
-    #region TerminalFactory
+    #region TerminalFactory implementation
     public partial class TerminalFactory
     {
         #region Constructors

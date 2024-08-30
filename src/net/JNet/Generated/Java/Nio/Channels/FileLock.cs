@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
-    #region FileLock definition
+    #region FileLock declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region FileLock
+    #region FileLock implementation
     public partial class FileLock
     {
         #region Constructors

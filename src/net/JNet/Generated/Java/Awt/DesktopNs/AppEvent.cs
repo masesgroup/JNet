@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.DesktopNs
 {
-    #region AppEvent definition
+    #region AppEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppEvent.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.DesktopNs
     }
     #endregion
 
-    #region AppEvent
+    #region AppEvent implementation
     public partial class AppEvent
     {
         #region Constructors

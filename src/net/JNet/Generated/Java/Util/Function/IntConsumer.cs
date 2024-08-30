@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region IntConsumer definition
+    #region IntConsumer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntConsumer.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IntConsumerDirect definition
+    #region IntConsumerDirect declaration
     /// <summary>
     /// Direct override of <see cref="IntConsumer"/> or its generic type if there is one
     /// </summary>
@@ -121,7 +121,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IntConsumer
+    #region IntConsumer implementation
     public partial class IntConsumer : Java.Util.Function.IIntConsumer
     {
         #region Constructors
@@ -216,7 +216,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IntConsumerDirect
+    #region IntConsumerDirect implementation
     public partial class IntConsumerDirect : Java.Util.Function.IIntConsumer
     {
         #region Constructors

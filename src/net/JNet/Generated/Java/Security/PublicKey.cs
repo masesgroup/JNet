@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region PublicKey definition
+    #region PublicKey declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PublicKey.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region PublicKey
+    #region PublicKey implementation
     public partial class PublicKey : Java.Security.IPublicKey
     {
         #region Constructors

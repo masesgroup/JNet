@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Catalog
 {
-    #region CatalogManager definition
+    #region CatalogManager declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogManager.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Xml.Catalog
     }
     #endregion
 
-    #region CatalogManager
+    #region CatalogManager implementation
     public partial class CatalogManager
     {
         #region Constructors

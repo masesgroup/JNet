@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region Permission definition
+    #region Permission declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Permission.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region Permission
+    #region Permission implementation
     public partial class Permission
     {
         #region Constructors

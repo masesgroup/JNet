@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region DoubleFunction definition
+    #region DoubleFunction declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleFunction.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region DoubleFunctionDirect definition
+    #region DoubleFunctionDirect declaration
     /// <summary>
     /// Direct override of <see cref="DoubleFunction"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region DoubleFunction<R> definition
+    #region DoubleFunction<R> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleFunction.html"/>
     /// </summary>
@@ -119,7 +119,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region DoubleFunctionDirect<R> definition
+    #region DoubleFunctionDirect<R> declaration
     /// <summary>
     /// Direct override of <see cref="DoubleFunction"/> or its generic type if there is one
     /// </summary>
@@ -160,7 +160,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region DoubleFunction
+    #region DoubleFunction implementation
     public partial class DoubleFunction
     {
         #region Constructors
@@ -222,7 +222,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region DoubleFunctionDirect
+    #region DoubleFunctionDirect implementation
     public partial class DoubleFunctionDirect
     {
         #region Constructors
@@ -286,7 +286,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region DoubleFunction<R>
+    #region DoubleFunction<R> implementation
     public partial class DoubleFunction<R> : Java.Util.Function.IDoubleFunction<R>
     {
         #region Constructors
@@ -348,7 +348,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region DoubleFunctionDirect<R>
+    #region DoubleFunctionDirect<R> implementation
     public partial class DoubleFunctionDirect<R> : Java.Util.Function.IDoubleFunction<R>
     {
         #region Constructors

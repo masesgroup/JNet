@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql.Rowset
 {
-    #region CachedRowSet definition
+    #region CachedRowSet declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html"/>
     /// </summary>
@@ -286,7 +286,7 @@ namespace Javax.Sql.Rowset
     }
     #endregion
 
-    #region CachedRowSet
+    #region CachedRowSet implementation
     public partial class CachedRowSet : Javax.Sql.Rowset.ICachedRowSet
     {
         #region Constructors

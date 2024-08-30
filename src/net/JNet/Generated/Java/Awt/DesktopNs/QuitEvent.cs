@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.DesktopNs
 {
-    #region QuitEvent definition
+    #region QuitEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/QuitEvent.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.DesktopNs
     }
     #endregion
 
-    #region QuitEvent
+    #region QuitEvent implementation
     public partial class QuitEvent
     {
         #region Constructors

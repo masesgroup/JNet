@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
-    #region HTMLParamElement definition
+    #region HTMLParamElement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLParamElement.html"/>
     /// </summary>
@@ -106,7 +106,7 @@ namespace Org.W3c.Dom.Html
     }
     #endregion
 
-    #region HTMLParamElement
+    #region HTMLParamElement implementation
     public partial class HTMLParamElement : Org.W3c.Dom.Html.IHTMLParamElement
     {
         #region Constructors

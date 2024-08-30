@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Metal
 {
-    #region MetalToolTipUI definition
+    #region MetalToolTipUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalToolTipUI.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf.Metal
     }
     #endregion
 
-    #region MetalToolTipUI
+    #region MetalToolTipUI implementation
     public partial class MetalToolTipUI
     {
         #region Constructors

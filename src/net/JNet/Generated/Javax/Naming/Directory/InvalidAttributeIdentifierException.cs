@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Directory
 {
-    #region InvalidAttributeIdentifierException definition
+    #region InvalidAttributeIdentifierException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/InvalidAttributeIdentifierException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Naming.Directory
     }
     #endregion
 
-    #region InvalidAttributeIdentifierException
+    #region InvalidAttributeIdentifierException implementation
     public partial class InvalidAttributeIdentifierException
     {
         #region Constructors

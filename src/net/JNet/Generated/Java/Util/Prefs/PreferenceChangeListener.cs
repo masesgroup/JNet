@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Prefs
 {
-    #region PreferenceChangeListener definition
+    #region PreferenceChangeListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferenceChangeListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Prefs
     }
     #endregion
 
-    #region PreferenceChangeListenerDirect definition
+    #region PreferenceChangeListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="PreferenceChangeListener"/> or its generic type if there is one
     /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Util.Prefs
     }
     #endregion
 
-    #region PreferenceChangeListener
+    #region PreferenceChangeListener implementation
     public partial class PreferenceChangeListener : Java.Util.Prefs.IPreferenceChangeListener
     {
         #region Constructors
@@ -175,7 +175,7 @@ namespace Java.Util.Prefs
     }
     #endregion
 
-    #region PreferenceChangeListenerDirect
+    #region PreferenceChangeListenerDirect implementation
     public partial class PreferenceChangeListenerDirect : Java.Util.Prefs.IPreferenceChangeListener
     {
         #region Constructors

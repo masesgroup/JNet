@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
-    #region HTMLBRElement definition
+    #region HTMLBRElement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLBRElement.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Org.W3c.Dom.Html
     }
     #endregion
 
-    #region HTMLBRElement
+    #region HTMLBRElement implementation
     public partial class HTMLBRElement : Org.W3c.Dom.Html.IHTMLBRElement
     {
         #region Constructors

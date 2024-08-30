@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region ToLongBiFunction definition
+    #region ToLongBiFunction declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongBiFunction.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToLongBiFunctionDirect definition
+    #region ToLongBiFunctionDirect declaration
     /// <summary>
     /// Direct override of <see cref="ToLongBiFunction"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToLongBiFunction<T, U> definition
+    #region ToLongBiFunction<T, U> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongBiFunction.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToLongBiFunctionDirect<T, U> definition
+    #region ToLongBiFunctionDirect<T, U> declaration
     /// <summary>
     /// Direct override of <see cref="ToLongBiFunction"/> or its generic type if there is one
     /// </summary>
@@ -161,7 +161,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToLongBiFunction
+    #region ToLongBiFunction implementation
     public partial class ToLongBiFunction
     {
         #region Constructors
@@ -224,7 +224,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToLongBiFunctionDirect
+    #region ToLongBiFunctionDirect implementation
     public partial class ToLongBiFunctionDirect
     {
         #region Constructors
@@ -290,7 +290,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToLongBiFunction<T, U>
+    #region ToLongBiFunction<T, U> implementation
     public partial class ToLongBiFunction<T, U> : Java.Util.Function.IToLongBiFunction<T, U>
     {
         #region Constructors
@@ -353,7 +353,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToLongBiFunctionDirect<T, U>
+    #region ToLongBiFunctionDirect<T, U> implementation
     public partial class ToLongBiFunctionDirect<T, U> : Java.Util.Function.IToLongBiFunction<T, U>
     {
         #region Constructors

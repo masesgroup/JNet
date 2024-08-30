@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Cert
 {
-    #region CRLException definition
+    #region CRLException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region CRLException
+    #region CRLException implementation
     public partial class CRLException
     {
         #region Constructors

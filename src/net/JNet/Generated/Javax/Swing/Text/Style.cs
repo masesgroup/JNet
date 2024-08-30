@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region Style definition
+    #region Style declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Style.html"/>
     /// </summary>
@@ -104,7 +104,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region Style
+    #region Style implementation
     public partial class Style : Javax.Swing.Text.IStyle
     {
         #region Constructors

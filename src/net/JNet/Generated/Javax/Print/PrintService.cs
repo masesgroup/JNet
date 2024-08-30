@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print
 {
-    #region PrintService definition
+    #region PrintService declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html"/>
     /// </summary>
@@ -173,7 +173,7 @@ namespace Javax.Print
     }
     #endregion
 
-    #region PrintService
+    #region PrintService implementation
     public partial class PrintService : Javax.Print.IPrintService
     {
         #region Constructors

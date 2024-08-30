@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
-    #region TreeSelectionListener definition
+    #region TreeSelectionListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region TreeSelectionListenerDirect definition
+    #region TreeSelectionListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="TreeSelectionListener"/> or its generic type if there is one
     /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region TreeSelectionListener
+    #region TreeSelectionListener implementation
     public partial class TreeSelectionListener : Javax.Swing.Event.ITreeSelectionListener
     {
         #region Constructors
@@ -175,7 +175,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region TreeSelectionListenerDirect
+    #region TreeSelectionListenerDirect implementation
     public partial class TreeSelectionListenerDirect : Javax.Swing.Event.ITreeSelectionListener
     {
         #region Constructors

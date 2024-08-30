@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent.Locks
 {
-    #region ReentrantReadWriteLock definition
+    #region ReentrantReadWriteLock declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Util.Concurrent.Locks
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region ReadLock definition
+        #region ReadLock declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Java.Util.Concurrent.Locks
         }
         #endregion
 
-        #region WriteLock definition
+        #region WriteLock declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html"/>
         /// </summary>
@@ -160,7 +160,7 @@ namespace Java.Util.Concurrent.Locks
     }
     #endregion
 
-    #region ReentrantReadWriteLock
+    #region ReentrantReadWriteLock implementation
     public partial class ReentrantReadWriteLock
     {
         #region Constructors
@@ -303,7 +303,7 @@ namespace Java.Util.Concurrent.Locks
         #endregion
 
         #region Nested classes
-        #region ReadLock
+        #region ReadLock implementation
         public partial class ReadLock
         {
             #region Constructors
@@ -391,7 +391,7 @@ namespace Java.Util.Concurrent.Locks
         }
         #endregion
 
-        #region WriteLock
+        #region WriteLock implementation
         public partial class WriteLock
         {
             #region Constructors

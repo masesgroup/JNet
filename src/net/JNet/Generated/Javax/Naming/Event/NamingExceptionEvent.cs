@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Event
 {
-    #region NamingExceptionEvent definition
+    #region NamingExceptionEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingExceptionEvent.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Naming.Event
     }
     #endregion
 
-    #region NamingExceptionEvent
+    #region NamingExceptionEvent implementation
     public partial class NamingExceptionEvent
     {
         #region Constructors

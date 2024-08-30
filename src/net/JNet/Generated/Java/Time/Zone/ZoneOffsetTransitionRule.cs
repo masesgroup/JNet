@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time.Zone
 {
-    #region ZoneOffsetTransitionRule definition
+    #region ZoneOffsetTransitionRule declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Time.Zone
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region TimeDefinition definition
+        #region TimeDefinition declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Time.Zone
     }
     #endregion
 
-    #region ZoneOffsetTransitionRule
+    #region ZoneOffsetTransitionRule implementation
     public partial class ZoneOffsetTransitionRule
     {
         #region Constructors
@@ -229,7 +229,7 @@ namespace Java.Time.Zone
         #endregion
 
         #region Nested classes
-        #region TimeDefinition
+        #region TimeDefinition implementation
         public partial class TimeDefinition
         {
             #region Constructors

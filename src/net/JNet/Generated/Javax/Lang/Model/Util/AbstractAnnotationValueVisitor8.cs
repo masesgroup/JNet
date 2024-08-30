@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Util
 {
-    #region AbstractAnnotationValueVisitor8 definition
+    #region AbstractAnnotationValueVisitor8 declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor8.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region AbstractAnnotationValueVisitor8<R, P> definition
+    #region AbstractAnnotationValueVisitor8<R, P> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor8.html"/>
     /// </summary>
@@ -121,7 +121,7 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region AbstractAnnotationValueVisitor8
+    #region AbstractAnnotationValueVisitor8 implementation
     public partial class AbstractAnnotationValueVisitor8
     {
         #region Constructors
@@ -152,7 +152,7 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region AbstractAnnotationValueVisitor8<R, P>
+    #region AbstractAnnotationValueVisitor8<R, P> implementation
     public partial class AbstractAnnotationValueVisitor8<R, P>
     {
         #region Constructors

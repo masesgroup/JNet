@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig
 {
-    #region XMLSignContext definition
+    #region XMLSignContext declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignContext.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Javax.Xml.Crypto.Dsig
     }
     #endregion
 
-    #region XMLSignContext
+    #region XMLSignContext implementation
     public partial class XMLSignContext : Javax.Xml.Crypto.Dsig.IXMLSignContext
     {
         #region Constructors

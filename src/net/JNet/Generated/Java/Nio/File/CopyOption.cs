@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File
 {
-    #region CopyOption definition
+    #region CopyOption declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/CopyOption.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region CopyOption
+    #region CopyOption implementation
     public partial class CopyOption : Java.Nio.File.ICopyOption
     {
         #region Constructors

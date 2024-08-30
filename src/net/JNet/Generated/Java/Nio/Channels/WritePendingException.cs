@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
-    #region WritePendingException definition
+    #region WritePendingException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/WritePendingException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region WritePendingException
+    #region WritePendingException implementation
     public partial class WritePendingException
     {
         #region Constructors

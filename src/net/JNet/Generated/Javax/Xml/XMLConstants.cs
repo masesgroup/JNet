@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml
 {
-    #region XMLConstants definition
+    #region XMLConstants declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/XMLConstants.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Xml
     }
     #endregion
 
-    #region XMLConstants
+    #region XMLConstants implementation
     public partial class XMLConstants
     {
         #region Constructors

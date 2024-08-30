@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Im
 {
-    #region InputContext definition
+    #region InputContext declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputContext.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.Im
     }
     #endregion
 
-    #region InputContext
+    #region InputContext implementation
     public partial class InputContext
     {
         #region Constructors

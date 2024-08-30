@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
-    #region ScatteringByteChannel definition
+    #region ScatteringByteChannel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ScatteringByteChannel.html"/>
     /// </summary>
@@ -106,7 +106,7 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region ScatteringByteChannel
+    #region ScatteringByteChannel implementation
     public partial class ScatteringByteChannel : Java.Nio.Channels.IScatteringByteChannel
     {
         #region Constructors

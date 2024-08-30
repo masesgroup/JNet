@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
-    #region CookieHandler definition
+    #region CookieHandler declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieHandler.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Net
     }
     #endregion
 
-    #region CookieHandler
+    #region CookieHandler implementation
     public partial class CookieHandler
     {
         #region Constructors

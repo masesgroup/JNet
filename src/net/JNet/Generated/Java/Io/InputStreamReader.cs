@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
-    #region InputStreamReader definition
+    #region InputStreamReader declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStreamReader.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Io
     }
     #endregion
 
-    #region InputStreamReader
+    #region InputStreamReader implementation
     public partial class InputStreamReader
     {
         #region Constructors

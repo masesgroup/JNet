@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Midi.Spi
 {
-    #region MidiFileWriter definition
+    #region MidiFileWriter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileWriter.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Sound.Midi.Spi
     }
     #endregion
 
-    #region MidiFileWriter
+    #region MidiFileWriter implementation
     public partial class MidiFileWriter
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region Window definition
+    #region Window declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Awt
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Type definition
+        #region Type declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.Type.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region Window
+    #region Window implementation
     public partial class Window
     {
         #region Constructors
@@ -486,7 +486,7 @@ namespace Java.Awt
         #endregion
 
         #region Nested classes
-        #region Type
+        #region Type implementation
         public partial class Type
         {
             #region Constructors

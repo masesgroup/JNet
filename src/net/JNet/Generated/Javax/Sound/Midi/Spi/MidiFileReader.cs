@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Midi.Spi
 {
-    #region MidiFileReader definition
+    #region MidiFileReader declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileReader.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Sound.Midi.Spi
     }
     #endregion
 
-    #region MidiFileReader
+    #region MidiFileReader implementation
     public partial class MidiFileReader
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
-    #region HyperlinkListener definition
+    #region HyperlinkListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region HyperlinkListenerDirect definition
+    #region HyperlinkListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="HyperlinkListener"/> or its generic type if there is one
     /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region HyperlinkListener
+    #region HyperlinkListener implementation
     public partial class HyperlinkListener : Javax.Swing.Event.IHyperlinkListener
     {
         #region Constructors
@@ -175,7 +175,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region HyperlinkListenerDirect
+    #region HyperlinkListenerDirect implementation
     public partial class HyperlinkListenerDirect : Javax.Swing.Event.IHyperlinkListener
     {
         #region Constructors

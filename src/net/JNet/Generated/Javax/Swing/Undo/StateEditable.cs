@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Undo
 {
-    #region StateEditable definition
+    #region StateEditable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/StateEditable.html"/>
     /// </summary>
@@ -100,7 +100,7 @@ namespace Javax.Swing.Undo
     }
     #endregion
 
-    #region StateEditable
+    #region StateEditable implementation
     public partial class StateEditable : Javax.Swing.Undo.IStateEditable
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Security.Sasl
 {
-    #region SaslServer definition
+    #region SaslServer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html"/>
     /// </summary>
@@ -139,7 +139,7 @@ namespace Javax.Security.Sasl
     }
     #endregion
 
-    #region SaslServer
+    #region SaslServer implementation
     public partial class SaslServer : Javax.Security.Sasl.ISaslServer
     {
         #region Constructors

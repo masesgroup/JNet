@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Dnd
 {
-    #region DnDConstants definition
+    #region DnDConstants declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DnDConstants.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.Dnd
     }
     #endregion
 
-    #region DnDConstants
+    #region DnDConstants implementation
     public partial class DnDConstants
     {
         #region Constructors

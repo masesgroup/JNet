@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region StyleConstants definition
+    #region StyleConstants declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Text
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region CharacterConstants definition
+        #region CharacterConstants declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.CharacterConstants.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region ColorConstants definition
+        #region ColorConstants declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.ColorConstants.html"/>
         /// </summary>
@@ -156,7 +156,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region FontConstants definition
+        #region FontConstants declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.FontConstants.html"/>
         /// </summary>
@@ -201,7 +201,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region ParagraphConstants definition
+        #region ParagraphConstants declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.ParagraphConstants.html"/>
         /// </summary>
@@ -250,7 +250,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region StyleConstants
+    #region StyleConstants implementation
     public partial class StyleConstants
     {
         #region Constructors
@@ -856,7 +856,7 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Nested classes
-        #region CharacterConstants
+        #region CharacterConstants implementation
         public partial class CharacterConstants
         {
             #region Constructors
@@ -887,7 +887,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region ColorConstants
+        #region ColorConstants implementation
         public partial class ColorConstants
         {
             #region Constructors
@@ -918,7 +918,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region FontConstants
+        #region FontConstants implementation
         public partial class FontConstants
         {
             #region Constructors
@@ -949,7 +949,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region ParagraphConstants
+        #region ParagraphConstants implementation
         public partial class ParagraphConstants
         {
             #region Constructors

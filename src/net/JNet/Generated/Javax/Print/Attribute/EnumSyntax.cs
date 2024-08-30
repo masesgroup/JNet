@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Attribute
 {
-    #region EnumSyntax definition
+    #region EnumSyntax declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/EnumSyntax.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Print.Attribute
     }
     #endregion
 
-    #region EnumSyntax
+    #region EnumSyntax implementation
     public partial class EnumSyntax
     {
         #region Constructors

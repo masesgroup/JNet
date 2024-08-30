@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
-    #region ObjectOutput definition
+    #region ObjectOutput declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutput.html"/>
     /// </summary>
@@ -126,7 +126,7 @@ namespace Java.Io
     }
     #endregion
 
-    #region ObjectOutput
+    #region ObjectOutput implementation
     public partial class ObjectOutput : Java.Io.IObjectOutput
     {
         #region Constructors

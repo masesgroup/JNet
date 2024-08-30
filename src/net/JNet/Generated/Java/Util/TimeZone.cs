@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region TimeZone definition
+    #region TimeZone declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region TimeZone
+    #region TimeZone implementation
     public partial class TimeZone
     {
         #region Constructors

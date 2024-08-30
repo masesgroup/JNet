@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi.Server
 {
-    #region ObjID definition
+    #region ObjID declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/ObjID.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Rmi.Server
     }
     #endregion
 
-    #region ObjID
+    #region ObjID implementation
     public partial class ObjID
     {
         #region Constructors

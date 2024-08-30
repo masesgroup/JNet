@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql.Rowset
 {
-    #region FilteredRowSet definition
+    #region FilteredRowSet declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/FilteredRowSet.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Javax.Sql.Rowset
     }
     #endregion
 
-    #region FilteredRowSet
+    #region FilteredRowSet implementation
     public partial class FilteredRowSet : Javax.Sql.Rowset.IFilteredRowSet
     {
         #region Constructors

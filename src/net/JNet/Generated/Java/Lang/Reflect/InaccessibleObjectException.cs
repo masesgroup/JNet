@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
-    #region InaccessibleObjectException definition
+    #region InaccessibleObjectException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/InaccessibleObjectException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region InaccessibleObjectException
+    #region InaccessibleObjectException implementation
     public partial class InaccessibleObjectException
     {
         #region Constructors

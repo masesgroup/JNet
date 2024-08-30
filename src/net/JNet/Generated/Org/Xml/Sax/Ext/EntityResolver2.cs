@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.Xml.Sax.Ext
 {
-    #region EntityResolver2 definition
+    #region EntityResolver2 declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/EntityResolver2.html"/>
     /// </summary>
@@ -110,7 +110,7 @@ namespace Org.Xml.Sax.Ext
     }
     #endregion
 
-    #region EntityResolver2
+    #region EntityResolver2 implementation
     public partial class EntityResolver2 : Org.Xml.Sax.Ext.IEntityResolver2
     {
         #region Constructors

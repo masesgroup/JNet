@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Css
 {
-    #region RGBColor definition
+    #region RGBColor declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/RGBColor.html"/>
     /// </summary>
@@ -102,7 +102,7 @@ namespace Org.W3c.Dom.Css
     }
     #endregion
 
-    #region RGBColor
+    #region RGBColor implementation
     public partial class RGBColor : Org.W3c.Dom.Css.IRGBColor
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region ObjIntConsumer definition
+    #region ObjIntConsumer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjIntConsumer.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjIntConsumerDirect definition
+    #region ObjIntConsumerDirect declaration
     /// <summary>
     /// Direct override of <see cref="ObjIntConsumer"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjIntConsumer<T> definition
+    #region ObjIntConsumer<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjIntConsumer.html"/>
     /// </summary>
@@ -119,7 +119,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjIntConsumerDirect<T> definition
+    #region ObjIntConsumerDirect<T> declaration
     /// <summary>
     /// Direct override of <see cref="ObjIntConsumer"/> or its generic type if there is one
     /// </summary>
@@ -160,7 +160,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjIntConsumer
+    #region ObjIntConsumer implementation
     public partial class ObjIntConsumer
     {
         #region Constructors
@@ -221,7 +221,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjIntConsumerDirect
+    #region ObjIntConsumerDirect implementation
     public partial class ObjIntConsumerDirect
     {
         #region Constructors
@@ -285,7 +285,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjIntConsumer<T>
+    #region ObjIntConsumer<T> implementation
     public partial class ObjIntConsumer<T> : Java.Util.Function.IObjIntConsumer<T>
     {
         #region Constructors
@@ -346,7 +346,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjIntConsumerDirect<T>
+    #region ObjIntConsumerDirect<T> implementation
     public partial class ObjIntConsumerDirect<T> : Java.Util.Function.IObjIntConsumer<T>
     {
         #region Constructors

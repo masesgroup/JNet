@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Cert
 {
-    #region PKIXCertPathChecker definition
+    #region PKIXCertPathChecker declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathChecker.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region PKIXCertPathChecker
+    #region PKIXCertPathChecker implementation
     public partial class PKIXCertPathChecker
     {
         #region Constructors

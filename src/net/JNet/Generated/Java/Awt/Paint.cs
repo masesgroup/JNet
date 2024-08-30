@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region Paint definition
+    #region Paint declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Paint.html"/>
     /// </summary>
@@ -100,7 +100,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region Paint
+    #region Paint implementation
     public partial class Paint : Java.Awt.IPaint
     {
         #region Constructors

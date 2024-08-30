@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Attribute.Standard
 {
-    #region PrinterMoreInfoManufacturer definition
+    #region PrinterMoreInfoManufacturer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterMoreInfoManufacturer.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Print.Attribute.Standard
     }
     #endregion
 
-    #region PrinterMoreInfoManufacturer
+    #region PrinterMoreInfoManufacturer implementation
     public partial class PrinterMoreInfoManufacturer
     {
         #region Constructors

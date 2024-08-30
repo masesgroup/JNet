@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region PreparedStatement definition
+    #region PreparedStatement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html"/>
     /// </summary>
@@ -495,7 +495,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region PreparedStatement
+    #region PreparedStatement implementation
     public partial class PreparedStatement : Java.Sql.IPreparedStatement
     {
         #region Constructors

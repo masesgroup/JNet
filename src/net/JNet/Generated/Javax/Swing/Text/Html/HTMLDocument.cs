@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text.Html
 {
-    #region HTMLDocument definition
+    #region HTMLDocument declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Text.Html
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region BlockElement definition
+        #region BlockElement declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.BlockElement.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Swing.Text.Html
         }
         #endregion
 
-        #region HTMLReader definition
+        #region HTMLReader declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.html"/>
         /// </summary>
@@ -152,7 +152,7 @@ namespace Javax.Swing.Text.Html
             public override bool IsBridgeStatic => false;
 
             // TODO: complete the class
-            #region FormAction definition
+            #region FormAction declaration
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.FormAction.html"/>
             /// </summary>
@@ -197,7 +197,7 @@ namespace Javax.Swing.Text.Html
             }
             #endregion
 
-            #region CharacterAction definition
+            #region CharacterAction declaration
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.CharacterAction.html"/>
             /// </summary>
@@ -242,7 +242,7 @@ namespace Javax.Swing.Text.Html
             }
             #endregion
 
-            #region PreAction definition
+            #region PreAction declaration
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.PreAction.html"/>
             /// </summary>
@@ -287,7 +287,7 @@ namespace Javax.Swing.Text.Html
             }
             #endregion
 
-            #region HiddenAction definition
+            #region HiddenAction declaration
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.HiddenAction.html"/>
             /// </summary>
@@ -332,7 +332,7 @@ namespace Javax.Swing.Text.Html
             }
             #endregion
 
-            #region IsindexAction definition
+            #region IsindexAction declaration
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.IsindexAction.html"/>
             /// </summary>
@@ -377,7 +377,7 @@ namespace Javax.Swing.Text.Html
             }
             #endregion
 
-            #region SpecialAction definition
+            #region SpecialAction declaration
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.SpecialAction.html"/>
             /// </summary>
@@ -422,7 +422,7 @@ namespace Javax.Swing.Text.Html
             }
             #endregion
 
-            #region ParagraphAction definition
+            #region ParagraphAction declaration
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.ParagraphAction.html"/>
             /// </summary>
@@ -467,7 +467,7 @@ namespace Javax.Swing.Text.Html
             }
             #endregion
 
-            #region BlockAction definition
+            #region BlockAction declaration
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.BlockAction.html"/>
             /// </summary>
@@ -512,7 +512,7 @@ namespace Javax.Swing.Text.Html
             }
             #endregion
 
-            #region TagAction definition
+            #region TagAction declaration
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.TagAction.html"/>
             /// </summary>
@@ -561,7 +561,7 @@ namespace Javax.Swing.Text.Html
         }
         #endregion
 
-        #region Iterator definition
+        #region Iterator declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html"/>
         /// </summary>
@@ -608,7 +608,7 @@ namespace Javax.Swing.Text.Html
         }
         #endregion
 
-        #region RunElement definition
+        #region RunElement declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.RunElement.html"/>
         /// </summary>
@@ -657,7 +657,7 @@ namespace Javax.Swing.Text.Html
     }
     #endregion
 
-    #region HTMLDocument
+    #region HTMLDocument implementation
     public partial class HTMLDocument
     {
         #region Constructors
@@ -863,7 +863,7 @@ namespace Javax.Swing.Text.Html
         #endregion
 
         #region Nested classes
-        #region BlockElement
+        #region BlockElement implementation
         public partial class BlockElement
         {
             #region Constructors
@@ -904,7 +904,7 @@ namespace Javax.Swing.Text.Html
         }
         #endregion
 
-        #region HTMLReader
+        #region HTMLReader implementation
         public partial class HTMLReader
         {
             #region Constructors
@@ -949,7 +949,7 @@ namespace Javax.Swing.Text.Html
             #endregion
 
             #region Nested classes
-            #region FormAction
+            #region FormAction implementation
             public partial class FormAction
             {
                 #region Constructors
@@ -988,7 +988,7 @@ namespace Javax.Swing.Text.Html
             }
             #endregion
 
-            #region CharacterAction
+            #region CharacterAction implementation
             public partial class CharacterAction
             {
                 #region Constructors
@@ -1027,7 +1027,7 @@ namespace Javax.Swing.Text.Html
             }
             #endregion
 
-            #region PreAction
+            #region PreAction implementation
             public partial class PreAction
             {
                 #region Constructors
@@ -1066,7 +1066,7 @@ namespace Javax.Swing.Text.Html
             }
             #endregion
 
-            #region HiddenAction
+            #region HiddenAction implementation
             public partial class HiddenAction
             {
                 #region Constructors
@@ -1105,7 +1105,7 @@ namespace Javax.Swing.Text.Html
             }
             #endregion
 
-            #region IsindexAction
+            #region IsindexAction implementation
             public partial class IsindexAction
             {
                 #region Constructors
@@ -1144,7 +1144,7 @@ namespace Javax.Swing.Text.Html
             }
             #endregion
 
-            #region SpecialAction
+            #region SpecialAction implementation
             public partial class SpecialAction
             {
                 #region Constructors
@@ -1183,7 +1183,7 @@ namespace Javax.Swing.Text.Html
             }
             #endregion
 
-            #region ParagraphAction
+            #region ParagraphAction implementation
             public partial class ParagraphAction
             {
                 #region Constructors
@@ -1222,7 +1222,7 @@ namespace Javax.Swing.Text.Html
             }
             #endregion
 
-            #region BlockAction
+            #region BlockAction implementation
             public partial class BlockAction
             {
                 #region Constructors
@@ -1261,7 +1261,7 @@ namespace Javax.Swing.Text.Html
             }
             #endregion
 
-            #region TagAction
+            #region TagAction implementation
             public partial class TagAction
             {
                 #region Constructors
@@ -1324,7 +1324,7 @@ namespace Javax.Swing.Text.Html
         }
         #endregion
 
-        #region Iterator
+        #region Iterator implementation
         public partial class Iterator
         {
             #region Constructors
@@ -1398,7 +1398,7 @@ namespace Javax.Swing.Text.Html
         }
         #endregion
 
-        #region RunElement
+        #region RunElement implementation
         public partial class RunElement
         {
             #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region SQLSyntaxErrorException definition
+    #region SQLSyntaxErrorException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLSyntaxErrorException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region SQLSyntaxErrorException
+    #region SQLSyntaxErrorException implementation
     public partial class SQLSyntaxErrorException
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region ClientInfoStatus definition
+    #region ClientInfoStatus declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ClientInfoStatus.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region ClientInfoStatus
+    #region ClientInfoStatus implementation
     public partial class ClientInfoStatus
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region DropMode definition
+    #region DropMode declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DropMode.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region DropMode
+    #region DropMode implementation
     public partial class DropMode
     {
         #region Constructors

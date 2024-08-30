@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Synth
 {
-    #region SynthIcon definition
+    #region SynthIcon declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthIcon.html"/>
     /// </summary>
@@ -128,7 +128,7 @@ namespace Javax.Swing.Plaf.Synth
     }
     #endregion
 
-    #region SynthIcon
+    #region SynthIcon implementation
     public partial class SynthIcon : Javax.Swing.Plaf.Synth.ISynthIcon
     {
         #region Constructors

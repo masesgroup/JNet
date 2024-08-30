@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
-    #region Proxy definition
+    #region Proxy declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Net
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Type definition
+        #region Type declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.Type.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Net
     }
     #endregion
 
-    #region Proxy
+    #region Proxy implementation
     public partial class Proxy
     {
         #region Constructors
@@ -170,7 +170,7 @@ namespace Java.Net
         #endregion
 
         #region Nested classes
-        #region Type
+        #region Type implementation
         public partial class Type
         {
             #region Constructors

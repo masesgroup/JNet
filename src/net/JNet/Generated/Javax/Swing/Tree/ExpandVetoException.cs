@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Tree
 {
-    #region ExpandVetoException definition
+    #region ExpandVetoException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/ExpandVetoException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Swing.Tree
     }
     #endregion
 
-    #region ExpandVetoException
+    #region ExpandVetoException implementation
     public partial class ExpandVetoException
     {
         #region Constructors

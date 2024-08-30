@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig
 {
-    #region TransformService definition
+    #region TransformService declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Xml.Crypto.Dsig
     }
     #endregion
 
-    #region TransformService
+    #region TransformService implementation
     public partial class TransformService
     {
         #region Constructors

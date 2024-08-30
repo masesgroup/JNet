@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Sampled
 {
-    #region Port definition
+    #region Port declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Sound.Sampled
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Info definition
+        #region Info declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html"/>
         /// </summary>
@@ -135,7 +135,7 @@ namespace Javax.Sound.Sampled
     }
     #endregion
 
-    #region Port
+    #region Port implementation
     public partial class Port : Javax.Sound.Sampled.IPort
     {
         #region Constructors
@@ -159,7 +159,7 @@ namespace Javax.Sound.Sampled
         #endregion
 
         #region Nested classes
-        #region Info
+        #region Info implementation
         public partial class Info
         {
             #region Constructors

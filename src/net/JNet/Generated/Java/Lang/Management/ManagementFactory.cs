@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Management
 {
-    #region ManagementFactory definition
+    #region ManagementFactory declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Lang.Management
     }
     #endregion
 
-    #region ManagementFactory
+    #region ManagementFactory implementation
     public partial class ManagementFactory
     {
         #region Constructors

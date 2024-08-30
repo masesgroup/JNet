@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region CharSequence definition
+    #region CharSequence declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html"/>
     /// </summary>
@@ -118,7 +118,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region CharSequence
+    #region CharSequence implementation
     public partial class CharSequence : Java.Lang.ICharSequence
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql.Rowset.Serial
 {
-    #region SerialDatalink definition
+    #region SerialDatalink declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialDatalink.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Sql.Rowset.Serial
     }
     #endregion
 
-    #region SerialDatalink
+    #region SerialDatalink implementation
     public partial class SerialDatalink
     {
         #region Constructors

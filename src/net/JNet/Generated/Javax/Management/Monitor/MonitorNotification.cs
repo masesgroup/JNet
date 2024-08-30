@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Monitor
 {
-    #region MonitorNotification definition
+    #region MonitorNotification declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Management.Monitor
     }
     #endregion
 
-    #region MonitorNotification
+    #region MonitorNotification implementation
     public partial class MonitorNotification
     {
         #region Constructors

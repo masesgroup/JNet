@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region IdentityHashMap definition
+    #region IdentityHashMap declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/IdentityHashMap.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region IdentityHashMap<K, V> definition
+    #region IdentityHashMap<K, V> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/IdentityHashMap.html"/>
     /// </summary>
@@ -117,7 +117,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region IdentityHashMap
+    #region IdentityHashMap implementation
     public partial class IdentityHashMap
     {
         #region Constructors
@@ -172,7 +172,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region IdentityHashMap<K, V>
+    #region IdentityHashMap<K, V> implementation
     public partial class IdentityHashMap<K, V>
     {
         #region Constructors

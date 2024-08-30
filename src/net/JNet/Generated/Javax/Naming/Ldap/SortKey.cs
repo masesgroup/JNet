@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Ldap
 {
-    #region SortKey definition
+    #region SortKey declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortKey.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Naming.Ldap
     }
     #endregion
 
-    #region SortKey
+    #region SortKey implementation
     public partial class SortKey
     {
         #region Constructors

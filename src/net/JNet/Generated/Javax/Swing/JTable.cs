@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region JTable definition
+    #region JTable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region DropLocation definition
+        #region DropLocation declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.DropLocation.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region PrintMode definition
+        #region PrintMode declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.PrintMode.html"/>
         /// </summary>
@@ -160,7 +160,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region JTable
+    #region JTable implementation
     public partial class JTable
     {
         #region Constructors
@@ -1169,7 +1169,7 @@ namespace Javax.Swing
         #endregion
 
         #region Nested classes
-        #region DropLocation
+        #region DropLocation implementation
         public partial class DropLocation
         {
             #region Constructors
@@ -1230,7 +1230,7 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region PrintMode
+        #region PrintMode implementation
         public partial class PrintMode
         {
             #region Constructors

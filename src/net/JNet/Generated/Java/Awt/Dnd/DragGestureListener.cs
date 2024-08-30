@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Dnd
 {
-    #region DragGestureListener definition
+    #region DragGestureListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Awt.Dnd
     }
     #endregion
 
-    #region DragGestureListenerDirect definition
+    #region DragGestureListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="DragGestureListener"/> or its generic type if there is one
     /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Awt.Dnd
     }
     #endregion
 
-    #region DragGestureListener
+    #region DragGestureListener implementation
     public partial class DragGestureListener : Java.Awt.Dnd.IDragGestureListener
     {
         #region Constructors
@@ -175,7 +175,7 @@ namespace Java.Awt.Dnd
     }
     #endregion
 
-    #region DragGestureListenerDirect
+    #region DragGestureListenerDirect implementation
     public partial class DragGestureListenerDirect : Java.Awt.Dnd.IDragGestureListener
     {
         #region Constructors

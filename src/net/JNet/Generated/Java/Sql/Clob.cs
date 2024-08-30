@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region Clob definition
+    #region Clob declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Clob.html"/>
     /// </summary>
@@ -179,7 +179,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region Clob
+    #region Clob implementation
     public partial class Clob : Java.Sql.IClob
     {
         #region Constructors

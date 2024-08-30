@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
-    #region MalformedParameterizedTypeException definition
+    #region MalformedParameterizedTypeException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/MalformedParameterizedTypeException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region MalformedParameterizedTypeException
+    #region MalformedParameterizedTypeException implementation
     public partial class MalformedParameterizedTypeException
     {
         #region Constructors

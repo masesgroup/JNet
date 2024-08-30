@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Text
 {
-    #region Format definition
+    #region Format declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Format.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Java.Text
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Field definition
+        #region Field declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Format.Field.html"/>
         /// </summary>
@@ -117,7 +117,7 @@ namespace Java.Text
     }
     #endregion
 
-    #region Format
+    #region Format implementation
     public partial class Format
     {
         #region Constructors
@@ -198,7 +198,7 @@ namespace Java.Text
         #endregion
 
         #region Nested classes
-        #region Field
+        #region Field implementation
         public partial class Field
         {
             #region Constructors

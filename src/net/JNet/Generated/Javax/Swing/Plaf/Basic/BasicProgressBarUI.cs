@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Basic
 {
-    #region BasicProgressBarUI definition
+    #region BasicProgressBarUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicProgressBarUI.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Plaf.Basic
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region ChangeHandler definition
+        #region ChangeHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicProgressBarUI.ChangeHandler.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Swing.Plaf.Basic
     }
     #endregion
 
-    #region BasicProgressBarUI
+    #region BasicProgressBarUI implementation
     public partial class BasicProgressBarUI
     {
         #region Constructors
@@ -139,7 +139,7 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Nested classes
-        #region ChangeHandler
+        #region ChangeHandler implementation
         public partial class ChangeHandler
         {
             #region Constructors

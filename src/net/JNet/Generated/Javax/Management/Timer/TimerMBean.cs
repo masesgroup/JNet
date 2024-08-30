@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Timer
 {
-    #region TimerMBean definition
+    #region TimerMBean declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html"/>
     /// </summary>
@@ -230,7 +230,7 @@ namespace Javax.Management.Timer
     }
     #endregion
 
-    #region TimerMBean
+    #region TimerMBean implementation
     public partial class TimerMBean : Javax.Management.Timer.ITimerMBean
     {
         #region Constructors

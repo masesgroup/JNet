@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Net.Ssl
 {
-    #region SSLPeerUnverifiedException definition
+    #region SSLPeerUnverifiedException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLPeerUnverifiedException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region SSLPeerUnverifiedException
+    #region SSLPeerUnverifiedException implementation
     public partial class SSLPeerUnverifiedException
     {
         #region Constructors

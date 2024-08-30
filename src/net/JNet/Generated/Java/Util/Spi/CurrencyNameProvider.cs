@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Spi
 {
-    #region CurrencyNameProvider definition
+    #region CurrencyNameProvider declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/CurrencyNameProvider.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util.Spi
     }
     #endregion
 
-    #region CurrencyNameProvider
+    #region CurrencyNameProvider implementation
     public partial class CurrencyNameProvider
     {
         #region Constructors

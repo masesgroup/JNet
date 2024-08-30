@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print
 {
-    #region MultiDocPrintService definition
+    #region MultiDocPrintService declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/MultiDocPrintService.html"/>
     /// </summary>
@@ -95,7 +95,7 @@ namespace Javax.Print
     }
     #endregion
 
-    #region MultiDocPrintService
+    #region MultiDocPrintService implementation
     public partial class MultiDocPrintService : Javax.Print.IMultiDocPrintService
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Directory
 {
-    #region SchemaViolationException definition
+    #region SchemaViolationException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/SchemaViolationException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Naming.Directory
     }
     #endregion
 
-    #region SchemaViolationException
+    #region SchemaViolationException implementation
     public partial class SchemaViolationException
     {
         #region Constructors

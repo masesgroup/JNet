@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text.Html
 {
-    #region HTMLWriter definition
+    #region HTMLWriter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLWriter.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Text.Html
     }
     #endregion
 
-    #region HTMLWriter
+    #region HTMLWriter implementation
     public partial class HTMLWriter
     {
         #region Constructors

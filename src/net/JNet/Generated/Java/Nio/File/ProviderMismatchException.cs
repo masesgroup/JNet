@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File
 {
-    #region ProviderMismatchException definition
+    #region ProviderMismatchException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/ProviderMismatchException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region ProviderMismatchException
+    #region ProviderMismatchException implementation
     public partial class ProviderMismatchException
     {
         #region Constructors

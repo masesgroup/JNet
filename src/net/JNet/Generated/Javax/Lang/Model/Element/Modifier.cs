@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Element
 {
-    #region Modifier definition
+    #region Modifier declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Lang.Model.Element
     }
     #endregion
 
-    #region Modifier
+    #region Modifier implementation
     public partial class Modifier
     {
         #region Constructors

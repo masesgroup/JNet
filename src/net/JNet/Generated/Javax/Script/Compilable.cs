@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Script
 {
-    #region Compilable definition
+    #region Compilable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Compilable.html"/>
     /// </summary>
@@ -104,7 +104,7 @@ namespace Javax.Script
     }
     #endregion
 
-    #region Compilable
+    #region Compilable implementation
     public partial class Compilable : Javax.Script.ICompilable
     {
         #region Constructors

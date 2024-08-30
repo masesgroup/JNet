@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Tools
 {
-    #region DiagnosticCollector definition
+    #region DiagnosticCollector declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DiagnosticCollector.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Tools
     }
     #endregion
 
-    #region DiagnosticCollector<S> definition
+    #region DiagnosticCollector<S> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DiagnosticCollector.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Javax.Tools
     }
     #endregion
 
-    #region DiagnosticCollector
+    #region DiagnosticCollector implementation
     public partial class DiagnosticCollector
     {
         #region Constructors
@@ -162,7 +162,7 @@ namespace Javax.Tools
     }
     #endregion
 
-    #region DiagnosticCollector<S>
+    #region DiagnosticCollector<S> implementation
     public partial class DiagnosticCollector<S>
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region ConcurrentNavigableMap definition
+    #region ConcurrentNavigableMap declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ConcurrentNavigableMap<K, V> definition
+    #region ConcurrentNavigableMap<K, V> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html"/>
     /// </summary>
@@ -121,7 +121,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ConcurrentNavigableMap
+    #region ConcurrentNavigableMap implementation
     public partial class ConcurrentNavigableMap
     {
         #region Constructors
@@ -332,7 +332,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ConcurrentNavigableMap<K, V>
+    #region ConcurrentNavigableMap<K, V> implementation
     public partial class ConcurrentNavigableMap<K, V> : Java.Util.Concurrent.IConcurrentNavigableMap<K, V>
     {
         #region Constructors

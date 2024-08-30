@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Basic
 {
-    #region BasicSplitPaneUI definition
+    #region BasicSplitPaneUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Plaf.Basic
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region BasicHorizontalLayoutManager definition
+        #region BasicHorizontalLayoutManager declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region BasicVerticalLayoutManager definition
+        #region BasicVerticalLayoutManager declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicVerticalLayoutManager.html"/>
         /// </summary>
@@ -156,7 +156,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region KeyboardDownRightHandler definition
+        #region KeyboardDownRightHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardDownRightHandler.html"/>
         /// </summary>
@@ -201,7 +201,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region KeyboardEndHandler definition
+        #region KeyboardEndHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardEndHandler.html"/>
         /// </summary>
@@ -246,7 +246,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region KeyboardHomeHandler definition
+        #region KeyboardHomeHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardHomeHandler.html"/>
         /// </summary>
@@ -291,7 +291,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region KeyboardResizeToggleHandler definition
+        #region KeyboardResizeToggleHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardResizeToggleHandler.html"/>
         /// </summary>
@@ -336,7 +336,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region KeyboardUpLeftHandler definition
+        #region KeyboardUpLeftHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardUpLeftHandler.html"/>
         /// </summary>
@@ -381,7 +381,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region PropertyHandler definition
+        #region PropertyHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.PropertyHandler.html"/>
         /// </summary>
@@ -430,7 +430,7 @@ namespace Javax.Swing.Plaf.Basic
     }
     #endregion
 
-    #region BasicSplitPaneUI
+    #region BasicSplitPaneUI implementation
     public partial class BasicSplitPaneUI
     {
         #region Constructors
@@ -522,7 +522,7 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Nested classes
-        #region BasicHorizontalLayoutManager
+        #region BasicHorizontalLayoutManager implementation
         public partial class BasicHorizontalLayoutManager
         {
             #region Constructors
@@ -647,7 +647,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region BasicVerticalLayoutManager
+        #region BasicVerticalLayoutManager implementation
         public partial class BasicVerticalLayoutManager
         {
             #region Constructors
@@ -686,7 +686,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region KeyboardDownRightHandler
+        #region KeyboardDownRightHandler implementation
         public partial class KeyboardDownRightHandler
         {
             #region Constructors
@@ -737,7 +737,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region KeyboardEndHandler
+        #region KeyboardEndHandler implementation
         public partial class KeyboardEndHandler
         {
             #region Constructors
@@ -788,7 +788,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region KeyboardHomeHandler
+        #region KeyboardHomeHandler implementation
         public partial class KeyboardHomeHandler
         {
             #region Constructors
@@ -839,7 +839,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region KeyboardResizeToggleHandler
+        #region KeyboardResizeToggleHandler implementation
         public partial class KeyboardResizeToggleHandler
         {
             #region Constructors
@@ -890,7 +890,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region KeyboardUpLeftHandler
+        #region KeyboardUpLeftHandler implementation
         public partial class KeyboardUpLeftHandler
         {
             #region Constructors
@@ -941,7 +941,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region PropertyHandler
+        #region PropertyHandler implementation
         public partial class PropertyHandler
         {
             #region Constructors

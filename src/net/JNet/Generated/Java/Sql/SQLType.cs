@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region SQLType definition
+    #region SQLType declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLType.html"/>
     /// </summary>
@@ -102,7 +102,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region SQLType
+    #region SQLType implementation
     public partial class SQLType : Java.Sql.ISQLType
     {
         #region Constructors

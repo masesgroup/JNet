@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Spec
 {
-    #region X509EncodedKeySpec definition
+    #region X509EncodedKeySpec declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/X509EncodedKeySpec.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Security.Spec
     }
     #endregion
 
-    #region X509EncodedKeySpec
+    #region X509EncodedKeySpec implementation
     public partial class X509EncodedKeySpec
     {
         #region Constructors

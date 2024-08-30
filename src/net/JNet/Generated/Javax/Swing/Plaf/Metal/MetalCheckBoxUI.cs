@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Metal
 {
-    #region MetalCheckBoxUI definition
+    #region MetalCheckBoxUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalCheckBoxUI.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf.Metal
     }
     #endregion
 
-    #region MetalCheckBoxUI
+    #region MetalCheckBoxUI implementation
     public partial class MetalCheckBoxUI
     {
         #region Constructors

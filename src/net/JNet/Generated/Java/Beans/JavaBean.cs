@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans
 {
-    #region JavaBean definition
+    #region JavaBean declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html"/>
     /// </summary>
@@ -105,7 +105,7 @@ namespace Java.Beans
     }
     #endregion
 
-    #region JavaBean
+    #region JavaBean implementation
     public partial class JavaBean : Java.Beans.IJavaBean
     {
         #region Constructors

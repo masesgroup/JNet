@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
-    #region SocketException definition
+    #region SocketException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Net
     }
     #endregion
 
-    #region SocketException
+    #region SocketException implementation
     public partial class SocketException
     {
         #region Constructors

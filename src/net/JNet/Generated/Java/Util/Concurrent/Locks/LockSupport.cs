@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent.Locks
 {
-    #region LockSupport definition
+    #region LockSupport declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Concurrent.Locks
     }
     #endregion
 
-    #region LockSupport
+    #region LockSupport implementation
     public partial class LockSupport
     {
         #region Constructors

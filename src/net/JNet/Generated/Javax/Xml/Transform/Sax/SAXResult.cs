@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Transform.Sax
 {
-    #region SAXResult definition
+    #region SAXResult declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXResult.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Xml.Transform.Sax
     }
     #endregion
 
-    #region SAXResult
+    #region SAXResult implementation
     public partial class SAXResult
     {
         #region Constructors

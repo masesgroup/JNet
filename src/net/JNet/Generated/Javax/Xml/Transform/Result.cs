@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Transform
 {
-    #region Result definition
+    #region Result declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Result.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Javax.Xml.Transform
     }
     #endregion
 
-    #region Result
+    #region Result implementation
     public partial class Result : Javax.Xml.Transform.IResult
     {
         #region Constructors

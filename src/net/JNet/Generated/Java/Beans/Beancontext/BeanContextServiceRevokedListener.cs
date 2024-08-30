@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans.Beancontext
 {
-    #region BeanContextServiceRevokedListener definition
+    #region BeanContextServiceRevokedListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Beans.Beancontext
     }
     #endregion
 
-    #region BeanContextServiceRevokedListenerDirect definition
+    #region BeanContextServiceRevokedListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="BeanContextServiceRevokedListener"/> or its generic type if there is one
     /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Beans.Beancontext
     }
     #endregion
 
-    #region BeanContextServiceRevokedListener
+    #region BeanContextServiceRevokedListener implementation
     public partial class BeanContextServiceRevokedListener : Java.Beans.Beancontext.IBeanContextServiceRevokedListener
     {
         #region Constructors
@@ -175,7 +175,7 @@ namespace Java.Beans.Beancontext
     }
     #endregion
 
-    #region BeanContextServiceRevokedListenerDirect
+    #region BeanContextServiceRevokedListenerDirect implementation
     public partial class BeanContextServiceRevokedListenerDirect : Java.Beans.Beancontext.IBeanContextServiceRevokedListener
     {
         #region Constructors

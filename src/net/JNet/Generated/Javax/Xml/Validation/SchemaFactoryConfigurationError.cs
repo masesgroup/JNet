@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Validation
 {
-    #region SchemaFactoryConfigurationError definition
+    #region SchemaFactoryConfigurationError declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactoryConfigurationError.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Xml.Validation
     }
     #endregion
 
-    #region SchemaFactoryConfigurationError
+    #region SchemaFactoryConfigurationError implementation
     public partial class SchemaFactoryConfigurationError
     {
         #region Constructors

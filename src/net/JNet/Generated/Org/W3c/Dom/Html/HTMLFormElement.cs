@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
-    #region HTMLFormElement definition
+    #region HTMLFormElement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFormElement.html"/>
     /// </summary>
@@ -130,7 +130,7 @@ namespace Org.W3c.Dom.Html
     }
     #endregion
 
-    #region HTMLFormElement
+    #region HTMLFormElement implementation
     public partial class HTMLFormElement : Org.W3c.Dom.Html.IHTMLFormElement
     {
         #region Constructors

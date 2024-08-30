@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
-    #region WritableByteChannel definition
+    #region WritableByteChannel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/WritableByteChannel.html"/>
     /// </summary>
@@ -97,7 +97,7 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region WritableByteChannel
+    #region WritableByteChannel implementation
     public partial class WritableByteChannel : Java.Nio.Channels.IWritableByteChannel
     {
         #region Constructors

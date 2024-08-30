@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql
 {
-    #region DataSource definition
+    #region DataSource declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/DataSource.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Javax.Sql
     }
     #endregion
 
-    #region DataSource
+    #region DataSource implementation
     public partial class DataSource : Javax.Sql.IDataSource
     {
         #region Constructors

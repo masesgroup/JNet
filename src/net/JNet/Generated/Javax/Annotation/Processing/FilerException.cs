@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Annotation.Processing
 {
-    #region FilerException definition
+    #region FilerException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/FilerException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Annotation.Processing
     }
     #endregion
 
-    #region FilerException
+    #region FilerException implementation
     public partial class FilerException
     {
         #region Constructors

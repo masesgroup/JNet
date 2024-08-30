@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Basic
 {
-    #region DefaultMenuLayout definition
+    #region DefaultMenuLayout declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/DefaultMenuLayout.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf.Basic
     }
     #endregion
 
-    #region DefaultMenuLayout
+    #region DefaultMenuLayout implementation
     public partial class DefaultMenuLayout
     {
         #region Constructors

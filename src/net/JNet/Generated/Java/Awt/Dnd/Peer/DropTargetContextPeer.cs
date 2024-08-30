@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Dnd.Peer
 {
-    #region DropTargetContextPeer definition
+    #region DropTargetContextPeer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html"/>
     /// </summary>
@@ -134,7 +134,7 @@ namespace Java.Awt.Dnd.Peer
     }
     #endregion
 
-    #region DropTargetContextPeer
+    #region DropTargetContextPeer implementation
     public partial class DropTargetContextPeer : Java.Awt.Dnd.Peer.IDropTargetContextPeer
     {
         #region Constructors

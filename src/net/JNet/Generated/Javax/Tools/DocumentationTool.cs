@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Tools
 {
-    #region DocumentationTool definition
+    #region DocumentationTool declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Tools
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region DocumentationTask definition
+        #region DocumentationTask declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.DocumentationTask.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Tools
         }
         #endregion
 
-        #region Location definition
+        #region Location declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html"/>
         /// </summary>
@@ -182,7 +182,7 @@ namespace Javax.Tools
     }
     #endregion
 
-    #region DocumentationTool
+    #region DocumentationTool implementation
     public partial class DocumentationTool : Javax.Tools.IDocumentationTool
     {
         #region Constructors
@@ -214,7 +214,7 @@ namespace Javax.Tools
         #endregion
 
         #region Nested classes
-        #region DocumentationTask
+        #region DocumentationTask implementation
         public partial class DocumentationTask
         {
             #region Constructors
@@ -270,7 +270,7 @@ namespace Javax.Tools
         }
         #endregion
 
-        #region Location
+        #region Location implementation
         public partial class Location
         {
             #region Constructors

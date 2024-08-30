@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region SwingWorker definition
+    #region SwingWorker declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Swing
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region StateValue definition
+        #region StateValue declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.StateValue.html"/>
         /// </summary>
@@ -117,7 +117,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region SwingWorker<T, V> definition
+    #region SwingWorker<T, V> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html"/>
     /// </summary>
@@ -166,7 +166,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region SwingWorker
+    #region SwingWorker implementation
     public partial class SwingWorker
     {
         #region Constructors
@@ -299,7 +299,7 @@ namespace Javax.Swing
         #endregion
 
         #region Nested classes
-        #region StateValue
+        #region StateValue implementation
         public partial class StateValue
         {
             #region Constructors
@@ -372,7 +372,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region SwingWorker<T, V>
+    #region SwingWorker<T, V> implementation
     public partial class SwingWorker<T, V>
     {
         #region Constructors

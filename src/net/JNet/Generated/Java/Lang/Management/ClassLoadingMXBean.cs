@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Management
 {
-    #region ClassLoadingMXBean definition
+    #region ClassLoadingMXBean declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ClassLoadingMXBean.html"/>
     /// </summary>
@@ -112,7 +112,7 @@ namespace Java.Lang.Management
     }
     #endregion
 
-    #region ClassLoadingMXBean
+    #region ClassLoadingMXBean implementation
     public partial class ClassLoadingMXBean : Java.Lang.Management.IClassLoadingMXBean
     {
         #region Constructors

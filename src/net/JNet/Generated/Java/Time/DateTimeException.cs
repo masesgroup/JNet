@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time
 {
-    #region DateTimeException definition
+    #region DateTimeException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DateTimeException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Time
     }
     #endregion
 
-    #region DateTimeException
+    #region DateTimeException implementation
     public partial class DateTimeException
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.Ietf.Jgss
 {
-    #region MessageProp definition
+    #region MessageProp declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Org.Ietf.Jgss
     }
     #endregion
 
-    #region MessageProp
+    #region MessageProp implementation
     public partial class MessageProp
     {
         #region Constructors

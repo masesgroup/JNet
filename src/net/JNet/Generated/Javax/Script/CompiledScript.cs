@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Script
 {
-    #region CompiledScript definition
+    #region CompiledScript declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/CompiledScript.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Script
     }
     #endregion
 
-    #region CompiledScript
+    #region CompiledScript implementation
     public partial class CompiledScript
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region Image definition
+    #region Image declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region Image
+    #region Image implementation
     public partial class Image
     {
         #region Constructors

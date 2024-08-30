@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region Enum definition
+    #region Enum declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region Enum<E> definition
+    #region Enum<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region Enum
+    #region Enum implementation
     public partial class Enum
     {
         #region Constructors
@@ -210,7 +210,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region Enum<E>
+    #region Enum<E> implementation
     public partial class Enum<E>
     {
         #region Constructors

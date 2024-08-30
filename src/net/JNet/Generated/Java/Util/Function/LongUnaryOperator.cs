@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region LongUnaryOperator definition
+    #region LongUnaryOperator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongUnaryOperator.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region LongUnaryOperatorDirect definition
+    #region LongUnaryOperatorDirect declaration
     /// <summary>
     /// Direct override of <see cref="LongUnaryOperator"/> or its generic type if there is one
     /// </summary>
@@ -128,7 +128,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region LongUnaryOperator
+    #region LongUnaryOperator implementation
     public partial class LongUnaryOperator : Java.Util.Function.ILongUnaryOperator
     {
         #region Constructors
@@ -269,7 +269,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region LongUnaryOperatorDirect
+    #region LongUnaryOperatorDirect implementation
     public partial class LongUnaryOperatorDirect : Java.Util.Function.ILongUnaryOperator
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ImageNs.Renderable
 {
-    #region ParameterBlock definition
+    #region ParameterBlock declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.ImageNs.Renderable
     }
     #endregion
 
-    #region ParameterBlock
+    #region ParameterBlock implementation
     public partial class ParameterBlock
     {
         #region Constructors

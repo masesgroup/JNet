@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Management
 {
-    #region MemoryNotificationInfo definition
+    #region MemoryNotificationInfo declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryNotificationInfo.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Lang.Management
     }
     #endregion
 
-    #region MemoryNotificationInfo
+    #region MemoryNotificationInfo implementation
     public partial class MemoryNotificationInfo
     {
         #region Constructors

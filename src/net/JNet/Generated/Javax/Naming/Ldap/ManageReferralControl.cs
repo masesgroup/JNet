@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Ldap
 {
-    #region ManageReferralControl definition
+    #region ManageReferralControl declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ManageReferralControl.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Naming.Ldap
     }
     #endregion
 
-    #region ManageReferralControl
+    #region ManageReferralControl implementation
     public partial class ManageReferralControl
     {
         #region Constructors

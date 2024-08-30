@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region Comparable definition
+    #region Comparable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Comparable.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region Comparable<T> definition
+    #region Comparable<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Comparable.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region Comparable
+    #region Comparable implementation
     public partial class Comparable
     {
         #region Constructors
@@ -184,7 +184,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region Comparable<T>
+    #region Comparable<T> implementation
     public partial class Comparable<T> : Java.Lang.IComparable<T>
     {
         #region Constructors

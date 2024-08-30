@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Remote
 {
-    #region JMXConnectorServerMBean definition
+    #region JMXConnectorServerMBean declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html"/>
     /// </summary>
@@ -129,7 +129,7 @@ namespace Javax.Management.Remote
     }
     #endregion
 
-    #region JMXConnectorServerMBean
+    #region JMXConnectorServerMBean implementation
     public partial class JMXConnectorServerMBean : Javax.Management.Remote.IJMXConnectorServerMBean
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Monitor
 {
-    #region MonitorMBean definition
+    #region MonitorMBean declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html"/>
     /// </summary>
@@ -132,7 +132,7 @@ namespace Javax.Management.Monitor
     }
     #endregion
 
-    #region MonitorMBean
+    #region MonitorMBean implementation
     public partial class MonitorMBean : Javax.Management.Monitor.IMonitorMBean
     {
         #region Constructors

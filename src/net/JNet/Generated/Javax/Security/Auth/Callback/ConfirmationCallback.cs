@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Security.Auth.Callback
 {
-    #region ConfirmationCallback definition
+    #region ConfirmationCallback declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Security.Auth.Callback
     }
     #endregion
 
-    #region ConfirmationCallback
+    #region ConfirmationCallback implementation
     public partial class ConfirmationCallback
     {
         #region Constructors

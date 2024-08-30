@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Basic
 {
-    #region BasicRadioButtonMenuItemUI definition
+    #region BasicRadioButtonMenuItemUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicRadioButtonMenuItemUI.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf.Basic
     }
     #endregion
 
-    #region BasicRadioButtonMenuItemUI
+    #region BasicRadioButtonMenuItemUI implementation
     public partial class BasicRadioButtonMenuItemUI
     {
         #region Constructors

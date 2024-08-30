@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig
 {
-    #region DigestMethod definition
+    #region DigestMethod declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Javax.Xml.Crypto.Dsig
     }
     #endregion
 
-    #region DigestMethod
+    #region DigestMethod implementation
     public partial class DigestMethod : Javax.Xml.Crypto.Dsig.IDigestMethod
     {
         #region Constructors

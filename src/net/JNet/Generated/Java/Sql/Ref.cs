@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region Ref definition
+    #region Ref declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Ref.html"/>
     /// </summary>
@@ -105,7 +105,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region Ref
+    #region Ref implementation
     public partial class Ref : Java.Sql.IRef
     {
         #region Constructors

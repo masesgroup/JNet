@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region SQLOutput definition
+    #region SQLOutput declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html"/>
     /// </summary>
@@ -259,7 +259,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region SQLOutput
+    #region SQLOutput implementation
     public partial class SQLOutput : Java.Sql.ISQLOutput
     {
         #region Constructors

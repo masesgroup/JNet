@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
-    #region ProxySelector definition
+    #region ProxySelector declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ProxySelector.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Net
     }
     #endregion
 
-    #region ProxySelector
+    #region ProxySelector implementation
     public partial class ProxySelector
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region ListenerNotFoundException definition
+    #region ListenerNotFoundException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ListenerNotFoundException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region ListenerNotFoundException
+    #region ListenerNotFoundException implementation
     public partial class ListenerNotFoundException
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming
 {
-    #region MalformedLinkException definition
+    #region MalformedLinkException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/MalformedLinkException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Naming
     }
     #endregion
 
-    #region MalformedLinkException
+    #region MalformedLinkException implementation
     public partial class MalformedLinkException
     {
         #region Constructors

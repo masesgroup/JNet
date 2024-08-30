@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Management
 {
-    #region BufferPoolMXBean definition
+    #region BufferPoolMXBean declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/BufferPoolMXBean.html"/>
     /// </summary>
@@ -106,7 +106,7 @@ namespace Java.Lang.Management
     }
     #endregion
 
-    #region BufferPoolMXBean
+    #region BufferPoolMXBean implementation
     public partial class BufferPoolMXBean : Java.Lang.Management.IBufferPoolMXBean
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region IllegalFormatWidthException definition
+    #region IllegalFormatWidthException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/IllegalFormatWidthException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region IllegalFormatWidthException
+    #region IllegalFormatWidthException implementation
     public partial class IllegalFormatWidthException
     {
         #region Constructors

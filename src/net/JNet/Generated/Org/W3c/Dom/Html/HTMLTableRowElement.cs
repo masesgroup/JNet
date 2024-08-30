@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
-    #region HTMLTableRowElement definition
+    #region HTMLTableRowElement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html"/>
     /// </summary>
@@ -135,7 +135,7 @@ namespace Org.W3c.Dom.Html
     }
     #endregion
 
-    #region HTMLTableRowElement
+    #region HTMLTableRowElement implementation
     public partial class HTMLTableRowElement : Org.W3c.Dom.Html.IHTMLTableRowElement
     {
         #region Constructors

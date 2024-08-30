@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Modelmbean
 {
-    #region XMLParseException definition
+    #region XMLParseException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/XMLParseException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Management.Modelmbean
     }
     #endregion
 
-    #region XMLParseException
+    #region XMLParseException implementation
     public partial class XMLParseException
     {
         #region Constructors

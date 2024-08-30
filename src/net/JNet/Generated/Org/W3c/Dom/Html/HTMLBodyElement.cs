@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
-    #region HTMLBodyElement definition
+    #region HTMLBodyElement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLBodyElement.html"/>
     /// </summary>
@@ -114,7 +114,7 @@ namespace Org.W3c.Dom.Html
     }
     #endregion
 
-    #region HTMLBodyElement
+    #region HTMLBodyElement implementation
     public partial class HTMLBodyElement : Org.W3c.Dom.Html.IHTMLBodyElement
     {
         #region Constructors

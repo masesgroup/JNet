@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region IllegalArgumentException definition
+    #region IllegalArgumentException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/IllegalArgumentException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region IllegalArgumentException
+    #region IllegalArgumentException implementation
     public partial class IllegalArgumentException
     {
         #region Constructors

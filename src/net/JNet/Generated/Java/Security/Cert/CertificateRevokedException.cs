@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Cert
 {
-    #region CertificateRevokedException definition
+    #region CertificateRevokedException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateRevokedException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region CertificateRevokedException
+    #region CertificateRevokedException implementation
     public partial class CertificateRevokedException
     {
         #region Constructors

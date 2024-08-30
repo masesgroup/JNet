@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Basic
 {
-    #region BasicInternalFrameTitlePane definition
+    #region BasicInternalFrameTitlePane declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Plaf.Basic
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region CloseAction definition
+        #region CloseAction declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.CloseAction.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region IconifyAction definition
+        #region IconifyAction declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.IconifyAction.html"/>
         /// </summary>
@@ -156,7 +156,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region MaximizeAction definition
+        #region MaximizeAction declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.MaximizeAction.html"/>
         /// </summary>
@@ -201,7 +201,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region MoveAction definition
+        #region MoveAction declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.MoveAction.html"/>
         /// </summary>
@@ -246,7 +246,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region PropertyChangeHandler definition
+        #region PropertyChangeHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.PropertyChangeHandler.html"/>
         /// </summary>
@@ -291,7 +291,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region RestoreAction definition
+        #region RestoreAction declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.RestoreAction.html"/>
         /// </summary>
@@ -336,7 +336,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region SizeAction definition
+        #region SizeAction declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.SizeAction.html"/>
         /// </summary>
@@ -381,7 +381,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region SystemMenuBar definition
+        #region SystemMenuBar declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.SystemMenuBar.html"/>
         /// </summary>
@@ -426,7 +426,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region TitlePaneLayout definition
+        #region TitlePaneLayout declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.TitlePaneLayout.html"/>
         /// </summary>
@@ -475,7 +475,7 @@ namespace Javax.Swing.Plaf.Basic
     }
     #endregion
 
-    #region BasicInternalFrameTitlePane
+    #region BasicInternalFrameTitlePane implementation
     public partial class BasicInternalFrameTitlePane
     {
         #region Constructors
@@ -515,7 +515,7 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Nested classes
-        #region CloseAction
+        #region CloseAction implementation
         public partial class CloseAction
         {
             #region Constructors
@@ -554,7 +554,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region IconifyAction
+        #region IconifyAction implementation
         public partial class IconifyAction
         {
             #region Constructors
@@ -593,7 +593,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region MaximizeAction
+        #region MaximizeAction implementation
         public partial class MaximizeAction
         {
             #region Constructors
@@ -632,7 +632,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region MoveAction
+        #region MoveAction implementation
         public partial class MoveAction
         {
             #region Constructors
@@ -671,7 +671,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region PropertyChangeHandler
+        #region PropertyChangeHandler implementation
         public partial class PropertyChangeHandler
         {
             #region Constructors
@@ -722,7 +722,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region RestoreAction
+        #region RestoreAction implementation
         public partial class RestoreAction
         {
             #region Constructors
@@ -761,7 +761,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region SizeAction
+        #region SizeAction implementation
         public partial class SizeAction
         {
             #region Constructors
@@ -800,7 +800,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region SystemMenuBar
+        #region SystemMenuBar implementation
         public partial class SystemMenuBar
         {
             #region Constructors
@@ -839,7 +839,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region TitlePaneLayout
+        #region TitlePaneLayout implementation
         public partial class TitlePaneLayout
         {
             #region Constructors

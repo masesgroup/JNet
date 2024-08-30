@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File
 {
-    #region SimpleFileVisitor definition
+    #region SimpleFileVisitor declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SimpleFileVisitor.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region SimpleFileVisitor<T> definition
+    #region SimpleFileVisitor<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SimpleFileVisitor.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region SimpleFileVisitor
+    #region SimpleFileVisitor implementation
     public partial class SimpleFileVisitor
     {
         #region Constructors
@@ -191,7 +191,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region SimpleFileVisitor<T>
+    #region SimpleFileVisitor<T> implementation
     public partial class SimpleFileVisitor<T>
     {
         #region Constructors

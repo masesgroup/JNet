@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio.Plugins.Tiff
 {
-    #region FaxTIFFTagSet definition
+    #region FaxTIFFTagSet declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/FaxTIFFTagSet.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Imageio.Plugins.Tiff
     }
     #endregion
 
-    #region FaxTIFFTagSet
+    #region FaxTIFFTagSet implementation
     public partial class FaxTIFFTagSet
     {
         #region Constructors

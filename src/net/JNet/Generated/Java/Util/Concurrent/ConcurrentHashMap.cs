@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region ConcurrentHashMap definition
+    #region ConcurrentHashMap declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Util.Concurrent
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region KeySetView definition
+        #region KeySetView declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.KeySetView.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
-        #region KeySetView<K, V> definition
+        #region KeySetView<K, V> declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.KeySetView.html"/>
         /// </summary>
@@ -162,7 +162,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ConcurrentHashMap<K, V> definition
+    #region ConcurrentHashMap<K, V> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html"/>
     /// </summary>
@@ -209,7 +209,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ConcurrentHashMap
+    #region ConcurrentHashMap implementation
     public partial class ConcurrentHashMap
     {
         #region Constructors
@@ -669,7 +669,7 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Nested classes
-        #region KeySetView
+        #region KeySetView implementation
         public partial class KeySetView
         {
             #region Constructors
@@ -715,7 +715,7 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
-        #region KeySetView<K, V>
+        #region KeySetView<K, V> implementation
         public partial class KeySetView<K, V>
         {
             #region Constructors
@@ -772,7 +772,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ConcurrentHashMap<K, V>
+    #region ConcurrentHashMap<K, V> implementation
     public partial class ConcurrentHashMap<K, V>
     {
         #region Constructors

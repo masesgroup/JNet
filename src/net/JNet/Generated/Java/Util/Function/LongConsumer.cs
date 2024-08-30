@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region LongConsumer definition
+    #region LongConsumer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongConsumer.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region LongConsumerDirect definition
+    #region LongConsumerDirect declaration
     /// <summary>
     /// Direct override of <see cref="LongConsumer"/> or its generic type if there is one
     /// </summary>
@@ -121,7 +121,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region LongConsumer
+    #region LongConsumer implementation
     public partial class LongConsumer : Java.Util.Function.ILongConsumer
     {
         #region Constructors
@@ -216,7 +216,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region LongConsumerDirect
+    #region LongConsumerDirect implementation
     public partial class LongConsumerDirect : Java.Util.Function.ILongConsumer
     {
         #region Constructors

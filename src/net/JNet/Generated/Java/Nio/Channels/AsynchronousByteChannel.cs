@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
-    #region AsynchronousByteChannel definition
+    #region AsynchronousByteChannel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousByteChannel.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region AsynchronousByteChannel
+    #region AsynchronousByteChannel implementation
     public partial class AsynchronousByteChannel : Java.Nio.Channels.IAsynchronousByteChannel
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream
 {
-    #region StreamFilter definition
+    #region StreamFilter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/StreamFilter.html"/>
     /// </summary>
@@ -96,7 +96,7 @@ namespace Javax.Xml.Stream
     }
     #endregion
 
-    #region StreamFilter
+    #region StreamFilter implementation
     public partial class StreamFilter : Javax.Xml.Stream.IStreamFilter
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf
 {
-    #region MenuItemUI definition
+    #region MenuItemUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/MenuItemUI.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Swing.Plaf
     }
     #endregion
 
-    #region MenuItemUI
+    #region MenuItemUI implementation
     public partial class MenuItemUI
     {
         #region Constructors

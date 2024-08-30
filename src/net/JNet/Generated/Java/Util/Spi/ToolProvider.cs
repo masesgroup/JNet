@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Spi
 {
-    #region ToolProvider definition
+    #region ToolProvider declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html"/>
     /// </summary>
@@ -111,7 +111,7 @@ namespace Java.Util.Spi
     }
     #endregion
 
-    #region ToolProvider
+    #region ToolProvider implementation
     public partial class ToolProvider : Java.Util.Spi.IToolProvider
     {
         #region Constructors

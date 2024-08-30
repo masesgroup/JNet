@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Sampled
 {
-    #region AudioInputStream definition
+    #region AudioInputStream declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioInputStream.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Sound.Sampled
     }
     #endregion
 
-    #region AudioInputStream
+    #region AudioInputStream implementation
     public partial class AudioInputStream
     {
         #region Constructors

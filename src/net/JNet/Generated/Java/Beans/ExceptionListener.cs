@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans
 {
-    #region ExceptionListener definition
+    #region ExceptionListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/ExceptionListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Beans
     }
     #endregion
 
-    #region ExceptionListenerDirect definition
+    #region ExceptionListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="ExceptionListener"/> or its generic type if there is one
     /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Beans
     }
     #endregion
 
-    #region ExceptionListener
+    #region ExceptionListener implementation
     public partial class ExceptionListener : Java.Beans.IExceptionListener
     {
         #region Constructors
@@ -175,7 +175,7 @@ namespace Java.Beans
     }
     #endregion
 
-    #region ExceptionListenerDirect
+    #region ExceptionListenerDirect implementation
     public partial class ExceptionListenerDirect : Java.Beans.IExceptionListener
     {
         #region Constructors

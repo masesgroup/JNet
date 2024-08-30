@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region CountedCompleter definition
+    #region CountedCompleter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region CountedCompleter<T> definition
+    #region CountedCompleter<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region CountedCompleter
+    #region CountedCompleter implementation
     public partial class CountedCompleter
     {
         #region Constructors
@@ -268,7 +268,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region CountedCompleter<T>
+    #region CountedCompleter<T> implementation
     public partial class CountedCompleter<T>
     {
         #region Constructors

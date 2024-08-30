@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom
 {
-    #region ElementTraversal definition
+    #region ElementTraversal declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ElementTraversal.html"/>
     /// </summary>
@@ -110,7 +110,7 @@ namespace Org.W3c.Dom
     }
     #endregion
 
-    #region ElementTraversal
+    #region ElementTraversal implementation
     public partial class ElementTraversal : Org.W3c.Dom.IElementTraversal
     {
         #region Constructors

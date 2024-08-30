@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Border
 {
-    #region EmptyBorder definition
+    #region EmptyBorder declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EmptyBorder.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Border
     }
     #endregion
 
-    #region EmptyBorder
+    #region EmptyBorder implementation
     public partial class EmptyBorder
     {
         #region Constructors

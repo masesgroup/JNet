@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Attribute
 {
-    #region Size2DSyntax definition
+    #region Size2DSyntax declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/Size2DSyntax.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Print.Attribute
     }
     #endregion
 
-    #region Size2DSyntax
+    #region Size2DSyntax implementation
     public partial class Size2DSyntax
     {
         #region Constructors

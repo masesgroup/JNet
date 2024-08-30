@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time.Chrono
 {
-    #region HijrahDate definition
+    #region HijrahDate declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahDate.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Time.Chrono
     }
     #endregion
 
-    #region HijrahDate
+    #region HijrahDate implementation
     public partial class HijrahDate
     {
         #region Constructors

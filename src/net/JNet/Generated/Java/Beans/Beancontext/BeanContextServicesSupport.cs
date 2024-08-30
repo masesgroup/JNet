@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans.Beancontext
 {
-    #region BeanContextServicesSupport definition
+    #region BeanContextServicesSupport declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Beans.Beancontext
     }
     #endregion
 
-    #region BeanContextServicesSupport
+    #region BeanContextServicesSupport implementation
     public partial class BeanContextServicesSupport
     {
         #region Constructors

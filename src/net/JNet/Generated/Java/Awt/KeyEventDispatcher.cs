@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region KeyEventDispatcher definition
+    #region KeyEventDispatcher declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyEventDispatcher.html"/>
     /// </summary>
@@ -96,7 +96,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region KeyEventDispatcher
+    #region KeyEventDispatcher implementation
     public partial class KeyEventDispatcher : Java.Awt.IKeyEventDispatcher
     {
         #region Constructors

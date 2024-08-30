@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Invoke
 {
-    #region StringConcatFactory definition
+    #region StringConcatFactory declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/StringConcatFactory.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Lang.Invoke
     }
     #endregion
 
-    #region StringConcatFactory
+    #region StringConcatFactory implementation
     public partial class StringConcatFactory
     {
         #region Constructors

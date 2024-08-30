@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Table
 {
-    #region TableCellEditor definition
+    #region TableCellEditor declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableCellEditor.html"/>
     /// </summary>
@@ -100,7 +100,7 @@ namespace Javax.Swing.Table
     }
     #endregion
 
-    #region TableCellEditor
+    #region TableCellEditor implementation
     public partial class TableCellEditor : Javax.Swing.Table.ITableCellEditor
     {
         #region Constructors

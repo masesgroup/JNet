@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Transaction.Xa
 {
-    #region XAException definition
+    #region XAException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Transaction.Xa
     }
     #endregion
 
-    #region XAException
+    #region XAException implementation
     public partial class XAException
     {
         #region Constructors

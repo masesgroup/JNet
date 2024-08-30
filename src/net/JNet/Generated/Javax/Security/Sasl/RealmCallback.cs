@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Security.Sasl
 {
-    #region RealmCallback definition
+    #region RealmCallback declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/RealmCallback.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Security.Sasl
     }
     #endregion
 
-    #region RealmCallback
+    #region RealmCallback implementation
     public partial class RealmCallback
     {
         #region Constructors

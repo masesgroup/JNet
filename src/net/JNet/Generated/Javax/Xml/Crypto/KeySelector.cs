@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto
 {
-    #region KeySelector definition
+    #region KeySelector declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Xml.Crypto
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Purpose definition
+        #region Purpose declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.Purpose.html"/>
         /// </summary>
@@ -117,7 +117,7 @@ namespace Javax.Xml.Crypto
     }
     #endregion
 
-    #region KeySelector
+    #region KeySelector implementation
     public partial class KeySelector
     {
         #region Constructors
@@ -163,7 +163,7 @@ namespace Javax.Xml.Crypto
         #endregion
 
         #region Nested classes
-        #region Purpose
+        #region Purpose implementation
         public partial class Purpose
         {
             #region Constructors

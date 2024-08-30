@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
-    #region HierarchyBoundsAdapter definition
+    #region HierarchyBoundsAdapter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyBoundsAdapter.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region HierarchyBoundsAdapterDirect definition
+    #region HierarchyBoundsAdapterDirect declaration
     /// <summary>
     /// Direct override of <see cref="HierarchyBoundsAdapter"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region HierarchyBoundsAdapter
+    #region HierarchyBoundsAdapter implementation
     public partial class HierarchyBoundsAdapter
     {
         #region Constructors
@@ -174,7 +174,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region HierarchyBoundsAdapterDirect
+    #region HierarchyBoundsAdapterDirect implementation
     public partial class HierarchyBoundsAdapterDirect
     {
         #region Constructors

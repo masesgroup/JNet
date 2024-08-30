@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
-    #region HyperlinkEvent definition
+    #region HyperlinkEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkEvent.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Event
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region EventType definition
+        #region EventType declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkEvent.EventType.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region HyperlinkEvent
+    #region HyperlinkEvent implementation
     public partial class HyperlinkEvent
     {
         #region Constructors
@@ -220,7 +220,7 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Nested classes
-        #region EventType
+        #region EventType implementation
         public partial class EventType
         {
             #region Constructors

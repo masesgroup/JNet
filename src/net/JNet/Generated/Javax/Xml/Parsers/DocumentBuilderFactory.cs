@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Parsers
 {
-    #region DocumentBuilderFactory definition
+    #region DocumentBuilderFactory declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Xml.Parsers
     }
     #endregion
 
-    #region DocumentBuilderFactory
+    #region DocumentBuilderFactory implementation
     public partial class DocumentBuilderFactory
     {
         #region Constructors

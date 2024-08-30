@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql.Rowset.Spi
 {
-    #region XmlWriter definition
+    #region XmlWriter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/XmlWriter.html"/>
     /// </summary>
@@ -97,7 +97,7 @@ namespace Javax.Sql.Rowset.Spi
     }
     #endregion
 
-    #region XmlWriter
+    #region XmlWriter implementation
     public partial class XmlWriter : Javax.Sql.Rowset.Spi.IXmlWriter
     {
         #region Constructors

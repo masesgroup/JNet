@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
-    #region ListDataListener definition
+    #region ListDataListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region ListDataListenerDirect definition
+    #region ListDataListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="ListDataListener"/> or its generic type if there is one
     /// </summary>
@@ -125,7 +125,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region ListDataListener
+    #region ListDataListener implementation
     public partial class ListDataListener : Javax.Swing.Event.IListDataListener
     {
         #region Constructors
@@ -229,7 +229,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region ListDataListenerDirect
+    #region ListDataListenerDirect implementation
     public partial class ListDataListenerDirect : Javax.Swing.Event.IListDataListener
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Sampled
 {
-    #region LineUnavailableException definition
+    #region LineUnavailableException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineUnavailableException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Sound.Sampled
     }
     #endregion
 
-    #region LineUnavailableException
+    #region LineUnavailableException implementation
     public partial class LineUnavailableException
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Transform.Sax
 {
-    #region TemplatesHandler definition
+    #region TemplatesHandler declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TemplatesHandler.html"/>
     /// </summary>
@@ -98,7 +98,7 @@ namespace Javax.Xml.Transform.Sax
     }
     #endregion
 
-    #region TemplatesHandler
+    #region TemplatesHandler implementation
     public partial class TemplatesHandler : Javax.Xml.Transform.Sax.ITemplatesHandler
     {
         #region Constructors

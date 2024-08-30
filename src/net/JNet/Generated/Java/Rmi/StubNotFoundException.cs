@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi
 {
-    #region StubNotFoundException definition
+    #region StubNotFoundException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/StubNotFoundException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Rmi
     }
     #endregion
 
-    #region StubNotFoundException
+    #region StubNotFoundException implementation
     public partial class StubNotFoundException
     {
         #region Constructors

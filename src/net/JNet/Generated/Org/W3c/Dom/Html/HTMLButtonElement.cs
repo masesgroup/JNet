@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
-    #region HTMLButtonElement definition
+    #region HTMLButtonElement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLButtonElement.html"/>
     /// </summary>
@@ -118,7 +118,7 @@ namespace Org.W3c.Dom.Html
     }
     #endregion
 
-    #region HTMLButtonElement
+    #region HTMLButtonElement implementation
     public partial class HTMLButtonElement : Org.W3c.Dom.Html.IHTMLButtonElement
     {
         #region Constructors

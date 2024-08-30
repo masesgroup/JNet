@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region StackWalker definition
+    #region StackWalker declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Lang
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Option definition
+        #region Option declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Java.Lang
         }
         #endregion
 
-        #region StackFrame definition
+        #region StackFrame declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html"/>
         /// </summary>
@@ -162,7 +162,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region StackWalker
+    #region StackWalker implementation
     public partial class StackWalker
     {
         #region Constructors
@@ -249,7 +249,7 @@ namespace Java.Lang
         #endregion
 
         #region Nested classes
-        #region Option
+        #region Option implementation
         public partial class Option
         {
             #region Constructors
@@ -315,7 +315,7 @@ namespace Java.Lang
         }
         #endregion
 
-        #region StackFrame
+        #region StackFrame implementation
         public partial class StackFrame
         {
             #region Constructors

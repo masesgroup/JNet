@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region ServiceLoader definition
+    #region ServiceLoader declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region ServiceLoader<S> definition
+    #region ServiceLoader<S> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region ServiceLoader
+    #region ServiceLoader implementation
     public partial class ServiceLoader
     {
         #region Constructors
@@ -208,7 +208,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region ServiceLoader<S>
+    #region ServiceLoader<S> implementation
     public partial class ServiceLoader<S>
     {
         #region Constructors

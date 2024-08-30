@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Colorchooser
 {
-    #region ColorSelectionModel definition
+    #region ColorSelectionModel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/ColorSelectionModel.html"/>
     /// </summary>
@@ -104,7 +104,7 @@ namespace Javax.Swing.Colorchooser
     }
     #endregion
 
-    #region ColorSelectionModel
+    #region ColorSelectionModel implementation
     public partial class ColorSelectionModel : Javax.Swing.Colorchooser.IColorSelectionModel
     {
         #region Constructors

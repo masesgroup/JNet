@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ImageNs
 {
-    #region ComponentSampleModel definition
+    #region ComponentSampleModel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ComponentSampleModel.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.ImageNs
     }
     #endregion
 
-    #region ComponentSampleModel
+    #region ComponentSampleModel implementation
     public partial class ComponentSampleModel
     {
         #region Constructors

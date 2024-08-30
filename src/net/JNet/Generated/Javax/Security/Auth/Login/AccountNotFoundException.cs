@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Security.Auth.Login
 {
-    #region AccountNotFoundException definition
+    #region AccountNotFoundException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/AccountNotFoundException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Security.Auth.Login
     }
     #endregion
 
-    #region AccountNotFoundException
+    #region AccountNotFoundException implementation
     public partial class AccountNotFoundException
     {
         #region Constructors

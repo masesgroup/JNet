@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Datatransfer
 {
-    #region FlavorListener definition
+    #region FlavorListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/FlavorListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Awt.Datatransfer
     }
     #endregion
 
-    #region FlavorListenerDirect definition
+    #region FlavorListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="FlavorListener"/> or its generic type if there is one
     /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Awt.Datatransfer
     }
     #endregion
 
-    #region FlavorListener
+    #region FlavorListener implementation
     public partial class FlavorListener : Java.Awt.Datatransfer.IFlavorListener
     {
         #region Constructors
@@ -175,7 +175,7 @@ namespace Java.Awt.Datatransfer
     }
     #endregion
 
-    #region FlavorListenerDirect
+    #region FlavorListenerDirect implementation
     public partial class FlavorListenerDirect : Java.Awt.Datatransfer.IFlavorListener
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.Xml.Sax.Helpers
 {
-    #region AttributesImpl definition
+    #region AttributesImpl declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/AttributesImpl.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Org.Xml.Sax.Helpers
     }
     #endregion
 
-    #region AttributesImpl
+    #region AttributesImpl implementation
     public partial class AttributesImpl
     {
         #region Constructors

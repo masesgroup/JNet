@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ImageNs
 {
-    #region ShortLookupTable definition
+    #region ShortLookupTable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ShortLookupTable.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.ImageNs
     }
     #endregion
 
-    #region ShortLookupTable
+    #region ShortLookupTable implementation
     public partial class ShortLookupTable
     {
         #region Constructors

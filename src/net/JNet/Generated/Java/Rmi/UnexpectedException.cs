@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi
 {
-    #region UnexpectedException definition
+    #region UnexpectedException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/UnexpectedException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Rmi
     }
     #endregion
 
-    #region UnexpectedException
+    #region UnexpectedException implementation
     public partial class UnexpectedException
     {
         #region Constructors

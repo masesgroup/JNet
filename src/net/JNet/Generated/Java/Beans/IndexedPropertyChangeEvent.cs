@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans
 {
-    #region IndexedPropertyChangeEvent definition
+    #region IndexedPropertyChangeEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IndexedPropertyChangeEvent.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Beans
     }
     #endregion
 
-    #region IndexedPropertyChangeEvent
+    #region IndexedPropertyChangeEvent implementation
     public partial class IndexedPropertyChangeEvent
     {
         #region Constructors

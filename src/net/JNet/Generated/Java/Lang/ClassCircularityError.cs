@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region ClassCircularityError definition
+    #region ClassCircularityError declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassCircularityError.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region ClassCircularityError
+    #region ClassCircularityError implementation
     public partial class ClassCircularityError
     {
         #region Constructors

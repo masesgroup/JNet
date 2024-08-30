@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text.Html
 {
-    #region HTMLEditorKit definition
+    #region HTMLEditorKit declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Text.Html
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region HTMLFactory definition
+        #region HTMLFactory declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.HTMLFactory.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Swing.Text.Html
         }
         #endregion
 
-        #region HTMLTextAction definition
+        #region HTMLTextAction declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.HTMLTextAction.html"/>
         /// </summary>
@@ -158,7 +158,7 @@ namespace Javax.Swing.Text.Html
         }
         #endregion
 
-        #region InsertHTMLTextAction definition
+        #region InsertHTMLTextAction declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.InsertHTMLTextAction.html"/>
         /// </summary>
@@ -203,7 +203,7 @@ namespace Javax.Swing.Text.Html
         }
         #endregion
 
-        #region Parser definition
+        #region Parser declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.Parser.html"/>
         /// </summary>
@@ -250,7 +250,7 @@ namespace Javax.Swing.Text.Html
         }
         #endregion
 
-        #region ParserCallback definition
+        #region ParserCallback declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.ParserCallback.html"/>
         /// </summary>
@@ -299,7 +299,7 @@ namespace Javax.Swing.Text.Html
     }
     #endregion
 
-    #region HTMLEditorKit
+    #region HTMLEditorKit implementation
     public partial class HTMLEditorKit
     {
         #region Constructors
@@ -464,7 +464,7 @@ namespace Javax.Swing.Text.Html
         #endregion
 
         #region Nested classes
-        #region HTMLFactory
+        #region HTMLFactory implementation
         public partial class HTMLFactory
         {
             #region Constructors
@@ -504,7 +504,7 @@ namespace Javax.Swing.Text.Html
         }
         #endregion
 
-        #region HTMLTextAction
+        #region HTMLTextAction implementation
         public partial class HTMLTextAction
         {
             #region Constructors
@@ -543,7 +543,7 @@ namespace Javax.Swing.Text.Html
         }
         #endregion
 
-        #region InsertHTMLTextAction
+        #region InsertHTMLTextAction implementation
         public partial class InsertHTMLTextAction
         {
             #region Constructors
@@ -598,7 +598,7 @@ namespace Javax.Swing.Text.Html
         }
         #endregion
 
-        #region Parser
+        #region Parser implementation
         public partial class Parser
         {
             #region Constructors
@@ -640,7 +640,7 @@ namespace Javax.Swing.Text.Html
         }
         #endregion
 
-        #region ParserCallback
+        #region ParserCallback implementation
         public partial class ParserCallback
         {
             #region Constructors

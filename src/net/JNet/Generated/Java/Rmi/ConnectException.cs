@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi
 {
-    #region ConnectException definition
+    #region ConnectException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/ConnectException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Rmi
     }
     #endregion
 
-    #region ConnectException
+    #region ConnectException implementation
     public partial class ConnectException
     {
         #region Constructors

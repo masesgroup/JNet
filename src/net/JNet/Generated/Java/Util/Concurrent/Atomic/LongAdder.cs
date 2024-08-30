@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent.Atomic
 {
-    #region LongAdder definition
+    #region LongAdder declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAdder.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Concurrent.Atomic
     }
     #endregion
 
-    #region LongAdder
+    #region LongAdder implementation
     public partial class LongAdder
     {
         #region Constructors

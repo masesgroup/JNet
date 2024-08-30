@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time.Chrono
 {
-    #region AbstractChronology definition
+    #region AbstractChronology declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/AbstractChronology.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Time.Chrono
     }
     #endregion
 
-    #region AbstractChronology
+    #region AbstractChronology implementation
     public partial class AbstractChronology
     {
         #region Constructors

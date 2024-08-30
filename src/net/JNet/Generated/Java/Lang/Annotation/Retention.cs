@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Annotation
 {
-    #region Retention definition
+    #region Retention declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Retention.html"/>
     /// </summary>
@@ -95,7 +95,7 @@ namespace Java.Lang.Annotation
     }
     #endregion
 
-    #region Retention
+    #region Retention implementation
     public partial class Retention : Java.Lang.Annotation.IRetention
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
-    #region EventListenerList definition
+    #region EventListenerList declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/EventListenerList.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region EventListenerList
+    #region EventListenerList implementation
     public partial class EventListenerList
     {
         #region Constructors

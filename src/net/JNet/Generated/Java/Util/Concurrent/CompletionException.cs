@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region CompletionException definition
+    #region CompletionException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region CompletionException
+    #region CompletionException implementation
     public partial class CompletionException
     {
         #region Constructors

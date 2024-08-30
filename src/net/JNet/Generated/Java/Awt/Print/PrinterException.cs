@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Print
 {
-    #region PrinterException definition
+    #region PrinterException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Awt.Print
     }
     #endregion
 
-    #region PrinterException
+    #region PrinterException implementation
     public partial class PrinterException
     {
         #region Constructors

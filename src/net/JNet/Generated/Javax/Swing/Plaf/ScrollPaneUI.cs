@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf
 {
-    #region ScrollPaneUI definition
+    #region ScrollPaneUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ScrollPaneUI.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Swing.Plaf
     }
     #endregion
 
-    #region ScrollPaneUI
+    #region ScrollPaneUI implementation
     public partial class ScrollPaneUI
     {
         #region Constructors

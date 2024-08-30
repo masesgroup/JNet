@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ImageNs
 {
-    #region AffineTransformOp definition
+    #region AffineTransformOp declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/AffineTransformOp.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.ImageNs
     }
     #endregion
 
-    #region AffineTransformOp
+    #region AffineTransformOp implementation
     public partial class AffineTransformOp
     {
         #region Constructors

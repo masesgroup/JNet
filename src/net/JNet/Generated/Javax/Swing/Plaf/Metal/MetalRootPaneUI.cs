@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Metal
 {
-    #region MetalRootPaneUI definition
+    #region MetalRootPaneUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalRootPaneUI.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf.Metal
     }
     #endregion
 
-    #region MetalRootPaneUI
+    #region MetalRootPaneUI implementation
     public partial class MetalRootPaneUI
     {
         #region Constructors

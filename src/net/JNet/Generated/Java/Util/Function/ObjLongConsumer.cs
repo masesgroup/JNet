@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region ObjLongConsumer definition
+    #region ObjLongConsumer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjLongConsumer.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjLongConsumerDirect definition
+    #region ObjLongConsumerDirect declaration
     /// <summary>
     /// Direct override of <see cref="ObjLongConsumer"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjLongConsumer<T> definition
+    #region ObjLongConsumer<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjLongConsumer.html"/>
     /// </summary>
@@ -119,7 +119,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjLongConsumerDirect<T> definition
+    #region ObjLongConsumerDirect<T> declaration
     /// <summary>
     /// Direct override of <see cref="ObjLongConsumer"/> or its generic type if there is one
     /// </summary>
@@ -160,7 +160,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjLongConsumer
+    #region ObjLongConsumer implementation
     public partial class ObjLongConsumer
     {
         #region Constructors
@@ -221,7 +221,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjLongConsumerDirect
+    #region ObjLongConsumerDirect implementation
     public partial class ObjLongConsumerDirect
     {
         #region Constructors
@@ -285,7 +285,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjLongConsumer<T>
+    #region ObjLongConsumer<T> implementation
     public partial class ObjLongConsumer<T> : Java.Util.Function.IObjLongConsumer<T>
     {
         #region Constructors
@@ -346,7 +346,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjLongConsumerDirect<T>
+    #region ObjLongConsumerDirect<T> implementation
     public partial class ObjLongConsumerDirect<T> : Java.Util.Function.IObjLongConsumer<T>
     {
         #region Constructors

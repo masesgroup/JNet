@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Datatransfer
 {
-    #region UnsupportedFlavorException definition
+    #region UnsupportedFlavorException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/UnsupportedFlavorException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Awt.Datatransfer
     }
     #endregion
 
-    #region UnsupportedFlavorException
+    #region UnsupportedFlavorException implementation
     public partial class UnsupportedFlavorException
     {
         #region Constructors

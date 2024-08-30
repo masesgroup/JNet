@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Ldap
 {
-    #region UnsolicitedNotification definition
+    #region UnsolicitedNotification declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotification.html"/>
     /// </summary>
@@ -98,7 +98,7 @@ namespace Javax.Naming.Ldap
     }
     #endregion
 
-    #region UnsolicitedNotification
+    #region UnsolicitedNotification implementation
     public partial class UnsolicitedNotification : Javax.Naming.Ldap.IUnsolicitedNotification
     {
         #region Constructors

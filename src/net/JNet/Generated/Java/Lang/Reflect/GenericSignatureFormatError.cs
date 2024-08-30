@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
-    #region GenericSignatureFormatError definition
+    #region GenericSignatureFormatError declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/GenericSignatureFormatError.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region GenericSignatureFormatError
+    #region GenericSignatureFormatError implementation
     public partial class GenericSignatureFormatError
     {
         #region Constructors

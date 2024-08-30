@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Text
 {
-    #region CollationElementIterator definition
+    #region CollationElementIterator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationElementIterator.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Text
     }
     #endregion
 
-    #region CollationElementIterator
+    #region CollationElementIterator implementation
     public partial class CollationElementIterator
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Ref
 {
-    #region Cleaner definition
+    #region Cleaner declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Cleaner.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Lang.Ref
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Cleanable definition
+        #region Cleanable declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Cleaner.Cleanable.html"/>
         /// </summary>
@@ -117,7 +117,7 @@ namespace Java.Lang.Ref
     }
     #endregion
 
-    #region Cleaner
+    #region Cleaner implementation
     public partial class Cleaner
     {
         #region Constructors
@@ -168,7 +168,7 @@ namespace Java.Lang.Ref
         #endregion
 
         #region Nested classes
-        #region Cleanable
+        #region Cleanable implementation
         public partial class Cleanable
         {
             #region Constructors

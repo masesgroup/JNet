@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Relation
 {
-    #region InvalidRoleInfoException definition
+    #region InvalidRoleInfoException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/InvalidRoleInfoException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Management.Relation
     }
     #endregion
 
-    #region InvalidRoleInfoException
+    #region InvalidRoleInfoException implementation
     public partial class InvalidRoleInfoException
     {
         #region Constructors

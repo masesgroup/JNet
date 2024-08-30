@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region BiPredicate definition
+    #region BiPredicate declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BiPredicateDirect definition
+    #region BiPredicateDirect declaration
     /// <summary>
     /// Direct override of <see cref="BiPredicate"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BiPredicate<T, U> definition
+    #region BiPredicate<T, U> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BiPredicateDirect<T, U> definition
+    #region BiPredicateDirect<T, U> declaration
     /// <summary>
     /// Direct override of <see cref="BiPredicate"/> or its generic type if there is one
     /// </summary>
@@ -161,7 +161,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BiPredicate
+    #region BiPredicate implementation
     public partial class BiPredicate
     {
         #region Constructors
@@ -327,7 +327,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BiPredicateDirect
+    #region BiPredicateDirect implementation
     public partial class BiPredicateDirect
     {
         #region Constructors
@@ -440,7 +440,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BiPredicate<T, U>
+    #region BiPredicate<T, U> implementation
     public partial class BiPredicate<T, U> : Java.Util.Function.IBiPredicate<T, U>
     {
         #region Constructors
@@ -614,7 +614,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BiPredicateDirect<T, U>
+    #region BiPredicateDirect<T, U> implementation
     public partial class BiPredicateDirect<T, U> : Java.Util.Function.IBiPredicate<T, U>
     {
         #region Constructors

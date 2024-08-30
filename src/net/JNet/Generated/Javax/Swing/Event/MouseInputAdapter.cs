@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
-    #region MouseInputAdapter definition
+    #region MouseInputAdapter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MouseInputAdapter.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region MouseInputAdapterDirect definition
+    #region MouseInputAdapterDirect declaration
     /// <summary>
     /// Direct override of <see cref="MouseInputAdapter"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region MouseInputAdapter
+    #region MouseInputAdapter implementation
     public partial class MouseInputAdapter
     {
         #region Constructors
@@ -306,7 +306,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region MouseInputAdapterDirect
+    #region MouseInputAdapterDirect implementation
     public partial class MouseInputAdapterDirect
     {
         #region Constructors

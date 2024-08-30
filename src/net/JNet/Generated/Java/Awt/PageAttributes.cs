@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region PageAttributes definition
+    #region PageAttributes declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Awt
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region ColorType definition
+        #region ColorType declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.ColorType.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Java.Awt
         }
         #endregion
 
-        #region MediaType definition
+        #region MediaType declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html"/>
         /// </summary>
@@ -156,7 +156,7 @@ namespace Java.Awt
         }
         #endregion
 
-        #region OrientationRequestedType definition
+        #region OrientationRequestedType declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.OrientationRequestedType.html"/>
         /// </summary>
@@ -201,7 +201,7 @@ namespace Java.Awt
         }
         #endregion
 
-        #region OriginType definition
+        #region OriginType declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.OriginType.html"/>
         /// </summary>
@@ -246,7 +246,7 @@ namespace Java.Awt
         }
         #endregion
 
-        #region PrintQualityType definition
+        #region PrintQualityType declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.PrintQualityType.html"/>
         /// </summary>
@@ -295,7 +295,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region PageAttributes
+    #region PageAttributes implementation
     public partial class PageAttributes
     {
         #region Constructors
@@ -466,7 +466,7 @@ namespace Java.Awt
         #endregion
 
         #region Nested classes
-        #region ColorType
+        #region ColorType implementation
         public partial class ColorType
         {
             #region Constructors
@@ -509,7 +509,7 @@ namespace Java.Awt
         }
         #endregion
 
-        #region MediaType
+        #region MediaType implementation
         public partial class MediaType
         {
             #region Constructors
@@ -1422,7 +1422,7 @@ namespace Java.Awt
         }
         #endregion
 
-        #region OrientationRequestedType
+        #region OrientationRequestedType implementation
         public partial class OrientationRequestedType
         {
             #region Constructors
@@ -1465,7 +1465,7 @@ namespace Java.Awt
         }
         #endregion
 
-        #region OriginType
+        #region OriginType implementation
         public partial class OriginType
         {
             #region Constructors
@@ -1508,7 +1508,7 @@ namespace Java.Awt
         }
         #endregion
 
-        #region PrintQualityType
+        #region PrintQualityType implementation
         public partial class PrintQualityType
         {
             #region Constructors

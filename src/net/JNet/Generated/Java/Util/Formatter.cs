@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region Formatter definition
+    #region Formatter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Util
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region BigDecimalLayoutForm definition
+        #region BigDecimalLayoutForm declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.BigDecimalLayoutForm.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Formatter
+    #region Formatter implementation
     public partial class Formatter
     {
         #region Constructors
@@ -364,7 +364,7 @@ namespace Java.Util
         #endregion
 
         #region Nested classes
-        #region BigDecimalLayoutForm
+        #region BigDecimalLayoutForm implementation
         public partial class BigDecimalLayoutForm
         {
             #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Multi
 {
-    #region MultiViewportUI definition
+    #region MultiViewportUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/multi/MultiViewportUI.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf.Multi
     }
     #endregion
 
-    #region MultiViewportUI
+    #region MultiViewportUI implementation
     public partial class MultiViewportUI
     {
         #region Constructors

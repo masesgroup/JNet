@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf
 {
-    #region SliderUI definition
+    #region SliderUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/SliderUI.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Swing.Plaf
     }
     #endregion
 
-    #region SliderUI
+    #region SliderUI implementation
     public partial class SliderUI
     {
         #region Constructors

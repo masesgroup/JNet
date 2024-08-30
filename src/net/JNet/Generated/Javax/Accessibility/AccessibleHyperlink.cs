@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Accessibility
 {
-    #region AccessibleHyperlink definition
+    #region AccessibleHyperlink declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleHyperlink.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Accessibility
     }
     #endregion
 
-    #region AccessibleHyperlink
+    #region AccessibleHyperlink implementation
     public partial class AccessibleHyperlink
     {
         #region Constructors

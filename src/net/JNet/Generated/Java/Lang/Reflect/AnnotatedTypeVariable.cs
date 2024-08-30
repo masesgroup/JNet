@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
-    #region AnnotatedTypeVariable definition
+    #region AnnotatedTypeVariable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedTypeVariable.html"/>
     /// </summary>
@@ -98,7 +98,7 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region AnnotatedTypeVariable
+    #region AnnotatedTypeVariable implementation
     public partial class AnnotatedTypeVariable : Java.Lang.Reflect.IAnnotatedTypeVariable
     {
         #region Constructors

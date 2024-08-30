@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
-    #region MouseListener definition
+    #region MouseListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region MouseListenerDirect definition
+    #region MouseListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="MouseListener"/> or its generic type if there is one
     /// </summary>
@@ -135,7 +135,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region MouseListener
+    #region MouseListener implementation
     public partial class MouseListener : Java.Awt.EventNs.IMouseListener
     {
         #region Constructors
@@ -283,7 +283,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region MouseListenerDirect
+    #region MouseListenerDirect implementation
     public partial class MouseListenerDirect : Java.Awt.EventNs.IMouseListener
     {
         #region Constructors

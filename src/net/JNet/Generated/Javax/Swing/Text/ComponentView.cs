@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region ComponentView definition
+    #region ComponentView declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ComponentView.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region ComponentView
+    #region ComponentView implementation
     public partial class ComponentView
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Relation
 {
-    #region RelationNotFoundException definition
+    #region RelationNotFoundException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotFoundException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Management.Relation
     }
     #endregion
 
-    #region RelationNotFoundException
+    #region RelationNotFoundException implementation
     public partial class RelationNotFoundException
     {
         #region Constructors

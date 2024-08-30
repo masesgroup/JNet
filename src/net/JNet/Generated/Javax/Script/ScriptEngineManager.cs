@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Script
 {
-    #region ScriptEngineManager definition
+    #region ScriptEngineManager declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineManager.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Script
     }
     #endregion
 
-    #region ScriptEngineManager
+    #region ScriptEngineManager implementation
     public partial class ScriptEngineManager
     {
         #region Constructors

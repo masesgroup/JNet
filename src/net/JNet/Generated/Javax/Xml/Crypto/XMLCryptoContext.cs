@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto
 {
-    #region XMLCryptoContext definition
+    #region XMLCryptoContext declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html"/>
     /// </summary>
@@ -146,7 +146,7 @@ namespace Javax.Xml.Crypto
     }
     #endregion
 
-    #region XMLCryptoContext
+    #region XMLCryptoContext implementation
     public partial class XMLCryptoContext : Javax.Xml.Crypto.IXMLCryptoContext
     {
         #region Constructors

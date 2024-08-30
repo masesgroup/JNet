@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi.Activation
 {
-    #region ActivationMonitor definition
+    #region ActivationMonitor declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationMonitor.html"/>
     /// </summary>
@@ -114,7 +114,7 @@ namespace Java.Rmi.Activation
     }
     #endregion
 
-    #region ActivationMonitor
+    #region ActivationMonitor implementation
     public partial class ActivationMonitor : Java.Rmi.Activation.IActivationMonitor
     {
         #region Constructors

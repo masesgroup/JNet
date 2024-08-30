@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File.Attribute
 {
-    #region UserPrincipalLookupService definition
+    #region UserPrincipalLookupService declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/UserPrincipalLookupService.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Nio.File.Attribute
     }
     #endregion
 
-    #region UserPrincipalLookupService
+    #region UserPrincipalLookupService implementation
     public partial class UserPrincipalLookupService
     {
         #region Constructors

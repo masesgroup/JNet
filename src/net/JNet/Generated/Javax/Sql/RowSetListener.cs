@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql
 {
-    #region RowSetListener definition
+    #region RowSetListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Sql
     }
     #endregion
 
-    #region RowSetListenerDirect definition
+    #region RowSetListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="RowSetListener"/> or its generic type if there is one
     /// </summary>
@@ -125,7 +125,7 @@ namespace Javax.Sql
     }
     #endregion
 
-    #region RowSetListener
+    #region RowSetListener implementation
     public partial class RowSetListener : Javax.Sql.IRowSetListener
     {
         #region Constructors
@@ -229,7 +229,7 @@ namespace Javax.Sql
     }
     #endregion
 
-    #region RowSetListenerDirect
+    #region RowSetListenerDirect implementation
     public partial class RowSetListenerDirect : Javax.Sql.IRowSetListener
     {
         #region Constructors

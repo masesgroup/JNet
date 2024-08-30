@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region AttributeNotFoundException definition
+    #region AttributeNotFoundException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeNotFoundException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region AttributeNotFoundException
+    #region AttributeNotFoundException implementation
     public partial class AttributeNotFoundException
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File.Spi
 {
-    #region FileSystemProvider definition
+    #region FileSystemProvider declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Nio.File.Spi
     }
     #endregion
 
-    #region FileSystemProvider
+    #region FileSystemProvider implementation
     public partial class FileSystemProvider
     {
         #region Constructors

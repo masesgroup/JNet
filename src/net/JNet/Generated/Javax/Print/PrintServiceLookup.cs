@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print
 {
-    #region PrintServiceLookup definition
+    #region PrintServiceLookup declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintServiceLookup.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Print
     }
     #endregion
 
-    #region PrintServiceLookup
+    #region PrintServiceLookup implementation
     public partial class PrintServiceLookup
     {
         #region Constructors

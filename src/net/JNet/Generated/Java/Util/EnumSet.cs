@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region EnumSet definition
+    #region EnumSet declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumSet.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region EnumSet<E> definition
+    #region EnumSet<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumSet.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region EnumSet
+    #region EnumSet implementation
     public partial class EnumSet
     {
         #region Constructors
@@ -287,7 +287,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region EnumSet<E>
+    #region EnumSet<E> implementation
     public partial class EnumSet<E>
     {
         #region Constructors

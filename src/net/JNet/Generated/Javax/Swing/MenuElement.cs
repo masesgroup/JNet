@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region MenuElement definition
+    #region MenuElement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MenuElement.html"/>
     /// </summary>
@@ -117,7 +117,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region MenuElement
+    #region MenuElement implementation
     public partial class MenuElement : Javax.Swing.IMenuElement
     {
         #region Constructors

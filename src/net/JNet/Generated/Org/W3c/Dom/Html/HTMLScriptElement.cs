@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
-    #region HTMLScriptElement definition
+    #region HTMLScriptElement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLScriptElement.html"/>
     /// </summary>
@@ -118,7 +118,7 @@ namespace Org.W3c.Dom.Html
     }
     #endregion
 
-    #region HTMLScriptElement
+    #region HTMLScriptElement implementation
     public partial class HTMLScriptElement : Org.W3c.Dom.Html.IHTMLScriptElement
     {
         #region Constructors

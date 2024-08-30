@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region Function definition
+    #region Function declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region FunctionDirect definition
+    #region FunctionDirect declaration
     /// <summary>
     /// Direct override of <see cref="Function"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region Function<T, R> definition
+    #region Function<T, R> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region FunctionDirect<T, R> definition
+    #region FunctionDirect<T, R> declaration
     /// <summary>
     /// Direct override of <see cref="Function"/> or its generic type if there is one
     /// </summary>
@@ -161,7 +161,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region Function
+    #region Function implementation
     public partial class Function
     {
         #region Constructors
@@ -302,7 +302,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region FunctionDirect
+    #region FunctionDirect implementation
     public partial class FunctionDirect
     {
         #region Constructors
@@ -402,7 +402,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region Function<T, R>
+    #region Function<T, R> implementation
     public partial class Function<T, R> : Java.Util.Function.IFunction<T, R>
     {
         #region Constructors
@@ -555,7 +555,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region FunctionDirect<T, R>
+    #region FunctionDirect<T, R> implementation
     public partial class FunctionDirect<T, R> : Java.Util.Function.IFunction<T, R>
     {
         #region Constructors

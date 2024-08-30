@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
-    #region FileOutputStream definition
+    #region FileOutputStream declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileOutputStream.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Io
     }
     #endregion
 
-    #region FileOutputStream
+    #region FileOutputStream implementation
     public partial class FileOutputStream
     {
         #region Constructors

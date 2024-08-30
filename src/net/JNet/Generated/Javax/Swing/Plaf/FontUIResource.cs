@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf
 {
-    #region FontUIResource definition
+    #region FontUIResource declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/FontUIResource.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf
     }
     #endregion
 
-    #region FontUIResource
+    #region FontUIResource implementation
     public partial class FontUIResource
     {
         #region Constructors

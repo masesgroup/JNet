@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.FontNs
 {
-    #region ShapeGraphicAttribute definition
+    #region ShapeGraphicAttribute declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/ShapeGraphicAttribute.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.FontNs
     }
     #endregion
 
-    #region ShapeGraphicAttribute
+    #region ShapeGraphicAttribute implementation
     public partial class ShapeGraphicAttribute
     {
         #region Constructors

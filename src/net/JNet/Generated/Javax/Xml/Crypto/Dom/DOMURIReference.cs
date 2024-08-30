@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dom
 {
-    #region DOMURIReference definition
+    #region DOMURIReference declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMURIReference.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Javax.Xml.Crypto.Dom
     }
     #endregion
 
-    #region DOMURIReference
+    #region DOMURIReference implementation
     public partial class DOMURIReference : Javax.Xml.Crypto.Dom.IDOMURIReference
     {
         #region Constructors

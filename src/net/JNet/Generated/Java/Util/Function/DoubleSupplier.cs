@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region DoubleSupplier definition
+    #region DoubleSupplier declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleSupplier.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region DoubleSupplierDirect definition
+    #region DoubleSupplierDirect declaration
     /// <summary>
     /// Direct override of <see cref="DoubleSupplier"/> or its generic type if there is one
     /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region DoubleSupplier
+    #region DoubleSupplier implementation
     public partial class DoubleSupplier : Java.Util.Function.IDoubleSupplier
     {
         #region Constructors
@@ -176,7 +176,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region DoubleSupplierDirect
+    #region DoubleSupplierDirect implementation
     public partial class DoubleSupplierDirect : Java.Util.Function.IDoubleSupplier
     {
         #region Constructors

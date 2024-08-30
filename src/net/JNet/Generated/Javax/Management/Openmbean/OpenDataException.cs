@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Openmbean
 {
-    #region OpenDataException definition
+    #region OpenDataException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenDataException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Management.Openmbean
     }
     #endregion
 
-    #region OpenDataException
+    #region OpenDataException implementation
     public partial class OpenDataException
     {
         #region Constructors

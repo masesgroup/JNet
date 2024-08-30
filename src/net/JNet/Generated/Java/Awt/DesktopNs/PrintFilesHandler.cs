@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.DesktopNs
 {
-    #region PrintFilesHandler definition
+    #region PrintFilesHandler declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/PrintFilesHandler.html"/>
     /// </summary>
@@ -95,7 +95,7 @@ namespace Java.Awt.DesktopNs
     }
     #endregion
 
-    #region PrintFilesHandler
+    #region PrintFilesHandler implementation
     public partial class PrintFilesHandler : Java.Awt.DesktopNs.IPrintFilesHandler
     {
         #region Constructors

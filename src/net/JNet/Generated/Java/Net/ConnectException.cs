@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
-    #region ConnectException definition
+    #region ConnectException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ConnectException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Net
     }
     #endregion
 
-    #region ConnectException
+    #region ConnectException implementation
     public partial class ConnectException
     {
         #region Constructors

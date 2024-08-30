@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans.Beancontext
 {
-    #region BeanContextProxy definition
+    #region BeanContextProxy declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextProxy.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Java.Beans.Beancontext
     }
     #endregion
 
-    #region BeanContextProxy
+    #region BeanContextProxy implementation
     public partial class BeanContextProxy : Java.Beans.Beancontext.IBeanContextProxy
     {
         #region Constructors

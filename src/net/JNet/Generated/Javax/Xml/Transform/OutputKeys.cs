@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Transform
 {
-    #region OutputKeys definition
+    #region OutputKeys declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Xml.Transform
     }
     #endregion
 
-    #region OutputKeys
+    #region OutputKeys implementation
     public partial class OutputKeys
     {
         #region Constructors

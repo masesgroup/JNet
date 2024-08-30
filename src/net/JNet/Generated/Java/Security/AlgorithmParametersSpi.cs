@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region AlgorithmParametersSpi definition
+    #region AlgorithmParametersSpi declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParametersSpi.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region AlgorithmParametersSpi
+    #region AlgorithmParametersSpi implementation
     public partial class AlgorithmParametersSpi
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region BootstrapMethodError definition
+    #region BootstrapMethodError declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/BootstrapMethodError.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region BootstrapMethodError
+    #region BootstrapMethodError implementation
     public partial class BootstrapMethodError
     {
         #region Constructors

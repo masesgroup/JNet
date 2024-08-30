@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.FontNs
 {
-    #region TextAttribute definition
+    #region TextAttribute declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextAttribute.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.FontNs
     }
     #endregion
 
-    #region TextAttribute
+    #region TextAttribute implementation
     public partial class TextAttribute
     {
         #region Constructors

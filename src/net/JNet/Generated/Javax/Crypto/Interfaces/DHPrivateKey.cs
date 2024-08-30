@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Crypto.Interfaces
 {
-    #region DHPrivateKey definition
+    #region DHPrivateKey declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/DHPrivateKey.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Javax.Crypto.Interfaces
     }
     #endregion
 
-    #region DHPrivateKey
+    #region DHPrivateKey implementation
     public partial class DHPrivateKey : Javax.Crypto.Interfaces.IDHPrivateKey
     {
         #region Constructors

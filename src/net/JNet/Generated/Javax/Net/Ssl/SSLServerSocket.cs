@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Net.Ssl
 {
-    #region SSLServerSocket definition
+    #region SSLServerSocket declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region SSLServerSocket
+    #region SSLServerSocket implementation
     public partial class SSLServerSocket
     {
         #region Constructors

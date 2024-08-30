@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region AttributeValueExp definition
+    #region AttributeValueExp declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeValueExp.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region AttributeValueExp
+    #region AttributeValueExp implementation
     public partial class AttributeValueExp
     {
         #region Constructors

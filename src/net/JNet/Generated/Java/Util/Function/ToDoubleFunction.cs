@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region ToDoubleFunction definition
+    #region ToDoubleFunction declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToDoubleFunction.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToDoubleFunctionDirect definition
+    #region ToDoubleFunctionDirect declaration
     /// <summary>
     /// Direct override of <see cref="ToDoubleFunction"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToDoubleFunction<T> definition
+    #region ToDoubleFunction<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToDoubleFunction.html"/>
     /// </summary>
@@ -119,7 +119,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToDoubleFunctionDirect<T> definition
+    #region ToDoubleFunctionDirect<T> declaration
     /// <summary>
     /// Direct override of <see cref="ToDoubleFunction"/> or its generic type if there is one
     /// </summary>
@@ -160,7 +160,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToDoubleFunction
+    #region ToDoubleFunction implementation
     public partial class ToDoubleFunction
     {
         #region Constructors
@@ -222,7 +222,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToDoubleFunctionDirect
+    #region ToDoubleFunctionDirect implementation
     public partial class ToDoubleFunctionDirect
     {
         #region Constructors
@@ -286,7 +286,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToDoubleFunction<T>
+    #region ToDoubleFunction<T> implementation
     public partial class ToDoubleFunction<T> : Java.Util.Function.IToDoubleFunction<T>
     {
         #region Constructors
@@ -348,7 +348,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToDoubleFunctionDirect<T>
+    #region ToDoubleFunctionDirect<T> implementation
     public partial class ToDoubleFunctionDirect<T> : Java.Util.Function.IToDoubleFunction<T>
     {
         #region Constructors

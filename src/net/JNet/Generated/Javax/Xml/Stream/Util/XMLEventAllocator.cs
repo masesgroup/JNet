@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream.Util
 {
-    #region XMLEventAllocator definition
+    #region XMLEventAllocator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/XMLEventAllocator.html"/>
     /// </summary>
@@ -109,7 +109,7 @@ namespace Javax.Xml.Stream.Util
     }
     #endregion
 
-    #region XMLEventAllocator
+    #region XMLEventAllocator implementation
     public partial class XMLEventAllocator : Javax.Xml.Stream.Util.IXMLEventAllocator
     {
         #region Constructors

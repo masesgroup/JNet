@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom
 {
-    #region NameList definition
+    #region NameList declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/NameList.html"/>
     /// </summary>
@@ -119,7 +119,7 @@ namespace Org.W3c.Dom
     }
     #endregion
 
-    #region NameList
+    #region NameList implementation
     public partial class NameList : Org.W3c.Dom.INameList
     {
         #region Constructors

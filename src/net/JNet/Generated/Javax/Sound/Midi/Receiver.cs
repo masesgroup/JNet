@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Midi
 {
-    #region Receiver definition
+    #region Receiver declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Receiver.html"/>
     /// </summary>
@@ -100,7 +100,7 @@ namespace Javax.Sound.Midi
     }
     #endregion
 
-    #region Receiver
+    #region Receiver implementation
     public partial class Receiver : Javax.Sound.Midi.IReceiver
     {
         #region Constructors

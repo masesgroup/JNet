@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio
 {
-    #region ImageTranscoder definition
+    #region ImageTranscoder declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTranscoder.html"/>
     /// </summary>
@@ -105,7 +105,7 @@ namespace Javax.Imageio
     }
     #endregion
 
-    #region ImageTranscoder
+    #region ImageTranscoder implementation
     public partial class ImageTranscoder : Javax.Imageio.IImageTranscoder
     {
         #region Constructors

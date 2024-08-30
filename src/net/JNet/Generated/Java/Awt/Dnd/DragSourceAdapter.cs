@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Dnd
 {
-    #region DragSourceAdapter definition
+    #region DragSourceAdapter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Awt.Dnd
     }
     #endregion
 
-    #region DragSourceAdapterDirect definition
+    #region DragSourceAdapterDirect declaration
     /// <summary>
     /// Direct override of <see cref="DragSourceAdapter"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Java.Awt.Dnd
     }
     #endregion
 
-    #region DragSourceAdapter
+    #region DragSourceAdapter implementation
     public partial class DragSourceAdapter
     {
         #region Constructors
@@ -262,7 +262,7 @@ namespace Java.Awt.Dnd
     }
     #endregion
 
-    #region DragSourceAdapterDirect
+    #region DragSourceAdapterDirect implementation
     public partial class DragSourceAdapterDirect
     {
         #region Constructors

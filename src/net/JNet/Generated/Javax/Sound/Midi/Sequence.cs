@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Midi
 {
-    #region Sequence definition
+    #region Sequence declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Sound.Midi
     }
     #endregion
 
-    #region Sequence
+    #region Sequence implementation
     public partial class Sequence
     {
         #region Constructors

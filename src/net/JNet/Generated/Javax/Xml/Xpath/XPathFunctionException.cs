@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Xpath
 {
-    #region XPathFunctionException definition
+    #region XPathFunctionException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFunctionException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Xml.Xpath
     }
     #endregion
 
-    #region XPathFunctionException
+    #region XPathFunctionException implementation
     public partial class XPathFunctionException
     {
         #region Constructors

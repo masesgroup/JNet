@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Spec
 {
-    #region ECFieldF2m definition
+    #region ECFieldF2m declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECFieldF2m.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Security.Spec
     }
     #endregion
 
-    #region ECFieldF2m
+    #region ECFieldF2m implementation
     public partial class ECFieldF2m
     {
         #region Constructors

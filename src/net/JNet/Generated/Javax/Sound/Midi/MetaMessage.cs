@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Midi
 {
-    #region MetaMessage definition
+    #region MetaMessage declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MetaMessage.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Sound.Midi
     }
     #endregion
 
-    #region MetaMessage
+    #region MetaMessage implementation
     public partial class MetaMessage
     {
         #region Constructors

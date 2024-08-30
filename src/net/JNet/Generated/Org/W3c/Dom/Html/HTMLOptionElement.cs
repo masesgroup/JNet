@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
-    #region HTMLOptionElement definition
+    #region HTMLOptionElement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptionElement.html"/>
     /// </summary>
@@ -122,7 +122,7 @@ namespace Org.W3c.Dom.Html
     }
     #endregion
 
-    #region HTMLOptionElement
+    #region HTMLOptionElement implementation
     public partial class HTMLOptionElement : Org.W3c.Dom.Html.IHTMLOptionElement
     {
         #region Constructors

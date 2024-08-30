@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Tools
 {
-    #region JavaCompiler definition
+    #region JavaCompiler declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaCompiler.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Tools
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region CompilationTask definition
+        #region CompilationTask declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaCompiler.CompilationTask.html"/>
         /// </summary>
@@ -137,7 +137,7 @@ namespace Javax.Tools
     }
     #endregion
 
-    #region JavaCompiler
+    #region JavaCompiler implementation
     public partial class JavaCompiler : Javax.Tools.IJavaCompiler
     {
         #region Constructors
@@ -169,7 +169,7 @@ namespace Javax.Tools
         #endregion
 
         #region Nested classes
-        #region CompilationTask
+        #region CompilationTask implementation
         public partial class CompilationTask
         {
             #region Constructors

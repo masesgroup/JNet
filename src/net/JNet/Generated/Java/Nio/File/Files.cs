@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File
 {
-    #region Files definition
+    #region Files declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region Files
+    #region Files implementation
     public partial class Files
     {
         #region Constructors

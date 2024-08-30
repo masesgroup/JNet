@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region DoubleToLongFunction definition
+    #region DoubleToLongFunction declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleToLongFunction.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region DoubleToLongFunctionDirect definition
+    #region DoubleToLongFunctionDirect declaration
     /// <summary>
     /// Direct override of <see cref="DoubleToLongFunction"/> or its generic type if there is one
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region DoubleToLongFunction
+    #region DoubleToLongFunction implementation
     public partial class DoubleToLongFunction : Java.Util.Function.IDoubleToLongFunction
     {
         #region Constructors
@@ -178,7 +178,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region DoubleToLongFunctionDirect
+    #region DoubleToLongFunctionDirect implementation
     public partial class DoubleToLongFunctionDirect : Java.Util.Function.IDoubleToLongFunction
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
-    #region NetPermission definition
+    #region NetPermission declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetPermission.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Net
     }
     #endregion
 
-    #region NetPermission
+    #region NetPermission implementation
     public partial class NetPermission
     {
         #region Constructors

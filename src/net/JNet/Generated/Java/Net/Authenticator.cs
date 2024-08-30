@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
-    #region Authenticator definition
+    #region Authenticator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Java.Net
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region RequestorType definition
+        #region RequestorType declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.RequestorType.html"/>
         /// </summary>
@@ -117,7 +117,7 @@ namespace Java.Net
     }
     #endregion
 
-    #region Authenticator
+    #region Authenticator implementation
     public partial class Authenticator
     {
         #region Constructors
@@ -224,7 +224,7 @@ namespace Java.Net
         #endregion
 
         #region Nested classes
-        #region RequestorType
+        #region RequestorType implementation
         public partial class RequestorType
         {
             #region Constructors

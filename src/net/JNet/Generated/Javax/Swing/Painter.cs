@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region Painter definition
+    #region Painter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Painter.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region Painter<T> definition
+    #region Painter<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Painter.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region Painter
+    #region Painter implementation
     public partial class Painter
     {
         #region Constructors
@@ -188,7 +188,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region Painter<T>
+    #region Painter<T> implementation
     public partial class Painter<T> : Javax.Swing.IPainter<T>
     {
         #region Constructors

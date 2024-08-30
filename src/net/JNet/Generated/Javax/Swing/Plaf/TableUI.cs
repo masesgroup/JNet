@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf
 {
-    #region TableUI definition
+    #region TableUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TableUI.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Swing.Plaf
     }
     #endregion
 
-    #region TableUI
+    #region TableUI implementation
     public partial class TableUI
     {
         #region Constructors

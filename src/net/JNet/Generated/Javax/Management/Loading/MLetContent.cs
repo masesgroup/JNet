@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Loading
 {
-    #region MLetContent definition
+    #region MLetContent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Management.Loading
     }
     #endregion
 
-    #region MLetContent
+    #region MLetContent implementation
     public partial class MLetContent
     {
         #region Constructors

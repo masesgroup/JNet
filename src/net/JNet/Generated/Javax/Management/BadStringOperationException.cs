@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region BadStringOperationException definition
+    #region BadStringOperationException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/BadStringOperationException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region BadStringOperationException
+    #region BadStringOperationException implementation
     public partial class BadStringOperationException
     {
         #region Constructors

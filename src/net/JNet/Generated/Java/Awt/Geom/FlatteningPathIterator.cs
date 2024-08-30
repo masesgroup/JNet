@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Geom
 {
-    #region FlatteningPathIterator definition
+    #region FlatteningPathIterator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.Geom
     }
     #endregion
 
-    #region FlatteningPathIterator
+    #region FlatteningPathIterator implementation
     public partial class FlatteningPathIterator
     {
         #region Constructors

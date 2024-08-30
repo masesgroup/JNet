@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region NoClassDefFoundError definition
+    #region NoClassDefFoundError declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/NoClassDefFoundError.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region NoClassDefFoundError
+    #region NoClassDefFoundError implementation
     public partial class NoClassDefFoundError
     {
         #region Constructors

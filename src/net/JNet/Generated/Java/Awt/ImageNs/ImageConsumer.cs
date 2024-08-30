@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ImageNs
 {
-    #region ImageConsumer definition
+    #region ImageConsumer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageConsumer.html"/>
     /// </summary>
@@ -140,7 +140,7 @@ namespace Java.Awt.ImageNs
     }
     #endregion
 
-    #region ImageConsumer
+    #region ImageConsumer implementation
     public partial class ImageConsumer : Java.Awt.ImageNs.IImageConsumer
     {
         #region Constructors

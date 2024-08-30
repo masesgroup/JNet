@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region ProcessHandle definition
+    #region ProcessHandle declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Java.Lang
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Info definition
+        #region Info declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.Info.html"/>
         /// </summary>
@@ -199,7 +199,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region ProcessHandle
+    #region ProcessHandle implementation
     public partial class ProcessHandle : Java.Lang.IProcessHandle
     {
         #region Constructors
@@ -346,7 +346,7 @@ namespace Java.Lang
         #endregion
 
         #region Nested classes
-        #region Info
+        #region Info implementation
         public partial class Info
         {
             #region Constructors

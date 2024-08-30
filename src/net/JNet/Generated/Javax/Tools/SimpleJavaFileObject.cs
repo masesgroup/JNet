@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Tools
 {
-    #region SimpleJavaFileObject definition
+    #region SimpleJavaFileObject declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Tools
     }
     #endregion
 
-    #region SimpleJavaFileObject
+    #region SimpleJavaFileObject implementation
     public partial class SimpleJavaFileObject
     {
         #region Constructors

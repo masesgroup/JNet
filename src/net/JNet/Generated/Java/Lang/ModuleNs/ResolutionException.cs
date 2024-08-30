@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.ModuleNs
 {
-    #region ResolutionException definition
+    #region ResolutionException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ResolutionException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang.ModuleNs
     }
     #endregion
 
-    #region ResolutionException
+    #region ResolutionException implementation
     public partial class ResolutionException
     {
         #region Constructors

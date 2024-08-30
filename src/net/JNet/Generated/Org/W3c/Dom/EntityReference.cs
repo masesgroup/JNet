@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom
 {
-    #region EntityReference definition
+    #region EntityReference declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/EntityReference.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Org.W3c.Dom
     }
     #endregion
 
-    #region EntityReference
+    #region EntityReference implementation
     public partial class EntityReference : Org.W3c.Dom.IEntityReference
     {
         #region Constructors

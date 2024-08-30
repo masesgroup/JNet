@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Remote
 {
-    #region JMXAddressable definition
+    #region JMXAddressable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXAddressable.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Javax.Management.Remote
     }
     #endregion
 
-    #region JMXAddressable
+    #region JMXAddressable implementation
     public partial class JMXAddressable : Javax.Management.Remote.IJMXAddressable
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region MBeanTrustPermission definition
+    #region MBeanTrustPermission declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanTrustPermission.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region MBeanTrustPermission
+    #region MBeanTrustPermission implementation
     public partial class MBeanTrustPermission
     {
         #region Constructors

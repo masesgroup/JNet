@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio.Metadata
 {
-    #region IIOInvalidTreeException definition
+    #region IIOInvalidTreeException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOInvalidTreeException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Imageio.Metadata
     }
     #endregion
 
-    #region IIOInvalidTreeException
+    #region IIOInvalidTreeException implementation
     public partial class IIOInvalidTreeException
     {
         #region Constructors

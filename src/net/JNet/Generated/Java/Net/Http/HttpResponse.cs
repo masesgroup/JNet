@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net.Http
 {
-    #region HttpResponse definition
+    #region HttpResponse declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Java.Net.Http
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region BodyHandler definition
+        #region BodyHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandler.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region BodyHandler<T> definition
+        #region BodyHandler<T> declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandler.html"/>
         /// </summary>
@@ -163,7 +163,7 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region BodyHandlers definition
+        #region BodyHandlers declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html"/>
         /// </summary>
@@ -208,7 +208,7 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region BodySubscriber definition
+        #region BodySubscriber declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscriber.html"/>
         /// </summary>
@@ -255,7 +255,7 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region BodySubscriber<T> definition
+        #region BodySubscriber<T> declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscriber.html"/>
         /// </summary>
@@ -303,7 +303,7 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region BodySubscribers definition
+        #region BodySubscribers declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html"/>
         /// </summary>
@@ -348,7 +348,7 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region PushPromiseHandler definition
+        #region PushPromiseHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.PushPromiseHandler.html"/>
         /// </summary>
@@ -395,7 +395,7 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region PushPromiseHandler<T> definition
+        #region PushPromiseHandler<T> declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.PushPromiseHandler.html"/>
         /// </summary>
@@ -443,7 +443,7 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region ResponseInfo definition
+        #region ResponseInfo declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.ResponseInfo.html"/>
         /// </summary>
@@ -494,7 +494,7 @@ namespace Java.Net.Http
     }
     #endregion
 
-    #region HttpResponse<T> definition
+    #region HttpResponse<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html"/>
     /// </summary>
@@ -542,7 +542,7 @@ namespace Java.Net.Http
     }
     #endregion
 
-    #region HttpResponse
+    #region HttpResponse implementation
     public partial class HttpResponse
     {
         #region Constructors
@@ -630,7 +630,7 @@ namespace Java.Net.Http
         #endregion
 
         #region Nested classes
-        #region BodyHandler
+        #region BodyHandler implementation
         public partial class BodyHandler
         {
             #region Constructors
@@ -670,7 +670,7 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region BodyHandler<T>
+        #region BodyHandler<T> implementation
         public partial class BodyHandler<T>
         {
             #region Constructors
@@ -714,7 +714,7 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region BodyHandlers
+        #region BodyHandlers implementation
         public partial class BodyHandlers
         {
             #region Constructors
@@ -910,7 +910,7 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region BodySubscriber
+        #region BodySubscriber implementation
         public partial class BodySubscriber
         {
             #region Constructors
@@ -948,7 +948,7 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region BodySubscriber<T>
+        #region BodySubscriber<T> implementation
         public partial class BodySubscriber<T>
         {
             #region Constructors
@@ -990,7 +990,7 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region BodySubscribers
+        #region BodySubscribers implementation
         public partial class BodySubscribers
         {
             #region Constructors
@@ -1184,7 +1184,7 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region PushPromiseHandler
+        #region PushPromiseHandler implementation
         public partial class PushPromiseHandler
         {
             #region Constructors
@@ -1235,7 +1235,7 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region PushPromiseHandler<T>
+        #region PushPromiseHandler<T> implementation
         public partial class PushPromiseHandler<T>
         {
             #region Constructors
@@ -1290,7 +1290,7 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region ResponseInfo
+        #region ResponseInfo implementation
         public partial class ResponseInfo
         {
             #region Constructors
@@ -1410,7 +1410,7 @@ namespace Java.Net.Http
     }
     #endregion
 
-    #region HttpResponse<T>
+    #region HttpResponse<T> implementation
     public partial class HttpResponse<T> : Java.Net.Http.IHttpResponse<T>
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql.Rowset.Spi
 {
-    #region XmlReader definition
+    #region XmlReader declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/XmlReader.html"/>
     /// </summary>
@@ -97,7 +97,7 @@ namespace Javax.Sql.Rowset.Spi
     }
     #endregion
 
-    #region XmlReader
+    #region XmlReader implementation
     public partial class XmlReader : Javax.Sql.Rowset.Spi.IXmlReader
     {
         #region Constructors

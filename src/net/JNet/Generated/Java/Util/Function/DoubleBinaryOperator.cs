@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region DoubleBinaryOperator definition
+    #region DoubleBinaryOperator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleBinaryOperator.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region DoubleBinaryOperatorDirect definition
+    #region DoubleBinaryOperatorDirect declaration
     /// <summary>
     /// Direct override of <see cref="DoubleBinaryOperator"/> or its generic type if there is one
     /// </summary>
@@ -117,7 +117,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region DoubleBinaryOperator
+    #region DoubleBinaryOperator implementation
     public partial class DoubleBinaryOperator : Java.Util.Function.IDoubleBinaryOperator
     {
         #region Constructors
@@ -180,7 +180,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region DoubleBinaryOperatorDirect
+    #region DoubleBinaryOperatorDirect implementation
     public partial class DoubleBinaryOperatorDirect : Java.Util.Function.IDoubleBinaryOperator
     {
         #region Constructors

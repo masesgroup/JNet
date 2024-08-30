@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
-    #region LineNumberReader definition
+    #region LineNumberReader declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/LineNumberReader.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Io
     }
     #endregion
 
-    #region LineNumberReader
+    #region LineNumberReader implementation
     public partial class LineNumberReader
     {
         #region Constructors

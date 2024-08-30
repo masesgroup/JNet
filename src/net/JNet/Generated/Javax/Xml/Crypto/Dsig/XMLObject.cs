@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig
 {
-    #region XMLObject definition
+    #region XMLObject declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLObject.html"/>
     /// </summary>
@@ -106,7 +106,7 @@ namespace Javax.Xml.Crypto.Dsig
     }
     #endregion
 
-    #region XMLObject
+    #region XMLObject implementation
     public partial class XMLObject : Javax.Xml.Crypto.Dsig.IXMLObject
     {
         #region Constructors

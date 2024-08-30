@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net.Http
 {
-    #region WebSocket definition
+    #region WebSocket declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Java.Net.Http
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Builder definition
+        #region Builder declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Builder.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region Listener definition
+        #region Listener declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html"/>
         /// </summary>
@@ -141,7 +141,7 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region ListenerDirect definition
+        #region ListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="Listener"/> or its generic type if there is one
         /// </summary>
@@ -260,7 +260,7 @@ namespace Java.Net.Http
     }
     #endregion
 
-    #region WebSocket
+    #region WebSocket implementation
     public partial class WebSocket : Java.Net.Http.IWebSocket
     {
         #region Constructors
@@ -376,7 +376,7 @@ namespace Java.Net.Http
         #endregion
 
         #region Nested classes
-        #region Builder
+        #region Builder implementation
         public partial class Builder
         {
             #region Constructors
@@ -446,7 +446,7 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region Listener
+        #region Listener implementation
         public partial class Listener
         {
             #region Constructors
@@ -741,7 +741,7 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region ListenerDirect
+        #region ListenerDirect implementation
         public partial class ListenerDirect
         {
             #region Constructors

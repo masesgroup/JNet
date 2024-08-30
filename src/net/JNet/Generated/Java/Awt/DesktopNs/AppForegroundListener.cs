@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.DesktopNs
 {
-    #region AppForegroundListener definition
+    #region AppForegroundListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppForegroundListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Awt.DesktopNs
     }
     #endregion
 
-    #region AppForegroundListenerDirect definition
+    #region AppForegroundListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="AppForegroundListener"/> or its generic type if there is one
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Awt.DesktopNs
     }
     #endregion
 
-    #region AppForegroundListener
+    #region AppForegroundListener implementation
     public partial class AppForegroundListener : Java.Awt.DesktopNs.IAppForegroundListener
     {
         #region Constructors
@@ -202,7 +202,7 @@ namespace Java.Awt.DesktopNs
     }
     #endregion
 
-    #region AppForegroundListenerDirect
+    #region AppForegroundListenerDirect implementation
     public partial class AppForegroundListenerDirect : Java.Awt.DesktopNs.IAppForegroundListener
     {
         #region Constructors

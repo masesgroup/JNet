@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text.Html
 {
-    #region InlineView definition
+    #region InlineView declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/InlineView.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Text.Html
     }
     #endregion
 
-    #region InlineView
+    #region InlineView implementation
     public partial class InlineView
     {
         #region Constructors

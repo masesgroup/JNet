@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.Xml.Sax.Ext
 {
-    #region Attributes2 definition
+    #region Attributes2 declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Attributes2.html"/>
     /// </summary>
@@ -128,7 +128,7 @@ namespace Org.Xml.Sax.Ext
     }
     #endregion
 
-    #region Attributes2
+    #region Attributes2 implementation
     public partial class Attributes2 : Org.Xml.Sax.Ext.IAttributes2
     {
         #region Constructors

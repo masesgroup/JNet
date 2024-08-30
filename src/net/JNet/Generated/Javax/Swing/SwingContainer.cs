@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region SwingContainer definition
+    #region SwingContainer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingContainer.html"/>
     /// </summary>
@@ -100,7 +100,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region SwingContainer
+    #region SwingContainer implementation
     public partial class SwingContainer : Javax.Swing.ISwingContainer
     {
         #region Constructors

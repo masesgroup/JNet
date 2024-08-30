@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom
 {
-    #region DOMImplementationList definition
+    #region DOMImplementationList declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementationList.html"/>
     /// </summary>
@@ -100,7 +100,7 @@ namespace Org.W3c.Dom
     }
     #endregion
 
-    #region DOMImplementationList
+    #region DOMImplementationList implementation
     public partial class DOMImplementationList : Org.W3c.Dom.IDOMImplementationList
     {
         #region Constructors

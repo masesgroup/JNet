@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Traversal
 {
-    #region DocumentTraversal definition
+    #region DocumentTraversal declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/DocumentTraversal.html"/>
     /// </summary>
@@ -110,7 +110,7 @@ namespace Org.W3c.Dom.Traversal
     }
     #endregion
 
-    #region DocumentTraversal
+    #region DocumentTraversal implementation
     public partial class DocumentTraversal : Org.W3c.Dom.Traversal.IDocumentTraversal
     {
         #region Constructors

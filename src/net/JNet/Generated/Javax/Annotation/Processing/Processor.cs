@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Annotation.Processing
 {
-    #region Processor definition
+    #region Processor declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html"/>
     /// </summary>
@@ -125,7 +125,7 @@ namespace Javax.Annotation.Processing
     }
     #endregion
 
-    #region Processor
+    #region Processor implementation
     public partial class Processor : Javax.Annotation.Processing.IProcessor
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Events
 {
-    #region MutationEvent definition
+    #region MutationEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MutationEvent.html"/>
     /// </summary>
@@ -122,7 +122,7 @@ namespace Org.W3c.Dom.Events
     }
     #endregion
 
-    #region MutationEvent
+    #region MutationEvent implementation
     public partial class MutationEvent : Org.W3c.Dom.Events.IMutationEvent
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Type
 {
-    #region MirroredTypeException definition
+    #region MirroredTypeException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/MirroredTypeException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Lang.Model.Type
     }
     #endregion
 
-    #region MirroredTypeException
+    #region MirroredTypeException implementation
     public partial class MirroredTypeException
     {
         #region Constructors

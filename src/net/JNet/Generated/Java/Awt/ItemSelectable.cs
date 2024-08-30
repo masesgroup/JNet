@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region ItemSelectable definition
+    #region ItemSelectable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ItemSelectable.html"/>
     /// </summary>
@@ -104,7 +104,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region ItemSelectable
+    #region ItemSelectable implementation
     public partial class ItemSelectable : Java.Awt.IItemSelectable
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Element
 {
-    #region AnnotationValue definition
+    #region AnnotationValue declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValue.html"/>
     /// </summary>
@@ -103,7 +103,7 @@ namespace Javax.Lang.Model.Element
     }
     #endregion
 
-    #region AnnotationValue
+    #region AnnotationValue implementation
     public partial class AnnotationValue : Javax.Lang.Model.Element.IAnnotationValue
     {
         #region Constructors

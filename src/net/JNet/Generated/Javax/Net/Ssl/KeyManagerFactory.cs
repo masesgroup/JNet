@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Net.Ssl
 {
-    #region KeyManagerFactory definition
+    #region KeyManagerFactory declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region KeyManagerFactory
+    #region KeyManagerFactory implementation
     public partial class KeyManagerFactory
     {
         #region Constructors

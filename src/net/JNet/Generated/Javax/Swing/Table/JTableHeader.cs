@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Table
 {
-    #region JTableHeader definition
+    #region JTableHeader declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/JTableHeader.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Table
     }
     #endregion
 
-    #region JTableHeader
+    #region JTableHeader implementation
     public partial class JTableHeader
     {
         #region Constructors

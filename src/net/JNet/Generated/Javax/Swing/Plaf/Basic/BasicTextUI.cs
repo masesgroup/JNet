@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Basic
 {
-    #region BasicTextUI definition
+    #region BasicTextUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTextUI.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Swing.Plaf.Basic
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region BasicCaret definition
+        #region BasicCaret declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTextUI.BasicCaret.html"/>
         /// </summary>
@@ -113,7 +113,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region BasicHighlighter definition
+        #region BasicHighlighter declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTextUI.BasicHighlighter.html"/>
         /// </summary>
@@ -162,7 +162,7 @@ namespace Javax.Swing.Plaf.Basic
     }
     #endregion
 
-    #region BasicTextUI
+    #region BasicTextUI implementation
     public partial class BasicTextUI
     {
         #region Constructors
@@ -210,7 +210,7 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Nested classes
-        #region BasicCaret
+        #region BasicCaret implementation
         public partial class BasicCaret
         {
             #region Constructors
@@ -245,7 +245,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region BasicHighlighter
+        #region BasicHighlighter implementation
         public partial class BasicHighlighter
         {
             #region Constructors

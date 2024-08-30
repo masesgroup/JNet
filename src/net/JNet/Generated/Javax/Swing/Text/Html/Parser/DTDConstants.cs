@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text.Html.Parser
 {
-    #region DTDConstants definition
+    #region DTDConstants declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Javax.Swing.Text.Html.Parser
     }
     #endregion
 
-    #region DTDConstants
+    #region DTDConstants implementation
     public partial class DTDConstants : Javax.Swing.Text.Html.Parser.IDTDConstants
     {
         #region Constructors

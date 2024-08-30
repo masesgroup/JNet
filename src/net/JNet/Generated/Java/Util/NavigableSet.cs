@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region NavigableSet definition
+    #region NavigableSet declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region NavigableSet<E> definition
+    #region NavigableSet<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region NavigableSet
+    #region NavigableSet implementation
     public partial class NavigableSet
     {
         #region Constructors
@@ -396,7 +396,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region NavigableSet<E>
+    #region NavigableSet<E> implementation
     public partial class NavigableSet<E> : Java.Util.INavigableSet<E>
     {
         #region Constructors

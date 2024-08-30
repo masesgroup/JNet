@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region JRadioButtonMenuItem definition
+    #region JRadioButtonMenuItem declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRadioButtonMenuItem.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region JRadioButtonMenuItem
+    #region JRadioButtonMenuItem implementation
     public partial class JRadioButtonMenuItem
     {
         #region Constructors

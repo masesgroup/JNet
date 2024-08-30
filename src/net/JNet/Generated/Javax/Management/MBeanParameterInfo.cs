@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region MBeanParameterInfo definition
+    #region MBeanParameterInfo declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanParameterInfo.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region MBeanParameterInfo
+    #region MBeanParameterInfo implementation
     public partial class MBeanParameterInfo
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Undo
 {
-    #region CannotRedoException definition
+    #region CannotRedoException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/CannotRedoException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Swing.Undo
     }
     #endregion
 
-    #region CannotRedoException
+    #region CannotRedoException implementation
     public partial class CannotRedoException
     {
         #region Constructors

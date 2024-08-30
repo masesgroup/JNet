@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Relation
 {
-    #region RoleInfo definition
+    #region RoleInfo declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Management.Relation
     }
     #endregion
 
-    #region RoleInfo
+    #region RoleInfo implementation
     public partial class RoleInfo
     {
         #region Constructors

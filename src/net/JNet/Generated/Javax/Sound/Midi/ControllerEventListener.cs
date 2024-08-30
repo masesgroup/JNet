@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Midi
 {
-    #region ControllerEventListener definition
+    #region ControllerEventListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ControllerEventListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Sound.Midi
     }
     #endregion
 
-    #region ControllerEventListenerDirect definition
+    #region ControllerEventListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="ControllerEventListener"/> or its generic type if there is one
     /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Sound.Midi
     }
     #endregion
 
-    #region ControllerEventListener
+    #region ControllerEventListener implementation
     public partial class ControllerEventListener : Javax.Sound.Midi.IControllerEventListener
     {
         #region Constructors
@@ -175,7 +175,7 @@ namespace Javax.Sound.Midi
     }
     #endregion
 
-    #region ControllerEventListenerDirect
+    #region ControllerEventListenerDirect implementation
     public partial class ControllerEventListenerDirect : Javax.Sound.Midi.IControllerEventListener
     {
         #region Constructors

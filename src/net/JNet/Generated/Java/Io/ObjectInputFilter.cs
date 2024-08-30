@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
-    #region ObjectInputFilter definition
+    #region ObjectInputFilter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Java.Io
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Config definition
+        #region Config declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Config.html"/>
         /// </summary>
@@ -113,7 +113,7 @@ namespace Java.Io
         }
         #endregion
 
-        #region FilterInfo definition
+        #region FilterInfo declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html"/>
         /// </summary>
@@ -160,7 +160,7 @@ namespace Java.Io
         }
         #endregion
 
-        #region Status definition
+        #region Status declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Status.html"/>
         /// </summary>
@@ -233,7 +233,7 @@ namespace Java.Io
     }
     #endregion
 
-    #region ObjectInputFilter
+    #region ObjectInputFilter implementation
     public partial class ObjectInputFilter : Java.Io.IObjectInputFilter
     {
         #region Constructors
@@ -266,7 +266,7 @@ namespace Java.Io
         #endregion
 
         #region Nested classes
-        #region Config
+        #region Config implementation
         public partial class Config
         {
             #region Constructors
@@ -313,7 +313,7 @@ namespace Java.Io
         }
         #endregion
 
-        #region FilterInfo
+        #region FilterInfo implementation
         public partial class FilterInfo
         {
             #region Constructors
@@ -384,7 +384,7 @@ namespace Java.Io
         }
         #endregion
 
-        #region Status
+        #region Status implementation
         public partial class Status
         {
             #region Constructors

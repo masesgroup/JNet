@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region PrimitiveIterator definition
+    #region PrimitiveIterator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Java.Util
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region OfDouble definition
+        #region OfDouble declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region OfInt definition
+        #region OfInt declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html"/>
         /// </summary>
@@ -162,7 +162,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region OfLong definition
+        #region OfLong declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html"/>
         /// </summary>
@@ -213,7 +213,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region PrimitiveIterator<T, T_CONS> definition
+    #region PrimitiveIterator<T, T_CONS> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.html"/>
     /// </summary>
@@ -262,7 +262,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region PrimitiveIterator
+    #region PrimitiveIterator implementation
     public partial class PrimitiveIterator
     {
         #region Constructors
@@ -294,7 +294,7 @@ namespace Java.Util
         #endregion
 
         #region Nested classes
-        #region OfDouble
+        #region OfDouble implementation
         public partial class OfDouble
         {
             #region Constructors
@@ -366,7 +366,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region OfInt
+        #region OfInt implementation
         public partial class OfInt
         {
             #region Constructors
@@ -438,7 +438,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region OfLong
+        #region OfLong implementation
         public partial class OfLong
         {
             #region Constructors
@@ -540,7 +540,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region PrimitiveIterator<T, T_CONS>
+    #region PrimitiveIterator<T, T_CONS> implementation
     public partial class PrimitiveIterator<T, T_CONS> : Java.Util.IPrimitiveIterator<T, T_CONS>
     {
         #region Constructors

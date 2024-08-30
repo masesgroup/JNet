@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Accessibility
 {
-    #region AccessibleTableModelChange definition
+    #region AccessibleTableModelChange declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTableModelChange.html"/>
     /// </summary>
@@ -110,7 +110,7 @@ namespace Javax.Accessibility
     }
     #endregion
 
-    #region AccessibleTableModelChange
+    #region AccessibleTableModelChange implementation
     public partial class AccessibleTableModelChange : Javax.Accessibility.IAccessibleTableModelChange
     {
         #region Constructors

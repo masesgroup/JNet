@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File.Spi
 {
-    #region FileTypeDetector definition
+    #region FileTypeDetector declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileTypeDetector.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Nio.File.Spi
     }
     #endregion
 
-    #region FileTypeDetector
+    #region FileTypeDetector implementation
     public partial class FileTypeDetector
     {
         #region Constructors

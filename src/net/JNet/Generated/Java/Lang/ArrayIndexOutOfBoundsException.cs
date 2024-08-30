@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region ArrayIndexOutOfBoundsException definition
+    #region ArrayIndexOutOfBoundsException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ArrayIndexOutOfBoundsException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region ArrayIndexOutOfBoundsException
+    #region ArrayIndexOutOfBoundsException implementation
     public partial class ArrayIndexOutOfBoundsException
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File.Attribute
 {
-    #region GroupPrincipal definition
+    #region GroupPrincipal declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/GroupPrincipal.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Java.Nio.File.Attribute
     }
     #endregion
 
-    #region GroupPrincipal
+    #region GroupPrincipal implementation
     public partial class GroupPrincipal : Java.Nio.File.Attribute.IGroupPrincipal
     {
         #region Constructors

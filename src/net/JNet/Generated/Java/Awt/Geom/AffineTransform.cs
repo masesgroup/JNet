@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Geom
 {
-    #region AffineTransform definition
+    #region AffineTransform declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.Geom
     }
     #endregion
 
-    #region AffineTransform
+    #region AffineTransform implementation
     public partial class AffineTransform
     {
         #region Constructors

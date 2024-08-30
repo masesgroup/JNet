@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File
 {
-    #region PathMatcher definition
+    #region PathMatcher declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/PathMatcher.html"/>
     /// </summary>
@@ -96,7 +96,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region PathMatcher
+    #region PathMatcher implementation
     public partial class PathMatcher : Java.Nio.File.IPathMatcher
     {
         #region Constructors

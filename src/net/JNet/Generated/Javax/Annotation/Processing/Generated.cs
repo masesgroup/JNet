@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Annotation.Processing
 {
-    #region Generated definition
+    #region Generated declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html"/>
     /// </summary>
@@ -105,7 +105,7 @@ namespace Javax.Annotation.Processing
     }
     #endregion
 
-    #region Generated
+    #region Generated implementation
     public partial class Generated : Javax.Annotation.Processing.IGenerated
     {
         #region Constructors

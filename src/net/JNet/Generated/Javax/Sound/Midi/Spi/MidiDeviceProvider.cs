@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Midi.Spi
 {
-    #region MidiDeviceProvider definition
+    #region MidiDeviceProvider declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiDeviceProvider.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Sound.Midi.Spi
     }
     #endregion
 
-    #region MidiDeviceProvider
+    #region MidiDeviceProvider implementation
     public partial class MidiDeviceProvider
     {
         #region Constructors

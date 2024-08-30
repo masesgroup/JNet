@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region NotificationEmitter definition
+    #region NotificationEmitter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationEmitter.html"/>
     /// </summary>
@@ -98,7 +98,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region NotificationEmitter
+    #region NotificationEmitter implementation
     public partial class NotificationEmitter : Javax.Management.INotificationEmitter
     {
         #region Constructors

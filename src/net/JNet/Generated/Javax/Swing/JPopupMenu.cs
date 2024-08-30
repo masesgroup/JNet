@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region JPopupMenu definition
+    #region JPopupMenu declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPopupMenu.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Separator definition
+        #region Separator declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPopupMenu.Separator.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region JPopupMenu
+    #region JPopupMenu implementation
     public partial class JPopupMenu
     {
         #region Constructors
@@ -430,7 +430,7 @@ namespace Javax.Swing
         #endregion
 
         #region Nested classes
-        #region Separator
+        #region Separator implementation
         public partial class Separator
         {
             #region Constructors

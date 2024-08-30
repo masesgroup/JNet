@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Tools
 {
-    #region Tool definition
+    #region Tool declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Tool.html"/>
     /// </summary>
@@ -108,7 +108,7 @@ namespace Javax.Tools
     }
     #endregion
 
-    #region Tool
+    #region Tool implementation
     public partial class Tool : Javax.Tools.ITool
     {
         #region Constructors

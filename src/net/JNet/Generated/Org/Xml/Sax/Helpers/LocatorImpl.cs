@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.Xml.Sax.Helpers
 {
-    #region LocatorImpl definition
+    #region LocatorImpl declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/LocatorImpl.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Org.Xml.Sax.Helpers
     }
     #endregion
 
-    #region LocatorImpl
+    #region LocatorImpl implementation
     public partial class LocatorImpl
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region LayoutManager2 definition
+    #region LayoutManager2 declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/LayoutManager2.html"/>
     /// </summary>
@@ -119,7 +119,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region LayoutManager2
+    #region LayoutManager2 implementation
     public partial class LayoutManager2 : Java.Awt.ILayoutManager2
     {
         #region Constructors

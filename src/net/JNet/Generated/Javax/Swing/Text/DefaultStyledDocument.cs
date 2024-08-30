@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region DefaultStyledDocument definition
+    #region DefaultStyledDocument declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Text
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region AttributeUndoableEdit definition
+        #region AttributeUndoableEdit declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.AttributeUndoableEdit.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region ElementBuffer definition
+        #region ElementBuffer declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html"/>
         /// </summary>
@@ -156,7 +156,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region ElementSpec definition
+        #region ElementSpec declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html"/>
         /// </summary>
@@ -205,7 +205,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region DefaultStyledDocument
+    #region DefaultStyledDocument implementation
     public partial class DefaultStyledDocument
     {
         #region Constructors
@@ -374,7 +374,7 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Nested classes
-        #region AttributeUndoableEdit
+        #region AttributeUndoableEdit implementation
         public partial class AttributeUndoableEdit
         {
             #region Constructors
@@ -415,7 +415,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region ElementBuffer
+        #region ElementBuffer implementation
         public partial class ElementBuffer
         {
             #region Constructors
@@ -503,7 +503,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region ElementSpec
+        #region ElementSpec implementation
         public partial class ElementSpec
         {
             #region Constructors

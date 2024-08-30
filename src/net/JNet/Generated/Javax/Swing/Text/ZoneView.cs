@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region ZoneView definition
+    #region ZoneView declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ZoneView.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region ZoneView
+    #region ZoneView implementation
     public partial class ZoneView
     {
         #region Constructors

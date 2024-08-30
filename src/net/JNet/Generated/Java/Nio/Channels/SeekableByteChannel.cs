@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
-    #region SeekableByteChannel definition
+    #region SeekableByteChannel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SeekableByteChannel.html"/>
     /// </summary>
@@ -130,7 +130,7 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region SeekableByteChannel
+    #region SeekableByteChannel implementation
     public partial class SeekableByteChannel : Java.Nio.Channels.ISeekableByteChannel
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region CryptoPrimitive definition
+    #region CryptoPrimitive declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region CryptoPrimitive
+    #region CryptoPrimitive implementation
     public partial class CryptoPrimitive
     {
         #region Constructors

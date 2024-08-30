@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region ParameterMetaData definition
+    #region ParameterMetaData declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html"/>
     /// </summary>
@@ -150,7 +150,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region ParameterMetaData
+    #region ParameterMetaData implementation
     public partial class ParameterMetaData : Java.Sql.IParameterMetaData
     {
         #region Constructors

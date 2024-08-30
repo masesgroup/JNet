@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Table
 {
-    #region DefaultTableColumnModel definition
+    #region DefaultTableColumnModel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableColumnModel.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Table
     }
     #endregion
 
-    #region DefaultTableColumnModel
+    #region DefaultTableColumnModel implementation
     public partial class DefaultTableColumnModel
     {
         #region Constructors

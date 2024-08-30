@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region SignatureSpi definition
+    #region SignatureSpi declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SignatureSpi.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region SignatureSpi
+    #region SignatureSpi implementation
     public partial class SignatureSpi
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig.Keyinfo
 {
-    #region X509Data definition
+    #region X509Data declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509Data.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
     }
     #endregion
 
-    #region X509Data
+    #region X509Data implementation
     public partial class X509Data : Javax.Xml.Crypto.Dsig.Keyinfo.IX509Data
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio.Plugins.Bmp
 {
-    #region BMPImageWriteParam definition
+    #region BMPImageWriteParam declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/bmp/BMPImageWriteParam.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Imageio.Plugins.Bmp
     }
     #endregion
 
-    #region BMPImageWriteParam
+    #region BMPImageWriteParam implementation
     public partial class BMPImageWriteParam
     {
         #region Constructors

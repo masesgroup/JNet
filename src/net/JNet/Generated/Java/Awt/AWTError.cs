@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region AWTError definition
+    #region AWTError declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTError.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region AWTError
+    #region AWTError implementation
     public partial class AWTError
     {
         #region Constructors

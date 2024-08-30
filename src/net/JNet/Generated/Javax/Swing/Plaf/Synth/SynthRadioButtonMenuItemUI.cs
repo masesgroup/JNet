@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Synth
 {
-    #region SynthRadioButtonMenuItemUI definition
+    #region SynthRadioButtonMenuItemUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthRadioButtonMenuItemUI.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf.Synth
     }
     #endregion
 
-    #region SynthRadioButtonMenuItemUI
+    #region SynthRadioButtonMenuItemUI implementation
     public partial class SynthRadioButtonMenuItemUI
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Attribute.Standard
 {
-    #region MediaSize definition
+    #region MediaSize declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Print.Attribute.Standard
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Engineering definition
+        #region Engineering declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Engineering.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Print.Attribute.Standard
         }
         #endregion
 
-        #region ISO definition
+        #region ISO declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html"/>
         /// </summary>
@@ -156,7 +156,7 @@ namespace Javax.Print.Attribute.Standard
         }
         #endregion
 
-        #region JIS definition
+        #region JIS declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.JIS.html"/>
         /// </summary>
@@ -201,7 +201,7 @@ namespace Javax.Print.Attribute.Standard
         }
         #endregion
 
-        #region NA definition
+        #region NA declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.NA.html"/>
         /// </summary>
@@ -246,7 +246,7 @@ namespace Javax.Print.Attribute.Standard
         }
         #endregion
 
-        #region Other definition
+        #region Other declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Other.html"/>
         /// </summary>
@@ -295,7 +295,7 @@ namespace Javax.Print.Attribute.Standard
     }
     #endregion
 
-    #region MediaSize
+    #region MediaSize implementation
     public partial class MediaSize
     {
         #region Constructors
@@ -406,7 +406,7 @@ namespace Javax.Print.Attribute.Standard
         #endregion
 
         #region Nested classes
-        #region Engineering
+        #region Engineering implementation
         public partial class Engineering
         {
             #region Constructors
@@ -467,7 +467,7 @@ namespace Javax.Print.Attribute.Standard
         }
         #endregion
 
-        #region ISO
+        #region ISO implementation
         public partial class ISO
         {
             #region Constructors
@@ -660,7 +660,7 @@ namespace Javax.Print.Attribute.Standard
         }
         #endregion
 
-        #region JIS
+        #region JIS implementation
         public partial class JIS
         {
             #region Constructors
@@ -901,7 +901,7 @@ namespace Javax.Print.Attribute.Standard
         }
         #endregion
 
-        #region NA
+        #region NA implementation
         public partial class NA
         {
             #region Constructors
@@ -1028,7 +1028,7 @@ namespace Javax.Print.Attribute.Standard
         }
         #endregion
 
-        #region Other
+        #region Other implementation
         public partial class Other
         {
             #region Constructors

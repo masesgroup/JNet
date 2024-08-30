@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Events
 {
-    #region EventException definition
+    #region EventException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Org.W3c.Dom.Events
     }
     #endregion
 
-    #region EventException
+    #region EventException implementation
     public partial class EventException
     {
         #region Constructors

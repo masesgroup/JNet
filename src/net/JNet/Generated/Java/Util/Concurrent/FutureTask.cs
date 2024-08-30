@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region FutureTask definition
+    #region FutureTask declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/FutureTask.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region FutureTask<V> definition
+    #region FutureTask<V> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/FutureTask.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region FutureTask
+    #region FutureTask implementation
     public partial class FutureTask
     {
         #region Constructors
@@ -219,7 +219,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region FutureTask<V>
+    #region FutureTask<V> implementation
     public partial class FutureTask<V>
     {
         #region Constructors

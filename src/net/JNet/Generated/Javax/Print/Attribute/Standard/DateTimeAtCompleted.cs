@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Attribute.Standard
 {
-    #region DateTimeAtCompleted definition
+    #region DateTimeAtCompleted declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/DateTimeAtCompleted.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Print.Attribute.Standard
     }
     #endregion
 
-    #region DateTimeAtCompleted
+    #region DateTimeAtCompleted implementation
     public partial class DateTimeAtCompleted
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print
 {
-    #region ServiceUI definition
+    #region ServiceUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUI.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Print
     }
     #endregion
 
-    #region ServiceUI
+    #region ServiceUI implementation
     public partial class ServiceUI
     {
         #region Constructors

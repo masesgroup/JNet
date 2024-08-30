@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Type
 {
-    #region ArrayType definition
+    #region ArrayType declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/ArrayType.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Javax.Lang.Model.Type
     }
     #endregion
 
-    #region ArrayType
+    #region ArrayType implementation
     public partial class ArrayType : Javax.Lang.Model.Type.IArrayType
     {
         #region Constructors

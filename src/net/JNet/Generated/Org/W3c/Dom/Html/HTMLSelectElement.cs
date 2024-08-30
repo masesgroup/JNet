@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
-    #region HTMLSelectElement definition
+    #region HTMLSelectElement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLSelectElement.html"/>
     /// </summary>
@@ -154,7 +154,7 @@ namespace Org.W3c.Dom.Html
     }
     #endregion
 
-    #region HTMLSelectElement
+    #region HTMLSelectElement implementation
     public partial class HTMLSelectElement : Org.W3c.Dom.Html.IHTMLSelectElement
     {
         #region Constructors

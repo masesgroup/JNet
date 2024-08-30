@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
-    #region HierarchyBoundsListener definition
+    #region HierarchyBoundsListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyBoundsListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region HierarchyBoundsListenerDirect definition
+    #region HierarchyBoundsListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="HierarchyBoundsListener"/> or its generic type if there is one
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region HierarchyBoundsListener
+    #region HierarchyBoundsListener implementation
     public partial class HierarchyBoundsListener : Java.Awt.EventNs.IHierarchyBoundsListener
     {
         #region Constructors
@@ -202,7 +202,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region HierarchyBoundsListenerDirect
+    #region HierarchyBoundsListenerDirect implementation
     public partial class HierarchyBoundsListenerDirect : Java.Awt.EventNs.IHierarchyBoundsListener
     {
         #region Constructors

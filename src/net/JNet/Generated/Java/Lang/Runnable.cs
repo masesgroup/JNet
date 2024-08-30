@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region Runnable definition
+    #region Runnable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runnable.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region Runnable
+    #region Runnable implementation
     public partial class Runnable : Java.Lang.IRunnable
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Text
 {
-    #region Normalizer definition
+    #region Normalizer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Text
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Form definition
+        #region Form declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.Form.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Text
     }
     #endregion
 
-    #region Normalizer
+    #region Normalizer implementation
     public partial class Normalizer
     {
         #region Constructors
@@ -159,7 +159,7 @@ namespace Java.Text
         #endregion
 
         #region Nested classes
-        #region Form
+        #region Form implementation
         public partial class Form
         {
             #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Text.Spi
 {
-    #region DateFormatProvider definition
+    #region DateFormatProvider declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/DateFormatProvider.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Text.Spi
     }
     #endregion
 
-    #region DateFormatProvider
+    #region DateFormatProvider implementation
     public partial class DateFormatProvider
     {
         #region Constructors

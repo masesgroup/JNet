@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
-    #region FileNotFoundException definition
+    #region FileNotFoundException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileNotFoundException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Io
     }
     #endregion
 
-    #region FileNotFoundException
+    #region FileNotFoundException implementation
     public partial class FileNotFoundException
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region IllegalThreadStateException definition
+    #region IllegalThreadStateException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/IllegalThreadStateException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region IllegalThreadStateException
+    #region IllegalThreadStateException implementation
     public partial class IllegalThreadStateException
     {
         #region Constructors

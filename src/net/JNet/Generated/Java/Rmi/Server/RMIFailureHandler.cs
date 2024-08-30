@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi.Server
 {
-    #region RMIFailureHandler definition
+    #region RMIFailureHandler declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIFailureHandler.html"/>
     /// </summary>
@@ -96,7 +96,7 @@ namespace Java.Rmi.Server
     }
     #endregion
 
-    #region RMIFailureHandler
+    #region RMIFailureHandler implementation
     public partial class RMIFailureHandler : Java.Rmi.Server.IRMIFailureHandler
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
-    #region Constructor definition
+    #region Constructor declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Constructor.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region Constructor<T> definition
+    #region Constructor<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Constructor.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region Constructor
+    #region Constructor implementation
     public partial class Constructor
     {
         #region Constructors
@@ -160,7 +160,7 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region Constructor<T>
+    #region Constructor<T> implementation
     public partial class Constructor<T>
     {
         #region Constructors

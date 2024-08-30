@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf
 {
-    #region IconUIResource definition
+    #region IconUIResource declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/IconUIResource.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf
     }
     #endregion
 
-    #region IconUIResource
+    #region IconUIResource implementation
     public partial class IconUIResource
     {
         #region Constructors

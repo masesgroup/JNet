@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region DigestOutputStream definition
+    #region DigestOutputStream declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DigestOutputStream.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region DigestOutputStream
+    #region DigestOutputStream implementation
     public partial class DigestOutputStream
     {
         #region Constructors

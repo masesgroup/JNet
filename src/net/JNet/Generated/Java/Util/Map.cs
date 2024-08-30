@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region Map definition
+    #region Map declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Java.Util
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Entry definition
+        #region Entry declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region Entry<K, V> definition
+        #region Entry<K, V> declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html"/>
         /// </summary>
@@ -168,7 +168,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Map<K, V> definition
+    #region Map<K, V> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html"/>
     /// </summary>
@@ -217,7 +217,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Map
+    #region Map implementation
     public partial class Map
     {
         #region Constructors
@@ -676,7 +676,7 @@ namespace Java.Util
         #endregion
 
         #region Nested classes
-        #region Entry
+        #region Entry implementation
         public partial class Entry
         {
             #region Constructors
@@ -764,7 +764,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region Entry<K, V>
+        #region Entry<K, V> implementation
         public partial class Entry<K, V>
         {
             #region Constructors
@@ -1040,7 +1040,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Map<K, V>
+    #region Map<K, V> implementation
     public partial class Map<K, V> : Java.Util.IMap<K, V>
     {
         #region Constructors

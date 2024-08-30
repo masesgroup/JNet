@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Element
 {
-    #region ModuleElement definition
+    #region ModuleElement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Lang.Model.Element
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Directive definition
+        #region Directive declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.Directive.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Lang.Model.Element
         }
         #endregion
 
-        #region DirectiveKind definition
+        #region DirectiveKind declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html"/>
         /// </summary>
@@ -160,7 +160,7 @@ namespace Javax.Lang.Model.Element
         }
         #endregion
 
-        #region DirectiveVisitor definition
+        #region DirectiveVisitor declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html"/>
         /// </summary>
@@ -207,7 +207,7 @@ namespace Javax.Lang.Model.Element
         }
         #endregion
 
-        #region DirectiveVisitor<R, P> definition
+        #region DirectiveVisitor<R, P> declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html"/>
         /// </summary>
@@ -256,7 +256,7 @@ namespace Javax.Lang.Model.Element
         }
         #endregion
 
-        #region ExportsDirective definition
+        #region ExportsDirective declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.ExportsDirective.html"/>
         /// </summary>
@@ -303,7 +303,7 @@ namespace Javax.Lang.Model.Element
         }
         #endregion
 
-        #region OpensDirective definition
+        #region OpensDirective declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.OpensDirective.html"/>
         /// </summary>
@@ -350,7 +350,7 @@ namespace Javax.Lang.Model.Element
         }
         #endregion
 
-        #region ProvidesDirective definition
+        #region ProvidesDirective declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.ProvidesDirective.html"/>
         /// </summary>
@@ -397,7 +397,7 @@ namespace Javax.Lang.Model.Element
         }
         #endregion
 
-        #region RequiresDirective definition
+        #region RequiresDirective declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.RequiresDirective.html"/>
         /// </summary>
@@ -444,7 +444,7 @@ namespace Javax.Lang.Model.Element
         }
         #endregion
 
-        #region UsesDirective definition
+        #region UsesDirective declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.UsesDirective.html"/>
         /// </summary>
@@ -543,7 +543,7 @@ namespace Javax.Lang.Model.Element
     }
     #endregion
 
-    #region ModuleElement
+    #region ModuleElement implementation
     public partial class ModuleElement : Javax.Lang.Model.Element.IModuleElement
     {
         #region Constructors
@@ -626,7 +626,7 @@ namespace Javax.Lang.Model.Element
         #endregion
 
         #region Nested classes
-        #region Directive
+        #region Directive implementation
         public partial class Directive
         {
             #region Constructors
@@ -676,7 +676,7 @@ namespace Javax.Lang.Model.Element
         }
         #endregion
 
-        #region DirectiveKind
+        #region DirectiveKind implementation
         public partial class DirectiveKind
         {
             #region Constructors
@@ -754,7 +754,7 @@ namespace Javax.Lang.Model.Element
         }
         #endregion
 
-        #region DirectiveVisitor
+        #region DirectiveVisitor implementation
         public partial class DirectiveVisitor
         {
             #region Constructors
@@ -864,7 +864,7 @@ namespace Javax.Lang.Model.Element
         }
         #endregion
 
-        #region DirectiveVisitor<R, P>
+        #region DirectiveVisitor<R, P> implementation
         public partial class DirectiveVisitor<R, P>
         {
             #region Constructors
@@ -978,7 +978,7 @@ namespace Javax.Lang.Model.Element
         }
         #endregion
 
-        #region ExportsDirective
+        #region ExportsDirective implementation
         public partial class ExportsDirective
         {
             #region Constructors
@@ -1023,7 +1023,7 @@ namespace Javax.Lang.Model.Element
         }
         #endregion
 
-        #region OpensDirective
+        #region OpensDirective implementation
         public partial class OpensDirective
         {
             #region Constructors
@@ -1068,7 +1068,7 @@ namespace Javax.Lang.Model.Element
         }
         #endregion
 
-        #region ProvidesDirective
+        #region ProvidesDirective implementation
         public partial class ProvidesDirective
         {
             #region Constructors
@@ -1113,7 +1113,7 @@ namespace Javax.Lang.Model.Element
         }
         #endregion
 
-        #region RequiresDirective
+        #region RequiresDirective implementation
         public partial class RequiresDirective
         {
             #region Constructors
@@ -1167,7 +1167,7 @@ namespace Javax.Lang.Model.Element
         }
         #endregion
 
-        #region UsesDirective
+        #region UsesDirective implementation
         public partial class UsesDirective
         {
             #region Constructors

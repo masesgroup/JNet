@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Cert
 {
-    #region CertPathValidatorSpi definition
+    #region CertPathValidatorSpi declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorSpi.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region CertPathValidatorSpi
+    #region CertPathValidatorSpi implementation
     public partial class CertPathValidatorSpi
     {
         #region Constructors

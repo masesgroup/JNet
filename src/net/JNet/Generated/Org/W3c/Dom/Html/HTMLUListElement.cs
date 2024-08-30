@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
-    #region HTMLUListElement definition
+    #region HTMLUListElement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLUListElement.html"/>
     /// </summary>
@@ -98,7 +98,7 @@ namespace Org.W3c.Dom.Html
     }
     #endregion
 
-    #region HTMLUListElement
+    #region HTMLUListElement implementation
     public partial class HTMLUListElement : Org.W3c.Dom.Html.IHTMLUListElement
     {
         #region Constructors

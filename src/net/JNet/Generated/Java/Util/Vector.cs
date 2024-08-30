@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region Vector definition
+    #region Vector declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Vector<E> definition
+    #region Vector<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Vector
+    #region Vector implementation
     public partial class Vector
     {
         #region Constructors
@@ -326,7 +326,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Vector<E>
+    #region Vector<E> implementation
     public partial class Vector<E>
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming
 {
-    #region Context definition
+    #region Context declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html"/>
     /// </summary>
@@ -284,7 +284,7 @@ namespace Javax.Naming
     }
     #endregion
 
-    #region Context
+    #region Context implementation
     public partial class Context : Javax.Naming.IContext
     {
         #region Constructors

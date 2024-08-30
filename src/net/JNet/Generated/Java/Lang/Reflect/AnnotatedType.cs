@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
-    #region AnnotatedType definition
+    #region AnnotatedType declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedType.html"/>
     /// </summary>
@@ -98,7 +98,7 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region AnnotatedType
+    #region AnnotatedType implementation
     public partial class AnnotatedType : Java.Lang.Reflect.IAnnotatedType
     {
         #region Constructors

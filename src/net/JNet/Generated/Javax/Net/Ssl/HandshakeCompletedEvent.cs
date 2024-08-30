@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Net.Ssl
 {
-    #region HandshakeCompletedEvent definition
+    #region HandshakeCompletedEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedEvent.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region HandshakeCompletedEvent
+    #region HandshakeCompletedEvent implementation
     public partial class HandshakeCompletedEvent
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Openmbean
 {
-    #region CompositeData definition
+    #region CompositeData declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeData.html"/>
     /// </summary>
@@ -123,7 +123,7 @@ namespace Javax.Management.Openmbean
     }
     #endregion
 
-    #region CompositeData
+    #region CompositeData implementation
     public partial class CompositeData : Javax.Management.Openmbean.ICompositeData
     {
         #region Constructors

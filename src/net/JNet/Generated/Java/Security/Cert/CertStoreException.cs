@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Cert
 {
-    #region CertStoreException definition
+    #region CertStoreException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStoreException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region CertStoreException
+    #region CertStoreException implementation
     public partial class CertStoreException
     {
         #region Constructors

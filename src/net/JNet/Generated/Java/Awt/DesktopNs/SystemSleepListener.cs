@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.DesktopNs
 {
-    #region SystemSleepListener definition
+    #region SystemSleepListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/SystemSleepListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Awt.DesktopNs
     }
     #endregion
 
-    #region SystemSleepListenerDirect definition
+    #region SystemSleepListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="SystemSleepListener"/> or its generic type if there is one
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Awt.DesktopNs
     }
     #endregion
 
-    #region SystemSleepListener
+    #region SystemSleepListener implementation
     public partial class SystemSleepListener : Java.Awt.DesktopNs.ISystemSleepListener
     {
         #region Constructors
@@ -202,7 +202,7 @@ namespace Java.Awt.DesktopNs
     }
     #endregion
 
-    #region SystemSleepListenerDirect
+    #region SystemSleepListenerDirect implementation
     public partial class SystemSleepListenerDirect : Java.Awt.DesktopNs.ISystemSleepListener
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Charset
 {
-    #region StandardCharsets definition
+    #region StandardCharsets declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/StandardCharsets.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Nio.Charset
     }
     #endregion
 
-    #region StandardCharsets
+    #region StandardCharsets implementation
     public partial class StandardCharsets
     {
         #region Constructors

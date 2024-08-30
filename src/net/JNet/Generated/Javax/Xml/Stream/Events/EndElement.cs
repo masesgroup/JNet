@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream.Events
 {
-    #region EndElement definition
+    #region EndElement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EndElement.html"/>
     /// </summary>
@@ -98,7 +98,7 @@ namespace Javax.Xml.Stream.Events
     }
     #endregion
 
-    #region EndElement
+    #region EndElement implementation
     public partial class EndElement : Javax.Xml.Stream.Events.IEndElement
     {
         #region Constructors

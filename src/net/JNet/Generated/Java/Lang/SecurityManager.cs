@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region SecurityManager definition
+    #region SecurityManager declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region SecurityManager
+    #region SecurityManager implementation
     public partial class SecurityManager
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming
 {
-    #region InitialContext definition
+    #region InitialContext declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Naming
     }
     #endregion
 
-    #region InitialContext
+    #region InitialContext implementation
     public partial class InitialContext
     {
         #region Constructors

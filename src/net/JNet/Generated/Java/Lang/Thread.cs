@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region Thread definition
+    #region Thread declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Lang
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region State definition
+        #region State declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region Thread
+    #region Thread implementation
     public partial class Thread
     {
         #region Constructors
@@ -458,7 +458,7 @@ namespace Java.Lang
         #endregion
 
         #region Nested classes
-        #region State
+        #region State implementation
         public partial class State
         {
             #region Constructors

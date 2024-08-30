@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region BlockingDeque definition
+    #region BlockingDeque declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region BlockingDeque<E> definition
+    #region BlockingDeque<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region BlockingDeque
+    #region BlockingDeque implementation
     public partial class BlockingDeque
     {
         #region Constructors
@@ -624,7 +624,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region BlockingDeque<E>
+    #region BlockingDeque<E> implementation
     public partial class BlockingDeque<E> : Java.Util.Concurrent.IBlockingDeque<E>
     {
         #region Constructors

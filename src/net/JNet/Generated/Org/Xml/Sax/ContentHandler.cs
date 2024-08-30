@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.Xml.Sax
 {
-    #region ContentHandler definition
+    #region ContentHandler declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ContentHandler.html"/>
     /// </summary>
@@ -164,7 +164,7 @@ namespace Org.Xml.Sax
     }
     #endregion
 
-    #region ContentHandler
+    #region ContentHandler implementation
     public partial class ContentHandler : Org.Xml.Sax.IContentHandler
     {
         #region Constructors

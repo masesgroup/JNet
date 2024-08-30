@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig.Keyinfo
 {
-    #region KeyName definition
+    #region KeyName declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyName.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
     }
     #endregion
 
-    #region KeyName
+    #region KeyName implementation
     public partial class KeyName : Javax.Xml.Crypto.Dsig.Keyinfo.IKeyName
     {
         #region Constructors

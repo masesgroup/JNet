@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio
 {
-    #region ImageWriteParam definition
+    #region ImageWriteParam declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Imageio
     }
     #endregion
 
-    #region ImageWriteParam
+    #region ImageWriteParam implementation
     public partial class ImageWriteParam
     {
         #region Constructors

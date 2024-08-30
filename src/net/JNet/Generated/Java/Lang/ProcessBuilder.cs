@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region ProcessBuilder definition
+    #region ProcessBuilder declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Lang
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Redirect definition
+        #region Redirect declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.html"/>
         /// </summary>
@@ -109,7 +109,7 @@ namespace Java.Lang
             public override bool IsBridgeStatic => true;
 
             // TODO: complete the class
-            #region Type definition
+            #region Type declaration
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.Type.html"/>
             /// </summary>
@@ -162,7 +162,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region ProcessBuilder
+    #region ProcessBuilder implementation
     public partial class ProcessBuilder
     {
         #region Constructors
@@ -375,7 +375,7 @@ namespace Java.Lang
         #endregion
 
         #region Nested classes
-        #region Redirect
+        #region Redirect implementation
         public partial class Redirect
         {
             #region Constructors
@@ -452,7 +452,7 @@ namespace Java.Lang
             #endregion
 
             #region Nested classes
-            #region Type
+            #region Type implementation
             public partial class Type
             {
                 #region Constructors

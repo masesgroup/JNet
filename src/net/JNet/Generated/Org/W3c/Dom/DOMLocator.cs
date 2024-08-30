@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom
 {
-    #region DOMLocator definition
+    #region DOMLocator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMLocator.html"/>
     /// </summary>
@@ -114,7 +114,7 @@ namespace Org.W3c.Dom
     }
     #endregion
 
-    #region DOMLocator
+    #region DOMLocator implementation
     public partial class DOMLocator : Org.W3c.Dom.IDOMLocator
     {
         #region Constructors

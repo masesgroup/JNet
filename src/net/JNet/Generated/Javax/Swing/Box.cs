@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region Box definition
+    #region Box declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Filler definition
+        #region Filler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.Filler.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region Box
+    #region Box implementation
     public partial class Box
     {
         #region Constructors
@@ -218,7 +218,7 @@ namespace Javax.Swing
         #endregion
 
         #region Nested classes
-        #region Filler
+        #region Filler implementation
         public partial class Filler
         {
             #region Constructors

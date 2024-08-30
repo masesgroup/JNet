@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi.Server
 {
-    #region ExportException definition
+    #region ExportException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/ExportException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Rmi.Server
     }
     #endregion
 
-    #region ExportException
+    #region ExportException implementation
     public partial class ExportException
     {
         #region Constructors

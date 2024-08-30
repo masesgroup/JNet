@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region LookAndFeel definition
+    #region LookAndFeel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region LookAndFeel
+    #region LookAndFeel implementation
     public partial class LookAndFeel
     {
         #region Constructors

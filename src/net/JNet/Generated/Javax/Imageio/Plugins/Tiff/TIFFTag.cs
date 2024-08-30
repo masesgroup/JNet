@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio.Plugins.Tiff
 {
-    #region TIFFTag definition
+    #region TIFFTag declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Imageio.Plugins.Tiff
     }
     #endregion
 
-    #region TIFFTag
+    #region TIFFTag implementation
     public partial class TIFFTag
     {
         #region Constructors

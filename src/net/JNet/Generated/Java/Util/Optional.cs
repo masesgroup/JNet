@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region Optional definition
+    #region Optional declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Optional<T> definition
+    #region Optional<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Optional
+    #region Optional implementation
     public partial class Optional
     {
         #region Constructors
@@ -294,7 +294,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Optional<T>
+    #region Optional<T> implementation
     public partial class Optional<T>
     {
         #region Constructors

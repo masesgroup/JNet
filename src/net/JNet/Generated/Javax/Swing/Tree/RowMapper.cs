@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Tree
 {
-    #region RowMapper definition
+    #region RowMapper declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/RowMapper.html"/>
     /// </summary>
@@ -96,7 +96,7 @@ namespace Javax.Swing.Tree
     }
     #endregion
 
-    #region RowMapper
+    #region RowMapper implementation
     public partial class RowMapper : Javax.Swing.Tree.IRowMapper
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region ArrayList definition
+    #region ArrayList declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region ArrayList<E> definition
+    #region ArrayList<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region ArrayList
+    #region ArrayList implementation
     public partial class ArrayList
     {
         #region Constructors
@@ -190,7 +190,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region ArrayList<E>
+    #region ArrayList<E> implementation
     public partial class ArrayList<E>
     {
         #region Constructors

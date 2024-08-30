@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Datatype
 {
-    #region DatatypeConstants definition
+    #region DatatypeConstants declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Xml.Datatype
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Field definition
+        #region Field declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.Field.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Xml.Datatype
     }
     #endregion
 
-    #region DatatypeConstants
+    #region DatatypeConstants implementation
     public partial class DatatypeConstants
     {
         #region Constructors
@@ -355,7 +355,7 @@ namespace Javax.Xml.Datatype
         #endregion
 
         #region Nested classes
-        #region Field
+        #region Field implementation
         public partial class Field
         {
             #region Constructors

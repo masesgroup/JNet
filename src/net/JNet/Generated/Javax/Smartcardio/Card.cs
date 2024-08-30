@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Smartcardio
 {
-    #region Card definition
+    #region Card declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Smartcardio
     }
     #endregion
 
-    #region Card
+    #region Card implementation
     public partial class Card
     {
         #region Constructors

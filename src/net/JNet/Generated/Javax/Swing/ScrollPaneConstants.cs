@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region ScrollPaneConstants definition
+    #region ScrollPaneConstants declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region ScrollPaneConstants
+    #region ScrollPaneConstants implementation
     public partial class ScrollPaneConstants : Javax.Swing.IScrollPaneConstants
     {
         #region Constructors

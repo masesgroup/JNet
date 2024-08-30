@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Basic
 {
-    #region ComboPopup definition
+    #region ComboPopup declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html"/>
     /// </summary>
@@ -123,7 +123,7 @@ namespace Javax.Swing.Plaf.Basic
     }
     #endregion
 
-    #region ComboPopup
+    #region ComboPopup implementation
     public partial class ComboPopup : Javax.Swing.Plaf.Basic.IComboPopup
     {
         #region Constructors

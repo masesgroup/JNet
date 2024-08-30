@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region PseudoColumnUsage definition
+    #region PseudoColumnUsage declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PseudoColumnUsage.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region PseudoColumnUsage
+    #region PseudoColumnUsage implementation
     public partial class PseudoColumnUsage
     {
         #region Constructors

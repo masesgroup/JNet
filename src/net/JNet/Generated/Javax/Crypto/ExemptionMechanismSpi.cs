@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Crypto
 {
-    #region ExemptionMechanismSpi definition
+    #region ExemptionMechanismSpi declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/ExemptionMechanismSpi.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Crypto
     }
     #endregion
 
-    #region ExemptionMechanismSpi
+    #region ExemptionMechanismSpi implementation
     public partial class ExemptionMechanismSpi
     {
         #region Constructors

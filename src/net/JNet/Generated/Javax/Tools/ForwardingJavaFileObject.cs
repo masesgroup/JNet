@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Tools
 {
-    #region ForwardingJavaFileObject definition
+    #region ForwardingJavaFileObject declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileObject.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Tools
     }
     #endregion
 
-    #region ForwardingJavaFileObject<F> definition
+    #region ForwardingJavaFileObject<F> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileObject.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Javax.Tools
     }
     #endregion
 
-    #region ForwardingJavaFileObject
+    #region ForwardingJavaFileObject implementation
     public partial class ForwardingJavaFileObject
     {
         #region Constructors
@@ -182,7 +182,7 @@ namespace Javax.Tools
     }
     #endregion
 
-    #region ForwardingJavaFileObject<F>
+    #region ForwardingJavaFileObject<F> implementation
     public partial class ForwardingJavaFileObject<F>
     {
         #region Constructors

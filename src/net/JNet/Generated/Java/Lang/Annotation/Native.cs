@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Annotation
 {
-    #region Native definition
+    #region Native declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Native.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Java.Lang.Annotation
     }
     #endregion
 
-    #region Native
+    #region Native implementation
     public partial class Native : Java.Lang.Annotation.INative
     {
         #region Constructors

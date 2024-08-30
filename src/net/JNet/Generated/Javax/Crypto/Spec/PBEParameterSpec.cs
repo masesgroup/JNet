@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Crypto.Spec
 {
-    #region PBEParameterSpec definition
+    #region PBEParameterSpec declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PBEParameterSpec.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Crypto.Spec
     }
     #endregion
 
-    #region PBEParameterSpec
+    #region PBEParameterSpec implementation
     public partial class PBEParameterSpec
     {
         #region Constructors

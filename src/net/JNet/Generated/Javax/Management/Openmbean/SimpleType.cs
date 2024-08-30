@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Openmbean
 {
-    #region SimpleType definition
+    #region SimpleType declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Management.Openmbean
     }
     #endregion
 
-    #region SimpleType<T> definition
+    #region SimpleType<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Javax.Management.Openmbean
     }
     #endregion
 
-    #region SimpleType
+    #region SimpleType implementation
     public partial class SimpleType
     {
         #region Constructors
@@ -240,7 +240,7 @@ namespace Javax.Management.Openmbean
     }
     #endregion
 
-    #region SimpleType<T>
+    #region SimpleType<T> implementation
     public partial class SimpleType<T>
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql
 {
-    #region RowSetInternal definition
+    #region RowSetInternal declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetInternal.html"/>
     /// </summary>
@@ -112,7 +112,7 @@ namespace Javax.Sql
     }
     #endregion
 
-    #region RowSetInternal
+    #region RowSetInternal implementation
     public partial class RowSetInternal : Javax.Sql.IRowSetInternal
     {
         #region Constructors

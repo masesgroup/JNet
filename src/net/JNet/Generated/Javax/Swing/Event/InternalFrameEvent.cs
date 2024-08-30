@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
-    #region InternalFrameEvent definition
+    #region InternalFrameEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region InternalFrameEvent
+    #region InternalFrameEvent implementation
     public partial class InternalFrameEvent
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Xpath
 {
-    #region XPathEvaluator definition
+    #region XPathEvaluator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathEvaluator.html"/>
     /// </summary>
@@ -117,7 +117,7 @@ namespace Org.W3c.Dom.Xpath
     }
     #endregion
 
-    #region XPathEvaluator
+    #region XPathEvaluator implementation
     public partial class XPathEvaluator : Org.W3c.Dom.Xpath.IXPathEvaluator
     {
         #region Constructors

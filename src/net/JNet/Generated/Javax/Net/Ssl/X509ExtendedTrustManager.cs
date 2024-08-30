@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Net.Ssl
 {
-    #region X509ExtendedTrustManager definition
+    #region X509ExtendedTrustManager declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509ExtendedTrustManager.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region X509ExtendedTrustManager
+    #region X509ExtendedTrustManager implementation
     public partial class X509ExtendedTrustManager
     {
         #region Constructors

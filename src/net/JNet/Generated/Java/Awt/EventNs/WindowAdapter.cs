@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
-    #region WindowAdapter definition
+    #region WindowAdapter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region WindowAdapterDirect definition
+    #region WindowAdapterDirect declaration
     /// <summary>
     /// Direct override of <see cref="WindowAdapter"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region WindowAdapter
+    #region WindowAdapter implementation
     public partial class WindowAdapter
     {
         #region Constructors
@@ -350,7 +350,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region WindowAdapterDirect
+    #region WindowAdapterDirect implementation
     public partial class WindowAdapterDirect
     {
         #region Constructors

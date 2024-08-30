@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Annotation
 {
-    #region IncompleteAnnotationException definition
+    #region IncompleteAnnotationException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/IncompleteAnnotationException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang.Annotation
     }
     #endregion
 
-    #region IncompleteAnnotationException
+    #region IncompleteAnnotationException implementation
     public partial class IncompleteAnnotationException
     {
         #region Constructors

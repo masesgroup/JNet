@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
-    #region FocusAdapter definition
+    #region FocusAdapter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusAdapter.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region FocusAdapterDirect definition
+    #region FocusAdapterDirect declaration
     /// <summary>
     /// Direct override of <see cref="FocusAdapter"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region FocusAdapter
+    #region FocusAdapter implementation
     public partial class FocusAdapter
     {
         #region Constructors
@@ -174,7 +174,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region FocusAdapterDirect
+    #region FocusAdapterDirect implementation
     public partial class FocusAdapterDirect
     {
         #region Constructors

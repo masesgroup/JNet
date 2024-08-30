@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.ModuleNs
 {
-    #region ModuleReference definition
+    #region ModuleReference declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReference.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Lang.ModuleNs
     }
     #endregion
 
-    #region ModuleReference
+    #region ModuleReference implementation
     public partial class ModuleReference
     {
         #region Constructors

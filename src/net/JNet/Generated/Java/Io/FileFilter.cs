@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
-    #region FileFilter definition
+    #region FileFilter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileFilter.html"/>
     /// </summary>
@@ -96,7 +96,7 @@ namespace Java.Io
     }
     #endregion
 
-    #region FileFilter
+    #region FileFilter implementation
     public partial class FileFilter : Java.Io.IFileFilter
     {
         #region Constructors

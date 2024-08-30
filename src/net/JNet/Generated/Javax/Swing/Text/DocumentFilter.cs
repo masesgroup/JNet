@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region DocumentFilter definition
+    #region DocumentFilter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DocumentFilter.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Text
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region FilterBypass definition
+        #region FilterBypass declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DocumentFilter.FilterBypass.html"/>
         /// </summary>
@@ -117,7 +117,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region DocumentFilter
+    #region DocumentFilter implementation
     public partial class DocumentFilter
     {
         #region Constructors
@@ -177,7 +177,7 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Nested classes
-        #region FilterBypass
+        #region FilterBypass implementation
         public partial class FilterBypass
         {
             #region Constructors

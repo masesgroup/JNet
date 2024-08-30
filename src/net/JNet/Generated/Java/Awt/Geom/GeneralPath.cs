@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Geom
 {
-    #region GeneralPath definition
+    #region GeneralPath declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/GeneralPath.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.Geom
     }
     #endregion
 
-    #region GeneralPath
+    #region GeneralPath implementation
     public partial class GeneralPath
     {
         #region Constructors

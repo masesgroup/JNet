@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming
 {
-    #region PartialResultException definition
+    #region PartialResultException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/PartialResultException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Naming
     }
     #endregion
 
-    #region PartialResultException
+    #region PartialResultException implementation
     public partial class PartialResultException
     {
         #region Constructors

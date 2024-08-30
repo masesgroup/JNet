@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream
 {
-    #region XMLReporter definition
+    #region XMLReporter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLReporter.html"/>
     /// </summary>
@@ -99,7 +99,7 @@ namespace Javax.Xml.Stream
     }
     #endregion
 
-    #region XMLReporter
+    #region XMLReporter implementation
     public partial class XMLReporter : Javax.Xml.Stream.IXMLReporter
     {
         #region Constructors

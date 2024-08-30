@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Transform.Sax
 {
-    #region SAXTransformerFactory definition
+    #region SAXTransformerFactory declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXTransformerFactory.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Xml.Transform.Sax
     }
     #endregion
 
-    #region SAXTransformerFactory
+    #region SAXTransformerFactory implementation
     public partial class SAXTransformerFactory
     {
         #region Constructors

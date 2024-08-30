@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
-    #region AlreadyConnectedException definition
+    #region AlreadyConnectedException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AlreadyConnectedException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region AlreadyConnectedException
+    #region AlreadyConnectedException implementation
     public partial class AlreadyConnectedException
     {
         #region Constructors

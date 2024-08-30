@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region IntPredicate definition
+    #region IntPredicate declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IntPredicateDirect definition
+    #region IntPredicateDirect declaration
     /// <summary>
     /// Direct override of <see cref="IntPredicate"/> or its generic type if there is one
     /// </summary>
@@ -133,7 +133,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IntPredicate
+    #region IntPredicate implementation
     public partial class IntPredicate : Java.Util.Function.IIntPredicate
     {
         #region Constructors
@@ -298,7 +298,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IntPredicateDirect
+    #region IntPredicateDirect implementation
     public partial class IntPredicateDirect : Java.Util.Function.IIntPredicate
     {
         #region Constructors

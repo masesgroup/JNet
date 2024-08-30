@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
-    #region MenuKeyListener definition
+    #region MenuKeyListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuKeyListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region MenuKeyListenerDirect definition
+    #region MenuKeyListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="MenuKeyListener"/> or its generic type if there is one
     /// </summary>
@@ -125,7 +125,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region MenuKeyListener
+    #region MenuKeyListener implementation
     public partial class MenuKeyListener : Javax.Swing.Event.IMenuKeyListener
     {
         #region Constructors
@@ -229,7 +229,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region MenuKeyListenerDirect
+    #region MenuKeyListenerDirect implementation
     public partial class MenuKeyListenerDirect : Javax.Swing.Event.IMenuKeyListener
     {
         #region Constructors

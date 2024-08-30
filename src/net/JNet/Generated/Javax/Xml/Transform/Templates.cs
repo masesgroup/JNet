@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Transform
 {
-    #region Templates definition
+    #region Templates declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Templates.html"/>
     /// </summary>
@@ -100,7 +100,7 @@ namespace Javax.Xml.Transform
     }
     #endregion
 
-    #region Templates
+    #region Templates implementation
     public partial class Templates : Javax.Xml.Transform.ITemplates
     {
         #region Constructors

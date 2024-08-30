@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region Class definition
+    #region Class declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region Class<T> definition
+    #region Class<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region Class
+    #region Class implementation
     public partial class Class
     {
         #region Constructors
@@ -711,7 +711,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region Class<T>
+    #region Class<T> implementation
     public partial class Class<T>
     {
         #region Constructors

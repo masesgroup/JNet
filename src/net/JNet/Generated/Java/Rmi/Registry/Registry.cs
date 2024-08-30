@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi.Registry
 {
-    #region Registry definition
+    #region Registry declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html"/>
     /// </summary>
@@ -131,7 +131,7 @@ namespace Java.Rmi.Registry
     }
     #endregion
 
-    #region Registry
+    #region Registry implementation
     public partial class Registry : Java.Rmi.Registry.IRegistry
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming
 {
-    #region NameAlreadyBoundException definition
+    #region NameAlreadyBoundException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameAlreadyBoundException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Naming
     }
     #endregion
 
-    #region NameAlreadyBoundException
+    #region NameAlreadyBoundException implementation
     public partial class NameAlreadyBoundException
     {
         #region Constructors

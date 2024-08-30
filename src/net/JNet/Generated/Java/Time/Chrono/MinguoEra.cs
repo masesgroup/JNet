@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time.Chrono
 {
-    #region MinguoEra definition
+    #region MinguoEra declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoEra.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Time.Chrono
     }
     #endregion
 
-    #region MinguoEra
+    #region MinguoEra implementation
     public partial class MinguoEra
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig
 {
-    #region Reference definition
+    #region Reference declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html"/>
     /// </summary>
@@ -125,7 +125,7 @@ namespace Javax.Xml.Crypto.Dsig
     }
     #endregion
 
-    #region Reference
+    #region Reference implementation
     public partial class Reference : Javax.Xml.Crypto.Dsig.IReference
     {
         #region Constructors

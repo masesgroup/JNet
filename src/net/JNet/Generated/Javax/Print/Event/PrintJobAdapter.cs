@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Event
 {
-    #region PrintJobAdapter definition
+    #region PrintJobAdapter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Print.Event
     }
     #endregion
 
-    #region PrintJobAdapterDirect definition
+    #region PrintJobAdapterDirect declaration
     /// <summary>
     /// Direct override of <see cref="PrintJobAdapter"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Javax.Print.Event
     }
     #endregion
 
-    #region PrintJobAdapter
+    #region PrintJobAdapter implementation
     public partial class PrintJobAdapter
     {
         #region Constructors
@@ -262,7 +262,7 @@ namespace Javax.Print.Event
     }
     #endregion
 
-    #region PrintJobAdapterDirect
+    #region PrintJobAdapterDirect implementation
     public partial class PrintJobAdapterDirect
     {
         #region Constructors

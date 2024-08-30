@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time
 {
-    #region YearMonth definition
+    #region YearMonth declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Time
     }
     #endregion
 
-    #region YearMonth
+    #region YearMonth implementation
     public partial class YearMonth
     {
         #region Constructors

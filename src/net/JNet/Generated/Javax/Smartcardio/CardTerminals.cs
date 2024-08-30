@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Smartcardio
 {
-    #region CardTerminals definition
+    #region CardTerminals declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Smartcardio
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region State definition
+        #region State declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html"/>
         /// </summary>
@@ -117,7 +117,7 @@ namespace Javax.Smartcardio
     }
     #endregion
 
-    #region CardTerminals
+    #region CardTerminals implementation
     public partial class CardTerminals
     {
         #region Constructors
@@ -187,7 +187,7 @@ namespace Javax.Smartcardio
         #endregion
 
         #region Nested classes
-        #region State
+        #region State implementation
         public partial class State
         {
             #region Constructors

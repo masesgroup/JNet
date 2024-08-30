@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Validation
 {
-    #region SchemaFactoryLoader definition
+    #region SchemaFactoryLoader declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactoryLoader.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Xml.Validation
     }
     #endregion
 
-    #region SchemaFactoryLoader
+    #region SchemaFactoryLoader implementation
     public partial class SchemaFactoryLoader
     {
         #region Constructors

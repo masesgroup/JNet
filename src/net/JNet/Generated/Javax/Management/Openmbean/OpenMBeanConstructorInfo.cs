@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Openmbean
 {
-    #region OpenMBeanConstructorInfo definition
+    #region OpenMBeanConstructorInfo declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanConstructorInfo.html"/>
     /// </summary>
@@ -102,7 +102,7 @@ namespace Javax.Management.Openmbean
     }
     #endregion
 
-    #region OpenMBeanConstructorInfo
+    #region OpenMBeanConstructorInfo implementation
     public partial class OpenMBeanConstructorInfo : Javax.Management.Openmbean.IOpenMBeanConstructorInfo
     {
         #region Constructors

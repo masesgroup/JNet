@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time
 {
-    #region Instant definition
+    #region Instant declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Time
     }
     #endregion
 
-    #region Instant
+    #region Instant implementation
     public partial class Instant
     {
         #region Constructors

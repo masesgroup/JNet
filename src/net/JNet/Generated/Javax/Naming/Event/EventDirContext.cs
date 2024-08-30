@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Event
 {
-    #region EventDirContext definition
+    #region EventDirContext declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventDirContext.html"/>
     /// </summary>
@@ -128,7 +128,7 @@ namespace Javax.Naming.Event
     }
     #endregion
 
-    #region EventDirContext
+    #region EventDirContext implementation
     public partial class EventDirContext : Javax.Naming.Event.IEventDirContext
     {
         #region Constructors

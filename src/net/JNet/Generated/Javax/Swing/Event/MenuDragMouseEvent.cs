@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
-    #region MenuDragMouseEvent definition
+    #region MenuDragMouseEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseEvent.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region MenuDragMouseEvent
+    #region MenuDragMouseEvent implementation
     public partial class MenuDragMouseEvent
     {
         #region Constructors

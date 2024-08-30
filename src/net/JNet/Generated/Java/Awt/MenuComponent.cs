@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region MenuComponent definition
+    #region MenuComponent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuComponent.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region MenuComponent
+    #region MenuComponent implementation
     public partial class MenuComponent
     {
         #region Constructors

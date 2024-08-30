@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans
 {
-    #region DesignMode definition
+    #region DesignMode declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/DesignMode.html"/>
     /// </summary>
@@ -100,7 +100,7 @@ namespace Java.Beans
     }
     #endregion
 
-    #region DesignMode
+    #region DesignMode implementation
     public partial class DesignMode : Java.Beans.IDesignMode
     {
         #region Constructors

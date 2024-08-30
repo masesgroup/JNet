@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Spi
 {
-    #region DirectoryManager definition
+    #region DirectoryManager declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirectoryManager.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Naming.Spi
     }
     #endregion
 
-    #region DirectoryManager
+    #region DirectoryManager implementation
     public partial class DirectoryManager
     {
         #region Constructors

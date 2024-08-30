@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
-    #region MulticastSocket definition
+    #region MulticastSocket declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Net
     }
     #endregion
 
-    #region MulticastSocket
+    #region MulticastSocket implementation
     public partial class MulticastSocket
     {
         #region Constructors

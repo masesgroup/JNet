@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region IllegalAccessError definition
+    #region IllegalAccessError declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/IllegalAccessError.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region IllegalAccessError
+    #region IllegalAccessError implementation
     public partial class IllegalAccessError
     {
         #region Constructors

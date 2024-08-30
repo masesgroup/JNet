@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom
 {
-    #region TypeInfo definition
+    #region TypeInfo declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/TypeInfo.html"/>
     /// </summary>
@@ -106,7 +106,7 @@ namespace Org.W3c.Dom
     }
     #endregion
 
-    #region TypeInfo
+    #region TypeInfo implementation
     public partial class TypeInfo : Org.W3c.Dom.ITypeInfo
     {
         #region Constructors

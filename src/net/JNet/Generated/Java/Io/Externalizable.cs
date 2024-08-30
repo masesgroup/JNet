@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
-    #region Externalizable definition
+    #region Externalizable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Externalizable.html"/>
     /// </summary>
@@ -103,7 +103,7 @@ namespace Java.Io
     }
     #endregion
 
-    #region Externalizable
+    #region Externalizable implementation
     public partial class Externalizable : Java.Io.IExternalizable
     {
         #region Constructors

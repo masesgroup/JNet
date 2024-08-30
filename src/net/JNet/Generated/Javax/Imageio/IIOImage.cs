@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio
 {
-    #region IIOImage definition
+    #region IIOImage declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOImage.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Imageio
     }
     #endregion
 
-    #region IIOImage
+    #region IIOImage implementation
     public partial class IIOImage
     {
         #region Constructors

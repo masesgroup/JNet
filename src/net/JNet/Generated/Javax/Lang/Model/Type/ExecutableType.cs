@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Type
 {
-    #region ExecutableType definition
+    #region ExecutableType declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/ExecutableType.html"/>
     /// </summary>
@@ -110,7 +110,7 @@ namespace Javax.Lang.Model.Type
     }
     #endregion
 
-    #region ExecutableType
+    #region ExecutableType implementation
     public partial class ExecutableType : Javax.Lang.Model.Type.IExecutableType
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region LinkedHashSet definition
+    #region LinkedHashSet declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedHashSet.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region LinkedHashSet<E> definition
+    #region LinkedHashSet<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedHashSet.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region LinkedHashSet
+    #region LinkedHashSet implementation
     public partial class LinkedHashSet
     {
         #region Constructors
@@ -172,7 +172,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region LinkedHashSet<E>
+    #region LinkedHashSet<E> implementation
     public partial class LinkedHashSet<E>
     {
         #region Constructors

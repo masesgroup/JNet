@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Relation
 {
-    #region RelationServiceMBean definition
+    #region RelationServiceMBean declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html"/>
     /// </summary>
@@ -367,7 +367,7 @@ namespace Javax.Management.Relation
     }
     #endregion
 
-    #region RelationServiceMBean
+    #region RelationServiceMBean implementation
     public partial class RelationServiceMBean : Javax.Management.Relation.IRelationServiceMBean
     {
         #region Constructors

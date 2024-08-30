@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Timer
 {
-    #region TimerNotification definition
+    #region TimerNotification declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerNotification.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Management.Timer
     }
     #endregion
 
-    #region TimerNotification
+    #region TimerNotification implementation
     public partial class TimerNotification
     {
         #region Constructors

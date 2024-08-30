@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Cert
 {
-    #region CertificateParsingException definition
+    #region CertificateParsingException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateParsingException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region CertificateParsingException
+    #region CertificateParsingException implementation
     public partial class CertificateParsingException
     {
         #region Constructors

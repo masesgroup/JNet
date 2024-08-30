@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Stylesheets
 {
-    #region DocumentStyle definition
+    #region DocumentStyle declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/DocumentStyle.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Org.W3c.Dom.Stylesheets
     }
     #endregion
 
-    #region DocumentStyle
+    #region DocumentStyle implementation
     public partial class DocumentStyle : Org.W3c.Dom.Stylesheets.IDocumentStyle
     {
         #region Constructors

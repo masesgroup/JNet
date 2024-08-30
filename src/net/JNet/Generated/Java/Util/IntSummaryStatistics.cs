@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region IntSummaryStatistics definition
+    #region IntSummaryStatistics declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/IntSummaryStatistics.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region IntSummaryStatistics
+    #region IntSummaryStatistics implementation
     public partial class IntSummaryStatistics
     {
         #region Constructors

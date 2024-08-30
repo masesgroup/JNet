@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.FontNs
 {
-    #region GlyphJustificationInfo definition
+    #region GlyphJustificationInfo declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.FontNs
     }
     #endregion
 
-    #region GlyphJustificationInfo
+    #region GlyphJustificationInfo implementation
     public partial class GlyphJustificationInfo
     {
         #region Constructors

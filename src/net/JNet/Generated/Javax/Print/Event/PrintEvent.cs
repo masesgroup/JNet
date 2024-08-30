@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Event
 {
-    #region PrintEvent definition
+    #region PrintEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintEvent.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Print.Event
     }
     #endregion
 
-    #region PrintEvent
+    #region PrintEvent implementation
     public partial class PrintEvent
     {
         #region Constructors

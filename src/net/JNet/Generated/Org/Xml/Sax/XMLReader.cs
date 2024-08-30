@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.Xml.Sax
 {
-    #region XMLReader definition
+    #region XMLReader declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html"/>
     /// </summary>
@@ -152,7 +152,7 @@ namespace Org.Xml.Sax
     }
     #endregion
 
-    #region XMLReader
+    #region XMLReader implementation
     public partial class XMLReader : Org.Xml.Sax.IXMLReader
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.FontNs
 {
-    #region NumericShaper definition
+    #region NumericShaper declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Awt.FontNs
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Range definition
+        #region Range declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Awt.FontNs
     }
     #endregion
 
-    #region NumericShaper
+    #region NumericShaper implementation
     public partial class NumericShaper
     {
         #region Constructors
@@ -369,7 +369,7 @@ namespace Java.Awt.FontNs
         #endregion
 
         #region Nested classes
-        #region Range
+        #region Range implementation
         public partial class Range
         {
             #region Constructors

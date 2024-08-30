@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Cert
 {
-    #region PKIXRevocationChecker definition
+    #region PKIXRevocationChecker declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXRevocationChecker.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Java.Security.Cert
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Option definition
+        #region Option declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXRevocationChecker.Option.html"/>
         /// </summary>
@@ -117,7 +117,7 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region PKIXRevocationChecker
+    #region PKIXRevocationChecker implementation
     public partial class PKIXRevocationChecker
     {
         #region Constructors
@@ -183,7 +183,7 @@ namespace Java.Security.Cert
         #endregion
 
         #region Nested classes
-        #region Option
+        #region Option implementation
         public partial class Option
         {
             #region Constructors

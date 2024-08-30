@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time.Temporal
 {
-    #region ChronoField definition
+    #region ChronoField declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Time.Temporal
     }
     #endregion
 
-    #region ChronoField
+    #region ChronoField implementation
     public partial class ChronoField
     {
         #region Constructors

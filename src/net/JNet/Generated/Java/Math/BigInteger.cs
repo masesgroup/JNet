@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Math
 {
-    #region BigInteger definition
+    #region BigInteger declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Math
     }
     #endregion
 
-    #region BigInteger
+    #region BigInteger implementation
     public partial class BigInteger
     {
         #region Constructors

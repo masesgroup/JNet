@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region LongSupplier definition
+    #region LongSupplier declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongSupplier.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region LongSupplierDirect definition
+    #region LongSupplierDirect declaration
     /// <summary>
     /// Direct override of <see cref="LongSupplier"/> or its generic type if there is one
     /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region LongSupplier
+    #region LongSupplier implementation
     public partial class LongSupplier : Java.Util.Function.ILongSupplier
     {
         #region Constructors
@@ -176,7 +176,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region LongSupplierDirect
+    #region LongSupplierDirect implementation
     public partial class LongSupplierDirect : Java.Util.Function.ILongSupplier
     {
         #region Constructors

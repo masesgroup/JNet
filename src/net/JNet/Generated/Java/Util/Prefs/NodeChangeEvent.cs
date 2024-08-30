@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Prefs
 {
-    #region NodeChangeEvent definition
+    #region NodeChangeEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeEvent.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Prefs
     }
     #endregion
 
-    #region NodeChangeEvent
+    #region NodeChangeEvent implementation
     public partial class NodeChangeEvent
     {
         #region Constructors

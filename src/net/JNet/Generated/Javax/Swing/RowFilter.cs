@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region RowFilter definition
+    #region RowFilter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Swing
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region ComparisonType definition
+        #region ComparisonType declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html"/>
         /// </summary>
@@ -113,7 +113,7 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region Entry definition
+        #region Entry declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html"/>
         /// </summary>
@@ -160,7 +160,7 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region Entry<M, I> definition
+        #region Entry<M, I> declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html"/>
         /// </summary>
@@ -213,7 +213,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region RowFilter<M, I> definition
+    #region RowFilter<M, I> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html"/>
     /// </summary>
@@ -262,7 +262,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region RowFilter
+    #region RowFilter implementation
     public partial class RowFilter
     {
         #region Constructors
@@ -354,7 +354,7 @@ namespace Javax.Swing
         #endregion
 
         #region Nested classes
-        #region ComparisonType
+        #region ComparisonType implementation
         public partial class ComparisonType
         {
             #region Constructors
@@ -426,7 +426,7 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region Entry
+        #region Entry implementation
         public partial class Entry
         {
             #region Constructors
@@ -496,7 +496,7 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region Entry<M, I>
+        #region Entry<M, I> implementation
         public partial class Entry<M, I>
         {
             #region Constructors
@@ -577,7 +577,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region RowFilter<M, I>
+    #region RowFilter<M, I> implementation
     public partial class RowFilter<M, I>
     {
         #region Constructors

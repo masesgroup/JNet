@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time.Chrono
 {
-    #region IsoChronology definition
+    #region IsoChronology declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoChronology.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Time.Chrono
     }
     #endregion
 
-    #region IsoChronology
+    #region IsoChronology implementation
     public partial class IsoChronology
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Relation
 {
-    #region InvalidRelationServiceException definition
+    #region InvalidRelationServiceException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/InvalidRelationServiceException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Management.Relation
     }
     #endregion
 
-    #region InvalidRelationServiceException
+    #region InvalidRelationServiceException implementation
     public partial class InvalidRelationServiceException
     {
         #region Constructors

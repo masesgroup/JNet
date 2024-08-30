@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Ref
 {
-    #region WeakReference definition
+    #region WeakReference declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/WeakReference.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Lang.Ref
     }
     #endregion
 
-    #region WeakReference<T> definition
+    #region WeakReference<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/WeakReference.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Lang.Ref
     }
     #endregion
 
-    #region WeakReference
+    #region WeakReference implementation
     public partial class WeakReference
     {
         #region Constructors
@@ -164,7 +164,7 @@ namespace Java.Lang.Ref
     }
     #endregion
 
-    #region WeakReference<T>
+    #region WeakReference<T> implementation
     public partial class WeakReference<T>
     {
         #region Constructors

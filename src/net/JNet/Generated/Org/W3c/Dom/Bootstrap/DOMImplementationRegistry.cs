@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Bootstrap
 {
-    #region DOMImplementationRegistry definition
+    #region DOMImplementationRegistry declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/bootstrap/DOMImplementationRegistry.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Org.W3c.Dom.Bootstrap
     }
     #endregion
 
-    #region DOMImplementationRegistry
+    #region DOMImplementationRegistry implementation
     public partial class DOMImplementationRegistry
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region SQLXML definition
+    #region SQLXML declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html"/>
     /// </summary>
@@ -135,7 +135,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region SQLXML
+    #region SQLXML implementation
     public partial class SQLXML : Java.Sql.ISQLXML
     {
         #region Constructors

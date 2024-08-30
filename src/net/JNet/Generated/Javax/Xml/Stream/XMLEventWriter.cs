@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream
 {
-    #region XMLEventWriter definition
+    #region XMLEventWriter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html"/>
     /// </summary>
@@ -136,7 +136,7 @@ namespace Javax.Xml.Stream
     }
     #endregion
 
-    #region XMLEventWriter
+    #region XMLEventWriter implementation
     public partial class XMLEventWriter : Javax.Xml.Stream.IXMLEventWriter
     {
         #region Constructors

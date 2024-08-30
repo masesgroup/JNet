@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Cert
 {
-    #region PKIXParameters definition
+    #region PKIXParameters declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region PKIXParameters
+    #region PKIXParameters implementation
     public partial class PKIXParameters
     {
         #region Constructors

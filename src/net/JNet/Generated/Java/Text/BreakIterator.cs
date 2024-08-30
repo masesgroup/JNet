@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Text
 {
-    #region BreakIterator definition
+    #region BreakIterator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Text
     }
     #endregion
 
-    #region BreakIterator
+    #region BreakIterator implementation
     public partial class BreakIterator
     {
         #region Constructors

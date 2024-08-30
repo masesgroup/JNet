@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region NegativeArraySizeException definition
+    #region NegativeArraySizeException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/NegativeArraySizeException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region NegativeArraySizeException
+    #region NegativeArraySizeException implementation
     public partial class NegativeArraySizeException
     {
         #region Constructors

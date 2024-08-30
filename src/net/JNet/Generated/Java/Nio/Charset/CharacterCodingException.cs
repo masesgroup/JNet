@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Charset
 {
-    #region CharacterCodingException definition
+    #region CharacterCodingException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharacterCodingException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Nio.Charset
     }
     #endregion
 
-    #region CharacterCodingException
+    #region CharacterCodingException implementation
     public partial class CharacterCodingException
     {
         #region Constructors

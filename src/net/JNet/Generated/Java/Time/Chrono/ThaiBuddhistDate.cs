@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time.Chrono
 {
-    #region ThaiBuddhistDate definition
+    #region ThaiBuddhistDate declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistDate.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Time.Chrono
     }
     #endregion
 
-    #region ThaiBuddhistDate
+    #region ThaiBuddhistDate implementation
     public partial class ThaiBuddhistDate
     {
         #region Constructors

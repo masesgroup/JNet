@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig.Keyinfo
 {
-    #region PGPData definition
+    #region PGPData declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/PGPData.html"/>
     /// </summary>
@@ -102,7 +102,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
     }
     #endregion
 
-    #region PGPData
+    #region PGPData implementation
     public partial class PGPData : Javax.Xml.Crypto.Dsig.Keyinfo.IPGPData
     {
         #region Constructors

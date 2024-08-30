@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Jar
 {
-    #region JarException definition
+    #region JarException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Util.Jar
     }
     #endregion
 
-    #region JarException
+    #region JarException implementation
     public partial class JarException
     {
         #region Constructors

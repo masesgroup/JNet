@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Border
 {
-    #region Border definition
+    #region Border declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/Border.html"/>
     /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Swing.Border
     }
     #endregion
 
-    #region Border
+    #region Border implementation
     public partial class Border : Javax.Swing.Border.IBorder
     {
         #region Constructors

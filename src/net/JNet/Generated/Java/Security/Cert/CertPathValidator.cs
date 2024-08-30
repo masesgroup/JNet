@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Cert
 {
-    #region CertPathValidator definition
+    #region CertPathValidator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidator.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region CertPathValidator
+    #region CertPathValidator implementation
     public partial class CertPathValidator
     {
         #region Constructors

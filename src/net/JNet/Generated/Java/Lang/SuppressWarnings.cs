@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region SuppressWarnings definition
+    #region SuppressWarnings declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SuppressWarnings.html"/>
     /// </summary>
@@ -95,7 +95,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region SuppressWarnings
+    #region SuppressWarnings implementation
     public partial class SuppressWarnings : Java.Lang.ISuppressWarnings
     {
         #region Constructors

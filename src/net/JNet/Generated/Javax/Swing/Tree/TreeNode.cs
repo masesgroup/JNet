@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Tree
 {
-    #region TreeNode definition
+    #region TreeNode declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html"/>
     /// </summary>
@@ -125,7 +125,7 @@ namespace Javax.Swing.Tree
     }
     #endregion
 
-    #region TreeNode
+    #region TreeNode implementation
     public partial class TreeNode : Javax.Swing.Tree.ITreeNode
     {
         #region Constructors

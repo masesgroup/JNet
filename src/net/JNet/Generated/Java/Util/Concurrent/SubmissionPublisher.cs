@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region SubmissionPublisher definition
+    #region SubmissionPublisher declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region SubmissionPublisher<T> definition
+    #region SubmissionPublisher<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region SubmissionPublisher
+    #region SubmissionPublisher implementation
     public partial class SubmissionPublisher
     {
         #region Constructors
@@ -309,7 +309,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region SubmissionPublisher<T>
+    #region SubmissionPublisher<T> implementation
     public partial class SubmissionPublisher<T>
     {
         #region Constructors

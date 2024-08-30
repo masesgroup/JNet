@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Rmi.Ssl
 {
-    #region SslRMIClientSocketFactory definition
+    #region SslRMIClientSocketFactory declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/javax/rmi/ssl/SslRMIClientSocketFactory.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Rmi.Ssl
     }
     #endregion
 
-    #region SslRMIClientSocketFactory
+    #region SslRMIClientSocketFactory implementation
     public partial class SslRMIClientSocketFactory
     {
         #region Constructors

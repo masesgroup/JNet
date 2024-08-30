@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream
 {
-    #region EventFilter definition
+    #region EventFilter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/EventFilter.html"/>
     /// </summary>
@@ -96,7 +96,7 @@ namespace Javax.Xml.Stream
     }
     #endregion
 
-    #region EventFilter
+    #region EventFilter implementation
     public partial class EventFilter : Javax.Xml.Stream.IEventFilter
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.Xml.Sax.Ext
 {
-    #region DefaultHandler2 definition
+    #region DefaultHandler2 declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Org.Xml.Sax.Ext
     }
     #endregion
 
-    #region DefaultHandler2
+    #region DefaultHandler2 implementation
     public partial class DefaultHandler2
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
-    #region TypeVariable definition
+    #region TypeVariable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/TypeVariable.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region TypeVariable<D> definition
+    #region TypeVariable<D> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/TypeVariable.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region TypeVariable
+    #region TypeVariable implementation
     public partial class TypeVariable
     {
         #region Constructors
@@ -221,7 +221,7 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region TypeVariable<D>
+    #region TypeVariable<D> implementation
     public partial class TypeVariable<D> : Java.Lang.Reflect.ITypeVariable<D>
     {
         #region Constructors

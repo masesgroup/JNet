@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi.Activation
 {
-    #region UnknownObjectException definition
+    #region UnknownObjectException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/UnknownObjectException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Rmi.Activation
     }
     #endregion
 
-    #region UnknownObjectException
+    #region UnknownObjectException implementation
     public partial class UnknownObjectException
     {
         #region Constructors

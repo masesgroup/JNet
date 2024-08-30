@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Element
 {
-    #region AnnotationValueVisitor definition
+    #region AnnotationValueVisitor declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Lang.Model.Element
     }
     #endregion
 
-    #region AnnotationValueVisitor<R, P> definition
+    #region AnnotationValueVisitor<R, P> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html"/>
     /// </summary>
@@ -121,7 +121,7 @@ namespace Javax.Lang.Model.Element
     }
     #endregion
 
-    #region AnnotationValueVisitor
+    #region AnnotationValueVisitor implementation
     public partial class AnnotationValueVisitor
     {
         #region Constructors
@@ -441,7 +441,7 @@ namespace Javax.Lang.Model.Element
     }
     #endregion
 
-    #region AnnotationValueVisitor<R, P>
+    #region AnnotationValueVisitor<R, P> implementation
     public partial class AnnotationValueVisitor<R, P> : Javax.Lang.Model.Element.IAnnotationValueVisitor<R, P>
     {
         #region Constructors

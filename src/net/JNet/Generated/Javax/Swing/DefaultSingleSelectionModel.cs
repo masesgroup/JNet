@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region DefaultSingleSelectionModel definition
+    #region DefaultSingleSelectionModel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultSingleSelectionModel.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region DefaultSingleSelectionModel
+    #region DefaultSingleSelectionModel implementation
     public partial class DefaultSingleSelectionModel
     {
         #region Constructors

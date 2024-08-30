@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi.Server
 {
-    #region ServerNotActiveException definition
+    #region ServerNotActiveException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/ServerNotActiveException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Rmi.Server
     }
     #endregion
 
-    #region ServerNotActiveException
+    #region ServerNotActiveException implementation
     public partial class ServerNotActiveException
     {
         #region Constructors

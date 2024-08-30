@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Smartcardio
 {
-    #region CardException definition
+    #region CardException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Smartcardio
     }
     #endregion
 
-    #region CardException
+    #region CardException implementation
     public partial class CardException
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Stream
 {
-    #region Collector definition
+    #region Collector declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Java.Util.Stream
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Characteristics definition
+        #region Characteristics declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.Characteristics.html"/>
         /// </summary>
@@ -117,7 +117,7 @@ namespace Java.Util.Stream
     }
     #endregion
 
-    #region Collector<T, A, R> definition
+    #region Collector<T, A, R> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html"/>
     /// </summary>
@@ -167,7 +167,7 @@ namespace Java.Util.Stream
     }
     #endregion
 
-    #region Collector
+    #region Collector implementation
     public partial class Collector
     {
         #region Constructors
@@ -288,7 +288,7 @@ namespace Java.Util.Stream
         #endregion
 
         #region Nested classes
-        #region Characteristics
+        #region Characteristics implementation
         public partial class Characteristics
         {
             #region Constructors
@@ -424,7 +424,7 @@ namespace Java.Util.Stream
     }
     #endregion
 
-    #region Collector<T, A, R>
+    #region Collector<T, A, R> implementation
     public partial class Collector<T, A, R> : Java.Util.Stream.ICollector<T, A, R>
     {
         #region Constructors

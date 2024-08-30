@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region DefaultComboBoxModel definition
+    #region DefaultComboBoxModel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region DefaultComboBoxModel<E> definition
+    #region DefaultComboBoxModel<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region DefaultComboBoxModel
+    #region DefaultComboBoxModel implementation
     public partial class DefaultComboBoxModel
     {
         #region Constructors
@@ -232,7 +232,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region DefaultComboBoxModel<E>
+    #region DefaultComboBoxModel<E> implementation
     public partial class DefaultComboBoxModel<E>
     {
         #region Constructors

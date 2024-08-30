@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
-    #region ComponentListener definition
+    #region ComponentListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region ComponentListenerDirect definition
+    #region ComponentListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="ComponentListener"/> or its generic type if there is one
     /// </summary>
@@ -130,7 +130,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region ComponentListener
+    #region ComponentListener implementation
     public partial class ComponentListener : Java.Awt.EventNs.IComponentListener
     {
         #region Constructors
@@ -256,7 +256,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region ComponentListenerDirect
+    #region ComponentListenerDirect implementation
     public partial class ComponentListenerDirect : Java.Awt.EventNs.IComponentListener
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region Action definition
+    #region Action declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region ActionDirect definition
+    #region ActionDirect declaration
     /// <summary>
     /// Direct override of <see cref="Action"/> or its generic type if there is one
     /// </summary>
@@ -153,7 +153,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region Action
+    #region Action implementation
     public partial class Action : Javax.Swing.IAction
     {
         #region Constructors
@@ -384,7 +384,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region ActionDirect
+    #region ActionDirect implementation
     public partial class ActionDirect : Javax.Swing.IAction
     {
         #region Constructors

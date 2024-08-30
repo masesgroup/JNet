@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
-    #region ObjectOutputStream definition
+    #region ObjectOutputStream declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Io
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region PutField definition
+        #region PutField declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.PutField.html"/>
         /// </summary>
@@ -117,7 +117,7 @@ namespace Java.Io
     }
     #endregion
 
-    #region ObjectOutputStream
+    #region ObjectOutputStream implementation
     public partial class ObjectOutputStream
     {
         #region Constructors
@@ -317,7 +317,7 @@ namespace Java.Io
         #endregion
 
         #region Nested classes
-        #region PutField
+        #region PutField implementation
         public partial class PutField
         {
             #region Constructors

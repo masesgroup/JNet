@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream
 {
-    #region XMLEventFactory definition
+    #region XMLEventFactory declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Xml.Stream
     }
     #endregion
 
-    #region XMLEventFactory
+    #region XMLEventFactory implementation
     public partial class XMLEventFactory
     {
         #region Constructors

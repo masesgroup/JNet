@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Colorchooser
 {
-    #region AbstractColorChooserPanel definition
+    #region AbstractColorChooserPanel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/AbstractColorChooserPanel.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Swing.Colorchooser
     }
     #endregion
 
-    #region AbstractColorChooserPanel
+    #region AbstractColorChooserPanel implementation
     public partial class AbstractColorChooserPanel
     {
         #region Constructors

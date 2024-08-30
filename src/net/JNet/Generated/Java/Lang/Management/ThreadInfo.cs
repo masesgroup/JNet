@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Management
 {
-    #region ThreadInfo definition
+    #region ThreadInfo declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Lang.Management
     }
     #endregion
 
-    #region ThreadInfo
+    #region ThreadInfo implementation
     public partial class ThreadInfo
     {
         #region Constructors

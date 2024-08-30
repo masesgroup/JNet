@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Instrument
 {
-    #region IllegalClassFormatException definition
+    #region IllegalClassFormatException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/IllegalClassFormatException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang.Instrument
     }
     #endregion
 
-    #region IllegalClassFormatException
+    #region IllegalClassFormatException implementation
     public partial class IllegalClassFormatException
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Midi
 {
-    #region ShortMessage definition
+    #region ShortMessage declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Sound.Midi
     }
     #endregion
 
-    #region ShortMessage
+    #region ShortMessage implementation
     public partial class ShortMessage
     {
         #region Constructors

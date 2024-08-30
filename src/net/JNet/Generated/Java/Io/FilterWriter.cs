@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
-    #region FilterWriter definition
+    #region FilterWriter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FilterWriter.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Io
     }
     #endregion
 
-    #region FilterWriter
+    #region FilterWriter implementation
     public partial class FilterWriter
     {
         #region Constructors

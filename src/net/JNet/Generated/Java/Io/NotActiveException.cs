@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
-    #region NotActiveException definition
+    #region NotActiveException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/NotActiveException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Io
     }
     #endregion
 
-    #region NotActiveException
+    #region NotActiveException implementation
     public partial class NotActiveException
     {
         #region Constructors

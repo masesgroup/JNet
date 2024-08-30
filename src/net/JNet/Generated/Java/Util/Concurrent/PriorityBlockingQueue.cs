@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region PriorityBlockingQueue definition
+    #region PriorityBlockingQueue declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region PriorityBlockingQueue<E> definition
+    #region PriorityBlockingQueue<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region PriorityBlockingQueue
+    #region PriorityBlockingQueue implementation
     public partial class PriorityBlockingQueue
     {
         #region Constructors
@@ -254,7 +254,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region PriorityBlockingQueue<E>
+    #region PriorityBlockingQueue<E> implementation
     public partial class PriorityBlockingQueue<E>
     {
         #region Constructors

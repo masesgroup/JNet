@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Spec
 {
-    #region RSAKeyGenParameterSpec definition
+    #region RSAKeyGenParameterSpec declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAKeyGenParameterSpec.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Security.Spec
     }
     #endregion
 
-    #region RSAKeyGenParameterSpec
+    #region RSAKeyGenParameterSpec implementation
     public partial class RSAKeyGenParameterSpec
     {
         #region Constructors

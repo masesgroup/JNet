@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region DescriptorKey definition
+    #region DescriptorKey declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/DescriptorKey.html"/>
     /// </summary>
@@ -95,7 +95,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region DescriptorKey
+    #region DescriptorKey implementation
     public partial class DescriptorKey : Javax.Management.IDescriptorKey
     {
         #region Constructors

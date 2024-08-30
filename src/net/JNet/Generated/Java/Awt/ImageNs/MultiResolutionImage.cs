@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ImageNs
 {
-    #region MultiResolutionImage definition
+    #region MultiResolutionImage declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MultiResolutionImage.html"/>
     /// </summary>
@@ -101,7 +101,7 @@ namespace Java.Awt.ImageNs
     }
     #endregion
 
-    #region MultiResolutionImage
+    #region MultiResolutionImage implementation
     public partial class MultiResolutionImage : Java.Awt.ImageNs.IMultiResolutionImage
     {
         #region Constructors

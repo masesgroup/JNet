@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming
 {
-    #region OperationNotSupportedException definition
+    #region OperationNotSupportedException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/OperationNotSupportedException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Naming
     }
     #endregion
 
-    #region OperationNotSupportedException
+    #region OperationNotSupportedException implementation
     public partial class OperationNotSupportedException
     {
         #region Constructors

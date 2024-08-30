@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region MissingResourceException definition
+    #region MissingResourceException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/MissingResourceException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region MissingResourceException
+    #region MissingResourceException implementation
     public partial class MissingResourceException
     {
         #region Constructors

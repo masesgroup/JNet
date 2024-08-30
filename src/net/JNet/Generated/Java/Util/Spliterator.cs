@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region Spliterator definition
+    #region Spliterator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Java.Util
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region OfDouble definition
+        #region OfDouble declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region OfInt definition
+        #region OfInt declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html"/>
         /// </summary>
@@ -162,7 +162,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region OfLong definition
+        #region OfLong declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html"/>
         /// </summary>
@@ -209,7 +209,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region OfPrimitive definition
+        #region OfPrimitive declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfPrimitive.html"/>
         /// </summary>
@@ -256,7 +256,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region OfPrimitive<T, T_CONS, T_SPLITR> definition
+        #region OfPrimitive<T, T_CONS, T_SPLITR> declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfPrimitive.html"/>
         /// </summary>
@@ -310,7 +310,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Spliterator<T> definition
+    #region Spliterator<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html"/>
     /// </summary>
@@ -358,7 +358,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Spliterator
+    #region Spliterator implementation
     public partial class Spliterator
     {
         #region Constructors
@@ -494,7 +494,7 @@ namespace Java.Util
         #endregion
 
         #region Nested classes
-        #region OfDouble
+        #region OfDouble implementation
         public partial class OfDouble
         {
             #region Constructors
@@ -586,7 +586,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region OfInt
+        #region OfInt implementation
         public partial class OfInt
         {
             #region Constructors
@@ -678,7 +678,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region OfLong
+        #region OfLong implementation
         public partial class OfLong
         {
             #region Constructors
@@ -770,7 +770,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region OfPrimitive
+        #region OfPrimitive implementation
         public partial class OfPrimitive
         {
             #region Constructors
@@ -826,7 +826,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region OfPrimitive<T, T_CONS, T_SPLITR>
+        #region OfPrimitive<T, T_CONS, T_SPLITR> implementation
         public partial class OfPrimitive<T, T_CONS, T_SPLITR>
         {
             #region Constructors
@@ -953,7 +953,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Spliterator<T>
+    #region Spliterator<T> implementation
     public partial class Spliterator<T> : Java.Util.ISpliterator<T>
     {
         #region Constructors

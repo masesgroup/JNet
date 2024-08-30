@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio.Spi
 {
-    #region ImageOutputStreamSpi definition
+    #region ImageOutputStreamSpi declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageOutputStreamSpi.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Imageio.Spi
     }
     #endregion
 
-    #region ImageOutputStreamSpi
+    #region ImageOutputStreamSpi implementation
     public partial class ImageOutputStreamSpi
     {
         #region Constructors

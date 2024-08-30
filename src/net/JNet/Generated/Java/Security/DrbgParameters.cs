@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region DrbgParameters definition
+    #region DrbgParameters declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Security
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Capability definition
+        #region Capability declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Java.Security
         }
         #endregion
 
-        #region Instantiation definition
+        #region Instantiation declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Instantiation.html"/>
         /// </summary>
@@ -156,7 +156,7 @@ namespace Java.Security
         }
         #endregion
 
-        #region NextBytes definition
+        #region NextBytes declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.NextBytes.html"/>
         /// </summary>
@@ -201,7 +201,7 @@ namespace Java.Security
         }
         #endregion
 
-        #region Reseed definition
+        #region Reseed declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Reseed.html"/>
         /// </summary>
@@ -250,7 +250,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region DrbgParameters
+    #region DrbgParameters implementation
     public partial class DrbgParameters
     {
         #region Constructors
@@ -306,7 +306,7 @@ namespace Java.Security
         #endregion
 
         #region Nested classes
-        #region Capability
+        #region Capability implementation
         public partial class Capability
         {
             #region Constructors
@@ -388,7 +388,7 @@ namespace Java.Security
         }
         #endregion
 
-        #region Instantiation
+        #region Instantiation implementation
         public partial class Instantiation
         {
             #region Constructors
@@ -440,7 +440,7 @@ namespace Java.Security
         }
         #endregion
 
-        #region NextBytes
+        #region NextBytes implementation
         public partial class NextBytes
         {
             #region Constructors
@@ -492,7 +492,7 @@ namespace Java.Security
         }
         #endregion
 
-        #region Reseed
+        #region Reseed implementation
         public partial class Reseed
         {
             #region Constructors

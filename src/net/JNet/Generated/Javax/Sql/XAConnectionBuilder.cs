@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql
 {
-    #region XAConnectionBuilder definition
+    #region XAConnectionBuilder declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XAConnectionBuilder.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Javax.Sql
     }
     #endregion
 
-    #region XAConnectionBuilder
+    #region XAConnectionBuilder implementation
     public partial class XAConnectionBuilder : Javax.Sql.IXAConnectionBuilder
     {
         #region Constructors

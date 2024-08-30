@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ImageNs
 {
-    #region BufferedImageOp definition
+    #region BufferedImageOp declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImageOp.html"/>
     /// </summary>
@@ -121,7 +121,7 @@ namespace Java.Awt.ImageNs
     }
     #endregion
 
-    #region BufferedImageOp
+    #region BufferedImageOp implementation
     public partial class BufferedImageOp : Java.Awt.ImageNs.IBufferedImageOp
     {
         #region Constructors

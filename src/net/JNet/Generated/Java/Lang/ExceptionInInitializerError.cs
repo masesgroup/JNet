@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region ExceptionInInitializerError definition
+    #region ExceptionInInitializerError declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ExceptionInInitializerError.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region ExceptionInInitializerError
+    #region ExceptionInInitializerError implementation
     public partial class ExceptionInInitializerError
     {
         #region Constructors

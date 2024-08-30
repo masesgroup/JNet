@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
-    #region OverlappingFileLockException definition
+    #region OverlappingFileLockException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/OverlappingFileLockException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region OverlappingFileLockException
+    #region OverlappingFileLockException implementation
     public partial class OverlappingFileLockException
     {
         #region Constructors

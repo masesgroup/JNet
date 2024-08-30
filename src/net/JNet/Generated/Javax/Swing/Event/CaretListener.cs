@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
-    #region CaretListener definition
+    #region CaretListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CaretListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region CaretListenerDirect definition
+    #region CaretListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="CaretListener"/> or its generic type if there is one
     /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region CaretListener
+    #region CaretListener implementation
     public partial class CaretListener : Javax.Swing.Event.ICaretListener
     {
         #region Constructors
@@ -175,7 +175,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region CaretListenerDirect
+    #region CaretListenerDirect implementation
     public partial class CaretListenerDirect : Javax.Swing.Event.ICaretListener
     {
         #region Constructors

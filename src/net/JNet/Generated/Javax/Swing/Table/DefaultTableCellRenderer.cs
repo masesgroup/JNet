@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Table
 {
-    #region DefaultTableCellRenderer definition
+    #region DefaultTableCellRenderer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableCellRenderer.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Table
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region UIResource definition
+        #region UIResource declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableCellRenderer.UIResource.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Swing.Table
     }
     #endregion
 
-    #region DefaultTableCellRenderer
+    #region DefaultTableCellRenderer implementation
     public partial class DefaultTableCellRenderer
     {
         #region Constructors
@@ -161,7 +161,7 @@ namespace Javax.Swing.Table
         #endregion
 
         #region Nested classes
-        #region UIResource
+        #region UIResource implementation
         public partial class UIResource
         {
             #region Constructors

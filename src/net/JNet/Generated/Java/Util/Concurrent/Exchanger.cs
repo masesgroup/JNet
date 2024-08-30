@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region Exchanger definition
+    #region Exchanger declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Exchanger.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region Exchanger<V> definition
+    #region Exchanger<V> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Exchanger.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region Exchanger
+    #region Exchanger implementation
     public partial class Exchanger
     {
         #region Constructors
@@ -170,7 +170,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region Exchanger<V>
+    #region Exchanger<V> implementation
     public partial class Exchanger<V>
     {
         #region Constructors

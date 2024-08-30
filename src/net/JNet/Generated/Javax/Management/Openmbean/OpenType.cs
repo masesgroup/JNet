@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Openmbean
 {
-    #region OpenType definition
+    #region OpenType declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Management.Openmbean
     }
     #endregion
 
-    #region OpenType<T> definition
+    #region OpenType<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Javax.Management.Openmbean
     }
     #endregion
 
-    #region OpenType
+    #region OpenType implementation
     public partial class OpenType
     {
         #region Constructors
@@ -195,7 +195,7 @@ namespace Javax.Management.Openmbean
     }
     #endregion
 
-    #region OpenType<T>
+    #region OpenType<T> implementation
     public partial class OpenType<T>
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region ForkJoinTask definition
+    #region ForkJoinTask declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ForkJoinTask<V> definition
+    #region ForkJoinTask<V> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ForkJoinTask
+    #region ForkJoinTask implementation
     public partial class ForkJoinTask
     {
         #region Constructors
@@ -429,7 +429,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ForkJoinTask<V>
+    #region ForkJoinTask<V> implementation
     public partial class ForkJoinTask<V>
     {
         #region Constructors

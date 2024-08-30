@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Management
 {
-    #region ManagementPermission definition
+    #region ManagementPermission declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementPermission.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Lang.Management
     }
     #endregion
 
-    #region ManagementPermission
+    #region ManagementPermission implementation
     public partial class ManagementPermission
     {
         #region Constructors

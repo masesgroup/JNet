@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Logging
 {
-    #region ErrorManager definition
+    #region ErrorManager declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Logging
     }
     #endregion
 
-    #region ErrorManager
+    #region ErrorManager implementation
     public partial class ErrorManager
     {
         #region Constructors

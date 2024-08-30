@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Basic
 {
-    #region BasicComboPopup definition
+    #region BasicComboPopup declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Plaf.Basic
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region ListDataHandler definition
+        #region ListDataHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.ListDataHandler.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Swing.Plaf.Basic
     }
     #endregion
 
-    #region BasicComboPopup
+    #region BasicComboPopup implementation
     public partial class BasicComboPopup
     {
         #region Constructors
@@ -186,7 +186,7 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Nested classes
-        #region ListDataHandler
+        #region ListDataHandler implementation
         public partial class ListDataHandler
         {
             #region Constructors

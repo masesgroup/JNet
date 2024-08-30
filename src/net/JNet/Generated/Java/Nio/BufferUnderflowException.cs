@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio
 {
-    #region BufferUnderflowException definition
+    #region BufferUnderflowException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/BufferUnderflowException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Nio
     }
     #endregion
 
-    #region BufferUnderflowException
+    #region BufferUnderflowException implementation
     public partial class BufferUnderflowException
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region ServiceConfigurationError definition
+    #region ServiceConfigurationError declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceConfigurationError.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region ServiceConfigurationError
+    #region ServiceConfigurationError implementation
     public partial class ServiceConfigurationError
     {
         #region Constructors

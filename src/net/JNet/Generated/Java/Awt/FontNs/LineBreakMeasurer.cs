@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.FontNs
 {
-    #region LineBreakMeasurer definition
+    #region LineBreakMeasurer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineBreakMeasurer.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.FontNs
     }
     #endregion
 
-    #region LineBreakMeasurer
+    #region LineBreakMeasurer implementation
     public partial class LineBreakMeasurer
     {
         #region Constructors

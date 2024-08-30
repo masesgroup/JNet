@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Invoke
 {
-    #region VolatileCallSite definition
+    #region VolatileCallSite declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VolatileCallSite.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Lang.Invoke
     }
     #endregion
 
-    #region VolatileCallSite
+    #region VolatileCallSite implementation
     public partial class VolatileCallSite
     {
         #region Constructors

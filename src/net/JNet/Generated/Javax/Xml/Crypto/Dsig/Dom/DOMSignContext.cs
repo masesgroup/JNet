@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig.Dom
 {
-    #region DOMSignContext definition
+    #region DOMSignContext declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/dom/DOMSignContext.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Xml.Crypto.Dsig.Dom
     }
     #endregion
 
-    #region DOMSignContext
+    #region DOMSignContext implementation
     public partial class DOMSignContext
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time.Temporal
 {
-    #region ValueRange definition
+    #region ValueRange declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Time.Temporal
     }
     #endregion
 
-    #region ValueRange
+    #region ValueRange implementation
     public partial class ValueRange
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region BatchUpdateException definition
+    #region BatchUpdateException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/BatchUpdateException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region BatchUpdateException
+    #region BatchUpdateException implementation
     public partial class BatchUpdateException
     {
         #region Constructors

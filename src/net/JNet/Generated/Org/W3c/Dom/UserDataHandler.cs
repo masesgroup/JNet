@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom
 {
-    #region UserDataHandler definition
+    #region UserDataHandler declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/UserDataHandler.html"/>
     /// </summary>
@@ -99,7 +99,7 @@ namespace Org.W3c.Dom
     }
     #endregion
 
-    #region UserDataHandler
+    #region UserDataHandler implementation
     public partial class UserDataHandler : Org.W3c.Dom.IUserDataHandler
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Security.Auth
 {
-    #region AuthPermission definition
+    #region AuthPermission declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/AuthPermission.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Security.Auth
     }
     #endregion
 
-    #region AuthPermission
+    #region AuthPermission implementation
     public partial class AuthPermission
     {
         #region Constructors

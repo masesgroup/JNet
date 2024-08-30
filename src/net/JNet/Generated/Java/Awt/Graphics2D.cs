@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region Graphics2D definition
+    #region Graphics2D declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region Graphics2D
+    #region Graphics2D implementation
     public partial class Graphics2D
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Zip
 {
-    #region InflaterOutputStream definition
+    #region InflaterOutputStream declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/InflaterOutputStream.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Zip
     }
     #endregion
 
-    #region InflaterOutputStream
+    #region InflaterOutputStream implementation
     public partial class InflaterOutputStream
     {
         #region Constructors

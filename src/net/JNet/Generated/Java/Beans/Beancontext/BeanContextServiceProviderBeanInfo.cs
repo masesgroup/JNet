@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans.Beancontext
 {
-    #region BeanContextServiceProviderBeanInfo definition
+    #region BeanContextServiceProviderBeanInfo declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceProviderBeanInfo.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Java.Beans.Beancontext
     }
     #endregion
 
-    #region BeanContextServiceProviderBeanInfo
+    #region BeanContextServiceProviderBeanInfo implementation
     public partial class BeanContextServiceProviderBeanInfo : Java.Beans.Beancontext.IBeanContextServiceProviderBeanInfo
     {
         #region Constructors

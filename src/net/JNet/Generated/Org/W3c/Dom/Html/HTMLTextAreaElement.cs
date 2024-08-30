@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
-    #region HTMLTextAreaElement definition
+    #region HTMLTextAreaElement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html"/>
     /// </summary>
@@ -146,7 +146,7 @@ namespace Org.W3c.Dom.Html
     }
     #endregion
 
-    #region HTMLTextAreaElement
+    #region HTMLTextAreaElement implementation
     public partial class HTMLTextAreaElement : Org.W3c.Dom.Html.IHTMLTextAreaElement
     {
         #region Constructors

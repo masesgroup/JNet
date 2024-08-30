@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ImageNs
 {
-    #region SinglePixelPackedSampleModel definition
+    #region SinglePixelPackedSampleModel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SinglePixelPackedSampleModel.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.ImageNs
     }
     #endregion
 
-    #region SinglePixelPackedSampleModel
+    #region SinglePixelPackedSampleModel implementation
     public partial class SinglePixelPackedSampleModel
     {
         #region Constructors

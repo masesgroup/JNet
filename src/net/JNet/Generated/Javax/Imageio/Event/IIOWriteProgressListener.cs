@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio.Event
 {
-    #region IIOWriteProgressListener definition
+    #region IIOWriteProgressListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Imageio.Event
     }
     #endregion
 
-    #region IIOWriteProgressListenerDirect definition
+    #region IIOWriteProgressListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="IIOWriteProgressListener"/> or its generic type if there is one
     /// </summary>
@@ -150,7 +150,7 @@ namespace Javax.Imageio.Event
     }
     #endregion
 
-    #region IIOWriteProgressListener
+    #region IIOWriteProgressListener implementation
     public partial class IIOWriteProgressListener : Javax.Imageio.Event.IIIOWriteProgressListener
     {
         #region Constructors
@@ -347,7 +347,7 @@ namespace Javax.Imageio.Event
     }
     #endregion
 
-    #region IIOWriteProgressListenerDirect
+    #region IIOWriteProgressListenerDirect implementation
     public partial class IIOWriteProgressListenerDirect : Javax.Imageio.Event.IIIOWriteProgressListener
     {
         #region Constructors

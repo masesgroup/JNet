@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
-    #region AnnotatedWildcardType definition
+    #region AnnotatedWildcardType declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedWildcardType.html"/>
     /// </summary>
@@ -102,7 +102,7 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region AnnotatedWildcardType
+    #region AnnotatedWildcardType implementation
     public partial class AnnotatedWildcardType : Java.Lang.Reflect.IAnnotatedWildcardType
     {
         #region Constructors

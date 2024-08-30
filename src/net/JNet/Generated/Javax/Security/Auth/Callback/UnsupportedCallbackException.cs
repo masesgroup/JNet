@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Security.Auth.Callback
 {
-    #region UnsupportedCallbackException definition
+    #region UnsupportedCallbackException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/UnsupportedCallbackException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Security.Auth.Callback
     }
     #endregion
 
-    #region UnsupportedCallbackException
+    #region UnsupportedCallbackException implementation
     public partial class UnsupportedCallbackException
     {
         #region Constructors

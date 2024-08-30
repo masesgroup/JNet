@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region AbstractList definition
+    #region AbstractList declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region AbstractList<E> definition
+    #region AbstractList<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region AbstractList
+    #region AbstractList implementation
     public partial class AbstractList
     {
         #region Constructors
@@ -247,7 +247,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region AbstractList<E>
+    #region AbstractList<E> implementation
     public partial class AbstractList<E>
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
-    #region ObjectInput definition
+    #region ObjectInput declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html"/>
     /// </summary>
@@ -137,7 +137,7 @@ namespace Java.Io
     }
     #endregion
 
-    #region ObjectInput
+    #region ObjectInput implementation
     public partial class ObjectInput : Java.Io.IObjectInput
     {
         #region Constructors

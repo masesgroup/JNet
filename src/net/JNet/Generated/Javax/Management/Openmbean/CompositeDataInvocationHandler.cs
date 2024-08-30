@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Openmbean
 {
-    #region CompositeDataInvocationHandler definition
+    #region CompositeDataInvocationHandler declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataInvocationHandler.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Management.Openmbean
     }
     #endregion
 
-    #region CompositeDataInvocationHandler
+    #region CompositeDataInvocationHandler implementation
     public partial class CompositeDataInvocationHandler
     {
         #region Constructors

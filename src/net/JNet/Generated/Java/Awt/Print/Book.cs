@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Print
 {
-    #region Book definition
+    #region Book declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Book.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.Print
     }
     #endregion
 
-    #region Book
+    #region Book implementation
     public partial class Book
     {
         #region Constructors

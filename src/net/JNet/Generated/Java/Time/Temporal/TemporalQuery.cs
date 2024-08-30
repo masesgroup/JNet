@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time.Temporal
 {
-    #region TemporalQuery definition
+    #region TemporalQuery declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQuery.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Time.Temporal
     }
     #endregion
 
-    #region TemporalQuery<R> definition
+    #region TemporalQuery<R> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQuery.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Time.Temporal
     }
     #endregion
 
-    #region TemporalQuery
+    #region TemporalQuery implementation
     public partial class TemporalQuery
     {
         #region Constructors
@@ -184,7 +184,7 @@ namespace Java.Time.Temporal
     }
     #endregion
 
-    #region TemporalQuery<R>
+    #region TemporalQuery<R> implementation
     public partial class TemporalQuery<R> : Java.Time.Temporal.ITemporalQuery<R>
     {
         #region Constructors

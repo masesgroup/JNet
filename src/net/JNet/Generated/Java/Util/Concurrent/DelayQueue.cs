@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region DelayQueue definition
+    #region DelayQueue declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region DelayQueue<E> definition
+    #region DelayQueue<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region DelayQueue
+    #region DelayQueue implementation
     public partial class DelayQueue
     {
         #region Constructors
@@ -264,7 +264,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region DelayQueue<E>
+    #region DelayQueue<E> implementation
     public partial class DelayQueue<E>
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Tools
 {
-    #region Diagnostic definition
+    #region Diagnostic declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Tools
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Kind definition
+        #region Kind declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html"/>
         /// </summary>
@@ -117,7 +117,7 @@ namespace Javax.Tools
     }
     #endregion
 
-    #region Diagnostic<S> definition
+    #region Diagnostic<S> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html"/>
     /// </summary>
@@ -165,7 +165,7 @@ namespace Javax.Tools
     }
     #endregion
 
-    #region Diagnostic
+    #region Diagnostic implementation
     public partial class Diagnostic
     {
         #region Constructors
@@ -260,7 +260,7 @@ namespace Javax.Tools
         #endregion
 
         #region Nested classes
-        #region Kind
+        #region Kind implementation
         public partial class Kind
         {
             #region Constructors
@@ -401,7 +401,7 @@ namespace Javax.Tools
     }
     #endregion
 
-    #region Diagnostic<S>
+    #region Diagnostic<S> implementation
     public partial class Diagnostic<S> : Javax.Tools.IDiagnostic<S>
     {
         #region Constructors

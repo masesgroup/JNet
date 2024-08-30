@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi
 {
-    #region NotBoundException definition
+    #region NotBoundException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/NotBoundException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Rmi
     }
     #endregion
 
-    #region NotBoundException
+    #region NotBoundException implementation
     public partial class NotBoundException
     {
         #region Constructors

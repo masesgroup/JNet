@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
-    #region ComponentAdapter definition
+    #region ComponentAdapter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentAdapter.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region ComponentAdapterDirect definition
+    #region ComponentAdapterDirect declaration
     /// <summary>
     /// Direct override of <see cref="ComponentAdapter"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region ComponentAdapter
+    #region ComponentAdapter implementation
     public partial class ComponentAdapter
     {
         #region Constructors
@@ -218,7 +218,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region ComponentAdapterDirect
+    #region ComponentAdapterDirect implementation
     public partial class ComponentAdapterDirect
     {
         #region Constructors

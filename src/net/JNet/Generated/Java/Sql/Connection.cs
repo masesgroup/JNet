@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region Connection definition
+    #region Connection declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html"/>
     /// </summary>
@@ -413,7 +413,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region Connection
+    #region Connection implementation
     public partial class Connection : Java.Sql.IConnection
     {
         #region Constructors

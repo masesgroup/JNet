@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Attribute
 {
-    #region DocAttributeSet definition
+    #region DocAttributeSet declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/DocAttributeSet.html"/>
     /// </summary>
@@ -102,7 +102,7 @@ namespace Javax.Print.Attribute
     }
     #endregion
 
-    #region DocAttributeSet
+    #region DocAttributeSet implementation
     public partial class DocAttributeSet : Javax.Print.Attribute.IDocAttributeSet
     {
         #region Constructors

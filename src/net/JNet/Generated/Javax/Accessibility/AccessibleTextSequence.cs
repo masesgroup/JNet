@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Accessibility
 {
-    #region AccessibleTextSequence definition
+    #region AccessibleTextSequence declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTextSequence.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Accessibility
     }
     #endregion
 
-    #region AccessibleTextSequence
+    #region AccessibleTextSequence implementation
     public partial class AccessibleTextSequence
     {
         #region Constructors

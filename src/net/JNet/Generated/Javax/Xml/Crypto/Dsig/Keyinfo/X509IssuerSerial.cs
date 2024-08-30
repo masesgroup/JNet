@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig.Keyinfo
 {
-    #region X509IssuerSerial definition
+    #region X509IssuerSerial declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509IssuerSerial.html"/>
     /// </summary>
@@ -98,7 +98,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
     }
     #endregion
 
-    #region X509IssuerSerial
+    #region X509IssuerSerial implementation
     public partial class X509IssuerSerial : Javax.Xml.Crypto.Dsig.Keyinfo.IX509IssuerSerial
     {
         #region Constructors

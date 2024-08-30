@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region Stroke definition
+    #region Stroke declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Stroke.html"/>
     /// </summary>
@@ -96,7 +96,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region Stroke
+    #region Stroke implementation
     public partial class Stroke : Java.Awt.IStroke
     {
         #region Constructors

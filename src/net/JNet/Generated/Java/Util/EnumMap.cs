@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region EnumMap definition
+    #region EnumMap declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumMap.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region EnumMap<K, V> definition
+    #region EnumMap<K, V> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumMap.html"/>
     /// </summary>
@@ -117,7 +117,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region EnumMap
+    #region EnumMap implementation
     public partial class EnumMap
     {
         #region Constructors
@@ -198,7 +198,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region EnumMap<K, V>
+    #region EnumMap<K, V> implementation
     public partial class EnumMap<K, V>
     {
         #region Constructors

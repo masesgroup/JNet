@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region RowId definition
+    #region RowId declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/RowId.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region RowId
+    #region RowId implementation
     public partial class RowId : Java.Sql.IRowId
     {
         #region Constructors

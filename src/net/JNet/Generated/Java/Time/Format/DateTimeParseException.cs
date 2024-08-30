@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time.Format
 {
-    #region DateTimeParseException definition
+    #region DateTimeParseException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeParseException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Time.Format
     }
     #endregion
 
-    #region DateTimeParseException
+    #region DateTimeParseException implementation
     public partial class DateTimeParseException
     {
         #region Constructors

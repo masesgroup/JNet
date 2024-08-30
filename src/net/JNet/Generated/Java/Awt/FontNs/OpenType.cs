@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.FontNs
 {
-    #region OpenType definition
+    #region OpenType declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html"/>
     /// </summary>
@@ -134,7 +134,7 @@ namespace Java.Awt.FontNs
     }
     #endregion
 
-    #region OpenType
+    #region OpenType implementation
     public partial class OpenType : Java.Awt.FontNs.IOpenType
     {
         #region Constructors

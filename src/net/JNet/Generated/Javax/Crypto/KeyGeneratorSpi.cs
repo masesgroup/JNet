@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Crypto
 {
-    #region KeyGeneratorSpi definition
+    #region KeyGeneratorSpi declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyGeneratorSpi.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Crypto
     }
     #endregion
 
-    #region KeyGeneratorSpi
+    #region KeyGeneratorSpi implementation
     public partial class KeyGeneratorSpi
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.DesktopNs
 {
-    #region AppHiddenListener definition
+    #region AppHiddenListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppHiddenListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Awt.DesktopNs
     }
     #endregion
 
-    #region AppHiddenListenerDirect definition
+    #region AppHiddenListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="AppHiddenListener"/> or its generic type if there is one
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Awt.DesktopNs
     }
     #endregion
 
-    #region AppHiddenListener
+    #region AppHiddenListener implementation
     public partial class AppHiddenListener : Java.Awt.DesktopNs.IAppHiddenListener
     {
         #region Constructors
@@ -202,7 +202,7 @@ namespace Java.Awt.DesktopNs
     }
     #endregion
 
-    #region AppHiddenListenerDirect
+    #region AppHiddenListenerDirect implementation
     public partial class AppHiddenListenerDirect : Java.Awt.DesktopNs.IAppHiddenListener
     {
         #region Constructors

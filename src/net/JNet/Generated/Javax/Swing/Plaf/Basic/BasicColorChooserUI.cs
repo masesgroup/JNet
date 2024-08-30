@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Basic
 {
-    #region BasicColorChooserUI definition
+    #region BasicColorChooserUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicColorChooserUI.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Plaf.Basic
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region PropertyHandler definition
+        #region PropertyHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicColorChooserUI.PropertyHandler.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Swing.Plaf.Basic
     }
     #endregion
 
-    #region BasicColorChooserUI
+    #region BasicColorChooserUI implementation
     public partial class BasicColorChooserUI
     {
         #region Constructors
@@ -139,7 +139,7 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Nested classes
-        #region PropertyHandler
+        #region PropertyHandler implementation
         public partial class PropertyHandler
         {
             #region Constructors

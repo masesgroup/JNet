@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text.Html.Parser
 {
-    #region ParserDelegator definition
+    #region ParserDelegator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/ParserDelegator.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Text.Html.Parser
     }
     #endregion
 
-    #region ParserDelegator
+    #region ParserDelegator implementation
     public partial class ParserDelegator
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Datatransfer
 {
-    #region DataFlavor definition
+    #region DataFlavor declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.Datatransfer
     }
     #endregion
 
-    #region DataFlavor
+    #region DataFlavor implementation
     public partial class DataFlavor
     {
         #region Constructors

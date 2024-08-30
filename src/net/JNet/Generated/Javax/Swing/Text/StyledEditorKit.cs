@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region StyledEditorKit definition
+    #region StyledEditorKit declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Text
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region AlignmentAction definition
+        #region AlignmentAction declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.AlignmentAction.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region BoldAction definition
+        #region BoldAction declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.BoldAction.html"/>
         /// </summary>
@@ -156,7 +156,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region FontFamilyAction definition
+        #region FontFamilyAction declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.FontFamilyAction.html"/>
         /// </summary>
@@ -201,7 +201,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region FontSizeAction definition
+        #region FontSizeAction declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.FontSizeAction.html"/>
         /// </summary>
@@ -246,7 +246,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region ForegroundAction definition
+        #region ForegroundAction declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.ForegroundAction.html"/>
         /// </summary>
@@ -291,7 +291,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region ItalicAction definition
+        #region ItalicAction declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.ItalicAction.html"/>
         /// </summary>
@@ -336,7 +336,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region StyledTextAction definition
+        #region StyledTextAction declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.StyledTextAction.html"/>
         /// </summary>
@@ -383,7 +383,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region UnderlineAction definition
+        #region UnderlineAction declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.UnderlineAction.html"/>
         /// </summary>
@@ -432,7 +432,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region StyledEditorKit
+    #region StyledEditorKit implementation
     public partial class StyledEditorKit
     {
         #region Constructors
@@ -470,7 +470,7 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Nested classes
-        #region AlignmentAction
+        #region AlignmentAction implementation
         public partial class AlignmentAction
         {
             #region Constructors
@@ -510,7 +510,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region BoldAction
+        #region BoldAction implementation
         public partial class BoldAction
         {
             #region Constructors
@@ -541,7 +541,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region FontFamilyAction
+        #region FontFamilyAction implementation
         public partial class FontFamilyAction
         {
             #region Constructors
@@ -581,7 +581,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region FontSizeAction
+        #region FontSizeAction implementation
         public partial class FontSizeAction
         {
             #region Constructors
@@ -621,7 +621,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region ForegroundAction
+        #region ForegroundAction implementation
         public partial class ForegroundAction
         {
             #region Constructors
@@ -661,7 +661,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region ItalicAction
+        #region ItalicAction implementation
         public partial class ItalicAction
         {
             #region Constructors
@@ -692,7 +692,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region StyledTextAction
+        #region StyledTextAction implementation
         public partial class StyledTextAction
         {
             #region Constructors
@@ -731,7 +731,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region UnderlineAction
+        #region UnderlineAction implementation
         public partial class UnderlineAction
         {
             #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
-    #region HTMLOptGroupElement definition
+    #region HTMLOptGroupElement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptGroupElement.html"/>
     /// </summary>
@@ -98,7 +98,7 @@ namespace Org.W3c.Dom.Html
     }
     #endregion
 
-    #region HTMLOptGroupElement
+    #region HTMLOptGroupElement implementation
     public partial class HTMLOptGroupElement : Org.W3c.Dom.Html.IHTMLOptGroupElement
     {
         #region Constructors

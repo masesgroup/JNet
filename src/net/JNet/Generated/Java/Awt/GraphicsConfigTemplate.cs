@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region GraphicsConfigTemplate definition
+    #region GraphicsConfigTemplate declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfigTemplate.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region GraphicsConfigTemplate
+    #region GraphicsConfigTemplate implementation
     public partial class GraphicsConfigTemplate
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
-    #region CharConversionException definition
+    #region CharConversionException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/CharConversionException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Io
     }
     #endregion
 
-    #region CharConversionException
+    #region CharConversionException implementation
     public partial class CharConversionException
     {
         #region Constructors

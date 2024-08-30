@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region DefaultListCellRenderer definition
+    #region DefaultListCellRenderer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListCellRenderer.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region UIResource definition
+        #region UIResource declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListCellRenderer.UIResource.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region DefaultListCellRenderer
+    #region DefaultListCellRenderer implementation
     public partial class DefaultListCellRenderer
     {
         #region Constructors
@@ -160,7 +160,7 @@ namespace Javax.Swing
         #endregion
 
         #region Nested classes
-        #region UIResource
+        #region UIResource implementation
         public partial class UIResource
         {
             #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region Appendable definition
+    #region Appendable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html"/>
     /// </summary>
@@ -113,7 +113,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region Appendable
+    #region Appendable implementation
     public partial class Appendable : Java.Lang.IAppendable
     {
         #region Constructors

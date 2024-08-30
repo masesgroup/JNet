@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream.Events
 {
-    #region EntityDeclaration definition
+    #region EntityDeclaration declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html"/>
     /// </summary>
@@ -114,7 +114,7 @@ namespace Javax.Xml.Stream.Events
     }
     #endregion
 
-    #region EntityDeclaration
+    #region EntityDeclaration implementation
     public partial class EntityDeclaration : Javax.Xml.Stream.Events.IEntityDeclaration
     {
         #region Constructors

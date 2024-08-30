@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region LongBinaryOperator definition
+    #region LongBinaryOperator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongBinaryOperator.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region LongBinaryOperatorDirect definition
+    #region LongBinaryOperatorDirect declaration
     /// <summary>
     /// Direct override of <see cref="LongBinaryOperator"/> or its generic type if there is one
     /// </summary>
@@ -117,7 +117,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region LongBinaryOperator
+    #region LongBinaryOperator implementation
     public partial class LongBinaryOperator : Java.Util.Function.ILongBinaryOperator
     {
         #region Constructors
@@ -180,7 +180,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region LongBinaryOperatorDirect
+    #region LongBinaryOperatorDirect implementation
     public partial class LongBinaryOperatorDirect : Java.Util.Function.ILongBinaryOperator
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Ref
 {
-    #region ReferenceQueue definition
+    #region ReferenceQueue declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Lang.Ref
     }
     #endregion
 
-    #region ReferenceQueue<T> definition
+    #region ReferenceQueue<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Lang.Ref
     }
     #endregion
 
-    #region ReferenceQueue
+    #region ReferenceQueue implementation
     public partial class ReferenceQueue
     {
         #region Constructors
@@ -175,7 +175,7 @@ namespace Java.Lang.Ref
     }
     #endregion
 
-    #region ReferenceQueue<T>
+    #region ReferenceQueue<T> implementation
     public partial class ReferenceQueue<T>
     {
         #region Constructors

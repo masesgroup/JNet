@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region Spliterators definition
+    #region Spliterators declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Util
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region AbstractDoubleSpliterator definition
+        #region AbstractDoubleSpliterator declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractDoubleSpliterator.html"/>
         /// </summary>
@@ -113,7 +113,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region AbstractIntSpliterator definition
+        #region AbstractIntSpliterator declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractIntSpliterator.html"/>
         /// </summary>
@@ -160,7 +160,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region AbstractLongSpliterator definition
+        #region AbstractLongSpliterator declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractLongSpliterator.html"/>
         /// </summary>
@@ -207,7 +207,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region AbstractSpliterator definition
+        #region AbstractSpliterator declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractSpliterator.html"/>
         /// </summary>
@@ -254,7 +254,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region AbstractSpliterator<T> definition
+        #region AbstractSpliterator<T> declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractSpliterator.html"/>
         /// </summary>
@@ -306,7 +306,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Spliterators
+    #region Spliterators implementation
     public partial class Spliterators
     {
         #region Constructors
@@ -591,7 +591,7 @@ namespace Java.Util
         #endregion
 
         #region Nested classes
-        #region AbstractDoubleSpliterator
+        #region AbstractDoubleSpliterator implementation
         public partial class AbstractDoubleSpliterator
         {
             #region Constructors
@@ -646,7 +646,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region AbstractIntSpliterator
+        #region AbstractIntSpliterator implementation
         public partial class AbstractIntSpliterator
         {
             #region Constructors
@@ -701,7 +701,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region AbstractLongSpliterator
+        #region AbstractLongSpliterator implementation
         public partial class AbstractLongSpliterator
         {
             #region Constructors
@@ -756,7 +756,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region AbstractSpliterator
+        #region AbstractSpliterator implementation
         public partial class AbstractSpliterator
         {
             #region Constructors
@@ -811,7 +811,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region AbstractSpliterator<T>
+        #region AbstractSpliterator<T> implementation
         public partial class AbstractSpliterator<T>
         {
             #region Constructors

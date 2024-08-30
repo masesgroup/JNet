@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig.Spec
 {
-    #region HMACParameterSpec definition
+    #region HMACParameterSpec declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/HMACParameterSpec.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
     }
     #endregion
 
-    #region HMACParameterSpec
+    #region HMACParameterSpec implementation
     public partial class HMACParameterSpec
     {
         #region Constructors

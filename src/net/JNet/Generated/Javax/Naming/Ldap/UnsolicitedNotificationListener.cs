@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Ldap
 {
-    #region UnsolicitedNotificationListener definition
+    #region UnsolicitedNotificationListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotificationListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Naming.Ldap
     }
     #endregion
 
-    #region UnsolicitedNotificationListenerDirect definition
+    #region UnsolicitedNotificationListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="UnsolicitedNotificationListener"/> or its generic type if there is one
     /// </summary>
@@ -120,7 +120,7 @@ namespace Javax.Naming.Ldap
     }
     #endregion
 
-    #region UnsolicitedNotificationListener
+    #region UnsolicitedNotificationListener implementation
     public partial class UnsolicitedNotificationListener : Javax.Naming.Ldap.IUnsolicitedNotificationListener
     {
         #region Constructors
@@ -202,7 +202,7 @@ namespace Javax.Naming.Ldap
     }
     #endregion
 
-    #region UnsolicitedNotificationListenerDirect
+    #region UnsolicitedNotificationListenerDirect implementation
     public partial class UnsolicitedNotificationListenerDirect : Javax.Naming.Ldap.IUnsolicitedNotificationListener
     {
         #region Constructors

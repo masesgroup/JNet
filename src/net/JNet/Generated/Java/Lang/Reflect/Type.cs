@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
-    #region Type definition
+    #region Type declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Type.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region Type
+    #region Type implementation
     public partial class Type : Java.Lang.Reflect.IType
     {
         #region Constructors

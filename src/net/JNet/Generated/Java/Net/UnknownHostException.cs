@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
-    #region UnknownHostException definition
+    #region UnknownHostException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/UnknownHostException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Net
     }
     #endregion
 
-    #region UnknownHostException
+    #region UnknownHostException implementation
     public partial class UnknownHostException
     {
         #region Constructors

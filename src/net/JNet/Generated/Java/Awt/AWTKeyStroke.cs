@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region AWTKeyStroke definition
+    #region AWTKeyStroke declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTKeyStroke.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region AWTKeyStroke
+    #region AWTKeyStroke implementation
     public partial class AWTKeyStroke
     {
         #region Constructors

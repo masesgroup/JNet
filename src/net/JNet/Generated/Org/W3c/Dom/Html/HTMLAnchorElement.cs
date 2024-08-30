@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
-    #region HTMLAnchorElement definition
+    #region HTMLAnchorElement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAnchorElement.html"/>
     /// </summary>
@@ -146,7 +146,7 @@ namespace Org.W3c.Dom.Html
     }
     #endregion
 
-    #region HTMLAnchorElement
+    #region HTMLAnchorElement implementation
     public partial class HTMLAnchorElement : Org.W3c.Dom.Html.IHTMLAnchorElement
     {
         #region Constructors

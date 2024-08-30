@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Tree
 {
-    #region AbstractLayoutCache definition
+    #region AbstractLayoutCache declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Swing.Tree
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region NodeDimensions definition
+        #region NodeDimensions declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.NodeDimensions.html"/>
         /// </summary>
@@ -119,7 +119,7 @@ namespace Javax.Swing.Tree
     }
     #endregion
 
-    #region AbstractLayoutCache
+    #region AbstractLayoutCache implementation
     public partial class AbstractLayoutCache
     {
         #region Constructors
@@ -357,7 +357,7 @@ namespace Javax.Swing.Tree
         #endregion
 
         #region Nested classes
-        #region NodeDimensions
+        #region NodeDimensions implementation
         public partial class NodeDimensions
         {
             #region Constructors

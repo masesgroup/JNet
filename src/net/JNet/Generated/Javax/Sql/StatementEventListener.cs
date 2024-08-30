@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql
 {
-    #region StatementEventListener definition
+    #region StatementEventListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEventListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Sql
     }
     #endregion
 
-    #region StatementEventListenerDirect definition
+    #region StatementEventListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="StatementEventListener"/> or its generic type if there is one
     /// </summary>
@@ -120,7 +120,7 @@ namespace Javax.Sql
     }
     #endregion
 
-    #region StatementEventListener
+    #region StatementEventListener implementation
     public partial class StatementEventListener : Javax.Sql.IStatementEventListener
     {
         #region Constructors
@@ -202,7 +202,7 @@ namespace Javax.Sql
     }
     #endregion
 
-    #region StatementEventListenerDirect
+    #region StatementEventListenerDirect implementation
     public partial class StatementEventListenerDirect : Javax.Sql.IStatementEventListener
     {
         #region Constructors

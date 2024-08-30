@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File.Attribute
 {
-    #region AclEntry definition
+    #region AclEntry declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Nio.File.Attribute
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Builder definition
+        #region Builder declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.Builder.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Nio.File.Attribute
     }
     #endregion
 
-    #region AclEntry
+    #region AclEntry implementation
     public partial class AclEntry
     {
         #region Constructors
@@ -188,7 +188,7 @@ namespace Java.Nio.File.Attribute
         #endregion
 
         #region Nested classes
-        #region Builder
+        #region Builder implementation
         public partial class Builder
         {
             #region Constructors

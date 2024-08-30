@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
-    #region CompletionHandler definition
+    #region CompletionHandler declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/CompletionHandler.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region CompletionHandler<V, A> definition
+    #region CompletionHandler<V, A> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/CompletionHandler.html"/>
     /// </summary>
@@ -121,7 +121,7 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region CompletionHandler
+    #region CompletionHandler implementation
     public partial class CompletionHandler
     {
         #region Constructors
@@ -200,7 +200,7 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region CompletionHandler<V, A>
+    #region CompletionHandler<V, A> implementation
     public partial class CompletionHandler<V, A> : Java.Nio.Channels.ICompletionHandler<V, A>
     {
         #region Constructors

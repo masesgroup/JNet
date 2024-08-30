@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio.Spi
 {
-    #region IIORegistry definition
+    #region IIORegistry declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/IIORegistry.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Imageio.Spi
     }
     #endregion
 
-    #region IIORegistry
+    #region IIORegistry implementation
     public partial class IIORegistry
     {
         #region Constructors

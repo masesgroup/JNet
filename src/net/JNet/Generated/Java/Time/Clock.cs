@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time
 {
-    #region Clock definition
+    #region Clock declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Time
     }
     #endregion
 
-    #region Clock
+    #region Clock implementation
     public partial class Clock
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto
 {
-    #region XMLStructure definition
+    #region XMLStructure declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLStructure.html"/>
     /// </summary>
@@ -96,7 +96,7 @@ namespace Javax.Xml.Crypto
     }
     #endregion
 
-    #region XMLStructure
+    #region XMLStructure implementation
     public partial class XMLStructure : Javax.Xml.Crypto.IXMLStructure
     {
         #region Constructors

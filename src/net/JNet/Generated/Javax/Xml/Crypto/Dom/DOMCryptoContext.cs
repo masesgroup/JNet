@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dom
 {
-    #region DOMCryptoContext definition
+    #region DOMCryptoContext declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMCryptoContext.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Xml.Crypto.Dom
     }
     #endregion
 
-    #region DOMCryptoContext
+    #region DOMCryptoContext implementation
     public partial class DOMCryptoContext
     {
         #region Constructors

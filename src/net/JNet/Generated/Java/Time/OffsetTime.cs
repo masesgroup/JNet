@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time
 {
-    #region OffsetTime definition
+    #region OffsetTime declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Time
     }
     #endregion
 
-    #region OffsetTime
+    #region OffsetTime implementation
     public partial class OffsetTime
     {
         #region Constructors

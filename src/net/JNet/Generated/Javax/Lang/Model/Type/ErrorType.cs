@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Type
 {
-    #region ErrorType definition
+    #region ErrorType declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/ErrorType.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Javax.Lang.Model.Type
     }
     #endregion
 
-    #region ErrorType
+    #region ErrorType implementation
     public partial class ErrorType : Javax.Lang.Model.Type.IErrorType
     {
         #region Constructors

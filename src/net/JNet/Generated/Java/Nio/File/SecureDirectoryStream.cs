@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File
 {
-    #region SecureDirectoryStream definition
+    #region SecureDirectoryStream declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SecureDirectoryStream.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region SecureDirectoryStream<T> definition
+    #region SecureDirectoryStream<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SecureDirectoryStream.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region SecureDirectoryStream
+    #region SecureDirectoryStream implementation
     public partial class SecureDirectoryStream
     {
         #region Constructors
@@ -295,7 +295,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region SecureDirectoryStream<T>
+    #region SecureDirectoryStream<T> implementation
     public partial class SecureDirectoryStream<T> : Java.Nio.File.ISecureDirectoryStream<T>
     {
         #region Constructors

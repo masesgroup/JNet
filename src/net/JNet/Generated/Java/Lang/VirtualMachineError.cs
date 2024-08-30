@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region VirtualMachineError definition
+    #region VirtualMachineError declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/VirtualMachineError.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region VirtualMachineError
+    #region VirtualMachineError implementation
     public partial class VirtualMachineError
     {
         #region Constructors

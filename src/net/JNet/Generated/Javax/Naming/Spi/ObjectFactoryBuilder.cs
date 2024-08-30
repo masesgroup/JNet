@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Spi
 {
-    #region ObjectFactoryBuilder definition
+    #region ObjectFactoryBuilder declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ObjectFactoryBuilder.html"/>
     /// </summary>
@@ -98,7 +98,7 @@ namespace Javax.Naming.Spi
     }
     #endregion
 
-    #region ObjectFactoryBuilder
+    #region ObjectFactoryBuilder implementation
     public partial class ObjectFactoryBuilder : Javax.Naming.Spi.IObjectFactoryBuilder
     {
         #region Constructors

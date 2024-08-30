@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio.Plugins.Tiff
 {
-    #region GeoTIFFTagSet definition
+    #region GeoTIFFTagSet declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/GeoTIFFTagSet.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Imageio.Plugins.Tiff
     }
     #endregion
 
-    #region GeoTIFFTagSet
+    #region GeoTIFFTagSet implementation
     public partial class GeoTIFFTagSet
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region AccessControlException definition
+    #region AccessControlException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessControlException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region AccessControlException
+    #region AccessControlException implementation
     public partial class AccessControlException
     {
         #region Constructors

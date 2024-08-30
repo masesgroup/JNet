@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
-    #region AdjustmentListener definition
+    #region AdjustmentListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region AdjustmentListenerDirect definition
+    #region AdjustmentListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="AdjustmentListener"/> or its generic type if there is one
     /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region AdjustmentListener
+    #region AdjustmentListener implementation
     public partial class AdjustmentListener : Java.Awt.EventNs.IAdjustmentListener
     {
         #region Constructors
@@ -175,7 +175,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region AdjustmentListenerDirect
+    #region AdjustmentListenerDirect implementation
     public partial class AdjustmentListenerDirect : Java.Awt.EventNs.IAdjustmentListener
     {
         #region Constructors

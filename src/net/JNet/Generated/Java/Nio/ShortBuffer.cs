@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio
 {
-    #region ShortBuffer definition
+    #region ShortBuffer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Nio
     }
     #endregion
 
-    #region ShortBuffer
+    #region ShortBuffer implementation
     public partial class ShortBuffer
     {
         #region Constructors

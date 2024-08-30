@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region Driver definition
+    #region Driver declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html"/>
     /// </summary>
@@ -130,7 +130,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region Driver
+    #region Driver implementation
     public partial class Driver : Java.Sql.IDriver
     {
         #region Constructors

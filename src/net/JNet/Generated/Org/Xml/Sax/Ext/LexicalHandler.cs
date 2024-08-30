@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.Xml.Sax.Ext
 {
-    #region LexicalHandler definition
+    #region LexicalHandler declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html"/>
     /// </summary>
@@ -133,7 +133,7 @@ namespace Org.Xml.Sax.Ext
     }
     #endregion
 
-    #region LexicalHandler
+    #region LexicalHandler implementation
     public partial class LexicalHandler : Org.Xml.Sax.Ext.ILexicalHandler
     {
         #region Constructors

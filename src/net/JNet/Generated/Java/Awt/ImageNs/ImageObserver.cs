@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ImageNs
 {
-    #region ImageObserver definition
+    #region ImageObserver declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageObserver.html"/>
     /// </summary>
@@ -101,7 +101,7 @@ namespace Java.Awt.ImageNs
     }
     #endregion
 
-    #region ImageObserver
+    #region ImageObserver implementation
     public partial class ImageObserver : Java.Awt.ImageNs.IImageObserver
     {
         #region Constructors

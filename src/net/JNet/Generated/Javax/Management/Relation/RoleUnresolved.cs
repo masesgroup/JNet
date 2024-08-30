@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Relation
 {
-    #region RoleUnresolved definition
+    #region RoleUnresolved declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolved.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Management.Relation
     }
     #endregion
 
-    #region RoleUnresolved
+    #region RoleUnresolved implementation
     public partial class RoleUnresolved
     {
         #region Constructors

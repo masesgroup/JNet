@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
-    #region WindowFocusListener definition
+    #region WindowFocusListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowFocusListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region WindowFocusListenerDirect definition
+    #region WindowFocusListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="WindowFocusListener"/> or its generic type if there is one
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region WindowFocusListener
+    #region WindowFocusListener implementation
     public partial class WindowFocusListener : Java.Awt.EventNs.IWindowFocusListener
     {
         #region Constructors
@@ -202,7 +202,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region WindowFocusListenerDirect
+    #region WindowFocusListenerDirect implementation
     public partial class WindowFocusListenerDirect : Java.Awt.EventNs.IWindowFocusListener
     {
         #region Constructors

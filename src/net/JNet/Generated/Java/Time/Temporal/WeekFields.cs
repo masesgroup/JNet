@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time.Temporal
 {
-    #region WeekFields definition
+    #region WeekFields declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Time.Temporal
     }
     #endregion
 
-    #region WeekFields
+    #region WeekFields implementation
     public partial class WeekFields
     {
         #region Constructors

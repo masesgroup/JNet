@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Element
 {
-    #region QualifiedNameable definition
+    #region QualifiedNameable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/QualifiedNameable.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Javax.Lang.Model.Element
     }
     #endregion
 
-    #region QualifiedNameable
+    #region QualifiedNameable implementation
     public partial class QualifiedNameable : Javax.Lang.Model.Element.IQualifiedNameable
     {
         #region Constructors

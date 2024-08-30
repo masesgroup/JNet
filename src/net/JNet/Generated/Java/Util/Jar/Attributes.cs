@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Jar
 {
-    #region Attributes definition
+    #region Attributes declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Util.Jar
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Name definition
+        #region Name declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Util.Jar
     }
     #endregion
 
-    #region Attributes
+    #region Attributes implementation
     public partial class Attributes
     {
         #region Constructors
@@ -292,7 +292,7 @@ namespace Java.Util.Jar
         #endregion
 
         #region Nested classes
-        #region Name
+        #region Name implementation
         public partial class Name
         {
             #region Constructors

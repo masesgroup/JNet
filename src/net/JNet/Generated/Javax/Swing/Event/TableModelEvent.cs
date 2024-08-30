@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
-    #region TableModelEvent definition
+    #region TableModelEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region TableModelEvent
+    #region TableModelEvent implementation
     public partial class TableModelEvent
     {
         #region Constructors

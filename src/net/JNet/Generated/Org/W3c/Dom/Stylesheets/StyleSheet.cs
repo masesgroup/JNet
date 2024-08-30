@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Stylesheets
 {
-    #region StyleSheet definition
+    #region StyleSheet declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/StyleSheet.html"/>
     /// </summary>
@@ -118,7 +118,7 @@ namespace Org.W3c.Dom.Stylesheets
     }
     #endregion
 
-    #region StyleSheet
+    #region StyleSheet implementation
     public partial class StyleSheet : Org.W3c.Dom.Stylesheets.IStyleSheet
     {
         #region Constructors

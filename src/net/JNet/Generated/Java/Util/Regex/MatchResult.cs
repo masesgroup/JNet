@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Regex
 {
-    #region MatchResult definition
+    #region MatchResult declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/MatchResult.html"/>
     /// </summary>
@@ -128,7 +128,7 @@ namespace Java.Util.Regex
     }
     #endregion
 
-    #region MatchResult
+    #region MatchResult implementation
     public partial class MatchResult : Java.Util.Regex.IMatchResult
     {
         #region Constructors

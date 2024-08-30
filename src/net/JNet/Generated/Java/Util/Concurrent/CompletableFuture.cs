@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region CompletableFuture definition
+    #region CompletableFuture declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Util.Concurrent
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region AsynchronousCompletionTask definition
+        #region AsynchronousCompletionTask declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.AsynchronousCompletionTask.html"/>
         /// </summary>
@@ -117,7 +117,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region CompletableFuture<T> definition
+    #region CompletableFuture<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html"/>
     /// </summary>
@@ -163,7 +163,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region CompletableFuture
+    #region CompletableFuture implementation
     public partial class CompletableFuture
     {
         #region Constructors
@@ -865,7 +865,7 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Nested classes
-        #region AsynchronousCompletionTask
+        #region AsynchronousCompletionTask implementation
         public partial class AsynchronousCompletionTask
         {
             #region Constructors
@@ -903,7 +903,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region CompletableFuture<T>
+    #region CompletableFuture<T> implementation
     public partial class CompletableFuture<T>
     {
         #region Constructors

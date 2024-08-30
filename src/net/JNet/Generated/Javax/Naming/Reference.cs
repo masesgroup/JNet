@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming
 {
-    #region Reference definition
+    #region Reference declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Reference.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Naming
     }
     #endregion
 
-    #region Reference
+    #region Reference implementation
     public partial class Reference
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Prefs
 {
-    #region InvalidPreferencesFormatException definition
+    #region InvalidPreferencesFormatException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/InvalidPreferencesFormatException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Util.Prefs
     }
     #endregion
 
-    #region InvalidPreferencesFormatException
+    #region InvalidPreferencesFormatException implementation
     public partial class InvalidPreferencesFormatException
     {
         #region Constructors

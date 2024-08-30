@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Charset
 {
-    #region CharsetDecoder definition
+    #region CharsetDecoder declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetDecoder.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Nio.Charset
     }
     #endregion
 
-    #region CharsetDecoder
+    #region CharsetDecoder implementation
     public partial class CharsetDecoder
     {
         #region Constructors

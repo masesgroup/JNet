@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region Supplier definition
+    #region Supplier declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region SupplierDirect definition
+    #region SupplierDirect declaration
     /// <summary>
     /// Direct override of <see cref="Supplier"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region Supplier<T> definition
+    #region Supplier<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html"/>
     /// </summary>
@@ -119,7 +119,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region SupplierDirect<T> definition
+    #region SupplierDirect<T> declaration
     /// <summary>
     /// Direct override of <see cref="Supplier"/> or its generic type if there is one
     /// </summary>
@@ -160,7 +160,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region Supplier
+    #region Supplier implementation
     public partial class Supplier
     {
         #region Constructors
@@ -221,7 +221,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region SupplierDirect
+    #region SupplierDirect implementation
     public partial class SupplierDirect
     {
         #region Constructors
@@ -283,7 +283,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region Supplier<T>
+    #region Supplier<T> implementation
     public partial class Supplier<T> : Java.Util.Function.ISupplier<T>
     {
         #region Constructors
@@ -344,7 +344,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region SupplierDirect<T>
+    #region SupplierDirect<T> implementation
     public partial class SupplierDirect<T> : Java.Util.Function.ISupplier<T>
     {
         #region Constructors

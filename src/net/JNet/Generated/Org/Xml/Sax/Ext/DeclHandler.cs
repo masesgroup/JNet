@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.Xml.Sax.Ext
 {
-    #region DeclHandler definition
+    #region DeclHandler declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DeclHandler.html"/>
     /// </summary>
@@ -122,7 +122,7 @@ namespace Org.Xml.Sax.Ext
     }
     #endregion
 
-    #region DeclHandler
+    #region DeclHandler implementation
     public partial class DeclHandler : Org.Xml.Sax.Ext.IDeclHandler
     {
         #region Constructors

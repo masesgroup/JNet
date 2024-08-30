@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Element
 {
-    #region UnknownElementException definition
+    #region UnknownElementException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/UnknownElementException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Lang.Model.Element
     }
     #endregion
 
-    #region UnknownElementException
+    #region UnknownElementException implementation
     public partial class UnknownElementException
     {
         #region Constructors

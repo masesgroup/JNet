@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File.Attribute
 {
-    #region AclEntryFlag definition
+    #region AclEntryFlag declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryFlag.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Nio.File.Attribute
     }
     #endregion
 
-    #region AclEntryFlag
+    #region AclEntryFlag implementation
     public partial class AclEntryFlag
     {
         #region Constructors

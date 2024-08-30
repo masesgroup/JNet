@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Spec
 {
-    #region InvalidParameterSpecException definition
+    #region InvalidParameterSpecException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/InvalidParameterSpecException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Security.Spec
     }
     #endregion
 
-    #region InvalidParameterSpecException
+    #region InvalidParameterSpecException implementation
     public partial class InvalidParameterSpecException
     {
         #region Constructors

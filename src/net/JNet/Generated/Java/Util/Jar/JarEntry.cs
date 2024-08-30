@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Jar
 {
-    #region JarEntry definition
+    #region JarEntry declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarEntry.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Jar
     }
     #endregion
 
-    #region JarEntry
+    #region JarEntry implementation
     public partial class JarEntry
     {
         #region Constructors

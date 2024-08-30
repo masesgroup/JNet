@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File
 {
-    #region FileStore definition
+    #region FileStore declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region FileStore
+    #region FileStore implementation
     public partial class FileStore
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Events
 {
-    #region UIEvent definition
+    #region UIEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/UIEvent.html"/>
     /// </summary>
@@ -107,7 +107,7 @@ namespace Org.W3c.Dom.Events
     }
     #endregion
 
-    #region UIEvent
+    #region UIEvent implementation
     public partial class UIEvent : Org.W3c.Dom.Events.IUIEvent
     {
         #region Constructors

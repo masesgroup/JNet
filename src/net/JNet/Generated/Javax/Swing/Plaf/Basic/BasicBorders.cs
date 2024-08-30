@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Basic
 {
-    #region BasicBorders definition
+    #region BasicBorders declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Plaf.Basic
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region ButtonBorder definition
+        #region ButtonBorder declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.ButtonBorder.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region FieldBorder definition
+        #region FieldBorder declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.FieldBorder.html"/>
         /// </summary>
@@ -156,7 +156,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region MarginBorder definition
+        #region MarginBorder declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.MarginBorder.html"/>
         /// </summary>
@@ -201,7 +201,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region MenuBarBorder definition
+        #region MenuBarBorder declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.MenuBarBorder.html"/>
         /// </summary>
@@ -246,7 +246,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region RadioButtonBorder definition
+        #region RadioButtonBorder declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.RadioButtonBorder.html"/>
         /// </summary>
@@ -291,7 +291,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region RolloverButtonBorder definition
+        #region RolloverButtonBorder declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.RolloverButtonBorder.html"/>
         /// </summary>
@@ -336,7 +336,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region SplitPaneBorder definition
+        #region SplitPaneBorder declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.SplitPaneBorder.html"/>
         /// </summary>
@@ -381,7 +381,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region ToggleButtonBorder definition
+        #region ToggleButtonBorder declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.ToggleButtonBorder.html"/>
         /// </summary>
@@ -430,7 +430,7 @@ namespace Javax.Swing.Plaf.Basic
     }
     #endregion
 
-    #region BasicBorders
+    #region BasicBorders implementation
     public partial class BasicBorders
     {
         #region Constructors
@@ -517,7 +517,7 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Nested classes
-        #region ButtonBorder
+        #region ButtonBorder implementation
         public partial class ButtonBorder
         {
             #region Constructors
@@ -563,7 +563,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region FieldBorder
+        #region FieldBorder implementation
         public partial class FieldBorder
         {
             #region Constructors
@@ -609,7 +609,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region MarginBorder
+        #region MarginBorder implementation
         public partial class MarginBorder
         {
             #region Constructors
@@ -644,7 +644,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region MenuBarBorder
+        #region MenuBarBorder implementation
         public partial class MenuBarBorder
         {
             #region Constructors
@@ -688,7 +688,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region RadioButtonBorder
+        #region RadioButtonBorder implementation
         public partial class RadioButtonBorder
         {
             #region Constructors
@@ -730,7 +730,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region RolloverButtonBorder
+        #region RolloverButtonBorder implementation
         public partial class RolloverButtonBorder
         {
             #region Constructors
@@ -772,7 +772,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region SplitPaneBorder
+        #region SplitPaneBorder implementation
         public partial class SplitPaneBorder
         {
             #region Constructors
@@ -850,7 +850,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region ToggleButtonBorder
+        #region ToggleButtonBorder implementation
         public partial class ToggleButtonBorder
         {
             #region Constructors

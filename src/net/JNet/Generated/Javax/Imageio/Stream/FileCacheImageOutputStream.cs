@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio.Stream
 {
-    #region FileCacheImageOutputStream definition
+    #region FileCacheImageOutputStream declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/FileCacheImageOutputStream.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Imageio.Stream
     }
     #endregion
 
-    #region FileCacheImageOutputStream
+    #region FileCacheImageOutputStream implementation
     public partial class FileCacheImageOutputStream
     {
         #region Constructors

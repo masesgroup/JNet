@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Dnd
 {
-    #region DropTargetAdapter definition
+    #region DropTargetAdapter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetAdapter.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Awt.Dnd
     }
     #endregion
 
-    #region DropTargetAdapterDirect definition
+    #region DropTargetAdapterDirect declaration
     /// <summary>
     /// Direct override of <see cref="DropTargetAdapter"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Java.Awt.Dnd
     }
     #endregion
 
-    #region DropTargetAdapter
+    #region DropTargetAdapter implementation
     public partial class DropTargetAdapter
     {
         #region Constructors
@@ -240,7 +240,7 @@ namespace Java.Awt.Dnd
     }
     #endregion
 
-    #region DropTargetAdapterDirect
+    #region DropTargetAdapterDirect implementation
     public partial class DropTargetAdapterDirect
     {
         #region Constructors

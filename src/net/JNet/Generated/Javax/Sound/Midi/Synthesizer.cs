@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Midi
 {
-    #region Synthesizer definition
+    #region Synthesizer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html"/>
     /// </summary>
@@ -166,7 +166,7 @@ namespace Javax.Sound.Midi
     }
     #endregion
 
-    #region Synthesizer
+    #region Synthesizer implementation
     public partial class Synthesizer : Javax.Sound.Midi.ISynthesizer
     {
         #region Constructors

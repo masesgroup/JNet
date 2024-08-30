@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.DesktopNs
 {
-    #region UserSessionListener definition
+    #region UserSessionListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Awt.DesktopNs
     }
     #endregion
 
-    #region UserSessionListenerDirect definition
+    #region UserSessionListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="UserSessionListener"/> or its generic type if there is one
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Awt.DesktopNs
     }
     #endregion
 
-    #region UserSessionListener
+    #region UserSessionListener implementation
     public partial class UserSessionListener : Java.Awt.DesktopNs.IUserSessionListener
     {
         #region Constructors
@@ -202,7 +202,7 @@ namespace Java.Awt.DesktopNs
     }
     #endregion
 
-    #region UserSessionListenerDirect
+    #region UserSessionListenerDirect implementation
     public partial class UserSessionListenerDirect : Java.Awt.DesktopNs.IUserSessionListener
     {
         #region Constructors

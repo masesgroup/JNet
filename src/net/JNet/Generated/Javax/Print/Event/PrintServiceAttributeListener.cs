@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Event
 {
-    #region PrintServiceAttributeListener definition
+    #region PrintServiceAttributeListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintServiceAttributeListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Print.Event
     }
     #endregion
 
-    #region PrintServiceAttributeListenerDirect definition
+    #region PrintServiceAttributeListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="PrintServiceAttributeListener"/> or its generic type if there is one
     /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Print.Event
     }
     #endregion
 
-    #region PrintServiceAttributeListener
+    #region PrintServiceAttributeListener implementation
     public partial class PrintServiceAttributeListener : Javax.Print.Event.IPrintServiceAttributeListener
     {
         #region Constructors
@@ -175,7 +175,7 @@ namespace Javax.Print.Event
     }
     #endregion
 
-    #region PrintServiceAttributeListenerDirect
+    #region PrintServiceAttributeListenerDirect implementation
     public partial class PrintServiceAttributeListenerDirect : Javax.Print.Event.IPrintServiceAttributeListener
     {
         #region Constructors

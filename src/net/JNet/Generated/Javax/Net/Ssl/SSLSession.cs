@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Net.Ssl
 {
-    #region SSLSession definition
+    #region SSLSession declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html"/>
     /// </summary>
@@ -176,7 +176,7 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region SSLSession
+    #region SSLSession implementation
     public partial class SSLSession : Javax.Net.Ssl.ISSLSession
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Attribute.Standard
 {
-    #region PagesPerMinuteColor definition
+    #region PagesPerMinuteColor declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PagesPerMinuteColor.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Print.Attribute.Standard
     }
     #endregion
 
-    #region PagesPerMinuteColor
+    #region PagesPerMinuteColor implementation
     public partial class PagesPerMinuteColor
     {
         #region Constructors

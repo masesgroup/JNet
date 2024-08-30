@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Transform
 {
-    #region Transformer definition
+    #region Transformer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Xml.Transform
     }
     #endregion
 
-    #region Transformer
+    #region Transformer implementation
     public partial class Transformer
     {
         #region Constructors

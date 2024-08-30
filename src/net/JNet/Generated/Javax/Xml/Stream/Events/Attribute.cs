@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream.Events
 {
-    #region Attribute definition
+    #region Attribute declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Attribute.html"/>
     /// </summary>
@@ -107,7 +107,7 @@ namespace Javax.Xml.Stream.Events
     }
     #endregion
 
-    #region Attribute
+    #region Attribute implementation
     public partial class Attribute : Javax.Xml.Stream.Events.IAttribute
     {
         #region Constructors

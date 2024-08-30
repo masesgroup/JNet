@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
-    #region WindowListener definition
+    #region WindowListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region WindowListenerDirect definition
+    #region WindowListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="WindowListener"/> or its generic type if there is one
     /// </summary>
@@ -145,7 +145,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region WindowListener
+    #region WindowListener implementation
     public partial class WindowListener : Java.Awt.EventNs.IWindowListener
     {
         #region Constructors
@@ -337,7 +337,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region WindowListenerDirect
+    #region WindowListenerDirect implementation
     public partial class WindowListenerDirect : Java.Awt.EventNs.IWindowListener
     {
         #region Constructors

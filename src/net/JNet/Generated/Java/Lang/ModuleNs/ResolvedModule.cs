@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.ModuleNs
 {
-    #region ResolvedModule definition
+    #region ResolvedModule declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ResolvedModule.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Lang.ModuleNs
     }
     #endregion
 
-    #region ResolvedModule
+    #region ResolvedModule implementation
     public partial class ResolvedModule
     {
         #region Constructors

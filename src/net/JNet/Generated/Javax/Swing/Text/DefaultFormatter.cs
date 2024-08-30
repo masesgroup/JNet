@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region DefaultFormatter definition
+    #region DefaultFormatter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultFormatter.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region DefaultFormatter
+    #region DefaultFormatter implementation
     public partial class DefaultFormatter
     {
         #region Constructors

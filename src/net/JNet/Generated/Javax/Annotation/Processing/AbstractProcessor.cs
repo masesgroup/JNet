@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Annotation.Processing
 {
-    #region AbstractProcessor definition
+    #region AbstractProcessor declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/AbstractProcessor.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Annotation.Processing
     }
     #endregion
 
-    #region AbstractProcessor
+    #region AbstractProcessor implementation
     public partial class AbstractProcessor
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Ls
 {
-    #region LSException definition
+    #region LSException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Org.W3c.Dom.Ls
     }
     #endregion
 
-    #region LSException
+    #region LSException implementation
     public partial class LSException
     {
         #region Constructors

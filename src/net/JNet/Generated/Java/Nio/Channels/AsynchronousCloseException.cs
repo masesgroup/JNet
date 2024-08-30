@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
-    #region AsynchronousCloseException definition
+    #region AsynchronousCloseException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousCloseException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region AsynchronousCloseException
+    #region AsynchronousCloseException implementation
     public partial class AsynchronousCloseException
     {
         #region Constructors

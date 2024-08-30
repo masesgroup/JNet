@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Management
 {
-    #region PlatformManagedObject definition
+    #region PlatformManagedObject declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/PlatformManagedObject.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Java.Lang.Management
     }
     #endregion
 
-    #region PlatformManagedObject
+    #region PlatformManagedObject implementation
     public partial class PlatformManagedObject : Java.Lang.Management.IPlatformManagedObject
     {
         #region Constructors

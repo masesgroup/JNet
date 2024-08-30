@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region UnknownFormatConversionException definition
+    #region UnknownFormatConversionException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UnknownFormatConversionException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region UnknownFormatConversionException
+    #region UnknownFormatConversionException implementation
     public partial class UnknownFormatConversionException
     {
         #region Constructors

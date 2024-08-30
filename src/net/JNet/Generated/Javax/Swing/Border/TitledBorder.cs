@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Border
 {
-    #region TitledBorder definition
+    #region TitledBorder declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Border
     }
     #endregion
 
-    #region TitledBorder
+    #region TitledBorder implementation
     public partial class TitledBorder
     {
         #region Constructors

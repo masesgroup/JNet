@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region DuplicateFormatFlagsException definition
+    #region DuplicateFormatFlagsException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/DuplicateFormatFlagsException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region DuplicateFormatFlagsException
+    #region DuplicateFormatFlagsException implementation
     public partial class DuplicateFormatFlagsException
     {
         #region Constructors

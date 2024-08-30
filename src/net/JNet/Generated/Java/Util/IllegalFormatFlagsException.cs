@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region IllegalFormatFlagsException definition
+    #region IllegalFormatFlagsException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/IllegalFormatFlagsException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region IllegalFormatFlagsException
+    #region IllegalFormatFlagsException implementation
     public partial class IllegalFormatFlagsException
     {
         #region Constructors

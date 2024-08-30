@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region BadAttributeValueExpException definition
+    #region BadAttributeValueExpException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/BadAttributeValueExpException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region BadAttributeValueExpException
+    #region BadAttributeValueExpException implementation
     public partial class BadAttributeValueExpException
     {
         #region Constructors

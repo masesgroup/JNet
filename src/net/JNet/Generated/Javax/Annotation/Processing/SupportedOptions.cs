@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Annotation.Processing
 {
-    #region SupportedOptions definition
+    #region SupportedOptions declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/SupportedOptions.html"/>
     /// </summary>
@@ -95,7 +95,7 @@ namespace Javax.Annotation.Processing
     }
     #endregion
 
-    #region SupportedOptions
+    #region SupportedOptions implementation
     public partial class SupportedOptions : Javax.Annotation.Processing.ISupportedOptions
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region ValueExp definition
+    #region ValueExp declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ValueExp.html"/>
     /// </summary>
@@ -100,7 +100,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region ValueExp
+    #region ValueExp implementation
     public partial class ValueExp : Javax.Management.IValueExp
     {
         #region Constructors

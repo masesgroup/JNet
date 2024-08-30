@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Remote
 {
-    #region NotificationResult definition
+    #region NotificationResult declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/NotificationResult.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Management.Remote
     }
     #endregion
 
-    #region NotificationResult
+    #region NotificationResult implementation
     public partial class NotificationResult
     {
         #region Constructors

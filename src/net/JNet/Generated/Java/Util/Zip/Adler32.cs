@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Zip
 {
-    #region Adler32 definition
+    #region Adler32 declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Adler32.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Zip
     }
     #endregion
 
-    #region Adler32
+    #region Adler32 implementation
     public partial class Adler32
     {
         #region Constructors

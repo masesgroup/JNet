@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region DefaultFocusTraversalPolicy definition
+    #region DefaultFocusTraversalPolicy declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/DefaultFocusTraversalPolicy.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region DefaultFocusTraversalPolicy
+    #region DefaultFocusTraversalPolicy implementation
     public partial class DefaultFocusTraversalPolicy
     {
         #region Constructors

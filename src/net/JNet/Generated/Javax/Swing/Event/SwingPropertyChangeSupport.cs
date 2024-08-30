@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
-    #region SwingPropertyChangeSupport definition
+    #region SwingPropertyChangeSupport declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/SwingPropertyChangeSupport.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region SwingPropertyChangeSupport
+    #region SwingPropertyChangeSupport implementation
     public partial class SwingPropertyChangeSupport
     {
         #region Constructors

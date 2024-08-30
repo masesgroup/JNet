@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans
 {
-    #region PropertyVetoException definition
+    #region PropertyVetoException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyVetoException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Beans
     }
     #endregion
 
-    #region PropertyVetoException
+    #region PropertyVetoException implementation
     public partial class PropertyVetoException
     {
         #region Constructors

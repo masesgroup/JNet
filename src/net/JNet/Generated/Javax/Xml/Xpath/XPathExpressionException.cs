@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Xpath
 {
-    #region XPathExpressionException definition
+    #region XPathExpressionException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathExpressionException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Xml.Xpath
     }
     #endregion
 
-    #region XPathExpressionException
+    #region XPathExpressionException implementation
     public partial class XPathExpressionException
     {
         #region Constructors

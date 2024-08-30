@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Midi
 {
-    #region MidiSystem definition
+    #region MidiSystem declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Sound.Midi
     }
     #endregion
 
-    #region MidiSystem
+    #region MidiSystem implementation
     public partial class MidiSystem
     {
         #region Constructors

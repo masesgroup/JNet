@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming
 {
-    #region NameClassPair definition
+    #region NameClassPair declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Naming
     }
     #endregion
 
-    #region NameClassPair
+    #region NameClassPair implementation
     public partial class NameClassPair
     {
         #region Constructors

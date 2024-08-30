@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
-    #region UnresolvedAddressException definition
+    #region UnresolvedAddressException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/UnresolvedAddressException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region UnresolvedAddressException
+    #region UnresolvedAddressException implementation
     public partial class UnresolvedAddressException
     {
         #region Constructors

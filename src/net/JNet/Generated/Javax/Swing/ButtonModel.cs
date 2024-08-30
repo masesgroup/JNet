@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region ButtonModel definition
+    #region ButtonModel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html"/>
     /// </summary>
@@ -182,7 +182,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region ButtonModel
+    #region ButtonModel implementation
     public partial class ButtonModel : Javax.Swing.IButtonModel
     {
         #region Constructors

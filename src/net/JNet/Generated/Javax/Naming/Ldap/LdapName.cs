@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Ldap
 {
-    #region LdapName definition
+    #region LdapName declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Naming.Ldap
     }
     #endregion
 
-    #region LdapName
+    #region LdapName implementation
     public partial class LdapName
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Dnd
 {
-    #region DropTargetDragEvent definition
+    #region DropTargetDragEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.Dnd
     }
     #endregion
 
-    #region DropTargetDragEvent
+    #region DropTargetDragEvent implementation
     public partial class DropTargetDragEvent
     {
         #region Constructors

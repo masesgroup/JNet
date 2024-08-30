@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region AttributeChangeNotification definition
+    #region AttributeChangeNotification declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotification.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region AttributeChangeNotification
+    #region AttributeChangeNotification implementation
     public partial class AttributeChangeNotification
     {
         #region Constructors

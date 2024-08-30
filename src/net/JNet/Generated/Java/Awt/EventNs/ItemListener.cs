@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
-    #region ItemListener definition
+    #region ItemListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region ItemListenerDirect definition
+    #region ItemListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="ItemListener"/> or its generic type if there is one
     /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region ItemListener
+    #region ItemListener implementation
     public partial class ItemListener : Java.Awt.EventNs.IItemListener
     {
         #region Constructors
@@ -175,7 +175,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region ItemListenerDirect
+    #region ItemListenerDirect implementation
     public partial class ItemListenerDirect : Java.Awt.EventNs.IItemListener
     {
         #region Constructors

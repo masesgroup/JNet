@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region InvalidApplicationException definition
+    #region InvalidApplicationException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/InvalidApplicationException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region InvalidApplicationException
+    #region InvalidApplicationException implementation
     public partial class InvalidApplicationException
     {
         #region Constructors

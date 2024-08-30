@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region IllformedLocaleException definition
+    #region IllformedLocaleException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/IllformedLocaleException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region IllformedLocaleException
+    #region IllformedLocaleException implementation
     public partial class IllformedLocaleException
     {
         #region Constructors

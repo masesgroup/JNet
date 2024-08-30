@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.ModuleNs
 {
-    #region ModuleReader definition
+    #region ModuleReader declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html"/>
     /// </summary>
@@ -127,7 +127,7 @@ namespace Java.Lang.ModuleNs
     }
     #endregion
 
-    #region ModuleReader
+    #region ModuleReader implementation
     public partial class ModuleReader : Java.Lang.ModuleNs.IModuleReader
     {
         #region Constructors

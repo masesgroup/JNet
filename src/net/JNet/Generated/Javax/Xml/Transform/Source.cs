@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Transform
 {
-    #region Source definition
+    #region Source declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Source.html"/>
     /// </summary>
@@ -99,7 +99,7 @@ namespace Javax.Xml.Transform
     }
     #endregion
 
-    #region Source
+    #region Source implementation
     public partial class Source : Javax.Xml.Transform.ISource
     {
         #region Constructors

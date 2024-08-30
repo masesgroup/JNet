@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region AutoCloseable definition
+    #region AutoCloseable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/AutoCloseable.html"/>
     /// </summary>
@@ -95,7 +95,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region AutoCloseable
+    #region AutoCloseable implementation
     public partial class AutoCloseable : Java.Lang.IAutoCloseable
     {
         #region Constructors

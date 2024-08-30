@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Transform
 {
-    #region ErrorListener definition
+    #region ErrorListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/ErrorListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Xml.Transform
     }
     #endregion
 
-    #region ErrorListenerDirect definition
+    #region ErrorListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="ErrorListener"/> or its generic type if there is one
     /// </summary>
@@ -128,7 +128,7 @@ namespace Javax.Xml.Transform
     }
     #endregion
 
-    #region ErrorListener
+    #region ErrorListener implementation
     public partial class ErrorListener : Javax.Xml.Transform.IErrorListener
     {
         #region Constructors
@@ -235,7 +235,7 @@ namespace Javax.Xml.Transform
     }
     #endregion
 
-    #region ErrorListenerDirect
+    #region ErrorListenerDirect implementation
     public partial class ErrorListenerDirect : Javax.Xml.Transform.IErrorListener
     {
         #region Constructors

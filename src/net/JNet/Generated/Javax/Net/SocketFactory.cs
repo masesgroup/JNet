@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Net
 {
-    #region SocketFactory definition
+    #region SocketFactory declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/SocketFactory.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Net
     }
     #endregion
 
-    #region SocketFactory
+    #region SocketFactory implementation
     public partial class SocketFactory
     {
         #region Constructors

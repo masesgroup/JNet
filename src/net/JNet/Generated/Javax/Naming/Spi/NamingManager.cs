@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Spi
 {
-    #region NamingManager definition
+    #region NamingManager declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Naming.Spi
     }
     #endregion
 
-    #region NamingManager
+    #region NamingManager implementation
     public partial class NamingManager
     {
         #region Constructors

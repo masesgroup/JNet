@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Geom
 {
-    #region RectangularShape definition
+    #region RectangularShape declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RectangularShape.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Awt.Geom
     }
     #endregion
 
-    #region RectangularShape
+    #region RectangularShape implementation
     public partial class RectangularShape
     {
         #region Constructors

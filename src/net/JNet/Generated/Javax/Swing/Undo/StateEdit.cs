@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Undo
 {
-    #region StateEdit definition
+    #region StateEdit declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/StateEdit.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Undo
     }
     #endregion
 
-    #region StateEdit
+    #region StateEdit implementation
     public partial class StateEdit
     {
         #region Constructors

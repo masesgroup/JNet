@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql
 {
-    #region RowSetEvent definition
+    #region RowSetEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetEvent.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Sql
     }
     #endregion
 
-    #region RowSetEvent
+    #region RowSetEvent implementation
     public partial class RowSetEvent
     {
         #region Constructors

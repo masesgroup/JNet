@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Xpath
 {
-    #region XPathConstants definition
+    #region XPathConstants declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathConstants.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Xml.Xpath
     }
     #endregion
 
-    #region XPathConstants
+    #region XPathConstants implementation
     public partial class XPathConstants
     {
         #region Constructors

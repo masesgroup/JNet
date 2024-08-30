@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region DoublePredicate definition
+    #region DoublePredicate declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region DoublePredicateDirect definition
+    #region DoublePredicateDirect declaration
     /// <summary>
     /// Direct override of <see cref="DoublePredicate"/> or its generic type if there is one
     /// </summary>
@@ -133,7 +133,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region DoublePredicate
+    #region DoublePredicate implementation
     public partial class DoublePredicate : Java.Util.Function.IDoublePredicate
     {
         #region Constructors
@@ -298,7 +298,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region DoublePredicateDirect
+    #region DoublePredicateDirect implementation
     public partial class DoublePredicateDirect : Java.Util.Function.IDoublePredicate
     {
         #region Constructors

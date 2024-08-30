@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region Override definition
+    #region Override declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Override.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region Override
+    #region Override implementation
     public partial class Override : Java.Lang.IOverride
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream.Events
 {
-    #region Characters definition
+    #region Characters declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Characters.html"/>
     /// </summary>
@@ -109,7 +109,7 @@ namespace Javax.Xml.Stream.Events
     }
     #endregion
 
-    #region Characters
+    #region Characters implementation
     public partial class Characters : Javax.Xml.Stream.Events.ICharacters
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region Taskbar definition
+    #region Taskbar declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Awt
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Feature definition
+        #region Feature declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Java.Awt
         }
         #endregion
 
-        #region State definition
+        #region State declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html"/>
         /// </summary>
@@ -160,7 +160,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region Taskbar
+    #region Taskbar implementation
     public partial class Taskbar
     {
         #region Constructors
@@ -282,7 +282,7 @@ namespace Java.Awt
         #endregion
 
         #region Nested classes
-        #region Feature
+        #region Feature implementation
         public partial class Feature
         {
             #region Constructors
@@ -390,7 +390,7 @@ namespace Java.Awt
         }
         #endregion
 
-        #region State
+        #region State implementation
         public partial class State
         {
             #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto
 {
-    #region NodeSetData definition
+    #region NodeSetData declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/NodeSetData.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Xml.Crypto
     }
     #endregion
 
-    #region NodeSetData<T> definition
+    #region NodeSetData<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/NodeSetData.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Javax.Xml.Crypto
     }
     #endregion
 
-    #region NodeSetData
+    #region NodeSetData implementation
     public partial class NodeSetData
     {
         #region Constructors
@@ -186,7 +186,7 @@ namespace Javax.Xml.Crypto
     }
     #endregion
 
-    #region NodeSetData<T>
+    #region NodeSetData<T> implementation
     public partial class NodeSetData<T> : Javax.Xml.Crypto.INodeSetData<T>
     {
         #region Constructors

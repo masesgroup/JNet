@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Attribute
 {
-    #region UnmodifiableSetException definition
+    #region UnmodifiableSetException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/UnmodifiableSetException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Print.Attribute
     }
     #endregion
 
-    #region UnmodifiableSetException
+    #region UnmodifiableSetException implementation
     public partial class UnmodifiableSetException
     {
         #region Constructors

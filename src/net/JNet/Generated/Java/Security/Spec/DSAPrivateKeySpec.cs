@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Spec
 {
-    #region DSAPrivateKeySpec definition
+    #region DSAPrivateKeySpec declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAPrivateKeySpec.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Security.Spec
     }
     #endregion
 
-    #region DSAPrivateKeySpec
+    #region DSAPrivateKeySpec implementation
     public partial class DSAPrivateKeySpec
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text.Html
 {
-    #region StyleSheet definition
+    #region StyleSheet declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Text.Html
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region BoxPainter definition
+        #region BoxPainter declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.BoxPainter.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Swing.Text.Html
         }
         #endregion
 
-        #region ListPainter definition
+        #region ListPainter declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.ListPainter.html"/>
         /// </summary>
@@ -160,7 +160,7 @@ namespace Javax.Swing.Text.Html
     }
     #endregion
 
-    #region StyleSheet
+    #region StyleSheet implementation
     public partial class StyleSheet
     {
         #region Constructors
@@ -377,7 +377,7 @@ namespace Javax.Swing.Text.Html
         #endregion
 
         #region Nested classes
-        #region BoxPainter
+        #region BoxPainter implementation
         public partial class BoxPainter
         {
             #region Constructors
@@ -431,7 +431,7 @@ namespace Javax.Swing.Text.Html
         }
         #endregion
 
-        #region ListPainter
+        #region ListPainter implementation
         public partial class ListPainter
         {
             #region Constructors

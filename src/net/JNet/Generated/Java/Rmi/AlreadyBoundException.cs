@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi
 {
-    #region AlreadyBoundException definition
+    #region AlreadyBoundException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/AlreadyBoundException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Rmi
     }
     #endregion
 
-    #region AlreadyBoundException
+    #region AlreadyBoundException implementation
     public partial class AlreadyBoundException
     {
         #region Constructors

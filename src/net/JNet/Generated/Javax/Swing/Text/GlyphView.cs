@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region GlyphView definition
+    #region GlyphView declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Text
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region GlyphPainter definition
+        #region GlyphPainter declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.GlyphPainter.html"/>
         /// </summary>
@@ -117,7 +117,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region GlyphView
+    #region GlyphView implementation
     public partial class GlyphView
     {
         #region Constructors
@@ -262,7 +262,7 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Nested classes
-        #region GlyphPainter
+        #region GlyphPainter implementation
         public partial class GlyphPainter
         {
             #region Constructors

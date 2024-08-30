@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream.Events
 {
-    #region Comment definition
+    #region Comment declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Comment.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Javax.Xml.Stream.Events
     }
     #endregion
 
-    #region Comment
+    #region Comment implementation
     public partial class Comment : Javax.Xml.Stream.Events.IComment
     {
         #region Constructors

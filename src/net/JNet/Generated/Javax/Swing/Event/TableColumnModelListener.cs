@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
-    #region TableColumnModelListener definition
+    #region TableColumnModelListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region TableColumnModelListenerDirect definition
+    #region TableColumnModelListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="TableColumnModelListener"/> or its generic type if there is one
     /// </summary>
@@ -135,7 +135,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region TableColumnModelListener
+    #region TableColumnModelListener implementation
     public partial class TableColumnModelListener : Javax.Swing.Event.ITableColumnModelListener
     {
         #region Constructors
@@ -283,7 +283,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region TableColumnModelListenerDirect
+    #region TableColumnModelListenerDirect implementation
     public partial class TableColumnModelListenerDirect : Javax.Swing.Event.ITableColumnModelListener
     {
         #region Constructors

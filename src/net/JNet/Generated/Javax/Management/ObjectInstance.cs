@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region ObjectInstance definition
+    #region ObjectInstance declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectInstance.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region ObjectInstance
+    #region ObjectInstance implementation
     public partial class ObjectInstance
     {
         #region Constructors

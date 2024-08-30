@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region ProgressMonitorInputStream definition
+    #region ProgressMonitorInputStream declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitorInputStream.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region ProgressMonitorInputStream
+    #region ProgressMonitorInputStream implementation
     public partial class ProgressMonitorInputStream
     {
         #region Constructors

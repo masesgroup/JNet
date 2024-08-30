@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print
 {
-    #region Doc definition
+    #region Doc declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/Doc.html"/>
     /// </summary>
@@ -110,7 +110,7 @@ namespace Javax.Print
     }
     #endregion
 
-    #region Doc
+    #region Doc implementation
     public partial class Doc : Javax.Print.IDoc
     {
         #region Constructors

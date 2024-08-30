@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region MBeanRegistration definition
+    #region MBeanRegistration declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanRegistration.html"/>
     /// </summary>
@@ -112,7 +112,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region MBeanRegistration
+    #region MBeanRegistration implementation
     public partial class MBeanRegistration : Javax.Management.IMBeanRegistration
     {
         #region Constructors

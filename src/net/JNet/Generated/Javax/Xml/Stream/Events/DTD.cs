@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream.Events
 {
-    #region DTD definition
+    #region DTD declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/DTD.html"/>
     /// </summary>
@@ -106,7 +106,7 @@ namespace Javax.Xml.Stream.Events
     }
     #endregion
 
-    #region DTD
+    #region DTD implementation
     public partial class DTD : Javax.Xml.Stream.Events.IDTD
     {
         #region Constructors

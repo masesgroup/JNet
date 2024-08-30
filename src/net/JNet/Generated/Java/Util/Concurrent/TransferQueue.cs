@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region TransferQueue definition
+    #region TransferQueue declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region TransferQueue<E> definition
+    #region TransferQueue<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region TransferQueue
+    #region TransferQueue implementation
     public partial class TransferQueue
     {
         #region Constructors
@@ -244,7 +244,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region TransferQueue<E>
+    #region TransferQueue<E> implementation
     public partial class TransferQueue<E> : Java.Util.Concurrent.ITransferQueue<E>
     {
         #region Constructors

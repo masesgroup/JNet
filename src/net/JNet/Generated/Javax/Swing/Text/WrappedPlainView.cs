@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region WrappedPlainView definition
+    #region WrappedPlainView declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/WrappedPlainView.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region WrappedPlainView
+    #region WrappedPlainView implementation
     public partial class WrappedPlainView
     {
         #region Constructors

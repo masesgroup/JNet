@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region Component definition
+    #region Component declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Java.Awt
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region BaselineResizeBehavior definition
+        #region BaselineResizeBehavior declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html"/>
         /// </summary>
@@ -117,7 +117,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region Component
+    #region Component implementation
     public partial class Component
     {
         #region Constructors
@@ -1434,7 +1434,7 @@ namespace Java.Awt
         #endregion
 
         #region Nested classes
-        #region BaselineResizeBehavior
+        #region BaselineResizeBehavior implementation
         public partial class BaselineResizeBehavior
         {
             #region Constructors

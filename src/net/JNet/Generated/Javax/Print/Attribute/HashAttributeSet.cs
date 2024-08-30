@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Attribute
 {
-    #region HashAttributeSet definition
+    #region HashAttributeSet declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashAttributeSet.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Print.Attribute
     }
     #endregion
 
-    #region HashAttributeSet
+    #region HashAttributeSet implementation
     public partial class HashAttributeSet
     {
         #region Constructors

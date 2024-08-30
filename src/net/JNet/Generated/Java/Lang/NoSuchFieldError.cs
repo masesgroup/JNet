@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region NoSuchFieldError definition
+    #region NoSuchFieldError declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/NoSuchFieldError.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region NoSuchFieldError
+    #region NoSuchFieldError implementation
     public partial class NoSuchFieldError
     {
         #region Constructors

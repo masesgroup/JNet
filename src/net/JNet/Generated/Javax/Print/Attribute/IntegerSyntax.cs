@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Attribute
 {
-    #region IntegerSyntax definition
+    #region IntegerSyntax declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/IntegerSyntax.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Print.Attribute
     }
     #endregion
 
-    #region IntegerSyntax
+    #region IntegerSyntax implementation
     public partial class IntegerSyntax
     {
         #region Constructors

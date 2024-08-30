@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Util
 {
-    #region Types definition
+    #region Types declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html"/>
     /// </summary>
@@ -213,7 +213,7 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region Types
+    #region Types implementation
     public partial class Types : Javax.Lang.Model.Util.ITypes
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio
 {
-    #region ImageTypeSpecifier definition
+    #region ImageTypeSpecifier declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTypeSpecifier.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Imageio
     }
     #endregion
 
-    #region ImageTypeSpecifier
+    #region ImageTypeSpecifier implementation
     public partial class ImageTypeSpecifier
     {
         #region Constructors

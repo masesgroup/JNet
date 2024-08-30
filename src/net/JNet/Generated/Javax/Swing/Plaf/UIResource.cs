@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf
 {
-    #region UIResource definition
+    #region UIResource declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/UIResource.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Javax.Swing.Plaf
     }
     #endregion
 
-    #region UIResource
+    #region UIResource implementation
     public partial class UIResource : Javax.Swing.Plaf.IUIResource
     {
         #region Constructors

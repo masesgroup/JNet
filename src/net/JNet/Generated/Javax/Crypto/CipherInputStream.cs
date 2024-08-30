@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Crypto
 {
-    #region CipherInputStream definition
+    #region CipherInputStream declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/CipherInputStream.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Crypto
     }
     #endregion
 
-    #region CipherInputStream
+    #region CipherInputStream implementation
     public partial class CipherInputStream
     {
         #region Constructors

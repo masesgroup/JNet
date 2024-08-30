@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.Xml.Sax
 {
-    #region XMLFilter definition
+    #region XMLFilter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLFilter.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Org.Xml.Sax
     }
     #endregion
 
-    #region XMLFilter
+    #region XMLFilter implementation
     public partial class XMLFilter : Org.Xml.Sax.IXMLFilter
     {
         #region Constructors

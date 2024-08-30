@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region ToLongFunction definition
+    #region ToLongFunction declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongFunction.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToLongFunctionDirect definition
+    #region ToLongFunctionDirect declaration
     /// <summary>
     /// Direct override of <see cref="ToLongFunction"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToLongFunction<T> definition
+    #region ToLongFunction<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongFunction.html"/>
     /// </summary>
@@ -119,7 +119,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToLongFunctionDirect<T> definition
+    #region ToLongFunctionDirect<T> declaration
     /// <summary>
     /// Direct override of <see cref="ToLongFunction"/> or its generic type if there is one
     /// </summary>
@@ -160,7 +160,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToLongFunction
+    #region ToLongFunction implementation
     public partial class ToLongFunction
     {
         #region Constructors
@@ -222,7 +222,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToLongFunctionDirect
+    #region ToLongFunctionDirect implementation
     public partial class ToLongFunctionDirect
     {
         #region Constructors
@@ -286,7 +286,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToLongFunction<T>
+    #region ToLongFunction<T> implementation
     public partial class ToLongFunction<T> : Java.Util.Function.IToLongFunction<T>
     {
         #region Constructors
@@ -348,7 +348,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToLongFunctionDirect<T>
+    #region ToLongFunctionDirect<T> implementation
     public partial class ToLongFunctionDirect<T> : Java.Util.Function.IToLongFunction<T>
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig
 {
-    #region SignatureProperty definition
+    #region SignatureProperty declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureProperty.html"/>
     /// </summary>
@@ -102,7 +102,7 @@ namespace Javax.Xml.Crypto.Dsig
     }
     #endregion
 
-    #region SignatureProperty
+    #region SignatureProperty implementation
     public partial class SignatureProperty : Javax.Xml.Crypto.Dsig.ISignatureProperty
     {
         #region Constructors

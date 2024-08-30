@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom
 {
-    #region Comment definition
+    #region Comment declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Comment.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Org.W3c.Dom
     }
     #endregion
 
-    #region Comment
+    #region Comment implementation
     public partial class Comment : Org.W3c.Dom.IComment
     {
         #region Constructors

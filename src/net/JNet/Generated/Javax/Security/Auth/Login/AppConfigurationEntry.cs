@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Security.Auth.Login
 {
-    #region AppConfigurationEntry definition
+    #region AppConfigurationEntry declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/AppConfigurationEntry.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Security.Auth.Login
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region LoginModuleControlFlag definition
+        #region LoginModuleControlFlag declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/AppConfigurationEntry.LoginModuleControlFlag.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Security.Auth.Login
     }
     #endregion
 
-    #region AppConfigurationEntry
+    #region AppConfigurationEntry implementation
     public partial class AppConfigurationEntry
     {
         #region Constructors
@@ -170,7 +170,7 @@ namespace Javax.Security.Auth.Login
         #endregion
 
         #region Nested classes
-        #region LoginModuleControlFlag
+        #region LoginModuleControlFlag implementation
         public partial class LoginModuleControlFlag
         {
             #region Constructors

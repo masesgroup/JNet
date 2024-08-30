@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Invoke
 {
-    #region MethodType definition
+    #region MethodType declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Lang.Invoke
     }
     #endregion
 
-    #region MethodType
+    #region MethodType implementation
     public partial class MethodType
     {
         #region Constructors

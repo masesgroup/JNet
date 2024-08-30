@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region Calendar definition
+    #region Calendar declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Java.Util
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Builder definition
+        #region Builder declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html"/>
         /// </summary>
@@ -117,7 +117,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Calendar
+    #region Calendar implementation
     public partial class Calendar
     {
         #region Constructors
@@ -816,7 +816,7 @@ namespace Java.Util
         #endregion
 
         #region Nested classes
-        #region Builder
+        #region Builder implementation
         public partial class Builder
         {
             #region Constructors

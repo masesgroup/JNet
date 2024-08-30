@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region Base64 definition
+    #region Base64 declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Util
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Decoder definition
+        #region Decoder declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Decoder.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region Encoder definition
+        #region Encoder declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Encoder.html"/>
         /// </summary>
@@ -160,7 +160,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Base64
+    #region Base64 implementation
     public partial class Base64
     {
         #region Constructors
@@ -236,7 +236,7 @@ namespace Java.Util
         #endregion
 
         #region Nested classes
-        #region Decoder
+        #region Decoder implementation
         public partial class Decoder
         {
             #region Constructors
@@ -313,7 +313,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region Encoder
+        #region Encoder implementation
         public partial class Encoder
         {
             #region Constructors

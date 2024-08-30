@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Cert
 {
-    #region CertStoreSpi definition
+    #region CertStoreSpi declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStoreSpi.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region CertStoreSpi
+    #region CertStoreSpi implementation
     public partial class CertStoreSpi
     {
         #region Constructors

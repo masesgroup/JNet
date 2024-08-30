@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File
 {
-    #region WatchService definition
+    #region WatchService declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchService.html"/>
     /// </summary>
@@ -114,7 +114,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region WatchService
+    #region WatchService implementation
     public partial class WatchService : Java.Nio.File.IWatchService
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region BiConsumer definition
+    #region BiConsumer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BiConsumerDirect definition
+    #region BiConsumerDirect declaration
     /// <summary>
     /// Direct override of <see cref="BiConsumer"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BiConsumer<T, U> definition
+    #region BiConsumer<T, U> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BiConsumerDirect<T, U> definition
+    #region BiConsumerDirect<T, U> declaration
     /// <summary>
     /// Direct override of <see cref="BiConsumer"/> or its generic type if there is one
     /// </summary>
@@ -161,7 +161,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BiConsumer
+    #region BiConsumer implementation
     public partial class BiConsumer
     {
         #region Constructors
@@ -257,7 +257,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BiConsumerDirect
+    #region BiConsumerDirect implementation
     public partial class BiConsumerDirect
     {
         #region Constructors
@@ -338,7 +338,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BiConsumer<T, U>
+    #region BiConsumer<T, U> implementation
     public partial class BiConsumer<T, U> : Java.Util.Function.IBiConsumer<T, U>
     {
         #region Constructors
@@ -438,7 +438,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BiConsumerDirect<T, U>
+    #region BiConsumerDirect<T, U> implementation
     public partial class BiConsumerDirect<T, U> : Java.Util.Function.IBiConsumer<T, U>
     {
         #region Constructors

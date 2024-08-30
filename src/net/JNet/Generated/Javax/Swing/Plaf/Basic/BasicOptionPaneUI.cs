@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Basic
 {
-    #region BasicOptionPaneUI definition
+    #region BasicOptionPaneUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Plaf.Basic
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region ButtonAreaLayout definition
+        #region ButtonAreaLayout declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region PropertyChangeHandler definition
+        #region PropertyChangeHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.PropertyChangeHandler.html"/>
         /// </summary>
@@ -160,7 +160,7 @@ namespace Javax.Swing.Plaf.Basic
     }
     #endregion
 
-    #region BasicOptionPaneUI
+    #region BasicOptionPaneUI implementation
     public partial class BasicOptionPaneUI
     {
         #region Constructors
@@ -203,7 +203,7 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Nested classes
-        #region ButtonAreaLayout
+        #region ButtonAreaLayout implementation
         public partial class ButtonAreaLayout
         {
             #region Constructors
@@ -307,7 +307,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region PropertyChangeHandler
+        #region PropertyChangeHandler implementation
         public partial class PropertyChangeHandler
         {
             #region Constructors

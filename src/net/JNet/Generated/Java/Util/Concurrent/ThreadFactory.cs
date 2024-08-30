@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region ThreadFactory definition
+    #region ThreadFactory declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadFactory.html"/>
     /// </summary>
@@ -96,7 +96,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ThreadFactory
+    #region ThreadFactory implementation
     public partial class ThreadFactory : Java.Util.Concurrent.IThreadFactory
     {
         #region Constructors

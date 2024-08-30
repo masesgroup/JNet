@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming
 {
-    #region BinaryRefAddr definition
+    #region BinaryRefAddr declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/BinaryRefAddr.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Naming
     }
     #endregion
 
-    #region BinaryRefAddr
+    #region BinaryRefAddr implementation
     public partial class BinaryRefAddr
     {
         #region Constructors

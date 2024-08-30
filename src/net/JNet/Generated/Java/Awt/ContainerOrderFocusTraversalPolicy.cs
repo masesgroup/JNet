@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region ContainerOrderFocusTraversalPolicy definition
+    #region ContainerOrderFocusTraversalPolicy declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ContainerOrderFocusTraversalPolicy.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region ContainerOrderFocusTraversalPolicy
+    #region ContainerOrderFocusTraversalPolicy implementation
     public partial class ContainerOrderFocusTraversalPolicy
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region ExecutorCompletionService definition
+    #region ExecutorCompletionService declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ExecutorCompletionService<V> definition
+    #region ExecutorCompletionService<V> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ExecutorCompletionService
+    #region ExecutorCompletionService implementation
     public partial class ExecutorCompletionService
     {
         #region Constructors
@@ -211,7 +211,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ExecutorCompletionService<V>
+    #region ExecutorCompletionService<V> implementation
     public partial class ExecutorCompletionService<V>
     {
         #region Constructors

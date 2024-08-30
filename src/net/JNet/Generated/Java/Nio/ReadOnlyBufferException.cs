@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio
 {
-    #region ReadOnlyBufferException definition
+    #region ReadOnlyBufferException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ReadOnlyBufferException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Nio
     }
     #endregion
 
-    #region ReadOnlyBufferException
+    #region ReadOnlyBufferException implementation
     public partial class ReadOnlyBufferException
     {
         #region Constructors

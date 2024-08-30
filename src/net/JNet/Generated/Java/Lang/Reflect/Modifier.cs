@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
-    #region Modifier definition
+    #region Modifier declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region Modifier
+    #region Modifier implementation
     public partial class Modifier
     {
         #region Constructors

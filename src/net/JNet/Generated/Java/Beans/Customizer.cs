@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans
 {
-    #region Customizer definition
+    #region Customizer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Customizer.html"/>
     /// </summary>
@@ -105,7 +105,7 @@ namespace Java.Beans
     }
     #endregion
 
-    #region Customizer
+    #region Customizer implementation
     public partial class Customizer : Java.Beans.ICustomizer
     {
         #region Constructors

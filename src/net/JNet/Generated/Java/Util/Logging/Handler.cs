@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Logging
 {
-    #region Handler definition
+    #region Handler declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util.Logging
     }
     #endregion
 
-    #region Handler
+    #region Handler implementation
     public partial class Handler
     {
         #region Constructors

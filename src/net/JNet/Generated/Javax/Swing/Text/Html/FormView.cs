@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text.Html
 {
-    #region FormView definition
+    #region FormView declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormView.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Text.Html
     }
     #endregion
 
-    #region FormView
+    #region FormView implementation
     public partial class FormView
     {
         #region Constructors

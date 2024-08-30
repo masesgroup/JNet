@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
-    #region RandomAccessFile definition
+    #region RandomAccessFile declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Io
     }
     #endregion
 
-    #region RandomAccessFile
+    #region RandomAccessFile implementation
     public partial class RandomAccessFile
     {
         #region Constructors

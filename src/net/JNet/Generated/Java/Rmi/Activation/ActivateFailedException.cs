@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi.Activation
 {
-    #region ActivateFailedException definition
+    #region ActivateFailedException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivateFailedException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Rmi.Activation
     }
     #endregion
 
-    #region ActivateFailedException
+    #region ActivateFailedException implementation
     public partial class ActivateFailedException
     {
         #region Constructors

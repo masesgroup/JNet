@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region ServiceNotFoundException definition
+    #region ServiceNotFoundException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ServiceNotFoundException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region ServiceNotFoundException
+    #region ServiceNotFoundException implementation
     public partial class ServiceNotFoundException
     {
         #region Constructors

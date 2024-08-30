@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent.Atomic
 {
-    #region AtomicStampedReference definition
+    #region AtomicStampedReference declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicStampedReference.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Concurrent.Atomic
     }
     #endregion
 
-    #region AtomicStampedReference<V> definition
+    #region AtomicStampedReference<V> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicStampedReference.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Util.Concurrent.Atomic
     }
     #endregion
 
-    #region AtomicStampedReference
+    #region AtomicStampedReference implementation
     public partial class AtomicStampedReference
     {
         #region Constructors
@@ -222,7 +222,7 @@ namespace Java.Util.Concurrent.Atomic
     }
     #endregion
 
-    #region AtomicStampedReference<V>
+    #region AtomicStampedReference<V> implementation
     public partial class AtomicStampedReference<V>
     {
         #region Constructors

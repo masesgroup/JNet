@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region PKCS12Attribute definition
+    #region PKCS12Attribute declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PKCS12Attribute.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region PKCS12Attribute
+    #region PKCS12Attribute implementation
     public partial class PKCS12Attribute
     {
         #region Constructors

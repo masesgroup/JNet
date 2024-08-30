@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Crypto.Spec
 {
-    #region SecretKeySpec definition
+    #region SecretKeySpec declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/SecretKeySpec.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Crypto.Spec
     }
     #endregion
 
-    #region SecretKeySpec
+    #region SecretKeySpec implementation
     public partial class SecretKeySpec
     {
         #region Constructors

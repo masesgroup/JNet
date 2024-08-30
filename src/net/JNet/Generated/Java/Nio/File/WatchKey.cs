@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File
 {
-    #region WatchKey definition
+    #region WatchKey declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html"/>
     /// </summary>
@@ -114,7 +114,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region WatchKey
+    #region WatchKey implementation
     public partial class WatchKey : Java.Nio.File.IWatchKey
     {
         #region Constructors

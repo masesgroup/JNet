@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text.Html
 {
-    #region ListView definition
+    #region ListView declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/ListView.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Text.Html
     }
     #endregion
 
-    #region ListView
+    #region ListView implementation
     public partial class ListView
     {
         #region Constructors

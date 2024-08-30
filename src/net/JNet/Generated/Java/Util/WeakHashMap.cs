@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region WeakHashMap definition
+    #region WeakHashMap declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/WeakHashMap.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region WeakHashMap<K, V> definition
+    #region WeakHashMap<K, V> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/WeakHashMap.html"/>
     /// </summary>
@@ -117,7 +117,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region WeakHashMap
+    #region WeakHashMap implementation
     public partial class WeakHashMap
     {
         #region Constructors
@@ -173,7 +173,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region WeakHashMap<K, V>
+    #region WeakHashMap<K, V> implementation
     public partial class WeakHashMap<K, V>
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Events
 {
-    #region MouseEvent definition
+    #region MouseEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html"/>
     /// </summary>
@@ -149,7 +149,7 @@ namespace Org.W3c.Dom.Events
     }
     #endregion
 
-    #region MouseEvent
+    #region MouseEvent implementation
     public partial class MouseEvent : Org.W3c.Dom.Events.IMouseEvent
     {
         #region Constructors

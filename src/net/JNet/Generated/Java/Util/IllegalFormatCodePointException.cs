@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region IllegalFormatCodePointException definition
+    #region IllegalFormatCodePointException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/IllegalFormatCodePointException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region IllegalFormatCodePointException
+    #region IllegalFormatCodePointException implementation
     public partial class IllegalFormatCodePointException
     {
         #region Constructors

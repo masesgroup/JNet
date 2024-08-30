@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print
 {
-    #region StreamPrintService definition
+    #region StreamPrintService declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintService.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Print
     }
     #endregion
 
-    #region StreamPrintService
+    #region StreamPrintService implementation
     public partial class StreamPrintService
     {
         #region Constructors

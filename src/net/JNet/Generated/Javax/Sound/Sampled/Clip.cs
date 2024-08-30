@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Sampled
 {
-    #region Clip definition
+    #region Clip declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html"/>
     /// </summary>
@@ -135,7 +135,7 @@ namespace Javax.Sound.Sampled
     }
     #endregion
 
-    #region Clip
+    #region Clip implementation
     public partial class Clip : Javax.Sound.Sampled.IClip
     {
         #region Constructors

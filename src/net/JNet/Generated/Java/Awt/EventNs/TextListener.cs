@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
-    #region TextListener definition
+    #region TextListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region TextListenerDirect definition
+    #region TextListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="TextListener"/> or its generic type if there is one
     /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region TextListener
+    #region TextListener implementation
     public partial class TextListener : Java.Awt.EventNs.ITextListener
     {
         #region Constructors
@@ -175,7 +175,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region TextListenerDirect
+    #region TextListenerDirect implementation
     public partial class TextListenerDirect : Java.Awt.EventNs.ITextListener
     {
         #region Constructors

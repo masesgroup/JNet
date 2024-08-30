@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql
 {
-    #region ConnectionPoolDataSource definition
+    #region ConnectionPoolDataSource declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Javax.Sql
     }
     #endregion
 
-    #region ConnectionPoolDataSource
+    #region ConnectionPoolDataSource implementation
     public partial class ConnectionPoolDataSource : Javax.Sql.IConnectionPoolDataSource
     {
         #region Constructors

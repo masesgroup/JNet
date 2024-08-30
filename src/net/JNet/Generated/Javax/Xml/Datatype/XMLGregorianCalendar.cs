@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Datatype
 {
-    #region XMLGregorianCalendar definition
+    #region XMLGregorianCalendar declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Xml.Datatype
     }
     #endregion
 
-    #region XMLGregorianCalendar
+    #region XMLGregorianCalendar implementation
     public partial class XMLGregorianCalendar
     {
         #region Constructors

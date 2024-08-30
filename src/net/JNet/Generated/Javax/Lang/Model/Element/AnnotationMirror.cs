@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Element
 {
-    #region AnnotationMirror definition
+    #region AnnotationMirror declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationMirror.html"/>
     /// </summary>
@@ -98,7 +98,7 @@ namespace Javax.Lang.Model.Element
     }
     #endregion
 
-    #region AnnotationMirror
+    #region AnnotationMirror implementation
     public partial class AnnotationMirror : Javax.Lang.Model.Element.IAnnotationMirror
     {
         #region Constructors

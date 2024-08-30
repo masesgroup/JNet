@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Annotation.Processing
 {
-    #region RoundEnvironment definition
+    #region RoundEnvironment declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html"/>
     /// </summary>
@@ -133,7 +133,7 @@ namespace Javax.Annotation.Processing
     }
     #endregion
 
-    #region RoundEnvironment
+    #region RoundEnvironment implementation
     public partial class RoundEnvironment : Javax.Annotation.Processing.IRoundEnvironment
     {
         #region Constructors

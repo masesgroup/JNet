@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Text
 {
-    #region StringCharacterIterator definition
+    #region StringCharacterIterator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Text
     }
     #endregion
 
-    #region StringCharacterIterator
+    #region StringCharacterIterator implementation
     public partial class StringCharacterIterator
     {
         #region Constructors

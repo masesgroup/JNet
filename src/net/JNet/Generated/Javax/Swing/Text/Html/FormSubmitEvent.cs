@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text.Html
 {
-    #region FormSubmitEvent definition
+    #region FormSubmitEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Text.Html
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region MethodType definition
+        #region MethodType declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.MethodType.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Swing.Text.Html
     }
     #endregion
 
-    #region FormSubmitEvent
+    #region FormSubmitEvent implementation
     public partial class FormSubmitEvent
     {
         #region Constructors
@@ -153,7 +153,7 @@ namespace Javax.Swing.Text.Html
         #endregion
 
         #region Nested classes
-        #region MethodType
+        #region MethodType implementation
         public partial class MethodType
         {
             #region Constructors

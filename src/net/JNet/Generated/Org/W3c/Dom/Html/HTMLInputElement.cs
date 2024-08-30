@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
-    #region HTMLInputElement definition
+    #region HTMLInputElement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html"/>
     /// </summary>
@@ -178,7 +178,7 @@ namespace Org.W3c.Dom.Html
     }
     #endregion
 
-    #region HTMLInputElement
+    #region HTMLInputElement implementation
     public partial class HTMLInputElement : Org.W3c.Dom.Html.IHTMLInputElement
     {
         #region Constructors

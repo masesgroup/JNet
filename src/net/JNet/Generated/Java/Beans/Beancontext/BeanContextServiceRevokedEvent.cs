@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans.Beancontext
 {
-    #region BeanContextServiceRevokedEvent definition
+    #region BeanContextServiceRevokedEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Beans.Beancontext
     }
     #endregion
 
-    #region BeanContextServiceRevokedEvent
+    #region BeanContextServiceRevokedEvent implementation
     public partial class BeanContextServiceRevokedEvent
     {
         #region Constructors

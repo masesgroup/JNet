@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Table
 {
-    #region TableCellRenderer definition
+    #region TableCellRenderer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableCellRenderer.html"/>
     /// </summary>
@@ -101,7 +101,7 @@ namespace Javax.Swing.Table
     }
     #endregion
 
-    #region TableCellRenderer
+    #region TableCellRenderer implementation
     public partial class TableCellRenderer : Javax.Swing.Table.ITableCellRenderer
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region ForkJoinWorkerThread definition
+    #region ForkJoinWorkerThread declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinWorkerThread.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ForkJoinWorkerThread
+    #region ForkJoinWorkerThread implementation
     public partial class ForkJoinWorkerThread
     {
         #region Constructors

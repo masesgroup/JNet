@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig.Keyinfo
 {
-    #region RetrievalMethod definition
+    #region RetrievalMethod declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/RetrievalMethod.html"/>
     /// </summary>
@@ -105,7 +105,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
     }
     #endregion
 
-    #region RetrievalMethod
+    #region RetrievalMethod implementation
     public partial class RetrievalMethod : Javax.Xml.Crypto.Dsig.Keyinfo.IRetrievalMethod
     {
         #region Constructors

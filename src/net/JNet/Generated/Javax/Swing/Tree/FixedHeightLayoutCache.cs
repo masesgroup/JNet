@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Tree
 {
-    #region FixedHeightLayoutCache definition
+    #region FixedHeightLayoutCache declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/FixedHeightLayoutCache.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Tree
     }
     #endregion
 
-    #region FixedHeightLayoutCache
+    #region FixedHeightLayoutCache implementation
     public partial class FixedHeightLayoutCache
     {
         #region Constructors

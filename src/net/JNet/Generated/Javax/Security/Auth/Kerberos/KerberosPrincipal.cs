@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Security.Auth.Kerberos
 {
-    #region KerberosPrincipal definition
+    #region KerberosPrincipal declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosPrincipal.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Security.Auth.Kerberos
     }
     #endregion
 
-    #region KerberosPrincipal
+    #region KerberosPrincipal implementation
     public partial class KerberosPrincipal
     {
         #region Constructors

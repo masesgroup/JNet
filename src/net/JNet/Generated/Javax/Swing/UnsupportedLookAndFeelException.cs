@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region UnsupportedLookAndFeelException definition
+    #region UnsupportedLookAndFeelException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UnsupportedLookAndFeelException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region UnsupportedLookAndFeelException
+    #region UnsupportedLookAndFeelException implementation
     public partial class UnsupportedLookAndFeelException
     {
         #region Constructors

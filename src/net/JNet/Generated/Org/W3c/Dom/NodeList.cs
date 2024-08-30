@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom
 {
-    #region NodeList definition
+    #region NodeList declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/NodeList.html"/>
     /// </summary>
@@ -100,7 +100,7 @@ namespace Org.W3c.Dom
     }
     #endregion
 
-    #region NodeList
+    #region NodeList implementation
     public partial class NodeList : Org.W3c.Dom.INodeList
     {
         #region Constructors

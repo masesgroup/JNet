@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region ScheduledFuture definition
+    #region ScheduledFuture declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledFuture.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ScheduledFuture<V> definition
+    #region ScheduledFuture<V> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledFuture.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ScheduledFuture
+    #region ScheduledFuture implementation
     public partial class ScheduledFuture
     {
         #region Constructors
@@ -177,7 +177,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ScheduledFuture<V>
+    #region ScheduledFuture<V> implementation
     public partial class ScheduledFuture<V> : Java.Util.Concurrent.IScheduledFuture<V>
     {
         #region Constructors

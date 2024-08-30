@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region DoubleSummaryStatistics definition
+    #region DoubleSummaryStatistics declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/DoubleSummaryStatistics.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region DoubleSummaryStatistics
+    #region DoubleSummaryStatistics implementation
     public partial class DoubleSummaryStatistics
     {
         #region Constructors

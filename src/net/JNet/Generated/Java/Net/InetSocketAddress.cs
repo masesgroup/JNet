@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
-    #region InetSocketAddress definition
+    #region InetSocketAddress declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Net
     }
     #endregion
 
-    #region InetSocketAddress
+    #region InetSocketAddress implementation
     public partial class InetSocketAddress
     {
         #region Constructors

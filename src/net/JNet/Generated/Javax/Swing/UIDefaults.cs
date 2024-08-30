@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region UIDefaults definition
+    #region UIDefaults declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region ActiveValue definition
+        #region ActiveValue declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.ActiveValue.html"/>
         /// </summary>
@@ -113,7 +113,7 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region LazyInputMap definition
+        #region LazyInputMap declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.LazyInputMap.html"/>
         /// </summary>
@@ -158,7 +158,7 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region LazyValue definition
+        #region LazyValue declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.LazyValue.html"/>
         /// </summary>
@@ -205,7 +205,7 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region ProxyLazyValue definition
+        #region ProxyLazyValue declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.ProxyLazyValue.html"/>
         /// </summary>
@@ -254,7 +254,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region UIDefaults
+    #region UIDefaults implementation
     public partial class UIDefaults
     {
         #region Constructors
@@ -552,7 +552,7 @@ namespace Javax.Swing
         #endregion
 
         #region Nested classes
-        #region ActiveValue
+        #region ActiveValue implementation
         public partial class ActiveValue
         {
             #region Constructors
@@ -592,7 +592,7 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region LazyInputMap
+        #region LazyInputMap implementation
         public partial class LazyInputMap
         {
             #region Constructors
@@ -632,7 +632,7 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region LazyValue
+        #region LazyValue implementation
         public partial class LazyValue
         {
             #region Constructors
@@ -672,7 +672,7 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region ProxyLazyValue
+        #region ProxyLazyValue implementation
         public partial class ProxyLazyValue
         {
             #region Constructors

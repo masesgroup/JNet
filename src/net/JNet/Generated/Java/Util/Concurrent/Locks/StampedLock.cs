@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent.Locks
 {
-    #region StampedLock definition
+    #region StampedLock declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Concurrent.Locks
     }
     #endregion
 
-    #region StampedLock
+    #region StampedLock implementation
     public partial class StampedLock
     {
         #region Constructors

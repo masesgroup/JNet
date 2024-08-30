@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Openmbean
 {
-    #region InvalidKeyException definition
+    #region InvalidKeyException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/InvalidKeyException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Management.Openmbean
     }
     #endregion
 
-    #region InvalidKeyException
+    #region InvalidKeyException implementation
     public partial class InvalidKeyException
     {
         #region Constructors

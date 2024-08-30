@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Stream
 {
-    #region DoubleStream definition
+    #region DoubleStream declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html"/>
     /// </summary>
@@ -289,7 +289,7 @@ namespace Java.Util.Stream
     }
     #endregion
 
-    #region DoubleStream
+    #region DoubleStream implementation
     public partial class DoubleStream : Java.Util.Stream.IDoubleStream
     {
         #region Constructors

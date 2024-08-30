@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region MBeanConstructorInfo definition
+    #region MBeanConstructorInfo declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanConstructorInfo.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region MBeanConstructorInfo
+    #region MBeanConstructorInfo implementation
     public partial class MBeanConstructorInfo
     {
         #region Constructors

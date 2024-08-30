@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
-    #region PortUnreachableException definition
+    #region PortUnreachableException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/PortUnreachableException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Net
     }
     #endregion
 
-    #region PortUnreachableException
+    #region PortUnreachableException implementation
     public partial class PortUnreachableException
     {
         #region Constructors

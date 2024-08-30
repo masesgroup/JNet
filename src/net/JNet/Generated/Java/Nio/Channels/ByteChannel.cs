@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
-    #region ByteChannel definition
+    #region ByteChannel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ByteChannel.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region ByteChannel
+    #region ByteChannel implementation
     public partial class ByteChannel : Java.Nio.Channels.IByteChannel
     {
         #region Constructors

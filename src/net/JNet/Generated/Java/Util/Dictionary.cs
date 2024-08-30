@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region Dictionary definition
+    #region Dictionary declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Dictionary<K, V> definition
+    #region Dictionary<K, V> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html"/>
     /// </summary>
@@ -121,7 +121,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Dictionary
+    #region Dictionary implementation
     public partial class Dictionary
     {
         #region Constructors
@@ -212,7 +212,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Dictionary<K, V>
+    #region Dictionary<K, V> implementation
     public partial class Dictionary<K, V>
     {
         #region Constructors

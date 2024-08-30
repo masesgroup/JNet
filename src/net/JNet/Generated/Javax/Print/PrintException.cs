@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print
 {
-    #region PrintException definition
+    #region PrintException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Print
     }
     #endregion
 
-    #region PrintException
+    #region PrintException implementation
     public partial class PrintException
     {
         #region Constructors

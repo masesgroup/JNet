@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent.Atomic
 {
-    #region AtomicLong definition
+    #region AtomicLong declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Concurrent.Atomic
     }
     #endregion
 
-    #region AtomicLong
+    #region AtomicLong implementation
     public partial class AtomicLong
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
-    #region Parameter definition
+    #region Parameter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Parameter.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region Parameter
+    #region Parameter implementation
     public partial class Parameter
     {
         #region Constructors

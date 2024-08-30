@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Validation
 {
-    #region Validator definition
+    #region Validator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Validator.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Xml.Validation
     }
     #endregion
 
-    #region Validator
+    #region Validator implementation
     public partial class Validator
     {
         #region Constructors

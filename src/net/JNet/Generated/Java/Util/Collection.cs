@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region Collection definition
+    #region Collection declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Collection<E> definition
+    #region Collection<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Collection
+    #region Collection implementation
     public partial class Collection
     {
         #region Constructors
@@ -425,7 +425,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Collection<E>
+    #region Collection<E> implementation
     public partial class Collection<E> : Java.Util.ICollection<E>
     {
         #region Constructors

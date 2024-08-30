@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ImageNs
 {
-    #region RasterOp definition
+    #region RasterOp declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RasterOp.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Awt.ImageNs
     }
     #endregion
 
-    #region RasterOp
+    #region RasterOp implementation
     public partial class RasterOp : Java.Awt.ImageNs.IRasterOp
     {
         #region Constructors

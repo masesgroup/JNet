@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Smartcardio
 {
-    #region ATR definition
+    #region ATR declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/ATR.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Smartcardio
     }
     #endregion
 
-    #region ATR
+    #region ATR implementation
     public partial class ATR
     {
         #region Constructors

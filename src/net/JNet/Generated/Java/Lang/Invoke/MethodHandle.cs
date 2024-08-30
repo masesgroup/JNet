@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Invoke
 {
-    #region MethodHandle definition
+    #region MethodHandle declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Lang.Invoke
     }
     #endregion
 
-    #region MethodHandle
+    #region MethodHandle implementation
     public partial class MethodHandle
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Remote
 {
-    #region JMXAuthenticator definition
+    #region JMXAuthenticator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXAuthenticator.html"/>
     /// </summary>
@@ -96,7 +96,7 @@ namespace Javax.Management.Remote
     }
     #endregion
 
-    #region JMXAuthenticator
+    #region JMXAuthenticator implementation
     public partial class JMXAuthenticator : Javax.Management.Remote.IJMXAuthenticator
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ImageNs
 {
-    #region RGBImageFilter definition
+    #region RGBImageFilter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RGBImageFilter.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Awt.ImageNs
     }
     #endregion
 
-    #region RGBImageFilter
+    #region RGBImageFilter implementation
     public partial class RGBImageFilter
     {
         #region Constructors

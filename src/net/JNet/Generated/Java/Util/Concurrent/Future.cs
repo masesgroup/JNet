@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region Future definition
+    #region Future declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region Future<V> definition
+    #region Future<V> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region Future
+    #region Future implementation
     public partial class Future
     {
         #region Constructors
@@ -250,7 +250,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region Future<V>
+    #region Future<V> implementation
     public partial class Future<V> : Java.Util.Concurrent.IFuture<V>
     {
         #region Constructors

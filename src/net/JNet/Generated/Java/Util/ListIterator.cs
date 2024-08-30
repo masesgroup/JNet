@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region ListIterator definition
+    #region ListIterator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region ListIterator<E> definition
+    #region ListIterator<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region ListIterator
+    #region ListIterator implementation
     public partial class ListIterator
     {
         #region Constructors
@@ -284,7 +284,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region ListIterator<E>
+    #region ListIterator<E> implementation
     public partial class ListIterator<E> : Java.Util.IListIterator<E>
     {
         #region Constructors

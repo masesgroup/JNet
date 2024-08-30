@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Views
 {
-    #region DocumentView definition
+    #region DocumentView declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/views/DocumentView.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Org.W3c.Dom.Views
     }
     #endregion
 
-    #region DocumentView
+    #region DocumentView implementation
     public partial class DocumentView : Org.W3c.Dom.Views.IDocumentView
     {
         #region Constructors

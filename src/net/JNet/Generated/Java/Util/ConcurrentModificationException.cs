@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region ConcurrentModificationException definition
+    #region ConcurrentModificationException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ConcurrentModificationException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region ConcurrentModificationException
+    #region ConcurrentModificationException implementation
     public partial class ConcurrentModificationException
     {
         #region Constructors

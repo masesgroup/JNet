@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region DescriptorAccess definition
+    #region DescriptorAccess declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/DescriptorAccess.html"/>
     /// </summary>
@@ -95,7 +95,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region DescriptorAccess
+    #region DescriptorAccess implementation
     public partial class DescriptorAccess : Javax.Management.IDescriptorAccess
     {
         #region Constructors

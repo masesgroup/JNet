@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
-    #region ObjectInputValidation definition
+    #region ObjectInputValidation declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputValidation.html"/>
     /// </summary>
@@ -95,7 +95,7 @@ namespace Java.Io
     }
     #endregion
 
-    #region ObjectInputValidation
+    #region ObjectInputValidation implementation
     public partial class ObjectInputValidation : Java.Io.IObjectInputValidation
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Management
 {
-    #region CompilationMXBean definition
+    #region CompilationMXBean declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/CompilationMXBean.html"/>
     /// </summary>
@@ -103,7 +103,7 @@ namespace Java.Lang.Management
     }
     #endregion
 
-    #region CompilationMXBean
+    #region CompilationMXBean implementation
     public partial class CompilationMXBean : Java.Lang.Management.ICompilationMXBean
     {
         #region Constructors

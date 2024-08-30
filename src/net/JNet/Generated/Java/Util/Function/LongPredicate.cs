@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region LongPredicate definition
+    #region LongPredicate declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region LongPredicateDirect definition
+    #region LongPredicateDirect declaration
     /// <summary>
     /// Direct override of <see cref="LongPredicate"/> or its generic type if there is one
     /// </summary>
@@ -133,7 +133,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region LongPredicate
+    #region LongPredicate implementation
     public partial class LongPredicate : Java.Util.Function.ILongPredicate
     {
         #region Constructors
@@ -298,7 +298,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region LongPredicateDirect
+    #region LongPredicateDirect implementation
     public partial class LongPredicateDirect : Java.Util.Function.ILongPredicate
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Transform.Dom
 {
-    #region DOMLocator definition
+    #region DOMLocator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/dom/DOMLocator.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Javax.Xml.Transform.Dom
     }
     #endregion
 
-    #region DOMLocator
+    #region DOMLocator implementation
     public partial class DOMLocator : Javax.Xml.Transform.Dom.IDOMLocator
     {
         #region Constructors

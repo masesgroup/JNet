@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Charset.Spi
 {
-    #region CharsetProvider definition
+    #region CharsetProvider declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/spi/CharsetProvider.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Nio.Charset.Spi
     }
     #endregion
 
-    #region CharsetProvider
+    #region CharsetProvider implementation
     public partial class CharsetProvider
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.Xml.Sax.Helpers
 {
-    #region NamespaceSupport definition
+    #region NamespaceSupport declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Org.Xml.Sax.Helpers
     }
     #endregion
 
-    #region NamespaceSupport
+    #region NamespaceSupport implementation
     public partial class NamespaceSupport
     {
         #region Constructors

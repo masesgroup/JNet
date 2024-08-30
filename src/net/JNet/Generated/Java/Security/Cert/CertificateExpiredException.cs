@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Cert
 {
-    #region CertificateExpiredException definition
+    #region CertificateExpiredException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateExpiredException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region CertificateExpiredException
+    #region CertificateExpiredException implementation
     public partial class CertificateExpiredException
     {
         #region Constructors

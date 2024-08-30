@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region MXBean definition
+    #region MXBean declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MXBean.html"/>
     /// </summary>
@@ -95,7 +95,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region MXBean
+    #region MXBean implementation
     public partial class MXBean : Javax.Management.IMXBean
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Zip
 {
-    #region Inflater definition
+    #region Inflater declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Inflater.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Zip
     }
     #endregion
 
-    #region Inflater
+    #region Inflater implementation
     public partial class Inflater
     {
         #region Constructors

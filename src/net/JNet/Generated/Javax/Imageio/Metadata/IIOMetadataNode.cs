@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio.Metadata
 {
-    #region IIOMetadataNode definition
+    #region IIOMetadataNode declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Imageio.Metadata
     }
     #endregion
 
-    #region IIOMetadataNode
+    #region IIOMetadataNode implementation
     public partial class IIOMetadataNode
     {
         #region Constructors

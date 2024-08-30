@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream.Events
 {
-    #region ProcessingInstruction definition
+    #region ProcessingInstruction declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/ProcessingInstruction.html"/>
     /// </summary>
@@ -98,7 +98,7 @@ namespace Javax.Xml.Stream.Events
     }
     #endregion
 
-    #region ProcessingInstruction
+    #region ProcessingInstruction implementation
     public partial class ProcessingInstruction : Javax.Xml.Stream.Events.IProcessingInstruction
     {
         #region Constructors

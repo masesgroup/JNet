@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.ModuleNs
 {
-    #region ModuleDescriptor definition
+    #region ModuleDescriptor declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Lang.ModuleNs
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Builder definition
+        #region Builder declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Java.Lang.ModuleNs
         }
         #endregion
 
-        #region Exports definition
+        #region Exports declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.html"/>
         /// </summary>
@@ -152,7 +152,7 @@ namespace Java.Lang.ModuleNs
             public override bool IsBridgeStatic => true;
 
             // TODO: complete the class
-            #region Modifier definition
+            #region Modifier declaration
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.Modifier.html"/>
             /// </summary>
@@ -201,7 +201,7 @@ namespace Java.Lang.ModuleNs
         }
         #endregion
 
-        #region Modifier definition
+        #region Modifier declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html"/>
         /// </summary>
@@ -246,7 +246,7 @@ namespace Java.Lang.ModuleNs
         }
         #endregion
 
-        #region Opens definition
+        #region Opens declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.html"/>
         /// </summary>
@@ -287,7 +287,7 @@ namespace Java.Lang.ModuleNs
             public override bool IsBridgeStatic => true;
 
             // TODO: complete the class
-            #region Modifier definition
+            #region Modifier declaration
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.Modifier.html"/>
             /// </summary>
@@ -336,7 +336,7 @@ namespace Java.Lang.ModuleNs
         }
         #endregion
 
-        #region Provides definition
+        #region Provides declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Provides.html"/>
         /// </summary>
@@ -381,7 +381,7 @@ namespace Java.Lang.ModuleNs
         }
         #endregion
 
-        #region Requires definition
+        #region Requires declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.html"/>
         /// </summary>
@@ -422,7 +422,7 @@ namespace Java.Lang.ModuleNs
             public override bool IsBridgeStatic => true;
 
             // TODO: complete the class
-            #region Modifier definition
+            #region Modifier declaration
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.Modifier.html"/>
             /// </summary>
@@ -471,7 +471,7 @@ namespace Java.Lang.ModuleNs
         }
         #endregion
 
-        #region Version definition
+        #region Version declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Version.html"/>
         /// </summary>
@@ -520,7 +520,7 @@ namespace Java.Lang.ModuleNs
     }
     #endregion
 
-    #region ModuleDescriptor
+    #region ModuleDescriptor implementation
     public partial class ModuleDescriptor
     {
         #region Constructors
@@ -751,7 +751,7 @@ namespace Java.Lang.ModuleNs
         #endregion
 
         #region Nested classes
-        #region Builder
+        #region Builder implementation
         public partial class Builder
         {
             #region Constructors
@@ -991,7 +991,7 @@ namespace Java.Lang.ModuleNs
         }
         #endregion
 
-        #region Exports
+        #region Exports implementation
         public partial class Exports
         {
             #region Constructors
@@ -1065,7 +1065,7 @@ namespace Java.Lang.ModuleNs
             #endregion
 
             #region Nested classes
-            #region Modifier
+            #region Modifier implementation
             public partial class Modifier
             {
                 #region Constructors
@@ -1132,7 +1132,7 @@ namespace Java.Lang.ModuleNs
         }
         #endregion
 
-        #region Modifier
+        #region Modifier implementation
         public partial class Modifier
         {
             #region Constructors
@@ -1204,7 +1204,7 @@ namespace Java.Lang.ModuleNs
         }
         #endregion
 
-        #region Opens
+        #region Opens implementation
         public partial class Opens
         {
             #region Constructors
@@ -1278,7 +1278,7 @@ namespace Java.Lang.ModuleNs
             #endregion
 
             #region Nested classes
-            #region Modifier
+            #region Modifier implementation
             public partial class Modifier
             {
                 #region Constructors
@@ -1345,7 +1345,7 @@ namespace Java.Lang.ModuleNs
         }
         #endregion
 
-        #region Provides
+        #region Provides implementation
         public partial class Provides
         {
             #region Constructors
@@ -1410,7 +1410,7 @@ namespace Java.Lang.ModuleNs
         }
         #endregion
 
-        #region Requires
+        #region Requires implementation
         public partial class Requires
         {
             #region Constructors
@@ -1484,7 +1484,7 @@ namespace Java.Lang.ModuleNs
             #endregion
 
             #region Nested classes
-            #region Modifier
+            #region Modifier implementation
             public partial class Modifier
             {
                 #region Constructors
@@ -1563,7 +1563,7 @@ namespace Java.Lang.ModuleNs
         }
         #endregion
 
-        #region Version
+        #region Version implementation
         public partial class Version
         {
             #region Constructors

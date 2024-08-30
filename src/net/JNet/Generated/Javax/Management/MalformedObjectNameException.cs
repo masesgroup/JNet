@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region MalformedObjectNameException definition
+    #region MalformedObjectNameException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MalformedObjectNameException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region MalformedObjectNameException
+    #region MalformedObjectNameException implementation
     public partial class MalformedObjectNameException
     {
         #region Constructors

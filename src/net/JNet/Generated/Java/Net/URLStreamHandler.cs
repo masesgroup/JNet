@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
-    #region URLStreamHandler definition
+    #region URLStreamHandler declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLStreamHandler.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Net
     }
     #endregion
 
-    #region URLStreamHandler
+    #region URLStreamHandler implementation
     public partial class URLStreamHandler
     {
         #region Constructors

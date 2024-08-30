@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio.Event
 {
-    #region IIOReadUpdateListener definition
+    #region IIOReadUpdateListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadUpdateListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Imageio.Event
     }
     #endregion
 
-    #region IIOReadUpdateListenerDirect definition
+    #region IIOReadUpdateListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="IIOReadUpdateListener"/> or its generic type if there is one
     /// </summary>
@@ -176,7 +176,7 @@ namespace Javax.Imageio.Event
     }
     #endregion
 
-    #region IIOReadUpdateListener
+    #region IIOReadUpdateListener implementation
     public partial class IIOReadUpdateListener : Javax.Imageio.Event.IIIOReadUpdateListener
     {
         #region Constructors
@@ -382,7 +382,7 @@ namespace Javax.Imageio.Event
     }
     #endregion
 
-    #region IIOReadUpdateListenerDirect
+    #region IIOReadUpdateListenerDirect implementation
     public partial class IIOReadUpdateListenerDirect : Javax.Imageio.Event.IIIOReadUpdateListener
     {
         #region Constructors

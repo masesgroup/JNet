@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region Time definition
+    #region Time declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Time.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region Time
+    #region Time implementation
     public partial class Time
     {
         #region Constructors

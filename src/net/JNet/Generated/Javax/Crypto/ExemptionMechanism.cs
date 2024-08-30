@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Crypto
 {
-    #region ExemptionMechanism definition
+    #region ExemptionMechanism declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/ExemptionMechanism.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Crypto
     }
     #endregion
 
-    #region ExemptionMechanism
+    #region ExemptionMechanism implementation
     public partial class ExemptionMechanism
     {
         #region Constructors

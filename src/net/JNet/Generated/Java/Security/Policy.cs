@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region Policy definition
+    #region Policy declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Java.Security
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Parameters definition
+        #region Parameters declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.Parameters.html"/>
         /// </summary>
@@ -119,7 +119,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region Policy
+    #region Policy implementation
     public partial class Policy
     {
         #region Constructors
@@ -256,7 +256,7 @@ namespace Java.Security
         #endregion
 
         #region Nested classes
-        #region Parameters
+        #region Parameters implementation
         public partial class Parameters
         {
             #region Constructors

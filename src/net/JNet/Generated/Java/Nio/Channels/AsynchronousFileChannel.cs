@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
-    #region AsynchronousFileChannel definition
+    #region AsynchronousFileChannel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region AsynchronousFileChannel
+    #region AsynchronousFileChannel implementation
     public partial class AsynchronousFileChannel
     {
         #region Constructors

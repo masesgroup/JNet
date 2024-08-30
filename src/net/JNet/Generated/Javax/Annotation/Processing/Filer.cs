@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Annotation.Processing
 {
-    #region Filer definition
+    #region Filer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Filer.html"/>
     /// </summary>
@@ -125,7 +125,7 @@ namespace Javax.Annotation.Processing
     }
     #endregion
 
-    #region Filer
+    #region Filer implementation
     public partial class Filer : Javax.Annotation.Processing.IFiler
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region EmptyStackException definition
+    #region EmptyStackException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EmptyStackException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region EmptyStackException
+    #region EmptyStackException implementation
     public partial class EmptyStackException
     {
         #region Constructors

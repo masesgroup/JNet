@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig.Dom
 {
-    #region DOMValidateContext definition
+    #region DOMValidateContext declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/dom/DOMValidateContext.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Xml.Crypto.Dsig.Dom
     }
     #endregion
 
-    #region DOMValidateContext
+    #region DOMValidateContext implementation
     public partial class DOMValidateContext
     {
         #region Constructors

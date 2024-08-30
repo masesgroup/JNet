@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.FontNs
 {
-    #region TextLayout definition
+    #region TextLayout declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Awt.FontNs
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region CaretPolicy definition
+        #region CaretPolicy declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.CaretPolicy.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Awt.FontNs
     }
     #endregion
 
-    #region TextLayout
+    #region TextLayout implementation
     public partial class TextLayout
     {
         #region Constructors
@@ -533,7 +533,7 @@ namespace Java.Awt.FontNs
         #endregion
 
         #region Nested classes
-        #region CaretPolicy
+        #region CaretPolicy implementation
         public partial class CaretPolicy
         {
             #region Constructors

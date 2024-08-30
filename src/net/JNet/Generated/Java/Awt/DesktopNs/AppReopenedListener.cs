@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.DesktopNs
 {
-    #region AppReopenedListener definition
+    #region AppReopenedListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppReopenedListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Awt.DesktopNs
     }
     #endregion
 
-    #region AppReopenedListenerDirect definition
+    #region AppReopenedListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="AppReopenedListener"/> or its generic type if there is one
     /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Awt.DesktopNs
     }
     #endregion
 
-    #region AppReopenedListener
+    #region AppReopenedListener implementation
     public partial class AppReopenedListener : Java.Awt.DesktopNs.IAppReopenedListener
     {
         #region Constructors
@@ -175,7 +175,7 @@ namespace Java.Awt.DesktopNs
     }
     #endregion
 
-    #region AppReopenedListenerDirect
+    #region AppReopenedListenerDirect implementation
     public partial class AppReopenedListenerDirect : Java.Awt.DesktopNs.IAppReopenedListener
     {
         #region Constructors

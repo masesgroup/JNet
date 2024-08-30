@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region NoSuchMethodException definition
+    #region NoSuchMethodException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/NoSuchMethodException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region NoSuchMethodException
+    #region NoSuchMethodException implementation
     public partial class NoSuchMethodException
     {
         #region Constructors

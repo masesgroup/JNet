@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Script
 {
-    #region Invocable definition
+    #region Invocable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html"/>
     /// </summary>
@@ -124,7 +124,7 @@ namespace Javax.Script
     }
     #endregion
 
-    #region Invocable
+    #region Invocable implementation
     public partial class Invocable : Javax.Script.IInvocable
     {
         #region Constructors

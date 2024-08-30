@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Zip
 {
-    #region Checksum definition
+    #region Checksum declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Checksum.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util.Zip
     }
     #endregion
 
-    #region Checksum
+    #region Checksum implementation
     public partial class Checksum : Java.Util.Zip.IChecksum
     {
         #region Constructors

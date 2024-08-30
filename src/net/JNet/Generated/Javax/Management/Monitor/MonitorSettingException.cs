@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Monitor
 {
-    #region MonitorSettingException definition
+    #region MonitorSettingException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorSettingException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Management.Monitor
     }
     #endregion
 
-    #region MonitorSettingException
+    #region MonitorSettingException implementation
     public partial class MonitorSettingException
     {
         #region Constructors

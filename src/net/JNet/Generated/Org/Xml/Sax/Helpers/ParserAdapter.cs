@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.Xml.Sax.Helpers
 {
-    #region ParserAdapter definition
+    #region ParserAdapter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Org.Xml.Sax.Helpers
     }
     #endregion
 
-    #region ParserAdapterDirect definition
+    #region ParserAdapterDirect declaration
     /// <summary>
     /// Direct override of <see cref="ParserAdapter"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Org.Xml.Sax.Helpers
     }
     #endregion
 
-    #region ParserAdapter
+    #region ParserAdapter implementation
     public partial class ParserAdapter
     {
         #region Constructors
@@ -623,7 +623,7 @@ namespace Org.Xml.Sax.Helpers
     }
     #endregion
 
-    #region ParserAdapterDirect
+    #region ParserAdapterDirect implementation
     public partial class ParserAdapterDirect
     {
         #region Constructors

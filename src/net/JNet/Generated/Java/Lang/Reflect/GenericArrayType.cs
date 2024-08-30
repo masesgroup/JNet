@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
-    #region GenericArrayType definition
+    #region GenericArrayType declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/GenericArrayType.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region GenericArrayType
+    #region GenericArrayType implementation
     public partial class GenericArrayType : Java.Lang.Reflect.IGenericArrayType
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region LinkedBlockingDeque definition
+    #region LinkedBlockingDeque declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region LinkedBlockingDeque<E> definition
+    #region LinkedBlockingDeque<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region LinkedBlockingDeque
+    #region LinkedBlockingDeque implementation
     public partial class LinkedBlockingDeque
     {
         #region Constructors
@@ -459,7 +459,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region LinkedBlockingDeque<E>
+    #region LinkedBlockingDeque<E> implementation
     public partial class LinkedBlockingDeque<E>
     {
         #region Constructors

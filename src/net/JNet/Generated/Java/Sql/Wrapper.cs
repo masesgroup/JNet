@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region Wrapper definition
+    #region Wrapper declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Wrapper.html"/>
     /// </summary>
@@ -105,7 +105,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region Wrapper
+    #region Wrapper implementation
     public partial class Wrapper : Java.Sql.IWrapper
     {
         #region Constructors

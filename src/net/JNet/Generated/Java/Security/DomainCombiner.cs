@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region DomainCombiner definition
+    #region DomainCombiner declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DomainCombiner.html"/>
     /// </summary>
@@ -97,7 +97,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region DomainCombiner
+    #region DomainCombiner implementation
     public partial class DomainCombiner : Java.Security.IDomainCombiner
     {
         #region Constructors

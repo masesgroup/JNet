@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region UnrecoverableEntryException definition
+    #region UnrecoverableEntryException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/UnrecoverableEntryException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region UnrecoverableEntryException
+    #region UnrecoverableEntryException implementation
     public partial class UnrecoverableEntryException
     {
         #region Constructors

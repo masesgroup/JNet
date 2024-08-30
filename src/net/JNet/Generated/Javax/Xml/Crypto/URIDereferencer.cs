@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto
 {
-    #region URIDereferencer definition
+    #region URIDereferencer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/URIDereferencer.html"/>
     /// </summary>
@@ -98,7 +98,7 @@ namespace Javax.Xml.Crypto
     }
     #endregion
 
-    #region URIDereferencer
+    #region URIDereferencer implementation
     public partial class URIDereferencer : Javax.Xml.Crypto.IURIDereferencer
     {
         #region Constructors

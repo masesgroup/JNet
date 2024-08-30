@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region IntToDoubleFunction definition
+    #region IntToDoubleFunction declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntToDoubleFunction.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IntToDoubleFunctionDirect definition
+    #region IntToDoubleFunctionDirect declaration
     /// <summary>
     /// Direct override of <see cref="IntToDoubleFunction"/> or its generic type if there is one
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IntToDoubleFunction
+    #region IntToDoubleFunction implementation
     public partial class IntToDoubleFunction : Java.Util.Function.IIntToDoubleFunction
     {
         #region Constructors
@@ -178,7 +178,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IntToDoubleFunctionDirect
+    #region IntToDoubleFunctionDirect implementation
     public partial class IntToDoubleFunctionDirect : Java.Util.Function.IIntToDoubleFunction
     {
         #region Constructors

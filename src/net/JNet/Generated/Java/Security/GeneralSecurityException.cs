@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region GeneralSecurityException definition
+    #region GeneralSecurityException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/GeneralSecurityException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region GeneralSecurityException
+    #region GeneralSecurityException implementation
     public partial class GeneralSecurityException
     {
         #region Constructors

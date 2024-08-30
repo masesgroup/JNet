@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Invoke
 {
-    #region MutableCallSite definition
+    #region MutableCallSite declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MutableCallSite.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Lang.Invoke
     }
     #endregion
 
-    #region MutableCallSite
+    #region MutableCallSite implementation
     public partial class MutableCallSite
     {
         #region Constructors

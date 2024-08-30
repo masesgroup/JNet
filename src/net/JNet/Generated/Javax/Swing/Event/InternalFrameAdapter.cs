@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
-    #region InternalFrameAdapter definition
+    #region InternalFrameAdapter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameAdapter.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region InternalFrameAdapterDirect definition
+    #region InternalFrameAdapterDirect declaration
     /// <summary>
     /// Direct override of <see cref="InternalFrameAdapter"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region InternalFrameAdapter
+    #region InternalFrameAdapter implementation
     public partial class InternalFrameAdapter
     {
         #region Constructors
@@ -284,7 +284,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region InternalFrameAdapterDirect
+    #region InternalFrameAdapterDirect implementation
     public partial class InternalFrameAdapterDirect
     {
         #region Constructors

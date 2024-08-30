@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Tree
 {
-    #region DefaultMutableTreeNode definition
+    #region DefaultMutableTreeNode declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Tree
     }
     #endregion
 
-    #region DefaultMutableTreeNode
+    #region DefaultMutableTreeNode implementation
     public partial class DefaultMutableTreeNode
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Im.Spi
 {
-    #region InputMethod definition
+    #region InputMethod declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html"/>
     /// </summary>
@@ -163,7 +163,7 @@ namespace Java.Awt.Im.Spi
     }
     #endregion
 
-    #region InputMethod
+    #region InputMethod implementation
     public partial class InputMethod : Java.Awt.Im.Spi.IInputMethod
     {
         #region Constructors

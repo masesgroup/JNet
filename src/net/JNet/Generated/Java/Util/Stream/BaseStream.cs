@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Stream
 {
-    #region BaseStream definition
+    #region BaseStream declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util.Stream
     }
     #endregion
 
-    #region BaseStream<T, S> definition
+    #region BaseStream<T, S> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html"/>
     /// </summary>
@@ -121,7 +121,7 @@ namespace Java.Util.Stream
     }
     #endregion
 
-    #region BaseStream
+    #region BaseStream implementation
     public partial class BaseStream
     {
         #region Constructors
@@ -274,7 +274,7 @@ namespace Java.Util.Stream
     }
     #endregion
 
-    #region BaseStream<T, S>
+    #region BaseStream<T, S> implementation
     public partial class BaseStream<T, S> : Java.Util.Stream.IBaseStream<T, S>
     {
         #region Constructors

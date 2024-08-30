@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Annotation
 {
-    #region ElementType definition
+    #region ElementType declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Lang.Annotation
     }
     #endregion
 
-    #region ElementType
+    #region ElementType implementation
     public partial class ElementType
     {
         #region Constructors

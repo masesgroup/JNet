@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Event
 {
-    #region PrintJobListener definition
+    #region PrintJobListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Print.Event
     }
     #endregion
 
-    #region PrintJobListenerDirect definition
+    #region PrintJobListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="PrintJobListener"/> or its generic type if there is one
     /// </summary>
@@ -140,7 +140,7 @@ namespace Javax.Print.Event
     }
     #endregion
 
-    #region PrintJobListener
+    #region PrintJobListener implementation
     public partial class PrintJobListener : Javax.Print.Event.IPrintJobListener
     {
         #region Constructors
@@ -310,7 +310,7 @@ namespace Javax.Print.Event
     }
     #endregion
 
-    #region PrintJobListenerDirect
+    #region PrintJobListenerDirect implementation
     public partial class PrintJobListenerDirect : Javax.Print.Event.IPrintJobListener
     {
         #region Constructors

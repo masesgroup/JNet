@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
-    #region FileChannel definition
+    #region FileChannel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Java.Nio.Channels
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region MapMode definition
+        #region MapMode declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.MapMode.html"/>
         /// </summary>
@@ -117,7 +117,7 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region FileChannel
+    #region FileChannel implementation
     public partial class FileChannel
     {
         #region Constructors
@@ -388,7 +388,7 @@ namespace Java.Nio.Channels
         #endregion
 
         #region Nested classes
-        #region MapMode
+        #region MapMode implementation
         public partial class MapMode
         {
             #region Constructors

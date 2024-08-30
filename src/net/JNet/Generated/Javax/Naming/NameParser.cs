@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming
 {
-    #region NameParser definition
+    #region NameParser declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameParser.html"/>
     /// </summary>
@@ -97,7 +97,7 @@ namespace Javax.Naming
     }
     #endregion
 
-    #region NameParser
+    #region NameParser implementation
     public partial class NameParser : Javax.Naming.INameParser
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
-    #region ClosedByInterruptException definition
+    #region ClosedByInterruptException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ClosedByInterruptException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region ClosedByInterruptException
+    #region ClosedByInterruptException implementation
     public partial class ClosedByInterruptException
     {
         #region Constructors

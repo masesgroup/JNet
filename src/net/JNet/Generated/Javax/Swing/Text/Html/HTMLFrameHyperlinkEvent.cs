@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text.Html
 {
-    #region HTMLFrameHyperlinkEvent definition
+    #region HTMLFrameHyperlinkEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLFrameHyperlinkEvent.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Text.Html
     }
     #endregion
 
-    #region HTMLFrameHyperlinkEvent
+    #region HTMLFrameHyperlinkEvent implementation
     public partial class HTMLFrameHyperlinkEvent
     {
         #region Constructors

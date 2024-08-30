@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream.Events
 {
-    #region StartDocument definition
+    #region StartDocument declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html"/>
     /// </summary>
@@ -117,7 +117,7 @@ namespace Javax.Xml.Stream.Events
     }
     #endregion
 
-    #region StartDocument
+    #region StartDocument implementation
     public partial class StartDocument : Javax.Xml.Stream.Events.IStartDocument
     {
         #region Constructors

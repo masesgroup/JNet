@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
-    #region InterfaceAddress definition
+    #region InterfaceAddress declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InterfaceAddress.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Net
     }
     #endregion
 
-    #region InterfaceAddress
+    #region InterfaceAddress implementation
     public partial class InterfaceAddress
     {
         #region Constructors

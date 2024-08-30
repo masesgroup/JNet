@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql
 {
-    #region ConnectionEventListener definition
+    #region ConnectionEventListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEventListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Sql
     }
     #endregion
 
-    #region ConnectionEventListenerDirect definition
+    #region ConnectionEventListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="ConnectionEventListener"/> or its generic type if there is one
     /// </summary>
@@ -120,7 +120,7 @@ namespace Javax.Sql
     }
     #endregion
 
-    #region ConnectionEventListener
+    #region ConnectionEventListener implementation
     public partial class ConnectionEventListener : Javax.Sql.IConnectionEventListener
     {
         #region Constructors
@@ -202,7 +202,7 @@ namespace Javax.Sql
     }
     #endregion
 
-    #region ConnectionEventListenerDirect
+    #region ConnectionEventListenerDirect implementation
     public partial class ConnectionEventListenerDirect : Javax.Sql.IConnectionEventListener
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Cert
 {
-    #region CertificateNotYetValidException definition
+    #region CertificateNotYetValidException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateNotYetValidException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region CertificateNotYetValidException
+    #region CertificateNotYetValidException implementation
     public partial class CertificateNotYetValidException
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region ScheduledExecutorService definition
+    #region ScheduledExecutorService declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledExecutorService.html"/>
     /// </summary>
@@ -125,7 +125,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ScheduledExecutorService
+    #region ScheduledExecutorService implementation
     public partial class ScheduledExecutorService : Java.Util.Concurrent.IScheduledExecutorService
     {
         #region Constructors

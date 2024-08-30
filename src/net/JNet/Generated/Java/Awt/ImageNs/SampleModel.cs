@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ImageNs
 {
-    #region SampleModel definition
+    #region SampleModel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Awt.ImageNs
     }
     #endregion
 
-    #region SampleModel
+    #region SampleModel implementation
     public partial class SampleModel
     {
         #region Constructors

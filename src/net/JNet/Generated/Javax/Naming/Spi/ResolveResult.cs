@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Spi
 {
-    #region ResolveResult definition
+    #region ResolveResult declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ResolveResult.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Naming.Spi
     }
     #endregion
 
-    #region ResolveResult
+    #region ResolveResult implementation
     public partial class ResolveResult
     {
         #region Constructors

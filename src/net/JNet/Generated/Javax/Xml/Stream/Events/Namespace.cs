@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream.Events
 {
-    #region Namespace definition
+    #region Namespace declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Namespace.html"/>
     /// </summary>
@@ -103,7 +103,7 @@ namespace Javax.Xml.Stream.Events
     }
     #endregion
 
-    #region Namespace
+    #region Namespace implementation
     public partial class Namespace : Javax.Xml.Stream.Events.INamespace
     {
         #region Constructors

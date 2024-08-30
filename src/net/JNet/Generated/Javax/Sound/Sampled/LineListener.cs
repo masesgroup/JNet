@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Sampled
 {
-    #region LineListener definition
+    #region LineListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Sound.Sampled
     }
     #endregion
 
-    #region LineListenerDirect definition
+    #region LineListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="LineListener"/> or its generic type if there is one
     /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Sound.Sampled
     }
     #endregion
 
-    #region LineListener
+    #region LineListener implementation
     public partial class LineListener : Javax.Sound.Sampled.ILineListener
     {
         #region Constructors
@@ -175,7 +175,7 @@ namespace Javax.Sound.Sampled
     }
     #endregion
 
-    #region LineListenerDirect
+    #region LineListenerDirect implementation
     public partial class LineListenerDirect : Javax.Sound.Sampled.ILineListener
     {
         #region Constructors

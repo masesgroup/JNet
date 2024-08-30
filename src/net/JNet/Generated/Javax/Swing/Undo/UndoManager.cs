@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Undo
 {
-    #region UndoManager definition
+    #region UndoManager declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Undo
     }
     #endregion
 
-    #region UndoManager
+    #region UndoManager implementation
     public partial class UndoManager
     {
         #region Constructors

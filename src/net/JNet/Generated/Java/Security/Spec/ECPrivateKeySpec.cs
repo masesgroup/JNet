@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Spec
 {
-    #region ECPrivateKeySpec definition
+    #region ECPrivateKeySpec declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECPrivateKeySpec.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Security.Spec
     }
     #endregion
 
-    #region ECPrivateKeySpec
+    #region ECPrivateKeySpec implementation
     public partial class ECPrivateKeySpec
     {
         #region Constructors

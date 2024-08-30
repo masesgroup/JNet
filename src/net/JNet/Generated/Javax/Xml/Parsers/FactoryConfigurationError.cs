@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Parsers
 {
-    #region FactoryConfigurationError definition
+    #region FactoryConfigurationError declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/FactoryConfigurationError.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Xml.Parsers
     }
     #endregion
 
-    #region FactoryConfigurationError
+    #region FactoryConfigurationError implementation
     public partial class FactoryConfigurationError
     {
         #region Constructors

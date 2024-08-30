@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region RenderingHints definition
+    #region RenderingHints declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Awt
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Key definition
+        #region Key declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.Key.html"/>
         /// </summary>
@@ -117,7 +117,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region RenderingHints
+    #region RenderingHints implementation
     public partial class RenderingHints
     {
         #region Constructors
@@ -557,7 +557,7 @@ namespace Java.Awt
         #endregion
 
         #region Nested classes
-        #region Key
+        #region Key implementation
         public partial class Key
         {
             #region Constructors

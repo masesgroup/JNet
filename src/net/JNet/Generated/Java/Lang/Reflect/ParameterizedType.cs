@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
-    #region ParameterizedType definition
+    #region ParameterizedType declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/ParameterizedType.html"/>
     /// </summary>
@@ -102,7 +102,7 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region ParameterizedType
+    #region ParameterizedType implementation
     public partial class ParameterizedType : Java.Lang.Reflect.IParameterizedType
     {
         #region Constructors

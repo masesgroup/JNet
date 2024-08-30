@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Directory
 {
-    #region DirContext definition
+    #region DirContext declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/DirContext.html"/>
     /// </summary>
@@ -298,7 +298,7 @@ namespace Javax.Naming.Directory
     }
     #endregion
 
-    #region DirContext
+    #region DirContext implementation
     public partial class DirContext : Javax.Naming.Directory.IDirContext
     {
         #region Constructors

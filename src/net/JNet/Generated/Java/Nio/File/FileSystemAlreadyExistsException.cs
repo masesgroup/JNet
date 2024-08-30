@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File
 {
-    #region FileSystemAlreadyExistsException definition
+    #region FileSystemAlreadyExistsException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystemAlreadyExistsException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region FileSystemAlreadyExistsException
+    #region FileSystemAlreadyExistsException implementation
     public partial class FileSystemAlreadyExistsException
     {
         #region Constructors

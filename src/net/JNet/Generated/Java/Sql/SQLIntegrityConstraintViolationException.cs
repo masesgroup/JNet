@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region SQLIntegrityConstraintViolationException definition
+    #region SQLIntegrityConstraintViolationException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLIntegrityConstraintViolationException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region SQLIntegrityConstraintViolationException
+    #region SQLIntegrityConstraintViolationException implementation
     public partial class SQLIntegrityConstraintViolationException
     {
         #region Constructors

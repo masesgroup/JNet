@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Prefs
 {
-    #region NodeChangeListener definition
+    #region NodeChangeListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Prefs
     }
     #endregion
 
-    #region NodeChangeListenerDirect definition
+    #region NodeChangeListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="NodeChangeListener"/> or its generic type if there is one
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util.Prefs
     }
     #endregion
 
-    #region NodeChangeListener
+    #region NodeChangeListener implementation
     public partial class NodeChangeListener : Java.Util.Prefs.INodeChangeListener
     {
         #region Constructors
@@ -202,7 +202,7 @@ namespace Java.Util.Prefs
     }
     #endregion
 
-    #region NodeChangeListenerDirect
+    #region NodeChangeListenerDirect implementation
     public partial class NodeChangeListenerDirect : Java.Util.Prefs.INodeChangeListener
     {
         #region Constructors

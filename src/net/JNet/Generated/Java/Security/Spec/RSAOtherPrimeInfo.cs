@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Spec
 {
-    #region RSAOtherPrimeInfo definition
+    #region RSAOtherPrimeInfo declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAOtherPrimeInfo.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Security.Spec
     }
     #endregion
 
-    #region RSAOtherPrimeInfo
+    #region RSAOtherPrimeInfo implementation
     public partial class RSAOtherPrimeInfo
     {
         #region Constructors

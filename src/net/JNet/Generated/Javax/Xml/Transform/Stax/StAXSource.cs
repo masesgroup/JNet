@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Transform.Stax
 {
-    #region StAXSource definition
+    #region StAXSource declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXSource.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Xml.Transform.Stax
     }
     #endregion
 
-    #region StAXSource
+    #region StAXSource implementation
     public partial class StAXSource
     {
         #region Constructors

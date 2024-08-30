@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Metal
 {
-    #region MetalComboBoxUI definition
+    #region MetalComboBoxUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Plaf.Metal
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region MetalComboBoxLayoutManager definition
+        #region MetalComboBoxLayoutManager declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.MetalComboBoxLayoutManager.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Swing.Plaf.Metal
     }
     #endregion
 
-    #region MetalComboBoxUI
+    #region MetalComboBoxUI implementation
     public partial class MetalComboBoxUI
     {
         #region Constructors
@@ -178,7 +178,7 @@ namespace Javax.Swing.Plaf.Metal
         #endregion
 
         #region Nested classes
-        #region MetalComboBoxLayoutManager
+        #region MetalComboBoxLayoutManager implementation
         public partial class MetalComboBoxLayoutManager
         {
             #region Constructors

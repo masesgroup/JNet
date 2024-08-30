@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql.Rowset
 {
-    #region WebRowSet definition
+    #region WebRowSet declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html"/>
     /// </summary>
@@ -131,7 +131,7 @@ namespace Javax.Sql.Rowset
     }
     #endregion
 
-    #region WebRowSet
+    #region WebRowSet implementation
     public partial class WebRowSet : Javax.Sql.Rowset.IWebRowSet
     {
         #region Constructors

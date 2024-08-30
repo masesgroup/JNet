@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
-    #region FocusListener definition
+    #region FocusListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region FocusListenerDirect definition
+    #region FocusListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="FocusListener"/> or its generic type if there is one
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region FocusListener
+    #region FocusListener implementation
     public partial class FocusListener : Java.Awt.EventNs.IFocusListener
     {
         #region Constructors
@@ -202,7 +202,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region FocusListenerDirect
+    #region FocusListenerDirect implementation
     public partial class FocusListenerDirect : Java.Awt.EventNs.IFocusListener
     {
         #region Constructors

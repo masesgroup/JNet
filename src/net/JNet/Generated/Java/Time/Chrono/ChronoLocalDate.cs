@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time.Chrono
 {
-    #region ChronoLocalDate definition
+    #region ChronoLocalDate declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html"/>
     /// </summary>
@@ -237,7 +237,7 @@ namespace Java.Time.Chrono
     }
     #endregion
 
-    #region ChronoLocalDate
+    #region ChronoLocalDate implementation
     public partial class ChronoLocalDate : Java.Time.Chrono.IChronoLocalDate
     {
         #region Constructors

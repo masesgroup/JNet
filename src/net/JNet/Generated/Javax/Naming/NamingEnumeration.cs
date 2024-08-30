@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming
 {
-    #region NamingEnumeration definition
+    #region NamingEnumeration declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Naming
     }
     #endregion
 
-    #region NamingEnumeration<T> definition
+    #region NamingEnumeration<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Javax.Naming
     }
     #endregion
 
-    #region NamingEnumeration
+    #region NamingEnumeration implementation
     public partial class NamingEnumeration
     {
         #region Constructors
@@ -212,7 +212,7 @@ namespace Javax.Naming
     }
     #endregion
 
-    #region NamingEnumeration<T>
+    #region NamingEnumeration<T> implementation
     public partial class NamingEnumeration<T> : Javax.Naming.INamingEnumeration<T>
     {
         #region Constructors

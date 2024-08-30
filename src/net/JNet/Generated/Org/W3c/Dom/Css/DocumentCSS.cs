@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Css
 {
-    #region DocumentCSS definition
+    #region DocumentCSS declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/DocumentCSS.html"/>
     /// </summary>
@@ -97,7 +97,7 @@ namespace Org.W3c.Dom.Css
     }
     #endregion
 
-    #region DocumentCSS
+    #region DocumentCSS implementation
     public partial class DocumentCSS : Org.W3c.Dom.Css.IDocumentCSS
     {
         #region Constructors

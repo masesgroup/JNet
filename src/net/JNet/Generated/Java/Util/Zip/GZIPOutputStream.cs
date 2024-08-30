@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Zip
 {
-    #region GZIPOutputStream definition
+    #region GZIPOutputStream declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/GZIPOutputStream.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Zip
     }
     #endregion
 
-    #region GZIPOutputStream
+    #region GZIPOutputStream implementation
     public partial class GZIPOutputStream
     {
         #region Constructors

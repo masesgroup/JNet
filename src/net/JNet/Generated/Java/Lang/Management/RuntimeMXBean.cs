@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Management
 {
-    #region RuntimeMXBean definition
+    #region RuntimeMXBean declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html"/>
     /// </summary>
@@ -159,7 +159,7 @@ namespace Java.Lang.Management
     }
     #endregion
 
-    #region RuntimeMXBean
+    #region RuntimeMXBean implementation
     public partial class RuntimeMXBean : Java.Lang.Management.IRuntimeMXBean
     {
         #region Constructors

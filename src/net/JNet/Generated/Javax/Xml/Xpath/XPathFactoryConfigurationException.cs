@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Xpath
 {
-    #region XPathFactoryConfigurationException definition
+    #region XPathFactoryConfigurationException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactoryConfigurationException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Xml.Xpath
     }
     #endregion
 
-    #region XPathFactoryConfigurationException
+    #region XPathFactoryConfigurationException implementation
     public partial class XPathFactoryConfigurationException
     {
         #region Constructors

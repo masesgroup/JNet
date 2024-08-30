@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf
 {
-    #region ComponentInputMapUIResource definition
+    #region ComponentInputMapUIResource declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComponentInputMapUIResource.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf
     }
     #endregion
 
-    #region ComponentInputMapUIResource
+    #region ComponentInputMapUIResource implementation
     public partial class ComponentInputMapUIResource
     {
         #region Constructors

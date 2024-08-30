@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region SecondaryLoop definition
+    #region SecondaryLoop declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SecondaryLoop.html"/>
     /// </summary>
@@ -100,7 +100,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region SecondaryLoop
+    #region SecondaryLoop implementation
     public partial class SecondaryLoop : Java.Awt.ISecondaryLoop
     {
         #region Constructors

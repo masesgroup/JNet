@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Charset
 {
-    #region UnmappableCharacterException definition
+    #region UnmappableCharacterException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/UnmappableCharacterException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Nio.Charset
     }
     #endregion
 
-    #region UnmappableCharacterException
+    #region UnmappableCharacterException implementation
     public partial class UnmappableCharacterException
     {
         #region Constructors

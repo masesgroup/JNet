@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ImageNs
 {
-    #region ReplicateScaleFilter definition
+    #region ReplicateScaleFilter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ReplicateScaleFilter.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.ImageNs
     }
     #endregion
 
-    #region ReplicateScaleFilter
+    #region ReplicateScaleFilter implementation
     public partial class ReplicateScaleFilter
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region Position definition
+    #region Position declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Position.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Swing.Text
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Bias definition
+        #region Bias declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Position.Bias.html"/>
         /// </summary>
@@ -139,7 +139,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region Position
+    #region Position implementation
     public partial class Position : Javax.Swing.Text.IPosition
     {
         #region Constructors
@@ -170,7 +170,7 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Nested classes
-        #region Bias
+        #region Bias implementation
         public partial class Bias
         {
             #region Constructors

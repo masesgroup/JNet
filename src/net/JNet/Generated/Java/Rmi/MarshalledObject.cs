@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi
 {
-    #region MarshalledObject definition
+    #region MarshalledObject declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/MarshalledObject.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Rmi
     }
     #endregion
 
-    #region MarshalledObject<T> definition
+    #region MarshalledObject<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/MarshalledObject.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Rmi
     }
     #endregion
 
-    #region MarshalledObject
+    #region MarshalledObject implementation
     public partial class MarshalledObject
     {
         #region Constructors
@@ -166,7 +166,7 @@ namespace Java.Rmi
     }
     #endregion
 
-    #region MarshalledObject<T>
+    #region MarshalledObject<T> implementation
     public partial class MarshalledObject<T>
     {
         #region Constructors

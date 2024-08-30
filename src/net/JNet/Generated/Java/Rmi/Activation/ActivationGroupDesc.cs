@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi.Activation
 {
-    #region ActivationGroupDesc definition
+    #region ActivationGroupDesc declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Rmi.Activation
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region CommandEnvironment definition
+        #region CommandEnvironment declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.CommandEnvironment.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Rmi.Activation
     }
     #endregion
 
-    #region ActivationGroupDesc
+    #region ActivationGroupDesc implementation
     public partial class ActivationGroupDesc
     {
         #region Constructors
@@ -195,7 +195,7 @@ namespace Java.Rmi.Activation
         #endregion
 
         #region Nested classes
-        #region CommandEnvironment
+        #region CommandEnvironment implementation
         public partial class CommandEnvironment
         {
             #region Constructors

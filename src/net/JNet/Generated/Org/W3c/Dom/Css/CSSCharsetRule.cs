@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Css
 {
-    #region CSSCharsetRule definition
+    #region CSSCharsetRule declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSCharsetRule.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Org.W3c.Dom.Css
     }
     #endregion
 
-    #region CSSCharsetRule
+    #region CSSCharsetRule implementation
     public partial class CSSCharsetRule : Org.W3c.Dom.Css.ICSSCharsetRule
     {
         #region Constructors

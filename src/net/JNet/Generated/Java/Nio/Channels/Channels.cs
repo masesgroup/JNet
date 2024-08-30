@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
-    #region Channels definition
+    #region Channels declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region Channels
+    #region Channels implementation
     public partial class Channels
     {
         #region Constructors

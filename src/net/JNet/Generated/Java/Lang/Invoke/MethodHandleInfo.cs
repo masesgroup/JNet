@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Invoke
 {
-    #region MethodHandleInfo definition
+    #region MethodHandleInfo declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html"/>
     /// </summary>
@@ -123,7 +123,7 @@ namespace Java.Lang.Invoke
     }
     #endregion
 
-    #region MethodHandleInfo
+    #region MethodHandleInfo implementation
     public partial class MethodHandleInfo : Java.Lang.Invoke.IMethodHandleInfo
     {
         #region Constructors

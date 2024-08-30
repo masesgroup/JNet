@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Security.Sasl
 {
-    #region SaslException definition
+    #region SaslException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Security.Sasl
     }
     #endregion
 
-    #region SaslException
+    #region SaslException implementation
     public partial class SaslException
     {
         #region Constructors

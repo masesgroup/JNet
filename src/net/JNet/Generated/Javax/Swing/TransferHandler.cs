@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region TransferHandler definition
+    #region TransferHandler declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region DropLocation definition
+        #region DropLocation declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.DropLocation.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region TransferSupport definition
+        #region TransferSupport declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html"/>
         /// </summary>
@@ -160,7 +160,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region TransferHandler
+    #region TransferHandler implementation
     public partial class TransferHandler
     {
         #region Constructors
@@ -334,7 +334,7 @@ namespace Javax.Swing
         #endregion
 
         #region Nested classes
-        #region DropLocation
+        #region DropLocation implementation
         public partial class DropLocation
         {
             #region Constructors
@@ -372,7 +372,7 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region TransferSupport
+        #region TransferSupport implementation
         public partial class TransferSupport
         {
             #region Constructors

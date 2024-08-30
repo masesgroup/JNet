@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region Keymap definition
+    #region Keymap declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html"/>
     /// </summary>
@@ -149,7 +149,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region Keymap
+    #region Keymap implementation
     public partial class Keymap : Javax.Swing.Text.IKeymap
     {
         #region Constructors

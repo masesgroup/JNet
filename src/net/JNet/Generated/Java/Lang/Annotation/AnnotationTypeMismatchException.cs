@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Annotation
 {
-    #region AnnotationTypeMismatchException definition
+    #region AnnotationTypeMismatchException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/AnnotationTypeMismatchException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang.Annotation
     }
     #endregion
 
-    #region AnnotationTypeMismatchException
+    #region AnnotationTypeMismatchException implementation
     public partial class AnnotationTypeMismatchException
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio.Spi
 {
-    #region ImageTranscoderSpi definition
+    #region ImageTranscoderSpi declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageTranscoderSpi.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Imageio.Spi
     }
     #endregion
 
-    #region ImageTranscoderSpi
+    #region ImageTranscoderSpi implementation
     public partial class ImageTranscoderSpi
     {
         #region Constructors

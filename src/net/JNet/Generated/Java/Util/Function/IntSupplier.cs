@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region IntSupplier definition
+    #region IntSupplier declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntSupplier.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IntSupplierDirect definition
+    #region IntSupplierDirect declaration
     /// <summary>
     /// Direct override of <see cref="IntSupplier"/> or its generic type if there is one
     /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IntSupplier
+    #region IntSupplier implementation
     public partial class IntSupplier : Java.Util.Function.IIntSupplier
     {
         #region Constructors
@@ -176,7 +176,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IntSupplierDirect
+    #region IntSupplierDirect implementation
     public partial class IntSupplierDirect : Java.Util.Function.IIntSupplier
     {
         #region Constructors

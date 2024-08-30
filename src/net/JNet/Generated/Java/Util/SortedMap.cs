@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region SortedMap definition
+    #region SortedMap declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region SortedMap<K, V> definition
+    #region SortedMap<K, V> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html"/>
     /// </summary>
@@ -121,7 +121,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region SortedMap
+    #region SortedMap implementation
     public partial class SortedMap
     {
         #region Constructors
@@ -296,7 +296,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region SortedMap<K, V>
+    #region SortedMap<K, V> implementation
     public partial class SortedMap<K, V> : Java.Util.ISortedMap<K, V>
     {
         #region Constructors

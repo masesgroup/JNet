@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio.Plugins.Tiff
 {
-    #region TIFFImageReadParam definition
+    #region TIFFImageReadParam declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFImageReadParam.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Imageio.Plugins.Tiff
     }
     #endregion
 
-    #region TIFFImageReadParam
+    #region TIFFImageReadParam implementation
     public partial class TIFFImageReadParam
     {
         #region Constructors

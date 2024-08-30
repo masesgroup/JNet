@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Ldap
 {
-    #region Control definition
+    #region Control declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Control.html"/>
     /// </summary>
@@ -103,7 +103,7 @@ namespace Javax.Naming.Ldap
     }
     #endregion
 
-    #region Control
+    #region Control implementation
     public partial class Control : Javax.Naming.Ldap.IControl
     {
         #region Constructors

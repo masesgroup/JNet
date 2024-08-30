@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Attribute.Standard
 {
-    #region DialogTypeSelection definition
+    #region DialogTypeSelection declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/DialogTypeSelection.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Print.Attribute.Standard
     }
     #endregion
 
-    #region DialogTypeSelection
+    #region DialogTypeSelection implementation
     public partial class DialogTypeSelection
     {
         #region Constructors

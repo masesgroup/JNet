@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region JComponent definition
+    #region JComponent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Swing
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region AccessibleJComponent definition
+        #region AccessibleJComponent declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.AccessibleJComponent.html"/>
         /// </summary>
@@ -119,7 +119,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region JComponent
+    #region JComponent implementation
     public partial class JComponent
     {
         #region Constructors
@@ -659,7 +659,7 @@ namespace Javax.Swing
         #endregion
 
         #region Nested classes
-        #region AccessibleJComponent
+        #region AccessibleJComponent implementation
         public partial class AccessibleJComponent
         {
             #region Constructors

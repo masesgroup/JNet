@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
-    #region Pipe definition
+    #region Pipe declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Pipe.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Java.Nio.Channels
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region SinkChannel definition
+        #region SinkChannel declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Pipe.SinkChannel.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Nio.Channels
         }
         #endregion
 
-        #region SourceChannel definition
+        #region SourceChannel declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Pipe.SourceChannel.html"/>
         /// </summary>
@@ -166,7 +166,7 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region Pipe
+    #region Pipe implementation
     public partial class Pipe
     {
         #region Constructors
@@ -215,7 +215,7 @@ namespace Java.Nio.Channels
         #endregion
 
         #region Nested classes
-        #region SinkChannel
+        #region SinkChannel implementation
         public partial class SinkChannel
         {
             #region Constructors
@@ -254,7 +254,7 @@ namespace Java.Nio.Channels
         }
         #endregion
 
-        #region SourceChannel
+        #region SourceChannel implementation
         public partial class SourceChannel
         {
             #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Annotation.Processing
 {
-    #region ProcessingEnvironment definition
+    #region ProcessingEnvironment declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html"/>
     /// </summary>
@@ -118,7 +118,7 @@ namespace Javax.Annotation.Processing
     }
     #endregion
 
-    #region ProcessingEnvironment
+    #region ProcessingEnvironment implementation
     public partial class ProcessingEnvironment : Javax.Annotation.Processing.IProcessingEnvironment
     {
         #region Constructors

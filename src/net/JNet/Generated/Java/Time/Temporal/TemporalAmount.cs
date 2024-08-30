@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time.Temporal
 {
-    #region TemporalAmount definition
+    #region TemporalAmount declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAmount.html"/>
     /// </summary>
@@ -112,7 +112,7 @@ namespace Java.Time.Temporal
     }
     #endregion
 
-    #region TemporalAmount
+    #region TemporalAmount implementation
     public partial class TemporalAmount : Java.Time.Temporal.ITemporalAmount
     {
         #region Constructors

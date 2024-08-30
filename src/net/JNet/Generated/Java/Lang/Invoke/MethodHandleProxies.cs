@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Invoke
 {
-    #region MethodHandleProxies definition
+    #region MethodHandleProxies declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleProxies.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Lang.Invoke
     }
     #endregion
 
-    #region MethodHandleProxies
+    #region MethodHandleProxies implementation
     public partial class MethodHandleProxies
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
-    #region KeyListener definition
+    #region KeyListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region KeyListenerDirect definition
+    #region KeyListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="KeyListener"/> or its generic type if there is one
     /// </summary>
@@ -125,7 +125,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region KeyListener
+    #region KeyListener implementation
     public partial class KeyListener : Java.Awt.EventNs.IKeyListener
     {
         #region Constructors
@@ -229,7 +229,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region KeyListenerDirect
+    #region KeyListenerDirect implementation
     public partial class KeyListenerDirect : Java.Awt.EventNs.IKeyListener
     {
         #region Constructors

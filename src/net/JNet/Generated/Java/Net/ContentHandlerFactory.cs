@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
-    #region ContentHandlerFactory definition
+    #region ContentHandlerFactory declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ContentHandlerFactory.html"/>
     /// </summary>
@@ -96,7 +96,7 @@ namespace Java.Net
     }
     #endregion
 
-    #region ContentHandlerFactory
+    #region ContentHandlerFactory implementation
     public partial class ContentHandlerFactory : Java.Net.IContentHandlerFactory
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region JTree definition
+    #region JTree declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region DropLocation definition
+        #region DropLocation declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.DropLocation.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region DynamicUtilTreeNode definition
+        #region DynamicUtilTreeNode declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.DynamicUtilTreeNode.html"/>
         /// </summary>
@@ -160,7 +160,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region JTree
+    #region JTree implementation
     public partial class JTree
     {
         #region Constructors
@@ -1120,7 +1120,7 @@ namespace Javax.Swing
         #endregion
 
         #region Nested classes
-        #region DropLocation
+        #region DropLocation implementation
         public partial class DropLocation
         {
             #region Constructors
@@ -1165,7 +1165,7 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region DynamicUtilTreeNode
+        #region DynamicUtilTreeNode implementation
         public partial class DynamicUtilTreeNode
         {
             #region Constructors

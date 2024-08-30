@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto
 {
-    #region Data definition
+    #region Data declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/Data.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Javax.Xml.Crypto
     }
     #endregion
 
-    #region Data
+    #region Data implementation
     public partial class Data : Javax.Xml.Crypto.IData
     {
         #region Constructors

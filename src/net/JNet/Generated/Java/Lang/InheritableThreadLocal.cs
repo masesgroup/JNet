@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region InheritableThreadLocal definition
+    #region InheritableThreadLocal declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/InheritableThreadLocal.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region InheritableThreadLocal<T> definition
+    #region InheritableThreadLocal<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/InheritableThreadLocal.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region InheritableThreadLocal
+    #region InheritableThreadLocal implementation
     public partial class InheritableThreadLocal
     {
         #region Constructors
@@ -147,7 +147,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region InheritableThreadLocal<T>
+    #region InheritableThreadLocal<T> implementation
     public partial class InheritableThreadLocal<T>
     {
         #region Constructors

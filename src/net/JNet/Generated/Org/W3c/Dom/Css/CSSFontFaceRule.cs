@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Css
 {
-    #region CSSFontFaceRule definition
+    #region CSSFontFaceRule declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSFontFaceRule.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Org.W3c.Dom.Css
     }
     #endregion
 
-    #region CSSFontFaceRule
+    #region CSSFontFaceRule implementation
     public partial class CSSFontFaceRule : Org.W3c.Dom.Css.ICSSFontFaceRule
     {
         #region Constructors

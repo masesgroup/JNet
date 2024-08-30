@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Modelmbean
 {
-    #region DescriptorSupport definition
+    #region DescriptorSupport declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Management.Modelmbean
     }
     #endregion
 
-    #region DescriptorSupport
+    #region DescriptorSupport implementation
     public partial class DescriptorSupport
     {
         #region Constructors

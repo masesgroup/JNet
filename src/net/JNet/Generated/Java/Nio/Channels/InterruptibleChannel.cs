@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
-    #region InterruptibleChannel definition
+    #region InterruptibleChannel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/InterruptibleChannel.html"/>
     /// </summary>
@@ -95,7 +95,7 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region InterruptibleChannel
+    #region InterruptibleChannel implementation
     public partial class InterruptibleChannel : Java.Nio.Channels.IInterruptibleChannel
     {
         #region Constructors

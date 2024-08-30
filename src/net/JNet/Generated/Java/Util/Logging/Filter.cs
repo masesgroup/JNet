@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Logging
 {
-    #region Filter definition
+    #region Filter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Filter.html"/>
     /// </summary>
@@ -96,7 +96,7 @@ namespace Java.Util.Logging
     }
     #endregion
 
-    #region Filter
+    #region Filter implementation
     public partial class Filter : Java.Util.Logging.IFilter
     {
         #region Constructors

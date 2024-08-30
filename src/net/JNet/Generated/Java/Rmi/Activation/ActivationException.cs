@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi.Activation
 {
-    #region ActivationException definition
+    #region ActivationException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Rmi.Activation
     }
     #endregion
 
-    #region ActivationException
+    #region ActivationException implementation
     public partial class ActivationException
     {
         #region Constructors

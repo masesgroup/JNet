@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region InvalidParameterException definition
+    #region InvalidParameterException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/InvalidParameterException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region InvalidParameterException
+    #region InvalidParameterException implementation
     public partial class InvalidParameterException
     {
         #region Constructors

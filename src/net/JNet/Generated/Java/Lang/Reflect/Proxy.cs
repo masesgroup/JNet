@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
-    #region Proxy definition
+    #region Proxy declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Proxy.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region Proxy
+    #region Proxy implementation
     public partial class Proxy
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
-    #region InputMethodListener definition
+    #region InputMethodListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region InputMethodListenerDirect definition
+    #region InputMethodListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="InputMethodListener"/> or its generic type if there is one
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region InputMethodListener
+    #region InputMethodListener implementation
     public partial class InputMethodListener : Java.Awt.EventNs.IInputMethodListener
     {
         #region Constructors
@@ -202,7 +202,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region InputMethodListenerDirect
+    #region InputMethodListenerDirect implementation
     public partial class InputMethodListenerDirect : Java.Awt.EventNs.IInputMethodListener
     {
         #region Constructors

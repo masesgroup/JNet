@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
-    #region HTMLFrameElement definition
+    #region HTMLFrameElement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameElement.html"/>
     /// </summary>
@@ -126,7 +126,7 @@ namespace Org.W3c.Dom.Html
     }
     #endregion
 
-    #region HTMLFrameElement
+    #region HTMLFrameElement implementation
     public partial class HTMLFrameElement : Org.W3c.Dom.Html.IHTMLFrameElement
     {
         #region Constructors

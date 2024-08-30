@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region ListSelectionModel definition
+    #region ListSelectionModel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html"/>
     /// </summary>
@@ -178,7 +178,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region ListSelectionModel
+    #region ListSelectionModel implementation
     public partial class ListSelectionModel : Javax.Swing.IListSelectionModel
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region ConcurrentSkipListSet definition
+    #region ConcurrentSkipListSet declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ConcurrentSkipListSet<E> definition
+    #region ConcurrentSkipListSet<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ConcurrentSkipListSet
+    #region ConcurrentSkipListSet implementation
     public partial class ConcurrentSkipListSet
     {
         #region Constructors
@@ -343,7 +343,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ConcurrentSkipListSet<E>
+    #region ConcurrentSkipListSet<E> implementation
     public partial class ConcurrentSkipListSet<E>
     {
         #region Constructors

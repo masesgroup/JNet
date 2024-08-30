@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region Cloneable definition
+    #region Cloneable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Cloneable.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region Cloneable
+    #region Cloneable implementation
     public partial class Cloneable : Java.Lang.ICloneable
     {
         #region Constructors

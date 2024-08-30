@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql.Rowset.Spi
 {
-    #region SyncFactory definition
+    #region SyncFactory declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Sql.Rowset.Spi
     }
     #endregion
 
-    #region SyncFactory
+    #region SyncFactory implementation
     public partial class SyncFactory
     {
         #region Constructors

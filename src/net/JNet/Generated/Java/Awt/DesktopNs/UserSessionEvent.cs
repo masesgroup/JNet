@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.DesktopNs
 {
-    #region UserSessionEvent definition
+    #region UserSessionEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Awt.DesktopNs
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Reason definition
+        #region Reason declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Awt.DesktopNs
     }
     #endregion
 
-    #region UserSessionEvent
+    #region UserSessionEvent implementation
     public partial class UserSessionEvent
     {
         #region Constructors
@@ -154,7 +154,7 @@ namespace Java.Awt.DesktopNs
         #endregion
 
         #region Nested classes
-        #region Reason
+        #region Reason implementation
         public partial class Reason
         {
             #region Constructors

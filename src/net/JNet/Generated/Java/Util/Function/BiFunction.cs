@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region BiFunction definition
+    #region BiFunction declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BiFunctionDirect definition
+    #region BiFunctionDirect declaration
     /// <summary>
     /// Direct override of <see cref="BiFunction"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BiFunction<T, U, R> definition
+    #region BiFunction<T, U, R> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html"/>
     /// </summary>
@@ -121,7 +121,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BiFunctionDirect<T, U, R> definition
+    #region BiFunctionDirect<T, U, R> declaration
     /// <summary>
     /// Direct override of <see cref="BiFunction"/> or its generic type if there is one
     /// </summary>
@@ -162,7 +162,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BiFunction
+    #region BiFunction implementation
     public partial class BiFunction
     {
         #region Constructors
@@ -260,7 +260,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BiFunctionDirect
+    #region BiFunctionDirect implementation
     public partial class BiFunctionDirect
     {
         #region Constructors
@@ -344,7 +344,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BiFunction<T, U, R>
+    #region BiFunction<T, U, R> implementation
     public partial class BiFunction<T, U, R> : Java.Util.Function.IBiFunction<T, U, R>
     {
         #region Constructors
@@ -448,7 +448,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BiFunctionDirect<T, U, R>
+    #region BiFunctionDirect<T, U, R> implementation
     public partial class BiFunctionDirect<T, U, R> : Java.Util.Function.IBiFunction<T, U, R>
     {
         #region Constructors

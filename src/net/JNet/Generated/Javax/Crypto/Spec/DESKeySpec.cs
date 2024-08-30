@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Crypto.Spec
 {
-    #region DESKeySpec definition
+    #region DESKeySpec declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DESKeySpec.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Crypto.Spec
     }
     #endregion
 
-    #region DESKeySpec
+    #region DESKeySpec implementation
     public partial class DESKeySpec
     {
         #region Constructors

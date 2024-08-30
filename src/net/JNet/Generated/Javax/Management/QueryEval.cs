@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region QueryEval definition
+    #region QueryEval declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/QueryEval.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region QueryEval
+    #region QueryEval implementation
     public partial class QueryEval
     {
         #region Constructors

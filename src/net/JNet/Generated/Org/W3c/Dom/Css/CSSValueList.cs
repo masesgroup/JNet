@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Css
 {
-    #region CSSValueList definition
+    #region CSSValueList declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValueList.html"/>
     /// </summary>
@@ -100,7 +100,7 @@ namespace Org.W3c.Dom.Css
     }
     #endregion
 
-    #region CSSValueList
+    #region CSSValueList implementation
     public partial class CSSValueList : Org.W3c.Dom.Css.ICSSValueList
     {
         #region Constructors

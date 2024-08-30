@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region AsyncBoxView definition
+    #region AsyncBoxView declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Text
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region ChildLocator definition
+        #region ChildLocator declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region ChildState definition
+        #region ChildState declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html"/>
         /// </summary>
@@ -160,7 +160,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region AsyncBoxView
+    #region AsyncBoxView implementation
     public partial class AsyncBoxView
     {
         #region Constructors
@@ -235,7 +235,7 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Nested classes
-        #region ChildLocator
+        #region ChildLocator implementation
         public partial class ChildLocator
         {
             #region Constructors
@@ -311,7 +311,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region ChildState
+        #region ChildState implementation
         public partial class ChildState
         {
             #region Constructors

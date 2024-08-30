@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Attribute
 {
-    #region ResolutionSyntax definition
+    #region ResolutionSyntax declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/ResolutionSyntax.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Print.Attribute
     }
     #endregion
 
-    #region ResolutionSyntax
+    #region ResolutionSyntax implementation
     public partial class ResolutionSyntax
     {
         #region Constructors

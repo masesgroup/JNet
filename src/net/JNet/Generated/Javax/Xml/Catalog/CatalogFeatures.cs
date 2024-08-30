@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Catalog
 {
-    #region CatalogFeatures definition
+    #region CatalogFeatures declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Xml.Catalog
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Builder definition
+        #region Builder declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Builder.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Xml.Catalog
         }
         #endregion
 
-        #region Feature definition
+        #region Feature declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html"/>
         /// </summary>
@@ -160,7 +160,7 @@ namespace Javax.Xml.Catalog
     }
     #endregion
 
-    #region CatalogFeatures
+    #region CatalogFeatures implementation
     public partial class CatalogFeatures
     {
         #region Constructors
@@ -209,7 +209,7 @@ namespace Javax.Xml.Catalog
         #endregion
 
         #region Nested classes
-        #region Builder
+        #region Builder implementation
         public partial class Builder
         {
             #region Constructors
@@ -258,7 +258,7 @@ namespace Javax.Xml.Catalog
         }
         #endregion
 
-        #region Feature
+        #region Feature implementation
         public partial class Feature
         {
             #region Constructors

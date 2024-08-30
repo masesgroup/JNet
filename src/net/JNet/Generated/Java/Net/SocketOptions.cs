@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
-    #region SocketOptions definition
+    #region SocketOptions declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html"/>
     /// </summary>
@@ -104,7 +104,7 @@ namespace Java.Net
     }
     #endregion
 
-    #region SocketOptions
+    #region SocketOptions implementation
     public partial class SocketOptions : Java.Net.ISocketOptions
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql.Rowset
 {
-    #region Joinable definition
+    #region Joinable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/Joinable.html"/>
     /// </summary>
@@ -146,7 +146,7 @@ namespace Javax.Sql.Rowset
     }
     #endregion
 
-    #region Joinable
+    #region Joinable implementation
     public partial class Joinable : Javax.Sql.Rowset.IJoinable
     {
         #region Constructors

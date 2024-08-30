@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time.Temporal
 {
-    #region JulianFields definition
+    #region JulianFields declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/JulianFields.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Time.Temporal
     }
     #endregion
 
-    #region JulianFields
+    #region JulianFields implementation
     public partial class JulianFields
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region GraphicsEnvironment definition
+    #region GraphicsEnvironment declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region GraphicsEnvironment
+    #region GraphicsEnvironment implementation
     public partial class GraphicsEnvironment
     {
         #region Constructors

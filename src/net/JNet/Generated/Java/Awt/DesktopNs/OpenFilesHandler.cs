@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.DesktopNs
 {
-    #region OpenFilesHandler definition
+    #region OpenFilesHandler declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/OpenFilesHandler.html"/>
     /// </summary>
@@ -95,7 +95,7 @@ namespace Java.Awt.DesktopNs
     }
     #endregion
 
-    #region OpenFilesHandler
+    #region OpenFilesHandler implementation
     public partial class OpenFilesHandler : Java.Awt.DesktopNs.IOpenFilesHandler
     {
         #region Constructors

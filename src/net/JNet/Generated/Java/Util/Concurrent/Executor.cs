@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region Executor definition
+    #region Executor declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executor.html"/>
     /// </summary>
@@ -95,7 +95,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region Executor
+    #region Executor implementation
     public partial class Executor : Java.Util.Concurrent.IExecutor
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region BlockingQueue definition
+    #region BlockingQueue declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region BlockingQueue<E> definition
+    #region BlockingQueue<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region BlockingQueue
+    #region BlockingQueue implementation
     public partial class BlockingQueue
     {
         #region Constructors
@@ -346,7 +346,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region BlockingQueue<E>
+    #region BlockingQueue<E> implementation
     public partial class BlockingQueue<E> : Java.Util.Concurrent.IBlockingQueue<E>
     {
         #region Constructors

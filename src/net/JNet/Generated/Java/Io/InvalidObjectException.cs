@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
-    #region InvalidObjectException definition
+    #region InvalidObjectException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InvalidObjectException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Io
     }
     #endregion
 
-    #region InvalidObjectException
+    #region InvalidObjectException implementation
     public partial class InvalidObjectException
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent.Locks
 {
-    #region Condition definition
+    #region Condition declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Condition.html"/>
     /// </summary>
@@ -129,7 +129,7 @@ namespace Java.Util.Concurrent.Locks
     }
     #endregion
 
-    #region Condition
+    #region Condition implementation
     public partial class Condition : Java.Util.Concurrent.Locks.ICondition
     {
         #region Constructors

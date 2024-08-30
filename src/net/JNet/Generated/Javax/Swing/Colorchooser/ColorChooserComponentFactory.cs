@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Colorchooser
 {
-    #region ColorChooserComponentFactory definition
+    #region ColorChooserComponentFactory declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/ColorChooserComponentFactory.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Colorchooser
     }
     #endregion
 
-    #region ColorChooserComponentFactory
+    #region ColorChooserComponentFactory implementation
     public partial class ColorChooserComponentFactory
     {
         #region Constructors

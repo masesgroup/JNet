@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Charset
 {
-    #region IllegalCharsetNameException definition
+    #region IllegalCharsetNameException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/IllegalCharsetNameException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Nio.Charset
     }
     #endregion
 
-    #region IllegalCharsetNameException
+    #region IllegalCharsetNameException implementation
     public partial class IllegalCharsetNameException
     {
         #region Constructors

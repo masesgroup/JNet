@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region Queue definition
+    #region Queue declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Queue<E> definition
+    #region Queue<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Queue
+    #region Queue implementation
     public partial class Queue
     {
         #region Constructors
@@ -251,7 +251,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Queue<E>
+    #region Queue<E> implementation
     public partial class Queue<E> : Java.Util.IQueue<E>
     {
         #region Constructors

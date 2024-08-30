@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Net.Ssl
 {
-    #region X509ExtendedKeyManager definition
+    #region X509ExtendedKeyManager declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509ExtendedKeyManager.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region X509ExtendedKeyManager
+    #region X509ExtendedKeyManager implementation
     public partial class X509ExtendedKeyManager
     {
         #region Constructors

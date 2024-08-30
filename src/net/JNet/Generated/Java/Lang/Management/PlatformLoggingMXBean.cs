@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Management
 {
-    #region PlatformLoggingMXBean definition
+    #region PlatformLoggingMXBean declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/PlatformLoggingMXBean.html"/>
     /// </summary>
@@ -112,7 +112,7 @@ namespace Java.Lang.Management
     }
     #endregion
 
-    #region PlatformLoggingMXBean
+    #region PlatformLoggingMXBean implementation
     public partial class PlatformLoggingMXBean : Java.Lang.Management.IPlatformLoggingMXBean
     {
         #region Constructors

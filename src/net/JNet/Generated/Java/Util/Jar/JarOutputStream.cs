@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Jar
 {
-    #region JarOutputStream definition
+    #region JarOutputStream declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarOutputStream.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Jar
     }
     #endregion
 
-    #region JarOutputStream
+    #region JarOutputStream implementation
     public partial class JarOutputStream
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Net.Ssl
 {
-    #region SSLEngineResult definition
+    #region SSLEngineResult declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Net.Ssl
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region HandshakeStatus definition
+        #region HandshakeStatus declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.HandshakeStatus.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Net.Ssl
         }
         #endregion
 
-        #region Status definition
+        #region Status declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html"/>
         /// </summary>
@@ -160,7 +160,7 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region SSLEngineResult
+    #region SSLEngineResult implementation
     public partial class SSLEngineResult
     {
         #region Constructors
@@ -245,7 +245,7 @@ namespace Javax.Net.Ssl
         #endregion
 
         #region Nested classes
-        #region HandshakeStatus
+        #region HandshakeStatus implementation
         public partial class HandshakeStatus
         {
             #region Constructors
@@ -329,7 +329,7 @@ namespace Javax.Net.Ssl
         }
         #endregion
 
-        #region Status
+        #region Status implementation
         public partial class Status
         {
             #region Constructors

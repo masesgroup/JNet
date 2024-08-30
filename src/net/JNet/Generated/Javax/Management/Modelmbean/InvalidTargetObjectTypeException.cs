@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Modelmbean
 {
-    #region InvalidTargetObjectTypeException definition
+    #region InvalidTargetObjectTypeException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/InvalidTargetObjectTypeException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Management.Modelmbean
     }
     #endregion
 
-    #region InvalidTargetObjectTypeException
+    #region InvalidTargetObjectTypeException implementation
     public partial class InvalidTargetObjectTypeException
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Interfaces
 {
-    #region DSAParams definition
+    #region DSAParams declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAParams.html"/>
     /// </summary>
@@ -102,7 +102,7 @@ namespace Java.Security.Interfaces
     }
     #endregion
 
-    #region DSAParams
+    #region DSAParams implementation
     public partial class DSAParams : Java.Security.Interfaces.IDSAParams
     {
         #region Constructors

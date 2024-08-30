@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region TypeNotPresentException definition
+    #region TypeNotPresentException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/TypeNotPresentException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region TypeNotPresentException
+    #region TypeNotPresentException implementation
     public partial class TypeNotPresentException
     {
         #region Constructors

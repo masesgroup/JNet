@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
-    #region NoConnectionPendingException definition
+    #region NoConnectionPendingException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NoConnectionPendingException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region NoConnectionPendingException
+    #region NoConnectionPendingException implementation
     public partial class NoConnectionPendingException
     {
         #region Constructors

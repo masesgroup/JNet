@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent.Locks
 {
-    #region ReentrantLock definition
+    #region ReentrantLock declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Concurrent.Locks
     }
     #endregion
 
-    #region ReentrantLock
+    #region ReentrantLock implementation
     public partial class ReentrantLock
     {
         #region Constructors

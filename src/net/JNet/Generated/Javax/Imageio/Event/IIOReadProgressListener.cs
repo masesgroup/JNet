@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio.Event
 {
-    #region IIOReadProgressListener definition
+    #region IIOReadProgressListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Imageio.Event
     }
     #endregion
 
-    #region IIOReadProgressListenerDirect definition
+    #region IIOReadProgressListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="IIOReadProgressListener"/> or its generic type if there is one
     /// </summary>
@@ -161,7 +161,7 @@ namespace Javax.Imageio.Event
     }
     #endregion
 
-    #region IIOReadProgressListener
+    #region IIOReadProgressListener implementation
     public partial class IIOReadProgressListener : Javax.Imageio.Event.IIIOReadProgressListener
     {
         #region Constructors
@@ -403,7 +403,7 @@ namespace Javax.Imageio.Event
     }
     #endregion
 
-    #region IIOReadProgressListenerDirect
+    #region IIOReadProgressListenerDirect implementation
     public partial class IIOReadProgressListenerDirect : Javax.Imageio.Event.IIIOReadProgressListener
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Annotation
 {
-    #region Repeatable definition
+    #region Repeatable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Repeatable.html"/>
     /// </summary>
@@ -96,7 +96,7 @@ namespace Java.Lang.Annotation
     }
     #endregion
 
-    #region Repeatable
+    #region Repeatable implementation
     public partial class Repeatable : Java.Lang.Annotation.IRepeatable
     {
         #region Constructors

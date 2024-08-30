@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Openmbean
 {
-    #region KeyAlreadyExistsException definition
+    #region KeyAlreadyExistsException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/KeyAlreadyExistsException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Management.Openmbean
     }
     #endregion
 
-    #region KeyAlreadyExistsException
+    #region KeyAlreadyExistsException implementation
     public partial class KeyAlreadyExistsException
     {
         #region Constructors

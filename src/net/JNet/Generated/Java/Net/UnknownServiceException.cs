@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
-    #region UnknownServiceException definition
+    #region UnknownServiceException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/UnknownServiceException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Net
     }
     #endregion
 
-    #region UnknownServiceException
+    #region UnknownServiceException implementation
     public partial class UnknownServiceException
     {
         #region Constructors

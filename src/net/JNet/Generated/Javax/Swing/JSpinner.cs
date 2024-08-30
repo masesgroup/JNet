@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region JSpinner definition
+    #region JSpinner declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region DateEditor definition
+        #region DateEditor declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DateEditor.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region DefaultEditor definition
+        #region DefaultEditor declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html"/>
         /// </summary>
@@ -156,7 +156,7 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region ListEditor definition
+        #region ListEditor declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.ListEditor.html"/>
         /// </summary>
@@ -201,7 +201,7 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region NumberEditor definition
+        #region NumberEditor declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.NumberEditor.html"/>
         /// </summary>
@@ -250,7 +250,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region JSpinner
+    #region JSpinner implementation
     public partial class JSpinner
     {
         #region Constructors
@@ -360,7 +360,7 @@ namespace Javax.Swing
         #endregion
 
         #region Nested classes
-        #region DateEditor
+        #region DateEditor implementation
         public partial class DateEditor
         {
             #region Constructors
@@ -422,7 +422,7 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region DefaultEditor
+        #region DefaultEditor implementation
         public partial class DefaultEditor
         {
             #region Constructors
@@ -562,7 +562,7 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region ListEditor
+        #region ListEditor implementation
         public partial class ListEditor
         {
             #region Constructors
@@ -608,7 +608,7 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region NumberEditor
+        #region NumberEditor implementation
         public partial class NumberEditor
         {
             #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Metal
 {
-    #region MetalFileChooserUI definition
+    #region MetalFileChooserUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalFileChooserUI.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Plaf.Metal
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region FilterComboBoxRenderer definition
+        #region FilterComboBoxRenderer declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalFileChooserUI.FilterComboBoxRenderer.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Swing.Plaf.Metal
     }
     #endregion
 
-    #region MetalFileChooserUI
+    #region MetalFileChooserUI implementation
     public partial class MetalFileChooserUI
     {
         #region Constructors
@@ -155,7 +155,7 @@ namespace Javax.Swing.Plaf.Metal
         #endregion
 
         #region Nested classes
-        #region FilterComboBoxRenderer
+        #region FilterComboBoxRenderer implementation
         public partial class FilterComboBoxRenderer
         {
             #region Constructors

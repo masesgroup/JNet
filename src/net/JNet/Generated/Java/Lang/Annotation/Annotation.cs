@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Annotation
 {
-    #region Annotation definition
+    #region Annotation declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Annotation.html"/>
     /// </summary>
@@ -96,7 +96,7 @@ namespace Java.Lang.Annotation
     }
     #endregion
 
-    #region Annotation
+    #region Annotation implementation
     public partial class Annotation : Java.Lang.Annotation.IAnnotation
     {
         #region Constructors

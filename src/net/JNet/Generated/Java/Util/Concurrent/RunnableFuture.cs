@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region RunnableFuture definition
+    #region RunnableFuture declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RunnableFuture.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region RunnableFuture<V> definition
+    #region RunnableFuture<V> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RunnableFuture.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region RunnableFuture
+    #region RunnableFuture implementation
     public partial class RunnableFuture
     {
         #region Constructors
@@ -188,7 +188,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region RunnableFuture<V>
+    #region RunnableFuture<V> implementation
     public partial class RunnableFuture<V> : Java.Util.Concurrent.IRunnableFuture<V>
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region DefaultKeyboardFocusManager definition
+    #region DefaultKeyboardFocusManager declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/DefaultKeyboardFocusManager.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region DefaultKeyboardFocusManager
+    #region DefaultKeyboardFocusManager implementation
     public partial class DefaultKeyboardFocusManager
     {
         #region Constructors

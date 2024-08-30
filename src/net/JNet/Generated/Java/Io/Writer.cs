@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
-    #region Writer definition
+    #region Writer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Writer.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Io
     }
     #endregion
 
-    #region Writer
+    #region Writer implementation
     public partial class Writer
     {
         #region Constructors

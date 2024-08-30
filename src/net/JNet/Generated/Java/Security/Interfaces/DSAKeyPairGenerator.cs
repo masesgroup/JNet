@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Interfaces
 {
-    #region DSAKeyPairGenerator definition
+    #region DSAKeyPairGenerator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAKeyPairGenerator.html"/>
     /// </summary>
@@ -105,7 +105,7 @@ namespace Java.Security.Interfaces
     }
     #endregion
 
-    #region DSAKeyPairGenerator
+    #region DSAKeyPairGenerator implementation
     public partial class DSAKeyPairGenerator : Java.Security.Interfaces.IDSAKeyPairGenerator
     {
         #region Constructors

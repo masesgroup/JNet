@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming
 {
-    #region NoInitialContextException definition
+    #region NoInitialContextException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NoInitialContextException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Naming
     }
     #endregion
 
-    #region NoInitialContextException
+    #region NoInitialContextException implementation
     public partial class NoInitialContextException
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Prefs
 {
-    #region PreferenceChangeEvent definition
+    #region PreferenceChangeEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferenceChangeEvent.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Prefs
     }
     #endregion
 
-    #region PreferenceChangeEvent
+    #region PreferenceChangeEvent implementation
     public partial class PreferenceChangeEvent
     {
         #region Constructors

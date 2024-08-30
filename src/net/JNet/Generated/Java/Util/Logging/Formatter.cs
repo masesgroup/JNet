@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Logging
 {
-    #region Formatter definition
+    #region Formatter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Formatter.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util.Logging
     }
     #endregion
 
-    #region Formatter
+    #region Formatter implementation
     public partial class Formatter
     {
         #region Constructors

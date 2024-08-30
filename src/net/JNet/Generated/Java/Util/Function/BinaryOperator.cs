@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region BinaryOperator definition
+    #region BinaryOperator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BinaryOperator.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BinaryOperatorDirect definition
+    #region BinaryOperatorDirect declaration
     /// <summary>
     /// Direct override of <see cref="BinaryOperator"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BinaryOperator<T> definition
+    #region BinaryOperator<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BinaryOperator.html"/>
     /// </summary>
@@ -119,7 +119,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BinaryOperatorDirect<T> definition
+    #region BinaryOperatorDirect<T> declaration
     /// <summary>
     /// Direct override of <see cref="BinaryOperator"/> or its generic type if there is one
     /// </summary>
@@ -160,7 +160,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BinaryOperator
+    #region BinaryOperator implementation
     public partial class BinaryOperator
     {
         #region Constructors
@@ -278,7 +278,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BinaryOperatorDirect
+    #region BinaryOperatorDirect implementation
     public partial class BinaryOperatorDirect
     {
         #region Constructors
@@ -366,7 +366,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BinaryOperator<T>
+    #region BinaryOperator<T> implementation
     public partial class BinaryOperator<T> : Java.Util.Function.IBinaryOperator<T>
     {
         #region Constructors
@@ -498,7 +498,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BinaryOperatorDirect<T>
+    #region BinaryOperatorDirect<T> implementation
     public partial class BinaryOperatorDirect<T> : Java.Util.Function.IBinaryOperator<T>
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Stream
 {
-    #region Collectors definition
+    #region Collectors declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Stream
     }
     #endregion
 
-    #region Collectors
+    #region Collectors implementation
     public partial class Collectors
     {
         #region Constructors

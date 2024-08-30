@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Dnd.Peer
 {
-    #region DragSourceContextPeer definition
+    #region DragSourceContextPeer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DragSourceContextPeer.html"/>
     /// </summary>
@@ -107,7 +107,7 @@ namespace Java.Awt.Dnd.Peer
     }
     #endregion
 
-    #region DragSourceContextPeer
+    #region DragSourceContextPeer implementation
     public partial class DragSourceContextPeer : Java.Awt.Dnd.Peer.IDragSourceContextPeer
     {
         #region Constructors

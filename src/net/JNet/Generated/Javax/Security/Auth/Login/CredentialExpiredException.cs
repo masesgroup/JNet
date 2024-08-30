@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Security.Auth.Login
 {
-    #region CredentialExpiredException definition
+    #region CredentialExpiredException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/CredentialExpiredException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Security.Auth.Login
     }
     #endregion
 
-    #region CredentialExpiredException
+    #region CredentialExpiredException implementation
     public partial class CredentialExpiredException
     {
         #region Constructors

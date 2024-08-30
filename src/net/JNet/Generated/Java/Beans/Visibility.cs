@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans
 {
-    #region Visibility definition
+    #region Visibility declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html"/>
     /// </summary>
@@ -108,7 +108,7 @@ namespace Java.Beans
     }
     #endregion
 
-    #region Visibility
+    #region Visibility implementation
     public partial class Visibility : Java.Beans.IVisibility
     {
         #region Constructors

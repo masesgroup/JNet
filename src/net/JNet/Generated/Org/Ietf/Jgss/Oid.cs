@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.Ietf.Jgss
 {
-    #region Oid definition
+    #region Oid declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/Oid.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Org.Ietf.Jgss
     }
     #endregion
 
-    #region Oid
+    #region Oid implementation
     public partial class Oid
     {
         #region Constructors

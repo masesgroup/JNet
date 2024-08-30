@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig
 {
-    #region XMLSignature definition
+    #region XMLSignature declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Xml.Crypto.Dsig
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region SignatureValue definition
+        #region SignatureValue declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.SignatureValue.html"/>
         /// </summary>
@@ -175,7 +175,7 @@ namespace Javax.Xml.Crypto.Dsig
     }
     #endregion
 
-    #region XMLSignature
+    #region XMLSignature implementation
     public partial class XMLSignature : Javax.Xml.Crypto.Dsig.IXMLSignature
     {
         #region Constructors
@@ -267,7 +267,7 @@ namespace Javax.Xml.Crypto.Dsig
         #endregion
 
         #region Nested classes
-        #region SignatureValue
+        #region SignatureValue implementation
         public partial class SignatureValue
         {
             #region Constructors

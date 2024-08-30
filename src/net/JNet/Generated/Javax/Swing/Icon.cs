@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region Icon definition
+    #region Icon declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Icon.html"/>
     /// </summary>
@@ -106,7 +106,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region Icon
+    #region Icon implementation
     public partial class Icon : Javax.Swing.IIcon
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region LongFunction definition
+    #region LongFunction declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongFunction.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region LongFunctionDirect definition
+    #region LongFunctionDirect declaration
     /// <summary>
     /// Direct override of <see cref="LongFunction"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region LongFunction<R> definition
+    #region LongFunction<R> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongFunction.html"/>
     /// </summary>
@@ -119,7 +119,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region LongFunctionDirect<R> definition
+    #region LongFunctionDirect<R> declaration
     /// <summary>
     /// Direct override of <see cref="LongFunction"/> or its generic type if there is one
     /// </summary>
@@ -160,7 +160,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region LongFunction
+    #region LongFunction implementation
     public partial class LongFunction
     {
         #region Constructors
@@ -222,7 +222,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region LongFunctionDirect
+    #region LongFunctionDirect implementation
     public partial class LongFunctionDirect
     {
         #region Constructors
@@ -286,7 +286,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region LongFunction<R>
+    #region LongFunction<R> implementation
     public partial class LongFunction<R> : Java.Util.Function.ILongFunction<R>
     {
         #region Constructors
@@ -348,7 +348,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region LongFunctionDirect<R>
+    #region LongFunctionDirect<R> implementation
     public partial class LongFunctionDirect<R> : Java.Util.Function.ILongFunction<R>
     {
         #region Constructors

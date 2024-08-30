@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Sampled
 {
-    #region BooleanControl definition
+    #region BooleanControl declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/BooleanControl.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Sound.Sampled
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Type definition
+        #region Type declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/BooleanControl.Type.html"/>
         /// </summary>
@@ -117,7 +117,7 @@ namespace Javax.Sound.Sampled
     }
     #endregion
 
-    #region BooleanControl
+    #region BooleanControl implementation
     public partial class BooleanControl
     {
         #region Constructors
@@ -157,7 +157,7 @@ namespace Javax.Sound.Sampled
         #endregion
 
         #region Nested classes
-        #region Type
+        #region Type implementation
         public partial class Type
         {
             #region Constructors

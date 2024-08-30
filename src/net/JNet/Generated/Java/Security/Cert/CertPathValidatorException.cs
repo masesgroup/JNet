@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Cert
 {
-    #region CertPathValidatorException definition
+    #region CertPathValidatorException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.html"/>
     /// </summary>
@@ -38,7 +38,7 @@ namespace Java.Security.Cert
         public override string BridgeClassName => _bridgeClassName;
 
         // TODO: complete the class
-        #region BasicReason definition
+        #region BasicReason declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html"/>
         /// </summary>
@@ -83,7 +83,7 @@ namespace Java.Security.Cert
         }
         #endregion
 
-        #region Reason definition
+        #region Reason declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.Reason.html"/>
         /// </summary>
@@ -134,7 +134,7 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region CertPathValidatorException
+    #region CertPathValidatorException implementation
     public partial class CertPathValidatorException
     {
         #region Constructors
@@ -158,7 +158,7 @@ namespace Java.Security.Cert
         #endregion
 
         #region Nested classes
-        #region BasicReason
+        #region BasicReason implementation
         public partial class BasicReason
         {
             #region Constructors
@@ -248,7 +248,7 @@ namespace Java.Security.Cert
         }
         #endregion
 
-        #region Reason
+        #region Reason implementation
         public partial class Reason
         {
             #region Constructors

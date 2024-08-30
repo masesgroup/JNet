@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region IllegalComponentStateException definition
+    #region IllegalComponentStateException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/IllegalComponentStateException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region IllegalComponentStateException
+    #region IllegalComponentStateException implementation
     public partial class IllegalComponentStateException
     {
         #region Constructors

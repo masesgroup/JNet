@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region TreeSet definition
+    #region TreeSet declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region TreeSet<E> definition
+    #region TreeSet<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region TreeSet
+    #region TreeSet implementation
     public partial class TreeSet
     {
         #region Constructors
@@ -335,7 +335,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region TreeSet<E>
+    #region TreeSet<E> implementation
     public partial class TreeSet<E>
     {
         #region Constructors

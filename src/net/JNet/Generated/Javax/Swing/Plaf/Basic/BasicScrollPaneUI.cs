@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Basic
 {
-    #region BasicScrollPaneUI definition
+    #region BasicScrollPaneUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Plaf.Basic
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region PropertyChangeHandler definition
+        #region PropertyChangeHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.PropertyChangeHandler.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region ViewportChangeHandler definition
+        #region ViewportChangeHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.ViewportChangeHandler.html"/>
         /// </summary>
@@ -160,7 +160,7 @@ namespace Javax.Swing.Plaf.Basic
     }
     #endregion
 
-    #region BasicScrollPaneUI
+    #region BasicScrollPaneUI implementation
     public partial class BasicScrollPaneUI
     {
         #region Constructors
@@ -188,7 +188,7 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Nested classes
-        #region PropertyChangeHandler
+        #region PropertyChangeHandler implementation
         public partial class PropertyChangeHandler
         {
             #region Constructors
@@ -239,7 +239,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region ViewportChangeHandler
+        #region ViewportChangeHandler implementation
         public partial class ViewportChangeHandler
         {
             #region Constructors

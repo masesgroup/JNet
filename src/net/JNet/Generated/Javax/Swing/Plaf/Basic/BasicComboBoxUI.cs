@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Basic
 {
-    #region BasicComboBoxUI definition
+    #region BasicComboBoxUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Plaf.Basic
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region ComboBoxLayoutManager definition
+        #region ComboBoxLayoutManager declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.ComboBoxLayoutManager.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region FocusHandler definition
+        #region FocusHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.FocusHandler.html"/>
         /// </summary>
@@ -156,7 +156,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region ItemHandler definition
+        #region ItemHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.ItemHandler.html"/>
         /// </summary>
@@ -201,7 +201,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region ListDataHandler definition
+        #region ListDataHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.ListDataHandler.html"/>
         /// </summary>
@@ -246,7 +246,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region PropertyChangeHandler definition
+        #region PropertyChangeHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.PropertyChangeHandler.html"/>
         /// </summary>
@@ -295,7 +295,7 @@ namespace Javax.Swing.Plaf.Basic
     }
     #endregion
 
-    #region BasicComboBoxUI
+    #region BasicComboBoxUI implementation
     public partial class BasicComboBoxUI
     {
         #region Constructors
@@ -367,7 +367,7 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Nested classes
-        #region ComboBoxLayoutManager
+        #region ComboBoxLayoutManager implementation
         public partial class ComboBoxLayoutManager
         {
             #region Constructors
@@ -449,7 +449,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region FocusHandler
+        #region FocusHandler implementation
         public partial class FocusHandler
         {
             #region Constructors
@@ -508,7 +508,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region ItemHandler
+        #region ItemHandler implementation
         public partial class ItemHandler
         {
             #region Constructors
@@ -559,7 +559,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region ListDataHandler
+        #region ListDataHandler implementation
         public partial class ListDataHandler
         {
             #region Constructors
@@ -626,7 +626,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region PropertyChangeHandler
+        #region PropertyChangeHandler implementation
         public partial class PropertyChangeHandler
         {
             #region Constructors

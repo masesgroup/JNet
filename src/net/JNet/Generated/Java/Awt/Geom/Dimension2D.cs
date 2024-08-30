@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Geom
 {
-    #region Dimension2D definition
+    #region Dimension2D declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Dimension2D.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Awt.Geom
     }
     #endregion
 
-    #region Dimension2D
+    #region Dimension2D implementation
     public partial class Dimension2D
     {
         #region Constructors

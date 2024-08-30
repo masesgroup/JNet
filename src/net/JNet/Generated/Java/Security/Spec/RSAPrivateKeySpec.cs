@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Spec
 {
-    #region RSAPrivateKeySpec definition
+    #region RSAPrivateKeySpec declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPrivateKeySpec.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Security.Spec
     }
     #endregion
 
-    #region RSAPrivateKeySpec
+    #region RSAPrivateKeySpec implementation
     public partial class RSAPrivateKeySpec
     {
         #region Constructors

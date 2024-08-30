@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig.Spec
 {
-    #region XPathType definition
+    #region XPathType declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Filter definition
+        #region Filter declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.Filter.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
     }
     #endregion
 
-    #region XPathType
+    #region XPathType implementation
     public partial class XPathType
     {
         #region Constructors
@@ -179,7 +179,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         #endregion
 
         #region Nested classes
-        #region Filter
+        #region Filter implementation
         public partial class Filter
         {
             #region Constructors

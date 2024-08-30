@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region AbstractMap definition
+    #region AbstractMap declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Java.Util
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region SimpleEntry definition
+        #region SimpleEntry declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleEntry.html"/>
         /// </summary>
@@ -113,7 +113,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region SimpleEntry<K, V> definition
+        #region SimpleEntry<K, V> declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleEntry.html"/>
         /// </summary>
@@ -160,7 +160,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region SimpleImmutableEntry definition
+        #region SimpleImmutableEntry declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleImmutableEntry.html"/>
         /// </summary>
@@ -205,7 +205,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region SimpleImmutableEntry<K, V> definition
+        #region SimpleImmutableEntry<K, V> declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleImmutableEntry.html"/>
         /// </summary>
@@ -256,7 +256,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region AbstractMap<K, V> definition
+    #region AbstractMap<K, V> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html"/>
     /// </summary>
@@ -305,7 +305,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region AbstractMap
+    #region AbstractMap implementation
     public partial class AbstractMap
     {
         #region Constructors
@@ -430,7 +430,7 @@ namespace Java.Util
         #endregion
 
         #region Nested classes
-        #region SimpleEntry
+        #region SimpleEntry implementation
         public partial class SimpleEntry
         {
             #region Constructors
@@ -505,7 +505,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region SimpleEntry<K, V>
+        #region SimpleEntry<K, V> implementation
         public partial class SimpleEntry<K, V>
         {
             #region Constructors
@@ -584,7 +584,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region SimpleImmutableEntry
+        #region SimpleImmutableEntry implementation
         public partial class SimpleImmutableEntry
         {
             #region Constructors
@@ -659,7 +659,7 @@ namespace Java.Util
         }
         #endregion
 
-        #region SimpleImmutableEntry<K, V>
+        #region SimpleImmutableEntry<K, V> implementation
         public partial class SimpleImmutableEntry<K, V>
         {
             #region Constructors
@@ -745,7 +745,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region AbstractMap<K, V>
+    #region AbstractMap<K, V> implementation
     public partial class AbstractMap<K, V>
     {
         #region Constructors

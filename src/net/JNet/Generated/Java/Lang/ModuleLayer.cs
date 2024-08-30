@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region ModuleLayer definition
+    #region ModuleLayer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Lang
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Controller definition
+        #region Controller declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.Controller.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region ModuleLayer
+    #region ModuleLayer implementation
     public partial class ModuleLayer
     {
         #region Constructors
@@ -260,7 +260,7 @@ namespace Java.Lang
         #endregion
 
         #region Nested classes
-        #region Controller
+        #region Controller implementation
         public partial class Controller
         {
             #region Constructors

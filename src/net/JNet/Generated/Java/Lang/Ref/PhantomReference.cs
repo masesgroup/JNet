@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Ref
 {
-    #region PhantomReference definition
+    #region PhantomReference declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/PhantomReference.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Lang.Ref
     }
     #endregion
 
-    #region PhantomReference<T> definition
+    #region PhantomReference<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/PhantomReference.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Lang.Ref
     }
     #endregion
 
-    #region PhantomReference
+    #region PhantomReference implementation
     public partial class PhantomReference
     {
         #region Constructors
@@ -156,7 +156,7 @@ namespace Java.Lang.Ref
     }
     #endregion
 
-    #region PhantomReference<T>
+    #region PhantomReference<T> implementation
     public partial class PhantomReference<T>
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region TabableView definition
+    #region TabableView declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabableView.html"/>
     /// </summary>
@@ -104,7 +104,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region TabableView
+    #region TabableView implementation
     public partial class TabableView : Javax.Swing.Text.ITabableView
     {
         #region Constructors

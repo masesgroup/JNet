@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Border
 {
-    #region BevelBorder definition
+    #region BevelBorder declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/BevelBorder.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Border
     }
     #endregion
 
-    #region BevelBorder
+    #region BevelBorder implementation
     public partial class BevelBorder
     {
         #region Constructors

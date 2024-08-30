@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region TableView definition
+    #region TableView declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TableView.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Swing.Text
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region TableRow definition
+        #region TableRow declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TableView.TableRow.html"/>
         /// </summary>
@@ -117,7 +117,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region TableView
+    #region TableView implementation
     public partial class TableView
     {
         #region Constructors
@@ -149,7 +149,7 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Nested classes
-        #region TableRow
+        #region TableRow implementation
         public partial class TableRow
         {
             #region Constructors

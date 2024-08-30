@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region JTextComponent definition
+    #region JTextComponent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Swing.Text
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region AccessibleJTextComponent definition
+        #region AccessibleJTextComponent declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html"/>
         /// </summary>
@@ -113,7 +113,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region DropLocation definition
+        #region DropLocation declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.DropLocation.html"/>
         /// </summary>
@@ -158,7 +158,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region KeyBinding definition
+        #region KeyBinding declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.KeyBinding.html"/>
         /// </summary>
@@ -207,7 +207,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region JTextComponent
+    #region JTextComponent implementation
     public partial class JTextComponent
     {
         #region Constructors
@@ -666,7 +666,7 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Nested classes
-        #region AccessibleJTextComponent
+        #region AccessibleJTextComponent implementation
         public partial class AccessibleJTextComponent
         {
             #region Constructors
@@ -1000,7 +1000,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region DropLocation
+        #region DropLocation implementation
         public partial class DropLocation
         {
             #region Constructors
@@ -1045,7 +1045,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region KeyBinding
+        #region KeyBinding implementation
         public partial class KeyBinding
         {
             #region Constructors

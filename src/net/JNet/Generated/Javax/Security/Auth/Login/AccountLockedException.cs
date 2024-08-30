@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Security.Auth.Login
 {
-    #region AccountLockedException definition
+    #region AccountLockedException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/AccountLockedException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Security.Auth.Login
     }
     #endregion
 
-    #region AccountLockedException
+    #region AccountLockedException implementation
     public partial class AccountLockedException
     {
         #region Constructors

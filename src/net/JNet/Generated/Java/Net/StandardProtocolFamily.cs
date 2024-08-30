@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
-    #region StandardProtocolFamily definition
+    #region StandardProtocolFamily declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/StandardProtocolFamily.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Net
     }
     #endregion
 
-    #region StandardProtocolFamily
+    #region StandardProtocolFamily implementation
     public partial class StandardProtocolFamily
     {
         #region Constructors

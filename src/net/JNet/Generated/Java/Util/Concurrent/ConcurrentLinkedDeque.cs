@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region ConcurrentLinkedDeque definition
+    #region ConcurrentLinkedDeque declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ConcurrentLinkedDeque<E> definition
+    #region ConcurrentLinkedDeque<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedDeque.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ConcurrentLinkedDeque
+    #region ConcurrentLinkedDeque implementation
     public partial class ConcurrentLinkedDeque
     {
         #region Constructors
@@ -342,7 +342,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ConcurrentLinkedDeque<E>
+    #region ConcurrentLinkedDeque<E> implementation
     public partial class ConcurrentLinkedDeque<E>
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region Stack definition
+    #region Stack declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Stack<E> definition
+    #region Stack<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Stack
+    #region Stack implementation
     public partial class Stack
     {
         #region Constructors
@@ -189,7 +189,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Stack<E>
+    #region Stack<E> implementation
     public partial class Stack<E>
     {
         #region Constructors

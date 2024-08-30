@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql
 {
-    #region StatementEvent definition
+    #region StatementEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEvent.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Sql
     }
     #endregion
 
-    #region StatementEvent
+    #region StatementEvent implementation
     public partial class StatementEvent
     {
         #region Constructors

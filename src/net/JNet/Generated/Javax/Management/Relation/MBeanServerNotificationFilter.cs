@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Relation
 {
-    #region MBeanServerNotificationFilter definition
+    #region MBeanServerNotificationFilter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/MBeanServerNotificationFilter.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Management.Relation
     }
     #endregion
 
-    #region MBeanServerNotificationFilter
+    #region MBeanServerNotificationFilter implementation
     public partial class MBeanServerNotificationFilter
     {
         #region Constructors

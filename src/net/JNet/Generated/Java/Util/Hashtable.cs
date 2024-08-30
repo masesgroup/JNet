@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region Hashtable definition
+    #region Hashtable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Hashtable<K, V> definition
+    #region Hashtable<K, V> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html"/>
     /// </summary>
@@ -117,7 +117,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Hashtable
+    #region Hashtable implementation
     public partial class Hashtable
     {
         #region Constructors
@@ -359,7 +359,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Hashtable<K, V>
+    #region Hashtable<K, V> implementation
     public partial class Hashtable<K, V>
     {
         #region Constructors

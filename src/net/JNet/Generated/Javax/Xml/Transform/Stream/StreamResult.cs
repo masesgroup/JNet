@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Transform.Stream
 {
-    #region StreamResult definition
+    #region StreamResult declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamResult.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Xml.Transform.Stream
     }
     #endregion
 
-    #region StreamResult
+    #region StreamResult implementation
     public partial class StreamResult
     {
         #region Constructors

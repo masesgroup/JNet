@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Crypto
 {
-    #region ShortBufferException definition
+    #region ShortBufferException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/ShortBufferException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Crypto
     }
     #endregion
 
-    #region ShortBufferException
+    #region ShortBufferException implementation
     public partial class ShortBufferException
     {
         #region Constructors

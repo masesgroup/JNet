@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Cert
 {
-    #region CertSelector definition
+    #region CertSelector declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertSelector.html"/>
     /// </summary>
@@ -96,7 +96,7 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region CertSelector
+    #region CertSelector implementation
     public partial class CertSelector : Java.Security.Cert.ICertSelector
     {
         #region Constructors

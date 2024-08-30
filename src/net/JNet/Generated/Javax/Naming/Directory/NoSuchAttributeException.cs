@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Directory
 {
-    #region NoSuchAttributeException definition
+    #region NoSuchAttributeException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/NoSuchAttributeException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Naming.Directory
     }
     #endregion
 
-    #region NoSuchAttributeException
+    #region NoSuchAttributeException implementation
     public partial class NoSuchAttributeException
     {
         #region Constructors

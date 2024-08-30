@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Management
 {
-    #region OperatingSystemMXBean definition
+    #region OperatingSystemMXBean declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/OperatingSystemMXBean.html"/>
     /// </summary>
@@ -110,7 +110,7 @@ namespace Java.Lang.Management
     }
     #endregion
 
-    #region OperatingSystemMXBean
+    #region OperatingSystemMXBean implementation
     public partial class OperatingSystemMXBean : Java.Lang.Management.IOperatingSystemMXBean
     {
         #region Constructors

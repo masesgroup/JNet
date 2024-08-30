@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region PrivilegedActionException definition
+    #region PrivilegedActionException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedActionException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region PrivilegedActionException
+    #region PrivilegedActionException implementation
     public partial class PrivilegedActionException
     {
         #region Constructors

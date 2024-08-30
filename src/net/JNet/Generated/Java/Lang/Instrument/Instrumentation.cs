@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Instrument
 {
-    #region Instrumentation definition
+    #region Instrumentation declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html"/>
     /// </summary>
@@ -189,7 +189,7 @@ namespace Java.Lang.Instrument
     }
     #endregion
 
-    #region Instrumentation
+    #region Instrumentation implementation
     public partial class Instrumentation : Java.Lang.Instrument.IInstrumentation
     {
         #region Constructors

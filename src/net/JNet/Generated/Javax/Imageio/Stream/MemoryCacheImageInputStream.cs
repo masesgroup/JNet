@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio.Stream
 {
-    #region MemoryCacheImageInputStream definition
+    #region MemoryCacheImageInputStream declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/MemoryCacheImageInputStream.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Imageio.Stream
     }
     #endregion
 
-    #region MemoryCacheImageInputStream
+    #region MemoryCacheImageInputStream implementation
     public partial class MemoryCacheImageInputStream
     {
         #region Constructors

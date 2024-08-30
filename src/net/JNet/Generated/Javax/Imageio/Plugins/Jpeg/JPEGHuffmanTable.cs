@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio.Plugins.Jpeg
 {
-    #region JPEGHuffmanTable definition
+    #region JPEGHuffmanTable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Imageio.Plugins.Jpeg
     }
     #endregion
 
-    #region JPEGHuffmanTable
+    #region JPEGHuffmanTable implementation
     public partial class JPEGHuffmanTable
     {
         #region Constructors

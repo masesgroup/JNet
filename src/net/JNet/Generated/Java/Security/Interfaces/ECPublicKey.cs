@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Interfaces
 {
-    #region ECPublicKey definition
+    #region ECPublicKey declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/ECPublicKey.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Java.Security.Interfaces
     }
     #endregion
 
-    #region ECPublicKey
+    #region ECPublicKey implementation
     public partial class ECPublicKey : Java.Security.Interfaces.IECPublicKey
     {
         #region Constructors

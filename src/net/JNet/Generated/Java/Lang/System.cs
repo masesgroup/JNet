@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region System definition
+    #region System declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Lang
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Logger definition
+        #region Logger declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html"/>
         /// </summary>
@@ -109,7 +109,7 @@ namespace Java.Lang
             public override bool IsBridgeStatic => true;
 
             // TODO: complete the class
-            #region Level definition
+            #region Level declaration
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.Level.html"/>
             /// </summary>
@@ -158,7 +158,7 @@ namespace Java.Lang
         }
         #endregion
 
-        #region LoggerFinder definition
+        #region LoggerFinder declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.LoggerFinder.html"/>
         /// </summary>
@@ -209,7 +209,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region System
+    #region System implementation
     public partial class System
     {
         #region Constructors
@@ -471,7 +471,7 @@ namespace Java.Lang
         #endregion
 
         #region Nested classes
-        #region Logger
+        #region Logger implementation
         public partial class Logger
         {
             #region Constructors
@@ -590,7 +590,7 @@ namespace Java.Lang
             #endregion
 
             #region Nested classes
-            #region Level
+            #region Level implementation
             public partial class Level
             {
                 #region Constructors
@@ -701,7 +701,7 @@ namespace Java.Lang
         }
         #endregion
 
-        #region LoggerFinder
+        #region LoggerFinder implementation
         public partial class LoggerFinder
         {
             #region Constructors

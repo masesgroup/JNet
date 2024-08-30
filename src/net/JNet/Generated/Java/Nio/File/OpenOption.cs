@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File
 {
-    #region OpenOption definition
+    #region OpenOption declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/OpenOption.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region OpenOption
+    #region OpenOption implementation
     public partial class OpenOption : Java.Nio.File.IOpenOption
     {
         #region Constructors

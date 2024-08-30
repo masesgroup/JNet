@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Geom
 {
-    #region NoninvertibleTransformException definition
+    #region NoninvertibleTransformException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/NoninvertibleTransformException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Awt.Geom
     }
     #endregion
 
-    #region NoninvertibleTransformException
+    #region NoninvertibleTransformException implementation
     public partial class NoninvertibleTransformException
     {
         #region Constructors

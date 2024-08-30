@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Relation
 {
-    #region RelationServiceNotRegisteredException definition
+    #region RelationServiceNotRegisteredException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceNotRegisteredException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Management.Relation
     }
     #endregion
 
-    #region RelationServiceNotRegisteredException
+    #region RelationServiceNotRegisteredException implementation
     public partial class RelationServiceNotRegisteredException
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time.Zone
 {
-    #region ZoneRulesProvider definition
+    #region ZoneRulesProvider declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Time.Zone
     }
     #endregion
 
-    #region ZoneRulesProvider
+    #region ZoneRulesProvider implementation
     public partial class ZoneRulesProvider
     {
         #region Constructors

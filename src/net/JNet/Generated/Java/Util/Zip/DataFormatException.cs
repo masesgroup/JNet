@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Zip
 {
-    #region DataFormatException definition
+    #region DataFormatException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/DataFormatException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Util.Zip
     }
     #endregion
 
-    #region DataFormatException
+    #region DataFormatException implementation
     public partial class DataFormatException
     {
         #region Constructors

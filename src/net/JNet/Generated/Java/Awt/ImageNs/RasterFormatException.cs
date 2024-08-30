@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ImageNs
 {
-    #region RasterFormatException definition
+    #region RasterFormatException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RasterFormatException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Awt.ImageNs
     }
     #endregion
 
-    #region RasterFormatException
+    #region RasterFormatException implementation
     public partial class RasterFormatException
     {
         #region Constructors

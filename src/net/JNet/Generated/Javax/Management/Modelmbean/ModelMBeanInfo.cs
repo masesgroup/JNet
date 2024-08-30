@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Modelmbean
 {
-    #region ModelMBeanInfo definition
+    #region ModelMBeanInfo declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html"/>
     /// </summary>
@@ -174,7 +174,7 @@ namespace Javax.Management.Modelmbean
     }
     #endregion
 
-    #region ModelMBeanInfo
+    #region ModelMBeanInfo implementation
     public partial class ModelMBeanInfo : Javax.Management.Modelmbean.IModelMBeanInfo
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent.Atomic
 {
-    #region AtomicReferenceFieldUpdater definition
+    #region AtomicReferenceFieldUpdater declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util.Concurrent.Atomic
     }
     #endregion
 
-    #region AtomicReferenceFieldUpdater<T, V> definition
+    #region AtomicReferenceFieldUpdater<T, V> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html"/>
     /// </summary>
@@ -121,7 +121,7 @@ namespace Java.Util.Concurrent.Atomic
     }
     #endregion
 
-    #region AtomicReferenceFieldUpdater
+    #region AtomicReferenceFieldUpdater implementation
     public partial class AtomicReferenceFieldUpdater
     {
         #region Constructors
@@ -264,7 +264,7 @@ namespace Java.Util.Concurrent.Atomic
     }
     #endregion
 
-    #region AtomicReferenceFieldUpdater<T, V>
+    #region AtomicReferenceFieldUpdater<T, V> implementation
     public partial class AtomicReferenceFieldUpdater<T, V>
     {
         #region Constructors

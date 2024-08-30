@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Invoke
 {
-    #region StringConcatException definition
+    #region StringConcatException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/StringConcatException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang.Invoke
     }
     #endregion
 
-    #region StringConcatException
+    #region StringConcatException implementation
     public partial class StringConcatException
     {
         #region Constructors

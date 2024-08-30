@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Transaction.Xa
 {
-    #region XAResource definition
+    #region XAResource declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html"/>
     /// </summary>
@@ -155,7 +155,7 @@ namespace Javax.Transaction.Xa
     }
     #endregion
 
-    #region XAResource
+    #region XAResource implementation
     public partial class XAResource : Javax.Transaction.Xa.IXAResource
     {
         #region Constructors

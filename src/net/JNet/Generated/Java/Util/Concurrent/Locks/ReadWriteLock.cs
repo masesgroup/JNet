@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent.Locks
 {
-    #region ReadWriteLock definition
+    #region ReadWriteLock declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReadWriteLock.html"/>
     /// </summary>
@@ -100,7 +100,7 @@ namespace Java.Util.Concurrent.Locks
     }
     #endregion
 
-    #region ReadWriteLock
+    #region ReadWriteLock implementation
     public partial class ReadWriteLock : Java.Util.Concurrent.Locks.IReadWriteLock
     {
         #region Constructors

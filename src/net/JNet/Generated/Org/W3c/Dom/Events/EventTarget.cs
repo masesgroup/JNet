@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Events
 {
-    #region EventTarget definition
+    #region EventTarget declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventTarget.html"/>
     /// </summary>
@@ -111,7 +111,7 @@ namespace Org.W3c.Dom.Events
     }
     #endregion
 
-    #region EventTarget
+    #region EventTarget implementation
     public partial class EventTarget : Org.W3c.Dom.Events.IEventTarget
     {
         #region Constructors

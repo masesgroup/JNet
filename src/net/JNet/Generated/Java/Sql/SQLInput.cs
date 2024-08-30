@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region SQLInput definition
+    #region SQLInput declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html"/>
     /// </summary>
@@ -260,7 +260,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region SQLInput
+    #region SQLInput implementation
     public partial class SQLInput : Java.Sql.ISQLInput
     {
         #region Constructors

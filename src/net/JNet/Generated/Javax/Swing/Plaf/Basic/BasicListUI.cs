@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Basic
 {
-    #region BasicListUI definition
+    #region BasicListUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Plaf.Basic
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region FocusHandler definition
+        #region FocusHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.FocusHandler.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region ListDataHandler definition
+        #region ListDataHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListDataHandler.html"/>
         /// </summary>
@@ -156,7 +156,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region ListSelectionHandler definition
+        #region ListSelectionHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListSelectionHandler.html"/>
         /// </summary>
@@ -201,7 +201,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region MouseInputHandler definition
+        #region MouseInputHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.MouseInputHandler.html"/>
         /// </summary>
@@ -246,7 +246,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region PropertyChangeHandler definition
+        #region PropertyChangeHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.PropertyChangeHandler.html"/>
         /// </summary>
@@ -295,7 +295,7 @@ namespace Javax.Swing.Plaf.Basic
     }
     #endregion
 
-    #region BasicListUI
+    #region BasicListUI implementation
     public partial class BasicListUI
     {
         #region Constructors
@@ -319,7 +319,7 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Nested classes
-        #region FocusHandler
+        #region FocusHandler implementation
         public partial class FocusHandler
         {
             #region Constructors
@@ -378,7 +378,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region ListDataHandler
+        #region ListDataHandler implementation
         public partial class ListDataHandler
         {
             #region Constructors
@@ -445,7 +445,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region ListSelectionHandler
+        #region ListSelectionHandler implementation
         public partial class ListSelectionHandler
         {
             #region Constructors
@@ -496,7 +496,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region MouseInputHandler
+        #region MouseInputHandler implementation
         public partial class MouseInputHandler
         {
             #region Constructors
@@ -595,7 +595,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region PropertyChangeHandler
+        #region PropertyChangeHandler implementation
         public partial class PropertyChangeHandler
         {
             #region Constructors

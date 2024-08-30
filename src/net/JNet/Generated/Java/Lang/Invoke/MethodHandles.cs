@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Invoke
 {
-    #region MethodHandles definition
+    #region MethodHandles declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Lang.Invoke
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Lookup definition
+        #region Lookup declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Lang.Invoke
     }
     #endregion
 
-    #region MethodHandles
+    #region MethodHandles implementation
     public partial class MethodHandles
     {
         #region Constructors
@@ -560,7 +560,7 @@ namespace Java.Lang.Invoke
         #endregion
 
         #region Nested classes
-        #region Lookup
+        #region Lookup implementation
         public partial class Lookup
         {
             #region Constructors

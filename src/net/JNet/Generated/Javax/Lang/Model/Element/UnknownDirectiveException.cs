@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Element
 {
-    #region UnknownDirectiveException definition
+    #region UnknownDirectiveException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/UnknownDirectiveException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Lang.Model.Element
     }
     #endregion
 
-    #region UnknownDirectiveException
+    #region UnknownDirectiveException implementation
     public partial class UnknownDirectiveException
     {
         #region Constructors

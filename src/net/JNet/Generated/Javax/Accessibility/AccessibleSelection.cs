@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Accessibility
 {
-    #region AccessibleSelection definition
+    #region AccessibleSelection declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleSelection.html"/>
     /// </summary>
@@ -124,7 +124,7 @@ namespace Javax.Accessibility
     }
     #endregion
 
-    #region AccessibleSelection
+    #region AccessibleSelection implementation
     public partial class AccessibleSelection : Javax.Accessibility.IAccessibleSelection
     {
         #region Constructors

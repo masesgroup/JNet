@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Remote
 {
-    #region JMXPrincipal definition
+    #region JMXPrincipal declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXPrincipal.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Management.Remote
     }
     #endregion
 
-    #region JMXPrincipal
+    #region JMXPrincipal implementation
     public partial class JMXPrincipal
     {
         #region Constructors

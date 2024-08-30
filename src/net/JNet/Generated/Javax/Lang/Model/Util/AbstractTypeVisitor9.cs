@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Util
 {
-    #region AbstractTypeVisitor9 definition
+    #region AbstractTypeVisitor9 declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor9.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region AbstractTypeVisitor9<R, P> definition
+    #region AbstractTypeVisitor9<R, P> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor9.html"/>
     /// </summary>
@@ -121,7 +121,7 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region AbstractTypeVisitor9
+    #region AbstractTypeVisitor9 implementation
     public partial class AbstractTypeVisitor9
     {
         #region Constructors
@@ -152,7 +152,7 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region AbstractTypeVisitor9<R, P>
+    #region AbstractTypeVisitor9<R, P> implementation
     public partial class AbstractTypeVisitor9<R, P>
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
-    #region HTMLMapElement definition
+    #region HTMLMapElement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLMapElement.html"/>
     /// </summary>
@@ -98,7 +98,7 @@ namespace Org.W3c.Dom.Html
     }
     #endregion
 
-    #region HTMLMapElement
+    #region HTMLMapElement implementation
     public partial class HTMLMapElement : Org.W3c.Dom.Html.IHTMLMapElement
     {
         #region Constructors

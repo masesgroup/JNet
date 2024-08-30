@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Charset
 {
-    #region CoderMalfunctionError definition
+    #region CoderMalfunctionError declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderMalfunctionError.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Nio.Charset
     }
     #endregion
 
-    #region CoderMalfunctionError
+    #region CoderMalfunctionError implementation
     public partial class CoderMalfunctionError
     {
         #region Constructors

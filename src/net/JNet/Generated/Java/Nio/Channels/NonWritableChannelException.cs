@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
-    #region NonWritableChannelException definition
+    #region NonWritableChannelException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NonWritableChannelException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region NonWritableChannelException
+    #region NonWritableChannelException implementation
     public partial class NonWritableChannelException
     {
         #region Constructors

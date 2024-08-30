@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region Character definition
+    #region Character declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Lang
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Subset definition
+        #region Subset declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.Subset.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Java.Lang
         }
         #endregion
 
-        #region UnicodeBlock definition
+        #region UnicodeBlock declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html"/>
         /// </summary>
@@ -156,7 +156,7 @@ namespace Java.Lang
         }
         #endregion
 
-        #region UnicodeScript definition
+        #region UnicodeScript declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html"/>
         /// </summary>
@@ -205,7 +205,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region Character
+    #region Character implementation
     public partial class Character
     {
         #region Constructors
@@ -1429,7 +1429,7 @@ namespace Java.Lang
         #endregion
 
         #region Nested classes
-        #region Subset
+        #region Subset implementation
         public partial class Subset
         {
             #region Constructors
@@ -1460,7 +1460,7 @@ namespace Java.Lang
         }
         #endregion
 
-        #region UnicodeBlock
+        #region UnicodeBlock implementation
         public partial class UnicodeBlock
         {
             #region Constructors
@@ -3198,7 +3198,7 @@ namespace Java.Lang
         }
         #endregion
 
-        #region UnicodeScript
+        #region UnicodeScript implementation
         public partial class UnicodeScript
         {
             #region Constructors

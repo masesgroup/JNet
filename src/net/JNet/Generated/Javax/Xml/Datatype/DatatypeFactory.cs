@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Datatype
 {
-    #region DatatypeFactory definition
+    #region DatatypeFactory declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Xml.Datatype
     }
     #endregion
 
-    #region DatatypeFactory
+    #region DatatypeFactory implementation
     public partial class DatatypeFactory
     {
         #region Constructors

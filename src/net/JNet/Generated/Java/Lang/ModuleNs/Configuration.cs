@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.ModuleNs
 {
-    #region Configuration definition
+    #region Configuration declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/Configuration.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Lang.ModuleNs
     }
     #endregion
 
-    #region Configuration
+    #region Configuration implementation
     public partial class Configuration
     {
         #region Constructors

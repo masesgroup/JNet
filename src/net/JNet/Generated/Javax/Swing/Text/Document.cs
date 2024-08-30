@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region Document definition
+    #region Document declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html"/>
     /// </summary>
@@ -185,7 +185,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region Document
+    #region Document implementation
     public partial class Document : Javax.Swing.Text.IDocument
     {
         #region Constructors

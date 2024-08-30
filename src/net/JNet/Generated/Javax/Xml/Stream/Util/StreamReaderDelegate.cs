@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream.Util
 {
-    #region StreamReaderDelegate definition
+    #region StreamReaderDelegate declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Xml.Stream.Util
     }
     #endregion
 
-    #region StreamReaderDelegate
+    #region StreamReaderDelegate implementation
     public partial class StreamReaderDelegate
     {
         #region Constructors

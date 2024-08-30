@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
-    #region UndeclaredThrowableException definition
+    #region UndeclaredThrowableException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/UndeclaredThrowableException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region UndeclaredThrowableException
+    #region UndeclaredThrowableException implementation
     public partial class UndeclaredThrowableException
     {
         #region Constructors

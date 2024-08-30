@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Prefs
 {
-    #region Preferences definition
+    #region Preferences declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util.Prefs
     }
     #endregion
 
-    #region Preferences
+    #region Preferences implementation
     public partial class Preferences
     {
         #region Constructors

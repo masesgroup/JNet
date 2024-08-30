@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region DefaultEditorKit definition
+    #region DefaultEditorKit declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Text
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region BeepAction definition
+        #region BeepAction declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.BeepAction.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region CopyAction definition
+        #region CopyAction declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.CopyAction.html"/>
         /// </summary>
@@ -156,7 +156,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region CutAction definition
+        #region CutAction declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.CutAction.html"/>
         /// </summary>
@@ -201,7 +201,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region DefaultKeyTypedAction definition
+        #region DefaultKeyTypedAction declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.DefaultKeyTypedAction.html"/>
         /// </summary>
@@ -246,7 +246,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region InsertBreakAction definition
+        #region InsertBreakAction declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.InsertBreakAction.html"/>
         /// </summary>
@@ -291,7 +291,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region InsertContentAction definition
+        #region InsertContentAction declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.InsertContentAction.html"/>
         /// </summary>
@@ -336,7 +336,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region InsertTabAction definition
+        #region InsertTabAction declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.InsertTabAction.html"/>
         /// </summary>
@@ -381,7 +381,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region PasteAction definition
+        #region PasteAction declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.PasteAction.html"/>
         /// </summary>
@@ -430,7 +430,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region DefaultEditorKit
+    #region DefaultEditorKit implementation
     public partial class DefaultEditorKit
     {
         #region Constructors
@@ -748,7 +748,7 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Nested classes
-        #region BeepAction
+        #region BeepAction implementation
         public partial class BeepAction
         {
             #region Constructors
@@ -779,7 +779,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region CopyAction
+        #region CopyAction implementation
         public partial class CopyAction
         {
             #region Constructors
@@ -810,7 +810,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region CutAction
+        #region CutAction implementation
         public partial class CutAction
         {
             #region Constructors
@@ -841,7 +841,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region DefaultKeyTypedAction
+        #region DefaultKeyTypedAction implementation
         public partial class DefaultKeyTypedAction
         {
             #region Constructors
@@ -872,7 +872,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region InsertBreakAction
+        #region InsertBreakAction implementation
         public partial class InsertBreakAction
         {
             #region Constructors
@@ -903,7 +903,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region InsertContentAction
+        #region InsertContentAction implementation
         public partial class InsertContentAction
         {
             #region Constructors
@@ -934,7 +934,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region InsertTabAction
+        #region InsertTabAction implementation
         public partial class InsertTabAction
         {
             #region Constructors
@@ -965,7 +965,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region PasteAction
+        #region PasteAction implementation
         public partial class PasteAction
         {
             #region Constructors

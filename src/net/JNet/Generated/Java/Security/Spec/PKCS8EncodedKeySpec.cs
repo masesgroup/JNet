@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Spec
 {
-    #region PKCS8EncodedKeySpec definition
+    #region PKCS8EncodedKeySpec declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PKCS8EncodedKeySpec.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Security.Spec
     }
     #endregion
 
-    #region PKCS8EncodedKeySpec
+    #region PKCS8EncodedKeySpec implementation
     public partial class PKCS8EncodedKeySpec
     {
         #region Constructors

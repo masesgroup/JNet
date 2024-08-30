@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region OutOfMemoryError definition
+    #region OutOfMemoryError declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/OutOfMemoryError.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region OutOfMemoryError
+    #region OutOfMemoryError implementation
     public partial class OutOfMemoryError
     {
         #region Constructors

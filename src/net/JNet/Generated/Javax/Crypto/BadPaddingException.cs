@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Crypto
 {
-    #region BadPaddingException definition
+    #region BadPaddingException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/BadPaddingException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Crypto
     }
     #endregion
 
-    #region BadPaddingException
+    #region BadPaddingException implementation
     public partial class BadPaddingException
     {
         #region Constructors

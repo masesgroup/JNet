@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time.Format
 {
-    #region DateTimeFormatterBuilder definition
+    #region DateTimeFormatterBuilder declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Time.Format
     }
     #endregion
 
-    #region DateTimeFormatterBuilder
+    #region DateTimeFormatterBuilder implementation
     public partial class DateTimeFormatterBuilder
     {
         #region Constructors

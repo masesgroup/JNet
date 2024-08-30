@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
-    #region KeyAdapter definition
+    #region KeyAdapter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyAdapter.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region KeyAdapterDirect definition
+    #region KeyAdapterDirect declaration
     /// <summary>
     /// Direct override of <see cref="KeyAdapter"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region KeyAdapter
+    #region KeyAdapter implementation
     public partial class KeyAdapter
     {
         #region Constructors
@@ -196,7 +196,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region KeyAdapterDirect
+    #region KeyAdapterDirect implementation
     public partial class KeyAdapterDirect
     {
         #region Constructors

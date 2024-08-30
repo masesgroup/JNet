@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region ImageCapabilities definition
+    #region ImageCapabilities declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ImageCapabilities.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region ImageCapabilities
+    #region ImageCapabilities implementation
     public partial class ImageCapabilities
     {
         #region Constructors

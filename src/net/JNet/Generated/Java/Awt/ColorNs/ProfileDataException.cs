@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ColorNs
 {
-    #region ProfileDataException definition
+    #region ProfileDataException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ProfileDataException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Awt.ColorNs
     }
     #endregion
 
-    #region ProfileDataException
+    #region ProfileDataException implementation
     public partial class ProfileDataException
     {
         #region Constructors

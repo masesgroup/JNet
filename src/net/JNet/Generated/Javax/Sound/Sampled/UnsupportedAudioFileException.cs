@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Sampled
 {
-    #region UnsupportedAudioFileException definition
+    #region UnsupportedAudioFileException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/UnsupportedAudioFileException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Sound.Sampled
     }
     #endregion
 
-    #region UnsupportedAudioFileException
+    #region UnsupportedAudioFileException implementation
     public partial class UnsupportedAudioFileException
     {
         #region Constructors

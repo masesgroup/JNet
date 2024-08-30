@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File.Attribute
 {
-    #region PosixFilePermissions definition
+    #region PosixFilePermissions declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermissions.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Nio.File.Attribute
     }
     #endregion
 
-    #region PosixFilePermissions
+    #region PosixFilePermissions implementation
     public partial class PosixFilePermissions
     {
         #region Constructors

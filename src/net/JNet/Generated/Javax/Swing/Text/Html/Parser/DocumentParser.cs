@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text.Html.Parser
 {
-    #region DocumentParser definition
+    #region DocumentParser declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DocumentParser.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Text.Html.Parser
     }
     #endregion
 
-    #region DocumentParser
+    #region DocumentParser implementation
     public partial class DocumentParser
     {
         #region Constructors

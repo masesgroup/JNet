@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Basic
 {
-    #region BasicTableUI definition
+    #region BasicTableUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Plaf.Basic
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region FocusHandler definition
+        #region FocusHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.FocusHandler.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region KeyHandler definition
+        #region KeyHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.KeyHandler.html"/>
         /// </summary>
@@ -156,7 +156,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region MouseInputHandler definition
+        #region MouseInputHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html"/>
         /// </summary>
@@ -205,7 +205,7 @@ namespace Javax.Swing.Plaf.Basic
     }
     #endregion
 
-    #region BasicTableUI
+    #region BasicTableUI implementation
     public partial class BasicTableUI
     {
         #region Constructors
@@ -229,7 +229,7 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Nested classes
-        #region FocusHandler
+        #region FocusHandler implementation
         public partial class FocusHandler
         {
             #region Constructors
@@ -288,7 +288,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region KeyHandler
+        #region KeyHandler implementation
         public partial class KeyHandler
         {
             #region Constructors
@@ -355,7 +355,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region MouseInputHandler
+        #region MouseInputHandler implementation
         public partial class MouseInputHandler
         {
             #region Constructors

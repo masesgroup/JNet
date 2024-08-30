@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Script
 {
-    #region SimpleBindings definition
+    #region SimpleBindings declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Script
     }
     #endregion
 
-    #region SimpleBindings
+    #region SimpleBindings implementation
     public partial class SimpleBindings
     {
         #region Constructors

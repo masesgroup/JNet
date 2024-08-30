@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Filechooser
 {
-    #region FileSystemView definition
+    #region FileSystemView declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Swing.Filechooser
     }
     #endregion
 
-    #region FileSystemView
+    #region FileSystemView implementation
     public partial class FileSystemView
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region MBeanServer definition
+    #region MBeanServer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html"/>
     /// </summary>
@@ -383,7 +383,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region MBeanServer
+    #region MBeanServer implementation
     public partial class MBeanServer : Javax.Management.IMBeanServer
     {
         #region Constructors

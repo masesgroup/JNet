@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Security.Auth.Login
 {
-    #region CredentialNotFoundException definition
+    #region CredentialNotFoundException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/CredentialNotFoundException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Security.Auth.Login
     }
     #endregion
 
-    #region CredentialNotFoundException
+    #region CredentialNotFoundException implementation
     public partial class CredentialNotFoundException
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Directory
 {
-    #region InvalidSearchControlsException definition
+    #region InvalidSearchControlsException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/InvalidSearchControlsException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Naming.Directory
     }
     #endregion
 
-    #region InvalidSearchControlsException
+    #region InvalidSearchControlsException implementation
     public partial class InvalidSearchControlsException
     {
         #region Constructors

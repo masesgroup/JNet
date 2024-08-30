@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Xpath
 {
-    #region XPathEvaluationResult definition
+    #region XPathEvaluationResult declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Xml.Xpath
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region XPathResultType definition
+        #region XPathResultType declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html"/>
         /// </summary>
@@ -117,7 +117,7 @@ namespace Javax.Xml.Xpath
     }
     #endregion
 
-    #region XPathEvaluationResult<T> definition
+    #region XPathEvaluationResult<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html"/>
     /// </summary>
@@ -165,7 +165,7 @@ namespace Javax.Xml.Xpath
     }
     #endregion
 
-    #region XPathEvaluationResult
+    #region XPathEvaluationResult implementation
     public partial class XPathEvaluationResult
     {
         #region Constructors
@@ -205,7 +205,7 @@ namespace Javax.Xml.Xpath
         #endregion
 
         #region Nested classes
-        #region XPathResultType
+        #region XPathResultType implementation
         public partial class XPathResultType
         {
             #region Constructors
@@ -333,7 +333,7 @@ namespace Javax.Xml.Xpath
     }
     #endregion
 
-    #region XPathEvaluationResult<T>
+    #region XPathEvaluationResult<T> implementation
     public partial class XPathEvaluationResult<T> : Javax.Xml.Xpath.IXPathEvaluationResult<T>
     {
         #region Constructors

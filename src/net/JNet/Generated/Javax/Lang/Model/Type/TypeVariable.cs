@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Type
 {
-    #region TypeVariable definition
+    #region TypeVariable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVariable.html"/>
     /// </summary>
@@ -103,7 +103,7 @@ namespace Javax.Lang.Model.Type
     }
     #endregion
 
-    #region TypeVariable
+    #region TypeVariable implementation
     public partial class TypeVariable : Javax.Lang.Model.Type.ITypeVariable
     {
         #region Constructors

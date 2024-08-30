@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region Flow definition
+    #region Flow declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Util.Concurrent
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Processor definition
+        #region Processor declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Processor.html"/>
         /// </summary>
@@ -113,7 +113,7 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
-        #region Processor<T, R> definition
+        #region Processor<T, R> declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Processor.html"/>
         /// </summary>
@@ -162,7 +162,7 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
-        #region Publisher definition
+        #region Publisher declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Publisher.html"/>
         /// </summary>
@@ -209,7 +209,7 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
-        #region Publisher<T> definition
+        #region Publisher<T> declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Publisher.html"/>
         /// </summary>
@@ -257,7 +257,7 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
-        #region Subscriber definition
+        #region Subscriber declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscriber.html"/>
         /// </summary>
@@ -304,7 +304,7 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
-        #region Subscriber<T> definition
+        #region Subscriber<T> declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscriber.html"/>
         /// </summary>
@@ -352,7 +352,7 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
-        #region Subscription definition
+        #region Subscription declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscription.html"/>
         /// </summary>
@@ -403,7 +403,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region Flow
+    #region Flow implementation
     public partial class Flow
     {
         #region Constructors
@@ -435,7 +435,7 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Nested classes
-        #region Processor
+        #region Processor implementation
         public partial class Processor
         {
             #region Constructors
@@ -466,7 +466,7 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
-        #region Processor<T, R>
+        #region Processor<T, R> implementation
         public partial class Processor<T, R>
         {
             #region Constructors
@@ -501,7 +501,7 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
-        #region Publisher
+        #region Publisher implementation
         public partial class Publisher
         {
             #region Constructors
@@ -540,7 +540,7 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
-        #region Publisher<T>
+        #region Publisher<T> implementation
         public partial class Publisher<T>
         {
             #region Constructors
@@ -584,7 +584,7 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
-        #region Subscriber
+        #region Subscriber implementation
         public partial class Subscriber
         {
             #region Constructors
@@ -646,7 +646,7 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
-        #region Subscriber<T>
+        #region Subscriber<T> implementation
         public partial class Subscriber<T>
         {
             #region Constructors
@@ -712,7 +712,7 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
-        #region Subscription
+        #region Subscription implementation
         public partial class Subscription
         {
             #region Constructors

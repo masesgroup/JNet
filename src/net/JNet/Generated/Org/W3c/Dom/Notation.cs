@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom
 {
-    #region Notation definition
+    #region Notation declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Notation.html"/>
     /// </summary>
@@ -98,7 +98,7 @@ namespace Org.W3c.Dom
     }
     #endregion
 
-    #region Notation
+    #region Notation implementation
     public partial class Notation : Org.W3c.Dom.INotation
     {
         #region Constructors

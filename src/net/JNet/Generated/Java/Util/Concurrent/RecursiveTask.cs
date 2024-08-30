@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region RecursiveTask definition
+    #region RecursiveTask declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RecursiveTask.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region RecursiveTask<V> definition
+    #region RecursiveTask<V> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RecursiveTask.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region RecursiveTask
+    #region RecursiveTask implementation
     public partial class RecursiveTask
     {
         #region Constructors
@@ -151,7 +151,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region RecursiveTask<V>
+    #region RecursiveTask<V> implementation
     public partial class RecursiveTask<V>
     {
         #region Constructors

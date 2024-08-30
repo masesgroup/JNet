@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
-    #region URLStreamHandlerFactory definition
+    #region URLStreamHandlerFactory declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLStreamHandlerFactory.html"/>
     /// </summary>
@@ -96,7 +96,7 @@ namespace Java.Net
     }
     #endregion
 
-    #region URLStreamHandlerFactory
+    #region URLStreamHandlerFactory implementation
     public partial class URLStreamHandlerFactory : Java.Net.IURLStreamHandlerFactory
     {
         #region Constructors

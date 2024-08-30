@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Math
 {
-    #region BigDecimal definition
+    #region BigDecimal declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Math
     }
     #endregion
 
-    #region BigDecimal
+    #region BigDecimal implementation
     public partial class BigDecimal
     {
         #region Constructors

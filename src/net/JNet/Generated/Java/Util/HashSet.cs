@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region HashSet definition
+    #region HashSet declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashSet.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region HashSet<E> definition
+    #region HashSet<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashSet.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region HashSet
+    #region HashSet implementation
     public partial class HashSet
     {
         #region Constructors
@@ -180,7 +180,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region HashSet<E>
+    #region HashSet<E> implementation
     public partial class HashSet<E>
     {
         #region Constructors

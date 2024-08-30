@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region NotCompliantMBeanException definition
+    #region NotCompliantMBeanException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotCompliantMBeanException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region NotCompliantMBeanException
+    #region NotCompliantMBeanException implementation
     public partial class NotCompliantMBeanException
     {
         #region Constructors

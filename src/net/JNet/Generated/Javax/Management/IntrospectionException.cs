@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region IntrospectionException definition
+    #region IntrospectionException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/IntrospectionException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region IntrospectionException
+    #region IntrospectionException implementation
     public partial class IntrospectionException
     {
         #region Constructors

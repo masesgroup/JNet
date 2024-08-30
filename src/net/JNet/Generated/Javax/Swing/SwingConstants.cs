@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region SwingConstants definition
+    #region SwingConstants declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region SwingConstants
+    #region SwingConstants implementation
     public partial class SwingConstants : Javax.Swing.ISwingConstants
     {
         #region Constructors

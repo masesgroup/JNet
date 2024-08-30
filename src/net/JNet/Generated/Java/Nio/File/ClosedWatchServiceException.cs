@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File
 {
-    #region ClosedWatchServiceException definition
+    #region ClosedWatchServiceException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/ClosedWatchServiceException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region ClosedWatchServiceException
+    #region ClosedWatchServiceException implementation
     public partial class ClosedWatchServiceException
     {
         #region Constructors

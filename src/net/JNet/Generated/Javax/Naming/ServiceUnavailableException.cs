@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming
 {
-    #region ServiceUnavailableException definition
+    #region ServiceUnavailableException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ServiceUnavailableException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Naming
     }
     #endregion
 
-    #region ServiceUnavailableException
+    #region ServiceUnavailableException implementation
     public partial class ServiceUnavailableException
     {
         #region Constructors

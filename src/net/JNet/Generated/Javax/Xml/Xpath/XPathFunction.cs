@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Xpath
 {
-    #region XPathFunction definition
+    #region XPathFunction declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFunction.html"/>
     /// </summary>
@@ -97,7 +97,7 @@ namespace Javax.Xml.Xpath
     }
     #endregion
 
-    #region XPathFunction
+    #region XPathFunction implementation
     public partial class XPathFunction : Javax.Xml.Xpath.IXPathFunction
     {
         #region Constructors

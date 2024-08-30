@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi.Activation
 {
-    #region ActivationGroup definition
+    #region ActivationGroup declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Rmi.Activation
     }
     #endregion
 
-    #region ActivationGroup
+    #region ActivationGroup implementation
     public partial class ActivationGroup
     {
         #region Constructors

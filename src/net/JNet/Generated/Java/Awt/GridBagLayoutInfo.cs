@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region GridBagLayoutInfo definition
+    #region GridBagLayoutInfo declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagLayoutInfo.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region GridBagLayoutInfo
+    #region GridBagLayoutInfo implementation
     public partial class GridBagLayoutInfo
     {
         #region Constructors

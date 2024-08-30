@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.Ietf.Jgss
 {
-    #region GSSManager definition
+    #region GSSManager declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Org.Ietf.Jgss
     }
     #endregion
 
-    #region GSSManager
+    #region GSSManager implementation
     public partial class GSSManager
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Zip
 {
-    #region CheckedInputStream definition
+    #region CheckedInputStream declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/CheckedInputStream.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Zip
     }
     #endregion
 
-    #region CheckedInputStream
+    #region CheckedInputStream implementation
     public partial class CheckedInputStream
     {
         #region Constructors

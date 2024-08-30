@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region MissingFormatWidthException definition
+    #region MissingFormatWidthException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/MissingFormatWidthException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region MissingFormatWidthException
+    #region MissingFormatWidthException implementation
     public partial class MissingFormatWidthException
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time.Temporal
 {
-    #region TemporalAccessor definition
+    #region TemporalAccessor declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAccessor.html"/>
     /// </summary>
@@ -121,7 +121,7 @@ namespace Java.Time.Temporal
     }
     #endregion
 
-    #region TemporalAccessor
+    #region TemporalAccessor implementation
     public partial class TemporalAccessor : Java.Time.Temporal.ITemporalAccessor
     {
         #region Constructors

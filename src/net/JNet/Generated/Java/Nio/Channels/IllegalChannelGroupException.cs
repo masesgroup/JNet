@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
-    #region IllegalChannelGroupException definition
+    #region IllegalChannelGroupException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/IllegalChannelGroupException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region IllegalChannelGroupException
+    #region IllegalChannelGroupException implementation
     public partial class IllegalChannelGroupException
     {
         #region Constructors

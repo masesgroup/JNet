@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region NClob definition
+    #region NClob declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/NClob.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region NClob
+    #region NClob implementation
     public partial class NClob : Java.Sql.INClob
     {
         #region Constructors

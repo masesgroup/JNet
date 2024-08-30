@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.ModuleNs
 {
-    #region InvalidModuleDescriptorException definition
+    #region InvalidModuleDescriptorException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/InvalidModuleDescriptorException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang.ModuleNs
     }
     #endregion
 
-    #region InvalidModuleDescriptorException
+    #region InvalidModuleDescriptorException implementation
     public partial class InvalidModuleDescriptorException
     {
         #region Constructors

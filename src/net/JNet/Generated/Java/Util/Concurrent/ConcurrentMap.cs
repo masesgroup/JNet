@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region ConcurrentMap definition
+    #region ConcurrentMap declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ConcurrentMap<K, V> definition
+    #region ConcurrentMap<K, V> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html"/>
     /// </summary>
@@ -121,7 +121,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ConcurrentMap
+    #region ConcurrentMap implementation
     public partial class ConcurrentMap
     {
         #region Constructors
@@ -368,7 +368,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ConcurrentMap<K, V>
+    #region ConcurrentMap<K, V> implementation
     public partial class ConcurrentMap<K, V> : Java.Util.Concurrent.IConcurrentMap<K, V>
     {
         #region Constructors

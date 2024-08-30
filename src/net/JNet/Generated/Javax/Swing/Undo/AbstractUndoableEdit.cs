@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Undo
 {
-    #region AbstractUndoableEdit definition
+    #region AbstractUndoableEdit declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Undo
     }
     #endregion
 
-    #region AbstractUndoableEdit
+    #region AbstractUndoableEdit implementation
     public partial class AbstractUndoableEdit
     {
         #region Constructors

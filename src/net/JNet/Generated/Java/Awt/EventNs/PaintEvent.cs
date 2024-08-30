@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
-    #region PaintEvent definition
+    #region PaintEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/PaintEvent.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region PaintEvent
+    #region PaintEvent implementation
     public partial class PaintEvent
     {
         #region Constructors

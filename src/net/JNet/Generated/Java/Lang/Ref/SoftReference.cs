@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Ref
 {
-    #region SoftReference definition
+    #region SoftReference declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/SoftReference.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Lang.Ref
     }
     #endregion
 
-    #region SoftReference<T> definition
+    #region SoftReference<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/SoftReference.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Lang.Ref
     }
     #endregion
 
-    #region SoftReference
+    #region SoftReference implementation
     public partial class SoftReference
     {
         #region Constructors
@@ -164,7 +164,7 @@ namespace Java.Lang.Ref
     }
     #endregion
 
-    #region SoftReference<T>
+    #region SoftReference<T> implementation
     public partial class SoftReference<T>
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region DatabaseMetaData definition
+    #region DatabaseMetaData declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html"/>
     /// </summary>
@@ -1135,7 +1135,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region DatabaseMetaData
+    #region DatabaseMetaData implementation
     public partial class DatabaseMetaData : Java.Sql.IDatabaseMetaData
     {
         #region Constructors

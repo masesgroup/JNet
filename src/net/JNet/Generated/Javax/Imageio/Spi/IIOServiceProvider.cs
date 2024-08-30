@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio.Spi
 {
-    #region IIOServiceProvider definition
+    #region IIOServiceProvider declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/IIOServiceProvider.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Imageio.Spi
     }
     #endregion
 
-    #region IIOServiceProvider
+    #region IIOServiceProvider implementation
     public partial class IIOServiceProvider
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
-    #region ObjectInputStream definition
+    #region ObjectInputStream declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Io
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region GetField definition
+        #region GetField declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html"/>
         /// </summary>
@@ -117,7 +117,7 @@ namespace Java.Io
     }
     #endregion
 
-    #region ObjectInputStream
+    #region ObjectInputStream implementation
     public partial class ObjectInputStream
     {
         #region Constructors
@@ -344,7 +344,7 @@ namespace Java.Io
         #endregion
 
         #region Nested classes
-        #region GetField
+        #region GetField implementation
         public partial class GetField
         {
             #region Constructors

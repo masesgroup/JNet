@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region DoubleConsumer definition
+    #region DoubleConsumer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleConsumer.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region DoubleConsumerDirect definition
+    #region DoubleConsumerDirect declaration
     /// <summary>
     /// Direct override of <see cref="DoubleConsumer"/> or its generic type if there is one
     /// </summary>
@@ -121,7 +121,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region DoubleConsumer
+    #region DoubleConsumer implementation
     public partial class DoubleConsumer : Java.Util.Function.IDoubleConsumer
     {
         #region Constructors
@@ -216,7 +216,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region DoubleConsumerDirect
+    #region DoubleConsumerDirect implementation
     public partial class DoubleConsumerDirect : Java.Util.Function.IDoubleConsumer
     {
         #region Constructors

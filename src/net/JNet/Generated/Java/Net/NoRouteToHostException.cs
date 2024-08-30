@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
-    #region NoRouteToHostException definition
+    #region NoRouteToHostException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NoRouteToHostException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Net
     }
     #endregion
 
-    #region NoRouteToHostException
+    #region NoRouteToHostException implementation
     public partial class NoRouteToHostException
     {
         #region Constructors

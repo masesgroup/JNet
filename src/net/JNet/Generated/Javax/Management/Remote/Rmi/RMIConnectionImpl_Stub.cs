@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Remote.Rmi
 {
-    #region RMIConnectionImpl_Stub definition
+    #region RMIConnectionImpl_Stub declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl_Stub.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Management.Remote.Rmi
     }
     #endregion
 
-    #region RMIConnectionImpl_Stub
+    #region RMIConnectionImpl_Stub implementation
     public partial class RMIConnectionImpl_Stub
     {
         #region Constructors

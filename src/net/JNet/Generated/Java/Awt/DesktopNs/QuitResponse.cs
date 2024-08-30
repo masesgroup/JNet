@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.DesktopNs
 {
-    #region QuitResponse definition
+    #region QuitResponse declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/QuitResponse.html"/>
     /// </summary>
@@ -98,7 +98,7 @@ namespace Java.Awt.DesktopNs
     }
     #endregion
 
-    #region QuitResponse
+    #region QuitResponse implementation
     public partial class QuitResponse : Java.Awt.DesktopNs.IQuitResponse
     {
         #region Constructors

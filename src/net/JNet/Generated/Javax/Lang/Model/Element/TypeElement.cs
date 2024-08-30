@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Element
 {
-    #region TypeElement definition
+    #region TypeElement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeElement.html"/>
     /// </summary>
@@ -122,7 +122,7 @@ namespace Javax.Lang.Model.Element
     }
     #endregion
 
-    #region TypeElement
+    #region TypeElement implementation
     public partial class TypeElement : Javax.Lang.Model.Element.ITypeElement
     {
         #region Constructors

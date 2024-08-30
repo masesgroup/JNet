@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Security.Auth
 {
-    #region Refreshable definition
+    #region Refreshable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Refreshable.html"/>
     /// </summary>
@@ -100,7 +100,7 @@ namespace Javax.Security.Auth
     }
     #endregion
 
-    #region Refreshable
+    #region Refreshable implementation
     public partial class Refreshable : Javax.Security.Auth.IRefreshable
     {
         #region Constructors

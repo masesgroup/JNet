@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig
 {
-    #region XMLValidateContext definition
+    #region XMLValidateContext declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLValidateContext.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Javax.Xml.Crypto.Dsig
     }
     #endregion
 
-    #region XMLValidateContext
+    #region XMLValidateContext implementation
     public partial class XMLValidateContext : Javax.Xml.Crypto.Dsig.IXMLValidateContext
     {
         #region Constructors

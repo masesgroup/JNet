@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Crypto.Spec
 {
-    #region RC2ParameterSpec definition
+    #region RC2ParameterSpec declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC2ParameterSpec.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Crypto.Spec
     }
     #endregion
 
-    #region RC2ParameterSpec
+    #region RC2ParameterSpec implementation
     public partial class RC2ParameterSpec
     {
         #region Constructors

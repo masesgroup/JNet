@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans
 {
-    #region Transient definition
+    #region Transient declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Transient.html"/>
     /// </summary>
@@ -95,7 +95,7 @@ namespace Java.Beans
     }
     #endregion
 
-    #region Transient
+    #region Transient implementation
     public partial class Transient : Java.Beans.ITransient
     {
         #region Constructors

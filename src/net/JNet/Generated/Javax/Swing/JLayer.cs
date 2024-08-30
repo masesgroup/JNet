@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region JLayer definition
+    #region JLayer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region JLayer<V> definition
+    #region JLayer<V> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region JLayer
+    #region JLayer implementation
     public partial class JLayer
     {
         #region Constructors
@@ -264,7 +264,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region JLayer<V>
+    #region JLayer<V> implementation
     public partial class JLayer<V>
     {
         #region Constructors

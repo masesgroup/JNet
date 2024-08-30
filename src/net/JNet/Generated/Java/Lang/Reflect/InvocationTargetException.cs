@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
-    #region InvocationTargetException definition
+    #region InvocationTargetException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/InvocationTargetException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region InvocationTargetException
+    #region InvocationTargetException implementation
     public partial class InvocationTargetException
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dom
 {
-    #region DOMStructure definition
+    #region DOMStructure declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMStructure.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Xml.Crypto.Dom
     }
     #endregion
 
-    #region DOMStructure
+    #region DOMStructure implementation
     public partial class DOMStructure
     {
         #region Constructors

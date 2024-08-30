@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region ViewFactory definition
+    #region ViewFactory declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ViewFactory.html"/>
     /// </summary>
@@ -96,7 +96,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region ViewFactory
+    #region ViewFactory implementation
     public partial class ViewFactory : Javax.Swing.Text.IViewFactory
     {
         #region Constructors

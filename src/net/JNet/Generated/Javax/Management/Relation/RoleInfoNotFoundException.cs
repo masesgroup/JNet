@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Relation
 {
-    #region RoleInfoNotFoundException definition
+    #region RoleInfoNotFoundException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfoNotFoundException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Management.Relation
     }
     #endregion
 
-    #region RoleInfoNotFoundException
+    #region RoleInfoNotFoundException implementation
     public partial class RoleInfoNotFoundException
     {
         #region Constructors

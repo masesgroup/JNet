@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Element
 {
-    #region NestingKind definition
+    #region NestingKind declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Lang.Model.Element
     }
     #endregion
 
-    #region NestingKind
+    #region NestingKind implementation
     public partial class NestingKind
     {
         #region Constructors

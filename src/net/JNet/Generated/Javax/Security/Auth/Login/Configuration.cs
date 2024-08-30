@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Security.Auth.Login
 {
-    #region Configuration definition
+    #region Configuration declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Security.Auth.Login
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Parameters definition
+        #region Parameters declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.Parameters.html"/>
         /// </summary>
@@ -119,7 +119,7 @@ namespace Javax.Security.Auth.Login
     }
     #endregion
 
-    #region Configuration
+    #region Configuration implementation
     public partial class Configuration
     {
         #region Constructors
@@ -231,7 +231,7 @@ namespace Javax.Security.Auth.Login
         #endregion
 
         #region Nested classes
-        #region Parameters
+        #region Parameters implementation
         public partial class Parameters
         {
             #region Constructors

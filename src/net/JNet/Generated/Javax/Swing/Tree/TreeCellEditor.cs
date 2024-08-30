@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Tree
 {
-    #region TreeCellEditor definition
+    #region TreeCellEditor declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeCellEditor.html"/>
     /// </summary>
@@ -101,7 +101,7 @@ namespace Javax.Swing.Tree
     }
     #endregion
 
-    #region TreeCellEditor
+    #region TreeCellEditor implementation
     public partial class TreeCellEditor : Javax.Swing.Tree.ITreeCellEditor
     {
         #region Constructors

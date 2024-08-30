@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region Guard definition
+    #region Guard declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Guard.html"/>
     /// </summary>
@@ -96,7 +96,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region Guard
+    #region Guard implementation
     public partial class Guard : Java.Security.IGuard
     {
         #region Constructors

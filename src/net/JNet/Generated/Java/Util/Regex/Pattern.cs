@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Regex
 {
-    #region Pattern definition
+    #region Pattern declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Regex
     }
     #endregion
 
-    #region Pattern
+    #region Pattern implementation
     public partial class Pattern
     {
         #region Constructors

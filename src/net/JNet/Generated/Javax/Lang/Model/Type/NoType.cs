@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Type
 {
-    #region NoType definition
+    #region NoType declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/NoType.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Javax.Lang.Model.Type
     }
     #endregion
 
-    #region NoType
+    #region NoType implementation
     public partial class NoType : Javax.Lang.Model.Type.INoType
     {
         #region Constructors

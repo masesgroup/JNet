@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Security.Auth
 {
-    #region RefreshFailedException definition
+    #region RefreshFailedException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/RefreshFailedException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Security.Auth
     }
     #endregion
 
-    #region RefreshFailedException
+    #region RefreshFailedException implementation
     public partial class RefreshFailedException
     {
         #region Constructors

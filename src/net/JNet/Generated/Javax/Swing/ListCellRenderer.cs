@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region ListCellRenderer definition
+    #region ListCellRenderer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListCellRenderer.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region ListCellRenderer<E> definition
+    #region ListCellRenderer<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListCellRenderer.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region ListCellRenderer
+    #region ListCellRenderer implementation
     public partial class ListCellRenderer
     {
         #region Constructors
@@ -193,7 +193,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region ListCellRenderer<E>
+    #region ListCellRenderer<E> implementation
     public partial class ListCellRenderer<E> : Javax.Swing.IListCellRenderer<E>
     {
         #region Constructors

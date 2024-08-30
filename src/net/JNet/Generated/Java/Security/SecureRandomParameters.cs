@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region SecureRandomParameters definition
+    #region SecureRandomParameters declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandomParameters.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region SecureRandomParameters
+    #region SecureRandomParameters implementation
     public partial class SecureRandomParameters : Java.Security.ISecureRandomParameters
     {
         #region Constructors

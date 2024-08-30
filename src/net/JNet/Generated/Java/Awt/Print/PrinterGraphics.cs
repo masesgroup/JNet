@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Print
 {
-    #region PrinterGraphics definition
+    #region PrinterGraphics declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterGraphics.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Java.Awt.Print
     }
     #endregion
 
-    #region PrinterGraphics
+    #region PrinterGraphics implementation
     public partial class PrinterGraphics : Java.Awt.Print.IPrinterGraphics
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql
 {
-    #region PooledConnectionBuilder definition
+    #region PooledConnectionBuilder declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnectionBuilder.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Javax.Sql
     }
     #endregion
 
-    #region PooledConnectionBuilder
+    #region PooledConnectionBuilder implementation
     public partial class PooledConnectionBuilder : Javax.Sql.IPooledConnectionBuilder
     {
         #region Constructors

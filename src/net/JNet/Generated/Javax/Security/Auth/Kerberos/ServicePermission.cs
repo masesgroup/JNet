@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Security.Auth.Kerberos
 {
-    #region ServicePermission definition
+    #region ServicePermission declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/ServicePermission.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Security.Auth.Kerberos
     }
     #endregion
 
-    #region ServicePermission
+    #region ServicePermission implementation
     public partial class ServicePermission
     {
         #region Constructors

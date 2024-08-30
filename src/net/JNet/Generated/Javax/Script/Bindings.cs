@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Script
 {
-    #region Bindings definition
+    #region Bindings declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Bindings.html"/>
     /// </summary>
@@ -128,7 +128,7 @@ namespace Javax.Script
     }
     #endregion
 
-    #region Bindings
+    #region Bindings implementation
     public partial class Bindings : Javax.Script.IBindings
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Css
 {
-    #region CSS2Properties definition
+    #region CSS2Properties declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html"/>
     /// </summary>
@@ -578,7 +578,7 @@ namespace Org.W3c.Dom.Css
     }
     #endregion
 
-    #region CSS2Properties
+    #region CSS2Properties implementation
     public partial class CSS2Properties : Org.W3c.Dom.Css.ICSS2Properties
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print
 {
-    #region DocFlavor definition
+    #region DocFlavor declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Print
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region BYTE_ARRAY definition
+        #region BYTE_ARRAY declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Print
         }
         #endregion
 
-        #region CHAR_ARRAY definition
+        #region CHAR_ARRAY declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.CHAR_ARRAY.html"/>
         /// </summary>
@@ -156,7 +156,7 @@ namespace Javax.Print
         }
         #endregion
 
-        #region INPUT_STREAM definition
+        #region INPUT_STREAM declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html"/>
         /// </summary>
@@ -201,7 +201,7 @@ namespace Javax.Print
         }
         #endregion
 
-        #region READER definition
+        #region READER declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.READER.html"/>
         /// </summary>
@@ -246,7 +246,7 @@ namespace Javax.Print
         }
         #endregion
 
-        #region SERVICE_FORMATTED definition
+        #region SERVICE_FORMATTED declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.SERVICE_FORMATTED.html"/>
         /// </summary>
@@ -291,7 +291,7 @@ namespace Javax.Print
         }
         #endregion
 
-        #region STRING definition
+        #region STRING declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.STRING.html"/>
         /// </summary>
@@ -336,7 +336,7 @@ namespace Javax.Print
         }
         #endregion
 
-        #region URL definition
+        #region URL declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.URL.html"/>
         /// </summary>
@@ -385,7 +385,7 @@ namespace Javax.Print
     }
     #endregion
 
-    #region DocFlavor
+    #region DocFlavor implementation
     public partial class DocFlavor
     {
         #region Constructors
@@ -469,7 +469,7 @@ namespace Javax.Print
         #endregion
 
         #region Nested classes
-        #region BYTE_ARRAY
+        #region BYTE_ARRAY implementation
         public partial class BYTE_ARRAY
         {
             #region Constructors
@@ -622,7 +622,7 @@ namespace Javax.Print
         }
         #endregion
 
-        #region CHAR_ARRAY
+        #region CHAR_ARRAY implementation
         public partial class CHAR_ARRAY
         {
             #region Constructors
@@ -673,7 +673,7 @@ namespace Javax.Print
         }
         #endregion
 
-        #region INPUT_STREAM
+        #region INPUT_STREAM implementation
         public partial class INPUT_STREAM
         {
             #region Constructors
@@ -826,7 +826,7 @@ namespace Javax.Print
         }
         #endregion
 
-        #region READER
+        #region READER implementation
         public partial class READER
         {
             #region Constructors
@@ -877,7 +877,7 @@ namespace Javax.Print
         }
         #endregion
 
-        #region SERVICE_FORMATTED
+        #region SERVICE_FORMATTED implementation
         public partial class SERVICE_FORMATTED
         {
             #region Constructors
@@ -934,7 +934,7 @@ namespace Javax.Print
         }
         #endregion
 
-        #region STRING
+        #region STRING implementation
         public partial class STRING
         {
             #region Constructors
@@ -985,7 +985,7 @@ namespace Javax.Print
         }
         #endregion
 
-        #region URL
+        #region URL implementation
         public partial class URL
         {
             #region Constructors

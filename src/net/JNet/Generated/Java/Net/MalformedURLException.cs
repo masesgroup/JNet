@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
-    #region MalformedURLException definition
+    #region MalformedURLException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MalformedURLException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Net
     }
     #endregion
 
-    #region MalformedURLException
+    #region MalformedURLException implementation
     public partial class MalformedURLException
     {
         #region Constructors

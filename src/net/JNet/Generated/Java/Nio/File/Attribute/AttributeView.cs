@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File.Attribute
 {
-    #region AttributeView definition
+    #region AttributeView declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AttributeView.html"/>
     /// </summary>
@@ -95,7 +95,7 @@ namespace Java.Nio.File.Attribute
     }
     #endregion
 
-    #region AttributeView
+    #region AttributeView implementation
     public partial class AttributeView : Java.Nio.File.Attribute.IAttributeView
     {
         #region Constructors

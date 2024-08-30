@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text.Html.Parser
 {
-    #region ContentModel definition
+    #region ContentModel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/ContentModel.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Text.Html.Parser
     }
     #endregion
 
-    #region ContentModel
+    #region ContentModel implementation
     public partial class ContentModel
     {
         #region Constructors

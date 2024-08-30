@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region ArrayDeque definition
+    #region ArrayDeque declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region ArrayDeque<E> definition
+    #region ArrayDeque<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region ArrayDeque
+    #region ArrayDeque implementation
     public partial class ArrayDeque
     {
         #region Constructors
@@ -362,7 +362,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region ArrayDeque<E>
+    #region ArrayDeque<E> implementation
     public partial class ArrayDeque<E>
     {
         #region Constructors

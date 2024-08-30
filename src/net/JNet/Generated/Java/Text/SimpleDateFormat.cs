@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Text
 {
-    #region SimpleDateFormat definition
+    #region SimpleDateFormat declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/SimpleDateFormat.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Text
     }
     #endregion
 
-    #region SimpleDateFormat
+    #region SimpleDateFormat implementation
     public partial class SimpleDateFormat
     {
         #region Constructors

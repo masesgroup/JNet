@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Event
 {
-    #region NamingListener definition
+    #region NamingListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Naming.Event
     }
     #endregion
 
-    #region NamingListenerDirect definition
+    #region NamingListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="NamingListener"/> or its generic type if there is one
     /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Naming.Event
     }
     #endregion
 
-    #region NamingListener
+    #region NamingListener implementation
     public partial class NamingListener : Javax.Naming.Event.INamingListener
     {
         #region Constructors
@@ -175,7 +175,7 @@ namespace Javax.Naming.Event
     }
     #endregion
 
-    #region NamingListenerDirect
+    #region NamingListenerDirect implementation
     public partial class NamingListenerDirect : Javax.Naming.Event.INamingListener
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region NotificationListener definition
+    #region NotificationListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region NotificationListenerDirect definition
+    #region NotificationListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="NotificationListener"/> or its generic type if there is one
     /// </summary>
@@ -116,7 +116,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region NotificationListener
+    #region NotificationListener implementation
     public partial class NotificationListener : Javax.Management.INotificationListener
     {
         #region Constructors
@@ -177,7 +177,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region NotificationListenerDirect
+    #region NotificationListenerDirect implementation
     public partial class NotificationListenerDirect : Javax.Management.INotificationListener
     {
         #region Constructors

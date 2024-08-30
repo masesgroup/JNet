@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
-    #region DocumentEvent definition
+    #region DocumentEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Swing.Event
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region ElementChange definition
+        #region ElementChange declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.ElementChange.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Swing.Event
         }
         #endregion
 
-        #region EventType definition
+        #region EventType declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.EventType.html"/>
         /// </summary>
@@ -204,7 +204,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region DocumentEvent
+    #region DocumentEvent implementation
     public partial class DocumentEvent : Javax.Swing.Event.IDocumentEvent
     {
         #region Constructors
@@ -265,7 +265,7 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Nested classes
-        #region ElementChange
+        #region ElementChange implementation
         public partial class ElementChange
         {
             #region Constructors
@@ -324,7 +324,7 @@ namespace Javax.Swing.Event
         }
         #endregion
 
-        #region EventType
+        #region EventType implementation
         public partial class EventType
         {
             #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Metal
 {
-    #region MetalTabbedPaneUI definition
+    #region MetalTabbedPaneUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalTabbedPaneUI.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Plaf.Metal
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region TabbedPaneLayout definition
+        #region TabbedPaneLayout declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalTabbedPaneUI.TabbedPaneLayout.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Swing.Plaf.Metal
     }
     #endregion
 
-    #region MetalTabbedPaneUI
+    #region MetalTabbedPaneUI implementation
     public partial class MetalTabbedPaneUI
     {
         #region Constructors
@@ -139,7 +139,7 @@ namespace Javax.Swing.Plaf.Metal
         #endregion
 
         #region Nested classes
-        #region TabbedPaneLayout
+        #region TabbedPaneLayout implementation
         public partial class TabbedPaneLayout
         {
             #region Constructors

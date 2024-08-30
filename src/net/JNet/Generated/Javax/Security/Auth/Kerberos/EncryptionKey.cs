@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Security.Auth.Kerberos
 {
-    #region EncryptionKey definition
+    #region EncryptionKey declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/EncryptionKey.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Security.Auth.Kerberos
     }
     #endregion
 
-    #region EncryptionKey
+    #region EncryptionKey implementation
     public partial class EncryptionKey
     {
         #region Constructors

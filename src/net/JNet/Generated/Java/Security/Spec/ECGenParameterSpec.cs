@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Spec
 {
-    #region ECGenParameterSpec definition
+    #region ECGenParameterSpec declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECGenParameterSpec.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Security.Spec
     }
     #endregion
 
-    #region ECGenParameterSpec
+    #region ECGenParameterSpec implementation
     public partial class ECGenParameterSpec
     {
         #region Constructors

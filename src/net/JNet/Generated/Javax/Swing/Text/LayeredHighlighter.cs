@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region LayeredHighlighter definition
+    #region LayeredHighlighter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/LayeredHighlighter.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Swing.Text
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region LayerPainter definition
+        #region LayerPainter declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/LayeredHighlighter.LayerPainter.html"/>
         /// </summary>
@@ -119,7 +119,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region LayeredHighlighter
+    #region LayeredHighlighter implementation
     public partial class LayeredHighlighter
     {
         #region Constructors
@@ -156,7 +156,7 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Nested classes
-        #region LayerPainter
+        #region LayerPainter implementation
         public partial class LayerPainter
         {
             #region Constructors

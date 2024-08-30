@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region InstanceAlreadyExistsException definition
+    #region InstanceAlreadyExistsException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/InstanceAlreadyExistsException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region InstanceAlreadyExistsException
+    #region InstanceAlreadyExistsException implementation
     public partial class InstanceAlreadyExistsException
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming
 {
-    #region Referenceable definition
+    #region Referenceable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Referenceable.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Javax.Naming
     }
     #endregion
 
-    #region Referenceable
+    #region Referenceable implementation
     public partial class Referenceable : Javax.Naming.IReferenceable
     {
         #region Constructors

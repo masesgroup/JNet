@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
-    #region InterruptedIOException definition
+    #region InterruptedIOException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InterruptedIOException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Io
     }
     #endregion
 
-    #region InterruptedIOException
+    #region InterruptedIOException implementation
     public partial class InterruptedIOException
     {
         #region Constructors

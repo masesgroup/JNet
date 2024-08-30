@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Datatransfer
 {
-    #region StringSelection definition
+    #region StringSelection declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/StringSelection.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.Datatransfer
     }
     #endregion
 
-    #region StringSelection
+    #region StringSelection implementation
     public partial class StringSelection
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Remote
 {
-    #region TargetedNotification definition
+    #region TargetedNotification declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/TargetedNotification.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Management.Remote
     }
     #endregion
 
-    #region TargetedNotification
+    #region TargetedNotification implementation
     public partial class TargetedNotification
     {
         #region Constructors

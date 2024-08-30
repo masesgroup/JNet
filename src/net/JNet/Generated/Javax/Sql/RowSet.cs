@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql
 {
-    #region RowSet definition
+    #region RowSet declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html"/>
     /// </summary>
@@ -800,7 +800,7 @@ namespace Javax.Sql
     }
     #endregion
 
-    #region RowSet
+    #region RowSet implementation
     public partial class RowSet : Javax.Sql.IRowSet
     {
         #region Constructors

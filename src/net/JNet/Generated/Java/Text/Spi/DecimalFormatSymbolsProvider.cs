@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Text.Spi
 {
-    #region DecimalFormatSymbolsProvider definition
+    #region DecimalFormatSymbolsProvider declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/DecimalFormatSymbolsProvider.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Text.Spi
     }
     #endregion
 
-    #region DecimalFormatSymbolsProvider
+    #region DecimalFormatSymbolsProvider implementation
     public partial class DecimalFormatSymbolsProvider
     {
         #region Constructors

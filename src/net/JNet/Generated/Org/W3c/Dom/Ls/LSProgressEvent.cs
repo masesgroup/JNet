@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Ls
 {
-    #region LSProgressEvent definition
+    #region LSProgressEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSProgressEvent.html"/>
     /// </summary>
@@ -102,7 +102,7 @@ namespace Org.W3c.Dom.Ls
     }
     #endregion
 
-    #region LSProgressEvent
+    #region LSProgressEvent implementation
     public partial class LSProgressEvent : Org.W3c.Dom.Ls.ILSProgressEvent
     {
         #region Constructors

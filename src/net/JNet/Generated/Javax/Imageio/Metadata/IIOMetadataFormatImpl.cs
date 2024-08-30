@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio.Metadata
 {
-    #region IIOMetadataFormatImpl definition
+    #region IIOMetadataFormatImpl declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormatImpl.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Imageio.Metadata
     }
     #endregion
 
-    #region IIOMetadataFormatImpl
+    #region IIOMetadataFormatImpl implementation
     public partial class IIOMetadataFormatImpl
     {
         #region Constructors

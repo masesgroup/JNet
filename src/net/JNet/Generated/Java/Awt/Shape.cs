@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region Shape definition
+    #region Shape declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Shape.html"/>
     /// </summary>
@@ -154,7 +154,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region Shape
+    #region Shape implementation
     public partial class Shape : Java.Awt.IShape
     {
         #region Constructors

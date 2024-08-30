@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region Delayed definition
+    #region Delayed declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Delayed.html"/>
     /// </summary>
@@ -96,7 +96,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region Delayed
+    #region Delayed implementation
     public partial class Delayed : Java.Util.Concurrent.IDelayed
     {
         #region Constructors

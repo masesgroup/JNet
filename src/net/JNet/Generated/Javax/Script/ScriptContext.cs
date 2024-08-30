@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Script
 {
-    #region ScriptContext definition
+    #region ScriptContext declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html"/>
     /// </summary>
@@ -151,7 +151,7 @@ namespace Javax.Script
     }
     #endregion
 
-    #region ScriptContext
+    #region ScriptContext implementation
     public partial class ScriptContext : Javax.Script.IScriptContext
     {
         #region Constructors

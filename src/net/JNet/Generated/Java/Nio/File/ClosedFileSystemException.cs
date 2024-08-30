@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File
 {
-    #region ClosedFileSystemException definition
+    #region ClosedFileSystemException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/ClosedFileSystemException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region ClosedFileSystemException
+    #region ClosedFileSystemException implementation
     public partial class ClosedFileSystemException
     {
         #region Constructors

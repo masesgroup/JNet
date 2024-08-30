@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Transform
 {
-    #region SourceLocator definition
+    #region SourceLocator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/SourceLocator.html"/>
     /// </summary>
@@ -106,7 +106,7 @@ namespace Javax.Xml.Transform
     }
     #endregion
 
-    #region SourceLocator
+    #region SourceLocator implementation
     public partial class SourceLocator : Javax.Xml.Transform.ISourceLocator
     {
         #region Constructors

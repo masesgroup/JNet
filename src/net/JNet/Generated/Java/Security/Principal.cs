@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region Principal definition
+    #region Principal declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Principal.html"/>
     /// </summary>
@@ -100,7 +100,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region Principal
+    #region Principal implementation
     public partial class Principal : Java.Security.IPrincipal
     {
         #region Constructors

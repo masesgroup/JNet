@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.ModuleNs
 {
-    #region FindException definition
+    #region FindException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/FindException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang.ModuleNs
     }
     #endregion
 
-    #region FindException
+    #region FindException implementation
     public partial class FindException
     {
         #region Constructors

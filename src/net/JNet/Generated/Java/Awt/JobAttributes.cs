@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region JobAttributes definition
+    #region JobAttributes declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Awt
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region DefaultSelectionType definition
+        #region DefaultSelectionType declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DefaultSelectionType.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Java.Awt
         }
         #endregion
 
-        #region DestinationType definition
+        #region DestinationType declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DestinationType.html"/>
         /// </summary>
@@ -156,7 +156,7 @@ namespace Java.Awt
         }
         #endregion
 
-        #region DialogType definition
+        #region DialogType declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DialogType.html"/>
         /// </summary>
@@ -201,7 +201,7 @@ namespace Java.Awt
         }
         #endregion
 
-        #region MultipleDocumentHandlingType definition
+        #region MultipleDocumentHandlingType declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.MultipleDocumentHandlingType.html"/>
         /// </summary>
@@ -246,7 +246,7 @@ namespace Java.Awt
         }
         #endregion
 
-        #region SidesType definition
+        #region SidesType declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.SidesType.html"/>
         /// </summary>
@@ -295,7 +295,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region JobAttributes
+    #region JobAttributes implementation
     public partial class JobAttributes
     {
         #region Constructors
@@ -465,7 +465,7 @@ namespace Java.Awt
         #endregion
 
         #region Nested classes
-        #region DefaultSelectionType
+        #region DefaultSelectionType implementation
         public partial class DefaultSelectionType
         {
             #region Constructors
@@ -514,7 +514,7 @@ namespace Java.Awt
         }
         #endregion
 
-        #region DestinationType
+        #region DestinationType implementation
         public partial class DestinationType
         {
             #region Constructors
@@ -557,7 +557,7 @@ namespace Java.Awt
         }
         #endregion
 
-        #region DialogType
+        #region DialogType implementation
         public partial class DialogType
         {
             #region Constructors
@@ -606,7 +606,7 @@ namespace Java.Awt
         }
         #endregion
 
-        #region MultipleDocumentHandlingType
+        #region MultipleDocumentHandlingType implementation
         public partial class MultipleDocumentHandlingType
         {
             #region Constructors
@@ -649,7 +649,7 @@ namespace Java.Awt
         }
         #endregion
 
-        #region SidesType
+        #region SidesType implementation
         public partial class SidesType
         {
             #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File
 {
-    #region DirectoryStream definition
+    #region DirectoryStream declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Java.Nio.File
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Filter definition
+        #region Filter declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.Filter.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Nio.File
         }
         #endregion
 
-        #region Filter<T> definition
+        #region Filter<T> declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.Filter.html"/>
         /// </summary>
@@ -167,7 +167,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region DirectoryStream<T> definition
+    #region DirectoryStream<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.html"/>
     /// </summary>
@@ -215,7 +215,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region DirectoryStream
+    #region DirectoryStream implementation
     public partial class DirectoryStream
     {
         #region Constructors
@@ -251,7 +251,7 @@ namespace Java.Nio.File
         #endregion
 
         #region Nested classes
-        #region Filter
+        #region Filter implementation
         public partial class Filter
         {
             #region Constructors
@@ -292,7 +292,7 @@ namespace Java.Nio.File
         }
         #endregion
 
-        #region Filter<T>
+        #region Filter<T> implementation
         public partial class Filter<T>
         {
             #region Constructors
@@ -367,7 +367,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region DirectoryStream<T>
+    #region DirectoryStream<T> implementation
     public partial class DirectoryStream<T> : Java.Nio.File.IDirectoryStream<T>
     {
         #region Constructors

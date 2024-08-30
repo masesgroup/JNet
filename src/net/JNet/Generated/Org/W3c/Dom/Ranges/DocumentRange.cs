@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Ranges
 {
-    #region DocumentRange definition
+    #region DocumentRange declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/DocumentRange.html"/>
     /// </summary>
@@ -95,7 +95,7 @@ namespace Org.W3c.Dom.Ranges
     }
     #endregion
 
-    #region DocumentRange
+    #region DocumentRange implementation
     public partial class DocumentRange : Org.W3c.Dom.Ranges.IDocumentRange
     {
         #region Constructors

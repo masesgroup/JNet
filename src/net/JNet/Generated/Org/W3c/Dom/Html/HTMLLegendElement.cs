@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
-    #region HTMLLegendElement definition
+    #region HTMLLegendElement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLegendElement.html"/>
     /// </summary>
@@ -102,7 +102,7 @@ namespace Org.W3c.Dom.Html
     }
     #endregion
 
-    #region HTMLLegendElement
+    #region HTMLLegendElement implementation
     public partial class HTMLLegendElement : Org.W3c.Dom.Html.IHTMLLegendElement
     {
         #region Constructors

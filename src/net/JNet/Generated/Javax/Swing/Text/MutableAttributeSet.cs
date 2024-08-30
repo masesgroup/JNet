@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region MutableAttributeSet definition
+    #region MutableAttributeSet declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MutableAttributeSet.html"/>
     /// </summary>
@@ -121,7 +121,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region MutableAttributeSet
+    #region MutableAttributeSet implementation
     public partial class MutableAttributeSet : Javax.Swing.Text.IMutableAttributeSet
     {
         #region Constructors

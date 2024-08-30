@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region SortedSet definition
+    #region SortedSet declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region SortedSet<E> definition
+    #region SortedSet<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region SortedSet
+    #region SortedSet implementation
     public partial class SortedSet
     {
         #region Constructors
@@ -269,7 +269,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region SortedSet<E>
+    #region SortedSet<E> implementation
     public partial class SortedSet<E> : Java.Util.ISortedSet<E>
     {
         #region Constructors

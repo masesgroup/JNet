@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.Xml.Sax.Helpers
 {
-    #region XMLReaderAdapter definition
+    #region XMLReaderAdapter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Org.Xml.Sax.Helpers
     }
     #endregion
 
-    #region XMLReaderAdapterDirect definition
+    #region XMLReaderAdapterDirect declaration
     /// <summary>
     /// Direct override of <see cref="XMLReaderAdapter"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Org.Xml.Sax.Helpers
     }
     #endregion
 
-    #region XMLReaderAdapter
+    #region XMLReaderAdapter implementation
     public partial class XMLReaderAdapter
     {
         #region Constructors
@@ -526,7 +526,7 @@ namespace Org.Xml.Sax.Helpers
     }
     #endregion
 
-    #region XMLReaderAdapterDirect
+    #region XMLReaderAdapterDirect implementation
     public partial class XMLReaderAdapterDirect
     {
         #region Constructors

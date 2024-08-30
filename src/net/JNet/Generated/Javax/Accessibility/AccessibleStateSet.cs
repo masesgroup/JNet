@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Accessibility
 {
-    #region AccessibleStateSet definition
+    #region AccessibleStateSet declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStateSet.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Accessibility
     }
     #endregion
 
-    #region AccessibleStateSet
+    #region AccessibleStateSet implementation
     public partial class AccessibleStateSet
     {
         #region Constructors

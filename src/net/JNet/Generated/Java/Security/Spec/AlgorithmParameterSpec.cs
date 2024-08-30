@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Spec
 {
-    #region AlgorithmParameterSpec definition
+    #region AlgorithmParameterSpec declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/AlgorithmParameterSpec.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Java.Security.Spec
     }
     #endregion
 
-    #region AlgorithmParameterSpec
+    #region AlgorithmParameterSpec implementation
     public partial class AlgorithmParameterSpec : Java.Security.Spec.IAlgorithmParameterSpec
     {
         #region Constructors

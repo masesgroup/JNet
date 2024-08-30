@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Ldap
 {
-    #region LdapContext definition
+    #region LdapContext declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapContext.html"/>
     /// </summary>
@@ -122,7 +122,7 @@ namespace Javax.Naming.Ldap
     }
     #endregion
 
-    #region LdapContext
+    #region LdapContext implementation
     public partial class LdapContext : Javax.Naming.Ldap.ILdapContext
     {
         #region Constructors

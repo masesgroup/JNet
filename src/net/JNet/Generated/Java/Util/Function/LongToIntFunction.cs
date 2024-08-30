@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region LongToIntFunction definition
+    #region LongToIntFunction declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongToIntFunction.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region LongToIntFunctionDirect definition
+    #region LongToIntFunctionDirect declaration
     /// <summary>
     /// Direct override of <see cref="LongToIntFunction"/> or its generic type if there is one
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region LongToIntFunction
+    #region LongToIntFunction implementation
     public partial class LongToIntFunction : Java.Util.Function.ILongToIntFunction
     {
         #region Constructors
@@ -178,7 +178,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region LongToIntFunctionDirect
+    #region LongToIntFunctionDirect implementation
     public partial class LongToIntFunctionDirect : Java.Util.Function.ILongToIntFunction
     {
         #region Constructors

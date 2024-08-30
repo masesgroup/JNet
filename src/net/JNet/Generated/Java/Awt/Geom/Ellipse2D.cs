@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Geom
 {
-    #region Ellipse2D definition
+    #region Ellipse2D declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Java.Awt.Geom
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Double definition
+        #region Double declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Double.html"/>
         /// </summary>
@@ -113,7 +113,7 @@ namespace Java.Awt.Geom
         }
         #endregion
 
-        #region Float definition
+        #region Float declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Float.html"/>
         /// </summary>
@@ -162,7 +162,7 @@ namespace Java.Awt.Geom
     }
     #endregion
 
-    #region Ellipse2D
+    #region Ellipse2D implementation
     public partial class Ellipse2D
     {
         #region Constructors
@@ -186,7 +186,7 @@ namespace Java.Awt.Geom
         #endregion
 
         #region Nested classes
-        #region Double
+        #region Double implementation
         public partial class Double
         {
             #region Constructors
@@ -248,7 +248,7 @@ namespace Java.Awt.Geom
         }
         #endregion
 
-        #region Float
+        #region Float implementation
         public partial class Float
         {
             #region Constructors

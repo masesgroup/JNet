@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region Caret definition
+    #region Caret declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Caret.html"/>
     /// </summary>
@@ -156,7 +156,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region Caret
+    #region Caret implementation
     public partial class Caret : Javax.Swing.Text.ICaret
     {
         #region Constructors

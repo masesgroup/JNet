@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Invoke
 {
-    #region WrongMethodTypeException definition
+    #region WrongMethodTypeException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/WrongMethodTypeException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang.Invoke
     }
     #endregion
 
-    #region WrongMethodTypeException
+    #region WrongMethodTypeException implementation
     public partial class WrongMethodTypeException
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File
 {
-    #region WatchEvent definition
+    #region WatchEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Java.Nio.File
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Kind definition
+        #region Kind declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.Kind.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Nio.File
         }
         #endregion
 
-        #region Kind<T> definition
+        #region Kind<T> declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.Kind.html"/>
         /// </summary>
@@ -163,7 +163,7 @@ namespace Java.Nio.File
         }
         #endregion
 
-        #region Modifier definition
+        #region Modifier declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.Modifier.html"/>
         /// </summary>
@@ -214,7 +214,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region WatchEvent<T> definition
+    #region WatchEvent<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html"/>
     /// </summary>
@@ -262,7 +262,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region WatchEvent
+    #region WatchEvent implementation
     public partial class WatchEvent
     {
         #region Constructors
@@ -310,7 +310,7 @@ namespace Java.Nio.File
         #endregion
 
         #region Nested classes
-        #region Kind
+        #region Kind implementation
         public partial class Kind
         {
             #region Constructors
@@ -357,7 +357,7 @@ namespace Java.Nio.File
         }
         #endregion
 
-        #region Kind<T>
+        #region Kind<T> implementation
         public partial class Kind<T>
         {
             #region Constructors
@@ -408,7 +408,7 @@ namespace Java.Nio.File
         }
         #endregion
 
-        #region Modifier
+        #region Modifier implementation
         public partial class Modifier
         {
             #region Constructors
@@ -487,7 +487,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region WatchEvent<T>
+    #region WatchEvent<T> implementation
     public partial class WatchEvent<T> : Java.Nio.File.IWatchEvent<T>
     {
         #region Constructors

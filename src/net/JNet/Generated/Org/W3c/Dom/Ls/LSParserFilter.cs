@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Ls
 {
-    #region LSParserFilter definition
+    #region LSParserFilter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html"/>
     /// </summary>
@@ -106,7 +106,7 @@ namespace Org.W3c.Dom.Ls
     }
     #endregion
 
-    #region LSParserFilter
+    #region LSParserFilter implementation
     public partial class LSParserFilter : Org.W3c.Dom.Ls.ILSParserFilter
     {
         #region Constructors

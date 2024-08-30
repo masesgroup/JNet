@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region Predicate definition
+    #region Predicate declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region PredicateDirect definition
+    #region PredicateDirect declaration
     /// <summary>
     /// Direct override of <see cref="Predicate"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region Predicate<T> definition
+    #region Predicate<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html"/>
     /// </summary>
@@ -119,7 +119,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region PredicateDirect<T> definition
+    #region PredicateDirect<T> declaration
     /// <summary>
     /// Direct override of <see cref="Predicate"/> or its generic type if there is one
     /// </summary>
@@ -160,7 +160,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region Predicate
+    #region Predicate implementation
     public partial class Predicate
     {
         #region Constructors
@@ -345,7 +345,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region PredicateDirect
+    #region PredicateDirect implementation
     public partial class PredicateDirect
     {
         #region Constructors
@@ -454,7 +454,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region Predicate<T>
+    #region Predicate<T> implementation
     public partial class Predicate<T> : Java.Util.Function.IPredicate<T>
     {
         #region Constructors
@@ -644,7 +644,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region PredicateDirect<T>
+    #region PredicateDirect<T> implementation
     public partial class PredicateDirect<T> : Java.Util.Function.IPredicate<T>
     {
         #region Constructors

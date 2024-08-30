@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Management
 {
-    #region GarbageCollectorMXBean definition
+    #region GarbageCollectorMXBean declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/GarbageCollectorMXBean.html"/>
     /// </summary>
@@ -98,7 +98,7 @@ namespace Java.Lang.Management
     }
     #endregion
 
-    #region GarbageCollectorMXBean
+    #region GarbageCollectorMXBean implementation
     public partial class GarbageCollectorMXBean : Java.Lang.Management.IGarbageCollectorMXBean
     {
         #region Constructors

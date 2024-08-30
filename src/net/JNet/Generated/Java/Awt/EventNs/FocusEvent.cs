@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
-    #region FocusEvent definition
+    #region FocusEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Awt.EventNs
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Cause definition
+        #region Cause declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region FocusEvent
+    #region FocusEvent implementation
     public partial class FocusEvent
     {
         #region Constructors
@@ -227,7 +227,7 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Nested classes
-        #region Cause
+        #region Cause implementation
         public partial class Cause
         {
             #region Constructors

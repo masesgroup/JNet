@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region StyleContext definition
+    #region StyleContext declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Text
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region NamedStyle definition
+        #region NamedStyle declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region SmallAttributeSet definition
+        #region SmallAttributeSet declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html"/>
         /// </summary>
@@ -160,7 +160,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region StyleContext
+    #region StyleContext implementation
     public partial class StyleContext
     {
         #region Constructors
@@ -439,7 +439,7 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Nested classes
-        #region NamedStyle
+        #region NamedStyle implementation
         public partial class NamedStyle
         {
             #region Constructors
@@ -661,7 +661,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region SmallAttributeSet
+        #region SmallAttributeSet implementation
         public partial class SmallAttributeSet
         {
             #region Constructors

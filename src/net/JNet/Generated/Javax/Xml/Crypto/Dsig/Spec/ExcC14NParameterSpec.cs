@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig.Spec
 {
-    #region ExcC14NParameterSpec definition
+    #region ExcC14NParameterSpec declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/ExcC14NParameterSpec.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
     }
     #endregion
 
-    #region ExcC14NParameterSpec
+    #region ExcC14NParameterSpec implementation
     public partial class ExcC14NParameterSpec
     {
         #region Constructors

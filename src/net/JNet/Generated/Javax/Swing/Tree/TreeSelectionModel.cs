@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Tree
 {
-    #region TreeSelectionModel definition
+    #region TreeSelectionModel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html"/>
     /// </summary>
@@ -195,7 +195,7 @@ namespace Javax.Swing.Tree
     }
     #endregion
 
-    #region TreeSelectionModel
+    #region TreeSelectionModel implementation
     public partial class TreeSelectionModel : Javax.Swing.Tree.ITreeSelectionModel
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region SynchronousQueue definition
+    #region SynchronousQueue declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SynchronousQueue.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region SynchronousQueue<E> definition
+    #region SynchronousQueue<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SynchronousQueue.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region SynchronousQueue
+    #region SynchronousQueue implementation
     public partial class SynchronousQueue
     {
         #region Constructors
@@ -231,7 +231,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region SynchronousQueue<E>
+    #region SynchronousQueue<E> implementation
     public partial class SynchronousQueue<E>
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Event
 {
-    #region ObjectChangeListener definition
+    #region ObjectChangeListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/ObjectChangeListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Naming.Event
     }
     #endregion
 
-    #region ObjectChangeListenerDirect definition
+    #region ObjectChangeListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="ObjectChangeListener"/> or its generic type if there is one
     /// </summary>
@@ -120,7 +120,7 @@ namespace Javax.Naming.Event
     }
     #endregion
 
-    #region ObjectChangeListener
+    #region ObjectChangeListener implementation
     public partial class ObjectChangeListener : Javax.Naming.Event.IObjectChangeListener
     {
         #region Constructors
@@ -202,7 +202,7 @@ namespace Javax.Naming.Event
     }
     #endregion
 
-    #region ObjectChangeListenerDirect
+    #region ObjectChangeListenerDirect implementation
     public partial class ObjectChangeListenerDirect : Javax.Naming.Event.IObjectChangeListener
     {
         #region Constructors

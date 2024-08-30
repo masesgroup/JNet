@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Tree
 {
-    #region DefaultTreeModel definition
+    #region DefaultTreeModel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Tree
     }
     #endregion
 
-    #region DefaultTreeModel
+    #region DefaultTreeModel implementation
     public partial class DefaultTreeModel
     {
         #region Constructors

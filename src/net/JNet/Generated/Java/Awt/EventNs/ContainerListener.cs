@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
-    #region ContainerListener definition
+    #region ContainerListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region ContainerListenerDirect definition
+    #region ContainerListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="ContainerListener"/> or its generic type if there is one
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region ContainerListener
+    #region ContainerListener implementation
     public partial class ContainerListener : Java.Awt.EventNs.IContainerListener
     {
         #region Constructors
@@ -202,7 +202,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region ContainerListenerDirect
+    #region ContainerListenerDirect implementation
     public partial class ContainerListenerDirect : Java.Awt.EventNs.IContainerListener
     {
         #region Constructors

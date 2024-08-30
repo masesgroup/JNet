@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent.Atomic
 {
-    #region AtomicLongFieldUpdater definition
+    #region AtomicLongFieldUpdater declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util.Concurrent.Atomic
     }
     #endregion
 
-    #region AtomicLongFieldUpdater<T> definition
+    #region AtomicLongFieldUpdater<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util.Concurrent.Atomic
     }
     #endregion
 
-    #region AtomicLongFieldUpdater
+    #region AtomicLongFieldUpdater implementation
     public partial class AtomicLongFieldUpdater
     {
         #region Constructors
@@ -318,7 +318,7 @@ namespace Java.Util.Concurrent.Atomic
     }
     #endregion
 
-    #region AtomicLongFieldUpdater<T>
+    #region AtomicLongFieldUpdater<T> implementation
     public partial class AtomicLongFieldUpdater<T>
     {
         #region Constructors

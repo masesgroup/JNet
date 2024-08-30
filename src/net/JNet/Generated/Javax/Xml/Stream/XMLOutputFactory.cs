@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream
 {
-    #region XMLOutputFactory definition
+    #region XMLOutputFactory declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Xml.Stream
     }
     #endregion
 
-    #region XMLOutputFactory
+    #region XMLOutputFactory implementation
     public partial class XMLOutputFactory
     {
         #region Constructors

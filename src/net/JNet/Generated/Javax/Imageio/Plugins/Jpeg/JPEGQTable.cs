@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio.Plugins.Jpeg
 {
-    #region JPEGQTable definition
+    #region JPEGQTable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGQTable.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Imageio.Plugins.Jpeg
     }
     #endregion
 
-    #region JPEGQTable
+    #region JPEGQTable implementation
     public partial class JPEGQTable
     {
         #region Constructors

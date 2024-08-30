@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Table
 {
-    #region TableStringConverter definition
+    #region TableStringConverter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableStringConverter.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Swing.Table
     }
     #endregion
 
-    #region TableStringConverter
+    #region TableStringConverter implementation
     public partial class TableStringConverter
     {
         #region Constructors

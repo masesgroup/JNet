@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent.Locks
 {
-    #region AbstractQueuedSynchronizer definition
+    #region AbstractQueuedSynchronizer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Java.Util.Concurrent.Locks
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region ConditionObject definition
+        #region ConditionObject declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.ConditionObject.html"/>
         /// </summary>
@@ -117,7 +117,7 @@ namespace Java.Util.Concurrent.Locks
     }
     #endregion
 
-    #region AbstractQueuedSynchronizer
+    #region AbstractQueuedSynchronizer implementation
     public partial class AbstractQueuedSynchronizer
     {
         #region Constructors
@@ -319,7 +319,7 @@ namespace Java.Util.Concurrent.Locks
         #endregion
 
         #region Nested classes
-        #region ConditionObject
+        #region ConditionObject implementation
         public partial class ConditionObject
         {
             #region Constructors

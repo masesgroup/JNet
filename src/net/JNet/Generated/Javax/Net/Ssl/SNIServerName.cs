@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Net.Ssl
 {
-    #region SNIServerName definition
+    #region SNIServerName declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SNIServerName.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region SNIServerName
+    #region SNIServerName implementation
     public partial class SNIServerName
     {
         #region Constructors

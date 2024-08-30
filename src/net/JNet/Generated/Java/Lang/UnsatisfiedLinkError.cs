@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region UnsatisfiedLinkError definition
+    #region UnsatisfiedLinkError declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/UnsatisfiedLinkError.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region UnsatisfiedLinkError
+    #region UnsatisfiedLinkError implementation
     public partial class UnsatisfiedLinkError
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Parsers
 {
-    #region ParserConfigurationException definition
+    #region ParserConfigurationException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/ParserConfigurationException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Xml.Parsers
     }
     #endregion
 
-    #region ParserConfigurationException
+    #region ParserConfigurationException implementation
     public partial class ParserConfigurationException
     {
         #region Constructors

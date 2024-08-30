@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom
 {
-    #region DocumentType definition
+    #region DocumentType declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentType.html"/>
     /// </summary>
@@ -114,7 +114,7 @@ namespace Org.W3c.Dom
     }
     #endregion
 
-    #region DocumentType
+    #region DocumentType implementation
     public partial class DocumentType : Org.W3c.Dom.IDocumentType
     {
         #region Constructors

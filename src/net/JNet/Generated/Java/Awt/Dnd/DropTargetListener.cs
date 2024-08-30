@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Dnd
 {
-    #region DropTargetListener definition
+    #region DropTargetListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Awt.Dnd
     }
     #endregion
 
-    #region DropTargetListenerDirect definition
+    #region DropTargetListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="DropTargetListener"/> or its generic type if there is one
     /// </summary>
@@ -135,7 +135,7 @@ namespace Java.Awt.Dnd
     }
     #endregion
 
-    #region DropTargetListener
+    #region DropTargetListener implementation
     public partial class DropTargetListener : Java.Awt.Dnd.IDropTargetListener
     {
         #region Constructors
@@ -283,7 +283,7 @@ namespace Java.Awt.Dnd
     }
     #endregion
 
-    #region DropTargetListenerDirect
+    #region DropTargetListenerDirect implementation
     public partial class DropTargetListenerDirect : Java.Awt.Dnd.IDropTargetListener
     {
         #region Constructors

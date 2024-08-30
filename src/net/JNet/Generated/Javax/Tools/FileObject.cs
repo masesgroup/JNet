@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Tools
 {
-    #region FileObject definition
+    #region FileObject declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html"/>
     /// </summary>
@@ -140,7 +140,7 @@ namespace Javax.Tools
     }
     #endregion
 
-    #region FileObject
+    #region FileObject implementation
     public partial class FileObject : Javax.Tools.IFileObject
     {
         #region Constructors

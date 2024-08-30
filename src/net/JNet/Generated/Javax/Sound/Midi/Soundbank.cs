@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Midi
 {
-    #region Soundbank definition
+    #region Soundbank declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Soundbank.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Javax.Sound.Midi
     }
     #endregion
 
-    #region Soundbank
+    #region Soundbank implementation
     public partial class Soundbank : Javax.Sound.Midi.ISoundbank
     {
         #region Constructors

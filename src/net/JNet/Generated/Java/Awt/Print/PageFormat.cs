@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Print
 {
-    #region PageFormat definition
+    #region PageFormat declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.Print
     }
     #endregion
 
-    #region PageFormat
+    #region PageFormat implementation
     public partial class PageFormat
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region AbstractQueue definition
+    #region AbstractQueue declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region AbstractQueue<E> definition
+    #region AbstractQueue<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region AbstractQueue
+    #region AbstractQueue implementation
     public partial class AbstractQueue
     {
         #region Constructors
@@ -171,7 +171,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region AbstractQueue<E>
+    #region AbstractQueue<E> implementation
     public partial class AbstractQueue<E>
     {
         #region Constructors

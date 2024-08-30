@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.FontNs
 {
-    #region GlyphVector definition
+    #region GlyphVector declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphVector.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Awt.FontNs
     }
     #endregion
 
-    #region GlyphVector
+    #region GlyphVector implementation
     public partial class GlyphVector
     {
         #region Constructors

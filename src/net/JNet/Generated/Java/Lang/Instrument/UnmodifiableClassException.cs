@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Instrument
 {
-    #region UnmodifiableClassException definition
+    #region UnmodifiableClassException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/UnmodifiableClassException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Lang.Instrument
     }
     #endregion
 
-    #region UnmodifiableClassException
+    #region UnmodifiableClassException implementation
     public partial class UnmodifiableClassException
     {
         #region Constructors

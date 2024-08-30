@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region GroupLayout definition
+    #region GroupLayout declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Alignment definition
+        #region Alignment declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Alignment.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region Group definition
+        #region Group declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Group.html"/>
         /// </summary>
@@ -158,7 +158,7 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region ParallelGroup definition
+        #region ParallelGroup declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.ParallelGroup.html"/>
         /// </summary>
@@ -203,7 +203,7 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region SequentialGroup definition
+        #region SequentialGroup declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.SequentialGroup.html"/>
         /// </summary>
@@ -252,7 +252,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region GroupLayout
+    #region GroupLayout implementation
     public partial class GroupLayout
     {
         #region Constructors
@@ -507,7 +507,7 @@ namespace Javax.Swing
         #endregion
 
         #region Nested classes
-        #region Alignment
+        #region Alignment implementation
         public partial class Alignment
         {
             #region Constructors
@@ -579,7 +579,7 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region Group
+        #region Group implementation
         public partial class Group
         {
             #region Constructors
@@ -660,7 +660,7 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region ParallelGroup
+        #region ParallelGroup implementation
         public partial class ParallelGroup
         {
             #region Constructors
@@ -724,7 +724,7 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region SequentialGroup
+        #region SequentialGroup implementation
         public partial class SequentialGroup
         {
             #region Constructors

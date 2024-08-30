@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File.Attribute
 {
-    #region FileStoreAttributeView definition
+    #region FileStoreAttributeView declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileStoreAttributeView.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Java.Nio.File.Attribute
     }
     #endregion
 
-    #region FileStoreAttributeView
+    #region FileStoreAttributeView implementation
     public partial class FileStoreAttributeView : Java.Nio.File.Attribute.IFileStoreAttributeView
     {
         #region Constructors

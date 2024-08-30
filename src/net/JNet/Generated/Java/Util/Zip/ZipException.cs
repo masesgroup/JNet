@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Zip
 {
-    #region ZipException definition
+    #region ZipException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Util.Zip
     }
     #endregion
 
-    #region ZipException
+    #region ZipException implementation
     public partial class ZipException
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region SQLTransactionRollbackException definition
+    #region SQLTransactionRollbackException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLTransactionRollbackException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region SQLTransactionRollbackException
+    #region SQLTransactionRollbackException implementation
     public partial class SQLTransactionRollbackException
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Nimbus
 {
-    #region State definition
+    #region State declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/nimbus/State.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Swing.Plaf.Nimbus
     }
     #endregion
 
-    #region State<T> definition
+    #region State<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/nimbus/State.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Javax.Swing.Plaf.Nimbus
     }
     #endregion
 
-    #region State
+    #region State implementation
     public partial class State
     {
         #region Constructors
@@ -151,7 +151,7 @@ namespace Javax.Swing.Plaf.Nimbus
     }
     #endregion
 
-    #region State<T>
+    #region State<T> implementation
     public partial class State<T>
     {
         #region Constructors

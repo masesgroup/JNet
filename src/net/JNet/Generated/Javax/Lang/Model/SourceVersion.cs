@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model
 {
-    #region SourceVersion definition
+    #region SourceVersion declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Lang.Model
     }
     #endregion
 
-    #region SourceVersion
+    #region SourceVersion implementation
     public partial class SourceVersion
     {
         #region Constructors

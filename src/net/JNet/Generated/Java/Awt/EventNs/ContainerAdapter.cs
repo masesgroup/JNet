@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
-    #region ContainerAdapter definition
+    #region ContainerAdapter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerAdapter.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region ContainerAdapterDirect definition
+    #region ContainerAdapterDirect declaration
     /// <summary>
     /// Direct override of <see cref="ContainerAdapter"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region ContainerAdapter
+    #region ContainerAdapter implementation
     public partial class ContainerAdapter
     {
         #region Constructors
@@ -174,7 +174,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region ContainerAdapterDirect
+    #region ContainerAdapterDirect implementation
     public partial class ContainerAdapterDirect
     {
         #region Constructors

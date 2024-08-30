@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Metal
 {
-    #region MetalTheme definition
+    #region MetalTheme declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalTheme.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Swing.Plaf.Metal
     }
     #endregion
 
-    #region MetalTheme
+    #region MetalTheme implementation
     public partial class MetalTheme
     {
         #region Constructors

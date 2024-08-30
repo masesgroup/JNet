@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region CopyOnWriteArrayList definition
+    #region CopyOnWriteArrayList declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region CopyOnWriteArrayList<E> definition
+    #region CopyOnWriteArrayList<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region CopyOnWriteArrayList
+    #region CopyOnWriteArrayList implementation
     public partial class CopyOnWriteArrayList
     {
         #region Constructors
@@ -453,7 +453,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region CopyOnWriteArrayList<E>
+    #region CopyOnWriteArrayList<E> implementation
     public partial class CopyOnWriteArrayList<E>
     {
         #region Constructors

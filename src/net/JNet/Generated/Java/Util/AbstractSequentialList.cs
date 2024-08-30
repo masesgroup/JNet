@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region AbstractSequentialList definition
+    #region AbstractSequentialList declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractSequentialList.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region AbstractSequentialList<E> definition
+    #region AbstractSequentialList<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractSequentialList.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region AbstractSequentialList
+    #region AbstractSequentialList implementation
     public partial class AbstractSequentialList
     {
         #region Constructors
@@ -151,7 +151,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region AbstractSequentialList<E>
+    #region AbstractSequentialList<E> implementation
     public partial class AbstractSequentialList<E>
     {
         #region Constructors

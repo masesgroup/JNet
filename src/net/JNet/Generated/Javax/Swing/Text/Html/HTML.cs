@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text.Html
 {
-    #region HTML definition
+    #region HTML declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Text.Html
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Attribute definition
+        #region Attribute declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Attribute.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Swing.Text.Html
         }
         #endregion
 
-        #region Tag definition
+        #region Tag declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html"/>
         /// </summary>
@@ -156,7 +156,7 @@ namespace Javax.Swing.Text.Html
         }
         #endregion
 
-        #region UnknownTag definition
+        #region UnknownTag declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.UnknownTag.html"/>
         /// </summary>
@@ -205,7 +205,7 @@ namespace Javax.Swing.Text.Html
     }
     #endregion
 
-    #region HTML
+    #region HTML implementation
     public partial class HTML
     {
         #region Constructors
@@ -278,7 +278,7 @@ namespace Javax.Swing.Text.Html
         #endregion
 
         #region Nested classes
-        #region Attribute
+        #region Attribute implementation
         public partial class Attribute
         {
             #region Constructors
@@ -789,7 +789,7 @@ namespace Javax.Swing.Text.Html
         }
         #endregion
 
-        #region Tag
+        #region Tag implementation
         public partial class Tag
         {
             #region Constructors
@@ -1300,7 +1300,7 @@ namespace Javax.Swing.Text.Html
         }
         #endregion
 
-        #region UnknownTag
+        #region UnknownTag implementation
         public partial class UnknownTag
         {
             #region Constructors

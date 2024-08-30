@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region LayoutStyle definition
+    #region LayoutStyle declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Swing
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region ComponentPlacement definition
+        #region ComponentPlacement declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html"/>
         /// </summary>
@@ -117,7 +117,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region LayoutStyle
+    #region LayoutStyle implementation
     public partial class LayoutStyle
     {
         #region Constructors
@@ -172,7 +172,7 @@ namespace Javax.Swing
         #endregion
 
         #region Nested classes
-        #region ComponentPlacement
+        #region ComponentPlacement implementation
         public partial class ComponentPlacement
         {
             #region Constructors

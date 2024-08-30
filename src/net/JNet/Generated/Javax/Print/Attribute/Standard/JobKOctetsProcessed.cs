@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Attribute.Standard
 {
-    #region JobKOctetsProcessed definition
+    #region JobKOctetsProcessed declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobKOctetsProcessed.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Print.Attribute.Standard
     }
     #endregion
 
-    #region JobKOctetsProcessed
+    #region JobKOctetsProcessed implementation
     public partial class JobKOctetsProcessed
     {
         #region Constructors

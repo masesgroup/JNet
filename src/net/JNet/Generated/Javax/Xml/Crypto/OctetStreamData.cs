@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto
 {
-    #region OctetStreamData definition
+    #region OctetStreamData declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/OctetStreamData.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Xml.Crypto
     }
     #endregion
 
-    #region OctetStreamData
+    #region OctetStreamData implementation
     public partial class OctetStreamData
     {
         #region Constructors

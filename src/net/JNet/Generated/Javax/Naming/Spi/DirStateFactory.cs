@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Spi
 {
-    #region DirStateFactory definition
+    #region DirStateFactory declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirStateFactory.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Naming.Spi
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Result definition
+        #region Result declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirStateFactory.Result.html"/>
         /// </summary>
@@ -146,7 +146,7 @@ namespace Javax.Naming.Spi
     }
     #endregion
 
-    #region DirStateFactory
+    #region DirStateFactory implementation
     public partial class DirStateFactory : Javax.Naming.Spi.IDirStateFactory
     {
         #region Constructors
@@ -184,7 +184,7 @@ namespace Javax.Naming.Spi
         #endregion
 
         #region Nested classes
-        #region Result
+        #region Result implementation
         public partial class Result
         {
             #region Constructors

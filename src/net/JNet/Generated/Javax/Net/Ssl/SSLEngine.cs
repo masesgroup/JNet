@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Net.Ssl
 {
-    #region SSLEngine definition
+    #region SSLEngine declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region SSLEngine
+    #region SSLEngine implementation
     public partial class SSLEngine
     {
         #region Constructors

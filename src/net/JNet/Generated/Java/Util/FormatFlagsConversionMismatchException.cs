@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region FormatFlagsConversionMismatchException definition
+    #region FormatFlagsConversionMismatchException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/FormatFlagsConversionMismatchException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region FormatFlagsConversionMismatchException
+    #region FormatFlagsConversionMismatchException implementation
     public partial class FormatFlagsConversionMismatchException
     {
         #region Constructors

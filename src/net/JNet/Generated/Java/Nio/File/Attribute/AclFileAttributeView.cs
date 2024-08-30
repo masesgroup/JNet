@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File.Attribute
 {
-    #region AclFileAttributeView definition
+    #region AclFileAttributeView declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclFileAttributeView.html"/>
     /// </summary>
@@ -99,7 +99,7 @@ namespace Java.Nio.File.Attribute
     }
     #endregion
 
-    #region AclFileAttributeView
+    #region AclFileAttributeView implementation
     public partial class AclFileAttributeView : Java.Nio.File.Attribute.IAclFileAttributeView
     {
         #region Constructors

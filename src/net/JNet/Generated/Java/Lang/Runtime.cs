@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region Runtime definition
+    #region Runtime declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Lang
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Version definition
+        #region Version declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region Runtime
+    #region Runtime implementation
     public partial class Runtime
     {
         #region Constructors
@@ -315,7 +315,7 @@ namespace Java.Lang
         #endregion
 
         #region Nested classes
-        #region Version
+        #region Version implementation
         public partial class Version
         {
             #region Constructors

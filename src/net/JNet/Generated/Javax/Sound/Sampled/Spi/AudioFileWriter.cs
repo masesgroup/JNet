@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Sampled.Spi
 {
-    #region AudioFileWriter definition
+    #region AudioFileWriter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileWriter.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Sound.Sampled.Spi
     }
     #endregion
 
-    #region AudioFileWriter
+    #region AudioFileWriter implementation
     public partial class AudioFileWriter
     {
         #region Constructors

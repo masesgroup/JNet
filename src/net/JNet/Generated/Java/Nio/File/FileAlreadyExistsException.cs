@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File
 {
-    #region FileAlreadyExistsException definition
+    #region FileAlreadyExistsException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileAlreadyExistsException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region FileAlreadyExistsException
+    #region FileAlreadyExistsException implementation
     public partial class FileAlreadyExistsException
     {
         #region Constructors

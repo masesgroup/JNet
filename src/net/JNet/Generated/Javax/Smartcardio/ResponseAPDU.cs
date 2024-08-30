@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Smartcardio
 {
-    #region ResponseAPDU definition
+    #region ResponseAPDU declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/ResponseAPDU.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Smartcardio
     }
     #endregion
 
-    #region ResponseAPDU
+    #region ResponseAPDU implementation
     public partial class ResponseAPDU
     {
         #region Constructors

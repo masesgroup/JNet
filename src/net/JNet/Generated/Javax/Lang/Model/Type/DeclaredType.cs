@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Type
 {
-    #region DeclaredType definition
+    #region DeclaredType declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/DeclaredType.html"/>
     /// </summary>
@@ -103,7 +103,7 @@ namespace Javax.Lang.Model.Type
     }
     #endregion
 
-    #region DeclaredType
+    #region DeclaredType implementation
     public partial class DeclaredType : Javax.Lang.Model.Type.IDeclaredType
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Security.Sasl
 {
-    #region SaslClientFactory definition
+    #region SaslClientFactory declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClientFactory.html"/>
     /// </summary>
@@ -108,7 +108,7 @@ namespace Javax.Security.Sasl
     }
     #endregion
 
-    #region SaslClientFactory
+    #region SaslClientFactory implementation
     public partial class SaslClientFactory : Javax.Security.Sasl.ISaslClientFactory
     {
         #region Constructors

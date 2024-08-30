@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Regex
 {
-    #region PatternSyntaxException definition
+    #region PatternSyntaxException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/PatternSyntaxException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Util.Regex
     }
     #endregion
 
-    #region PatternSyntaxException
+    #region PatternSyntaxException implementation
     public partial class PatternSyntaxException
     {
         #region Constructors

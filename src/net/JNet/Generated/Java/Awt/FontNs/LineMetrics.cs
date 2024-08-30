@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.FontNs
 {
-    #region LineMetrics definition
+    #region LineMetrics declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Awt.FontNs
     }
     #endregion
 
-    #region LineMetrics
+    #region LineMetrics implementation
     public partial class LineMetrics
     {
         #region Constructors

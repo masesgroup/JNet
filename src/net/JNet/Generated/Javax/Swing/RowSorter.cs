@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region RowSorter definition
+    #region RowSorter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Swing
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region SortKey definition
+        #region SortKey declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.SortKey.html"/>
         /// </summary>
@@ -117,7 +117,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region RowSorter<M> definition
+    #region RowSorter<M> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html"/>
     /// </summary>
@@ -165,7 +165,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region RowSorter
+    #region RowSorter implementation
     public partial class RowSorter
     {
         #region Constructors
@@ -310,7 +310,7 @@ namespace Javax.Swing
         #endregion
 
         #region Nested classes
-        #region SortKey
+        #region SortKey implementation
         public partial class SortKey
         {
             #region Constructors
@@ -371,7 +371,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region RowSorter<M>
+    #region RowSorter<M> implementation
     public partial class RowSorter<M>
     {
         #region Constructors

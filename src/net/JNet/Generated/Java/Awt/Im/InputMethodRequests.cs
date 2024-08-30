@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Im
 {
-    #region InputMethodRequests definition
+    #region InputMethodRequests declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodRequests.html"/>
     /// </summary>
@@ -131,7 +131,7 @@ namespace Java.Awt.Im
     }
     #endregion
 
-    #region InputMethodRequests
+    #region InputMethodRequests implementation
     public partial class InputMethodRequests : Java.Awt.Im.IInputMethodRequests
     {
         #region Constructors

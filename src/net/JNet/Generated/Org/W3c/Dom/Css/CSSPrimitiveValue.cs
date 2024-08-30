@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Css
 {
-    #region CSSPrimitiveValue definition
+    #region CSSPrimitiveValue declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html"/>
     /// </summary>
@@ -131,7 +131,7 @@ namespace Org.W3c.Dom.Css
     }
     #endregion
 
-    #region CSSPrimitiveValue
+    #region CSSPrimitiveValue implementation
     public partial class CSSPrimitiveValue : Org.W3c.Dom.Css.ICSSPrimitiveValue
     {
         #region Constructors

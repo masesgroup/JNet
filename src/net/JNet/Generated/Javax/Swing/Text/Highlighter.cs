@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region Highlighter definition
+    #region Highlighter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Swing.Text
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Highlight definition
+        #region Highlight declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.Highlight.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region HighlightPainter definition
+        #region HighlightPainter declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.HighlightPainter.html"/>
         /// </summary>
@@ -229,7 +229,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region Highlighter
+    #region Highlighter implementation
     public partial class Highlighter : Javax.Swing.Text.IHighlighter
     {
         #region Constructors
@@ -322,7 +322,7 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Nested classes
-        #region Highlight
+        #region Highlight implementation
         public partial class Highlight
         {
             #region Constructors
@@ -374,7 +374,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region HighlightPainter
+        #region HighlightPainter implementation
         public partial class HighlightPainter
         {
             #region Constructors

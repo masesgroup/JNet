@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region RandomAccess definition
+    #region RandomAccess declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/RandomAccess.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region RandomAccess
+    #region RandomAccess implementation
     public partial class RandomAccess : Java.Util.IRandomAccess
     {
         #region Constructors

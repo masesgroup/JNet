@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ImageNs
 {
-    #region WritableRenderedImage definition
+    #region WritableRenderedImage declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html"/>
     /// </summary>
@@ -134,7 +134,7 @@ namespace Java.Awt.ImageNs
     }
     #endregion
 
-    #region WritableRenderedImage
+    #region WritableRenderedImage implementation
     public partial class WritableRenderedImage : Java.Awt.ImageNs.IWritableRenderedImage
     {
         #region Constructors

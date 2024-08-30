@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region KeyStore definition
+    #region KeyStore declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Security
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Builder definition
+        #region Builder declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Builder.html"/>
         /// </summary>
@@ -113,7 +113,7 @@ namespace Java.Security
         }
         #endregion
 
-        #region CallbackHandlerProtection definition
+        #region CallbackHandlerProtection declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.CallbackHandlerProtection.html"/>
         /// </summary>
@@ -158,7 +158,7 @@ namespace Java.Security
         }
         #endregion
 
-        #region Entry definition
+        #region Entry declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Entry.html"/>
         /// </summary>
@@ -201,7 +201,7 @@ namespace Java.Security
             public override bool IsBridgeStatic => true;
 
             // TODO: complete the class
-            #region Attribute definition
+            #region Attribute declaration
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Entry.Attribute.html"/>
             /// </summary>
@@ -252,7 +252,7 @@ namespace Java.Security
         }
         #endregion
 
-        #region LoadStoreParameter definition
+        #region LoadStoreParameter declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.LoadStoreParameter.html"/>
         /// </summary>
@@ -299,7 +299,7 @@ namespace Java.Security
         }
         #endregion
 
-        #region PasswordProtection definition
+        #region PasswordProtection declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html"/>
         /// </summary>
@@ -344,7 +344,7 @@ namespace Java.Security
         }
         #endregion
 
-        #region PrivateKeyEntry definition
+        #region PrivateKeyEntry declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html"/>
         /// </summary>
@@ -389,7 +389,7 @@ namespace Java.Security
         }
         #endregion
 
-        #region ProtectionParameter definition
+        #region ProtectionParameter declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.ProtectionParameter.html"/>
         /// </summary>
@@ -436,7 +436,7 @@ namespace Java.Security
         }
         #endregion
 
-        #region SecretKeyEntry definition
+        #region SecretKeyEntry declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.SecretKeyEntry.html"/>
         /// </summary>
@@ -481,7 +481,7 @@ namespace Java.Security
         }
         #endregion
 
-        #region TrustedCertificateEntry definition
+        #region TrustedCertificateEntry declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.TrustedCertificateEntry.html"/>
         /// </summary>
@@ -530,7 +530,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region KeyStore
+    #region KeyStore implementation
     public partial class KeyStore
     {
         #region Constructors
@@ -862,7 +862,7 @@ namespace Java.Security
         #endregion
 
         #region Nested classes
-        #region Builder
+        #region Builder implementation
         public partial class Builder
         {
             #region Constructors
@@ -953,7 +953,7 @@ namespace Java.Security
         }
         #endregion
 
-        #region CallbackHandlerProtection
+        #region CallbackHandlerProtection implementation
         public partial class CallbackHandlerProtection
         {
             #region Constructors
@@ -999,7 +999,7 @@ namespace Java.Security
         }
         #endregion
 
-        #region Entry
+        #region Entry implementation
         public partial class Entry
         {
             #region Constructors
@@ -1030,7 +1030,7 @@ namespace Java.Security
             #endregion
 
             #region Nested classes
-            #region Attribute
+            #region Attribute implementation
             public partial class Attribute
             {
                 #region Constructors
@@ -1082,7 +1082,7 @@ namespace Java.Security
         }
         #endregion
 
-        #region LoadStoreParameter
+        #region LoadStoreParameter implementation
         public partial class LoadStoreParameter
         {
             #region Constructors
@@ -1120,7 +1120,7 @@ namespace Java.Security
         }
         #endregion
 
-        #region PasswordProtection
+        #region PasswordProtection implementation
         public partial class PasswordProtection
         {
             #region Constructors
@@ -1210,7 +1210,7 @@ namespace Java.Security
         }
         #endregion
 
-        #region PrivateKeyEntry
+        #region PrivateKeyEntry implementation
         public partial class PrivateKeyEntry
         {
             #region Constructors
@@ -1288,7 +1288,7 @@ namespace Java.Security
         }
         #endregion
 
-        #region ProtectionParameter
+        #region ProtectionParameter implementation
         public partial class ProtectionParameter
         {
             #region Constructors
@@ -1319,7 +1319,7 @@ namespace Java.Security
         }
         #endregion
 
-        #region SecretKeyEntry
+        #region SecretKeyEntry implementation
         public partial class SecretKeyEntry
         {
             #region Constructors
@@ -1381,7 +1381,7 @@ namespace Java.Security
         }
         #endregion
 
-        #region TrustedCertificateEntry
+        #region TrustedCertificateEntry implementation
         public partial class TrustedCertificateEntry
         {
             #region Constructors

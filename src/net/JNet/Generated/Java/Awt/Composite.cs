@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region Composite definition
+    #region Composite declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Composite.html"/>
     /// </summary>
@@ -98,7 +98,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region Composite
+    #region Composite implementation
     public partial class Composite : Java.Awt.IComposite
     {
         #region Constructors

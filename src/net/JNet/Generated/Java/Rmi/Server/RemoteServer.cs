@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi.Server
 {
-    #region RemoteServer definition
+    #region RemoteServer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteServer.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Rmi.Server
     }
     #endregion
 
-    #region RemoteServer
+    #region RemoteServer implementation
     public partial class RemoteServer
     {
         #region Constructors

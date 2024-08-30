@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
-    #region HTMLFieldSetElement definition
+    #region HTMLFieldSetElement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFieldSetElement.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Org.W3c.Dom.Html
     }
     #endregion
 
-    #region HTMLFieldSetElement
+    #region HTMLFieldSetElement implementation
     public partial class HTMLFieldSetElement : Org.W3c.Dom.Html.IHTMLFieldSetElement
     {
         #region Constructors

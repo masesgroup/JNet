@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Net.Ssl
 {
-    #region SSLContext definition
+    #region SSLContext declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region SSLContext
+    #region SSLContext implementation
     public partial class SSLContext
     {
         #region Constructors

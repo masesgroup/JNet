@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region JComboBox definition
+    #region JComboBox declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region KeySelectionManager definition
+        #region KeySelectionManager declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.KeySelectionManager.html"/>
         /// </summary>
@@ -117,7 +117,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region JComboBox<E> definition
+    #region JComboBox<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html"/>
     /// </summary>
@@ -163,7 +163,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region JComboBox
+    #region JComboBox implementation
     public partial class JComboBox
     {
         #region Constructors
@@ -578,7 +578,7 @@ namespace Javax.Swing
         #endregion
 
         #region Nested classes
-        #region KeySelectionManager
+        #region KeySelectionManager implementation
         public partial class KeySelectionManager
         {
             #region Constructors
@@ -626,7 +626,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region JComboBox<E>
+    #region JComboBox<E> implementation
     public partial class JComboBox<E>
     {
         #region Constructors

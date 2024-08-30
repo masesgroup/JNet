@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Directory
 {
-    #region InitialDirContext definition
+    #region InitialDirContext declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/InitialDirContext.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Naming.Directory
     }
     #endregion
 
-    #region InitialDirContext
+    #region InitialDirContext implementation
     public partial class InitialDirContext
     {
         #region Constructors

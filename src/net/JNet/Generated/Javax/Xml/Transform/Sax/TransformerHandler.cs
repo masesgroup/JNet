@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Transform.Sax
 {
-    #region TransformerHandler definition
+    #region TransformerHandler declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TransformerHandler.html"/>
     /// </summary>
@@ -104,7 +104,7 @@ namespace Javax.Xml.Transform.Sax
     }
     #endregion
 
-    #region TransformerHandler
+    #region TransformerHandler implementation
     public partial class TransformerHandler : Javax.Xml.Transform.Sax.ITransformerHandler
     {
         #region Constructors

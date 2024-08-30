@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region InstanceNotFoundException definition
+    #region InstanceNotFoundException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/InstanceNotFoundException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region InstanceNotFoundException
+    #region InstanceNotFoundException implementation
     public partial class InstanceNotFoundException
     {
         #region Constructors

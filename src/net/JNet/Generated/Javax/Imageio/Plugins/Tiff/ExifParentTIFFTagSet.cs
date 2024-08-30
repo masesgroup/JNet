@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio.Plugins.Tiff
 {
-    #region ExifParentTIFFTagSet definition
+    #region ExifParentTIFFTagSet declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifParentTIFFTagSet.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Imageio.Plugins.Tiff
     }
     #endregion
 
-    #region ExifParentTIFFTagSet
+    #region ExifParentTIFFTagSet implementation
     public partial class ExifParentTIFFTagSet
     {
         #region Constructors

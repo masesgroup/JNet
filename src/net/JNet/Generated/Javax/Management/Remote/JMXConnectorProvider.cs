@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Remote
 {
-    #region JMXConnectorProvider definition
+    #region JMXConnectorProvider declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorProvider.html"/>
     /// </summary>
@@ -98,7 +98,7 @@ namespace Javax.Management.Remote
     }
     #endregion
 
-    #region JMXConnectorProvider
+    #region JMXConnectorProvider implementation
     public partial class JMXConnectorProvider : Javax.Management.Remote.IJMXConnectorProvider
     {
         #region Constructors

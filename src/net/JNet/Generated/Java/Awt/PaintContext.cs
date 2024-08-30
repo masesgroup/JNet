@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region PaintContext definition
+    #region PaintContext declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PaintContext.html"/>
     /// </summary>
@@ -107,7 +107,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region PaintContext
+    #region PaintContext implementation
     public partial class PaintContext : Java.Awt.IPaintContext
     {
         #region Constructors

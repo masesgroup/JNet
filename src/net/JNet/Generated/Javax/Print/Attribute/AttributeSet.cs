@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Attribute
 {
-    #region AttributeSet definition
+    #region AttributeSet declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSet.html"/>
     /// </summary>
@@ -151,7 +151,7 @@ namespace Javax.Print.Attribute
     }
     #endregion
 
-    #region AttributeSet
+    #region AttributeSet implementation
     public partial class AttributeSet : Javax.Print.Attribute.IAttributeSet
     {
         #region Constructors

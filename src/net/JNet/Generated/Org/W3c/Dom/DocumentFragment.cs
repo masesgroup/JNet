@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom
 {
-    #region DocumentFragment definition
+    #region DocumentFragment declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentFragment.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Org.W3c.Dom
     }
     #endregion
 
-    #region DocumentFragment
+    #region DocumentFragment implementation
     public partial class DocumentFragment : Org.W3c.Dom.IDocumentFragment
     {
         #region Constructors

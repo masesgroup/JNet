@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region Scrollable definition
+    #region Scrollable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Scrollable.html"/>
     /// </summary>
@@ -118,7 +118,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region Scrollable
+    #region Scrollable implementation
     public partial class Scrollable : Javax.Swing.IScrollable
     {
         #region Constructors

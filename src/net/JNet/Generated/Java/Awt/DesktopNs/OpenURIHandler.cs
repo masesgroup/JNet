@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.DesktopNs
 {
-    #region OpenURIHandler definition
+    #region OpenURIHandler declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/OpenURIHandler.html"/>
     /// </summary>
@@ -95,7 +95,7 @@ namespace Java.Awt.DesktopNs
     }
     #endregion
 
-    #region OpenURIHandler
+    #region OpenURIHandler implementation
     public partial class OpenURIHandler : Java.Awt.DesktopNs.IOpenURIHandler
     {
         #region Constructors

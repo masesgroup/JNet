@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region ThreadLocal definition
+    #region ThreadLocal declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadLocal.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region ThreadLocal<T> definition
+    #region ThreadLocal<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadLocal.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region ThreadLocal
+    #region ThreadLocal implementation
     public partial class ThreadLocal
     {
         #region Constructors
@@ -179,7 +179,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region ThreadLocal<T>
+    #region ThreadLocal<T> implementation
     public partial class ThreadLocal<T>
     {
         #region Constructors

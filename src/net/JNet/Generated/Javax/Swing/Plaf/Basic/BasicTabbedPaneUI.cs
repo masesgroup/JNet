@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Basic
 {
-    #region BasicTabbedPaneUI definition
+    #region BasicTabbedPaneUI declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTabbedPaneUI.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Plaf.Basic
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region PropertyChangeHandler definition
+        #region PropertyChangeHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTabbedPaneUI.PropertyChangeHandler.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region TabbedPaneLayout definition
+        #region TabbedPaneLayout declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTabbedPaneUI.TabbedPaneLayout.html"/>
         /// </summary>
@@ -156,7 +156,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region TabSelectionHandler definition
+        #region TabSelectionHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTabbedPaneUI.TabSelectionHandler.html"/>
         /// </summary>
@@ -205,7 +205,7 @@ namespace Javax.Swing.Plaf.Basic
     }
     #endregion
 
-    #region BasicTabbedPaneUI
+    #region BasicTabbedPaneUI implementation
     public partial class BasicTabbedPaneUI
     {
         #region Constructors
@@ -233,7 +233,7 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Nested classes
-        #region PropertyChangeHandler
+        #region PropertyChangeHandler implementation
         public partial class PropertyChangeHandler
         {
             #region Constructors
@@ -284,7 +284,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region TabbedPaneLayout
+        #region TabbedPaneLayout implementation
         public partial class TabbedPaneLayout
         {
             #region Constructors
@@ -373,7 +373,7 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region TabSelectionHandler
+        #region TabSelectionHandler implementation
         public partial class TabSelectionHandler
         {
             #region Constructors

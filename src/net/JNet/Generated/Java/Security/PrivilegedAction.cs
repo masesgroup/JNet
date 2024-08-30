@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region PrivilegedAction definition
+    #region PrivilegedAction declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedAction.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region PrivilegedAction<T> definition
+    #region PrivilegedAction<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedAction.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region PrivilegedAction
+    #region PrivilegedAction implementation
     public partial class PrivilegedAction
     {
         #region Constructors
@@ -182,7 +182,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region PrivilegedAction<T>
+    #region PrivilegedAction<T> implementation
     public partial class PrivilegedAction<T> : Java.Security.IPrivilegedAction<T>
     {
         #region Constructors

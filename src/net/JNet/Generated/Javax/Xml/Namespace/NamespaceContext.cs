@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Namespace
 {
-    #region NamespaceContext definition
+    #region NamespaceContext declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/namespace/NamespaceContext.html"/>
     /// </summary>
@@ -108,7 +108,7 @@ namespace Javax.Xml.Namespace
     }
     #endregion
 
-    #region NamespaceContext
+    #region NamespaceContext implementation
     public partial class NamespaceContext : Javax.Xml.Namespace.INamespaceContext
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Attribute.Standard
 {
-    #region DateTimeAtProcessing definition
+    #region DateTimeAtProcessing declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/DateTimeAtProcessing.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Print.Attribute.Standard
     }
     #endregion
 
-    #region DateTimeAtProcessing
+    #region DateTimeAtProcessing implementation
     public partial class DateTimeAtProcessing
     {
         #region Constructors

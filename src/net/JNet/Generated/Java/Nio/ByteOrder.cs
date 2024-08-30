@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio
 {
-    #region ByteOrder definition
+    #region ByteOrder declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteOrder.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Nio
     }
     #endregion
 
-    #region ByteOrder
+    #region ByteOrder implementation
     public partial class ByteOrder
     {
         #region Constructors

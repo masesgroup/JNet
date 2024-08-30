@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Tools
 {
-    #region JavaFileManager definition
+    #region JavaFileManager declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Tools
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Location definition
+        #region Location declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.Location.html"/>
         /// </summary>
@@ -275,7 +275,7 @@ namespace Javax.Tools
     }
     #endregion
 
-    #region JavaFileManager
+    #region JavaFileManager implementation
     public partial class JavaFileManager : Javax.Tools.IJavaFileManager
     {
         #region Constructors
@@ -503,7 +503,7 @@ namespace Javax.Tools
         #endregion
 
         #region Nested classes
-        #region Location
+        #region Location implementation
         public partial class Location
         {
             #region Constructors

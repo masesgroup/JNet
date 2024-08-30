@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Tree
 {
-    #region DefaultTreeCellEditor definition
+    #region DefaultTreeCellEditor declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Swing.Tree
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region DefaultTextField definition
+        #region DefaultTextField declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.DefaultTextField.html"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Swing.Tree
         }
         #endregion
 
-        #region EditorContainer definition
+        #region EditorContainer declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.EditorContainer.html"/>
         /// </summary>
@@ -160,7 +160,7 @@ namespace Javax.Swing.Tree
     }
     #endregion
 
-    #region DefaultTreeCellEditor
+    #region DefaultTreeCellEditor implementation
     public partial class DefaultTreeCellEditor
     {
         #region Constructors
@@ -322,7 +322,7 @@ namespace Javax.Swing.Tree
         #endregion
 
         #region Nested classes
-        #region DefaultTextField
+        #region DefaultTextField implementation
         public partial class DefaultTextField
         {
             #region Constructors
@@ -362,7 +362,7 @@ namespace Javax.Swing.Tree
         }
         #endregion
 
-        #region EditorContainer
+        #region EditorContainer implementation
         public partial class EditorContainer
         {
             #region Constructors

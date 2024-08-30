@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
-    #region TreeExpansionListener definition
+    #region TreeExpansionListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeExpansionListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region TreeExpansionListenerDirect definition
+    #region TreeExpansionListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="TreeExpansionListener"/> or its generic type if there is one
     /// </summary>
@@ -120,7 +120,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region TreeExpansionListener
+    #region TreeExpansionListener implementation
     public partial class TreeExpansionListener : Javax.Swing.Event.ITreeExpansionListener
     {
         #region Constructors
@@ -202,7 +202,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region TreeExpansionListenerDirect
+    #region TreeExpansionListenerDirect implementation
     public partial class TreeExpansionListenerDirect : Javax.Swing.Event.ITreeExpansionListener
     {
         #region Constructors

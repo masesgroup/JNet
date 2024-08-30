@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region UnaryOperator definition
+    #region UnaryOperator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/UnaryOperator.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region UnaryOperatorDirect definition
+    #region UnaryOperatorDirect declaration
     /// <summary>
     /// Direct override of <see cref="UnaryOperator"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region UnaryOperator<T> definition
+    #region UnaryOperator<T> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/UnaryOperator.html"/>
     /// </summary>
@@ -119,7 +119,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region UnaryOperatorDirect<T> definition
+    #region UnaryOperatorDirect<T> declaration
     /// <summary>
     /// Direct override of <see cref="UnaryOperator"/> or its generic type if there is one
     /// </summary>
@@ -160,7 +160,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region UnaryOperator
+    #region UnaryOperator implementation
     public partial class UnaryOperator
     {
         #region Constructors
@@ -292,7 +292,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region UnaryOperatorDirect
+    #region UnaryOperatorDirect implementation
     public partial class UnaryOperatorDirect
     {
         #region Constructors
@@ -395,7 +395,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region UnaryOperator<T>
+    #region UnaryOperator<T> implementation
     public partial class UnaryOperator<T> : Java.Util.Function.IUnaryOperator<T>
     {
         #region Constructors
@@ -544,7 +544,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region UnaryOperatorDirect<T>
+    #region UnaryOperatorDirect<T> implementation
     public partial class UnaryOperatorDirect<T> : Java.Util.Function.IUnaryOperator<T>
     {
         #region Constructors

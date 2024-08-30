@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Events
 {
-    #region EventListener definition
+    #region EventListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Org.W3c.Dom.Events
     }
     #endregion
 
-    #region EventListenerDirect definition
+    #region EventListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="EventListener"/> or its generic type if there is one
     /// </summary>
@@ -115,7 +115,7 @@ namespace Org.W3c.Dom.Events
     }
     #endregion
 
-    #region EventListener
+    #region EventListener implementation
     public partial class EventListener : Org.W3c.Dom.Events.IEventListener
     {
         #region Constructors
@@ -175,7 +175,7 @@ namespace Org.W3c.Dom.Events
     }
     #endregion
 
-    #region EventListenerDirect
+    #region EventListenerDirect implementation
     public partial class EventListenerDirect : Org.W3c.Dom.Events.IEventListener
     {
         #region Constructors

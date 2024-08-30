@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region ResourceBundle definition
+    #region ResourceBundle declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Java.Util
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Control definition
+        #region Control declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html"/>
         /// </summary>
@@ -117,7 +117,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region ResourceBundle
+    #region ResourceBundle implementation
     public partial class ResourceBundle
     {
         #region Constructors
@@ -305,7 +305,7 @@ namespace Java.Util
         #endregion
 
         #region Nested classes
-        #region Control
+        #region Control implementation
         public partial class Control
         {
             #region Constructors

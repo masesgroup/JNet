@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region KeyRep definition
+    #region KeyRep declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Security
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Type definition
+        #region Type declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Security
     }
     #endregion
 
-    #region KeyRep
+    #region KeyRep implementation
     public partial class KeyRep
     {
         #region Constructors
@@ -150,7 +150,7 @@ namespace Java.Security
         #endregion
 
         #region Nested classes
-        #region Type
+        #region Type implementation
         public partial class Type
         {
             #region Constructors

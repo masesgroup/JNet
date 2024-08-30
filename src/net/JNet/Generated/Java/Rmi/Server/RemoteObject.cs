@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi.Server
 {
-    #region RemoteObject definition
+    #region RemoteObject declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteObject.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Rmi.Server
     }
     #endregion
 
-    #region RemoteObject
+    #region RemoteObject implementation
     public partial class RemoteObject
     {
         #region Constructors

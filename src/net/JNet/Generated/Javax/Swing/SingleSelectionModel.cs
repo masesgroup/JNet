@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    #region SingleSelectionModel definition
+    #region SingleSelectionModel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SingleSelectionModel.html"/>
     /// </summary>
@@ -113,7 +113,7 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region SingleSelectionModel
+    #region SingleSelectionModel implementation
     public partial class SingleSelectionModel : Javax.Swing.ISingleSelectionModel
     {
         #region Constructors

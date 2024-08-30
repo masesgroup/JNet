@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File.Attribute
 {
-    #region FileTime definition
+    #region FileTime declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Nio.File.Attribute
     }
     #endregion
 
-    #region FileTime
+    #region FileTime implementation
     public partial class FileTime
     {
         #region Constructors

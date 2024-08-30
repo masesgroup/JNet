@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
-    #region AWTEventListenerProxy definition
+    #region AWTEventListenerProxy declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListenerProxy.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region AWTEventListenerProxy
+    #region AWTEventListenerProxy implementation
     public partial class AWTEventListenerProxy
     {
         #region Constructors

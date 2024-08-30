@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Net.Ssl
 {
-    #region TrustManagerFactory definition
+    #region TrustManagerFactory declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/TrustManagerFactory.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region TrustManagerFactory
+    #region TrustManagerFactory implementation
     public partial class TrustManagerFactory
     {
         #region Constructors

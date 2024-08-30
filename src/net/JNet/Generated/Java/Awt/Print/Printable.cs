@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Print
 {
-    #region Printable definition
+    #region Printable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Printable.html"/>
     /// </summary>
@@ -99,7 +99,7 @@ namespace Java.Awt.Print
     }
     #endregion
 
-    #region Printable
+    #region Printable implementation
     public partial class Printable : Java.Awt.Print.IPrintable
     {
         #region Constructors

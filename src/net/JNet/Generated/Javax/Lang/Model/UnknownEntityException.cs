@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model
 {
-    #region UnknownEntityException definition
+    #region UnknownEntityException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/UnknownEntityException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Lang.Model
     }
     #endregion
 
-    #region UnknownEntityException
+    #region UnknownEntityException implementation
     public partial class UnknownEntityException
     {
         #region Constructors

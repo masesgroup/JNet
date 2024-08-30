@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream.Events
 {
-    #region EntityReference definition
+    #region EntityReference declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityReference.html"/>
     /// </summary>
@@ -98,7 +98,7 @@ namespace Javax.Xml.Stream.Events
     }
     #endregion
 
-    #region EntityReference
+    #region EntityReference implementation
     public partial class EntityReference : Javax.Xml.Stream.Events.IEntityReference
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
-    #region GenericDeclaration definition
+    #region GenericDeclaration declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/GenericDeclaration.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region GenericDeclaration
+    #region GenericDeclaration implementation
     public partial class GenericDeclaration : Java.Lang.Reflect.IGenericDeclaration
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ColorNs
 {
-    #region ICC_ProfileGray definition
+    #region ICC_ProfileGray declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_ProfileGray.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Awt.ColorNs
     }
     #endregion
 
-    #region ICC_ProfileGray
+    #region ICC_ProfileGray implementation
     public partial class ICC_ProfileGray
     {
         #region Constructors

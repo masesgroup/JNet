@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Cert
 {
-    #region CRLSelector definition
+    #region CRLSelector declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLSelector.html"/>
     /// </summary>
@@ -96,7 +96,7 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region CRLSelector
+    #region CRLSelector implementation
     public partial class CRLSelector : Java.Security.Cert.ICRLSelector
     {
         #region Constructors

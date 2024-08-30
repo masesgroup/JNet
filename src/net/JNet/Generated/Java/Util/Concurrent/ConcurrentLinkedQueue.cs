@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region ConcurrentLinkedQueue definition
+    #region ConcurrentLinkedQueue declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedQueue.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ConcurrentLinkedQueue<E> definition
+    #region ConcurrentLinkedQueue<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedQueue.html"/>
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ConcurrentLinkedQueue
+    #region ConcurrentLinkedQueue implementation
     public partial class ConcurrentLinkedQueue
     {
         #region Constructors
@@ -159,7 +159,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ConcurrentLinkedQueue<E>
+    #region ConcurrentLinkedQueue<E> implementation
     public partial class ConcurrentLinkedQueue<E>
     {
         #region Constructors

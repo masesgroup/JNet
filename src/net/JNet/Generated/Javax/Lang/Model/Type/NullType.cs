@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Type
 {
-    #region NullType definition
+    #region NullType declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/NullType.html"/>
     /// </summary>
@@ -90,7 +90,7 @@ namespace Javax.Lang.Model.Type
     }
     #endregion
 
-    #region NullType
+    #region NullType implementation
     public partial class NullType : Javax.Lang.Model.Type.INullType
     {
         #region Constructors

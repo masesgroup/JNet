@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    #region GraphicsDevice definition
+    #region GraphicsDevice declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Java.Awt
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region WindowTranslucency definition
+        #region WindowTranslucency declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.WindowTranslucency.html"/>
         /// </summary>
@@ -117,7 +117,7 @@ namespace Java.Awt
     }
     #endregion
 
-    #region GraphicsDevice
+    #region GraphicsDevice implementation
     public partial class GraphicsDevice
     {
         #region Constructors
@@ -249,7 +249,7 @@ namespace Java.Awt
         #endregion
 
         #region Nested classes
-        #region WindowTranslucency
+        #region WindowTranslucency implementation
         public partial class WindowTranslucency
         {
             #region Constructors

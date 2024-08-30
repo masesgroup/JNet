@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Element
 {
-    #region ExecutableElement definition
+    #region ExecutableElement declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html"/>
     /// </summary>
@@ -128,7 +128,7 @@ namespace Javax.Lang.Model.Element
     }
     #endregion
 
-    #region ExecutableElement
+    #region ExecutableElement implementation
     public partial class ExecutableElement : Javax.Lang.Model.Element.IExecutableElement
     {
         #region Constructors

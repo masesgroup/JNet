@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
-    #region DocumentListener definition
+    #region DocumentListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region DocumentListenerDirect definition
+    #region DocumentListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="DocumentListener"/> or its generic type if there is one
     /// </summary>
@@ -125,7 +125,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region DocumentListener
+    #region DocumentListener implementation
     public partial class DocumentListener : Javax.Swing.Event.IDocumentListener
     {
         #region Constructors
@@ -229,7 +229,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region DocumentListenerDirect
+    #region DocumentListenerDirect implementation
     public partial class DocumentListenerDirect : Javax.Swing.Event.IDocumentListener
     {
         #region Constructors

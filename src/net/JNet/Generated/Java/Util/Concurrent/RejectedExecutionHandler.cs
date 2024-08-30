@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    #region RejectedExecutionHandler definition
+    #region RejectedExecutionHandler declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RejectedExecutionHandler.html"/>
     /// </summary>
@@ -96,7 +96,7 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region RejectedExecutionHandler
+    #region RejectedExecutionHandler implementation
     public partial class RejectedExecutionHandler : Java.Util.Concurrent.IRejectedExecutionHandler
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio.Spi
 {
-    #region ServiceRegistry definition
+    #region ServiceRegistry declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html"/>
     /// </summary>
@@ -66,7 +66,7 @@ namespace Javax.Imageio.Spi
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Filter definition
+        #region Filter declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.Filter.html"/>
         /// </summary>
@@ -117,7 +117,7 @@ namespace Javax.Imageio.Spi
     }
     #endregion
 
-    #region ServiceRegistry
+    #region ServiceRegistry implementation
     public partial class ServiceRegistry
     {
         #region Constructors
@@ -304,7 +304,7 @@ namespace Javax.Imageio.Spi
         #endregion
 
         #region Nested classes
-        #region Filter
+        #region Filter implementation
         public partial class Filter
         {
             #region Constructors

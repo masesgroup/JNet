@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Openmbean
 {
-    #region TabularData definition
+    #region TabularData declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html"/>
     /// </summary>
@@ -158,7 +158,7 @@ namespace Javax.Management.Openmbean
     }
     #endregion
 
-    #region TabularData
+    #region TabularData implementation
     public partial class TabularData : Javax.Management.Openmbean.ITabularData
     {
         #region Constructors

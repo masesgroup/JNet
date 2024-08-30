@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Security.Sasl
 {
-    #region AuthorizeCallback definition
+    #region AuthorizeCallback declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthorizeCallback.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Security.Sasl
     }
     #endregion
 
-    #region AuthorizeCallback
+    #region AuthorizeCallback implementation
     public partial class AuthorizeCallback
     {
         #region Constructors

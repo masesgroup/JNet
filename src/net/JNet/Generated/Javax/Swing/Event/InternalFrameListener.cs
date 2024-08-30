@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
-    #region InternalFrameListener definition
+    #region InternalFrameListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region InternalFrameListenerDirect definition
+    #region InternalFrameListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="InternalFrameListener"/> or its generic type if there is one
     /// </summary>
@@ -145,7 +145,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region InternalFrameListener
+    #region InternalFrameListener implementation
     public partial class InternalFrameListener : Javax.Swing.Event.IInternalFrameListener
     {
         #region Constructors
@@ -337,7 +337,7 @@ namespace Javax.Swing.Event
     }
     #endregion
 
-    #region InternalFrameListenerDirect
+    #region InternalFrameListenerDirect implementation
     public partial class InternalFrameListenerDirect : Javax.Swing.Event.IInternalFrameListener
     {
         #region Constructors

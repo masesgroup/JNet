@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Ls
 {
-    #region LSLoadEvent definition
+    #region LSLoadEvent declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSLoadEvent.html"/>
     /// </summary>
@@ -98,7 +98,7 @@ namespace Org.W3c.Dom.Ls
     }
     #endregion
 
-    #region LSLoadEvent
+    #region LSLoadEvent implementation
     public partial class LSLoadEvent : Org.W3c.Dom.Ls.ILSLoadEvent
     {
         #region Constructors

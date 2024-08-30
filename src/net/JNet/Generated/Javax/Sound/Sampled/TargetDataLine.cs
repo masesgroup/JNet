@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Sampled
 {
-    #region TargetDataLine definition
+    #region TargetDataLine declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/TargetDataLine.html"/>
     /// </summary>
@@ -111,7 +111,7 @@ namespace Javax.Sound.Sampled
     }
     #endregion
 
-    #region TargetDataLine
+    #region TargetDataLine implementation
     public partial class TargetDataLine : Javax.Sound.Sampled.ITargetDataLine
     {
         #region Constructors

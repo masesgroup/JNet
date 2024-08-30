@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region Deque definition
+    #region Deque declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Deque<E> definition
+    #region Deque<E> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html"/>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Deque
+    #region Deque implementation
     public partial class Deque
     {
         #region Constructors
@@ -548,7 +548,7 @@ namespace Java.Util
     }
     #endregion
 
-    #region Deque<E>
+    #region Deque<E> implementation
     public partial class Deque<E> : Java.Util.IDeque<E>
     {
         #region Constructors

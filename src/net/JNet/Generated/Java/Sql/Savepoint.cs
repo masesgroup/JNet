@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region Savepoint definition
+    #region Savepoint declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Savepoint.html"/>
     /// </summary>
@@ -98,7 +98,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region Savepoint
+    #region Savepoint implementation
     public partial class Savepoint : Java.Sql.ISavepoint
     {
         #region Constructors

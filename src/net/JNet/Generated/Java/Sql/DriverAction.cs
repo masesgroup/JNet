@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region DriverAction definition
+    #region DriverAction declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverAction.html"/>
     /// </summary>
@@ -94,7 +94,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region DriverAction
+    #region DriverAction implementation
     public partial class DriverAction : Java.Sql.IDriverAction
     {
         #region Constructors

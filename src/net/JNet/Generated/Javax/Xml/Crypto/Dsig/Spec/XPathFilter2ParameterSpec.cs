@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig.Spec
 {
-    #region XPathFilter2ParameterSpec definition
+    #region XPathFilter2ParameterSpec declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathFilter2ParameterSpec.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
     }
     #endregion
 
-    #region XPathFilter2ParameterSpec
+    #region XPathFilter2ParameterSpec implementation
     public partial class XPathFilter2ParameterSpec
     {
         #region Constructors

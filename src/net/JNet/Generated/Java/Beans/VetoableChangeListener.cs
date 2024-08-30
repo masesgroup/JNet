@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans
 {
-    #region VetoableChangeListener definition
+    #region VetoableChangeListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Beans
     }
     #endregion
 
-    #region VetoableChangeListenerDirect definition
+    #region VetoableChangeListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="VetoableChangeListener"/> or its generic type if there is one
     /// </summary>
@@ -116,7 +116,7 @@ namespace Java.Beans
     }
     #endregion
 
-    #region VetoableChangeListener
+    #region VetoableChangeListener implementation
     public partial class VetoableChangeListener : Java.Beans.IVetoableChangeListener
     {
         #region Constructors
@@ -177,7 +177,7 @@ namespace Java.Beans
     }
     #endregion
 
-    #region VetoableChangeListenerDirect
+    #region VetoableChangeListenerDirect implementation
     public partial class VetoableChangeListenerDirect : Java.Beans.IVetoableChangeListener
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Net.Ssl
 {
-    #region SSLSessionBindingListener definition
+    #region SSLSessionBindingListener declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingListener.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region SSLSessionBindingListenerDirect definition
+    #region SSLSessionBindingListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="SSLSessionBindingListener"/> or its generic type if there is one
     /// </summary>
@@ -120,7 +120,7 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region SSLSessionBindingListener
+    #region SSLSessionBindingListener implementation
     public partial class SSLSessionBindingListener : Javax.Net.Ssl.ISSLSessionBindingListener
     {
         #region Constructors
@@ -202,7 +202,7 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region SSLSessionBindingListenerDirect
+    #region SSLSessionBindingListenerDirect implementation
     public partial class SSLSessionBindingListenerDirect : Javax.Net.Ssl.ISSLSessionBindingListener
     {
         #region Constructors

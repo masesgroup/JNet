@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi.Server
 {
-    #region RemoteObjectInvocationHandler definition
+    #region RemoteObjectInvocationHandler declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteObjectInvocationHandler.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Rmi.Server
     }
     #endregion
 
-    #region RemoteObjectInvocationHandler
+    #region RemoteObjectInvocationHandler implementation
     public partial class RemoteObjectInvocationHandler
     {
         #region Constructors

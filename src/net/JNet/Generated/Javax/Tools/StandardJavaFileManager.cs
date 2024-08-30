@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Tools
 {
-    #region StandardJavaFileManager definition
+    #region StandardJavaFileManager declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Tools
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region PathFactory definition
+        #region PathFactory declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.PathFactory.html"/>
         /// </summary>
@@ -238,7 +238,7 @@ namespace Javax.Tools
     }
     #endregion
 
-    #region StandardJavaFileManager
+    #region StandardJavaFileManager implementation
     public partial class StandardJavaFileManager : Javax.Tools.IStandardJavaFileManager
     {
         #region Constructors
@@ -405,7 +405,7 @@ namespace Javax.Tools
         #endregion
 
         #region Nested classes
-        #region PathFactory
+        #region PathFactory implementation
         public partial class PathFactory
         {
             #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region NotificationFilter definition
+    #region NotificationFilter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilter.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region NotificationFilterDirect definition
+    #region NotificationFilterDirect declaration
     /// <summary>
     /// Direct override of <see cref="NotificationFilter"/> or its generic type if there is one
     /// </summary>
@@ -116,7 +116,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region NotificationFilter
+    #region NotificationFilter implementation
     public partial class NotificationFilter : Javax.Management.INotificationFilter
     {
         #region Constructors
@@ -178,7 +178,7 @@ namespace Javax.Management
     }
     #endregion
 
-    #region NotificationFilterDirect
+    #region NotificationFilterDirect implementation
     public partial class NotificationFilterDirect : Javax.Management.INotificationFilter
     {
         #region Constructors

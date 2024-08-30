@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region Process definition
+    #region Process declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Lang
     }
     #endregion
 
-    #region Process
+    #region Process implementation
     public partial class Process
     {
         #region Constructors

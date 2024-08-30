@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ColorNs
 {
-    #region ColorSpace definition
+    #region ColorSpace declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Java.Awt.ColorNs
     }
     #endregion
 
-    #region ColorSpace
+    #region ColorSpace implementation
     public partial class ColorSpace
     {
         #region Constructors

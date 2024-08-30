@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Xpath
 {
-    #region XPathFactory definition
+    #region XPathFactory declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Xml.Xpath
     }
     #endregion
 
-    #region XPathFactory
+    #region XPathFactory implementation
     public partial class XPathFactory
     {
         #region Constructors

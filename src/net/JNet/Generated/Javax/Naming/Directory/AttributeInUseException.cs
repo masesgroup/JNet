@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Directory
 {
-    #region AttributeInUseException definition
+    #region AttributeInUseException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/AttributeInUseException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Javax.Naming.Directory
     }
     #endregion
 
-    #region AttributeInUseException
+    #region AttributeInUseException implementation
     public partial class AttributeInUseException
     {
         #region Constructors

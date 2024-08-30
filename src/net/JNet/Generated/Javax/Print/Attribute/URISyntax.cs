@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Attribute
 {
-    #region URISyntax definition
+    #region URISyntax declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/URISyntax.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Print.Attribute
     }
     #endregion
 
-    #region URISyntax
+    #region URISyntax implementation
     public partial class URISyntax
     {
         #region Constructors

@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
-    #region IntFunction definition
+    #region IntFunction declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntFunction.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IntFunctionDirect definition
+    #region IntFunctionDirect declaration
     /// <summary>
     /// Direct override of <see cref="IntFunction"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IntFunction<R> definition
+    #region IntFunction<R> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntFunction.html"/>
     /// </summary>
@@ -119,7 +119,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IntFunctionDirect<R> definition
+    #region IntFunctionDirect<R> declaration
     /// <summary>
     /// Direct override of <see cref="IntFunction"/> or its generic type if there is one
     /// </summary>
@@ -160,7 +160,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IntFunction
+    #region IntFunction implementation
     public partial class IntFunction
     {
         #region Constructors
@@ -222,7 +222,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IntFunctionDirect
+    #region IntFunctionDirect implementation
     public partial class IntFunctionDirect
     {
         #region Constructors
@@ -286,7 +286,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IntFunction<R>
+    #region IntFunction<R> implementation
     public partial class IntFunction<R> : Java.Util.Function.IIntFunction<R>
     {
         #region Constructors
@@ -348,7 +348,7 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IntFunctionDirect<R>
+    #region IntFunctionDirect<R> implementation
     public partial class IntFunctionDirect<R> : Java.Util.Function.IIntFunction<R>
     {
         #region Constructors

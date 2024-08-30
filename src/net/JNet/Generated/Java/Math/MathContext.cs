@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Math
 {
-    #region MathContext definition
+    #region MathContext declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/MathContext.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Java.Math
     }
     #endregion
 
-    #region MathContext
+    #region MathContext implementation
     public partial class MathContext
     {
         #region Constructors

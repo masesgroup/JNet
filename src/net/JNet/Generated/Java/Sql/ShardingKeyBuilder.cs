@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region ShardingKeyBuilder definition
+    #region ShardingKeyBuilder declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ShardingKeyBuilder.html"/>
     /// </summary>
@@ -103,7 +103,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region ShardingKeyBuilder
+    #region ShardingKeyBuilder implementation
     public partial class ShardingKeyBuilder : Java.Sql.IShardingKeyBuilder
     {
         #region Constructors

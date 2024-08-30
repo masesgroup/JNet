@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print
 {
-    #region URIException definition
+    #region URIException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/URIException.html"/>
     /// </summary>
@@ -98,7 +98,7 @@ namespace Javax.Print
     }
     #endregion
 
-    #region URIException
+    #region URIException implementation
     public partial class URIException : Javax.Print.IURIException
     {
         #region Constructors

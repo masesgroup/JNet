@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
-    #region MouseAdapter definition
+    #region MouseAdapter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseAdapter.html"/>
     /// </summary>
@@ -51,7 +51,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region MouseAdapterDirect definition
+    #region MouseAdapterDirect declaration
     /// <summary>
     /// Direct override of <see cref="MouseAdapter"/> or its generic type if there is one
     /// </summary>
@@ -92,7 +92,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region MouseAdapter
+    #region MouseAdapter implementation
     public partial class MouseAdapter
     {
         #region Constructors
@@ -306,7 +306,7 @@ namespace Java.Awt.EventNs
     }
     #endregion
 
-    #region MouseAdapterDirect
+    #region MouseAdapterDirect implementation
     public partial class MouseAdapterDirect
     {
         #region Constructors

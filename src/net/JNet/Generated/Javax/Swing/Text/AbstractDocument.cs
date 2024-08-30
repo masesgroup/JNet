@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
-    #region AbstractDocument definition
+    #region AbstractDocument declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html"/>
     /// </summary>
@@ -68,7 +68,7 @@ namespace Javax.Swing.Text
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region AbstractElement definition
+        #region AbstractElement declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region AttributeContext definition
+        #region AttributeContext declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AttributeContext.html"/>
         /// </summary>
@@ -162,7 +162,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region BranchElement definition
+        #region BranchElement declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.BranchElement.html"/>
         /// </summary>
@@ -207,7 +207,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region Content definition
+        #region Content declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html"/>
         /// </summary>
@@ -254,7 +254,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region DefaultDocumentEvent definition
+        #region DefaultDocumentEvent declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html"/>
         /// </summary>
@@ -299,7 +299,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region ElementEdit definition
+        #region ElementEdit declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.ElementEdit.html"/>
         /// </summary>
@@ -344,7 +344,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region LeafElement definition
+        #region LeafElement declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.LeafElement.html"/>
         /// </summary>
@@ -393,7 +393,7 @@ namespace Javax.Swing.Text
     }
     #endregion
 
-    #region AbstractDocument
+    #region AbstractDocument implementation
     public partial class AbstractDocument
     {
         #region Constructors
@@ -696,7 +696,7 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Nested classes
-        #region AbstractElement
+        #region AbstractElement implementation
         public partial class AbstractElement
         {
             #region Constructors
@@ -1000,7 +1000,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region AttributeContext
+        #region AttributeContext implementation
         public partial class AttributeContext
         {
             #region Constructors
@@ -1097,7 +1097,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region BranchElement
+        #region BranchElement implementation
         public partial class BranchElement
         {
             #region Constructors
@@ -1157,7 +1157,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region Content
+        #region Content implementation
         public partial class Content
         {
             #region Constructors
@@ -1250,7 +1250,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region DefaultDocumentEvent
+        #region DefaultDocumentEvent implementation
         public partial class DefaultDocumentEvent
         {
             #region Constructors
@@ -1333,7 +1333,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region ElementEdit
+        #region ElementEdit implementation
         public partial class ElementEdit
         {
             #region Constructors
@@ -1403,7 +1403,7 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region LeafElement
+        #region LeafElement implementation
         public partial class LeafElement
         {
             #region Constructors

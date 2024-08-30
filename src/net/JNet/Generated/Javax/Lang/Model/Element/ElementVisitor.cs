@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Element
 {
-    #region ElementVisitor definition
+    #region ElementVisitor declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html"/>
     /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Lang.Model.Element
     }
     #endregion
 
-    #region ElementVisitor<R, P> definition
+    #region ElementVisitor<R, P> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html"/>
     /// </summary>
@@ -121,7 +121,7 @@ namespace Javax.Lang.Model.Element
     }
     #endregion
 
-    #region ElementVisitor
+    #region ElementVisitor implementation
     public partial class ElementVisitor
     {
         #region Constructors
@@ -321,7 +321,7 @@ namespace Javax.Lang.Model.Element
     }
     #endregion
 
-    #region ElementVisitor<R, P>
+    #region ElementVisitor<R, P> implementation
     public partial class ElementVisitor<R, P> : Javax.Lang.Model.Element.IElementVisitor<R, P>
     {
         #region Constructors

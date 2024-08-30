@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region SQLInvalidAuthorizationSpecException definition
+    #region SQLInvalidAuthorizationSpecException declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInvalidAuthorizationSpecException.html"/>
     /// </summary>
@@ -42,7 +42,7 @@ namespace Java.Sql
     }
     #endregion
 
-    #region SQLInvalidAuthorizationSpecException
+    #region SQLInvalidAuthorizationSpecException implementation
     public partial class SQLInvalidAuthorizationSpecException
     {
         #region Constructors

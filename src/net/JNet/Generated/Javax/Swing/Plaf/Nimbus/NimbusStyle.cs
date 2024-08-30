@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Nimbus
 {
-    #region NimbusStyle definition
+    #region NimbusStyle declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/nimbus/NimbusStyle.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf.Nimbus
     }
     #endregion
 
-    #region NimbusStyle
+    #region NimbusStyle implementation
     public partial class NimbusStyle
     {
         #region Constructors

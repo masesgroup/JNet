@@ -25,7 +25,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio.Plugins.Jpeg
 {
-    #region JPEGImageWriteParam definition
+    #region JPEGImageWriteParam declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html"/>
     /// </summary>
@@ -70,7 +70,7 @@ namespace Javax.Imageio.Plugins.Jpeg
     }
     #endregion
 
-    #region JPEGImageWriteParam
+    #region JPEGImageWriteParam implementation
     public partial class JPEGImageWriteParam
     {
         #region Constructors
