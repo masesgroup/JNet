@@ -291,6 +291,13 @@ jobs:
         env:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_5_17 }}
 
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+          path: ${{ github.workspace }}/**/hs_err_*
+          retention-days: 7
+
   execute_tests_powershell:
     needs: build_windows
     strategy:
@@ -350,6 +357,13 @@ jobs:
           ${{ github.workspace }}\bin\JNetPSTest.ps1
         env:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_5_17 }}
+
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: Crash_powershell_${{ matrix.os }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+          path: ${{ github.workspace }}/**/hs_err_*
+          retention-days: 7
 
   final_cleanup:
     needs: [ execute_tests, execute_tests_powershell ]
