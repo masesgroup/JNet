@@ -45,6 +45,10 @@
 	<ItemGroup>
 		<Compile Remove="Generated\Java\Util\Function\**" />
 		<None Remove="Generated\Java\Util\Function\**" />
+		<Compile Remove="Developed\Java\Lang\*Error.cs" />
+		<None Remove="Developed\Java\Lang\*Error.cs" />
+		<Compile Remove="Developed\Java\Lang\*Exception.cs" />
+		<None Remove="Developed\Java\Lang\*Exception.cs" />
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="MASES.CLIParser" Version="3.2.1" />
