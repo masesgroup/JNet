@@ -54,6 +54,8 @@
 		<Compile Remove="Generated\Org\**" />
 		<Compile Remove="JNetCore.cs" />
 		<Compile Include="Developed\Java\Lang\*.cs" />
+		<Compile Include="Developed\Java\Lang\Annotation\**" />
+		<Compile Include="Developed\Java\Lang\Reflect\**" />
 		<Compile Remove="Developed\Java\Lang\*Error.cs" />
 		<Compile Remove="Developed\Java\Lang\*Exception.cs" />
 		<Compile Include="Developed\Java\Nio\*.cs" />
@@ -62,10 +64,11 @@
 		<Compile Include="Developed\Java\Util\EventListener.cs" />
 		<Compile Include="Developed\Java\Util\Iterator.cs" />
 		<Compile Include="Generated\Java\Lang\*.cs" />
+		<Compile Include="Generated\Java\Lang\Annotation\**" />
+		<Compile Include="Generated\Java\Lang\Reflect\**" />
 		<Compile Include="Generated\Java\Nio\*.cs" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Compile Remove="Developed\Java\Lang\ClassLoader.cs" />
 	  <Compile Remove="Developed\Java\Lang\Compiler.cs" />
 	  <Compile Remove="Developed\Java\Lang\Module.cs" />
 	  <Compile Remove="Developed\Java\Lang\Object.cs" />
