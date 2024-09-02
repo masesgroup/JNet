@@ -51,15 +51,11 @@
 		<None Remove="Developed\Java\Lang\*Exception.cs" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Compile Remove="JNetCoreBase.cs" />
-	  <Compile Remove="Specific\**" />
-	</ItemGroup>
-	<ItemGroup>
-		<ProjectReference Include="JNetCore.csproj">
+		<PackageReference Include="MASES.CLIParser" Version="3.2.1" />
+		<PackageReference Include="MASES.JCOBridge" Version="2.5.17">
 			<IncludeAssets>All</IncludeAssets>
 			<PrivateAssets>None</PrivateAssets>
-		</ProjectReference>
-		<PackageReference Include="MASES.CLIParser" Version="3.2.1" />
+		</PackageReference>
 		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
 	</ItemGroup>
 </Project>

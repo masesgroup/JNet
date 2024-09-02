@@ -15,8 +15,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JNetPS", "JNetPS\JNetPS.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JNetPSCore", "JNetPSCore\JNetPSCore.csproj", "{071F6CA5-0159-44B3-9670-9404A5B75D65}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JNetCore", "JNet\JNetCore.csproj", "{CA9A182E-F0A5-4A48-AB00-C5E70BA243F9}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,10 +45,6 @@ Global
 		{071F6CA5-0159-44B3-9670-9404A5B75D65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{071F6CA5-0159-44B3-9670-9404A5B75D65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{071F6CA5-0159-44B3-9670-9404A5B75D65}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CA9A182E-F0A5-4A48-AB00-C5E70BA243F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CA9A182E-F0A5-4A48-AB00-C5E70BA243F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CA9A182E-F0A5-4A48-AB00-C5E70BA243F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CA9A182E-F0A5-4A48-AB00-C5E70BA243F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
