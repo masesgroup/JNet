@@ -131,9 +131,7 @@ jobs:
         GITHUB_SIMPLIFIED_GENERATION: true
 
     - if: matrix.language == 'java' 
-      run: |
-        mvn --file ./src/jvm/jnetcore/pom.xml --no-transfer-progress package
-        mvn --file ./src/jvm/jnet/pom.xml --no-transfer-progress package
+      run: mvn --file ./src/jvm/jnet/pom.xml --no-transfer-progress package
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
