@@ -25,7 +25,24 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
-    #region BindException
+    #region BindException declaration
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/BindException.html"/>
+    /// </summary>
+    public partial class BindException : Java.Net.SocketException
+    {
+        const string _bridgeClassName = "java.net.BindException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region BindException implementation
     public partial class BindException
     {
         #region Constructors

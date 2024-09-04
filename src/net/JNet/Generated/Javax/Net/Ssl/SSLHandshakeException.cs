@@ -25,7 +25,24 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Net.Ssl
 {
-    #region SSLHandshakeException
+    #region SSLHandshakeException declaration
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLHandshakeException.html"/>
+    /// </summary>
+    public partial class SSLHandshakeException : Javax.Net.Ssl.SSLException
+    {
+        const string _bridgeClassName = "javax.net.ssl.SSLHandshakeException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SSLHandshakeException implementation
     public partial class SSLHandshakeException
     {
         #region Constructors

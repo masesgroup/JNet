@@ -25,7 +25,24 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ImageNs
 {
-    #region ImagingOpException
+    #region ImagingOpException declaration
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImagingOpException.html"/>
+    /// </summary>
+    public partial class ImagingOpException : Java.Lang.RuntimeException
+    {
+        const string _bridgeClassName = "java.awt.image.ImagingOpException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ImagingOpException implementation
     public partial class ImagingOpException
     {
         #region Constructors

@@ -25,7 +25,24 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region RuntimeException
+    #region RuntimeException declaration
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/RuntimeException.html"/>
+    /// </summary>
+    public partial class RuntimeException : Java.Lang.Exception
+    {
+        const string _bridgeClassName = "java.lang.RuntimeException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region RuntimeException implementation
     public partial class RuntimeException
     {
         #region Constructors

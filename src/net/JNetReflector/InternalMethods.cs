@@ -335,7 +335,7 @@ namespace MASES.JNetReflector
                                                            .Replace(AllPackageClasses.NAMESPACE, package)
                                                            .Replace(AllPackageClasses.CLASSES, sb.ToString());
 
-                        WriteFile(path, itemPackage);
+                        //WriteFile(path, itemPackage);
                         _allPackages.Add(path, itemPackage);
                     }
                     else
@@ -343,7 +343,7 @@ namespace MASES.JNetReflector
                         var packageContent = File.ReadAllText(path);
                         var itemPackage = packageContent.Replace(AllPackageClasses.CLASSES, sb.ToString());
 
-                        WriteFile(path, itemPackage);
+                        //WriteFile(path, itemPackage);
                         _allPackages[path] = itemPackage;
                     }
                 }
@@ -355,7 +355,7 @@ namespace MASES.JNetReflector
                                                    .Replace(AllPackageClasses.NAMESPACE, package)
                                                    .Replace(AllPackageClasses.CLASSES, sb.ToString());
 
-                WriteFile(path, itemPackage);
+                //WriteFile(path, itemPackage);
             }
         }
 
@@ -493,7 +493,10 @@ namespace MASES.JNetReflector
                 allClassBlock.Append(classGenericBlock);
             }
 
-            var singleFileBlockStr = singleFileBlock.ToString();
+            allClassBlock.AppendLine();
+            allClassBlock.AppendLine();
+            allClassBlock.Append(singleFileBlock.ToString());
+            var singleFileBlockStr = allClassBlock.ToString();
             if (!string.IsNullOrWhiteSpace(singleFileBlockStr))
             {
                 var singleClassFileTemplate = Template.GetTemplate(Template.SingleClassFileTemplate);

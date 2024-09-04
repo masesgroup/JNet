@@ -25,7 +25,24 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region IllegalFormatFlagsException
+    #region IllegalFormatFlagsException declaration
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/IllegalFormatFlagsException.html"/>
+    /// </summary>
+    public partial class IllegalFormatFlagsException : Java.Util.IllegalFormatException
+    {
+        const string _bridgeClassName = "java.util.IllegalFormatFlagsException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region IllegalFormatFlagsException implementation
     public partial class IllegalFormatFlagsException
     {
         #region Constructors

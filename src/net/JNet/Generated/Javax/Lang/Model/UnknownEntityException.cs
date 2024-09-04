@@ -25,7 +25,24 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model
 {
-    #region UnknownEntityException
+    #region UnknownEntityException declaration
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/UnknownEntityException.html"/>
+    /// </summary>
+    public partial class UnknownEntityException : Java.Lang.RuntimeException
+    {
+        const string _bridgeClassName = "javax.lang.model.UnknownEntityException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region UnknownEntityException implementation
     public partial class UnknownEntityException
     {
         #region Constructors

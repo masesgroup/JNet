@@ -25,6 +25,73 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans.Beancontext
 {
+    #region BeanContextServiceRevokedListener declaration
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedListener.html"/>
+    /// </summary>
+    public partial class BeanContextServiceRevokedListener : Java.Util.EventListener
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public BeanContextServiceRevokedListener() { InitializeHandlers(); }
+
+        const string _bridgeClassName = "org.mases.jnet.generated.java.beans.beancontext.BeanContextServiceRevokedListener";
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+        
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+    
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region BeanContextServiceRevokedListenerDirect declaration
+    /// <summary>
+    /// Direct override of <see cref="BeanContextServiceRevokedListener"/> or its generic type if there is one
+    /// </summary>
+    public partial class BeanContextServiceRevokedListenerDirect : BeanContextServiceRevokedListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
+
+        const string _bridgeClassName = "java.beans.beancontext.BeanContextServiceRevokedListener";
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
+        private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => true;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => true;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+    }
+    #endregion
+
     #region IBeanContextServiceRevokedListener
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.beans.beancontext.BeanContextServiceRevokedListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedListener.html"/>
@@ -48,7 +115,7 @@ namespace Java.Beans.Beancontext
     }
     #endregion
 
-    #region BeanContextServiceRevokedListener
+    #region BeanContextServiceRevokedListener implementation
     public partial class BeanContextServiceRevokedListener : Java.Beans.Beancontext.IBeanContextServiceRevokedListener
     {
         #region Constructors
@@ -108,7 +175,7 @@ namespace Java.Beans.Beancontext
     }
     #endregion
 
-    #region BeanContextServiceRevokedListenerDirect
+    #region BeanContextServiceRevokedListenerDirect implementation
     public partial class BeanContextServiceRevokedListenerDirect : Java.Beans.Beancontext.IBeanContextServiceRevokedListener
     {
         #region Constructors

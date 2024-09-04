@@ -25,7 +25,24 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
-    #region ClosedByInterruptException
+    #region ClosedByInterruptException declaration
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ClosedByInterruptException.html"/>
+    /// </summary>
+    public partial class ClosedByInterruptException : Java.Nio.Channels.AsynchronousCloseException
+    {
+        const string _bridgeClassName = "java.nio.channels.ClosedByInterruptException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ClosedByInterruptException implementation
     public partial class ClosedByInterruptException
     {
         #region Constructors

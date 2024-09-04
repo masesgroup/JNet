@@ -25,7 +25,24 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region InvalidPropertiesFormatException
+    #region InvalidPropertiesFormatException declaration
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/InvalidPropertiesFormatException.html"/>
+    /// </summary>
+    public partial class InvalidPropertiesFormatException : Java.Io.IOException
+    {
+        const string _bridgeClassName = "java.util.InvalidPropertiesFormatException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region InvalidPropertiesFormatException implementation
     public partial class InvalidPropertiesFormatException
     {
         #region Constructors

@@ -25,7 +25,24 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi
 {
-    #region UnexpectedException
+    #region UnexpectedException declaration
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/UnexpectedException.html"/>
+    /// </summary>
+    public partial class UnexpectedException : Java.Rmi.RemoteException
+    {
+        const string _bridgeClassName = "java.rmi.UnexpectedException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region UnexpectedException implementation
     public partial class UnexpectedException
     {
         #region Constructors

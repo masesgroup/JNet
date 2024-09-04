@@ -25,7 +25,24 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Xpath
 {
-    #region XPathFunctionException
+    #region XPathFunctionException declaration
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFunctionException.html"/>
+    /// </summary>
+    public partial class XPathFunctionException : Javax.Xml.Xpath.XPathExpressionException
+    {
+        const string _bridgeClassName = "javax.xml.xpath.XPathFunctionException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region XPathFunctionException implementation
     public partial class XPathFunctionException
     {
         #region Constructors

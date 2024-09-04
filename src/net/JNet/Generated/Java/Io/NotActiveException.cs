@@ -25,7 +25,24 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
-    #region NotActiveException
+    #region NotActiveException declaration
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/NotActiveException.html"/>
+    /// </summary>
+    public partial class NotActiveException : Java.Io.ObjectStreamException
+    {
+        const string _bridgeClassName = "java.io.NotActiveException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region NotActiveException implementation
     public partial class NotActiveException
     {
         #region Constructors

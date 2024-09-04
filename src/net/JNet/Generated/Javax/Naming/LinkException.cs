@@ -25,7 +25,24 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming
 {
-    #region LinkException
+    #region LinkException declaration
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/LinkException.html"/>
+    /// </summary>
+    public partial class LinkException : Javax.Naming.NamingException
+    {
+        const string _bridgeClassName = "javax.naming.LinkException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region LinkException implementation
     public partial class LinkException
     {
         #region Constructors

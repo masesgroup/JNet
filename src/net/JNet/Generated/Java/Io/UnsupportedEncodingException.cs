@@ -25,7 +25,24 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
-    #region UnsupportedEncodingException
+    #region UnsupportedEncodingException declaration
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/UnsupportedEncodingException.html"/>
+    /// </summary>
+    public partial class UnsupportedEncodingException : Java.Io.IOException
+    {
+        const string _bridgeClassName = "java.io.UnsupportedEncodingException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region UnsupportedEncodingException implementation
     public partial class UnsupportedEncodingException
     {
         #region Constructors

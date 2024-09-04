@@ -25,7 +25,24 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    #region FormatterClosedException
+    #region FormatterClosedException declaration
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/FormatterClosedException.html"/>
+    /// </summary>
+    public partial class FormatterClosedException : Java.Lang.IllegalStateException
+    {
+        const string _bridgeClassName = "java.util.FormatterClosedException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region FormatterClosedException implementation
     public partial class FormatterClosedException
     {
         #region Constructors

@@ -25,7 +25,24 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
-    #region FileLockInterruptionException
+    #region FileLockInterruptionException declaration
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLockInterruptionException.html"/>
+    /// </summary>
+    public partial class FileLockInterruptionException : Java.Io.IOException
+    {
+        const string _bridgeClassName = "java.nio.channels.FileLockInterruptionException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region FileLockInterruptionException implementation
     public partial class FileLockInterruptionException
     {
         #region Constructors

@@ -25,7 +25,24 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
-    #region ProviderException
+    #region ProviderException declaration
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProviderException.html"/>
+    /// </summary>
+    public partial class ProviderException : Java.Lang.RuntimeException
+    {
+        const string _bridgeClassName = "java.security.ProviderException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ProviderException implementation
     public partial class ProviderException
     {
         #region Constructors

@@ -25,7 +25,24 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time.Temporal
 {
-    #region UnsupportedTemporalTypeException
+    #region UnsupportedTemporalTypeException declaration
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/UnsupportedTemporalTypeException.html"/>
+    /// </summary>
+    public partial class UnsupportedTemporalTypeException : Java.Time.DateTimeException
+    {
+        const string _bridgeClassName = "java.time.temporal.UnsupportedTemporalTypeException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region UnsupportedTemporalTypeException implementation
     public partial class UnsupportedTemporalTypeException
     {
         #region Constructors

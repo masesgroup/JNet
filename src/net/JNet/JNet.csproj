@@ -7,7 +7,7 @@
 		<Description>Java/JVM suite for .NET - a comprehensive suite of libraries and tools to use Java/JVM APIs (Java, Scala, Kotlin, ...) and .NET side-by-side</Description>
 		<Product>JNet</Product>
 		<OutputPath>..\..\..\bin\</OutputPath>
-		<PackageTags>jnet dotnet clr jvm dotnetcore netcore dotnet6 net6 java bridge gateway</PackageTags>
+		<PackageTags>jnet dotnet clr jvm dotnetcore netcore dotnet6 net6 dotnet8 net8 java bridge gateway</PackageTags>
 		<PackageId>MASES.JNet</PackageId>
 		<PackageReadmeFile>usage.md</PackageReadmeFile>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
@@ -18,13 +18,13 @@
 		<DefineConstants>$(DefineConstants);JNET_SIMPLIFIED_GENERATION</DefineConstants>
 	</PropertyGroup>
 	<ItemGroup Condition="True">
-		<jnetcore_jars Include="$(ProjectDir)\..\..\..\jars\jnet-*" />
+		<jnet_jars Include="$(ProjectDir)\..\..\..\jars\jnet-*" />
 	</ItemGroup>
 	<Target Name="CopyCustomContent" AfterTargets="AfterBuild" Condition="'$(GITHUB_ACTIONS)' != 'true' Or '$(GITHUB_TEST_PREPARATION)' == 'true'">
-		<Copy SourceFiles="@(jnetcore_jars)" DestinationFolder="$(OutDir)\jars" />
+		<Copy SourceFiles="@(jnet_jars)" DestinationFolder="$(OutDir)\jars" />
 	</Target>
 	<Target Name="CopyCustomContentOnPublish" AfterTargets="Publish" Condition="'$(GITHUB_ACTIONS)' != 'true' Or '$(GITHUB_TEST_PREPARATION)' == 'true'">
-		<Copy SourceFiles="@(jnetcore_jars)" DestinationFolder="$(OutDir)\jars" />
+		<Copy SourceFiles="@(jnet_jars)" DestinationFolder="$(OutDir)\jars" />
 	</Target>
 	<ItemGroup>
 		<None Include="mases.jnet.targets" Pack="true" PackagePath="build" />
@@ -42,7 +42,7 @@
 		<None Remove="Generated\**" />
 		<None Remove="Specific\**" />
 	</ItemGroup>
-	<ItemGroup>
+	<ItemGroup Condition="'$(GITHUB_SIMPLIFIED_GENERATION)' != 'true'">
 		<Compile Remove="Generated\Java\Util\Function\**" />
 		<None Remove="Generated\Java\Util\Function\**" />
 		<Compile Remove="Developed\Java\Lang\*Error.cs" />

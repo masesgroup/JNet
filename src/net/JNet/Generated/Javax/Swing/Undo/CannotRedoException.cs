@@ -25,7 +25,24 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Undo
 {
-    #region CannotRedoException
+    #region CannotRedoException declaration
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/CannotRedoException.html"/>
+    /// </summary>
+    public partial class CannotRedoException : Java.Lang.RuntimeException
+    {
+        const string _bridgeClassName = "javax.swing.undo.CannotRedoException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CannotRedoException implementation
     public partial class CannotRedoException
     {
         #region Constructors

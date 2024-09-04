@@ -25,7 +25,24 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Ls
 {
-    #region LSException
+    #region LSException declaration
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSException.html"/>
+    /// </summary>
+    public partial class LSException : Java.Lang.RuntimeException
+    {
+        const string _bridgeClassName = "org.w3c.dom.ls.LSException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region LSException implementation
     public partial class LSException
     {
         #region Constructors

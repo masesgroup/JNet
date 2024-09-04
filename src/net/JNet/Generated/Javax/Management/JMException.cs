@@ -25,7 +25,24 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region JMException
+    #region JMException declaration
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMException.html"/>
+    /// </summary>
+    public partial class JMException : Java.Lang.Exception
+    {
+        const string _bridgeClassName = "javax.management.JMException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region JMException implementation
     public partial class JMException
     {
         #region Constructors

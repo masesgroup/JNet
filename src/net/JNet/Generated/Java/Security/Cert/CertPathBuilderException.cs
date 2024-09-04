@@ -25,7 +25,24 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Cert
 {
-    #region CertPathBuilderException
+    #region CertPathBuilderException declaration
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathBuilderException.html"/>
+    /// </summary>
+    public partial class CertPathBuilderException : Java.Security.GeneralSecurityException
+    {
+        const string _bridgeClassName = "java.security.cert.CertPathBuilderException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CertPathBuilderException implementation
     public partial class CertPathBuilderException
     {
         #region Constructors

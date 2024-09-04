@@ -25,7 +25,24 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ColorNs
 {
-    #region CMMException
+    #region CMMException declaration
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/CMMException.html"/>
+    /// </summary>
+    public partial class CMMException : Java.Lang.RuntimeException
+    {
+        const string _bridgeClassName = "java.awt.color.CMMException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CMMException implementation
     public partial class CMMException
     {
         #region Constructors

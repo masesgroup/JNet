@@ -159,6 +159,7 @@ namespace MASES.JNet
         /// </summary>
         public JNetCoreBase()
         {
+            JCOBridge.C2JBridge.JCOBridge.RegisterExceptions(typeof(JNetCoreBase<>).Assembly);
         }
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/M_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_ProcessCommandLine.htm"/>
@@ -241,7 +242,7 @@ namespace MASES.JNet
             return classPath;
         }
 
-#endregion
+        #endregion
 
         #region Auxiliary Methods
         /// <inheritdoc cref="Parser.HelpInfo(int?)"/>
@@ -330,6 +331,6 @@ namespace MASES.JNet
             throw new ArgumentException($"{type} does not define any IJVMBridgeMain type or interface", "type");
         }
 
-#endregion
+        #endregion
     }
 }

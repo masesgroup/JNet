@@ -25,7 +25,24 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
-    #region SQLFeatureNotSupportedException
+    #region SQLFeatureNotSupportedException declaration
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLFeatureNotSupportedException.html"/>
+    /// </summary>
+    public partial class SQLFeatureNotSupportedException : Java.Sql.SQLNonTransientException
+    {
+        const string _bridgeClassName = "java.sql.SQLFeatureNotSupportedException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SQLFeatureNotSupportedException implementation
     public partial class SQLFeatureNotSupportedException
     {
         #region Constructors

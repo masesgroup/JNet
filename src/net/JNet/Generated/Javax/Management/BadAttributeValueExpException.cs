@@ -25,7 +25,24 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    #region BadAttributeValueExpException
+    #region BadAttributeValueExpException declaration
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/BadAttributeValueExpException.html"/>
+    /// </summary>
+    public partial class BadAttributeValueExpException : Java.Lang.Exception
+    {
+        const string _bridgeClassName = "javax.management.BadAttributeValueExpException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region BadAttributeValueExpException implementation
     public partial class BadAttributeValueExpException
     {
         #region Constructors

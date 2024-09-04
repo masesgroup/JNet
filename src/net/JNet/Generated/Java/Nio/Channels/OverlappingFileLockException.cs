@@ -25,7 +25,24 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
-    #region OverlappingFileLockException
+    #region OverlappingFileLockException declaration
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/OverlappingFileLockException.html"/>
+    /// </summary>
+    public partial class OverlappingFileLockException : Java.Lang.IllegalStateException
+    {
+        const string _bridgeClassName = "java.nio.channels.OverlappingFileLockException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region OverlappingFileLockException implementation
     public partial class OverlappingFileLockException
     {
         #region Constructors
