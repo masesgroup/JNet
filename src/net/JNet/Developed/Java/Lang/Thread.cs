@@ -40,7 +40,7 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.jnet.developed.java.lang.UncaughtExceptionHandler";
+            public override string BridgeClassName => "org.mases.jnet.developed.java.lang.Thread_UncaughtExceptionHandler";
 
             /// <summary>
             /// The <see cref="Action{Thread, JVMBridgeException}"/> to be executed

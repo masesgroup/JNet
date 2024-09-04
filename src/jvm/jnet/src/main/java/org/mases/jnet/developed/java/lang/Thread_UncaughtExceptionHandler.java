@@ -26,7 +26,7 @@ import org.mases.jcobridge.JCObject;
  * The {@link UncaughtExceptionHandler} class represents a generic implementation of
  * {@link Thread.UncaughtExceptionHandler}
  */
-public class UncaughtExceptionHandler extends JCListener implements Thread.UncaughtExceptionHandler {
+public class Thread_UncaughtExceptionHandler extends JCListener implements Thread.UncaughtExceptionHandler {
     public UncaughtExceptionHandler(String key) throws JCNativeException {
         super(key);
     }
