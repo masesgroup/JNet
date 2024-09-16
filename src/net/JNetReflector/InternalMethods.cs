@@ -835,32 +835,40 @@ namespace MASES.JNetReflector
 
             if (bPrepareJavaListener)
             {
+                bool isInterfaceJavaListener = jClass.IsInterface();
                 var clsName = jClass.JVMListenerClassName();
                 var fullInterfaces = jClass.Name.Replace(SpecialNames.NestedClassSeparator, SpecialNames.NamespaceSeparator);
 
                 var javaClassMethodBlock = jClass.AnalyzeJavaMethods(fullInterfaces, isGeneric).AddTabLevel(1);
                 string singleJavaListenerTemplate = Template.GetTemplate(Template.SingleListenerJavaFileTemplate);
 
-                if (!jClass.IsInterface()) // it is a class, we have to implement the interfaces
+                if (!isInterfaceJavaListener) // it is a class, we have to implement the interfaces
                 {
-                    StringBuilder sbInterfaces = new StringBuilder();
-                    foreach (var item in jClass.Interfaces)
-                    {
-                        sbInterfaces.AppendFormat("{0}, ", item.Name.Replace(SpecialNames.NestedClassSeparator, SpecialNames.NamespaceSeparator));
-                    }
+                    //StringBuilder sbInterfaces = new StringBuilder();
+                    //foreach (var item in jClass.Interfaces)
+                    //{
+                    //    sbInterfaces.AppendFormat("{0}, ", item.Name.Replace(SpecialNames.NestedClassSeparator, SpecialNames.NamespaceSeparator));
+                    //}
 
-                    fullInterfaces = sbInterfaces.ToString();
-                    if (!string.IsNullOrWhiteSpace(fullInterfaces))
-                    {
-                        fullInterfaces = fullInterfaces.Substring(0, fullInterfaces.LastIndexOf(", "));
-                    }
+                    //fullInterfaces = sbInterfaces.ToString();
+                    //if (!string.IsNullOrWhiteSpace(fullInterfaces))
+                    //{
+                    //    fullInterfaces = fullInterfaces.Substring(0, fullInterfaces.LastIndexOf(", "));
+                    //}
+
+                    fullInterfaces = $"extends {fullInterfaces} ";
+                }
+                else
+                {
+                    fullInterfaces = $", {fullInterfaces}";
                 }
 
                 var singleJavaListenerStr = singleJavaListenerTemplate.Replace(AllPackageClasses.COPYRIGHT, JNetReflectorCore.CopyrightFileContent)
                                                                       .Replace(AllPackageClasses.VERSION, SpecialNames.VersionPlaceHolder())
                                                                       .Replace(AllPackageClasses.PACKAGE, javaClassListenerPackage)
                                                                       .Replace(AllPackageClasses.ClassStub.SIMPLECLASS, clsName)
-                                                                      .Replace(AllPackageClasses.ClassStub.JAVACLASS, fullInterfaces)
+                                                                      .Replace(AllPackageClasses.ClassStub.EXTEND_JAVACLASS, isInterfaceJavaListener ? string.Empty : fullInterfaces)
+                                                                      .Replace(AllPackageClasses.ClassStub.JAVACLASS, isInterfaceJavaListener ? fullInterfaces : string.Empty)
                                                                       .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMFullClassName())
                                                                       .Replace(AllPackageClasses.ClassStub.LISTENER_METHODS, javaClassMethodBlock);
 
