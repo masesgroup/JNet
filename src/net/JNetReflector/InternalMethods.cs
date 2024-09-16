@@ -330,7 +330,8 @@ namespace MASES.JNetReflector
                 {
                     if (!_allPackages.ContainsKey(path))
                     {
-                        var itemPackage = allPackageClasses.Replace(AllPackageClasses.VERSION, SpecialNames.VersionPlaceHolder())
+                        var itemPackage = allPackageClasses.Replace(AllPackageClasses.COPYRIGHT, JNetReflectorCore.CopyrightFileContent)
+                                                           .Replace(AllPackageClasses.VERSION, SpecialNames.VersionPlaceHolder())
                                                            .Replace(AllPackageClasses.JAR, jarOrModuleName)
                                                            .Replace(AllPackageClasses.NAMESPACE, package)
                                                            .Replace(AllPackageClasses.CLASSES, sb.ToString());
@@ -350,7 +351,8 @@ namespace MASES.JNetReflector
             }
             else
             {
-                var itemPackage = allPackageClasses.Replace(AllPackageClasses.VERSION, SpecialNames.VersionPlaceHolder())
+                var itemPackage = allPackageClasses.Replace(AllPackageClasses.COPYRIGHT, JNetReflectorCore.CopyrightFileContent)
+                                                   .Replace(AllPackageClasses.VERSION, SpecialNames.VersionPlaceHolder())
                                                    .Replace(AllPackageClasses.JAR, jarOrModuleName)
                                                    .Replace(AllPackageClasses.NAMESPACE, package)
                                                    .Replace(AllPackageClasses.CLASSES, sb.ToString());
@@ -501,7 +503,8 @@ namespace MASES.JNetReflector
             {
                 var singleClassFileTemplate = Template.GetTemplate(Template.SingleClassFileTemplate);
 
-                var fileContent = singleClassFileTemplate.Replace(AllPackageClasses.VERSION, SpecialNames.VersionPlaceHolder())
+                var fileContent = singleClassFileTemplate.Replace(AllPackageClasses.COPYRIGHT, JNetReflectorCore.CopyrightFileContent)
+                                                         .Replace(AllPackageClasses.VERSION, SpecialNames.VersionPlaceHolder())
                                                          .Replace(AllPackageClasses.JAR, jarOrModuleName)
                                                          .Replace(AllPackageClasses.NAMESPACE, jClass.Namespace(JNetReflectorCore.UseCamel))
                                                          .Replace(AllPackageClasses.CLASSES, singleFileBlockStr);
@@ -853,7 +856,8 @@ namespace MASES.JNetReflector
                     }
                 }
 
-                var singleJavaListenerStr = singleJavaListenerTemplate.Replace(AllPackageClasses.VERSION, SpecialNames.VersionPlaceHolder())
+                var singleJavaListenerStr = singleJavaListenerTemplate.Replace(AllPackageClasses.COPYRIGHT, JNetReflectorCore.CopyrightFileContent)
+                                                                      .Replace(AllPackageClasses.VERSION, SpecialNames.VersionPlaceHolder())
                                                                       .Replace(AllPackageClasses.PACKAGE, javaClassListenerPackage)
                                                                       .Replace(AllPackageClasses.ClassStub.SIMPLECLASS, clsName)
                                                                       .Replace(AllPackageClasses.ClassStub.JAVACLASS, fullInterfaces)

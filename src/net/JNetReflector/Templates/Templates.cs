@@ -103,6 +103,7 @@ namespace MASES.JNetReflector.Templates
 
     public class AllPackageClasses
     {
+        public const string COPYRIGHT = "ALLPACKAGE_COPYRIGHT_PLACEHOLDER";
         public const string VERSION = "ALLPACKAGE_VERSION_PLACEHOLDER";
         public const string JAR = "ALLPACKAGE_JAR_PLACEHOLDER";
         public const string NAMESPACE = "ALLPACKAGE_NAMESPACE_PLACEHOLDER";

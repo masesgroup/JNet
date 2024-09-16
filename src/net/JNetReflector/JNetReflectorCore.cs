@@ -21,6 +21,7 @@ using MASES.JNet;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime;
 using System.Text.Json;
 
 namespace MASES.JNetReflector
@@ -51,6 +52,8 @@ namespace MASES.JNetReflector
                 public string Url { get; set; }
                 public bool NoModule { get; set; }
             }
+
+            public string CopyrightFile { get; set; }
 
             public string JavaPLocationPath { get; set; }
 
@@ -149,6 +152,12 @@ namespace MASES.JNetReflector
                         Name = CLIParam.ConfigurationFile,
                         Type = ArgumentType.Double,
                         Help = "The path where is stored a JSON file containing the tool configuration properties",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.CopyrightFile,
+                        Type = ArgumentType.Double,
+                        Help = "The path where the tool will locate copyright info",
                     },
                     new ArgumentMetadata<string>()
                     {
@@ -418,6 +427,10 @@ namespace MASES.JNetReflector
 
         static ConfigurationType _ConfigurationFromFile;
 
+        static string _CopyrightFile;
+        public static string CopyrightFile => _CopyrightFile ?? _ConfigurationFromFile.CopyrightFile;
+        public static string CopyrightFileContent = string.Empty;
+
         static string _JavaPLocationPath;
         public static string JavaPLocationPath => _JavaPLocationPath ?? _ConfigurationFromFile.JavaPLocationPath;
 
@@ -546,6 +559,8 @@ namespace MASES.JNetReflector
         protected override string[] ProcessCommandLine()
         {
             var result = base.ProcessCommandLine();
+
+            _CopyrightFile = ParsedArgs.Get<string>(CLIParam.CopyrightFile);
 
             _JavaPLocationPath = ParsedArgs.Get<string>(CLIParam.JavaPLocationPath);
 
@@ -744,6 +759,16 @@ namespace MASES.JNetReflector
             if (ParsedArgs.Exist(CLIParam.DoNotCamel)) _UseCamel = false;
             _TraceLevel = ParsedArgs.Get<int>(CLIParam.TraceLevel);
             _TraceTo = ParsedArgs.Get<string>(CLIParam.TraceTo);
+
+            if (!string.IsNullOrWhiteSpace(CopyrightFile))
+            {
+                if (Path.IsPathRooted(CopyrightFile)) CopyrightFileContent = File.ReadAllText(CopyrightFile);
+                else
+                {
+                    var path = Path.Combine(DestinationRootPath, CopyrightFile);
+                    CopyrightFileContent = File.ReadAllText(path);
+                }
+            }
 
             return result;
         }
