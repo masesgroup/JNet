@@ -60,7 +60,8 @@
     "javax.swing.plaf.basic.BasicSliderUI$TrackListener",
     "javax.swing.plaf.basic.BasicScrollPaneUI$VSBChangeListener",
     "javax.swing.plaf.metal.MetalComboBoxUI$MetalPropertyChangeListener",
-    "javax.tools.DiagnosticListener"
+    "javax.tools.DiagnosticListener",
+	"org.xml.sax.helpers.ParserAdapter"
   ],
   "NamespacesInConflict": [
     "java.lang.module",
