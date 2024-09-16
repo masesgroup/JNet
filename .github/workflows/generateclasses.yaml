@@ -58,9 +58,7 @@ jobs:
         run: Remove-Item .\src\net\JNet\Generated\* -Recurse -Force -Exclude README.md
 
       - name: Clear Java generated files
-        run: |
-          Remove-Item .\src\jvm\jnetcore\src\main\java\org\mases\jnet\generated\* -Recurse -Force -Exclude README.md
-          Remove-Item .\src\jvm\jnet\src\main\java\org\mases\jnet\generated\* -Recurse -Force -Exclude README.md
+        run: Remove-Item .\src\jvm\jnet\src\main\java\org\mases\jnet\generated\* -Recurse -Force -Exclude README.md
 
       - run: dotnet build --no-incremental --configuration Release src\net\JNetReflector\JNetReflector.csproj
 
