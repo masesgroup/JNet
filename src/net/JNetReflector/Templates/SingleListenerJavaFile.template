@@ -7,7 +7,7 @@
 package ALLPACKAGE_PACKAGE_PLACEHOLDER;
 
 public final class ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER ALLPACKAGE_CLASSES_STUB_EXTEND_JAVACLASS_PLACEHOLDERimplements org.mases.jcobridge.IJCListenerALLPACKAGE_CLASSES_STUB_JAVACLASS_PLACEHOLDER {
-   final org.mases.jcobridge.JCListener _internalListener;
+    final org.mases.jcobridge.JCListener _internalListener;
 
     public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER(String key) throws org.mases.jcobridge.JCNativeException {
         _internalListener = new org.mases.jcobridge.JCListener(key);
