@@ -857,7 +857,7 @@ namespace MASES.JNetReflector
                         {
                             foreach (var exception in ctor.ExceptionTypes)
                             {
-                                constructorExceptions += $", {exception.Name}";
+                                constructorExceptions += $", {exception.TypeName}";
                             }
                         }
                     }
