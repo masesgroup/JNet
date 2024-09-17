@@ -847,11 +847,7 @@ namespace MASES.JNetReflector
                 if (!isInterfaceJavaListener) // it is a class, we have to implement the interfaces
                 {
                     fullInterfaces = $"extends {fullInterfaces} ";
-                }
-                else
-                {
-                    fullInterfaces = $", {fullInterfaces}";
-                    foreach(var ctor in jClass.Constructors)
+                    foreach (var ctor in jClass.Constructors)
                     {
                         if (ctor.ParameterCount == 0)
                         {
@@ -861,6 +857,10 @@ namespace MASES.JNetReflector
                             }
                         }
                     }
+                }
+                else
+                {
+                    fullInterfaces = $", {fullInterfaces}";
                 }
 
                 var singleJavaListenerStr = singleJavaListenerTemplate.Replace(AllPackageClasses.COPYRIGHT, JNetReflectorCore.CopyrightFileContent)
