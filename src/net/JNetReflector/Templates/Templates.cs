@@ -103,6 +103,7 @@ namespace MASES.JNetReflector.Templates
 
     public class AllPackageClasses
     {
+        public const string COPYRIGHT = "ALLPACKAGE_COPYRIGHT_PLACEHOLDER";
         public const string VERSION = "ALLPACKAGE_VERSION_PLACEHOLDER";
         public const string JAR = "ALLPACKAGE_JAR_PLACEHOLDER";
         public const string NAMESPACE = "ALLPACKAGE_NAMESPACE_PLACEHOLDER";
@@ -130,6 +131,8 @@ namespace MASES.JNetReflector.Templates
             public const string BASECLASS = "ALLPACKAGE_CLASSES_STUB_BASECLASS_PLACEHOLDER";
             public const string BASEINTERFACE = "ALLPACKAGE_CLASSES_STUB_BASEINTERFACE_PLACEHOLDER";
             public const string WHERECLAUSES = "ALLPACKAGE_CLASSES_STUB_WHERECLAUSES_PLACEHOLDER";
+            public const string EXTEND_JAVACLASS = "ALLPACKAGE_CLASSES_STUB_EXTEND_JAVACLASS_PLACEHOLDER";
+            public const string EXTEND_EXCEPTIONS = "ALLPACKAGE_CLASSES_STUB_EXTEND_EXCEPTIONS_PLACEHOLDER";
             public const string JAVACLASS = "ALLPACKAGE_CLASSES_STUB_JAVACLASS_PLACEHOLDER";
             public const string JAVACLASS_DIRECT = "ALLPACKAGE_CLASSES_STUB_JAVACLASS_DIRECT_PLACEHOLDER";
             public const string CONSTRUCTORS = "// ALLPACKAGE_CLASSES_STUB_CONSTRUCTORS_PLACEHOLDER";
