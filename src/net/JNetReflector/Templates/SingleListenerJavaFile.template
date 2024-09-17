@@ -10,7 +10,13 @@ public final class ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER ALLPACKAGE_CL
     final org.mases.jcobridge.JCListener _internalListener;
 
     public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER(String key) throws org.mases.jcobridge.JCNativeExceptionALLPACKAGE_CLASSES_STUB_EXTEND_EXCEPTIONS_PLACEHOLDER {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
