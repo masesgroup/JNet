@@ -842,25 +842,25 @@ namespace MASES.JNetReflector
                 var javaClassMethodBlock = jClass.AnalyzeJavaMethods(fullInterfaces, isGeneric).AddTabLevel(1);
                 string singleJavaListenerTemplate = Template.GetTemplate(Template.SingleListenerJavaFileTemplate);
 
+                string constructorExceptions = string.Empty;
+
                 if (!isInterfaceJavaListener) // it is a class, we have to implement the interfaces
                 {
-                    //StringBuilder sbInterfaces = new StringBuilder();
-                    //foreach (var item in jClass.Interfaces)
-                    //{
-                    //    sbInterfaces.AppendFormat("{0}, ", item.Name.Replace(SpecialNames.NestedClassSeparator, SpecialNames.NamespaceSeparator));
-                    //}
-
-                    //fullInterfaces = sbInterfaces.ToString();
-                    //if (!string.IsNullOrWhiteSpace(fullInterfaces))
-                    //{
-                    //    fullInterfaces = fullInterfaces.Substring(0, fullInterfaces.LastIndexOf(", "));
-                    //}
-
                     fullInterfaces = $"extends {fullInterfaces} ";
                 }
                 else
                 {
                     fullInterfaces = $", {fullInterfaces}";
+                    foreach(var ctor in jClass.Constructors)
+                    {
+                        if (ctor.ParameterCount == 0)
+                        {
+                            foreach (var exception in ctor.ExceptionTypes)
+                            {
+                                constructorExceptions += $", {exception.Name}";
+                            }
+                        }
+                    }
                 }
 
                 var singleJavaListenerStr = singleJavaListenerTemplate.Replace(AllPackageClasses.COPYRIGHT, JNetReflectorCore.CopyrightFileContent)
@@ -870,6 +870,7 @@ namespace MASES.JNetReflector
                                                                       .Replace(AllPackageClasses.ClassStub.EXTEND_JAVACLASS, isInterfaceJavaListener ? string.Empty : fullInterfaces)
                                                                       .Replace(AllPackageClasses.ClassStub.JAVACLASS, isInterfaceJavaListener ? fullInterfaces : string.Empty)
                                                                       .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMFullClassName())
+                                                                      .Replace(AllPackageClasses.ClassStub.EXTEND_EXCEPTIONS, constructorExceptions)
                                                                       .Replace(AllPackageClasses.ClassStub.LISTENER_METHODS, javaClassMethodBlock);
 
 
