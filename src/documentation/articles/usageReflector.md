@@ -26,6 +26,7 @@ jnetreflector -OriginRootPath C:\\myJars -OriginJavadocUrl \"https://thehost/jav
 _jnr_ accepts the following command-line switch:
 
 * **ConfigurationFile**: The path where is stored a JSON file containing the tool configuration properties; the JSON items shall be written using the same command-line property names
+* **CopyrightFile**: The path where the tool will locate copyright info
 * **JavaPLocationPath**: The path where the tool will locate javap, default is to use system available
 * **OriginRootPath**: The origin path where Jars to be analyzed, and dependencies, are stored
 * **OriginJavadocUrl**: The base URL of the Javadoc to be associated to the classes
