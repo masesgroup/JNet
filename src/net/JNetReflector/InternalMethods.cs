@@ -873,7 +873,7 @@ namespace MASES.JNetReflector
                                                                       .Replace(AllPackageClasses.ClassStub.EXTEND_JAVACLASS, isInterfaceJavaListener ? string.Empty : fullInterfaces)
                                                                       .Replace(AllPackageClasses.ClassStub.JAVACLASS, isInterfaceJavaListener ? fullInterfaces : string.Empty)
                                                                       .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMFullClassName())
-                                                                      .Replace(AllPackageClasses.ClassStub.EXTEND_EXCEPTIONS, constructorExceptions)
+                                                                      .Replace(AllPackageClasses.ClassStub.ConstructorStub.EXTEND_EXCEPTIONS, constructorExceptions)
                                                                       .Replace(AllPackageClasses.ClassStub.LISTENER_METHODS, javaClassMethodBlock);
 
 
@@ -2229,6 +2229,18 @@ namespace MASES.JNetReflector
                 }
 
                 bool isVoidMethod = method.IsVoid();
+                string exceptionsThrowed = string.Empty;
+
+                foreach (var exception in method.ExceptionTypes)
+                {
+                    exceptionsThrowed += $"{exception.TypeName}, ";
+                }
+                if (exceptionsThrowed.EndsWith(", ")) exceptionsThrowed = exceptionsThrowed.Substring(0, exceptionsThrowed.Length - 2); // remove last occurrence of ", "
+                if (!string.IsNullOrWhiteSpace(exceptionsThrowed))
+                {
+                    exceptionsThrowed = $"throws {exceptionsThrowed}";
+                }
+
                 string execStub;
                 if (isVoidMethod)
                 {
@@ -2288,6 +2300,7 @@ namespace MASES.JNetReflector
                 var singleMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodNameOrigin)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.PARAMETERS, paramsString)
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.EXTEND_EXCEPTIONS, paramsString)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, execStub);
 
                 subClassBlock.AppendLine(singleMethod);
