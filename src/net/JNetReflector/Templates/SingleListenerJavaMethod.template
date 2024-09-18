@@ -1,5 +1,5 @@
 ﻿//@Override
 public METHOD_STUB_RETURN_TYPE_PLACEHOLDER METHOD_STUB_METHOD_NAME_PLACEHOLDER(METHOD_STUB_PARAMETERS_PLACEHOLDER) {
-    org.mases.jnet.developed.JNetEventResult eventDataExchange;
+    org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
     METHOD_STUB_EXECUTION_PLACEHOLDER
 }

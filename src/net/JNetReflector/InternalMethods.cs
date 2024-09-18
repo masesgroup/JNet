@@ -2229,11 +2229,17 @@ namespace MASES.JNetReflector
                 string execStub;
                 if (isVoidMethod)
                 {
-                    if (method.IsDefault || !isInterfaceJavaListener)
+                    if (method.IsDefault)
+                    {
+                        execStub = string.Format(AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_VOID_DEFAULT_EXECUTION_FORMAT,
+                                                 eventHandlerName, executionParamsString.Length == 0 ? string.Empty : ", " + executionParamsString,
+                                                 extendingInterface, methodNameOrigin, executionParamsString);
+                    }
+                    else if (!isInterfaceJavaListener)
                     {
                         execStub = string.Format(AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_VOID_ADAPTER_EXECUTION_FORMAT,
                                                  eventHandlerName, executionParamsString.Length == 0 ? string.Empty : ", " + executionParamsString,
-                                                 extendingInterface, methodNameOrigin, executionParamsString);
+                                                 methodNameOrigin, executionParamsString);
                     }
                     else
                     {
@@ -2242,11 +2248,17 @@ namespace MASES.JNetReflector
                 }
                 else
                 {
-                    if (method.IsDefault || !isInterfaceJavaListener)
+                    if (method.IsDefault)
+                    {
+                        execStub = string.Format(AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_TYPED_DEFAULT_EXECUTION_FORMAT,
+                                                 eventHandlerName, executionParamsString.Length == 0 ? string.Empty : ", " + executionParamsString, returnType,
+                                                 extendingInterface, methodNameOrigin, executionParamsString);
+                    }
+                    else if (!isInterfaceJavaListener)
                     {
                         execStub = string.Format(AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_TYPED_ADAPTER_EXECUTION_FORMAT,
                                                  eventHandlerName, executionParamsString.Length == 0 ? string.Empty : ", " + executionParamsString, returnType,
-                                                 extendingInterface, methodNameOrigin, executionParamsString);
+                                                 methodNameOrigin, executionParamsString);
                     }
                     else
                     {
