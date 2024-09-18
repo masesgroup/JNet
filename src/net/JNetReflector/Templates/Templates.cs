@@ -209,7 +209,7 @@ namespace MASES.JNetReflector.Templates
                 public const string LISTENER_EXECUTION = "METHOD_STUB_LISTENER_EXECUTION_PLACEHOLDER";
                 public const string LISTENER_HANDLER_EXECUTION = "METHOD_STUB_LISTENER_HANDLER_EXECUTION_PLACEHOLDER";
                 public const string LISTENER_HANDLER_NAME = "METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER";
-                public const string SINGLE_LISTENER_HANDLER_FORMAT = "    AddEventHandler(\"{0}\", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandler));"; // removed OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER = METHOD_STUB_METHOD_NAME_PLACEHOLDER;";
+                public const string SINGLE_LISTENER_HANDLER_FORMAT = "    AddEventHandler(\"{0}\", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandler));"; // removed OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER = METHOD_STUB_METHOD_NAME_PLACEHOLDER;";
                 public const string EXECUTION_FORMAT = "{0}{1}{2}(\"{3}\"{4}{5});";
                 public const string SINGLE_ARRAY_EXECUTION_FORMAT = "new object[] {{ {0} }}";
                 public const string STATIC_EXECUTION_FORMAT = "{0}{1}{2}(LocalBridgeClazz, \"{3}\"{4}{5});";
@@ -249,9 +249,11 @@ namespace MASES.JNetReflector.Templates
                                                                             + "}}" + Environment.NewLine;
 
                 public const string VOID_LISTENER_EXECUTION_FORMAT = "raiseEvent(\"{0}\", eventDataExchange{1});";
-                public const string SUPERINTERFACE_VOID_LISTENER_EXECUTION_FORMAT = "raiseEvent(\"{0}\", eventDataExchange{1}); if (!eventDataExchange.getHasOverride()) {2}.super.{3}({1});";
+                public const string SUPERINTERFACE_VOID_LISTENER_EXECUTION_FORMAT = "{0}.super.{1}({2});";
+                public const string SUPERINTERFACE_VOID_ADAPTER_EXECUTION_FORMAT = "raiseEvent(\"{0}\", eventDataExchange{1}); if (!eventDataExchange.getHasOverride()) {2}.super.{3}({4});";
                 public const string TYPED_LISTENER_EXECUTION_FORMAT = "raiseEvent(\"{0}\", eventDataExchange{1}); Object retVal = getReturnData(); return ({2})retVal;";
-                public const string SUPERINTERFACE_TYPED_LISTENER_EXECUTION_FORMAT = "raiseEvent(\"{0}\", eventDataExchange{1}); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = {3}.super.{4}({1}); else retVal = eventDataExchange.getReturnData(); return ({2})retVal;";
+                public const string SUPERINTERFACE_TYPED_LISTENER_EXECUTION_FORMAT = "return {0}.super.{1}({2});";
+                public const string SUPERINTERFACE_TYPED_ADAPTER_EXECUTION_FORMAT = "raiseEvent(\"{0}\", eventDataExchange{1}); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = {3}.super.{4}({5}); else retVal = eventDataExchange.getReturnData(); return ({2})retVal;";
             }
 
             public class PropertyStub

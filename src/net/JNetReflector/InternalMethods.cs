@@ -1935,7 +1935,36 @@ namespace MASES.JNetReflector
                 string baseHandlerName = methodIndexer == 0 ? methodName : (methodIndexer == 1 ? methodName + paramCount : methodName + paramCount + $"_{methodIndexer}");
                 if (forListener)
                 {
-                    if (staticMethods && method.IsStatic())
+                    if (method.IsDefault)
+                    {
+                        jDecoration.AppendLine();
+                        jDecoration.Append(AllPackageClasses.ClassStub.MethodStub.HELP_REMARK_DEFAULT_METHOD);
+
+                        string methodNameDefault = methodName + SpecialNames.DefaultMethodSuffix;
+                        template = Template.GetTemplate(Template.SingleMethodTemplate);
+                        singleMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.DECORATION, jDecoration.ToString())
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_EXECUTION, listenerHandlerType)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_NAME, baseHandlerName)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.MODIFIER, modifier)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodNameDefault)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.PARAMETERS, paramsString)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.WHERECLAUSES, genericClauses.ConvertClauses(isGeneric))
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, executionStub)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION_TYPE, executionPropertyParams)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION, listenerExecutionParamsString)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.HELP, method.JavadocHrefUrl(JNetReflectorCore.UseCamel));
+
+                        jDecoration = new StringBuilder(jDecorationTemporary);
+                        if (!forInterface)
+                        {
+                            subClassBlock.AppendLine(singleMethod);
+                            jDecoration.AppendLine();
+                            jDecoration.AppendFormat(AllPackageClasses.ClassStub.MethodStub.HELP_REMARK_HANDLER_WITH_DEFAULT, methodNameDefault);
+                        }
+                        executionStub = isVoidMethod ? $"hasOverride{baseHandlerName} = false;" : $"hasOverride{baseHandlerName} = false; return default;";
+                    }
+                    else if (staticMethods && method.IsStatic())
                     {
                         jDecoration.AppendLine();
                         jDecoration.Append(AllPackageClasses.ClassStub.MethodStub.HELP_REMARK_STATIC_METHOD);
@@ -2202,9 +2231,9 @@ namespace MASES.JNetReflector
                 {
                     if (method.IsDefault || !isInterfaceJavaListener)
                     {
-                        execStub = string.Format(AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_VOID_LISTENER_EXECUTION_FORMAT,
+                        execStub = string.Format(AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_VOID_ADAPTER_EXECUTION_FORMAT,
                                                  eventHandlerName, executionParamsString.Length == 0 ? string.Empty : ", " + executionParamsString,
-                                                 extendingInterface, methodNameOrigin);
+                                                 extendingInterface, methodNameOrigin, executionParamsString);
                     }
                     else
                     {
@@ -2215,9 +2244,9 @@ namespace MASES.JNetReflector
                 {
                     if (method.IsDefault || !isInterfaceJavaListener)
                     {
-                        execStub = string.Format(AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_TYPED_LISTENER_EXECUTION_FORMAT,
+                        execStub = string.Format(AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_TYPED_ADAPTER_EXECUTION_FORMAT,
                                                  eventHandlerName, executionParamsString.Length == 0 ? string.Empty : ", " + executionParamsString, returnType,
-                                                 extendingInterface, methodNameOrigin);
+                                                 extendingInterface, methodNameOrigin, executionParamsString);
                     }
                     else
                     {
@@ -2234,18 +2263,18 @@ namespace MASES.JNetReflector
 
                 subClassBlock.AppendLine(singleMethod);
 
-                //if (method.IsDefault)
-                //{
-                //    execStub = string.Format(isVoidMethod ? AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_VOID_LISTENER_EXECUTION_FORMAT : AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_TYPED_LISTENER_EXECUTION_FORMAT,
-                //                             extendingInterface, methodNameOrigin, executionParamsString.Length == 0 ? string.Empty : executionParamsString);
+                if (method.IsDefault)
+                {
+                    execStub = string.Format(isVoidMethod ? AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_VOID_LISTENER_EXECUTION_FORMAT : AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_TYPED_LISTENER_EXECUTION_FORMAT,
+                                             extendingInterface, methodNameOrigin, executionParamsString.Length == 0 ? string.Empty : executionParamsString);
 
-                //    var singleDefaultMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
-                //                                      .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodNameOrigin + SpecialNames.DefaultMethodSuffix)
-                //                                      .Replace(AllPackageClasses.ClassStub.MethodStub.PARAMETERS, paramsString)
-                //                                      .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, execStub);
+                    var singleDefaultMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
+                                                      .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodNameOrigin + SpecialNames.DefaultMethodSuffix)
+                                                      .Replace(AllPackageClasses.ClassStub.MethodStub.PARAMETERS, paramsString)
+                                                      .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, execStub);
 
-                //    subClassBlock.AppendLine(singleDefaultMethod);
-                //}
+                    subClassBlock.AppendLine(singleDefaultMethod);
+                }
             }
 
             var returnStr = subClassBlock.ToString();
