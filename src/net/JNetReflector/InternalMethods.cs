@@ -2238,7 +2238,7 @@ namespace MASES.JNetReflector
                 if (exceptionsThrowed.EndsWith(", ")) exceptionsThrowed = exceptionsThrowed.Substring(0, exceptionsThrowed.Length - 2); // remove last occurrence of ", "
                 if (!string.IsNullOrWhiteSpace(exceptionsThrowed))
                 {
-                    exceptionsThrowed = $"throws {exceptionsThrowed}";
+                    exceptionsThrowed = $" throws {exceptionsThrowed}";
                 }
 
                 string execStub;
