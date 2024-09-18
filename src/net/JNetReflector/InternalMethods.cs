@@ -2313,6 +2313,7 @@ namespace MASES.JNetReflector
                     var singleDefaultMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
                                                       .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodNameOrigin + SpecialNames.DefaultMethodSuffix)
                                                       .Replace(AllPackageClasses.ClassStub.MethodStub.PARAMETERS, paramsString)
+                                                      .Replace(AllPackageClasses.ClassStub.MethodStub.EXTEND_EXCEPTIONS, exceptionsThrowed)
                                                       .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, execStub);
 
                     subClassBlock.AppendLine(singleDefaultMethod);
