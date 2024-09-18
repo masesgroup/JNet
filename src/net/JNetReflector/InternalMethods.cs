@@ -336,6 +336,7 @@ namespace MASES.JNetReflector
                                                            .Replace(AllPackageClasses.NAMESPACE, package)
                                                            .Replace(AllPackageClasses.CLASSES, sb.ToString());
 
+                        if (path.EndsWith(FileNameAndDirectory.AllPackageClassesFileName)) Interlocked.Increment(ref namespaces);
                         //WriteFile(path, itemPackage);
                         _allPackages.Add(path, itemPackage);
                     }
@@ -344,6 +345,7 @@ namespace MASES.JNetReflector
                         var packageContent = File.ReadAllText(path);
                         var itemPackage = packageContent.Replace(AllPackageClasses.CLASSES, sb.ToString());
 
+                        if (path.EndsWith(FileNameAndDirectory.AllPackageClassesFileName)) Interlocked.Increment(ref namespaces);
                         //WriteFile(path, itemPackage);
                         _allPackages[path] = itemPackage;
                     }
@@ -357,6 +359,7 @@ namespace MASES.JNetReflector
                                                    .Replace(AllPackageClasses.NAMESPACE, package)
                                                    .Replace(AllPackageClasses.CLASSES, sb.ToString());
 
+                if (path.EndsWith(FileNameAndDirectory.AllPackageClassesFileName)) Interlocked.Increment(ref namespaces);
                 //WriteFile(path, itemPackage);
             }
         }
