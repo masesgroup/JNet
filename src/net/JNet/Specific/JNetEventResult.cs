@@ -64,7 +64,7 @@ namespace MASES.JNet.Specific
         /// </summary>
         /// <param name="hasOverride"><see langword="true"/> if the method applied an override</param>
         /// <param name="retData">The <see cref="object"/> to be returned to the JVM side</param>
-        public void SetReturnData(bool hasOverride, Object retData)
+        public void SetReturnData(bool hasOverride, object retData)
         {
             IExecute("setReturnData", hasOverride, retData);
         }

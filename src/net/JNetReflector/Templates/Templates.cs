@@ -235,10 +235,10 @@ namespace MASES.JNetReflector.Templates
 
                 public static readonly string ACTION_LISTENER_EXECUTION_HANDLER_FORMAT = "    var methodToExecute = (OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER != null) ? OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER : METHOD_STUB_METHOD_NAME_PLACEHOLDER;" + Environment.NewLine
                                                                                        + "    methodToExecute.Invoke(METHOD_STUB_LISTENER_EXECUTION_PLACEHOLDER);" + Environment.NewLine
-                                                                                       + "    data.TypedEventData.HasOverride = hasOverrideMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER;";
+                                                                                       + "    data.Eventdata.TypedEventData.HasOverride = hasOverrideMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER;";
                 public static readonly string FUNC_LISTENER_EXECUTION_HANDLER_FORMAT = "    var methodToExecute = (OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER != null) ? OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER : METHOD_STUB_METHOD_NAME_PLACEHOLDER;" + Environment.NewLine
                                                                                      + "    var executionResult = methodToExecute.Invoke(METHOD_STUB_LISTENER_EXECUTION_PLACEHOLDER);" + Environment.NewLine
-                                                                                     + "    data.TypedEventData.SetReturnValue(hasOverrideMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER, executionResult);";
+                                                                                     + "    data.EventData.TypedEventData.SetReturnData(hasOverrideMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER, executionResult);";
 
                 public static readonly string BLOCK_LISTENER_HANDLER_FORMAT = "/// <summary>" + Environment.NewLine
                                                                             + "/// Handlers initializer for <see cref=\"{0}\"/>" + Environment.NewLine

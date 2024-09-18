@@ -18,7 +18,7 @@
 
 package org.mases.jnet.developed;
 
-class JNetEventResult {
+public class JNetEventResult {
    boolean _hasOverride = false;
    Object _returnData;
 

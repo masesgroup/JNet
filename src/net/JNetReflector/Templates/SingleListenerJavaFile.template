@@ -14,11 +14,6 @@ public final class ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER ALLPACKAGE_CL
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
-    protected void finalize() throws Throwable {
-       super.finalize();
-       _internalListener.finalize();
-    }
-
     public synchronized void release() {
        _internalListener.release();
     }
