@@ -8,7 +8,7 @@
 		<RootNamespace>MASES.JNetWinFormsTest</RootNamespace>
 		<Title>JNetWinFormsTest - a test tool for JNet</Title>
 		<Description>JNetWinFormsTest - a test tool for JNet</Description>
-		<TargetFrameworks>net462;net6.0-windows;net7.0-windows</TargetFrameworks>
+		<TargetFrameworks>net462;net6.0-windows;net8.0-windows</TargetFrameworks>
 		<DefineConstants>$(DefineConstants);WINFORMS</DefineConstants>
 	</PropertyGroup>
 	<ItemGroup>
