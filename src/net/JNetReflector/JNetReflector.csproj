@@ -32,6 +32,7 @@
     <None Remove="AllPackageClasses.template" />
     <None Remove="AllPackageClassesStubClass.template" />
     <None Remove="AllPackageClassesStubNestedClass.template" />
+    <None Remove="copyright.txt" />
     <None Remove="SingleClass.template" />
     <None Remove="Templates\AllPackageClassesStubClassInterfaceOrAbstract.template" />
     <None Remove="Templates\AllPackageClassesStubClassListener.template" />
@@ -84,6 +85,7 @@
     <Compile Include="..\JNet\Specific\AsyncEnumerable.cs" Link="Specific\AsyncEnumerable.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="copyright.txt" />
     <EmbeddedResource Include="Templates\AllPackageClassesStubClassInterfaceOrAbstract.template" />
     <EmbeddedResource Include="Templates\AllPackageClassesStubClassMainClass.template" />
     <EmbeddedResource Include="Templates\AllPackageClassesStubClassListener.template" />

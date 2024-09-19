@@ -18,6 +18,7 @@
 
 using MASES.CLIParser;
 using MASES.JNet;
+using MASES.JNetReflector.Templates;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -805,6 +806,16 @@ namespace MASES.JNetReflector
                 {
                     var path = Path.Combine(DestinationRootPath, CopyrightFile);
                     CopyrightFileContent = File.ReadAllText(path);
+                }
+            }
+            else
+            {
+                using (var stream = typeof(JNetReflectorCore).Assembly.GetManifestResourceStream(typeof(JNetReflectorCore).Namespace + "." + "copyright.txt"))
+                {
+                    using (var sr = new StreamReader(stream))
+                    {
+                        CopyrightFileContent = sr.ReadToEnd();
+                    }
                 }
             }
 
