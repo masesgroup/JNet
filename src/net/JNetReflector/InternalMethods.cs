@@ -110,16 +110,16 @@ namespace MASES.JNetReflector
             else throw new ArgumentException("At least one of ClassesToAnaylyze, JarsToAnalyze or ModulesToParse must be set");
             w.Stop();
 
-            if (JNetReflectorCore.JarsToAnalyze != null)
-            {
-                foreach (var item in _allPackages)
-                {
-                    var packageContent = File.ReadAllText(item.Key);
-                    var itemPackage = packageContent.Replace(AllPackageClasses.CLASSES, string.Empty);
+            //if (JNetReflectorCore.JarsToAnalyze != null)
+            //{
+            //    foreach (var item in _allPackages)
+            //    {
+            //        var packageContent = File.ReadAllText(item.Key);
+            //        var itemPackage = packageContent.Replace(AllPackageClasses.CLASSES, string.Empty);
 
-                    WriteFile(item.Key, itemPackage);
-                }
-            }
+            //        WriteFile(item.Key, itemPackage);
+            //    }
+            //}
 
             Console.WriteLine();
             Console.WriteLine($"Operation completed at {DateTime.Now} in {w.Elapsed}. Namespaces: {namespaces} - Classes: {classes}");
