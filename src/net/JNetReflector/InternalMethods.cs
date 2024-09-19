@@ -322,7 +322,7 @@ namespace MASES.JNetReflector
                 }
             }
 
-            var path = Path.Combine(JNetReflectorCore.DestinationCSharpClassPath, package.Replace(SpecialNames.NamespaceSeparator, Path.DirectorySeparatorChar), "AllPackageClasses.cs");
+            var path = Path.Combine(JNetReflectorCore.DestinationCSharpClassPath, package.Replace(SpecialNames.NamespaceSeparator, Path.DirectorySeparatorChar), FileNameAndDirectory.AllPackageClassesFileName);
             if (JNetReflectorCore.JarsToAnalyze != null)
             {
                 sb.AppendLine(AllPackageClasses.CLASSES);
