@@ -170,13 +170,13 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("windowActivated", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowActivatedEventHandler));
-            AddEventHandler("windowClosed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowClosedEventHandler));
-            AddEventHandler("windowClosing", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowClosingEventHandler));
-            AddEventHandler("windowDeactivated", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowDeactivatedEventHandler));
-            AddEventHandler("windowDeiconified", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowDeiconifiedEventHandler));
-            AddEventHandler("windowIconified", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowIconifiedEventHandler));
-            AddEventHandler("windowOpened", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowOpenedEventHandler));
+            AddEventHandler("windowActivated", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(WindowActivatedEventHandler));
+            AddEventHandler("windowClosed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(WindowClosedEventHandler));
+            AddEventHandler("windowClosing", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(WindowClosingEventHandler));
+            AddEventHandler("windowDeactivated", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(WindowDeactivatedEventHandler));
+            AddEventHandler("windowDeiconified", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(WindowDeiconifiedEventHandler));
+            AddEventHandler("windowIconified", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(WindowIconifiedEventHandler));
+            AddEventHandler("windowOpened", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(WindowOpenedEventHandler));
 
         }
 
@@ -186,10 +186,13 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnWindowActivated"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.WindowEvent> OnWindowActivated { get; set; } = null;
 
-        void WindowActivatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
+        bool hasOverrideWindowActivated = true;
+        void WindowActivatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideWindowActivated = true;
             var methodToExecute = (OnWindowActivated != null) ? OnWindowActivated : WindowActivated;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.WindowEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideWindowActivated;
         }
 
         /// <summary>
@@ -198,7 +201,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public virtual void WindowActivated(Java.Awt.EventNs.WindowEvent arg0)
         {
-            
+            hasOverrideWindowActivated = false;
         }
 
         /// <summary>
@@ -207,10 +210,13 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnWindowClosed"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.WindowEvent> OnWindowClosed { get; set; } = null;
 
-        void WindowClosedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
+        bool hasOverrideWindowClosed = true;
+        void WindowClosedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideWindowClosed = true;
             var methodToExecute = (OnWindowClosed != null) ? OnWindowClosed : WindowClosed;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.WindowEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideWindowClosed;
         }
 
         /// <summary>
@@ -219,7 +225,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public virtual void WindowClosed(Java.Awt.EventNs.WindowEvent arg0)
         {
-            
+            hasOverrideWindowClosed = false;
         }
 
         /// <summary>
@@ -228,10 +234,13 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnWindowClosing"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.WindowEvent> OnWindowClosing { get; set; } = null;
 
-        void WindowClosingEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
+        bool hasOverrideWindowClosing = true;
+        void WindowClosingEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideWindowClosing = true;
             var methodToExecute = (OnWindowClosing != null) ? OnWindowClosing : WindowClosing;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.WindowEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideWindowClosing;
         }
 
         /// <summary>
@@ -240,7 +249,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public virtual void WindowClosing(Java.Awt.EventNs.WindowEvent arg0)
         {
-            
+            hasOverrideWindowClosing = false;
         }
 
         /// <summary>
@@ -249,10 +258,13 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnWindowDeactivated"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.WindowEvent> OnWindowDeactivated { get; set; } = null;
 
-        void WindowDeactivatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
+        bool hasOverrideWindowDeactivated = true;
+        void WindowDeactivatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideWindowDeactivated = true;
             var methodToExecute = (OnWindowDeactivated != null) ? OnWindowDeactivated : WindowDeactivated;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.WindowEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideWindowDeactivated;
         }
 
         /// <summary>
@@ -261,7 +273,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public virtual void WindowDeactivated(Java.Awt.EventNs.WindowEvent arg0)
         {
-            
+            hasOverrideWindowDeactivated = false;
         }
 
         /// <summary>
@@ -270,10 +282,13 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnWindowDeiconified"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.WindowEvent> OnWindowDeiconified { get; set; } = null;
 
-        void WindowDeiconifiedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
+        bool hasOverrideWindowDeiconified = true;
+        void WindowDeiconifiedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideWindowDeiconified = true;
             var methodToExecute = (OnWindowDeiconified != null) ? OnWindowDeiconified : WindowDeiconified;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.WindowEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideWindowDeiconified;
         }
 
         /// <summary>
@@ -282,7 +297,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public virtual void WindowDeiconified(Java.Awt.EventNs.WindowEvent arg0)
         {
-            
+            hasOverrideWindowDeiconified = false;
         }
 
         /// <summary>
@@ -291,10 +306,13 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnWindowIconified"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.WindowEvent> OnWindowIconified { get; set; } = null;
 
-        void WindowIconifiedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
+        bool hasOverrideWindowIconified = true;
+        void WindowIconifiedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideWindowIconified = true;
             var methodToExecute = (OnWindowIconified != null) ? OnWindowIconified : WindowIconified;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.WindowEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideWindowIconified;
         }
 
         /// <summary>
@@ -303,7 +321,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public virtual void WindowIconified(Java.Awt.EventNs.WindowEvent arg0)
         {
-            
+            hasOverrideWindowIconified = false;
         }
 
         /// <summary>
@@ -312,10 +330,13 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnWindowOpened"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.WindowEvent> OnWindowOpened { get; set; } = null;
 
-        void WindowOpenedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
+        bool hasOverrideWindowOpened = true;
+        void WindowOpenedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideWindowOpened = true;
             var methodToExecute = (OnWindowOpened != null) ? OnWindowOpened : WindowOpened;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.WindowEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideWindowOpened;
         }
 
         /// <summary>
@@ -324,7 +345,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public virtual void WindowOpened(Java.Awt.EventNs.WindowEvent arg0)
         {
-            
+            hasOverrideWindowOpened = false;
         }
 
         #endregion

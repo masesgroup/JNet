@@ -140,7 +140,7 @@ namespace Javax.Net.Ssl
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("handshakeCompleted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.HandshakeCompletedEvent>>>(HandshakeCompletedEventHandler));
+            AddEventHandler("handshakeCompleted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(HandshakeCompletedEventHandler));
 
         }
 
@@ -150,10 +150,13 @@ namespace Javax.Net.Ssl
         /// <remarks>If <see cref="OnHandshakeCompleted"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Net.Ssl.HandshakeCompletedEvent> OnHandshakeCompleted { get; set; } = null;
 
-        void HandshakeCompletedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.HandshakeCompletedEvent>> data)
+        bool hasOverrideHandshakeCompleted = true;
+        void HandshakeCompletedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideHandshakeCompleted = true;
             var methodToExecute = (OnHandshakeCompleted != null) ? OnHandshakeCompleted : HandshakeCompleted;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Net.Ssl.HandshakeCompletedEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideHandshakeCompleted;
         }
 
         /// <summary>
@@ -162,7 +165,7 @@ namespace Javax.Net.Ssl
         /// <param name="arg0"><see cref="Javax.Net.Ssl.HandshakeCompletedEvent"/></param>
         public virtual void HandshakeCompleted(Javax.Net.Ssl.HandshakeCompletedEvent arg0)
         {
-            
+            hasOverrideHandshakeCompleted = false;
         }
 
         #endregion

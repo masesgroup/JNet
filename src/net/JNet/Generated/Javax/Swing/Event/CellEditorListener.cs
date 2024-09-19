@@ -145,8 +145,8 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("editingCanceled", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>>>(EditingCanceledEventHandler));
-            AddEventHandler("editingStopped", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>>>(EditingStoppedEventHandler));
+            AddEventHandler("editingCanceled", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(EditingCanceledEventHandler));
+            AddEventHandler("editingStopped", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(EditingStoppedEventHandler));
 
         }
 
@@ -156,10 +156,13 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnEditingCanceled"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.ChangeEvent> OnEditingCanceled { get; set; } = null;
 
-        void EditingCanceledEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>> data)
+        bool hasOverrideEditingCanceled = true;
+        void EditingCanceledEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideEditingCanceled = true;
             var methodToExecute = (OnEditingCanceled != null) ? OnEditingCanceled : EditingCanceled;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.ChangeEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideEditingCanceled;
         }
 
         /// <summary>
@@ -168,7 +171,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
         public virtual void EditingCanceled(Javax.Swing.Event.ChangeEvent arg0)
         {
-            
+            hasOverrideEditingCanceled = false;
         }
 
         /// <summary>
@@ -177,10 +180,13 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnEditingStopped"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.ChangeEvent> OnEditingStopped { get; set; } = null;
 
-        void EditingStoppedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>> data)
+        bool hasOverrideEditingStopped = true;
+        void EditingStoppedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideEditingStopped = true;
             var methodToExecute = (OnEditingStopped != null) ? OnEditingStopped : EditingStopped;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.ChangeEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideEditingStopped;
         }
 
         /// <summary>
@@ -189,7 +195,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
         public virtual void EditingStopped(Javax.Swing.Event.ChangeEvent arg0)
         {
-            
+            hasOverrideEditingStopped = false;
         }
 
         #endregion

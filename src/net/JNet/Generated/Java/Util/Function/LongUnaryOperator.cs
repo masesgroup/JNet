@@ -162,9 +162,9 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("applyAsLong", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyAsLongEventHandler));
-            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.LongUnaryOperator>>>(AndThenEventHandler));
-            AddEventHandler("compose", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.LongUnaryOperator>>>(ComposeEventHandler));
+            AddEventHandler("applyAsLong", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ApplyAsLongEventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AndThenEventHandler));
+            AddEventHandler("compose", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ComposeEventHandler));
 
         }
 
@@ -174,11 +174,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnApplyAsLong"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<long, long> OnApplyAsLong { get; set; } = null;
 
-        void ApplyAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
+        bool hasOverrideApplyAsLong = true;
+        void ApplyAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideApplyAsLong = true;
             var methodToExecute = (OnApplyAsLong != null) ? OnApplyAsLong : ApplyAsLong;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<long>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideApplyAsLong, executionResult);
         }
 
         /// <summary>
@@ -188,7 +190,7 @@ namespace Java.Util.Function
         /// <returns><see cref="long"/></returns>
         public virtual long ApplyAsLong(long arg0)
         {
-            return default;
+            hasOverrideApplyAsLong = false; return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongUnaryOperator.html#andThen(java.util.function.LongUnaryOperator)"/>
@@ -207,11 +209,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.LongUnaryOperator, Java.Util.Function.LongUnaryOperator> OnAndThen { get; set; } = null;
 
-        void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.LongUnaryOperator>> data)
+        bool hasOverrideAndThen = true;
+        void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideAndThen = true;
             var methodToExecute = (OnAndThen != null) ? OnAndThen : AndThen;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.LongUnaryOperator>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideAndThen, executionResult);
         }
 
         /// <summary>
@@ -222,7 +226,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThenDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.LongUnaryOperator AndThen(Java.Util.Function.LongUnaryOperator arg0)
         {
-            return AndThenDefault(arg0);
+            hasOverrideAndThen = false; return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongUnaryOperator.html#compose(java.util.function.LongUnaryOperator)"/>
@@ -241,11 +245,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnCompose"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.LongUnaryOperator, Java.Util.Function.LongUnaryOperator> OnCompose { get; set; } = null;
 
-        void ComposeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.LongUnaryOperator>> data)
+        bool hasOverrideCompose = true;
+        void ComposeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideCompose = true;
             var methodToExecute = (OnCompose != null) ? OnCompose : Compose;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.LongUnaryOperator>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideCompose, executionResult);
         }
 
         /// <summary>
@@ -256,7 +262,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="ComposeDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.LongUnaryOperator Compose(Java.Util.Function.LongUnaryOperator arg0)
         {
-            return ComposeDefault(arg0);
+            hasOverrideCompose = false; return default;
         }
 
         #endregion

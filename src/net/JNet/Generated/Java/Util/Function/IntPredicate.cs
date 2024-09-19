@@ -158,10 +158,10 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("test", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(TestEventHandler));
-            AddEventHandler("and", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.IntPredicate>>>(AndEventHandler));
-            AddEventHandler("negate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler));
-            AddEventHandler("or", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.IntPredicate>>>(OrEventHandler));
+            AddEventHandler("test", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(TestEventHandler));
+            AddEventHandler("and", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AndEventHandler));
+            AddEventHandler("negate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(NegateEventHandler));
+            AddEventHandler("or", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OrEventHandler));
 
         }
 
@@ -171,11 +171,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnTest"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<int, bool> OnTest { get; set; } = null;
 
-        void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
+        bool hasOverrideTest = true;
+        void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideTest = true;
             var methodToExecute = (OnTest != null) ? OnTest : Test;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<int>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideTest, executionResult);
         }
 
         /// <summary>
@@ -185,7 +187,7 @@ namespace Java.Util.Function
         /// <returns><see cref="bool"/></returns>
         public virtual bool Test(int arg0)
         {
-            return default;
+            hasOverrideTest = false; return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#and(java.util.function.IntPredicate)"/>
@@ -204,11 +206,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnAnd"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.IntPredicate, Java.Util.Function.IntPredicate> OnAnd { get; set; } = null;
 
-        void AndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.IntPredicate>> data)
+        bool hasOverrideAnd = true;
+        void AndEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideAnd = true;
             var methodToExecute = (OnAnd != null) ? OnAnd : And;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.IntPredicate>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideAnd, executionResult);
         }
 
         /// <summary>
@@ -219,7 +223,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.IntPredicate And(Java.Util.Function.IntPredicate arg0)
         {
-            return AndDefault(arg0);
+            hasOverrideAnd = false; return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#negate()"/>
@@ -237,11 +241,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnNegate"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.IntPredicate> OnNegate { get; set; } = null;
 
-        void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        bool hasOverrideNegate = true;
+        void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideNegate = true;
             var methodToExecute = (OnNegate != null) ? OnNegate : Negate;
             var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
+            data.EventData.TypedEventData.SetReturnData(hasOverrideNegate, executionResult);
         }
 
         /// <summary>
@@ -251,7 +257,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="NegateDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.IntPredicate Negate()
         {
-            return NegateDefault();
+            hasOverrideNegate = false; return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#or(java.util.function.IntPredicate)"/>
@@ -270,11 +276,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnOr"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.IntPredicate, Java.Util.Function.IntPredicate> OnOr { get; set; } = null;
 
-        void OrEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.IntPredicate>> data)
+        bool hasOverrideOr = true;
+        void OrEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideOr = true;
             var methodToExecute = (OnOr != null) ? OnOr : Or;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.IntPredicate>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideOr, executionResult);
         }
 
         /// <summary>
@@ -285,7 +293,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OrDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.IntPredicate Or(Java.Util.Function.IntPredicate arg0)
         {
-            return OrDefault(arg0);
+            hasOverrideOr = false; return default;
         }
 
         #endregion

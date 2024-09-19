@@ -185,7 +185,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("applyAsLong", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyAsLongEventHandler));
+            AddEventHandler("applyAsLong", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ApplyAsLongEventHandler));
 
         }
 
@@ -195,11 +195,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnApplyAsLong"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<object, long> OnApplyAsLong { get; set; } = null;
 
-        void ApplyAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
+        bool hasOverrideApplyAsLong = true;
+        void ApplyAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideApplyAsLong = true;
             var methodToExecute = (OnApplyAsLong != null) ? OnApplyAsLong : ApplyAsLong;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<object>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideApplyAsLong, executionResult);
         }
 
         /// <summary>
@@ -209,7 +211,7 @@ namespace Java.Util.Function
         /// <returns><see cref="long"/></returns>
         public virtual long ApplyAsLong(object arg0)
         {
-            return default;
+            hasOverrideApplyAsLong = false; return default;
         }
 
         #endregion
@@ -311,7 +313,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("applyAsLong", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyAsLongEventHandler));
+            AddEventHandler("applyAsLong", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ApplyAsLongEventHandler));
 
         }
 
@@ -321,11 +323,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnApplyAsLong"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<T, long> OnApplyAsLong { get; set; } = null;
 
-        void ApplyAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
+        bool hasOverrideApplyAsLong = true;
+        void ApplyAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideApplyAsLong = true;
             var methodToExecute = (OnApplyAsLong != null) ? OnApplyAsLong : ApplyAsLong;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<T>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideApplyAsLong, executionResult);
         }
 
         /// <summary>
@@ -335,7 +339,7 @@ namespace Java.Util.Function
         /// <returns><see cref="long"/></returns>
         public virtual long ApplyAsLong(T arg0)
         {
-            return default;
+            hasOverrideApplyAsLong = false; return default;
         }
 
         #endregion

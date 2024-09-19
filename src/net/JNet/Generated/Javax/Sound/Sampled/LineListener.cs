@@ -140,7 +140,7 @@ namespace Javax.Sound.Sampled
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("update", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sound.Sampled.LineEvent>>>(UpdateEventHandler));
+            AddEventHandler("update", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(UpdateEventHandler));
 
         }
 
@@ -150,10 +150,13 @@ namespace Javax.Sound.Sampled
         /// <remarks>If <see cref="OnUpdate"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Sound.Sampled.LineEvent> OnUpdate { get; set; } = null;
 
-        void UpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sound.Sampled.LineEvent>> data)
+        bool hasOverrideUpdate = true;
+        void UpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideUpdate = true;
             var methodToExecute = (OnUpdate != null) ? OnUpdate : Update;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Sound.Sampled.LineEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideUpdate;
         }
 
         /// <summary>
@@ -162,7 +165,7 @@ namespace Javax.Sound.Sampled
         /// <param name="arg0"><see cref="Javax.Sound.Sampled.LineEvent"/></param>
         public virtual void Update(Javax.Sound.Sampled.LineEvent arg0)
         {
-            
+            hasOverrideUpdate = false;
         }
 
         #endregion

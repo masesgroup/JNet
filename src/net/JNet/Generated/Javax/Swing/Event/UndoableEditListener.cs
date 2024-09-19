@@ -140,7 +140,7 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("undoableEditHappened", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.UndoableEditEvent>>>(UndoableEditHappenedEventHandler));
+            AddEventHandler("undoableEditHappened", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(UndoableEditHappenedEventHandler));
 
         }
 
@@ -150,10 +150,13 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnUndoableEditHappened"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.UndoableEditEvent> OnUndoableEditHappened { get; set; } = null;
 
-        void UndoableEditHappenedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.UndoableEditEvent>> data)
+        bool hasOverrideUndoableEditHappened = true;
+        void UndoableEditHappenedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideUndoableEditHappened = true;
             var methodToExecute = (OnUndoableEditHappened != null) ? OnUndoableEditHappened : UndoableEditHappened;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.UndoableEditEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideUndoableEditHappened;
         }
 
         /// <summary>
@@ -162,7 +165,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.UndoableEditEvent"/></param>
         public virtual void UndoableEditHappened(Javax.Swing.Event.UndoableEditEvent arg0)
         {
-            
+            hasOverrideUndoableEditHappened = false;
         }
 
         #endregion

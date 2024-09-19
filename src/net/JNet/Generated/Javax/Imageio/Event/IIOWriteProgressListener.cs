@@ -175,13 +175,13 @@ namespace Javax.Imageio.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("imageComplete", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ImageCompleteEventHandler));
-            AddEventHandler("imageProgress", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ImageProgressEventHandler));
-            AddEventHandler("imageStarted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ImageStartedEventHandler));
-            AddEventHandler("thumbnailComplete", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ThumbnailCompleteEventHandler));
-            AddEventHandler("thumbnailProgress", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ThumbnailProgressEventHandler));
-            AddEventHandler("thumbnailStarted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ThumbnailStartedEventHandler));
-            AddEventHandler("writeAborted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(WriteAbortedEventHandler));
+            AddEventHandler("imageComplete", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ImageCompleteEventHandler));
+            AddEventHandler("imageProgress", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ImageProgressEventHandler));
+            AddEventHandler("imageStarted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ImageStartedEventHandler));
+            AddEventHandler("thumbnailComplete", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ThumbnailCompleteEventHandler));
+            AddEventHandler("thumbnailProgress", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ThumbnailProgressEventHandler));
+            AddEventHandler("thumbnailStarted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ThumbnailStartedEventHandler));
+            AddEventHandler("writeAborted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(WriteAbortedEventHandler));
 
         }
 
@@ -191,10 +191,13 @@ namespace Javax.Imageio.Event
         /// <remarks>If <see cref="OnImageComplete"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Imageio.ImageWriter> OnImageComplete { get; set; } = null;
 
-        void ImageCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
+        bool hasOverrideImageComplete = true;
+        void ImageCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideImageComplete = true;
             var methodToExecute = (OnImageComplete != null) ? OnImageComplete : ImageComplete;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Imageio.ImageWriter>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideImageComplete;
         }
 
         /// <summary>
@@ -203,7 +206,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
         public virtual void ImageComplete(Javax.Imageio.ImageWriter arg0)
         {
-            
+            hasOverrideImageComplete = false;
         }
 
         /// <summary>
@@ -212,10 +215,13 @@ namespace Javax.Imageio.Event
         /// <remarks>If <see cref="OnImageProgress"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Imageio.ImageWriter, float> OnImageProgress { get; set; } = null;
 
-        void ImageProgressEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
+        bool hasOverrideImageProgress = true;
+        void ImageProgressEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideImageProgress = true;
             var methodToExecute = (OnImageProgress != null) ? OnImageProgress : ImageProgress;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<float>(0));
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Imageio.ImageWriter>(0), data.EventData.GetAt<float>(1));
+            data.EventData.TypedEventData.HasOverride = hasOverrideImageProgress;
         }
 
         /// <summary>
@@ -225,7 +231,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg1"><see cref="float"/></param>
         public virtual void ImageProgress(Javax.Imageio.ImageWriter arg0, float arg1)
         {
-            
+            hasOverrideImageProgress = false;
         }
 
         /// <summary>
@@ -234,10 +240,13 @@ namespace Javax.Imageio.Event
         /// <remarks>If <see cref="OnImageStarted"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Imageio.ImageWriter, int> OnImageStarted { get; set; } = null;
 
-        void ImageStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
+        bool hasOverrideImageStarted = true;
+        void ImageStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideImageStarted = true;
             var methodToExecute = (OnImageStarted != null) ? OnImageStarted : ImageStarted;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0));
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Imageio.ImageWriter>(0), data.EventData.GetAt<int>(1));
+            data.EventData.TypedEventData.HasOverride = hasOverrideImageStarted;
         }
 
         /// <summary>
@@ -247,7 +256,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg1"><see cref="int"/></param>
         public virtual void ImageStarted(Javax.Imageio.ImageWriter arg0, int arg1)
         {
-            
+            hasOverrideImageStarted = false;
         }
 
         /// <summary>
@@ -256,10 +265,13 @@ namespace Javax.Imageio.Event
         /// <remarks>If <see cref="OnThumbnailComplete"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Imageio.ImageWriter> OnThumbnailComplete { get; set; } = null;
 
-        void ThumbnailCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
+        bool hasOverrideThumbnailComplete = true;
+        void ThumbnailCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideThumbnailComplete = true;
             var methodToExecute = (OnThumbnailComplete != null) ? OnThumbnailComplete : ThumbnailComplete;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Imageio.ImageWriter>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideThumbnailComplete;
         }
 
         /// <summary>
@@ -268,7 +280,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
         public virtual void ThumbnailComplete(Javax.Imageio.ImageWriter arg0)
         {
-            
+            hasOverrideThumbnailComplete = false;
         }
 
         /// <summary>
@@ -277,10 +289,13 @@ namespace Javax.Imageio.Event
         /// <remarks>If <see cref="OnThumbnailProgress"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Imageio.ImageWriter, float> OnThumbnailProgress { get; set; } = null;
 
-        void ThumbnailProgressEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
+        bool hasOverrideThumbnailProgress = true;
+        void ThumbnailProgressEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideThumbnailProgress = true;
             var methodToExecute = (OnThumbnailProgress != null) ? OnThumbnailProgress : ThumbnailProgress;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<float>(0));
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Imageio.ImageWriter>(0), data.EventData.GetAt<float>(1));
+            data.EventData.TypedEventData.HasOverride = hasOverrideThumbnailProgress;
         }
 
         /// <summary>
@@ -290,7 +305,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg1"><see cref="float"/></param>
         public virtual void ThumbnailProgress(Javax.Imageio.ImageWriter arg0, float arg1)
         {
-            
+            hasOverrideThumbnailProgress = false;
         }
 
         /// <summary>
@@ -299,10 +314,13 @@ namespace Javax.Imageio.Event
         /// <remarks>If <see cref="OnThumbnailStarted"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Imageio.ImageWriter, int, int> OnThumbnailStarted { get; set; } = null;
 
-        void ThumbnailStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
+        bool hasOverrideThumbnailStarted = true;
+        void ThumbnailStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideThumbnailStarted = true;
             var methodToExecute = (OnThumbnailStarted != null) ? OnThumbnailStarted : ThumbnailStarted;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<int>(1));
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Imageio.ImageWriter>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<int>(2));
+            data.EventData.TypedEventData.HasOverride = hasOverrideThumbnailStarted;
         }
 
         /// <summary>
@@ -313,7 +331,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg2"><see cref="int"/></param>
         public virtual void ThumbnailStarted(Javax.Imageio.ImageWriter arg0, int arg1, int arg2)
         {
-            
+            hasOverrideThumbnailStarted = false;
         }
 
         /// <summary>
@@ -322,10 +340,13 @@ namespace Javax.Imageio.Event
         /// <remarks>If <see cref="OnWriteAborted"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Imageio.ImageWriter> OnWriteAborted { get; set; } = null;
 
-        void WriteAbortedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
+        bool hasOverrideWriteAborted = true;
+        void WriteAbortedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideWriteAborted = true;
             var methodToExecute = (OnWriteAborted != null) ? OnWriteAborted : WriteAborted;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Imageio.ImageWriter>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideWriteAborted;
         }
 
         /// <summary>
@@ -334,7 +355,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
         public virtual void WriteAborted(Javax.Imageio.ImageWriter arg0)
         {
-            
+            hasOverrideWriteAborted = false;
         }
 
         #endregion

@@ -140,7 +140,7 @@ namespace Org.W3c.Dom.Events
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("handleEvent", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Org.W3c.Dom.Events.Event>>>(HandleEventEventHandler));
+            AddEventHandler("handleEvent", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(HandleEventEventHandler));
 
         }
 
@@ -150,10 +150,13 @@ namespace Org.W3c.Dom.Events
         /// <remarks>If <see cref="OnHandleEvent"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Org.W3c.Dom.Events.Event> OnHandleEvent { get; set; } = null;
 
-        void HandleEventEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.W3c.Dom.Events.Event>> data)
+        bool hasOverrideHandleEvent = true;
+        void HandleEventEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideHandleEvent = true;
             var methodToExecute = (OnHandleEvent != null) ? OnHandleEvent : HandleEvent;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Org.W3c.Dom.Events.Event>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideHandleEvent;
         }
 
         /// <summary>
@@ -162,7 +165,7 @@ namespace Org.W3c.Dom.Events
         /// <param name="arg0"><see cref="Org.W3c.Dom.Events.Event"/></param>
         public virtual void HandleEvent(Org.W3c.Dom.Events.Event arg0)
         {
-            
+            hasOverrideHandleEvent = false;
         }
 
         #endregion

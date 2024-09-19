@@ -26,6 +26,7 @@ public final class Action implements org.mases.jcobridge.IJCListener, javax.swin
     final org.mases.jcobridge.JCListener _internalListener;
 
     public Action(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,35 +72,43 @@ public final class Action implements org.mases.jcobridge.IJCListener, javax.swin
 
     //@Override
     public boolean isEnabled() {
-        raiseEvent("isEnabled"); Object retVal = getReturnData(); return (boolean)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("isEnabled", eventDataExchange); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM"); Object retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
     }
     //@Override
     public java.lang.Object getValue(java.lang.String arg0) {
-        raiseEvent("getValue", arg0); Object retVal = getReturnData(); return (java.lang.Object)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("getValue", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM"); Object retVal = eventDataExchange.getReturnData(); return (java.lang.Object)retVal;
     }
     //@Override
     public void actionPerformed(java.awt.event.ActionEvent arg0) {
-        raiseEvent("actionPerformed", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("actionPerformed", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void addPropertyChangeListener(java.beans.PropertyChangeListener arg0) {
-        raiseEvent("addPropertyChangeListener", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("addPropertyChangeListener", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void putValue(java.lang.String arg0, java.lang.Object arg1) {
-        raiseEvent("putValue", arg0, arg1);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("putValue", eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void removePropertyChangeListener(java.beans.PropertyChangeListener arg0) {
-        raiseEvent("removePropertyChangeListener", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("removePropertyChangeListener", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void setEnabled(boolean arg0) {
-        raiseEvent("setEnabled", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("setEnabled", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public boolean accept(java.lang.Object arg0) {
-        raiseEvent("accept", arg0); Object retVal = getReturnData(); return (boolean)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("accept", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = javax.swing.Action.super.accept(arg0); else retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
     }
     //@Override
     public boolean acceptDefault(java.lang.Object arg0) {

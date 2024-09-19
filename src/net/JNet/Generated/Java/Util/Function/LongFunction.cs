@@ -185,7 +185,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("apply", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyEventHandler));
+            AddEventHandler("apply", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ApplyEventHandler));
 
         }
 
@@ -195,11 +195,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnApply"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<long, object> OnApply { get; set; } = null;
 
-        void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
+        bool hasOverrideApply = true;
+        void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideApply = true;
             var methodToExecute = (OnApply != null) ? OnApply : Apply;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<long>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideApply, executionResult);
         }
 
         /// <summary>
@@ -209,7 +211,7 @@ namespace Java.Util.Function
         /// <returns><see cref="object"/></returns>
         public virtual object Apply(long arg0)
         {
-            return default;
+            hasOverrideApply = false; return default;
         }
 
         #endregion
@@ -311,7 +313,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("apply", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyEventHandler));
+            AddEventHandler("apply", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ApplyEventHandler));
 
         }
 
@@ -321,11 +323,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnApply"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<long, R> OnApply { get; set; } = null;
 
-        void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
+        bool hasOverrideApply = true;
+        void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideApply = true;
             var methodToExecute = (OnApply != null) ? OnApply : Apply;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<long>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideApply, executionResult);
         }
 
         /// <summary>
@@ -335,7 +339,7 @@ namespace Java.Util.Function
         /// <returns><typeparamref name="R"/></returns>
         public virtual R Apply(long arg0)
         {
-            return default;
+            hasOverrideApply = false; return default;
         }
 
         #endregion

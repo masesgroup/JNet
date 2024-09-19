@@ -186,7 +186,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("applyAsInt", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyAsIntEventHandler));
+            AddEventHandler("applyAsInt", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ApplyAsIntEventHandler));
 
         }
 
@@ -196,11 +196,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnApplyAsInt"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<object, object, int> OnApplyAsInt { get; set; } = null;
 
-        void ApplyAsIntEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
+        bool hasOverrideApplyAsInt = true;
+        void ApplyAsIntEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideApplyAsInt = true;
             var methodToExecute = (OnApplyAsInt != null) ? OnApplyAsInt : ApplyAsInt;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<object>(0));
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<object>(0), data.EventData.GetAt<object>(1));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideApplyAsInt, executionResult);
         }
 
         /// <summary>
@@ -211,7 +213,7 @@ namespace Java.Util.Function
         /// <returns><see cref="int"/></returns>
         public virtual int ApplyAsInt(object arg0, object arg1)
         {
-            return default;
+            hasOverrideApplyAsInt = false; return default;
         }
 
         #endregion
@@ -315,7 +317,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("applyAsInt", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyAsIntEventHandler));
+            AddEventHandler("applyAsInt", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ApplyAsIntEventHandler));
 
         }
 
@@ -325,11 +327,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnApplyAsInt"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<T, U, int> OnApplyAsInt { get; set; } = null;
 
-        void ApplyAsIntEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
+        bool hasOverrideApplyAsInt = true;
+        void ApplyAsIntEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideApplyAsInt = true;
             var methodToExecute = (OnApplyAsInt != null) ? OnApplyAsInt : ApplyAsInt;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<U>(0));
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<T>(0), data.EventData.GetAt<U>(1));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideApplyAsInt, executionResult);
         }
 
         /// <summary>
@@ -340,7 +344,7 @@ namespace Java.Util.Function
         /// <returns><see cref="int"/></returns>
         public virtual int ApplyAsInt(T arg0, U arg1)
         {
-            return default;
+            hasOverrideApplyAsInt = false; return default;
         }
 
         #endregion

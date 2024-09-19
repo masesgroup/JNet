@@ -186,8 +186,8 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("accept", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(AcceptEventHandler));
-            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiConsumer>>>(AndThenEventHandler));
+            AddEventHandler("accept", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AcceptEventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AndThenEventHandler));
 
         }
 
@@ -197,10 +197,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnAccept"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<object, object> OnAccept { get; set; } = null;
 
-        void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
+        bool hasOverrideAccept = true;
+        void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideAccept = true;
             var methodToExecute = (OnAccept != null) ? OnAccept : Accept;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<object>(0));
+            methodToExecute.Invoke(data.EventData.GetAt<object>(0), data.EventData.GetAt<object>(1));
+            data.EventData.TypedEventData.HasOverride = hasOverrideAccept;
         }
 
         /// <summary>
@@ -210,7 +213,7 @@ namespace Java.Util.Function
         /// <param name="arg1"><see cref="object"/></param>
         public virtual void Accept(object arg0, object arg1)
         {
-            
+            hasOverrideAccept = false;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
@@ -229,11 +232,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.BiConsumer, Java.Util.Function.BiConsumer> OnAndThen { get; set; } = null;
 
-        void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.BiConsumer>> data)
+        bool hasOverrideAndThen = true;
+        void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideAndThen = true;
             var methodToExecute = (OnAndThen != null) ? OnAndThen : AndThen;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.BiConsumer>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideAndThen, executionResult);
         }
 
         /// <summary>
@@ -244,7 +249,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThenDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.BiConsumer AndThen(Java.Util.Function.BiConsumer arg0)
         {
-            return AndThenDefault(arg0);
+            hasOverrideAndThen = false; return default;
         }
 
         #endregion
@@ -363,8 +368,8 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("accept", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(AcceptEventHandler));
-            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU>>>>(AndThen<Arg0objectSuperT, Arg0objectSuperU>EventHandler));
+            AddEventHandler("accept", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AcceptEventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AndThen<Arg0objectSuperT, Arg0objectSuperU>EventHandler));
 
         }
 
@@ -374,10 +379,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnAccept"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<T, U> OnAccept { get; set; } = null;
 
-        void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
+        bool hasOverrideAccept = true;
+        void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideAccept = true;
             var methodToExecute = (OnAccept != null) ? OnAccept : Accept;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<U>(0));
+            methodToExecute.Invoke(data.EventData.GetAt<T>(0), data.EventData.GetAt<U>(1));
+            data.EventData.TypedEventData.HasOverride = hasOverrideAccept;
         }
 
         /// <summary>
@@ -387,7 +395,7 @@ namespace Java.Util.Function
         /// <param name="arg1"><typeparamref name="U"/></param>
         public virtual void Accept(T arg0, U arg1)
         {
-            
+            hasOverrideAccept = false;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
@@ -408,11 +416,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnAndThen<Arg0objectSuperT, Arg0objectSuperU>"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU>, Java.Util.Function.BiConsumer<T, U>> OnAndThen<Arg0objectSuperT, Arg0objectSuperU> { get; set; } = null;
 
-        void AndThen<Arg0objectSuperT, Arg0objectSuperU>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU>>> data)
+        bool hasOverrideAndThen<Arg0objectSuperT, Arg0objectSuperU> = true;
+        void AndThen<Arg0objectSuperT, Arg0objectSuperU>EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideAndThen<Arg0objectSuperT, Arg0objectSuperU> = true;
             var methodToExecute = (OnAndThen<Arg0objectSuperT, Arg0objectSuperU> != null) ? OnAndThen<Arg0objectSuperT, Arg0objectSuperU> : AndThen<Arg0objectSuperT, Arg0objectSuperU>;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU>>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideAndThen<Arg0objectSuperT, Arg0objectSuperU>, executionResult);
         }
 
         /// <summary>
@@ -425,7 +435,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThen<Arg0objectSuperT, Arg0objectSuperU>Default"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.BiConsumer<T, U> AndThen<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
         {
-            return AndThen<Arg0objectSuperT, Arg0objectSuperU>Default(arg0);
+            hasOverrideAndThen<Arg0objectSuperT, Arg0objectSuperU> = false; return default;
         }
 
         #endregion

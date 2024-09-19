@@ -26,6 +26,7 @@ public final class InternalFrameListener implements org.mases.jcobridge.IJCListe
     final org.mases.jcobridge.JCListener _internalListener;
 
     public InternalFrameListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,31 +72,38 @@ public final class InternalFrameListener implements org.mases.jcobridge.IJCListe
 
     //@Override
     public void internalFrameActivated(javax.swing.event.InternalFrameEvent arg0) {
-        raiseEvent("internalFrameActivated", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("internalFrameActivated", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void internalFrameClosed(javax.swing.event.InternalFrameEvent arg0) {
-        raiseEvent("internalFrameClosed", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("internalFrameClosed", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void internalFrameClosing(javax.swing.event.InternalFrameEvent arg0) {
-        raiseEvent("internalFrameClosing", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("internalFrameClosing", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void internalFrameDeactivated(javax.swing.event.InternalFrameEvent arg0) {
-        raiseEvent("internalFrameDeactivated", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("internalFrameDeactivated", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void internalFrameDeiconified(javax.swing.event.InternalFrameEvent arg0) {
-        raiseEvent("internalFrameDeiconified", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("internalFrameDeiconified", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void internalFrameIconified(javax.swing.event.InternalFrameEvent arg0) {
-        raiseEvent("internalFrameIconified", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("internalFrameIconified", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void internalFrameOpened(javax.swing.event.InternalFrameEvent arg0) {
-        raiseEvent("internalFrameOpened", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("internalFrameOpened", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

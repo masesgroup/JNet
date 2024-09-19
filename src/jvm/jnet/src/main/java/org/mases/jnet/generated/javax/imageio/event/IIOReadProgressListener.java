@@ -26,6 +26,7 @@ public final class IIOReadProgressListener implements org.mases.jcobridge.IJCLis
     final org.mases.jcobridge.JCListener _internalListener;
 
     public IIOReadProgressListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,39 +72,48 @@ public final class IIOReadProgressListener implements org.mases.jcobridge.IJCLis
 
     //@Override
     public void imageComplete(javax.imageio.ImageReader arg0) {
-        raiseEvent("imageComplete", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("imageComplete", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void imageProgress(javax.imageio.ImageReader arg0, float arg1) {
-        raiseEvent("imageProgress", arg0, arg1);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("imageProgress", eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void imageStarted(javax.imageio.ImageReader arg0, int arg1) {
-        raiseEvent("imageStarted", arg0, arg1);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("imageStarted", eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void readAborted(javax.imageio.ImageReader arg0) {
-        raiseEvent("readAborted", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("readAborted", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void sequenceComplete(javax.imageio.ImageReader arg0) {
-        raiseEvent("sequenceComplete", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("sequenceComplete", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void sequenceStarted(javax.imageio.ImageReader arg0, int arg1) {
-        raiseEvent("sequenceStarted", arg0, arg1);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("sequenceStarted", eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void thumbnailComplete(javax.imageio.ImageReader arg0) {
-        raiseEvent("thumbnailComplete", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("thumbnailComplete", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void thumbnailProgress(javax.imageio.ImageReader arg0, float arg1) {
-        raiseEvent("thumbnailProgress", arg0, arg1);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("thumbnailProgress", eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void thumbnailStarted(javax.imageio.ImageReader arg0, int arg1, int arg2) {
-        raiseEvent("thumbnailStarted", arg0, arg1, arg2);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("thumbnailStarted", eventDataExchange, arg0, arg1, arg2); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

@@ -145,8 +145,8 @@ namespace Javax.Sql
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("connectionClosed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>>>(ConnectionClosedEventHandler));
-            AddEventHandler("connectionErrorOccurred", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>>>(ConnectionErrorOccurredEventHandler));
+            AddEventHandler("connectionClosed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ConnectionClosedEventHandler));
+            AddEventHandler("connectionErrorOccurred", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ConnectionErrorOccurredEventHandler));
 
         }
 
@@ -156,10 +156,13 @@ namespace Javax.Sql
         /// <remarks>If <see cref="OnConnectionClosed"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Sql.ConnectionEvent> OnConnectionClosed { get; set; } = null;
 
-        void ConnectionClosedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>> data)
+        bool hasOverrideConnectionClosed = true;
+        void ConnectionClosedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideConnectionClosed = true;
             var methodToExecute = (OnConnectionClosed != null) ? OnConnectionClosed : ConnectionClosed;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Sql.ConnectionEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideConnectionClosed;
         }
 
         /// <summary>
@@ -168,7 +171,7 @@ namespace Javax.Sql
         /// <param name="arg0"><see cref="Javax.Sql.ConnectionEvent"/></param>
         public virtual void ConnectionClosed(Javax.Sql.ConnectionEvent arg0)
         {
-            
+            hasOverrideConnectionClosed = false;
         }
 
         /// <summary>
@@ -177,10 +180,13 @@ namespace Javax.Sql
         /// <remarks>If <see cref="OnConnectionErrorOccurred"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Sql.ConnectionEvent> OnConnectionErrorOccurred { get; set; } = null;
 
-        void ConnectionErrorOccurredEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>> data)
+        bool hasOverrideConnectionErrorOccurred = true;
+        void ConnectionErrorOccurredEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideConnectionErrorOccurred = true;
             var methodToExecute = (OnConnectionErrorOccurred != null) ? OnConnectionErrorOccurred : ConnectionErrorOccurred;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Sql.ConnectionEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideConnectionErrorOccurred;
         }
 
         /// <summary>
@@ -189,7 +195,7 @@ namespace Javax.Sql
         /// <param name="arg0"><see cref="Javax.Sql.ConnectionEvent"/></param>
         public virtual void ConnectionErrorOccurred(Javax.Sql.ConnectionEvent arg0)
         {
-            
+            hasOverrideConnectionErrorOccurred = false;
         }
 
         #endregion

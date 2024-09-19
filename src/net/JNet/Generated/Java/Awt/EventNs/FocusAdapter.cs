@@ -117,8 +117,8 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("focusGained", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.FocusEvent>>>(FocusGainedEventHandler));
-            AddEventHandler("focusLost", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.FocusEvent>>>(FocusLostEventHandler));
+            AddEventHandler("focusGained", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(FocusGainedEventHandler));
+            AddEventHandler("focusLost", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(FocusLostEventHandler));
 
         }
 
@@ -128,10 +128,13 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnFocusGained"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.FocusEvent> OnFocusGained { get; set; } = null;
 
-        void FocusGainedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.FocusEvent>> data)
+        bool hasOverrideFocusGained = true;
+        void FocusGainedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideFocusGained = true;
             var methodToExecute = (OnFocusGained != null) ? OnFocusGained : FocusGained;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.FocusEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideFocusGained;
         }
 
         /// <summary>
@@ -140,7 +143,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
         public virtual void FocusGained(Java.Awt.EventNs.FocusEvent arg0)
         {
-            
+            hasOverrideFocusGained = false;
         }
 
         /// <summary>
@@ -149,10 +152,13 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnFocusLost"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.FocusEvent> OnFocusLost { get; set; } = null;
 
-        void FocusLostEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.FocusEvent>> data)
+        bool hasOverrideFocusLost = true;
+        void FocusLostEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideFocusLost = true;
             var methodToExecute = (OnFocusLost != null) ? OnFocusLost : FocusLost;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.FocusEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideFocusLost;
         }
 
         /// <summary>
@@ -161,7 +167,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
         public virtual void FocusLost(Java.Awt.EventNs.FocusEvent arg0)
         {
-            
+            hasOverrideFocusLost = false;
         }
 
         #endregion

@@ -141,7 +141,7 @@ namespace Javax.Imageio.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("warningOccurred", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(WarningOccurredEventHandler));
+            AddEventHandler("warningOccurred", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(WarningOccurredEventHandler));
 
         }
 
@@ -151,10 +151,13 @@ namespace Javax.Imageio.Event
         /// <remarks>If <see cref="OnWarningOccurred"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Imageio.ImageReader, Java.Lang.String> OnWarningOccurred { get; set; } = null;
 
-        void WarningOccurredEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
+        bool hasOverrideWarningOccurred = true;
+        void WarningOccurredEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideWarningOccurred = true;
             var methodToExecute = (OnWarningOccurred != null) ? OnWarningOccurred : WarningOccurred;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Lang.String>(0));
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Imageio.ImageReader>(0), data.EventData.GetAt<Java.Lang.String>(1));
+            data.EventData.TypedEventData.HasOverride = hasOverrideWarningOccurred;
         }
 
         /// <summary>
@@ -164,7 +167,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public virtual void WarningOccurred(Javax.Imageio.ImageReader arg0, Java.Lang.String arg1)
         {
-            
+            hasOverrideWarningOccurred = false;
         }
 
         #endregion

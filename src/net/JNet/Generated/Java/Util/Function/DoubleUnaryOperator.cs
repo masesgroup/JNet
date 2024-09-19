@@ -162,9 +162,9 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("applyAsDouble", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<double>>>(ApplyAsDoubleEventHandler));
-            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.DoubleUnaryOperator>>>(AndThenEventHandler));
-            AddEventHandler("compose", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.DoubleUnaryOperator>>>(ComposeEventHandler));
+            AddEventHandler("applyAsDouble", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ApplyAsDoubleEventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AndThenEventHandler));
+            AddEventHandler("compose", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ComposeEventHandler));
 
         }
 
@@ -174,11 +174,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnApplyAsDouble"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<double, double> OnApplyAsDouble { get; set; } = null;
 
-        void ApplyAsDoubleEventHandler(object sender, CLRListenerEventArgs<CLREventData<double>> data)
+        bool hasOverrideApplyAsDouble = true;
+        void ApplyAsDoubleEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideApplyAsDouble = true;
             var methodToExecute = (OnApplyAsDouble != null) ? OnApplyAsDouble : ApplyAsDouble;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<double>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideApplyAsDouble, executionResult);
         }
 
         /// <summary>
@@ -188,7 +190,7 @@ namespace Java.Util.Function
         /// <returns><see cref="double"/></returns>
         public virtual double ApplyAsDouble(double arg0)
         {
-            return default;
+            hasOverrideApplyAsDouble = false; return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#andThen(java.util.function.DoubleUnaryOperator)"/>
@@ -207,11 +209,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.DoubleUnaryOperator, Java.Util.Function.DoubleUnaryOperator> OnAndThen { get; set; } = null;
 
-        void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.DoubleUnaryOperator>> data)
+        bool hasOverrideAndThen = true;
+        void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideAndThen = true;
             var methodToExecute = (OnAndThen != null) ? OnAndThen : AndThen;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.DoubleUnaryOperator>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideAndThen, executionResult);
         }
 
         /// <summary>
@@ -222,7 +226,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThenDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.DoubleUnaryOperator AndThen(Java.Util.Function.DoubleUnaryOperator arg0)
         {
-            return AndThenDefault(arg0);
+            hasOverrideAndThen = false; return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#compose(java.util.function.DoubleUnaryOperator)"/>
@@ -241,11 +245,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnCompose"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.DoubleUnaryOperator, Java.Util.Function.DoubleUnaryOperator> OnCompose { get; set; } = null;
 
-        void ComposeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.DoubleUnaryOperator>> data)
+        bool hasOverrideCompose = true;
+        void ComposeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideCompose = true;
             var methodToExecute = (OnCompose != null) ? OnCompose : Compose;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.DoubleUnaryOperator>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideCompose, executionResult);
         }
 
         /// <summary>
@@ -256,7 +262,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="ComposeDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.DoubleUnaryOperator Compose(Java.Util.Function.DoubleUnaryOperator arg0)
         {
-            return ComposeDefault(arg0);
+            hasOverrideCompose = false; return default;
         }
 
         #endregion

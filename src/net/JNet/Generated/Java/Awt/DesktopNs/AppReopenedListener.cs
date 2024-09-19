@@ -140,7 +140,7 @@ namespace Java.Awt.DesktopNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("appReopened", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppReopenedEvent>>>(AppReopenedEventHandler));
+            AddEventHandler("appReopened", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AppReopenedEventHandler));
 
         }
 
@@ -150,10 +150,13 @@ namespace Java.Awt.DesktopNs
         /// <remarks>If <see cref="OnAppReopened"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.DesktopNs.AppReopenedEvent> OnAppReopened { get; set; } = null;
 
-        void AppReopenedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppReopenedEvent>> data)
+        bool hasOverrideAppReopened = true;
+        void AppReopenedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideAppReopened = true;
             var methodToExecute = (OnAppReopened != null) ? OnAppReopened : AppReopened;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.DesktopNs.AppReopenedEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideAppReopened;
         }
 
         /// <summary>
@@ -162,7 +165,7 @@ namespace Java.Awt.DesktopNs
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppReopenedEvent"/></param>
         public virtual void AppReopened(Java.Awt.DesktopNs.AppReopenedEvent arg0)
         {
-            
+            hasOverrideAppReopened = false;
         }
 
         #endregion

@@ -26,6 +26,7 @@ public final class FocusAdapter extends java.awt.event.FocusAdapter implements o
     final org.mases.jcobridge.JCListener _internalListener;
 
     public FocusAdapter(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,11 +72,13 @@ public final class FocusAdapter extends java.awt.event.FocusAdapter implements o
 
     //@Override
     public void focusGained(java.awt.event.FocusEvent arg0) {
-        raiseEvent("focusGained", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("focusGained", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.focusGained(arg0);
     }
     //@Override
     public void focusLost(java.awt.event.FocusEvent arg0) {
-        raiseEvent("focusLost", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("focusLost", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.focusLost(arg0);
     }
 
 }

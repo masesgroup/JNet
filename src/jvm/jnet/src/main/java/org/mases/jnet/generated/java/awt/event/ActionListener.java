@@ -26,6 +26,7 @@ public final class ActionListener implements org.mases.jcobridge.IJCListener, ja
     final org.mases.jcobridge.JCListener _internalListener;
 
     public ActionListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,7 +72,8 @@ public final class ActionListener implements org.mases.jcobridge.IJCListener, ja
 
     //@Override
     public void actionPerformed(java.awt.event.ActionEvent arg0) {
-        raiseEvent("actionPerformed", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("actionPerformed", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

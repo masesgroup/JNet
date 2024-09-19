@@ -26,6 +26,7 @@ public final class Consumer implements org.mases.jcobridge.IJCListener, java.uti
     final org.mases.jcobridge.JCListener _internalListener;
 
     public Consumer(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,11 +72,13 @@ public final class Consumer implements org.mases.jcobridge.IJCListener, java.uti
 
     //@Override
     public void accept(java.lang.Object arg0) {
-        raiseEvent("accept", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("accept", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public java.util.function.Consumer andThen(java.util.function.Consumer arg0) {
-        raiseEvent("andThen", arg0); Object retVal = getReturnData(); return (java.util.function.Consumer)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("andThen", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.Consumer.super.andThen(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.Consumer)retVal;
     }
     //@Override
     public java.util.function.Consumer andThenDefault(java.util.function.Consumer arg0) {

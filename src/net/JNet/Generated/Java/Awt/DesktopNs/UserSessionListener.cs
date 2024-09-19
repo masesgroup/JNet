@@ -145,8 +145,8 @@ namespace Java.Awt.DesktopNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("userSessionActivated", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.UserSessionEvent>>>(UserSessionActivatedEventHandler));
-            AddEventHandler("userSessionDeactivated", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.UserSessionEvent>>>(UserSessionDeactivatedEventHandler));
+            AddEventHandler("userSessionActivated", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(UserSessionActivatedEventHandler));
+            AddEventHandler("userSessionDeactivated", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(UserSessionDeactivatedEventHandler));
 
         }
 
@@ -156,10 +156,13 @@ namespace Java.Awt.DesktopNs
         /// <remarks>If <see cref="OnUserSessionActivated"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.DesktopNs.UserSessionEvent> OnUserSessionActivated { get; set; } = null;
 
-        void UserSessionActivatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.UserSessionEvent>> data)
+        bool hasOverrideUserSessionActivated = true;
+        void UserSessionActivatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideUserSessionActivated = true;
             var methodToExecute = (OnUserSessionActivated != null) ? OnUserSessionActivated : UserSessionActivated;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.DesktopNs.UserSessionEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideUserSessionActivated;
         }
 
         /// <summary>
@@ -168,7 +171,7 @@ namespace Java.Awt.DesktopNs
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.UserSessionEvent"/></param>
         public virtual void UserSessionActivated(Java.Awt.DesktopNs.UserSessionEvent arg0)
         {
-            
+            hasOverrideUserSessionActivated = false;
         }
 
         /// <summary>
@@ -177,10 +180,13 @@ namespace Java.Awt.DesktopNs
         /// <remarks>If <see cref="OnUserSessionDeactivated"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.DesktopNs.UserSessionEvent> OnUserSessionDeactivated { get; set; } = null;
 
-        void UserSessionDeactivatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.UserSessionEvent>> data)
+        bool hasOverrideUserSessionDeactivated = true;
+        void UserSessionDeactivatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideUserSessionDeactivated = true;
             var methodToExecute = (OnUserSessionDeactivated != null) ? OnUserSessionDeactivated : UserSessionDeactivated;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.DesktopNs.UserSessionEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideUserSessionDeactivated;
         }
 
         /// <summary>
@@ -189,7 +195,7 @@ namespace Java.Awt.DesktopNs
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.UserSessionEvent"/></param>
         public virtual void UserSessionDeactivated(Java.Awt.DesktopNs.UserSessionEvent arg0)
         {
-            
+            hasOverrideUserSessionDeactivated = false;
         }
 
         #endregion

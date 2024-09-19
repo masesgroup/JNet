@@ -26,6 +26,7 @@ public final class IntBinaryOperator implements org.mases.jcobridge.IJCListener,
     final org.mases.jcobridge.JCListener _internalListener;
 
     public IntBinaryOperator(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,7 +72,8 @@ public final class IntBinaryOperator implements org.mases.jcobridge.IJCListener,
 
     //@Override
     public int applyAsInt(int arg0, int arg1) {
-        raiseEvent("applyAsInt", arg0, arg1); Object retVal = getReturnData(); return (int)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("applyAsInt", eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM"); Object retVal = eventDataExchange.getReturnData(); return (int)retVal;
     }
 
 }

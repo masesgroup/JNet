@@ -185,7 +185,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("get", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetEventHandler));
+            AddEventHandler("get", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(GetEventHandler));
 
         }
 
@@ -195,11 +195,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnGet"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<object> OnGet { get; set; } = null;
 
-        void GetEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        bool hasOverrideGet = true;
+        void GetEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideGet = true;
             var methodToExecute = (OnGet != null) ? OnGet : Get;
             var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
+            data.EventData.TypedEventData.SetReturnData(hasOverrideGet, executionResult);
         }
 
         /// <summary>
@@ -208,7 +210,7 @@ namespace Java.Util.Function
         /// <returns><see cref="object"/></returns>
         public virtual object Get()
         {
-            return default;
+            hasOverrideGet = false; return default;
         }
 
         #endregion
@@ -308,7 +310,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("get", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetEventHandler));
+            AddEventHandler("get", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(GetEventHandler));
 
         }
 
@@ -318,11 +320,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnGet"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<T> OnGet { get; set; } = null;
 
-        void GetEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        bool hasOverrideGet = true;
+        void GetEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideGet = true;
             var methodToExecute = (OnGet != null) ? OnGet : Get;
             var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
+            data.EventData.TypedEventData.SetReturnData(hasOverrideGet, executionResult);
         }
 
         /// <summary>
@@ -331,7 +335,7 @@ namespace Java.Util.Function
         /// <returns><typeparamref name="T"/></returns>
         public virtual T Get()
         {
-            return default;
+            hasOverrideGet = false; return default;
         }
 
         #endregion

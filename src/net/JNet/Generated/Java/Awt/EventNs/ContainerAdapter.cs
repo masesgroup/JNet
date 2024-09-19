@@ -117,8 +117,8 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("componentAdded", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ContainerEvent>>>(ComponentAddedEventHandler));
-            AddEventHandler("componentRemoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ContainerEvent>>>(ComponentRemovedEventHandler));
+            AddEventHandler("componentAdded", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ComponentAddedEventHandler));
+            AddEventHandler("componentRemoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ComponentRemovedEventHandler));
 
         }
 
@@ -128,10 +128,13 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnComponentAdded"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.ContainerEvent> OnComponentAdded { get; set; } = null;
 
-        void ComponentAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ContainerEvent>> data)
+        bool hasOverrideComponentAdded = true;
+        void ComponentAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideComponentAdded = true;
             var methodToExecute = (OnComponentAdded != null) ? OnComponentAdded : ComponentAdded;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.ContainerEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideComponentAdded;
         }
 
         /// <summary>
@@ -140,7 +143,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ContainerEvent"/></param>
         public virtual void ComponentAdded(Java.Awt.EventNs.ContainerEvent arg0)
         {
-            
+            hasOverrideComponentAdded = false;
         }
 
         /// <summary>
@@ -149,10 +152,13 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnComponentRemoved"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.ContainerEvent> OnComponentRemoved { get; set; } = null;
 
-        void ComponentRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ContainerEvent>> data)
+        bool hasOverrideComponentRemoved = true;
+        void ComponentRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideComponentRemoved = true;
             var methodToExecute = (OnComponentRemoved != null) ? OnComponentRemoved : ComponentRemoved;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.ContainerEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideComponentRemoved;
         }
 
         /// <summary>
@@ -161,7 +167,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ContainerEvent"/></param>
         public virtual void ComponentRemoved(Java.Awt.EventNs.ContainerEvent arg0)
         {
-            
+            hasOverrideComponentRemoved = false;
         }
 
         #endregion

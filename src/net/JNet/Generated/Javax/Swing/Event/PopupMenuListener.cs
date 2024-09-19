@@ -150,9 +150,9 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("popupMenuCanceled", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>>>(PopupMenuCanceledEventHandler));
-            AddEventHandler("popupMenuWillBecomeInvisible", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>>>(PopupMenuWillBecomeInvisibleEventHandler));
-            AddEventHandler("popupMenuWillBecomeVisible", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>>>(PopupMenuWillBecomeVisibleEventHandler));
+            AddEventHandler("popupMenuCanceled", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(PopupMenuCanceledEventHandler));
+            AddEventHandler("popupMenuWillBecomeInvisible", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(PopupMenuWillBecomeInvisibleEventHandler));
+            AddEventHandler("popupMenuWillBecomeVisible", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(PopupMenuWillBecomeVisibleEventHandler));
 
         }
 
@@ -162,10 +162,13 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnPopupMenuCanceled"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.PopupMenuEvent> OnPopupMenuCanceled { get; set; } = null;
 
-        void PopupMenuCanceledEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>> data)
+        bool hasOverridePopupMenuCanceled = true;
+        void PopupMenuCanceledEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverridePopupMenuCanceled = true;
             var methodToExecute = (OnPopupMenuCanceled != null) ? OnPopupMenuCanceled : PopupMenuCanceled;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.PopupMenuEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverridePopupMenuCanceled;
         }
 
         /// <summary>
@@ -174,7 +177,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.PopupMenuEvent"/></param>
         public virtual void PopupMenuCanceled(Javax.Swing.Event.PopupMenuEvent arg0)
         {
-            
+            hasOverridePopupMenuCanceled = false;
         }
 
         /// <summary>
@@ -183,10 +186,13 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnPopupMenuWillBecomeInvisible"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.PopupMenuEvent> OnPopupMenuWillBecomeInvisible { get; set; } = null;
 
-        void PopupMenuWillBecomeInvisibleEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>> data)
+        bool hasOverridePopupMenuWillBecomeInvisible = true;
+        void PopupMenuWillBecomeInvisibleEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverridePopupMenuWillBecomeInvisible = true;
             var methodToExecute = (OnPopupMenuWillBecomeInvisible != null) ? OnPopupMenuWillBecomeInvisible : PopupMenuWillBecomeInvisible;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.PopupMenuEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverridePopupMenuWillBecomeInvisible;
         }
 
         /// <summary>
@@ -195,7 +201,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.PopupMenuEvent"/></param>
         public virtual void PopupMenuWillBecomeInvisible(Javax.Swing.Event.PopupMenuEvent arg0)
         {
-            
+            hasOverridePopupMenuWillBecomeInvisible = false;
         }
 
         /// <summary>
@@ -204,10 +210,13 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnPopupMenuWillBecomeVisible"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.PopupMenuEvent> OnPopupMenuWillBecomeVisible { get; set; } = null;
 
-        void PopupMenuWillBecomeVisibleEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>> data)
+        bool hasOverridePopupMenuWillBecomeVisible = true;
+        void PopupMenuWillBecomeVisibleEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverridePopupMenuWillBecomeVisible = true;
             var methodToExecute = (OnPopupMenuWillBecomeVisible != null) ? OnPopupMenuWillBecomeVisible : PopupMenuWillBecomeVisible;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.PopupMenuEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverridePopupMenuWillBecomeVisible;
         }
 
         /// <summary>
@@ -216,7 +225,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.PopupMenuEvent"/></param>
         public virtual void PopupMenuWillBecomeVisible(Javax.Swing.Event.PopupMenuEvent arg0)
         {
-            
+            hasOverridePopupMenuWillBecomeVisible = false;
         }
 
         #endregion

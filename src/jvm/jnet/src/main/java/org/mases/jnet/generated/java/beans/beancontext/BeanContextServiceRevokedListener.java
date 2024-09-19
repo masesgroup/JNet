@@ -26,6 +26,7 @@ public final class BeanContextServiceRevokedListener implements org.mases.jcobri
     final org.mases.jcobridge.JCListener _internalListener;
 
     public BeanContextServiceRevokedListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,7 +72,8 @@ public final class BeanContextServiceRevokedListener implements org.mases.jcobri
 
     //@Override
     public void serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent arg0) {
-        raiseEvent("serviceRevoked", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("serviceRevoked", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

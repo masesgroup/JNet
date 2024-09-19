@@ -145,8 +145,8 @@ namespace Java.Awt.DesktopNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("screenAboutToSleep", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.ScreenSleepEvent>>>(ScreenAboutToSleepEventHandler));
-            AddEventHandler("screenAwoke", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.ScreenSleepEvent>>>(ScreenAwokeEventHandler));
+            AddEventHandler("screenAboutToSleep", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ScreenAboutToSleepEventHandler));
+            AddEventHandler("screenAwoke", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ScreenAwokeEventHandler));
 
         }
 
@@ -156,10 +156,13 @@ namespace Java.Awt.DesktopNs
         /// <remarks>If <see cref="OnScreenAboutToSleep"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.DesktopNs.ScreenSleepEvent> OnScreenAboutToSleep { get; set; } = null;
 
-        void ScreenAboutToSleepEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.ScreenSleepEvent>> data)
+        bool hasOverrideScreenAboutToSleep = true;
+        void ScreenAboutToSleepEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideScreenAboutToSleep = true;
             var methodToExecute = (OnScreenAboutToSleep != null) ? OnScreenAboutToSleep : ScreenAboutToSleep;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.DesktopNs.ScreenSleepEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideScreenAboutToSleep;
         }
 
         /// <summary>
@@ -168,7 +171,7 @@ namespace Java.Awt.DesktopNs
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.ScreenSleepEvent"/></param>
         public virtual void ScreenAboutToSleep(Java.Awt.DesktopNs.ScreenSleepEvent arg0)
         {
-            
+            hasOverrideScreenAboutToSleep = false;
         }
 
         /// <summary>
@@ -177,10 +180,13 @@ namespace Java.Awt.DesktopNs
         /// <remarks>If <see cref="OnScreenAwoke"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.DesktopNs.ScreenSleepEvent> OnScreenAwoke { get; set; } = null;
 
-        void ScreenAwokeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.ScreenSleepEvent>> data)
+        bool hasOverrideScreenAwoke = true;
+        void ScreenAwokeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideScreenAwoke = true;
             var methodToExecute = (OnScreenAwoke != null) ? OnScreenAwoke : ScreenAwoke;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.DesktopNs.ScreenSleepEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideScreenAwoke;
         }
 
         /// <summary>
@@ -189,7 +195,7 @@ namespace Java.Awt.DesktopNs
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.ScreenSleepEvent"/></param>
         public virtual void ScreenAwoke(Java.Awt.DesktopNs.ScreenSleepEvent arg0)
         {
-            
+            hasOverrideScreenAwoke = false;
         }
 
         #endregion

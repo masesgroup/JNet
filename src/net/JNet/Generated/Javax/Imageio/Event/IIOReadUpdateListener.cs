@@ -201,12 +201,12 @@ namespace Javax.Imageio.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("imageUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ImageUpdateEventHandler));
-            AddEventHandler("passComplete", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(PassCompleteEventHandler));
-            AddEventHandler("passStarted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(PassStartedEventHandler));
-            AddEventHandler("thumbnailPassComplete", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ThumbnailPassCompleteEventHandler));
-            AddEventHandler("thumbnailPassStarted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ThumbnailPassStartedEventHandler));
-            AddEventHandler("thumbnailUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ThumbnailUpdateEventHandler));
+            AddEventHandler("imageUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ImageUpdateEventHandler));
+            AddEventHandler("passComplete", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(PassCompleteEventHandler));
+            AddEventHandler("passStarted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(PassStartedEventHandler));
+            AddEventHandler("thumbnailPassComplete", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ThumbnailPassCompleteEventHandler));
+            AddEventHandler("thumbnailPassStarted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ThumbnailPassStartedEventHandler));
+            AddEventHandler("thumbnailUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ThumbnailUpdateEventHandler));
 
         }
 
@@ -216,10 +216,13 @@ namespace Javax.Imageio.Event
         /// <remarks>If <see cref="OnImageUpdate"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Imageio.ImageReader, Java.Awt.ImageNs.BufferedImage, int, int, int, int, int, int, int[]> OnImageUpdate { get; set; } = null;
 
-        void ImageUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
+        bool hasOverrideImageUpdate = true;
+        void ImageUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideImageUpdate = true;
             var methodToExecute = (OnImageUpdate != null) ? OnImageUpdate : ImageUpdate;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Awt.ImageNs.BufferedImage>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<int>(3), data.EventData.GetAt<int>(4), data.EventData.GetAt<int>(5), data.EventData.GetAt<int>(6), data.EventData.GetAt<int[]>(7));
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Imageio.ImageReader>(0), data.EventData.GetAt<Java.Awt.ImageNs.BufferedImage>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<int>(3), data.EventData.GetAt<int>(4), data.EventData.GetAt<int>(5), data.EventData.GetAt<int>(6), data.EventData.GetAt<int>(7), data.EventData.GetAt<int[]>(8));
+            data.EventData.TypedEventData.HasOverride = hasOverrideImageUpdate;
         }
 
         /// <summary>
@@ -236,7 +239,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg8"><see cref="int"/></param>
         public virtual void ImageUpdate(Javax.Imageio.ImageReader arg0, Java.Awt.ImageNs.BufferedImage arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int[] arg8)
         {
-            
+            hasOverrideImageUpdate = false;
         }
 
         /// <summary>
@@ -245,10 +248,13 @@ namespace Javax.Imageio.Event
         /// <remarks>If <see cref="OnPassComplete"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Imageio.ImageReader, Java.Awt.ImageNs.BufferedImage> OnPassComplete { get; set; } = null;
 
-        void PassCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
+        bool hasOverridePassComplete = true;
+        void PassCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverridePassComplete = true;
             var methodToExecute = (OnPassComplete != null) ? OnPassComplete : PassComplete;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Awt.ImageNs.BufferedImage>(0));
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Imageio.ImageReader>(0), data.EventData.GetAt<Java.Awt.ImageNs.BufferedImage>(1));
+            data.EventData.TypedEventData.HasOverride = hasOverridePassComplete;
         }
 
         /// <summary>
@@ -258,7 +264,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg1"><see cref="Java.Awt.ImageNs.BufferedImage"/></param>
         public virtual void PassComplete(Javax.Imageio.ImageReader arg0, Java.Awt.ImageNs.BufferedImage arg1)
         {
-            
+            hasOverridePassComplete = false;
         }
 
         /// <summary>
@@ -267,10 +273,13 @@ namespace Javax.Imageio.Event
         /// <remarks>If <see cref="OnPassStarted"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Imageio.ImageReader, Java.Awt.ImageNs.BufferedImage, int, int, int, int, int, int, int, int[]> OnPassStarted { get; set; } = null;
 
-        void PassStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
+        bool hasOverridePassStarted = true;
+        void PassStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverridePassStarted = true;
             var methodToExecute = (OnPassStarted != null) ? OnPassStarted : PassStarted;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Awt.ImageNs.BufferedImage>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<int>(3), data.EventData.GetAt<int>(4), data.EventData.GetAt<int>(5), data.EventData.GetAt<int>(6), data.EventData.GetAt<int>(7), data.EventData.GetAt<int[]>(8));
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Imageio.ImageReader>(0), data.EventData.GetAt<Java.Awt.ImageNs.BufferedImage>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<int>(3), data.EventData.GetAt<int>(4), data.EventData.GetAt<int>(5), data.EventData.GetAt<int>(6), data.EventData.GetAt<int>(7), data.EventData.GetAt<int>(8), data.EventData.GetAt<int[]>(9));
+            data.EventData.TypedEventData.HasOverride = hasOverridePassStarted;
         }
 
         /// <summary>
@@ -288,7 +297,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg9"><see cref="int"/></param>
         public virtual void PassStarted(Javax.Imageio.ImageReader arg0, Java.Awt.ImageNs.BufferedImage arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int[] arg9)
         {
-            
+            hasOverridePassStarted = false;
         }
 
         /// <summary>
@@ -297,10 +306,13 @@ namespace Javax.Imageio.Event
         /// <remarks>If <see cref="OnThumbnailPassComplete"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Imageio.ImageReader, Java.Awt.ImageNs.BufferedImage> OnThumbnailPassComplete { get; set; } = null;
 
-        void ThumbnailPassCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
+        bool hasOverrideThumbnailPassComplete = true;
+        void ThumbnailPassCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideThumbnailPassComplete = true;
             var methodToExecute = (OnThumbnailPassComplete != null) ? OnThumbnailPassComplete : ThumbnailPassComplete;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Awt.ImageNs.BufferedImage>(0));
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Imageio.ImageReader>(0), data.EventData.GetAt<Java.Awt.ImageNs.BufferedImage>(1));
+            data.EventData.TypedEventData.HasOverride = hasOverrideThumbnailPassComplete;
         }
 
         /// <summary>
@@ -310,7 +322,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg1"><see cref="Java.Awt.ImageNs.BufferedImage"/></param>
         public virtual void ThumbnailPassComplete(Javax.Imageio.ImageReader arg0, Java.Awt.ImageNs.BufferedImage arg1)
         {
-            
+            hasOverrideThumbnailPassComplete = false;
         }
 
         /// <summary>
@@ -319,10 +331,13 @@ namespace Javax.Imageio.Event
         /// <remarks>If <see cref="OnThumbnailPassStarted"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Imageio.ImageReader, Java.Awt.ImageNs.BufferedImage, int, int, int, int, int, int, int, int[]> OnThumbnailPassStarted { get; set; } = null;
 
-        void ThumbnailPassStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
+        bool hasOverrideThumbnailPassStarted = true;
+        void ThumbnailPassStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideThumbnailPassStarted = true;
             var methodToExecute = (OnThumbnailPassStarted != null) ? OnThumbnailPassStarted : ThumbnailPassStarted;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Awt.ImageNs.BufferedImage>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<int>(3), data.EventData.GetAt<int>(4), data.EventData.GetAt<int>(5), data.EventData.GetAt<int>(6), data.EventData.GetAt<int>(7), data.EventData.GetAt<int[]>(8));
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Imageio.ImageReader>(0), data.EventData.GetAt<Java.Awt.ImageNs.BufferedImage>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<int>(3), data.EventData.GetAt<int>(4), data.EventData.GetAt<int>(5), data.EventData.GetAt<int>(6), data.EventData.GetAt<int>(7), data.EventData.GetAt<int>(8), data.EventData.GetAt<int[]>(9));
+            data.EventData.TypedEventData.HasOverride = hasOverrideThumbnailPassStarted;
         }
 
         /// <summary>
@@ -340,7 +355,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg9"><see cref="int"/></param>
         public virtual void ThumbnailPassStarted(Javax.Imageio.ImageReader arg0, Java.Awt.ImageNs.BufferedImage arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int[] arg9)
         {
-            
+            hasOverrideThumbnailPassStarted = false;
         }
 
         /// <summary>
@@ -349,10 +364,13 @@ namespace Javax.Imageio.Event
         /// <remarks>If <see cref="OnThumbnailUpdate"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Imageio.ImageReader, Java.Awt.ImageNs.BufferedImage, int, int, int, int, int, int, int[]> OnThumbnailUpdate { get; set; } = null;
 
-        void ThumbnailUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
+        bool hasOverrideThumbnailUpdate = true;
+        void ThumbnailUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideThumbnailUpdate = true;
             var methodToExecute = (OnThumbnailUpdate != null) ? OnThumbnailUpdate : ThumbnailUpdate;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Awt.ImageNs.BufferedImage>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<int>(3), data.EventData.GetAt<int>(4), data.EventData.GetAt<int>(5), data.EventData.GetAt<int>(6), data.EventData.GetAt<int[]>(7));
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Imageio.ImageReader>(0), data.EventData.GetAt<Java.Awt.ImageNs.BufferedImage>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<int>(3), data.EventData.GetAt<int>(4), data.EventData.GetAt<int>(5), data.EventData.GetAt<int>(6), data.EventData.GetAt<int>(7), data.EventData.GetAt<int[]>(8));
+            data.EventData.TypedEventData.HasOverride = hasOverrideThumbnailUpdate;
         }
 
         /// <summary>
@@ -369,7 +387,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg8"><see cref="int"/></param>
         public virtual void ThumbnailUpdate(Javax.Imageio.ImageReader arg0, Java.Awt.ImageNs.BufferedImage arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int[] arg8)
         {
-            
+            hasOverrideThumbnailUpdate = false;
         }
 
         #endregion

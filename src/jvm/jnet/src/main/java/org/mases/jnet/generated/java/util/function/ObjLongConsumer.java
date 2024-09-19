@@ -26,6 +26,7 @@ public final class ObjLongConsumer implements org.mases.jcobridge.IJCListener, j
     final org.mases.jcobridge.JCListener _internalListener;
 
     public ObjLongConsumer(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,7 +72,8 @@ public final class ObjLongConsumer implements org.mases.jcobridge.IJCListener, j
 
     //@Override
     public void accept(java.lang.Object arg0, long arg1) {
-        raiseEvent("accept", arg0, arg1);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("accept", eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

@@ -26,6 +26,7 @@ public final class CellEditorListener implements org.mases.jcobridge.IJCListener
     final org.mases.jcobridge.JCListener _internalListener;
 
     public CellEditorListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,11 +72,13 @@ public final class CellEditorListener implements org.mases.jcobridge.IJCListener
 
     //@Override
     public void editingCanceled(javax.swing.event.ChangeEvent arg0) {
-        raiseEvent("editingCanceled", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("editingCanceled", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void editingStopped(javax.swing.event.ChangeEvent arg0) {
-        raiseEvent("editingStopped", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("editingStopped", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

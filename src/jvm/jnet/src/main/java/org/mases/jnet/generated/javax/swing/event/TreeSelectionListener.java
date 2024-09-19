@@ -26,6 +26,7 @@ public final class TreeSelectionListener implements org.mases.jcobridge.IJCListe
     final org.mases.jcobridge.JCListener _internalListener;
 
     public TreeSelectionListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,7 +72,8 @@ public final class TreeSelectionListener implements org.mases.jcobridge.IJCListe
 
     //@Override
     public void valueChanged(javax.swing.event.TreeSelectionEvent arg0) {
-        raiseEvent("valueChanged", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("valueChanged", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

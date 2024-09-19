@@ -117,9 +117,9 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("keyPressed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.KeyEvent>>>(KeyPressedEventHandler));
-            AddEventHandler("keyReleased", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.KeyEvent>>>(KeyReleasedEventHandler));
-            AddEventHandler("keyTyped", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.KeyEvent>>>(KeyTypedEventHandler));
+            AddEventHandler("keyPressed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(KeyPressedEventHandler));
+            AddEventHandler("keyReleased", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(KeyReleasedEventHandler));
+            AddEventHandler("keyTyped", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(KeyTypedEventHandler));
 
         }
 
@@ -129,10 +129,13 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnKeyPressed"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.KeyEvent> OnKeyPressed { get; set; } = null;
 
-        void KeyPressedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.KeyEvent>> data)
+        bool hasOverrideKeyPressed = true;
+        void KeyPressedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideKeyPressed = true;
             var methodToExecute = (OnKeyPressed != null) ? OnKeyPressed : KeyPressed;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.KeyEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideKeyPressed;
         }
 
         /// <summary>
@@ -141,7 +144,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
         public virtual void KeyPressed(Java.Awt.EventNs.KeyEvent arg0)
         {
-            
+            hasOverrideKeyPressed = false;
         }
 
         /// <summary>
@@ -150,10 +153,13 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnKeyReleased"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.KeyEvent> OnKeyReleased { get; set; } = null;
 
-        void KeyReleasedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.KeyEvent>> data)
+        bool hasOverrideKeyReleased = true;
+        void KeyReleasedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideKeyReleased = true;
             var methodToExecute = (OnKeyReleased != null) ? OnKeyReleased : KeyReleased;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.KeyEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideKeyReleased;
         }
 
         /// <summary>
@@ -162,7 +168,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
         public virtual void KeyReleased(Java.Awt.EventNs.KeyEvent arg0)
         {
-            
+            hasOverrideKeyReleased = false;
         }
 
         /// <summary>
@@ -171,10 +177,13 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnKeyTyped"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.KeyEvent> OnKeyTyped { get; set; } = null;
 
-        void KeyTypedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.KeyEvent>> data)
+        bool hasOverrideKeyTyped = true;
+        void KeyTypedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideKeyTyped = true;
             var methodToExecute = (OnKeyTyped != null) ? OnKeyTyped : KeyTyped;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.KeyEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideKeyTyped;
         }
 
         /// <summary>
@@ -183,7 +192,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
         public virtual void KeyTyped(Java.Awt.EventNs.KeyEvent arg0)
         {
-            
+            hasOverrideKeyTyped = false;
         }
 
         #endregion

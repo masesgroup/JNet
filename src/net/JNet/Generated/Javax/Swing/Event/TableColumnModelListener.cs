@@ -160,11 +160,11 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("columnAdded", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableColumnModelEvent>>>(ColumnAddedEventHandler));
-            AddEventHandler("columnMarginChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>>>(ColumnMarginChangedEventHandler));
-            AddEventHandler("columnMoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableColumnModelEvent>>>(ColumnMovedEventHandler));
-            AddEventHandler("columnRemoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableColumnModelEvent>>>(ColumnRemovedEventHandler));
-            AddEventHandler("columnSelectionChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListSelectionEvent>>>(ColumnSelectionChangedEventHandler));
+            AddEventHandler("columnAdded", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ColumnAddedEventHandler));
+            AddEventHandler("columnMarginChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ColumnMarginChangedEventHandler));
+            AddEventHandler("columnMoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ColumnMovedEventHandler));
+            AddEventHandler("columnRemoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ColumnRemovedEventHandler));
+            AddEventHandler("columnSelectionChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ColumnSelectionChangedEventHandler));
 
         }
 
@@ -174,10 +174,13 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnColumnAdded"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.TableColumnModelEvent> OnColumnAdded { get; set; } = null;
 
-        void ColumnAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableColumnModelEvent>> data)
+        bool hasOverrideColumnAdded = true;
+        void ColumnAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideColumnAdded = true;
             var methodToExecute = (OnColumnAdded != null) ? OnColumnAdded : ColumnAdded;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.TableColumnModelEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideColumnAdded;
         }
 
         /// <summary>
@@ -186,7 +189,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.TableColumnModelEvent"/></param>
         public virtual void ColumnAdded(Javax.Swing.Event.TableColumnModelEvent arg0)
         {
-            
+            hasOverrideColumnAdded = false;
         }
 
         /// <summary>
@@ -195,10 +198,13 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnColumnMarginChanged"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.ChangeEvent> OnColumnMarginChanged { get; set; } = null;
 
-        void ColumnMarginChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>> data)
+        bool hasOverrideColumnMarginChanged = true;
+        void ColumnMarginChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideColumnMarginChanged = true;
             var methodToExecute = (OnColumnMarginChanged != null) ? OnColumnMarginChanged : ColumnMarginChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.ChangeEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideColumnMarginChanged;
         }
 
         /// <summary>
@@ -207,7 +213,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
         public virtual void ColumnMarginChanged(Javax.Swing.Event.ChangeEvent arg0)
         {
-            
+            hasOverrideColumnMarginChanged = false;
         }
 
         /// <summary>
@@ -216,10 +222,13 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnColumnMoved"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.TableColumnModelEvent> OnColumnMoved { get; set; } = null;
 
-        void ColumnMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableColumnModelEvent>> data)
+        bool hasOverrideColumnMoved = true;
+        void ColumnMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideColumnMoved = true;
             var methodToExecute = (OnColumnMoved != null) ? OnColumnMoved : ColumnMoved;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.TableColumnModelEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideColumnMoved;
         }
 
         /// <summary>
@@ -228,7 +237,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.TableColumnModelEvent"/></param>
         public virtual void ColumnMoved(Javax.Swing.Event.TableColumnModelEvent arg0)
         {
-            
+            hasOverrideColumnMoved = false;
         }
 
         /// <summary>
@@ -237,10 +246,13 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnColumnRemoved"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.TableColumnModelEvent> OnColumnRemoved { get; set; } = null;
 
-        void ColumnRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableColumnModelEvent>> data)
+        bool hasOverrideColumnRemoved = true;
+        void ColumnRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideColumnRemoved = true;
             var methodToExecute = (OnColumnRemoved != null) ? OnColumnRemoved : ColumnRemoved;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.TableColumnModelEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideColumnRemoved;
         }
 
         /// <summary>
@@ -249,7 +261,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.TableColumnModelEvent"/></param>
         public virtual void ColumnRemoved(Javax.Swing.Event.TableColumnModelEvent arg0)
         {
-            
+            hasOverrideColumnRemoved = false;
         }
 
         /// <summary>
@@ -258,10 +270,13 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnColumnSelectionChanged"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.ListSelectionEvent> OnColumnSelectionChanged { get; set; } = null;
 
-        void ColumnSelectionChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListSelectionEvent>> data)
+        bool hasOverrideColumnSelectionChanged = true;
+        void ColumnSelectionChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideColumnSelectionChanged = true;
             var methodToExecute = (OnColumnSelectionChanged != null) ? OnColumnSelectionChanged : ColumnSelectionChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.ListSelectionEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideColumnSelectionChanged;
         }
 
         /// <summary>
@@ -270,7 +285,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionEvent"/></param>
         public virtual void ColumnSelectionChanged(Javax.Swing.Event.ListSelectionEvent arg0)
         {
-            
+            hasOverrideColumnSelectionChanged = false;
         }
 
         #endregion

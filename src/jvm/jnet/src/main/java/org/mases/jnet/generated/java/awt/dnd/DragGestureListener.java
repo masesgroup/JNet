@@ -26,6 +26,7 @@ public final class DragGestureListener implements org.mases.jcobridge.IJCListene
     final org.mases.jcobridge.JCListener _internalListener;
 
     public DragGestureListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,7 +72,8 @@ public final class DragGestureListener implements org.mases.jcobridge.IJCListene
 
     //@Override
     public void dragGestureRecognized(java.awt.dnd.DragGestureEvent arg0) {
-        raiseEvent("dragGestureRecognized", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("dragGestureRecognized", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

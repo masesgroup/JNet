@@ -140,7 +140,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("getAsInt", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsIntEventHandler));
+            AddEventHandler("getAsInt", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(GetAsIntEventHandler));
 
         }
 
@@ -150,11 +150,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnGetAsInt"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<int> OnGetAsInt { get; set; } = null;
 
-        void GetAsIntEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        bool hasOverrideGetAsInt = true;
+        void GetAsIntEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideGetAsInt = true;
             var methodToExecute = (OnGetAsInt != null) ? OnGetAsInt : GetAsInt;
             var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
+            data.EventData.TypedEventData.SetReturnData(hasOverrideGetAsInt, executionResult);
         }
 
         /// <summary>
@@ -163,7 +165,7 @@ namespace Java.Util.Function
         /// <returns><see cref="int"/></returns>
         public virtual int GetAsInt()
         {
-            return default;
+            hasOverrideGetAsInt = false; return default;
         }
 
         #endregion
