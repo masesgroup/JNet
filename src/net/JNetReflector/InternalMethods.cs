@@ -75,7 +75,11 @@ namespace MASES.JNetReflector
 
         static void WriteFile(string path, string content)
         {
-            if (path.EndsWith(FileNameAndDirectory.AllPackageClassesFileName)) Interlocked.Increment(ref namespaces);
+            if (path.EndsWith(FileNameAndDirectory.AllPackageClassesFileName))
+            {
+                Interlocked.Increment(ref namespaces);
+                return; // do not write anymore AllPackageClasses.cs
+            }
             else Interlocked.Increment(ref classes);
 
             if (!JNetReflectorCore.DryRun)
@@ -336,17 +340,14 @@ namespace MASES.JNetReflector
                                                            .Replace(AllPackageClasses.NAMESPACE, package)
                                                            .Replace(AllPackageClasses.CLASSES, sb.ToString());
 
-                        if (path.EndsWith(FileNameAndDirectory.AllPackageClassesFileName)) Interlocked.Increment(ref namespaces);
-                        //WriteFile(path, itemPackage);
+                        WriteFile(path, itemPackage);
                         _allPackages.Add(path, itemPackage);
                     }
                     else
                     {
-                        var packageContent = File.ReadAllText(path);
-                        var itemPackage = packageContent.Replace(AllPackageClasses.CLASSES, sb.ToString());
+                        var itemPackage = _allPackages[path].Replace(AllPackageClasses.CLASSES, sb.ToString());
 
-                        if (path.EndsWith(FileNameAndDirectory.AllPackageClassesFileName)) Interlocked.Increment(ref namespaces);
-                        //WriteFile(path, itemPackage);
+                        WriteFile(path, itemPackage);
                         _allPackages[path] = itemPackage;
                     }
                 }
@@ -359,8 +360,7 @@ namespace MASES.JNetReflector
                                                    .Replace(AllPackageClasses.NAMESPACE, package)
                                                    .Replace(AllPackageClasses.CLASSES, sb.ToString());
 
-                if (path.EndsWith(FileNameAndDirectory.AllPackageClassesFileName)) Interlocked.Increment(ref namespaces);
-                //WriteFile(path, itemPackage);
+                WriteFile(path, itemPackage);
             }
         }
 
