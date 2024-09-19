@@ -97,6 +97,7 @@
 <p><em>jnr</em> accepts the following command-line switch:</p>
 <ul>
 <li><strong>ConfigurationFile</strong>: The path where is stored a JSON file containing the tool configuration properties; the JSON items shall be written using the same command-line property names</li>
+<li><strong>CopyrightFile</strong>: The path where the tool will locate copyright info</li>
 <li><strong>JavaPLocationPath</strong>: The path where the tool will locate javap, default is to use system available</li>
 <li><strong>OriginRootPath</strong>: The origin path where Jars to be analyzed, and dependencies, are stored</li>
 <li><strong>OriginJavadocUrl</strong>: The base URL of the Javadoc to be associated to the classes</li>
@@ -115,6 +116,7 @@
 <li><strong>NamespacesToAvoid</strong>: A CSV list of namespaces to be removed from analysis</li>
 <li><strong>ClassesToAvoid</strong>: A CSV list of classes to be removed during analysis</li>
 <li><strong>ClassesToAvoidInGenerics</strong>: A CSV list of classes to be removed during analysis from the classes which have generics types</li>
+<li><strong>ClassesWithCallbacks</strong>: A CSV list of of keypair classname-patterns (separated by |) associated to the class defining methods to be implemented as callbacks</li>
 <li><strong>ClassesManuallyDeveloped</strong>: A CSV list of class names will be manually developed</li>
 <li><strong>ClassesToBeListener</strong>: A CSV list of class names to be treated as Listener, the tool consider any class which its name ends with &quot;Listener&quot; or &quot;Adapter&quot; as Listener</li>
 <li><strong>ClassesToRemoveAsListener</strong>: A CSV list of class names to be removed from the list of Listener identified since the tool consider any class which its name ends with &quot;Listener&quot; or &quot;Adapter&quot; as Listener</li>

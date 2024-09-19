@@ -1,5 +1,4 @@
 {
-  "CopyrightFile": "copyright.txt",
   "RelativeDestinationCSharpClassPath": "net\\JNet\\Generated",
   "RelativeDestinationJavaListenerPath": "jvm\\jnet\\src\\main\\java",
   "JavaListenerBasePackage": "org.mases.jnet.generated",

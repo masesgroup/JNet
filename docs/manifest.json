@@ -50044,6 +50044,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Specific.JNetEventResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Specific.JNetEventResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MASES.JNet.Specific.JNetHelper.yml",
       "output": {
         ".html": {
@@ -50678,6 +50688,16 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNetReflector.FileNameAndDirectory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetReflector.JNetReflectorCore-1.ConfigurationType.ClassAndPatterns.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetReflector.JNetReflectorCore-1.ConfigurationType.ClassAndPatterns.html"
         }
       },
       "version": ""
