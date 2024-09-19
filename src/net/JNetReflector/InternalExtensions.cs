@@ -28,6 +28,7 @@ using MASES.JNetReflector.Templates;
 using System.Runtime.CompilerServices;
 using System.Reflection;
 using System.Reflection.Emit;
+using System.Text.RegularExpressions;
 
 namespace MASES.JNetReflector
 {
@@ -138,6 +139,13 @@ namespace MASES.JNetReflector
             if (typeName.EndsWith(SpecialNames.JavaLangListener)) return true;
             if (typeName.EndsWith(SpecialNames.JavaLangAdapter)) return true;
             if (JNetReflectorCore.ClassesToBeListener != null && JNetReflectorCore.ClassesToBeListener.Any((o) => typeName == o)) return true;
+            if (IsJVMClassWithCallbacks(typeName)) return true;
+            return false;
+        }
+
+        static bool IsJVMClassWithCallbacks(this string typeName)
+        {
+            if (JNetReflectorCore.ClassesWithCallbacks != null && JNetReflectorCore.ClassesWithCallbacks.Any((o) => typeName == o.ClassName)) return true;
             return false;
         }
 
@@ -1099,6 +1107,11 @@ namespace MASES.JNetReflector
                 return true;
             }
             return false;
+        }
+
+        public static bool IsJVMClassWithCallbacks(this Class entry)
+        {
+            return entry.TypeName.IsJVMClassWithCallbacks();
         }
 
         public static bool ImplementsJVMListenerClass(this Class entry)
@@ -2324,6 +2337,29 @@ namespace MASES.JNetReflector
                 return true;
             }
             return false;
+        }
+
+        public static bool ToBeCallback(this Method entry, Class classDefinition, bool forListener)
+        {
+            bool match = forListener;
+            if (JNetReflectorCore.ClassesWithCallbacks != null)
+            {
+                foreach (var elem in JNetReflectorCore.ClassesWithCallbacks)
+                {
+                    if (elem.ClassName == classDefinition.TypeName)
+                    {
+                        // now on check only filters
+                        match = false;
+                        foreach (var pattern in elem.Patterns)
+                        {
+                            match |= Regex.IsMatch(entry.Name, pattern);
+                        }
+                        break;
+                    }
+                }
+            }
+
+            return match;
         }
 
         public static void GetGenerics(this Method entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool reportNative, bool usedInGenerics, bool camel, out bool mustBeAvoided)
