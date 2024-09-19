@@ -140,7 +140,7 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("windowStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowStateChangedEventHandler));
+            AddEventHandler("windowStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(WindowStateChangedEventHandler));
 
         }
 
@@ -150,10 +150,13 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnWindowStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.WindowEvent> OnWindowStateChanged { get; set; } = null;
 
-        void WindowStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
+        bool hasOverrideWindowStateChanged = true;
+        void WindowStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideWindowStateChanged = true;
             var methodToExecute = (OnWindowStateChanged != null) ? OnWindowStateChanged : WindowStateChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.WindowEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideWindowStateChanged;
         }
 
         /// <summary>
@@ -162,7 +165,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public virtual void WindowStateChanged(Java.Awt.EventNs.WindowEvent arg0)
         {
-            
+            hasOverrideWindowStateChanged = false;
         }
 
         #endregion

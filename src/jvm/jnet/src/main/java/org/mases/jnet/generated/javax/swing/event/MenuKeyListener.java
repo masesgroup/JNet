@@ -26,6 +26,7 @@ public final class MenuKeyListener implements org.mases.jcobridge.IJCListener, j
     final org.mases.jcobridge.JCListener _internalListener;
 
     public MenuKeyListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,15 +72,18 @@ public final class MenuKeyListener implements org.mases.jcobridge.IJCListener, j
 
     //@Override
     public void menuKeyPressed(javax.swing.event.MenuKeyEvent arg0) {
-        raiseEvent("menuKeyPressed", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("menuKeyPressed", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void menuKeyReleased(javax.swing.event.MenuKeyEvent arg0) {
-        raiseEvent("menuKeyReleased", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("menuKeyReleased", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void menuKeyTyped(javax.swing.event.MenuKeyEvent arg0) {
-        raiseEvent("menuKeyTyped", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("menuKeyTyped", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

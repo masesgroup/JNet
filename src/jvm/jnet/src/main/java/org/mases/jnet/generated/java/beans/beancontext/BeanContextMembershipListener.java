@@ -26,6 +26,7 @@ public final class BeanContextMembershipListener implements org.mases.jcobridge.
     final org.mases.jcobridge.JCListener _internalListener;
 
     public BeanContextMembershipListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,11 +72,13 @@ public final class BeanContextMembershipListener implements org.mases.jcobridge.
 
     //@Override
     public void childrenAdded(java.beans.beancontext.BeanContextMembershipEvent arg0) {
-        raiseEvent("childrenAdded", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("childrenAdded", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void childrenRemoved(java.beans.beancontext.BeanContextMembershipEvent arg0) {
-        raiseEvent("childrenRemoved", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("childrenRemoved", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

@@ -140,7 +140,7 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("hierarchyChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>>>(HierarchyChangedEventHandler));
+            AddEventHandler("hierarchyChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(HierarchyChangedEventHandler));
 
         }
 
@@ -150,10 +150,13 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnHierarchyChanged"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.HierarchyEvent> OnHierarchyChanged { get; set; } = null;
 
-        void HierarchyChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>> data)
+        bool hasOverrideHierarchyChanged = true;
+        void HierarchyChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideHierarchyChanged = true;
             var methodToExecute = (OnHierarchyChanged != null) ? OnHierarchyChanged : HierarchyChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.HierarchyEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideHierarchyChanged;
         }
 
         /// <summary>
@@ -162,7 +165,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyEvent"/></param>
         public virtual void HierarchyChanged(Java.Awt.EventNs.HierarchyEvent arg0)
         {
-            
+            hasOverrideHierarchyChanged = false;
         }
 
         #endregion

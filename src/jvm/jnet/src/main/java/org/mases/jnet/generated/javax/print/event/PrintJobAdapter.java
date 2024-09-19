@@ -26,6 +26,7 @@ public final class PrintJobAdapter extends javax.print.event.PrintJobAdapter imp
     final org.mases.jcobridge.JCListener _internalListener;
 
     public PrintJobAdapter(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,27 +72,33 @@ public final class PrintJobAdapter extends javax.print.event.PrintJobAdapter imp
 
     //@Override
     public void printDataTransferCompleted(javax.print.event.PrintJobEvent arg0) {
-        raiseEvent("printDataTransferCompleted", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("printDataTransferCompleted", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.printDataTransferCompleted(arg0);
     }
     //@Override
     public void printJobCanceled(javax.print.event.PrintJobEvent arg0) {
-        raiseEvent("printJobCanceled", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("printJobCanceled", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.printJobCanceled(arg0);
     }
     //@Override
     public void printJobCompleted(javax.print.event.PrintJobEvent arg0) {
-        raiseEvent("printJobCompleted", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("printJobCompleted", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.printJobCompleted(arg0);
     }
     //@Override
     public void printJobFailed(javax.print.event.PrintJobEvent arg0) {
-        raiseEvent("printJobFailed", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("printJobFailed", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.printJobFailed(arg0);
     }
     //@Override
     public void printJobNoMoreEvents(javax.print.event.PrintJobEvent arg0) {
-        raiseEvent("printJobNoMoreEvents", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("printJobNoMoreEvents", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.printJobNoMoreEvents(arg0);
     }
     //@Override
     public void printJobRequiresAttention(javax.print.event.PrintJobEvent arg0) {
-        raiseEvent("printJobRequiresAttention", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("printJobRequiresAttention", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.printJobRequiresAttention(arg0);
     }
 
 }

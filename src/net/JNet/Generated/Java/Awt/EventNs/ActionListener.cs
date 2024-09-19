@@ -140,7 +140,7 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("actionPerformed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ActionEvent>>>(ActionPerformedEventHandler));
+            AddEventHandler("actionPerformed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ActionPerformedEventHandler));
 
         }
 
@@ -150,10 +150,13 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnActionPerformed"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.ActionEvent> OnActionPerformed { get; set; } = null;
 
-        void ActionPerformedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ActionEvent>> data)
+        bool hasOverrideActionPerformed = true;
+        void ActionPerformedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideActionPerformed = true;
             var methodToExecute = (OnActionPerformed != null) ? OnActionPerformed : ActionPerformed;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.ActionEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideActionPerformed;
         }
 
         /// <summary>
@@ -162,7 +165,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionEvent"/></param>
         public virtual void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
         {
-            
+            hasOverrideActionPerformed = false;
         }
 
         #endregion

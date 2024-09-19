@@ -26,6 +26,7 @@ public final class DoubleUnaryOperator implements org.mases.jcobridge.IJCListene
     final org.mases.jcobridge.JCListener _internalListener;
 
     public DoubleUnaryOperator(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,11 +72,13 @@ public final class DoubleUnaryOperator implements org.mases.jcobridge.IJCListene
 
     //@Override
     public double applyAsDouble(double arg0) {
-        raiseEvent("applyAsDouble", arg0); Object retVal = getReturnData(); return (double)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("applyAsDouble", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM"); Object retVal = eventDataExchange.getReturnData(); return (double)retVal;
     }
     //@Override
     public java.util.function.DoubleUnaryOperator andThen(java.util.function.DoubleUnaryOperator arg0) {
-        raiseEvent("andThen", arg0); Object retVal = getReturnData(); return (java.util.function.DoubleUnaryOperator)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("andThen", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.DoubleUnaryOperator.super.andThen(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.DoubleUnaryOperator)retVal;
     }
     //@Override
     public java.util.function.DoubleUnaryOperator andThenDefault(java.util.function.DoubleUnaryOperator arg0) {
@@ -83,7 +86,8 @@ public final class DoubleUnaryOperator implements org.mases.jcobridge.IJCListene
     }
     //@Override
     public java.util.function.DoubleUnaryOperator compose(java.util.function.DoubleUnaryOperator arg0) {
-        raiseEvent("compose", arg0); Object retVal = getReturnData(); return (java.util.function.DoubleUnaryOperator)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("compose", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.DoubleUnaryOperator.super.compose(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.DoubleUnaryOperator)retVal;
     }
     //@Override
     public java.util.function.DoubleUnaryOperator composeDefault(java.util.function.DoubleUnaryOperator arg0) {

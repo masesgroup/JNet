@@ -117,12 +117,12 @@ namespace Javax.Print.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("printDataTransferCompleted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintDataTransferCompletedEventHandler));
-            AddEventHandler("printJobCanceled", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintJobCanceledEventHandler));
-            AddEventHandler("printJobCompleted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintJobCompletedEventHandler));
-            AddEventHandler("printJobFailed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintJobFailedEventHandler));
-            AddEventHandler("printJobNoMoreEvents", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintJobNoMoreEventsEventHandler));
-            AddEventHandler("printJobRequiresAttention", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintJobRequiresAttentionEventHandler));
+            AddEventHandler("printDataTransferCompleted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(PrintDataTransferCompletedEventHandler));
+            AddEventHandler("printJobCanceled", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(PrintJobCanceledEventHandler));
+            AddEventHandler("printJobCompleted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(PrintJobCompletedEventHandler));
+            AddEventHandler("printJobFailed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(PrintJobFailedEventHandler));
+            AddEventHandler("printJobNoMoreEvents", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(PrintJobNoMoreEventsEventHandler));
+            AddEventHandler("printJobRequiresAttention", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(PrintJobRequiresAttentionEventHandler));
 
         }
 
@@ -132,10 +132,13 @@ namespace Javax.Print.Event
         /// <remarks>If <see cref="OnPrintDataTransferCompleted"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Print.Event.PrintJobEvent> OnPrintDataTransferCompleted { get; set; } = null;
 
-        void PrintDataTransferCompletedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>> data)
+        bool hasOverridePrintDataTransferCompleted = true;
+        void PrintDataTransferCompletedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverridePrintDataTransferCompleted = true;
             var methodToExecute = (OnPrintDataTransferCompleted != null) ? OnPrintDataTransferCompleted : PrintDataTransferCompleted;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Print.Event.PrintJobEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverridePrintDataTransferCompleted;
         }
 
         /// <summary>
@@ -144,7 +147,7 @@ namespace Javax.Print.Event
         /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
         public virtual void PrintDataTransferCompleted(Javax.Print.Event.PrintJobEvent arg0)
         {
-            
+            hasOverridePrintDataTransferCompleted = false;
         }
 
         /// <summary>
@@ -153,10 +156,13 @@ namespace Javax.Print.Event
         /// <remarks>If <see cref="OnPrintJobCanceled"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Print.Event.PrintJobEvent> OnPrintJobCanceled { get; set; } = null;
 
-        void PrintJobCanceledEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>> data)
+        bool hasOverridePrintJobCanceled = true;
+        void PrintJobCanceledEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverridePrintJobCanceled = true;
             var methodToExecute = (OnPrintJobCanceled != null) ? OnPrintJobCanceled : PrintJobCanceled;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Print.Event.PrintJobEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverridePrintJobCanceled;
         }
 
         /// <summary>
@@ -165,7 +171,7 @@ namespace Javax.Print.Event
         /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
         public virtual void PrintJobCanceled(Javax.Print.Event.PrintJobEvent arg0)
         {
-            
+            hasOverridePrintJobCanceled = false;
         }
 
         /// <summary>
@@ -174,10 +180,13 @@ namespace Javax.Print.Event
         /// <remarks>If <see cref="OnPrintJobCompleted"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Print.Event.PrintJobEvent> OnPrintJobCompleted { get; set; } = null;
 
-        void PrintJobCompletedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>> data)
+        bool hasOverridePrintJobCompleted = true;
+        void PrintJobCompletedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverridePrintJobCompleted = true;
             var methodToExecute = (OnPrintJobCompleted != null) ? OnPrintJobCompleted : PrintJobCompleted;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Print.Event.PrintJobEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverridePrintJobCompleted;
         }
 
         /// <summary>
@@ -186,7 +195,7 @@ namespace Javax.Print.Event
         /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
         public virtual void PrintJobCompleted(Javax.Print.Event.PrintJobEvent arg0)
         {
-            
+            hasOverridePrintJobCompleted = false;
         }
 
         /// <summary>
@@ -195,10 +204,13 @@ namespace Javax.Print.Event
         /// <remarks>If <see cref="OnPrintJobFailed"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Print.Event.PrintJobEvent> OnPrintJobFailed { get; set; } = null;
 
-        void PrintJobFailedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>> data)
+        bool hasOverridePrintJobFailed = true;
+        void PrintJobFailedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverridePrintJobFailed = true;
             var methodToExecute = (OnPrintJobFailed != null) ? OnPrintJobFailed : PrintJobFailed;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Print.Event.PrintJobEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverridePrintJobFailed;
         }
 
         /// <summary>
@@ -207,7 +219,7 @@ namespace Javax.Print.Event
         /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
         public virtual void PrintJobFailed(Javax.Print.Event.PrintJobEvent arg0)
         {
-            
+            hasOverridePrintJobFailed = false;
         }
 
         /// <summary>
@@ -216,10 +228,13 @@ namespace Javax.Print.Event
         /// <remarks>If <see cref="OnPrintJobNoMoreEvents"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Print.Event.PrintJobEvent> OnPrintJobNoMoreEvents { get; set; } = null;
 
-        void PrintJobNoMoreEventsEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>> data)
+        bool hasOverridePrintJobNoMoreEvents = true;
+        void PrintJobNoMoreEventsEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverridePrintJobNoMoreEvents = true;
             var methodToExecute = (OnPrintJobNoMoreEvents != null) ? OnPrintJobNoMoreEvents : PrintJobNoMoreEvents;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Print.Event.PrintJobEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverridePrintJobNoMoreEvents;
         }
 
         /// <summary>
@@ -228,7 +243,7 @@ namespace Javax.Print.Event
         /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
         public virtual void PrintJobNoMoreEvents(Javax.Print.Event.PrintJobEvent arg0)
         {
-            
+            hasOverridePrintJobNoMoreEvents = false;
         }
 
         /// <summary>
@@ -237,10 +252,13 @@ namespace Javax.Print.Event
         /// <remarks>If <see cref="OnPrintJobRequiresAttention"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Print.Event.PrintJobEvent> OnPrintJobRequiresAttention { get; set; } = null;
 
-        void PrintJobRequiresAttentionEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>> data)
+        bool hasOverridePrintJobRequiresAttention = true;
+        void PrintJobRequiresAttentionEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverridePrintJobRequiresAttention = true;
             var methodToExecute = (OnPrintJobRequiresAttention != null) ? OnPrintJobRequiresAttention : PrintJobRequiresAttention;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Print.Event.PrintJobEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverridePrintJobRequiresAttention;
         }
 
         /// <summary>
@@ -249,7 +267,7 @@ namespace Javax.Print.Event
         /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
         public virtual void PrintJobRequiresAttention(Javax.Print.Event.PrintJobEvent arg0)
         {
-            
+            hasOverridePrintJobRequiresAttention = false;
         }
 
         #endregion

@@ -140,7 +140,7 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("adjustmentValueChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.AdjustmentEvent>>>(AdjustmentValueChangedEventHandler));
+            AddEventHandler("adjustmentValueChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AdjustmentValueChangedEventHandler));
 
         }
 
@@ -150,10 +150,13 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnAdjustmentValueChanged"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.AdjustmentEvent> OnAdjustmentValueChanged { get; set; } = null;
 
-        void AdjustmentValueChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.AdjustmentEvent>> data)
+        bool hasOverrideAdjustmentValueChanged = true;
+        void AdjustmentValueChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideAdjustmentValueChanged = true;
             var methodToExecute = (OnAdjustmentValueChanged != null) ? OnAdjustmentValueChanged : AdjustmentValueChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.AdjustmentEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideAdjustmentValueChanged;
         }
 
         /// <summary>
@@ -162,7 +165,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.AdjustmentEvent"/></param>
         public virtual void AdjustmentValueChanged(Java.Awt.EventNs.AdjustmentEvent arg0)
         {
-            
+            hasOverrideAdjustmentValueChanged = false;
         }
 
         #endregion

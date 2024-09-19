@@ -140,7 +140,7 @@ namespace Javax.Print.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("attributeUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintServiceAttributeEvent>>>(AttributeUpdateEventHandler));
+            AddEventHandler("attributeUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AttributeUpdateEventHandler));
 
         }
 
@@ -150,10 +150,13 @@ namespace Javax.Print.Event
         /// <remarks>If <see cref="OnAttributeUpdate"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Print.Event.PrintServiceAttributeEvent> OnAttributeUpdate { get; set; } = null;
 
-        void AttributeUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintServiceAttributeEvent>> data)
+        bool hasOverrideAttributeUpdate = true;
+        void AttributeUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideAttributeUpdate = true;
             var methodToExecute = (OnAttributeUpdate != null) ? OnAttributeUpdate : AttributeUpdate;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Print.Event.PrintServiceAttributeEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideAttributeUpdate;
         }
 
         /// <summary>
@@ -162,7 +165,7 @@ namespace Javax.Print.Event
         /// <param name="arg0"><see cref="Javax.Print.Event.PrintServiceAttributeEvent"/></param>
         public virtual void AttributeUpdate(Javax.Print.Event.PrintServiceAttributeEvent arg0)
         {
-            
+            hasOverrideAttributeUpdate = false;
         }
 
         #endregion

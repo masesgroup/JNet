@@ -140,7 +140,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("getAsLong", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsLongEventHandler));
+            AddEventHandler("getAsLong", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(GetAsLongEventHandler));
 
         }
 
@@ -150,11 +150,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnGetAsLong"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<long> OnGetAsLong { get; set; } = null;
 
-        void GetAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        bool hasOverrideGetAsLong = true;
+        void GetAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideGetAsLong = true;
             var methodToExecute = (OnGetAsLong != null) ? OnGetAsLong : GetAsLong;
             var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
+            data.EventData.TypedEventData.SetReturnData(hasOverrideGetAsLong, executionResult);
         }
 
         /// <summary>
@@ -163,7 +165,7 @@ namespace Java.Util.Function
         /// <returns><see cref="long"/></returns>
         public virtual long GetAsLong()
         {
-            return default;
+            hasOverrideGetAsLong = false; return default;
         }
 
         #endregion

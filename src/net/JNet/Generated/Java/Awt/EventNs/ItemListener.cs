@@ -140,7 +140,7 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("itemStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ItemEvent>>>(ItemStateChangedEventHandler));
+            AddEventHandler("itemStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ItemStateChangedEventHandler));
 
         }
 
@@ -150,10 +150,13 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnItemStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.ItemEvent> OnItemStateChanged { get; set; } = null;
 
-        void ItemStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ItemEvent>> data)
+        bool hasOverrideItemStateChanged = true;
+        void ItemStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideItemStateChanged = true;
             var methodToExecute = (OnItemStateChanged != null) ? OnItemStateChanged : ItemStateChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.ItemEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideItemStateChanged;
         }
 
         /// <summary>
@@ -162,7 +165,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemEvent"/></param>
         public virtual void ItemStateChanged(Java.Awt.EventNs.ItemEvent arg0)
         {
-            
+            hasOverrideItemStateChanged = false;
         }
 
         #endregion

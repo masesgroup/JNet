@@ -140,7 +140,7 @@ namespace Java.Awt.Datatransfer
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("flavorsChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Datatransfer.FlavorEvent>>>(FlavorsChangedEventHandler));
+            AddEventHandler("flavorsChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(FlavorsChangedEventHandler));
 
         }
 
@@ -150,10 +150,13 @@ namespace Java.Awt.Datatransfer
         /// <remarks>If <see cref="OnFlavorsChanged"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.Datatransfer.FlavorEvent> OnFlavorsChanged { get; set; } = null;
 
-        void FlavorsChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Datatransfer.FlavorEvent>> data)
+        bool hasOverrideFlavorsChanged = true;
+        void FlavorsChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideFlavorsChanged = true;
             var methodToExecute = (OnFlavorsChanged != null) ? OnFlavorsChanged : FlavorsChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.Datatransfer.FlavorEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideFlavorsChanged;
         }
 
         /// <summary>
@@ -162,7 +165,7 @@ namespace Java.Awt.Datatransfer
         /// <param name="arg0"><see cref="Java.Awt.Datatransfer.FlavorEvent"/></param>
         public virtual void FlavorsChanged(Java.Awt.Datatransfer.FlavorEvent arg0)
         {
-            
+            hasOverrideFlavorsChanged = false;
         }
 
         #endregion

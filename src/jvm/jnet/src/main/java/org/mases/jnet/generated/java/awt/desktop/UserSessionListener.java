@@ -26,6 +26,7 @@ public final class UserSessionListener implements org.mases.jcobridge.IJCListene
     final org.mases.jcobridge.JCListener _internalListener;
 
     public UserSessionListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,11 +72,13 @@ public final class UserSessionListener implements org.mases.jcobridge.IJCListene
 
     //@Override
     public void userSessionActivated(java.awt.desktop.UserSessionEvent arg0) {
-        raiseEvent("userSessionActivated", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("userSessionActivated", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void userSessionDeactivated(java.awt.desktop.UserSessionEvent arg0) {
-        raiseEvent("userSessionDeactivated", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("userSessionDeactivated", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

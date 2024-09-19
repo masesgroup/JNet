@@ -145,8 +145,8 @@ namespace Java.Awt.DesktopNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("systemAboutToSleep", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.SystemSleepEvent>>>(SystemAboutToSleepEventHandler));
-            AddEventHandler("systemAwoke", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.SystemSleepEvent>>>(SystemAwokeEventHandler));
+            AddEventHandler("systemAboutToSleep", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(SystemAboutToSleepEventHandler));
+            AddEventHandler("systemAwoke", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(SystemAwokeEventHandler));
 
         }
 
@@ -156,10 +156,13 @@ namespace Java.Awt.DesktopNs
         /// <remarks>If <see cref="OnSystemAboutToSleep"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.DesktopNs.SystemSleepEvent> OnSystemAboutToSleep { get; set; } = null;
 
-        void SystemAboutToSleepEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.SystemSleepEvent>> data)
+        bool hasOverrideSystemAboutToSleep = true;
+        void SystemAboutToSleepEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideSystemAboutToSleep = true;
             var methodToExecute = (OnSystemAboutToSleep != null) ? OnSystemAboutToSleep : SystemAboutToSleep;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.DesktopNs.SystemSleepEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideSystemAboutToSleep;
         }
 
         /// <summary>
@@ -168,7 +171,7 @@ namespace Java.Awt.DesktopNs
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.SystemSleepEvent"/></param>
         public virtual void SystemAboutToSleep(Java.Awt.DesktopNs.SystemSleepEvent arg0)
         {
-            
+            hasOverrideSystemAboutToSleep = false;
         }
 
         /// <summary>
@@ -177,10 +180,13 @@ namespace Java.Awt.DesktopNs
         /// <remarks>If <see cref="OnSystemAwoke"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.DesktopNs.SystemSleepEvent> OnSystemAwoke { get; set; } = null;
 
-        void SystemAwokeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.SystemSleepEvent>> data)
+        bool hasOverrideSystemAwoke = true;
+        void SystemAwokeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideSystemAwoke = true;
             var methodToExecute = (OnSystemAwoke != null) ? OnSystemAwoke : SystemAwoke;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.DesktopNs.SystemSleepEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideSystemAwoke;
         }
 
         /// <summary>
@@ -189,7 +195,7 @@ namespace Java.Awt.DesktopNs
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.SystemSleepEvent"/></param>
         public virtual void SystemAwoke(Java.Awt.DesktopNs.SystemSleepEvent arg0)
         {
-            
+            hasOverrideSystemAwoke = false;
         }
 
         #endregion

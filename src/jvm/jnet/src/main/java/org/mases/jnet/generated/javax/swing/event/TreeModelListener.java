@@ -26,6 +26,7 @@ public final class TreeModelListener implements org.mases.jcobridge.IJCListener,
     final org.mases.jcobridge.JCListener _internalListener;
 
     public TreeModelListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,19 +72,23 @@ public final class TreeModelListener implements org.mases.jcobridge.IJCListener,
 
     //@Override
     public void treeNodesChanged(javax.swing.event.TreeModelEvent arg0) {
-        raiseEvent("treeNodesChanged", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("treeNodesChanged", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void treeNodesInserted(javax.swing.event.TreeModelEvent arg0) {
-        raiseEvent("treeNodesInserted", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("treeNodesInserted", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void treeNodesRemoved(javax.swing.event.TreeModelEvent arg0) {
-        raiseEvent("treeNodesRemoved", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("treeNodesRemoved", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void treeStructureChanged(javax.swing.event.TreeModelEvent arg0) {
-        raiseEvent("treeStructureChanged", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("treeStructureChanged", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

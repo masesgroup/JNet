@@ -26,6 +26,7 @@ public final class BooleanSupplier implements org.mases.jcobridge.IJCListener, j
     final org.mases.jcobridge.JCListener _internalListener;
 
     public BooleanSupplier(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,7 +72,8 @@ public final class BooleanSupplier implements org.mases.jcobridge.IJCListener, j
 
     //@Override
     public boolean getAsBoolean() {
-        raiseEvent("getAsBoolean"); Object retVal = getReturnData(); return (boolean)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("getAsBoolean", eventDataExchange); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM"); Object retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
     }
 
 }

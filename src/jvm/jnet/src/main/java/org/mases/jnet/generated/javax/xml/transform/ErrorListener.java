@@ -26,6 +26,7 @@ public final class ErrorListener implements org.mases.jcobridge.IJCListener, jav
     final org.mases.jcobridge.JCListener _internalListener;
 
     public ErrorListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -70,16 +71,19 @@ public final class ErrorListener implements org.mases.jcobridge.IJCListener, jav
     }
 
     //@Override
-    public void error(javax.xml.transform.TransformerException arg0) {
-        raiseEvent("error", arg0);
+    public void error(javax.xml.transform.TransformerException arg0) throws javax.xml.transform.TransformerException {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("error", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
-    public void fatalError(javax.xml.transform.TransformerException arg0) {
-        raiseEvent("fatalError", arg0);
+    public void fatalError(javax.xml.transform.TransformerException arg0) throws javax.xml.transform.TransformerException {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("fatalError", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
-    public void warning(javax.xml.transform.TransformerException arg0) {
-        raiseEvent("warning", arg0);
+    public void warning(javax.xml.transform.TransformerException arg0) throws javax.xml.transform.TransformerException {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("warning", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

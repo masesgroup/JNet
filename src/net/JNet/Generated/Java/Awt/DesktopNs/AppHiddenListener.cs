@@ -145,8 +145,8 @@ namespace Java.Awt.DesktopNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("appHidden", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppHiddenEvent>>>(AppHiddenEventHandler));
-            AddEventHandler("appUnhidden", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppHiddenEvent>>>(AppUnhiddenEventHandler));
+            AddEventHandler("appHidden", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AppHiddenEventHandler));
+            AddEventHandler("appUnhidden", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AppUnhiddenEventHandler));
 
         }
 
@@ -156,10 +156,13 @@ namespace Java.Awt.DesktopNs
         /// <remarks>If <see cref="OnAppHidden"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.DesktopNs.AppHiddenEvent> OnAppHidden { get; set; } = null;
 
-        void AppHiddenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppHiddenEvent>> data)
+        bool hasOverrideAppHidden = true;
+        void AppHiddenEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideAppHidden = true;
             var methodToExecute = (OnAppHidden != null) ? OnAppHidden : AppHidden;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.DesktopNs.AppHiddenEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideAppHidden;
         }
 
         /// <summary>
@@ -168,7 +171,7 @@ namespace Java.Awt.DesktopNs
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppHiddenEvent"/></param>
         public virtual void AppHidden(Java.Awt.DesktopNs.AppHiddenEvent arg0)
         {
-            
+            hasOverrideAppHidden = false;
         }
 
         /// <summary>
@@ -177,10 +180,13 @@ namespace Java.Awt.DesktopNs
         /// <remarks>If <see cref="OnAppUnhidden"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.DesktopNs.AppHiddenEvent> OnAppUnhidden { get; set; } = null;
 
-        void AppUnhiddenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppHiddenEvent>> data)
+        bool hasOverrideAppUnhidden = true;
+        void AppUnhiddenEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideAppUnhidden = true;
             var methodToExecute = (OnAppUnhidden != null) ? OnAppUnhidden : AppUnhidden;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.DesktopNs.AppHiddenEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideAppUnhidden;
         }
 
         /// <summary>
@@ -189,7 +195,7 @@ namespace Java.Awt.DesktopNs
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppHiddenEvent"/></param>
         public virtual void AppUnhidden(Java.Awt.DesktopNs.AppHiddenEvent arg0)
         {
-            
+            hasOverrideAppUnhidden = false;
         }
 
         #endregion

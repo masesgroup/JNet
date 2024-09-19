@@ -26,6 +26,7 @@ public final class RowSorterListener implements org.mases.jcobridge.IJCListener,
     final org.mases.jcobridge.JCListener _internalListener;
 
     public RowSorterListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,7 +72,8 @@ public final class RowSorterListener implements org.mases.jcobridge.IJCListener,
 
     //@Override
     public void sorterChanged(javax.swing.event.RowSorterEvent arg0) {
-        raiseEvent("sorterChanged", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("sorterChanged", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

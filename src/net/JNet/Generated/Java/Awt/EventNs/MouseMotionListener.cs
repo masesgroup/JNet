@@ -145,8 +145,8 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("mouseDragged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseDraggedEventHandler));
-            AddEventHandler("mouseMoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseMovedEventHandler));
+            AddEventHandler("mouseDragged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(MouseDraggedEventHandler));
+            AddEventHandler("mouseMoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(MouseMovedEventHandler));
 
         }
 
@@ -156,10 +156,13 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnMouseDragged"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.MouseEvent> OnMouseDragged { get; set; } = null;
 
-        void MouseDraggedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
+        bool hasOverrideMouseDragged = true;
+        void MouseDraggedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideMouseDragged = true;
             var methodToExecute = (OnMouseDragged != null) ? OnMouseDragged : MouseDragged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.MouseEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideMouseDragged;
         }
 
         /// <summary>
@@ -168,7 +171,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public virtual void MouseDragged(Java.Awt.EventNs.MouseEvent arg0)
         {
-            
+            hasOverrideMouseDragged = false;
         }
 
         /// <summary>
@@ -177,10 +180,13 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnMouseMoved"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.MouseEvent> OnMouseMoved { get; set; } = null;
 
-        void MouseMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
+        bool hasOverrideMouseMoved = true;
+        void MouseMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideMouseMoved = true;
             var methodToExecute = (OnMouseMoved != null) ? OnMouseMoved : MouseMoved;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.MouseEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideMouseMoved;
         }
 
         /// <summary>
@@ -189,7 +195,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public virtual void MouseMoved(Java.Awt.EventNs.MouseEvent arg0)
         {
-            
+            hasOverrideMouseMoved = false;
         }
 
         #endregion

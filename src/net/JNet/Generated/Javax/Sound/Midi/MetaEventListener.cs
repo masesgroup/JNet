@@ -140,7 +140,7 @@ namespace Javax.Sound.Midi
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("meta", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sound.Midi.MetaMessage>>>(MetaEventHandler));
+            AddEventHandler("meta", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(MetaEventHandler));
 
         }
 
@@ -150,10 +150,13 @@ namespace Javax.Sound.Midi
         /// <remarks>If <see cref="OnMeta"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Sound.Midi.MetaMessage> OnMeta { get; set; } = null;
 
-        void MetaEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sound.Midi.MetaMessage>> data)
+        bool hasOverrideMeta = true;
+        void MetaEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideMeta = true;
             var methodToExecute = (OnMeta != null) ? OnMeta : Meta;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Sound.Midi.MetaMessage>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideMeta;
         }
 
         /// <summary>
@@ -162,7 +165,7 @@ namespace Javax.Sound.Midi
         /// <param name="arg0"><see cref="Javax.Sound.Midi.MetaMessage"/></param>
         public virtual void Meta(Javax.Sound.Midi.MetaMessage arg0)
         {
-            
+            hasOverrideMeta = false;
         }
 
         #endregion

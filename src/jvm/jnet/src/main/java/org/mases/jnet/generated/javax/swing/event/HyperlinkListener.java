@@ -26,6 +26,7 @@ public final class HyperlinkListener implements org.mases.jcobridge.IJCListener,
     final org.mases.jcobridge.JCListener _internalListener;
 
     public HyperlinkListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,7 +72,8 @@ public final class HyperlinkListener implements org.mases.jcobridge.IJCListener,
 
     //@Override
     public void hyperlinkUpdate(javax.swing.event.HyperlinkEvent arg0) {
-        raiseEvent("hyperlinkUpdate", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("hyperlinkUpdate", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

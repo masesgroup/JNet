@@ -140,7 +140,7 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("stateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>>>(StateChangedEventHandler));
+            AddEventHandler("stateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(StateChangedEventHandler));
 
         }
 
@@ -150,10 +150,13 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.ChangeEvent> OnStateChanged { get; set; } = null;
 
-        void StateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>> data)
+        bool hasOverrideStateChanged = true;
+        void StateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideStateChanged = true;
             var methodToExecute = (OnStateChanged != null) ? OnStateChanged : StateChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.ChangeEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideStateChanged;
         }
 
         /// <summary>
@@ -162,7 +165,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
         public virtual void StateChanged(Javax.Swing.Event.ChangeEvent arg0)
         {
-            
+            hasOverrideStateChanged = false;
         }
 
         #endregion

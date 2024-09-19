@@ -26,6 +26,7 @@ public final class VetoableChangeListener implements org.mases.jcobridge.IJCList
     final org.mases.jcobridge.JCListener _internalListener;
 
     public VetoableChangeListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -70,8 +71,9 @@ public final class VetoableChangeListener implements org.mases.jcobridge.IJCList
     }
 
     //@Override
-    public void vetoableChange(java.beans.PropertyChangeEvent arg0) {
-        raiseEvent("vetoableChange", arg0);
+    public void vetoableChange(java.beans.PropertyChangeEvent arg0) throws java.beans.PropertyVetoException {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("vetoableChange", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

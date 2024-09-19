@@ -26,6 +26,7 @@ public final class NodeChangeListener implements org.mases.jcobridge.IJCListener
     final org.mases.jcobridge.JCListener _internalListener;
 
     public NodeChangeListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,11 +72,13 @@ public final class NodeChangeListener implements org.mases.jcobridge.IJCListener
 
     //@Override
     public void childAdded(java.util.prefs.NodeChangeEvent arg0) {
-        raiseEvent("childAdded", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("childAdded", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void childRemoved(java.util.prefs.NodeChangeEvent arg0) {
-        raiseEvent("childRemoved", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("childRemoved", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

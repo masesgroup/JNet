@@ -26,6 +26,7 @@ public final class ListDataListener implements org.mases.jcobridge.IJCListener, 
     final org.mases.jcobridge.JCListener _internalListener;
 
     public ListDataListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,15 +72,18 @@ public final class ListDataListener implements org.mases.jcobridge.IJCListener, 
 
     //@Override
     public void contentsChanged(javax.swing.event.ListDataEvent arg0) {
-        raiseEvent("contentsChanged", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("contentsChanged", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void intervalAdded(javax.swing.event.ListDataEvent arg0) {
-        raiseEvent("intervalAdded", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("intervalAdded", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void intervalRemoved(javax.swing.event.ListDataEvent arg0) {
-        raiseEvent("intervalRemoved", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("intervalRemoved", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

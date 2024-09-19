@@ -146,8 +146,8 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("accept", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(AcceptEventHandler));
-            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.IntConsumer>>>(AndThenEventHandler));
+            AddEventHandler("accept", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AcceptEventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AndThenEventHandler));
 
         }
 
@@ -157,10 +157,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnAccept"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<int> OnAccept { get; set; } = null;
 
-        void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
+        bool hasOverrideAccept = true;
+        void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideAccept = true;
             var methodToExecute = (OnAccept != null) ? OnAccept : Accept;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<int>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideAccept;
         }
 
         /// <summary>
@@ -169,7 +172,7 @@ namespace Java.Util.Function
         /// <param name="arg0"><see cref="int"/></param>
         public virtual void Accept(int arg0)
         {
-            
+            hasOverrideAccept = false;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntConsumer.html#andThen(java.util.function.IntConsumer)"/>
@@ -188,11 +191,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.IntConsumer, Java.Util.Function.IntConsumer> OnAndThen { get; set; } = null;
 
-        void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.IntConsumer>> data)
+        bool hasOverrideAndThen = true;
+        void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideAndThen = true;
             var methodToExecute = (OnAndThen != null) ? OnAndThen : AndThen;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.IntConsumer>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideAndThen, executionResult);
         }
 
         /// <summary>
@@ -203,7 +208,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThenDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.IntConsumer AndThen(Java.Util.Function.IntConsumer arg0)
         {
-            return AndThenDefault(arg0);
+            hasOverrideAndThen = false; return default;
         }
 
         #endregion

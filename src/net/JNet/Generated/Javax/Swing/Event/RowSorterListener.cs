@@ -140,7 +140,7 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("sorterChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.RowSorterEvent>>>(SorterChangedEventHandler));
+            AddEventHandler("sorterChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(SorterChangedEventHandler));
 
         }
 
@@ -150,10 +150,13 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnSorterChanged"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.RowSorterEvent> OnSorterChanged { get; set; } = null;
 
-        void SorterChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.RowSorterEvent>> data)
+        bool hasOverrideSorterChanged = true;
+        void SorterChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideSorterChanged = true;
             var methodToExecute = (OnSorterChanged != null) ? OnSorterChanged : SorterChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.RowSorterEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideSorterChanged;
         }
 
         /// <summary>
@@ -162,7 +165,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.RowSorterEvent"/></param>
         public virtual void SorterChanged(Javax.Swing.Event.RowSorterEvent arg0)
         {
-            
+            hasOverrideSorterChanged = false;
         }
 
         #endregion

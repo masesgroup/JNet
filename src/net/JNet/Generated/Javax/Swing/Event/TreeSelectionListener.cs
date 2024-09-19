@@ -140,7 +140,7 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("valueChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeSelectionEvent>>>(ValueChangedEventHandler));
+            AddEventHandler("valueChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ValueChangedEventHandler));
 
         }
 
@@ -150,10 +150,13 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnValueChanged"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.TreeSelectionEvent> OnValueChanged { get; set; } = null;
 
-        void ValueChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeSelectionEvent>> data)
+        bool hasOverrideValueChanged = true;
+        void ValueChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideValueChanged = true;
             var methodToExecute = (OnValueChanged != null) ? OnValueChanged : ValueChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.TreeSelectionEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideValueChanged;
         }
 
         /// <summary>
@@ -162,7 +165,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.TreeSelectionEvent"/></param>
         public virtual void ValueChanged(Javax.Swing.Event.TreeSelectionEvent arg0)
         {
-            
+            hasOverrideValueChanged = false;
         }
 
         #endregion

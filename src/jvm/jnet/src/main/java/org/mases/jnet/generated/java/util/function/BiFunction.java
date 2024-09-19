@@ -26,6 +26,7 @@ public final class BiFunction implements org.mases.jcobridge.IJCListener, java.u
     final org.mases.jcobridge.JCListener _internalListener;
 
     public BiFunction(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,11 +72,13 @@ public final class BiFunction implements org.mases.jcobridge.IJCListener, java.u
 
     //@Override
     public java.lang.Object apply(java.lang.Object arg0, java.lang.Object arg1) {
-        raiseEvent("apply", arg0, arg1); Object retVal = getReturnData(); return (java.lang.Object)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("apply", eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM"); Object retVal = eventDataExchange.getReturnData(); return (java.lang.Object)retVal;
     }
     //@Override
     public java.util.function.BiFunction andThen(java.util.function.Function arg0) {
-        raiseEvent("andThen", arg0); Object retVal = getReturnData(); return (java.util.function.BiFunction)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("andThen", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.BiFunction.super.andThen(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.BiFunction)retVal;
     }
     //@Override
     public java.util.function.BiFunction andThenDefault(java.util.function.Function arg0) {

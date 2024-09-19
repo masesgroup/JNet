@@ -140,7 +140,7 @@ namespace Java.Awt.Dnd
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("dragGestureRecognized", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragGestureEvent>>>(DragGestureRecognizedEventHandler));
+            AddEventHandler("dragGestureRecognized", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(DragGestureRecognizedEventHandler));
 
         }
 
@@ -150,10 +150,13 @@ namespace Java.Awt.Dnd
         /// <remarks>If <see cref="OnDragGestureRecognized"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.Dnd.DragGestureEvent> OnDragGestureRecognized { get; set; } = null;
 
-        void DragGestureRecognizedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragGestureEvent>> data)
+        bool hasOverrideDragGestureRecognized = true;
+        void DragGestureRecognizedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideDragGestureRecognized = true;
             var methodToExecute = (OnDragGestureRecognized != null) ? OnDragGestureRecognized : DragGestureRecognized;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.Dnd.DragGestureEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideDragGestureRecognized;
         }
 
         /// <summary>
@@ -162,7 +165,7 @@ namespace Java.Awt.Dnd
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DragGestureEvent"/></param>
         public virtual void DragGestureRecognized(Java.Awt.Dnd.DragGestureEvent arg0)
         {
-            
+            hasOverrideDragGestureRecognized = false;
         }
 
         #endregion

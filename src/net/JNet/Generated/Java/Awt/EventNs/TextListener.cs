@@ -140,7 +140,7 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("textValueChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.TextEvent>>>(TextValueChangedEventHandler));
+            AddEventHandler("textValueChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(TextValueChangedEventHandler));
 
         }
 
@@ -150,10 +150,13 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnTextValueChanged"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.TextEvent> OnTextValueChanged { get; set; } = null;
 
-        void TextValueChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.TextEvent>> data)
+        bool hasOverrideTextValueChanged = true;
+        void TextValueChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideTextValueChanged = true;
             var methodToExecute = (OnTextValueChanged != null) ? OnTextValueChanged : TextValueChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.TextEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideTextValueChanged;
         }
 
         /// <summary>
@@ -162,7 +165,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.TextEvent"/></param>
         public virtual void TextValueChanged(Java.Awt.EventNs.TextEvent arg0)
         {
-            
+            hasOverrideTextValueChanged = false;
         }
 
         #endregion

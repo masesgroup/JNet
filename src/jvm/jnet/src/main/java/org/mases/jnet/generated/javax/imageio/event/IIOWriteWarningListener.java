@@ -26,6 +26,7 @@ public final class IIOWriteWarningListener implements org.mases.jcobridge.IJCLis
     final org.mases.jcobridge.JCListener _internalListener;
 
     public IIOWriteWarningListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,7 +72,8 @@ public final class IIOWriteWarningListener implements org.mases.jcobridge.IJCLis
 
     //@Override
     public void warningOccurred(javax.imageio.ImageWriter arg0, int arg1, java.lang.String arg2) {
-        raiseEvent("warningOccurred", arg0, arg1, arg2);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("warningOccurred", eventDataExchange, arg0, arg1, arg2); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

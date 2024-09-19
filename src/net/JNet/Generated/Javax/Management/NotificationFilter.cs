@@ -141,7 +141,7 @@ namespace Javax.Management
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("isNotificationEnabled", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Management.Notification>>>(IsNotificationEnabledEventHandler));
+            AddEventHandler("isNotificationEnabled", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(IsNotificationEnabledEventHandler));
 
         }
 
@@ -151,11 +151,13 @@ namespace Javax.Management
         /// <remarks>If <see cref="OnIsNotificationEnabled"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Javax.Management.Notification, bool> OnIsNotificationEnabled { get; set; } = null;
 
-        void IsNotificationEnabledEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Management.Notification>> data)
+        bool hasOverrideIsNotificationEnabled = true;
+        void IsNotificationEnabledEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideIsNotificationEnabled = true;
             var methodToExecute = (OnIsNotificationEnabled != null) ? OnIsNotificationEnabled : IsNotificationEnabled;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Javax.Management.Notification>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideIsNotificationEnabled, executionResult);
         }
 
         /// <summary>
@@ -165,7 +167,7 @@ namespace Javax.Management
         /// <returns><see cref="bool"/></returns>
         public virtual bool IsNotificationEnabled(Javax.Management.Notification arg0)
         {
-            return default;
+            hasOverrideIsNotificationEnabled = false; return default;
         }
 
         #endregion
