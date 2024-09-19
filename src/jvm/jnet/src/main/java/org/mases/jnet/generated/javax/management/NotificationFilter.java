@@ -26,6 +26,7 @@ public final class NotificationFilter implements org.mases.jcobridge.IJCListener
     final org.mases.jcobridge.JCListener _internalListener;
 
     public NotificationFilter(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,7 +72,8 @@ public final class NotificationFilter implements org.mases.jcobridge.IJCListener
 
     //@Override
     public boolean isNotificationEnabled(javax.management.Notification arg0) {
-        raiseEvent("isNotificationEnabled", arg0); Object retVal = getReturnData(); return (boolean)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("isNotificationEnabled", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM"); Object retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
     }
 
 }

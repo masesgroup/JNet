@@ -26,6 +26,7 @@ public final class MenuDragMouseListener implements org.mases.jcobridge.IJCListe
     final org.mases.jcobridge.JCListener _internalListener;
 
     public MenuDragMouseListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,19 +72,23 @@ public final class MenuDragMouseListener implements org.mases.jcobridge.IJCListe
 
     //@Override
     public void menuDragMouseDragged(javax.swing.event.MenuDragMouseEvent arg0) {
-        raiseEvent("menuDragMouseDragged", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("menuDragMouseDragged", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void menuDragMouseEntered(javax.swing.event.MenuDragMouseEvent arg0) {
-        raiseEvent("menuDragMouseEntered", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("menuDragMouseEntered", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void menuDragMouseExited(javax.swing.event.MenuDragMouseEvent arg0) {
-        raiseEvent("menuDragMouseExited", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("menuDragMouseExited", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void menuDragMouseReleased(javax.swing.event.MenuDragMouseEvent arg0) {
-        raiseEvent("menuDragMouseReleased", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("menuDragMouseReleased", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

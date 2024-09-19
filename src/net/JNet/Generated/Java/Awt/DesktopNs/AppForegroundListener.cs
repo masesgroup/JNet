@@ -145,8 +145,8 @@ namespace Java.Awt.DesktopNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("appMovedToBackground", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppForegroundEvent>>>(AppMovedToBackgroundEventHandler));
-            AddEventHandler("appRaisedToForeground", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppForegroundEvent>>>(AppRaisedToForegroundEventHandler));
+            AddEventHandler("appMovedToBackground", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AppMovedToBackgroundEventHandler));
+            AddEventHandler("appRaisedToForeground", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AppRaisedToForegroundEventHandler));
 
         }
 
@@ -156,10 +156,13 @@ namespace Java.Awt.DesktopNs
         /// <remarks>If <see cref="OnAppMovedToBackground"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.DesktopNs.AppForegroundEvent> OnAppMovedToBackground { get; set; } = null;
 
-        void AppMovedToBackgroundEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppForegroundEvent>> data)
+        bool hasOverrideAppMovedToBackground = true;
+        void AppMovedToBackgroundEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideAppMovedToBackground = true;
             var methodToExecute = (OnAppMovedToBackground != null) ? OnAppMovedToBackground : AppMovedToBackground;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.DesktopNs.AppForegroundEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideAppMovedToBackground;
         }
 
         /// <summary>
@@ -168,7 +171,7 @@ namespace Java.Awt.DesktopNs
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppForegroundEvent"/></param>
         public virtual void AppMovedToBackground(Java.Awt.DesktopNs.AppForegroundEvent arg0)
         {
-            
+            hasOverrideAppMovedToBackground = false;
         }
 
         /// <summary>
@@ -177,10 +180,13 @@ namespace Java.Awt.DesktopNs
         /// <remarks>If <see cref="OnAppRaisedToForeground"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.DesktopNs.AppForegroundEvent> OnAppRaisedToForeground { get; set; } = null;
 
-        void AppRaisedToForegroundEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppForegroundEvent>> data)
+        bool hasOverrideAppRaisedToForeground = true;
+        void AppRaisedToForegroundEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideAppRaisedToForeground = true;
             var methodToExecute = (OnAppRaisedToForeground != null) ? OnAppRaisedToForeground : AppRaisedToForeground;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.DesktopNs.AppForegroundEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideAppRaisedToForeground;
         }
 
         /// <summary>
@@ -189,7 +195,7 @@ namespace Java.Awt.DesktopNs
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppForegroundEvent"/></param>
         public virtual void AppRaisedToForeground(Java.Awt.DesktopNs.AppForegroundEvent arg0)
         {
-            
+            hasOverrideAppRaisedToForeground = false;
         }
 
         #endregion

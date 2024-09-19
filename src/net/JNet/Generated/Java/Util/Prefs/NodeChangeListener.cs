@@ -145,8 +145,8 @@ namespace Java.Util.Prefs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("childAdded", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Prefs.NodeChangeEvent>>>(ChildAddedEventHandler));
-            AddEventHandler("childRemoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Prefs.NodeChangeEvent>>>(ChildRemovedEventHandler));
+            AddEventHandler("childAdded", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ChildAddedEventHandler));
+            AddEventHandler("childRemoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ChildRemovedEventHandler));
 
         }
 
@@ -156,10 +156,13 @@ namespace Java.Util.Prefs
         /// <remarks>If <see cref="OnChildAdded"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Util.Prefs.NodeChangeEvent> OnChildAdded { get; set; } = null;
 
-        void ChildAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Prefs.NodeChangeEvent>> data)
+        bool hasOverrideChildAdded = true;
+        void ChildAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideChildAdded = true;
             var methodToExecute = (OnChildAdded != null) ? OnChildAdded : ChildAdded;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Prefs.NodeChangeEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideChildAdded;
         }
 
         /// <summary>
@@ -168,7 +171,7 @@ namespace Java.Util.Prefs
         /// <param name="arg0"><see cref="Java.Util.Prefs.NodeChangeEvent"/></param>
         public virtual void ChildAdded(Java.Util.Prefs.NodeChangeEvent arg0)
         {
-            
+            hasOverrideChildAdded = false;
         }
 
         /// <summary>
@@ -177,10 +180,13 @@ namespace Java.Util.Prefs
         /// <remarks>If <see cref="OnChildRemoved"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Util.Prefs.NodeChangeEvent> OnChildRemoved { get; set; } = null;
 
-        void ChildRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Prefs.NodeChangeEvent>> data)
+        bool hasOverrideChildRemoved = true;
+        void ChildRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideChildRemoved = true;
             var methodToExecute = (OnChildRemoved != null) ? OnChildRemoved : ChildRemoved;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Prefs.NodeChangeEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideChildRemoved;
         }
 
         /// <summary>
@@ -189,7 +195,7 @@ namespace Java.Util.Prefs
         /// <param name="arg0"><see cref="Java.Util.Prefs.NodeChangeEvent"/></param>
         public virtual void ChildRemoved(Java.Util.Prefs.NodeChangeEvent arg0)
         {
-            
+            hasOverrideChildRemoved = false;
         }
 
         #endregion

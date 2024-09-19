@@ -26,6 +26,7 @@ public final class IIOWriteProgressListener implements org.mases.jcobridge.IJCLi
     final org.mases.jcobridge.JCListener _internalListener;
 
     public IIOWriteProgressListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,31 +72,38 @@ public final class IIOWriteProgressListener implements org.mases.jcobridge.IJCLi
 
     //@Override
     public void imageComplete(javax.imageio.ImageWriter arg0) {
-        raiseEvent("imageComplete", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("imageComplete", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void imageProgress(javax.imageio.ImageWriter arg0, float arg1) {
-        raiseEvent("imageProgress", arg0, arg1);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("imageProgress", eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void imageStarted(javax.imageio.ImageWriter arg0, int arg1) {
-        raiseEvent("imageStarted", arg0, arg1);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("imageStarted", eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void thumbnailComplete(javax.imageio.ImageWriter arg0) {
-        raiseEvent("thumbnailComplete", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("thumbnailComplete", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void thumbnailProgress(javax.imageio.ImageWriter arg0, float arg1) {
-        raiseEvent("thumbnailProgress", arg0, arg1);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("thumbnailProgress", eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void thumbnailStarted(javax.imageio.ImageWriter arg0, int arg1, int arg2) {
-        raiseEvent("thumbnailStarted", arg0, arg1, arg2);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("thumbnailStarted", eventDataExchange, arg0, arg1, arg2); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void writeAborted(javax.imageio.ImageWriter arg0) {
-        raiseEvent("writeAborted", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("writeAborted", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

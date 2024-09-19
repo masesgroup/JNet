@@ -145,8 +145,8 @@ namespace Java.Beans.Beancontext
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("serviceRevoked", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceRevokedEvent>>>(ServiceRevokedEventHandler));
-            AddEventHandler("serviceAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceAvailableEvent>>>(ServiceAvailableEventHandler));
+            AddEventHandler("serviceRevoked", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ServiceRevokedEventHandler));
+            AddEventHandler("serviceAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ServiceAvailableEventHandler));
 
         }
 
@@ -156,10 +156,13 @@ namespace Java.Beans.Beancontext
         /// <remarks>If <see cref="OnServiceRevoked"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Beans.Beancontext.BeanContextServiceRevokedEvent> OnServiceRevoked { get; set; } = null;
 
-        void ServiceRevokedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceRevokedEvent>> data)
+        bool hasOverrideServiceRevoked = true;
+        void ServiceRevokedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideServiceRevoked = true;
             var methodToExecute = (OnServiceRevoked != null) ? OnServiceRevoked : ServiceRevoked;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Beans.Beancontext.BeanContextServiceRevokedEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideServiceRevoked;
         }
 
         /// <summary>
@@ -168,7 +171,7 @@ namespace Java.Beans.Beancontext
         /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServiceRevokedEvent"/></param>
         public virtual void ServiceRevoked(Java.Beans.Beancontext.BeanContextServiceRevokedEvent arg0)
         {
-            
+            hasOverrideServiceRevoked = false;
         }
 
         /// <summary>
@@ -177,10 +180,13 @@ namespace Java.Beans.Beancontext
         /// <remarks>If <see cref="OnServiceAvailable"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Beans.Beancontext.BeanContextServiceAvailableEvent> OnServiceAvailable { get; set; } = null;
 
-        void ServiceAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceAvailableEvent>> data)
+        bool hasOverrideServiceAvailable = true;
+        void ServiceAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideServiceAvailable = true;
             var methodToExecute = (OnServiceAvailable != null) ? OnServiceAvailable : ServiceAvailable;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Beans.Beancontext.BeanContextServiceAvailableEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideServiceAvailable;
         }
 
         /// <summary>
@@ -189,7 +195,7 @@ namespace Java.Beans.Beancontext
         /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServiceAvailableEvent"/></param>
         public virtual void ServiceAvailable(Java.Beans.Beancontext.BeanContextServiceAvailableEvent arg0)
         {
-            
+            hasOverrideServiceAvailable = false;
         }
 
         #endregion

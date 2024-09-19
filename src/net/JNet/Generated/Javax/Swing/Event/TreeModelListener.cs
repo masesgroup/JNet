@@ -155,10 +155,10 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("treeNodesChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>>>(TreeNodesChangedEventHandler));
-            AddEventHandler("treeNodesInserted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>>>(TreeNodesInsertedEventHandler));
-            AddEventHandler("treeNodesRemoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>>>(TreeNodesRemovedEventHandler));
-            AddEventHandler("treeStructureChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>>>(TreeStructureChangedEventHandler));
+            AddEventHandler("treeNodesChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(TreeNodesChangedEventHandler));
+            AddEventHandler("treeNodesInserted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(TreeNodesInsertedEventHandler));
+            AddEventHandler("treeNodesRemoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(TreeNodesRemovedEventHandler));
+            AddEventHandler("treeStructureChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(TreeStructureChangedEventHandler));
 
         }
 
@@ -168,10 +168,13 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnTreeNodesChanged"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.TreeModelEvent> OnTreeNodesChanged { get; set; } = null;
 
-        void TreeNodesChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>> data)
+        bool hasOverrideTreeNodesChanged = true;
+        void TreeNodesChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideTreeNodesChanged = true;
             var methodToExecute = (OnTreeNodesChanged != null) ? OnTreeNodesChanged : TreeNodesChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.TreeModelEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideTreeNodesChanged;
         }
 
         /// <summary>
@@ -180,7 +183,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelEvent"/></param>
         public virtual void TreeNodesChanged(Javax.Swing.Event.TreeModelEvent arg0)
         {
-            
+            hasOverrideTreeNodesChanged = false;
         }
 
         /// <summary>
@@ -189,10 +192,13 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnTreeNodesInserted"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.TreeModelEvent> OnTreeNodesInserted { get; set; } = null;
 
-        void TreeNodesInsertedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>> data)
+        bool hasOverrideTreeNodesInserted = true;
+        void TreeNodesInsertedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideTreeNodesInserted = true;
             var methodToExecute = (OnTreeNodesInserted != null) ? OnTreeNodesInserted : TreeNodesInserted;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.TreeModelEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideTreeNodesInserted;
         }
 
         /// <summary>
@@ -201,7 +207,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelEvent"/></param>
         public virtual void TreeNodesInserted(Javax.Swing.Event.TreeModelEvent arg0)
         {
-            
+            hasOverrideTreeNodesInserted = false;
         }
 
         /// <summary>
@@ -210,10 +216,13 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnTreeNodesRemoved"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.TreeModelEvent> OnTreeNodesRemoved { get; set; } = null;
 
-        void TreeNodesRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>> data)
+        bool hasOverrideTreeNodesRemoved = true;
+        void TreeNodesRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideTreeNodesRemoved = true;
             var methodToExecute = (OnTreeNodesRemoved != null) ? OnTreeNodesRemoved : TreeNodesRemoved;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.TreeModelEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideTreeNodesRemoved;
         }
 
         /// <summary>
@@ -222,7 +231,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelEvent"/></param>
         public virtual void TreeNodesRemoved(Javax.Swing.Event.TreeModelEvent arg0)
         {
-            
+            hasOverrideTreeNodesRemoved = false;
         }
 
         /// <summary>
@@ -231,10 +240,13 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnTreeStructureChanged"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.TreeModelEvent> OnTreeStructureChanged { get; set; } = null;
 
-        void TreeStructureChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>> data)
+        bool hasOverrideTreeStructureChanged = true;
+        void TreeStructureChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideTreeStructureChanged = true;
             var methodToExecute = (OnTreeStructureChanged != null) ? OnTreeStructureChanged : TreeStructureChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.TreeModelEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideTreeStructureChanged;
         }
 
         /// <summary>
@@ -243,7 +255,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelEvent"/></param>
         public virtual void TreeStructureChanged(Javax.Swing.Event.TreeModelEvent arg0)
         {
-            
+            hasOverrideTreeStructureChanged = false;
         }
 
         #endregion

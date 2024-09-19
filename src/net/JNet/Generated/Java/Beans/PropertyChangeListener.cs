@@ -140,7 +140,7 @@ namespace Java.Beans
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("propertyChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeEvent>>>(PropertyChangeEventHandler));
+            AddEventHandler("propertyChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(PropertyChangeEventHandler));
 
         }
 
@@ -150,10 +150,13 @@ namespace Java.Beans
         /// <remarks>If <see cref="OnPropertyChange"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Beans.PropertyChangeEvent> OnPropertyChange { get; set; } = null;
 
-        void PropertyChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeEvent>> data)
+        bool hasOverridePropertyChange = true;
+        void PropertyChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverridePropertyChange = true;
             var methodToExecute = (OnPropertyChange != null) ? OnPropertyChange : PropertyChange;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Beans.PropertyChangeEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverridePropertyChange;
         }
 
         /// <summary>
@@ -162,7 +165,7 @@ namespace Java.Beans
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
         public virtual void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
         {
-            
+            hasOverridePropertyChange = false;
         }
 
         #endregion

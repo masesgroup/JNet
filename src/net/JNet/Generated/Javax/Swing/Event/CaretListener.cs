@@ -140,7 +140,7 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("caretUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.CaretEvent>>>(CaretUpdateEventHandler));
+            AddEventHandler("caretUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(CaretUpdateEventHandler));
 
         }
 
@@ -150,10 +150,13 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnCaretUpdate"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.CaretEvent> OnCaretUpdate { get; set; } = null;
 
-        void CaretUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.CaretEvent>> data)
+        bool hasOverrideCaretUpdate = true;
+        void CaretUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideCaretUpdate = true;
             var methodToExecute = (OnCaretUpdate != null) ? OnCaretUpdate : CaretUpdate;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.CaretEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideCaretUpdate;
         }
 
         /// <summary>
@@ -162,7 +165,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.CaretEvent"/></param>
         public virtual void CaretUpdate(Javax.Swing.Event.CaretEvent arg0)
         {
-            
+            hasOverrideCaretUpdate = false;
         }
 
         #endregion

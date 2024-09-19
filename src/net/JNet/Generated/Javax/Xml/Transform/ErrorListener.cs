@@ -153,9 +153,9 @@ namespace Javax.Xml.Transform
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("error", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(ErrorEventHandler));
-            AddEventHandler("fatalError", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(FatalErrorEventHandler));
-            AddEventHandler("warning", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(WarningEventHandler));
+            AddEventHandler("error", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ErrorEventHandler));
+            AddEventHandler("fatalError", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(FatalErrorEventHandler));
+            AddEventHandler("warning", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(WarningEventHandler));
 
         }
 
@@ -165,10 +165,13 @@ namespace Javax.Xml.Transform
         /// <remarks>If <see cref="OnError"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnError { get; set; } = null;
 
-        void ErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        bool hasOverrideError = true;
+        void ErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideError = true;
             var methodToExecute = (OnError != null) ? OnError : Error;
-            methodToExecute.Invoke(JVMBridgeException.New(data.EventData.EventData as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
+            methodToExecute.Invoke(JVMBridgeException.New(data.EventData.ExtraData.Get(0) as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
+            data.EventData.TypedEventData.HasOverride = hasOverrideError;
         }
 
         /// <summary>
@@ -178,7 +181,7 @@ namespace Javax.Xml.Transform
         /// <exception cref="Javax.Xml.Transform.TransformerException"/>
         public virtual void Error(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
-            
+            hasOverrideError = false;
         }
 
         /// <summary>
@@ -187,10 +190,13 @@ namespace Javax.Xml.Transform
         /// <remarks>If <see cref="OnFatalError"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnFatalError { get; set; } = null;
 
-        void FatalErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        bool hasOverrideFatalError = true;
+        void FatalErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideFatalError = true;
             var methodToExecute = (OnFatalError != null) ? OnFatalError : FatalError;
-            methodToExecute.Invoke(JVMBridgeException.New(data.EventData.EventData as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
+            methodToExecute.Invoke(JVMBridgeException.New(data.EventData.ExtraData.Get(0) as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
+            data.EventData.TypedEventData.HasOverride = hasOverrideFatalError;
         }
 
         /// <summary>
@@ -200,7 +206,7 @@ namespace Javax.Xml.Transform
         /// <exception cref="Javax.Xml.Transform.TransformerException"/>
         public virtual void FatalError(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
-            
+            hasOverrideFatalError = false;
         }
 
         /// <summary>
@@ -209,10 +215,13 @@ namespace Javax.Xml.Transform
         /// <remarks>If <see cref="OnWarning"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnWarning { get; set; } = null;
 
-        void WarningEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        bool hasOverrideWarning = true;
+        void WarningEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideWarning = true;
             var methodToExecute = (OnWarning != null) ? OnWarning : Warning;
-            methodToExecute.Invoke(JVMBridgeException.New(data.EventData.EventData as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
+            methodToExecute.Invoke(JVMBridgeException.New(data.EventData.ExtraData.Get(0) as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
+            data.EventData.TypedEventData.HasOverride = hasOverrideWarning;
         }
 
         /// <summary>
@@ -222,7 +231,7 @@ namespace Javax.Xml.Transform
         /// <exception cref="Javax.Xml.Transform.TransformerException"/>
         public virtual void Warning(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
-            
+            hasOverrideWarning = false;
         }
 
         #endregion

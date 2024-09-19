@@ -140,7 +140,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("getAsDouble", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsDoubleEventHandler));
+            AddEventHandler("getAsDouble", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(GetAsDoubleEventHandler));
 
         }
 
@@ -150,11 +150,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnGetAsDouble"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<double> OnGetAsDouble { get; set; } = null;
 
-        void GetAsDoubleEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        bool hasOverrideGetAsDouble = true;
+        void GetAsDoubleEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideGetAsDouble = true;
             var methodToExecute = (OnGetAsDouble != null) ? OnGetAsDouble : GetAsDouble;
             var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
+            data.EventData.TypedEventData.SetReturnData(hasOverrideGetAsDouble, executionResult);
         }
 
         /// <summary>
@@ -163,7 +165,7 @@ namespace Java.Util.Function
         /// <returns><see cref="double"/></returns>
         public virtual double GetAsDouble()
         {
-            return default;
+            hasOverrideGetAsDouble = false; return default;
         }
 
         #endregion

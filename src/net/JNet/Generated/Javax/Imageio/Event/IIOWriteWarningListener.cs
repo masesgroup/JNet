@@ -142,7 +142,7 @@ namespace Javax.Imageio.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("warningOccurred", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(WarningOccurredEventHandler));
+            AddEventHandler("warningOccurred", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(WarningOccurredEventHandler));
 
         }
 
@@ -152,10 +152,13 @@ namespace Javax.Imageio.Event
         /// <remarks>If <see cref="OnWarningOccurred"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Imageio.ImageWriter, int, Java.Lang.String> OnWarningOccurred { get; set; } = null;
 
-        void WarningOccurredEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
+        bool hasOverrideWarningOccurred = true;
+        void WarningOccurredEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideWarningOccurred = true;
             var methodToExecute = (OnWarningOccurred != null) ? OnWarningOccurred : WarningOccurred;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<Java.Lang.String>(1));
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Imageio.ImageWriter>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<Java.Lang.String>(2));
+            data.EventData.TypedEventData.HasOverride = hasOverrideWarningOccurred;
         }
 
         /// <summary>
@@ -166,7 +169,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public virtual void WarningOccurred(Javax.Imageio.ImageWriter arg0, int arg1, Java.Lang.String arg2)
         {
-            
+            hasOverrideWarningOccurred = false;
         }
 
         #endregion

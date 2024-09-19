@@ -145,8 +145,8 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("caretPositionChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.InputMethodEvent>>>(CaretPositionChangedEventHandler));
-            AddEventHandler("inputMethodTextChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.InputMethodEvent>>>(InputMethodTextChangedEventHandler));
+            AddEventHandler("caretPositionChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(CaretPositionChangedEventHandler));
+            AddEventHandler("inputMethodTextChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(InputMethodTextChangedEventHandler));
 
         }
 
@@ -156,10 +156,13 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnCaretPositionChanged"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.InputMethodEvent> OnCaretPositionChanged { get; set; } = null;
 
-        void CaretPositionChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.InputMethodEvent>> data)
+        bool hasOverrideCaretPositionChanged = true;
+        void CaretPositionChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideCaretPositionChanged = true;
             var methodToExecute = (OnCaretPositionChanged != null) ? OnCaretPositionChanged : CaretPositionChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.InputMethodEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideCaretPositionChanged;
         }
 
         /// <summary>
@@ -168,7 +171,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodEvent"/></param>
         public virtual void CaretPositionChanged(Java.Awt.EventNs.InputMethodEvent arg0)
         {
-            
+            hasOverrideCaretPositionChanged = false;
         }
 
         /// <summary>
@@ -177,10 +180,13 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnInputMethodTextChanged"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.InputMethodEvent> OnInputMethodTextChanged { get; set; } = null;
 
-        void InputMethodTextChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.InputMethodEvent>> data)
+        bool hasOverrideInputMethodTextChanged = true;
+        void InputMethodTextChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideInputMethodTextChanged = true;
             var methodToExecute = (OnInputMethodTextChanged != null) ? OnInputMethodTextChanged : InputMethodTextChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.InputMethodEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideInputMethodTextChanged;
         }
 
         /// <summary>
@@ -189,7 +195,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodEvent"/></param>
         public virtual void InputMethodTextChanged(Java.Awt.EventNs.InputMethodEvent arg0)
         {
-            
+            hasOverrideInputMethodTextChanged = false;
         }
 
         #endregion

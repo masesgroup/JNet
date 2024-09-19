@@ -145,8 +145,8 @@ namespace Javax.Net.Ssl
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("valueBound", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.SSLSessionBindingEvent>>>(ValueBoundEventHandler));
-            AddEventHandler("valueUnbound", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.SSLSessionBindingEvent>>>(ValueUnboundEventHandler));
+            AddEventHandler("valueBound", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ValueBoundEventHandler));
+            AddEventHandler("valueUnbound", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ValueUnboundEventHandler));
 
         }
 
@@ -156,10 +156,13 @@ namespace Javax.Net.Ssl
         /// <remarks>If <see cref="OnValueBound"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Net.Ssl.SSLSessionBindingEvent> OnValueBound { get; set; } = null;
 
-        void ValueBoundEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.SSLSessionBindingEvent>> data)
+        bool hasOverrideValueBound = true;
+        void ValueBoundEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideValueBound = true;
             var methodToExecute = (OnValueBound != null) ? OnValueBound : ValueBound;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Net.Ssl.SSLSessionBindingEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideValueBound;
         }
 
         /// <summary>
@@ -168,7 +171,7 @@ namespace Javax.Net.Ssl
         /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLSessionBindingEvent"/></param>
         public virtual void ValueBound(Javax.Net.Ssl.SSLSessionBindingEvent arg0)
         {
-            
+            hasOverrideValueBound = false;
         }
 
         /// <summary>
@@ -177,10 +180,13 @@ namespace Javax.Net.Ssl
         /// <remarks>If <see cref="OnValueUnbound"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Net.Ssl.SSLSessionBindingEvent> OnValueUnbound { get; set; } = null;
 
-        void ValueUnboundEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.SSLSessionBindingEvent>> data)
+        bool hasOverrideValueUnbound = true;
+        void ValueUnboundEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideValueUnbound = true;
             var methodToExecute = (OnValueUnbound != null) ? OnValueUnbound : ValueUnbound;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Net.Ssl.SSLSessionBindingEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideValueUnbound;
         }
 
         /// <summary>
@@ -189,7 +195,7 @@ namespace Javax.Net.Ssl
         /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLSessionBindingEvent"/></param>
         public virtual void ValueUnbound(Javax.Net.Ssl.SSLSessionBindingEvent arg0)
         {
-            
+            hasOverrideValueUnbound = false;
         }
 
         #endregion

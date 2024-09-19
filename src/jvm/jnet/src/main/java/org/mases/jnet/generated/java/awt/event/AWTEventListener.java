@@ -26,6 +26,7 @@ public final class AWTEventListener implements org.mases.jcobridge.IJCListener, 
     final org.mases.jcobridge.JCListener _internalListener;
 
     public AWTEventListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,7 +72,8 @@ public final class AWTEventListener implements org.mases.jcobridge.IJCListener, 
 
     //@Override
     public void eventDispatched(java.awt.AWTEvent arg0) {
-        raiseEvent("eventDispatched", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("eventDispatched", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

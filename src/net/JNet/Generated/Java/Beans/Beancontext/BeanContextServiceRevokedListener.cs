@@ -140,7 +140,7 @@ namespace Java.Beans.Beancontext
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("serviceRevoked", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceRevokedEvent>>>(ServiceRevokedEventHandler));
+            AddEventHandler("serviceRevoked", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ServiceRevokedEventHandler));
 
         }
 
@@ -150,10 +150,13 @@ namespace Java.Beans.Beancontext
         /// <remarks>If <see cref="OnServiceRevoked"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Beans.Beancontext.BeanContextServiceRevokedEvent> OnServiceRevoked { get; set; } = null;
 
-        void ServiceRevokedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceRevokedEvent>> data)
+        bool hasOverrideServiceRevoked = true;
+        void ServiceRevokedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideServiceRevoked = true;
             var methodToExecute = (OnServiceRevoked != null) ? OnServiceRevoked : ServiceRevoked;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Beans.Beancontext.BeanContextServiceRevokedEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideServiceRevoked;
         }
 
         /// <summary>
@@ -162,7 +165,7 @@ namespace Java.Beans.Beancontext
         /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServiceRevokedEvent"/></param>
         public virtual void ServiceRevoked(Java.Beans.Beancontext.BeanContextServiceRevokedEvent arg0)
         {
-            
+            hasOverrideServiceRevoked = false;
         }
 
         #endregion

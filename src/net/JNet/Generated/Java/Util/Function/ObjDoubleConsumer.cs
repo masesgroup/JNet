@@ -185,7 +185,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("accept", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(AcceptEventHandler));
+            AddEventHandler("accept", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AcceptEventHandler));
 
         }
 
@@ -195,10 +195,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnAccept"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<object, double> OnAccept { get; set; } = null;
 
-        void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
+        bool hasOverrideAccept = true;
+        void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideAccept = true;
             var methodToExecute = (OnAccept != null) ? OnAccept : Accept;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<double>(0));
+            methodToExecute.Invoke(data.EventData.GetAt<object>(0), data.EventData.GetAt<double>(1));
+            data.EventData.TypedEventData.HasOverride = hasOverrideAccept;
         }
 
         /// <summary>
@@ -208,7 +211,7 @@ namespace Java.Util.Function
         /// <param name="arg1"><see cref="double"/></param>
         public virtual void Accept(object arg0, double arg1)
         {
-            
+            hasOverrideAccept = false;
         }
 
         #endregion
@@ -310,7 +313,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("accept", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(AcceptEventHandler));
+            AddEventHandler("accept", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AcceptEventHandler));
 
         }
 
@@ -320,10 +323,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnAccept"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<T, double> OnAccept { get; set; } = null;
 
-        void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
+        bool hasOverrideAccept = true;
+        void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideAccept = true;
             var methodToExecute = (OnAccept != null) ? OnAccept : Accept;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<double>(0));
+            methodToExecute.Invoke(data.EventData.GetAt<T>(0), data.EventData.GetAt<double>(1));
+            data.EventData.TypedEventData.HasOverride = hasOverrideAccept;
         }
 
         /// <summary>
@@ -333,7 +339,7 @@ namespace Java.Util.Function
         /// <param name="arg1"><see cref="double"/></param>
         public virtual void Accept(T arg0, double arg1)
         {
-            
+            hasOverrideAccept = false;
         }
 
         #endregion

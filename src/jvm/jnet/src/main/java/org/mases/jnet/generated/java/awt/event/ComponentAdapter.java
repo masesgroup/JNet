@@ -26,6 +26,7 @@ public final class ComponentAdapter extends java.awt.event.ComponentAdapter impl
     final org.mases.jcobridge.JCListener _internalListener;
 
     public ComponentAdapter(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,19 +72,23 @@ public final class ComponentAdapter extends java.awt.event.ComponentAdapter impl
 
     //@Override
     public void componentHidden(java.awt.event.ComponentEvent arg0) {
-        raiseEvent("componentHidden", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("componentHidden", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.componentHidden(arg0);
     }
     //@Override
     public void componentMoved(java.awt.event.ComponentEvent arg0) {
-        raiseEvent("componentMoved", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("componentMoved", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.componentMoved(arg0);
     }
     //@Override
     public void componentResized(java.awt.event.ComponentEvent arg0) {
-        raiseEvent("componentResized", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("componentResized", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.componentResized(arg0);
     }
     //@Override
     public void componentShown(java.awt.event.ComponentEvent arg0) {
-        raiseEvent("componentShown", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("componentShown", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.componentShown(arg0);
     }
 
 }

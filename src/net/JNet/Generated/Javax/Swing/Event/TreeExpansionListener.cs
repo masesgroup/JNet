@@ -145,8 +145,8 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("treeCollapsed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeExpansionEvent>>>(TreeCollapsedEventHandler));
-            AddEventHandler("treeExpanded", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeExpansionEvent>>>(TreeExpandedEventHandler));
+            AddEventHandler("treeCollapsed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(TreeCollapsedEventHandler));
+            AddEventHandler("treeExpanded", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(TreeExpandedEventHandler));
 
         }
 
@@ -156,10 +156,13 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnTreeCollapsed"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.TreeExpansionEvent> OnTreeCollapsed { get; set; } = null;
 
-        void TreeCollapsedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeExpansionEvent>> data)
+        bool hasOverrideTreeCollapsed = true;
+        void TreeCollapsedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideTreeCollapsed = true;
             var methodToExecute = (OnTreeCollapsed != null) ? OnTreeCollapsed : TreeCollapsed;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.TreeExpansionEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideTreeCollapsed;
         }
 
         /// <summary>
@@ -168,7 +171,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionEvent"/></param>
         public virtual void TreeCollapsed(Javax.Swing.Event.TreeExpansionEvent arg0)
         {
-            
+            hasOverrideTreeCollapsed = false;
         }
 
         /// <summary>
@@ -177,10 +180,13 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnTreeExpanded"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.TreeExpansionEvent> OnTreeExpanded { get; set; } = null;
 
-        void TreeExpandedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeExpansionEvent>> data)
+        bool hasOverrideTreeExpanded = true;
+        void TreeExpandedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideTreeExpanded = true;
             var methodToExecute = (OnTreeExpanded != null) ? OnTreeExpanded : TreeExpanded;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.TreeExpansionEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideTreeExpanded;
         }
 
         /// <summary>
@@ -189,7 +195,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionEvent"/></param>
         public virtual void TreeExpanded(Javax.Swing.Event.TreeExpansionEvent arg0)
         {
-            
+            hasOverrideTreeExpanded = false;
         }
 
         #endregion

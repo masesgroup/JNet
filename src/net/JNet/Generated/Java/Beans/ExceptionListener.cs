@@ -140,7 +140,7 @@ namespace Java.Beans
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("exceptionThrown", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(ExceptionThrownEventHandler));
+            AddEventHandler("exceptionThrown", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ExceptionThrownEventHandler));
 
         }
 
@@ -150,10 +150,13 @@ namespace Java.Beans
         /// <remarks>If <see cref="OnExceptionThrown"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnExceptionThrown { get; set; } = null;
 
-        void ExceptionThrownEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        bool hasOverrideExceptionThrown = true;
+        void ExceptionThrownEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideExceptionThrown = true;
             var methodToExecute = (OnExceptionThrown != null) ? OnExceptionThrown : ExceptionThrown;
-            methodToExecute.Invoke(JVMBridgeException.New(data.EventData.EventData as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
+            methodToExecute.Invoke(JVMBridgeException.New(data.EventData.ExtraData.Get(0) as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
+            data.EventData.TypedEventData.HasOverride = hasOverrideExceptionThrown;
         }
 
         /// <summary>
@@ -162,7 +165,7 @@ namespace Java.Beans
         /// <param name="arg0"><see cref="Java.Lang.Exception"/></param>
         public virtual void ExceptionThrown(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
-            
+            hasOverrideExceptionThrown = false;
         }
 
         #endregion

@@ -141,7 +141,7 @@ namespace Java.Beans
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("vetoableChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeEvent>>>(VetoableChangeEventHandler));
+            AddEventHandler("vetoableChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(VetoableChangeEventHandler));
 
         }
 
@@ -151,10 +151,13 @@ namespace Java.Beans
         /// <remarks>If <see cref="OnVetoableChange"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Beans.PropertyChangeEvent> OnVetoableChange { get; set; } = null;
 
-        void VetoableChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeEvent>> data)
+        bool hasOverrideVetoableChange = true;
+        void VetoableChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideVetoableChange = true;
             var methodToExecute = (OnVetoableChange != null) ? OnVetoableChange : VetoableChange;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Beans.PropertyChangeEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideVetoableChange;
         }
 
         /// <summary>
@@ -164,7 +167,7 @@ namespace Java.Beans
         /// <exception cref="Java.Beans.PropertyVetoException"/>
         public virtual void VetoableChange(Java.Beans.PropertyChangeEvent arg0)
         {
-            
+            hasOverrideVetoableChange = false;
         }
 
         #endregion

@@ -117,11 +117,11 @@ namespace Java.Awt.Dnd
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("drop", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DropTargetDropEvent>>>(DropEventHandler));
-            AddEventHandler("dragEnter", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DropTargetDragEvent>>>(DragEnterEventHandler));
-            AddEventHandler("dragExit", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DropTargetEvent>>>(DragExitEventHandler));
-            AddEventHandler("dragOver", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DropTargetDragEvent>>>(DragOverEventHandler));
-            AddEventHandler("dropActionChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DropTargetDragEvent>>>(DropActionChangedEventHandler));
+            AddEventHandler("drop", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(DropEventHandler));
+            AddEventHandler("dragEnter", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(DragEnterEventHandler));
+            AddEventHandler("dragExit", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(DragExitEventHandler));
+            AddEventHandler("dragOver", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(DragOverEventHandler));
+            AddEventHandler("dropActionChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(DropActionChangedEventHandler));
 
         }
 
@@ -131,10 +131,13 @@ namespace Java.Awt.Dnd
         /// <remarks>If <see cref="OnDrop"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.Dnd.DropTargetDropEvent> OnDrop { get; set; } = null;
 
-        void DropEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DropTargetDropEvent>> data)
+        bool hasOverrideDrop = true;
+        void DropEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideDrop = true;
             var methodToExecute = (OnDrop != null) ? OnDrop : Drop;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.Dnd.DropTargetDropEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideDrop;
         }
 
         /// <summary>
@@ -143,7 +146,7 @@ namespace Java.Awt.Dnd
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetDropEvent"/></param>
         public virtual void Drop(Java.Awt.Dnd.DropTargetDropEvent arg0)
         {
-            
+            hasOverrideDrop = false;
         }
 
         /// <summary>
@@ -152,10 +155,13 @@ namespace Java.Awt.Dnd
         /// <remarks>If <see cref="OnDragEnter"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.Dnd.DropTargetDragEvent> OnDragEnter { get; set; } = null;
 
-        void DragEnterEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DropTargetDragEvent>> data)
+        bool hasOverrideDragEnter = true;
+        void DragEnterEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideDragEnter = true;
             var methodToExecute = (OnDragEnter != null) ? OnDragEnter : DragEnter;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.Dnd.DropTargetDragEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideDragEnter;
         }
 
         /// <summary>
@@ -164,7 +170,7 @@ namespace Java.Awt.Dnd
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetDragEvent"/></param>
         public virtual void DragEnter(Java.Awt.Dnd.DropTargetDragEvent arg0)
         {
-            
+            hasOverrideDragEnter = false;
         }
 
         /// <summary>
@@ -173,10 +179,13 @@ namespace Java.Awt.Dnd
         /// <remarks>If <see cref="OnDragExit"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.Dnd.DropTargetEvent> OnDragExit { get; set; } = null;
 
-        void DragExitEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DropTargetEvent>> data)
+        bool hasOverrideDragExit = true;
+        void DragExitEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideDragExit = true;
             var methodToExecute = (OnDragExit != null) ? OnDragExit : DragExit;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.Dnd.DropTargetEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideDragExit;
         }
 
         /// <summary>
@@ -185,7 +194,7 @@ namespace Java.Awt.Dnd
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetEvent"/></param>
         public virtual void DragExit(Java.Awt.Dnd.DropTargetEvent arg0)
         {
-            
+            hasOverrideDragExit = false;
         }
 
         /// <summary>
@@ -194,10 +203,13 @@ namespace Java.Awt.Dnd
         /// <remarks>If <see cref="OnDragOver"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.Dnd.DropTargetDragEvent> OnDragOver { get; set; } = null;
 
-        void DragOverEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DropTargetDragEvent>> data)
+        bool hasOverrideDragOver = true;
+        void DragOverEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideDragOver = true;
             var methodToExecute = (OnDragOver != null) ? OnDragOver : DragOver;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.Dnd.DropTargetDragEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideDragOver;
         }
 
         /// <summary>
@@ -206,7 +218,7 @@ namespace Java.Awt.Dnd
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetDragEvent"/></param>
         public virtual void DragOver(Java.Awt.Dnd.DropTargetDragEvent arg0)
         {
-            
+            hasOverrideDragOver = false;
         }
 
         /// <summary>
@@ -215,10 +227,13 @@ namespace Java.Awt.Dnd
         /// <remarks>If <see cref="OnDropActionChanged"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.Dnd.DropTargetDragEvent> OnDropActionChanged { get; set; } = null;
 
-        void DropActionChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DropTargetDragEvent>> data)
+        bool hasOverrideDropActionChanged = true;
+        void DropActionChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideDropActionChanged = true;
             var methodToExecute = (OnDropActionChanged != null) ? OnDropActionChanged : DropActionChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.Dnd.DropTargetDragEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideDropActionChanged;
         }
 
         /// <summary>
@@ -227,7 +242,7 @@ namespace Java.Awt.Dnd
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetDragEvent"/></param>
         public virtual void DropActionChanged(Java.Awt.Dnd.DropTargetDragEvent arg0)
         {
-            
+            hasOverrideDropActionChanged = false;
         }
 
         #endregion

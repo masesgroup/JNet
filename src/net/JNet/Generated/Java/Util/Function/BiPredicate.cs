@@ -186,10 +186,10 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("test", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(TestEventHandler));
-            AddEventHandler("and", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate>>>(AndEventHandler));
-            AddEventHandler("negate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler));
-            AddEventHandler("or", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate>>>(OrEventHandler));
+            AddEventHandler("test", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(TestEventHandler));
+            AddEventHandler("and", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AndEventHandler));
+            AddEventHandler("negate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(NegateEventHandler));
+            AddEventHandler("or", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OrEventHandler));
 
         }
 
@@ -199,11 +199,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnTest"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<object, object, bool> OnTest { get; set; } = null;
 
-        void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
+        bool hasOverrideTest = true;
+        void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideTest = true;
             var methodToExecute = (OnTest != null) ? OnTest : Test;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<object>(0));
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<object>(0), data.EventData.GetAt<object>(1));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideTest, executionResult);
         }
 
         /// <summary>
@@ -214,7 +216,7 @@ namespace Java.Util.Function
         /// <returns><see cref="bool"/></returns>
         public virtual bool Test(object arg0, object arg1)
         {
-            return default;
+            hasOverrideTest = false; return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
@@ -233,11 +235,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnAnd"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.BiPredicate, Java.Util.Function.BiPredicate> OnAnd { get; set; } = null;
 
-        void AndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate>> data)
+        bool hasOverrideAnd = true;
+        void AndEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideAnd = true;
             var methodToExecute = (OnAnd != null) ? OnAnd : And;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.BiPredicate>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideAnd, executionResult);
         }
 
         /// <summary>
@@ -248,7 +252,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.BiPredicate And(Java.Util.Function.BiPredicate arg0)
         {
-            return AndDefault(arg0);
+            hasOverrideAnd = false; return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#negate()"/>
@@ -266,11 +270,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnNegate"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.BiPredicate> OnNegate { get; set; } = null;
 
-        void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        bool hasOverrideNegate = true;
+        void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideNegate = true;
             var methodToExecute = (OnNegate != null) ? OnNegate : Negate;
             var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
+            data.EventData.TypedEventData.SetReturnData(hasOverrideNegate, executionResult);
         }
 
         /// <summary>
@@ -280,7 +286,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="NegateDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.BiPredicate Negate()
         {
-            return NegateDefault();
+            hasOverrideNegate = false; return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
@@ -299,11 +305,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnOr"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.BiPredicate, Java.Util.Function.BiPredicate> OnOr { get; set; } = null;
 
-        void OrEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate>> data)
+        bool hasOverrideOr = true;
+        void OrEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideOr = true;
             var methodToExecute = (OnOr != null) ? OnOr : Or;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.BiPredicate>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideOr, executionResult);
         }
 
         /// <summary>
@@ -314,7 +322,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OrDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.BiPredicate Or(Java.Util.Function.BiPredicate arg0)
         {
-            return OrDefault(arg0);
+            hasOverrideOr = false; return default;
         }
 
         #endregion
@@ -465,10 +473,10 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("test", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(TestEventHandler));
-            AddEventHandler("and", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>>>>(And<Arg0objectSuperT, Arg0objectSuperU>EventHandler));
-            AddEventHandler("negate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler));
-            AddEventHandler("or", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>>>>(Or<Arg0objectSuperT, Arg0objectSuperU>EventHandler));
+            AddEventHandler("test", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(TestEventHandler));
+            AddEventHandler("and", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(And<Arg0objectSuperT, Arg0objectSuperU>EventHandler));
+            AddEventHandler("negate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(NegateEventHandler));
+            AddEventHandler("or", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(Or<Arg0objectSuperT, Arg0objectSuperU>EventHandler));
 
         }
 
@@ -478,11 +486,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnTest"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<T, U, bool> OnTest { get; set; } = null;
 
-        void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
+        bool hasOverrideTest = true;
+        void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideTest = true;
             var methodToExecute = (OnTest != null) ? OnTest : Test;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<U>(0));
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<T>(0), data.EventData.GetAt<U>(1));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideTest, executionResult);
         }
 
         /// <summary>
@@ -493,7 +503,7 @@ namespace Java.Util.Function
         /// <returns><see cref="bool"/></returns>
         public virtual bool Test(T arg0, U arg1)
         {
-            return default;
+            hasOverrideTest = false; return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
@@ -514,11 +524,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnAnd<Arg0objectSuperT, Arg0objectSuperU>"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>, Java.Util.Function.BiPredicate<T, U>> OnAnd<Arg0objectSuperT, Arg0objectSuperU> { get; set; } = null;
 
-        void And<Arg0objectSuperT, Arg0objectSuperU>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>>> data)
+        bool hasOverrideAnd<Arg0objectSuperT, Arg0objectSuperU> = true;
+        void And<Arg0objectSuperT, Arg0objectSuperU>EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideAnd<Arg0objectSuperT, Arg0objectSuperU> = true;
             var methodToExecute = (OnAnd<Arg0objectSuperT, Arg0objectSuperU> != null) ? OnAnd<Arg0objectSuperT, Arg0objectSuperU> : And<Arg0objectSuperT, Arg0objectSuperU>;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideAnd<Arg0objectSuperT, Arg0objectSuperU>, executionResult);
         }
 
         /// <summary>
@@ -531,7 +543,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="And<Arg0objectSuperT, Arg0objectSuperU>Default"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.BiPredicate<T, U> And<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
         {
-            return And<Arg0objectSuperT, Arg0objectSuperU>Default(arg0);
+            hasOverrideAnd<Arg0objectSuperT, Arg0objectSuperU> = false; return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#negate()"/>
@@ -549,11 +561,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnNegate"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.BiPredicate<T, U>> OnNegate { get; set; } = null;
 
-        void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        bool hasOverrideNegate = true;
+        void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideNegate = true;
             var methodToExecute = (OnNegate != null) ? OnNegate : Negate;
             var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
+            data.EventData.TypedEventData.SetReturnData(hasOverrideNegate, executionResult);
         }
 
         /// <summary>
@@ -563,7 +577,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="NegateDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.BiPredicate<T, U> Negate()
         {
-            return NegateDefault();
+            hasOverrideNegate = false; return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
@@ -584,11 +598,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnOr<Arg0objectSuperT, Arg0objectSuperU>"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>, Java.Util.Function.BiPredicate<T, U>> OnOr<Arg0objectSuperT, Arg0objectSuperU> { get; set; } = null;
 
-        void Or<Arg0objectSuperT, Arg0objectSuperU>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>>> data)
+        bool hasOverrideOr<Arg0objectSuperT, Arg0objectSuperU> = true;
+        void Or<Arg0objectSuperT, Arg0objectSuperU>EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideOr<Arg0objectSuperT, Arg0objectSuperU> = true;
             var methodToExecute = (OnOr<Arg0objectSuperT, Arg0objectSuperU> != null) ? OnOr<Arg0objectSuperT, Arg0objectSuperU> : Or<Arg0objectSuperT, Arg0objectSuperU>;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideOr<Arg0objectSuperT, Arg0objectSuperU>, executionResult);
         }
 
         /// <summary>
@@ -601,7 +617,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="Or<Arg0objectSuperT, Arg0objectSuperU>Default"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.BiPredicate<T, U> Or<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
         {
-            return Or<Arg0objectSuperT, Arg0objectSuperU>Default(arg0);
+            hasOverrideOr<Arg0objectSuperT, Arg0objectSuperU> = false; return default;
         }
 
         #endregion

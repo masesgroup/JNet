@@ -117,23 +117,23 @@ namespace Org.Xml.Sax.Helpers
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("characters", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<char[]>>>(CharactersEventHandler));
-            AddEventHandler("endDocument", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(EndDocumentEventHandler));
-            AddEventHandler("endElement", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(EndElementEventHandler));
-            AddEventHandler("endPrefixMapping", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(EndPrefixMappingEventHandler));
-            AddEventHandler("ignorableWhitespace", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<char[]>>>(IgnorableWhitespaceEventHandler));
-            AddEventHandler("parse", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(ParseEventHandler));
-            AddEventHandler("parse1", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.InputSource>>>(Parse1EventHandler));
-            AddEventHandler("processingInstruction", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(ProcessingInstructionEventHandler));
-            AddEventHandler("setDocumentLocator", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.Locator>>>(SetDocumentLocatorEventHandler));
-            AddEventHandler("setDTDHandler", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.DTDHandler>>>(SetDTDHandlerEventHandler));
-            AddEventHandler("setEntityResolver", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.EntityResolver>>>(SetEntityResolverEventHandler));
-            AddEventHandler("setErrorHandler", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.ErrorHandler>>>(SetErrorHandlerEventHandler));
-            AddEventHandler("setLocale", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Locale>>>(SetLocaleEventHandler));
-            AddEventHandler("skippedEntity", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(SkippedEntityEventHandler));
-            AddEventHandler("startDocument", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(StartDocumentEventHandler));
-            AddEventHandler("startElement", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(StartElementEventHandler));
-            AddEventHandler("startPrefixMapping", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(StartPrefixMappingEventHandler));
+            AddEventHandler("characters", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(CharactersEventHandler));
+            AddEventHandler("endDocument", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(EndDocumentEventHandler));
+            AddEventHandler("endElement", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(EndElementEventHandler));
+            AddEventHandler("endPrefixMapping", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(EndPrefixMappingEventHandler));
+            AddEventHandler("ignorableWhitespace", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(IgnorableWhitespaceEventHandler));
+            AddEventHandler("parse", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ParseEventHandler));
+            AddEventHandler("parse1", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(Parse1EventHandler));
+            AddEventHandler("processingInstruction", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ProcessingInstructionEventHandler));
+            AddEventHandler("setDocumentLocator", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(SetDocumentLocatorEventHandler));
+            AddEventHandler("setDTDHandler", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(SetDTDHandlerEventHandler));
+            AddEventHandler("setEntityResolver", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(SetEntityResolverEventHandler));
+            AddEventHandler("setErrorHandler", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(SetErrorHandlerEventHandler));
+            AddEventHandler("setLocale", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(SetLocaleEventHandler));
+            AddEventHandler("skippedEntity", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(SkippedEntityEventHandler));
+            AddEventHandler("startDocument", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(StartDocumentEventHandler));
+            AddEventHandler("startElement", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(StartElementEventHandler));
+            AddEventHandler("startPrefixMapping", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(StartPrefixMappingEventHandler));
 
         }
 
@@ -143,10 +143,13 @@ namespace Org.Xml.Sax.Helpers
         /// <remarks>If <see cref="OnCharacters"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<char[], int, int> OnCharacters { get; set; } = null;
 
-        void CharactersEventHandler(object sender, CLRListenerEventArgs<CLREventData<char[]>> data)
+        bool hasOverrideCharacters = true;
+        void CharactersEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideCharacters = true;
             var methodToExecute = (OnCharacters != null) ? OnCharacters : Characters;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<int>(1));
+            methodToExecute.Invoke(data.EventData.GetAt<char[]>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<int>(2));
+            data.EventData.TypedEventData.HasOverride = hasOverrideCharacters;
         }
 
         /// <summary>
@@ -158,7 +161,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public virtual void Characters(char[] arg0, int arg1, int arg2)
         {
-            
+            hasOverrideCharacters = false;
         }
 
         /// <summary>
@@ -167,10 +170,13 @@ namespace Org.Xml.Sax.Helpers
         /// <remarks>If <see cref="OnEndDocument"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action OnEndDocument { get; set; } = null;
 
-        void EndDocumentEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        bool hasOverrideEndDocument = true;
+        void EndDocumentEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideEndDocument = true;
             var methodToExecute = (OnEndDocument != null) ? OnEndDocument : EndDocument;
             methodToExecute.Invoke();
+            data.EventData.TypedEventData.HasOverride = hasOverrideEndDocument;
         }
 
         /// <summary>
@@ -179,7 +185,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public virtual void EndDocument()
         {
-            
+            hasOverrideEndDocument = false;
         }
 
         /// <summary>
@@ -188,10 +194,13 @@ namespace Org.Xml.Sax.Helpers
         /// <remarks>If <see cref="OnEndElement"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Lang.String, Java.Lang.String, Java.Lang.String> OnEndElement { get; set; } = null;
 
-        void EndElementEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
+        bool hasOverrideEndElement = true;
+        void EndElementEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideEndElement = true;
             var methodToExecute = (OnEndElement != null) ? OnEndElement : EndElement;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Lang.String>(0), data.EventData.GetAt<Java.Lang.String>(1));
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Lang.String>(0), data.EventData.GetAt<Java.Lang.String>(1), data.EventData.GetAt<Java.Lang.String>(2));
+            data.EventData.TypedEventData.HasOverride = hasOverrideEndElement;
         }
 
         /// <summary>
@@ -203,7 +212,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public virtual void EndElement(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            
+            hasOverrideEndElement = false;
         }
 
         /// <summary>
@@ -212,10 +221,13 @@ namespace Org.Xml.Sax.Helpers
         /// <remarks>If <see cref="OnEndPrefixMapping"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Lang.String> OnEndPrefixMapping { get; set; } = null;
 
-        void EndPrefixMappingEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
+        bool hasOverrideEndPrefixMapping = true;
+        void EndPrefixMappingEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideEndPrefixMapping = true;
             var methodToExecute = (OnEndPrefixMapping != null) ? OnEndPrefixMapping : EndPrefixMapping;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Lang.String>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideEndPrefixMapping;
         }
 
         /// <summary>
@@ -224,7 +236,7 @@ namespace Org.Xml.Sax.Helpers
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public virtual void EndPrefixMapping(Java.Lang.String arg0)
         {
-            
+            hasOverrideEndPrefixMapping = false;
         }
 
         /// <summary>
@@ -233,10 +245,13 @@ namespace Org.Xml.Sax.Helpers
         /// <remarks>If <see cref="OnIgnorableWhitespace"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<char[], int, int> OnIgnorableWhitespace { get; set; } = null;
 
-        void IgnorableWhitespaceEventHandler(object sender, CLRListenerEventArgs<CLREventData<char[]>> data)
+        bool hasOverrideIgnorableWhitespace = true;
+        void IgnorableWhitespaceEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideIgnorableWhitespace = true;
             var methodToExecute = (OnIgnorableWhitespace != null) ? OnIgnorableWhitespace : IgnorableWhitespace;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<int>(1));
+            methodToExecute.Invoke(data.EventData.GetAt<char[]>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<int>(2));
+            data.EventData.TypedEventData.HasOverride = hasOverrideIgnorableWhitespace;
         }
 
         /// <summary>
@@ -248,7 +263,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public virtual void IgnorableWhitespace(char[] arg0, int arg1, int arg2)
         {
-            
+            hasOverrideIgnorableWhitespace = false;
         }
 
         /// <summary>
@@ -257,10 +272,13 @@ namespace Org.Xml.Sax.Helpers
         /// <remarks>If <see cref="OnParse"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Lang.String> OnParse { get; set; } = null;
 
-        void ParseEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
+        bool hasOverrideParse = true;
+        void ParseEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideParse = true;
             var methodToExecute = (OnParse != null) ? OnParse : Parse;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Lang.String>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideParse;
         }
 
         /// <summary>
@@ -271,7 +289,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public virtual void Parse(Java.Lang.String arg0)
         {
-            
+            hasOverrideParse = false;
         }
 
         /// <summary>
@@ -280,10 +298,13 @@ namespace Org.Xml.Sax.Helpers
         /// <remarks>If <see cref="OnParse1"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Org.Xml.Sax.InputSource> OnParse1 { get; set; } = null;
 
-        void Parse1EventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.InputSource>> data)
+        bool hasOverrideParse1 = true;
+        void Parse1EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideParse1 = true;
             var methodToExecute = (OnParse1 != null) ? OnParse1 : Parse;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Org.Xml.Sax.InputSource>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideParse1;
         }
 
         /// <summary>
@@ -294,7 +315,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public virtual void Parse(Org.Xml.Sax.InputSource arg0)
         {
-            
+            hasOverrideParse1 = false;
         }
 
         /// <summary>
@@ -303,10 +324,13 @@ namespace Org.Xml.Sax.Helpers
         /// <remarks>If <see cref="OnProcessingInstruction"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Lang.String, Java.Lang.String> OnProcessingInstruction { get; set; } = null;
 
-        void ProcessingInstructionEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
+        bool hasOverrideProcessingInstruction = true;
+        void ProcessingInstructionEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideProcessingInstruction = true;
             var methodToExecute = (OnProcessingInstruction != null) ? OnProcessingInstruction : ProcessingInstruction;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Lang.String>(0));
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Lang.String>(0), data.EventData.GetAt<Java.Lang.String>(1));
+            data.EventData.TypedEventData.HasOverride = hasOverrideProcessingInstruction;
         }
 
         /// <summary>
@@ -317,7 +341,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public virtual void ProcessingInstruction(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            
+            hasOverrideProcessingInstruction = false;
         }
 
         /// <summary>
@@ -326,10 +350,13 @@ namespace Org.Xml.Sax.Helpers
         /// <remarks>If <see cref="OnSetDocumentLocator"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Org.Xml.Sax.Locator> OnSetDocumentLocator { get; set; } = null;
 
-        void SetDocumentLocatorEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.Locator>> data)
+        bool hasOverrideSetDocumentLocator = true;
+        void SetDocumentLocatorEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideSetDocumentLocator = true;
             var methodToExecute = (OnSetDocumentLocator != null) ? OnSetDocumentLocator : SetDocumentLocator;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Org.Xml.Sax.Locator>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideSetDocumentLocator;
         }
 
         /// <summary>
@@ -338,7 +365,7 @@ namespace Org.Xml.Sax.Helpers
         /// <param name="arg0"><see cref="Org.Xml.Sax.Locator"/></param>
         public virtual void SetDocumentLocator(Org.Xml.Sax.Locator arg0)
         {
-            
+            hasOverrideSetDocumentLocator = false;
         }
 
         /// <summary>
@@ -347,10 +374,13 @@ namespace Org.Xml.Sax.Helpers
         /// <remarks>If <see cref="OnSetDTDHandler"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Org.Xml.Sax.DTDHandler> OnSetDTDHandler { get; set; } = null;
 
-        void SetDTDHandlerEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.DTDHandler>> data)
+        bool hasOverrideSetDTDHandler = true;
+        void SetDTDHandlerEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideSetDTDHandler = true;
             var methodToExecute = (OnSetDTDHandler != null) ? OnSetDTDHandler : SetDTDHandler;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Org.Xml.Sax.DTDHandler>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideSetDTDHandler;
         }
 
         /// <summary>
@@ -359,7 +389,7 @@ namespace Org.Xml.Sax.Helpers
         /// <param name="arg0"><see cref="Org.Xml.Sax.DTDHandler"/></param>
         public virtual void SetDTDHandler(Org.Xml.Sax.DTDHandler arg0)
         {
-            
+            hasOverrideSetDTDHandler = false;
         }
 
         /// <summary>
@@ -368,10 +398,13 @@ namespace Org.Xml.Sax.Helpers
         /// <remarks>If <see cref="OnSetEntityResolver"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Org.Xml.Sax.EntityResolver> OnSetEntityResolver { get; set; } = null;
 
-        void SetEntityResolverEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.EntityResolver>> data)
+        bool hasOverrideSetEntityResolver = true;
+        void SetEntityResolverEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideSetEntityResolver = true;
             var methodToExecute = (OnSetEntityResolver != null) ? OnSetEntityResolver : SetEntityResolver;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Org.Xml.Sax.EntityResolver>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideSetEntityResolver;
         }
 
         /// <summary>
@@ -380,7 +413,7 @@ namespace Org.Xml.Sax.Helpers
         /// <param name="arg0"><see cref="Org.Xml.Sax.EntityResolver"/></param>
         public virtual void SetEntityResolver(Org.Xml.Sax.EntityResolver arg0)
         {
-            
+            hasOverrideSetEntityResolver = false;
         }
 
         /// <summary>
@@ -389,10 +422,13 @@ namespace Org.Xml.Sax.Helpers
         /// <remarks>If <see cref="OnSetErrorHandler"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Org.Xml.Sax.ErrorHandler> OnSetErrorHandler { get; set; } = null;
 
-        void SetErrorHandlerEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.ErrorHandler>> data)
+        bool hasOverrideSetErrorHandler = true;
+        void SetErrorHandlerEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideSetErrorHandler = true;
             var methodToExecute = (OnSetErrorHandler != null) ? OnSetErrorHandler : SetErrorHandler;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Org.Xml.Sax.ErrorHandler>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideSetErrorHandler;
         }
 
         /// <summary>
@@ -401,7 +437,7 @@ namespace Org.Xml.Sax.Helpers
         /// <param name="arg0"><see cref="Org.Xml.Sax.ErrorHandler"/></param>
         public virtual void SetErrorHandler(Org.Xml.Sax.ErrorHandler arg0)
         {
-            
+            hasOverrideSetErrorHandler = false;
         }
 
         /// <summary>
@@ -410,10 +446,13 @@ namespace Org.Xml.Sax.Helpers
         /// <remarks>If <see cref="OnSetLocale"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Util.Locale> OnSetLocale { get; set; } = null;
 
-        void SetLocaleEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Locale>> data)
+        bool hasOverrideSetLocale = true;
+        void SetLocaleEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideSetLocale = true;
             var methodToExecute = (OnSetLocale != null) ? OnSetLocale : SetLocale;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Locale>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideSetLocale;
         }
 
         /// <summary>
@@ -423,7 +462,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public virtual void SetLocale(Java.Util.Locale arg0)
         {
-            
+            hasOverrideSetLocale = false;
         }
 
         /// <summary>
@@ -432,10 +471,13 @@ namespace Org.Xml.Sax.Helpers
         /// <remarks>If <see cref="OnSkippedEntity"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Lang.String> OnSkippedEntity { get; set; } = null;
 
-        void SkippedEntityEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
+        bool hasOverrideSkippedEntity = true;
+        void SkippedEntityEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideSkippedEntity = true;
             var methodToExecute = (OnSkippedEntity != null) ? OnSkippedEntity : SkippedEntity;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Lang.String>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideSkippedEntity;
         }
 
         /// <summary>
@@ -445,7 +487,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public virtual void SkippedEntity(Java.Lang.String arg0)
         {
-            
+            hasOverrideSkippedEntity = false;
         }
 
         /// <summary>
@@ -454,10 +496,13 @@ namespace Org.Xml.Sax.Helpers
         /// <remarks>If <see cref="OnStartDocument"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action OnStartDocument { get; set; } = null;
 
-        void StartDocumentEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        bool hasOverrideStartDocument = true;
+        void StartDocumentEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideStartDocument = true;
             var methodToExecute = (OnStartDocument != null) ? OnStartDocument : StartDocument;
             methodToExecute.Invoke();
+            data.EventData.TypedEventData.HasOverride = hasOverrideStartDocument;
         }
 
         /// <summary>
@@ -466,7 +511,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public virtual void StartDocument()
         {
-            
+            hasOverrideStartDocument = false;
         }
 
         /// <summary>
@@ -475,10 +520,13 @@ namespace Org.Xml.Sax.Helpers
         /// <remarks>If <see cref="OnStartElement"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Lang.String, Java.Lang.String, Java.Lang.String, Org.Xml.Sax.Attributes> OnStartElement { get; set; } = null;
 
-        void StartElementEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
+        bool hasOverrideStartElement = true;
+        void StartElementEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideStartElement = true;
             var methodToExecute = (OnStartElement != null) ? OnStartElement : StartElement;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Lang.String>(0), data.EventData.GetAt<Java.Lang.String>(1), data.EventData.GetAt<Org.Xml.Sax.Attributes>(2));
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Lang.String>(0), data.EventData.GetAt<Java.Lang.String>(1), data.EventData.GetAt<Java.Lang.String>(2), data.EventData.GetAt<Org.Xml.Sax.Attributes>(3));
+            data.EventData.TypedEventData.HasOverride = hasOverrideStartElement;
         }
 
         /// <summary>
@@ -491,7 +539,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public virtual void StartElement(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Org.Xml.Sax.Attributes arg3)
         {
-            
+            hasOverrideStartElement = false;
         }
 
         /// <summary>
@@ -500,10 +548,13 @@ namespace Org.Xml.Sax.Helpers
         /// <remarks>If <see cref="OnStartPrefixMapping"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Lang.String, Java.Lang.String> OnStartPrefixMapping { get; set; } = null;
 
-        void StartPrefixMappingEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
+        bool hasOverrideStartPrefixMapping = true;
+        void StartPrefixMappingEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideStartPrefixMapping = true;
             var methodToExecute = (OnStartPrefixMapping != null) ? OnStartPrefixMapping : StartPrefixMapping;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Lang.String>(0));
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Lang.String>(0), data.EventData.GetAt<Java.Lang.String>(1));
+            data.EventData.TypedEventData.HasOverride = hasOverrideStartPrefixMapping;
         }
 
         /// <summary>
@@ -513,7 +564,7 @@ namespace Org.Xml.Sax.Helpers
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public virtual void StartPrefixMapping(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            
+            hasOverrideStartPrefixMapping = false;
         }
 
         #endregion

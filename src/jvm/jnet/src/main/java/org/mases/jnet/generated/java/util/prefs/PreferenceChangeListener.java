@@ -26,6 +26,7 @@ public final class PreferenceChangeListener implements org.mases.jcobridge.IJCLi
     final org.mases.jcobridge.JCListener _internalListener;
 
     public PreferenceChangeListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,7 +72,8 @@ public final class PreferenceChangeListener implements org.mases.jcobridge.IJCLi
 
     //@Override
     public void preferenceChange(java.util.prefs.PreferenceChangeEvent arg0) {
-        raiseEvent("preferenceChange", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("preferenceChange", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

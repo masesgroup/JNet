@@ -26,6 +26,7 @@ public final class DoublePredicate implements org.mases.jcobridge.IJCListener, j
     final org.mases.jcobridge.JCListener _internalListener;
 
     public DoublePredicate(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,11 +72,13 @@ public final class DoublePredicate implements org.mases.jcobridge.IJCListener, j
 
     //@Override
     public boolean test(double arg0) {
-        raiseEvent("test", arg0); Object retVal = getReturnData(); return (boolean)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("test", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM"); Object retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
     }
     //@Override
     public java.util.function.DoublePredicate and(java.util.function.DoublePredicate arg0) {
-        raiseEvent("and", arg0); Object retVal = getReturnData(); return (java.util.function.DoublePredicate)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("and", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.DoublePredicate.super.and(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.DoublePredicate)retVal;
     }
     //@Override
     public java.util.function.DoublePredicate andDefault(java.util.function.DoublePredicate arg0) {
@@ -83,7 +86,8 @@ public final class DoublePredicate implements org.mases.jcobridge.IJCListener, j
     }
     //@Override
     public java.util.function.DoublePredicate negate() {
-        raiseEvent("negate"); Object retVal = getReturnData(); return (java.util.function.DoublePredicate)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("negate", eventDataExchange); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.DoublePredicate.super.negate(); else retVal = eventDataExchange.getReturnData(); return (java.util.function.DoublePredicate)retVal;
     }
     //@Override
     public java.util.function.DoublePredicate negateDefault() {
@@ -91,7 +95,8 @@ public final class DoublePredicate implements org.mases.jcobridge.IJCListener, j
     }
     //@Override
     public java.util.function.DoublePredicate or(java.util.function.DoublePredicate arg0) {
-        raiseEvent("or", arg0); Object retVal = getReturnData(); return (java.util.function.DoublePredicate)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("or", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.DoublePredicate.super.or(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.DoublePredicate)retVal;
     }
     //@Override
     public java.util.function.DoublePredicate orDefault(java.util.function.DoublePredicate arg0) {

@@ -26,6 +26,7 @@ public final class ContainerAdapter extends java.awt.event.ContainerAdapter impl
     final org.mases.jcobridge.JCListener _internalListener;
 
     public ContainerAdapter(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,11 +72,13 @@ public final class ContainerAdapter extends java.awt.event.ContainerAdapter impl
 
     //@Override
     public void componentAdded(java.awt.event.ContainerEvent arg0) {
-        raiseEvent("componentAdded", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("componentAdded", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.componentAdded(arg0);
     }
     //@Override
     public void componentRemoved(java.awt.event.ContainerEvent arg0) {
-        raiseEvent("componentRemoved", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("componentRemoved", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.componentRemoved(arg0);
     }
 
 }

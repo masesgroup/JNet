@@ -195,9 +195,9 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("apply", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyEventHandler));
-            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>>>(AndThenEventHandler));
-            AddEventHandler("compose", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>>>(ComposeEventHandler));
+            AddEventHandler("apply", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ApplyEventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AndThenEventHandler));
+            AddEventHandler("compose", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ComposeEventHandler));
 
         }
 
@@ -207,11 +207,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnApply"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<object, object> OnApply { get; set; } = null;
 
-        void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
+        bool hasOverrideApply = true;
+        void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideApply = true;
             var methodToExecute = (OnApply != null) ? OnApply : Apply;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<object>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideApply, executionResult);
         }
 
         /// <summary>
@@ -221,7 +223,7 @@ namespace Java.Util.Function
         /// <returns><see cref="object"/></returns>
         public virtual object Apply(object arg0)
         {
-            return default;
+            hasOverrideApply = false; return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
@@ -240,11 +242,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.Function, Java.Util.Function.Function> OnAndThen { get; set; } = null;
 
-        void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>> data)
+        bool hasOverrideAndThen = true;
+        void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideAndThen = true;
             var methodToExecute = (OnAndThen != null) ? OnAndThen : AndThen;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Function>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideAndThen, executionResult);
         }
 
         /// <summary>
@@ -255,7 +259,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThenDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.Function AndThen(Java.Util.Function.Function arg0)
         {
-            return AndThenDefault(arg0);
+            hasOverrideAndThen = false; return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
@@ -274,11 +278,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnCompose"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.Function, Java.Util.Function.Function> OnCompose { get; set; } = null;
 
-        void ComposeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>> data)
+        bool hasOverrideCompose = true;
+        void ComposeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideCompose = true;
             var methodToExecute = (OnCompose != null) ? OnCompose : Compose;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Function>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideCompose, executionResult);
         }
 
         /// <summary>
@@ -289,7 +295,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="ComposeDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.Function Compose(Java.Util.Function.Function arg0)
         {
-            return ComposeDefault(arg0);
+            hasOverrideCompose = false; return default;
         }
 
         #endregion
@@ -436,9 +442,9 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("apply", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyEventHandler));
-            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>>>(AndThen<V, Arg0objectSuperR, Arg0ExtendsV>EventHandler));
-            AddEventHandler("compose", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT>>>>(Compose<V, Arg0objectSuperV, Arg0ExtendsT>EventHandler));
+            AddEventHandler("apply", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ApplyEventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AndThen<V, Arg0objectSuperR, Arg0ExtendsV>EventHandler));
+            AddEventHandler("compose", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(Compose<V, Arg0objectSuperV, Arg0ExtendsT>EventHandler));
 
         }
 
@@ -448,11 +454,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnApply"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<T, R> OnApply { get; set; } = null;
 
-        void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
+        bool hasOverrideApply = true;
+        void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideApply = true;
             var methodToExecute = (OnApply != null) ? OnApply : Apply;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<T>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideApply, executionResult);
         }
 
         /// <summary>
@@ -462,7 +470,7 @@ namespace Java.Util.Function
         /// <returns><typeparamref name="R"/></returns>
         public virtual R Apply(T arg0)
         {
-            return default;
+            hasOverrideApply = false; return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
@@ -484,11 +492,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnAndThen<V, Arg0objectSuperR, Arg0ExtendsV>"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>, Java.Util.Function.Function<T, V>> OnAndThen<V, Arg0objectSuperR, Arg0ExtendsV> { get; set; } = null;
 
-        void AndThen<V, Arg0objectSuperR, Arg0ExtendsV>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>> data)
+        bool hasOverrideAndThen<V, Arg0objectSuperR, Arg0ExtendsV> = true;
+        void AndThen<V, Arg0objectSuperR, Arg0ExtendsV>EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideAndThen<V, Arg0objectSuperR, Arg0ExtendsV> = true;
             var methodToExecute = (OnAndThen<V, Arg0objectSuperR, Arg0ExtendsV> != null) ? OnAndThen<V, Arg0objectSuperR, Arg0ExtendsV> : AndThen<V, Arg0objectSuperR, Arg0ExtendsV>;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideAndThen<V, Arg0objectSuperR, Arg0ExtendsV>, executionResult);
         }
 
         /// <summary>
@@ -502,7 +512,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThen<V, Arg0objectSuperR, Arg0ExtendsV>Default"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.Function<T, V> AndThen<V, Arg0objectSuperR, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
         {
-            return AndThen<V, Arg0objectSuperR, Arg0ExtendsV>Default(arg0);
+            hasOverrideAndThen<V, Arg0objectSuperR, Arg0ExtendsV> = false; return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
@@ -524,11 +534,13 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnCompose<V, Arg0objectSuperV, Arg0ExtendsT>"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT>, Java.Util.Function.Function<V, R>> OnCompose<V, Arg0objectSuperV, Arg0ExtendsT> { get; set; } = null;
 
-        void Compose<V, Arg0objectSuperV, Arg0ExtendsT>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT>>> data)
+        bool hasOverrideCompose<V, Arg0objectSuperV, Arg0ExtendsT> = true;
+        void Compose<V, Arg0objectSuperV, Arg0ExtendsT>EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideCompose<V, Arg0objectSuperV, Arg0ExtendsT> = true;
             var methodToExecute = (OnCompose<V, Arg0objectSuperV, Arg0ExtendsT> != null) ? OnCompose<V, Arg0objectSuperV, Arg0ExtendsT> : Compose<V, Arg0objectSuperV, Arg0ExtendsT>;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT>>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideCompose<V, Arg0objectSuperV, Arg0ExtendsT>, executionResult);
         }
 
         /// <summary>
@@ -542,7 +554,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="Compose<V, Arg0objectSuperV, Arg0ExtendsT>Default"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.Function<V, R> Compose<V, Arg0objectSuperV, Arg0ExtendsT>(Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT> arg0) where Arg0objectSuperV : V where Arg0ExtendsT : T
         {
-            return Compose<V, Arg0objectSuperV, Arg0ExtendsT>Default(arg0);
+            hasOverrideCompose<V, Arg0objectSuperV, Arg0ExtendsT> = false; return default;
         }
 
         #endregion

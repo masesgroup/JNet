@@ -140,7 +140,7 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("hyperlinkUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.HyperlinkEvent>>>(HyperlinkUpdateEventHandler));
+            AddEventHandler("hyperlinkUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(HyperlinkUpdateEventHandler));
 
         }
 
@@ -150,10 +150,13 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnHyperlinkUpdate"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.HyperlinkEvent> OnHyperlinkUpdate { get; set; } = null;
 
-        void HyperlinkUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.HyperlinkEvent>> data)
+        bool hasOverrideHyperlinkUpdate = true;
+        void HyperlinkUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideHyperlinkUpdate = true;
             var methodToExecute = (OnHyperlinkUpdate != null) ? OnHyperlinkUpdate : HyperlinkUpdate;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.HyperlinkEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideHyperlinkUpdate;
         }
 
         /// <summary>
@@ -162,7 +165,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.HyperlinkEvent"/></param>
         public virtual void HyperlinkUpdate(Javax.Swing.Event.HyperlinkEvent arg0)
         {
-            
+            hasOverrideHyperlinkUpdate = false;
         }
 
         #endregion

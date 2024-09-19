@@ -26,6 +26,7 @@ public final class TableColumnModelListener implements org.mases.jcobridge.IJCLi
     final org.mases.jcobridge.JCListener _internalListener;
 
     public TableColumnModelListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,23 +72,28 @@ public final class TableColumnModelListener implements org.mases.jcobridge.IJCLi
 
     //@Override
     public void columnAdded(javax.swing.event.TableColumnModelEvent arg0) {
-        raiseEvent("columnAdded", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("columnAdded", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void columnMarginChanged(javax.swing.event.ChangeEvent arg0) {
-        raiseEvent("columnMarginChanged", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("columnMarginChanged", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void columnMoved(javax.swing.event.TableColumnModelEvent arg0) {
-        raiseEvent("columnMoved", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("columnMoved", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void columnRemoved(javax.swing.event.TableColumnModelEvent arg0) {
-        raiseEvent("columnRemoved", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("columnRemoved", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void columnSelectionChanged(javax.swing.event.ListSelectionEvent arg0) {
-        raiseEvent("columnSelectionChanged", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("columnSelectionChanged", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

@@ -140,7 +140,7 @@ namespace Javax.Sound.Midi
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("controlChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sound.Midi.ShortMessage>>>(ControlChangeEventHandler));
+            AddEventHandler("controlChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ControlChangeEventHandler));
 
         }
 
@@ -150,10 +150,13 @@ namespace Javax.Sound.Midi
         /// <remarks>If <see cref="OnControlChange"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Sound.Midi.ShortMessage> OnControlChange { get; set; } = null;
 
-        void ControlChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sound.Midi.ShortMessage>> data)
+        bool hasOverrideControlChange = true;
+        void ControlChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideControlChange = true;
             var methodToExecute = (OnControlChange != null) ? OnControlChange : ControlChange;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Sound.Midi.ShortMessage>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideControlChange;
         }
 
         /// <summary>
@@ -162,7 +165,7 @@ namespace Javax.Sound.Midi
         /// <param name="arg0"><see cref="Javax.Sound.Midi.ShortMessage"/></param>
         public virtual void ControlChange(Javax.Sound.Midi.ShortMessage arg0)
         {
-            
+            hasOverrideControlChange = false;
         }
 
         #endregion

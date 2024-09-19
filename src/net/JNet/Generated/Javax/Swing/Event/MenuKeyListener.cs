@@ -150,9 +150,9 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("menuKeyPressed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuKeyEvent>>>(MenuKeyPressedEventHandler));
-            AddEventHandler("menuKeyReleased", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuKeyEvent>>>(MenuKeyReleasedEventHandler));
-            AddEventHandler("menuKeyTyped", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuKeyEvent>>>(MenuKeyTypedEventHandler));
+            AddEventHandler("menuKeyPressed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(MenuKeyPressedEventHandler));
+            AddEventHandler("menuKeyReleased", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(MenuKeyReleasedEventHandler));
+            AddEventHandler("menuKeyTyped", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(MenuKeyTypedEventHandler));
 
         }
 
@@ -162,10 +162,13 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnMenuKeyPressed"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.MenuKeyEvent> OnMenuKeyPressed { get; set; } = null;
 
-        void MenuKeyPressedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuKeyEvent>> data)
+        bool hasOverrideMenuKeyPressed = true;
+        void MenuKeyPressedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideMenuKeyPressed = true;
             var methodToExecute = (OnMenuKeyPressed != null) ? OnMenuKeyPressed : MenuKeyPressed;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.MenuKeyEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideMenuKeyPressed;
         }
 
         /// <summary>
@@ -174,7 +177,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.MenuKeyEvent"/></param>
         public virtual void MenuKeyPressed(Javax.Swing.Event.MenuKeyEvent arg0)
         {
-            
+            hasOverrideMenuKeyPressed = false;
         }
 
         /// <summary>
@@ -183,10 +186,13 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnMenuKeyReleased"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.MenuKeyEvent> OnMenuKeyReleased { get; set; } = null;
 
-        void MenuKeyReleasedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuKeyEvent>> data)
+        bool hasOverrideMenuKeyReleased = true;
+        void MenuKeyReleasedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideMenuKeyReleased = true;
             var methodToExecute = (OnMenuKeyReleased != null) ? OnMenuKeyReleased : MenuKeyReleased;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.MenuKeyEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideMenuKeyReleased;
         }
 
         /// <summary>
@@ -195,7 +201,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.MenuKeyEvent"/></param>
         public virtual void MenuKeyReleased(Javax.Swing.Event.MenuKeyEvent arg0)
         {
-            
+            hasOverrideMenuKeyReleased = false;
         }
 
         /// <summary>
@@ -204,10 +210,13 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnMenuKeyTyped"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.MenuKeyEvent> OnMenuKeyTyped { get; set; } = null;
 
-        void MenuKeyTypedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuKeyEvent>> data)
+        bool hasOverrideMenuKeyTyped = true;
+        void MenuKeyTypedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideMenuKeyTyped = true;
             var methodToExecute = (OnMenuKeyTyped != null) ? OnMenuKeyTyped : MenuKeyTyped;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.MenuKeyEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideMenuKeyTyped;
         }
 
         /// <summary>
@@ -216,7 +225,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.MenuKeyEvent"/></param>
         public virtual void MenuKeyTyped(Javax.Swing.Event.MenuKeyEvent arg0)
         {
-            
+            hasOverrideMenuKeyTyped = false;
         }
 
         #endregion

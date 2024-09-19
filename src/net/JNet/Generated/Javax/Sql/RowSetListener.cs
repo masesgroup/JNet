@@ -150,9 +150,9 @@ namespace Javax.Sql
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("cursorMoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>>>(CursorMovedEventHandler));
-            AddEventHandler("rowChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>>>(RowChangedEventHandler));
-            AddEventHandler("rowSetChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>>>(RowSetChangedEventHandler));
+            AddEventHandler("cursorMoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(CursorMovedEventHandler));
+            AddEventHandler("rowChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(RowChangedEventHandler));
+            AddEventHandler("rowSetChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(RowSetChangedEventHandler));
 
         }
 
@@ -162,10 +162,13 @@ namespace Javax.Sql
         /// <remarks>If <see cref="OnCursorMoved"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Sql.RowSetEvent> OnCursorMoved { get; set; } = null;
 
-        void CursorMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>> data)
+        bool hasOverrideCursorMoved = true;
+        void CursorMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideCursorMoved = true;
             var methodToExecute = (OnCursorMoved != null) ? OnCursorMoved : CursorMoved;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Sql.RowSetEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideCursorMoved;
         }
 
         /// <summary>
@@ -174,7 +177,7 @@ namespace Javax.Sql
         /// <param name="arg0"><see cref="Javax.Sql.RowSetEvent"/></param>
         public virtual void CursorMoved(Javax.Sql.RowSetEvent arg0)
         {
-            
+            hasOverrideCursorMoved = false;
         }
 
         /// <summary>
@@ -183,10 +186,13 @@ namespace Javax.Sql
         /// <remarks>If <see cref="OnRowChanged"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Sql.RowSetEvent> OnRowChanged { get; set; } = null;
 
-        void RowChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>> data)
+        bool hasOverrideRowChanged = true;
+        void RowChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideRowChanged = true;
             var methodToExecute = (OnRowChanged != null) ? OnRowChanged : RowChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Sql.RowSetEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideRowChanged;
         }
 
         /// <summary>
@@ -195,7 +201,7 @@ namespace Javax.Sql
         /// <param name="arg0"><see cref="Javax.Sql.RowSetEvent"/></param>
         public virtual void RowChanged(Javax.Sql.RowSetEvent arg0)
         {
-            
+            hasOverrideRowChanged = false;
         }
 
         /// <summary>
@@ -204,10 +210,13 @@ namespace Javax.Sql
         /// <remarks>If <see cref="OnRowSetChanged"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Sql.RowSetEvent> OnRowSetChanged { get; set; } = null;
 
-        void RowSetChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>> data)
+        bool hasOverrideRowSetChanged = true;
+        void RowSetChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
+            hasOverrideRowSetChanged = true;
             var methodToExecute = (OnRowSetChanged != null) ? OnRowSetChanged : RowSetChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Sql.RowSetEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideRowSetChanged;
         }
 
         /// <summary>
@@ -216,7 +225,7 @@ namespace Javax.Sql
         /// <param name="arg0"><see cref="Javax.Sql.RowSetEvent"/></param>
         public virtual void RowSetChanged(Javax.Sql.RowSetEvent arg0)
         {
-            
+            hasOverrideRowSetChanged = false;
         }
 
         #endregion
