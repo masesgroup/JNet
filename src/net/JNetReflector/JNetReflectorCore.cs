@@ -53,6 +53,17 @@ namespace MASES.JNetReflector
                 public bool NoModule { get; set; }
             }
 
+            public struct ClassAndPatterns
+            {
+                public ClassAndPatterns(string className, string[] patterns)
+                {
+                    ClassName = className;
+                    Patterns = patterns;
+                }
+                public string ClassName { get; set; }
+                public IEnumerable<string> Patterns { get; set; }
+            }
+
             public string CopyrightFile { get; set; }
 
             public string JavaPLocationPath { get; set; }
@@ -84,6 +95,8 @@ namespace MASES.JNetReflector
             public IEnumerable<string> JarList { get; set; }
 
             public IEnumerable<string> ModulesToParse { get; set; }
+
+            public IEnumerable<ClassAndPatterns> ClassesWithCallbacks { get; set; }
 
             public IEnumerable<string> ClassesManuallyDeveloped { get; set; }
 
@@ -253,6 +266,13 @@ namespace MASES.JNetReflector
                         Name = CLIParam.ModulesToParse,
                         Type = ArgumentType.Double,
                         Help = "A CSV list of module patterns to be parsed during analysis, it avoids the usage of OriginRootPath",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.ClassesWithCallbacks,
+                        Type = ArgumentType.Double,
+                        Default = null,
+                        Help = "A CSV list of of keypair classname-patterns (separated by |) associated to the class defining methods to be implemented as callbacks",
                     },
                     new ArgumentMetadata<string>()
                     {
@@ -477,6 +497,9 @@ namespace MASES.JNetReflector
         static IEnumerable<string> _ModulesToParse;
         public static IEnumerable<string> ModulesToParse => _ModulesToParse ?? _ConfigurationFromFile.ModulesToParse;
 
+        static IEnumerable<ConfigurationType.ClassAndPatterns> _ClassesWithCallbacks;
+        public static IEnumerable<ConfigurationType.ClassAndPatterns> ClassesWithCallbacks => _ClassesWithCallbacks ?? _ConfigurationFromFile.ClassesWithCallbacks;
+
         static IEnumerable<string> _ClassesManuallyDeveloped;
         public static IEnumerable<string> ClassesManuallyDeveloped => _ClassesManuallyDeveloped ?? _ConfigurationFromFile.ClassesManuallyDeveloped;
 
@@ -629,6 +652,21 @@ namespace MASES.JNetReflector
                 _OriginJavadocJARVersionAndUrls = jarURLsToAnaylyze;
                 if (_JarsToAnalyze?.Count() != _OriginJavadocJARVersionAndUrls.Count())
                     throw new System.InvalidOperationException("Number of entries in OriginJavadocJARVersionAndUrls shall be equal to the number of JarList");
+            }
+
+            List<ConfigurationType.ClassAndPatterns> classesWithCallbacksToAnaylyze = new List<ConfigurationType.ClassAndPatterns>();
+            if (ParsedArgs.Exist(CLIParam.ClassesWithCallbacks))
+            {
+                var classes = ParsedArgs.Get<string>(CLIParam.ClassesWithCallbacks).Split(',', ';');
+                foreach (var item in classes)
+                {
+                    var items = item.Split('=');
+                    if (items.Length < 2) throw new System.InvalidOperationException($"{item} does not conform to expected pattern: needed a = separator.");
+                    var patterns = items[1].Split('|');
+                    if (patterns.Length < 1) throw new System.InvalidOperationException($"{items[1]} does not conform to expected pattern: needed at least one pattern.");
+                    classesWithCallbacksToAnaylyze.Add(new ConfigurationType.ClassAndPatterns(items[0], patterns));
+                }
+                _ClassesWithCallbacks = classesWithCallbacksToAnaylyze;
             }
 
             List<string> classesManuallyDeveloped = new List<string>();

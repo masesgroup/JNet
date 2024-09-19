@@ -755,7 +755,10 @@ namespace MASES.JNetReflector
                 {
                     staticMethodClassBlock = jClass.AnalyzeMethods(signatures, classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, false, true).AddTabLevel(1);
                     methodClassBlock = jClass.AnalyzeMethods(signatures, classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, false, false).AddTabLevel(1);
-                    methodClassBlockDirect = jClass.AnalyzeMethods(signatures, classDefinitions, methodPrefilter, isGeneric, false, false, true, false).AddTabLevel(1);
+                    if (!jClass.IsJVMClassWithCallbacks())
+                    {
+                        methodClassBlockDirect = jClass.AnalyzeMethods(signatures, classDefinitions, methodPrefilter, isGeneric, false, false, true, false).AddTabLevel(1);
+                    }
                 }
                 if (!JNetReflectorCore.DisableInterfaceMethodGeneration && createInterfaceData)
                 {
@@ -821,7 +824,7 @@ namespace MASES.JNetReflector
                                         .Replace(AllPackageClasses.ClassStub.STATICMETHODS, staticMethodClassBlock)
                                         .Replace(AllPackageClasses.ClassStub.METHODS, methodClassBlock);
 
-            if (jClassIsListener)
+            if (jClassIsListener && !jClass.IsJVMClassWithCallbacks())
             {
                 string singleClassStrDirect = singleClass.Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(new List<KeyValuePair<string, string>>(), isGeneric, true))
                                                          .Replace(AllPackageClasses.ClassStub.INTERFACE_CONSTRAINT, !string.IsNullOrWhiteSpace(interfaceConstraint) ? " : " + interfaceConstraint : string.Empty)
@@ -1499,6 +1502,7 @@ namespace MASES.JNetReflector
             foreach (var item in methods)
             {
                 var method = item.Value;
+                bool implementMethodAsListener = isDirectListener ? forListener : method.ToBeCallback(classDefinition, forListener);
                 var genString = method.GenericString;
                 string signature = methodsToSignature?.SignatureFromGenericString(genString);
                 var paramCount = method.ParameterCount;
@@ -1754,7 +1758,7 @@ namespace MASES.JNetReflector
                 bool isReturnTypeException = method.IsReturnTypeAnException();
                 string executionStub = string.Empty;
                 string executionStubDirect = string.Empty;
-                if (forListener && method.IsDefault) methodNameOrigin += SpecialNames.DefaultMethodSuffix;
+                if (implementMethodAsListener && method.IsDefault) methodNameOrigin += SpecialNames.DefaultMethodSuffix;
 
                 string directNewClass = returnType;
                 var indexOfGenerics = returnType.IndexOf('<');
@@ -1936,7 +1940,7 @@ namespace MASES.JNetReflector
                 string singleMethod = null;
                 string template;
                 string baseHandlerName = methodIndexer == 0 ? methodName : (methodIndexer == 1 ? methodName + paramCount : methodName + paramCount + $"_{methodIndexer}");
-                if (forListener)
+                if (implementMethodAsListener)
                 {
                     if (method.IsDefault)
                     {
@@ -1988,7 +1992,7 @@ namespace MASES.JNetReflector
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.HELP, method.JavadocHrefUrl(JNetReflectorCore.UseCamel));
 
                         jDecoration = new StringBuilder(jDecorationTemporary);
-                        if (forListener)
+                        if (implementMethodAsListener)
                         {
                             subClassBlock.AppendLine(singleMethod);
                         }
@@ -2024,7 +2028,7 @@ namespace MASES.JNetReflector
                 {
                     template = Template.GetTemplate(Template.SingleInterfaceMethodTemplate);
                 }
-                else if (forListener)
+                else if (implementMethodAsListener)
                 {
                     template = Template.GetTemplate(Template.SingleListenerMethodTemplate);
                 }
@@ -2032,10 +2036,10 @@ namespace MASES.JNetReflector
                 {
                     template = Template.GetTemplate(Template.SingleMethodTemplate);
                 }
-                if (forListener) modifier = " virtual";
+                if (implementMethodAsListener) modifier = " virtual";
                 if (isDirectListener) modifier = " override";
 
-                if (staticMethods && forListener)
+                if (staticMethods && implementMethodAsListener)
                 {
                     // do nothing
                 }
@@ -2057,7 +2061,7 @@ namespace MASES.JNetReflector
                     subClassBlock.AppendLine(singleMethod);
                 }
 
-                if (isListenerReturnType && !forListener && isDirectListener == false)
+                if (isListenerReturnType && !implementMethodAsListener && isDirectListener == false)
                 {
                     string directMethodName = methodName;
                     indexOfGenerics = methodName.IndexOf('<');
@@ -2121,6 +2125,12 @@ namespace MASES.JNetReflector
                 var paramCount = method.ParameterCount;
                 var methodNameOrigin = method.Name;
                 if (method.IsStatic()) continue;
+
+                if (!method.ToBeCallback(classDefinition, true))
+                {
+                    ReportTrace(ReflectionTraceLevel.Debug, "Discarded not filtered method {0}", genString);
+                    continue;
+                }
 
                 if (paramCount == 0 && !method.IsVoid() &&
                     (methodNameOrigin == "toString" || methodNameOrigin == "hashCode" || methodNameOrigin == "getClass")
@@ -2301,7 +2311,7 @@ namespace MASES.JNetReflector
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodNameOrigin)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.PARAMETERS, paramsString)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.EXTEND_EXCEPTIONS, exceptionsThrowed)
-                                           .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, execStub);
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, execStub.AddTabLevel(1));
 
                 subClassBlock.AppendLine(singleMethod);
 
@@ -2314,7 +2324,7 @@ namespace MASES.JNetReflector
                                                       .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodNameOrigin + SpecialNames.DefaultMethodSuffix)
                                                       .Replace(AllPackageClasses.ClassStub.MethodStub.PARAMETERS, paramsString)
                                                       .Replace(AllPackageClasses.ClassStub.MethodStub.EXTEND_EXCEPTIONS, exceptionsThrowed)
-                                                      .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, execStub);
+                                                      .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, execStub.AddTabLevel(1));
 
                     subClassBlock.AppendLine(singleDefaultMethod);
                 }

@@ -45,6 +45,7 @@ _jnr_ accepts the following command-line switch:
 * **NamespacesToAvoid**: A CSV list of namespaces to be removed from analysis
 * **ClassesToAvoid**: A CSV list of classes to be removed during analysis
 * **ClassesToAvoidInGenerics**: A CSV list of classes to be removed during analysis from the classes which have generics types
+* **ClassesWithCallbacks**: A CSV list of of keypair classname-patterns (separated by |) associated to the class defining methods to be implemented as callbacks
 * **ClassesManuallyDeveloped**: A CSV list of class names will be manually developed
 * **ClassesToBeListener**: A CSV list of class names to be treated as Listener, the tool consider any class which its name ends with "Listener" or "Adapter" as Listener
 * **ClassesToRemoveAsListener**: A CSV list of class names to be removed from the list of Listener identified since the tool consider any class which its name ends with "Listener" or "Adapter" as Listener
