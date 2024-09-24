@@ -33,7 +33,7 @@ jobs:
           submodules: 'true'
 
       - name: Clear documentation folder 
-        run: Remove-Item .\docs\* -Recurse -Force -Exclude _config.yml,CNAME
+        run: Remove-Item .\docs\* -Recurse -Force -Exclude _config.yml,CNAME,d8b8bd4e12b04559b53419cc8b571873.txt
 
       - run: dotnet tool update -g docfx
 
