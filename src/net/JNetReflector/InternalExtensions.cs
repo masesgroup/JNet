@@ -301,13 +301,13 @@ namespace MASES.JNetReflector
             if (methodSignature.Contains(SpecialNames.JavaLangThrows))
             {
                 methodSignature = methodSignature.Substring(0, methodSignature.IndexOf(SpecialNames.JavaLangThrows));
-                return methodSignature.TrimEnd();
+                return RemoveThrowsAndCleanupSignature(methodSignature.TrimEnd());
             }
             else if (methodSignature.EndsWith(';'))
             {
-                return methodSignature.Substring(0, methodSignature.Length - 1);
+                return RemoveThrowsAndCleanupSignature(methodSignature.Substring(0, methodSignature.Length - 1));
             }
-            return methodSignature;
+            return methodSignature.Replace(", ", ",");
         }
 
         public static string AddClassNameToSignature(this string methodSignature, string className)

@@ -106,7 +106,11 @@ namespace Org.Mases.Jnet
                     }
                     if (exited && process.ExitCode != 0) throw new InvalidOperationException($"javap falied with error {process.ExitCode}");
 
-                    List<string> lines = new();
+                    Dictionary<string, string> map = new Dictionary<string, string>();
+                    int classCounter = -1;
+                    string methodName = string.Empty;
+                    string className = string.Empty;
+                    bool nextLineIsDescriptor = false;
                     bool foundParenthesis = false;
                     int cycleCounter = 0;
                     do
@@ -116,13 +120,40 @@ namespace Org.Mases.Jnet
                         {
                             if (!foundParenthesis)
                             {
+                                // wait a while
                                 cycleCounter++;
                                 System.Threading.Thread.Sleep(10);
                                 continue;
                             }
                             else break;
                         }
-                        else { lines.Add(line); cycleCounter = 0; }
+                        else 
+                        {
+                            if (line.Contains("Compiled from"))
+                            {
+                                if (classCounter != -1) { dict.TryAdd(toBeAnalyzed[classCounter], map); }
+                                classCounter++;
+                                className = toBeAnalyzed[classCounter].Name;
+                                map = new Dictionary<string, string>();
+                            }
+                            if (nextLineIsDescriptor)
+                            {
+                                nextLineIsDescriptor = false;
+                                string signature = line.TrimStart().TrimEnd();
+                                signature = signature.Remove(0, "descriptor: ".Length);
+                                map.Add(methodName, signature);
+                            }
+                            bool isInterfaceOrClassLine = line.Contains("class") || line.Contains("interface");
+                            if (line.Contains("public") && !isInterfaceOrClassLine)
+                            {
+                                nextLineIsDescriptor = true;
+                                methodName = line.TrimStart().TrimEnd();
+                                methodName = methodName.RemoveThrowsAndCleanupSignature();
+                                methodName = methodName.AddClassNameToSignature(className);
+                            }
+
+                            cycleCounter = 0; 
+                        }
 
                         if (line.TrimEnd() == "}")
                         {
@@ -132,38 +163,33 @@ namespace Org.Mases.Jnet
                     }
                     while (cycleCounter < 100);
 
-                    Dictionary<string, string> map = new Dictionary<string, string>();
-                    int classCounter = -1;
-                    string methodName = string.Empty;
-                    string className = string.Empty;
-                    bool nextLineIsDescriptor = false;
-                    foreach (var line in lines)
-                    {
-                        if (string.IsNullOrWhiteSpace(line)) continue;
+                    //foreach (var line in lines)
+                    //{
+                    //    if (string.IsNullOrWhiteSpace(line)) continue;
 
-                        if (line.Contains("Compiled from"))
-                        {
-                            if (classCounter != -1) { dict.TryAdd(toBeAnalyzed[classCounter], map); }
-                            classCounter++;
-                            className = toBeAnalyzed[classCounter].Name;
-                            map = new Dictionary<string, string>();
-                        }
-                        if (nextLineIsDescriptor)
-                        {
-                            nextLineIsDescriptor = false;
-                            string signature = line.TrimStart().TrimEnd();
-                            signature = signature.Remove(0, "descriptor: ".Length);
-                            map.Add(methodName, signature);
-                        }
-                        bool isInterfaceOrClassLine = line.Contains("class") || line.Contains("interface");
-                        if (line.Contains("public") && !isInterfaceOrClassLine)
-                        {
-                            nextLineIsDescriptor = true;
-                            methodName = line.TrimStart().TrimEnd();
-                            methodName = methodName.RemoveThrowsAndCleanupSignature();
-                            methodName = methodName.AddClassNameToSignature(className);
-                        }
-                    }
+                    //    if (line.Contains("Compiled from"))
+                    //    {
+                    //        if (classCounter != -1) { dict.TryAdd(toBeAnalyzed[classCounter], map); }
+                    //        classCounter++;
+                    //        className = toBeAnalyzed[classCounter].Name;
+                    //        map = new Dictionary<string, string>();
+                    //    }
+                    //    if (nextLineIsDescriptor)
+                    //    {
+                    //        nextLineIsDescriptor = false;
+                    //        string signature = line.TrimStart().TrimEnd();
+                    //        signature = signature.Remove(0, "descriptor: ".Length);
+                    //        map.Add(methodName, signature);
+                    //    }
+                    //    bool isInterfaceOrClassLine = line.Contains("class") || line.Contains("interface");
+                    //    if (line.Contains("public") && !isInterfaceOrClassLine)
+                    //    {
+                    //        nextLineIsDescriptor = true;
+                    //        methodName = line.TrimStart().TrimEnd();
+                    //        methodName = methodName.RemoveThrowsAndCleanupSignature();
+                    //        methodName = methodName.AddClassNameToSignature(className);
+                    //    }
+                    //}
                     dict.TryAdd(toBeAnalyzed[classCounter], map);
                 }
                 catch { }
