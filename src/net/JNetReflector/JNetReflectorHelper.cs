@@ -95,23 +95,45 @@ namespace Org.Mases.Jnet
                     si.Arguments = arguments;
 
                     process = Process.Start(si);
-                    TimeSpan initial = process.TotalProcessorTime;
+                    TimeSpan initialTotalProcessorTime = process.TotalProcessorTime;
                     int cycles = 0;
                     while ((exited = process.WaitForExit(100)) == false)
                     {
                         process.Refresh();
-                        TimeSpan current = process.TotalProcessorTime;
-                        if ((current - initial) < TimeSpan.FromMilliseconds(10)) break; // process is idle???
+                        TimeSpan currentTotalProcessorTime = process.TotalProcessorTime;
+                        if ((currentTotalProcessorTime - initialTotalProcessorTime) < TimeSpan.FromMilliseconds(10)) break; // process is idle???
                         if (++cycles > toBeAnalyzed.Count) break; // elapsed max cycles
                     }
                     if (exited && process.ExitCode != 0) throw new InvalidOperationException($"javap falied with error {process.ExitCode}");
+
+                    List<string> lines = new();
+                    bool foundParenthesis = false;
+                    int cycleCounter = 0;
+                    do
+                    {
+                        string line = process.StandardOutput.ReadLine();
+                        if (line == null)
+                        {
+                            if (!foundParenthesis)
+                            {
+                                cycleCounter++;
+                                System.Threading.Thread.Sleep(10);
+                                continue;
+                            }
+                            else break;
+                        }
+                        else { lines.Add(line); cycleCounter = 0; }
+
+                        if (line.TrimEnd() == "}") foundParenthesis = true;        
+                    }
+                    while (!foundParenthesis || cycleCounter >= 100);
+
                     Dictionary<string, string> map = new Dictionary<string, string>();
-                    string line;
                     int classCounter = -1;
                     string methodName = string.Empty;
                     string className = string.Empty;
                     bool nextLineIsDescriptor = false;
-                    while ((line = process.StandardOutput.ReadLine()) != null)
+                    foreach (var line in lines)
                     {
                         if (line.Contains("Compiled from"))
                         {
