@@ -29,6 +29,8 @@ using System.Runtime.CompilerServices;
 using System.Reflection;
 using System.Reflection.Emit;
 using System.Text.RegularExpressions;
+using Org.Mases.Jnet;
+using System.Diagnostics;
 
 namespace MASES.JNetReflector
 {
@@ -2341,18 +2343,20 @@ namespace MASES.JNetReflector
 
         public static bool ToBeCallback(this Method entry, Class classDefinition, bool forListener)
         {
+            string entryName = entry.Name;
+            string classDefinitionTypeName = classDefinition.TypeName;
             bool match = forListener;
             if (JNetReflectorCore.ClassesWithCallbacks != null)
             {
                 foreach (var elem in JNetReflectorCore.ClassesWithCallbacks)
                 {
-                    if (elem.ClassName == classDefinition.TypeName)
+                    if (elem.ClassName == classDefinitionTypeName)
                     {
                         // now on check only filters
                         match = false;
                         foreach (var pattern in elem.Patterns)
                         {
-                            match |= Regex.IsMatch(entry.Name, pattern);
+                            match |= Regex.IsMatch(entryName, pattern);
                         }
                         break;
                     }
@@ -2498,8 +2502,9 @@ namespace MASES.JNetReflector
 
         public static bool IsOverrideOrConcrete(this Method entry)
         {
-            // to be optimized: very time consuming method
             if (entry == null) throw new ArgumentNullException(nameof(entry));
+#if TEST
+            // to be optimized: very time consuming method
             try
             {
                 var superClass = entry.DeclaringClass.SuperClass;
@@ -2512,12 +2517,21 @@ namespace MASES.JNetReflector
             {
                 return false;
             }
+#else
+            return JNetReflectorHelper.IsOverrideOrConcrete(entry);
+#endif
         }
 
         public static bool IsFromSuperInterface(this Method entry)
         {
-            // to be optimized: very time consuming method
             if (entry == null) throw new ArgumentNullException(nameof(entry));
+#if TEST
+            Stopwatch sw1 = Stopwatch.StartNew();
+            var jvmResult = JNetReflectorHelper.IsFromSuperInterface(entry); // in JVM the speed is 1000 times higher
+            sw1.Stop();
+            // to be optimized: very time consuming method
+            Stopwatch sw2 = Stopwatch.StartNew();
+            bool netResult = false;
             foreach (var interfaceToCheck in entry.DeclaringClass.Interfaces)
             {
                 try
@@ -2525,13 +2539,19 @@ namespace MASES.JNetReflector
                     Method method = interfaceToCheck.GetMethod(entry.Name, entry.ParameterTypes);
                     if (!method.ReturnType.Equals(entry.ReturnType))
                     {
-                        return true;
+                        netResult = true;
+                        break;
                     }
                 }
                 catch (NoSuchMethodException) { }
             }
+            sw2.Stop();
+            if (jvmResult != netResult) throw new InvalidOperationException("Results of IsFromSuperInterface are different");
 
-            return false;
+            return netResult;
+#else
+            return JNetReflectorHelper.IsFromSuperInterface(entry);
+#endif
         }
 
         public static bool MustBeAvoided(this Method entry, bool usedInGenerics)
@@ -2581,7 +2601,7 @@ namespace MASES.JNetReflector
             return string.Format(AllPackageClasses.DocTemplate(_CurrentJavadocBaseUrl), JavadocUrl(entry, camel).Replace(SpecialNames.BeginGenericDeclaration, "%3C").Replace(SpecialNames.EndGenericDeclaration, "%3E"));
         }
 
-        #endregion
+#endregion
 
         #region Field extension
 
@@ -2763,7 +2783,8 @@ namespace MASES.JNetReflector
 
         public static bool IsJVMException(this Parameter entry)
         {
-            if (entry == null || entry.ParameterizedType == null || entry.ParameterizedType.TypeName == null) return false;
+            if (entry == null || entry.ParameterizedType == null || entry.ParameterizedType.TypeName == null
+                || (entry.Type != null && entry.Type.IsPrimitive == true)) return false;
             var cName = entry.ParameterizedType.TypeName;
             cName = cName.Contains(SpecialNames.BeginGenericDeclaration) ? cName.Substring(0, cName.IndexOf(SpecialNames.BeginGenericDeclaration)) : cName;
             var cEntry = cName.JVMClass();
