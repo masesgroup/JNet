@@ -124,9 +124,13 @@ namespace Org.Mases.Jnet
                         }
                         else { lines.Add(line); cycleCounter = 0; }
 
-                        if (line.TrimEnd() == "}") foundParenthesis = true;        
+                        if (line.TrimEnd() == "}")
+                        {
+                            foundParenthesis = true;
+                            break;
+                        }
                     }
-                    while (!foundParenthesis || cycleCounter >= 100);
+                    while (cycleCounter < 100);
 
                     Dictionary<string, string> map = new Dictionary<string, string>();
                     int classCounter = -1;
@@ -135,6 +139,8 @@ namespace Org.Mases.Jnet
                     bool nextLineIsDescriptor = false;
                     foreach (var line in lines)
                     {
+                        if (string.IsNullOrWhiteSpace(line)) continue;
+
                         if (line.Contains("Compiled from"))
                         {
                             if (classCounter != -1) { dict.TryAdd(toBeAnalyzed[classCounter], map); }
