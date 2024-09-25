@@ -30,6 +30,7 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Security.Claims;
 
 namespace Org.Mases.Jnet
 {
@@ -108,6 +109,7 @@ namespace Org.Mases.Jnet
 
                     Dictionary<string, string> map = new Dictionary<string, string>();
                     int classCounter = -1;
+                    int endCounter = -1;
                     string methodName = string.Empty;
                     string className = string.Empty;
                     bool nextLineIsDescriptor = false;
@@ -157,9 +159,9 @@ namespace Org.Mases.Jnet
 
                         if (line.TrimEnd() == "}")
                         {
-                            foundParenthesis = true;
-                            break;
+                            endCounter++;
                         }
+                        if (endCounter == toBeAnalyzed.Count) break;
                     }
                     while (cycleCounter < 100);
 
