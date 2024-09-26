@@ -95,22 +95,24 @@ namespace Org.Mases.Jnet
                     si.Arguments = arguments;
 
                     process = Process.Start(si);
-                    TimeSpan initial = process.TotalProcessorTime;
+                    TimeSpan initialTotalProcessorTime = process.TotalProcessorTime;
                     int cycles = 0;
                     while ((exited = process.WaitForExit(100)) == false)
                     {
                         process.Refresh();
-                        TimeSpan current = process.TotalProcessorTime;
-                        if ((current - initial) < TimeSpan.FromMilliseconds(10)) break; // process is idle???
+                        TimeSpan currentTotalProcessorTime = process.TotalProcessorTime;
+                        if ((currentTotalProcessorTime - initialTotalProcessorTime) < TimeSpan.FromMilliseconds(10)) break; // process is idle???
                         if (++cycles > toBeAnalyzed.Count) break; // elapsed max cycles
                     }
                     if (exited && process.ExitCode != 0) throw new InvalidOperationException($"javap falied with error {process.ExitCode}");
+
                     Dictionary<string, string> map = new Dictionary<string, string>();
                     string line;
                     int classCounter = -1;
                     string methodName = string.Empty;
                     string className = string.Empty;
                     bool nextLineIsDescriptor = false;
+#if OLD_ALGORITHM
                     while ((line = process.StandardOutput.ReadLine()) != null)
                     {
                         if (line.Contains("Compiled from"))
@@ -136,6 +138,59 @@ namespace Org.Mases.Jnet
                             methodName = methodName.AddClassNameToSignature(className);
                         }
                     }
+#else
+                    int endCounter = 0;
+                    int cycleCounter = 0;
+                    do
+                    {
+                        line = process.StandardOutput.ReadLine();
+                        if (line == null)
+                        {
+                            if (endCounter != toBeAnalyzed.Count)
+                            {
+                                // wait a while
+                                cycleCounter++;
+                                System.Threading.Thread.Sleep(1);
+                                continue;
+                            }
+                            else break;
+                        }
+                        else 
+                        {
+                            if (line.Contains("Compiled from"))
+                            {
+                                if (classCounter != -1) { dict.TryAdd(toBeAnalyzed[classCounter], map); }
+                                classCounter++;
+                                className = toBeAnalyzed[classCounter].Name;
+                                map = new Dictionary<string, string>();
+                            }
+                            if (nextLineIsDescriptor)
+                            {
+                                nextLineIsDescriptor = false;
+                                string signature = line.TrimStart().TrimEnd();
+                                signature = signature.Remove(0, "descriptor: ".Length);
+                                map.Add(methodName, signature);
+                            }
+                            bool isInterfaceOrClassLine = line.Contains("class") || line.Contains("interface");
+                            if (line.Contains("public") && !isInterfaceOrClassLine)
+                            {
+                                nextLineIsDescriptor = true;
+                                methodName = line.TrimStart().TrimEnd();
+                                methodName = methodName.RemoveThrowsAndCleanupSignature();
+                                methodName = methodName.AddClassNameToSignature(className);
+                            }
+
+                            cycleCounter = 0; 
+                        }
+
+                        if (line.TrimEnd() == "}")
+                        {
+                            endCounter++;
+                        }
+                        if (endCounter == toBeAnalyzed.Count) break;
+                    }
+                    while (cycleCounter < 100);
+#endif
                     dict.TryAdd(toBeAnalyzed[classCounter], map);
                 }
                 catch { }
