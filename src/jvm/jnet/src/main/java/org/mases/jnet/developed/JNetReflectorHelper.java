@@ -42,6 +42,36 @@ public class JNetReflectorHelper {
         }
     }
 
+    public static boolean isOverrideOrConcrete(java.lang.reflect.Method entry) {
+		try {
+			java.lang.Class superClass = entry.getDeclaringClass().getSuperclass();
+			if (superClass == null) return false;
+			if (superClass.getTypeName().equals("java.lang.Object")) return false;
+			java.lang.reflect.Method method = superClass.getMethod(entry.getName(), entry.getParameterTypes());
+			return true;
+		}
+		catch (java.lang.NoSuchMethodException e) {
+			return false;
+		}
+    }
+	
+    public static boolean isFromSuperInterface(java.lang.reflect.Method entry) {
+		for( Class interfaceToCheck : entry.getDeclaringClass().getInterfaces()) {
+			try {
+				java.lang.reflect.Method method = interfaceToCheck.getMethod(entry.getName(), entry.getParameterTypes());
+				if (!method.getReturnType().equals(entry.getReturnType()))
+				{
+					return true;
+				}
+			}
+			catch (java.lang.NoSuchMethodException e) {
+				
+			}
+		}
+		
+		return false;
+    }
+
     public static Collection<Class<?>> find() {
         ComponentSupplier componentSupplier = ComponentContainer.getInstance();
         PathHelper pathHelper = componentSupplier.getPathHelper();

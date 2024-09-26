@@ -753,6 +753,11 @@ namespace MASES.JNetReflector
                 }
                 else
                 {
+                    if (jClass.IsJVMClassWithCallbacks())
+                    {
+                        operatorClassBlock = jClass.AnalyzeOperators(classDefinitions, isGeneric, true).AddTabLevel(1);
+                    }
+                    fieldClassBlock = jClass.AnalyzeFields(classDefinitions, isGeneric).AddTabLevel(1);
                     staticMethodClassBlock = jClass.AnalyzeMethods(signatures, classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, false, true).AddTabLevel(1);
                     methodClassBlock = jClass.AnalyzeMethods(signatures, classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, false, false).AddTabLevel(1);
                     if (!jClass.IsJVMClassWithCallbacks())

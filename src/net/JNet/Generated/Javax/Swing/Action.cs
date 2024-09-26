@@ -165,6 +165,72 @@ namespace Javax.Swing
         #endregion
 
         #region Fields
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#ACCELERATOR_KEY"/>
+        /// </summary>
+        public static Java.Lang.String ACCELERATOR_KEY { get { if (!_ACCELERATOR_KEYReady) { _ACCELERATOR_KEYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACCELERATOR_KEY"); _ACCELERATOR_KEYReady = true; } return _ACCELERATOR_KEYContent; } }
+        private static Java.Lang.String _ACCELERATOR_KEYContent = default;
+        private static bool _ACCELERATOR_KEYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#ACTION_COMMAND_KEY"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_COMMAND_KEY { get { if (!_ACTION_COMMAND_KEYReady) { _ACTION_COMMAND_KEYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_COMMAND_KEY"); _ACTION_COMMAND_KEYReady = true; } return _ACTION_COMMAND_KEYContent; } }
+        private static Java.Lang.String _ACTION_COMMAND_KEYContent = default;
+        private static bool _ACTION_COMMAND_KEYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#DEFAULT"/>
+        /// </summary>
+        public static Java.Lang.String DEFAULT { get { if (!_DEFAULTReady) { _DEFAULTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DEFAULT"); _DEFAULTReady = true; } return _DEFAULTContent; } }
+        private static Java.Lang.String _DEFAULTContent = default;
+        private static bool _DEFAULTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#DISPLAYED_MNEMONIC_INDEX_KEY"/>
+        /// </summary>
+        public static Java.Lang.String DISPLAYED_MNEMONIC_INDEX_KEY { get { if (!_DISPLAYED_MNEMONIC_INDEX_KEYReady) { _DISPLAYED_MNEMONIC_INDEX_KEYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DISPLAYED_MNEMONIC_INDEX_KEY"); _DISPLAYED_MNEMONIC_INDEX_KEYReady = true; } return _DISPLAYED_MNEMONIC_INDEX_KEYContent; } }
+        private static Java.Lang.String _DISPLAYED_MNEMONIC_INDEX_KEYContent = default;
+        private static bool _DISPLAYED_MNEMONIC_INDEX_KEYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#LARGE_ICON_KEY"/>
+        /// </summary>
+        public static Java.Lang.String LARGE_ICON_KEY { get { if (!_LARGE_ICON_KEYReady) { _LARGE_ICON_KEYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "LARGE_ICON_KEY"); _LARGE_ICON_KEYReady = true; } return _LARGE_ICON_KEYContent; } }
+        private static Java.Lang.String _LARGE_ICON_KEYContent = default;
+        private static bool _LARGE_ICON_KEYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#LONG_DESCRIPTION"/>
+        /// </summary>
+        public static Java.Lang.String LONG_DESCRIPTION { get { if (!_LONG_DESCRIPTIONReady) { _LONG_DESCRIPTIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "LONG_DESCRIPTION"); _LONG_DESCRIPTIONReady = true; } return _LONG_DESCRIPTIONContent; } }
+        private static Java.Lang.String _LONG_DESCRIPTIONContent = default;
+        private static bool _LONG_DESCRIPTIONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#MNEMONIC_KEY"/>
+        /// </summary>
+        public static Java.Lang.String MNEMONIC_KEY { get { if (!_MNEMONIC_KEYReady) { _MNEMONIC_KEYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MNEMONIC_KEY"); _MNEMONIC_KEYReady = true; } return _MNEMONIC_KEYContent; } }
+        private static Java.Lang.String _MNEMONIC_KEYContent = default;
+        private static bool _MNEMONIC_KEYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#NAME"/>
+        /// </summary>
+        public static Java.Lang.String NAME { get { if (!_NAMEReady) { _NAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "NAME"); _NAMEReady = true; } return _NAMEContent; } }
+        private static Java.Lang.String _NAMEContent = default;
+        private static bool _NAMEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#SELECTED_KEY"/>
+        /// </summary>
+        public static Java.Lang.String SELECTED_KEY { get { if (!_SELECTED_KEYReady) { _SELECTED_KEYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SELECTED_KEY"); _SELECTED_KEYReady = true; } return _SELECTED_KEYContent; } }
+        private static Java.Lang.String _SELECTED_KEYContent = default;
+        private static bool _SELECTED_KEYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#SHORT_DESCRIPTION"/>
+        /// </summary>
+        public static Java.Lang.String SHORT_DESCRIPTION { get { if (!_SHORT_DESCRIPTIONReady) { _SHORT_DESCRIPTIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SHORT_DESCRIPTION"); _SHORT_DESCRIPTIONReady = true; } return _SHORT_DESCRIPTIONContent; } }
+        private static Java.Lang.String _SHORT_DESCRIPTIONContent = default;
+        private static bool _SHORT_DESCRIPTIONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#SMALL_ICON"/>
+        /// </summary>
+        public static Java.Lang.String SMALL_ICON { get { if (!_SMALL_ICONReady) { _SMALL_ICONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SMALL_ICON"); _SMALL_ICONReady = true; } return _SMALL_ICONContent; } }
+        private static Java.Lang.String _SMALL_ICONContent = default;
+        private static bool _SMALL_ICONReady = false; // this is used because in case of generics 
 
         #endregion
 

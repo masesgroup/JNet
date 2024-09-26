@@ -22,6 +22,7 @@
 */
 
 using Java.Lang;
+using Java.Lang.Reflect;
 using Java.Util;
 using MASES.JCOBridge.C2JBridge;
 using MASES.JNetReflector;
@@ -50,6 +51,20 @@ namespace Org.Mases.Jnet
             get { return SExecute<bool>("getLoggingState"); }
             set { SExecute("setLoggingState", value); }
         }
+
+        /// <summary>
+        /// Check if <see cref="Method"/> overrides or it is a concrete method
+        /// </summary>
+        /// <param name="entry">The <see cref="Method"/> to check</param>
+        /// <returns><see langword="true"/> if <see cref="Method"/> overrides or it is a concrete method</returns>
+        public static bool IsOverrideOrConcrete(Method entry) => SExecute<bool>("isOverrideOrConcrete", entry);
+
+        /// <summary>
+        /// Check if <see cref="Method"/> comes from one of the super interfaces
+        /// </summary>
+        /// <param name="entry">The <see cref="Method"/> to check</param>
+        /// <returns><see langword="true"/> if <see cref="Method"/> comes from super interface</returns>
+        public static bool IsFromSuperInterface(Method entry) => SExecute<bool>("isFromSuperInterface", entry);
 
         public static IDictionary<Class, IReadOnlyDictionary<string, string>> ExtractJavaInfo(IEnumerable<Class> classes, string classPath, string javapFullPath = null)
         {
