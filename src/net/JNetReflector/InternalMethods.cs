@@ -57,7 +57,7 @@ namespace MASES.JNetReflector
             Level = level;
         }
 
-        static void ReportTrace(ReflectionTraceLevel level, string format, params object[] args)
+        internal static void ReportTrace(ReflectionTraceLevel level, string format, params object[] args)
         {
             if ((int)level > Level) return;
             try
@@ -1423,7 +1423,7 @@ namespace MASES.JNetReflector
                 StringBuilder executionStub = new StringBuilder();
                 if (getMethod != null)
                 {
-                    string getSignature = methodsToSignature?.SignatureFromGenericString(getMethod.GenericString.RemoveThrowsAndCleanupSignature());
+                    string getSignature = methodsToSignature?.SignatureFromGenericString(getMethod);
                     string execStub = getMethod.IsStatic() ? AllPackageClasses.ClassStub.MethodStub.STATIC_EXECUTE : AllPackageClasses.ClassStub.MethodStub.INSTANCE_EXECUTE;
                     if (!string.IsNullOrWhiteSpace(getSignature))
                     {
@@ -1448,7 +1448,7 @@ namespace MASES.JNetReflector
 
                 if (setMethod != null)
                 {
-                    string setSignature = methodsToSignature?.SignatureFromGenericString(setMethod.GenericString.RemoveThrowsAndCleanupSignature());
+                    string setSignature = methodsToSignature?.SignatureFromGenericString(setMethod);
                     if (JNetReflectorCore.ReflectDeprecated) isSetDeprecated = setMethod.IsDeprecated();
                     string setExecStub = setMethod.IsStatic() ? AllPackageClasses.ClassStub.PropertyStub.STATIC_SET_EXECUTION_FORMAT : AllPackageClasses.ClassStub.PropertyStub.SET_EXECUTION_FORMAT;
                     var methodToCall = setMethod.IsStatic() ? AllPackageClasses.ClassStub.MethodStub.STATIC_EXECUTE : AllPackageClasses.ClassStub.MethodStub.INSTANCE_EXECUTE;
@@ -1509,7 +1509,7 @@ namespace MASES.JNetReflector
                 var method = item.Value;
                 bool implementMethodAsListener = isDirectListener ? forListener : method.ToBeCallback(classDefinition, forListener);
                 var genString = method.GenericString;
-                string signature = methodsToSignature?.SignatureFromGenericString(genString);
+                string signature = methodsToSignature?.SignatureFromGenericString(method);
                 var paramCount = method.ParameterCount;
                 var methodNameOrigin = method.Name;
                 var eventHandlerName = methodNameOrigin;
