@@ -30,7 +30,6 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.Security.Claims;
 
 namespace Org.Mases.Jnet
 {
@@ -113,7 +112,33 @@ namespace Org.Mases.Jnet
                     string methodName = string.Empty;
                     string className = string.Empty;
                     bool nextLineIsDescriptor = false;
-#if TEST_ALGORITHM
+#if OLD_ALGORITHM
+                    while ((line = process.StandardOutput.ReadLine()) != null)
+                    {
+                        if (line.Contains("Compiled from"))
+                        {
+                            if (classCounter != -1) { dict.TryAdd(toBeAnalyzed[classCounter], map); }
+                            classCounter++;
+                            className = toBeAnalyzed[classCounter].Name;
+                            map = new Dictionary<string, string>();
+                        }
+                        if (nextLineIsDescriptor)
+                        {
+                            nextLineIsDescriptor = false;
+                            string signature = line.TrimStart().TrimEnd();
+                            signature = signature.Remove(0, "descriptor: ".Length);
+                            map.Add(methodName, signature);
+                        }
+                        bool isInterfaceOrClassLine = line.Contains("class") || line.Contains("interface");
+                        if (line.Contains("public") && !isInterfaceOrClassLine)
+                        {
+                            nextLineIsDescriptor = true;
+                            methodName = line.TrimStart().TrimEnd();
+                            methodName = methodName.RemoveThrowsAndCleanupSignature();
+                            methodName = methodName.AddClassNameToSignature(className);
+                        }
+                    }
+#else
                     int endCounter = 0;
                     int cycleCounter = 0;
                     do
@@ -125,7 +150,7 @@ namespace Org.Mases.Jnet
                             {
                                 // wait a while
                                 cycleCounter++;
-                                System.Threading.Thread.Sleep(10);
+                                System.Threading.Thread.Sleep(1);
                                 continue;
                             }
                             else break;
@@ -165,32 +190,6 @@ namespace Org.Mases.Jnet
                         if (endCounter == toBeAnalyzed.Count) break;
                     }
                     while (cycleCounter < 100);
-#else
-                    while ((line = process.StandardOutput.ReadLine()) != null)
-                    {
-                        if (line.Contains("Compiled from"))
-                        {
-                            if (classCounter != -1) { dict.TryAdd(toBeAnalyzed[classCounter], map); }
-                            classCounter++;
-                            className = toBeAnalyzed[classCounter].Name;
-                            map = new Dictionary<string, string>();
-                        }
-                        if (nextLineIsDescriptor)
-                        {
-                            nextLineIsDescriptor = false;
-                            string signature = line.TrimStart().TrimEnd();
-                            signature = signature.Remove(0, "descriptor: ".Length);
-                            map.Add(methodName, signature);
-                        }
-                        bool isInterfaceOrClassLine = line.Contains("class") || line.Contains("interface");
-                        if (line.Contains("public") && !isInterfaceOrClassLine)
-                        {
-                            nextLineIsDescriptor = true;
-                            methodName = line.TrimStart().TrimEnd();
-                            methodName = methodName.RemoveThrowsAndCleanupSignature();
-                            methodName = methodName.AddClassNameToSignature(className);
-                        }
-                    }
 #endif
                     dict.TryAdd(toBeAnalyzed[classCounter], map);
                 }
