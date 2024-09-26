@@ -120,7 +120,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.InetSocketAddress"/></returns>
         public static Java.Net.InetSocketAddress CreateUnresolved(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<Java.Net.InetSocketAddress>(LocalBridgeClazz, "createUnresolved", arg0, arg1);
+            return SExecuteWithSignature<Java.Net.InetSocketAddress>(LocalBridgeClazz, "createUnresolved", "(Ljava/lang/String;I)Ljava/net/InetSocketAddress;", arg0, arg1);
         }
 
         #endregion

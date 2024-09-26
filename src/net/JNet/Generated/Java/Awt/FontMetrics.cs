@@ -179,7 +179,7 @@ namespace Java.Awt
         /// <returns><see cref="int"/></returns>
         public int BytesWidth(byte[] arg0, int arg1, int arg2)
         {
-            return IExecute<int>("bytesWidth", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("bytesWidth", "([BII)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#charsWidth(char[],int,int)"/>
@@ -190,7 +190,7 @@ namespace Java.Awt
         /// <returns><see cref="int"/></returns>
         public int CharsWidth(char[] arg0, int arg1, int arg2)
         {
-            return IExecute<int>("charsWidth", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("charsWidth", "([CII)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#charWidth(char)"/>
@@ -229,7 +229,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.FontNs.LineMetrics"/></returns>
         public Java.Awt.FontNs.LineMetrics GetLineMetrics(char[] arg0, int arg1, int arg2, Java.Awt.Graphics arg3)
         {
-            return IExecute<Java.Awt.FontNs.LineMetrics>("getLineMetrics", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Awt.FontNs.LineMetrics>("getLineMetrics", "([CIILjava/awt/Graphics;)Ljava/awt/font/LineMetrics;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getLineMetrics(java.lang.String,int,int,java.awt.Graphics)"/>
@@ -241,7 +241,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.FontNs.LineMetrics"/></returns>
         public Java.Awt.FontNs.LineMetrics GetLineMetrics(Java.Lang.String arg0, int arg1, int arg2, Java.Awt.Graphics arg3)
         {
-            return IExecute<Java.Awt.FontNs.LineMetrics>("getLineMetrics", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Awt.FontNs.LineMetrics>("getLineMetrics", "(Ljava/lang/String;IILjava/awt/Graphics;)Ljava/awt/font/LineMetrics;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getLineMetrics(java.lang.String,java.awt.Graphics)"/>
@@ -251,7 +251,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.FontNs.LineMetrics"/></returns>
         public Java.Awt.FontNs.LineMetrics GetLineMetrics(Java.Lang.String arg0, Java.Awt.Graphics arg1)
         {
-            return IExecute<Java.Awt.FontNs.LineMetrics>("getLineMetrics", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.FontNs.LineMetrics>("getLineMetrics", "(Ljava/lang/String;Ljava/awt/Graphics;)Ljava/awt/font/LineMetrics;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getLineMetrics(java.text.CharacterIterator,int,int,java.awt.Graphics)"/>
@@ -263,7 +263,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.FontNs.LineMetrics"/></returns>
         public Java.Awt.FontNs.LineMetrics GetLineMetrics(Java.Text.CharacterIterator arg0, int arg1, int arg2, Java.Awt.Graphics arg3)
         {
-            return IExecute<Java.Awt.FontNs.LineMetrics>("getLineMetrics", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Awt.FontNs.LineMetrics>("getLineMetrics", "(Ljava/text/CharacterIterator;IILjava/awt/Graphics;)Ljava/awt/font/LineMetrics;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getMaxCharBounds(java.awt.Graphics)"/>
@@ -284,7 +284,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         public Java.Awt.Geom.Rectangle2D GetStringBounds(char[] arg0, int arg1, int arg2, Java.Awt.Graphics arg3)
         {
-            return IExecute<Java.Awt.Geom.Rectangle2D>("getStringBounds", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Awt.Geom.Rectangle2D>("getStringBounds", "([CIILjava/awt/Graphics;)Ljava/awt/geom/Rectangle2D;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getStringBounds(java.lang.String,int,int,java.awt.Graphics)"/>
@@ -296,7 +296,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         public Java.Awt.Geom.Rectangle2D GetStringBounds(Java.Lang.String arg0, int arg1, int arg2, Java.Awt.Graphics arg3)
         {
-            return IExecute<Java.Awt.Geom.Rectangle2D>("getStringBounds", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Awt.Geom.Rectangle2D>("getStringBounds", "(Ljava/lang/String;IILjava/awt/Graphics;)Ljava/awt/geom/Rectangle2D;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getStringBounds(java.lang.String,java.awt.Graphics)"/>
@@ -306,7 +306,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         public Java.Awt.Geom.Rectangle2D GetStringBounds(Java.Lang.String arg0, Java.Awt.Graphics arg1)
         {
-            return IExecute<Java.Awt.Geom.Rectangle2D>("getStringBounds", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Geom.Rectangle2D>("getStringBounds", "(Ljava/lang/String;Ljava/awt/Graphics;)Ljava/awt/geom/Rectangle2D;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getStringBounds(java.text.CharacterIterator,int,int,java.awt.Graphics)"/>
@@ -318,7 +318,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         public Java.Awt.Geom.Rectangle2D GetStringBounds(Java.Text.CharacterIterator arg0, int arg1, int arg2, Java.Awt.Graphics arg3)
         {
-            return IExecute<Java.Awt.Geom.Rectangle2D>("getStringBounds", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Awt.Geom.Rectangle2D>("getStringBounds", "(Ljava/text/CharacterIterator;IILjava/awt/Graphics;)Ljava/awt/geom/Rectangle2D;", arg0, arg1, arg2, arg3);
         }
 
         #endregion

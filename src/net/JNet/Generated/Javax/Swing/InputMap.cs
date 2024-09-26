@@ -144,7 +144,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="object"/></param>
         public void Put(Javax.Swing.KeyStroke arg0, object arg1)
         {
-            IExecute("put", arg0, arg1);
+            IExecuteWithSignature("put", "(Ljavax/swing/KeyStroke;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#remove(javax.swing.KeyStroke)"/>

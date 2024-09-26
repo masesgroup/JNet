@@ -147,7 +147,7 @@ namespace Javax.Print.Attribute
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToString(int arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("toString", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("toString", "(ILjava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
 
         #endregion

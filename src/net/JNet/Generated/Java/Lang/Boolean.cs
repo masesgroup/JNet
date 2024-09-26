@@ -129,7 +129,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool LogicalAnd(bool arg0, bool arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "logicalAnd", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "logicalAnd", "(ZZ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#logicalOr(boolean,boolean)"/>
@@ -139,7 +139,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool LogicalOr(bool arg0, bool arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "logicalOr", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "logicalOr", "(ZZ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#logicalXor(boolean,boolean)"/>
@@ -149,7 +149,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool LogicalXor(bool arg0, bool arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "logicalXor", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "logicalXor", "(ZZ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#parseBoolean(java.lang.String)"/>
@@ -168,7 +168,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Compare(bool arg0, bool arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "compare", "(ZZ)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#hashCode(boolean)"/>

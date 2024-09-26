@@ -231,7 +231,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int IndexOf(object arg0, int arg1)
         {
-            return IExecute<int>("indexOf", arg0, arg1);
+            return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/Object;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#lastIndexOf(java.lang.Object,int)"/>
@@ -241,7 +241,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int LastIndexOf(object arg0, int arg1)
         {
-            return IExecute<int>("lastIndexOf", arg0, arg1);
+            return IExecuteWithSignature<int>("lastIndexOf", "(Ljava/lang/Object;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#addElement(java.lang.Object)"/>
@@ -274,7 +274,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="int"/></param>
         public void InsertElementAt(object arg0, int arg1)
         {
-            IExecute("insertElementAt", arg0, arg1);
+            IExecuteWithSignature("insertElementAt", "(Ljava/lang/Object;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#removeAllElements()"/>
@@ -298,7 +298,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="int"/></param>
         public void SetElementAt(object arg0, int arg1)
         {
-            IExecute("setElementAt", arg0, arg1);
+            IExecuteWithSignature("setElementAt", "(Ljava/lang/Object;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#setSize(int)"/>
@@ -445,7 +445,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int IndexOf(object arg0, int arg1)
         {
-            return IExecute<int>("indexOf", arg0, arg1);
+            return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/Object;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#lastIndexOf(java.lang.Object,int)"/>
@@ -455,7 +455,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int LastIndexOf(object arg0, int arg1)
         {
-            return IExecute<int>("lastIndexOf", arg0, arg1);
+            return IExecuteWithSignature<int>("lastIndexOf", "(Ljava/lang/Object;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#addElement(java.lang.Object)"/>
@@ -488,7 +488,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="int"/></param>
         public void InsertElementAt(E arg0, int arg1)
         {
-            IExecute("insertElementAt", arg0, arg1);
+            IExecuteWithSignature("insertElementAt", "(Ljava/lang/Object;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#removeAllElements()"/>
@@ -512,7 +512,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="int"/></param>
         public void SetElementAt(E arg0, int arg1)
         {
-            IExecute("setElementAt", arg0, arg1);
+            IExecuteWithSignature("setElementAt", "(Ljava/lang/Object;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#setSize(int)"/>

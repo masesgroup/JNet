@@ -155,7 +155,7 @@ namespace Javax.Xml.Stream.Util
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void Allocate(Javax.Xml.Stream.XMLStreamReader arg0, Javax.Xml.Stream.Util.XMLEventConsumer arg1)
         {
-            IExecute("allocate", arg0, arg1);
+            IExecuteWithSignature("allocate", "(Ljavax/xml/stream/XMLStreamReader;Ljavax/xml/stream/util/XMLEventConsumer;)V", arg0, arg1);
         }
 
         #endregion

@@ -315,7 +315,7 @@ namespace Javax.Tools
         /// <returns><see cref="bool"/></returns>
         public bool HandleOption(Java.Lang.String arg0, Java.Util.Iterator<Java.Lang.String> arg1)
         {
-            return IExecute<bool>("handleOption", arg0, arg1);
+            return IExecuteWithSignature<bool>("handleOption", "(Ljava/lang/String;Ljava/util/Iterator;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#hasLocation(javax.tools.JavaFileManager.Location)"/>
@@ -334,7 +334,7 @@ namespace Javax.Tools
         /// <returns><see cref="bool"/></returns>
         public bool IsSameFile(Javax.Tools.FileObject arg0, Javax.Tools.FileObject arg1)
         {
-            return IExecute<bool>("isSameFile", arg0, arg1);
+            return IExecuteWithSignature<bool>("isSameFile", "(Ljavax/tools/FileObject;Ljavax/tools/FileObject;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getClassLoader(javax.tools.JavaFileManager.Location)"/>
@@ -356,7 +356,7 @@ namespace Javax.Tools
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.Iterable<Javax.Tools.JavaFileObject> List(Javax.Tools.JavaFileManager.Location arg0, Java.Lang.String arg1, Java.Util.Set<Javax.Tools.JavaFileObject.Kind> arg2, bool arg3)
         {
-            return IExecute<Java.Lang.Iterable<Javax.Tools.JavaFileObject>>("list", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Lang.Iterable<Javax.Tools.JavaFileObject>>("list", "(Ljavax/tools/JavaFileManager$Location;Ljava/lang/String;Ljava/util/Set;Z)Ljava/lang/Iterable;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#inferBinaryName(javax.tools.JavaFileManager.Location,javax.tools.JavaFileObject)"/>
@@ -366,7 +366,7 @@ namespace Javax.Tools
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String InferBinaryName(Javax.Tools.JavaFileManager.Location arg0, Javax.Tools.JavaFileObject arg1)
         {
-            return IExecute<Java.Lang.String>("inferBinaryName", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("inferBinaryName", "(Ljavax/tools/JavaFileManager$Location;Ljavax/tools/JavaFileObject;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getFileForInput(javax.tools.JavaFileManager.Location,java.lang.String,java.lang.String)"/>
@@ -378,7 +378,7 @@ namespace Javax.Tools
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Tools.FileObject GetFileForInput(Javax.Tools.JavaFileManager.Location arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return IExecute<Javax.Tools.FileObject>("getFileForInput", arg0, arg1, arg2);
+            return IExecuteWithSignature<Javax.Tools.FileObject>("getFileForInput", "(Ljavax/tools/JavaFileManager$Location;Ljava/lang/String;Ljava/lang/String;)Ljavax/tools/FileObject;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getFileForOutput(javax.tools.JavaFileManager.Location,java.lang.String,java.lang.String,javax.tools.FileObject)"/>
@@ -391,7 +391,7 @@ namespace Javax.Tools
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Tools.FileObject GetFileForOutput(Javax.Tools.JavaFileManager.Location arg0, Java.Lang.String arg1, Java.Lang.String arg2, Javax.Tools.FileObject arg3)
         {
-            return IExecute<Javax.Tools.FileObject>("getFileForOutput", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Javax.Tools.FileObject>("getFileForOutput", "(Ljavax/tools/JavaFileManager$Location;Ljava/lang/String;Ljava/lang/String;Ljavax/tools/FileObject;)Ljavax/tools/FileObject;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getJavaFileForInput(javax.tools.JavaFileManager.Location,java.lang.String,javax.tools.JavaFileObject.Kind)"/>
@@ -403,7 +403,7 @@ namespace Javax.Tools
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Tools.JavaFileObject GetJavaFileForInput(Javax.Tools.JavaFileManager.Location arg0, Java.Lang.String arg1, Javax.Tools.JavaFileObject.Kind arg2)
         {
-            return IExecute<Javax.Tools.JavaFileObject>("getJavaFileForInput", arg0, arg1, arg2);
+            return IExecuteWithSignature<Javax.Tools.JavaFileObject>("getJavaFileForInput", "(Ljavax/tools/JavaFileManager$Location;Ljava/lang/String;Ljavax/tools/JavaFileObject$Kind;)Ljavax/tools/JavaFileObject;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getJavaFileForOutput(javax.tools.JavaFileManager.Location,java.lang.String,javax.tools.JavaFileObject.Kind,javax.tools.FileObject)"/>
@@ -416,7 +416,7 @@ namespace Javax.Tools
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Tools.JavaFileObject GetJavaFileForOutput(Javax.Tools.JavaFileManager.Location arg0, Java.Lang.String arg1, Javax.Tools.JavaFileObject.Kind arg2, Javax.Tools.FileObject arg3)
         {
-            return IExecute<Javax.Tools.JavaFileObject>("getJavaFileForOutput", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Javax.Tools.JavaFileObject>("getJavaFileForOutput", "(Ljavax/tools/JavaFileManager$Location;Ljava/lang/String;Ljavax/tools/JavaFileObject$Kind;Ljavax/tools/FileObject;)Ljavax/tools/JavaFileObject;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#close()"/>
@@ -444,7 +444,7 @@ namespace Javax.Tools
         /// <exception cref="Java.Io.IOException"/>
         public Java.Util.ServiceLoader<S> GetServiceLoader<S>(Javax.Tools.JavaFileManager.Location arg0, Java.Lang.Class arg1)
         {
-            return IExecute<Java.Util.ServiceLoader<S>>("getServiceLoader", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.ServiceLoader<S>>("getServiceLoader", "(Ljavax/tools/JavaFileManager$Location;Ljava/lang/Class;)Ljava/util/ServiceLoader;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#contains(javax.tools.JavaFileManager.Location,javax.tools.FileObject)"/>
@@ -455,7 +455,7 @@ namespace Javax.Tools
         /// <exception cref="Java.Io.IOException"/>
         public bool Contains(Javax.Tools.JavaFileManager.Location arg0, Javax.Tools.FileObject arg1)
         {
-            return IExecute<bool>("contains", arg0, arg1);
+            return IExecuteWithSignature<bool>("contains", "(Ljavax/tools/JavaFileManager$Location;Ljavax/tools/FileObject;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#listLocationsForModules(javax.tools.JavaFileManager.Location)"/>
@@ -486,7 +486,7 @@ namespace Javax.Tools
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Tools.JavaFileManager.Location GetLocationForModule(Javax.Tools.JavaFileManager.Location arg0, Java.Lang.String arg1)
         {
-            return IExecute<Javax.Tools.JavaFileManager.Location>("getLocationForModule", arg0, arg1);
+            return IExecuteWithSignature<Javax.Tools.JavaFileManager.Location>("getLocationForModule", "(Ljavax/tools/JavaFileManager$Location;Ljava/lang/String;)Ljavax/tools/JavaFileManager$Location;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getLocationForModule(javax.tools.JavaFileManager.Location,javax.tools.JavaFileObject)"/>
@@ -497,7 +497,7 @@ namespace Javax.Tools
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Tools.JavaFileManager.Location GetLocationForModule(Javax.Tools.JavaFileManager.Location arg0, Javax.Tools.JavaFileObject arg1)
         {
-            return IExecute<Javax.Tools.JavaFileManager.Location>("getLocationForModule", arg0, arg1);
+            return IExecuteWithSignature<Javax.Tools.JavaFileManager.Location>("getLocationForModule", "(Ljavax/tools/JavaFileManager$Location;Ljavax/tools/JavaFileObject;)Ljavax/tools/JavaFileManager$Location;", arg0, arg1);
         }
 
         #endregion

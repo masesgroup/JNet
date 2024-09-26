@@ -176,7 +176,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool Offer(object arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
         {
-            return IExecute<bool>("offer", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("offer", "(Ljava/lang/Object;JLjava/util/concurrent/TimeUnit;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#offer(java.lang.Object)"/>
@@ -197,7 +197,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool OfferFirst(object arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
         {
-            return IExecute<bool>("offerFirst", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("offerFirst", "(Ljava/lang/Object;JLjava/util/concurrent/TimeUnit;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#offerFirst(java.lang.Object)"/>
@@ -218,7 +218,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool OfferLast(object arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
         {
-            return IExecute<bool>("offerLast", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("offerLast", "(Ljava/lang/Object;JLjava/util/concurrent/TimeUnit;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#offerLast(java.lang.Object)"/>
@@ -289,7 +289,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public object Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute("poll", arg0, arg1);
+            return IExecuteWithSignature("poll", "(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#pollFirst(long,java.util.concurrent.TimeUnit)"/>
@@ -300,7 +300,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public object PollFirst(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute("pollFirst", arg0, arg1);
+            return IExecuteWithSignature("pollFirst", "(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#pollLast(long,java.util.concurrent.TimeUnit)"/>
@@ -311,7 +311,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public object PollLast(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute("pollLast", arg0, arg1);
+            return IExecuteWithSignature("pollLast", "(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#remove()"/>
@@ -684,7 +684,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool Offer(E arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
         {
-            return IExecute<bool>("offer", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("offer", "(Ljava/lang/Object;JLjava/util/concurrent/TimeUnit;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#offer(java.lang.Object)"/>
@@ -705,7 +705,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool OfferFirst(E arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
         {
-            return IExecute<bool>("offerFirst", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("offerFirst", "(Ljava/lang/Object;JLjava/util/concurrent/TimeUnit;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#offerFirst(java.lang.Object)"/>
@@ -726,7 +726,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool OfferLast(E arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
         {
-            return IExecute<bool>("offerLast", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("offerLast", "(Ljava/lang/Object;JLjava/util/concurrent/TimeUnit;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#offerLast(java.lang.Object)"/>
@@ -797,7 +797,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public E Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute<E>("poll", arg0, arg1);
+            return IExecuteWithSignature<E>("poll", "(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#pollFirst(long,java.util.concurrent.TimeUnit)"/>
@@ -808,7 +808,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public E PollFirst(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute<E>("pollFirst", arg0, arg1);
+            return IExecuteWithSignature<E>("pollFirst", "(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#pollLast(long,java.util.concurrent.TimeUnit)"/>
@@ -819,7 +819,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public E PollLast(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute<E>("pollLast", arg0, arg1);
+            return IExecuteWithSignature<E>("pollLast", "(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#remove()"/>

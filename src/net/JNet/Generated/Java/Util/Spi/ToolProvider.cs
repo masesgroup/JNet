@@ -149,7 +149,7 @@ namespace Java.Util.Spi
         /// <returns><see cref="int"/></returns>
         public int Run(Java.Io.PrintWriter arg0, Java.Io.PrintWriter arg1, params Java.Lang.String[] arg2)
         {
-            if (arg2.Length == 0) return IExecute<int>("run", arg0, arg1); else return IExecute<int>("run", arg0, arg1, arg2);
+            if (arg2.Length == 0) return IExecuteWithSignature<int>("run", "(Ljava/io/PrintWriter;Ljava/io/PrintWriter;[Ljava/lang/String;)I", arg0, arg1); else return IExecuteWithSignature<int>("run", "(Ljava/io/PrintWriter;Ljava/io/PrintWriter;[Ljava/lang/String;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html#name()"/>
@@ -168,7 +168,7 @@ namespace Java.Util.Spi
         /// <returns><see cref="int"/></returns>
         public int Run(Java.Io.PrintStream arg0, Java.Io.PrintStream arg1, params Java.Lang.String[] arg2)
         {
-            if (arg2.Length == 0) return IExecute<int>("run", arg0, arg1); else return IExecute<int>("run", arg0, arg1, arg2);
+            if (arg2.Length == 0) return IExecuteWithSignature<int>("run", "(Ljava/io/PrintStream;Ljava/io/PrintStream;[Ljava/lang/String;)I", arg0, arg1); else return IExecuteWithSignature<int>("run", "(Ljava/io/PrintStream;Ljava/io/PrintStream;[Ljava/lang/String;)I", arg0, arg1, arg2);
         }
 
         #endregion

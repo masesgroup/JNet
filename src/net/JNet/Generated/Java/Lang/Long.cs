@@ -137,7 +137,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Compare(long arg0, long arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "compare", "(JJ)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#compareUnsigned(long,long)"/>
@@ -147,7 +147,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int CompareUnsigned(long arg0, long arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "compareUnsigned", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "compareUnsigned", "(JJ)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#hashCode(long)"/>
@@ -203,7 +203,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.Long"/></returns>
         public static Java.Lang.Long GetLong(Java.Lang.String arg0, Java.Lang.Long arg1)
         {
-            return SExecute<Java.Lang.Long>(LocalBridgeClazz, "getLong", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.Long>(LocalBridgeClazz, "getLong", "(Ljava/lang/String;Ljava/lang/Long;)Ljava/lang/Long;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#getLong(java.lang.String,long)"/>
@@ -213,7 +213,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.Long"/></returns>
         public static Java.Lang.Long GetLong(Java.Lang.String arg0, long arg1)
         {
-            return SExecute<Java.Lang.Long>(LocalBridgeClazz, "getLong", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.Long>(LocalBridgeClazz, "getLong", "(Ljava/lang/String;J)Ljava/lang/Long;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#getLong(java.lang.String)"/>
@@ -233,7 +233,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static Java.Lang.Long ValueOf(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<Java.Lang.Long>(LocalBridgeClazz, "valueOf", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.Long>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;I)Ljava/lang/Long;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#valueOf(java.lang.String)"/>
@@ -289,7 +289,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToString(long arg0, int arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(JI)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toString(long)"/>
@@ -308,7 +308,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToUnsignedString(long arg0, int arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toUnsignedString", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toUnsignedString", "(JI)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toUnsignedString(long)"/>
@@ -327,7 +327,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long DivideUnsigned(long arg0, long arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "divideUnsigned", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "divideUnsigned", "(JJ)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#highestOneBit(long)"/>
@@ -355,7 +355,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long Max(long arg0, long arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "max", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "max", "(JJ)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#min(long,long)"/>
@@ -365,7 +365,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long Min(long arg0, long arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "min", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "min", "(JJ)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#parseLong(java.lang.CharSequence,int,int,int)"/>
@@ -378,7 +378,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long ParseLong(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3)
         {
-            return SExecute<long>(LocalBridgeClazz, "parseLong", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "parseLong", "(Ljava/lang/CharSequence;III)J", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#parseLong(java.lang.String,int)"/>
@@ -389,7 +389,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long ParseLong(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "parseLong", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "parseLong", "(Ljava/lang/String;I)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#parseLong(java.lang.String)"/>
@@ -412,7 +412,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long ParseUnsignedLong(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3)
         {
-            return SExecute<long>(LocalBridgeClazz, "parseUnsignedLong", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "parseUnsignedLong", "(Ljava/lang/CharSequence;III)J", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#parseUnsignedLong(java.lang.String,int)"/>
@@ -423,7 +423,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long ParseUnsignedLong(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "parseUnsignedLong", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "parseUnsignedLong", "(Ljava/lang/String;I)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#parseUnsignedLong(java.lang.String)"/>
@@ -443,7 +443,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long RemainderUnsigned(long arg0, long arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "remainderUnsigned", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "remainderUnsigned", "(JJ)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#reverse(long)"/>
@@ -471,7 +471,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long RotateLeft(long arg0, int arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "rotateLeft", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "rotateLeft", "(JI)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#rotateRight(long,int)"/>
@@ -481,7 +481,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long RotateRight(long arg0, int arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "rotateRight", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "rotateRight", "(JI)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#sum(long,long)"/>
@@ -491,7 +491,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long Sum(long arg0, long arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "sum", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "sum", "(JJ)J", arg0, arg1);
         }
 
         #endregion

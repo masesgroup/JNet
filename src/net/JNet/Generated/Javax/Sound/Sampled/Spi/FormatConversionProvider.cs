@@ -114,7 +114,7 @@ namespace Javax.Sound.Sampled.Spi
         /// <returns><see cref="Javax.Sound.Sampled.AudioFormat"/></returns>
         public Javax.Sound.Sampled.AudioFormat[] GetTargetFormats(Javax.Sound.Sampled.AudioFormat.Encoding arg0, Javax.Sound.Sampled.AudioFormat arg1)
         {
-            return IExecuteArray<Javax.Sound.Sampled.AudioFormat>("getTargetFormats", arg0, arg1);
+            return IExecuteWithSignatureArray<Javax.Sound.Sampled.AudioFormat>("getTargetFormats", "(Ljavax/sound/sampled/AudioFormat$Encoding;Ljavax/sound/sampled/AudioFormat;)[Ljavax/sound/sampled/AudioFormat;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/FormatConversionProvider.html#getTargetEncodings(javax.sound.sampled.AudioFormat)"/>
@@ -133,7 +133,7 @@ namespace Javax.Sound.Sampled.Spi
         /// <returns><see cref="Javax.Sound.Sampled.AudioInputStream"/></returns>
         public Javax.Sound.Sampled.AudioInputStream GetAudioInputStream(Javax.Sound.Sampled.AudioFormat arg0, Javax.Sound.Sampled.AudioInputStream arg1)
         {
-            return IExecute<Javax.Sound.Sampled.AudioInputStream>("getAudioInputStream", arg0, arg1);
+            return IExecuteWithSignature<Javax.Sound.Sampled.AudioInputStream>("getAudioInputStream", "(Ljavax/sound/sampled/AudioFormat;Ljavax/sound/sampled/AudioInputStream;)Ljavax/sound/sampled/AudioInputStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/FormatConversionProvider.html#getAudioInputStream(javax.sound.sampled.AudioFormat.Encoding,javax.sound.sampled.AudioInputStream)"/>
@@ -143,7 +143,7 @@ namespace Javax.Sound.Sampled.Spi
         /// <returns><see cref="Javax.Sound.Sampled.AudioInputStream"/></returns>
         public Javax.Sound.Sampled.AudioInputStream GetAudioInputStream(Javax.Sound.Sampled.AudioFormat.Encoding arg0, Javax.Sound.Sampled.AudioInputStream arg1)
         {
-            return IExecute<Javax.Sound.Sampled.AudioInputStream>("getAudioInputStream", arg0, arg1);
+            return IExecuteWithSignature<Javax.Sound.Sampled.AudioInputStream>("getAudioInputStream", "(Ljavax/sound/sampled/AudioFormat$Encoding;Ljavax/sound/sampled/AudioInputStream;)Ljavax/sound/sampled/AudioInputStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/FormatConversionProvider.html#isConversionSupported(javax.sound.sampled.AudioFormat,javax.sound.sampled.AudioFormat)"/>
@@ -153,7 +153,7 @@ namespace Javax.Sound.Sampled.Spi
         /// <returns><see cref="bool"/></returns>
         public bool IsConversionSupported(Javax.Sound.Sampled.AudioFormat arg0, Javax.Sound.Sampled.AudioFormat arg1)
         {
-            return IExecute<bool>("isConversionSupported", arg0, arg1);
+            return IExecuteWithSignature<bool>("isConversionSupported", "(Ljavax/sound/sampled/AudioFormat;Ljavax/sound/sampled/AudioFormat;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/FormatConversionProvider.html#isConversionSupported(javax.sound.sampled.AudioFormat.Encoding,javax.sound.sampled.AudioFormat)"/>
@@ -163,7 +163,7 @@ namespace Javax.Sound.Sampled.Spi
         /// <returns><see cref="bool"/></returns>
         public bool IsConversionSupported(Javax.Sound.Sampled.AudioFormat.Encoding arg0, Javax.Sound.Sampled.AudioFormat arg1)
         {
-            return IExecute<bool>("isConversionSupported", arg0, arg1);
+            return IExecuteWithSignature<bool>("isConversionSupported", "(Ljavax/sound/sampled/AudioFormat$Encoding;Ljavax/sound/sampled/AudioFormat;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/FormatConversionProvider.html#isSourceEncodingSupported(javax.sound.sampled.AudioFormat.Encoding)"/>

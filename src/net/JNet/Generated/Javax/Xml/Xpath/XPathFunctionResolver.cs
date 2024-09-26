@@ -125,7 +125,7 @@ namespace Javax.Xml.Xpath
         /// <returns><see cref="Javax.Xml.Xpath.XPathFunction"/></returns>
         public Javax.Xml.Xpath.XPathFunction ResolveFunction(Javax.Xml.Namespace.QName arg0, int arg1)
         {
-            return IExecute<Javax.Xml.Xpath.XPathFunction>("resolveFunction", arg0, arg1);
+            return IExecuteWithSignature<Javax.Xml.Xpath.XPathFunction>("resolveFunction", "(Ljavax/xml/namespace/QName;I)Ljavax/xml/xpath/XPathFunction;", arg0, arg1);
         }
 
         #endregion

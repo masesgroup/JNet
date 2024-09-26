@@ -560,7 +560,7 @@ namespace Org.W3c.Dom
         /// <returns><see cref="bool"/></returns>
         public bool IsSupported(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("isSupported", arg0, arg1);
+            return IExecuteWithSignature<bool>("isSupported", "(Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getFeature(java.lang.String,java.lang.String)"/>
@@ -570,7 +570,7 @@ namespace Org.W3c.Dom
         /// <returns><see cref="object"/></returns>
         public object GetFeature(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute("getFeature", arg0, arg1);
+            return IExecuteWithSignature("getFeature", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getUserData(java.lang.String)"/>
@@ -590,7 +590,7 @@ namespace Org.W3c.Dom
         /// <returns><see cref="object"/></returns>
         public object SetUserData(Java.Lang.String arg0, object arg1, Org.W3c.Dom.UserDataHandler arg2)
         {
-            return IExecute("setUserData", arg0, arg1, arg2);
+            return IExecuteWithSignature("setUserData", "(Ljava/lang/String;Ljava/lang/Object;Lorg/w3c/dom/UserDataHandler;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#lookupNamespaceURI(java.lang.String)"/>
@@ -638,7 +638,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Node InsertBefore(Org.W3c.Dom.Node arg0, Org.W3c.Dom.Node arg1)
         {
-            return IExecute<Org.W3c.Dom.Node>("insertBefore", arg0, arg1);
+            return IExecuteWithSignature<Org.W3c.Dom.Node>("insertBefore", "(Lorg/w3c/dom/Node;Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#removeChild(org.w3c.dom.Node)"/>
@@ -659,7 +659,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Node ReplaceChild(Org.W3c.Dom.Node arg0, Org.W3c.Dom.Node arg1)
         {
-            return IExecute<Org.W3c.Dom.Node>("replaceChild", arg0, arg1);
+            return IExecuteWithSignature<Org.W3c.Dom.Node>("replaceChild", "(Lorg/w3c/dom/Node;Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#compareDocumentPosition(org.w3c.dom.Node)"/>

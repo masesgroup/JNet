@@ -210,7 +210,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int GetOffset(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
         {
-            return IExecute<int>("getOffset", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<int>("getOffset", "(IIIIII)I", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#hasSameRules(java.util.TimeZone)"/>
@@ -237,7 +237,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDisplayName(bool arg0, int arg1)
         {
-            return IExecute<Java.Lang.String>("getDisplayName", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "(ZI)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#getDisplayName(java.util.Locale)"/>
@@ -266,7 +266,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDisplayName(bool arg0, int arg1, Java.Util.Locale arg2)
         {
-            return IExecute<Java.Lang.String>("getDisplayName", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "(ZILjava/util/Locale;)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#toZoneId()"/>

@@ -201,7 +201,7 @@ namespace Java.Awt.Dnd
         /// <returns><see cref="Java.Awt.Dnd.DragGestureRecognizer"/></returns>
         public Java.Awt.Dnd.DragGestureRecognizer CreateDefaultDragGestureRecognizer(Java.Awt.Component arg0, int arg1, Java.Awt.Dnd.DragGestureListener arg2)
         {
-            return IExecute<Java.Awt.Dnd.DragGestureRecognizer>("createDefaultDragGestureRecognizer", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Awt.Dnd.DragGestureRecognizer>("createDefaultDragGestureRecognizer", "(Ljava/awt/Component;ILjava/awt/dnd/DragGestureListener;)Ljava/awt/dnd/DragGestureRecognizer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#addDragSourceListener(java.awt.dnd.DragSourceListener)"/>
@@ -246,7 +246,7 @@ namespace Java.Awt.Dnd
         /// <exception cref="Java.Awt.Dnd.InvalidDnDOperationException"/>
         public void StartDrag(Java.Awt.Dnd.DragGestureEvent arg0, Java.Awt.Cursor arg1, Java.Awt.Datatransfer.Transferable arg2, Java.Awt.Dnd.DragSourceListener arg3, Java.Awt.Datatransfer.FlavorMap arg4)
         {
-            IExecute("startDrag", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("startDrag", "(Ljava/awt/dnd/DragGestureEvent;Ljava/awt/Cursor;Ljava/awt/datatransfer/Transferable;Ljava/awt/dnd/DragSourceListener;Ljava/awt/datatransfer/FlavorMap;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#startDrag(java.awt.dnd.DragGestureEvent,java.awt.Cursor,java.awt.datatransfer.Transferable,java.awt.dnd.DragSourceListener)"/>
@@ -258,7 +258,7 @@ namespace Java.Awt.Dnd
         /// <exception cref="Java.Awt.Dnd.InvalidDnDOperationException"/>
         public void StartDrag(Java.Awt.Dnd.DragGestureEvent arg0, Java.Awt.Cursor arg1, Java.Awt.Datatransfer.Transferable arg2, Java.Awt.Dnd.DragSourceListener arg3)
         {
-            IExecute("startDrag", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("startDrag", "(Ljava/awt/dnd/DragGestureEvent;Ljava/awt/Cursor;Ljava/awt/datatransfer/Transferable;Ljava/awt/dnd/DragSourceListener;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#startDrag(java.awt.dnd.DragGestureEvent,java.awt.Cursor,java.awt.Image,java.awt.Point,java.awt.datatransfer.Transferable,java.awt.dnd.DragSourceListener,java.awt.datatransfer.FlavorMap)"/>
@@ -273,7 +273,7 @@ namespace Java.Awt.Dnd
         /// <exception cref="Java.Awt.Dnd.InvalidDnDOperationException"/>
         public void StartDrag(Java.Awt.Dnd.DragGestureEvent arg0, Java.Awt.Cursor arg1, Java.Awt.Image arg2, Java.Awt.Point arg3, Java.Awt.Datatransfer.Transferable arg4, Java.Awt.Dnd.DragSourceListener arg5, Java.Awt.Datatransfer.FlavorMap arg6)
         {
-            IExecute("startDrag", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("startDrag", "(Ljava/awt/dnd/DragGestureEvent;Ljava/awt/Cursor;Ljava/awt/Image;Ljava/awt/Point;Ljava/awt/datatransfer/Transferable;Ljava/awt/dnd/DragSourceListener;Ljava/awt/datatransfer/FlavorMap;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#startDrag(java.awt.dnd.DragGestureEvent,java.awt.Cursor,java.awt.Image,java.awt.Point,java.awt.datatransfer.Transferable,java.awt.dnd.DragSourceListener)"/>
@@ -287,7 +287,7 @@ namespace Java.Awt.Dnd
         /// <exception cref="Java.Awt.Dnd.InvalidDnDOperationException"/>
         public void StartDrag(Java.Awt.Dnd.DragGestureEvent arg0, Java.Awt.Cursor arg1, Java.Awt.Image arg2, Java.Awt.Point arg3, Java.Awt.Datatransfer.Transferable arg4, Java.Awt.Dnd.DragSourceListener arg5)
         {
-            IExecute("startDrag", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("startDrag", "(Ljava/awt/dnd/DragGestureEvent;Ljava/awt/Cursor;Ljava/awt/Image;Ljava/awt/Point;Ljava/awt/datatransfer/Transferable;Ljava/awt/dnd/DragSourceListener;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
 
         #endregion

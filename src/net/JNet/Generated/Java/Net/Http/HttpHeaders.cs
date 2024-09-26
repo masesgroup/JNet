@@ -94,7 +94,7 @@ namespace Java.Net.Http
         /// <returns><see cref="Java.Net.Http.HttpHeaders"/></returns>
         public static Java.Net.Http.HttpHeaders Of(Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> arg0, Java.Util.Function.BiPredicate<Java.Lang.String, Java.Lang.String> arg1)
         {
-            return SExecute<Java.Net.Http.HttpHeaders>(LocalBridgeClazz, "of", arg0, arg1);
+            return SExecuteWithSignature<Java.Net.Http.HttpHeaders>(LocalBridgeClazz, "of", "(Ljava/util/Map;Ljava/util/function/BiPredicate;)Ljava/net/http/HttpHeaders;", arg0, arg1);
         }
 
         #endregion

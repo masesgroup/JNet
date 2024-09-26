@@ -232,7 +232,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.SocketException"/>
         public void SetOption(int arg0, object arg1)
         {
-            IExecute("setOption", arg0, arg1);
+            IExecuteWithSignature("setOption", "(ILjava/lang/Object;)V", arg0, arg1);
         }
 
         #endregion

@@ -157,7 +157,7 @@ namespace Javax.Swing
         /// <param name="arg2"><see cref="int"/></param>
         public void InsertEntries(int arg0, int arg1, int arg2)
         {
-            IExecute("insertEntries", arg0, arg1, arg2);
+            IExecuteWithSignature("insertEntries", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeSequence.html#removeEntries(int,int)"/>
@@ -166,7 +166,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void RemoveEntries(int arg0, int arg1)
         {
-            IExecute("removeEntries", arg0, arg1);
+            IExecuteWithSignature("removeEntries", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeSequence.html#setSize(int,int)"/>
@@ -175,7 +175,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void SetSize(int arg0, int arg1)
         {
-            IExecute("setSize", arg0, arg1);
+            IExecuteWithSignature("setSize", "(II)V", arg0, arg1);
         }
 
         #endregion

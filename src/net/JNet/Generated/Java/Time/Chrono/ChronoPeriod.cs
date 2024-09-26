@@ -178,7 +178,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
         public static Java.Time.Chrono.ChronoPeriod Between(Java.Time.Chrono.ChronoLocalDate arg0, Java.Time.Chrono.ChronoLocalDate arg1)
         {
-            return SExecute<Java.Time.Chrono.ChronoPeriod>(LocalBridgeClazz, "between", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.Chrono.ChronoPeriod>(LocalBridgeClazz, "between", "(Ljava/time/chrono/ChronoLocalDate;Ljava/time/chrono/ChronoLocalDate;)Ljava/time/chrono/ChronoPeriod;", arg0, arg1);
         }
 
         #endregion

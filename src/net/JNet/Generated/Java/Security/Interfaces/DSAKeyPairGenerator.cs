@@ -134,7 +134,7 @@ namespace Java.Security.Interfaces
         /// <exception cref="Java.Security.InvalidParameterException"/>
         public void Initialize(int arg0, bool arg1, Java.Security.SecureRandom arg2)
         {
-            IExecute("initialize", arg0, arg1, arg2);
+            IExecuteWithSignature("initialize", "(IZLjava/security/SecureRandom;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAKeyPairGenerator.html#initialize(java.security.interfaces.DSAParams,java.security.SecureRandom)"/>

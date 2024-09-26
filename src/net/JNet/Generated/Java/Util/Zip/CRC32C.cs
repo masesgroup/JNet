@@ -112,7 +112,7 @@ namespace Java.Util.Zip
         /// <param name="arg2"><see cref="int"/></param>
         public void Update(byte[] arg0, int arg1, int arg2)
         {
-            IExecute("update", arg0, arg1, arg2);
+            IExecuteWithSignature("update", "([BII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/CRC32C.html#update(int)"/>

@@ -104,7 +104,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.AWTKeyStroke"/></returns>
         public static Java.Awt.AWTKeyStroke GetAWTKeyStroke(int arg0, int arg1, bool arg2)
         {
-            return SExecute<Java.Awt.AWTKeyStroke>(LocalBridgeClazz, "getAWTKeyStroke", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Awt.AWTKeyStroke>(LocalBridgeClazz, "getAWTKeyStroke", "(IIZ)Ljava/awt/AWTKeyStroke;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTKeyStroke.html#getAWTKeyStroke(int,int)"/>
@@ -114,7 +114,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.AWTKeyStroke"/></returns>
         public static Java.Awt.AWTKeyStroke GetAWTKeyStroke(int arg0, int arg1)
         {
-            return SExecute<Java.Awt.AWTKeyStroke>(LocalBridgeClazz, "getAWTKeyStroke", arg0, arg1);
+            return SExecuteWithSignature<Java.Awt.AWTKeyStroke>(LocalBridgeClazz, "getAWTKeyStroke", "(II)Ljava/awt/AWTKeyStroke;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTKeyStroke.html#getAWTKeyStroke(java.lang.Character,int)"/>
@@ -124,7 +124,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.AWTKeyStroke"/></returns>
         public static Java.Awt.AWTKeyStroke GetAWTKeyStroke(Java.Lang.Character arg0, int arg1)
         {
-            return SExecute<Java.Awt.AWTKeyStroke>(LocalBridgeClazz, "getAWTKeyStroke", arg0, arg1);
+            return SExecuteWithSignature<Java.Awt.AWTKeyStroke>(LocalBridgeClazz, "getAWTKeyStroke", "(Ljava/lang/Character;I)Ljava/awt/AWTKeyStroke;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTKeyStroke.html#getAWTKeyStroke(java.lang.String)"/>

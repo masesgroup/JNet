@@ -186,7 +186,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <exception cref="Javax.Xml.Crypto.Dsig.TransformException"/>
         public Javax.Xml.Crypto.Data TransformMethod(Javax.Xml.Crypto.Data arg0, Javax.Xml.Crypto.XMLCryptoContext arg1, Java.Io.OutputStream arg2)
         {
-            return IExecute<Javax.Xml.Crypto.Data>("transform", arg0, arg1, arg2);
+            return IExecuteWithSignature<Javax.Xml.Crypto.Data>("transform", "(Ljavax/xml/crypto/Data;Ljavax/xml/crypto/XMLCryptoContext;Ljava/io/OutputStream;)Ljavax/xml/crypto/Data;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#transform(javax.xml.crypto.Data,javax.xml.crypto.XMLCryptoContext)"/>
@@ -197,7 +197,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <exception cref="Javax.Xml.Crypto.Dsig.TransformException"/>
         public Javax.Xml.Crypto.Data TransformMethod(Javax.Xml.Crypto.Data arg0, Javax.Xml.Crypto.XMLCryptoContext arg1)
         {
-            return IExecute<Javax.Xml.Crypto.Data>("transform", arg0, arg1);
+            return IExecuteWithSignature<Javax.Xml.Crypto.Data>("transform", "(Ljavax/xml/crypto/Data;Ljavax/xml/crypto/XMLCryptoContext;)Ljavax/xml/crypto/Data;", arg0, arg1);
         }
 
         #endregion

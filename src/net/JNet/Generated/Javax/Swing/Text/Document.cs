@@ -270,7 +270,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public Java.Lang.String GetText(int arg0, int arg1)
         {
-            return IExecute<Java.Lang.String>("getText", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getText", "(II)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#createPosition(int)"/>
@@ -307,7 +307,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public void GetText(int arg0, int arg1, Javax.Swing.Text.Segment arg2)
         {
-            IExecute("getText", arg0, arg1, arg2);
+            IExecuteWithSignature("getText", "(IILjavax/swing/text/Segment;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#insertString(int,java.lang.String,javax.swing.text.AttributeSet)"/>
@@ -318,7 +318,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public void InsertString(int arg0, Java.Lang.String arg1, Javax.Swing.Text.AttributeSet arg2)
         {
-            IExecute("insertString", arg0, arg1, arg2);
+            IExecuteWithSignature("insertString", "(ILjava/lang/String;Ljavax/swing/text/AttributeSet;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#putProperty(java.lang.Object,java.lang.Object)"/>
@@ -327,7 +327,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="object"/></param>
         public void PutProperty(object arg0, object arg1)
         {
-            IExecute("putProperty", arg0, arg1);
+            IExecuteWithSignature("putProperty", "(Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#remove(int,int)"/>
@@ -337,7 +337,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public void Remove(int arg0, int arg1)
         {
-            IExecute("remove", arg0, arg1);
+            IExecuteWithSignature("remove", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#removeDocumentListener(javax.swing.event.DocumentListener)"/>

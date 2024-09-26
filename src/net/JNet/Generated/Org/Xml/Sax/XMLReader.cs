@@ -251,7 +251,7 @@ namespace Org.Xml.Sax
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public void SetFeature(Java.Lang.String arg0, bool arg1)
         {
-            IExecute("setFeature", arg0, arg1);
+            IExecuteWithSignature("setFeature", "(Ljava/lang/String;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#setProperty(java.lang.String,java.lang.Object)"/>
@@ -262,7 +262,7 @@ namespace Org.Xml.Sax
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public void SetProperty(Java.Lang.String arg0, object arg1)
         {
-            IExecute("setProperty", arg0, arg1);
+            IExecuteWithSignature("setProperty", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
         }
 
         #endregion

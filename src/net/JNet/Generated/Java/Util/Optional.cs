@@ -281,7 +281,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
         public void IfPresentOrElse(Java.Util.Function.Consumer arg0, Java.Lang.Runnable arg1)
         {
-            IExecute("ifPresentOrElse", arg0, arg1);
+            IExecuteWithSignature("ifPresentOrElse", "(Ljava/util/function/Consumer;Ljava/lang/Runnable;)V", arg0, arg1);
         }
 
         #endregion
@@ -478,7 +478,7 @@ namespace Java.Util
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         public void IfPresentOrElse<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0, Java.Lang.Runnable arg1) where Arg0objectSuperT : T
         {
-            IExecute("ifPresentOrElse", arg0, arg1);
+            IExecuteWithSignature("ifPresentOrElse", "(Ljava/util/function/Consumer;Ljava/lang/Runnable;)V", arg0, arg1);
         }
 
         #endregion

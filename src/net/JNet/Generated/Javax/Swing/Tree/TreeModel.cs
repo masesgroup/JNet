@@ -189,7 +189,7 @@ namespace Javax.Swing.Tree
         /// <returns><see cref="int"/></returns>
         public int GetIndexOfChild(object arg0, object arg1)
         {
-            return IExecute<int>("getIndexOfChild", arg0, arg1);
+            return IExecuteWithSignature<int>("getIndexOfChild", "(Ljava/lang/Object;Ljava/lang/Object;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeModel.html#getChild(java.lang.Object,int)"/>
@@ -199,7 +199,7 @@ namespace Javax.Swing.Tree
         /// <returns><see cref="object"/></returns>
         public object GetChild(object arg0, int arg1)
         {
-            return IExecute("getChild", arg0, arg1);
+            return IExecuteWithSignature("getChild", "(Ljava/lang/Object;I)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeModel.html#addTreeModelListener(javax.swing.event.TreeModelListener)"/>
@@ -224,7 +224,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg1"><see cref="object"/></param>
         public void ValueForPathChanged(Javax.Swing.Tree.TreePath arg0, object arg1)
         {
-            IExecute("valueForPathChanged", arg0, arg1);
+            IExecuteWithSignature("valueForPathChanged", "(Ljavax/swing/tree/TreePath;Ljava/lang/Object;)V", arg0, arg1);
         }
 
         #endregion

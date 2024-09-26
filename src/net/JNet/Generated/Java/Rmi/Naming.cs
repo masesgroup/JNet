@@ -119,7 +119,7 @@ namespace Java.Rmi
         /// <exception cref="Java.Rmi.RemoteException"/>
         public static void Bind(Java.Lang.String arg0, Java.Rmi.Remote arg1)
         {
-            SExecute(LocalBridgeClazz, "bind", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "bind", "(Ljava/lang/String;Ljava/rmi/Remote;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/Naming.html#rebind(java.lang.String,java.rmi.Remote)"/>
@@ -130,7 +130,7 @@ namespace Java.Rmi
         /// <exception cref="Java.Net.MalformedURLException"/>
         public static void Rebind(Java.Lang.String arg0, Java.Rmi.Remote arg1)
         {
-            SExecute(LocalBridgeClazz, "rebind", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "rebind", "(Ljava/lang/String;Ljava/rmi/Remote;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/Naming.html#unbind(java.lang.String)"/>

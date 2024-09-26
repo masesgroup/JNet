@@ -272,7 +272,7 @@ namespace Java.Lang.Management
         /// <exception cref="Java.Io.IOException"/>
         public static T NewPlatformMXBeanProxy<T>(Javax.Management.MBeanServerConnection arg0, Java.Lang.String arg1, Java.Lang.Class arg2)
         {
-            return SExecute<T>(LocalBridgeClazz, "newPlatformMXBeanProxy", arg0, arg1, arg2);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "newPlatformMXBeanProxy", "(Ljavax/management/MBeanServerConnection;Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
 
         #endregion

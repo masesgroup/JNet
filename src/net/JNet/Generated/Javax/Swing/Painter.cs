@@ -149,7 +149,7 @@ namespace Javax.Swing
         /// <param name="arg3"><see cref="int"/></param>
         public void Paint(Java.Awt.Graphics2D arg0, object arg1, int arg2, int arg3)
         {
-            IExecute("paint", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("paint", "(Ljava/awt/Graphics2D;Ljava/lang/Object;II)V", arg0, arg1, arg2, arg3);
         }
 
         #endregion
@@ -221,7 +221,7 @@ namespace Javax.Swing
         /// <param name="arg3"><see cref="int"/></param>
         public void Paint(Java.Awt.Graphics2D arg0, T arg1, int arg2, int arg3)
         {
-            IExecute("paint", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("paint", "(Ljava/awt/Graphics2D;Ljava/lang/Object;II)V", arg0, arg1, arg2, arg3);
         }
 
         #endregion

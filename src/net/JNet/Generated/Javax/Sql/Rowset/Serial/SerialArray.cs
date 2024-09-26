@@ -171,7 +171,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
         public object GetArray(long arg0, int arg1, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg2)
         {
-            return IExecute("getArray", arg0, arg1, arg2);
+            return IExecuteWithSignature("getArray", "(JILjava/util/Map;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getArray(long,int)"/>
@@ -182,7 +182,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
         public object GetArray(long arg0, int arg1)
         {
-            return IExecute("getArray", arg0, arg1);
+            return IExecuteWithSignature("getArray", "(JI)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getResultSet(java.util.Map)"/>
@@ -204,7 +204,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
         public Java.Sql.ResultSet GetResultSet(long arg0, int arg1, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg2)
         {
-            return IExecute<Java.Sql.ResultSet>("getResultSet", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Sql.ResultSet>("getResultSet", "(JILjava/util/Map;)Ljava/sql/ResultSet;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getResultSet(long,int)"/>
@@ -215,7 +215,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
         public Java.Sql.ResultSet GetResultSet(long arg0, int arg1)
         {
-            return IExecute<Java.Sql.ResultSet>("getResultSet", arg0, arg1);
+            return IExecuteWithSignature<Java.Sql.ResultSet>("getResultSet", "(JI)Ljava/sql/ResultSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#free()"/>

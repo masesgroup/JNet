@@ -103,7 +103,7 @@ namespace Java.Time.Zone
         /// <returns><see cref="Java.Time.Zone.ZoneOffsetTransition"/></returns>
         public static Java.Time.Zone.ZoneOffsetTransition Of(Java.Time.LocalDateTime arg0, Java.Time.ZoneOffset arg1, Java.Time.ZoneOffset arg2)
         {
-            return SExecute<Java.Time.Zone.ZoneOffsetTransition>(LocalBridgeClazz, "of", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Time.Zone.ZoneOffsetTransition>(LocalBridgeClazz, "of", "(Ljava/time/LocalDateTime;Ljava/time/ZoneOffset;Ljava/time/ZoneOffset;)Ljava/time/zone/ZoneOffsetTransition;", arg0, arg1, arg2);
         }
 
         #endregion

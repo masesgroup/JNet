@@ -161,7 +161,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool AddAll(int arg0, Java.Util.Collection arg1)
         {
-            return IExecute<bool>("addAll", arg0, arg1);
+            return IExecuteWithSignature<bool>("addAll", "(ILjava/util/Collection;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#remove(int)"/>
@@ -180,7 +180,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Set(int arg0, object arg1)
         {
-            return IExecute("set", arg0, arg1);
+            return IExecuteWithSignature("set", "(ILjava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#indexOf(java.lang.Object)"/>
@@ -208,7 +208,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List SubListMethod(int arg0, int arg1)
         {
-            return IExecute<Java.Util.List>("subList", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List>("subList", "(II)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#listIterator()"/>
@@ -234,7 +234,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="object"/></param>
         public void Add(int arg0, object arg1)
         {
-            IExecute("add", arg0, arg1);
+            IExecuteWithSignature("add", "(ILjava/lang/Object;)V", arg0, arg1);
         }
 
         #endregion
@@ -293,7 +293,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool AddAll<Arg1ExtendsE>(int arg0, Java.Util.Collection<Arg1ExtendsE> arg1) where Arg1ExtendsE : E
         {
-            return IExecute<bool>("addAll", arg0, arg1);
+            return IExecuteWithSignature<bool>("addAll", "(ILjava/util/Collection;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#remove(int)"/>
@@ -312,7 +312,7 @@ namespace Java.Util
         /// <returns><typeparamref name="E"/></returns>
         public E Set(int arg0, E arg1)
         {
-            return IExecute<E>("set", arg0, arg1);
+            return IExecuteWithSignature<E>("set", "(ILjava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#indexOf(java.lang.Object)"/>
@@ -340,7 +340,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<E> SubListMethod(int arg0, int arg1)
         {
-            return IExecute<Java.Util.List<E>>("subList", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<E>>("subList", "(II)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#listIterator()"/>
@@ -366,7 +366,7 @@ namespace Java.Util
         /// <param name="arg1"><typeparamref name="E"/></param>
         public void Add(int arg0, E arg1)
         {
-            IExecute("add", arg0, arg1);
+            IExecuteWithSignature("add", "(ILjava/lang/Object;)V", arg0, arg1);
         }
 
         #endregion

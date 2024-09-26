@@ -125,7 +125,7 @@ namespace Java.Awt.Print
         /// <param name="arg2"><see cref="int"/></param>
         public void Append(Java.Awt.Print.Printable arg0, Java.Awt.Print.PageFormat arg1, int arg2)
         {
-            IExecute("append", arg0, arg1, arg2);
+            IExecuteWithSignature("append", "(Ljava/awt/print/Printable;Ljava/awt/print/PageFormat;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Book.html#append(java.awt.print.Printable,java.awt.print.PageFormat)"/>
@@ -134,7 +134,7 @@ namespace Java.Awt.Print
         /// <param name="arg1"><see cref="Java.Awt.Print.PageFormat"/></param>
         public void Append(Java.Awt.Print.Printable arg0, Java.Awt.Print.PageFormat arg1)
         {
-            IExecute("append", arg0, arg1);
+            IExecuteWithSignature("append", "(Ljava/awt/print/Printable;Ljava/awt/print/PageFormat;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Book.html#setPage(int,java.awt.print.Printable,java.awt.print.PageFormat)"/>
@@ -145,7 +145,7 @@ namespace Java.Awt.Print
         /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
         public void SetPage(int arg0, Java.Awt.Print.Printable arg1, Java.Awt.Print.PageFormat arg2)
         {
-            IExecute("setPage", arg0, arg1, arg2);
+            IExecuteWithSignature("setPage", "(ILjava/awt/print/Printable;Ljava/awt/print/PageFormat;)V", arg0, arg1, arg2);
         }
 
         #endregion

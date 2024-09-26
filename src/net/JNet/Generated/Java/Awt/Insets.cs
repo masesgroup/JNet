@@ -134,7 +134,7 @@ namespace Java.Awt
         /// <param name="arg3"><see cref="int"/></param>
         public void Set(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("set", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("set", "(IIII)V", arg0, arg1, arg2, arg3);
         }
 
         #endregion

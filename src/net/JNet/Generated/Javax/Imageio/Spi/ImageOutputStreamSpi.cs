@@ -119,7 +119,7 @@ namespace Javax.Imageio.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Imageio.Stream.ImageOutputStream CreateOutputStreamInstance(object arg0, bool arg1, Java.Io.File arg2)
         {
-            return IExecute<Javax.Imageio.Stream.ImageOutputStream>("createOutputStreamInstance", arg0, arg1, arg2);
+            return IExecuteWithSignature<Javax.Imageio.Stream.ImageOutputStream>("createOutputStreamInstance", "(Ljava/lang/Object;ZLjava/io/File;)Ljavax/imageio/stream/ImageOutputStream;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageOutputStreamSpi.html#canUseCacheFile()"/>

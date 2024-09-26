@@ -127,7 +127,7 @@ namespace Javax.Management.Remote
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Management.Remote.JMXConnector NewJMXConnector(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<Java.Lang.String, object> arg1)
         {
-            return IExecute<Javax.Management.Remote.JMXConnector>("newJMXConnector", arg0, arg1);
+            return IExecuteWithSignature<Javax.Management.Remote.JMXConnector>("newJMXConnector", "(Ljavax/management/remote/JMXServiceURL;Ljava/util/Map;)Ljavax/management/remote/JMXConnector;", arg0, arg1);
         }
 
         #endregion

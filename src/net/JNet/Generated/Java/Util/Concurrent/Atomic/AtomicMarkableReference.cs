@@ -160,7 +160,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool AttemptMark(object arg0, bool arg1)
         {
-            return IExecute<bool>("attemptMark", arg0, arg1);
+            return IExecuteWithSignature<bool>("attemptMark", "(Ljava/lang/Object;Z)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#compareAndSet(java.lang.Object,java.lang.Object,boolean,boolean)"/>
@@ -172,7 +172,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool CompareAndSet(object arg0, object arg1, bool arg2, bool arg3)
         {
-            return IExecute<bool>("compareAndSet", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("compareAndSet", "(Ljava/lang/Object;Ljava/lang/Object;ZZ)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#isMarked()"/>
@@ -192,7 +192,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSet(object arg0, object arg1, bool arg2, bool arg3)
         {
-            return IExecute<bool>("weakCompareAndSet", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("weakCompareAndSet", "(Ljava/lang/Object;Ljava/lang/Object;ZZ)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#get(boolean[])"/>
@@ -210,7 +210,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <param name="arg1"><see cref="bool"/></param>
         public void Set(object arg0, bool arg1)
         {
-            IExecute("set", arg0, arg1);
+            IExecuteWithSignature("set", "(Ljava/lang/Object;Z)V", arg0, arg1);
         }
 
         #endregion
@@ -271,7 +271,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool AttemptMark(V arg0, bool arg1)
         {
-            return IExecute<bool>("attemptMark", arg0, arg1);
+            return IExecuteWithSignature<bool>("attemptMark", "(Ljava/lang/Object;Z)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#compareAndSet(java.lang.Object,java.lang.Object,boolean,boolean)"/>
@@ -283,7 +283,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool CompareAndSet(V arg0, V arg1, bool arg2, bool arg3)
         {
-            return IExecute<bool>("compareAndSet", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("compareAndSet", "(Ljava/lang/Object;Ljava/lang/Object;ZZ)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#isMarked()"/>
@@ -303,7 +303,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSet(V arg0, V arg1, bool arg2, bool arg3)
         {
-            return IExecute<bool>("weakCompareAndSet", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("weakCompareAndSet", "(Ljava/lang/Object;Ljava/lang/Object;ZZ)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#get(boolean[])"/>
@@ -321,7 +321,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <param name="arg1"><see cref="bool"/></param>
         public void Set(V arg0, bool arg1)
         {
-            IExecute("set", arg0, arg1);
+            IExecuteWithSignature("set", "(Ljava/lang/Object;Z)V", arg0, arg1);
         }
 
         #endregion

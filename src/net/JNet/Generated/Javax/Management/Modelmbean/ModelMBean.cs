@@ -150,7 +150,7 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Javax.Management.Modelmbean.InvalidTargetObjectTypeException"/>
         public void SetManagedResource(object arg0, Java.Lang.String arg1)
         {
-            IExecute("setManagedResource", arg0, arg1);
+            IExecuteWithSignature("setManagedResource", "(Ljava/lang/Object;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBean.html#setModelMBeanInfo(javax.management.modelmbean.ModelMBeanInfo)"/>

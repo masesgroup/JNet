@@ -151,7 +151,7 @@ namespace Org.W3c.Dom.Events
         /// <param name="arg4"><see cref="int"/></param>
         public void InitUIEvent(Java.Lang.String arg0, bool arg1, bool arg2, Org.W3c.Dom.Views.AbstractView arg3, int arg4)
         {
-            IExecute("initUIEvent", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("initUIEvent", "(Ljava/lang/String;ZZLorg/w3c/dom/views/AbstractView;I)V", arg0, arg1, arg2, arg3, arg4);
         }
 
         #endregion

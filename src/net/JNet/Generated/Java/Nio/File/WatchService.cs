@@ -151,7 +151,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Lang.InterruptedException"/>
         public Java.Nio.File.WatchKey Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute<Java.Nio.File.WatchKey>("poll", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.File.WatchKey>("poll", "(JLjava/util/concurrent/TimeUnit;)Ljava/nio/file/WatchKey;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchService.html#take()"/>

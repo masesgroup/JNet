@@ -136,7 +136,7 @@ namespace Javax.Imageio
         /// <returns><see cref="Javax.Imageio.Metadata.IIOMetadata"/></returns>
         public Javax.Imageio.Metadata.IIOMetadata ConvertImageMetadata(Javax.Imageio.Metadata.IIOMetadata arg0, Javax.Imageio.ImageTypeSpecifier arg1, Javax.Imageio.ImageWriteParam arg2)
         {
-            return IExecute<Javax.Imageio.Metadata.IIOMetadata>("convertImageMetadata", arg0, arg1, arg2);
+            return IExecuteWithSignature<Javax.Imageio.Metadata.IIOMetadata>("convertImageMetadata", "(Ljavax/imageio/metadata/IIOMetadata;Ljavax/imageio/ImageTypeSpecifier;Ljavax/imageio/ImageWriteParam;)Ljavax/imageio/metadata/IIOMetadata;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#convertStreamMetadata(javax.imageio.metadata.IIOMetadata,javax.imageio.ImageWriteParam)"/>
@@ -146,7 +146,7 @@ namespace Javax.Imageio
         /// <returns><see cref="Javax.Imageio.Metadata.IIOMetadata"/></returns>
         public Javax.Imageio.Metadata.IIOMetadata ConvertStreamMetadata(Javax.Imageio.Metadata.IIOMetadata arg0, Javax.Imageio.ImageWriteParam arg1)
         {
-            return IExecute<Javax.Imageio.Metadata.IIOMetadata>("convertStreamMetadata", arg0, arg1);
+            return IExecuteWithSignature<Javax.Imageio.Metadata.IIOMetadata>("convertStreamMetadata", "(Ljavax/imageio/metadata/IIOMetadata;Ljavax/imageio/ImageWriteParam;)Ljavax/imageio/metadata/IIOMetadata;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#getDefaultImageMetadata(javax.imageio.ImageTypeSpecifier,javax.imageio.ImageWriteParam)"/>
@@ -156,7 +156,7 @@ namespace Javax.Imageio
         /// <returns><see cref="Javax.Imageio.Metadata.IIOMetadata"/></returns>
         public Javax.Imageio.Metadata.IIOMetadata GetDefaultImageMetadata(Javax.Imageio.ImageTypeSpecifier arg0, Javax.Imageio.ImageWriteParam arg1)
         {
-            return IExecute<Javax.Imageio.Metadata.IIOMetadata>("getDefaultImageMetadata", arg0, arg1);
+            return IExecuteWithSignature<Javax.Imageio.Metadata.IIOMetadata>("getDefaultImageMetadata", "(Ljavax/imageio/ImageTypeSpecifier;Ljavax/imageio/ImageWriteParam;)Ljavax/imageio/metadata/IIOMetadata;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#getDefaultStreamMetadata(javax.imageio.ImageWriteParam)"/>
@@ -176,7 +176,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public void Write(Javax.Imageio.Metadata.IIOMetadata arg0, Javax.Imageio.IIOImage arg1, Javax.Imageio.ImageWriteParam arg2)
         {
-            IExecute("write", arg0, arg1, arg2);
+            IExecuteWithSignature("write", "(Ljavax/imageio/metadata/IIOMetadata;Ljavax/imageio/IIOImage;Ljavax/imageio/ImageWriteParam;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#canInsertEmpty(int)"/>
@@ -272,7 +272,7 @@ namespace Javax.Imageio
         /// <returns><see cref="int"/></returns>
         public int GetNumThumbnailsSupported(Javax.Imageio.ImageTypeSpecifier arg0, Javax.Imageio.ImageWriteParam arg1, Javax.Imageio.Metadata.IIOMetadata arg2, Javax.Imageio.Metadata.IIOMetadata arg3)
         {
-            return IExecute<int>("getNumThumbnailsSupported", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("getNumThumbnailsSupported", "(Ljavax/imageio/ImageTypeSpecifier;Ljavax/imageio/ImageWriteParam;Ljavax/imageio/metadata/IIOMetadata;Ljavax/imageio/metadata/IIOMetadata;)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#getPreferredThumbnailSizes(javax.imageio.ImageTypeSpecifier,javax.imageio.ImageWriteParam,javax.imageio.metadata.IIOMetadata,javax.imageio.metadata.IIOMetadata)"/>
@@ -284,7 +284,7 @@ namespace Javax.Imageio
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension[] GetPreferredThumbnailSizes(Javax.Imageio.ImageTypeSpecifier arg0, Javax.Imageio.ImageWriteParam arg1, Javax.Imageio.Metadata.IIOMetadata arg2, Javax.Imageio.Metadata.IIOMetadata arg3)
         {
-            return IExecuteArray<Java.Awt.Dimension>("getPreferredThumbnailSizes", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignatureArray<Java.Awt.Dimension>("getPreferredThumbnailSizes", "(Ljavax/imageio/ImageTypeSpecifier;Ljavax/imageio/ImageWriteParam;Ljavax/imageio/metadata/IIOMetadata;Ljavax/imageio/metadata/IIOMetadata;)[Ljava/awt/Dimension;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#abort()"/>
@@ -362,7 +362,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public void PrepareInsertEmpty<Arg5ExtendsJava_Awt_ImageNs_BufferedImage>(int arg0, Javax.Imageio.ImageTypeSpecifier arg1, int arg2, int arg3, Javax.Imageio.Metadata.IIOMetadata arg4, Java.Util.List<Arg5ExtendsJava_Awt_ImageNs_BufferedImage> arg5, Javax.Imageio.ImageWriteParam arg6) where Arg5ExtendsJava_Awt_ImageNs_BufferedImage : Java.Awt.ImageNs.BufferedImage
         {
-            IExecute("prepareInsertEmpty", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("prepareInsertEmpty", "(ILjavax/imageio/ImageTypeSpecifier;IILjavax/imageio/metadata/IIOMetadata;Ljava/util/List;Ljavax/imageio/ImageWriteParam;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#prepareReplacePixels(int,java.awt.Rectangle)"/>
@@ -372,7 +372,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public void PrepareReplacePixels(int arg0, Java.Awt.Rectangle arg1)
         {
-            IExecute("prepareReplacePixels", arg0, arg1);
+            IExecuteWithSignature("prepareReplacePixels", "(ILjava/awt/Rectangle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#prepareWriteEmpty(javax.imageio.metadata.IIOMetadata,javax.imageio.ImageTypeSpecifier,int,int,javax.imageio.metadata.IIOMetadata,java.util.List,javax.imageio.ImageWriteParam)"/>
@@ -388,7 +388,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public void PrepareWriteEmpty<Arg5ExtendsJava_Awt_ImageNs_BufferedImage>(Javax.Imageio.Metadata.IIOMetadata arg0, Javax.Imageio.ImageTypeSpecifier arg1, int arg2, int arg3, Javax.Imageio.Metadata.IIOMetadata arg4, Java.Util.List<Arg5ExtendsJava_Awt_ImageNs_BufferedImage> arg5, Javax.Imageio.ImageWriteParam arg6) where Arg5ExtendsJava_Awt_ImageNs_BufferedImage : Java.Awt.ImageNs.BufferedImage
         {
-            IExecute("prepareWriteEmpty", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("prepareWriteEmpty", "(Ljavax/imageio/metadata/IIOMetadata;Ljavax/imageio/ImageTypeSpecifier;IILjavax/imageio/metadata/IIOMetadata;Ljava/util/List;Ljavax/imageio/ImageWriteParam;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#prepareWriteSequence(javax.imageio.metadata.IIOMetadata)"/>
@@ -446,7 +446,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public void ReplaceImageMetadata(int arg0, Javax.Imageio.Metadata.IIOMetadata arg1)
         {
-            IExecute("replaceImageMetadata", arg0, arg1);
+            IExecuteWithSignature("replaceImageMetadata", "(ILjavax/imageio/metadata/IIOMetadata;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#replacePixels(java.awt.image.Raster,javax.imageio.ImageWriteParam)"/>
@@ -456,7 +456,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public void ReplacePixels(Java.Awt.ImageNs.Raster arg0, Javax.Imageio.ImageWriteParam arg1)
         {
-            IExecute("replacePixels", arg0, arg1);
+            IExecuteWithSignature("replacePixels", "(Ljava/awt/image/Raster;Ljavax/imageio/ImageWriteParam;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#replacePixels(java.awt.image.RenderedImage,javax.imageio.ImageWriteParam)"/>
@@ -466,7 +466,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public void ReplacePixels(Java.Awt.ImageNs.RenderedImage arg0, Javax.Imageio.ImageWriteParam arg1)
         {
-            IExecute("replacePixels", arg0, arg1);
+            IExecuteWithSignature("replacePixels", "(Ljava/awt/image/RenderedImage;Ljavax/imageio/ImageWriteParam;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#replaceStreamMetadata(javax.imageio.metadata.IIOMetadata)"/>
@@ -511,7 +511,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public void WriteInsert(int arg0, Javax.Imageio.IIOImage arg1, Javax.Imageio.ImageWriteParam arg2)
         {
-            IExecute("writeInsert", arg0, arg1, arg2);
+            IExecuteWithSignature("writeInsert", "(ILjavax/imageio/IIOImage;Ljavax/imageio/ImageWriteParam;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#writeToSequence(javax.imageio.IIOImage,javax.imageio.ImageWriteParam)"/>
@@ -521,7 +521,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public void WriteToSequence(Javax.Imageio.IIOImage arg0, Javax.Imageio.ImageWriteParam arg1)
         {
-            IExecute("writeToSequence", arg0, arg1);
+            IExecuteWithSignature("writeToSequence", "(Ljavax/imageio/IIOImage;Ljavax/imageio/ImageWriteParam;)V", arg0, arg1);
         }
 
         #endregion

@@ -141,7 +141,7 @@ namespace Java.Awt.Print
         /// <exception cref="Java.Awt.Print.PrinterException"/>
         public int Print(Java.Awt.Graphics arg0, Java.Awt.Print.PageFormat arg1, int arg2)
         {
-            return IExecute<int>("print", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("print", "(Ljava/awt/Graphics;Ljava/awt/print/PageFormat;I)I", arg0, arg1, arg2);
         }
 
         #endregion

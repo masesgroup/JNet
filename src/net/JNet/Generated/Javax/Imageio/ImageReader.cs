@@ -187,7 +187,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public Java.Awt.ImageNs.BufferedImage Read(int arg0, Javax.Imageio.ImageReadParam arg1)
         {
-            return IExecute<Java.Awt.ImageNs.BufferedImage>("read", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.ImageNs.BufferedImage>("read", "(ILjavax/imageio/ImageReadParam;)Ljava/awt/image/BufferedImage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getImageTypes(int)"/>
@@ -300,7 +300,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public int GetThumbnailHeight(int arg0, int arg1)
         {
-            return IExecute<int>("getThumbnailHeight", arg0, arg1);
+            return IExecuteWithSignature<int>("getThumbnailHeight", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getThumbnailWidth(int,int)"/>
@@ -311,7 +311,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public int GetThumbnailWidth(int arg0, int arg1)
         {
-            return IExecute<int>("getThumbnailWidth", arg0, arg1);
+            return IExecuteWithSignature<int>("getThumbnailWidth", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getTileGridXOffset(int)"/>
@@ -372,7 +372,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public Java.Awt.ImageNs.BufferedImage ReadThumbnail(int arg0, int arg1)
         {
-            return IExecute<Java.Awt.ImageNs.BufferedImage>("readThumbnail", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.ImageNs.BufferedImage>("readThumbnail", "(II)Ljava/awt/image/BufferedImage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#readTile(int,int,int)"/>
@@ -384,7 +384,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public Java.Awt.ImageNs.BufferedImage ReadTile(int arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Awt.ImageNs.BufferedImage>("readTile", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Awt.ImageNs.BufferedImage>("readTile", "(III)Ljava/awt/image/BufferedImage;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#readRaster(int,javax.imageio.ImageReadParam)"/>
@@ -395,7 +395,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public Java.Awt.ImageNs.Raster ReadRaster(int arg0, Javax.Imageio.ImageReadParam arg1)
         {
-            return IExecute<Java.Awt.ImageNs.Raster>("readRaster", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.ImageNs.Raster>("readRaster", "(ILjavax/imageio/ImageReadParam;)Ljava/awt/image/Raster;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#readTileRaster(int,int,int)"/>
@@ -407,7 +407,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public Java.Awt.ImageNs.Raster ReadTileRaster(int arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Awt.ImageNs.Raster>("readTileRaster", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Awt.ImageNs.Raster>("readTileRaster", "(III)Ljava/awt/image/Raster;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#readAsRenderedImage(int,javax.imageio.ImageReadParam)"/>
@@ -418,7 +418,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public Java.Awt.ImageNs.RenderedImage ReadAsRenderedImage(int arg0, Javax.Imageio.ImageReadParam arg1)
         {
-            return IExecute<Java.Awt.ImageNs.RenderedImage>("readAsRenderedImage", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.ImageNs.RenderedImage>("readAsRenderedImage", "(ILjavax/imageio/ImageReadParam;)Ljava/awt/image/RenderedImage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#readAll(java.util.Iterator)"/>
@@ -440,7 +440,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Imageio.IIOImage ReadAll(int arg0, Javax.Imageio.ImageReadParam arg1)
         {
-            return IExecute<Javax.Imageio.IIOImage>("readAll", arg0, arg1);
+            return IExecuteWithSignature<Javax.Imageio.IIOImage>("readAll", "(ILjavax/imageio/ImageReadParam;)Ljavax/imageio/IIOImage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getRawImageType(int)"/>
@@ -462,7 +462,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Imageio.Metadata.IIOMetadata GetImageMetadata(int arg0, Java.Lang.String arg1, Java.Util.Set<Java.Lang.String> arg2)
         {
-            return IExecute<Javax.Imageio.Metadata.IIOMetadata>("getImageMetadata", arg0, arg1, arg2);
+            return IExecuteWithSignature<Javax.Imageio.Metadata.IIOMetadata>("getImageMetadata", "(ILjava/lang/String;Ljava/util/Set;)Ljavax/imageio/metadata/IIOMetadata;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getStreamMetadata(java.lang.String,java.util.Set)"/>
@@ -473,7 +473,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Imageio.Metadata.IIOMetadata GetStreamMetadata(Java.Lang.String arg0, Java.Util.Set<Java.Lang.String> arg1)
         {
-            return IExecute<Javax.Imageio.Metadata.IIOMetadata>("getStreamMetadata", arg0, arg1);
+            return IExecuteWithSignature<Javax.Imageio.Metadata.IIOMetadata>("getStreamMetadata", "(Ljava/lang/String;Ljava/util/Set;)Ljavax/imageio/metadata/IIOMetadata;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#abort()"/>
@@ -573,7 +573,7 @@ namespace Javax.Imageio
         /// <param name="arg2"><see cref="bool"/></param>
         public void SetInput(object arg0, bool arg1, bool arg2)
         {
-            IExecute("setInput", arg0, arg1, arg2);
+            IExecuteWithSignature("setInput", "(Ljava/lang/Object;ZZ)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#setInput(java.lang.Object,boolean)"/>
@@ -582,7 +582,7 @@ namespace Javax.Imageio
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetInput(object arg0, bool arg1)
         {
-            IExecute("setInput", arg0, arg1);
+            IExecuteWithSignature("setInput", "(Ljava/lang/Object;Z)V", arg0, arg1);
         }
 
         #endregion

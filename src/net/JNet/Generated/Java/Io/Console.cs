@@ -106,7 +106,7 @@ namespace Java.Io
         /// <returns><see cref="char"/></returns>
         public char[] ReadPassword(Java.Lang.String arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return IExecuteArray<char>("readPassword", arg0); else return IExecuteArray<char>("readPassword", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignatureArray<char>("readPassword", "(Ljava/lang/String;[Ljava/lang/Object;)[C", arg0); else return IExecuteWithSignatureArray<char>("readPassword", "(Ljava/lang/String;[Ljava/lang/Object;)[C", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#format(java.lang.String,java.lang.Object[])"/>
@@ -116,7 +116,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.Console"/></returns>
         public Java.Io.Console Format(Java.Lang.String arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Io.Console>("format", arg0); else return IExecute<Java.Io.Console>("format", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Io.Console>("format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/Console;", arg0); else return IExecuteWithSignature<Java.Io.Console>("format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/Console;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#printf(java.lang.String,java.lang.Object[])"/>
@@ -126,7 +126,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.Console"/></returns>
         public Java.Io.Console Printf(Java.Lang.String arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Io.Console>("printf", arg0); else return IExecute<Java.Io.Console>("printf", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Io.Console>("printf", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/Console;", arg0); else return IExecuteWithSignature<Java.Io.Console>("printf", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/Console;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#writer()"/>
@@ -160,7 +160,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ReadLine(Java.Lang.String arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Lang.String>("readLine", arg0); else return IExecute<Java.Lang.String>("readLine", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Lang.String>("readLine", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", arg0); else return IExecuteWithSignature<Java.Lang.String>("readLine", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#flush()"/>

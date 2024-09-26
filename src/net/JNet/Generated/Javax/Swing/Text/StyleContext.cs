@@ -220,7 +220,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Java.Io.IOException"/>
         public static void ReadAttributeSet(Java.Io.ObjectInputStream arg0, Javax.Swing.Text.MutableAttributeSet arg1)
         {
-            SExecute(LocalBridgeClazz, "readAttributeSet", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "readAttributeSet", "(Ljava/io/ObjectInputStream;Ljavax/swing/text/MutableAttributeSet;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#registerStaticAttributeKey(java.lang.Object)"/>
@@ -238,7 +238,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Java.Io.IOException"/>
         public static void WriteAttributeSet(Java.Io.ObjectOutputStream arg0, Javax.Swing.Text.AttributeSet arg1)
         {
-            SExecute(LocalBridgeClazz, "writeAttributeSet", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "writeAttributeSet", "(Ljava/io/ObjectOutputStream;Ljavax/swing/text/AttributeSet;)V", arg0, arg1);
         }
 
         #endregion
@@ -292,7 +292,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public Java.Awt.Font GetFont(Java.Lang.String arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Awt.Font>("getFont", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Awt.Font>("getFont", "(Ljava/lang/String;II)Ljava/awt/Font;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#getFont(javax.swing.text.AttributeSet)"/>
@@ -320,7 +320,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.Style"/></returns>
         public Javax.Swing.Text.Style AddStyle(Java.Lang.String arg0, Javax.Swing.Text.Style arg1)
         {
-            return IExecute<Javax.Swing.Text.Style>("addStyle", arg0, arg1);
+            return IExecuteWithSignature<Javax.Swing.Text.Style>("addStyle", "(Ljava/lang/String;Ljavax/swing/text/Style;)Ljavax/swing/text/Style;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#getStyle(java.lang.String)"/>
@@ -340,7 +340,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
         public Javax.Swing.Text.AttributeSet AddAttribute(Javax.Swing.Text.AttributeSet arg0, object arg1, object arg2)
         {
-            return IExecute<Javax.Swing.Text.AttributeSet>("addAttribute", arg0, arg1, arg2);
+            return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("addAttribute", "(Ljavax/swing/text/AttributeSet;Ljava/lang/Object;Ljava/lang/Object;)Ljavax/swing/text/AttributeSet;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#addAttributes(javax.swing.text.AttributeSet,javax.swing.text.AttributeSet)"/>
@@ -350,7 +350,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
         public Javax.Swing.Text.AttributeSet AddAttributes(Javax.Swing.Text.AttributeSet arg0, Javax.Swing.Text.AttributeSet arg1)
         {
-            return IExecute<Javax.Swing.Text.AttributeSet>("addAttributes", arg0, arg1);
+            return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("addAttributes", "(Ljavax/swing/text/AttributeSet;Ljavax/swing/text/AttributeSet;)Ljavax/swing/text/AttributeSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#removeAttribute(javax.swing.text.AttributeSet,java.lang.Object)"/>
@@ -360,7 +360,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
         public Javax.Swing.Text.AttributeSet RemoveAttribute(Javax.Swing.Text.AttributeSet arg0, object arg1)
         {
-            return IExecute<Javax.Swing.Text.AttributeSet>("removeAttribute", arg0, arg1);
+            return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("removeAttribute", "(Ljavax/swing/text/AttributeSet;Ljava/lang/Object;)Ljavax/swing/text/AttributeSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#removeAttributes(javax.swing.text.AttributeSet,java.util.Enumeration)"/>
@@ -370,7 +370,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
         public Javax.Swing.Text.AttributeSet RemoveAttributes(Javax.Swing.Text.AttributeSet arg0, Java.Util.Enumeration<object> arg1)
         {
-            return IExecute<Javax.Swing.Text.AttributeSet>("removeAttributes", arg0, arg1);
+            return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("removeAttributes", "(Ljavax/swing/text/AttributeSet;Ljava/util/Enumeration;)Ljavax/swing/text/AttributeSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#removeAttributes(javax.swing.text.AttributeSet,javax.swing.text.AttributeSet)"/>
@@ -380,7 +380,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
         public Javax.Swing.Text.AttributeSet RemoveAttributes(Javax.Swing.Text.AttributeSet arg0, Javax.Swing.Text.AttributeSet arg1)
         {
-            return IExecute<Javax.Swing.Text.AttributeSet>("removeAttributes", arg0, arg1);
+            return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("removeAttributes", "(Ljavax/swing/text/AttributeSet;Ljavax/swing/text/AttributeSet;)Ljavax/swing/text/AttributeSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#addChangeListener(javax.swing.event.ChangeListener)"/>
@@ -399,7 +399,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Java.Io.IOException"/>
         public void ReadAttributes(Java.Io.ObjectInputStream arg0, Javax.Swing.Text.MutableAttributeSet arg1)
         {
-            IExecute("readAttributes", arg0, arg1);
+            IExecuteWithSignature("readAttributes", "(Ljava/io/ObjectInputStream;Ljavax/swing/text/MutableAttributeSet;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#reclaim(javax.swing.text.AttributeSet)"/>
@@ -433,7 +433,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Java.Io.IOException"/>
         public void WriteAttributes(Java.Io.ObjectOutputStream arg0, Javax.Swing.Text.AttributeSet arg1)
         {
-            IExecute("writeAttributes", arg0, arg1);
+            IExecuteWithSignature("writeAttributes", "(Ljava/io/ObjectOutputStream;Ljavax/swing/text/AttributeSet;)V", arg0, arg1);
         }
 
         #endregion
@@ -547,7 +547,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="bool"/></returns>
             public bool ContainsAttribute(object arg0, object arg1)
             {
-                return IExecute<bool>("containsAttribute", arg0, arg1);
+                return IExecuteWithSignature<bool>("containsAttribute", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#containsAttributes(javax.swing.text.AttributeSet)"/>
@@ -600,7 +600,7 @@ namespace Javax.Swing.Text
             /// <param name="arg1"><see cref="object"/></param>
             public void AddAttribute(object arg0, object arg1)
             {
-                IExecute("addAttribute", arg0, arg1);
+                IExecuteWithSignature("addAttribute", "(Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#addAttributes(javax.swing.text.AttributeSet)"/>
@@ -719,7 +719,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="bool"/></returns>
             public bool ContainsAttribute(object arg0, object arg1)
             {
-                return IExecute<bool>("containsAttribute", arg0, arg1);
+                return IExecuteWithSignature<bool>("containsAttribute", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#containsAttributes(javax.swing.text.AttributeSet)"/>

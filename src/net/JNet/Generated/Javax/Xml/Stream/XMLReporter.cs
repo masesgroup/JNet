@@ -129,7 +129,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void Report(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, Javax.Xml.Stream.Location arg3)
         {
-            IExecute("report", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("report", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljavax/xml/stream/Location;)V", arg0, arg1, arg2, arg3);
         }
 
         #endregion

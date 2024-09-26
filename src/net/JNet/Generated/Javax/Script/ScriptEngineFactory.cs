@@ -242,7 +242,7 @@ namespace Javax.Script
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetMethodCallSyntax(Java.Lang.String arg0, Java.Lang.String arg1, params Java.Lang.String[] arg2)
         {
-            if (arg2.Length == 0) return IExecute<Java.Lang.String>("getMethodCallSyntax", arg0, arg1); else return IExecute<Java.Lang.String>("getMethodCallSyntax", arg0, arg1, arg2);
+            if (arg2.Length == 0) return IExecuteWithSignature<Java.Lang.String>("getMethodCallSyntax", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;", arg0, arg1); else return IExecuteWithSignature<Java.Lang.String>("getMethodCallSyntax", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getOutputStatement(java.lang.String)"/>

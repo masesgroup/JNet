@@ -181,7 +181,7 @@ namespace Javax.Xml.Xpath
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public object Evaluate(object arg0, Javax.Xml.Namespace.QName arg1)
         {
-            return IExecute("evaluate", arg0, arg1);
+            return IExecuteWithSignature("evaluate", "(Ljava/lang/Object;Ljavax/xml/namespace/QName;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathExpression.html#evaluate(org.xml.sax.InputSource,javax.xml.namespace.QName)"/>
@@ -192,7 +192,7 @@ namespace Javax.Xml.Xpath
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public object Evaluate(Org.Xml.Sax.InputSource arg0, Javax.Xml.Namespace.QName arg1)
         {
-            return IExecute("evaluate", arg0, arg1);
+            return IExecuteWithSignature("evaluate", "(Lorg/xml/sax/InputSource;Ljavax/xml/namespace/QName;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathExpression.html#evaluate(java.lang.Object)"/>
@@ -224,7 +224,7 @@ namespace Javax.Xml.Xpath
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public T EvaluateExpression<T>(object arg0, Java.Lang.Class arg1)
         {
-            return IExecute<T>("evaluateExpression", arg0, arg1);
+            return IExecuteWithSignature<T>("evaluateExpression", "(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathExpression.html#evaluateExpression(org.xml.sax.InputSource,java.lang.Class)"/>
@@ -236,7 +236,7 @@ namespace Javax.Xml.Xpath
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public T EvaluateExpression<T>(Org.Xml.Sax.InputSource arg0, Java.Lang.Class arg1)
         {
-            return IExecute<T>("evaluateExpression", arg0, arg1);
+            return IExecuteWithSignature<T>("evaluateExpression", "(Lorg/xml/sax/InputSource;Ljava/lang/Class;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathExpression.html#evaluateExpression(java.lang.Object)"/>

@@ -156,7 +156,7 @@ namespace Javax.Annotation.Processing
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Tools.FileObject CreateResource(Javax.Tools.JavaFileManager.Location arg0, Java.Lang.CharSequence arg1, Java.Lang.CharSequence arg2, params Javax.Lang.Model.Element.Element[] arg3)
         {
-            if (arg3.Length == 0) return IExecute<Javax.Tools.FileObject>("createResource", arg0, arg1, arg2); else return IExecute<Javax.Tools.FileObject>("createResource", arg0, arg1, arg2, arg3);
+            if (arg3.Length == 0) return IExecuteWithSignature<Javax.Tools.FileObject>("createResource", "(Ljavax/tools/JavaFileManager$Location;Ljava/lang/CharSequence;Ljava/lang/CharSequence;[Ljavax/lang/model/element/Element;)Ljavax/tools/FileObject;", arg0, arg1, arg2); else return IExecuteWithSignature<Javax.Tools.FileObject>("createResource", "(Ljavax/tools/JavaFileManager$Location;Ljava/lang/CharSequence;Ljava/lang/CharSequence;[Ljavax/lang/model/element/Element;)Ljavax/tools/FileObject;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Filer.html#getResource(javax.tools.JavaFileManager.Location,java.lang.CharSequence,java.lang.CharSequence)"/>
@@ -168,7 +168,7 @@ namespace Javax.Annotation.Processing
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Tools.FileObject GetResource(Javax.Tools.JavaFileManager.Location arg0, Java.Lang.CharSequence arg1, Java.Lang.CharSequence arg2)
         {
-            return IExecute<Javax.Tools.FileObject>("getResource", arg0, arg1, arg2);
+            return IExecuteWithSignature<Javax.Tools.FileObject>("getResource", "(Ljavax/tools/JavaFileManager$Location;Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljavax/tools/FileObject;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Filer.html#createClassFile(java.lang.CharSequence,javax.lang.model.element.Element[])"/>
@@ -179,7 +179,7 @@ namespace Javax.Annotation.Processing
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Tools.JavaFileObject CreateClassFile(Java.Lang.CharSequence arg0, params Javax.Lang.Model.Element.Element[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Javax.Tools.JavaFileObject>("createClassFile", arg0); else return IExecute<Javax.Tools.JavaFileObject>("createClassFile", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Javax.Tools.JavaFileObject>("createClassFile", "(Ljava/lang/CharSequence;[Ljavax/lang/model/element/Element;)Ljavax/tools/JavaFileObject;", arg0); else return IExecuteWithSignature<Javax.Tools.JavaFileObject>("createClassFile", "(Ljava/lang/CharSequence;[Ljavax/lang/model/element/Element;)Ljavax/tools/JavaFileObject;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Filer.html#createSourceFile(java.lang.CharSequence,javax.lang.model.element.Element[])"/>
@@ -190,7 +190,7 @@ namespace Javax.Annotation.Processing
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Tools.JavaFileObject CreateSourceFile(Java.Lang.CharSequence arg0, params Javax.Lang.Model.Element.Element[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Javax.Tools.JavaFileObject>("createSourceFile", arg0); else return IExecute<Javax.Tools.JavaFileObject>("createSourceFile", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Javax.Tools.JavaFileObject>("createSourceFile", "(Ljava/lang/CharSequence;[Ljavax/lang/model/element/Element;)Ljavax/tools/JavaFileObject;", arg0); else return IExecuteWithSignature<Javax.Tools.JavaFileObject>("createSourceFile", "(Ljava/lang/CharSequence;[Ljavax/lang/model/element/Element;)Ljavax/tools/JavaFileObject;", arg0, arg1);
         }
 
         #endregion

@@ -103,7 +103,7 @@ namespace Java.Util.Spi
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDisplayName(Java.Lang.String arg0, int arg1, int arg2, int arg3, Java.Util.Locale arg4)
         {
-            return IExecute<Java.Lang.String>("getDisplayName", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "(Ljava/lang/String;IIILjava/util/Locale;)Ljava/lang/String;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/CalendarNameProvider.html#getDisplayNames(java.lang.String,int,int,java.util.Locale)"/>
@@ -115,7 +115,7 @@ namespace Java.Util.Spi
         /// <returns><see cref="Java.Util.Map"/></returns>
         public Java.Util.Map<Java.Lang.String, Java.Lang.Integer> GetDisplayNames(Java.Lang.String arg0, int arg1, int arg2, Java.Util.Locale arg3)
         {
-            return IExecute<Java.Util.Map<Java.Lang.String, Java.Lang.Integer>>("getDisplayNames", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.Integer>>("getDisplayNames", "(Ljava/lang/String;IILjava/util/Locale;)Ljava/util/Map;", arg0, arg1, arg2, arg3);
         }
 
         #endregion

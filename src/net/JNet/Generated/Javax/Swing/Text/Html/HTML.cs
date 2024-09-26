@@ -250,7 +250,7 @@ namespace Javax.Swing.Text.Html
         /// <returns><see cref="int"/></returns>
         public static int GetIntegerAttributeValue(Javax.Swing.Text.AttributeSet arg0, Javax.Swing.Text.Html.HTML.Attribute arg1, int arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "getIntegerAttributeValue", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getIntegerAttributeValue", "(Ljavax/swing/text/AttributeSet;Ljavax/swing/text/html/HTML$Attribute;I)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.html#getAttributeKey(java.lang.String)"/>

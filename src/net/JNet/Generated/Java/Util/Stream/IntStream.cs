@@ -323,7 +323,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public static Java.Util.Stream.IntStream Concat(Java.Util.Stream.IntStream arg0, Java.Util.Stream.IntStream arg1)
         {
-            return SExecute<Java.Util.Stream.IntStream>(LocalBridgeClazz, "concat", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.IntStream>(LocalBridgeClazz, "concat", "(Ljava/util/stream/IntStream;Ljava/util/stream/IntStream;)Ljava/util/stream/IntStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#empty()"/>
@@ -351,7 +351,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public static Java.Util.Stream.IntStream Iterate(int arg0, Java.Util.Function.IntPredicate arg1, Java.Util.Function.IntUnaryOperator arg2)
         {
-            return SExecute<Java.Util.Stream.IntStream>(LocalBridgeClazz, "iterate", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.Stream.IntStream>(LocalBridgeClazz, "iterate", "(ILjava/util/function/IntPredicate;Ljava/util/function/IntUnaryOperator;)Ljava/util/stream/IntStream;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#iterate(int,java.util.function.IntUnaryOperator)"/>
@@ -361,7 +361,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public static Java.Util.Stream.IntStream Iterate(int arg0, Java.Util.Function.IntUnaryOperator arg1)
         {
-            return SExecute<Java.Util.Stream.IntStream>(LocalBridgeClazz, "iterate", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.IntStream>(LocalBridgeClazz, "iterate", "(ILjava/util/function/IntUnaryOperator;)Ljava/util/stream/IntStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#of(int[])"/>
@@ -389,7 +389,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public static Java.Util.Stream.IntStream Range(int arg0, int arg1)
         {
-            return SExecute<Java.Util.Stream.IntStream>(LocalBridgeClazz, "range", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.IntStream>(LocalBridgeClazz, "range", "(II)Ljava/util/stream/IntStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#rangeClosed(int,int)"/>
@@ -399,7 +399,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public static Java.Util.Stream.IntStream RangeClosed(int arg0, int arg1)
         {
-            return SExecute<Java.Util.Stream.IntStream>(LocalBridgeClazz, "rangeClosed", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.IntStream>(LocalBridgeClazz, "rangeClosed", "(II)Ljava/util/stream/IntStream;", arg0, arg1);
         }
 
         #endregion
@@ -415,7 +415,7 @@ namespace Java.Util.Stream
         /// <returns><typeparamref name="R"/></returns>
         public R Collect<R>(Java.Util.Function.Supplier<R> arg0, Java.Util.Function.ObjIntConsumer<R> arg1, Java.Util.Function.BiConsumer<R, R> arg2)
         {
-            return IExecute<R>("collect", arg0, arg1, arg2);
+            return IExecuteWithSignature<R>("collect", "(Ljava/util/function/Supplier;Ljava/util/function/ObjIntConsumer;Ljava/util/function/BiConsumer;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#mapToObj(java.util.function.IntFunction)"/>
@@ -463,7 +463,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="int"/></returns>
         public int Reduce(int arg0, Java.Util.Function.IntBinaryOperator arg1)
         {
-            return IExecute<int>("reduce", arg0, arg1);
+            return IExecuteWithSignature<int>("reduce", "(ILjava/util/function/IntBinaryOperator;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#sum()"/>

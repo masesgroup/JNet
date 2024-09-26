@@ -303,7 +303,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg1"><see cref="int"/></param>
         public void TranslatePoint(int arg0, int arg1)
         {
-            IExecute("translatePoint", arg0, arg1);
+            IExecuteWithSignature("translatePoint", "(II)V", arg0, arg1);
         }
 
         #endregion

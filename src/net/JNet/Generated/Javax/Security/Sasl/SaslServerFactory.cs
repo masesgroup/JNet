@@ -148,7 +148,7 @@ namespace Javax.Security.Sasl
         /// <exception cref="Javax.Security.Sasl.SaslException"/>
         public Javax.Security.Sasl.SaslServer CreateSaslServer(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Util.Map<Java.Lang.String, object> arg3, Javax.Security.Auth.Callback.CallbackHandler arg4)
         {
-            return IExecute<Javax.Security.Sasl.SaslServer>("createSaslServer", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Javax.Security.Sasl.SaslServer>("createSaslServer", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljavax/security/auth/callback/CallbackHandler;)Ljavax/security/sasl/SaslServer;", arg0, arg1, arg2, arg3, arg4);
         }
 
         #endregion

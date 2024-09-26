@@ -98,7 +98,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="float"/></returns>
         public static float DrawTabbedText(Javax.Swing.Text.Segment arg0, float arg1, float arg2, Java.Awt.Graphics2D arg3, Javax.Swing.Text.TabExpander arg4, int arg5)
         {
-            return SExecute<float>(LocalBridgeClazz, "drawTabbedText", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<float>(LocalBridgeClazz, "drawTabbedText", "(Ljavax/swing/text/Segment;FFLjava/awt/Graphics2D;Ljavax/swing/text/TabExpander;I)F", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getTabbedTextWidth(javax.swing.text.Segment,java.awt.FontMetrics,float,javax.swing.text.TabExpander,int)"/>
@@ -111,7 +111,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="float"/></returns>
         public static float GetTabbedTextWidth(Javax.Swing.Text.Segment arg0, Java.Awt.FontMetrics arg1, float arg2, Javax.Swing.Text.TabExpander arg3, int arg4)
         {
-            return SExecute<float>(LocalBridgeClazz, "getTabbedTextWidth", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<float>(LocalBridgeClazz, "getTabbedTextWidth", "(Ljavax/swing/text/Segment;Ljava/awt/FontMetrics;FLjavax/swing/text/TabExpander;I)F", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getBreakLocation(javax.swing.text.Segment,java.awt.FontMetrics,float,float,javax.swing.text.TabExpander,int)"/>
@@ -125,7 +125,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="int"/></returns>
         public static int GetBreakLocation(Javax.Swing.Text.Segment arg0, Java.Awt.FontMetrics arg1, float arg2, float arg3, Javax.Swing.Text.TabExpander arg4, int arg5)
         {
-            return SExecute<int>(LocalBridgeClazz, "getBreakLocation", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getBreakLocation", "(Ljavax/swing/text/Segment;Ljava/awt/FontMetrics;FFLjavax/swing/text/TabExpander;I)I", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getNextWord(javax.swing.text.JTextComponent,int)"/>
@@ -136,7 +136,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public static int GetNextWord(Javax.Swing.Text.JTextComponent arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "getNextWord", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getNextWord", "(Ljavax/swing/text/JTextComponent;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getPositionAbove(javax.swing.text.JTextComponent,int,float)"/>
@@ -148,7 +148,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public static int GetPositionAbove(Javax.Swing.Text.JTextComponent arg0, int arg1, float arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "getPositionAbove", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getPositionAbove", "(Ljavax/swing/text/JTextComponent;IF)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getPositionBelow(javax.swing.text.JTextComponent,int,float)"/>
@@ -160,7 +160,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public static int GetPositionBelow(Javax.Swing.Text.JTextComponent arg0, int arg1, float arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "getPositionBelow", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getPositionBelow", "(Ljavax/swing/text/JTextComponent;IF)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getPreviousWord(javax.swing.text.JTextComponent,int)"/>
@@ -171,7 +171,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public static int GetPreviousWord(Javax.Swing.Text.JTextComponent arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "getPreviousWord", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getPreviousWord", "(Ljavax/swing/text/JTextComponent;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getRowEnd(javax.swing.text.JTextComponent,int)"/>
@@ -182,7 +182,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public static int GetRowEnd(Javax.Swing.Text.JTextComponent arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "getRowEnd", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getRowEnd", "(Ljavax/swing/text/JTextComponent;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getRowStart(javax.swing.text.JTextComponent,int)"/>
@@ -193,7 +193,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public static int GetRowStart(Javax.Swing.Text.JTextComponent arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "getRowStart", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getRowStart", "(Ljavax/swing/text/JTextComponent;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getTabbedTextOffset(javax.swing.text.Segment,java.awt.FontMetrics,float,float,javax.swing.text.TabExpander,int,boolean)"/>
@@ -208,7 +208,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="int"/></returns>
         public static int GetTabbedTextOffset(Javax.Swing.Text.Segment arg0, Java.Awt.FontMetrics arg1, float arg2, float arg3, Javax.Swing.Text.TabExpander arg4, int arg5, bool arg6)
         {
-            return SExecute<int>(LocalBridgeClazz, "getTabbedTextOffset", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getTabbedTextOffset", "(Ljavax/swing/text/Segment;Ljava/awt/FontMetrics;FFLjavax/swing/text/TabExpander;IZ)I", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getWordEnd(javax.swing.text.JTextComponent,int)"/>
@@ -219,7 +219,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public static int GetWordEnd(Javax.Swing.Text.JTextComponent arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "getWordEnd", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getWordEnd", "(Ljavax/swing/text/JTextComponent;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getWordStart(javax.swing.text.JTextComponent,int)"/>
@@ -230,7 +230,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public static int GetWordStart(Javax.Swing.Text.JTextComponent arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "getWordStart", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getWordStart", "(Ljavax/swing/text/JTextComponent;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getParagraphElement(javax.swing.text.JTextComponent,int)"/>
@@ -240,7 +240,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
         public static Javax.Swing.Text.Element GetParagraphElement(Javax.Swing.Text.JTextComponent arg0, int arg1)
         {
-            return SExecute<Javax.Swing.Text.Element>(LocalBridgeClazz, "getParagraphElement", arg0, arg1);
+            return SExecuteWithSignature<Javax.Swing.Text.Element>(LocalBridgeClazz, "getParagraphElement", "(Ljavax/swing/text/JTextComponent;I)Ljavax/swing/text/Element;", arg0, arg1);
         }
 
         #endregion

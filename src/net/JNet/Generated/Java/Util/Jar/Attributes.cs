@@ -210,7 +210,7 @@ namespace Java.Util.Jar
         /// <returns><see cref="object"/></returns>
         public object Put(object arg0, object arg1)
         {
-            return IExecute("put", arg0, arg1);
+            return IExecuteWithSignature("put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#remove(java.lang.Object)"/>
@@ -247,7 +247,7 @@ namespace Java.Util.Jar
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String PutValue(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("putValue", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("putValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#values()"/>

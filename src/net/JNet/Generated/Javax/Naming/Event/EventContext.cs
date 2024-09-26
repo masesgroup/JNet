@@ -174,7 +174,7 @@ namespace Javax.Naming.Event
         /// <exception cref="Javax.Naming.NamingException"/>
         public void AddNamingListener(Java.Lang.String arg0, int arg1, Javax.Naming.Event.NamingListener arg2)
         {
-            IExecute("addNamingListener", arg0, arg1, arg2);
+            IExecuteWithSignature("addNamingListener", "(Ljava/lang/String;ILjavax/naming/event/NamingListener;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#addNamingListener(javax.naming.Name,int,javax.naming.event.NamingListener)"/>
@@ -185,7 +185,7 @@ namespace Javax.Naming.Event
         /// <exception cref="Javax.Naming.NamingException"/>
         public void AddNamingListener(Javax.Naming.Name arg0, int arg1, Javax.Naming.Event.NamingListener arg2)
         {
-            IExecute("addNamingListener", arg0, arg1, arg2);
+            IExecuteWithSignature("addNamingListener", "(Ljavax/naming/Name;ILjavax/naming/event/NamingListener;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#removeNamingListener(javax.naming.event.NamingListener)"/>

@@ -226,7 +226,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Base64.Encoder"/></returns>
         public static Java.Util.Base64.Encoder GetMimeEncoder(int arg0, byte[] arg1)
         {
-            return SExecute<Java.Util.Base64.Encoder>(LocalBridgeClazz, "getMimeEncoder", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Base64.Encoder>(LocalBridgeClazz, "getMimeEncoder", "(I[B)Ljava/util/Base64$Encoder;", arg0, arg1);
         }
 
         #endregion
@@ -282,7 +282,7 @@ namespace Java.Util
             /// <returns><see cref="int"/></returns>
             public int Decode(byte[] arg0, byte[] arg1)
             {
-                return IExecute<int>("decode", arg0, arg1);
+                return IExecuteWithSignature<int>("decode", "([B[B)I", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Decoder.html#wrap(java.io.InputStream)"/>
@@ -350,7 +350,7 @@ namespace Java.Util
             /// <returns><see cref="int"/></returns>
             public int Encode(byte[] arg0, byte[] arg1)
             {
-                return IExecute<int>("encode", arg0, arg1);
+                return IExecuteWithSignature<int>("encode", "([B[B)I", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Encoder.html#wrap(java.io.OutputStream)"/>

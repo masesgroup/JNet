@@ -111,7 +111,7 @@ namespace Javax.Smartcardio
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Javax.Smartcardio.TerminalFactory GetInstance(Java.Lang.String arg0, object arg1, Java.Lang.String arg2)
         {
-            return SExecute<Javax.Smartcardio.TerminalFactory>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
+            return SExecuteWithSignature<Javax.Smartcardio.TerminalFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Ljavax/smartcardio/TerminalFactory;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#getInstance(java.lang.String,java.lang.Object,java.security.Provider)"/>
@@ -123,7 +123,7 @@ namespace Javax.Smartcardio
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Javax.Smartcardio.TerminalFactory GetInstance(Java.Lang.String arg0, object arg1, Java.Security.Provider arg2)
         {
-            return SExecute<Javax.Smartcardio.TerminalFactory>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
+            return SExecuteWithSignature<Javax.Smartcardio.TerminalFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/Object;Ljava/security/Provider;)Ljavax/smartcardio/TerminalFactory;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#getInstance(java.lang.String,java.lang.Object)"/>
@@ -134,7 +134,7 @@ namespace Javax.Smartcardio
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Javax.Smartcardio.TerminalFactory GetInstance(Java.Lang.String arg0, object arg1)
         {
-            return SExecute<Javax.Smartcardio.TerminalFactory>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Javax.Smartcardio.TerminalFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/Object;)Ljavax/smartcardio/TerminalFactory;", arg0, arg1);
         }
 
         #endregion

@@ -253,7 +253,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
         public object Get(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute("get", arg0, arg1);
+            return IExecuteWithSignature("get", "(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
@@ -278,7 +278,7 @@ namespace Javax.Swing
         /// <param name="arg2"><see cref="object"/></param>
         public void FirePropertyChange(Java.Lang.String arg0, object arg1, object arg2)
         {
-            IExecute("firePropertyChange", arg0, arg1, arg2);
+            IExecuteWithSignature("firePropertyChange", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>
@@ -463,7 +463,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
         public T Get(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute<T>("get", arg0, arg1);
+            return IExecuteWithSignature<T>("get", "(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
@@ -488,7 +488,7 @@ namespace Javax.Swing
         /// <param name="arg2"><see cref="object"/></param>
         public void FirePropertyChange(Java.Lang.String arg0, object arg1, object arg2)
         {
-            IExecute("firePropertyChange", arg0, arg1, arg2);
+            IExecuteWithSignature("firePropertyChange", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>

@@ -210,7 +210,7 @@ namespace Javax.Swing
         /// <param name="arg4"><see cref="bool"/></param>
         public void SetRangeProperties(int arg0, int arg1, int arg2, int arg3, bool arg4)
         {
-            IExecute("setRangeProperties", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("setRangeProperties", "(IIIIZ)V", arg0, arg1, arg2, arg3, arg4);
         }
 
         #endregion

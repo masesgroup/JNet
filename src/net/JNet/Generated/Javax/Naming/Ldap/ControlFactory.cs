@@ -98,7 +98,7 @@ namespace Javax.Naming.Ldap
         /// <exception cref="Javax.Naming.NamingException"/>
         public static Javax.Naming.Ldap.Control GetControlInstance(Javax.Naming.Ldap.Control arg0, Javax.Naming.Context arg1, Java.Util.Hashtable<object, object> arg2)
         {
-            return SExecute<Javax.Naming.Ldap.Control>(LocalBridgeClazz, "getControlInstance", arg0, arg1, arg2);
+            return SExecuteWithSignature<Javax.Naming.Ldap.Control>(LocalBridgeClazz, "getControlInstance", "(Ljavax/naming/ldap/Control;Ljavax/naming/Context;Ljava/util/Hashtable;)Ljavax/naming/ldap/Control;", arg0, arg1, arg2);
         }
 
         #endregion

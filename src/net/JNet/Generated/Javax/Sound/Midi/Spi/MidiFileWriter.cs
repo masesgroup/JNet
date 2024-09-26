@@ -109,7 +109,7 @@ namespace Javax.Sound.Midi.Spi
         /// <exception cref="Java.Io.IOException"/>
         public int Write(Javax.Sound.Midi.Sequence arg0, int arg1, Java.Io.File arg2)
         {
-            return IExecute<int>("write", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("write", "(Ljavax/sound/midi/Sequence;ILjava/io/File;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileWriter.html#write(javax.sound.midi.Sequence,int,java.io.OutputStream)"/>
@@ -121,7 +121,7 @@ namespace Javax.Sound.Midi.Spi
         /// <exception cref="Java.Io.IOException"/>
         public int Write(Javax.Sound.Midi.Sequence arg0, int arg1, Java.Io.OutputStream arg2)
         {
-            return IExecute<int>("write", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("write", "(Ljavax/sound/midi/Sequence;ILjava/io/OutputStream;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileWriter.html#getMidiFileTypes(javax.sound.midi.Sequence)"/>
@@ -140,7 +140,7 @@ namespace Javax.Sound.Midi.Spi
         /// <returns><see cref="bool"/></returns>
         public bool IsFileTypeSupported(int arg0, Javax.Sound.Midi.Sequence arg1)
         {
-            return IExecute<bool>("isFileTypeSupported", arg0, arg1);
+            return IExecuteWithSignature<bool>("isFileTypeSupported", "(ILjavax/sound/midi/Sequence;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileWriter.html#isFileTypeSupported(int)"/>

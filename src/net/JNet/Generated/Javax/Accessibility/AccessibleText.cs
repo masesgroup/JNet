@@ -248,7 +248,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetAfterIndex(int arg0, int arg1)
         {
-            return IExecute<Java.Lang.String>("getAfterIndex", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getAfterIndex", "(II)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleText.html#getAtIndex(int,int)"/>
@@ -258,7 +258,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetAtIndex(int arg0, int arg1)
         {
-            return IExecute<Java.Lang.String>("getAtIndex", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getAtIndex", "(II)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleText.html#getBeforeIndex(int,int)"/>
@@ -268,7 +268,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetBeforeIndex(int arg0, int arg1)
         {
-            return IExecute<Java.Lang.String>("getBeforeIndex", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getBeforeIndex", "(II)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleText.html#getCharacterAttribute(int)"/>

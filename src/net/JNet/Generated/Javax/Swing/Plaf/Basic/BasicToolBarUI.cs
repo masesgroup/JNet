@@ -116,7 +116,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <returns><see cref="bool"/></returns>
         public bool CanDock(Java.Awt.Component arg0, Java.Awt.Point arg1)
         {
-            return IExecute<bool>("canDock", arg0, arg1);
+            return IExecuteWithSignature<bool>("canDock", "(Ljava/awt/Component;Ljava/awt/Point;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#isFloating()"/>
@@ -141,7 +141,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <param name="arg1"><see cref="Java.Awt.Point"/></param>
         public void SetFloating(bool arg0, Java.Awt.Point arg1)
         {
-            IExecute("setFloating", arg0, arg1);
+            IExecuteWithSignature("setFloating", "(ZLjava/awt/Point;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#setFloatingLocation(int,int)"/>
@@ -150,7 +150,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <param name="arg1"><see cref="int"/></param>
         public void SetFloatingLocation(int arg0, int arg1)
         {
-            IExecute("setFloatingLocation", arg0, arg1);
+            IExecuteWithSignature("setFloatingLocation", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#setOrientation(int)"/>

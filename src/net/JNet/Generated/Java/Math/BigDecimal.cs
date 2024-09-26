@@ -267,7 +267,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public static Java.Math.BigDecimal ValueOf(long arg0, int arg1)
         {
-            return SExecute<Java.Math.BigDecimal>(LocalBridgeClazz, "valueOf", arg0, arg1);
+            return SExecuteWithSignature<Java.Math.BigDecimal>(LocalBridgeClazz, "valueOf", "(JI)Ljava/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#valueOf(long)"/>
@@ -381,7 +381,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal Add(Java.Math.BigDecimal arg0, Java.Math.MathContext arg1)
         {
-            return IExecute<Java.Math.BigDecimal>("add", arg0, arg1);
+            return IExecuteWithSignature<Java.Math.BigDecimal>("add", "(Ljava/math/BigDecimal;Ljava/math/MathContext;)Ljava/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#add(java.math.BigDecimal)"/>
@@ -401,7 +401,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal Divide(Java.Math.BigDecimal arg0, int arg1, Java.Math.RoundingMode arg2)
         {
-            return IExecute<Java.Math.BigDecimal>("divide", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Math.BigDecimal>("divide", "(Ljava/math/BigDecimal;ILjava/math/RoundingMode;)Ljava/math/BigDecimal;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#divide(java.math.BigDecimal,java.math.MathContext)"/>
@@ -411,7 +411,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal Divide(Java.Math.BigDecimal arg0, Java.Math.MathContext arg1)
         {
-            return IExecute<Java.Math.BigDecimal>("divide", arg0, arg1);
+            return IExecuteWithSignature<Java.Math.BigDecimal>("divide", "(Ljava/math/BigDecimal;Ljava/math/MathContext;)Ljava/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#divide(java.math.BigDecimal,java.math.RoundingMode)"/>
@@ -421,7 +421,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal Divide(Java.Math.BigDecimal arg0, Java.Math.RoundingMode arg1)
         {
-            return IExecute<Java.Math.BigDecimal>("divide", arg0, arg1);
+            return IExecuteWithSignature<Java.Math.BigDecimal>("divide", "(Ljava/math/BigDecimal;Ljava/math/RoundingMode;)Ljava/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#divide(java.math.BigDecimal)"/>
@@ -440,7 +440,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal DivideToIntegralValue(Java.Math.BigDecimal arg0, Java.Math.MathContext arg1)
         {
-            return IExecute<Java.Math.BigDecimal>("divideToIntegralValue", arg0, arg1);
+            return IExecuteWithSignature<Java.Math.BigDecimal>("divideToIntegralValue", "(Ljava/math/BigDecimal;Ljava/math/MathContext;)Ljava/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#divideToIntegralValue(java.math.BigDecimal)"/>
@@ -495,7 +495,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal Multiply(Java.Math.BigDecimal arg0, Java.Math.MathContext arg1)
         {
-            return IExecute<Java.Math.BigDecimal>("multiply", arg0, arg1);
+            return IExecuteWithSignature<Java.Math.BigDecimal>("multiply", "(Ljava/math/BigDecimal;Ljava/math/MathContext;)Ljava/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#multiply(java.math.BigDecimal)"/>
@@ -548,7 +548,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal Pow(int arg0, Java.Math.MathContext arg1)
         {
-            return IExecute<Java.Math.BigDecimal>("pow", arg0, arg1);
+            return IExecuteWithSignature<Java.Math.BigDecimal>("pow", "(ILjava/math/MathContext;)Ljava/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#pow(int)"/>
@@ -567,7 +567,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal Remainder(Java.Math.BigDecimal arg0, Java.Math.MathContext arg1)
         {
-            return IExecute<Java.Math.BigDecimal>("remainder", arg0, arg1);
+            return IExecuteWithSignature<Java.Math.BigDecimal>("remainder", "(Ljava/math/BigDecimal;Ljava/math/MathContext;)Ljava/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#remainder(java.math.BigDecimal)"/>
@@ -604,7 +604,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal SetScale(int arg0, Java.Math.RoundingMode arg1)
         {
-            return IExecute<Java.Math.BigDecimal>("setScale", arg0, arg1);
+            return IExecuteWithSignature<Java.Math.BigDecimal>("setScale", "(ILjava/math/RoundingMode;)Ljava/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#setScale(int)"/>
@@ -640,7 +640,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal Subtract(Java.Math.BigDecimal arg0, Java.Math.MathContext arg1)
         {
-            return IExecute<Java.Math.BigDecimal>("subtract", arg0, arg1);
+            return IExecuteWithSignature<Java.Math.BigDecimal>("subtract", "(Ljava/math/BigDecimal;Ljava/math/MathContext;)Ljava/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#subtract(java.math.BigDecimal)"/>
@@ -667,7 +667,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal[] DivideAndRemainder(Java.Math.BigDecimal arg0, Java.Math.MathContext arg1)
         {
-            return IExecuteArray<Java.Math.BigDecimal>("divideAndRemainder", arg0, arg1);
+            return IExecuteWithSignatureArray<Java.Math.BigDecimal>("divideAndRemainder", "(Ljava/math/BigDecimal;Ljava/math/MathContext;)[Ljava/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#divideAndRemainder(java.math.BigDecimal)"/>

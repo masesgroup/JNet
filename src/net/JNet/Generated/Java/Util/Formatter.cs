@@ -325,7 +325,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Formatter"/></returns>
         public Java.Util.Formatter Format(Java.Lang.String arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Util.Formatter>("format", arg0); else return IExecute<Java.Util.Formatter>("format", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Util.Formatter>("format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/Formatter;", arg0); else return IExecuteWithSignature<Java.Util.Formatter>("format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/Formatter;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#format(java.util.Locale,java.lang.String,java.lang.Object[])"/>
@@ -336,7 +336,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Formatter"/></returns>
         public Java.Util.Formatter Format(Java.Util.Locale arg0, Java.Lang.String arg1, params object[] arg2)
         {
-            if (arg2.Length == 0) return IExecute<Java.Util.Formatter>("format", arg0, arg1); else return IExecute<Java.Util.Formatter>("format", arg0, arg1, arg2);
+            if (arg2.Length == 0) return IExecuteWithSignature<Java.Util.Formatter>("format", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/Formatter;", arg0, arg1); else return IExecuteWithSignature<Java.Util.Formatter>("format", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/Formatter;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#locale()"/>

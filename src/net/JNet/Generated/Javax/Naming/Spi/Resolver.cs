@@ -135,7 +135,7 @@ namespace Javax.Naming.Spi
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.Spi.ResolveResult ResolveToClass(Java.Lang.String arg0, Java.Lang.Class arg1)
         {
-            return IExecute<Javax.Naming.Spi.ResolveResult>("resolveToClass", arg0, arg1);
+            return IExecuteWithSignature<Javax.Naming.Spi.ResolveResult>("resolveToClass", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/naming/spi/ResolveResult;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/Resolver.html#resolveToClass(javax.naming.Name,java.lang.Class)"/>
@@ -146,7 +146,7 @@ namespace Javax.Naming.Spi
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.Spi.ResolveResult ResolveToClass(Javax.Naming.Name arg0, Java.Lang.Class arg1)
         {
-            return IExecute<Javax.Naming.Spi.ResolveResult>("resolveToClass", arg0, arg1);
+            return IExecuteWithSignature<Javax.Naming.Spi.ResolveResult>("resolveToClass", "(Ljavax/naming/Name;Ljava/lang/Class;)Ljavax/naming/spi/ResolveResult;", arg0, arg1);
         }
 
         #endregion

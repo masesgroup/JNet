@@ -131,7 +131,7 @@ namespace Javax.Swing.Table
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetTableCellEditorComponent(Javax.Swing.JTable arg0, object arg1, bool arg2, int arg3, int arg4)
         {
-            return IExecute<Java.Awt.Component>("getTableCellEditorComponent", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Java.Awt.Component>("getTableCellEditorComponent", "(Ljavax/swing/JTable;Ljava/lang/Object;ZII)Ljava/awt/Component;", arg0, arg1, arg2, arg3, arg4);
         }
 
         #endregion

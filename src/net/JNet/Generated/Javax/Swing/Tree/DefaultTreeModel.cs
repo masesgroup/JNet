@@ -173,7 +173,7 @@ namespace Javax.Swing.Tree
         /// <returns><see cref="int"/></returns>
         public int GetIndexOfChild(object arg0, object arg1)
         {
-            return IExecute<int>("getIndexOfChild", arg0, arg1);
+            return IExecuteWithSignature<int>("getIndexOfChild", "(Ljava/lang/Object;Ljava/lang/Object;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#getChild(java.lang.Object,int)"/>
@@ -183,7 +183,7 @@ namespace Javax.Swing.Tree
         /// <returns><see cref="object"/></returns>
         public object GetChild(object arg0, int arg1)
         {
-            return IExecute("getChild", arg0, arg1);
+            return IExecuteWithSignature("getChild", "(Ljava/lang/Object;I)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#getPathToRoot(javax.swing.tree.TreeNode)"/>
@@ -210,7 +210,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg2"><see cref="int"/></param>
         public void InsertNodeInto(Javax.Swing.Tree.MutableTreeNode arg0, Javax.Swing.Tree.MutableTreeNode arg1, int arg2)
         {
-            IExecute("insertNodeInto", arg0, arg1, arg2);
+            IExecuteWithSignature("insertNodeInto", "(Ljavax/swing/tree/MutableTreeNode;Ljavax/swing/tree/MutableTreeNode;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#nodeChanged(javax.swing.tree.TreeNode)"/>
@@ -227,7 +227,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg1"><see cref="int"/></param>
         public void NodesChanged(Javax.Swing.Tree.TreeNode arg0, int[] arg1)
         {
-            IExecute("nodesChanged", arg0, arg1);
+            IExecuteWithSignature("nodesChanged", "(Ljavax/swing/tree/TreeNode;[I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#nodeStructureChanged(javax.swing.tree.TreeNode)"/>
@@ -244,7 +244,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg1"><see cref="int"/></param>
         public void NodesWereInserted(Javax.Swing.Tree.TreeNode arg0, int[] arg1)
         {
-            IExecute("nodesWereInserted", arg0, arg1);
+            IExecuteWithSignature("nodesWereInserted", "(Ljavax/swing/tree/TreeNode;[I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#nodesWereRemoved(javax.swing.tree.TreeNode,int[],java.lang.Object[])"/>
@@ -254,7 +254,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg2"><see cref="object"/></param>
         public void NodesWereRemoved(Javax.Swing.Tree.TreeNode arg0, int[] arg1, object[] arg2)
         {
-            IExecute("nodesWereRemoved", arg0, arg1, arg2);
+            IExecuteWithSignature("nodesWereRemoved", "(Ljavax/swing/tree/TreeNode;[I[Ljava/lang/Object;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#reload()"/>
@@ -302,7 +302,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg1"><see cref="object"/></param>
         public void ValueForPathChanged(Javax.Swing.Tree.TreePath arg0, object arg1)
         {
-            IExecute("valueForPathChanged", arg0, arg1);
+            IExecuteWithSignature("valueForPathChanged", "(Ljavax/swing/tree/TreePath;Ljava/lang/Object;)V", arg0, arg1);
         }
 
         #endregion

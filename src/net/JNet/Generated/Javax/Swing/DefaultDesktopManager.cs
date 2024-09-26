@@ -121,7 +121,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void BeginResizingFrame(Javax.Swing.JComponent arg0, int arg1)
         {
-            IExecute("beginResizingFrame", arg0, arg1);
+            IExecuteWithSignature("beginResizingFrame", "(Ljavax/swing/JComponent;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultDesktopManager.html#closeFrame(javax.swing.JInternalFrame)"/>
@@ -155,7 +155,7 @@ namespace Javax.Swing
         /// <param name="arg2"><see cref="int"/></param>
         public void DragFrame(Javax.Swing.JComponent arg0, int arg1, int arg2)
         {
-            IExecute("dragFrame", arg0, arg1, arg2);
+            IExecuteWithSignature("dragFrame", "(Ljavax/swing/JComponent;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultDesktopManager.html#endDraggingFrame(javax.swing.JComponent)"/>
@@ -215,7 +215,7 @@ namespace Javax.Swing
         /// <param name="arg4"><see cref="int"/></param>
         public void ResizeFrame(Javax.Swing.JComponent arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            IExecute("resizeFrame", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("resizeFrame", "(Ljavax/swing/JComponent;IIII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultDesktopManager.html#setBoundsForFrame(javax.swing.JComponent,int,int,int,int)"/>
@@ -227,7 +227,7 @@ namespace Javax.Swing
         /// <param name="arg4"><see cref="int"/></param>
         public void SetBoundsForFrame(Javax.Swing.JComponent arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            IExecute("setBoundsForFrame", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("setBoundsForFrame", "(Ljavax/swing/JComponent;IIII)V", arg0, arg1, arg2, arg3, arg4);
         }
 
         #endregion

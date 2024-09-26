@@ -145,7 +145,7 @@ namespace Javax.Tools
         /// <returns><see cref="int"/></returns>
         public int Run(Java.Io.InputStream arg0, Java.Io.OutputStream arg1, Java.Io.OutputStream arg2, params Java.Lang.String[] arg3)
         {
-            if (arg3.Length == 0) return IExecute<int>("run", arg0, arg1, arg2); else return IExecute<int>("run", arg0, arg1, arg2, arg3);
+            if (arg3.Length == 0) return IExecuteWithSignature<int>("run", "(Ljava/io/InputStream;Ljava/io/OutputStream;Ljava/io/OutputStream;[Ljava/lang/String;)I", arg0, arg1, arg2); else return IExecuteWithSignature<int>("run", "(Ljava/io/InputStream;Ljava/io/OutputStream;Ljava/io/OutputStream;[Ljava/lang/String;)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Tool.html#name()"/>

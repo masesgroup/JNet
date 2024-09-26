@@ -100,7 +100,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <returns><see cref="Javax.Swing.Plaf.Synth.SynthStyle"/></returns>
         public Javax.Swing.Plaf.Synth.SynthStyle GetStyle(Javax.Swing.JComponent arg0, Javax.Swing.Plaf.Synth.Region arg1)
         {
-            return IExecute<Javax.Swing.Plaf.Synth.SynthStyle>("getStyle", arg0, arg1);
+            return IExecuteWithSignature<Javax.Swing.Plaf.Synth.SynthStyle>("getStyle", "(Ljavax/swing/JComponent;Ljavax/swing/plaf/synth/Region;)Ljavax/swing/plaf/synth/SynthStyle;", arg0, arg1);
         }
 
         #endregion

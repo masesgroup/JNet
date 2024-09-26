@@ -129,7 +129,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.JapaneseDate"/></returns>
         public static Java.Time.Chrono.JapaneseDate Of(int arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Time.Chrono.JapaneseDate>(LocalBridgeClazz, "of", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Time.Chrono.JapaneseDate>(LocalBridgeClazz, "of", "(III)Ljava/time/chrono/JapaneseDate;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseDate.html#of(java.time.chrono.JapaneseEra,int,int,int)"/>
@@ -141,7 +141,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.JapaneseDate"/></returns>
         public static Java.Time.Chrono.JapaneseDate Of(Java.Time.Chrono.JapaneseEra arg0, int arg1, int arg2, int arg3)
         {
-            return SExecute<Java.Time.Chrono.JapaneseDate>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Time.Chrono.JapaneseDate>(LocalBridgeClazz, "of", "(Ljava/time/chrono/JapaneseEra;III)Ljava/time/chrono/JapaneseDate;", arg0, arg1, arg2, arg3);
         }
 
         #endregion

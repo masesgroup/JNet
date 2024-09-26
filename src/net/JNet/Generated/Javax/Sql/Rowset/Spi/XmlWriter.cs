@@ -125,7 +125,7 @@ namespace Javax.Sql.Rowset.Spi
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteXML(Javax.Sql.Rowset.WebRowSet arg0, Java.Io.Writer arg1)
         {
-            IExecute("writeXML", arg0, arg1);
+            IExecuteWithSignature("writeXML", "(Ljavax/sql/rowset/WebRowSet;Ljava/io/Writer;)V", arg0, arg1);
         }
 
         #endregion

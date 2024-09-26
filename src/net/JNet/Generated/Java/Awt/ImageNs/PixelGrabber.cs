@@ -225,7 +225,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg1"><see cref="int"/></param>
         public void SetDimensions(int arg0, int arg1)
         {
-            IExecute("setDimensions", arg0, arg1);
+            IExecuteWithSignature("setDimensions", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#setHints(int)"/>
@@ -248,7 +248,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg7"><see cref="int"/></param>
         public void SetPixels(int arg0, int arg1, int arg2, int arg3, Java.Awt.ImageNs.ColorModel arg4, byte[] arg5, int arg6, int arg7)
         {
-            IExecute("setPixels", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            IExecuteWithSignature("setPixels", "(IIIILjava/awt/image/ColorModel;[BII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#setPixels(int,int,int,int,java.awt.image.ColorModel,int[],int,int)"/>
@@ -263,7 +263,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg7"><see cref="int"/></param>
         public void SetPixels(int arg0, int arg1, int arg2, int arg3, Java.Awt.ImageNs.ColorModel arg4, int[] arg5, int arg6, int arg7)
         {
-            IExecute("setPixels", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            IExecuteWithSignature("setPixels", "(IIIILjava/awt/image/ColorModel;[III)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#setProperties(java.util.Hashtable)"/>

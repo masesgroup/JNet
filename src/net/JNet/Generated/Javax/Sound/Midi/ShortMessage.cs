@@ -268,7 +268,7 @@ namespace Javax.Sound.Midi
         /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
         public void SetMessage(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("setMessage", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setMessage", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#setMessage(int,int,int)"/>
@@ -279,7 +279,7 @@ namespace Javax.Sound.Midi
         /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
         public void SetMessage(int arg0, int arg1, int arg2)
         {
-            IExecute("setMessage", arg0, arg1, arg2);
+            IExecuteWithSignature("setMessage", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#setMessage(int)"/>

@@ -285,7 +285,7 @@ namespace Java.Beans.Beancontext
         /// <returns><see cref="Java.Io.InputStream"/></returns>
         public Java.Io.InputStream GetResourceAsStream(Java.Lang.String arg0, Java.Beans.Beancontext.BeanContextChild arg1)
         {
-            return IExecute<Java.Io.InputStream>("getResourceAsStream", arg0, arg1);
+            return IExecuteWithSignature<Java.Io.InputStream>("getResourceAsStream", "(Ljava/lang/String;Ljava/beans/beancontext/BeanContextChild;)Ljava/io/InputStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#instantiateChild(java.lang.String)"/>
@@ -323,7 +323,7 @@ namespace Java.Beans.Beancontext
         /// <returns><see cref="Java.Net.URL"/></returns>
         public Java.Net.URL GetResource(Java.Lang.String arg0, Java.Beans.Beancontext.BeanContextChild arg1)
         {
-            return IExecute<Java.Net.URL>("getResource", arg0, arg1);
+            return IExecuteWithSignature<Java.Net.URL>("getResource", "(Ljava/lang/String;Ljava/beans/beancontext/BeanContextChild;)Ljava/net/URL;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#iterator()"/>

@@ -100,7 +100,7 @@ namespace Java.Text.Spi
         /// <returns><see cref="Java.Text.DateFormat"/></returns>
         public Java.Text.DateFormat GetDateInstance(int arg0, Java.Util.Locale arg1)
         {
-            return IExecute<Java.Text.DateFormat>("getDateInstance", arg0, arg1);
+            return IExecuteWithSignature<Java.Text.DateFormat>("getDateInstance", "(ILjava/util/Locale;)Ljava/text/DateFormat;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/DateFormatProvider.html#getDateTimeInstance(int,int,java.util.Locale)"/>
@@ -111,7 +111,7 @@ namespace Java.Text.Spi
         /// <returns><see cref="Java.Text.DateFormat"/></returns>
         public Java.Text.DateFormat GetDateTimeInstance(int arg0, int arg1, Java.Util.Locale arg2)
         {
-            return IExecute<Java.Text.DateFormat>("getDateTimeInstance", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Text.DateFormat>("getDateTimeInstance", "(IILjava/util/Locale;)Ljava/text/DateFormat;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/DateFormatProvider.html#getTimeInstance(int,java.util.Locale)"/>
@@ -121,7 +121,7 @@ namespace Java.Text.Spi
         /// <returns><see cref="Java.Text.DateFormat"/></returns>
         public Java.Text.DateFormat GetTimeInstance(int arg0, Java.Util.Locale arg1)
         {
-            return IExecute<Java.Text.DateFormat>("getTimeInstance", arg0, arg1);
+            return IExecuteWithSignature<Java.Text.DateFormat>("getTimeInstance", "(ILjava/util/Locale;)Ljava/text/DateFormat;", arg0, arg1);
         }
 
         #endregion

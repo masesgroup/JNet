@@ -142,7 +142,7 @@ namespace Javax.Xml.Parsers
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public void SetProperty(Java.Lang.String arg0, object arg1)
         {
-            IExecute("setProperty", arg0, arg1);
+            IExecuteWithSignature("setProperty", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParser.html#isXIncludeAware()"/>
@@ -161,7 +161,7 @@ namespace Javax.Xml.Parsers
         /// <exception cref="Java.Io.IOException"/>
         public void Parse(Java.Io.File arg0, Org.Xml.Sax.Helpers.DefaultHandler arg1)
         {
-            IExecute("parse", arg0, arg1);
+            IExecuteWithSignature("parse", "(Ljava/io/File;Lorg/xml/sax/helpers/DefaultHandler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParser.html#parse(java.io.InputStream,org.xml.sax.helpers.DefaultHandler,java.lang.String)"/>
@@ -173,7 +173,7 @@ namespace Javax.Xml.Parsers
         /// <exception cref="Java.Io.IOException"/>
         public void Parse(Java.Io.InputStream arg0, Org.Xml.Sax.Helpers.DefaultHandler arg1, Java.Lang.String arg2)
         {
-            IExecute("parse", arg0, arg1, arg2);
+            IExecuteWithSignature("parse", "(Ljava/io/InputStream;Lorg/xml/sax/helpers/DefaultHandler;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParser.html#parse(java.io.InputStream,org.xml.sax.helpers.DefaultHandler)"/>
@@ -184,7 +184,7 @@ namespace Javax.Xml.Parsers
         /// <exception cref="Java.Io.IOException"/>
         public void Parse(Java.Io.InputStream arg0, Org.Xml.Sax.Helpers.DefaultHandler arg1)
         {
-            IExecute("parse", arg0, arg1);
+            IExecuteWithSignature("parse", "(Ljava/io/InputStream;Lorg/xml/sax/helpers/DefaultHandler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParser.html#parse(java.lang.String,org.xml.sax.helpers.DefaultHandler)"/>
@@ -195,7 +195,7 @@ namespace Javax.Xml.Parsers
         /// <exception cref="Java.Io.IOException"/>
         public void Parse(Java.Lang.String arg0, Org.Xml.Sax.Helpers.DefaultHandler arg1)
         {
-            IExecute("parse", arg0, arg1);
+            IExecuteWithSignature("parse", "(Ljava/lang/String;Lorg/xml/sax/helpers/DefaultHandler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParser.html#parse(org.xml.sax.InputSource,org.xml.sax.helpers.DefaultHandler)"/>
@@ -206,7 +206,7 @@ namespace Javax.Xml.Parsers
         /// <exception cref="Java.Io.IOException"/>
         public void Parse(Org.Xml.Sax.InputSource arg0, Org.Xml.Sax.Helpers.DefaultHandler arg1)
         {
-            IExecute("parse", arg0, arg1);
+            IExecuteWithSignature("parse", "(Lorg/xml/sax/InputSource;Lorg/xml/sax/helpers/DefaultHandler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParser.html#reset()"/>

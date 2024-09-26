@@ -96,7 +96,7 @@ namespace Javax.Print
         /// <returns><see cref="Javax.Print.StreamPrintServiceFactory"/></returns>
         public static Javax.Print.StreamPrintServiceFactory[] LookupStreamPrintServiceFactories(Javax.Print.DocFlavor arg0, Java.Lang.String arg1)
         {
-            return SExecuteArray<Javax.Print.StreamPrintServiceFactory>(LocalBridgeClazz, "lookupStreamPrintServiceFactories", arg0, arg1);
+            return SExecuteWithSignatureArray<Javax.Print.StreamPrintServiceFactory>(LocalBridgeClazz, "lookupStreamPrintServiceFactories", "(Ljavax/print/DocFlavor;Ljava/lang/String;)[Ljavax/print/StreamPrintServiceFactory;", arg0, arg1);
         }
 
         #endregion

@@ -197,7 +197,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/></returns>
         public Java.Util.Concurrent.ConcurrentNavigableMap HeadMap(object arg0, bool arg1)
         {
-            return IExecute<Java.Util.Concurrent.ConcurrentNavigableMap>("headMap", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.ConcurrentNavigableMap>("headMap", "(Ljava/lang/Object;Z)Ljava/util/concurrent/ConcurrentNavigableMap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#headMap(java.lang.Object)"/>
@@ -218,7 +218,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/></returns>
         public Java.Util.Concurrent.ConcurrentNavigableMap SubMapMethod(object arg0, bool arg1, object arg2, bool arg3)
         {
-            return IExecute<Java.Util.Concurrent.ConcurrentNavigableMap>("subMap", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Util.Concurrent.ConcurrentNavigableMap>("subMap", "(Ljava/lang/Object;ZLjava/lang/Object;Z)Ljava/util/concurrent/ConcurrentNavigableMap;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#subMap(java.lang.Object,java.lang.Object)"/>
@@ -228,7 +228,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/></returns>
         public Java.Util.Concurrent.ConcurrentNavigableMap SubMapMethod(object arg0, object arg1)
         {
-            return IExecute<Java.Util.Concurrent.ConcurrentNavigableMap>("subMap", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.ConcurrentNavigableMap>("subMap", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/concurrent/ConcurrentNavigableMap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#tailMap(java.lang.Object,boolean)"/>
@@ -238,7 +238,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/></returns>
         public Java.Util.Concurrent.ConcurrentNavigableMap TailMap(object arg0, bool arg1)
         {
-            return IExecute<Java.Util.Concurrent.ConcurrentNavigableMap>("tailMap", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.ConcurrentNavigableMap>("tailMap", "(Ljava/lang/Object;Z)Ljava/util/concurrent/ConcurrentNavigableMap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#tailMap(java.lang.Object)"/>
@@ -489,7 +489,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/></returns>
         public Java.Util.Concurrent.ConcurrentNavigableMap<K, V> HeadMap(K arg0, bool arg1)
         {
-            return IExecute<Java.Util.Concurrent.ConcurrentNavigableMap<K, V>>("headMap", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.ConcurrentNavigableMap<K, V>>("headMap", "(Ljava/lang/Object;Z)Ljava/util/concurrent/ConcurrentNavigableMap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#headMap(java.lang.Object)"/>
@@ -510,7 +510,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/></returns>
         public Java.Util.Concurrent.ConcurrentNavigableMap<K, V> SubMapMethod(K arg0, bool arg1, K arg2, bool arg3)
         {
-            return IExecute<Java.Util.Concurrent.ConcurrentNavigableMap<K, V>>("subMap", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Util.Concurrent.ConcurrentNavigableMap<K, V>>("subMap", "(Ljava/lang/Object;ZLjava/lang/Object;Z)Ljava/util/concurrent/ConcurrentNavigableMap;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#subMap(java.lang.Object,java.lang.Object)"/>
@@ -520,7 +520,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/></returns>
         public Java.Util.Concurrent.ConcurrentNavigableMap<K, V> SubMapMethod(K arg0, K arg1)
         {
-            return IExecute<Java.Util.Concurrent.ConcurrentNavigableMap<K, V>>("subMap", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.ConcurrentNavigableMap<K, V>>("subMap", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/concurrent/ConcurrentNavigableMap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#tailMap(java.lang.Object,boolean)"/>
@@ -530,7 +530,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/></returns>
         public Java.Util.Concurrent.ConcurrentNavigableMap<K, V> TailMap(K arg0, bool arg1)
         {
-            return IExecute<Java.Util.Concurrent.ConcurrentNavigableMap<K, V>>("tailMap", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.ConcurrentNavigableMap<K, V>>("tailMap", "(Ljava/lang/Object;Z)Ljava/util/concurrent/ConcurrentNavigableMap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#tailMap(java.lang.Object)"/>

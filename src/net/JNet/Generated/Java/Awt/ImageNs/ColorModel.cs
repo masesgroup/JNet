@@ -236,7 +236,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="float"/></returns>
         public float[] GetNormalizedComponents(int[] arg0, int arg1, float[] arg2, int arg3)
         {
-            return IExecuteArray<float>("getNormalizedComponents", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignatureArray<float>("getNormalizedComponents", "([II[FI)[F", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getNormalizedComponents(java.lang.Object,float[],int)"/>
@@ -247,7 +247,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="float"/></returns>
         public float[] GetNormalizedComponents(object arg0, float[] arg1, int arg2)
         {
-            return IExecuteArray<float>("getNormalizedComponents", arg0, arg1, arg2);
+            return IExecuteWithSignatureArray<float>("getNormalizedComponents", "(Ljava/lang/Object;[FI)[F", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getAlpha(java.lang.Object)"/>
@@ -284,7 +284,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int GetDataElement(float[] arg0, int arg1)
         {
-            return IExecute<int>("getDataElement", arg0, arg1);
+            return IExecuteWithSignature<int>("getDataElement", "([FI)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getDataElement(int[],int)"/>
@@ -294,7 +294,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int GetDataElement(int[] arg0, int arg1)
         {
-            return IExecute<int>("getDataElement", arg0, arg1);
+            return IExecuteWithSignature<int>("getDataElement", "([II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getGreen(java.lang.Object)"/>
@@ -341,7 +341,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int[] GetComponents(int arg0, int[] arg1, int arg2)
         {
-            return IExecuteArray<int>("getComponents", arg0, arg1, arg2);
+            return IExecuteWithSignatureArray<int>("getComponents", "(I[II)[I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getComponents(java.lang.Object,int[],int)"/>
@@ -352,7 +352,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int[] GetComponents(object arg0, int[] arg1, int arg2)
         {
-            return IExecuteArray<int>("getComponents", arg0, arg1, arg2);
+            return IExecuteWithSignatureArray<int>("getComponents", "(Ljava/lang/Object;[II)[I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getUnnormalizedComponents(float[],int,int[],int)"/>
@@ -364,7 +364,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int[] GetUnnormalizedComponents(float[] arg0, int arg1, int[] arg2, int arg3)
         {
-            return IExecuteArray<int>("getUnnormalizedComponents", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignatureArray<int>("getUnnormalizedComponents", "([FI[II)[I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#coerceData(java.awt.image.WritableRaster,boolean)"/>
@@ -374,7 +374,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="Java.Awt.ImageNs.ColorModel"/></returns>
         public Java.Awt.ImageNs.ColorModel CoerceData(Java.Awt.ImageNs.WritableRaster arg0, bool arg1)
         {
-            return IExecute<Java.Awt.ImageNs.ColorModel>("coerceData", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.ImageNs.ColorModel>("coerceData", "(Ljava/awt/image/WritableRaster;Z)Ljava/awt/image/ColorModel;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#createCompatibleSampleModel(int,int)"/>
@@ -384,7 +384,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="Java.Awt.ImageNs.SampleModel"/></returns>
         public Java.Awt.ImageNs.SampleModel CreateCompatibleSampleModel(int arg0, int arg1)
         {
-            return IExecute<Java.Awt.ImageNs.SampleModel>("createCompatibleSampleModel", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.ImageNs.SampleModel>("createCompatibleSampleModel", "(II)Ljava/awt/image/SampleModel;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#createCompatibleWritableRaster(int,int)"/>
@@ -394,7 +394,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
         public Java.Awt.ImageNs.WritableRaster CreateCompatibleWritableRaster(int arg0, int arg1)
         {
-            return IExecute<Java.Awt.ImageNs.WritableRaster>("createCompatibleWritableRaster", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>("createCompatibleWritableRaster", "(II)Ljava/awt/image/WritableRaster;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getAlphaRaster(java.awt.image.WritableRaster)"/>
@@ -414,7 +414,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="object"/></returns>
         public object GetDataElements(float[] arg0, int arg1, object arg2)
         {
-            return IExecute("getDataElements", arg0, arg1, arg2);
+            return IExecuteWithSignature("getDataElements", "([FILjava/lang/Object;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getDataElements(int,java.lang.Object)"/>
@@ -424,7 +424,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="object"/></returns>
         public object GetDataElements(int arg0, object arg1)
         {
-            return IExecute("getDataElements", arg0, arg1);
+            return IExecuteWithSignature("getDataElements", "(ILjava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getDataElements(int[],int,java.lang.Object)"/>
@@ -435,7 +435,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="object"/></returns>
         public object GetDataElements(int[] arg0, int arg1, object arg2)
         {
-            return IExecute("getDataElements", arg0, arg1, arg2);
+            return IExecuteWithSignature("getDataElements", "([IILjava/lang/Object;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
 
         #endregion

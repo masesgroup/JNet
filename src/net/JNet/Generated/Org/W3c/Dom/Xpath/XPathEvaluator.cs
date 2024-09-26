@@ -150,7 +150,7 @@ namespace Org.W3c.Dom.Xpath
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public object Evaluate(Java.Lang.String arg0, Org.W3c.Dom.Node arg1, Org.W3c.Dom.Xpath.XPathNSResolver arg2, short arg3, object arg4)
         {
-            return IExecute("evaluate", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature("evaluate", "(Ljava/lang/String;Lorg/w3c/dom/Node;Lorg/w3c/dom/xpath/XPathNSResolver;SLjava/lang/Object;)Ljava/lang/Object;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathEvaluator.html#createExpression(java.lang.String,org.w3c.dom.xpath.XPathNSResolver)"/>
@@ -162,7 +162,7 @@ namespace Org.W3c.Dom.Xpath
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Xpath.XPathExpression CreateExpression(Java.Lang.String arg0, Org.W3c.Dom.Xpath.XPathNSResolver arg1)
         {
-            return IExecute<Org.W3c.Dom.Xpath.XPathExpression>("createExpression", arg0, arg1);
+            return IExecuteWithSignature<Org.W3c.Dom.Xpath.XPathExpression>("createExpression", "(Ljava/lang/String;Lorg/w3c/dom/xpath/XPathNSResolver;)Lorg/w3c/dom/xpath/XPathExpression;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathEvaluator.html#createNSResolver(org.w3c.dom.Node)"/>

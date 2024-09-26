@@ -119,7 +119,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.UnknownHostException"/>
         public static Java.Net.InetAddress GetByAddress(Java.Lang.String arg0, byte[] arg1)
         {
-            return SExecute<Java.Net.InetAddress>(LocalBridgeClazz, "getByAddress", arg0, arg1);
+            return SExecuteWithSignature<Java.Net.InetAddress>(LocalBridgeClazz, "getByAddress", "(Ljava/lang/String;[B)Ljava/net/InetAddress;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getByName(java.lang.String)"/>
@@ -265,7 +265,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public bool IsReachable(Java.Net.NetworkInterface arg0, int arg1, int arg2)
         {
-            return IExecute<bool>("isReachable", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("isReachable", "(Ljava/net/NetworkInterface;II)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isSiteLocalAddress()"/>

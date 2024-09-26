@@ -753,7 +753,7 @@ namespace Javax.Swing.Text.Html
         /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
         public Javax.Swing.Text.Element GetElement(Javax.Swing.Text.Element arg0, object arg1, object arg2)
         {
-            return IExecute<Javax.Swing.Text.Element>("getElement", arg0, arg1, arg2);
+            return IExecuteWithSignature<Javax.Swing.Text.Element>("getElement", "(Ljavax/swing/text/Element;Ljava/lang/Object;Ljava/lang/Object;)Ljavax/swing/text/Element;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getIterator(javax.swing.text.html.HTML.Tag)"/>
@@ -774,7 +774,7 @@ namespace Javax.Swing.Text.Html
         /// <returns><see cref="Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback"/></returns>
         public Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback GetReader(int arg0, int arg1, int arg2, Javax.Swing.Text.Html.HTML.Tag arg3)
         {
-            return IExecute<Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback>("getReader", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback>("getReader", "(IIILjavax/swing/text/html/HTML$Tag;)Ljavax/swing/text/html/HTMLEditorKit$ParserCallback;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getReader(int)"/>
@@ -794,7 +794,7 @@ namespace Javax.Swing.Text.Html
         /// <exception cref="Java.Io.IOException"/>
         public void InsertAfterEnd(Javax.Swing.Text.Element arg0, Java.Lang.String arg1)
         {
-            IExecute("insertAfterEnd", arg0, arg1);
+            IExecuteWithSignature("insertAfterEnd", "(Ljavax/swing/text/Element;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#insertAfterStart(javax.swing.text.Element,java.lang.String)"/>
@@ -805,7 +805,7 @@ namespace Javax.Swing.Text.Html
         /// <exception cref="Java.Io.IOException"/>
         public void InsertAfterStart(Javax.Swing.Text.Element arg0, Java.Lang.String arg1)
         {
-            IExecute("insertAfterStart", arg0, arg1);
+            IExecuteWithSignature("insertAfterStart", "(Ljavax/swing/text/Element;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#insertBeforeEnd(javax.swing.text.Element,java.lang.String)"/>
@@ -816,7 +816,7 @@ namespace Javax.Swing.Text.Html
         /// <exception cref="Java.Io.IOException"/>
         public void InsertBeforeEnd(Javax.Swing.Text.Element arg0, Java.Lang.String arg1)
         {
-            IExecute("insertBeforeEnd", arg0, arg1);
+            IExecuteWithSignature("insertBeforeEnd", "(Ljavax/swing/text/Element;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#insertBeforeStart(javax.swing.text.Element,java.lang.String)"/>
@@ -827,7 +827,7 @@ namespace Javax.Swing.Text.Html
         /// <exception cref="Java.Io.IOException"/>
         public void InsertBeforeStart(Javax.Swing.Text.Element arg0, Java.Lang.String arg1)
         {
-            IExecute("insertBeforeStart", arg0, arg1);
+            IExecuteWithSignature("insertBeforeStart", "(Ljavax/swing/text/Element;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#processHTMLFrameHyperlinkEvent(javax.swing.text.html.HTMLFrameHyperlinkEvent)"/>
@@ -846,7 +846,7 @@ namespace Javax.Swing.Text.Html
         /// <exception cref="Java.Io.IOException"/>
         public void SetInnerHTML(Javax.Swing.Text.Element arg0, Java.Lang.String arg1)
         {
-            IExecute("setInnerHTML", arg0, arg1);
+            IExecuteWithSignature("setInnerHTML", "(Ljavax/swing/text/Element;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#setOuterHTML(javax.swing.text.Element,java.lang.String)"/>
@@ -857,7 +857,7 @@ namespace Javax.Swing.Text.Html
         /// <exception cref="Java.Io.IOException"/>
         public void SetOuterHTML(Javax.Swing.Text.Element arg0, Java.Lang.String arg1)
         {
-            IExecute("setOuterHTML", arg0, arg1);
+            IExecuteWithSignature("setOuterHTML", "(Ljavax/swing/text/Element;Ljava/lang/String;)V", arg0, arg1);
         }
 
         #endregion
@@ -1304,7 +1304,7 @@ namespace Javax.Swing.Text.Html
                 /// <param name="arg1"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
                 public void Start(Javax.Swing.Text.Html.HTML.Tag arg0, Javax.Swing.Text.MutableAttributeSet arg1)
                 {
-                    IExecute("start", arg0, arg1);
+                    IExecuteWithSignature("start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V", arg0, arg1);
                 }
 
                 #endregion

@@ -165,7 +165,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle GetTextBounds(int arg0, int arg1)
         {
-            return IExecute<Java.Awt.Rectangle>("getTextBounds", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Rectangle>("getTextBounds", "(II)Ljava/awt/Rectangle;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedText.html#getTextRange(int,int)"/>
@@ -175,7 +175,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetTextRange(int arg0, int arg1)
         {
-            return IExecute<Java.Lang.String>("getTextRange", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getTextRange", "(II)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedText.html#getTextSequenceAfter(int,int)"/>
@@ -185,7 +185,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="Javax.Accessibility.AccessibleTextSequence"/></returns>
         public Javax.Accessibility.AccessibleTextSequence GetTextSequenceAfter(int arg0, int arg1)
         {
-            return IExecute<Javax.Accessibility.AccessibleTextSequence>("getTextSequenceAfter", arg0, arg1);
+            return IExecuteWithSignature<Javax.Accessibility.AccessibleTextSequence>("getTextSequenceAfter", "(II)Ljavax/accessibility/AccessibleTextSequence;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedText.html#getTextSequenceAt(int,int)"/>
@@ -195,7 +195,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="Javax.Accessibility.AccessibleTextSequence"/></returns>
         public Javax.Accessibility.AccessibleTextSequence GetTextSequenceAt(int arg0, int arg1)
         {
-            return IExecute<Javax.Accessibility.AccessibleTextSequence>("getTextSequenceAt", arg0, arg1);
+            return IExecuteWithSignature<Javax.Accessibility.AccessibleTextSequence>("getTextSequenceAt", "(II)Ljavax/accessibility/AccessibleTextSequence;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedText.html#getTextSequenceBefore(int,int)"/>
@@ -205,7 +205,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="Javax.Accessibility.AccessibleTextSequence"/></returns>
         public Javax.Accessibility.AccessibleTextSequence GetTextSequenceBefore(int arg0, int arg1)
         {
-            return IExecute<Javax.Accessibility.AccessibleTextSequence>("getTextSequenceBefore", arg0, arg1);
+            return IExecuteWithSignature<Javax.Accessibility.AccessibleTextSequence>("getTextSequenceBefore", "(II)Ljavax/accessibility/AccessibleTextSequence;", arg0, arg1);
         }
 
         #endregion

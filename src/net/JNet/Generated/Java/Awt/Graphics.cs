@@ -144,7 +144,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool DrawImage(Java.Awt.Image arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, Java.Awt.Color arg9, Java.Awt.ImageNs.ImageObserver arg10)
         {
-            return IExecute<bool>("drawImage", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+            return IExecuteWithSignature<bool>("drawImage", "(Ljava/awt/Image;IIIIIIIILjava/awt/Color;Ljava/awt/image/ImageObserver;)Z", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#drawImage(java.awt.Image,int,int,int,int,int,int,int,int,java.awt.image.ImageObserver)"/>
@@ -162,7 +162,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool DrawImage(Java.Awt.Image arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, Java.Awt.ImageNs.ImageObserver arg9)
         {
-            return IExecute<bool>("drawImage", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+            return IExecuteWithSignature<bool>("drawImage", "(Ljava/awt/Image;IIIIIIIILjava/awt/image/ImageObserver;)Z", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#drawImage(java.awt.Image,int,int,int,int,java.awt.Color,java.awt.image.ImageObserver)"/>
@@ -177,7 +177,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool DrawImage(Java.Awt.Image arg0, int arg1, int arg2, int arg3, int arg4, Java.Awt.Color arg5, Java.Awt.ImageNs.ImageObserver arg6)
         {
-            return IExecute<bool>("drawImage", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return IExecuteWithSignature<bool>("drawImage", "(Ljava/awt/Image;IIIILjava/awt/Color;Ljava/awt/image/ImageObserver;)Z", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#drawImage(java.awt.Image,int,int,int,int,java.awt.image.ImageObserver)"/>
@@ -191,7 +191,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool DrawImage(Java.Awt.Image arg0, int arg1, int arg2, int arg3, int arg4, Java.Awt.ImageNs.ImageObserver arg5)
         {
-            return IExecute<bool>("drawImage", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<bool>("drawImage", "(Ljava/awt/Image;IIIILjava/awt/image/ImageObserver;)Z", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#drawImage(java.awt.Image,int,int,java.awt.Color,java.awt.image.ImageObserver)"/>
@@ -204,7 +204,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool DrawImage(Java.Awt.Image arg0, int arg1, int arg2, Java.Awt.Color arg3, Java.Awt.ImageNs.ImageObserver arg4)
         {
-            return IExecute<bool>("drawImage", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<bool>("drawImage", "(Ljava/awt/Image;IILjava/awt/Color;Ljava/awt/image/ImageObserver;)Z", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#drawImage(java.awt.Image,int,int,java.awt.image.ImageObserver)"/>
@@ -216,7 +216,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool DrawImage(Java.Awt.Image arg0, int arg1, int arg2, Java.Awt.ImageNs.ImageObserver arg3)
         {
-            return IExecute<bool>("drawImage", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("drawImage", "(Ljava/awt/Image;IILjava/awt/image/ImageObserver;)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#getFontMetrics(java.awt.Font)"/>
@@ -244,7 +244,7 @@ namespace Java.Awt
         /// <param name="arg3"><see cref="int"/></param>
         public void ClearRect(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("clearRect", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("clearRect", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#clipRect(int,int,int,int)"/>
@@ -255,7 +255,7 @@ namespace Java.Awt
         /// <param name="arg3"><see cref="int"/></param>
         public void ClipRect(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("clipRect", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("clipRect", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#copyArea(int,int,int,int,int,int)"/>
@@ -268,7 +268,7 @@ namespace Java.Awt
         /// <param name="arg5"><see cref="int"/></param>
         public void CopyArea(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
         {
-            IExecute("copyArea", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("copyArea", "(IIIIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#dispose()"/>
@@ -288,7 +288,7 @@ namespace Java.Awt
         /// <param name="arg5"><see cref="int"/></param>
         public void DrawArc(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
         {
-            IExecute("drawArc", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("drawArc", "(IIIIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#drawLine(int,int,int,int)"/>
@@ -299,7 +299,7 @@ namespace Java.Awt
         /// <param name="arg3"><see cref="int"/></param>
         public void DrawLine(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("drawLine", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("drawLine", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#drawOval(int,int,int,int)"/>
@@ -310,7 +310,7 @@ namespace Java.Awt
         /// <param name="arg3"><see cref="int"/></param>
         public void DrawOval(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("drawOval", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("drawOval", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#drawPolygon(int[],int[],int)"/>
@@ -320,7 +320,7 @@ namespace Java.Awt
         /// <param name="arg2"><see cref="int"/></param>
         public void DrawPolygon(int[] arg0, int[] arg1, int arg2)
         {
-            IExecute("drawPolygon", arg0, arg1, arg2);
+            IExecuteWithSignature("drawPolygon", "([I[II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#drawPolyline(int[],int[],int)"/>
@@ -330,7 +330,7 @@ namespace Java.Awt
         /// <param name="arg2"><see cref="int"/></param>
         public void DrawPolyline(int[] arg0, int[] arg1, int arg2)
         {
-            IExecute("drawPolyline", arg0, arg1, arg2);
+            IExecuteWithSignature("drawPolyline", "([I[II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#drawRoundRect(int,int,int,int,int,int)"/>
@@ -343,7 +343,7 @@ namespace Java.Awt
         /// <param name="arg5"><see cref="int"/></param>
         public void DrawRoundRect(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
         {
-            IExecute("drawRoundRect", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("drawRoundRect", "(IIIIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#drawString(java.lang.String,int,int)"/>
@@ -353,7 +353,7 @@ namespace Java.Awt
         /// <param name="arg2"><see cref="int"/></param>
         public void DrawString(Java.Lang.String arg0, int arg1, int arg2)
         {
-            IExecute("drawString", arg0, arg1, arg2);
+            IExecuteWithSignature("drawString", "(Ljava/lang/String;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#drawString(java.text.AttributedCharacterIterator,int,int)"/>
@@ -363,7 +363,7 @@ namespace Java.Awt
         /// <param name="arg2"><see cref="int"/></param>
         public void DrawString(Java.Text.AttributedCharacterIterator arg0, int arg1, int arg2)
         {
-            IExecute("drawString", arg0, arg1, arg2);
+            IExecuteWithSignature("drawString", "(Ljava/text/AttributedCharacterIterator;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#fillArc(int,int,int,int,int,int)"/>
@@ -376,7 +376,7 @@ namespace Java.Awt
         /// <param name="arg5"><see cref="int"/></param>
         public void FillArc(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
         {
-            IExecute("fillArc", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("fillArc", "(IIIIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#fillOval(int,int,int,int)"/>
@@ -387,7 +387,7 @@ namespace Java.Awt
         /// <param name="arg3"><see cref="int"/></param>
         public void FillOval(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("fillOval", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("fillOval", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#fillPolygon(int[],int[],int)"/>
@@ -397,7 +397,7 @@ namespace Java.Awt
         /// <param name="arg2"><see cref="int"/></param>
         public void FillPolygon(int[] arg0, int[] arg1, int arg2)
         {
-            IExecute("fillPolygon", arg0, arg1, arg2);
+            IExecuteWithSignature("fillPolygon", "([I[II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#fillRect(int,int,int,int)"/>
@@ -408,7 +408,7 @@ namespace Java.Awt
         /// <param name="arg3"><see cref="int"/></param>
         public void FillRect(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("fillRect", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("fillRect", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#fillRoundRect(int,int,int,int,int,int)"/>
@@ -421,7 +421,7 @@ namespace Java.Awt
         /// <param name="arg5"><see cref="int"/></param>
         public void FillRoundRect(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
         {
-            IExecute("fillRoundRect", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("fillRoundRect", "(IIIIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#setClip(int,int,int,int)"/>
@@ -432,7 +432,7 @@ namespace Java.Awt
         /// <param name="arg3"><see cref="int"/></param>
         public void SetClip(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("setClip", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setClip", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#setPaintMode()"/>
@@ -456,7 +456,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         public void Translate(int arg0, int arg1)
         {
-            IExecute("translate", arg0, arg1);
+            IExecuteWithSignature("translate", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#hitClip(int,int,int,int)"/>
@@ -468,7 +468,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool HitClip(int arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<bool>("hitClip", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("hitClip", "(IIII)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#create(int,int,int,int)"/>
@@ -480,7 +480,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Graphics"/></returns>
         public Java.Awt.Graphics Create(int arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<Java.Awt.Graphics>("create", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Awt.Graphics>("create", "(IIII)Ljava/awt/Graphics;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#getClipBounds(java.awt.Rectangle)"/>
@@ -501,7 +501,7 @@ namespace Java.Awt
         /// <param name="arg4"><see cref="bool"/></param>
         public void Draw3DRect(int arg0, int arg1, int arg2, int arg3, bool arg4)
         {
-            IExecute("draw3DRect", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("draw3DRect", "(IIIIZ)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#drawBytes(byte[],int,int,int,int)"/>
@@ -513,7 +513,7 @@ namespace Java.Awt
         /// <param name="arg4"><see cref="int"/></param>
         public void DrawBytes(byte[] arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            IExecute("drawBytes", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("drawBytes", "([BIIII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#drawChars(char[],int,int,int,int)"/>
@@ -525,7 +525,7 @@ namespace Java.Awt
         /// <param name="arg4"><see cref="int"/></param>
         public void DrawChars(char[] arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            IExecute("drawChars", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("drawChars", "([CIIII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#drawPolygon(java.awt.Polygon)"/>
@@ -544,7 +544,7 @@ namespace Java.Awt
         /// <param name="arg3"><see cref="int"/></param>
         public void DrawRect(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("drawRect", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("drawRect", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#fill3DRect(int,int,int,int,boolean)"/>
@@ -556,7 +556,7 @@ namespace Java.Awt
         /// <param name="arg4"><see cref="bool"/></param>
         public void Fill3DRect(int arg0, int arg1, int arg2, int arg3, bool arg4)
         {
-            IExecute("fill3DRect", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("fill3DRect", "(IIIIZ)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics.html#fillPolygon(java.awt.Polygon)"/>

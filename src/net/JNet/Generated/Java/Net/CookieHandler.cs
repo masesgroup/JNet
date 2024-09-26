@@ -108,7 +108,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> Get(Java.Net.URI arg0, Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> arg1)
         {
-            return IExecute<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("get", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("get", "(Ljava/net/URI;Ljava/util/Map;)Ljava/util/Map;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieHandler.html#put(java.net.URI,java.util.Map)"/>
@@ -118,7 +118,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public void Put(Java.Net.URI arg0, Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> arg1)
         {
-            IExecute("put", arg0, arg1);
+            IExecuteWithSignature("put", "(Ljava/net/URI;Ljava/util/Map;)V", arg0, arg1);
         }
 
         #endregion

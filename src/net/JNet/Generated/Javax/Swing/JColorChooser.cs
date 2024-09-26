@@ -135,7 +135,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static Java.Awt.Color ShowDialog(Java.Awt.Component arg0, Java.Lang.String arg1, Java.Awt.Color arg2, bool arg3)
         {
-            return SExecute<Java.Awt.Color>(LocalBridgeClazz, "showDialog", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Awt.Color>(LocalBridgeClazz, "showDialog", "(Ljava/awt/Component;Ljava/lang/String;Ljava/awt/Color;Z)Ljava/awt/Color;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#showDialog(java.awt.Component,java.lang.String,java.awt.Color)"/>
@@ -147,7 +147,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static Java.Awt.Color ShowDialog(Java.Awt.Component arg0, Java.Lang.String arg1, Java.Awt.Color arg2)
         {
-            return SExecute<Java.Awt.Color>(LocalBridgeClazz, "showDialog", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Awt.Color>(LocalBridgeClazz, "showDialog", "(Ljava/awt/Component;Ljava/lang/String;Ljava/awt/Color;)Ljava/awt/Color;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#createDialog(java.awt.Component,java.lang.String,boolean,javax.swing.JColorChooser,java.awt.event.ActionListener,java.awt.event.ActionListener)"/>
@@ -162,7 +162,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static Javax.Swing.JDialog CreateDialog(Java.Awt.Component arg0, Java.Lang.String arg1, bool arg2, Javax.Swing.JColorChooser arg3, Java.Awt.EventNs.ActionListener arg4, Java.Awt.EventNs.ActionListener arg5)
         {
-            return SExecute<Javax.Swing.JDialog>(LocalBridgeClazz, "createDialog", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<Javax.Swing.JDialog>(LocalBridgeClazz, "createDialog", "(Ljava/awt/Component;Ljava/lang/String;ZLjavax/swing/JColorChooser;Ljava/awt/event/ActionListener;Ljava/awt/event/ActionListener;)Ljavax/swing/JDialog;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
 
         #endregion
@@ -228,7 +228,7 @@ namespace Javax.Swing
         /// <param name="arg2"><see cref="int"/></param>
         public void SetColor(int arg0, int arg1, int arg2)
         {
-            IExecute("setColor", arg0, arg1, arg2);
+            IExecuteWithSignature("setColor", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#setColor(int)"/>

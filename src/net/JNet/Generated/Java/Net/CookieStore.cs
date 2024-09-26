@@ -164,7 +164,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool Remove(Java.Net.URI arg0, Java.Net.HttpCookie arg1)
         {
-            return IExecute<bool>("remove", arg0, arg1);
+            return IExecuteWithSignature<bool>("remove", "(Ljava/net/URI;Ljava/net/HttpCookie;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#removeAll()"/>
@@ -190,7 +190,7 @@ namespace Java.Net
         /// <param name="arg1"><see cref="Java.Net.HttpCookie"/></param>
         public void Add(Java.Net.URI arg0, Java.Net.HttpCookie arg1)
         {
-            IExecute("add", arg0, arg1);
+            IExecuteWithSignature("add", "(Ljava/net/URI;Ljava/net/HttpCookie;)V", arg0, arg1);
         }
 
         #endregion

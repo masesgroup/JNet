@@ -308,7 +308,7 @@ namespace Java.Awt.Geom
             /// <param name="arg3"><see cref="float"/></param>
             public void SetFrame(float arg0, float arg1, float arg2, float arg3)
             {
-                IExecute("setFrame", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("setFrame", "(FFFF)V", arg0, arg1, arg2, arg3);
             }
 
             #endregion

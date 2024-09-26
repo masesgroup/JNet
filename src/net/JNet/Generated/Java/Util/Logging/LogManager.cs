@@ -197,7 +197,7 @@ namespace Java.Util.Logging
         /// <exception cref="Java.Io.IOException"/>
         public void UpdateConfiguration(Java.Io.InputStream arg0, Java.Util.Function.Function<Java.Lang.String, Java.Util.Function.BiFunction<Java.Lang.String, Java.Lang.String, Java.Lang.String>> arg1)
         {
-            IExecute("updateConfiguration", arg0, arg1);
+            IExecuteWithSignature("updateConfiguration", "(Ljava/io/InputStream;Ljava/util/function/Function;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#updateConfiguration(java.util.function.Function)"/>

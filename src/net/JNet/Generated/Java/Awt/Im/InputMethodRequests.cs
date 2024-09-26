@@ -173,7 +173,7 @@ namespace Java.Awt.Im
         /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
         public Java.Awt.FontNs.TextHitInfo GetLocationOffset(int arg0, int arg1)
         {
-            return IExecute<Java.Awt.FontNs.TextHitInfo>("getLocationOffset", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.FontNs.TextHitInfo>("getLocationOffset", "(II)Ljava/awt/font/TextHitInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodRequests.html#getTextLocation(java.awt.font.TextHitInfo)"/>
@@ -202,7 +202,7 @@ namespace Java.Awt.Im
         /// <returns><see cref="Java.Text.AttributedCharacterIterator"/></returns>
         public Java.Text.AttributedCharacterIterator GetCommittedText(int arg0, int arg1, Java.Text.AttributedCharacterIterator.Attribute[] arg2)
         {
-            return IExecute<Java.Text.AttributedCharacterIterator>("getCommittedText", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Text.AttributedCharacterIterator>("getCommittedText", "(II[Ljava/text/AttributedCharacterIterator$Attribute;)Ljava/text/AttributedCharacterIterator;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodRequests.html#getSelectedText(java.text.AttributedCharacterIterator.Attribute[])"/>

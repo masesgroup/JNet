@@ -117,7 +117,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Java.Io.IOException"/>
         public Java.Net.Socket CreateSocket(Java.Net.Socket arg0, Java.Lang.String arg1, int arg2, bool arg3)
         {
-            return IExecute<Java.Net.Socket>("createSocket", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Net.Socket>("createSocket", "(Ljava/net/Socket;Ljava/lang/String;IZ)Ljava/net/Socket;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSocketFactory.html#createSocket(java.net.Socket,java.io.InputStream,boolean)"/>
@@ -129,7 +129,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Java.Io.IOException"/>
         public Java.Net.Socket CreateSocket(Java.Net.Socket arg0, Java.Io.InputStream arg1, bool arg2)
         {
-            return IExecute<Java.Net.Socket>("createSocket", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Net.Socket>("createSocket", "(Ljava/net/Socket;Ljava/io/InputStream;Z)Ljava/net/Socket;", arg0, arg1, arg2);
         }
 
         #endregion

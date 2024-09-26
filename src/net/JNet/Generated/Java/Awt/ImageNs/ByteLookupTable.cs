@@ -123,7 +123,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="byte"/></returns>
         public byte[] LookupPixel(byte[] arg0, byte[] arg1)
         {
-            return IExecuteArray<byte>("lookupPixel", arg0, arg1);
+            return IExecuteWithSignatureArray<byte>("lookupPixel", "([B[B)[B", arg0, arg1);
         }
 
         #endregion

@@ -238,7 +238,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.AlphaComposite"/></returns>
         public static Java.Awt.AlphaComposite GetInstance(int arg0, float arg1)
         {
-            return SExecute<Java.Awt.AlphaComposite>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Awt.AlphaComposite>(LocalBridgeClazz, "getInstance", "(IF)Ljava/awt/AlphaComposite;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#getInstance(int)"/>
@@ -294,7 +294,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.CompositeContext"/></returns>
         public Java.Awt.CompositeContext CreateContext(Java.Awt.ImageNs.ColorModel arg0, Java.Awt.ImageNs.ColorModel arg1, Java.Awt.RenderingHints arg2)
         {
-            return IExecute<Java.Awt.CompositeContext>("createContext", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Awt.CompositeContext>("createContext", "(Ljava/awt/image/ColorModel;Ljava/awt/image/ColorModel;Ljava/awt/RenderingHints;)Ljava/awt/CompositeContext;", arg0, arg1, arg2);
         }
 
         #endregion

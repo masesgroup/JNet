@@ -328,7 +328,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="Java.Util.Regex.Matcher"/></returns>
         public Java.Util.Regex.Matcher AppendReplacement(Java.Lang.StringBuffer arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Util.Regex.Matcher>("appendReplacement", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Regex.Matcher>("appendReplacement", "(Ljava/lang/StringBuffer;Ljava/lang/String;)Ljava/util/regex/Matcher;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#appendReplacement(java.lang.StringBuilder,java.lang.String)"/>
@@ -338,7 +338,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="Java.Util.Regex.Matcher"/></returns>
         public Java.Util.Regex.Matcher AppendReplacement(Java.Lang.StringBuilder arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Util.Regex.Matcher>("appendReplacement", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Regex.Matcher>("appendReplacement", "(Ljava/lang/StringBuilder;Ljava/lang/String;)Ljava/util/regex/Matcher;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#region(int,int)"/>
@@ -348,7 +348,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="Java.Util.Regex.Matcher"/></returns>
         public Java.Util.Regex.Matcher Region(int arg0, int arg1)
         {
-            return IExecute<Java.Util.Regex.Matcher>("region", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Regex.Matcher>("region", "(II)Ljava/util/regex/Matcher;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#reset()"/>

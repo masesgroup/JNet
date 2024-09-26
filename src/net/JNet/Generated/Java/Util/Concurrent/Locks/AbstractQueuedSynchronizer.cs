@@ -250,7 +250,7 @@ namespace Java.Util.Concurrent.Locks
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool TryAcquireNanos(int arg0, long arg1)
         {
-            return IExecute<bool>("tryAcquireNanos", arg0, arg1);
+            return IExecuteWithSignature<bool>("tryAcquireNanos", "(IJ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#tryAcquireSharedNanos(int,long)"/>
@@ -261,7 +261,7 @@ namespace Java.Util.Concurrent.Locks
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool TryAcquireSharedNanos(int arg0, long arg1)
         {
-            return IExecute<bool>("tryAcquireSharedNanos", arg0, arg1);
+            return IExecuteWithSignature<bool>("tryAcquireSharedNanos", "(IJ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#getWaitQueueLength(java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject)"/>
@@ -364,7 +364,7 @@ namespace Java.Util.Concurrent.Locks
             /// <exception cref="Java.Lang.InterruptedException"/>
             public bool Await(long arg0, Java.Util.Concurrent.TimeUnit arg1)
             {
-                return IExecute<bool>("await", arg0, arg1);
+                return IExecuteWithSignature<bool>("await", "(JLjava/util/concurrent/TimeUnit;)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.ConditionObject.html#awaitUntil(java.util.Date)"/>

@@ -185,7 +185,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension GetMinimumSize(int arg0, int arg1)
         {
-            return IExecute<Java.Awt.Dimension>("getMinimumSize", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Dimension>("getMinimumSize", "(II)Ljava/awt/Dimension;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#getPreferredSize(int,int)"/>
@@ -195,7 +195,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension GetPreferredSize(int arg0, int arg1)
         {
-            return IExecute<Java.Awt.Dimension>("getPreferredSize", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Dimension>("getPreferredSize", "(II)Ljava/awt/Dimension;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#append(java.lang.String)"/>
@@ -212,7 +212,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         public void Insert(Java.Lang.String arg0, int arg1)
         {
-            IExecute("insert", arg0, arg1);
+            IExecuteWithSignature("insert", "(Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#replaceRange(java.lang.String,int,int)"/>
@@ -222,7 +222,7 @@ namespace Java.Awt
         /// <param name="arg2"><see cref="int"/></param>
         public void ReplaceRange(Java.Lang.String arg0, int arg1, int arg2)
         {
-            IExecute("replaceRange", arg0, arg1, arg2);
+            IExecuteWithSignature("replaceRange", "(Ljava/lang/String;II)V", arg0, arg1, arg2);
         }
 
         #endregion

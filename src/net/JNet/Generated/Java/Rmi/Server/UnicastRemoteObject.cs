@@ -95,7 +95,7 @@ namespace Java.Rmi.Server
         /// <exception cref="Java.Rmi.NoSuchObjectException"/>
         public static bool UnexportObject(Java.Rmi.Remote arg0, bool arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "unexportObject", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "unexportObject", "(Ljava/rmi/Remote;Z)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html#exportObject(java.rmi.Remote,int,java.io.ObjectInputFilter)"/>
@@ -107,7 +107,7 @@ namespace Java.Rmi.Server
         /// <exception cref="Java.Rmi.RemoteException"/>
         public static Java.Rmi.Remote ExportObject(Java.Rmi.Remote arg0, int arg1, Java.Io.ObjectInputFilter arg2)
         {
-            return SExecute<Java.Rmi.Remote>(LocalBridgeClazz, "exportObject", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Rmi.Remote>(LocalBridgeClazz, "exportObject", "(Ljava/rmi/Remote;ILjava/io/ObjectInputFilter;)Ljava/rmi/Remote;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html#exportObject(java.rmi.Remote,int,java.rmi.server.RMIClientSocketFactory,java.rmi.server.RMIServerSocketFactory,java.io.ObjectInputFilter)"/>
@@ -121,7 +121,7 @@ namespace Java.Rmi.Server
         /// <exception cref="Java.Rmi.RemoteException"/>
         public static Java.Rmi.Remote ExportObject(Java.Rmi.Remote arg0, int arg1, Java.Rmi.Server.RMIClientSocketFactory arg2, Java.Rmi.Server.RMIServerSocketFactory arg3, Java.Io.ObjectInputFilter arg4)
         {
-            return SExecute<Java.Rmi.Remote>(LocalBridgeClazz, "exportObject", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Java.Rmi.Remote>(LocalBridgeClazz, "exportObject", "(Ljava/rmi/Remote;ILjava/rmi/server/RMIClientSocketFactory;Ljava/rmi/server/RMIServerSocketFactory;Ljava/io/ObjectInputFilter;)Ljava/rmi/Remote;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html#exportObject(java.rmi.Remote,int,java.rmi.server.RMIClientSocketFactory,java.rmi.server.RMIServerSocketFactory)"/>
@@ -134,7 +134,7 @@ namespace Java.Rmi.Server
         /// <exception cref="Java.Rmi.RemoteException"/>
         public static Java.Rmi.Remote ExportObject(Java.Rmi.Remote arg0, int arg1, Java.Rmi.Server.RMIClientSocketFactory arg2, Java.Rmi.Server.RMIServerSocketFactory arg3)
         {
-            return SExecute<Java.Rmi.Remote>(LocalBridgeClazz, "exportObject", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Rmi.Remote>(LocalBridgeClazz, "exportObject", "(Ljava/rmi/Remote;ILjava/rmi/server/RMIClientSocketFactory;Ljava/rmi/server/RMIServerSocketFactory;)Ljava/rmi/Remote;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html#exportObject(java.rmi.Remote,int)"/>
@@ -145,7 +145,7 @@ namespace Java.Rmi.Server
         /// <exception cref="Java.Rmi.RemoteException"/>
         public static Java.Rmi.Remote ExportObject(Java.Rmi.Remote arg0, int arg1)
         {
-            return SExecute<Java.Rmi.Remote>(LocalBridgeClazz, "exportObject", arg0, arg1);
+            return SExecuteWithSignature<Java.Rmi.Remote>(LocalBridgeClazz, "exportObject", "(Ljava/rmi/Remote;I)Ljava/rmi/Remote;", arg0, arg1);
         }
 
         #endregion

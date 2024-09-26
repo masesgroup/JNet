@@ -210,7 +210,7 @@ namespace Java.Awt.Geom
         /// <param name="arg2"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
         public static void Intersect(Java.Awt.Geom.Rectangle2D arg0, Java.Awt.Geom.Rectangle2D arg1, Java.Awt.Geom.Rectangle2D arg2)
         {
-            SExecute(LocalBridgeClazz, "intersect", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "intersect", "(Ljava/awt/geom/Rectangle2D;Ljava/awt/geom/Rectangle2D;Ljava/awt/geom/Rectangle2D;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Rectangle2D.html#union(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D)"/>
@@ -220,7 +220,7 @@ namespace Java.Awt.Geom
         /// <param name="arg2"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
         public static void Union(Java.Awt.Geom.Rectangle2D arg0, Java.Awt.Geom.Rectangle2D arg1, Java.Awt.Geom.Rectangle2D arg2)
         {
-            SExecute(LocalBridgeClazz, "union", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "union", "(Ljava/awt/geom/Rectangle2D;Ljava/awt/geom/Rectangle2D;Ljava/awt/geom/Rectangle2D;)V", arg0, arg1, arg2);
         }
 
         #endregion
@@ -234,7 +234,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="int"/></returns>
         public int Outcode(double arg0, double arg1)
         {
-            return IExecute<int>("outcode", arg0, arg1);
+            return IExecuteWithSignature<int>("outcode", "(DD)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Rectangle2D.html#createIntersection(java.awt.geom.Rectangle2D)"/>
@@ -263,7 +263,7 @@ namespace Java.Awt.Geom
         /// <param name="arg3"><see cref="double"/></param>
         public void SetRect(double arg0, double arg1, double arg2, double arg3)
         {
-            IExecute("setRect", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setRect", "(DDDD)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Rectangle2D.html#intersectsLine(double,double,double,double)"/>
@@ -275,7 +275,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool IntersectsLine(double arg0, double arg1, double arg2, double arg3)
         {
-            return IExecute<bool>("intersectsLine", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("intersectsLine", "(DDDD)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Rectangle2D.html#intersectsLine(java.awt.geom.Line2D)"/>
@@ -302,7 +302,7 @@ namespace Java.Awt.Geom
         /// <param name="arg1"><see cref="double"/></param>
         public void Add(double arg0, double arg1)
         {
-            IExecute("add", arg0, arg1);
+            IExecuteWithSignature("add", "(DD)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Rectangle2D.html#add(java.awt.geom.Point2D)"/>
@@ -454,7 +454,7 @@ namespace Java.Awt.Geom
             /// <param name="arg3"><see cref="float"/></param>
             public void SetRect(float arg0, float arg1, float arg2, float arg3)
             {
-                IExecute("setRect", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("setRect", "(FFFF)V", arg0, arg1, arg2, arg3);
             }
 
             #endregion

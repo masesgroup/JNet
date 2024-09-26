@@ -144,7 +144,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.ImageNs.Raster"/></returns>
         public Java.Awt.ImageNs.Raster GetRaster(int arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<Java.Awt.ImageNs.Raster>("getRaster", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Awt.ImageNs.Raster>("getRaster", "(IIII)Ljava/awt/image/Raster;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PaintContext.html#dispose()"/>

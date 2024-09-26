@@ -292,7 +292,7 @@ namespace Java.Util.Function
         /// <returns><see cref="object"/></returns>
         public override object Apply(object arg0, object arg1)
         {
-            return IExecute("apply", arg0, arg1);
+            return IExecuteWithSignature("apply", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
@@ -484,7 +484,7 @@ namespace Java.Util.Function
         /// <returns><typeparamref name="R"/></returns>
         public override R Apply(T arg0, U arg1)
         {
-            return IExecute<R>("apply", arg0, arg1);
+            return IExecuteWithSignature<R>("apply", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>

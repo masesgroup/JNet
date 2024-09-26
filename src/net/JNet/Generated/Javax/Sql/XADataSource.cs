@@ -166,7 +166,7 @@ namespace Javax.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Javax.Sql.XAConnection GetXAConnection(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Javax.Sql.XAConnection>("getXAConnection", arg0, arg1);
+            return IExecuteWithSignature<Javax.Sql.XAConnection>("getXAConnection", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/sql/XAConnection;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XADataSource.html#createXAConnectionBuilder()"/>

@@ -112,7 +112,7 @@ namespace Org.Xml.Sax.Ext
         /// <exception cref="Java.Io.IOException"/>
         public Org.Xml.Sax.InputSource GetExternalSubset(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Org.Xml.Sax.InputSource>("getExternalSubset", arg0, arg1);
+            return IExecuteWithSignature<Org.Xml.Sax.InputSource>("getExternalSubset", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#resolveEntity(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -126,7 +126,7 @@ namespace Org.Xml.Sax.Ext
         /// <exception cref="Java.Io.IOException"/>
         public Org.Xml.Sax.InputSource ResolveEntity(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
-            return IExecute<Org.Xml.Sax.InputSource>("resolveEntity", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Org.Xml.Sax.InputSource>("resolveEntity", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#attributeDecl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -139,7 +139,7 @@ namespace Org.Xml.Sax.Ext
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void AttributeDecl(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         {
-            IExecute("attributeDecl", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("attributeDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#comment(char[],int,int)"/>
@@ -150,7 +150,7 @@ namespace Org.Xml.Sax.Ext
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void Comment(char[] arg0, int arg1, int arg2)
         {
-            IExecute("comment", arg0, arg1, arg2);
+            IExecuteWithSignature("comment", "([CII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#elementDecl(java.lang.String,java.lang.String)"/>
@@ -160,7 +160,7 @@ namespace Org.Xml.Sax.Ext
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void ElementDecl(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("elementDecl", arg0, arg1);
+            IExecuteWithSignature("elementDecl", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#endCDATA()"/>
@@ -196,7 +196,7 @@ namespace Org.Xml.Sax.Ext
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void ExternalEntityDecl(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            IExecute("externalEntityDecl", arg0, arg1, arg2);
+            IExecuteWithSignature("externalEntityDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#internalEntityDecl(java.lang.String,java.lang.String)"/>
@@ -206,7 +206,7 @@ namespace Org.Xml.Sax.Ext
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void InternalEntityDecl(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("internalEntityDecl", arg0, arg1);
+            IExecuteWithSignature("internalEntityDecl", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#startCDATA()"/>
@@ -225,7 +225,7 @@ namespace Org.Xml.Sax.Ext
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void StartDTD(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            IExecute("startDTD", arg0, arg1, arg2);
+            IExecuteWithSignature("startDTD", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#startEntity(java.lang.String)"/>

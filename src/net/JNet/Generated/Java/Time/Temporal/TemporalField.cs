@@ -267,7 +267,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.TemporalAccessor"/></returns>
         public Java.Time.Temporal.TemporalAccessor Resolve(Java.Util.Map<Java.Time.Temporal.TemporalField, Java.Lang.Long> arg0, Java.Time.Temporal.TemporalAccessor arg1, Java.Time.Format.ResolverStyle arg2)
         {
-            return IExecute<Java.Time.Temporal.TemporalAccessor>("resolve", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Time.Temporal.TemporalAccessor>("resolve", "(Ljava/util/Map;Ljava/time/temporal/TemporalAccessor;Ljava/time/format/ResolverStyle;)Ljava/time/temporal/TemporalAccessor;", arg0, arg1, arg2);
         }
 
         #endregion

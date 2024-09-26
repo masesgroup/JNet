@@ -225,7 +225,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="int"/></returns>
         public int ViewToModel(float arg0, float arg1, Java.Awt.Shape arg2, Javax.Swing.Text.Position.Bias[] arg3)
         {
-            return IExecute<int>("viewToModel", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("viewToModel", "(FFLjava/awt/Shape;[Ljavax/swing/text/Position$Bias;)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#modelToView(int,java.awt.Shape,javax.swing.text.Position.Bias)"/>
@@ -237,7 +237,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public Java.Awt.Shape ModelToView(int arg0, Java.Awt.Shape arg1, Javax.Swing.Text.Position.Bias arg2)
         {
-            return IExecute<Java.Awt.Shape>("modelToView", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Awt.Shape>("modelToView", "(ILjava/awt/Shape;Ljavax/swing/text/Position$Bias;)Ljava/awt/Shape;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#paint(java.awt.Graphics,java.awt.Shape)"/>
@@ -246,7 +246,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="Java.Awt.Shape"/></param>
         public void Paint(Java.Awt.Graphics arg0, Java.Awt.Shape arg1)
         {
-            IExecute("paint", arg0, arg1);
+            IExecuteWithSignature("paint", "(Ljava/awt/Graphics;Ljava/awt/Shape;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#isVisible()"/>
@@ -292,7 +292,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="int"/></returns>
         public int GetBreakWeight(int arg0, float arg1, float arg2)
         {
-            return IExecute<int>("getBreakWeight", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getBreakWeight", "(IFF)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getNextVisualPositionFrom(int,javax.swing.text.Position.Bias,java.awt.Shape,int,javax.swing.text.Position.Bias[])"/>
@@ -306,7 +306,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public int GetNextVisualPositionFrom(int arg0, Javax.Swing.Text.Position.Bias arg1, Java.Awt.Shape arg2, int arg3, Javax.Swing.Text.Position.Bias[] arg4)
         {
-            return IExecute<int>("getNextVisualPositionFrom", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<int>("getNextVisualPositionFrom", "(ILjavax/swing/text/Position$Bias;Ljava/awt/Shape;I[Ljavax/swing/text/Position$Bias;)I", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getResizeWeight(int)"/>
@@ -326,7 +326,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="int"/></returns>
         public int GetViewIndex(float arg0, float arg1, Java.Awt.Shape arg2)
         {
-            return IExecute<int>("getViewIndex", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getViewIndex", "(FFLjava/awt/Shape;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getViewIndex(int,javax.swing.text.Position.Bias)"/>
@@ -336,7 +336,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="int"/></returns>
         public int GetViewIndex(int arg0, Javax.Swing.Text.Position.Bias arg1)
         {
-            return IExecute<int>("getViewIndex", arg0, arg1);
+            return IExecuteWithSignature<int>("getViewIndex", "(ILjavax/swing/text/Position$Bias;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getChildAllocation(int,java.awt.Shape)"/>
@@ -346,7 +346,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape GetChildAllocation(int arg0, Java.Awt.Shape arg1)
         {
-            return IExecute<Java.Awt.Shape>("getChildAllocation", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Shape>("getChildAllocation", "(ILjava/awt/Shape;)Ljava/awt/Shape;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#modelToView(int,javax.swing.text.Position.Bias,int,javax.swing.text.Position.Bias,java.awt.Shape)"/>
@@ -360,7 +360,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public Java.Awt.Shape ModelToView(int arg0, Javax.Swing.Text.Position.Bias arg1, int arg2, Javax.Swing.Text.Position.Bias arg3, Java.Awt.Shape arg4)
         {
-            return IExecute<Java.Awt.Shape>("modelToView", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Java.Awt.Shape>("modelToView", "(ILjavax/swing/text/Position$Bias;ILjavax/swing/text/Position$Bias;Ljava/awt/Shape;)Ljava/awt/Shape;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getToolTipText(float,float,java.awt.Shape)"/>
@@ -371,7 +371,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetToolTipText(float arg0, float arg1, Java.Awt.Shape arg2)
         {
-            return IExecute<Java.Lang.String>("getToolTipText", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.String>("getToolTipText", "(FFLjava/awt/Shape;)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#breakView(int,int,float,float)"/>
@@ -383,7 +383,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.View"/></returns>
         public Javax.Swing.Text.View BreakView(int arg0, int arg1, float arg2, float arg3)
         {
-            return IExecute<Javax.Swing.Text.View>("breakView", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Javax.Swing.Text.View>("breakView", "(IIFF)Ljavax/swing/text/View;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#createFragment(int,int)"/>
@@ -393,7 +393,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.View"/></returns>
         public Javax.Swing.Text.View CreateFragment(int arg0, int arg1)
         {
-            return IExecute<Javax.Swing.Text.View>("createFragment", arg0, arg1);
+            return IExecuteWithSignature<Javax.Swing.Text.View>("createFragment", "(II)Ljavax/swing/text/View;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getView(int)"/>
@@ -420,7 +420,7 @@ namespace Javax.Swing.Text
         /// <param name="arg2"><see cref="Javax.Swing.Text.ViewFactory"/></param>
         public void ChangedUpdate(Javax.Swing.Event.DocumentEvent arg0, Java.Awt.Shape arg1, Javax.Swing.Text.ViewFactory arg2)
         {
-            IExecute("changedUpdate", arg0, arg1, arg2);
+            IExecuteWithSignature("changedUpdate", "(Ljavax/swing/event/DocumentEvent;Ljava/awt/Shape;Ljavax/swing/text/ViewFactory;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#insert(int,javax.swing.text.View)"/>
@@ -429,7 +429,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="Javax.Swing.Text.View"/></param>
         public void Insert(int arg0, Javax.Swing.Text.View arg1)
         {
-            IExecute("insert", arg0, arg1);
+            IExecuteWithSignature("insert", "(ILjavax/swing/text/View;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#insertUpdate(javax.swing.event.DocumentEvent,java.awt.Shape,javax.swing.text.ViewFactory)"/>
@@ -439,7 +439,7 @@ namespace Javax.Swing.Text
         /// <param name="arg2"><see cref="Javax.Swing.Text.ViewFactory"/></param>
         public void InsertUpdate(Javax.Swing.Event.DocumentEvent arg0, Java.Awt.Shape arg1, Javax.Swing.Text.ViewFactory arg2)
         {
-            IExecute("insertUpdate", arg0, arg1, arg2);
+            IExecuteWithSignature("insertUpdate", "(Ljavax/swing/event/DocumentEvent;Ljava/awt/Shape;Ljavax/swing/text/ViewFactory;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#preferenceChanged(javax.swing.text.View,boolean,boolean)"/>
@@ -449,7 +449,7 @@ namespace Javax.Swing.Text
         /// <param name="arg2"><see cref="bool"/></param>
         public void PreferenceChanged(Javax.Swing.Text.View arg0, bool arg1, bool arg2)
         {
-            IExecute("preferenceChanged", arg0, arg1, arg2);
+            IExecuteWithSignature("preferenceChanged", "(Ljavax/swing/text/View;ZZ)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#remove(int)"/>
@@ -474,7 +474,7 @@ namespace Javax.Swing.Text
         /// <param name="arg2"><see cref="Javax.Swing.Text.ViewFactory"/></param>
         public void RemoveUpdate(Javax.Swing.Event.DocumentEvent arg0, Java.Awt.Shape arg1, Javax.Swing.Text.ViewFactory arg2)
         {
-            IExecute("removeUpdate", arg0, arg1, arg2);
+            IExecuteWithSignature("removeUpdate", "(Ljavax/swing/event/DocumentEvent;Ljava/awt/Shape;Ljavax/swing/text/ViewFactory;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#replace(int,int,javax.swing.text.View[])"/>
@@ -484,7 +484,7 @@ namespace Javax.Swing.Text
         /// <param name="arg2"><see cref="Javax.Swing.Text.View"/></param>
         public void Replace(int arg0, int arg1, Javax.Swing.Text.View[] arg2)
         {
-            IExecute("replace", arg0, arg1, arg2);
+            IExecuteWithSignature("replace", "(II[Ljavax/swing/text/View;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#setSize(float,float)"/>
@@ -493,7 +493,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="float"/></param>
         public void SetSize(float arg0, float arg1)
         {
-            IExecute("setSize", arg0, arg1);
+            IExecuteWithSignature("setSize", "(FF)V", arg0, arg1);
         }
 
         #endregion

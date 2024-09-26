@@ -123,7 +123,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.Cert.CertPathValidatorException"/>
         public void Check(Java.Security.Cert.Certificate arg0, Java.Util.Collection<Java.Lang.String> arg1)
         {
-            IExecute("check", arg0, arg1);
+            IExecuteWithSignature("check", "(Ljava/security/cert/Certificate;Ljava/util/Collection;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathChecker.html#init(boolean)"/>

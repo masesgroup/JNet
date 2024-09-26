@@ -95,7 +95,7 @@ namespace Java.Lang.Invoke
         /// <returns><typeparamref name="T"/></returns>
         public static T AsInterfaceInstance<T>(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandle arg1)
         {
-            return SExecute<T>(LocalBridgeClazz, "asInterfaceInstance", arg0, arg1);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "asInterfaceInstance", "(Ljava/lang/Class;Ljava/lang/invoke/MethodHandle;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleProxies.html#isWrapperInstance(java.lang.Object)"/>

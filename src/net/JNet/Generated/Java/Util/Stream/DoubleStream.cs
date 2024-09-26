@@ -313,7 +313,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public static Java.Util.Stream.DoubleStream Concat(Java.Util.Stream.DoubleStream arg0, Java.Util.Stream.DoubleStream arg1)
         {
-            return SExecute<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "concat", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "concat", "(Ljava/util/stream/DoubleStream;Ljava/util/stream/DoubleStream;)Ljava/util/stream/DoubleStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#empty()"/>
@@ -341,7 +341,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public static Java.Util.Stream.DoubleStream Iterate(double arg0, Java.Util.Function.DoublePredicate arg1, Java.Util.Function.DoubleUnaryOperator arg2)
         {
-            return SExecute<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "iterate", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "iterate", "(DLjava/util/function/DoublePredicate;Ljava/util/function/DoubleUnaryOperator;)Ljava/util/stream/DoubleStream;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#iterate(double,java.util.function.DoubleUnaryOperator)"/>
@@ -351,7 +351,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public static Java.Util.Stream.DoubleStream Iterate(double arg0, Java.Util.Function.DoubleUnaryOperator arg1)
         {
-            return SExecute<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "iterate", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "iterate", "(DLjava/util/function/DoubleUnaryOperator;)Ljava/util/stream/DoubleStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#of(double[])"/>
@@ -385,7 +385,7 @@ namespace Java.Util.Stream
         /// <returns><typeparamref name="R"/></returns>
         public R Collect<R>(Java.Util.Function.Supplier<R> arg0, Java.Util.Function.ObjDoubleConsumer<R> arg1, Java.Util.Function.BiConsumer<R, R> arg2)
         {
-            return IExecute<R>("collect", arg0, arg1, arg2);
+            return IExecuteWithSignature<R>("collect", "(Ljava/util/function/Supplier;Ljava/util/function/ObjDoubleConsumer;Ljava/util/function/BiConsumer;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#mapToObj(java.util.function.DoubleFunction)"/>
@@ -433,7 +433,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="double"/></returns>
         public double Reduce(double arg0, Java.Util.Function.DoubleBinaryOperator arg1)
         {
-            return IExecute<double>("reduce", arg0, arg1);
+            return IExecuteWithSignature<double>("reduce", "(DLjava/util/function/DoubleBinaryOperator;)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#sum()"/>

@@ -96,7 +96,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public static Java.Time.Temporal.ValueRange Of(long arg0, long arg1, long arg2, long arg3)
         {
-            return SExecute<Java.Time.Temporal.ValueRange>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Time.Temporal.ValueRange>(LocalBridgeClazz, "of", "(JJJJ)Ljava/time/temporal/ValueRange;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#of(long,long,long)"/>
@@ -107,7 +107,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public static Java.Time.Temporal.ValueRange Of(long arg0, long arg1, long arg2)
         {
-            return SExecute<Java.Time.Temporal.ValueRange>(LocalBridgeClazz, "of", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Time.Temporal.ValueRange>(LocalBridgeClazz, "of", "(JJJ)Ljava/time/temporal/ValueRange;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#of(long,long)"/>
@@ -117,7 +117,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public static Java.Time.Temporal.ValueRange Of(long arg0, long arg1)
         {
-            return SExecute<Java.Time.Temporal.ValueRange>(LocalBridgeClazz, "of", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.Temporal.ValueRange>(LocalBridgeClazz, "of", "(JJ)Ljava/time/temporal/ValueRange;", arg0, arg1);
         }
 
         #endregion
@@ -193,7 +193,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="int"/></returns>
         public int CheckValidIntValue(long arg0, Java.Time.Temporal.TemporalField arg1)
         {
-            return IExecute<int>("checkValidIntValue", arg0, arg1);
+            return IExecuteWithSignature<int>("checkValidIntValue", "(JLjava/time/temporal/TemporalField;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#checkValidValue(long,java.time.temporal.TemporalField)"/>
@@ -203,7 +203,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="long"/></returns>
         public long CheckValidValue(long arg0, Java.Time.Temporal.TemporalField arg1)
         {
-            return IExecute<long>("checkValidValue", arg0, arg1);
+            return IExecuteWithSignature<long>("checkValidValue", "(JLjava/time/temporal/TemporalField;)J", arg0, arg1);
         }
 
         #endregion

@@ -147,7 +147,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
         public object Exchange(object arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
         {
-            return IExecute("exchange", arg0, arg1, arg2);
+            return IExecuteWithSignature("exchange", "(Ljava/lang/Object;JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Exchanger.html#exchange(java.lang.Object)"/>
@@ -205,7 +205,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
         public V Exchange(V arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
         {
-            return IExecute<V>("exchange", arg0, arg1, arg2);
+            return IExecuteWithSignature<V>("exchange", "(Ljava/lang/Object;JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Exchanger.html#exchange(java.lang.Object)"/>

@@ -113,7 +113,7 @@ namespace Javax.Management.Remote
         /// <exception cref="Java.Io.IOException"/>
         public static Javax.Management.Remote.JMXConnector Connect(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<Java.Lang.String, object> arg1)
         {
-            return SExecute<Javax.Management.Remote.JMXConnector>(LocalBridgeClazz, "connect", arg0, arg1);
+            return SExecuteWithSignature<Javax.Management.Remote.JMXConnector>(LocalBridgeClazz, "connect", "(Ljavax/management/remote/JMXServiceURL;Ljava/util/Map;)Ljavax/management/remote/JMXConnector;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorFactory.html#connect(javax.management.remote.JMXServiceURL)"/>
@@ -134,7 +134,7 @@ namespace Javax.Management.Remote
         /// <exception cref="Java.Io.IOException"/>
         public static Javax.Management.Remote.JMXConnector NewJMXConnector(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<Java.Lang.String, object> arg1)
         {
-            return SExecute<Javax.Management.Remote.JMXConnector>(LocalBridgeClazz, "newJMXConnector", arg0, arg1);
+            return SExecuteWithSignature<Javax.Management.Remote.JMXConnector>(LocalBridgeClazz, "newJMXConnector", "(Ljavax/management/remote/JMXServiceURL;Ljava/util/Map;)Ljavax/management/remote/JMXConnector;", arg0, arg1);
         }
 
         #endregion

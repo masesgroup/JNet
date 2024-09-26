@@ -95,7 +95,7 @@ namespace Javax.Swing.Plaf.Multi
         /// <returns><see cref="Javax.Swing.Plaf.ComponentUI"/></returns>
         public static Javax.Swing.Plaf.ComponentUI CreateUIs(Javax.Swing.Plaf.ComponentUI arg0, Java.Util.Vector<Javax.Swing.Plaf.ComponentUI> arg1, Javax.Swing.JComponent arg2)
         {
-            return SExecute<Javax.Swing.Plaf.ComponentUI>(LocalBridgeClazz, "createUIs", arg0, arg1, arg2);
+            return SExecuteWithSignature<Javax.Swing.Plaf.ComponentUI>(LocalBridgeClazz, "createUIs", "(Ljavax/swing/plaf/ComponentUI;Ljava/util/Vector;Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;", arg0, arg1, arg2);
         }
 
         #endregion

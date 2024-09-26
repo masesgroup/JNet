@@ -153,7 +153,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Nio.Channels.ClosedChannelException"/>
         public Java.Nio.Channels.SelectionKey Register(Java.Nio.Channels.Selector arg0, int arg1, object arg2)
         {
-            return IExecute<Java.Nio.Channels.SelectionKey>("register", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Nio.Channels.SelectionKey>("register", "(Ljava/nio/channels/Selector;ILjava/lang/Object;)Ljava/nio/channels/SelectionKey;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#provider()"/>
@@ -172,7 +172,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Nio.Channels.ClosedChannelException"/>
         public Java.Nio.Channels.SelectionKey Register(Java.Nio.Channels.Selector arg0, int arg1)
         {
-            return IExecute<Java.Nio.Channels.SelectionKey>("register", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.Channels.SelectionKey>("register", "(Ljava/nio/channels/Selector;I)Ljava/nio/channels/SelectionKey;", arg0, arg1);
         }
 
         #endregion

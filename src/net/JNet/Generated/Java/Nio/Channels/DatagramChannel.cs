@@ -168,7 +168,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public int Send(Java.Nio.ByteBuffer arg0, Java.Net.SocketAddress arg1)
         {
-            return IExecute<int>("send", arg0, arg1);
+            return IExecuteWithSignature<int>("send", "(Ljava/nio/ByteBuffer;Ljava/net/SocketAddress;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/DatagramChannel.html#write(java.nio.ByteBuffer)"/>
@@ -227,7 +227,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public long Read(Java.Nio.ByteBuffer[] arg0, int arg1, int arg2)
         {
-            return IExecute<long>("read", arg0, arg1, arg2);
+            return IExecuteWithSignature<long>("read", "([Ljava/nio/ByteBuffer;II)J", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/DatagramChannel.html#write(java.nio.ByteBuffer[],int,int)"/>
@@ -239,7 +239,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public long Write(Java.Nio.ByteBuffer[] arg0, int arg1, int arg2)
         {
-            return IExecute<long>("write", arg0, arg1, arg2);
+            return IExecuteWithSignature<long>("write", "([Ljava/nio/ByteBuffer;II)J", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/DatagramChannel.html#read(java.nio.ByteBuffer[])"/>
@@ -280,7 +280,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.NetworkChannel SetOption(Java.Net.SocketOption arg0, object arg1)
         {
-            return IExecute<Java.Nio.Channels.NetworkChannel>("setOption", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.Channels.NetworkChannel>("setOption", "(Ljava/net/SocketOption;Ljava/lang/Object;)Ljava/nio/channels/NetworkChannel;", arg0, arg1);
         }
 
         #endregion

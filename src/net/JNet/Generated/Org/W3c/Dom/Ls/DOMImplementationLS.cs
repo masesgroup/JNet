@@ -170,7 +170,7 @@ namespace Org.W3c.Dom.Ls
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Ls.LSParser CreateLSParser(short arg0, Java.Lang.String arg1)
         {
-            return IExecute<Org.W3c.Dom.Ls.LSParser>("createLSParser", arg0, arg1);
+            return IExecuteWithSignature<Org.W3c.Dom.Ls.LSParser>("createLSParser", "(SLjava/lang/String;)Lorg/w3c/dom/ls/LSParser;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/DOMImplementationLS.html#createLSSerializer()"/>

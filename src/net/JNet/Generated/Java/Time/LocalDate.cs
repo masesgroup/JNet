@@ -155,7 +155,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalDate"/></returns>
         public static Java.Time.LocalDate Of(int arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Time.LocalDate>(LocalBridgeClazz, "of", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Time.LocalDate>(LocalBridgeClazz, "of", "(III)Ljava/time/LocalDate;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#of(int,java.time.Month,int)"/>
@@ -166,7 +166,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalDate"/></returns>
         public static Java.Time.LocalDate Of(int arg0, Java.Time.Month arg1, int arg2)
         {
-            return SExecute<Java.Time.LocalDate>(LocalBridgeClazz, "of", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Time.LocalDate>(LocalBridgeClazz, "of", "(ILjava/time/Month;I)Ljava/time/LocalDate;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#ofEpochDay(long)"/>
@@ -185,7 +185,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalDate"/></returns>
         public static Java.Time.LocalDate OfInstant(Java.Time.Instant arg0, Java.Time.ZoneId arg1)
         {
-            return SExecute<Java.Time.LocalDate>(LocalBridgeClazz, "ofInstant", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.LocalDate>(LocalBridgeClazz, "ofInstant", "(Ljava/time/Instant;Ljava/time/ZoneId;)Ljava/time/LocalDate;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#ofYearDay(int,int)"/>
@@ -195,7 +195,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalDate"/></returns>
         public static Java.Time.LocalDate OfYearDay(int arg0, int arg1)
         {
-            return SExecute<Java.Time.LocalDate>(LocalBridgeClazz, "ofYearDay", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.LocalDate>(LocalBridgeClazz, "ofYearDay", "(II)Ljava/time/LocalDate;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#parse(java.lang.CharSequence,java.time.format.DateTimeFormatter)"/>
@@ -205,7 +205,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalDate"/></returns>
         public static Java.Time.LocalDate Parse(Java.Lang.CharSequence arg0, Java.Time.Format.DateTimeFormatter arg1)
         {
-            return SExecute<Java.Time.LocalDate>(LocalBridgeClazz, "parse", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.LocalDate>(LocalBridgeClazz, "parse", "(Ljava/lang/CharSequence;Ljava/time/format/DateTimeFormatter;)Ljava/time/LocalDate;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#parse(java.lang.CharSequence)"/>
@@ -535,7 +535,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalDateTime"/></returns>
         public Java.Time.LocalDateTime AtTime(int arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<Java.Time.LocalDateTime>("atTime", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Time.LocalDateTime>("atTime", "(IIII)Ljava/time/LocalDateTime;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#atTime(int,int,int)"/>
@@ -546,7 +546,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalDateTime"/></returns>
         public Java.Time.LocalDateTime AtTime(int arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Time.LocalDateTime>("atTime", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Time.LocalDateTime>("atTime", "(III)Ljava/time/LocalDateTime;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#atTime(int,int)"/>
@@ -556,7 +556,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalDateTime"/></returns>
         public Java.Time.LocalDateTime AtTime(int arg0, int arg1)
         {
-            return IExecute<Java.Time.LocalDateTime>("atTime", arg0, arg1);
+            return IExecuteWithSignature<Java.Time.LocalDateTime>("atTime", "(II)Ljava/time/LocalDateTime;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#atTime(java.time.OffsetTime)"/>
@@ -602,7 +602,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Java.Time.LocalDate> DatesUntil(Java.Time.LocalDate arg0, Java.Time.Period arg1)
         {
-            return IExecute<Java.Util.Stream.Stream<Java.Time.LocalDate>>("datesUntil", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Time.LocalDate>>("datesUntil", "(Ljava/time/LocalDate;Ljava/time/Period;)Ljava/util/stream/Stream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#datesUntil(java.time.LocalDate)"/>
@@ -638,7 +638,7 @@ namespace Java.Time
         /// <returns><see cref="long"/></returns>
         public long ToEpochSecond(Java.Time.LocalTime arg0, Java.Time.ZoneOffset arg1)
         {
-            return IExecute<long>("toEpochSecond", arg0, arg1);
+            return IExecuteWithSignature<long>("toEpochSecond", "(Ljava/time/LocalTime;Ljava/time/ZoneOffset;)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#until(java.time.temporal.Temporal,java.time.temporal.TemporalUnit)"/>
@@ -648,7 +648,7 @@ namespace Java.Time
         /// <returns><see cref="long"/></returns>
         public long Until(Java.Time.Temporal.Temporal arg0, Java.Time.Temporal.TemporalUnit arg1)
         {
-            return IExecute<long>("until", arg0, arg1);
+            return IExecuteWithSignature<long>("until", "(Ljava/time/temporal/Temporal;Ljava/time/temporal/TemporalUnit;)J", arg0, arg1);
         }
 
         #endregion

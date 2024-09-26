@@ -210,7 +210,7 @@ namespace Java.Util.Function
         /// <returns><see cref="long"/></returns>
         public override long ApplyAsLong(long arg0, long arg1)
         {
-            return IExecute<long>("applyAsLong", arg0, arg1);
+            return IExecuteWithSignature<long>("applyAsLong", "(JJ)J", arg0, arg1);
         }
 
         #endregion

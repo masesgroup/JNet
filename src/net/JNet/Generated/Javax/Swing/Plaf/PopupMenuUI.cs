@@ -110,7 +110,7 @@ namespace Javax.Swing.Plaf
         /// <returns><see cref="Javax.Swing.Popup"/></returns>
         public Javax.Swing.Popup GetPopup(Javax.Swing.JPopupMenu arg0, int arg1, int arg2)
         {
-            return IExecute<Javax.Swing.Popup>("getPopup", arg0, arg1, arg2);
+            return IExecuteWithSignature<Javax.Swing.Popup>("getPopup", "(Ljavax/swing/JPopupMenu;II)Ljavax/swing/Popup;", arg0, arg1, arg2);
         }
 
         #endregion

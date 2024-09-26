@@ -409,7 +409,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="object"/></param>
         public void ConfigureEditor(Javax.Swing.ComboBoxEditor arg0, object arg1)
         {
-            IExecute("configureEditor", arg0, arg1);
+            IExecuteWithSignature("configureEditor", "(Ljavax/swing/ComboBoxEditor;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#contentsChanged(javax.swing.event.ListDataEvent)"/>
@@ -454,7 +454,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void InsertItemAt(object arg0, int arg1)
         {
-            IExecute("insertItemAt", arg0, arg1);
+            IExecuteWithSignature("insertItemAt", "(Ljava/lang/Object;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#intervalAdded(javax.swing.event.ListDataEvent)"/>
@@ -606,7 +606,7 @@ namespace Javax.Swing
             /// <returns><see cref="int"/></returns>
             public int SelectionForKey(char arg0, Javax.Swing.ComboBoxModel<object> arg1)
             {
-                return IExecute<int>("selectionForKey", arg0, arg1);
+                return IExecuteWithSignature<int>("selectionForKey", "(CLjavax/swing/ComboBoxModel;)I", arg0, arg1);
             }
 
             #endregion
@@ -884,7 +884,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="object"/></param>
         public void ConfigureEditor(Javax.Swing.ComboBoxEditor arg0, object arg1)
         {
-            IExecute("configureEditor", arg0, arg1);
+            IExecuteWithSignature("configureEditor", "(Ljavax/swing/ComboBoxEditor;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#contentsChanged(javax.swing.event.ListDataEvent)"/>
@@ -929,7 +929,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void InsertItemAt(E arg0, int arg1)
         {
-            IExecute("insertItemAt", arg0, arg1);
+            IExecuteWithSignature("insertItemAt", "(Ljava/lang/Object;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#intervalAdded(javax.swing.event.ListDataEvent)"/>

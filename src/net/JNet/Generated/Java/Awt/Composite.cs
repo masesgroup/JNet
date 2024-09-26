@@ -127,7 +127,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.CompositeContext"/></returns>
         public Java.Awt.CompositeContext CreateContext(Java.Awt.ImageNs.ColorModel arg0, Java.Awt.ImageNs.ColorModel arg1, Java.Awt.RenderingHints arg2)
         {
-            return IExecute<Java.Awt.CompositeContext>("createContext", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Awt.CompositeContext>("createContext", "(Ljava/awt/image/ColorModel;Ljava/awt/image/ColorModel;Ljava/awt/RenderingHints;)Ljava/awt/CompositeContext;", arg0, arg1, arg2);
         }
 
         #endregion

@@ -512,7 +512,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public int ShowDialog(Java.Awt.Component arg0, Java.Lang.String arg1)
         {
-            return IExecute<int>("showDialog", arg0, arg1);
+            return IExecuteWithSignature<int>("showDialog", "(Ljava/awt/Component;Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#showOpenDialog(java.awt.Component)"/>

@@ -210,7 +210,7 @@ namespace Javax.Management.Monitor
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void SetThresholds(Java.Lang.Number arg0, Java.Lang.Number arg1)
         {
-            IExecute("setThresholds", arg0, arg1);
+            IExecuteWithSignature("setThresholds", "(Ljava/lang/Number;Ljava/lang/Number;)V", arg0, arg1);
         }
 
         #endregion

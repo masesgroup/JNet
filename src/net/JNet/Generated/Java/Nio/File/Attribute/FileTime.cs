@@ -103,7 +103,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="Java.Nio.File.Attribute.FileTime"/></returns>
         public static Java.Nio.File.Attribute.FileTime From(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return SExecute<Java.Nio.File.Attribute.FileTime>(LocalBridgeClazz, "from", arg0, arg1);
+            return SExecuteWithSignature<Java.Nio.File.Attribute.FileTime>(LocalBridgeClazz, "from", "(JLjava/util/concurrent/TimeUnit;)Ljava/nio/file/attribute/FileTime;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#fromMillis(long)"/>

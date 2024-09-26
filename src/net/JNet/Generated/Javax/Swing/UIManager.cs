@@ -195,7 +195,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public static bool GetBoolean(object arg0, Java.Util.Locale arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "getBoolean", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "getBoolean", "(Ljava/lang/Object;Ljava/util/Locale;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getBoolean(java.lang.Object)"/>
@@ -223,7 +223,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public static int GetInt(object arg0, Java.Util.Locale arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "getInt", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getInt", "(Ljava/lang/Object;Ljava/util/Locale;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getInt(java.lang.Object)"/>
@@ -242,7 +242,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public static Java.Awt.Color GetColor(object arg0, Java.Util.Locale arg1)
         {
-            return SExecute<Java.Awt.Color>(LocalBridgeClazz, "getColor", arg0, arg1);
+            return SExecuteWithSignature<Java.Awt.Color>(LocalBridgeClazz, "getColor", "(Ljava/lang/Object;Ljava/util/Locale;)Ljava/awt/Color;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getColor(java.lang.Object)"/>
@@ -261,7 +261,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public static Java.Awt.Dimension GetDimension(object arg0, Java.Util.Locale arg1)
         {
-            return SExecute<Java.Awt.Dimension>(LocalBridgeClazz, "getDimension", arg0, arg1);
+            return SExecuteWithSignature<Java.Awt.Dimension>(LocalBridgeClazz, "getDimension", "(Ljava/lang/Object;Ljava/util/Locale;)Ljava/awt/Dimension;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getDimension(java.lang.Object)"/>
@@ -280,7 +280,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public static Java.Awt.Font GetFont(object arg0, Java.Util.Locale arg1)
         {
-            return SExecute<Java.Awt.Font>(LocalBridgeClazz, "getFont", arg0, arg1);
+            return SExecuteWithSignature<Java.Awt.Font>(LocalBridgeClazz, "getFont", "(Ljava/lang/Object;Ljava/util/Locale;)Ljava/awt/Font;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getFont(java.lang.Object)"/>
@@ -299,7 +299,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Insets"/></returns>
         public static Java.Awt.Insets GetInsets(object arg0, Java.Util.Locale arg1)
         {
-            return SExecute<Java.Awt.Insets>(LocalBridgeClazz, "getInsets", arg0, arg1);
+            return SExecuteWithSignature<Java.Awt.Insets>(LocalBridgeClazz, "getInsets", "(Ljava/lang/Object;Ljava/util/Locale;)Ljava/awt/Insets;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getInsets(java.lang.Object)"/>
@@ -318,7 +318,7 @@ namespace Javax.Swing
         /// <returns><see cref="object"/></returns>
         public static object Get(object arg0, Java.Util.Locale arg1)
         {
-            return SExecute(LocalBridgeClazz, "get", arg0, arg1);
+            return SExecuteWithSignature(LocalBridgeClazz, "get", "(Ljava/lang/Object;Ljava/util/Locale;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#get(java.lang.Object)"/>
@@ -337,7 +337,7 @@ namespace Javax.Swing
         /// <returns><see cref="object"/></returns>
         public static object Put(object arg0, object arg1)
         {
-            return SExecute(LocalBridgeClazz, "put", arg0, arg1);
+            return SExecuteWithSignature(LocalBridgeClazz, "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getString(java.lang.Object,java.util.Locale)"/>
@@ -347,7 +347,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetString(object arg0, Java.Util.Locale arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getString", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getString", "(Ljava/lang/Object;Ljava/util/Locale;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getString(java.lang.Object)"/>
@@ -366,7 +366,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border GetBorder(object arg0, Java.Util.Locale arg1)
         {
-            return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "getBorder", arg0, arg1);
+            return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "getBorder", "(Ljava/lang/Object;Ljava/util/Locale;)Ljavax/swing/border/Border;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getBorder(java.lang.Object)"/>
@@ -385,7 +385,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetIcon(object arg0, Java.Util.Locale arg1)
         {
-            return SExecute<Javax.Swing.Icon>(LocalBridgeClazz, "getIcon", arg0, arg1);
+            return SExecuteWithSignature<Javax.Swing.Icon>(LocalBridgeClazz, "getIcon", "(Ljava/lang/Object;Ljava/util/Locale;)Ljavax/swing/Icon;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getIcon(java.lang.Object)"/>
@@ -438,7 +438,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public static void InstallLookAndFeel(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            SExecute(LocalBridgeClazz, "installLookAndFeel", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "installLookAndFeel", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#installLookAndFeel(javax.swing.UIManager.LookAndFeelInfo)"/>

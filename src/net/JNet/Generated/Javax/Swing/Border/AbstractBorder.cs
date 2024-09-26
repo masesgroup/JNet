@@ -108,7 +108,7 @@ namespace Javax.Swing.Border
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public static Java.Awt.Rectangle GetInteriorRectangle(Java.Awt.Component arg0, Javax.Swing.Border.Border arg1, int arg2, int arg3, int arg4, int arg5)
         {
-            return SExecute<Java.Awt.Rectangle>(LocalBridgeClazz, "getInteriorRectangle", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<Java.Awt.Rectangle>(LocalBridgeClazz, "getInteriorRectangle", "(Ljava/awt/Component;Ljavax/swing/border/Border;IIII)Ljava/awt/Rectangle;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
 
         #endregion
@@ -131,7 +131,7 @@ namespace Javax.Swing.Border
         /// <returns><see cref="int"/></returns>
         public int GetBaseline(Java.Awt.Component arg0, int arg1, int arg2)
         {
-            return IExecute<int>("getBaseline", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getBaseline", "(Ljava/awt/Component;II)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/AbstractBorder.html#getBaselineResizeBehavior(java.awt.Component)"/>
@@ -150,7 +150,7 @@ namespace Javax.Swing.Border
         /// <returns><see cref="Java.Awt.Insets"/></returns>
         public Java.Awt.Insets GetBorderInsets(Java.Awt.Component arg0, Java.Awt.Insets arg1)
         {
-            return IExecute<Java.Awt.Insets>("getBorderInsets", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Insets>("getBorderInsets", "(Ljava/awt/Component;Ljava/awt/Insets;)Ljava/awt/Insets;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/AbstractBorder.html#getBorderInsets(java.awt.Component)"/>
@@ -172,7 +172,7 @@ namespace Javax.Swing.Border
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle GetInteriorRectangle(Java.Awt.Component arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            return IExecute<Java.Awt.Rectangle>("getInteriorRectangle", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Java.Awt.Rectangle>("getInteriorRectangle", "(Ljava/awt/Component;IIII)Ljava/awt/Rectangle;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/AbstractBorder.html#paintBorder(java.awt.Component,java.awt.Graphics,int,int,int,int)"/>
@@ -185,7 +185,7 @@ namespace Javax.Swing.Border
         /// <param name="arg5"><see cref="int"/></param>
         public void PaintBorder(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
-            IExecute("paintBorder", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("paintBorder", "(Ljava/awt/Component;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
 
         #endregion

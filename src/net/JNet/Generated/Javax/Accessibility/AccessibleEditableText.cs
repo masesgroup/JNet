@@ -173,7 +173,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetTextRange(int arg0, int arg1)
         {
-            return IExecute<Java.Lang.String>("getTextRange", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getTextRange", "(II)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#cut(int,int)"/>
@@ -182,7 +182,7 @@ namespace Javax.Accessibility
         /// <param name="arg1"><see cref="int"/></param>
         public void Cut(int arg0, int arg1)
         {
-            IExecute("cut", arg0, arg1);
+            IExecuteWithSignature("cut", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#delete(int,int)"/>
@@ -191,7 +191,7 @@ namespace Javax.Accessibility
         /// <param name="arg1"><see cref="int"/></param>
         public void Delete(int arg0, int arg1)
         {
-            IExecute("delete", arg0, arg1);
+            IExecuteWithSignature("delete", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#insertTextAtIndex(int,java.lang.String)"/>
@@ -200,7 +200,7 @@ namespace Javax.Accessibility
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void InsertTextAtIndex(int arg0, Java.Lang.String arg1)
         {
-            IExecute("insertTextAtIndex", arg0, arg1);
+            IExecuteWithSignature("insertTextAtIndex", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#paste(int)"/>
@@ -218,7 +218,7 @@ namespace Javax.Accessibility
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public void ReplaceText(int arg0, int arg1, Java.Lang.String arg2)
         {
-            IExecute("replaceText", arg0, arg1, arg2);
+            IExecuteWithSignature("replaceText", "(IILjava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#selectText(int,int)"/>
@@ -227,7 +227,7 @@ namespace Javax.Accessibility
         /// <param name="arg1"><see cref="int"/></param>
         public void SelectText(int arg0, int arg1)
         {
-            IExecute("selectText", arg0, arg1);
+            IExecuteWithSignature("selectText", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#setAttributes(int,int,javax.swing.text.AttributeSet)"/>
@@ -237,7 +237,7 @@ namespace Javax.Accessibility
         /// <param name="arg2"><see cref="Javax.Swing.Text.AttributeSet"/></param>
         public void SetAttributes(int arg0, int arg1, Javax.Swing.Text.AttributeSet arg2)
         {
-            IExecute("setAttributes", arg0, arg1, arg2);
+            IExecuteWithSignature("setAttributes", "(IILjavax/swing/text/AttributeSet;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#setTextContents(java.lang.String)"/>

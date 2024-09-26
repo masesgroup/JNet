@@ -127,7 +127,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg3"><see cref="bool"/></param>
         public void TileUpdate(Java.Awt.ImageNs.WritableRenderedImage arg0, int arg1, int arg2, bool arg3)
         {
-            IExecute("tileUpdate", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("tileUpdate", "(Ljava/awt/image/WritableRenderedImage;IIZ)V", arg0, arg1, arg2, arg3);
         }
 
         #endregion

@@ -254,7 +254,7 @@ namespace Java.Util.Function
         /// <returns><see cref="long"/></returns>
         public override long ApplyAsLong(object arg0, object arg1)
         {
-            return IExecute<long>("applyAsLong", arg0, arg1);
+            return IExecuteWithSignature<long>("applyAsLong", "(Ljava/lang/Object;Ljava/lang/Object;)J", arg0, arg1);
         }
 
         #endregion
@@ -385,7 +385,7 @@ namespace Java.Util.Function
         /// <returns><see cref="long"/></returns>
         public override long ApplyAsLong(T arg0, U arg1)
         {
-            return IExecute<long>("applyAsLong", arg0, arg1);
+            return IExecuteWithSignature<long>("applyAsLong", "(Ljava/lang/Object;Ljava/lang/Object;)J", arg0, arg1);
         }
 
         #endregion

@@ -114,7 +114,7 @@ namespace Javax.Print
         /// <returns><see cref="Javax.Print.MultiDocPrintService"/></returns>
         public static Javax.Print.MultiDocPrintService[] LookupMultiDocPrintServices(Javax.Print.DocFlavor[] arg0, Javax.Print.Attribute.AttributeSet arg1)
         {
-            return SExecuteArray<Javax.Print.MultiDocPrintService>(LocalBridgeClazz, "lookupMultiDocPrintServices", arg0, arg1);
+            return SExecuteWithSignatureArray<Javax.Print.MultiDocPrintService>(LocalBridgeClazz, "lookupMultiDocPrintServices", "([Ljavax/print/DocFlavor;Ljavax/print/attribute/AttributeSet;)[Ljavax/print/MultiDocPrintService;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintServiceLookup.html#lookupDefaultPrintService()"/>
@@ -132,7 +132,7 @@ namespace Javax.Print
         /// <returns><see cref="Javax.Print.PrintService"/></returns>
         public static Javax.Print.PrintService[] LookupPrintServices(Javax.Print.DocFlavor arg0, Javax.Print.Attribute.AttributeSet arg1)
         {
-            return SExecuteArray<Javax.Print.PrintService>(LocalBridgeClazz, "lookupPrintServices", arg0, arg1);
+            return SExecuteWithSignatureArray<Javax.Print.PrintService>(LocalBridgeClazz, "lookupPrintServices", "(Ljavax/print/DocFlavor;Ljavax/print/attribute/AttributeSet;)[Ljavax/print/PrintService;", arg0, arg1);
         }
 
         #endregion
@@ -160,7 +160,7 @@ namespace Javax.Print
         /// <returns><see cref="Javax.Print.MultiDocPrintService"/></returns>
         public Javax.Print.MultiDocPrintService[] GetMultiDocPrintServices(Javax.Print.DocFlavor[] arg0, Javax.Print.Attribute.AttributeSet arg1)
         {
-            return IExecuteArray<Javax.Print.MultiDocPrintService>("getMultiDocPrintServices", arg0, arg1);
+            return IExecuteWithSignatureArray<Javax.Print.MultiDocPrintService>("getMultiDocPrintServices", "([Ljavax/print/DocFlavor;Ljavax/print/attribute/AttributeSet;)[Ljavax/print/MultiDocPrintService;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintServiceLookup.html#getPrintServices(javax.print.DocFlavor,javax.print.attribute.AttributeSet)"/>
@@ -170,7 +170,7 @@ namespace Javax.Print
         /// <returns><see cref="Javax.Print.PrintService"/></returns>
         public Javax.Print.PrintService[] GetPrintServices(Javax.Print.DocFlavor arg0, Javax.Print.Attribute.AttributeSet arg1)
         {
-            return IExecuteArray<Javax.Print.PrintService>("getPrintServices", arg0, arg1);
+            return IExecuteWithSignatureArray<Javax.Print.PrintService>("getPrintServices", "(Ljavax/print/DocFlavor;Ljavax/print/attribute/AttributeSet;)[Ljavax/print/PrintService;", arg0, arg1);
         }
 
         #endregion

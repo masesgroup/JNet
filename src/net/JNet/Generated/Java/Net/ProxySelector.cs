@@ -125,7 +125,7 @@ namespace Java.Net
         /// <param name="arg2"><see cref="Java.Io.IOException"/></param>
         public void ConnectFailed(Java.Net.URI arg0, Java.Net.SocketAddress arg1, MASES.JCOBridge.C2JBridge.JVMBridgeException arg2)
         {
-            IExecute("connectFailed", arg0, arg1, arg2);
+            IExecuteWithSignature("connectFailed", "(Ljava/net/URI;Ljava/net/SocketAddress;Ljava/io/IOException;)V", arg0, arg1, arg2);
         }
 
         #endregion

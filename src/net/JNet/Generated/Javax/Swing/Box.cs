@@ -260,7 +260,7 @@ namespace Javax.Swing
             /// <param name="arg2"><see cref="Java.Awt.Dimension"/></param>
             public void ChangeShape(Java.Awt.Dimension arg0, Java.Awt.Dimension arg1, Java.Awt.Dimension arg2)
             {
-                IExecute("changeShape", arg0, arg1, arg2);
+                IExecuteWithSignature("changeShape", "(Ljava/awt/Dimension;Ljava/awt/Dimension;Ljava/awt/Dimension;)V", arg0, arg1, arg2);
             }
 
             #endregion

@@ -350,7 +350,7 @@ namespace Org.W3c.Dom.Ranges
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public short CompareBoundaryPoints(short arg0, Org.W3c.Dom.Ranges.Range arg1)
         {
-            return IExecute<short>("compareBoundaryPoints", arg0, arg1);
+            return IExecuteWithSignature<short>("compareBoundaryPoints", "(SLorg/w3c/dom/ranges/Range;)S", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#collapse(boolean)"/>
@@ -416,7 +416,7 @@ namespace Org.W3c.Dom.Ranges
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void SetEnd(Org.W3c.Dom.Node arg0, int arg1)
         {
-            IExecute("setEnd", arg0, arg1);
+            IExecuteWithSignature("setEnd", "(Lorg/w3c/dom/Node;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setEndAfter(org.w3c.dom.Node)"/>
@@ -447,7 +447,7 @@ namespace Org.W3c.Dom.Ranges
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void SetStart(Org.W3c.Dom.Node arg0, int arg1)
         {
-            IExecute("setStart", arg0, arg1);
+            IExecuteWithSignature("setStart", "(Lorg/w3c/dom/Node;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setStartAfter(org.w3c.dom.Node)"/>

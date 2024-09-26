@@ -170,7 +170,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public Java.Util.Concurrent.Future Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute<Java.Util.Concurrent.Future>("poll", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.Future>("poll", "(JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/Future;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#submit(java.lang.Runnable,java.lang.Object)"/>
@@ -180,7 +180,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         public Java.Util.Concurrent.Future Submit(Java.Lang.Runnable arg0, object arg1)
         {
-            return IExecute<Java.Util.Concurrent.Future>("submit", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.Future>("submit", "(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/Future;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#submit(java.util.concurrent.Callable)"/>
@@ -269,7 +269,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public Java.Util.Concurrent.Future<V> Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute<Java.Util.Concurrent.Future<V>>("poll", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.Future<V>>("poll", "(JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/Future;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#submit(java.lang.Runnable,java.lang.Object)"/>
@@ -279,7 +279,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         public Java.Util.Concurrent.Future<V> Submit(Java.Lang.Runnable arg0, V arg1)
         {
-            return IExecute<Java.Util.Concurrent.Future<V>>("submit", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.Future<V>>("submit", "(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/Future;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#submit(java.util.concurrent.Callable)"/>

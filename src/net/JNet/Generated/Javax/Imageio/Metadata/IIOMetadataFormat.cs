@@ -424,7 +424,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="bool"/></returns>
         public bool CanNodeAppear(Java.Lang.String arg0, Javax.Imageio.ImageTypeSpecifier arg1)
         {
-            return IExecute<bool>("canNodeAppear", arg0, arg1);
+            return IExecuteWithSignature<bool>("canNodeAppear", "(Ljava/lang/String;Ljavax/imageio/ImageTypeSpecifier;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#isAttributeRequired(java.lang.String,java.lang.String)"/>
@@ -434,7 +434,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="bool"/></returns>
         public bool IsAttributeRequired(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("isAttributeRequired", arg0, arg1);
+            return IExecuteWithSignature<bool>("isAttributeRequired", "(Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getAttributeDataType(java.lang.String,java.lang.String)"/>
@@ -444,7 +444,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="int"/></returns>
         public int GetAttributeDataType(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<int>("getAttributeDataType", arg0, arg1);
+            return IExecuteWithSignature<int>("getAttributeDataType", "(Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getAttributeListMaxLength(java.lang.String,java.lang.String)"/>
@@ -454,7 +454,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="int"/></returns>
         public int GetAttributeListMaxLength(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<int>("getAttributeListMaxLength", arg0, arg1);
+            return IExecuteWithSignature<int>("getAttributeListMaxLength", "(Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getAttributeListMinLength(java.lang.String,java.lang.String)"/>
@@ -464,7 +464,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="int"/></returns>
         public int GetAttributeListMinLength(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<int>("getAttributeListMinLength", arg0, arg1);
+            return IExecuteWithSignature<int>("getAttributeListMinLength", "(Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getAttributeValueType(java.lang.String,java.lang.String)"/>
@@ -474,7 +474,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="int"/></returns>
         public int GetAttributeValueType(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<int>("getAttributeValueType", arg0, arg1);
+            return IExecuteWithSignature<int>("getAttributeValueType", "(Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getChildPolicy(java.lang.String)"/>
@@ -583,7 +583,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetAttributeDefaultValue(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("getAttributeDefaultValue", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getAttributeDefaultValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getAttributeDescription(java.lang.String,java.lang.String,java.util.Locale)"/>
@@ -594,7 +594,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetAttributeDescription(Java.Lang.String arg0, Java.Lang.String arg1, Java.Util.Locale arg2)
         {
-            return IExecute<Java.Lang.String>("getAttributeDescription", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.String>("getAttributeDescription", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/Locale;)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getAttributeMaxValue(java.lang.String,java.lang.String)"/>
@@ -604,7 +604,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetAttributeMaxValue(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("getAttributeMaxValue", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getAttributeMaxValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getAttributeMinValue(java.lang.String,java.lang.String)"/>
@@ -614,7 +614,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetAttributeMinValue(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("getAttributeMinValue", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getAttributeMinValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getElementDescription(java.lang.String,java.util.Locale)"/>
@@ -624,7 +624,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetElementDescription(Java.Lang.String arg0, Java.Util.Locale arg1)
         {
-            return IExecute<Java.Lang.String>("getElementDescription", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getElementDescription", "(Ljava/lang/String;Ljava/util/Locale;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getAttributeEnumerations(java.lang.String,java.lang.String)"/>
@@ -634,7 +634,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] GetAttributeEnumerations(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecuteArray<Java.Lang.String>("getAttributeEnumerations", arg0, arg1);
+            return IExecuteWithSignatureArray<Java.Lang.String>("getAttributeEnumerations", "(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getAttributeNames(java.lang.String)"/>

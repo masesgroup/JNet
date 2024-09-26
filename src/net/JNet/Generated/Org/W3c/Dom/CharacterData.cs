@@ -177,7 +177,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Java.Lang.String SubstringData(int arg0, int arg1)
         {
-            return IExecute<Java.Lang.String>("substringData", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("substringData", "(II)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#appendData(java.lang.String)"/>
@@ -196,7 +196,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void DeleteData(int arg0, int arg1)
         {
-            IExecute("deleteData", arg0, arg1);
+            IExecuteWithSignature("deleteData", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#insertData(int,java.lang.String)"/>
@@ -206,7 +206,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void InsertData(int arg0, Java.Lang.String arg1)
         {
-            IExecute("insertData", arg0, arg1);
+            IExecuteWithSignature("insertData", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#replaceData(int,int,java.lang.String)"/>
@@ -217,7 +217,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void ReplaceData(int arg0, int arg1, Java.Lang.String arg2)
         {
-            IExecute("replaceData", arg0, arg1, arg2);
+            IExecuteWithSignature("replaceData", "(IILjava/lang/String;)V", arg0, arg1, arg2);
         }
 
         #endregion

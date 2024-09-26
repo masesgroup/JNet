@@ -141,7 +141,7 @@ namespace Java.Beans
         /// <returns><see cref="Org.Xml.Sax.Helpers.DefaultHandler"/></returns>
         public static Org.Xml.Sax.Helpers.DefaultHandler CreateHandler(object arg0, Java.Beans.ExceptionListener arg1, Java.Lang.ClassLoader arg2)
         {
-            return SExecute<Org.Xml.Sax.Helpers.DefaultHandler>(LocalBridgeClazz, "createHandler", arg0, arg1, arg2);
+            return SExecuteWithSignature<Org.Xml.Sax.Helpers.DefaultHandler>(LocalBridgeClazz, "createHandler", "(Ljava/lang/Object;Ljava/beans/ExceptionListener;Ljava/lang/ClassLoader;)Lorg/xml/sax/helpers/DefaultHandler;", arg0, arg1, arg2);
         }
 
         #endregion

@@ -148,7 +148,7 @@ namespace Javax.Print
         /// <returns><see cref="object"/></returns>
         public object GetUI(int arg0, Java.Lang.String arg1)
         {
-            return IExecute("getUI", arg0, arg1);
+            return IExecuteWithSignature("getUI", "(ILjava/lang/String;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#getUIClassNamesForRole(int)"/>

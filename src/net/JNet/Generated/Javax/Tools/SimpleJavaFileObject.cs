@@ -141,7 +141,7 @@ namespace Javax.Tools
         /// <returns><see cref="bool"/></returns>
         public bool IsNameCompatible(Java.Lang.String arg0, Javax.Tools.JavaFileObject.Kind arg1)
         {
-            return IExecute<bool>("isNameCompatible", arg0, arg1);
+            return IExecuteWithSignature<bool>("isNameCompatible", "(Ljava/lang/String;Ljavax/tools/JavaFileObject$Kind;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#openInputStream()"/>

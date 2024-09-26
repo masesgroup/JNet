@@ -110,7 +110,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
         public static Java.Nio.LongBuffer Wrap(long[] arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Nio.LongBuffer>(LocalBridgeClazz, "wrap", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Nio.LongBuffer>(LocalBridgeClazz, "wrap", "([JII)Ljava/nio/LongBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#wrap(long[])"/>
@@ -157,7 +157,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
         public Java.Nio.LongBuffer Put(int arg0, long arg1)
         {
-            return IExecute<Java.Nio.LongBuffer>("put", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.LongBuffer>("put", "(IJ)Ljava/nio/LongBuffer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#put(long)"/>
@@ -230,7 +230,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
         public Java.Nio.LongBuffer Get(long[] arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Nio.LongBuffer>("get", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Nio.LongBuffer>("get", "([JII)Ljava/nio/LongBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#get(long[])"/>
@@ -259,7 +259,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
         public Java.Nio.LongBuffer Put(long[] arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Nio.LongBuffer>("put", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Nio.LongBuffer>("put", "([JII)Ljava/nio/LongBuffer;", arg0, arg1, arg2);
         }
 
         #endregion

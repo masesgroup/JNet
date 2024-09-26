@@ -329,7 +329,7 @@ namespace Java.Awt
         /// <returns><see cref="float"/></returns>
         public static float[] RGBtoHSB(int arg0, int arg1, int arg2, float[] arg3)
         {
-            return SExecuteArray<float>(LocalBridgeClazz, "RGBtoHSB", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignatureArray<float>(LocalBridgeClazz, "RGBtoHSB", "(III[F)[F", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#HSBtoRGB(float,float,float)"/>
@@ -340,7 +340,7 @@ namespace Java.Awt
         /// <returns><see cref="int"/></returns>
         public static int HSBtoRGB(float arg0, float arg1, float arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "HSBtoRGB", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "HSBtoRGB", "(FFF)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#decode(java.lang.String)"/>
@@ -360,7 +360,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public static Java.Awt.Color GetColor(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<Java.Awt.Color>(LocalBridgeClazz, "getColor", arg0, arg1);
+            return SExecuteWithSignature<Java.Awt.Color>(LocalBridgeClazz, "getColor", "(Ljava/lang/String;I)Ljava/awt/Color;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getColor(java.lang.String,java.awt.Color)"/>
@@ -370,7 +370,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public static Java.Awt.Color GetColor(Java.Lang.String arg0, Java.Awt.Color arg1)
         {
-            return SExecute<Java.Awt.Color>(LocalBridgeClazz, "getColor", arg0, arg1);
+            return SExecuteWithSignature<Java.Awt.Color>(LocalBridgeClazz, "getColor", "(Ljava/lang/String;Ljava/awt/Color;)Ljava/awt/Color;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getColor(java.lang.String)"/>
@@ -390,7 +390,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public static Java.Awt.Color GetHSBColor(float arg0, float arg1, float arg2)
         {
-            return SExecute<Java.Awt.Color>(LocalBridgeClazz, "getHSBColor", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Awt.Color>(LocalBridgeClazz, "getHSBColor", "(FFF)Ljava/awt/Color;", arg0, arg1, arg2);
         }
 
         #endregion
@@ -462,7 +462,7 @@ namespace Java.Awt
         /// <returns><see cref="float"/></returns>
         public float[] GetColorComponents(Java.Awt.ColorNs.ColorSpace arg0, float[] arg1)
         {
-            return IExecuteArray<float>("getColorComponents", arg0, arg1);
+            return IExecuteWithSignatureArray<float>("getColorComponents", "(Ljava/awt/color/ColorSpace;[F)[F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getComponents(float[])"/>
@@ -481,7 +481,7 @@ namespace Java.Awt
         /// <returns><see cref="float"/></returns>
         public float[] GetComponents(Java.Awt.ColorNs.ColorSpace arg0, float[] arg1)
         {
-            return IExecuteArray<float>("getComponents", arg0, arg1);
+            return IExecuteWithSignatureArray<float>("getComponents", "(Ljava/awt/color/ColorSpace;[F)[F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getRGBColorComponents(float[])"/>
@@ -528,7 +528,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.PaintContext"/></returns>
         public Java.Awt.PaintContext CreateContext(Java.Awt.ImageNs.ColorModel arg0, Java.Awt.Rectangle arg1, Java.Awt.Geom.Rectangle2D arg2, Java.Awt.Geom.AffineTransform arg3, Java.Awt.RenderingHints arg4)
         {
-            return IExecute<Java.Awt.PaintContext>("createContext", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Java.Awt.PaintContext>("createContext", "(Ljava/awt/image/ColorModel;Ljava/awt/Rectangle;Ljava/awt/geom/Rectangle2D;Ljava/awt/geom/AffineTransform;Ljava/awt/RenderingHints;)Ljava/awt/PaintContext;", arg0, arg1, arg2, arg3, arg4);
         }
 
         #endregion

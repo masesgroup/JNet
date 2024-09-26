@@ -225,7 +225,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetLayoutComponent(Java.Awt.Container arg0, object arg1)
         {
-            return IExecute<Java.Awt.Component>("getLayoutComponent", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Component>("getLayoutComponent", "(Ljava/awt/Container;Ljava/lang/Object;)Ljava/awt/Component;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#getLayoutComponent(java.lang.Object)"/>
@@ -279,7 +279,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="object"/></param>
         public void AddLayoutComponent(Java.Awt.Component arg0, object arg1)
         {
-            IExecute("addLayoutComponent", arg0, arg1);
+            IExecuteWithSignature("addLayoutComponent", "(Ljava/awt/Component;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#invalidateLayout(java.awt.Container)"/>

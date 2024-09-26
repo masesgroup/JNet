@@ -140,7 +140,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool TryAcquire(int arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
         {
-            return IExecute<bool>("tryAcquire", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("tryAcquire", "(IJLjava/util/concurrent/TimeUnit;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#tryAcquire(int)"/>
@@ -160,7 +160,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool TryAcquire(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute<bool>("tryAcquire", arg0, arg1);
+            return IExecuteWithSignature<bool>("tryAcquire", "(JLjava/util/concurrent/TimeUnit;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#hasQueuedThreads()"/>

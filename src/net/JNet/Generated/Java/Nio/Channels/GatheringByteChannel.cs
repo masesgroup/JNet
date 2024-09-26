@@ -136,7 +136,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public long Write(Java.Nio.ByteBuffer[] arg0, int arg1, int arg2)
         {
-            return IExecute<long>("write", arg0, arg1, arg2);
+            return IExecuteWithSignature<long>("write", "([Ljava/nio/ByteBuffer;II)J", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/GatheringByteChannel.html#write(java.nio.ByteBuffer[])"/>

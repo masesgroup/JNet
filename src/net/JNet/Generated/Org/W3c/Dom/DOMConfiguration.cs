@@ -150,7 +150,7 @@ namespace Org.W3c.Dom
         /// <returns><see cref="bool"/></returns>
         public bool CanSetParameter(Java.Lang.String arg0, object arg1)
         {
-            return IExecute<bool>("canSetParameter", arg0, arg1);
+            return IExecuteWithSignature<bool>("canSetParameter", "(Ljava/lang/String;Ljava/lang/Object;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMConfiguration.html#getParameter(java.lang.String)"/>
@@ -170,7 +170,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void SetParameter(Java.Lang.String arg0, object arg1)
         {
-            IExecute("setParameter", arg0, arg1);
+            IExecuteWithSignature("setParameter", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
         }
 
         #endregion

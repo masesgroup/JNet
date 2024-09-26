@@ -150,7 +150,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool DrawImage(Java.Awt.Image arg0, Java.Awt.Geom.AffineTransform arg1, Java.Awt.ImageNs.ImageObserver arg2)
         {
-            return IExecute<bool>("drawImage", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("drawImage", "(Ljava/awt/Image;Ljava/awt/geom/AffineTransform;Ljava/awt/image/ImageObserver;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#hit(java.awt.Rectangle,java.awt.Shape,boolean)"/>
@@ -161,7 +161,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool Hit(Java.Awt.Rectangle arg0, Java.Awt.Shape arg1, bool arg2)
         {
-            return IExecute<bool>("hit", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("hit", "(Ljava/awt/Rectangle;Ljava/awt/Shape;Z)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getTransform()"/>
@@ -212,7 +212,7 @@ namespace Java.Awt
         /// <param name="arg2"><see cref="float"/></param>
         public void DrawGlyphVector(Java.Awt.FontNs.GlyphVector arg0, float arg1, float arg2)
         {
-            IExecute("drawGlyphVector", arg0, arg1, arg2);
+            IExecuteWithSignature("drawGlyphVector", "(Ljava/awt/font/GlyphVector;FF)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawImage(java.awt.image.BufferedImage,java.awt.image.BufferedImageOp,int,int)"/>
@@ -223,7 +223,7 @@ namespace Java.Awt
         /// <param name="arg3"><see cref="int"/></param>
         public void DrawImage(Java.Awt.ImageNs.BufferedImage arg0, Java.Awt.ImageNs.BufferedImageOp arg1, int arg2, int arg3)
         {
-            IExecute("drawImage", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("drawImage", "(Ljava/awt/image/BufferedImage;Ljava/awt/image/BufferedImageOp;II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawRenderableImage(java.awt.image.renderable.RenderableImage,java.awt.geom.AffineTransform)"/>
@@ -232,7 +232,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="Java.Awt.Geom.AffineTransform"/></param>
         public void DrawRenderableImage(Java.Awt.ImageNs.Renderable.RenderableImage arg0, Java.Awt.Geom.AffineTransform arg1)
         {
-            IExecute("drawRenderableImage", arg0, arg1);
+            IExecuteWithSignature("drawRenderableImage", "(Ljava/awt/image/renderable/RenderableImage;Ljava/awt/geom/AffineTransform;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawRenderedImage(java.awt.image.RenderedImage,java.awt.geom.AffineTransform)"/>
@@ -241,7 +241,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="Java.Awt.Geom.AffineTransform"/></param>
         public void DrawRenderedImage(Java.Awt.ImageNs.RenderedImage arg0, Java.Awt.Geom.AffineTransform arg1)
         {
-            IExecute("drawRenderedImage", arg0, arg1);
+            IExecuteWithSignature("drawRenderedImage", "(Ljava/awt/image/RenderedImage;Ljava/awt/geom/AffineTransform;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawString(java.lang.String,float,float)"/>
@@ -251,7 +251,7 @@ namespace Java.Awt
         /// <param name="arg2"><see cref="float"/></param>
         public void DrawString(Java.Lang.String arg0, float arg1, float arg2)
         {
-            IExecute("drawString", arg0, arg1, arg2);
+            IExecuteWithSignature("drawString", "(Ljava/lang/String;FF)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawString(java.text.AttributedCharacterIterator,float,float)"/>
@@ -261,7 +261,7 @@ namespace Java.Awt
         /// <param name="arg2"><see cref="float"/></param>
         public void DrawString(Java.Text.AttributedCharacterIterator arg0, float arg1, float arg2)
         {
-            IExecute("drawString", arg0, arg1, arg2);
+            IExecuteWithSignature("drawString", "(Ljava/text/AttributedCharacterIterator;FF)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#fill(java.awt.Shape)"/>
@@ -279,7 +279,7 @@ namespace Java.Awt
         /// <param name="arg2"><see cref="double"/></param>
         public void Rotate(double arg0, double arg1, double arg2)
         {
-            IExecute("rotate", arg0, arg1, arg2);
+            IExecuteWithSignature("rotate", "(DDD)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#rotate(double)"/>
@@ -296,7 +296,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="double"/></param>
         public void Scale(double arg0, double arg1)
         {
-            IExecute("scale", arg0, arg1);
+            IExecuteWithSignature("scale", "(DD)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setRenderingHint(java.awt.RenderingHints.Key,java.lang.Object)"/>
@@ -305,7 +305,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="object"/></param>
         public void SetRenderingHint(Java.Awt.RenderingHints.Key arg0, object arg1)
         {
-            IExecute("setRenderingHint", arg0, arg1);
+            IExecuteWithSignature("setRenderingHint", "(Ljava/awt/RenderingHints$Key;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setTransform(java.awt.geom.AffineTransform)"/>
@@ -322,7 +322,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="double"/></param>
         public void Shear(double arg0, double arg1)
         {
-            IExecute("shear", arg0, arg1);
+            IExecuteWithSignature("shear", "(DD)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#transform(java.awt.geom.AffineTransform)"/>
@@ -339,7 +339,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="double"/></param>
         public void Translate(double arg0, double arg1)
         {
-            IExecute("translate", arg0, arg1);
+            IExecuteWithSignature("translate", "(DD)V", arg0, arg1);
         }
 
         #endregion

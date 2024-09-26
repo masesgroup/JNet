@@ -208,7 +208,7 @@ namespace Javax.Swing.Filechooser
         /// <returns><see cref="bool"/></returns>
         public bool IsParent(Java.Io.File arg0, Java.Io.File arg1)
         {
-            return IExecute<bool>("isParent", arg0, arg1);
+            return IExecuteWithSignature<bool>("isParent", "(Ljava/io/File;Ljava/io/File;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#isRoot(java.io.File)"/>
@@ -227,7 +227,7 @@ namespace Javax.Swing.Filechooser
         /// <returns><see cref="Java.Io.File"/></returns>
         public Java.Io.File CreateFileObject(Java.Io.File arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Io.File>("createFileObject", arg0, arg1);
+            return IExecuteWithSignature<Java.Io.File>("createFileObject", "(Ljava/io/File;Ljava/lang/String;)Ljava/io/File;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#createFileObject(java.lang.String)"/>
@@ -246,7 +246,7 @@ namespace Javax.Swing.Filechooser
         /// <returns><see cref="Java.Io.File"/></returns>
         public Java.Io.File GetChild(Java.Io.File arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Io.File>("getChild", arg0, arg1);
+            return IExecuteWithSignature<Java.Io.File>("getChild", "(Ljava/io/File;Ljava/lang/String;)Ljava/io/File;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getLinkLocation(java.io.File)"/>
@@ -275,7 +275,7 @@ namespace Javax.Swing.Filechooser
         /// <returns><see cref="Java.Io.File"/></returns>
         public Java.Io.File[] GetFiles(Java.Io.File arg0, bool arg1)
         {
-            return IExecuteArray<Java.Io.File>("getFiles", arg0, arg1);
+            return IExecuteWithSignatureArray<Java.Io.File>("getFiles", "(Ljava/io/File;Z)[Ljava/io/File;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#isTraversable(java.io.File)"/>

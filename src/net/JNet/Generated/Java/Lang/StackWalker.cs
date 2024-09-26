@@ -202,7 +202,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.StackWalker"/></returns>
         public static Java.Lang.StackWalker GetInstance(Java.Util.Set<Java.Lang.StackWalker.Option> arg0, int arg1)
         {
-            return SExecute<Java.Lang.StackWalker>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.StackWalker>(LocalBridgeClazz, "getInstance", "(Ljava/util/Set;I)Ljava/lang/StackWalker;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.html#getInstance(java.util.Set)"/>

@@ -149,7 +149,7 @@ namespace Org.W3c.Dom.Events
         /// <param name="arg2"><see cref="bool"/></param>
         public void AddEventListener(Java.Lang.String arg0, Org.W3c.Dom.Events.EventListener arg1, bool arg2)
         {
-            IExecute("addEventListener", arg0, arg1, arg2);
+            IExecuteWithSignature("addEventListener", "(Ljava/lang/String;Lorg/w3c/dom/events/EventListener;Z)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventTarget.html#removeEventListener(java.lang.String,org.w3c.dom.events.EventListener,boolean)"/>
@@ -159,7 +159,7 @@ namespace Org.W3c.Dom.Events
         /// <param name="arg2"><see cref="bool"/></param>
         public void RemoveEventListener(Java.Lang.String arg0, Org.W3c.Dom.Events.EventListener arg1, bool arg2)
         {
-            IExecute("removeEventListener", arg0, arg1, arg2);
+            IExecuteWithSignature("removeEventListener", "(Ljava/lang/String;Lorg/w3c/dom/events/EventListener;Z)V", arg0, arg1, arg2);
         }
 
         #endregion

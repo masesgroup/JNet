@@ -523,7 +523,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void Populate(Java.Sql.ResultSet arg0, int arg1)
         {
-            IExecute("populate", arg0, arg1);
+            IExecuteWithSignature("populate", "(Ljava/sql/ResultSet;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#populate(java.sql.ResultSet)"/>
@@ -575,7 +575,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void RowSetPopulated(Javax.Sql.RowSetEvent arg0, int arg1)
         {
-            IExecute("rowSetPopulated", arg0, arg1);
+            IExecuteWithSignature("rowSetPopulated", "(Ljavax/sql/RowSetEvent;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#setMetaData(javax.sql.RowSetMetaData)"/>

@@ -147,7 +147,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public void Read(Java.Io.InputStream arg0, Javax.Swing.Text.Document arg1, int arg2)
         {
-            IExecute("read", arg0, arg1, arg2);
+            IExecuteWithSignature("read", "(Ljava/io/InputStream;Ljavax/swing/text/Document;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/EditorKit.html#read(java.io.Reader,javax.swing.text.Document,int)"/>
@@ -159,7 +159,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public void Read(Java.Io.Reader arg0, Javax.Swing.Text.Document arg1, int arg2)
         {
-            IExecute("read", arg0, arg1, arg2);
+            IExecuteWithSignature("read", "(Ljava/io/Reader;Ljavax/swing/text/Document;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/EditorKit.html#write(java.io.OutputStream,javax.swing.text.Document,int,int)"/>
@@ -172,7 +172,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public void Write(Java.Io.OutputStream arg0, Javax.Swing.Text.Document arg1, int arg2, int arg3)
         {
-            IExecute("write", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("write", "(Ljava/io/OutputStream;Ljavax/swing/text/Document;II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/EditorKit.html#write(java.io.Writer,javax.swing.text.Document,int,int)"/>
@@ -185,7 +185,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public void Write(Java.Io.Writer arg0, Javax.Swing.Text.Document arg1, int arg2, int arg3)
         {
-            IExecute("write", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("write", "(Ljava/io/Writer;Ljavax/swing/text/Document;II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/EditorKit.html#deinstall(javax.swing.JEditorPane)"/>

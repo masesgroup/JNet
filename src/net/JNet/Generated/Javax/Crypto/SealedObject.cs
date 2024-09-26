@@ -121,7 +121,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Security.InvalidKeyException"/>
         public object GetObject(Java.Security.Key arg0, Java.Lang.String arg1)
         {
-            return IExecute("getObject", arg0, arg1);
+            return IExecuteWithSignature("getObject", "(Ljava/security/Key;Ljava/lang/String;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SealedObject.html#getObject(java.security.Key)"/>

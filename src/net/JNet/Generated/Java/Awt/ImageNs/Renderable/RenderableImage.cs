@@ -246,7 +246,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="Java.Awt.ImageNs.RenderedImage"/></returns>
         public Java.Awt.ImageNs.RenderedImage CreateScaledRendering(int arg0, int arg1, Java.Awt.RenderingHints arg2)
         {
-            return IExecute<Java.Awt.ImageNs.RenderedImage>("createScaledRendering", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Awt.ImageNs.RenderedImage>("createScaledRendering", "(IILjava/awt/RenderingHints;)Ljava/awt/image/RenderedImage;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getProperty(java.lang.String)"/>

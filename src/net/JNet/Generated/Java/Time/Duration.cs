@@ -112,7 +112,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public static Java.Time.Duration Between(Java.Time.Temporal.Temporal arg0, Java.Time.Temporal.Temporal arg1)
         {
-            return SExecute<Java.Time.Duration>(LocalBridgeClazz, "between", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.Duration>(LocalBridgeClazz, "between", "(Ljava/time/temporal/Temporal;Ljava/time/temporal/Temporal;)Ljava/time/Duration;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#from(java.time.temporal.TemporalAmount)"/>
@@ -131,7 +131,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public static Java.Time.Duration Of(long arg0, Java.Time.Temporal.TemporalUnit arg1)
         {
-            return SExecute<Java.Time.Duration>(LocalBridgeClazz, "of", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.Duration>(LocalBridgeClazz, "of", "(JLjava/time/temporal/TemporalUnit;)Ljava/time/Duration;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#ofDays(long)"/>
@@ -186,7 +186,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public static Java.Time.Duration OfSeconds(long arg0, long arg1)
         {
-            return SExecute<Java.Time.Duration>(LocalBridgeClazz, "ofSeconds", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.Duration>(LocalBridgeClazz, "ofSeconds", "(JJ)Ljava/time/Duration;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#ofSeconds(long)"/>
@@ -339,7 +339,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public Java.Time.Duration Minus(long arg0, Java.Time.Temporal.TemporalUnit arg1)
         {
-            return IExecute<Java.Time.Duration>("minus", arg0, arg1);
+            return IExecuteWithSignature<Java.Time.Duration>("minus", "(JLjava/time/temporal/TemporalUnit;)Ljava/time/Duration;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#minusDays(long)"/>
@@ -429,7 +429,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public Java.Time.Duration Plus(long arg0, Java.Time.Temporal.TemporalUnit arg1)
         {
-            return IExecute<Java.Time.Duration>("plus", arg0, arg1);
+            return IExecuteWithSignature<Java.Time.Duration>("plus", "(JLjava/time/temporal/TemporalUnit;)Ljava/time/Duration;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#plusDays(long)"/>

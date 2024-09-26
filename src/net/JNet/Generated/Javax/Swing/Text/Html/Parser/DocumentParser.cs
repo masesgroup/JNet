@@ -107,7 +107,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <exception cref="Java.Io.IOException"/>
         public void Parse(Java.Io.Reader arg0, Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback arg1, bool arg2)
         {
-            IExecute("parse", arg0, arg1, arg2);
+            IExecuteWithSignature("parse", "(Ljava/io/Reader;Ljavax/swing/text/html/HTMLEditorKit$ParserCallback;Z)V", arg0, arg1, arg2);
         }
 
         #endregion

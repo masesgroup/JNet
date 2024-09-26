@@ -144,7 +144,7 @@ namespace Java.Awt.Dnd.Peer
         /// <exception cref="Java.Awt.Dnd.InvalidDnDOperationException"/>
         public void StartDrag(Java.Awt.Dnd.DragSourceContext arg0, Java.Awt.Cursor arg1, Java.Awt.Image arg2, Java.Awt.Point arg3)
         {
-            IExecute("startDrag", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("startDrag", "(Ljava/awt/dnd/DragSourceContext;Ljava/awt/Cursor;Ljava/awt/Image;Ljava/awt/Point;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DragSourceContextPeer.html#transferablesFlavorsChanged()"/>

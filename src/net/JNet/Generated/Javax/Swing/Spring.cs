@@ -103,7 +103,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Spring"/></returns>
         public static Javax.Swing.Spring Constant(int arg0, int arg1, int arg2)
         {
-            return SExecute<Javax.Swing.Spring>(LocalBridgeClazz, "constant", arg0, arg1, arg2);
+            return SExecuteWithSignature<Javax.Swing.Spring>(LocalBridgeClazz, "constant", "(III)Ljavax/swing/Spring;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#constant(int)"/>
@@ -131,7 +131,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Spring"/></returns>
         public static Javax.Swing.Spring Max(Javax.Swing.Spring arg0, Javax.Swing.Spring arg1)
         {
-            return SExecute<Javax.Swing.Spring>(LocalBridgeClazz, "max", arg0, arg1);
+            return SExecuteWithSignature<Javax.Swing.Spring>(LocalBridgeClazz, "max", "(Ljavax/swing/Spring;Ljavax/swing/Spring;)Ljavax/swing/Spring;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#minus(javax.swing.Spring)"/>
@@ -150,7 +150,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Spring"/></returns>
         public static Javax.Swing.Spring Scale(Javax.Swing.Spring arg0, float arg1)
         {
-            return SExecute<Javax.Swing.Spring>(LocalBridgeClazz, "scale", arg0, arg1);
+            return SExecuteWithSignature<Javax.Swing.Spring>(LocalBridgeClazz, "scale", "(Ljavax/swing/Spring;F)Ljavax/swing/Spring;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#sum(javax.swing.Spring,javax.swing.Spring)"/>
@@ -160,7 +160,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Spring"/></returns>
         public static Javax.Swing.Spring Sum(Javax.Swing.Spring arg0, Javax.Swing.Spring arg1)
         {
-            return SExecute<Javax.Swing.Spring>(LocalBridgeClazz, "sum", arg0, arg1);
+            return SExecuteWithSignature<Javax.Swing.Spring>(LocalBridgeClazz, "sum", "(Ljavax/swing/Spring;Ljavax/swing/Spring;)Ljavax/swing/Spring;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#width(java.awt.Component)"/>

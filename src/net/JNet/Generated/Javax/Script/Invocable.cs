@@ -163,7 +163,7 @@ namespace Javax.Script
         /// <returns><typeparamref name="T"/></returns>
         public T GetInterface<T>(object arg0, Java.Lang.Class arg1)
         {
-            return IExecute<T>("getInterface", arg0, arg1);
+            return IExecuteWithSignature<T>("getInterface", "(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html#invokeFunction(java.lang.String,java.lang.Object[])"/>
@@ -175,7 +175,7 @@ namespace Javax.Script
         /// <exception cref="Java.Lang.NoSuchMethodException"/>
         public object InvokeFunction(Java.Lang.String arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return IExecute("invokeFunction", arg0); else return IExecute("invokeFunction", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature("invokeFunction", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;", arg0); else return IExecuteWithSignature("invokeFunction", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html#invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[])"/>
@@ -188,7 +188,7 @@ namespace Javax.Script
         /// <exception cref="Java.Lang.NoSuchMethodException"/>
         public object InvokeMethod(object arg0, Java.Lang.String arg1, params object[] arg2)
         {
-            if (arg2.Length == 0) return IExecute("invokeMethod", arg0, arg1); else return IExecute("invokeMethod", arg0, arg1, arg2);
+            if (arg2.Length == 0) return IExecuteWithSignature("invokeMethod", "(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1); else return IExecuteWithSignature("invokeMethod", "(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
 
         #endregion

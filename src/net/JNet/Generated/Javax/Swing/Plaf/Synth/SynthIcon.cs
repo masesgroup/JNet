@@ -191,7 +191,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <param name="arg5"><see cref="int"/></param>
         public void PaintIcon(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
-            IExecute("paintIcon", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("paintIcon", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthIcon.html#paintIcon(java.awt.Component,java.awt.Graphics,int,int)"/>
@@ -202,7 +202,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <param name="arg3"><see cref="int"/></param>
         public void PaintIcon(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
         {
-            IExecute("paintIcon", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("paintIcon", "(Ljava/awt/Component;Ljava/awt/Graphics;II)V", arg0, arg1, arg2, arg3);
         }
 
         #endregion

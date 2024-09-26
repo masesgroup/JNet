@@ -127,7 +127,7 @@ namespace Javax.Xml.Crypto
         /// <exception cref="Javax.Xml.Crypto.URIReferenceException"/>
         public Javax.Xml.Crypto.Data Dereference(Javax.Xml.Crypto.URIReference arg0, Javax.Xml.Crypto.XMLCryptoContext arg1)
         {
-            return IExecute<Javax.Xml.Crypto.Data>("dereference", arg0, arg1);
+            return IExecuteWithSignature<Javax.Xml.Crypto.Data>("dereference", "(Ljavax/xml/crypto/URIReference;Ljavax/xml/crypto/XMLCryptoContext;)Ljavax/xml/crypto/Data;", arg0, arg1);
         }
 
         #endregion

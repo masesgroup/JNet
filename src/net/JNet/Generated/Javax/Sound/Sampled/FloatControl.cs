@@ -208,7 +208,7 @@ namespace Javax.Sound.Sampled
         /// <param name="arg2"><see cref="int"/></param>
         public void Shift(float arg0, float arg1, int arg2)
         {
-            IExecute("shift", arg0, arg1, arg2);
+            IExecuteWithSignature("shift", "(FFI)V", arg0, arg1, arg2);
         }
 
         #endregion

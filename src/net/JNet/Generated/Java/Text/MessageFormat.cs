@@ -156,7 +156,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String Format(Java.Lang.String arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Java.Lang.String>(LocalBridgeClazz, "format", arg0); else return SExecute<Java.Lang.String>(LocalBridgeClazz, "format", arg0, arg1);
+            if (arg1.Length == 0) return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", arg0); else return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", arg0, arg1);
         }
 
         #endregion
@@ -192,7 +192,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Lang.StringBuffer"/></returns>
         public Java.Lang.StringBuffer Format(object[] arg0, Java.Lang.StringBuffer arg1, Java.Text.FieldPosition arg2)
         {
-            return IExecute<Java.Lang.StringBuffer>("format", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.StringBuffer>("format", "([Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#parse(java.lang.String,java.text.ParsePosition)"/>
@@ -202,7 +202,7 @@ namespace Java.Text
         /// <returns><see cref="object"/></returns>
         public object[] Parse(Java.Lang.String arg0, Java.Text.ParsePosition arg1)
         {
-            return IExecuteArray<object>("parse", arg0, arg1);
+            return IExecuteWithSignatureArray<object>("parse", "(Ljava/lang/String;Ljava/text/ParsePosition;)[Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#parse(java.lang.String)"/>
@@ -237,7 +237,7 @@ namespace Java.Text
         /// <param name="arg1"><see cref="Java.Text.Format"/></param>
         public void SetFormat(int arg0, Java.Text.Format arg1)
         {
-            IExecute("setFormat", arg0, arg1);
+            IExecuteWithSignature("setFormat", "(ILjava/text/Format;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#setFormatByArgumentIndex(int,java.text.Format)"/>
@@ -246,7 +246,7 @@ namespace Java.Text
         /// <param name="arg1"><see cref="Java.Text.Format"/></param>
         public void SetFormatByArgumentIndex(int arg0, Java.Text.Format arg1)
         {
-            IExecute("setFormatByArgumentIndex", arg0, arg1);
+            IExecuteWithSignature("setFormatByArgumentIndex", "(ILjava/text/Format;)V", arg0, arg1);
         }
 
         #endregion

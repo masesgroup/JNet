@@ -162,7 +162,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Io.File CreateTempFile(Java.Lang.String arg0, Java.Lang.String arg1, Java.Io.File arg2)
         {
-            return SExecute<Java.Io.File>(LocalBridgeClazz, "createTempFile", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Io.File>(LocalBridgeClazz, "createTempFile", "(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;)Ljava/io/File;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#createTempFile(java.lang.String,java.lang.String)"/>
@@ -173,7 +173,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Io.File CreateTempFile(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Io.File>(LocalBridgeClazz, "createTempFile", arg0, arg1);
+            return SExecuteWithSignature<Java.Io.File>(LocalBridgeClazz, "createTempFile", "(Ljava/lang/String;Ljava/lang/String;)Ljava/io/File;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#listRoots()"/>
@@ -378,7 +378,7 @@ namespace Java.Io
         /// <returns><see cref="bool"/></returns>
         public bool SetExecutable(bool arg0, bool arg1)
         {
-            return IExecute<bool>("setExecutable", arg0, arg1);
+            return IExecuteWithSignature<bool>("setExecutable", "(ZZ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#setExecutable(boolean)"/>
@@ -406,7 +406,7 @@ namespace Java.Io
         /// <returns><see cref="bool"/></returns>
         public bool SetReadable(bool arg0, bool arg1)
         {
-            return IExecute<bool>("setReadable", arg0, arg1);
+            return IExecuteWithSignature<bool>("setReadable", "(ZZ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#setReadable(boolean)"/>
@@ -433,7 +433,7 @@ namespace Java.Io
         /// <returns><see cref="bool"/></returns>
         public bool SetWritable(bool arg0, bool arg1)
         {
-            return IExecute<bool>("setWritable", arg0, arg1);
+            return IExecuteWithSignature<bool>("setWritable", "(ZZ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#setWritable(boolean)"/>

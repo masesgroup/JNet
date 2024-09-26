@@ -304,7 +304,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static int ShowConfirmDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3, int arg4, Javax.Swing.Icon arg5)
         {
-            return SExecute<int>(LocalBridgeClazz, "showConfirmDialog", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "showConfirmDialog", "(Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;IILjavax/swing/Icon;)I", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showConfirmDialog(java.awt.Component,java.lang.Object,java.lang.String,int,int)"/>
@@ -318,7 +318,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static int ShowConfirmDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3, int arg4)
         {
-            return SExecute<int>(LocalBridgeClazz, "showConfirmDialog", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "showConfirmDialog", "(Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;II)I", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showConfirmDialog(java.awt.Component,java.lang.Object,java.lang.String,int)"/>
@@ -331,7 +331,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static int ShowConfirmDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3)
         {
-            return SExecute<int>(LocalBridgeClazz, "showConfirmDialog", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "showConfirmDialog", "(Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;I)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showConfirmDialog(java.awt.Component,java.lang.Object)"/>
@@ -342,7 +342,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static int ShowConfirmDialog(Java.Awt.Component arg0, object arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "showConfirmDialog", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "showConfirmDialog", "(Ljava/awt/Component;Ljava/lang/Object;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalConfirmDialog(java.awt.Component,java.lang.Object,java.lang.String,int,int,javax.swing.Icon)"/>
@@ -356,7 +356,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public static int ShowInternalConfirmDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3, int arg4, Javax.Swing.Icon arg5)
         {
-            return SExecute<int>(LocalBridgeClazz, "showInternalConfirmDialog", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "showInternalConfirmDialog", "(Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;IILjavax/swing/Icon;)I", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalConfirmDialog(java.awt.Component,java.lang.Object,java.lang.String,int,int)"/>
@@ -369,7 +369,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public static int ShowInternalConfirmDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3, int arg4)
         {
-            return SExecute<int>(LocalBridgeClazz, "showInternalConfirmDialog", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "showInternalConfirmDialog", "(Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;II)I", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalConfirmDialog(java.awt.Component,java.lang.Object,java.lang.String,int)"/>
@@ -381,7 +381,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public static int ShowInternalConfirmDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3)
         {
-            return SExecute<int>(LocalBridgeClazz, "showInternalConfirmDialog", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "showInternalConfirmDialog", "(Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;I)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalConfirmDialog(java.awt.Component,java.lang.Object)"/>
@@ -391,7 +391,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public static int ShowInternalConfirmDialog(Java.Awt.Component arg0, object arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "showInternalConfirmDialog", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "showInternalConfirmDialog", "(Ljava/awt/Component;Ljava/lang/Object;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalOptionDialog(java.awt.Component,java.lang.Object,java.lang.String,int,int,javax.swing.Icon,java.lang.Object[],java.lang.Object)"/>
@@ -407,7 +407,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public static int ShowInternalOptionDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3, int arg4, Javax.Swing.Icon arg5, object[] arg6, object arg7)
         {
-            return SExecute<int>(LocalBridgeClazz, "showInternalOptionDialog", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "showInternalOptionDialog", "(Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;IILjavax/swing/Icon;[Ljava/lang/Object;Ljava/lang/Object;)I", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showOptionDialog(java.awt.Component,java.lang.Object,java.lang.String,int,int,javax.swing.Icon,java.lang.Object[],java.lang.Object)"/>
@@ -424,7 +424,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static int ShowOptionDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3, int arg4, Javax.Swing.Icon arg5, object[] arg6, object arg7)
         {
-            return SExecute<int>(LocalBridgeClazz, "showOptionDialog", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "showOptionDialog", "(Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;IILjavax/swing/Icon;[Ljava/lang/Object;Ljava/lang/Object;)I", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#getFrameForComponent(java.awt.Component)"/>
@@ -450,7 +450,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static object ShowInputDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3, Javax.Swing.Icon arg4, object[] arg5, object arg6)
         {
-            return SExecute(LocalBridgeClazz, "showInputDialog", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return SExecuteWithSignature(LocalBridgeClazz, "showInputDialog", "(Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;ILjavax/swing/Icon;[Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalInputDialog(java.awt.Component,java.lang.Object,java.lang.String,int,javax.swing.Icon,java.lang.Object[],java.lang.Object)"/>
@@ -465,7 +465,7 @@ namespace Javax.Swing
         /// <returns><see cref="object"/></returns>
         public static object ShowInternalInputDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3, Javax.Swing.Icon arg4, object[] arg5, object arg6)
         {
-            return SExecute(LocalBridgeClazz, "showInternalInputDialog", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return SExecuteWithSignature(LocalBridgeClazz, "showInternalInputDialog", "(Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;ILjavax/swing/Icon;[Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInputDialog(java.awt.Component,java.lang.Object,java.lang.Object)"/>
@@ -476,7 +476,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ShowInputDialog(Java.Awt.Component arg0, object arg1, object arg2)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "showInputDialog", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "showInputDialog", "(Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInputDialog(java.awt.Component,java.lang.Object,java.lang.String,int)"/>
@@ -489,7 +489,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static Java.Lang.String ShowInputDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "showInputDialog", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "showInputDialog", "(Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;I)Ljava/lang/String;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInputDialog(java.awt.Component,java.lang.Object)"/>
@@ -500,7 +500,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static Java.Lang.String ShowInputDialog(Java.Awt.Component arg0, object arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "showInputDialog", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "showInputDialog", "(Ljava/awt/Component;Ljava/lang/Object;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInputDialog(java.lang.Object,java.lang.Object)"/>
@@ -510,7 +510,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ShowInputDialog(object arg0, object arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "showInputDialog", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "showInputDialog", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInputDialog(java.lang.Object)"/>
@@ -532,7 +532,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ShowInternalInputDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "showInternalInputDialog", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "showInternalInputDialog", "(Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;I)Ljava/lang/String;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalInputDialog(java.awt.Component,java.lang.Object)"/>
@@ -542,7 +542,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ShowInternalInputDialog(Java.Awt.Component arg0, object arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "showInternalInputDialog", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "showInternalInputDialog", "(Ljava/awt/Component;Ljava/lang/Object;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#getDesktopPaneForComponent(java.awt.Component)"/>
@@ -563,7 +563,7 @@ namespace Javax.Swing
         /// <param name="arg4"><see cref="Javax.Swing.Icon"/></param>
         public static void ShowInternalMessageDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3, Javax.Swing.Icon arg4)
         {
-            SExecute(LocalBridgeClazz, "showInternalMessageDialog", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "showInternalMessageDialog", "(Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;ILjavax/swing/Icon;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int)"/>
@@ -574,7 +574,7 @@ namespace Javax.Swing
         /// <param name="arg3"><see cref="int"/></param>
         public static void ShowInternalMessageDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "showInternalMessageDialog", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "showInternalMessageDialog", "(Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;I)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalMessageDialog(java.awt.Component,java.lang.Object)"/>
@@ -583,7 +583,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="object"/></param>
         public static void ShowInternalMessageDialog(Java.Awt.Component arg0, object arg1)
         {
-            SExecute(LocalBridgeClazz, "showInternalMessageDialog", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "showInternalMessageDialog", "(Ljava/awt/Component;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int,javax.swing.Icon)"/>
@@ -596,7 +596,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static void ShowMessageDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3, Javax.Swing.Icon arg4)
         {
-            SExecute(LocalBridgeClazz, "showMessageDialog", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "showMessageDialog", "(Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;ILjavax/swing/Icon;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int)"/>
@@ -608,7 +608,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static void ShowMessageDialog(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "showMessageDialog", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "showMessageDialog", "(Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;I)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showMessageDialog(java.awt.Component,java.lang.Object)"/>
@@ -618,7 +618,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static void ShowMessageDialog(Java.Awt.Component arg0, object arg1)
         {
-            SExecute(LocalBridgeClazz, "showMessageDialog", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "showMessageDialog", "(Ljava/awt/Component;Ljava/lang/Object;)V", arg0, arg1);
         }
 
         #endregion
@@ -717,7 +717,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public Javax.Swing.JDialog CreateDialog(Java.Awt.Component arg0, Java.Lang.String arg1)
         {
-            return IExecute<Javax.Swing.JDialog>("createDialog", arg0, arg1);
+            return IExecuteWithSignature<Javax.Swing.JDialog>("createDialog", "(Ljava/awt/Component;Ljava/lang/String;)Ljavax/swing/JDialog;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#createDialog(java.lang.String)"/>
@@ -737,7 +737,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.JInternalFrame"/></returns>
         public Javax.Swing.JInternalFrame CreateInternalFrame(Java.Awt.Component arg0, Java.Lang.String arg1)
         {
-            return IExecute<Javax.Swing.JInternalFrame>("createInternalFrame", arg0, arg1);
+            return IExecuteWithSignature<Javax.Swing.JInternalFrame>("createInternalFrame", "(Ljava/awt/Component;Ljava/lang/String;)Ljavax/swing/JInternalFrame;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#selectInitialValue()"/>

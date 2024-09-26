@@ -141,7 +141,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Text.Style"/></returns>
         public Javax.Swing.Text.Style AddStyle(Java.Lang.String arg0, Javax.Swing.Text.Style arg1)
         {
-            return IExecute<Javax.Swing.Text.Style>("addStyle", arg0, arg1);
+            return IExecuteWithSignature<Javax.Swing.Text.Style>("addStyle", "(Ljava/lang/String;Ljavax/swing/text/Style;)Ljavax/swing/text/Style;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextPane.html#getStyle(java.lang.String)"/>
@@ -183,7 +183,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetCharacterAttributes(Javax.Swing.Text.AttributeSet arg0, bool arg1)
         {
-            IExecute("setCharacterAttributes", arg0, arg1);
+            IExecuteWithSignature("setCharacterAttributes", "(Ljavax/swing/text/AttributeSet;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextPane.html#setParagraphAttributes(javax.swing.text.AttributeSet,boolean)"/>
@@ -192,7 +192,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetParagraphAttributes(Javax.Swing.Text.AttributeSet arg0, bool arg1)
         {
-            IExecute("setParagraphAttributes", arg0, arg1);
+            IExecuteWithSignature("setParagraphAttributes", "(Ljavax/swing/text/AttributeSet;Z)V", arg0, arg1);
         }
 
         #endregion

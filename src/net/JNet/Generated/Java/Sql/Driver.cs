@@ -198,7 +198,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Connection Connect(Java.Lang.String arg0, Java.Util.Properties arg1)
         {
-            return IExecute<Java.Sql.Connection>("connect", arg0, arg1);
+            return IExecuteWithSignature<Java.Sql.Connection>("connect", "(Ljava/lang/String;Ljava/util/Properties;)Ljava/sql/Connection;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html#getPropertyInfo(java.lang.String,java.util.Properties)"/>
@@ -209,7 +209,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.DriverPropertyInfo[] GetPropertyInfo(Java.Lang.String arg0, Java.Util.Properties arg1)
         {
-            return IExecuteArray<Java.Sql.DriverPropertyInfo>("getPropertyInfo", arg0, arg1);
+            return IExecuteWithSignatureArray<Java.Sql.DriverPropertyInfo>("getPropertyInfo", "(Ljava/lang/String;Ljava/util/Properties;)[Ljava/sql/DriverPropertyInfo;", arg0, arg1);
         }
 
         #endregion

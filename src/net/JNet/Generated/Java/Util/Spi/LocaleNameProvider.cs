@@ -100,7 +100,7 @@ namespace Java.Util.Spi
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDisplayCountry(Java.Lang.String arg0, Java.Util.Locale arg1)
         {
-            return IExecute<Java.Lang.String>("getDisplayCountry", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayCountry", "(Ljava/lang/String;Ljava/util/Locale;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/LocaleNameProvider.html#getDisplayLanguage(java.lang.String,java.util.Locale)"/>
@@ -110,7 +110,7 @@ namespace Java.Util.Spi
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDisplayLanguage(Java.Lang.String arg0, Java.Util.Locale arg1)
         {
-            return IExecute<Java.Lang.String>("getDisplayLanguage", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayLanguage", "(Ljava/lang/String;Ljava/util/Locale;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/LocaleNameProvider.html#getDisplayVariant(java.lang.String,java.util.Locale)"/>
@@ -120,7 +120,7 @@ namespace Java.Util.Spi
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDisplayVariant(Java.Lang.String arg0, Java.Util.Locale arg1)
         {
-            return IExecute<Java.Lang.String>("getDisplayVariant", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayVariant", "(Ljava/lang/String;Ljava/util/Locale;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/LocaleNameProvider.html#getDisplayScript(java.lang.String,java.util.Locale)"/>
@@ -130,7 +130,7 @@ namespace Java.Util.Spi
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDisplayScript(Java.Lang.String arg0, Java.Util.Locale arg1)
         {
-            return IExecute<Java.Lang.String>("getDisplayScript", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayScript", "(Ljava/lang/String;Ljava/util/Locale;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/LocaleNameProvider.html#getDisplayUnicodeExtensionKey(java.lang.String,java.util.Locale)"/>
@@ -140,7 +140,7 @@ namespace Java.Util.Spi
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDisplayUnicodeExtensionKey(Java.Lang.String arg0, Java.Util.Locale arg1)
         {
-            return IExecute<Java.Lang.String>("getDisplayUnicodeExtensionKey", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayUnicodeExtensionKey", "(Ljava/lang/String;Ljava/util/Locale;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/LocaleNameProvider.html#getDisplayUnicodeExtensionType(java.lang.String,java.lang.String,java.util.Locale)"/>
@@ -151,7 +151,7 @@ namespace Java.Util.Spi
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDisplayUnicodeExtensionType(Java.Lang.String arg0, Java.Lang.String arg1, Java.Util.Locale arg2)
         {
-            return IExecute<Java.Lang.String>("getDisplayUnicodeExtensionType", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayUnicodeExtensionType", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/Locale;)Ljava/lang/String;", arg0, arg1, arg2);
         }
 
         #endregion

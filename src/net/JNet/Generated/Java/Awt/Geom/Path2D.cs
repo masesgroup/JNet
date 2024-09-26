@@ -209,7 +209,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public static bool Contains(Java.Awt.Geom.PathIterator arg0, double arg1, double arg2, double arg3, double arg4)
         {
-            return SExecute<bool>(LocalBridgeClazz, "contains", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "contains", "(Ljava/awt/geom/PathIterator;DDDD)Z", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#contains(java.awt.geom.PathIterator,double,double)"/>
@@ -220,7 +220,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public static bool Contains(Java.Awt.Geom.PathIterator arg0, double arg1, double arg2)
         {
-            return SExecute<bool>(LocalBridgeClazz, "contains", arg0, arg1, arg2);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "contains", "(Ljava/awt/geom/PathIterator;DD)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#contains(java.awt.geom.PathIterator,java.awt.geom.Point2D)"/>
@@ -230,7 +230,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public static bool Contains(Java.Awt.Geom.PathIterator arg0, Java.Awt.Geom.Point2D arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "contains", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "contains", "(Ljava/awt/geom/PathIterator;Ljava/awt/geom/Point2D;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#contains(java.awt.geom.PathIterator,java.awt.geom.Rectangle2D)"/>
@@ -240,7 +240,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public static bool Contains(Java.Awt.Geom.PathIterator arg0, Java.Awt.Geom.Rectangle2D arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "contains", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "contains", "(Ljava/awt/geom/PathIterator;Ljava/awt/geom/Rectangle2D;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#intersects(java.awt.geom.PathIterator,double,double,double,double)"/>
@@ -253,7 +253,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public static bool Intersects(Java.Awt.Geom.PathIterator arg0, double arg1, double arg2, double arg3, double arg4)
         {
-            return SExecute<bool>(LocalBridgeClazz, "intersects", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "intersects", "(Ljava/awt/geom/PathIterator;DDDD)Z", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#intersects(java.awt.geom.PathIterator,java.awt.geom.Rectangle2D)"/>
@@ -263,7 +263,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public static bool Intersects(Java.Awt.Geom.PathIterator arg0, Java.Awt.Geom.Rectangle2D arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "intersects", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "intersects", "(Ljava/awt/geom/PathIterator;Ljava/awt/geom/Rectangle2D;)Z", arg0, arg1);
         }
 
         #endregion
@@ -297,7 +297,7 @@ namespace Java.Awt.Geom
         /// <param name="arg1"><see cref="bool"/></param>
         public void Append(Java.Awt.Geom.PathIterator arg0, bool arg1)
         {
-            IExecute("append", arg0, arg1);
+            IExecuteWithSignature("append", "(Ljava/awt/geom/PathIterator;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#curveTo(double,double,double,double,double,double)"/>
@@ -310,7 +310,7 @@ namespace Java.Awt.Geom
         /// <param name="arg5"><see cref="double"/></param>
         public void CurveTo(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
         {
-            IExecute("curveTo", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("curveTo", "(DDDDDD)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#lineTo(double,double)"/>
@@ -319,7 +319,7 @@ namespace Java.Awt.Geom
         /// <param name="arg1"><see cref="double"/></param>
         public void LineTo(double arg0, double arg1)
         {
-            IExecute("lineTo", arg0, arg1);
+            IExecuteWithSignature("lineTo", "(DD)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#moveTo(double,double)"/>
@@ -328,7 +328,7 @@ namespace Java.Awt.Geom
         /// <param name="arg1"><see cref="double"/></param>
         public void MoveTo(double arg0, double arg1)
         {
-            IExecute("moveTo", arg0, arg1);
+            IExecuteWithSignature("moveTo", "(DD)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#quadTo(double,double,double,double)"/>
@@ -339,7 +339,7 @@ namespace Java.Awt.Geom
         /// <param name="arg3"><see cref="double"/></param>
         public void QuadTo(double arg0, double arg1, double arg2, double arg3)
         {
-            IExecute("quadTo", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("quadTo", "(DDDD)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#transform(java.awt.geom.AffineTransform)"/>
@@ -366,7 +366,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool Contains(double arg0, double arg1, double arg2, double arg3)
         {
-            return IExecute<bool>("contains", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("contains", "(DDDD)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#contains(double,double)"/>
@@ -376,7 +376,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool Contains(double arg0, double arg1)
         {
-            return IExecute<bool>("contains", arg0, arg1);
+            return IExecuteWithSignature<bool>("contains", "(DD)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#contains(java.awt.geom.Point2D)"/>
@@ -406,7 +406,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool Intersects(double arg0, double arg1, double arg2, double arg3)
         {
-            return IExecute<bool>("intersects", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("intersects", "(DDDD)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#intersects(java.awt.geom.Rectangle2D)"/>
@@ -425,7 +425,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="Java.Awt.Geom.PathIterator"/></returns>
         public Java.Awt.Geom.PathIterator GetPathIterator(Java.Awt.Geom.AffineTransform arg0, double arg1)
         {
-            return IExecute<Java.Awt.Geom.PathIterator>("getPathIterator", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Geom.PathIterator>("getPathIterator", "(Ljava/awt/geom/AffineTransform;D)Ljava/awt/geom/PathIterator;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#createTransformedShape(java.awt.geom.AffineTransform)"/>
@@ -457,7 +457,7 @@ namespace Java.Awt.Geom
         /// <param name="arg1"><see cref="bool"/></param>
         public void Append(Java.Awt.Shape arg0, bool arg1)
         {
-            IExecute("append", arg0, arg1);
+            IExecuteWithSignature("append", "(Ljava/awt/Shape;Z)V", arg0, arg1);
         }
 
         #endregion
@@ -601,7 +601,7 @@ namespace Java.Awt.Geom
             /// <param name="arg5"><see cref="float"/></param>
             public void CurveTo(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5)
             {
-                IExecute("curveTo", arg0, arg1, arg2, arg3, arg4, arg5);
+                IExecuteWithSignature("curveTo", "(FFFFFF)V", arg0, arg1, arg2, arg3, arg4, arg5);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Float.html#lineTo(float,float)"/>
@@ -610,7 +610,7 @@ namespace Java.Awt.Geom
             /// <param name="arg1"><see cref="float"/></param>
             public void LineTo(float arg0, float arg1)
             {
-                IExecute("lineTo", arg0, arg1);
+                IExecuteWithSignature("lineTo", "(FF)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Float.html#moveTo(float,float)"/>
@@ -619,7 +619,7 @@ namespace Java.Awt.Geom
             /// <param name="arg1"><see cref="float"/></param>
             public void MoveTo(float arg0, float arg1)
             {
-                IExecute("moveTo", arg0, arg1);
+                IExecuteWithSignature("moveTo", "(FF)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Float.html#quadTo(float,float,float,float)"/>
@@ -630,7 +630,7 @@ namespace Java.Awt.Geom
             /// <param name="arg3"><see cref="float"/></param>
             public void QuadTo(float arg0, float arg1, float arg2, float arg3)
             {
-                IExecute("quadTo", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("quadTo", "(FFFF)V", arg0, arg1, arg2, arg3);
             }
 
             #endregion

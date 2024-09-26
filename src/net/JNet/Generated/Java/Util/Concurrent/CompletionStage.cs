@@ -148,7 +148,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage ThenCombine(Java.Util.Concurrent.CompletionStage arg0, Java.Util.Function.BiFunction arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage>("thenCombine", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("thenCombine", "(Ljava/util/concurrent/CompletionStage;Ljava/util/function/BiFunction;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#thenCombineAsync(java.util.concurrent.CompletionStage,java.util.function.BiFunction,java.util.concurrent.Executor)"/>
@@ -159,7 +159,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage ThenCombineAsync(Java.Util.Concurrent.CompletionStage arg0, Java.Util.Function.BiFunction arg1, Java.Util.Concurrent.Executor arg2)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage>("thenCombineAsync", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("thenCombineAsync", "(Ljava/util/concurrent/CompletionStage;Ljava/util/function/BiFunction;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletionStage;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#thenCombineAsync(java.util.concurrent.CompletionStage,java.util.function.BiFunction)"/>
@@ -169,7 +169,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage ThenCombineAsync(Java.Util.Concurrent.CompletionStage arg0, Java.Util.Function.BiFunction arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage>("thenCombineAsync", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("thenCombineAsync", "(Ljava/util/concurrent/CompletionStage;Ljava/util/function/BiFunction;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#thenAcceptBoth(java.util.concurrent.CompletionStage,java.util.function.BiConsumer)"/>
@@ -179,7 +179,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage ThenAcceptBoth(Java.Util.Concurrent.CompletionStage arg0, Java.Util.Function.BiConsumer arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage>("thenAcceptBoth", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("thenAcceptBoth", "(Ljava/util/concurrent/CompletionStage;Ljava/util/function/BiConsumer;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#thenAcceptBothAsync(java.util.concurrent.CompletionStage,java.util.function.BiConsumer,java.util.concurrent.Executor)"/>
@@ -190,7 +190,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage ThenAcceptBothAsync(Java.Util.Concurrent.CompletionStage arg0, Java.Util.Function.BiConsumer arg1, Java.Util.Concurrent.Executor arg2)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage>("thenAcceptBothAsync", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("thenAcceptBothAsync", "(Ljava/util/concurrent/CompletionStage;Ljava/util/function/BiConsumer;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletionStage;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#thenAcceptBothAsync(java.util.concurrent.CompletionStage,java.util.function.BiConsumer)"/>
@@ -200,7 +200,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage ThenAcceptBothAsync(Java.Util.Concurrent.CompletionStage arg0, Java.Util.Function.BiConsumer arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage>("thenAcceptBothAsync", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("thenAcceptBothAsync", "(Ljava/util/concurrent/CompletionStage;Ljava/util/function/BiConsumer;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#applyToEither(java.util.concurrent.CompletionStage,java.util.function.Function)"/>
@@ -210,7 +210,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage ApplyToEither(Java.Util.Concurrent.CompletionStage arg0, Java.Util.Function.Function arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage>("applyToEither", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("applyToEither", "(Ljava/util/concurrent/CompletionStage;Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#applyToEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Function,java.util.concurrent.Executor)"/>
@@ -221,7 +221,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage ApplyToEitherAsync(Java.Util.Concurrent.CompletionStage arg0, Java.Util.Function.Function arg1, Java.Util.Concurrent.Executor arg2)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage>("applyToEitherAsync", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("applyToEitherAsync", "(Ljava/util/concurrent/CompletionStage;Ljava/util/function/Function;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletionStage;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#applyToEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Function)"/>
@@ -231,7 +231,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage ApplyToEitherAsync(Java.Util.Concurrent.CompletionStage arg0, Java.Util.Function.Function arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage>("applyToEitherAsync", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("applyToEitherAsync", "(Ljava/util/concurrent/CompletionStage;Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#handle(java.util.function.BiFunction)"/>
@@ -250,7 +250,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage HandleAsync(Java.Util.Function.BiFunction arg0, Java.Util.Concurrent.Executor arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage>("handleAsync", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("handleAsync", "(Ljava/util/function/BiFunction;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#handleAsync(java.util.function.BiFunction)"/>
@@ -278,7 +278,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage ThenApplyAsync(Java.Util.Function.Function arg0, Java.Util.Concurrent.Executor arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage>("thenApplyAsync", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("thenApplyAsync", "(Ljava/util/function/Function;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#thenApplyAsync(java.util.function.Function)"/>
@@ -306,7 +306,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage ThenComposeAsync(Java.Util.Function.Function arg0, Java.Util.Concurrent.Executor arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage>("thenComposeAsync", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("thenComposeAsync", "(Ljava/util/function/Function;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#thenComposeAsync(java.util.function.Function)"/>
@@ -333,7 +333,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage AcceptEither(Java.Util.Concurrent.CompletionStage arg0, Java.Util.Function.Consumer arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage>("acceptEither", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("acceptEither", "(Ljava/util/concurrent/CompletionStage;Ljava/util/function/Consumer;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#acceptEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Consumer,java.util.concurrent.Executor)"/>
@@ -344,7 +344,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage AcceptEitherAsync(Java.Util.Concurrent.CompletionStage arg0, Java.Util.Function.Consumer arg1, Java.Util.Concurrent.Executor arg2)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage>("acceptEitherAsync", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("acceptEitherAsync", "(Ljava/util/concurrent/CompletionStage;Ljava/util/function/Consumer;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletionStage;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#acceptEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Consumer)"/>
@@ -354,7 +354,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage AcceptEitherAsync(Java.Util.Concurrent.CompletionStage arg0, Java.Util.Function.Consumer arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage>("acceptEitherAsync", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("acceptEitherAsync", "(Ljava/util/concurrent/CompletionStage;Ljava/util/function/Consumer;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#runAfterBoth(java.util.concurrent.CompletionStage,java.lang.Runnable)"/>
@@ -364,7 +364,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage RunAfterBoth(Java.Util.Concurrent.CompletionStage arg0, Java.Lang.Runnable arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage>("runAfterBoth", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("runAfterBoth", "(Ljava/util/concurrent/CompletionStage;Ljava/lang/Runnable;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#runAfterBothAsync(java.util.concurrent.CompletionStage,java.lang.Runnable,java.util.concurrent.Executor)"/>
@@ -375,7 +375,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage RunAfterBothAsync(Java.Util.Concurrent.CompletionStage arg0, Java.Lang.Runnable arg1, Java.Util.Concurrent.Executor arg2)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage>("runAfterBothAsync", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("runAfterBothAsync", "(Ljava/util/concurrent/CompletionStage;Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletionStage;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#runAfterBothAsync(java.util.concurrent.CompletionStage,java.lang.Runnable)"/>
@@ -385,7 +385,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage RunAfterBothAsync(Java.Util.Concurrent.CompletionStage arg0, Java.Lang.Runnable arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage>("runAfterBothAsync", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("runAfterBothAsync", "(Ljava/util/concurrent/CompletionStage;Ljava/lang/Runnable;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#runAfterEither(java.util.concurrent.CompletionStage,java.lang.Runnable)"/>
@@ -395,7 +395,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage RunAfterEither(Java.Util.Concurrent.CompletionStage arg0, Java.Lang.Runnable arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage>("runAfterEither", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("runAfterEither", "(Ljava/util/concurrent/CompletionStage;Ljava/lang/Runnable;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#runAfterEitherAsync(java.util.concurrent.CompletionStage,java.lang.Runnable,java.util.concurrent.Executor)"/>
@@ -406,7 +406,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage RunAfterEitherAsync(Java.Util.Concurrent.CompletionStage arg0, Java.Lang.Runnable arg1, Java.Util.Concurrent.Executor arg2)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage>("runAfterEitherAsync", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("runAfterEitherAsync", "(Ljava/util/concurrent/CompletionStage;Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletionStage;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#runAfterEitherAsync(java.util.concurrent.CompletionStage,java.lang.Runnable)"/>
@@ -416,7 +416,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage RunAfterEitherAsync(Java.Util.Concurrent.CompletionStage arg0, Java.Lang.Runnable arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage>("runAfterEitherAsync", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("runAfterEitherAsync", "(Ljava/util/concurrent/CompletionStage;Ljava/lang/Runnable;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#thenAccept(java.util.function.Consumer)"/>
@@ -435,7 +435,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage ThenAcceptAsync(Java.Util.Function.Consumer arg0, Java.Util.Concurrent.Executor arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage>("thenAcceptAsync", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("thenAcceptAsync", "(Ljava/util/function/Consumer;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#thenAcceptAsync(java.util.function.Consumer)"/>
@@ -463,7 +463,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage ThenRunAsync(Java.Lang.Runnable arg0, Java.Util.Concurrent.Executor arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage>("thenRunAsync", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("thenRunAsync", "(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#thenRunAsync(java.lang.Runnable)"/>
@@ -500,7 +500,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage WhenCompleteAsync(Java.Util.Function.BiConsumer arg0, Java.Util.Concurrent.Executor arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage>("whenCompleteAsync", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("whenCompleteAsync", "(Ljava/util/function/BiConsumer;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#whenCompleteAsync(java.util.function.BiConsumer)"/>
@@ -917,7 +917,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<V> ThenCombine<V, Arg0ExtendsU, U, Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV>(Java.Util.Concurrent.CompletionStage<Arg0ExtendsU> arg0, Java.Util.Function.BiFunction<Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV> arg1) where Arg0ExtendsU : U where Arg1objectSuperT : T where Arg1objectSuperU : U where Arg1ExtendsV : V
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage<V>>("thenCombine", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<V>>("thenCombine", "(Ljava/util/concurrent/CompletionStage;Ljava/util/function/BiFunction;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#thenCombineAsync(java.util.concurrent.CompletionStage,java.util.function.BiFunction,java.util.concurrent.Executor)"/>
@@ -934,7 +934,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<V> ThenCombineAsync<V, Arg0ExtendsU, U, Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV>(Java.Util.Concurrent.CompletionStage<Arg0ExtendsU> arg0, Java.Util.Function.BiFunction<Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV> arg1, Java.Util.Concurrent.Executor arg2) where Arg0ExtendsU : U where Arg1objectSuperT : T where Arg1objectSuperU : U where Arg1ExtendsV : V
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage<V>>("thenCombineAsync", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<V>>("thenCombineAsync", "(Ljava/util/concurrent/CompletionStage;Ljava/util/function/BiFunction;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletionStage;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#thenCombineAsync(java.util.concurrent.CompletionStage,java.util.function.BiFunction)"/>
@@ -950,7 +950,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<V> ThenCombineAsync<V, Arg0ExtendsU, U, Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV>(Java.Util.Concurrent.CompletionStage<Arg0ExtendsU> arg0, Java.Util.Function.BiFunction<Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV> arg1) where Arg0ExtendsU : U where Arg1objectSuperT : T where Arg1objectSuperU : U where Arg1ExtendsV : V
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage<V>>("thenCombineAsync", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<V>>("thenCombineAsync", "(Ljava/util/concurrent/CompletionStage;Ljava/util/function/BiFunction;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#thenAcceptBoth(java.util.concurrent.CompletionStage,java.util.function.BiConsumer)"/>
@@ -964,7 +964,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> ThenAcceptBoth<Arg0ExtendsU, U, Arg1objectSuperT, Arg1objectSuperU>(Java.Util.Concurrent.CompletionStage<Arg0ExtendsU> arg0, Java.Util.Function.BiConsumer<Arg1objectSuperT, Arg1objectSuperU> arg1) where Arg0ExtendsU : U where Arg1objectSuperT : T where Arg1objectSuperU : U
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("thenAcceptBoth", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("thenAcceptBoth", "(Ljava/util/concurrent/CompletionStage;Ljava/util/function/BiConsumer;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#thenAcceptBothAsync(java.util.concurrent.CompletionStage,java.util.function.BiConsumer,java.util.concurrent.Executor)"/>
@@ -979,7 +979,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> ThenAcceptBothAsync<Arg0ExtendsU, U, Arg1objectSuperT, Arg1objectSuperU>(Java.Util.Concurrent.CompletionStage<Arg0ExtendsU> arg0, Java.Util.Function.BiConsumer<Arg1objectSuperT, Arg1objectSuperU> arg1, Java.Util.Concurrent.Executor arg2) where Arg0ExtendsU : U where Arg1objectSuperT : T where Arg1objectSuperU : U
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("thenAcceptBothAsync", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("thenAcceptBothAsync", "(Ljava/util/concurrent/CompletionStage;Ljava/util/function/BiConsumer;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletionStage;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#thenAcceptBothAsync(java.util.concurrent.CompletionStage,java.util.function.BiConsumer)"/>
@@ -993,7 +993,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> ThenAcceptBothAsync<Arg0ExtendsU, U, Arg1objectSuperT, Arg1objectSuperU>(Java.Util.Concurrent.CompletionStage<Arg0ExtendsU> arg0, Java.Util.Function.BiConsumer<Arg1objectSuperT, Arg1objectSuperU> arg1) where Arg0ExtendsU : U where Arg1objectSuperT : T where Arg1objectSuperU : U
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("thenAcceptBothAsync", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("thenAcceptBothAsync", "(Ljava/util/concurrent/CompletionStage;Ljava/util/function/BiConsumer;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#applyToEither(java.util.concurrent.CompletionStage,java.util.function.Function)"/>
@@ -1006,7 +1006,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<U> ApplyToEither<U, Arg0ExtendsT, Arg1objectSuperT>(Java.Util.Concurrent.CompletionStage<Arg0ExtendsT> arg0, Java.Util.Function.Function<Arg1objectSuperT, U> arg1) where Arg0ExtendsT : T where Arg1objectSuperT : T
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage<U>>("applyToEither", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<U>>("applyToEither", "(Ljava/util/concurrent/CompletionStage;Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#applyToEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Function,java.util.concurrent.Executor)"/>
@@ -1020,7 +1020,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<U> ApplyToEitherAsync<U, Arg0ExtendsT, Arg1objectSuperT>(Java.Util.Concurrent.CompletionStage<Arg0ExtendsT> arg0, Java.Util.Function.Function<Arg1objectSuperT, U> arg1, Java.Util.Concurrent.Executor arg2) where Arg0ExtendsT : T where Arg1objectSuperT : T
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage<U>>("applyToEitherAsync", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<U>>("applyToEitherAsync", "(Ljava/util/concurrent/CompletionStage;Ljava/util/function/Function;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletionStage;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#applyToEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Function)"/>
@@ -1033,7 +1033,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<U> ApplyToEitherAsync<U, Arg0ExtendsT, Arg1objectSuperT>(Java.Util.Concurrent.CompletionStage<Arg0ExtendsT> arg0, Java.Util.Function.Function<Arg1objectSuperT, U> arg1) where Arg0ExtendsT : T where Arg1objectSuperT : T
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage<U>>("applyToEitherAsync", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<U>>("applyToEitherAsync", "(Ljava/util/concurrent/CompletionStage;Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#handle(java.util.function.BiFunction)"/>
@@ -1058,7 +1058,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<U> HandleAsync<U, Arg0objectSuperT, Arg0ExtendsU>(Java.Util.Function.BiFunction<Arg0objectSuperT, Java.Lang.Throwable, Arg0ExtendsU> arg0, Java.Util.Concurrent.Executor arg1) where Arg0objectSuperT : T where Arg0ExtendsU : U
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage<U>>("handleAsync", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<U>>("handleAsync", "(Ljava/util/function/BiFunction;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#handleAsync(java.util.function.BiFunction)"/>
@@ -1095,7 +1095,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<U> ThenApplyAsync<U, Arg0objectSuperT, Arg0ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsU> arg0, Java.Util.Concurrent.Executor arg1) where Arg0objectSuperT : T where Arg0ExtendsU : U
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage<U>>("thenApplyAsync", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<U>>("thenApplyAsync", "(Ljava/util/function/Function;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#thenApplyAsync(java.util.function.Function)"/>
@@ -1132,7 +1132,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<U> ThenComposeAsync<U, Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_> arg0, Java.Util.Concurrent.Executor arg1) where Arg0objectSuperT : T where Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_ : Java.Util.Concurrent.CompletionStage<U>
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage<U>>("thenComposeAsync", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<U>>("thenComposeAsync", "(Ljava/util/function/Function;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#thenComposeAsync(java.util.function.Function)"/>
@@ -1164,7 +1164,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> AcceptEither<Arg0ExtendsT, Arg1objectSuperT>(Java.Util.Concurrent.CompletionStage<Arg0ExtendsT> arg0, Java.Util.Function.Consumer<Arg1objectSuperT> arg1) where Arg0ExtendsT : T where Arg1objectSuperT : T
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("acceptEither", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("acceptEither", "(Ljava/util/concurrent/CompletionStage;Ljava/util/function/Consumer;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#acceptEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Consumer,java.util.concurrent.Executor)"/>
@@ -1177,7 +1177,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> AcceptEitherAsync<Arg0ExtendsT, Arg1objectSuperT>(Java.Util.Concurrent.CompletionStage<Arg0ExtendsT> arg0, Java.Util.Function.Consumer<Arg1objectSuperT> arg1, Java.Util.Concurrent.Executor arg2) where Arg0ExtendsT : T where Arg1objectSuperT : T
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("acceptEitherAsync", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("acceptEitherAsync", "(Ljava/util/concurrent/CompletionStage;Ljava/util/function/Consumer;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletionStage;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#acceptEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Consumer)"/>
@@ -1189,7 +1189,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> AcceptEitherAsync<Arg0ExtendsT, Arg1objectSuperT>(Java.Util.Concurrent.CompletionStage<Arg0ExtendsT> arg0, Java.Util.Function.Consumer<Arg1objectSuperT> arg1) where Arg0ExtendsT : T where Arg1objectSuperT : T
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("acceptEitherAsync", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("acceptEitherAsync", "(Ljava/util/concurrent/CompletionStage;Ljava/util/function/Consumer;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#runAfterBoth(java.util.concurrent.CompletionStage,java.lang.Runnable)"/>
@@ -1199,7 +1199,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterBoth(Java.Util.Concurrent.CompletionStage<object> arg0, Java.Lang.Runnable arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("runAfterBoth", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("runAfterBoth", "(Ljava/util/concurrent/CompletionStage;Ljava/lang/Runnable;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#runAfterBothAsync(java.util.concurrent.CompletionStage,java.lang.Runnable,java.util.concurrent.Executor)"/>
@@ -1210,7 +1210,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterBothAsync(Java.Util.Concurrent.CompletionStage<object> arg0, Java.Lang.Runnable arg1, Java.Util.Concurrent.Executor arg2)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("runAfterBothAsync", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("runAfterBothAsync", "(Ljava/util/concurrent/CompletionStage;Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletionStage;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#runAfterBothAsync(java.util.concurrent.CompletionStage,java.lang.Runnable)"/>
@@ -1220,7 +1220,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterBothAsync(Java.Util.Concurrent.CompletionStage<object> arg0, Java.Lang.Runnable arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("runAfterBothAsync", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("runAfterBothAsync", "(Ljava/util/concurrent/CompletionStage;Ljava/lang/Runnable;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#runAfterEither(java.util.concurrent.CompletionStage,java.lang.Runnable)"/>
@@ -1230,7 +1230,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterEither(Java.Util.Concurrent.CompletionStage<object> arg0, Java.Lang.Runnable arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("runAfterEither", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("runAfterEither", "(Ljava/util/concurrent/CompletionStage;Ljava/lang/Runnable;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#runAfterEitherAsync(java.util.concurrent.CompletionStage,java.lang.Runnable,java.util.concurrent.Executor)"/>
@@ -1241,7 +1241,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterEitherAsync(Java.Util.Concurrent.CompletionStage<object> arg0, Java.Lang.Runnable arg1, Java.Util.Concurrent.Executor arg2)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("runAfterEitherAsync", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("runAfterEitherAsync", "(Ljava/util/concurrent/CompletionStage;Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletionStage;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#runAfterEitherAsync(java.util.concurrent.CompletionStage,java.lang.Runnable)"/>
@@ -1251,7 +1251,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterEitherAsync(Java.Util.Concurrent.CompletionStage<object> arg0, Java.Lang.Runnable arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("runAfterEitherAsync", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("runAfterEitherAsync", "(Ljava/util/concurrent/CompletionStage;Ljava/lang/Runnable;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#thenAccept(java.util.function.Consumer)"/>
@@ -1272,7 +1272,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> ThenAcceptAsync<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0, Java.Util.Concurrent.Executor arg1) where Arg0objectSuperT : T
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("thenAcceptAsync", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("thenAcceptAsync", "(Ljava/util/function/Consumer;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#thenAcceptAsync(java.util.function.Consumer)"/>
@@ -1301,7 +1301,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> ThenRunAsync(Java.Lang.Runnable arg0, Java.Util.Concurrent.Executor arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("thenRunAsync", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("thenRunAsync", "(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#thenRunAsync(java.lang.Runnable)"/>
@@ -1343,7 +1343,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<T> WhenCompleteAsync<Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable>(Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable> arg0, Java.Util.Concurrent.Executor arg1) where Arg0objectSuperT : T where Arg0objectSuperJava_Lang_Throwable : Java.Lang.Throwable
         {
-            return IExecute<Java.Util.Concurrent.CompletionStage<T>>("whenCompleteAsync", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<T>>("whenCompleteAsync", "(Ljava/util/function/BiConsumer;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#whenCompleteAsync(java.util.function.BiConsumer)"/>

@@ -120,7 +120,7 @@ namespace Javax.Crypto.Spec
         /// <exception cref="Java.Security.InvalidKeyException"/>
         public static bool IsParityAdjusted(byte[] arg0, int arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isParityAdjusted", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isParityAdjusted", "([BI)Z", arg0, arg1);
         }
 
         #endregion

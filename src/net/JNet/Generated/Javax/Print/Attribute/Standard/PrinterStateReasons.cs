@@ -150,7 +150,7 @@ namespace Javax.Print.Attribute.Standard
         /// <returns><see cref="Javax.Print.Attribute.Standard.Severity"/></returns>
         public Javax.Print.Attribute.Standard.Severity Put(Javax.Print.Attribute.Standard.PrinterStateReason arg0, Javax.Print.Attribute.Standard.Severity arg1)
         {
-            return IExecute<Javax.Print.Attribute.Standard.Severity>("put", arg0, arg1);
+            return IExecuteWithSignature<Javax.Print.Attribute.Standard.Severity>("put", "(Ljavax/print/attribute/standard/PrinterStateReason;Ljavax/print/attribute/standard/Severity;)Ljavax/print/attribute/standard/Severity;", arg0, arg1);
         }
 
         #endregion

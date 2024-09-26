@@ -127,7 +127,7 @@ namespace Org.W3c.Dom.Css
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Css.CSSStyleSheet CreateCSSStyleSheet(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Org.W3c.Dom.Css.CSSStyleSheet>("createCSSStyleSheet", arg0, arg1);
+            return IExecuteWithSignature<Org.W3c.Dom.Css.CSSStyleSheet>("createCSSStyleSheet", "(Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/css/CSSStyleSheet;", arg0, arg1);
         }
 
         #endregion

@@ -191,7 +191,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
         public void IfPresentOrElse(Java.Util.Function.DoubleConsumer arg0, Java.Lang.Runnable arg1)
         {
-            IExecute("ifPresentOrElse", arg0, arg1);
+            IExecuteWithSignature("ifPresentOrElse", "(Ljava/util/function/DoubleConsumer;Ljava/lang/Runnable;)V", arg0, arg1);
         }
 
         #endregion

@@ -110,7 +110,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
         public static Java.Nio.ShortBuffer Wrap(short[] arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Nio.ShortBuffer>(LocalBridgeClazz, "wrap", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Nio.ShortBuffer>(LocalBridgeClazz, "wrap", "([SII)Ljava/nio/ShortBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#wrap(short[])"/>
@@ -157,7 +157,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
         public Java.Nio.ShortBuffer Put(int arg0, short arg1)
         {
-            return IExecute<Java.Nio.ShortBuffer>("put", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.ShortBuffer>("put", "(IS)Ljava/nio/ShortBuffer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#put(short)"/>
@@ -230,7 +230,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
         public Java.Nio.ShortBuffer Get(short[] arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Nio.ShortBuffer>("get", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Nio.ShortBuffer>("get", "([SII)Ljava/nio/ShortBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#get(short[])"/>
@@ -259,7 +259,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
         public Java.Nio.ShortBuffer Put(short[] arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Nio.ShortBuffer>("put", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Nio.ShortBuffer>("put", "([SII)Ljava/nio/ShortBuffer;", arg0, arg1, arg2);
         }
 
         #endregion

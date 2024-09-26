@@ -119,7 +119,7 @@ namespace Org.Xml.Sax.Ext
         /// <returns><see cref="bool"/></returns>
         public bool IsDeclared(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("isDeclared", arg0, arg1);
+            return IExecuteWithSignature<bool>("isDeclared", "(Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Attributes2Impl.html#isDeclared(java.lang.String)"/>
@@ -147,7 +147,7 @@ namespace Org.Xml.Sax.Ext
         /// <returns><see cref="bool"/></returns>
         public bool IsSpecified(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("isSpecified", arg0, arg1);
+            return IExecuteWithSignature<bool>("isSpecified", "(Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Attributes2Impl.html#isSpecified(java.lang.String)"/>
@@ -165,7 +165,7 @@ namespace Org.Xml.Sax.Ext
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetDeclared(int arg0, bool arg1)
         {
-            IExecute("setDeclared", arg0, arg1);
+            IExecuteWithSignature("setDeclared", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Attributes2Impl.html#setSpecified(int,boolean)"/>
@@ -174,7 +174,7 @@ namespace Org.Xml.Sax.Ext
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetSpecified(int arg0, bool arg1)
         {
-            IExecute("setSpecified", arg0, arg1);
+            IExecuteWithSignature("setSpecified", "(IZ)V", arg0, arg1);
         }
 
         #endregion

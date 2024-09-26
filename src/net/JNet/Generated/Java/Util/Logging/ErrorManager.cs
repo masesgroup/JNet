@@ -134,7 +134,7 @@ namespace Java.Util.Logging
         /// <param name="arg2"><see cref="int"/></param>
         public void Error(Java.Lang.String arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1, int arg2)
         {
-            IExecute("error", arg0, arg1, arg2);
+            IExecuteWithSignature("error", "(Ljava/lang/String;Ljava/lang/Exception;I)V", arg0, arg1, arg2);
         }
 
         #endregion

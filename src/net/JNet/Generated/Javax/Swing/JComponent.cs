@@ -388,7 +388,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="object"/></param>
         public void PutClientProperty(object arg0, object arg1)
         {
-            IExecute("putClientProperty", arg0, arg1);
+            IExecuteWithSignature("putClientProperty", "(Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setInputMap(int,javax.swing.InputMap)"/>
@@ -397,7 +397,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="Javax.Swing.InputMap"/></param>
         public void SetInputMap(int arg0, Javax.Swing.InputMap arg1)
         {
-            IExecute("setInputMap", arg0, arg1);
+            IExecuteWithSignature("setInputMap", "(ILjavax/swing/InputMap;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getConditionForKeyStroke(javax.swing.KeyStroke)"/>
@@ -510,7 +510,7 @@ namespace Javax.Swing
         /// <param name="arg2"><see cref="bool"/></param>
         public void FirePropertyChange(Java.Lang.String arg0, bool arg1, bool arg2)
         {
-            IExecute("firePropertyChange", arg0, arg1, arg2);
+            IExecuteWithSignature("firePropertyChange", "(Ljava/lang/String;ZZ)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#firePropertyChange(java.lang.String,int,int)"/>
@@ -520,7 +520,7 @@ namespace Javax.Swing
         /// <param name="arg2"><see cref="int"/></param>
         public void FirePropertyChange(Java.Lang.String arg0, int arg1, int arg2)
         {
-            IExecute("firePropertyChange", arg0, arg1, arg2);
+            IExecuteWithSignature("firePropertyChange", "(Ljava/lang/String;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#grabFocus()"/>
@@ -538,7 +538,7 @@ namespace Javax.Swing
         /// <param name="arg3"><see cref="int"/></param>
         public void PaintImmediately(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("paintImmediately", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("paintImmediately", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#paintImmediately(java.awt.Rectangle)"/>
@@ -557,7 +557,7 @@ namespace Javax.Swing
         /// <param name="arg3"><see cref="int"/></param>
         public void RegisterKeyboardAction(Java.Awt.EventNs.ActionListener arg0, Java.Lang.String arg1, Javax.Swing.KeyStroke arg2, int arg3)
         {
-            IExecute("registerKeyboardAction", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("registerKeyboardAction", "(Ljava/awt/event/ActionListener;Ljava/lang/String;Ljavax/swing/KeyStroke;I)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#registerKeyboardAction(java.awt.event.ActionListener,javax.swing.KeyStroke,int)"/>
@@ -567,7 +567,7 @@ namespace Javax.Swing
         /// <param name="arg2"><see cref="int"/></param>
         public void RegisterKeyboardAction(Java.Awt.EventNs.ActionListener arg0, Javax.Swing.KeyStroke arg1, int arg2)
         {
-            IExecute("registerKeyboardAction", arg0, arg1, arg2);
+            IExecuteWithSignature("registerKeyboardAction", "(Ljava/awt/event/ActionListener;Ljavax/swing/KeyStroke;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#removeAncestorListener(javax.swing.event.AncestorListener)"/>

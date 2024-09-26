@@ -119,7 +119,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public Java.Lang.String GetString(int arg0, int arg1)
         {
-            return IExecute<Java.Lang.String>("getString", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getString", "(II)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GapContent.html#createPosition(int)"/>
@@ -140,7 +140,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public Javax.Swing.Undo.UndoableEdit InsertString(int arg0, Java.Lang.String arg1)
         {
-            return IExecute<Javax.Swing.Undo.UndoableEdit>("insertString", arg0, arg1);
+            return IExecuteWithSignature<Javax.Swing.Undo.UndoableEdit>("insertString", "(ILjava/lang/String;)Ljavax/swing/undo/UndoableEdit;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GapContent.html#remove(int,int)"/>
@@ -151,7 +151,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public Javax.Swing.Undo.UndoableEdit Remove(int arg0, int arg1)
         {
-            return IExecute<Javax.Swing.Undo.UndoableEdit>("remove", arg0, arg1);
+            return IExecuteWithSignature<Javax.Swing.Undo.UndoableEdit>("remove", "(II)Ljavax/swing/undo/UndoableEdit;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GapContent.html#getChars(int,int,javax.swing.text.Segment)"/>
@@ -162,7 +162,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public void GetChars(int arg0, int arg1, Javax.Swing.Text.Segment arg2)
         {
-            IExecute("getChars", arg0, arg1, arg2);
+            IExecuteWithSignature("getChars", "(IILjavax/swing/text/Segment;)V", arg0, arg1, arg2);
         }
 
         #endregion

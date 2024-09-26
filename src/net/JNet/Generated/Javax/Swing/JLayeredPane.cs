@@ -157,7 +157,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public static void PutLayer(Javax.Swing.JComponent arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "putLayer", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "putLayer", "(Ljavax/swing/JComponent;I)V", arg0, arg1);
         }
 
         #endregion
@@ -248,7 +248,7 @@ namespace Javax.Swing
         /// <param name="arg2"><see cref="int"/></param>
         public void SetLayer(Java.Awt.Component arg0, int arg1, int arg2)
         {
-            IExecute("setLayer", arg0, arg1, arg2);
+            IExecuteWithSignature("setLayer", "(Ljava/awt/Component;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#setLayer(java.awt.Component,int)"/>
@@ -257,7 +257,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void SetLayer(Java.Awt.Component arg0, int arg1)
         {
-            IExecute("setLayer", arg0, arg1);
+            IExecuteWithSignature("setLayer", "(Ljava/awt/Component;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#setPosition(java.awt.Component,int)"/>
@@ -266,7 +266,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void SetPosition(Java.Awt.Component arg0, int arg1)
         {
-            IExecute("setPosition", arg0, arg1);
+            IExecuteWithSignature("setPosition", "(Ljava/awt/Component;I)V", arg0, arg1);
         }
 
         #endregion

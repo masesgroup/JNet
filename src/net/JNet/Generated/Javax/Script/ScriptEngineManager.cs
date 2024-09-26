@@ -155,7 +155,7 @@ namespace Javax.Script
         /// <param name="arg1"><see cref="object"/></param>
         public void Put(Java.Lang.String arg0, object arg1)
         {
-            IExecute("put", arg0, arg1);
+            IExecuteWithSignature("put", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineManager.html#registerEngineExtension(java.lang.String,javax.script.ScriptEngineFactory)"/>
@@ -164,7 +164,7 @@ namespace Javax.Script
         /// <param name="arg1"><see cref="Javax.Script.ScriptEngineFactory"/></param>
         public void RegisterEngineExtension(Java.Lang.String arg0, Javax.Script.ScriptEngineFactory arg1)
         {
-            IExecute("registerEngineExtension", arg0, arg1);
+            IExecuteWithSignature("registerEngineExtension", "(Ljava/lang/String;Ljavax/script/ScriptEngineFactory;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineManager.html#registerEngineMimeType(java.lang.String,javax.script.ScriptEngineFactory)"/>
@@ -173,7 +173,7 @@ namespace Javax.Script
         /// <param name="arg1"><see cref="Javax.Script.ScriptEngineFactory"/></param>
         public void RegisterEngineMimeType(Java.Lang.String arg0, Javax.Script.ScriptEngineFactory arg1)
         {
-            IExecute("registerEngineMimeType", arg0, arg1);
+            IExecuteWithSignature("registerEngineMimeType", "(Ljava/lang/String;Ljavax/script/ScriptEngineFactory;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineManager.html#registerEngineName(java.lang.String,javax.script.ScriptEngineFactory)"/>
@@ -182,7 +182,7 @@ namespace Javax.Script
         /// <param name="arg1"><see cref="Javax.Script.ScriptEngineFactory"/></param>
         public void RegisterEngineName(Java.Lang.String arg0, Javax.Script.ScriptEngineFactory arg1)
         {
-            IExecute("registerEngineName", arg0, arg1);
+            IExecuteWithSignature("registerEngineName", "(Ljava/lang/String;Ljavax/script/ScriptEngineFactory;)V", arg0, arg1);
         }
 
         #endregion

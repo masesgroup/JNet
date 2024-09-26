@@ -149,7 +149,7 @@ namespace Java.Text
         /// <returns><see cref="bool"/></returns>
         public static bool RequiresBidi(char[] arg0, int arg1, int arg2)
         {
-            return SExecute<bool>(LocalBridgeClazz, "requiresBidi", arg0, arg1, arg2);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "requiresBidi", "([CII)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#reorderVisually(byte[],int,java.lang.Object[],int,int)"/>
@@ -161,7 +161,7 @@ namespace Java.Text
         /// <param name="arg4"><see cref="int"/></param>
         public static void ReorderVisually(byte[] arg0, int arg1, object[] arg2, int arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "reorderVisually", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "reorderVisually", "([BI[Ljava/lang/Object;II)V", arg0, arg1, arg2, arg3, arg4);
         }
 
         #endregion
@@ -264,7 +264,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.Bidi"/></returns>
         public Java.Text.Bidi CreateLineBidi(int arg0, int arg1)
         {
-            return IExecute<Java.Text.Bidi>("createLineBidi", arg0, arg1);
+            return IExecuteWithSignature<Java.Text.Bidi>("createLineBidi", "(II)Ljava/text/Bidi;", arg0, arg1);
         }
 
         #endregion

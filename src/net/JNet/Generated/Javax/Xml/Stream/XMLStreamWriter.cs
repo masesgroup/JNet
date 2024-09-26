@@ -369,7 +369,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void SetPrefix(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("setPrefix", arg0, arg1);
+            IExecuteWithSignature("setPrefix", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeAttribute(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -381,7 +381,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void WriteAttribute(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
-            IExecute("writeAttribute", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("writeAttribute", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeAttribute(java.lang.String,java.lang.String,java.lang.String)"/>
@@ -392,7 +392,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void WriteAttribute(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            IExecute("writeAttribute", arg0, arg1, arg2);
+            IExecuteWithSignature("writeAttribute", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeAttribute(java.lang.String,java.lang.String)"/>
@@ -402,7 +402,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void WriteAttribute(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("writeAttribute", arg0, arg1);
+            IExecuteWithSignature("writeAttribute", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeCData(java.lang.String)"/>
@@ -422,7 +422,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void WriteCharacters(char[] arg0, int arg1, int arg2)
         {
-            IExecute("writeCharacters", arg0, arg1, arg2);
+            IExecuteWithSignature("writeCharacters", "([CII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeCharacters(java.lang.String)"/>
@@ -469,7 +469,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void WriteEmptyElement(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            IExecute("writeEmptyElement", arg0, arg1, arg2);
+            IExecuteWithSignature("writeEmptyElement", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeEmptyElement(java.lang.String,java.lang.String)"/>
@@ -479,7 +479,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void WriteEmptyElement(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("writeEmptyElement", arg0, arg1);
+            IExecuteWithSignature("writeEmptyElement", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeEmptyElement(java.lang.String)"/>
@@ -523,7 +523,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void WriteNamespace(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("writeNamespace", arg0, arg1);
+            IExecuteWithSignature("writeNamespace", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeProcessingInstruction(java.lang.String,java.lang.String)"/>
@@ -533,7 +533,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void WriteProcessingInstruction(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("writeProcessingInstruction", arg0, arg1);
+            IExecuteWithSignature("writeProcessingInstruction", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeProcessingInstruction(java.lang.String)"/>
@@ -560,7 +560,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void WriteStartDocument(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("writeStartDocument", arg0, arg1);
+            IExecuteWithSignature("writeStartDocument", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeStartDocument(java.lang.String)"/>
@@ -580,7 +580,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void WriteStartElement(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            IExecute("writeStartElement", arg0, arg1, arg2);
+            IExecuteWithSignature("writeStartElement", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeStartElement(java.lang.String,java.lang.String)"/>
@@ -590,7 +590,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void WriteStartElement(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("writeStartElement", arg0, arg1);
+            IExecuteWithSignature("writeStartElement", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeStartElement(java.lang.String)"/>

@@ -94,7 +94,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
         public static Java.Time.Temporal.TemporalAdjuster DayOfWeekInMonth(int arg0, Java.Time.DayOfWeek arg1)
         {
-            return SExecute<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "dayOfWeekInMonth", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "dayOfWeekInMonth", "(ILjava/time/DayOfWeek;)Ljava/time/temporal/TemporalAdjuster;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html#firstDayOfMonth()"/>

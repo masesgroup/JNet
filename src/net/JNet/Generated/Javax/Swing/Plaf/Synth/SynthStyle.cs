@@ -101,7 +101,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <returns><see cref="bool"/></returns>
         public bool GetBoolean(Javax.Swing.Plaf.Synth.SynthContext arg0, object arg1, bool arg2)
         {
-            return IExecute<bool>("getBoolean", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("getBoolean", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/lang/Object;Z)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#isOpaque(javax.swing.plaf.synth.SynthContext)"/>
@@ -121,7 +121,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <returns><see cref="int"/></returns>
         public int GetInt(Javax.Swing.Plaf.Synth.SynthContext arg0, object arg1, int arg2)
         {
-            return IExecute<int>("getInt", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getInt", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/lang/Object;I)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getColor(javax.swing.plaf.synth.SynthContext,javax.swing.plaf.synth.ColorType)"/>
@@ -131,7 +131,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public Java.Awt.Color GetColor(Javax.Swing.Plaf.Synth.SynthContext arg0, Javax.Swing.Plaf.Synth.ColorType arg1)
         {
-            return IExecute<Java.Awt.Color>("getColor", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Color>("getColor", "(Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/ColorType;)Ljava/awt/Color;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getFont(javax.swing.plaf.synth.SynthContext)"/>
@@ -150,7 +150,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <returns><see cref="Java.Awt.Insets"/></returns>
         public Java.Awt.Insets GetInsets(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Insets arg1)
         {
-            return IExecute<Java.Awt.Insets>("getInsets", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Insets>("getInsets", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Insets;)Ljava/awt/Insets;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#get(javax.swing.plaf.synth.SynthContext,java.lang.Object)"/>
@@ -160,7 +160,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <returns><see cref="object"/></returns>
         public object Get(Javax.Swing.Plaf.Synth.SynthContext arg0, object arg1)
         {
-            return IExecute("get", arg0, arg1);
+            return IExecuteWithSignature("get", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getString(javax.swing.plaf.synth.SynthContext,java.lang.Object,java.lang.String)"/>
@@ -171,7 +171,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetString(Javax.Swing.Plaf.Synth.SynthContext arg0, object arg1, Java.Lang.String arg2)
         {
-            return IExecute<Java.Lang.String>("getString", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.String>("getString", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getIcon(javax.swing.plaf.synth.SynthContext,java.lang.Object)"/>
@@ -181,7 +181,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public Javax.Swing.Icon GetIcon(Javax.Swing.Plaf.Synth.SynthContext arg0, object arg1)
         {
-            return IExecute<Javax.Swing.Icon>("getIcon", arg0, arg1);
+            return IExecuteWithSignature<Javax.Swing.Icon>("getIcon", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/lang/Object;)Ljavax/swing/Icon;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getGraphicsUtils(javax.swing.plaf.synth.SynthContext)"/>

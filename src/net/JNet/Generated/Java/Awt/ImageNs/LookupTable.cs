@@ -114,7 +114,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int[] LookupPixel(int[] arg0, int[] arg1)
         {
-            return IExecuteArray<int>("lookupPixel", arg0, arg1);
+            return IExecuteWithSignatureArray<int>("lookupPixel", "([I[I)[I", arg0, arg1);
         }
 
         #endregion

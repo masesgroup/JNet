@@ -148,7 +148,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="bool"/></returns>
         public static bool Matches(Java.Lang.String arg0, Java.Lang.CharSequence arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "matches", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "matches", "(Ljava/lang/String;Ljava/lang/CharSequence;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#quote(java.lang.String)"/>
@@ -167,7 +167,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="Java.Util.Regex.Pattern"/></returns>
         public static Java.Util.Regex.Pattern Compile(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<Java.Util.Regex.Pattern>(LocalBridgeClazz, "compile", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Regex.Pattern>(LocalBridgeClazz, "compile", "(Ljava/lang/String;I)Ljava/util/regex/Pattern;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#compile(java.lang.String)"/>
@@ -206,7 +206,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] Split(Java.Lang.CharSequence arg0, int arg1)
         {
-            return IExecuteArray<Java.Lang.String>("split", arg0, arg1);
+            return IExecuteWithSignatureArray<Java.Lang.String>("split", "(Ljava/lang/CharSequence;I)[Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#split(java.lang.CharSequence)"/>

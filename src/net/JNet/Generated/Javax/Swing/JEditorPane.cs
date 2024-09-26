@@ -151,7 +151,7 @@ namespace Javax.Swing
         /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
         public static void RegisterEditorKitForContentType(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.ClassLoader arg2)
         {
-            SExecute(LocalBridgeClazz, "registerEditorKitForContentType", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "registerEditorKitForContentType", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/ClassLoader;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#registerEditorKitForContentType(java.lang.String,java.lang.String)"/>
@@ -160,7 +160,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public static void RegisterEditorKitForContentType(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            SExecute(LocalBridgeClazz, "registerEditorKitForContentType", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "registerEditorKitForContentType", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
 
         #endregion
@@ -235,7 +235,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Io.IOException"/>
         public void Read(Java.Io.InputStream arg0, object arg1)
         {
-            IExecute("read", arg0, arg1);
+            IExecuteWithSignature("read", "(Ljava/io/InputStream;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#scrollToReference(java.lang.String)"/>
@@ -252,7 +252,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="Javax.Swing.Text.EditorKit"/></param>
         public void SetEditorKitForContentType(Java.Lang.String arg0, Javax.Swing.Text.EditorKit arg1)
         {
-            IExecute("setEditorKitForContentType", arg0, arg1);
+            IExecuteWithSignature("setEditorKitForContentType", "(Ljava/lang/String;Ljavax/swing/text/EditorKit;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#setPage(java.lang.String)"/>

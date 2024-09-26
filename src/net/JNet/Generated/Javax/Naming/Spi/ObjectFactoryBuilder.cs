@@ -127,7 +127,7 @@ namespace Javax.Naming.Spi
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.Spi.ObjectFactory CreateObjectFactory(object arg0, Java.Util.Hashtable<object, object> arg1)
         {
-            return IExecute<Javax.Naming.Spi.ObjectFactory>("createObjectFactory", arg0, arg1);
+            return IExecuteWithSignature<Javax.Naming.Spi.ObjectFactory>("createObjectFactory", "(Ljava/lang/Object;Ljava/util/Hashtable;)Ljavax/naming/spi/ObjectFactory;", arg0, arg1);
         }
 
         #endregion

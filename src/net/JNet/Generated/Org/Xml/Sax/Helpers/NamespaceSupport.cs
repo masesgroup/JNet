@@ -124,7 +124,7 @@ namespace Org.Xml.Sax.Helpers
         /// <returns><see cref="bool"/></returns>
         public bool DeclarePrefix(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("declarePrefix", arg0, arg1);
+            return IExecuteWithSignature<bool>("declarePrefix", "(Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#isNamespaceDeclUris()"/>
@@ -161,7 +161,7 @@ namespace Org.Xml.Sax.Helpers
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] ProcessName(Java.Lang.String arg0, Java.Lang.String[] arg1, bool arg2)
         {
-            return IExecuteArray<Java.Lang.String>("processName", arg0, arg1, arg2);
+            return IExecuteWithSignatureArray<Java.Lang.String>("processName", "(Ljava/lang/String;[Ljava/lang/String;Z)[Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#getPrefixes(java.lang.String)"/>

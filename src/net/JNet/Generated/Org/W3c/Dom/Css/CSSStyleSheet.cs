@@ -155,7 +155,7 @@ namespace Org.W3c.Dom.Css
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public int InsertRule(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<int>("insertRule", arg0, arg1);
+            return IExecuteWithSignature<int>("insertRule", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSStyleSheet.html#deleteRule(int)"/>

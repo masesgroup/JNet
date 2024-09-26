@@ -96,7 +96,7 @@ namespace Java.Lang.Invoke
         /// <exception cref="Java.Lang.TypeNotPresentException"/>
         public static Java.Lang.Invoke.MethodType FromMethodDescriptorString(Java.Lang.String arg0, Java.Lang.ClassLoader arg1)
         {
-            return SExecute<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "fromMethodDescriptorString", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "fromMethodDescriptorString", "(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/invoke/MethodType;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#genericMethodType(int,boolean)"/>
@@ -106,7 +106,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public static Java.Lang.Invoke.MethodType GenericMethodType(int arg0, bool arg1)
         {
-            return SExecute<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "genericMethodType", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "genericMethodType", "(IZ)Ljava/lang/invoke/MethodType;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#genericMethodType(int)"/>
@@ -126,7 +126,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public static Java.Lang.Invoke.MethodType MethodTypeMethod(Java.Lang.Class arg0, Java.Lang.Class arg1, params Java.Lang.Class[] arg2)
         {
-            if (arg2.Length == 0) return SExecute<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", arg0, arg1); else return SExecute<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecuteWithSignature<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", "(Ljava/lang/Class;Ljava/lang/Class;[Ljava/lang/Class;)Ljava/lang/invoke/MethodType;", arg0, arg1); else return SExecuteWithSignature<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", "(Ljava/lang/Class;Ljava/lang/Class;[Ljava/lang/Class;)Ljava/lang/invoke/MethodType;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#methodType(java.lang.Class,java.lang.Class)"/>
@@ -136,7 +136,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public static Java.Lang.Invoke.MethodType MethodTypeMethod(Java.Lang.Class arg0, Java.Lang.Class arg1)
         {
-            return SExecute<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", "(Ljava/lang/Class;Ljava/lang/Class;)Ljava/lang/invoke/MethodType;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#methodType(java.lang.Class,java.lang.Class[])"/>
@@ -146,7 +146,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public static Java.Lang.Invoke.MethodType MethodTypeMethod(Java.Lang.Class arg0, Java.Lang.Class[] arg1)
         {
-            return SExecute<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", "(Ljava/lang/Class;[Ljava/lang/Class;)Ljava/lang/invoke/MethodType;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#methodType(java.lang.Class,java.lang.invoke.MethodType)"/>
@@ -156,7 +156,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public static Java.Lang.Invoke.MethodType MethodTypeMethod(Java.Lang.Class arg0, Java.Lang.Invoke.MethodType arg1)
         {
-            return SExecute<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", "(Ljava/lang/Class;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodType;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#methodType(java.lang.Class,java.util.List)"/>
@@ -166,7 +166,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public static Java.Lang.Invoke.MethodType MethodTypeMethod(Java.Lang.Class arg0, Java.Util.List<Java.Lang.Class> arg1)
         {
-            return SExecute<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", "(Ljava/lang/Class;Ljava/util/List;)Ljava/lang/invoke/MethodType;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#methodType(java.lang.Class)"/>
@@ -264,7 +264,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public Java.Lang.Invoke.MethodType ChangeParameterType(int arg0, Java.Lang.Class arg1)
         {
-            return IExecute<Java.Lang.Invoke.MethodType>("changeParameterType", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Invoke.MethodType>("changeParameterType", "(ILjava/lang/Class;)Ljava/lang/invoke/MethodType;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#changeReturnType(java.lang.Class)"/>
@@ -283,7 +283,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public Java.Lang.Invoke.MethodType DropParameterTypes(int arg0, int arg1)
         {
-            return IExecute<Java.Lang.Invoke.MethodType>("dropParameterTypes", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Invoke.MethodType>("dropParameterTypes", "(II)Ljava/lang/invoke/MethodType;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#erase()"/>
@@ -309,7 +309,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public Java.Lang.Invoke.MethodType InsertParameterTypes(int arg0, params Java.Lang.Class[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Lang.Invoke.MethodType>("insertParameterTypes", arg0); else return IExecute<Java.Lang.Invoke.MethodType>("insertParameterTypes", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Lang.Invoke.MethodType>("insertParameterTypes", "(I[Ljava/lang/Class;)Ljava/lang/invoke/MethodType;", arg0); else return IExecuteWithSignature<Java.Lang.Invoke.MethodType>("insertParameterTypes", "(I[Ljava/lang/Class;)Ljava/lang/invoke/MethodType;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#insertParameterTypes(int,java.util.List)"/>
@@ -319,7 +319,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public Java.Lang.Invoke.MethodType InsertParameterTypes(int arg0, Java.Util.List<Java.Lang.Class> arg1)
         {
-            return IExecute<Java.Lang.Invoke.MethodType>("insertParameterTypes", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Invoke.MethodType>("insertParameterTypes", "(ILjava/util/List;)Ljava/lang/invoke/MethodType;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html#unwrap()"/>

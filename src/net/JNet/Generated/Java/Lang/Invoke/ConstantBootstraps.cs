@@ -107,7 +107,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public static Java.Lang.Class PrimitiveClass(Java.Lang.Invoke.MethodHandles.Lookup arg0, Java.Lang.String arg1, Java.Lang.Class arg2)
         {
-            return SExecute<Java.Lang.Class>(LocalBridgeClazz, "primitiveClass", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Lang.Class>(LocalBridgeClazz, "primitiveClass", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Class;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/ConstantBootstraps.html#arrayVarHandle(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.Class,java.lang.Class)"/>
@@ -119,7 +119,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.VarHandle"/></returns>
         public static Java.Lang.Invoke.VarHandle ArrayVarHandle(Java.Lang.Invoke.MethodHandles.Lookup arg0, Java.Lang.String arg1, Java.Lang.Class arg2, Java.Lang.Class arg3)
         {
-            return SExecute<Java.Lang.Invoke.VarHandle>(LocalBridgeClazz, "arrayVarHandle", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Lang.Invoke.VarHandle>(LocalBridgeClazz, "arrayVarHandle", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;)Ljava/lang/invoke/VarHandle;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/ConstantBootstraps.html#fieldVarHandle(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.Class,java.lang.Class,java.lang.Class)"/>
@@ -132,7 +132,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.VarHandle"/></returns>
         public static Java.Lang.Invoke.VarHandle FieldVarHandle(Java.Lang.Invoke.MethodHandles.Lookup arg0, Java.Lang.String arg1, Java.Lang.Class arg2, Java.Lang.Class arg3, Java.Lang.Class arg4)
         {
-            return SExecute<Java.Lang.Invoke.VarHandle>(LocalBridgeClazz, "fieldVarHandle", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Java.Lang.Invoke.VarHandle>(LocalBridgeClazz, "fieldVarHandle", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Class;)Ljava/lang/invoke/VarHandle;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/ConstantBootstraps.html#staticFieldVarHandle(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.Class,java.lang.Class,java.lang.Class)"/>
@@ -145,7 +145,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.VarHandle"/></returns>
         public static Java.Lang.Invoke.VarHandle StaticFieldVarHandle(Java.Lang.Invoke.MethodHandles.Lookup arg0, Java.Lang.String arg1, Java.Lang.Class arg2, Java.Lang.Class arg3, Java.Lang.Class arg4)
         {
-            return SExecute<Java.Lang.Invoke.VarHandle>(LocalBridgeClazz, "staticFieldVarHandle", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Java.Lang.Invoke.VarHandle>(LocalBridgeClazz, "staticFieldVarHandle", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Class;)Ljava/lang/invoke/VarHandle;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/ConstantBootstraps.html#getStaticFinal(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.Class,java.lang.Class)"/>
@@ -157,7 +157,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public static object GetStaticFinal(Java.Lang.Invoke.MethodHandles.Lookup arg0, Java.Lang.String arg1, Java.Lang.Class arg2, Java.Lang.Class arg3)
         {
-            return SExecute(LocalBridgeClazz, "getStaticFinal", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature(LocalBridgeClazz, "getStaticFinal", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;)Ljava/lang/Object;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/ConstantBootstraps.html#getStaticFinal(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.Class)"/>
@@ -168,7 +168,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public static object GetStaticFinal(Java.Lang.Invoke.MethodHandles.Lookup arg0, Java.Lang.String arg1, Java.Lang.Class arg2)
         {
-            return SExecute(LocalBridgeClazz, "getStaticFinal", arg0, arg1, arg2);
+            return SExecuteWithSignature(LocalBridgeClazz, "getStaticFinal", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/ConstantBootstraps.html#invoke(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.Class,java.lang.invoke.MethodHandle,java.lang.Object[])"/>
@@ -182,7 +182,7 @@ namespace Java.Lang.Invoke
         /// <exception cref="Java.Lang.Throwable"/>
         public static object Invoke(Java.Lang.Invoke.MethodHandles.Lookup arg0, Java.Lang.String arg1, Java.Lang.Class arg2, Java.Lang.Invoke.MethodHandle arg3, params object[] arg4)
         {
-            if (arg4.Length == 0) return SExecute(LocalBridgeClazz, "invoke", arg0, arg1, arg2, arg3); else return SExecute(LocalBridgeClazz, "invoke", arg0, arg1, arg2, arg3, arg4);
+            if (arg4.Length == 0) return SExecuteWithSignature(LocalBridgeClazz, "invoke", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/invoke/MethodHandle;[Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1, arg2, arg3); else return SExecuteWithSignature(LocalBridgeClazz, "invoke", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/invoke/MethodHandle;[Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/ConstantBootstraps.html#nullConstant(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.Class)"/>
@@ -193,7 +193,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public static object NullConstant(Java.Lang.Invoke.MethodHandles.Lookup arg0, Java.Lang.String arg1, Java.Lang.Class arg2)
         {
-            return SExecute(LocalBridgeClazz, "nullConstant", arg0, arg1, arg2);
+            return SExecuteWithSignature(LocalBridgeClazz, "nullConstant", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
 
         #endregion

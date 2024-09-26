@@ -133,7 +133,7 @@ namespace Javax.Swing.Table
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetTableCellRendererComponent(Javax.Swing.JTable arg0, object arg1, bool arg2, bool arg3, int arg4, int arg5)
         {
-            return IExecute<Java.Awt.Component>("getTableCellRendererComponent", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<Java.Awt.Component>("getTableCellRendererComponent", "(Ljavax/swing/JTable;Ljava/lang/Object;ZZII)Ljava/awt/Component;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
 
         #endregion

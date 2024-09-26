@@ -201,7 +201,7 @@ namespace Java.Awt.Geom
         /// <param name="arg3"><see cref="double"/></param>
         public void SetFrame(double arg0, double arg1, double arg2, double arg3)
         {
-            IExecute("setFrame", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setFrame", "(DDDD)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RectangularShape.html#contains(java.awt.geom.Point2D)"/>
@@ -238,7 +238,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="Java.Awt.Geom.PathIterator"/></returns>
         public Java.Awt.Geom.PathIterator GetPathIterator(Java.Awt.Geom.AffineTransform arg0, double arg1)
         {
-            return IExecute<Java.Awt.Geom.PathIterator>("getPathIterator", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Geom.PathIterator>("getPathIterator", "(Ljava/awt/geom/AffineTransform;D)Ljava/awt/geom/PathIterator;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RectangularShape.html#setFrame(java.awt.geom.Point2D,java.awt.geom.Dimension2D)"/>
@@ -247,7 +247,7 @@ namespace Java.Awt.Geom
         /// <param name="arg1"><see cref="Java.Awt.Geom.Dimension2D"/></param>
         public void SetFrame(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Dimension2D arg1)
         {
-            IExecute("setFrame", arg0, arg1);
+            IExecuteWithSignature("setFrame", "(Ljava/awt/geom/Point2D;Ljava/awt/geom/Dimension2D;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RectangularShape.html#setFrameFromCenter(double,double,double,double)"/>
@@ -258,7 +258,7 @@ namespace Java.Awt.Geom
         /// <param name="arg3"><see cref="double"/></param>
         public void SetFrameFromCenter(double arg0, double arg1, double arg2, double arg3)
         {
-            IExecute("setFrameFromCenter", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setFrameFromCenter", "(DDDD)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RectangularShape.html#setFrameFromCenter(java.awt.geom.Point2D,java.awt.geom.Point2D)"/>
@@ -267,7 +267,7 @@ namespace Java.Awt.Geom
         /// <param name="arg1"><see cref="Java.Awt.Geom.Point2D"/></param>
         public void SetFrameFromCenter(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1)
         {
-            IExecute("setFrameFromCenter", arg0, arg1);
+            IExecuteWithSignature("setFrameFromCenter", "(Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RectangularShape.html#setFrameFromDiagonal(double,double,double,double)"/>
@@ -278,7 +278,7 @@ namespace Java.Awt.Geom
         /// <param name="arg3"><see cref="double"/></param>
         public void SetFrameFromDiagonal(double arg0, double arg1, double arg2, double arg3)
         {
-            IExecute("setFrameFromDiagonal", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setFrameFromDiagonal", "(DDDD)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RectangularShape.html#setFrameFromDiagonal(java.awt.geom.Point2D,java.awt.geom.Point2D)"/>
@@ -287,7 +287,7 @@ namespace Java.Awt.Geom
         /// <param name="arg1"><see cref="Java.Awt.Geom.Point2D"/></param>
         public void SetFrameFromDiagonal(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1)
         {
-            IExecute("setFrameFromDiagonal", arg0, arg1);
+            IExecuteWithSignature("setFrameFromDiagonal", "(Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)V", arg0, arg1);
         }
 
         #endregion

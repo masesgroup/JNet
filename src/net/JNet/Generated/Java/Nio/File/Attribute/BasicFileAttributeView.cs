@@ -155,7 +155,7 @@ namespace Java.Nio.File.Attribute
         /// <exception cref="Java.Io.IOException"/>
         public void SetTimes(Java.Nio.File.Attribute.FileTime arg0, Java.Nio.File.Attribute.FileTime arg1, Java.Nio.File.Attribute.FileTime arg2)
         {
-            IExecute("setTimes", arg0, arg1, arg2);
+            IExecuteWithSignature("setTimes", "(Ljava/nio/file/attribute/FileTime;Ljava/nio/file/attribute/FileTime;Ljava/nio/file/attribute/FileTime;)V", arg0, arg1, arg2);
         }
 
         #endregion

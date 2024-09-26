@@ -122,7 +122,7 @@ namespace Javax.Xml.Validation
         /// <exception cref="Java.Io.IOException"/>
         public void Validate(Javax.Xml.Transform.Source arg0, Javax.Xml.Transform.Result arg1)
         {
-            IExecute("validate", arg0, arg1);
+            IExecuteWithSignature("validate", "(Ljavax/xml/transform/Source;Ljavax/xml/transform/Result;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Validator.html#getFeature(java.lang.String)"/>
@@ -155,7 +155,7 @@ namespace Javax.Xml.Validation
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public void SetFeature(Java.Lang.String arg0, bool arg1)
         {
-            IExecute("setFeature", arg0, arg1);
+            IExecuteWithSignature("setFeature", "(Ljava/lang/String;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Validator.html#setProperty(java.lang.String,java.lang.Object)"/>
@@ -166,7 +166,7 @@ namespace Javax.Xml.Validation
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public void SetProperty(Java.Lang.String arg0, object arg1)
         {
-            IExecute("setProperty", arg0, arg1);
+            IExecuteWithSignature("setProperty", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Validator.html#validate(javax.xml.transform.Source)"/>

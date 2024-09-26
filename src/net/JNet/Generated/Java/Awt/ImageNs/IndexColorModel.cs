@@ -266,7 +266,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="Java.Awt.ImageNs.BufferedImage"/></returns>
         public Java.Awt.ImageNs.BufferedImage ConvertToIntDiscrete(Java.Awt.ImageNs.Raster arg0, bool arg1)
         {
-            return IExecute<Java.Awt.ImageNs.BufferedImage>("convertToIntDiscrete", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.ImageNs.BufferedImage>("convertToIntDiscrete", "(Ljava/awt/image/Raster;Z)Ljava/awt/image/BufferedImage;", arg0, arg1);
         }
 
         #endregion

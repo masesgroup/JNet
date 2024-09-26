@@ -96,7 +96,7 @@ namespace Javax.Swing
         /// <returns><see cref="object"/></returns>
         public static object GetDesktopPropertyValue(Java.Lang.String arg0, object arg1)
         {
-            return SExecute(LocalBridgeClazz, "getDesktopPropertyValue", arg0, arg1);
+            return SExecuteWithSignature(LocalBridgeClazz, "getDesktopPropertyValue", "(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#makeIcon(java.lang.Class,java.lang.String)"/>
@@ -106,7 +106,7 @@ namespace Javax.Swing
         /// <returns><see cref="object"/></returns>
         public static object MakeIcon(Java.Lang.Class arg0, Java.Lang.String arg1)
         {
-            return SExecute(LocalBridgeClazz, "makeIcon", arg0, arg1);
+            return SExecuteWithSignature(LocalBridgeClazz, "makeIcon", "(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#makeComponentInputMap(javax.swing.JComponent,java.lang.Object[])"/>
@@ -116,7 +116,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.ComponentInputMap"/></returns>
         public static Javax.Swing.ComponentInputMap MakeComponentInputMap(Javax.Swing.JComponent arg0, object[] arg1)
         {
-            return SExecute<Javax.Swing.ComponentInputMap>(LocalBridgeClazz, "makeComponentInputMap", arg0, arg1);
+            return SExecuteWithSignature<Javax.Swing.ComponentInputMap>(LocalBridgeClazz, "makeComponentInputMap", "(Ljavax/swing/JComponent;[Ljava/lang/Object;)Ljavax/swing/ComponentInputMap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#makeInputMap(java.lang.Object[])"/>
@@ -143,7 +143,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public static void InstallBorder(Javax.Swing.JComponent arg0, Java.Lang.String arg1)
         {
-            SExecute(LocalBridgeClazz, "installBorder", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "installBorder", "(Ljavax/swing/JComponent;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#installColors(javax.swing.JComponent,java.lang.String,java.lang.String)"/>
@@ -153,7 +153,7 @@ namespace Javax.Swing
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public static void InstallColors(Javax.Swing.JComponent arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            SExecute(LocalBridgeClazz, "installColors", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "installColors", "(Ljavax/swing/JComponent;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#installColorsAndFont(javax.swing.JComponent,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -164,7 +164,7 @@ namespace Javax.Swing
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         public static void InstallColorsAndFont(Javax.Swing.JComponent arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
-            SExecute(LocalBridgeClazz, "installColorsAndFont", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "installColorsAndFont", "(Ljavax/swing/JComponent;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#installProperty(javax.swing.JComponent,java.lang.String,java.lang.Object)"/>
@@ -174,7 +174,7 @@ namespace Javax.Swing
         /// <param name="arg2"><see cref="object"/></param>
         public static void InstallProperty(Javax.Swing.JComponent arg0, Java.Lang.String arg1, object arg2)
         {
-            SExecute(LocalBridgeClazz, "installProperty", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "installProperty", "(Ljavax/swing/JComponent;Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#loadKeyBindings(javax.swing.InputMap,java.lang.Object[])"/>
@@ -183,7 +183,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="object"/></param>
         public static void LoadKeyBindings(Javax.Swing.InputMap arg0, object[] arg1)
         {
-            SExecute(LocalBridgeClazz, "loadKeyBindings", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "loadKeyBindings", "(Ljavax/swing/InputMap;[Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#uninstallBorder(javax.swing.JComponent)"/>
@@ -263,7 +263,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public Javax.Swing.Icon GetDisabledIcon(Javax.Swing.JComponent arg0, Javax.Swing.Icon arg1)
         {
-            return IExecute<Javax.Swing.Icon>("getDisabledIcon", arg0, arg1);
+            return IExecuteWithSignature<Javax.Swing.Icon>("getDisabledIcon", "(Ljavax/swing/JComponent;Ljavax/swing/Icon;)Ljavax/swing/Icon;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#getDisabledSelectedIcon(javax.swing.JComponent,javax.swing.Icon)"/>
@@ -273,7 +273,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public Javax.Swing.Icon GetDisabledSelectedIcon(Javax.Swing.JComponent arg0, Javax.Swing.Icon arg1)
         {
-            return IExecute<Javax.Swing.Icon>("getDisabledSelectedIcon", arg0, arg1);
+            return IExecuteWithSignature<Javax.Swing.Icon>("getDisabledSelectedIcon", "(Ljavax/swing/JComponent;Ljavax/swing/Icon;)Ljavax/swing/Icon;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#initialize()"/>

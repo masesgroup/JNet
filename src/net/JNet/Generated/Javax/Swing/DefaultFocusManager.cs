@@ -98,7 +98,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool CompareTabOrder(Java.Awt.Component arg0, Java.Awt.Component arg1)
         {
-            return IExecute<bool>("compareTabOrder", arg0, arg1);
+            return IExecuteWithSignature<bool>("compareTabOrder", "(Ljava/awt/Component;Ljava/awt/Component;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultFocusManager.html#getComponentAfter(java.awt.Container,java.awt.Component)"/>
@@ -108,7 +108,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetComponentAfter(Java.Awt.Container arg0, Java.Awt.Component arg1)
         {
-            return IExecute<Java.Awt.Component>("getComponentAfter", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Component>("getComponentAfter", "(Ljava/awt/Container;Ljava/awt/Component;)Ljava/awt/Component;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultFocusManager.html#getComponentBefore(java.awt.Container,java.awt.Component)"/>
@@ -118,7 +118,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetComponentBefore(Java.Awt.Container arg0, Java.Awt.Component arg1)
         {
-            return IExecute<Java.Awt.Component>("getComponentBefore", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Component>("getComponentBefore", "(Ljava/awt/Container;Ljava/awt/Component;)Ljava/awt/Component;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultFocusManager.html#getFirstComponent(java.awt.Container)"/>

@@ -187,7 +187,7 @@ namespace Javax.Imageio
         /// <param name="arg3"><see cref="int"/></param>
         public void SetSourceSubsampling(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("setSourceSubsampling", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setSourceSubsampling", "(IIII)V", arg0, arg1, arg2, arg3);
         }
 
         #endregion

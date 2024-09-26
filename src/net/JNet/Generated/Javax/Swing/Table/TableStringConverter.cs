@@ -101,7 +101,7 @@ namespace Javax.Swing.Table
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToString(Javax.Swing.Table.TableModel arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Lang.String>("toString", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.String>("toString", "(Ljavax/swing/table/TableModel;II)Ljava/lang/String;", arg0, arg1, arg2);
         }
 
         #endregion

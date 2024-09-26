@@ -108,7 +108,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Period"/></returns>
         public static Java.Time.Period Between(Java.Time.LocalDate arg0, Java.Time.LocalDate arg1)
         {
-            return SExecute<Java.Time.Period>(LocalBridgeClazz, "between", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.Period>(LocalBridgeClazz, "between", "(Ljava/time/LocalDate;Ljava/time/LocalDate;)Ljava/time/Period;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Period.html#from(java.time.temporal.TemporalAmount)"/>
@@ -128,7 +128,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Period"/></returns>
         public static Java.Time.Period Of(int arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Time.Period>(LocalBridgeClazz, "of", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Time.Period>(LocalBridgeClazz, "of", "(III)Ljava/time/Period;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Period.html#ofDays(int)"/>

@@ -171,7 +171,7 @@ namespace Java.Awt.Datatransfer
         /// <param name="arg1"><see cref="Java.Awt.Datatransfer.ClipboardOwner"/></param>
         public void SetContents(Java.Awt.Datatransfer.Transferable arg0, Java.Awt.Datatransfer.ClipboardOwner arg1)
         {
-            IExecute("setContents", arg0, arg1);
+            IExecuteWithSignature("setContents", "(Ljava/awt/datatransfer/Transferable;Ljava/awt/datatransfer/ClipboardOwner;)V", arg0, arg1);
         }
 
         #endregion

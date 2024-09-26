@@ -153,7 +153,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetContainerGap(Javax.Swing.JComponent arg0, int arg1, Java.Awt.Container arg2)
         {
-            return IExecute<int>("getContainerGap", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getContainerGap", "(Ljavax/swing/JComponent;ILjava/awt/Container;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.html#getPreferredGap(javax.swing.JComponent,javax.swing.JComponent,javax.swing.LayoutStyle.ComponentPlacement,int,java.awt.Container)"/>
@@ -166,7 +166,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetPreferredGap(Javax.Swing.JComponent arg0, Javax.Swing.JComponent arg1, Javax.Swing.LayoutStyle.ComponentPlacement arg2, int arg3, Java.Awt.Container arg4)
         {
-            return IExecute<int>("getPreferredGap", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<int>("getPreferredGap", "(Ljavax/swing/JComponent;Ljavax/swing/JComponent;Ljavax/swing/LayoutStyle$ComponentPlacement;ILjava/awt/Container;)I", arg0, arg1, arg2, arg3, arg4);
         }
 
         #endregion

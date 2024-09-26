@@ -138,7 +138,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="long"/></param>
         public void Schedule(Java.Util.TimerTask arg0, Java.Util.Date arg1, long arg2)
         {
-            IExecute("schedule", arg0, arg1, arg2);
+            IExecuteWithSignature("schedule", "(Ljava/util/TimerTask;Ljava/util/Date;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#schedule(java.util.TimerTask,java.util.Date)"/>
@@ -147,7 +147,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="Java.Util.Date"/></param>
         public void Schedule(Java.Util.TimerTask arg0, Java.Util.Date arg1)
         {
-            IExecute("schedule", arg0, arg1);
+            IExecuteWithSignature("schedule", "(Ljava/util/TimerTask;Ljava/util/Date;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#schedule(java.util.TimerTask,long,long)"/>
@@ -157,7 +157,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="long"/></param>
         public void Schedule(Java.Util.TimerTask arg0, long arg1, long arg2)
         {
-            IExecute("schedule", arg0, arg1, arg2);
+            IExecuteWithSignature("schedule", "(Ljava/util/TimerTask;JJ)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#schedule(java.util.TimerTask,long)"/>
@@ -166,7 +166,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="long"/></param>
         public void Schedule(Java.Util.TimerTask arg0, long arg1)
         {
-            IExecute("schedule", arg0, arg1);
+            IExecuteWithSignature("schedule", "(Ljava/util/TimerTask;J)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#scheduleAtFixedRate(java.util.TimerTask,java.util.Date,long)"/>
@@ -176,7 +176,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="long"/></param>
         public void ScheduleAtFixedRate(Java.Util.TimerTask arg0, Java.Util.Date arg1, long arg2)
         {
-            IExecute("scheduleAtFixedRate", arg0, arg1, arg2);
+            IExecuteWithSignature("scheduleAtFixedRate", "(Ljava/util/TimerTask;Ljava/util/Date;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#scheduleAtFixedRate(java.util.TimerTask,long,long)"/>
@@ -186,7 +186,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="long"/></param>
         public void ScheduleAtFixedRate(Java.Util.TimerTask arg0, long arg1, long arg2)
         {
-            IExecute("scheduleAtFixedRate", arg0, arg1, arg2);
+            IExecuteWithSignature("scheduleAtFixedRate", "(Ljava/util/TimerTask;JJ)V", arg0, arg1, arg2);
         }
 
         #endregion

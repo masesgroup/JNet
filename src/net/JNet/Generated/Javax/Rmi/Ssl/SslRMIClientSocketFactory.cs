@@ -107,7 +107,7 @@ namespace Javax.Rmi.Ssl
         /// <exception cref="Java.Io.IOException"/>
         public Java.Net.Socket CreateSocket(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Java.Net.Socket>("createSocket", arg0, arg1);
+            return IExecuteWithSignature<Java.Net.Socket>("createSocket", "(Ljava/lang/String;I)Ljava/net/Socket;", arg0, arg1);
         }
 
         #endregion

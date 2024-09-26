@@ -289,7 +289,7 @@ namespace Java.Util.Function
         /// <param name="arg1"><see cref="object"/></param>
         public override void Accept(object arg0, object arg1)
         {
-            IExecute("accept", arg0, arg1);
+            IExecuteWithSignature("accept", "(Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
@@ -475,7 +475,7 @@ namespace Java.Util.Function
         /// <param name="arg1"><typeparamref name="U"/></param>
         public override void Accept(T arg0, U arg1)
         {
-            IExecute("accept", arg0, arg1);
+            IExecuteWithSignature("accept", "(Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>

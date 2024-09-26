@@ -265,7 +265,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public Java.Util.NavigableMap HeadMap(object arg0, bool arg1)
         {
-            return IExecute<Java.Util.NavigableMap>("headMap", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.NavigableMap>("headMap", "(Ljava/lang/Object;Z)Ljava/util/NavigableMap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#subMap(java.lang.Object,boolean,java.lang.Object,boolean)"/>
@@ -277,7 +277,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public Java.Util.NavigableMap SubMapMethod(object arg0, bool arg1, object arg2, bool arg3)
         {
-            return IExecute<Java.Util.NavigableMap>("subMap", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Util.NavigableMap>("subMap", "(Ljava/lang/Object;ZLjava/lang/Object;Z)Ljava/util/NavigableMap;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#tailMap(java.lang.Object,boolean)"/>
@@ -287,7 +287,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public Java.Util.NavigableMap TailMap(object arg0, bool arg1)
         {
-            return IExecute<Java.Util.NavigableMap>("tailMap", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.NavigableMap>("tailMap", "(Ljava/lang/Object;Z)Ljava/util/NavigableMap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#descendingKeySet()"/>
@@ -322,7 +322,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
         public Java.Util.SortedMap SubMapMethod(object arg0, object arg1)
         {
-            return IExecute<Java.Util.SortedMap>("subMap", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.SortedMap>("subMap", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedMap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#tailMap(java.lang.Object)"/>
@@ -549,7 +549,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public Java.Util.NavigableMap<K, V> HeadMap(K arg0, bool arg1)
         {
-            return IExecute<Java.Util.NavigableMap<K, V>>("headMap", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.NavigableMap<K, V>>("headMap", "(Ljava/lang/Object;Z)Ljava/util/NavigableMap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#subMap(java.lang.Object,boolean,java.lang.Object,boolean)"/>
@@ -561,7 +561,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public Java.Util.NavigableMap<K, V> SubMapMethod(K arg0, bool arg1, K arg2, bool arg3)
         {
-            return IExecute<Java.Util.NavigableMap<K, V>>("subMap", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Util.NavigableMap<K, V>>("subMap", "(Ljava/lang/Object;ZLjava/lang/Object;Z)Ljava/util/NavigableMap;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#tailMap(java.lang.Object,boolean)"/>
@@ -571,7 +571,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public Java.Util.NavigableMap<K, V> TailMap(K arg0, bool arg1)
         {
-            return IExecute<Java.Util.NavigableMap<K, V>>("tailMap", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.NavigableMap<K, V>>("tailMap", "(Ljava/lang/Object;Z)Ljava/util/NavigableMap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#descendingKeySet()"/>
@@ -606,7 +606,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
         public Java.Util.SortedMap<K, V> SubMapMethod(K arg0, K arg1)
         {
-            return IExecute<Java.Util.SortedMap<K, V>>("subMap", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.SortedMap<K, V>>("subMap", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedMap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#tailMap(java.lang.Object)"/>

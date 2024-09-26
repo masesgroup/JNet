@@ -140,7 +140,7 @@ namespace Javax.Sound.Sampled
         /// <returns><see cref="int"/></returns>
         public int Write(byte[] arg0, int arg1, int arg2)
         {
-            return IExecute<int>("write", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("write", "([BII)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/SourceDataLine.html#open(javax.sound.sampled.AudioFormat,int)"/>
@@ -150,7 +150,7 @@ namespace Javax.Sound.Sampled
         /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
         public void Open(Javax.Sound.Sampled.AudioFormat arg0, int arg1)
         {
-            IExecute("open", arg0, arg1);
+            IExecuteWithSignature("open", "(Ljavax/sound/sampled/AudioFormat;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/SourceDataLine.html#open(javax.sound.sampled.AudioFormat)"/>

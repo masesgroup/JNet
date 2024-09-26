@@ -314,7 +314,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.DateFormat"/></returns>
         public static Java.Text.DateFormat GetDateInstance(int arg0, Java.Util.Locale arg1)
         {
-            return SExecute<Java.Text.DateFormat>(LocalBridgeClazz, "getDateInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Text.DateFormat>(LocalBridgeClazz, "getDateInstance", "(ILjava/util/Locale;)Ljava/text/DateFormat;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#getDateInstance(int)"/>
@@ -334,7 +334,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.DateFormat"/></returns>
         public static Java.Text.DateFormat GetDateTimeInstance(int arg0, int arg1, Java.Util.Locale arg2)
         {
-            return SExecute<Java.Text.DateFormat>(LocalBridgeClazz, "getDateTimeInstance", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Text.DateFormat>(LocalBridgeClazz, "getDateTimeInstance", "(IILjava/util/Locale;)Ljava/text/DateFormat;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#getDateTimeInstance(int,int)"/>
@@ -344,7 +344,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.DateFormat"/></returns>
         public static Java.Text.DateFormat GetDateTimeInstance(int arg0, int arg1)
         {
-            return SExecute<Java.Text.DateFormat>(LocalBridgeClazz, "getDateTimeInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Text.DateFormat>(LocalBridgeClazz, "getDateTimeInstance", "(II)Ljava/text/DateFormat;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#getTimeInstance(int,java.util.Locale)"/>
@@ -354,7 +354,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.DateFormat"/></returns>
         public static Java.Text.DateFormat GetTimeInstance(int arg0, Java.Util.Locale arg1)
         {
-            return SExecute<Java.Text.DateFormat>(LocalBridgeClazz, "getTimeInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Text.DateFormat>(LocalBridgeClazz, "getTimeInstance", "(ILjava/util/Locale;)Ljava/text/DateFormat;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#getTimeInstance(int)"/>
@@ -399,7 +399,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Lang.StringBuffer"/></returns>
         public Java.Lang.StringBuffer Format(Java.Util.Date arg0, Java.Lang.StringBuffer arg1, Java.Text.FieldPosition arg2)
         {
-            return IExecute<Java.Lang.StringBuffer>("format", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.StringBuffer>("format", "(Ljava/util/Date;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#parse(java.lang.String,java.text.ParsePosition)"/>
@@ -409,7 +409,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Util.Date"/></returns>
         public Java.Util.Date Parse(Java.Lang.String arg0, Java.Text.ParsePosition arg1)
         {
-            return IExecute<Java.Util.Date>("parse", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Date>("parse", "(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/util/Date;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#isLenient()"/>

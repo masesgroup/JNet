@@ -93,7 +93,7 @@ namespace Java.Lang.Reflect
         /// <param name="arg1"><see cref="bool"/></param>
         public static void SetAccessible(Java.Lang.Reflect.AccessibleObject[] arg0, bool arg1)
         {
-            SExecute(LocalBridgeClazz, "setAccessible", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setAccessible", "([Ljava/lang/reflect/AccessibleObject;Z)V", arg0, arg1);
         }
 
         #endregion

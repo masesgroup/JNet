@@ -129,7 +129,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component ComponentForPoint(Java.Awt.Component arg0, Java.Awt.Point arg1)
         {
-            return IExecute<Java.Awt.Component>("componentForPoint", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Component>("componentForPoint", "(Ljava/awt/Component;Ljava/awt/Point;)Ljava/awt/Component;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MenuSelectionManager.html#addChangeListener(javax.swing.event.ChangeListener)"/>

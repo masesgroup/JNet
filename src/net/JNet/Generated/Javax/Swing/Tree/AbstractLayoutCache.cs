@@ -225,7 +225,7 @@ namespace Javax.Swing.Tree
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle GetBounds(Javax.Swing.Tree.TreePath arg0, Java.Awt.Rectangle arg1)
         {
-            return IExecute<Java.Awt.Rectangle>("getBounds", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Rectangle>("getBounds", "(Ljavax/swing/tree/TreePath;Ljava/awt/Rectangle;)Ljava/awt/Rectangle;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getVisiblePathsFrom(javax.swing.tree.TreePath)"/>
@@ -244,7 +244,7 @@ namespace Javax.Swing.Tree
         /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
         public Javax.Swing.Tree.TreePath GetPathClosestTo(int arg0, int arg1)
         {
-            return IExecute<Javax.Swing.Tree.TreePath>("getPathClosestTo", arg0, arg1);
+            return IExecuteWithSignature<Javax.Swing.Tree.TreePath>("getPathClosestTo", "(II)Ljavax/swing/tree/TreePath;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getPathForRow(int)"/>
@@ -277,7 +277,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetExpandedState(Javax.Swing.Tree.TreePath arg0, bool arg1)
         {
-            IExecute("setExpandedState", arg0, arg1);
+            IExecuteWithSignature("setExpandedState", "(Ljavax/swing/tree/TreePath;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#treeNodesChanged(javax.swing.event.TreeModelEvent)"/>
@@ -388,7 +388,7 @@ namespace Javax.Swing.Tree
             /// <returns><see cref="Java.Awt.Rectangle"/></returns>
             public Java.Awt.Rectangle GetNodeDimensions(object arg0, int arg1, int arg2, bool arg3, Java.Awt.Rectangle arg4)
             {
-                return IExecute<Java.Awt.Rectangle>("getNodeDimensions", arg0, arg1, arg2, arg3, arg4);
+                return IExecuteWithSignature<Java.Awt.Rectangle>("getNodeDimensions", "(Ljava/lang/Object;IIZLjava/awt/Rectangle;)Ljava/awt/Rectangle;", arg0, arg1, arg2, arg3, arg4);
             }
 
             #endregion

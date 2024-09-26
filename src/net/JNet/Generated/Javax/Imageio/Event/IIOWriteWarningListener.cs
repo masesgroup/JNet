@@ -210,7 +210,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public override void WarningOccurred(Javax.Imageio.ImageWriter arg0, int arg1, Java.Lang.String arg2)
         {
-            IExecute("warningOccurred", arg0, arg1, arg2);
+            IExecuteWithSignature("warningOccurred", "(Ljavax/imageio/ImageWriter;ILjava/lang/String;)V", arg0, arg1, arg2);
         }
 
         #endregion

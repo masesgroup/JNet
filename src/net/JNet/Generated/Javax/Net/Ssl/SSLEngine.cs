@@ -245,7 +245,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Javax.Net.Ssl.SSLException"/>
         public Javax.Net.Ssl.SSLEngineResult Unwrap(Java.Nio.ByteBuffer arg0, Java.Nio.ByteBuffer[] arg1, int arg2, int arg3)
         {
-            return IExecute<Javax.Net.Ssl.SSLEngineResult>("unwrap", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Javax.Net.Ssl.SSLEngineResult>("unwrap", "(Ljava/nio/ByteBuffer;[Ljava/nio/ByteBuffer;II)Ljavax/net/ssl/SSLEngineResult;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#wrap(java.nio.ByteBuffer[],int,int,java.nio.ByteBuffer)"/>
@@ -258,7 +258,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Javax.Net.Ssl.SSLException"/>
         public Javax.Net.Ssl.SSLEngineResult Wrap(Java.Nio.ByteBuffer[] arg0, int arg1, int arg2, Java.Nio.ByteBuffer arg3)
         {
-            return IExecute<Javax.Net.Ssl.SSLEngineResult>("wrap", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Javax.Net.Ssl.SSLEngineResult>("wrap", "([Ljava/nio/ByteBuffer;IILjava/nio/ByteBuffer;)Ljavax/net/ssl/SSLEngineResult;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#beginHandshake()"/>
@@ -292,7 +292,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Javax.Net.Ssl.SSLException"/>
         public Javax.Net.Ssl.SSLEngineResult Unwrap(Java.Nio.ByteBuffer arg0, Java.Nio.ByteBuffer arg1)
         {
-            return IExecute<Javax.Net.Ssl.SSLEngineResult>("unwrap", arg0, arg1);
+            return IExecuteWithSignature<Javax.Net.Ssl.SSLEngineResult>("unwrap", "(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)Ljavax/net/ssl/SSLEngineResult;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#unwrap(java.nio.ByteBuffer,java.nio.ByteBuffer[])"/>
@@ -303,7 +303,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Javax.Net.Ssl.SSLException"/>
         public Javax.Net.Ssl.SSLEngineResult Unwrap(Java.Nio.ByteBuffer arg0, Java.Nio.ByteBuffer[] arg1)
         {
-            return IExecute<Javax.Net.Ssl.SSLEngineResult>("unwrap", arg0, arg1);
+            return IExecuteWithSignature<Javax.Net.Ssl.SSLEngineResult>("unwrap", "(Ljava/nio/ByteBuffer;[Ljava/nio/ByteBuffer;)Ljavax/net/ssl/SSLEngineResult;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#wrap(java.nio.ByteBuffer,java.nio.ByteBuffer)"/>
@@ -314,7 +314,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Javax.Net.Ssl.SSLException"/>
         public Javax.Net.Ssl.SSLEngineResult Wrap(Java.Nio.ByteBuffer arg0, Java.Nio.ByteBuffer arg1)
         {
-            return IExecute<Javax.Net.Ssl.SSLEngineResult>("wrap", arg0, arg1);
+            return IExecuteWithSignature<Javax.Net.Ssl.SSLEngineResult>("wrap", "(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)Ljavax/net/ssl/SSLEngineResult;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#wrap(java.nio.ByteBuffer[],java.nio.ByteBuffer)"/>
@@ -325,7 +325,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Javax.Net.Ssl.SSLException"/>
         public Javax.Net.Ssl.SSLEngineResult Wrap(Java.Nio.ByteBuffer[] arg0, Java.Nio.ByteBuffer arg1)
         {
-            return IExecute<Javax.Net.Ssl.SSLEngineResult>("wrap", arg0, arg1);
+            return IExecuteWithSignature<Javax.Net.Ssl.SSLEngineResult>("wrap", "([Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)Ljavax/net/ssl/SSLEngineResult;", arg0, arg1);
         }
 
         #endregion

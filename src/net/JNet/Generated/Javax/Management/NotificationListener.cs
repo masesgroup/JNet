@@ -207,7 +207,7 @@ namespace Javax.Management
         /// <param name="arg1"><see cref="object"/></param>
         public override void HandleNotification(Javax.Management.Notification arg0, object arg1)
         {
-            IExecute("handleNotification", arg0, arg1);
+            IExecuteWithSignature("handleNotification", "(Ljavax/management/Notification;Ljava/lang/Object;)V", arg0, arg1);
         }
 
         #endregion

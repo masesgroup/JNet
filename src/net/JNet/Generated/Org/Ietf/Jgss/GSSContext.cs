@@ -454,7 +454,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public byte[] AcceptSecContext(byte[] arg0, int arg1, int arg2)
         {
-            return IExecuteArray<byte>("acceptSecContext", arg0, arg1, arg2);
+            return IExecuteWithSignatureArray<byte>("acceptSecContext", "([BII)[B", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#export()"/>
@@ -476,7 +476,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public byte[] GetMIC(byte[] arg0, int arg1, int arg2, Org.Ietf.Jgss.MessageProp arg3)
         {
-            return IExecuteArray<byte>("getMIC", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignatureArray<byte>("getMIC", "([BIILorg/ietf/jgss/MessageProp;)[B", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#initSecContext(byte[],int,int)"/>
@@ -488,7 +488,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public byte[] InitSecContext(byte[] arg0, int arg1, int arg2)
         {
-            return IExecuteArray<byte>("initSecContext", arg0, arg1, arg2);
+            return IExecuteWithSignatureArray<byte>("initSecContext", "([BII)[B", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#unwrap(byte[],int,int,org.ietf.jgss.MessageProp)"/>
@@ -501,7 +501,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public byte[] Unwrap(byte[] arg0, int arg1, int arg2, Org.Ietf.Jgss.MessageProp arg3)
         {
-            return IExecuteArray<byte>("unwrap", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignatureArray<byte>("unwrap", "([BIILorg/ietf/jgss/MessageProp;)[B", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#wrap(byte[],int,int,org.ietf.jgss.MessageProp)"/>
@@ -514,7 +514,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public byte[] Wrap(byte[] arg0, int arg1, int arg2, Org.Ietf.Jgss.MessageProp arg3)
         {
-            return IExecuteArray<byte>("wrap", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignatureArray<byte>("wrap", "([BIILorg/ietf/jgss/MessageProp;)[B", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getWrapSizeLimit(int,boolean,int)"/>
@@ -526,7 +526,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public int GetWrapSizeLimit(int arg0, bool arg1, int arg2)
         {
-            return IExecute<int>("getWrapSizeLimit", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getWrapSizeLimit", "(IZI)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#dispose()"/>
@@ -630,7 +630,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public void VerifyMIC(byte[] arg0, int arg1, int arg2, byte[] arg3, int arg4, int arg5, Org.Ietf.Jgss.MessageProp arg6)
         {
-            IExecute("verifyMIC", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("verifyMIC", "([BII[BIILorg/ietf/jgss/MessageProp;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
 
         #endregion
